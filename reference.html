@@ -7,6 +7,7 @@
 <meta name="description" content="MITE:BE reference tables — mobs, potions, workbench tiers, blood moon, achievements. HU/EN.">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" href="img/items/adamantium_pickaxe.png" type="image/png">
+<script>(function(){var l;try{l=localStorage.getItem('mite-wiki-lang');}catch(e){}document.documentElement.setAttribute('data-lang-init',l||'hu');})();</script>
 </head>
 <body>
 <div class="progress-bar" id="progress-bar"></div>
@@ -41,6 +42,7 @@
     <li><a href="#potions">Bájitalok &amp; hatások</a></li>
     <li><a href="#quality">Munkaasztal szintek</a></li>
     <li><a href="#blood-moon">Vérhold rendszer</a></li>
+    <li><a href="#fog-event">Ködfolt esemény</a></li>
     <li><a href="#achievements">Teljesítmények</a></li>
   </ul>
 </div>
@@ -60,6 +62,7 @@
     <li><a href="#potions">Potions &amp; Effects</a></li>
     <li><a href="#quality">Workbench Tiers</a></li>
     <li><a href="#blood-moon">Blood Moon</a></li>
+    <li><a href="#fog-event">Fog Event</a></li>
     <li><a href="#achievements">Achievements</a></li>
   </ul>
 </div>
@@ -68,7 +71,7 @@
 
   <main class="content">
 <div data-lang="hu" id="mobs">
-<div class="collapsible"><div class="collapsible-toggle" aria-expanded="false"><h3>Szörnyek & Lények</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="true"><h3>Szörnyek & Lények</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p>A MITE:BE rengeteg új szörnyet ad a játékhoz:</p>
 
 <h3>Felszíni szörnyek</h3>
@@ -86,7 +89,7 @@
   <tr><th>Szörny</th><th>Jellemző</th></tr>
   <tr><td>Sírkamra Sírkamra (Ghoul)</td><td>Undead barlang lény</td></tr>
   <tr><td>Sírkamra Szellem (Wight)</td><td>Szellemi ellenség</td></tr>
-  <tr><td>Láthatatlan Követő</td><td>Nem látható!</td></tr>
+  <tr><td>Láthatatlan Követő</td><td>Nem látható! <strong>Ezüst vagy Mithril+ fegyver</strong> szükséges a sebzéshez</td></tr>
   <tr><td>Fekete Özvegy Pók</td><td>Mérgező pók</td></tr>
   <tr><td>Fázis Pók</td><td>Áthatoló — csak Ősi Fém karddal üthető!</td></tr>
   <tr><td>Csont Úr / Ókori Csont Úr</td><td>Erős csontváz vezér</td></tr>
@@ -100,7 +103,7 @@
   <tr><td>Démon Pók</td><td>Nether pók</td></tr>
   <tr><td>Pokol Kutya</td><td>Tüzes farkas</td></tr>
   <tr><td>Pokoli Creeper</td><td>Robbanó pokol lény</td></tr>
-  <tr><td>Tűz Elementális</td><td>Tűzből szőtt lény</td></tr>
+  <tr><td>Tűz Elementális</td><td>Tűzből szőtt lény — <strong>ezüst/tűz tárgyak nem hatnak rá!</strong> Magas HP. Megölhető: varázstárgyak, víz, hógolyók vagy sebzés bájitalok</td></tr>
   <tr><td>Vámpír Denevér / Óriás Vámpír Denevér</td><td>Vérszívó</td></tr>
   <tr><td>Vörös Lángoszlop / Lélek Szellem</td><td>Nether variánsok</td></tr>
   <tr><td>Pokol Terítmény</td><td>Nether spawn</td></tr>
@@ -117,7 +120,7 @@
 <!-- ===== BÁJITALOK ===== --></div></div></div>
 </div>
 <div data-lang="hu" id="potions">
-<div class="collapsible"><div class="collapsible-toggle" aria-expanded="false"><h3>Bájitalok & Hatások</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="true"><h3>Bájitalok & Hatások</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <table>
   <tr><th>Bájital / Hatás</th><th>Leírás</th></tr>
   <tr><td>Sebesség</td><td>Gyorsabb mozgás</td></tr>
@@ -223,15 +226,15 @@
   <tr><td>Szén érc, Fa</td><td>1</td><td>Bármi (fa, faszén...)</td><td>Szén / Faszén</td></tr>
   <tr><td>Réz, Ezüst, Keménykő, Vas, Arany, Gyémánt, Ón érc</td><td>2</td><td><strong>Szén (kő)</strong></td><td>Megfelelő rúd</td></tr>
   <tr style="background:rgba(255,80,0,0.12)"><td><strong>Mithril érc</strong></td><td><strong>3</strong></td><td><strong>Lávavödör</strong></td><td>Mithril rúd</td></tr>
-  <tr style="background:rgba(255,30,0,0.22)"><td><strong>⚠️ Adamantium érc</strong></td><td><strong>4 ‼️</strong></td><td><strong>Lángoszlop Pálca</strong></td><td>Adamantium rúd</td></tr>
+  <tr style="background:rgba(255,30,0,0.22)"><td><strong>⚠️ Adamantium érc</strong></td><td><strong>4 ‼️</strong></td><td><strong>Blázesrúd</strong></td><td>Adamantium rúd</td></tr>
 </table>
-<div class="warning-box">🔥 <strong>Kritikus!</strong> <strong>Adamantium</strong> olvasztásához kizárólag <strong>Lángoszlop Pálca</strong> (heat 4) alkalmas — szén és lávavödör sem elég! Ez azt jelenti, hogy a Pokol teljes meghódítása szükséges az endgame felszereléshez.</div>
+<div class="warning-box">🔥 <strong>Kritikus!</strong> Az Adamantium olvasztásához kizárólag <strong>Blázesrúd (heat 4)</strong> és <strong>Pokoli Kő Kemence</strong> szükséges — az Adamantium olvadáspontja (6 210°C) meghaladja az Obszidián Kemence maximumát (5 000°C). Lávavödörrel nem olvad el!</div>
 
 
 <!-- ===== VÉRHOLD ===== -->
 </div>
 <div data-lang="hu" id="blood-moon">
-<div class="collapsible"><div class="collapsible-toggle" aria-expanded="false"><h3>Vérhold Rendszer</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="true"><h3>Vérhold Rendszer</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p>A MITE:BE különleges időjárási eseménye! A vérhold periodikusan visszatérő apokaliptikus éjszaka.</p>
 
 <div class="timeline">
@@ -260,8 +263,15 @@
 
 <!-- ===== TELJESÍTMÉNYEK ===== --></div></div></div>
 </div>
+<div data-lang="hu" id="fog-event">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="true"><h3>Ködfolt Esemény</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p>Körülbelül <strong>50 naponta</strong> ködfolt esemény léphet fel, amely <strong>48–72 óráig</strong> tart. A köd drastikusan lecsökkenti a látótávolságot.</p>
+<div class="warning-box">☁️ <strong>Fontos:</strong> Ködfolt alatt a mobok <em>nem égnek el nappal</em>! Ez azt jelenti, hogy zombik és csontvázak nappal is veszélyesek. Maradj a bázison vagy erősíts meg mindent!</div>
+<p>Ha Vérhold egybeesik ködfolttal — a legjobb amit tehetsz, hogy a bázison várod ki.</p>
+</div></div></div>
+</div>
 <div data-lang="hu" id="achievements">
-<div class="collapsible"><div class="collapsible-toggle" aria-expanded="false"><h3>Teljesítmények (Achievements)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="true"><h3>Teljesítmények (Achievements)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p>A MITE:BE több mint 130 egyedi teljesítményt tartalmaz, amelyek a progressziót követik. Íme a legfontosabbak:</p>
 
 <h3>Korai játék (1-15)</h3>
@@ -311,7 +321,7 @@
 </div>
 
 <div data-lang="en" id="mobs">
-<div class="collapsible"><div class="collapsible-toggle" aria-expanded="false"><h3>Mobs & Creatures</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="true"><h3>Mobs & Creatures</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p>MITE:BE adds tons of new mobs to the game:</p>
 
 <h3>Surface Mobs</h3>
@@ -329,7 +339,7 @@
   <tr><th>Mob</th><th>Description</th></tr>
   <tr><td>Ghoul</td><td>Undead cave dweller</td></tr>
   <tr><td>Wight</td><td>Spectral enemy</td></tr>
-  <tr><td>Invisible Stalker</td><td>Can't see it coming!</td></tr>
+  <tr><td>Invisible Stalker</td><td>Can't see it coming! <strong>Silver or Mithril+ weapon</strong> required to deal damage</td></tr>
   <tr><td>Black Widow Spider</td><td>Venomous spider</td></tr>
   <tr><td>Phase Spider</td><td>Phases through walls — only hittable with Ancient Metal sword!</td></tr>
   <tr><td>Bone Lord / Ancient Bone Lord</td><td>Powerful skeleton boss</td></tr>
@@ -343,7 +353,7 @@
   <tr><td>Demon Spider</td><td>Nether spider</td></tr>
   <tr><td>Hellhound</td><td>Fiery wolf</td></tr>
   <tr><td>Infernal Creeper</td><td>Explosive nether creature</td></tr>
-  <tr><td>Fire Elemental</td><td>Made of pure flame</td></tr>
+  <tr><td>Fire Elemental</td><td>Made of pure flame — <strong>silver/fire weapons have no effect!</strong> High HP. Kill with: enchanted weapons, water, snowballs, or damage potions</td></tr>
   <tr><td>Vampire Bat / Giant Vampire Bat</td><td>Blood-sucking</td></tr>
   <tr><td>Red Blaze / Soul Sprite</td><td>Nether variants</td></tr>
   <tr><td>Netherspawn</td><td>Nether spawn creature</td></tr>
@@ -360,7 +370,7 @@
 <!-- ===== POTIONS ===== --></div></div></div>
 </div>
 <div data-lang="en" id="potions">
-<div class="collapsible"><div class="collapsible-toggle" aria-expanded="false"><h3>Potions & Effects</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="true"><h3>Potions & Effects</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <table>
   <tr><th>Potion / Effect</th><th>Description</th></tr>
   <tr><td>Speed</td><td>Faster movement</td></tr>
@@ -468,13 +478,13 @@
   <tr style="background:rgba(255,80,0,0.12)"><td><strong>Mithril ore</strong></td><td><strong>3</strong></td><td><strong>Lava Bucket</strong></td><td>Mithril ingot</td></tr>
   <tr style="background:rgba(255,30,0,0.22)"><td><strong>⚠️ Adamantium ore</strong></td><td><strong>4 ‼️</strong></td><td><strong>Blaze Rod</strong></td><td>Adamantium ingot</td></tr>
 </table>
-<div class="warning-box">🔥 <strong>Critical!</strong> Only a <strong>Blaze Rod</strong> (heat 4) can smelt <strong>Adamantium</strong> — coal and lava buckets are not hot enough! This means conquering the Nether is required before you can craft endgame Adamantium gear.</div>
+<div class="warning-box">🔥 <strong>Critical!</strong> Only a <strong>Blaze Rod</strong> (heat 4) in a <strong>Netherrack Furnace</strong> can smelt Adamantium — its melting point (6,210°C) exceeds the Obsidian Furnace max (5,000°C). Lava buckets are not hot enough!</div>
 
 
 <!-- ===== BLOOD MOON ===== -->
 </div>
 <div data-lang="en" id="blood-moon">
-<div class="collapsible"><div class="collapsible-toggle" aria-expanded="false"><h3>Blood Moon System</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="true"><h3>Blood Moon System</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p>MITE:BE's signature event! The Blood Moon is a periodically recurring apocalyptic night.</p>
 
 <div class="timeline">
@@ -503,8 +513,15 @@
 
 <!-- ===== ACHIEVEMENTS ===== --></div></div></div>
 </div>
+<div data-lang="en" id="fog-event">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="true"><h3>Fog Event</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p>Approximately every <strong>50 days</strong>, a fog event can occur that lasts <strong>48–72 hours</strong>. The fog drastically reduces visibility.</p>
+<div class="warning-box">☁️ <strong>Important:</strong> During a fog event, mobs <em>do not burn in daylight</em>! Zombies and skeletons remain dangerous during the day. Stay at your base or reinforce your defenses!</div>
+<p>If a Blood Moon coincides with a fog event — the best strategy is to wait it out safely inside your base.</p>
+</div></div></div>
+</div>
 <div data-lang="en" id="achievements">
-<div class="collapsible"><div class="collapsible-toggle" aria-expanded="false"><h3>Achievements</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="true"><h3>Achievements</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p>MITE:BE features over 130 unique achievements that track your progression. Here are the key ones:</p>
 
 <h3>Early Game (1-15)</h3>

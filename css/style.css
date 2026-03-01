@@ -204,6 +204,14 @@ tr:hover td{background:rgba(255,255,255,.02);}
 .furnace-row{display:flex;align-items:center;gap:8px;}
 .furnace-flame{font-size:1.6em;}
 .furnace-progress{font-size:1.4em;color:#888;}
+/* Full furnace UI diagram (actual in-game layout) */
+.furnace-full{display:inline-flex;align-items:center;gap:12px;background:linear-gradient(145deg,#3b2f20,#2a2218);padding:16px 20px;border-radius:var(--radius);border:3px solid #5a4a3a;margin:14px 0;box-shadow:0 6px 24px rgba(0,0,0,.5);flex-wrap:wrap;}
+.furnace-full-section{display:flex;flex-direction:column;align-items:center;gap:3px;}
+.furnace-full-section-title{font-size:.68em;color:var(--text2);font-weight:600;text-align:center;margin-bottom:3px;white-space:nowrap;}
+.furnace-full-2x2{display:grid;grid-template-columns:repeat(2,auto);gap:4px;}
+.furnace-slot-lbl{font-size:.58em;color:#888;text-align:center;margin-bottom:1px;white-space:nowrap;}
+.furnace-full-sep{align-self:center;font-size:1.5em;color:rgba(255,255,255,.2);}
+.furnace-full-arrow{align-self:center;font-size:1.8em;color:#888;}
 
 /* ===== READING PROGRESS BAR ===== */
 .progress-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--gold));z-index:999;transition:width .15s;width:0%;}
@@ -219,6 +227,13 @@ mark.search-hl{background:rgba(240,192,64,.3);color:var(--gold);padding:0 2px;bo
 /* ===== LANGUAGE ===== */
 [data-lang]{display:none;}[data-lang].active{display:block;}
 span[data-lang]{display:none;}span[data-lang].active{display:inline;}
+/* Pre-show correct language before DOMContentLoaded (eliminates FOUC) */
+html[data-lang-init="hu"] [data-lang="hu"]{display:block;}
+html[data-lang-init="hu"] span[data-lang="hu"]{display:inline;}
+html[data-lang-init="en"] [data-lang="en"]{display:block;}
+html[data-lang-init="en"] span[data-lang="en"]{display:inline;}
+html:not([data-lang-init]) [data-lang="hu"]{display:block;}
+html:not([data-lang-init]) span[data-lang="hu"]{display:inline;}
 
 /* ===== LISTS ===== */
 ul,ol{margin:8px 0 8px 25px;}li{margin:3px 0;}
