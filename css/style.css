@@ -243,3 +243,11 @@ ul,ol{margin:8px 0 8px 25px;}li{margin:3px 0;}
   .back-to-top{bottom:16px;right:16px;width:36px;height:36px;font-size:1em;}
   h2{margin:24px 0 10px;font-size:1.3em;}
 }
+
+/* ===== FAQ ===== */
+.faq-list{display:flex;flex-direction:column;gap:10px;margin:12px 0;}
+.faq-item{background:var(--surface1);border:1px solid var(--surface2);border-left:3px solid var(--gold);border-radius:4px;padding:12px 14px;}
+.faq-item h4{margin:0 0 5px;color:var(--gold);font-size:0.95em;}
+.faq-item p{margin:0;color:var(--fg2);font-size:0.9em;line-height:1.55;}
+.faq-item p strong{color:var(--fg);}
+.faq-item p code{background:var(--surface2);padding:1px 4px;border-radius:3px;font-size:0.9em;}
