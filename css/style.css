@@ -208,7 +208,8 @@ tr:hover td{background:rgba(255,255,255,.02);}
 .furnace-full{display:inline-flex;align-items:center;gap:12px;background:linear-gradient(145deg,#3b2f20,#2a2218);padding:16px 20px;border-radius:var(--radius);border:3px solid #5a4a3a;margin:14px 0;box-shadow:0 6px 24px rgba(0,0,0,.5);flex-wrap:wrap;}
 .furnace-full-section{display:flex;flex-direction:column;align-items:center;gap:3px;}
 .furnace-full-section-title{font-size:.68em;color:var(--text2);font-weight:600;text-align:center;margin-bottom:3px;white-space:nowrap;}
-.furnace-full-2x2{display:grid;grid-template-columns:repeat(2,56px);gap:4px;justify-items:center;}
+.furnace-full-2x2{display:flex;flex-wrap:wrap;gap:4px;width:116px;}
+.furnace-full-2x2>div{width:56px;display:flex;flex-direction:column;align-items:center;}
 .furnace-slot-lbl{font-size:.58em;color:#888;text-align:center;margin-bottom:1px;white-space:nowrap;}
 .furnace-full-sep{align-self:center;font-size:1.5em;color:rgba(255,255,255,.2);}
 .furnace-full-arrow{align-self:center;font-size:1.8em;color:#888;}
