@@ -251,3 +251,11 @@ ul,ol{margin:8px 0 8px 25px;}li{margin:3px 0;}
 .faq-item p{margin:0;color:var(--fg2);font-size:0.9em;line-height:1.55;}
 .faq-item p strong{color:var(--fg);}
 .faq-item p code{background:var(--surface2);padding:1px 4px;border-radius:3px;font-size:0.9em;}
+
+/* ===== TOP NAV ===== */
+.top-nav{background:var(--surface1);border-bottom:1px solid var(--surface2);padding:0 16px;}
+.top-nav-inner{display:none;flex-wrap:wrap;gap:2px;padding:6px 0;}
+.top-nav-inner.active{display:flex;}
+.top-nav a{padding:5px 13px;border-radius:4px;color:var(--fg2);text-decoration:none;font-size:.88em;transition:background .15s,color .15s;white-space:nowrap;}
+.top-nav a:hover{background:var(--surface2);color:var(--gold);}
+.top-nav a[aria-current="page"]{background:var(--surface2);color:var(--gold);font-weight:600;}
