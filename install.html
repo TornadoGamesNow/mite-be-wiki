@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telepítés — MITE: Break Everything Wiki</title>
+<meta name="description" content="MITE:BE telepítési útmutató — Java 8, PrismLauncher, mod beállítás. Bilingual HU/EN.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="img/items/adamantium_pickaxe.png" type="image/png">
+</head>
+<body>
+<div class="progress-bar" id="progress-bar"></div>
+
+<header class="hero">
+  <h1>MITE: Break Everything</h1>
+  <p class="subtitle" data-lang="hu">v0.9.0 hf3 — Teljes Wiki &amp; Progressziós Útmutató <span style="opacity:.6;font-size:.85em">· Frissítve: 2026. március</span></p>
+  <p class="subtitle" data-lang="en">v0.9.0 hf3 — Complete Wiki &amp; Progression Guide <span style="opacity:.6;font-size:.85em">· Updated: March 2026</span></p>
+  <div class="lang-switch">
+    <button class="lang-btn active" data-val="hu" onclick="setLang('hu')">Magyar</button>
+    <button class="lang-btn" data-val="en" onclick="setLang('en')">English</button>
+  </div>
+</header>
+<div class="container">
+  <div data-lang="hu">
+<nav class="sidebar">
+<div class="search-wrap"><input type="text" class="search-input" placeholder="Keresés a wikiben..." aria-label="Search"></div>
+<div class="sidebar-nav">
+  <h3>🏠 Navigáció</h3>
+  <ul>
+    <li><a href="index.html">← Wiki főoldal</a></li>
+  </ul>
+  <h3>📦 Telepítés</h3>
+  <ul>
+    <li><a href="#install">Telepítési útmutató</a></li>
+  </ul>
+</div>
+</nav>
+  </div>
+  <div data-lang="en">
+<nav class="sidebar">
+<div class="search-wrap"><input type="text" class="search-input" placeholder="Search the wiki..." aria-label="Search"></div>
+<div class="sidebar-nav">
+  <h3>🏠 Navigation</h3>
+  <ul>
+    <li><a href="index.html">← Main wiki</a></li>
+  </ul>
+  <h3>📦 Installation</h3>
+  <ul>
+    <li><a href="#install">Installation Guide</a></li>
+  </ul>
+</div>
+</nav>
+  </div>
+
+  <main class="content">
+<div data-lang="hu">
+<h2 id="install">Telepítési Útmutató</h2>
+<p>A MITE:BE egy Minecraft 1.6.4-es mod. Ez az útmutató <strong>PrismLauncher</strong>-rel való telepítést mutat be — ez az ajánlott módszer.</p>
+
+<div class="warning-box">⚠️ <strong>Fontos:</strong> A MITE:BE <em>nem kompatibilis</em> a modern Minecraft verziókkal. Pontosan <strong>Minecraft 1.6.4</strong>-et igényel, Forge nélkül.</div>
+
+<h3>1. Java 8 telepítése</h3>
+<p>A Minecraft 1.6.4 Java 8-at igényel — Java 11 vagy újabb nem működik megfelelően.</p>
+<ol>
+  <li>Töltsd le a <strong>Java 8 JRE</strong>-t (Adoptium / Eclipse Temurin ajánlott: <em>adoptium.net</em>)</li>
+  <li>Telepítsd szokásos módon</li>
+</ol>
+
+<h3>2. PrismLauncher telepítése</h3>
+<ol>
+  <li>Töltsd le a PrismLauncher-t: <strong>prismlauncher.org</strong></li>
+  <li>Indítsd el és adj hozzá egy Minecraft fiókot</li>
+  <li>Beállítások → Java → válaszd ki a Java 8-as telepítést</li>
+</ol>
+
+<h3>3. MITE:BE Instance létrehozása</h3>
+<ol>
+  <li>PrismLauncher: <strong>Új Instance</strong> → Minecraft verzió: <strong>1.6.4</strong> (Vanilla, Forge nélkül)</li>
+  <li>Töltsd le a MITE:BE modot: <strong>r/MITE</strong> subreddit vagy a <strong>MiTE Discord</strong></li>
+  <li>Jobb klikk az instance-on → <strong>Mods szerkesztése</strong> → add hozzá a <code>.jar</code> fájlt</li>
+  <li>Indítsd el az instance-ot — a főmenü megjelenik ha minden rendben van</li>
+</ol>
+
+<div class="tip-card">💡 <strong>Közösség:</strong> A MiTE Discord-on (<strong>discord.gg/7myyGAXJ6v</strong>) megtalálod a legfrissebb verziót, textúracsomagokat és kiegészítőket. Az <strong>r/MITE</strong> subreddit szintén aktív forrás.</div>
+
+<!-- ===== BEVEZETÉS ===== -->
+</div>
+
+<div data-lang="en">
+<h2 id="install">Installation Guide</h2>
+<p>MITE:BE is a Minecraft 1.6.4 mod. This guide covers installation using <strong>PrismLauncher</strong> — the recommended method.</p>
+
+<div class="warning-box">⚠️ <strong>Important:</strong> MITE:BE is <em>not compatible</em> with modern Minecraft versions. It requires exactly <strong>Minecraft 1.6.4</strong>, without Forge.</div>
+
+<h3>1. Install Java 8</h3>
+<p>Minecraft 1.6.4 requires Java 8 — Java 11 or newer does not work correctly.</p>
+<ol>
+  <li>Download <strong>Java 8 JRE</strong> (Adoptium / Eclipse Temurin recommended: <em>adoptium.net</em>)</li>
+  <li>Install it normally</li>
+</ol>
+
+<h3>2. Install PrismLauncher</h3>
+<ol>
+  <li>Download PrismLauncher at <strong>prismlauncher.org</strong></li>
+  <li>Launch it and add your Minecraft account</li>
+  <li>Settings → Java → select your Java 8 installation</li>
+</ol>
+
+<h3>3. Create the MITE:BE Instance</h3>
+<ol>
+  <li>In PrismLauncher: <strong>Add Instance</strong> → Minecraft version: <strong>1.6.4</strong> (Vanilla, no Forge)</li>
+  <li>Download the MITE:BE mod from the community: <strong>r/MITE</strong> subreddit or the <strong>MiTE Discord</strong></li>
+  <li>Right-click the instance → <strong>Edit Mods</strong> → add the <code>.jar</code> file</li>
+  <li>Launch the instance — the main menu appears if everything is correct</li>
+</ol>
+
+<div class="tip-card">💡 <strong>Community:</strong> Join the MiTE Discord (<strong>discord.gg/7myyGAXJ6v</strong>) to find the latest version, texture packs, and add-ons. The <strong>r/MITE</strong> subreddit is also an active resource.</div>
+
+<!-- ===== INTRO ===== -->
+</div>
+
+  </main>
+</div>
+
+<button class="back-to-top" title="Back to top" aria-label="Back to top">↑</button>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Referenciák — MITE: Break Everything Wiki</title>
+<meta name="description" content="MITE:BE reference tables — mobs, potions, workbench tiers, blood moon, achievements. HU/EN.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="img/items/adamantium_pickaxe.png" type="image/png">
+</head>
+<body>
+<div class="progress-bar" id="progress-bar"></div>
+
+<header class="hero">
+  <h1>MITE: Break Everything</h1>
+  <p class="subtitle" data-lang="hu">v0.9.0 hf3 — Teljes Wiki &amp; Progressziós Útmutató <span style="opacity:.6;font-size:.85em">· Frissítve: 2026. március</span></p>
+  <p class="subtitle" data-lang="en">v0.9.0 hf3 — Complete Wiki &amp; Progression Guide <span style="opacity:.6;font-size:.85em">· Updated: March 2026</span></p>
+  <div class="lang-switch">
+    <button class="lang-btn active" data-val="hu" onclick="setLang('hu')">Magyar</button>
+    <button class="lang-btn" data-val="en" onclick="setLang('en')">English</button>
+  </div>
+</header>
+<div class="container">
+  <div data-lang="hu">
+<nav class="sidebar">
+<div class="search-wrap"><input type="text" class="search-input" placeholder="Keresés a wikiben..." aria-label="Search"></div>
+<div class="sidebar-nav">
+  <h3>🏠 Navigáció</h3>
+  <ul>
+    <li><a href="index.html">← Wiki főoldal</a></li>
+  </ul>
+  <h3>📋 Referenciák</h3>
+  <ul>
+    <li><a href="#mobs">Szörnyek</a></li>
+    <li><a href="#potions">Bájitalok &amp; hatások</a></li>
+    <li><a href="#quality">Munkaasztal szintek</a></li>
+    <li><a href="#blood-moon">Vérhold rendszer</a></li>
+    <li><a href="#achievements">Teljesítmények</a></li>
+  </ul>
+</div>
+</nav>
+  </div>
+  <div data-lang="en">
+<nav class="sidebar">
+<div class="search-wrap"><input type="text" class="search-input" placeholder="Search the wiki..." aria-label="Search"></div>
+<div class="sidebar-nav">
+  <h3>🏠 Navigation</h3>
+  <ul>
+    <li><a href="index.html">← Main wiki</a></li>
+  </ul>
+  <h3>📋 Reference</h3>
+  <ul>
+    <li><a href="#mobs">Mobs &amp; Creatures</a></li>
+    <li><a href="#potions">Potions &amp; Effects</a></li>
+    <li><a href="#quality">Workbench Tiers</a></li>
+    <li><a href="#blood-moon">Blood Moon</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+  </ul>
+</div>
+</nav>
+  </div>
+
+  <main class="content">
+<div data-lang="hu" id="mobs">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="false"><h3>Szörnyek & Lények</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
+<p>A MITE:BE rengeteg új szörnyet ad a játékhoz:</p>
+
+<h3>Felszíni szörnyek</h3>
+<table>
+  <tr><th>Szörny</th><th>Jellemző</th></tr>
+  <tr><td>Szörnyű Farkas</td><td>Erős farkas változat</td></tr>
+  <tr><td>Fa Pók</td><td>Fák között él</td></tr>
+  <tr><td>Síkság Zombi/Creeper/Csontváz/Pók</td><td>Biom-specifikus változatok</td></tr>
+  <tr><td>Havas Zombi/Creeper/Csontváz/Pók</td><td>Biom-specifikus változatok</td></tr>
+  <tr><td>Fosztogató / Fosztogató Vezető</td><td>Rabló csapatok</td></tr>
+</table>
+
+<h3>Underground szörnyek</h3>
+<table>
+  <tr><th>Szörny</th><th>Jellemző</th></tr>
+  <tr><td>Sírkamra Sírkamra (Ghoul)</td><td>Undead barlang lény</td></tr>
+  <tr><td>Sírkamra Szellem (Wight)</td><td>Szellemi ellenség</td></tr>
+  <tr><td>Láthatatlan Követő</td><td>Nem látható!</td></tr>
+  <tr><td>Fekete Özvegy Pók</td><td>Mérgező pók</td></tr>
+  <tr><td>Fázis Pók</td><td>Áthatoló — csak Ősi Fém karddal üthető!</td></tr>
+  <tr><td>Csont Úr / Ókori Csont Úr</td><td>Erős csontváz vezér</td></tr>
+  <tr><td>Rég Halott / Rég Halott Őr</td><td>Ősi undead</td></tr>
+  <tr><td>Föld Elementális</td><td>Kő lény</td></tr>
+</table>
+
+<h3>Nether szörnyek</h3>
+<table>
+  <tr><th>Szörny</th><th>Jellemző</th></tr>
+  <tr><td>Démon Pók</td><td>Nether pók</td></tr>
+  <tr><td>Pokol Kutya</td><td>Tüzes farkas</td></tr>
+  <tr><td>Pokoli Creeper</td><td>Robbanó pokol lény</td></tr>
+  <tr><td>Tűz Elementális</td><td>Tűzből szőtt lény</td></tr>
+  <tr><td>Vámpír Denevér / Óriás Vámpír Denevér</td><td>Vérszívó</td></tr>
+  <tr><td>Vörös Lángoszlop / Lélek Szellem</td><td>Nether variánsok</td></tr>
+  <tr><td>Pokol Terítmény</td><td>Nether spawn</td></tr>
+  <tr><td>Nagy Ghast</td><td>Óriási tűzokádó</td></tr>
+</table>
+
+<h3>Speciális lények</h3>
+<p>Változat Zombi, Változat Kúszó, Változat Pók, Változat Csontváz — erősebb verziók a szokásos szörnyekből.</p>
+<p>Baby Kúszó, Zavart Kúszó, Szétválasztott Kúszó, Megfagyott Kúszó, Végvilág Villám Kúszó — Creeper variánsok.</p>
+<p>Zombi Hívó, Bombázó, Obszidián Gólem, Sivatag Őr, Romlott Hóember — speciális szörnyek.</p>
+<p><strong>Partnerek:</strong> Harcos Lakos, Utazó, Bányász Lakos — szövetségesek!</p>
+
+
+<!-- ===== BÁJITALOK ===== --></div></div></div>
+</div>
+<div data-lang="hu" id="potions">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="false"><h3>Bájitalok & Hatások</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
+<table>
+  <tr><th>Bájital / Hatás</th><th>Leírás</th></tr>
+  <tr><td>Sebesség</td><td>Gyorsabb mozgás</td></tr>
+  <tr><td>Erő</td><td>Több ütés sebzés</td></tr>
+  <tr><td>Regeneráció</td><td>Folyamatos gyógyulás</td></tr>
+  <tr><td>Tűzállóság</td><td>Tűz és láva nem sebez</td></tr>
+  <tr><td>Láva Ellenállás</td><td>Speciális MITE effekt</td></tr>
+  <tr><td>Éjszakai Látás</td><td>Látás sötétben</td></tr>
+  <tr><td>Vízben Való Légzés</td><td>Víz alatti lélegzés</td></tr>
+  <tr><td>Láthatatlanság</td><td>Szörnyek nem látnak</td></tr>
+  <tr><td>Mérgezés</td><td>Folyamatos sebzés</td></tr>
+  <tr><td>Gyengeség</td><td>Kevesebb sebzés</td></tr>
+  <tr><td>Lassúság</td><td>Lassabb mozgás</td></tr>
+  <tr><td>Sorvadás</td><td>Wither hatás</td></tr>
+  <tr><td>Korrózió</td><td>Felszerelés károsodás</td></tr>
+  <tr><td>Alvászavar</td><td>Nem tudsz aludni</td></tr>
+  <tr><td>Hideg</td><td>Fagyás — melegítsd magad!</td></tr>
+  <tr><td>Napszúrás</td><td>Hőség hatás</td></tr>
+  <tr><td>Paralízis</td><td>Mozgásképtelenség</td></tr>
+  <tr><td>Sebezhetőség</td><td>Több bekapott sebzés</td></tr>
+</table>
+
+
+<!-- ===== MINŐSÉG ===== --></div></div></div>
+</div>
+<div data-lang="hu">
+<h2 id="quality">Munkaasztal Szintek</h2>
+<p>A különböző anyagú munkaasztalok különböző szintű tárgyak készítését teszik lehetővé. Minden magasabb szintű munkaasztal képes az alacsonyabb szintek tárgyait is elkészíteni.</p>
+
+<h3>Munkaasztalok elkészítése</h3>
+<p>Az alaprecept (Réztől felfelé): <strong>fémrúd/fémnyelv + Bőr + Bot + (bármely) Deszka</strong>.</p>
+<table class="compare-table">
+  <tr><th>Munkaasztal</th><th>Kulcsanyag</th><th>Egyéb összetevők</th><th>Nehézség</th></tr>
+  <tr><td><strong>Kőzet Munkaasztal</strong></td><td>Kova Kés</td><td>Fatörzs</td><td>270</td></tr>
+  <tr><td><strong>Réz Munkaasztal</strong></td><td>Réz Nyelv</td><td>Bőr + Bot + Deszka</td><td>605</td></tr>
+  <tr><td><strong>Ezüst Munkaasztal</strong></td><td>Ezüst Nyelv</td><td>Bőr + Bot + Deszka</td><td>605</td></tr>
+  <tr><td><strong>Arany Munkaasztal</strong></td><td>Arany Rúd</td><td>Bőr + Bot + Deszka</td><td>605</td></tr>
+  <tr><td><strong>Vas Munkaasztal</strong></td><td>Vas Rúd</td><td>Bőr + Bot + Deszka</td><td>1005</td></tr>
+  <tr><td><strong>Keménykő Munkaasztal</strong></td><td>Keménykő Rúd</td><td>Bőr + Bot + Deszka</td><td>1805</td></tr>
+  <tr><td><strong>Ősi Fém Munkaasztal</strong></td><td>Ősi Fém Nyelv</td><td>Bőr + Bot + Deszka</td><td>1805</td></tr>
+  <tr><td><strong>Mithril Munkaasztal</strong></td><td>Mithril Nyelv</td><td>Bőr + Bot + Deszka</td><td>6605</td></tr>
+  <tr><td><strong>Adamantium Munkaasztal</strong></td><td>Adamantium Nyelv</td><td>Bőr + Bot + Deszka</td><td>25805</td></tr>
+  <tr><td><strong>Obszidián Munkaasztal</strong></td><td>Obszidián</td><td>Zsinór/Ón + Bot + Fatörzs</td><td>410</td></tr>
+</table>
+
+<h3>Mit lehet melyiken készíteni?</h3>
+<p>A munkaasztal anyaga meghatározza a maximum szintet, amit rajta készíthetsz:</p>
+<table class="compare-table">
+  <tr><th>Munkaasztal</th><th>Feloldott tárgyak és szintek</th></tr>
+  <tr><td><strong>Kőzet Munkaasztal</strong></td><td>Kova és fa szerszámok, kő és fa építőelemek, egyszerű receptek</td></tr>
+  <tr><td><strong>Réz Munkaasztal</strong></td><td>Réz szerszámok, réz fegyverek, réz páncél; <strong>Kő Kemence Mag</strong></td></tr>
+  <tr><td><strong>Ezüst Munkaasztal</strong></td><td>Ezüst szerszámok, ezüst fegyverek, ezüst páncél; <strong>Kő Kemence Mag</strong></td></tr>
+  <tr><td><strong>Arany Munkaasztal</strong></td><td>Arany szerszámok, fegyverek, páncél; <strong>Obszidián Kemence Mag</strong></td></tr>
+  <tr><td><strong>Vas Munkaasztal</strong></td><td>Vas szerszámok, fegyverek, páncél; <strong>Obszidián Kemence Mag</strong></td></tr>
+  <tr><td><strong>Keménykő Munkaasztal</strong></td><td>Keménykő szerszámok és fegyverek</td></tr>
+  <tr><td><strong>Ősi Fém Munkaasztal</strong></td><td>Ősi fém eszközök, fejlett elektronika (Bányász Sisak, Hűtőfolyadék)</td></tr>
+  <tr><td><strong>Mithril Munkaasztal</strong></td><td>Mithril tárgyak; <strong>Pokoli Kő Kemence Mag</strong></td></tr>
+  <tr><td><strong>Adamantium Munkaasztal</strong></td><td>Adamantium tárgyak (legjobb fém szint); <strong>Pokoli Kő Kemence Mag</strong></td></tr>
+  <tr><td><strong>Obszidián Munkaasztal</strong></td><td>Speciális obszidián tárgyak</td></tr>
+</table>
+
+<div class="tip-card"><strong>Különleges: Kemence Mag recept!</strong><br>A Kemence Mag elkészítéséhez maga a munkaasztal kerül a rácsközépre — és elhasználódik!
+<ul style="margin:6px 0 0 0">
+  <li><strong>Kő Kemence Mag:</strong> 8× Kőtömb + <em>Réz</em> vagy <em>Ezüst Munkaasztal</em> (középen)</li>
+  <li><strong>Obszidián Kemence Mag:</strong> 8× Obszidián + <em>Arany</em> vagy <em>Vas Munkaasztal</em> (középen)</li>
+  <li><strong>Pokoli Kő Kemence Mag:</strong> 8× Pokoli Kő + <em>Mithril</em> vagy <em>Adamantium Munkaasztal</em> (középen)</li>
+</ul></div>
+
+<p>Minden munkaasztalnak létezik <strong>Automata</strong> változata is (PCB-vel fejleszthető)!</p>
+
+<h3>Maximális Tárgy Minőség Anyagonként</h3>
+<p>Minden anyag csak egy bizonyos minőségi szintig képes tárgyat készíteni — a ritka anyagok legendás minőségű tárgyakat adhatnak:</p>
+<table class="compare-table">
+  <tr><th>Minőség</th><th>Anyagok</th></tr>
+  <tr style="background:rgba(200,150,255,0.15)"><td><strong>🏆 Legendás</strong></td><td>Mithril, Adamantium</td></tr>
+  <tr style="background:rgba(255,200,100,0.12)"><td><strong>⚒️ Mestermű</strong></td><td>Vas, Ősi Fém, Magas Szén Acél</td></tr>
+  <tr style="background:rgba(255,220,0,0.10)"><td><strong>✨ Kitűnő</strong></td><td>Arany, Gyémánt</td></tr>
+  <tr style="background:rgba(100,255,100,0.10)"><td><strong>💎 Kiváló</strong></td><td>Réz, Keménykő, Ezüst, Smaragd, Bronz, Ezüst-Réz ötvözet</td></tr>
+  <tr><td><strong>Jó</strong></td><td>Bőr, Fa, Kova, Obszidián, Kvarc, Csont</td></tr>
+  <tr style="color:#888"><td><strong>Átlagos</strong></td><td>Pokolfenyő, Üveg</td></tr>
+  <tr style="color:#a44"><td><strong>Rossz</strong></td><td>Rozsdás Vas</td></tr>
+</table>
+
+<h3>Kemence Tüzelőanyag Referencia</h3>
+<p>A különböző tüzelőanyagok eltérő ideig égnek és eltérő <strong>hőfokot</strong> (heat level) adnak — egyes ércek olvasztásához magasabb hőfokra van szükség!</p>
+<table class="compare-table">
+  <tr><th>Tüzelőanyag</th><th>Égési idő</th><th>Hőfok</th><th>Megjegyzés</th></tr>
+  <tr style="background:rgba(255,100,0,0.20)"><td><strong>Lángoszlop Pálca 🔥</strong></td><td>2 400 tick (~2 perc)</td><td><strong>4 ⭐</strong></td><td>Legmagasabb hőfok!</td></tr>
+  <tr style="background:rgba(255,80,0,0.12)"><td>Lávavödör 🌋</td><td>3 200 tick (~2,7 perc)</td><td><strong>3</strong></td><td>Magas hőfok</td></tr>
+  <tr style="background:rgba(80,80,80,0.18)"><td><strong>Szénblokk 🪨</strong></td><td>16 000 tick (~13 perc)</td><td>2</td><td>Leghosszabb égés!</td></tr>
+  <tr><td>Szén (kő)</td><td>3 200 tick</td><td>2</td><td>Fém olvasztáshoz szükséges</td></tr>
+  <tr><td>Faszén</td><td>3 200 tick</td><td>1</td><td>Kevésbé forró</td></tr>
+  <tr><td>Fatörzs</td><td>1 600 tick</td><td>1</td><td>Kezdők tüzelőanyaga</td></tr>
+  <tr><td>Fáklya</td><td>800 tick</td><td>1</td><td>—</td></tr>
+  <tr><td>Deszka / Faeszközök</td><td>400 tick</td><td>1</td><td>Alacsony értékű</td></tr>
+</table>
+<div class="info-box">⚠️ <strong>Fontos:</strong> A vasolvasztáshoz <strong>szén (heat 2)</strong> szükséges — faszénnel (heat 1) nem megy! A Lángoszlop Pálca (heat 4) a legmagasabb hőfokú tüzelőanyag, de csak a Pokol meghódítása után szerezhető be.</div>
+
+<h3>Érc Olvasztás Hőfok Követelmények</h3>
+<p>Az ércolvasztás <strong>Bányász</strong> foglalkozást igényel! A hőfok meghatározza, milyen tüzelőanyag szükséges:</p>
+<table class="compare-table">
+  <tr><th>Olvasztandó</th><th>Hőfok</th><th>Minimum tüzelőanyag</th><th>Eredmény</th></tr>
+  <tr><td>Szén érc, Fa</td><td>1</td><td>Bármi (fa, faszén...)</td><td>Szén / Faszén</td></tr>
+  <tr><td>Réz, Ezüst, Keménykő, Vas, Arany, Gyémánt, Ón érc</td><td>2</td><td><strong>Szén (kő)</strong></td><td>Megfelelő rúd</td></tr>
+  <tr style="background:rgba(255,80,0,0.12)"><td><strong>Mithril érc</strong></td><td><strong>3</strong></td><td><strong>Lávavödör</strong></td><td>Mithril rúd</td></tr>
+  <tr style="background:rgba(255,30,0,0.22)"><td><strong>⚠️ Adamantium érc</strong></td><td><strong>4 ‼️</strong></td><td><strong>Lángoszlop Pálca</strong></td><td>Adamantium rúd</td></tr>
+</table>
+<div class="warning-box">🔥 <strong>Kritikus!</strong> <strong>Adamantium</strong> olvasztásához kizárólag <strong>Lángoszlop Pálca</strong> (heat 4) alkalmas — szén és lávavödör sem elég! Ez azt jelenti, hogy a Pokol teljes meghódítása szükséges az endgame felszereléshez.</div>
+
+
+<!-- ===== VÉRHOLD ===== -->
+</div>
+<div data-lang="hu" id="blood-moon">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="false"><h3>Vérhold Rendszer</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
+<p>A MITE:BE különleges időjárási eseménye! A vérhold periodikusan visszatérő apokaliptikus éjszaka.</p>
+
+<div class="timeline">
+  <div class="timeline-item">
+    <h4>🌕 30. nap — Közeledik a vörös hold</h4>
+    <p>Sok szörnyet láttál már a barlangokban. A vér elkezdi megrontani ezt a világot.</p>
+  </div>
+  <div class="timeline-item">
+    <h4>🔴 32. nap — A vérhold leszáll</h4>
+    <p>Jön a vérhold, az élőholtak szabadon kószálnak. Nappal a pókok és creeperek megvadulnak. A véreső fáradtságot hoz. Az éjszaka a rémálom kezdete — ragadd meg a fegyvered, védd a bázisod!</p>
+  </div>
+  <div class="timeline-item">
+    <h4>🏚️ 33. nap — Lerombolt bázis</h4>
+    <p>A vérhold véget ért. Szomorúan nézed a lerombolt bázist, de erősebb lettél. Készülj a következő holdra!</p>
+  </div>
+  <div class="timeline-item">
+    <h4>🔴 64. nap — Megint jön!</h4>
+    <p>De most már rendkívüli vagy. A kardod könnyedén áthatol a keményebb bőrön is.</p>
+  </div>
+  <div class="timeline-item">
+    <h4>🔵 128. nap — Kék hold</h4>
+    <p>Nem csak rossz holdak vannak! Felkelt a kék hold, a termés virágzik — ez jó jel.</p>
+  </div>
+</div>
+
+
+<!-- ===== TELJESÍTMÉNYEK ===== --></div></div></div>
+</div>
+<div data-lang="hu" id="achievements">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="false"><h3>Teljesítmények (Achievements)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
+<p>A MITE:BE több mint 130 egyedi teljesítményt tartalmaz, amelyek a progressziót követik. Íme a legfontosabbak:</p>
+
+<h3>Korai játék (1-15)</h3>
+<div class="ach"><span class="ach-name">Honnan jöttem?</span> <span class="ach-cond">(Induló teljesítmény)</span><div class="ach-desc">Nem tudod, ki vagy, miért kerültél ide, ebbe a világba...</div></div>
+<div class="ach"><span class="ach-name">Éhes vagyok!</span> <span class="ach-cond">(Búzamag szerzés)</span><div class="ach-desc">Fű elpusztításakor búzamag vagy növényszál hullhat.</div></div>
+<div class="ach"><span class="ach-name">Kovakő és penge</span> <span class="ach-cond">(Alap kova kés)</span><div class="ach-desc">Fűkötél + kovaszilánk + fabot</div></div>
+<div class="ach"><span class="ach-name">Kövektől a városig</span> <span class="ach-cond">(Munkaasztal)</span><div class="ach-desc">Az első munkaasztal!</div></div>
+<div class="ach"><span class="ach-name">Primitív romantika</span> <span class="ach-cond">(Agyagkemence)</span><div class="ach-desc">Keress agyagot patakokban</div></div>
+
+<h3>Fém korszak (16-28)</h3>
+<div class="ach"><span class="ach-name">Egyre profibb leszek</span> <span class="ach-cond">(Obsz. öntőforma)</span><div class="ach-desc">Az öntőforma 20 ércrudat lehűthet</div></div>
+<div class="ach"><span class="ach-name">Az ember legyőzi a természetet</span> <span class="ach-cond">(Első fém rúd)</span><div class="ach-desc">9 ércdarab → kemence → öntőforma → fém!</div></div>
+<div class="ach"><span class="ach-name">Mesterkohász</span> <span class="ach-cond">(Multiblokk kemence)</span><div class="ach-desc">3×3×3 üreges kocka szerkezet</div></div>
+<div class="ach"><span class="ach-name">Varázsos ütés</span> <span class="ach-cond">(Smaragd bűvölőasztal)</span><div class="ach-desc">Bűvöld a felszerelésed!</div></div>
+
+<h3>Végső kihívások (36-43)</h3>
+<div class="ach"><span class="ach-name">Forró pokol-kapu</span> <span class="ach-cond">(Köpeny megtalálása)</span><div class="ach-desc">A földalatti világ alapkő-rétegében</div></div>
+<div class="ach"><span class="ach-name">Halhatatlan legenda</span> <span class="ach-cond">(Nether-csillag)</span><div class="ach-desc">Az alapkő-zúzóhoz kell!</div></div>
+<div class="ach"><span class="ach-name">A föld megremeg?!</span> <span class="ach-cond">(Bedrock Pulverizer)</span><div class="ach-desc">Alapkő-magra, Erősített Ender-szemmel aktiválás</div></div>
+<div class="ach"><span class="ach-name">A Vég Birodalma</span> <span class="ach-cond">(End belépés)</span><div class="ach-desc">Az alapkő-mag elpusztításakor nyílik</div></div>
+<div class="ach"><span class="ach-name">Végső csata</span> <span class="ach-cond">(Ender-sárkány)</span><div class="ach-desc">Adamantium-nyíllal pusztítsd a kristályokat, győzd le a sárkányt!</div></div>
+<div class="ach"><span class="ach-name">Vége van mindennek?</span> <span class="ach-cond">(Hazaút az Endből)</span><div class="ach-desc">Tényleg vége van?</div></div>
+
+<h3>Időalapú teljesítmények</h3>
+<table>
+  <tr><th>Nap</th><th>Teljesítmény</th><th>Leírás</th></tr>
+  <tr><td>2,5.</td><td>Kitartás – sikerülni fog!</td><td>Túlélhetsz ebben a világban!</td></tr>
+  <tr><td>6.</td><td>Alkalmazkodás kezdete!</td><td>Ismered a szabályokat, alkalmazkodj!</td></tr>
+  <tr><td>12.</td><td>Megvan az első felszerelés!</td><td>Meleg kemence, készlet</td></tr>
+  <tr><td>16.</td><td>Kihívom ezt a világot!</td><td>Ércekből sugárzó energia</td></tr>
+  <tr><td>50.</td><td>Telnek a napok...</td><td>Sok biom bejárva, állatok barátságosak</td></tr>
+  <tr><td>80.</td><td>Ráéreztem a ritmusra</td><td>Obszidiánban téreltoló mágia</td></tr>
+  <tr><td>96.</td><td>Már nem vetélytársam</td><td>A vérhold semmi</td></tr>
+  <tr><td>100.</td><td>100 nap</td><td>Ki vagyok? Miért kerültem ide?</td></tr>
+  <tr><td>128.</td><td>Kék hold</td><td>A termés virágzik — jó jel!</td></tr>
+  <tr><td>200.</td><td>200 nap!</td><td>Elégedettség, gazdagodás</td></tr>
+  <tr><td>300.</td><td>300 nap</td><td>Luxusra fordíthatod az erőforrásokat</td></tr>
+  <tr><td>400.</td><td>Az élet ilyen egyszerű</td><td>Bányász, gazda, harcos — élvezed az életet</td></tr>
+</table>
+
+<br><br>
+<div style="text-align:center; color:var(--text2); padding: 40px 0; border-top: 2px solid var(--bg3);">
+  <p style="font-size:1.1em; color:var(--gold);">⚔️ MITE:BE v0.9.0 — Teljes Magyar Wiki ⚔️</p>
+  <p>A játékfájlok alapján generálva</p>
+  <p style="margin-top:10px;font-size:0.85em;">A wiki a MITE.lang, hu_HU.lang és a class fájlok adatai alapján készült.</p>
+</div></div></div></div>
+</div>
+
+<div data-lang="en" id="mobs">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="false"><h3>Mobs & Creatures</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
+<p>MITE:BE adds tons of new mobs to the game:</p>
+
+<h3>Surface Mobs</h3>
+<table>
+  <tr><th>Mob</th><th>Description</th></tr>
+  <tr><td>Dire Wolf</td><td>Stronger wolf variant</td></tr>
+  <tr><td>Wood Spider</td><td>Lives among trees</td></tr>
+  <tr><td>Plains Zombie/Creeper/Skeleton/Spider</td><td>Biome-specific variants</td></tr>
+  <tr><td>Snow Zombie/Creeper/Skeleton/Spider</td><td>Biome-specific variants</td></tr>
+  <tr><td>Pillager / Pillager Leader</td><td>Raiding parties</td></tr>
+</table>
+
+<h3>Underground Mobs</h3>
+<table>
+  <tr><th>Mob</th><th>Description</th></tr>
+  <tr><td>Ghoul</td><td>Undead cave dweller</td></tr>
+  <tr><td>Wight</td><td>Spectral enemy</td></tr>
+  <tr><td>Invisible Stalker</td><td>Can't see it coming!</td></tr>
+  <tr><td>Black Widow Spider</td><td>Venomous spider</td></tr>
+  <tr><td>Phase Spider</td><td>Phases through walls — only hittable with Ancient Metal sword!</td></tr>
+  <tr><td>Bone Lord / Ancient Bone Lord</td><td>Powerful skeleton boss</td></tr>
+  <tr><td>Longdead / Longdead Guardian</td><td>Ancient undead</td></tr>
+  <tr><td>Earth Elemental</td><td>Stone creature</td></tr>
+</table>
+
+<h3>Nether Mobs</h3>
+<table>
+  <tr><th>Mob</th><th>Description</th></tr>
+  <tr><td>Demon Spider</td><td>Nether spider</td></tr>
+  <tr><td>Hellhound</td><td>Fiery wolf</td></tr>
+  <tr><td>Infernal Creeper</td><td>Explosive nether creature</td></tr>
+  <tr><td>Fire Elemental</td><td>Made of pure flame</td></tr>
+  <tr><td>Vampire Bat / Giant Vampire Bat</td><td>Blood-sucking</td></tr>
+  <tr><td>Red Blaze / Soul Sprite</td><td>Nether variants</td></tr>
+  <tr><td>Netherspawn</td><td>Nether spawn creature</td></tr>
+  <tr><td>Great Ghast</td><td>Massive fire-breathing ghast</td></tr>
+</table>
+
+<h3>Special Mobs</h3>
+<p>Variant Zombie, Variant Creeper, Variant Spider, Variant Skeleton — stronger versions of common mobs.</p>
+<p>Baby Creeper, Confused Creeper, Split Creeper, Frozen Creeper, End Lightning Creeper — creeper variants.</p>
+<p>Zombie Caller, Bomber Man, Obsidian Golem, Desert Guard, Evil Snowman — special creatures.</p>
+<p><strong>Partners:</strong> Warrior Villager, Traveller, Miner Villager — your allies!</p>
+
+
+<!-- ===== POTIONS ===== --></div></div></div>
+</div>
+<div data-lang="en" id="potions">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="false"><h3>Potions & Effects</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
+<table>
+  <tr><th>Potion / Effect</th><th>Description</th></tr>
+  <tr><td>Speed</td><td>Faster movement</td></tr>
+  <tr><td>Strength</td><td>More melee damage</td></tr>
+  <tr><td>Regeneration</td><td>Continuous healing</td></tr>
+  <tr><td>Fire Resistance</td><td>Fire and lava don't hurt</td></tr>
+  <tr><td>Lava Resistance</td><td>MITE-specific effect</td></tr>
+  <tr><td>Night Vision</td><td>See in the dark</td></tr>
+  <tr><td>Water Breathing</td><td>Breathe underwater</td></tr>
+  <tr><td>Invisibility</td><td>Mobs can't see you</td></tr>
+  <tr><td>Poison</td><td>Continuous damage</td></tr>
+  <tr><td>Weakness</td><td>Less damage dealt</td></tr>
+  <tr><td>Slowness</td><td>Slower movement</td></tr>
+  <tr><td>Wither</td><td>Wither effect</td></tr>
+  <tr><td>Corrosion</td><td>Equipment damage</td></tr>
+  <tr><td>Insomnia</td><td>Can't sleep</td></tr>
+  <tr><td>Cold</td><td>Freezing — warm up!</td></tr>
+  <tr><td>Sunstroke</td><td>Heat effect</td></tr>
+  <tr><td>Paralysis</td><td>Cannot move</td></tr>
+  <tr><td>Vulnerability</td><td>Take more damage</td></tr>
+</table>
+
+
+<!-- ===== QUALITY ===== --></div></div></div>
+</div>
+<div data-lang="en">
+<h2 id="quality">Workbench Tiers</h2>
+<p>Different material workbenches unlock different tier items. Every higher-tier workbench can also craft all lower-tier items.</p>
+
+<h3>Crafting Workbenches</h3>
+<p>The basic recipe (Copper and above): <strong>metal ingot/bar + Leather + Stick + (any) Plank</strong>.</p>
+<table class="compare-table">
+  <tr><th>Workbench</th><th>Key Material</th><th>Other Components</th><th>Difficulty</th></tr>
+  <tr><td><strong>Flint Workbench</strong></td><td>Flint Knife</td><td>Wood Log</td><td>270</td></tr>
+  <tr><td><strong>Copper Workbench</strong></td><td>Réz Nyelv (Copper Bar)</td><td>Leather + Stick + Plank</td><td>605</td></tr>
+  <tr><td><strong>Silver Workbench</strong></td><td>Ezüst Nyelv (Silver Bar)</td><td>Leather + Stick + Plank</td><td>605</td></tr>
+  <tr><td><strong>Gold Workbench</strong></td><td>Gold Ingot</td><td>Leather + Stick + Plank</td><td>605</td></tr>
+  <tr><td><strong>Iron Workbench</strong></td><td>Iron Ingot</td><td>Leather + Stick + Plank</td><td>1005</td></tr>
+  <tr><td><strong>Hardstone Workbench</strong></td><td>Hardstone Ingot</td><td>Leather + Stick + Plank</td><td>1805</td></tr>
+  <tr><td><strong>Ancient Metal Workbench</strong></td><td>Ősi Fém Nyelv (Ancient Metal Bar)</td><td>Leather + Stick + Plank</td><td>1805</td></tr>
+  <tr><td><strong>Mithril Workbench</strong></td><td>Mithril Nyelv (Mithril Bar)</td><td>Leather + Stick + Plank</td><td>6605</td></tr>
+  <tr><td><strong>Adamantium Workbench</strong></td><td>Adamantium Nyelv (Adamantium Bar)</td><td>Leather + Stick + Plank</td><td>25805</td></tr>
+  <tr><td><strong>Obsidian Workbench</strong></td><td>Obsidian</td><td>String/Tin + Stick + Log</td><td>410</td></tr>
+</table>
+
+<h3>What Can Be Crafted Where?</h3>
+<p>The workbench material determines the maximum tier of items you can craft at it:</p>
+<table class="compare-table">
+  <tr><th>Workbench</th><th>Unlocked Items &amp; Tiers</th></tr>
+  <tr><td><strong>Flint Workbench</strong></td><td>Flint &amp; wood tools, stone/wood building materials, basic recipes</td></tr>
+  <tr><td><strong>Copper Workbench</strong></td><td>Copper tools, weapons &amp; armor; <strong>Stone Furnace Core</strong></td></tr>
+  <tr><td><strong>Silver Workbench</strong></td><td>Silver tools, weapons &amp; armor; <strong>Stone Furnace Core</strong></td></tr>
+  <tr><td><strong>Gold Workbench</strong></td><td>Gold tools, weapons &amp; armor; <strong>Obsidian Furnace Core</strong></td></tr>
+  <tr><td><strong>Iron Workbench</strong></td><td>Iron tools, weapons &amp; armor; <strong>Obsidian Furnace Core</strong></td></tr>
+  <tr><td><strong>Hardstone Workbench</strong></td><td>Hardstone tools and weapons</td></tr>
+  <tr><td><strong>Ancient Metal Workbench</strong></td><td>Ancient metal items, advanced electronics (Mining Helmet, Cooling Liquid)</td></tr>
+  <tr><td><strong>Mithril Workbench</strong></td><td>Mithril items; <strong>Netherrack Furnace Core</strong></td></tr>
+  <tr><td><strong>Adamantium Workbench</strong></td><td>Adamantium items (best metal tier); <strong>Netherrack Furnace Core</strong></td></tr>
+  <tr><td><strong>Obsidian Workbench</strong></td><td>Special obsidian items</td></tr>
+</table>
+
+<div class="tip-card"><strong>Special: Furnace Core recipe!</strong><br>To craft a Furnace Core, the workbench itself goes into the center slot of the crafting grid — and gets consumed!
+<ul style="margin:6px 0 0 0">
+  <li><strong>Stone Furnace Core:</strong> 8× Stone Block + <em>Copper</em> or <em>Silver Workbench</em> (center)</li>
+  <li><strong>Obsidian Furnace Core:</strong> 8× Obsidian + <em>Gold</em> or <em>Iron Workbench</em> (center)</li>
+  <li><strong>Netherrack Furnace Core:</strong> 8× Netherrack + <em>Mithril</em> or <em>Adamantium Workbench</em> (center)</li>
+</ul></div>
+
+<p>Every workbench also has an <strong>Auto</strong> variant (upgradeable with PCB)!</p>
+
+<h3>Maximum Item Quality by Material</h3>
+<p>Each material can only craft items up to a certain quality tier — rarer materials enable legendary quality items:</p>
+<table class="compare-table">
+  <tr><th>Quality</th><th>Materials</th></tr>
+  <tr style="background:rgba(200,150,255,0.15)"><td><strong>🏆 Legendary</strong></td><td>Mithril, Adamantium</td></tr>
+  <tr style="background:rgba(255,200,100,0.12)"><td><strong>⚒️ Masterwork</strong></td><td>Iron, Ancient Metal, High Carbon Steel</td></tr>
+  <tr style="background:rgba(255,220,0,0.10)"><td><strong>✨ Excellent</strong></td><td>Gold, Diamond</td></tr>
+  <tr style="background:rgba(100,255,100,0.10)"><td><strong>💎 Superior</strong></td><td>Copper, Hardstone, Silver, Emerald, Bronze, Silver-Copper alloy</td></tr>
+  <tr><td><strong>Fine</strong></td><td>Leather, Wood, Flint, Obsidian, Quartz, Bone</td></tr>
+  <tr style="color:#888"><td><strong>Average</strong></td><td>Netherrack, Glass</td></tr>
+  <tr style="color:#a44"><td><strong>Poor</strong></td><td>Rusted Iron</td></tr>
+</table>
+
+<h3>Furnace Fuel Reference</h3>
+<p>Different fuels burn for different durations and provide different <strong>heat levels</strong> — some ores require higher heat to smelt!</p>
+<table class="compare-table">
+  <tr><th>Fuel</th><th>Burn Time</th><th>Heat Level</th><th>Notes</th></tr>
+  <tr style="background:rgba(255,100,0,0.20)"><td><strong>Blaze Rod 🔥</strong></td><td>2,400 ticks (~2 min)</td><td><strong>4 ⭐</strong></td><td>Highest heat level!</td></tr>
+  <tr style="background:rgba(255,80,0,0.12)"><td>Lava Bucket 🌋</td><td>3,200 ticks (~2.7 min)</td><td><strong>3</strong></td><td>High heat</td></tr>
+  <tr style="background:rgba(80,80,80,0.18)"><td><strong>Coal Block 🪨</strong></td><td>16,000 ticks (~13 min)</td><td>2</td><td>Longest burn time!</td></tr>
+  <tr><td>Coal</td><td>3,200 ticks</td><td>2</td><td>Required for metal smelting</td></tr>
+  <tr><td>Charcoal</td><td>3,200 ticks</td><td>1</td><td>Less hot than coal</td></tr>
+  <tr><td>Log</td><td>1,600 ticks</td><td>1</td><td>Early-game fuel</td></tr>
+  <tr><td>Torch</td><td>800 ticks</td><td>1</td><td>—</td></tr>
+  <tr><td>Planks / Wood tools</td><td>400 ticks</td><td>1</td><td>Low value</td></tr>
+</table>
+<div class="info-box">⚠️ <strong>Important:</strong> Smelting iron requires <strong>coal (heat 2)</strong> — charcoal (heat 1) won't work! The Blaze Rod (heat 4) is the highest-heat fuel available, but only obtainable after conquering the Nether.</div>
+
+<h3>Ore Smelting Heat Requirements</h3>
+<p>Smelting ores requires the <strong>Miner</strong> profession! The heat level determines what fuel you must use:</p>
+<table class="compare-table">
+  <tr><th>Ore to Smelt</th><th>Heat Level</th><th>Minimum Fuel</th><th>Result</th></tr>
+  <tr><td>Coal ore, Wood</td><td>1</td><td>Anything (wood, charcoal...)</td><td>Coal / Charcoal</td></tr>
+  <tr><td>Copper, Silver, Hardstone, Iron, Gold, Diamond, Tin ore</td><td>2</td><td><strong>Coal</strong></td><td>Corresponding ingot</td></tr>
+  <tr style="background:rgba(255,80,0,0.12)"><td><strong>Mithril ore</strong></td><td><strong>3</strong></td><td><strong>Lava Bucket</strong></td><td>Mithril ingot</td></tr>
+  <tr style="background:rgba(255,30,0,0.22)"><td><strong>⚠️ Adamantium ore</strong></td><td><strong>4 ‼️</strong></td><td><strong>Blaze Rod</strong></td><td>Adamantium ingot</td></tr>
+</table>
+<div class="warning-box">🔥 <strong>Critical!</strong> Only a <strong>Blaze Rod</strong> (heat 4) can smelt <strong>Adamantium</strong> — coal and lava buckets are not hot enough! This means conquering the Nether is required before you can craft endgame Adamantium gear.</div>
+
+
+<!-- ===== BLOOD MOON ===== -->
+</div>
+<div data-lang="en" id="blood-moon">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="false"><h3>Blood Moon System</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
+<p>MITE:BE's signature event! The Blood Moon is a periodically recurring apocalyptic night.</p>
+
+<div class="timeline">
+  <div class="timeline-item">
+    <h4>🌕 Day 30 — The Red Moon Approaches</h4>
+    <p>You've seen many monsters in the caves. Blood begins to corrupt this world.</p>
+  </div>
+  <div class="timeline-item">
+    <h4>🔴 Day 32 — Blood Moon Descends</h4>
+    <p>The blood moon rises, undead roam freely. During the day, spiders and creepers go berserk. Blood rain brings fatigue. Night is when the nightmare begins — grab your weapon, defend your base!</p>
+  </div>
+  <div class="timeline-item">
+    <h4>🏚️ Day 33 — Destroyed Base</h4>
+    <p>The blood moon is over. You sadly look at your destroyed base, but you're stronger now. Prepare for the next one!</p>
+  </div>
+  <div class="timeline-item">
+    <h4>🔴 Day 64 — It's Back!</h4>
+    <p>But now you're extraordinary. Your sword cuts through the toughest hide with ease.</p>
+  </div>
+  <div class="timeline-item">
+    <h4>🔵 Day 128 — Blue Moon</h4>
+    <p>Not all moons are bad! The blue moon rises, crops flourish — a good omen.</p>
+  </div>
+</div>
+
+
+<!-- ===== ACHIEVEMENTS ===== --></div></div></div>
+</div>
+<div data-lang="en" id="achievements">
+<div class="collapsible"><div class="collapsible-toggle" aria-expanded="false"><h3>Achievements</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
+<p>MITE:BE features over 130 unique achievements that track your progression. Here are the key ones:</p>
+
+<h3>Early Game (1-15)</h3>
+<div class="ach"><span class="ach-name">Where Did I Come From?</span> <span class="ach-cond">(Starting achievement)</span><div class="ach-desc">You don't know who you are, why you ended up here, in this world...</div></div>
+<div class="ach"><span class="ach-name">I'm Hungry!</span> <span class="ach-cond">(Get Wheat Seeds)</span><div class="ach-desc">Breaking grass may drop wheat seeds or plant fiber.</div></div>
+<div class="ach"><span class="ach-name">Flint and Blade</span> <span class="ach-cond">(Basic Flint Knife)</span><div class="ach-desc">Grass rope + flint chip + stick</div></div>
+<div class="ach"><span class="ach-name">From Stones to a City</span> <span class="ach-cond">(Workbench)</span><div class="ach-desc">Your first workbench!</div></div>
+<div class="ach"><span class="ach-name">Primitive Romance</span> <span class="ach-cond">(Clay Furnace)</span><div class="ach-desc">Find clay near streams</div></div>
+
+<h3>Metal Age (16-28)</h3>
+<div class="ach"><span class="ach-name">Getting Professional</span> <span class="ach-cond">(Obsidian Ingot Mold)</span><div class="ach-desc">The mold can cool 20 ingots</div></div>
+<div class="ach"><span class="ach-name">Man Conquers Nature</span> <span class="ach-cond">(First Metal Ingot)</span><div class="ach-desc">9 ore particles → furnace → mold → metal!</div></div>
+<div class="ach"><span class="ach-name">Master Smelter</span> <span class="ach-cond">(Multiblock Furnace)</span><div class="ach-desc">3×3×3 hollow cube structure</div></div>
+<div class="ach"><span class="ach-name">Magic Punch</span> <span class="ach-cond">(Emerald Enchanting Table)</span><div class="ach-desc">Enchant your gear!</div></div>
+
+<h3>Endgame (36-43)</h3>
+<div class="ach"><span class="ach-name">Scorching Hell Gate</span> <span class="ach-cond">(Find the Mantle)</span><div class="ach-desc">In the Underground's bedrock layer</div></div>
+<div class="ach"><span class="ach-name">Immortal Legend</span> <span class="ach-cond">(Nether Star)</span><div class="ach-desc">Required for the Bedrock Pulverizer!</div></div>
+<div class="ach"><span class="ach-name">The Earth Trembles?!</span> <span class="ach-cond">(Bedrock Pulverizer)</span><div class="ach-desc">Place on bedrock core, activate with Reinforced Eye of Ender</div></div>
+<div class="ach"><span class="ach-name">The Realm of the End</span> <span class="ach-cond">(Enter the End)</span><div class="ach-desc">Opens when the bedrock core is destroyed</div></div>
+<div class="ach"><span class="ach-name">The Final Battle</span> <span class="ach-cond">(Ender Dragon)</span><div class="ach-desc">Destroy crystals with adamantium arrows, defeat the dragon!</div></div>
+<div class="ach"><span class="ach-name">Is It All Over?</span> <span class="ach-cond">(Return from the End)</span><div class="ach-desc">Is it really over?</div></div>
+
+<h3>Time-Based Achievements</h3>
+<table>
+  <tr><th>Day</th><th>Achievement</th><th>Description</th></tr>
+  <tr><td>2.5</td><td>Hang In There — You Can Do It!</td><td>You can survive in this world!</td></tr>
+  <tr><td>6</td><td>Starting to Adapt!</td><td>You know the rules now, adapt!</td></tr>
+  <tr><td>12</td><td>Got My First Gear!</td><td>Warm furnace, equipment ready</td></tr>
+  <tr><td>16</td><td>I Challenge This World!</td><td>Energy radiating from ores</td></tr>
+  <tr><td>50</td><td>Days Keep Passing...</td><td>Many biomes explored, animals friendly</td></tr>
+  <tr><td>80</td><td>Found My Rhythm</td><td>Space-warping magic in obsidian</td></tr>
+  <tr><td>96</td><td>No Longer My Rival</td><td>Blood moon is nothing</td></tr>
+  <tr><td>100</td><td>100 Days</td><td>Who am I? Why was I brought here?</td></tr>
+  <tr><td>128</td><td>Blue Moon</td><td>Crops flourish — a good omen!</td></tr>
+  <tr><td>200</td><td>200 Days!</td><td>Satisfaction, growing wealth</td></tr>
+  <tr><td>300</td><td>300 Days</td><td>Resources spent on luxury now</td></tr>
+  <tr><td>400</td><td>Life Is This Simple</td><td>Miner, farmer, warrior — enjoy life</td></tr>
+</table>
+
+<br><br>
+<div style="text-align:center; color:var(--text2); padding: 40px 0; border-top: 2px solid var(--bg3);">
+  <p style="font-size:1.1em; color:var(--gold);">⚔️ MITE:BE v0.9.0 — Complete Wiki ⚔️</p>
+  <p>Data extracted directly from game files (MITE.lang, class files, achievement data)</p>
+  <p style="margin-top:10px;font-size:0.85em;">If this helped you, consider sharing it with the community!</p>
+</div></div></div></div>
+</div>
+
+  </main>
+</div>
+
+<button class="back-to-top" title="Back to top" aria-label="Back to top">↑</button>
+<script src="js/app.js"></script>
+</body>
+</html>
