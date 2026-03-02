@@ -1,4 +1,4 @@
-/* MITE: Break Everything Wiki — App v5 */
+/* MITE: Break Everything Wiki — App v6 */
 
 // ── Language Switcher ──
 function setLang(lang) {
@@ -16,37 +16,82 @@ function setLang(lang) {
   _searchLang = null;
   const dd = document.getElementById('search-dropdown');
   if (dd) dd.style.display = 'none';
+  // Re-build nav observer for now-visible elements
+  document.dispatchEvent(new Event('langChange'));
+}
+
+// ── Helper: find element with given ID that is visible (in active lang section) ──
+function findVisibleEl(id) {
+  try {
+    const candidates = document.querySelectorAll('[id="' + CSS.escape(id) + '"]');
+    for (const el of candidates) {
+      const lc = el.closest('[data-lang]');
+      if (!lc || lc.classList.contains('active')) return el;
+    }
+    return candidates[0] || null;
+  } catch(e) {
+    return document.getElementById(id);
+  }
+}
+
+// ── Sidebar Anchor Click Override ──
+// Finds the correct (visible) version of a duplicate-ID element and scrolls to it.
+function initAnchorNav() {
+  document.querySelectorAll('.sidebar a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href').slice(1);
+      if (!id) return;
+      const target = findVisibleEl(id);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', '#' + id);
+      }
+    });
+  });
 }
 
 // ── Sidebar Active Link Tracking ──
 function initNavTracking() {
   const links = document.querySelectorAll('.sidebar a[href^="#"]');
-  const sections = [];
-  links.forEach(a => {
-    const id = a.getAttribute('href')?.replace('#','');
-    if (id) {
-      const el = document.getElementById(id);
-      if (el) sections.push({ el, a });
-    }
-  });
-  if (!sections.length) return;
+  if (!links.length) return;
+
+  let observed = [];
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        links.forEach(l => l.classList.remove('active'));
-        const match = sections.find(s => s.el === entry.target);
-        if (match) match.a.classList.add('active');
+        const id = entry.target.id;
+        links.forEach(l => {
+          l.classList.toggle('active', l.getAttribute('href') === '#' + id);
+        });
       }
     });
   }, { rootMargin: '-10% 0px -80% 0px' });
-  sections.forEach(s => observer.observe(s.el));
+
+  function rebuildObserver() {
+    observed.forEach(el => observer.unobserve(el));
+    observed = [];
+    links.forEach(a => {
+      const id = a.getAttribute('href')?.slice(1);
+      if (!id) return;
+      const el = findVisibleEl(id);
+      if (el) {
+        observer.observe(el);
+        observed.push(el);
+      }
+    });
+  }
+
+  rebuildObserver();
+  document.addEventListener('langChange', rebuildObserver);
 }
 
 // ── URL Hash Management ──
 function initHashNav() {
   if (window.location.hash) {
-    const target = document.querySelector(window.location.hash);
+    const id = window.location.hash.slice(1);
+    const target = findVisibleEl(id);
     if (target) setTimeout(() => target.scrollIntoView({ behavior: 'smooth' }), 200);
   }
   const h2s = document.querySelectorAll('h2[id]');
@@ -391,6 +436,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let saved;
   try { saved = localStorage.getItem('mite-wiki-lang'); } catch(e) {}
   setLang(saved || 'hu');
+  initAnchorNav();
   initNavTracking();
   initHashNav();
   initSearch();
