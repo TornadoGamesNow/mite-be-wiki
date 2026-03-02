@@ -73,77 +73,120 @@
   <main class="content">
 <div data-lang="hu" id="mobs">
 <div class="collapsible"><div class="collapsible-toggle" aria-expanded="true"><h3>Szörnyek & Lények</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
-<p>A MITE:BE rengeteg új szörnyet ad a játékhoz:</p>
+<p>A MITE:BE rengeteg új szörnyet ad a játékhoz. Az alábbi táblázatok tartalmazzák a fő statisztikákat.</p>
 
-<h3>Felszíni szörnyek</h3>
-<table>
-  <tr><th>Szörny</th><th>Jellemző</th></tr>
-  <tr><td>Szörnyű Farkas</td><td>Erős farkas változat</td></tr>
-  <tr><td>Fa Pók</td><td>Fák között él</td></tr>
-  <tr><td>Síkság Zombi/Creeper/Csontváz/Pók</td><td>Biom-specifikus változatok</td></tr>
-  <tr><td>Havas Zombi/Creeper/Csontváz/Pók</td><td>Biom-specifikus változatok</td></tr>
-  <tr><td>Fosztogató / Fosztogató Vezető</td><td>Rabló csapatok</td></tr>
+<h3>Felszíni Szörnyek</h3>
+<table class="compare-table">
+  <tr><th>Szörny</th><th>HP</th><th>Sebzés</th><th>XP</th><th>Speciális</th></tr>
+  <tr><td>Zombi</td><td>20</td><td>3</td><td>5</td><td>Falon átérzékelés, csákányos változat bármit kibányászik</td></tr>
+  <tr><td>Csontváz</td><td>20</td><td>3 (nyíl)</td><td>5</td><td>Távolsági támadó</td></tr>
+  <tr><td>Creeper</td><td>20</td><td>— (robbanás)</td><td>5</td><td>Robbanás figyelmeztetés nélkül</td></tr>
+  <tr><td>Pók</td><td>16</td><td>3</td><td>5</td><td>Falon mászás, éjjel agresszív</td></tr>
+  <tr><td>Szörnyű Farkas (Dire Wolf)</td><td>20</td><td>5</td><td>8</td><td>Erős farkas, falkában veszélyes</td></tr>
+  <tr><td>Fa Pók (Wood Spider)</td><td>10</td><td>2</td><td>5</td><td>Fák között él, mérgező</td></tr>
+  <tr><td>Fosztogató (Pillager)</td><td>24</td><td>4 (nyílpuska)</td><td>10</td><td>Rabló csapat, jutalomládát ejt</td></tr>
+  <tr><td>Fosztogató Vezető</td><td>40</td><td>6</td><td>20</td><td>Erősebb páncélos vezér</td></tr>
+  <tr><td>Zealot (Fanatic Vindicator)</td><td>80</td><td>13 (vas fejsze)</td><td>40</td><td><strong>Extrém sebzés!</strong> Vas fejszével támad</td></tr>
+  <tr><td>Boszorkány (Witch)</td><td>26</td><td>bájital</td><td>10</td><td>Mérgező bájitalokat dob</td></tr>
+  <tr><td>Síkság/Havas/Dzsungel változatok</td><td>20</td><td>3-5</td><td>5-8</td><td>Biome-specifikus, erősebb variánsok</td></tr>
 </table>
 
-<h3>Underground szörnyek</h3>
-<table>
-  <tr><th>Szörny</th><th>Jellemző</th></tr>
-  <tr><td>Sírkamra Sírkamra (Ghoul)</td><td>Undead barlang lény</td></tr>
-  <tr><td>Sírkamra Szellem (Wight)</td><td>Szellemi ellenség</td></tr>
-  <tr><td>Láthatatlan Követő</td><td>Nem látható! <strong>Ezüst vagy Mithril+ fegyver</strong> szükséges a sebzéshez</td></tr>
-  <tr><td>Fekete Özvegy Pók</td><td>Mérgező pók</td></tr>
-  <tr><td>Fázis Pók</td><td>Áthatoló — csak Ősi Fém karddal üthető!</td></tr>
-  <tr><td>Csont Úr / Ókori Csont Úr</td><td>Erős csontváz vezér</td></tr>
-  <tr><td>Rég Halott / Rég Halott Őr</td><td>Ősi undead</td></tr>
-  <tr><td>Föld Elementális</td><td>Kő lény</td></tr>
+<h3>Underground Szörnyek</h3>
+<table class="compare-table">
+  <tr><th>Szörny</th><th>HP</th><th>Sebzés</th><th>XP</th><th>Speciális</th></tr>
+  <tr><td>Sírkamra Szellem (Ghoul)</td><td>20</td><td>4</td><td>10</td><td>Lassítás hatás</td></tr>
+  <tr><td>Rég Halott (Wight)</td><td>25</td><td>5</td><td>10</td><td>Lassítás + éheztetés</td></tr>
+  <tr><td>Rég Halott Őr</td><td>30</td><td>6</td><td>15</td><td>Páncélos változat</td></tr>
+  <tr><td>Láthatatlan Követő</td><td>20</td><td>5</td><td>12</td><td>Láthatatlan! <strong>Ezüst/Mithril+ fegyver</strong> kell</td></tr>
+  <tr><td>Fekete Özvegy Pók</td><td>16</td><td>4</td><td>8</td><td>Erős mérgezés</td></tr>
+  <tr><td>Fázis Pók</td><td>16</td><td>4</td><td>8</td><td>Falon átmegy! Csak <strong>Ősi Fém kard</strong> sebzi</td></tr>
+  <tr><td>Csont Úr (Bone Lord)</td><td>50</td><td>8</td><td>25</td><td>Boss — csontváz idézés</td></tr>
+  <tr><td>Ókori Csont Úr</td><td>80</td><td>10</td><td>40</td><td>Erősebb boss változat</td></tr>
+  <tr><td>Föld Elementális (5 változat)</td><td>30</td><td>12</td><td>20</td><td>4 páncél, csak csákánnyal sebezhe</td></tr>
+  <tr><td>Vámpír Denevér</td><td>6</td><td>2</td><td>3</td><td>Életlopás</td></tr>
+  <tr><td>Óriás Vámpír Denevér</td><td>30</td><td>6</td><td>15</td><td>Életlopás + nagy sebzés</td></tr>
 </table>
+<div class="info-box">⛏️ <strong>Föld Elementális:</strong> 5 változat (föld, kő, homok, kavics, agyag). Csak csákánnyal sebezhetők — kard alig hat! A csákány anyagának legalább olyan erősnek kell lennie.</div>
 
-<h3>Nether szörnyek</h3>
-<table>
-  <tr><th>Szörny</th><th>Jellemző</th></tr>
-  <tr><td>Démon Pók</td><td>Nether pók</td></tr>
-  <tr><td>Pokol Kutya</td><td>Tüzes farkas</td></tr>
-  <tr><td>Pokoli Creeper</td><td>Robbanó pokol lény</td></tr>
-  <tr><td>Tűz Elementális</td><td>Tűzből szőtt lény — <strong>ezüst/tűz tárgyak nem hatnak rá!</strong> Magas HP. Megölhető: varázstárgyak, víz, hógolyók vagy sebzés bájitalok</td></tr>
-  <tr><td>Vámpír Denevér / Óriás Vámpír Denevér</td><td>Vérszívó</td></tr>
-  <tr><td>Vörös Lángoszlop / Lélek Szellem</td><td>Nether variánsok</td></tr>
-  <tr><td>Pokol Terítmény</td><td>Nether spawn</td></tr>
-  <tr><td>Nagy Ghast</td><td>Óriási tűzokádó</td></tr>
+<h3>Nether Szörnyek</h3>
+<table class="compare-table">
+  <tr><th>Szörny</th><th>HP</th><th>Sebzés</th><th>XP</th><th>Speciális</th></tr>
+  <tr><td>Démon Pók</td><td>20</td><td>5</td><td>10</td><td>Tűzálló, mérgező</td></tr>
+  <tr><td>Pokol Kutya</td><td>16</td><td>4</td><td>8</td><td>Tűzálló, gyors, falkában</td></tr>
+  <tr><td>Pokoli Creeper</td><td>20</td><td>— (robbanás)</td><td>10</td><td>Tűzálló, nagyobb robbanás</td></tr>
+  <tr><td>Vörös Lángoszlop (Red Blaze)</td><td>40</td><td>6</td><td>20</td><td><strong>6 tűzgolyó egyszerre!</strong></td></tr>
+  <tr><td>Tűz Elementális</td><td>50</td><td>8</td><td>25</td><td><strong>3% instant kill égő játékoson!</strong> Víz/hógolyó/sebzés bájital hat rá</td></tr>
+  <tr><td>Nagy Ghast</td><td>40</td><td>6 (tűzgolyó)</td><td>20</td><td>Óriási, repülő, tűzokádó</td></tr>
+  <tr><td>Zombi Disznóember</td><td>20</td><td>5</td><td>8</td><td>Arany nélkül agresszív</td></tr>
+  <tr><td>Lélek Szellem</td><td>16</td><td>4</td><td>8</td><td>Nether szellemi lény</td></tr>
 </table>
+<div class="warning-box">🔥 <strong>Tűz Elementális:</strong> Ha <strong>éppen égsz</strong> amikor megtámad, <strong>3% esélye azonnal megöl!</strong> Tűzálló bájital kötelező. Hatásos: varázstárgyak, víz, hógolyók, Sebzés bájital. NEM hat: tűz, ezüst fegyver.</div>
 
-<h3>Speciális lények</h3>
+<h3>Főellenfél: HIM</h3>
+<table class="compare-table">
+  <tr><th>Tulajdonság</th><th>Érték</th></tr>
+  <tr><td>HP</td><td><strong>400</strong></td></tr>
+  <tr><td>Sebzés</td><td>Változó — rendkívül magas</td></tr>
+  <tr><td>Immunis</td><td>Szinte mindenre — speciális mechanika szükséges</td></tr>
+  <tr><td>XP</td><td>Hatalmas mennyiség</td></tr>
+</table>
+<div class="warning-box">💀 <strong>HIM:</strong> A játék végső ellensége. 400 HP, szinte mindenre immunis. Speciális mechanikával győzhető le — a közönséges fegyverek és bájitalok hatástalanok. Teljes Adamantium felszerelés és speciális stratégia szükséges!</div>
+
+<h3>Speciális Lények</h3>
 <p>Változat Zombi, Változat Kúszó, Változat Pók, Változat Csontváz — erősebb verziók a szokásos szörnyekből.</p>
 <p>Baby Kúszó, Zavart Kúszó, Szétválasztott Kúszó, Megfagyott Kúszó, Végvilág Villám Kúszó — Creeper variánsok.</p>
 <p>Zombi Hívó, Bombázó, Obszidián Gólem, Sivatag Őr, Romlott Hóember — speciális szörnyek.</p>
 <p><strong>Partnerek:</strong> Harcos Lakos, Utazó, Bányász Lakos — szövetségesek!</p>
 
-
 <!-- ===== BÁJITALOK ===== --></div></div></div>
 </div>
 <div data-lang="hu" id="potions">
 <div class="collapsible"><div class="collapsible-toggle" aria-expanded="true"><h3>Bájitalok & Hatások</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
-<table>
-  <tr><th>Bájital / Hatás</th><th>Leírás</th></tr>
-  <tr><td>Sebesség</td><td>Gyorsabb mozgás</td></tr>
-  <tr><td>Erő</td><td>Több ütés sebzés</td></tr>
-  <tr><td>Regeneráció</td><td>Folyamatos gyógyulás</td></tr>
-  <tr><td>Tűzállóság</td><td>Tűz és láva nem sebez</td></tr>
-  <tr><td>Láva Ellenállás</td><td>Speciális MITE effekt</td></tr>
-  <tr><td>Éjszakai Látás</td><td>Látás sötétben</td></tr>
-  <tr><td>Vízben Való Légzés</td><td>Víz alatti lélegzés</td></tr>
-  <tr><td>Láthatatlanság</td><td>Szörnyek nem látnak</td></tr>
-  <tr><td>Mérgezés</td><td>Folyamatos sebzés</td></tr>
-  <tr><td>Gyengeség</td><td>Kevesebb sebzés</td></tr>
-  <tr><td>Lassúság</td><td>Lassabb mozgás</td></tr>
-  <tr><td>Sorvadás</td><td>Wither hatás</td></tr>
-  <tr><td>Korrózió</td><td>Felszerelés károsodás</td></tr>
-  <tr><td>Alvászavar</td><td>Nem tudsz aludni</td></tr>
-  <tr><td>Hideg</td><td>Fagyás — melegítsd magad!</td></tr>
-  <tr><td>Napszúrás</td><td>Hőség hatás</td></tr>
-  <tr><td>Paralízis</td><td>Mozgásképtelenség</td></tr>
-  <tr><td>Sebezhetőség</td><td>Több bekapott sebzés</td></tr>
+
+<div class="info-box">🧪 <strong>Brewer foglalkozás</strong> szükséges a bájitalok főzéséhez! A Brewer foglalkozás emellett sajt készítését is lehetővé teszi.</div>
+
+<h4>Bájital Hatások</h4>
+<table class="compare-table">
+  <tr><th>Bájital / Hatás</th><th>Leírás</th><th>Szintek</th></tr>
+  <tr><td>Sebesség</td><td>Gyorsabb mozgás</td><td>I–IV</td></tr>
+  <tr><td>Erő</td><td>Több ütés sebzés</td><td>I–IV</td></tr>
+  <tr><td>Regeneráció</td><td>Folyamatos gyógyulás</td><td>I–IV</td></tr>
+  <tr><td>Tűzállóság</td><td>Tűz és láva nem sebez</td><td>I</td></tr>
+  <tr><td>Láva Ellenállás</td><td>Speciális MITE effekt — láva sebzés csökkentés</td><td>I</td></tr>
+  <tr><td>Éjszakai Látás</td><td>Látás sötétben</td><td>I</td></tr>
+  <tr><td>Vízben Való Légzés</td><td>Víz alatti lélegzés</td><td>I</td></tr>
+  <tr><td>Láthatatlanság</td><td>Szörnyek nem látnak</td><td>I</td></tr>
+  <tr><td>Sebzés (Harming)</td><td>Azonnali sebzés — Tűz Elementális ellen hatásos!</td><td>I–II</td></tr>
+  <tr><td>Gyógyítás (Healing)</td><td>Azonnali gyógyulás</td><td>I–II</td></tr>
+  <tr><td>Mérgezés</td><td>Folyamatos sebzés</td><td>I–IV</td></tr>
+  <tr><td>Gyengeség</td><td>Kevesebb sebzés</td><td>I–II</td></tr>
+  <tr><td>Lassúság</td><td>Lassabb mozgás</td><td>I–II</td></tr>
+  <tr><td>Sorvadás</td><td>Wither hatás</td><td>I–II</td></tr>
+  <tr><td>Korrózió</td><td>Felszerelés károsodás</td><td>I</td></tr>
+  <tr><td>Alvászavar</td><td>Nem tudsz aludni</td><td>I</td></tr>
+  <tr><td>Hideg</td><td>Fagyás — melegítsd magad!</td><td>I</td></tr>
+  <tr><td>Napszúrás</td><td>Hőség hatás</td><td>I</td></tr>
+  <tr><td>Paralízis</td><td>Mozgásképtelenség</td><td>I</td></tr>
+  <tr><td>Sebezhetőség</td><td>Több bekapott sebzés</td><td>I</td></tr>
+</table>
+<p>A legtöbb bájital <strong>Fröccsenő (Splash)</strong> változatban is elkészíthető — lőpor hozzáadásával. Fröccsenő bájitalok dobhatók ellenfelekre vagy szövetségesekre.</p>
+
+<h4>Üst (Cauldron) Mechanikák</h4>
+<p>Az Üst nem csak vizet tárol — speciális receptekhez is használható:</p>
+<table class="compare-table">
+  <tr><th>Recept</th><th>Folyamat</th><th>Eredmény</th></tr>
+  <tr><td><strong>Folyékony Arany</strong></td><td>Üst lávaforrás alá + Arany érc beledobás → 10 mp várakozás</td><td>Folyékony arany — 4 Aranyalma készíthető belőle (4 alma/üst)</td></tr>
+  <tr><td><strong>Folyékony Higany</strong></td><td>Higany érc + Láva az üstben → olvasztás</td><td>Folyékony higany (vödörrel szedhető)</td></tr>
+  <tr><td><strong>Ősi Fém Hátizsák</strong></td><td>Bőr hátizsák + 4 Ősi Fém rúd higanyba → 30 mp várakozás</td><td>Ősi Fém hátizsák (több slot, tartósabb)</td></tr>
 </table>
 
+<h4>Varázstalanító Palack (Disenchanting Bottle)</h4>
+<p>Különleges bájital amely bűvöléseket és hatásokat távolít el:</p>
+<ul>
+  <li><strong>Recept:</strong> Vízpalack + Szén + Pokoli Szemölcs (Nether Wart)</li>
+  <li><strong>Hatásai:</strong> Bűvölés eltávolítás tárgyakról, bájital hatások törlése, boszorkány átkok eltávolítása</li>
+  <li>Rendkívül hasznos ha rossz bűvölést kaptál, vagy boszorkány megátkozott!</li>
+</ul>
 
 <!-- ===== MINŐSÉG ===== --></div></div></div>
 </div>
@@ -244,23 +287,52 @@
     <p>Sok szörnyet láttál már a barlangokban. A vér elkezdi megrontani ezt a világot.</p>
   </div>
   <div class="timeline-item">
-    <h4>🔴 32. nap — A vérhold leszáll</h4>
-    <p>Jön a vérhold, az élőholtak szabadon kószálnak. Nappal a pókok és creeperek megvadulnak. A véreső fáradtságot hoz. Az éjszaka a rémálom kezdete — ragadd meg a fegyvered, védd a bázisod!</p>
+    <h4>🔴 32. nap — 1. Vérhold (Evolúció I)</h4>
+    <p>Jön a vérhold, az élőholtak szabadon kószálnak. Nappal a pókok és creeperek megvadulnak. A véreső fáradtságot hoz. Az éjszaka a rémálom kezdete — ragadd meg a fegyvered, védd a bázisod! Minden szörny <strong>Erő I</strong> buff-ot kap.</p>
   </div>
   <div class="timeline-item">
     <h4>🏚️ 33. nap — Lerombolt bázis</h4>
     <p>A vérhold véget ért. Szomorúan nézed a lerombolt bázist, de erősebb lettél. Készülj a következő holdra!</p>
   </div>
   <div class="timeline-item">
-    <h4>🔴 64. nap — Megint jön!</h4>
-    <p>De most már rendkívüli vagy. A kardod könnyedén áthatol a keményebb bőrön is.</p>
+    <h4>🔴 64. nap — 2. Vérhold (Evolúció II)</h4>
+    <p>De most már rendkívüli vagy. A kardod könnyedén áthatol a keményebb bőrön is. A szörnyek azonban erősebbek lettek.</p>
   </div>
   <div class="timeline-item">
-    <h4>🔵 128. nap — Kék hold</h4>
-    <p>Nem csak rossz holdak vannak! Felkelt a kék hold, a termés virágzik — ez jó jel.</p>
+    <h4>🔵 128. nap — 3. Vérhold (Evolúció III) + Kék Hold</h4>
+    <p>Nem csak rossz holdak vannak! Felkelt a kék hold, a termés virágzik — ez jó jel. De a vérhold szörnyei ismét erősödtek.</p>
+  </div>
+  <div class="timeline-item">
+    <h4>🔴 160. nap — 4. Vérhold (Evolúció IV)</h4>
+    <p>A szörnyek immár jelentős erősítést kapnak. Mithril+ felszerelés erősen ajánlott!</p>
+  </div>
+  <div class="timeline-item">
+    <h4>🔴 192. nap — 5. Vérhold (Evolúció V)</h4>
+    <p>Az apokalipszis közeleg. A szörnyek extrém erősek — teljes Adamantium szett nélkül szinte lehetetlen túlélni.</p>
+  </div>
+  <div class="timeline-item">
+    <h4>💀 224. nap — 6. Vérhold (Evolúció VI) — Maximális Nehézség</h4>
+    <p>A végső szint. Innentől minden vérhold ezen a szinten marad. Csak a legerősebb felszereléssel és stratégiával élheted túl.</p>
   </div>
 </div>
 
+<h4>Magassági Hatások Vérhold Alatt</h4>
+<table class="compare-table">
+  <tr><th>Magasság</th><th>Hatás</th></tr>
+  <tr><td>Y 100 felett</td><td><strong>Hányinger + Gyengeség</strong> — menj le a felszínre!</td></tr>
+  <tr><td>Y 50 alatt</td><td><strong>Égés</strong> — a barlangok sem biztonságosak!</td></tr>
+  <tr><td>Y 50–100</td><td>Nincs extra hatás (legjobb tartózkodási zóna)</td></tr>
+</table>
+
+<h4>Jutalom Vérhold Túlélése Után</h4>
+<p>Minden túlélt vérhold után az alábbi jutalmak egyikét kapod (véletlenszerű):</p>
+<ul>
+  <li>Bányász sebesség <strong>+10%</strong></li>
+  <li>Támadási sebzés <strong>+1</strong></li>
+  <li>Szomjúság fogyás <strong>-10%</strong></li>
+  <li>Éhség fogyás <strong>-10%</strong></li>
+</ul>
+<div class="tip-card">💡 <strong>Tipp:</strong> A vérhold jutalmak halmozódnak! 6 túlélt vérhold = 6 bónusz. Érdemes minden vérholdat túlélni a permanens erősödés miatt.</div>
 
 <!-- ===== TELJESÍTMÉNYEK ===== --></div></div></div>
 </div>
@@ -323,43 +395,64 @@
 
 <div data-lang="en" id="mobs">
 <div class="collapsible"><div class="collapsible-toggle" aria-expanded="true"><h3>Mobs & Creatures</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
-<p>MITE:BE adds tons of new mobs to the game:</p>
+<p>MITE:BE adds tons of new mobs. The tables below contain key statistics.</p>
 
 <h3>Surface Mobs</h3>
-<table>
-  <tr><th>Mob</th><th>Description</th></tr>
-  <tr><td>Dire Wolf</td><td>Stronger wolf variant</td></tr>
-  <tr><td>Wood Spider</td><td>Lives among trees</td></tr>
-  <tr><td>Plains Zombie/Creeper/Skeleton/Spider</td><td>Biome-specific variants</td></tr>
-  <tr><td>Snow Zombie/Creeper/Skeleton/Spider</td><td>Biome-specific variants</td></tr>
-  <tr><td>Pillager / Pillager Leader</td><td>Raiding parties</td></tr>
+<table class="compare-table">
+  <tr><th>Mob</th><th>HP</th><th>Damage</th><th>XP</th><th>Special</th></tr>
+  <tr><td>Zombie</td><td>20</td><td>3</td><td>5</td><td>Senses through walls, pickaxe variant mines any block</td></tr>
+  <tr><td>Skeleton</td><td>20</td><td>3 (arrow)</td><td>5</td><td>Ranged attacker</td></tr>
+  <tr><td>Creeper</td><td>20</td><td>— (explosion)</td><td>5</td><td>Explodes without warning</td></tr>
+  <tr><td>Spider</td><td>16</td><td>3</td><td>5</td><td>Climbs walls, aggressive at night</td></tr>
+  <tr><td>Dire Wolf</td><td>20</td><td>5</td><td>8</td><td>Strong wolf, dangerous in packs</td></tr>
+  <tr><td>Wood Spider</td><td>10</td><td>2</td><td>5</td><td>Lives among trees, poisonous</td></tr>
+  <tr><td>Pillager</td><td>24</td><td>4 (crossbow)</td><td>10</td><td>Raiding party, drops loot</td></tr>
+  <tr><td>Pillager Leader</td><td>40</td><td>6</td><td>20</td><td>Stronger armored leader</td></tr>
+  <tr><td>Zealot (Fanatic Vindicator)</td><td>80</td><td>13 (iron axe)</td><td>40</td><td><strong>Extreme damage!</strong> Attacks with iron axe</td></tr>
+  <tr><td>Witch</td><td>26</td><td>potion</td><td>10</td><td>Throws poison potions</td></tr>
+  <tr><td>Plains/Snow/Jungle variants</td><td>20</td><td>3-5</td><td>5-8</td><td>Biome-specific, stronger variants</td></tr>
 </table>
 
 <h3>Underground Mobs</h3>
-<table>
-  <tr><th>Mob</th><th>Description</th></tr>
-  <tr><td>Ghoul</td><td>Undead cave dweller</td></tr>
-  <tr><td>Wight</td><td>Spectral enemy</td></tr>
-  <tr><td>Invisible Stalker</td><td>Can't see it coming! <strong>Silver or Mithril+ weapon</strong> required to deal damage</td></tr>
-  <tr><td>Black Widow Spider</td><td>Venomous spider</td></tr>
-  <tr><td>Phase Spider</td><td>Phases through walls — only hittable with Ancient Metal sword!</td></tr>
-  <tr><td>Bone Lord / Ancient Bone Lord</td><td>Powerful skeleton boss</td></tr>
-  <tr><td>Longdead / Longdead Guardian</td><td>Ancient undead</td></tr>
-  <tr><td>Earth Elemental</td><td>Stone creature</td></tr>
+<table class="compare-table">
+  <tr><th>Mob</th><th>HP</th><th>Damage</th><th>XP</th><th>Special</th></tr>
+  <tr><td>Ghoul</td><td>20</td><td>4</td><td>10</td><td>Slowness effect</td></tr>
+  <tr><td>Wight</td><td>25</td><td>5</td><td>10</td><td>Slowness + hunger drain</td></tr>
+  <tr><td>Wight Guard</td><td>30</td><td>6</td><td>15</td><td>Armored variant</td></tr>
+  <tr><td>Invisible Stalker</td><td>20</td><td>5</td><td>12</td><td>Invisible! <strong>Silver/Mithril+ weapon</strong> required</td></tr>
+  <tr><td>Black Widow Spider</td><td>16</td><td>4</td><td>8</td><td>Strong poison</td></tr>
+  <tr><td>Phase Spider</td><td>16</td><td>4</td><td>8</td><td>Walks through walls! Only <strong>Ancient Metal sword</strong> works</td></tr>
+  <tr><td>Bone Lord</td><td>50</td><td>8</td><td>25</td><td>Boss — summons skeletons</td></tr>
+  <tr><td>Ancient Bone Lord</td><td>80</td><td>10</td><td>40</td><td>Stronger boss variant</td></tr>
+  <tr><td>Earth Elemental (5 variants)</td><td>30</td><td>12</td><td>20</td><td>4 armor, only damaged by pickaxe</td></tr>
+  <tr><td>Vampire Bat</td><td>6</td><td>2</td><td>3</td><td>Life steal</td></tr>
+  <tr><td>Giant Vampire Bat</td><td>30</td><td>6</td><td>15</td><td>Life steal + high damage</td></tr>
 </table>
+<div class="info-box">⛏️ <strong>Earth Elementals:</strong> 5 variants (dirt, stone, sand, gravel, clay). Only damaged by pickaxe — swords barely work! Pickaxe material must be at least as strong as the elemental's type.</div>
 
 <h3>Nether Mobs</h3>
-<table>
-  <tr><th>Mob</th><th>Description</th></tr>
-  <tr><td>Demon Spider</td><td>Nether spider</td></tr>
-  <tr><td>Hellhound</td><td>Fiery wolf</td></tr>
-  <tr><td>Infernal Creeper</td><td>Explosive nether creature</td></tr>
-  <tr><td>Fire Elemental</td><td>Made of pure flame — <strong>silver/fire weapons have no effect!</strong> High HP. Kill with: enchanted weapons, water, snowballs, or damage potions</td></tr>
-  <tr><td>Vampire Bat / Giant Vampire Bat</td><td>Blood-sucking</td></tr>
-  <tr><td>Red Blaze / Soul Sprite</td><td>Nether variants</td></tr>
-  <tr><td>Netherspawn</td><td>Nether spawn creature</td></tr>
-  <tr><td>Great Ghast</td><td>Massive fire-breathing ghast</td></tr>
+<table class="compare-table">
+  <tr><th>Mob</th><th>HP</th><th>Damage</th><th>XP</th><th>Special</th></tr>
+  <tr><td>Demon Spider</td><td>20</td><td>5</td><td>10</td><td>Fire resistant, poisonous</td></tr>
+  <tr><td>Hellhound</td><td>16</td><td>4</td><td>8</td><td>Fire resistant, fast, packs</td></tr>
+  <tr><td>Infernal Creeper</td><td>20</td><td>— (explosion)</td><td>10</td><td>Fire resistant, larger explosion</td></tr>
+  <tr><td>Red Blaze</td><td>40</td><td>6</td><td>20</td><td><strong>6 fireballs at once!</strong></td></tr>
+  <tr><td>Fire Elemental</td><td>50</td><td>8</td><td>25</td><td><strong>3% instant kill on burning players!</strong> Water/snowballs/harming potions work</td></tr>
+  <tr><td>Great Ghast</td><td>40</td><td>6 (fireball)</td><td>20</td><td>Massive, flying, fire-breathing</td></tr>
+  <tr><td>Zombie Pigman</td><td>20</td><td>5</td><td>8</td><td>Hostile without gold</td></tr>
+  <tr><td>Soul Sprite</td><td>16</td><td>4</td><td>8</td><td>Nether spectral creature</td></tr>
 </table>
+<div class="warning-box">🔥 <strong>Fire Elemental:</strong> If you are <strong>on fire</strong> when attacked, it has a <strong>3% chance to instantly kill</strong> you! Fire Resistance potion mandatory. Effective: enchanted items, water, snowballs, Harming potions. NOT effective: fire, silver weapons.</div>
+
+<h3>Ultimate Boss: HIM</h3>
+<table class="compare-table">
+  <tr><th>Stat</th><th>Value</th></tr>
+  <tr><td>HP</td><td><strong>400</strong></td></tr>
+  <tr><td>Damage</td><td>Variable — extremely high</td></tr>
+  <tr><td>Immunities</td><td>Immune to nearly everything — special mechanics required</td></tr>
+  <tr><td>XP</td><td>Massive amount</td></tr>
+</table>
+<div class="warning-box">💀 <strong>HIM:</strong> The game's ultimate enemy. 400 HP, immune to nearly everything. Requires special mechanics to defeat — normal weapons and potions are useless. Full Adamantium gear and a specific strategy are essential!</div>
 
 <h3>Special Mobs</h3>
 <p>Variant Zombie, Variant Creeper, Variant Spider, Variant Skeleton — stronger versions of common mobs.</p>
@@ -367,33 +460,55 @@
 <p>Zombie Caller, Bomber Man, Obsidian Golem, Desert Guard, Evil Snowman — special creatures.</p>
 <p><strong>Partners:</strong> Warrior Villager, Traveller, Miner Villager — your allies!</p>
 
-
 <!-- ===== POTIONS ===== --></div></div></div>
 </div>
 <div data-lang="en" id="potions">
 <div class="collapsible"><div class="collapsible-toggle" aria-expanded="true"><h3>Potions & Effects</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
-<table>
-  <tr><th>Potion / Effect</th><th>Description</th></tr>
-  <tr><td>Speed</td><td>Faster movement</td></tr>
-  <tr><td>Strength</td><td>More melee damage</td></tr>
-  <tr><td>Regeneration</td><td>Continuous healing</td></tr>
-  <tr><td>Fire Resistance</td><td>Fire and lava don't hurt</td></tr>
-  <tr><td>Lava Resistance</td><td>MITE-specific effect</td></tr>
-  <tr><td>Night Vision</td><td>See in the dark</td></tr>
-  <tr><td>Water Breathing</td><td>Breathe underwater</td></tr>
-  <tr><td>Invisibility</td><td>Mobs can't see you</td></tr>
-  <tr><td>Poison</td><td>Continuous damage</td></tr>
-  <tr><td>Weakness</td><td>Less damage dealt</td></tr>
-  <tr><td>Slowness</td><td>Slower movement</td></tr>
-  <tr><td>Wither</td><td>Wither effect</td></tr>
-  <tr><td>Corrosion</td><td>Equipment damage</td></tr>
-  <tr><td>Insomnia</td><td>Can't sleep</td></tr>
-  <tr><td>Cold</td><td>Freezing — warm up!</td></tr>
-  <tr><td>Sunstroke</td><td>Heat effect</td></tr>
-  <tr><td>Paralysis</td><td>Cannot move</td></tr>
-  <tr><td>Vulnerability</td><td>Take more damage</td></tr>
+
+<div class="info-box">🧪 <strong>Brewer profession</strong> required for potion brewing! The Brewer profession also enables cheese making.</div>
+
+<h4>Potion Effects</h4>
+<table class="compare-table">
+  <tr><th>Potion / Effect</th><th>Description</th><th>Tiers</th></tr>
+  <tr><td>Speed</td><td>Faster movement</td><td>I–IV</td></tr>
+  <tr><td>Strength</td><td>More melee damage</td><td>I–IV</td></tr>
+  <tr><td>Regeneration</td><td>Continuous healing</td><td>I–IV</td></tr>
+  <tr><td>Fire Resistance</td><td>Fire and lava don't hurt</td><td>I</td></tr>
+  <tr><td>Lava Resistance</td><td>MITE-specific — reduced lava damage</td><td>I</td></tr>
+  <tr><td>Night Vision</td><td>See in the dark</td><td>I</td></tr>
+  <tr><td>Water Breathing</td><td>Breathe underwater</td><td>I</td></tr>
+  <tr><td>Invisibility</td><td>Mobs can't see you</td><td>I</td></tr>
+  <tr><td>Harming</td><td>Instant damage — effective against Fire Elementals!</td><td>I–II</td></tr>
+  <tr><td>Healing</td><td>Instant health</td><td>I–II</td></tr>
+  <tr><td>Poison</td><td>Continuous damage</td><td>I–IV</td></tr>
+  <tr><td>Weakness</td><td>Less damage dealt</td><td>I–II</td></tr>
+  <tr><td>Slowness</td><td>Slower movement</td><td>I–II</td></tr>
+  <tr><td>Wither</td><td>Wither effect</td><td>I–II</td></tr>
+  <tr><td>Corrosion</td><td>Equipment damage</td><td>I</td></tr>
+  <tr><td>Insomnia</td><td>Can't sleep</td><td>I</td></tr>
+  <tr><td>Cold</td><td>Freezing — warm up!</td><td>I</td></tr>
+  <tr><td>Sunstroke</td><td>Heat effect</td><td>I</td></tr>
+  <tr><td>Paralysis</td><td>Cannot move</td><td>I</td></tr>
+  <tr><td>Vulnerability</td><td>Take more damage</td><td>I</td></tr>
+</table>
+<p>Most potions can also be crafted as <strong>Splash</strong> variants — add gunpowder. Splash potions can be thrown at enemies or allies.</p>
+
+<h4>Cauldron Mechanics</h4>
+<p>The Cauldron isn't just for water storage — it enables special recipes:</p>
+<table class="compare-table">
+  <tr><th>Recipe</th><th>Process</th><th>Result</th></tr>
+  <tr><td><strong>Liquid Gold</strong></td><td>Cauldron under lava source + drop Gold ore → wait 10 sec</td><td>Liquid gold — make 4 Golden Apples (4 apples/cauldron)</td></tr>
+  <tr><td><strong>Liquid Mercury</strong></td><td>Mercury ore + Lava in cauldron → smelting</td><td>Liquid mercury (collect with bucket)</td></tr>
+  <tr><td><strong>Ancient Metal Backpack</strong></td><td>Leather backpack + 4 Ancient Metal ingots in mercury → wait 30 sec</td><td>Ancient Metal backpack (more slots, more durable)</td></tr>
 </table>
 
+<h4>Disenchanting Bottle</h4>
+<p>A special potion that removes enchantments and effects:</p>
+<ul>
+  <li><strong>Recipe:</strong> Water Bottle + Coal + Nether Wart</li>
+  <li><strong>Effects:</strong> Removes enchantments from items, clears potion effects, removes witch curses</li>
+  <li>Extremely useful if you got a bad enchantment or were cursed by a witch!</li>
+</ul>
 
 <!-- ===== QUALITY ===== --></div></div></div>
 </div>
@@ -494,23 +609,52 @@
     <p>You've seen many monsters in the caves. Blood begins to corrupt this world.</p>
   </div>
   <div class="timeline-item">
-    <h4>🔴 Day 32 — Blood Moon Descends</h4>
-    <p>The blood moon rises, undead roam freely. During the day, spiders and creepers go berserk. Blood rain brings fatigue. Night is when the nightmare begins — grab your weapon, defend your base!</p>
+    <h4>🔴 Day 32 — 1st Blood Moon (Evolution I)</h4>
+    <p>The blood moon rises, undead roam freely. During the day, spiders and creepers go berserk. Blood rain brings fatigue. Night is when the nightmare begins — grab your weapon, defend your base! All mobs receive <strong>Strength I</strong> buff.</p>
   </div>
   <div class="timeline-item">
     <h4>🏚️ Day 33 — Destroyed Base</h4>
     <p>The blood moon is over. You sadly look at your destroyed base, but you're stronger now. Prepare for the next one!</p>
   </div>
   <div class="timeline-item">
-    <h4>🔴 Day 64 — It's Back!</h4>
-    <p>But now you're extraordinary. Your sword cuts through the toughest hide with ease.</p>
+    <h4>🔴 Day 64 — 2nd Blood Moon (Evolution II)</h4>
+    <p>But now you're extraordinary. Your sword cuts through the toughest hide with ease. The monsters, however, have grown stronger.</p>
   </div>
   <div class="timeline-item">
-    <h4>🔵 Day 128 — Blue Moon</h4>
-    <p>Not all moons are bad! The blue moon rises, crops flourish — a good omen.</p>
+    <h4>🔵 Day 128 — 3rd Blood Moon (Evolution III) + Blue Moon</h4>
+    <p>Not all moons are bad! The blue moon rises, crops flourish — a good omen. But the blood moon monsters have grown stronger still.</p>
+  </div>
+  <div class="timeline-item">
+    <h4>🔴 Day 160 — 4th Blood Moon (Evolution IV)</h4>
+    <p>Monsters receive significant buffs. Mithril+ gear strongly recommended!</p>
+  </div>
+  <div class="timeline-item">
+    <h4>🔴 Day 192 — 5th Blood Moon (Evolution V)</h4>
+    <p>The apocalypse approaches. Monsters are extremely powerful — nearly impossible to survive without full Adamantium gear.</p>
+  </div>
+  <div class="timeline-item">
+    <h4>💀 Day 224 — 6th Blood Moon (Evolution VI) — Maximum Difficulty</h4>
+    <p>The final tier. From now on, every blood moon stays at this level. Only the strongest gear and strategy will keep you alive.</p>
   </div>
 </div>
 
+<h4>Altitude Effects During Blood Moon</h4>
+<table class="compare-table">
+  <tr><th>Altitude</th><th>Effect</th></tr>
+  <tr><td>Above Y 100</td><td><strong>Nausea + Weakness</strong> — get down to the surface!</td></tr>
+  <tr><td>Below Y 50</td><td><strong>Burning</strong> — caves aren't safe either!</td></tr>
+  <tr><td>Y 50–100</td><td>No extra effects (best zone to stay in)</td></tr>
+</table>
+
+<h4>Rewards After Surviving Blood Moon</h4>
+<p>After each survived blood moon, you receive one of the following rewards (random):</p>
+<ul>
+  <li>Mining speed <strong>+10%</strong></li>
+  <li>Attack damage <strong>+1</strong></li>
+  <li>Thirst drain <strong>-10%</strong></li>
+  <li>Hunger drain <strong>-10%</strong></li>
+</ul>
+<div class="tip-card">💡 <strong>Tip:</strong> Blood moon rewards stack! 6 survived blood moons = 6 bonuses. It's worth surviving every blood moon for permanent stat boosts.</div>
 
 <!-- ===== ACHIEVEMENTS ===== --></div></div></div>
 </div>
