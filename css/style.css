@@ -226,9 +226,9 @@ tr:hover td{background:rgba(255,255,255,.02);}
 mark.search-hl{background:rgba(240,192,64,.3);color:var(--gold);padding:0 2px;border-radius:2px;}
 
 /* ===== LANGUAGE ===== */
-[data-lang]{display:none;}[data-lang].active{display:block;}
-span[data-lang]{display:none;}span[data-lang].active{display:inline;}
-/* Pre-show correct language before DOMContentLoaded (eliminates FOUC) */
+/* Single system: only data-lang-init controls visibility. setLang() updates the html attribute. */
+[data-lang]{display:none;}
+span[data-lang]{display:none;}
 html[data-lang-init="hu"] [data-lang="hu"]{display:block;}
 html[data-lang-init="hu"] span[data-lang="hu"]{display:inline;}
 html[data-lang-init="en"] [data-lang="en"]{display:block;}

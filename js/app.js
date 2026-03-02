@@ -3,9 +3,6 @@
 // ── Language Switcher ──
 function setLang(lang) {
   document.documentElement.setAttribute('data-lang-init', lang);
-  document.querySelectorAll('[data-lang]').forEach(el => {
-    el.classList.toggle('active', el.getAttribute('data-lang') === lang);
-  });
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.getAttribute('data-val') === lang);
   });
@@ -27,7 +24,8 @@ function findVisibleEl(id) {
     const candidates = document.querySelectorAll('[id="' + CSS.escape(id) + '"]');
     for (const el of candidates) {
       const lc = el.closest('[data-lang]');
-      if (!lc || lc.classList.contains('active')) return el;
+      const currentLang = document.documentElement.getAttribute('data-lang-init') || 'hu';
+      if (!lc || lc.getAttribute('data-lang') === currentLang) return el;
     }
     return candidates[0] || null;
   } catch(e) {
@@ -339,7 +337,8 @@ function initSearch() {
     if ((e.ctrlKey && e.key === 'k') ||
         (e.key === '/' && !['INPUT','TEXTAREA'].includes(document.activeElement.tagName))) {
       e.preventDefault();
-      const vis = document.querySelector('[data-lang].active .search-input') ||
+      const currentLang = document.documentElement.getAttribute('data-lang-init') || 'hu';
+      const vis = document.querySelector('[data-lang="' + currentLang + '"] .search-input') ||
                   document.querySelector('.search-input');
       if (vis) { vis.focus(); vis.select(); }
       return;
