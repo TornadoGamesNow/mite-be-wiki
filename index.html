@@ -73,6 +73,7 @@
     <li><a href="#alloys">Ötvözetek</a></li>
     <li><a href="#iron">Vas & acél</a></li>
     <li><a href="#metal-hierarchy">Fém hierarchia</a></li>
+    <li><a href="#alloying">Ötvöző kemence</a></li>
   </ul>
   <h3>🏡 Túlélés & Építés</h3>
   <ul>
@@ -81,6 +82,7 @@
     <li><a href="#backpacks">Hátizsákok</a></li>
     <li><a href="#armor-weapons">Páncél & fegyverek</a></li>
     <li><a href="#enchanting">Bűvölőasztal</a></li>
+    <li><a href="#bow-arrows">Íj & Nyíl rendszer</a></li>
     <li><a href="#knowledge-books">Tudáskönyvek</a></li>
   </ul>
   <h3>🕳️ Föld Alatti Világ</h3>
@@ -94,6 +96,8 @@
   <ul>
     <li><a href="#mithril">Mithril</a></li>
     <li><a href="#nether">Nether</a></li>
+    <li><a href="#portals">Portál típusok</a></li>
+    <li><a href="#biome-portals">Biome portálok</a></li>
     <li><a href="#adamantium">Adamantium</a></li>
   </ul>
   <h3>🐉 Végső Kihívások</h3>
@@ -102,6 +106,8 @@
     <li><a href="#bedrock-pulverizer">Alapkő-zúzó</a></li>
     <li><a href="#the-end">Az End</a></li>
     <li><a href="#ender-dragon">Ender-sárkány</a></li>
+    <li><a href="#squad">Csapatrendszer</a></li>
+    <li><a href="#mob-stats">Szörny statisztikák</a></li>
   </ul>
   <h3>📋 Referenciák</h3>
   <ul>
@@ -152,6 +158,7 @@
     <li><a href="#alloys">Alloys</a></li>
     <li><a href="#iron">Iron & Steel</a></li>
     <li><a href="#metal-hierarchy">Metal Hierarchy</a></li>
+    <li><a href="#alloying">Alloying Furnace</a></li>
   </ul>
   <h3>🏡 Survival & Building</h3>
   <ul>
@@ -160,6 +167,7 @@
     <li><a href="#backpacks">Backpacks</a></li>
     <li><a href="#armor-weapons">Armor & Weapons</a></li>
     <li><a href="#enchanting">Enchanting</a></li>
+    <li><a href="#bow-arrows">Bow & Arrow System</a></li>
     <li><a href="#knowledge-books">Knowledge Books</a></li>
   </ul>
   <h3>🕳️ Underground World</h3>
@@ -173,6 +181,8 @@
   <ul>
     <li><a href="#mithril">Mithril</a></li>
     <li><a href="#nether">The Nether</a></li>
+    <li><a href="#portals">Portal Types</a></li>
+    <li><a href="#biome-portals">Biome Portals</a></li>
     <li><a href="#adamantium">Adamantium</a></li>
   </ul>
   <h3>🐉 Endgame</h3>
@@ -181,6 +191,8 @@
     <li><a href="#bedrock-pulverizer">Bedrock Pulverizer</a></li>
     <li><a href="#the-end">The End</a></li>
     <li><a href="#ender-dragon">Ender Dragon</a></li>
+    <li><a href="#squad">Squad System</a></li>
+    <li><a href="#mob-stats">Mob Statistics</a></li>
   </ul>
   <h3>📋 Reference</h3>
   <ul>
@@ -228,11 +240,49 @@
 <h4>Táplálkozási rendszer</h4>
 <p>Az ételeknek részletes tápértékük van: <strong>Telítettség, Táplálkozás, Cukor, Fehérje, Fitotápanyag, Inzulinválasz</strong> és <strong>Hidratálás</strong>. Az egyoldalú étrend <em>Alultápláltságot</em> okoz (lassú gyógyulás, +50% éhség). Egyél fehérjét (hús, tej), fitotápanyagot (gyümölcs, zöldség) és cukrot (méz, gyümölcs) vegyesen!</p>
 
-<h4>Testhőmérséklet</h4>
-<p>A hideg és a meleg is hatással van rád. Tűz közelében felmelegedhetsz, esőben lehűlsz. A napszúrás és a fagyás valós veszélyek.</p>
+<h4 id="temperature">Testhőmérséklet</h4>
+<p>A testhőmérséklet 36–37°C-ban optimális. Tűz, láva, Nether biome emeli — víz, eső, jég csökkenti. A napszúrás és a fagyás valós veszélyek.</p>
+<table class="compare-table">
+  <tr><th>Hőmérséklet</th><th>Hatás</th></tr>
+  <tr style="background:rgba(100,180,255,0.12)"><td><strong>&lt;35.8°C</strong></td><td>Hideg státusz — enyhe lassítás</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>36–37°C</strong></td><td>✅ Optimális — nincs debuff</td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>37.2–38.1°C</strong></td><td>Gyengeség I</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td><strong>38.2–39°C</strong></td><td>Gyengeség I + Lassítás I + 1 HP/perc</td></tr>
+  <tr style="background:rgba(255,80,30,0.14)"><td><strong>39–45°C+</strong></td><td>Gyengeség I + Láng + Lassítás I + 1 HP/20mp</td></tr>
+</table>
+<div class="tip-card">🌡️ <strong>Módosítók:</strong> Láva (2 blokk): +0.1°C/35mp · Tűz (3 blokk): +0.1°C/50mp · Nether: állandó +0.4°C · Vízbe merülés: −0.1°C/5mp · Futás: +0.1°C/90mp (max 37°C-ig) · Sivatag nappali: +0.1°C/óra</div>
 
-<h4>Átkok rendszere</h4>
-<p>Különböző átkok sújthatnak: <em>Felszerelés Leromlása, Nem Tudsz Futni, Nem Tudsz Állatokat Enni, Enderek Ellensége, Ügyetlenség, Pók/Farkas/Creeper Fóbia</em> stb. Ezek komolyság szintjei változóak.</p>
+<h4 id="curses">Átkok & Betegségek</h4>
+<p>Boszorkányok 16 különböző átkot alkalmazhatnak. Az adott boszorkányt kell megölni a feloldáshoz, vagy a hatás ellen való itallal. Minden átkot egyszerre csak egy kap a játékos:</p>
+<table class="compare-table">
+  <tr><th>#</th><th>Átok típusa</th><th>Hatás</th></tr>
+  <tr><td>1</td><td>Korróziós Bőr</td><td>Összes felszerelés tartóssági fogyasztása 2×</td></tr>
+  <tr><td>2</td><td>Nem Tud Lélegzetet Visszatartani</td><td>Max víz alatti oxigén 30%-ra csökken (3 buborék)</td></tr>
+  <tr><td>3</td><td>Nem Tud Futni</td><td>Futás teljesen letiltva</td></tr>
+  <tr><td>4</td><td>Nem Tud Húst Enni</td><td>Semmilyen állati termék nem fogyasztható</td></tr>
+  <tr><td>5</td><td>Nem Tud Zöldséget Enni</td><td>Növényi alapú ételek nem fogyaszthatók</td></tr>
+  <tr><td>6</td><td>Nem Tud Levest Inni</td><td>Levesek és raguk nem fogyaszthatók</td></tr>
+  <tr><td>7</td><td>Enderek Ellensége</td><td>Minden Enderman provokálatlanul támad</td></tr>
+  <tr><td>8</td><td>Csökkent Intelligencia</td><td>−20 effektív szintbüntetés (~25% craftolási minőségbüntetés)</td></tr>
+  <tr><td>9</td><td>Növény Fóbia</td><td>60% sebességcsökkentés növény blokkokon; 80% indákon</td></tr>
+  <tr><td>10</td><td>Páncél Elutasítása</td><td>Nem viselhet páncélt; felszerelt tárgyak kiesnek</td></tr>
+  <tr><td>11</td><td>Láda Fóbia</td><td>Nem nyithat ládákat</td></tr>
+  <tr><td>12</td><td>Nem Tud Aludni</td><td>Ágyba fekhet, de nem alszik el</td></tr>
+  <tr><td>13</td><td>Pók Fóbia</td><td>Csak 25% eséllyel okoz sebzést pókoknak</td></tr>
+  <tr><td>14</td><td>Farkas Fóbia</td><td>Csak 25% eséllyel okoz sebzést farkasoknak</td></tr>
+  <tr><td>15</td><td>Creeper Fóbia</td><td>Csak 25% eséllyel okoz sebzést creepereknek</td></tr>
+  <tr><td>16</td><td>Élőholt Fóbia</td><td>Csak 25% eséllyel okoz sebzést élőholt moboknak</td></tr>
+</table>
+<h4>Cukorbetegség (Diabetes)</h4>
+<p>Gyümölcsök, cukor és édességek fogyasztása inzulinrezisztenciát tölt fel (+4 800/édesség, 1 200/perc magától fogy). Tej <strong>nem</strong> gyógyítja!</p>
+<table class="compare-table">
+  <tr><th>Küszöb</th><th>Szint</th><th>Időtartam</th><th>Hatás</th></tr>
+  <tr><td>48 000</td><td>Enyhe</td><td>40–80 perc</td><td>Hányinger I (20mp) minden édesség után</td></tr>
+  <tr><td>96 000</td><td>Közepes</td><td>80–120 perc</td><td>Hányinger II (20mp) minden édesség után</td></tr>
+  <tr><td>144 000</td><td>Súlyos</td><td>120–160 perc</td><td>Hányinger III + Méreg (5–10mp) minden édesség után</td></tr>
+</table>
+<h4>Napszúrás (Heat Stroke)</h4>
+<p>Sivatagban 60+ másodpercig tartózkodva, vagy láva mellett (2 blokkon belül) 40+ másodpercig: <strong>Gyengeség II + Lassítás II</strong> + étel nem ad tápanyagot (végtelen ideig, amíg meg nem gyógyítják). Gyógyítja: forró víz vagy cukros víz.</p>
 
 <h4>Minőségi rendszer</h4>
 <p>A készített tárgyaknak <strong>minőségi szintjük</strong> van. Jobb klikkel magasabb minőséget választhatsz (több XP-be kerül). A minőség elsősorban a tárgy <strong>tartósságát</strong> befolyásolja:</p>
@@ -288,6 +338,65 @@
 </table>
 <div class="info-box">🏠 <strong>Bázisépítési tanács:</strong> Kő, kőtömb, obszidián és üveg blokkokból épített bázis teljes mértékben védett a Zselé lények ellen. Meglepő módon az <strong>Arany Blokk</strong> is immunis — viszont a Réz és Ezüst blokkok savra érzékenyek. Kerüld a fa elemek és gyapjú használatát Zselék által lakott területeken!</div>
 
+
+<h4 id="drowsiness">Álmosság (Drowsiness)</h4>
+<p>Az álmossági mutató óránként 1 ponttal növekszik. Alvás csökkenti. Föld alatt feleakkorán halmozódik. Ha 0–7 között van, <strong>+10% mozgássebesség bónuszt</strong> adsz!</p>
+<table class="compare-table">
+  <tr><th>Szint</th><th>Hatás</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>0–59</strong></td><td>Nincs debuff (0–7 között: +10% sebesség bónusz)</td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>60</strong></td><td>Gyengeség I</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td><strong>80</strong></td><td>Gyengeség I + Lassítás I</td></tr>
+  <tr style="background:rgba(255,80,30,0.14)"><td><strong>100+</strong></td><td>Gyengeség I + Lassítás I + Bányász Fáradtság + 1 HP/óra</td></tr>
+</table>
+<div class="tip-card">😴 <strong>Földön alvás</strong> (CapsLock + jobb klikk): éjszakai, zárt tér, 2 blokk belmagasság szükséges. 36°C alatt vagy 38.2°C felett az alvás hatékonysága csökkent (5–40 pont helyett csupán). Nehéz módban: földön alvás után garantáltan kapsz legalább 1 debuffot.</div>
+
+<h4 id="foggy-weather">Ködös Időjárás (v0.9.0)</h4>
+<p>Köd az első 7 napon belül nem jelenhet meg. Legalább 50 naponta egyszer előfordul, 48–72 óráig tart. <strong>Fortune III bónusz</strong> köd alatt — Fortune III csákánnyal Fortune VI-ot kapsz!</p>
+<div class="warning-box">⚗️ <strong>Köd alatt 3 párhuzamos veszély aktív:</strong></div>
+<table class="compare-table">
+  <tr><th>Típus</th><th>Keletkezés</th><th>Hatás szintenként</th></tr>
+  <tr style="background:rgba(255,200,0,0.08)">
+    <td><strong>Savasság</strong></td>
+    <td>1 pont/30mp köd alatt</td>
+    <td>10: Gyengeség I · 20: +Lassítás I (60mp-ként seb.) · 30: +Éhség I + Vakság I (20mp-ként seb.)</td>
+  </tr>
+  <tr style="background:rgba(100,150,255,0.10)">
+    <td><strong>Oxigénhiány</strong></td>
+    <td>1 pont/30mp köd alatt</td>
+    <td>10: Gyengeség I · 20: 0.5 szív/40mp + Lassítás I · 30: 0.5 szív/30mp + Vakság I</td>
+  </tr>
+  <tr style="background:rgba(100,255,100,0.08)">
+    <td><strong>Magas Oxigén</strong> (Jungle &lt;Y50)</td>
+    <td>Köd alatt aktív</td>
+    <td>5 perc: Siettetés I · 10 perc: +Gyorsaság I · 20 perc: +HP Regen · 40 perc: Gyengeség+Éhség (túlexponálás!)</td>
+  </tr>
+</table>
+<div class="info-box">💊 <strong>Gyógyítás:</strong> Savasság: vízbe merülés (−2/10mp) vagy Bőrápoló Palack (10 percig dupla védelem). Oxigénhiány: Y45 feletti réteg (+1/2mp) vagy Oxigén Palack (−4 pont/db).</div>
+
+<h4 id="moon-cycle">Hold Ciklus</h4>
+<p>A hold 7 különböző fázist vesz fel — mindegyik más hatást hoz! A legsúlyosabb a <strong>Vérhold</strong>, amely 6-szor evolválódik, egyre erősebb zombikat hozva.</p>
+<table class="compare-table">
+  <tr><th>Hold</th><th>Mikor</th><th>Hatások</th></tr>
+  <tr style="background:rgba(255,80,80,0.12)"><td><strong>🔴 Vérhold</strong></td><td>32., 64., 128., 160., 192., 224. nap</td><td>Mobok Erőség I · égbolt/eső vörös · Y≥100: Hányinger+Gyengeség, 1HP/20mp · Y≤50: tűzseb., 1HP/10mp · utána: állandó véletlenszerű bónusz</td></tr>
+  <tr style="background:rgba(255,255,100,0.10)"><td><strong>🟡 Sárga Hold</strong></td><td>32n−8. nap (24., 56., 120…)</td><td>Terménynövekedés +200% · aratási hozam +1 érett terménynként</td></tr>
+  <tr style="background:rgba(200,200,255,0.12)"><td><strong>👻 Fantom Hold</strong></td><td>128n−8. nap (120., 248…)</td><td>Halvány fehér glória a hold körül</td></tr>
+  <tr style="background:rgba(100,150,255,0.12)"><td><strong>🔵 Kék Hold</strong></td><td>Minden 50. nap</td><td>Ellenséges mob limit 30/játékos · állatok növekedése +200% · mindig tiszta időjárás</td></tr>
+  <tr style="background:rgba(255,255,255,0.06)"><td><strong>⚪ Telihold</strong></td><td>Minden 8. nap</td><td>Mob spawn ráta +50%</td></tr>
+  <tr style="background:rgba(50,50,100,0.14)"><td><strong>🌑 Újhold</strong></td><td>Standard holdciklus</td><td>Mob spawn −50% · spawnolt mobok sebessége csökkentett (0.21)</td></tr>
+  <tr style="background:rgba(255,100,50,0.12)"><td><strong>⚡ Elszámolás Napja</strong></td><td>96–97. nap</td><td>Vérholdas mobok + villám azonnal megöli a nyílt terepen lévő mobokat (nincs XP/drop)</td></tr>
+</table>
+<div class="info-box">🎁 <strong>Vérhold utáni véletlenszerű bónusz</strong> (egy a négyből): Bányász sebesség +10% · Sebzés +1 · Vízfogyasztás −10% · Éhség/Telítettség fogyasztás −10%<br><strong>Evolúció:</strong> Minden vérholdnál (32., 64., 128…) a zombik erősebbek lesznek — növekvő sebzés, HP és blokktörő képesség!</div>
+
+<h4 id="defecation">Ürítés Rendszer (J gomb)</h4>
+<p>Az ürítési mutató étkezéssel töltődik (főtt hús: +5, rothadt hús: +8, görögdinnye: +2, kenyér: +2). Ha eléri a 80-at, akaratlanul bekövetkezik (Hányinger V 5 perc + Lassítás I 1 perc). Nyomj <strong>J</strong>-t a kézi ürítéshez!</p>
+<table class="compare-table">
+  <tr><th>Mutató szint</th><th>Időtartam</th><th>Trágyahozam</th><th>Bónusz</th></tr>
+  <tr><td>0–30</td><td>3 másodperc</td><td>1 trágya</td><td>—</td></tr>
+  <tr><td>31–60</td><td>6 másodperc</td><td>2 trágya</td><td>—</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>61–79</strong></td><td>10 másodperc</td><td>3 trágya</td><td>Gyorsaság I + Siettetés I (10 másodperc)</td></tr>
+  <tr style="background:rgba(255,80,30,0.12)"><td><strong>80+ (akaratlan)</strong></td><td>Azonnal</td><td>4 trágya</td><td>—</td></tr>
+</table>
+<div class="tip-card">🌱 <strong>Trágya:</strong> Termőföldhöz adva növeli a termésmennyiséget. <strong>Figyelmeztetés:</strong> Ha 3+ napig nem üríted (és 50+ a mutató) és/vagy a növényi táplálkozás 20% alatt van, az időtartam megduplázódik. Ha mindkét feltétel teljesül: akár 5 perc!</div>
 
 <!-- ===== GYORS KEZDÉS ===== -->
 </div>
@@ -1030,7 +1139,66 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <div class="ore-layer"><img src="img/ingots/mithril.png" alt=""><span class="ore-label">Mithril</span><span class="ore-bar" style="width:22%;background:#7ec8e3">Y 0-24</span></div>
 <div class="ore-layer"><img src="img/ingots/adamantium.png" alt=""><span class="ore-label">Adamantium</span><span class="ore-bar" style="width:15%;background:#b388ff">Nether</span></div>
 <div class="ore-layer"><span class="ore-label">🌊 Higany</span><span class="ore-bar" style="width:22%;background:#8899aa">Y 0-25 — Mocsár biome</span></div>
+<div class="ore-layer"><span class="ore-label">⚫ Széntipp (Szén Kristály)</span><span class="ore-bar" style="width:20%;background:#444">Y 0-20 — CSAK Magasföld biome</span></div>
 </div>
+
+<h3>Érc-eloszlás Biome-onként</h3>
+<p>A különböző biome-okban eltérő ércek és eltérő mennyiségek találhatók! Ez stratégiai fontosságú.</p>
+<table class="compare-table">
+  <tr><th>Érc</th><th>Mocsár</th><th>Magasföld</th><th>Dzsungel</th></tr>
+  <tr><td>Réz</td><td>Y0-128 (súly 40)</td><td>Y35-128 (súly 40)</td><td>Y0-128 (súly 40, 6-10/ér)</td></tr>
+  <tr><td>Ezüst</td><td>Y0-96</td><td>Y40-96</td><td>Y0-96</td></tr>
+  <tr><td>Ón (Tin)</td><td>Y0-128</td><td>Y40-128</td><td>Y0-128</td></tr>
+  <tr><td>Vas</td><td>Y0-50</td><td>Y10-40</td><td>Y0-50 (8-12/ér — legtöbb!)</td></tr>
+  <tr><td>Arany</td><td>Y0-48</td><td>Y0-48 (kis érméret!)</td><td>Y0-48 (4-6/ér)</td></tr>
+  <tr><td>Gyémánt</td><td>Y0-32 (súly 10)</td><td>❌ nem termel!</td><td>Y0-17 (súly 20 — 2×!)</td></tr>
+  <tr style="background:rgba(150,200,100,0.10)"><td><strong>Szén Kristály</strong></td><td>❌</td><td>✅ Y0-20 (súly 100 — leggyakoribb!)</td><td>❌</td></tr>
+  <tr style="background:rgba(150,200,100,0.10)"><td><strong>Keménykő</strong></td><td>❌</td><td>✅ Y0-20</td><td>❌</td></tr>
+  <tr><td>Higany</td><td>✅ Y0-20</td><td>❌</td><td>❌</td></tr>
+  <tr><td>Smaragd</td><td>❌</td><td>✅ Y0-20</td><td>❌</td></tr>
+  <tr><td>Elemi Obszidián</td><td>✅ Y0-15</td><td>❌</td><td>❌</td></tr>
+</table>
+<div class="info-box">⚒️ <strong>Biome stratégia:</strong> <strong>Dzsungel</strong> = legjobb fém-biome (legnagyobb értípusok, 2× gyémánt). <strong>Magasföld</strong> = kötelező Szén Kristályért (ötvözéshez) és Keménykőért — de nincs Gyémánt! <strong>Mocsár</strong> = Higany + Elemi Obszidián (portálhoz szükséges).<br>Biome portálokkal: Magasföld Portál (Kő + Obszidián) → Dzsungel Portál (Falevél + Obszidián)!</div>
+
+</div>
+<div data-lang="hu">
+<h2 id="alloying">Ötvözési Rendszer (Ötvöző Kemence)</h2>
+<p>A MITE:BE-ben a normál fém felszerelések <strong>tovább fejleszthetők ötvözéssel</strong> egy Ötvöző Kemencében. Az ötvözés NEM alapanyagokból készít ötvözetet — meglévő, <strong>teljes tartósságú felszereléspéldányokat</strong> alakít át.</p>
+<div class="warning-box">⚠️ <strong>Kritikus szabály:</strong> Kizárólag <strong>100% tartósságú (sértetlen)</strong> eszközöket és páncélokat lehet ötvözni! Sérült tárgyak nem olvaszthatók be.</div>
+
+<h3>Ötvöző Kemence Elkészítése</h3>
+<table class="compare-table">
+  <tr><th>Recept</th><th>Alapanyagok</th><th>Szükséges Munkaasztal</th></tr>
+  <tr><td><strong>Réz (legolcsóbb)</strong></td><td>4× Réz Rúd + 1× Kő Kemence</td><td>Réz Munkaasztal</td></tr>
+  <tr><td>Ezüst</td><td>4× Ezüst Rúd + 1× Kő Kemence</td><td>Réz Munkaasztal</td></tr>
+  <tr><td>Vas</td><td>6× Kő + 2× Vas Rúd + 1× Kő Kemence</td><td>Vas Munkaasztal</td></tr>
+</table>
+<p><strong>Tüzelőanyag:</strong> Szén (30mp), Szénkocka (270mp), Lávavödör (120mp). <strong>Kötegméret:</strong> 1/köteg.</p>
+
+<h3>Ötvözetek</h3>
+<table class="compare-table">
+  <tr><th>Ötvözet</th><th>Alap felszerelés</th><th>Hozzáadott anyag</th><th>Eredmény</th><th>Bónusz (teljes szett)</th></tr>
+  <tr style="background:rgba(205,127,50,0.12)"><td><strong>Bronz</strong></td><td>Teljes tartósságú Réz eszköz/páncél</td><td>Ón Rudak</td><td>Bronz eszköz/páncél</td><td>Tűz időtartam −50% · Futási sebesség +20%</td></tr>
+  <tr style="background:rgba(192,192,128,0.12)"><td><strong>Ezüst-Réz</strong></td><td>Teljes tartósságú Ezüst eszköz/páncél</td><td>Réz Rudak</td><td>Ezüst-Réz eszköz/páncél</td><td>Tűz időtartam −80% · Összes sebzés −10%</td></tr>
+  <tr style="background:rgba(180,180,180,0.12)"><td><strong>Magas Szén Acél</strong></td><td>Teljes tartósságú Vas eszköz/páncél</td><td>Szén Kristály Szilánkok</td><td>Magas Szén Acél eszköz/páncél</td><td>Sebzés −5%/darab · Saválló · Lánc-bányászás képesség</td></tr>
+</table>
+
+<h3>Szükséges alapanyag mennyiségek (teljes szett)</h3>
+<table class="compare-table">
+  <tr><th>Ötvözet</th><th>Sisak</th><th>Mellvért</th><th>Lábvért</th><th>Csizma</th><th>Összesen</th></tr>
+  <tr><td>Bronz (Ón)</td><td>3</td><td>6</td><td>5</td><td>2</td><td><strong>16 Ón Rúd</strong></td></tr>
+  <tr><td>Ezüst-Réz (Réz)</td><td>5</td><td>7</td><td>6</td><td>3</td><td><strong>21 Réz Rúd</strong></td></tr>
+  <tr><td>Magas Szén Acél (Szén Kristály)</td><td>2</td><td>4</td><td>3</td><td>1</td><td><strong>10 Szén Kristály</strong></td></tr>
+</table>
+
+<h3>Szén Kristály megszerzése</h3>
+<p><strong>KIZÁRÓLAG Magasföld biome-ban terem</strong>, Y0-20 szint között (súly: 100 — a legelterjedtebb érc ott!). Módok:</p>
+<ul>
+  <li>Szén Kristály Fürtöt bányásszad (1 fürt = 4 szilánk)</li>
+  <li>Szénkockából olvasztható: 1 Szénkocka → 1 Szén Kristály Szilánk (az Ötvöző Kemencében)</li>
+</ul>
+<div class="tip-card">💡 <strong>Higany Katlan fejlesztés (Ősi Fém páncélhoz):</strong> Ha teljes tartósságú Ősi Fém páncéldarabot kattintasz egy láva fölé helyezett Higany Katlanra (Higany Érc + Katlan a mocsárból), a teljes szett viselésénél a testhőmérséklet stabilan marad! Ez a fejlesztés független az Ötvöző Kemencétől.</div>
+<div class="info-box">📝 <strong>Más ötvözetek:</strong> A mcmod.cn hivatalos adatbázisa szerint <em>csak</em> a fenti 3 ötvözet létezik az Ötvöző Kemencében. Keménykő, Mithril és Adamantium felszerelések NEM ötvözhetők — standard nagy kemencéből kerülnek ki.</div>
 
 </div>
 <div data-lang="hu">
@@ -1145,6 +1313,18 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
   <tr><td>Elemi Víztáska</td><td>16 L</td></tr>
 </table>
 <p><strong>Elemi Víztáska</strong> (higannyal): A legfejlettebb, tudáskönyvvel nyitható meg.</p>
+
+<h3>Szomjúság-fogyasztási Sebesség</h3>
+<p>A szomjúság fogyása az aktuális <strong>maximum HP-tól</strong> függ. Minél több életerőd van, annál gyorsabban szomjazol!</p>
+<table class="compare-table">
+  <tr><th>Max HP</th><th>Fogyás (1 egység)</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>3 szív</td><td>4 perc</td></tr>
+  <tr><td>4 szív</td><td>3 perc</td></tr>
+  <tr><td>5–6 szív</td><td>2 perc</td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td>7–8 szív</td><td>90 másodperc</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td>9–10 szív</td><td>60 másodperc</td></tr>
+</table>
+<div class="info-box">💧 <strong>Fontos:</strong> Futás során a szomjúság <strong>2×</strong> gyorsabban fogy! Alvás után annyi szomjúság fogy, amennyit az éhség is fogyott. 1 vízcsep 2 szomjúság egységet tölt vissza. 0 szomjúságnál: Gyengeség státusz, majd HP sebzés.</div>
 
 
 <!-- ===== HÁTIZSÁKOK ===== -->
@@ -1441,6 +1621,29 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 </table>
 <div class="info-box">💡 <strong>Fontos:</strong> A <strong>Háborús Kalapács</strong> NEM kap Élesség bűvölést — ha maximális sebzést akarsz, válassz Kard vagy Csatafejsze kombinációt Vámpír + Élesség bűvölésekkel.</div>
 
+<h3 id="bow-arrows">Íj & Nyíl Rendszer</h3>
+<p>A MITE:BE kibővíti az íjas rendszert — 10 nyíltípus, 3 íj és egy Tegez / Nyíltegez (96 nyíl). A nyilak kötegmérete 16.</p>
+<table class="compare-table">
+  <tr><th>Nyíl</th><th>Sebzés</th><th>Visszaszerzési esély</th><th>Speciális</th></tr>
+  <tr><td>Kova Nyíl</td><td>+1</td><td>30%</td><td>Kezdő nyíl</td></tr>
+  <tr><td>Obszidián Nyíl</td><td>+2</td><td>40%</td><td>—</td></tr>
+  <tr><td>Arany Nyíl</td><td>+2</td><td>50%</td><td>—</td></tr>
+  <tr><td>Rozsdás Vas Nyíl</td><td>+2</td><td>50%</td><td>Nem craftolható — csontváz íjászoktól esik</td></tr>
+  <tr><td>Réz Nyíl</td><td>+3</td><td>60%</td><td>—</td></tr>
+  <tr style="background:rgba(192,192,128,0.10)"><td><strong>Ezüst Nyíl</strong></td><td>+3</td><td>60%</td><td>Extra sebzés élőholtak ellen + White Ghoul sebzésére képes</td></tr>
+  <tr><td>Vas Nyíl</td><td>+4</td><td>70%</td><td>—</td></tr>
+  <tr style="background:rgba(139,105,20,0.10)"><td><strong>Ősi Fém Nyíl</strong></td><td>+5</td><td>80%</td><td>Korróziótól védett — Ősi Csontvázoktól esik</td></tr>
+  <tr style="background:rgba(126,200,227,0.12)"><td><strong>Mithril Nyíl</strong></td><td>+7</td><td>80%</td><td>Legjobb sebzés!</td></tr>
+  <tr style="background:rgba(179,136,255,0.14)"><td><strong>Adamantium Nyíl</strong></td><td>+6</td><td>90%</td><td>Az egyetlen nyíl, amely elpusztítja az End Kristályokat!</td></tr>
+</table>
+<table class="compare-table">
+  <tr><th>Íj</th><th>Tartósság</th><th>Sebesség Bónusz</th><th>Megjegyzés</th></tr>
+  <tr><td>Vanilla Íj</td><td>385</td><td>—</td><td>Standard</td></tr>
+  <tr style="background:rgba(139,105,20,0.10)"><td><strong>Ősi Fém Íj</strong></td><td>64 használat</td><td>+10% húzás és röpülési sebesség</td><td>Javítás: Ősi Fém Részecskék (Ősi/Adam üllőn)</td></tr>
+  <tr style="background:rgba(126,200,227,0.12)"><td><strong>Mithril Íj</strong></td><td>128 használat</td><td>+25% húzás és röpülési sebesség</td><td>Legjobbra fejleszthető (Legendary → Artifact); XP: Excellent=2 620, Artifact=41 920</td></tr>
+</table>
+<div class="info-box">🏹 <strong>Tegez / Nyíltegez (Quiver):</strong> 6 slot × 16 nyíl = <strong>96 nyíl</strong>. Kiegészítő slotba kerül (Shift+jobb klikk a megnyitáshoz). Nyilak balról jobbra fogynak. Receptje: 1 Toll + 2 Bőr.<br><strong>Legjobb kombó:</strong> Mithril Íj + Adamantium Nyíl — az End Kristályok ellen kötelező!</div>
+
 
 <!-- ===== TUDÁSKÖNYVEK ===== -->
 </div>
@@ -1655,6 +1858,34 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 
 <p>Ez kell az <strong>adamantium olvasztásához</strong>!</p>
 
+<h3 id="portals">Portál Típusok</h3>
+<p>A MITE:BE-ben 5 féle portál létezik, amelyek különböző dimenziók között teleportálnak. A portál alapja Obszidián keretből és Tűzütőből áll.</p>
+<table class="compare-table">
+  <tr><th>#</th><th>Portál</th><th>Hol építsd</th><th>Célpont</th><th>Szín</th></tr>
+  <tr><td>1</td><td><strong>Normál Portál</strong></td><td>Fővilág (nincs alapkő alatta)</td><td>Világ spawn pontja</td><td style="color:#88aaff">Kék</td></tr>
+  <tr><td>2</td><td><strong>Nether Portál</strong></td><td>Fővilág alapkő-rétege</td><td>Föld alatti világ</td><td style="color:#b388ff">Lila</td></tr>
+  <tr><td>3</td><td><strong>Visszatérő Portál</strong></td><td>Bárhol a föld alatti világban</td><td>Fővilág</td><td style="color:#4ecca3">Cián</td></tr>
+  <tr><td>4</td><td><strong>Pokol Portál</strong></td><td>Föld alatti világ magma-rétege</td><td>Nether dimenzió</td><td style="color:#ff5555">Piros</td></tr>
+  <tr><td>5</td><td><strong>Pokol Visszatérő Portál</strong></td><td>Bárhol a Netherben</td><td>Föld alatti világ</td><td style="color:#b388ff">Lila</td></tr>
+</table>
+<div class="info-box">🔮 <strong>v0.9.0 különlegesség:</strong> Fővilágban, az alapkőrétegen normál obszidián portál gyújtásával → 10 másodperc Hányinger → 5 másodperc múlva az összes játékost a Pillager Erőd romjaira teleportálja!</div>
+
+<h3 id="biome-portals">Biome Portálok (v0.8.0+)</h3>
+<p>8 különböző biome portál érhető el <strong>Átalakítókövek</strong> segítségével. Minden Átalakítókövet egy megfelelő anyag + obszidián keverékéből craftolsz egy normál munkaasztalon, majd az obszidián keret helyett ezt a követ használod.</p>
+<div class="warning-box">⚠️ <strong>v0.9.0 változás:</strong> A biome portálok <strong>már nem struktúrák közelébe</strong> teleportálnak — csak az adott biome általános terépre visznek véletlenszerű helyre. Minden belépés más-más helyhez vezet. A visszatéréshez nincs szükség biome portálra: bármely szabályos obszidián keret (NEM alapkőn) → Spawn ponthoz visz vissza.</div>
+<table class="compare-table">
+  <tr><th>Portál</th><th>Átalakítókő alapanyag</th><th>Crafting</th><th>Célbiome</th></tr>
+  <tr><td><strong>Sivatag Portál</strong></td><td>Homok</td><td>Homok + Obszidián</td><td>Sivatag</td></tr>
+  <tr><td><strong>Mocsár Portál</strong></td><td>Mohás Kőhalom</td><td>Mohás Kőhalom + Obszidián</td><td>Mocsár</td></tr>
+  <tr><td><strong>Síkság Portál</strong></td><td>Föld</td><td>Föld + Obszidián</td><td>Síkság</td></tr>
+  <tr><td><strong>Magasföld Portál</strong></td><td>Kő</td><td>Kő + Obszidián</td><td>Magasföld (Highland)</td></tr>
+  <tr><td><strong>Erdő Portál</strong></td><td>Fatörzs</td><td>Fatörzs + Obszidián</td><td>Erdő</td></tr>
+  <tr><td><strong>Óceán Portál</strong></td><td>Agyag</td><td>Agyag + Obszidián</td><td>Óceán</td></tr>
+  <tr><td><strong>Tundra Portál</strong></td><td>Fehér Gyapjú</td><td>Fehér Gyapjú + Obszidián</td><td>Havas biome</td></tr>
+  <tr><td><strong>Dzsungel Portál</strong></td><td>Falevél</td><td>Falevél + Obszidián</td><td>Dzsungel</td></tr>
+</table>
+<div class="tip-card">🗺️ <strong>Obszidián generátor:</strong> Tedd le a mocsári kunyhóból szerzett <strong>Katlan</strong>t, jobb klikk bármely csákánnyal → <strong>Kétcsöves Katlan</strong>. Bal oldalba láva, jobb oldalba víz → 120 másodpercenként 1 obszidián keletkezik. Korai játékban rendkívül hasznos a portálokhoz!<br><strong>Lávás kemence:</strong> Építsd a nagy kemencédet lávafolyam fölé (vagy tegyél lávaforrást alá) — örökös, ingyenes tüzelőanyag.</div>
+
 
 <!-- ===== ADAMANTIUM ===== -->
 </div>
@@ -1722,6 +1953,60 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 
 <div class="tip">Ha az Ender-sárkány meghal, az összes jelenlévő játékos megkapja a teljesítményt!</div>
 
+</div>
+<div data-lang="hu">
+<h2 id="squad">Csapatrendszer (Squad System)</h2>
+<p>A csapatrendszer (<strong>O gomb</strong>) lehetővé teszi a játékosok számára, hogy csapatban dolgozzanak közös XP-vel. A csapat szintje nő XP hozzáadásával (Smaragd, Gyémánt stb.) és csökken halálokkal.</p>
+
+<h3>XP Források és Büntetések</h3>
+<table class="compare-table">
+  <tr><th>Esemény</th><th>XP változás</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Smaragd bedobása</td><td>+250 XP</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Gyémánt bedobása</td><td>+500 XP</td></tr>
+  <tr><td>Nether Kvarc bedobása</td><td>+50 XP</td></tr>
+  <tr><td>Lazúrkő bedobása</td><td>+25 XP</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td>Csapatvezető halála</td><td>−800 XP</td></tr>
+  <tr style="background:rgba(255,150,100,0.10)"><td>Csapattag halála</td><td>−300 XP</td></tr>
+</table>
+
+<h3>10 Szint Bónuszai</h3>
+<table class="compare-table">
+  <tr><th>Szint</th><th>Csapatbónusz</th></tr>
+  <tr><td>1</td><td>Éhség fogyasztás −5%</td></tr>
+  <tr><td>2</td><td>Bányász sebesség +0.05</td></tr>
+  <tr><td>3</td><td>Sebzés +0.5</td></tr>
+  <tr><td>4</td><td>Tapasztalat szerzés +5%</td></tr>
+  <tr><td>5</td><td>3% eséllyel a sebzés figyelmen kívül marad</td></tr>
+  <tr><td>6</td><td>Érc kétszeres esés esélye +5%</td></tr>
+  <tr><td>7</td><td>Növényi táplálkozás +20%</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>8</td><td>Álmossági felhalmozódás 2× lassabb</td></tr>
+  <tr><td>9</td><td>Nincs barátságos tűz</td></tr>
+  <tr style="background:rgba(200,150,255,0.12)"><td>10</td><td>Visszalökéssel szemben immunis</td></tr>
+</table>
+<div class="info-box">👥 <strong>Vezető:</strong> A legtöbb XP-t hozzájáruló játékos vezető lesz, ha az előző vezető meghal. A csapat feloszlik, ha az XP negatívra megy, vagy csak a vezető marad.</div>
+
+</div>
+<div data-lang="hu">
+<h2 id="mob-stats">Fontosabb Szörny Statisztikák</h2>
+<p>A MITE:BE szörnyei lényegesen erősebbek a vanilla Minecraftnál. Nehéz módban a statisztikák tovább emelkednek.</p>
+<table class="compare-table">
+  <tr><th>Szörny</th><th>HP</th><th>Sebzés</th><th>Különleges</th></tr>
+  <tr><td><strong>Zombi</strong> (kemény, Y≤50)</td><td>30–40</td><td>4–7</td><td>Blokkok törése, étel evése, fényforrás megsemmisítése · 15 XP</td></tr>
+  <tr><td><strong>Hó Zombi</strong></td><td>20</td><td>1–5</td><td>Havas biome; nap ellen immunis (hó)</td></tr>
+  <tr><td><strong>Mutáns Zombi</strong></td><td>30</td><td>8+fegyver</td><td>Csak Vérhold alatt; blokkok bontása</td></tr>
+  <tr><td><strong>Csontváz</strong></td><td>6 (norm.) / 12 (kemény)</td><td>4</td><td>Standard távolsági</td></tr>
+  <tr><td><strong>Ősi Csontváz</strong></td><td>12 (norm.) / 25 (kemény)</td><td>6+fegyver</td><td>Csoportban; Élesség I közelre, Erő I távolra · 20 XP</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Csontváz Úr</strong></td><td>20–50</td><td>5–10</td><td>Csontváz-összehívás (70% íjász, 30% közelharci); sosem despawnolja · 25–40 XP</td></tr>
+  <tr><td><strong>Fa Pók</strong></td><td>6–15</td><td>3–4</td><td>Nappal is támad; méreg az ütésnél; leveleken át</td></tr>
+  <tr><td><strong>Kaotikus Creeper</strong></td><td>10</td><td>2+robbanás</td><td>Éjjel; felrobbantva megkeveri a játékos leltárát!</td></tr>
+  <tr style="background:rgba(255,100,50,0.10)"><td><strong>Tűz Elem</strong></td><td>20–50</td><td>5–8</td><td>Láva területek; 1–3% azonnali ölés égő játékoson; lávában 4HP/s regen</td></tr>
+  <tr style="background:rgba(150,150,150,0.10)"><td><strong>Föld Elem</strong></td><td>30–90</td><td>6–16</td><td>5 változat; csak a megfelelő szintű csákánnyal sebezhető; stun; 5% eséllyel evolválódik</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Barna Medve</strong></td><td>50</td><td>6–8</td><td>Erdők; ellenségeket is megtámad; 15 XP</td></tr>
+  <tr><td><strong>Skorpió</strong></td><td>40</td><td>6+Méreg 10mp</td><td>Sivatagok; 10 XP</td></tr>
+  <tr style="background:rgba(100,150,255,0.10)"><td><strong>Cápa</strong></td><td>100</td><td>12</td><td>Óceán; vízben lévő játékost támad; 20 XP</td></tr>
+</table>
+<div class="warning-box">⚠️ <strong>Csontváz Úr figyelmeztetés:</strong> A Csontváz Úr soha nem despawnolja egyszer, ha a játékost megcélozte! Vezess el messzire, vagy öld meg — különben folyamatosan követ.</div>
+
 
 <!-- ===== SZÖRNYEK ===== -->
 </div>
@@ -1759,11 +2044,49 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <h4>Nutrition System</h4>
 <p>Every food item has detailed stats: <strong>Satiation, Nutrition, Sugar, Protein, Phytonutrients, Insulin Response</strong>, and <strong>Hydration</strong>. Eating only one type of food causes <em>Malnourishment</em> (slow healing, +50% hunger drain). You need a balanced diet of protein (meat, milk), phytonutrients (fruits, vegetables), and sugar!</p>
 
-<h4>Body Temperature</h4>
-<p>Cold and heat both affect you. Warm up near fire, cool down in rain. Sunstroke and freezing are real dangers.</p>
+<h4 id="temperature">Body Temperature</h4>
+<p>Optimal body temperature is 36–37°C. Fire, lava, and the Nether raise it — water, rain, and ice lower it. Sunstroke and freezing are real dangers.</p>
+<table class="compare-table">
+  <tr><th>Temperature</th><th>Effect</th></tr>
+  <tr style="background:rgba(100,180,255,0.12)"><td><strong>&lt;35.8°C</strong></td><td>Cold status — slight slowdown</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>36–37°C</strong></td><td>✅ Optimal — no debuffs</td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>37.2–38.1°C</strong></td><td>Weakness I</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td><strong>38.2–39°C</strong></td><td>Weakness I + Slowness I + 1 HP/minute</td></tr>
+  <tr style="background:rgba(255,80,30,0.14)"><td><strong>39–45°C+</strong></td><td>Weakness I + Fire + Slowness I + 1 HP/20s</td></tr>
+</table>
+<div class="tip-card">🌡️ <strong>Modifiers:</strong> Lava (2 blocks): +0.1°C/35s · Fire (3 blocks): +0.1°C/50s · Nether: constant +0.4°C · Submerging in water: −0.1°C/5s · Sprinting: +0.1°C/90s (capped at 37°C) · Desert daytime: +0.1°C/hour</div>
 
-<h4>Curses</h4>
-<p>Various curses can afflict you: <em>Equipment Decay, Can't Run, Can't Eat Animals, Enemy of Endermen, Clumsiness, Spider/Wolf/Creeper Phobia, Can't Wear Armor, Can't Sleep</em>, and more.</p>
+<h4 id="curses">Curses &amp; Ailments</h4>
+<p>Witches can inflict 16 different curses. You must kill that specific witch to remove it, or use a dispel potion. Only one curse is active at a time:</p>
+<table class="compare-table">
+  <tr><th>#</th><th>Curse Type</th><th>Effect</th></tr>
+  <tr><td>1</td><td>Corrosive Skin</td><td>All equipment durability consumption doubled</td></tr>
+  <tr><td>2</td><td>Can't Hold Breath</td><td>Max underwater oxygen reduced to 30% (3 bubble capacity)</td></tr>
+  <tr><td>3</td><td>Can't Sprint</td><td>Sprinting completely disabled</td></tr>
+  <tr><td>4</td><td>Can't Eat Meat</td><td>Unable to consume any animal products</td></tr>
+  <tr><td>5</td><td>Can't Eat Vegetables</td><td>Unable to consume plant-based foods</td></tr>
+  <tr><td>6</td><td>Can't Drink Soup</td><td>Unable to consume soups or stews</td></tr>
+  <tr><td>7</td><td>Enderman Hatred</td><td>All Endermen attack unprovoked</td></tr>
+  <tr><td>8</td><td>Reduced Intelligence</td><td>−20 effective level penalty (~25% crafting quality penalty)</td></tr>
+  <tr><td>9</td><td>Plant Phobia</td><td>60% speed reduction through plant blocks; 80% through vines</td></tr>
+  <tr><td>10</td><td>Armor Rejection</td><td>Cannot wear armor; equipped items are expelled</td></tr>
+  <tr><td>11</td><td>Chest Phobia</td><td>Cannot open chests</td></tr>
+  <tr><td>12</td><td>Can't Sleep</td><td>Can lie in bed but will not fall asleep</td></tr>
+  <tr><td>13</td><td>Spider Phobia</td><td>Only 25% chance to deal damage to spiders</td></tr>
+  <tr><td>14</td><td>Wolf Phobia</td><td>Only 25% chance to deal damage to wolves</td></tr>
+  <tr><td>15</td><td>Creeper Phobia</td><td>Only 25% chance to deal damage to creepers</td></tr>
+  <tr><td>16</td><td>Undead Phobia</td><td>Only 25% chance to deal damage to undead mobs</td></tr>
+</table>
+<h4>Diabetes</h4>
+<p>Eating fruits, sugar, and sweets fills an insulin resistance meter (+4,800 per sweet food). It decays naturally (1,200/minute). Milk does <strong>not</strong> cure it!</p>
+<table class="compare-table">
+  <tr><th>Threshold</th><th>Level</th><th>Duration</th><th>Effect</th></tr>
+  <tr><td>48,000</td><td>Mild</td><td>40–80 min</td><td>Nausea I (20s) after each sweet food</td></tr>
+  <tr><td>96,000</td><td>Moderate</td><td>80–120 min</td><td>Nausea II (20s) after each sweet food</td></tr>
+  <tr><td>144,000</td><td>Severe</td><td>120–160 min</td><td>Nausea III + Poison (5–10s) after each sweet food</td></tr>
+</table>
+<h4>Heat Stroke</h4>
+<p>Being in a desert for 60+ seconds, or near lava (within 2 blocks) for 40+ seconds: <strong>Weakness II + Slowness II</strong> + food provides no nutrition (indefinitely until cured). Cure: bowl of hot water or sugar water.</p>
 
 <h4>Quality System</h4>
 <p>Crafted items have <strong>quality tiers</strong>. Right-click to select a higher quality (costs more XP). Quality primarily affects <strong>durability</strong>:</p>
@@ -1818,6 +2141,65 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Bed</strong></td><td>⚠️ 400 ticks</td><td>⚠️ 400 ticks</td><td>Don't leave beds exposed!</td></tr>
 </table>
 <div class="info-box">🏠 <strong>Base building tip:</strong> Bases built from stone, cobblestone, obsidian, and glass blocks are fully protected against Gelatinous Cubes. Surprisingly, <strong>Gold Blocks</strong> are also immune — but Copper and Silver blocks are acid-vulnerable. Avoid using wooden elements and wool in areas inhabited by Jellies!</div>
+
+<h4 id="drowsiness">Drowsiness</h4>
+<p>The drowsiness meter increases by 1 per in-game hour. Sleep reduces it. Underground accumulation is half the rate. At 0–7, you gain a <strong>+10% movement speed bonus</strong>!</p>
+<table class="compare-table">
+  <tr><th>Level</th><th>Effect</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>0–59</strong></td><td>No debuff (0–7: +10% speed bonus)</td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>60</strong></td><td>Weakness I</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td><strong>80</strong></td><td>Weakness I + Slowness I</td></tr>
+  <tr style="background:rgba(255,80,30,0.14)"><td><strong>100+</strong></td><td>Weakness I + Slowness I + Mining Fatigue + 1 HP/hour</td></tr>
+</table>
+<div class="tip-card">😴 <strong>Sleeping on the ground</strong> (CapsLock + right-click): requires night, enclosed space, 2-block ceiling height. Below 36°C or above 38.2°C, sleep efficiency is reduced. Hard mode: sleeping on the ground always inflicts at least 1 debuff.</div>
+
+<h4 id="foggy-weather">Foggy Weather (v0.9.0)</h4>
+<p>Fog cannot appear within the first 7 days. It occurs at least once every 50 days and lasts 48–72 hours. <strong>Fortune III bonus</strong> during fog — Fortune III pickaxe gives you Fortune VI!</p>
+<div class="warning-box">⚗️ <strong>3 simultaneous hazards active during fog:</strong></div>
+<table class="compare-table">
+  <tr><th>Type</th><th>Accumulation</th><th>Effects by level</th></tr>
+  <tr style="background:rgba(255,200,0,0.08)">
+    <td><strong>Acidity</strong></td>
+    <td>1 pt/30s during fog</td>
+    <td>10: Weakness I · 20: +Slowness I (damage every 60s) · 30: +Hunger I + Blindness I (damage every 20s)</td>
+  </tr>
+  <tr style="background:rgba(100,150,255,0.10)">
+    <td><strong>Oxygen Deficiency</strong></td>
+    <td>1 pt/30s during fog</td>
+    <td>10: Weakness I · 20: 0.5 hearts/40s + Slowness I · 30: 0.5 hearts/30s + Blindness I</td>
+  </tr>
+  <tr style="background:rgba(100,255,100,0.08)">
+    <td><strong>High Oxygen</strong> (Jungle &lt;Y50)</td>
+    <td>Active during fog</td>
+    <td>5 min: Haste I · 10 min: +Speed I · 20 min: +HP Regen · 40 min: Weakness+Hunger (overexposure!)</td>
+  </tr>
+</table>
+<div class="info-box">💊 <strong>Cures:</strong> Acidity: submerge in water (−2/10s) or Skin Care Bottle (double protection for 10 min). Oxygen Deficiency: move above Y45 (+1/2s recovery) or Oxygen Bottle (−4 pts each).</div>
+
+<h4 id="moon-cycle">Moon Cycle</h4>
+<p>The moon has 7 different phases — each with unique effects! The most severe is the <strong>Blood Moon</strong>, which evolves 6 times, spawning increasingly powerful zombies.</p>
+<table class="compare-table">
+  <tr><th>Moon</th><th>When</th><th>Effects</th></tr>
+  <tr style="background:rgba(255,80,80,0.12)"><td><strong>🔴 Blood Moon</strong></td><td>Days 32, 64, 128, 160, 192, 224</td><td>Mobs gain Strength I · sky/rain turns red · Y≥100: Nausea+Weakness, 1HP/20s · Y≤50: fire damage, 1HP/10s · after: permanent random bonus</td></tr>
+  <tr style="background:rgba(255,255,100,0.10)"><td><strong>🟡 Yellow Moon</strong></td><td>Day 32n−8 (days 24, 56, 120…)</td><td>Crop growth +200% · harvest yield +1 per ripe crop</td></tr>
+  <tr style="background:rgba(200,200,255,0.12)"><td><strong>👻 Phantom Moon</strong></td><td>Day 128n−8 (days 120, 248…)</td><td>Faint white halo around the moon</td></tr>
+  <tr style="background:rgba(100,150,255,0.12)"><td><strong>🔵 Blue Moon</strong></td><td>Every 50th day</td><td>Hostile mob cap 30/player · animal growth +200% · always clear weather</td></tr>
+  <tr style="background:rgba(255,255,255,0.06)"><td><strong>⚪ Full Moon</strong></td><td>Every 8th day</td><td>Mob spawn rate +50%</td></tr>
+  <tr style="background:rgba(50,50,100,0.14)"><td><strong>🌑 New Moon</strong></td><td>Standard moon cycle</td><td>Mob spawn −50% · spawned mobs have reduced speed (0.21)</td></tr>
+  <tr style="background:rgba(255,100,50,0.12)"><td><strong>⚡ Day of Reckoning</strong></td><td>Days 96–97</td><td>Blood Moon mobs + lightning instantly kills exposed mobs (no XP/drops)</td></tr>
+</table>
+<div class="info-box">🎁 <strong>Post-Blood Moon random bonus</strong> (one of four): Mining speed +10% · Damage +1 · Water consumption −10% · Hunger/saturation consumption −10%<br><strong>Evolution:</strong> Each Blood Moon (days 32, 64, 128…) makes zombies stronger — increasing damage, HP, and block-breaking ability!</div>
+
+<h4 id="defecation">Defecation System (J key)</h4>
+<p>The defecation meter fills from eating (cooked meat: +5, rotten flesh: +8, watermelon: +2, bread: +2). At 80, it triggers involuntarily (Nausea V for 5 min + Slowness I for 1 min). Press <strong>J</strong> to defecate manually!</p>
+<table class="compare-table">
+  <tr><th>Meter Level</th><th>Duration</th><th>Manure Yield</th><th>Bonus</th></tr>
+  <tr><td>0–30</td><td>3 seconds</td><td>1 manure</td><td>—</td></tr>
+  <tr><td>31–60</td><td>6 seconds</td><td>2 manure</td><td>—</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>61–79</strong></td><td>10 seconds</td><td>3 manure</td><td>Speed I + Haste I (10 seconds)</td></tr>
+  <tr style="background:rgba(255,80,30,0.12)"><td><strong>80+ (involuntary)</strong></td><td>Immediately</td><td>4 manure</td><td>—</td></tr>
+</table>
+<div class="tip-card">🌱 <strong>Manure:</strong> Applied to farmland, it increases crop yields. <strong>Warning:</strong> If you haven't defecated in 3+ days (and meter is 50+) and/or plant nutrition is below 20%, the duration doubles. If both conditions apply: up to 5 minutes!</div>
 
 
 <!-- ===== QUICK START ===== -->
@@ -2539,7 +2921,66 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 <div class="ore-layer"><img src="img/ingots/mithril.png" alt=""><span class="ore-label">Mithril</span><span class="ore-bar" style="width:22%;background:#7ec8e3">Y 0-24</span></div>
 <div class="ore-layer"><img src="img/ingots/adamantium.png" alt=""><span class="ore-label">Adamantium</span><span class="ore-bar" style="width:15%;background:#b388ff">Nether</span></div>
 <div class="ore-layer"><span class="ore-label">🌊 Mercury</span><span class="ore-bar" style="width:22%;background:#8899aa">Y 0-25 — Swamp biome only</span></div>
+<div class="ore-layer"><span class="ore-label">⚫ Carbon Crystal</span><span class="ore-bar" style="width:20%;background:#444">Y 0-20 — Highland biome ONLY</span></div>
 </div>
+
+<h3>Ore Distribution by Biome</h3>
+<p>Different biomes have different ores and vein sizes — this is strategically critical!</p>
+<table class="compare-table">
+  <tr><th>Ore</th><th>Swamp</th><th>Highland</th><th>Jungle</th></tr>
+  <tr><td>Copper</td><td>Y0-128 (wt 40)</td><td>Y35-128 (wt 40)</td><td>Y0-128 (wt 40, 6-10/vein)</td></tr>
+  <tr><td>Silver</td><td>Y0-96</td><td>Y40-96</td><td>Y0-96</td></tr>
+  <tr><td>Tin</td><td>Y0-128</td><td>Y40-128</td><td>Y0-128</td></tr>
+  <tr><td>Iron</td><td>Y0-50</td><td>Y10-40</td><td>Y0-50 (8-12/vein — largest!)</td></tr>
+  <tr><td>Gold</td><td>Y0-48</td><td>Y0-48 (small veins)</td><td>Y0-48 (4-6/vein)</td></tr>
+  <tr><td>Diamond</td><td>Y0-32 (wt 10)</td><td>❌ does not spawn!</td><td>Y0-17 (wt 20 — 2×!)</td></tr>
+  <tr style="background:rgba(150,200,100,0.10)"><td><strong>Carbon Crystal</strong></td><td>❌</td><td>✅ Y0-20 (wt 100 — most common ore!)</td><td>❌</td></tr>
+  <tr style="background:rgba(150,200,100,0.10)"><td><strong>Hardstone</strong></td><td>❌</td><td>✅ Y0-20</td><td>❌</td></tr>
+  <tr><td>Mercury</td><td>✅ Y0-20</td><td>❌</td><td>❌</td></tr>
+  <tr><td>Emerald</td><td>❌</td><td>✅ Y0-20</td><td>❌</td></tr>
+  <tr><td>Elemental Obsidian</td><td>✅ Y0-15</td><td>❌</td><td>❌</td></tr>
+</table>
+<div class="info-box">⚒️ <strong>Biome strategy:</strong> <strong>Jungle</strong> = best metal biome (largest veins, 2× Diamond). <strong>Highland</strong> = required for Carbon Crystal (alloying) and Hardstone — but no Diamond! <strong>Swamp</strong> = Mercury + Elemental Obsidian (for Underworld portal).<br>With biome portals: Highland Portal (Stone + Obsidian) → Jungle Portal (Leaves + Obsidian)!</div>
+
+</div>
+<div data-lang="en">
+<h2 id="alloying">Alloying System (Alloying Furnace)</h2>
+<p>In MITE:BE, standard metal equipment can be <strong>upgraded further through alloying</strong> in an Alloying Furnace. Alloying does NOT smelt raw ingots into alloys — it transforms existing, <strong>full-durability equipment pieces</strong>.</p>
+<div class="warning-box">⚠️ <strong>Critical rule:</strong> Only <strong>100% durability (undamaged)</strong> tools and armor can be alloyed! Damaged items cannot be processed.</div>
+
+<h3>Crafting the Alloying Furnace</h3>
+<table class="compare-table">
+  <tr><th>Recipe</th><th>Materials</th><th>Required Workbench</th></tr>
+  <tr><td><strong>Copper (cheapest)</strong></td><td>4× Copper Ingot + 1× Stone Furnace</td><td>Copper Workbench</td></tr>
+  <tr><td>Silver</td><td>4× Silver Ingot + 1× Stone Furnace</td><td>Copper Workbench</td></tr>
+  <tr><td>Iron</td><td>6× Stone + 2× Iron Ingot + 1× Stone Furnace</td><td>Iron Workbench</td></tr>
+</table>
+<p><strong>Fuel accepted:</strong> Coal (30s), Coal Block (270s), Lava Bucket (120s). <strong>Stack limit:</strong> 1 per stack.</p>
+
+<h3>Alloy Combinations</h3>
+<table class="compare-table">
+  <tr><th>Alloy</th><th>Base Equipment</th><th>Alloying Ingredient</th><th>Result</th><th>Bonus (full set)</th></tr>
+  <tr style="background:rgba(205,127,50,0.12)"><td><strong>Bronze</strong></td><td>Full-durability Copper tool/armor</td><td>Tin Ingots</td><td>Bronze tool/armor</td><td>Fire duration −50% · Sprint speed +20%</td></tr>
+  <tr style="background:rgba(192,192,128,0.12)"><td><strong>Silver-Copper</strong></td><td>Full-durability Silver tool/armor</td><td>Copper Ingots</td><td>Silver-Copper tool/armor</td><td>Fire duration −80% · All damage −10%</td></tr>
+  <tr style="background:rgba(180,180,180,0.12)"><td><strong>High-Carbon Steel</strong></td><td>Full-durability Iron tool/armor</td><td>Carbon Crystal Shards</td><td>High-Carbon Steel tool/armor</td><td>Damage −5%/piece · Acid resist · Chain mining</td></tr>
+</table>
+
+<h3>Required Ingredient Amounts (full set)</h3>
+<table class="compare-table">
+  <tr><th>Alloy</th><th>Helmet</th><th>Chest</th><th>Legs</th><th>Boots</th><th>Total</th></tr>
+  <tr><td>Bronze (Tin)</td><td>3</td><td>6</td><td>5</td><td>2</td><td><strong>16 Tin Ingots</strong></td></tr>
+  <tr><td>Silver-Copper (Copper)</td><td>5</td><td>7</td><td>6</td><td>3</td><td><strong>21 Copper Ingots</strong></td></tr>
+  <tr><td>High-Carbon Steel (Carbon Crystal)</td><td>2</td><td>4</td><td>3</td><td>1</td><td><strong>10 Carbon Crystals</strong></td></tr>
+</table>
+
+<h3>How to get Carbon Crystal</h3>
+<p><strong>Spawns ONLY in Highland biome</strong>, Y0-20 (weight: 100 — the most common ore there!). Ways to obtain:</p>
+<ul>
+  <li>Mine Carbon Crystal Clusters (1 cluster = 4 shards)</li>
+  <li>Smelt from Coal Blocks: 1 Coal Block → 1 Carbon Crystal Shard (in the Alloying Furnace)</li>
+</ul>
+<div class="tip-card">💡 <strong>Mercury Cauldron upgrade (Ancient Metal armor):</strong> Right-click a Mercury Cauldron (place Cauldron from swamp hut over a lava source, add Mercury Ore) with a full-durability Ancient Metal armor piece → when the complete set is worn, body temperature stays completely stable! This upgrade is independent of the Alloying Furnace.</div>
+<div class="info-box">📝 <strong>Other alloys:</strong> According to the official mcmod.cn database, <em>only</em> the 3 alloys above exist in the Alloying Furnace. Hardstone, Mithril and Adamantium equipment cannot be alloyed — they come from standard large furnaces.</div>
 
 </div>
 <div data-lang="en">
@@ -2654,6 +3095,18 @@ If you find sheep before the first night and grab some wool, you can reach sievi
   <tr><td>Elemental Water Bag</td><td>16 L</td></tr>
 </table>
 <p><strong>Elemental Water Bag</strong> (mercury): The most advanced, unlockable via knowledge book.</p>
+
+<h3>Thirst Consumption Rate</h3>
+<p>Thirst drains based on your current <strong>maximum HP</strong>. The more hearts you have, the faster you get thirsty!</p>
+<table class="compare-table">
+  <tr><th>Max HP</th><th>1 unit drain rate</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>3 hearts</td><td>4 minutes</td></tr>
+  <tr><td>4 hearts</td><td>3 minutes</td></tr>
+  <tr><td>5–6 hearts</td><td>2 minutes</td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td>7–8 hearts</td><td>90 seconds</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td>9–10 hearts</td><td>60 seconds</td></tr>
+</table>
+<div class="info-box">💧 <strong>Important:</strong> Thirst drains <strong>2×</strong> faster while sprinting! After sleeping, thirst drains by the same amount as hunger. 1 water drop restores 2 thirst units. At 0 thirst: Weakness status, then HP damage.</div>
 
 
 <!-- ===== BACKPACKS ===== -->
@@ -2950,6 +3403,29 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 </table>
 <div class="info-box">💡 <strong>Important:</strong> The <strong>War Hammer</strong> cannot receive Sharpness — if you want maximum damage output, go for a Sword or Battle Axe with Vampire + Sharpness enchantments instead.</div>
 
+<h3 id="bow-arrows">Bow &amp; Arrow System</h3>
+<p>MITE:BE expands the bow system — 10 arrow types, 3 bow types, and a Quiver (96 arrows). Arrow stack size is 16.</p>
+<table class="compare-table">
+  <tr><th>Arrow</th><th>Damage</th><th>Recovery Chance</th><th>Special</th></tr>
+  <tr><td>Flint Arrow</td><td>+1</td><td>30%</td><td>Starter arrow</td></tr>
+  <tr><td>Obsidian Arrow</td><td>+2</td><td>40%</td><td>—</td></tr>
+  <tr><td>Gold Arrow</td><td>+2</td><td>50%</td><td>—</td></tr>
+  <tr><td>Rusted Iron Arrow</td><td>+2</td><td>50%</td><td>Not craftable — drops from Skeleton Archers</td></tr>
+  <tr><td>Copper Arrow</td><td>+3</td><td>60%</td><td>—</td></tr>
+  <tr style="background:rgba(192,192,128,0.10)"><td><strong>Silver Arrow</strong></td><td>+3</td><td>60%</td><td>Extra damage vs. undead + can damage White Ghouls</td></tr>
+  <tr><td>Iron Arrow</td><td>+4</td><td>70%</td><td>—</td></tr>
+  <tr style="background:rgba(139,105,20,0.10)"><td><strong>Ancient Metal Arrow</strong></td><td>+5</td><td>80%</td><td>Corrosion-resistant — drops from Ancient Skeletons</td></tr>
+  <tr style="background:rgba(126,200,227,0.12)"><td><strong>Mithril Arrow</strong></td><td>+7</td><td>80%</td><td>Highest damage!</td></tr>
+  <tr style="background:rgba(179,136,255,0.14)"><td><strong>Adamantium Arrow</strong></td><td>+6</td><td>90%</td><td>The only arrow that destroys End Crystals!</td></tr>
+</table>
+<table class="compare-table">
+  <tr><th>Bow</th><th>Durability</th><th>Speed Bonus</th><th>Notes</th></tr>
+  <tr><td>Vanilla Bow</td><td>385</td><td>—</td><td>Standard</td></tr>
+  <tr style="background:rgba(139,105,20,0.10)"><td><strong>Ancient Metal Bow</strong></td><td>64 uses</td><td>+10% draw and flight speed</td><td>Repair: Ancient Metal Particles (Ancient/Adam anvil)</td></tr>
+  <tr style="background:rgba(126,200,227,0.12)"><td><strong>Mithril Bow</strong></td><td>128 uses</td><td>+25% draw and flight speed</td><td>Can be upgraded to max (Legendary → Artifact); XP: Excellent=2,620, Artifact=41,920</td></tr>
+</table>
+<div class="info-box">🏹 <strong>Quiver:</strong> 6 slots × 16 arrows = <strong>96 arrows</strong>. Goes in the accessory slot (Shift+right-click to open). Arrows deplete left to right. Recipe: 1 Feather + 2 Leather.<br><strong>Best combo:</strong> Mithril Bow + Adamantium Arrows — essential against End Crystals!</div>
+
 
 <!-- ===== KNOWLEDGE BOOKS ===== -->
 </div>
@@ -3164,6 +3640,34 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 
 <p>Required for <strong>adamantium smelting</strong>!</p>
 
+<h3 id="portals">Portal Types</h3>
+<p>MITE:BE has 5 portal types that teleport between different dimensions. Each portal requires an Obsidian frame and Flint and Steel.</p>
+<table class="compare-table">
+  <tr><th>#</th><th>Portal</th><th>Where to Build</th><th>Destination</th><th>Color</th></tr>
+  <tr><td>1</td><td><strong>Normal Portal</strong></td><td>Overworld (no bedrock beneath)</td><td>World spawn point</td><td style="color:#88aaff">Blue</td></tr>
+  <tr><td>2</td><td><strong>Nether Portal</strong></td><td>Overworld bedrock layer</td><td>Underground dimension</td><td style="color:#b388ff">Purple</td></tr>
+  <tr><td>3</td><td><strong>Return Portal</strong></td><td>Anywhere in Underground</td><td>Overworld</td><td style="color:#4ecca3">Cyan</td></tr>
+  <tr><td>4</td><td><strong>Hell Portal</strong></td><td>Underground magma layer</td><td>Nether dimension</td><td style="color:#ff5555">Red</td></tr>
+  <tr><td>5</td><td><strong>Hell Return Portal</strong></td><td>Anywhere in the Nether</td><td>Underground dimension</td><td style="color:#b388ff">Purple</td></tr>
+</table>
+<div class="info-box">🔮 <strong>v0.9.0 special:</strong> Lighting a normal obsidian portal on the bedrock layer in the Overworld → 10 seconds of Nausea → after 5 seconds, all players are teleported to the ruins of a Pillager Fortress!</div>
+
+<h3 id="biome-portals">Biome Portals (v0.8.0+)</h3>
+<p>8 biome portals are available using <strong>Transmutation Stones</strong>. Each Transmutation Stone is crafted from its corresponding material + Obsidian on a regular workbench, then used in place of regular obsidian in the portal frame.</p>
+<div class="warning-box">⚠️ <strong>v0.9.0 change:</strong> Biome portals <strong>no longer teleport near structures</strong> — they only bring you to general biome terrain at a random location. Each entry takes you somewhere different. To return home, no biome portal needed: any standard obsidian frame (NOT on bedrock) → returns to world Spawn.</div>
+<table class="compare-table">
+  <tr><th>Portal</th><th>Transmutation Stone material</th><th>Crafting</th><th>Destination Biome</th></tr>
+  <tr><td><strong>Desert Portal</strong></td><td>Sand</td><td>Sand + Obsidian</td><td>Desert</td></tr>
+  <tr><td><strong>Swamp Portal</strong></td><td>Mossy Cobblestone</td><td>Mossy Cobblestone + Obsidian</td><td>Swamp</td></tr>
+  <tr><td><strong>Plains Portal</strong></td><td>Dirt</td><td>Dirt + Obsidian</td><td>Plains</td></tr>
+  <tr><td><strong>Highland Portal</strong></td><td>Stone</td><td>Stone + Obsidian</td><td>Highland/Plateau</td></tr>
+  <tr><td><strong>Forest Portal</strong></td><td>Log</td><td>Log + Obsidian</td><td>Forest</td></tr>
+  <tr><td><strong>Ocean Portal</strong></td><td>Clay</td><td>Clay + Obsidian</td><td>Ocean</td></tr>
+  <tr><td><strong>Tundra Portal</strong></td><td>White Wool</td><td>White Wool + Obsidian</td><td>Snowy biome</td></tr>
+  <tr><td><strong>Jungle Portal</strong></td><td>Leaves</td><td>Leaves + Obsidian</td><td>Jungle</td></tr>
+</table>
+<div class="tip-card">🗺️ <strong>Obsidian Generator:</strong> Place a <strong>Cauldron</strong> (found in swamp huts), right-click with any pickaxe → <strong>Double-Spout Cauldron</strong>. Lava on one side + water on the other → 1 obsidian generated every 120 seconds. Extremely useful in early game for portals!<br><strong>Lava furnace:</strong> Build your large furnace over a lava stream (or place a lava source block below) — free, permanent fuel for smelting.</div>
+
 
 <!-- ===== ADAMANTIUM ===== -->
 </div>
@@ -3230,6 +3734,60 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 </ol>
 
 <div class="tip">When the Ender Dragon dies, all players present receive the achievement!</div>
+
+</div>
+<div data-lang="en">
+<h2 id="squad">Squad System</h2>
+<p>The squad system (<strong>O key</strong>) allows players to work together with a shared XP pool. The squad level grows by adding XP (Emerald, Diamond, etc.) and decreases with deaths.</p>
+
+<h3>XP Sources and Penalties</h3>
+<table class="compare-table">
+  <tr><th>Event</th><th>XP Change</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Throw in an Emerald</td><td>+250 XP</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Throw in a Diamond</td><td>+500 XP</td></tr>
+  <tr><td>Throw in Nether Quartz</td><td>+50 XP</td></tr>
+  <tr><td>Throw in Lapis Lazuli</td><td>+25 XP</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td>Squad leader death</td><td>−800 XP</td></tr>
+  <tr style="background:rgba(255,150,100,0.10)"><td>Squad member death</td><td>−300 XP</td></tr>
+</table>
+
+<h3>10 Level Bonuses</h3>
+<table class="compare-table">
+  <tr><th>Level</th><th>Squad Bonus</th></tr>
+  <tr><td>1</td><td>Hunger consumption −5%</td></tr>
+  <tr><td>2</td><td>Mining speed +0.05</td></tr>
+  <tr><td>3</td><td>Damage +0.5</td></tr>
+  <tr><td>4</td><td>XP gain +5%</td></tr>
+  <tr><td>5</td><td>3% chance to ignore incoming damage</td></tr>
+  <tr><td>6</td><td>Ore double-drop chance +5%</td></tr>
+  <tr><td>7</td><td>Plant nutrition +20%</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>8</td><td>Drowsiness accumulation 2× slower</td></tr>
+  <tr><td>9</td><td>No friendly fire</td></tr>
+  <tr style="background:rgba(200,150,255,0.12)"><td>10</td><td>Immune to knockback</td></tr>
+</table>
+<div class="info-box">👥 <strong>Leader:</strong> The player with the highest XP contribution becomes leader if the previous leader dies. The squad disbands if XP goes negative or only the leader remains.</div>
+
+</div>
+<div data-lang="en">
+<h2 id="mob-stats">Key Mob Statistics</h2>
+<p>MITE:BE mobs are significantly stronger than vanilla Minecraft. On Hard difficulty, stats increase further.</p>
+<table class="compare-table">
+  <tr><th>Mob</th><th>HP</th><th>Damage</th><th>Special</th></tr>
+  <tr><td><strong>Zombie</strong> (hard, Y≤50)</td><td>30–40</td><td>4–7</td><td>Breaks blocks, eats food, destroys light sources · 15 XP</td></tr>
+  <tr><td><strong>Snow Zombie</strong></td><td>20</td><td>1–5</td><td>Snowy biomes; immune to sunlight (snow)</td></tr>
+  <tr><td><strong>Mutant Zombie</strong></td><td>30</td><td>8+weapon</td><td>Blood Moon only; breaks blocks</td></tr>
+  <tr><td><strong>Skeleton</strong></td><td>6 (norm.) / 12 (hard)</td><td>4</td><td>Standard ranged attacker</td></tr>
+  <tr><td><strong>Ancient Skeleton</strong></td><td>12 (norm.) / 25 (hard)</td><td>6+weapon</td><td>Group spawning; Sharpness I melee, Strength I ranged · 20 XP</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Skeleton Lord</strong></td><td>20–50</td><td>5–10</td><td>Calls skeletons (70% archer, 30% melee); never despawns · 25–40 XP</td></tr>
+  <tr><td><strong>Wood Spider</strong></td><td>6–15</td><td>3–4</td><td>Attacks by day too; poison on hit; moves through leaves</td></tr>
+  <tr><td><strong>Chaotic Creeper</strong></td><td>10</td><td>2+explosion</td><td>Nighttime; explosion scrambles the player's inventory!</td></tr>
+  <tr style="background:rgba(255,100,50,0.10)"><td><strong>Fire Elemental</strong></td><td>20–50</td><td>5–8</td><td>Lava areas; 1–3% instant kill on burning players; 4HP/s regen in lava</td></tr>
+  <tr style="background:rgba(150,150,150,0.10)"><td><strong>Earth Elemental</strong></td><td>30–90</td><td>6–16</td><td>5 variants; only damageable with the correct tier pickaxe; stun; 5% chance to evolve</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Brown Bear</strong></td><td>50</td><td>6–8</td><td>Forests; also attacks hostile mobs; 15 XP</td></tr>
+  <tr><td><strong>Scorpion</strong></td><td>40</td><td>6+Poison 10s</td><td>Deserts; 10 XP</td></tr>
+  <tr style="background:rgba(100,150,255,0.10)"><td><strong>Shark</strong></td><td>100</td><td>12</td><td>Oceans; attacks players in water; 20 XP</td></tr>
+</table>
+<div class="warning-box">⚠️ <strong>Skeleton Lord warning:</strong> Once a Skeleton Lord has targeted you, it NEVER despawns! Lead it far away, or kill it — otherwise it will follow you indefinitely.</div>
 
 
 <!-- ===== MOBS ===== -->
