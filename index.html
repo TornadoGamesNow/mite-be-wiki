@@ -247,7 +247,7 @@
   <tr style="background:rgba(100,180,255,0.12)"><td><strong>&lt;35.8°C</strong></td><td>Hideg státusz — enyhe lassítás</td></tr>
   <tr style="background:rgba(100,200,100,0.10)"><td><strong>36–37°C</strong></td><td>✅ Optimális — nincs debuff</td></tr>
   <tr style="background:rgba(255,200,0,0.10)"><td><strong>37.2–38.1°C</strong></td><td>Gyengeség I</td></tr>
-  <tr style="background:rgba(255,150,50,0.12)"><td><strong>38.2–39°C</strong></td><td>Gyengeség I + Lassítás I + 1 HP/perc</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td><strong>38.2–39°C</strong></td><td>Gyengeség I + Láng + Lassítás I + 1 HP/perc</td></tr>
   <tr style="background:rgba(255,80,30,0.14)"><td><strong>39–45°C+</strong></td><td>Gyengeség I + Láng + Lassítás I + 1 HP/20mp</td></tr>
 </table>
 <div class="tip-card">🌡️ <strong>Módosítók:</strong> Láva (2 blokk): +0.1°C/35mp · Tűz (3 blokk): +0.1°C/50mp · Nether: állandó +0.4°C · Vízbe merülés: −0.1°C/5mp · Futás: +0.1°C/90mp (max 37°C-ig) · Sivatag nappali: +0.1°C/óra</div>
@@ -340,7 +340,7 @@
 
 
 <h4 id="drowsiness">Álmosság (Drowsiness)</h4>
-<p>Az álmossági mutató óránként 1 ponttal növekszik. Alvás csökkenti. Föld alatt feleakkorán halmozódik. Ha 0–7 között van, <strong>+10% mozgássebesség bónuszt</strong> adsz!</p>
+<p>Az álmossági mutató óránként 1 ponttal növekszik. Alvás csökkenti. <strong>Netherben</strong> feleakkora az ütem. Ha 0–7 között van, <strong>+10% mozgássebesség bónuszt</strong> adsz!</p>
 <table class="compare-table">
   <tr><th>Szint</th><th>Hatás</th></tr>
   <tr style="background:rgba(100,200,100,0.10)"><td><strong>0–59</strong></td><td>Nincs debuff (0–7 között: +10% sebesség bónusz)</td></tr>
@@ -358,7 +358,7 @@
   <tr style="background:rgba(255,200,0,0.08)">
     <td><strong>Savasság</strong></td>
     <td>1 pont/30mp köd alatt</td>
-    <td>10: Gyengeség I · 20: +Lassítás I (60mp-ként seb.) · 30: +Éhség I + Vakság I (20mp-ként seb.)</td>
+    <td>10: Gyengeség I · 20: +Lassítás I (40mp-ként seb.) · 30: +Éhség I + Vakság I (20mp-ként seb.)</td>
   </tr>
   <tr style="background:rgba(100,150,255,0.10)">
     <td><strong>Oxigénhiány</strong></td>
@@ -368,7 +368,7 @@
   <tr style="background:rgba(100,255,100,0.08)">
     <td><strong>Magas Oxigén</strong> (Jungle &lt;Y50)</td>
     <td>Köd alatt aktív</td>
-    <td>5 perc: Siettetés I · 10 perc: +Gyorsaság I · 20 perc: +HP Regen · 40 perc: Gyengeség+Éhség (túlexponálás!)</td>
+    <td>5 perc: Siettetés I · 10 perc: +Gyorsaság I · 20 perc: +HP Regen · 40 perc: Gyengeség I + Éhség I + Bányász Fáradtság I (túlexponálás!)</td>
   </tr>
 </table>
 <div class="info-box">💊 <strong>Gyógyítás:</strong> Savasság: vízbe merülés (−2/10mp) vagy Bőrápoló Palack (10 percig dupla védelem). Oxigénhiány: Y45 feletti réteg (+1/2mp) vagy Oxigén Palack (−4 pont/db).</div>
@@ -680,12 +680,13 @@
 <div class="warning-box">🌊 <strong>Óceán biome = Azonnal töröld és indíts új világot!</strong><br>Ha óceánban spawnsz, mentsd meg az idődet — azonnal kezdj egy új világot. Nincs fa, nincs kő, a víz minden irányban körülvesz, és éjjel víz alatti szörnyek is támadnak. Nem lehet megoldani.</div>
 
 <h3>🔦 Fáklya Kialvás — Kritikus Mechanika</h3>
-<p>A MITE:BE-ben az elhelyezett fáklyák egy idő után <strong>kialszanak</strong>. Ez az egyik legveszélyesebb korai mechanika:</p>
+<p>A MITE:BE-ben az elhelyezett fáklyák <strong>3 játékbeli nap</strong> után kialszanak. Ez az egyik legveszélyesebb korai mechanika:</p>
 <ul>
   <li>Ha a menedéked bejárata előtt kialszik egy fáklya, sötét lesz — ott <strong>mobok spawningolhatnak</strong></li>
   <li>Ha a menedék belsejében kialszanak a fáklyák, odabent is megjelenhetnek szörnyek</li>
   <li>Fáklya újragyújtásához <strong>Tűzkő és Acél (Tűzütő)</strong> szükséges</li>
   <li><strong>Mindig legyen nálad Tűzütő éjszaka!</strong> Ha sötétben maradna a menedéked, katasztrofális lehet</li>
+  <li>⚡ <strong>Kivétel: Síkság (Plains) biome-ban a fáklyák soha nem alszanak ki!</strong></li>
 </ul>
 <div class="tip-card">💡 <strong>Tipp:</strong> Készítsd el a Tűzütőt az első napon. Legyen mindig nálad éjszaka — a fáklyák kialvása és az újragyújtás elmulasztása az egyik leggyakoribb korai halálos hiba.</div>
 
@@ -2051,7 +2052,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
   <tr style="background:rgba(100,180,255,0.12)"><td><strong>&lt;35.8°C</strong></td><td>Cold status — slight slowdown</td></tr>
   <tr style="background:rgba(100,200,100,0.10)"><td><strong>36–37°C</strong></td><td>✅ Optimal — no debuffs</td></tr>
   <tr style="background:rgba(255,200,0,0.10)"><td><strong>37.2–38.1°C</strong></td><td>Weakness I</td></tr>
-  <tr style="background:rgba(255,150,50,0.12)"><td><strong>38.2–39°C</strong></td><td>Weakness I + Slowness I + 1 HP/minute</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td><strong>38.2–39°C</strong></td><td>Weakness I + Fire + Slowness I + 1 HP/minute</td></tr>
   <tr style="background:rgba(255,80,30,0.14)"><td><strong>39–45°C+</strong></td><td>Weakness I + Fire + Slowness I + 1 HP/20s</td></tr>
 </table>
 <div class="tip-card">🌡️ <strong>Modifiers:</strong> Lava (2 blocks): +0.1°C/35s · Fire (3 blocks): +0.1°C/50s · Nether: constant +0.4°C · Submerging in water: −0.1°C/5s · Sprinting: +0.1°C/90s (capped at 37°C) · Desert daytime: +0.1°C/hour</div>
@@ -2143,7 +2144,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <div class="info-box">🏠 <strong>Base building tip:</strong> Bases built from stone, cobblestone, obsidian, and glass blocks are fully protected against Gelatinous Cubes. Surprisingly, <strong>Gold Blocks</strong> are also immune — but Copper and Silver blocks are acid-vulnerable. Avoid using wooden elements and wool in areas inhabited by Jellies!</div>
 
 <h4 id="drowsiness">Drowsiness</h4>
-<p>The drowsiness meter increases by 1 per in-game hour. Sleep reduces it. Underground accumulation is half the rate. At 0–7, you gain a <strong>+10% movement speed bonus</strong>!</p>
+<p>The drowsiness meter increases by 1 per in-game hour. Sleep reduces it. <strong>In the Nether</strong>, the accumulation rate is halved. At 0–7, you gain a <strong>+10% movement speed bonus</strong>!</p>
 <table class="compare-table">
   <tr><th>Level</th><th>Effect</th></tr>
   <tr style="background:rgba(100,200,100,0.10)"><td><strong>0–59</strong></td><td>No debuff (0–7: +10% speed bonus)</td></tr>
@@ -2161,7 +2162,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
   <tr style="background:rgba(255,200,0,0.08)">
     <td><strong>Acidity</strong></td>
     <td>1 pt/30s during fog</td>
-    <td>10: Weakness I · 20: +Slowness I (damage every 60s) · 30: +Hunger I + Blindness I (damage every 20s)</td>
+    <td>10: Weakness I · 20: +Slowness I (damage every 40s) · 30: +Hunger I + Blindness I (damage every 20s)</td>
   </tr>
   <tr style="background:rgba(100,150,255,0.10)">
     <td><strong>Oxygen Deficiency</strong></td>
@@ -2171,7 +2172,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
   <tr style="background:rgba(100,255,100,0.08)">
     <td><strong>High Oxygen</strong> (Jungle &lt;Y50)</td>
     <td>Active during fog</td>
-    <td>5 min: Haste I · 10 min: +Speed I · 20 min: +HP Regen · 40 min: Weakness+Hunger (overexposure!)</td>
+    <td>5 min: Haste I · 10 min: +Speed I · 20 min: +HP Regen · 40 min: Weakness I + Hunger I + Mining Fatigue I (overexposure!)</td>
   </tr>
 </table>
 <div class="info-box">💊 <strong>Cures:</strong> Acidity: submerge in water (−2/10s) or Skin Care Bottle (double protection for 10 min). Oxygen Deficiency: move above Y45 (+1/2s recovery) or Oxygen Bottle (−4 pts each).</div>
@@ -2484,12 +2485,13 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <div class="warning-box">🌊 <strong>Ocean biome = Start a new world immediately!</strong><br>If you spawn in an ocean, save your time — start a new world right away. No wood, no stone, water everywhere, and aquatic creatures attack at night. There is no way out.</div>
 
 <h3>🔦 Torch Burnout — Critical Mechanic</h3>
-<p>In MITE:BE, placed torches <strong>go out after a period of time</strong>. This is one of the most dangerous early-game mechanics:</p>
+<p>In MITE:BE, placed torches burn out after <strong>3 in-game days</strong>. This is one of the most dangerous early-game mechanics:</p>
 <ul>
   <li>If a torch by your shelter entrance burns out, that area goes dark — <strong>mobs can spawn there</strong></li>
   <li>If torches inside your shelter burn out, monsters can appear inside too</li>
   <li>To relight a torch you need <strong>Flint and Steel</strong></li>
   <li><strong>Always carry Flint and Steel at night!</strong> Getting caught in a dark shelter is often fatal</li>
+  <li>⚡ <strong>Exception: Torches in Plains biomes never burn out!</strong></li>
 </ul>
 <div class="tip-card">💡 <strong>Tip:</strong> Craft Flint and Steel on your first day. Always carry it at night — failing to relight burned-out torches is one of the most common early-game deaths.</div>
 
