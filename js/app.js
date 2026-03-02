@@ -16,6 +16,8 @@ function setLang(lang) {
   if (dd) dd.style.display = 'none';
   // Re-build nav observer for now-visible elements
   document.dispatchEvent(new Event('langChange'));
+  // Re-render data tables in new language
+  initDataTables(lang);
 }
 
 // ── Helper: find element with given ID that is visible (in active lang section) ──
@@ -431,11 +433,119 @@ function initKeyboardNav() {
   });
 }
 
+// ── Data Table Renderer ──
+function renderTable(containerId, headers, rows, lang) {
+  const el = findVisibleEl(containerId);
+  if (!el) return;
+  let html = '<table class="compare-table"><tr>';
+  html += headers.map(h => '<th>' + (typeof h === 'string' ? h : h[lang]) + '</th>').join('');
+  html += '</tr>';
+  for (const row of rows) {
+    let rowStyle = '';
+    if (row.bg) rowStyle += 'background:' + row.bg + ';';
+    if (row.muted) rowStyle += 'color:#888;';
+    if (row.bad) rowStyle += 'color:#a44;';
+    html += '<tr' + (rowStyle ? ' style="' + rowStyle + '"' : '') + '>';
+    for (const cell of row.cells) {
+      const rawText = typeof cell.text === 'string' ? cell.text : cell.text[lang];
+      const text = cell.bold ? '<strong>' + rawText + '</strong>' : rawText;
+      html += cell.tier
+        ? '<td><span class="tier ' + cell.tier + '">' + text + '</span></td>'
+        : '<td>' + text + '</td>';
+    }
+    html += '</tr>';
+  }
+  html += '</table>';
+  el.innerHTML = html;
+}
+
+function initDataTables(lang) {
+  const d = window.WikiData;
+  if (!d) return;
+
+  // ── Mob Tables ──
+  if (d.mobs) {
+    const mobHeaders = [
+      { hu: 'Szörny', en: 'Mob' },
+      { hu: 'HP', en: 'HP' },
+      { hu: 'Sebzés', en: 'Damage' },
+      { hu: 'XP', en: 'XP' },
+      { hu: 'Speciális', en: 'Special' }
+    ];
+    function mobRows(list) {
+      return list.map(m => ({ cells: [
+        { text: m.name },
+        { text: String(m.hp) },
+        { text: m.dmg },
+        { text: String(m.xp) },
+        { text: m.special }
+      ]}));
+    }
+    renderTable('mob-table-surface',     mobHeaders, mobRows(d.mobs.surface),     lang);
+    renderTable('mob-table-underground', mobHeaders, mobRows(d.mobs.underground), lang);
+    renderTable('mob-table-nether',      mobHeaders, mobRows(d.mobs.nether),      lang);
+  }
+
+  // ── Sieve Tables ──
+  if (d.sieve) {
+    const sieveHeaders = [
+      { hu: 'Anyag', en: 'Item' },
+      { hu: 'Esély', en: 'Chance' },
+      { hu: 'Hasznosság', en: 'Use' }
+    ];
+    function sieveRows(list) {
+      return list.map(s => ({ cells: [
+        { text: s.item, tier: s.tier || null },
+        { text: s.chance, bold: true },
+        { text: s.use }
+      ]}));
+    }
+    renderTable('sieve-table-gravel', sieveHeaders, sieveRows(d.sieve.gravel), lang);
+    renderTable('sieve-table-nether', sieveHeaders, sieveRows(d.sieve.nether), lang);
+  }
+
+  // ── Material Tables ──
+  if (d.materials) {
+    // Enchantability
+    if (d.materials.enchantability) {
+      renderTable('material-enchantability',
+        [{ hu: 'Anyag', en: 'Material' }, { hu: 'Bűvölhetőség', en: 'Enchantability' }, { hu: 'Megjegyzés', en: 'Note' }],
+        d.materials.enchantability.map(r => ({ bg: r.bg, muted: r.muted, cells: [
+          { text: r.materials },
+          { text: String(r.value), bold: true },
+          { text: r.note }
+        ]})),
+        lang);
+    }
+    // Max Quality
+    if (d.materials.maxQuality) {
+      renderTable('material-max-quality',
+        [{ hu: 'Minőség', en: 'Quality' }, { hu: 'Anyagok', en: 'Materials' }],
+        d.materials.maxQuality.map(r => ({ bg: r.bg, muted: r.muted, bad: r.bad, cells: [
+          { text: r.quality, bold: true },
+          { text: r.materials }
+        ]})),
+        lang);
+    }
+    // Durability Multipliers
+    if (d.materials.durabilityMult) {
+      renderTable('material-durability-mult',
+        [{ hu: 'Szorzó', en: 'Multiplier' }, { hu: 'Anyagok', en: 'Materials' }],
+        d.materials.durabilityMult.map(r => ({ bg: r.bg, muted: r.muted, bad: r.bad, cells: [
+          { text: r.mult, bold: true },
+          { text: r.materials, tier: r.tier || null }
+        ]})),
+        lang);
+    }
+  }
+}
+
 // ── Init All ──
 document.addEventListener('DOMContentLoaded', () => {
   let saved;
   try { saved = localStorage.getItem('mite-wiki-lang'); } catch(e) {}
-  setLang(saved || 'hu');
+  const initLang = saved || 'hu';
+  setLang(initLang); // setLang már meghívja initDataTables-t
   initAnchorNav();
   initNavTracking();
   initHashNav();

@@ -902,21 +902,10 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 
 <h3>Kavics szitálás esési arányok</h3>
 <p>80% eséllyel kapsz valamit kavics szitálásakor. A ritka anyagok esélye alacsony, de sok szitálással felhalmozható!</p>
-<table class="compare-table">
-  <tr><th>Anyag</th><th>Esély</th><th>Hasznosság</th></tr>
-  <tr><td>Kova Szilánk</td><td><strong>53,4%</strong></td><td>Korai szerszámok</td></tr>
-  <tr><td><span class="tier t-copper">Réz Ércdarab</span></td><td><strong>25,1%</strong></td><td>Első fém — közel 1:4 arány!</td></tr>
-  <tr><td>Kova</td><td>4,4%</td><td>Tűzkő és Acél</td></tr>
-  <tr><td><span class="tier t-silver">Ezüst Ércdarab</span></td><td>3,1%</td><td>Ezüst szerszámok</td></tr>
-  <tr><td>Arany Ércdarab</td><td>0,63%</td><td>Arany szint</td></tr>
-  <tr><td><span class="tier t-hard">Keménykő Ércdarab</span></td><td>0,25%</td><td>Ritka, mély barlangoknál jobb</td></tr>
-  <tr><td>Obszidián Szilánk</td><td>0,25%</td><td>Öntőformához kell!</td></tr>
-  <tr><td>Smaragd Szilánk</td><td>0,25%</td><td>—</td></tr>
-  <tr><td>Gyémánt Szilánk</td><td>0,13%</td><td>Ritka!</td></tr>
-  <tr><td><span class="tier t-mithril">Mithril Ércdarab</span></td><td>0,06%</td><td>Nagyon ritka</td></tr>
-  <tr><td><span class="tier t-adamantium">Adamantium Ércdarab</span></td><td>0,01%</td><td>Rendkívül ritka</td></tr>
-</table>
-<div class="info-box">💡 <strong>Nether kavics</strong> szitálásakor más az arány: Kova Szilánk 57,1% | <strong>Arany Ércdarab 38,1%</strong> | Kova 4,2% | Kvarc 0,6%. Az Arany Farm a Netherben sokkal hatékonyabb!</div>
+<div id="sieve-table-gravel"></div>
+<h3>Nether Kavics Szitálás</h3>
+<p>A Nether kavicsból sokkal több Arany esik — az arany farmolás lényegesen hatékonyabb a Netherben!</p>
+<div id="sieve-table-nether"></div>
 
 
 <!-- ===== KEMENCÉK ===== -->
@@ -1543,18 +1532,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 
 <h3>Anyag Tartóssági Szorzók</h3>
 <p>Minden tárgy tartóssága az alap értékre alkalmazott anyagszorzóval számítódik. A bőr az alapszint (1×).</p>
-<table class="compare-table">
-  <tr><th>Szorzó</th><th>Anyagok</th></tr>
-  <tr style="background:rgba(200,150,255,0.20)"><td><strong>256×</strong></td><td><span class="tier t-adamantium">Adamantium</span></td></tr>
-  <tr style="background:rgba(200,150,255,0.12)"><td><strong>64×</strong></td><td><span class="tier t-mithril">Mithril</span>, Higany</td></tr>
-  <tr style="background:rgba(100,180,255,0.12)"><td><strong>16×</strong></td><td><span class="tier t-ancient">Ősi Fém</span>, <span class="tier t-hard">Keménykő</span>, Gyémánt</td></tr>
-  <tr style="background:rgba(100,150,200,0.10)"><td><strong>8×</strong></td><td><span class="tier t-iron">Vas</span>, <span class="tier t-iron">Magas Szén Acél</span>, Smaragd</td></tr>
-  <tr><td><strong>4×</strong></td><td><span class="tier t-copper">Réz</span>, <span class="tier t-silver">Ezüst</span>, <span class="tier t-copper">Bronz</span>, Arany, Ezüst-Réz, Rozsdás Vas, Ón, Kvarc, Pokolfenyő</td></tr>
-  <tr><td><strong>2×</strong></td><td>Obszidián, Üveg</td></tr>
-  <tr><td><strong>1× (alap)</strong></td><td><span class="tier t-flint">Bőr</span>, <span class="tier t-flint">Kova</span></td></tr>
-  <tr style="color:#f88"><td><strong>0.5×</strong></td><td>Fa</td></tr>
-  <tr style="color:#f44"><td><strong>0.15×</strong></td><td>Csont</td></tr>
-</table>
+<div id="material-durability-mult"></div>
 <div class="info-box">💡 <strong>Példa:</strong> Egy Vasalt Kard alap tartóssága ~31 (vas szorzó: 8×) = 248. Az Adamantium Kard ugyanolyan alap értéken 256× szorzóval ~7936 tartóssággal bírna — de a tényleges értékek az item_durability.txt fájlban vannak.</div>
 
 <h3>Fegyver és Eszköz Tényleges Tartóssága</h3>
@@ -1652,16 +1630,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 
 <h3>Bűvölhetőség anyagonként</h3>
 <p>Magasabb bűvölhetőség = jobb és több bűvölési lehetőség. Nem bűvölhető anyagok: Obszidián, Pokolfenyő, Üveg, Rozsdás Vas.</p>
-<table class="compare-table">
-  <tr><th>Anyag</th><th>Bűvölhetőség</th><th>Megjegyzés</th></tr>
-  <tr style="background:rgba(200,150,255,0.15)"><td><strong>Mithril / Gyémánt / Higany</strong></td><td><strong>100</strong></td><td>⭐ Legjobb bűvölési esély!</td></tr>
-  <tr style="background:rgba(100,255,100,0.10)"><td>Smaragd</td><td>70</td><td>Nagyon jó</td></tr>
-  <tr style="background:rgba(255,220,0,0.10)"><td>Arany</td><td>50</td><td>Jó bűvölési szint</td></tr>
-  <tr><td>Adamantium / Ősi Fém / Kvarc</td><td>40</td><td>Közepes</td></tr>
-  <tr><td>Keménykő</td><td>35</td><td>—</td></tr>
-  <tr><td>Réz / Vas / Ezüst / Bronz / HC Acél</td><td>30</td><td>Standard</td></tr>
-  <tr style="color:#888"><td>Bőr / Fa / Csont</td><td>10</td><td>Gyenge</td></tr>
-</table>
+<div id="material-enchantability"></div>
 <div class="info-box">💡 <strong>Trükk:</strong> A Mithril fegyver ugyanolyan kiváló bűvölési esélyeket nyújt mint a Gyémánt (100), miközben Mestermű+ minőséget is elér. Arany (50) szintén jó bűvölési célra, de alacsony tartóssága miatt kevésbé praktikus.</div>
 
 <h3>Bűvölések Fegyvertípusonként</h3>
@@ -2860,21 +2829,10 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 
 <h3>Gravel Sieve Drop Rates</h3>
 <p>80% chance to get something from each gravel sieve. Rare materials have low drop rates, but accumulate over many sieves!</p>
-<table class="compare-table">
-  <tr><th>Item</th><th>Chance</th><th>Use</th></tr>
-  <tr><td>Flint Shard</td><td><strong>53.4%</strong></td><td>Early tools</td></tr>
-  <tr><td><span class="tier t-copper">Copper Particle</span></td><td><strong>25.1%</strong></td><td>First metal — nearly 1-in-4!</td></tr>
-  <tr><td>Flint</td><td>4.4%</td><td>Flint and Steel</td></tr>
-  <tr><td><span class="tier t-silver">Silver Particle</span></td><td>3.1%</td><td>Silver tools</td></tr>
-  <tr><td>Gold Particle</td><td>0.63%</td><td>Gold tier</td></tr>
-  <tr><td><span class="tier t-hard">Hardstone Particle</span></td><td>0.25%</td><td>Rare; caves are more reliable</td></tr>
-  <tr><td>Obsidian Shard</td><td>0.25%</td><td>Needed for the ingot mold!</td></tr>
-  <tr><td>Emerald Shard</td><td>0.25%</td><td>—</td></tr>
-  <tr><td>Diamond Shard</td><td>0.13%</td><td>Rare!</td></tr>
-  <tr><td><span class="tier t-mithril">Mithril Particle</span></td><td>0.06%</td><td>Very rare</td></tr>
-  <tr><td><span class="tier t-adamantium">Adamantium Particle</span></td><td>0.01%</td><td>Extremely rare</td></tr>
-</table>
-<div class="info-box">💡 <strong>Nether gravel</strong> has a completely different drop table: Flint Shard 57.1% | <strong>Gold Particle 38.1%</strong> | Flint 4.2% | Quartz 0.6%. Gold farming in the Nether is far more efficient!</div>
+<div id="sieve-table-gravel"></div>
+<h3>Nether Gravel Sieve</h3>
+<p>Nether gravel has a completely different drop table — gold farming in the Nether is far more efficient!</p>
+<div id="sieve-table-nether"></div>
 
 
 <!-- ===== FURNACES ===== -->
@@ -3499,18 +3457,7 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 
 <h3>Material Durability Multipliers</h3>
 <p>Every item's durability is calculated by applying a material multiplier to a base value. Leather is the baseline (1×).</p>
-<table class="compare-table">
-  <tr><th>Multiplier</th><th>Materials</th></tr>
-  <tr style="background:rgba(200,150,255,0.20)"><td><strong>256×</strong></td><td><span class="tier t-adamantium">Adamantium</span></td></tr>
-  <tr style="background:rgba(200,150,255,0.12)"><td><strong>64×</strong></td><td><span class="tier t-mithril">Mithril</span>, Mercury</td></tr>
-  <tr style="background:rgba(100,180,255,0.12)"><td><strong>16×</strong></td><td><span class="tier t-ancient">Ancient Metal</span>, <span class="tier t-hard">Hardstone</span>, Diamond</td></tr>
-  <tr style="background:rgba(100,150,200,0.10)"><td><strong>8×</strong></td><td><span class="tier t-iron">Iron</span>, <span class="tier t-iron">High Carbon Steel</span>, Emerald</td></tr>
-  <tr><td><strong>4×</strong></td><td><span class="tier t-copper">Copper</span>, <span class="tier t-silver">Silver</span>, <span class="tier t-copper">Bronze</span>, Gold, Silver-Copper, Rusted Iron, Tin, Quartz, Netherrack</td></tr>
-  <tr><td><strong>2×</strong></td><td>Obsidian, Glass</td></tr>
-  <tr><td><strong>1× (baseline)</strong></td><td><span class="tier t-flint">Leather</span>, <span class="tier t-flint">Flint</span></td></tr>
-  <tr style="color:#f88"><td><strong>0.5×</strong></td><td>Wood</td></tr>
-  <tr style="color:#f44"><td><strong>0.15×</strong></td><td>Bone</td></tr>
-</table>
+<div id="material-durability-mult"></div>
 <div class="info-box">💡 <strong>Tip:</strong> Adamantium has 256× the durability of leather — making it incredibly durable. Even Iron (8×) vs Wood (0.5×) means iron tools last <em>16× longer</em> than wooden ones.</div>
 
 <h3>Actual Weapon &amp; Tool Durability Values</h3>
@@ -3608,16 +3555,7 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 
 <h3>Enchantability by Material</h3>
 <p>Higher enchantability = better and more enchantment options. Non-enchantable materials: Obsidian, Netherrack, Glass, Rusted Iron.</p>
-<table class="compare-table">
-  <tr><th>Material</th><th>Enchantability</th><th>Notes</th></tr>
-  <tr style="background:rgba(200,150,255,0.15)"><td><strong>Mithril / Diamond / Mercury</strong></td><td><strong>100</strong></td><td>⭐ Best enchanting chance!</td></tr>
-  <tr style="background:rgba(100,255,100,0.10)"><td>Emerald</td><td>70</td><td>Very good</td></tr>
-  <tr style="background:rgba(255,220,0,0.10)"><td>Gold</td><td>50</td><td>Good enchanting level</td></tr>
-  <tr><td>Adamantium / Ancient Metal / Quartz</td><td>40</td><td>Medium</td></tr>
-  <tr><td>Hardstone</td><td>35</td><td>—</td></tr>
-  <tr><td>Copper / Iron / Silver / Bronze / HC Steel</td><td>30</td><td>Standard</td></tr>
-  <tr style="color:#888"><td>Leather / Wood / Bone</td><td>10</td><td>Poor</td></tr>
-</table>
+<div id="material-enchantability"></div>
 <div class="info-box">💡 <strong>Tip:</strong> Mithril weapons offer the same excellent enchanting odds as Diamond (both 100), while also achieving Masterwork+ quality. Gold (50) is also good for enchanting, but its low durability makes it less practical.</div>
 
 <h3>Enchantments by Weapon Type</h3>
@@ -4138,6 +4076,8 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 </div>
 
 <button class="back-to-top" title="Back to top" aria-label="Back to top">↑</button>
+<script src="data/sieve.js"></script>
+<script src="data/materials.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

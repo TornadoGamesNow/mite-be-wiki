@@ -76,50 +76,14 @@
 <p>A MITE:BE rengeteg új szörnyet ad a játékhoz. Az alábbi táblázatok tartalmazzák a fő statisztikákat.</p>
 
 <h3>Felszíni Szörnyek</h3>
-<table class="compare-table">
-  <tr><th>Szörny</th><th>HP</th><th>Sebzés</th><th>XP</th><th>Speciális</th></tr>
-  <tr><td>Zombi</td><td>20</td><td>3</td><td>5</td><td>Falon átérzékelés, csákányos változat bármit kibányászik</td></tr>
-  <tr><td>Csontváz</td><td>20</td><td>3 (nyíl)</td><td>5</td><td>Távolsági támadó</td></tr>
-  <tr><td>Creeper</td><td>20</td><td>— (robbanás)</td><td>5</td><td>Robbanás figyelmeztetés nélkül</td></tr>
-  <tr><td>Pók</td><td>16</td><td>3</td><td>5</td><td>Falon mászás, éjjel agresszív</td></tr>
-  <tr><td>Szörnyű Farkas (Dire Wolf)</td><td>20</td><td>5</td><td>8</td><td>Erős farkas, falkában veszélyes</td></tr>
-  <tr><td>Fa Pók (Wood Spider)</td><td>10</td><td>2</td><td>5</td><td>Fák között él, mérgező</td></tr>
-  <tr><td>Fosztogató (Pillager)</td><td>24</td><td>4 (nyílpuska)</td><td>10</td><td>Rabló csapat, jutalomládát ejt</td></tr>
-  <tr><td>Fosztogató Vezető</td><td>40</td><td>6</td><td>20</td><td>Erősebb páncélos vezér</td></tr>
-  <tr><td>Zealot (Fanatic Vindicator)</td><td>80</td><td>13 (vas fejsze)</td><td>40</td><td><strong>Extrém sebzés!</strong> Vas fejszével támad</td></tr>
-  <tr><td>Boszorkány (Witch)</td><td>26</td><td>bájital</td><td>10</td><td>Mérgező bájitalokat dob</td></tr>
-  <tr><td>Síkság/Havas/Dzsungel változatok</td><td>20</td><td>3-5</td><td>5-8</td><td>Biome-specifikus, erősebb variánsok</td></tr>
-</table>
+<div id="mob-table-surface"></div>
 
 <h3>Underground Szörnyek</h3>
-<table class="compare-table">
-  <tr><th>Szörny</th><th>HP</th><th>Sebzés</th><th>XP</th><th>Speciális</th></tr>
-  <tr><td>Sírkamra Szellem (Ghoul)</td><td>20</td><td>4</td><td>10</td><td>Lassítás hatás</td></tr>
-  <tr><td>Rég Halott (Wight)</td><td>25</td><td>5</td><td>10</td><td>Lassítás + éheztetés</td></tr>
-  <tr><td>Rég Halott Őr</td><td>30</td><td>6</td><td>15</td><td>Páncélos változat</td></tr>
-  <tr><td>Láthatatlan Követő</td><td>20</td><td>5</td><td>12</td><td>Láthatatlan! <strong>Ezüst/Mithril+ fegyver</strong> kell</td></tr>
-  <tr><td>Fekete Özvegy Pók</td><td>16</td><td>4</td><td>8</td><td>Erős mérgezés</td></tr>
-  <tr><td>Fázis Pók</td><td>16</td><td>4</td><td>8</td><td>Falon átmegy! Csak <strong>Ősi Fém kard</strong> sebzi</td></tr>
-  <tr><td>Csont Úr (Bone Lord)</td><td>50</td><td>8</td><td>25</td><td>Boss — csontváz idézés</td></tr>
-  <tr><td>Ókori Csont Úr</td><td>80</td><td>10</td><td>40</td><td>Erősebb boss változat</td></tr>
-  <tr><td>Föld Elementális (5 változat)</td><td>30</td><td>12</td><td>20</td><td>4 páncél, csak csákánnyal sebezhe</td></tr>
-  <tr><td>Vámpír Denevér</td><td>6</td><td>2</td><td>3</td><td>Életlopás</td></tr>
-  <tr><td>Óriás Vámpír Denevér</td><td>30</td><td>6</td><td>15</td><td>Életlopás + nagy sebzés</td></tr>
-</table>
+<div id="mob-table-underground"></div>
 <div class="info-box">⛏️ <strong>Föld Elementális:</strong> 5 változat (föld, kő, homok, kavics, agyag). Csak csákánnyal sebezhetők — kard alig hat! A csákány anyagának legalább olyan erősnek kell lennie.</div>
 
 <h3>Nether Szörnyek</h3>
-<table class="compare-table">
-  <tr><th>Szörny</th><th>HP</th><th>Sebzés</th><th>XP</th><th>Speciális</th></tr>
-  <tr><td>Démon Pók</td><td>20</td><td>5</td><td>10</td><td>Tűzálló, mérgező</td></tr>
-  <tr><td>Pokol Kutya</td><td>16</td><td>4</td><td>8</td><td>Tűzálló, gyors, falkában</td></tr>
-  <tr><td>Pokoli Creeper</td><td>20</td><td>— (robbanás)</td><td>10</td><td>Tűzálló, nagyobb robbanás</td></tr>
-  <tr><td>Vörös Lángoszlop (Red Blaze)</td><td>40</td><td>6</td><td>20</td><td><strong>6 tűzgolyó egyszerre!</strong></td></tr>
-  <tr><td>Tűz Elementális</td><td>50</td><td>8</td><td>25</td><td><strong>3% instant kill égő játékoson!</strong> Víz/hógolyó/sebzés bájital hat rá</td></tr>
-  <tr><td>Nagy Ghast</td><td>40</td><td>6 (tűzgolyó)</td><td>20</td><td>Óriási, repülő, tűzokádó</td></tr>
-  <tr><td>Zombi Disznóember</td><td>20</td><td>5</td><td>8</td><td>Arany nélkül agresszív</td></tr>
-  <tr><td>Lélek Szellem</td><td>16</td><td>4</td><td>8</td><td>Nether szellemi lény</td></tr>
-</table>
+<div id="mob-table-nether"></div>
 <div class="warning-box">🔥 <strong>Tűz Elementális:</strong> Ha <strong>éppen égsz</strong> amikor megtámad, <strong>3% esélye azonnal megöl!</strong> Tűzálló bájital kötelező. Hatásos: varázstárgyak, víz, hógolyók, Sebzés bájital. NEM hat: tűz, ezüst fegyver.</div>
 
 <h3>Főellenfél: HIM</h3>
@@ -242,16 +206,7 @@
 
 <h3>Maximális Tárgy Minőség Anyagonként</h3>
 <p>Minden anyag csak egy bizonyos minőségi szintig képes tárgyat készíteni — a ritka anyagok legendás minőségű tárgyakat adhatnak:</p>
-<table class="compare-table">
-  <tr><th>Minőség</th><th>Anyagok</th></tr>
-  <tr style="background:rgba(200,150,255,0.15)"><td><strong>🏆 Legendás</strong></td><td>Mithril, Adamantium</td></tr>
-  <tr style="background:rgba(255,200,100,0.12)"><td><strong>⚒️ Mestermű</strong></td><td>Vas, Ősi Fém, Magas Szén Acél</td></tr>
-  <tr style="background:rgba(255,220,0,0.10)"><td><strong>✨ Kitűnő</strong></td><td>Arany, Gyémánt</td></tr>
-  <tr style="background:rgba(100,255,100,0.10)"><td><strong>💎 Kiváló</strong></td><td>Réz, Keménykő, Ezüst, Smaragd, Bronz, Ezüst-Réz ötvözet</td></tr>
-  <tr><td><strong>Jó</strong></td><td>Bőr, Fa, Kova, Obszidián, Kvarc, Csont</td></tr>
-  <tr style="color:#888"><td><strong>Átlagos</strong></td><td>Pokolfenyő, Üveg</td></tr>
-  <tr style="color:#a44"><td><strong>Rossz</strong></td><td>Rozsdás Vas</td></tr>
-</table>
+<div id="material-max-quality"></div>
 
 <h3>Kemence Tüzelőanyag Referencia</h3>
 <p>A különböző tüzelőanyagok eltérő ideig égnek és eltérő <strong>hőfokot</strong> (heat level) adnak — egyes ércek olvasztásához magasabb hőfokra van szükség!</p>
@@ -403,50 +358,14 @@
 <p>MITE:BE adds tons of new mobs. The tables below contain key statistics.</p>
 
 <h3>Surface Mobs</h3>
-<table class="compare-table">
-  <tr><th>Mob</th><th>HP</th><th>Damage</th><th>XP</th><th>Special</th></tr>
-  <tr><td>Zombie</td><td>20</td><td>3</td><td>5</td><td>Senses through walls, pickaxe variant mines any block</td></tr>
-  <tr><td>Skeleton</td><td>20</td><td>3 (arrow)</td><td>5</td><td>Ranged attacker</td></tr>
-  <tr><td>Creeper</td><td>20</td><td>— (explosion)</td><td>5</td><td>Explodes without warning</td></tr>
-  <tr><td>Spider</td><td>16</td><td>3</td><td>5</td><td>Climbs walls, aggressive at night</td></tr>
-  <tr><td>Dire Wolf</td><td>20</td><td>5</td><td>8</td><td>Strong wolf, dangerous in packs</td></tr>
-  <tr><td>Wood Spider</td><td>10</td><td>2</td><td>5</td><td>Lives among trees, poisonous</td></tr>
-  <tr><td>Pillager</td><td>24</td><td>4 (crossbow)</td><td>10</td><td>Raiding party, drops loot</td></tr>
-  <tr><td>Pillager Leader</td><td>40</td><td>6</td><td>20</td><td>Stronger armored leader</td></tr>
-  <tr><td>Zealot (Fanatic Vindicator)</td><td>80</td><td>13 (iron axe)</td><td>40</td><td><strong>Extreme damage!</strong> Attacks with iron axe</td></tr>
-  <tr><td>Witch</td><td>26</td><td>potion</td><td>10</td><td>Throws poison potions</td></tr>
-  <tr><td>Plains/Snow/Jungle variants</td><td>20</td><td>3-5</td><td>5-8</td><td>Biome-specific, stronger variants</td></tr>
-</table>
+<div id="mob-table-surface"></div>
 
 <h3>Underground Mobs</h3>
-<table class="compare-table">
-  <tr><th>Mob</th><th>HP</th><th>Damage</th><th>XP</th><th>Special</th></tr>
-  <tr><td>Ghoul</td><td>20</td><td>4</td><td>10</td><td>Slowness effect</td></tr>
-  <tr><td>Wight</td><td>25</td><td>5</td><td>10</td><td>Slowness + hunger drain</td></tr>
-  <tr><td>Wight Guard</td><td>30</td><td>6</td><td>15</td><td>Armored variant</td></tr>
-  <tr><td>Invisible Stalker</td><td>20</td><td>5</td><td>12</td><td>Invisible! <strong>Silver/Mithril+ weapon</strong> required</td></tr>
-  <tr><td>Black Widow Spider</td><td>16</td><td>4</td><td>8</td><td>Strong poison</td></tr>
-  <tr><td>Phase Spider</td><td>16</td><td>4</td><td>8</td><td>Walks through walls! Only <strong>Ancient Metal sword</strong> works</td></tr>
-  <tr><td>Bone Lord</td><td>50</td><td>8</td><td>25</td><td>Boss — summons skeletons</td></tr>
-  <tr><td>Ancient Bone Lord</td><td>80</td><td>10</td><td>40</td><td>Stronger boss variant</td></tr>
-  <tr><td>Earth Elemental (5 variants)</td><td>30</td><td>12</td><td>20</td><td>4 armor, only damaged by pickaxe</td></tr>
-  <tr><td>Vampire Bat</td><td>6</td><td>2</td><td>3</td><td>Life steal</td></tr>
-  <tr><td>Giant Vampire Bat</td><td>30</td><td>6</td><td>15</td><td>Life steal + high damage</td></tr>
-</table>
+<div id="mob-table-underground"></div>
 <div class="info-box">⛏️ <strong>Earth Elementals:</strong> 5 variants (dirt, stone, sand, gravel, clay). Only damaged by pickaxe — swords barely work! Pickaxe material must be at least as strong as the elemental's type.</div>
 
 <h3>Nether Mobs</h3>
-<table class="compare-table">
-  <tr><th>Mob</th><th>HP</th><th>Damage</th><th>XP</th><th>Special</th></tr>
-  <tr><td>Demon Spider</td><td>20</td><td>5</td><td>10</td><td>Fire resistant, poisonous</td></tr>
-  <tr><td>Hellhound</td><td>16</td><td>4</td><td>8</td><td>Fire resistant, fast, packs</td></tr>
-  <tr><td>Infernal Creeper</td><td>20</td><td>— (explosion)</td><td>10</td><td>Fire resistant, larger explosion</td></tr>
-  <tr><td>Red Blaze</td><td>40</td><td>6</td><td>20</td><td><strong>6 fireballs at once!</strong></td></tr>
-  <tr><td>Fire Elemental</td><td>50</td><td>8</td><td>25</td><td><strong>3% instant kill on burning players!</strong> Water/snowballs/harming potions work</td></tr>
-  <tr><td>Great Ghast</td><td>40</td><td>6 (fireball)</td><td>20</td><td>Massive, flying, fire-breathing</td></tr>
-  <tr><td>Zombie Pigman</td><td>20</td><td>5</td><td>8</td><td>Hostile without gold</td></tr>
-  <tr><td>Soul Sprite</td><td>16</td><td>4</td><td>8</td><td>Nether spectral creature</td></tr>
-</table>
+<div id="mob-table-nether"></div>
 <div class="warning-box">🔥 <strong>Fire Elemental:</strong> If you are <strong>on fire</strong> when attacked, it has a <strong>3% chance to instantly kill</strong> you! Fire Resistance potion mandatory. Effective: enchanted items, water, snowballs, Harming potions. NOT effective: fire, silver weapons.</div>
 
 <h3>Ultimate Boss: HIM</h3>
@@ -569,16 +488,7 @@
 
 <h3>Maximum Item Quality by Material</h3>
 <p>Each material can only craft items up to a certain quality tier — rarer materials enable legendary quality items:</p>
-<table class="compare-table">
-  <tr><th>Quality</th><th>Materials</th></tr>
-  <tr style="background:rgba(200,150,255,0.15)"><td><strong>🏆 Legendary</strong></td><td>Mithril, Adamantium</td></tr>
-  <tr style="background:rgba(255,200,100,0.12)"><td><strong>⚒️ Masterwork</strong></td><td>Iron, Ancient Metal, High Carbon Steel</td></tr>
-  <tr style="background:rgba(255,220,0,0.10)"><td><strong>✨ Excellent</strong></td><td>Gold, Diamond</td></tr>
-  <tr style="background:rgba(100,255,100,0.10)"><td><strong>💎 Superior</strong></td><td>Copper, Hardstone, Silver, Emerald, Bronze, Silver-Copper alloy</td></tr>
-  <tr><td><strong>Fine</strong></td><td>Leather, Wood, Flint, Obsidian, Quartz, Bone</td></tr>
-  <tr style="color:#888"><td><strong>Average</strong></td><td>Netherrack, Glass</td></tr>
-  <tr style="color:#a44"><td><strong>Poor</strong></td><td>Rusted Iron</td></tr>
-</table>
+<div id="material-max-quality"></div>
 
 <h3>Furnace Fuel Reference</h3>
 <p>Different fuels burn for different durations and provide different <strong>heat levels</strong> — some ores require higher heat to smelt!</p>
@@ -729,6 +639,8 @@
 </div>
 
 <button class="back-to-top" title="Back to top" aria-label="Back to top">↑</button>
+<script src="data/mobs.js"></script>
+<script src="data/materials.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
