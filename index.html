@@ -412,8 +412,8 @@
   <tr><td><strong>4</strong></td><td>Craftolj <strong>Kova Kést</strong></td><td>Kova szilánk + bot — ezzel törsz fát</td></tr>
   <tr><td><strong>5</strong></td><td>Vágj fát, csinálj <strong>Munkaasztalt</strong></td><td>Haladottabb receptekhez kötelező</td></tr>
   <tr><td><strong>6</strong></td><td>Keress <strong>agyagot</strong> (vízpart)</td><td>Agyagkemence alapanyaga — az első éjszaka előtt kell</td></tr>
-  <tr><td><strong>7</strong></td><td>Keress <strong>bármilyen emelkedőt</strong> — vagy ásás lefelé is jó</td><td>Nem kell igazi domb! Egy enyhe emelkedő, sziklaoldal, sőt lapos kő vagy föld is megfelel. Ha semmi nincs, ásj egyenesen le 2 blokkot, majd 1 blokkos vízszintes alagútat</td></tr>
-  <tr><td><strong>8</strong></td><td>Ásj be/le <strong>2–3 blokkot, csak 1 blokk magasan</strong></td><td>Nyomj <strong>C</strong>-t a kúszáshoz! Nagy mobok nem tudnak követni. Ha lapos talajon vagy: ásj le 1 blokkot, majd vízszintesen tovább — ez is tökéletes menedék</td></tr>
+  <tr><td><strong>7</strong></td><td>Keress domboldalt ahol <strong>föld nyúlik be kő alá</strong> — vagy ásj le lapos talajon</td><td>Keresd: hegyoldalt ahol a föld réteg láthatóan benyúlik a sziklába (már eleve 2-3 blokk mélység). Ha lapos a terep: ásj le 1 blokkot, majd vízszintesen 2-3 blokkot — <strong>Kova Késsel</strong> a föld gyorsan megy!</td></tr>
+  <tr><td><strong>8</strong></td><td>Csinálj <strong>csak 1 blokk magas</strong> alagútat (2-3 blokk mélyen)</td><td>Nyomj <strong>C</strong>-t a kúszáshoz! Nagy mobok nem tudnak követni. <strong>A Kova Kés sokat segít a dirt ásásában</strong> — kézzel lassú, késsel percek alatt megvan</td></tr>
   <tr><td><strong>9</strong></td><td>Craftolj <strong>Kova Csákányt</strong> (ha van rá időd)</td><td>2× kova szilánk + bot — másnap ezzel bányászol <strong>szenet → fáklyák a 2. napon</strong> lesznek</td></tr>
   <tr><td><strong>10</strong></td><td>Zárj be <strong>2 dirt blokkal</strong> napnyugtakor</td><td>Túlélted az első éjszakát — reggel indul a termelés</td></tr>
 </table>
@@ -642,6 +642,10 @@
   <tr><td><code>/load</code></td><td>Szerver processzálási terhelés</td></tr>
   <tr><td><code>/mem</code></td><td>Szerver memória használat</td></tr>
   <tr><td><code>/rendering</code></td><td>Jelenlegi renderelési séma</td></tr>
+  <tr><td><code>/syncpos</code></td><td><strong>Koordináták megjelenítése</strong> — mivel az F3 debug képernyő le van tiltva MITE:BE-ben, ez a parancs az egyetlen módja a koordináták megtekintésének!</td></tr>
+  <tr><td><code>/hunger</code></td><td>Jelenlegi éhségráta megjelenítése + módosítók: eső +25–50%, vízbe merülés +0–100%, alultápláltság +50%</td></tr>
+  <tr><td><code>/version</code></td><td>Jelenlegi játékverzió megjelenítése</td></tr>
+  <tr><td><code>/versions</code></td><td>Kompatibilis verziók listázása (melyik verzió nyitja meg a mentett világot)</td></tr>
   <tr><td><code>/commands</code></td><td>Összes MITE parancs listája</td></tr>
 </table>
 
@@ -2217,8 +2221,8 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
   <tr><td><strong>4</strong></td><td>Craft a <strong>Flint Knife</strong></td><td>Flint Shard + Stick — needed to break wood</td></tr>
   <tr><td><strong>5</strong></td><td>Chop wood, craft a <strong>Workbench</strong></td><td>Required for advanced crafting recipes</td></tr>
   <tr><td><strong>6</strong></td><td>Find <strong>clay</strong> (riverbank)</td><td>Clay Furnace material — needed before the first night</td></tr>
-  <tr><td><strong>7</strong></td><td>Find <strong>any raised ground</strong> — or just dig down</td><td>A proper hill is ideal but NOT required! Any slight rise, rock face, or even flat ground works. No hill nearby? Dig straight down 1 block, then dig 2–3 blocks sideways — that's a valid shelter too</td></tr>
-  <tr><td><strong>8</strong></td><td>Dig <strong>2–3 blocks in, only 1 block tall</strong></td><td>Press <strong>C</strong> to crawl — large mobs can't follow. On flat terrain: dig down 1 block first, then tunnel sideways. The key is <em>only 1 block tall</em> so big mobs can't enter</td></tr>
+  <tr><td><strong>7</strong></td><td>Find a hillside where <strong>dirt visibly dips into stone</strong> — or dig down on flat ground</td><td>Look for: a slope where a dirt layer already extends 2–3 blocks into the hillside (the natural "nook" is already there). On flat terrain: dig down 1 block, then sideways 2–3 blocks. Use your <strong>Flint Knife</strong> — hand-digging dirt is slow, knife is fast!</td></tr>
+  <tr><td><strong>8</strong></td><td>Make a tunnel <strong>only 1 block tall</strong> (2–3 blocks deep)</td><td>Press <strong>C</strong> to crawl in — large mobs physically cannot follow. The Flint Knife breaks dirt quickly; for stone you need a pickaxe — <strong>stick to dirt if you're short on time</strong></td></tr>
   <tr><td><strong>9</strong></td><td>Craft a <strong>Flint Pickaxe</strong> (if time allows)</td><td>2× Flint Shard + Stick — tomorrow you mine <strong>coal → torches come on day 2</strong>, not day 1</td></tr>
   <tr><td><strong>10</strong></td><td>Seal entrance with <strong>2 dirt blocks</strong> at sunset</td><td>You survived the first night — production starts tomorrow</td></tr>
 </table>
@@ -2447,6 +2451,10 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
   <tr><td><code>/load</code></td><td>Server processing load</td></tr>
   <tr><td><code>/mem</code></td><td>Server memory usage</td></tr>
   <tr><td><code>/rendering</code></td><td>Current rendering scheme</td></tr>
+  <tr><td><code>/syncpos</code></td><td><strong>Display coordinates</strong> — since the F3 debug screen is disabled in MITE:BE, this is the only way to see your coordinates!</td></tr>
+  <tr><td><code>/hunger</code></td><td>Show current hunger rate and modifiers: rain +25–50%, water immersion +0–100%, malnutrition +50%</td></tr>
+  <tr><td><code>/version</code></td><td>Show the current game version</td></tr>
+  <tr><td><code>/versions</code></td><td>List compatible versions (which versions can open the current save)</td></tr>
   <tr><td><code>/commands</code></td><td>List of all MITE commands</td></tr>
 </table>
 
