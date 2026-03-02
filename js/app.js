@@ -2,6 +2,7 @@
 
 // ── Language Switcher ──
 function setLang(lang) {
+  document.documentElement.setAttribute('data-lang-init', lang);
   document.querySelectorAll('[data-lang]').forEach(el => {
     el.classList.toggle('active', el.getAttribute('data-lang') === lang);
   });
