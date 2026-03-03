@@ -8,9 +8,10 @@ The first public wiki for **MITE: Break Everything** — a hardcore total-conver
 
 ## Download & Install
 
-> **[⬇ Download MITE:BE v0.9.0 hf3](https://www.mcmod.cn/class/3751.html)** — Official mod page (mcmod.cn)
-
-On the page, find **v0.9.0 hf3** and click the green **下载 / Download** button.
+| | Link | Megjegyzés |
+|---|---|---|
+| 🌍 **Nyugati tükör** | [Archive.org — MITE:BE v0.9.0 hf3](ARCHIVE_ORG_LINK) | Közvetlen ZIP, regisztráció nélkül |
+| 🇨🇳 **Hivatalos forrás** | [mcmod.cn/class/3751.html](https://www.mcmod.cn/class/3751.html) | Baidu Pan szükséges |
 
 **Requirements:** Java 8 + [PrismLauncher](https://prismlauncher.org)
 **How to install:** Import the downloaded ZIP directly in PrismLauncher → [Full guide](https://tornadogamesnow.github.io/mite-be-wiki/install.html)
