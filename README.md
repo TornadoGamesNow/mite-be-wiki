@@ -74,4 +74,5 @@ Found an error or missing info? [Open an Issue](https://github.com/TornadoGamesN
 ## License
 
 Wiki content © 2026 TornadoGamesNow — licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
-MITE: Break Everything and all game assets belong to their respective owners.
+
+> **Disclaimer:** This is an unofficial, community-driven wiki. MITE:BE and all related game assets, textures, and trademarks belong to their respective original creators.
