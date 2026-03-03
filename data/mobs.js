@@ -24,7 +24,9 @@
       { name: { hu: "Boszorkány (Witch)", en: "Witch" }, hp: 26, dmg: { hu: "bájital", en: "potion" }, xp: 10,
         special: { hu: "Mérgező bájitalokat dob", en: "Throws poison potions" } },
       { name: { hu: "Síkság/Havas/Dzsungel változatok", en: "Plains/Snowy/Jungle variants" }, hp: 20, dmg: { hu: "3–5", en: "3–5" }, xp: "5–8",
-        special: { hu: "Biome-specifikus, erősebb variánsok", en: "Biome-specific, stronger variants" } }
+        special: { hu: "Biome-specifikus, erősebb variánsok", en: "Biome-specific, stronger variants" } },
+      { name: { hu: "Zombi Hívó (Zombie Caller)", en: "Zombie Caller" }, hp: "?", dmg: { hu: "3", en: "3" }, xp: "?",
+        special: { hu: "Zombi segítséget hív — <abbr class=\"src-cl\" title=\"Forrás: MITE.lang fájl\">📜 lang</abbr>", en: "Calls zombie reinforcements — <abbr class=\"src-cl\" title=\"Source: MITE.lang file\">📜 lang</abbr>" } }
     ],
     underground: [
       { name: { hu: "Sírkamra Szellem (Ghoul)", en: "Ghoul" }, hp: 20, dmg: { hu: "4", en: "4" }, xp: 10,

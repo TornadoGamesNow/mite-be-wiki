@@ -240,6 +240,9 @@ html:not([data-lang-init]) span[data-lang="hu"]{display:inline;}
 ul,ol{margin:8px 0 8px 25px;}li{margin:3px 0;}
 .alloy-row td:first-child{color:var(--gold);font-weight:700;}
 
+/* ===== CHANGELOG SOURCE BADGE ===== */
+.src-cl{display:inline-block;padding:1px 6px;border-radius:3px;font-size:.68em;font-weight:700;background:rgba(255,200,50,.10);color:#c8a030;border:1px solid rgba(255,200,50,.22);cursor:help;vertical-align:middle;margin-left:5px;letter-spacing:.3px;text-decoration:none;}
+
 /* ===== RESPONSIVE ===== */
 @media(max-width:900px){
   .container{flex-direction:column;}
