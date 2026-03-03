@@ -8,10 +8,12 @@ The first public wiki for **MITE: Break Everything** — a hardcore total-conver
 
 ## Download & Install
 
-> **[⬇ Download MITE:BE v0.9.0 hf3](https://github.com/TornadoGamesNow/mite-be-wiki/releases/download/v0.9.0-hf3/MiTE-BE_v0.9.0_hf3.zip)** — Complete PrismLauncher instance (~336 MB)
+> **[⬇ Download MITE:BE v0.9.0 hf3](https://www.mcmod.cn/class/3751.html)** — Official mod page (mcmod.cn)
+
+On the page, find **v0.9.0 hf3** and click the green **下载 / Download** button.
 
 **Requirements:** Java 8 + [PrismLauncher](https://prismlauncher.org)
-**How to install:** Import the ZIP directly in PrismLauncher → [Full guide](https://tornadogamesnow.github.io/mite-be-wiki/install.html)
+**How to install:** Import the downloaded ZIP directly in PrismLauncher → [Full guide](https://tornadogamesnow.github.io/mite-be-wiki/install.html)
 
 ---
 
