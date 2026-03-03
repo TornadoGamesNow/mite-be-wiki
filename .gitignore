@@ -1,0 +1,6 @@
+# Lang reference files (local use only, not part of the wiki)
+assets/
+
+# OS
+.DS_Store
+Thumbs.db
