@@ -10,7 +10,7 @@ The first public wiki for **MITE: Break Everything** — a hardcore total-conver
 
 | | Link | Megjegyzés |
 |---|---|---|
-| 🌍 **Nyugati tükör** | [Archive.org — MITE:BE v0.9.0 hf3](ARCHIVE_ORG_LINK) | Közvetlen ZIP, regisztráció nélkül |
+| 🌍 **Nyugati tükör** | [Archive.org — MITE:BE v0.9.0 hf3](https://archive.org/download/mi-te-be-v-0.9.0-hf-3/MiTE-BE_v0.9.0_hf3.zip) | Közvetlen ZIP, regisztráció nélkül |
 | 🇨🇳 **Hivatalos forrás** | [mcmod.cn/class/3751.html](https://www.mcmod.cn/class/3751.html) | Baidu Pan szükséges |
 
 **Requirements:** Java 8 + [PrismLauncher](https://prismlauncher.org)
