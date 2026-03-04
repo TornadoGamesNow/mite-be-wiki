@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import TopNav from '../components/TopNav.astro';
 import Sidebar from '../components/Sidebar.astro';
 import '../styles/global.css';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const sidebarGroups = {
   hu: [
@@ -709,6 +710,6 @@ const sidebarGroups = {
   </div>
 </BaseLayout>
 
-<script is:inline src="data/mobs.js"></script>
-<script is:inline src="data/materials.js"></script>
-<script is:inline src="js/app.js"></script>
+<script is:inline src={`${base}/data/mobs.js`}></script>
+<script is:inline src={`${base}/data/materials.js`}></script>
+<script is:inline src={`${base}/js/app.js`}></script>
