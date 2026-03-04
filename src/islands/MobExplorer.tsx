@@ -221,96 +221,103 @@ export default function MobExplorer() {
 
   return (
     <div style={{ position: 'relative' }}>
-      {/* Filter bar */}
-      <div style={{ marginBottom: 12 }}>
-        {/* Difficulty row */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap', marginBottom: 6 }}>
-          <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
-            letterSpacing: '.6px', minWidth: 64 }}>
-            {lang === 'hu' ? 'Nehézség' : 'Difficulty'}
-          </span>
-          {(['', 'early', 'mid', 'late', 'boss'] as const).map(d => {
-            const count = d ? allMobs.filter(m => m.difficulty === d).length : allMobs.length;
-            return (
-              <button key={d} onClick={() => setDiffFilter(d)} style={diffBtnStyle(d)}>
-                {d ? `${diffMeta[d].badge} ${diffMeta[d].label}` : (lang === 'hu' ? 'Mind' : 'All')}
-                <span style={{ opacity: .55, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>
-                  ({count})
-                </span>
-              </button>
-            );
-          })}
-        </div>
-        {/* Region row */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap' }}>
-          <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
-            letterSpacing: '.6px', minWidth: 64 }}>
-            {lang === 'hu' ? 'Régió' : 'Region'}
-          </span>
-          {(['', 'surface', 'underground', 'nether'] as const).map(z => {
-            const count = z ? allMobs.filter(m => m.spawnZones.includes(z)).length : allMobs.length;
-            return (
-              <button key={z} onClick={() => setZoneFilter(z)} style={zoneBtnStyle(z)}>
-                {z ? `${zoneIcon[z]} ${zoneLabel(z)}` : (lang === 'hu' ? 'Mind' : 'All')}
-                <span style={{ opacity: .55, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>
-                  ({count})
-                </span>
-              </button>
-            );
-          })}
-        </div>
-      </div>
+      {/* Filter bar + search egy sorban */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start',
+        gap: 16, marginBottom: 10, flexWrap: 'wrap' }}>
 
-      {/* Search + active filter chips */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 10 }}>
-        <div style={{ position: 'relative', display: 'inline-block' }}>
-          <input
-            type="search"
-            placeholder={lang === 'hu' ? 'Szörny keresése…' : 'Search mobs…'}
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-            style={{ padding: '6px 32px 6px 12px', borderRadius: 6, border: '1px solid var(--surface2)',
-                     background: 'var(--surface)', color: 'var(--text)', width: 240 }}
-          />
-          {search && (
-            <button onClick={() => setSearch('')}
-              style={{ position: 'absolute', right: 8, top: '50%', transform: 'translateY(-50%)',
-                       background: 'none', border: 'none', color: 'var(--text2)', cursor: 'pointer',
-                       fontSize: '1em', padding: '2px 4px', lineHeight: 1 }}>
-              ×
-            </button>
+        {/* Bal: filterek */}
+        <div style={{ flex: 1, minWidth: 0 }}>
+          {/* Difficulty row */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap', marginBottom: 6 }}>
+            <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
+              letterSpacing: '.6px', minWidth: 64 }}>
+              {lang === 'hu' ? 'Nehézség' : 'Difficulty'}
+            </span>
+            {(['', 'early', 'mid', 'late', 'boss'] as const).map(d => {
+              const count = d ? allMobs.filter(m => m.difficulty === d).length : allMobs.length;
+              return (
+                <button key={d} onClick={() => setDiffFilter(d)} style={diffBtnStyle(d)}>
+                  {d ? `${diffMeta[d].badge} ${diffMeta[d].label}` : (lang === 'hu' ? 'Mind' : 'All')}
+                  <span style={{ opacity: .55, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>
+                    ({count})
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+          {/* Region row */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap' }}>
+            <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
+              letterSpacing: '.6px', minWidth: 64 }}>
+              {lang === 'hu' ? 'Régió' : 'Region'}
+            </span>
+            {(['', 'surface', 'underground', 'nether'] as const).map(z => {
+              const count = z ? allMobs.filter(m => m.spawnZones.includes(z)).length : allMobs.length;
+              return (
+                <button key={z} onClick={() => setZoneFilter(z)} style={zoneBtnStyle(z)}>
+                  {z ? `${zoneIcon[z]} ${zoneLabel(z)}` : (lang === 'hu' ? 'Mind' : 'All')}
+                  <span style={{ opacity: .55, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>
+                    ({count})
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Jobb: search + active chips */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 6, flexShrink: 0 }}>
+          <div style={{ position: 'relative' }}>
+            <input
+              type="search"
+              placeholder={lang === 'hu' ? 'Szörny keresése…' : 'Search mobs…'}
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              style={{ padding: '6px 32px 6px 12px', borderRadius: 6, border: '1px solid var(--surface2)',
+                       background: 'var(--surface)', color: 'var(--text)', width: 220 }}
+            />
+            {search && (
+              <button onClick={() => setSearch('')}
+                style={{ position: 'absolute', right: 8, top: '50%', transform: 'translateY(-50%)',
+                         background: 'none', border: 'none', color: 'var(--text2)', cursor: 'pointer',
+                         fontSize: '1em', padding: '2px 4px', lineHeight: 1 }}>×</button>
+            )}
+          </div>
+          {/* Active filter chips */}
+          {(diffFilter || zoneFilter) && (
+            <div style={{ display: 'flex', gap: 6, alignItems: 'center', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
+              {diffFilter && (
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '2px 8px',
+                  borderRadius: 20, fontSize: '.72em', fontWeight: 600,
+                  background: diffMeta[diffFilter].bg, color: diffMeta[diffFilter].color,
+                  border: `1px solid ${diffMeta[diffFilter].border}` }}>
+                  {diffMeta[diffFilter].badge} {diffMeta[diffFilter].label}
+                  <button onClick={() => setDiffFilter('')}
+                    style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer',
+                      padding: 0, lineHeight: 1, marginLeft: 2, opacity: .7 }}>×</button>
+                </span>
+              )}
+              {zoneFilter && (
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '2px 8px',
+                  borderRadius: 20, fontSize: '.72em', fontWeight: 600,
+                  background: 'rgba(126,200,227,.15)', color: 'var(--mithril)',
+                  border: '1px solid rgba(126,200,227,.35)' }}>
+                  {zoneIcon[zoneFilter]} {zoneLabel(zoneFilter)}
+                  <button onClick={() => setZoneFilter('')}
+                    style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer',
+                      padding: 0, lineHeight: 1, marginLeft: 2, opacity: .7 }}>×</button>
+                </span>
+              )}
+              {isFiltered && (
+                <button onClick={() => { setDiffFilter(''); setZoneFilter(''); setSearch(''); }}
+                  style={{ fontSize: '.7em', color: 'var(--text2)', background: 'none', border: 'none',
+                    cursor: 'pointer', padding: '2px 4px', textDecoration: 'underline' }}>
+                  {lang === 'hu' ? 'Törlés' : 'Clear all'}
+                </button>
+              )}
+            </div>
           )}
         </div>
-        {/* Active filter chips */}
-        {diffFilter && (
-          <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '3px 8px',
-            borderRadius: 20, fontSize: '.75em', fontWeight: 600,
-            background: diffMeta[diffFilter].bg, color: diffMeta[diffFilter].color,
-            border: `1px solid ${diffMeta[diffFilter].border}` }}>
-            {diffMeta[diffFilter].badge} {diffMeta[diffFilter].label}
-            <button onClick={() => setDiffFilter('')}
-              style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer',
-                padding: 0, lineHeight: 1, marginLeft: 2, opacity: .7 }}>×</button>
-          </span>
-        )}
-        {zoneFilter && (
-          <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '3px 8px',
-            borderRadius: 20, fontSize: '.75em', fontWeight: 600,
-            background: 'rgba(126,200,227,.15)', color: 'var(--mithril)',
-            border: '1px solid rgba(126,200,227,.35)' }}>
-            {zoneIcon[zoneFilter]} {zoneLabel(zoneFilter)}
-            <button onClick={() => setZoneFilter('')}
-              style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer',
-                padding: 0, lineHeight: 1, marginLeft: 2, opacity: .7 }}>×</button>
-          </span>
-        )}
-        {isFiltered && (
-          <button onClick={() => { setDiffFilter(''); setZoneFilter(''); setSearch(''); }}
-            style={{ fontSize: '.72em', color: 'var(--text2)', background: 'none', border: 'none',
-              cursor: 'pointer', padding: '3px 6px', textDecoration: 'underline' }}>
-            {lang === 'hu' ? 'Törlés' : 'Clear all'}
-          </button>
-        )}
       </div>
 
       {/* Count */}
@@ -329,8 +336,8 @@ export default function MobExplorer() {
           <col style={{ width: '22%' }} />
           <col style={{ width: '15%' }} />
         </colgroup>
-        <thead style={{ position: 'sticky', top: 0, background: 'var(--bg)', zIndex: 1 }}>
-          <tr>
+        <thead style={{ position: 'sticky', top: 0, zIndex: 1 }}>
+          <tr style={{ background: 'var(--surface)', borderBottom: '2px solid var(--surface2)' }}>
             <SortTh k="name" label={lang === 'hu' ? 'Név' : 'Name'} />
             <SortTh k="hp" label="HP" />
             <SortTh k="dmg" label={lang === 'hu' ? '⚔ Sebzés' : '⚔ Damage'} />
