@@ -1,6 +1,12 @@
 import { useState, useEffect } from 'react';
 import mobsData from '../../data/mobs.json';
 
+interface Drop {
+  item: { hu: string; en: string };
+  qty?: string;
+  chance: 'always' | 'common' | 'uncommon' | 'rare' | 'looting';
+}
+
 interface Mob {
   id: string;
   name: { hu: string; en: string };
@@ -13,6 +19,7 @@ interface Mob {
   difficulty: 'early' | 'mid' | 'late' | 'boss';
   tags: string[];
   special?: { hu: string; en: string };
+  drops?: Drop[];
 }
 
 const allMobs: Mob[] = mobsData as Mob[];
@@ -22,6 +29,22 @@ const diffMeta = {
   mid:   { label: 'Mid',   badge: 'II', cls: 'diff-mid'   },
   late:  { label: 'Late',  badge: 'III',cls: 'diff-late'  },
   boss:  { label: 'Boss',  badge: '★', cls: 'diff-boss'  },
+};
+
+const chanceColor: Record<string, string> = {
+  always: 'var(--green)',
+  common: 'var(--text)',
+  uncommon: 'var(--gold)',
+  rare: '#b388ff',
+  looting: '#64b5f6',
+};
+
+const chanceLabel: Record<string, { hu: string; en: string }> = {
+  always:   { hu: 'Mindig',       en: 'Always'   },
+  common:   { hu: 'Gyakori',      en: 'Common'   },
+  uncommon: { hu: 'Ritka',        en: 'Uncommon' },
+  rare:     { hu: 'Nagyon ritka', en: 'Rare'     },
+  looting:  { hu: 'Looting',      en: 'Looting'  },
 };
 
 const dmgTypeIcon: Record<string, string> = {
@@ -374,6 +397,33 @@ export default function MobExplorer({ lang: initialLang = 'hu' }: { lang?: strin
                         </div>
                       );
                     })}
+                </div>
+              </div>
+            )}
+
+            {/* Drops */}
+            {selectedMob.drops && selectedMob.drops.length > 0 && (
+              <div style={{ marginTop: 12 }}>
+                <div style={{ fontSize: '.7em', textTransform: 'uppercase', letterSpacing: '.6px',
+                  color: 'var(--text2)', marginBottom: 6 }}>
+                  {lang === 'hu' ? 'Dropok' : 'Drops'}
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                  {selectedMob.drops.map((drop, i) => (
+                    <div key={i} style={{ display: 'flex', justifyContent: 'space-between',
+                      alignItems: 'center', fontSize: '.83em',
+                      padding: '4px 8px', background: 'var(--surface)',
+                      border: '1px solid var(--surface2)', borderRadius: 4 }}>
+                      <span style={{ color: 'var(--text)' }}>
+                        {drop.item[lang as 'hu' | 'en']}
+                        {drop.qty && <span style={{ color: 'var(--text2)', marginLeft: 4 }}>×{drop.qty}</span>}
+                      </span>
+                      <span style={{ fontSize: '.8em', color: chanceColor[drop.chance] ?? 'var(--text2)',
+                        fontWeight: 600 }}>
+                        {chanceLabel[drop.chance]?.[lang as 'hu' | 'en'] ?? drop.chance}
+                      </span>
+                    </div>
+                  ))}
                 </div>
               </div>
             )}

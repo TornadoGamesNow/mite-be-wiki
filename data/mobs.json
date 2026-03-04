@@ -22,7 +22,25 @@
     "special": {
       "hu": "Falon átérzékelés, csákányos változat bármit kibányászik",
       "en": "Wall detection, pickaxe variant mines any block"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Rothadó hús",
+          "en": "Rotten Flesh"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Vas lapát (ritka)",
+          "en": "Iron Shovel (rare)"
+        },
+        "qty": "1",
+        "chance": "rare"
+      }
+    ]
   },
   {
     "id": "skeleton",
@@ -44,7 +62,25 @@
     "special": {
       "hu": "Távolsági támadó",
       "en": "Ranged attacker"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Csont",
+          "en": "Bone"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Nyíl",
+          "en": "Arrow"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "creeper",
@@ -67,7 +103,25 @@
     "special": {
       "hu": "Robbanás figyelmeztetés nélkül",
       "en": "Explodes without warning"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Puskapor",
+          "en": "Gunpowder"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Lemez (ritka)",
+          "en": "Music Disc (rare)"
+        },
+        "qty": "1",
+        "chance": "rare"
+      }
+    ]
   },
   {
     "id": "spider",
@@ -90,7 +144,25 @@
     "special": {
       "hu": "Falon mászás, éjjel agresszív",
       "en": "Wall climbing, aggressive at night"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Szál",
+          "en": "String"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Pókszem",
+          "en": "Spider Eye"
+        },
+        "qty": "0-1",
+        "chance": "uncommon"
+      }
+    ]
   },
   {
     "id": "wood_spider",
@@ -114,7 +186,8 @@
     "special": {
       "hu": "Fák között él, mérgező",
       "en": "Lives in trees, poisonous"
-    }
+    },
+    "drops": []
   },
   {
     "id": "vampire_bat",
@@ -139,7 +212,8 @@
     "special": {
       "hu": "Életlopás",
       "en": "Life steal"
-    }
+    },
+    "drops": []
   },
   {
     "id": "ghoul",
@@ -162,7 +236,8 @@
     "special": {
       "hu": "Lassítás hatás",
       "en": "Slowness effect"
-    }
+    },
+    "drops": []
   },
   {
     "id": "hell_hound",
@@ -186,7 +261,8 @@
     "special": {
       "hu": "Tűzálló, gyors, falkában",
       "en": "Fire resistant, fast, in packs"
-    }
+    },
+    "drops": []
   },
   {
     "id": "demon_spider",
@@ -210,7 +286,8 @@
     "special": {
       "hu": "Tűzálló, mérgező",
       "en": "Fire resistant, poisonous"
-    }
+    },
+    "drops": []
   },
   {
     "id": "zombie_pigman",
@@ -234,7 +311,25 @@
     "special": {
       "hu": "Arany nélkül agresszív",
       "en": "Aggressive without gold"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Rothadó hús",
+          "en": "Rotten Flesh"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Arany nugget",
+          "en": "Gold Nugget"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "soul_spirit",
@@ -258,7 +353,8 @@
     "special": {
       "hu": "Nether szellemi lény",
       "en": "Nether spirit creature"
-    }
+    },
+    "drops": []
   },
   {
     "id": "zombie_caller",
@@ -282,7 +378,33 @@
     "special": {
       "hu": "Zombi segítséget hív",
       "en": "Calls zombie reinforcements"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Rothadó hús",
+          "en": "Rotten Flesh"
+        },
+        "qty": "1-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Vas lapát",
+          "en": "Iron Ingot"
+        },
+        "qty": "1-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Smaragd",
+          "en": "Emerald"
+        },
+        "qty": "1",
+        "chance": "rare"
+      }
+    ]
   },
   {
     "id": "dire_wolf",
@@ -305,7 +427,25 @@
     "special": {
       "hu": "Erős farkas, falkában veszélyes",
       "en": "Strong wolf, dangerous in packs"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers farkas hús",
+          "en": "Raw Wolf Meat"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Bőr",
+          "en": "Leather"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "wight",
@@ -328,7 +468,8 @@
     "special": {
       "hu": "Lassítás + éheztetés",
       "en": "Slowness + hunger"
-    }
+    },
+    "drops": []
   },
   {
     "id": "wight_guard",
@@ -351,7 +492,8 @@
     "special": {
       "hu": "Páncélos változat",
       "en": "Armored variant"
-    }
+    },
+    "drops": []
   },
   {
     "id": "black_widow_spider",
@@ -374,7 +516,8 @@
     "special": {
       "hu": "Erős mérgezés",
       "en": "Strong poison"
-    }
+    },
+    "drops": []
   },
   {
     "id": "witch",
@@ -397,7 +540,33 @@
     "special": {
       "hu": "Mérgező bájitalokat dob",
       "en": "Throws poison potions"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Varázsbájital",
+          "en": "Splash Potion"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Kristály üveg",
+          "en": "Glass Bottle"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Cukor",
+          "en": "Sugar"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "pillager",
@@ -418,7 +587,8 @@
     "special": {
       "hu": "Rabló csapat, jutalomládát ejt",
       "en": "Raider group, drops reward chest"
-    }
+    },
+    "drops": []
   },
   {
     "id": "nether_creeper",
@@ -442,7 +612,17 @@
     "special": {
       "hu": "Tűzálló, nagyobb robbanás",
       "en": "Fire resistant, bigger explosion"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Puskapor",
+          "en": "Gunpowder"
+        },
+        "qty": "0-4",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "red_blaze",
@@ -467,7 +647,8 @@
     "special": {
       "hu": "6 tűzgolyó egyszerre!",
       "en": "6 fireballs at once!"
-    }
+    },
+    "drops": []
   },
   {
     "id": "earth_elemental",
@@ -490,7 +671,8 @@
     "special": {
       "hu": "4 páncél, csak csákánnyal sebezhető",
       "en": "4 armor, only damaged by pickaxe"
-    }
+    },
+    "drops": []
   },
   {
     "id": "giant_vampire_bat",
@@ -515,7 +697,8 @@
     "special": {
       "hu": "Életlopás + nagy sebzés",
       "en": "Life steal + high damage"
-    }
+    },
+    "drops": []
   },
   {
     "id": "invisible_stalker",
@@ -539,7 +722,8 @@
     "special": {
       "hu": "Láthatatlan! Ezüst/Mithril+ fegyver kell",
       "en": "Invisible! Requires Silver/Mithril+ weapon"
-    }
+    },
+    "drops": []
   },
   {
     "id": "phase_spider",
@@ -563,7 +747,8 @@
     "special": {
       "hu": "Falon átmegy! Csak Ősi Fém kard sebzi",
       "en": "Phases through walls! Only Ancient Metal sword damages it"
-    }
+    },
+    "drops": []
   },
   {
     "id": "fire_elemental",
@@ -587,7 +772,8 @@
     "special": {
       "hu": "3% instant kill égő játékoson! Víz/hógolyó/sebzés bájital hat rá",
       "en": "3% instant kill if you're on fire! Effective: water/snowballs/Harming potion"
-    }
+    },
+    "drops": []
   },
   {
     "id": "greater_ghast",
@@ -611,7 +797,8 @@
     "special": {
       "hu": "Óriási, repülő, tűzokádó",
       "en": "Enormous, flying, fire-breathing"
-    }
+    },
+    "drops": []
   },
   {
     "id": "pillager_captain",
@@ -634,7 +821,41 @@
     "special": {
       "hu": "Erősebb páncélos vezér",
       "en": "Stronger armored leader"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Elemi Obszidián",
+          "en": "Elemental Obsidian"
+        },
+        "qty": "12",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Smaragd",
+          "en": "Emerald"
+        },
+        "qty": "3-6",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Íjász puska",
+          "en": "Crossbow"
+        },
+        "qty": "1",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Fosztogató zászló",
+          "en": "Pillager Banner"
+        },
+        "qty": "1",
+        "chance": "always"
+      }
+    ]
   },
   {
     "id": "zealot",
@@ -657,7 +878,8 @@
     "special": {
       "hu": "Extrém sebzés! Vas fejszével támad",
       "en": "Extreme damage! Attacks with iron axe"
-    }
+    },
+    "drops": []
   },
   {
     "id": "zealot_plains",
@@ -680,7 +902,8 @@
     "special": {
       "hu": "Biome-specifikus, erősebb variáns",
       "en": "Biome-specific, stronger variant"
-    }
+    },
+    "drops": []
   },
   {
     "id": "zealot_snowy",
@@ -703,7 +926,8 @@
     "special": {
       "hu": "Biome-specifikus, erősebb variáns",
       "en": "Biome-specific, stronger variant"
-    }
+    },
+    "drops": []
   },
   {
     "id": "zealot_jungle",
@@ -726,7 +950,8 @@
     "special": {
       "hu": "Biome-specifikus, erősebb variáns",
       "en": "Biome-specific, stronger variant"
-    }
+    },
+    "drops": []
   },
   {
     "id": "bone_lord",
@@ -749,7 +974,17 @@
     "special": {
       "hu": "Boss — csontváz idézés",
       "en": "Boss — summons skeletons"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Csont",
+          "en": "Bone"
+        },
+        "qty": "2-4",
+        "chance": "always"
+      }
+    ]
   },
   {
     "id": "ancient_bone_lord",
@@ -773,7 +1008,17 @@
     "special": {
       "hu": "Erősebb boss változat",
       "en": "Stronger boss variant"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Csont",
+          "en": "Bone"
+        },
+        "qty": "3-6",
+        "chance": "always"
+      }
+    ]
   },
   {
     "id": "white_ghoul",
@@ -794,7 +1039,8 @@
     "special": {
       "hu": "Ghoul variáns, fehér megjelenés",
       "en": "Ghoul variant, white appearance"
-    }
+    },
+    "drops": []
   },
   {
     "id": "black_ghoul",
@@ -815,7 +1061,8 @@
     "special": {
       "hu": "Ghoul variáns, fekete megjelenés",
       "en": "Ghoul variant, black appearance"
-    }
+    },
+    "drops": []
   },
   {
     "id": "shadow",
@@ -838,7 +1085,8 @@
     "special": {
       "hu": "Félig láthatatlan árnyék lény",
       "en": "Semi-invisible shadow creature"
-    }
+    },
+    "drops": []
   },
   {
     "id": "revenant",
@@ -861,7 +1109,8 @@
     "special": {
       "hu": "Ezüst fegyver szükséges a sebzéshez",
       "en": "Requires silver weapon to damage"
-    }
+    },
+    "drops": []
   },
   {
     "id": "brown_slime",
@@ -882,7 +1131,17 @@
     "special": {
       "hu": "Barna nyálka változat",
       "en": "Brown slime variant"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Barna nyálkagömb",
+          "en": "Brown Slime Ball"
+        },
+        "qty": "1",
+        "chance": "always"
+      }
+    ]
   },
   {
     "id": "red_slime",
@@ -905,7 +1164,17 @@
     "special": {
       "hu": "Mérgező, vörös nyálka változat",
       "en": "Poisonous red slime variant"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Piros nyálkagömb",
+          "en": "Red Slime Ball"
+        },
+        "qty": "1",
+        "chance": "always"
+      }
+    ]
   },
   {
     "id": "grey_slime",
@@ -926,7 +1195,17 @@
     "special": {
       "hu": "Szürke nyálka változat",
       "en": "Grey slime variant"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Szürke nyálkagömb",
+          "en": "Grey Slime Ball"
+        },
+        "qty": "1",
+        "chance": "always"
+      }
+    ]
   },
   {
     "id": "black_slime",
@@ -949,7 +1228,17 @@
     "special": {
       "hu": "Életlopó fekete nyálka változat",
       "en": "Life-stealing black slime variant"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Fekete nyálkagömb",
+          "en": "Black Slime Ball"
+        },
+        "qty": "1",
+        "chance": "always"
+      }
+    ]
   },
   {
     "id": "shadow_bat",
@@ -973,7 +1262,8 @@
     "special": {
       "hu": "Repülő, félig láthatatlan denevér",
       "en": "Flying, semi-invisible bat"
-    }
+    },
+    "drops": []
   },
   {
     "id": "explosive_silverfish",
@@ -997,7 +1287,8 @@
     "special": {
       "hu": "Robban halál esetén",
       "en": "Explodes on death"
-    }
+    },
+    "drops": []
   },
   {
     "id": "copper_poison_silverfish",
@@ -1021,7 +1312,8 @@
     "special": {
       "hu": "Mérgező harapás, réz jellegű",
       "en": "Poisonous bite, copper-type"
-    }
+    },
+    "drops": []
   },
   {
     "id": "ancient_silverfish",
@@ -1045,7 +1337,8 @@
     "special": {
       "hu": "Csak Ősi Fém fegyverrel sebezhető",
       "en": "Only damaged by Ancient Metal weapons"
-    }
+    },
+    "drops": []
   },
   {
     "id": "clay_golem",
@@ -1066,7 +1359,8 @@
     "special": {
       "hu": "Agyagból készült gólem",
       "en": "Clay-made golem"
-    }
+    },
+    "drops": []
   },
   {
     "id": "skeleton_lord",
@@ -1089,7 +1383,8 @@
     "special": {
       "hu": "Boss — csontváz idézés, erős közelharc",
       "en": "Boss — summons skeletons, strong melee"
-    }
+    },
+    "drops": []
   },
   {
     "id": "ancient_skeleton_lord",
@@ -1113,7 +1408,8 @@
     "special": {
       "hu": "Erősebb boss változat",
       "en": "Stronger boss variant"
-    }
+    },
+    "drops": []
   },
   {
     "id": "variant_skeleton_lord",
@@ -1137,7 +1433,8 @@
     "special": {
       "hu": "Ritka mutáns variáns boss",
       "en": "Rare mutant variant boss"
-    }
+    },
+    "drops": []
   },
   {
     "id": "obsidian_golem",
@@ -1160,7 +1457,17 @@
     "special": {
       "hu": "Tűzálló, rendkívül kemény boss",
       "en": "Fire immune, extremely tough boss"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Obszidián",
+          "en": "Obsidian"
+        },
+        "qty": "2-4",
+        "chance": "always"
+      }
+    ]
   },
   {
     "id": "plains_zombie",
@@ -1183,7 +1490,17 @@
     "special": {
       "hu": "Síkság biome-specifikus zombi variáns",
       "en": "Plains biome-specific zombie variant"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Rothadó hús",
+          "en": "Rotten Flesh"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "plains_skeleton",
@@ -1204,7 +1521,25 @@
     "special": {
       "hu": "Síkság biome-specifikus csontváz variáns",
       "en": "Plains biome-specific skeleton variant"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Csont",
+          "en": "Bone"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Nyíl",
+          "en": "Arrow"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "plains_creeper",
@@ -1227,7 +1562,17 @@
     "special": {
       "hu": "Síkság biome-specifikus creeper variáns",
       "en": "Plains biome-specific creeper variant"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Puskapor",
+          "en": "Gunpowder"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "plains_spider",
@@ -1250,7 +1595,25 @@
     "special": {
       "hu": "Síkság biome-specifikus pók variáns",
       "en": "Plains biome-specific spider variant"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Szál",
+          "en": "String"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Pókszem",
+          "en": "Spider Eye"
+        },
+        "qty": "0-1",
+        "chance": "uncommon"
+      }
+    ]
   },
   {
     "id": "snowy_zombie",
@@ -1273,7 +1636,25 @@
     "special": {
       "hu": "Havas biome-specifikus zombi variáns",
       "en": "Snowy biome-specific zombie variant"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Rothadó hús",
+          "en": "Rotten Flesh"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Hógolyó",
+          "en": "Snowball"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "snowy_skeleton",
@@ -1294,7 +1675,25 @@
     "special": {
       "hu": "Havas biome-specifikus csontváz variáns",
       "en": "Snowy biome-specific skeleton variant"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Csont",
+          "en": "Bone"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Hógolyó",
+          "en": "Snowball"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "snowy_creeper",
@@ -1317,7 +1716,25 @@
     "special": {
       "hu": "Havas biome-specifikus creeper, erősebb robbanás",
       "en": "Snowy biome-specific creeper, stronger explosion"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Puskapor",
+          "en": "Gunpowder"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Hógolyó",
+          "en": "Snowball"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "snowy_spider",
@@ -1341,7 +1758,25 @@
     "special": {
       "hu": "Havas biome-specifikus pók, mérgező",
       "en": "Snowy biome-specific spider, poisonous"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Szál",
+          "en": "String"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Hógolyó",
+          "en": "Snowball"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "jungle_zombie",
@@ -1364,7 +1799,8 @@
     "special": {
       "hu": "Dzsungel biome-specifikus zombi variáns",
       "en": "Jungle biome-specific zombie variant"
-    }
+    },
+    "drops": []
   },
   {
     "id": "jungle_skeleton",
@@ -1385,7 +1821,8 @@
     "special": {
       "hu": "Dzsungel biome-specifikus csontváz variáns",
       "en": "Jungle biome-specific skeleton variant"
-    }
+    },
+    "drops": []
   },
   {
     "id": "jungle_creeper",
@@ -1408,7 +1845,8 @@
     "special": {
       "hu": "Dzsungel biome-specifikus creeper variáns",
       "en": "Jungle biome-specific creeper variant"
-    }
+    },
+    "drops": []
   },
   {
     "id": "jungle_spider",
@@ -1432,7 +1870,8 @@
     "special": {
       "hu": "Dzsungel biome-specifikus pók, mérgező",
       "en": "Jungle biome-specific spider, poisonous"
-    }
+    },
+    "drops": []
   },
   {
     "id": "tnt_skeleton",
@@ -1455,7 +1894,8 @@
     "special": {
       "hu": "Robbanó nyilakat lő",
       "en": "Shoots explosive arrows"
-    }
+    },
+    "drops": []
   },
   {
     "id": "confused_creeper",
@@ -1478,7 +1918,8 @@
     "special": {
       "hu": "Kiszámíthatatlan robbanó viselkedés",
       "en": "Unpredictable explosive behavior"
-    }
+    },
+    "drops": []
   },
   {
     "id": "end_lightning_creeper",
@@ -1501,7 +1942,17 @@
     "special": {
       "hu": "Villámmal robbantó Vég dimenzió creeper",
       "en": "Lightning-charged End dimension creeper"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Ender gyöngy",
+          "en": "Ender Pearl"
+        },
+        "qty": "1",
+        "chance": "always"
+      }
+    ]
   },
   {
     "id": "little_creeper",
@@ -1524,7 +1975,8 @@
     "special": {
       "hu": "Kis méretű creeper, kisebb robbanás",
       "en": "Small-sized creeper, smaller explosion"
-    }
+    },
+    "drops": []
   },
   {
     "id": "bomber",
@@ -1548,7 +2000,8 @@
     "special": {
       "hu": "Repülő, bombákat dob",
       "en": "Flying, drops bombs"
-    }
+    },
+    "drops": []
   },
   {
     "id": "corrupted_snowman",
@@ -1571,7 +2024,17 @@
     "special": {
       "hu": "Tűzálló romlott hóember, hógolyókat dob",
       "en": "Fire immune corrupted snowman, throws snowballs"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Hóblokk",
+          "en": "Snow Block"
+        },
+        "qty": "1-2",
+        "chance": "always"
+      }
+    ]
   },
   {
     "id": "desert_guardian",
@@ -1592,7 +2055,8 @@
     "special": {
       "hu": "Sivatagi biome-specifikus őr",
       "en": "Desert biome-specific guardian"
-    }
+    },
+    "drops": []
   },
   {
     "id": "pigman_leader",
@@ -1616,7 +2080,8 @@
     "special": {
       "hu": "Zombi Disznóember vezér, falkáját irányítja",
       "en": "Zombie Pigman leader, commands its pack"
-    }
+    },
+    "drops": []
   },
   {
     "id": "child_skeleton",
@@ -1637,7 +2102,8 @@
     "special": {
       "hu": "Kis méretű csontváz változat",
       "en": "Small-sized skeleton variant"
-    }
+    },
+    "drops": []
   },
   {
     "id": "child_iron_golem",
@@ -1658,7 +2124,8 @@
     "special": {
       "hu": "Kis méretű vas gólem változat",
       "en": "Small-sized iron golem variant"
-    }
+    },
+    "drops": []
   },
   {
     "id": "child_ghast",
@@ -1682,7 +2149,8 @@
     "special": {
       "hu": "Kis méretű ghast változat",
       "en": "Small-sized ghast variant"
-    }
+    },
+    "drops": []
   },
   {
     "id": "variant_child_ghast",
@@ -1706,7 +2174,8 @@
     "special": {
       "hu": "Bébi ghast erősebb variánsa",
       "en": "Stronger variant of child ghast"
-    }
+    },
+    "drops": []
   },
   {
     "id": "variant_zombie",
@@ -1730,7 +2199,8 @@
     "special": {
       "hu": "Véletlenszerű erős zombi variáns",
       "en": "Random strong zombie variant"
-    }
+    },
+    "drops": []
   },
   {
     "id": "variant_skeleton",
@@ -1752,7 +2222,8 @@
     "special": {
       "hu": "Véletlenszerű erős csontváz variáns",
       "en": "Random strong skeleton variant"
-    }
+    },
+    "drops": []
   },
   {
     "id": "variant_spider",
@@ -1777,7 +2248,8 @@
     "special": {
       "hu": "Véletlenszerű erős pók variáns",
       "en": "Random strong spider variant"
-    }
+    },
+    "drops": []
   },
   {
     "id": "variant_creeper",
@@ -1800,7 +2272,8 @@
     "special": {
       "hu": "Véletlenszerű erős creeper variáns",
       "en": "Random strong creeper variant"
-    }
+    },
+    "drops": []
   },
   {
     "id": "him",
@@ -1825,7 +2298,8 @@
     "special": {
       "hu": "Extrém ritka spawn, azonnali halál esélye, csak Ősi Fém fegyverrel sebezhető",
       "en": "Extremely rare spawn, instant kill chance, only Ancient Metal weapons work"
-    }
+    },
+    "drops": []
   },
   {
     "id": "slime",
@@ -1846,7 +2320,17 @@
     "special": {
       "hu": "Kisebb darabokra hasad öléskor",
       "en": "Splits into smaller pieces on death"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyálkagömb",
+          "en": "Slimeball"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "ghast",
@@ -1870,7 +2354,25 @@
     "special": {
       "hu": "Repülő, tűzgolyókat lő a Netherből",
       "en": "Flying, shoots fireballs in the Nether"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Puskapor",
+          "en": "Gunpowder"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Kísértet könnye",
+          "en": "Ghast Tear"
+        },
+        "qty": "0-1",
+        "chance": "rare"
+      }
+    ]
   },
   {
     "id": "cave_spider",
@@ -1893,7 +2395,25 @@
     "special": {
       "hu": "Mérgező barlang pók",
       "en": "Poisonous cave spider"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Szál",
+          "en": "String"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Pókszem",
+          "en": "Spider Eye"
+        },
+        "qty": "0-1",
+        "chance": "uncommon"
+      }
+    ]
   },
   {
     "id": "blaze",
@@ -1918,7 +2438,17 @@
     "special": {
       "hu": "Tűzgolyókat lő, Nether Erőd lakója",
       "en": "Shoots fireballs, inhabits Nether Fortress"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Láng rúd",
+          "en": "Blaze Rod"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "magma_cube",
@@ -1941,7 +2471,17 @@
     "special": {
       "hu": "Tűzálló láva kocka, Netherben él",
       "en": "Fire immune lava cube, lives in Nether"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Magma krém",
+          "en": "Magma Cream"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "wither",
@@ -1966,7 +2506,17 @@
     "special": {
       "hu": "Idézhető boss a Netherben, Wither Csillag ejt",
       "en": "Summonable boss in the Nether, drops Nether Star"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nether Csillag",
+          "en": "Nether Star"
+        },
+        "qty": "1",
+        "chance": "always"
+      }
+    ]
   },
   {
     "id": "enderman",
@@ -1989,7 +2539,17 @@
     "special": {
       "hu": "Teleportál, víztől sebesül, Hardcore-ban víz halálos",
       "en": "Teleports, hurt by water, water is lethal in Hardcore"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Ender gyöngy",
+          "en": "Ender Pearl"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "silverfish",
@@ -2012,7 +2572,8 @@
     "special": {
       "hu": "Kőből bújik elő, falkát hív",
       "en": "Hides in stone, calls pack"
-    }
+    },
+    "drops": []
   },
   {
     "id": "ender_dragon",
@@ -2036,7 +2597,25 @@
     "special": {
       "hu": "Végjáték boss — Core Breaker kell a legyőzéséhez",
       "en": "Endgame boss — requires Core Breaker to defeat"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Ender Tojás",
+          "en": "Dragon Egg"
+        },
+        "qty": "1",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "XP (hatalmas)",
+          "en": "XP (massive)"
+        },
+        "qty": "12000",
+        "chance": "always"
+      }
+    ]
   },
   {
     "id": "iron_golem",
@@ -2057,7 +2636,25 @@
     "special": {
       "hu": "Falusi védelmező, semleges ha nem provokálják",
       "en": "Village protector, neutral unless provoked"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Vas lapát",
+          "en": "Iron Ingot"
+        },
+        "qty": "3-5",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Mák",
+          "en": "Poppy"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "vindicator",
@@ -2078,7 +2675,25 @@
     "special": {
       "hu": "Illager harcos, fejszével támad",
       "en": "Illager warrior, attacks with axe"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Smaragd",
+          "en": "Emerald"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Vas fejsze",
+          "en": "Iron Axe"
+        },
+        "qty": "1",
+        "chance": "rare"
+      }
+    ]
   },
   {
     "id": "earthworm",
@@ -2099,7 +2714,17 @@
     "special": {
       "hu": "Féreggé váló komposzt lakó",
       "en": "Composting creature"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Trágya",
+          "en": "Fertilizer"
+        },
+        "qty": "1",
+        "chance": "always"
+      }
+    ]
   },
   {
     "id": "crab",
@@ -2120,7 +2745,25 @@
     "special": {
       "hu": "Vízparti rák",
       "en": "Shoreline crab"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Rák hús",
+          "en": "Crab Meat"
+        },
+        "qty": "1-2",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Rák lába",
+          "en": "Crab Leg"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "mallard",
@@ -2143,7 +2786,17 @@
     "special": {
       "hu": "Vadkacsa, ártalmatlan",
       "en": "Wild duck, harmless"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Kacsahús",
+          "en": "Duck Meat"
+        },
+        "qty": "1",
+        "chance": "always"
+      }
+    ]
   },
   {
     "id": "pig",
@@ -2164,7 +2817,8 @@
     "special": {
       "hu": "Szelíd állat, sertéshúst ejt",
       "en": "Passive animal, drops pork"
-    }
+    },
+    "drops": []
   },
   {
     "id": "sheep",
@@ -2185,7 +2839,8 @@
     "special": {
       "hu": "Szelíd állat, gyapjút és bárányhúst ejt",
       "en": "Passive animal, drops wool and mutton"
-    }
+    },
+    "drops": []
   },
   {
     "id": "cow",
@@ -2206,7 +2861,8 @@
     "special": {
       "hu": "Szelíd állat, bőrt és marhahúst ejt",
       "en": "Passive animal, drops leather and beef"
-    }
+    },
+    "drops": []
   },
   {
     "id": "chicken",
@@ -2229,7 +2885,8 @@
     "special": {
       "hu": "Szelíd állat, tojást és csirkecombot ejt",
       "en": "Passive animal, drops eggs and chicken"
-    }
+    },
+    "drops": []
   },
   {
     "id": "wolf",
@@ -2252,7 +2909,8 @@
     "special": {
       "hu": "Szelídíthető, provokálásra agresszív",
       "en": "Tameable, aggressive when provoked"
-    }
+    },
+    "drops": []
   },
   {
     "id": "mooshroom",
@@ -2273,7 +2931,8 @@
     "special": {
       "hu": "Gomba szigeten él, gombaleves forrás",
       "en": "Lives on mushroom islands, mushroom soup source"
-    }
+    },
+    "drops": []
   },
   {
     "id": "ocelot",
@@ -2294,7 +2953,8 @@
     "special": {
       "hu": "Dzsungelben él, creepereket elriaszt",
       "en": "Lives in jungles, scares creepers"
-    }
+    },
+    "drops": []
   },
   {
     "id": "horse",
@@ -2315,7 +2975,8 @@
     "special": {
       "hu": "Szelídíthető hátasállat",
       "en": "Tameable mount"
-    }
+    },
+    "drops": []
   },
   {
     "id": "medium_fish",
@@ -2336,7 +2997,8 @@
     "special": {
       "hu": "Vízben élő hal",
       "en": "Water-dwelling fish"
-    }
+    },
+    "drops": []
   },
   {
     "id": "turkey",
@@ -2357,7 +3019,25 @@
     "special": {
       "hu": "Pulyka, húst ejt",
       "en": "Turkey, drops meat"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers pulykahús",
+          "en": "Raw Turkey"
+        },
+        "qty": "1-3",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Toll",
+          "en": "Feather"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "scorpion",
@@ -2380,7 +3060,8 @@
     "special": {
       "hu": "Mérgező csipés, sivatagban él",
       "en": "Poisonous sting, lives in desert"
-    }
+    },
+    "drops": []
   },
   {
     "id": "rat",
@@ -2404,7 +3085,8 @@
     "special": {
       "hu": "Mérgező harapás, falkában támad",
       "en": "Poisonous bite, attacks in packs"
-    }
+    },
+    "drops": []
   },
   {
     "id": "shark",
@@ -2425,7 +3107,17 @@
     "special": {
       "hu": "Veszélyes óceáni ragadozó",
       "en": "Dangerous ocean predator"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers cápahús",
+          "en": "Raw Shark Meat"
+        },
+        "qty": "2-4",
+        "chance": "always"
+      }
+    ]
   },
   {
     "id": "bee",
@@ -2449,7 +3141,8 @@
     "special": {
       "hu": "Mérgező csipés, repülő",
       "en": "Poisonous sting, flying"
-    }
+    },
+    "drops": []
   },
   {
     "id": "coyote",
@@ -2472,7 +3165,25 @@
     "special": {
       "hu": "Falkában vadász prérifarkias",
       "en": "Pack-hunting coyote"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers farkas hús",
+          "en": "Raw Wolf Meat"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Bőr",
+          "en": "Leather"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "cougar",
@@ -2493,7 +3204,25 @@
     "special": {
       "hu": "Magányos nagy ragadozó",
       "en": "Solitary large predator"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers oroszlánhús",
+          "en": "Raw Lion Meat"
+        },
+        "qty": "1-3",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Bőr",
+          "en": "Leather"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "black_bear",
@@ -2514,7 +3243,33 @@
     "special": {
       "hu": "Fekete medve, provokálva veszélyes",
       "en": "Black bear, dangerous when provoked"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers medvehús",
+          "en": "Raw Bear Meat"
+        },
+        "qty": "1-3",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Bőr",
+          "en": "Leather"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Csont",
+          "en": "Bone"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "yak",
@@ -2535,7 +3290,25 @@
     "special": {
       "hu": "Hegyi jak állat",
       "en": "Mountain yak animal"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers marhahús",
+          "en": "Raw Beef"
+        },
+        "qty": "1-3",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Bőr",
+          "en": "Leather"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "musk_ox",
@@ -2556,7 +3329,33 @@
     "special": {
       "hu": "Nagy tundra állat",
       "en": "Large tundra animal"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers marhahús",
+          "en": "Raw Beef"
+        },
+        "qty": "1-3",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Bőr",
+          "en": "Leather"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Csont",
+          "en": "Bone"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "camel",
@@ -2577,7 +3376,25 @@
     "special": {
       "hu": "Sivatagi teve állat",
       "en": "Desert camel animal"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers tevehús",
+          "en": "Raw Camel Meat"
+        },
+        "qty": "1-3",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Bőr",
+          "en": "Leather"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "boar",
@@ -2598,7 +3415,25 @@
     "special": {
       "hu": "Vaddisznó, provokálva charge-ol",
       "en": "Wild boar, charges when provoked"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers karajszeletek",
+          "en": "Raw Porkchop"
+        },
+        "qty": "1-3",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Bőr",
+          "en": "Leather"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "hyena",
@@ -2621,7 +3456,17 @@
     "special": {
       "hu": "Falkában vadász hiéna",
       "en": "Pack-hunting hyena"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Rothadó hús",
+          "en": "Rotten Flesh"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "saber_toothed_tiger",
@@ -2642,7 +3487,33 @@
     "special": {
       "hu": "Kihalt ragadozó, erős közelharc",
       "en": "Extinct predator, strong melee"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers tigrishús",
+          "en": "Raw Tiger Meat"
+        },
+        "qty": "2-4",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Bőr",
+          "en": "Leather"
+        },
+        "qty": "1-2",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Csont",
+          "en": "Bone"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "panther",
@@ -2663,7 +3534,25 @@
     "special": {
       "hu": "Gyors dzsungel ragadozó",
       "en": "Fast jungle predator"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers oroszlánhús",
+          "en": "Raw Lion Meat"
+        },
+        "qty": "1-2",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Bőr",
+          "en": "Leather"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "polar_bear",
@@ -2684,7 +3573,33 @@
     "special": {
       "hu": "Havas biome ragadozó, kölyökkel veszélyes",
       "en": "Snowy biome predator, dangerous with cubs"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers medvehús",
+          "en": "Raw Bear Meat"
+        },
+        "qty": "2-4",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Bőr",
+          "en": "Leather"
+        },
+        "qty": "1-2",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Csont",
+          "en": "Bone"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "grizzly_bear",
@@ -2705,7 +3620,33 @@
     "special": {
       "hu": "Nagy barnamedve, erős közelharc",
       "en": "Large grizzly bear, strong melee"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers medvehús",
+          "en": "Raw Bear Meat"
+        },
+        "qty": "2-4",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Bőr",
+          "en": "Leather"
+        },
+        "qty": "1-2",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Csont",
+          "en": "Bone"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "deer",
@@ -2726,7 +3667,33 @@
     "special": {
       "hu": "Menekülő szelíd szarvas",
       "en": "Fleeing passive deer"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers szarvas hús",
+          "en": "Raw Venison"
+        },
+        "qty": "1-3",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Bőr",
+          "en": "Leather"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      },
+      {
+        "item": {
+          "hu": "Csont",
+          "en": "Bone"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "duck",
@@ -2747,7 +3714,25 @@
     "special": {
       "hu": "Szelíd vízimadár",
       "en": "Passive water bird"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Kacsahús",
+          "en": "Duck Meat"
+        },
+        "qty": "1-2",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Toll",
+          "en": "Feather"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "elephant",
@@ -2768,7 +3753,25 @@
     "special": {
       "hu": "Nagy savanna állat, charge-ol",
       "en": "Large savanna animal, charges"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers elefánthús",
+          "en": "Raw Elephant Meat"
+        },
+        "qty": "2-5",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Bőr",
+          "en": "Leather"
+        },
+        "qty": "1-3",
+        "chance": "always"
+      }
+    ]
   },
   {
     "id": "llama",
@@ -2789,7 +3792,25 @@
     "special": {
       "hu": "Hegyi teherhordó állat",
       "en": "Mountain pack animal"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers tevehús",
+          "en": "Raw Llama Meat"
+        },
+        "qty": "1-2",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Bőr",
+          "en": "Leather"
+        },
+        "qty": "0-1",
+        "chance": "common"
+      }
+    ]
   },
   {
     "id": "pheasant",
@@ -2812,6 +3833,24 @@
     "special": {
       "hu": "Szelíd madár, húst ejt",
       "en": "Passive bird, drops meat"
-    }
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers csirkehús",
+          "en": "Raw Chicken"
+        },
+        "qty": "1-2",
+        "chance": "always"
+      },
+      {
+        "item": {
+          "hu": "Toll",
+          "en": "Feather"
+        },
+        "qty": "0-2",
+        "chance": "common"
+      }
+    ]
   }
 ]
