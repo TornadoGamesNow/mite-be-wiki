@@ -17,6 +17,9 @@ function setLang(lang) {
   if (dd) dd.style.display = 'none';
   // Re-build nav observer for now-visible elements
   document.dispatchEvent(new Event('langChange'));
+  // Notify React islands about language change
+  window.__miteLang = lang;
+  window.dispatchEvent(new CustomEvent('mite:langChange', { detail: lang }));
   // Re-render data tables in new language
   initDataTables(lang);
 }
