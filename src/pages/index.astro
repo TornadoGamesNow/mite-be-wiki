@@ -3,7 +3,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import TopNav from '../components/TopNav.astro';
 import Sidebar from '../components/Sidebar.astro';
-import RecipeBrowser from '../islands/RecipeBrowser.tsx';
 import MobExplorer from '../islands/MobExplorer.tsx';
 import '../styles/global.css';
 
@@ -4177,12 +4176,6 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 </div>
 
 <!-- Interactive Islands -->
-<h2 id="recipe-browser">
-  <span data-lang="hu">Recept Böngésző</span>
-  <span data-lang="en">Recipe Browser</span>
-</h2>
-<RecipeBrowser client:visible />
-
 <h2 id="mob-explorer">
   <span data-lang="hu">Szörny Felfedező</span>
   <span data-lang="en">Mob Explorer</span>
