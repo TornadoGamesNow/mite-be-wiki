@@ -55,56 +55,47 @@ function initAnchorNav() {
 
 // ── Sidebar Active Link Tracking ──
 function initNavTracking() {
-  const links = document.querySelectorAll('.sidebar-nav a[href^="#"]');
+  const links = [...document.querySelectorAll('.sidebar-nav a[href^="#"]')];
   if (!links.length) return;
 
-  let observed = [];
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.id;
-        links.forEach(l => {
-          l.classList.toggle('active', l.getAttribute('href') === '#' + id);
-        });
-        // Auto-scroll sidebar to keep active link visible
-        const activeLink = [...links].find(l => l.getAttribute('href') === '#' + id);
-        if (activeLink) {
-          const sidebar = activeLink.closest('.sidebar');
-          if (sidebar) {
-            const sRect = sidebar.getBoundingClientRect();
-            const lRect = activeLink.getBoundingClientRect();
-            const relTop = lRect.top - sRect.top + sidebar.scrollTop;
-            const relBot = relTop + activeLink.offsetHeight;
-            const visTop = sidebar.scrollTop;
-            const visBot = visTop + sidebar.clientHeight;
-            if (relTop < visTop + 40) {
-              sidebar.scrollTo({ top: relTop - 40, behavior: 'smooth' });
-            } else if (relBot > visBot - 40) {
-              sidebar.scrollTo({ top: relBot - sidebar.clientHeight + 40, behavior: 'smooth' });
-            }
-          }
-        }
+  function setActive(id) {
+    links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + id));
+    const activeLink = links.find(l => l.getAttribute('href') === '#' + id);
+    if (activeLink) {
+      const sidebar = activeLink.closest('.sidebar');
+      if (sidebar) {
+        const sRect = sidebar.getBoundingClientRect();
+        const lRect = activeLink.getBoundingClientRect();
+        const relTop = lRect.top - sRect.top + sidebar.scrollTop;
+        const relBot = relTop + activeLink.offsetHeight;
+        const visTop = sidebar.scrollTop;
+        const visBot = visTop + sidebar.clientHeight;
+        if (relTop < visTop + 40) sidebar.scrollTo({ top: relTop - 40, behavior: 'smooth' });
+        else if (relBot > visBot - 40) sidebar.scrollTo({ top: relBot - sidebar.clientHeight + 40, behavior: 'smooth' });
       }
-    });
-  }, { rootMargin: '0px 0px -60% 0px' });
-
-  function rebuildObserver() {
-    observed.forEach(el => observer.unobserve(el));
-    observed = [];
-    links.forEach(a => {
-      const id = a.getAttribute('href')?.slice(1);
-      if (!id) return;
-      const el = findVisibleEl(id);
-      if (el) {
-        observer.observe(el);
-        observed.push(el);
-      }
-    });
+    }
   }
 
-  rebuildObserver();
-  document.addEventListener('langChange', rebuildObserver);
+  function getTargets() {
+    return links.map(a => {
+      const id = a.getAttribute('href').slice(1);
+      return findVisibleEl(id);
+    }).filter(Boolean);
+  }
+
+  function updateActive() {
+    const targets = getTargets();
+    let best = null;
+    for (const el of targets) {
+      const top = el.getBoundingClientRect().top;
+      if (top <= 80) best = el; // last one that passed the 80px line
+    }
+    if (best) setActive(best.id);
+  }
+
+  window.addEventListener('scroll', updateActive, { passive: true });
+  document.addEventListener('langChange', updateActive);
+  updateActive();
 }
 
 // ── URL Hash Management ──
