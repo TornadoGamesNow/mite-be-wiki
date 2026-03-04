@@ -39,7 +39,7 @@ function findVisibleEl(id) {
 // ── Sidebar Anchor Click Override ──
 // Finds the correct (visible) version of a duplicate-ID element and scrolls to it.
 function initAnchorNav() {
-  document.querySelectorAll('.sidebar a[href^="#"]').forEach(a => {
+  document.querySelectorAll('.sidebar-nav a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       const id = a.getAttribute('href').slice(1);
       if (!id) return;
@@ -55,7 +55,7 @@ function initAnchorNav() {
 
 // ── Sidebar Active Link Tracking ──
 function initNavTracking() {
-  const links = document.querySelectorAll('.sidebar a[href^="#"]');
+  const links = document.querySelectorAll('.sidebar-nav a[href^="#"]');
   if (!links.length) return;
 
   let observed = [];
