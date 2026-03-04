@@ -330,6 +330,7 @@ export default function MobExplorer() {
       </div>
 
       {/* Table */}
+      <div style={{ overflowY: 'auto', maxHeight: '70vh', borderRadius: 6, border: '1px solid var(--surface2)' }}>
       <table style={{ width: '100%', borderCollapse: 'collapse' }}>
         <colgroup>
           <col style={{ width: '50%' }} />
@@ -337,7 +338,7 @@ export default function MobExplorer() {
           <col style={{ width: '22%' }} />
           <col style={{ width: '15%' }} />
         </colgroup>
-        <thead style={{ position: 'sticky', top: 0, zIndex: 2, background: 'var(--surface)' }}>
+        <thead style={{ position: 'sticky', top: 0, zIndex: 2 }}>
           <tr style={{ borderBottom: '2px solid var(--surface2)' }}>
             <SortTh k="name" label={lang === 'hu' ? 'Név' : 'Name'} />
             <SortTh k="hp" label="HP" />
@@ -390,6 +391,7 @@ export default function MobExplorer() {
           )}
         </tbody>
       </table>
+      </div>
 
       {/* Drawer + overlay */}
       {selectedMob && (

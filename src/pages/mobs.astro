@@ -2,19 +2,88 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import TopNav from '../components/TopNav.astro';
+import Sidebar from '../components/Sidebar.astro';
 import MobExplorer from '../islands/MobExplorer.tsx';
 import '../styles/global.css';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const sidebarGroups = {
+  hu: [
+    {
+      title: 'Navigáció',
+      links: [
+        { href: `${base}/`, label: '🏠 Főoldal' },
+        { href: `${base}/reference/`, label: '📖 Referencia' },
+        { href: `${base}/recipes/`, label: '🔨 Receptek' },
+        { href: `${base}/faq/`, label: '❓ GYIK' },
+        { href: `${base}/install/`, label: '⬇ Telepítés' },
+      ]
+    },
+    {
+      title: 'Nehézség',
+      links: [
+        { href: '#', label: 'I — Korai játék' },
+        { href: '#', label: 'II — Középső' },
+        { href: '#', label: 'III — Késői' },
+        { href: '#', label: '★ Bossok' },
+      ]
+    },
+    {
+      title: 'Régió',
+      links: [
+        { href: '#', label: '🌍 Felszín' },
+        { href: '#', label: '⛏ Föld alatti' },
+        { href: '#', label: '🔥 Nether' },
+      ]
+    },
+  ],
+  en: [
+    {
+      title: 'Navigation',
+      links: [
+        { href: `${base}/`, label: '🏠 Home' },
+        { href: `${base}/reference/`, label: '📖 Reference' },
+        { href: `${base}/recipes/`, label: '🔨 Recipes' },
+        { href: `${base}/faq/`, label: '❓ FAQ' },
+        { href: `${base}/install/`, label: '⬇ Install' },
+      ]
+    },
+    {
+      title: 'Difficulty',
+      links: [
+        { href: '#', label: 'I — Early game' },
+        { href: '#', label: 'II — Mid game' },
+        { href: '#', label: 'III — Late game' },
+        { href: '#', label: '★ Bosses' },
+      ]
+    },
+    {
+      title: 'Region',
+      links: [
+        { href: '#', label: '🌍 Surface' },
+        { href: '#', label: '⛏ Underground' },
+        { href: '#', label: '🔥 Nether' },
+      ]
+    },
+  ]
+};
 ---
 <BaseLayout title="Bestiary — MITE:BE Wiki">
   <Header />
   <TopNav currentPage="mobs" />
-  <main style="max-width:1440px; margin:0 auto; padding:24px 32px;">
-    <h2 data-lang="hu">Szörny Enciklopédia</h2>
-    <h2 data-lang="en">Bestiary</h2>
-    <p data-lang="hu" style="color:var(--text2)">124 szörny · 3 régió · egyedi mechanikák</p>
-    <p data-lang="en" style="color:var(--text2)">124 mobs · 3 regions · unique mechanics</p>
-    <MobExplorer client:load />
-  </main>
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+      <div data-lang="hu">
+        <h2>Szörny Enciklopédia</h2>
+        <p style="color:var(--text2)">124 szörny · 3 régió · egyedi mechanikák</p>
+      </div>
+      <div data-lang="en">
+        <h2>Bestiary</h2>
+        <p style="color:var(--text2)">124 mobs · 3 regions · unique mechanics</p>
+      </div>
+      <MobExplorer client:load />
+    </main>
+  </div>
 </BaseLayout>
 <script is:inline src={`${base}/js/app.js`}></script>
