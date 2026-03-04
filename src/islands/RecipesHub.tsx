@@ -1148,6 +1148,12 @@ export default function RecipesHub() {
     return onLangChange((l) => setLang(l as 'hu' | 'en'));
   }, []);
 
+  // URL ?search= param support (from mob drops deep-link)
+  useEffect(() => {
+    const p = new URLSearchParams(location.search).get('search');
+    if (p) { setKeyword(p); setMode('browse'); }
+  }, []);
+
   // #9: Ctrl+K / Cmd+K to focus search
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {

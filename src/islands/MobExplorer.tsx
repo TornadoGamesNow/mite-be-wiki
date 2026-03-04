@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react';
 import mobsData from '../../data/mobs.json';
 
+const BASE = (import.meta as any).env?.BASE_URL?.replace(/\/$/, '') ?? '';
+
 interface Drop {
   item: { hu: string; en: string };
   qty?: string;
   chance: 'always' | 'common' | 'uncommon' | 'rare' | 'looting';
+  itemId?: string | null;
 }
 
 interface Mob {
@@ -20,6 +23,28 @@ interface Mob {
   tags: string[];
   special?: { hu: string; en: string };
   drops?: Drop[];
+  image?: string | null;
+}
+
+function MobSprite({ mob, size }: { mob: Mob; size: number }) {
+  const [err, setErr] = useState(false);
+  if (!mob.image || err) {
+    return (
+      <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+        width: size, height: size, fontSize: size * 0.55, lineHeight: 1, flexShrink: 0 }}>
+        🐾
+      </span>
+    );
+  }
+  return (
+    <img
+      src={`${BASE}/img/mobs/${mob.image}`}
+      alt={mob.id}
+      width={size} height={size}
+      onError={() => setErr(true)}
+      style={{ imageRendering: 'pixelated', objectFit: 'contain', flexShrink: 0, display: 'block' }}
+    />
+  );
 }
 
 const allMobs: Mob[] = mobsData as Mob[];
@@ -329,7 +354,53 @@ export default function MobExplorer() {
         }
       </div>
 
-      {/* Table */}
+      {/* Mobile card grid (hidden on desktop via CSS) */}
+      <div className="mob-card-grid">
+        {filtered.map(mob => (
+          <div key={mob.id} className={`mob-card${selectedMob?.id === mob.id ? ' mob-card-selected' : ''}`}
+            onClick={() => openMob(mob)}>
+            <div className="mob-card-sprite">
+              <MobSprite mob={mob} size={40} />
+            </div>
+            <div className="mob-card-body">
+              <div className="mob-card-name">
+                <span className={`diff-badge ${diffMeta[mob.difficulty].cls}`} style={{ marginRight: 4 }}>
+                  {diffMeta[mob.difficulty].badge}
+                </span>
+                {mob.name[lang as 'hu' | 'en']}
+                <span style={{ opacity: .6, marginLeft: 4, fontSize: '.85em' }}>
+                  {mob.tags.slice(0, 3).map(t => tagMeta[t]?.icon ?? '').join('')}
+                </span>
+              </div>
+              <div className="mob-card-stats">
+                <span className="mob-card-stat">
+                  <span style={{ color: 'var(--green)', fontWeight: 700 }}>{mob.hp ?? '?'}</span>
+                  <span style={{ color: 'var(--text2)', fontSize: '.75em' }}>HP</span>
+                </span>
+                <span className="mob-card-stat">
+                  <span style={{ color: 'var(--accent)', fontWeight: 700 }}>
+                    {mob.dmgMin === mob.dmgMax ? mob.dmgMin : `${mob.dmgMin}–${mob.dmgMax}`}
+                    {mob.dmgType !== 'melee' ? ` ${dmgTypeIcon[mob.dmgType] ?? ''}` : ''}
+                  </span>
+                  <span style={{ color: 'var(--text2)', fontSize: '.75em' }}>⚔</span>
+                </span>
+                <span className="mob-card-stat">
+                  <span style={{ color: 'var(--gold)', fontWeight: 700 }}>{mob.xp ?? '?'}</span>
+                  <span style={{ color: 'var(--text2)', fontSize: '.75em' }}>XP</span>
+                </span>
+              </div>
+            </div>
+            <span style={{ color: 'var(--text2)', fontSize: '.8em', flexShrink: 0 }}>ℹ</span>
+          </div>
+        ))}
+        {filtered.length === 0 && (
+          <div style={{ padding: '24px', textAlign: 'center', color: 'var(--text2)', fontStyle: 'italic', gridColumn: '1/-1' }}>
+            {lang === 'hu' ? 'Nincs találat a szűrőkre.' : 'No mobs match filters.'}
+          </div>
+        )}
+      </div>
+
+      {/* Table (hidden on mobile via CSS) */}
       <div className="mob-table-wrap" style={{ overflowY: 'auto', maxHeight: '70vh', borderRadius: 6, border: '1px solid var(--surface2)' }}>
       <table style={{ width: '100%', borderCollapse: 'collapse' }}>
         <colgroup>
@@ -354,17 +425,20 @@ export default function MobExplorer() {
                 ? { borderLeft: '3px solid var(--gold)', background: 'rgba(240,192,64,.05)' }
                 : {}) }}>
               <td style={{ fontWeight: 600 }}>
-                <span className={`diff-badge ${diffMeta[mob.difficulty].cls}`} style={{ marginRight: 6 }}>
-                  {diffMeta[mob.difficulty].badge}
-                </span>
-                {mob.name[lang as 'hu' | 'en']}
-                <span style={{ marginLeft: 6, opacity: .6, fontSize: '.9em' }}>
-                  {mob.tags.slice(0, 3).map(t => tagMeta[t]?.icon ?? '').join('')}
-                  {mob.tags.length > 3 && (
-                    <span style={{ fontSize: '.8em', color: 'var(--text2)', marginLeft: 2 }}>
-                      +{mob.tags.length - 3}
-                    </span>
-                  )}
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+                  <MobSprite mob={mob} size={24} />
+                  <span className={`diff-badge ${diffMeta[mob.difficulty].cls}`} style={{ marginRight: 2 }}>
+                    {diffMeta[mob.difficulty].badge}
+                  </span>
+                  {mob.name[lang as 'hu' | 'en']}
+                  <span style={{ marginLeft: 2, opacity: .6, fontSize: '.9em' }}>
+                    {mob.tags.slice(0, 3).map(t => tagMeta[t]?.icon ?? '').join('')}
+                    {mob.tags.length > 3 && (
+                      <span style={{ fontSize: '.8em', color: 'var(--text2)', marginLeft: 2 }}>
+                        +{mob.tags.length - 3}
+                      </span>
+                    )}
+                  </span>
                 </span>
               </td>
               <td>{mob.hp ?? '?'}</td>
@@ -399,7 +473,7 @@ export default function MobExplorer() {
           <div onClick={closeMob}
             style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,.4)', zIndex: 99, display: 'none' }}
             className="drawer-overlay" />
-          <div style={{
+          <div className="mob-drawer-panel" style={{
             position: 'fixed', top: 0, right: 0, bottom: 0, width: 320,
             background: 'var(--bg)', borderLeft: '1px solid var(--surface2)',
             overflowY: 'auto', zIndex: 100,
@@ -413,7 +487,9 @@ export default function MobExplorer() {
               padding: '16px 20px 12px',
             }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                <div>
+                <div style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
+                  <MobSprite mob={selectedMob} size={56} />
+                  <div>
                   <h3 style={{ margin: '0 0 6px', fontSize: '1.15em' }}>
                     {selectedMob.name[lang as 'hu' | 'en']}
                   </h3>
@@ -428,7 +504,8 @@ export default function MobExplorer() {
                       </span>
                     ))}
                   </div>
-                </div>
+                  </div>{/* end name+badges div */}
+                </div>{/* end sprite+name flex */}
                 <button onClick={closeMob} style={{
                   background: 'none', border: 'none', color: 'var(--text)', cursor: 'pointer',
                   fontSize: '1.1em', padding: '8px 10px', margin: '-8px -10px', borderRadius: 6, lineHeight: 1
@@ -518,12 +595,24 @@ export default function MobExplorer() {
                         alignItems: 'center', fontSize: '.83em',
                         padding: '4px 8px', background: 'var(--surface)',
                         border: '1px solid var(--surface2)', borderRadius: 4 }}>
-                        <span style={{ color: 'var(--text)' }}>
-                          {drop.item[lang as 'hu' | 'en']}
-                          {drop.qty && <span style={{ color: 'var(--text2)', marginLeft: 4 }}>×{drop.qty}</span>}
+                        <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                          <span style={{ color: 'var(--text)' }}>
+                            {drop.item[lang as 'hu' | 'en']}
+                            {drop.qty && <span style={{ color: 'var(--text2)', marginLeft: 4 }}>×{drop.qty}</span>}
+                          </span>
+                          {drop.itemId && (
+                            <a href={`${BASE}/recipes/?search=${encodeURIComponent(drop.itemId)}`}
+                              title={lang === 'hu' ? 'Receptek megtekintése' : 'View recipes'}
+                              onClick={e => e.stopPropagation()}
+                              style={{ fontSize: '.78em', color: 'var(--mithril)', textDecoration: 'none',
+                                padding: '1px 5px', borderRadius: 3, border: '1px solid rgba(126,200,227,.3)',
+                                background: 'rgba(126,200,227,.08)', flexShrink: 0 }}>
+                              {lang === 'hu' ? '→ recept' : '→ recipe'}
+                            </a>
+                          )}
                         </span>
                         <span style={{ fontSize: '.8em', color: chanceColor[drop.chance] ?? 'var(--text2)',
-                          fontWeight: 600 }}>
+                          fontWeight: 600, flexShrink: 0 }}>
                           {chanceLabel[drop.chance]?.[lang as 'hu' | 'en'] ?? drop.chance}
                         </span>
                       </div>

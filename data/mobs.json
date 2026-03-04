@@ -30,7 +30,8 @@
           "en": "Rotten Flesh"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "rotten_flesh"
       },
       {
         "item": {
@@ -38,9 +39,11 @@
           "en": "Iron Shovel (rare)"
         },
         "qty": "1",
-        "chance": "rare"
+        "chance": "rare",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "zombie.png"
   },
   {
     "id": "skeleton",
@@ -70,7 +73,8 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       },
       {
         "item": {
@@ -78,9 +82,11 @@
           "en": "Arrow"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "arrow"
       }
-    ]
+    ],
+    "image": "skeleton.png"
   },
   {
     "id": "creeper",
@@ -111,7 +117,8 @@
           "en": "Gunpowder"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "gunpowder"
       },
       {
         "item": {
@@ -119,9 +126,11 @@
           "en": "Music Disc (rare)"
         },
         "qty": "1",
-        "chance": "rare"
+        "chance": "rare",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "creeper.png"
   },
   {
     "id": "spider",
@@ -152,7 +161,8 @@
           "en": "String"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "string"
       },
       {
         "item": {
@@ -160,9 +170,11 @@
           "en": "Spider Eye"
         },
         "qty": "0-1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "spider_eye"
       }
-    ]
+    ],
+    "image": "spider.png"
   },
   {
     "id": "wood_spider",
@@ -194,7 +206,8 @@
           "en": "Wood Spider Eye"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -202,9 +215,11 @@
           "en": "String"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "string"
       }
-    ]
+    ],
+    "image": "wood_spider.png"
   },
   {
     "id": "vampire_bat",
@@ -237,9 +252,11 @@
           "en": "Vampire Bat Fang"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "vampire_bat.png"
   },
   {
     "id": "ghoul",
@@ -270,9 +287,11 @@
           "en": "Ghoul Flesh"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "ghoul_flesh"
       }
-    ]
+    ],
+    "image": "ghoul.png"
   },
   {
     "id": "hell_hound",
@@ -304,9 +323,11 @@
           "en": "Hellhound Hide"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "hell_hound.png"
   },
   {
     "id": "demon_spider",
@@ -338,7 +359,8 @@
           "en": "Hell Spider Eye"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -346,9 +368,11 @@
           "en": "String"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "string"
       }
-    ]
+    ],
+    "image": "demon_spider.png"
   },
   {
     "id": "zombie_pigman",
@@ -380,7 +404,8 @@
           "en": "Rotten Flesh"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "rotten_flesh"
       },
       {
         "item": {
@@ -388,9 +413,11 @@
           "en": "Gold Nugget"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "gold_nugget"
       }
-    ]
+    ],
+    "image": "zombie_pigman.png"
   },
   {
     "id": "soul_spirit",
@@ -422,9 +449,11 @@
           "en": "Bottle o Enchanting"
         },
         "qty": "1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "soul_spirit.png"
   },
   {
     "id": "zombie_caller",
@@ -456,7 +485,8 @@
           "en": "Rotten Flesh"
         },
         "qty": "1-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "rotten_flesh"
       },
       {
         "item": {
@@ -464,7 +494,8 @@
           "en": "Iron Ingot"
         },
         "qty": "1-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "iron_ingot"
       },
       {
         "item": {
@@ -472,9 +503,11 @@
           "en": "Emerald"
         },
         "qty": "1",
-        "chance": "rare"
+        "chance": "rare",
+        "itemId": "emerald"
       }
-    ]
+    ],
+    "image": "zombie_caller.png"
   },
   {
     "id": "dire_wolf",
@@ -505,7 +538,8 @@
           "en": "Raw Wolf Meat"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": null
       },
       {
         "item": {
@@ -513,9 +547,11 @@
           "en": "Leather"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "leather"
       }
-    ]
+    ],
+    "image": "dire_wolf.png"
   },
   {
     "id": "wight",
@@ -546,7 +582,8 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       },
       {
         "item": {
@@ -554,9 +591,11 @@
           "en": "Soul Stone"
         },
         "qty": "1",
-        "chance": "rare"
+        "chance": "rare",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "wight.png"
   },
   {
     "id": "wight_guard",
@@ -587,7 +626,8 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       },
       {
         "item": {
@@ -595,9 +635,11 @@
           "en": "Soul Stone"
         },
         "qty": "1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "wight_guard.png"
   },
   {
     "id": "black_widow_spider",
@@ -628,7 +670,8 @@
           "en": "Black Widow Eye"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "black_widow_eye"
       },
       {
         "item": {
@@ -636,9 +679,11 @@
           "en": "String"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "string"
       }
-    ]
+    ],
+    "image": "black_widow_spider.png"
   },
   {
     "id": "witch",
@@ -669,7 +714,8 @@
           "en": "Splash Potion"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": null
       },
       {
         "item": {
@@ -677,7 +723,8 @@
           "en": "Glass Bottle"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": null
       },
       {
         "item": {
@@ -685,9 +732,11 @@
           "en": "Sugar"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "witch.png"
   },
   {
     "id": "pillager",
@@ -716,7 +765,8 @@
           "en": "Arrow"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "arrow"
       },
       {
         "item": {
@@ -724,9 +774,11 @@
           "en": "Ominous Banner"
         },
         "qty": "1",
-        "chance": "rare"
+        "chance": "rare",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "pillager.png"
   },
   {
     "id": "nether_creeper",
@@ -758,9 +810,11 @@
           "en": "Gunpowder"
         },
         "qty": "0-4",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "gunpowder"
       }
-    ]
+    ],
+    "image": "nether_creeper.png"
   },
   {
     "id": "red_blaze",
@@ -793,7 +847,8 @@
           "en": "Blaze Rod"
         },
         "qty": "0-1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "blaze_rod"
       },
       {
         "item": {
@@ -801,9 +856,11 @@
           "en": "Glowstone Dust"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "glowstone_dust"
       }
-    ]
+    ],
+    "image": "red_blaze.png"
   },
   {
     "id": "earth_elemental",
@@ -834,9 +891,11 @@
           "en": "Earth Elemental Core"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "earth_elemental_core"
       }
-    ]
+    ],
+    "image": "earth_elemental.png"
   },
   {
     "id": "giant_vampire_bat",
@@ -869,9 +928,11 @@
           "en": "Vampire Bat Fang"
         },
         "qty": "1-2",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "giant_vampire_bat.png"
   },
   {
     "id": "invisible_stalker",
@@ -903,9 +964,11 @@
           "en": "Ender Pearl"
         },
         "qty": "1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "ender_pearl"
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "phase_spider",
@@ -937,7 +1000,8 @@
           "en": "Phase Spider Eye"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -945,9 +1009,11 @@
           "en": "String"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "string"
       }
-    ]
+    ],
+    "image": "phase_spider.png"
   },
   {
     "id": "fire_elemental",
@@ -979,9 +1045,11 @@
           "en": "Fire Elemental Core"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "fire_elemental_core"
       }
-    ]
+    ],
+    "image": "fire_elemental.png"
   },
   {
     "id": "greater_ghast",
@@ -1013,7 +1081,8 @@
           "en": "Gunpowder"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "gunpowder"
       },
       {
         "item": {
@@ -1021,9 +1090,11 @@
           "en": "Nether Star"
         },
         "qty": "1",
-        "chance": "rare"
+        "chance": "rare",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "greater_ghast.png"
   },
   {
     "id": "pillager_captain",
@@ -1054,7 +1125,8 @@
           "en": "Elemental Obsidian"
         },
         "qty": "12",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "elemental_obsidian"
       },
       {
         "item": {
@@ -1062,7 +1134,8 @@
           "en": "Emerald"
         },
         "qty": "3-6",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "emerald"
       },
       {
         "item": {
@@ -1070,7 +1143,8 @@
           "en": "Crossbow"
         },
         "qty": "1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": null
       },
       {
         "item": {
@@ -1078,9 +1152,11 @@
           "en": "Pillager Banner"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "pillager_captain.png"
   },
   {
     "id": "zealot",
@@ -1111,7 +1187,8 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       },
       {
         "item": {
@@ -1119,9 +1196,11 @@
           "en": "Arrow"
         },
         "qty": "0-3",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "arrow"
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "zealot_plains",
@@ -1152,7 +1231,8 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       },
       {
         "item": {
@@ -1160,9 +1240,11 @@
           "en": "Arrow"
         },
         "qty": "0-3",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "arrow"
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "zealot_snowy",
@@ -1193,7 +1275,8 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       },
       {
         "item": {
@@ -1201,9 +1284,11 @@
           "en": "Arrow"
         },
         "qty": "0-3",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "arrow"
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "zealot_jungle",
@@ -1234,7 +1319,8 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       },
       {
         "item": {
@@ -1242,9 +1328,11 @@
           "en": "Arrow"
         },
         "qty": "0-3",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "arrow"
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "bone_lord",
@@ -1275,9 +1363,11 @@
           "en": "Bone"
         },
         "qty": "2-4",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "bone"
       }
-    ]
+    ],
+    "image": "bone_lord.png"
   },
   {
     "id": "ancient_bone_lord",
@@ -1309,9 +1399,11 @@
           "en": "Bone"
         },
         "qty": "3-6",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "bone"
       }
-    ]
+    ],
+    "image": "ancient_bone_lord.png"
   },
   {
     "id": "white_ghoul",
@@ -1340,9 +1432,11 @@
           "en": "Ghoul Flesh"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "ghoul_flesh"
       }
-    ]
+    ],
+    "image": "white_ghoul.png"
   },
   {
     "id": "black_ghoul",
@@ -1371,9 +1465,11 @@
           "en": "Ghoul Flesh"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "ghoul_flesh"
       }
-    ]
+    ],
+    "image": "black_ghoul.png"
   },
   {
     "id": "shadow",
@@ -1404,9 +1500,11 @@
           "en": "Soul Stone"
         },
         "qty": "1",
-        "chance": "rare"
+        "chance": "rare",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "shadow.png"
   },
   {
     "id": "revenant",
@@ -1437,7 +1535,8 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       },
       {
         "item": {
@@ -1445,9 +1544,11 @@
           "en": "Rotten Flesh"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "rotten_flesh"
       }
-    ]
+    ],
+    "image": "revenant.png"
   },
   {
     "id": "brown_slime",
@@ -1476,9 +1577,11 @@
           "en": "Brown Slime Ball"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "brown_slimeball"
       }
-    ]
+    ],
+    "image": "brown_slime.png"
   },
   {
     "id": "red_slime",
@@ -1509,9 +1612,11 @@
           "en": "Red Slime Ball"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "red_slimeball"
       }
-    ]
+    ],
+    "image": "red_slime.png"
   },
   {
     "id": "grey_slime",
@@ -1540,9 +1645,11 @@
           "en": "Grey Slime Ball"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "grey_slimeball"
       }
-    ]
+    ],
+    "image": "grey_slime.png"
   },
   {
     "id": "black_slime",
@@ -1573,9 +1680,11 @@
           "en": "Black Slime Ball"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "black_slimeball"
       }
-    ]
+    ],
+    "image": "black_slime.png"
   },
   {
     "id": "shadow_bat",
@@ -1607,9 +1716,11 @@
           "en": "Vampire Bat Fang"
         },
         "qty": "1",
-        "chance": "rare"
+        "chance": "rare",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "shadow_bat.png"
   },
   {
     "id": "explosive_silverfish",
@@ -1641,9 +1752,11 @@
           "en": "Gunpowder"
         },
         "qty": "0-1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "gunpowder"
       }
-    ]
+    ],
+    "image": "explosive_silverfish.png"
   },
   {
     "id": "copper_poison_silverfish",
@@ -1675,9 +1788,11 @@
           "en": "Copper Ingot"
         },
         "qty": "0-1",
-        "chance": "rare"
+        "chance": "rare",
+        "itemId": "copper_ingot"
       }
-    ]
+    ],
+    "image": "copper_poison_silverfish.png"
   },
   {
     "id": "ancient_silverfish",
@@ -1709,9 +1824,11 @@
           "en": "Flint"
         },
         "qty": "0-1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "flint"
       }
-    ]
+    ],
+    "image": "ancient_silverfish.png"
   },
   {
     "id": "clay_golem",
@@ -1740,9 +1857,11 @@
           "en": "Coal"
         },
         "qty": "0-2",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "coal"
       }
-    ]
+    ],
+    "image": "clay_golem.png"
   },
   {
     "id": "skeleton_lord",
@@ -1773,7 +1892,8 @@
           "en": "Skeleton Lord Heart"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -1781,9 +1901,11 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       }
-    ]
+    ],
+    "image": "skeleton_lord.png"
   },
   {
     "id": "ancient_skeleton_lord",
@@ -1815,7 +1937,8 @@
           "en": "Skeleton Lord Heart"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -1823,9 +1946,11 @@
           "en": "Bone"
         },
         "qty": "0-3",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       }
-    ]
+    ],
+    "image": "ancient_skeleton_lord.png"
   },
   {
     "id": "variant_skeleton_lord",
@@ -1857,7 +1982,8 @@
           "en": "Skeleton Lord Heart"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -1865,9 +1991,11 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       }
-    ]
+    ],
+    "image": "variant_skeleton_lord.png"
   },
   {
     "id": "obsidian_golem",
@@ -1898,9 +2026,11 @@
           "en": "Obsidian"
         },
         "qty": "2-4",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "obsidian_golem.png"
   },
   {
     "id": "plains_zombie",
@@ -1931,9 +2061,11 @@
           "en": "Rotten Flesh"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "rotten_flesh"
       }
-    ]
+    ],
+    "image": "plains_zombie.png"
   },
   {
     "id": "plains_skeleton",
@@ -1962,7 +2094,8 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       },
       {
         "item": {
@@ -1970,9 +2103,11 @@
           "en": "Arrow"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "arrow"
       }
-    ]
+    ],
+    "image": "plains_skeleton.png"
   },
   {
     "id": "plains_creeper",
@@ -2003,9 +2138,11 @@
           "en": "Gunpowder"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "gunpowder"
       }
-    ]
+    ],
+    "image": "plains_creeper.png"
   },
   {
     "id": "plains_spider",
@@ -2036,7 +2173,8 @@
           "en": "String"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "string"
       },
       {
         "item": {
@@ -2044,9 +2182,11 @@
           "en": "Spider Eye"
         },
         "qty": "0-1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "spider_eye"
       }
-    ]
+    ],
+    "image": "plains_spider.png"
   },
   {
     "id": "snowy_zombie",
@@ -2077,7 +2217,8 @@
           "en": "Rotten Flesh"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "rotten_flesh"
       },
       {
         "item": {
@@ -2085,9 +2226,11 @@
           "en": "Snowball"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "snowy_zombie.png"
   },
   {
     "id": "snowy_skeleton",
@@ -2116,7 +2259,8 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       },
       {
         "item": {
@@ -2124,9 +2268,11 @@
           "en": "Snowball"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "snowy_skeleton.png"
   },
   {
     "id": "snowy_creeper",
@@ -2157,7 +2303,8 @@
           "en": "Gunpowder"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "gunpowder"
       },
       {
         "item": {
@@ -2165,9 +2312,11 @@
           "en": "Snowball"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "snowy_creeper.png"
   },
   {
     "id": "snowy_spider",
@@ -2199,7 +2348,8 @@
           "en": "String"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "string"
       },
       {
         "item": {
@@ -2207,9 +2357,11 @@
           "en": "Snowball"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "snowy_spider.png"
   },
   {
     "id": "jungle_zombie",
@@ -2240,9 +2392,11 @@
           "en": "Rotten Flesh"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "rotten_flesh"
       }
-    ]
+    ],
+    "image": "jungle_zombie.png"
   },
   {
     "id": "jungle_skeleton",
@@ -2271,7 +2425,8 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       },
       {
         "item": {
@@ -2279,9 +2434,11 @@
           "en": "Arrow"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "arrow"
       }
-    ]
+    ],
+    "image": "jungle_skeleton.png"
   },
   {
     "id": "jungle_creeper",
@@ -2312,9 +2469,11 @@
           "en": "Gunpowder"
         },
         "qty": "0-2",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "gunpowder"
       }
-    ]
+    ],
+    "image": "jungle_creeper.png"
   },
   {
     "id": "jungle_spider",
@@ -2346,7 +2505,8 @@
           "en": "Spider Eye"
         },
         "qty": "0-1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "spider_eye"
       },
       {
         "item": {
@@ -2354,9 +2514,11 @@
           "en": "String"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "string"
       }
-    ]
+    ],
+    "image": "jungle_spider.png"
   },
   {
     "id": "tnt_skeleton",
@@ -2387,7 +2549,8 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       },
       {
         "item": {
@@ -2395,7 +2558,8 @@
           "en": "Arrow"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "arrow"
       },
       {
         "item": {
@@ -2403,9 +2567,11 @@
           "en": "Gunpowder"
         },
         "qty": "0-1",
-        "chance": "rare"
+        "chance": "rare",
+        "itemId": "gunpowder"
       }
-    ]
+    ],
+    "image": "tnt_skeleton.png"
   },
   {
     "id": "confused_creeper",
@@ -2436,9 +2602,11 @@
           "en": "Gunpowder"
         },
         "qty": "0-2",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "gunpowder"
       }
-    ]
+    ],
+    "image": "confused_creeper.png"
   },
   {
     "id": "end_lightning_creeper",
@@ -2469,9 +2637,11 @@
           "en": "Ender Pearl"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "ender_pearl"
       }
-    ]
+    ],
+    "image": "end_lightning_creeper.png"
   },
   {
     "id": "little_creeper",
@@ -2502,9 +2672,11 @@
           "en": "Gunpowder"
         },
         "qty": "0-1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "gunpowder"
       }
-    ]
+    ],
+    "image": "little_creeper.png"
   },
   {
     "id": "bomber",
@@ -2536,9 +2708,11 @@
           "en": "Gunpowder"
         },
         "qty": "0-2",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "gunpowder"
       }
-    ]
+    ],
+    "image": "bomber.png"
   },
   {
     "id": "corrupted_snowman",
@@ -2569,9 +2743,11 @@
           "en": "Snow Block"
         },
         "qty": "1-2",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "corrupted_snowman.png"
   },
   {
     "id": "desert_guardian",
@@ -2600,7 +2776,8 @@
           "en": "Bone"
         },
         "qty": "0-3",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       },
       {
         "item": {
@@ -2608,9 +2785,11 @@
           "en": "Arrow"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "arrow"
       }
-    ]
+    ],
+    "image": "desert_guardian.png"
   },
   {
     "id": "pigman_leader",
@@ -2642,7 +2821,8 @@
           "en": "Gold Ingot"
         },
         "qty": "0-1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "gold_ingot"
       },
       {
         "item": {
@@ -2650,9 +2830,11 @@
           "en": "Nether Star"
         },
         "qty": "1",
-        "chance": "rare"
+        "chance": "rare",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "pigman_leader.png"
   },
   {
     "id": "child_skeleton",
@@ -2681,9 +2863,11 @@
           "en": "Bone"
         },
         "qty": "1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "bone"
       }
-    ]
+    ],
+    "image": "child_skeleton.png"
   },
   {
     "id": "child_iron_golem",
@@ -2712,9 +2896,11 @@
           "en": "Iron Ingot"
         },
         "qty": "1-3",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "iron_ingot"
       }
-    ]
+    ],
+    "image": "child_iron_golem.png"
   },
   {
     "id": "child_ghast",
@@ -2746,9 +2932,11 @@
           "en": "Gunpowder"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "gunpowder"
       }
-    ]
+    ],
+    "image": "child_ghast.png"
   },
   {
     "id": "variant_child_ghast",
@@ -2780,9 +2968,11 @@
           "en": "Gunpowder"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "gunpowder"
       }
-    ]
+    ],
+    "image": "variant_child_ghast.png"
   },
   {
     "id": "variant_zombie",
@@ -2814,9 +3004,11 @@
           "en": "Rotten Flesh"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "rotten_flesh"
       }
-    ]
+    ],
+    "image": "variant_zombie.png"
   },
   {
     "id": "variant_skeleton",
@@ -2846,7 +3038,8 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       },
       {
         "item": {
@@ -2854,9 +3047,11 @@
           "en": "Arrow"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "arrow"
       }
-    ]
+    ],
+    "image": "variant_skeleton.png"
   },
   {
     "id": "variant_spider",
@@ -2889,7 +3084,8 @@
           "en": "Spider Eye"
         },
         "qty": "0-1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "spider_eye"
       },
       {
         "item": {
@@ -2897,9 +3093,11 @@
           "en": "String"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "string"
       }
-    ]
+    ],
+    "image": "variant_spider.png"
   },
   {
     "id": "variant_creeper",
@@ -2930,9 +3128,11 @@
           "en": "Gunpowder"
         },
         "qty": "0-2",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "gunpowder"
       }
-    ]
+    ],
+    "image": "variant_creeper.png"
   },
   {
     "id": "him",
@@ -2965,9 +3165,11 @@
           "en": "Nether Star"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "him.png"
   },
   {
     "id": "slime",
@@ -2996,9 +3198,11 @@
           "en": "Slimeball"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "slime.png"
   },
   {
     "id": "ghast",
@@ -3030,7 +3234,8 @@
           "en": "Gunpowder"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "gunpowder"
       },
       {
         "item": {
@@ -3038,9 +3243,11 @@
           "en": "Ghast Tear"
         },
         "qty": "0-1",
-        "chance": "rare"
+        "chance": "rare",
+        "itemId": "ghast_tear"
       }
-    ]
+    ],
+    "image": "ghast.png"
   },
   {
     "id": "cave_spider",
@@ -3071,7 +3278,8 @@
           "en": "String"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "string"
       },
       {
         "item": {
@@ -3079,9 +3287,11 @@
           "en": "Spider Eye"
         },
         "qty": "0-1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "spider_eye"
       }
-    ]
+    ],
+    "image": "cave_spider.png"
   },
   {
     "id": "blaze",
@@ -3114,9 +3324,11 @@
           "en": "Blaze Rod"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "blaze_rod"
       }
-    ]
+    ],
+    "image": "blaze.png"
   },
   {
     "id": "magma_cube",
@@ -3147,9 +3359,11 @@
           "en": "Magma Cream"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "magma_cream"
       }
-    ]
+    ],
+    "image": "magma_cube.png"
   },
   {
     "id": "wither",
@@ -3182,9 +3396,11 @@
           "en": "Nether Star"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "wither.png"
   },
   {
     "id": "enderman",
@@ -3215,9 +3431,11 @@
           "en": "Ender Pearl"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "ender_pearl"
       }
-    ]
+    ],
+    "image": "enderman.png"
   },
   {
     "id": "silverfish",
@@ -3241,7 +3459,8 @@
       "hu": "Kőből bújik elő, falkát hív",
       "en": "Hides in stone, calls pack"
     },
-    "drops": []
+    "drops": [],
+    "image": "silverfish.png"
   },
   {
     "id": "ender_dragon",
@@ -3273,7 +3492,8 @@
           "en": "Dragon Egg"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -3281,9 +3501,11 @@
           "en": "XP (massive)"
         },
         "qty": "12000",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "ender_dragon.png"
   },
   {
     "id": "iron_golem",
@@ -3312,7 +3534,8 @@
           "en": "Iron Ingot"
         },
         "qty": "3-5",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "iron_ingot"
       },
       {
         "item": {
@@ -3320,9 +3543,11 @@
           "en": "Poppy"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "iron_golem.png"
   },
   {
     "id": "vindicator",
@@ -3351,7 +3576,8 @@
           "en": "Emerald"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "emerald"
       },
       {
         "item": {
@@ -3359,9 +3585,11 @@
           "en": "Iron Axe"
         },
         "qty": "1",
-        "chance": "rare"
+        "chance": "rare",
+        "itemId": null
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "earthworm",
@@ -3390,9 +3618,11 @@
           "en": "Fertilizer"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "earthworm.png"
   },
   {
     "id": "crab",
@@ -3421,7 +3651,8 @@
           "en": "Crab Meat"
         },
         "qty": "1-2",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "crab_meat"
       },
       {
         "item": {
@@ -3429,9 +3660,11 @@
           "en": "Crab Leg"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "crab_leg"
       }
-    ]
+    ],
+    "image": "crab.png"
   },
   {
     "id": "mallard",
@@ -3462,9 +3695,11 @@
           "en": "Duck Meat"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "duck_meat"
       }
-    ]
+    ],
+    "image": "mallard.png"
   },
   {
     "id": "pig",
@@ -3493,9 +3728,11 @@
           "en": "Raw Porkchop"
         },
         "qty": "1-3",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "porkchop"
       }
-    ]
+    ],
+    "image": "pig.png"
   },
   {
     "id": "sheep",
@@ -3524,7 +3761,8 @@
           "en": "Wool"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "wool"
       },
       {
         "item": {
@@ -3532,9 +3770,11 @@
           "en": "Raw Mutton"
         },
         "qty": "1-2",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "sheep.png"
   },
   {
     "id": "cow",
@@ -3563,7 +3803,8 @@
           "en": "Raw Beef"
         },
         "qty": "1-3",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "beef"
       },
       {
         "item": {
@@ -3571,9 +3812,11 @@
           "en": "Leather"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "leather"
       }
-    ]
+    ],
+    "image": "cow.png"
   },
   {
     "id": "chicken",
@@ -3604,7 +3847,8 @@
           "en": "Raw Chicken"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "chicken"
       },
       {
         "item": {
@@ -3612,9 +3856,11 @@
           "en": "Feather"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "feather"
       }
-    ]
+    ],
+    "image": "chicken.png"
   },
   {
     "id": "wolf",
@@ -3638,7 +3884,8 @@
       "hu": "Szelídíthető, provokálásra agresszív",
       "en": "Tameable, aggressive when provoked"
     },
-    "drops": []
+    "drops": [],
+    "image": "wolf.png"
   },
   {
     "id": "mooshroom",
@@ -3667,7 +3914,8 @@
           "en": "Raw Beef"
         },
         "qty": "1-3",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "beef"
       },
       {
         "item": {
@@ -3675,7 +3923,8 @@
           "en": "Leather"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "leather"
       },
       {
         "item": {
@@ -3683,9 +3932,11 @@
           "en": "Mushroom"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "mooshroom.png"
   },
   {
     "id": "ocelot",
@@ -3707,7 +3958,8 @@
       "hu": "Dzsungelben él, creepereket elriaszt",
       "en": "Lives in jungles, scares creepers"
     },
-    "drops": []
+    "drops": [],
+    "image": "ocelot.png"
   },
   {
     "id": "horse",
@@ -3736,9 +3988,11 @@
           "en": "Leather"
         },
         "qty": "0-2",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": "leather"
       }
-    ]
+    ],
+    "image": "horse.png"
   },
   {
     "id": "medium_fish",
@@ -3767,9 +4021,11 @@
           "en": "Raw Fish"
         },
         "qty": "1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "medium_fish.png"
   },
   {
     "id": "turkey",
@@ -3798,7 +4054,8 @@
           "en": "Raw Turkey"
         },
         "qty": "1-3",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -3806,9 +4063,11 @@
           "en": "Feather"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "feather"
       }
-    ]
+    ],
+    "image": "turkey.png"
   },
   {
     "id": "scorpion",
@@ -3839,9 +4098,11 @@
           "en": "Scorpion Venom"
         },
         "qty": "1",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "scorpion.png"
   },
   {
     "id": "rat",
@@ -3873,9 +4134,11 @@
           "en": "Raw Rat"
         },
         "qty": "1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "rat.png"
   },
   {
     "id": "shark",
@@ -3904,9 +4167,11 @@
           "en": "Raw Shark Meat"
         },
         "qty": "2-4",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "shark.png"
   },
   {
     "id": "bee",
@@ -3938,9 +4203,11 @@
           "en": "Honeycomb"
         },
         "qty": "1",
-        "chance": "uncommon"
+        "chance": "uncommon",
+        "itemId": null
       }
-    ]
+    ],
+    "image": "bee.png"
   },
   {
     "id": "coyote",
@@ -3971,7 +4238,8 @@
           "en": "Raw Wolf Meat"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": null
       },
       {
         "item": {
@@ -3979,9 +4247,11 @@
           "en": "Leather"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "leather"
       }
-    ]
+    ],
+    "image": "coyote.png"
   },
   {
     "id": "cougar",
@@ -4010,7 +4280,8 @@
           "en": "Raw Lion Meat"
         },
         "qty": "1-3",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -4018,9 +4289,11 @@
           "en": "Leather"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "leather"
       }
-    ]
+    ],
+    "image": "cougar.png"
   },
   {
     "id": "black_bear",
@@ -4049,7 +4322,8 @@
           "en": "Raw Bear Meat"
         },
         "qty": "1-3",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -4057,7 +4331,8 @@
           "en": "Leather"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "leather"
       },
       {
         "item": {
@@ -4065,9 +4340,11 @@
           "en": "Bone"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       }
-    ]
+    ],
+    "image": "black_bear.png"
   },
   {
     "id": "yak",
@@ -4096,7 +4373,8 @@
           "en": "Raw Beef"
         },
         "qty": "1-3",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "beef"
       },
       {
         "item": {
@@ -4104,9 +4382,11 @@
           "en": "Leather"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "leather"
       }
-    ]
+    ],
+    "image": "yak.png"
   },
   {
     "id": "musk_ox",
@@ -4135,7 +4415,8 @@
           "en": "Raw Beef"
         },
         "qty": "1-3",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "beef"
       },
       {
         "item": {
@@ -4143,7 +4424,8 @@
           "en": "Leather"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "leather"
       },
       {
         "item": {
@@ -4151,9 +4433,11 @@
           "en": "Bone"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       }
-    ]
+    ],
+    "image": "musk_ox.png"
   },
   {
     "id": "camel",
@@ -4182,7 +4466,8 @@
           "en": "Raw Camel Meat"
         },
         "qty": "1-3",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -4190,9 +4475,11 @@
           "en": "Leather"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "leather"
       }
-    ]
+    ],
+    "image": "camel.png"
   },
   {
     "id": "boar",
@@ -4221,7 +4508,8 @@
           "en": "Raw Porkchop"
         },
         "qty": "1-3",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "porkchop"
       },
       {
         "item": {
@@ -4229,9 +4517,11 @@
           "en": "Leather"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "leather"
       }
-    ]
+    ],
+    "image": "boar.png"
   },
   {
     "id": "hyena",
@@ -4262,9 +4552,11 @@
           "en": "Rotten Flesh"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "rotten_flesh"
       }
-    ]
+    ],
+    "image": "hyena.png"
   },
   {
     "id": "saber_toothed_tiger",
@@ -4293,7 +4585,8 @@
           "en": "Raw Tiger Meat"
         },
         "qty": "2-4",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -4301,7 +4594,8 @@
           "en": "Leather"
         },
         "qty": "1-2",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "leather"
       },
       {
         "item": {
@@ -4309,9 +4603,11 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       }
-    ]
+    ],
+    "image": "saber_toothed_tiger.png"
   },
   {
     "id": "panther",
@@ -4340,7 +4636,8 @@
           "en": "Raw Lion Meat"
         },
         "qty": "1-2",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -4348,9 +4645,11 @@
           "en": "Leather"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "leather"
       }
-    ]
+    ],
+    "image": "panther.png"
   },
   {
     "id": "polar_bear",
@@ -4379,7 +4678,8 @@
           "en": "Raw Bear Meat"
         },
         "qty": "2-4",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -4387,7 +4687,8 @@
           "en": "Leather"
         },
         "qty": "1-2",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "leather"
       },
       {
         "item": {
@@ -4395,9 +4696,11 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       }
-    ]
+    ],
+    "image": "polar_bear.png"
   },
   {
     "id": "grizzly_bear",
@@ -4426,7 +4729,8 @@
           "en": "Raw Bear Meat"
         },
         "qty": "2-4",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -4434,7 +4738,8 @@
           "en": "Leather"
         },
         "qty": "1-2",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "leather"
       },
       {
         "item": {
@@ -4442,9 +4747,11 @@
           "en": "Bone"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       }
-    ]
+    ],
+    "image": "grizzly_bear.png"
   },
   {
     "id": "deer",
@@ -4473,7 +4780,8 @@
           "en": "Raw Venison"
         },
         "qty": "1-3",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -4481,7 +4789,8 @@
           "en": "Leather"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "leather"
       },
       {
         "item": {
@@ -4489,9 +4798,11 @@
           "en": "Bone"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "bone"
       }
-    ]
+    ],
+    "image": "deer.png"
   },
   {
     "id": "duck",
@@ -4520,7 +4831,8 @@
           "en": "Duck Meat"
         },
         "qty": "1-2",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "duck_meat"
       },
       {
         "item": {
@@ -4528,9 +4840,11 @@
           "en": "Feather"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "feather"
       }
-    ]
+    ],
+    "image": "duck.png"
   },
   {
     "id": "elephant",
@@ -4559,7 +4873,8 @@
           "en": "Raw Elephant Meat"
         },
         "qty": "2-5",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -4567,9 +4882,11 @@
           "en": "Leather"
         },
         "qty": "1-3",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "leather"
       }
-    ]
+    ],
+    "image": "elephant.png"
   },
   {
     "id": "llama",
@@ -4598,7 +4915,8 @@
           "en": "Raw Llama Meat"
         },
         "qty": "1-2",
-        "chance": "always"
+        "chance": "always",
+        "itemId": null
       },
       {
         "item": {
@@ -4606,9 +4924,11 @@
           "en": "Leather"
         },
         "qty": "0-1",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "leather"
       }
-    ]
+    ],
+    "image": "llama.png"
   },
   {
     "id": "pheasant",
@@ -4639,7 +4959,8 @@
           "en": "Raw Chicken"
         },
         "qty": "1-2",
-        "chance": "always"
+        "chance": "always",
+        "itemId": "chicken"
       },
       {
         "item": {
@@ -4647,8 +4968,10 @@
           "en": "Feather"
         },
         "qty": "0-2",
-        "chance": "common"
+        "chance": "common",
+        "itemId": "feather"
       }
-    ]
+    ],
+    "image": "pheasant.png"
   }
 ]

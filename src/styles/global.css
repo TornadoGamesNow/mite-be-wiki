@@ -237,6 +237,41 @@ mark.search-hl { background: rgba(240,192,64,.3); color: var(--gold); padding: 0
 h2:hover .anchor-link, h3:hover .anchor-link { opacity: 1; }
 .anchor-link:hover { color: var(--gold); }
 
+/* ===== MobExplorer: Bestiary cards + diff badges ===== */
+.diff-badge { display: inline-flex; align-items: center; justify-content: center; padding: 1px 7px; border-radius: 20px; font-size: .72em; font-weight: 700; }
+.diff-early { background: rgba(78,204,163,.15); color: var(--green); border: 1px solid rgba(78,204,163,.4); }
+.diff-mid   { background: rgba(240,192,64,.15); color: var(--gold);  border: 1px solid rgba(240,192,64,.4); }
+.diff-late  { background: rgba(233,69,96,.15);  color: var(--accent);border: 1px solid rgba(233,69,96,.4); }
+.diff-boss  { background: rgba(179,136,255,.18);color: var(--adamantium); border: 1px solid rgba(179,136,255,.5); }
+
+.mob-card-grid { display: none; }
+.mob-table-wrap { display: block; }
+
+/* Mobile: replace table with card grid */
+@media (max-width: 640px) {
+  .mob-table-wrap { display: none !important; }
+  .mob-card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .mob-card {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 12px;
+    background: var(--surface); border: 1px solid var(--surface2); border-radius: 8px;
+    cursor: pointer; transition: background .15s, border-color .15s;
+  }
+  .mob-card:active { background: var(--surface2); }
+  .mob-card-selected { border-color: var(--gold) !important; background: rgba(240,192,64,.07) !important; }
+  .mob-card-sprite { width: 40px; height: 40px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .mob-card-body { flex: 1; min-width: 0; }
+  .mob-card-name { font-weight: 600; font-size: .9em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 3px; }
+  .mob-card-stats { display: flex; gap: 12px; }
+  .mob-card-stat { display: flex; align-items: baseline; gap: 3px; font-size: .82em; }
+  /* Drawer full width on mobile */
+  .mob-drawer-panel { width: 100% !important; }
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
   .site-container { flex-direction: column; }
