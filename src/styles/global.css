@@ -331,7 +331,12 @@ h2:hover .anchor-link, h3:hover .anchor-link { opacity: 1; }
 .filter-btn:hover { border-color:var(--gold); color:var(--text); }
 .filter-btn-active { background:var(--surface2); color:var(--text); border-color:var(--gold); }
 
-/* ===== MOB ROW HOVER ===== */
+/* ===== MOB TABLE ===== */
+.mob-table-wrap { scrollbar-width: thin; scrollbar-color: var(--surface2) transparent; }
+.mob-table-wrap::-webkit-scrollbar { width: 6px; }
+.mob-table-wrap::-webkit-scrollbar-track { background: transparent; }
+.mob-table-wrap::-webkit-scrollbar-thumb { background: var(--surface2); border-radius: 3px; }
+.mob-table-wrap::-webkit-scrollbar-thumb:hover { background: var(--text2); }
 .mob-row { transition: background .1s; }
 .mob-row:hover { background: rgba(255,255,255,.04) !important; }
 .mob-row-selected { border-left: 3px solid var(--gold) !important; background: rgba(240,192,64,.05) !important; }

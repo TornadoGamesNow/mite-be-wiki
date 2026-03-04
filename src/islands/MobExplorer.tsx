@@ -330,7 +330,7 @@ export default function MobExplorer() {
       </div>
 
       {/* Table */}
-      <div style={{ overflowY: 'auto', maxHeight: '70vh', borderRadius: 6, border: '1px solid var(--surface2)' }}>
+      <div className="mob-table-wrap" style={{ overflowY: 'auto', maxHeight: '70vh', borderRadius: 6, border: '1px solid var(--surface2)' }}>
       <table style={{ width: '100%', borderCollapse: 'collapse' }}>
         <colgroup>
           <col style={{ width: '50%' }} />
