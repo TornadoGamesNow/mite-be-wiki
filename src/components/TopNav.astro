@@ -4,12 +4,13 @@ interface Props {
 }
 const { currentPage = '' } = Astro.props;
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const pages = [
-  { href: '.', id: 'home', hu: 'Kezdőlap', en: 'Home' },
-  { href: 'reference', id: 'reference', hu: 'Referencia', en: 'Reference' },
-  { href: 'install', id: 'install', hu: 'Telepítés', en: 'Install' },
-  { href: 'faq', id: 'faq', hu: 'GYIK', en: 'FAQ' },
-  { href: 'recipes', id: 'recipes', hu: 'Receptek', en: 'Recipes' },
+  { href: `${base}/`, id: 'home', hu: 'Kezdőlap', en: 'Home' },
+  { href: `${base}/reference/`, id: 'reference', hu: 'Referencia', en: 'Reference' },
+  { href: `${base}/install/`, id: 'install', hu: 'Telepítés', en: 'Install' },
+  { href: `${base}/faq/`, id: 'faq', hu: 'GYIK', en: 'FAQ' },
+  { href: `${base}/recipes/`, id: 'recipes', hu: 'Receptek', en: 'Recipes' },
 ];
 ---
 <nav class="top-nav">
