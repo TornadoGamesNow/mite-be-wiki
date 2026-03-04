@@ -25,6 +25,7 @@ const sidebarGroups = {
         { href: '#fog-event', label: 'Ködfolt esemény' },
         { href: '#achievements', label: 'Teljesítmények' },
         { href: '#keybinds', label: 'Gyorsbillentyűk' },
+        { href: '#structures', label: '🏛️ Struktúrák' },
       ],
     },
   ],
@@ -46,6 +47,7 @@ const sidebarGroups = {
         { href: '#fog-event', label: 'Fog Event' },
         { href: '#achievements', label: 'Achievements' },
         { href: '#keybinds', label: 'Keybindings' },
+        { href: '#structures', label: '🏛️ Structures' },
       ],
     },
   ],
@@ -693,6 +695,197 @@ const sidebarGroups = {
 </table>
 <div class="info-box">💡 Default key assignments may vary by installation. All keybindings can be customized under Options → Controls in-game.</div>
 </div></div></div>
+</div>
+
+<!-- ═══════════════════════ STRUKTÚRÁK / STRUCTURES ═══════════════════════ -->
+<div data-lang="hu" id="structures">
+<h2>🏛️ Struktúrák & Helyszínek</h2>
+<p>A MITE:BE világa számos egyedi struktúrát tartalmaz — mindegyik sajátos mob spawnerekkel, jutalomládákkal és kihívásokkal. Az alábbi táblázat összefoglalja a főbb helyszíneket és lootjukat.</p>
+
+<table>
+  <tr><th>Struktúra</th><th>Dimenzió</th><th>Legfontosabb loot</th><th>Mob spawnerek</th><th>Megjegyzés</th></tr>
+  <tr>
+    <td><strong style="color:var(--gold)">Pillager Erőd</strong></td>
+    <td>Fővilág</td>
+    <td>Tudáskönyv, fejlett fegyverek, ritka anyagok</td>
+    <td>Pillager, Pillager Kapitány, Zombie Caller</td>
+    <td>v0.9.0: Obszidián portál az alapkőrétegen → teleportál ide!</td>
+  </tr>
+  <tr>
+    <td><strong>Dungeon (Börtön)</strong></td>
+    <td>Fővilág / Föld alatti</td>
+    <td>Bájitalok, arany, fegyverek, Tudáskönyv</td>
+    <td>Zombi, Csontváz, Pók (véletlenszerű)</td>
+    <td>Kő falak, 1-2 láda, mob spawner blokk közepén</td>
+  </tr>
+  <tr>
+    <td><strong>Faluközpont (Village)</strong></td>
+    <td>Fővilág</td>
+    <td>Étel, alapanyagok, kereskedelem</td>
+    <td>Harcos / Utazó / Bányász Lakos (Partner NPC)</td>
+    <td>Falvak ritkán spawnolnak — kerülj Plains biome-ba!</td>
+  </tr>
+  <tr>
+    <td><strong>Sivatag Őr Torony</strong></td>
+    <td>Fővilág (Sivatag)</td>
+    <td>Ritka tárgyak, sivatagi kincslőcs</td>
+    <td>Sivatag Őr</td>
+    <td>Csak sivatag biome-ban generálódik</td>
+  </tr>
+  <tr>
+    <td><strong>Nether Erőd</strong></td>
+    <td>Nether</td>
+    <td>Hervadt Rózsa (Wither idézéshez), Nether Wart, Blaze Rod</td>
+    <td>Blaze, Wither Csontváz, Lángoszlop</td>
+    <td>Wither boss idézéséhez szükséges Hervadt Rózsa itt van</td>
+  </tr>
+  <tr>
+    <td><strong>Föld Alatti Világ (Underworld)</strong></td>
+    <td>Fővilág Y&lt;0</td>
+    <td>Tudáskönyvek, ritka ércek, Keménykő szint tárgyak</td>
+    <td>Revenant, Kísértet, Csontváz Ura, Wight Gárda</td>
+    <td>Speciális rétegek: Kő → Keménykő → Ókő → Ősidők</td>
+  </tr>
+  <tr>
+    <td><strong>Gombaerdő Harci Torony</strong></td>
+    <td>Fővilág (Mushroom Island)</td>
+    <td>Jutalomládák, fejlett anyagok</td>
+    <td>Erős szörnyek, egyedi őrök</td>
+    <td>Mushroom biome-ban generálódik — ritka struktúra</td>
+  </tr>
+  <tr>
+    <td><strong>End Szigetek</strong></td>
+    <td>End</td>
+    <td>Elytra (ha van), chorus fruit, End kőzetek</td>
+    <td>Enderman, Sárkány Tojás</td>
+    <td>Eléréshez: Core Breaker → Enhanced Ender Eye folyamat</td>
+  </tr>
+</table>
+
+<h3>Pillager Erőd — részletek</h3>
+<div class="info">🔮 <strong>v0.9.0 különlegesség:</strong> A fővilágban, az alapkőrétegen (<em>y=0</em> vagy alatta) <strong>normál obszidián portál meggyújtása</strong> → 10 másodperc Hányinger → 5 másodperc múlva az összes játékos a <strong>Pillager Erőd romjaira</strong> teleportálódik!</div>
+
+<ul>
+  <li>A Pillager Erőd a játék egyik leggazdagabb jutalom-helyszíne</li>
+  <li><strong>Tudáskönyv:</strong> Jutalomládából ejthető — új recepteket nyit meg, majd Könyv tárggyá alakul (XP forrásaként)</li>
+  <li><strong>Zombi Hívó (Zombie Caller):</strong> Erős mini-boss, zombi rajt idéz</li>
+  <li><strong>Pillager Kapitány:</strong> Speciális vezér, különleges dropok</li>
+  <li>Ajánlott: Mithril vagy jobb felszerelés a teljes erőd átkutatásához</li>
+</ul>
+
+<h3>Föld Alatti Struktúrák</h3>
+<p>A föld alatti rétegek nem csak bányászásra valók — saját mini-struktúrákat és szobákat tartalmaznak:</p>
+<table>
+  <tr><th>Réteg (Y szint)</th><th>Blokk típus</th><th>Különleges struktúrák</th><th>Jellemző mob</th></tr>
+  <tr><td>Y 0 – (-30)</td><td>Keménykő (Hardstone)</td><td>Keménykő kamrák, ér-barlangok</td><td>Revenant, Wight</td></tr>
+  <tr><td>Y (-30) – (-60)</td><td>Ókő (Ancient Stone)</td><td>Kristály barlangok, Ősi Csontváz sírhelyek</td><td>Wight Gárda, Csontváz Ura</td></tr>
+  <tr><td>Y (-60)+</td><td>Ősidők köve</td><td>Titokzatos romok, Adamantium erek</td><td>Revenant, speciális ellenségek</td></tr>
+</table>
+
+<h3>Loot prioritás útmutató</h3>
+<div class="tip">💡 <strong>Mire érdemes vadászni?</strong>
+<ul style="margin-top:8px">
+  <li><strong>Korai játék:</strong> Faluközpont → Partner NPC-k → alapanyag kereskedelem</li>
+  <li><strong>Közép játék:</strong> Pillager Erőd → Tudáskönyv + Pillager drops</li>
+  <li><strong>Nether:</strong> Nether Erőd → Hervadt Rózsa (Wither idézéshez kötelező)</li>
+  <li><strong>Késői játék:</strong> Föld Alatti → Csontváz Ura drops + Adamantium érc</li>
+  <li><strong>End:</strong> Core Breaker → Enhanced Ender Eye → Dragon legyőzése</li>
+</ul></div>
+</div>
+
+<div data-lang="en" id="structures">
+<h2>🏛️ Structures & Locations</h2>
+<p>The MITE:BE world contains numerous unique structures — each with its own mob spawners, loot chests, and challenges. The table below summarizes the main locations and their loot.</p>
+
+<table>
+  <tr><th>Structure</th><th>Dimension</th><th>Key Loot</th><th>Mob Spawners</th><th>Notes</th></tr>
+  <tr>
+    <td><strong style="color:var(--gold)">Pillager Fortress</strong></td>
+    <td>Overworld</td>
+    <td>Knowledge Book, advanced weapons, rare materials</td>
+    <td>Pillager, Pillager Captain, Zombie Caller</td>
+    <td>v0.9.0: Obsidian portal at bedrock level → teleports here!</td>
+  </tr>
+  <tr>
+    <td><strong>Dungeon</strong></td>
+    <td>Overworld / Underground</td>
+    <td>Potions, gold, weapons, Knowledge Book</td>
+    <td>Zombie, Skeleton, Spider (random)</td>
+    <td>Stone walls, 1-2 chests, mob spawner in the middle</td>
+  </tr>
+  <tr>
+    <td><strong>Village</strong></td>
+    <td>Overworld</td>
+    <td>Food, basic materials, trading</td>
+    <td>Warrior / Traveler / Miner Villager (Partner NPCs)</td>
+    <td>Villages spawn rarely — look in Plains biomes!</td>
+  </tr>
+  <tr>
+    <td><strong>Desert Guardian Tower</strong></td>
+    <td>Overworld (Desert)</td>
+    <td>Rare items, desert treasure chests</td>
+    <td>Desert Guardian</td>
+    <td>Only generates in desert biomes</td>
+  </tr>
+  <tr>
+    <td><strong>Nether Fortress</strong></td>
+    <td>Nether</td>
+    <td>Wither Rose (needed for Wither summon), Nether Wart, Blaze Rod</td>
+    <td>Blaze, Wither Skeleton, Red Blaze</td>
+    <td>Wither Rose from loot chests here — required for Wither boss</td>
+  </tr>
+  <tr>
+    <td><strong>Underground World</strong></td>
+    <td>Overworld Y&lt;0</td>
+    <td>Knowledge Books, rare ores, Hardstone-tier items</td>
+    <td>Revenant, Shadow, Skeleton Lord, Wight Guard</td>
+    <td>Special layers: Stone → Hardstone → Ancient Stone → Primordial</td>
+  </tr>
+  <tr>
+    <td><strong>Mushroom Forest Battle Tower</strong></td>
+    <td>Overworld (Mushroom Island)</td>
+    <td>Loot chests, advanced materials</td>
+    <td>Strong monsters, unique guards</td>
+    <td>Generates in Mushroom biomes — rare structure</td>
+  </tr>
+  <tr>
+    <td><strong>End Islands</strong></td>
+    <td>The End</td>
+    <td>Elytra (if present), chorus fruit, End stone</td>
+    <td>Enderman, Dragon Egg</td>
+    <td>Access requires: Core Breaker → Enhanced Ender Eye process</td>
+  </tr>
+</table>
+
+<h3>Pillager Fortress — Details</h3>
+<div class="info">🔮 <strong>v0.9.0 special:</strong> In the overworld, lighting a <strong>normal obsidian portal at bedrock level</strong> (y=0 or below) → 10 seconds Nausea → 5 seconds later all players teleport to the <strong>Pillager Fortress ruins</strong>!</div>
+
+<ul>
+  <li>The Pillager Fortress is one of the richest loot locations in the game</li>
+  <li><strong>Knowledge Book:</strong> Can be found in loot chests — unlocks new recipes, then transforms into a Book (XP source)</li>
+  <li><strong>Zombie Caller:</strong> Strong mini-boss that summons zombie hordes</li>
+  <li><strong>Pillager Captain:</strong> Special leader with unique drops</li>
+  <li>Recommended: Mithril or better gear to clear the entire fortress</li>
+</ul>
+
+<h3>Underground Structures</h3>
+<p>Underground layers aren't just for mining — they contain their own mini-structures and chambers:</p>
+<table>
+  <tr><th>Layer (Y level)</th><th>Block Type</th><th>Special Structures</th><th>Typical Mob</th></tr>
+  <tr><td>Y 0 – (-30)</td><td>Hardstone</td><td>Hardstone chambers, ore caves</td><td>Revenant, Wight</td></tr>
+  <tr><td>Y (-30) – (-60)</td><td>Ancient Stone</td><td>Crystal caves, Ancient Skeleton burial sites</td><td>Wight Guard, Skeleton Lord</td></tr>
+  <tr><td>Y (-60)+</td><td>Primordial Stone</td><td>Mysterious ruins, Adamantium veins</td><td>Revenant, special enemies</td></tr>
+</table>
+
+<h3>Loot Priority Guide</h3>
+<div class="tip">💡 <strong>What's worth hunting?</strong>
+<ul style="margin-top:8px">
+  <li><strong>Early game:</strong> Village → Partner NPCs → material trading</li>
+  <li><strong>Mid game:</strong> Pillager Fortress → Knowledge Book + Pillager drops</li>
+  <li><strong>Nether:</strong> Nether Fortress → Wither Rose (required for Wither summon)</li>
+  <li><strong>Late game:</strong> Underground → Skeleton Lord drops + Adamantium ore</li>
+  <li><strong>End game:</strong> Core Breaker → Enhanced Ender Eye → defeat Dragon</li>
+</ul></div>
 </div>
 
 <div data-lang="hu" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
