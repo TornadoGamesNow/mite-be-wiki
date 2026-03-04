@@ -130,7 +130,12 @@ export default function MobExplorer() {
 
   function openMob(mob: Mob) {
     setSelectedMob(mob);
-    history.pushState({ mobDrawer: true }, '', `?mob=${mob.id}`);
+    // Ha már nyitva van drawer: replace (ne halmozzon history entry-t)
+    if ((history.state as any)?.mobDrawer === true) {
+      history.replaceState({ mobDrawer: true }, '', `?mob=${mob.id}`);
+    } else {
+      history.pushState({ mobDrawer: true }, '', `?mob=${mob.id}`);
+    }
   }
 
   function closeMob() {
