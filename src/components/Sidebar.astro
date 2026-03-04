@@ -17,6 +17,13 @@ interface Props {
 }
 
 const { groups } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+function resolveHref(href: string): string {
+  if (href.startsWith('#') || href.startsWith('http') || href.startsWith('/')) return href;
+  if (href === '.' || href === './') return `${base}/`;
+  // relative page link → prefix with base
+  return `${base}/${href}`;
+}
 ---
 <!-- HU Sidebar -->
 <div data-lang="hu">
@@ -30,7 +37,7 @@ const { groups } = Astro.props;
           <h3>{section.title}</h3>
           <ul>
             {section.links.map(link => (
-              <li><a href={link.href}>{link.label}</a></li>
+              <li><a href={resolveHref(link.href)}>{link.label}</a></li>
             ))}
           </ul>
         </>
@@ -51,7 +58,7 @@ const { groups } = Astro.props;
           <h3>{section.title}</h3>
           <ul>
             {section.links.map(link => (
-              <li><a href={link.href}>{link.label}</a></li>
+              <li><a href={resolveHref(link.href)}>{link.label}</a></li>
             ))}
           </ul>
         </>
