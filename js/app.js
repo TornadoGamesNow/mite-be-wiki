@@ -71,7 +71,17 @@ function initNavTracking() {
         const activeLink = [...links].find(l => l.getAttribute('href') === '#' + id);
         if (activeLink) {
           const sidebar = activeLink.closest('.sidebar');
-          if (sidebar) activeLink.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+          if (sidebar) {
+            const linkTop = activeLink.offsetTop;
+            const linkBot = linkTop + activeLink.offsetHeight;
+            const visTop = sidebar.scrollTop;
+            const visBot = visTop + sidebar.clientHeight;
+            if (linkTop < visTop + 40) {
+              sidebar.scrollTo({ top: linkTop - 40, behavior: 'smooth' });
+            } else if (linkBot > visBot - 40) {
+              sidebar.scrollTo({ top: linkBot - sidebar.clientHeight + 40, behavior: 'smooth' });
+            }
+          }
         }
       }
     });
@@ -311,6 +321,7 @@ function initSearch() {
     clearBtn.title = getLang() === 'hu' ? 'Törlés' : 'Clear';
     clearBtn.setAttribute('tabindex', '-1');
     clearBtn.setAttribute('aria-label', 'Clear search');
+    clearBtn.style.display = 'none';
     wrap.appendChild(clearBtn);
 
     clearBtn.addEventListener('click', () => {
