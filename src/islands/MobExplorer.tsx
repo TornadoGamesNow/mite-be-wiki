@@ -82,28 +82,24 @@ const tagMeta: Record<string, { hu: string; en: string; icon: string }> = {
 };
 
 export default function MobExplorer() {
-  const [lang, setLang] = useState<string>(() => {
-    if (typeof window !== 'undefined') {
-      try { return localStorage.getItem('mite-wiki-lang') || 'hu'; } catch (e) {}
-    }
-    return 'hu';
-  });
-  const [search, setSearch] = useState('');
+  const [lang, setLang] = useState<string>('hu');
+  const [selectedMob, setSelectedMob] = useState<Mob | null>(null);
   const [diffFilter, setDiffFilter] = useState<'' | 'early' | 'mid' | 'late' | 'boss'>('');
   const [zoneFilter, setZoneFilter] = useState<'' | 'surface' | 'underground' | 'nether'>('');
-  const [sortKey, setSortKey] = useState<'name' | 'hp' | 'xp' | 'dmg'>('name');
+  const [search, setSearch] = useState('');
+  const [sortKey, setSortKey] = useState<'name' | 'hp' | 'dmg' | 'xp'>('name');
   const [sortAsc, setSortAsc] = useState(true);
-  const [selectedMob, setSelectedMob] = useState<Mob | null>(null);
 
-  // Lang sync
+  // Lang sync — useEffect-ben olvasunk localStorage-ból (SSR mismatch elkerülése)
   useEffect(() => {
+    try {
+      const stored = localStorage.getItem('mite-wiki-lang');
+      if (stored) setLang(stored);
+    } catch (e) {}
     function handleLangChange(e: Event) {
       setLang((e as CustomEvent).detail ?? 'hu');
     }
     window.addEventListener('mite:langChange', handleLangChange);
-    if (typeof window !== 'undefined' && (window as any).__miteLang) {
-      setLang((window as any).__miteLang);
-    }
     return () => window.removeEventListener('mite:langChange', handleLangChange);
   }, []);
 
