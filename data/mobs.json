@@ -244,7 +244,7 @@
   {
     "id": "ghoul",
     "name": {
-      "hu": "Sírkamra Szellem (Ghoul)",
+      "hu": "Ghoul",
       "en": "Ghoul"
     },
     "hp": 20,
@@ -353,7 +353,7 @@
   {
     "id": "zombie_pigman",
     "name": {
-      "hu": "Zombi Disznóember",
+      "hu": "Zombi Malacem",
       "en": "Zombie Pigman"
     },
     "hp": 20,
@@ -520,7 +520,7 @@
   {
     "id": "wight",
     "name": {
-      "hu": "Rég Halott",
+      "hu": "Wight",
       "en": "Wight"
     },
     "hp": 25,
@@ -561,7 +561,7 @@
   {
     "id": "wight_guard",
     "name": {
-      "hu": "Rég Halott Őr",
+      "hu": "Wight Őr",
       "en": "Wight Guard"
     },
     "hp": 30,
@@ -731,7 +731,7 @@
   {
     "id": "nether_creeper",
     "name": {
-      "hu": "Pokoli Creeper",
+      "hu": "Nether Creeper",
       "en": "Nether Creeper"
     },
     "hp": 20,
@@ -765,7 +765,7 @@
   {
     "id": "red_blaze",
     "name": {
-      "hu": "Vörös Lángoszlop",
+      "hu": "Vörös Blaze",
       "en": "Red Blaze"
     },
     "hp": 40,
@@ -986,8 +986,8 @@
   {
     "id": "greater_ghast",
     "name": {
-      "hu": "Nagy Ghast",
-      "en": "Greater Ghast"
+      "hu": "Kis Ghast",
+      "en": "Child Ghast"
     },
     "hp": 40,
     "dmgMin": 8,
@@ -1085,8 +1085,8 @@
   {
     "id": "zealot",
     "name": {
-      "hu": "Zealot (Fanatic Vindicator)",
-      "en": "Zealot (Fanatic Vindicator)"
+      "hu": "Zealot",
+      "en": "Zealot"
     },
     "hp": 80,
     "dmgMin": 13,
@@ -1126,7 +1126,7 @@
   {
     "id": "zealot_plains",
     "name": {
-      "hu": "Síkság Zealot",
+      "hu": "Síksági Zealot",
       "en": "Plains Zealot"
     },
     "hp": 20,
@@ -1282,7 +1282,7 @@
   {
     "id": "ancient_bone_lord",
     "name": {
-      "hu": "Ókori Csont Úr",
+      "hu": "Ősi Csont Úr",
       "en": "Ancient Bone Lord"
     },
     "hp": 80,
@@ -1411,7 +1411,7 @@
   {
     "id": "revenant",
     "name": {
-      "hu": "Visszajáró",
+      "hu": "Revenant",
       "en": "Revenant"
     },
     "hp": 24,
@@ -1452,7 +1452,7 @@
   {
     "id": "brown_slime",
     "name": {
-      "hu": "Barna Zselé",
+      "hu": "Barna Slime",
       "en": "Brown Slime"
     },
     "hp": 12,
@@ -1483,7 +1483,7 @@
   {
     "id": "red_slime",
     "name": {
-      "hu": "Vörös Nyálka",
+      "hu": "Vörös Slime",
       "en": "Red Slime"
     },
     "hp": 20,
@@ -1516,7 +1516,7 @@
   {
     "id": "grey_slime",
     "name": {
-      "hu": "Szürke Sár",
+      "hu": "Szürke Slime",
       "en": "Grey Slime"
     },
     "hp": 10,
@@ -1547,7 +1547,7 @@
   {
     "id": "black_slime",
     "name": {
-      "hu": "Fekete Puding",
+      "hu": "Fekete Slime",
       "en": "Black Slime"
     },
     "hp": 30,
@@ -1580,7 +1580,7 @@
   {
     "id": "shadow_bat",
     "name": {
-      "hu": "Éjszárny (Árnyék Denevér)",
+      "hu": "Árnyék Denevér",
       "en": "Shadow Bat"
     },
     "hp": 12,
@@ -1614,7 +1614,7 @@
   {
     "id": "explosive_silverfish",
     "name": {
-      "hu": "Robbanó Ezüsthal",
+      "hu": "Robbanó Silverfish",
       "en": "Explosive Silverfish"
     },
     "hp": 8,
@@ -1648,7 +1648,7 @@
   {
     "id": "copper_poison_silverfish",
     "name": {
-      "hu": "Rézgerinc (Rézmérges Ezüsthal)",
+      "hu": "Rézmérges Silverfish",
       "en": "Copper Poison Silverfish"
     },
     "hp": 8,
@@ -1682,7 +1682,7 @@
   {
     "id": "ancient_silverfish",
     "name": {
-      "hu": "Ősrégi Ezüsthal",
+      "hu": "Ősi Silverfish",
       "en": "Ancient Silverfish"
     },
     "hp": 8,
@@ -1788,7 +1788,7 @@
   {
     "id": "ancient_skeleton_lord",
     "name": {
-      "hu": "Ókori Csontváz Úr",
+      "hu": "Ősi Csontváz Úr",
       "en": "Ancient Skeleton Lord"
     },
     "hp": 80,
@@ -1830,7 +1830,7 @@
   {
     "id": "variant_skeleton_lord",
     "name": {
-      "hu": "Mutáns Csont Úr",
+      "hu": "Mutáns Csontváz Úr",
       "en": "Variant Skeleton Lord"
     },
     "hp": 100,
@@ -1977,7 +1977,7 @@
   {
     "id": "plains_creeper",
     "name": {
-      "hu": "Síkság Kúszó",
+      "hu": "Síksági Creeper",
       "en": "Plains Creeper"
     },
     "hp": 20,
@@ -2131,7 +2131,7 @@
   {
     "id": "snowy_creeper",
     "name": {
-      "hu": "Havas Kúszó",
+      "hu": "Havas Creeper",
       "en": "Snowy Creeper"
     },
     "hp": 20,
@@ -2286,7 +2286,7 @@
   {
     "id": "jungle_creeper",
     "name": {
-      "hu": "Dzsungel Kúszó",
+      "hu": "Dzsungel Creeper",
       "en": "Jungle Creeper"
     },
     "hp": 20,
@@ -2361,7 +2361,7 @@
   {
     "id": "tnt_skeleton",
     "name": {
-      "hu": "Rakéta Csontváz",
+      "hu": "TNT Csontváz",
       "en": "TNT Skeleton"
     },
     "hp": 20,
@@ -2410,7 +2410,7 @@
   {
     "id": "confused_creeper",
     "name": {
-      "hu": "Zavart Kúszó",
+      "hu": "Zavart Creeper",
       "en": "Confused Creeper"
     },
     "hp": 20,
@@ -2443,7 +2443,7 @@
   {
     "id": "end_lightning_creeper",
     "name": {
-      "hu": "Vég Villám Kúszó",
+      "hu": "End Villám Creeper",
       "en": "End Lightning Creeper"
     },
     "hp": 20,
@@ -2476,7 +2476,7 @@
   {
     "id": "little_creeper",
     "name": {
-      "hu": "Bébi Kúszó",
+      "hu": "Mini Creeper",
       "en": "Little Creeper"
     },
     "hp": 8,
@@ -2657,7 +2657,7 @@
   {
     "id": "child_skeleton",
     "name": {
-      "hu": "Bébi Csontváz",
+      "hu": "Kis Csontváz",
       "en": "Child Skeleton"
     },
     "hp": 10,
@@ -2688,7 +2688,7 @@
   {
     "id": "child_iron_golem",
     "name": {
-      "hu": "Bébi Vas Gólem",
+      "hu": "Kis Vas Gólem",
       "en": "Child Iron Golem"
     },
     "hp": 50,
@@ -2719,7 +2719,7 @@
   {
     "id": "child_ghast",
     "name": {
-      "hu": "Bébi Kísértet",
+      "hu": "Kis Ghast",
       "en": "Child Ghast"
     },
     "hp": 8,
@@ -2753,7 +2753,7 @@
   {
     "id": "variant_child_ghast",
     "name": {
-      "hu": "Variáns Bébi Kísértet",
+      "hu": "Mutáns Kis Ghast",
       "en": "Variant Child Ghast"
     },
     "hp": 8,
@@ -2787,7 +2787,7 @@
   {
     "id": "variant_zombie",
     "name": {
-      "hu": "Variáns Zombi",
+      "hu": "Mutáns Zombi",
       "en": "Variant Zombie"
     },
     "hp": 30,
@@ -2821,7 +2821,7 @@
   {
     "id": "variant_skeleton",
     "name": {
-      "hu": "Variáns Csontváz",
+      "hu": "Mutáns Csontváz",
       "en": "Variant Skeleton"
     },
     "hp": 25,
@@ -2861,7 +2861,7 @@
   {
     "id": "variant_spider",
     "name": {
-      "hu": "Variáns Pók",
+      "hu": "Mutáns Pók",
       "en": "Variant Spider"
     },
     "hp": 20,
@@ -2904,7 +2904,7 @@
   {
     "id": "variant_creeper",
     "name": {
-      "hu": "Variáns Kúszó",
+      "hu": "Mutáns Creeper",
       "en": "Variant Creeper"
     },
     "hp": 25,
@@ -2972,7 +2972,7 @@
   {
     "id": "slime",
     "name": {
-      "hu": "Nyálka",
+      "hu": "Slime",
       "en": "Slime"
     },
     "hp": 8,
@@ -3003,7 +3003,7 @@
   {
     "id": "ghast",
     "name": {
-      "hu": "Kísértet",
+      "hu": "Ghast",
       "en": "Ghast"
     },
     "hp": 10,
@@ -3045,7 +3045,7 @@
   {
     "id": "cave_spider",
     "name": {
-      "hu": "Barlang Pók",
+      "hu": "Barlangi Pók",
       "en": "Cave Spider"
     },
     "hp": 12,
@@ -3086,7 +3086,7 @@
   {
     "id": "blaze",
     "name": {
-      "hu": "Lángoszlop",
+      "hu": "Blaze",
       "en": "Blaze"
     },
     "hp": 20,
@@ -3189,7 +3189,7 @@
   {
     "id": "enderman",
     "name": {
-      "hu": "Végember",
+      "hu": "Enderman",
       "en": "Enderman"
     },
     "hp": 40,
@@ -3222,7 +3222,7 @@
   {
     "id": "silverfish",
     "name": {
-      "hu": "Ezüsthal",
+      "hu": "Silverfish",
       "en": "Silverfish"
     },
     "hp": 8,
@@ -3945,7 +3945,7 @@
   {
     "id": "coyote",
     "name": {
-      "hu": "Prérifarkias",
+      "hu": "Kojot",
       "en": "Coyote"
     },
     "hp": 12,

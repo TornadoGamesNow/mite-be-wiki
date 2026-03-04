@@ -81,8 +81,13 @@ const tagMeta: Record<string, { hu: string; en: string; icon: string }> = {
   potion:                { hu: 'Bájital',           en: 'Potion',              icon: '🧪' },
 };
 
-export default function MobExplorer({ lang: initialLang = 'hu' }: { lang?: string }) {
-  const [lang, setLang] = useState(initialLang);
+export default function MobExplorer() {
+  const [lang, setLang] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      try { return localStorage.getItem('mite-wiki-lang') || 'hu'; } catch (e) {}
+    }
+    return 'hu';
+  });
   const [search, setSearch] = useState('');
   const [diffFilter, setDiffFilter] = useState<'' | 'early' | 'mid' | 'late' | 'boss'>('');
   const [zoneFilter, setZoneFilter] = useState<'' | 'surface' | 'underground' | 'nether'>('');
