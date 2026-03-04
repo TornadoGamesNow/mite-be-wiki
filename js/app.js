@@ -60,7 +60,8 @@ function initNavTracking() {
 
   function setActive(id) {
     links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + id));
-    const activeLink = links.find(l => l.getAttribute('href') === '#' + id);
+    // Use the VISIBLE sidebar link (clientHeight > 0 means not display:none)
+    const activeLink = links.find(l => l.getAttribute('href') === '#' + id && l.closest('.sidebar')?.clientHeight > 0);
     if (activeLink) {
       const sidebar = activeLink.closest('.sidebar');
       if (sidebar) {
