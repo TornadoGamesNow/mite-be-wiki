@@ -7,8 +7,9 @@ function setLang(lang) {
     btn.classList.toggle('active', btn.getAttribute('data-val') === lang);
   });
   try { localStorage.setItem('mite-wiki-lang', lang); } catch(e) {}
-  const si = document.querySelector('.search-input');
-  if (si) si.placeholder = lang === 'hu' ? 'Keresés a wikiben...' : 'Search the wiki...';
+  document.querySelectorAll('.search-input').forEach(si => {
+    si.placeholder = lang === 'hu' ? 'Oldalak, tárgyak, receptek...' : 'Pages, items, recipes...';
+  });
   // Invalidate index when language changes
   _searchIndex = null;
   _searchLang = null;
@@ -540,6 +541,24 @@ function initDataTables(lang) {
   }
 }
 
+// ── Section Anchor Links ──
+function initSectionAnchors() {
+  document.querySelectorAll('h2[id], h3[id]').forEach(h => {
+    if (h.querySelector('.anchor-link')) return;
+    const a = document.createElement('a');
+    a.className = 'anchor-link';
+    a.href = '#' + h.id;
+    a.textContent = '🔗';
+    a.title = 'Link to section';
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      history.pushState(null, '', '#' + h.id);
+      h.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    h.appendChild(a);
+  });
+}
+
 // ── Init All ──
 document.addEventListener('DOMContentLoaded', () => {
   let saved;
@@ -553,4 +572,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initCollapsibles();
   initBackToTop();
   initKeyboardNav();
+  initSectionAnchors();
 });
