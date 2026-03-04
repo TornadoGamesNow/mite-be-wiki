@@ -43,7 +43,8 @@
         "itemId": null
       }
     ],
-    "image": "zombie.png"
+    "image": "zombie.png",
+    "mobType": "undead"
   },
   {
     "id": "skeleton",
@@ -86,7 +87,8 @@
         "itemId": "arrow"
       }
     ],
-    "image": "skeleton.png"
+    "image": "skeleton.png",
+    "mobType": "undead"
   },
   {
     "id": "creeper",
@@ -130,7 +132,8 @@
         "itemId": null
       }
     ],
-    "image": "creeper.png"
+    "image": "creeper.png",
+    "mobType": "monster"
   },
   {
     "id": "spider",
@@ -174,7 +177,8 @@
         "itemId": "spider_eye"
       }
     ],
-    "image": "spider.png"
+    "image": "spider.png",
+    "mobType": "monster"
   },
   {
     "id": "wood_spider",
@@ -219,7 +223,8 @@
         "itemId": "string"
       }
     ],
-    "image": "wood_spider.png"
+    "image": "wood_spider.png",
+    "mobType": "monster"
   },
   {
     "id": "vampire_bat",
@@ -256,7 +261,8 @@
         "itemId": null
       }
     ],
-    "image": "vampire_bat.png"
+    "image": "vampire_bat.png",
+    "mobType": "monster"
   },
   {
     "id": "ghoul",
@@ -291,7 +297,8 @@
         "itemId": "ghoul_flesh"
       }
     ],
-    "image": "ghoul.png"
+    "image": "ghoul.png",
+    "mobType": "undead"
   },
   {
     "id": "hell_hound",
@@ -327,7 +334,8 @@
         "itemId": null
       }
     ],
-    "image": "hell_hound.png"
+    "image": "hell_hound.png",
+    "mobType": "nether"
   },
   {
     "id": "demon_spider",
@@ -372,7 +380,8 @@
         "itemId": "string"
       }
     ],
-    "image": "demon_spider.png"
+    "image": "demon_spider.png",
+    "mobType": "monster"
   },
   {
     "id": "zombie_pigman",
@@ -417,7 +426,8 @@
         "itemId": "gold_nugget"
       }
     ],
-    "image": "zombie_pigman.png"
+    "image": "zombie_pigman.png",
+    "mobType": "undead"
   },
   {
     "id": "soul_spirit",
@@ -453,7 +463,8 @@
         "itemId": null
       }
     ],
-    "image": "soul_spirit.png"
+    "image": "soul_spirit.png",
+    "mobType": "monster"
   },
   {
     "id": "zombie_caller",
@@ -507,7 +518,8 @@
         "itemId": "emerald"
       }
     ],
-    "image": "zombie_caller.png"
+    "image": "zombie_caller.png",
+    "mobType": "undead"
   },
   {
     "id": "dire_wolf",
@@ -551,7 +563,8 @@
         "itemId": "leather"
       }
     ],
-    "image": "dire_wolf.png"
+    "image": "dire_wolf.png",
+    "mobType": "monster"
   },
   {
     "id": "wight",
@@ -595,7 +608,8 @@
         "itemId": null
       }
     ],
-    "image": "wight.png"
+    "image": "wight.png",
+    "mobType": "undead"
   },
   {
     "id": "wight_guard",
@@ -639,7 +653,8 @@
         "itemId": null
       }
     ],
-    "image": "wight_guard.png"
+    "image": "wight_guard.png",
+    "mobType": "undead"
   },
   {
     "id": "black_widow_spider",
@@ -683,7 +698,8 @@
         "itemId": "string"
       }
     ],
-    "image": "black_widow_spider.png"
+    "image": "black_widow_spider.png",
+    "mobType": "monster"
   },
   {
     "id": "witch",
@@ -736,7 +752,8 @@
         "itemId": null
       }
     ],
-    "image": "witch.png"
+    "image": "witch.png",
+    "mobType": "monster"
   },
   {
     "id": "pillager",
@@ -778,7 +795,8 @@
         "itemId": null
       }
     ],
-    "image": "pillager.png"
+    "image": "pillager.png",
+    "mobType": "monster"
   },
   {
     "id": "nether_creeper",
@@ -814,7 +832,8 @@
         "itemId": "gunpowder"
       }
     ],
-    "image": "nether_creeper.png"
+    "image": "nether_creeper.png",
+    "mobType": "nether"
   },
   {
     "id": "red_blaze",
@@ -860,7 +879,8 @@
         "itemId": "glowstone_dust"
       }
     ],
-    "image": "red_blaze.png"
+    "image": "red_blaze.png",
+    "mobType": "nether"
   },
   {
     "id": "earth_elemental",
@@ -895,7 +915,8 @@
         "itemId": "earth_elemental_core"
       }
     ],
-    "image": "earth_elemental.png"
+    "image": "earth_elemental.png",
+    "mobType": "elemental"
   },
   {
     "id": "giant_vampire_bat",
@@ -932,7 +953,8 @@
         "itemId": null
       }
     ],
-    "image": "giant_vampire_bat.png"
+    "image": "giant_vampire_bat.png",
+    "mobType": "monster"
   },
   {
     "id": "invisible_stalker",
@@ -968,7 +990,8 @@
         "itemId": "ender_pearl"
       }
     ],
-    "image": null
+    "image": null,
+    "mobType": "monster"
   },
   {
     "id": "phase_spider",
@@ -1013,7 +1036,8 @@
         "itemId": "string"
       }
     ],
-    "image": "phase_spider.png"
+    "image": "phase_spider.png",
+    "mobType": "monster"
   },
   {
     "id": "fire_elemental",
@@ -1049,7 +1073,8 @@
         "itemId": "fire_elemental_core"
       }
     ],
-    "image": "fire_elemental.png"
+    "image": "fire_elemental.png",
+    "mobType": "elemental"
   },
   {
     "id": "greater_ghast",
@@ -1094,7 +1119,8 @@
         "itemId": null
       }
     ],
-    "image": "greater_ghast.png"
+    "image": "greater_ghast.png",
+    "mobType": "nether"
   },
   {
     "id": "pillager_captain",
@@ -1156,7 +1182,8 @@
         "itemId": null
       }
     ],
-    "image": "pillager_captain.png"
+    "image": "pillager_captain.png",
+    "mobType": "monster"
   },
   {
     "id": "zealot",
@@ -1200,7 +1227,8 @@
         "itemId": "arrow"
       }
     ],
-    "image": null
+    "image": null,
+    "mobType": "boss"
   },
   {
     "id": "zealot_plains",
@@ -1244,7 +1272,8 @@
         "itemId": "arrow"
       }
     ],
-    "image": null
+    "image": null,
+    "mobType": "boss"
   },
   {
     "id": "zealot_snowy",
@@ -1288,7 +1317,8 @@
         "itemId": "arrow"
       }
     ],
-    "image": null
+    "image": null,
+    "mobType": "boss"
   },
   {
     "id": "zealot_jungle",
@@ -1332,7 +1362,8 @@
         "itemId": "arrow"
       }
     ],
-    "image": null
+    "image": null,
+    "mobType": "boss"
   },
   {
     "id": "bone_lord",
@@ -1367,7 +1398,8 @@
         "itemId": "bone"
       }
     ],
-    "image": "bone_lord.png"
+    "image": "bone_lord.png",
+    "mobType": "undead"
   },
   {
     "id": "ancient_bone_lord",
@@ -1403,7 +1435,8 @@
         "itemId": "bone"
       }
     ],
-    "image": "ancient_bone_lord.png"
+    "image": "ancient_bone_lord.png",
+    "mobType": "undead"
   },
   {
     "id": "white_ghoul",
@@ -1436,7 +1469,8 @@
         "itemId": "ghoul_flesh"
       }
     ],
-    "image": "white_ghoul.png"
+    "image": "white_ghoul.png",
+    "mobType": "undead"
   },
   {
     "id": "black_ghoul",
@@ -1469,7 +1503,8 @@
         "itemId": "ghoul_flesh"
       }
     ],
-    "image": "black_ghoul.png"
+    "image": "black_ghoul.png",
+    "mobType": "undead"
   },
   {
     "id": "shadow",
@@ -1504,7 +1539,8 @@
         "itemId": null
       }
     ],
-    "image": "shadow.png"
+    "image": "shadow.png",
+    "mobType": "monster"
   },
   {
     "id": "revenant",
@@ -1548,7 +1584,8 @@
         "itemId": "rotten_flesh"
       }
     ],
-    "image": "revenant.png"
+    "image": "revenant.png",
+    "mobType": "undead"
   },
   {
     "id": "brown_slime",
@@ -1581,7 +1618,8 @@
         "itemId": "brown_slimeball"
       }
     ],
-    "image": "brown_slime.png"
+    "image": "brown_slime.png",
+    "mobType": "monster"
   },
   {
     "id": "red_slime",
@@ -1616,7 +1654,8 @@
         "itemId": "red_slimeball"
       }
     ],
-    "image": "red_slime.png"
+    "image": "red_slime.png",
+    "mobType": "monster"
   },
   {
     "id": "grey_slime",
@@ -1649,7 +1688,8 @@
         "itemId": "grey_slimeball"
       }
     ],
-    "image": "grey_slime.png"
+    "image": "grey_slime.png",
+    "mobType": "monster"
   },
   {
     "id": "black_slime",
@@ -1684,7 +1724,8 @@
         "itemId": "black_slimeball"
       }
     ],
-    "image": "black_slime.png"
+    "image": "black_slime.png",
+    "mobType": "monster"
   },
   {
     "id": "shadow_bat",
@@ -1720,7 +1761,8 @@
         "itemId": null
       }
     ],
-    "image": "shadow_bat.png"
+    "image": "shadow_bat.png",
+    "mobType": "monster"
   },
   {
     "id": "explosive_silverfish",
@@ -1756,7 +1798,8 @@
         "itemId": "gunpowder"
       }
     ],
-    "image": "explosive_silverfish.png"
+    "image": "explosive_silverfish.png",
+    "mobType": "monster"
   },
   {
     "id": "copper_poison_silverfish",
@@ -1792,7 +1835,8 @@
         "itemId": "copper_ingot"
       }
     ],
-    "image": "copper_poison_silverfish.png"
+    "image": "copper_poison_silverfish.png",
+    "mobType": "monster"
   },
   {
     "id": "ancient_silverfish",
@@ -1828,7 +1872,8 @@
         "itemId": "flint"
       }
     ],
-    "image": "ancient_silverfish.png"
+    "image": "ancient_silverfish.png",
+    "mobType": "monster"
   },
   {
     "id": "clay_golem",
@@ -1861,7 +1906,8 @@
         "itemId": "coal"
       }
     ],
-    "image": "clay_golem.png"
+    "image": "clay_golem.png",
+    "mobType": "monster"
   },
   {
     "id": "skeleton_lord",
@@ -1905,7 +1951,8 @@
         "itemId": "bone"
       }
     ],
-    "image": "skeleton_lord.png"
+    "image": "skeleton_lord.png",
+    "mobType": "undead"
   },
   {
     "id": "ancient_skeleton_lord",
@@ -1950,7 +1997,8 @@
         "itemId": "bone"
       }
     ],
-    "image": "ancient_skeleton_lord.png"
+    "image": "ancient_skeleton_lord.png",
+    "mobType": "undead"
   },
   {
     "id": "variant_skeleton_lord",
@@ -1995,7 +2043,8 @@
         "itemId": "bone"
       }
     ],
-    "image": "variant_skeleton_lord.png"
+    "image": "variant_skeleton_lord.png",
+    "mobType": "undead"
   },
   {
     "id": "obsidian_golem",
@@ -2030,7 +2079,8 @@
         "itemId": null
       }
     ],
-    "image": "obsidian_golem.png"
+    "image": "obsidian_golem.png",
+    "mobType": "monster"
   },
   {
     "id": "plains_zombie",
@@ -2065,7 +2115,8 @@
         "itemId": "rotten_flesh"
       }
     ],
-    "image": "plains_zombie.png"
+    "image": "plains_zombie.png",
+    "mobType": "undead"
   },
   {
     "id": "plains_skeleton",
@@ -2107,7 +2158,8 @@
         "itemId": "arrow"
       }
     ],
-    "image": "plains_skeleton.png"
+    "image": "plains_skeleton.png",
+    "mobType": "undead"
   },
   {
     "id": "plains_creeper",
@@ -2142,7 +2194,8 @@
         "itemId": "gunpowder"
       }
     ],
-    "image": "plains_creeper.png"
+    "image": "plains_creeper.png",
+    "mobType": "monster"
   },
   {
     "id": "plains_spider",
@@ -2186,7 +2239,8 @@
         "itemId": "spider_eye"
       }
     ],
-    "image": "plains_spider.png"
+    "image": "plains_spider.png",
+    "mobType": "monster"
   },
   {
     "id": "snowy_zombie",
@@ -2230,7 +2284,8 @@
         "itemId": null
       }
     ],
-    "image": "snowy_zombie.png"
+    "image": "snowy_zombie.png",
+    "mobType": "undead"
   },
   {
     "id": "snowy_skeleton",
@@ -2272,7 +2327,8 @@
         "itemId": null
       }
     ],
-    "image": "snowy_skeleton.png"
+    "image": "snowy_skeleton.png",
+    "mobType": "undead"
   },
   {
     "id": "snowy_creeper",
@@ -2316,7 +2372,8 @@
         "itemId": null
       }
     ],
-    "image": "snowy_creeper.png"
+    "image": "snowy_creeper.png",
+    "mobType": "monster"
   },
   {
     "id": "snowy_spider",
@@ -2361,7 +2418,8 @@
         "itemId": null
       }
     ],
-    "image": "snowy_spider.png"
+    "image": "snowy_spider.png",
+    "mobType": "monster"
   },
   {
     "id": "jungle_zombie",
@@ -2396,7 +2454,8 @@
         "itemId": "rotten_flesh"
       }
     ],
-    "image": "jungle_zombie.png"
+    "image": "jungle_zombie.png",
+    "mobType": "undead"
   },
   {
     "id": "jungle_skeleton",
@@ -2438,7 +2497,8 @@
         "itemId": "arrow"
       }
     ],
-    "image": "jungle_skeleton.png"
+    "image": "jungle_skeleton.png",
+    "mobType": "undead"
   },
   {
     "id": "jungle_creeper",
@@ -2473,7 +2533,8 @@
         "itemId": "gunpowder"
       }
     ],
-    "image": "jungle_creeper.png"
+    "image": "jungle_creeper.png",
+    "mobType": "monster"
   },
   {
     "id": "jungle_spider",
@@ -2518,7 +2579,8 @@
         "itemId": "string"
       }
     ],
-    "image": "jungle_spider.png"
+    "image": "jungle_spider.png",
+    "mobType": "monster"
   },
   {
     "id": "tnt_skeleton",
@@ -2571,7 +2633,8 @@
         "itemId": "gunpowder"
       }
     ],
-    "image": "tnt_skeleton.png"
+    "image": "tnt_skeleton.png",
+    "mobType": "undead"
   },
   {
     "id": "confused_creeper",
@@ -2606,7 +2669,8 @@
         "itemId": "gunpowder"
       }
     ],
-    "image": "confused_creeper.png"
+    "image": "confused_creeper.png",
+    "mobType": "monster"
   },
   {
     "id": "end_lightning_creeper",
@@ -2641,7 +2705,8 @@
         "itemId": "ender_pearl"
       }
     ],
-    "image": "end_lightning_creeper.png"
+    "image": "end_lightning_creeper.png",
+    "mobType": "monster"
   },
   {
     "id": "little_creeper",
@@ -2676,7 +2741,8 @@
         "itemId": "gunpowder"
       }
     ],
-    "image": "little_creeper.png"
+    "image": "little_creeper.png",
+    "mobType": "monster"
   },
   {
     "id": "bomber",
@@ -2712,7 +2778,8 @@
         "itemId": "gunpowder"
       }
     ],
-    "image": "bomber.png"
+    "image": "bomber.png",
+    "mobType": "monster"
   },
   {
     "id": "corrupted_snowman",
@@ -2747,7 +2814,8 @@
         "itemId": null
       }
     ],
-    "image": "corrupted_snowman.png"
+    "image": "corrupted_snowman.png",
+    "mobType": "monster"
   },
   {
     "id": "desert_guardian",
@@ -2789,7 +2857,8 @@
         "itemId": "arrow"
       }
     ],
-    "image": "desert_guardian.png"
+    "image": "desert_guardian.png",
+    "mobType": "monster"
   },
   {
     "id": "pigman_leader",
@@ -2834,7 +2903,8 @@
         "itemId": null
       }
     ],
-    "image": "pigman_leader.png"
+    "image": "pigman_leader.png",
+    "mobType": "undead"
   },
   {
     "id": "child_skeleton",
@@ -2867,7 +2937,8 @@
         "itemId": "bone"
       }
     ],
-    "image": "child_skeleton.png"
+    "image": "child_skeleton.png",
+    "mobType": "undead"
   },
   {
     "id": "child_iron_golem",
@@ -2900,7 +2971,8 @@
         "itemId": "iron_ingot"
       }
     ],
-    "image": "child_iron_golem.png"
+    "image": "child_iron_golem.png",
+    "mobType": "monster"
   },
   {
     "id": "child_ghast",
@@ -2936,7 +3008,8 @@
         "itemId": "gunpowder"
       }
     ],
-    "image": "child_ghast.png"
+    "image": "child_ghast.png",
+    "mobType": "nether"
   },
   {
     "id": "variant_child_ghast",
@@ -2972,7 +3045,8 @@
         "itemId": "gunpowder"
       }
     ],
-    "image": "variant_child_ghast.png"
+    "image": "variant_child_ghast.png",
+    "mobType": "nether"
   },
   {
     "id": "variant_zombie",
@@ -3008,7 +3082,8 @@
         "itemId": "rotten_flesh"
       }
     ],
-    "image": "variant_zombie.png"
+    "image": "variant_zombie.png",
+    "mobType": "undead"
   },
   {
     "id": "variant_skeleton",
@@ -3051,7 +3126,8 @@
         "itemId": "arrow"
       }
     ],
-    "image": "variant_skeleton.png"
+    "image": "variant_skeleton.png",
+    "mobType": "undead"
   },
   {
     "id": "variant_spider",
@@ -3097,7 +3173,8 @@
         "itemId": "string"
       }
     ],
-    "image": "variant_spider.png"
+    "image": "variant_spider.png",
+    "mobType": "monster"
   },
   {
     "id": "variant_creeper",
@@ -3132,7 +3209,8 @@
         "itemId": "gunpowder"
       }
     ],
-    "image": "variant_creeper.png"
+    "image": "variant_creeper.png",
+    "mobType": "monster"
   },
   {
     "id": "him",
@@ -3169,7 +3247,8 @@
         "itemId": null
       }
     ],
-    "image": "him.png"
+    "image": "him.png",
+    "mobType": "boss"
   },
   {
     "id": "slime",
@@ -3202,7 +3281,8 @@
         "itemId": null
       }
     ],
-    "image": "slime.png"
+    "image": "slime.png",
+    "mobType": "monster"
   },
   {
     "id": "ghast",
@@ -3247,7 +3327,8 @@
         "itemId": "ghast_tear"
       }
     ],
-    "image": "ghast.png"
+    "image": "ghast.png",
+    "mobType": "nether"
   },
   {
     "id": "cave_spider",
@@ -3291,7 +3372,8 @@
         "itemId": "spider_eye"
       }
     ],
-    "image": "cave_spider.png"
+    "image": "cave_spider.png",
+    "mobType": "monster"
   },
   {
     "id": "blaze",
@@ -3328,7 +3410,8 @@
         "itemId": "blaze_rod"
       }
     ],
-    "image": "blaze.png"
+    "image": "blaze.png",
+    "mobType": "nether"
   },
   {
     "id": "magma_cube",
@@ -3363,7 +3446,8 @@
         "itemId": "magma_cream"
       }
     ],
-    "image": "magma_cube.png"
+    "image": "magma_cube.png",
+    "mobType": "nether"
   },
   {
     "id": "wither",
@@ -3400,7 +3484,8 @@
         "itemId": null
       }
     ],
-    "image": "wither.png"
+    "image": "wither.png",
+    "mobType": "undead"
   },
   {
     "id": "enderman",
@@ -3435,7 +3520,8 @@
         "itemId": "ender_pearl"
       }
     ],
-    "image": "enderman.png"
+    "image": "enderman.png",
+    "mobType": "end"
   },
   {
     "id": "silverfish",
@@ -3460,7 +3546,8 @@
       "en": "Hides in stone, calls pack"
     },
     "drops": [],
-    "image": "silverfish.png"
+    "image": "silverfish.png",
+    "mobType": "monster"
   },
   {
     "id": "ender_dragon",
@@ -3505,7 +3592,8 @@
         "itemId": null
       }
     ],
-    "image": "ender_dragon.png"
+    "image": "ender_dragon.png",
+    "mobType": "boss"
   },
   {
     "id": "iron_golem",
@@ -3547,7 +3635,8 @@
         "itemId": null
       }
     ],
-    "image": "iron_golem.png"
+    "image": "iron_golem.png",
+    "mobType": "monster"
   },
   {
     "id": "vindicator",
@@ -3589,7 +3678,8 @@
         "itemId": null
       }
     ],
-    "image": null
+    "image": null,
+    "mobType": "monster"
   },
   {
     "id": "earthworm",
@@ -3622,7 +3712,8 @@
         "itemId": null
       }
     ],
-    "image": "earthworm.png"
+    "image": "earthworm.png",
+    "mobType": "animal"
   },
   {
     "id": "crab",
@@ -3664,7 +3755,8 @@
         "itemId": "crab_leg"
       }
     ],
-    "image": "crab.png"
+    "image": "crab.png",
+    "mobType": "animal"
   },
   {
     "id": "mallard",
@@ -3699,7 +3791,8 @@
         "itemId": "duck_meat"
       }
     ],
-    "image": "mallard.png"
+    "image": "mallard.png",
+    "mobType": "animal"
   },
   {
     "id": "pig",
@@ -3732,7 +3825,8 @@
         "itemId": "porkchop"
       }
     ],
-    "image": "pig.png"
+    "image": "pig.png",
+    "mobType": "animal"
   },
   {
     "id": "sheep",
@@ -3774,7 +3868,8 @@
         "itemId": null
       }
     ],
-    "image": "sheep.png"
+    "image": "sheep.png",
+    "mobType": "animal"
   },
   {
     "id": "cow",
@@ -3816,7 +3911,8 @@
         "itemId": "leather"
       }
     ],
-    "image": "cow.png"
+    "image": "cow.png",
+    "mobType": "animal"
   },
   {
     "id": "chicken",
@@ -3860,7 +3956,8 @@
         "itemId": "feather"
       }
     ],
-    "image": "chicken.png"
+    "image": "chicken.png",
+    "mobType": "animal"
   },
   {
     "id": "wolf",
@@ -3885,7 +3982,8 @@
       "en": "Tameable, aggressive when provoked"
     },
     "drops": [],
-    "image": "wolf.png"
+    "image": "wolf.png",
+    "mobType": "animal"
   },
   {
     "id": "mooshroom",
@@ -3936,7 +4034,8 @@
         "itemId": null
       }
     ],
-    "image": "mooshroom.png"
+    "image": "mooshroom.png",
+    "mobType": "animal"
   },
   {
     "id": "ocelot",
@@ -3959,7 +4058,8 @@
       "en": "Lives in jungles, scares creepers"
     },
     "drops": [],
-    "image": "ocelot.png"
+    "image": "ocelot.png",
+    "mobType": "animal"
   },
   {
     "id": "horse",
@@ -3992,7 +4092,8 @@
         "itemId": "leather"
       }
     ],
-    "image": "horse.png"
+    "image": "horse.png",
+    "mobType": "animal"
   },
   {
     "id": "medium_fish",
@@ -4025,7 +4126,8 @@
         "itemId": null
       }
     ],
-    "image": "medium_fish.png"
+    "image": "medium_fish.png",
+    "mobType": "animal"
   },
   {
     "id": "turkey",
@@ -4067,7 +4169,8 @@
         "itemId": "feather"
       }
     ],
-    "image": "turkey.png"
+    "image": "turkey.png",
+    "mobType": "animal"
   },
   {
     "id": "scorpion",
@@ -4102,7 +4205,8 @@
         "itemId": null
       }
     ],
-    "image": "scorpion.png"
+    "image": "scorpion.png",
+    "mobType": "animal"
   },
   {
     "id": "rat",
@@ -4138,7 +4242,8 @@
         "itemId": null
       }
     ],
-    "image": "rat.png"
+    "image": "rat.png",
+    "mobType": "animal"
   },
   {
     "id": "shark",
@@ -4171,7 +4276,8 @@
         "itemId": null
       }
     ],
-    "image": "shark.png"
+    "image": "shark.png",
+    "mobType": "animal"
   },
   {
     "id": "bee",
@@ -4207,7 +4313,8 @@
         "itemId": null
       }
     ],
-    "image": "bee.png"
+    "image": "bee.png",
+    "mobType": "animal"
   },
   {
     "id": "coyote",
@@ -4251,7 +4358,8 @@
         "itemId": "leather"
       }
     ],
-    "image": "coyote.png"
+    "image": "coyote.png",
+    "mobType": "animal"
   },
   {
     "id": "cougar",
@@ -4293,7 +4401,8 @@
         "itemId": "leather"
       }
     ],
-    "image": "cougar.png"
+    "image": "cougar.png",
+    "mobType": "animal"
   },
   {
     "id": "black_bear",
@@ -4344,7 +4453,8 @@
         "itemId": "bone"
       }
     ],
-    "image": "black_bear.png"
+    "image": "black_bear.png",
+    "mobType": "animal"
   },
   {
     "id": "yak",
@@ -4386,7 +4496,8 @@
         "itemId": "leather"
       }
     ],
-    "image": "yak.png"
+    "image": "yak.png",
+    "mobType": "animal"
   },
   {
     "id": "musk_ox",
@@ -4437,7 +4548,8 @@
         "itemId": "bone"
       }
     ],
-    "image": "musk_ox.png"
+    "image": "musk_ox.png",
+    "mobType": "animal"
   },
   {
     "id": "camel",
@@ -4479,7 +4591,8 @@
         "itemId": "leather"
       }
     ],
-    "image": "camel.png"
+    "image": "camel.png",
+    "mobType": "animal"
   },
   {
     "id": "boar",
@@ -4521,7 +4634,8 @@
         "itemId": "leather"
       }
     ],
-    "image": "boar.png"
+    "image": "boar.png",
+    "mobType": "animal"
   },
   {
     "id": "hyena",
@@ -4556,7 +4670,8 @@
         "itemId": "rotten_flesh"
       }
     ],
-    "image": "hyena.png"
+    "image": "hyena.png",
+    "mobType": "animal"
   },
   {
     "id": "saber_toothed_tiger",
@@ -4607,7 +4722,8 @@
         "itemId": "bone"
       }
     ],
-    "image": "saber_toothed_tiger.png"
+    "image": "saber_toothed_tiger.png",
+    "mobType": "animal"
   },
   {
     "id": "panther",
@@ -4649,7 +4765,8 @@
         "itemId": "leather"
       }
     ],
-    "image": "panther.png"
+    "image": "panther.png",
+    "mobType": "animal"
   },
   {
     "id": "polar_bear",
@@ -4700,7 +4817,8 @@
         "itemId": "bone"
       }
     ],
-    "image": "polar_bear.png"
+    "image": "polar_bear.png",
+    "mobType": "animal"
   },
   {
     "id": "grizzly_bear",
@@ -4751,7 +4869,8 @@
         "itemId": "bone"
       }
     ],
-    "image": "grizzly_bear.png"
+    "image": "grizzly_bear.png",
+    "mobType": "animal"
   },
   {
     "id": "deer",
@@ -4802,7 +4921,8 @@
         "itemId": "bone"
       }
     ],
-    "image": "deer.png"
+    "image": "deer.png",
+    "mobType": "animal"
   },
   {
     "id": "duck",
@@ -4844,7 +4964,8 @@
         "itemId": "feather"
       }
     ],
-    "image": "duck.png"
+    "image": "duck.png",
+    "mobType": "animal"
   },
   {
     "id": "elephant",
@@ -4886,7 +5007,8 @@
         "itemId": "leather"
       }
     ],
-    "image": "elephant.png"
+    "image": "elephant.png",
+    "mobType": "animal"
   },
   {
     "id": "llama",
@@ -4928,7 +5050,8 @@
         "itemId": "leather"
       }
     ],
-    "image": "llama.png"
+    "image": "llama.png",
+    "mobType": "animal"
   },
   {
     "id": "pheasant",
@@ -4972,6 +5095,7 @@
         "itemId": "feather"
       }
     ],
-    "image": "pheasant.png"
+    "image": "pheasant.png",
+    "mobType": "animal"
   }
 ]

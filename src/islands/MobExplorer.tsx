@@ -24,7 +24,18 @@ interface Mob {
   special?: { hu: string; en: string };
   drops?: Drop[];
   image?: string | null;
+  mobType?: string;
 }
+
+const mobTypeMeta: Record<string, { hu: string; en: string; color: string; bg: string }> = {
+  undead:   { hu: 'Élőhalott', en: 'Undead',    color: '#b0bec5', bg: 'rgba(176,190,197,.12)' },
+  monster:  { hu: 'Szörny',    en: 'Monster',   color: 'var(--accent)', bg: 'rgba(233,69,96,.10)' },
+  animal:   { hu: 'Állat',     en: 'Animal',    color: 'var(--green)', bg: 'rgba(78,204,163,.10)' },
+  nether:   { hu: 'Nether',    en: 'Nether',    color: '#ff7043', bg: 'rgba(255,112,67,.12)' },
+  end:      { hu: 'End',       en: 'End',        color: 'var(--adamantium)', bg: 'rgba(179,136,255,.12)' },
+  elemental:{ hu: 'Elementális',en: 'Elemental', color: '#ffd54f', bg: 'rgba(255,213,79,.12)' },
+  boss:     { hu: 'Boss',      en: 'Boss',       color: 'var(--adamantium)', bg: 'rgba(179,136,255,.20)' },
+};
 
 function MobSprite({ mob, size }: { mob: Mob; size: number }) {
   const [err, setErr] = useState(false);
@@ -115,6 +126,7 @@ export default function MobExplorer() {
   const [selectedMob, setSelectedMob] = useState<Mob | null>(null);
   const [diffFilter, setDiffFilter] = useState<'' | 'early' | 'mid' | 'late' | 'boss'>('');
   const [zoneFilter, setZoneFilter] = useState<'' | 'surface' | 'underground' | 'nether'>('');
+  const [typeFilter, setTypeFilter] = useState<string>('');
   const [search, setSearch] = useState('');
   const [sortKey, setSortKey] = useState<'name' | 'hp' | 'dmg' | 'xp'>('name');
   const [sortAsc, setSortAsc] = useState(true);
@@ -176,6 +188,7 @@ export default function MobExplorer() {
   const filtered = allMobs.filter(mob => {
     if (diffFilter && mob.difficulty !== diffFilter) return false;
     if (zoneFilter && !mob.spawnZones.includes(zoneFilter)) return false;
+    if (typeFilter && mob.mobType !== typeFilter) return false;
     if (search) {
       const q = search.toLowerCase();
       if (!mob.name.hu.toLowerCase().includes(q) && !mob.name.en.toLowerCase().includes(q)) return false;
@@ -190,7 +203,7 @@ export default function MobExplorer() {
     return sortAsc ? cmp : -cmp;
   });
 
-  const isFiltered = diffFilter !== '' || zoneFilter !== '' || search !== '';
+  const isFiltered = diffFilter !== '' || zoneFilter !== '' || typeFilter !== '' || search !== '';
 
   function SortTh({ k, label }: { k: typeof sortKey; label: string }) {
     const active = sortKey === k;
@@ -289,6 +302,31 @@ export default function MobExplorer() {
               );
             })}
           </div>
+          {/* Type row */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap', marginTop: 4 }}>
+            <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
+              letterSpacing: '.6px', minWidth: 64 }}>
+              {lang === 'hu' ? 'Típus' : 'Type'}
+            </span>
+            {['', 'undead', 'monster', 'animal', 'nether', 'elemental', 'boss', 'end'].map(t => {
+              const count = t ? allMobs.filter(m => m.mobType === t).length : allMobs.length;
+              const meta = t ? mobTypeMeta[t] : null;
+              const active = typeFilter === t;
+              return (
+                <button key={t} onClick={() => setTypeFilter(t)} style={{
+                  padding: '3px 10px', borderRadius: 20, fontSize: '.78em', fontWeight: active ? 700 : 600,
+                  cursor: 'pointer',
+                  border: `1px solid ${active && meta ? meta.color + '88' : 'var(--surface2)'}`,
+                  background: active && meta ? meta.bg : 'transparent',
+                  color: active && meta ? meta.color : 'var(--text2)',
+                  transition: 'all .15s',
+                } as React.CSSProperties}>
+                  {t ? (mobTypeMeta[t]?.[lang as 'hu' | 'en'] ?? t) : (lang === 'hu' ? 'Mind' : 'All')}
+                  <span style={{ opacity: .55, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>({count})</span>
+                </button>
+              );
+            })}
+          </div>
         </div>
 
         {/* Jobb: search + active chips */}
@@ -334,8 +372,19 @@ export default function MobExplorer() {
                       padding: 0, lineHeight: 1, marginLeft: 2, opacity: .7 }}>×</button>
                 </span>
               )}
+              {typeFilter && mobTypeMeta[typeFilter] && (
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '2px 8px',
+                  borderRadius: 20, fontSize: '.72em', fontWeight: 600,
+                  background: mobTypeMeta[typeFilter].bg, color: mobTypeMeta[typeFilter].color,
+                  border: `1px solid ${mobTypeMeta[typeFilter].color}55` }}>
+                  {mobTypeMeta[typeFilter][lang as 'hu' | 'en']}
+                  <button onClick={() => setTypeFilter('')}
+                    style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer',
+                      padding: 0, lineHeight: 1, marginLeft: 2, opacity: .7 }}>×</button>
+                </span>
+              )}
               {isFiltered && (
-                <button onClick={() => { setDiffFilter(''); setZoneFilter(''); setSearch(''); }}
+                <button onClick={() => { setDiffFilter(''); setZoneFilter(''); setTypeFilter(''); setSearch(''); }}
                   style={{ fontSize: '.7em', color: 'var(--text2)', background: 'none', border: 'none',
                     cursor: 'pointer', padding: '2px 4px', textDecoration: 'underline' }}>
                   {lang === 'hu' ? 'Törlés' : 'Clear all'}
@@ -503,6 +552,16 @@ export default function MobExplorer() {
                         {zoneIcon[z] ?? ''} {zoneLabel(z)}
                       </span>
                     ))}
+                    {selectedMob.mobType && mobTypeMeta[selectedMob.mobType] && (
+                      <span style={{
+                        padding: '2px 8px', borderRadius: 4, fontSize: '.7em', fontWeight: 600,
+                        background: mobTypeMeta[selectedMob.mobType].bg,
+                        color: mobTypeMeta[selectedMob.mobType].color,
+                        border: `1px solid ${mobTypeMeta[selectedMob.mobType].color}44`,
+                      }}>
+                        {mobTypeMeta[selectedMob.mobType][lang as 'hu' | 'en']}
+                      </span>
+                    )}
                   </div>
                   </div>{/* end name+badges div */}
                 </div>{/* end sprite+name flex */}

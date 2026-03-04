@@ -1,0 +1,470 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import TopNav from '../components/TopNav.astro';
+import Sidebar from '../components/Sidebar.astro';
+import '../styles/global.css';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const sidebarGroups = {
+  hu: [
+    {
+      title: '🧪 Brewing',
+      links: [
+        { href: '#brewing-overview', label: 'Áttekintés' },
+        { href: '#brewing-stand', label: 'Főzőállvány' },
+        { href: '#brewer-profession', label: 'Brewer Foglalkozás' },
+        { href: '#cauldron', label: 'Üst Mechanikák' },
+        { href: '#potions', label: 'Bájital Hatások' },
+        { href: '#splash-potions', label: 'Fröccsenő Bájitalok' },
+        { href: '#disenchanting', label: 'Varázstalanító Palack' },
+        { href: '#cheese', label: 'Sajt Készítés' },
+      ],
+    },
+    {
+      title: '🔗 Kapcsolódó',
+      links: [
+        { href: `${base}/reference/#potions`, label: '↗ Referencia: Bájitalok' },
+        { href: `${base}/reference/#mobs`, label: '↗ Referencia: Szörnyek' },
+        { href: `${base}/`, label: '← Wiki főoldal' },
+      ],
+    },
+  ],
+  en: [
+    {
+      title: '🧪 Brewing',
+      links: [
+        { href: '#brewing-overview', label: 'Overview' },
+        { href: '#brewing-stand', label: 'Brewing Stand' },
+        { href: '#brewer-profession', label: 'Brewer Profession' },
+        { href: '#cauldron', label: 'Cauldron Mechanics' },
+        { href: '#potions', label: 'Potion Effects' },
+        { href: '#splash-potions', label: 'Splash Potions' },
+        { href: '#disenchanting', label: 'Disenchanting Bottle' },
+        { href: '#cheese', label: 'Cheese Crafting' },
+      ],
+    },
+    {
+      title: '🔗 Related',
+      links: [
+        { href: `${base}/reference/#potions`, label: '↗ Reference: Potions' },
+        { href: `${base}/reference/#mobs`, label: '↗ Reference: Mobs' },
+        { href: `${base}/`, label: '← Main wiki' },
+      ],
+    },
+  ],
+};
+---
+<BaseLayout title="Brewing — MITE: Break Everything Wiki">
+  <Header />
+  <TopNav currentPage="brewing" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<!-- ═══════════════════════════════════════════════ HUNGARIAN ═══ -->
+<div data-lang="hu">
+<h2 id="brewing-overview">🧪 Brewing — Bájitalfőzés</h2>
+<p>A MITE: Break Everything bájitalrendszere a vanilla Minecraft alapjaira épül, de számos egyedi effekttel és az Üst mechanikával egészül ki. A bájitalfőzéshez <strong>Brewer foglalkozás</strong> kötelező.</p>
+
+<div class="info">⚗️ <strong>Gyors áttekintés:</strong> Főzőállvány + Brewer foglalkozás → bájitalok. Üst (Cauldron) → speciális receptek (Folyékony Arany, Higany, Ősi Fém Hátizsák). Sajt = Brewer + Keménykő Tejesvödör.</div>
+
+<!-- ─── Brewing Stand ─── -->
+<h2 id="brewing-stand">Főzőállvány</h2>
+<p>A Főzőállvány elkészítéséhez <strong>Kova Munkaasztal</strong> (vagy magasabb) szükséges:</p>
+
+<div class="craft-section">
+  <div class="craft-table">
+    <div class="craft-grid g3x3">
+      <div class="craft-slot empty"></div>
+      <div class="craft-slot">
+        <div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#e94560">Pokoli Bot (Blaze Rod)</div><div class="tt-name" data-lang="en" style="color:#e94560">Blaze Rod</div><div class="tt-desc" data-lang="hu">Blaze dobja (Nether)</div><div class="tt-desc" data-lang="en">Dropped by Blaze (Nether)</div></div>
+        <img src="{base}/img/items/blaze_rod.png" alt="" onerror="this.style.opacity=.3">
+      </div>
+      <div class="craft-slot empty"></div>
+      <div class="craft-slot">
+        <div class="mc-tooltip"><div class="tt-name" style="color:#aaa">Kő/Cobblestone</div><div class="tt-desc" data-lang="hu">Kavicsos kő</div><div class="tt-desc" data-lang="en">Cobblestone</div></div>
+        <img src="{base}/img/blocks/stone.png" alt="" onerror="this.style.opacity=.3">
+      </div>
+      <div class="craft-slot empty"></div>
+      <div class="craft-slot">
+        <div class="mc-tooltip"><div class="tt-name" style="color:#aaa">Kő/Cobblestone</div></div>
+        <img src="{base}/img/blocks/stone.png" alt="" onerror="this.style.opacity=.3">
+      </div>
+      <div class="craft-slot empty"></div>
+      <div class="craft-slot empty"></div>
+      <div class="craft-slot empty"></div>
+    </div>
+    <div class="craft-arrow-box">➜</div>
+    <div class="craft-output">
+      <div class="craft-slot">
+        <div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#4ecca3">Főzőállvány</div><div class="tt-name" data-lang="en" style="color:#4ecca3">Brewing Stand</div></div>
+      </div>
+    </div>
+    <div class="craft-label" data-lang="hu">Főzőállvány</div>
+    <div class="craft-label" data-lang="en">Brewing Stand</div>
+  </div>
+</div>
+
+<p>A bájitalfőzés folyamata:</p>
+<ol>
+  <li><strong>Vízpalack</strong> → Akármelyik vízforrásból (Glass Bottle + víz)</li>
+  <li>Vízpalack a Főzőállványba + <strong>Netheri Szemölcs (Nether Wart)</strong> → Zavaros Bájital (Awkward Potion)</li>
+  <li>Zavaros Bájital + hatóanyag → kész bájital</li>
+  <li>Opcionális: + <strong>Lőpor</strong> → Fröccsenő (Splash) változat</li>
+</ol>
+
+<!-- ─── Brewer Profession ─── -->
+<h2 id="brewer-profession">Brewer Foglalkozás</h2>
+<div class="warning">⚠️ <strong>Brewer foglalkozás nélkül NEM főzhetsz bájitalt!</strong> A foglalkozás választása végleges — gondold át alaposan.</div>
+
+<p>A Brewer foglalkozás előnyei:</p>
+<ul>
+  <li>🧪 Bájitalfőzés (Brewing Stand használata)</li>
+  <li>🧀 Sajt készítése (Keménykő Tejesvödörből)</li>
+  <li>⚗️ Speciális Üst receptek elérése</li>
+  <li>💊 Varázstalanító Palack elkészítése</li>
+</ul>
+
+<table>
+  <tr><th>Szint</th><th>XP szükséglet</th><th>Hatás</th></tr>
+  <tr><td>1</td><td>0</td><td>Alapszintű bájitalok (Erő I, Sebesség I, Regeneráció I...)</td></tr>
+  <tr><td>2</td><td>~500 XP</td><td>Bájital II szintek elérhetők; splash potions hatékonyabb</td></tr>
+  <tr><td>3</td><td>~2000 XP</td><td>Bájital III szintek; hosszabb időtartam</td></tr>
+  <tr><td>4</td><td>~8000 XP</td><td>Bájital IV szintek (max erő/sebesség); sajt 5× hatékonyabb recept</td></tr>
+</table>
+
+<div class="tip">💡 <strong>Tipp:</strong> Brewer és Blacksmith/Enchanter kombinálás nem lehetséges — csak 1 foglalkozás választható. Ha harcra fókuszálsz, fontold meg, hogy Brewer helyett Enchanterrel indul-e a karaktered.</div>
+
+<!-- ─── Cauldron ─── -->
+<h2 id="cauldron">Üst (Cauldron) Mechanikák</h2>
+<p>Az Üst nem csak vizet tárol — egyedi MITE receptek forrása, amelyek normál Főzőállványon NEM készíthetők el.</p>
+
+<div class="info">ℹ️ Az Üst standard Minecraft recepttel craftolandó: 7× Vas Rúd, U alakban (3×3 rács).</div>
+
+<table>
+  <tr><th>Recept neve</th><th>Folyamat</th><th>Eredmény</th><th>Felhasználás</th></tr>
+  <tr>
+    <td><strong style="color:var(--gold)">Folyékony Arany</strong></td>
+    <td>Üst lávaforrás alá helyezve + Arany érc beledobás → 10 mp várakozás</td>
+    <td>Folyékony arany az üstben</td>
+    <td>4× Aranyalma (Golden Apple) készíthető belőle</td>
+  </tr>
+  <tr>
+    <td><strong style="color:var(--silver)">Folyékony Higany</strong></td>
+    <td>Higany érc + Láva az üstben → olvasztás</td>
+    <td>Folyékony higany (vödörrel szedhető)</td>
+    <td>Ötvözési alapanyag; Ősi Fém Hátizsák recepthez</td>
+  </tr>
+  <tr>
+    <td><strong style="color:var(--ancient)">Ősi Fém Hátizsák</strong></td>
+    <td>Bőr Hátizsák + 4× Ősi Fém Rúd higanyba → 30 mp várakozás</td>
+    <td>Ősi Fém Hátizsák</td>
+    <td>Több tárgy slot, tartósabb hátizsák</td>
+  </tr>
+</table>
+
+<div class="tip">💡 <strong>Higany forrás:</strong> Mocsár biome-ban található Higany érc (Y 0–40). Olvasztáshoz @3 kemence (Obszidián Kemence) szükséges!</div>
+
+<!-- ─── Potion Effects ─── -->
+<h2 id="potions">Bájital Hatások</h2>
+<p>A MITE: Break Everything 20 különböző bájital effektet tartalmaz, köztük vanilla és egyedi MITE hatásokat:</p>
+
+<table>
+  <tr><th>Bájital / Hatás</th><th>Típus</th><th>Leírás</th><th>Szintek</th></tr>
+  <tr><td><strong>Sebesség</strong></td><td>Pozitív</td><td>Gyorsabb mozgás</td><td>I–IV</td></tr>
+  <tr><td><strong>Erő</strong></td><td>Pozitív</td><td>Több ütés sebzés</td><td>I–IV</td></tr>
+  <tr><td><strong>Regeneráció</strong></td><td>Pozitív</td><td>Folyamatos gyógyulás</td><td>I–IV</td></tr>
+  <tr><td><strong>Gyógyítás</strong></td><td>Pozitív (azonnali)</td><td>Azonnali HP visszatöltés</td><td>I–II</td></tr>
+  <tr><td><strong>Tűzállóság</strong></td><td>Pozitív</td><td>Tűz és láva nem sebez</td><td>I</td></tr>
+  <tr><td><strong>Láva Ellenállás</strong> ⭐</td><td>Pozitív (MITE)</td><td>Speciális MITE effekt — láva sebzés csökkentés</td><td>I</td></tr>
+  <tr><td><strong>Éjszakai Látás</strong></td><td>Pozitív</td><td>Teljes látás sötétben</td><td>I</td></tr>
+  <tr><td><strong>Vízben Való Légzés</strong></td><td>Pozitív</td><td>Víz alatti lélegzés korlátlanul</td><td>I</td></tr>
+  <tr><td><strong>Láthatatlanság</strong></td><td>Pozitív</td><td>Szörnyek nem látnak (kivétel: HIM)</td><td>I</td></tr>
+  <tr><td><strong>Sebzés (Harming)</strong></td><td>Negatív/Fegyver</td><td>Azonnali sebzés — Tűz Elementális ellen kiváló!</td><td>I–II</td></tr>
+  <tr><td><strong>Mérgezés</strong></td><td>Negatív</td><td>Folyamatos mérgezési sebzés</td><td>I–IV</td></tr>
+  <tr><td><strong>Gyengeség</strong></td><td>Negatív</td><td>Csökkentett ütési sebzés</td><td>I–II</td></tr>
+  <tr><td><strong>Lassúság</strong></td><td>Negatív</td><td>Lassabb mozgás</td><td>I–II</td></tr>
+  <tr><td><strong>Sorvadás (Wither)</strong></td><td>Negatív</td><td>Wither betegség hatás</td><td>I–II</td></tr>
+  <tr><td><strong>Korrózió</strong> ⭐</td><td>Negatív (MITE)</td><td>Felszerelés tartósság csökkentés</td><td>I</td></tr>
+  <tr><td><strong>Alvászavar</strong> ⭐</td><td>Negatív (MITE)</td><td>Alvás nem lehetséges az effekt alatt</td><td>I</td></tr>
+  <tr><td><strong>Hideg</strong> ⭐</td><td>Negatív (MITE)</td><td>Fagyás — melegítsd magad tűzzel!</td><td>I</td></tr>
+  <tr><td><strong>Napszúrás</strong> ⭐</td><td>Negatív (MITE)</td><td>Hőség hatás</td><td>I</td></tr>
+  <tr><td><strong>Paralízis</strong> ⭐</td><td>Negatív (MITE)</td><td>Teljes mozgásképtelenség</td><td>I</td></tr>
+  <tr><td><strong>Sebezhetőség</strong> ⭐</td><td>Negatív (MITE)</td><td>Több bekapott sebzés minden forrásból</td><td>I</td></tr>
+</table>
+<p style="font-size:.82em;color:var(--text2)">⭐ = MITE egyedi effekt, vanilla Minecraft-ban nem szerepel</p>
+
+<h3>Hatóanyagok → Effektek</h3>
+<table>
+  <tr><th>Hatóanyag</th><th>Bázis effekt</th><th>Megjegyzés</th></tr>
+  <tr><td>Nether Wart (Pokoli Szemölcs)</td><td>Zavaros bájital (alap)</td><td>Minden recept kezdete</td></tr>
+  <tr><td>Cukor</td><td>Sebesség</td><td>–</td></tr>
+  <tr><td>Blaze Por</td><td>Erő</td><td>Blaze Rod-ból</td></tr>
+  <tr><td>Ghast Könny</td><td>Regeneráció</td><td>Ghast dropja</td></tr>
+  <tr><td>Magma Krém</td><td>Tűzállóság</td><td>Magma Cube dropja</td></tr>
+  <tr><td>Arany Sárgarépa</td><td>Éjszakai Látás</td><td>–</td></tr>
+  <tr><td>Pókszem</td><td>Mérgezés</td><td>–</td></tr>
+  <tr><td>Puffer Hal</td><td>Vízben Légzés</td><td>–</td></tr>
+  <tr><td>Aranyi Dinnye Szelet</td><td>Gyógyítás</td><td>–</td></tr>
+  <tr><td>Fermentált Pókszem</td><td>Gyengeség / Sebzés</td><td>Negatív effektekhez</td></tr>
+  <tr><td>+ Szikkasztó Lőpor (Gunpowder)</td><td>Fröccsenő változat</td><td>Minden bájitalra alkalmazható</td></tr>
+  <tr><td>+ Redstone</td><td>Hosszabb időtartam</td><td>Effekt szintet nem növeli</td></tr>
+  <tr><td>+ Glistering Melon / Blaze Por (szint)</td><td>Erősebb hatás (II)</td><td>Redstone VAGY Glowstone — nem mindkettő!</td></tr>
+</table>
+
+<!-- ─── Splash ─── -->
+<h2 id="splash-potions">Fröccsenő Bájitalok (Splash Potions)</h2>
+<p>A legtöbb bájital Fröccsenő változatban is elkészíthető — a kész bájitalhoz <strong>Lőport (Gunpowder)</strong> adj a Főzőállványban.</p>
+
+<div class="tip">💡 Fröccsenő bájitalok dobhatók ellenfelekre (Sebzés, Lassúság, Gyengeség) VAGY szövetségesekre (Gyógyítás, Erő). A Harming Splash különösen hatékony a tüzet nem félő Tűz Elementális ellen!</div>
+
+<table>
+  <tr><th>Stratégia</th><th>Bájital</th><th>Célpont</th></tr>
+  <tr><td>Erős boss harc</td><td>Erő IV Splash</td><td>Magad</td></tr>
+  <tr><td>Menekülés</td><td>Sebesség IV Splash</td><td>Magad</td></tr>
+  <tr><td>Tűz Elementális</td><td>Harming Splash</td><td>Ellenség (nem sebzi magát!)</td></tr>
+  <tr><td>Mérgezés tömbök</td><td>Mérgezés IV Splash</td><td>Szörny csoportok</td></tr>
+  <tr><td>Sérült szövetséges</td><td>Gyógyítás II Splash</td><td>Partner NPC</td></tr>
+</table>
+
+<!-- ─── Disenchanting ─── -->
+<h2 id="disenchanting">Varázstalanító Palack (Disenchanting Bottle)</h2>
+<p>Egyedi MITE bájital amelyet <strong>Főzőállványon</strong> kell elkészíteni (Brewer kell):</p>
+
+<div class="craft-section">
+  <div class="craft-table">
+    <div class="craft-grid g3x3">
+      <div class="craft-slot empty"></div>
+      <div class="craft-slot">
+        <div class="mc-tooltip"><div class="tt-name" style="color:#4ecca3">Pokoli Szemölcs</div><div class="tt-desc" data-lang="hu">Nether Wart — Nether Erődből</div></div>
+      </div>
+      <div class="craft-slot empty"></div>
+      <div class="craft-slot">
+        <div class="mc-tooltip"><div class="tt-name" style="color:#aaa">Vízpalack</div></div>
+      </div>
+      <div class="craft-slot">
+        <div class="mc-tooltip"><div class="tt-name" style="color:#aaa">Szén</div></div>
+      </div>
+      <div class="craft-slot empty"></div>
+      <div class="craft-slot empty"></div>
+      <div class="craft-slot empty"></div>
+      <div class="craft-slot empty"></div>
+    </div>
+    <div class="craft-arrow-box">➜</div>
+    <div class="craft-output">
+      <div class="craft-slot">
+        <div class="mc-tooltip"><div class="tt-name" style="color:#7ec8e3">Varázstalanító Palack</div></div>
+      </div>
+    </div>
+    <div class="craft-label" data-lang="hu">Varázstalanító Palack</div>
+    <div class="craft-label" data-lang="en">Disenchanting Bottle</div>
+  </div>
+</div>
+
+<p><strong>Hatásai:</strong></p>
+<ul>
+  <li>✅ Bűvölések eltávolítása tárgyakról (az XP visszakapható!)</li>
+  <li>✅ Aktív bájital hatások törlése saját magadról</li>
+  <li>✅ Boszorkány átkok eltávolítása</li>
+  <li>⚠️ Tárgy minőségét (Quality) NEM érinti</li>
+</ul>
+
+<div class="tip">💡 Rendkívül hasznos ha rossz bűvölést kaptál az Enchanting Table-nél, vagy ha Boszorkány megátkozta a felszerelésed!</div>
+
+<!-- ─── Cheese ─── -->
+<h2 id="cheese">Sajt Készítés</h2>
+<p><strong>Brewer foglalkozás</strong> szükséges. Csak <strong>Keménykő Tejesvödör</strong> használható — réz vagy vas vödör nem működik! A Keménykő Tehén (hardstone cow) megfejéséhez Keménykő Vödör kell.</p>
+
+<div class="warning">⚠️ A Tehén csak Keménykő (<em>Hardstone</em>) vödörrel fejhető meg MITE-ben — a szokásos vas vödör nem funkciónal megfejésre!</div>
+
+<table>
+  <tr><th>Hozzávaló</th><th>Eredmény</th><th>Nehézség/db</th><th>Hatékonyság</th></tr>
+  <tr><td>1× Keménykő Tejesvödör</td><td>1× Sajt</td><td style="color:var(--accent)">6 400</td><td>Alap (1×)</td></tr>
+  <tr><td>2× Keménykő Tejesvödör</td><td>2× Sajt</td><td style="color:var(--gold)">3 200/db</td><td>2× hatékonyabb</td></tr>
+  <tr><td>3× Keménykő Tejesvödör</td><td>3× Sajt</td><td style="color:var(--gold)">2 133/db</td><td>3× hatékonyabb</td></tr>
+  <tr><td>4× Keménykő Tejesvödör</td><td>4× Sajt</td><td style="color:var(--green)">1 600/db</td><td>4× hatékonyabb</td></tr>
+  <tr><td>5× Keménykő Tejesvödör</td><td>5× Sajt</td><td style="color:var(--green)">1 280/db</td><td style="color:var(--green)">5× hatékonyabb (MAX)</td></tr>
+</table>
+
+<p><strong>Sajt tápértéke:</strong> A Sajt az egyik legjobb ételek egyike MITE-ben — magas jóllakottság és szaturáció értékkel. Különösen hasznos hosszú expedíciókon.</p>
+
+<div class="tip">💡 <strong>Pro tipp:</strong> Mindig tegyél be 5 vödröt egyszerre — az 5 vödörös recept 5× hatékonyabb az 1 vödörösnél ugyanolyan nehézségi ponthoz képest! Fejj minél több tehenet mielőtt sajtot csinálsz.</div>
+
+</div><!-- end hu -->
+
+<!-- ═══════════════════════════════════════════════ ENGLISH ═══ -->
+<div data-lang="en">
+<h2 id="brewing-overview">🧪 Brewing — Potion Brewing</h2>
+<p>MITE: Break Everything's potion system builds on vanilla Minecraft foundations, extended with unique effects and the Cauldron mechanics. The <strong>Brewer profession</strong> is required for all brewing.</p>
+
+<div class="info">⚗️ <strong>Quick overview:</strong> Brewing Stand + Brewer profession → potions. Cauldron → special recipes (Liquid Gold, Mercury, Ancient Metal Backpack). Cheese = Brewer + Hardstone Milk Bucket.</div>
+
+<!-- ─── Brewing Stand EN ─── -->
+<h2 id="brewing-stand">Brewing Stand</h2>
+<p>Craft the Brewing Stand at a <strong>Flint Workbench</strong> (or higher):</p>
+<ul>
+  <li><strong>Ingredients:</strong> 1× Blaze Rod + 2× Cobblestone</li>
+  <li><strong>Station:</strong> Flint Workbench or higher</li>
+</ul>
+
+<p>Brewing process:</p>
+<ol>
+  <li><strong>Water Bottle</strong> → any water source (Glass Bottle + water)</li>
+  <li>Water Bottle in Brewing Stand + <strong>Nether Wart</strong> → Awkward Potion</li>
+  <li>Awkward Potion + ingredient → finished potion</li>
+  <li>Optional: + <strong>Gunpowder</strong> → Splash variant</li>
+</ol>
+
+<!-- ─── Brewer EN ─── -->
+<h2 id="brewer-profession">Brewer Profession</h2>
+<div class="warning">⚠️ <strong>You CANNOT brew potions without the Brewer profession!</strong> Profession choice is permanent — choose carefully.</div>
+
+<p>Brewer profession benefits:</p>
+<ul>
+  <li>🧪 Potion brewing (Brewing Stand access)</li>
+  <li>🧀 Cheese crafting (from Hardstone Milk Buckets)</li>
+  <li>⚗️ Special Cauldron recipes</li>
+  <li>💊 Disenchanting Bottle crafting</li>
+</ul>
+
+<table>
+  <tr><th>Level</th><th>XP Required</th><th>Effect</th></tr>
+  <tr><td>1</td><td>0</td><td>Basic potions (Strength I, Speed I, Regeneration I...)</td></tr>
+  <tr><td>2</td><td>~500 XP</td><td>Potion level II available; more effective splash potions</td></tr>
+  <tr><td>3</td><td>~2000 XP</td><td>Potion level III; extended duration</td></tr>
+  <tr><td>4</td><td>~8000 XP</td><td>Potion level IV (max strength/speed); 5× cheese recipe</td></tr>
+</table>
+
+<div class="tip">💡 <strong>Tip:</strong> Brewer and Blacksmith/Enchanter cannot be combined — only 1 profession per character. If you focus on combat, consider whether Enchanter might be more valuable than Brewer for your playstyle.</div>
+
+<!-- ─── Cauldron EN ─── -->
+<h2 id="cauldron">Cauldron Mechanics</h2>
+<p>The Cauldron isn't just for storing water — it's the source of unique MITE recipes that CANNOT be made in a Brewing Stand.</p>
+
+<div class="info">ℹ️ Craft the Cauldron with the standard Minecraft recipe: 7× Iron Ingots in a U-shape (3×3 grid).</div>
+
+<table>
+  <tr><th>Recipe</th><th>Process</th><th>Result</th><th>Use</th></tr>
+  <tr>
+    <td><strong style="color:var(--gold)">Liquid Gold</strong></td>
+    <td>Place Cauldron under lava source + throw Gold Ore in → wait 10 seconds</td>
+    <td>Liquid gold in cauldron</td>
+    <td>Craft 4× Golden Apples from it</td>
+  </tr>
+  <tr>
+    <td><strong style="color:var(--silver)">Liquid Mercury</strong></td>
+    <td>Mercury ore + Lava in cauldron → smelting process</td>
+    <td>Liquid mercury (collect with bucket)</td>
+    <td>Alloying ingredient; Ancient Metal Backpack recipe</td>
+  </tr>
+  <tr>
+    <td><strong style="color:var(--ancient)">Ancient Metal Backpack</strong></td>
+    <td>Leather Backpack + 4× Ancient Metal Ingot in mercury → wait 30 seconds</td>
+    <td>Ancient Metal Backpack</td>
+    <td>More inventory slots, more durable backpack</td>
+  </tr>
+</table>
+
+<div class="tip">💡 <strong>Mercury source:</strong> Mercury ore found in Swamp biome (Y 0–40). Requires @3 furnace (Obsidian Furnace) to smelt!</div>
+
+<!-- ─── Potion Effects EN ─── -->
+<h2 id="potions">Potion Effects</h2>
+<p>MITE: Break Everything contains 20 different potion effects, including vanilla and unique MITE effects:</p>
+
+<table>
+  <tr><th>Potion / Effect</th><th>Type</th><th>Description</th><th>Levels</th></tr>
+  <tr><td><strong>Speed</strong></td><td>Positive</td><td>Faster movement</td><td>I–IV</td></tr>
+  <tr><td><strong>Strength</strong></td><td>Positive</td><td>Increased melee damage</td><td>I–IV</td></tr>
+  <tr><td><strong>Regeneration</strong></td><td>Positive</td><td>Continuous healing</td><td>I–IV</td></tr>
+  <tr><td><strong>Instant Health</strong></td><td>Positive (instant)</td><td>Instant HP restoration</td><td>I–II</td></tr>
+  <tr><td><strong>Fire Resistance</strong></td><td>Positive</td><td>Fire and lava don't damage you</td><td>I</td></tr>
+  <tr><td><strong>Lava Resistance</strong> ⭐</td><td>Positive (MITE)</td><td>MITE-specific effect — reduces lava damage</td><td>I</td></tr>
+  <tr><td><strong>Night Vision</strong></td><td>Positive</td><td>Full vision in darkness</td><td>I</td></tr>
+  <tr><td><strong>Water Breathing</strong></td><td>Positive</td><td>Unlimited underwater breathing</td><td>I</td></tr>
+  <tr><td><strong>Invisibility</strong></td><td>Positive</td><td>Mobs can't see you (exception: HIM)</td><td>I</td></tr>
+  <tr><td><strong>Instant Damage</strong></td><td>Negative/Weapon</td><td>Instant damage — excellent against Fire Elementals!</td><td>I–II</td></tr>
+  <tr><td><strong>Poison</strong></td><td>Negative</td><td>Continuous poison damage</td><td>I–IV</td></tr>
+  <tr><td><strong>Weakness</strong></td><td>Negative</td><td>Reduced melee damage output</td><td>I–II</td></tr>
+  <tr><td><strong>Slowness</strong></td><td>Negative</td><td>Reduced movement speed</td><td>I–II</td></tr>
+  <tr><td><strong>Wither</strong></td><td>Negative</td><td>Wither disease effect</td><td>I–II</td></tr>
+  <tr><td><strong>Corrosion</strong> ⭐</td><td>Negative (MITE)</td><td>Reduces equipment durability</td><td>I</td></tr>
+  <tr><td><strong>Insomnia</strong> ⭐</td><td>Negative (MITE)</td><td>Cannot sleep while under this effect</td><td>I</td></tr>
+  <tr><td><strong>Cold</strong> ⭐</td><td>Negative (MITE)</td><td>Freezing — warm yourself with fire!</td><td>I</td></tr>
+  <tr><td><strong>Sunstroke</strong> ⭐</td><td>Negative (MITE)</td><td>Heat effect</td><td>I</td></tr>
+  <tr><td><strong>Paralysis</strong> ⭐</td><td>Negative (MITE)</td><td>Complete inability to move</td><td>I</td></tr>
+  <tr><td><strong>Vulnerability</strong> ⭐</td><td>Negative (MITE)</td><td>Increased damage taken from all sources</td><td>I</td></tr>
+</table>
+<p style="font-size:.82em;color:var(--text2)">⭐ = MITE-unique effect, not present in vanilla Minecraft</p>
+
+<h3>Ingredients → Effects</h3>
+<table>
+  <tr><th>Ingredient</th><th>Base effect</th><th>Note</th></tr>
+  <tr><td>Nether Wart</td><td>Awkward Potion (base)</td><td>Starting point for every recipe</td></tr>
+  <tr><td>Sugar</td><td>Speed</td><td>–</td></tr>
+  <tr><td>Blaze Powder</td><td>Strength</td><td>From Blaze Rod</td></tr>
+  <tr><td>Ghast Tear</td><td>Regeneration</td><td>Dropped by Ghasts</td></tr>
+  <tr><td>Magma Cream</td><td>Fire Resistance</td><td>Dropped by Magma Cubes</td></tr>
+  <tr><td>Golden Carrot</td><td>Night Vision</td><td>–</td></tr>
+  <tr><td>Spider Eye</td><td>Poison</td><td>–</td></tr>
+  <tr><td>Pufferfish</td><td>Water Breathing</td><td>–</td></tr>
+  <tr><td>Glistering Melon Slice</td><td>Instant Health</td><td>–</td></tr>
+  <tr><td>Fermented Spider Eye</td><td>Weakness / Instant Damage</td><td>For negative effects</td></tr>
+  <tr><td>+ Gunpowder</td><td>Splash variant</td><td>Applicable to any potion</td></tr>
+  <tr><td>+ Redstone</td><td>Extended duration</td><td>Does not increase effect level</td></tr>
+  <tr><td>+ Glowstone Dust</td><td>Stronger effect (II)</td><td>Redstone OR Glowstone — not both!</td></tr>
+</table>
+
+<!-- ─── Splash EN ─── -->
+<h2 id="splash-potions">Splash Potions</h2>
+<p>Most potions can be made in Splash form — add <strong>Gunpowder</strong> to any finished potion in the Brewing Stand.</p>
+
+<div class="tip">💡 Splash potions can be thrown at enemies (Instant Damage, Slowness, Weakness) OR allies (Instant Health, Strength). Harming Splash is especially effective against Fire Elementals which are otherwise fire-immune!</div>
+
+<table>
+  <tr><th>Strategy</th><th>Potion</th><th>Target</th></tr>
+  <tr><td>Boss fight boost</td><td>Strength IV Splash</td><td>Yourself</td></tr>
+  <tr><td>Escape</td><td>Speed IV Splash</td><td>Yourself</td></tr>
+  <tr><td>Fire Elemental</td><td>Harming Splash</td><td>Enemy (won't hurt you!)</td></tr>
+  <tr><td>Crowd control</td><td>Poison IV Splash</td><td>Mob groups</td></tr>
+  <tr><td>Wounded ally</td><td>Instant Health II Splash</td><td>Partner NPC</td></tr>
+</table>
+
+<!-- ─── Disenchanting EN ─── -->
+<h2 id="disenchanting">Disenchanting Bottle</h2>
+<p>A unique MITE potion crafted in the <strong>Brewing Stand</strong> (Brewer required):</p>
+<p><strong>Recipe:</strong> Water Bottle + Coal + Nether Wart → Brewing Stand</p>
+
+<p><strong>Effects:</strong></p>
+<ul>
+  <li>✅ Remove enchantments from items (XP is recovered!)</li>
+  <li>✅ Clear active potion effects from yourself</li>
+  <li>✅ Remove witch curses</li>
+  <li>⚠️ Does NOT affect item Quality</li>
+</ul>
+
+<div class="tip">💡 Extremely useful if you got a bad enchantment at the Enchanting Table, or if a Witch cursed your equipment!</div>
+
+<!-- ─── Cheese EN ─── -->
+<h2 id="cheese">Cheese Crafting</h2>
+<p><strong>Brewer profession</strong> required. Only <strong>Hardstone Milk Buckets</strong> work — copper or iron buckets do not! You need a Hardstone Bucket to milk a Hardstone Cow.</p>
+
+<div class="warning">⚠️ Cows can only be milked with a <em>Hardstone Bucket</em> in MITE — the regular iron bucket does not work for milking!</div>
+
+<table>
+  <tr><th>Input</th><th>Output</th><th>Difficulty/unit</th><th>Efficiency</th></tr>
+  <tr><td>1× Hardstone Milk Bucket</td><td>1× Cheese</td><td style="color:var(--accent)">6,400</td><td>Base (1×)</td></tr>
+  <tr><td>2× Hardstone Milk Bucket</td><td>2× Cheese</td><td style="color:var(--gold)">3,200/unit</td><td>2× efficient</td></tr>
+  <tr><td>3× Hardstone Milk Bucket</td><td>3× Cheese</td><td style="color:var(--gold)">2,133/unit</td><td>3× efficient</td></tr>
+  <tr><td>4× Hardstone Milk Bucket</td><td>4× Cheese</td><td style="color:var(--green)">1,600/unit</td><td>4× efficient</td></tr>
+  <tr><td>5× Hardstone Milk Bucket</td><td>5× Cheese</td><td style="color:var(--green)">1,280/unit</td><td style="color:var(--green)">5× efficient (MAX)</td></tr>
+</table>
+
+<div class="tip">💡 <strong>Pro tip:</strong> Always put in 5 buckets at once — the 5-bucket recipe is 5× more XP-efficient than making one at a time! Milk as many cows as possible before crafting.</div>
+
+</div><!-- end en -->
+
+    </main>
+  </div>
+</BaseLayout>
