@@ -77,18 +77,21 @@ function initNavTracking() {
   }
 
   function getTargets() {
-    return links.map(a => {
+    const els = links.map(a => {
       const id = a.getAttribute('href').slice(1);
       return findVisibleEl(id);
     }).filter(Boolean);
+    // Sort by actual document position (offsetTop from document top)
+    return els.sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top);
   }
 
   function updateActive() {
     const targets = getTargets();
+    // Find the last section header that has scrolled past the top (top <= 80px)
     let best = null;
     for (const el of targets) {
-      const top = el.getBoundingClientRect().top;
-      if (top <= 80) best = el; // last one that passed the 80px line
+      if (el.getBoundingClientRect().top <= 80) best = el;
+      else break; // sorted, so once positive we're done
     }
     if (best) setActive(best.id);
   }
