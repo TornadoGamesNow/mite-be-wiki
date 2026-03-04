@@ -49,7 +49,7 @@ function MobSprite({ mob, size }: { mob: Mob; size: number }) {
   }
   return (
     <img
-      src={`${BASE}/img/mobs/${mob.image}`}
+      src={`${BASE}/img/mobs/${mob.image.replace('.png', '_face.png')}`}
       alt={mob.id}
       width={size} height={size}
       onError={() => setErr(true)}
