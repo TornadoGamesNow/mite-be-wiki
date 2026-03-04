@@ -1,0 +1,31 @@
+{
+  "furnaceHeat": [
+    { "level": 1, "furnace": { "hu": "Agyag Kemence", "en": "Clay Furnace" }, "smelts": { "hu": "Szén, Étel sütés", "en": "Coal, Food cooking" } },
+    { "level": 2, "furnace": { "hu": "Keményített Agyag / Kő Kemence", "en": "Hardened Clay / Stone Furnace" }, "smelts": { "hu": "Réz, Ezüst, Vas, Arany, Keménykő", "en": "Copper, Silver, Iron, Gold, Hardstone" } },
+    { "level": 3, "furnace": { "hu": "Obszidián Kemence", "en": "Obsidian Furnace" }, "smelts": { "hu": "Mithril, Higany", "en": "Mithril, Mercury" } },
+    { "level": 4, "furnace": { "hu": "Pokoli Kő Kemence", "en": "Netherrack Furnace" }, "smelts": { "hu": "Adamantium", "en": "Adamantium" } }
+  ],
+  "armorProtection": {
+    "plate": [
+      { "material": { "hu": "Bőr", "en": "Leather" }, "total": 2.00, "tier": "flint" },
+      { "material": { "hu": "Arany", "en": "Gold" }, "total": 6.00, "tier": "gold" },
+      { "material": { "hu": "Réz / Ezüst", "en": "Copper / Silver" }, "total": 7.00, "tier": "copper" },
+      { "material": { "hu": "Bronz", "en": "Bronze" }, "total": 7.40, "tier": "copper" },
+      { "material": { "hu": "Ezüst-Réz", "en": "Silver-Copper" }, "total": 7.70, "tier": "silver" },
+      { "material": { "hu": "Vas / HC Acél", "en": "Iron / HC Steel" }, "total": 8.00, "tier": "iron" },
+      { "material": { "hu": "Keménykő", "en": "Hardstone" }, "total": 8.40, "tier": "hard" },
+      { "material": { "hu": "Ősi Fém", "en": "Ancient Metal" }, "total": 8.80, "tier": "ancient" },
+      { "material": { "hu": "Mithril", "en": "Mithril" }, "total": 9.30, "tier": "mithril" },
+      { "material": { "hu": "Adamantium", "en": "Adamantium" }, "total": 10.00, "tier": "adamantium" }
+    ]
+  },
+  "weaponDamage": {
+    "swords": [
+      { "material": { "hu": "Réz / Ezüst / Bronz / Ezüst-Réz", "en": "Copper / Silver / Bronze / Silver-Copper" }, "dmg": "+7", "tier": "copper" },
+      { "material": { "hu": "Vas / HC Acél / Keménykő", "en": "Iron / HC Steel / Hardstone" }, "dmg": "+8", "tier": "iron" },
+      { "material": { "hu": "Ősi Fém", "en": "Ancient Metal" }, "dmg": "+9", "tier": "ancient" },
+      { "material": { "hu": "Adamantium", "en": "Adamantium" }, "dmg": "+10", "tier": "adamantium" },
+      { "material": { "hu": "Mithril", "en": "Mithril" }, "dmg": "+11", "tier": "mithril" }
+    ]
+  }
+}

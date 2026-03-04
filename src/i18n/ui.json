@@ -1,0 +1,44 @@
+{
+  "hu": {
+    "siteTitle": "MITE: Break Everything Wiki",
+    "subtitle": "Nem hivatalos magyar wiki a MITE: Break Everything modhoz",
+    "nav": {
+      "home": "Kezdőlap",
+      "reference": "Referencia",
+      "install": "Telepítés",
+      "faq": "GYIK",
+      "changelog": "Változásnapló"
+    },
+    "search": {
+      "placeholder": "Keresés a wikiben...",
+      "noResults": "Nincs találat",
+      "resultsCount": "{count} találat"
+    },
+    "lang": {
+      "hu": "Magyar",
+      "en": "English"
+    },
+    "backToTop": "Vissza a tetejére"
+  },
+  "en": {
+    "siteTitle": "MITE: Break Everything Wiki",
+    "subtitle": "Unofficial wiki for the MITE: Break Everything mod",
+    "nav": {
+      "home": "Home",
+      "reference": "Reference",
+      "install": "Install",
+      "faq": "FAQ",
+      "changelog": "Changelog"
+    },
+    "search": {
+      "placeholder": "Search the wiki...",
+      "noResults": "No results found",
+      "resultsCount": "{count} results"
+    },
+    "lang": {
+      "hu": "Magyar",
+      "en": "English"
+    },
+    "backToTop": "Back to top"
+  }
+}

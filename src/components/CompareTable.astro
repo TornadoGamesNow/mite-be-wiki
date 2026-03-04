@@ -1,0 +1,56 @@
+---
+interface Props {
+  headers: { hu: string; en: string }[];
+  rows: {
+    cells: (string | { hu: string; en: string })[];
+    tier?: string;
+    highlight?: boolean;
+    muted?: boolean;
+  }[];
+  titleHu?: string;
+  titleEn?: string;
+}
+
+const { headers, rows, titleHu, titleEn } = Astro.props;
+---
+
+{(titleHu || titleEn) && (
+  <h4>
+    {titleHu && <span data-lang="hu">{titleHu}</span>}
+    {titleEn && <span data-lang="en">{titleEn}</span>}
+  </h4>
+)}
+
+<table class="compare-table">
+  <thead>
+    <tr>
+      {headers.map(h => (
+        <th>
+          <span data-lang="hu">{h.hu}</span>
+          <span data-lang="en">{h.en}</span>
+        </th>
+      ))}
+    </tr>
+  </thead>
+  <tbody>
+    {rows.map(row => (
+      <tr style={row.highlight ? 'background: rgba(200,150,255,0.1)' : row.muted ? 'opacity: 0.6' : ''}>
+        {row.cells.map((cell, i) => (
+          <td>
+            {typeof cell === 'string' ? (
+              cell
+            ) : (
+              <>
+                <span data-lang="hu">{cell.hu}</span>
+                <span data-lang="en">{cell.en}</span>
+              </>
+            )}
+            {i === 0 && row.tier && (
+              <span class={`tier t-${row.tier}`} style="margin-left: 6px; font-size: .7em;">{row.tier}</span>
+            )}
+          </td>
+        ))}
+      </tr>
+    ))}
+  </tbody>
+</table>

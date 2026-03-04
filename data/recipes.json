@@ -1,0 +1,5149 @@
+[
+  {
+    "id": "straw_rope",
+    "output": "straw_rope",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "plant_fiber",
+        "plant_fiber"
+      ],
+      [
+        "plant_fiber",
+        "plant_fiber"
+      ]
+    ],
+    "label": {
+      "hu": "Fűkötél",
+      "en": "Straw Rope"
+    },
+    "tags": [
+      "early-game",
+      "material"
+    ],
+    "difficulty": 25
+  },
+  {
+    "id": "simple_stone_knife",
+    "output": "flint_knife",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "straw_rope",
+        "flint_shard"
+      ],
+      [
+        "_",
+        "stick"
+      ]
+    ],
+    "label": {
+      "hu": "Egyszerű Kőzet Kés",
+      "en": "Simple Stone Knife"
+    },
+    "tags": [
+      "early-game",
+      "tool",
+      "knife"
+    ]
+  },
+  {
+    "id": "leather_rope",
+    "output": "leather_rope",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "leather",
+        "flint_knife"
+      ],
+      [
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Bőrkötél",
+      "en": "Leather Rope"
+    },
+    "tags": [
+      "early-game",
+      "material"
+    ]
+  },
+  {
+    "id": "flint",
+    "output": "flint",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "flint_shard",
+        "flint_shard"
+      ],
+      [
+        "flint_shard",
+        "flint_shard"
+      ]
+    ],
+    "label": {
+      "hu": "Kova (Kőzet)",
+      "en": "Flint"
+    },
+    "tags": [
+      "early-game",
+      "material"
+    ],
+    "difficulty": 100
+  },
+  {
+    "id": "stone_knife",
+    "output": "flint_knife",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "flint",
+        "leather_rope"
+      ],
+      [
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Kőzet Kés",
+      "en": "Stone Knife"
+    },
+    "tags": [
+      "flint-age",
+      "tool",
+      "knife"
+    ]
+  },
+  {
+    "id": "stone_hatchet",
+    "output": "stone_hatchet",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "flint",
+        "leather_rope"
+      ],
+      [
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Kőzet Rövid Fejsze",
+      "en": "Stone Short Hatchet"
+    },
+    "tags": [
+      "flint-age",
+      "tool",
+      "hatchet"
+    ],
+    "tooltip": {
+      "hu": "+3 sebzés",
+      "en": "+3 damage"
+    }
+  },
+  {
+    "id": "stone_axe",
+    "output": "stone_axe",
+    "station": "flint_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "flint",
+        "flint",
+        "_"
+      ],
+      [
+        "flint",
+        "leather_rope",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Kőzet Fejsze",
+      "en": "Stone Axe"
+    },
+    "tags": [
+      "flint-age",
+      "tool",
+      "axe"
+    ],
+    "tooltip": {
+      "hu": "+4 sebzés",
+      "en": "+4 damage"
+    }
+  },
+  {
+    "id": "stone_pickaxe",
+    "output": "stone_pickaxe",
+    "station": "flint_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "flint_shard",
+        "flint",
+        "flint_shard"
+      ],
+      [
+        "sinew",
+        "stick",
+        "sinew"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Kőzet Csákány",
+      "en": "Stone Pickaxe"
+    },
+    "tags": [
+      "flint-age",
+      "tool",
+      "pickaxe"
+    ],
+    "tooltip": {
+      "hu": "+3 sebzés",
+      "en": "+3 damage"
+    }
+  },
+  {
+    "id": "stone_spear",
+    "output": "stone_spear",
+    "station": "flint_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "_",
+        "sharp_chip"
+      ],
+      [
+        "_",
+        "stick",
+        "sinew"
+      ],
+      [
+        "stick",
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Hegyes Kő Lándzsa",
+      "en": "Sharp Stone Spear"
+    },
+    "tags": [
+      "flint-age",
+      "weapon",
+      "spear"
+    ]
+  },
+  {
+    "id": "flint_workbench",
+    "output": "flint_workbench",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "flint",
+        [
+          "silk",
+          "string",
+          "leather_rope"
+        ]
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "label": {
+      "hu": "Kova Munkaasztal",
+      "en": "Flint Workbench"
+    },
+    "tags": [
+      "flint-age",
+      "station"
+    ],
+    "difficulty": 270
+  },
+  {
+    "id": "copper_workbench",
+    "output": "copper_workbench",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "copper_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "label": {
+      "hu": "Réz Munkaasztal",
+      "en": "Copper Workbench"
+    },
+    "tags": [
+      "copper-age",
+      "station"
+    ],
+    "difficulty": 605,
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "silver_workbench",
+    "output": "silver_workbench",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "silver_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "label": {
+      "hu": "Ezüst Munkaasztal",
+      "en": "Silver Workbench"
+    },
+    "tags": [
+      "silver-age",
+      "station"
+    ],
+    "difficulty": 605,
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "gold_workbench",
+    "output": "gold_workbench",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "gold_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "label": {
+      "hu": "Arany Munkaasztal",
+      "en": "Gold Workbench"
+    },
+    "tags": [
+      "gold-age",
+      "station"
+    ],
+    "difficulty": 605,
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "iron_workbench",
+    "output": "iron_workbench",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "iron_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "label": {
+      "hu": "Vas Munkaasztal",
+      "en": "Iron Workbench"
+    },
+    "tags": [
+      "iron-age",
+      "station"
+    ],
+    "difficulty": 1005,
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "hardstone_workbench",
+    "output": "hardstone_workbench",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "label": {
+      "hu": "Keménykő Munkaasztal",
+      "en": "Hardstone Workbench"
+    },
+    "tags": [
+      "hardstone-age",
+      "station"
+    ],
+    "difficulty": 1805,
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "mithril_workbench",
+    "output": "mithril_workbench",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "mithril_bar",
+        "leather"
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "label": {
+      "hu": "Mithril Munkaasztal",
+      "en": "Mithril Workbench"
+    },
+    "tags": [
+      "mithril-age",
+      "station"
+    ],
+    "difficulty": 6605,
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "adamantium_workbench",
+    "output": "adamantium_workbench",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "adamantium_bar",
+        "leather"
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "label": {
+      "hu": "Adamantium Munkaasztal",
+      "en": "Adamantium Workbench"
+    },
+    "tags": [
+      "adamantium-age",
+      "station"
+    ],
+    "difficulty": 25805,
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "wooden_shovel",
+    "output": "stone_shovel",
+    "station": "flint_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Fa Ásó",
+      "en": "Wooden Shovel"
+    },
+    "tags": [
+      "early-game",
+      "tool",
+      "shovel"
+    ],
+    "difficulty": 130,
+    "skill": "carpentry"
+  },
+  {
+    "id": "wooden_sieve",
+    "output": "wooden_sieve",
+    "station": "flint_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "stick",
+        "stick",
+        "stick"
+      ],
+      [
+        "stick",
+        "straw_rope",
+        "stick"
+      ],
+      [
+        "stick",
+        "stick",
+        "stick"
+      ]
+    ],
+    "label": {
+      "hu": "Fa Szita",
+      "en": "Wooden Sieve"
+    },
+    "tags": [
+      "early-game",
+      "tool",
+      "sieve"
+    ]
+  },
+  {
+    "id": "clay_furnace",
+    "output": "clay_furnace",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "clay_block",
+        "clay_block"
+      ],
+      [
+        "clay_block",
+        "clay_block"
+      ]
+    ],
+    "label": {
+      "hu": "Agyag Kemence",
+      "en": "Clay Furnace"
+    },
+    "tags": [
+      "early-game",
+      "station",
+      "furnace"
+    ],
+    "difficulty": 320
+  },
+  {
+    "id": "campfire",
+    "output": "campfire",
+    "station": "flint_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "stick",
+        "_",
+        "stick"
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "log_oak",
+          "log_spruce",
+          "log_birch",
+          "log_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Tábortűz",
+      "en": "Campfire"
+    },
+    "tags": [
+      "early-game",
+      "block"
+    ],
+    "difficulty": 330
+  },
+  {
+    "id": "hardened_clay_furnace",
+    "output": "hardened_clay_furnace",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "hardened_clay",
+        "hardened_clay"
+      ],
+      [
+        "hardened_clay",
+        "hardened_clay"
+      ]
+    ],
+    "label": {
+      "hu": "Keményített Agyag Kemence",
+      "en": "Hardened Clay Furnace"
+    },
+    "tags": [
+      "copper-age",
+      "station",
+      "furnace"
+    ],
+    "difficulty": 720,
+    "skill": "masonry"
+  },
+  {
+    "id": "obsidian_block",
+    "output": "obsidian",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "obsidian_shard",
+        "obsidian_shard"
+      ],
+      [
+        "obsidian_shard",
+        "obsidian_shard"
+      ]
+    ],
+    "label": {
+      "hu": "Obszidián",
+      "en": "Obsidian"
+    },
+    "tags": [
+      "material"
+    ],
+    "difficulty": 89
+  },
+  {
+    "id": "ingot_mold",
+    "output": "obsidian_ingot_mold",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "obsidian",
+        "flint_knife"
+      ],
+      [
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Obszidián Öntőforma",
+      "en": "Obsidian Ingot Mold"
+    },
+    "tags": [
+      "copper-age",
+      "tool"
+    ],
+    "difficulty": 185
+  },
+  {
+    "id": "ingot_mold_x2",
+    "output": "obsidian_ingot_mold",
+    "outputCount": 2,
+    "station": "copper_workbench",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "obsidian",
+        "copper_war_hammer"
+      ],
+      [
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "2× Öntőforma",
+      "en": "2× Ingot Mold"
+    },
+    "tags": [
+      "copper-age",
+      "tool"
+    ]
+  },
+  {
+    "id": "copper_pickaxe",
+    "output": "copper_pickaxe",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "copper_ingot",
+        "copper_ingot",
+        "copper_ingot"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Réz Csákány",
+      "en": "Copper Pickaxe"
+    },
+    "tags": [
+      "copper-age",
+      "tool",
+      "pickaxe"
+    ],
+    "tooltip": {
+      "hu": "+4 sebzés / 3 200 tartósság",
+      "en": "+4 damage / 3,200 durability"
+    },
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "copper_axe",
+    "output": "copper_axe",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "copper_ingot",
+        "copper_ingot",
+        "_"
+      ],
+      [
+        "copper_ingot",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Réz Fejsze",
+      "en": "Copper Axe"
+    },
+    "tags": [
+      "copper-age",
+      "tool",
+      "axe"
+    ],
+    "tooltip": {
+      "hu": "+5 sebzés / 3 200 tartósság",
+      "en": "+5 damage / 3,200 durability"
+    },
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "copper_sword",
+    "output": "copper_sword",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "copper_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "copper_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Réz Kard",
+      "en": "Copper Sword"
+    },
+    "tags": [
+      "copper-age",
+      "weapon",
+      "sword"
+    ],
+    "tooltip": {
+      "hu": "+7 sebzés / 3 200 tartósság",
+      "en": "+7 damage / 3,200 durability"
+    },
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "copper_war_hammer",
+    "output": "copper_war_hammer",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "copper_ingot",
+        "copper_ingot",
+        "copper_ingot"
+      ],
+      [
+        "copper_ingot",
+        "stick",
+        "copper_ingot"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Réz Háborús Kalapács",
+      "en": "Copper War Hammer"
+    },
+    "tags": [
+      "copper-age",
+      "weapon",
+      "war-hammer"
+    ],
+    "tooltip": {
+      "hu": "+5 sebzés / 5 200 tartósság",
+      "en": "+5 damage / 5,200 durability"
+    },
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "copper_hoe",
+    "output": "copper_hoe",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "copper_ingot",
+        "copper_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Réz Kapa",
+      "en": "Copper Hoe"
+    },
+    "tags": [
+      "copper-age",
+      "tool",
+      "hoe"
+    ],
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "silver_sword",
+    "output": "silver_sword",
+    "station": "silver_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "silver_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "silver_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Ezüst Kard",
+      "en": "Silver Sword"
+    },
+    "tags": [
+      "silver-age",
+      "weapon",
+      "sword"
+    ],
+    "tooltip": {
+      "hu": "+7 sebzés / 3 200 tartósság",
+      "en": "+7 damage / 3,200 durability"
+    },
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "iron_pickaxe",
+    "output": "iron_pickaxe",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "iron_ingot",
+        "iron_ingot",
+        "iron_ingot"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Vas Csákány",
+      "en": "Iron Pickaxe"
+    },
+    "tags": [
+      "iron-age",
+      "tool",
+      "pickaxe"
+    ],
+    "tooltip": {
+      "hu": "+6 sebzés / 9 600 tartósság",
+      "en": "+6 damage / 9,600 durability"
+    },
+    "difficulty": 2450,
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "iron_sword",
+    "output": "iron_sword",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "iron_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "iron_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Vas Kard",
+      "en": "Iron Sword"
+    },
+    "tags": [
+      "iron-age",
+      "weapon",
+      "sword"
+    ],
+    "tooltip": {
+      "hu": "+8 sebzés / 6 400 tartósság",
+      "en": "+8 damage / 6,400 durability"
+    },
+    "difficulty": 1625,
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "iron_axe",
+    "output": "iron_axe",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "iron_ingot",
+        "iron_ingot",
+        "_"
+      ],
+      [
+        "iron_ingot",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Vas Fejsze",
+      "en": "Iron Axe"
+    },
+    "tags": [
+      "iron-age",
+      "tool",
+      "axe"
+    ],
+    "tooltip": {
+      "hu": "+7 sebzés / 9 600 tartósság",
+      "en": "+7 damage / 9,600 durability"
+    },
+    "difficulty": 2450,
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "iron_war_hammer",
+    "output": "iron_war_hammer",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "iron_ingot",
+        "iron_ingot",
+        "iron_ingot"
+      ],
+      [
+        "iron_ingot",
+        "stick",
+        "iron_ingot"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Vas Háborús Kalapács",
+      "en": "Iron War Hammer"
+    },
+    "tags": [
+      "iron-age",
+      "weapon",
+      "war-hammer"
+    ],
+    "tooltip": {
+      "hu": "+6 sebzés / 16 000 tartósság",
+      "en": "+6 damage / 16,000 durability"
+    },
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "water_bag",
+    "output": "water_bag",
+    "station": "flint_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "_",
+        "silk"
+      ],
+      [
+        "_",
+        "leather",
+        "_"
+      ],
+      [
+        "leather",
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Vizestasak",
+      "en": "Water Bag"
+    },
+    "tags": [
+      "early-game",
+      "tool",
+      "water"
+    ]
+  },
+  {
+    "id": "big_water_bag",
+    "output": "big_water_bag",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "silk",
+        "silk",
+        "silk"
+      ],
+      [
+        "leather",
+        "_",
+        "leather"
+      ],
+      [
+        "_",
+        "leather",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Nagy Vizestasak",
+      "en": "Big Water Bag"
+    },
+    "tags": [
+      "copper-age",
+      "tool",
+      "water"
+    ]
+  },
+  {
+    "id": "wooden_water_filter",
+    "output": "wooden_water_filter",
+    "station": "flint_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "coal",
+          "charcoal"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "label": {
+      "hu": "Fa Vízszűrő",
+      "en": "Wooden Water Filter"
+    },
+    "tags": [
+      "early-game",
+      "tool",
+      "water"
+    ]
+  },
+  {
+    "id": "backpack",
+    "output": "backpack",
+    "station": "flint_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        [
+          "string",
+          "leather_rope"
+        ],
+        [
+          "string",
+          "leather_rope"
+        ],
+        [
+          "string",
+          "leather_rope"
+        ]
+      ],
+      [
+        "leather",
+        "leather",
+        "leather"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Bőr Hátizsák",
+      "en": "Leather Backpack"
+    },
+    "tags": [
+      "early-game",
+      "tool",
+      "storage"
+    ],
+    "difficulty": 375
+  },
+  {
+    "id": "copper_helmet",
+    "output": "copper_helmet",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "copper_ingot",
+        "copper_ingot",
+        "copper_ingot"
+      ],
+      [
+        "copper_ingot",
+        "_",
+        "copper_ingot"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Réz Sisak",
+      "en": "Copper Helmet"
+    },
+    "tags": [
+      "copper-age",
+      "armor",
+      "helmet"
+    ],
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "copper_chestplate",
+    "output": "copper_chestplate",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "copper_ingot",
+        "_",
+        "copper_ingot"
+      ],
+      [
+        "copper_ingot",
+        "copper_ingot",
+        "copper_ingot"
+      ],
+      [
+        "copper_ingot",
+        "copper_ingot",
+        "copper_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Réz Mellvért",
+      "en": "Copper Chestplate"
+    },
+    "tags": [
+      "copper-age",
+      "armor",
+      "chestplate"
+    ],
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "copper_leggings",
+    "output": "copper_leggings",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "copper_ingot",
+        "copper_ingot",
+        "copper_ingot"
+      ],
+      [
+        "copper_ingot",
+        "_",
+        "copper_ingot"
+      ],
+      [
+        "copper_ingot",
+        "_",
+        "copper_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Réz Lábvért",
+      "en": "Copper Leggings"
+    },
+    "tags": [
+      "copper-age",
+      "armor",
+      "leggings"
+    ],
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "copper_boots",
+    "output": "copper_boots",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "copper_ingot",
+        "_",
+        "copper_ingot"
+      ],
+      [
+        "copper_ingot",
+        "_",
+        "copper_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Réz Csizma",
+      "en": "Copper Boots"
+    },
+    "tags": [
+      "copper-age",
+      "armor",
+      "boots"
+    ],
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "enchanting_table_emerald",
+    "output": "enchanting_table_emerald",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "book",
+        "_"
+      ],
+      [
+        "emerald",
+        "obsidian",
+        "emerald"
+      ],
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ]
+    ],
+    "label": {
+      "hu": "Bűvölőasztal (Smaragd)",
+      "en": "Enchanting Table (Emerald)"
+    },
+    "tags": [
+      "mid-game",
+      "station",
+      "enchanting"
+    ],
+    "difficulty": 2585,
+    "skill": "masonry"
+  },
+  {
+    "id": "enchanting_table_diamond",
+    "output": "enchanting_table_diamond",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "book",
+        "_"
+      ],
+      [
+        "diamond",
+        "obsidian",
+        "diamond"
+      ],
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ]
+    ],
+    "label": {
+      "hu": "Bűvölőasztal (Gyémánt)",
+      "en": "Enchanting Table (Diamond)"
+    },
+    "tags": [
+      "mid-game",
+      "station",
+      "enchanting"
+    ],
+    "difficulty": 4185,
+    "skill": "masonry"
+  },
+  {
+    "id": "filter_paper",
+    "output": "filter_paper",
+    "station": "flint_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "paper",
+        "_",
+        "_"
+      ],
+      [
+        [
+          "coal",
+          "charcoal"
+        ],
+        "_",
+        "_"
+      ],
+      [
+        "paper",
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Szűrőpapír",
+      "en": "Filter Paper"
+    },
+    "tags": [
+      "early-game",
+      "material"
+    ]
+  },
+  {
+    "id": "ancient_metal_filter_paper",
+    "output": "ancient_metal_filter_paper",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "ancient_metal_ingot",
+        "ancient_metal_ingot",
+        "ancient_metal_ingot"
+      ],
+      [
+        "_",
+        "filter_paper",
+        "_"
+      ],
+      [
+        "ancient_metal_ingot",
+        "ancient_metal_ingot",
+        "ancient_metal_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Ősi Fém Szűrőpapír",
+      "en": "Ancient Metal Filter Paper"
+    },
+    "tags": [
+      "mid-game",
+      "material"
+    ]
+  },
+  {
+    "id": "mining_helmet",
+    "output": "mining_helmet",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "gold_ingot",
+        "_"
+      ],
+      [
+        "leather",
+        "redstone_dust",
+        "leather"
+      ],
+      [
+        "tin_plate",
+        "iron_ingot",
+        "tin_plate"
+      ]
+    ],
+    "label": {
+      "hu": "Bányászsisak",
+      "en": "Mining Helmet"
+    },
+    "tags": [
+      "mid-game",
+      "armor",
+      "special"
+    ]
+  },
+  {
+    "id": "battery",
+    "output": "battery",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "iron_ingot",
+        "_"
+      ],
+      [
+        "tin_plate",
+        "redstone_dust",
+        "tin_plate"
+      ],
+      [
+        "tin_plate",
+        "redstone_dust",
+        "tin_plate"
+      ]
+    ],
+    "label": {
+      "hu": "Akkumulátor",
+      "en": "Battery"
+    },
+    "tags": [
+      "mid-game",
+      "material",
+      "special"
+    ]
+  },
+  {
+    "id": "cooling_liquid",
+    "output": "cooling_liquid",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "tin_plate",
+        "_"
+      ],
+      [
+        "tin_plate",
+        "ice",
+        "tin_plate"
+      ],
+      [
+        "tin_plate",
+        "ice",
+        "tin_plate"
+      ]
+    ],
+    "label": {
+      "hu": "Hűtőfolyadék",
+      "en": "Cooling Liquid"
+    },
+    "tags": [
+      "mid-game",
+      "material",
+      "special"
+    ]
+  },
+  {
+    "id": "bedrock_pulverizer",
+    "output": "bedrock_pulverizer",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "beacon",
+        "_"
+      ],
+      [
+        "redstone_block",
+        "obsidian",
+        "redstone_block"
+      ],
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ]
+    ],
+    "label": {
+      "hu": "Alapkő Zúzó",
+      "en": "Bedrock Pulverizer"
+    },
+    "tags": [
+      "late-game",
+      "tool",
+      "special"
+    ]
+  },
+  {
+    "id": "enhanced_ender_eye",
+    "output": "enhanced_ender_eye",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "nether_star",
+        "_"
+      ],
+      [
+        "emerald",
+        "ender_eye",
+        "emerald"
+      ],
+      [
+        "_",
+        "diamond",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Fejlesztett Ender Szem",
+      "en": "Enhanced Ender Eye"
+    },
+    "tags": [
+      "late-game",
+      "material",
+      "special"
+    ]
+  },
+  {
+    "id": "hardstone_sword",
+    "output": "hardstone_sword",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "hardstone_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Keménykő Kard",
+      "en": "Hardstone Sword"
+    },
+    "tags": [
+      "hardstone",
+      "weapon",
+      "sword"
+    ],
+    "tooltip": {
+      "hu": "+8 sebzés / 10 400 tartósság",
+      "en": "+8 damage / 10,400 durability"
+    },
+    "difficulty": 3225,
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "hardstone_pickaxe",
+    "output": "hardstone_pickaxe",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Keménykő Csákány",
+      "en": "Hardstone Pickaxe"
+    },
+    "tags": [
+      "hardstone",
+      "tool",
+      "pickaxe"
+    ],
+    "tooltip": {
+      "hu": "+6 sebzés / 15 600 tartósság",
+      "en": "+6 damage / 15,600 durability"
+    },
+    "difficulty": 4850,
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "hardstone_war_hammer",
+    "output": "hardstone_war_hammer",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
+      ],
+      [
+        "hardstone_ingot",
+        "stick",
+        "hardstone_ingot"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Keménykő Háborús Kalapács",
+      "en": "Hardstone War Hammer"
+    },
+    "tags": [
+      "hardstone",
+      "weapon",
+      "war-hammer"
+    ],
+    "tooltip": {
+      "hu": "+7 sebzés / 26 000 tartósság",
+      "en": "+7 damage / 26,000 durability"
+    },
+    "difficulty": 8050,
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "hardstone_helmet",
+    "output": "hardstone_helmet",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
+      ],
+      [
+        "hardstone_ingot",
+        "_",
+        "hardstone_ingot"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Keménykő Sisak",
+      "en": "Hardstone Helmet"
+    },
+    "tags": [
+      "hardstone",
+      "armor",
+      "helmet"
+    ],
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "hardstone_chestplate",
+    "output": "hardstone_chestplate",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "_",
+        "hardstone_ingot"
+      ],
+      [
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
+      ],
+      [
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Keménykő Mellvért",
+      "en": "Hardstone Chestplate"
+    },
+    "tags": [
+      "hardstone",
+      "armor",
+      "chestplate"
+    ],
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "ancient_metal_sword",
+    "output": "ancient_metal_sword",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "ancient_metal_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "ancient_metal_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Ősi Fém Kard",
+      "en": "Ancient Metal Sword"
+    },
+    "tags": [
+      "ancient-metal",
+      "weapon",
+      "sword"
+    ],
+    "tooltip": {
+      "hu": "+9 sebzés / 22 400 tartósság",
+      "en": "+9 damage / 22,400 durability"
+    },
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "mithril_sword",
+    "output": "mithril_sword",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "mithril_bar",
+        "_"
+      ],
+      [
+        "_",
+        "mithril_bar",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Mithril Kard",
+      "en": "Mithril Sword"
+    },
+    "tags": [
+      "mithril",
+      "weapon",
+      "sword"
+    ],
+    "tooltip": {
+      "hu": "+11 sebzés / 44 800 tartósság",
+      "en": "+11 damage / 44,800 durability"
+    },
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "mithril_pickaxe",
+    "output": "mithril_pickaxe",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "mithril_bar",
+        "mithril_bar",
+        "mithril_bar"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Mithril Csákány",
+      "en": "Mithril Pickaxe"
+    },
+    "tags": [
+      "mithril",
+      "tool",
+      "pickaxe"
+    ],
+    "tooltip": {
+      "hu": "+8 sebzés / 67 200 tartósság",
+      "en": "+8 damage / 67,200 durability"
+    },
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "mithril_axe",
+    "output": "mithril_axe",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "mithril_bar",
+        "mithril_bar",
+        "_"
+      ],
+      [
+        "mithril_bar",
+        "hardstone_handle",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Mithril Fejsze",
+      "en": "Mithril Axe"
+    },
+    "tags": [
+      "mithril",
+      "tool",
+      "axe"
+    ],
+    "tooltip": {
+      "hu": "+9 sebzés / 67 200 tartósság",
+      "en": "+9 damage / 67,200 durability"
+    },
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "mithril_war_hammer",
+    "output": "mithril_war_hammer",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "mithril_bar",
+        "mithril_bar",
+        "mithril_bar"
+      ],
+      [
+        "mithril_bar",
+        "hardstone_handle",
+        "mithril_bar"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Mithril Háborús Kalapács",
+      "en": "Mithril War Hammer"
+    },
+    "tags": [
+      "mithril",
+      "weapon",
+      "war-hammer"
+    ],
+    "tooltip": {
+      "hu": "+9 sebzés / 168 000 tartósság",
+      "en": "+9 damage / 168,000 durability"
+    },
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "adamantium_sword",
+    "output": "adamantium_sword",
+    "station": "adamantium_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "adamantium_bar",
+        "_"
+      ],
+      [
+        "_",
+        "adamantium_bar",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Adamantium Kard",
+      "en": "Adamantium Sword"
+    },
+    "tags": [
+      "adamantium",
+      "weapon",
+      "sword"
+    ],
+    "tooltip": {
+      "hu": "+10 sebzés / 179 200 tartósság",
+      "en": "+10 damage / 179,200 durability"
+    },
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "adamantium_pickaxe",
+    "output": "adamantium_pickaxe",
+    "station": "adamantium_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "adamantium_bar",
+        "adamantium_bar",
+        "adamantium_bar"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Adamantium Csákány",
+      "en": "Adamantium Pickaxe"
+    },
+    "tags": [
+      "adamantium",
+      "tool",
+      "pickaxe"
+    ],
+    "tooltip": {
+      "hu": "+8 sebzés / 268 800 tartósság",
+      "en": "+8 damage / 268,800 durability"
+    },
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "adamantium_axe",
+    "output": "adamantium_axe",
+    "station": "adamantium_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "adamantium_bar",
+        "adamantium_bar",
+        "_"
+      ],
+      [
+        "adamantium_bar",
+        "hardstone_handle",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Adamantium Fejsze",
+      "en": "Adamantium Axe"
+    },
+    "tags": [
+      "adamantium",
+      "tool",
+      "axe"
+    ],
+    "tooltip": {
+      "hu": "+9 sebzés / 307 200 tartósság",
+      "en": "+9 damage / 307,200 durability"
+    },
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "adamantium_war_hammer",
+    "output": "adamantium_war_hammer",
+    "station": "adamantium_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "adamantium_bar",
+        "adamantium_bar",
+        "adamantium_bar"
+      ],
+      [
+        "adamantium_bar",
+        "hardstone_handle",
+        "adamantium_bar"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Adamantium Háborús Kalapács",
+      "en": "Adamantium War Hammer"
+    },
+    "tags": [
+      "adamantium",
+      "weapon",
+      "war-hammer"
+    ],
+    "tooltip": {
+      "hu": "+8 sebzés / 512 000 tartósság",
+      "en": "+8 damage / 512,000 durability"
+    },
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "silver_helmet",
+    "output": "silver_helmet",
+    "station": "silver_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "silver_ingot",
+        "silver_ingot",
+        "silver_ingot"
+      ],
+      [
+        "silver_ingot",
+        "_",
+        "silver_ingot"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Ezüst Sisak",
+      "en": "Silver Helmet"
+    },
+    "tags": [
+      "armor",
+      "silver"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "silver_chestplate",
+    "output": "silver_chestplate",
+    "station": "silver_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "silver_ingot",
+        "_",
+        "silver_ingot"
+      ],
+      [
+        "silver_ingot",
+        "silver_ingot",
+        "silver_ingot"
+      ],
+      [
+        "silver_ingot",
+        "silver_ingot",
+        "silver_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Ezüst Mellvért",
+      "en": "Silver Chestplate"
+    },
+    "tags": [
+      "armor",
+      "silver"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "silver_leggings",
+    "output": "silver_leggings",
+    "station": "silver_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "silver_ingot",
+        "silver_ingot",
+        "silver_ingot"
+      ],
+      [
+        "silver_ingot",
+        "_",
+        "silver_ingot"
+      ],
+      [
+        "silver_ingot",
+        "_",
+        "silver_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Ezüst Lábvért",
+      "en": "Silver Leggings"
+    },
+    "tags": [
+      "armor",
+      "silver"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "silver_boots",
+    "output": "silver_boots",
+    "station": "silver_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "silver_ingot",
+        "_",
+        "silver_ingot"
+      ],
+      [
+        "silver_ingot",
+        "_",
+        "silver_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Ezüst Csizma",
+      "en": "Silver Boots"
+    },
+    "tags": [
+      "armor",
+      "silver"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "gold_helmet",
+    "output": "gold_helmet",
+    "station": "gold_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "gold_ingot",
+        "gold_ingot",
+        "gold_ingot"
+      ],
+      [
+        "gold_ingot",
+        "_",
+        "gold_ingot"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Arany Sisak",
+      "en": "Gold Helmet"
+    },
+    "tags": [
+      "armor",
+      "gold"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "gold_chestplate",
+    "output": "gold_chestplate",
+    "station": "gold_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "gold_ingot",
+        "_",
+        "gold_ingot"
+      ],
+      [
+        "gold_ingot",
+        "gold_ingot",
+        "gold_ingot"
+      ],
+      [
+        "gold_ingot",
+        "gold_ingot",
+        "gold_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Arany Mellvért",
+      "en": "Gold Chestplate"
+    },
+    "tags": [
+      "armor",
+      "gold"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "gold_leggings",
+    "output": "gold_leggings",
+    "station": "gold_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "gold_ingot",
+        "gold_ingot",
+        "gold_ingot"
+      ],
+      [
+        "gold_ingot",
+        "_",
+        "gold_ingot"
+      ],
+      [
+        "gold_ingot",
+        "_",
+        "gold_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Arany Lábvért",
+      "en": "Gold Leggings"
+    },
+    "tags": [
+      "armor",
+      "gold"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "gold_boots",
+    "output": "gold_boots",
+    "station": "gold_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "gold_ingot",
+        "_",
+        "gold_ingot"
+      ],
+      [
+        "gold_ingot",
+        "_",
+        "gold_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Arany Csizma",
+      "en": "Gold Boots"
+    },
+    "tags": [
+      "armor",
+      "gold"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "iron_helmet",
+    "output": "iron_helmet",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "iron_ingot",
+        "iron_ingot",
+        "iron_ingot"
+      ],
+      [
+        "iron_ingot",
+        "_",
+        "iron_ingot"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Vas Sisak",
+      "en": "Iron Helmet"
+    },
+    "tags": [
+      "armor",
+      "iron"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "iron_chestplate",
+    "output": "iron_chestplate",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "iron_ingot",
+        "_",
+        "iron_ingot"
+      ],
+      [
+        "iron_ingot",
+        "iron_ingot",
+        "iron_ingot"
+      ],
+      [
+        "iron_ingot",
+        "iron_ingot",
+        "iron_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Vas Mellvért",
+      "en": "Iron Chestplate"
+    },
+    "tags": [
+      "armor",
+      "iron"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "iron_leggings",
+    "output": "iron_leggings",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "iron_ingot",
+        "iron_ingot",
+        "iron_ingot"
+      ],
+      [
+        "iron_ingot",
+        "_",
+        "iron_ingot"
+      ],
+      [
+        "iron_ingot",
+        "_",
+        "iron_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Vas Lábvért",
+      "en": "Iron Leggings"
+    },
+    "tags": [
+      "armor",
+      "iron"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "iron_boots",
+    "output": "iron_boots",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "iron_ingot",
+        "_",
+        "iron_ingot"
+      ],
+      [
+        "iron_ingot",
+        "_",
+        "iron_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Vas Csizma",
+      "en": "Iron Boots"
+    },
+    "tags": [
+      "armor",
+      "iron"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "hardstone_leggings",
+    "output": "hardstone_leggings",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
+      ],
+      [
+        "hardstone_ingot",
+        "_",
+        "hardstone_ingot"
+      ],
+      [
+        "hardstone_ingot",
+        "_",
+        "hardstone_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Keménykő Lábvért",
+      "en": "Hardstone Leggings"
+    },
+    "tags": [
+      "armor",
+      "hard"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "hardstone_boots",
+    "output": "hardstone_boots",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "hardstone_ingot",
+        "_",
+        "hardstone_ingot"
+      ],
+      [
+        "hardstone_ingot",
+        "_",
+        "hardstone_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Keménykő Csizma",
+      "en": "Hardstone Boots"
+    },
+    "tags": [
+      "armor",
+      "hard"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "ancient_metal_helmet",
+    "output": "ancient_metal_helmet",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "ancient_metal_ingot",
+        "ancient_metal_ingot",
+        "ancient_metal_ingot"
+      ],
+      [
+        "ancient_metal_ingot",
+        "_",
+        "ancient_metal_ingot"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Ősi Fém Sisak",
+      "en": "Ancient Metal Helmet"
+    },
+    "tags": [
+      "armor",
+      "ancient"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "ancient_metal_chestplate",
+    "output": "ancient_metal_chestplate",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "ancient_metal_ingot",
+        "_",
+        "ancient_metal_ingot"
+      ],
+      [
+        "ancient_metal_ingot",
+        "ancient_metal_ingot",
+        "ancient_metal_ingot"
+      ],
+      [
+        "ancient_metal_ingot",
+        "ancient_metal_ingot",
+        "ancient_metal_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Ősi Fém Mellvért",
+      "en": "Ancient Metal Chestplate"
+    },
+    "tags": [
+      "armor",
+      "ancient"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "ancient_metal_leggings",
+    "output": "ancient_metal_leggings",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "ancient_metal_ingot",
+        "ancient_metal_ingot",
+        "ancient_metal_ingot"
+      ],
+      [
+        "ancient_metal_ingot",
+        "_",
+        "ancient_metal_ingot"
+      ],
+      [
+        "ancient_metal_ingot",
+        "_",
+        "ancient_metal_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Ősi Fém Lábvért",
+      "en": "Ancient Metal Leggings"
+    },
+    "tags": [
+      "armor",
+      "ancient"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "ancient_metal_boots",
+    "output": "ancient_metal_boots",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "ancient_metal_ingot",
+        "_",
+        "ancient_metal_ingot"
+      ],
+      [
+        "ancient_metal_ingot",
+        "_",
+        "ancient_metal_ingot"
+      ]
+    ],
+    "label": {
+      "hu": "Ősi Fém Csizma",
+      "en": "Ancient Metal Boots"
+    },
+    "tags": [
+      "armor",
+      "ancient"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "mithril_helmet",
+    "output": "mithril_helmet",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "mithril_bar",
+        "mithril_bar",
+        "mithril_bar"
+      ],
+      [
+        "mithril_bar",
+        "_",
+        "mithril_bar"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Mithril Sisak",
+      "en": "Mithril Helmet"
+    },
+    "tags": [
+      "armor",
+      "mithril"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "mithril_chestplate",
+    "output": "mithril_chestplate",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "mithril_bar",
+        "_",
+        "mithril_bar"
+      ],
+      [
+        "mithril_bar",
+        "mithril_bar",
+        "mithril_bar"
+      ],
+      [
+        "mithril_bar",
+        "mithril_bar",
+        "mithril_bar"
+      ]
+    ],
+    "label": {
+      "hu": "Mithril Mellvért",
+      "en": "Mithril Chestplate"
+    },
+    "tags": [
+      "armor",
+      "mithril"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "mithril_leggings",
+    "output": "mithril_leggings",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "mithril_bar",
+        "mithril_bar",
+        "mithril_bar"
+      ],
+      [
+        "mithril_bar",
+        "_",
+        "mithril_bar"
+      ],
+      [
+        "mithril_bar",
+        "_",
+        "mithril_bar"
+      ]
+    ],
+    "label": {
+      "hu": "Mithril Lábvért",
+      "en": "Mithril Leggings"
+    },
+    "tags": [
+      "armor",
+      "mithril"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "mithril_boots",
+    "output": "mithril_boots",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "mithril_bar",
+        "_",
+        "mithril_bar"
+      ],
+      [
+        "mithril_bar",
+        "_",
+        "mithril_bar"
+      ]
+    ],
+    "label": {
+      "hu": "Mithril Csizma",
+      "en": "Mithril Boots"
+    },
+    "tags": [
+      "armor",
+      "mithril"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "adamantium_helmet",
+    "output": "adamantium_helmet",
+    "station": "adamantium_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "adamantium_bar",
+        "adamantium_bar",
+        "adamantium_bar"
+      ],
+      [
+        "adamantium_bar",
+        "_",
+        "adamantium_bar"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "label": {
+      "hu": "Adamantium Sisak",
+      "en": "Adamantium Helmet"
+    },
+    "tags": [
+      "armor",
+      "adamantium"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "adamantium_chestplate",
+    "output": "adamantium_chestplate",
+    "station": "adamantium_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "adamantium_bar",
+        "_",
+        "adamantium_bar"
+      ],
+      [
+        "adamantium_bar",
+        "adamantium_bar",
+        "adamantium_bar"
+      ],
+      [
+        "adamantium_bar",
+        "adamantium_bar",
+        "adamantium_bar"
+      ]
+    ],
+    "label": {
+      "hu": "Adamantium Mellvért",
+      "en": "Adamantium Chestplate"
+    },
+    "tags": [
+      "armor",
+      "adamantium"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "adamantium_leggings",
+    "output": "adamantium_leggings",
+    "station": "adamantium_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "adamantium_bar",
+        "adamantium_bar",
+        "adamantium_bar"
+      ],
+      [
+        "adamantium_bar",
+        "_",
+        "adamantium_bar"
+      ],
+      [
+        "adamantium_bar",
+        "_",
+        "adamantium_bar"
+      ]
+    ],
+    "label": {
+      "hu": "Adamantium Lábvért",
+      "en": "Adamantium Leggings"
+    },
+    "tags": [
+      "armor",
+      "adamantium"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "adamantium_boots",
+    "output": "adamantium_boots",
+    "station": "adamantium_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "adamantium_bar",
+        "_",
+        "adamantium_bar"
+      ],
+      [
+        "adamantium_bar",
+        "_",
+        "adamantium_bar"
+      ]
+    ],
+    "label": {
+      "hu": "Adamantium Csizma",
+      "en": "Adamantium Boots"
+    },
+    "tags": [
+      "armor",
+      "adamantium"
+    ],
+    "difficulty": 0,
+    "skill": "Blacksmith"
+  },
+  {
+    "id": "furnace_core_stone",
+    "output": "furnace_core_stone",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "cobblestone",
+        "cobblestone",
+        "cobblestone"
+      ],
+      [
+        "cobblestone",
+        [
+          "copper_workbench",
+          "silver_workbench"
+        ],
+        "cobblestone"
+      ],
+      [
+        "cobblestone",
+        "cobblestone",
+        "cobblestone"
+      ]
+    ],
+    "label": {
+      "hu": "Kő Kemence Mag",
+      "en": "Stone Furnace Core"
+    },
+    "tags": [
+      "furnace",
+      "building"
+    ],
+    "difficulty": 1760
+  },
+  {
+    "id": "furnace_core_obsidian",
+    "output": "furnace_core_obsidian",
+    "station": "gold_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ],
+      [
+        "obsidian",
+        [
+          "gold_workbench",
+          "iron_workbench"
+        ],
+        "obsidian"
+      ],
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ]
+    ],
+    "label": {
+      "hu": "Obszidián Kemence Mag",
+      "en": "Obsidian Furnace Core"
+    },
+    "tags": [
+      "furnace",
+      "building"
+    ],
+    "difficulty": 1760
+  },
+  {
+    "id": "furnace_core_netherrack",
+    "output": "furnace_core_netherrack",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "netherrack",
+        "netherrack",
+        "netherrack"
+      ],
+      [
+        "netherrack",
+        [
+          "mithril_workbench",
+          "adamantium_workbench"
+        ],
+        "netherrack"
+      ],
+      [
+        "netherrack",
+        "netherrack",
+        "netherrack"
+      ]
+    ],
+    "label": {
+      "hu": "Pokoli Kő Kemence Mag",
+      "en": "Netherrack Furnace Core"
+    },
+    "tags": [
+      "furnace",
+      "building"
+    ],
+    "difficulty": 1760
+  },
+  {
+    "id": "ancient_metal_workbench",
+    "output": "ancient_metal_workbench",
+    "station": "iron_workbench",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "ancient_metal_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "label": {
+      "hu": "Ősi Fém Munkaasztal",
+      "en": "Ancient Metal Workbench"
+    },
+    "tags": [
+      "hardstone-age",
+      "station"
+    ],
+    "difficulty": 1805,
+    "skill": "blacksmithing"
+  },
+  {
+    "id": "copper_battle_axe",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "copper_ingot",
+        "copper_ingot",
+        "copper_ingot"
+      ],
+      [
+        "copper_ingot",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "output": "copper_battle_axe",
+    "label": {
+      "hu": "Réz Csatabárd",
+      "en": "Copper Battle Axe"
+    },
+    "tags": [
+      "weapon",
+      "axe"
+    ]
+  },
+  {
+    "id": "silver_battle_axe",
+    "station": "silver_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "silver_ingot",
+        "silver_ingot",
+        "silver_ingot"
+      ],
+      [
+        "silver_ingot",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "output": "silver_battle_axe",
+    "label": {
+      "hu": "Ezüst Csatabárd",
+      "en": "Silver Battle Axe"
+    },
+    "tags": [
+      "weapon",
+      "axe"
+    ]
+  },
+  {
+    "id": "gold_battle_axe",
+    "station": "gold_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "gold_ingot",
+        "gold_ingot",
+        "gold_ingot"
+      ],
+      [
+        "gold_ingot",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "output": "gold_battle_axe",
+    "label": {
+      "hu": "Arany Csatabárd",
+      "en": "Gold Battle Axe"
+    },
+    "tags": [
+      "weapon",
+      "axe"
+    ]
+  },
+  {
+    "id": "iron_battle_axe",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "iron_ingot",
+        "iron_ingot",
+        "iron_ingot"
+      ],
+      [
+        "iron_ingot",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "output": "iron_battle_axe",
+    "label": {
+      "hu": "Vas Csatabárd",
+      "en": "Iron Battle Axe"
+    },
+    "tags": [
+      "weapon",
+      "axe"
+    ]
+  },
+  {
+    "id": "ancient_metal_battle_axe",
+    "station": "ancient_metal_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "ancient_metal_ingot",
+        "ancient_metal_ingot",
+        "ancient_metal_ingot"
+      ],
+      [
+        "ancient_metal_ingot",
+        "hardstone_handle",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "output": "ancient_metal_battle_axe",
+    "label": {
+      "hu": "Ősi Fém Csatabárd",
+      "en": "Ancient Metal Battle Axe"
+    },
+    "tags": [
+      "weapon",
+      "axe"
+    ]
+  },
+  {
+    "id": "mithril_battle_axe",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "mithril_bar",
+        "mithril_bar",
+        "mithril_bar"
+      ],
+      [
+        "mithril_bar",
+        "hardstone_handle",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "output": "mithril_battle_axe",
+    "label": {
+      "hu": "Mithril Csatabárd",
+      "en": "Mithril Battle Axe"
+    },
+    "tags": [
+      "weapon",
+      "axe"
+    ]
+  },
+  {
+    "id": "adamantium_battle_axe",
+    "station": "adamantium_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "adamantium_bar",
+        "adamantium_bar",
+        "adamantium_bar"
+      ],
+      [
+        "adamantium_bar",
+        "hardstone_handle",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "output": "adamantium_battle_axe",
+    "label": {
+      "hu": "Adamantium Csatabárd",
+      "en": "Adamantium Battle Axe"
+    },
+    "tags": [
+      "weapon",
+      "axe"
+    ]
+  },
+  {
+    "id": "hardstone_battle_axe",
+    "station": "hardstone_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
+      ],
+      [
+        "hardstone_ingot",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "output": "hardstone_battle_axe",
+    "label": {
+      "hu": "Keménykő Csatabárd",
+      "en": "Hardstone Battle Axe"
+    },
+    "tags": [
+      "weapon",
+      "axe"
+    ]
+  },
+  {
+    "id": "copper_mattock",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "copper_ingot",
+        "copper_ingot",
+        "copper_ingot"
+      ],
+      [
+        "_",
+        "stick",
+        "copper_ingot"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "output": "copper_mattock",
+    "label": {
+      "hu": "Réz Ácskapa",
+      "en": "Copper Mattock"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "silver_mattock",
+    "station": "silver_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "silver_ingot",
+        "silver_ingot",
+        "silver_ingot"
+      ],
+      [
+        "_",
+        "stick",
+        "silver_ingot"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "output": "silver_mattock",
+    "label": {
+      "hu": "Ezüst Ácskapa",
+      "en": "Silver Mattock"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "gold_mattock",
+    "station": "gold_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "gold_ingot",
+        "gold_ingot",
+        "gold_ingot"
+      ],
+      [
+        "_",
+        "stick",
+        "gold_ingot"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "output": "gold_mattock",
+    "label": {
+      "hu": "Arany Ácskapa",
+      "en": "Gold Mattock"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "iron_mattock",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "iron_ingot",
+        "iron_ingot",
+        "iron_ingot"
+      ],
+      [
+        "_",
+        "stick",
+        "iron_ingot"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "output": "iron_mattock",
+    "label": {
+      "hu": "Vas Ácskapa",
+      "en": "Iron Mattock"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "ancient_metal_mattock",
+    "station": "ancient_metal_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "ancient_metal_ingot",
+        "ancient_metal_ingot",
+        "ancient_metal_ingot"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "ancient_metal_ingot"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "output": "ancient_metal_mattock",
+    "label": {
+      "hu": "Ősi Fém Ácskapa",
+      "en": "Ancient Metal Mattock"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "mithril_mattock",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "mithril_bar",
+        "mithril_bar",
+        "mithril_bar"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "mithril_bar"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "output": "mithril_mattock",
+    "label": {
+      "hu": "Mithril Ácskapa",
+      "en": "Mithril Mattock"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "adamantium_mattock",
+    "station": "adamantium_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "adamantium_bar",
+        "adamantium_bar",
+        "adamantium_bar"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "adamantium_bar"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "output": "adamantium_mattock",
+    "label": {
+      "hu": "Adamantium Ácskapa",
+      "en": "Adamantium Mattock"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "hardstone_mattock",
+    "station": "hardstone_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
+      ],
+      [
+        "_",
+        "stick",
+        "hardstone_ingot"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "output": "hardstone_mattock",
+    "label": {
+      "hu": "Keménykő Ácskapa",
+      "en": "Hardstone Mattock"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "copper_scythe",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "stick",
+        "copper_ingot",
+        "_"
+      ],
+      [
+        "stick",
+        "copper_ingot",
+        "_"
+      ],
+      [
+        "stick",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "copper_scythe",
+    "label": {
+      "hu": "Réz Kasza",
+      "en": "Copper Scythe"
+    },
+    "tags": [
+      "tool",
+      "weapon"
+    ]
+  },
+  {
+    "id": "silver_scythe",
+    "station": "silver_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "stick",
+        "silver_ingot",
+        "_"
+      ],
+      [
+        "stick",
+        "silver_ingot",
+        "_"
+      ],
+      [
+        "stick",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "silver_scythe",
+    "label": {
+      "hu": "Ezüst Kasza",
+      "en": "Silver Scythe"
+    },
+    "tags": [
+      "tool",
+      "weapon"
+    ]
+  },
+  {
+    "id": "gold_scythe",
+    "station": "gold_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "stick",
+        "gold_ingot",
+        "_"
+      ],
+      [
+        "stick",
+        "gold_ingot",
+        "_"
+      ],
+      [
+        "stick",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "gold_scythe",
+    "label": {
+      "hu": "Arany Kasza",
+      "en": "Gold Scythe"
+    },
+    "tags": [
+      "tool",
+      "weapon"
+    ]
+  },
+  {
+    "id": "iron_scythe",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "stick",
+        "iron_ingot",
+        "_"
+      ],
+      [
+        "stick",
+        "iron_ingot",
+        "_"
+      ],
+      [
+        "stick",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "iron_scythe",
+    "label": {
+      "hu": "Vas Kasza",
+      "en": "Iron Scythe"
+    },
+    "tags": [
+      "tool",
+      "weapon"
+    ]
+  },
+  {
+    "id": "ancient_metal_scythe",
+    "station": "ancient_metal_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "hardstone_handle",
+        "ancient_metal_ingot",
+        "_"
+      ],
+      [
+        "hardstone_handle",
+        "ancient_metal_ingot",
+        "_"
+      ],
+      [
+        "hardstone_handle",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "ancient_metal_scythe",
+    "label": {
+      "hu": "Ősi Fém Kasza",
+      "en": "Ancient Metal Scythe"
+    },
+    "tags": [
+      "tool",
+      "weapon"
+    ]
+  },
+  {
+    "id": "mithril_scythe",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "hardstone_handle",
+        "mithril_bar",
+        "_"
+      ],
+      [
+        "hardstone_handle",
+        "mithril_bar",
+        "_"
+      ],
+      [
+        "hardstone_handle",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "mithril_scythe",
+    "label": {
+      "hu": "Mithril Kasza",
+      "en": "Mithril Scythe"
+    },
+    "tags": [
+      "tool",
+      "weapon"
+    ]
+  },
+  {
+    "id": "adamantium_scythe",
+    "station": "adamantium_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "hardstone_handle",
+        "adamantium_bar",
+        "_"
+      ],
+      [
+        "hardstone_handle",
+        "adamantium_bar",
+        "_"
+      ],
+      [
+        "hardstone_handle",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "adamantium_scythe",
+    "label": {
+      "hu": "Adamantium Kasza",
+      "en": "Adamantium Scythe"
+    },
+    "tags": [
+      "tool",
+      "weapon"
+    ]
+  },
+  {
+    "id": "hardstone_scythe",
+    "station": "hardstone_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "stick",
+        "hardstone_ingot",
+        "_"
+      ],
+      [
+        "stick",
+        "hardstone_ingot",
+        "_"
+      ],
+      [
+        "stick",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "hardstone_scythe",
+    "label": {
+      "hu": "Keménykő Kasza",
+      "en": "Hardstone Scythe"
+    },
+    "tags": [
+      "tool",
+      "weapon"
+    ]
+  },
+  {
+    "id": "copper_shears",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "copper_ingot",
+        "_"
+      ],
+      [
+        "copper_ingot",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "copper_shears",
+    "label": {
+      "hu": "Réz Olló",
+      "en": "Copper Shears"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "silver_shears",
+    "station": "silver_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "silver_ingot",
+        "_"
+      ],
+      [
+        "silver_ingot",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "silver_shears",
+    "label": {
+      "hu": "Ezüst Olló",
+      "en": "Silver Shears"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "gold_shears",
+    "station": "gold_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "gold_ingot",
+        "_"
+      ],
+      [
+        "gold_ingot",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "gold_shears",
+    "label": {
+      "hu": "Arany Olló",
+      "en": "Gold Shears"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "iron_shears",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "iron_ingot",
+        "_"
+      ],
+      [
+        "iron_ingot",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "iron_shears",
+    "label": {
+      "hu": "Vas Olló",
+      "en": "Iron Shears"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "ancient_metal_shears",
+    "station": "ancient_metal_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "ancient_metal_ingot",
+        "_"
+      ],
+      [
+        "ancient_metal_ingot",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "ancient_metal_shears",
+    "label": {
+      "hu": "Ősi Fém Olló",
+      "en": "Ancient Metal Shears"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "mithril_shears",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "mithril_bar",
+        "_"
+      ],
+      [
+        "mithril_bar",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "mithril_shears",
+    "label": {
+      "hu": "Mithril Olló",
+      "en": "Mithril Shears"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "adamantium_shears",
+    "station": "adamantium_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "adamantium_bar",
+        "_"
+      ],
+      [
+        "adamantium_bar",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "adamantium_shears",
+    "label": {
+      "hu": "Adamantium Olló",
+      "en": "Adamantium Shears"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "hardstone_shears",
+    "station": "hardstone_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "hardstone_ingot",
+        "_"
+      ],
+      [
+        "hardstone_ingot",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "hardstone_shears",
+    "label": {
+      "hu": "Keménykő Olló",
+      "en": "Hardstone Shears"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "silver_hatchet",
+    "station": "silver_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "silver_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "output": "silver_hatchet",
+    "label": {
+      "hu": "Ezüst Kézbalta",
+      "en": "Silver Hatchet"
+    },
+    "tags": [
+      "tool",
+      "weapon"
+    ]
+  },
+  {
+    "id": "gold_hatchet",
+    "station": "gold_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "gold_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "output": "gold_hatchet",
+    "label": {
+      "hu": "Arany Kézbalta",
+      "en": "Gold Hatchet"
+    },
+    "tags": [
+      "tool",
+      "weapon"
+    ]
+  },
+  {
+    "id": "ancient_metal_hatchet",
+    "station": "ancient_metal_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "ancient_metal_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "output": "ancient_metal_hatchet",
+    "label": {
+      "hu": "Ősi Fém Kézbalta",
+      "en": "Ancient Metal Hatchet"
+    },
+    "tags": [
+      "tool",
+      "weapon"
+    ]
+  },
+  {
+    "id": "mithril_hatchet",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "mithril_bar",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "output": "mithril_hatchet",
+    "label": {
+      "hu": "Mithril Kézbalta",
+      "en": "Mithril Hatchet"
+    },
+    "tags": [
+      "tool",
+      "weapon"
+    ]
+  },
+  {
+    "id": "adamantium_hatchet",
+    "station": "adamantium_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "adamantium_bar",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "output": "adamantium_hatchet",
+    "label": {
+      "hu": "Adamantium Kézbalta",
+      "en": "Adamantium Hatchet"
+    },
+    "tags": [
+      "tool",
+      "weapon"
+    ]
+  },
+  {
+    "id": "hardstone_hatchet",
+    "station": "hardstone_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "hardstone_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "output": "hardstone_hatchet",
+    "label": {
+      "hu": "Keménykő Kézbalta",
+      "en": "Hardstone Hatchet"
+    },
+    "tags": [
+      "tool",
+      "weapon"
+    ]
+  },
+  {
+    "id": "silver_hoe",
+    "station": "silver_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "silver_ingot",
+        "silver_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "output": "silver_hoe",
+    "label": {
+      "hu": "Ezüst Kapa",
+      "en": "Silver Hoe"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "gold_hoe",
+    "station": "gold_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "gold_ingot",
+        "gold_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ],
+    "output": "gold_hoe",
+    "label": {
+      "hu": "Arany Kapa",
+      "en": "Gold Hoe"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "ancient_metal_hoe",
+    "station": "ancient_metal_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "ancient_metal_ingot",
+        "ancient_metal_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "output": "ancient_metal_hoe",
+    "label": {
+      "hu": "Ősi Fém Kapa",
+      "en": "Ancient Metal Hoe"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "mithril_hoe",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "mithril_bar",
+        "mithril_bar",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "output": "mithril_hoe",
+    "label": {
+      "hu": "Mithril Kapa",
+      "en": "Mithril Hoe"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "adamantium_hoe",
+    "station": "adamantium_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "adamantium_bar",
+        "adamantium_bar",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_handle",
+        "_"
+      ]
+    ],
+    "output": "adamantium_hoe",
+    "label": {
+      "hu": "Adamantium Kapa",
+      "en": "Adamantium Hoe"
+    },
+    "tags": [
+      "tool"
+    ]
+  },
+  {
+    "id": "torch",
+    "station": "flint_workbench",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "coal",
+        "_"
+      ],
+      [
+        "stick",
+        "_"
+      ]
+    ],
+    "output": "torch",
+    "label": {
+      "hu": "Fáklya",
+      "en": "Torch"
+    },
+    "tags": [
+      "light",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "bow",
+    "station": "flint_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "stick",
+        "string"
+      ],
+      [
+        "stick",
+        "_",
+        "string"
+      ],
+      [
+        "_",
+        "stick",
+        "string"
+      ]
+    ],
+    "output": "bow",
+    "label": {
+      "hu": "Íj",
+      "en": "Bow"
+    },
+    "tags": [
+      "weapon",
+      "crafting"
+    ]
+  },
+  {
+    "id": "flint_arrow",
+    "station": "flint_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "flint_shard",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "feather",
+        "_"
+      ]
+    ],
+    "output": "flint_arrow",
+    "label": {
+      "hu": "Kovanyíl",
+      "en": "Flint Arrow"
+    },
+    "tags": [
+      "ammo",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "copper_arrow",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "copper_nugget",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "feather",
+        "_"
+      ]
+    ],
+    "output": "copper_arrow",
+    "label": {
+      "hu": "Réz Nyíl",
+      "en": "Copper Arrow"
+    },
+    "tags": [
+      "ammo",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "silver_arrow",
+    "station": "silver_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "silver_nugget",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "feather",
+        "_"
+      ]
+    ],
+    "output": "silver_arrow",
+    "label": {
+      "hu": "Ezüst Nyíl",
+      "en": "Silver Arrow"
+    },
+    "tags": [
+      "ammo",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "gold_arrow",
+    "station": "gold_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "gold_nugget",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "feather",
+        "_"
+      ]
+    ],
+    "output": "gold_arrow",
+    "label": {
+      "hu": "Arany Nyíl",
+      "en": "Gold Arrow"
+    },
+    "tags": [
+      "ammo",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "iron_arrow",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "iron_nugget",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "feather",
+        "_"
+      ]
+    ],
+    "output": "iron_arrow",
+    "label": {
+      "hu": "Vas Nyíl",
+      "en": "Iron Arrow"
+    },
+    "tags": [
+      "ammo",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "obsidian_arrow",
+    "station": "flint_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "obsidian_shard",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "feather",
+        "_"
+      ]
+    ],
+    "output": "obsidian_arrow",
+    "label": {
+      "hu": "Obszidián Nyíl",
+      "en": "Obsidian Arrow"
+    },
+    "tags": [
+      "ammo",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "ancient_metal_arrow",
+    "station": "ancient_metal_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "ancient_metal_nugget",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "feather",
+        "_"
+      ]
+    ],
+    "output": "ancient_metal_arrow",
+    "label": {
+      "hu": "Ősi Fém Nyíl",
+      "en": "Ancient Metal Arrow"
+    },
+    "tags": [
+      "ammo",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "mithril_arrow",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "mithril_nugget",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "feather",
+        "_"
+      ]
+    ],
+    "output": "mithril_arrow",
+    "label": {
+      "hu": "Mithril Nyíl",
+      "en": "Mithril Arrow"
+    },
+    "tags": [
+      "ammo",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "adamantium_arrow",
+    "station": "adamantium_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "adamantium_nugget",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "feather",
+        "_"
+      ]
+    ],
+    "output": "adamantium_arrow",
+    "label": {
+      "hu": "Adamantium Nyíl",
+      "en": "Adamantium Arrow"
+    },
+    "tags": [
+      "ammo",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "copper_chain",
+    "station": "copper_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "copper_ingot",
+        "_"
+      ],
+      [
+        "copper_ingot",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "copper_chain",
+    "label": {
+      "hu": "Réz Lánc",
+      "en": "Copper Chain"
+    },
+    "tags": [
+      "armor",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "silver_chain",
+    "station": "silver_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "silver_ingot",
+        "_"
+      ],
+      [
+        "silver_ingot",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "silver_chain",
+    "label": {
+      "hu": "Ezüst Lánc",
+      "en": "Silver Chain"
+    },
+    "tags": [
+      "armor",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "gold_chain",
+    "station": "gold_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "gold_ingot",
+        "_"
+      ],
+      [
+        "gold_ingot",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "gold_chain",
+    "label": {
+      "hu": "Arany Lánc",
+      "en": "Gold Chain"
+    },
+    "tags": [
+      "armor",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "iron_chain",
+    "station": "iron_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "iron_ingot",
+        "_"
+      ],
+      [
+        "iron_ingot",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "iron_chain",
+    "label": {
+      "hu": "Vas Lánc",
+      "en": "Iron Chain"
+    },
+    "tags": [
+      "armor",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "mithril_chain",
+    "station": "mithril_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "mithril_bar",
+        "_"
+      ],
+      [
+        "mithril_bar",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "mithril_chain",
+    "label": {
+      "hu": "Mithril Lánc",
+      "en": "Mithril Chain"
+    },
+    "tags": [
+      "armor",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "adamantium_chain",
+    "station": "adamantium_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "adamantium_bar",
+        "_"
+      ],
+      [
+        "adamantium_bar",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "adamantium_chain",
+    "label": {
+      "hu": "Adamantium Lánc",
+      "en": "Adamantium Chain"
+    },
+    "tags": [
+      "armor",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "ancient_metal_chain",
+    "station": "ancient_metal_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "ancient_metal_ingot",
+        "_"
+      ],
+      [
+        "ancient_metal_ingot",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "ancient_metal_chain",
+    "label": {
+      "hu": "Ősi Fém Lánc",
+      "en": "Ancient Metal Chain"
+    },
+    "tags": [
+      "armor",
+      "crafting"
+    ],
+    "outputCount": 4
+  },
+  {
+    "id": "hardstone_chain",
+    "station": "hardstone_workbench",
+    "gridSize": "3x3",
+    "pattern": [
+      [
+        "_",
+        "hardstone_ingot",
+        "_"
+      ],
+      [
+        "hardstone_ingot",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    "output": "hardstone_chain",
+    "label": {
+      "hu": "Keménykő Lánc",
+      "en": "Hardstone Chain"
+    },
+    "tags": [
+      "armor",
+      "crafting"
+    ],
+    "outputCount": 4
+  }
+]

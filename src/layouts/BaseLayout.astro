@@ -1,0 +1,54 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title = 'MITE: Break Everything Wiki', description = 'The first public bilingual wiki for MITE: Break Everything — a hardcore total-conversion Minecraft mod.' } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+<!DOCTYPE html>
+<html lang="hu" data-lang-init="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalURL.href} />
+  <meta property="og:image" content={`${Astro.site}mite-be-wiki/img/items/adamantium_pickaxe.png`} />
+  <meta name="keywords" content="MITE, MiTE, Minecraft Is Too Easy, Break Everything, wiki, guide, progression, hardcore minecraft mod" />
+  <link rel="canonical" href={canonicalURL.href} />
+  <link rel="icon" href={`${import.meta.env.BASE_URL}img/items/adamantium_pickaxe.png`} type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- FOUC prevention: apply saved language before first paint -->
+  <script is:inline>
+    (function(){
+      var l = localStorage.getItem('mite-wiki-lang');
+      if (l === 'hu' || l === 'en') document.documentElement.setAttribute('data-lang-init', l);
+    })();
+  </script>
+</head>
+<body>
+  <div class="progress-bar" id="progress-bar"></div>
+  <slot />
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">&uarr;</button>
+  <script is:inline>
+    // Progress bar
+    window.addEventListener('scroll', function() {
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      var p = h > 0 ? (window.scrollY / h) * 100 : 0;
+      document.getElementById('progress-bar').style.width = p + '%';
+      var btn = document.getElementById('back-to-top');
+      if (window.scrollY > 400) btn.classList.add('visible');
+      else btn.classList.remove('visible');
+    });
+    document.getElementById('back-to-top').addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+---
+interface SidebarLink {
+  href: string;
+  label: string;
+}
+
+interface SidebarSection {
+  title: string;
+  links: SidebarLink[];
+}
+
+interface Props {
+  groups: {
+    hu: SidebarSection[];
+    en: SidebarSection[];
+  };
+}
+
+const { groups } = Astro.props;
+---
+<!-- HU Sidebar -->
+<div data-lang="hu">
+  <nav class="sidebar">
+    <div class="search-wrap">
+      <input type="text" class="search-input" id="search-input-hu" placeholder="Keresés a wikiben..." aria-label="Search" />
+    </div>
+    <div class="sidebar-nav">
+      {groups.hu.map(section => (
+        <>
+          <h3>{section.title}</h3>
+          <ul>
+            {section.links.map(link => (
+              <li><a href={link.href}>{link.label}</a></li>
+            ))}
+          </ul>
+        </>
+      ))}
+    </div>
+  </nav>
+</div>
+
+<!-- EN Sidebar -->
+<div data-lang="en">
+  <nav class="sidebar">
+    <div class="search-wrap">
+      <input type="text" class="search-input" id="search-input-en" placeholder="Search the wiki..." aria-label="Search" />
+    </div>
+    <div class="sidebar-nav">
+      {groups.en.map(section => (
+        <>
+          <h3>{section.title}</h3>
+          <ul>
+            {section.links.map(link => (
+              <li><a href={link.href}>{link.label}</a></li>
+            ))}
+          </ul>
+        </>
+      ))}
+    </div>
+  </nav>
+</div>
+
+<script is:inline>
+  // Active nav tracking on scroll
+  (function() {
+    var links = document.querySelectorAll('.sidebar-nav a[href^="#"]');
+    if (!links.length) return;
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          links.forEach(function(l) { l.classList.remove('active'); });
+          var sel = '.sidebar-nav a[href="#' + entry.target.id + '"]';
+          document.querySelectorAll(sel).forEach(function(a) { a.classList.add('active'); });
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    links.forEach(function(link) {
+      var id = link.getAttribute('href').slice(1);
+      var el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+  })();
+</script>

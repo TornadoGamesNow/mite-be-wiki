@@ -1,0 +1,33 @@
+---
+// Header component — hero section with title + lang switch
+---
+<header class="hero">
+  <h1>MITE: Break Everything</h1>
+  <p class="subtitle">
+    <span data-lang="hu">Nem hivatalos wiki a MITE: Break Everything modhoz</span>
+    <span data-lang="en">Unofficial wiki for the MITE: Break Everything mod</span>
+  </p>
+  <div class="lang-switch">
+    <button class="lang-btn active" data-set-lang="hu">Magyar</button>
+    <button class="lang-btn" data-set-lang="en">English</button>
+  </div>
+</header>
+
+<script is:inline>
+  document.querySelectorAll('[data-set-lang]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = this.getAttribute('data-set-lang');
+      document.documentElement.setAttribute('data-lang-init', lang);
+      localStorage.setItem('mite-wiki-lang', lang);
+      document.querySelectorAll('.lang-btn').forEach(function(b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      window.dispatchEvent(new CustomEvent('mite-lang-change', { detail: lang }));
+    });
+  });
+  (function() {
+    var lang = document.documentElement.getAttribute('data-lang-init') || 'hu';
+    document.querySelectorAll('.lang-btn').forEach(function(b) {
+      b.classList.toggle('active', b.getAttribute('data-set-lang') === lang);
+    });
+  })();
+</script>

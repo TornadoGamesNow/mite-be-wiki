@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import TopNav from '../components/TopNav.astro';
+import RecipesHub from '../islands/RecipesHub.tsx';
+import '../styles/global.css';
+---
+<BaseLayout title="Receptek — MITE:BE Wiki">
+  <Header />
+  <TopNav currentPage="recipes" />
+  <main style="max-width:1440px; margin:0 auto; padding:24px 32px;">
+    <h2 data-lang="hu">🔧 Recept Böngésző & Sandbox</h2>
+    <h2 data-lang="en">🔧 Recipe Browser & Sandbox</h2>
+    <RecipesHub client:load />
+  </main>
+</BaseLayout>

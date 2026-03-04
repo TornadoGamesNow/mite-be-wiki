@@ -1,0 +1,16 @@
+---
+interface Props {
+  nameHu: string;
+  nameEn: string;
+  descHu?: string;
+  descEn?: string;
+  color?: string;
+}
+const { nameHu, nameEn, descHu, descEn, color } = Astro.props;
+---
+<div class="mc-tooltip">
+  <div class="tt-name" data-lang="hu" style={color ? `color: ${color}` : ''}>{nameHu}</div>
+  <div class="tt-name" data-lang="en" style={color ? `color: ${color}` : ''}>{nameEn}</div>
+  {descHu && <div class="tt-desc" data-lang="hu">{descHu}</div>}
+  {descEn && <div class="tt-desc" data-lang="en">{descEn}</div>}
+</div>

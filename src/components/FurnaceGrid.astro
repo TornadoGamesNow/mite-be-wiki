@@ -1,0 +1,45 @@
+---
+import items from '../../data/items.json';
+
+interface Props {
+  input: string;
+  fuel: string;
+  output: string;
+  labelHu: string;
+  labelEn: string;
+}
+
+const { input, fuel, output, labelHu, labelEn } = Astro.props;
+
+function getItem(id: string) {
+  return (items as Record<string, any>)[id] || null;
+}
+
+const inputItem = getItem(input);
+const fuelItem = getItem(fuel);
+const outputItem = getItem(output);
+---
+
+<div class="furnace-ui">
+  <div class="furnace-row">
+    <div class="craft-slot">
+      {inputItem && <img src={inputItem.img} alt={inputItem.name.en} loading="lazy" />}
+    </div>
+  </div>
+  <div class="furnace-flame">🔥</div>
+  <div class="furnace-row">
+    <div class="craft-slot">
+      {fuelItem && <img src={fuelItem.img} alt={fuelItem.name.en} loading="lazy" />}
+    </div>
+  </div>
+  <div class="furnace-progress">⇩</div>
+  <div class="craft-output">
+    <div class="craft-slot">
+      {outputItem && <img src={outputItem.img} alt={outputItem.name.en} loading="lazy" />}
+    </div>
+  </div>
+  <div class="craft-label">
+    <span data-lang="hu">{labelHu}</span>
+    <span data-lang="en">{labelEn}</span>
+  </div>
+</div>

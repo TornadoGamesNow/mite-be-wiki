@@ -1,0 +1,288 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import TopNav from '../components/TopNav.astro';
+import Sidebar from '../components/Sidebar.astro';
+import '../styles/global.css';
+
+const sidebarGroups = {
+  hu: [
+    {
+      title: '🏠 Navigacio',
+      links: [
+        { href: './', label: '← Wiki fooldal' },
+      ],
+    },
+    {
+      title: '📦 Telepites',
+      links: [
+        { href: '#prerequisites', label: 'Elofeltetelek' },
+        { href: '#download', label: 'Letoltes' },
+        { href: '#install', label: 'Telepites' },
+        { href: '#first-launch', label: 'Elso inditas' },
+        { href: '#troubleshooting', label: 'Hibaelharitas' },
+      ],
+    },
+  ],
+  en: [
+    {
+      title: '🏠 Navigation',
+      links: [
+        { href: './', label: '← Main wiki' },
+      ],
+    },
+    {
+      title: '📦 Installation',
+      links: [
+        { href: '#prerequisites', label: 'Prerequisites' },
+        { href: '#download', label: 'Download' },
+        { href: '#install', label: 'Installation' },
+        { href: '#first-launch', label: 'First Launch' },
+        { href: '#troubleshooting', label: 'Troubleshooting' },
+      ],
+    },
+  ],
+};
+---
+<BaseLayout title="Telepites — MITE: Break Everything Wiki">
+  <Header />
+  <TopNav currentPage="install" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<style>
+.download-btn{display:inline-block;padding:16px 36px;background:linear-gradient(135deg,var(--green),#38b28a);color:#fff;font-size:1.2em;font-weight:700;border-radius:10px;text-decoration:none;transition:transform .15s,box-shadow .15s;box-shadow:0 4px 16px rgba(78,204,163,.3);}
+.download-btn:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(78,204,163,.45);color:#fff;}
+.download-btn span{font-size:.75em;font-weight:400;opacity:.85;display:block;margin-top:4px;}
+.step-number{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;background:var(--accent);color:#fff;border-radius:50%;font-weight:700;font-size:.9em;margin-right:8px;flex-shrink:0;}
+.install-steps{counter-reset:step;}
+.install-steps h3{display:flex;align-items:center;}
+details.advanced{margin-top:16px;background:var(--surface);border-radius:var(--radius);border:1px solid var(--surface2);overflow:hidden;}
+details.advanced summary{padding:12px 16px;cursor:pointer;font-weight:600;color:var(--text2);transition:color .2s;}
+details.advanced summary:hover{color:var(--text);}
+details.advanced .details-content{padding:4px 16px 16px;}
+</style>
+
+<!-- ==================== HUNGARIAN ==================== -->
+<div data-lang="hu">
+<h2 id="prerequisites">Előfeltételek</h2>
+
+<div class="warning-box">⚠️ <strong>Fontos:</strong> A MITE:BE <em>nem kompatibilis</em> a modern Minecraft verziókkal. Pontosan <strong>Minecraft 1.6.4</strong>-et igényel, <strong>Forge nélkül</strong>.</div>
+
+<h3><span class="step-number">1</span> Java 8 telepítése</h3>
+<p>A Minecraft 1.6.4 <strong>Java 8</strong>-at igényel — újabb verzió (Java 11, 17, 21 stb.) nem működik!</p>
+<ol>
+  <li>Töltsd le a <strong>Java 8 JRE</strong>-t innen: <a href="https://adoptium.net/temurin/releases/?version=8" target="_blank" rel="noopener">adoptium.net — Eclipse Temurin 8</a></li>
+  <li>Válaszd az operációs rendszerednek megfelelő verziót (Windows x64 → <code>.msi</code> ajánlott)</li>
+  <li>Telepítsd a szokásos módon — jegyezd meg a telepítési helyet!</li>
+</ol>
+<div class="tip-card">💡 Ha már van Java-d telepítve, a <code>java -version</code> parancs a terminálban megmutatja a verziót. <strong>"1.8.0"</strong>-val kell kezdődnie.</div>
+
+<h3><span class="step-number">2</span> PrismLauncher telepítése</h3>
+<ol>
+  <li>Töltsd le a PrismLauncher-t innen: <a href="https://prismlauncher.org/download/" target="_blank" rel="noopener">prismlauncher.org</a></li>
+  <li>Telepítsd és indítsd el</li>
+  <li>Adj hozzá egy <strong>Minecraft fiókot</strong> (Microsoft fiók szükséges)</li>
+  <li><strong>Beállítások → Java</strong> → kattints az <em>"Auto-detect"</em> gombra és válaszd ki a <strong>Java 8 (1.8.0)</strong> telepítést</li>
+</ol>
+<div class="warning-box">⚠️ Ha nem állítod be a Java 8-at a PrismLauncherben, a mod <strong>nem fog működni</strong> — a leggyakoribb hiba ez!</div>
+
+<!-- ===== LETÖLTÉS ===== -->
+<h2 id="download">MITE:BE Letöltése</h2>
+<p>A mod egy <strong>teljes PrismLauncher instance</strong> formájában érhető el — minden benne van (Minecraft 1.6.4 + mod JAR-ok + textúracsomag).</p>
+
+<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin:24px 0;">
+  <a href="https://archive.org/download/mi-te-be-v-0.9.0-hf-3/MiTE-BE_v0.9.0_hf3.zip" class="download-btn" target="_blank" rel="noopener noreferrer">
+    ⬇ Nyugati Tükör — Archive.org
+    <span>Közvetlen ZIP letöltés · regisztráció nélkül · ~351 MB</span>
+  </a>
+  <a href="https://www.mcmod.cn/class/3751.html" class="download-btn" target="_blank" rel="noopener noreferrer" style="background:linear-gradient(135deg,#546e7a,#37474f);">
+    🇨🇳 Hivatalos forrás — mcmod.cn
+    <span>Baidu Pan szükséges · kínai fiókkal</span>
+  </a>
+</div>
+<div class="warning-box">⚠️ <strong>Ne csomagold ki a ZIP fájlt!</strong> A PrismLauncher közvetlenül importálja — az egész ZIP kell egyben!</div>
+
+<!-- ===== TELEPÍTÉS ===== -->
+<h2 id="install">Telepítés (Importálás)</h2>
+<ol>
+  <li>Nyisd meg a <strong>PrismLauncher</strong>-t</li>
+  <li>Kattints a <strong>"Új Instance"</strong> (Add Instance) gombra</li>
+  <li>Válaszd az <strong>"Importálás"</strong> (Import) fület</li>
+  <li>Tallózd ki a letöltött <code>MiTE-BE_v0.9.0_hf3.zip</code> fájlt</li>
+  <li>Kattints az <strong>OK</strong> gombra — a PrismLauncher automatikusan mindent beállít</li>
+  <li>Kattints duplán az új instance-ra az <strong>indításhoz</strong></li>
+</ol>
+<p>Ha a Minecraft főmenü megjelenik a MITE:BE logóval — <strong>kész, sikeres a telepítés!</strong></p>
+
+<details class="advanced">
+<summary>Haladó: Kézi telepítés (instance nélkül)</summary>
+<div class="details-content">
+<p>Ha a ZIP importálás nem működik, vagy kézzel szeretnéd beállítani:</p>
+<ol>
+  <li>PrismLauncher: <strong>Új Instance</strong> → Minecraft verzió: <strong>1.6.4</strong> (Vanilla, Forge nélkül!)</li>
+  <li>Csomagold ki a ZIP-et egy ideiglenes mappába</li>
+  <li>Jobb klikk az instance-on → <strong>Mods szerkesztése</strong> → add hozzá a <code>.jar</code> fájlokat a <code>.minecraft/</code> mappából</li>
+  <li>Másold át a <code>resourcepacks</code> és <code>config</code> mappákat is az instance <code>.minecraft</code> mappájába</li>
+  <li>Indítsd el az instance-ot</li>
+</ol>
+</div>
+</details>
+
+<!-- ===== ELSŐ INDÍTÁS ===== -->
+<h2 id="first-launch">Első Indítás Tippek</h2>
+<ul>
+  <li><strong>Játékmód választás:</strong> A MITE:BE két módot kínál — <strong>Simple</strong> (fáklyák nem alszanak ki, könnyebb) és <strong>Hardcore</strong> (fáklya kialszik, nehezebb). Kezdőknek a Simple ajánlott!</li>
+  <li><strong>Biome választás:</strong> A <strong>Magasföld (Highland)</strong> biome az ajánlott kezdő biome — lapos terep, jó erőforrások, nincs extrém veszély.</li>
+  <li><strong>Wiki:</strong> Tartsd nyitva a <a href="./#phase-guide">Fázis Útmutatót</a> — lépésről lépésre végigvezet a progresszión!</li>
+</ul>
+<div class="tip-card">💡 A Minecraft 1.6.4 régi verzió — ne lepődj meg a régebbi grafikán és menürendszeren!</div>
+
+<!-- ===== HIBAELHÁRÍTÁS ===== -->
+<h2 id="troubleshooting">Hibaelhárítás</h2>
+<table class="compare-table">
+  <tr><th style="width:35%">Probléma</th><th>Megoldás</th></tr>
+  <tr>
+    <td><strong>"Java verziós hiba"</strong> / crash induláskor</td>
+    <td>PrismLauncher → Beállítások → Java → ellenőrizd, hogy <strong>Java 8 (1.8.0)</strong> van kiválasztva. NEM Java 17 vagy 21!</td>
+  </tr>
+  <tr>
+    <td><strong>Fekete képernyő</strong> / nem tölt be</td>
+    <td>1) Ellenőrizd a Java 8 beállítást. 2) Beállítások → Java → Min. memória: <strong>512 MB</strong>, Max. memória: <strong>2048 MB</strong>. 3) Próbáld újraindítani.</td>
+  </tr>
+  <tr>
+    <td><strong>"Mod nem töltődik be"</strong></td>
+    <td>A MITE:BE <strong>NEM használ Forge-ot!</strong> Vanilla 1.6.4-re kell telepíteni. Ha Forge van az instance-ban, távolítsd el.</td>
+  </tr>
+  <tr>
+    <td><strong>ZIP import nem működik</strong></td>
+    <td>Ellenőrizd, hogy az eredeti <code>.zip</code> fájlt választottad ki (ne a kicsomagolt mappát). Ha továbbra sem megy, próbáld a kézi telepítést (fentebb).</td>
+  </tr>
+  <tr>
+    <td><strong>Textúrák hiányoznak</strong></td>
+    <td>Beállítások → Textúracsomagok → ellenőrizd, hogy a MITE:BE textúracsomag aktív.</td>
+  </tr>
+</table>
+
+<div class="tip-card">💡 <strong>Közösségi segítség:</strong> A MiTE Discord-on (<a href="https://discord.gg/7myyGAXJ6v" target="_blank" rel="noopener">discord.gg/7myyGAXJ6v</a>) kérj segítséget. Az <strong>r/MITE</strong> subreddit szintén aktív forrás.</div>
+</div>
+
+<!-- ==================== ENGLISH ==================== -->
+<div data-lang="en">
+<h2 id="prerequisites">Prerequisites</h2>
+
+<div class="warning-box">⚠️ <strong>Important:</strong> MITE:BE is <em>not compatible</em> with modern Minecraft versions. It requires exactly <strong>Minecraft 1.6.4</strong>, <strong>without Forge</strong>.</div>
+
+<h3><span class="step-number">1</span> Install Java 8</h3>
+<p>Minecraft 1.6.4 requires <strong>Java 8</strong> — newer versions (Java 11, 17, 21, etc.) will not work!</p>
+<ol>
+  <li>Download <strong>Java 8 JRE</strong> from: <a href="https://adoptium.net/temurin/releases/?version=8" target="_blank" rel="noopener">adoptium.net — Eclipse Temurin 8</a></li>
+  <li>Select the version for your OS (Windows x64 → <code>.msi</code> recommended)</li>
+  <li>Install normally — remember the installation path!</li>
+</ol>
+<div class="tip-card">💡 If you already have Java installed, run <code>java -version</code> in a terminal. It should start with <strong>"1.8.0"</strong>.</div>
+
+<h3><span class="step-number">2</span> Install PrismLauncher</h3>
+<ol>
+  <li>Download PrismLauncher from: <a href="https://prismlauncher.org/download/" target="_blank" rel="noopener">prismlauncher.org</a></li>
+  <li>Install and launch it</li>
+  <li>Add a <strong>Minecraft account</strong> (Microsoft account required)</li>
+  <li><strong>Settings → Java</strong> → click <em>"Auto-detect"</em> and select the <strong>Java 8 (1.8.0)</strong> installation</li>
+</ol>
+<div class="warning-box">⚠️ If you don't set Java 8 in PrismLauncher, the mod <strong>will not work</strong> — this is the most common issue!</div>
+
+<!-- ===== DOWNLOAD ===== -->
+<h2 id="download">Download MITE:BE</h2>
+<p>The mod is distributed as a <strong>complete PrismLauncher instance</strong> — everything is included (Minecraft 1.6.4 + mod JARs + texture pack).</p>
+
+<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin:24px 0;">
+  <a href="https://archive.org/download/mi-te-be-v-0.9.0-hf-3/MiTE-BE_v0.9.0_hf3.zip" class="download-btn" target="_blank" rel="noopener noreferrer">
+    ⬇ Western Mirror — Archive.org
+    <span>Direct ZIP download · no account needed · ~351 MB</span>
+  </a>
+  <a href="https://www.mcmod.cn/class/3751.html" class="download-btn" target="_blank" rel="noopener noreferrer" style="background:linear-gradient(135deg,#546e7a,#37474f);">
+    🇨🇳 Official source — mcmod.cn
+    <span>Requires Baidu Pan · Chinese account needed</span>
+  </a>
+</div>
+<div class="warning-box">⚠️ <strong>Do not extract the ZIP file!</strong> PrismLauncher imports it directly — the whole ZIP is needed as-is!</div>
+
+<!-- ===== INSTALLATION ===== -->
+<h2 id="install">Installation (Import)</h2>
+<ol>
+  <li>Open <strong>PrismLauncher</strong></li>
+  <li>Click the <strong>"Add Instance"</strong> button</li>
+  <li>Select the <strong>"Import"</strong> tab</li>
+  <li>Browse to the downloaded <code>MiTE-BE_v0.9.0_hf3.zip</code> file</li>
+  <li>Click <strong>OK</strong> — PrismLauncher will automatically set everything up</li>
+  <li>Double-click the new instance to <strong>launch</strong></li>
+</ol>
+<p>If the Minecraft main menu appears with the MITE:BE logo — <strong>you're done, installation successful!</strong></p>
+
+<details class="advanced">
+<summary>Advanced: Manual Installation (without instance import)</summary>
+<div class="details-content">
+<p>If the ZIP import doesn't work, or you prefer manual setup:</p>
+<ol>
+  <li>PrismLauncher: <strong>Add Instance</strong> → Minecraft version: <strong>1.6.4</strong> (Vanilla, no Forge!)</li>
+  <li>Extract the ZIP to a temporary folder</li>
+  <li>Right-click the instance → <strong>Edit Mods</strong> → add the <code>.jar</code> files from the <code>.minecraft/</code> folder</li>
+  <li>Copy the <code>resourcepacks</code> and <code>config</code> folders into the instance's <code>.minecraft</code> folder</li>
+  <li>Launch the instance</li>
+</ol>
+</div>
+</details>
+
+<!-- ===== FIRST LAUNCH ===== -->
+<h2 id="first-launch">First Launch Tips</h2>
+<ul>
+  <li><strong>Game mode:</strong> MITE:BE offers two modes — <strong>Simple</strong> (torches don't expire, easier) and <strong>Hardcore</strong> (torches expire, harder). Simple is recommended for beginners!</li>
+  <li><strong>Biome choice:</strong> The <strong>Highland</strong> biome is the recommended starting biome — flat terrain, good resources, no extreme dangers.</li>
+  <li><strong>Wiki:</strong> Keep the <a href="./#phase-guide">Phase Guide</a> open — it walks you through the progression step by step!</li>
+</ul>
+<div class="tip-card">💡 Minecraft 1.6.4 is an old version — don't be surprised by older graphics and menus!</div>
+
+<!-- ===== TROUBLESHOOTING ===== -->
+<h2 id="troubleshooting">Troubleshooting</h2>
+<table class="compare-table">
+  <tr><th style="width:35%">Problem</th><th>Solution</th></tr>
+  <tr>
+    <td><strong>"Java version error"</strong> / crash on startup</td>
+    <td>PrismLauncher → Settings → Java → verify that <strong>Java 8 (1.8.0)</strong> is selected. NOT Java 17 or 21!</td>
+  </tr>
+  <tr>
+    <td><strong>Black screen</strong> / doesn't load</td>
+    <td>1) Check Java 8 setting. 2) Settings → Java → Min memory: <strong>512 MB</strong>, Max memory: <strong>2048 MB</strong>. 3) Try restarting.</td>
+  </tr>
+  <tr>
+    <td><strong>"Mod won't load"</strong></td>
+    <td>MITE:BE does <strong>NOT use Forge!</strong> Install on Vanilla 1.6.4. If Forge is in the instance, remove it.</td>
+  </tr>
+  <tr>
+    <td><strong>ZIP import doesn't work</strong></td>
+    <td>Make sure you selected the original <code>.zip</code> file (not the extracted folder). If it still fails, try manual installation (above).</td>
+  </tr>
+  <tr>
+    <td><strong>Missing textures</strong></td>
+    <td>Settings → Resource Packs → verify the MITE:BE texture pack is active.</td>
+  </tr>
+</table>
+
+<div class="tip-card">💡 <strong>Community help:</strong> Join the MiTE Discord (<a href="https://discord.gg/7myyGAXJ6v" target="_blank" rel="noopener">discord.gg/7myyGAXJ6v</a>) for support. The <strong>r/MITE</strong> subreddit is also an active resource.</div>
+</div>
+
+<div data-lang="hu" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
+  <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Teljes Magyar Wiki ⚔️</p>
+  <p>A wiki a játékfájlok (MITE.lang, hu_HU.lang, class fájlok) és az <a href="https://www.mcmod.cn/" target="_blank" rel="noopener noreferrer" style="color:var(--gold);text-decoration:underline">mcmod.cn</a> hivatalos adatbázisa alapján készült.</p>
+  <p style="font-size:.85em;margin-top:8px;opacity:.7;">Ez egy nem hivatalos, közösségi wiki. A MITE:BE és minden kapcsolódó játékeszköz, textúra és védjegy az eredeti alkotóik tulajdona.</p>
+</div>
+<div data-lang="en" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
+  <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Complete Wiki ⚔️</p>
+  <p>Built from game files (MITE.lang, hu_HU.lang, class files) and the official <a href="https://www.mcmod.cn/" target="_blank" rel="noopener noreferrer" style="color:var(--gold);text-decoration:underline">mcmod.cn</a> database.</p>
+  <p style="font-size:.85em;margin-top:8px;opacity:.7;">This is an unofficial, community-driven wiki. MITE:BE and all related game assets, textures, and trademarks belong to their respective original creators.</p>
+</div>
+
+    </main>
+  </div>
+</BaseLayout>

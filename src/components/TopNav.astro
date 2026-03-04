@@ -1,0 +1,22 @@
+---
+interface Props {
+  currentPage?: string;
+}
+const { currentPage = '' } = Astro.props;
+
+const pages = [
+  { href: '.', id: 'home', hu: 'Kezdőlap', en: 'Home' },
+  { href: 'reference', id: 'reference', hu: 'Referencia', en: 'Reference' },
+  { href: 'install', id: 'install', hu: 'Telepítés', en: 'Install' },
+  { href: 'faq', id: 'faq', hu: 'GYIK', en: 'FAQ' },
+  { href: 'recipes', id: 'recipes', hu: 'Receptek', en: 'Recipes' },
+];
+---
+<nav class="top-nav">
+  {pages.map(p => (
+    <a href={p.href} aria-current={p.id === currentPage ? 'page' : undefined}>
+      <span data-lang="hu">{p.hu}</span>
+      <span data-lang="en">{p.en}</span>
+    </a>
+  ))}
+</nav>

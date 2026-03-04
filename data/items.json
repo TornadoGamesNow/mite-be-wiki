@@ -1,0 +1,7184 @@
+{
+  "plant_fiber": {
+    "name": {
+      "hu": "Növényszál",
+      "en": "Plant Fiber"
+    },
+    "img": "img/items/plant_fiber.png",
+    "tier": null,
+    "category": "material"
+  },
+  "wheat": {
+    "name": {
+      "hu": "Búza",
+      "en": "Wheat"
+    },
+    "img": "img/items/wheat.png",
+    "tier": null,
+    "category": "material"
+  },
+  "straw_rope": {
+    "name": {
+      "hu": "Szalma Kötél",
+      "en": "Straw Rope"
+    },
+    "img": "img/items/straw_rope.png",
+    "tier": null,
+    "category": "material"
+  },
+  "stick": {
+    "name": {
+      "hu": "Fabot",
+      "en": "Stick"
+    },
+    "img": "img/items/stick.png",
+    "tier": null,
+    "category": "material"
+  },
+  "flint_shard": {
+    "name": {
+      "hu": "Kova Szilánk",
+      "en": "Flint Shard"
+    },
+    "img": "img/shards/flint.png",
+    "tier": "flint",
+    "category": "material"
+  },
+  "flint": {
+    "name": {
+      "hu": "Kova",
+      "en": "Flint"
+    },
+    "img": "img/items/flint.png",
+    "tier": "flint",
+    "category": "material"
+  },
+  "flint_knife": {
+    "name": {
+      "hu": "Kova Kés",
+      "en": "Flint Knife"
+    },
+    "img": "img/items/flint_knife.png",
+    "tier": "flint",
+    "category": "tool"
+  },
+  "leather": {
+    "name": {
+      "hu": "Bőr",
+      "en": "Leather"
+    },
+    "img": "img/items/leather.png",
+    "tier": null,
+    "category": "material"
+  },
+  "leather_rope": {
+    "name": {
+      "hu": "Bőrkötél",
+      "en": "Leather Rope"
+    },
+    "img": "img/items/long_rope.png",
+    "tier": null,
+    "category": "material"
+  },
+  "sinew": {
+    "name": {
+      "hu": "Ín",
+      "en": "Sinew"
+    },
+    "img": "img/items/sinew.png",
+    "tier": null,
+    "category": "material"
+  },
+  "silk": {
+    "name": {
+      "hu": "Selyem",
+      "en": "Silk"
+    },
+    "img": "img/items/silk.png",
+    "tier": null,
+    "category": "material"
+  },
+  "string": {
+    "name": {
+      "hu": "Zsinór",
+      "en": "String"
+    },
+    "img": "img/items/string.png",
+    "tier": null,
+    "category": "material"
+  },
+  "sharp_chip": {
+    "name": {
+      "hu": "Éles Kőszilánk",
+      "en": "Sharp Stone Chip"
+    },
+    "img": "img/items/sharp_chip.png",
+    "tier": null,
+    "category": "material"
+  },
+  "stone_knife": {
+    "name": {
+      "hu": "Kő Kés",
+      "en": "Stone Knife"
+    },
+    "img": "img/items/flint_knife.png",
+    "tier": "flint",
+    "category": "tool"
+  },
+  "stone_hatchet": {
+    "name": {
+      "hu": "Kő Kézbalta",
+      "en": "Stone Short Hatchet"
+    },
+    "img": "img/items/flint_hatchet.png",
+    "tier": "flint",
+    "category": "tool"
+  },
+  "stone_axe": {
+    "name": {
+      "hu": "Kő Fejsze",
+      "en": "Stone Axe"
+    },
+    "img": "img/items/flint_axe.png",
+    "tier": "flint",
+    "category": "tool"
+  },
+  "stone_pickaxe": {
+    "name": {
+      "hu": "Kő Csákány",
+      "en": "Stone Pickaxe"
+    },
+    "img": "img/items/stone_pickaxe.png",
+    "tier": "flint",
+    "category": "tool"
+  },
+  "stone_shovel": {
+    "name": {
+      "hu": "Kő Ásó",
+      "en": "Stone Shovel"
+    },
+    "img": "img/items/flint_shovel.png",
+    "tier": "flint",
+    "category": "tool"
+  },
+  "stone_spear": {
+    "name": {
+      "hu": "Hegyes Kő Lándzsa",
+      "en": "Sharp Stone Spear"
+    },
+    "img": "img/items/flint_spear.png",
+    "tier": "flint",
+    "category": "weapon"
+  },
+  "stone_sword": {
+    "name": {
+      "hu": "Kő Kard",
+      "en": "Stone Sword"
+    },
+    "img": "img/items/stone_sword.png",
+    "tier": "flint",
+    "category": "weapon"
+  },
+  "stone_hoe": {
+    "name": {
+      "hu": "Kő Kapa",
+      "en": "Stone Hoe"
+    },
+    "img": "img/items/stone_hoe.png",
+    "tier": "flint",
+    "category": "tool"
+  },
+  "stone_dagger": {
+    "name": {
+      "hu": "Kő Tőr",
+      "en": "Stone Dagger"
+    },
+    "img": "img/items/stone_dagger.png",
+    "tier": "flint",
+    "category": "weapon"
+  },
+  "wooden_sieve": {
+    "name": {
+      "hu": "Fa Szita",
+      "en": "Wooden Sieve"
+    },
+    "img": "img/blocks/sieve.png",
+    "tier": null,
+    "category": "tool"
+  },
+  "planks_oak": {
+    "name": {
+      "hu": "Tölgyfa Deszka",
+      "en": "Oak Planks"
+    },
+    "img": "img/blocks/planks_oak.png",
+    "tier": null,
+    "category": "block"
+  },
+  "planks_spruce": {
+    "name": {
+      "hu": "Lucfenyő Deszka",
+      "en": "Spruce Planks"
+    },
+    "img": "img/blocks/planks_oak.png",
+    "tier": null,
+    "category": "block"
+  },
+  "planks_birch": {
+    "name": {
+      "hu": "Nyírfa Deszka",
+      "en": "Birch Planks"
+    },
+    "img": "img/blocks/planks_oak.png",
+    "tier": null,
+    "category": "block"
+  },
+  "planks_jungle": {
+    "name": {
+      "hu": "Dzsungelfa Deszka",
+      "en": "Jungle Planks"
+    },
+    "img": "img/blocks/planks_oak.png",
+    "tier": null,
+    "category": "block"
+  },
+  "log_oak": {
+    "name": {
+      "hu": "Tölgyfa Rönk",
+      "en": "Oak Log"
+    },
+    "img": "img/blocks/log_oak.png",
+    "tier": null,
+    "category": "block"
+  },
+  "log_spruce": {
+    "name": {
+      "hu": "Lucfenyő Rönk",
+      "en": "Spruce Log"
+    },
+    "img": "img/blocks/log_oak.png",
+    "tier": null,
+    "category": "block"
+  },
+  "log_birch": {
+    "name": {
+      "hu": "Nyírfa Rönk",
+      "en": "Birch Log"
+    },
+    "img": "img/blocks/log_oak.png",
+    "tier": null,
+    "category": "block"
+  },
+  "log_jungle": {
+    "name": {
+      "hu": "Dzsungelfa Rönk",
+      "en": "Jungle Log"
+    },
+    "img": "img/blocks/log_oak.png",
+    "tier": null,
+    "category": "block"
+  },
+  "cobblestone": {
+    "name": {
+      "hu": "Kőtömb",
+      "en": "Cobblestone"
+    },
+    "img": "img/blocks/stone.png",
+    "tier": null,
+    "category": "block"
+  },
+  "clay_block": {
+    "name": {
+      "hu": "Agyag Blokk",
+      "en": "Clay Block"
+    },
+    "img": "img/blocks/clay.png",
+    "tier": null,
+    "category": "block"
+  },
+  "clay_ball": {
+    "name": {
+      "hu": "Agyag Golyó",
+      "en": "Clay Ball"
+    },
+    "img": "img/items/clay_ball.png",
+    "tier": null,
+    "category": "material"
+  },
+  "hardened_clay": {
+    "name": {
+      "hu": "Keményített Agyag",
+      "en": "Hardened Clay"
+    },
+    "img": "img/blocks/hardened_clay.png",
+    "tier": null,
+    "category": "block"
+  },
+  "obsidian_shard": {
+    "name": {
+      "hu": "Obszidián Szilánk",
+      "en": "Obsidian Shard"
+    },
+    "img": "img/shards/obsidian.png",
+    "tier": null,
+    "category": "material"
+  },
+  "obsidian": {
+    "name": {
+      "hu": "Obszidián",
+      "en": "Obsidian"
+    },
+    "img": "img/blocks/obsidian.png",
+    "tier": null,
+    "category": "block"
+  },
+  "netherrack": {
+    "name": {
+      "hu": "Pokoli Kő",
+      "en": "Netherrack"
+    },
+    "img": "img/blocks/netherrack.png",
+    "tier": null,
+    "category": "block"
+  },
+  "coal": {
+    "name": {
+      "hu": "Szén",
+      "en": "Coal"
+    },
+    "img": "img/items/coal.png",
+    "tier": null,
+    "category": "material"
+  },
+  "charcoal": {
+    "name": {
+      "hu": "Faszén",
+      "en": "Charcoal"
+    },
+    "img": "img/items/charcoal.png",
+    "tier": null,
+    "category": "material"
+  },
+  "redstone_dust": {
+    "name": {
+      "hu": "Redstone Por",
+      "en": "Redstone Dust"
+    },
+    "img": "img/items/redstone_dust.png",
+    "tier": null,
+    "category": "material"
+  },
+  "paper": {
+    "name": {
+      "hu": "Papír",
+      "en": "Paper"
+    },
+    "img": "img/items/paper.png",
+    "tier": null,
+    "category": "material"
+  },
+  "book": {
+    "name": {
+      "hu": "Könyv",
+      "en": "Book"
+    },
+    "img": "img/items/book_normal.png",
+    "tier": null,
+    "category": "material"
+  },
+  "diamond": {
+    "name": {
+      "hu": "Gyémánt",
+      "en": "Diamond"
+    },
+    "img": "img/items/diamond.png",
+    "tier": null,
+    "category": "material"
+  },
+  "emerald": {
+    "name": {
+      "hu": "Smaragd",
+      "en": "Emerald"
+    },
+    "img": "img/items/emerald.png",
+    "tier": null,
+    "category": "material"
+  },
+  "ice": {
+    "name": {
+      "hu": "Jég",
+      "en": "Ice"
+    },
+    "img": "img/blocks/ice.png",
+    "tier": null,
+    "category": "block"
+  },
+  "tin_plate": {
+    "name": {
+      "hu": "Ón Lemez",
+      "en": "Tin Plate"
+    },
+    "img": "img/items/tin_plate.png",
+    "tier": null,
+    "category": "material"
+  },
+  "beacon": {
+    "name": {
+      "hu": "Jelzőfény",
+      "en": "Beacon"
+    },
+    "img": "img/blocks/beacon.png",
+    "tier": null,
+    "category": "block"
+  },
+  "redstone_block": {
+    "name": {
+      "hu": "Redstone Blokk",
+      "en": "Redstone Block"
+    },
+    "img": "img/blocks/redstone_block.png",
+    "tier": null,
+    "category": "block"
+  },
+  "ender_eye": {
+    "name": {
+      "hu": "Ender Szem",
+      "en": "Eye of Ender"
+    },
+    "img": "img/items/ender_eye.png",
+    "tier": null,
+    "category": "material"
+  },
+  "nether_star": {
+    "name": {
+      "hu": "Nether Csillag",
+      "en": "Nether Star"
+    },
+    "img": "img/items/nether_star.png",
+    "tier": null,
+    "category": "material"
+  },
+  "copper_ingot": {
+    "name": {
+      "hu": "Réz Rúd",
+      "en": "Copper Ingot"
+    },
+    "img": "img/ingots/copper.png",
+    "tier": "copper",
+    "category": "ingot"
+  },
+  "silver_ingot": {
+    "name": {
+      "hu": "Ezüst Rúd",
+      "en": "Silver Ingot"
+    },
+    "img": "img/ingots/silver.png",
+    "tier": "silver",
+    "category": "ingot"
+  },
+  "gold_ingot": {
+    "name": {
+      "hu": "Arany Rúd",
+      "en": "Gold Ingot"
+    },
+    "img": "img/ingots/gold.png",
+    "tier": "gold",
+    "category": "ingot"
+  },
+  "iron_ingot": {
+    "name": {
+      "hu": "Vas Rúd",
+      "en": "Iron Ingot"
+    },
+    "img": "img/items/iron_ingot.png",
+    "tier": "iron",
+    "category": "ingot"
+  },
+  "hardstone_ingot": {
+    "name": {
+      "hu": "Keménykő Rúd",
+      "en": "Hardstone Ingot"
+    },
+    "img": "img/items/hardstone_ingot.png",
+    "tier": "hard",
+    "category": "ingot"
+  },
+  "ancient_metal_ingot": {
+    "name": {
+      "hu": "Ősi Fém Rúd",
+      "en": "Ancient Metal Bar"
+    },
+    "img": "img/ingots/ancient_metal.png",
+    "tier": "ancient",
+    "category": "ingot"
+  },
+  "mithril_bar": {
+    "name": {
+      "hu": "Mithril Rúd",
+      "en": "Mithril Bar"
+    },
+    "img": "img/ingots/mithril.png",
+    "tier": "mithril",
+    "category": "ingot"
+  },
+  "adamantium_bar": {
+    "name": {
+      "hu": "Adamantium Rúd",
+      "en": "Adamantium Bar"
+    },
+    "img": "img/ingots/adamantium.png",
+    "tier": "adamantium",
+    "category": "ingot"
+  },
+  "hardstone_handle": {
+    "name": {
+      "hu": "Keménykő Fogantyú",
+      "en": "Hard Stone Handle"
+    },
+    "img": "img/items/hardstone_handle.png",
+    "tier": "hard",
+    "category": "material"
+  },
+  "copper_nugget": {
+    "name": {
+      "hu": "Réz Ércdarab",
+      "en": "Copper Nugget"
+    },
+    "img": "img/nuggets/copper.png",
+    "tier": "copper",
+    "category": "material"
+  },
+  "silver_nugget": {
+    "name": {
+      "hu": "Ezüst Ércdarab",
+      "en": "Silver Nugget"
+    },
+    "img": "img/nuggets/silver.png",
+    "tier": "silver",
+    "category": "material"
+  },
+  "iron_nugget": {
+    "name": {
+      "hu": "Vas Ércdarab",
+      "en": "Iron Nugget"
+    },
+    "img": "img/nuggets/iron.png",
+    "tier": "iron",
+    "category": "material"
+  },
+  "gold_nugget": {
+    "name": {
+      "hu": "Arany Ércdarab",
+      "en": "Gold Nugget"
+    },
+    "img": "img/nuggets/gold.png",
+    "tier": "gold",
+    "category": "material"
+  },
+  "mithril_nugget": {
+    "name": {
+      "hu": "Mithril Ércdarab",
+      "en": "Mithril Nugget"
+    },
+    "img": "img/nuggets/mithril.png",
+    "tier": "mithril",
+    "category": "material"
+  },
+  "adamantium_nugget": {
+    "name": {
+      "hu": "Adamantium Ércdarab",
+      "en": "Adamantium Nugget"
+    },
+    "img": "img/nuggets/adamantium.png",
+    "tier": "adamantium",
+    "category": "material"
+  },
+  "copper_sword": {
+    "name": {
+      "hu": "Réz Kard",
+      "en": "Copper Sword"
+    },
+    "img": "img/items/copper_sword.png",
+    "tier": "copper",
+    "category": "weapon"
+  },
+  "copper_pickaxe": {
+    "name": {
+      "hu": "Réz Csákány",
+      "en": "Copper Pickaxe"
+    },
+    "img": "img/items/copper_pickaxe.png",
+    "tier": "copper",
+    "category": "tool"
+  },
+  "copper_axe": {
+    "name": {
+      "hu": "Réz Fejsze",
+      "en": "Copper Axe"
+    },
+    "img": "img/items/copper_axe.png",
+    "tier": "copper",
+    "category": "tool"
+  },
+  "copper_war_hammer": {
+    "name": {
+      "hu": "Réz Háborús Kalapács",
+      "en": "Copper War Hammer"
+    },
+    "img": "img/items/copper_war_hammer.png",
+    "tier": "copper",
+    "category": "weapon"
+  },
+  "copper_hoe": {
+    "name": {
+      "hu": "Réz Kapa",
+      "en": "Copper Hoe"
+    },
+    "img": "img/items/copper_hoe.png",
+    "tier": "copper",
+    "category": "tool"
+  },
+  "copper_shovel": {
+    "name": {
+      "hu": "Réz Ásó",
+      "en": "Copper Shovel"
+    },
+    "img": "img/items/copper_shovel.png",
+    "tier": "copper",
+    "category": "tool"
+  },
+  "copper_knife": {
+    "name": {
+      "hu": "Réz Kés",
+      "en": "Copper Knife"
+    },
+    "img": "img/items/copper_knife.png",
+    "tier": "copper",
+    "category": "tool"
+  },
+  "copper_hatchet": {
+    "name": {
+      "hu": "Réz Kézbalta",
+      "en": "Copper Hatchet"
+    },
+    "img": "img/items/copper_hatchet.png",
+    "tier": "copper",
+    "category": "tool"
+  },
+  "copper_dagger": {
+    "name": {
+      "hu": "Réz Tőr",
+      "en": "Copper Dagger"
+    },
+    "img": "img/items/copper_dagger.png",
+    "tier": "copper",
+    "category": "weapon"
+  },
+  "copper_battle_axe": {
+    "name": {
+      "hu": "Réz Csatabárd",
+      "en": "Copper Battle Axe"
+    },
+    "img": "img/items/copper_battle_axe.png",
+    "tier": "copper",
+    "category": "weapon"
+  },
+  "copper_mattock": {
+    "name": {
+      "hu": "Réz Ácskapa",
+      "en": "Copper Mattock"
+    },
+    "img": "img/items/copper_mattock.png",
+    "tier": "copper",
+    "category": "tool"
+  },
+  "copper_scythe": {
+    "name": {
+      "hu": "Réz Kasza",
+      "en": "Copper Scythe"
+    },
+    "img": "img/items/copper_scythe.png",
+    "tier": "copper",
+    "category": "tool"
+  },
+  "copper_shears": {
+    "name": {
+      "hu": "Réz Olló",
+      "en": "Copper Shears"
+    },
+    "img": "img/items/copper_shears.png",
+    "tier": "copper",
+    "category": "tool"
+  },
+  "silver_sword": {
+    "name": {
+      "hu": "Ezüst Kard",
+      "en": "Silver Sword"
+    },
+    "img": "img/items/silver_sword.png",
+    "tier": "silver",
+    "category": "weapon"
+  },
+  "silver_pickaxe": {
+    "name": {
+      "hu": "Ezüst Csákány",
+      "en": "Silver Pickaxe"
+    },
+    "img": "img/items/silver_pickaxe.png",
+    "tier": "silver",
+    "category": "tool"
+  },
+  "silver_axe": {
+    "name": {
+      "hu": "Ezüst Fejsze",
+      "en": "Silver Axe"
+    },
+    "img": "img/items/silver_axe.png",
+    "tier": "silver",
+    "category": "tool"
+  },
+  "silver_war_hammer": {
+    "name": {
+      "hu": "Ezüst Háborús Kalapács",
+      "en": "Silver War Hammer"
+    },
+    "img": "img/items/silver_war_hammer.png",
+    "tier": "silver",
+    "category": "weapon"
+  },
+  "gold_sword": {
+    "name": {
+      "hu": "Arany Kard",
+      "en": "Gold Sword"
+    },
+    "img": "img/items/gold_sword.png",
+    "tier": "gold",
+    "category": "weapon"
+  },
+  "gold_pickaxe": {
+    "name": {
+      "hu": "Arany Csákány",
+      "en": "Gold Pickaxe"
+    },
+    "img": "img/items/gold_pickaxe.png",
+    "tier": "gold",
+    "category": "tool"
+  },
+  "gold_axe": {
+    "name": {
+      "hu": "Arany Fejsze",
+      "en": "Gold Axe"
+    },
+    "img": "img/items/gold_axe.png",
+    "tier": "gold",
+    "category": "tool"
+  },
+  "gold_war_hammer": {
+    "name": {
+      "hu": "Arany Háborús Kalapács",
+      "en": "Gold War Hammer"
+    },
+    "img": "img/items/gold_war_hammer.png",
+    "tier": "gold",
+    "category": "weapon"
+  },
+  "iron_sword": {
+    "name": {
+      "hu": "Vas Kard",
+      "en": "Iron Sword"
+    },
+    "img": "img/items/rusted_iron_sword.png",
+    "tier": "iron",
+    "category": "weapon"
+  },
+  "iron_pickaxe": {
+    "name": {
+      "hu": "Vas Csákány",
+      "en": "Iron Pickaxe"
+    },
+    "img": "img/items/rusted_iron_pickaxe.png",
+    "tier": "iron",
+    "category": "tool"
+  },
+  "iron_axe": {
+    "name": {
+      "hu": "Vas Fejsze",
+      "en": "Iron Axe"
+    },
+    "img": "img/items/rusted_iron_axe.png",
+    "tier": "iron",
+    "category": "tool"
+  },
+  "iron_war_hammer": {
+    "name": {
+      "hu": "Vas Háborús Kalapács",
+      "en": "Iron War Hammer"
+    },
+    "img": "img/items/iron_war_hammer.png",
+    "tier": "iron",
+    "category": "weapon"
+  },
+  "iron_hoe": {
+    "name": {
+      "hu": "Vas Kapa",
+      "en": "Iron Hoe"
+    },
+    "img": "img/items/rusted_iron_hoe.png",
+    "tier": "iron",
+    "category": "tool"
+  },
+  "iron_shovel": {
+    "name": {
+      "hu": "Vas Ásó",
+      "en": "Iron Shovel"
+    },
+    "img": "img/items/rusted_iron_shovel.png",
+    "tier": "iron",
+    "category": "tool"
+  },
+  "iron_knife": {
+    "name": {
+      "hu": "Vas Kés",
+      "en": "Iron Knife"
+    },
+    "img": "img/items/iron_knife.png",
+    "tier": "iron",
+    "category": "tool"
+  },
+  "iron_hatchet": {
+    "name": {
+      "hu": "Vas Kézbalta",
+      "en": "Iron Hatchet"
+    },
+    "img": "img/items/iron_hatchet.png",
+    "tier": "iron",
+    "category": "tool"
+  },
+  "iron_dagger": {
+    "name": {
+      "hu": "Vas Tőr",
+      "en": "Iron Dagger"
+    },
+    "img": "img/items/iron_dagger.png",
+    "tier": "iron",
+    "category": "weapon"
+  },
+  "iron_battle_axe": {
+    "name": {
+      "hu": "Vas Csatabárd",
+      "en": "Iron Battle Axe"
+    },
+    "img": "img/items/iron_battle_axe.png",
+    "tier": "iron",
+    "category": "weapon"
+  },
+  "iron_mattock": {
+    "name": {
+      "hu": "Vas Ácskapa",
+      "en": "Iron Mattock"
+    },
+    "img": "img/items/iron_mattock.png",
+    "tier": "iron",
+    "category": "tool"
+  },
+  "iron_scythe": {
+    "name": {
+      "hu": "Vas Kasza",
+      "en": "Iron Scythe"
+    },
+    "img": "img/items/iron_scythe.png",
+    "tier": "iron",
+    "category": "tool"
+  },
+  "hardstone_sword": {
+    "name": {
+      "hu": "Keménykő Kard",
+      "en": "Hardstone Sword"
+    },
+    "img": "img/items/hardstone_sword.png",
+    "tier": "hard",
+    "category": "weapon"
+  },
+  "hardstone_pickaxe": {
+    "name": {
+      "hu": "Keménykő Csákány",
+      "en": "Hardstone Pickaxe"
+    },
+    "img": "img/items/hardstone_pickaxe.png",
+    "tier": "hard",
+    "category": "tool"
+  },
+  "hardstone_war_hammer": {
+    "name": {
+      "hu": "Keménykő Háborús Kalapács",
+      "en": "Hardstone War Hammer"
+    },
+    "img": "img/items/hardstone_war_hammer.png",
+    "tier": "hard",
+    "category": "weapon"
+  },
+  "hardstone_hoe": {
+    "name": {
+      "hu": "Keménykő Kapa",
+      "en": "Hardstone Hoe"
+    },
+    "img": "img/items/hardstone_hoe.png",
+    "tier": "hard",
+    "category": "tool"
+  },
+  "hardstone_helmet": {
+    "name": {
+      "hu": "Keménykő Sisak",
+      "en": "Hardstone Helmet"
+    },
+    "img": "img/items/hardstone_helmet.png",
+    "tier": "hard",
+    "category": "armor"
+  },
+  "hardstone_chestplate": {
+    "name": {
+      "hu": "Keménykő Mellvért",
+      "en": "Hardstone Chestplate"
+    },
+    "img": "img/items/hardstone_chestplate.png",
+    "tier": "hard",
+    "category": "armor"
+  },
+  "hardstone_leggings": {
+    "name": {
+      "hu": "Keménykő Lábvért",
+      "en": "Hardstone Leggings"
+    },
+    "img": "img/items/hardstone_leggings.png",
+    "tier": "hard",
+    "category": "armor"
+  },
+  "hardstone_boots": {
+    "name": {
+      "hu": "Keménykő Csizma",
+      "en": "Hardstone Boots"
+    },
+    "img": "img/items/hardstone_boots.png",
+    "tier": "hard",
+    "category": "armor"
+  },
+  "ancient_metal_sword": {
+    "name": {
+      "hu": "Ősi Fém Kard",
+      "en": "Ancient Metal Sword"
+    },
+    "img": "img/items/ancient_metal_sword.png",
+    "tier": "ancient",
+    "category": "weapon"
+  },
+  "ancient_metal_pickaxe": {
+    "name": {
+      "hu": "Ősi Fém Csákány",
+      "en": "Ancient Metal Pickaxe"
+    },
+    "img": "img/items/ancient_metal_pickaxe.png",
+    "tier": "ancient",
+    "category": "tool"
+  },
+  "ancient_metal_axe": {
+    "name": {
+      "hu": "Ősi Fém Fejsze",
+      "en": "Ancient Metal Axe"
+    },
+    "img": "img/items/ancient_metal_axe.png",
+    "tier": "ancient",
+    "category": "tool"
+  },
+  "ancient_metal_war_hammer": {
+    "name": {
+      "hu": "Ősi Fém Háborús Kalapács",
+      "en": "Ancient Metal War Hammer"
+    },
+    "img": "img/items/ancient_metal_war_hammer.png",
+    "tier": "ancient",
+    "category": "weapon"
+  },
+  "mithril_sword": {
+    "name": {
+      "hu": "Mithril Kard",
+      "en": "Mithril Sword"
+    },
+    "img": "img/items/mithril_sword.png",
+    "tier": "mithril",
+    "category": "weapon"
+  },
+  "mithril_pickaxe": {
+    "name": {
+      "hu": "Mithril Csákány",
+      "en": "Mithril Pickaxe"
+    },
+    "img": "img/items/mithril_pickaxe.png",
+    "tier": "mithril",
+    "category": "tool"
+  },
+  "mithril_axe": {
+    "name": {
+      "hu": "Mithril Fejsze",
+      "en": "Mithril Axe"
+    },
+    "img": "img/items/mithril_axe.png",
+    "tier": "mithril",
+    "category": "tool"
+  },
+  "mithril_war_hammer": {
+    "name": {
+      "hu": "Mithril Háborús Kalapács",
+      "en": "Mithril War Hammer"
+    },
+    "img": "img/items/mithril_war_hammer.png",
+    "tier": "mithril",
+    "category": "weapon"
+  },
+  "adamantium_sword": {
+    "name": {
+      "hu": "Adamantium Kard",
+      "en": "Adamantium Sword"
+    },
+    "img": "img/items/adamantium_sword.png",
+    "tier": "adamantium",
+    "category": "weapon"
+  },
+  "adamantium_pickaxe": {
+    "name": {
+      "hu": "Adamantium Csákány",
+      "en": "Adamantium Pickaxe"
+    },
+    "img": "img/items/adamantium_pickaxe.png",
+    "tier": "adamantium",
+    "category": "tool"
+  },
+  "adamantium_axe": {
+    "name": {
+      "hu": "Adamantium Fejsze",
+      "en": "Adamantium Axe"
+    },
+    "img": "img/items/adamantium_axe.png",
+    "tier": "adamantium",
+    "category": "tool"
+  },
+  "adamantium_war_hammer": {
+    "name": {
+      "hu": "Adamantium Háborús Kalapács",
+      "en": "Adamantium War Hammer"
+    },
+    "img": "img/items/adamantium_war_hammer.png",
+    "tier": "adamantium",
+    "category": "weapon"
+  },
+  "copper_helmet": {
+    "name": {
+      "hu": "Réz Sisak",
+      "en": "Copper Helmet"
+    },
+    "img": "img/armor/copper_helmet.png",
+    "tier": "copper",
+    "category": "armor"
+  },
+  "copper_chestplate": {
+    "name": {
+      "hu": "Réz Mellvért",
+      "en": "Copper Chestplate"
+    },
+    "img": "img/armor/copper_chestplate.png",
+    "tier": "copper",
+    "category": "armor"
+  },
+  "copper_leggings": {
+    "name": {
+      "hu": "Réz Lábvért",
+      "en": "Copper Leggings"
+    },
+    "img": "img/armor/copper_leggings.png",
+    "tier": "copper",
+    "category": "armor"
+  },
+  "copper_boots": {
+    "name": {
+      "hu": "Réz Csizma",
+      "en": "Copper Boots"
+    },
+    "img": "img/armor/copper_boots.png",
+    "tier": "copper",
+    "category": "armor"
+  },
+  "ingot_mold": {
+    "name": {
+      "hu": "Öntőforma",
+      "en": "Ingot Mold"
+    },
+    "img": "img/items/empty_ingot_mould.png",
+    "tier": null,
+    "category": "tool"
+  },
+  "obsidian_ingot_mold": {
+    "name": {
+      "hu": "Obszidián Öntőforma",
+      "en": "Obsidian Ingot Mold"
+    },
+    "img": "img/items/obsidian_ingot_mould.png",
+    "tier": null,
+    "category": "tool"
+  },
+  "campfire": {
+    "name": {
+      "hu": "Tábortűz",
+      "en": "Campfire"
+    },
+    "img": "img/blocks/campfire.png",
+    "tier": null,
+    "category": "block"
+  },
+  "clay_furnace": {
+    "name": {
+      "hu": "Agyag Kemence",
+      "en": "Clay Furnace"
+    },
+    "img": "img/blocks/furnace_front_off.png",
+    "tier": null,
+    "category": "station"
+  },
+  "hardened_clay_furnace": {
+    "name": {
+      "hu": "Keményített Agyag Kemence",
+      "en": "Hardened Clay Furnace"
+    },
+    "img": "img/blocks/furnace_hardened_clay.png",
+    "tier": null,
+    "category": "station"
+  },
+  "stone_furnace": {
+    "name": {
+      "hu": "Kő Kemence",
+      "en": "Stone Furnace"
+    },
+    "img": "img/blocks/furnace_front_off.png",
+    "tier": null,
+    "category": "station"
+  },
+  "obsidian_furnace": {
+    "name": {
+      "hu": "Obszidián Kemence",
+      "en": "Obsidian Furnace"
+    },
+    "img": "img/blocks/obsidian.png",
+    "tier": null,
+    "category": "station"
+  },
+  "netherrack_furnace": {
+    "name": {
+      "hu": "Pokoli Kő Kemence",
+      "en": "Netherrack Furnace"
+    },
+    "img": "img/blocks/netherrack_furnace_front.png",
+    "tier": null,
+    "category": "station"
+  },
+  "flint_workbench": {
+    "name": {
+      "hu": "Kova Munkaasztal",
+      "en": "Flint Workbench"
+    },
+    "img": "img/blocks/crafting_table_front.png",
+    "tier": "flint",
+    "category": "block"
+  },
+  "copper_workbench": {
+    "name": {
+      "hu": "Réz Munkaasztal",
+      "en": "Copper Workbench"
+    },
+    "img": "img/blocks/workbench_copper.png",
+    "tier": "copper",
+    "category": "block"
+  },
+  "silver_workbench": {
+    "name": {
+      "hu": "Ezüst Munkaasztal",
+      "en": "Silver Workbench"
+    },
+    "img": "img/blocks/workbench_silver.png",
+    "tier": "silver",
+    "category": "block"
+  },
+  "gold_workbench": {
+    "name": {
+      "hu": "Arany Munkaasztal",
+      "en": "Gold Workbench"
+    },
+    "img": "img/blocks/workbench_gold.png",
+    "tier": "gold",
+    "category": "block"
+  },
+  "iron_workbench": {
+    "name": {
+      "hu": "Vas Munkaasztal",
+      "en": "Iron Workbench"
+    },
+    "img": "img/blocks/workbench_iron.png",
+    "tier": "iron",
+    "category": "block"
+  },
+  "mithril_workbench": {
+    "name": {
+      "hu": "Mithril Munkaasztal",
+      "en": "Mithril Workbench"
+    },
+    "img": "img/blocks/workbench_mithril.png",
+    "tier": "mithril",
+    "category": "block"
+  },
+  "adamantium_workbench": {
+    "name": {
+      "hu": "Adamantium Munkaasztal",
+      "en": "Adamantium Workbench"
+    },
+    "img": "img/blocks/workbench_adamantium.png",
+    "tier": "adamantium",
+    "category": "block"
+  },
+  "water_bag": {
+    "name": {
+      "hu": "Vizestasak",
+      "en": "Water Bag"
+    },
+    "img": "img/items/water_bag.png",
+    "tier": null,
+    "category": "tool"
+  },
+  "big_water_bag": {
+    "name": {
+      "hu": "Nagy Vizestasak",
+      "en": "Big Water Bag"
+    },
+    "img": "img/items/big_water_bag.png",
+    "tier": null,
+    "category": "tool"
+  },
+  "wooden_water_filter": {
+    "name": {
+      "hu": "Fa Vízszűrő",
+      "en": "Wooden Water Filter"
+    },
+    "img": "img/items/wooden_water_filter.png",
+    "tier": null,
+    "category": "tool"
+  },
+  "backpack": {
+    "name": {
+      "hu": "Bőr Hátizsák",
+      "en": "Leather Backpack"
+    },
+    "img": "img/items/backpack.png",
+    "tier": null,
+    "category": "tool"
+  },
+  "filter_paper": {
+    "name": {
+      "hu": "Szűrőpapír",
+      "en": "Filter Paper"
+    },
+    "img": "img/items/filter_paper.png",
+    "tier": null,
+    "category": "material"
+  },
+  "ancient_metal_filter_paper": {
+    "name": {
+      "hu": "Ősi Fém Szűrőpapír",
+      "en": "Ancient Metal Filter Paper"
+    },
+    "img": "img/items/filter_paper_ancient.png",
+    "tier": "ancient",
+    "category": "material"
+  },
+  "enchanting_table_emerald": {
+    "name": {
+      "hu": "Bűvölőasztal (Smaragd)",
+      "en": "Enchanting Table (Emerald)"
+    },
+    "img": "img/blocks/emerald_enchanting_table_top.png",
+    "tier": null,
+    "category": "station"
+  },
+  "enchanting_table_diamond": {
+    "name": {
+      "hu": "Bűvölőasztal (Gyémánt)",
+      "en": "Enchanting Table (Diamond)"
+    },
+    "img": "img/blocks/enchanting_table_top.png",
+    "tier": null,
+    "category": "station"
+  },
+  "mining_helmet": {
+    "name": {
+      "hu": "Bányászsisak",
+      "en": "Mining Helmet"
+    },
+    "img": "img/items/mining_helmet.png",
+    "tier": null,
+    "category": "armor"
+  },
+  "battery": {
+    "name": {
+      "hu": "Akkumulátor",
+      "en": "Battery"
+    },
+    "img": "img/items/battery.png",
+    "tier": null,
+    "category": "material"
+  },
+  "cooling_liquid": {
+    "name": {
+      "hu": "Hűtőfolyadék",
+      "en": "Cooling Liquid"
+    },
+    "img": "img/items/cooling_liquid.png",
+    "tier": null,
+    "category": "material"
+  },
+  "bedrock_pulverizer": {
+    "name": {
+      "hu": "Alapkő Zúzó",
+      "en": "Bedrock Pulverizer"
+    },
+    "img": "img/items/bedrock_pulverizer.png",
+    "tier": null,
+    "category": "tool"
+  },
+  "enhanced_ender_eye": {
+    "name": {
+      "hu": "Fejlesztett Ender Szem",
+      "en": "Enhanced Ender Eye"
+    },
+    "img": "img/items/ex_ender_eye.png",
+    "tier": null,
+    "category": "material"
+  },
+  "silver_helmet": {
+    "name": {
+      "hu": "Ezüst Sisak",
+      "en": "Silver Helmet"
+    },
+    "img": "img/armor/silver_helmet.png",
+    "tier": "silver",
+    "category": "armor"
+  },
+  "silver_chestplate": {
+    "name": {
+      "hu": "Ezüst Mellvért",
+      "en": "Silver Chestplate"
+    },
+    "img": "img/armor/silver_chestplate.png",
+    "tier": "silver",
+    "category": "armor"
+  },
+  "silver_leggings": {
+    "name": {
+      "hu": "Ezüst Lábvért",
+      "en": "Silver Leggings"
+    },
+    "img": "img/armor/silver_leggings.png",
+    "tier": "silver",
+    "category": "armor"
+  },
+  "silver_boots": {
+    "name": {
+      "hu": "Ezüst Csizma",
+      "en": "Silver Boots"
+    },
+    "img": "img/armor/silver_boots.png",
+    "tier": "silver",
+    "category": "armor"
+  },
+  "gold_helmet": {
+    "name": {
+      "hu": "Arany Sisak",
+      "en": "Gold Helmet"
+    },
+    "img": "img/armor/gold_helmet.png",
+    "tier": "gold",
+    "category": "armor"
+  },
+  "gold_chestplate": {
+    "name": {
+      "hu": "Arany Mellvért",
+      "en": "Gold Chestplate"
+    },
+    "img": "img/armor/gold_chestplate.png",
+    "tier": "gold",
+    "category": "armor"
+  },
+  "gold_leggings": {
+    "name": {
+      "hu": "Arany Lábvért",
+      "en": "Gold Leggings"
+    },
+    "img": "img/armor/gold_leggings.png",
+    "tier": "gold",
+    "category": "armor"
+  },
+  "gold_boots": {
+    "name": {
+      "hu": "Arany Csizma",
+      "en": "Gold Boots"
+    },
+    "img": "img/armor/gold_boots.png",
+    "tier": "gold",
+    "category": "armor"
+  },
+  "iron_helmet": {
+    "name": {
+      "hu": "Vas Sisak",
+      "en": "Iron Helmet"
+    },
+    "img": "img/armor/rusted_iron_helmet.png",
+    "tier": "iron",
+    "category": "armor"
+  },
+  "iron_chestplate": {
+    "name": {
+      "hu": "Vas Mellvért",
+      "en": "Iron Chestplate"
+    },
+    "img": "img/armor/rusted_iron_chestplate.png",
+    "tier": "iron",
+    "category": "armor"
+  },
+  "iron_leggings": {
+    "name": {
+      "hu": "Vas Lábvért",
+      "en": "Iron Leggings"
+    },
+    "img": "img/armor/rusted_iron_leggings.png",
+    "tier": "iron",
+    "category": "armor"
+  },
+  "iron_boots": {
+    "name": {
+      "hu": "Vas Csizma",
+      "en": "Iron Boots"
+    },
+    "img": "img/armor/rusted_iron_boots.png",
+    "tier": "iron",
+    "category": "armor"
+  },
+  "ancient_metal_helmet": {
+    "name": {
+      "hu": "Ősi Fém Sisak",
+      "en": "Ancient Metal Helmet"
+    },
+    "img": "img/armor/ancient_metal_helmet.png",
+    "tier": "ancient",
+    "category": "armor"
+  },
+  "ancient_metal_chestplate": {
+    "name": {
+      "hu": "Ősi Fém Mellvért",
+      "en": "Ancient Metal Chestplate"
+    },
+    "img": "img/armor/ancient_metal_chestplate.png",
+    "tier": "ancient",
+    "category": "armor"
+  },
+  "ancient_metal_leggings": {
+    "name": {
+      "hu": "Ősi Fém Lábvért",
+      "en": "Ancient Metal Leggings"
+    },
+    "img": "img/armor/ancient_metal_leggings.png",
+    "tier": "ancient",
+    "category": "armor"
+  },
+  "ancient_metal_boots": {
+    "name": {
+      "hu": "Ősi Fém Csizma",
+      "en": "Ancient Metal Boots"
+    },
+    "img": "img/armor/ancient_metal_boots.png",
+    "tier": "ancient",
+    "category": "armor"
+  },
+  "mithril_helmet": {
+    "name": {
+      "hu": "Mithril Sisak",
+      "en": "Mithril Helmet"
+    },
+    "img": "img/armor/mithril_helmet.png",
+    "tier": "mithril",
+    "category": "armor"
+  },
+  "mithril_chestplate": {
+    "name": {
+      "hu": "Mithril Mellvért",
+      "en": "Mithril Chestplate"
+    },
+    "img": "img/armor/mithril_chestplate.png",
+    "tier": "mithril",
+    "category": "armor"
+  },
+  "mithril_leggings": {
+    "name": {
+      "hu": "Mithril Lábvért",
+      "en": "Mithril Leggings"
+    },
+    "img": "img/armor/mithril_leggings.png",
+    "tier": "mithril",
+    "category": "armor"
+  },
+  "mithril_boots": {
+    "name": {
+      "hu": "Mithril Csizma",
+      "en": "Mithril Boots"
+    },
+    "img": "img/armor/mithril_boots.png",
+    "tier": "mithril",
+    "category": "armor"
+  },
+  "adamantium_helmet": {
+    "name": {
+      "hu": "Adamantium Sisak",
+      "en": "Adamantium Helmet"
+    },
+    "img": "img/armor/adamantium_helmet.png",
+    "tier": "adamantium",
+    "category": "armor"
+  },
+  "adamantium_chestplate": {
+    "name": {
+      "hu": "Adamantium Mellvért",
+      "en": "Adamantium Chestplate"
+    },
+    "img": "img/armor/adamantium_chestplate.png",
+    "tier": "adamantium",
+    "category": "armor"
+  },
+  "adamantium_leggings": {
+    "name": {
+      "hu": "Adamantium Lábvért",
+      "en": "Adamantium Leggings"
+    },
+    "img": "img/armor/adamantium_leggings.png",
+    "tier": "adamantium",
+    "category": "armor"
+  },
+  "adamantium_boots": {
+    "name": {
+      "hu": "Adamantium Csizma",
+      "en": "Adamantium Boots"
+    },
+    "img": "img/armor/adamantium_boots.png",
+    "tier": "adamantium",
+    "category": "armor"
+  },
+  "furnace_core_stone": {
+    "name": {
+      "hu": "Kő Kemence Mag",
+      "en": "Stone Furnace Core"
+    },
+    "img": "img/blocks/furnace_core_stone.png",
+    "tier": null,
+    "category": "block"
+  },
+  "furnace_core_obsidian": {
+    "name": {
+      "hu": "Obszidián Kemence Mag",
+      "en": "Obsidian Furnace Core"
+    },
+    "img": "img/blocks/furnace_core_obsidian.png",
+    "tier": null,
+    "category": "block"
+  },
+  "furnace_core_netherrack": {
+    "name": {
+      "hu": "Pokoli Kő Kemence Mag",
+      "en": "Netherrack Furnace Core"
+    },
+    "img": "img/blocks/furnace_core_netherrack.png",
+    "tier": null,
+    "category": "block"
+  },
+  "hardstone_workbench": {
+    "name": {
+      "hu": "Keménykő Munkaasztal",
+      "en": "Hardstone Workbench"
+    },
+    "img": "img/blocks/workbench_hard.png",
+    "tier": "hard",
+    "category": "block"
+  },
+  "ancient_metal_workbench": {
+    "name": {
+      "hu": "Ősi Fém Munkaasztal",
+      "en": "Ancient Metal Workbench"
+    },
+    "img": "img/blocks/workbench_ancient_metal.png",
+    "tier": "ancient",
+    "category": "block"
+  },
+  "silver_battle_axe": {
+    "name": {
+      "hu": "Ezüst Csatabárd",
+      "en": "Silver Battle Axe"
+    },
+    "img": "img/items/silver_battle_axe.png",
+    "tier": "silver"
+  },
+  "gold_battle_axe": {
+    "name": {
+      "hu": "Arany Csatabárd",
+      "en": "Gold Battle Axe"
+    },
+    "img": "img/items/gold_battle_axe.png",
+    "tier": "gold"
+  },
+  "mithril_battle_axe": {
+    "name": {
+      "hu": "Mithril Csatabárd",
+      "en": "Mithril Battle Axe"
+    },
+    "img": "img/items/mithril_battle_axe.png",
+    "tier": "mithril"
+  },
+  "adamantium_battle_axe": {
+    "name": {
+      "hu": "Adamantium Csatabárd",
+      "en": "Adamantium Battle Axe"
+    },
+    "img": "img/items/adamantium_battle_axe.png",
+    "tier": "adamantium"
+  },
+  "ancient_metal_battle_axe": {
+    "name": {
+      "hu": "Ősi Fém Csatabárd",
+      "en": "Ancient Metal Battle Axe"
+    },
+    "img": "img/items/ancient_metal_battle_axe.png",
+    "tier": "ancient"
+  },
+  "hardstone_battle_axe": {
+    "name": {
+      "hu": "Keménykő Csatabárd",
+      "en": "Hardstone Battle Axe"
+    },
+    "img": "img/items/hardstone_battle_axe.png",
+    "tier": "hard"
+  },
+  "silver_mattock": {
+    "name": {
+      "hu": "Ezüst Ácskapa",
+      "en": "Silver Mattock"
+    },
+    "img": "img/items/silver_mattock.png",
+    "tier": "silver"
+  },
+  "gold_mattock": {
+    "name": {
+      "hu": "Arany Ácskapa",
+      "en": "Gold Mattock"
+    },
+    "img": "img/items/gold_mattock.png",
+    "tier": "gold"
+  },
+  "mithril_mattock": {
+    "name": {
+      "hu": "Mithril Ácskapa",
+      "en": "Mithril Mattock"
+    },
+    "img": "img/items/mithril_mattock.png",
+    "tier": "mithril"
+  },
+  "adamantium_mattock": {
+    "name": {
+      "hu": "Adamantium Ácskapa",
+      "en": "Adamantium Mattock"
+    },
+    "img": "img/items/adamantium_mattock.png",
+    "tier": "adamantium"
+  },
+  "ancient_metal_mattock": {
+    "name": {
+      "hu": "Ősi Fém Ácskapa",
+      "en": "Ancient Metal Mattock"
+    },
+    "img": "img/items/ancient_metal_mattock.png",
+    "tier": "ancient"
+  },
+  "hardstone_mattock": {
+    "name": {
+      "hu": "Keménykő Ácskapa",
+      "en": "Hardstone Mattock"
+    },
+    "img": "img/items/hardstone_mattock.png",
+    "tier": "hard"
+  },
+  "silver_scythe": {
+    "name": {
+      "hu": "Ezüst Kasza",
+      "en": "Silver Scythe"
+    },
+    "img": "img/items/silver_scythe.png",
+    "tier": "silver"
+  },
+  "gold_scythe": {
+    "name": {
+      "hu": "Arany Kasza",
+      "en": "Gold Scythe"
+    },
+    "img": "img/items/gold_scythe.png",
+    "tier": "gold"
+  },
+  "mithril_scythe": {
+    "name": {
+      "hu": "Mithril Kasza",
+      "en": "Mithril Scythe"
+    },
+    "img": "img/items/mithril_scythe.png",
+    "tier": "mithril"
+  },
+  "adamantium_scythe": {
+    "name": {
+      "hu": "Adamantium Kasza",
+      "en": "Adamantium Scythe"
+    },
+    "img": "img/items/adamantium_scythe.png",
+    "tier": "adamantium"
+  },
+  "ancient_metal_scythe": {
+    "name": {
+      "hu": "Ősi Fém Kasza",
+      "en": "Ancient Metal Scythe"
+    },
+    "img": "img/items/ancient_metal_scythe.png",
+    "tier": "ancient"
+  },
+  "hardstone_scythe": {
+    "name": {
+      "hu": "Keménykő Kasza",
+      "en": "Hardstone Scythe"
+    },
+    "img": "img/items/hardstone_scythe.png",
+    "tier": "hard"
+  },
+  "silver_shears": {
+    "name": {
+      "hu": "Ezüst Olló",
+      "en": "Silver Shears"
+    },
+    "img": "img/items/silver_shears.png",
+    "tier": "silver"
+  },
+  "gold_shears": {
+    "name": {
+      "hu": "Arany Olló",
+      "en": "Gold Shears"
+    },
+    "img": "img/items/gold_shears.png",
+    "tier": "gold"
+  },
+  "iron_shears": {
+    "name": {
+      "hu": "Vas Olló",
+      "en": "Iron Shears"
+    },
+    "img": "img/items/iron_shears.png",
+    "tier": "iron"
+  },
+  "mithril_shears": {
+    "name": {
+      "hu": "Mithril Olló",
+      "en": "Mithril Shears"
+    },
+    "img": "img/items/mithril_shears.png",
+    "tier": "mithril"
+  },
+  "adamantium_shears": {
+    "name": {
+      "hu": "Adamantium Olló",
+      "en": "Adamantium Shears"
+    },
+    "img": "img/items/adamantium_shears.png",
+    "tier": "adamantium"
+  },
+  "hardstone_shears": {
+    "name": {
+      "hu": "Keménykő Olló",
+      "en": "Hardstone Shears"
+    },
+    "img": "img/items/hardstone_shears.png",
+    "tier": "hard"
+  },
+  "silver_hatchet": {
+    "name": {
+      "hu": "Ezüst Kézbalta",
+      "en": "Silver Hatchet"
+    },
+    "img": "img/items/silver_hatchet.png",
+    "tier": "silver"
+  },
+  "gold_hatchet": {
+    "name": {
+      "hu": "Arany Kézbalta",
+      "en": "Gold Hatchet"
+    },
+    "img": "img/items/gold_hatchet.png",
+    "tier": "gold"
+  },
+  "mithril_hatchet": {
+    "name": {
+      "hu": "Mithril Kézbalta",
+      "en": "Mithril Hatchet"
+    },
+    "img": "img/items/mithril_hatchet.png",
+    "tier": "mithril"
+  },
+  "adamantium_hatchet": {
+    "name": {
+      "hu": "Adamantium Kézbalta",
+      "en": "Adamantium Hatchet"
+    },
+    "img": "img/items/adamantium_hatchet.png",
+    "tier": "adamantium"
+  },
+  "ancient_metal_hatchet": {
+    "name": {
+      "hu": "Ősi Fém Kézbalta",
+      "en": "Ancient Metal Hatchet"
+    },
+    "img": "img/items/ancient_metal_hatchet.png",
+    "tier": "ancient"
+  },
+  "hardstone_hatchet": {
+    "name": {
+      "hu": "Keménykő Kézbalta",
+      "en": "Hardstone Hatchet"
+    },
+    "img": "img/items/hardstone_hatchet.png",
+    "tier": "hard"
+  },
+  "silver_hoe": {
+    "name": {
+      "hu": "Ezüst Kapa",
+      "en": "Silver Hoe"
+    },
+    "img": "img/items/silver_hoe.png",
+    "tier": "silver"
+  },
+  "gold_hoe": {
+    "name": {
+      "hu": "Arany Kapa",
+      "en": "Gold Hoe"
+    },
+    "img": "img/items/gold_hoe.png",
+    "tier": "gold"
+  },
+  "mithril_hoe": {
+    "name": {
+      "hu": "Mithril Kapa",
+      "en": "Mithril Hoe"
+    },
+    "img": "img/items/mithril_hoe.png",
+    "tier": "mithril"
+  },
+  "adamantium_hoe": {
+    "name": {
+      "hu": "Adamantium Kapa",
+      "en": "Adamantium Hoe"
+    },
+    "img": "img/items/adamantium_hoe.png",
+    "tier": "adamantium"
+  },
+  "ancient_metal_hoe": {
+    "name": {
+      "hu": "Ősi Fém Kapa",
+      "en": "Ancient Metal Hoe"
+    },
+    "img": "img/items/ancient_metal_hoe.png",
+    "tier": "ancient"
+  },
+  "ancient_metal_shears": {
+    "name": {
+      "hu": "Ősi Fém Olló",
+      "en": "Ancient Metal Shears"
+    },
+    "img": "img/items/ancient_metal_shears.png",
+    "tier": "ancient"
+  },
+  "torch": {
+    "name": {
+      "hu": "Fáklya",
+      "en": "Torch"
+    },
+    "img": "img/items/torch.png"
+  },
+  "bow": {
+    "name": {
+      "hu": "Íj",
+      "en": "Bow"
+    },
+    "img": "img/items/bow.png"
+  },
+  "feather": {
+    "name": {
+      "hu": "Toll",
+      "en": "Feather"
+    },
+    "img": "img/items/feather.png"
+  },
+  "flint_arrow": {
+    "name": {
+      "hu": "Kovanyíl",
+      "en": "Flint Arrow"
+    },
+    "img": "img/items/flint_arrow.png"
+  },
+  "copper_arrow": {
+    "name": {
+      "hu": "Réz Nyíl",
+      "en": "Copper Arrow"
+    },
+    "img": "img/items/copper_arrow.png",
+    "tier": "copper"
+  },
+  "silver_arrow": {
+    "name": {
+      "hu": "Ezüst Nyíl",
+      "en": "Silver Arrow"
+    },
+    "img": "img/items/silver_arrow.png",
+    "tier": "silver"
+  },
+  "gold_arrow": {
+    "name": {
+      "hu": "Arany Nyíl",
+      "en": "Gold Arrow"
+    },
+    "img": "img/items/gold_arrow.png",
+    "tier": "gold"
+  },
+  "iron_arrow": {
+    "name": {
+      "hu": "Vas Nyíl",
+      "en": "Iron Arrow"
+    },
+    "img": "img/items/iron_arrow.png",
+    "tier": "iron"
+  },
+  "mithril_arrow": {
+    "name": {
+      "hu": "Mithril Nyíl",
+      "en": "Mithril Arrow"
+    },
+    "img": "img/items/mithril_arrow.png",
+    "tier": "mithril"
+  },
+  "adamantium_arrow": {
+    "name": {
+      "hu": "Adamantium Nyíl",
+      "en": "Adamantium Arrow"
+    },
+    "img": "img/items/adamantium_arrow.png",
+    "tier": "adamantium"
+  },
+  "obsidian_arrow": {
+    "name": {
+      "hu": "Obszidián Nyíl",
+      "en": "Obsidian Arrow"
+    },
+    "img": "img/items/obsidian_arrow.png"
+  },
+  "ancient_metal_arrow": {
+    "name": {
+      "hu": "Ősi Fém Nyíl",
+      "en": "Ancient Metal Arrow"
+    },
+    "img": "img/items/ancient_metal_arrow.png",
+    "tier": "ancient"
+  },
+  "bowl": {
+    "name": {
+      "hu": "Tál",
+      "en": "Bowl"
+    },
+    "img": "img/items/bowl_water.png"
+  },
+  "copper_chain": {
+    "name": {
+      "hu": "Réz Lánc",
+      "en": "Copper Chain"
+    },
+    "img": "img/items/copper_chain.png",
+    "tier": "copper"
+  },
+  "silver_chain": {
+    "name": {
+      "hu": "Ezüst Lánc",
+      "en": "Silver Chain"
+    },
+    "img": "img/items/silver_chain.png",
+    "tier": "silver"
+  },
+  "gold_chain": {
+    "name": {
+      "hu": "Arany Lánc",
+      "en": "Gold Chain"
+    },
+    "img": "img/items/gold_chain.png",
+    "tier": "gold"
+  },
+  "iron_chain": {
+    "name": {
+      "hu": "Vas Lánc",
+      "en": "Iron Chain"
+    },
+    "img": "img/items/iron_chain.png",
+    "tier": "iron"
+  },
+  "mithril_chain": {
+    "name": {
+      "hu": "Mithril Lánc",
+      "en": "Mithril Chain"
+    },
+    "img": "img/items/mithril_chain.png",
+    "tier": "mithril"
+  },
+  "adamantium_chain": {
+    "name": {
+      "hu": "Adamantium Lánc",
+      "en": "Adamantium Chain"
+    },
+    "img": "img/items/adamantium_chain.png",
+    "tier": "adamantium"
+  },
+  "ancient_metal_chain": {
+    "name": {
+      "hu": "Ősi Fém Lánc",
+      "en": "Ancient Metal Chain"
+    },
+    "img": "img/items/ancient_metal_chain.png",
+    "tier": "ancient"
+  },
+  "hardstone_chain": {
+    "name": {
+      "hu": "Keménykő Lánc",
+      "en": "Hardstone Chain"
+    },
+    "img": "img/items/hardstone_chain.png",
+    "tier": "hard"
+  },
+  "activator_rail": {
+    "name": {
+      "hu": "activator_rail",
+      "en": "activator_rail"
+    },
+    "img": "img/items/activator_rail.png",
+    "tier": null
+  },
+  "adamantium_anvil": {
+    "name": {
+      "hu": "adamantium_anvil",
+      "en": "adamantium_anvil"
+    },
+    "img": "img/items/adamantium_anvil.png",
+    "tier": null
+  },
+  "adamantium_block": {
+    "name": {
+      "hu": "adamantium_block",
+      "en": "adamantium_block"
+    },
+    "img": "img/blocks/adamantium_block.png",
+    "tier": null
+  },
+  "adamantium_bucket": {
+    "name": {
+      "hu": "adamantium_bucket",
+      "en": "adamantium_bucket"
+    },
+    "img": "img/items/adamantium_bucket.png",
+    "tier": null
+  },
+  "adamantium_bucket_filled_with_milk": {
+    "name": {
+      "hu": "adamantium_bucket_filled_with_milk",
+      "en": "adamantium_bucket_filled_with_milk"
+    },
+    "img": "img/items/adamantium_bucket_filled_with_milk.png",
+    "tier": null
+  },
+  "adamantium_bucket_filled_with_stone": {
+    "name": {
+      "hu": "adamantium_bucket_filled_with_stone",
+      "en": "adamantium_bucket_filled_with_stone"
+    },
+    "img": "img/items/adamantium_bucket_filled_with_stone.png",
+    "tier": null
+  },
+  "adamantium_bucket_filled_with_water": {
+    "name": {
+      "hu": "adamantium_bucket_filled_with_water",
+      "en": "adamantium_bucket_filled_with_water"
+    },
+    "img": "img/items/adamantium_bucket_filled_with_water.png",
+    "tier": null
+  },
+  "adamantium_chain_boots": {
+    "name": {
+      "hu": "adamantium_chain_boots",
+      "en": "adamantium_chain_boots"
+    },
+    "img": "img/armor/adamantium_chainmail_boots.png",
+    "tier": null
+  },
+  "adamantium_chain_chestplate": {
+    "name": {
+      "hu": "adamantium_chain_chestplate",
+      "en": "adamantium_chain_chestplate"
+    },
+    "img": "img/armor/adamantium_chainmail_chestplate.png",
+    "tier": null
+  },
+  "adamantium_chain_helmet": {
+    "name": {
+      "hu": "adamantium_chain_helmet",
+      "en": "adamantium_chain_helmet"
+    },
+    "img": "img/armor/adamantium_chainmail_helmet.png",
+    "tier": null
+  },
+  "adamantium_chain_leggings": {
+    "name": {
+      "hu": "adamantium_chain_leggings",
+      "en": "adamantium_chain_leggings"
+    },
+    "img": "img/armor/adamantium_chainmail_leggings.png",
+    "tier": null
+  },
+  "adamantium_coin": {
+    "name": {
+      "hu": "adamantium_coin",
+      "en": "adamantium_coin"
+    },
+    "img": "img/items/adamantium_coin.png",
+    "tier": null
+  },
+  "adamantium_door": {
+    "name": {
+      "hu": "adamantium_door",
+      "en": "adamantium_door"
+    },
+    "img": "img/items/adamantium_door.png",
+    "tier": null
+  },
+  "adamantium_fence": {
+    "name": {
+      "hu": "adamantium_fence",
+      "en": "adamantium_fence"
+    },
+    "img": "img/items/adamantium_fence.png",
+    "tier": null
+  },
+  "adamantium_flint_and_steel": {
+    "name": {
+      "hu": "adamantium_flint_and_steel",
+      "en": "adamantium_flint_and_steel"
+    },
+    "img": "img/items/adamantium_flint_and_steel.png",
+    "tier": null
+  },
+  "adamantium_fluid_tank": {
+    "name": {
+      "hu": "adamantium_fluid_tank",
+      "en": "adamantium_fluid_tank"
+    },
+    "img": "img/items/adamantium_fluid_tank.png",
+    "tier": null
+  },
+  "adamantium_hand_axe": {
+    "name": {
+      "hu": "adamantium_hand_axe",
+      "en": "adamantium_hand_axe"
+    },
+    "img": "img/items/adamantium_hand_axe.png",
+    "tier": null
+  },
+  "adamantium_ore": {
+    "name": {
+      "hu": "adamantium_ore",
+      "en": "adamantium_ore"
+    },
+    "img": "img/blocks/adamantium_ore.png",
+    "tier": null
+  },
+  "adamantium_shield": {
+    "name": {
+      "hu": "adamantium_shield",
+      "en": "adamantium_shield"
+    },
+    "img": "img/items/adamantium_shield.png",
+    "tier": null
+  },
+  "adamantium_short_sword": {
+    "name": {
+      "hu": "adamantium_short_sword",
+      "en": "adamantium_short_sword"
+    },
+    "img": "img/items/adamantium_sword.png",
+    "tier": null
+  },
+  "adamantium_shovel": {
+    "name": {
+      "hu": "adamantium_shovel",
+      "en": "adamantium_shovel"
+    },
+    "img": "img/items/adamantium_shovel.png",
+    "tier": null
+  },
+  "advanced_enchantment_table": {
+    "name": {
+      "hu": "advanced_enchantment_table",
+      "en": "advanced_enchantment_table"
+    },
+    "img": "img/items/advanced_enchantment_table.png",
+    "tier": null
+  },
+  "advanced_enchantment_table_knowledge_book": {
+    "name": {
+      "hu": "advanced_enchantment_table_knowledge_book",
+      "en": "advanced_enchantment_table_knowledge_book"
+    },
+    "img": "img/items/advanced_enchantment_table_knowledge_book.png",
+    "tier": null
+  },
+  "ancient_metal_anvil": {
+    "name": {
+      "hu": "ancient_metal_anvil",
+      "en": "ancient_metal_anvil"
+    },
+    "img": "img/items/ancient_metal_anvil.png",
+    "tier": null
+  },
+  "ancient_metal_barrel_upgrade": {
+    "name": {
+      "hu": "ancient_metal_barrel_upgrade",
+      "en": "ancient_metal_barrel_upgrade"
+    },
+    "img": "img/items/ancient_metal_barrel_upgrade.png",
+    "tier": null
+  },
+  "ancient_metal_block": {
+    "name": {
+      "hu": "ancient_metal_block",
+      "en": "ancient_metal_block"
+    },
+    "img": "img/blocks/ancient_metal_block.png",
+    "tier": null
+  },
+  "ancient_metal_bow": {
+    "name": {
+      "hu": "ancient_metal_bow",
+      "en": "ancient_metal_bow"
+    },
+    "img": "img/items/ancient_metal_bow.png",
+    "tier": null
+  },
+  "ancient_metal_bucket": {
+    "name": {
+      "hu": "ancient_metal_bucket",
+      "en": "ancient_metal_bucket"
+    },
+    "img": "img/items/ancient_metal_bucket.png",
+    "tier": null
+  },
+  "ancient_metal_bucket_filled_with_milk": {
+    "name": {
+      "hu": "ancient_metal_bucket_filled_with_milk",
+      "en": "ancient_metal_bucket_filled_with_milk"
+    },
+    "img": "img/items/ancient_metal_bucket_filled_with_milk.png",
+    "tier": null
+  },
+  "ancient_metal_bucket_filled_with_stone": {
+    "name": {
+      "hu": "ancient_metal_bucket_filled_with_stone",
+      "en": "ancient_metal_bucket_filled_with_stone"
+    },
+    "img": "img/items/ancient_metal_bucket_filled_with_stone.png",
+    "tier": null
+  },
+  "ancient_metal_bucket_filled_with_water": {
+    "name": {
+      "hu": "ancient_metal_bucket_filled_with_water",
+      "en": "ancient_metal_bucket_filled_with_water"
+    },
+    "img": "img/items/ancient_metal_bucket_filled_with_water.png",
+    "tier": null
+  },
+  "ancient_metal_chain_boots": {
+    "name": {
+      "hu": "ancient_metal_chain_boots",
+      "en": "ancient_metal_chain_boots"
+    },
+    "img": "img/armor/ancient_metal_chainmail_boots.png",
+    "tier": null
+  },
+  "ancient_metal_chain_chestplate": {
+    "name": {
+      "hu": "ancient_metal_chain_chestplate",
+      "en": "ancient_metal_chain_chestplate"
+    },
+    "img": "img/armor/ancient_metal_chainmail_chestplate.png",
+    "tier": null
+  },
+  "ancient_metal_chain_helmet": {
+    "name": {
+      "hu": "ancient_metal_chain_helmet",
+      "en": "ancient_metal_chain_helmet"
+    },
+    "img": "img/armor/ancient_metal_chainmail_helmet.png",
+    "tier": null
+  },
+  "ancient_metal_chain_leggings": {
+    "name": {
+      "hu": "ancient_metal_chain_leggings",
+      "en": "ancient_metal_chain_leggings"
+    },
+    "img": "img/armor/ancient_metal_chainmail_leggings.png",
+    "tier": null
+  },
+  "ancient_metal_chest_upgrade": {
+    "name": {
+      "hu": "ancient_metal_chest_upgrade",
+      "en": "ancient_metal_chest_upgrade"
+    },
+    "img": "img/items/ancient_metal_chest_upgrade.png",
+    "tier": null
+  },
+  "ancient_metal_coin": {
+    "name": {
+      "hu": "ancient_metal_coin",
+      "en": "ancient_metal_coin"
+    },
+    "img": "img/items/ancient_metal_coin.png",
+    "tier": null
+  },
+  "ancient_metal_container_knowledge_book": {
+    "name": {
+      "hu": "ancient_metal_container_knowledge_book",
+      "en": "ancient_metal_container_knowledge_book"
+    },
+    "img": "img/items/ancient_metal_container_knowledge_book.png",
+    "tier": null
+  },
+  "ancient_metal_door": {
+    "name": {
+      "hu": "ancient_metal_door",
+      "en": "ancient_metal_door"
+    },
+    "img": "img/items/ancient_metal_door.png",
+    "tier": null
+  },
+  "ancient_metal_fence": {
+    "name": {
+      "hu": "ancient_metal_fence",
+      "en": "ancient_metal_fence"
+    },
+    "img": "img/items/ancient_metal_fence.png",
+    "tier": null
+  },
+  "ancient_metal_filter_paper_knowledge_book": {
+    "name": {
+      "hu": "ancient_metal_filter_paper_knowledge_book",
+      "en": "ancient_metal_filter_paper_knowledge_book"
+    },
+    "img": "img/items/ancient_metal_filter_paper_knowledge_book.png",
+    "tier": null
+  },
+  "ancient_metal_flint_and_steel": {
+    "name": {
+      "hu": "ancient_metal_flint_and_steel",
+      "en": "ancient_metal_flint_and_steel"
+    },
+    "img": "img/items/ancient_metal_flint_and_steel.png",
+    "tier": null
+  },
+  "ancient_metal_fluid_tank": {
+    "name": {
+      "hu": "ancient_metal_fluid_tank",
+      "en": "ancient_metal_fluid_tank"
+    },
+    "img": "img/items/ancient_metal_fluid_tank.png",
+    "tier": null
+  },
+  "ancient_metal_hand_axe": {
+    "name": {
+      "hu": "ancient_metal_hand_axe",
+      "en": "ancient_metal_hand_axe"
+    },
+    "img": "img/items/ancient_metal_hand_axe.png",
+    "tier": null
+  },
+  "ancient_metal_nugget": {
+    "name": {
+      "hu": "ancient_metal_nugget",
+      "en": "ancient_metal_nugget"
+    },
+    "img": "img/items/ancient_metal_nugget.png",
+    "tier": null
+  },
+  "ancient_metal_shield": {
+    "name": {
+      "hu": "ancient_metal_shield",
+      "en": "ancient_metal_shield"
+    },
+    "img": "img/items/ancient_metal_shield.png",
+    "tier": null
+  },
+  "ancient_metal_short_sword": {
+    "name": {
+      "hu": "ancient_metal_short_sword",
+      "en": "ancient_metal_short_sword"
+    },
+    "img": "img/items/ancient_metal_sword.png",
+    "tier": null
+  },
+  "ancient_metal_shovel": {
+    "name": {
+      "hu": "ancient_metal_shovel",
+      "en": "ancient_metal_shovel"
+    },
+    "img": "img/items/ancient_metal_shovel.png",
+    "tier": null
+  },
+  "andesite": {
+    "name": {
+      "hu": "andesite",
+      "en": "andesite"
+    },
+    "img": "img/items/andesite.png",
+    "tier": null
+  },
+  "apple": {
+    "name": {
+      "hu": "apple",
+      "en": "apple"
+    },
+    "img": "img/items/apple.png",
+    "tier": null
+  },
+  "armor_stand": {
+    "name": {
+      "hu": "armor_stand",
+      "en": "armor_stand"
+    },
+    "img": "img/items/armor_stand.png",
+    "tier": null
+  },
+  "baked_potato": {
+    "name": {
+      "hu": "baked_potato",
+      "en": "baked_potato"
+    },
+    "img": "img/items/baked_potato.png",
+    "tier": null
+  },
+  "bamboo": {
+    "name": {
+      "hu": "bamboo",
+      "en": "bamboo"
+    },
+    "img": "img/items/bamboo.png",
+    "tier": null
+  },
+  "banana_leaves": {
+    "name": {
+      "hu": "banana_leaves",
+      "en": "banana_leaves"
+    },
+    "img": "img/items/banana_leaves.png",
+    "tier": null
+  },
+  "barrel": {
+    "name": {
+      "hu": "barrel",
+      "en": "barrel"
+    },
+    "img": "img/items/barrel.png",
+    "tier": null
+  },
+  "battery_knowledge_book": {
+    "name": {
+      "hu": "battery_knowledge_book",
+      "en": "battery_knowledge_book"
+    },
+    "img": "img/items/battery.png",
+    "tier": null
+  },
+  "bed_black": {
+    "name": {
+      "hu": "bed_black",
+      "en": "bed_black"
+    },
+    "img": "img/items/bed_black.png",
+    "tier": null
+  },
+  "bed_white": {
+    "name": {
+      "hu": "bed_white",
+      "en": "bed_white"
+    },
+    "img": "img/items/bed_white.png",
+    "tier": null
+  },
+  "beef_soup": {
+    "name": {
+      "hu": "beef_soup",
+      "en": "beef_soup"
+    },
+    "img": "img/items/beef_soup.png",
+    "tier": null
+  },
+  "belt": {
+    "name": {
+      "hu": "belt",
+      "en": "belt"
+    },
+    "img": "img/items/belt.png",
+    "tier": null
+  },
+  "binding_scroll": {
+    "name": {
+      "hu": "binding_scroll",
+      "en": "binding_scroll"
+    },
+    "img": "img/items/binding_scroll.png",
+    "tier": null
+  },
+  "birch_door": {
+    "name": {
+      "hu": "birch_door",
+      "en": "birch_door"
+    },
+    "img": "img/items/birch_door.png",
+    "tier": null
+  },
+  "birch_fence": {
+    "name": {
+      "hu": "birch_fence",
+      "en": "birch_fence"
+    },
+    "img": "img/items/birch_fence.png",
+    "tier": null
+  },
+  "birch_fence_gate": {
+    "name": {
+      "hu": "birch_fence_gate",
+      "en": "birch_fence_gate"
+    },
+    "img": "img/items/birch_fence_gate.png",
+    "tier": null
+  },
+  "birch_leaves": {
+    "name": {
+      "hu": "birch_leaves",
+      "en": "birch_leaves"
+    },
+    "img": "img/items/birch_leaves.png",
+    "tier": null
+  },
+  "birch_sieve": {
+    "name": {
+      "hu": "birch_sieve",
+      "en": "birch_sieve"
+    },
+    "img": "img/items/birch_sieve.png",
+    "tier": null
+  },
+  "birch_wood_crate": {
+    "name": {
+      "hu": "birch_wood_crate",
+      "en": "birch_wood_crate"
+    },
+    "img": "img/items/birch_wood_crate.png",
+    "tier": null
+  },
+  "birch_wood_slab_single": {
+    "name": {
+      "hu": "birch_wood_slab_single",
+      "en": "birch_wood_slab_single"
+    },
+    "img": "img/items/birch_wood_slab_single.png",
+    "tier": null
+  },
+  "birch_wood_stairs": {
+    "name": {
+      "hu": "birch_wood_stairs",
+      "en": "birch_wood_stairs"
+    },
+    "img": "img/items/birch_wood_stairs.png",
+    "tier": null
+  },
+  "black_carpet": {
+    "name": {
+      "hu": "black_carpet",
+      "en": "black_carpet"
+    },
+    "img": "img/items/black_carpet.png",
+    "tier": null
+  },
+  "black_stained_clay_colored": {
+    "name": {
+      "hu": "black_stained_clay_colored",
+      "en": "black_stained_clay_colored"
+    },
+    "img": "img/items/black_stained_clay_colored.png",
+    "tier": null
+  },
+  "black_wool": {
+    "name": {
+      "hu": "black_wool",
+      "en": "black_wool"
+    },
+    "img": "img/items/black_wool.png",
+    "tier": null
+  },
+  "blaze_powder": {
+    "name": {
+      "hu": "blaze_powder",
+      "en": "blaze_powder"
+    },
+    "img": "img/items/blaze_powder.png",
+    "tier": null
+  },
+  "blaze_rod": {
+    "name": {
+      "hu": "blaze_rod",
+      "en": "blaze_rod"
+    },
+    "img": "img/items/blaze_rod.png",
+    "tier": null
+  },
+  "blue_bed": {
+    "name": {
+      "hu": "blue_bed",
+      "en": "blue_bed"
+    },
+    "img": "img/items/blue_bed.png",
+    "tier": null
+  },
+  "blue_carpet": {
+    "name": {
+      "hu": "blue_carpet",
+      "en": "blue_carpet"
+    },
+    "img": "img/items/blue_carpet.png",
+    "tier": null
+  },
+  "blue_compass": {
+    "name": {
+      "hu": "blue_compass",
+      "en": "blue_compass"
+    },
+    "img": "img/items/blue_compass.png",
+    "tier": null
+  },
+  "blue_stained_clay_colored": {
+    "name": {
+      "hu": "blue_stained_clay_colored",
+      "en": "blue_stained_clay_colored"
+    },
+    "img": "img/items/blue_stained_clay_colored.png",
+    "tier": null
+  },
+  "blue_wool": {
+    "name": {
+      "hu": "blue_wool",
+      "en": "blue_wool"
+    },
+    "img": "img/items/blue_wool.png",
+    "tier": null
+  },
+  "blueberries": {
+    "name": {
+      "hu": "blueberries",
+      "en": "blueberries"
+    },
+    "img": "img/food/blueberries.png",
+    "tier": null
+  },
+  "blueberry_porridge": {
+    "name": {
+      "hu": "blueberry_porridge",
+      "en": "blueberry_porridge"
+    },
+    "img": "img/items/blueberry_porridge.png",
+    "tier": null
+  },
+  "boat": {
+    "name": {
+      "hu": "boat",
+      "en": "boat"
+    },
+    "img": "img/items/boat.png",
+    "tier": null
+  },
+  "bone": {
+    "name": {
+      "hu": "bone",
+      "en": "bone"
+    },
+    "img": "img/items/bone.png",
+    "tier": null
+  },
+  "bone_club": {
+    "name": {
+      "hu": "bone_club",
+      "en": "bone_club"
+    },
+    "img": "img/items/bone_club.png",
+    "tier": null
+  },
+  "bone_meal": {
+    "name": {
+      "hu": "bone_meal",
+      "en": "bone_meal"
+    },
+    "img": "img/items/bone_meal.png",
+    "tier": null
+  },
+  "book_and_quill": {
+    "name": {
+      "hu": "book_and_quill",
+      "en": "book_and_quill"
+    },
+    "img": "img/items/book_and_quill.png",
+    "tier": null
+  },
+  "bookshelf": {
+    "name": {
+      "hu": "bookshelf",
+      "en": "bookshelf"
+    },
+    "img": "img/items/bookshelf.png",
+    "tier": null
+  },
+  "bottle_o_enchanting": {
+    "name": {
+      "hu": "bottle_o_enchanting",
+      "en": "bottle_o_enchanting"
+    },
+    "img": "img/items/bottle_o_enchanting.png",
+    "tier": null
+  },
+  "bottle_of_disenchanting": {
+    "name": {
+      "hu": "bottle_of_disenchanting",
+      "en": "bottle_of_disenchanting"
+    },
+    "img": "img/items/bottle_of_disenchanting.png",
+    "tier": null
+  },
+  "bowl_milk": {
+    "name": {
+      "hu": "bowl_milk",
+      "en": "bowl_milk"
+    },
+    "img": "img/items/bowl_milk.png",
+    "tier": null
+  },
+  "bowl_water": {
+    "name": {
+      "hu": "bowl_water",
+      "en": "bowl_water"
+    },
+    "img": "img/items/bowl_water.png",
+    "tier": null
+  },
+  "brewing_stand": {
+    "name": {
+      "hu": "brewing_stand",
+      "en": "brewing_stand"
+    },
+    "img": "img/items/brewing_stand.png",
+    "tier": null
+  },
+  "brick": {
+    "name": {
+      "hu": "brick",
+      "en": "brick"
+    },
+    "img": "img/items/brick.png",
+    "tier": null
+  },
+  "brick_slab_single": {
+    "name": {
+      "hu": "brick_slab_single",
+      "en": "brick_slab_single"
+    },
+    "img": "img/items/brick_slab_single.png",
+    "tier": null
+  },
+  "brick_stairs": {
+    "name": {
+      "hu": "brick_stairs",
+      "en": "brick_stairs"
+    },
+    "img": "img/items/brick_stairs.png",
+    "tier": null
+  },
+  "bricks": {
+    "name": {
+      "hu": "bricks",
+      "en": "bricks"
+    },
+    "img": "img/items/bricks.png",
+    "tier": null
+  },
+  "bronze_war_hammer": {
+    "name": {
+      "hu": "bronze_war_hammer",
+      "en": "bronze_war_hammer"
+    },
+    "img": "img/items/bronze_war_hammer.png",
+    "tier": null
+  },
+  "brown_bed": {
+    "name": {
+      "hu": "brown_bed",
+      "en": "brown_bed"
+    },
+    "img": "img/items/brown_bed.png",
+    "tier": null
+  },
+  "brown_carpet": {
+    "name": {
+      "hu": "brown_carpet",
+      "en": "brown_carpet"
+    },
+    "img": "img/items/brown_carpet.png",
+    "tier": null
+  },
+  "brown_stained_clay_colored": {
+    "name": {
+      "hu": "brown_stained_clay_colored",
+      "en": "brown_stained_clay_colored"
+    },
+    "img": "img/items/brown_stained_clay_colored.png",
+    "tier": null
+  },
+  "brown_wool": {
+    "name": {
+      "hu": "brown_wool",
+      "en": "brown_wool"
+    },
+    "img": "img/items/brown_wool.png",
+    "tier": null
+  },
+  "button_stone": {
+    "name": {
+      "hu": "button_stone",
+      "en": "button_stone"
+    },
+    "img": "img/items/button_stone.png",
+    "tier": null
+  },
+  "button_wood": {
+    "name": {
+      "hu": "button_wood",
+      "en": "button_wood"
+    },
+    "img": "img/items/button_wood.png",
+    "tier": null
+  },
+  "cactus_green": {
+    "name": {
+      "hu": "cactus_green",
+      "en": "cactus_green"
+    },
+    "img": "img/items/cactus_green.png",
+    "tier": null
+  },
+  "cake": {
+    "name": {
+      "hu": "cake",
+      "en": "cake"
+    },
+    "img": "img/items/cake.png",
+    "tier": null
+  },
+  "campfire_idle": {
+    "name": {
+      "hu": "campfire_idle",
+      "en": "campfire_idle"
+    },
+    "img": "img/items/campfire_idle.png",
+    "tier": null
+  },
+  "carbon_crystal": {
+    "name": {
+      "hu": "carbon_crystal",
+      "en": "carbon_crystal"
+    },
+    "img": "img/items/carbon_crystal.png",
+    "tier": null
+  },
+  "carpet": {
+    "name": {
+      "hu": "carpet",
+      "en": "carpet"
+    },
+    "img": "img/items/carpet.png",
+    "tier": null
+  },
+  "carrot": {
+    "name": {
+      "hu": "carrot",
+      "en": "carrot"
+    },
+    "img": "img/items/carrot.png",
+    "tier": null
+  },
+  "carrot_on_a_stick_adamantium": {
+    "name": {
+      "hu": "carrot_on_a_stick_adamantium",
+      "en": "carrot_on_a_stick_adamantium"
+    },
+    "img": "img/items/carrot_on_a_stick_adamantium.png",
+    "tier": null
+  },
+  "carrot_on_a_stick_ancient_metal": {
+    "name": {
+      "hu": "carrot_on_a_stick_ancient_metal",
+      "en": "carrot_on_a_stick_ancient_metal"
+    },
+    "img": "img/items/carrot_on_a_stick_ancient_metal.png",
+    "tier": null
+  },
+  "carrot_on_a_stick_copper": {
+    "name": {
+      "hu": "carrot_on_a_stick_copper",
+      "en": "carrot_on_a_stick_copper"
+    },
+    "img": "img/items/carrot_on_a_stick_copper.png",
+    "tier": null
+  },
+  "carrot_on_a_stick_flint": {
+    "name": {
+      "hu": "carrot_on_a_stick_flint",
+      "en": "carrot_on_a_stick_flint"
+    },
+    "img": "img/items/carrot_on_a_stick_flint.png",
+    "tier": null
+  },
+  "carrot_on_a_stick_gold": {
+    "name": {
+      "hu": "carrot_on_a_stick_gold",
+      "en": "carrot_on_a_stick_gold"
+    },
+    "img": "img/items/carrot_on_a_stick_gold.png",
+    "tier": null
+  },
+  "carrot_on_a_stick_iron": {
+    "name": {
+      "hu": "carrot_on_a_stick_iron",
+      "en": "carrot_on_a_stick_iron"
+    },
+    "img": "img/items/carrot_on_a_stick_iron.png",
+    "tier": null
+  },
+  "carrot_on_a_stick_mithril": {
+    "name": {
+      "hu": "carrot_on_a_stick_mithril",
+      "en": "carrot_on_a_stick_mithril"
+    },
+    "img": "img/items/carrot_on_a_stick_mithril.png",
+    "tier": null
+  },
+  "carrot_on_a_stick_obsidian": {
+    "name": {
+      "hu": "carrot_on_a_stick_obsidian",
+      "en": "carrot_on_a_stick_obsidian"
+    },
+    "img": "img/items/carrot_on_a_stick_obsidian.png",
+    "tier": null
+  },
+  "carrot_on_a_stick_silver": {
+    "name": {
+      "hu": "carrot_on_a_stick_silver",
+      "en": "carrot_on_a_stick_silver"
+    },
+    "img": "img/items/carrot_on_a_stick_silver.png",
+    "tier": null
+  },
+  "cauldron": {
+    "name": {
+      "hu": "cauldron",
+      "en": "cauldron"
+    },
+    "img": "img/items/cauldron.png",
+    "tier": null
+  },
+  "cheese": {
+    "name": {
+      "hu": "cheese",
+      "en": "cheese"
+    },
+    "img": "img/food/cheese.png",
+    "tier": null
+  },
+  "chest": {
+    "name": {
+      "hu": "chest",
+      "en": "chest"
+    },
+    "img": "img/items/chest.png",
+    "tier": null
+  },
+  "chicken_soup": {
+    "name": {
+      "hu": "chicken_soup",
+      "en": "chicken_soup"
+    },
+    "img": "img/items/chicken_soup.png",
+    "tier": null
+  },
+  "chiseled_quartz_block": {
+    "name": {
+      "hu": "chiseled_quartz_block",
+      "en": "chiseled_quartz_block"
+    },
+    "img": "img/items/chiseled_quartz_block.png",
+    "tier": null
+  },
+  "chiseled_sandstone": {
+    "name": {
+      "hu": "chiseled_sandstone",
+      "en": "chiseled_sandstone"
+    },
+    "img": "img/items/chiseled_sandstone.png",
+    "tier": null
+  },
+  "chocolate": {
+    "name": {
+      "hu": "chocolate",
+      "en": "chocolate"
+    },
+    "img": "img/food/chocolate.png",
+    "tier": null
+  },
+  "clay_furnace_idle": {
+    "name": {
+      "hu": "clay_furnace_idle",
+      "en": "clay_furnace_idle"
+    },
+    "img": "img/items/clay_furnace_idle.png",
+    "tier": null
+  },
+  "clay_portal_stone": {
+    "name": {
+      "hu": "clay_portal_stone",
+      "en": "clay_portal_stone"
+    },
+    "img": "img/items/clay_portal_stone.png",
+    "tier": null
+  },
+  "clock": {
+    "name": {
+      "hu": "clock",
+      "en": "clock"
+    },
+    "img": "img/items/clock.png",
+    "tier": null
+  },
+  "clock_knowledge_book": {
+    "name": {
+      "hu": "clock_knowledge_book",
+      "en": "clock_knowledge_book"
+    },
+    "img": "img/items/clock_knowledge_book.png",
+    "tier": null
+  },
+  "coal_block": {
+    "name": {
+      "hu": "coal_block",
+      "en": "coal_block"
+    },
+    "img": "img/items/coal_block.png",
+    "tier": null
+  },
+  "coarse_dirt": {
+    "name": {
+      "hu": "coarse_dirt",
+      "en": "coarse_dirt"
+    },
+    "img": "img/items/coarse_dirt.png",
+    "tier": null
+  },
+  "cobblestone_slab_single": {
+    "name": {
+      "hu": "cobblestone_slab_single",
+      "en": "cobblestone_slab_single"
+    },
+    "img": "img/items/cobblestone_slab_single.png",
+    "tier": null
+  },
+  "cobblestone_wall": {
+    "name": {
+      "hu": "cobblestone_wall",
+      "en": "cobblestone_wall"
+    },
+    "img": "img/items/cobblestone_wall.png",
+    "tier": null
+  },
+  "cocoa_beans": {
+    "name": {
+      "hu": "cocoa_beans",
+      "en": "cocoa_beans"
+    },
+    "img": "img/items/cocoa_beans.png",
+    "tier": null
+  },
+  "coconut_leaves": {
+    "name": {
+      "hu": "coconut_leaves",
+      "en": "coconut_leaves"
+    },
+    "img": "img/items/coconut_leaves.png",
+    "tier": null
+  },
+  "compass": {
+    "name": {
+      "hu": "compass",
+      "en": "compass"
+    },
+    "img": "img/items/compass.png",
+    "tier": null
+  },
+  "cooked_beef": {
+    "name": {
+      "hu": "cooked_beef",
+      "en": "cooked_beef"
+    },
+    "img": "img/items/cooked_beef.png",
+    "tier": null
+  },
+  "cooked_chicken": {
+    "name": {
+      "hu": "cooked_chicken",
+      "en": "cooked_chicken"
+    },
+    "img": "img/items/cooked_chicken.png",
+    "tier": null
+  },
+  "cookie": {
+    "name": {
+      "hu": "cookie",
+      "en": "cookie"
+    },
+    "img": "img/items/cookie.png",
+    "tier": null
+  },
+  "coolant_knowledge_book": {
+    "name": {
+      "hu": "coolant_knowledge_book",
+      "en": "coolant_knowledge_book"
+    },
+    "img": "img/items/coolant_knowledge_book.png",
+    "tier": null
+  },
+  "copper_anvil": {
+    "name": {
+      "hu": "copper_anvil",
+      "en": "copper_anvil"
+    },
+    "img": "img/items/copper_anvil.png",
+    "tier": null
+  },
+  "copper_block": {
+    "name": {
+      "hu": "copper_block",
+      "en": "copper_block"
+    },
+    "img": "img/blocks/copper_block.png",
+    "tier": null
+  },
+  "copper_bucket": {
+    "name": {
+      "hu": "copper_bucket",
+      "en": "copper_bucket"
+    },
+    "img": "img/items/copper_bucket.png",
+    "tier": null
+  },
+  "copper_bucket_filled_with_milk": {
+    "name": {
+      "hu": "copper_bucket_filled_with_milk",
+      "en": "copper_bucket_filled_with_milk"
+    },
+    "img": "img/items/copper_bucket_filled_with_milk.png",
+    "tier": null
+  },
+  "copper_bucket_filled_with_stone": {
+    "name": {
+      "hu": "copper_bucket_filled_with_stone",
+      "en": "copper_bucket_filled_with_stone"
+    },
+    "img": "img/items/copper_bucket_filled_with_stone.png",
+    "tier": null
+  },
+  "copper_bucket_filled_with_water": {
+    "name": {
+      "hu": "copper_bucket_filled_with_water",
+      "en": "copper_bucket_filled_with_water"
+    },
+    "img": "img/items/copper_bucket_filled_with_water.png",
+    "tier": null
+  },
+  "copper_chain_boots": {
+    "name": {
+      "hu": "copper_chain_boots",
+      "en": "copper_chain_boots"
+    },
+    "img": "img/armor/copper_chainmail_boots.png",
+    "tier": null
+  },
+  "copper_chain_chestplate": {
+    "name": {
+      "hu": "copper_chain_chestplate",
+      "en": "copper_chain_chestplate"
+    },
+    "img": "img/armor/copper_chainmail_chestplate.png",
+    "tier": null
+  },
+  "copper_chain_helmet": {
+    "name": {
+      "hu": "copper_chain_helmet",
+      "en": "copper_chain_helmet"
+    },
+    "img": "img/armor/copper_chainmail_helmet.png",
+    "tier": null
+  },
+  "copper_chain_leggings": {
+    "name": {
+      "hu": "copper_chain_leggings",
+      "en": "copper_chain_leggings"
+    },
+    "img": "img/armor/copper_chainmail_leggings.png",
+    "tier": null
+  },
+  "copper_coin": {
+    "name": {
+      "hu": "copper_coin",
+      "en": "copper_coin"
+    },
+    "img": "img/items/copper_coin.png",
+    "tier": null
+  },
+  "copper_door": {
+    "name": {
+      "hu": "copper_door",
+      "en": "copper_door"
+    },
+    "img": "img/items/copper_door.png",
+    "tier": null
+  },
+  "copper_fence": {
+    "name": {
+      "hu": "copper_fence",
+      "en": "copper_fence"
+    },
+    "img": "img/items/copper_fence.png",
+    "tier": null
+  },
+  "copper_flint_and_steel": {
+    "name": {
+      "hu": "copper_flint_and_steel",
+      "en": "copper_flint_and_steel"
+    },
+    "img": "img/items/copper_flint_and_steel.png",
+    "tier": null
+  },
+  "copper_fluid_tank": {
+    "name": {
+      "hu": "copper_fluid_tank",
+      "en": "copper_fluid_tank"
+    },
+    "img": "img/items/copper_fluid_tank.png",
+    "tier": null
+  },
+  "copper_hand_axe": {
+    "name": {
+      "hu": "copper_hand_axe",
+      "en": "copper_hand_axe"
+    },
+    "img": "img/items/copper_hand_axe.png",
+    "tier": null
+  },
+  "copper_ore": {
+    "name": {
+      "hu": "copper_ore",
+      "en": "copper_ore"
+    },
+    "img": "img/blocks/copper_ore.png",
+    "tier": null
+  },
+  "copper_shield": {
+    "name": {
+      "hu": "copper_shield",
+      "en": "copper_shield"
+    },
+    "img": "img/items/copper_shield.png",
+    "tier": null
+  },
+  "copper_short_sword": {
+    "name": {
+      "hu": "copper_short_sword",
+      "en": "copper_short_sword"
+    },
+    "img": "img/items/copper_sword.png",
+    "tier": null
+  },
+  "core_breaker": {
+    "name": {
+      "hu": "core_breaker",
+      "en": "core_breaker"
+    },
+    "img": "img/items/core_breaker.png",
+    "tier": null
+  },
+  "core_breaker_knowledge_book": {
+    "name": {
+      "hu": "core_breaker_knowledge_book",
+      "en": "core_breaker_knowledge_book"
+    },
+    "img": "img/items/core_breaker_knowledge_book.png",
+    "tier": null
+  },
+  "cornflower": {
+    "name": {
+      "hu": "cornflower",
+      "en": "cornflower"
+    },
+    "img": "img/items/cornflower.png",
+    "tier": null
+  },
+  "cream_of_mushroom_soup": {
+    "name": {
+      "hu": "cream_of_mushroom_soup",
+      "en": "cream_of_mushroom_soup"
+    },
+    "img": "img/items/cream_of_mushroom_soup.png",
+    "tier": null
+  },
+  "cream_of_vegetable_soup": {
+    "name": {
+      "hu": "cream_of_vegetable_soup",
+      "en": "cream_of_vegetable_soup"
+    },
+    "img": "img/items/cream_of_vegetable_soup.png",
+    "tier": null
+  },
+  "cyan_bed": {
+    "name": {
+      "hu": "cyan_bed",
+      "en": "cyan_bed"
+    },
+    "img": "img/items/cyan_bed.png",
+    "tier": null
+  },
+  "cyan_carpet": {
+    "name": {
+      "hu": "cyan_carpet",
+      "en": "cyan_carpet"
+    },
+    "img": "img/items/cyan_carpet.png",
+    "tier": null
+  },
+  "cyan_dye": {
+    "name": {
+      "hu": "cyan_dye",
+      "en": "cyan_dye"
+    },
+    "img": "img/items/cyan_dye.png",
+    "tier": null
+  },
+  "cyan_stained_clay_colored": {
+    "name": {
+      "hu": "cyan_stained_clay_colored",
+      "en": "cyan_stained_clay_colored"
+    },
+    "img": "img/items/cyan_stained_clay_colored.png",
+    "tier": null
+  },
+  "cyan_wool": {
+    "name": {
+      "hu": "cyan_wool",
+      "en": "cyan_wool"
+    },
+    "img": "img/items/cyan_wool.png",
+    "tier": null
+  },
+  "dahlia": {
+    "name": {
+      "hu": "dahlia",
+      "en": "dahlia"
+    },
+    "img": "img/items/dahlia.png",
+    "tier": null
+  },
+  "daisy": {
+    "name": {
+      "hu": "daisy",
+      "en": "daisy"
+    },
+    "img": "img/items/daisy.png",
+    "tier": null
+  },
+  "dandelion": {
+    "name": {
+      "hu": "dandelion",
+      "en": "dandelion"
+    },
+    "img": "img/items/dandelion.png",
+    "tier": null
+  },
+  "dandelion_yellow": {
+    "name": {
+      "hu": "dandelion_yellow",
+      "en": "dandelion_yellow"
+    },
+    "img": "img/items/dandelion_yellow.png",
+    "tier": null
+  },
+  "daylight_sensor": {
+    "name": {
+      "hu": "daylight_sensor",
+      "en": "daylight_sensor"
+    },
+    "img": "img/items/daylight_sensor.png",
+    "tier": null
+  },
+  "detector_rail": {
+    "name": {
+      "hu": "detector_rail",
+      "en": "detector_rail"
+    },
+    "img": "img/items/detector_rail.png",
+    "tier": null
+  },
+  "diamond_block": {
+    "name": {
+      "hu": "diamond_block",
+      "en": "diamond_block"
+    },
+    "img": "img/items/diamond_block.png",
+    "tier": null
+  },
+  "diamond_shard": {
+    "name": {
+      "hu": "diamond_shard",
+      "en": "diamond_shard"
+    },
+    "img": "img/items/diamond_shard.png",
+    "tier": null
+  },
+  "diorite": {
+    "name": {
+      "hu": "diorite",
+      "en": "diorite"
+    },
+    "img": "img/items/diorite.png",
+    "tier": null
+  },
+  "dirt": {
+    "name": {
+      "hu": "dirt",
+      "en": "dirt"
+    },
+    "img": "img/items/dirt.png",
+    "tier": null
+  },
+  "dirt_portal_stone": {
+    "name": {
+      "hu": "dirt_portal_stone",
+      "en": "dirt_portal_stone"
+    },
+    "img": "img/items/dirt_portal_stone.png",
+    "tier": null
+  },
+  "dispenser": {
+    "name": {
+      "hu": "dispenser",
+      "en": "dispenser"
+    },
+    "img": "img/items/dispenser.png",
+    "tier": null
+  },
+  "dough": {
+    "name": {
+      "hu": "dough",
+      "en": "dough"
+    },
+    "img": "img/food/dough.png",
+    "tier": null
+  },
+  "dropper": {
+    "name": {
+      "hu": "dropper",
+      "en": "dropper"
+    },
+    "img": "img/items/dropper.png",
+    "tier": null
+  },
+  "egg": {
+    "name": {
+      "hu": "egg",
+      "en": "egg"
+    },
+    "img": "img/items/egg.png",
+    "tier": null
+  },
+  "element_obsidian": {
+    "name": {
+      "hu": "element_obsidian",
+      "en": "element_obsidian"
+    },
+    "img": "img/items/element_obsidian.png",
+    "tier": null
+  },
+  "elemental_water_skin_knowledge_book": {
+    "name": {
+      "hu": "elemental_water_skin_knowledge_book",
+      "en": "elemental_water_skin_knowledge_book"
+    },
+    "img": "img/items/elemental_water_skin_knowledge_book.png",
+    "tier": null
+  },
+  "emerald_block": {
+    "name": {
+      "hu": "emerald_block",
+      "en": "emerald_block"
+    },
+    "img": "img/items/emerald_block.png",
+    "tier": null
+  },
+  "emerald_shard": {
+    "name": {
+      "hu": "emerald_shard",
+      "en": "emerald_shard"
+    },
+    "img": "img/items/emerald_shard.png",
+    "tier": null
+  },
+  "empty_antique_atlas": {
+    "name": {
+      "hu": "empty_antique_atlas",
+      "en": "empty_antique_atlas"
+    },
+    "img": "img/items/empty_antique_atlas.png",
+    "tier": null
+  },
+  "empty_large_water_skin": {
+    "name": {
+      "hu": "empty_large_water_skin",
+      "en": "empty_large_water_skin"
+    },
+    "img": "img/items/empty_large_water_skin.png",
+    "tier": null
+  },
+  "empty_map": {
+    "name": {
+      "hu": "empty_map",
+      "en": "empty_map"
+    },
+    "img": "img/items/empty_map.png",
+    "tier": null
+  },
+  "empty_water_skin": {
+    "name": {
+      "hu": "empty_water_skin",
+      "en": "empty_water_skin"
+    },
+    "img": "img/items/empty_water_skin.png",
+    "tier": null
+  },
+  "enchanted_golden_apple": {
+    "name": {
+      "hu": "enchanted_golden_apple",
+      "en": "enchanted_golden_apple"
+    },
+    "img": "img/items/enchanted_golden_apple.png",
+    "tier": null
+  },
+  "enchantment_table_emerald": {
+    "name": {
+      "hu": "enchantment_table_emerald",
+      "en": "enchantment_table_emerald"
+    },
+    "img": "img/items/enchantment_table_emerald.png",
+    "tier": null
+  },
+  "ender_chest": {
+    "name": {
+      "hu": "ender_chest",
+      "en": "ender_chest"
+    },
+    "img": "img/items/ender_chest.png",
+    "tier": null
+  },
+  "ender_pearl": {
+    "name": {
+      "hu": "ender_pearl",
+      "en": "ender_pearl"
+    },
+    "img": "img/items/ender_pearl.png",
+    "tier": null
+  },
+  "fence": {
+    "name": {
+      "hu": "fence",
+      "en": "fence"
+    },
+    "img": "img/items/fence.png",
+    "tier": null
+  },
+  "fence_gate": {
+    "name": {
+      "hu": "fence_gate",
+      "en": "fence_gate"
+    },
+    "img": "img/items/fence_gate.png",
+    "tier": null
+  },
+  "fermented_spider_eye": {
+    "name": {
+      "hu": "fermented_spider_eye",
+      "en": "fermented_spider_eye"
+    },
+    "img": "img/items/fermented_spider_eye.png",
+    "tier": null
+  },
+  "fire_charge": {
+    "name": {
+      "hu": "fire_charge",
+      "en": "fire_charge"
+    },
+    "img": "img/items/fire_charge.png",
+    "tier": null
+  },
+  "fish_ball": {
+    "name": {
+      "hu": "fish_ball",
+      "en": "fish_ball"
+    },
+    "img": "img/items/fish_ball.png",
+    "tier": null
+  },
+  "fishing_rod_adamantium": {
+    "name": {
+      "hu": "fishing_rod_adamantium",
+      "en": "fishing_rod_adamantium"
+    },
+    "img": "img/items/fishing_rod_adamantium.png",
+    "tier": null
+  },
+  "fishing_rod_ancient_metal": {
+    "name": {
+      "hu": "fishing_rod_ancient_metal",
+      "en": "fishing_rod_ancient_metal"
+    },
+    "img": "img/items/fishing_rod_ancient_metal.png",
+    "tier": null
+  },
+  "fishing_rod_copper": {
+    "name": {
+      "hu": "fishing_rod_copper",
+      "en": "fishing_rod_copper"
+    },
+    "img": "img/items/fishing_rod_copper.png",
+    "tier": null
+  },
+  "fishing_rod_flint": {
+    "name": {
+      "hu": "fishing_rod_flint",
+      "en": "fishing_rod_flint"
+    },
+    "img": "img/items/fishing_rod_flint.png",
+    "tier": null
+  },
+  "fishing_rod_gold": {
+    "name": {
+      "hu": "fishing_rod_gold",
+      "en": "fishing_rod_gold"
+    },
+    "img": "img/items/fishing_rod_gold.png",
+    "tier": null
+  },
+  "fishing_rod_hard": {
+    "name": {
+      "hu": "fishing_rod_hard",
+      "en": "fishing_rod_hard"
+    },
+    "img": "img/items/fishing_rod_hard.png",
+    "tier": null
+  },
+  "fishing_rod_iron": {
+    "name": {
+      "hu": "fishing_rod_iron",
+      "en": "fishing_rod_iron"
+    },
+    "img": "img/items/fishing_rod_iron.png",
+    "tier": null
+  },
+  "fishing_rod_mithril": {
+    "name": {
+      "hu": "fishing_rod_mithril",
+      "en": "fishing_rod_mithril"
+    },
+    "img": "img/items/fishing_rod_mithril.png",
+    "tier": null
+  },
+  "fishing_rod_obsidian": {
+    "name": {
+      "hu": "fishing_rod_obsidian",
+      "en": "fishing_rod_obsidian"
+    },
+    "img": "img/items/fishing_rod_obsidian.png",
+    "tier": null
+  },
+  "fishing_rod_silver": {
+    "name": {
+      "hu": "fishing_rod_silver",
+      "en": "fishing_rod_silver"
+    },
+    "img": "img/items/fishing_rod_silver.png",
+    "tier": null
+  },
+  "flint_and_steel": {
+    "name": {
+      "hu": "flint_and_steel",
+      "en": "flint_and_steel"
+    },
+    "img": "img/items/flint_and_steel.png",
+    "tier": null
+  },
+  "flint_axe": {
+    "name": {
+      "hu": "flint_axe",
+      "en": "flint_axe"
+    },
+    "img": "img/items/flint_axe.png",
+    "tier": null
+  },
+  "flint_hatchet": {
+    "name": {
+      "hu": "flint_hatchet",
+      "en": "flint_hatchet"
+    },
+    "img": "img/items/flint_hatchet.png",
+    "tier": null
+  },
+  "flint_pickaxe": {
+    "name": {
+      "hu": "flint_pickaxe",
+      "en": "flint_pickaxe"
+    },
+    "img": "img/items/flint_pickaxe.png",
+    "tier": null
+  },
+  "flint_shovel": {
+    "name": {
+      "hu": "flint_shovel",
+      "en": "flint_shovel"
+    },
+    "img": "img/items/flint_shovel.png",
+    "tier": null
+  },
+  "flour": {
+    "name": {
+      "hu": "flour",
+      "en": "flour"
+    },
+    "img": "img/food/flour.png",
+    "tier": null
+  },
+  "flower_pot": {
+    "name": {
+      "hu": "flower_pot",
+      "en": "flower_pot"
+    },
+    "img": "img/items/flower_pot.png",
+    "tier": null
+  },
+  "fruit_sorbet": {
+    "name": {
+      "hu": "fruit_sorbet",
+      "en": "fruit_sorbet"
+    },
+    "img": "img/items/fruit_sorbet.png",
+    "tier": null
+  },
+  "giant_tnt_knowledge_book": {
+    "name": {
+      "hu": "giant_tnt_knowledge_book",
+      "en": "giant_tnt_knowledge_book"
+    },
+    "img": "img/items/giant_tnt_knowledge_book.png",
+    "tier": null
+  },
+  "glass": {
+    "name": {
+      "hu": "glass",
+      "en": "glass"
+    },
+    "img": "img/shards/glass.png",
+    "tier": null
+  },
+  "glass_bottle": {
+    "name": {
+      "hu": "glass_bottle",
+      "en": "glass_bottle"
+    },
+    "img": "img/items/glass_bottle.png",
+    "tier": null
+  },
+  "glass_pane": {
+    "name": {
+      "hu": "glass_pane",
+      "en": "glass_pane"
+    },
+    "img": "img/items/glass_pane.png",
+    "tier": null
+  },
+  "glass_shard": {
+    "name": {
+      "hu": "glass_shard",
+      "en": "glass_shard"
+    },
+    "img": "img/items/glass_shard.png",
+    "tier": null
+  },
+  "glistering_melon": {
+    "name": {
+      "hu": "glistering_melon",
+      "en": "glistering_melon"
+    },
+    "img": "img/items/glistering_melon.png",
+    "tier": null
+  },
+  "glowstone": {
+    "name": {
+      "hu": "glowstone",
+      "en": "glowstone"
+    },
+    "img": "img/items/glowstone.png",
+    "tier": null
+  },
+  "glowstone_dust": {
+    "name": {
+      "hu": "glowstone_dust",
+      "en": "glowstone_dust"
+    },
+    "img": "img/items/glowstone_dust.png",
+    "tier": null
+  },
+  "glowstone_torch": {
+    "name": {
+      "hu": "glowstone_torch",
+      "en": "glowstone_torch"
+    },
+    "img": "img/items/glowstone_torch.png",
+    "tier": null
+  },
+  "gold_anvil": {
+    "name": {
+      "hu": "gold_anvil",
+      "en": "gold_anvil"
+    },
+    "img": "img/items/gold_anvil.png",
+    "tier": null
+  },
+  "gold_block": {
+    "name": {
+      "hu": "gold_block",
+      "en": "gold_block"
+    },
+    "img": "img/blocks/gold_block.png",
+    "tier": null
+  },
+  "gold_bucket": {
+    "name": {
+      "hu": "gold_bucket",
+      "en": "gold_bucket"
+    },
+    "img": "img/items/gold_bucket.png",
+    "tier": null
+  },
+  "gold_bucket_filled_with_milk": {
+    "name": {
+      "hu": "gold_bucket_filled_with_milk",
+      "en": "gold_bucket_filled_with_milk"
+    },
+    "img": "img/items/gold_bucket_filled_with_milk.png",
+    "tier": null
+  },
+  "gold_bucket_filled_with_stone": {
+    "name": {
+      "hu": "gold_bucket_filled_with_stone",
+      "en": "gold_bucket_filled_with_stone"
+    },
+    "img": "img/items/gold_bucket_filled_with_stone.png",
+    "tier": null
+  },
+  "gold_bucket_filled_with_water": {
+    "name": {
+      "hu": "gold_bucket_filled_with_water",
+      "en": "gold_bucket_filled_with_water"
+    },
+    "img": "img/items/gold_bucket_filled_with_water.png",
+    "tier": null
+  },
+  "gold_chain_boots": {
+    "name": {
+      "hu": "gold_chain_boots",
+      "en": "gold_chain_boots"
+    },
+    "img": "img/armor/gold_chainmail_boots.png",
+    "tier": null
+  },
+  "gold_chain_chestplate": {
+    "name": {
+      "hu": "gold_chain_chestplate",
+      "en": "gold_chain_chestplate"
+    },
+    "img": "img/armor/gold_chainmail_chestplate.png",
+    "tier": null
+  },
+  "gold_chain_helmet": {
+    "name": {
+      "hu": "gold_chain_helmet",
+      "en": "gold_chain_helmet"
+    },
+    "img": "img/armor/gold_chainmail_helmet.png",
+    "tier": null
+  },
+  "gold_chain_leggings": {
+    "name": {
+      "hu": "gold_chain_leggings",
+      "en": "gold_chain_leggings"
+    },
+    "img": "img/armor/gold_chainmail_leggings.png",
+    "tier": null
+  },
+  "gold_coin": {
+    "name": {
+      "hu": "gold_coin",
+      "en": "gold_coin"
+    },
+    "img": "img/items/gold_coin.png",
+    "tier": null
+  },
+  "gold_door": {
+    "name": {
+      "hu": "gold_door",
+      "en": "gold_door"
+    },
+    "img": "img/items/gold_door.png",
+    "tier": null
+  },
+  "gold_fence": {
+    "name": {
+      "hu": "gold_fence",
+      "en": "gold_fence"
+    },
+    "img": "img/items/gold_fence.png",
+    "tier": null
+  },
+  "gold_filter_paper": {
+    "name": {
+      "hu": "gold_filter_paper",
+      "en": "gold_filter_paper"
+    },
+    "img": "img/items/gold_filter_paper.png",
+    "tier": null
+  },
+  "gold_flint_and_steel": {
+    "name": {
+      "hu": "gold_flint_and_steel",
+      "en": "gold_flint_and_steel"
+    },
+    "img": "img/items/gold_flint_and_steel.png",
+    "tier": null
+  },
+  "gold_fluid_tank": {
+    "name": {
+      "hu": "gold_fluid_tank",
+      "en": "gold_fluid_tank"
+    },
+    "img": "img/items/gold_fluid_tank.png",
+    "tier": null
+  },
+  "gold_hand_axe": {
+    "name": {
+      "hu": "gold_hand_axe",
+      "en": "gold_hand_axe"
+    },
+    "img": "img/items/gold_hand_axe.png",
+    "tier": null
+  },
+  "gold_ore": {
+    "name": {
+      "hu": "gold_ore",
+      "en": "gold_ore"
+    },
+    "img": "img/items/gold_ore.png",
+    "tier": null
+  },
+  "gold_shield": {
+    "name": {
+      "hu": "gold_shield",
+      "en": "gold_shield"
+    },
+    "img": "img/items/gold_shield.png",
+    "tier": null
+  },
+  "gold_short_sword": {
+    "name": {
+      "hu": "gold_short_sword",
+      "en": "gold_short_sword"
+    },
+    "img": "img/items/gold_sword.png",
+    "tier": null
+  },
+  "gold_shovel": {
+    "name": {
+      "hu": "gold_shovel",
+      "en": "gold_shovel"
+    },
+    "img": "img/items/gold_shovel.png",
+    "tier": null
+  },
+  "golden_apple": {
+    "name": {
+      "hu": "golden_apple",
+      "en": "golden_apple"
+    },
+    "img": "img/items/golden_apple.png",
+    "tier": null
+  },
+  "golden_carrot": {
+    "name": {
+      "hu": "golden_carrot",
+      "en": "golden_carrot"
+    },
+    "img": "img/items/golden_carrot.png",
+    "tier": null
+  },
+  "granite": {
+    "name": {
+      "hu": "granite",
+      "en": "granite"
+    },
+    "img": "img/items/granite.png",
+    "tier": null
+  },
+  "gravel": {
+    "name": {
+      "hu": "gravel",
+      "en": "gravel"
+    },
+    "img": "img/items/gravel.png",
+    "tier": null
+  },
+  "gray_bed": {
+    "name": {
+      "hu": "gray_bed",
+      "en": "gray_bed"
+    },
+    "img": "img/items/gray_bed.png",
+    "tier": null
+  },
+  "gray_carpet": {
+    "name": {
+      "hu": "gray_carpet",
+      "en": "gray_carpet"
+    },
+    "img": "img/items/gray_carpet.png",
+    "tier": null
+  },
+  "gray_dye": {
+    "name": {
+      "hu": "gray_dye",
+      "en": "gray_dye"
+    },
+    "img": "img/items/gray_dye.png",
+    "tier": null
+  },
+  "gray_stained_clay_colored": {
+    "name": {
+      "hu": "gray_stained_clay_colored",
+      "en": "gray_stained_clay_colored"
+    },
+    "img": "img/items/gray_stained_clay_colored.png",
+    "tier": null
+  },
+  "gray_wool": {
+    "name": {
+      "hu": "gray_wool",
+      "en": "gray_wool"
+    },
+    "img": "img/items/gray_wool.png",
+    "tier": null
+  },
+  "green_bed": {
+    "name": {
+      "hu": "green_bed",
+      "en": "green_bed"
+    },
+    "img": "img/items/green_bed.png",
+    "tier": null
+  },
+  "green_carpet": {
+    "name": {
+      "hu": "green_carpet",
+      "en": "green_carpet"
+    },
+    "img": "img/items/green_carpet.png",
+    "tier": null
+  },
+  "green_stained_clay_colored": {
+    "name": {
+      "hu": "green_stained_clay_colored",
+      "en": "green_stained_clay_colored"
+    },
+    "img": "img/items/green_stained_clay_colored.png",
+    "tier": null
+  },
+  "green_wool": {
+    "name": {
+      "hu": "green_wool",
+      "en": "green_wool"
+    },
+    "img": "img/items/green_wool.png",
+    "tier": null
+  },
+  "grindstone": {
+    "name": {
+      "hu": "grindstone",
+      "en": "grindstone"
+    },
+    "img": "img/items/grindstone.png",
+    "tier": null
+  },
+  "gunpowder": {
+    "name": {
+      "hu": "gunpowder",
+      "en": "gunpowder"
+    },
+    "img": "img/items/gunpowder.png",
+    "tier": null
+  },
+  "hard_stone_anvil": {
+    "name": {
+      "hu": "hard_stone_anvil",
+      "en": "hard_stone_anvil"
+    },
+    "img": "img/items/hard_stone_anvil.png",
+    "tier": null
+  },
+  "hard_stone_axe": {
+    "name": {
+      "hu": "hard_stone_axe",
+      "en": "hard_stone_axe"
+    },
+    "img": "img/items/hard_stone_axe.png",
+    "tier": null
+  },
+  "hard_stone_battle_axe": {
+    "name": {
+      "hu": "hard_stone_battle_axe",
+      "en": "hard_stone_battle_axe"
+    },
+    "img": "img/items/hard_stone_battle_axe.png",
+    "tier": null
+  },
+  "hard_stone_boots": {
+    "name": {
+      "hu": "hard_stone_boots",
+      "en": "hard_stone_boots"
+    },
+    "img": "img/items/hard_stone_boots.png",
+    "tier": null
+  },
+  "hard_stone_bucket_of_milk": {
+    "name": {
+      "hu": "hard_stone_bucket_of_milk",
+      "en": "hard_stone_bucket_of_milk"
+    },
+    "img": "img/items/hard_stone_bucket_of_milk.png",
+    "tier": null
+  },
+  "hard_stone_bucket_of_stone": {
+    "name": {
+      "hu": "hard_stone_bucket_of_stone",
+      "en": "hard_stone_bucket_of_stone"
+    },
+    "img": "img/items/hard_stone_bucket_of_stone.png",
+    "tier": null
+  },
+  "hard_stone_bucket_of_water": {
+    "name": {
+      "hu": "hard_stone_bucket_of_water",
+      "en": "hard_stone_bucket_of_water"
+    },
+    "img": "img/items/hard_stone_bucket_of_water.png",
+    "tier": null
+  },
+  "hard_stone_chestplate": {
+    "name": {
+      "hu": "hard_stone_chestplate",
+      "en": "hard_stone_chestplate"
+    },
+    "img": "img/items/hard_stone_chestplate.png",
+    "tier": null
+  },
+  "hard_stone_dagger": {
+    "name": {
+      "hu": "hard_stone_dagger",
+      "en": "hard_stone_dagger"
+    },
+    "img": "img/items/hard_stone_dagger.png",
+    "tier": null
+  },
+  "hard_stone_flint_and_steel": {
+    "name": {
+      "hu": "hard_stone_flint_and_steel",
+      "en": "hard_stone_flint_and_steel"
+    },
+    "img": "img/items/hard_stone_flint_and_steel.png",
+    "tier": null
+  },
+  "hard_stone_fluid_tank": {
+    "name": {
+      "hu": "hard_stone_fluid_tank",
+      "en": "hard_stone_fluid_tank"
+    },
+    "img": "img/items/hard_stone_fluid_tank.png",
+    "tier": null
+  },
+  "hard_stone_hand_axe": {
+    "name": {
+      "hu": "hard_stone_hand_axe",
+      "en": "hard_stone_hand_axe"
+    },
+    "img": "img/items/hard_stone_hand_axe.png",
+    "tier": null
+  },
+  "hard_stone_helmet": {
+    "name": {
+      "hu": "hard_stone_helmet",
+      "en": "hard_stone_helmet"
+    },
+    "img": "img/items/hard_stone_helmet.png",
+    "tier": null
+  },
+  "hard_stone_hoe": {
+    "name": {
+      "hu": "hard_stone_hoe",
+      "en": "hard_stone_hoe"
+    },
+    "img": "img/items/hard_stone_hoe.png",
+    "tier": null
+  },
+  "hard_stone_leggings": {
+    "name": {
+      "hu": "hard_stone_leggings",
+      "en": "hard_stone_leggings"
+    },
+    "img": "img/items/hard_stone_leggings.png",
+    "tier": null
+  },
+  "hard_stone_mattock": {
+    "name": {
+      "hu": "hard_stone_mattock",
+      "en": "hard_stone_mattock"
+    },
+    "img": "img/items/hard_stone_mattock.png",
+    "tier": null
+  },
+  "hard_stone_pickaxe": {
+    "name": {
+      "hu": "hard_stone_pickaxe",
+      "en": "hard_stone_pickaxe"
+    },
+    "img": "img/items/hard_stone_pickaxe.png",
+    "tier": null
+  },
+  "hard_stone_scythe": {
+    "name": {
+      "hu": "hard_stone_scythe",
+      "en": "hard_stone_scythe"
+    },
+    "img": "img/items/hard_stone_scythe.png",
+    "tier": null
+  },
+  "hard_stone_shears": {
+    "name": {
+      "hu": "hard_stone_shears",
+      "en": "hard_stone_shears"
+    },
+    "img": "img/items/hard_stone_shears.png",
+    "tier": null
+  },
+  "hard_stone_shield": {
+    "name": {
+      "hu": "hard_stone_shield",
+      "en": "hard_stone_shield"
+    },
+    "img": "img/items/hard_stone_shield.png",
+    "tier": null
+  },
+  "hard_stone_shovel": {
+    "name": {
+      "hu": "hard_stone_shovel",
+      "en": "hard_stone_shovel"
+    },
+    "img": "img/items/hard_stone_shovel.png",
+    "tier": null
+  },
+  "hard_stone_sword": {
+    "name": {
+      "hu": "hard_stone_sword",
+      "en": "hard_stone_sword"
+    },
+    "img": "img/items/hard_stone_sword.png",
+    "tier": null
+  },
+  "hard_stone_war_hammer": {
+    "name": {
+      "hu": "hard_stone_war_hammer",
+      "en": "hard_stone_war_hammer"
+    },
+    "img": "img/items/hard_stone_war_hammer.png",
+    "tier": null
+  },
+  "hardstone_block": {
+    "name": {
+      "hu": "hardstone_block",
+      "en": "hardstone_block"
+    },
+    "img": "img/blocks/hardstone_block.png",
+    "tier": null
+  },
+  "hardstone_bucket": {
+    "name": {
+      "hu": "hardstone_bucket",
+      "en": "hardstone_bucket"
+    },
+    "img": "img/items/hardstone_bucket.png",
+    "tier": null
+  },
+  "hardstone_coin": {
+    "name": {
+      "hu": "hardstone_coin",
+      "en": "hardstone_coin"
+    },
+    "img": "img/items/hardstone_coin.png",
+    "tier": null
+  },
+  "hardstone_nugget": {
+    "name": {
+      "hu": "hardstone_nugget",
+      "en": "hardstone_nugget"
+    },
+    "img": "img/items/hardstone_nugget.png",
+    "tier": null
+  },
+  "hardstone_ore": {
+    "name": {
+      "hu": "hardstone_ore",
+      "en": "hardstone_ore"
+    },
+    "img": "img/blocks/hardstone_ore.png",
+    "tier": null
+  },
+  "hay_bale": {
+    "name": {
+      "hu": "hay_bale",
+      "en": "hay_bale"
+    },
+    "img": "img/items/hay_bale.png",
+    "tier": null
+  },
+  "high_carbon_steel_war_hammer": {
+    "name": {
+      "hu": "high_carbon_steel_war_hammer",
+      "en": "high_carbon_steel_war_hammer"
+    },
+    "img": "img/items/high_carbon_steel_war_hammer.png",
+    "tier": null
+  },
+  "hopper": {
+    "name": {
+      "hu": "hopper",
+      "en": "hopper"
+    },
+    "img": "img/items/hopper.png",
+    "tier": null
+  },
+  "ice_cream": {
+    "name": {
+      "hu": "ice_cream",
+      "en": "ice_cream"
+    },
+    "img": "img/items/ice_cream.png",
+    "tier": null
+  },
+  "ice_cream_cone": {
+    "name": {
+      "hu": "ice_cream_cone",
+      "en": "ice_cream_cone"
+    },
+    "img": "img/items/ice_cream_cone.png",
+    "tier": null
+  },
+  "ink_sac": {
+    "name": {
+      "hu": "ink_sac",
+      "en": "ink_sac"
+    },
+    "img": "img/items/ink_sac.png",
+    "tier": null
+  },
+  "iron_anvil": {
+    "name": {
+      "hu": "iron_anvil",
+      "en": "iron_anvil"
+    },
+    "img": "img/items/iron_anvil.png",
+    "tier": null
+  },
+  "iron_bars": {
+    "name": {
+      "hu": "iron_bars",
+      "en": "iron_bars"
+    },
+    "img": "img/items/iron_bars.png",
+    "tier": null
+  },
+  "iron_block": {
+    "name": {
+      "hu": "iron_block",
+      "en": "iron_block"
+    },
+    "img": "img/items/iron_block.png",
+    "tier": null
+  },
+  "iron_boat": {
+    "name": {
+      "hu": "iron_boat",
+      "en": "iron_boat"
+    },
+    "img": "img/items/iron_boat.png",
+    "tier": null
+  },
+  "iron_bucket": {
+    "name": {
+      "hu": "iron_bucket",
+      "en": "iron_bucket"
+    },
+    "img": "img/items/iron_bucket.png",
+    "tier": null
+  },
+  "iron_bucket_filled_with_milk": {
+    "name": {
+      "hu": "iron_bucket_filled_with_milk",
+      "en": "iron_bucket_filled_with_milk"
+    },
+    "img": "img/items/iron_bucket.png",
+    "tier": null
+  },
+  "iron_bucket_filled_with_stone": {
+    "name": {
+      "hu": "iron_bucket_filled_with_stone",
+      "en": "iron_bucket_filled_with_stone"
+    },
+    "img": "img/items/iron_bucket.png",
+    "tier": null
+  },
+  "iron_bucket_filled_with_water": {
+    "name": {
+      "hu": "iron_bucket_filled_with_water",
+      "en": "iron_bucket_filled_with_water"
+    },
+    "img": "img/items/iron_bucket.png",
+    "tier": null
+  },
+  "iron_chain_boots": {
+    "name": {
+      "hu": "iron_chain_boots",
+      "en": "iron_chain_boots"
+    },
+    "img": "img/items/iron_chain_boots.png",
+    "tier": null
+  },
+  "iron_chain_chestplate": {
+    "name": {
+      "hu": "iron_chain_chestplate",
+      "en": "iron_chain_chestplate"
+    },
+    "img": "img/items/iron_chain_chestplate.png",
+    "tier": null
+  },
+  "iron_chain_helmet": {
+    "name": {
+      "hu": "iron_chain_helmet",
+      "en": "iron_chain_helmet"
+    },
+    "img": "img/items/iron_chain_helmet.png",
+    "tier": null
+  },
+  "iron_chain_leggings": {
+    "name": {
+      "hu": "iron_chain_leggings",
+      "en": "iron_chain_leggings"
+    },
+    "img": "img/items/iron_chain_leggings.png",
+    "tier": null
+  },
+  "iron_door": {
+    "name": {
+      "hu": "iron_door",
+      "en": "iron_door"
+    },
+    "img": "img/items/iron_door.png",
+    "tier": null
+  },
+  "iron_fluid_tank": {
+    "name": {
+      "hu": "iron_fluid_tank",
+      "en": "iron_fluid_tank"
+    },
+    "img": "img/items/iron_fluid_tank.png",
+    "tier": null
+  },
+  "iron_hand_axe": {
+    "name": {
+      "hu": "iron_hand_axe",
+      "en": "iron_hand_axe"
+    },
+    "img": "img/items/iron_hand_axe.png",
+    "tier": null
+  },
+  "iron_ore": {
+    "name": {
+      "hu": "iron_ore",
+      "en": "iron_ore"
+    },
+    "img": "img/items/iron_ore.png",
+    "tier": null
+  },
+  "iron_shield": {
+    "name": {
+      "hu": "iron_shield",
+      "en": "iron_shield"
+    },
+    "img": "img/items/iron_shield.png",
+    "tier": null
+  },
+  "iron_short_sword": {
+    "name": {
+      "hu": "iron_short_sword",
+      "en": "iron_short_sword"
+    },
+    "img": "img/items/iron_short_sword.png",
+    "tier": null
+  },
+  "item_frame": {
+    "name": {
+      "hu": "item_frame",
+      "en": "item_frame"
+    },
+    "img": "img/items/item_frame.png",
+    "tier": null
+  },
+  "jack_o_lantern": {
+    "name": {
+      "hu": "jack_o_lantern",
+      "en": "jack_o_lantern"
+    },
+    "img": "img/items/jack_o_lantern.png",
+    "tier": null
+  },
+  "jukebox": {
+    "name": {
+      "hu": "jukebox",
+      "en": "jukebox"
+    },
+    "img": "img/items/jukebox.png",
+    "tier": null
+  },
+  "jungle_door": {
+    "name": {
+      "hu": "jungle_door",
+      "en": "jungle_door"
+    },
+    "img": "img/items/jungle_door.png",
+    "tier": null
+  },
+  "jungle_fence": {
+    "name": {
+      "hu": "jungle_fence",
+      "en": "jungle_fence"
+    },
+    "img": "img/items/jungle_fence.png",
+    "tier": null
+  },
+  "jungle_fence_gate": {
+    "name": {
+      "hu": "jungle_fence_gate",
+      "en": "jungle_fence_gate"
+    },
+    "img": "img/items/jungle_fence_gate.png",
+    "tier": null
+  },
+  "jungle_leaves": {
+    "name": {
+      "hu": "jungle_leaves",
+      "en": "jungle_leaves"
+    },
+    "img": "img/items/jungle_leaves.png",
+    "tier": null
+  },
+  "jungle_sieve": {
+    "name": {
+      "hu": "jungle_sieve",
+      "en": "jungle_sieve"
+    },
+    "img": "img/items/jungle_sieve.png",
+    "tier": null
+  },
+  "jungle_wood_crate": {
+    "name": {
+      "hu": "jungle_wood_crate",
+      "en": "jungle_wood_crate"
+    },
+    "img": "img/items/jungle_wood_crate.png",
+    "tier": null
+  },
+  "jungle_wood_slab_single": {
+    "name": {
+      "hu": "jungle_wood_slab_single",
+      "en": "jungle_wood_slab_single"
+    },
+    "img": "img/items/jungle_wood_slab_single.png",
+    "tier": null
+  },
+  "jungle_wood_stairs": {
+    "name": {
+      "hu": "jungle_wood_stairs",
+      "en": "jungle_wood_stairs"
+    },
+    "img": "img/items/jungle_wood_stairs.png",
+    "tier": null
+  },
+  "ladder": {
+    "name": {
+      "hu": "ladder",
+      "en": "ladder"
+    },
+    "img": "img/items/ladder.png",
+    "tier": null
+  },
+  "lantern": {
+    "name": {
+      "hu": "lantern",
+      "en": "lantern"
+    },
+    "img": "img/blocks/lantern.png",
+    "tier": null
+  },
+  "lapis_block": {
+    "name": {
+      "hu": "lapis_block",
+      "en": "lapis_block"
+    },
+    "img": "img/items/lapis_block.png",
+    "tier": null
+  },
+  "lapis_lazuli": {
+    "name": {
+      "hu": "lapis_lazuli",
+      "en": "lapis_lazuli"
+    },
+    "img": "img/items/lapis_lazuli.png",
+    "tier": null
+  },
+  "large_backpack_upgrade": {
+    "name": {
+      "hu": "large_backpack_upgrade",
+      "en": "large_backpack_upgrade"
+    },
+    "img": "img/items/large_backpack_upgrade.png",
+    "tier": null
+  },
+  "latiao": {
+    "name": {
+      "hu": "latiao",
+      "en": "latiao"
+    },
+    "img": "img/items/latiao.png",
+    "tier": null
+  },
+  "lead": {
+    "name": {
+      "hu": "lead",
+      "en": "lead"
+    },
+    "img": "img/items/lead.png",
+    "tier": null
+  },
+  "leaf_portal_stone": {
+    "name": {
+      "hu": "leaf_portal_stone",
+      "en": "leaf_portal_stone"
+    },
+    "img": "img/items/leaf_portal_stone.png",
+    "tier": null
+  },
+  "leather_boots": {
+    "name": {
+      "hu": "leather_boots",
+      "en": "leather_boots"
+    },
+    "img": "img/items/leather_boots.png",
+    "tier": null
+  },
+  "leather_cap": {
+    "name": {
+      "hu": "leather_cap",
+      "en": "leather_cap"
+    },
+    "img": "img/items/leather_cap.png",
+    "tier": null
+  },
+  "leather_pants": {
+    "name": {
+      "hu": "leather_pants",
+      "en": "leather_pants"
+    },
+    "img": "img/items/leather_pants.png",
+    "tier": null
+  },
+  "leather_sieve_mesh": {
+    "name": {
+      "hu": "leather_sieve_mesh",
+      "en": "leather_sieve_mesh"
+    },
+    "img": "img/items/leather_sieve_mesh.png",
+    "tier": null
+  },
+  "leather_tunic": {
+    "name": {
+      "hu": "leather_tunic",
+      "en": "leather_tunic"
+    },
+    "img": "img/items/leather_tunic.png",
+    "tier": null
+  },
+  "lever": {
+    "name": {
+      "hu": "lever",
+      "en": "lever"
+    },
+    "img": "img/items/lever.png",
+    "tier": null
+  },
+  "light_blue_bed": {
+    "name": {
+      "hu": "light_blue_bed",
+      "en": "light_blue_bed"
+    },
+    "img": "img/items/light_blue_bed.png",
+    "tier": null
+  },
+  "light_blue_carpet": {
+    "name": {
+      "hu": "light_blue_carpet",
+      "en": "light_blue_carpet"
+    },
+    "img": "img/items/light_blue_carpet.png",
+    "tier": null
+  },
+  "light_blue_dye": {
+    "name": {
+      "hu": "light_blue_dye",
+      "en": "light_blue_dye"
+    },
+    "img": "img/items/light_blue_dye.png",
+    "tier": null
+  },
+  "light_blue_stained_clay_colored": {
+    "name": {
+      "hu": "light_blue_stained_clay_colored",
+      "en": "light_blue_stained_clay_colored"
+    },
+    "img": "img/items/light_blue_stained_clay_colored.png",
+    "tier": null
+  },
+  "light_blue_wool": {
+    "name": {
+      "hu": "light_blue_wool",
+      "en": "light_blue_wool"
+    },
+    "img": "img/items/light_blue_wool.png",
+    "tier": null
+  },
+  "light_gray_bed": {
+    "name": {
+      "hu": "light_gray_bed",
+      "en": "light_gray_bed"
+    },
+    "img": "img/items/light_gray_bed.png",
+    "tier": null
+  },
+  "light_gray_carpet": {
+    "name": {
+      "hu": "light_gray_carpet",
+      "en": "light_gray_carpet"
+    },
+    "img": "img/items/light_gray_carpet.png",
+    "tier": null
+  },
+  "light_gray_dye": {
+    "name": {
+      "hu": "light_gray_dye",
+      "en": "light_gray_dye"
+    },
+    "img": "img/items/light_gray_dye.png",
+    "tier": null
+  },
+  "light_gray_stained_clay_colored": {
+    "name": {
+      "hu": "light_gray_stained_clay_colored",
+      "en": "light_gray_stained_clay_colored"
+    },
+    "img": "img/items/light_gray_stained_clay_colored.png",
+    "tier": null
+  },
+  "light_gray_wool": {
+    "name": {
+      "hu": "light_gray_wool",
+      "en": "light_gray_wool"
+    },
+    "img": "img/items/light_gray_wool.png",
+    "tier": null
+  },
+  "lily_pad": {
+    "name": {
+      "hu": "lily_pad",
+      "en": "lily_pad"
+    },
+    "img": "img/items/lily_pad.png",
+    "tier": null
+  },
+  "lime_bed": {
+    "name": {
+      "hu": "lime_bed",
+      "en": "lime_bed"
+    },
+    "img": "img/items/lime_bed.png",
+    "tier": null
+  },
+  "lime_carpet": {
+    "name": {
+      "hu": "lime_carpet",
+      "en": "lime_carpet"
+    },
+    "img": "img/items/lime_carpet.png",
+    "tier": null
+  },
+  "lime_dye": {
+    "name": {
+      "hu": "lime_dye",
+      "en": "lime_dye"
+    },
+    "img": "img/items/lime_dye.png",
+    "tier": null
+  },
+  "lime_stained_clay_colored": {
+    "name": {
+      "hu": "lime_stained_clay_colored",
+      "en": "lime_stained_clay_colored"
+    },
+    "img": "img/items/lime_stained_clay_colored.png",
+    "tier": null
+  },
+  "lime_wool": {
+    "name": {
+      "hu": "lime_wool",
+      "en": "lime_wool"
+    },
+    "img": "img/items/lime_wool.png",
+    "tier": null
+  },
+  "log_portal_stone": {
+    "name": {
+      "hu": "log_portal_stone",
+      "en": "log_portal_stone"
+    },
+    "img": "img/items/log_portal_stone.png",
+    "tier": null
+  },
+  "lotus_seed_soup": {
+    "name": {
+      "hu": "lotus_seed_soup",
+      "en": "lotus_seed_soup"
+    },
+    "img": "img/items/lotus_seed_soup.png",
+    "tier": null
+  },
+  "magenta_bed": {
+    "name": {
+      "hu": "magenta_bed",
+      "en": "magenta_bed"
+    },
+    "img": "img/items/magenta_bed.png",
+    "tier": null
+  },
+  "magenta_carpet": {
+    "name": {
+      "hu": "magenta_carpet",
+      "en": "magenta_carpet"
+    },
+    "img": "img/items/magenta_carpet.png",
+    "tier": null
+  },
+  "magenta_dye": {
+    "name": {
+      "hu": "magenta_dye",
+      "en": "magenta_dye"
+    },
+    "img": "img/items/magenta_dye.png",
+    "tier": null
+  },
+  "magenta_stained_clay_colored": {
+    "name": {
+      "hu": "magenta_stained_clay_colored",
+      "en": "magenta_stained_clay_colored"
+    },
+    "img": "img/items/magenta_stained_clay_colored.png",
+    "tier": null
+  },
+  "magenta_wool": {
+    "name": {
+      "hu": "magenta_wool",
+      "en": "magenta_wool"
+    },
+    "img": "img/items/magenta_wool.png",
+    "tier": null
+  },
+  "magma_block": {
+    "name": {
+      "hu": "magma_block",
+      "en": "magma_block"
+    },
+    "img": "img/items/magma_block.png",
+    "tier": null
+  },
+  "magma_cream": {
+    "name": {
+      "hu": "magma_cream",
+      "en": "magma_cream"
+    },
+    "img": "img/items/magma_cream.png",
+    "tier": null
+  },
+  "map": {
+    "name": {
+      "hu": "map",
+      "en": "map"
+    },
+    "img": "img/items/map.png",
+    "tier": null
+  },
+  "mashed_potato": {
+    "name": {
+      "hu": "mashed_potato",
+      "en": "mashed_potato"
+    },
+    "img": "img/items/mashed_potato.png",
+    "tier": null
+  },
+  "melon_seeds": {
+    "name": {
+      "hu": "melon_seeds",
+      "en": "melon_seeds"
+    },
+    "img": "img/items/melon_seeds.png",
+    "tier": null
+  },
+  "melon_slice": {
+    "name": {
+      "hu": "melon_slice",
+      "en": "melon_slice"
+    },
+    "img": "img/items/melon_slice.png",
+    "tier": null
+  },
+  "mercury_ingot": {
+    "name": {
+      "hu": "mercury_ingot",
+      "en": "mercury_ingot"
+    },
+    "img": "img/items/mercury_ingot.png",
+    "tier": null
+  },
+  "mercury_nugget": {
+    "name": {
+      "hu": "mercury_nugget",
+      "en": "mercury_nugget"
+    },
+    "img": "img/items/mercury_nugget.png",
+    "tier": null
+  },
+  "mercury_ore": {
+    "name": {
+      "hu": "mercury_ore",
+      "en": "mercury_ore"
+    },
+    "img": "img/items/mercury_ore.png",
+    "tier": null
+  },
+  "minecart": {
+    "name": {
+      "hu": "minecart",
+      "en": "minecart"
+    },
+    "img": "img/items/minecart.png",
+    "tier": null
+  },
+  "minecart_with_chest": {
+    "name": {
+      "hu": "minecart_with_chest",
+      "en": "minecart_with_chest"
+    },
+    "img": "img/items/minecart_with_chest.png",
+    "tier": null
+  },
+  "minecart_with_furnace": {
+    "name": {
+      "hu": "minecart_with_furnace",
+      "en": "minecart_with_furnace"
+    },
+    "img": "img/items/minecart_with_furnace.png",
+    "tier": null
+  },
+  "minecart_with_hopper": {
+    "name": {
+      "hu": "minecart_with_hopper",
+      "en": "minecart_with_hopper"
+    },
+    "img": "img/items/minecart_with_hopper.png",
+    "tier": null
+  },
+  "minecart_with_tnt": {
+    "name": {
+      "hu": "minecart_with_tnt",
+      "en": "minecart_with_tnt"
+    },
+    "img": "img/items/minecart_with_tnt.png",
+    "tier": null
+  },
+  "miner_s_helmet": {
+    "name": {
+      "hu": "miner_s_helmet",
+      "en": "miner_s_helmet"
+    },
+    "img": "img/items/miner_s_helmet.png",
+    "tier": null
+  },
+  "miner_s_helmet_knowledge_book": {
+    "name": {
+      "hu": "miner_s_helmet_knowledge_book",
+      "en": "miner_s_helmet_knowledge_book"
+    },
+    "img": "img/items/miner_s_helmet_knowledge_book.png",
+    "tier": null
+  },
+  "mint_leaf": {
+    "name": {
+      "hu": "mint_leaf",
+      "en": "mint_leaf"
+    },
+    "img": "img/items/mint_leaf.png",
+    "tier": null
+  },
+  "mint_salad": {
+    "name": {
+      "hu": "mint_salad",
+      "en": "mint_salad"
+    },
+    "img": "img/items/mint_salad.png",
+    "tier": null
+  },
+  "mithril_anvil": {
+    "name": {
+      "hu": "mithril_anvil",
+      "en": "mithril_anvil"
+    },
+    "img": "img/items/mithril_anvil.png",
+    "tier": null
+  },
+  "mithril_block": {
+    "name": {
+      "hu": "mithril_block",
+      "en": "mithril_block"
+    },
+    "img": "img/blocks/mithril_block.png",
+    "tier": null
+  },
+  "mithril_bow": {
+    "name": {
+      "hu": "mithril_bow",
+      "en": "mithril_bow"
+    },
+    "img": "img/items/mithril_bow.png",
+    "tier": null
+  },
+  "mithril_bucket": {
+    "name": {
+      "hu": "mithril_bucket",
+      "en": "mithril_bucket"
+    },
+    "img": "img/items/mithril_bucket.png",
+    "tier": null
+  },
+  "mithril_bucket_filled_with_milk": {
+    "name": {
+      "hu": "mithril_bucket_filled_with_milk",
+      "en": "mithril_bucket_filled_with_milk"
+    },
+    "img": "img/items/mithril_bucket_filled_with_milk.png",
+    "tier": null
+  },
+  "mithril_bucket_filled_with_stone": {
+    "name": {
+      "hu": "mithril_bucket_filled_with_stone",
+      "en": "mithril_bucket_filled_with_stone"
+    },
+    "img": "img/items/mithril_bucket_filled_with_stone.png",
+    "tier": null
+  },
+  "mithril_bucket_filled_with_water": {
+    "name": {
+      "hu": "mithril_bucket_filled_with_water",
+      "en": "mithril_bucket_filled_with_water"
+    },
+    "img": "img/items/mithril_bucket_filled_with_water.png",
+    "tier": null
+  },
+  "mithril_chain_boots": {
+    "name": {
+      "hu": "mithril_chain_boots",
+      "en": "mithril_chain_boots"
+    },
+    "img": "img/armor/mithril_chainmail_boots.png",
+    "tier": null
+  },
+  "mithril_chain_chestplate": {
+    "name": {
+      "hu": "mithril_chain_chestplate",
+      "en": "mithril_chain_chestplate"
+    },
+    "img": "img/armor/mithril_chainmail_chestplate.png",
+    "tier": null
+  },
+  "mithril_chain_helmet": {
+    "name": {
+      "hu": "mithril_chain_helmet",
+      "en": "mithril_chain_helmet"
+    },
+    "img": "img/armor/mithril_chainmail_helmet.png",
+    "tier": null
+  },
+  "mithril_chain_leggings": {
+    "name": {
+      "hu": "mithril_chain_leggings",
+      "en": "mithril_chain_leggings"
+    },
+    "img": "img/armor/mithril_chainmail_leggings.png",
+    "tier": null
+  },
+  "mithril_coin": {
+    "name": {
+      "hu": "mithril_coin",
+      "en": "mithril_coin"
+    },
+    "img": "img/items/mithril_coin.png",
+    "tier": null
+  },
+  "mithril_door": {
+    "name": {
+      "hu": "mithril_door",
+      "en": "mithril_door"
+    },
+    "img": "img/items/mithril_door.png",
+    "tier": null
+  },
+  "mithril_fence": {
+    "name": {
+      "hu": "mithril_fence",
+      "en": "mithril_fence"
+    },
+    "img": "img/items/mithril_fence.png",
+    "tier": null
+  },
+  "mithril_flint_and_steel": {
+    "name": {
+      "hu": "mithril_flint_and_steel",
+      "en": "mithril_flint_and_steel"
+    },
+    "img": "img/items/mithril_flint_and_steel.png",
+    "tier": null
+  },
+  "mithril_fluid_tank": {
+    "name": {
+      "hu": "mithril_fluid_tank",
+      "en": "mithril_fluid_tank"
+    },
+    "img": "img/items/mithril_fluid_tank.png",
+    "tier": null
+  },
+  "mithril_hand_axe": {
+    "name": {
+      "hu": "mithril_hand_axe",
+      "en": "mithril_hand_axe"
+    },
+    "img": "img/items/mithril_hand_axe.png",
+    "tier": null
+  },
+  "mithril_ore": {
+    "name": {
+      "hu": "mithril_ore",
+      "en": "mithril_ore"
+    },
+    "img": "img/blocks/mithril_ore.png",
+    "tier": null
+  },
+  "mithril_shield": {
+    "name": {
+      "hu": "mithril_shield",
+      "en": "mithril_shield"
+    },
+    "img": "img/items/mithril_shield.png",
+    "tier": null
+  },
+  "mithril_short_sword": {
+    "name": {
+      "hu": "mithril_short_sword",
+      "en": "mithril_short_sword"
+    },
+    "img": "img/items/mithril_sword.png",
+    "tier": null
+  },
+  "mithril_shovel": {
+    "name": {
+      "hu": "mithril_shovel",
+      "en": "mithril_shovel"
+    },
+    "img": "img/items/mithril_shovel.png",
+    "tier": null
+  },
+  "mossy_cobblestone": {
+    "name": {
+      "hu": "mossy_cobblestone",
+      "en": "mossy_cobblestone"
+    },
+    "img": "img/items/mossy_cobblestone.png",
+    "tier": null
+  },
+  "mossy_cobblestone_portal_stone": {
+    "name": {
+      "hu": "mossy_cobblestone_portal_stone",
+      "en": "mossy_cobblestone_portal_stone"
+    },
+    "img": "img/items/mossy_cobblestone_portal_stone.png",
+    "tier": null
+  },
+  "mossy_cobblestone_wall": {
+    "name": {
+      "hu": "mossy_cobblestone_wall",
+      "en": "mossy_cobblestone_wall"
+    },
+    "img": "img/items/mossy_cobblestone_wall.png",
+    "tier": null
+  },
+  "mushroom_brown": {
+    "name": {
+      "hu": "mushroom_brown",
+      "en": "mushroom_brown"
+    },
+    "img": "img/items/mushroom_brown.png",
+    "tier": null
+  },
+  "mushroom_red": {
+    "name": {
+      "hu": "mushroom_red",
+      "en": "mushroom_red"
+    },
+    "img": "img/items/mushroom_red.png",
+    "tier": null
+  },
+  "mushroom_stew": {
+    "name": {
+      "hu": "mushroom_stew",
+      "en": "mushroom_stew"
+    },
+    "img": "img/items/mushroom_stew.png",
+    "tier": null
+  },
+  "nether_brick": {
+    "name": {
+      "hu": "nether_brick",
+      "en": "nether_brick"
+    },
+    "img": "img/items/nether_brick.png",
+    "tier": null
+  },
+  "nether_brick_fence": {
+    "name": {
+      "hu": "nether_brick_fence",
+      "en": "nether_brick_fence"
+    },
+    "img": "img/items/nether_brick_fence.png",
+    "tier": null
+  },
+  "nether_brick_slab_single": {
+    "name": {
+      "hu": "nether_brick_slab_single",
+      "en": "nether_brick_slab_single"
+    },
+    "img": "img/items/nether_brick_slab_single.png",
+    "tier": null
+  },
+  "nether_brick_stairs": {
+    "name": {
+      "hu": "nether_brick_stairs",
+      "en": "nether_brick_stairs"
+    },
+    "img": "img/items/nether_brick_stairs.png",
+    "tier": null
+  },
+  "nether_furnace_core": {
+    "name": {
+      "hu": "nether_furnace_core",
+      "en": "nether_furnace_core"
+    },
+    "img": "img/items/nether_furnace_core.png",
+    "tier": null
+  },
+  "nether_quartz": {
+    "name": {
+      "hu": "nether_quartz",
+      "en": "nether_quartz"
+    },
+    "img": "img/items/nether_quartz.png",
+    "tier": null
+  },
+  "nether_wart": {
+    "name": {
+      "hu": "nether_wart",
+      "en": "nether_wart"
+    },
+    "img": "img/items/nether_wart.png",
+    "tier": null
+  },
+  "netherrack_furnace_idle": {
+    "name": {
+      "hu": "netherrack_furnace_idle",
+      "en": "netherrack_furnace_idle"
+    },
+    "img": "img/items/netherrack_furnace_idle.png",
+    "tier": null
+  },
+  "note_block": {
+    "name": {
+      "hu": "note_block",
+      "en": "note_block"
+    },
+    "img": "img/items/note_block.png",
+    "tier": null
+  },
+  "oak_leaves": {
+    "name": {
+      "hu": "oak_leaves",
+      "en": "oak_leaves"
+    },
+    "img": "img/items/oak_leaves.png",
+    "tier": null
+  },
+  "oak_sieve": {
+    "name": {
+      "hu": "oak_sieve",
+      "en": "oak_sieve"
+    },
+    "img": "img/items/oak_sieve.png",
+    "tier": null
+  },
+  "oak_wood_crate": {
+    "name": {
+      "hu": "oak_wood_crate",
+      "en": "oak_wood_crate"
+    },
+    "img": "img/items/oak_wood_crate.png",
+    "tier": null
+  },
+  "oak_wood_slab_single": {
+    "name": {
+      "hu": "oak_wood_slab_single",
+      "en": "oak_wood_slab_single"
+    },
+    "img": "img/items/oak_wood_slab_single.png",
+    "tier": null
+  },
+  "oak_wood_stairs": {
+    "name": {
+      "hu": "oak_wood_stairs",
+      "en": "oak_wood_stairs"
+    },
+    "img": "img/items/oak_wood_stairs.png",
+    "tier": null
+  },
+  "oatmeal_porridge": {
+    "name": {
+      "hu": "oatmeal_porridge",
+      "en": "oatmeal_porridge"
+    },
+    "img": "img/items/oatmeal_porridge.png",
+    "tier": null
+  },
+  "obsidian_axe": {
+    "name": {
+      "hu": "obsidian_axe",
+      "en": "obsidian_axe"
+    },
+    "img": "img/items/obsidian_axe.png",
+    "tier": null
+  },
+  "obsidian_furnace_core": {
+    "name": {
+      "hu": "obsidian_furnace_core",
+      "en": "obsidian_furnace_core"
+    },
+    "img": "img/items/obsidian_furnace_core.png",
+    "tier": null
+  },
+  "obsidian_furnace_idle": {
+    "name": {
+      "hu": "obsidian_furnace_idle",
+      "en": "obsidian_furnace_idle"
+    },
+    "img": "img/items/obsidian_furnace_idle.png",
+    "tier": null
+  },
+  "obsidian_hatchet": {
+    "name": {
+      "hu": "obsidian_hatchet",
+      "en": "obsidian_hatchet"
+    },
+    "img": "img/items/obsidian_hatchet.png",
+    "tier": null
+  },
+  "obsidian_ingot_mold_cooling": {
+    "name": {
+      "hu": "obsidian_ingot_mold_cooling",
+      "en": "obsidian_ingot_mold_cooling"
+    },
+    "img": "img/items/obsidian_ingot_mold_cooling.png",
+    "tier": null
+  },
+  "obsidian_shovel": {
+    "name": {
+      "hu": "obsidian_shovel",
+      "en": "obsidian_shovel"
+    },
+    "img": "img/items/obsidian_shovel.png",
+    "tier": null
+  },
+  "obsidian_slab_single": {
+    "name": {
+      "hu": "obsidian_slab_single",
+      "en": "obsidian_slab_single"
+    },
+    "img": "img/items/obsidian_slab_single.png",
+    "tier": null
+  },
+  "obsidian_stairs": {
+    "name": {
+      "hu": "obsidian_stairs",
+      "en": "obsidian_stairs"
+    },
+    "img": "img/items/obsidian_stairs.png",
+    "tier": null
+  },
+  "obsidian_tool_bench": {
+    "name": {
+      "hu": "obsidian_tool_bench",
+      "en": "obsidian_tool_bench"
+    },
+    "img": "img/items/obsidian_tool_bench.png",
+    "tier": null
+  },
+  "onion": {
+    "name": {
+      "hu": "onion",
+      "en": "onion"
+    },
+    "img": "img/food/onion.png",
+    "tier": null
+  },
+  "onion_allium": {
+    "name": {
+      "hu": "onion_allium",
+      "en": "onion_allium"
+    },
+    "img": "img/items/onion_allium.png",
+    "tier": null
+  },
+  "orange": {
+    "name": {
+      "hu": "orange",
+      "en": "orange"
+    },
+    "img": "img/food/orange.png",
+    "tier": null
+  },
+  "orange_bed": {
+    "name": {
+      "hu": "orange_bed",
+      "en": "orange_bed"
+    },
+    "img": "img/items/orange_bed.png",
+    "tier": null
+  },
+  "orange_carpet": {
+    "name": {
+      "hu": "orange_carpet",
+      "en": "orange_carpet"
+    },
+    "img": "img/items/orange_carpet.png",
+    "tier": null
+  },
+  "orange_dye": {
+    "name": {
+      "hu": "orange_dye",
+      "en": "orange_dye"
+    },
+    "img": "img/items/orange_dye.png",
+    "tier": null
+  },
+  "orange_stained_clay_colored": {
+    "name": {
+      "hu": "orange_stained_clay_colored",
+      "en": "orange_stained_clay_colored"
+    },
+    "img": "img/items/orange_stained_clay_colored.png",
+    "tier": null
+  },
+  "orange_wool": {
+    "name": {
+      "hu": "orange_wool",
+      "en": "orange_wool"
+    },
+    "img": "img/items/orange_wool.png",
+    "tier": null
+  },
+  "orchid": {
+    "name": {
+      "hu": "orchid",
+      "en": "orchid"
+    },
+    "img": "img/items/orchid.png",
+    "tier": null
+  },
+  "painting": {
+    "name": {
+      "hu": "painting",
+      "en": "painting"
+    },
+    "img": "img/items/painting.png",
+    "tier": null
+  },
+  "pink_bed": {
+    "name": {
+      "hu": "pink_bed",
+      "en": "pink_bed"
+    },
+    "img": "img/items/pink_bed.png",
+    "tier": null
+  },
+  "pink_carpet": {
+    "name": {
+      "hu": "pink_carpet",
+      "en": "pink_carpet"
+    },
+    "img": "img/items/pink_carpet.png",
+    "tier": null
+  },
+  "pink_dye": {
+    "name": {
+      "hu": "pink_dye",
+      "en": "pink_dye"
+    },
+    "img": "img/items/pink_dye.png",
+    "tier": null
+  },
+  "pink_stained_clay_colored": {
+    "name": {
+      "hu": "pink_stained_clay_colored",
+      "en": "pink_stained_clay_colored"
+    },
+    "img": "img/items/pink_stained_clay_colored.png",
+    "tier": null
+  },
+  "pink_wool": {
+    "name": {
+      "hu": "pink_wool",
+      "en": "pink_wool"
+    },
+    "img": "img/items/pink_wool.png",
+    "tier": null
+  },
+  "piston": {
+    "name": {
+      "hu": "piston",
+      "en": "piston"
+    },
+    "img": "img/items/piston.png",
+    "tier": null
+  },
+  "pitaya_leaves": {
+    "name": {
+      "hu": "pitaya_leaves",
+      "en": "pitaya_leaves"
+    },
+    "img": "img/items/pitaya_leaves.png",
+    "tier": null
+  },
+  "polished_andesite": {
+    "name": {
+      "hu": "polished_andesite",
+      "en": "polished_andesite"
+    },
+    "img": "img/items/polished_andesite.png",
+    "tier": null
+  },
+  "polished_diorite": {
+    "name": {
+      "hu": "polished_diorite",
+      "en": "polished_diorite"
+    },
+    "img": "img/items/polished_diorite.png",
+    "tier": null
+  },
+  "polished_granite": {
+    "name": {
+      "hu": "polished_granite",
+      "en": "polished_granite"
+    },
+    "img": "img/items/polished_granite.png",
+    "tier": null
+  },
+  "potato": {
+    "name": {
+      "hu": "potato",
+      "en": "potato"
+    },
+    "img": "img/items/potato.png",
+    "tier": null
+  },
+  "potion_of_g_2_moisture": {
+    "name": {
+      "hu": "potion_of_g_2_moisture",
+      "en": "potion_of_g_2_moisture"
+    },
+    "img": "img/items/potion_of_g_2_moisture.png",
+    "tier": null
+  },
+  "powered_rail": {
+    "name": {
+      "hu": "powered_rail",
+      "en": "powered_rail"
+    },
+    "img": "img/items/powered_rail.png",
+    "tier": null
+  },
+  "pressure_plate_stone": {
+    "name": {
+      "hu": "pressure_plate_stone",
+      "en": "pressure_plate_stone"
+    },
+    "img": "img/items/pressure_plate_stone.png",
+    "tier": null
+  },
+  "pressure_plate_wood": {
+    "name": {
+      "hu": "pressure_plate_wood",
+      "en": "pressure_plate_wood"
+    },
+    "img": "img/items/pressure_plate_wood.png",
+    "tier": null
+  },
+  "pumpkin": {
+    "name": {
+      "hu": "pumpkin",
+      "en": "pumpkin"
+    },
+    "img": "img/items/pumpkin.png",
+    "tier": null
+  },
+  "pumpkin_pie": {
+    "name": {
+      "hu": "pumpkin_pie",
+      "en": "pumpkin_pie"
+    },
+    "img": "img/items/pumpkin_pie.png",
+    "tier": null
+  },
+  "pumpkin_seeds": {
+    "name": {
+      "hu": "pumpkin_seeds",
+      "en": "pumpkin_seeds"
+    },
+    "img": "img/items/pumpkin_seeds.png",
+    "tier": null
+  },
+  "pumpkin_soup": {
+    "name": {
+      "hu": "pumpkin_soup",
+      "en": "pumpkin_soup"
+    },
+    "img": "img/items/pumpkin_soup.png",
+    "tier": null
+  },
+  "purple_bed": {
+    "name": {
+      "hu": "purple_bed",
+      "en": "purple_bed"
+    },
+    "img": "img/items/purple_bed.png",
+    "tier": null
+  },
+  "purple_carpet": {
+    "name": {
+      "hu": "purple_carpet",
+      "en": "purple_carpet"
+    },
+    "img": "img/items/purple_carpet.png",
+    "tier": null
+  },
+  "purple_dye": {
+    "name": {
+      "hu": "purple_dye",
+      "en": "purple_dye"
+    },
+    "img": "img/items/purple_dye.png",
+    "tier": null
+  },
+  "purple_stained_clay_colored": {
+    "name": {
+      "hu": "purple_stained_clay_colored",
+      "en": "purple_stained_clay_colored"
+    },
+    "img": "img/items/purple_stained_clay_colored.png",
+    "tier": null
+  },
+  "purple_wool": {
+    "name": {
+      "hu": "purple_wool",
+      "en": "purple_wool"
+    },
+    "img": "img/items/purple_wool.png",
+    "tier": null
+  },
+  "quartz": {
+    "name": {
+      "hu": "quartz",
+      "en": "quartz"
+    },
+    "img": "img/shards/quartz.png",
+    "tier": null
+  },
+  "quartz_block": {
+    "name": {
+      "hu": "quartz_block",
+      "en": "quartz_block"
+    },
+    "img": "img/items/quartz_block.png",
+    "tier": null
+  },
+  "quartz_pillar": {
+    "name": {
+      "hu": "quartz_pillar",
+      "en": "quartz_pillar"
+    },
+    "img": "img/items/quartz_pillar.png",
+    "tier": null
+  },
+  "quartz_shard": {
+    "name": {
+      "hu": "quartz_shard",
+      "en": "quartz_shard"
+    },
+    "img": "img/items/quartz_shard.png",
+    "tier": null
+  },
+  "quartz_slab_single": {
+    "name": {
+      "hu": "quartz_slab_single",
+      "en": "quartz_slab_single"
+    },
+    "img": "img/items/quartz_slab_single.png",
+    "tier": null
+  },
+  "quartz_stairs": {
+    "name": {
+      "hu": "quartz_stairs",
+      "en": "quartz_stairs"
+    },
+    "img": "img/items/quartz_stairs.png",
+    "tier": null
+  },
+  "quiver": {
+    "name": {
+      "hu": "quiver",
+      "en": "quiver"
+    },
+    "img": "img/items/quiver.png",
+    "tier": null
+  },
+  "rail": {
+    "name": {
+      "hu": "rail",
+      "en": "rail"
+    },
+    "img": "img/items/rail.png",
+    "tier": null
+  },
+  "rain_hat": {
+    "name": {
+      "hu": "rain_hat",
+      "en": "rain_hat"
+    },
+    "img": "img/items/rain_hat.png",
+    "tier": null
+  },
+  "raw_fish": {
+    "name": {
+      "hu": "raw_fish",
+      "en": "raw_fish"
+    },
+    "img": "img/items/raw_fish.png",
+    "tier": null
+  },
+  "raw_fish_large": {
+    "name": {
+      "hu": "raw_fish_large",
+      "en": "raw_fish_large"
+    },
+    "img": "img/items/raw_fish_large.png",
+    "tier": null
+  },
+  "recall_scroll": {
+    "name": {
+      "hu": "recall_scroll",
+      "en": "recall_scroll"
+    },
+    "img": "img/items/recall_scroll.png",
+    "tier": null
+  },
+  "red_bed": {
+    "name": {
+      "hu": "red_bed",
+      "en": "red_bed"
+    },
+    "img": "img/items/red_bed.png",
+    "tier": null
+  },
+  "red_carpet": {
+    "name": {
+      "hu": "red_carpet",
+      "en": "red_carpet"
+    },
+    "img": "img/items/red_carpet.png",
+    "tier": null
+  },
+  "red_slime_ball": {
+    "name": {
+      "hu": "red_slime_ball",
+      "en": "red_slime_ball"
+    },
+    "img": "img/items/red_slime_ball.png",
+    "tier": null
+  },
+  "red_stained_clay_colored": {
+    "name": {
+      "hu": "red_stained_clay_colored",
+      "en": "red_stained_clay_colored"
+    },
+    "img": "img/items/red_stained_clay_colored.png",
+    "tier": null
+  },
+  "red_wool": {
+    "name": {
+      "hu": "red_wool",
+      "en": "red_wool"
+    },
+    "img": "img/items/red_wool.png",
+    "tier": null
+  },
+  "redstone_comparator": {
+    "name": {
+      "hu": "redstone_comparator",
+      "en": "redstone_comparator"
+    },
+    "img": "img/items/redstone_comparator.png",
+    "tier": null
+  },
+  "redstone_lamp_unlit": {
+    "name": {
+      "hu": "redstone_lamp_unlit",
+      "en": "redstone_lamp_unlit"
+    },
+    "img": "img/items/redstone_lamp_unlit.png",
+    "tier": null
+  },
+  "redstone_repeater": {
+    "name": {
+      "hu": "redstone_repeater",
+      "en": "redstone_repeater"
+    },
+    "img": "img/items/redstone_repeater.png",
+    "tier": null
+  },
+  "redstone_torch_lit": {
+    "name": {
+      "hu": "redstone_torch_lit",
+      "en": "redstone_torch_lit"
+    },
+    "img": "img/items/redstone_torch_lit.png",
+    "tier": null
+  },
+  "reinforced_eye_of_ender": {
+    "name": {
+      "hu": "reinforced_eye_of_ender",
+      "en": "reinforced_eye_of_ender"
+    },
+    "img": "img/items/reinforced_eye_of_ender.png",
+    "tier": null
+  },
+  "reinforced_eye_of_ender_knowledge_book": {
+    "name": {
+      "hu": "reinforced_eye_of_ender_knowledge_book",
+      "en": "reinforced_eye_of_ender_knowledge_book"
+    },
+    "img": "img/items/reinforced_eye_of_ender_knowledge_book.png",
+    "tier": null
+  },
+  "rose": {
+    "name": {
+      "hu": "rose",
+      "en": "rose"
+    },
+    "img": "img/items/rose.png",
+    "tier": null
+  },
+  "rose_red": {
+    "name": {
+      "hu": "rose_red",
+      "en": "rose_red"
+    },
+    "img": "img/items/rose_red.png",
+    "tier": null
+  },
+  "rotten_flesh": {
+    "name": {
+      "hu": "rotten_flesh",
+      "en": "rotten_flesh"
+    },
+    "img": "img/items/rotten_flesh.png",
+    "tier": null
+  },
+  "runestone_nul_adamantium": {
+    "name": {
+      "hu": "runestone_nul_adamantium",
+      "en": "runestone_nul_adamantium"
+    },
+    "img": "img/items/runestone_nul_adamantium.png",
+    "tier": null
+  },
+  "runestone_nul_mithril": {
+    "name": {
+      "hu": "runestone_nul_mithril",
+      "en": "runestone_nul_mithril"
+    },
+    "img": "img/items/runestone_nul_mithril.png",
+    "tier": null
+  },
+  "rusted_iron_chain": {
+    "name": {
+      "hu": "rusted_iron_chain",
+      "en": "rusted_iron_chain"
+    },
+    "img": "img/items/rusted_iron_chain.png",
+    "tier": null
+  },
+  "rusted_iron_chain_boots": {
+    "name": {
+      "hu": "rusted_iron_chain_boots",
+      "en": "rusted_iron_chain_boots"
+    },
+    "img": "img/armor/rusted_iron_chainmail_boots.png",
+    "tier": null
+  },
+  "rusted_iron_chain_chestplate": {
+    "name": {
+      "hu": "rusted_iron_chain_chestplate",
+      "en": "rusted_iron_chain_chestplate"
+    },
+    "img": "img/armor/rusted_iron_chainmail_chestplate.png",
+    "tier": null
+  },
+  "rusted_iron_chain_helmet": {
+    "name": {
+      "hu": "rusted_iron_chain_helmet",
+      "en": "rusted_iron_chain_helmet"
+    },
+    "img": "img/armor/rusted_iron_chainmail_helmet.png",
+    "tier": null
+  },
+  "rusted_iron_chain_leggings": {
+    "name": {
+      "hu": "rusted_iron_chain_leggings",
+      "en": "rusted_iron_chain_leggings"
+    },
+    "img": "img/armor/rusted_iron_chainmail_leggings.png",
+    "tier": null
+  },
+  "rusted_iron_short_sword": {
+    "name": {
+      "hu": "rusted_iron_short_sword",
+      "en": "rusted_iron_short_sword"
+    },
+    "img": "img/items/rusted_iron_sword.png",
+    "tier": null
+  },
+  "rusted_iron_war_hammer": {
+    "name": {
+      "hu": "rusted_iron_war_hammer",
+      "en": "rusted_iron_war_hammer"
+    },
+    "img": "img/items/rusted_iron_war_hammer.png",
+    "tier": null
+  },
+  "sacred_sandstone": {
+    "name": {
+      "hu": "sacred_sandstone",
+      "en": "sacred_sandstone"
+    },
+    "img": "img/items/sacred_sandstone.png",
+    "tier": null
+  },
+  "saddle": {
+    "name": {
+      "hu": "saddle",
+      "en": "saddle"
+    },
+    "img": "img/items/saddle.png",
+    "tier": null
+  },
+  "salad": {
+    "name": {
+      "hu": "salad",
+      "en": "salad"
+    },
+    "img": "img/items/salad.png",
+    "tier": null
+  },
+  "sand": {
+    "name": {
+      "hu": "sand",
+      "en": "sand"
+    },
+    "img": "img/items/sand.png",
+    "tier": null
+  },
+  "sandstone": {
+    "name": {
+      "hu": "sandstone",
+      "en": "sandstone"
+    },
+    "img": "img/items/sandstone.png",
+    "tier": null
+  },
+  "sandstone_furnace_idle": {
+    "name": {
+      "hu": "sandstone_furnace_idle",
+      "en": "sandstone_furnace_idle"
+    },
+    "img": "img/items/sandstone_furnace_idle.png",
+    "tier": null
+  },
+  "sandstone_portal_stone": {
+    "name": {
+      "hu": "sandstone_portal_stone",
+      "en": "sandstone_portal_stone"
+    },
+    "img": "img/items/sandstone_portal_stone.png",
+    "tier": null
+  },
+  "sandstone_slab_single": {
+    "name": {
+      "hu": "sandstone_slab_single",
+      "en": "sandstone_slab_single"
+    },
+    "img": "img/items/sandstone_slab_single.png",
+    "tier": null
+  },
+  "sandstone_stairs": {
+    "name": {
+      "hu": "sandstone_stairs",
+      "en": "sandstone_stairs"
+    },
+    "img": "img/items/sandstone_stairs.png",
+    "tier": null
+  },
+  "sharp_flint_spear": {
+    "name": {
+      "hu": "sharp_flint_spear",
+      "en": "sharp_flint_spear"
+    },
+    "img": "img/items/sharp_flint_spear.png",
+    "tier": null
+  },
+  "sign": {
+    "name": {
+      "hu": "sign",
+      "en": "sign"
+    },
+    "img": "img/items/sign.png",
+    "tier": null
+  },
+  "silver_anvil": {
+    "name": {
+      "hu": "silver_anvil",
+      "en": "silver_anvil"
+    },
+    "img": "img/items/silver_anvil.png",
+    "tier": null
+  },
+  "silver_block": {
+    "name": {
+      "hu": "silver_block",
+      "en": "silver_block"
+    },
+    "img": "img/blocks/silver_block.png",
+    "tier": null
+  },
+  "silver_bucket": {
+    "name": {
+      "hu": "silver_bucket",
+      "en": "silver_bucket"
+    },
+    "img": "img/items/silver_bucket.png",
+    "tier": null
+  },
+  "silver_bucket_filled_with_milk": {
+    "name": {
+      "hu": "silver_bucket_filled_with_milk",
+      "en": "silver_bucket_filled_with_milk"
+    },
+    "img": "img/items/silver_bucket_filled_with_milk.png",
+    "tier": null
+  },
+  "silver_bucket_filled_with_stone": {
+    "name": {
+      "hu": "silver_bucket_filled_with_stone",
+      "en": "silver_bucket_filled_with_stone"
+    },
+    "img": "img/items/silver_bucket_filled_with_stone.png",
+    "tier": null
+  },
+  "silver_bucket_filled_with_water": {
+    "name": {
+      "hu": "silver_bucket_filled_with_water",
+      "en": "silver_bucket_filled_with_water"
+    },
+    "img": "img/items/silver_bucket_filled_with_water.png",
+    "tier": null
+  },
+  "silver_chain_boots": {
+    "name": {
+      "hu": "silver_chain_boots",
+      "en": "silver_chain_boots"
+    },
+    "img": "img/armor/silver_chainmail_boots.png",
+    "tier": null
+  },
+  "silver_chain_chestplate": {
+    "name": {
+      "hu": "silver_chain_chestplate",
+      "en": "silver_chain_chestplate"
+    },
+    "img": "img/armor/silver_chainmail_chestplate.png",
+    "tier": null
+  },
+  "silver_chain_helmet": {
+    "name": {
+      "hu": "silver_chain_helmet",
+      "en": "silver_chain_helmet"
+    },
+    "img": "img/armor/silver_chainmail_helmet.png",
+    "tier": null
+  },
+  "silver_chain_leggings": {
+    "name": {
+      "hu": "silver_chain_leggings",
+      "en": "silver_chain_leggings"
+    },
+    "img": "img/armor/silver_chainmail_leggings.png",
+    "tier": null
+  },
+  "silver_coin": {
+    "name": {
+      "hu": "silver_coin",
+      "en": "silver_coin"
+    },
+    "img": "img/items/silver_coin.png",
+    "tier": null
+  },
+  "silver_copper_war_hammer": {
+    "name": {
+      "hu": "silver_copper_war_hammer",
+      "en": "silver_copper_war_hammer"
+    },
+    "img": "img/items/silver_copper_war_hammer.png",
+    "tier": null
+  },
+  "silver_door": {
+    "name": {
+      "hu": "silver_door",
+      "en": "silver_door"
+    },
+    "img": "img/items/silver_door.png",
+    "tier": null
+  },
+  "silver_fence": {
+    "name": {
+      "hu": "silver_fence",
+      "en": "silver_fence"
+    },
+    "img": "img/items/silver_fence.png",
+    "tier": null
+  },
+  "silver_flint_and_steel": {
+    "name": {
+      "hu": "silver_flint_and_steel",
+      "en": "silver_flint_and_steel"
+    },
+    "img": "img/items/silver_flint_and_steel.png",
+    "tier": null
+  },
+  "silver_fluid_tank": {
+    "name": {
+      "hu": "silver_fluid_tank",
+      "en": "silver_fluid_tank"
+    },
+    "img": "img/items/silver_fluid_tank.png",
+    "tier": null
+  },
+  "silver_hand_axe": {
+    "name": {
+      "hu": "silver_hand_axe",
+      "en": "silver_hand_axe"
+    },
+    "img": "img/items/silver_hand_axe.png",
+    "tier": null
+  },
+  "silver_ore": {
+    "name": {
+      "hu": "silver_ore",
+      "en": "silver_ore"
+    },
+    "img": "img/blocks/silver_ore.png",
+    "tier": null
+  },
+  "silver_shield": {
+    "name": {
+      "hu": "silver_shield",
+      "en": "silver_shield"
+    },
+    "img": "img/items/silver_shield.png",
+    "tier": null
+  },
+  "silver_short_sword": {
+    "name": {
+      "hu": "silver_short_sword",
+      "en": "silver_short_sword"
+    },
+    "img": "img/items/silver_sword.png",
+    "tier": null
+  },
+  "silver_shovel": {
+    "name": {
+      "hu": "silver_shovel",
+      "en": "silver_shovel"
+    },
+    "img": "img/items/silver_shovel.png",
+    "tier": null
+  },
+  "simple_black_sleeping_bag": {
+    "name": {
+      "hu": "simple_black_sleeping_bag",
+      "en": "simple_black_sleeping_bag"
+    },
+    "img": "img/items/simple_black_sleeping_bag.png",
+    "tier": null
+  },
+  "simple_blue_sleeping_bag": {
+    "name": {
+      "hu": "simple_blue_sleeping_bag",
+      "en": "simple_blue_sleeping_bag"
+    },
+    "img": "img/items/simple_blue_sleeping_bag.png",
+    "tier": null
+  },
+  "simple_bone_club": {
+    "name": {
+      "hu": "simple_bone_club",
+      "en": "simple_bone_club"
+    },
+    "img": "img/items/simple_bone_club.png",
+    "tier": null
+  },
+  "simple_brown_sleeping_bag": {
+    "name": {
+      "hu": "simple_brown_sleeping_bag",
+      "en": "simple_brown_sleeping_bag"
+    },
+    "img": "img/items/simple_brown_sleeping_bag.png",
+    "tier": null
+  },
+  "simple_cyan_sleeping_bag": {
+    "name": {
+      "hu": "simple_cyan_sleeping_bag",
+      "en": "simple_cyan_sleeping_bag"
+    },
+    "img": "img/items/simple_cyan_sleeping_bag.png",
+    "tier": null
+  },
+  "simple_flint_knife": {
+    "name": {
+      "hu": "simple_flint_knife",
+      "en": "simple_flint_knife"
+    },
+    "img": "img/items/simple_flint_knife.png",
+    "tier": null
+  },
+  "simple_gray_sleeping_bag": {
+    "name": {
+      "hu": "simple_gray_sleeping_bag",
+      "en": "simple_gray_sleeping_bag"
+    },
+    "img": "img/items/simple_gray_sleeping_bag.png",
+    "tier": null
+  },
+  "simple_green_sleeping_bag": {
+    "name": {
+      "hu": "simple_green_sleeping_bag",
+      "en": "simple_green_sleeping_bag"
+    },
+    "img": "img/items/simple_green_sleeping_bag.png",
+    "tier": null
+  },
+  "simple_light_blue_sleeping_bag": {
+    "name": {
+      "hu": "simple_light_blue_sleeping_bag",
+      "en": "simple_light_blue_sleeping_bag"
+    },
+    "img": "img/items/simple_light_blue_sleeping_bag.png",
+    "tier": null
+  },
+  "simple_light_gray_sleeping_bag": {
+    "name": {
+      "hu": "simple_light_gray_sleeping_bag",
+      "en": "simple_light_gray_sleeping_bag"
+    },
+    "img": "img/items/simple_light_gray_sleeping_bag.png",
+    "tier": null
+  },
+  "simple_lime_sleeping_bag": {
+    "name": {
+      "hu": "simple_lime_sleeping_bag",
+      "en": "simple_lime_sleeping_bag"
+    },
+    "img": "img/items/simple_lime_sleeping_bag.png",
+    "tier": null
+  },
+  "simple_magenta_sleeping_bag": {
+    "name": {
+      "hu": "simple_magenta_sleeping_bag",
+      "en": "simple_magenta_sleeping_bag"
+    },
+    "img": "img/items/simple_magenta_sleeping_bag.png",
+    "tier": null
+  },
+  "simple_orange_sleeping_bag": {
+    "name": {
+      "hu": "simple_orange_sleeping_bag",
+      "en": "simple_orange_sleeping_bag"
+    },
+    "img": "img/items/simple_orange_sleeping_bag.png",
+    "tier": null
+  },
+  "simple_pink_sleeping_bag": {
+    "name": {
+      "hu": "simple_pink_sleeping_bag",
+      "en": "simple_pink_sleeping_bag"
+    },
+    "img": "img/items/simple_pink_sleeping_bag.png",
+    "tier": null
+  },
+  "simple_purple_sleeping_bag": {
+    "name": {
+      "hu": "simple_purple_sleeping_bag",
+      "en": "simple_purple_sleeping_bag"
+    },
+    "img": "img/items/simple_purple_sleeping_bag.png",
+    "tier": null
+  },
+  "simple_red_sleeping_bag": {
+    "name": {
+      "hu": "simple_red_sleeping_bag",
+      "en": "simple_red_sleeping_bag"
+    },
+    "img": "img/items/simple_red_sleeping_bag.png",
+    "tier": null
+  },
+  "simple_white_sleeping_bag": {
+    "name": {
+      "hu": "simple_white_sleeping_bag",
+      "en": "simple_white_sleeping_bag"
+    },
+    "img": "img/items/simple_white_sleeping_bag.png",
+    "tier": null
+  },
+  "simple_yellow_sleeping_bag": {
+    "name": {
+      "hu": "simple_yellow_sleeping_bag",
+      "en": "simple_yellow_sleeping_bag"
+    },
+    "img": "img/items/simple_yellow_sleeping_bag.png",
+    "tier": null
+  },
+  "skin_care_bottle": {
+    "name": {
+      "hu": "skin_care_bottle",
+      "en": "skin_care_bottle"
+    },
+    "img": "img/items/skin_care_bottle.png",
+    "tier": null
+  },
+  "slimeball_black": {
+    "name": {
+      "hu": "slimeball_black",
+      "en": "slimeball_black"
+    },
+    "img": "img/items/slimeball_black.png",
+    "tier": null
+  },
+  "slimeball_brown": {
+    "name": {
+      "hu": "slimeball_brown",
+      "en": "slimeball_brown"
+    },
+    "img": "img/items/slimeball_brown.png",
+    "tier": null
+  },
+  "slimeball_gray": {
+    "name": {
+      "hu": "slimeball_gray",
+      "en": "slimeball_gray"
+    },
+    "img": "img/items/slimeball_gray.png",
+    "tier": null
+  },
+  "slimeball_green": {
+    "name": {
+      "hu": "slimeball_green",
+      "en": "slimeball_green"
+    },
+    "img": "img/items/slimeball_green.png",
+    "tier": null
+  },
+  "small": {
+    "name": {
+      "hu": "small",
+      "en": "small"
+    },
+    "img": "img/items/small.png",
+    "tier": null
+  },
+  "small_wooden_club": {
+    "name": {
+      "hu": "small_wooden_club",
+      "en": "small_wooden_club"
+    },
+    "img": "img/items/small_wooden_club.png",
+    "tier": null
+  },
+  "smelting_furnace_idle": {
+    "name": {
+      "hu": "smelting_furnace_idle",
+      "en": "smelting_furnace_idle"
+    },
+    "img": "img/items/smelting_furnace_idle.png",
+    "tier": null
+  },
+  "smooth_sandstone": {
+    "name": {
+      "hu": "smooth_sandstone",
+      "en": "smooth_sandstone"
+    },
+    "img": "img/items/smooth_sandstone.png",
+    "tier": null
+  },
+  "snow_block": {
+    "name": {
+      "hu": "snow_block",
+      "en": "snow_block"
+    },
+    "img": "img/items/snow_block.png",
+    "tier": null
+  },
+  "snow_slab": {
+    "name": {
+      "hu": "snow_slab",
+      "en": "snow_slab"
+    },
+    "img": "img/items/snow_slab.png",
+    "tier": null
+  },
+  "snow_thin": {
+    "name": {
+      "hu": "snow_thin",
+      "en": "snow_thin"
+    },
+    "img": "img/items/snow_thin.png",
+    "tier": null
+  },
+  "snowball": {
+    "name": {
+      "hu": "snowball",
+      "en": "snowball"
+    },
+    "img": "img/items/snowball.png",
+    "tier": null
+  },
+  "soul_sand": {
+    "name": {
+      "hu": "soul_sand",
+      "en": "soul_sand"
+    },
+    "img": "img/items/soul_sand.png",
+    "tier": null
+  },
+  "spider_eye": {
+    "name": {
+      "hu": "spider_eye",
+      "en": "spider_eye"
+    },
+    "img": "img/items/spider_eye.png",
+    "tier": null
+  },
+  "spruce_door": {
+    "name": {
+      "hu": "spruce_door",
+      "en": "spruce_door"
+    },
+    "img": "img/items/spruce_door.png",
+    "tier": null
+  },
+  "spruce_fence": {
+    "name": {
+      "hu": "spruce_fence",
+      "en": "spruce_fence"
+    },
+    "img": "img/items/spruce_fence.png",
+    "tier": null
+  },
+  "spruce_fence_gate": {
+    "name": {
+      "hu": "spruce_fence_gate",
+      "en": "spruce_fence_gate"
+    },
+    "img": "img/items/spruce_fence_gate.png",
+    "tier": null
+  },
+  "spruce_leaves": {
+    "name": {
+      "hu": "spruce_leaves",
+      "en": "spruce_leaves"
+    },
+    "img": "img/items/spruce_leaves.png",
+    "tier": null
+  },
+  "spruce_sieve": {
+    "name": {
+      "hu": "spruce_sieve",
+      "en": "spruce_sieve"
+    },
+    "img": "img/items/spruce_sieve.png",
+    "tier": null
+  },
+  "spruce_wood_crate": {
+    "name": {
+      "hu": "spruce_wood_crate",
+      "en": "spruce_wood_crate"
+    },
+    "img": "img/items/spruce_wood_crate.png",
+    "tier": null
+  },
+  "spruce_wood_slab_single": {
+    "name": {
+      "hu": "spruce_wood_slab_single",
+      "en": "spruce_wood_slab_single"
+    },
+    "img": "img/items/spruce_wood_slab_single.png",
+    "tier": null
+  },
+  "spruce_wood_stairs": {
+    "name": {
+      "hu": "spruce_wood_stairs",
+      "en": "spruce_wood_stairs"
+    },
+    "img": "img/items/spruce_wood_stairs.png",
+    "tier": null
+  },
+  "sticky_piston": {
+    "name": {
+      "hu": "sticky_piston",
+      "en": "sticky_piston"
+    },
+    "img": "img/items/sticky_piston.png",
+    "tier": null
+  },
+  "stone": {
+    "name": {
+      "hu": "stone",
+      "en": "stone"
+    },
+    "img": "img/blocks/stone.png",
+    "tier": null
+  },
+  "stone_brick_slab_single": {
+    "name": {
+      "hu": "stone_brick_slab_single",
+      "en": "stone_brick_slab_single"
+    },
+    "img": "img/items/stone_brick_slab_single.png",
+    "tier": null
+  },
+  "stone_brick_stairs": {
+    "name": {
+      "hu": "stone_brick_stairs",
+      "en": "stone_brick_stairs"
+    },
+    "img": "img/items/stone_brick_stairs.png",
+    "tier": null
+  },
+  "stone_bricks": {
+    "name": {
+      "hu": "stone_bricks",
+      "en": "stone_bricks"
+    },
+    "img": "img/items/stone_bricks.png",
+    "tier": null
+  },
+  "stone_chip": {
+    "name": {
+      "hu": "stone_chip",
+      "en": "stone_chip"
+    },
+    "img": "img/items/stone_chip.png",
+    "tier": null
+  },
+  "stone_furnace_core": {
+    "name": {
+      "hu": "stone_furnace_core",
+      "en": "stone_furnace_core"
+    },
+    "img": "img/items/stone_furnace_core.png",
+    "tier": null
+  },
+  "stone_furnace_idle": {
+    "name": {
+      "hu": "stone_furnace_idle",
+      "en": "stone_furnace_idle"
+    },
+    "img": "img/items/stone_furnace_idle.png",
+    "tier": null
+  },
+  "stone_portal_stone": {
+    "name": {
+      "hu": "stone_portal_stone",
+      "en": "stone_portal_stone"
+    },
+    "img": "img/items/stone_portal_stone.png",
+    "tier": null
+  },
+  "stone_slab_single": {
+    "name": {
+      "hu": "stone_slab_single",
+      "en": "stone_slab_single"
+    },
+    "img": "img/items/stone_slab_single.png",
+    "tier": null
+  },
+  "stone_stairs": {
+    "name": {
+      "hu": "stone_stairs",
+      "en": "stone_stairs"
+    },
+    "img": "img/items/stone_stairs.png",
+    "tier": null
+  },
+  "string_sieve_mesh": {
+    "name": {
+      "hu": "string_sieve_mesh",
+      "en": "string_sieve_mesh"
+    },
+    "img": "img/items/string_sieve_mesh.png",
+    "tier": null
+  },
+  "sugar": {
+    "name": {
+      "hu": "sugar",
+      "en": "sugar"
+    },
+    "img": "img/items/sugar.png",
+    "tier": null
+  },
+  "sugar_block": {
+    "name": {
+      "hu": "sugar_block",
+      "en": "sugar_block"
+    },
+    "img": "img/items/sugar_block.png",
+    "tier": null
+  },
+  "sugar_cane": {
+    "name": {
+      "hu": "sugar_cane",
+      "en": "sugar_cane"
+    },
+    "img": "img/items/sugar_cane.png",
+    "tier": null
+  },
+  "sugar_water": {
+    "name": {
+      "hu": "sugar_water",
+      "en": "sugar_water"
+    },
+    "img": "img/items/sugar_water.png",
+    "tier": null
+  },
+  "teleport_scroll_knowledge_book": {
+    "name": {
+      "hu": "teleport_scroll_knowledge_book",
+      "en": "teleport_scroll_knowledge_book"
+    },
+    "img": "img/items/teleport_scroll_knowledge_book.png",
+    "tier": null
+  },
+  "tnt": {
+    "name": {
+      "hu": "tnt",
+      "en": "tnt"
+    },
+    "img": "img/items/tnt.png",
+    "tier": null
+  },
+  "trapdoor": {
+    "name": {
+      "hu": "trapdoor",
+      "en": "trapdoor"
+    },
+    "img": "img/items/trapdoor.png",
+    "tier": null
+  },
+  "trapped_chest": {
+    "name": {
+      "hu": "trapped_chest",
+      "en": "trapped_chest"
+    },
+    "img": "img/items/trapped_chest.png",
+    "tier": null
+  },
+  "tripwire_hook": {
+    "name": {
+      "hu": "tripwire_hook",
+      "en": "tripwire_hook"
+    },
+    "img": "img/items/tripwire_hook.png",
+    "tier": null
+  },
+  "tulip": {
+    "name": {
+      "hu": "tulip",
+      "en": "tulip"
+    },
+    "img": "img/items/tulip.png",
+    "tier": null
+  },
+  "vegetable_soup": {
+    "name": {
+      "hu": "vegetable_soup",
+      "en": "vegetable_soup"
+    },
+    "img": "img/items/vegetable_soup.png",
+    "tier": null
+  },
+  "villager_s_bed": {
+    "name": {
+      "hu": "villager_s_bed",
+      "en": "villager_s_bed"
+    },
+    "img": "img/items/villager_s_bed.png",
+    "tier": null
+  },
+  "vines": {
+    "name": {
+      "hu": "vines",
+      "en": "vines"
+    },
+    "img": "img/items/vines.png",
+    "tier": null
+  },
+  "water_bowl": {
+    "name": {
+      "hu": "water_bowl",
+      "en": "water_bowl"
+    },
+    "img": "img/items/water_bowl.png",
+    "tier": null
+  },
+  "water_filter": {
+    "name": {
+      "hu": "water_filter",
+      "en": "water_filter"
+    },
+    "img": "img/items/water_filter.png",
+    "tier": null
+  },
+  "water_skin": {
+    "name": {
+      "hu": "water_skin",
+      "en": "water_skin"
+    },
+    "img": "img/items/water_skin.png",
+    "tier": null
+  },
+  "waystone": {
+    "name": {
+      "hu": "waystone",
+      "en": "waystone"
+    },
+    "img": "img/items/waystone.png",
+    "tier": null
+  },
+  "waystone_knowledge_book": {
+    "name": {
+      "hu": "waystone_knowledge_book",
+      "en": "waystone_knowledge_book"
+    },
+    "img": "img/items/waystone_knowledge_book.png",
+    "tier": null
+  },
+  "weighted_pressure_plate_heavy": {
+    "name": {
+      "hu": "weighted_pressure_plate_heavy",
+      "en": "weighted_pressure_plate_heavy"
+    },
+    "img": "img/items/weighted_pressure_plate_heavy.png",
+    "tier": null
+  },
+  "weighted_pressure_plate_light": {
+    "name": {
+      "hu": "weighted_pressure_plate_light",
+      "en": "weighted_pressure_plate_light"
+    },
+    "img": "img/items/weighted_pressure_plate_light.png",
+    "tier": null
+  },
+  "wheat_seeds": {
+    "name": {
+      "hu": "wheat_seeds",
+      "en": "wheat_seeds"
+    },
+    "img": "img/items/wheat_seeds.png",
+    "tier": null
+  },
+  "wheat_soup": {
+    "name": {
+      "hu": "wheat_soup",
+      "en": "wheat_soup"
+    },
+    "img": "img/items/wheat_soup.png",
+    "tier": null
+  },
+  "white_stained_clay_colored": {
+    "name": {
+      "hu": "white_stained_clay_colored",
+      "en": "white_stained_clay_colored"
+    },
+    "img": "img/items/white_stained_clay_colored.png",
+    "tier": null
+  },
+  "white_wool_portal_stone": {
+    "name": {
+      "hu": "white_wool_portal_stone",
+      "en": "white_wool_portal_stone"
+    },
+    "img": "img/items/white_wool_portal_stone.png",
+    "tier": null
+  },
+  "wither_skeleton_skull": {
+    "name": {
+      "hu": "wither_skeleton_skull",
+      "en": "wither_skeleton_skull"
+    },
+    "img": "img/items/wither_skeleton_skull.png",
+    "tier": null
+  },
+  "wither_skeleton_skull_fragment": {
+    "name": {
+      "hu": "wither_skeleton_skull_fragment",
+      "en": "wither_skeleton_skull_fragment"
+    },
+    "img": "img/items/wither_skeleton_skull_fragment.png",
+    "tier": null
+  },
+  "wood_slab_single": {
+    "name": {
+      "hu": "wood_slab_single",
+      "en": "wood_slab_single"
+    },
+    "img": "img/items/wood_slab_single.png",
+    "tier": null
+  },
+  "wooden_club": {
+    "name": {
+      "hu": "wooden_club",
+      "en": "wooden_club"
+    },
+    "img": "img/items/wooden_club.png",
+    "tier": null
+  },
+  "wooden_door": {
+    "name": {
+      "hu": "wooden_door",
+      "en": "wooden_door"
+    },
+    "img": "img/items/wooden_door.png",
+    "tier": null
+  },
+  "wooden_shovel": {
+    "name": {
+      "hu": "wooden_shovel",
+      "en": "wooden_shovel"
+    },
+    "img": "img/items/wooden_shovel.png",
+    "tier": null
+  },
+  "wool_black": {
+    "name": {
+      "hu": "wool_black",
+      "en": "wool_black"
+    },
+    "img": "img/items/wool_black.png",
+    "tier": null
+  },
+  "wool_blue": {
+    "name": {
+      "hu": "wool_blue",
+      "en": "wool_blue"
+    },
+    "img": "img/items/wool_blue.png",
+    "tier": null
+  },
+  "wool_brown": {
+    "name": {
+      "hu": "wool_brown",
+      "en": "wool_brown"
+    },
+    "img": "img/items/wool_brown.png",
+    "tier": null
+  },
+  "wool_cyan": {
+    "name": {
+      "hu": "wool_cyan",
+      "en": "wool_cyan"
+    },
+    "img": "img/items/wool_cyan.png",
+    "tier": null
+  },
+  "wool_gray": {
+    "name": {
+      "hu": "wool_gray",
+      "en": "wool_gray"
+    },
+    "img": "img/items/wool_gray.png",
+    "tier": null
+  },
+  "wool_green": {
+    "name": {
+      "hu": "wool_green",
+      "en": "wool_green"
+    },
+    "img": "img/items/wool_green.png",
+    "tier": null
+  },
+  "wool_light_blue": {
+    "name": {
+      "hu": "wool_light_blue",
+      "en": "wool_light_blue"
+    },
+    "img": "img/items/wool_light_blue.png",
+    "tier": null
+  },
+  "wool_light_gray": {
+    "name": {
+      "hu": "wool_light_gray",
+      "en": "wool_light_gray"
+    },
+    "img": "img/items/wool_light_gray.png",
+    "tier": null
+  },
+  "wool_lime": {
+    "name": {
+      "hu": "wool_lime",
+      "en": "wool_lime"
+    },
+    "img": "img/items/wool_lime.png",
+    "tier": null
+  },
+  "wool_magenta": {
+    "name": {
+      "hu": "wool_magenta",
+      "en": "wool_magenta"
+    },
+    "img": "img/items/wool_magenta.png",
+    "tier": null
+  },
+  "wool_orange": {
+    "name": {
+      "hu": "wool_orange",
+      "en": "wool_orange"
+    },
+    "img": "img/items/wool_orange.png",
+    "tier": null
+  },
+  "wool_pink": {
+    "name": {
+      "hu": "wool_pink",
+      "en": "wool_pink"
+    },
+    "img": "img/items/wool_pink.png",
+    "tier": null
+  },
+  "wool_purple": {
+    "name": {
+      "hu": "wool_purple",
+      "en": "wool_purple"
+    },
+    "img": "img/items/wool_purple.png",
+    "tier": null
+  },
+  "wool_red": {
+    "name": {
+      "hu": "wool_red",
+      "en": "wool_red"
+    },
+    "img": "img/items/wool_red.png",
+    "tier": null
+  },
+  "wool_white": {
+    "name": {
+      "hu": "wool_white",
+      "en": "wool_white"
+    },
+    "img": "img/items/wool_white.png",
+    "tier": null
+  },
+  "wool_yellow": {
+    "name": {
+      "hu": "wool_yellow",
+      "en": "wool_yellow"
+    },
+    "img": "img/items/wool_yellow.png",
+    "tier": null
+  },
+  "world_marker": {
+    "name": {
+      "hu": "world_marker",
+      "en": "world_marker"
+    },
+    "img": "img/items/world_marker.png",
+    "tier": null
+  },
+  "world_marker_knowledge_book": {
+    "name": {
+      "hu": "world_marker_knowledge_book",
+      "en": "world_marker_knowledge_book"
+    },
+    "img": "img/items/world_marker_knowledge_book.png",
+    "tier": null
+  },
+  "yellow_bed": {
+    "name": {
+      "hu": "yellow_bed",
+      "en": "yellow_bed"
+    },
+    "img": "img/items/yellow_bed.png",
+    "tier": null
+  },
+  "yellow_carpet": {
+    "name": {
+      "hu": "yellow_carpet",
+      "en": "yellow_carpet"
+    },
+    "img": "img/items/yellow_carpet.png",
+    "tier": null
+  },
+  "yellow_stained_clay_colored": {
+    "name": {
+      "hu": "yellow_stained_clay_colored",
+      "en": "yellow_stained_clay_colored"
+    },
+    "img": "img/items/yellow_stained_clay_colored.png",
+    "tier": null
+  },
+  "yellow_wool": {
+    "name": {
+      "hu": "yellow_wool",
+      "en": "yellow_wool"
+    },
+    "img": "img/items/yellow_wool.png",
+    "tier": null
+  }
+}

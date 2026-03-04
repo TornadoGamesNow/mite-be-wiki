@@ -1,0 +1,52 @@
+{
+  "enchantability": [
+    { "value": 100, "materials": { "hu": "Mithril / Gyémánt / Higany", "en": "Mithril / Diamond / Mercury" }, "note": { "hu": "Legjobb bűvölési esély!", "en": "Best enchanting odds!" }, "highlight": true },
+    { "value": 70, "materials": { "hu": "Smaragd", "en": "Emerald" }, "note": { "hu": "Nagyon jó", "en": "Very good" } },
+    { "value": 50, "materials": { "hu": "Arany", "en": "Gold" }, "note": { "hu": "Jó bűvölési szint", "en": "Good enchanting level" } },
+    { "value": 40, "materials": { "hu": "Adamantium / Ősi Fém / Kvarc", "en": "Adamantium / Ancient Metal / Quartz" }, "note": { "hu": "Közepes", "en": "Moderate" } },
+    { "value": 35, "materials": { "hu": "Keménykő", "en": "Hardstone" }, "note": { "hu": "—", "en": "—" } },
+    { "value": 30, "materials": { "hu": "Réz / Vas / Ezüst / Bronz / HC Acél", "en": "Copper / Iron / Silver / Bronze / HC Steel" }, "note": { "hu": "Standard", "en": "Standard" } },
+    { "value": 10, "materials": { "hu": "Bőr / Fa / Csont", "en": "Leather / Wood / Bone" }, "note": { "hu": "Gyenge", "en": "Weak" }, "muted": true }
+  ],
+  "maxQuality": [
+    { "quality": { "hu": "Legendás", "en": "Legendary" }, "materials": { "hu": "Mithril, Adamantium", "en": "Mithril, Adamantium" }, "highlight": true },
+    { "quality": { "hu": "Mestermű", "en": "Masterwork" }, "materials": { "hu": "Vas, Ősi Fém, Magas Szén Acél", "en": "Iron, Ancient Metal, High Carbon Steel" } },
+    { "quality": { "hu": "Kitűnő", "en": "Excellent" }, "materials": { "hu": "Arany, Gyémánt", "en": "Gold, Diamond" } },
+    { "quality": { "hu": "Kiváló", "en": "Superior" }, "materials": { "hu": "Réz, Keménykő, Ezüst, Smaragd, Bronz, Ezüst-Réz", "en": "Copper, Hardstone, Silver, Emerald, Bronze, Silver-Copper" } },
+    { "quality": { "hu": "Jó", "en": "Good" }, "materials": { "hu": "Bőr, Fa, Kova, Obszidián, Kvarc, Csont", "en": "Leather, Wood, Flint, Obsidian, Quartz, Bone" } },
+    { "quality": { "hu": "Átlagos", "en": "Average" }, "materials": { "hu": "Pokolfenyő, Üveg", "en": "Netherbrick, Glass" }, "muted": true },
+    { "quality": { "hu": "Rossz", "en": "Poor" }, "materials": { "hu": "Rozsdás Vas", "en": "Rusted Iron" }, "bad": true }
+  ],
+  "durabilityMult": [
+    { "mult": "256×", "materials": { "hu": "Adamantium", "en": "Adamantium" }, "tier": "adamantium", "highlight": true },
+    { "mult": "64×", "materials": { "hu": "Mithril, Higany", "en": "Mithril, Mercury" }, "tier": "mithril" },
+    { "mult": "16×", "materials": { "hu": "Ősi Fém, Keménykő, Gyémánt", "en": "Ancient Metal, Hardstone, Diamond" }, "tier": "ancient" },
+    { "mult": "8×", "materials": { "hu": "Vas, Magas Szén Acél, Smaragd", "en": "Iron, High Carbon Steel, Emerald" }, "tier": "iron" },
+    { "mult": "4×", "materials": { "hu": "Réz, Ezüst, Bronz, Arany, Ezüst-Réz, Rozsdás Vas, Ón, Kvarc", "en": "Copper, Silver, Bronze, Gold, Silver-Copper, Rusted Iron, Tin, Quartz" } },
+    { "mult": "2×", "materials": { "hu": "Obszidián, Üveg", "en": "Obsidian, Glass" } },
+    { "mult": "1×", "materials": { "hu": "Bőr, Kova", "en": "Leather, Flint" }, "tier": "flint" },
+    { "mult": "0.5×", "materials": { "hu": "Fa", "en": "Wood" }, "muted": true },
+    { "mult": "0.15×", "materials": { "hu": "Csont", "en": "Bone" }, "bad": true }
+  ],
+  "sieve": {
+    "gravel": [
+      { "item": { "hu": "Kova Szilánk", "en": "Flint Shard" }, "chance": "53.4%", "use": { "hu": "Korai szerszámok", "en": "Early tools" } },
+      { "item": { "hu": "Réz Ércdarab", "en": "Copper Particle" }, "chance": "25.1%", "tier": "copper", "use": { "hu": "Első fém — közel 1:4 arány!", "en": "First metal — nearly 1-in-4!" } },
+      { "item": { "hu": "Kova", "en": "Flint" }, "chance": "4.4%", "use": { "hu": "Tűzkő és Acél", "en": "Flint & Steel" } },
+      { "item": { "hu": "Ezüst Ércdarab", "en": "Silver Particle" }, "chance": "3.1%", "tier": "silver", "use": { "hu": "Ezüst szerszámok", "en": "Silver tools" } },
+      { "item": { "hu": "Arany Ércdarab", "en": "Gold Particle" }, "chance": "0.63%", "use": { "hu": "Arany szint", "en": "Gold tier" } },
+      { "item": { "hu": "Keménykő Ércdarab", "en": "Hardstone Particle" }, "chance": "0.25%", "tier": "hard", "use": { "hu": "Ritka, mély barlangoknál jobb", "en": "Rare, deep caves are better" } },
+      { "item": { "hu": "Obszidián Szilánk", "en": "Obsidian Shard" }, "chance": "0.25%", "use": { "hu": "Öntőformához kell!", "en": "Needed for cast molds!" } },
+      { "item": { "hu": "Smaragd Szilánk", "en": "Emerald Shard" }, "chance": "0.25%", "use": { "hu": "—", "en": "—" } },
+      { "item": { "hu": "Gyémánt Szilánk", "en": "Diamond Shard" }, "chance": "0.13%", "use": { "hu": "Ritka!", "en": "Rare!" } },
+      { "item": { "hu": "Mithril Ércdarab", "en": "Mithril Particle" }, "chance": "0.06%", "tier": "mithril", "use": { "hu": "Nagyon ritka", "en": "Very rare" } },
+      { "item": { "hu": "Adamantium Ércdarab", "en": "Adamantium Particle" }, "chance": "0.01%", "tier": "adamantium", "use": { "hu": "Rendkívül ritka", "en": "Extremely rare" } }
+    ],
+    "nether": [
+      { "item": { "hu": "Kova Szilánk", "en": "Flint Shard" }, "chance": "57.1%", "use": { "hu": "Korai szerszámok", "en": "Early tools" } },
+      { "item": { "hu": "Arany Ércdarab", "en": "Gold Particle" }, "chance": "38.1%", "use": { "hu": "Arany farm! Sokkal hatékonyabb", "en": "Gold farm! Far more efficient" } },
+      { "item": { "hu": "Kova", "en": "Flint" }, "chance": "4.2%", "use": { "hu": "Tűzkő és Acél", "en": "Flint & Steel" } },
+      { "item": { "hu": "Kvarc", "en": "Quartz" }, "chance": "0.6%", "use": { "hu": "Elektronika", "en": "Electronics" } }
+    ]
+  }
+}

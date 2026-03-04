@@ -1,0 +1,96 @@
+---
+import items from '../../data/items.json';
+
+import type { SlotValue } from '../data/types';
+
+interface Props {
+  recipeId?: string;
+  recipe?: {
+    gridSize: string;
+    pattern: SlotValue[][];
+    output: string;
+    outputCount?: number;
+    label: { hu: string; en: string };
+    tooltip?: { hu: string; en: string };
+  };
+}
+
+const { recipeId, recipe: recipeProp } = Astro.props;
+
+// Load recipe from JSON if recipeId provided
+let recipe = recipeProp;
+if (recipeId && !recipe) {
+  const allRecipes = (await import('../../data/recipes.json')).default;
+  recipe = allRecipes.find((r: any) => r.id === recipeId);
+}
+
+if (!recipe) {
+  throw new Error(`Recipe not found: ${recipeId}`);
+}
+
+const gridClass = recipe.gridSize === '2x2' ? 'g2x2' : 'g3x3';
+const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+function getItem(id: string) {
+  if (id === '_' || !id) return null;
+  return (items as Record<string, any>)[id] || null;
+}
+
+// For array slots (alternatives), SSR always renders the first item
+function resolveSlot(slot: SlotValue) {
+  const id = Array.isArray(slot) ? slot[0] : slot;
+  return getItem(id);
+}
+---
+
+<div class="craft-table">
+  <div class={`craft-grid ${gridClass}`}>
+    {recipe.pattern.flat().map((slot) => {
+      const item = resolveSlot(slot);
+      return item ? (
+        <div class="craft-slot">
+          <img src={`${BASE}/${item.img}`} alt={item.name.en} loading="lazy" />
+          <div class="mc-tooltip">
+            <div class="tt-name" data-lang="hu" style={item.tier ? `color: var(--${item.tier})` : ''}>{item.name.hu}</div>
+            <div class="tt-name" data-lang="en" style={item.tier ? `color: var(--${item.tier})` : ''}>{item.name.en}</div>
+          </div>
+        </div>
+      ) : (
+        <div class="craft-slot empty"></div>
+      );
+    })}
+  </div>
+
+  <div class="craft-arrow-box">→</div>
+
+  <div class="craft-output">
+    {(() => {
+      const outputItem = getItem(recipe.output);
+      return outputItem ? (
+        <div class="craft-slot">
+          <img src={`${BASE}/${outputItem.img}`} alt={outputItem.name.en} loading="lazy" />
+          {recipe.outputCount && recipe.outputCount > 1 && (
+            <span class="slot-label">{recipe.outputCount}</span>
+          )}
+          <div class="mc-tooltip">
+            <div class="tt-name" data-lang="hu" style={outputItem.tier ? `color: var(--${outputItem.tier})` : ''}>{outputItem.name.hu}</div>
+            <div class="tt-name" data-lang="en" style={outputItem.tier ? `color: var(--${outputItem.tier})` : ''}>{outputItem.name.en}</div>
+            {recipe.tooltip && (
+              <>
+                <div class="tt-desc" data-lang="hu">{recipe.tooltip.hu}</div>
+                <div class="tt-desc" data-lang="en">{recipe.tooltip.en}</div>
+              </>
+            )}
+          </div>
+        </div>
+      ) : (
+        <div class="craft-slot empty"></div>
+      );
+    })()}
+  </div>
+
+  <div class="craft-label">
+    <span data-lang="hu">{recipe.label.hu}</span>
+    <span data-lang="en">{recipe.label.en}</span>
+  </div>
+</div>

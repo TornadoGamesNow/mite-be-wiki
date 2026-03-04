@@ -1,0 +1,9 @@
+---
+interface Props {
+  tier: string;
+  label?: string;
+}
+const { tier, label } = Astro.props;
+const text = label || tier.charAt(0).toUpperCase() + tier.slice(1);
+---
+<span class={`tier t-${tier}`}>{text}</span>
