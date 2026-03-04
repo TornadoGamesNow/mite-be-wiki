@@ -67,6 +67,12 @@ function initNavTracking() {
         links.forEach(l => {
           l.classList.toggle('active', l.getAttribute('href') === '#' + id);
         });
+        // Auto-scroll sidebar to keep active link visible
+        const activeLink = [...links].find(l => l.getAttribute('href') === '#' + id);
+        if (activeLink) {
+          const sidebar = activeLink.closest('.sidebar');
+          if (sidebar) activeLink.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+        }
       }
     });
   }, { rootMargin: '-10% 0px -80% 0px' });
