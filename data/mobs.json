@@ -1,39 +1,2817 @@
-{
-  "surface": [
-    { "name": { "hu": "Zombi", "en": "Zombie" }, "hp": 20, "dmg": { "hu": "3", "en": "3" }, "xp": 5, "special": { "hu": "Falon átérzékelés, csákányos változat bármit kibányászik", "en": "Wall detection, pickaxe variant mines any block" } },
-    { "name": { "hu": "Csontváz", "en": "Skeleton" }, "hp": 20, "dmg": { "hu": "3 (nyíl)", "en": "3 (arrow)" }, "xp": 5, "special": { "hu": "Távolsági támadó", "en": "Ranged attacker" } },
-    { "name": { "hu": "Creeper", "en": "Creeper" }, "hp": 20, "dmg": { "hu": "— (robbanás)", "en": "— (explosion)" }, "xp": 5, "special": { "hu": "Robbanás figyelmeztetés nélkül", "en": "Explodes without warning" } },
-    { "name": { "hu": "Pók", "en": "Spider" }, "hp": 16, "dmg": { "hu": "3", "en": "3" }, "xp": 5, "special": { "hu": "Falon mászás, éjjel agresszív", "en": "Wall climbing, aggressive at night" } },
-    { "name": { "hu": "Szörnyű Farkas (Dire Wolf)", "en": "Dire Wolf" }, "hp": 20, "dmg": { "hu": "5", "en": "5" }, "xp": 8, "special": { "hu": "Erős farkas, falkában veszélyes", "en": "Strong wolf, dangerous in packs" } },
-    { "name": { "hu": "Fa Pók (Wood Spider)", "en": "Wood Spider" }, "hp": 10, "dmg": { "hu": "2", "en": "2" }, "xp": 5, "special": { "hu": "Fák között él, mérgező", "en": "Lives in trees, poisonous" } },
-    { "name": { "hu": "Fosztogató (Pillager)", "en": "Pillager" }, "hp": 24, "dmg": { "hu": "4 (nyílpuska)", "en": "4 (crossbow)" }, "xp": 10, "special": { "hu": "Rabló csapat, jutalomládát ejt", "en": "Raider group, drops reward chest" } },
-    { "name": { "hu": "Fosztogató Vezető", "en": "Pillager Captain" }, "hp": 40, "dmg": { "hu": "6", "en": "6" }, "xp": 20, "special": { "hu": "Erősebb páncélos vezér", "en": "Stronger armored leader" } },
-    { "name": { "hu": "Zealot (Fanatic Vindicator)", "en": "Zealot (Fanatic Vindicator)" }, "hp": 80, "dmg": { "hu": "13 (vas fejsze)", "en": "13 (iron axe)" }, "xp": 40, "special": { "hu": "Extrém sebzés! Vas fejszével támad", "en": "Extreme damage! Attacks with iron axe" } },
-    { "name": { "hu": "Boszorkány (Witch)", "en": "Witch" }, "hp": 26, "dmg": { "hu": "bájital", "en": "potion" }, "xp": 10, "special": { "hu": "Mérgező bájitalokat dob", "en": "Throws poison potions" } },
-    { "name": { "hu": "Síkság/Havas/Dzsungel változatok", "en": "Plains/Snowy/Jungle variants" }, "hp": 20, "dmg": { "hu": "3–5", "en": "3–5" }, "xp": 5, "special": { "hu": "Biome-specifikus, erősebb variánsok", "en": "Biome-specific, stronger variants" } },
-    { "name": { "hu": "Zombi Hívó (Zombie Caller)", "en": "Zombie Caller" }, "hp": null, "dmg": { "hu": "3", "en": "3" }, "xp": null, "special": { "hu": "Zombi segítséget hív", "en": "Calls zombie reinforcements" } }
-  ],
-  "underground": [
-    { "name": { "hu": "Sírkamra Szellem (Ghoul)", "en": "Ghoul" }, "hp": 20, "dmg": { "hu": "4", "en": "4" }, "xp": 10, "special": { "hu": "Lassítás hatás", "en": "Slowness effect" } },
-    { "name": { "hu": "Rég Halott (Wight)", "en": "Wight" }, "hp": 25, "dmg": { "hu": "5", "en": "5" }, "xp": 10, "special": { "hu": "Lassítás + éheztetés", "en": "Slowness + hunger" } },
-    { "name": { "hu": "Rég Halott Őr", "en": "Wight Guard" }, "hp": 30, "dmg": { "hu": "6", "en": "6" }, "xp": 15, "special": { "hu": "Páncélos változat", "en": "Armored variant" } },
-    { "name": { "hu": "Láthatatlan Követő", "en": "Invisible Stalker" }, "hp": 20, "dmg": { "hu": "5", "en": "5" }, "xp": 12, "special": { "hu": "Láthatatlan! Ezüst/Mithril+ fegyver kell", "en": "Invisible! Requires Silver/Mithril+ weapon" } },
-    { "name": { "hu": "Fekete Özvegy Pók", "en": "Black Widow Spider" }, "hp": 16, "dmg": { "hu": "4", "en": "4" }, "xp": 8, "special": { "hu": "Erős mérgezés", "en": "Strong poison" } },
-    { "name": { "hu": "Fázis Pók", "en": "Phase Spider" }, "hp": 16, "dmg": { "hu": "4", "en": "4" }, "xp": 8, "special": { "hu": "Falon átmegy! Csak Ősi Fém kard sebzi", "en": "Phases through walls! Only Ancient Metal sword damages it" } },
-    { "name": { "hu": "Csont Úr (Bone Lord)", "en": "Bone Lord" }, "hp": 50, "dmg": { "hu": "8", "en": "8" }, "xp": 25, "special": { "hu": "Boss — csontváz idézés", "en": "Boss — summons skeletons" } },
-    { "name": { "hu": "Ókori Csont Úr", "en": "Ancient Bone Lord" }, "hp": 80, "dmg": { "hu": "10", "en": "10" }, "xp": 40, "special": { "hu": "Erősebb boss változat", "en": "Stronger boss variant" } },
-    { "name": { "hu": "Föld Elementális (5 változat)", "en": "Earth Elemental (5 variants)" }, "hp": 30, "dmg": { "hu": "12", "en": "12" }, "xp": 20, "special": { "hu": "4 páncél, csak csákánnyal sebezhető", "en": "4 armor, only damaged by pickaxe" } },
-    { "name": { "hu": "Vámpír Denevér", "en": "Vampire Bat" }, "hp": 6, "dmg": { "hu": "2", "en": "2" }, "xp": 3, "special": { "hu": "Életlopás", "en": "Life steal" } },
-    { "name": { "hu": "Óriás Vámpír Denevér", "en": "Giant Vampire Bat" }, "hp": 30, "dmg": { "hu": "6", "en": "6" }, "xp": 15, "special": { "hu": "Életlopás + nagy sebzés", "en": "Life steal + high damage" } }
-  ],
-  "nether": [
-    { "name": { "hu": "Démon Pók", "en": "Demon Spider" }, "hp": 20, "dmg": { "hu": "5", "en": "5" }, "xp": 10, "special": { "hu": "Tűzálló, mérgező", "en": "Fire resistant, poisonous" } },
-    { "name": { "hu": "Pokol Kutya", "en": "Hell Hound" }, "hp": 16, "dmg": { "hu": "4", "en": "4" }, "xp": 8, "special": { "hu": "Tűzálló, gyors, falkában", "en": "Fire resistant, fast, in packs" } },
-    { "name": { "hu": "Pokoli Creeper", "en": "Nether Creeper" }, "hp": 20, "dmg": { "hu": "— (robbanás)", "en": "— (explosion)" }, "xp": 10, "special": { "hu": "Tűzálló, nagyobb robbanás", "en": "Fire resistant, bigger explosion" } },
-    { "name": { "hu": "Vörös Lángoszlop (Red Blaze)", "en": "Red Blaze" }, "hp": 40, "dmg": { "hu": "6", "en": "6" }, "xp": 20, "special": { "hu": "6 tűzgolyó egyszerre!", "en": "6 fireballs at once!" } },
-    { "name": { "hu": "Tűz Elementális", "en": "Fire Elemental" }, "hp": 50, "dmg": { "hu": "8", "en": "8" }, "xp": 25, "special": { "hu": "3% instant kill égő játékoson! Víz/hógolyó/sebzés bájital hat rá", "en": "3% instant kill if you're on fire! Effective: water/snowballs/Harming potion" } },
-    { "name": { "hu": "Nagy Ghast", "en": "Greater Ghast" }, "hp": 40, "dmg": { "hu": "6 (tűzgolyó)", "en": "6 (fireball)" }, "xp": 20, "special": { "hu": "Óriási, repülő, tűzokádó", "en": "Enormous, flying, fire-breathing" } },
-    { "name": { "hu": "Zombi Disznóember", "en": "Zombie Pigman" }, "hp": 20, "dmg": { "hu": "5", "en": "5" }, "xp": 8, "special": { "hu": "Arany nélkül agresszív", "en": "Aggressive without gold" } },
-    { "name": { "hu": "Lélek Szellem", "en": "Soul Spirit" }, "hp": 16, "dmg": { "hu": "4", "en": "4" }, "xp": 8, "special": { "hu": "Nether szellemi lény", "en": "Nether spirit creature" } }
-  ]
-}
+[
+  {
+    "id": "zombie",
+    "name": {
+      "hu": "Zombi",
+      "en": "Zombie"
+    },
+    "hp": 20,
+    "dmgMin": 3,
+    "dmgMax": 3,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface",
+      "underground"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "pack",
+      "wall_detection"
+    ],
+    "special": {
+      "hu": "Falon átérzékelés, csákányos változat bármit kibányászik",
+      "en": "Wall detection, pickaxe variant mines any block"
+    }
+  },
+  {
+    "id": "skeleton",
+    "name": {
+      "hu": "Csontváz",
+      "en": "Skeleton"
+    },
+    "hp": 20,
+    "dmgMin": 3,
+    "dmgMax": 3,
+    "dmgType": "ranged",
+    "xp": 5,
+    "spawnZones": [
+      "surface",
+      "underground"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Távolsági támadó",
+      "en": "Ranged attacker"
+    }
+  },
+  {
+    "id": "creeper",
+    "name": {
+      "hu": "Creeper",
+      "en": "Creeper"
+    },
+    "hp": 20,
+    "dmgMin": 5,
+    "dmgMax": 10,
+    "dmgType": "explosion",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "explosion"
+    ],
+    "special": {
+      "hu": "Robbanás figyelmeztetés nélkül",
+      "en": "Explodes without warning"
+    }
+  },
+  {
+    "id": "spider",
+    "name": {
+      "hu": "Pók",
+      "en": "Spider"
+    },
+    "hp": 16,
+    "dmgMin": 2,
+    "dmgMax": 2,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "pack"
+    ],
+    "special": {
+      "hu": "Falon mászás, éjjel agresszív",
+      "en": "Wall climbing, aggressive at night"
+    }
+  },
+  {
+    "id": "wood_spider",
+    "name": {
+      "hu": "Fa Pók",
+      "en": "Wood Spider"
+    },
+    "hp": 10,
+    "dmgMin": 2,
+    "dmgMax": 2,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "pack",
+      "poison"
+    ],
+    "special": {
+      "hu": "Fák között él, mérgező",
+      "en": "Lives in trees, poisonous"
+    }
+  },
+  {
+    "id": "vampire_bat",
+    "name": {
+      "hu": "Vámpír Denevér",
+      "en": "Vampire Bat"
+    },
+    "hp": 6,
+    "dmgMin": 2,
+    "dmgMax": 2,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface",
+      "underground"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "flying",
+      "life_steal"
+    ],
+    "special": {
+      "hu": "Életlopás",
+      "en": "Life steal"
+    }
+  },
+  {
+    "id": "ghoul",
+    "name": {
+      "hu": "Sírkamra Szellem (Ghoul)",
+      "en": "Ghoul"
+    },
+    "hp": 20,
+    "dmgMin": 5,
+    "dmgMax": 5,
+    "dmgType": "melee",
+    "xp": 10,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "instant_kill"
+    ],
+    "special": {
+      "hu": "Lassítás hatás",
+      "en": "Slowness effect"
+    }
+  },
+  {
+    "id": "hell_hound",
+    "name": {
+      "hu": "Pokol Kutya",
+      "en": "Hell Hound"
+    },
+    "hp": 16,
+    "dmgMin": 4,
+    "dmgMax": 4,
+    "dmgType": "melee",
+    "xp": 6,
+    "spawnZones": [
+      "nether"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "fire_damage",
+      "pack"
+    ],
+    "special": {
+      "hu": "Tűzálló, gyors, falkában",
+      "en": "Fire resistant, fast, in packs"
+    }
+  },
+  {
+    "id": "demon_spider",
+    "name": {
+      "hu": "Démon Pók",
+      "en": "Demon Spider"
+    },
+    "hp": 20,
+    "dmgMin": 3,
+    "dmgMax": 3,
+    "dmgType": "melee",
+    "xp": 15,
+    "spawnZones": [
+      "nether"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "pack",
+      "poison"
+    ],
+    "special": {
+      "hu": "Tűzálló, mérgező",
+      "en": "Fire resistant, poisonous"
+    }
+  },
+  {
+    "id": "zombie_pigman",
+    "name": {
+      "hu": "Zombi Disznóember",
+      "en": "Zombie Pigman"
+    },
+    "hp": 20,
+    "dmgMin": 5,
+    "dmgMax": 5,
+    "dmgType": "melee",
+    "xp": 15,
+    "spawnZones": [
+      "nether"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "pack",
+      "gold_passive"
+    ],
+    "special": {
+      "hu": "Arany nélkül agresszív",
+      "en": "Aggressive without gold"
+    }
+  },
+  {
+    "id": "soul_spirit",
+    "name": {
+      "hu": "Lélek Szellem",
+      "en": "Soul Spirit"
+    },
+    "hp": 16,
+    "dmgMin": 3,
+    "dmgMax": 3,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "nether"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "fire_immune",
+      "phasing"
+    ],
+    "special": {
+      "hu": "Nether szellemi lény",
+      "en": "Nether spirit creature"
+    }
+  },
+  {
+    "id": "zombie_caller",
+    "name": {
+      "hu": "Zombi Hívó",
+      "en": "Zombie Caller"
+    },
+    "hp": null,
+    "dmgMin": 3,
+    "dmgMax": 3,
+    "dmgType": "melee",
+    "xp": 80,
+    "spawnZones": [
+      "surface",
+      "underground"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "summoner"
+    ],
+    "special": {
+      "hu": "Zombi segítséget hív",
+      "en": "Calls zombie reinforcements"
+    }
+  },
+  {
+    "id": "dire_wolf",
+    "name": {
+      "hu": "Szörnyű Farkas",
+      "en": "Dire Wolf"
+    },
+    "hp": 20,
+    "dmgMin": 5,
+    "dmgMax": 5,
+    "dmgType": "melee",
+    "xp": 4,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "pack"
+    ],
+    "special": {
+      "hu": "Erős farkas, falkában veszélyes",
+      "en": "Strong wolf, dangerous in packs"
+    }
+  },
+  {
+    "id": "wight",
+    "name": {
+      "hu": "Rég Halott",
+      "en": "Wight"
+    },
+    "hp": 25,
+    "dmgMin": 7,
+    "dmgMax": 7,
+    "dmgType": "melee",
+    "xp": 15,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "requires_silver"
+    ],
+    "special": {
+      "hu": "Lassítás + éheztetés",
+      "en": "Slowness + hunger"
+    }
+  },
+  {
+    "id": "wight_guard",
+    "name": {
+      "hu": "Rég Halott Őr",
+      "en": "Wight Guard"
+    },
+    "hp": 30,
+    "dmgMin": 8,
+    "dmgMax": 8,
+    "dmgType": "melee",
+    "xp": 25,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "requires_silver"
+    ],
+    "special": {
+      "hu": "Páncélos változat",
+      "en": "Armored variant"
+    }
+  },
+  {
+    "id": "black_widow_spider",
+    "name": {
+      "hu": "Fekete Özvegy Pók",
+      "en": "Black Widow Spider"
+    },
+    "hp": 16,
+    "dmgMin": 4,
+    "dmgMax": 4,
+    "dmgType": "melee",
+    "xp": 8,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "poison"
+    ],
+    "special": {
+      "hu": "Erős mérgezés",
+      "en": "Strong poison"
+    }
+  },
+  {
+    "id": "witch",
+    "name": {
+      "hu": "Boszorkány",
+      "en": "Witch"
+    },
+    "hp": 26,
+    "dmgMin": 4,
+    "dmgMax": 6,
+    "dmgType": "potion",
+    "xp": 20,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "potion"
+    ],
+    "special": {
+      "hu": "Mérgező bájitalokat dob",
+      "en": "Throws poison potions"
+    }
+  },
+  {
+    "id": "pillager",
+    "name": {
+      "hu": "Fosztogató",
+      "en": "Pillager"
+    },
+    "hp": 24,
+    "dmgMin": 4,
+    "dmgMax": 4,
+    "dmgType": "ranged",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [],
+    "special": {
+      "hu": "Rabló csapat, jutalomládát ejt",
+      "en": "Raider group, drops reward chest"
+    }
+  },
+  {
+    "id": "nether_creeper",
+    "name": {
+      "hu": "Pokoli Creeper",
+      "en": "Nether Creeper"
+    },
+    "hp": 20,
+    "dmgMin": 8,
+    "dmgMax": 12,
+    "dmgType": "explosion",
+    "xp": 15,
+    "spawnZones": [
+      "nether"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "explosion",
+      "fire_immune"
+    ],
+    "special": {
+      "hu": "Tűzálló, nagyobb robbanás",
+      "en": "Fire resistant, bigger explosion"
+    }
+  },
+  {
+    "id": "red_blaze",
+    "name": {
+      "hu": "Vörös Lángoszlop",
+      "en": "Red Blaze"
+    },
+    "hp": 40,
+    "dmgMin": 5,
+    "dmgMax": 5,
+    "dmgType": "fireball",
+    "xp": 20,
+    "spawnZones": [
+      "nether"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "fire_damage",
+      "fire_immune",
+      "flying"
+    ],
+    "special": {
+      "hu": "6 tűzgolyó egyszerre!",
+      "en": "6 fireballs at once!"
+    }
+  },
+  {
+    "id": "earth_elemental",
+    "name": {
+      "hu": "Föld Elementális",
+      "en": "Earth Elemental"
+    },
+    "hp": 30,
+    "dmgMin": 8,
+    "dmgMax": 8,
+    "dmgType": "melee",
+    "xp": 15,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "pickaxe_only"
+    ],
+    "special": {
+      "hu": "4 páncél, csak csákánnyal sebezhető",
+      "en": "4 armor, only damaged by pickaxe"
+    }
+  },
+  {
+    "id": "giant_vampire_bat",
+    "name": {
+      "hu": "Óriás Vámpír Denevér",
+      "en": "Giant Vampire Bat"
+    },
+    "hp": 30,
+    "dmgMin": 5,
+    "dmgMax": 5,
+    "dmgType": "melee",
+    "xp": 10,
+    "spawnZones": [
+      "surface",
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "flying",
+      "life_steal"
+    ],
+    "special": {
+      "hu": "Életlopás + nagy sebzés",
+      "en": "Life steal + high damage"
+    }
+  },
+  {
+    "id": "invisible_stalker",
+    "name": {
+      "hu": "Láthatatlan Követő",
+      "en": "Invisible Stalker"
+    },
+    "hp": 20,
+    "dmgMin": 10,
+    "dmgMax": 10,
+    "dmgType": "melee",
+    "xp": 10,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "late",
+    "tags": [
+      "invisible",
+      "requires_mithril"
+    ],
+    "special": {
+      "hu": "Láthatatlan! Ezüst/Mithril+ fegyver kell",
+      "en": "Invisible! Requires Silver/Mithril+ weapon"
+    }
+  },
+  {
+    "id": "phase_spider",
+    "name": {
+      "hu": "Fázis Pók",
+      "en": "Phase Spider"
+    },
+    "hp": 16,
+    "dmgMin": 6,
+    "dmgMax": 6,
+    "dmgType": "melee",
+    "xp": 10,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "late",
+    "tags": [
+      "phasing",
+      "poison"
+    ],
+    "special": {
+      "hu": "Falon átmegy! Csak Ősi Fém kard sebzi",
+      "en": "Phases through walls! Only Ancient Metal sword damages it"
+    }
+  },
+  {
+    "id": "fire_elemental",
+    "name": {
+      "hu": "Tűz Elementális",
+      "en": "Fire Elemental"
+    },
+    "hp": 50,
+    "dmgMin": 10,
+    "dmgMax": 10,
+    "dmgType": "melee",
+    "xp": 15,
+    "spawnZones": [
+      "nether"
+    ],
+    "difficulty": "late",
+    "tags": [
+      "fire_immune",
+      "fire_damage"
+    ],
+    "special": {
+      "hu": "3% instant kill égő játékoson! Víz/hógolyó/sebzés bájital hat rá",
+      "en": "3% instant kill if you're on fire! Effective: water/snowballs/Harming potion"
+    }
+  },
+  {
+    "id": "greater_ghast",
+    "name": {
+      "hu": "Nagy Ghast",
+      "en": "Greater Ghast"
+    },
+    "hp": 40,
+    "dmgMin": 8,
+    "dmgMax": 12,
+    "dmgType": "fireball",
+    "xp": 20,
+    "spawnZones": [
+      "nether"
+    ],
+    "difficulty": "late",
+    "tags": [
+      "fire_immune",
+      "flying"
+    ],
+    "special": {
+      "hu": "Óriási, repülő, tűzokádó",
+      "en": "Enormous, flying, fire-breathing"
+    }
+  },
+  {
+    "id": "pillager_captain",
+    "name": {
+      "hu": "Fosztogató Vezető",
+      "en": "Pillager Captain"
+    },
+    "hp": 40,
+    "dmgMin": 6,
+    "dmgMax": 6,
+    "dmgType": "ranged",
+    "xp": 500,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "boss",
+    "tags": [
+      "summoner"
+    ],
+    "special": {
+      "hu": "Erősebb páncélos vezér",
+      "en": "Stronger armored leader"
+    }
+  },
+  {
+    "id": "zealot",
+    "name": {
+      "hu": "Zealot (Fanatic Vindicator)",
+      "en": "Zealot (Fanatic Vindicator)"
+    },
+    "hp": 80,
+    "dmgMin": 13,
+    "dmgMax": 13,
+    "dmgType": "melee",
+    "xp": 40,
+    "spawnZones": [
+      "unknown"
+    ],
+    "difficulty": "late",
+    "tags": [
+      "requires_ancient_metal"
+    ],
+    "special": {
+      "hu": "Extrém sebzés! Vas fejszével támad",
+      "en": "Extreme damage! Attacks with iron axe"
+    }
+  },
+  {
+    "id": "zealot_plains",
+    "name": {
+      "hu": "Síkság Zealot",
+      "en": "Plains Zealot"
+    },
+    "hp": 20,
+    "dmgMin": 3,
+    "dmgMax": 5,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "unknown"
+    ],
+    "difficulty": "late",
+    "tags": [
+      "requires_ancient_metal"
+    ],
+    "special": {
+      "hu": "Biome-specifikus, erősebb variáns",
+      "en": "Biome-specific, stronger variant"
+    }
+  },
+  {
+    "id": "zealot_snowy",
+    "name": {
+      "hu": "Havas Zealot",
+      "en": "Snowy Zealot"
+    },
+    "hp": 20,
+    "dmgMin": 3,
+    "dmgMax": 5,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "unknown"
+    ],
+    "difficulty": "late",
+    "tags": [
+      "requires_ancient_metal"
+    ],
+    "special": {
+      "hu": "Biome-specifikus, erősebb variáns",
+      "en": "Biome-specific, stronger variant"
+    }
+  },
+  {
+    "id": "zealot_jungle",
+    "name": {
+      "hu": "Dzsungel Zealot",
+      "en": "Jungle Zealot"
+    },
+    "hp": 20,
+    "dmgMin": 3,
+    "dmgMax": 5,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "unknown"
+    ],
+    "difficulty": "late",
+    "tags": [
+      "requires_ancient_metal"
+    ],
+    "special": {
+      "hu": "Biome-specifikus, erősebb variáns",
+      "en": "Biome-specific, stronger variant"
+    }
+  },
+  {
+    "id": "bone_lord",
+    "name": {
+      "hu": "Csont Úr",
+      "en": "Bone Lord"
+    },
+    "hp": 50,
+    "dmgMin": 8,
+    "dmgMax": 8,
+    "dmgType": "melee",
+    "xp": 15,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "boss",
+    "tags": [
+      "summoner"
+    ],
+    "special": {
+      "hu": "Boss — csontváz idézés",
+      "en": "Boss — summons skeletons"
+    }
+  },
+  {
+    "id": "ancient_bone_lord",
+    "name": {
+      "hu": "Ókori Csont Úr",
+      "en": "Ancient Bone Lord"
+    },
+    "hp": 80,
+    "dmgMin": 12,
+    "dmgMax": 12,
+    "dmgType": "melee",
+    "xp": 30,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "boss",
+    "tags": [
+      "summoner",
+      "requires_mithril"
+    ],
+    "special": {
+      "hu": "Erősebb boss változat",
+      "en": "Stronger boss variant"
+    }
+  },
+  {
+    "id": "white_ghoul",
+    "name": {
+      "hu": "Fehér Ghoul",
+      "en": "White Ghoul"
+    },
+    "hp": 20,
+    "dmgMin": 5,
+    "dmgMax": 5,
+    "dmgType": "melee",
+    "xp": 10,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Ghoul variáns, fehér megjelenés",
+      "en": "Ghoul variant, white appearance"
+    }
+  },
+  {
+    "id": "black_ghoul",
+    "name": {
+      "hu": "Fekete Ghoul",
+      "en": "Black Ghoul"
+    },
+    "hp": 20,
+    "dmgMin": 5,
+    "dmgMax": 5,
+    "dmgType": "melee",
+    "xp": 10,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [],
+    "special": {
+      "hu": "Ghoul variáns, fekete megjelenés",
+      "en": "Ghoul variant, black appearance"
+    }
+  },
+  {
+    "id": "shadow",
+    "name": {
+      "hu": "Árnyék",
+      "en": "Shadow"
+    },
+    "hp": 16,
+    "dmgMin": 4,
+    "dmgMax": 4,
+    "dmgType": "melee",
+    "xp": 10,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "invisible"
+    ],
+    "special": {
+      "hu": "Félig láthatatlan árnyék lény",
+      "en": "Semi-invisible shadow creature"
+    }
+  },
+  {
+    "id": "revenant",
+    "name": {
+      "hu": "Visszajáró",
+      "en": "Revenant"
+    },
+    "hp": 24,
+    "dmgMin": 6,
+    "dmgMax": 6,
+    "dmgType": "melee",
+    "xp": 15,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "requires_silver"
+    ],
+    "special": {
+      "hu": "Ezüst fegyver szükséges a sebzéshez",
+      "en": "Requires silver weapon to damage"
+    }
+  },
+  {
+    "id": "brown_slime",
+    "name": {
+      "hu": "Barna Zselé",
+      "en": "Brown Slime"
+    },
+    "hp": 12,
+    "dmgMin": 2,
+    "dmgMax": 2,
+    "dmgType": "melee",
+    "xp": 8,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Barna nyálka változat",
+      "en": "Brown slime variant"
+    }
+  },
+  {
+    "id": "red_slime",
+    "name": {
+      "hu": "Vörös Nyálka",
+      "en": "Red Slime"
+    },
+    "hp": 20,
+    "dmgMin": 4,
+    "dmgMax": 4,
+    "dmgType": "melee",
+    "xp": 12,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "poison"
+    ],
+    "special": {
+      "hu": "Mérgező, vörös nyálka változat",
+      "en": "Poisonous red slime variant"
+    }
+  },
+  {
+    "id": "grey_slime",
+    "name": {
+      "hu": "Szürke Sár",
+      "en": "Grey Slime"
+    },
+    "hp": 10,
+    "dmgMin": 2,
+    "dmgMax": 2,
+    "dmgType": "melee",
+    "xp": 8,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Szürke nyálka változat",
+      "en": "Grey slime variant"
+    }
+  },
+  {
+    "id": "black_slime",
+    "name": {
+      "hu": "Fekete Puding",
+      "en": "Black Slime"
+    },
+    "hp": 30,
+    "dmgMin": 6,
+    "dmgMax": 6,
+    "dmgType": "melee",
+    "xp": 20,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "late",
+    "tags": [
+      "life_steal"
+    ],
+    "special": {
+      "hu": "Életlopó fekete nyálka változat",
+      "en": "Life-stealing black slime variant"
+    }
+  },
+  {
+    "id": "shadow_bat",
+    "name": {
+      "hu": "Éjszárny (Árnyék Denevér)",
+      "en": "Shadow Bat"
+    },
+    "hp": 12,
+    "dmgMin": 3,
+    "dmgMax": 3,
+    "dmgType": "melee",
+    "xp": 10,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "flying",
+      "invisible"
+    ],
+    "special": {
+      "hu": "Repülő, félig láthatatlan denevér",
+      "en": "Flying, semi-invisible bat"
+    }
+  },
+  {
+    "id": "explosive_silverfish",
+    "name": {
+      "hu": "Robbanó Ezüsthal",
+      "en": "Explosive Silverfish"
+    },
+    "hp": 8,
+    "dmgMin": 3,
+    "dmgMax": 6,
+    "dmgType": "explosion",
+    "xp": 10,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "explosion",
+      "pack"
+    ],
+    "special": {
+      "hu": "Robban halál esetén",
+      "en": "Explodes on death"
+    }
+  },
+  {
+    "id": "copper_poison_silverfish",
+    "name": {
+      "hu": "Rézgerinc (Rézmérges Ezüsthal)",
+      "en": "Copper Poison Silverfish"
+    },
+    "hp": 8,
+    "dmgMin": 2,
+    "dmgMax": 2,
+    "dmgType": "melee",
+    "xp": 10,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "poison",
+      "pack"
+    ],
+    "special": {
+      "hu": "Mérgező harapás, réz jellegű",
+      "en": "Poisonous bite, copper-type"
+    }
+  },
+  {
+    "id": "ancient_silverfish",
+    "name": {
+      "hu": "Ősrégi Ezüsthal",
+      "en": "Ancient Silverfish"
+    },
+    "hp": 8,
+    "dmgMin": 3,
+    "dmgMax": 3,
+    "dmgType": "melee",
+    "xp": 10,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "late",
+    "tags": [
+      "requires_ancient_metal",
+      "pack"
+    ],
+    "special": {
+      "hu": "Csak Ősi Fém fegyverrel sebezhető",
+      "en": "Only damaged by Ancient Metal weapons"
+    }
+  },
+  {
+    "id": "clay_golem",
+    "name": {
+      "hu": "Agyag Gólem",
+      "en": "Clay Golem"
+    },
+    "hp": 20,
+    "dmgMin": 5,
+    "dmgMax": 5,
+    "dmgType": "melee",
+    "xp": 15,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [],
+    "special": {
+      "hu": "Agyagból készült gólem",
+      "en": "Clay-made golem"
+    }
+  },
+  {
+    "id": "skeleton_lord",
+    "name": {
+      "hu": "Csontváz Úr",
+      "en": "Skeleton Lord"
+    },
+    "hp": 50,
+    "dmgMin": 8,
+    "dmgMax": 8,
+    "dmgType": "melee",
+    "xp": 15,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "boss",
+    "tags": [
+      "summoner"
+    ],
+    "special": {
+      "hu": "Boss — csontváz idézés, erős közelharc",
+      "en": "Boss — summons skeletons, strong melee"
+    }
+  },
+  {
+    "id": "ancient_skeleton_lord",
+    "name": {
+      "hu": "Ókori Csontváz Úr",
+      "en": "Ancient Skeleton Lord"
+    },
+    "hp": 80,
+    "dmgMin": 12,
+    "dmgMax": 12,
+    "dmgType": "melee",
+    "xp": 30,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "boss",
+    "tags": [
+      "summoner",
+      "requires_mithril"
+    ],
+    "special": {
+      "hu": "Erősebb boss változat",
+      "en": "Stronger boss variant"
+    }
+  },
+  {
+    "id": "variant_skeleton_lord",
+    "name": {
+      "hu": "Mutáns Csont Úr",
+      "en": "Variant Skeleton Lord"
+    },
+    "hp": 100,
+    "dmgMin": 15,
+    "dmgMax": 15,
+    "dmgType": "melee",
+    "xp": 1000,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "boss",
+    "tags": [
+      "summoner",
+      "requires_mithril"
+    ],
+    "special": {
+      "hu": "Ritka mutáns variáns boss",
+      "en": "Rare mutant variant boss"
+    }
+  },
+  {
+    "id": "obsidian_golem",
+    "name": {
+      "hu": "Obszidián Gólem",
+      "en": "Obsidian Golem"
+    },
+    "hp": 80,
+    "dmgMin": 12,
+    "dmgMax": 12,
+    "dmgType": "melee",
+    "xp": 150,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "boss",
+    "tags": [
+      "fire_immune"
+    ],
+    "special": {
+      "hu": "Tűzálló, rendkívül kemény boss",
+      "en": "Fire immune, extremely tough boss"
+    }
+  },
+  {
+    "id": "plains_zombie",
+    "name": {
+      "hu": "Síkság Zombi",
+      "en": "Plains Zombie"
+    },
+    "hp": 22,
+    "dmgMin": 4,
+    "dmgMax": 4,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "pack"
+    ],
+    "special": {
+      "hu": "Síkság biome-specifikus zombi variáns",
+      "en": "Plains biome-specific zombie variant"
+    }
+  },
+  {
+    "id": "plains_skeleton",
+    "name": {
+      "hu": "Síkság Csontváz",
+      "en": "Plains Skeleton"
+    },
+    "hp": 20,
+    "dmgMin": 3,
+    "dmgMax": 3,
+    "dmgType": "ranged",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Síkság biome-specifikus csontváz variáns",
+      "en": "Plains biome-specific skeleton variant"
+    }
+  },
+  {
+    "id": "plains_creeper",
+    "name": {
+      "hu": "Síkság Kúszó",
+      "en": "Plains Creeper"
+    },
+    "hp": 20,
+    "dmgMin": 6,
+    "dmgMax": 12,
+    "dmgType": "explosion",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "explosion"
+    ],
+    "special": {
+      "hu": "Síkság biome-specifikus creeper variáns",
+      "en": "Plains biome-specific creeper variant"
+    }
+  },
+  {
+    "id": "plains_spider",
+    "name": {
+      "hu": "Síkság Pók",
+      "en": "Plains Spider"
+    },
+    "hp": 16,
+    "dmgMin": 2,
+    "dmgMax": 2,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "pack"
+    ],
+    "special": {
+      "hu": "Síkság biome-specifikus pók variáns",
+      "en": "Plains biome-specific spider variant"
+    }
+  },
+  {
+    "id": "snowy_zombie",
+    "name": {
+      "hu": "Havas Zombi",
+      "en": "Snowy Zombie"
+    },
+    "hp": 22,
+    "dmgMin": 4,
+    "dmgMax": 4,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "pack"
+    ],
+    "special": {
+      "hu": "Havas biome-specifikus zombi variáns",
+      "en": "Snowy biome-specific zombie variant"
+    }
+  },
+  {
+    "id": "snowy_skeleton",
+    "name": {
+      "hu": "Havas Csontváz",
+      "en": "Snowy Skeleton"
+    },
+    "hp": 20,
+    "dmgMin": 3,
+    "dmgMax": 3,
+    "dmgType": "ranged",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Havas biome-specifikus csontváz variáns",
+      "en": "Snowy biome-specific skeleton variant"
+    }
+  },
+  {
+    "id": "snowy_creeper",
+    "name": {
+      "hu": "Havas Kúszó",
+      "en": "Snowy Creeper"
+    },
+    "hp": 20,
+    "dmgMin": 8,
+    "dmgMax": 14,
+    "dmgType": "explosion",
+    "xp": 10,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "explosion"
+    ],
+    "special": {
+      "hu": "Havas biome-specifikus creeper, erősebb robbanás",
+      "en": "Snowy biome-specific creeper, stronger explosion"
+    }
+  },
+  {
+    "id": "snowy_spider",
+    "name": {
+      "hu": "Havas Pók",
+      "en": "Snowy Spider"
+    },
+    "hp": 16,
+    "dmgMin": 2,
+    "dmgMax": 2,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "pack",
+      "poison"
+    ],
+    "special": {
+      "hu": "Havas biome-specifikus pók, mérgező",
+      "en": "Snowy biome-specific spider, poisonous"
+    }
+  },
+  {
+    "id": "jungle_zombie",
+    "name": {
+      "hu": "Dzsungel Zombi",
+      "en": "Jungle Zombie"
+    },
+    "hp": 22,
+    "dmgMin": 4,
+    "dmgMax": 4,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "pack"
+    ],
+    "special": {
+      "hu": "Dzsungel biome-specifikus zombi variáns",
+      "en": "Jungle biome-specific zombie variant"
+    }
+  },
+  {
+    "id": "jungle_skeleton",
+    "name": {
+      "hu": "Dzsungel Csontváz",
+      "en": "Jungle Skeleton"
+    },
+    "hp": 20,
+    "dmgMin": 3,
+    "dmgMax": 3,
+    "dmgType": "ranged",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Dzsungel biome-specifikus csontváz variáns",
+      "en": "Jungle biome-specific skeleton variant"
+    }
+  },
+  {
+    "id": "jungle_creeper",
+    "name": {
+      "hu": "Dzsungel Kúszó",
+      "en": "Jungle Creeper"
+    },
+    "hp": 20,
+    "dmgMin": 6,
+    "dmgMax": 12,
+    "dmgType": "explosion",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "explosion"
+    ],
+    "special": {
+      "hu": "Dzsungel biome-specifikus creeper variáns",
+      "en": "Jungle biome-specific creeper variant"
+    }
+  },
+  {
+    "id": "jungle_spider",
+    "name": {
+      "hu": "Dzsungel Pók",
+      "en": "Jungle Spider"
+    },
+    "hp": 16,
+    "dmgMin": 2,
+    "dmgMax": 2,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "pack",
+      "poison"
+    ],
+    "special": {
+      "hu": "Dzsungel biome-specifikus pók, mérgező",
+      "en": "Jungle biome-specific spider, poisonous"
+    }
+  },
+  {
+    "id": "tnt_skeleton",
+    "name": {
+      "hu": "Rakéta Csontváz",
+      "en": "TNT Skeleton"
+    },
+    "hp": 20,
+    "dmgMin": 8,
+    "dmgMax": 8,
+    "dmgType": "ranged",
+    "xp": 30,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "explosion"
+    ],
+    "special": {
+      "hu": "Robbanó nyilakat lő",
+      "en": "Shoots explosive arrows"
+    }
+  },
+  {
+    "id": "confused_creeper",
+    "name": {
+      "hu": "Zavart Kúszó",
+      "en": "Confused Creeper"
+    },
+    "hp": 20,
+    "dmgMin": 10,
+    "dmgMax": 10,
+    "dmgType": "explosion",
+    "xp": 30,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "explosion"
+    ],
+    "special": {
+      "hu": "Kiszámíthatatlan robbanó viselkedés",
+      "en": "Unpredictable explosive behavior"
+    }
+  },
+  {
+    "id": "end_lightning_creeper",
+    "name": {
+      "hu": "Vég Villám Kúszó",
+      "en": "End Lightning Creeper"
+    },
+    "hp": 20,
+    "dmgMin": 12,
+    "dmgMax": 16,
+    "dmgType": "explosion",
+    "xp": 40,
+    "spawnZones": [
+      "unknown"
+    ],
+    "difficulty": "late",
+    "tags": [
+      "explosion"
+    ],
+    "special": {
+      "hu": "Villámmal robbantó Vég dimenzió creeper",
+      "en": "Lightning-charged End dimension creeper"
+    }
+  },
+  {
+    "id": "little_creeper",
+    "name": {
+      "hu": "Bébi Kúszó",
+      "en": "Little Creeper"
+    },
+    "hp": 8,
+    "dmgMin": 3,
+    "dmgMax": 3,
+    "dmgType": "explosion",
+    "xp": 3,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "explosion"
+    ],
+    "special": {
+      "hu": "Kis méretű creeper, kisebb robbanás",
+      "en": "Small-sized creeper, smaller explosion"
+    }
+  },
+  {
+    "id": "bomber",
+    "name": {
+      "hu": "Bombázó",
+      "en": "Bomber"
+    },
+    "hp": 24,
+    "dmgMin": 12,
+    "dmgMax": 12,
+    "dmgType": "explosion",
+    "xp": 30,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "explosion",
+      "flying"
+    ],
+    "special": {
+      "hu": "Repülő, bombákat dob",
+      "en": "Flying, drops bombs"
+    }
+  },
+  {
+    "id": "corrupted_snowman",
+    "name": {
+      "hu": "Romlott Hóember",
+      "en": "Corrupted Snowman"
+    },
+    "hp": 20,
+    "dmgMin": 4,
+    "dmgMax": 4,
+    "dmgType": "ranged",
+    "xp": 20,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "fire_immune"
+    ],
+    "special": {
+      "hu": "Tűzálló romlott hóember, hógolyókat dob",
+      "en": "Fire immune corrupted snowman, throws snowballs"
+    }
+  },
+  {
+    "id": "desert_guardian",
+    "name": {
+      "hu": "Sivatagi Őr",
+      "en": "Desert Guardian"
+    },
+    "hp": 20,
+    "dmgMin": 5,
+    "dmgMax": 5,
+    "dmgType": "melee",
+    "xp": 8,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [],
+    "special": {
+      "hu": "Sivatagi biome-specifikus őr",
+      "en": "Desert biome-specific guardian"
+    }
+  },
+  {
+    "id": "pigman_leader",
+    "name": {
+      "hu": "Disznóember Vezér",
+      "en": "Pigman Leader"
+    },
+    "hp": 40,
+    "dmgMin": 8,
+    "dmgMax": 8,
+    "dmgType": "melee",
+    "xp": 35,
+    "spawnZones": [
+      "nether"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "pack",
+      "gold_passive"
+    ],
+    "special": {
+      "hu": "Zombi Disznóember vezér, falkáját irányítja",
+      "en": "Zombie Pigman leader, commands its pack"
+    }
+  },
+  {
+    "id": "child_skeleton",
+    "name": {
+      "hu": "Bébi Csontváz",
+      "en": "Child Skeleton"
+    },
+    "hp": 10,
+    "dmgMin": 2,
+    "dmgMax": 2,
+    "dmgType": "ranged",
+    "xp": 2,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Kis méretű csontváz változat",
+      "en": "Small-sized skeleton variant"
+    }
+  },
+  {
+    "id": "child_iron_golem",
+    "name": {
+      "hu": "Bébi Vas Gólem",
+      "en": "Child Iron Golem"
+    },
+    "hp": 50,
+    "dmgMin": 6,
+    "dmgMax": 6,
+    "dmgType": "melee",
+    "xp": 20,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [],
+    "special": {
+      "hu": "Kis méretű vas gólem változat",
+      "en": "Small-sized iron golem variant"
+    }
+  },
+  {
+    "id": "child_ghast",
+    "name": {
+      "hu": "Bébi Kísértet",
+      "en": "Child Ghast"
+    },
+    "hp": 8,
+    "dmgMin": 4,
+    "dmgMax": 4,
+    "dmgType": "fireball",
+    "xp": 10,
+    "spawnZones": [
+      "nether"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "flying",
+      "fire_immune"
+    ],
+    "special": {
+      "hu": "Kis méretű ghast változat",
+      "en": "Small-sized ghast variant"
+    }
+  },
+  {
+    "id": "variant_child_ghast",
+    "name": {
+      "hu": "Variáns Bébi Kísértet",
+      "en": "Variant Child Ghast"
+    },
+    "hp": 8,
+    "dmgMin": 5,
+    "dmgMax": 5,
+    "dmgType": "fireball",
+    "xp": 10,
+    "spawnZones": [
+      "nether"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "flying",
+      "fire_immune"
+    ],
+    "special": {
+      "hu": "Bébi ghast erősebb variánsa",
+      "en": "Stronger variant of child ghast"
+    }
+  },
+  {
+    "id": "variant_zombie",
+    "name": {
+      "hu": "Variáns Zombi",
+      "en": "Variant Zombie"
+    },
+    "hp": 30,
+    "dmgMin": 6,
+    "dmgMax": 6,
+    "dmgType": "melee",
+    "xp": 25,
+    "spawnZones": [
+      "surface",
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "pack"
+    ],
+    "special": {
+      "hu": "Véletlenszerű erős zombi variáns",
+      "en": "Random strong zombie variant"
+    }
+  },
+  {
+    "id": "variant_skeleton",
+    "name": {
+      "hu": "Variáns Csontváz",
+      "en": "Variant Skeleton"
+    },
+    "hp": 25,
+    "dmgMin": 5,
+    "dmgMax": 5,
+    "dmgType": "ranged",
+    "xp": 20,
+    "spawnZones": [
+      "surface",
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [],
+    "special": {
+      "hu": "Véletlenszerű erős csontváz variáns",
+      "en": "Random strong skeleton variant"
+    }
+  },
+  {
+    "id": "variant_spider",
+    "name": {
+      "hu": "Variáns Pók",
+      "en": "Variant Spider"
+    },
+    "hp": 20,
+    "dmgMin": 5,
+    "dmgMax": 5,
+    "dmgType": "melee",
+    "xp": 50,
+    "spawnZones": [
+      "surface",
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "pack",
+      "poison"
+    ],
+    "special": {
+      "hu": "Véletlenszerű erős pók variáns",
+      "en": "Random strong spider variant"
+    }
+  },
+  {
+    "id": "variant_creeper",
+    "name": {
+      "hu": "Variáns Kúszó",
+      "en": "Variant Creeper"
+    },
+    "hp": 25,
+    "dmgMin": 10,
+    "dmgMax": 20,
+    "dmgType": "explosion",
+    "xp": 50,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "explosion"
+    ],
+    "special": {
+      "hu": "Véletlenszerű erős creeper variáns",
+      "en": "Random strong creeper variant"
+    }
+  },
+  {
+    "id": "him",
+    "name": {
+      "hu": "HIM",
+      "en": "HIM"
+    },
+    "hp": 200,
+    "dmgMin": 20,
+    "dmgMax": 20,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "boss",
+    "tags": [
+      "instant_kill",
+      "wall_detection",
+      "requires_ancient_metal"
+    ],
+    "special": {
+      "hu": "Extrém ritka spawn, azonnali halál esélye, csak Ősi Fém fegyverrel sebezhető",
+      "en": "Extremely rare spawn, instant kill chance, only Ancient Metal weapons work"
+    }
+  },
+  {
+    "id": "slime",
+    "name": {
+      "hu": "Nyálka",
+      "en": "Slime"
+    },
+    "hp": 8,
+    "dmgMin": 1,
+    "dmgMax": 1,
+    "dmgType": "melee",
+    "xp": 4,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Kisebb darabokra hasad öléskor",
+      "en": "Splits into smaller pieces on death"
+    }
+  },
+  {
+    "id": "ghast",
+    "name": {
+      "hu": "Kísértet",
+      "en": "Ghast"
+    },
+    "hp": 10,
+    "dmgMin": 9,
+    "dmgMax": 9,
+    "dmgType": "fireball",
+    "xp": 10,
+    "spawnZones": [
+      "nether"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "flying",
+      "fire_immune"
+    ],
+    "special": {
+      "hu": "Repülő, tűzgolyókat lő a Netherből",
+      "en": "Flying, shoots fireballs in the Nether"
+    }
+  },
+  {
+    "id": "cave_spider",
+    "name": {
+      "hu": "Barlang Pók",
+      "en": "Cave Spider"
+    },
+    "hp": 12,
+    "dmgMin": 2,
+    "dmgMax": 2,
+    "dmgType": "melee",
+    "xp": 10,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "poison"
+    ],
+    "special": {
+      "hu": "Mérgező barlang pók",
+      "en": "Poisonous cave spider"
+    }
+  },
+  {
+    "id": "blaze",
+    "name": {
+      "hu": "Lángoszlop",
+      "en": "Blaze"
+    },
+    "hp": 20,
+    "dmgMin": 5,
+    "dmgMax": 5,
+    "dmgType": "fireball",
+    "xp": 20,
+    "spawnZones": [
+      "nether"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "flying",
+      "fire_immune",
+      "fire_damage"
+    ],
+    "special": {
+      "hu": "Tűzgolyókat lő, Nether Erőd lakója",
+      "en": "Shoots fireballs, inhabits Nether Fortress"
+    }
+  },
+  {
+    "id": "magma_cube",
+    "name": {
+      "hu": "Magma Kocka",
+      "en": "Magma Cube"
+    },
+    "hp": 16,
+    "dmgMin": 3,
+    "dmgMax": 3,
+    "dmgType": "melee",
+    "xp": 12,
+    "spawnZones": [
+      "nether"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "fire_immune"
+    ],
+    "special": {
+      "hu": "Tűzálló láva kocka, Netherben él",
+      "en": "Fire immune lava cube, lives in Nether"
+    }
+  },
+  {
+    "id": "wither",
+    "name": {
+      "hu": "Hervadó",
+      "en": "Wither"
+    },
+    "hp": 300,
+    "dmgMin": 8,
+    "dmgMax": 8,
+    "dmgType": "ranged",
+    "xp": 50,
+    "spawnZones": [
+      "nether"
+    ],
+    "difficulty": "boss",
+    "tags": [
+      "flying",
+      "fire_immune",
+      "summoner"
+    ],
+    "special": {
+      "hu": "Idézhető boss a Netherben, Wither Csillag ejt",
+      "en": "Summonable boss in the Nether, drops Nether Star"
+    }
+  },
+  {
+    "id": "enderman",
+    "name": {
+      "hu": "Végember",
+      "en": "Enderman"
+    },
+    "hp": 40,
+    "dmgMin": 7,
+    "dmgMax": 7,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "unknown"
+    ],
+    "difficulty": "late",
+    "tags": [
+      "wall_detection"
+    ],
+    "special": {
+      "hu": "Teleportál, víztől sebesül, Hardcore-ban víz halálos",
+      "en": "Teleports, hurt by water, water is lethal in Hardcore"
+    }
+  },
+  {
+    "id": "silverfish",
+    "name": {
+      "hu": "Ezüsthal",
+      "en": "Silverfish"
+    },
+    "hp": 8,
+    "dmgMin": 1,
+    "dmgMax": 1,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "pack"
+    ],
+    "special": {
+      "hu": "Kőből bújik elő, falkát hív",
+      "en": "Hides in stone, calls pack"
+    }
+  },
+  {
+    "id": "ender_dragon",
+    "name": {
+      "hu": "Ender Sárkány",
+      "en": "Ender Dragon"
+    },
+    "hp": 200,
+    "dmgMin": 15,
+    "dmgMax": 15,
+    "dmgType": "melee",
+    "xp": 100,
+    "spawnZones": [
+      "unknown"
+    ],
+    "difficulty": "boss",
+    "tags": [
+      "flying",
+      "fire_immune"
+    ],
+    "special": {
+      "hu": "Végjáték boss — Core Breaker kell a legyőzéséhez",
+      "en": "Endgame boss — requires Core Breaker to defeat"
+    }
+  },
+  {
+    "id": "iron_golem",
+    "name": {
+      "hu": "Vas Gólem",
+      "en": "Iron Golem"
+    },
+    "hp": 100,
+    "dmgMin": 10,
+    "dmgMax": 10,
+    "dmgType": "melee",
+    "xp": 20,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [],
+    "special": {
+      "hu": "Falusi védelmező, semleges ha nem provokálják",
+      "en": "Village protector, neutral unless provoked"
+    }
+  },
+  {
+    "id": "vindicator",
+    "name": {
+      "hu": "Megtorlós",
+      "en": "Vindicator"
+    },
+    "hp": 24,
+    "dmgMin": 8,
+    "dmgMax": 8,
+    "dmgType": "melee",
+    "xp": 35,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [],
+    "special": {
+      "hu": "Illager harcos, fejszével támad",
+      "en": "Illager warrior, attacks with axe"
+    }
+  },
+  {
+    "id": "earthworm",
+    "name": {
+      "hu": "Giliszta",
+      "en": "Earthworm"
+    },
+    "hp": 4,
+    "dmgMin": 0,
+    "dmgMax": 0,
+    "dmgType": "melee",
+    "xp": 2,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Féreggé váló komposzt lakó",
+      "en": "Composting creature"
+    }
+  },
+  {
+    "id": "crab",
+    "name": {
+      "hu": "Rák",
+      "en": "Crab"
+    },
+    "hp": 8,
+    "dmgMin": 2,
+    "dmgMax": 2,
+    "dmgType": "melee",
+    "xp": 2,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Vízparti rák",
+      "en": "Shoreline crab"
+    }
+  },
+  {
+    "id": "mallard",
+    "name": {
+      "hu": "Vadkacsa",
+      "en": "Mallard"
+    },
+    "hp": 4,
+    "dmgMin": 0,
+    "dmgMax": 0,
+    "dmgType": "melee",
+    "xp": 2,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "flying"
+    ],
+    "special": {
+      "hu": "Vadkacsa, ártalmatlan",
+      "en": "Wild duck, harmless"
+    }
+  },
+  {
+    "id": "pig",
+    "name": {
+      "hu": "Disznó",
+      "en": "Pig"
+    },
+    "hp": 10,
+    "dmgMin": 0,
+    "dmgMax": 0,
+    "dmgType": "melee",
+    "xp": 2,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Szelíd állat, sertéshúst ejt",
+      "en": "Passive animal, drops pork"
+    }
+  },
+  {
+    "id": "sheep",
+    "name": {
+      "hu": "Juh",
+      "en": "Sheep"
+    },
+    "hp": 8,
+    "dmgMin": 0,
+    "dmgMax": 0,
+    "dmgType": "melee",
+    "xp": 2,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Szelíd állat, gyapjút és bárányhúst ejt",
+      "en": "Passive animal, drops wool and mutton"
+    }
+  },
+  {
+    "id": "cow",
+    "name": {
+      "hu": "Tehén",
+      "en": "Cow"
+    },
+    "hp": 10,
+    "dmgMin": 0,
+    "dmgMax": 0,
+    "dmgType": "melee",
+    "xp": 2,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Szelíd állat, bőrt és marhahúst ejt",
+      "en": "Passive animal, drops leather and beef"
+    }
+  },
+  {
+    "id": "chicken",
+    "name": {
+      "hu": "Csirke",
+      "en": "Chicken"
+    },
+    "hp": 4,
+    "dmgMin": 0,
+    "dmgMax": 0,
+    "dmgType": "melee",
+    "xp": 2,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "flying"
+    ],
+    "special": {
+      "hu": "Szelíd állat, tojást és csirkecombot ejt",
+      "en": "Passive animal, drops eggs and chicken"
+    }
+  },
+  {
+    "id": "wolf",
+    "name": {
+      "hu": "Farkas",
+      "en": "Wolf"
+    },
+    "hp": 8,
+    "dmgMin": 4,
+    "dmgMax": 4,
+    "dmgType": "melee",
+    "xp": 2,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "pack"
+    ],
+    "special": {
+      "hu": "Szelídíthető, provokálásra agresszív",
+      "en": "Tameable, aggressive when provoked"
+    }
+  },
+  {
+    "id": "mooshroom",
+    "name": {
+      "hu": "Gombatehén",
+      "en": "Mooshroom"
+    },
+    "hp": 10,
+    "dmgMin": 0,
+    "dmgMax": 0,
+    "dmgType": "melee",
+    "xp": 2,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Gomba szigeten él, gombaleves forrás",
+      "en": "Lives on mushroom islands, mushroom soup source"
+    }
+  },
+  {
+    "id": "ocelot",
+    "name": {
+      "hu": "Ocelot",
+      "en": "Ocelot"
+    },
+    "hp": 10,
+    "dmgMin": 2,
+    "dmgMax": 2,
+    "dmgType": "melee",
+    "xp": 2,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Dzsungelben él, creepereket elriaszt",
+      "en": "Lives in jungles, scares creepers"
+    }
+  },
+  {
+    "id": "horse",
+    "name": {
+      "hu": "Ló",
+      "en": "Horse"
+    },
+    "hp": 15,
+    "dmgMin": 0,
+    "dmgMax": 0,
+    "dmgType": "melee",
+    "xp": 2,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Szelídíthető hátasállat",
+      "en": "Tameable mount"
+    }
+  },
+  {
+    "id": "medium_fish",
+    "name": {
+      "hu": "Közepes Hal",
+      "en": "Medium Fish"
+    },
+    "hp": 4,
+    "dmgMin": 1,
+    "dmgMax": 1,
+    "dmgType": "melee",
+    "xp": 1,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Vízben élő hal",
+      "en": "Water-dwelling fish"
+    }
+  },
+  {
+    "id": "turkey",
+    "name": {
+      "hu": "Pulyka",
+      "en": "Turkey"
+    },
+    "hp": 6,
+    "dmgMin": 1,
+    "dmgMax": 1,
+    "dmgType": "melee",
+    "xp": 4,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Pulyka, húst ejt",
+      "en": "Turkey, drops meat"
+    }
+  },
+  {
+    "id": "scorpion",
+    "name": {
+      "hu": "Skorpió",
+      "en": "Scorpion"
+    },
+    "hp": 12,
+    "dmgMin": 3,
+    "dmgMax": 3,
+    "dmgType": "melee",
+    "xp": 10,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "poison"
+    ],
+    "special": {
+      "hu": "Mérgező csipés, sivatagban él",
+      "en": "Poisonous sting, lives in desert"
+    }
+  },
+  {
+    "id": "rat",
+    "name": {
+      "hu": "Patkány",
+      "en": "Rat"
+    },
+    "hp": 4,
+    "dmgMin": 1,
+    "dmgMax": 1,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "pack",
+      "poison"
+    ],
+    "special": {
+      "hu": "Mérgező harapás, falkában támad",
+      "en": "Poisonous bite, attacks in packs"
+    }
+  },
+  {
+    "id": "shark",
+    "name": {
+      "hu": "Cápa",
+      "en": "Shark"
+    },
+    "hp": 20,
+    "dmgMin": 6,
+    "dmgMax": 6,
+    "dmgType": "melee",
+    "xp": 20,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [],
+    "special": {
+      "hu": "Veszélyes óceáni ragadozó",
+      "en": "Dangerous ocean predator"
+    }
+  },
+  {
+    "id": "bee",
+    "name": {
+      "hu": "Méh",
+      "en": "Bee"
+    },
+    "hp": 4,
+    "dmgMin": 1,
+    "dmgMax": 1,
+    "dmgType": "melee",
+    "xp": 1,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "poison",
+      "flying"
+    ],
+    "special": {
+      "hu": "Mérgező csipés, repülő",
+      "en": "Poisonous sting, flying"
+    }
+  },
+  {
+    "id": "coyote",
+    "name": {
+      "hu": "Prérifarkias",
+      "en": "Coyote"
+    },
+    "hp": 12,
+    "dmgMin": 3,
+    "dmgMax": 3,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "pack"
+    ],
+    "special": {
+      "hu": "Falkában vadász prérifarkias",
+      "en": "Pack-hunting coyote"
+    }
+  },
+  {
+    "id": "cougar",
+    "name": {
+      "hu": "Puma",
+      "en": "Cougar"
+    },
+    "hp": 16,
+    "dmgMin": 5,
+    "dmgMax": 5,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [],
+    "special": {
+      "hu": "Magányos nagy ragadozó",
+      "en": "Solitary large predator"
+    }
+  },
+  {
+    "id": "black_bear",
+    "name": {
+      "hu": "Fekete Medve",
+      "en": "Black Bear"
+    },
+    "hp": 20,
+    "dmgMin": 4,
+    "dmgMax": 4,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Fekete medve, provokálva veszélyes",
+      "en": "Black bear, dangerous when provoked"
+    }
+  },
+  {
+    "id": "yak",
+    "name": {
+      "hu": "Jak",
+      "en": "Yak"
+    },
+    "hp": 20,
+    "dmgMin": 3,
+    "dmgMax": 3,
+    "dmgType": "melee",
+    "xp": 6,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Hegyi jak állat",
+      "en": "Mountain yak animal"
+    }
+  },
+  {
+    "id": "musk_ox",
+    "name": {
+      "hu": "Pézsmatulok",
+      "en": "Musk Ox"
+    },
+    "hp": 24,
+    "dmgMin": 4,
+    "dmgMax": 4,
+    "dmgType": "melee",
+    "xp": 8,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Nagy tundra állat",
+      "en": "Large tundra animal"
+    }
+  },
+  {
+    "id": "camel",
+    "name": {
+      "hu": "Teve",
+      "en": "Camel"
+    },
+    "hp": 20,
+    "dmgMin": 2,
+    "dmgMax": 2,
+    "dmgType": "melee",
+    "xp": 2,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Sivatagi teve állat",
+      "en": "Desert camel animal"
+    }
+  },
+  {
+    "id": "boar",
+    "name": {
+      "hu": "Vaddisznó",
+      "en": "Boar"
+    },
+    "hp": 16,
+    "dmgMin": 4,
+    "dmgMax": 4,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Vaddisznó, provokálva charge-ol",
+      "en": "Wild boar, charges when provoked"
+    }
+  },
+  {
+    "id": "hyena",
+    "name": {
+      "hu": "Hiéna",
+      "en": "Hyena"
+    },
+    "hp": 12,
+    "dmgMin": 3,
+    "dmgMax": 3,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [
+      "pack"
+    ],
+    "special": {
+      "hu": "Falkában vadász hiéna",
+      "en": "Pack-hunting hyena"
+    }
+  },
+  {
+    "id": "saber_toothed_tiger",
+    "name": {
+      "hu": "Kardfogas Tigris",
+      "en": "Saber-Toothed Tiger"
+    },
+    "hp": 24,
+    "dmgMin": 8,
+    "dmgMax": 8,
+    "dmgType": "melee",
+    "xp": 20,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "late",
+    "tags": [],
+    "special": {
+      "hu": "Kihalt ragadozó, erős közelharc",
+      "en": "Extinct predator, strong melee"
+    }
+  },
+  {
+    "id": "panther",
+    "name": {
+      "hu": "Párduc",
+      "en": "Panther"
+    },
+    "hp": 16,
+    "dmgMin": 5,
+    "dmgMax": 5,
+    "dmgType": "melee",
+    "xp": 10,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [],
+    "special": {
+      "hu": "Gyors dzsungel ragadozó",
+      "en": "Fast jungle predator"
+    }
+  },
+  {
+    "id": "polar_bear",
+    "name": {
+      "hu": "Jegesmedve",
+      "en": "Polar Bear"
+    },
+    "hp": 30,
+    "dmgMin": 7,
+    "dmgMax": 7,
+    "dmgType": "melee",
+    "xp": 20,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [],
+    "special": {
+      "hu": "Havas biome ragadozó, kölyökkel veszélyes",
+      "en": "Snowy biome predator, dangerous with cubs"
+    }
+  },
+  {
+    "id": "grizzly_bear",
+    "name": {
+      "hu": "Barnamedve",
+      "en": "Grizzly Bear"
+    },
+    "hp": 24,
+    "dmgMin": 6,
+    "dmgMax": 6,
+    "dmgType": "melee",
+    "xp": 15,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [],
+    "special": {
+      "hu": "Nagy barnamedve, erős közelharc",
+      "en": "Large grizzly bear, strong melee"
+    }
+  },
+  {
+    "id": "deer",
+    "name": {
+      "hu": "Szarvas",
+      "en": "Deer"
+    },
+    "hp": 10,
+    "dmgMin": 1,
+    "dmgMax": 1,
+    "dmgType": "melee",
+    "xp": 3,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Menekülő szelíd szarvas",
+      "en": "Fleeing passive deer"
+    }
+  },
+  {
+    "id": "duck",
+    "name": {
+      "hu": "Kacsa",
+      "en": "Duck"
+    },
+    "hp": 4,
+    "dmgMin": 0,
+    "dmgMax": 0,
+    "dmgType": "melee",
+    "xp": 2,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Szelíd vízimadár",
+      "en": "Passive water bird"
+    }
+  },
+  {
+    "id": "elephant",
+    "name": {
+      "hu": "Elefánt",
+      "en": "Elephant"
+    },
+    "hp": 40,
+    "dmgMin": 8,
+    "dmgMax": 8,
+    "dmgType": "melee",
+    "xp": 25,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "tags": [],
+    "special": {
+      "hu": "Nagy savanna állat, charge-ol",
+      "en": "Large savanna animal, charges"
+    }
+  },
+  {
+    "id": "llama",
+    "name": {
+      "hu": "Láma",
+      "en": "Llama"
+    },
+    "hp": 15,
+    "dmgMin": 1,
+    "dmgMax": 1,
+    "dmgType": "melee",
+    "xp": 3,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [],
+    "special": {
+      "hu": "Hegyi teherhordó állat",
+      "en": "Mountain pack animal"
+    }
+  },
+  {
+    "id": "pheasant",
+    "name": {
+      "hu": "Fácán",
+      "en": "Pheasant"
+    },
+    "hp": 4,
+    "dmgMin": 0,
+    "dmgMax": 0,
+    "dmgType": "melee",
+    "xp": 1,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "flying"
+    ],
+    "special": {
+      "hu": "Szelíd madár, húst ejt",
+      "en": "Passive bird, drops meat"
+    }
+  }
+]

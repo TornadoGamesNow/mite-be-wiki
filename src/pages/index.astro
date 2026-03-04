@@ -3,8 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import TopNav from '../components/TopNav.astro';
 import Sidebar from '../components/Sidebar.astro';
-import MobExplorer from '../islands/MobExplorer.tsx';
 import '../styles/global.css';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const sidebarGroups = {
   hu: [
@@ -4176,11 +4177,91 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 </div>
 
 <!-- Interactive Islands -->
-<h2 id="mob-explorer">
-  <span data-lang="hu">Szörny Felfedező</span>
-  <span data-lang="en">Mob Explorer</span>
-</h2>
-<MobExplorer client:visible />
+<h2 id="mob-explorer" data-lang="hu">Ellenségek</h2>
+<div class="mob-teaser-stats" data-lang="hu">
+  <div class="mob-stat-chip">
+    <span class="mob-stat-num">124</span>
+    <span class="mob-stat-label">szörny</span>
+  </div>
+  <div class="mob-stat-chip">
+    <span class="mob-stat-num">3</span>
+    <span class="mob-stat-label">régió</span>
+  </div>
+  <div class="mob-stat-chip">
+    <span class="mob-stat-num">2</span>
+    <span class="mob-stat-label">boss</span>
+  </div>
+  <div class="mob-stat-chip">
+    <span class="mob-stat-num">4</span>
+    <span class="mob-stat-label">nehézségi szint</span>
+  </div>
+</div>
+<div class="mob-teaser-cards" data-lang="hu">
+  <div class="mob-card">
+    <div class="mob-card-icon">🐺</div>
+    <div class="mob-card-name">Dire Wolf</div>
+    <span class="diff-badge diff-mid">II</span>
+  </div>
+  <div class="mob-card">
+    <div class="mob-card-icon">💀</div>
+    <div class="mob-card-name">Bone Lord</div>
+    <span class="diff-badge diff-boss">★</span>
+  </div>
+  <div class="mob-card">
+    <div class="mob-card-icon">👻</div>
+    <div class="mob-card-name">Ghoul</div>
+    <span class="diff-badge diff-early">I</span>
+  </div>
+  <div class="mob-card">
+    <div class="mob-card-icon">🔥</div>
+    <div class="mob-card-name">Fire Elemental</div>
+    <span class="diff-badge diff-late">III</span>
+  </div>
+</div>
+<a href={`${base}/mobs/`} class="mob-teaser-btn" data-lang="hu">Szörny Enciklopédia →</a>
+
+<h2 id="mob-explorer-en" data-lang="en">Hostile Creatures</h2>
+<div class="mob-teaser-stats" data-lang="en">
+  <div class="mob-stat-chip">
+    <span class="mob-stat-num">124</span>
+    <span class="mob-stat-label">mobs</span>
+  </div>
+  <div class="mob-stat-chip">
+    <span class="mob-stat-num">3</span>
+    <span class="mob-stat-label">regions</span>
+  </div>
+  <div class="mob-stat-chip">
+    <span class="mob-stat-num">2</span>
+    <span class="mob-stat-label">bosses</span>
+  </div>
+  <div class="mob-stat-chip">
+    <span class="mob-stat-num">4</span>
+    <span class="mob-stat-label">difficulty tiers</span>
+  </div>
+</div>
+<div class="mob-teaser-cards" data-lang="en">
+  <div class="mob-card">
+    <div class="mob-card-icon">🐺</div>
+    <div class="mob-card-name">Dire Wolf</div>
+    <span class="diff-badge diff-mid">II</span>
+  </div>
+  <div class="mob-card">
+    <div class="mob-card-icon">💀</div>
+    <div class="mob-card-name">Bone Lord</div>
+    <span class="diff-badge diff-boss">★</span>
+  </div>
+  <div class="mob-card">
+    <div class="mob-card-icon">👻</div>
+    <div class="mob-card-name">Ghoul</div>
+    <span class="diff-badge diff-early">I</span>
+  </div>
+  <div class="mob-card">
+    <div class="mob-card-icon">🔥</div>
+    <div class="mob-card-name">Fire Elemental</div>
+    <span class="diff-badge diff-late">III</span>
+  </div>
+</div>
+<a href={`${base}/mobs/`} class="mob-teaser-btn" data-lang="en">Open Bestiary →</a>
 
 <div data-lang="hu" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
   <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Teljes Magyar Wiki ⚔️</p>

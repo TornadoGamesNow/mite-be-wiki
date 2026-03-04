@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import TopNav from '../components/TopNav.astro';
+import MobExplorer from '../islands/MobExplorer.tsx';
+import '../styles/global.css';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<BaseLayout title="Bestiary — MITE:BE Wiki">
+  <Header />
+  <TopNav currentPage="mobs" />
+  <main style="max-width:1440px; margin:0 auto; padding:24px 32px;">
+    <h2 data-lang="hu">Szörny Enciklopédia</h2>
+    <h2 data-lang="en">Bestiary</h2>
+    <p data-lang="hu" style="color:var(--text2)">124 szörny · 3 régió · egyedi mechanikák</p>
+    <p data-lang="en" style="color:var(--text2)">124 mobs · 3 regions · unique mechanics</p>
+    <MobExplorer client:load />
+  </main>
+</BaseLayout>
+<script is:inline src={`${base}/js/app.js`}></script>
