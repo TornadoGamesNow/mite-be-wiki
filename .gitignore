@@ -1,1 +1,10 @@
-node_modules/\ndist/\n.astro/
+node_modules/
+dist/
+.astro/
+
+# Lang reference files (local use only, not part of the wiki)
+assets/
+
+# OS
+.DS_Store
+Thumbs.db
