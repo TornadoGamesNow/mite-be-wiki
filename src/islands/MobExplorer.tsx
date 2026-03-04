@@ -173,7 +173,8 @@ export default function MobExplorer() {
       <th
         onClick={() => { if (sortKey === k) setSortAsc(!sortAsc); else { setSortKey(k); setSortAsc(true); } }}
         style={{ cursor: 'pointer', userSelect: 'none', whiteSpace: 'nowrap',
-          color: active ? 'var(--gold)' : 'var(--text2)' }}
+          color: active ? 'var(--gold)' : 'var(--text2)',
+          background: 'var(--surface)', padding: '8px 10px' }}
       >
         {label} {active ? (sortAsc ? '▲' : '▼') : <span style={{ opacity: .3 }}>▲</span>}
       </th>
@@ -336,8 +337,8 @@ export default function MobExplorer() {
           <col style={{ width: '22%' }} />
           <col style={{ width: '15%' }} />
         </colgroup>
-        <thead style={{ position: 'sticky', top: 0, zIndex: 1 }}>
-          <tr style={{ background: 'var(--surface)', borderBottom: '2px solid var(--surface2)' }}>
+        <thead style={{ position: 'sticky', top: 0, zIndex: 2, background: 'var(--surface)' }}>
+          <tr style={{ borderBottom: '2px solid var(--surface2)' }}>
             <SortTh k="name" label={lang === 'hu' ? 'Név' : 'Name'} />
             <SortTh k="hp" label="HP" />
             <SortTh k="dmg" label={lang === 'hu' ? '⚔ Sebzés' : '⚔ Damage'} />
