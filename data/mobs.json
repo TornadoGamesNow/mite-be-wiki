@@ -986,8 +986,8 @@
   {
     "id": "greater_ghast",
     "name": {
-      "hu": "Kis Ghast",
-      "en": "Child Ghast"
+      "hu": "Nagy Ghast",
+      "en": "Greater Ghast"
     },
     "hp": 40,
     "dmgMin": 8,
@@ -2526,8 +2526,8 @@
       "flying"
     ],
     "special": {
-      "hu": "Repülő, bombákat dob",
-      "en": "Flying, drops bombs"
+      "hu": "TNT-fejű humanoid, távolból TNT-t hajigál. Nincs természetes spawnelása — csak spawn egg-gel idézhető.",
+      "en": "TNT-headed humanoid, throws TNT from range. No natural spawn — only summonable via spawn egg."
     },
     "drops": [
       {
@@ -2764,7 +2764,7 @@
     "spawnZones": [
       "nether"
     ],
-    "difficulty": "mid",
+    "difficulty": "late",
     "tags": [
       "flying",
       "fire_immune"
