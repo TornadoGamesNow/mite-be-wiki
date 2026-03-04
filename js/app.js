@@ -72,20 +72,22 @@ function initNavTracking() {
         if (activeLink) {
           const sidebar = activeLink.closest('.sidebar');
           if (sidebar) {
-            const linkTop = activeLink.offsetTop;
-            const linkBot = linkTop + activeLink.offsetHeight;
+            const sRect = sidebar.getBoundingClientRect();
+            const lRect = activeLink.getBoundingClientRect();
+            const relTop = lRect.top - sRect.top + sidebar.scrollTop;
+            const relBot = relTop + activeLink.offsetHeight;
             const visTop = sidebar.scrollTop;
             const visBot = visTop + sidebar.clientHeight;
-            if (linkTop < visTop + 40) {
-              sidebar.scrollTo({ top: linkTop - 40, behavior: 'smooth' });
-            } else if (linkBot > visBot - 40) {
-              sidebar.scrollTo({ top: linkBot - sidebar.clientHeight + 40, behavior: 'smooth' });
+            if (relTop < visTop + 40) {
+              sidebar.scrollTo({ top: relTop - 40, behavior: 'smooth' });
+            } else if (relBot > visBot - 40) {
+              sidebar.scrollTo({ top: relBot - sidebar.clientHeight + 40, behavior: 'smooth' });
             }
           }
         }
       }
     });
-  }, { rootMargin: '-10% 0px -80% 0px' });
+  }, { rootMargin: '0px 0px -60% 0px' });
 
   function rebuildObserver() {
     observed.forEach(el => observer.unobserve(el));
