@@ -22,9 +22,12 @@ interface Mob {
   difficulty: 'early' | 'mid' | 'late' | 'boss';
   tags: string[];
   special?: { hu: string; en: string };
+  description?: { hu: string; en: string };
+  spawnInfo?: { hu: string; en: string };
   drops?: Drop[];
   image?: string | null;
   mobType?: string;
+  armor?: number | null;
 }
 
 const mobTypeMeta: Record<string, { hu: string; en: string; color: string; bg: string }> = {
@@ -140,8 +143,8 @@ export default function MobExplorer() {
     function handleLangChange(e: Event) {
       setLang((e as CustomEvent).detail ?? 'hu');
     }
-    window.addEventListener('mite:langChange', handleLangChange);
-    return () => window.removeEventListener('mite:langChange', handleLangChange);
+    window.addEventListener('mite-lang-change', handleLangChange);
+    return () => window.removeEventListener('mite-lang-change', handleLangChange);
   }, []);
 
   // ESC key to close drawer
@@ -523,23 +526,23 @@ export default function MobExplorer() {
             style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,.4)', zIndex: 99, display: 'none' }}
             className="drawer-overlay" />
           <div className="mob-drawer-panel" style={{
-            position: 'fixed', top: 0, right: 0, bottom: 0, width: 320,
+            position: 'fixed', top: 0, right: 0, bottom: 0, width: 'min(520px, 100vw)',
             background: 'var(--bg)', borderLeft: '1px solid var(--surface2)',
             overflowY: 'auto', zIndex: 100,
-            boxShadow: '-4px 0 24px rgba(0,0,0,.3)',
+            boxShadow: '-4px 0 32px rgba(0,0,0,.4)',
             display: 'flex', flexDirection: 'column',
           }}>
             {/* Sticky header */}
             <div style={{
               position: 'sticky', top: 0, zIndex: 1,
               background: 'var(--bg)', borderBottom: '1px solid var(--surface2)',
-              padding: '16px 20px 12px',
+              padding: '20px 24px 16px',
             }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                <div style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
-                  <MobSprite mob={selectedMob} size={56} />
+                <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
+                  <MobSprite mob={selectedMob} size={72} />
                   <div>
-                  <h3 style={{ margin: '0 0 6px', fontSize: '1.15em' }}>
+                  <h3 style={{ margin: '0 0 8px', fontSize: '1.35em' }}>
                     {selectedMob.name[lang as 'hu' | 'en']}
                   </h3>
                   <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
@@ -573,21 +576,23 @@ export default function MobExplorer() {
             </div>
 
             {/* Scrollable body */}
-            <div style={{ padding: '16px 20px', flex: 1 }}>
+            <div style={{ padding: '20px 24px', flex: 1 }}>
               {/* Stats */}
-              <div style={{ display: 'flex', gap: 16, marginBottom: 16, textAlign: 'center' }}>
-                <div>
-                  <div style={{ fontSize: '1.4em', fontWeight: 700, color: 'var(--green)' }}>{selectedMob.hp ?? '?'}</div>
-                  <div style={{ fontSize: '.75em', color: 'var(--text2)' }}>HP</div>
-                </div>
-                <div>
-                  <div style={{ fontSize: '1.4em', fontWeight: 700, color: 'var(--accent)' }}>{dmgDisplay(selectedMob, true)}</div>
-                  <div style={{ fontSize: '.75em', color: 'var(--text2)' }}>⚔ {lang === 'hu' ? 'Sebzés' : 'Damage'}</div>
-                </div>
-                <div>
-                  <div style={{ fontSize: '1.4em', fontWeight: 700, color: 'var(--gold)' }}>{selectedMob.xp ?? '?'}</div>
-                  <div style={{ fontSize: '.75em', color: 'var(--text2)' }}>⭐ XP</div>
-                </div>
+              <div style={{ display: 'flex', gap: 0, marginBottom: 20,
+                background: 'var(--surface)', border: '1px solid var(--surface2)',
+                borderRadius: 8, overflow: 'hidden' }}>
+                {[
+                  { val: selectedMob.hp ?? '?', label: '❤ HP', color: 'var(--green)' },
+                  { val: dmgDisplay(selectedMob, true), label: `⚔ ${lang === 'hu' ? 'Sebzés' : 'Damage'}`, color: 'var(--accent)' },
+                  ...(selectedMob.armor != null ? [{ val: selectedMob.armor, label: `🛡 ${lang === 'hu' ? 'Páncél' : 'Armor'}`, color: 'var(--mithril)' }] : []),
+                  { val: selectedMob.xp ?? '?', label: '⭐ XP', color: 'var(--gold)' },
+                ].map((s, i, arr) => (
+                  <div key={i} style={{ flex: 1, padding: '14px 8px', textAlign: 'center',
+                    borderRight: i < arr.length - 1 ? '1px solid var(--surface2)' : 'none' }}>
+                    <div style={{ fontSize: '1.6em', fontWeight: 700, color: s.color, lineHeight: 1.1 }}>{s.val}</div>
+                    <div style={{ fontSize: '.78em', color: 'var(--text2)', marginTop: 4 }}>{s.label}</div>
+                  </div>
+                ))}
               </div>
 
               {/* Tags */}
@@ -615,16 +620,41 @@ export default function MobExplorer() {
                 </div>
               )}
 
+              {/* Description */}
+              {selectedMob.description?.[lang as 'hu' | 'en'] && (
+                <div style={{ marginBottom: 16 }}>
+                  <p style={{ margin: 0, fontSize: '.92em', color: 'var(--text)', lineHeight: 1.65,
+                    fontStyle: 'italic', opacity: 0.85 }}>
+                    {selectedMob.description[lang as 'hu' | 'en']}
+                  </p>
+                </div>
+              )}
+
+              {/* Spawn info */}
+              {selectedMob.spawnInfo?.[lang as 'hu' | 'en'] && (
+                <div style={{ marginBottom: 16 }}>
+                  <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
+                    color: 'var(--text2)', marginBottom: 6 }}>
+                    🗺 {lang === 'hu' ? 'Megjelenés' : 'Spawn'}
+                  </div>
+                  <div style={{ fontSize: '.9em', color: 'var(--text)', lineHeight: 1.55,
+                    background: 'var(--surface)', border: '1px solid var(--surface2)',
+                    borderRadius: 6, padding: '10px 14px' }}>
+                    {selectedMob.spawnInfo[lang as 'hu' | 'en']}
+                  </div>
+                </div>
+              )}
+
               {/* Special mechanics */}
               {selectedMob.special && (
-                <div style={{ marginTop: 12 }}>
-                  <div style={{ fontSize: '.7em', textTransform: 'uppercase', letterSpacing: '.6px',
+                <div style={{ marginTop: 0, marginBottom: 16 }}>
+                  <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
                     color: 'var(--text2)', marginBottom: 6 }}>
-                    {lang === 'hu' ? 'Különleges mechanika' : 'Special mechanics'}
+                    ⚙ {lang === 'hu' ? 'Különleges mechanika' : 'Special mechanics'}
                   </div>
-                  <div style={{ fontSize: '.88em', color: 'var(--text)', lineHeight: 1.55,
+                  <div style={{ fontSize: '.9em', color: 'var(--text)', lineHeight: 1.6,
                     background: 'var(--surface)', border: '1px solid var(--surface2)',
-                    borderRadius: 6, padding: '8px 12px' }}>
+                    borderRadius: 6, padding: '10px 14px' }}>
                     {selectedMob.special[lang as 'hu' | 'en']
                       .split(/ — |; /)
                       .map((part, i) => {
@@ -643,17 +673,17 @@ export default function MobExplorer() {
 
               {/* Drops */}
               {selectedMob.drops && selectedMob.drops.length > 0 && (
-                <div style={{ marginTop: 12 }}>
-                  <div style={{ fontSize: '.7em', textTransform: 'uppercase', letterSpacing: '.6px',
+                <div style={{ marginTop: 0 }}>
+                  <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
                     color: 'var(--text2)', marginBottom: 6 }}>
-                    {lang === 'hu' ? 'Dropok' : 'Drops'}
+                    🎁 {lang === 'hu' ? 'Dropok' : 'Drops'}
                   </div>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
                     {selectedMob.drops.map((drop, i) => (
                       <div key={i} style={{ display: 'flex', justifyContent: 'space-between',
-                        alignItems: 'center', fontSize: '.83em',
-                        padding: '4px 8px', background: 'var(--surface)',
-                        border: '1px solid var(--surface2)', borderRadius: 4 }}>
+                        alignItems: 'center', fontSize: '.88em',
+                        padding: '6px 10px', background: 'var(--surface)',
+                        border: '1px solid var(--surface2)', borderRadius: 5 }}>
                         <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                           <span style={{ color: 'var(--text)' }}>
                             {drop.item[lang as 'hu' | 'en']}
