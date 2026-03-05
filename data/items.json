@@ -100,7 +100,7 @@
   },
   "string": {
     "name": {
-      "hu": "Zsinór",
+      "hu": "Fonál",
       "en": "String"
     },
     "img": "img/items/string.png",
@@ -298,7 +298,7 @@
   },
   "clay_ball": {
     "name": {
-      "hu": "Agyag Golyó",
+      "hu": "Agyaggömb",
       "en": "Clay Ball"
     },
     "img": "img/items/clay_ball.png",
@@ -334,7 +334,7 @@
   },
   "netherrack": {
     "name": {
-      "hu": "Pokoli Kő",
+      "hu": "Pokolfenyő",
       "en": "Netherrack"
     },
     "img": "img/blocks/netherrack.png",
@@ -2071,8 +2071,8 @@
   },
   "activator_rail": {
     "name": {
-      "hu": "activator_rail",
-      "en": "activator_rail"
+      "hu": "Aktivátor Sín",
+      "en": "Activator Rail"
     },
     "img": "img/items/activator_rail.png",
     "tier": null
@@ -2647,16 +2647,16 @@
   },
   "blaze_powder": {
     "name": {
-      "hu": "blaze_powder",
-      "en": "blaze_powder"
+      "hu": "Blaze Por",
+      "en": "Blaze Powder"
     },
     "img": "img/items/blaze_powder.png",
     "tier": null
   },
   "blaze_rod": {
     "name": {
-      "hu": "blaze_rod",
-      "en": "blaze_rod"
+      "hu": "Blaze Pálca",
+      "en": "Blaze Rod"
     },
     "img": "img/items/blaze_rod.png",
     "tier": null
@@ -2807,8 +2807,8 @@
   },
   "brick": {
     "name": {
-      "hu": "brick",
-      "en": "brick"
+      "hu": "Tégla",
+      "en": "Brick"
     },
     "img": "img/items/brick.png",
     "tier": null
@@ -3463,8 +3463,8 @@
   },
   "detector_rail": {
     "name": {
-      "hu": "detector_rail",
-      "en": "detector_rail"
+      "hu": "Érzékelő Sín",
+      "en": "Detector Rail"
     },
     "img": "img/items/detector_rail.png",
     "tier": null
@@ -3495,8 +3495,8 @@
   },
   "dirt": {
     "name": {
-      "hu": "dirt",
-      "en": "dirt"
+      "hu": "Föld",
+      "en": "Dirt"
     },
     "img": "img/items/dirt.png",
     "tier": null
@@ -3607,8 +3607,8 @@
   },
   "enchanted_golden_apple": {
     "name": {
-      "hu": "enchanted_golden_apple",
-      "en": "enchanted_golden_apple"
+      "hu": "Varázslatos Arany Alma",
+      "en": "Enchanted Golden Apple"
     },
     "img": "img/items/enchanted_golden_apple.png",
     "tier": null
@@ -3655,8 +3655,8 @@
   },
   "fermented_spider_eye": {
     "name": {
-      "hu": "fermented_spider_eye",
-      "en": "fermented_spider_eye"
+      "hu": "Fermentált Pókszem",
+      "en": "Fermented Spider Eye"
     },
     "img": "img/items/fermented_spider_eye.png",
     "tier": null
@@ -3863,24 +3863,24 @@
   },
   "glistering_melon": {
     "name": {
-      "hu": "glistering_melon",
-      "en": "glistering_melon"
+      "hu": "Csillogó Dinnyeszelet",
+      "en": "Glistering Melon Slice"
     },
     "img": "img/items/glistering_melon.png",
     "tier": null
   },
   "glowstone": {
     "name": {
-      "hu": "glowstone",
-      "en": "glowstone"
+      "hu": "Izzókő",
+      "en": "Glowstone"
     },
     "img": "img/items/glowstone.png",
     "tier": null
   },
   "glowstone_dust": {
     "name": {
-      "hu": "glowstone_dust",
-      "en": "glowstone_dust"
+      "hu": "Izzókőpor",
+      "en": "Glowstone Dust"
     },
     "img": "img/items/glowstone_dust.png",
     "tier": null
@@ -4063,16 +4063,16 @@
   },
   "golden_apple": {
     "name": {
-      "hu": "golden_apple",
-      "en": "golden_apple"
+      "hu": "Arany Alma",
+      "en": "Golden Apple"
     },
     "img": "img/items/golden_apple.png",
     "tier": null
   },
   "golden_carrot": {
     "name": {
-      "hu": "golden_carrot",
-      "en": "golden_carrot"
+      "hu": "Arany Sárgarépa",
+      "en": "Golden Carrot"
     },
     "img": "img/items/golden_carrot.png",
     "tier": null
@@ -4087,8 +4087,8 @@
   },
   "gravel": {
     "name": {
-      "hu": "gravel",
-      "en": "gravel"
+      "hu": "Kavics",
+      "en": "Gravel"
     },
     "img": "img/items/gravel.png",
     "tier": null
@@ -4175,8 +4175,8 @@
   },
   "gunpowder": {
     "name": {
-      "hu": "gunpowder",
-      "en": "gunpowder"
+      "hu": "Lőpor",
+      "en": "Gunpowder"
     },
     "img": "img/items/gunpowder.png",
     "tier": null
@@ -4991,8 +4991,8 @@
   },
   "magma_cream": {
     "name": {
-      "hu": "magma_cream",
-      "en": "magma_cream"
+      "hu": "Magma Krém",
+      "en": "Magma Cream"
     },
     "img": "img/items/magma_cream.png",
     "tier": null
@@ -5023,8 +5023,8 @@
   },
   "melon_slice": {
     "name": {
-      "hu": "melon_slice",
-      "en": "melon_slice"
+      "hu": "Dinnyeszelet",
+      "en": "Melon Slice"
     },
     "img": "img/items/melon_slice.png",
     "tier": null
@@ -5343,8 +5343,8 @@
   },
   "nether_brick": {
     "name": {
-      "hu": "nether_brick",
-      "en": "nether_brick"
+      "hu": "Pokoltégla",
+      "en": "Nether Brick"
     },
     "img": "img/items/nether_brick.png",
     "tier": null
@@ -5391,8 +5391,8 @@
   },
   "nether_wart": {
     "name": {
-      "hu": "nether_wart",
-      "en": "nether_wart"
+      "hu": "Pokoli Szemölcs",
+      "en": "Nether Wart"
     },
     "img": "img/items/nether_wart.png",
     "tier": null
@@ -5711,8 +5711,8 @@
   },
   "powered_rail": {
     "name": {
-      "hu": "powered_rail",
-      "en": "powered_rail"
+      "hu": "Hajtósín",
+      "en": "Powered Rail"
     },
     "img": "img/items/powered_rail.png",
     "tier": null
@@ -5863,8 +5863,8 @@
   },
   "rail": {
     "name": {
-      "hu": "rail",
-      "en": "rail"
+      "hu": "Sín",
+      "en": "Rail"
     },
     "img": "img/items/rail.png",
     "tier": null
@@ -6111,8 +6111,8 @@
   },
   "sand": {
     "name": {
-      "hu": "sand",
-      "en": "sand"
+      "hu": "Homok",
+      "en": "Sand"
     },
     "img": "img/items/sand.png",
     "tier": null
@@ -6591,16 +6591,16 @@
   },
   "soul_sand": {
     "name": {
-      "hu": "soul_sand",
-      "en": "soul_sand"
+      "hu": "Lélekföveny",
+      "en": "Soul Sand"
     },
     "img": "img/items/soul_sand.png",
     "tier": null
   },
   "spider_eye": {
     "name": {
-      "hu": "spider_eye",
-      "en": "spider_eye"
+      "hu": "Pókszem",
+      "en": "Spider Eye"
     },
     "img": "img/items/spider_eye.png",
     "tier": null
@@ -6767,8 +6767,8 @@
   },
   "sugar": {
     "name": {
-      "hu": "sugar",
-      "en": "sugar"
+      "hu": "Cukor",
+      "en": "Sugar"
     },
     "img": "img/items/sugar.png",
     "tier": null
