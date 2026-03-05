@@ -36,7 +36,9 @@ html:not([data-lang-init]) span[data-lang="hu"] { display: inline; }
 /* ===== Hero header ===== */
 .hero { text-align: center; padding: 36px 20px 18px; background: linear-gradient(180deg, rgba(30,30,53,.95) 0%, var(--bg) 100%); border-bottom: 2px solid var(--surface2); position: relative; }
 .hero h1 { font-size: 2.4em; color: var(--gold); margin: 0 0 6px; letter-spacing: -0.5px; text-shadow: 0 2px 16px rgba(240,192,64,.25); }
-.hero .subtitle { color: var(--text2); font-size: 1.05em; margin: 0 0 14px; }
+.hero .subtitle { color: var(--text2); font-size: 1.05em; margin: 0 0 10px; }
+.hero .dev-notice { font-size: .82em; color: #c8a84b; background: rgba(200,168,75,.08); border: 1px solid rgba(200,168,75,.25); border-radius: 6px; padding: 6px 14px; margin: 0 auto 14px; max-width: 620px; }
+.hero .dev-notice a { color: #f0c040; text-decoration: underline; }
 .lang-switch { display: flex; gap: 8px; justify-content: center; margin-top: 10px; }
 .lang-btn { padding: 6px 18px; border-radius: 6px; border: 1px solid var(--surface2); background: var(--surface); color: var(--text2); cursor: pointer; font-size: .9em; font-family: inherit; transition: all .2s; }
 .lang-btn:hover { border-color: var(--gold); color: var(--text); }

@@ -18,7 +18,7 @@ const VARIANT_GROUPS: Record<string, string> = {
   planks_oak: 'G:planks', planks_spruce: 'G:planks', planks_birch: 'G:planks', planks_jungle: 'G:planks',
   log_oak: 'G:log', log_spruce: 'G:log', log_birch: 'G:log', log_jungle: 'G:log',
   coal: 'G:fuel', charcoal: 'G:fuel',
-  string: 'G:rope', leather_rope: 'G:rope', straw_rope: 'G:rope', silk: 'G:rope',
+  string: 'G:rope', leather_rope: 'G:rope', silk: 'G:rope',
 };
 
 // Tier-based stations normalize to a common placeholder so recipes that share
