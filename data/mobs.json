@@ -226,7 +226,7 @@
     "dmgMin": 4,
     "dmgMax": 4,
     "dmgType": "melee",
-    "xp": 10,
+    "xp": 5,
     "spawnZones": [
       "surface"
     ],
@@ -328,7 +328,7 @@
     "dmgMin": 5,
     "dmgMax": 5,
     "dmgType": "melee",
-    "xp": 25,
+    "xp": 10,
     "spawnZones": [
       "underground"
     ],
@@ -419,7 +419,7 @@
     "dmgMin": 4,
     "dmgMax": 4,
     "dmgType": "melee",
-    "xp": 30,
+    "xp": 15,
     "spawnZones": [
       "nether"
     ],
@@ -693,7 +693,7 @@
     "dmgMin": 7,
     "dmgMax": 7,
     "dmgType": "melee",
-    "xp": 35,
+    "xp": 15,
     "spawnZones": [
       "underground"
     ],
@@ -747,7 +747,7 @@
     "dmgMin": 8,
     "dmgMax": 8,
     "dmgType": "melee",
-    "xp": 35,
+    "xp": 25,
     "spawnZones": [
       "underground"
     ],
@@ -801,7 +801,7 @@
     "dmgMin": 4,
     "dmgMax": 4,
     "dmgType": "melee",
-    "xp": 20,
+    "xp": 8,
     "spawnZones": [
       "underground"
     ],
@@ -970,7 +970,7 @@
     "dmgMin": 2,
     "dmgMax": 40,
     "dmgType": "explosion",
-    "xp": 30,
+    "xp": 15,
     "spawnZones": [
       "nether"
     ],
@@ -1164,7 +1164,7 @@
     "dmgMin": 5,
     "dmgMax": 5,
     "dmgType": "melee",
-    "xp": 20,
+    "xp": 10,
     "spawnZones": [
       "underground"
     ],
@@ -1210,7 +1210,7 @@
     "dmgMin": 3,
     "dmgMax": 3,
     "dmgType": "melee",
-    "xp": 30,
+    "xp": 10,
     "spawnZones": [
       "underground"
     ],
@@ -1265,7 +1265,7 @@
     "dmgMin": 5,
     "dmgMax": 5,
     "dmgType": "melee",
-    "xp": 25,
+    "xp": 15,
     "spawnZones": [
       "nether"
     ],
@@ -1366,7 +1366,7 @@
     "dmgMin": 8,
     "dmgMax": 8,
     "dmgType": "ranged",
-    "xp": 500,
+    "xp": 10,
     "spawnZones": [
       "surface"
     ],
@@ -1788,7 +1788,7 @@
     "dmgMin": 5,
     "dmgMax": 5,
     "dmgType": "melee",
-    "xp": 25,
+    "xp": 10,
     "spawnZones": [
       "underground"
     ],
@@ -1876,7 +1876,7 @@
     "dmgMin": 6,
     "dmgMax": 6,
     "dmgType": "melee",
-    "xp": 20,
+    "xp": 15,
     "spawnZones": [
       "underground"
     ],
@@ -2333,7 +2333,7 @@
     "dmgMin": 5,
     "dmgMax": 5,
     "dmgType": "melee",
-    "xp": 25,
+    "xp": 15,
     "spawnZones": [
       "underground"
     ],
@@ -2587,7 +2587,7 @@
     "dmgMin": 4,
     "dmgMax": 4,
     "dmgType": "ranged",
-    "xp": 20,
+    "xp": 5,
     "spawnZones": [
       "surface"
     ],
@@ -2639,7 +2639,7 @@
     "dmgMin": 3,
     "dmgMax": 20,
     "dmgType": "explosion",
-    "xp": 15,
+    "xp": 5,
     "spawnZones": [
       "surface"
     ],
@@ -2684,7 +2684,7 @@
     "dmgMin": 4,
     "dmgMax": 4,
     "dmgType": "melee",
-    "xp": 15,
+    "xp": 5,
     "spawnZones": [
       "surface"
     ],
@@ -2844,7 +2844,7 @@
     "dmgMin": 3,
     "dmgMax": 20,
     "dmgType": "explosion",
-    "xp": 10,
+    "xp": 7,
     "spawnZones": [
       "surface"
     ],
@@ -4014,7 +4014,7 @@
     "dmgMin": 9,
     "dmgMax": 9,
     "dmgType": "fireball",
-    "xp": 5,
+    "xp": 10,
     "spawnZones": [
       "nether"
     ],
@@ -4123,7 +4123,7 @@
     "dmgMin": 5,
     "dmgMax": 5,
     "dmgType": "fireball",
-    "xp": 10,
+    "xp": 20,
     "spawnZones": [
       "nether"
     ],
@@ -4170,7 +4170,7 @@
     "dmgMin": 6,
     "dmgMax": 6,
     "dmgType": "melee",
-    "xp": 4,
+    "xp": 12,
     "spawnZones": [
       "nether"
     ],
@@ -4342,7 +4342,7 @@
     "dmgMin": 10,
     "dmgMax": 15,
     "dmgType": "melee",
-    "xp": 12000,
+    "xp": 100,
     "spawnZones": [
       "unknown"
     ],
@@ -4397,7 +4397,7 @@
     "dmgMin": 7,
     "dmgMax": 21,
     "dmgType": "melee",
-    "xp": 5,
+    "xp": 20,
     "spawnZones": [
       "surface"
     ],
