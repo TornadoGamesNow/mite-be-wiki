@@ -8,3 +8,7 @@ assets/
 # OS
 .DS_Store
 Thumbs.db
+
+# AI assistant configs
+.claude/
+.github/copilot-instructions.md
