@@ -6,8 +6,8 @@
       "en": "Zombie"
     },
     "hp": 20,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "dmgMin": 4,
+    "dmgMax": 4,
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
@@ -20,8 +20,8 @@
       "wall_detection"
     ],
     "special": {
-      "hu": "Falon átérzékelés, csákányos változat bármit kibányászik",
-      "en": "Wall detection, pickaxe variant mines any block"
+      "hu": "Blokktörés / aktív bányászat. Étel keresése és megevése. Fáklyák szándékos megsemmisítése.",
+      "en": "Block breaking / active mining. Seeks and eats food. Deliberately destroys torches."
     },
     "drops": [
       {
@@ -40,11 +40,20 @@
         },
         "qty": "1",
         "chance": "rare",
-        "itemId": null
+        "itemId": "iron_shovel"
       }
     ],
     "image": "zombie.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "Az alap zombi, de MITE-ben sokkal veszélyesebb. Képes bármilyen blokkot kitörni, amit a játékos is ki tud törni — a csákányos változat aktívan bányászik. Felkeresi és megeszi az ételeket, és szándékosan elpusztítja a fáklyákat.",
+      "en": "The basic zombie, but far more dangerous in MITE. Can break any block the player can mine — the pickaxe variant actively digs. Seeks out and eats food items, and deliberately destroys light sources."
+    },
+    "spawnInfo": {
+      "hu": "Felszín és föld alatt, éjjel. Nehéz módban 50. réteg alatt nappal is.",
+      "en": "Surface and underground at night. Hard mode: below Y=50 also during day."
+    }
   },
   {
     "id": "skeleton",
@@ -52,9 +61,9 @@
       "hu": "Csontváz",
       "en": "Skeleton"
     },
-    "hp": 20,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "hp": 6,
+    "dmgMin": 4,
+    "dmgMax": 4,
     "dmgType": "ranged",
     "xp": 5,
     "spawnZones": [
@@ -64,8 +73,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Távolsági támadó",
-      "en": "Ranged attacker"
+      "hu": "Íjas altípus: nyíltámadás. Kardos altípus: nagy sebesség és sebzés.",
+      "en": "Ranged subtype: bow. Melee subtype: high speed and damage."
     },
     "drops": [
       {
@@ -88,7 +97,16 @@
       }
     ],
     "image": "skeleton.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "Két altípusban létezik: íjas (távolsági) és kardos (közelharcos). A közelharcos változat rendkívül gyors és erős.",
+      "en": "Exists in two subtypes: ranged (bow) and melee. The melee variant is extremely fast and powerful."
+    },
+    "spawnInfo": {
+      "hu": "Felszín és föld alatt, éjjel.",
+      "en": "Surface and underground at night."
+    }
   },
   {
     "id": "creeper",
@@ -109,8 +127,8 @@
       "explosion"
     ],
     "special": {
-      "hu": "Robbanás figyelmeztetés nélkül",
-      "en": "Explodes without warning"
+      "hu": "Csendes, figyelmeztetés nélküli robbanás.",
+      "en": "Silent explosion without warning."
     },
     "drops": [
       {
@@ -133,7 +151,16 @@
       }
     ],
     "image": "creeper.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Figyelmeztetés nélkül robban — MITE-ben nem hallható sziszegés előtte, ezért rendkívül halálos.",
+      "en": "Explodes without warning — in MITE there is no hissing sound beforehand, making it extremely lethal."
+    },
+    "spawnInfo": {
+      "hu": "Felszín, éjjel.",
+      "en": "Surface at night."
+    }
   },
   {
     "id": "spider",
@@ -154,8 +181,8 @@
       "pack"
     ],
     "special": {
-      "hu": "Falon mászás, éjjel agresszív",
-      "en": "Wall climbing, aggressive at night"
+      "hu": "Falra és mennyezetre mászás.",
+      "en": "Wall and ceiling climbing."
     },
     "drops": [
       {
@@ -178,7 +205,16 @@
       }
     ],
     "image": "spider.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Föld alatt éjjel-nappal ellenséges a játékossal szemben. Képes mászni falakon és mennyezeten. Gyors és agilis, MITE-ben megnövelt veszélyességgel.",
+      "en": "Underground it is hostile both day and night. Can climb walls and ceilings. Fast and agile, with increased danger in MITE."
+    },
+    "spawnInfo": {
+      "hu": "Felszín (éjjel) és föld alatt (éjjel-nappal).",
+      "en": "Surface (night) and underground (day and night)."
+    }
   },
   {
     "id": "wood_spider",
@@ -186,11 +222,11 @@
       "hu": "Fa Pók",
       "en": "Wood Spider"
     },
-    "hp": 10,
-    "dmgMin": 2,
-    "dmgMax": 2,
+    "hp": 6,
+    "dmgMin": 4,
+    "dmgMax": 4,
     "dmgType": "melee",
-    "xp": 5,
+    "xp": 10,
     "spawnZones": [
       "surface"
     ],
@@ -200,8 +236,8 @@
       "poison"
     ],
     "special": {
-      "hu": "Fák között él, mérgező",
-      "en": "Lives in trees, poisonous"
+      "hu": "Méreg támadás: közelharci találat Mérgezést okoz. Nappali agresszivitás. Leveleken átmehet.",
+      "en": "Poison attack: melee hit inflicts Poison. Daylight aggression. Can move through leaf blocks."
     },
     "drops": [
       {
@@ -211,7 +247,7 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": null
+        "itemId": "wood_spider_eye"
       },
       {
         "item": {
@@ -224,7 +260,16 @@
       }
     ],
     "image": "wood_spider.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Kis 1×1×1 méretű barna pók. Fás területeken jelenik meg. Nappal is ellenséges. Képes átmenni a leveleken.",
+      "en": "A small 1×1×1 brown spider. Spawns in wooded areas. Hostile during the day. Can pass through leaf blocks."
+    },
+    "spawnInfo": {
+      "hu": "Fás területek, felszín.",
+      "en": "Wooded areas, surface."
+    }
   },
   {
     "id": "vampire_bat",
@@ -232,9 +277,9 @@
       "hu": "Vámpír Denevér",
       "en": "Vampire Bat"
     },
-    "hp": 6,
-    "dmgMin": 2,
-    "dmgMax": 2,
+    "hp": 3,
+    "dmgMin": 1,
+    "dmgMax": 1,
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
@@ -247,8 +292,8 @@
       "life_steal"
     ],
     "special": {
-      "hu": "Életlopás",
-      "en": "Life steal"
+      "hu": "Visszalökés találatkor. Életerő lopás (HP elvonás a játékostól).",
+      "en": "Knockback on attack. Lifesteal (drains player HP)."
     },
     "drops": [
       {
@@ -258,11 +303,20 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": null
+        "itemId": "vampire_bat_fang"
       }
     ],
     "image": "vampire_bat.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Vörös szemű denevér, amely ellopja a játékos életerejét. Alkalmanként állatokra is csap, de nem öli meg őket. Underground Worldben nagy számban jelenik meg.",
+      "en": "A red-eyed bat that steals the player's health. Occasionally strikes animals but doesn't kill them. Spawns in large numbers in the Underground World."
+    },
+    "spawnInfo": {
+      "hu": "Underground World (nagy számban). Barlangok.",
+      "en": "Underground World (large numbers). Caves."
+    }
   },
   {
     "id": "ghoul",
@@ -274,7 +328,7 @@
     "dmgMin": 5,
     "dmgMax": 5,
     "dmgType": "melee",
-    "xp": 10,
+    "xp": 25,
     "spawnZones": [
       "underground"
     ],
@@ -283,8 +337,8 @@
       "instant_kill"
     ],
     "special": {
-      "hu": "Lassítás hatás",
-      "en": "Slowness effect"
+      "hu": "Lassítás: melee találat Lassítást okoz. Regeneráció: rothadó hús felvételével gyógyul és Erő I-et kap 10 mp-re.",
+      "en": "Slowness: melee hit inflicts Slowness. Regeneration: picks up rotten flesh to heal and gain Strength I for 10s."
     },
     "drops": [
       {
@@ -298,7 +352,16 @@
       }
     ],
     "image": "ghoul.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "Gyors, enyhén fehéres zombi vörös szemekkel. Napfényben nem ég el. Felszedi és megeszi a rothadó húst, ezzel regenerálódik. Elassítja az ellenfeleit.",
+      "en": "A fast, slightly whitened zombie with red eyes. Does not burn in sunlight. Picks up and eats rotten flesh to regenerate. Slows down its targets."
+    },
+    "spawnInfo": {
+      "hu": "Mélyen a föld alatt; kis mennyiségben a felszínen; Vérhold alatt bárhol.",
+      "en": "Deep underground; small amounts on surface; anywhere during Blood Moon."
+    }
   },
   {
     "id": "hell_hound",
@@ -306,9 +369,9 @@
       "hu": "Pokol Kutya",
       "en": "Hell Hound"
     },
-    "hp": 16,
-    "dmgMin": 4,
-    "dmgMax": 4,
+    "hp": 8,
+    "dmgMin": 3,
+    "dmgMax": 3,
     "dmgType": "melee",
     "xp": 6,
     "spawnZones": [
@@ -320,8 +383,8 @@
       "pack"
     ],
     "special": {
-      "hu": "Tűzálló, gyors, falkában",
-      "en": "Fire resistant, fast, in packs"
+      "hu": "Tűz támadás: van esélye tűzbe borítani a játékost. Sebezhető (Vulnerability) hatás.",
+      "en": "Fire attack: chance to set the player on fire. Inflicts Vulnerability debuff."
     },
     "drops": [
       {
@@ -331,11 +394,20 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": null
+        "itemId": "hell_hound_hide"
       }
     ],
     "image": "hell_hound.png",
-    "mobType": "nether"
+    "mobType": "nether",
+    "armor": 0,
+    "description": {
+      "hu": "Fekete testű farkas vörös kő szemekkel; normál hangja oroszlánhoz hasonlít. Tűz és láva immunis. Fényes területeken nem jelenik meg. Automatikusan kerüli a vizet, de a víz nem bántja.",
+      "en": "A black-bodied wolf with red stone eyes; its normal cry sounds like a lion. Immune to fire and lava. Will not spawn in bright areas. Automatically avoids water but is not damaged by it."
+    },
+    "spawnInfo": {
+      "hu": "Sötét területek, Nether.",
+      "en": "Dark areas, Nether."
+    }
   },
   {
     "id": "demon_spider",
@@ -343,11 +415,11 @@
       "hu": "Démon Pók",
       "en": "Demon Spider"
     },
-    "hp": 20,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "hp": 12,
+    "dmgMin": 4,
+    "dmgMax": 4,
     "dmgType": "melee",
-    "xp": 15,
+    "xp": 30,
     "spawnZones": [
       "nether"
     ],
@@ -357,8 +429,8 @@
       "poison"
     ],
     "special": {
-      "hu": "Tűzálló, mérgező",
-      "en": "Fire resistant, poisonous"
+      "hu": "Méreg: Mérgezést okoz. Lassítás: Lassítást okoz. Égetés 10 mp + Mérgezés 6 mp + Lassítás 5 mp. Már égő/mérgezett/lassított célponton igaz sebzéssé konvertálódik.",
+      "en": "Poison: inflicts Poison. Slowness: inflicts Slowness. Burn 10s + Poison 6s + Slowness 5s. Converts to true damage on already Burning/Poisoned/Slowed target."
     },
     "drops": [
       {
@@ -368,7 +440,7 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": null
+        "itemId": "demon_spider_eye"
       },
       {
         "item": {
@@ -381,7 +453,16 @@
       }
     ],
     "image": "demon_spider.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Teljesen vörös pók éles és borzongató hanggal. Nappal is ellenséges. Lángoló hálókat köp, amelyek megégetik a játékost.",
+      "en": "A fully red spider with a sharp and eerie cry. Hostile during the day. Spits flaming webs that burn the player."
+    },
+    "spawnInfo": {
+      "hu": "Nappal is aktív. Nehéz módban 50. réteg alatt és Underground Worldben.",
+      "en": "Active in daylight. Hard mode: below Y=50 and Underground World."
+    }
   },
   {
     "id": "zombie_pigman",
@@ -403,8 +484,8 @@
       "gold_passive"
     ],
     "special": {
-      "hu": "Arany nélkül agresszív",
-      "en": "Aggressive without gold"
+      "hu": "Csoportos aggro: egyiket megtámadva az összes közeli aggreszt lesz. Tűz/láva immunis.",
+      "en": "Group aggro: attacking one makes all nearby ones hostile. Fire/lava immune."
     },
     "drops": [
       {
@@ -427,7 +508,16 @@
       }
     ],
     "image": "zombie_pigman.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 2,
+    "description": {
+      "hu": "Semleges, amíg nem provokálják. Ha megtámadják, az összes közeli zombie pigman megtámadja a játékost. Tűz és láva immunis. Arany tárgyakat ejt.",
+      "en": "Neutral unless provoked. If attacked, all nearby zombie pigmen will attack the player. Immune to fire and lava. Drops gold items."
+    },
+    "spawnInfo": {
+      "hu": "Nether, és ritka esetben villámlás után a felszínen.",
+      "en": "Nether, and rarely on surface after lightning strikes."
+    }
   },
   {
     "id": "soul_spirit",
@@ -435,9 +525,9 @@
       "hu": "Lélek Szellem",
       "en": "Soul Spirit"
     },
-    "hp": 16,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "hp": 20,
+    "dmgMin": 0,
+    "dmgMax": 0,
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
@@ -449,8 +539,8 @@
       "phasing"
     ],
     "special": {
-      "hu": "Nether szellemi lény",
-      "en": "Nether spirit creature"
+      "hu": "Minden sebzés immunitás a mágia kivételével. Repülési képesség.",
+      "en": "Immune to all damage except magic. Can fly."
     },
     "drops": [
       {
@@ -460,11 +550,20 @@
         },
         "qty": "1",
         "chance": "uncommon",
-        "itemId": null
+        "itemId": "xp_bottle"
       }
     ],
     "image": "soul_spirit.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Fekete szellem, amely lebegve mozog. Jelenleg nincs természetes megjelenési mechanizmusa. Sok tapasztalati üveget ejt.",
+      "en": "A black ghost that drifts/floats as it moves. Currently has no natural spawn mechanism. Drops a large amount of XP bottles."
+    },
+    "spawnInfo": {
+      "hu": "Jelenleg nincs természetes megjelenés.",
+      "en": "No current natural spawn mechanism."
+    }
   },
   {
     "id": "zombie_caller",
@@ -472,9 +571,9 @@
       "hu": "Zombi Hívó",
       "en": "Zombie Caller"
     },
-    "hp": null,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "hp": 70,
+    "dmgMin": 5,
+    "dmgMax": 5,
     "dmgType": "melee",
     "xp": 80,
     "spawnZones": [
@@ -486,8 +585,8 @@
       "summoner"
     ],
     "special": {
-      "hu": "Zombi segítséget hív",
-      "en": "Calls zombie reinforcements"
+      "hu": "Első találatkor: 4 zombi idézése. 10 mp után: 4 mutáns zombi. 20 mp után önfelrobbantás.",
+      "en": "On first hit: summons 4 zombies. After 10s: summons 4 mutant zombies. After 20s: self-destructs."
     },
     "drops": [
       {
@@ -519,7 +618,16 @@
       }
     ],
     "image": "zombie_caller.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "Rendkívül izmos humanoid, amely 50 blokknál mélyebben jelenik meg. Zombikat idéz és 20 mp után felrobban.",
+      "en": "A very muscular humanoid spawning more than 50 blocks below the surface. Summons zombies and self-destructs after 20 seconds."
+    },
+    "spawnInfo": {
+      "hu": "50+ blokkal a felszín alatt.",
+      "en": "More than 50 blocks below surface."
+    }
   },
   {
     "id": "dire_wolf",
@@ -527,9 +635,9 @@
       "hu": "Szörnyű Farkas",
       "en": "Dire Wolf"
     },
-    "hp": 20,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 8,
+    "dmgMin": 3,
+    "dmgMax": 3,
     "dmgType": "melee",
     "xp": 4,
     "spawnZones": [
@@ -540,8 +648,8 @@
       "pack"
     ],
     "special": {
-      "hu": "Erős farkas, falkában veszélyes",
-      "en": "Strong wolf, dangerous in packs"
+      "hu": "Csonttal szelídíthető (alacsony esély).",
+      "en": "Tameable with bones (low success rate)."
     },
     "drops": [
       {
@@ -551,7 +659,7 @@
         },
         "qty": "0-2",
         "chance": "common",
-        "itemId": null
+        "itemId": "wolf_raw"
       },
       {
         "item": {
@@ -564,7 +672,16 @@
       }
     ],
     "image": "dire_wolf.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Normál farkasnál sötétebb színű farkas. Csonttal szelídíthető, de az esély alacsony.",
+      "en": "A wolf darker in color than a normal wolf. Can be tamed with bones, but the success rate is low."
+    },
+    "spawnInfo": {
+      "hu": "Tajga vagy jégmező biómok.",
+      "en": "Taiga or ice plains biomes."
+    }
   },
   {
     "id": "wight",
@@ -572,11 +689,11 @@
       "hu": "Wight",
       "en": "Wight"
     },
-    "hp": 25,
+    "hp": 30,
     "dmgMin": 7,
     "dmgMax": 7,
     "dmgType": "melee",
-    "xp": 15,
+    "xp": 35,
     "spawnZones": [
       "underground"
     ],
@@ -585,8 +702,8 @@
       "requires_silver"
     ],
     "special": {
-      "hu": "Lassítás + éheztetés",
-      "en": "Slowness + hunger"
+      "hu": "Bányászás/ásás képesség. Célkövetés beleértve légi esést és hátba szúrást. Berserker mód szemkontaktusra: szüntelenül töri a köves/fa blokkokat; Erő I-et ad a közeli ellenséges moboknak.",
+      "en": "Mining/digging ability. Target tracking including aerial drops and backstabbing. Berserk mode on eye contact: continuously breaks stone/wood; grants Strength I to nearby hostile mobs."
     },
     "drops": [
       {
@@ -605,11 +722,20 @@
         },
         "qty": "1",
         "chance": "rare",
-        "itemId": null
+        "itemId": "soulstone"
       }
     ],
     "image": "wight.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 3,
+    "description": {
+      "hu": "Vörös szemű zombi rozsdás vas csatabárddal (vagy háborús kalapáccsal/karddal), teljes rozsdás vas páncélban. Sebessége hasonló a Ghoul-éhoz, de nagyobb a hatótávolsága. Közvetlen szemkontaktus Berserker módot aktivál nála (mint az Enderman).",
+      "en": "A red-eyed zombie with a rusted iron battle-axe (or war hammer/sword), wearing full rusted iron armor. Speed similar to a Ghoul, but with longer reach. Direct eye contact triggers Berserk mode (like an Enderman)."
+    },
+    "spawnInfo": {
+      "hu": "Vérhold: felszín; Y=0-40 (mélyebb helyen nagyobb esély). Nehéz módban 50. réteg alatt.",
+      "en": "Blood Moon: surface; Y=0–40 (higher chance deeper). Hard mode below Y=50."
+    }
   },
   {
     "id": "wight_guard",
@@ -617,11 +743,11 @@
       "hu": "Wight Őr",
       "en": "Wight Guard"
     },
-    "hp": 30,
+    "hp": 24,
     "dmgMin": 8,
     "dmgMax": 8,
     "dmgType": "melee",
-    "xp": 25,
+    "xp": 35,
     "spawnZones": [
       "underground"
     ],
@@ -630,8 +756,8 @@
       "requires_silver"
     ],
     "special": {
-      "hu": "Páncélos változat",
-      "en": "Armored variant"
+      "hu": "Váltás távolsági (íj) és közeli harc között. Nehéz módban: 20% esély Méreg Nyílra (Mérgezés 10 mp); közelben nem fegyverezíhető le. Minden fegyvernek van Élesség I / Erő I varázslata.",
+      "en": "Switches between ranged (bow) and melee combat. Hard: 20% chance for Poison Arrows (10s); cannot be disarmed in melee. All weapons have Sharpness I / Power I."
     },
     "drops": [
       {
@@ -650,11 +776,20 @@
         },
         "qty": "1",
         "chance": "uncommon",
-        "itemId": null
+        "itemId": "soulstone"
       }
     ],
     "image": "wight_guard.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 5,
+    "description": {
+      "hu": "A Wight (古尸/Longdead) erősített változata, vörös szemekkel. Réz páncélkészletet visel és fegyvert hord (íj, ős fém kard vagy ős fém kés). A felszerelés és a fegyverek lehetnek varázsoltak.",
+      "en": "A reinforced variant of the Longdead (Wight) with red eyes. Wears a copper armor set and carries a weapon (bow, ancient metal sword, or ancient metal knife). Equipment and weapons may be enchanted."
+    },
+    "spawnInfo": {
+      "hu": "Mélyen a föld alatt (Underground World).",
+      "en": "Deep underground (Underground World)."
+    }
   },
   {
     "id": "black_widow_spider",
@@ -662,11 +797,11 @@
       "hu": "Fekete Özvegy Pók",
       "en": "Black Widow Spider"
     },
-    "hp": 16,
+    "hp": 12,
     "dmgMin": 4,
     "dmgMax": 4,
     "dmgType": "melee",
-    "xp": 8,
+    "xp": 20,
     "spawnZones": [
       "underground"
     ],
@@ -675,8 +810,8 @@
       "poison"
     ],
     "special": {
-      "hu": "Erős mérgezés",
-      "en": "Strong poison"
+      "hu": "Halálos mérgezés: 50 mp Mérgezés (nehéz módban 60 mp). Nappal is ellenséges. Nehéz módban: már mérgezett játékoson minden sebzés igaz sebzéssé konvertálódik.",
+      "en": "Lethal Poison: 50s Poison (hard mode: 60s). Hostile in daylight. Hard mode: attacks on already-poisoned player convert all damage to true damage."
     },
     "drops": [
       {
@@ -699,7 +834,16 @@
       }
     ],
     "image": "black_widow_spider.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Rendkívül ritka szörny. Sok szempontból hasonlít a Fa Pókhoz, például nappal is ellenséges. A támadása 50 másodperces mérgezést okoz — elegendő a 10. szint alatti játékos azonnali megöléséhez, ha nem isznak tejet.",
+      "en": "An extremely rare monster. Similar to the Wood Spider in many ways, including being hostile during the day. Its attack inflicts 50 seconds of poison — enough to instantly kill a player below level 10 unless they drink milk."
+    },
+    "spawnInfo": {
+      "hu": "Ritka megjelenés. Nehéz módban 50. réteg alatt.",
+      "en": "Rare spawn. Hard mode: below Y=50."
+    }
   },
   {
     "id": "witch",
@@ -708,7 +852,7 @@
       "en": "Witch"
     },
     "hp": 26,
-    "dmgMin": 4,
+    "dmgMin": 3,
     "dmgMax": 6,
     "dmgType": "potion",
     "xp": 20,
@@ -720,8 +864,8 @@
       "potion"
     ],
     "special": {
-      "hu": "Mérgező bájitalokat dob",
-      "en": "Throws poison potions"
+      "hu": "Bájital dobálás: Mérgezés, Sebzés, Lassítás bájitalok. Öngyógyítás. Tűz immunitás bájitallal.",
+      "en": "Potion throwing: Poison, Harming, Slowness potions. Self-healing. Fire immunity via potion."
     },
     "drops": [
       {
@@ -731,7 +875,7 @@
         },
         "qty": "0-2",
         "chance": "common",
-        "itemId": null
+        "itemId": "potion"
       },
       {
         "item": {
@@ -740,7 +884,7 @@
         },
         "qty": "0-2",
         "chance": "common",
-        "itemId": null
+        "itemId": "crystal_glass"
       },
       {
         "item": {
@@ -749,11 +893,20 @@
         },
         "qty": "0-2",
         "chance": "common",
-        "itemId": null
+        "itemId": "sugar"
       }
     ],
     "image": "witch.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Varázslónő, aki sebzés- és mérgező bájitalokat dobál. Gyógyítja magát is gyógyítóbájitalokkal. MITE-ben kristály üveget és különleges bájitalokat ejt.",
+      "en": "A sorceress who throws damaging and poisoning potions. Also heals herself with healing potions. In MITE drops crystal glass and special potions."
+    },
+    "spawnInfo": {
+      "hu": "Boszorkánykunyhók és föld alatti területek.",
+      "en": "Witch huts and underground areas."
+    }
   },
   {
     "id": "pillager",
@@ -761,9 +914,9 @@
       "hu": "Fosztogató",
       "en": "Pillager"
     },
-    "hp": 24,
-    "dmgMin": 4,
-    "dmgMax": 4,
+    "hp": 40,
+    "dmgMin": 6,
+    "dmgMax": 6,
     "dmgType": "ranged",
     "xp": 5,
     "spawnZones": [
@@ -772,8 +925,8 @@
     "difficulty": "mid",
     "tags": [],
     "special": {
-      "hu": "Rabló csapat, jutalomládát ejt",
-      "en": "Raider group, drops reward chest"
+      "hu": "Íjász puska távolsági támadás.",
+      "en": "Crossbow ranged attack."
     },
     "drops": [
       {
@@ -792,11 +945,20 @@
         },
         "qty": "1",
         "chance": "rare",
-        "itemId": null
+        "itemId": "ominous_banner"
       }
     ],
     "image": "pillager.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Fosztogató illager, íjász puskával felfegyverezve (esetleg varázslottal). Ha az íjász puska tartóssága elfogy, nem támad tovább falusiakra (de azok még futnak előle).",
+      "en": "A pillager illager armed with a crossbow (possibly enchanted). When the crossbow's durability is depleted, it stops attacking villagers (though they still flee)."
+    },
+    "spawnInfo": {
+      "hu": "Fosztogató Erőd.",
+      "en": "Pillager Outpost."
+    }
   },
   {
     "id": "nether_creeper",
@@ -805,10 +967,10 @@
       "en": "Nether Creeper"
     },
     "hp": 20,
-    "dmgMin": 8,
-    "dmgMax": 12,
+    "dmgMin": 2,
+    "dmgMax": 40,
     "dmgType": "explosion",
-    "xp": 15,
+    "xp": 30,
     "spawnZones": [
       "nether"
     ],
@@ -818,8 +980,8 @@
       "fire_immune"
     ],
     "special": {
-      "hu": "Tűzálló, nagyobb robbanás",
-      "en": "Fire resistant, bigger explosion"
+      "hu": "Nagy robbanás: követ/kavicsot is tör. Robbanáskor meggyújtja a körülötte lévő blokkokat. Tűz/láva immunitás. Nehéz módban: túléli saját robbanását.",
+      "en": "Large explosion: breaks stone/cobblestone. Ignites surrounding blocks on explosion. Fire/lava immunity. Hard mode: survives its own explosion."
     },
     "drops": [
       {
@@ -833,7 +995,16 @@
       }
     ],
     "image": "nether_creeper.png",
-    "mobType": "nether"
+    "mobType": "nether",
+    "armor": 2,
+    "description": {
+      "hu": "Vörös creeper. A robbanása erős (töltött creeperhez hasonló), követ és kavicsot is tör. A robbanás meggyújtja a környező blokkokat. Tűz és láva immunis. Több puskaport ejt mint a normál creeper.",
+      "en": "A red creeper. Has a large explosion (like a charged creeper) that can break stone/cobblestone. Ignites surrounding blocks on explosion. Immune to fire and lava. Drops more gunpowder than a normal creeper."
+    },
+    "spawnInfo": {
+      "hu": "Y=20 alatt felszínen és Underground Worldben.",
+      "en": "Below Y=20 on surface and in Underground World."
+    }
   },
   {
     "id": "red_blaze",
@@ -842,8 +1013,8 @@
       "en": "Red Blaze"
     },
     "hp": 40,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "dmgMin": 6,
+    "dmgMax": 6,
     "dmgType": "fireball",
     "xp": 20,
     "spawnZones": [
@@ -856,8 +1027,8 @@
       "flying"
     ],
     "special": {
-      "hu": "6 tűzgolyó egyszerre!",
-      "en": "6 fireballs at once!"
+      "hu": "6 tűzgolyó egyszerre. Repülés.",
+      "en": "Fires 6 fireballs simultaneously. Can fly."
     },
     "drops": [
       {
@@ -880,7 +1051,16 @@
       }
     ],
     "image": "red_blaze.png",
-    "mobType": "nether"
+    "mobType": "nether",
+    "armor": 0,
+    "description": {
+      "hu": "A Blaze élénk vörös változata. Nether Erődökben jelenik meg 11-es vagy annál alacsonyabb fényszinten. Egyszerre 6 tűzgolyót lő ki.",
+      "en": "A vivid red variant of the Blaze. Spawns naturally in Nether Fortresses at light level 11 or below. Fires 6 fireballs simultaneously."
+    },
+    "spawnInfo": {
+      "hu": "Nether Erőd, fényszint ≤ 11.",
+      "en": "Nether Fortress, light level ≤ 11."
+    }
   },
   {
     "id": "earth_elemental",
@@ -889,8 +1069,8 @@
       "en": "Earth Elemental"
     },
     "hp": 30,
-    "dmgMin": 8,
-    "dmgMax": 8,
+    "dmgMin": 12,
+    "dmgMax": 12,
     "dmgType": "melee",
     "xp": 15,
     "spawnZones": [
@@ -901,8 +1081,8 @@
       "pickaxe_only"
     ],
     "special": {
-      "hu": "4 páncél, csak csákánnyal sebezhető",
-      "en": "4 armor, only damaged by pickaxe"
+      "hu": "Bénítás találatkor. Csak robbanás/villám/esés/megfelelő csákány sebzi.",
+      "en": "Stun on hit. Only damaged by explosion/lightning/fall/equivalent pickaxe."
     },
     "drops": [
       {
@@ -916,7 +1096,16 @@
       }
     ],
     "image": "earth_elemental.png",
-    "mobType": "elemental"
+    "mobType": "elemental",
+    "armor": 4,
+    "description": {
+      "hu": "Öt anyagváltozatban létezik: agyag, kavics, obszidián, netherrack, end kő. Gyorsan tör köves blokkokat és ajtókat. Rendkívüli rezisztencia — csak robbanás, villám, esési sérülés és megfelelő bányász szintű csákány/háborús kalapács sebzi.",
+      "en": "Exists in five material variants: clay, cobblestone, obsidian, netherrack, endstone. Quickly breaks stone and doors. Extreme resistance — only harmed by explosions, lightning, fall damage, and pickaxes/warhammers of equivalent or higher mining tier."
+    },
+    "spawnInfo": {
+      "hu": "Wight-okkal azonos mélységen. Az alatta lévő blokk típusától függ (pl. netherrack elementál csak netherrack-en).",
+      "en": "Same depth as Wights. Depends on block type beneath it."
+    }
   },
   {
     "id": "giant_vampire_bat",
@@ -924,9 +1113,9 @@
       "hu": "Óriás Vámpír Denevér",
       "en": "Giant Vampire Bat"
     },
-    "hp": 30,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 6,
+    "dmgMin": 2,
+    "dmgMax": 2,
     "dmgType": "melee",
     "xp": 10,
     "spawnZones": [
@@ -939,8 +1128,8 @@
       "life_steal"
     ],
     "special": {
-      "hu": "Életlopás + nagy sebzés",
-      "en": "Life steal + high damage"
+      "hu": "Visszalökés. Életerő lopás.",
+      "en": "Knockback. Lifesteal."
     },
     "drops": [
       {
@@ -950,11 +1139,20 @@
         },
         "qty": "1-2",
         "chance": "always",
-        "itemId": null
+        "itemId": "vampire_bat_fang"
       }
     ],
     "image": "giant_vampire_bat.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "A Vérszívó Denevér óriás változata. Nagyobb teste miatt sokkal könnyebb eltalálni.",
+      "en": "A giant variant of the Vampire Bat. Its larger body makes it much easier to hit."
+    },
+    "spawnInfo": {
+      "hu": "Underground World.",
+      "en": "Underground World."
+    }
   },
   {
     "id": "invisible_stalker",
@@ -963,10 +1161,10 @@
       "en": "Invisible Stalker"
     },
     "hp": 20,
-    "dmgMin": 10,
-    "dmgMax": 10,
+    "dmgMin": 5,
+    "dmgMax": 5,
     "dmgType": "melee",
-    "xp": 10,
+    "xp": 20,
     "spawnZones": [
       "underground"
     ],
@@ -976,8 +1174,8 @@
       "requires_mithril"
     ],
     "special": {
-      "hu": "Láthatatlan! Ezüst/Mithril+ fegyver kell",
-      "en": "Invisible! Requires Silver/Mithril+ weapon"
+      "hu": "Gyengeség: találatkor Gyengeség debuff. Fáklya eltávolítás. Nehéz: fáklya eltávolításkor gyógyul és max HP nő.",
+      "en": "Weakness: inflicts Weakness debuff on hit. Torch removal. Hard: heals and gains max HP per torch removed."
     },
     "drops": [
       {
@@ -991,7 +1189,16 @@
       }
     ],
     "image": null,
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Rendkívül nehezen látható szörny; elsősorban szél-szerű hanggal azonosítható. Fáklyákat távolít el. Nem élőholt — Sújtás varázslat nem ad extra sebzést. Ártalom bájitallal (nem Gyógyítóval) sebzíhető.",
+      "en": "Extremely difficult to see; identified mainly by a wind-like sound. Removes player-placed torches. NOT undead — Smite enchantment does no extra damage. Must be attacked with Potions of Harming (not Healing)."
+    },
+    "spawnInfo": {
+      "hu": "Underground World; legmélyebb föld alatti területek. Vérhold: sivatagokban.",
+      "en": "Underground World; darkest underground areas. Blood Moon: deserts."
+    }
   },
   {
     "id": "phase_spider",
@@ -999,11 +1206,11 @@
       "hu": "Fázis Pók",
       "en": "Phase Spider"
     },
-    "hp": 16,
-    "dmgMin": 6,
-    "dmgMax": 6,
+    "hp": 6,
+    "dmgMin": 3,
+    "dmgMax": 3,
     "dmgType": "melee",
-    "xp": 10,
+    "xp": 30,
     "spawnZones": [
       "underground"
     ],
@@ -1013,8 +1220,8 @@
       "poison"
     ],
     "special": {
-      "hu": "Falon átmegy! Csak Ősi Fém kard sebzi",
-      "en": "Phases through walls! Only Ancient Metal sword damages it"
+      "hu": "Teleport támadás: célpont érzékelésekor 0.5 mp-enként teleportál. Távolsági sebzés immunitás. Nehéz módban: találat Lassítás I-et okoz 2-4 mp-re.",
+      "en": "Teleport attack: teleports every 0.5s when detecting a target. Immune to ranged damage. Hard mode: hit inflicts Slowness I for 2–4s."
     },
     "drops": [
       {
@@ -1024,7 +1231,7 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": null
+        "itemId": "phase_spider_eye"
       },
       {
         "item": {
@@ -1037,7 +1244,16 @@
       }
     ],
     "image": "phase_spider.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Futurisztikus megjelenésű pók, teljesen ciánkék-fekete, zöld szemekkel. Barlangi pók méretű. Célpont érzékelésekor 0.5 másodpercenként teleportál rövid távolságokat. Vízben legyőzhető, mielőtt elmerül.",
+      "en": "A futuristic-looking spider, all cyan-black with green eyes. Same size as a cave spider. When detecting a target, teleports short distances every 0.5 seconds. Can be killed in water before it sinks."
+    },
+    "spawnInfo": {
+      "hu": "Kis számban Y=40 alatt. Tömegesen Underground Worldben.",
+      "en": "Small numbers below Y=40. Massively in Underground World."
+    }
   },
   {
     "id": "fire_elemental",
@@ -1045,11 +1261,11 @@
       "hu": "Tűz Elementális",
       "en": "Fire Elemental"
     },
-    "hp": 50,
-    "dmgMin": 10,
-    "dmgMax": 10,
+    "hp": 20,
+    "dmgMin": 5,
+    "dmgMax": 5,
     "dmgType": "melee",
-    "xp": 15,
+    "xp": 25,
     "spawnZones": [
       "nether"
     ],
@@ -1059,8 +1275,8 @@
       "fire_damage"
     ],
     "special": {
-      "hu": "3% instant kill égő játékoson! Víz/hógolyó/sebzés bájital hat rá",
-      "en": "3% instant kill if you're on fire! Effective: water/snowballs/Harming potion"
+      "hu": "Találatkor meggyújtja a játékost. Lávában regeneráció. Nehéz módban: 1-3% esély azonnali megölésre, ha a játékos már ég.",
+      "en": "Sets player on fire on hit. Lava regeneration. Hard mode: 1–3% chance to instantly kill already-burning player."
     },
     "drops": [
       {
@@ -1074,7 +1290,16 @@
       }
     ],
     "image": "fire_elemental.png",
-    "mobType": "elemental"
+    "mobType": "elemental",
+    "armor": 0,
+    "description": {
+      "hu": "Magas láng alakú elementál, lávataván él. Normál módon nem ölhető meg — varázslott fegyver, víz vagy hógolyó szükséges. Lávában 1 HP/mp-t regenerál; lávából kint 1 HP/mp-t veszít.",
+      "en": "A tall flame elemental living on lava lakes. Cannot be killed by normal means — requires enchanted weapons, water, or snowballs. Regenerates 1 HP/s in lava; loses 1 HP/s outside lava."
+    },
+    "spawnInfo": {
+      "hu": "Felszíni sekély lávataván és folyó lávában. Netherben lávataván.",
+      "en": "Shallow lava pools and flowing lava in Overworld. Lava lakes in Nether."
+    }
   },
   {
     "id": "greater_ghast",
@@ -1082,9 +1307,9 @@
       "hu": "Nagy Ghast",
       "en": "Greater Ghast"
     },
-    "hp": 40,
-    "dmgMin": 8,
-    "dmgMax": 12,
+    "hp": 100,
+    "dmgMin": 9,
+    "dmgMax": 9,
     "dmgType": "fireball",
     "xp": 20,
     "spawnZones": [
@@ -1096,8 +1321,8 @@
       "flying"
     ],
     "special": {
-      "hu": "Óriási, repülő, tűzokádó",
-      "en": "Enormous, flying, fire-breathing"
+      "hu": "Nagy tűzlabda lövés. Repülés.",
+      "en": "Large fireball attack. Can fly."
     },
     "drops": [
       {
@@ -1116,11 +1341,20 @@
         },
         "qty": "1",
         "chance": "rare",
-        "itemId": null
+        "itemId": "nether_star"
       }
     ],
     "image": "greater_ghast.png",
-    "mobType": "nether"
+    "mobType": "nether",
+    "armor": 0,
+    "description": {
+      "hu": "A Ghast óriási, főnök változata. Sokkal nagyobb tűzlabdákat lő és jóval több életerővel rendelkezik. A Nether egyik legfélelmetesebb teremtménye.",
+      "en": "The giant boss variant of the Ghast. Shoots much larger fireballs and has far more health. One of the most fearsome creatures in the Nether."
+    },
+    "spawnInfo": {
+      "hu": "Nether.",
+      "en": "Nether."
+    }
   },
   {
     "id": "pillager_captain",
@@ -1128,9 +1362,9 @@
       "hu": "Fosztogató Vezető",
       "en": "Pillager Captain"
     },
-    "hp": 40,
-    "dmgMin": 6,
-    "dmgMax": 6,
+    "hp": 60,
+    "dmgMin": 8,
+    "dmgMax": 8,
     "dmgType": "ranged",
     "xp": 500,
     "spawnZones": [
@@ -1141,8 +1375,8 @@
       "summoner"
     ],
     "special": {
-      "hu": "Erősebb páncélos vezér",
-      "en": "Stronger armored leader"
+      "hu": "2 blokkon belül vas fejszére vált. Nem fegyverezíhető le. 30% esély sebzés felezésre.",
+      "en": "Switches to iron axe within 2 blocks. Cannot be disarmed. 30% chance to halve damage taken."
     },
     "drops": [
       {
@@ -1170,7 +1404,7 @@
         },
         "qty": "1",
         "chance": "common",
-        "itemId": null
+        "itemId": "crossbow"
       },
       {
         "item": {
@@ -1179,11 +1413,20 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": null
+        "itemId": "illager_banner"
       }
     ],
     "image": "pillager_captain.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "A fosztogatók erőszakosabb vezére, vér vörös szemekkel. Ha a játékos 2 blokkon belül kerül, vas fejszére vált. Nem fegyverezíhető le; minden találatnak 30% esélye van felezni a kapott sebzést.",
+      "en": "A more violent captain of pillagers with blood-red eyes. When the player is within 2 blocks, switches to an iron axe. Cannot be disarmed; each hit has 30% chance to halve incoming damage."
+    },
+    "spawnInfo": {
+      "hu": "Fosztogató Erőd (vezér változat).",
+      "en": "Pillager Outpost (captain variant)."
+    }
   },
   {
     "id": "zealot",
@@ -1191,9 +1434,9 @@
       "hu": "Zealot",
       "en": "Zealot"
     },
-    "hp": 80,
-    "dmgMin": 13,
-    "dmgMax": 13,
+    "hp": 30,
+    "dmgMin": 5,
+    "dmgMax": 5,
     "dmgType": "melee",
     "xp": 40,
     "spawnZones": [
@@ -1204,8 +1447,8 @@
       "requires_ancient_metal"
     ],
     "special": {
-      "hu": "Extrém sebzés! Vas fejszével támad",
-      "en": "Extreme damage! Attacks with iron axe"
+      "hu": "Agresszív közelharcos.",
+      "en": "Aggressive melee fighter."
     },
     "drops": [
       {
@@ -1228,7 +1471,16 @@
       }
     ],
     "image": null,
-    "mobType": "boss"
+    "mobType": "boss",
+    "armor": 2,
+    "description": {
+      "hu": "Fanatikus élőholt harcos, aki habozás nélkül támad. Könnyen páncélzott és gyors.",
+      "en": "A fanatical undead warrior who attacks without hesitation. Lightly armored and fast."
+    },
+    "spawnInfo": {
+      "hu": "Föld alatti területek.",
+      "en": "Underground areas."
+    }
   },
   {
     "id": "zealot_plains",
@@ -1236,8 +1488,8 @@
       "hu": "Síksági Zealot",
       "en": "Plains Zealot"
     },
-    "hp": 20,
-    "dmgMin": 3,
+    "hp": 30,
+    "dmgMin": 5,
     "dmgMax": 5,
     "dmgType": "melee",
     "xp": 5,
@@ -1249,8 +1501,8 @@
       "requires_ancient_metal"
     ],
     "special": {
-      "hu": "Biome-specifikus, erősebb variáns",
-      "en": "Biome-specific, stronger variant"
+      "hu": "Agresszív közelharcos.",
+      "en": "Aggressive melee fighter."
     },
     "drops": [
       {
@@ -1273,7 +1525,16 @@
       }
     ],
     "image": null,
-    "mobType": "boss"
+    "mobType": "boss",
+    "armor": 2,
+    "description": {
+      "hu": "Zealot síkság változata.",
+      "en": "Plains variant of the Zealot."
+    },
+    "spawnInfo": {
+      "hu": "Síkság biómok.",
+      "en": "Plains biomes."
+    }
   },
   {
     "id": "zealot_snowy",
@@ -1281,8 +1542,8 @@
       "hu": "Havas Zealot",
       "en": "Snowy Zealot"
     },
-    "hp": 20,
-    "dmgMin": 3,
+    "hp": 30,
+    "dmgMin": 5,
     "dmgMax": 5,
     "dmgType": "melee",
     "xp": 5,
@@ -1294,8 +1555,8 @@
       "requires_ancient_metal"
     ],
     "special": {
-      "hu": "Biome-specifikus, erősebb variáns",
-      "en": "Biome-specific, stronger variant"
+      "hu": "Agresszív közelharcos.",
+      "en": "Aggressive melee fighter."
     },
     "drops": [
       {
@@ -1318,7 +1579,16 @@
       }
     ],
     "image": null,
-    "mobType": "boss"
+    "mobType": "boss",
+    "armor": 2,
+    "description": {
+      "hu": "Zealot havas változata.",
+      "en": "Snowy variant of the Zealot."
+    },
+    "spawnInfo": {
+      "hu": "Havas biómok.",
+      "en": "Snowy biomes."
+    }
   },
   {
     "id": "zealot_jungle",
@@ -1326,8 +1596,8 @@
       "hu": "Dzsungel Zealot",
       "en": "Jungle Zealot"
     },
-    "hp": 20,
-    "dmgMin": 3,
+    "hp": 30,
+    "dmgMin": 5,
     "dmgMax": 5,
     "dmgType": "melee",
     "xp": 5,
@@ -1339,8 +1609,8 @@
       "requires_ancient_metal"
     ],
     "special": {
-      "hu": "Biome-specifikus, erősebb variáns",
-      "en": "Biome-specific, stronger variant"
+      "hu": "Agresszív közelharcos.",
+      "en": "Aggressive melee fighter."
     },
     "drops": [
       {
@@ -1363,7 +1633,16 @@
       }
     ],
     "image": null,
-    "mobType": "boss"
+    "mobType": "boss",
+    "armor": 2,
+    "description": {
+      "hu": "Zealot dzsungel változata.",
+      "en": "Jungle variant of the Zealot."
+    },
+    "spawnInfo": {
+      "hu": "Dzsungel biómok.",
+      "en": "Jungle biomes."
+    }
   },
   {
     "id": "bone_lord",
@@ -1371,11 +1650,11 @@
       "hu": "Csont Úr",
       "en": "Bone Lord"
     },
-    "hp": 50,
-    "dmgMin": 8,
-    "dmgMax": 8,
+    "hp": 20,
+    "dmgMin": 5,
+    "dmgMax": 5,
     "dmgType": "melee",
-    "xp": 15,
+    "xp": 25,
     "spawnZones": [
       "underground"
     ],
@@ -1384,8 +1663,8 @@
       "summoner"
     ],
     "special": {
-      "hu": "Boss — csontváz idézés",
-      "en": "Boss — summons skeletons"
+      "hu": "Csontváz idézés (70% íjas, 30% közelharcos). Düh aura a közeli csontvázkáknak.",
+      "en": "Skeleton Summon (70% archers, 30% melee). Rage Aura for nearby skeletons."
     },
     "drops": [
       {
@@ -1399,7 +1678,16 @@
       }
     ],
     "image": "bone_lord.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 3,
+    "description": {
+      "hu": "Vörös szemű csontváz, teljes rozsdás vas felszerelésben. Ha beazonosít egy célpontot, sosem despawneol. Csontváz csapatot idéz maga köré.",
+      "en": "A red-eyed skeleton in full rusted iron equipment. Once it locks onto a player it never despawns. Summons a skeleton squad around itself."
+    },
+    "spawnInfo": {
+      "hu": "Vérhold: eséllyel a felszínen. Underground World spawner.",
+      "en": "Blood Moon: chance on surface. Underground World spawner."
+    }
   },
   {
     "id": "ancient_bone_lord",
@@ -1407,9 +1695,9 @@
       "hu": "Ősi Csont Úr",
       "en": "Ancient Bone Lord"
     },
-    "hp": 80,
-    "dmgMin": 12,
-    "dmgMax": 12,
+    "hp": 24,
+    "dmgMin": 8,
+    "dmgMax": 8,
     "dmgType": "melee",
     "xp": 30,
     "spawnZones": [
@@ -1421,8 +1709,8 @@
       "requires_mithril"
     ],
     "special": {
-      "hu": "Erősebb boss változat",
-      "en": "Stronger boss variant"
+      "hu": "Longdead idézés fokozott statiszikájú hullámban. Halálkor: páncél 10 mp-ig sebezhetetlenül harcol tovább.",
+      "en": "Longdead Summon in enhanced waves. On death: armor fights invincibly for 10s."
     },
     "drops": [
       {
@@ -1436,7 +1724,16 @@
       }
     ],
     "image": "ancient_bone_lord.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 4,
+    "description": {
+      "hu": "Ős fém páncélban és fegyverrel járó, erősebb Csontváz Úr változat. Az Underground Worldben jelenik meg. Halálkor a páncélja tovább harcol 10 mp-ig (sebezhetetlenül).",
+      "en": "A stronger Skeleton Lord variant in ancient metal armor and weapons. Spawns in the Underground World. On death, the armor continues fighting for 10 seconds (invincibly)."
+    },
+    "spawnInfo": {
+      "hu": "Kizárólag Underground World.",
+      "en": "Underground World only."
+    }
   },
   {
     "id": "white_ghoul",
@@ -1455,8 +1752,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Ghoul variáns, fehér megjelenés",
-      "en": "Ghoul variant, white appearance"
+      "hu": "Lassítás találatkor.",
+      "en": "Slowness on hit."
     },
     "drops": [
       {
@@ -1470,7 +1767,16 @@
       }
     ],
     "image": "white_ghoul.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "A ghoul fehér, gyorsabb változata. Hideg biómokban jelenik meg.",
+      "en": "The white, faster variant of the ghoul. Appears in cold biomes."
+    },
+    "spawnInfo": {
+      "hu": "Havas/hideg biómok.",
+      "en": "Cold/snowy biomes."
+    }
   },
   {
     "id": "black_ghoul",
@@ -1482,15 +1788,15 @@
     "dmgMin": 5,
     "dmgMax": 5,
     "dmgType": "melee",
-    "xp": 10,
+    "xp": 25,
     "spawnZones": [
       "underground"
     ],
     "difficulty": "mid",
     "tags": [],
     "special": {
-      "hu": "Ghoul variáns, fekete megjelenés",
-      "en": "Ghoul variant, black appearance"
+      "hu": "Árnyék támadás: Árnyék effektet okoz. Gyengeség: Gyengeség effektet okoz. Fáklya eltávolítás: átkot helyez az eltávolított fáklyákra. Árnyék átok: aktívan 3 másodpercenként 1 Ghoult idéz 5-7 blokk körzetben.",
+      "en": "Shadow attack: inflicts Shadow effect. Weakness: inflicts Weakness. Torch removal: curses removed torches. Shadow Curse: actively spawns 1 Ghoul every 3s within 5–7 blocks."
     },
     "drops": [
       {
@@ -1504,7 +1810,16 @@
       }
     ],
     "image": "black_ghoul.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "Teljesen fekete zombi, fehér izzó szemekkel. Napfényben azonnal eltűnik. Fáklyákat távolít el. Normál fegyverekkel nem sebzíhető — ezüst fegyver, varázslott fegyver vagy Gyógyító bájital szükséges.",
+      "en": "An all-black zombie with white glowing eyes. Vanishes instantly in sunlight. Removes torches. Cannot be harmed by normal weapons — requires silver weapons, enchanted weapons, or Healing potions."
+    },
+    "spawnInfo": {
+      "hu": "Napfénytől azonnal eltűnik. Mélyen a föld alatt.",
+      "en": "Vanishes in sunlight. Deep underground."
+    }
   },
   {
     "id": "shadow",
@@ -1512,11 +1827,11 @@
       "hu": "Árnyék",
       "en": "Shadow"
     },
-    "hp": 16,
-    "dmgMin": 4,
-    "dmgMax": 4,
+    "hp": 20,
+    "dmgMin": 5,
+    "dmgMax": 5,
     "dmgType": "melee",
-    "xp": 10,
+    "xp": 25,
     "spawnZones": [
       "underground"
     ],
@@ -1525,8 +1840,8 @@
       "invisible"
     ],
     "special": {
-      "hu": "Félig láthatatlan árnyék lény",
-      "en": "Semi-invisible shadow creature"
+      "hu": "Tapasztalat lopás: fixált XP-t von el a játékos szintje alapján (min. 20 XP; szintenként +10). Ezüst felszerelés csökkenti a hatást.",
+      "en": "Experience steal: drains a fixed amount of XP based on player level (minimum 20 XP; +10 XP per level). Silver equipment resists the effect."
     },
     "drops": [
       {
@@ -1536,11 +1851,20 @@
         },
         "qty": "1",
         "chance": "rare",
-        "itemId": null
+        "itemId": "soulstone"
       }
     ],
     "image": "shadow.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Mélyebb rétegeken jelenik meg mint a Ghoul. Napfényen elég (nem tűnik el, hanem ég). Normál fegyverekkel nem sebzíhető — ezüst fegyver, ezüst nyíl, varázslott fegyver vagy Gyógyító bájital szükséges.",
+      "en": "Spawns deeper than Ghouls. Burns in direct sunlight (not just disappears). Cannot be harmed by normal weapons — requires silver weapons, silver arrows, enchanted weapons, or Potions of Healing."
+    },
+    "spawnInfo": {
+      "hu": "Mélyebben mint a Ghoulok. Vérhold: jégmezők. Underground World.",
+      "en": "Deeper than Ghouls. Blood Moon: ice plains. Underground World."
+    }
   },
   {
     "id": "revenant",
@@ -1548,11 +1872,11 @@
       "hu": "Revenant",
       "en": "Revenant"
     },
-    "hp": 24,
+    "hp": 12,
     "dmgMin": 6,
     "dmgMax": 6,
     "dmgType": "melee",
-    "xp": 15,
+    "xp": 20,
     "spawnZones": [
       "underground"
     ],
@@ -1561,8 +1885,8 @@
       "requires_silver"
     ],
     "special": {
-      "hu": "Ezüst fegyver szükséges a sebzéshez",
-      "en": "Requires silver weapon to damage"
+      "hu": "Váltás ős fém íj (távolsági) és ős fém kard (közelharcos) között. Minden fegyvernek van Élesség I / Erő I.",
+      "en": "Switches between ancient metal bow (ranged) and ancient metal sword (melee). All weapons have Sharpness I / Power I."
     },
     "drops": [
       {
@@ -1585,7 +1909,16 @@
       }
     ],
     "image": "revenant.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 3,
+    "description": {
+      "hu": "Az Underground Worldben megjelenő csontváz változat. Ős fém lánc páncélt visel és ős fém íjat + ős fém nyilakat hord. Egyesek ős fém kardot visznek. Általában nagy csoportokban jelenik meg. Az Underground World Longdead-dungeon-jaiban töltött ládák bőséges ős fém felszerelést tartalmaznak.",
+      "en": "A skeleton variant spawning in the Underground World. Wears ancient metal chainmail and carries ancient metal bow + arrows. Some carry an ancient metal sword. Generally spawns in large groups. Longdead dungeons in the Underground World contain chests with abundant ancient metal gear."
+    },
+    "spawnInfo": {
+      "hu": "Kizárólag Underground World. Nagy számban Longdead dungeon-okban.",
+      "en": "Underground World only. Large numbers in Longdead dungeons."
+    }
   },
   {
     "id": "brown_slime",
@@ -1593,9 +1926,9 @@
       "hu": "Barna Slime",
       "en": "Brown Slime"
     },
-    "hp": 12,
-    "dmgMin": 2,
-    "dmgMax": 2,
+    "hp": 16,
+    "dmgMin": 8,
+    "dmgMax": 8,
     "dmgType": "melee",
     "xp": 8,
     "spawnZones": [
@@ -1604,8 +1937,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Barna nyálka változat",
-      "en": "Brown slime variant"
+      "hu": "Vízben süllyed. Mezítelen kézzel (vagy bottal/csonttal) 2 páncélt figyelmen kívül hagyó sebzés.",
+      "en": "Sinks in water. Bare hand (or stick/bone) contact deals 2 armor-ignoring damage."
     },
     "drops": [
       {
@@ -1619,7 +1952,16 @@
       }
     ],
     "image": "brown_slime.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Barna, zselatinszerű nyálkagolyó. Pepszint választ ki — megemészti a húst, sajtot és bőrt. Vízben süllyed (nem úszik), így mély víz segíthet elmenekülni tőle.",
+      "en": "A brown, jelly-like slime. Secretes pepsin — digests meat, cheese, and leather. Sinks in water (does not float), so deep water can help escape it."
+    },
+    "spawnInfo": {
+      "hu": "Mélyen a föld alatt.",
+      "en": "Deep underground."
+    }
   },
   {
     "id": "red_slime",
@@ -1627,9 +1969,9 @@
       "hu": "Vörös Slime",
       "en": "Red Slime"
     },
-    "hp": 20,
-    "dmgMin": 4,
-    "dmgMax": 4,
+    "hp": 16,
+    "dmgMin": 12,
+    "dmgMax": 12,
     "dmgType": "melee",
     "xp": 12,
     "spawnZones": [
@@ -1640,8 +1982,8 @@
       "poison"
     ],
     "special": {
-      "hu": "Mérgező, vörös nyálka változat",
-      "en": "Poisonous red slime variant"
+      "hu": "Lassítás minden méretnél. Mezítelen kézzel 3 páncélt figyelmen kívül hagyó sebzés az ütő félnek.",
+      "en": "Slowness at all sizes. Bare-hand contact deals 3 armor-ignoring damage to the attacker."
     },
     "drops": [
       {
@@ -1655,7 +1997,16 @@
       }
     ],
     "image": "red_slime.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Vörös nyálkás szörny, amely pepszint választ ki. Megemésztené a húst, sajtot és bőrt a játékos leltárából találatkor. Érintésre elpusztítja a növényeket. Halálkor kisebb darabokra osztódik.",
+      "en": "A red slime that secretes pepsin, digesting meat, cheese, and leather from the player's inventory on hit. Destroys crops on contact. Splits into smaller pieces on death."
+    },
+    "spawnInfo": {
+      "hu": "Felszín alatt.",
+      "en": "Underground."
+    }
   },
   {
     "id": "grey_slime",
@@ -1663,9 +2014,9 @@
       "hu": "Szürke Slime",
       "en": "Grey Slime"
     },
-    "hp": 10,
-    "dmgMin": 2,
-    "dmgMax": 2,
+    "hp": 4,
+    "dmgMin": 6,
+    "dmgMax": 6,
     "dmgType": "melee",
     "xp": 8,
     "spawnZones": [
@@ -1674,8 +2025,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Szürke nyálka változat",
-      "en": "Grey slime variant"
+      "hu": "Erős savas korrozió: leltárban lévő fém anyagokat (mithril/adamántium kivételével) és ételeket csökkenti. Belőtt nyilak azonnal megsemmisülnek.",
+      "en": "Strong acid corrosion: reduces metal materials (except mithril/adamantine) and food in inventory. Arrows shot into it are dissolved."
     },
     "drops": [
       {
@@ -1689,7 +2040,16 @@
       }
     ],
     "image": "grey_slime.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Szürke nyálkás szörny, amely nem ugrik — csendesen csúszik és képes függőleges felületekre mászni. Rendkívül savas. Csak kő típusú blokkok, arany, mithril és adamántium ellenáll. Lassan korrodálja a gombokat, karokat, ajtókat, létrákat stb. Fáklyákat és növényeket azonnal elpusztítja. Csak lávával, blokkzúzással, Ártalom bájitallal vagy varázslott fegyverrel sebzíhető.",
+      "en": "A grey slime that does not jump — silently slides and can climb vertical surfaces. Highly acidic. Only stone-type blocks, gold, mithril, and adamantine resist it. Slowly corrodes buttons, levers, doors, ladders, etc. Instantly destroys torches and crops. Only harmed by lava, crushing, Potion of Harming, or enchanted weapons."
+    },
+    "spawnInfo": {
+      "hu": "Föld alatti, kőzet bányászatakor jelenik meg.",
+      "en": "Underground, appears when mining stone or ores."
+    }
   },
   {
     "id": "black_slime",
@@ -1697,9 +2057,9 @@
       "hu": "Fekete Slime",
       "en": "Black Slime"
     },
-    "hp": 30,
-    "dmgMin": 6,
-    "dmgMax": 6,
+    "hp": 16,
+    "dmgMin": 16,
+    "dmgMax": 16,
     "dmgType": "melee",
     "xp": 20,
     "spawnZones": [
@@ -1710,8 +2070,8 @@
       "life_steal"
     ],
     "special": {
-      "hu": "Életlopó fekete nyálka változat",
-      "en": "Life-stealing black slime variant"
+      "hu": "Erős savas korrozió. Mezítelen kézzel 4 páncélt figyelmen kívül hagyó sebzés.",
+      "en": "Strong acid corrosion. Bare-hand contact deals 4 armor-ignoring damage."
     },
     "drops": [
       {
@@ -1725,7 +2085,16 @@
       }
     ],
     "image": "black_slime.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Fekete, pudingszerű nyálkagolyó. Ugyanolyan savas mint a szürke. Csak tűzzel, lávával vagy varázslott fegyverrel sebzíhető. Ha fáklyára esik, 1 sebzést vesz és elpusztítja a fáklyát.",
+      "en": "A black pudding-like slime. Same acidity as grey slime. Only harmed by fire, lava, or enchanted weapons. If it lands on a torch, takes 1 damage and destroys the torch."
+    },
+    "spawnInfo": {
+      "hu": "Mélyen a föld alatt.",
+      "en": "Deep underground."
+    }
   },
   {
     "id": "shadow_bat",
@@ -1733,9 +2102,9 @@
       "hu": "Árnyék Denevér",
       "en": "Shadow Bat"
     },
-    "hp": 12,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "hp": 3,
+    "dmgMin": 1,
+    "dmgMax": 1,
     "dmgType": "melee",
     "xp": 10,
     "spawnZones": [
@@ -1747,8 +2116,8 @@
       "invisible"
     ],
     "special": {
-      "hu": "Repülő, félig láthatatlan denevér",
-      "en": "Flying, semi-invisible bat"
+      "hu": "Árnyék effekt találatkor. Csak ezüst/varázslott fegyver sebzi. Tűz/láva immunis.",
+      "en": "Shadow effect on attack. Only vulnerable to silver/enchanted weapons. Fire/lava immune."
     },
     "drops": [
       {
@@ -1758,11 +2127,20 @@
         },
         "qty": "1",
         "chance": "rare",
-        "itemId": null
+        "itemId": "vampire_bat_fang"
       }
     ],
     "image": "shadow_bat.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Ezüst szemű denevér, Underground Worldben gyakori. Árnyék effektet okoz. Csak ezüst vagy varázslott fegyverrel sebzíhető. Tűz és láva immunis. Napfényen eltűnik.",
+      "en": "A silver-eyed bat common in the Underground World. Inflicts Shadow effect. Only vulnerable to silver or enchanted weapons. Immune to fire and lava. Vanishes in sunlight."
+    },
+    "spawnInfo": {
+      "hu": "Underground World. Napfényen azonnal eltűnik.",
+      "en": "Underground World. Vanishes in sunlight."
+    }
   },
   {
     "id": "explosive_silverfish",
@@ -1772,7 +2150,7 @@
     },
     "hp": 8,
     "dmgMin": 3,
-    "dmgMax": 6,
+    "dmgMax": 40,
     "dmgType": "explosion",
     "xp": 10,
     "spawnZones": [
@@ -1784,8 +2162,8 @@
       "pack"
     ],
     "special": {
-      "hu": "Robban halál esetén",
-      "en": "Explodes on death"
+      "hu": "Halálkor azonnal felrobban.",
+      "en": "Explodes on death."
     },
     "drops": [
       {
@@ -1799,7 +2177,16 @@
       }
     ],
     "image": "explosive_silverfish.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Vörös, fekete füstöt kibocsátó halacska. A Netherben netherrack blokkokban rejtőzik és akkor bújik elő, ha a blokkot kibányásszák. Találat esetén azonnal felrobban.",
+      "en": "A red silverfish emitting black smoke. Hides inside netherrack in the Nether and emerges when the block is mined. Explodes immediately upon taking damage."
+    },
+    "spawnInfo": {
+      "hu": "Nether, netherrack blokkokban rejtőzve.",
+      "en": "Nether, hidden inside netherrack."
+    }
   },
   {
     "id": "copper_poison_silverfish",
@@ -1807,9 +2194,9 @@
       "hu": "Rézmérges Silverfish",
       "en": "Copper Poison Silverfish"
     },
-    "hp": 8,
-    "dmgMin": 2,
-    "dmgMax": 2,
+    "hp": 9,
+    "dmgMin": 3,
+    "dmgMax": 3,
     "dmgType": "melee",
     "xp": 10,
     "spawnZones": [
@@ -1821,8 +2208,8 @@
       "pack"
     ],
     "special": {
-      "hu": "Mérgező harapás, réz jellegű",
-      "en": "Poisonous bite, copper-type"
+      "hu": "Találat: Mérgezés 24 mp.",
+      "en": "On hit: Poison for 24 seconds."
     },
     "drops": [
       {
@@ -1836,7 +2223,16 @@
       }
     ],
     "image": "copper_poison_silverfish.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Rézsárga halacska. Rézérc bányászatakor alacsony eséllyel kerül elő. Aktívan megtámadja a játékost. 24 másodperces mérgezést okoz. Komoly korai játékbeli fenyegetés.",
+      "en": "A copper-yellow silverfish. Has a low chance to emerge when mining copper ore. Actively attacks players. Inflicts 24 seconds of poison. A major early-game threat."
+    },
+    "spawnInfo": {
+      "hu": "Rézérc bányászatakor; ritka esetben mélységi aknákban kő blokkokban.",
+      "en": "When mining copper ore; rarely in stone blocks in deep mine shafts."
+    }
   },
   {
     "id": "ancient_silverfish",
@@ -1858,8 +2254,8 @@
       "pack"
     ],
     "special": {
-      "hu": "Csak Ősi Fém fegyverrel sebezhető",
-      "en": "Only damaged by Ancient Metal weapons"
+      "hu": "Bénítás találatkor: Bénítás státusz a játékosra.",
+      "en": "Paralysis on hit: inflicts Paralysis status."
     },
     "drops": [
       {
@@ -1873,7 +2269,16 @@
       }
     ],
     "image": "ancient_silverfish.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Underground Worldben megjelenő halacska. Infestált kőtéglákból bújik elő. Ellenség észlelésekor csoportosan rohan.",
+      "en": "A silverfish spawning in the Underground World. Breaks out of infested stone bricks. Rushes enemies as a group when one is spotted."
+    },
+    "spawnInfo": {
+      "hu": "Underground World, infestált kőtéglák.",
+      "en": "Underground World, infested stone bricks."
+    }
   },
   {
     "id": "clay_golem",
@@ -1892,8 +2297,8 @@
     "difficulty": "mid",
     "tags": [],
     "special": {
-      "hu": "Agyagból készült gólem",
-      "en": "Clay-made golem"
+      "hu": "Gyors kőtörés és ajtók betörése.",
+      "en": "Quickly breaks stone and doors."
     },
     "drops": [
       {
@@ -1907,7 +2312,16 @@
       }
     ],
     "image": "clay_golem.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 2,
+    "description": {
+      "hu": "Agyagból formált golem. Könnyű páncélzattal rendelkezik és erős ütéssel. Agyaglelőhelyek közelén él. Tűzön edzett agyag változattá alakul.",
+      "en": "A golem formed from clay. Has light armor and a strong punch. Found near clay deposits. Transforms into a hardened clay variant when set on fire."
+    },
+    "spawnInfo": {
+      "hu": "Felszín, agyag lelőhelyek közelén.",
+      "en": "Surface, near clay deposits."
+    }
   },
   {
     "id": "skeleton_lord",
@@ -1915,11 +2329,11 @@
       "hu": "Csontváz Úr",
       "en": "Skeleton Lord"
     },
-    "hp": 50,
-    "dmgMin": 8,
-    "dmgMax": 8,
+    "hp": 20,
+    "dmgMin": 5,
+    "dmgMax": 5,
     "dmgType": "melee",
-    "xp": 15,
+    "xp": 25,
     "spawnZones": [
       "underground"
     ],
@@ -1928,8 +2342,8 @@
       "summoner"
     ],
     "special": {
-      "hu": "Boss — csontváz idézés, erős közelharc",
-      "en": "Boss — summons skeletons, strong melee"
+      "hu": "Csontváz idézés: periodikusan idéz csontvázt (70% íjas, 30% közelharcos). Düh aura: a közeli csontvázkákat berserkerré teszi (sebesség, támadás, nyíl sebesség, regeneráció növelés).",
+      "en": "Skeleton Summon: periodically summons skeletons (70% archers, 30% melee). Rage Aura: makes nearby skeletons berserk (speed, attack, arrow speed, health regen boost)."
     },
     "drops": [
       {
@@ -1939,7 +2353,7 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": null
+        "itemId": "skeleton_lord_heart"
       },
       {
         "item": {
@@ -1952,7 +2366,16 @@
       }
     ],
     "image": "skeleton_lord.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 3,
+    "description": {
+      "hu": "Vörös szemű csontváz, teljes rozsdás vas felszerelésben és rozsdás vas karddal. Ha beazonosít egy célpontot, sosem tűnik el. Cél nélkül fokozatosan csontváz csapatot idéz maga köré.",
+      "en": "A red-eyed skeleton in full rusted iron armor wielding a rusted iron sword. Once it locks onto a player it never despawns. Without a target it gradually summons a surrounding skeleton squad."
+    },
+    "spawnInfo": {
+      "hu": "Vérhold: eséllyel a felszínen. Underground World: mindig megjelenik egy.",
+      "en": "Blood Moon: chance on surface. Underground World: always spawns one."
+    }
   },
   {
     "id": "ancient_skeleton_lord",
@@ -1960,9 +2383,9 @@
       "hu": "Ősi Csontváz Úr",
       "en": "Ancient Skeleton Lord"
     },
-    "hp": 80,
-    "dmgMin": 12,
-    "dmgMax": 12,
+    "hp": 24,
+    "dmgMin": 8,
+    "dmgMax": 8,
     "dmgType": "melee",
     "xp": 30,
     "spawnZones": [
@@ -1974,8 +2397,8 @@
       "requires_mithril"
     ],
     "special": {
-      "hu": "Erősebb boss változat",
-      "en": "Stronger boss variant"
+      "hu": "Longdead idézés: fokozott statisztikájú Longdead-hullámot idéz. Halálkor: páncél folytatja a harcot 10 mp-ig (sebezhetetlenül, nem idézhet).",
+      "en": "Longdead Summon: summons a wave of enhanced Longdeads. On death: armor continues fighting for 10s (invincible, cannot summon)."
     },
     "drops": [
       {
@@ -1985,7 +2408,7 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": null
+        "itemId": "skeleton_lord_heart"
       },
       {
         "item": {
@@ -1998,7 +2421,16 @@
       }
     ],
     "image": "ancient_skeleton_lord.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 4,
+    "description": {
+      "hu": "Ős fém páncélban és fegyverrel járó, erősebb Csontváz Úr változat. Az Underground Worldben jelenik meg. Halálkor a páncélja tovább harcol 10 mp-ig.",
+      "en": "A stronger Skeleton Lord variant in ancient metal armor and weapons. Spawns in the Underground World. On death, the armor continues fighting for 10 seconds."
+    },
+    "spawnInfo": {
+      "hu": "Kizárólag Underground World.",
+      "en": "Underground World only."
+    }
   },
   {
     "id": "variant_skeleton_lord",
@@ -2006,9 +2438,9 @@
       "hu": "Mutáns Csontváz Úr",
       "en": "Variant Skeleton Lord"
     },
-    "hp": 100,
-    "dmgMin": 15,
-    "dmgMax": 15,
+    "hp": 150,
+    "dmgMin": 12,
+    "dmgMax": 12,
     "dmgType": "melee",
     "xp": 1000,
     "spawnZones": [
@@ -2020,8 +2452,8 @@
       "requires_mithril"
     ],
     "special": {
-      "hu": "Ritka mutáns variáns boss",
-      "en": "Rare mutant variant boss"
+      "hu": "6 Longdead idézése 10 mp-enként (max 18). Düh aura (15 blokk). Minden mob gyógyulása 2 HP/mp az aurában. 50 HP alatt: gravitáció 60 mp-ig (minden bejövő sebzés max 4-re csökkentve). Halálkor: minden közeli mob Erő I-et kap 60 mp-re. Távolsági sebzés immunitás.",
+      "en": "Summons 6 Longdeads every 10s (max 18). Rage Aura (15 blocks). All mobs heal 2 HP/s in aura. Below 50 HP: gravity for 60s (all incoming damage capped at 4). On death: nearby mobs gain Strength I for 60s. Immune to ranged damage."
     },
     "drops": [
       {
@@ -2031,7 +2463,7 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": null
+        "itemId": "skeleton_lord_heart"
       },
       {
         "item": {
@@ -2044,7 +2476,16 @@
       }
     ],
     "image": "variant_skeleton_lord.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 8,
+    "description": {
+      "hu": "V0.5.7-ben hozzáadott Csontváz Úr változat. Teste kétszer akkora mint a normál Csontváz Úré. Teljes vas páncélt visel. 50 HP alatt gravitációs húzóerőt aktivál — a közeli mobokat magába szívja, mindegyikkel 10 HP-t gyógyul.",
+      "en": "A Skeleton Lord variant added in v0.5.7. Body size twice that of the Skeleton Lord. Wears full iron armor. Below 50 HP activates a gravitational pull — devours nearby mobs, healing 10 HP per mob consumed."
+    },
+    "spawnInfo": {
+      "hu": "Kizárólag Underground World.",
+      "en": "Underground World only."
+    }
   },
   {
     "id": "obsidian_golem",
@@ -2065,8 +2506,8 @@
       "fire_immune"
     ],
     "special": {
-      "hu": "Tűzálló, rendkívül kemény boss",
-      "en": "Fire immune, extremely tough boss"
+      "hu": "Extrém páncélozottság, nehéz sebzíhető.",
+      "en": "Extreme toughness, very difficult to damage."
     },
     "drops": [
       {
@@ -2076,11 +2517,20 @@
         },
         "qty": "2-4",
         "chance": "always",
-        "itemId": null
+        "itemId": "obsidian"
       }
     ],
     "image": "obsidian_golem.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Kizárólag obszidiánból álló golem. Természetesen megjelenik 40 blokknál mélyebben a felszín alatt. Aktívan megtámadja a játékosokat és falusiakat.",
+      "en": "A golem composed entirely of obsidian. Naturally spawns more than 40 blocks below the surface. Actively attacks players and villagers."
+    },
+    "spawnInfo": {
+      "hu": "Felszín alatt, 40+ blokkal.",
+      "en": "More than 40 blocks below surface."
+    }
   },
   {
     "id": "plains_zombie",
@@ -2088,9 +2538,9 @@
       "hu": "Síkság Zombi",
       "en": "Plains Zombie"
     },
-    "hp": 22,
-    "dmgMin": 4,
-    "dmgMax": 4,
+    "hp": 20,
+    "dmgMin": 5,
+    "dmgMax": 5,
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
@@ -2101,8 +2551,8 @@
       "pack"
     ],
     "special": {
-      "hu": "Síkság biome-specifikus zombi variáns",
-      "en": "Plains biome-specific zombie variant"
+      "hu": "Köves blokkok bányászata.",
+      "en": "Can mine stone blocks."
     },
     "drops": [
       {
@@ -2116,7 +2566,16 @@
       }
     ],
     "image": "plains_zombie.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "Síkságokon természetesen megjelenő zombi. Testét virágok és indák borítják. Képes köves blokkokat bányászni.",
+      "en": "A zombie that naturally spawns on plains. Its body is covered with flowers and vines. Can mine stone blocks."
+    },
+    "spawnInfo": {
+      "hu": "Síkság biómok.",
+      "en": "Plains biomes."
+    }
   },
   {
     "id": "plains_skeleton",
@@ -2124,19 +2583,19 @@
       "hu": "Síkság Csontváz",
       "en": "Plains Skeleton"
     },
-    "hp": 20,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "hp": 6,
+    "dmgMin": 4,
+    "dmgMax": 4,
     "dmgType": "ranged",
-    "xp": 5,
+    "xp": 20,
     "spawnZones": [
       "surface"
     ],
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Síkság biome-specifikus csontváz variáns",
-      "en": "Plains biome-specific skeleton variant"
+      "hu": "Íjas vagy kardos támadás. Nehéz módban: íjnak Erő II, kardnak Élesség II varázslattal.",
+      "en": "Bow or sword attack. Hard mode: bow has Power II, sword has Sharpness II."
     },
     "drops": [
       {
@@ -2159,7 +2618,16 @@
       }
     ],
     "image": "plains_skeleton.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "Síkságokon megjelenő csontváz. Minden csontja zöld. Karddal vagy íjjal támad.",
+      "en": "A skeleton spawning on plains. All bones are green. Attacks with a sword or bow."
+    },
+    "spawnInfo": {
+      "hu": "Síkság biómok.",
+      "en": "Plains biomes."
+    }
   },
   {
     "id": "plains_creeper",
@@ -2168,10 +2636,10 @@
       "en": "Plains Creeper"
     },
     "hp": 20,
-    "dmgMin": 6,
-    "dmgMax": 12,
+    "dmgMin": 3,
+    "dmgMax": 20,
     "dmgType": "explosion",
-    "xp": 5,
+    "xp": 15,
     "spawnZones": [
       "surface"
     ],
@@ -2180,8 +2648,8 @@
       "explosion"
     ],
     "special": {
-      "hu": "Síkság biome-specifikus creeper variáns",
-      "en": "Plains biome-specific creeper variant"
+      "hu": "Robbanás.",
+      "en": "Explosion."
     },
     "drops": [
       {
@@ -2195,7 +2663,16 @@
       }
     ],
     "image": "plains_creeper.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Síkságokon megjelenő creeper. Testén véletlenszerűen elhelyezett virágmintákkal.",
+      "en": "A creeper spawning on plains. Body has randomly distributed flower patterns."
+    },
+    "spawnInfo": {
+      "hu": "Síkság biómok.",
+      "en": "Plains biomes."
+    }
   },
   {
     "id": "plains_spider",
@@ -2203,11 +2680,11 @@
       "hu": "Síkság Pók",
       "en": "Plains Spider"
     },
-    "hp": 16,
-    "dmgMin": 2,
-    "dmgMax": 2,
+    "hp": 12,
+    "dmgMin": 4,
+    "dmgMax": 4,
     "dmgType": "melee",
-    "xp": 5,
+    "xp": 15,
     "spawnZones": [
       "surface"
     ],
@@ -2216,8 +2693,8 @@
       "pack"
     ],
     "special": {
-      "hu": "Síkság biome-specifikus pók variáns",
-      "en": "Plains biome-specific spider variant"
+      "hu": "Falra mászás képessége.",
+      "en": "Wall climbing ability."
     },
     "drops": [
       {
@@ -2240,7 +2717,16 @@
       }
     ],
     "image": "plains_spider.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Síkságokon megjelenő pók. Teljesen sötétzöld testtel rendelkezik.",
+      "en": "A spider spawning in plains terrain. Entirely dark green body."
+    },
+    "spawnInfo": {
+      "hu": "Síkság biómok.",
+      "en": "Plains biomes."
+    }
   },
   {
     "id": "snowy_zombie",
@@ -2248,9 +2734,9 @@
       "hu": "Havas Zombi",
       "en": "Snowy Zombie"
     },
-    "hp": 22,
-    "dmgMin": 4,
-    "dmgMax": 4,
+    "hp": 20,
+    "dmgMin": 1,
+    "dmgMax": 5,
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
@@ -2261,8 +2747,8 @@
       "pack"
     ],
     "special": {
-      "hu": "Havas biome-specifikus zombi variáns",
-      "en": "Snowy biome-specific zombie variant"
+      "hu": "Napfény immunitás — nem ég el nappal.",
+      "en": "Sunlight immunity — does not burn in daylight."
     },
     "drops": [
       {
@@ -2281,11 +2767,20 @@
         },
         "qty": "0-2",
         "chance": "common",
-        "itemId": null
+        "itemId": "snowball"
       }
     ],
     "image": "snowy_zombie.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "Havas tájakon megjelenő zombi. Feje és végtagjai sötétkék-zöld árnyalatúak. Napfényben nem ég el.",
+      "en": "A zombie spawning in snowy terrain. Its head and limbs are dark blue-green. Does not burn in sunlight."
+    },
+    "spawnInfo": {
+      "hu": "Havas biómok.",
+      "en": "Snowy biomes."
+    }
   },
   {
     "id": "snowy_skeleton",
@@ -2293,9 +2788,9 @@
       "hu": "Havas Csontváz",
       "en": "Snowy Skeleton"
     },
-    "hp": 20,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "hp": 6,
+    "dmgMin": 1,
+    "dmgMax": 5,
     "dmgType": "ranged",
     "xp": 5,
     "spawnZones": [
@@ -2304,8 +2799,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Havas biome-specifikus csontváz variáns",
-      "en": "Snowy biome-specific skeleton variant"
+      "hu": "Íjas távolsági támadás.",
+      "en": "Ranged bow attack."
     },
     "drops": [
       {
@@ -2324,11 +2819,20 @@
         },
         "qty": "0-2",
         "chance": "common",
-        "itemId": null
+        "itemId": "snowball"
       }
     ],
     "image": "snowy_skeleton.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "Havas tájakon megjelenő csontváz. Minden csontja kék a fej kivételével.",
+      "en": "A skeleton spawning in snowy terrain. All bones are blue except the head."
+    },
+    "spawnInfo": {
+      "hu": "Havas biómok.",
+      "en": "Snowy biomes."
+    }
   },
   {
     "id": "snowy_creeper",
@@ -2336,9 +2840,9 @@
       "hu": "Havas Creeper",
       "en": "Snowy Creeper"
     },
-    "hp": 20,
-    "dmgMin": 8,
-    "dmgMax": 14,
+    "hp": 10,
+    "dmgMin": 3,
+    "dmgMax": 20,
     "dmgType": "explosion",
     "xp": 10,
     "spawnZones": [
@@ -2349,8 +2853,8 @@
       "explosion"
     ],
     "special": {
-      "hu": "Havas biome-specifikus creeper, erősebb robbanás",
-      "en": "Snowy biome-specific creeper, stronger explosion"
+      "hu": "Robbanás jéggel fagyasztja be a közeli ellenfeleket.",
+      "en": "Explosion generates ice that freezes nearby enemies."
     },
     "drops": [
       {
@@ -2369,11 +2873,20 @@
         },
         "qty": "0-1",
         "chance": "common",
-        "itemId": null
+        "itemId": "snowball"
       }
     ],
     "image": "snowy_creeper.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Havas tájakon megjelenő creeper. Teljesen fehér testtel és kék szemekkel/szájjal. A robbanási hullám befagyasztja a közeli ellenfeleket.",
+      "en": "A creeper spawning in snowy terrain. Entirely white body with blue eyes and mouth. The explosion wave freezes/encases nearby enemies in ice."
+    },
+    "spawnInfo": {
+      "hu": "Havas biómok.",
+      "en": "Snowy biomes."
+    }
   },
   {
     "id": "snowy_spider",
@@ -2381,9 +2894,9 @@
       "hu": "Havas Pók",
       "en": "Snowy Spider"
     },
-    "hp": 16,
-    "dmgMin": 2,
-    "dmgMax": 2,
+    "hp": 12,
+    "dmgMin": 4,
+    "dmgMax": 4,
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
@@ -2395,8 +2908,8 @@
       "poison"
     ],
     "special": {
-      "hu": "Havas biome-specifikus pók, mérgező",
-      "en": "Snowy biome-specific spider, poisonous"
+      "hu": "Falra mászás képessége.",
+      "en": "Wall climbing ability."
     },
     "drops": [
       {
@@ -2415,11 +2928,20 @@
         },
         "qty": "0-1",
         "chance": "common",
-        "itemId": null
+        "itemId": "snowball"
       }
     ],
     "image": "snowy_spider.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Havas tájakon megjelenő pók. Teljesen fekete testtel és kísérteties kék izzó szemekkel rendelkezik.",
+      "en": "A spider spawning in snowy terrain. Entirely black body with eerie blue glowing eyes."
+    },
+    "spawnInfo": {
+      "hu": "Havas biómok.",
+      "en": "Snowy biomes."
+    }
   },
   {
     "id": "jungle_zombie",
@@ -2427,7 +2949,7 @@
       "hu": "Dzsungel Zombi",
       "en": "Jungle Zombie"
     },
-    "hp": 22,
+    "hp": 20,
     "dmgMin": 4,
     "dmgMax": 4,
     "dmgType": "melee",
@@ -2440,8 +2962,8 @@
       "pack"
     ],
     "special": {
-      "hu": "Dzsungel biome-specifikus zombi variáns",
-      "en": "Jungle biome-specific zombie variant"
+      "hu": "Alap zombi tulajdonságok.",
+      "en": "Standard zombie traits."
     },
     "drops": [
       {
@@ -2455,7 +2977,16 @@
       }
     ],
     "image": "jungle_zombie.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "Dzsungelekben megjelenő zombi változat.",
+      "en": "A zombie variant that appears in jungles."
+    },
+    "spawnInfo": {
+      "hu": "Dzsungel biómok.",
+      "en": "Jungle biomes."
+    }
   },
   {
     "id": "jungle_skeleton",
@@ -2463,9 +2994,9 @@
       "hu": "Dzsungel Csontváz",
       "en": "Jungle Skeleton"
     },
-    "hp": 20,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "hp": 6,
+    "dmgMin": 4,
+    "dmgMax": 4,
     "dmgType": "ranged",
     "xp": 5,
     "spawnZones": [
@@ -2474,8 +3005,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Dzsungel biome-specifikus csontváz variáns",
-      "en": "Jungle biome-specific skeleton variant"
+      "hu": "Alap csontváz tulajdonságok.",
+      "en": "Standard skeleton traits."
     },
     "drops": [
       {
@@ -2498,7 +3029,16 @@
       }
     ],
     "image": "jungle_skeleton.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "Dzsungelekben megjelenő csontváz változat.",
+      "en": "A skeleton variant appearing in jungles."
+    },
+    "spawnInfo": {
+      "hu": "Dzsungel biómok.",
+      "en": "Jungle biomes."
+    }
   },
   {
     "id": "jungle_creeper",
@@ -2507,8 +3047,8 @@
       "en": "Jungle Creeper"
     },
     "hp": 20,
-    "dmgMin": 6,
-    "dmgMax": 12,
+    "dmgMin": 3,
+    "dmgMax": 20,
     "dmgType": "explosion",
     "xp": 5,
     "spawnZones": [
@@ -2519,8 +3059,8 @@
       "explosion"
     ],
     "special": {
-      "hu": "Dzsungel biome-specifikus creeper variáns",
-      "en": "Jungle biome-specific creeper variant"
+      "hu": "Robbanás.",
+      "en": "Explosion."
     },
     "drops": [
       {
@@ -2534,7 +3074,16 @@
       }
     ],
     "image": "jungle_creeper.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Dzsungelekben megjelenő creeper változat.",
+      "en": "A creeper variant appearing in jungles."
+    },
+    "spawnInfo": {
+      "hu": "Dzsungel biómok.",
+      "en": "Jungle biomes."
+    }
   },
   {
     "id": "jungle_spider",
@@ -2542,9 +3091,9 @@
       "hu": "Dzsungel Pók",
       "en": "Jungle Spider"
     },
-    "hp": 16,
-    "dmgMin": 2,
-    "dmgMax": 2,
+    "hp": 12,
+    "dmgMin": 4,
+    "dmgMax": 4,
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
@@ -2556,8 +3105,8 @@
       "poison"
     ],
     "special": {
-      "hu": "Dzsungel biome-specifikus pók, mérgező",
-      "en": "Jungle biome-specific spider, poisonous"
+      "hu": "Falra mászás képessége.",
+      "en": "Wall climbing ability."
     },
     "drops": [
       {
@@ -2580,7 +3129,16 @@
       }
     ],
     "image": "jungle_spider.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Dzsungelekben megjelenő pók változat.",
+      "en": "A spider variant appearing in jungles."
+    },
+    "spawnInfo": {
+      "hu": "Dzsungel biómok.",
+      "en": "Jungle biomes."
+    }
   },
   {
     "id": "tnt_skeleton",
@@ -2588,9 +3146,9 @@
       "hu": "TNT Csontváz",
       "en": "TNT Skeleton"
     },
-    "hp": 20,
-    "dmgMin": 8,
-    "dmgMax": 8,
+    "hp": 10,
+    "dmgMin": 4,
+    "dmgMax": 20,
     "dmgType": "ranged",
     "xp": 30,
     "spawnZones": [
@@ -2601,8 +3159,8 @@
       "explosion"
     ],
     "special": {
-      "hu": "Robbanó nyilakat lő",
-      "en": "Shoots explosive arrows"
+      "hu": "Robbanó TNT dobás. [Eltávolítva v0.5.7-ben]",
+      "en": "Throws exploding TNT. [Removed in v0.5.7]"
     },
     "drops": [
       {
@@ -2634,7 +3192,16 @@
       }
     ],
     "image": "tnt_skeleton.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "Két hatalmas izmos karral rendelkező csontváz. TNT-t dobál nyilak helyett. 0.5.7-ben eltávolítva.",
+      "en": "A skeleton with two large muscular arms. Throws TNT instead of arrows. Removed in version 0.5.7."
+    },
+    "spawnInfo": {
+      "hu": "Y=30 alatt barlangokban/aknákban. [Eltávolítva]",
+      "en": "Below Y=30 in caves/mines. [Removed]"
+    }
   },
   {
     "id": "confused_creeper",
@@ -2642,9 +3209,9 @@
       "hu": "Zavart Creeper",
       "en": "Confused Creeper"
     },
-    "hp": 20,
-    "dmgMin": 10,
-    "dmgMax": 10,
+    "hp": 10,
+    "dmgMin": 5,
+    "dmgMax": 15,
     "dmgType": "explosion",
     "xp": 30,
     "spawnZones": [
@@ -2655,8 +3222,8 @@
       "explosion"
     ],
     "special": {
-      "hu": "Kiszámíthatatlan robbanó viselkedés",
-      "en": "Unpredictable explosive behavior"
+      "hu": "Robbanáskor: a játékos teljes leltárának összekeverése.",
+      "en": "On explosion: scrambles the player's entire inventory."
     },
     "drops": [
       {
@@ -2670,7 +3237,16 @@
       }
     ],
     "image": "confused_creeper.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Éjjel síkságokon és dzsungelekben megjelenő creeper. Robbanásakor összekeveri a játékos teljes leltárát.",
+      "en": "A creeper spawning at night in plains and jungle areas. On explosion, it shuffles the player's entire inventory."
+    },
+    "spawnInfo": {
+      "hu": "Éjjel, síkság és dzsungel biómok.",
+      "en": "Nighttime, plains and jungle biomes."
+    }
   },
   {
     "id": "end_lightning_creeper",
@@ -2678,9 +3254,9 @@
       "hu": "End Villám Creeper",
       "en": "End Lightning Creeper"
     },
-    "hp": 20,
-    "dmgMin": 12,
-    "dmgMax": 16,
+    "hp": 10,
+    "dmgMin": 5,
+    "dmgMax": 25,
     "dmgType": "explosion",
     "xp": 40,
     "spawnZones": [
@@ -2691,8 +3267,8 @@
       "explosion"
     ],
     "special": {
-      "hu": "Villámmal robbantó Vég dimenzió creeper",
-      "en": "Lightning-charged End dimension creeper"
+      "hu": "Ender Teleport: találat esetén rövid távolságra teleportál. Közeli robbanás.",
+      "en": "Ender Teleport: teleports short distance when hit. Close-range explosion."
     },
     "drops": [
       {
@@ -2706,7 +3282,16 @@
       }
     ],
     "image": "end_lightning_creeper.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Vihar/zivatar idején megjelenő creeper. Teljesen koromfekete testtel és lila szemekkel. Találat esetén Endermanhez hasonlóan teleportál.",
+      "en": "A creeper spawning during thunderstorms. Entirely jet-black body with purple eyes. When hit, teleports like an Enderman."
+    },
+    "spawnInfo": {
+      "hu": "Kizárólag vihar/zivatar időben.",
+      "en": "Thunderstorm/rainstorm weather only."
+    }
   },
   {
     "id": "little_creeper",
@@ -2714,9 +3299,9 @@
       "hu": "Mini Creeper",
       "en": "Little Creeper"
     },
-    "hp": 8,
+    "hp": 10,
     "dmgMin": 3,
-    "dmgMax": 3,
+    "dmgMax": 20,
     "dmgType": "explosion",
     "xp": 3,
     "spawnZones": [
@@ -2727,8 +3312,8 @@
       "explosion"
     ],
     "special": {
-      "hu": "Kis méretű creeper, kisebb robbanás",
-      "en": "Small-sized creeper, smaller explosion"
+      "hu": "Halálakor robbanásból akár 4 kis creepert hoz létre.",
+      "en": "On death by explosion: spawns up to 4 small creepers."
     },
     "drops": [
       {
@@ -2742,7 +3327,16 @@
       }
     ],
     "image": "little_creeper.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Sok creeper kombinációjának tűnik. Halálakor robbanás után akár 4 kis creepert is létrehozhat véletlenszerűen.",
+      "en": "Appears to be a combination of many creepers. On death by explosion, can randomly spawn up to 4 small creepers."
+    },
+    "spawnInfo": {
+      "hu": "Azonos a vanília creeperrel.",
+      "en": "Same as vanilla creeper."
+    }
   },
   {
     "id": "bomber",
@@ -2750,9 +3344,9 @@
       "hu": "Bombázó",
       "en": "Bomber"
     },
-    "hp": 24,
-    "dmgMin": 12,
-    "dmgMax": 12,
+    "hp": 20,
+    "dmgMin": 0,
+    "dmgMax": 60,
     "dmgType": "explosion",
     "xp": 30,
     "spawnZones": [
@@ -2764,8 +3358,8 @@
       "flying"
     ],
     "special": {
-      "hu": "TNT-fejű humanoid, távolból TNT-t hajigál. Nincs természetes spawnelása — csak spawn egg-gel idézhető.",
-      "en": "TNT-headed humanoid, throws TNT from range. No natural spawn — only summonable via spawn egg."
+      "hu": "TNT lövedékek dobálása. Soha nem közelharcos.",
+      "en": "Throws TNT projectiles. Never melee attacks."
     },
     "drops": [
       {
@@ -2779,7 +3373,16 @@
       }
     ],
     "image": "bomber.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Humanoid szörny TNT-vel a fején. TNT-t dobál az ellenfelekre távolságból. Soha nem harcol közelről.",
+      "en": "A humanoid monster with TNT on its head. Throws TNT at enemies from range. Never melee attacks."
+    },
+    "spawnInfo": {
+      "hu": "Jelenleg nincs természetes megjelenési mechanizmus.",
+      "en": "No current natural spawn mechanism."
+    }
   },
   {
     "id": "corrupted_snowman",
@@ -2787,9 +3390,9 @@
       "hu": "Romlott Hóember",
       "en": "Corrupted Snowman"
     },
-    "hp": 20,
-    "dmgMin": 4,
-    "dmgMax": 4,
+    "hp": 10,
+    "dmgMin": 3,
+    "dmgMax": 3,
     "dmgType": "ranged",
     "xp": 20,
     "spawnZones": [
@@ -2800,8 +3403,8 @@
       "fire_immune"
     ],
     "special": {
-      "hu": "Tűzálló romlott hóember, hógolyókat dob",
-      "en": "Fire immune corrupted snowman, throws snowballs"
+      "hu": "Távolsági hógolyó támadás.",
+      "en": "Ranged snowball attack."
     },
     "drops": [
       {
@@ -2811,11 +3414,20 @@
         },
         "qty": "1-2",
         "chance": "always",
-        "itemId": null
+        "itemId": "snow_block"
       }
     ],
     "image": "corrupted_snowman.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Havas biómokban természetesen megjelenő Hóember változat. Vörös vér folyik a testén — nagyon kísérteties megjelenésű. Egyébként a vanília Hóember szabályait követi.",
+      "en": "A naturally spawning Snow Golem variant found in snowy biomes. Crimson blood flows all over its body — very disturbing appearance. Otherwise follows vanilla Snow Golem rules."
+    },
+    "spawnInfo": {
+      "hu": "Havas biómok.",
+      "en": "Snowy biomes."
+    }
   },
   {
     "id": "desert_guardian",
@@ -2823,9 +3435,9 @@
       "hu": "Sivatagi Őr",
       "en": "Desert Guardian"
     },
-    "hp": 20,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 50,
+    "dmgMin": 3,
+    "dmgMax": 3,
     "dmgType": "melee",
     "xp": 8,
     "spawnZones": [
@@ -2834,8 +3446,8 @@
     "difficulty": "mid",
     "tags": [],
     "special": {
-      "hu": "Sivatagi biome-specifikus őr",
-      "en": "Desert biome-specific guardian"
+      "hu": "Nyíltámadás távolból.",
+      "en": "Ranged arrow attack."
     },
     "drops": [
       {
@@ -2858,7 +3470,16 @@
       }
     ],
     "image": "desert_guardian.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Sivatagi templomokban természetesen megjelenő őrző. Szögletes, mechanikus megjelenésű. Nyíllal lövi a betolakodókat.",
+      "en": "Naturally spawns inside desert temples as a guardian. Has a boxy, angular mechanism-like appearance. Fires arrows at intruders."
+    },
+    "spawnInfo": {
+      "hu": "Sivatagi templomok.",
+      "en": "Desert Temples."
+    }
   },
   {
     "id": "pigman_leader",
@@ -2867,8 +3488,8 @@
       "en": "Pigman Leader"
     },
     "hp": 40,
-    "dmgMin": 8,
-    "dmgMax": 8,
+    "dmgMin": 7,
+    "dmgMax": 7,
     "dmgType": "melee",
     "xp": 35,
     "spawnZones": [
@@ -2880,8 +3501,8 @@
       "gold_passive"
     ],
     "special": {
-      "hu": "Zombi Disznóember vezér, falkáját irányítja",
-      "en": "Zombie Pigman leader, commands its pack"
+      "hu": "Csoport vezér. Tűz immunis.",
+      "en": "Group leader. Fire immune."
     },
     "drops": [
       {
@@ -2900,11 +3521,20 @@
         },
         "qty": "1",
         "chance": "rare",
-        "itemId": null
+        "itemId": "nether_star"
       }
     ],
     "image": "pigman_leader.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 2,
+    "description": {
+      "hu": "A Zombie Pigmanok vezére. Erősebb és agresszívebb, csoportot irányít a Netherben.",
+      "en": "The leader of zombie pigmen. Stronger and more aggressive, commands a group in the Nether."
+    },
+    "spawnInfo": {
+      "hu": "Nether.",
+      "en": "Nether."
+    }
   },
   {
     "id": "child_skeleton",
@@ -2913,8 +3543,8 @@
       "en": "Child Skeleton"
     },
     "hp": 10,
-    "dmgMin": 2,
-    "dmgMax": 2,
+    "dmgMin": 1,
+    "dmgMax": 5,
     "dmgType": "ranged",
     "xp": 2,
     "spawnZones": [
@@ -2923,8 +3553,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Kis méretű csontváz változat",
-      "en": "Small-sized skeleton variant"
+      "hu": "Íjas távolsági támadás.",
+      "en": "Ranged bow attack."
     },
     "drops": [
       {
@@ -2938,7 +3568,16 @@
       }
     ],
     "image": "child_skeleton.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "A csontváz kissé kisebb változata. Íjjal és nyíllal támad. Felszínen és Underground Worldben egyaránt megjelenik.",
+      "en": "A slightly smaller variant of the skeleton. Attacks with bow and arrow. Appears both on surface and in the Underground World."
+    },
+    "spawnInfo": {
+      "hu": "Véletlenszerűen felszínen és Underground Worldben.",
+      "en": "Randomly on surface and in Underground World."
+    }
   },
   {
     "id": "child_iron_golem",
@@ -2947,8 +3586,8 @@
       "en": "Child Iron Golem"
     },
     "hp": 50,
-    "dmgMin": 6,
-    "dmgMax": 6,
+    "dmgMin": 7,
+    "dmgMax": 7,
     "dmgType": "melee",
     "xp": 20,
     "spawnZones": [
@@ -2957,8 +3596,8 @@
     "difficulty": "mid",
     "tags": [],
     "special": {
-      "hu": "Kis méretű vas gólem változat",
-      "en": "Small-sized iron golem variant"
+      "hu": "Feldobás közelharci találatkor.",
+      "en": "Knockup on melee hit."
     },
     "drops": [
       {
@@ -2972,7 +3611,16 @@
       }
     ],
     "image": "child_iron_golem.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 5,
+    "description": {
+      "hu": "A Vas Golem kisebb változata. Kisebb, de még mindig erős faluvédelmi szörny.",
+      "en": "The smaller variant of the Iron Golem. Smaller but still a powerful village-guarding monster."
+    },
+    "spawnInfo": {
+      "hu": "Falvak közelén.",
+      "en": "Near villages."
+    }
   },
   {
     "id": "child_ghast",
@@ -2980,9 +3628,9 @@
       "hu": "Kis Ghast",
       "en": "Child Ghast"
     },
-    "hp": 8,
-    "dmgMin": 4,
-    "dmgMax": 4,
+    "hp": 10,
+    "dmgMin": 6,
+    "dmgMax": 6,
     "dmgType": "fireball",
     "xp": 10,
     "spawnZones": [
@@ -2994,8 +3642,8 @@
       "fire_immune"
     ],
     "special": {
-      "hu": "Kis méretű ghast változat",
-      "en": "Small-sized ghast variant"
+      "hu": "Tüzes lövedék lövés. Repülés.",
+      "en": "Fires flaming projectiles. Can fly."
     },
     "drops": [
       {
@@ -3009,7 +3657,16 @@
       }
     ],
     "image": "child_ghast.png",
-    "mobType": "nether"
+    "mobType": "nether",
+    "armor": 0,
+    "description": {
+      "hu": "A Ghast kisebb változata. Véletlenszerűen jelenik meg a Netherben. Lángoló lövedékeket lő.",
+      "en": "A smaller variant of the Ghast. Randomly spawns in the Nether. Fires flaming projectiles."
+    },
+    "spawnInfo": {
+      "hu": "Nether (véletlenszerű megjelenés).",
+      "en": "Nether (random spawn)."
+    }
   },
   {
     "id": "variant_child_ghast",
@@ -3017,9 +3674,9 @@
       "hu": "Mutáns Kis Ghast",
       "en": "Variant Child Ghast"
     },
-    "hp": 8,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 20,
+    "dmgMin": 3,
+    "dmgMax": 3,
     "dmgType": "fireball",
     "xp": 10,
     "spawnZones": [
@@ -3031,8 +3688,8 @@
       "fire_immune"
     ],
     "special": {
-      "hu": "Bébi ghast erősebb variánsa",
-      "en": "Stronger variant of child ghast"
+      "hu": "Tüzes lövedék lövés. Repülés.",
+      "en": "Fires flaming projectiles. Can fly."
     },
     "drops": [
       {
@@ -3046,7 +3703,16 @@
       }
     ],
     "image": "variant_child_ghast.png",
-    "mobType": "nether"
+    "mobType": "nether",
+    "armor": 0,
+    "description": {
+      "hu": "A Kisghast egy változata, vörösvér könnyek jelölik az arcán. Szintén véletlenszerűen jelenik meg a Netherben.",
+      "en": "A variant of the Child Ghast, distinguished by blood-red tear markings on its face. Also randomly spawns in the Nether."
+    },
+    "spawnInfo": {
+      "hu": "Nether (véletlenszerű megjelenés).",
+      "en": "Nether (random spawn)."
+    }
   },
   {
     "id": "variant_zombie",
@@ -3055,8 +3721,8 @@
       "en": "Variant Zombie"
     },
     "hp": 30,
-    "dmgMin": 6,
-    "dmgMax": 6,
+    "dmgMin": 8,
+    "dmgMax": 8,
     "dmgType": "melee",
     "xp": 25,
     "spawnZones": [
@@ -3068,8 +3734,8 @@
       "pack"
     ],
     "special": {
-      "hu": "Véletlenszerű erős zombi variáns",
-      "en": "Random strong zombie variant"
+      "hu": "Kúszó és álló forma. Blokktörés képesség.",
+      "en": "Crawling and standing form. Block-breaking ability."
     },
     "drops": [
       {
@@ -3083,7 +3749,16 @@
       }
     ],
     "image": "variant_zombie.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "Vérhold esemény alatt megjelenő mutáns zombi. Két formája van: kúszó (kisebb ütközési doboz) és álló.",
+      "en": "A mutant zombie spawning during the Blood Moon event. Has two forms: crawling (smaller hitbox) and standing."
+    },
+    "spawnInfo": {
+      "hu": "Kizárólag Vérhold esemény alatt.",
+      "en": "Blood Moon event only."
+    }
   },
   {
     "id": "variant_skeleton",
@@ -3091,9 +3766,9 @@
       "hu": "Mutáns Csontváz",
       "en": "Variant Skeleton"
     },
-    "hp": 25,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 20,
+    "dmgMin": 7,
+    "dmgMax": 7,
     "dmgType": "ranged",
     "xp": 20,
     "spawnZones": [
@@ -3103,8 +3778,8 @@
     "difficulty": "mid",
     "tags": [],
     "special": {
-      "hu": "Véletlenszerű erős csontváz variáns",
-      "en": "Random strong skeleton variant"
+      "hu": "Növelt sebzés.",
+      "en": "Increased damage."
     },
     "drops": [
       {
@@ -3127,7 +3802,16 @@
       }
     ],
     "image": "variant_skeleton.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "Vérhold alatt megjelenő mutáns csontváz. Nagyobb sebzést okoz mint a normál csontváz.",
+      "en": "A mutant skeleton spawning during Blood Moon. Deals more damage than the normal skeleton."
+    },
+    "spawnInfo": {
+      "hu": "Kizárólag Vérhold esemény.",
+      "en": "Blood Moon event only."
+    }
   },
   {
     "id": "variant_spider",
@@ -3135,9 +3819,9 @@
       "hu": "Mutáns Pók",
       "en": "Variant Spider"
     },
-    "hp": 20,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 30,
+    "dmgMin": 7,
+    "dmgMax": 7,
     "dmgType": "melee",
     "xp": 50,
     "spawnZones": [
@@ -3150,8 +3834,8 @@
       "poison"
     ],
     "special": {
-      "hu": "Véletlenszerű erős pók variáns",
-      "en": "Random strong spider variant"
+      "hu": "Növelt sebzés.",
+      "en": "Increased damage."
     },
     "drops": [
       {
@@ -3174,7 +3858,16 @@
       }
     ],
     "image": "variant_spider.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Vérhold alatt megjelenő mutáns pók. Nagyobb sebzést okoz.",
+      "en": "A mutant spider spawning during Blood Moon. Deals more damage."
+    },
+    "spawnInfo": {
+      "hu": "Kizárólag Vérhold esemény.",
+      "en": "Blood Moon event only."
+    }
   },
   {
     "id": "variant_creeper",
@@ -3182,9 +3875,9 @@
       "hu": "Mutáns Creeper",
       "en": "Variant Creeper"
     },
-    "hp": 25,
-    "dmgMin": 10,
-    "dmgMax": 20,
+    "hp": 30,
+    "dmgMin": 5,
+    "dmgMax": 30,
     "dmgType": "explosion",
     "xp": 50,
     "spawnZones": [
@@ -3195,8 +3888,8 @@
       "explosion"
     ],
     "special": {
-      "hu": "Véletlenszerű erős creeper variáns",
-      "en": "Random strong creeper variant"
+      "hu": "Gyors megközelítés és robbanás.",
+      "en": "Fast approach and explosion."
     },
     "drops": [
       {
@@ -3210,7 +3903,16 @@
       }
     ],
     "image": "variant_creeper.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Vérhold alatt megjelenő mutáns creeper. Nagyobb sebzéssel rendelkezik.",
+      "en": "A mutant creeper spawning during Blood Moon. Has higher damage."
+    },
+    "spawnInfo": {
+      "hu": "Kizárólag Vérhold esemény.",
+      "en": "Blood Moon event only."
+    }
   },
   {
     "id": "him",
@@ -3218,9 +3920,9 @@
       "hu": "HIM",
       "en": "HIM"
     },
-    "hp": 200,
-    "dmgMin": 20,
-    "dmgMax": 20,
+    "hp": 400,
+    "dmgMin": 2,
+    "dmgMax": 2,
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
@@ -3233,8 +3935,8 @@
       "requires_ancient_metal"
     ],
     "special": {
-      "hu": "Extrém ritka spawn, azonnali halál esélye, csak Ősi Fém fegyverrel sebezhető",
-      "en": "Extremely rare spawn, instant kill chance, only Ancient Metal weapons work"
+      "hu": "Minden sebzéssel szemben teljes immunitás.",
+      "en": "Completely immune to all damage."
     },
     "drops": [
       {
@@ -3244,11 +3946,20 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": null
+        "itemId": "nether_star"
       }
     ],
     "image": "him.png",
-    "mobType": "boss"
+    "mobType": "boss",
+    "armor": 0,
+    "description": {
+      "hu": "Pontosan az alapértelmezett Steve kinézetet veszi fel, fehér, üres szemekkel. Véletlenszerűen jelenik meg a játékos közelében az Underground Worldben. Minden sebzéssel szemben immunis.",
+      "en": "Looks exactly like the default Steve skin with white, blank eyes. Randomly spawns near the player in the Underground World. Immune to all damage."
+    },
+    "spawnInfo": {
+      "hu": "Underground World, véletlenszerűen a játékos közelében.",
+      "en": "Underground World, randomly near the player."
+    }
   },
   {
     "id": "slime",
@@ -3256,9 +3967,9 @@
       "hu": "Slime",
       "en": "Slime"
     },
-    "hp": 8,
-    "dmgMin": 1,
-    "dmgMax": 1,
+    "hp": 16,
+    "dmgMin": 4,
+    "dmgMax": 4,
     "dmgType": "melee",
     "xp": 4,
     "spawnZones": [
@@ -3267,8 +3978,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Kisebb darabokra hasad öléskor",
-      "en": "Splits into smaller pieces on death"
+      "hu": "Halálkor kisebb darabokra oszlik. Nagy méret: nagy sebzés és HP.",
+      "en": "Splits into smaller pieces on death. Large size: high damage and HP."
     },
     "drops": [
       {
@@ -3278,11 +3989,20 @@
         },
         "qty": "0-2",
         "chance": "common",
-        "itemId": null
+        "itemId": "slimeball_green"
       }
     ],
     "image": "slime.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Zöld nyálkás szörny, amely kisebb darabokra osztódik pusztuláskor. Nedves barlangokban és mocsarakban él. Nyálkagömböt ejt.",
+      "en": "A green slime monster that splits into smaller pieces when killed. Lives in wet caves and swamps. Drops slimeballs."
+    },
+    "spawnInfo": {
+      "hu": "Nedves barlangok, mocsarak, Y=40 alatt véletlenszerűen.",
+      "en": "Wet caves, swamps, randomly below Y=40."
+    }
   },
   {
     "id": "ghast",
@@ -3294,7 +4014,7 @@
     "dmgMin": 9,
     "dmgMax": 9,
     "dmgType": "fireball",
-    "xp": 10,
+    "xp": 5,
     "spawnZones": [
       "nether"
     ],
@@ -3304,8 +4024,8 @@
       "fire_immune"
     ],
     "special": {
-      "hu": "Repülő, tűzgolyókat lő a Netherből",
-      "en": "Flying, shoots fireballs in the Nether"
+      "hu": "Tűzgolyó lövés (visszaverhető). Repülés.",
+      "en": "Fireball attack (deflectable). Can fly."
     },
     "drops": [
       {
@@ -3328,7 +4048,16 @@
       }
     ],
     "image": "ghast.png",
-    "mobType": "nether"
+    "mobType": "nether",
+    "armor": 0,
+    "description": {
+      "hu": "Hatalmas fehér, lebegő netheri teremtmény. Tűzlabdákat lő, amelyek visszaverhetőek. A tűzgolyó visszaverése megöli. Ghast könnyet ejt.",
+      "en": "A huge white floating Nether creature. Shoots fireballs that can be deflected. Deflecting a fireball back kills it. Drops ghast tears."
+    },
+    "spawnInfo": {
+      "hu": "Nether (nyílt területek).",
+      "en": "Nether (open areas)."
+    }
   },
   {
     "id": "cave_spider",
@@ -3349,8 +4078,8 @@
       "poison"
     ],
     "special": {
-      "hu": "Mérgező barlang pók",
-      "en": "Poisonous cave spider"
+      "hu": "Mérgezés találatkor. Falra mászás.",
+      "en": "Poison on hit. Wall climbing."
     },
     "drops": [
       {
@@ -3373,7 +4102,16 @@
       }
     ],
     "image": "cave_spider.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Apró, mérgező pók, amely bányaakna falakban rejtőzik. Találatkor mérgezi a játékost. Kis mérete miatt nehéz eltalálni, de varázslott fegyverrel könnyen legyőzhető.",
+      "en": "A tiny, poisonous spider hiding in mine shaft walls. Poisons the player on hit. Its small size makes it hard to hit, but enchanted weapons dispatch it easily."
+    },
+    "spawnInfo": {
+      "hu": "Bányaaknák, kő blokkokban rejtőzve.",
+      "en": "Mine shafts, hiding in stone blocks."
+    }
   },
   {
     "id": "blaze",
@@ -3385,7 +4123,7 @@
     "dmgMin": 5,
     "dmgMax": 5,
     "dmgType": "fireball",
-    "xp": 20,
+    "xp": 10,
     "spawnZones": [
       "nether"
     ],
@@ -3396,8 +4134,8 @@
       "fire_damage"
     ],
     "special": {
-      "hu": "Tűzgolyókat lő, Nether Erőd lakója",
-      "en": "Shoots fireballs, inhabits Nether Fortress"
+      "hu": "Tüzes lövedék sorozat (3 egyszerre). Repülés. Tűz immunis.",
+      "en": "Fire charge bursts (3 at once). Can fly. Fire immune."
     },
     "drops": [
       {
@@ -3411,7 +4149,16 @@
       }
     ],
     "image": "blaze.png",
-    "mobType": "nether"
+    "mobType": "nether",
+    "armor": 0,
+    "description": {
+      "hu": "Lebegő netheri tűzszörny, amely tüzes lövedékeket lő sorozatban. Tűzgolyókat ejt, amelyek tűzbonyolítókhoz szükségesek. Vízzel, hógolyóval és varázslott fegyverrel sebzíhető.",
+      "en": "A floating Nether fire monster that shoots fire charges in bursts. Drops blaze rods needed for brewing. Vulnerable to water, snowballs, and enchanted weapons."
+    },
+    "spawnInfo": {
+      "hu": "Nether Erőd.",
+      "en": "Nether Fortress."
+    }
   },
   {
     "id": "magma_cube",
@@ -3420,10 +4167,10 @@
       "en": "Magma Cube"
     },
     "hp": 16,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "dmgMin": 6,
+    "dmgMax": 6,
     "dmgType": "melee",
-    "xp": 12,
+    "xp": 4,
     "spawnZones": [
       "nether"
     ],
@@ -3432,8 +4179,8 @@
       "fire_immune"
     ],
     "special": {
-      "hu": "Tűzálló láva kocka, Netherben él",
-      "en": "Fire immune lava cube, lives in Nether"
+      "hu": "Halálkor kisebb darabokra oszlik. Tűz/láva immunis.",
+      "en": "Splits into smaller pieces on death. Fire/lava immune."
     },
     "drops": [
       {
@@ -3447,7 +4194,16 @@
       }
     ],
     "image": "magma_cube.png",
-    "mobType": "nether"
+    "mobType": "nether",
+    "armor": 0,
+    "description": {
+      "hu": "Tüzes netheri kocka, amely kisebb darabokra osztódik pusztulásakor. Tűzimmunitással rendelkezik és lávában él. Közepes lávagolyót ejt.",
+      "en": "A fiery Nether cube that splits into smaller pieces on death. Immune to fire and lives in lava. Drops magma cream."
+    },
+    "spawnInfo": {
+      "hu": "Nether, lávataván.",
+      "en": "Nether, near lava."
+    }
   },
   {
     "id": "wither",
@@ -3470,8 +4226,8 @@
       "summoner"
     ],
     "special": {
-      "hu": "Idézhető boss a Netherben, Wither Csillag ejt",
-      "en": "Summonable boss in the Nether, drops Nether Star"
+      "hu": "Romlott koponya lövés: Romlás effekt. Sebezhetetlenség 50% HP felett. Robbanás 50% HP alatt. Repülés.",
+      "en": "Wither skull attack: Wither effect. Invulnerability above 50% HP. Explosion below 50% HP. Can fly."
     },
     "drops": [
       {
@@ -3481,11 +4237,20 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": null
+        "itemId": "nether_star"
       }
     ],
     "image": "wither.png",
-    "mobType": "undead"
+    "mobType": "undead",
+    "armor": 4,
+    "description": {
+      "hu": "A három fejű élőholt főnök, amelyet három koponya blokkból és szoul homokból idéznek. Romlott koponyákat lő, amelyek Romlás effektet okoznak. Nether csillagot ejt pusztuláskor.",
+      "en": "The three-headed undead boss, summoned from three skull blocks and soul sand. Shoots wither skulls that inflict Wither effect. Drops a Nether star on death."
+    },
+    "spawnInfo": {
+      "hu": "Játékos által idézett (3 Wither koponya + szoul homok).",
+      "en": "Player-summoned (3 Wither skulls + soul sand)."
+    }
   },
   {
     "id": "enderman",
@@ -3506,8 +4271,8 @@
       "wall_detection"
     ],
     "special": {
-      "hu": "Teleportál, víztől sebesül, Hardcore-ban víz halálos",
-      "en": "Teleports, hurt by water, water is lethal in Hardcore"
+      "hu": "Teleportálás. Víz/eső sérülés. Szemkontaktusra agresszív. Blokkok felvétele és lerakása.",
+      "en": "Teleportation. Water/rain damage. Aggressive on eye contact. Picks up and places blocks."
     },
     "drops": [
       {
@@ -3521,7 +4286,16 @@
       }
     ],
     "image": "enderman.png",
-    "mobType": "end"
+    "mobType": "end",
+    "armor": 0,
+    "description": {
+      "hu": "Magas, fekete szörny, amely blokkokat hord magával. Szemkontaktus esetén megtámad. Teleportálni tud és vízre érzékeny. Ender gyöngyöt ejt.",
+      "en": "A tall, black monster that carries blocks. Attacks when made eye contact with. Can teleport and is sensitive to water. Drops ender pearls."
+    },
+    "spawnInfo": {
+      "hu": "Felszín (éjjel), Nether, End dimenzió.",
+      "en": "Surface (night), Nether, End dimension."
+    }
   },
   {
     "id": "silverfish",
@@ -3542,12 +4316,21 @@
       "pack"
     ],
     "special": {
-      "hu": "Kőből bújik elő, falkát hív",
-      "en": "Hides in stone, calls pack"
+      "hu": "Kőzetből bújik elő. Szomszédokat hívja segítségül.",
+      "en": "Emerges from stone blocks. Calls nearby silverfish for help."
     },
     "drops": [],
     "image": "silverfish.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Apró, gyors bogárszerű szörny. Kőzet blokkokban rejtőzik és más halacskákat hívhat segítségül. MITE-ben több veszélyes változata létezik (robbanó, réz mérgező, ős fém).",
+      "en": "A tiny, fast insect-like monster. Hides in stone blocks and can call other silverfish for help. In MITE, several dangerous variants exist (explosive, copper poison, ancient)."
+    },
+    "spawnInfo": {
+      "hu": "Infestált kőzet blokkokban bányászatakor.",
+      "en": "In infested stone blocks when mined."
+    }
   },
   {
     "id": "ender_dragon",
@@ -3556,10 +4339,10 @@
       "en": "Ender Dragon"
     },
     "hp": 200,
-    "dmgMin": 15,
+    "dmgMin": 10,
     "dmgMax": 15,
     "dmgType": "melee",
-    "xp": 100,
+    "xp": 12000,
     "spawnZones": [
       "unknown"
     ],
@@ -3569,8 +4352,8 @@
       "fire_immune"
     ],
     "special": {
-      "hu": "Végjáték boss — Core Breaker kell a legyőzéséhez",
-      "en": "Endgame boss — requires Core Breaker to defeat"
+      "hu": "Ender kristályok általi regeneráció. Légi töltés. Szárny seprő. Sav köp (Dragon's Breath). Tüske törők immunitása.",
+      "en": "Ender crystal regeneration. Aerial charge. Wing sweep. Dragon's Breath. Immune to most projectiles."
     },
     "drops": [
       {
@@ -3580,7 +4363,7 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": null
+        "itemId": "dragon_egg"
       },
       {
         "item": {
@@ -3593,7 +4376,16 @@
       }
     ],
     "image": "ender_dragon.png",
-    "mobType": "boss"
+    "mobType": "boss",
+    "armor": 0,
+    "description": {
+      "hu": "A Vég dimenziójának főnöke. Az Ender kristályok által regenerálódik. Közeli támadása és szárnyakkal elrepít. Ender tojást és hatalmas tapasztalatot ejt.",
+      "en": "The boss of the End dimension. Regenerates via Ender crystals. Melee attack and wing sweep launches players. Drops a dragon egg and massive experience."
+    },
+    "spawnInfo": {
+      "hu": "Kizárólag End dimenzió.",
+      "en": "End dimension only."
+    }
   },
   {
     "id": "iron_golem",
@@ -3602,18 +4394,18 @@
       "en": "Iron Golem"
     },
     "hp": 100,
-    "dmgMin": 10,
-    "dmgMax": 10,
+    "dmgMin": 7,
+    "dmgMax": 21,
     "dmgType": "melee",
-    "xp": 20,
+    "xp": 5,
     "spawnZones": [
       "surface"
     ],
     "difficulty": "mid",
     "tags": [],
     "special": {
-      "hu": "Falusi védelmező, semleges ha nem provokálják",
-      "en": "Village protector, neutral unless provoked"
+      "hu": "Feldobás közelharci találatkor. Ellenséges mobokra automatikusan agresszív.",
+      "en": "Knockup on melee hit. Automatically aggressive toward hostile mobs."
     },
     "drops": [
       {
@@ -3632,11 +4424,20 @@
         },
         "qty": "0-2",
         "chance": "common",
-        "itemId": null
+        "itemId": "poppy"
       }
     ],
     "image": "iron_golem.png",
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 5,
+    "description": {
+      "hu": "Vasból kovácsolt faluvédő golem. Semleges a játékossal (ha nem provoklják), de megtámadja az ellenséges szörnyeket. Nagy sebzést és feldobást okoz. Mákot és vasat ejt.",
+      "en": "A village-guarding golem forged from iron. Neutral to the player (if not provoked), but attacks hostile monsters. Deals great damage and knockup. Drops poppies and iron."
+    },
+    "spawnInfo": {
+      "hu": "Falvakban természetesen jelenik meg; játékos is létrehozhatja.",
+      "en": "Naturally in villages; player-constructable."
+    }
   },
   {
     "id": "vindicator",
@@ -3644,9 +4445,9 @@
       "hu": "Megtorlós",
       "en": "Vindicator"
     },
-    "hp": 24,
-    "dmgMin": 8,
-    "dmgMax": 8,
+    "hp": 80,
+    "dmgMin": 13,
+    "dmgMax": 13,
     "dmgType": "melee",
     "xp": 35,
     "spawnZones": [
@@ -3655,8 +4456,8 @@
     "difficulty": "mid",
     "tags": [],
     "special": {
-      "hu": "Illager harcos, fejszével támad",
-      "en": "Illager warrior, attacks with axe"
+      "hu": "Célpont esetén vas fejsze. Játékosok, falusiak és vas golemek ellen aktív.",
+      "en": "Draws iron axe on aggro. Attacks players, villagers, and iron golems."
     },
     "drops": [
       {
@@ -3675,11 +4476,20 @@
         },
         "qty": "1",
         "chance": "rare",
-        "itemId": null
+        "itemId": "iron_axe"
       }
     ],
     "image": null,
-    "mobType": "monster"
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "V0.9.0-ban hozzáadott új mob. Falusiakhoz hasonló kinézetű. Aktívan megtámadja a játékosokat, falusiakat és vas golemeket. Célpont észlelésekor vas fejszét ránt elő.",
+      "en": "A new mob added in v0.9.0. Resembles a villager in appearance. Actively attacks players, villagers, and iron golems. Draws an iron axe when it detects a target."
+    },
+    "spawnInfo": {
+      "hu": "V0.9.0-ban hozzáadva.",
+      "en": "Added in v0.9.0."
+    }
   },
   {
     "id": "earthworm",
@@ -3687,7 +4497,7 @@
       "hu": "Giliszta",
       "en": "Earthworm"
     },
-    "hp": 4,
+    "hp": 5,
     "dmgMin": 0,
     "dmgMax": 0,
     "dmgType": "melee",
@@ -3698,8 +4508,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Féreggé váló komposzt lakó",
-      "en": "Composting creature"
+      "hu": "Nem tud támadni. Megsérüléskor menekül. 60 mp után meghal a felszínen.",
+      "en": "Cannot attack. Flees when injured. Dies after 60 seconds above ground."
     },
     "drops": [
       {
@@ -3709,11 +4519,20 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": null
+        "itemId": "dung"
       }
     ],
     "image": "earthworm.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Fű vagy föld blokkok ásásakor 3% eséllyel kerül elő. Trágyát ejt. 60 másodperccel a felszínre kerülés után elpusztul.",
+      "en": "Has a 3% chance to appear when mining grass or dirt blocks. Drops fertilizer. Dies 60 seconds after surfacing."
+    },
+    "spawnInfo": {
+      "hu": "Fű/föld blokkok ásásakor (3%).",
+      "en": "When mining grass/dirt blocks (3%)."
+    }
   },
   {
     "id": "crab",
@@ -3721,9 +4540,9 @@
       "hu": "Rák",
       "en": "Crab"
     },
-    "hp": 8,
-    "dmgMin": 2,
-    "dmgMax": 2,
+    "hp": 5,
+    "dmgMin": 1,
+    "dmgMax": 1,
     "dmgType": "melee",
     "xp": 2,
     "spawnZones": [
@@ -3732,8 +4551,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Vízparti rák",
-      "en": "Shoreline crab"
+      "hu": "Hosszabb közelharci hatótávolság. Visszavág ha megtámadják.",
+      "en": "Longer melee reach than unarmed player. Retaliates when attacked."
     },
     "drops": [
       {
@@ -3756,7 +4575,16 @@
       }
     ],
     "image": "crab.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 2,
+    "description": {
+      "hu": "Semleges rák, amely folyók mentén homokon jelenik meg, 1-3-as csoportokban. Rákolló és rák hús ejt.",
+      "en": "A neutral crab spawning on sand near rivers, in groups of 1–3. Drops crab legs and crab meat."
+    },
+    "spawnInfo": {
+      "hu": "Folyók mentén homokon.",
+      "en": "On sand near rivers."
+    }
   },
   {
     "id": "mallard",
@@ -3764,7 +4592,7 @@
       "hu": "Vadkacsa",
       "en": "Mallard"
     },
-    "hp": 4,
+    "hp": 5,
     "dmgMin": 0,
     "dmgMax": 0,
     "dmgType": "melee",
@@ -3777,8 +4605,8 @@
       "flying"
     ],
     "special": {
-      "hu": "Vadkacsa, ártalmatlan",
-      "en": "Wild duck, harmless"
+      "hu": "Teljesen passzív, nem védekezik.",
+      "en": "Completely passive, does not retaliate."
     },
     "drops": [
       {
@@ -3792,7 +4620,16 @@
       }
     ],
     "image": "mallard.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Síkságokon és dzsungelekben megjelenő tőkés réce. Nem agresszív — menekül ha megtámadják. Zöld kacsa fejet és kacsa húst ejt.",
+      "en": "A non-aggressive mallard spawning in plains and jungle biomes. Flees when attacked. Drops green duck head and duck meat."
+    },
+    "spawnInfo": {
+      "hu": "Síkság és dzsungel biómok.",
+      "en": "Plains and jungle biomes."
+    }
   },
   {
     "id": "pig",
@@ -3804,15 +4641,15 @@
     "dmgMin": 0,
     "dmgMax": 0,
     "dmgType": "melee",
-    "xp": 2,
+    "xp": 1,
     "spawnZones": [
       "surface"
     ],
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Szelíd állat, sertéshúst ejt",
-      "en": "Passive animal, drops pork"
+      "hu": "Nyeregben lovagolható (répalánccal irányítható).",
+      "en": "Rideable with saddle (steerable with carrot on a stick)."
     },
     "drops": [
       {
@@ -3826,7 +4663,16 @@
       }
     ],
     "image": "pig.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Közönséges háziállat. Meglovaglható nyeregzel és répalánccal. Sertésbordát ejt — nyers állapotban ehetetlen, MITE-ben meg kell főzni.",
+      "en": "A common domestic animal. Rideable with saddle and carrot on a stick. Drops porkchop — raw meat cannot be eaten in MITE, must be cooked."
+    },
+    "spawnInfo": {
+      "hu": "Síkság, erdő, bármely füves bióm.",
+      "en": "Plains, forest, any grassy biome."
+    }
   },
   {
     "id": "sheep",
@@ -3838,15 +4684,15 @@
     "dmgMin": 0,
     "dmgMax": 0,
     "dmgType": "melee",
-    "xp": 2,
+    "xp": 1,
     "spawnZones": [
       "surface"
     ],
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Szelíd állat, gyapjút és bárányhúst ejt",
-      "en": "Passive animal, drops wool and mutton"
+      "hu": "Ollóval nyírható gyapjúért (ismételten).",
+      "en": "Shearable for wool (repeatedly)."
     },
     "drops": [
       {
@@ -3865,11 +4711,20 @@
         },
         "qty": "1-2",
         "chance": "always",
-        "itemId": null
+        "itemId": "mutton_raw"
       }
     ],
     "image": "sheep.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Gyapjas háziállat. Ollóval nyírható ismételten gyapjúért. Nyers bárányhúst és gyapjút ejt. MITE-ben a nyers hús nem ehető — főzni kell.",
+      "en": "A woolly domestic animal. Can be sheared repeatedly for wool. Drops raw mutton and wool. In MITE raw meat cannot be eaten — must be cooked."
+    },
+    "spawnInfo": {
+      "hu": "Síkság, erdő, bármely füves bióm.",
+      "en": "Plains, forest, any grassy biome."
+    }
   },
   {
     "id": "cow",
@@ -3881,15 +4736,15 @@
     "dmgMin": 0,
     "dmgMax": 0,
     "dmgType": "melee",
-    "xp": 2,
+    "xp": 1,
     "spawnZones": [
       "surface"
     ],
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Szelíd állat, bőrt és marhahúst ejt",
-      "en": "Passive animal, drops leather and beef"
+      "hu": "Fejhető vödörrel (tej).",
+      "en": "Milkable with bucket."
     },
     "drops": [
       {
@@ -3912,7 +4767,16 @@
       }
     ],
     "image": "cow.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Közönséges tehén. Fejhető tejért vödörrel. Marhahúst és bőrt ejt. MITE-ben a nyers hús nem ehető.",
+      "en": "A common cow. Can be milked with a bucket. Drops beef and leather. Raw meat cannot be eaten in MITE."
+    },
+    "spawnInfo": {
+      "hu": "Síkság, erdő, bármely füves bióm.",
+      "en": "Plains, forest, any grassy biome."
+    }
   },
   {
     "id": "chicken",
@@ -3924,7 +4788,7 @@
     "dmgMin": 0,
     "dmgMax": 0,
     "dmgType": "melee",
-    "xp": 2,
+    "xp": 1,
     "spawnZones": [
       "surface"
     ],
@@ -3933,8 +4797,8 @@
       "flying"
     ],
     "special": {
-      "hu": "Szelíd állat, tojást és csirkecombot ejt",
-      "en": "Passive animal, drops eggs and chicken"
+      "hu": "Rendszeresen tojást rak. Lassan esik (repkedés).",
+      "en": "Regularly lays eggs. Falls slowly (flapping wings)."
     },
     "drops": [
       {
@@ -3957,7 +4821,16 @@
       }
     ],
     "image": "chicken.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Közönséges csirke. Tojásokat rak időnként. Nyers csirkét, tollat és tojást ejt. MITE-ben a nyers hús nem ehető.",
+      "en": "A common chicken. Lays eggs occasionally. Drops raw chicken, feathers, and eggs. Raw meat cannot be eaten in MITE."
+    },
+    "spawnInfo": {
+      "hu": "Síkság, erdő, bármely füves bióm.",
+      "en": "Plains, forest, any grassy biome."
+    }
   },
   {
     "id": "wolf",
@@ -3969,7 +4842,7 @@
     "dmgMin": 4,
     "dmgMax": 4,
     "dmgType": "melee",
-    "xp": 2,
+    "xp": 1,
     "spawnZones": [
       "surface"
     ],
@@ -3978,12 +4851,21 @@
       "pack"
     ],
     "special": {
-      "hu": "Szelídíthető, provokálásra agresszív",
-      "en": "Tameable, aggressive when provoked"
+      "hu": "Csonttal szelídíthető. Szelídítve: harcol a játékos mellett. Veszettség hatás barátságtalan wolvektől.",
+      "en": "Tameable with bones. When tamed: fights alongside player. Rabies effect from wild wolves in some versions."
     },
     "drops": [],
     "image": "wolf.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Vadfarkas. Semleges amíg nem provokálják, vagy más mob megtámadja a közelükben lévő juhot. Csonttal szelídíthető. Megszelídítve a játékos hű társa lesz.",
+      "en": "A wild wolf. Neutral unless provoked, or another mob attacks nearby sheep. Tameable with bones. When tamed, becomes a loyal companion to the player."
+    },
+    "spawnInfo": {
+      "hu": "Tajga, erdő biómok.",
+      "en": "Taiga, forest biomes."
+    }
   },
   {
     "id": "mooshroom",
@@ -3995,15 +4877,15 @@
     "dmgMin": 0,
     "dmgMax": 0,
     "dmgType": "melee",
-    "xp": 2,
+    "xp": 1,
     "spawnZones": [
       "surface"
     ],
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Gomba szigeten él, gombaleves forrás",
-      "en": "Lives on mushroom islands, mushroom soup source"
+      "hu": "Tállal: gombaleves. Vödörrel: tejgomba leves. Ollóval: normál tehénné válik (gombákat ejt).",
+      "en": "With bowl: mushroom stew. With bucket: milk. With shears: becomes normal cow (drops mushrooms)."
     },
     "drops": [
       {
@@ -4031,11 +4913,20 @@
         },
         "qty": "0-2",
         "chance": "common",
-        "itemId": null
+        "itemId": "mushroom_red"
       }
     ],
     "image": "mooshroom.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Gombás tehén. Gombás sztyeppéken él. Gombaleves nyerhető belőle tállal. Fejhető gombás levesért. Gombákat ejt megöléskor.",
+      "en": "A mushroom cow. Lives on mushroom fields. Mushroom stew can be obtained from it with a bowl. Milkable for mushroom stew. Drops mushrooms when killed."
+    },
+    "spawnInfo": {
+      "hu": "Kizárólag gombás sztyeppe bióm.",
+      "en": "Mushroom field biome only."
+    }
   },
   {
     "id": "ocelot",
@@ -4044,22 +4935,31 @@
       "en": "Ocelot"
     },
     "hp": 10,
-    "dmgMin": 2,
-    "dmgMax": 2,
+    "dmgMin": 3,
+    "dmgMax": 3,
     "dmgType": "melee",
-    "xp": 2,
+    "xp": 1,
     "spawnZones": [
       "surface"
     ],
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Dzsungelben él, creepereket elriaszt",
-      "en": "Lives in jungles, scares creepers"
+      "hu": "Nyers hallal szelídíthető. Szelídítve: creepereket és phantomokat elriaszt.",
+      "en": "Tameable with raw fish. When tamed: scares creepers and phantoms."
     },
     "drops": [],
     "image": "ocelot.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Vad ocelot. Dzsungelben él és halra vadászik. Nyers hallal szelídíthető. Megszelídítve macskává válik, amely elriasztja a creepereket és phantomokat.",
+      "en": "A wild ocelot. Lives in jungles and hunts fish. Tameable with raw fish. When tamed, becomes a cat that scares creepers and phantoms."
+    },
+    "spawnInfo": {
+      "hu": "Dzsungel biómok.",
+      "en": "Jungle biomes."
+    }
   },
   {
     "id": "horse",
@@ -4071,15 +4971,15 @@
     "dmgMin": 0,
     "dmgMax": 0,
     "dmgType": "melee",
-    "xp": 2,
+    "xp": 1,
     "spawnZones": [
       "surface"
     ],
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Szelídíthető hátasállat",
-      "en": "Tameable mount"
+      "hu": "Nyeregzel meglovaglható. Arany almával/sárgarépával szelídíthető. Ugróképesség a nyeregből.",
+      "en": "Rideable with saddle. Tamed with golden apple/carrot. Jump ability when ridden."
     },
     "drops": [
       {
@@ -4093,7 +4993,16 @@
       }
     ],
     "image": "horse.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Szelídíthető ló, különféle színváltozatokban. Nyeregzel meglovaglható, gyorsabb közlekedést biztosítva. Arany almával vagy arany sárgarépával szelídíthető.",
+      "en": "A tameable horse available in various colors. Rideable with saddle, providing faster travel. Tameable with golden apples or golden carrots."
+    },
+    "spawnInfo": {
+      "hu": "Síkság, szavanna biómok.",
+      "en": "Plains, savanna biomes."
+    }
   },
   {
     "id": "medium_fish",
@@ -4101,9 +5010,9 @@
       "hu": "Közepes Hal",
       "en": "Medium Fish"
     },
-    "hp": 4,
-    "dmgMin": 1,
-    "dmgMax": 1,
+    "hp": 10,
+    "dmgMin": 0,
+    "dmgMax": 0,
     "dmgType": "melee",
     "xp": 1,
     "spawnZones": [
@@ -4112,8 +5021,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Vízben élő hal",
-      "en": "Water-dwelling fish"
+      "hu": "Vízből kiemelve 30 mp-ig ficánkol, majd meghal.",
+      "en": "After removal from water, flops for 30 seconds then dies."
     },
     "drops": [
       {
@@ -4123,11 +5032,20 @@
         },
         "qty": "1",
         "chance": "uncommon",
-        "itemId": null
+        "itemId": "fish_raw"
       }
     ],
     "image": "medium_fish.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "V0.5.9-ben hozzáadott ponty. Folyókban és tengerekben jelenik meg. Kifogás után 30 mp-ig ficánkol a talajon, majd meghal. Nyers halat ejt.",
+      "en": "A carp added in v0.5.9. Spawns in rivers and oceans. After being pulled out of water, flops on the ground for 30 seconds then dies. Drops raw fish."
+    },
+    "spawnInfo": {
+      "hu": "Folyók és tengerek.",
+      "en": "Rivers and oceans."
+    }
   },
   {
     "id": "turkey",
@@ -4135,7 +5053,7 @@
       "hu": "Pulyka",
       "en": "Turkey"
     },
-    "hp": 6,
+    "hp": 15,
     "dmgMin": 1,
     "dmgMax": 1,
     "dmgType": "melee",
@@ -4146,8 +5064,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Pulyka, húst ejt",
-      "en": "Turkey, drops meat"
+      "hu": "V0.6.0 óta: visszavág és szinte sprint sebességgel menekül.",
+      "en": "Since v0.6.0: retaliates and flees at near-sprint speed."
     },
     "drops": [
       {
@@ -4157,7 +5075,7 @@
         },
         "qty": "1-3",
         "chance": "always",
-        "itemId": null
+        "itemId": "turkey_raw"
       },
       {
         "item": {
@@ -4170,7 +5088,16 @@
       }
     ],
     "image": "turkey.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Síkságokon, erdőkben, fennsíkon és mocsarakban megjelenő vadpulyka. V0.6.0 óta visszavág ha megtámadják és szinte sprint sebességgel menekül. Nyers pulykahúst és tollat ejt.",
+      "en": "A wild turkey spawning in plains, forests, plateaus, and swamps. Since v0.6.0 it retaliates when attacked and flees at near-sprint speed. Drops raw turkey meat and feathers."
+    },
+    "spawnInfo": {
+      "hu": "Síkság, erdő, fennsík, mocsár biómok.",
+      "en": "Plains, forest, plateau, swamp biomes."
+    }
   },
   {
     "id": "scorpion",
@@ -4178,9 +5105,9 @@
       "hu": "Skorpió",
       "en": "Scorpion"
     },
-    "hp": 12,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "hp": 40,
+    "dmgMin": 6,
+    "dmgMax": 6,
     "dmgType": "melee",
     "xp": 10,
     "spawnZones": [
@@ -4191,8 +5118,8 @@
       "poison"
     ],
     "special": {
-      "hu": "Mérgező csipés, sivatagban él",
-      "en": "Poisonous sting, lives in desert"
+      "hu": "Mérgezés: minden találat Mérgezés 10 mp.",
+      "en": "Poison: every hit inflicts Poison for 10 seconds."
     },
     "drops": [
       {
@@ -4202,11 +5129,20 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": null
+        "itemId": "scorpion_venom"
       }
     ],
     "image": "scorpion.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 2,
+    "description": {
+      "hu": "Sivatagban megjelenő ellenséges skorpió. Aktívan megtámadja az ellenfeleket. Minden találat 10 másodperces mérgezést okoz. Skorpió mérget ejt.",
+      "en": "A hostile scorpion spawning in deserts. Actively attacks enemies. Every hit inflicts 10 seconds of poison. Drops scorpion venom."
+    },
+    "spawnInfo": {
+      "hu": "Sivatag biómok.",
+      "en": "Desert biomes."
+    }
   },
   {
     "id": "rat",
@@ -4214,9 +5150,9 @@
       "hu": "Patkány",
       "en": "Rat"
     },
-    "hp": 4,
-    "dmgMin": 1,
-    "dmgMax": 1,
+    "hp": 10,
+    "dmgMin": 2,
+    "dmgMax": 2,
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
@@ -4228,8 +5164,8 @@
       "poison"
     ],
     "special": {
-      "hu": "Mérgező harapás, falkában támad",
-      "en": "Poisonous bite, attacks in packs"
+      "hu": "Passzív amíg nem provokálják.",
+      "en": "Passive until provoked."
     },
     "drops": [
       {
@@ -4239,11 +5175,20 @@
         },
         "qty": "1",
         "chance": "uncommon",
-        "itemId": null
+        "itemId": "rat_raw"
       }
     ],
     "image": "rat.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "V0.5.9-ben hozzáadott semleges vadpatkány. Síkságokon és erdőkben él. Nem támad először, de visszavág. Nyers patkányhúst ejt.",
+      "en": "A neutral wild rat added in v0.5.9. Lives in plains and forest biomes. Does not attack first but retaliates. Drops raw rat meat."
+    },
+    "spawnInfo": {
+      "hu": "Síkság és erdő biómok.",
+      "en": "Plains and forest biomes."
+    }
   },
   {
     "id": "shark",
@@ -4251,9 +5196,9 @@
       "hu": "Cápa",
       "en": "Shark"
     },
-    "hp": 20,
-    "dmgMin": 6,
-    "dmgMax": 6,
+    "hp": 100,
+    "dmgMin": 12,
+    "dmgMax": 12,
     "dmgType": "melee",
     "xp": 20,
     "spawnZones": [
@@ -4262,8 +5207,8 @@
     "difficulty": "mid",
     "tags": [],
     "special": {
-      "hu": "Veszélyes óceáni ragadozó",
-      "en": "Dangerous ocean predator"
+      "hu": "Vízbeleépés esetén azonnal aktiválódik és rohan.",
+      "en": "Triggered aggro: charges the player when they enter the water."
     },
     "drops": [
       {
@@ -4273,11 +5218,20 @@
         },
         "qty": "2-4",
         "chance": "always",
-        "itemId": null
+        "itemId": "shark_raw"
       }
     ],
     "image": "shark.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Óceán biómokban megjelenő ellenséges cápa. Ha a játékos vízbe lép, a közeli cápák gyorsan rácsapnak. Nyers cápa húst ejt.",
+      "en": "A hostile shark spawning in oceans. When the player enters the water, nearby sharks rapidly close in and attack. Drops raw shark meat."
+    },
+    "spawnInfo": {
+      "hu": "Óceán biómok.",
+      "en": "Ocean biomes."
+    }
   },
   {
     "id": "bee",
@@ -4299,8 +5253,8 @@
       "flying"
     ],
     "special": {
-      "hu": "Mérgező csipés, repülő",
-      "en": "Poisonous sting, flying"
+      "hu": "Visszavág ha megtámadják.",
+      "en": "Retaliates when attacked."
     },
     "drops": [
       {
@@ -4310,11 +5264,20 @@
         },
         "qty": "1",
         "chance": "uncommon",
-        "itemId": null
+        "itemId": "honey"
       }
     ],
     "image": "bee.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Erdőkben és dzsungelekben virágok közelén megjelenő méh. Visszavág ha megtámadják.",
+      "en": "A bee spawning near flower patches in forest and jungle biomes. Retaliates when attacked."
+    },
+    "spawnInfo": {
+      "hu": "Erdők és dzsungelek, virágok közelén.",
+      "en": "Forests and jungles, near flower patches."
+    }
   },
   {
     "id": "coyote",
@@ -4322,9 +5285,9 @@
       "hu": "Kojot",
       "en": "Coyote"
     },
-    "hp": 12,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "hp": 30,
+    "dmgMin": 4,
+    "dmgMax": 4,
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
@@ -4335,8 +5298,8 @@
       "pack"
     ],
     "special": {
-      "hu": "Falkában vadász prérifarkias",
-      "en": "Pack-hunting coyote"
+      "hu": "Látásra aktívan agresszív.",
+      "en": "Actively aggressive on sight."
     },
     "drops": [
       {
@@ -4346,7 +5309,7 @@
         },
         "qty": "0-2",
         "chance": "common",
-        "itemId": null
+        "itemId": "wolf_raw"
       },
       {
         "item": {
@@ -4359,7 +5322,16 @@
       }
     ],
     "image": "coyote.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Fennsíkon és erdőkben megjelenő ellenséges kojot. Látásra megtámadja a közeli ellenfeleket. Nyers farkas húst, bőrt és csontot ejt.",
+      "en": "A hostile coyote spawning in plateau and forest biomes. Attacks nearby enemies on sight. Drops raw wolf meat, leather, and bones."
+    },
+    "spawnInfo": {
+      "hu": "Fennsík és erdő biómok.",
+      "en": "Plateau and forest biomes."
+    }
   },
   {
     "id": "cougar",
@@ -4367,9 +5339,9 @@
       "hu": "Puma",
       "en": "Cougar"
     },
-    "hp": 16,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 30,
+    "dmgMin": 6,
+    "dmgMax": 6,
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
@@ -4378,8 +5350,8 @@
     "difficulty": "mid",
     "tags": [],
     "special": {
-      "hu": "Magányos nagy ragadozó",
-      "en": "Solitary large predator"
+      "hu": "Látásra aktívan agresszív.",
+      "en": "Actively aggressive on sight."
     },
     "drops": [
       {
@@ -4389,7 +5361,7 @@
         },
         "qty": "1-3",
         "chance": "always",
-        "itemId": null
+        "itemId": "lion_raw"
       },
       {
         "item": {
@@ -4402,7 +5374,16 @@
       }
     ],
     "image": "cougar.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Síkságokon, fennsíkon, erdőkben és sivatagban megjelenő ellenséges puma. Látásra megtámadja a közeli ellenfeleket. Nyers oroszlán húst, bőrt és csontot ejt.",
+      "en": "A hostile cougar spawning in plains, plateau, forests, and deserts. Attacks nearby enemies on sight. Drops raw lion meat, leather, and bones."
+    },
+    "spawnInfo": {
+      "hu": "Síkság, fennsík, erdő, sivatag biómok.",
+      "en": "Plains, plateau, forest, desert biomes."
+    }
   },
   {
     "id": "black_bear",
@@ -4410,9 +5391,9 @@
       "hu": "Fekete Medve",
       "en": "Black Bear"
     },
-    "hp": 20,
-    "dmgMin": 4,
-    "dmgMax": 4,
+    "hp": 40,
+    "dmgMin": 5,
+    "dmgMax": 5,
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
@@ -4421,8 +5402,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Fekete medve, provokálva veszélyes",
-      "en": "Black bear, dangerous when provoked"
+      "hu": "Látásra aktívan agresszív.",
+      "en": "Actively aggressive on sight."
     },
     "drops": [
       {
@@ -4432,7 +5413,7 @@
         },
         "qty": "1-3",
         "chance": "always",
-        "itemId": null
+        "itemId": "bear_raw"
       },
       {
         "item": {
@@ -4454,7 +5435,16 @@
       }
     ],
     "image": "black_bear.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Erdőkben és mocsarakban megjelenő ellenséges fekete medve. Látásra megtámadja a közeli ellenfeleket. Nyers medve húst, bőrt és csontot ejt.",
+      "en": "A hostile black bear spawning in forests and swamps. Attacks nearby enemies on sight. Drops raw bear meat, leather, and bones."
+    },
+    "spawnInfo": {
+      "hu": "Erdő és mocsár biómok.",
+      "en": "Forest and swamp biomes."
+    }
   },
   {
     "id": "yak",
@@ -4462,9 +5452,9 @@
       "hu": "Jak",
       "en": "Yak"
     },
-    "hp": 20,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "hp": 50,
+    "dmgMin": 5,
+    "dmgMax": 5,
     "dmgType": "melee",
     "xp": 6,
     "spawnZones": [
@@ -4473,8 +5463,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Hegyi jak állat",
-      "en": "Mountain yak animal"
+      "hu": "Visszavág ha megtámadják.",
+      "en": "Retaliates when attacked."
     },
     "drops": [
       {
@@ -4497,7 +5487,16 @@
       }
     ],
     "image": "yak.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Síkságokon, dzsungelekben, fennsíkon és erdőkben megjelenő semleges jak. Visszavág ha megtámadják. Nyers marhahúst, bőrt és csontot ejt.",
+      "en": "A neutral yak spawning in plains, jungle, plateau, and forest biomes. Retaliates when attacked. Drops raw beef, leather, and bones."
+    },
+    "spawnInfo": {
+      "hu": "Síkság, dzsungel, fennsík, erdő biómok.",
+      "en": "Plains, jungle, plateau, forest biomes."
+    }
   },
   {
     "id": "musk_ox",
@@ -4505,9 +5504,9 @@
       "hu": "Pézsmatulok",
       "en": "Musk Ox"
     },
-    "hp": 24,
-    "dmgMin": 4,
-    "dmgMax": 4,
+    "hp": 60,
+    "dmgMin": 6,
+    "dmgMax": 6,
     "dmgType": "melee",
     "xp": 8,
     "spawnZones": [
@@ -4516,8 +5515,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Nagy tundra állat",
-      "en": "Large tundra animal"
+      "hu": "Visszavág ha megtámadják.",
+      "en": "Retaliates when attacked."
     },
     "drops": [
       {
@@ -4549,7 +5548,16 @@
       }
     ],
     "image": "musk_ox.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Síkságokon, dzsungeleken, fennsíkon és erdőkben megjelenő semleges pézsmaökör. Visszavág ha megtámadják. Nyers marhahúst, bőrt és csontot ejt.",
+      "en": "A neutral musk ox spawning in plains, jungle, plateau, and forest biomes. Retaliates when attacked. Drops raw beef, leather, and bones."
+    },
+    "spawnInfo": {
+      "hu": "Síkság, dzsungel, fennsík, erdő biómok.",
+      "en": "Plains, jungle, plateau, forest biomes."
+    }
   },
   {
     "id": "camel",
@@ -4558,8 +5566,8 @@
       "en": "Camel"
     },
     "hp": 20,
-    "dmgMin": 2,
-    "dmgMax": 2,
+    "dmgMin": 0,
+    "dmgMax": 0,
     "dmgType": "melee",
     "xp": 2,
     "spawnZones": [
@@ -4568,8 +5576,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Sivatagi teve állat",
-      "en": "Desert camel animal"
+      "hu": "Teljesen passzív.",
+      "en": "Completely passive."
     },
     "drops": [
       {
@@ -4579,7 +5587,7 @@
         },
         "qty": "1-3",
         "chance": "always",
-        "itemId": null
+        "itemId": "camel_raw"
       },
       {
         "item": {
@@ -4592,7 +5600,16 @@
       }
     ],
     "image": "camel.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Sivatagban megjelenő semleges teve. Teljesen passzív — sosem támad. Nyers teve húst és bőrt ejt.",
+      "en": "A neutral camel spawning in deserts. Completely passive — never attacks. Drops raw camel meat and leather."
+    },
+    "spawnInfo": {
+      "hu": "Sivatag biómok.",
+      "en": "Desert biomes."
+    }
   },
   {
     "id": "boar",
@@ -4600,7 +5617,7 @@
       "hu": "Vaddisznó",
       "en": "Boar"
     },
-    "hp": 16,
+    "hp": 20,
     "dmgMin": 4,
     "dmgMax": 4,
     "dmgType": "melee",
@@ -4611,8 +5628,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Vaddisznó, provokálva charge-ol",
-      "en": "Wild boar, charges when provoked"
+      "hu": "Látásra aktívan agresszív.",
+      "en": "Actively aggressive on sight."
     },
     "drops": [
       {
@@ -4635,7 +5652,16 @@
       }
     ],
     "image": "boar.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Erdőkben, mocsarakban, dzsungelekben, síkságokon és fennsíkon megjelenő ellenséges vaddisznó. Látásra megtámadja az ellenfeleket. Sertésbordát, bőrt és csontot ejt.",
+      "en": "A hostile wild boar spawning in forests, swamps, jungles, plains, and plateaus. Attacks enemies on sight. Drops porkchop, leather, and bones."
+    },
+    "spawnInfo": {
+      "hu": "Erdő, mocsár, dzsungel, síkság, fennsík biómok.",
+      "en": "Forest, swamp, jungle, plains, plateau biomes."
+    }
   },
   {
     "id": "hyena",
@@ -4643,9 +5669,9 @@
       "hu": "Hiéna",
       "en": "Hyena"
     },
-    "hp": 12,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "hp": 10,
+    "dmgMin": 1,
+    "dmgMax": 1,
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
@@ -4656,8 +5682,8 @@
       "pack"
     ],
     "special": {
-      "hu": "Falkában vadász hiéna",
-      "en": "Pack-hunting hyena"
+      "hu": "Látásra aktívan agresszív.",
+      "en": "Actively aggressive on sight."
     },
     "drops": [
       {
@@ -4671,7 +5697,16 @@
       }
     ],
     "image": "hyena.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Síkságokon, fennsíkon és erdőkben megjelenő ellenséges hiéna. Látásra megtámadja az ellenfeleket. Rothadó húst ejt.",
+      "en": "A hostile hyena spawning in plains, plateau, and forest biomes. Attacks enemies on sight. Drops rotten flesh."
+    },
+    "spawnInfo": {
+      "hu": "Síkság, fennsík, erdő biómok.",
+      "en": "Plains, plateau, forest biomes."
+    }
   },
   {
     "id": "saber_toothed_tiger",
@@ -4679,9 +5714,9 @@
       "hu": "Kardfogas Tigris",
       "en": "Saber-Toothed Tiger"
     },
-    "hp": 24,
-    "dmgMin": 8,
-    "dmgMax": 8,
+    "hp": 100,
+    "dmgMin": 10,
+    "dmgMax": 10,
     "dmgType": "melee",
     "xp": 20,
     "spawnZones": [
@@ -4690,8 +5725,8 @@
     "difficulty": "late",
     "tags": [],
     "special": {
-      "hu": "Kihalt ragadozó, erős közelharc",
-      "en": "Extinct predator, strong melee"
+      "hu": "Látásra aktívan agresszív. Rendkívül magas HP és sebzés.",
+      "en": "Actively aggressive on sight. Extremely high HP and damage."
     },
     "drops": [
       {
@@ -4701,7 +5736,7 @@
         },
         "qty": "2-4",
         "chance": "always",
-        "itemId": null
+        "itemId": "tiger_raw"
       },
       {
         "item": {
@@ -4723,7 +5758,16 @@
       }
     ],
     "image": "saber_toothed_tiger.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Dzsungelekben megjelenő ellenséges kardfogú tigris. Nagyon magas HP-vel és sebzéssel rendelkezik. Látásra megtámadja az ellenfeleket. Nyers tigris húst, bőrt és csontot ejt.",
+      "en": "A hostile saber-toothed tiger spawning in jungles. Has very high HP and damage. Attacks enemies on sight. Drops raw tiger meat, leather, and bones."
+    },
+    "spawnInfo": {
+      "hu": "Dzsungel biómok.",
+      "en": "Jungle biomes."
+    }
   },
   {
     "id": "panther",
@@ -4731,9 +5775,9 @@
       "hu": "Párduc",
       "en": "Panther"
     },
-    "hp": 16,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 30,
+    "dmgMin": 6,
+    "dmgMax": 6,
     "dmgType": "melee",
     "xp": 10,
     "spawnZones": [
@@ -4742,8 +5786,8 @@
     "difficulty": "mid",
     "tags": [],
     "special": {
-      "hu": "Gyors dzsungel ragadozó",
-      "en": "Fast jungle predator"
+      "hu": "Csak éjjel jelenik meg. Látásra aktívan agresszív.",
+      "en": "Spawns only at night. Actively aggressive on sight."
     },
     "drops": [
       {
@@ -4753,7 +5797,7 @@
         },
         "qty": "1-2",
         "chance": "always",
-        "itemId": null
+        "itemId": "lion_raw"
       },
       {
         "item": {
@@ -4766,7 +5810,16 @@
       }
     ],
     "image": "panther.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Éjjel erdőkben, mocsarakban és fennsíkon megjelenő ellenséges fekete párduc. Csak éjjel jelenik meg. Látásra megtámadja az ellenfeleket.",
+      "en": "A hostile black panther spawning at night in forests, swamps, and plateaus. Only spawns at night. Attacks enemies on sight."
+    },
+    "spawnInfo": {
+      "hu": "Éjjel: erdő, mocsár, fennsík biómok.",
+      "en": "Nighttime: forest, swamp, plateau biomes."
+    }
   },
   {
     "id": "polar_bear",
@@ -4774,7 +5827,7 @@
       "hu": "Jegesmedve",
       "en": "Polar Bear"
     },
-    "hp": 30,
+    "hp": 70,
     "dmgMin": 7,
     "dmgMax": 7,
     "dmgType": "melee",
@@ -4785,8 +5838,8 @@
     "difficulty": "mid",
     "tags": [],
     "special": {
-      "hu": "Havas biome ragadozó, kölyökkel veszélyes",
-      "en": "Snowy biome predator, dangerous with cubs"
+      "hu": "Látásra aktívan agresszív.",
+      "en": "Actively aggressive on sight."
     },
     "drops": [
       {
@@ -4796,7 +5849,7 @@
         },
         "qty": "2-4",
         "chance": "always",
-        "itemId": null
+        "itemId": "bear_raw"
       },
       {
         "item": {
@@ -4818,7 +5871,16 @@
       }
     ],
     "image": "polar_bear.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Havas tundra biómokban megjelenő ellenséges jegesmedve. Látásra megtámadja az ellenfeleket. Nyers medve húst, bőrt és csontot ejt.",
+      "en": "A hostile polar bear spawning in snowy tundra biomes. Attacks enemies on sight. Drops raw bear meat, leather, and bones."
+    },
+    "spawnInfo": {
+      "hu": "Havas tundra biómok.",
+      "en": "Snowy tundra biomes."
+    }
   },
   {
     "id": "grizzly_bear",
@@ -4826,7 +5888,7 @@
       "hu": "Barnamedve",
       "en": "Grizzly Bear"
     },
-    "hp": 24,
+    "hp": 50,
     "dmgMin": 6,
     "dmgMax": 6,
     "dmgType": "melee",
@@ -4837,8 +5899,8 @@
     "difficulty": "mid",
     "tags": [],
     "special": {
-      "hu": "Nagy barnamedve, erős közelharc",
-      "en": "Large grizzly bear, strong melee"
+      "hu": "Látásra aktívan agresszív.",
+      "en": "Actively aggressive on sight."
     },
     "drops": [
       {
@@ -4848,7 +5910,7 @@
         },
         "qty": "2-4",
         "chance": "always",
-        "itemId": null
+        "itemId": "bear_raw"
       },
       {
         "item": {
@@ -4870,7 +5932,16 @@
       }
     ],
     "image": "grizzly_bear.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Tajga és erdő biómokban megjelenő ellenséges grizzly medve. Látásra megtámadja a játékost. Nyers medve húst, bőrt és csontot ejt.",
+      "en": "A hostile grizzly bear spawning in taiga and forest biomes. Attacks the player on sight. Drops raw bear meat, leather, and bones."
+    },
+    "spawnInfo": {
+      "hu": "Tajga és erdő biómok.",
+      "en": "Taiga and forest biomes."
+    }
   },
   {
     "id": "deer",
@@ -4878,9 +5949,9 @@
       "hu": "Szarvas",
       "en": "Deer"
     },
-    "hp": 10,
-    "dmgMin": 1,
-    "dmgMax": 1,
+    "hp": 20,
+    "dmgMin": 0,
+    "dmgMax": 0,
     "dmgType": "melee",
     "xp": 3,
     "spawnZones": [
@@ -4889,8 +5960,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Menekülő szelíd szarvas",
-      "en": "Fleeing passive deer"
+      "hu": "Teljesen passzív.",
+      "en": "Completely passive."
     },
     "drops": [
       {
@@ -4900,7 +5971,7 @@
         },
         "qty": "1-3",
         "chance": "always",
-        "itemId": null
+        "itemId": "deer_raw"
       },
       {
         "item": {
@@ -4922,7 +5993,16 @@
       }
     ],
     "image": "deer.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Fennsíkon és erdőkben megjelenő semleges szarvas. Teljesen passzív. Nyers szarvas húst, bőrt és csontot ejt.",
+      "en": "A neutral deer spawning in plateau and forest biomes. Completely passive. Drops raw venison, leather, and bones."
+    },
+    "spawnInfo": {
+      "hu": "Fennsík és erdő biómok.",
+      "en": "Plateau and forest biomes."
+    }
   },
   {
     "id": "duck",
@@ -4930,7 +6010,7 @@
       "hu": "Kacsa",
       "en": "Duck"
     },
-    "hp": 4,
+    "hp": 6,
     "dmgMin": 0,
     "dmgMax": 0,
     "dmgType": "melee",
@@ -4941,8 +6021,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Szelíd vízimadár",
-      "en": "Passive water bird"
+      "hu": "Teljesen passzív.",
+      "en": "Completely passive."
     },
     "drops": [
       {
@@ -4965,7 +6045,16 @@
       }
     ],
     "image": "duck.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Mocsár biómokban megjelenő kacsa. Teljesen passzív — sosem támad. Kacsa húst és tollat ejt.",
+      "en": "A duck spawning in swamp biomes. Completely passive — never attacks. Drops duck meat and feathers."
+    },
+    "spawnInfo": {
+      "hu": "Mocsár biómok.",
+      "en": "Swamp biomes."
+    }
   },
   {
     "id": "elephant",
@@ -4973,9 +6062,9 @@
       "hu": "Elefánt",
       "en": "Elephant"
     },
-    "hp": 40,
-    "dmgMin": 8,
-    "dmgMax": 8,
+    "hp": 60,
+    "dmgMin": 10,
+    "dmgMax": 10,
     "dmgType": "melee",
     "xp": 25,
     "spawnZones": [
@@ -4984,8 +6073,8 @@
     "difficulty": "mid",
     "tags": [],
     "special": {
-      "hu": "Nagy savanna állat, charge-ol",
-      "en": "Large savanna animal, charges"
+      "hu": "Bébi és felnőtt változat. Látásra aktívan agresszív.",
+      "en": "Baby and adult variants. Actively aggressive on sight."
     },
     "drops": [
       {
@@ -4995,7 +6084,7 @@
         },
         "qty": "2-5",
         "chance": "always",
-        "itemId": null
+        "itemId": "elephant_raw"
       },
       {
         "item": {
@@ -5008,7 +6097,16 @@
       }
     ],
     "image": "elephant.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 2,
+    "description": {
+      "hu": "Síkságokon, erdőkben és mocsarakban megjelenő ellenséges elefánt. Két méretváltozat: bébi (HP 70, sebzés 8) és felnőtt. Látásra megtámadja az ellenfeleket. Nyers elefánt húst, bőrt és csontot ejt.",
+      "en": "A hostile elephant spawning in plains, forests, and swamps. Two size variants: baby (HP 70, dmg 8) and adult. Attacks enemies on sight. Drops raw elephant meat, leather, and bones."
+    },
+    "spawnInfo": {
+      "hu": "Síkság, erdő, mocsár biómok.",
+      "en": "Plains, forest, swamp biomes."
+    }
   },
   {
     "id": "llama",
@@ -5016,9 +6114,9 @@
       "hu": "Láma",
       "en": "Llama"
     },
-    "hp": 15,
-    "dmgMin": 1,
-    "dmgMax": 1,
+    "hp": 20,
+    "dmgMin": 5,
+    "dmgMax": 5,
     "dmgType": "melee",
     "xp": 3,
     "spawnZones": [
@@ -5027,8 +6125,8 @@
     "difficulty": "early",
     "tags": [],
     "special": {
-      "hu": "Hegyi teherhordó állat",
-      "en": "Mountain pack animal"
+      "hu": "Visszavág ha megtámadják.",
+      "en": "Retaliates when attacked."
     },
     "drops": [
       {
@@ -5038,7 +6136,7 @@
         },
         "qty": "1-2",
         "chance": "always",
-        "itemId": null
+        "itemId": "camel_raw"
       },
       {
         "item": {
@@ -5051,7 +6149,16 @@
       }
     ],
     "image": "llama.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Fennsíkon és sivatagban megjelenő semleges láma. Visszavág ha megtámadják. Nyers teve húst és bőrt ejt.",
+      "en": "A neutral llama spawning in plateau and desert biomes. Retaliates when attacked. Drops raw camel meat and leather."
+    },
+    "spawnInfo": {
+      "hu": "Fennsík és sivatag biómok.",
+      "en": "Plateau and desert biomes."
+    }
   },
   {
     "id": "pheasant",
@@ -5059,9 +6166,9 @@
       "hu": "Fácán",
       "en": "Pheasant"
     },
-    "hp": 4,
-    "dmgMin": 0,
-    "dmgMax": 0,
+    "hp": 6,
+    "dmgMin": 1,
+    "dmgMax": 1,
     "dmgType": "melee",
     "xp": 1,
     "spawnZones": [
@@ -5072,8 +6179,8 @@
       "flying"
     ],
     "special": {
-      "hu": "Szelíd madár, húst ejt",
-      "en": "Passive bird, drops meat"
+      "hu": "Visszavág ha megtámadják.",
+      "en": "Retaliates when attacked."
     },
     "drops": [
       {
@@ -5096,6 +6203,15 @@
       }
     ],
     "image": "pheasant.png",
-    "mobType": "animal"
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Síkságokon, erdőkben, dzsungelekben, fennsíkon és mocsarakban megjelenő fácán. Visszavág ha megtámadják. Nyers csirkét és tollat ejt.",
+      "en": "A pheasant spawning in plains, forest, jungle, plateau, and swamp biomes. Retaliates when attacked. Drops raw chicken and feathers."
+    },
+    "spawnInfo": {
+      "hu": "Síkság, erdő, dzsungel, fennsík, mocsár biómok.",
+      "en": "Plains, forest, jungle, plateau, swamp biomes."
+    }
   }
 ]

@@ -46,18 +46,18 @@ The first public wiki for **MITE: Break Everything** — a hardcore total-conver
 
 ## Tech
 
-Static HTML/CSS/JS — no server, no build tools, no dependencies. Hosted on GitHub Pages.
+**Astro + React + Tailwind** — statikus site generátor, GitHub Pages-re deployolva.
 
-**Structure:**
 ```
-index.html / reference.html / install.html / changelog.html / faq.html
-css/style.css
-js/app.js          — language switching, search, data table renderer
-data/mobs.js       — mob stat tables (HU+EN)
-data/sieve.js      — sieve drop rates (HU+EN)
-data/materials.js  — enchantability, quality, durability multipliers (HU+EN)
-img/               — item/block textures (32×32 PNG)
+src/pages/        — Astro oldalak (index, mobs, recipes, brewing, reference, install, changelog, faq)
+src/components/   — Astro komponensek (CraftingGrid, FurnaceGrid, McTooltip, stb.)
+src/islands/      — React islands (MobExplorer, RecipeBrowser, SearchBox, stb.)
+src/layouts/      — BaseLayout.astro
+data/             — JSON adatfájlok (items.json, mobs.json, recipes.json, materials.json)
+public/           — Statikus fájlok (img/, js/app.js, data/mobs.js, data/materials.js)
 ```
+
+Build: `npm run build` → `dist/` (ez kerül deploy-ra)
 
 ---
 

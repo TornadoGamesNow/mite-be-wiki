@@ -2066,7 +2066,7 @@
       "hu": "Keménykő Lánc",
       "en": "Hardstone Chain"
     },
-    "img": "img/items/hardstone_chain.png",
+    "img": null,
     "tier": "hard"
   },
   "activator_rail": {
@@ -5879,8 +5879,8 @@
   },
   "raw_fish": {
     "name": {
-      "hu": "raw_fish",
-      "en": "raw_fish"
+      "hu": "Nyers Hal",
+      "en": "Raw Fish"
     },
     "img": "img/items/raw_fish.png",
     "tier": null
@@ -7179,6 +7179,390 @@
       "en": "yellow_wool"
     },
     "img": "img/items/yellow_wool.png",
+    "tier": null
+  },
+  "arrow": {
+    "name": {
+      "hu": "Nyíl",
+      "en": "Arrow"
+    },
+    "img": "img/arrows/flint_arrow.png",
+    "tier": null
+  },
+  "beef": {
+    "name": {
+      "hu": "Nyers Marhahús",
+      "en": "Raw Beef"
+    },
+    "img": "img/food/beef_raw.png",
+    "tier": null
+  },
+  "black_slimeball": {
+    "name": {
+      "hu": "Fekete Nyálkagömb",
+      "en": "Black Slimeball"
+    },
+    "img": "img/items/slimeball_black.png",
+    "tier": null
+  },
+  "black_widow_eye": {
+    "name": {
+      "hu": "Fekete Özvegy Szem",
+      "en": "Black Widow Eye"
+    },
+    "img": null,
+    "tier": null
+  },
+  "brown_slimeball": {
+    "name": {
+      "hu": "Barna Nyálkagömb",
+      "en": "Brown Slimeball"
+    },
+    "img": "img/items/slimeball_brown.png",
+    "tier": null
+  },
+  "chicken": {
+    "name": {
+      "hu": "Nyers Csirke",
+      "en": "Raw Chicken"
+    },
+    "img": "img/items/chicken_raw.png",
+    "tier": null
+  },
+  "crab_leg": {
+    "name": {
+      "hu": "Rákláb",
+      "en": "Crab Leg"
+    },
+    "img": "img/items/crab_leg.png",
+    "tier": null
+  },
+  "crab_meat": {
+    "name": {
+      "hu": "Rákhús",
+      "en": "Crab Meat"
+    },
+    "img": "img/items/crab_meat.png",
+    "tier": null
+  },
+  "duck_meat": {
+    "name": {
+      "hu": "Kacsahús",
+      "en": "Duck Meat"
+    },
+    "img": "img/items/duck_meat.png",
+    "tier": null
+  },
+  "earth_elemental_core": {
+    "name": {
+      "hu": "Földi Elementál Mag",
+      "en": "Earth Elemental Core"
+    },
+    "img": null,
+    "tier": null
+  },
+  "elemental_obsidian": {
+    "name": {
+      "hu": "Elementális Obszidián",
+      "en": "Elemental Obsidian"
+    },
+    "img": "img/items/element_obsidian.png",
+    "tier": null
+  },
+  "fire_elemental_core": {
+    "name": {
+      "hu": "Tűz Elementál Mag",
+      "en": "Fire Elemental Core"
+    },
+    "img": null,
+    "tier": null
+  },
+  "ghast_tear": {
+    "name": {
+      "hu": "Ghast Könny",
+      "en": "Ghast Tear"
+    },
+    "img": "img/items/ghast_tear.png",
+    "tier": null
+  },
+  "ghoul_flesh": {
+    "name": {
+      "hu": "Ghoul Hús",
+      "en": "Ghoul Flesh"
+    },
+    "img": null,
+    "tier": null
+  },
+  "grey_slimeball": {
+    "name": {
+      "hu": "Szürke Nyálkagömb",
+      "en": "Grey Slimeball"
+    },
+    "img": "img/items/slimeball_gray.png",
+    "tier": null
+  },
+  "porkchop": {
+    "name": {
+      "hu": "Nyers Sertésborda",
+      "en": "Raw Porkchop"
+    },
+    "img": "img/items/porkchop_raw.png",
+    "tier": null
+  },
+  "red_slimeball": {
+    "name": {
+      "hu": "Piros Nyálkagömb",
+      "en": "Red Slimeball"
+    },
+    "img": "img/items/red_slime_ball.png",
+    "tier": null
+  },
+  "wool": {
+    "name": {
+      "hu": "Gyapjú",
+      "en": "Wool"
+    },
+    "img": "img/items/wool_white.png",
+    "tier": null
+  },
+  "wolf_raw": {
+    "name": {
+      "hu": "Nyers Farkas Hús",
+      "en": "Raw Wolf Meat"
+    },
+    "img": "img/items/wolf_raw.png",
+    "tier": null
+  },
+  "bear_raw": {
+    "name": {
+      "hu": "Nyers Medve Hús",
+      "en": "Raw Bear Meat"
+    },
+    "img": "img/items/bear_raw.png",
+    "tier": null
+  },
+  "deer_raw": {
+    "name": {
+      "hu": "Nyers Szarvas Hús",
+      "en": "Raw Deer Meat"
+    },
+    "img": "img/items/deer_raw.png",
+    "tier": null
+  },
+  "camel_raw": {
+    "name": {
+      "hu": "Nyers Teve Hús",
+      "en": "Raw Camel Meat"
+    },
+    "img": "img/items/camel_raw.png",
+    "tier": null
+  },
+  "tiger_raw": {
+    "name": {
+      "hu": "Nyers Tigris Hús",
+      "en": "Raw Tiger Meat"
+    },
+    "img": "img/items/tiger_raw.png",
+    "tier": null
+  },
+  "shark_raw": {
+    "name": {
+      "hu": "Nyers Cápa Hús",
+      "en": "Raw Shark Meat"
+    },
+    "img": "img/items/shark_raw.png",
+    "tier": null
+  },
+  "turkey_raw": {
+    "name": {
+      "hu": "Nyers Pulyka Hús",
+      "en": "Raw Turkey Meat"
+    },
+    "img": "img/items/turkey_raw.png",
+    "tier": null
+  },
+  "rat_raw": {
+    "name": {
+      "hu": "Nyers Patkány",
+      "en": "Raw Rat"
+    },
+    "img": "img/items/rat_raw.png",
+    "tier": null
+  },
+  "lion_raw": {
+    "name": {
+      "hu": "Nyers Oroszlán Hús",
+      "en": "Raw Lion Meat"
+    },
+    "img": "img/items/lion_raw.png",
+    "tier": null
+  },
+  "elephant_raw": {
+    "name": {
+      "hu": "Nyers Elefánt Hús",
+      "en": "Raw Elephant Meat"
+    },
+    "img": "img/items/elephant_raw.png",
+    "tier": null
+  },
+  "fish_raw": {
+    "name": {
+      "hu": "Nyers Hal",
+      "en": "Raw Fish"
+    },
+    "img": "img/items/raw_fish.png",
+    "tier": null
+  },
+  "wood_spider_eye": {
+    "name": {
+      "hu": "Fa Pókszemgolyó",
+      "en": "Wood Spider Eye"
+    },
+    "img": "img/items/spider_eye_wood.png",
+    "tier": null
+  },
+  "vampire_bat_fang": {
+    "name": {
+      "hu": "Vérszívó Denevér Foga",
+      "en": "Vampire Bat Fang"
+    },
+    "img": null,
+    "tier": null
+  },
+  "hell_hound_hide": {
+    "name": {
+      "hu": "Pokoli Kutya Bőre",
+      "en": "Hell Hound Hide"
+    },
+    "img": null,
+    "tier": null
+  },
+  "demon_spider_eye": {
+    "name": {
+      "hu": "Démon Pókszemgolyó",
+      "en": "Demon Spider Eye"
+    },
+    "img": null,
+    "tier": null
+  },
+  "xp_bottle": {
+    "name": {
+      "hu": "Tapasztalati Üveg",
+      "en": "XP Bottle"
+    },
+    "img": null,
+    "tier": null
+  },
+  "soulstone": {
+    "name": {
+      "hu": "Lélekköves",
+      "en": "Soulstone"
+    },
+    "img": null,
+    "tier": null
+  },
+  "crystal_glass": {
+    "name": {
+      "hu": "Kristály Üveg",
+      "en": "Crystal Glass"
+    },
+    "img": null,
+    "tier": null
+  },
+  "potion": {
+    "name": {
+      "hu": "Varázsbájital",
+      "en": "Potion"
+    },
+    "img": null,
+    "tier": null
+  },
+  "ominous_banner": {
+    "name": {
+      "hu": "Baljós Zászló",
+      "en": "Ominous Banner"
+    },
+    "img": null,
+    "tier": null
+  },
+  "phase_spider_eye": {
+    "name": {
+      "hu": "Fázis Pókszemgolyó",
+      "en": "Phase Spider Eye"
+    },
+    "img": null,
+    "tier": null
+  },
+  "crossbow": {
+    "name": {
+      "hu": "Íjász Puska",
+      "en": "Crossbow"
+    },
+    "img": "img/items/crossbow.png",
+    "tier": null
+  },
+  "illager_banner": {
+    "name": {
+      "hu": "Fosztogató Zászló",
+      "en": "Illager Banner"
+    },
+    "img": "img/items/illager_banner.png",
+    "tier": null
+  },
+  "skeleton_lord_heart": {
+    "name": {
+      "hu": "Csontváz Úr Szíve",
+      "en": "Skeleton Lord Heart"
+    },
+    "img": null,
+    "tier": null
+  },
+  "poppy": {
+    "name": {
+      "hu": "Mák",
+      "en": "Poppy"
+    },
+    "img": null,
+    "tier": null
+  },
+  "dragon_egg": {
+    "name": {
+      "hu": "Ender Tojás",
+      "en": "Dragon Egg"
+    },
+    "img": null,
+    "tier": null
+  },
+  "honey": {
+    "name": {
+      "hu": "Méz",
+      "en": "Honey"
+    },
+    "img": null,
+    "tier": null
+  },
+  "scorpion_venom": {
+    "name": {
+      "hu": "Skorpió Méreg",
+      "en": "Scorpion Venom"
+    },
+    "img": null,
+    "tier": null
+  },
+  "dung": {
+    "name": {
+      "hu": "Trágya",
+      "en": "Dung"
+    },
+    "img": null,
+    "tier": null
+  },
+  "mutton_raw": {
+    "name": {
+      "hu": "Nyers Bárány Hús",
+      "en": "Raw Mutton"
+    },
+    "img": null,
     "tier": null
   }
 }
