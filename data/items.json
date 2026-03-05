@@ -2079,568 +2079,568 @@
   },
   "adamantium_anvil": {
     "name": {
-      "hu": "adamantium_anvil",
-      "en": "adamantium_anvil"
+      "hu": "Adamantium Üllő",
+      "en": "Adamantium Anvil"
     },
     "img": "img/items/adamantium_anvil.png",
     "tier": null
   },
   "adamantium_block": {
     "name": {
-      "hu": "adamantium_block",
-      "en": "adamantium_block"
+      "hu": "Adamantium Blokk",
+      "en": "Adamantium Block"
     },
     "img": "img/blocks/adamantium_block.png",
     "tier": null
   },
   "adamantium_bucket": {
     "name": {
-      "hu": "adamantium_bucket",
-      "en": "adamantium_bucket"
+      "hu": "Adamantium Vödör",
+      "en": "Adamantium Bucket"
     },
     "img": "img/items/adamantium_bucket.png",
     "tier": null
   },
   "adamantium_bucket_filled_with_milk": {
     "name": {
-      "hu": "adamantium_bucket_filled_with_milk",
-      "en": "adamantium_bucket_filled_with_milk"
+      "hu": "Adamantium Tejes Vödör",
+      "en": "Adamantium Bucket of Milk"
     },
     "img": "img/items/adamantium_bucket_filled_with_milk.png",
     "tier": null
   },
   "adamantium_bucket_filled_with_stone": {
     "name": {
-      "hu": "adamantium_bucket_filled_with_stone",
-      "en": "adamantium_bucket_filled_with_stone"
+      "hu": "Adamantium Kőzetes Vödör",
+      "en": "Adamantium Bucket of Stone"
     },
     "img": "img/items/adamantium_bucket_filled_with_stone.png",
     "tier": null
   },
   "adamantium_bucket_filled_with_water": {
     "name": {
-      "hu": "adamantium_bucket_filled_with_water",
-      "en": "adamantium_bucket_filled_with_water"
+      "hu": "Adamantium Vizes Vödör",
+      "en": "Adamantium Bucket of Water"
     },
     "img": "img/items/adamantium_bucket_filled_with_water.png",
     "tier": null
   },
   "adamantium_chain_boots": {
     "name": {
-      "hu": "adamantium_chain_boots",
-      "en": "adamantium_chain_boots"
+      "hu": "Adamantium Lánc Csizma",
+      "en": "Adamantium Chain Boots"
     },
     "img": "img/armor/adamantium_chainmail_boots.png",
     "tier": null
   },
   "adamantium_chain_chestplate": {
     "name": {
-      "hu": "adamantium_chain_chestplate",
-      "en": "adamantium_chain_chestplate"
+      "hu": "Adamantium Lánc Mellvért",
+      "en": "Adamantium Chain Chestplate"
     },
     "img": "img/armor/adamantium_chainmail_chestplate.png",
     "tier": null
   },
   "adamantium_chain_helmet": {
     "name": {
-      "hu": "adamantium_chain_helmet",
-      "en": "adamantium_chain_helmet"
+      "hu": "Adamantium Lánc Sisak",
+      "en": "Adamantium Chain Helmet"
     },
     "img": "img/armor/adamantium_chainmail_helmet.png",
     "tier": null
   },
   "adamantium_chain_leggings": {
     "name": {
-      "hu": "adamantium_chain_leggings",
-      "en": "adamantium_chain_leggings"
+      "hu": "Adamantium Lánc Lábvért",
+      "en": "Adamantium Chain Leggings"
     },
     "img": "img/armor/adamantium_chainmail_leggings.png",
     "tier": null
   },
   "adamantium_coin": {
     "name": {
-      "hu": "adamantium_coin",
-      "en": "adamantium_coin"
+      "hu": "Adamantium Érme",
+      "en": "Adamantium Coin"
     },
     "img": "img/items/adamantium_coin.png",
     "tier": null
   },
   "adamantium_door": {
     "name": {
-      "hu": "adamantium_door",
-      "en": "adamantium_door"
+      "hu": "Adamantium Ajtó",
+      "en": "Adamantium Door"
     },
     "img": "img/items/adamantium_door.png",
     "tier": null
   },
   "adamantium_fence": {
     "name": {
-      "hu": "adamantium_fence",
-      "en": "adamantium_fence"
+      "hu": "Adamantium Kerítés",
+      "en": "Adamantium Fence"
     },
     "img": "img/items/adamantium_fence.png",
     "tier": null
   },
   "adamantium_flint_and_steel": {
     "name": {
-      "hu": "adamantium_flint_and_steel",
-      "en": "adamantium_flint_and_steel"
+      "hu": "Adamantium Tűzkő és Acél",
+      "en": "Adamantium Flint and Steel"
     },
     "img": "img/items/adamantium_flint_and_steel.png",
     "tier": null
   },
   "adamantium_fluid_tank": {
     "name": {
-      "hu": "adamantium_fluid_tank",
-      "en": "adamantium_fluid_tank"
+      "hu": "Adamantium Folyadék Tank",
+      "en": "Adamantium Fluid Tank"
     },
     "img": "img/items/adamantium_fluid_tank.png",
     "tier": null
   },
   "adamantium_hand_axe": {
     "name": {
-      "hu": "adamantium_hand_axe",
-      "en": "adamantium_hand_axe"
+      "hu": "Adamantium Kézifejsze",
+      "en": "Adamantium Hand Axe"
     },
     "img": "img/items/adamantium_hand_axe.png",
     "tier": null
   },
   "adamantium_ore": {
     "name": {
-      "hu": "adamantium_ore",
-      "en": "adamantium_ore"
+      "hu": "Adamantium Érc",
+      "en": "Adamantium Ore"
     },
     "img": "img/blocks/adamantium_ore.png",
     "tier": null
   },
   "adamantium_shield": {
     "name": {
-      "hu": "adamantium_shield",
-      "en": "adamantium_shield"
+      "hu": "Adamantium Pajzs",
+      "en": "Adamantium Shield"
     },
     "img": "img/items/adamantium_shield.png",
     "tier": null
   },
   "adamantium_short_sword": {
     "name": {
-      "hu": "adamantium_short_sword",
-      "en": "adamantium_short_sword"
+      "hu": "Adamantium Rövid Kard",
+      "en": "Adamantium Short Sword"
     },
     "img": "img/items/adamantium_sword.png",
     "tier": null
   },
   "adamantium_shovel": {
     "name": {
-      "hu": "adamantium_shovel",
-      "en": "adamantium_shovel"
+      "hu": "Adamantium Ásó",
+      "en": "Adamantium Shovel"
     },
     "img": "img/items/adamantium_shovel.png",
     "tier": null
   },
   "advanced_enchantment_table": {
     "name": {
-      "hu": "advanced_enchantment_table",
-      "en": "advanced_enchantment_table"
+      "hu": "Haladó Bűvölőasztal",
+      "en": "Advanced Enchantment Table"
     },
     "img": "img/items/advanced_enchantment_table.png",
     "tier": null
   },
   "advanced_enchantment_table_knowledge_book": {
     "name": {
-      "hu": "advanced_enchantment_table_knowledge_book",
-      "en": "advanced_enchantment_table_knowledge_book"
+      "hu": "Haladó Bűvölőasztal Tudáskönyv",
+      "en": "Advanced Enchantment Table Knowledge Book"
     },
     "img": "img/items/advanced_enchantment_table_knowledge_book.png",
     "tier": null
   },
   "ancient_metal_anvil": {
     "name": {
-      "hu": "ancient_metal_anvil",
-      "en": "ancient_metal_anvil"
+      "hu": "Ősi Fém Üllő",
+      "en": "Ancient Metal Anvil"
     },
     "img": "img/items/ancient_metal_anvil.png",
     "tier": null
   },
   "ancient_metal_barrel_upgrade": {
     "name": {
-      "hu": "ancient_metal_barrel_upgrade",
-      "en": "ancient_metal_barrel_upgrade"
+      "hu": "Ősi Fém Hordó Fejlesztés",
+      "en": "Ancient Metal Barrel Upgrade"
     },
     "img": "img/items/ancient_metal_barrel_upgrade.png",
     "tier": null
   },
   "ancient_metal_block": {
     "name": {
-      "hu": "ancient_metal_block",
-      "en": "ancient_metal_block"
+      "hu": "Ősi Fém Blokk",
+      "en": "Ancient Metal Block"
     },
     "img": "img/blocks/ancient_metal_block.png",
     "tier": null
   },
   "ancient_metal_bow": {
     "name": {
-      "hu": "ancient_metal_bow",
-      "en": "ancient_metal_bow"
+      "hu": "Ősi Fém Íj",
+      "en": "Ancient Metal Bow"
     },
     "img": "img/items/ancient_metal_bow.png",
     "tier": null
   },
   "ancient_metal_bucket": {
     "name": {
-      "hu": "ancient_metal_bucket",
-      "en": "ancient_metal_bucket"
+      "hu": "Ősi Fém Vödör",
+      "en": "Ancient Metal Bucket"
     },
     "img": "img/items/ancient_metal_bucket.png",
     "tier": null
   },
   "ancient_metal_bucket_filled_with_milk": {
     "name": {
-      "hu": "ancient_metal_bucket_filled_with_milk",
-      "en": "ancient_metal_bucket_filled_with_milk"
+      "hu": "Ősi Fém Tejes Vödör",
+      "en": "Ancient Metal Bucket of Milk"
     },
     "img": "img/items/ancient_metal_bucket_filled_with_milk.png",
     "tier": null
   },
   "ancient_metal_bucket_filled_with_stone": {
     "name": {
-      "hu": "ancient_metal_bucket_filled_with_stone",
-      "en": "ancient_metal_bucket_filled_with_stone"
+      "hu": "Ősi Fém Kőzetes Vödör",
+      "en": "Ancient Metal Bucket of Stone"
     },
     "img": "img/items/ancient_metal_bucket_filled_with_stone.png",
     "tier": null
   },
   "ancient_metal_bucket_filled_with_water": {
     "name": {
-      "hu": "ancient_metal_bucket_filled_with_water",
-      "en": "ancient_metal_bucket_filled_with_water"
+      "hu": "Ősi Fém Vizes Vödör",
+      "en": "Ancient Metal Bucket of Water"
     },
     "img": "img/items/ancient_metal_bucket_filled_with_water.png",
     "tier": null
   },
   "ancient_metal_chain_boots": {
     "name": {
-      "hu": "ancient_metal_chain_boots",
-      "en": "ancient_metal_chain_boots"
+      "hu": "Ősi Fém Lánc Csizma",
+      "en": "Ancient Metal Chain Boots"
     },
     "img": "img/armor/ancient_metal_chainmail_boots.png",
     "tier": null
   },
   "ancient_metal_chain_chestplate": {
     "name": {
-      "hu": "ancient_metal_chain_chestplate",
-      "en": "ancient_metal_chain_chestplate"
+      "hu": "Ősi Fém Lánc Mellvért",
+      "en": "Ancient Metal Chain Chestplate"
     },
     "img": "img/armor/ancient_metal_chainmail_chestplate.png",
     "tier": null
   },
   "ancient_metal_chain_helmet": {
     "name": {
-      "hu": "ancient_metal_chain_helmet",
-      "en": "ancient_metal_chain_helmet"
+      "hu": "Ősi Fém Lánc Sisak",
+      "en": "Ancient Metal Chain Helmet"
     },
     "img": "img/armor/ancient_metal_chainmail_helmet.png",
     "tier": null
   },
   "ancient_metal_chain_leggings": {
     "name": {
-      "hu": "ancient_metal_chain_leggings",
-      "en": "ancient_metal_chain_leggings"
+      "hu": "Ősi Fém Lánc Lábvért",
+      "en": "Ancient Metal Chain Leggings"
     },
     "img": "img/armor/ancient_metal_chainmail_leggings.png",
     "tier": null
   },
   "ancient_metal_chest_upgrade": {
     "name": {
-      "hu": "ancient_metal_chest_upgrade",
-      "en": "ancient_metal_chest_upgrade"
+      "hu": "Ősi Fém Láda Fejlesztés",
+      "en": "Ancient Metal Chest Upgrade"
     },
     "img": "img/items/ancient_metal_chest_upgrade.png",
     "tier": null
   },
   "ancient_metal_coin": {
     "name": {
-      "hu": "ancient_metal_coin",
-      "en": "ancient_metal_coin"
+      "hu": "Ősi Fém Érme",
+      "en": "Ancient Metal Coin"
     },
     "img": "img/items/ancient_metal_coin.png",
     "tier": null
   },
   "ancient_metal_container_knowledge_book": {
     "name": {
-      "hu": "ancient_metal_container_knowledge_book",
-      "en": "ancient_metal_container_knowledge_book"
+      "hu": "Ősi Fém Konténer Tudáskönyv",
+      "en": "Ancient Metal Container Knowledge Book"
     },
     "img": "img/items/ancient_metal_container_knowledge_book.png",
     "tier": null
   },
   "ancient_metal_door": {
     "name": {
-      "hu": "ancient_metal_door",
-      "en": "ancient_metal_door"
+      "hu": "Ősi Fém Ajtó",
+      "en": "Ancient Metal Door"
     },
     "img": "img/items/ancient_metal_door.png",
     "tier": null
   },
   "ancient_metal_fence": {
     "name": {
-      "hu": "ancient_metal_fence",
-      "en": "ancient_metal_fence"
+      "hu": "Ősi Fém Kerítés",
+      "en": "Ancient Metal Fence"
     },
     "img": "img/items/ancient_metal_fence.png",
     "tier": null
   },
   "ancient_metal_filter_paper_knowledge_book": {
     "name": {
-      "hu": "ancient_metal_filter_paper_knowledge_book",
-      "en": "ancient_metal_filter_paper_knowledge_book"
+      "hu": "Ősi Fém Szűrőpapír Tudáskönyv",
+      "en": "Ancient Metal Filter Paper Knowledge Book"
     },
     "img": "img/items/ancient_metal_filter_paper_knowledge_book.png",
     "tier": null
   },
   "ancient_metal_flint_and_steel": {
     "name": {
-      "hu": "ancient_metal_flint_and_steel",
-      "en": "ancient_metal_flint_and_steel"
+      "hu": "Ősi Fém Tűzkő és Acél",
+      "en": "Ancient Metal Flint and Steel"
     },
     "img": "img/items/ancient_metal_flint_and_steel.png",
     "tier": null
   },
   "ancient_metal_fluid_tank": {
     "name": {
-      "hu": "ancient_metal_fluid_tank",
-      "en": "ancient_metal_fluid_tank"
+      "hu": "Ősi Fém Folyadék Tank",
+      "en": "Ancient Metal Fluid Tank"
     },
     "img": "img/items/ancient_metal_fluid_tank.png",
     "tier": null
   },
   "ancient_metal_hand_axe": {
     "name": {
-      "hu": "ancient_metal_hand_axe",
-      "en": "ancient_metal_hand_axe"
+      "hu": "Ősi Fém Kézifejsze",
+      "en": "Ancient Metal Hand Axe"
     },
     "img": "img/items/ancient_metal_hand_axe.png",
     "tier": null
   },
   "ancient_metal_nugget": {
     "name": {
-      "hu": "ancient_metal_nugget",
-      "en": "ancient_metal_nugget"
+      "hu": "Ősi Fém Ércdarab",
+      "en": "Ancient Metal Nugget"
     },
     "img": "img/items/ancient_metal_nugget.png",
     "tier": null
   },
   "ancient_metal_shield": {
     "name": {
-      "hu": "ancient_metal_shield",
-      "en": "ancient_metal_shield"
+      "hu": "Ősi Fém Pajzs",
+      "en": "Ancient Metal Shield"
     },
     "img": "img/items/ancient_metal_shield.png",
     "tier": null
   },
   "ancient_metal_short_sword": {
     "name": {
-      "hu": "ancient_metal_short_sword",
-      "en": "ancient_metal_short_sword"
+      "hu": "Ősi Fém Rövid Kard",
+      "en": "Ancient Metal Short Sword"
     },
     "img": "img/items/ancient_metal_sword.png",
     "tier": null
   },
   "ancient_metal_shovel": {
     "name": {
-      "hu": "ancient_metal_shovel",
-      "en": "ancient_metal_shovel"
+      "hu": "Ősi Fém Ásó",
+      "en": "Ancient Metal Shovel"
     },
     "img": "img/items/ancient_metal_shovel.png",
     "tier": null
   },
   "andesite": {
     "name": {
-      "hu": "andesite",
-      "en": "andesite"
+      "hu": "Andezit",
+      "en": "Andesite"
     },
     "img": "img/items/andesite.png",
     "tier": null
   },
   "apple": {
     "name": {
-      "hu": "apple",
-      "en": "apple"
+      "hu": "Alma",
+      "en": "Apple"
     },
     "img": "img/items/apple.png",
     "tier": null
   },
   "armor_stand": {
     "name": {
-      "hu": "armor_stand",
-      "en": "armor_stand"
+      "hu": "Páncélállvány",
+      "en": "Armor Stand"
     },
     "img": "img/items/armor_stand.png",
     "tier": null
   },
   "baked_potato": {
     "name": {
-      "hu": "baked_potato",
-      "en": "baked_potato"
+      "hu": "Sült Krumpli",
+      "en": "Baked Potato"
     },
     "img": "img/items/baked_potato.png",
     "tier": null
   },
   "bamboo": {
     "name": {
-      "hu": "bamboo",
-      "en": "bamboo"
+      "hu": "Bambusz",
+      "en": "Bamboo"
     },
     "img": "img/items/bamboo.png",
     "tier": null
   },
   "banana_leaves": {
     "name": {
-      "hu": "banana_leaves",
-      "en": "banana_leaves"
+      "hu": "Banánfa Levelek",
+      "en": "Banana Leaves"
     },
     "img": "img/items/banana_leaves.png",
     "tier": null
   },
   "barrel": {
     "name": {
-      "hu": "barrel",
-      "en": "barrel"
+      "hu": "Hordó",
+      "en": "Barrel"
     },
     "img": "img/items/barrel.png",
     "tier": null
   },
   "battery_knowledge_book": {
     "name": {
-      "hu": "battery_knowledge_book",
-      "en": "battery_knowledge_book"
+      "hu": "Akkumulátor Tudáskönyv",
+      "en": "Battery Knowledge Book"
     },
     "img": "img/items/battery.png",
     "tier": null
   },
   "bed_black": {
     "name": {
-      "hu": "bed_black",
-      "en": "bed_black"
+      "hu": "Fekete Ágy",
+      "en": "Black Bed"
     },
     "img": "img/items/bed_black.png",
     "tier": null
   },
   "bed_white": {
     "name": {
-      "hu": "bed_white",
-      "en": "bed_white"
+      "hu": "Fehér Ágy",
+      "en": "White Bed"
     },
     "img": "img/items/bed_white.png",
     "tier": null
   },
   "beef_soup": {
     "name": {
-      "hu": "beef_soup",
-      "en": "beef_soup"
+      "hu": "Marhahúsleves",
+      "en": "Beef Soup"
     },
     "img": "img/items/beef_soup.png",
     "tier": null
   },
   "belt": {
     "name": {
-      "hu": "belt",
-      "en": "belt"
+      "hu": "Öv",
+      "en": "Belt"
     },
     "img": "img/items/belt.png",
     "tier": null
   },
   "binding_scroll": {
     "name": {
-      "hu": "binding_scroll",
-      "en": "binding_scroll"
+      "hu": "Kötő Tekercs",
+      "en": "Binding Scroll"
     },
     "img": "img/items/binding_scroll.png",
     "tier": null
   },
   "birch_door": {
     "name": {
-      "hu": "birch_door",
-      "en": "birch_door"
+      "hu": "Nyír Ajtó",
+      "en": "Birch Door"
     },
     "img": "img/items/birch_door.png",
     "tier": null
   },
   "birch_fence": {
     "name": {
-      "hu": "birch_fence",
-      "en": "birch_fence"
+      "hu": "Nyír Kerítés",
+      "en": "Birch Fence"
     },
     "img": "img/items/birch_fence.png",
     "tier": null
   },
   "birch_fence_gate": {
     "name": {
-      "hu": "birch_fence_gate",
-      "en": "birch_fence_gate"
+      "hu": "Nyír Kerítés Kapu",
+      "en": "Birch Fence Gate"
     },
     "img": "img/items/birch_fence_gate.png",
     "tier": null
   },
   "birch_leaves": {
     "name": {
-      "hu": "birch_leaves",
-      "en": "birch_leaves"
+      "hu": "Nyír Levelek",
+      "en": "Birch Leaves"
     },
     "img": "img/items/birch_leaves.png",
     "tier": null
   },
   "birch_sieve": {
     "name": {
-      "hu": "birch_sieve",
-      "en": "birch_sieve"
+      "hu": "Nyír Szita",
+      "en": "Birch Sieve"
     },
     "img": "img/items/birch_sieve.png",
     "tier": null
   },
   "birch_wood_crate": {
     "name": {
-      "hu": "birch_wood_crate",
-      "en": "birch_wood_crate"
+      "hu": "Nyír Fa Láda",
+      "en": "Birch Wood Crate"
     },
     "img": "img/items/birch_wood_crate.png",
     "tier": null
   },
   "birch_wood_slab_single": {
     "name": {
-      "hu": "birch_wood_slab_single",
-      "en": "birch_wood_slab_single"
+      "hu": "Nyír Fa Félblokk",
+      "en": "Birch Wood Slab"
     },
     "img": "img/items/birch_wood_slab_single.png",
     "tier": null
   },
   "birch_wood_stairs": {
     "name": {
-      "hu": "birch_wood_stairs",
-      "en": "birch_wood_stairs"
+      "hu": "Nyír Fa Lépcső",
+      "en": "Birch Wood Stairs"
     },
     "img": "img/items/birch_wood_stairs.png",
     "tier": null
   },
   "black_carpet": {
     "name": {
-      "hu": "black_carpet",
-      "en": "black_carpet"
+      "hu": "Fekete Szőnyeg",
+      "en": "Black Carpet"
     },
     "img": "img/items/black_carpet.png",
     "tier": null
   },
   "black_stained_clay_colored": {
     "name": {
-      "hu": "black_stained_clay_colored",
-      "en": "black_stained_clay_colored"
+      "hu": "Fekete Festett Agyag",
+      "en": "Black Stained Clay"
     },
     "img": "img/items/black_stained_clay_colored.png",
     "tier": null
   },
   "black_wool": {
     "name": {
-      "hu": "black_wool",
-      "en": "black_wool"
+      "hu": "Fekete Gyapjú",
+      "en": "Black Wool"
     },
     "img": "img/items/black_wool.png",
     "tier": null
@@ -2663,144 +2663,144 @@
   },
   "blue_bed": {
     "name": {
-      "hu": "blue_bed",
-      "en": "blue_bed"
+      "hu": "Kék Ágy",
+      "en": "Blue Bed"
     },
     "img": "img/items/blue_bed.png",
     "tier": null
   },
   "blue_carpet": {
     "name": {
-      "hu": "blue_carpet",
-      "en": "blue_carpet"
+      "hu": "Kék Szőnyeg",
+      "en": "Blue Carpet"
     },
     "img": "img/items/blue_carpet.png",
     "tier": null
   },
   "blue_compass": {
     "name": {
-      "hu": "blue_compass",
-      "en": "blue_compass"
+      "hu": "Kék Iránytű",
+      "en": "Blue Compass"
     },
     "img": "img/items/blue_compass.png",
     "tier": null
   },
   "blue_stained_clay_colored": {
     "name": {
-      "hu": "blue_stained_clay_colored",
-      "en": "blue_stained_clay_colored"
+      "hu": "Kék Festett Agyag",
+      "en": "Blue Stained Clay"
     },
     "img": "img/items/blue_stained_clay_colored.png",
     "tier": null
   },
   "blue_wool": {
     "name": {
-      "hu": "blue_wool",
-      "en": "blue_wool"
+      "hu": "Kék Gyapjú",
+      "en": "Blue Wool"
     },
     "img": "img/items/blue_wool.png",
     "tier": null
   },
   "blueberries": {
     "name": {
-      "hu": "blueberries",
-      "en": "blueberries"
+      "hu": "Áfonya",
+      "en": "Blueberries"
     },
     "img": "img/food/blueberries.png",
     "tier": null
   },
   "blueberry_porridge": {
     "name": {
-      "hu": "blueberry_porridge",
-      "en": "blueberry_porridge"
+      "hu": "Áfonya Kása",
+      "en": "Blueberry Porridge"
     },
     "img": "img/items/blueberry_porridge.png",
     "tier": null
   },
   "boat": {
     "name": {
-      "hu": "boat",
-      "en": "boat"
+      "hu": "Csónak",
+      "en": "Boat"
     },
     "img": "img/items/boat.png",
     "tier": null
   },
   "bone": {
     "name": {
-      "hu": "bone",
-      "en": "bone"
+      "hu": "Csont",
+      "en": "Bone"
     },
     "img": "img/items/bone.png",
     "tier": null
   },
   "bone_club": {
     "name": {
-      "hu": "bone_club",
-      "en": "bone_club"
+      "hu": "Csontbuzogány",
+      "en": "Bone Club"
     },
     "img": "img/items/bone_club.png",
     "tier": null
   },
   "bone_meal": {
     "name": {
-      "hu": "bone_meal",
-      "en": "bone_meal"
+      "hu": "Csontliszt",
+      "en": "Bone Meal"
     },
     "img": "img/items/bone_meal.png",
     "tier": null
   },
   "book_and_quill": {
     "name": {
-      "hu": "book_and_quill",
-      "en": "book_and_quill"
+      "hu": "Könyv és Toll",
+      "en": "Book and Quill"
     },
     "img": "img/items/book_and_quill.png",
     "tier": null
   },
   "bookshelf": {
     "name": {
-      "hu": "bookshelf",
-      "en": "bookshelf"
+      "hu": "Könyvespolc",
+      "en": "Bookshelf"
     },
     "img": "img/items/bookshelf.png",
     "tier": null
   },
   "bottle_o_enchanting": {
     "name": {
-      "hu": "bottle_o_enchanting",
-      "en": "bottle_o_enchanting"
+      "hu": "Tapasztalat Palack",
+      "en": "Bottle o' Enchanting"
     },
     "img": "img/items/bottle_o_enchanting.png",
     "tier": null
   },
   "bottle_of_disenchanting": {
     "name": {
-      "hu": "bottle_of_disenchanting",
-      "en": "bottle_of_disenchanting"
+      "hu": "Varázstalanítás Palack",
+      "en": "Bottle of Disenchanting"
     },
     "img": "img/items/bottle_of_disenchanting.png",
     "tier": null
   },
   "bowl_milk": {
     "name": {
-      "hu": "bowl_milk",
-      "en": "bowl_milk"
+      "hu": "Tej Tál",
+      "en": "Bowl of Milk"
     },
     "img": "img/items/bowl_milk.png",
     "tier": null
   },
   "bowl_water": {
     "name": {
-      "hu": "bowl_water",
-      "en": "bowl_water"
+      "hu": "Vizes Tál",
+      "en": "Bowl of Water"
     },
     "img": "img/items/bowl_water.png",
     "tier": null
   },
   "brewing_stand": {
     "name": {
-      "hu": "brewing_stand",
-      "en": "brewing_stand"
+      "hu": "Főzőállvány",
+      "en": "Brewing Stand"
     },
     "img": "img/items/brewing_stand.png",
     "tier": null
@@ -2815,648 +2815,648 @@
   },
   "brick_slab_single": {
     "name": {
-      "hu": "brick_slab_single",
-      "en": "brick_slab_single"
+      "hu": "Tégla Félblokk",
+      "en": "Brick Slab"
     },
     "img": "img/items/brick_slab_single.png",
     "tier": null
   },
   "brick_stairs": {
     "name": {
-      "hu": "brick_stairs",
-      "en": "brick_stairs"
+      "hu": "Tégla Lépcső",
+      "en": "Brick Stairs"
     },
     "img": "img/items/brick_stairs.png",
     "tier": null
   },
   "bricks": {
     "name": {
-      "hu": "bricks",
-      "en": "bricks"
+      "hu": "Téglák",
+      "en": "Bricks"
     },
     "img": "img/items/bricks.png",
     "tier": null
   },
   "bronze_war_hammer": {
     "name": {
-      "hu": "bronze_war_hammer",
-      "en": "bronze_war_hammer"
+      "hu": "Bronz Háborús Kalapács",
+      "en": "Bronze War Hammer"
     },
     "img": "img/items/bronze_war_hammer.png",
     "tier": null
   },
   "brown_bed": {
     "name": {
-      "hu": "brown_bed",
-      "en": "brown_bed"
+      "hu": "Barna Ágy",
+      "en": "Brown Bed"
     },
     "img": "img/items/brown_bed.png",
     "tier": null
   },
   "brown_carpet": {
     "name": {
-      "hu": "brown_carpet",
-      "en": "brown_carpet"
+      "hu": "Barna Szőnyeg",
+      "en": "Brown Carpet"
     },
     "img": "img/items/brown_carpet.png",
     "tier": null
   },
   "brown_stained_clay_colored": {
     "name": {
-      "hu": "brown_stained_clay_colored",
-      "en": "brown_stained_clay_colored"
+      "hu": "Barna Festett Agyag",
+      "en": "Brown Stained Clay"
     },
     "img": "img/items/brown_stained_clay_colored.png",
     "tier": null
   },
   "brown_wool": {
     "name": {
-      "hu": "brown_wool",
-      "en": "brown_wool"
+      "hu": "Barna Gyapjú",
+      "en": "Brown Wool"
     },
     "img": "img/items/brown_wool.png",
     "tier": null
   },
   "button_stone": {
     "name": {
-      "hu": "button_stone",
-      "en": "button_stone"
+      "hu": "Kő Gomb",
+      "en": "Stone Button"
     },
     "img": "img/items/button_stone.png",
     "tier": null
   },
   "button_wood": {
     "name": {
-      "hu": "button_wood",
-      "en": "button_wood"
+      "hu": "Fa Gomb",
+      "en": "Wood Button"
     },
     "img": "img/items/button_wood.png",
     "tier": null
   },
   "cactus_green": {
     "name": {
-      "hu": "cactus_green",
-      "en": "cactus_green"
+      "hu": "Kaktuszzöld Festék",
+      "en": "Cactus Green Dye"
     },
     "img": "img/items/cactus_green.png",
     "tier": null
   },
   "cake": {
     "name": {
-      "hu": "cake",
-      "en": "cake"
+      "hu": "Torta",
+      "en": "Cake"
     },
     "img": "img/items/cake.png",
     "tier": null
   },
   "campfire_idle": {
     "name": {
-      "hu": "campfire_idle",
-      "en": "campfire_idle"
+      "hu": "Tábortűz",
+      "en": "Campfire"
     },
     "img": "img/items/campfire_idle.png",
     "tier": null
   },
   "carbon_crystal": {
     "name": {
-      "hu": "carbon_crystal",
-      "en": "carbon_crystal"
+      "hu": "Szén Kristály",
+      "en": "Carbon Crystal"
     },
     "img": "img/items/carbon_crystal.png",
     "tier": null
   },
   "carpet": {
     "name": {
-      "hu": "carpet",
-      "en": "carpet"
+      "hu": "Szőnyeg",
+      "en": "Carpet"
     },
     "img": "img/items/carpet.png",
     "tier": null
   },
   "carrot": {
     "name": {
-      "hu": "carrot",
-      "en": "carrot"
+      "hu": "Sárgarépa",
+      "en": "Carrot"
     },
     "img": "img/items/carrot.png",
     "tier": null
   },
   "carrot_on_a_stick_adamantium": {
     "name": {
-      "hu": "carrot_on_a_stick_adamantium",
-      "en": "carrot_on_a_stick_adamantium"
+      "hu": "Sárgarépa Pálcán (Adamantium)",
+      "en": "Carrot on a Stick (Adamantium)"
     },
     "img": "img/items/carrot_on_a_stick_adamantium.png",
     "tier": null
   },
   "carrot_on_a_stick_ancient_metal": {
     "name": {
-      "hu": "carrot_on_a_stick_ancient_metal",
-      "en": "carrot_on_a_stick_ancient_metal"
+      "hu": "Sárgarépa Pálcán (Ősi Fém)",
+      "en": "Carrot on a Stick (Ancient Metal)"
     },
     "img": "img/items/carrot_on_a_stick_ancient_metal.png",
     "tier": null
   },
   "carrot_on_a_stick_copper": {
     "name": {
-      "hu": "carrot_on_a_stick_copper",
-      "en": "carrot_on_a_stick_copper"
+      "hu": "Sárgarépa Pálcán (Réz)",
+      "en": "Carrot on a Stick (Copper)"
     },
     "img": "img/items/carrot_on_a_stick_copper.png",
     "tier": null
   },
   "carrot_on_a_stick_flint": {
     "name": {
-      "hu": "carrot_on_a_stick_flint",
-      "en": "carrot_on_a_stick_flint"
+      "hu": "Sárgarépa Pálcán (Kova)",
+      "en": "Carrot on a Stick (Flint)"
     },
     "img": "img/items/carrot_on_a_stick_flint.png",
     "tier": null
   },
   "carrot_on_a_stick_gold": {
     "name": {
-      "hu": "carrot_on_a_stick_gold",
-      "en": "carrot_on_a_stick_gold"
+      "hu": "Sárgarépa Pálcán (Arany)",
+      "en": "Carrot on a Stick (Gold)"
     },
     "img": "img/items/carrot_on_a_stick_gold.png",
     "tier": null
   },
   "carrot_on_a_stick_iron": {
     "name": {
-      "hu": "carrot_on_a_stick_iron",
-      "en": "carrot_on_a_stick_iron"
+      "hu": "Sárgarépa Pálcán (Vas)",
+      "en": "Carrot on a Stick (Iron)"
     },
     "img": "img/items/carrot_on_a_stick_iron.png",
     "tier": null
   },
   "carrot_on_a_stick_mithril": {
     "name": {
-      "hu": "carrot_on_a_stick_mithril",
-      "en": "carrot_on_a_stick_mithril"
+      "hu": "Sárgarépa Pálcán (Mithril)",
+      "en": "Carrot on a Stick (Mithril)"
     },
     "img": "img/items/carrot_on_a_stick_mithril.png",
     "tier": null
   },
   "carrot_on_a_stick_obsidian": {
     "name": {
-      "hu": "carrot_on_a_stick_obsidian",
-      "en": "carrot_on_a_stick_obsidian"
+      "hu": "Sárgarépa Pálcán (Obszidián)",
+      "en": "Carrot on a Stick (Obsidian)"
     },
     "img": "img/items/carrot_on_a_stick_obsidian.png",
     "tier": null
   },
   "carrot_on_a_stick_silver": {
     "name": {
-      "hu": "carrot_on_a_stick_silver",
-      "en": "carrot_on_a_stick_silver"
+      "hu": "Sárgarépa Pálcán (Ezüst)",
+      "en": "Carrot on a Stick (Silver)"
     },
     "img": "img/items/carrot_on_a_stick_silver.png",
     "tier": null
   },
   "cauldron": {
     "name": {
-      "hu": "cauldron",
-      "en": "cauldron"
+      "hu": "Üst",
+      "en": "Cauldron"
     },
     "img": "img/items/cauldron.png",
     "tier": null
   },
   "cheese": {
     "name": {
-      "hu": "cheese",
-      "en": "cheese"
+      "hu": "Sajt",
+      "en": "Cheese"
     },
     "img": "img/food/cheese.png",
     "tier": null
   },
   "chest": {
     "name": {
-      "hu": "chest",
-      "en": "chest"
+      "hu": "Láda",
+      "en": "Chest"
     },
     "img": "img/items/chest.png",
     "tier": null
   },
   "chicken_soup": {
     "name": {
-      "hu": "chicken_soup",
-      "en": "chicken_soup"
+      "hu": "Csirkeleves",
+      "en": "Chicken Soup"
     },
     "img": "img/items/chicken_soup.png",
     "tier": null
   },
   "chiseled_quartz_block": {
     "name": {
-      "hu": "chiseled_quartz_block",
-      "en": "chiseled_quartz_block"
+      "hu": "Faragott Kvarc Blokk",
+      "en": "Chiseled Quartz Block"
     },
     "img": "img/items/chiseled_quartz_block.png",
     "tier": null
   },
   "chiseled_sandstone": {
     "name": {
-      "hu": "chiseled_sandstone",
-      "en": "chiseled_sandstone"
+      "hu": "Faragott Homokkő",
+      "en": "Chiseled Sandstone"
     },
     "img": "img/items/chiseled_sandstone.png",
     "tier": null
   },
   "chocolate": {
     "name": {
-      "hu": "chocolate",
-      "en": "chocolate"
+      "hu": "Csokoládé",
+      "en": "Chocolate"
     },
     "img": "img/food/chocolate.png",
     "tier": null
   },
   "clay_furnace_idle": {
     "name": {
-      "hu": "clay_furnace_idle",
-      "en": "clay_furnace_idle"
+      "hu": "Agyag Kemence",
+      "en": "Clay Furnace"
     },
     "img": "img/items/clay_furnace_idle.png",
     "tier": null
   },
   "clay_portal_stone": {
     "name": {
-      "hu": "clay_portal_stone",
-      "en": "clay_portal_stone"
+      "hu": "Agyag Portálkő",
+      "en": "Clay Portal Stone"
     },
     "img": "img/items/clay_portal_stone.png",
     "tier": null
   },
   "clock": {
     "name": {
-      "hu": "clock",
-      "en": "clock"
+      "hu": "Óra",
+      "en": "Clock"
     },
     "img": "img/items/clock.png",
     "tier": null
   },
   "clock_knowledge_book": {
     "name": {
-      "hu": "clock_knowledge_book",
-      "en": "clock_knowledge_book"
+      "hu": "Óra Tudáskönyv",
+      "en": "Clock Knowledge Book"
     },
     "img": "img/items/clock_knowledge_book.png",
     "tier": null
   },
   "coal_block": {
     "name": {
-      "hu": "coal_block",
-      "en": "coal_block"
+      "hu": "Szén Blokk",
+      "en": "Coal Block"
     },
     "img": "img/items/coal_block.png",
     "tier": null
   },
   "coarse_dirt": {
     "name": {
-      "hu": "coarse_dirt",
-      "en": "coarse_dirt"
+      "hu": "Durva Föld",
+      "en": "Coarse Dirt"
     },
     "img": "img/items/coarse_dirt.png",
     "tier": null
   },
   "cobblestone_slab_single": {
     "name": {
-      "hu": "cobblestone_slab_single",
-      "en": "cobblestone_slab_single"
+      "hu": "Kőlap Félblokk",
+      "en": "Cobblestone Slab"
     },
     "img": "img/items/cobblestone_slab_single.png",
     "tier": null
   },
   "cobblestone_wall": {
     "name": {
-      "hu": "cobblestone_wall",
-      "en": "cobblestone_wall"
+      "hu": "Kőlap Fal",
+      "en": "Cobblestone Wall"
     },
     "img": "img/items/cobblestone_wall.png",
     "tier": null
   },
   "cocoa_beans": {
     "name": {
-      "hu": "cocoa_beans",
-      "en": "cocoa_beans"
+      "hu": "Kakaóbab",
+      "en": "Cocoa Beans"
     },
     "img": "img/items/cocoa_beans.png",
     "tier": null
   },
   "coconut_leaves": {
     "name": {
-      "hu": "coconut_leaves",
-      "en": "coconut_leaves"
+      "hu": "Kókuszpálma Levelek",
+      "en": "Coconut Leaves"
     },
     "img": "img/items/coconut_leaves.png",
     "tier": null
   },
   "compass": {
     "name": {
-      "hu": "compass",
-      "en": "compass"
+      "hu": "Iránytű",
+      "en": "Compass"
     },
     "img": "img/items/compass.png",
     "tier": null
   },
   "cooked_beef": {
     "name": {
-      "hu": "cooked_beef",
-      "en": "cooked_beef"
+      "hu": "Sült Marhahús",
+      "en": "Cooked Beef"
     },
     "img": "img/items/cooked_beef.png",
     "tier": null
   },
   "cooked_chicken": {
     "name": {
-      "hu": "cooked_chicken",
-      "en": "cooked_chicken"
+      "hu": "Sült Csirke",
+      "en": "Cooked Chicken"
     },
     "img": "img/items/cooked_chicken.png",
     "tier": null
   },
   "cookie": {
     "name": {
-      "hu": "cookie",
-      "en": "cookie"
+      "hu": "Süti",
+      "en": "Cookie"
     },
     "img": "img/items/cookie.png",
     "tier": null
   },
   "coolant_knowledge_book": {
     "name": {
-      "hu": "coolant_knowledge_book",
-      "en": "coolant_knowledge_book"
+      "hu": "Hűtőfolyadék Tudáskönyv",
+      "en": "Coolant Knowledge Book"
     },
     "img": "img/items/coolant_knowledge_book.png",
     "tier": null
   },
   "copper_anvil": {
     "name": {
-      "hu": "copper_anvil",
-      "en": "copper_anvil"
+      "hu": "Réz Üllő",
+      "en": "Copper Anvil"
     },
     "img": "img/items/copper_anvil.png",
     "tier": null
   },
   "copper_block": {
     "name": {
-      "hu": "copper_block",
-      "en": "copper_block"
+      "hu": "Réz Blokk",
+      "en": "Copper Block"
     },
     "img": "img/blocks/copper_block.png",
     "tier": null
   },
   "copper_bucket": {
     "name": {
-      "hu": "copper_bucket",
-      "en": "copper_bucket"
+      "hu": "Réz Vödör",
+      "en": "Copper Bucket"
     },
     "img": "img/items/copper_bucket.png",
     "tier": null
   },
   "copper_bucket_filled_with_milk": {
     "name": {
-      "hu": "copper_bucket_filled_with_milk",
-      "en": "copper_bucket_filled_with_milk"
+      "hu": "Réz Tejes Vödör",
+      "en": "Copper Bucket of Milk"
     },
     "img": "img/items/copper_bucket_filled_with_milk.png",
     "tier": null
   },
   "copper_bucket_filled_with_stone": {
     "name": {
-      "hu": "copper_bucket_filled_with_stone",
-      "en": "copper_bucket_filled_with_stone"
+      "hu": "Réz Kőzetes Vödör",
+      "en": "Copper Bucket of Stone"
     },
     "img": "img/items/copper_bucket_filled_with_stone.png",
     "tier": null
   },
   "copper_bucket_filled_with_water": {
     "name": {
-      "hu": "copper_bucket_filled_with_water",
-      "en": "copper_bucket_filled_with_water"
+      "hu": "Réz Vizes Vödör",
+      "en": "Copper Bucket of Water"
     },
     "img": "img/items/copper_bucket_filled_with_water.png",
     "tier": null
   },
   "copper_chain_boots": {
     "name": {
-      "hu": "copper_chain_boots",
-      "en": "copper_chain_boots"
+      "hu": "Réz Lánc Csizma",
+      "en": "Copper Chain Boots"
     },
     "img": "img/armor/copper_chainmail_boots.png",
     "tier": null
   },
   "copper_chain_chestplate": {
     "name": {
-      "hu": "copper_chain_chestplate",
-      "en": "copper_chain_chestplate"
+      "hu": "Réz Lánc Mellvért",
+      "en": "Copper Chain Chestplate"
     },
     "img": "img/armor/copper_chainmail_chestplate.png",
     "tier": null
   },
   "copper_chain_helmet": {
     "name": {
-      "hu": "copper_chain_helmet",
-      "en": "copper_chain_helmet"
+      "hu": "Réz Lánc Sisak",
+      "en": "Copper Chain Helmet"
     },
     "img": "img/armor/copper_chainmail_helmet.png",
     "tier": null
   },
   "copper_chain_leggings": {
     "name": {
-      "hu": "copper_chain_leggings",
-      "en": "copper_chain_leggings"
+      "hu": "Réz Lánc Lábvért",
+      "en": "Copper Chain Leggings"
     },
     "img": "img/armor/copper_chainmail_leggings.png",
     "tier": null
   },
   "copper_coin": {
     "name": {
-      "hu": "copper_coin",
-      "en": "copper_coin"
+      "hu": "Réz Érme",
+      "en": "Copper Coin"
     },
     "img": "img/items/copper_coin.png",
     "tier": null
   },
   "copper_door": {
     "name": {
-      "hu": "copper_door",
-      "en": "copper_door"
+      "hu": "Réz Ajtó",
+      "en": "Copper Door"
     },
     "img": "img/items/copper_door.png",
     "tier": null
   },
   "copper_fence": {
     "name": {
-      "hu": "copper_fence",
-      "en": "copper_fence"
+      "hu": "Réz Kerítés",
+      "en": "Copper Fence"
     },
     "img": "img/items/copper_fence.png",
     "tier": null
   },
   "copper_flint_and_steel": {
     "name": {
-      "hu": "copper_flint_and_steel",
-      "en": "copper_flint_and_steel"
+      "hu": "Réz Tűzkő és Acél",
+      "en": "Copper Flint and Steel"
     },
     "img": "img/items/copper_flint_and_steel.png",
     "tier": null
   },
   "copper_fluid_tank": {
     "name": {
-      "hu": "copper_fluid_tank",
-      "en": "copper_fluid_tank"
+      "hu": "Réz Folyadék Tank",
+      "en": "Copper Fluid Tank"
     },
     "img": "img/items/copper_fluid_tank.png",
     "tier": null
   },
   "copper_hand_axe": {
     "name": {
-      "hu": "copper_hand_axe",
-      "en": "copper_hand_axe"
+      "hu": "Réz Kézifejsze",
+      "en": "Copper Hand Axe"
     },
     "img": "img/items/copper_hand_axe.png",
     "tier": null
   },
   "copper_ore": {
     "name": {
-      "hu": "copper_ore",
-      "en": "copper_ore"
+      "hu": "Réz Érc",
+      "en": "Copper Ore"
     },
     "img": "img/blocks/copper_ore.png",
     "tier": null
   },
   "copper_shield": {
     "name": {
-      "hu": "copper_shield",
-      "en": "copper_shield"
+      "hu": "Réz Pajzs",
+      "en": "Copper Shield"
     },
     "img": "img/items/copper_shield.png",
     "tier": null
   },
   "copper_short_sword": {
     "name": {
-      "hu": "copper_short_sword",
-      "en": "copper_short_sword"
+      "hu": "Réz Rövid Kard",
+      "en": "Copper Short Sword"
     },
     "img": "img/items/copper_sword.png",
     "tier": null
   },
   "core_breaker": {
     "name": {
-      "hu": "core_breaker",
-      "en": "core_breaker"
+      "hu": "Kemencemag Törő",
+      "en": "Core Breaker"
     },
     "img": "img/items/core_breaker.png",
     "tier": null
   },
   "core_breaker_knowledge_book": {
     "name": {
-      "hu": "core_breaker_knowledge_book",
-      "en": "core_breaker_knowledge_book"
+      "hu": "Kemencemag Törő Tudáskönyv",
+      "en": "Core Breaker Knowledge Book"
     },
     "img": "img/items/core_breaker_knowledge_book.png",
     "tier": null
   },
   "cornflower": {
     "name": {
-      "hu": "cornflower",
-      "en": "cornflower"
+      "hu": "Búzavirág",
+      "en": "Cornflower"
     },
     "img": "img/items/cornflower.png",
     "tier": null
   },
   "cream_of_mushroom_soup": {
     "name": {
-      "hu": "cream_of_mushroom_soup",
-      "en": "cream_of_mushroom_soup"
+      "hu": "Gomba Krémleves",
+      "en": "Cream of Mushroom Soup"
     },
     "img": "img/items/cream_of_mushroom_soup.png",
     "tier": null
   },
   "cream_of_vegetable_soup": {
     "name": {
-      "hu": "cream_of_vegetable_soup",
-      "en": "cream_of_vegetable_soup"
+      "hu": "Zöldség Krémleves",
+      "en": "Cream of Vegetable Soup"
     },
     "img": "img/items/cream_of_vegetable_soup.png",
     "tier": null
   },
   "cyan_bed": {
     "name": {
-      "hu": "cyan_bed",
-      "en": "cyan_bed"
+      "hu": "Cián Ágy",
+      "en": "Cyan Bed"
     },
     "img": "img/items/cyan_bed.png",
     "tier": null
   },
   "cyan_carpet": {
     "name": {
-      "hu": "cyan_carpet",
-      "en": "cyan_carpet"
+      "hu": "Cián Szőnyeg",
+      "en": "Cyan Carpet"
     },
     "img": "img/items/cyan_carpet.png",
     "tier": null
   },
   "cyan_dye": {
     "name": {
-      "hu": "cyan_dye",
-      "en": "cyan_dye"
+      "hu": "Cián Festék",
+      "en": "Cyan Dye"
     },
     "img": "img/items/cyan_dye.png",
     "tier": null
   },
   "cyan_stained_clay_colored": {
     "name": {
-      "hu": "cyan_stained_clay_colored",
-      "en": "cyan_stained_clay_colored"
+      "hu": "Cián Festett Agyag",
+      "en": "Cyan Stained Clay"
     },
     "img": "img/items/cyan_stained_clay_colored.png",
     "tier": null
   },
   "cyan_wool": {
     "name": {
-      "hu": "cyan_wool",
-      "en": "cyan_wool"
+      "hu": "Cián Gyapjú",
+      "en": "Cyan Wool"
     },
     "img": "img/items/cyan_wool.png",
     "tier": null
   },
   "dahlia": {
     "name": {
-      "hu": "dahlia",
-      "en": "dahlia"
+      "hu": "Dália",
+      "en": "Dahlia"
     },
     "img": "img/items/dahlia.png",
     "tier": null
   },
   "daisy": {
     "name": {
-      "hu": "daisy",
-      "en": "daisy"
+      "hu": "Százszorszép",
+      "en": "Daisy"
     },
     "img": "img/items/daisy.png",
     "tier": null
   },
   "dandelion": {
     "name": {
-      "hu": "dandelion",
-      "en": "dandelion"
+      "hu": "Pitypang",
+      "en": "Dandelion"
     },
     "img": "img/items/dandelion.png",
     "tier": null
   },
   "dandelion_yellow": {
     "name": {
-      "hu": "dandelion_yellow",
-      "en": "dandelion_yellow"
+      "hu": "Pitypangsárga Festék",
+      "en": "Dandelion Yellow Dye"
     },
     "img": "img/items/dandelion_yellow.png",
     "tier": null
   },
   "daylight_sensor": {
     "name": {
-      "hu": "daylight_sensor",
-      "en": "daylight_sensor"
+      "hu": "Napfény Érzékelő",
+      "en": "Daylight Sensor"
     },
     "img": "img/items/daylight_sensor.png",
     "tier": null
@@ -3471,24 +3471,24 @@
   },
   "diamond_block": {
     "name": {
-      "hu": "diamond_block",
-      "en": "diamond_block"
+      "hu": "Gyémánt Blokk",
+      "en": "Diamond Block"
     },
     "img": "img/items/diamond_block.png",
     "tier": null
   },
   "diamond_shard": {
     "name": {
-      "hu": "diamond_shard",
-      "en": "diamond_shard"
+      "hu": "Gyémánt Szilánk",
+      "en": "Diamond Shard"
     },
     "img": "img/items/diamond_shard.png",
     "tier": null
   },
   "diorite": {
     "name": {
-      "hu": "diorite",
-      "en": "diorite"
+      "hu": "Diorit",
+      "en": "Diorite"
     },
     "img": "img/items/diorite.png",
     "tier": null
@@ -3503,104 +3503,104 @@
   },
   "dirt_portal_stone": {
     "name": {
-      "hu": "dirt_portal_stone",
-      "en": "dirt_portal_stone"
+      "hu": "Föld Portálkő",
+      "en": "Dirt Portal Stone"
     },
     "img": "img/items/dirt_portal_stone.png",
     "tier": null
   },
   "dispenser": {
     "name": {
-      "hu": "dispenser",
-      "en": "dispenser"
+      "hu": "Adagoló",
+      "en": "Dispenser"
     },
     "img": "img/items/dispenser.png",
     "tier": null
   },
   "dough": {
     "name": {
-      "hu": "dough",
-      "en": "dough"
+      "hu": "Tészta",
+      "en": "Dough"
     },
     "img": "img/food/dough.png",
     "tier": null
   },
   "dropper": {
     "name": {
-      "hu": "dropper",
-      "en": "dropper"
+      "hu": "Ejtő",
+      "en": "Dropper"
     },
     "img": "img/items/dropper.png",
     "tier": null
   },
   "egg": {
     "name": {
-      "hu": "egg",
-      "en": "egg"
+      "hu": "Tojás",
+      "en": "Egg"
     },
     "img": "img/items/egg.png",
     "tier": null
   },
   "element_obsidian": {
     "name": {
-      "hu": "element_obsidian",
-      "en": "element_obsidian"
+      "hu": "Elemi Obszidián",
+      "en": "Elemental Obsidian"
     },
     "img": "img/items/element_obsidian.png",
     "tier": null
   },
   "elemental_water_skin_knowledge_book": {
     "name": {
-      "hu": "elemental_water_skin_knowledge_book",
-      "en": "elemental_water_skin_knowledge_book"
+      "hu": "Elemi Víztömlő Tudáskönyv",
+      "en": "Elemental Water Skin Knowledge Book"
     },
     "img": "img/items/elemental_water_skin_knowledge_book.png",
     "tier": null
   },
   "emerald_block": {
     "name": {
-      "hu": "emerald_block",
-      "en": "emerald_block"
+      "hu": "Smaragd Blokk",
+      "en": "Emerald Block"
     },
     "img": "img/items/emerald_block.png",
     "tier": null
   },
   "emerald_shard": {
     "name": {
-      "hu": "emerald_shard",
-      "en": "emerald_shard"
+      "hu": "Smaragd Szilánk",
+      "en": "Emerald Shard"
     },
     "img": "img/items/emerald_shard.png",
     "tier": null
   },
   "empty_antique_atlas": {
     "name": {
-      "hu": "empty_antique_atlas",
-      "en": "empty_antique_atlas"
+      "hu": "Üres Antik Atlasz",
+      "en": "Empty Antique Atlas"
     },
     "img": "img/items/empty_antique_atlas.png",
     "tier": null
   },
   "empty_large_water_skin": {
     "name": {
-      "hu": "empty_large_water_skin",
-      "en": "empty_large_water_skin"
+      "hu": "Üres Nagy Víztömlő",
+      "en": "Empty Large Water Skin"
     },
     "img": "img/items/empty_large_water_skin.png",
     "tier": null
   },
   "empty_map": {
     "name": {
-      "hu": "empty_map",
-      "en": "empty_map"
+      "hu": "Üres Térkép",
+      "en": "Empty Map"
     },
     "img": "img/items/empty_map.png",
     "tier": null
   },
   "empty_water_skin": {
     "name": {
-      "hu": "empty_water_skin",
-      "en": "empty_water_skin"
+      "hu": "Üres Víztömlő",
+      "en": "Empty Water Skin"
     },
     "img": "img/items/empty_water_skin.png",
     "tier": null
@@ -3615,40 +3615,40 @@
   },
   "enchantment_table_emerald": {
     "name": {
-      "hu": "enchantment_table_emerald",
-      "en": "enchantment_table_emerald"
+      "hu": "Smaragd Bűvölőasztal",
+      "en": "Emerald Enchantment Table"
     },
     "img": "img/items/enchantment_table_emerald.png",
     "tier": null
   },
   "ender_chest": {
     "name": {
-      "hu": "ender_chest",
-      "en": "ender_chest"
+      "hu": "Ender Láda",
+      "en": "Ender Chest"
     },
     "img": "img/items/ender_chest.png",
     "tier": null
   },
   "ender_pearl": {
     "name": {
-      "hu": "ender_pearl",
-      "en": "ender_pearl"
+      "hu": "Ender Gyöngy",
+      "en": "Ender Pearl"
     },
     "img": "img/items/ender_pearl.png",
     "tier": null
   },
   "fence": {
     "name": {
-      "hu": "fence",
-      "en": "fence"
+      "hu": "Kerítés",
+      "en": "Fence"
     },
     "img": "img/items/fence.png",
     "tier": null
   },
   "fence_gate": {
     "name": {
-      "hu": "fence_gate",
-      "en": "fence_gate"
+      "hu": "Kerítés Kapu",
+      "en": "Fence Gate"
     },
     "img": "img/items/fence_gate.png",
     "tier": null
@@ -3663,200 +3663,200 @@
   },
   "fire_charge": {
     "name": {
-      "hu": "fire_charge",
-      "en": "fire_charge"
+      "hu": "Tűzgolyó",
+      "en": "Fire Charge"
     },
     "img": "img/items/fire_charge.png",
     "tier": null
   },
   "fish_ball": {
     "name": {
-      "hu": "fish_ball",
-      "en": "fish_ball"
+      "hu": "Halgombóc",
+      "en": "Fish Ball"
     },
     "img": "img/items/fish_ball.png",
     "tier": null
   },
   "fishing_rod_adamantium": {
     "name": {
-      "hu": "fishing_rod_adamantium",
-      "en": "fishing_rod_adamantium"
+      "hu": "Adamantium Horgászbot",
+      "en": "Adamantium Fishing Rod"
     },
     "img": "img/items/fishing_rod_adamantium.png",
     "tier": null
   },
   "fishing_rod_ancient_metal": {
     "name": {
-      "hu": "fishing_rod_ancient_metal",
-      "en": "fishing_rod_ancient_metal"
+      "hu": "Ősi Fém Horgászbot",
+      "en": "Ancient Metal Fishing Rod"
     },
     "img": "img/items/fishing_rod_ancient_metal.png",
     "tier": null
   },
   "fishing_rod_copper": {
     "name": {
-      "hu": "fishing_rod_copper",
-      "en": "fishing_rod_copper"
+      "hu": "Réz Horgászbot",
+      "en": "Copper Fishing Rod"
     },
     "img": "img/items/fishing_rod_copper.png",
     "tier": null
   },
   "fishing_rod_flint": {
     "name": {
-      "hu": "fishing_rod_flint",
-      "en": "fishing_rod_flint"
+      "hu": "Kova Horgászbot",
+      "en": "Flint Fishing Rod"
     },
     "img": "img/items/fishing_rod_flint.png",
     "tier": null
   },
   "fishing_rod_gold": {
     "name": {
-      "hu": "fishing_rod_gold",
-      "en": "fishing_rod_gold"
+      "hu": "Arany Horgászbot",
+      "en": "Gold Fishing Rod"
     },
     "img": "img/items/fishing_rod_gold.png",
     "tier": null
   },
   "fishing_rod_hard": {
     "name": {
-      "hu": "fishing_rod_hard",
-      "en": "fishing_rod_hard"
+      "hu": "Keménykő Horgászbot",
+      "en": "Hardstone Fishing Rod"
     },
     "img": "img/items/fishing_rod_hard.png",
     "tier": null
   },
   "fishing_rod_iron": {
     "name": {
-      "hu": "fishing_rod_iron",
-      "en": "fishing_rod_iron"
+      "hu": "Vas Horgászbot",
+      "en": "Iron Fishing Rod"
     },
     "img": "img/items/fishing_rod_iron.png",
     "tier": null
   },
   "fishing_rod_mithril": {
     "name": {
-      "hu": "fishing_rod_mithril",
-      "en": "fishing_rod_mithril"
+      "hu": "Mithril Horgászbot",
+      "en": "Mithril Fishing Rod"
     },
     "img": "img/items/fishing_rod_mithril.png",
     "tier": null
   },
   "fishing_rod_obsidian": {
     "name": {
-      "hu": "fishing_rod_obsidian",
-      "en": "fishing_rod_obsidian"
+      "hu": "Obszidián Horgászbot",
+      "en": "Obsidian Fishing Rod"
     },
     "img": "img/items/fishing_rod_obsidian.png",
     "tier": null
   },
   "fishing_rod_silver": {
     "name": {
-      "hu": "fishing_rod_silver",
-      "en": "fishing_rod_silver"
+      "hu": "Ezüst Horgászbot",
+      "en": "Silver Fishing Rod"
     },
     "img": "img/items/fishing_rod_silver.png",
     "tier": null
   },
   "flint_and_steel": {
     "name": {
-      "hu": "flint_and_steel",
-      "en": "flint_and_steel"
+      "hu": "Tűzkő és Acél",
+      "en": "Flint and Steel"
     },
     "img": "img/items/flint_and_steel.png",
     "tier": null
   },
   "flint_axe": {
     "name": {
-      "hu": "flint_axe",
-      "en": "flint_axe"
+      "hu": "Kova Fejsze",
+      "en": "Flint Axe"
     },
     "img": "img/items/flint_axe.png",
     "tier": null
   },
   "flint_hatchet": {
     "name": {
-      "hu": "flint_hatchet",
-      "en": "flint_hatchet"
+      "hu": "Kova Balta",
+      "en": "Flint Hatchet"
     },
     "img": "img/items/flint_hatchet.png",
     "tier": null
   },
   "flint_pickaxe": {
     "name": {
-      "hu": "flint_pickaxe",
-      "en": "flint_pickaxe"
+      "hu": "Kova Csákány",
+      "en": "Flint Pickaxe"
     },
     "img": "img/items/flint_pickaxe.png",
     "tier": null
   },
   "flint_shovel": {
     "name": {
-      "hu": "flint_shovel",
-      "en": "flint_shovel"
+      "hu": "Kova Ásó",
+      "en": "Flint Shovel"
     },
     "img": "img/items/flint_shovel.png",
     "tier": null
   },
   "flour": {
     "name": {
-      "hu": "flour",
-      "en": "flour"
+      "hu": "Liszt",
+      "en": "Flour"
     },
     "img": "img/food/flour.png",
     "tier": null
   },
   "flower_pot": {
     "name": {
-      "hu": "flower_pot",
-      "en": "flower_pot"
+      "hu": "Virágcserép",
+      "en": "Flower Pot"
     },
     "img": "img/items/flower_pot.png",
     "tier": null
   },
   "fruit_sorbet": {
     "name": {
-      "hu": "fruit_sorbet",
-      "en": "fruit_sorbet"
+      "hu": "Gyümölcs Sorbet",
+      "en": "Fruit Sorbet"
     },
     "img": "img/items/fruit_sorbet.png",
     "tier": null
   },
   "giant_tnt_knowledge_book": {
     "name": {
-      "hu": "giant_tnt_knowledge_book",
-      "en": "giant_tnt_knowledge_book"
+      "hu": "Óriás TNT Tudáskönyv",
+      "en": "Giant TNT Knowledge Book"
     },
     "img": "img/items/giant_tnt_knowledge_book.png",
     "tier": null
   },
   "glass": {
     "name": {
-      "hu": "glass",
-      "en": "glass"
+      "hu": "Üveg",
+      "en": "Glass"
     },
     "img": "img/shards/glass.png",
     "tier": null
   },
   "glass_bottle": {
     "name": {
-      "hu": "glass_bottle",
-      "en": "glass_bottle"
+      "hu": "Üveg Palack",
+      "en": "Glass Bottle"
     },
     "img": "img/items/glass_bottle.png",
     "tier": null
   },
   "glass_pane": {
     "name": {
-      "hu": "glass_pane",
-      "en": "glass_pane"
+      "hu": "Üveg Ablak",
+      "en": "Glass Pane"
     },
     "img": "img/items/glass_pane.png",
     "tier": null
   },
   "glass_shard": {
     "name": {
-      "hu": "glass_shard",
-      "en": "glass_shard"
+      "hu": "Üveg Szilánk",
+      "en": "Glass Shard"
     },
     "img": "img/items/glass_shard.png",
     "tier": null
@@ -3887,176 +3887,176 @@
   },
   "glowstone_torch": {
     "name": {
-      "hu": "glowstone_torch",
-      "en": "glowstone_torch"
+      "hu": "Izzókő Fáklya",
+      "en": "Glowstone Torch"
     },
     "img": "img/items/glowstone_torch.png",
     "tier": null
   },
   "gold_anvil": {
     "name": {
-      "hu": "gold_anvil",
-      "en": "gold_anvil"
+      "hu": "Arany Üllő",
+      "en": "Gold Anvil"
     },
     "img": "img/items/gold_anvil.png",
     "tier": null
   },
   "gold_block": {
     "name": {
-      "hu": "gold_block",
-      "en": "gold_block"
+      "hu": "Arany Blokk",
+      "en": "Gold Block"
     },
     "img": "img/blocks/gold_block.png",
     "tier": null
   },
   "gold_bucket": {
     "name": {
-      "hu": "gold_bucket",
-      "en": "gold_bucket"
+      "hu": "Arany Vödör",
+      "en": "Gold Bucket"
     },
     "img": "img/items/gold_bucket.png",
     "tier": null
   },
   "gold_bucket_filled_with_milk": {
     "name": {
-      "hu": "gold_bucket_filled_with_milk",
-      "en": "gold_bucket_filled_with_milk"
+      "hu": "Arany Tejes Vödör",
+      "en": "Gold Bucket of Milk"
     },
     "img": "img/items/gold_bucket_filled_with_milk.png",
     "tier": null
   },
   "gold_bucket_filled_with_stone": {
     "name": {
-      "hu": "gold_bucket_filled_with_stone",
-      "en": "gold_bucket_filled_with_stone"
+      "hu": "Arany Kőzetes Vödör",
+      "en": "Gold Bucket of Stone"
     },
     "img": "img/items/gold_bucket_filled_with_stone.png",
     "tier": null
   },
   "gold_bucket_filled_with_water": {
     "name": {
-      "hu": "gold_bucket_filled_with_water",
-      "en": "gold_bucket_filled_with_water"
+      "hu": "Arany Vizes Vödör",
+      "en": "Gold Bucket of Water"
     },
     "img": "img/items/gold_bucket_filled_with_water.png",
     "tier": null
   },
   "gold_chain_boots": {
     "name": {
-      "hu": "gold_chain_boots",
-      "en": "gold_chain_boots"
+      "hu": "Arany Lánc Csizma",
+      "en": "Gold Chain Boots"
     },
     "img": "img/armor/gold_chainmail_boots.png",
     "tier": null
   },
   "gold_chain_chestplate": {
     "name": {
-      "hu": "gold_chain_chestplate",
-      "en": "gold_chain_chestplate"
+      "hu": "Arany Lánc Mellvért",
+      "en": "Gold Chain Chestplate"
     },
     "img": "img/armor/gold_chainmail_chestplate.png",
     "tier": null
   },
   "gold_chain_helmet": {
     "name": {
-      "hu": "gold_chain_helmet",
-      "en": "gold_chain_helmet"
+      "hu": "Arany Lánc Sisak",
+      "en": "Gold Chain Helmet"
     },
     "img": "img/armor/gold_chainmail_helmet.png",
     "tier": null
   },
   "gold_chain_leggings": {
     "name": {
-      "hu": "gold_chain_leggings",
-      "en": "gold_chain_leggings"
+      "hu": "Arany Lánc Lábvért",
+      "en": "Gold Chain Leggings"
     },
     "img": "img/armor/gold_chainmail_leggings.png",
     "tier": null
   },
   "gold_coin": {
     "name": {
-      "hu": "gold_coin",
-      "en": "gold_coin"
+      "hu": "Arany Érme",
+      "en": "Gold Coin"
     },
     "img": "img/items/gold_coin.png",
     "tier": null
   },
   "gold_door": {
     "name": {
-      "hu": "gold_door",
-      "en": "gold_door"
+      "hu": "Arany Ajtó",
+      "en": "Gold Door"
     },
     "img": "img/items/gold_door.png",
     "tier": null
   },
   "gold_fence": {
     "name": {
-      "hu": "gold_fence",
-      "en": "gold_fence"
+      "hu": "Arany Kerítés",
+      "en": "Gold Fence"
     },
     "img": "img/items/gold_fence.png",
     "tier": null
   },
   "gold_filter_paper": {
     "name": {
-      "hu": "gold_filter_paper",
-      "en": "gold_filter_paper"
+      "hu": "Arany Szűrőpapír",
+      "en": "Gold Filter Paper"
     },
     "img": "img/items/gold_filter_paper.png",
     "tier": null
   },
   "gold_flint_and_steel": {
     "name": {
-      "hu": "gold_flint_and_steel",
-      "en": "gold_flint_and_steel"
+      "hu": "Arany Tűzkő és Acél",
+      "en": "Gold Flint and Steel"
     },
     "img": "img/items/gold_flint_and_steel.png",
     "tier": null
   },
   "gold_fluid_tank": {
     "name": {
-      "hu": "gold_fluid_tank",
-      "en": "gold_fluid_tank"
+      "hu": "Arany Folyadék Tank",
+      "en": "Gold Fluid Tank"
     },
     "img": "img/items/gold_fluid_tank.png",
     "tier": null
   },
   "gold_hand_axe": {
     "name": {
-      "hu": "gold_hand_axe",
-      "en": "gold_hand_axe"
+      "hu": "Arany Kézifejsze",
+      "en": "Gold Hand Axe"
     },
     "img": "img/items/gold_hand_axe.png",
     "tier": null
   },
   "gold_ore": {
     "name": {
-      "hu": "gold_ore",
-      "en": "gold_ore"
+      "hu": "Arany Érc",
+      "en": "Gold Ore"
     },
     "img": "img/items/gold_ore.png",
     "tier": null
   },
   "gold_shield": {
     "name": {
-      "hu": "gold_shield",
-      "en": "gold_shield"
+      "hu": "Arany Pajzs",
+      "en": "Gold Shield"
     },
     "img": "img/items/gold_shield.png",
     "tier": null
   },
   "gold_short_sword": {
     "name": {
-      "hu": "gold_short_sword",
-      "en": "gold_short_sword"
+      "hu": "Arany Rövid Kard",
+      "en": "Gold Short Sword"
     },
     "img": "img/items/gold_sword.png",
     "tier": null
   },
   "gold_shovel": {
     "name": {
-      "hu": "gold_shovel",
-      "en": "gold_shovel"
+      "hu": "Arany Ásó",
+      "en": "Gold Shovel"
     },
     "img": "img/items/gold_shovel.png",
     "tier": null
@@ -4079,8 +4079,8 @@
   },
   "granite": {
     "name": {
-      "hu": "granite",
-      "en": "granite"
+      "hu": "Gránit",
+      "en": "Granite"
     },
     "img": "img/items/granite.png",
     "tier": null
@@ -4095,80 +4095,80 @@
   },
   "gray_bed": {
     "name": {
-      "hu": "gray_bed",
-      "en": "gray_bed"
+      "hu": "Szürke Ágy",
+      "en": "Gray Bed"
     },
     "img": "img/items/gray_bed.png",
     "tier": null
   },
   "gray_carpet": {
     "name": {
-      "hu": "gray_carpet",
-      "en": "gray_carpet"
+      "hu": "Szürke Szőnyeg",
+      "en": "Gray Carpet"
     },
     "img": "img/items/gray_carpet.png",
     "tier": null
   },
   "gray_dye": {
     "name": {
-      "hu": "gray_dye",
-      "en": "gray_dye"
+      "hu": "Szürke Festék",
+      "en": "Gray Dye"
     },
     "img": "img/items/gray_dye.png",
     "tier": null
   },
   "gray_stained_clay_colored": {
     "name": {
-      "hu": "gray_stained_clay_colored",
-      "en": "gray_stained_clay_colored"
+      "hu": "Szürke Festett Agyag",
+      "en": "Gray Stained Clay"
     },
     "img": "img/items/gray_stained_clay_colored.png",
     "tier": null
   },
   "gray_wool": {
     "name": {
-      "hu": "gray_wool",
-      "en": "gray_wool"
+      "hu": "Szürke Gyapjú",
+      "en": "Gray Wool"
     },
     "img": "img/items/gray_wool.png",
     "tier": null
   },
   "green_bed": {
     "name": {
-      "hu": "green_bed",
-      "en": "green_bed"
+      "hu": "Zöld Ágy",
+      "en": "Green Bed"
     },
     "img": "img/items/green_bed.png",
     "tier": null
   },
   "green_carpet": {
     "name": {
-      "hu": "green_carpet",
-      "en": "green_carpet"
+      "hu": "Zöld Szőnyeg",
+      "en": "Green Carpet"
     },
     "img": "img/items/green_carpet.png",
     "tier": null
   },
   "green_stained_clay_colored": {
     "name": {
-      "hu": "green_stained_clay_colored",
-      "en": "green_stained_clay_colored"
+      "hu": "Zöld Festett Agyag",
+      "en": "Green Stained Clay"
     },
     "img": "img/items/green_stained_clay_colored.png",
     "tier": null
   },
   "green_wool": {
     "name": {
-      "hu": "green_wool",
-      "en": "green_wool"
+      "hu": "Zöld Gyapjú",
+      "en": "Green Wool"
     },
     "img": "img/items/green_wool.png",
     "tier": null
   },
   "grindstone": {
     "name": {
-      "hu": "grindstone",
-      "en": "grindstone"
+      "hu": "Köszörűkő",
+      "en": "Grindstone"
     },
     "img": "img/items/grindstone.png",
     "tier": null
@@ -4183,808 +4183,808 @@
   },
   "hard_stone_anvil": {
     "name": {
-      "hu": "hard_stone_anvil",
-      "en": "hard_stone_anvil"
+      "hu": "Keménykő Üllő",
+      "en": "Hardstone Anvil"
     },
     "img": "img/items/hard_stone_anvil.png",
     "tier": null
   },
   "hard_stone_axe": {
     "name": {
-      "hu": "hard_stone_axe",
-      "en": "hard_stone_axe"
+      "hu": "Keménykő Fejsze",
+      "en": "Hardstone Axe"
     },
     "img": "img/items/hard_stone_axe.png",
     "tier": null
   },
   "hard_stone_battle_axe": {
     "name": {
-      "hu": "hard_stone_battle_axe",
-      "en": "hard_stone_battle_axe"
+      "hu": "Keménykő Csatafejsze",
+      "en": "Hardstone Battle Axe"
     },
     "img": "img/items/hard_stone_battle_axe.png",
     "tier": null
   },
   "hard_stone_boots": {
     "name": {
-      "hu": "hard_stone_boots",
-      "en": "hard_stone_boots"
+      "hu": "Keménykő Csizma",
+      "en": "Hardstone Boots"
     },
     "img": "img/items/hard_stone_boots.png",
     "tier": null
   },
   "hard_stone_bucket_of_milk": {
     "name": {
-      "hu": "hard_stone_bucket_of_milk",
-      "en": "hard_stone_bucket_of_milk"
+      "hu": "Keménykő Tejes Vödör",
+      "en": "Hardstone Bucket of Milk"
     },
     "img": "img/items/hard_stone_bucket_of_milk.png",
     "tier": null
   },
   "hard_stone_bucket_of_stone": {
     "name": {
-      "hu": "hard_stone_bucket_of_stone",
-      "en": "hard_stone_bucket_of_stone"
+      "hu": "Keménykő Kőzetes Vödör",
+      "en": "Hardstone Bucket of Stone"
     },
     "img": "img/items/hard_stone_bucket_of_stone.png",
     "tier": null
   },
   "hard_stone_bucket_of_water": {
     "name": {
-      "hu": "hard_stone_bucket_of_water",
-      "en": "hard_stone_bucket_of_water"
+      "hu": "Keménykő Vizes Vödör",
+      "en": "Hardstone Bucket of Water"
     },
     "img": "img/items/hard_stone_bucket_of_water.png",
     "tier": null
   },
   "hard_stone_chestplate": {
     "name": {
-      "hu": "hard_stone_chestplate",
-      "en": "hard_stone_chestplate"
+      "hu": "Keménykő Mellvért",
+      "en": "Hardstone Chestplate"
     },
     "img": "img/items/hard_stone_chestplate.png",
     "tier": null
   },
   "hard_stone_dagger": {
     "name": {
-      "hu": "hard_stone_dagger",
-      "en": "hard_stone_dagger"
+      "hu": "Keménykő Tőr",
+      "en": "Hardstone Dagger"
     },
     "img": "img/items/hard_stone_dagger.png",
     "tier": null
   },
   "hard_stone_flint_and_steel": {
     "name": {
-      "hu": "hard_stone_flint_and_steel",
-      "en": "hard_stone_flint_and_steel"
+      "hu": "Keménykő Tűzkő és Acél",
+      "en": "Hardstone Flint and Steel"
     },
     "img": "img/items/hard_stone_flint_and_steel.png",
     "tier": null
   },
   "hard_stone_fluid_tank": {
     "name": {
-      "hu": "hard_stone_fluid_tank",
-      "en": "hard_stone_fluid_tank"
+      "hu": "Keménykő Folyadék Tank",
+      "en": "Hardstone Fluid Tank"
     },
     "img": "img/items/hard_stone_fluid_tank.png",
     "tier": null
   },
   "hard_stone_hand_axe": {
     "name": {
-      "hu": "hard_stone_hand_axe",
-      "en": "hard_stone_hand_axe"
+      "hu": "Keménykő Kézifejsze",
+      "en": "Hardstone Hand Axe"
     },
     "img": "img/items/hard_stone_hand_axe.png",
     "tier": null
   },
   "hard_stone_helmet": {
     "name": {
-      "hu": "hard_stone_helmet",
-      "en": "hard_stone_helmet"
+      "hu": "Keménykő Sisak",
+      "en": "Hardstone Helmet"
     },
     "img": "img/items/hard_stone_helmet.png",
     "tier": null
   },
   "hard_stone_hoe": {
     "name": {
-      "hu": "hard_stone_hoe",
-      "en": "hard_stone_hoe"
+      "hu": "Keménykő Kapa",
+      "en": "Hardstone Hoe"
     },
     "img": "img/items/hard_stone_hoe.png",
     "tier": null
   },
   "hard_stone_leggings": {
     "name": {
-      "hu": "hard_stone_leggings",
-      "en": "hard_stone_leggings"
+      "hu": "Keménykő Lábvért",
+      "en": "Hardstone Leggings"
     },
     "img": "img/items/hard_stone_leggings.png",
     "tier": null
   },
   "hard_stone_mattock": {
     "name": {
-      "hu": "hard_stone_mattock",
-      "en": "hard_stone_mattock"
+      "hu": "Keménykő Kapacs",
+      "en": "Hardstone Mattock"
     },
     "img": "img/items/hard_stone_mattock.png",
     "tier": null
   },
   "hard_stone_pickaxe": {
     "name": {
-      "hu": "hard_stone_pickaxe",
-      "en": "hard_stone_pickaxe"
+      "hu": "Keménykő Csákány",
+      "en": "Hardstone Pickaxe"
     },
     "img": "img/items/hard_stone_pickaxe.png",
     "tier": null
   },
   "hard_stone_scythe": {
     "name": {
-      "hu": "hard_stone_scythe",
-      "en": "hard_stone_scythe"
+      "hu": "Keménykő Kasza",
+      "en": "Hardstone Scythe"
     },
     "img": "img/items/hard_stone_scythe.png",
     "tier": null
   },
   "hard_stone_shears": {
     "name": {
-      "hu": "hard_stone_shears",
-      "en": "hard_stone_shears"
+      "hu": "Keménykő Olló",
+      "en": "Hardstone Shears"
     },
     "img": "img/items/hard_stone_shears.png",
     "tier": null
   },
   "hard_stone_shield": {
     "name": {
-      "hu": "hard_stone_shield",
-      "en": "hard_stone_shield"
+      "hu": "Keménykő Pajzs",
+      "en": "Hardstone Shield"
     },
     "img": "img/items/hard_stone_shield.png",
     "tier": null
   },
   "hard_stone_shovel": {
     "name": {
-      "hu": "hard_stone_shovel",
-      "en": "hard_stone_shovel"
+      "hu": "Keménykő Ásó",
+      "en": "Hardstone Shovel"
     },
     "img": "img/items/hard_stone_shovel.png",
     "tier": null
   },
   "hard_stone_sword": {
     "name": {
-      "hu": "hard_stone_sword",
-      "en": "hard_stone_sword"
+      "hu": "Keménykő Kard",
+      "en": "Hardstone Sword"
     },
     "img": "img/items/hard_stone_sword.png",
     "tier": null
   },
   "hard_stone_war_hammer": {
     "name": {
-      "hu": "hard_stone_war_hammer",
-      "en": "hard_stone_war_hammer"
+      "hu": "Keménykő Háborús Kalapács",
+      "en": "Hardstone War Hammer"
     },
     "img": "img/items/hard_stone_war_hammer.png",
     "tier": null
   },
   "hardstone_block": {
     "name": {
-      "hu": "hardstone_block",
-      "en": "hardstone_block"
+      "hu": "Keménykő Blokk",
+      "en": "Hardstone Block"
     },
     "img": "img/blocks/hardstone_block.png",
     "tier": null
   },
   "hardstone_bucket": {
     "name": {
-      "hu": "hardstone_bucket",
-      "en": "hardstone_bucket"
+      "hu": "Keménykő Vödör",
+      "en": "Hardstone Bucket"
     },
     "img": "img/items/hardstone_bucket.png",
     "tier": null
   },
   "hardstone_coin": {
     "name": {
-      "hu": "hardstone_coin",
-      "en": "hardstone_coin"
+      "hu": "Keménykő Érme",
+      "en": "Hardstone Coin"
     },
     "img": "img/items/hardstone_coin.png",
     "tier": null
   },
   "hardstone_nugget": {
     "name": {
-      "hu": "hardstone_nugget",
-      "en": "hardstone_nugget"
+      "hu": "Keménykő Ércdarab",
+      "en": "Hardstone Nugget"
     },
     "img": "img/items/hardstone_nugget.png",
     "tier": null
   },
   "hardstone_ore": {
     "name": {
-      "hu": "hardstone_ore",
-      "en": "hardstone_ore"
+      "hu": "Keménykő Érc",
+      "en": "Hardstone Ore"
     },
     "img": "img/blocks/hardstone_ore.png",
     "tier": null
   },
   "hay_bale": {
     "name": {
-      "hu": "hay_bale",
-      "en": "hay_bale"
+      "hu": "Szénabála",
+      "en": "Hay Bale"
     },
     "img": "img/items/hay_bale.png",
     "tier": null
   },
   "high_carbon_steel_war_hammer": {
     "name": {
-      "hu": "high_carbon_steel_war_hammer",
-      "en": "high_carbon_steel_war_hammer"
+      "hu": "Magas Szén Acél Háborús Kalapács",
+      "en": "High Carbon Steel War Hammer"
     },
     "img": "img/items/high_carbon_steel_war_hammer.png",
     "tier": null
   },
   "hopper": {
     "name": {
-      "hu": "hopper",
-      "en": "hopper"
+      "hu": "Tölcsér",
+      "en": "Hopper"
     },
     "img": "img/items/hopper.png",
     "tier": null
   },
   "ice_cream": {
     "name": {
-      "hu": "ice_cream",
-      "en": "ice_cream"
+      "hu": "Fagylalt",
+      "en": "Ice Cream"
     },
     "img": "img/items/ice_cream.png",
     "tier": null
   },
   "ice_cream_cone": {
     "name": {
-      "hu": "ice_cream_cone",
-      "en": "ice_cream_cone"
+      "hu": "Fagylalt Tölcsér",
+      "en": "Ice Cream Cone"
     },
     "img": "img/items/ice_cream_cone.png",
     "tier": null
   },
   "ink_sac": {
     "name": {
-      "hu": "ink_sac",
-      "en": "ink_sac"
+      "hu": "Tintazacskó",
+      "en": "Ink Sac"
     },
     "img": "img/items/ink_sac.png",
     "tier": null
   },
   "iron_anvil": {
     "name": {
-      "hu": "iron_anvil",
-      "en": "iron_anvil"
+      "hu": "Vas Üllő",
+      "en": "Iron Anvil"
     },
     "img": "img/items/iron_anvil.png",
     "tier": null
   },
   "iron_bars": {
     "name": {
-      "hu": "iron_bars",
-      "en": "iron_bars"
+      "hu": "Vas Rács",
+      "en": "Iron Bars"
     },
     "img": "img/items/iron_bars.png",
     "tier": null
   },
   "iron_block": {
     "name": {
-      "hu": "iron_block",
-      "en": "iron_block"
+      "hu": "Vas Blokk",
+      "en": "Iron Block"
     },
     "img": "img/items/iron_block.png",
     "tier": null
   },
   "iron_boat": {
     "name": {
-      "hu": "iron_boat",
-      "en": "iron_boat"
+      "hu": "Vas Csónak",
+      "en": "Iron Boat"
     },
     "img": "img/items/iron_boat.png",
     "tier": null
   },
   "iron_bucket": {
     "name": {
-      "hu": "iron_bucket",
-      "en": "iron_bucket"
+      "hu": "Vas Vödör",
+      "en": "Iron Bucket"
     },
     "img": "img/items/iron_bucket.png",
     "tier": null
   },
   "iron_bucket_filled_with_milk": {
     "name": {
-      "hu": "iron_bucket_filled_with_milk",
-      "en": "iron_bucket_filled_with_milk"
+      "hu": "Vas Tejes Vödör",
+      "en": "Iron Bucket of Milk"
     },
     "img": "img/items/iron_bucket.png",
     "tier": null
   },
   "iron_bucket_filled_with_stone": {
     "name": {
-      "hu": "iron_bucket_filled_with_stone",
-      "en": "iron_bucket_filled_with_stone"
+      "hu": "Vas Kőzetes Vödör",
+      "en": "Iron Bucket of Stone"
     },
     "img": "img/items/iron_bucket.png",
     "tier": null
   },
   "iron_bucket_filled_with_water": {
     "name": {
-      "hu": "iron_bucket_filled_with_water",
-      "en": "iron_bucket_filled_with_water"
+      "hu": "Vas Vizes Vödör",
+      "en": "Iron Bucket of Water"
     },
     "img": "img/items/iron_bucket.png",
     "tier": null
   },
   "iron_chain_boots": {
     "name": {
-      "hu": "iron_chain_boots",
-      "en": "iron_chain_boots"
+      "hu": "Vas Lánc Csizma",
+      "en": "Iron Chain Boots"
     },
     "img": "img/items/iron_chain_boots.png",
     "tier": null
   },
   "iron_chain_chestplate": {
     "name": {
-      "hu": "iron_chain_chestplate",
-      "en": "iron_chain_chestplate"
+      "hu": "Vas Lánc Mellvért",
+      "en": "Iron Chain Chestplate"
     },
     "img": "img/items/iron_chain_chestplate.png",
     "tier": null
   },
   "iron_chain_helmet": {
     "name": {
-      "hu": "iron_chain_helmet",
-      "en": "iron_chain_helmet"
+      "hu": "Vas Lánc Sisak",
+      "en": "Iron Chain Helmet"
     },
     "img": "img/items/iron_chain_helmet.png",
     "tier": null
   },
   "iron_chain_leggings": {
     "name": {
-      "hu": "iron_chain_leggings",
-      "en": "iron_chain_leggings"
+      "hu": "Vas Lánc Lábvért",
+      "en": "Iron Chain Leggings"
     },
     "img": "img/items/iron_chain_leggings.png",
     "tier": null
   },
   "iron_door": {
     "name": {
-      "hu": "iron_door",
-      "en": "iron_door"
+      "hu": "Vas Ajtó",
+      "en": "Iron Door"
     },
     "img": "img/items/iron_door.png",
     "tier": null
   },
   "iron_fluid_tank": {
     "name": {
-      "hu": "iron_fluid_tank",
-      "en": "iron_fluid_tank"
+      "hu": "Vas Folyadék Tank",
+      "en": "Iron Fluid Tank"
     },
     "img": "img/items/iron_fluid_tank.png",
     "tier": null
   },
   "iron_hand_axe": {
     "name": {
-      "hu": "iron_hand_axe",
-      "en": "iron_hand_axe"
+      "hu": "Vas Kézifejsze",
+      "en": "Iron Hand Axe"
     },
     "img": "img/items/iron_hand_axe.png",
     "tier": null
   },
   "iron_ore": {
     "name": {
-      "hu": "iron_ore",
-      "en": "iron_ore"
+      "hu": "Vas Érc",
+      "en": "Iron Ore"
     },
     "img": "img/items/iron_ore.png",
     "tier": null
   },
   "iron_shield": {
     "name": {
-      "hu": "iron_shield",
-      "en": "iron_shield"
+      "hu": "Vas Pajzs",
+      "en": "Iron Shield"
     },
     "img": "img/items/iron_shield.png",
     "tier": null
   },
   "iron_short_sword": {
     "name": {
-      "hu": "iron_short_sword",
-      "en": "iron_short_sword"
+      "hu": "Vas Rövid Kard",
+      "en": "Iron Short Sword"
     },
     "img": "img/items/iron_short_sword.png",
     "tier": null
   },
   "item_frame": {
     "name": {
-      "hu": "item_frame",
-      "en": "item_frame"
+      "hu": "Tárgy Keret",
+      "en": "Item Frame"
     },
     "img": "img/items/item_frame.png",
     "tier": null
   },
   "jack_o_lantern": {
     "name": {
-      "hu": "jack_o_lantern",
-      "en": "jack_o_lantern"
+      "hu": "Jack-o'-Lantern",
+      "en": "Jack-o'-Lantern"
     },
     "img": "img/items/jack_o_lantern.png",
     "tier": null
   },
   "jukebox": {
     "name": {
-      "hu": "jukebox",
-      "en": "jukebox"
+      "hu": "Zenebox",
+      "en": "Jukebox"
     },
     "img": "img/items/jukebox.png",
     "tier": null
   },
   "jungle_door": {
     "name": {
-      "hu": "jungle_door",
-      "en": "jungle_door"
+      "hu": "Dzsungel Ajtó",
+      "en": "Jungle Door"
     },
     "img": "img/items/jungle_door.png",
     "tier": null
   },
   "jungle_fence": {
     "name": {
-      "hu": "jungle_fence",
-      "en": "jungle_fence"
+      "hu": "Dzsungel Kerítés",
+      "en": "Jungle Fence"
     },
     "img": "img/items/jungle_fence.png",
     "tier": null
   },
   "jungle_fence_gate": {
     "name": {
-      "hu": "jungle_fence_gate",
-      "en": "jungle_fence_gate"
+      "hu": "Dzsungel Kerítés Kapu",
+      "en": "Jungle Fence Gate"
     },
     "img": "img/items/jungle_fence_gate.png",
     "tier": null
   },
   "jungle_leaves": {
     "name": {
-      "hu": "jungle_leaves",
-      "en": "jungle_leaves"
+      "hu": "Dzsungel Levelek",
+      "en": "Jungle Leaves"
     },
     "img": "img/items/jungle_leaves.png",
     "tier": null
   },
   "jungle_sieve": {
     "name": {
-      "hu": "jungle_sieve",
-      "en": "jungle_sieve"
+      "hu": "Dzsungel Szita",
+      "en": "Jungle Sieve"
     },
     "img": "img/items/jungle_sieve.png",
     "tier": null
   },
   "jungle_wood_crate": {
     "name": {
-      "hu": "jungle_wood_crate",
-      "en": "jungle_wood_crate"
+      "hu": "Dzsungel Fa Láda",
+      "en": "Jungle Wood Crate"
     },
     "img": "img/items/jungle_wood_crate.png",
     "tier": null
   },
   "jungle_wood_slab_single": {
     "name": {
-      "hu": "jungle_wood_slab_single",
-      "en": "jungle_wood_slab_single"
+      "hu": "Dzsungel Fa Félblokk",
+      "en": "Jungle Wood Slab"
     },
     "img": "img/items/jungle_wood_slab_single.png",
     "tier": null
   },
   "jungle_wood_stairs": {
     "name": {
-      "hu": "jungle_wood_stairs",
-      "en": "jungle_wood_stairs"
+      "hu": "Dzsungel Fa Lépcső",
+      "en": "Jungle Wood Stairs"
     },
     "img": "img/items/jungle_wood_stairs.png",
     "tier": null
   },
   "ladder": {
     "name": {
-      "hu": "ladder",
-      "en": "ladder"
+      "hu": "Létra",
+      "en": "Ladder"
     },
     "img": "img/items/ladder.png",
     "tier": null
   },
   "lantern": {
     "name": {
-      "hu": "lantern",
-      "en": "lantern"
+      "hu": "Lámpa",
+      "en": "Lantern"
     },
     "img": "img/blocks/lantern.png",
     "tier": null
   },
   "lapis_block": {
     "name": {
-      "hu": "lapis_block",
-      "en": "lapis_block"
+      "hu": "Lazúrkő Blokk",
+      "en": "Lapis Lazuli Block"
     },
     "img": "img/items/lapis_block.png",
     "tier": null
   },
   "lapis_lazuli": {
     "name": {
-      "hu": "lapis_lazuli",
-      "en": "lapis_lazuli"
+      "hu": "Lazúrkő",
+      "en": "Lapis Lazuli"
     },
     "img": "img/items/lapis_lazuli.png",
     "tier": null
   },
   "large_backpack_upgrade": {
     "name": {
-      "hu": "large_backpack_upgrade",
-      "en": "large_backpack_upgrade"
+      "hu": "Nagy Hátizsák Fejlesztés",
+      "en": "Large Backpack Upgrade"
     },
     "img": "img/items/large_backpack_upgrade.png",
     "tier": null
   },
   "latiao": {
     "name": {
-      "hu": "latiao",
-      "en": "latiao"
+      "hu": "Latiao (Csípős Snack)",
+      "en": "Latiao (Spicy Snack)"
     },
     "img": "img/items/latiao.png",
     "tier": null
   },
   "lead": {
     "name": {
-      "hu": "lead",
-      "en": "lead"
+      "hu": "Póráz",
+      "en": "Lead"
     },
     "img": "img/items/lead.png",
     "tier": null
   },
   "leaf_portal_stone": {
     "name": {
-      "hu": "leaf_portal_stone",
-      "en": "leaf_portal_stone"
+      "hu": "Levél Portálkő",
+      "en": "Leaf Portal Stone"
     },
     "img": "img/items/leaf_portal_stone.png",
     "tier": null
   },
   "leather_boots": {
     "name": {
-      "hu": "leather_boots",
-      "en": "leather_boots"
+      "hu": "Bőr Csizma",
+      "en": "Leather Boots"
     },
     "img": "img/items/leather_boots.png",
     "tier": null
   },
   "leather_cap": {
     "name": {
-      "hu": "leather_cap",
-      "en": "leather_cap"
+      "hu": "Bőr Sapka",
+      "en": "Leather Cap"
     },
     "img": "img/items/leather_cap.png",
     "tier": null
   },
   "leather_pants": {
     "name": {
-      "hu": "leather_pants",
-      "en": "leather_pants"
+      "hu": "Bőr Nadrág",
+      "en": "Leather Pants"
     },
     "img": "img/items/leather_pants.png",
     "tier": null
   },
   "leather_sieve_mesh": {
     "name": {
-      "hu": "leather_sieve_mesh",
-      "en": "leather_sieve_mesh"
+      "hu": "Bőr Szita Háló",
+      "en": "Leather Sieve Mesh"
     },
     "img": "img/items/leather_sieve_mesh.png",
     "tier": null
   },
   "leather_tunic": {
     "name": {
-      "hu": "leather_tunic",
-      "en": "leather_tunic"
+      "hu": "Bőr Mellény",
+      "en": "Leather Tunic"
     },
     "img": "img/items/leather_tunic.png",
     "tier": null
   },
   "lever": {
     "name": {
-      "hu": "lever",
-      "en": "lever"
+      "hu": "Kar",
+      "en": "Lever"
     },
     "img": "img/items/lever.png",
     "tier": null
   },
   "light_blue_bed": {
     "name": {
-      "hu": "light_blue_bed",
-      "en": "light_blue_bed"
+      "hu": "Világoskék Ágy",
+      "en": "Light Blue Bed"
     },
     "img": "img/items/light_blue_bed.png",
     "tier": null
   },
   "light_blue_carpet": {
     "name": {
-      "hu": "light_blue_carpet",
-      "en": "light_blue_carpet"
+      "hu": "Világoskék Szőnyeg",
+      "en": "Light Blue Carpet"
     },
     "img": "img/items/light_blue_carpet.png",
     "tier": null
   },
   "light_blue_dye": {
     "name": {
-      "hu": "light_blue_dye",
-      "en": "light_blue_dye"
+      "hu": "Világoskék Festék",
+      "en": "Light Blue Dye"
     },
     "img": "img/items/light_blue_dye.png",
     "tier": null
   },
   "light_blue_stained_clay_colored": {
     "name": {
-      "hu": "light_blue_stained_clay_colored",
-      "en": "light_blue_stained_clay_colored"
+      "hu": "Világoskék Festett Agyag",
+      "en": "Light Blue Stained Clay"
     },
     "img": "img/items/light_blue_stained_clay_colored.png",
     "tier": null
   },
   "light_blue_wool": {
     "name": {
-      "hu": "light_blue_wool",
-      "en": "light_blue_wool"
+      "hu": "Világoskék Gyapjú",
+      "en": "Light Blue Wool"
     },
     "img": "img/items/light_blue_wool.png",
     "tier": null
   },
   "light_gray_bed": {
     "name": {
-      "hu": "light_gray_bed",
-      "en": "light_gray_bed"
+      "hu": "Világosszürke Ágy",
+      "en": "Light Gray Bed"
     },
     "img": "img/items/light_gray_bed.png",
     "tier": null
   },
   "light_gray_carpet": {
     "name": {
-      "hu": "light_gray_carpet",
-      "en": "light_gray_carpet"
+      "hu": "Világosszürke Szőnyeg",
+      "en": "Light Gray Carpet"
     },
     "img": "img/items/light_gray_carpet.png",
     "tier": null
   },
   "light_gray_dye": {
     "name": {
-      "hu": "light_gray_dye",
-      "en": "light_gray_dye"
+      "hu": "Világosszürke Festék",
+      "en": "Light Gray Dye"
     },
     "img": "img/items/light_gray_dye.png",
     "tier": null
   },
   "light_gray_stained_clay_colored": {
     "name": {
-      "hu": "light_gray_stained_clay_colored",
-      "en": "light_gray_stained_clay_colored"
+      "hu": "Világosszürke Festett Agyag",
+      "en": "Light Gray Stained Clay"
     },
     "img": "img/items/light_gray_stained_clay_colored.png",
     "tier": null
   },
   "light_gray_wool": {
     "name": {
-      "hu": "light_gray_wool",
-      "en": "light_gray_wool"
+      "hu": "Világosszürke Gyapjú",
+      "en": "Light Gray Wool"
     },
     "img": "img/items/light_gray_wool.png",
     "tier": null
   },
   "lily_pad": {
     "name": {
-      "hu": "lily_pad",
-      "en": "lily_pad"
+      "hu": "Vízililiom Levél",
+      "en": "Lily Pad"
     },
     "img": "img/items/lily_pad.png",
     "tier": null
   },
   "lime_bed": {
     "name": {
-      "hu": "lime_bed",
-      "en": "lime_bed"
+      "hu": "Zöldessárga Ágy",
+      "en": "Lime Bed"
     },
     "img": "img/items/lime_bed.png",
     "tier": null
   },
   "lime_carpet": {
     "name": {
-      "hu": "lime_carpet",
-      "en": "lime_carpet"
+      "hu": "Zöldessárga Szőnyeg",
+      "en": "Lime Carpet"
     },
     "img": "img/items/lime_carpet.png",
     "tier": null
   },
   "lime_dye": {
     "name": {
-      "hu": "lime_dye",
-      "en": "lime_dye"
+      "hu": "Zöldessárga Festék",
+      "en": "Lime Dye"
     },
     "img": "img/items/lime_dye.png",
     "tier": null
   },
   "lime_stained_clay_colored": {
     "name": {
-      "hu": "lime_stained_clay_colored",
-      "en": "lime_stained_clay_colored"
+      "hu": "Zöldessárga Festett Agyag",
+      "en": "Lime Stained Clay"
     },
     "img": "img/items/lime_stained_clay_colored.png",
     "tier": null
   },
   "lime_wool": {
     "name": {
-      "hu": "lime_wool",
-      "en": "lime_wool"
+      "hu": "Zöldessárga Gyapjú",
+      "en": "Lime Wool"
     },
     "img": "img/items/lime_wool.png",
     "tier": null
   },
   "log_portal_stone": {
     "name": {
-      "hu": "log_portal_stone",
-      "en": "log_portal_stone"
+      "hu": "Fa Portálkő",
+      "en": "Log Portal Stone"
     },
     "img": "img/items/log_portal_stone.png",
     "tier": null
   },
   "lotus_seed_soup": {
     "name": {
-      "hu": "lotus_seed_soup",
-      "en": "lotus_seed_soup"
+      "hu": "Lótusmag Leves",
+      "en": "Lotus Seed Soup"
     },
     "img": "img/items/lotus_seed_soup.png",
     "tier": null
   },
   "magenta_bed": {
     "name": {
-      "hu": "magenta_bed",
-      "en": "magenta_bed"
+      "hu": "Magenta Ágy",
+      "en": "Magenta Bed"
     },
     "img": "img/items/magenta_bed.png",
     "tier": null
   },
   "magenta_carpet": {
     "name": {
-      "hu": "magenta_carpet",
-      "en": "magenta_carpet"
+      "hu": "Magenta Szőnyeg",
+      "en": "Magenta Carpet"
     },
     "img": "img/items/magenta_carpet.png",
     "tier": null
   },
   "magenta_dye": {
     "name": {
-      "hu": "magenta_dye",
-      "en": "magenta_dye"
+      "hu": "Magenta Festék",
+      "en": "Magenta Dye"
     },
     "img": "img/items/magenta_dye.png",
     "tier": null
   },
   "magenta_stained_clay_colored": {
     "name": {
-      "hu": "magenta_stained_clay_colored",
-      "en": "magenta_stained_clay_colored"
+      "hu": "Magenta Festett Agyag",
+      "en": "Magenta Stained Clay"
     },
     "img": "img/items/magenta_stained_clay_colored.png",
     "tier": null
   },
   "magenta_wool": {
     "name": {
-      "hu": "magenta_wool",
-      "en": "magenta_wool"
+      "hu": "Magenta Gyapjú",
+      "en": "Magenta Wool"
     },
     "img": "img/items/magenta_wool.png",
     "tier": null
   },
   "magma_block": {
     "name": {
-      "hu": "magma_block",
-      "en": "magma_block"
+      "hu": "Magma Blokk",
+      "en": "Magma Block"
     },
     "img": "img/items/magma_block.png",
     "tier": null
@@ -4999,24 +4999,24 @@
   },
   "map": {
     "name": {
-      "hu": "map",
-      "en": "map"
+      "hu": "Térkép",
+      "en": "Map"
     },
     "img": "img/items/map.png",
     "tier": null
   },
   "mashed_potato": {
     "name": {
-      "hu": "mashed_potato",
-      "en": "mashed_potato"
+      "hu": "Krumplipüré",
+      "en": "Mashed Potato"
     },
     "img": "img/items/mashed_potato.png",
     "tier": null
   },
   "melon_seeds": {
     "name": {
-      "hu": "melon_seeds",
-      "en": "melon_seeds"
+      "hu": "Görögdinnye Mag",
+      "en": "Melon Seeds"
     },
     "img": "img/items/melon_seeds.png",
     "tier": null
@@ -5031,312 +5031,312 @@
   },
   "mercury_ingot": {
     "name": {
-      "hu": "mercury_ingot",
-      "en": "mercury_ingot"
+      "hu": "Higany Rúd",
+      "en": "Mercury Ingot"
     },
     "img": "img/items/mercury_ingot.png",
     "tier": null
   },
   "mercury_nugget": {
     "name": {
-      "hu": "mercury_nugget",
-      "en": "mercury_nugget"
+      "hu": "Higany Ércdarab",
+      "en": "Mercury Nugget"
     },
     "img": "img/items/mercury_nugget.png",
     "tier": null
   },
   "mercury_ore": {
     "name": {
-      "hu": "mercury_ore",
-      "en": "mercury_ore"
+      "hu": "Higany Érc",
+      "en": "Mercury Ore"
     },
     "img": "img/items/mercury_ore.png",
     "tier": null
   },
   "minecart": {
     "name": {
-      "hu": "minecart",
-      "en": "minecart"
+      "hu": "Minecart",
+      "en": "Minecart"
     },
     "img": "img/items/minecart.png",
     "tier": null
   },
   "minecart_with_chest": {
     "name": {
-      "hu": "minecart_with_chest",
-      "en": "minecart_with_chest"
+      "hu": "Minecart Ládával",
+      "en": "Minecart with Chest"
     },
     "img": "img/items/minecart_with_chest.png",
     "tier": null
   },
   "minecart_with_furnace": {
     "name": {
-      "hu": "minecart_with_furnace",
-      "en": "minecart_with_furnace"
+      "hu": "Minecart Kemencével",
+      "en": "Minecart with Furnace"
     },
     "img": "img/items/minecart_with_furnace.png",
     "tier": null
   },
   "minecart_with_hopper": {
     "name": {
-      "hu": "minecart_with_hopper",
-      "en": "minecart_with_hopper"
+      "hu": "Minecart Tölcsérrel",
+      "en": "Minecart with Hopper"
     },
     "img": "img/items/minecart_with_hopper.png",
     "tier": null
   },
   "minecart_with_tnt": {
     "name": {
-      "hu": "minecart_with_tnt",
-      "en": "minecart_with_tnt"
+      "hu": "Minecart TNT-vel",
+      "en": "Minecart with TNT"
     },
     "img": "img/items/minecart_with_tnt.png",
     "tier": null
   },
   "miner_s_helmet": {
     "name": {
-      "hu": "miner_s_helmet",
-      "en": "miner_s_helmet"
+      "hu": "Bányász Sisak",
+      "en": "Miner's Helmet"
     },
     "img": "img/items/miner_s_helmet.png",
     "tier": null
   },
   "miner_s_helmet_knowledge_book": {
     "name": {
-      "hu": "miner_s_helmet_knowledge_book",
-      "en": "miner_s_helmet_knowledge_book"
+      "hu": "Bányász Sisak Tudáskönyv",
+      "en": "Miner's Helmet Knowledge Book"
     },
     "img": "img/items/miner_s_helmet_knowledge_book.png",
     "tier": null
   },
   "mint_leaf": {
     "name": {
-      "hu": "mint_leaf",
-      "en": "mint_leaf"
+      "hu": "Borsmenta Levél",
+      "en": "Mint Leaf"
     },
     "img": "img/items/mint_leaf.png",
     "tier": null
   },
   "mint_salad": {
     "name": {
-      "hu": "mint_salad",
-      "en": "mint_salad"
+      "hu": "Borsmenta Saláta",
+      "en": "Mint Salad"
     },
     "img": "img/items/mint_salad.png",
     "tier": null
   },
   "mithril_anvil": {
     "name": {
-      "hu": "mithril_anvil",
-      "en": "mithril_anvil"
+      "hu": "Mithril Üllő",
+      "en": "Mithril Anvil"
     },
     "img": "img/items/mithril_anvil.png",
     "tier": null
   },
   "mithril_block": {
     "name": {
-      "hu": "mithril_block",
-      "en": "mithril_block"
+      "hu": "Mithril Blokk",
+      "en": "Mithril Block"
     },
     "img": "img/blocks/mithril_block.png",
     "tier": null
   },
   "mithril_bow": {
     "name": {
-      "hu": "mithril_bow",
-      "en": "mithril_bow"
+      "hu": "Mithril Íj",
+      "en": "Mithril Bow"
     },
     "img": "img/items/mithril_bow.png",
     "tier": null
   },
   "mithril_bucket": {
     "name": {
-      "hu": "mithril_bucket",
-      "en": "mithril_bucket"
+      "hu": "Mithril Vödör",
+      "en": "Mithril Bucket"
     },
     "img": "img/items/mithril_bucket.png",
     "tier": null
   },
   "mithril_bucket_filled_with_milk": {
     "name": {
-      "hu": "mithril_bucket_filled_with_milk",
-      "en": "mithril_bucket_filled_with_milk"
+      "hu": "Mithril Tejes Vödör",
+      "en": "Mithril Bucket of Milk"
     },
     "img": "img/items/mithril_bucket_filled_with_milk.png",
     "tier": null
   },
   "mithril_bucket_filled_with_stone": {
     "name": {
-      "hu": "mithril_bucket_filled_with_stone",
-      "en": "mithril_bucket_filled_with_stone"
+      "hu": "Mithril Kőzetes Vödör",
+      "en": "Mithril Bucket of Stone"
     },
     "img": "img/items/mithril_bucket_filled_with_stone.png",
     "tier": null
   },
   "mithril_bucket_filled_with_water": {
     "name": {
-      "hu": "mithril_bucket_filled_with_water",
-      "en": "mithril_bucket_filled_with_water"
+      "hu": "Mithril Vizes Vödör",
+      "en": "Mithril Bucket of Water"
     },
     "img": "img/items/mithril_bucket_filled_with_water.png",
     "tier": null
   },
   "mithril_chain_boots": {
     "name": {
-      "hu": "mithril_chain_boots",
-      "en": "mithril_chain_boots"
+      "hu": "Mithril Lánc Csizma",
+      "en": "Mithril Chain Boots"
     },
     "img": "img/armor/mithril_chainmail_boots.png",
     "tier": null
   },
   "mithril_chain_chestplate": {
     "name": {
-      "hu": "mithril_chain_chestplate",
-      "en": "mithril_chain_chestplate"
+      "hu": "Mithril Lánc Mellvért",
+      "en": "Mithril Chain Chestplate"
     },
     "img": "img/armor/mithril_chainmail_chestplate.png",
     "tier": null
   },
   "mithril_chain_helmet": {
     "name": {
-      "hu": "mithril_chain_helmet",
-      "en": "mithril_chain_helmet"
+      "hu": "Mithril Lánc Sisak",
+      "en": "Mithril Chain Helmet"
     },
     "img": "img/armor/mithril_chainmail_helmet.png",
     "tier": null
   },
   "mithril_chain_leggings": {
     "name": {
-      "hu": "mithril_chain_leggings",
-      "en": "mithril_chain_leggings"
+      "hu": "Mithril Lánc Lábvért",
+      "en": "Mithril Chain Leggings"
     },
     "img": "img/armor/mithril_chainmail_leggings.png",
     "tier": null
   },
   "mithril_coin": {
     "name": {
-      "hu": "mithril_coin",
-      "en": "mithril_coin"
+      "hu": "Mithril Érme",
+      "en": "Mithril Coin"
     },
     "img": "img/items/mithril_coin.png",
     "tier": null
   },
   "mithril_door": {
     "name": {
-      "hu": "mithril_door",
-      "en": "mithril_door"
+      "hu": "Mithril Ajtó",
+      "en": "Mithril Door"
     },
     "img": "img/items/mithril_door.png",
     "tier": null
   },
   "mithril_fence": {
     "name": {
-      "hu": "mithril_fence",
-      "en": "mithril_fence"
+      "hu": "Mithril Kerítés",
+      "en": "Mithril Fence"
     },
     "img": "img/items/mithril_fence.png",
     "tier": null
   },
   "mithril_flint_and_steel": {
     "name": {
-      "hu": "mithril_flint_and_steel",
-      "en": "mithril_flint_and_steel"
+      "hu": "Mithril Tűzkő és Acél",
+      "en": "Mithril Flint and Steel"
     },
     "img": "img/items/mithril_flint_and_steel.png",
     "tier": null
   },
   "mithril_fluid_tank": {
     "name": {
-      "hu": "mithril_fluid_tank",
-      "en": "mithril_fluid_tank"
+      "hu": "Mithril Folyadék Tank",
+      "en": "Mithril Fluid Tank"
     },
     "img": "img/items/mithril_fluid_tank.png",
     "tier": null
   },
   "mithril_hand_axe": {
     "name": {
-      "hu": "mithril_hand_axe",
-      "en": "mithril_hand_axe"
+      "hu": "Mithril Kézifejsze",
+      "en": "Mithril Hand Axe"
     },
     "img": "img/items/mithril_hand_axe.png",
     "tier": null
   },
   "mithril_ore": {
     "name": {
-      "hu": "mithril_ore",
-      "en": "mithril_ore"
+      "hu": "Mithril Érc",
+      "en": "Mithril Ore"
     },
     "img": "img/blocks/mithril_ore.png",
     "tier": null
   },
   "mithril_shield": {
     "name": {
-      "hu": "mithril_shield",
-      "en": "mithril_shield"
+      "hu": "Mithril Pajzs",
+      "en": "Mithril Shield"
     },
     "img": "img/items/mithril_shield.png",
     "tier": null
   },
   "mithril_short_sword": {
     "name": {
-      "hu": "mithril_short_sword",
-      "en": "mithril_short_sword"
+      "hu": "Mithril Rövid Kard",
+      "en": "Mithril Short Sword"
     },
     "img": "img/items/mithril_sword.png",
     "tier": null
   },
   "mithril_shovel": {
     "name": {
-      "hu": "mithril_shovel",
-      "en": "mithril_shovel"
+      "hu": "Mithril Ásó",
+      "en": "Mithril Shovel"
     },
     "img": "img/items/mithril_shovel.png",
     "tier": null
   },
   "mossy_cobblestone": {
     "name": {
-      "hu": "mossy_cobblestone",
-      "en": "mossy_cobblestone"
+      "hu": "Mohás Kőlap",
+      "en": "Mossy Cobblestone"
     },
     "img": "img/items/mossy_cobblestone.png",
     "tier": null
   },
   "mossy_cobblestone_portal_stone": {
     "name": {
-      "hu": "mossy_cobblestone_portal_stone",
-      "en": "mossy_cobblestone_portal_stone"
+      "hu": "Mohás Kőlap Portálkő",
+      "en": "Mossy Cobblestone Portal Stone"
     },
     "img": "img/items/mossy_cobblestone_portal_stone.png",
     "tier": null
   },
   "mossy_cobblestone_wall": {
     "name": {
-      "hu": "mossy_cobblestone_wall",
-      "en": "mossy_cobblestone_wall"
+      "hu": "Mohás Kőlap Fal",
+      "en": "Mossy Cobblestone Wall"
     },
     "img": "img/items/mossy_cobblestone_wall.png",
     "tier": null
   },
   "mushroom_brown": {
     "name": {
-      "hu": "mushroom_brown",
-      "en": "mushroom_brown"
+      "hu": "Barna Gomba",
+      "en": "Brown Mushroom"
     },
     "img": "img/items/mushroom_brown.png",
     "tier": null
   },
   "mushroom_red": {
     "name": {
-      "hu": "mushroom_red",
-      "en": "mushroom_red"
+      "hu": "Piros Gomba",
+      "en": "Red Mushroom"
     },
     "img": "img/items/mushroom_red.png",
     "tier": null
   },
   "mushroom_stew": {
     "name": {
-      "hu": "mushroom_stew",
-      "en": "mushroom_stew"
+      "hu": "Gombás Ragu",
+      "en": "Mushroom Stew"
     },
     "img": "img/items/mushroom_stew.png",
     "tier": null
@@ -5351,40 +5351,40 @@
   },
   "nether_brick_fence": {
     "name": {
-      "hu": "nether_brick_fence",
-      "en": "nether_brick_fence"
+      "hu": "Nether Tégla Kerítés",
+      "en": "Nether Brick Fence"
     },
     "img": "img/items/nether_brick_fence.png",
     "tier": null
   },
   "nether_brick_slab_single": {
     "name": {
-      "hu": "nether_brick_slab_single",
-      "en": "nether_brick_slab_single"
+      "hu": "Nether Tégla Félblokk",
+      "en": "Nether Brick Slab"
     },
     "img": "img/items/nether_brick_slab_single.png",
     "tier": null
   },
   "nether_brick_stairs": {
     "name": {
-      "hu": "nether_brick_stairs",
-      "en": "nether_brick_stairs"
+      "hu": "Nether Tégla Lépcső",
+      "en": "Nether Brick Stairs"
     },
     "img": "img/items/nether_brick_stairs.png",
     "tier": null
   },
   "nether_furnace_core": {
     "name": {
-      "hu": "nether_furnace_core",
-      "en": "nether_furnace_core"
+      "hu": "Pokoli Kő Kemence Mag",
+      "en": "Netherrack Furnace Core"
     },
     "img": "img/items/nether_furnace_core.png",
     "tier": null
   },
   "nether_quartz": {
     "name": {
-      "hu": "nether_quartz",
-      "en": "nether_quartz"
+      "hu": "Nether Kvarc",
+      "en": "Nether Quartz"
     },
     "img": "img/items/nether_quartz.png",
     "tier": null
@@ -5399,312 +5399,312 @@
   },
   "netherrack_furnace_idle": {
     "name": {
-      "hu": "netherrack_furnace_idle",
-      "en": "netherrack_furnace_idle"
+      "hu": "Pokoli Kő Kemence",
+      "en": "Netherrack Furnace"
     },
     "img": "img/items/netherrack_furnace_idle.png",
     "tier": null
   },
   "note_block": {
     "name": {
-      "hu": "note_block",
-      "en": "note_block"
+      "hu": "Zenélő Blokk",
+      "en": "Note Block"
     },
     "img": "img/items/note_block.png",
     "tier": null
   },
   "oak_leaves": {
     "name": {
-      "hu": "oak_leaves",
-      "en": "oak_leaves"
+      "hu": "Tölgy Levelek",
+      "en": "Oak Leaves"
     },
     "img": "img/items/oak_leaves.png",
     "tier": null
   },
   "oak_sieve": {
     "name": {
-      "hu": "oak_sieve",
-      "en": "oak_sieve"
+      "hu": "Tölgy Szita",
+      "en": "Oak Sieve"
     },
     "img": "img/items/oak_sieve.png",
     "tier": null
   },
   "oak_wood_crate": {
     "name": {
-      "hu": "oak_wood_crate",
-      "en": "oak_wood_crate"
+      "hu": "Tölgy Fa Láda",
+      "en": "Oak Wood Crate"
     },
     "img": "img/items/oak_wood_crate.png",
     "tier": null
   },
   "oak_wood_slab_single": {
     "name": {
-      "hu": "oak_wood_slab_single",
-      "en": "oak_wood_slab_single"
+      "hu": "Tölgy Fa Félblokk",
+      "en": "Oak Wood Slab"
     },
     "img": "img/items/oak_wood_slab_single.png",
     "tier": null
   },
   "oak_wood_stairs": {
     "name": {
-      "hu": "oak_wood_stairs",
-      "en": "oak_wood_stairs"
+      "hu": "Tölgy Fa Lépcső",
+      "en": "Oak Wood Stairs"
     },
     "img": "img/items/oak_wood_stairs.png",
     "tier": null
   },
   "oatmeal_porridge": {
     "name": {
-      "hu": "oatmeal_porridge",
-      "en": "oatmeal_porridge"
+      "hu": "Zabkása",
+      "en": "Oatmeal Porridge"
     },
     "img": "img/items/oatmeal_porridge.png",
     "tier": null
   },
   "obsidian_axe": {
     "name": {
-      "hu": "obsidian_axe",
-      "en": "obsidian_axe"
+      "hu": "Obszidián Fejsze",
+      "en": "Obsidian Axe"
     },
     "img": "img/items/obsidian_axe.png",
     "tier": null
   },
   "obsidian_furnace_core": {
     "name": {
-      "hu": "obsidian_furnace_core",
-      "en": "obsidian_furnace_core"
+      "hu": "Obszidián Kemence Mag",
+      "en": "Obsidian Furnace Core"
     },
     "img": "img/items/obsidian_furnace_core.png",
     "tier": null
   },
   "obsidian_furnace_idle": {
     "name": {
-      "hu": "obsidian_furnace_idle",
-      "en": "obsidian_furnace_idle"
+      "hu": "Obszidián Kemence",
+      "en": "Obsidian Furnace"
     },
     "img": "img/items/obsidian_furnace_idle.png",
     "tier": null
   },
   "obsidian_hatchet": {
     "name": {
-      "hu": "obsidian_hatchet",
-      "en": "obsidian_hatchet"
+      "hu": "Obszidián Balta",
+      "en": "Obsidian Hatchet"
     },
     "img": "img/items/obsidian_hatchet.png",
     "tier": null
   },
   "obsidian_ingot_mold_cooling": {
     "name": {
-      "hu": "obsidian_ingot_mold_cooling",
-      "en": "obsidian_ingot_mold_cooling"
+      "hu": "Obszidián Öntőforma (Hűlő)",
+      "en": "Obsidian Ingot Mold (Cooling)"
     },
     "img": "img/items/obsidian_ingot_mold_cooling.png",
     "tier": null
   },
   "obsidian_shovel": {
     "name": {
-      "hu": "obsidian_shovel",
-      "en": "obsidian_shovel"
+      "hu": "Obszidián Ásó",
+      "en": "Obsidian Shovel"
     },
     "img": "img/items/obsidian_shovel.png",
     "tier": null
   },
   "obsidian_slab_single": {
     "name": {
-      "hu": "obsidian_slab_single",
-      "en": "obsidian_slab_single"
+      "hu": "Obszidián Félblokk",
+      "en": "Obsidian Slab"
     },
     "img": "img/items/obsidian_slab_single.png",
     "tier": null
   },
   "obsidian_stairs": {
     "name": {
-      "hu": "obsidian_stairs",
-      "en": "obsidian_stairs"
+      "hu": "Obszidián Lépcső",
+      "en": "Obsidian Stairs"
     },
     "img": "img/items/obsidian_stairs.png",
     "tier": null
   },
   "obsidian_tool_bench": {
     "name": {
-      "hu": "obsidian_tool_bench",
-      "en": "obsidian_tool_bench"
+      "hu": "Obszidián Szerszámpad",
+      "en": "Obsidian Tool Bench"
     },
     "img": "img/items/obsidian_tool_bench.png",
     "tier": null
   },
   "onion": {
     "name": {
-      "hu": "onion",
-      "en": "onion"
+      "hu": "Hagyma",
+      "en": "Onion"
     },
     "img": "img/food/onion.png",
     "tier": null
   },
   "onion_allium": {
     "name": {
-      "hu": "onion_allium",
-      "en": "onion_allium"
+      "hu": "Hagymás Virág (Allium)",
+      "en": "Allium"
     },
     "img": "img/items/onion_allium.png",
     "tier": null
   },
   "orange": {
     "name": {
-      "hu": "orange",
-      "en": "orange"
+      "hu": "Narancs",
+      "en": "Orange"
     },
     "img": "img/food/orange.png",
     "tier": null
   },
   "orange_bed": {
     "name": {
-      "hu": "orange_bed",
-      "en": "orange_bed"
+      "hu": "Narancs Ágy",
+      "en": "Orange Bed"
     },
     "img": "img/items/orange_bed.png",
     "tier": null
   },
   "orange_carpet": {
     "name": {
-      "hu": "orange_carpet",
-      "en": "orange_carpet"
+      "hu": "Narancs Szőnyeg",
+      "en": "Orange Carpet"
     },
     "img": "img/items/orange_carpet.png",
     "tier": null
   },
   "orange_dye": {
     "name": {
-      "hu": "orange_dye",
-      "en": "orange_dye"
+      "hu": "Narancs Festék",
+      "en": "Orange Dye"
     },
     "img": "img/items/orange_dye.png",
     "tier": null
   },
   "orange_stained_clay_colored": {
     "name": {
-      "hu": "orange_stained_clay_colored",
-      "en": "orange_stained_clay_colored"
+      "hu": "Narancs Festett Agyag",
+      "en": "Orange Stained Clay"
     },
     "img": "img/items/orange_stained_clay_colored.png",
     "tier": null
   },
   "orange_wool": {
     "name": {
-      "hu": "orange_wool",
-      "en": "orange_wool"
+      "hu": "Narancs Gyapjú",
+      "en": "Orange Wool"
     },
     "img": "img/items/orange_wool.png",
     "tier": null
   },
   "orchid": {
     "name": {
-      "hu": "orchid",
-      "en": "orchid"
+      "hu": "Orchidea",
+      "en": "Orchid"
     },
     "img": "img/items/orchid.png",
     "tier": null
   },
   "painting": {
     "name": {
-      "hu": "painting",
-      "en": "painting"
+      "hu": "Festmény",
+      "en": "Painting"
     },
     "img": "img/items/painting.png",
     "tier": null
   },
   "pink_bed": {
     "name": {
-      "hu": "pink_bed",
-      "en": "pink_bed"
+      "hu": "Rózsaszín Ágy",
+      "en": "Pink Bed"
     },
     "img": "img/items/pink_bed.png",
     "tier": null
   },
   "pink_carpet": {
     "name": {
-      "hu": "pink_carpet",
-      "en": "pink_carpet"
+      "hu": "Rózsaszín Szőnyeg",
+      "en": "Pink Carpet"
     },
     "img": "img/items/pink_carpet.png",
     "tier": null
   },
   "pink_dye": {
     "name": {
-      "hu": "pink_dye",
-      "en": "pink_dye"
+      "hu": "Rózsaszín Festék",
+      "en": "Pink Dye"
     },
     "img": "img/items/pink_dye.png",
     "tier": null
   },
   "pink_stained_clay_colored": {
     "name": {
-      "hu": "pink_stained_clay_colored",
-      "en": "pink_stained_clay_colored"
+      "hu": "Rózsaszín Festett Agyag",
+      "en": "Pink Stained Clay"
     },
     "img": "img/items/pink_stained_clay_colored.png",
     "tier": null
   },
   "pink_wool": {
     "name": {
-      "hu": "pink_wool",
-      "en": "pink_wool"
+      "hu": "Rózsaszín Gyapjú",
+      "en": "Pink Wool"
     },
     "img": "img/items/pink_wool.png",
     "tier": null
   },
   "piston": {
     "name": {
-      "hu": "piston",
-      "en": "piston"
+      "hu": "Dugattyú",
+      "en": "Piston"
     },
     "img": "img/items/piston.png",
     "tier": null
   },
   "pitaya_leaves": {
     "name": {
-      "hu": "pitaya_leaves",
-      "en": "pitaya_leaves"
+      "hu": "Pitahaya Levelek",
+      "en": "Pitaya Leaves"
     },
     "img": "img/items/pitaya_leaves.png",
     "tier": null
   },
   "polished_andesite": {
     "name": {
-      "hu": "polished_andesite",
-      "en": "polished_andesite"
+      "hu": "Csiszolt Andezit",
+      "en": "Polished Andesite"
     },
     "img": "img/items/polished_andesite.png",
     "tier": null
   },
   "polished_diorite": {
     "name": {
-      "hu": "polished_diorite",
-      "en": "polished_diorite"
+      "hu": "Csiszolt Diorit",
+      "en": "Polished Diorite"
     },
     "img": "img/items/polished_diorite.png",
     "tier": null
   },
   "polished_granite": {
     "name": {
-      "hu": "polished_granite",
-      "en": "polished_granite"
+      "hu": "Csiszolt Gránit",
+      "en": "Polished Granite"
     },
     "img": "img/items/polished_granite.png",
     "tier": null
   },
   "potato": {
     "name": {
-      "hu": "potato",
-      "en": "potato"
+      "hu": "Krumpli",
+      "en": "Potato"
     },
     "img": "img/items/potato.png",
     "tier": null
   },
   "potion_of_g_2_moisture": {
     "name": {
-      "hu": "potion_of_g_2_moisture",
-      "en": "potion_of_g_2_moisture"
+      "hu": "Nedvesség Bájital II",
+      "en": "Potion of Moisture II"
     },
     "img": "img/items/potion_of_g_2_moisture.png",
     "tier": null
@@ -5719,144 +5719,144 @@
   },
   "pressure_plate_stone": {
     "name": {
-      "hu": "pressure_plate_stone",
-      "en": "pressure_plate_stone"
+      "hu": "Kő Nyomólemez",
+      "en": "Stone Pressure Plate"
     },
     "img": "img/items/pressure_plate_stone.png",
     "tier": null
   },
   "pressure_plate_wood": {
     "name": {
-      "hu": "pressure_plate_wood",
-      "en": "pressure_plate_wood"
+      "hu": "Fa Nyomólemez",
+      "en": "Wood Pressure Plate"
     },
     "img": "img/items/pressure_plate_wood.png",
     "tier": null
   },
   "pumpkin": {
     "name": {
-      "hu": "pumpkin",
-      "en": "pumpkin"
+      "hu": "Tök",
+      "en": "Pumpkin"
     },
     "img": "img/items/pumpkin.png",
     "tier": null
   },
   "pumpkin_pie": {
     "name": {
-      "hu": "pumpkin_pie",
-      "en": "pumpkin_pie"
+      "hu": "Tökpite",
+      "en": "Pumpkin Pie"
     },
     "img": "img/items/pumpkin_pie.png",
     "tier": null
   },
   "pumpkin_seeds": {
     "name": {
-      "hu": "pumpkin_seeds",
-      "en": "pumpkin_seeds"
+      "hu": "Tök Mag",
+      "en": "Pumpkin Seeds"
     },
     "img": "img/items/pumpkin_seeds.png",
     "tier": null
   },
   "pumpkin_soup": {
     "name": {
-      "hu": "pumpkin_soup",
-      "en": "pumpkin_soup"
+      "hu": "Tökleves",
+      "en": "Pumpkin Soup"
     },
     "img": "img/items/pumpkin_soup.png",
     "tier": null
   },
   "purple_bed": {
     "name": {
-      "hu": "purple_bed",
-      "en": "purple_bed"
+      "hu": "Lila Ágy",
+      "en": "Purple Bed"
     },
     "img": "img/items/purple_bed.png",
     "tier": null
   },
   "purple_carpet": {
     "name": {
-      "hu": "purple_carpet",
-      "en": "purple_carpet"
+      "hu": "Lila Szőnyeg",
+      "en": "Purple Carpet"
     },
     "img": "img/items/purple_carpet.png",
     "tier": null
   },
   "purple_dye": {
     "name": {
-      "hu": "purple_dye",
-      "en": "purple_dye"
+      "hu": "Lila Festék",
+      "en": "Purple Dye"
     },
     "img": "img/items/purple_dye.png",
     "tier": null
   },
   "purple_stained_clay_colored": {
     "name": {
-      "hu": "purple_stained_clay_colored",
-      "en": "purple_stained_clay_colored"
+      "hu": "Lila Festett Agyag",
+      "en": "Purple Stained Clay"
     },
     "img": "img/items/purple_stained_clay_colored.png",
     "tier": null
   },
   "purple_wool": {
     "name": {
-      "hu": "purple_wool",
-      "en": "purple_wool"
+      "hu": "Lila Gyapjú",
+      "en": "Purple Wool"
     },
     "img": "img/items/purple_wool.png",
     "tier": null
   },
   "quartz": {
     "name": {
-      "hu": "quartz",
-      "en": "quartz"
+      "hu": "Kvarc",
+      "en": "Quartz"
     },
     "img": "img/shards/quartz.png",
     "tier": null
   },
   "quartz_block": {
     "name": {
-      "hu": "quartz_block",
-      "en": "quartz_block"
+      "hu": "Kvarc Blokk",
+      "en": "Quartz Block"
     },
     "img": "img/items/quartz_block.png",
     "tier": null
   },
   "quartz_pillar": {
     "name": {
-      "hu": "quartz_pillar",
-      "en": "quartz_pillar"
+      "hu": "Kvarc Pillér",
+      "en": "Quartz Pillar"
     },
     "img": "img/items/quartz_pillar.png",
     "tier": null
   },
   "quartz_shard": {
     "name": {
-      "hu": "quartz_shard",
-      "en": "quartz_shard"
+      "hu": "Kvarc Szilánk",
+      "en": "Quartz Shard"
     },
     "img": "img/items/quartz_shard.png",
     "tier": null
   },
   "quartz_slab_single": {
     "name": {
-      "hu": "quartz_slab_single",
-      "en": "quartz_slab_single"
+      "hu": "Kvarc Félblokk",
+      "en": "Quartz Slab"
     },
     "img": "img/items/quartz_slab_single.png",
     "tier": null
   },
   "quartz_stairs": {
     "name": {
-      "hu": "quartz_stairs",
-      "en": "quartz_stairs"
+      "hu": "Kvarc Lépcső",
+      "en": "Quartz Stairs"
     },
     "img": "img/items/quartz_stairs.png",
     "tier": null
   },
   "quiver": {
     "name": {
-      "hu": "quiver",
-      "en": "quiver"
+      "hu": "Nyíltegez",
+      "en": "Quiver"
     },
     "img": "img/items/quiver.png",
     "tier": null
@@ -5871,8 +5871,8 @@
   },
   "rain_hat": {
     "name": {
-      "hu": "rain_hat",
-      "en": "rain_hat"
+      "hu": "Eső Kalap",
+      "en": "Rain Hat"
     },
     "img": "img/items/rain_hat.png",
     "tier": null
@@ -5887,224 +5887,224 @@
   },
   "raw_fish_large": {
     "name": {
-      "hu": "raw_fish_large",
-      "en": "raw_fish_large"
+      "hu": "Nagy Nyers Hal",
+      "en": "Large Raw Fish"
     },
     "img": "img/items/raw_fish_large.png",
     "tier": null
   },
   "recall_scroll": {
     "name": {
-      "hu": "recall_scroll",
-      "en": "recall_scroll"
+      "hu": "Visszahívó Tekercs",
+      "en": "Recall Scroll"
     },
     "img": "img/items/recall_scroll.png",
     "tier": null
   },
   "red_bed": {
     "name": {
-      "hu": "red_bed",
-      "en": "red_bed"
+      "hu": "Piros Ágy",
+      "en": "Red Bed"
     },
     "img": "img/items/red_bed.png",
     "tier": null
   },
   "red_carpet": {
     "name": {
-      "hu": "red_carpet",
-      "en": "red_carpet"
+      "hu": "Piros Szőnyeg",
+      "en": "Red Carpet"
     },
     "img": "img/items/red_carpet.png",
     "tier": null
   },
   "red_slime_ball": {
     "name": {
-      "hu": "red_slime_ball",
-      "en": "red_slime_ball"
+      "hu": "Piros Nyálkagömb",
+      "en": "Red Slime Ball"
     },
     "img": "img/items/red_slime_ball.png",
     "tier": null
   },
   "red_stained_clay_colored": {
     "name": {
-      "hu": "red_stained_clay_colored",
-      "en": "red_stained_clay_colored"
+      "hu": "Piros Festett Agyag",
+      "en": "Red Stained Clay"
     },
     "img": "img/items/red_stained_clay_colored.png",
     "tier": null
   },
   "red_wool": {
     "name": {
-      "hu": "red_wool",
-      "en": "red_wool"
+      "hu": "Piros Gyapjú",
+      "en": "Red Wool"
     },
     "img": "img/items/red_wool.png",
     "tier": null
   },
   "redstone_comparator": {
     "name": {
-      "hu": "redstone_comparator",
-      "en": "redstone_comparator"
+      "hu": "Redstone Komparátor",
+      "en": "Redstone Comparator"
     },
     "img": "img/items/redstone_comparator.png",
     "tier": null
   },
   "redstone_lamp_unlit": {
     "name": {
-      "hu": "redstone_lamp_unlit",
-      "en": "redstone_lamp_unlit"
+      "hu": "Redstone Lámpa (Kialvadt)",
+      "en": "Redstone Lamp (Unlit)"
     },
     "img": "img/items/redstone_lamp_unlit.png",
     "tier": null
   },
   "redstone_repeater": {
     "name": {
-      "hu": "redstone_repeater",
-      "en": "redstone_repeater"
+      "hu": "Redstone Ismétlő",
+      "en": "Redstone Repeater"
     },
     "img": "img/items/redstone_repeater.png",
     "tier": null
   },
   "redstone_torch_lit": {
     "name": {
-      "hu": "redstone_torch_lit",
-      "en": "redstone_torch_lit"
+      "hu": "Redstone Fáklya",
+      "en": "Redstone Torch"
     },
     "img": "img/items/redstone_torch_lit.png",
     "tier": null
   },
   "reinforced_eye_of_ender": {
     "name": {
-      "hu": "reinforced_eye_of_ender",
-      "en": "reinforced_eye_of_ender"
+      "hu": "Erősített Ender Szem",
+      "en": "Reinforced Eye of Ender"
     },
     "img": "img/items/reinforced_eye_of_ender.png",
     "tier": null
   },
   "reinforced_eye_of_ender_knowledge_book": {
     "name": {
-      "hu": "reinforced_eye_of_ender_knowledge_book",
-      "en": "reinforced_eye_of_ender_knowledge_book"
+      "hu": "Erősített Ender Szem Tudáskönyv",
+      "en": "Reinforced Eye of Ender Knowledge Book"
     },
     "img": "img/items/reinforced_eye_of_ender_knowledge_book.png",
     "tier": null
   },
   "rose": {
     "name": {
-      "hu": "rose",
-      "en": "rose"
+      "hu": "Rózsa",
+      "en": "Rose"
     },
     "img": "img/items/rose.png",
     "tier": null
   },
   "rose_red": {
     "name": {
-      "hu": "rose_red",
-      "en": "rose_red"
+      "hu": "Rózsapiros Festék",
+      "en": "Rose Red Dye"
     },
     "img": "img/items/rose_red.png",
     "tier": null
   },
   "rotten_flesh": {
     "name": {
-      "hu": "rotten_flesh",
-      "en": "rotten_flesh"
+      "hu": "Rothadt Hús",
+      "en": "Rotten Flesh"
     },
     "img": "img/items/rotten_flesh.png",
     "tier": null
   },
   "runestone_nul_adamantium": {
     "name": {
-      "hu": "runestone_nul_adamantium",
-      "en": "runestone_nul_adamantium"
+      "hu": "Adamantium Null Rúnakő",
+      "en": "Adamantium Null Runestone"
     },
     "img": "img/items/runestone_nul_adamantium.png",
     "tier": null
   },
   "runestone_nul_mithril": {
     "name": {
-      "hu": "runestone_nul_mithril",
-      "en": "runestone_nul_mithril"
+      "hu": "Mithril Null Rúnakő",
+      "en": "Mithril Null Runestone"
     },
     "img": "img/items/runestone_nul_mithril.png",
     "tier": null
   },
   "rusted_iron_chain": {
     "name": {
-      "hu": "rusted_iron_chain",
-      "en": "rusted_iron_chain"
+      "hu": "Rozsdás Vas Lánc",
+      "en": "Rusted Iron Chain"
     },
     "img": "img/items/rusted_iron_chain.png",
     "tier": null
   },
   "rusted_iron_chain_boots": {
     "name": {
-      "hu": "rusted_iron_chain_boots",
-      "en": "rusted_iron_chain_boots"
+      "hu": "Rozsdás Vas Lánc Csizma",
+      "en": "Rusted Iron Chain Boots"
     },
     "img": "img/armor/rusted_iron_chainmail_boots.png",
     "tier": null
   },
   "rusted_iron_chain_chestplate": {
     "name": {
-      "hu": "rusted_iron_chain_chestplate",
-      "en": "rusted_iron_chain_chestplate"
+      "hu": "Rozsdás Vas Lánc Mellvért",
+      "en": "Rusted Iron Chain Chestplate"
     },
     "img": "img/armor/rusted_iron_chainmail_chestplate.png",
     "tier": null
   },
   "rusted_iron_chain_helmet": {
     "name": {
-      "hu": "rusted_iron_chain_helmet",
-      "en": "rusted_iron_chain_helmet"
+      "hu": "Rozsdás Vas Lánc Sisak",
+      "en": "Rusted Iron Chain Helmet"
     },
     "img": "img/armor/rusted_iron_chainmail_helmet.png",
     "tier": null
   },
   "rusted_iron_chain_leggings": {
     "name": {
-      "hu": "rusted_iron_chain_leggings",
-      "en": "rusted_iron_chain_leggings"
+      "hu": "Rozsdás Vas Lánc Lábvért",
+      "en": "Rusted Iron Chain Leggings"
     },
     "img": "img/armor/rusted_iron_chainmail_leggings.png",
     "tier": null
   },
   "rusted_iron_short_sword": {
     "name": {
-      "hu": "rusted_iron_short_sword",
-      "en": "rusted_iron_short_sword"
+      "hu": "Rozsdás Vas Rövid Kard",
+      "en": "Rusted Iron Short Sword"
     },
     "img": "img/items/rusted_iron_sword.png",
     "tier": null
   },
   "rusted_iron_war_hammer": {
     "name": {
-      "hu": "rusted_iron_war_hammer",
-      "en": "rusted_iron_war_hammer"
+      "hu": "Rozsdás Vas Háborús Kalapács",
+      "en": "Rusted Iron War Hammer"
     },
     "img": "img/items/rusted_iron_war_hammer.png",
     "tier": null
   },
   "sacred_sandstone": {
     "name": {
-      "hu": "sacred_sandstone",
-      "en": "sacred_sandstone"
+      "hu": "Szent Homokkő",
+      "en": "Sacred Sandstone"
     },
     "img": "img/items/sacred_sandstone.png",
     "tier": null
   },
   "saddle": {
     "name": {
-      "hu": "saddle",
-      "en": "saddle"
+      "hu": "Nyereg",
+      "en": "Saddle"
     },
     "img": "img/items/saddle.png",
     "tier": null
   },
   "salad": {
     "name": {
-      "hu": "salad",
-      "en": "salad"
+      "hu": "Saláta",
+      "en": "Salad"
     },
     "img": "img/items/salad.png",
     "tier": null
@@ -6119,472 +6119,472 @@
   },
   "sandstone": {
     "name": {
-      "hu": "sandstone",
-      "en": "sandstone"
+      "hu": "Homokkő",
+      "en": "Sandstone"
     },
     "img": "img/items/sandstone.png",
     "tier": null
   },
   "sandstone_furnace_idle": {
     "name": {
-      "hu": "sandstone_furnace_idle",
-      "en": "sandstone_furnace_idle"
+      "hu": "Homokkő Kemence",
+      "en": "Sandstone Furnace"
     },
     "img": "img/items/sandstone_furnace_idle.png",
     "tier": null
   },
   "sandstone_portal_stone": {
     "name": {
-      "hu": "sandstone_portal_stone",
-      "en": "sandstone_portal_stone"
+      "hu": "Homokkő Portálkő",
+      "en": "Sandstone Portal Stone"
     },
     "img": "img/items/sandstone_portal_stone.png",
     "tier": null
   },
   "sandstone_slab_single": {
     "name": {
-      "hu": "sandstone_slab_single",
-      "en": "sandstone_slab_single"
+      "hu": "Homokkő Félblokk",
+      "en": "Sandstone Slab"
     },
     "img": "img/items/sandstone_slab_single.png",
     "tier": null
   },
   "sandstone_stairs": {
     "name": {
-      "hu": "sandstone_stairs",
-      "en": "sandstone_stairs"
+      "hu": "Homokkő Lépcső",
+      "en": "Sandstone Stairs"
     },
     "img": "img/items/sandstone_stairs.png",
     "tier": null
   },
   "sharp_flint_spear": {
     "name": {
-      "hu": "sharp_flint_spear",
-      "en": "sharp_flint_spear"
+      "hu": "Éles Kova Lándzsa",
+      "en": "Sharp Flint Spear"
     },
     "img": "img/items/sharp_flint_spear.png",
     "tier": null
   },
   "sign": {
     "name": {
-      "hu": "sign",
-      "en": "sign"
+      "hu": "Tábla",
+      "en": "Sign"
     },
     "img": "img/items/sign.png",
     "tier": null
   },
   "silver_anvil": {
     "name": {
-      "hu": "silver_anvil",
-      "en": "silver_anvil"
+      "hu": "Ezüst Üllő",
+      "en": "Silver Anvil"
     },
     "img": "img/items/silver_anvil.png",
     "tier": null
   },
   "silver_block": {
     "name": {
-      "hu": "silver_block",
-      "en": "silver_block"
+      "hu": "Ezüst Blokk",
+      "en": "Silver Block"
     },
     "img": "img/blocks/silver_block.png",
     "tier": null
   },
   "silver_bucket": {
     "name": {
-      "hu": "silver_bucket",
-      "en": "silver_bucket"
+      "hu": "Ezüst Vödör",
+      "en": "Silver Bucket"
     },
     "img": "img/items/silver_bucket.png",
     "tier": null
   },
   "silver_bucket_filled_with_milk": {
     "name": {
-      "hu": "silver_bucket_filled_with_milk",
-      "en": "silver_bucket_filled_with_milk"
+      "hu": "Ezüst Tejes Vödör",
+      "en": "Silver Bucket of Milk"
     },
     "img": "img/items/silver_bucket_filled_with_milk.png",
     "tier": null
   },
   "silver_bucket_filled_with_stone": {
     "name": {
-      "hu": "silver_bucket_filled_with_stone",
-      "en": "silver_bucket_filled_with_stone"
+      "hu": "Ezüst Kőzetes Vödör",
+      "en": "Silver Bucket of Stone"
     },
     "img": "img/items/silver_bucket_filled_with_stone.png",
     "tier": null
   },
   "silver_bucket_filled_with_water": {
     "name": {
-      "hu": "silver_bucket_filled_with_water",
-      "en": "silver_bucket_filled_with_water"
+      "hu": "Ezüst Vizes Vödör",
+      "en": "Silver Bucket of Water"
     },
     "img": "img/items/silver_bucket_filled_with_water.png",
     "tier": null
   },
   "silver_chain_boots": {
     "name": {
-      "hu": "silver_chain_boots",
-      "en": "silver_chain_boots"
+      "hu": "Ezüst Lánc Csizma",
+      "en": "Silver Chain Boots"
     },
     "img": "img/armor/silver_chainmail_boots.png",
     "tier": null
   },
   "silver_chain_chestplate": {
     "name": {
-      "hu": "silver_chain_chestplate",
-      "en": "silver_chain_chestplate"
+      "hu": "Ezüst Lánc Mellvért",
+      "en": "Silver Chain Chestplate"
     },
     "img": "img/armor/silver_chainmail_chestplate.png",
     "tier": null
   },
   "silver_chain_helmet": {
     "name": {
-      "hu": "silver_chain_helmet",
-      "en": "silver_chain_helmet"
+      "hu": "Ezüst Lánc Sisak",
+      "en": "Silver Chain Helmet"
     },
     "img": "img/armor/silver_chainmail_helmet.png",
     "tier": null
   },
   "silver_chain_leggings": {
     "name": {
-      "hu": "silver_chain_leggings",
-      "en": "silver_chain_leggings"
+      "hu": "Ezüst Lánc Lábvért",
+      "en": "Silver Chain Leggings"
     },
     "img": "img/armor/silver_chainmail_leggings.png",
     "tier": null
   },
   "silver_coin": {
     "name": {
-      "hu": "silver_coin",
-      "en": "silver_coin"
+      "hu": "Ezüst Érme",
+      "en": "Silver Coin"
     },
     "img": "img/items/silver_coin.png",
     "tier": null
   },
   "silver_copper_war_hammer": {
     "name": {
-      "hu": "silver_copper_war_hammer",
-      "en": "silver_copper_war_hammer"
+      "hu": "Ezüst-Réz Háborús Kalapács",
+      "en": "Silver-Copper War Hammer"
     },
     "img": "img/items/silver_copper_war_hammer.png",
     "tier": null
   },
   "silver_door": {
     "name": {
-      "hu": "silver_door",
-      "en": "silver_door"
+      "hu": "Ezüst Ajtó",
+      "en": "Silver Door"
     },
     "img": "img/items/silver_door.png",
     "tier": null
   },
   "silver_fence": {
     "name": {
-      "hu": "silver_fence",
-      "en": "silver_fence"
+      "hu": "Ezüst Kerítés",
+      "en": "Silver Fence"
     },
     "img": "img/items/silver_fence.png",
     "tier": null
   },
   "silver_flint_and_steel": {
     "name": {
-      "hu": "silver_flint_and_steel",
-      "en": "silver_flint_and_steel"
+      "hu": "Ezüst Tűzkő és Acél",
+      "en": "Silver Flint and Steel"
     },
     "img": "img/items/silver_flint_and_steel.png",
     "tier": null
   },
   "silver_fluid_tank": {
     "name": {
-      "hu": "silver_fluid_tank",
-      "en": "silver_fluid_tank"
+      "hu": "Ezüst Folyadék Tank",
+      "en": "Silver Fluid Tank"
     },
     "img": "img/items/silver_fluid_tank.png",
     "tier": null
   },
   "silver_hand_axe": {
     "name": {
-      "hu": "silver_hand_axe",
-      "en": "silver_hand_axe"
+      "hu": "Ezüst Kézifejsze",
+      "en": "Silver Hand Axe"
     },
     "img": "img/items/silver_hand_axe.png",
     "tier": null
   },
   "silver_ore": {
     "name": {
-      "hu": "silver_ore",
-      "en": "silver_ore"
+      "hu": "Ezüst Érc",
+      "en": "Silver Ore"
     },
     "img": "img/blocks/silver_ore.png",
     "tier": null
   },
   "silver_shield": {
     "name": {
-      "hu": "silver_shield",
-      "en": "silver_shield"
+      "hu": "Ezüst Pajzs",
+      "en": "Silver Shield"
     },
     "img": "img/items/silver_shield.png",
     "tier": null
   },
   "silver_short_sword": {
     "name": {
-      "hu": "silver_short_sword",
-      "en": "silver_short_sword"
+      "hu": "Ezüst Rövid Kard",
+      "en": "Silver Short Sword"
     },
     "img": "img/items/silver_sword.png",
     "tier": null
   },
   "silver_shovel": {
     "name": {
-      "hu": "silver_shovel",
-      "en": "silver_shovel"
+      "hu": "Ezüst Ásó",
+      "en": "Silver Shovel"
     },
     "img": "img/items/silver_shovel.png",
     "tier": null
   },
   "simple_black_sleeping_bag": {
     "name": {
-      "hu": "simple_black_sleeping_bag",
-      "en": "simple_black_sleeping_bag"
+      "hu": "Fekete Hálózsák",
+      "en": "Black Sleeping Bag"
     },
     "img": "img/items/simple_black_sleeping_bag.png",
     "tier": null
   },
   "simple_blue_sleeping_bag": {
     "name": {
-      "hu": "simple_blue_sleeping_bag",
-      "en": "simple_blue_sleeping_bag"
+      "hu": "Kék Hálózsák",
+      "en": "Blue Sleeping Bag"
     },
     "img": "img/items/simple_blue_sleeping_bag.png",
     "tier": null
   },
   "simple_bone_club": {
     "name": {
-      "hu": "simple_bone_club",
-      "en": "simple_bone_club"
+      "hu": "Egyszerű Csontbuzogány",
+      "en": "Simple Bone Club"
     },
     "img": "img/items/simple_bone_club.png",
     "tier": null
   },
   "simple_brown_sleeping_bag": {
     "name": {
-      "hu": "simple_brown_sleeping_bag",
-      "en": "simple_brown_sleeping_bag"
+      "hu": "Barna Hálózsák",
+      "en": "Brown Sleeping Bag"
     },
     "img": "img/items/simple_brown_sleeping_bag.png",
     "tier": null
   },
   "simple_cyan_sleeping_bag": {
     "name": {
-      "hu": "simple_cyan_sleeping_bag",
-      "en": "simple_cyan_sleeping_bag"
+      "hu": "Cián Hálózsák",
+      "en": "Cyan Sleeping Bag"
     },
     "img": "img/items/simple_cyan_sleeping_bag.png",
     "tier": null
   },
   "simple_flint_knife": {
     "name": {
-      "hu": "simple_flint_knife",
-      "en": "simple_flint_knife"
+      "hu": "Egyszerű Kova Kés",
+      "en": "Simple Flint Knife"
     },
     "img": "img/items/simple_flint_knife.png",
     "tier": null
   },
   "simple_gray_sleeping_bag": {
     "name": {
-      "hu": "simple_gray_sleeping_bag",
-      "en": "simple_gray_sleeping_bag"
+      "hu": "Szürke Hálózsák",
+      "en": "Gray Sleeping Bag"
     },
     "img": "img/items/simple_gray_sleeping_bag.png",
     "tier": null
   },
   "simple_green_sleeping_bag": {
     "name": {
-      "hu": "simple_green_sleeping_bag",
-      "en": "simple_green_sleeping_bag"
+      "hu": "Zöld Hálózsák",
+      "en": "Green Sleeping Bag"
     },
     "img": "img/items/simple_green_sleeping_bag.png",
     "tier": null
   },
   "simple_light_blue_sleeping_bag": {
     "name": {
-      "hu": "simple_light_blue_sleeping_bag",
-      "en": "simple_light_blue_sleeping_bag"
+      "hu": "Világoskék Hálózsák",
+      "en": "Light Blue Sleeping Bag"
     },
     "img": "img/items/simple_light_blue_sleeping_bag.png",
     "tier": null
   },
   "simple_light_gray_sleeping_bag": {
     "name": {
-      "hu": "simple_light_gray_sleeping_bag",
-      "en": "simple_light_gray_sleeping_bag"
+      "hu": "Világosszürke Hálózsák",
+      "en": "Light Gray Sleeping Bag"
     },
     "img": "img/items/simple_light_gray_sleeping_bag.png",
     "tier": null
   },
   "simple_lime_sleeping_bag": {
     "name": {
-      "hu": "simple_lime_sleeping_bag",
-      "en": "simple_lime_sleeping_bag"
+      "hu": "Zöldessárga Hálózsák",
+      "en": "Lime Sleeping Bag"
     },
     "img": "img/items/simple_lime_sleeping_bag.png",
     "tier": null
   },
   "simple_magenta_sleeping_bag": {
     "name": {
-      "hu": "simple_magenta_sleeping_bag",
-      "en": "simple_magenta_sleeping_bag"
+      "hu": "Magenta Hálózsák",
+      "en": "Magenta Sleeping Bag"
     },
     "img": "img/items/simple_magenta_sleeping_bag.png",
     "tier": null
   },
   "simple_orange_sleeping_bag": {
     "name": {
-      "hu": "simple_orange_sleeping_bag",
-      "en": "simple_orange_sleeping_bag"
+      "hu": "Narancs Hálózsák",
+      "en": "Orange Sleeping Bag"
     },
     "img": "img/items/simple_orange_sleeping_bag.png",
     "tier": null
   },
   "simple_pink_sleeping_bag": {
     "name": {
-      "hu": "simple_pink_sleeping_bag",
-      "en": "simple_pink_sleeping_bag"
+      "hu": "Rózsaszín Hálózsák",
+      "en": "Pink Sleeping Bag"
     },
     "img": "img/items/simple_pink_sleeping_bag.png",
     "tier": null
   },
   "simple_purple_sleeping_bag": {
     "name": {
-      "hu": "simple_purple_sleeping_bag",
-      "en": "simple_purple_sleeping_bag"
+      "hu": "Lila Hálózsák",
+      "en": "Purple Sleeping Bag"
     },
     "img": "img/items/simple_purple_sleeping_bag.png",
     "tier": null
   },
   "simple_red_sleeping_bag": {
     "name": {
-      "hu": "simple_red_sleeping_bag",
-      "en": "simple_red_sleeping_bag"
+      "hu": "Piros Hálózsák",
+      "en": "Red Sleeping Bag"
     },
     "img": "img/items/simple_red_sleeping_bag.png",
     "tier": null
   },
   "simple_white_sleeping_bag": {
     "name": {
-      "hu": "simple_white_sleeping_bag",
-      "en": "simple_white_sleeping_bag"
+      "hu": "Fehér Hálózsák",
+      "en": "White Sleeping Bag"
     },
     "img": "img/items/simple_white_sleeping_bag.png",
     "tier": null
   },
   "simple_yellow_sleeping_bag": {
     "name": {
-      "hu": "simple_yellow_sleeping_bag",
-      "en": "simple_yellow_sleeping_bag"
+      "hu": "Sárga Hálózsák",
+      "en": "Yellow Sleeping Bag"
     },
     "img": "img/items/simple_yellow_sleeping_bag.png",
     "tier": null
   },
   "skin_care_bottle": {
     "name": {
-      "hu": "skin_care_bottle",
-      "en": "skin_care_bottle"
+      "hu": "Bőrápoló Üveg",
+      "en": "Skin Care Bottle"
     },
     "img": "img/items/skin_care_bottle.png",
     "tier": null
   },
   "slimeball_black": {
     "name": {
-      "hu": "slimeball_black",
-      "en": "slimeball_black"
+      "hu": "Fekete Nyálkagömb",
+      "en": "Black Slime Ball"
     },
     "img": "img/items/slimeball_black.png",
     "tier": null
   },
   "slimeball_brown": {
     "name": {
-      "hu": "slimeball_brown",
-      "en": "slimeball_brown"
+      "hu": "Barna Nyálkagömb",
+      "en": "Brown Slime Ball"
     },
     "img": "img/items/slimeball_brown.png",
     "tier": null
   },
   "slimeball_gray": {
     "name": {
-      "hu": "slimeball_gray",
-      "en": "slimeball_gray"
+      "hu": "Szürke Nyálkagömb",
+      "en": "Gray Slime Ball"
     },
     "img": "img/items/slimeball_gray.png",
     "tier": null
   },
   "slimeball_green": {
     "name": {
-      "hu": "slimeball_green",
-      "en": "slimeball_green"
+      "hu": "Zöld Nyálkagömb",
+      "en": "Green Slime Ball"
     },
     "img": "img/items/slimeball_green.png",
     "tier": null
   },
   "small": {
     "name": {
-      "hu": "small",
-      "en": "small"
+      "hu": "Kis Tárgy",
+      "en": "Small Item"
     },
     "img": "img/items/small.png",
     "tier": null
   },
   "small_wooden_club": {
     "name": {
-      "hu": "small_wooden_club",
-      "en": "small_wooden_club"
+      "hu": "Kis Fa Buzogány",
+      "en": "Small Wooden Club"
     },
     "img": "img/items/small_wooden_club.png",
     "tier": null
   },
   "smelting_furnace_idle": {
     "name": {
-      "hu": "smelting_furnace_idle",
-      "en": "smelting_furnace_idle"
+      "hu": "Olvasztó Kemence",
+      "en": "Smelting Furnace"
     },
     "img": "img/items/smelting_furnace_idle.png",
     "tier": null
   },
   "smooth_sandstone": {
     "name": {
-      "hu": "smooth_sandstone",
-      "en": "smooth_sandstone"
+      "hu": "Sima Homokkő",
+      "en": "Smooth Sandstone"
     },
     "img": "img/items/smooth_sandstone.png",
     "tier": null
   },
   "snow_block": {
     "name": {
-      "hu": "snow_block",
-      "en": "snow_block"
+      "hu": "Hóblokk",
+      "en": "Snow Block"
     },
     "img": "img/items/snow_block.png",
     "tier": null
   },
   "snow_slab": {
     "name": {
-      "hu": "snow_slab",
-      "en": "snow_slab"
+      "hu": "Hó Félblokk",
+      "en": "Snow Slab"
     },
     "img": "img/items/snow_slab.png",
     "tier": null
   },
   "snow_thin": {
     "name": {
-      "hu": "snow_thin",
-      "en": "snow_thin"
+      "hu": "Hóréteg",
+      "en": "Snow Layer"
     },
     "img": "img/items/snow_thin.png",
     "tier": null
   },
   "snowball": {
     "name": {
-      "hu": "snowball",
-      "en": "snowball"
+      "hu": "Hógolyó",
+      "en": "Snowball"
     },
     "img": "img/items/snowball.png",
     "tier": null
@@ -6607,160 +6607,160 @@
   },
   "spruce_door": {
     "name": {
-      "hu": "spruce_door",
-      "en": "spruce_door"
+      "hu": "Fenyő Ajtó",
+      "en": "Spruce Door"
     },
     "img": "img/items/spruce_door.png",
     "tier": null
   },
   "spruce_fence": {
     "name": {
-      "hu": "spruce_fence",
-      "en": "spruce_fence"
+      "hu": "Fenyő Kerítés",
+      "en": "Spruce Fence"
     },
     "img": "img/items/spruce_fence.png",
     "tier": null
   },
   "spruce_fence_gate": {
     "name": {
-      "hu": "spruce_fence_gate",
-      "en": "spruce_fence_gate"
+      "hu": "Fenyő Kerítés Kapu",
+      "en": "Spruce Fence Gate"
     },
     "img": "img/items/spruce_fence_gate.png",
     "tier": null
   },
   "spruce_leaves": {
     "name": {
-      "hu": "spruce_leaves",
-      "en": "spruce_leaves"
+      "hu": "Fenyő Levelek",
+      "en": "Spruce Leaves"
     },
     "img": "img/items/spruce_leaves.png",
     "tier": null
   },
   "spruce_sieve": {
     "name": {
-      "hu": "spruce_sieve",
-      "en": "spruce_sieve"
+      "hu": "Fenyő Szita",
+      "en": "Spruce Sieve"
     },
     "img": "img/items/spruce_sieve.png",
     "tier": null
   },
   "spruce_wood_crate": {
     "name": {
-      "hu": "spruce_wood_crate",
-      "en": "spruce_wood_crate"
+      "hu": "Fenyő Fa Láda",
+      "en": "Spruce Wood Crate"
     },
     "img": "img/items/spruce_wood_crate.png",
     "tier": null
   },
   "spruce_wood_slab_single": {
     "name": {
-      "hu": "spruce_wood_slab_single",
-      "en": "spruce_wood_slab_single"
+      "hu": "Fenyő Fa Félblokk",
+      "en": "Spruce Wood Slab"
     },
     "img": "img/items/spruce_wood_slab_single.png",
     "tier": null
   },
   "spruce_wood_stairs": {
     "name": {
-      "hu": "spruce_wood_stairs",
-      "en": "spruce_wood_stairs"
+      "hu": "Fenyő Fa Lépcső",
+      "en": "Spruce Wood Stairs"
     },
     "img": "img/items/spruce_wood_stairs.png",
     "tier": null
   },
   "sticky_piston": {
     "name": {
-      "hu": "sticky_piston",
-      "en": "sticky_piston"
+      "hu": "Ragadós Dugattyú",
+      "en": "Sticky Piston"
     },
     "img": "img/items/sticky_piston.png",
     "tier": null
   },
   "stone": {
     "name": {
-      "hu": "stone",
-      "en": "stone"
+      "hu": "Kő",
+      "en": "Stone"
     },
     "img": "img/blocks/stone.png",
     "tier": null
   },
   "stone_brick_slab_single": {
     "name": {
-      "hu": "stone_brick_slab_single",
-      "en": "stone_brick_slab_single"
+      "hu": "Kőtégla Félblokk",
+      "en": "Stone Brick Slab"
     },
     "img": "img/items/stone_brick_slab_single.png",
     "tier": null
   },
   "stone_brick_stairs": {
     "name": {
-      "hu": "stone_brick_stairs",
-      "en": "stone_brick_stairs"
+      "hu": "Kőtégla Lépcső",
+      "en": "Stone Brick Stairs"
     },
     "img": "img/items/stone_brick_stairs.png",
     "tier": null
   },
   "stone_bricks": {
     "name": {
-      "hu": "stone_bricks",
-      "en": "stone_bricks"
+      "hu": "Kőtéglák",
+      "en": "Stone Bricks"
     },
     "img": "img/items/stone_bricks.png",
     "tier": null
   },
   "stone_chip": {
     "name": {
-      "hu": "stone_chip",
-      "en": "stone_chip"
+      "hu": "Kőforgács",
+      "en": "Stone Chip"
     },
     "img": "img/items/stone_chip.png",
     "tier": null
   },
   "stone_furnace_core": {
     "name": {
-      "hu": "stone_furnace_core",
-      "en": "stone_furnace_core"
+      "hu": "Kő Kemence Mag",
+      "en": "Stone Furnace Core"
     },
     "img": "img/items/stone_furnace_core.png",
     "tier": null
   },
   "stone_furnace_idle": {
     "name": {
-      "hu": "stone_furnace_idle",
-      "en": "stone_furnace_idle"
+      "hu": "Kő Kemence",
+      "en": "Stone Furnace"
     },
     "img": "img/items/stone_furnace_idle.png",
     "tier": null
   },
   "stone_portal_stone": {
     "name": {
-      "hu": "stone_portal_stone",
-      "en": "stone_portal_stone"
+      "hu": "Kő Portálkő",
+      "en": "Stone Portal Stone"
     },
     "img": "img/items/stone_portal_stone.png",
     "tier": null
   },
   "stone_slab_single": {
     "name": {
-      "hu": "stone_slab_single",
-      "en": "stone_slab_single"
+      "hu": "Kő Félblokk",
+      "en": "Stone Slab"
     },
     "img": "img/items/stone_slab_single.png",
     "tier": null
   },
   "stone_stairs": {
     "name": {
-      "hu": "stone_stairs",
-      "en": "stone_stairs"
+      "hu": "Kő Lépcső",
+      "en": "Stone Stairs"
     },
     "img": "img/items/stone_stairs.png",
     "tier": null
   },
   "string_sieve_mesh": {
     "name": {
-      "hu": "string_sieve_mesh",
-      "en": "string_sieve_mesh"
+      "hu": "Zsineg Szita Háló",
+      "en": "String Sieve Mesh"
     },
     "img": "img/items/string_sieve_mesh.png",
     "tier": null
@@ -6775,408 +6775,408 @@
   },
   "sugar_block": {
     "name": {
-      "hu": "sugar_block",
-      "en": "sugar_block"
+      "hu": "Cukor Blokk",
+      "en": "Sugar Block"
     },
     "img": "img/items/sugar_block.png",
     "tier": null
   },
   "sugar_cane": {
     "name": {
-      "hu": "sugar_cane",
-      "en": "sugar_cane"
+      "hu": "Cukornád",
+      "en": "Sugar Cane"
     },
     "img": "img/items/sugar_cane.png",
     "tier": null
   },
   "sugar_water": {
     "name": {
-      "hu": "sugar_water",
-      "en": "sugar_water"
+      "hu": "Cukros Víz",
+      "en": "Sugar Water"
     },
     "img": "img/items/sugar_water.png",
     "tier": null
   },
   "teleport_scroll_knowledge_book": {
     "name": {
-      "hu": "teleport_scroll_knowledge_book",
-      "en": "teleport_scroll_knowledge_book"
+      "hu": "Teleport Tekercs Tudáskönyv",
+      "en": "Teleport Scroll Knowledge Book"
     },
     "img": "img/items/teleport_scroll_knowledge_book.png",
     "tier": null
   },
   "tnt": {
     "name": {
-      "hu": "tnt",
-      "en": "tnt"
+      "hu": "TNT",
+      "en": "TNT"
     },
     "img": "img/items/tnt.png",
     "tier": null
   },
   "trapdoor": {
     "name": {
-      "hu": "trapdoor",
-      "en": "trapdoor"
+      "hu": "Csapóajtó",
+      "en": "Trapdoor"
     },
     "img": "img/items/trapdoor.png",
     "tier": null
   },
   "trapped_chest": {
     "name": {
-      "hu": "trapped_chest",
-      "en": "trapped_chest"
+      "hu": "Csapdás Láda",
+      "en": "Trapped Chest"
     },
     "img": "img/items/trapped_chest.png",
     "tier": null
   },
   "tripwire_hook": {
     "name": {
-      "hu": "tripwire_hook",
-      "en": "tripwire_hook"
+      "hu": "Tripdrót Kampó",
+      "en": "Tripwire Hook"
     },
     "img": "img/items/tripwire_hook.png",
     "tier": null
   },
   "tulip": {
     "name": {
-      "hu": "tulip",
-      "en": "tulip"
+      "hu": "Tulipán",
+      "en": "Tulip"
     },
     "img": "img/items/tulip.png",
     "tier": null
   },
   "vegetable_soup": {
     "name": {
-      "hu": "vegetable_soup",
-      "en": "vegetable_soup"
+      "hu": "Zöldségleves",
+      "en": "Vegetable Soup"
     },
     "img": "img/items/vegetable_soup.png",
     "tier": null
   },
   "villager_s_bed": {
     "name": {
-      "hu": "villager_s_bed",
-      "en": "villager_s_bed"
+      "hu": "Falusi Ágy",
+      "en": "Villager's Bed"
     },
     "img": "img/items/villager_s_bed.png",
     "tier": null
   },
   "vines": {
     "name": {
-      "hu": "vines",
-      "en": "vines"
+      "hu": "Kúszóka",
+      "en": "Vines"
     },
     "img": "img/items/vines.png",
     "tier": null
   },
   "water_bowl": {
     "name": {
-      "hu": "water_bowl",
-      "en": "water_bowl"
+      "hu": "Vizes Tál",
+      "en": "Water Bowl"
     },
     "img": "img/items/water_bowl.png",
     "tier": null
   },
   "water_filter": {
     "name": {
-      "hu": "water_filter",
-      "en": "water_filter"
+      "hu": "Vízszűrő",
+      "en": "Water Filter"
     },
     "img": "img/items/water_filter.png",
     "tier": null
   },
   "water_skin": {
     "name": {
-      "hu": "water_skin",
-      "en": "water_skin"
+      "hu": "Víztömlő",
+      "en": "Water Skin"
     },
     "img": "img/items/water_skin.png",
     "tier": null
   },
   "waystone": {
     "name": {
-      "hu": "waystone",
-      "en": "waystone"
+      "hu": "Útjelzőkő",
+      "en": "Waystone"
     },
     "img": "img/items/waystone.png",
     "tier": null
   },
   "waystone_knowledge_book": {
     "name": {
-      "hu": "waystone_knowledge_book",
-      "en": "waystone_knowledge_book"
+      "hu": "Útjelzőkő Tudáskönyv",
+      "en": "Waystone Knowledge Book"
     },
     "img": "img/items/waystone_knowledge_book.png",
     "tier": null
   },
   "weighted_pressure_plate_heavy": {
     "name": {
-      "hu": "weighted_pressure_plate_heavy",
-      "en": "weighted_pressure_plate_heavy"
+      "hu": "Nehéz Súlyozott Nyomólemez",
+      "en": "Heavy Weighted Pressure Plate"
     },
     "img": "img/items/weighted_pressure_plate_heavy.png",
     "tier": null
   },
   "weighted_pressure_plate_light": {
     "name": {
-      "hu": "weighted_pressure_plate_light",
-      "en": "weighted_pressure_plate_light"
+      "hu": "Könnyű Súlyozott Nyomólemez",
+      "en": "Light Weighted Pressure Plate"
     },
     "img": "img/items/weighted_pressure_plate_light.png",
     "tier": null
   },
   "wheat_seeds": {
     "name": {
-      "hu": "wheat_seeds",
-      "en": "wheat_seeds"
+      "hu": "Búza Mag",
+      "en": "Wheat Seeds"
     },
     "img": "img/items/wheat_seeds.png",
     "tier": null
   },
   "wheat_soup": {
     "name": {
-      "hu": "wheat_soup",
-      "en": "wheat_soup"
+      "hu": "Búzaleves",
+      "en": "Wheat Soup"
     },
     "img": "img/items/wheat_soup.png",
     "tier": null
   },
   "white_stained_clay_colored": {
     "name": {
-      "hu": "white_stained_clay_colored",
-      "en": "white_stained_clay_colored"
+      "hu": "Fehér Festett Agyag",
+      "en": "White Stained Clay"
     },
     "img": "img/items/white_stained_clay_colored.png",
     "tier": null
   },
   "white_wool_portal_stone": {
     "name": {
-      "hu": "white_wool_portal_stone",
-      "en": "white_wool_portal_stone"
+      "hu": "Fehér Gyapjú Portálkő",
+      "en": "White Wool Portal Stone"
     },
     "img": "img/items/white_wool_portal_stone.png",
     "tier": null
   },
   "wither_skeleton_skull": {
     "name": {
-      "hu": "wither_skeleton_skull",
-      "en": "wither_skeleton_skull"
+      "hu": "Wither Csontváz Koponya",
+      "en": "Wither Skeleton Skull"
     },
     "img": "img/items/wither_skeleton_skull.png",
     "tier": null
   },
   "wither_skeleton_skull_fragment": {
     "name": {
-      "hu": "wither_skeleton_skull_fragment",
-      "en": "wither_skeleton_skull_fragment"
+      "hu": "Wither Csontváz Koponya Töredék",
+      "en": "Wither Skeleton Skull Fragment"
     },
     "img": "img/items/wither_skeleton_skull_fragment.png",
     "tier": null
   },
   "wood_slab_single": {
     "name": {
-      "hu": "wood_slab_single",
-      "en": "wood_slab_single"
+      "hu": "Fa Félblokk",
+      "en": "Wood Slab"
     },
     "img": "img/items/wood_slab_single.png",
     "tier": null
   },
   "wooden_club": {
     "name": {
-      "hu": "wooden_club",
-      "en": "wooden_club"
+      "hu": "Fa Buzogány",
+      "en": "Wooden Club"
     },
     "img": "img/items/wooden_club.png",
     "tier": null
   },
   "wooden_door": {
     "name": {
-      "hu": "wooden_door",
-      "en": "wooden_door"
+      "hu": "Fa Ajtó",
+      "en": "Wooden Door"
     },
     "img": "img/items/wooden_door.png",
     "tier": null
   },
   "wooden_shovel": {
     "name": {
-      "hu": "wooden_shovel",
-      "en": "wooden_shovel"
+      "hu": "Fa Ásó",
+      "en": "Wooden Shovel"
     },
     "img": "img/items/wooden_shovel.png",
     "tier": null
   },
   "wool_black": {
     "name": {
-      "hu": "wool_black",
-      "en": "wool_black"
+      "hu": "Fekete Gyapjú",
+      "en": "Black Wool"
     },
     "img": "img/items/wool_black.png",
     "tier": null
   },
   "wool_blue": {
     "name": {
-      "hu": "wool_blue",
-      "en": "wool_blue"
+      "hu": "Kék Gyapjú",
+      "en": "Blue Wool"
     },
     "img": "img/items/wool_blue.png",
     "tier": null
   },
   "wool_brown": {
     "name": {
-      "hu": "wool_brown",
-      "en": "wool_brown"
+      "hu": "Barna Gyapjú",
+      "en": "Brown Wool"
     },
     "img": "img/items/wool_brown.png",
     "tier": null
   },
   "wool_cyan": {
     "name": {
-      "hu": "wool_cyan",
-      "en": "wool_cyan"
+      "hu": "Cián Gyapjú",
+      "en": "Cyan Wool"
     },
     "img": "img/items/wool_cyan.png",
     "tier": null
   },
   "wool_gray": {
     "name": {
-      "hu": "wool_gray",
-      "en": "wool_gray"
+      "hu": "Szürke Gyapjú",
+      "en": "Gray Wool"
     },
     "img": "img/items/wool_gray.png",
     "tier": null
   },
   "wool_green": {
     "name": {
-      "hu": "wool_green",
-      "en": "wool_green"
+      "hu": "Zöld Gyapjú",
+      "en": "Green Wool"
     },
     "img": "img/items/wool_green.png",
     "tier": null
   },
   "wool_light_blue": {
     "name": {
-      "hu": "wool_light_blue",
-      "en": "wool_light_blue"
+      "hu": "Világoskék Gyapjú",
+      "en": "Light Blue Wool"
     },
     "img": "img/items/wool_light_blue.png",
     "tier": null
   },
   "wool_light_gray": {
     "name": {
-      "hu": "wool_light_gray",
-      "en": "wool_light_gray"
+      "hu": "Világosszürke Gyapjú",
+      "en": "Light Gray Wool"
     },
     "img": "img/items/wool_light_gray.png",
     "tier": null
   },
   "wool_lime": {
     "name": {
-      "hu": "wool_lime",
-      "en": "wool_lime"
+      "hu": "Zöldessárga Gyapjú",
+      "en": "Lime Wool"
     },
     "img": "img/items/wool_lime.png",
     "tier": null
   },
   "wool_magenta": {
     "name": {
-      "hu": "wool_magenta",
-      "en": "wool_magenta"
+      "hu": "Magenta Gyapjú",
+      "en": "Magenta Wool"
     },
     "img": "img/items/wool_magenta.png",
     "tier": null
   },
   "wool_orange": {
     "name": {
-      "hu": "wool_orange",
-      "en": "wool_orange"
+      "hu": "Narancs Gyapjú",
+      "en": "Orange Wool"
     },
     "img": "img/items/wool_orange.png",
     "tier": null
   },
   "wool_pink": {
     "name": {
-      "hu": "wool_pink",
-      "en": "wool_pink"
+      "hu": "Rózsaszín Gyapjú",
+      "en": "Pink Wool"
     },
     "img": "img/items/wool_pink.png",
     "tier": null
   },
   "wool_purple": {
     "name": {
-      "hu": "wool_purple",
-      "en": "wool_purple"
+      "hu": "Lila Gyapjú",
+      "en": "Purple Wool"
     },
     "img": "img/items/wool_purple.png",
     "tier": null
   },
   "wool_red": {
     "name": {
-      "hu": "wool_red",
-      "en": "wool_red"
+      "hu": "Piros Gyapjú",
+      "en": "Red Wool"
     },
     "img": "img/items/wool_red.png",
     "tier": null
   },
   "wool_white": {
     "name": {
-      "hu": "wool_white",
-      "en": "wool_white"
+      "hu": "Fehér Gyapjú",
+      "en": "White Wool"
     },
     "img": "img/items/wool_white.png",
     "tier": null
   },
   "wool_yellow": {
     "name": {
-      "hu": "wool_yellow",
-      "en": "wool_yellow"
+      "hu": "Sárga Gyapjú",
+      "en": "Yellow Wool"
     },
     "img": "img/items/wool_yellow.png",
     "tier": null
   },
   "world_marker": {
     "name": {
-      "hu": "world_marker",
-      "en": "world_marker"
+      "hu": "Világ Jelölő",
+      "en": "World Marker"
     },
     "img": "img/items/world_marker.png",
     "tier": null
   },
   "world_marker_knowledge_book": {
     "name": {
-      "hu": "world_marker_knowledge_book",
-      "en": "world_marker_knowledge_book"
+      "hu": "Világ Jelölő Tudáskönyv",
+      "en": "World Marker Knowledge Book"
     },
     "img": "img/items/world_marker_knowledge_book.png",
     "tier": null
   },
   "yellow_bed": {
     "name": {
-      "hu": "yellow_bed",
-      "en": "yellow_bed"
+      "hu": "Sárga Ágy",
+      "en": "Yellow Bed"
     },
     "img": "img/items/yellow_bed.png",
     "tier": null
   },
   "yellow_carpet": {
     "name": {
-      "hu": "yellow_carpet",
-      "en": "yellow_carpet"
+      "hu": "Sárga Szőnyeg",
+      "en": "Yellow Carpet"
     },
     "img": "img/items/yellow_carpet.png",
     "tier": null
   },
   "yellow_stained_clay_colored": {
     "name": {
-      "hu": "yellow_stained_clay_colored",
-      "en": "yellow_stained_clay_colored"
+      "hu": "Sárga Festett Agyag",
+      "en": "Yellow Stained Clay"
     },
     "img": "img/items/yellow_stained_clay_colored.png",
     "tier": null
   },
   "yellow_wool": {
     "name": {
-      "hu": "yellow_wool",
-      "en": "yellow_wool"
+      "hu": "Sárga Gyapjú",
+      "en": "Yellow Wool"
     },
     "img": "img/items/yellow_wool.png",
     "tier": null
