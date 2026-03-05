@@ -1,63 +1,120 @@
-# MITE: Break Everything — Wiki & Progression Guide
+# MITE: Break Everything — Wiki
 
-The first public wiki for **MITE: Break Everything** — a hardcore total-conversion Minecraft 1.6.4 mod.
+The first public bilingual wiki for **MITE: Break Everything** — a hardcore total-conversion Minecraft 1.6.4 mod.
 
 🌐 **Live site:** [tornadogamesnow.github.io/mite-be-wiki](https://tornadogamesnow.github.io/mite-be-wiki)
+
+> ⚠️ This wiki is a work in progress — some data may be inaccurate or incomplete. Found an error? [Open an Issue!](https://github.com/TornadoGamesNow/mite-be-wiki/issues)
 
 ---
 
 ## Download & Install
 
-| | Link | Megjegyzés |
+| | Link | Note |
 |---|---|---|
-| 🌍 **Nyugati tükör** | [Archive.org — MITE:BE v0.9.0 hf3](https://archive.org/download/mi-te-be-v-0.9.0-hf-3/MiTE-BE_v0.9.0_hf3.zip) | Közvetlen ZIP, regisztráció nélkül |
-| 🇨🇳 **Hivatalos forrás** | [mcmod.cn/class/3751.html](https://www.mcmod.cn/class/3751.html) | Baidu Pan szükséges |
+| 🌍 **Western mirror** | [Archive.org — MITE:BE v0.9.0 hf3](https://archive.org/download/mi-te-be-v-0.9.0-hf-3/MiTE-BE_v0.9.0_hf3.zip) | Direct ZIP, no registration |
+| 🇨🇳 **Official source** | [mcmod.cn/class/3751.html](https://www.mcmod.cn/class/3751.html) | Requires Baidu Pan |
 
 **Requirements:** Java 8 + [PrismLauncher](https://prismlauncher.org)
-**How to install:** Import the downloaded ZIP directly in PrismLauncher → [Full guide](https://tornadogamesnow.github.io/mite-be-wiki/install.html)
+**Installation guide:** [tornadogamesnow.github.io/mite-be-wiki/install](https://tornadogamesnow.github.io/mite-be-wiki/install)
 
 ---
 
-## What's inside the wiki
-
-- 🇭🇺 / 🇬🇧 Bilingual — Magyar & English
-- Full progression guide — Early game → Mid game → Endgame checklists
-- Biome guide, biome portals, ore distribution by biome
-- Crafting recipes with visual grids (Copper through Adamantium, Hardstone, Ancient Metal)
-- Weapon, armor & enchanting reference tables
-- Ore processing: sieving, smelting, alloys, workbench tiers, furnace cores
-- Professions, XP requirements, item quality tiers
-- Mob stats, squad system, bow & arrow system
-- Food values, stack limits, thirst, drowsiness, moon cycle, defecation
-- World Marker, Partner NPCs, Portage, debug keys
-- End dimension guide, boss information
-
-## Pages
+## What's in the wiki?
 
 | Page | Content |
 |------|---------|
-| [index.html](https://tornadogamesnow.github.io/mite-be-wiki/) | Main wiki — progression, mechanics, crafting grids |
-| [reference.html](https://tornadogamesnow.github.io/mite-be-wiki/reference.html) | Reference tables — mobs, potions, blood moon, professions |
-| [install.html](https://tornadogamesnow.github.io/mite-be-wiki/install.html) | Installation guide |
-| [changelog.html](https://tornadogamesnow.github.io/mite-be-wiki/changelog.html) | Patch notes |
-| [faq.html](https://tornadogamesnow.github.io/mite-be-wiki/faq.html) | Frequently asked questions |
+| [/](https://tornadogamesnow.github.io/mite-be-wiki/) | Main wiki — progression, mechanics, crafting grids, mob stats |
+| [/recipes](https://tornadogamesnow.github.io/mite-be-wiki/recipes) | Full recipe browser — search, filter, tier comparison |
+| [/mobs](https://tornadogamesnow.github.io/mite-be-wiki/mobs) | Mob encyclopedia — stats, drops, spawn zones |
+| [/brewing](https://tornadogamesnow.github.io/mite-be-wiki/brewing) | Brewing & potions |
+| [/reference](https://tornadogamesnow.github.io/mite-be-wiki/reference) | Reference tables — materials, sieve drop rates, furnace heat levels |
+| [/install](https://tornadogamesnow.github.io/mite-be-wiki/install) | Installation guide |
+| [/changelog](https://tornadogamesnow.github.io/mite-be-wiki/changelog) | Patch notes |
+| [/faq](https://tornadogamesnow.github.io/mite-be-wiki/faq) | FAQ |
+
+### Main page topics
+
+- 🇭🇺 / 🇬🇧 Bilingual — Magyar & English
+- Full progression guide: Flint Age → Copper/Silver → Iron/Steel → Hardstone → Ancient Metal → Mithril → Adamantium
+- Biome guide, 5 portal types, ore distribution
+- Visual crafting grids with tooltips and tier badges
+- Weapon, armor, and enchanting reference tables
+- Ore processing: sieving, smelting, alloys, workbench tiers, multiblock furnaces
+- 13 professions, XP requirements, item quality tiers
+- Mob stats, squad system, bow & arrow system
+- Food values, thirst, drowsiness, moon cycle, defecation mechanic
+- World Marker, Partner NPCs, Portage, debug keys
+- Underground dimension, Nether, Wither boss, End dimension, Ender Dragon
 
 ---
 
-## Tech
+## Tech stack
 
-**Astro + React + Tailwind** — statikus site generátor, GitHub Pages-re deployolva.
+**Astro + React + Tailwind** — static site generator, deployed to GitHub Pages.
 
 ```
-src/pages/        — Astro oldalak (index, mobs, recipes, brewing, reference, install, changelog, faq)
-src/components/   — Astro komponensek (CraftingGrid, FurnaceGrid, McTooltip, stb.)
-src/islands/      — React islands (MobExplorer, RecipeBrowser, SearchBox, stb.)
-src/layouts/      — BaseLayout.astro
-data/             — JSON adatfájlok (items.json, mobs.json, recipes.json, materials.json)
-public/           — Statikus fájlok (img/, js/app.js, data/mobs.js, data/materials.js)
+src/pages/        — Astro pages (SSG)
+  index.astro       — Main wiki (HU+EN bilingual, ~4200+ lines)
+  recipes.astro     — Recipe browser page
+  mobs.astro        — Mob encyclopedia page
+  brewing.astro     — Brewing page
+  reference.astro   — Reference tables
+  install.astro     — Installation guide
+  changelog.astro   — Patch notes
+  faq.astro         — FAQ
+
+src/components/   — Astro components (server-side rendered)
+  CraftingGrid.astro    — Crafting recipe display (recipeId or recipe prop)
+  FurnaceGrid.astro     — Furnace recipe display
+  McTooltip.astro       — Minecraft-style tooltip
+  TierBadge.astro       — Material tier badge
+  InfoBox.astro         — Info/warning box
+  CompareTable.astro    — Comparison table
+  Header.astro          — Hero header (lang switch + dev notice)
+  TopNav.astro          — Top navigation
+  Sidebar.astro         — Sidebar (table of contents)
+
+src/islands/      — React "islands" (client-side interactive)
+  MobExplorer.tsx       — Mob search/filter (on main page & mobs page)
+  RecipeBrowser.tsx     — Recipe browser (recipes.json, tier-merge, cycling slots)
+  RecipesHub.tsx        — Full recipe browser (recipes_full.json)
+  SearchBox.tsx         — In-page search
+  LanguageSwitcher.tsx  — Language switcher
+  VersionToggle.tsx     — Version toggle
+
+data/             — JSON data files (SSOT — authoritative source of truth)
+  items.json            — Item catalog: id → {name:{hu,en}, img, tier, category}
+  mobs.json             — Mob stats: hp, dmg, xp, drops, spawnZones, tags
+  recipes.json          — Shaped crafting recipes (CraftingGrid + RecipeBrowser)
+  recipes_full.json     — Full recipe database (RecipesHub, generated)
+  materials.json        — Material properties: enchantability, maxQuality, durabilityMult, sieve
+  mechanics.json        — Game mechanics: furnace heat levels, armor protection, weapon damage
+
+public/
+  img/                  — 32×32 PNG textures (armor/, blocks/, items/, mobs/, ingots/, etc.)
+  data/
+    mobs.js             — Mob table for reference.astro (manually maintained)
+    materials.js        — Material tables for reference.astro (manually maintained)
+    sieve.js            — Sieve drop rates for reference.astro (manually maintained)
+
+scripts/          — Generator scripts (not run automatically at build time)
+  parse_recipes.py      — Recipe JSON generation from mod files
+  gen_recipes_full.py   — Regenerate recipes_full.json
+  gen_item_stubs.py     — Item stub generation
+  scrape-drops.js       — Mob drop scraper
 ```
 
-Build: `npm run build` → `dist/` (ez kerül deploy-ra)
+### Local development
+
+```bash
+npm install
+npm run dev      # dev server → localhost:4321
+npm run build    # static build → dist/
+npm run preview  # preview the build
+```
+
+There is no automated test command. A clean `npm run build` means everything is OK.
 
 ---
 
@@ -70,7 +127,7 @@ Build: `npm run build` → `dist/` (ez kerül deploy-ra)
 
 ## Contributing
 
-Found an error or missing info? [Open an Issue](https://github.com/TornadoGamesNow/mite-be-wiki/issues) or see [CONTRIBUTING.md](CONTRIBUTING.md).
+Found an error or missing info? [Open an Issue](https://github.com/TornadoGamesNow/mite-be-wiki/issues) or read [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 

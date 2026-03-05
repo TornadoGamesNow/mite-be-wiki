@@ -4,46 +4,66 @@ Thanks for your interest in improving the wiki! Here's how you can help.
 
 ---
 
-## Quick fixes (typos, grammar, wrong numbers)
+## Quick fixes (typos, wrong numbers, missing translations)
 
 1. Fork this repo
-2. Edit the relevant file directly (see below for which file to edit)
+2. Edit the relevant file (see the table below)
 3. Open a Pull Request with a short description of what you changed
 
 ---
 
 ## Tech stack
 
-This is an **Astro + React + Tailwind** static site. To run locally:
+**Astro + React + Tailwind** static site. To run locally:
 
 ```bash
 npm install
-npm run dev    # dev server at localhost:4321
-npm run build  # build to /dist
+npm run dev      # dev server → localhost:4321
+npm run build    # build → /dist
+npm run preview  # preview the build
 ```
 
+There is no automated test command. A clean `npm run build` means everything is OK.
+
 ---
 
-## File structure
+## File structure — what to edit where
 
-| File / Folder | What to edit |
-|--------------|-------------|
-| `src/pages/*.astro` | Page layouts and static content |
-| `src/islands/*.tsx` | Interactive React components (mob explorer, recipe hub) |
-| `src/components/*.astro` | Static Astro components (crafting grids, etc.) |
-| `data/mobs.json` | Mob stats, drops, difficulty |
-| `data/items.json` | Item names, images, tiers |
-| `data/recipes.json` | Crafting recipes (used by CraftingGrid) |
-| `data/recipes_full.json` | Full recipe database (used by RecipesHub) |
+| File / Folder | What to edit here |
+|-------------|------------------|
+| `src/pages/index.astro` | Main wiki content (bilingual HU+EN, ~4200+ lines) |
+| `src/pages/*.astro` | Other pages (recipes, mobs, brewing, reference, etc.) |
+| `src/islands/MobExplorer.tsx` | Mob search/filter logic |
+| `src/islands/RecipeBrowser.tsx` | Recipe browser (recipes.json-based, tier merging) |
+| `src/islands/RecipesHub.tsx` | Full recipe browser (recipes_full.json-based) |
+| `src/components/*.astro` | Static Astro components (CraftingGrid, McTooltip, etc.) |
+| `data/mobs.json` | **SSOT** — mob stats, drops, spawn zones |
+| `data/items.json` | **SSOT** — item names, images, tiers |
+| `data/recipes.json` | **SSOT** — crafting recipes (used by CraftingGrid + RecipeBrowser) |
+| `data/recipes_full.json` | Full recipe database (used by RecipesHub, generated file) |
+| `data/materials.json` | Material properties (enchantability, durabilityMult, sieve drops) |
+| `data/mechanics.json` | Game mechanics data (furnace heat levels, armor, weapon damage) |
 | `src/styles/global.css` | All styling |
 
-> **Note:** `public/data/mobs.js` and `public/data/materials.js` are legacy JS files used only by `reference.astro`. They must be maintained manually in sync with the JSON data files.
+> ⚠️ **Important:** `public/data/mobs.js`, `public/data/materials.js`, and `public/data/sieve.js` are **manually maintained** JS files used only by `reference.astro` for its client-side tables. They are not auto-generated from the JSON files. If you update the corresponding JSON, update these files too.
 
 ---
 
-## Bilingual content
+## Data consistency — SSOT principle
 
-Every piece of user-facing content needs **both languages**.
+The JSON files in `data/` are the **single source of truth** for all game data.
+
+- If content in `index.astro` contradicts `recipes.json` or `mobs.json` → the JSON wins
+- `mechanics.json` holds the authoritative weapon damage and armor protection values
+- `materials.json` holds the authoritative material tiers, durability multipliers, and enchantability values
+
+Always cite the source mod reference file (see below) when correcting numeric data.
+
+---
+
+## Bilingual content (HU/EN)
+
+Every piece of user-facing content must have **both languages**.
 
 In Astro components, use `data-lang` attributes:
 
@@ -52,13 +72,45 @@ In Astro components, use `data-lang` attributes:
 <p data-lang="en">English text</p>
 ```
 
-In JSON data files, use the `{ hu: "...", en: "..." }` object format.
+In JSON data files, use the `{ hu: "...", en: "..." }` object format:
+
+```json
+"name": { "hu": "Réz Csákány", "en": "Copper Pickaxe" }
+```
+
+In React islands, the active language is tracked via `lang` state: `lang === 'hu' ? ... : ...`
+
+---
+
+## Adding a crafting grid
+
+The `CraftingGrid.astro` component looks up recipes from `recipes.json` via the `recipeId` prop:
+
+```astro
+<CraftingGrid recipeId="copper_pickaxe" />
+```
+
+Or pass data directly with the `recipe` prop:
+
+```astro
+<CraftingGrid recipe={{
+  gridSize: "3x3",
+  pattern: [["copper_ingot","copper_ingot","copper_ingot"],["_","stick","_"],["_","stick","_"]],
+  output: "copper_pickaxe",
+  label: { hu: "Réz Csákány", en: "Copper Pickaxe" }
+}} />
+```
+
+**Slot values:**
+- `"_"` — empty slot
+- `"item_id"` — a single item (looked up in `items.json`)
+- `["item_a", "item_b"]` — alternatives (SSR renders the first one)
 
 ---
 
 ## Adding a new mob
 
-Edit `data/mobs.json`. Each mob entry looks like:
+Edit `data/mobs.json`. A mob entry looks like:
 
 ```json
 {
@@ -70,6 +122,8 @@ Edit `data/mobs.json`. Each mob entry looks like:
   "xp": 5,
   "difficulty": "early",
   "mobType": "undead",
+  "spawnZones": ["surface", "underground"],
+  "tags": [],
   "drops": [
     { "item": { "hu": "Csont", "en": "Bone" }, "itemId": "bone", "chance": "100%" }
   ]
@@ -88,17 +142,20 @@ Edit `data/items.json`:
 "my_item": {
   "name": { "hu": "Az én itemem", "en": "My Item" },
   "img": "img/items/my_item.png",
-  "tier": null
+  "tier": null,
+  "category": "tool"
 }
 ```
 
-Add the item image (`32×32 PNG`, pixelated style) to `public/img/items/`.
+Add the texture (`32×32 PNG`, pixelated style) to `public/img/items/`.
+
+**Valid tier values:** `null`, `"flint"`, `"copper"`, `"silver"`, `"gold"`, `"iron"`, `"hard"`, `"ancient"`, `"mithril"`, `"adamantium"`
 
 ---
 
 ## Reference data sources
 
-Game data comes from the mod's `MITE/reference/` text files inside the mod ZIP:
+Game data comes from the mod's `MITE/reference/` directory inside the mod ZIP:
 
 | File | Content |
 |------|---------|
@@ -125,6 +182,7 @@ Game data comes from the mod's `MITE/reference/` text files inside the mod ZIP:
 
 - Always provide both HU and EN for any new content
 - One PR per topic keeps reviews fast
+- Numeric data must be sourced from the mod's reference files
 
 ---
 
@@ -136,4 +194,4 @@ By contributing you agree that your contributions are licensed under [CC BY-NC-N
 
 ## Questions?
 
-Open an [Issue](https://github.com/TornadoGamesNow/mite-be-wiki/issues) or ask on [Discord](https://discord.gg/7myyGAXJ6v).
+Open an [Issue](https://github.com/TornadoGamesNow/mite-be-wiki/issues) or join the [Discord server](https://discord.gg/7myyGAXJ6v).
