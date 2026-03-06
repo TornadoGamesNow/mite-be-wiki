@@ -30740,5 +30740,117 @@
       "blue_compass"
     ],
     "shaped": false
+  },
+  {
+    "id": "hot_water_771960",
+    "item_num": 771960,
+    "output": "hot_water",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 25,
+    "skills": [
+      "foodPreparation"
+    ],
+    "ingredients": [
+      "water_bowl"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bowl_water_784440",
+    "item_num": 784440,
+    "output": "bowl_water",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 25,
+    "skills": [],
+    "ingredients": [
+      "water_bag",
+      "bowl"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bowl_vegetable_soup_772969",
+    "item_num": 772969,
+    "output": "bowl_vegetable_soup",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 75,
+    "skills": [
+      "foodPreparation"
+    ],
+    "ingredients": [
+      "carrot",
+      "onion",
+      "water_bowl"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bowl_cream_of_mushroom_soup_772966",
+    "item_num": 772966,
+    "output": "bowl_cream_of_mushroom_soup",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 25,
+    "skills": [
+      "foodPreparation"
+    ],
+    "ingredients": [
+      "mushroom_brown",
+      "bowl_milk"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bowl_cream_of_vegetable_soup_772967",
+    "item_num": 772967,
+    "output": "bowl_cream_of_vegetable_soup",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 75,
+    "skills": [
+      "foodPreparation"
+    ],
+    "ingredients": [
+      "onion",
+      "carrot",
+      "bowl_milk"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "sand_stone_803852",
+    "item_num": 803852,
+    "output": "sand_stone",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 200,
+    "skills": [
+      "masonry"
+    ],
+    "ingredients": [
+      "sand"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hard_ened_clay_799980",
+    "item_num": 799980,
+    "output": "hard_ened_clay",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 400,
+    "skills": [
+      "masonry"
+    ],
+    "ingredients": [
+      "bricks",
+      "bricks",
+      "bricks",
+      "bricks"
+    ],
+    "shaped": false
   }
 ]
