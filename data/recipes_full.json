@@ -30208,10 +30208,10 @@
       "blacksmithing"
     ],
     "ingredients": [
-      "mithril_ingot",
-      "mithril_ingot",
-      "mithril_ingot",
-      "mithril_ingot",
+      "mithril_bar",
+      "mithril_bar",
+      "mithril_bar",
+      "mithril_bar",
       "chest"
     ],
     "shaped": false
@@ -30227,10 +30227,10 @@
       "blacksmithing"
     ],
     "ingredients": [
-      "adamantium_ingot",
-      "adamantium_ingot",
-      "adamantium_ingot",
-      "adamantium_ingot",
+      "adamantium_bar",
+      "adamantium_bar",
+      "adamantium_bar",
+      "adamantium_bar",
       "chest"
     ],
     "shaped": false
@@ -30341,10 +30341,10 @@
       "blacksmithing"
     ],
     "ingredients": [
-      "mithril_ingot",
-      "mithril_ingot",
-      "mithril_ingot",
-      "mithril_ingot",
+      "mithril_bar",
+      "mithril_bar",
+      "mithril_bar",
+      "mithril_bar",
       "barrel"
     ],
     "shaped": false
@@ -30360,10 +30360,10 @@
       "blacksmithing"
     ],
     "ingredients": [
-      "adamantium_ingot",
-      "adamantium_ingot",
-      "adamantium_ingot",
-      "adamantium_ingot",
+      "adamantium_bar",
+      "adamantium_bar",
+      "adamantium_bar",
+      "adamantium_bar",
       "barrel"
     ],
     "shaped": false

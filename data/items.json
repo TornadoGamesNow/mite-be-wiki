@@ -9238,5 +9238,14 @@
     "img": "img/items/barrel_ancient_metal_upgrade.png",
     "tier": "ancient_metal",
     "category": "material"
+  },
+  "hide": {
+    "name": {
+      "hu": "Nyersbőr",
+      "en": "Hide"
+    },
+    "img": "img/items/leather.png",
+    "tier": null,
+    "category": "material"
   }
 }
