@@ -30852,5 +30852,24 @@
       "bricks"
     ],
     "shaped": false
+  },
+  {
+    "id": "barrel_ancient_metal_upgrade_785078",
+    "item_num": 785078,
+    "output": "barrel_ancient_metal_upgrade",
+    "outputQty": 1,
+    "station": "ancient_metal_workbench",
+    "difficulty": 2800,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "ancient_metal_ingot",
+      "ancient_metal_ingot",
+      "ancient_metal_ingot",
+      "ancient_metal_ingot",
+      "barrel"
+    ],
+    "shaped": false
   }
 ]

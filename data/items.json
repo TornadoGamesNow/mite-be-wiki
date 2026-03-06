@@ -9229,5 +9229,14 @@
     "img": "img/items/high_carbon_steel_boots.png",
     "tier": "high_carbon_steel",
     "category": "armor"
+  },
+  "barrel_ancient_metal_upgrade": {
+    "name": {
+      "hu": "Hordó Ősfémes Fejlesztés",
+      "en": "Barrel Ancient Metal Upgrade"
+    },
+    "img": "img/items/barrel_ancient_metal_upgrade.png",
+    "tier": "ancient_metal",
+    "category": "material"
   }
 }
