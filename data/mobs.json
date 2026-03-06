@@ -4641,7 +4641,7 @@
     "dmgMin": 0,
     "dmgMax": 0,
     "dmgType": "melee",
-    "xp": 1,
+    "xp": 2,
     "spawnZones": [
       "surface"
     ],
@@ -4684,7 +4684,7 @@
     "dmgMin": 0,
     "dmgMax": 0,
     "dmgType": "melee",
-    "xp": 1,
+    "xp": 2,
     "spawnZones": [
       "surface"
     ],
@@ -4736,7 +4736,7 @@
     "dmgMin": 0,
     "dmgMax": 0,
     "dmgType": "melee",
-    "xp": 1,
+    "xp": 2,
     "spawnZones": [
       "surface"
     ],
@@ -4788,7 +4788,7 @@
     "dmgMin": 0,
     "dmgMax": 0,
     "dmgType": "melee",
-    "xp": 1,
+    "xp": 2,
     "spawnZones": [
       "surface"
     ],
@@ -4842,7 +4842,7 @@
     "dmgMin": 4,
     "dmgMax": 4,
     "dmgType": "melee",
-    "xp": 1,
+    "xp": 2,
     "spawnZones": [
       "surface"
     ],
@@ -4877,7 +4877,7 @@
     "dmgMin": 0,
     "dmgMax": 0,
     "dmgType": "melee",
-    "xp": 1,
+    "xp": 2,
     "spawnZones": [
       "surface"
     ],
@@ -4938,7 +4938,7 @@
     "dmgMin": 3,
     "dmgMax": 3,
     "dmgType": "melee",
-    "xp": 1,
+    "xp": 2,
     "spawnZones": [
       "surface"
     ],
