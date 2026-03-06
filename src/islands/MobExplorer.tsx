@@ -28,6 +28,7 @@ interface Mob {
   image?: string | null;
   mobType?: string;
   armor?: number | null;
+  speed?: number | null;
 }
 
 const mobTypeMeta: Record<string, { hu: string; en: string; color: string; bg: string }> = {
@@ -586,6 +587,11 @@ export default function MobExplorer() {
                   { val: dmgDisplay(selectedMob, true), label: `⚔ ${lang === 'hu' ? 'Sebzés' : 'Damage'}`, color: 'var(--accent)' },
                   ...(selectedMob.armor != null ? [{ val: selectedMob.armor, label: `🛡 ${lang === 'hu' ? 'Páncél' : 'Armor'}`, color: 'var(--mithril)' }] : []),
                   { val: selectedMob.xp ?? '?', label: '⭐ XP', color: 'var(--gold)' },
+                  ...(selectedMob.speed != null ? [{
+                    val: selectedMob.speed.toFixed(2),
+                    label: `🏃 ${lang === 'hu' ? 'Sebesség' : 'Speed'}`,
+                    color: 'var(--text)',
+                  }] : []),
                 ].map((s, i, arr) => (
                   <div key={i} style={{ flex: 1, padding: '14px 8px', textAlign: 'center',
                     borderRight: i < arr.length - 1 ? '1px solid var(--surface2)' : 'none' }}>

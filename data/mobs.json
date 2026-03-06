@@ -53,7 +53,8 @@
     "spawnInfo": {
       "hu": "Felszín és föld alatt, éjjel. Nehéz módban 50. réteg alatt nappal is.",
       "en": "Surface and underground at night. Hard mode: below Y=50 also during day."
-    }
+    },
+    "speed": 0.23
   },
   {
     "id": "skeleton",
@@ -106,7 +107,8 @@
     "spawnInfo": {
       "hu": "Felszín és föld alatt, éjjel.",
       "en": "Surface and underground at night."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "creeper",
@@ -160,7 +162,8 @@
     "spawnInfo": {
       "hu": "Felszín, éjjel.",
       "en": "Surface at night."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "spider",
@@ -214,7 +217,8 @@
     "spawnInfo": {
       "hu": "Felszín (éjjel) és föld alatt (éjjel-nappal).",
       "en": "Surface (night) and underground (day and night)."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "wood_spider",
@@ -269,7 +273,8 @@
     "spawnInfo": {
       "hu": "Fás területek, felszín.",
       "en": "Wooded areas, surface."
-    }
+    },
+    "speed": 0.8
   },
   {
     "id": "vampire_bat",
@@ -361,7 +366,8 @@
     "spawnInfo": {
       "hu": "Mélyen a föld alatt; kis mennyiségben a felszínen; Vérhold alatt bárhol.",
       "en": "Deep underground; small amounts on surface; anywhere during Blood Moon."
-    }
+    },
+    "speed": 0.28
   },
   {
     "id": "hell_hound",
@@ -407,7 +413,8 @@
     "spawnInfo": {
       "hu": "Sötét területek, Nether.",
       "en": "Dark areas, Nether."
-    }
+    },
+    "speed": 0.4
   },
   {
     "id": "demon_spider",
@@ -517,7 +524,8 @@
     "spawnInfo": {
       "hu": "Nether, és ritka esetben villámlás után a felszínen.",
       "en": "Nether, and rarely on surface after lightning strikes."
-    }
+    },
+    "speed": 0.5
   },
   {
     "id": "soul_spirit",
@@ -563,7 +571,8 @@
     "spawnInfo": {
       "hu": "Jelenleg nincs természetes megjelenés.",
       "en": "No current natural spawn mechanism."
-    }
+    },
+    "speed": 0.22
   },
   {
     "id": "zombie_caller",
@@ -627,7 +636,8 @@
     "spawnInfo": {
       "hu": "50+ blokkal a felszín alatt.",
       "en": "More than 50 blocks below surface."
-    }
+    },
+    "speed": 0.23
   },
   {
     "id": "dire_wolf",
@@ -681,7 +691,8 @@
     "spawnInfo": {
       "hu": "Tajga vagy jégmező biómok.",
       "en": "Taiga or ice plains biomes."
-    }
+    },
+    "speed": 0.4
   },
   {
     "id": "wight",
@@ -735,7 +746,8 @@
     "spawnInfo": {
       "hu": "Vérhold: felszín; Y=0-40 (mélyebb helyen nagyobb esély). Nehéz módban 50. réteg alatt.",
       "en": "Blood Moon: surface; Y=0–40 (higher chance deeper). Hard mode below Y=50."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "wight_guard",
@@ -789,7 +801,8 @@
     "spawnInfo": {
       "hu": "Mélyen a föld alatt (Underground World).",
       "en": "Deep underground (Underground World)."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "black_widow_spider",
@@ -906,7 +919,8 @@
     "spawnInfo": {
       "hu": "Boszorkánykunyhók és föld alatti területek.",
       "en": "Witch huts and underground areas."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "pillager",
@@ -958,7 +972,8 @@
     "spawnInfo": {
       "hu": "Fosztogató Erőd.",
       "en": "Pillager Outpost."
-    }
+    },
+    "speed": 0.35
   },
   {
     "id": "nether_creeper",
@@ -1004,7 +1019,8 @@
     "spawnInfo": {
       "hu": "Y=20 alatt felszínen és Underground Worldben.",
       "en": "Below Y=20 on surface and in Underground World."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "red_blaze",
@@ -1105,7 +1121,8 @@
     "spawnInfo": {
       "hu": "Wight-okkal azonos mélységen. Az alatta lévő blokk típusától függ (pl. netherrack elementál csak netherrack-en).",
       "en": "Same depth as Wights. Depends on block type beneath it."
-    }
+    },
+    "speed": 0.2
   },
   {
     "id": "giant_vampire_bat",
@@ -1198,7 +1215,8 @@
     "spawnInfo": {
       "hu": "Underground World; legmélyebb föld alatti területek. Vérhold: sivatagokban.",
       "en": "Underground World; darkest underground areas. Blood Moon: deserts."
-    }
+    },
+    "speed": 0.23
   },
   {
     "id": "phase_spider",
@@ -1299,7 +1317,8 @@
     "spawnInfo": {
       "hu": "Felszíni sekély lávataván és folyó lávában. Netherben lávataván.",
       "en": "Shallow lava pools and flowing lava in Overworld. Lava lakes in Nether."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "greater_ghast",
@@ -1426,7 +1445,8 @@
     "spawnInfo": {
       "hu": "Fosztogató Erőd (vezér változat).",
       "en": "Pillager Outpost (captain variant)."
-    }
+    },
+    "speed": 0.35
   },
   {
     "id": "zealot",
@@ -1480,7 +1500,8 @@
     "spawnInfo": {
       "hu": "Föld alatti területek.",
       "en": "Underground areas."
-    }
+    },
+    "speed": 0.35
   },
   {
     "id": "zealot_plains",
@@ -1534,7 +1555,8 @@
     "spawnInfo": {
       "hu": "Síkság biómok.",
       "en": "Plains biomes."
-    }
+    },
+    "speed": 0.35
   },
   {
     "id": "zealot_snowy",
@@ -1588,7 +1610,8 @@
     "spawnInfo": {
       "hu": "Havas biómok.",
       "en": "Snowy biomes."
-    }
+    },
+    "speed": 0.35
   },
   {
     "id": "zealot_jungle",
@@ -1642,7 +1665,8 @@
     "spawnInfo": {
       "hu": "Dzsungel biómok.",
       "en": "Jungle biomes."
-    }
+    },
+    "speed": 0.35
   },
   {
     "id": "bone_lord",
@@ -1687,7 +1711,8 @@
     "spawnInfo": {
       "hu": "Vérhold: eséllyel a felszínen. Underground World spawner.",
       "en": "Blood Moon: chance on surface. Underground World spawner."
-    }
+    },
+    "speed": 0.26
   },
   {
     "id": "ancient_bone_lord",
@@ -1733,7 +1758,8 @@
     "spawnInfo": {
       "hu": "Kizárólag Underground World.",
       "en": "Underground World only."
-    }
+    },
+    "speed": 0.27
   },
   {
     "id": "white_ghoul",
@@ -1776,7 +1802,8 @@
     "spawnInfo": {
       "hu": "Havas/hideg biómok.",
       "en": "Cold/snowy biomes."
-    }
+    },
+    "speed": 0.28
   },
   {
     "id": "black_ghoul",
@@ -1819,7 +1846,8 @@
     "spawnInfo": {
       "hu": "Napfénytől azonnal eltűnik. Mélyen a föld alatt.",
       "en": "Vanishes in sunlight. Deep underground."
-    }
+    },
+    "speed": 0.28
   },
   {
     "id": "shadow",
@@ -1864,7 +1892,8 @@
     "spawnInfo": {
       "hu": "Mélyebben mint a Ghoulok. Vérhold: jégmezők. Underground World.",
       "en": "Deeper than Ghouls. Blood Moon: ice plains. Underground World."
-    }
+    },
+    "speed": 0.23
   },
   {
     "id": "revenant",
@@ -1918,7 +1947,8 @@
     "spawnInfo": {
       "hu": "Kizárólag Underground World. Nagy számban Longdead dungeon-okban.",
       "en": "Underground World only. Large numbers in Longdead dungeons."
-    }
+    },
+    "speed": 0.26
   },
   {
     "id": "brown_slime",
@@ -2140,7 +2170,8 @@
     "spawnInfo": {
       "hu": "Underground World. Napfényen azonnal eltűnik.",
       "en": "Underground World. Vanishes in sunlight."
-    }
+    },
+    "speed": 0.23
   },
   {
     "id": "explosive_silverfish",
@@ -2186,7 +2217,8 @@
     "spawnInfo": {
       "hu": "Nether, netherrack blokkokban rejtőzve.",
       "en": "Nether, hidden inside netherrack."
-    }
+    },
+    "speed": 0.6
   },
   {
     "id": "copper_poison_silverfish",
@@ -2232,7 +2264,8 @@
     "spawnInfo": {
       "hu": "Rézérc bányászatakor; ritka esetben mélységi aknákban kő blokkokban.",
       "en": "When mining copper ore; rarely in stone blocks in deep mine shafts."
-    }
+    },
+    "speed": 0.6
   },
   {
     "id": "ancient_silverfish",
@@ -2278,7 +2311,8 @@
     "spawnInfo": {
       "hu": "Underground World, infestált kőtéglák.",
       "en": "Underground World, infested stone bricks."
-    }
+    },
+    "speed": 0.6
   },
   {
     "id": "clay_golem",
@@ -2375,7 +2409,8 @@
     "spawnInfo": {
       "hu": "Vérhold: eséllyel a felszínen. Underground World: mindig megjelenik egy.",
       "en": "Blood Moon: chance on surface. Underground World: always spawns one."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "ancient_skeleton_lord",
@@ -2430,7 +2465,8 @@
     "spawnInfo": {
       "hu": "Kizárólag Underground World.",
       "en": "Underground World only."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "variant_skeleton_lord",
@@ -2485,7 +2521,8 @@
     "spawnInfo": {
       "hu": "Kizárólag Underground World.",
       "en": "Underground World only."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "obsidian_golem",
@@ -2530,7 +2567,8 @@
     "spawnInfo": {
       "hu": "Felszín alatt, 40+ blokkal.",
       "en": "More than 40 blocks below surface."
-    }
+    },
+    "speed": 0.22
   },
   {
     "id": "plains_zombie",
@@ -2575,7 +2613,8 @@
     "spawnInfo": {
       "hu": "Síkság biómok.",
       "en": "Plains biomes."
-    }
+    },
+    "speed": 0.23
   },
   {
     "id": "plains_skeleton",
@@ -2627,7 +2666,8 @@
     "spawnInfo": {
       "hu": "Síkság biómok.",
       "en": "Plains biomes."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "plains_creeper",
@@ -2672,7 +2712,8 @@
     "spawnInfo": {
       "hu": "Síkság biómok.",
       "en": "Plains biomes."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "plains_spider",
@@ -2726,7 +2767,8 @@
     "spawnInfo": {
       "hu": "Síkság biómok.",
       "en": "Plains biomes."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "snowy_zombie",
@@ -2780,7 +2822,8 @@
     "spawnInfo": {
       "hu": "Havas biómok.",
       "en": "Snowy biomes."
-    }
+    },
+    "speed": 0.23
   },
   {
     "id": "snowy_skeleton",
@@ -2832,7 +2875,8 @@
     "spawnInfo": {
       "hu": "Havas biómok.",
       "en": "Snowy biomes."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "snowy_creeper",
@@ -2886,7 +2930,8 @@
     "spawnInfo": {
       "hu": "Havas biómok.",
       "en": "Snowy biomes."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "snowy_spider",
@@ -2941,7 +2986,8 @@
     "spawnInfo": {
       "hu": "Havas biómok.",
       "en": "Snowy biomes."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "jungle_zombie",
@@ -2986,7 +3032,8 @@
     "spawnInfo": {
       "hu": "Dzsungel biómok.",
       "en": "Jungle biomes."
-    }
+    },
+    "speed": 0.23
   },
   {
     "id": "jungle_skeleton",
@@ -3038,7 +3085,8 @@
     "spawnInfo": {
       "hu": "Dzsungel biómok.",
       "en": "Jungle biomes."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "jungle_creeper",
@@ -3083,7 +3131,8 @@
     "spawnInfo": {
       "hu": "Dzsungel biómok.",
       "en": "Jungle biomes."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "jungle_spider",
@@ -3138,7 +3187,8 @@
     "spawnInfo": {
       "hu": "Dzsungel biómok.",
       "en": "Jungle biomes."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "tnt_skeleton",
@@ -3201,7 +3251,8 @@
     "spawnInfo": {
       "hu": "Y=30 alatt barlangokban/aknákban. [Eltávolítva]",
       "en": "Below Y=30 in caves/mines. [Removed]"
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "confused_creeper",
@@ -3246,7 +3297,8 @@
     "spawnInfo": {
       "hu": "Éjjel, síkság és dzsungel biómok.",
       "en": "Nighttime, plains and jungle biomes."
-    }
+    },
+    "speed": 0.24
   },
   {
     "id": "end_lightning_creeper",
@@ -3291,7 +3343,8 @@
     "spawnInfo": {
       "hu": "Kizárólag vihar/zivatar időben.",
       "en": "Thunderstorm/rainstorm weather only."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "little_creeper",
@@ -3336,7 +3389,8 @@
     "spawnInfo": {
       "hu": "Azonos a vanília creeperrel.",
       "en": "Same as vanilla creeper."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "bomber",
@@ -3382,7 +3436,8 @@
     "spawnInfo": {
       "hu": "Jelenleg nincs természetes megjelenési mechanizmus.",
       "en": "No current natural spawn mechanism."
-    }
+    },
+    "speed": 0.21
   },
   {
     "id": "corrupted_snowman",
@@ -3427,7 +3482,8 @@
     "spawnInfo": {
       "hu": "Havas biómok.",
       "en": "Snowy biomes."
-    }
+    },
+    "speed": 0.23
   },
   {
     "id": "desert_guardian",
@@ -3479,7 +3535,8 @@
     "spawnInfo": {
       "hu": "Sivatagi templomok.",
       "en": "Desert Temples."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "pigman_leader",
@@ -3577,7 +3634,8 @@
     "spawnInfo": {
       "hu": "Véletlenszerűen felszínen és Underground Worldben.",
       "en": "Randomly on surface and in Underground World."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "child_iron_golem",
@@ -3620,7 +3678,8 @@
     "spawnInfo": {
       "hu": "Falvak közelén.",
       "en": "Near villages."
-    }
+    },
+    "speed": 0.24
   },
   {
     "id": "child_ghast",
@@ -3666,7 +3725,8 @@
     "spawnInfo": {
       "hu": "Nether (véletlenszerű megjelenés).",
       "en": "Nether (random spawn)."
-    }
+    },
+    "speed": 0.11
   },
   {
     "id": "variant_child_ghast",
@@ -3712,7 +3772,8 @@
     "spawnInfo": {
       "hu": "Nether (véletlenszerű megjelenés).",
       "en": "Nether (random spawn)."
-    }
+    },
+    "speed": 0.11
   },
   {
     "id": "variant_zombie",
@@ -3758,7 +3819,8 @@
     "spawnInfo": {
       "hu": "Kizárólag Vérhold esemény alatt.",
       "en": "Blood Moon event only."
-    }
+    },
+    "speed": 0.23
   },
   {
     "id": "variant_skeleton",
@@ -3811,7 +3873,8 @@
     "spawnInfo": {
       "hu": "Kizárólag Vérhold esemény.",
       "en": "Blood Moon event only."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "variant_spider",
@@ -3867,7 +3930,8 @@
     "spawnInfo": {
       "hu": "Kizárólag Vérhold esemény.",
       "en": "Blood Moon event only."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "variant_creeper",
@@ -3912,7 +3976,8 @@
     "spawnInfo": {
       "hu": "Kizárólag Vérhold esemény.",
       "en": "Blood Moon event only."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "him",
@@ -4111,7 +4176,8 @@
     "spawnInfo": {
       "hu": "Bányaaknák, kő blokkokban rejtőzve.",
       "en": "Mine shafts, hiding in stone blocks."
-    }
+    },
+    "speed": 0.35
   },
   {
     "id": "blaze",
@@ -4158,7 +4224,8 @@
     "spawnInfo": {
       "hu": "Nether Erőd.",
       "en": "Nether Fortress."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "magma_cube",
@@ -4203,7 +4270,8 @@
     "spawnInfo": {
       "hu": "Nether, lávataván.",
       "en": "Nether, near lava."
-    }
+    },
+    "speed": 0.2
   },
   {
     "id": "wither",
@@ -4295,7 +4363,8 @@
     "spawnInfo": {
       "hu": "Felszín (éjjel), Nether, End dimenzió.",
       "en": "Surface (night), Nether, End dimension."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "silverfish",
@@ -4330,7 +4399,8 @@
     "spawnInfo": {
       "hu": "Infestált kőzet blokkokban bányászatakor.",
       "en": "In infested stone blocks when mined."
-    }
+    },
+    "speed": 0.6
   },
   {
     "id": "ender_dragon",
@@ -4437,7 +4507,8 @@
     "spawnInfo": {
       "hu": "Falvakban természetesen jelenik meg; játékos is létrehozhatja.",
       "en": "Naturally in villages; player-constructable."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "vindicator",
@@ -4479,7 +4550,7 @@
         "itemId": "iron_axe"
       }
     ],
-    "image": null,
+    "image": "vindicator.png",
     "mobType": "monster",
     "armor": 0,
     "description": {
@@ -4489,7 +4560,8 @@
     "spawnInfo": {
       "hu": "V0.9.0-ban hozzáadva.",
       "en": "Added in v0.9.0."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "earthworm",
@@ -4532,7 +4604,8 @@
     "spawnInfo": {
       "hu": "Fű/föld blokkok ásásakor (3%).",
       "en": "When mining grass/dirt blocks (3%)."
-    }
+    },
+    "speed": 0.18
   },
   {
     "id": "crab",
@@ -4584,7 +4657,8 @@
     "spawnInfo": {
       "hu": "Folyók mentén homokon.",
       "en": "On sand near rivers."
-    }
+    },
+    "speed": 0.23
   },
   {
     "id": "mallard",
@@ -4672,7 +4746,8 @@
     "spawnInfo": {
       "hu": "Síkság, erdő, bármely füves bióm.",
       "en": "Plains, forest, any grassy biome."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "sheep",
@@ -4724,7 +4799,8 @@
     "spawnInfo": {
       "hu": "Síkság, erdő, bármely füves bióm.",
       "en": "Plains, forest, any grassy biome."
-    }
+    },
+    "speed": 0.23
   },
   {
     "id": "cow",
@@ -4776,7 +4852,8 @@
     "spawnInfo": {
       "hu": "Síkság, erdő, bármely füves bióm.",
       "en": "Plains, forest, any grassy biome."
-    }
+    },
+    "speed": 0.2
   },
   {
     "id": "chicken",
@@ -4830,7 +4907,8 @@
     "spawnInfo": {
       "hu": "Síkság, erdő, bármely füves bióm.",
       "en": "Plains, forest, any grassy biome."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "wolf",
@@ -4865,7 +4943,8 @@
     "spawnInfo": {
       "hu": "Tajga, erdő biómok.",
       "en": "Taiga, forest biomes."
-    }
+    },
+    "speed": 0.4
   },
   {
     "id": "mooshroom",
@@ -4926,7 +5005,8 @@
     "spawnInfo": {
       "hu": "Kizárólag gombás sztyeppe bióm.",
       "en": "Mushroom field biome only."
-    }
+    },
+    "speed": 0.2
   },
   {
     "id": "ocelot",
@@ -4959,7 +5039,8 @@
     "spawnInfo": {
       "hu": "Dzsungel biómok.",
       "en": "Jungle biomes."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "horse",
@@ -5002,7 +5083,8 @@
     "spawnInfo": {
       "hu": "Síkság, szavanna biómok.",
       "en": "Plains, savanna biomes."
-    }
+    },
+    "speed": 0.2
   },
   {
     "id": "medium_fish",
@@ -5231,7 +5313,8 @@
     "spawnInfo": {
       "hu": "Óceán biómok.",
       "en": "Ocean biomes."
-    }
+    },
+    "speed": 0.3
   },
   {
     "id": "bee",
@@ -5880,7 +5963,8 @@
     "spawnInfo": {
       "hu": "Havas tundra biómok.",
       "en": "Snowy tundra biomes."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "grizzly_bear",
@@ -6158,7 +6242,8 @@
     "spawnInfo": {
       "hu": "Fennsík és sivatag biómok.",
       "en": "Plateau and desert biomes."
-    }
+    },
+    "speed": 0.175
   },
   {
     "id": "pheasant",
