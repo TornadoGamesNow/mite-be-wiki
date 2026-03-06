@@ -627,7 +627,8 @@
     },
     "img": "img/items/copper_hoe.png",
     "tier": "copper",
-    "category": "tool"
+    "category": "tool",
+    "max_durability": 3200
   },
   "copper_shovel": {
     "name": {
@@ -681,7 +682,8 @@
     },
     "img": "img/items/copper_mattock.png",
     "tier": "copper",
-    "category": "tool"
+    "category": "tool",
+    "max_durability": 6400
   },
   "copper_scythe": {
     "name": {
@@ -744,7 +746,8 @@
     },
     "img": "img/items/gold_sword.png",
     "tier": "gold",
-    "category": "weapon"
+    "category": "weapon",
+    "max_durability": 3200
   },
   "gold_pickaxe": {
     "name": {
@@ -771,7 +774,8 @@
     },
     "img": "img/items/gold_war_hammer.png",
     "tier": "gold",
-    "category": "weapon"
+    "category": "weapon",
+    "max_durability": 8000
   },
   "iron_sword": {
     "name": {
@@ -780,7 +784,8 @@
     },
     "img": "img/items/rusted_iron_sword.png",
     "tier": "iron",
-    "category": "weapon"
+    "category": "weapon",
+    "max_durability": 6400
   },
   "iron_pickaxe": {
     "name": {
@@ -807,7 +812,8 @@
     },
     "img": "img/items/iron_war_hammer.png",
     "tier": "iron",
-    "category": "weapon"
+    "category": "weapon",
+    "max_durability": 16000
   },
   "iron_hoe": {
     "name": {
@@ -816,7 +822,8 @@
     },
     "img": "img/items/rusted_iron_hoe.png",
     "tier": "iron",
-    "category": "tool"
+    "category": "tool",
+    "max_durability": 6400
   },
   "iron_shovel": {
     "name": {
@@ -861,7 +868,8 @@
     },
     "img": "img/items/iron_battle_axe.png",
     "tier": "iron",
-    "category": "weapon"
+    "category": "weapon",
+    "max_durability": 12800
   },
   "iron_mattock": {
     "name": {
@@ -870,7 +878,8 @@
     },
     "img": "img/items/iron_mattock.png",
     "tier": "iron",
-    "category": "tool"
+    "category": "tool",
+    "max_durability": 12800
   },
   "iron_scythe": {
     "name": {
@@ -906,7 +915,8 @@
     },
     "img": "img/items/hardstone_war_hammer.png",
     "tier": "hard",
-    "category": "weapon"
+    "category": "weapon",
+    "max_durability": 26000
   },
   "hardstone_hoe": {
     "name": {
@@ -915,7 +925,8 @@
     },
     "img": "img/items/hardstone_hoe.png",
     "tier": "hard",
-    "category": "tool"
+    "category": "tool",
+    "max_durability": 11200
   },
   "hardstone_helmet": {
     "name": {
@@ -1050,7 +1061,8 @@
     },
     "img": "img/items/adamantium_axe.png",
     "tier": "adamantium",
-    "category": "tool"
+    "category": "tool",
+    "max_durability": 307200
   },
   "adamantium_war_hammer": {
     "name": {
@@ -1248,7 +1260,8 @@
     },
     "img": "img/items/big_water_bag.png",
     "tier": null,
-    "category": "tool"
+    "category": "tool",
+    "max_durability": 8
   },
   "wooden_water_filter": {
     "name": {
@@ -1275,7 +1288,8 @@
     },
     "img": "img/items/filter_paper.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "max_durability": 36
   },
   "ancient_metal_filter_paper": {
     "name": {
@@ -1624,7 +1638,9 @@
       "en": "Gold Battle Axe"
     },
     "img": "img/items/gold_battle_axe.png",
-    "tier": "gold"
+    "tier": "gold",
+    "max_durability": 6400,
+    "category": "weapon"
   },
   "mithril_battle_axe": {
     "name": {
@@ -1656,7 +1672,9 @@
       "en": "Hardstone Battle Axe"
     },
     "img": "img/items/hardstone_battle_axe.png",
-    "tier": "hard"
+    "tier": "hard",
+    "max_durability": 22800,
+    "category": "weapon"
   },
   "silver_mattock": {
     "name": {
@@ -1664,7 +1682,9 @@
       "en": "Silver Mattock"
     },
     "img": "img/items/silver_mattock.png",
-    "tier": "silver"
+    "tier": "silver",
+    "max_durability": 6400,
+    "category": "tool"
   },
   "gold_mattock": {
     "name": {
@@ -1672,7 +1692,9 @@
       "en": "Gold Mattock"
     },
     "img": "img/items/gold_mattock.png",
-    "tier": "gold"
+    "tier": "gold",
+    "max_durability": 6400,
+    "category": "tool"
   },
   "mithril_mattock": {
     "name": {
@@ -1680,7 +1702,9 @@
       "en": "Mithril Mattock"
     },
     "img": "img/items/mithril_mattock.png",
-    "tier": "mithril"
+    "tier": "mithril",
+    "max_durability": 115200,
+    "category": "tool"
   },
   "adamantium_mattock": {
     "name": {
@@ -1688,7 +1712,9 @@
       "en": "Adamantium Mattock"
     },
     "img": "img/items/adamantium_mattock.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "max_durability": 409600,
+    "category": "tool"
   },
   "ancient_metal_mattock": {
     "name": {
@@ -1696,7 +1722,9 @@
       "en": "Ancient Metal Mattock"
     },
     "img": "img/items/ancient_metal_mattock.png",
-    "tier": "ancient"
+    "tier": "ancient",
+    "max_durability": 41600,
+    "category": "tool"
   },
   "hardstone_mattock": {
     "name": {
@@ -1704,7 +1732,9 @@
       "en": "Hardstone Mattock"
     },
     "img": "img/items/hardstone_mattock.png",
-    "tier": "hard"
+    "tier": "hard",
+    "max_durability": 22800,
+    "category": "tool"
   },
   "silver_scythe": {
     "name": {
@@ -1728,7 +1758,9 @@
       "en": "Mithril Scythe"
     },
     "img": "img/items/mithril_scythe.png",
-    "tier": "mithril"
+    "tier": "mithril",
+    "max_durability": 64000,
+    "category": "tool"
   },
   "adamantium_scythe": {
     "name": {
@@ -1736,7 +1768,9 @@
       "en": "Adamantium Scythe"
     },
     "img": "img/items/adamantium_scythe.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "max_durability": 204800,
+    "category": "tool"
   },
   "ancient_metal_scythe": {
     "name": {
@@ -1744,7 +1778,9 @@
       "en": "Ancient Metal Scythe"
     },
     "img": "img/items/ancient_metal_scythe.png",
-    "tier": "ancient"
+    "tier": "ancient",
+    "max_durability": 22400,
+    "category": "tool"
   },
   "hardstone_scythe": {
     "name": {
@@ -1856,7 +1892,9 @@
       "en": "Silver Hoe"
     },
     "img": "img/items/silver_hoe.png",
-    "tier": "silver"
+    "tier": "silver",
+    "max_durability": 3200,
+    "category": "tool"
   },
   "gold_hoe": {
     "name": {
@@ -1864,7 +1902,9 @@
       "en": "Gold Hoe"
     },
     "img": "img/items/gold_hoe.png",
-    "tier": "gold"
+    "tier": "gold",
+    "max_durability": 3200,
+    "category": "tool"
   },
   "mithril_hoe": {
     "name": {
@@ -1872,7 +1912,9 @@
       "en": "Mithril Hoe"
     },
     "img": "img/items/mithril_hoe.png",
-    "tier": "mithril"
+    "tier": "mithril",
+    "max_durability": 64000,
+    "category": "tool"
   },
   "adamantium_hoe": {
     "name": {
@@ -1880,7 +1922,9 @@
       "en": "Adamantium Hoe"
     },
     "img": "img/items/adamantium_hoe.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "max_durability": 204800,
+    "category": "tool"
   },
   "ancient_metal_hoe": {
     "name": {
@@ -1888,7 +1932,9 @@
       "en": "Ancient Metal Hoe"
     },
     "img": "img/items/ancient_metal_hoe.png",
-    "tier": "ancient"
+    "tier": "ancient",
+    "max_durability": 22400,
+    "category": "tool"
   },
   "ancient_metal_shears": {
     "name": {
@@ -1964,7 +2010,8 @@
       "en": "Mithril Arrow"
     },
     "img": "img/items/mithril_arrow.png",
-    "tier": "mithril"
+    "tier": "mithril",
+    "category": "weapon"
   },
   "adamantium_arrow": {
     "name": {
@@ -1987,7 +2034,8 @@
       "en": "Ancient Metal Arrow"
     },
     "img": "img/items/ancient_metal_arrow.png",
-    "tier": "ancient"
+    "tier": "ancient",
+    "category": "weapon"
   },
   "bowl": {
     "name": {
@@ -2258,7 +2306,8 @@
       "en": "Ancient Metal Barrel Upgrade"
     },
     "img": "img/items/ancient_metal_barrel_upgrade.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "ancient_metal_block": {
     "name": {
@@ -2730,7 +2779,9 @@
       "en": "Bone Club"
     },
     "img": "img/items/bone_club.png",
-    "tier": null
+    "tier": null,
+    "max_durability": 550,
+    "category": "weapon"
   },
   "bone_meal": {
     "name": {
@@ -2770,7 +2821,8 @@
       "en": "Bottle of Disenchanting"
     },
     "img": "img/items/bottle_of_disenchanting.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "bowl_milk": {
     "name": {
@@ -2803,7 +2855,8 @@
       "en": "Brick"
     },
     "img": "img/items/brick.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "brick_slab_single": {
     "name": {
@@ -2835,7 +2888,9 @@
       "en": "Bronze War Hammer"
     },
     "img": "img/items/bronze_war_hammer.png",
-    "tier": "copper"
+    "tier": "copper",
+    "max_durability": 12000,
+    "category": "weapon"
   },
   "brown_bed": {
     "name": {
@@ -2915,7 +2970,8 @@
       "en": "Carbon Crystal"
     },
     "img": "img/items/carbon_crystal.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "carpet": {
     "name": {
@@ -3011,7 +3067,8 @@
       "en": "Cauldron"
     },
     "img": "img/items/cauldron.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "cheese": {
     "name": {
@@ -3083,7 +3140,8 @@
       "en": "Clock"
     },
     "img": "img/items/clock.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "clock_knowledge_book": {
     "name": {
@@ -3419,7 +3477,8 @@
       "en": "Dahlia"
     },
     "img": "img/items/dahlia.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "daisy": {
     "name": {
@@ -3427,7 +3486,8 @@
       "en": "Daisy"
     },
     "img": "img/items/daisy.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "dandelion": {
     "name": {
@@ -3539,7 +3599,8 @@
       "en": "Elemental Obsidian"
     },
     "img": "img/items/element_obsidian.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "elemental_water_skin_knowledge_book": {
     "name": {
@@ -3571,7 +3632,8 @@
       "en": "Empty Antique Atlas"
     },
     "img": "img/items/empty_antique_atlas.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "empty_large_water_skin": {
     "name": {
@@ -3587,7 +3649,8 @@
       "en": "Empty Map"
     },
     "img": "img/items/empty_map.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "empty_water_skin": {
     "name": {
@@ -3779,7 +3842,9 @@
       "en": "Flint Pickaxe"
     },
     "img": "img/items/flint_pickaxe.png",
-    "tier": "flint"
+    "tier": "flint",
+    "max_durability": 1200,
+    "category": "tool"
   },
   "flint_shovel": {
     "name": {
@@ -3795,7 +3860,8 @@
       "en": "Flour"
     },
     "img": "img/food/flour.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "flower_pot": {
     "name": {
@@ -3827,7 +3893,8 @@
       "en": "Glass"
     },
     "img": "img/shards/glass.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "glass_bottle": {
     "name": {
@@ -4243,7 +4310,9 @@
       "en": "Hardstone Dagger"
     },
     "img": "img/items/hard_stone_dagger.png",
-    "tier": "hard"
+    "tier": "hard",
+    "max_durability": 9200,
+    "category": "weapon"
   },
   "hard_stone_flint_and_steel": {
     "name": {
@@ -4411,7 +4480,9 @@
       "en": "High Carbon Steel War Hammer"
     },
     "img": "img/items/high_carbon_steel_war_hammer.png",
-    "tier": "iron"
+    "tier": "iron",
+    "max_durability": 22000,
+    "category": "weapon"
   },
   "hopper": {
     "name": {
@@ -4995,7 +5066,8 @@
       "en": "Map"
     },
     "img": "img/items/map.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "mashed_potato": {
     "name": {
@@ -5035,7 +5107,8 @@
       "en": "Mercury Nugget"
     },
     "img": "img/items/mercury_nugget.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "mercury_ore": {
     "name": {
@@ -5107,7 +5180,8 @@
       "en": "Mint Leaf"
     },
     "img": "img/items/mint_leaf.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "mint_salad": {
     "name": {
@@ -5339,7 +5413,8 @@
       "en": "Nether Brick"
     },
     "img": "img/items/nether_brick.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "nether_brick_fence": {
     "name": {
@@ -5539,7 +5614,8 @@
       "en": "Allium"
     },
     "img": "img/items/onion_allium.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "orange": {
     "name": {
@@ -5595,7 +5671,8 @@
       "en": "Orchid"
     },
     "img": "img/items/orchid.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "painting": {
     "name": {
@@ -5851,7 +5928,8 @@
       "en": "Quiver"
     },
     "img": "img/items/quiver.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "rail": {
     "name": {
@@ -6163,7 +6241,8 @@
       "en": "Sign"
     },
     "img": "img/items/sign.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "silver_anvil": {
     "name": {
@@ -6259,7 +6338,9 @@
       "en": "Silver-Copper War Hammer"
     },
     "img": "img/items/silver_copper_war_hammer.png",
-    "tier": "silver"
+    "tier": "silver",
+    "max_durability": 13000,
+    "category": "weapon"
   },
   "silver_door": {
     "name": {
@@ -6675,7 +6756,8 @@
       "en": "Stone"
     },
     "img": "img/blocks/stone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "stone_brick_slab_single": {
     "name": {
@@ -6739,7 +6821,8 @@
       "en": "Stone Slab"
     },
     "img": "img/items/stone_slab_single.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "stone_stairs": {
     "name": {
@@ -6835,7 +6918,8 @@
       "en": "Tulip"
     },
     "img": "img/items/tulip.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "vegetable_soup": {
     "name": {
@@ -6867,7 +6951,8 @@
       "en": "Water Bowl"
     },
     "img": "img/items/water_bowl.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "water_filter": {
     "name": {
@@ -7491,7 +7576,9 @@
       "en": "Crossbow"
     },
     "img": "img/items/crossbow.png",
-    "tier": null
+    "tier": null,
+    "max_durability": 326,
+    "category": "weapon"
   },
   "illager_banner": {
     "name": {
@@ -7563,7 +7650,9 @@
       "en": "Chip Flint Knife"
     },
     "img": "img/items/chip_flint_knife.png",
-    "tier": 1
+    "tier": 1,
+    "max_durability": 100,
+    "category": "tool"
   },
   "redstone_ore": {
     "name": {
@@ -7698,7 +7787,8 @@
     },
     "img": "img/items/mesh_string.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "max_durability": 16
   },
   "mesh_leather": {
     "name": {
@@ -7707,7 +7797,8 @@
     },
     "img": "img/items/mesh_leather.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "max_durability": 8
   },
   "ex_eye_of_ender": {
     "name": {
@@ -8517,7 +8608,8 @@
     },
     "img": "img/items/obsidian_ingot_mould.png",
     "tier": "obsidian",
-    "category": "material"
+    "category": "material",
+    "max_durability": 10
   },
   "obsidian_ingot_cool_mould": {
     "name": {
@@ -8526,7 +8618,8 @@
     },
     "img": "img/items/obsidian_ingot_cool_mould.png",
     "tier": "obsidian",
-    "category": "material"
+    "category": "material",
+    "max_durability": 10
   },
   "skin_cream_bottle": {
     "name": {
@@ -8571,7 +8664,8 @@
     },
     "img": "img/items/high_carbon_steel_hatchet.png",
     "tier": "high_carbon_steel",
-    "category": "material"
+    "category": "material",
+    "max_durability": 9200
   },
   "rusted_iron_axe": {
     "name": {
@@ -8589,7 +8683,8 @@
     },
     "img": "img/items/bronze_axe.png",
     "tier": "bronze",
-    "category": "material"
+    "category": "material",
+    "max_durability": 6000
   },
   "silver_copper_axe": {
     "name": {
@@ -8598,7 +8693,8 @@
     },
     "img": "img/items/silver_copper_axe.png",
     "tier": "silver_copper",
-    "category": "material"
+    "category": "material",
+    "max_durability": 7000
   },
   "high_carbon_steel_axe": {
     "name": {
@@ -8607,7 +8703,8 @@
     },
     "img": "img/items/high_carbon_steel_axe.png",
     "tier": "high_carbon_steel",
-    "category": "material"
+    "category": "material",
+    "max_durability": 12800
   },
   "rusted_iron_pickaxe": {
     "name": {
@@ -8625,7 +8722,8 @@
     },
     "img": "img/items/bronze_pickaxe.png",
     "tier": "bronze",
-    "category": "material"
+    "category": "material",
+    "max_durability": 6000
   },
   "silver_copper_pickaxe": {
     "name": {
@@ -8634,7 +8732,8 @@
     },
     "img": "img/items/silver_copper_pickaxe.png",
     "tier": "silver_copper",
-    "category": "material"
+    "category": "material",
+    "max_durability": 7000
   },
   "high_carbon_steel_pickaxe": {
     "name": {
@@ -8643,7 +8742,8 @@
     },
     "img": "img/items/high_carbon_steel_pickaxe.png",
     "tier": "high_carbon_steel",
-    "category": "material"
+    "category": "material",
+    "max_durability": 12800
   },
   "rusted_iron_shovel": {
     "name": {
@@ -8661,7 +8761,8 @@
     },
     "img": "img/items/bronze_shovel.png",
     "tier": "bronze",
-    "category": "material"
+    "category": "material",
+    "max_durability": 2000
   },
   "silver_copper_shovel": {
     "name": {
@@ -8670,7 +8771,8 @@
     },
     "img": "img/items/silver_copper_shovel.png",
     "tier": "silver_copper",
-    "category": "material"
+    "category": "material",
+    "max_durability": 3000
   },
   "high_carbon_steel_shovel": {
     "name": {
@@ -8679,7 +8781,8 @@
     },
     "img": "img/items/high_carbon_steel_shovel.png",
     "tier": "high_carbon_steel",
-    "category": "material"
+    "category": "material",
+    "max_durability": 4200
   },
   "rusted_iron_hoe": {
     "name": {
@@ -8688,7 +8791,8 @@
     },
     "img": "img/items/rusted_iron_hoe.png",
     "tier": "rusted_iron",
-    "category": "material"
+    "category": "material",
+    "max_durability": 2400
   },
   "high_carbon_steel_hoe": {
     "name": {
@@ -8697,7 +8801,8 @@
     },
     "img": "img/items/high_carbon_steel_hoe.png",
     "tier": "high_carbon_steel",
-    "category": "material"
+    "category": "material",
+    "max_durability": 9600
   },
   "rusted_iron_mattock": {
     "name": {
@@ -8706,7 +8811,8 @@
     },
     "img": "img/items/rusted_iron_mattock.png",
     "tier": "rusted_iron",
-    "category": "material"
+    "category": "material",
+    "max_durability": 4800
   },
   "high_carbon_steel_mattock": {
     "name": {
@@ -8715,7 +8821,8 @@
     },
     "img": "img/items/high_carbon_steel_mattock.png",
     "tier": "high_carbon_steel",
-    "category": "material"
+    "category": "material",
+    "max_durability": 18800
   },
   "rusted_iron_scythe": {
     "name": {
@@ -8733,7 +8840,8 @@
     },
     "img": "img/items/high_carbon_steel_scythe.png",
     "tier": "high_carbon_steel",
-    "category": "material"
+    "category": "material",
+    "max_durability": 12240
   },
   "rusted_iron_shears": {
     "name": {
@@ -8751,7 +8859,8 @@
     },
     "img": "img/items/high_carbon_steel_shears.png",
     "tier": "high_carbon_steel",
-    "category": "material"
+    "category": "material",
+    "max_durability": 9600
   },
   "water_bag_copper": {
     "name": {
@@ -8760,7 +8869,8 @@
     },
     "img": "img/items/water_bag_copper.png",
     "tier": "copper",
-    "category": "material"
+    "category": "material",
+    "max_durability": 5
   },
   "water_bag_silver": {
     "name": {
@@ -8769,7 +8879,8 @@
     },
     "img": "img/items/water_bag_silver.png",
     "tier": "silver",
-    "category": "material"
+    "category": "material",
+    "max_durability": 5
   },
   "water_bag_gold": {
     "name": {
@@ -8778,7 +8889,8 @@
     },
     "img": "img/items/water_bag_gold.png",
     "tier": "gold",
-    "category": "material"
+    "category": "material",
+    "max_durability": 8
   },
   "water_bag_iron": {
     "name": {
@@ -8787,7 +8899,8 @@
     },
     "img": "img/items/water_bag_iron.png",
     "tier": "iron",
-    "category": "material"
+    "category": "material",
+    "max_durability": 7
   },
   "water_bag_hard": {
     "name": {
@@ -8796,7 +8909,8 @@
     },
     "img": "img/items/water_bag_hard.png",
     "tier": "hard",
-    "category": "material"
+    "category": "material",
+    "max_durability": 10
   },
   "water_bag_ancient_metal": {
     "name": {
@@ -8805,7 +8919,8 @@
     },
     "img": "img/items/water_bag_ancient_metal.png",
     "tier": "ancient_metal",
-    "category": "material"
+    "category": "material",
+    "max_durability": 12
   },
   "water_bag_mithril": {
     "name": {
@@ -8814,7 +8929,8 @@
     },
     "img": "img/items/water_bag_mithril.png",
     "tier": "mithril",
-    "category": "material"
+    "category": "material",
+    "max_durability": 14
   },
   "water_bag_adamantium": {
     "name": {
@@ -8823,7 +8939,8 @@
     },
     "img": "img/items/water_bag_adamantium.png",
     "tier": "adamantium",
-    "category": "material"
+    "category": "material",
+    "max_durability": 16
   },
   "water_bag_mercury": {
     "name": {
@@ -8832,7 +8949,8 @@
     },
     "img": "img/items/water_bag_mercury.png",
     "tier": "mercury",
-    "category": "material"
+    "category": "material",
+    "max_durability": 16
   },
   "wood_cudgel": {
     "name": {
@@ -8904,7 +9022,8 @@
     },
     "img": "img/items/flint_spear.png",
     "tier": "flint",
-    "category": "material"
+    "category": "material",
+    "max_durability": 10
   },
   "bone_cudgel": {
     "name": {
@@ -8913,7 +9032,8 @@
     },
     "img": "img/items/bone_cudgel.png",
     "tier": "bone",
-    "category": "material"
+    "category": "material",
+    "max_durability": 300
   },
   "rusted_iron_sword": {
     "name": {
@@ -8931,7 +9051,8 @@
     },
     "img": "img/items/bronze_sword.png",
     "tier": "bronze",
-    "category": "material"
+    "category": "material",
+    "max_durability": 4000
   },
   "silver_copper_sword": {
     "name": {
@@ -8940,7 +9061,8 @@
     },
     "img": "img/items/silver_copper_sword.png",
     "tier": "silver_copper",
-    "category": "material"
+    "category": "material",
+    "max_durability": 5000
   },
   "high_carbon_steel_sword": {
     "name": {
@@ -8949,7 +9071,8 @@
     },
     "img": "img/items/high_carbon_steel_sword.png",
     "tier": "high_carbon_steel",
-    "category": "material"
+    "category": "material",
+    "max_durability": 7200
   },
   "rusted_iron_battle_axe": {
     "name": {
@@ -8967,7 +9090,8 @@
     },
     "img": "img/items/bronze_battle_axe.png",
     "tier": "bronze",
-    "category": "material"
+    "category": "material",
+    "max_durability": 8800
   },
   "silver_copper_battle_axe": {
     "name": {
@@ -8976,7 +9100,8 @@
     },
     "img": "img/items/silver_copper_battle_axe.png",
     "tier": "silver_copper",
-    "category": "material"
+    "category": "material",
+    "max_durability": 9800
   },
   "high_carbon_steel_battle_axe": {
     "name": {
@@ -8985,7 +9110,8 @@
     },
     "img": "img/items/high_carbon_steel_battle_axe.png",
     "tier": "high_carbon_steel",
-    "category": "material"
+    "category": "material",
+    "max_durability": 18800
   },
   "silver_dagger": {
     "name": {
@@ -9048,7 +9174,8 @@
     },
     "img": "img/items/high_carbon_steel_dagger.png",
     "tier": "high_carbon_steel",
-    "category": "material"
+    "category": "material",
+    "max_durability": 9200
   },
   "rusted_iron_arrow": {
     "name": {
@@ -9245,6 +9372,123 @@
       "en": "Hide"
     },
     "img": "img/items/leather.png",
+    "tier": null,
+    "category": "material"
+  },
+  "raincoat": {
+    "name": {
+      "hu": "Esőkabát",
+      "en": "Raincoat"
+    },
+    "img": "img/items/raincoat.png",
+    "tier": null,
+    "category": "material"
+  },
+  "torch_gun": {
+    "name": {
+      "hu": "Fáklya Puska",
+      "en": "Torch Gun"
+    },
+    "img": "img/items/torch_gun.png",
+    "tier": null,
+    "category": "material"
+  },
+  "towerrack": {
+    "name": {
+      "hu": "Kőoszlop",
+      "en": "Towerrack"
+    },
+    "img": "img/items/towerrack.png",
+    "tier": null,
+    "category": "material"
+  },
+  "bucket_stone": {
+    "name": {
+      "hu": "Kővel Teli Vödör",
+      "en": "Bucket Stone"
+    },
+    "img": "img/items/bucket_stone.png",
+    "tier": null,
+    "category": "material"
+  },
+  "bucket_liquefied_gold": {
+    "name": {
+      "hu": "Olvadt Arannyal Teli Vödör",
+      "en": "Bucket Liquefied Gold"
+    },
+    "img": "img/items/bucket_liquefied_gold.png",
+    "tier": "gold",
+    "category": "material"
+  },
+  "fluid_tank": {
+    "name": {
+      "hu": "Víztartály",
+      "en": "Fluid Tank"
+    },
+    "img": "img/items/fluid_tank.png",
+    "tier": null,
+    "category": "material"
+  },
+  "bucket_clean_water": {
+    "name": {
+      "hu": "Tiszta Vízzel Teli Vödör",
+      "en": "Bucket Clean Water"
+    },
+    "img": "img/items/bucket_clean_water.png",
+    "tier": null,
+    "category": "material"
+  },
+  "jewelry_shield": {
+    "name": {
+      "hu": "Ékszer Pajzs",
+      "en": "Jewelry Shield"
+    },
+    "img": "img/items/jewelry_shield.png",
+    "tier": null,
+    "category": "material"
+  },
+  "advanced_filter_paper": {
+    "name": {
+      "hu": "Fejlett Szűrőpapír",
+      "en": "Advanced Filter Paper"
+    },
+    "img": "img/items/advanced_filter_paper.png",
+    "tier": null,
+    "category": "material"
+  },
+  "bucket_liquefied_mercury": {
+    "name": {
+      "hu": "Olvadt Higannyal Teli Vödör",
+      "en": "Bucket Liquefied Mercury"
+    },
+    "img": "img/items/bucket_liquefied_mercury.png",
+    "tier": null,
+    "category": "material"
+  },
+  "conveying_stone": {
+    "name": {
+      "hu": "Teleportáló Kő",
+      "en": "Conveying Stone"
+    },
+    "img": "img/items/conveying_stone.png",
+    "tier": null,
+    "category": "material"
+  },
+  "crate": {
+    "name": {
+      "hu": "Rekesz",
+      "en": "Crate"
+    },
+    "img": "img/items/crate.png",
+    "tier": null,
+    "category": "material"
+  },
+  "kbook": {
+    "name": {
+      "hu": "Tudáskönyv",
+      "en": "Kbook"
+    },
+    "img": "img/items/kbook.png",
     "tier": null,
     "category": "material"
   }

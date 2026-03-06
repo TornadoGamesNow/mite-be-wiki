@@ -137,10 +137,97 @@ if (typeof document !== 'undefined' && !document.getElementById(ARROW_ANIM_ID)) 
   document.head.appendChild(s);
 }
 
-function MiniGrid({ recipe, outputId }: { recipe: FullRecipe; outputId: string }) {
+// ── Furnace-type grid components ─────────────────────────────────────────
+const FURNACE_SLOT: React.CSSProperties = {
+  width: 36, height: 36,
+  background: '#8b8b8b', border: '1px solid #555',
+  display: 'flex', alignItems: 'center', justifyContent: 'center',
+  boxShadow: 'inset 1px 1px 0 rgba(255,255,255,.07), inset -1px -1px 0 rgba(0,0,0,.3)',
+  position: 'relative',
+};
+const FURNACE_SLOT_MINI: React.CSSProperties = { ...FURNACE_SLOT, width: CELL, height: CELL };
+
+function CountBadge({ n, mini }: { n: number; mini?: boolean }) {
+  if (n <= 1) return null;
+  return <span style={{ position: 'absolute', bottom: 1, right: 2, fontSize: mini ? '.48em' : '.58em', color: 'white', fontWeight: 700, textShadow: '0 0 2px black', lineHeight: 1 }}>{n}</span>;
+}
+
+/** blast_furnace mini card: input → alloy → output */
+function SmeltingMini({ recipe }: { recipe: FullRecipe }) {
+  const flat = flattenIngredients(recipe.ingredients);
+  const input = flat[0] || null;
+  const material = flat[1] || null;
+  const materialCount = recipe.ingredients.filter(i => flattenIngredient(i) === (material || '')).length;
+  return (
+    <div style={{ background: 'linear-gradient(135deg,#7a5518 0%,#5c3d0b 55%,#6b4a10 100%)', padding: 3, borderRadius: 4, border: '1px solid #3d2606', boxShadow: 'inset 0 1px 4px rgba(0,0,0,.55)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 1 }}>
+      <div style={FURNACE_SLOT_MINI}>{input && <ItemIcon id={input} size={CELL - 6} />}</div>
+      <div style={{ fontSize: '.48em', color: '#ff9900', lineHeight: 1 }}>🔥</div>
+      <div style={FURNACE_SLOT_MINI}>{material && <ItemIcon id={material} size={CELL - 6} />}<CountBadge n={materialCount} mini /></div>
+    </div>
+  );
+}
+
+/** stone_furnace mini card: input → output */
+function FurnaceMini({ recipe }: { recipe: FullRecipe }) {
+  const flat = flattenIngredients(recipe.ingredients);
+  const input = flat[0] || null;
+  return (
+    <div style={{ background: 'linear-gradient(135deg,#6a4a3a 0%,#4a2c1c 55%,#5a3a28 100%)', padding: 3, borderRadius: 4, border: '1px solid #3d1e06', boxShadow: 'inset 0 1px 4px rgba(0,0,0,.55)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 1 }}>
+      <div style={FURNACE_SLOT_MINI}>{input && <ItemIcon id={input} size={CELL - 6} />}</div>
+      <div style={{ fontSize: '.48em', color: '#ff9900', lineHeight: 1 }}>🔥</div>
+    </div>
+  );
+}
+
+/** blast_furnace detail panel */
+function SmeltingDetail({ recipe }: { recipe: FullRecipe }) {
+  const flat = flattenIngredients(recipe.ingredients);
+  const input = flat[0] || null;
+  const material = flat[1] || null;
+  const materialCount = recipe.ingredients.filter(i => flattenIngredient(i) === (material || '')).length;
+  return (
+    <div style={{ background: 'linear-gradient(135deg,#7a5518 0%,#5c3d0b 55%,#6b4a10 100%)', padding: 5, borderRadius: 6, border: '2px solid #3d2606', boxShadow: 'inset 0 2px 6px rgba(0,0,0,.55)', flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
+      <div style={FURNACE_SLOT}>{input && <ItemIcon id={input} size={30} />}</div>
+      <div style={{ fontSize: '.8em', color: '#ff9900', lineHeight: 1 }}>🔥</div>
+      <div style={FURNACE_SLOT}>{material && <ItemIcon id={material} size={30} />}<CountBadge n={materialCount} /></div>
+    </div>
+  );
+}
+
+/** stone_furnace detail panel */
+function FurnaceDetail({ recipe }: { recipe: FullRecipe }) {
+  const flat = flattenIngredients(recipe.ingredients);
+  const input = flat[0] || null;
+  return (
+    <div style={{ background: 'linear-gradient(135deg,#6a4a3a 0%,#4a2c1c 55%,#5a3a28 100%)', padding: 5, borderRadius: 6, border: '2px solid #3d1e06', boxShadow: 'inset 0 2px 6px rgba(0,0,0,.55)', flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
+      <div style={FURNACE_SLOT}>{input && <ItemIcon id={input} size={30} />}</div>
+      <div style={{ fontSize: '.8em', color: '#ff9900', lineHeight: 1 }}>🔥</div>
+    </div>
+  );
+}
+
+function MiniGrid({ recipe, outputId, outputQty }: { recipe: FullRecipe; outputId: string; outputQty?: number }) {
+  // Furnace-type stations get their own mini layout
+  if (recipe.station === 'blast_furnace' || recipe.station === 'stone_furnace') {
+    const FurnaceComp = recipe.station === 'blast_furnace' ? SmeltingMini : FurnaceMini;
+    return (
+      <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+        <FurnaceComp recipe={recipe} />
+        <span className="card-arrow" style={{ fontSize: '1.1em', color: '#f0c040', flexShrink: 0, fontWeight: 700, display: 'inline-block' }}>➜</span>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
+          <div style={{ width: RESULT_ICON, height: RESULT_ICON, background: '#6b6b3b', border: '2px solid', borderColor: '#f0c040 #886600 #886600 #f0c040', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+            <ItemIcon id={outputId} size={RESULT_ICON - 8} />
+          </div>
+          {outputQty && outputQty > 1 && <span style={{ fontSize: '.7em', fontWeight: 700, color: 'var(--gold)', lineHeight: 1 }}>×{outputQty}</span>}
+        </div>
+      </div>
+    );
+  }
+
   const grid = recipe.shaped && recipe.pattern
     ? recipe.pattern
     : shapelessToGrid(recipe.ingredients);
+  const cols = recipe.station === 'hand' && grid[0]?.length === 2 ? 2 : 3;
   const flat = flattenIngredients(recipe.ingredients);
   const extra = flat.length > 9 ? flat.length - 9 : 0;
   return (
@@ -154,8 +241,8 @@ function MiniGrid({ recipe, outputId }: { recipe: FullRecipe; outputId: string }
         }}>
           <div style={{
             display: 'grid',
-            gridTemplateColumns: `repeat(3, ${CELL}px)`,
-            gridTemplateRows: `repeat(3, ${CELL}px)`,
+            gridTemplateColumns: `repeat(${cols}, ${CELL}px)`,
+            gridTemplateRows: `repeat(${cols}, ${CELL}px)`,
             gap: 1,
           }}>
             {grid.map((row, ri) =>
@@ -176,12 +263,17 @@ function MiniGrid({ recipe, outputId }: { recipe: FullRecipe; outputId: string }
       </div>
       {/* #8: arrow with class for hover animation */}
       <span className="card-arrow" style={{ fontSize: '1.1em', color: '#f0c040', flexShrink: 0, fontWeight: 700, display: 'inline-block' }}>➜</span>
-      <div style={{
-        width: RESULT_ICON, height: RESULT_ICON, background: '#6b6b3b',
-        border: '2px solid', borderColor: '#f0c040 #886600 #886600 #f0c040',
-        display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
-      }}>
-        <ItemIcon id={outputId} size={RESULT_ICON - 8} />
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
+        <div style={{
+          width: RESULT_ICON, height: RESULT_ICON, background: '#6b6b3b',
+          border: '2px solid', borderColor: '#f0c040 #886600 #886600 #f0c040',
+          display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+        }}>
+          <ItemIcon id={outputId} size={RESULT_ICON - 8} />
+        </div>
+        {outputQty && outputQty > 1 && (
+          <span style={{ fontSize: '.7em', fontWeight: 700, color: 'var(--gold)', lineHeight: 1 }}>×{outputQty}</span>
+        )}
       </div>
     </div>
   );
@@ -552,25 +644,31 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
 
                     {/* Grid + result */}
                     <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 16 }}>
-                      <div style={{
-                        background: 'linear-gradient(135deg,#7a5518 0%,#5c3d0b 55%,#6b4a10 100%)',
-                        padding: 5, borderRadius: 6,
-                        boxShadow: 'inset 0 2px 6px rgba(0,0,0,.55)',
-                        border: '2px solid #3d2606',
-                        flexShrink: 0,
-                      }}>
-                        <div className="craft-grid g3x3">
-                          {grid.map((row, ri) =>
-                            row.map((cell, ci) => (
-                              <div key={`${ri}-${ci}`} className="craft-slot" style={{
-                                boxShadow: 'inset 1px 1px 0 rgba(255,255,255,.07), inset -1px -1px 0 rgba(0,0,0,.3)',
-                              }}>
-                                {cell && <ItemIcon id={cell} size={32} />}
-                              </div>
-                            ))
-                          )}
+                      {r.station === 'blast_furnace' ? (
+                        <SmeltingDetail recipe={r} />
+                      ) : r.station === 'stone_furnace' ? (
+                        <FurnaceDetail recipe={r} />
+                      ) : (
+                        <div style={{
+                          background: 'linear-gradient(135deg,#7a5518 0%,#5c3d0b 55%,#6b4a10 100%)',
+                          padding: 5, borderRadius: 6,
+                          boxShadow: 'inset 0 2px 6px rgba(0,0,0,.55)',
+                          border: '2px solid #3d2606',
+                          flexShrink: 0,
+                        }}>
+                          <div className={`craft-grid ${r.station === 'hand' && grid[0]?.length === 2 ? 'g2x2' : 'g3x3'}`}>
+                            {grid.map((row, ri) =>
+                              row.map((cell, ci) => (
+                                <div key={`${ri}-${ci}`} className="craft-slot" style={{
+                                  boxShadow: 'inset 1px 1px 0 rgba(255,255,255,.07), inset -1px -1px 0 rgba(0,0,0,.3)',
+                                }}>
+                                  {cell && <ItemIcon id={cell} size={32} />}
+                                </div>
+                              ))
+                            )}
+                          </div>
                         </div>
-                      </div>
+                      )}
                       <span style={{ fontSize: '1.5em', color: '#f0c040', fontWeight: 700, flexShrink: 0 }}>➜</span>
                       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
                         <div style={{
@@ -1322,7 +1420,7 @@ export default function RecipesHub() {
                     }
                   }}
                 >
-                  <MiniGrid recipe={g.primaryRecipe} outputId={g.outputId} />
+                  <MiniGrid recipe={g.primaryRecipe} outputId={g.outputId} outputQty={g.primaryRecipe.outputQty} />
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 4 }}>
                     <span title={displayName} style={{ fontSize: '.72em', lineHeight: 1.2, flex: 1, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
                       {displayName}

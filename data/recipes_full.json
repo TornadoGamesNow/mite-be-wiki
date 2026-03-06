@@ -15,7 +15,24 @@
       "cobblestone",
       "cobblestone"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "cobblestone",
+        "cobblestone",
+        "_"
+      ],
+      [
+        "cobblestone",
+        "cobblestone",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "polished_granite_1",
@@ -285,19 +302,19 @@
     "shaped": true,
     "pattern": [
       [
-        "glass_pane",
-        "glass_pane",
-        "glass_pane"
+        "_",
+        "sand_stone",
+        "_"
       ],
       [
-        "glass_pane",
-        "glass_pane",
-        "glass_pane"
+        "_",
+        "_",
+        "_"
       ],
       [
-        "glass_pane",
-        "glass_pane",
-        "glass_pane"
+        "_",
+        "coal",
+        "_"
       ]
     ]
   },
@@ -1202,7 +1219,24 @@
       "stone",
       "stone"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "stone",
+        "stone",
+        "stone"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "sandstone_slab_single_49",
@@ -3057,7 +3091,24 @@
       "nether_brick",
       "nether_brick"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "netherrack",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "coal",
+        "_"
+      ]
+    ]
   },
   {
     "id": "nether_brick_fence_145",
@@ -5540,19 +5591,19 @@
     "shaped": true,
     "pattern": [
       [
-        null,
+        "clay_ball",
         "iron_ingot",
-        null
+        "clay_ball"
       ],
       [
-        null,
+        "clay_ball",
         "iron_ingot",
-        null
+        "clay_ball"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ]
     ]
   },
@@ -5689,19 +5740,19 @@
     "shaped": true,
     "pattern": [
       [
-        null,
+        "clay_ball",
         "gold_ingot",
-        null
+        "clay_ball"
       ],
       [
-        null,
+        "clay_ball",
         "gold_ingot",
-        null
+        "clay_ball"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ]
     ]
   },
@@ -6111,17 +6162,17 @@
       [
         "iron_ingot",
         "iron_ingot",
-        null
+        "clay_ball"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ]
     ]
   },
@@ -6146,17 +6197,17 @@
       [
         "gold_ingot",
         "gold_ingot",
-        null
+        "clay_ball"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ]
     ]
   },
@@ -6733,7 +6784,24 @@
       "flint_shard",
       "flint_shard"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "chip_flint",
+        "chip_flint",
+        "_"
+      ],
+      [
+        "chip_flint",
+        "chip_flint",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "painting_293",
@@ -6828,7 +6896,24 @@
       "wood_slab_single",
       "stick"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "oak_slab",
+        "_"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "wooden_door_297",
@@ -7057,7 +7142,24 @@
     "ingredients": [
       "hardened_clay"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "clay_ball",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "coal",
+        "_"
+      ]
+    ]
   },
   {
     "id": "paper_309",
@@ -7381,7 +7483,24 @@
       "gold_nugget",
       "gold_nugget"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "gold_nugget",
+        "gold_nugget",
+        "gold_nugget"
+      ],
+      [
+        "gold_nugget",
+        "redstone_dust",
+        "gold_nugget"
+      ],
+      [
+        "gold_nugget",
+        "gold_nugget",
+        "gold_nugget"
+      ]
+    ]
   },
   {
     "id": "lapis_lazuli_331",
@@ -10736,7 +10855,24 @@
       "book",
       "compass"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "book",
+        "compass",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "empty_map_505",
@@ -13510,17 +13646,17 @@
       [
         "adamantium_bar",
         "adamantium_bar",
-        null
+        "_"
       ],
       [
         "adamantium_bar",
-        "hardstone_handle",
-        null
+        "stick",
+        "_"
       ],
       [
-        null,
-        "hardstone_handle",
-        null
+        "_",
+        "stick",
+        "_"
       ]
     ]
   },
@@ -13545,17 +13681,17 @@
       [
         "copper_ingot",
         "copper_ingot",
-        null
+        "clay_ball"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ]
     ]
   },
@@ -13580,17 +13716,17 @@
       [
         "silver_ingot",
         "silver_ingot",
-        null
+        "clay_ball"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ]
     ]
   },
@@ -13615,17 +13751,17 @@
       [
         "mithril_bar",
         "mithril_bar",
-        null
+        "_"
       ],
       [
-        null,
-        "hardstone_handle",
-        null
+        "_",
+        "stick",
+        "_"
       ],
       [
-        null,
-        "hardstone_handle",
-        null
+        "_",
+        "stick",
+        "_"
       ]
     ]
   },
@@ -13650,17 +13786,17 @@
       [
         "adamantium_bar",
         "adamantium_bar",
-        null
+        "_"
       ],
       [
-        null,
-        "hardstone_handle",
-        null
+        "_",
+        "stick",
+        "_"
       ],
       [
-        null,
-        "hardstone_handle",
-        null
+        "_",
+        "stick",
+        "_"
       ]
     ]
   },
@@ -13772,9 +13908,9 @@
         "gold_ingot"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ]
     ]
   },
@@ -13810,9 +13946,9 @@
         "iron_ingot"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ]
     ]
   },
@@ -13918,14 +14054,14 @@
         "copper_ingot"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
         "copper_ingot"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ]
     ]
   },
@@ -13955,14 +14091,14 @@
         "silver_ingot"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
         "silver_ingot"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ]
     ]
   },
@@ -13992,14 +14128,14 @@
         "gold_ingot"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
         "gold_ingot"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ]
     ]
   },
@@ -14029,14 +14165,14 @@
         "iron_ingot"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
         "iron_ingot"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ]
     ]
   },
@@ -14066,14 +14202,14 @@
         "mithril_bar"
       ],
       [
-        null,
-        "hardstone_handle",
+        "_",
+        "stick",
         "mithril_bar"
       ],
       [
-        null,
-        "hardstone_handle",
-        null
+        "_",
+        "stick",
+        "_"
       ]
     ]
   },
@@ -14103,14 +14239,14 @@
         "adamantium_bar"
       ],
       [
-        null,
-        "hardstone_handle",
+        "_",
+        "stick",
         "adamantium_bar"
       ],
       [
-        null,
-        "hardstone_handle",
-        null
+        "_",
+        "stick",
+        "_"
       ]
     ]
   },
@@ -14210,18 +14346,18 @@
     "pattern": [
       [
         "gold_ingot",
-        "gold_ingot",
+        "clay_ball",
         "gold_ingot"
       ],
       [
         "gold_ingot",
         "stick",
-        null
+        "gold_ingot"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ]
     ]
   },
@@ -14247,18 +14383,18 @@
     "pattern": [
       [
         "iron_ingot",
-        "iron_ingot",
+        "clay_ball",
         "iron_ingot"
       ],
       [
         "iron_ingot",
         "stick",
-        null
+        "iron_ingot"
       ],
       [
-        null,
+        "clay_ball",
         "stick",
-        null
+        "clay_ball"
       ]
     ]
   },
@@ -14500,19 +14636,19 @@
     "shaped": true,
     "pattern": [
       [
-        "hardstone_handle",
+        "stick",
         "mithril_bar",
-        null
+        "_"
       ],
       [
-        "hardstone_handle",
-        "mithril_bar",
-        null
+        "stick",
+        "_",
+        "mithril_bar"
       ],
       [
-        "hardstone_handle",
-        null,
-        null
+        "stick",
+        "_",
+        "_"
       ]
     ]
   },
@@ -14536,19 +14672,19 @@
     "shaped": true,
     "pattern": [
       [
-        "hardstone_handle",
+        "stick",
         "adamantium_bar",
-        null
+        "_"
       ],
       [
-        "hardstone_handle",
-        "adamantium_bar",
-        null
+        "stick",
+        "_",
+        "adamantium_bar"
       ],
       [
-        "hardstone_handle",
-        null,
-        null
+        "stick",
+        "_",
+        "_"
       ]
     ]
   },
@@ -15304,19 +15440,19 @@
     "shaped": true,
     "pattern": [
       [
-        null,
+        "_",
         "mithril_nugget",
-        null
+        "_"
       ],
       [
-        null,
+        "_",
         "stick",
-        null
+        "_"
       ],
       [
-        null,
+        "_",
         "feather",
-        null
+        "_"
       ]
     ]
   },
@@ -20479,7 +20615,24 @@
       "wheat",
       "wheat"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "wheat",
+        "wheat",
+        "wheat"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "flour_957",
@@ -21579,7 +21732,24 @@
       "nether_wart",
       "coal"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "water_bottle",
+        "coal",
+        "nether_wart"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "cream_of_mushroom_soup_1023",
@@ -21870,17 +22040,17 @@
       [
         "ancient_metal_ingot",
         "ancient_metal_ingot",
-        null
+        "_"
       ],
       [
-        null,
-        "hardstone_handle",
-        null
+        "_",
+        "stick",
+        "_"
       ],
       [
-        null,
-        "hardstone_handle",
-        null
+        "_",
+        "stick",
+        "_"
       ]
     ]
   },
@@ -21948,14 +22118,14 @@
         "ancient_metal_ingot"
       ],
       [
-        null,
-        "hardstone_handle",
+        "_",
+        "stick",
         "ancient_metal_ingot"
       ],
       [
-        null,
-        "hardstone_handle",
-        null
+        "_",
+        "stick",
+        "_"
       ]
     ]
   },
@@ -22016,19 +22186,19 @@
     "shaped": true,
     "pattern": [
       [
-        "hardstone_handle",
+        "stick",
         "ancient_metal_ingot",
-        null
+        "_"
       ],
       [
-        "hardstone_handle",
-        "ancient_metal_ingot",
-        null
+        "stick",
+        "_",
+        "ancient_metal_ingot"
       ],
       [
-        "hardstone_handle",
-        null,
-        null
+        "stick",
+        "_",
+        "_"
       ]
     ]
   },
@@ -22150,19 +22320,19 @@
     "shaped": true,
     "pattern": [
       [
-        null,
+        "_",
         "ancient_metal_nugget",
-        null
+        "_"
       ],
       [
-        null,
+        "_",
         "stick",
-        null
+        "_"
       ],
       [
-        null,
+        "_",
         "feather",
-        null
+        "_"
       ]
     ]
   },
@@ -23840,7 +24010,24 @@
       "hardstone_ingot",
       "stick"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "clay_ball",
+        "clay_ball",
+        "clay_ball"
+      ],
+      [
+        "clay_ball",
+        "hardstone_ingot",
+        "clay_ball"
+      ],
+      [
+        "clay_ball",
+        "stick",
+        "clay_ball"
+      ]
+    ]
   },
   {
     "id": "hard_stone_hand_axe_1122",
@@ -24043,7 +24230,24 @@
       "coal",
       "tin_plate"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "tin_plate",
+        "_"
+      ],
+      [
+        "tin_plate",
+        "redstone_dust",
+        "tin_plate"
+      ],
+      [
+        "tin_plate",
+        "coal",
+        "tin_plate"
+      ]
+    ]
   },
   {
     "id": "hard_stone_hoe_1129",
@@ -24079,21 +24283,6 @@
         null
       ]
     ]
-  },
-  {
-    "id": "carbon_crystal_1130",
-    "item_num": 2422,
-    "output": "carbon_crystal",
-    "outputQty": 4,
-    "station": "flint_workbench",
-    "difficulty": 250,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "carbon_crystal"
-    ],
-    "shaped": false
   },
   {
     "id": "string_sieve_mesh_1131",
@@ -24137,7 +24326,24 @@
       "book",
       "book_and_quill"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "book",
+        "book_and_quill",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "hardstone_handle_1134",
@@ -24203,19 +24409,19 @@
     "shaped": true,
     "pattern": [
       [
-        "flint_shard",
-        "flint_shard",
-        "flint_shard"
+        "chip_flint",
+        "flint",
+        "chip_flint"
       ],
       [
-        null,
+        "string",
         "stick",
-        null
+        "string"
       ],
       [
-        null,
+        "_",
         "stick",
-        null
+        "_"
       ]
     ]
   },
@@ -24302,7 +24508,24 @@
       "leather",
       "leather"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "feather"
+      ],
+      [
+        "_",
+        "leather",
+        "_"
+      ],
+      [
+        "leather",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "backpack_1142",
@@ -25062,7 +25285,24 @@
       "ancient_metal_ingot",
       "ancient_metal_ingot"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "ancient_metal_ingot",
+        "_"
+      ],
+      [
+        "ancient_metal_ingot",
+        "wooden_barrel",
+        "ancient_metal_ingot"
+      ],
+      [
+        "_",
+        "ancient_metal_ingot",
+        "_"
+      ]
+    ]
   },
   {
     "id": "water_filter_1177",
@@ -25133,7 +25373,24 @@
       "charcoal",
       "paper"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "paper",
+        "_"
+      ],
+      [
+        "_",
+        "charcoal",
+        "_"
+      ],
+      [
+        "_",
+        "paper",
+        "_"
+      ]
+    ]
   },
   {
     "id": "filter_paper_1179",
@@ -25363,7 +25620,24 @@
       "bone",
       "bone"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "bone",
+        "string"
+      ],
+      [
+        "_",
+        "bone",
+        "_"
+      ],
+      [
+        "_",
+        "bone",
+        "_"
+      ]
+    ]
   },
   {
     "id": "bone_club_1192",
@@ -25608,7 +25882,24 @@
       "mercury_ingot",
       "iron_war_hammer"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "mercury_ore",
+        "iron_war_hammer",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "mercury_nugget_1209",
@@ -26617,7 +26908,24 @@
       "mercury_nugget",
       "mercury_nugget"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "mercury_nugget",
+        "_"
+      ],
+      [
+        "mercury_nugget",
+        "obsidian",
+        "mercury_nugget"
+      ],
+      [
+        "_",
+        "mercury_nugget",
+        "_"
+      ]
+    ]
   },
   {
     "id": "advanced_enchantment_table_1270",
@@ -27432,7 +27740,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Fűkötél",
+      "hu": "FĹ±kĂ¶tĂ©l",
       "en": "Straw Rope"
     },
     "pattern": [
@@ -27466,7 +27774,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Egyszerű Kőzet Kés",
+      "hu": "EgyszerĹ± KĹ‘zet KĂ©s",
       "en": "Simple Stone Knife"
     },
     "pattern": [
@@ -27500,7 +27808,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Bőrkötél",
+      "hu": "BĹ‘rkĂ¶tĂ©l",
       "en": "Leather Rope"
     },
     "pattern": [
@@ -27532,7 +27840,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Kova (Kőzet)",
+      "hu": "Kova (KĹ‘zet)",
       "en": "Flint"
     },
     "pattern": [
@@ -27565,7 +27873,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Kőzet Kés",
+      "hu": "KĹ‘zet KĂ©s",
       "en": "Stone Knife"
     },
     "pattern": [
@@ -27600,7 +27908,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Kőzet Rövid Fejsze",
+      "hu": "KĹ‘zet RĂ¶vid Fejsze",
       "en": "Stone Short Hatchet"
     },
     "pattern": [
@@ -27690,7 +27998,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Réz Munkaasztal",
+      "hu": "RĂ©z Munkaasztal",
       "en": "Copper Workbench"
     },
     "pattern": [
@@ -27735,7 +28043,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Ezüst Munkaasztal",
+      "hu": "EzĂĽst Munkaasztal",
       "en": "Silver Workbench"
     },
     "pattern": [
@@ -27870,7 +28178,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Keménykő Munkaasztal",
+      "hu": "KemĂ©nykĹ‘ Munkaasztal",
       "en": "Hardstone Workbench"
     },
     "pattern": [
@@ -28032,7 +28340,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Keményített Agyag Kemence",
+      "hu": "KemĂ©nyĂ­tett Agyag Kemence",
       "en": "Hardened Clay Furnace"
     },
     "pattern": [
@@ -28065,7 +28373,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Obszidián",
+      "hu": "ObszidiĂˇn",
       "en": "Obsidian"
     },
     "pattern": [
@@ -28097,7 +28405,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Obszidián Öntőforma",
+      "hu": "ObszidiĂˇn Ă–ntĹ‘forma",
       "en": "Obsidian Ingot Mold"
     },
     "pattern": [
@@ -28557,7 +28865,24 @@
       "bone",
       "straw_rope"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "bone",
+        "straw_rope"
+      ],
+      [
+        "_",
+        "bone",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "flint_spear_32012",
@@ -28573,7 +28898,24 @@
       "stick",
       "leather_rope"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "sharp_chip"
+      ],
+      [
+        "_",
+        "stick",
+        "string"
+      ],
+      [
+        "stick",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "chip_flint_32013",
@@ -28618,7 +28960,24 @@
       "string",
       "string"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "string",
+        "string",
+        "string"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "mesh_leather_32016",
@@ -28633,7 +28992,24 @@
       "leather_rope",
       "leather_rope"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "sinew",
+        "sinew",
+        "sinew"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "return_scroll_32017",
@@ -28651,7 +29027,24 @@
       "paper",
       "paper"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "ender_pearl",
+        "_"
+      ],
+      [
+        "paper",
+        "paper",
+        "paper"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "bound_scroll_32018",
@@ -28665,7 +29058,24 @@
       "return_scroll",
       "redstone_dust"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "return_scroll",
+        "redstone_dust",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "way_stone_32019",
@@ -28684,7 +29094,24 @@
       "stone_bricks",
       "stone_bricks"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "ender_pearl",
+        "_"
+      ],
+      [
+        "ender_pearl",
+        "redstone_block",
+        "ender_pearl"
+      ],
+      [
+        "stone_bricks",
+        "stone_bricks",
+        "stone_bricks"
+      ]
+    ]
   },
   {
     "id": "sleep_bag_32020",
@@ -28699,7 +29126,24 @@
       "wool_white",
       "wool_white"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "white_wool",
+        "white_wool",
+        "white_wool"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "hard_stick_32021",
@@ -28713,7 +29157,24 @@
       "hardstone_ingot",
       "hardstone_ingot"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "hardstone_ingot",
+        "_"
+      ]
+    ]
   },
   {
     "id": "bamboo_helmet_32023",
@@ -28786,7 +29247,24 @@
       "hardstone_ingot",
       "stick"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
+      ],
+      [
+        "hardstone_ingot",
+        "stick",
+        "hardstone_ingot"
+      ],
+      [
+        "clay_ball",
+        "stick",
+        "clay_ball"
+      ]
+    ]
   },
   {
     "id": "hardstone_helmet_32033",
@@ -28884,7 +29362,24 @@
       "stick",
       "stick"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "clay_ball",
+        "hardstone_ingot"
+      ],
+      [
+        "hardstone_ingot",
+        "stick",
+        "hardstone_ingot"
+      ],
+      [
+        "clay_ball",
+        "stick",
+        "clay_ball"
+      ]
+    ]
   },
   {
     "id": "hardstone_mattock_32038",
@@ -28902,7 +29397,24 @@
       "hardstone_ingot",
       "stick"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
+      ],
+      [
+        "clay_ball",
+        "stick",
+        "hardstone_ingot"
+      ],
+      [
+        "clay_ball",
+        "stick",
+        "clay_ball"
+      ]
+    ]
   },
   {
     "id": "hardstone_scythe_32039",
@@ -29056,7 +29568,24 @@
       "obsidian",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "beacon",
+        "_"
+      ],
+      [
+        "redstone_block",
+        "obsidian",
+        "redstone_block"
+      ],
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ]
+    ]
   },
   {
     "id": "campfire_32050",
@@ -29150,7 +29679,24 @@
       "netherrack",
       "netherrack"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "netherrack",
+        "netherrack",
+        "netherrack"
+      ],
+      [
+        "netherrack",
+        "_",
+        "netherrack"
+      ],
+      [
+        "netherrack",
+        "netherrack",
+        "netherrack"
+      ]
+    ]
   },
   {
     "id": "furnace_core_obsidian_32054",
@@ -29174,7 +29720,24 @@
       "obsidian",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ],
+      [
+        "obsidian",
+        "_",
+        "obsidian"
+      ],
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ]
+    ]
   },
   {
     "id": "furnace_core_stone_32055",
@@ -29198,7 +29761,24 @@
       "cobblestone",
       "cobblestone"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "cobblestone",
+        "cobblestone",
+        "cobblestone"
+      ],
+      [
+        "cobblestone",
+        "_",
+        "cobblestone"
+      ],
+      [
+        "cobblestone",
+        "cobblestone",
+        "cobblestone"
+      ]
+    ]
   },
   {
     "id": "mining_helmet_32056",
@@ -29248,7 +29828,24 @@
       "leather",
       "leather"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "sinew"
+      ],
+      [
+        "_",
+        "leather",
+        "_"
+      ],
+      [
+        "leather",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "wooden_water_filter_32059",
@@ -29312,7 +29909,24 @@
         "planks_jungle"
       ]
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "glass",
+        "_"
+      ],
+      [
+        "oak_planks",
+        "oak_planks",
+        "oak_planks"
+      ],
+      [
+        "_",
+        "glass",
+        "_"
+      ]
+    ]
   },
   {
     "id": "stone_dagger_32060",
@@ -29614,7 +30228,24 @@
       "stick",
       "stick"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "clay_ball"
+      ],
+      [
+        "clay_ball",
+        "stick",
+        "clay_ball"
+      ],
+      [
+        "clay_ball",
+        "stick",
+        "clay_ball"
+      ]
+    ]
   },
   {
     "id": "shield_32095",
@@ -29684,7 +30315,24 @@
       "straw_rope",
       "stick"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "chip_flint",
+        "straw_rope"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ]
   },
   {
     "id": "mercury_ingot_32102",
@@ -29741,7 +30389,24 @@
     "ingredients": [
       "glass"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "glass_shard",
+        "glass_shard",
+        "glass_shard"
+      ],
+      [
+        "glass_shard",
+        "glass_shard",
+        "glass_shard"
+      ],
+      [
+        "glass_shard",
+        "glass_shard",
+        "glass_shard"
+      ]
+    ]
   },
   {
     "id": "glow_stone_torch_32106",
@@ -29829,7 +30494,24 @@
       "stone",
       "stone"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "silver_ingot",
+        "_"
+      ],
+      [
+        "silver_ingot",
+        "stone_furnace",
+        "silver_ingot"
+      ],
+      [
+        "_",
+        "silver_ingot",
+        "_"
+      ]
+    ]
   },
   {
     "id": "high_carbon_steel_helmet_32116",
@@ -30040,7 +30722,24 @@
       "obsidian",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "book",
+        "_"
+      ],
+      [
+        "diamond",
+        "obsidian",
+        "diamond"
+      ],
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ]
+    ]
   },
   {
     "id": "enchantment_table_custom_32141",
@@ -30057,7 +30756,24 @@
       "diamond",
       "diamond"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "gold_block",
+        "emerald_block",
+        "gold_block"
+      ],
+      [
+        "redstone_block",
+        "enchantment_table",
+        "redstone_block"
+      ],
+      [
+        "gold_block",
+        "emerald_block",
+        "gold_block"
+      ]
+    ]
   },
   {
     "id": "warp_scroll_32142",
@@ -30074,7 +30790,24 @@
       "paper",
       "paper"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "ender_pearl",
+        "purple_dye",
+        "ender_pearl"
+      ],
+      [
+        "paper",
+        "paper",
+        "paper"
+      ],
+      [
+        "gold_nugget",
+        "purple_dye",
+        "gold_nugget"
+      ]
+    ]
   },
   {
     "id": "carbon_crystal_shard_32143",
@@ -30085,9 +30818,27 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "carbon_crystal"
+      "coal_block",
+      "coal"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "coal_block"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "coal"
+      ]
+    ]
   },
   {
     "id": "nether_quartz_shard_32144",
@@ -30252,7 +31003,24 @@
       "copper_ingot",
       "barrel"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "copper_ingot",
+        "_"
+      ],
+      [
+        "copper_ingot",
+        "wooden_barrel",
+        "copper_ingot"
+      ],
+      [
+        "_",
+        "copper_ingot",
+        "_"
+      ]
+    ]
   },
   {
     "id": "barrel_silver_upgrade_785075",
@@ -30271,7 +31039,24 @@
       "silver_ingot",
       "barrel"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "silver_ingot",
+        "_"
+      ],
+      [
+        "silver_ingot",
+        "wooden_barrel",
+        "silver_ingot"
+      ],
+      [
+        "_",
+        "silver_ingot",
+        "_"
+      ]
+    ]
   },
   {
     "id": "barrel_iron_upgrade_785076",
@@ -30290,7 +31075,24 @@
       "iron_ingot",
       "barrel"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "iron_ingot",
+        "_"
+      ],
+      [
+        "iron_ingot",
+        "wooden_barrel",
+        "iron_ingot"
+      ],
+      [
+        "_",
+        "iron_ingot",
+        "_"
+      ]
+    ]
   },
   {
     "id": "barrel_gold_upgrade_785077",
@@ -30309,7 +31111,24 @@
       "gold_ingot",
       "barrel"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "gold_ingot",
+        "_"
+      ],
+      [
+        "gold_ingot",
+        "wooden_barrel",
+        "gold_ingot"
+      ],
+      [
+        "_",
+        "gold_ingot",
+        "_"
+      ]
+    ]
   },
   {
     "id": "barrel_hard_upgrade_785133",
@@ -30328,7 +31147,24 @@
       "hardstone_ingot",
       "barrel"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "hardstone_ingot",
+        "_"
+      ],
+      [
+        "hardstone_ingot",
+        "wooden_barrel",
+        "hardstone_ingot"
+      ],
+      [
+        "_",
+        "hardstone_ingot",
+        "_"
+      ]
+    ]
   },
   {
     "id": "barrel_mithril_upgrade_785079",
@@ -30347,7 +31183,24 @@
       "mithril_bar",
       "barrel"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "mithril_bar",
+        "_"
+      ],
+      [
+        "mithril_bar",
+        "wooden_barrel",
+        "mithril_bar"
+      ],
+      [
+        "_",
+        "mithril_bar",
+        "_"
+      ]
+    ]
   },
   {
     "id": "barrel_adamantium_upgrade_785080",
@@ -30366,7 +31219,24 @@
       "adamantium_bar",
       "barrel"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "adamantium_bar",
+        "_"
+      ],
+      [
+        "adamantium_bar",
+        "wooden_barrel",
+        "adamantium_bar"
+      ],
+      [
+        "_",
+        "adamantium_bar",
+        "_"
+      ]
+    ]
   },
   {
     "id": "tin_plate_777287",
@@ -30382,7 +31252,24 @@
       "tin_ingot",
       "iron_war_hammer"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "tin_ingot",
+        "_",
+        "iron_war_hammer"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "miner_helmet_446441",
@@ -30415,7 +31302,24 @@
       "torch",
       "lantern"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "iron_nugget",
+        "_"
+      ],
+      [
+        "iron_nugget",
+        "torch",
+        "iron_nugget"
+      ],
+      [
+        "_",
+        "iron_nugget",
+        "_"
+      ]
+    ]
   },
   {
     "id": "obsidian_ingot_mould_816195",
@@ -30431,7 +31335,24 @@
       "obsidian",
       "copper_war_hammer"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "obsidian",
+        "_"
+      ],
+      [
+        "_",
+        "copper_war_hammer",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "colling_liquid_803142",
@@ -30445,7 +31366,24 @@
       "ice",
       "ice"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "tin_plate",
+        "_"
+      ],
+      [
+        "tin_plate",
+        "ice",
+        "tin_plate"
+      ],
+      [
+        "tin_plate",
+        "ice",
+        "tin_plate"
+      ]
+    ]
   },
   {
     "id": "obsidian_ingot_cool_mould_818797",
@@ -30459,7 +31397,24 @@
       "obsidian_ingot_mould",
       "colling_liquid"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "obsidian_ingot_mould",
+        "_"
+      ],
+      [
+        "_",
+        "colling_liquid",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "big_backpack_upgrade_841176",
@@ -30476,7 +31431,24 @@
       "leather",
       "backpack"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "string",
+        "leather",
+        "string"
+      ],
+      [
+        "leather",
+        "_",
+        "leather"
+      ],
+      [
+        "string",
+        "leather",
+        "string"
+      ]
+    ]
   },
   {
     "id": "respawn_anchor_811918",
@@ -30489,7 +31461,24 @@
     "ingredients": [
       "blue_compass"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ],
+      [
+        "obsidian",
+        "blue_compass",
+        "obsidian"
+      ],
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ]
+    ]
   },
   {
     "id": "hot_water_771960",
@@ -30601,7 +31590,24 @@
       "bricks",
       "bricks"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "brick",
+        "brick",
+        "_"
+      ],
+      [
+        "brick",
+        "brick",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "barrel_ancient_metal_upgrade_785078",
@@ -30658,7 +31664,24 @@
       "leather",
       "water_bag"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "sinew",
+        "leather",
+        "sinew"
+      ],
+      [
+        "leather",
+        "water_bag",
+        "leather"
+      ],
+      [
+        "sinew",
+        "leather",
+        "sinew"
+      ]
+    ]
   },
   {
     "id": "stone_furnace_772856",
@@ -30794,8 +31817,25 @@
       "slimeball_green",
       "clay_ball"
     ],
-    "shaped": false,
-    "item_num": 828506
+    "shaped": true,
+    "item_num": 828506,
+    "pattern": [
+      [
+        "_",
+        "bone_meal",
+        "_"
+      ],
+      [
+        "chicken_egg",
+        "glass_bottle",
+        "green_gelatinous_sphere"
+      ],
+      [
+        "_",
+        "clay_ball",
+        "_"
+      ]
+    ]
   },
   {
     "id": "cooked_beef_cooked_beef",
@@ -30874,5 +31914,345 @@
       "netherrack"
     ],
     "shaped": false
+  },
+  {
+    "id": "porridge_784440",
+    "item_num": 784440,
+    "output": "porridge",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "blue_berries",
+      "sugar",
+      "seeds",
+      "water_bowl"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "sugar_soup_784440",
+    "item_num": 784440,
+    "output": "sugar_soup",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "sugar",
+      "water_bowl"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "water_bag_copper_785082",
+    "item_num": 785082,
+    "output": "water_bag_copper",
+    "outputQty": 1,
+    "station": "copper_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "copper_ingot",
+      "copper_ingot",
+      "copper_ingot",
+      "copper_ingot",
+      "water_bag"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "copper_ingot",
+        "copper_ingot",
+        "copper_ingot"
+      ],
+      [
+        "copper_ingot",
+        "water_bag",
+        "copper_ingot"
+      ],
+      [
+        "copper_ingot",
+        "copper_ingot",
+        "copper_ingot"
+      ]
+    ]
+  },
+  {
+    "id": "water_bag_silver_785083",
+    "item_num": 785083,
+    "output": "water_bag_silver",
+    "outputQty": 1,
+    "station": "silver_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "silver_ingot",
+      "silver_ingot",
+      "silver_ingot",
+      "silver_ingot",
+      "water_bag"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "silver_ingot",
+        "silver_ingot",
+        "silver_ingot"
+      ],
+      [
+        "silver_ingot",
+        "water_bag",
+        "silver_ingot"
+      ],
+      [
+        "silver_ingot",
+        "silver_ingot",
+        "silver_ingot"
+      ]
+    ]
+  },
+  {
+    "id": "water_bag_gold_785084",
+    "item_num": 785084,
+    "output": "water_bag_gold",
+    "outputQty": 1,
+    "station": "gold_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "gold_ingot",
+      "gold_ingot",
+      "gold_ingot",
+      "gold_ingot",
+      "water_bag_iron"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "gold_ingot",
+        "gold_ingot",
+        "gold_ingot"
+      ],
+      [
+        "gold_ingot",
+        "water_bag_iron",
+        "gold_ingot"
+      ],
+      [
+        "gold_ingot",
+        "gold_ingot",
+        "gold_ingot"
+      ]
+    ]
+  },
+  {
+    "id": "water_bag_iron_785085",
+    "item_num": 785085,
+    "output": "water_bag_iron",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "iron_ingot",
+      "iron_ingot",
+      "iron_ingot",
+      "iron_ingot",
+      "water_bag_copper"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "iron_ingot",
+        "iron_ingot",
+        "iron_ingot"
+      ],
+      [
+        "iron_ingot",
+        "water_bag_copper",
+        "iron_ingot"
+      ],
+      [
+        "iron_ingot",
+        "iron_ingot",
+        "iron_ingot"
+      ]
+    ]
+  },
+  {
+    "id": "water_bag_hard_785086",
+    "item_num": 785086,
+    "output": "water_bag_hard",
+    "outputQty": 1,
+    "station": "hardstone_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "water_bag_gold"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
+      ],
+      [
+        "hardstone_ingot",
+        "water_bag_gold",
+        "hardstone_ingot"
+      ],
+      [
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
+      ]
+    ]
+  },
+  {
+    "id": "water_bag_ancient_metal_785087",
+    "item_num": 785087,
+    "output": "water_bag_ancient_metal",
+    "outputQty": 1,
+    "station": "ancient_metal_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "ancient_metal_ingot",
+      "ancient_metal_ingot",
+      "ancient_metal_ingot",
+      "ancient_metal_ingot",
+      "water_bag_hard"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "ancient_metal_ingot",
+        "ancient_metal_ingot",
+        "ancient_metal_ingot"
+      ],
+      [
+        "ancient_metal_ingot",
+        "water_bag_hard",
+        "ancient_metal_ingot"
+      ],
+      [
+        "ancient_metal_ingot",
+        "ancient_metal_ingot",
+        "ancient_metal_ingot"
+      ]
+    ]
+  },
+  {
+    "id": "water_bag_mithril_785088",
+    "item_num": 785088,
+    "output": "water_bag_mithril",
+    "outputQty": 1,
+    "station": "mithril_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "mithril_bar",
+      "mithril_bar",
+      "mithril_bar",
+      "mithril_bar",
+      "water_bag_ancient_metal"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "mithril_bar",
+        "mithril_bar",
+        "mithril_bar"
+      ],
+      [
+        "mithril_bar",
+        "water_bag_ancient_metal",
+        "mithril_bar"
+      ],
+      [
+        "mithril_bar",
+        "mithril_bar",
+        "mithril_bar"
+      ]
+    ]
+  },
+  {
+    "id": "water_bag_adamantium_785089",
+    "item_num": 785089,
+    "output": "water_bag_adamantium",
+    "outputQty": 1,
+    "station": "adamantium_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "adamantium_bar",
+      "adamantium_bar",
+      "adamantium_bar",
+      "adamantium_bar",
+      "water_bag_mithril"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "adamantium_bar",
+        "adamantium_bar",
+        "adamantium_bar"
+      ],
+      [
+        "adamantium_bar",
+        "water_bag_mithril",
+        "adamantium_bar"
+      ],
+      [
+        "adamantium_bar",
+        "adamantium_bar",
+        "adamantium_bar"
+      ]
+    ]
+  },
+  {
+    "id": "ex_eye_of_ender_802102",
+    "item_num": 802102,
+    "output": "ex_eye_of_ender",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "ender_eye",
+      "ender_eye",
+      "ender_eye",
+      "ender_eye",
+      "ender_eye",
+      "ender_eye",
+      "ender_eye",
+      "ender_eye",
+      "ender_eye"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "eye_of_ender",
+        "eye_of_ender",
+        "eye_of_ender"
+      ],
+      [
+        "eye_of_ender",
+        "eye_of_ender",
+        "eye_of_ender"
+      ],
+      [
+        "eye_of_ender",
+        "eye_of_ender",
+        "eye_of_ender"
+      ]
+    ]
   }
 ]
