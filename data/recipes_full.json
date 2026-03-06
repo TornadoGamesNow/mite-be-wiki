@@ -30813,32 +30813,15 @@
     "id": "carbon_crystal_shard_32143",
     "item_num": 32143,
     "output": "carbon_crystal_shard",
-    "outputQty": 4,
-    "station": "hand",
+    "outputQty": 1,
+    "station": "blast_furnace",
     "difficulty": 0,
     "skills": [],
     "ingredients": [
       "coal_block",
       "coal"
     ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "coal_block"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "coal"
-      ]
-    ]
+    "shaped": false
   },
   {
     "id": "nether_quartz_shard_32144",
