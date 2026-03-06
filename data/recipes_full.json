@@ -29059,24 +29059,6 @@
     "shaped": false
   },
   {
-    "id": "big_water_bag_32049",
-    "item_num": 32049,
-    "output": "big_water_bag",
-    "outputQty": 1,
-    "station": "copper_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "silk",
-      "silk",
-      "silk",
-      "leather",
-      "leather",
-      "leather"
-    ],
-    "shaped": false
-  },
-  {
     "id": "campfire_32050",
     "item_num": 32050,
     "output": "campfire",
@@ -30436,140 +30418,6 @@
     "shaped": false
   },
   {
-    "id": "water_bag_copper_785082",
-    "item_num": 785082,
-    "output": "water_bag_copper",
-    "outputQty": 1,
-    "station": "copper_workbench",
-    "difficulty": 640,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "water_bag",
-      "copper_ingot",
-      "copper_ingot",
-      "copper_ingot",
-      "copper_ingot",
-      "copper_ingot",
-      "copper_ingot",
-      "copper_ingot",
-      "copper_ingot"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "water_bag_silver_785083",
-    "item_num": 785083,
-    "output": "water_bag_silver",
-    "outputQty": 1,
-    "station": "silver_workbench",
-    "difficulty": 960,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "water_bag",
-      "silver_ingot",
-      "silver_ingot",
-      "silver_ingot",
-      "silver_ingot",
-      "silver_ingot",
-      "silver_ingot",
-      "silver_ingot",
-      "silver_ingot"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "water_bag_iron_785085",
-    "item_num": 785085,
-    "output": "water_bag_iron",
-    "outputQty": 1,
-    "station": "iron_workbench",
-    "difficulty": 1600,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "water_bag_silver",
-      "iron_ingot",
-      "iron_ingot",
-      "iron_ingot",
-      "iron_ingot"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "water_bag_gold_785084",
-    "item_num": 785084,
-    "output": "water_bag_gold",
-    "outputQty": 1,
-    "station": "gold_workbench",
-    "difficulty": 2000,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "water_bag_iron",
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "water_bag_hard_785086",
-    "item_num": 785086,
-    "output": "water_bag_hard",
-    "outputQty": 1,
-    "station": "hardstone_workbench",
-    "difficulty": 1280,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "water_bag_gold",
-      "hardstone_ingot",
-      "hardstone_ingot",
-      "hardstone_ingot",
-      "hardstone_ingot",
-      "hardstone_ingot",
-      "hardstone_ingot",
-      "hardstone_ingot",
-      "hardstone_ingot"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "water_bag_ancient_metal_785087",
-    "item_num": 785087,
-    "output": "water_bag_ancient_metal",
-    "outputQty": 1,
-    "station": "ancient_metal_workbench",
-    "difficulty": 2800,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "water_bag_hard",
-      "ancient_metal_ingot",
-      "ancient_metal_ingot",
-      "ancient_metal_ingot",
-      "ancient_metal_ingot",
-      "ancient_metal_ingot",
-      "ancient_metal_ingot",
-      "ancient_metal_ingot",
-      "ancient_metal_ingot"
-    ],
-    "shaped": false
-  },
-  {
     "id": "obsidian_ingot_mould_816195",
     "item_num": 816195,
     "output": "obsidian_ingot_mould",
@@ -30610,52 +30458,6 @@
     "ingredients": [
       "obsidian_ingot_mould",
       "colling_liquid"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "water_bag_mithril_785088",
-    "item_num": 785088,
-    "output": "water_bag_mithril",
-    "outputQty": 1,
-    "station": "mithril_workbench",
-    "difficulty": 2400,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "water_bag_ancient_metal",
-      "mithril_ingot",
-      "mithril_ingot",
-      "mithril_ingot",
-      "mithril_ingot",
-      "mithril_ingot",
-      "mithril_ingot",
-      "mithril_ingot",
-      "mithril_ingot"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "water_bag_adamantium_785089",
-    "item_num": 785089,
-    "output": "water_bag_adamantium",
-    "outputQty": 1,
-    "station": "adamantium_workbench",
-    "difficulty": 3200,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "water_bag_mithril",
-      "adamantium_ingot",
-      "adamantium_ingot",
-      "adamantium_ingot",
-      "adamantium_ingot",
-      "adamantium_ingot",
-      "adamantium_ingot",
-      "adamantium_ingot",
-      "adamantium_ingot"
     ],
     "shaped": false
   },
@@ -30836,5 +30638,201 @@
       "stick"
     ],
     "shaped": false
+  },
+  {
+    "id": "big_water_bag_831586",
+    "item_num": 831586,
+    "output": "big_water_bag",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 400,
+    "skills": [],
+    "ingredients": [
+      "string",
+      "string",
+      "string",
+      "string",
+      "leather",
+      "leather",
+      "leather",
+      "leather",
+      "water_bag"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "stone_furnace_772856",
+    "item_num": 772856,
+    "output": "stone_furnace",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "cobblestone",
+      "cobblestone",
+      "cobblestone",
+      "cobblestone",
+      "cobblestone",
+      "cobblestone",
+      "cobblestone",
+      "cobblestone"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "torch_holy_831585",
+    "item_num": 831585,
+    "output": "torch_holy",
+    "outputQty": 3,
+    "station": "brewing_stand",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "mutton_raw",
+      "torch",
+      "torch",
+      "torch"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "worm_cooked_772979",
+    "output": "worm_cooked",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "worm_raw"
+    ],
+    "shaped": false,
+    "item_num": 772979
+  },
+  {
+    "id": "duck_cooked_446428",
+    "output": "duck_cooked",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "duck_meat"
+    ],
+    "shaped": false,
+    "item_num": 446428
+  },
+  {
+    "id": "duck_head_cooked_duck_head_cooked",
+    "output": "duck_head_cooked",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "duck_head"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "beef_stew_beef_stew",
+    "output": "beef_stew",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "potato",
+      "cooked_beef",
+      "mushroom_brown",
+      "bowl_water"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "cereal_772963",
+    "output": "cereal",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "wheat",
+      "sugar",
+      "bowl_milk"
+    ],
+    "shaped": false,
+    "item_num": 772963
+  },
+  {
+    "id": "sorbet_772973",
+    "output": "sorbet",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "sugar",
+      "snowball",
+      "orange",
+      "bowl"
+    ],
+    "shaped": false,
+    "item_num": 772973
+  },
+  {
+    "id": "skin_cream_bottle_828506",
+    "output": "skin_cream_bottle",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "bone_meal",
+      "egg",
+      "glass_bottle",
+      "slimeball_green",
+      "clay_ball"
+    ],
+    "shaped": false,
+    "item_num": 828506
+  },
+  {
+    "id": "cooked_beef_cooked_beef",
+    "output": "cooked_beef",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "beef"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "cooked_mutton_772250",
+    "output": "cooked_mutton",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "mutton_raw"
+    ],
+    "shaped": false,
+    "item_num": 772250
+  },
+  {
+    "id": "cooked_squid_meat_446430",
+    "output": "cooked_squid_meat",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "squid_meat"
+    ],
+    "shaped": false,
+    "item_num": 446430
   }
 ]
