@@ -10,10 +10,10 @@ The first public bilingual wiki for **MITE: Break Everything** — a hardcore to
 
 ## Download & Install
 
-| | Link | Note |
+| | Link | Size |
 |---|---|---|
-| 🌍 **Western mirror** | [Archive.org — MITE:BE v0.9.0 hf3](https://archive.org/download/mi-te-be-v-0.9.0-hf-3/MiTE-BE_v0.9.0_hf3.zip) | Direct ZIP, no registration |
-| 🇨🇳 **Official source** | [mcmod.cn/class/3751.html](https://www.mcmod.cn/class/3751.html) | Requires Baidu Pan |
+| 🇭🇺 **Hungarian version** | [archive.org/details/mite-be-v0.9.0-hungarian](https://archive.org/details/mite-be-v0.9.0-hungarian) | ~266 MB |
+| 🇬🇧 **English version** | [archive.org/details/mite-be-v0.9.0-english](https://archive.org/details/mite-be-v0.9.0-english) | ~13 KB |
 
 **Requirements:** Java 8 + [PrismLauncher](https://prismlauncher.org)
 **Installation guide:** [tornadogamesnow.github.io/mite-be-wiki/install](https://tornadogamesnow.github.io/mite-be-wiki/install)
