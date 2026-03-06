@@ -69,7 +69,7 @@ function ItemIcon({ id, size = 32 }: { id: string; size?: number }) {
         alt={id}
         width={size}
         height={size}
-        style={{ imageRendering: 'pixelated', objectFit: 'contain' }}
+        style={{ imageRendering: 'pixelated', objectFit: 'contain', width: size, height: size, flexShrink: 0 }}
         onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
       />
     );
