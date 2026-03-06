@@ -30664,5 +30664,81 @@
       "colling_liquid"
     ],
     "shaped": false
+  },
+  {
+    "id": "water_bag_mithril_785088",
+    "item_num": 785088,
+    "output": "water_bag_mithril",
+    "outputQty": 1,
+    "station": "mithril_workbench",
+    "difficulty": 2400,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "water_bag_ancient_metal",
+      "mithril_ingot",
+      "mithril_ingot",
+      "mithril_ingot",
+      "mithril_ingot",
+      "mithril_ingot",
+      "mithril_ingot",
+      "mithril_ingot",
+      "mithril_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "water_bag_adamantium_785089",
+    "item_num": 785089,
+    "output": "water_bag_adamantium",
+    "outputQty": 1,
+    "station": "adamantium_workbench",
+    "difficulty": 3200,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "water_bag_mithril",
+      "adamantium_ingot",
+      "adamantium_ingot",
+      "adamantium_ingot",
+      "adamantium_ingot",
+      "adamantium_ingot",
+      "adamantium_ingot",
+      "adamantium_ingot",
+      "adamantium_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "big_backpack_upgrade_841176",
+    "item_num": 841176,
+    "output": "big_backpack_upgrade",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 800,
+    "skills": [],
+    "ingredients": [
+      "leather",
+      "leather",
+      "leather",
+      "leather",
+      "backpack"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "respawn_anchor_811918",
+    "item_num": 811918,
+    "output": "respawn_anchor",
+    "outputQty": 1,
+    "station": "hardstone_workbench",
+    "difficulty": 2000,
+    "skills": [],
+    "ingredients": [
+      "blue_compass"
+    ],
+    "shaped": false
   }
 ]
