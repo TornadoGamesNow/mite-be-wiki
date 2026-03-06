@@ -116,15 +116,6 @@
     "tier": null,
     "category": "material"
   },
-  "stone_knife": {
-    "name": {
-      "hu": "Kő Kés",
-      "en": "Stone Knife"
-    },
-    "img": "img/items/flint_knife.png",
-    "tier": "flint",
-    "category": "tool"
-  },
   "stone_hatchet": {
     "name": {
       "hu": "Kő Kézbalta",
@@ -4415,7 +4406,7 @@
   },
   "high_carbon_steel_war_hammer": {
     "name": {
-      "hu": "Magas Szén Acél Háborús Kalapács",
+      "hu": "Magas Szén-tartalmú Acél Háborús Kalapács",
       "en": "High Carbon Steel War Hammer"
     },
     "img": "img/items/high_carbon_steel_war_hammer.png",
@@ -7564,5 +7555,1579 @@
     },
     "img": "img/items/mutton_raw.png",
     "tier": null
+  },
+  "chip_flint_knife": {
+    "name": {
+      "hu": "Kovakő Kés",
+      "en": "Chip Flint Knife"
+    },
+    "img": "img/items/chip_flint_knife.png",
+    "tier": 1
+  },
+  "redstone_ore": {
+    "name": {
+      "hu": "RedKo Érc",
+      "en": "Redstone Ore"
+    },
+    "img": "img/items/redstone_ore.png",
+    "tier": null,
+    "category": "material"
+  },
+  "ore_tin": {
+    "name": {
+      "hu": "Érc Ón",
+      "en": "Ore Tin"
+    },
+    "img": "img/items/ore_tin.png",
+    "tier": "tin",
+    "category": "material"
+  },
+  "rubace_cluster": {
+    "name": {
+      "hu": "Rubace Cluster",
+      "en": "Rubace Cluster"
+    },
+    "img": "img/items/rubace_cluster.png",
+    "tier": null,
+    "category": "material"
+  },
+  "rubace_small_bud": {
+    "name": {
+      "hu": "Rubace Small Bud",
+      "en": "Rubace Small Bud"
+    },
+    "img": "img/items/rubace_small_bud.png",
+    "tier": null,
+    "category": "material"
+  },
+  "rubace_medium_bud": {
+    "name": {
+      "hu": "Rubace Medium Bud",
+      "en": "Rubace Medium Bud"
+    },
+    "img": "img/items/rubace_medium_bud.png",
+    "tier": null,
+    "category": "material"
+  },
+  "rubace_large_bud": {
+    "name": {
+      "hu": "Rubace Large Bud",
+      "en": "Rubace Large Bud"
+    },
+    "img": "img/items/rubace_large_bud.png",
+    "tier": null,
+    "category": "material"
+  },
+  "tin_ingot": {
+    "name": {
+      "hu": "Ón Rúd",
+      "en": "Tin Ingot"
+    },
+    "img": "img/items/tin_ingot.png",
+    "tier": "tin",
+    "category": "material"
+  },
+  "pcb": {
+    "name": {
+      "hu": "PCB",
+      "en": "PCB"
+    },
+    "img": "img/items/pcb.png",
+    "tier": null,
+    "category": "material"
+  },
+  "attribute_coin": {
+    "name": {
+      "hu": "Attribute Érme",
+      "en": "Attribute Coin"
+    },
+    "img": "img/items/attribute_coin.png",
+    "tier": null,
+    "category": "material"
+  },
+  "manure": {
+    "name": {
+      "hu": "Manure",
+      "en": "Manure"
+    },
+    "img": "img/items/manure.png",
+    "tier": null,
+    "category": "material"
+  },
+  "redstone": {
+    "name": {
+      "hu": "RedKo",
+      "en": "Redstone"
+    },
+    "img": "img/items/redstone.png",
+    "tier": null,
+    "category": "material"
+  },
+  "chip_flint": {
+    "name": {
+      "hu": "Chip Kova",
+      "en": "Chip Flint"
+    },
+    "img": "img/items/chip_flint.png",
+    "tier": "flint",
+    "category": "material"
+  },
+  "rubace_shard": {
+    "name": {
+      "hu": "Rubace Szilánk",
+      "en": "Rubace Shard"
+    },
+    "img": "img/items/rubace_shard.png",
+    "tier": null,
+    "category": "material"
+  },
+  "carbon_crystal_shard": {
+    "name": {
+      "hu": "Carbon Crystal Szilánk",
+      "en": "Carbon Crystal Shard"
+    },
+    "img": "img/items/carbon_crystal_shard.png",
+    "tier": null,
+    "category": "material"
+  },
+  "mesh_string": {
+    "name": {
+      "hu": "Mesh String",
+      "en": "Mesh String"
+    },
+    "img": "img/items/mesh_string.png",
+    "tier": null,
+    "category": "material"
+  },
+  "mesh_leather": {
+    "name": {
+      "hu": "Mesh Leather",
+      "en": "Mesh Leather"
+    },
+    "img": "img/items/mesh_leather.png",
+    "tier": null,
+    "category": "material"
+  },
+  "ex_eye_of_ender": {
+    "name": {
+      "hu": "Ex Eye Of Ender",
+      "en": "Ex Eye Of Ender"
+    },
+    "img": "img/items/ex_eye_of_ender.png",
+    "tier": null,
+    "category": "material"
+  },
+  "skull_shard": {
+    "name": {
+      "hu": "Skull Szilánk",
+      "en": "Skull Shard"
+    },
+    "img": "img/items/skull_shard.png",
+    "tier": null,
+    "category": "material"
+  },
+  "tiny_stone": {
+    "name": {
+      "hu": "Óny Ko",
+      "en": "Tiny Stone"
+    },
+    "img": "img/items/tiny_stone.png",
+    "tier": "stone",
+    "category": "material"
+  },
+  "sieve": {
+    "name": {
+      "hu": "Sieve",
+      "en": "Sieve"
+    },
+    "img": "img/items/sieve.png",
+    "tier": null,
+    "category": "material"
+  },
+  "runestore": {
+    "name": {
+      "hu": "RunestÉrc",
+      "en": "Runestore"
+    },
+    "img": "img/items/runestore.png",
+    "tier": null,
+    "category": "material"
+  },
+  "blast_furnace": {
+    "name": {
+      "hu": "Blast Furnace",
+      "en": "Blast Furnace"
+    },
+    "img": "img/items/blast_furnace.png",
+    "tier": null,
+    "category": "material"
+  },
+  "enchantment_table": {
+    "name": {
+      "hu": "Enchantment Table",
+      "en": "Enchantment Table"
+    },
+    "img": "img/items/enchantment_table.png",
+    "tier": null,
+    "category": "material"
+  },
+  "two_port_cauldron": {
+    "name": {
+      "hu": "Two Port Cauldron",
+      "en": "Two Port Cauldron"
+    },
+    "img": "img/items/two_port_cauldron.png",
+    "tier": null,
+    "category": "material"
+  },
+  "respawn_anchor": {
+    "name": {
+      "hu": "Respawn Anchor",
+      "en": "Respawn Anchor"
+    },
+    "img": "img/items/respawn_anchor.png",
+    "tier": null,
+    "category": "material"
+  },
+  "enchantment_table_custom": {
+    "name": {
+      "hu": "Enchantment Table Custom",
+      "en": "Enchantment Table Custom"
+    },
+    "img": "img/items/enchantment_table_custom.png",
+    "tier": null,
+    "category": "material"
+  },
+  "ancient_metal_backpack_upgrade": {
+    "name": {
+      "hu": "Ősi Fém Hátizsák Fejlesztés",
+      "en": "Ancient Metal Backpack Upgrade"
+    },
+    "img": "img/items/ancient_metal_backpack_upgrade.png",
+    "tier": "ancient_metal",
+    "category": "material"
+  },
+  "big_backpack_upgrade": {
+    "name": {
+      "hu": "Big Hátizsák Fejlesztés",
+      "en": "Big Backpack Upgrade"
+    },
+    "img": "img/items/big_backpack_upgrade.png",
+    "tier": null,
+    "category": "material"
+  },
+  "copper_chest_upgrade": {
+    "name": {
+      "hu": "Réz Láda Fejlesztés",
+      "en": "Copper Chest Upgrade"
+    },
+    "img": "img/items/copper_chest_upgrade.png",
+    "tier": "copper",
+    "category": "material"
+  },
+  "silver_chest_upgrade": {
+    "name": {
+      "hu": "Ezüst Láda Fejlesztés",
+      "en": "Silver Chest Upgrade"
+    },
+    "img": "img/items/silver_chest_upgrade.png",
+    "tier": "silver",
+    "category": "material"
+  },
+  "hard_chest_upgrade": {
+    "name": {
+      "hu": "Kemény Láda Fejlesztés",
+      "en": "Hard Chest Upgrade"
+    },
+    "img": "img/items/hard_chest_upgrade.png",
+    "tier": "hard",
+    "category": "material"
+  },
+  "iron_chest_upgrade": {
+    "name": {
+      "hu": "Vas Láda Fejlesztés",
+      "en": "Iron Chest Upgrade"
+    },
+    "img": "img/items/iron_chest_upgrade.png",
+    "tier": "iron",
+    "category": "material"
+  },
+  "gold_chest_upgrade": {
+    "name": {
+      "hu": "Arany Láda Fejlesztés",
+      "en": "Gold Chest Upgrade"
+    },
+    "img": "img/items/gold_chest_upgrade.png",
+    "tier": "gold",
+    "category": "material"
+  },
+  "mithril_chest_upgrade": {
+    "name": {
+      "hu": "Mithril Láda Fejlesztés",
+      "en": "Mithril Chest Upgrade"
+    },
+    "img": "img/items/mithril_chest_upgrade.png",
+    "tier": "mithril",
+    "category": "material"
+  },
+  "adamantium_chest_upgrade": {
+    "name": {
+      "hu": "Adamantium Láda Fejlesztés",
+      "en": "Adamantium Chest Upgrade"
+    },
+    "img": "img/items/adamantium_chest_upgrade.png",
+    "tier": "adamantium",
+    "category": "material"
+  },
+  "barrel_copper_upgrade": {
+    "name": {
+      "hu": "Hordó Réz Fejlesztés",
+      "en": "Barrel Copper Upgrade"
+    },
+    "img": "img/items/barrel_copper_upgrade.png",
+    "tier": "copper",
+    "category": "material"
+  },
+  "barrel_silver_upgrade": {
+    "name": {
+      "hu": "Hordó Ezüst Fejlesztés",
+      "en": "Barrel Silver Upgrade"
+    },
+    "img": "img/items/barrel_silver_upgrade.png",
+    "tier": "silver",
+    "category": "material"
+  },
+  "barrel_iron_upgrade": {
+    "name": {
+      "hu": "Hordó Vas Fejlesztés",
+      "en": "Barrel Iron Upgrade"
+    },
+    "img": "img/items/barrel_iron_upgrade.png",
+    "tier": "iron",
+    "category": "material"
+  },
+  "barrel_gold_upgrade": {
+    "name": {
+      "hu": "Hordó Arany Fejlesztés",
+      "en": "Barrel Gold Upgrade"
+    },
+    "img": "img/items/barrel_gold_upgrade.png",
+    "tier": "gold",
+    "category": "material"
+  },
+  "barrel_mithril_upgrade": {
+    "name": {
+      "hu": "Hordó Mithril Fejlesztés",
+      "en": "Barrel Mithril Upgrade"
+    },
+    "img": "img/items/barrel_mithril_upgrade.png",
+    "tier": "mithril",
+    "category": "material"
+  },
+  "barrel_adamantium_upgrade": {
+    "name": {
+      "hu": "Hordó Adamantium Fejlesztés",
+      "en": "Barrel Adamantium Upgrade"
+    },
+    "img": "img/items/barrel_adamantium_upgrade.png",
+    "tier": "adamantium",
+    "category": "material"
+  },
+  "barrel_hard_upgrade": {
+    "name": {
+      "hu": "Hordó Kemény Fejlesztés",
+      "en": "Barrel Hard Upgrade"
+    },
+    "img": "img/items/barrel_hard_upgrade.png",
+    "tier": "hard",
+    "category": "material"
+  },
+  "log_pitaya": {
+    "name": {
+      "hu": "Log Pitaya",
+      "en": "Log Pitaya"
+    },
+    "img": "img/items/log_pitaya.png",
+    "tier": null,
+    "category": "material"
+  },
+  "log_banana": {
+    "name": {
+      "hu": "Log Banana",
+      "en": "Log Banana"
+    },
+    "img": "img/items/log_banana.png",
+    "tier": null,
+    "category": "material"
+  },
+  "log_coconut": {
+    "name": {
+      "hu": "Log Coconut",
+      "en": "Log Coconut"
+    },
+    "img": "img/items/log_coconut.png",
+    "tier": null,
+    "category": "material"
+  },
+  "magma": {
+    "name": {
+      "hu": "Magma",
+      "en": "Magma"
+    },
+    "img": "img/items/magma.png",
+    "tier": null,
+    "category": "material"
+  },
+  "gravel_nether": {
+    "name": {
+      "hu": "Gravel Nether",
+      "en": "Gravel Nether"
+    },
+    "img": "img/items/gravel_nether.png",
+    "tier": null,
+    "category": "material"
+  },
+  "core": {
+    "name": {
+      "hu": "CÉrc",
+      "en": "Core"
+    },
+    "img": "img/items/core.png",
+    "tier": null,
+    "category": "material"
+  },
+  "mantle": {
+    "name": {
+      "hu": "Mantle",
+      "en": "Mantle"
+    },
+    "img": "img/items/mantle.png",
+    "tier": null,
+    "category": "material"
+  },
+  "slow_sand": {
+    "name": {
+      "hu": "Slow Sand",
+      "en": "Slow Sand"
+    },
+    "img": "img/items/slow_sand.png",
+    "tier": null,
+    "category": "material"
+  },
+  "rubace_budding": {
+    "name": {
+      "hu": "Rubace Budding",
+      "en": "Rubace Budding"
+    },
+    "img": "img/items/rubace_budding.png",
+    "tier": null,
+    "category": "material"
+  },
+  "hard_ened_clay": {
+    "name": {
+      "hu": "Kemény Ened Clay",
+      "en": "Hard Ened Clay"
+    },
+    "img": "img/items/hard_ened_clay.png",
+    "tier": "hard",
+    "category": "material"
+  },
+  "sand_stone": {
+    "name": {
+      "hu": "Sand Ko",
+      "en": "Sand Stone"
+    },
+    "img": "img/items/sand_stone.png",
+    "tier": "stone",
+    "category": "material"
+  },
+  "torch_off": {
+    "name": {
+      "hu": "Torch Off",
+      "en": "Torch Off"
+    },
+    "img": "img/items/torch_off.png",
+    "tier": null,
+    "category": "material"
+  },
+  "glow_stone_torch": {
+    "name": {
+      "hu": "Glow Ko Torch",
+      "en": "Glow Stone Torch"
+    },
+    "img": "img/items/glow_stone_torch.png",
+    "tier": "stone",
+    "category": "material"
+  },
+  "pillager_flag": {
+    "name": {
+      "hu": "Pillager Flag",
+      "en": "Pillager Flag"
+    },
+    "img": "img/items/pillager_flag.png",
+    "tier": null,
+    "category": "material"
+  },
+  "template_lantern": {
+    "name": {
+      "hu": "Template Lantern",
+      "en": "Template Lantern"
+    },
+    "img": "img/items/template_lantern.png",
+    "tier": null,
+    "category": "material"
+  },
+  "thin_glass": {
+    "name": {
+      "hu": "Thin Glass",
+      "en": "Thin Glass"
+    },
+    "img": "img/items/thin_glass.png",
+    "tier": null,
+    "category": "material"
+  },
+  "torch_holy": {
+    "name": {
+      "hu": "Torch Holy",
+      "en": "Torch Holy"
+    },
+    "img": "img/items/torch_holy.png",
+    "tier": null,
+    "category": "material"
+  },
+  "sapling_pitaya": {
+    "name": {
+      "hu": "Sapling Pitaya",
+      "en": "Sapling Pitaya"
+    },
+    "img": "img/items/sapling_pitaya.png",
+    "tier": null,
+    "category": "material"
+  },
+  "sapling_coconut": {
+    "name": {
+      "hu": "Sapling Coconut",
+      "en": "Sapling Coconut"
+    },
+    "img": "img/items/sapling_coconut.png",
+    "tier": null,
+    "category": "material"
+  },
+  "sapling_banana": {
+    "name": {
+      "hu": "Sapling Banana",
+      "en": "Sapling Banana"
+    },
+    "img": "img/items/sapling_banana.png",
+    "tier": null,
+    "category": "material"
+  },
+  "sunflower": {
+    "name": {
+      "hu": "Sunflower",
+      "en": "Sunflower"
+    },
+    "img": "img/items/sunflower.png",
+    "tier": null,
+    "category": "material"
+  },
+  "blueberry_bush": {
+    "name": {
+      "hu": "Blueberry Bush",
+      "en": "Blueberry Bush"
+    },
+    "img": "img/items/blueberry_bush.png",
+    "tier": null,
+    "category": "material"
+  },
+  "strawberry_bush": {
+    "name": {
+      "hu": "Strawberry Bush",
+      "en": "Strawberry Bush"
+    },
+    "img": "img/items/strawberry_bush.png",
+    "tier": null,
+    "category": "material"
+  },
+  "orange_bush": {
+    "name": {
+      "hu": "Orange Bush",
+      "en": "Orange Bush"
+    },
+    "img": "img/items/orange_bush.png",
+    "tier": null,
+    "category": "material"
+  },
+  "dead_bush": {
+    "name": {
+      "hu": "Dead Bush",
+      "en": "Dead Bush"
+    },
+    "img": "img/items/dead_bush.png",
+    "tier": null,
+    "category": "material"
+  },
+  "wither_rose": {
+    "name": {
+      "hu": "Wither Rose",
+      "en": "Wither Rose"
+    },
+    "img": "img/items/wither_rose.png",
+    "tier": null,
+    "category": "material"
+  },
+  "mint": {
+    "name": {
+      "hu": "Mint",
+      "en": "Mint"
+    },
+    "img": "img/items/mint.png",
+    "tier": null,
+    "category": "material"
+  },
+  "coconut": {
+    "name": {
+      "hu": "Coconut",
+      "en": "Coconut"
+    },
+    "img": "img/items/coconut.png",
+    "tier": null,
+    "category": "material"
+  },
+  "grape": {
+    "name": {
+      "hu": "Grape",
+      "en": "Grape"
+    },
+    "img": "img/items/grape.png",
+    "tier": null,
+    "category": "material"
+  },
+  "strawberry": {
+    "name": {
+      "hu": "Strawberry",
+      "en": "Strawberry"
+    },
+    "img": "img/items/strawberry.png",
+    "tier": null,
+    "category": "material"
+  },
+  "pitaya": {
+    "name": {
+      "hu": "Pitaya",
+      "en": "Pitaya"
+    },
+    "img": "img/items/pitaya.png",
+    "tier": null,
+    "category": "material"
+  },
+  "wild_fruit": {
+    "name": {
+      "hu": "Wild Fruit",
+      "en": "Wild Fruit"
+    },
+    "img": "img/items/wild_fruit.png",
+    "tier": null,
+    "category": "material"
+  },
+  "sun_flower_seed": {
+    "name": {
+      "hu": "Sun Flower Seed",
+      "en": "Sun Flower Seed"
+    },
+    "img": "img/items/sun_flower_seed.png",
+    "tier": null,
+    "category": "material"
+  },
+  "duck_cooked": {
+    "name": {
+      "hu": "Duck Cooked",
+      "en": "Duck Cooked"
+    },
+    "img": "img/items/duck_cooked.png",
+    "tier": null,
+    "category": "material"
+  },
+  "bad_duck_meat": {
+    "name": {
+      "hu": "Bad Duck Meat",
+      "en": "Bad Duck Meat"
+    },
+    "img": "img/items/bad_duck_meat.png",
+    "tier": null,
+    "category": "material"
+  },
+  "duck_head": {
+    "name": {
+      "hu": "Duck Head",
+      "en": "Duck Head"
+    },
+    "img": "img/items/duck_head.png",
+    "tier": null,
+    "category": "material"
+  },
+  "duck_head_cooked": {
+    "name": {
+      "hu": "Duck Head Cooked",
+      "en": "Duck Head Cooked"
+    },
+    "img": "img/items/duck_head_cooked.png",
+    "tier": null,
+    "category": "material"
+  },
+  "bad_duck_head_cooked": {
+    "name": {
+      "hu": "Bad Duck Head Cooked",
+      "en": "Bad Duck Head Cooked"
+    },
+    "img": "img/items/bad_duck_head_cooked.png",
+    "tier": null,
+    "category": "material"
+  },
+  "squid_meat": {
+    "name": {
+      "hu": "Squid Meat",
+      "en": "Squid Meat"
+    },
+    "img": "img/items/squid_meat.png",
+    "tier": null,
+    "category": "material"
+  },
+  "cooked_squid_meat": {
+    "name": {
+      "hu": "Cooked Squid Meat",
+      "en": "Cooked Squid Meat"
+    },
+    "img": "img/items/cooked_squid_meat.png",
+    "tier": null,
+    "category": "material"
+  },
+  "bad_cooked_squid_meat": {
+    "name": {
+      "hu": "Bad Cooked Squid Meat",
+      "en": "Bad Cooked Squid Meat"
+    },
+    "img": "img/items/bad_cooked_squid_meat.png",
+    "tier": null,
+    "category": "material"
+  },
+  "bad_fish_cooked": {
+    "name": {
+      "hu": "Bad Fish Cooked",
+      "en": "Bad Fish Cooked"
+    },
+    "img": "img/items/bad_fish_cooked.png",
+    "tier": null,
+    "category": "material"
+  },
+  "bad_cooked_meat": {
+    "name": {
+      "hu": "Bad Cooked Meat",
+      "en": "Bad Cooked Meat"
+    },
+    "img": "img/items/bad_cooked_meat.png",
+    "tier": null,
+    "category": "material"
+  },
+  "banana": {
+    "name": {
+      "hu": "Banana",
+      "en": "Banana"
+    },
+    "img": "img/items/banana.png",
+    "tier": null,
+    "category": "material"
+  },
+  "hot_water": {
+    "name": {
+      "hu": "Hot Water",
+      "en": "Hot Water"
+    },
+    "img": "img/items/hot_water.png",
+    "tier": null,
+    "category": "material"
+  },
+  "sugar_soup": {
+    "name": {
+      "hu": "Sugar Soup",
+      "en": "Sugar Soup"
+    },
+    "img": "img/items/sugar_soup.png",
+    "tier": null,
+    "category": "material"
+  },
+  "seeds": {
+    "name": {
+      "hu": "Seeds",
+      "en": "Seeds"
+    },
+    "img": "img/items/seeds.png",
+    "tier": null,
+    "category": "material"
+  },
+  "bad_mutton_cooked": {
+    "name": {
+      "hu": "Bad Mutton Cooked",
+      "en": "Bad Mutton Cooked"
+    },
+    "img": "img/items/bad_mutton_cooked.png",
+    "tier": null,
+    "category": "material"
+  },
+  "cooked_mutton": {
+    "name": {
+      "hu": "Cooked Mutton",
+      "en": "Cooked Mutton"
+    },
+    "img": "img/items/cooked_mutton.png",
+    "tier": null,
+    "category": "material"
+  },
+  "blue_berries": {
+    "name": {
+      "hu": "Blue Berries",
+      "en": "Blue Berries"
+    },
+    "img": "img/items/blue_berries.png",
+    "tier": null,
+    "category": "material"
+  },
+  "porridge": {
+    "name": {
+      "hu": "Porridge",
+      "en": "Porridge"
+    },
+    "img": "img/items/porridge.png",
+    "tier": null,
+    "category": "material"
+  },
+  "l_milk_bow": {
+    "name": {
+      "hu": "Ijl Milk",
+      "en": "Bowl Milk"
+    },
+    "img": "img/items/l_milk_bow.png",
+    "tier": null,
+    "category": "material"
+  },
+  "cereal": {
+    "name": {
+      "hu": "Cereal",
+      "en": "Cereal"
+    },
+    "img": "img/items/cereal.png",
+    "tier": null,
+    "category": "material"
+  },
+  "l_cream_of_mushroom_soup_bow": {
+    "name": {
+      "hu": "Ijl Cream Of Mushroom Soup",
+      "en": "Bowl Cream Of Mushroom Soup"
+    },
+    "img": "img/items/l_cream_of_mushroom_soup_bow.png",
+    "tier": null,
+    "category": "material"
+  },
+  "l_cream_of_vegetable_soup_bow": {
+    "name": {
+      "hu": "Ijl Cream Of Vegetable Soup",
+      "en": "Bowl Cream Of Vegetable Soup"
+    },
+    "img": "img/items/l_cream_of_vegetable_soup_bow.png",
+    "tier": null,
+    "category": "material"
+  },
+  "l_vegetable_soup_bow": {
+    "name": {
+      "hu": "Ijl Vegetable Soup",
+      "en": "Bowl Vegetable Soup"
+    },
+    "img": "img/items/l_vegetable_soup_bow.png",
+    "tier": null,
+    "category": "material"
+  },
+  "beef_stew": {
+    "name": {
+      "hu": "Beef Stew",
+      "en": "Beef Stew"
+    },
+    "img": "img/items/beef_stew.png",
+    "tier": null,
+    "category": "material"
+  },
+  "sorbet": {
+    "name": {
+      "hu": "Sorbet",
+      "en": "Sorbet"
+    },
+    "img": "img/items/sorbet.png",
+    "tier": null,
+    "category": "material"
+  },
+  "worm_raw": {
+    "name": {
+      "hu": "Worm Raw",
+      "en": "Worm Raw"
+    },
+    "img": "img/items/worm_raw.png",
+    "tier": null,
+    "category": "material"
+  },
+  "worm_cooked": {
+    "name": {
+      "hu": "Worm Cooked",
+      "en": "Worm Cooked"
+    },
+    "img": "img/items/worm_cooked.png",
+    "tier": null,
+    "category": "material"
+  },
+  "return_scroll": {
+    "name": {
+      "hu": "Return Scroll",
+      "en": "Return Scroll"
+    },
+    "img": "img/items/return_scroll.png",
+    "tier": null,
+    "category": "material"
+  },
+  "bound_scroll": {
+    "name": {
+      "hu": "Bound Scroll",
+      "en": "Bound Scroll"
+    },
+    "img": "img/items/bound_scroll.png",
+    "tier": null,
+    "category": "material"
+  },
+  "warp_scroll": {
+    "name": {
+      "hu": "Warp Scroll",
+      "en": "Warp Scroll"
+    },
+    "img": "img/items/warp_scroll.png",
+    "tier": null,
+    "category": "material"
+  },
+  "antique_atlas": {
+    "name": {
+      "hu": "Antik Atlasz",
+      "en": "Antique Atlas"
+    },
+    "img": "img/items/antique_atlas.png",
+    "tier": null,
+    "category": "material"
+  },
+  "way_stone": {
+    "name": {
+      "hu": "Utko",
+      "en": "Way Stone"
+    },
+    "img": "img/items/way_stone.png",
+    "tier": "stone",
+    "category": "material"
+  },
+  "hard_stick": {
+    "name": {
+      "hu": "Kemény Bot",
+      "en": "Hard Stick"
+    },
+    "img": "img/items/hard_stick.png",
+    "tier": "hard",
+    "category": "material"
+  },
+  "colling_liquid": {
+    "name": {
+      "hu": "Colling Liquid",
+      "en": "Colling Liquid"
+    },
+    "img": "img/items/colling_liquid.png",
+    "tier": null,
+    "category": "material"
+  },
+  "obsidian_ingot_mould": {
+    "name": {
+      "hu": "Obszidián Rúd Mould",
+      "en": "Obsidian Ingot Mould"
+    },
+    "img": "img/items/obsidian_ingot_mould.png",
+    "tier": "obsidian",
+    "category": "material"
+  },
+  "obsidian_ingot_cool_mould": {
+    "name": {
+      "hu": "Obszidián Rúd Cool Mould",
+      "en": "Obsidian Ingot Cool Mould"
+    },
+    "img": "img/items/obsidian_ingot_cool_mould.png",
+    "tier": "obsidian",
+    "category": "material"
+  },
+  "skin_cream_bottle": {
+    "name": {
+      "hu": "Skin Cream Bottle",
+      "en": "Skin Cream Bottle"
+    },
+    "img": "img/items/skin_cream_bottle.png",
+    "tier": null,
+    "category": "material"
+  },
+  "oxygen_bottle": {
+    "name": {
+      "hu": "Oxygen Bottle",
+      "en": "Oxygen Bottle"
+    },
+    "img": "img/items/oxygen_bottle.png",
+    "tier": null,
+    "category": "material"
+  },
+  "sleep_bag": {
+    "name": {
+      "hu": "Alvozsakos",
+      "en": "Sleep Bag"
+    },
+    "img": "img/items/sleep_bag.png",
+    "tier": null,
+    "category": "material"
+  },
+  "rusted_iron_hatchet": {
+    "name": {
+      "hu": "Rozsdás Vas Kézbalta",
+      "en": "Rusted Iron Hatchet"
+    },
+    "img": "img/items/rusted_iron_hatchet.png",
+    "tier": "rusted_iron",
+    "category": "material"
+  },
+  "high_carbon_steel_hatchet": {
+    "name": {
+      "hu": "Magas Szén-tartalmú Acél Kézbalta",
+      "en": "High Carbon Steel Hatchet"
+    },
+    "img": "img/items/high_carbon_steel_hatchet.png",
+    "tier": "high_carbon_steel",
+    "category": "material"
+  },
+  "rusted_iron_axe": {
+    "name": {
+      "hu": "Rozsdás Vas Fejsze",
+      "en": "Rusted Iron Axe"
+    },
+    "img": "img/items/rusted_iron_axe.png",
+    "tier": "rusted_iron",
+    "category": "material"
+  },
+  "bronze_axe": {
+    "name": {
+      "hu": "Bronz Fejsze",
+      "en": "Bronze Axe"
+    },
+    "img": "img/items/bronze_axe.png",
+    "tier": "bronze",
+    "category": "material"
+  },
+  "silver_copper_axe": {
+    "name": {
+      "hu": "Ezüst-Réz Fejsze",
+      "en": "Silver Copper Axe"
+    },
+    "img": "img/items/silver_copper_axe.png",
+    "tier": "silver_copper",
+    "category": "material"
+  },
+  "high_carbon_steel_axe": {
+    "name": {
+      "hu": "Magas Szén-tartalmú Acél Fejsze",
+      "en": "High Carbon Steel Axe"
+    },
+    "img": "img/items/high_carbon_steel_axe.png",
+    "tier": "high_carbon_steel",
+    "category": "material"
+  },
+  "rusted_iron_pickaxe": {
+    "name": {
+      "hu": "Rozsdás Vas Csákány",
+      "en": "Rusted Iron Pickaxe"
+    },
+    "img": "img/items/rusted_iron_pickaxe.png",
+    "tier": "rusted_iron",
+    "category": "material"
+  },
+  "bronze_pickaxe": {
+    "name": {
+      "hu": "Bronz Csákány",
+      "en": "Bronze Pickaxe"
+    },
+    "img": "img/items/bronze_pickaxe.png",
+    "tier": "bronze",
+    "category": "material"
+  },
+  "silver_copper_pickaxe": {
+    "name": {
+      "hu": "Ezüst-Réz Csákány",
+      "en": "Silver Copper Pickaxe"
+    },
+    "img": "img/items/silver_copper_pickaxe.png",
+    "tier": "silver_copper",
+    "category": "material"
+  },
+  "high_carbon_steel_pickaxe": {
+    "name": {
+      "hu": "Magas Szén-tartalmú Acél Csákány",
+      "en": "High Carbon Steel Pickaxe"
+    },
+    "img": "img/items/high_carbon_steel_pickaxe.png",
+    "tier": "high_carbon_steel",
+    "category": "material"
+  },
+  "rusted_iron_shovel": {
+    "name": {
+      "hu": "Rozsdás Vas Ásó",
+      "en": "Rusted Iron Shovel"
+    },
+    "img": "img/items/rusted_iron_shovel.png",
+    "tier": "rusted_iron",
+    "category": "material"
+  },
+  "bronze_shovel": {
+    "name": {
+      "hu": "Bronz Ásó",
+      "en": "Bronze Shovel"
+    },
+    "img": "img/items/bronze_shovel.png",
+    "tier": "bronze",
+    "category": "material"
+  },
+  "silver_copper_shovel": {
+    "name": {
+      "hu": "Ezüst-Réz Ásó",
+      "en": "Silver Copper Shovel"
+    },
+    "img": "img/items/silver_copper_shovel.png",
+    "tier": "silver_copper",
+    "category": "material"
+  },
+  "high_carbon_steel_shovel": {
+    "name": {
+      "hu": "Magas Szén-tartalmú Acél Ásó",
+      "en": "High Carbon Steel Shovel"
+    },
+    "img": "img/items/high_carbon_steel_shovel.png",
+    "tier": "high_carbon_steel",
+    "category": "material"
+  },
+  "rusted_iron_hoe": {
+    "name": {
+      "hu": "Rozsdás Vas Kapa",
+      "en": "Rusted Iron Hoe"
+    },
+    "img": "img/items/rusted_iron_hoe.png",
+    "tier": "rusted_iron",
+    "category": "material"
+  },
+  "high_carbon_steel_hoe": {
+    "name": {
+      "hu": "Magas Szén-tartalmú Acél Kapa",
+      "en": "High Carbon Steel Hoe"
+    },
+    "img": "img/items/high_carbon_steel_hoe.png",
+    "tier": "high_carbon_steel",
+    "category": "material"
+  },
+  "rusted_iron_mattock": {
+    "name": {
+      "hu": "Rozsdás Vas Kapacs",
+      "en": "Rusted Iron Mattock"
+    },
+    "img": "img/items/rusted_iron_mattock.png",
+    "tier": "rusted_iron",
+    "category": "material"
+  },
+  "high_carbon_steel_mattock": {
+    "name": {
+      "hu": "Magas Szén-tartalmú Acél Kapacs",
+      "en": "High Carbon Steel Mattock"
+    },
+    "img": "img/items/high_carbon_steel_mattock.png",
+    "tier": "high_carbon_steel",
+    "category": "material"
+  },
+  "rusted_iron_scythe": {
+    "name": {
+      "hu": "Rozsdás Vas Kasza",
+      "en": "Rusted Iron Scythe"
+    },
+    "img": "img/items/rusted_iron_scythe.png",
+    "tier": "rusted_iron",
+    "category": "material"
+  },
+  "high_carbon_steel_scythe": {
+    "name": {
+      "hu": "Magas Szén-tartalmú Acél Kasza",
+      "en": "High Carbon Steel Scythe"
+    },
+    "img": "img/items/high_carbon_steel_scythe.png",
+    "tier": "high_carbon_steel",
+    "category": "material"
+  },
+  "rusted_iron_shears": {
+    "name": {
+      "hu": "Rozsdás Vas Olló",
+      "en": "Rusted Iron Shears"
+    },
+    "img": "img/items/rusted_iron_shears.png",
+    "tier": "rusted_iron",
+    "category": "material"
+  },
+  "high_carbon_steel_shears": {
+    "name": {
+      "hu": "Magas Szén-tartalmú Acél Olló",
+      "en": "High Carbon Steel Shears"
+    },
+    "img": "img/items/high_carbon_steel_shears.png",
+    "tier": "high_carbon_steel",
+    "category": "material"
+  },
+  "water_bag_copper": {
+    "name": {
+      "hu": "Vizes Tasak Réz",
+      "en": "Water Bag Copper"
+    },
+    "img": "img/items/water_bag_copper.png",
+    "tier": "copper",
+    "category": "material"
+  },
+  "water_bag_silver": {
+    "name": {
+      "hu": "Vizes Tasak Ezüst",
+      "en": "Water Bag Silver"
+    },
+    "img": "img/items/water_bag_silver.png",
+    "tier": "silver",
+    "category": "material"
+  },
+  "water_bag_gold": {
+    "name": {
+      "hu": "Vizes Tasak Arany",
+      "en": "Water Bag Gold"
+    },
+    "img": "img/items/water_bag_gold.png",
+    "tier": "gold",
+    "category": "material"
+  },
+  "water_bag_iron": {
+    "name": {
+      "hu": "Vizes Tasak Vas",
+      "en": "Water Bag Iron"
+    },
+    "img": "img/items/water_bag_iron.png",
+    "tier": "iron",
+    "category": "material"
+  },
+  "water_bag_hard": {
+    "name": {
+      "hu": "Vizes Tasak Kemény",
+      "en": "Water Bag Hard"
+    },
+    "img": "img/items/water_bag_hard.png",
+    "tier": "hard",
+    "category": "material"
+  },
+  "water_bag_ancient_metal": {
+    "name": {
+      "hu": "Vizes Tasak Ősi Fém",
+      "en": "Water Bag Ancient Metal"
+    },
+    "img": "img/items/water_bag_ancient_metal.png",
+    "tier": "ancient_metal",
+    "category": "material"
+  },
+  "water_bag_mithril": {
+    "name": {
+      "hu": "Vizes Tasak Mithril",
+      "en": "Water Bag Mithril"
+    },
+    "img": "img/items/water_bag_mithril.png",
+    "tier": "mithril",
+    "category": "material"
+  },
+  "water_bag_adamantium": {
+    "name": {
+      "hu": "Vizes Tasak Adamantium",
+      "en": "Water Bag Adamantium"
+    },
+    "img": "img/items/water_bag_adamantium.png",
+    "tier": "adamantium",
+    "category": "material"
+  },
+  "water_bag_mercury": {
+    "name": {
+      "hu": "Vizes Tasak Higany",
+      "en": "Water Bag Mercury"
+    },
+    "img": "img/items/water_bag_mercury.png",
+    "tier": "mercury",
+    "category": "material"
+  },
+  "wood_cudgel": {
+    "name": {
+      "hu": "Fa Bunkós Bot",
+      "en": "Wood Cudgel"
+    },
+    "img": "img/items/wood_cudgel.png",
+    "tier": "wood",
+    "category": "material"
+  },
+  "wood_club": {
+    "name": {
+      "hu": "Fa Buzogány",
+      "en": "Wood Club"
+    },
+    "img": "img/items/wood_club.png",
+    "tier": "wood",
+    "category": "material"
+  },
+  "green_gelatinous_sphere": {
+    "name": {
+      "hu": "Green GelaÓnous Sphere",
+      "en": "Green Gelatinous Sphere"
+    },
+    "img": "img/items/green_gelatinous_sphere.png",
+    "tier": null,
+    "category": "material"
+  },
+  "ochre_gelatinous_sphere": {
+    "name": {
+      "hu": "Ochre GelaÓnous Sphere",
+      "en": "Ochre Gelatinous Sphere"
+    },
+    "img": "img/items/ochre_gelatinous_sphere.png",
+    "tier": null,
+    "category": "material"
+  },
+  "crimson_gelatinous_sphere": {
+    "name": {
+      "hu": "Crimson GelaÓnous Sphere",
+      "en": "Crimson Gelatinous Sphere"
+    },
+    "img": "img/items/crimson_gelatinous_sphere.png",
+    "tier": null,
+    "category": "material"
+  },
+  "gray_gelatinous_sphere": {
+    "name": {
+      "hu": "Gray GelaÓnous Sphere",
+      "en": "Gray Gelatinous Sphere"
+    },
+    "img": "img/items/gray_gelatinous_sphere.png",
+    "tier": null,
+    "category": "material"
+  },
+  "black_gelatinous_sphere": {
+    "name": {
+      "hu": "Black GelaÓnous Sphere",
+      "en": "Black Gelatinous Sphere"
+    },
+    "img": "img/items/black_gelatinous_sphere.png",
+    "tier": null,
+    "category": "material"
+  },
+  "flint_spear": {
+    "name": {
+      "hu": "Kova Lándzsa",
+      "en": "Flint Spear"
+    },
+    "img": "img/items/flint_spear.png",
+    "tier": "flint",
+    "category": "material"
+  },
+  "bone_cudgel": {
+    "name": {
+      "hu": "Csont Bunkós Bot",
+      "en": "Bone Cudgel"
+    },
+    "img": "img/items/bone_cudgel.png",
+    "tier": "bone",
+    "category": "material"
+  },
+  "rusted_iron_sword": {
+    "name": {
+      "hu": "Rozsdás Vas Kard",
+      "en": "Rusted Iron Sword"
+    },
+    "img": "img/items/rusted_iron_sword.png",
+    "tier": "rusted_iron",
+    "category": "material"
+  },
+  "bronze_sword": {
+    "name": {
+      "hu": "Bronz Kard",
+      "en": "Bronze Sword"
+    },
+    "img": "img/items/bronze_sword.png",
+    "tier": "bronze",
+    "category": "material"
+  },
+  "silver_copper_sword": {
+    "name": {
+      "hu": "Ezüst-Réz Kard",
+      "en": "Silver Copper Sword"
+    },
+    "img": "img/items/silver_copper_sword.png",
+    "tier": "silver_copper",
+    "category": "material"
+  },
+  "high_carbon_steel_sword": {
+    "name": {
+      "hu": "Magas Szén-tartalmú Acél Kard",
+      "en": "High Carbon Steel Sword"
+    },
+    "img": "img/items/high_carbon_steel_sword.png",
+    "tier": "high_carbon_steel",
+    "category": "material"
+  },
+  "rusted_iron_battle_axe": {
+    "name": {
+      "hu": "Rozsdás Vas Csatabárd",
+      "en": "Rusted Iron Battle Axe"
+    },
+    "img": "img/items/rusted_iron_battle_axe.png",
+    "tier": "rusted_iron",
+    "category": "material"
+  },
+  "bronze_battle_axe": {
+    "name": {
+      "hu": "Bronz Csatabárd",
+      "en": "Bronze Battle Axe"
+    },
+    "img": "img/items/bronze_battle_axe.png",
+    "tier": "bronze",
+    "category": "material"
+  },
+  "silver_copper_battle_axe": {
+    "name": {
+      "hu": "Ezüst-Réz Csatabárd",
+      "en": "Silver Copper Battle Axe"
+    },
+    "img": "img/items/silver_copper_battle_axe.png",
+    "tier": "silver_copper",
+    "category": "material"
+  },
+  "high_carbon_steel_battle_axe": {
+    "name": {
+      "hu": "Magas Szén-tartalmú Acél Csatabárd",
+      "en": "High Carbon Steel Battle Axe"
+    },
+    "img": "img/items/high_carbon_steel_battle_axe.png",
+    "tier": "high_carbon_steel",
+    "category": "material"
+  },
+  "silver_dagger": {
+    "name": {
+      "hu": "Ezüst Tőr",
+      "en": "Silver Dagger"
+    },
+    "img": "img/items/silver_dagger.png",
+    "tier": "silver",
+    "category": "material"
+  },
+  "gold_dagger": {
+    "name": {
+      "hu": "Arany Tőr",
+      "en": "Gold Dagger"
+    },
+    "img": "img/items/gold_dagger.png",
+    "tier": "gold",
+    "category": "material"
+  },
+  "rusted_iron_dagger": {
+    "name": {
+      "hu": "Rozsdás Vas Tőr",
+      "en": "Rusted Iron Dagger"
+    },
+    "img": "img/items/rusted_iron_dagger.png",
+    "tier": "rusted_iron",
+    "category": "material"
+  },
+  "ancient_metal_dagger": {
+    "name": {
+      "hu": "Ősi Fém Tőr",
+      "en": "Ancient Metal Dagger"
+    },
+    "img": "img/items/ancient_metal_dagger.png",
+    "tier": "ancient_metal",
+    "category": "material"
+  },
+  "mithril_dagger": {
+    "name": {
+      "hu": "Mithril Tőr",
+      "en": "Mithril Dagger"
+    },
+    "img": "img/items/mithril_dagger.png",
+    "tier": "mithril",
+    "category": "material"
+  },
+  "adamantium_dagger": {
+    "name": {
+      "hu": "Adamantium Tőr",
+      "en": "Adamantium Dagger"
+    },
+    "img": "img/items/adamantium_dagger.png",
+    "tier": "adamantium",
+    "category": "material"
+  },
+  "high_carbon_steel_dagger": {
+    "name": {
+      "hu": "Magas Szén-tartalmú Acél Tőr",
+      "en": "High Carbon Steel Dagger"
+    },
+    "img": "img/items/high_carbon_steel_dagger.png",
+    "tier": "high_carbon_steel",
+    "category": "material"
+  },
+  "rusted_iron_arrow": {
+    "name": {
+      "hu": "Rozsdás Vas Nyíl",
+      "en": "Rusted Iron Arrow"
+    },
+    "img": "img/arrows/rusted_iron_arrow.png",
+    "tier": "rusted_iron",
+    "category": "material"
+  },
+  "miner_helmet": {
+    "name": {
+      "hu": "Miner Sisak",
+      "en": "Miner Helmet"
+    },
+    "img": "img/armor/miner_helmet.png",
+    "tier": null,
+    "category": "material"
+  },
+  "bamboo_helmet": {
+    "name": {
+      "hu": "Bamboo Sisak",
+      "en": "Bamboo Helmet"
+    },
+    "img": "img/armor/bamboo_helmet.png",
+    "tier": null,
+    "category": "material"
+  },
+  "shield": {
+    "name": {
+      "hu": "Pajzs",
+      "en": "Shield"
+    },
+    "img": "img/items/shield.png",
+    "tier": null,
+    "category": "material"
+  },
+  "nether_quartz_shard": {
+    "name": {
+      "hu": "Nether Kvarc Szilánk",
+      "en": "Nether Quartz Shard"
+    },
+    "img": "img/shards/nether_quartz.png",
+    "tier": null,
+    "category": "material"
   }
 }

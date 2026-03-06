@@ -25,7 +25,7 @@
     "difficulty": 25
   },
   {
-    "id": "simple_stone_knife",
+    "id": "simple_flint_knife",
     "output": "flint_knife",
     "station": "hand",
     "gridSize": "2x2",
@@ -40,8 +40,8 @@
       ]
     ],
     "label": {
-      "hu": "Egyszerű Kőzet Kés",
-      "en": "Simple Stone Knife"
+      "hu": "Egyszerű Kova Kés",
+      "en": "Simple Flint Knife"
     },
     "tags": [
       "early-game",
@@ -99,7 +99,7 @@
     "difficulty": 100
   },
   {
-    "id": "stone_knife",
+    "id": "flint_knife_v2",
     "output": "flint_knife",
     "station": "hand",
     "gridSize": "2x2",
@@ -114,8 +114,8 @@
       ]
     ],
     "label": {
-      "hu": "Kőzet Kés",
-      "en": "Stone Knife"
+      "hu": "Kova Kés",
+      "en": "Flint Knife"
     },
     "tags": [
       "flint-age",
@@ -124,8 +124,8 @@
     ]
   },
   {
-    "id": "stone_hatchet",
-    "output": "stone_hatchet",
+    "id": "flint_hatchet",
+    "output": "flint_hatchet",
     "station": "hand",
     "gridSize": "2x2",
     "pattern": [
@@ -139,8 +139,8 @@
       ]
     ],
     "label": {
-      "hu": "Kőzet Rövid Fejsze",
-      "en": "Stone Short Hatchet"
+      "hu": "Kova Balta",
+      "en": "Flint Hatchet"
     },
     "tags": [
       "flint-age",
@@ -153,8 +153,8 @@
     }
   },
   {
-    "id": "stone_axe",
-    "output": "stone_axe",
+    "id": "flint_axe",
+    "output": "flint_axe",
     "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
@@ -175,8 +175,8 @@
       ]
     ],
     "label": {
-      "hu": "Kőzet Fejsze",
-      "en": "Stone Axe"
+      "hu": "Kova Fejsze",
+      "en": "Flint Axe"
     },
     "tags": [
       "flint-age",
@@ -189,8 +189,8 @@
     }
   },
   {
-    "id": "stone_pickaxe",
-    "output": "stone_pickaxe",
+    "id": "flint_pickaxe",
+    "output": "flint_pickaxe",
     "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
@@ -211,8 +211,8 @@
       ]
     ],
     "label": {
-      "hu": "Kőzet Csákány",
-      "en": "Stone Pickaxe"
+      "hu": "Kova Csákány",
+      "en": "Flint Pickaxe"
     },
     "tags": [
       "flint-age",
@@ -5145,5 +5145,34 @@
       "crafting"
     ],
     "outputCount": 4
+  },
+  {
+    "id": "flint_shovel",
+    "output": "flint_shovel",
+    "station": "hand",
+    "gridSize": "2x2",
+    "pattern": [
+      [
+        "flint",
+        "_"
+      ],
+      [
+        "leather_rope",
+        "stick"
+      ]
+    ],
+    "label": {
+      "hu": "Kova Ásó",
+      "en": "Flint Shovel"
+    },
+    "tags": [
+      "flint-age",
+      "tool",
+      "shovel"
+    ],
+    "tooltip": {
+      "hu": "+2 sebzés",
+      "en": "+2 damage"
+    }
   }
 ]
