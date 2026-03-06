@@ -218,7 +218,7 @@
       "hu": "Felszín (éjjel) és föld alatt (éjjel-nappal).",
       "en": "Surface (night) and underground (day and night)."
     },
-    "speed": 0.3
+    "speed": 0.21
   },
   {
     "id": "wood_spider",
@@ -321,7 +321,8 @@
     "spawnInfo": {
       "hu": "Underground World (nagy számban). Barlangok.",
       "en": "Underground World (large numbers). Caves."
-    }
+    },
+    "speed": 0.1
   },
   {
     "id": "ghoul",
@@ -469,7 +470,8 @@
     "spawnInfo": {
       "hu": "Nappal is aktív. Nehéz módban 50. réteg alatt és Underground Worldben.",
       "en": "Active in daylight. Hard mode: below Y=50 and Underground World."
-    }
+    },
+    "speed": 0.21
   },
   {
     "id": "zombie_pigman",
@@ -856,7 +858,8 @@
     "spawnInfo": {
       "hu": "Ritka megjelenés. Nehéz módban 50. réteg alatt.",
       "en": "Rare spawn. Hard mode: below Y=50."
-    }
+    },
+    "speed": 0.8
   },
   {
     "id": "witch",
@@ -1076,7 +1079,8 @@
     "spawnInfo": {
       "hu": "Nether Erőd, fényszint ≤ 11.",
       "en": "Nether Fortress, light level ≤ 11."
-    }
+    },
+    "speed": 0.21
   },
   {
     "id": "earth_elemental",
@@ -1169,7 +1173,8 @@
     "spawnInfo": {
       "hu": "Underground World.",
       "en": "Underground World."
-    }
+    },
+    "speed": 0.1
   },
   {
     "id": "invisible_stalker",
@@ -1271,7 +1276,8 @@
     "spawnInfo": {
       "hu": "Kis számban Y=40 alatt. Tömegesen Underground Worldben.",
       "en": "Small numbers below Y=40. Massively in Underground World."
-    }
+    },
+    "speed": 0.8
   },
   {
     "id": "fire_elemental",
@@ -1373,7 +1379,8 @@
     "spawnInfo": {
       "hu": "Nether.",
       "en": "Nether."
-    }
+    },
+    "speed": 0.1
   },
   {
     "id": "pillager_captain",
@@ -1991,7 +1998,8 @@
     "spawnInfo": {
       "hu": "Mélyen a föld alatt.",
       "en": "Deep underground."
-    }
+    },
+    "speed": 0.1
   },
   {
     "id": "red_slime",
@@ -2036,7 +2044,8 @@
     "spawnInfo": {
       "hu": "Felszín alatt.",
       "en": "Underground."
-    }
+    },
+    "speed": 0.1
   },
   {
     "id": "grey_slime",
@@ -2079,7 +2088,8 @@
     "spawnInfo": {
       "hu": "Föld alatti, kőzet bányászatakor jelenik meg.",
       "en": "Underground, appears when mining stone or ores."
-    }
+    },
+    "speed": 0.1
   },
   {
     "id": "black_slime",
@@ -2124,7 +2134,8 @@
     "spawnInfo": {
       "hu": "Mélyen a föld alatt.",
       "en": "Deep underground."
-    }
+    },
+    "speed": 0.1
   },
   {
     "id": "shadow_bat",
@@ -2355,7 +2366,8 @@
     "spawnInfo": {
       "hu": "Felszín, agyag lelőhelyek közelén.",
       "en": "Surface, near clay deposits."
-    }
+    },
+    "speed": 0.2
   },
   {
     "id": "skeleton_lord",
@@ -3591,7 +3603,8 @@
     "spawnInfo": {
       "hu": "Nether.",
       "en": "Nether."
-    }
+    },
+    "speed": 0.5
   },
   {
     "id": "child_skeleton",
@@ -4024,7 +4037,8 @@
     "spawnInfo": {
       "hu": "Underground World, véletlenszerűen a játékos közelében.",
       "en": "Underground World, randomly near the player."
-    }
+    },
+    "speed": 0.21
   },
   {
     "id": "slime",
@@ -4067,7 +4081,8 @@
     "spawnInfo": {
       "hu": "Nedves barlangok, mocsarak, Y=40 alatt véletlenszerűen.",
       "en": "Wet caves, swamps, randomly below Y=40."
-    }
+    },
+    "speed": 0.1
   },
   {
     "id": "ghast",
@@ -4122,7 +4137,8 @@
     "spawnInfo": {
       "hu": "Nether (nyílt területek).",
       "en": "Nether (open areas)."
-    }
+    },
+    "speed": 0.1
   },
   {
     "id": "cave_spider",
@@ -4177,7 +4193,7 @@
       "hu": "Bányaaknák, kő blokkokban rejtőzve.",
       "en": "Mine shafts, hiding in stone blocks."
     },
-    "speed": 0.35
+    "speed": 0.21
   },
   {
     "id": "blaze",
@@ -4318,7 +4334,8 @@
     "spawnInfo": {
       "hu": "Játékos által idézett (3 Wither koponya + szoul homok).",
       "en": "Player-summoned (3 Wither skulls + soul sand)."
-    }
+    },
+    "speed": 0.6
   },
   {
     "id": "enderman",
@@ -4455,7 +4472,8 @@
     "spawnInfo": {
       "hu": "Kizárólag End dimenzió.",
       "en": "End dimension only."
-    }
+    },
+    "speed": 0.1
   },
   {
     "id": "iron_golem",
@@ -4703,7 +4721,8 @@
     "spawnInfo": {
       "hu": "Síkság és dzsungel biómok.",
       "en": "Plains and jungle biomes."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "pig",
@@ -5179,7 +5198,8 @@
     "spawnInfo": {
       "hu": "Síkság, erdő, fennsík, mocsár biómok.",
       "en": "Plains, forest, plateau, swamp biomes."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "scorpion",
@@ -5224,7 +5244,8 @@
     "spawnInfo": {
       "hu": "Sivatag biómok.",
       "en": "Desert biomes."
-    }
+    },
+    "speed": 1.0
   },
   {
     "id": "rat",
@@ -5270,7 +5291,8 @@
     "spawnInfo": {
       "hu": "Síkság és erdő biómok.",
       "en": "Plains and forest biomes."
-    }
+    },
+    "speed": 0.7
   },
   {
     "id": "shark",
@@ -5414,7 +5436,8 @@
     "spawnInfo": {
       "hu": "Fennsík és erdő biómok.",
       "en": "Plateau and forest biomes."
-    }
+    },
+    "speed": 0.38
   },
   {
     "id": "cougar",
@@ -5466,7 +5489,8 @@
     "spawnInfo": {
       "hu": "Síkság, fennsík, erdő, sivatag biómok.",
       "en": "Plains, plateau, forest, desert biomes."
-    }
+    },
+    "speed": 0.38
   },
   {
     "id": "black_bear",
@@ -5527,7 +5551,8 @@
     "spawnInfo": {
       "hu": "Erdő és mocsár biómok.",
       "en": "Forest and swamp biomes."
-    }
+    },
+    "speed": 0.28
   },
   {
     "id": "yak",
@@ -5579,7 +5604,8 @@
     "spawnInfo": {
       "hu": "Síkság, dzsungel, fennsík, erdő biómok.",
       "en": "Plains, jungle, plateau, forest biomes."
-    }
+    },
+    "speed": 0.2
   },
   {
     "id": "musk_ox",
@@ -5640,7 +5666,8 @@
     "spawnInfo": {
       "hu": "Síkság, dzsungel, fennsík, erdő biómok.",
       "en": "Plains, jungle, plateau, forest biomes."
-    }
+    },
+    "speed": 0.23
   },
   {
     "id": "camel",
@@ -5692,7 +5719,8 @@
     "spawnInfo": {
       "hu": "Sivatag biómok.",
       "en": "Desert biomes."
-    }
+    },
+    "speed": 0.175
   },
   {
     "id": "boar",
@@ -5744,7 +5772,8 @@
     "spawnInfo": {
       "hu": "Erdő, mocsár, dzsungel, síkság, fennsík biómok.",
       "en": "Forest, swamp, jungle, plains, plateau biomes."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "hyena",
@@ -5789,7 +5818,8 @@
     "spawnInfo": {
       "hu": "Síkság, fennsík, erdő biómok.",
       "en": "Plains, plateau, forest biomes."
-    }
+    },
+    "speed": 0.38
   },
   {
     "id": "saber_toothed_tiger",
@@ -5850,7 +5880,8 @@
     "spawnInfo": {
       "hu": "Dzsungel biómok.",
       "en": "Jungle biomes."
-    }
+    },
+    "speed": 0.38
   },
   {
     "id": "panther",
@@ -5902,7 +5933,8 @@
     "spawnInfo": {
       "hu": "Éjjel: erdő, mocsár, fennsík biómok.",
       "en": "Nighttime: forest, swamp, plateau biomes."
-    }
+    },
+    "speed": 0.38
   },
   {
     "id": "polar_bear",
@@ -6025,7 +6057,8 @@
     "spawnInfo": {
       "hu": "Tajga és erdő biómok.",
       "en": "Taiga and forest biomes."
-    }
+    },
+    "speed": 0.28
   },
   {
     "id": "deer",
@@ -6086,7 +6119,8 @@
     "spawnInfo": {
       "hu": "Fennsík és erdő biómok.",
       "en": "Plateau and forest biomes."
-    }
+    },
+    "speed": 0.33
   },
   {
     "id": "duck",
@@ -6138,7 +6172,8 @@
     "spawnInfo": {
       "hu": "Mocsár biómok.",
       "en": "Swamp biomes."
-    }
+    },
+    "speed": 0.25
   },
   {
     "id": "elephant",
@@ -6190,7 +6225,8 @@
     "spawnInfo": {
       "hu": "Síkság, erdő, mocsár biómok.",
       "en": "Plains, forest, swamp biomes."
-    }
+    },
+    "speed": 0.2
   },
   {
     "id": "llama",
@@ -6297,6 +6333,7 @@
     "spawnInfo": {
       "hu": "Síkság, erdő, dzsungel, fennsík, mocsár biómok.",
       "en": "Plains, forest, jungle, plateau, swamp biomes."
-    }
+    },
+    "speed": 0.2
   }
 ]
