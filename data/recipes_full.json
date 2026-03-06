@@ -30834,5 +30834,45 @@
     ],
     "shaped": false,
     "item_num": 446430
+  },
+  {
+    "id": "obsidian_furnace_772860",
+    "item_num": 772860,
+    "output": "obsidian_furnace",
+    "outputQty": 1,
+    "station": "gold_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "obsidian",
+      "obsidian",
+      "obsidian",
+      "obsidian",
+      "obsidian",
+      "obsidian",
+      "obsidian",
+      "obsidian"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "netherrack_furnace_772861",
+    "item_num": 772861,
+    "output": "netherrack_furnace",
+    "outputQty": 1,
+    "station": "mithril_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "netherrack",
+      "netherrack",
+      "netherrack",
+      "netherrack",
+      "netherrack",
+      "netherrack",
+      "netherrack",
+      "netherrack"
+    ],
+    "shaped": false
   }
 ]
