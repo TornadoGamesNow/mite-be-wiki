@@ -30824,6 +30824,19 @@
     "shaped": false
   },
   {
+    "id": "carbon_crystal_shard_from_cluster",
+    "item_num": 32143,
+    "output": "carbon_crystal_shard",
+    "outputQty": 4,
+    "station": "flint_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
     "id": "nether_quartz_shard_32144",
     "item_num": 32144,
     "output": "nether_quartz_shard",
