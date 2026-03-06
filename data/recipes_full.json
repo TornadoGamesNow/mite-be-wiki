@@ -25281,9 +25281,9 @@
     "ingredients": [
       "ancient_metal_ingot",
       "ancient_metal_ingot",
-      "barrel",
       "ancient_metal_ingot",
-      "ancient_metal_ingot"
+      "ancient_metal_ingot",
+      "barrel"
     ],
     "shaped": true,
     "pattern": [
@@ -25294,7 +25294,7 @@
       ],
       [
         "ancient_metal_ingot",
-        "wooden_barrel",
+        "barrel",
         "ancient_metal_ingot"
       ],
       [
@@ -30983,258 +30983,6 @@
     "shaped": false
   },
   {
-    "id": "barrel_copper_upgrade_785074",
-    "item_num": 785074,
-    "output": "barrel_copper_upgrade",
-    "outputQty": 1,
-    "station": "copper_workbench",
-    "difficulty": 640,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "copper_ingot",
-      "copper_ingot",
-      "copper_ingot",
-      "copper_ingot",
-      "barrel"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "copper_ingot",
-        "_"
-      ],
-      [
-        "copper_ingot",
-        "wooden_barrel",
-        "copper_ingot"
-      ],
-      [
-        "_",
-        "copper_ingot",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "barrel_silver_upgrade_785075",
-    "item_num": 785075,
-    "output": "barrel_silver_upgrade",
-    "outputQty": 1,
-    "station": "silver_workbench",
-    "difficulty": 960,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "silver_ingot",
-      "silver_ingot",
-      "silver_ingot",
-      "silver_ingot",
-      "barrel"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "silver_ingot",
-        "_"
-      ],
-      [
-        "silver_ingot",
-        "wooden_barrel",
-        "silver_ingot"
-      ],
-      [
-        "_",
-        "silver_ingot",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "barrel_iron_upgrade_785076",
-    "item_num": 785076,
-    "output": "barrel_iron_upgrade",
-    "outputQty": 1,
-    "station": "iron_workbench",
-    "difficulty": 1600,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "iron_ingot",
-      "iron_ingot",
-      "iron_ingot",
-      "iron_ingot",
-      "barrel"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "iron_ingot",
-        "_"
-      ],
-      [
-        "iron_ingot",
-        "wooden_barrel",
-        "iron_ingot"
-      ],
-      [
-        "_",
-        "iron_ingot",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "barrel_gold_upgrade_785077",
-    "item_num": 785077,
-    "output": "barrel_gold_upgrade",
-    "outputQty": 1,
-    "station": "gold_workbench",
-    "difficulty": 2000,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "barrel"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "gold_ingot",
-        "_"
-      ],
-      [
-        "gold_ingot",
-        "wooden_barrel",
-        "gold_ingot"
-      ],
-      [
-        "_",
-        "gold_ingot",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "barrel_hard_upgrade_785133",
-    "item_num": 785133,
-    "output": "barrel_hard_upgrade",
-    "outputQty": 1,
-    "station": "hardstone_workbench",
-    "difficulty": 1280,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "hardstone_ingot",
-      "hardstone_ingot",
-      "hardstone_ingot",
-      "hardstone_ingot",
-      "barrel"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "hardstone_ingot",
-        "_"
-      ],
-      [
-        "hardstone_ingot",
-        "wooden_barrel",
-        "hardstone_ingot"
-      ],
-      [
-        "_",
-        "hardstone_ingot",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "barrel_mithril_upgrade_785079",
-    "item_num": 785079,
-    "output": "barrel_mithril_upgrade",
-    "outputQty": 1,
-    "station": "mithril_workbench",
-    "difficulty": 2400,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "mithril_bar",
-      "mithril_bar",
-      "mithril_bar",
-      "mithril_bar",
-      "barrel"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "mithril_bar",
-        "_"
-      ],
-      [
-        "mithril_bar",
-        "wooden_barrel",
-        "mithril_bar"
-      ],
-      [
-        "_",
-        "mithril_bar",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "barrel_adamantium_upgrade_785080",
-    "item_num": 785080,
-    "output": "barrel_adamantium_upgrade",
-    "outputQty": 1,
-    "station": "adamantium_workbench",
-    "difficulty": 3200,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "adamantium_bar",
-      "adamantium_bar",
-      "adamantium_bar",
-      "adamantium_bar",
-      "barrel"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "adamantium_bar",
-        "_"
-      ],
-      [
-        "adamantium_bar",
-        "wooden_barrel",
-        "adamantium_bar"
-      ],
-      [
-        "_",
-        "adamantium_bar",
-        "_"
-      ]
-    ]
-  },
-  {
     "id": "tin_plate_777287",
     "item_num": 777287,
     "output": "tin_plate",
@@ -31604,25 +31352,6 @@
         "_"
       ]
     ]
-  },
-  {
-    "id": "barrel_ancient_metal_upgrade_785078",
-    "item_num": 785078,
-    "output": "barrel_ancient_metal_upgrade",
-    "outputQty": 1,
-    "station": "ancient_metal_workbench",
-    "difficulty": 2800,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "ancient_metal_ingot",
-      "ancient_metal_ingot",
-      "ancient_metal_ingot",
-      "ancient_metal_ingot",
-      "barrel"
-    ],
-    "shaped": false
   },
   {
     "id": "flint_knife_string_772896",
