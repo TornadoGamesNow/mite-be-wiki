@@ -2778,7 +2778,8 @@
       "en": "Bowl of Milk"
     },
     "img": "img/items/bowl_milk.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "bowl_water": {
     "name": {
@@ -8401,48 +8402,12 @@
     "tier": null,
     "category": "material"
   },
-  "l_milk_bow": {
-    "name": {
-      "hu": "Ijl Milk",
-      "en": "Bowl Milk"
-    },
-    "img": "img/items/l_milk_bow.png",
-    "tier": null,
-    "category": "material"
-  },
   "cereal": {
     "name": {
       "hu": "Cereal",
       "en": "Cereal"
     },
     "img": "img/items/cereal.png",
-    "tier": null,
-    "category": "material"
-  },
-  "l_cream_of_mushroom_soup_bow": {
-    "name": {
-      "hu": "Ijl Cream Of Mushroom Soup",
-      "en": "Bowl Cream Of Mushroom Soup"
-    },
-    "img": "img/items/l_cream_of_mushroom_soup_bow.png",
-    "tier": null,
-    "category": "material"
-  },
-  "l_cream_of_vegetable_soup_bow": {
-    "name": {
-      "hu": "Ijl Cream Of Vegetable Soup",
-      "en": "Bowl Cream Of Vegetable Soup"
-    },
-    "img": "img/items/l_cream_of_vegetable_soup_bow.png",
-    "tier": null,
-    "category": "material"
-  },
-  "l_vegetable_soup_bow": {
-    "name": {
-      "hu": "Ijl Vegetable Soup",
-      "en": "Bowl Vegetable Soup"
-    },
-    "img": "img/items/l_vegetable_soup_bow.png",
     "tier": null,
     "category": "material"
   },
@@ -9127,6 +9092,33 @@
       "en": "Nether Quartz Shard"
     },
     "img": "img/shards/nether_quartz.png",
+    "tier": null,
+    "category": "material"
+  },
+  "bowl_cream_of_mushroom_soup": {
+    "name": {
+      "hu": "Gomba Krémleves Tál",
+      "en": "Bowl of Cream of Mushroom Soup"
+    },
+    "img": "img/items/bowl_cream_of_mushroom_soup.png",
+    "tier": null,
+    "category": "material"
+  },
+  "bowl_cream_of_vegetable_soup": {
+    "name": {
+      "hu": "Zöldség Krémleves Tál",
+      "en": "Bowl of Cream of Vegetable Soup"
+    },
+    "img": "img/items/bowl_cream_of_vegetable_soup.png",
+    "tier": null,
+    "category": "material"
+  },
+  "bowl_vegetable_soup": {
+    "name": {
+      "hu": "Zöldségleves Tál",
+      "en": "Bowl of Vegetable Soup"
+    },
+    "img": "img/items/bowl_vegetable_soup.png",
     "tier": null,
     "category": "material"
   }
