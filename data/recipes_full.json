@@ -28167,5 +28167,1573 @@
       "copper-age",
       "tool"
     ]
+  },
+  {
+    "id": "bronze_sword_31984",
+    "item_num": 31984,
+    "output": "bronze_sword",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "copper_sword",
+      "tin_ingot",
+      "tin_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bronze_pickaxe_31985",
+    "item_num": 31985,
+    "output": "bronze_pickaxe",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "copper_pickaxe",
+      "tin_ingot",
+      "tin_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bronze_axe_31986",
+    "item_num": 31986,
+    "output": "bronze_axe",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "copper_axe",
+      "tin_ingot",
+      "tin_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bronze_shovel_31987",
+    "item_num": 31987,
+    "output": "bronze_shovel",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "copper_shovel",
+      "tin_ingot",
+      "tin_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bronze_battle_axe_31988",
+    "item_num": 31988,
+    "output": "bronze_battle_axe",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "copper_battle_axe",
+      "tin_ingot",
+      "tin_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bronze_war_hammer_31989",
+    "item_num": 31989,
+    "output": "bronze_war_hammer",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "copper_war_hammer",
+      "tin_ingot",
+      "tin_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "high_carbon_steel_sword_31990",
+    "item_num": 31990,
+    "output": "high_carbon_steel_sword",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 2000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_sword",
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "high_carbon_steel_pickaxe_31991",
+    "item_num": 31991,
+    "output": "high_carbon_steel_pickaxe",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 2000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_pickaxe",
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "high_carbon_steel_axe_31992",
+    "item_num": 31992,
+    "output": "high_carbon_steel_axe",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 2000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_axe",
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "high_carbon_steel_shovel_31993",
+    "item_num": 31993,
+    "output": "high_carbon_steel_shovel",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 2000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_shovel",
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "high_carbon_steel_hoe_31994",
+    "item_num": 31994,
+    "output": "high_carbon_steel_hoe",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 2000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_hoe",
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "high_carbon_steel_scythe_31995",
+    "item_num": 31995,
+    "output": "high_carbon_steel_scythe",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 2000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_scythe",
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "high_carbon_steel_hatchet_31996",
+    "item_num": 31996,
+    "output": "high_carbon_steel_hatchet",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 2000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_hatchet",
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "high_carbon_steel_mattock_31997",
+    "item_num": 31997,
+    "output": "high_carbon_steel_mattock",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 2000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_mattock",
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "high_carbon_steel_shears_31998",
+    "item_num": 31998,
+    "output": "high_carbon_steel_shears",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 2000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_shears",
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "high_carbon_steel_battle_axe_31999",
+    "item_num": 31999,
+    "output": "high_carbon_steel_battle_axe",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 2000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_battle_axe",
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "high_carbon_steel_war_hammer_32000",
+    "item_num": 32000,
+    "output": "high_carbon_steel_war_hammer",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 2000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_war_hammer",
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "high_carbon_steel_dagger_32001",
+    "item_num": 32001,
+    "output": "high_carbon_steel_dagger",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 2000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_dagger",
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "silver_copper_sword_32002",
+    "item_num": 32002,
+    "output": "silver_copper_sword",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "silver_sword",
+      "copper_ingot",
+      "copper_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "silver_copper_pickaxe_32003",
+    "item_num": 32003,
+    "output": "silver_copper_pickaxe",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "silver_pickaxe",
+      "copper_ingot",
+      "copper_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "silver_copper_axe_32004",
+    "item_num": 32004,
+    "output": "silver_copper_axe",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "silver_axe",
+      "copper_ingot",
+      "copper_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "silver_copper_shovel_32005",
+    "item_num": 32005,
+    "output": "silver_copper_shovel",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "silver_shovel",
+      "copper_ingot",
+      "copper_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "silver_copper_battle_axe_32006",
+    "item_num": 32006,
+    "output": "silver_copper_battle_axe",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "silver_battle_axe",
+      "copper_ingot",
+      "copper_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "silver_copper_war_hammer_32007",
+    "item_num": 32007,
+    "output": "silver_copper_war_hammer",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "silver_war_hammer",
+      "copper_ingot",
+      "copper_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "tin_ingot_32008",
+    "item_num": 32008,
+    "output": "tin_ingot",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [
+      "smelting"
+    ],
+    "ingredients": [
+      "ore_tin"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "wood_cudgel_32009",
+    "item_num": 32009,
+    "output": "wood_cudgel",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 50,
+    "skills": [],
+    "ingredients": [
+      "planks_oak",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "wood_club_32010",
+    "item_num": 32010,
+    "output": "wood_club",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 75,
+    "skills": [],
+    "ingredients": [
+      "planks_oak",
+      "planks_oak",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bone_cudgel_32011",
+    "item_num": 32011,
+    "output": "bone_cudgel",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 100,
+    "skills": [],
+    "ingredients": [
+      "bone",
+      "bone",
+      "straw_rope"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "flint_spear_32012",
+    "item_num": 32012,
+    "output": "flint_spear",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 150,
+    "skills": [],
+    "ingredients": [
+      "sharp_chip",
+      "stick",
+      "stick",
+      "leather_rope"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "chip_flint_32013",
+    "item_num": 32013,
+    "output": "chip_flint",
+    "outputQty": 4,
+    "station": "hand",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "flint"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "sieve_32014",
+    "item_num": 32014,
+    "output": "sieve",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 100,
+    "skills": [],
+    "ingredients": [
+      "log_oak",
+      "log_oak",
+      "planks_oak",
+      "stick",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "mesh_string_32015",
+    "item_num": 32015,
+    "output": "mesh_string",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 50,
+    "skills": [],
+    "ingredients": [
+      "string",
+      "string",
+      "string"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "mesh_leather_32016",
+    "item_num": 32016,
+    "output": "mesh_leather",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 100,
+    "skills": [],
+    "ingredients": [
+      "leather_rope",
+      "leather_rope",
+      "leather_rope"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "return_scroll_32017",
+    "item_num": 32017,
+    "output": "return_scroll",
+    "outputQty": 1,
+    "station": "copper_workbench",
+    "difficulty": 400,
+    "skills": [],
+    "ingredients": [
+      "gold_nugget",
+      "gold_nugget",
+      "ender_pearl",
+      "paper",
+      "paper",
+      "paper"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bound_scroll_32018",
+    "item_num": 32018,
+    "output": "bound_scroll",
+    "outputQty": 1,
+    "station": "copper_workbench",
+    "difficulty": 200,
+    "skills": [],
+    "ingredients": [
+      "return_scroll",
+      "redstone_dust"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "way_stone_32019",
+    "item_num": 32019,
+    "output": "way_stone",
+    "outputQty": 1,
+    "station": "hardstone_workbench",
+    "difficulty": 600,
+    "skills": [],
+    "ingredients": [
+      "ender_pearl",
+      "ender_pearl",
+      "ender_pearl",
+      "redstone_block",
+      "stone_bricks",
+      "stone_bricks",
+      "stone_bricks"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "sleep_bag_32020",
+    "item_num": 32020,
+    "output": "sleep_bag",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 50,
+    "skills": [],
+    "ingredients": [
+      "wool_white",
+      "wool_white",
+      "wool_white"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hard_stick_32021",
+    "item_num": 32021,
+    "output": "hard_stick",
+    "outputQty": 4,
+    "station": "hardstone_workbench",
+    "difficulty": 200,
+    "skills": [],
+    "ingredients": [
+      "hardstone_ingot",
+      "hardstone_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bamboo_helmet_32023",
+    "item_num": 32023,
+    "output": "bamboo_helmet",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 50,
+    "skills": [],
+    "ingredients": [
+      "bamboo",
+      "bamboo",
+      "bamboo",
+      "string"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hardstone_sword_32030",
+    "item_num": 32030,
+    "output": "hardstone_sword",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 3225,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hardstone_pickaxe_32031",
+    "item_num": 32031,
+    "output": "hardstone_pickaxe",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 4850,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "stick",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hardstone_war_hammer_32032",
+    "item_num": 32032,
+    "output": "hardstone_war_hammer",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 8050,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "stick",
+      "hardstone_ingot",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hardstone_helmet_32033",
+    "item_num": 32033,
+    "output": "hardstone_helmet",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 0,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hardstone_chestplate_32034",
+    "item_num": 32034,
+    "output": "hardstone_chestplate",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 0,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hardstone_leggings_32035",
+    "item_num": 32035,
+    "output": "hardstone_leggings",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 0,
+    "skills": [
+      "blacksmith"
+    ],
+    "ingredients": [
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hardstone_boots_32036",
+    "item_num": 32036,
+    "output": "hardstone_boots",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 0,
+    "skills": [
+      "blacksmith"
+    ],
+    "ingredients": [
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hardstone_battle_axe_32037",
+    "item_num": 32037,
+    "output": "hardstone_battle_axe",
+    "outputQty": 1,
+    "station": "hardstone_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "stick",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hardstone_mattock_32038",
+    "item_num": 32038,
+    "output": "hardstone_mattock",
+    "outputQty": 1,
+    "station": "hardstone_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "stick",
+      "hardstone_ingot",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hardstone_scythe_32039",
+    "item_num": 32039,
+    "output": "hardstone_scythe",
+    "outputQty": 1,
+    "station": "hardstone_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "stick",
+      "hardstone_ingot",
+      "stick",
+      "hardstone_ingot",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hardstone_shears_32040",
+    "item_num": 32040,
+    "output": "hardstone_shears",
+    "outputQty": 1,
+    "station": "hardstone_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "hardstone_ingot",
+      "hardstone_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hardstone_hatchet_32041",
+    "item_num": 32041,
+    "output": "hardstone_hatchet",
+    "outputQty": 1,
+    "station": "hardstone_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "hardstone_ingot",
+      "stick",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hardstone_chain_32042",
+    "item_num": 32042,
+    "output": "hardstone_chain",
+    "outputQty": 1,
+    "station": "hardstone_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "hardstone_ingot",
+      "hardstone_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "adamantium_hatchet_32043",
+    "item_num": 32043,
+    "output": "adamantium_hatchet",
+    "outputQty": 1,
+    "station": "adamantium_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "adamantium_bar",
+      "hardstone_handle",
+      "hardstone_handle"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "ancient_metal_hatchet_32044",
+    "item_num": 32044,
+    "output": "ancient_metal_hatchet",
+    "outputQty": 1,
+    "station": "ancient_metal_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "ancient_metal_ingot",
+      "hardstone_handle",
+      "hardstone_handle"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "mithril_hatchet_32045",
+    "item_num": 32045,
+    "output": "mithril_hatchet",
+    "outputQty": 1,
+    "station": "mithril_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "mithril_bar",
+      "hardstone_handle",
+      "hardstone_handle"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "silver_hatchet_32046",
+    "item_num": 32046,
+    "output": "silver_hatchet",
+    "outputQty": 1,
+    "station": "silver_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "silver_ingot",
+      "stick",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "gold_hatchet_32047",
+    "item_num": 32047,
+    "output": "gold_hatchet",
+    "outputQty": 1,
+    "station": "gold_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "gold_ingot",
+      "stick",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bedrock_pulverizer_32048",
+    "item_num": 32048,
+    "output": "bedrock_pulverizer",
+    "outputQty": 1,
+    "station": "mithril_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "beacon",
+      "redstone_block",
+      "obsidian",
+      "redstone_block",
+      "obsidian",
+      "obsidian",
+      "obsidian"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "big_water_bag_32049",
+    "item_num": 32049,
+    "output": "big_water_bag",
+    "outputQty": 1,
+    "station": "copper_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "silk",
+      "silk",
+      "silk",
+      "leather",
+      "leather",
+      "leather"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "campfire_32050",
+    "item_num": 32050,
+    "output": "campfire",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 330,
+    "skills": [],
+    "ingredients": [
+      "stick",
+      "stick",
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "log_oak",
+        "log_spruce",
+        "log_birch",
+        "log_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ]
+    ],
+    "shaped": false
+  },
+  {
+    "id": "enchanting_table_emerald_32051",
+    "item_num": 32051,
+    "output": "enchanting_table_emerald",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 2585,
+    "skills": [
+      "masonry"
+    ],
+    "ingredients": [
+      "book",
+      "emerald",
+      "obsidian",
+      "emerald",
+      "obsidian",
+      "obsidian",
+      "obsidian"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "enhanced_ender_eye_32052",
+    "item_num": 32052,
+    "output": "enhanced_ender_eye",
+    "outputQty": 1,
+    "station": "mithril_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "nether_star",
+      "emerald",
+      "ender_eye",
+      "emerald",
+      "diamond"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "furnace_core_netherrack_32053",
+    "item_num": 32053,
+    "output": "furnace_core_netherrack",
+    "outputQty": 1,
+    "station": "mithril_workbench",
+    "difficulty": 1760,
+    "skills": [],
+    "ingredients": [
+      "netherrack",
+      "netherrack",
+      "netherrack",
+      "netherrack",
+      [
+        "mithril_workbench",
+        "adamantium_workbench"
+      ],
+      "netherrack",
+      "netherrack",
+      "netherrack",
+      "netherrack"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "furnace_core_obsidian_32054",
+    "item_num": 32054,
+    "output": "furnace_core_obsidian",
+    "outputQty": 1,
+    "station": "gold_workbench",
+    "difficulty": 1760,
+    "skills": [],
+    "ingredients": [
+      "obsidian",
+      "obsidian",
+      "obsidian",
+      "obsidian",
+      [
+        "gold_workbench",
+        "iron_workbench"
+      ],
+      "obsidian",
+      "obsidian",
+      "obsidian",
+      "obsidian"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "furnace_core_stone_32055",
+    "item_num": 32055,
+    "output": "furnace_core_stone",
+    "outputQty": 1,
+    "station": "copper_workbench",
+    "difficulty": 1760,
+    "skills": [],
+    "ingredients": [
+      "cobblestone",
+      "cobblestone",
+      "cobblestone",
+      "cobblestone",
+      [
+        "copper_workbench",
+        "silver_workbench"
+      ],
+      "cobblestone",
+      "cobblestone",
+      "cobblestone",
+      "cobblestone"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "mining_helmet_32056",
+    "item_num": 32056,
+    "output": "mining_helmet",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "gold_ingot",
+      "leather",
+      "redstone_dust",
+      "leather",
+      "tin_plate",
+      "iron_ingot",
+      "tin_plate"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "stone_spear_32057",
+    "item_num": 32057,
+    "output": "stone_spear",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "sharp_chip",
+      "stick",
+      "sinew",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "water_bag_32058",
+    "item_num": 32058,
+    "output": "water_bag",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "silk",
+      "leather",
+      "leather"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "wooden_water_filter_32059",
+    "item_num": 32059,
+    "output": "wooden_water_filter",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "coal",
+        "charcoal"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ]
+    ],
+    "shaped": false
+  },
+  {
+    "id": "stone_dagger_32060",
+    "item_num": 32060,
+    "output": "stone_dagger",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 150,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "cobblestone",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "copper_dagger_32061",
+    "item_num": 32061,
+    "output": "copper_dagger",
+    "outputQty": 1,
+    "station": "copper_workbench",
+    "difficulty": 700,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "copper_ingot",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "iron_dagger_32062",
+    "item_num": 32062,
+    "output": "iron_dagger",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 1400,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_ingot",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "gold_dagger_32063",
+    "item_num": 32063,
+    "output": "gold_dagger",
+    "outputQty": 1,
+    "station": "gold_workbench",
+    "difficulty": 700,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "gold_ingot",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "silver_dagger_32064",
+    "item_num": 32064,
+    "output": "silver_dagger",
+    "outputQty": 1,
+    "station": "silver_workbench",
+    "difficulty": 700,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "silver_ingot",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "mithril_dagger_32065",
+    "item_num": 32065,
+    "output": "mithril_dagger",
+    "outputQty": 1,
+    "station": "mithril_workbench",
+    "difficulty": 11200,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "mithril_bar",
+      "hardstone_handle"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "adamantium_dagger_32066",
+    "item_num": 32066,
+    "output": "adamantium_dagger",
+    "outputQty": 1,
+    "station": "adamantium_workbench",
+    "difficulty": 44800,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "adamantium_bar",
+      "hardstone_handle"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "ancient_metal_dagger_32067",
+    "item_num": 32067,
+    "output": "ancient_metal_dagger",
+    "outputQty": 1,
+    "station": "ancient_metal_workbench",
+    "difficulty": 2800,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "ancient_metal_ingot",
+      "hardstone_handle"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "stone_sword_32068",
+    "item_num": 32068,
+    "output": "stone_sword",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 300,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "cobblestone",
+      "cobblestone",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "stone_axe_32069",
+    "item_num": 32069,
+    "output": "stone_axe",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 250,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "cobblestone",
+      "cobblestone",
+      "cobblestone",
+      "stick",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "stone_pickaxe_32070",
+    "item_num": 32070,
+    "output": "stone_pickaxe",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 250,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "cobblestone",
+      "cobblestone",
+      "cobblestone",
+      "stick",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "stone_shovel_32071",
+    "item_num": 32071,
+    "output": "stone_shovel",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 200,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "cobblestone",
+      "stick",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "stone_hoe_32072",
+    "item_num": 32072,
+    "output": "stone_hoe",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 300,
+    "skills": [
+      "farming"
+    ],
+    "ingredients": [
+      "cobblestone",
+      "cobblestone",
+      "stick",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "copper_hatchet_32073",
+    "item_num": 32073,
+    "output": "copper_hatchet",
+    "outputQty": 1,
+    "station": "copper_workbench",
+    "difficulty": 1050,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "copper_ingot",
+      "stick",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "iron_hatchet_32074",
+    "item_num": 32074,
+    "output": "iron_hatchet",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 2100,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_ingot",
+      "stick",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "copper_knife_32075",
+    "item_num": 32075,
+    "output": "copper_knife",
+    "outputQty": 1,
+    "station": "copper_workbench",
+    "difficulty": 700,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "copper_ingot",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "iron_knife_32076",
+    "item_num": 32076,
+    "output": "iron_knife",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 1400,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_ingot",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hardstone_hoe_32077",
+    "item_num": 32077,
+    "output": "hardstone_hoe",
+    "outputQty": 1,
+    "station": "hardstone_workbench",
+    "difficulty": 6400,
+    "skills": [
+      "farming"
+    ],
+    "ingredients": [
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "stick",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "shield_32095",
+    "item_num": 32095,
+    "output": "shield",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 2000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_ingot",
+      "iron_ingot",
+      "iron_ingot",
+      "iron_ingot",
+      "iron_ingot",
+      "iron_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "ingot_mold_32096",
+    "item_num": 32096,
+    "output": "ingot_mold",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 200,
+    "skills": [],
+    "ingredients": [
+      "clay_block",
+      "clay_block",
+      "clay_block",
+      "clay_block",
+      "clay_block",
+      "clay_block"
+    ],
+    "shaped": false
   }
 ]
