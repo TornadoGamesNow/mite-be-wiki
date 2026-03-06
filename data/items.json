@@ -4599,7 +4599,7 @@
   },
   "jack_o_lantern": {
     "name": {
-      "hu": "Jack-o'-Lantern",
+      "hu": "Töklámpás",
       "en": "Jack-o'-Lantern"
     },
     "img": "img/items/jack_o_lantern.png",
@@ -5047,7 +5047,7 @@
   },
   "minecart": {
     "name": {
-      "hu": "Minecart",
+      "hu": "Csillekocsi",
       "en": "Minecart"
     },
     "img": "img/items/minecart.png",
@@ -7585,7 +7585,7 @@
   },
   "rubace_cluster": {
     "name": {
-      "hu": "Rubace Cluster",
+      "hu": "Rubacit Kristály",
       "en": "Rubace Cluster"
     },
     "img": "img/items/rubace_cluster.png",
@@ -7594,7 +7594,7 @@
   },
   "rubace_small_bud": {
     "name": {
-      "hu": "Rubace Small Bud",
+      "hu": "Rubacit Kis Rügy",
       "en": "Rubace Small Bud"
     },
     "img": "img/items/rubace_small_bud.png",
@@ -7603,7 +7603,7 @@
   },
   "rubace_medium_bud": {
     "name": {
-      "hu": "Rubace Medium Bud",
+      "hu": "Rubacit Közép Rügy",
       "en": "Rubace Medium Bud"
     },
     "img": "img/items/rubace_medium_bud.png",
@@ -7612,7 +7612,7 @@
   },
   "rubace_large_bud": {
     "name": {
-      "hu": "Rubace Large Bud",
+      "hu": "Rubacit Nagy Rügy",
       "en": "Rubace Large Bud"
     },
     "img": "img/items/rubace_large_bud.png",
@@ -7648,7 +7648,7 @@
   },
   "manure": {
     "name": {
-      "hu": "Manure",
+      "hu": "Trágya",
       "en": "Manure"
     },
     "img": "img/items/manure.png",
@@ -7693,7 +7693,7 @@
   },
   "mesh_string": {
     "name": {
-      "hu": "Mesh String",
+      "hu": "Hálós Zsinór",
       "en": "Mesh String"
     },
     "img": "img/items/mesh_string.png",
@@ -7702,7 +7702,7 @@
   },
   "mesh_leather": {
     "name": {
-      "hu": "Mesh Leather",
+      "hu": "Hálós Bőr",
       "en": "Mesh Leather"
     },
     "img": "img/items/mesh_leather.png",
@@ -7711,7 +7711,7 @@
   },
   "ex_eye_of_ender": {
     "name": {
-      "hu": "Ex Eye Of Ender",
+      "hu": "Kiterjesztett Ender Szem",
       "en": "Ex Eye Of Ender"
     },
     "img": "img/items/ex_eye_of_ender.png",
@@ -7729,7 +7729,7 @@
   },
   "tiny_stone": {
     "name": {
-      "hu": "Óny Ko",
+      "hu": "Apró Kő",
       "en": "Tiny Stone"
     },
     "img": "img/items/tiny_stone.png",
@@ -7747,7 +7747,7 @@
   },
   "runestore": {
     "name": {
-      "hu": "RunestÉrc",
+      "hu": "Runakő",
       "en": "Runestore"
     },
     "img": "img/items/runestore.png",
@@ -7756,7 +7756,7 @@
   },
   "blast_furnace": {
     "name": {
-      "hu": "Blast Furnace",
+      "hu": "Olvasztókemence",
       "en": "Blast Furnace"
     },
     "img": "img/items/blast_furnace.png",
@@ -7765,7 +7765,7 @@
   },
   "enchantment_table": {
     "name": {
-      "hu": "Enchantment Table",
+      "hu": "Bűvölőasztal",
       "en": "Enchantment Table"
     },
     "img": "img/items/enchantment_table.png",
@@ -7774,7 +7774,7 @@
   },
   "two_port_cauldron": {
     "name": {
-      "hu": "Two Port Cauldron",
+      "hu": "Kétnyílású Üst",
       "en": "Two Port Cauldron"
     },
     "img": "img/items/two_port_cauldron.png",
@@ -7783,7 +7783,7 @@
   },
   "respawn_anchor": {
     "name": {
-      "hu": "Respawn Anchor",
+      "hu": "Visszatérési Horgony",
       "en": "Respawn Anchor"
     },
     "img": "img/items/respawn_anchor.png",
@@ -7792,7 +7792,7 @@
   },
   "enchantment_table_custom": {
     "name": {
-      "hu": "Enchantment Table Custom",
+      "hu": "Egyéni Bűvölőasztal",
       "en": "Enchantment Table Custom"
     },
     "img": "img/items/enchantment_table_custom.png",
@@ -7945,7 +7945,7 @@
   },
   "log_pitaya": {
     "name": {
-      "hu": "Log Pitaya",
+      "hu": "Pitahaya Törzsfa",
       "en": "Log Pitaya"
     },
     "img": "img/items/log_pitaya.png",
@@ -7954,7 +7954,7 @@
   },
   "log_banana": {
     "name": {
-      "hu": "Log Banana",
+      "hu": "Banánfa Törzs",
       "en": "Log Banana"
     },
     "img": "img/items/log_banana.png",
@@ -7963,7 +7963,7 @@
   },
   "log_coconut": {
     "name": {
-      "hu": "Log Coconut",
+      "hu": "Kókuszpálma Törzs",
       "en": "Log Coconut"
     },
     "img": "img/items/log_coconut.png",
@@ -7981,7 +7981,7 @@
   },
   "gravel_nether": {
     "name": {
-      "hu": "Gravel Nether",
+      "hu": "Pokolfenyő Kavics",
       "en": "Gravel Nether"
     },
     "img": "img/items/gravel_nether.png",
@@ -7990,7 +7990,7 @@
   },
   "core": {
     "name": {
-      "hu": "CÉrc",
+      "hu": "Mag",
       "en": "Core"
     },
     "img": "img/items/core.png",
@@ -7999,7 +7999,7 @@
   },
   "mantle": {
     "name": {
-      "hu": "Mantle",
+      "hu": "Köpeny",
       "en": "Mantle"
     },
     "img": "img/items/mantle.png",
@@ -8008,7 +8008,7 @@
   },
   "slow_sand": {
     "name": {
-      "hu": "Slow Sand",
+      "hu": "Lassítóhomok",
       "en": "Slow Sand"
     },
     "img": "img/items/slow_sand.png",
@@ -8017,7 +8017,7 @@
   },
   "rubace_budding": {
     "name": {
-      "hu": "Rubace Budding",
+      "hu": "Rubacit Rügyező",
       "en": "Rubace Budding"
     },
     "img": "img/items/rubace_budding.png",
@@ -8044,7 +8044,7 @@
   },
   "torch_off": {
     "name": {
-      "hu": "Torch Off",
+      "hu": "Kialudt Fáklya",
       "en": "Torch Off"
     },
     "img": "img/items/torch_off.png",
@@ -8062,7 +8062,7 @@
   },
   "pillager_flag": {
     "name": {
-      "hu": "Pillager Flag",
+      "hu": "Fosztogató Zászló",
       "en": "Pillager Flag"
     },
     "img": "img/items/pillager_flag.png",
@@ -8071,7 +8071,7 @@
   },
   "template_lantern": {
     "name": {
-      "hu": "Template Lantern",
+      "hu": "Lámpa Sablon",
       "en": "Template Lantern"
     },
     "img": "img/items/template_lantern.png",
@@ -8080,7 +8080,7 @@
   },
   "thin_glass": {
     "name": {
-      "hu": "Thin Glass",
+      "hu": "Vékony Üveg",
       "en": "Thin Glass"
     },
     "img": "img/items/thin_glass.png",
@@ -8089,7 +8089,7 @@
   },
   "torch_holy": {
     "name": {
-      "hu": "Torch Holy",
+      "hu": "Tisztító Fáklya",
       "en": "Torch Holy"
     },
     "img": "img/items/torch_holy.png",
@@ -8098,7 +8098,7 @@
   },
   "sapling_pitaya": {
     "name": {
-      "hu": "Sapling Pitaya",
+      "hu": "Pitahaya Csemete",
       "en": "Sapling Pitaya"
     },
     "img": "img/items/sapling_pitaya.png",
@@ -8107,7 +8107,7 @@
   },
   "sapling_coconut": {
     "name": {
-      "hu": "Sapling Coconut",
+      "hu": "Kókuszpálma Csemete",
       "en": "Sapling Coconut"
     },
     "img": "img/items/sapling_coconut.png",
@@ -8116,7 +8116,7 @@
   },
   "sapling_banana": {
     "name": {
-      "hu": "Sapling Banana",
+      "hu": "Banánfa Csemete",
       "en": "Sapling Banana"
     },
     "img": "img/items/sapling_banana.png",
@@ -8125,7 +8125,7 @@
   },
   "sunflower": {
     "name": {
-      "hu": "Sunflower",
+      "hu": "Napraforgó",
       "en": "Sunflower"
     },
     "img": "img/items/sunflower.png",
@@ -8134,7 +8134,7 @@
   },
   "blueberry_bush": {
     "name": {
-      "hu": "Blueberry Bush",
+      "hu": "Áfonyabokor",
       "en": "Blueberry Bush"
     },
     "img": "img/items/blueberry_bush.png",
@@ -8143,7 +8143,7 @@
   },
   "strawberry_bush": {
     "name": {
-      "hu": "Strawberry Bush",
+      "hu": "Eperbokor",
       "en": "Strawberry Bush"
     },
     "img": "img/items/strawberry_bush.png",
@@ -8152,7 +8152,7 @@
   },
   "orange_bush": {
     "name": {
-      "hu": "Orange Bush",
+      "hu": "Narancsbokor",
       "en": "Orange Bush"
     },
     "img": "img/items/orange_bush.png",
@@ -8161,7 +8161,7 @@
   },
   "dead_bush": {
     "name": {
-      "hu": "Dead Bush",
+      "hu": "Száraz Bokor",
       "en": "Dead Bush"
     },
     "img": "img/items/dead_bush.png",
@@ -8170,7 +8170,7 @@
   },
   "wither_rose": {
     "name": {
-      "hu": "Wither Rose",
+      "hu": "Fonnyasztóvirág",
       "en": "Wither Rose"
     },
     "img": "img/items/wither_rose.png",
@@ -8179,7 +8179,7 @@
   },
   "mint": {
     "name": {
-      "hu": "Mint",
+      "hu": "Borsmenta",
       "en": "Mint"
     },
     "img": "img/items/mint.png",
@@ -8188,7 +8188,7 @@
   },
   "coconut": {
     "name": {
-      "hu": "Coconut",
+      "hu": "Kókuszdió",
       "en": "Coconut"
     },
     "img": "img/items/coconut.png",
@@ -8197,7 +8197,7 @@
   },
   "grape": {
     "name": {
-      "hu": "Grape",
+      "hu": "Szőlő",
       "en": "Grape"
     },
     "img": "img/items/grape.png",
@@ -8206,7 +8206,7 @@
   },
   "strawberry": {
     "name": {
-      "hu": "Strawberry",
+      "hu": "Eper",
       "en": "Strawberry"
     },
     "img": "img/items/strawberry.png",
@@ -8215,7 +8215,7 @@
   },
   "pitaya": {
     "name": {
-      "hu": "Pitaya",
+      "hu": "Pitahaya",
       "en": "Pitaya"
     },
     "img": "img/items/pitaya.png",
@@ -8224,7 +8224,7 @@
   },
   "wild_fruit": {
     "name": {
-      "hu": "Wild Fruit",
+      "hu": "Vadgyümölcs",
       "en": "Wild Fruit"
     },
     "img": "img/items/wild_fruit.png",
@@ -8233,7 +8233,7 @@
   },
   "sun_flower_seed": {
     "name": {
-      "hu": "Sun Flower Seed",
+      "hu": "Napraforgó Mag",
       "en": "Sun Flower Seed"
     },
     "img": "img/items/sun_flower_seed.png",
@@ -8242,7 +8242,7 @@
   },
   "duck_cooked": {
     "name": {
-      "hu": "Duck Cooked",
+      "hu": "Sült Kacsa",
       "en": "Duck Cooked"
     },
     "img": "img/items/duck_cooked.png",
@@ -8251,7 +8251,7 @@
   },
   "bad_duck_meat": {
     "name": {
-      "hu": "Bad Duck Meat",
+      "hu": "Rossz Minőségű Kacsa",
       "en": "Bad Duck Meat"
     },
     "img": "img/items/bad_duck_meat.png",
@@ -8260,7 +8260,7 @@
   },
   "duck_head": {
     "name": {
-      "hu": "Duck Head",
+      "hu": "Kacsafej",
       "en": "Duck Head"
     },
     "img": "img/items/duck_head.png",
@@ -8269,7 +8269,7 @@
   },
   "duck_head_cooked": {
     "name": {
-      "hu": "Duck Head Cooked",
+      "hu": "Sült Kacsafej",
       "en": "Duck Head Cooked"
     },
     "img": "img/items/duck_head_cooked.png",
@@ -8278,7 +8278,7 @@
   },
   "bad_duck_head_cooked": {
     "name": {
-      "hu": "Bad Duck Head Cooked",
+      "hu": "Rossz Sült Kacsafej",
       "en": "Bad Duck Head Cooked"
     },
     "img": "img/items/bad_duck_head_cooked.png",
@@ -8287,7 +8287,7 @@
   },
   "squid_meat": {
     "name": {
-      "hu": "Squid Meat",
+      "hu": "Tintahal Hús",
       "en": "Squid Meat"
     },
     "img": "img/items/squid_meat.png",
@@ -8296,7 +8296,7 @@
   },
   "cooked_squid_meat": {
     "name": {
-      "hu": "Cooked Squid Meat",
+      "hu": "Sült Tintahal",
       "en": "Cooked Squid Meat"
     },
     "img": "img/items/cooked_squid_meat.png",
@@ -8305,7 +8305,7 @@
   },
   "bad_cooked_squid_meat": {
     "name": {
-      "hu": "Bad Cooked Squid Meat",
+      "hu": "Rossz Sült Tintahal",
       "en": "Bad Cooked Squid Meat"
     },
     "img": "img/items/bad_cooked_squid_meat.png",
@@ -8314,7 +8314,7 @@
   },
   "bad_fish_cooked": {
     "name": {
-      "hu": "Bad Fish Cooked",
+      "hu": "Rossz Sült Hal",
       "en": "Bad Fish Cooked"
     },
     "img": "img/items/bad_fish_cooked.png",
@@ -8323,7 +8323,7 @@
   },
   "bad_cooked_meat": {
     "name": {
-      "hu": "Bad Cooked Meat",
+      "hu": "Rossz Sült Hús",
       "en": "Bad Cooked Meat"
     },
     "img": "img/items/bad_cooked_meat.png",
@@ -8332,7 +8332,7 @@
   },
   "banana": {
     "name": {
-      "hu": "Banana",
+      "hu": "Banán",
       "en": "Banana"
     },
     "img": "img/items/banana.png",
@@ -8341,7 +8341,7 @@
   },
   "hot_water": {
     "name": {
-      "hu": "Hot Water",
+      "hu": "Forró Víz",
       "en": "Hot Water"
     },
     "img": "img/items/hot_water.png",
@@ -8350,7 +8350,7 @@
   },
   "sugar_soup": {
     "name": {
-      "hu": "Sugar Soup",
+      "hu": "Cukros Leves",
       "en": "Sugar Soup"
     },
     "img": "img/items/sugar_soup.png",
@@ -8359,7 +8359,7 @@
   },
   "seeds": {
     "name": {
-      "hu": "Seeds",
+      "hu": "Vetőmag",
       "en": "Seeds"
     },
     "img": "img/items/seeds.png",
@@ -8368,7 +8368,7 @@
   },
   "bad_mutton_cooked": {
     "name": {
-      "hu": "Bad Mutton Cooked",
+      "hu": "Rossz Sült Bárányhús",
       "en": "Bad Mutton Cooked"
     },
     "img": "img/items/bad_mutton_cooked.png",
@@ -8377,7 +8377,7 @@
   },
   "cooked_mutton": {
     "name": {
-      "hu": "Cooked Mutton",
+      "hu": "Sült Bárányhús",
       "en": "Cooked Mutton"
     },
     "img": "img/items/cooked_mutton.png",
@@ -8386,7 +8386,7 @@
   },
   "blue_berries": {
     "name": {
-      "hu": "Blue Berries",
+      "hu": "Kék Áfonya",
       "en": "Blue Berries"
     },
     "img": "img/items/blue_berries.png",
@@ -8395,7 +8395,7 @@
   },
   "porridge": {
     "name": {
-      "hu": "Porridge",
+      "hu": "Zabliszt Kása",
       "en": "Porridge"
     },
     "img": "img/items/porridge.png",
@@ -8404,7 +8404,7 @@
   },
   "cereal": {
     "name": {
-      "hu": "Cereal",
+      "hu": "Zabkása",
       "en": "Cereal"
     },
     "img": "img/items/cereal.png",
@@ -8413,7 +8413,7 @@
   },
   "beef_stew": {
     "name": {
-      "hu": "Beef Stew",
+      "hu": "Marhapörkölt",
       "en": "Beef Stew"
     },
     "img": "img/items/beef_stew.png",
@@ -8422,7 +8422,7 @@
   },
   "sorbet": {
     "name": {
-      "hu": "Sorbet",
+      "hu": "Szorbet",
       "en": "Sorbet"
     },
     "img": "img/items/sorbet.png",
@@ -8431,7 +8431,7 @@
   },
   "worm_raw": {
     "name": {
-      "hu": "Worm Raw",
+      "hu": "Nyers Kukac",
       "en": "Worm Raw"
     },
     "img": "img/items/worm_raw.png",
@@ -8440,7 +8440,7 @@
   },
   "worm_cooked": {
     "name": {
-      "hu": "Worm Cooked",
+      "hu": "Sült Kukac",
       "en": "Worm Cooked"
     },
     "img": "img/items/worm_cooked.png",
@@ -8449,7 +8449,7 @@
   },
   "return_scroll": {
     "name": {
-      "hu": "Return Scroll",
+      "hu": "Visszatérési Tekercs",
       "en": "Return Scroll"
     },
     "img": "img/items/return_scroll.png",
@@ -8458,7 +8458,7 @@
   },
   "bound_scroll": {
     "name": {
-      "hu": "Bound Scroll",
+      "hu": "Kötött Tekercs",
       "en": "Bound Scroll"
     },
     "img": "img/items/bound_scroll.png",
@@ -8467,7 +8467,7 @@
   },
   "warp_scroll": {
     "name": {
-      "hu": "Warp Scroll",
+      "hu": "Teleport Tekercs",
       "en": "Warp Scroll"
     },
     "img": "img/items/warp_scroll.png",
@@ -8503,7 +8503,7 @@
   },
   "colling_liquid": {
     "name": {
-      "hu": "Colling Liquid",
+      "hu": "Hűtőfolyadék",
       "en": "Colling Liquid"
     },
     "img": "img/items/colling_liquid.png",
@@ -8530,7 +8530,7 @@
   },
   "skin_cream_bottle": {
     "name": {
-      "hu": "Skin Cream Bottle",
+      "hu": "Bőrápoló Krém",
       "en": "Skin Cream Bottle"
     },
     "img": "img/items/skin_cream_bottle.png",
@@ -8539,7 +8539,7 @@
   },
   "oxygen_bottle": {
     "name": {
-      "hu": "Oxygen Bottle",
+      "hu": "Oxigénpalack",
       "en": "Oxygen Bottle"
     },
     "img": "img/items/oxygen_bottle.png",
@@ -8854,7 +8854,7 @@
   },
   "green_gelatinous_sphere": {
     "name": {
-      "hu": "Green GelaÓnous Sphere",
+      "hu": "Zöld Zselés Gömb",
       "en": "Green Gelatinous Sphere"
     },
     "img": "img/items/green_gelatinous_sphere.png",
@@ -8863,7 +8863,7 @@
   },
   "ochre_gelatinous_sphere": {
     "name": {
-      "hu": "Ochre GelaÓnous Sphere",
+      "hu": "Okker Zselés Gömb",
       "en": "Ochre Gelatinous Sphere"
     },
     "img": "img/items/ochre_gelatinous_sphere.png",
@@ -8872,7 +8872,7 @@
   },
   "crimson_gelatinous_sphere": {
     "name": {
-      "hu": "Crimson GelaÓnous Sphere",
+      "hu": "Karmazsin Zselés Gömb",
       "en": "Crimson Gelatinous Sphere"
     },
     "img": "img/items/crimson_gelatinous_sphere.png",
@@ -8881,7 +8881,7 @@
   },
   "gray_gelatinous_sphere": {
     "name": {
-      "hu": "Gray GelaÓnous Sphere",
+      "hu": "Szürke Zselés Gömb",
       "en": "Gray Gelatinous Sphere"
     },
     "img": "img/items/gray_gelatinous_sphere.png",
@@ -8890,7 +8890,7 @@
   },
   "black_gelatinous_sphere": {
     "name": {
-      "hu": "Black GelaÓnous Sphere",
+      "hu": "Fekete Zselés Gömb",
       "en": "Black Gelatinous Sphere"
     },
     "img": "img/items/black_gelatinous_sphere.png",
