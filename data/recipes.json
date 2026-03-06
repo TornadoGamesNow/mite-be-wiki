@@ -509,7 +509,7 @@
   },
   {
     "id": "wooden_shovel",
-    "output": "stone_shovel",
+    "output": "wooden_shovel",
     "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
@@ -679,7 +679,7 @@
     "skill": "masonry"
   },
   {
-    "id": "obsidian_block",
+    "id": "obsidian",
     "output": "obsidian",
     "station": "hand",
     "gridSize": "2x2",

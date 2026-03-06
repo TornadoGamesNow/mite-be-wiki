@@ -274,7 +274,11 @@ export default function RecipeBrowser() {
           }}
         >
           <option value="">{allLabel} {stationLabel}</option>
-          {allStations.map((s) => <option key={s} value={s}>{s}</option>)}
+          {allStations.map((s) => (
+            <option key={s} value={s}>
+              {s === 'hand' ? (lang === 'hu' ? 'Kézzel' : 'By Hand') : s}
+            </option>
+          ))}
         </select>
 
         <select

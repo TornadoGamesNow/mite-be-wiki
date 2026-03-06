@@ -22,6 +22,7 @@ export default {
         mithril: 'var(--mithril)',
         adamantium: 'var(--adamantium)',
         ancient: 'var(--ancient)',
+        flint: 'var(--flint)',
         hard: 'var(--hard)',
         text: 'var(--text)',
         text2: 'var(--text2)',

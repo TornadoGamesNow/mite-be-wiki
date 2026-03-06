@@ -5,6 +5,21 @@ dist/
 # Lang reference files (local use only, not part of the wiki)
 assets/
 
+# Mod translation files (not part of the wiki)
+mod-source.zip
+mod-source-english.zip
+MiTE-BE_v0.9.0_english.zip
+MiTE-BE_v0.9.0_hungarian.zip
+mite-be-english/
+mite-be-english.zip
+lang-work/
+scripts/patch_class_strings.py
+scripts/patch_existing_zip.py
+scripts/build_final_instance.py
+scripts/build_lang_pack.py
+scripts/build_hungarian_zip.py
+reference/
+
 # OS
 .DS_Store
 Thumbs.db

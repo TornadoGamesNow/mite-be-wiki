@@ -17,3 +17,25 @@ export interface Recipe {
   difficulty?: number;
   skill?: string;
 }
+
+export interface Drop {
+  itemId: string;
+  name: { hu: string; en: string };
+  chance?: string;
+  quantity?: string;
+}
+
+export interface Mob {
+  id: string;
+  name: { hu: string; en: string };
+  hp: number;
+  dmgMin: number;
+  dmgMax: number;
+  xp: number;
+  armor?: number;
+  difficulty?: number;
+  image: string | null;
+  spawnZones: string[];
+  drops?: Drop[];
+  special?: { hu: string; en: string };
+}

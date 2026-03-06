@@ -27470,5 +27470,702 @@
       "planks_jungle"
     ],
     "shaped": false
+  },
+  {
+    "id": "straw_rope",
+    "item_num": 1306,
+    "output": "straw_rope",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 25,
+    "skills": [],
+    "ingredients": [
+      "plant_fiber"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Fűkötél",
+      "en": "Straw Rope"
+    },
+    "pattern": [
+      [
+        "plant_fiber",
+        "plant_fiber"
+      ],
+      [
+        "plant_fiber",
+        "plant_fiber"
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "early-game",
+      "material"
+    ]
+  },
+  {
+    "id": "simple_stone_knife",
+    "item_num": 1307,
+    "output": "flint_knife",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "straw_rope",
+      "flint_shard",
+      "stick"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Egyszerű Kőzet Kés",
+      "en": "Simple Stone Knife"
+    },
+    "pattern": [
+      [
+        "straw_rope",
+        "flint_shard"
+      ],
+      [
+        "_",
+        "stick"
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "early-game",
+      "tool",
+      "knife"
+    ]
+  },
+  {
+    "id": "leather_rope",
+    "item_num": 1308,
+    "output": "leather_rope",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "leather",
+      "flint_knife"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Bőrkötél",
+      "en": "Leather Rope"
+    },
+    "pattern": [
+      [
+        "leather",
+        "flint_knife"
+      ],
+      [
+        "_",
+        "_"
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "early-game",
+      "material"
+    ]
+  },
+  {
+    "id": "flint",
+    "item_num": 1309,
+    "output": "flint",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 100,
+    "skills": [],
+    "ingredients": [
+      "flint_shard"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Kova (Kőzet)",
+      "en": "Flint"
+    },
+    "pattern": [
+      [
+        "flint_shard",
+        "flint_shard"
+      ],
+      [
+        "flint_shard",
+        "flint_shard"
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "early-game",
+      "material"
+    ]
+  },
+  {
+    "id": "stone_knife",
+    "item_num": 1310,
+    "output": "flint_knife",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "flint",
+      "leather_rope"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Kőzet Kés",
+      "en": "Stone Knife"
+    },
+    "pattern": [
+      [
+        "flint",
+        "leather_rope"
+      ],
+      [
+        "_",
+        "_"
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "flint-age",
+      "tool",
+      "knife"
+    ]
+  },
+  {
+    "id": "stone_hatchet",
+    "item_num": 1311,
+    "output": "stone_hatchet",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "flint",
+      "leather_rope",
+      "stick"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Kőzet Rövid Fejsze",
+      "en": "Stone Short Hatchet"
+    },
+    "pattern": [
+      [
+        "flint",
+        "leather_rope"
+      ],
+      [
+        "stick",
+        "_"
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "flint-age",
+      "tool",
+      "hatchet"
+    ]
+  },
+  {
+    "id": "flint_workbench",
+    "item_num": 1312,
+    "output": "flint_workbench",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 270,
+    "skills": [],
+    "ingredients": [
+      "flint",
+      "silk",
+      "string",
+      "leather_rope",
+      "stick",
+      "planks_oak",
+      "planks_spruce",
+      "planks_birch",
+      "planks_jungle"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Kova Munkaasztal",
+      "en": "Flint Workbench"
+    },
+    "pattern": [
+      [
+        "flint",
+        [
+          "silk",
+          "string",
+          "leather_rope"
+        ]
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "flint-age",
+      "station"
+    ]
+  },
+  {
+    "id": "copper_workbench",
+    "item_num": 1313,
+    "output": "copper_workbench",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 605,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "copper_ingot",
+      "leather",
+      "stick",
+      "planks_oak",
+      "planks_spruce",
+      "planks_birch",
+      "planks_jungle"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Réz Munkaasztal",
+      "en": "Copper Workbench"
+    },
+    "pattern": [
+      [
+        "copper_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "copper-age",
+      "station"
+    ]
+  },
+  {
+    "id": "silver_workbench",
+    "item_num": 1314,
+    "output": "silver_workbench",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 605,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "silver_ingot",
+      "leather",
+      "stick",
+      "planks_oak",
+      "planks_spruce",
+      "planks_birch",
+      "planks_jungle"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Ezüst Munkaasztal",
+      "en": "Silver Workbench"
+    },
+    "pattern": [
+      [
+        "silver_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "silver-age",
+      "station"
+    ]
+  },
+  {
+    "id": "gold_workbench",
+    "item_num": 1315,
+    "output": "gold_workbench",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 605,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "gold_ingot",
+      "leather",
+      "stick",
+      "planks_oak",
+      "planks_spruce",
+      "planks_birch",
+      "planks_jungle"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Arany Munkaasztal",
+      "en": "Gold Workbench"
+    },
+    "pattern": [
+      [
+        "gold_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "gold-age",
+      "station"
+    ]
+  },
+  {
+    "id": "iron_workbench",
+    "item_num": 1316,
+    "output": "iron_workbench",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 1005,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_ingot",
+      "leather",
+      "stick",
+      "planks_oak",
+      "planks_spruce",
+      "planks_birch",
+      "planks_jungle"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Vas Munkaasztal",
+      "en": "Iron Workbench"
+    },
+    "pattern": [
+      [
+        "iron_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "iron-age",
+      "station"
+    ]
+  },
+  {
+    "id": "hardstone_workbench",
+    "item_num": 1317,
+    "output": "hardstone_workbench",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 1805,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "hardstone_ingot",
+      "leather",
+      "stick",
+      "planks_oak",
+      "planks_spruce",
+      "planks_birch",
+      "planks_jungle"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Keménykő Munkaasztal",
+      "en": "Hardstone Workbench"
+    },
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "hardstone-age",
+      "station"
+    ]
+  },
+  {
+    "id": "mithril_workbench",
+    "item_num": 1318,
+    "output": "mithril_workbench",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 6605,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "mithril_bar",
+      "leather",
+      "stick",
+      "planks_oak",
+      "planks_spruce",
+      "planks_birch",
+      "planks_jungle"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Mithril Munkaasztal",
+      "en": "Mithril Workbench"
+    },
+    "pattern": [
+      [
+        "mithril_bar",
+        "leather"
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "mithril-age",
+      "station"
+    ]
+  },
+  {
+    "id": "adamantium_workbench",
+    "item_num": 1319,
+    "output": "adamantium_workbench",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 25805,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "adamantium_bar",
+      "leather",
+      "stick",
+      "planks_oak",
+      "planks_spruce",
+      "planks_birch",
+      "planks_jungle"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Adamantium Munkaasztal",
+      "en": "Adamantium Workbench"
+    },
+    "pattern": [
+      [
+        "adamantium_bar",
+        "leather"
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "adamantium-age",
+      "station"
+    ]
+  },
+  {
+    "id": "clay_furnace",
+    "item_num": 1320,
+    "output": "clay_furnace",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 320,
+    "skills": [],
+    "ingredients": [
+      "clay_block"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Agyag Kemence",
+      "en": "Clay Furnace"
+    },
+    "pattern": [
+      [
+        "clay_block",
+        "clay_block"
+      ],
+      [
+        "clay_block",
+        "clay_block"
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "early-game",
+      "station",
+      "furnace"
+    ]
+  },
+  {
+    "id": "hardened_clay_furnace",
+    "item_num": 1321,
+    "output": "hardened_clay_furnace",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 720,
+    "skills": [
+      "masonry"
+    ],
+    "ingredients": [
+      "hardened_clay"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Keményített Agyag Kemence",
+      "en": "Hardened Clay Furnace"
+    },
+    "pattern": [
+      [
+        "hardened_clay",
+        "hardened_clay"
+      ],
+      [
+        "hardened_clay",
+        "hardened_clay"
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "copper-age",
+      "station",
+      "furnace"
+    ]
+  },
+  {
+    "id": "obsidian",
+    "item_num": 1322,
+    "output": "obsidian",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 89,
+    "skills": [],
+    "ingredients": [
+      "obsidian_shard"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Obszidián",
+      "en": "Obsidian"
+    },
+    "pattern": [
+      [
+        "obsidian_shard",
+        "obsidian_shard"
+      ],
+      [
+        "obsidian_shard",
+        "obsidian_shard"
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "material"
+    ]
+  },
+  {
+    "id": "ingot_mold",
+    "item_num": 1323,
+    "output": "obsidian_ingot_mold",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 185,
+    "skills": [],
+    "ingredients": [
+      "obsidian",
+      "flint_knife"
+    ],
+    "shaped": true,
+    "label": {
+      "hu": "Obszidián Öntőforma",
+      "en": "Obsidian Ingot Mold"
+    },
+    "pattern": [
+      [
+        "obsidian",
+        "flint_knife"
+      ],
+      [
+        "_",
+        "_"
+      ]
+    ],
+    "gridSize": "2x2",
+    "tags": [
+      "copper-age",
+      "tool"
+    ]
   }
 ]

@@ -35,15 +35,15 @@
         materials: { hu: "Rozsdás Vas", en: "Rusted Iron" }, bg: null, bad: true }
     ],
     durabilityMult: [
-      { mult: "256×", materials: { hu: "Adamantium", en: "Adamantium" }, tier: "t-adamantium", bg: "rgba(200,150,255,0.20)" },
-      { mult: "64×", materials: { hu: "Mithril, Higany", en: "Mithril, Mercury" }, tier: "t-mithril", bg: "rgba(200,150,255,0.12)" },
-      { mult: "16×", materials: { hu: "Ősi Fém, Keménykő, Gyémánt", en: "Ancient Metal, Hardstone, Diamond" }, tier: "t-ancient", bg: "rgba(100,180,255,0.12)" },
-      { mult: "8×", materials: { hu: "Vas, Magas Szén Acél, Smaragd", en: "Iron, High Carbon Steel, Emerald" }, tier: "t-iron", bg: "rgba(100,150,200,0.10)" },
-      { mult: "4×", materials: { hu: "Arany, Ezüst-Réz, Bronz", en: "Gold, Silver-Copper, Bronze" }, tier: "t-gold", bg: null },
-      { mult: "4×", materials: { hu: "Ezüst", en: "Silver" }, tier: "t-silver", bg: null },
-      { mult: "4×", materials: { hu: "Réz, Rozsdás Vas, Ón, Kvarc", en: "Copper, Rusted Iron, Tin, Quartz" }, tier: "t-copper", bg: null },
+      { mult: "256×", materials: { hu: "Adamantium", en: "Adamantium" }, tier: "adamantium", bg: "rgba(200,150,255,0.20)" },
+      { mult: "64×", materials: { hu: "Mithril, Higany", en: "Mithril, Mercury" }, tier: "mithril", bg: "rgba(200,150,255,0.12)" },
+      { mult: "16×", materials: { hu: "Ősi Fém, Keménykő, Gyémánt", en: "Ancient Metal, Hardstone, Diamond" }, tier: "ancient", bg: "rgba(100,180,255,0.12)" },
+      { mult: "8×", materials: { hu: "Vas, Magas Szén Acél, Smaragd", en: "Iron, High Carbon Steel, Emerald" }, tier: "iron", bg: "rgba(100,150,200,0.10)" },
+      { mult: "4×", materials: { hu: "Arany, Ezüst-Réz, Bronz", en: "Gold, Silver-Copper, Bronze" }, tier: "gold", bg: null },
+      { mult: "4×", materials: { hu: "Ezüst", en: "Silver" }, tier: "silver", bg: null },
+      { mult: "4×", materials: { hu: "Réz, Rozsdás Vas, Ón, Kvarc", en: "Copper, Rusted Iron, Tin, Quartz" }, tier: "copper", bg: null },
       { mult: "2×", materials: { hu: "Obszidián, Üveg", en: "Obsidian, Glass" }, tier: null, bg: null },
-      { mult: "1× (alap / base)", materials: { hu: "Bőr, Kova", en: "Leather, Flint" }, tier: "t-flint", bg: null },
+      { mult: "1× (alap / base)", materials: { hu: "Bőr, Kova", en: "Leather, Flint" }, tier: "flint", bg: null },
       { mult: "0.5×", materials: { hu: "Fa", en: "Wood" }, tier: null, bg: null, muted: true },
       { mult: "0.15×", materials: { hu: "Csont", en: "Bone" }, tier: null, bg: null, bad: true }
     ]
