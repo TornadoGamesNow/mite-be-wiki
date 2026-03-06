@@ -28180,7 +28180,6 @@
     ],
     "ingredients": [
       "copper_sword",
-      "tin_ingot",
       "tin_ingot"
     ],
     "shaped": false
@@ -28197,7 +28196,6 @@
     ],
     "ingredients": [
       "copper_pickaxe",
-      "tin_ingot",
       "tin_ingot"
     ],
     "shaped": false
@@ -28214,7 +28212,6 @@
     ],
     "ingredients": [
       "copper_axe",
-      "tin_ingot",
       "tin_ingot"
     ],
     "shaped": false
@@ -28231,7 +28228,6 @@
     ],
     "ingredients": [
       "copper_shovel",
-      "tin_ingot",
       "tin_ingot"
     ],
     "shaped": false
@@ -28248,7 +28244,6 @@
     ],
     "ingredients": [
       "copper_battle_axe",
-      "tin_ingot",
       "tin_ingot"
     ],
     "shaped": false
@@ -28265,7 +28260,6 @@
     ],
     "ingredients": [
       "copper_war_hammer",
-      "tin_ingot",
       "tin_ingot"
     ],
     "shaped": false
@@ -28474,7 +28468,6 @@
     ],
     "ingredients": [
       "silver_sword",
-      "copper_ingot",
       "copper_ingot"
     ],
     "shaped": false
@@ -28491,7 +28484,6 @@
     ],
     "ingredients": [
       "silver_pickaxe",
-      "copper_ingot",
       "copper_ingot"
     ],
     "shaped": false
@@ -28508,7 +28500,6 @@
     ],
     "ingredients": [
       "silver_axe",
-      "copper_ingot",
       "copper_ingot"
     ],
     "shaped": false
@@ -28525,7 +28516,6 @@
     ],
     "ingredients": [
       "silver_shovel",
-      "copper_ingot",
       "copper_ingot"
     ],
     "shaped": false
@@ -28542,7 +28532,6 @@
     ],
     "ingredients": [
       "silver_battle_axe",
-      "copper_ingot",
       "copper_ingot"
     ],
     "shaped": false
@@ -28559,7 +28548,6 @@
     ],
     "ingredients": [
       "silver_war_hammer",
-      "copper_ingot",
       "copper_ingot"
     ],
     "shaped": false
@@ -29733,6 +29721,375 @@
       "clay_block",
       "clay_block",
       "clay_block"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "arrow_32100",
+    "item_num": 32100,
+    "output": "arrow",
+    "outputQty": 4,
+    "station": "flint_workbench",
+    "difficulty": 100,
+    "skills": [
+      "archery"
+    ],
+    "ingredients": [
+      "flint",
+      "stick",
+      "feather"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "chip_flint_knife_32101",
+    "item_num": 32101,
+    "output": "chip_flint_knife",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 50,
+    "skills": [],
+    "ingredients": [
+      "chip_flint",
+      "straw_rope",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "mercury_ingot_32102",
+    "item_num": 32102,
+    "output": "mercury_ingot",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 200,
+    "skills": [],
+    "ingredients": [
+      "mercury_ore"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "charcoal_32103",
+    "item_num": 32103,
+    "output": "charcoal",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 50,
+    "skills": [],
+    "ingredients": [
+      [
+        "log_oak",
+        "log_spruce",
+        "log_birch",
+        "log_jungle"
+      ]
+    ],
+    "shaped": false
+  },
+  {
+    "id": "leather_32104",
+    "item_num": 32104,
+    "output": "leather",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 100,
+    "skills": [],
+    "ingredients": [
+      "hide"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "thin_glass_32105",
+    "item_num": 32105,
+    "output": "thin_glass",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 300,
+    "skills": [],
+    "ingredients": [
+      "glass"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "glow_stone_torch_32106",
+    "item_num": 32106,
+    "output": "glow_stone_torch",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 100,
+    "skills": [],
+    "ingredients": [
+      "glowstone_dust",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "torch_off_32107",
+    "item_num": 32107,
+    "output": "torch_off",
+    "outputQty": 1,
+    "station": "hand",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "torch"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "water_skin_32108",
+    "item_num": 32108,
+    "output": "water_skin",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 300,
+    "skills": [],
+    "ingredients": [
+      "leather",
+      "leather",
+      "leather",
+      "stick",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "crossbow_32109",
+    "item_num": 32109,
+    "output": "crossbow",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 1600,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_ingot",
+      "stick",
+      "iron_ingot",
+      "string",
+      "stick",
+      "stick",
+      "iron_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "blast_furnace_32115",
+    "item_num": 32115,
+    "output": "blast_furnace",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 4000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "stone",
+      "stone",
+      "stone",
+      "iron_ingot",
+      "stone_furnace_idle",
+      "iron_ingot",
+      "stone",
+      "stone",
+      "stone"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "high_carbon_steel_helmet_32116",
+    "item_num": 32116,
+    "output": "high_carbon_steel_helmet",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 8000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_helmet",
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "high_carbon_steel_chestplate_32117",
+    "item_num": 32117,
+    "output": "high_carbon_steel_chestplate",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 8000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_chestplate",
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "high_carbon_steel_leggings_32118",
+    "item_num": 32118,
+    "output": "high_carbon_steel_leggings",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 8000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_leggings",
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "high_carbon_steel_boots_32119",
+    "item_num": 32119,
+    "output": "high_carbon_steel_boots",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 8000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_boots",
+      "carbon_crystal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bronze_helmet_32120",
+    "item_num": 32120,
+    "output": "bronze_helmet",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 4000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "copper_helmet",
+      "tin_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bronze_chestplate_32121",
+    "item_num": 32121,
+    "output": "bronze_chestplate",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 4000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "copper_chestplate",
+      "tin_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bronze_leggings_32122",
+    "item_num": 32122,
+    "output": "bronze_leggings",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 4000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "copper_leggings",
+      "tin_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bronze_boots_32123",
+    "item_num": 32123,
+    "output": "bronze_boots",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 4000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "copper_boots",
+      "tin_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "silver_copper_helmet_32124",
+    "item_num": 32124,
+    "output": "silver_copper_helmet",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 4000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "silver_helmet",
+      "copper_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "silver_copper_chestplate_32125",
+    "item_num": 32125,
+    "output": "silver_copper_chestplate",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 4000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "silver_chestplate",
+      "copper_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "silver_copper_leggings_32126",
+    "item_num": 32126,
+    "output": "silver_copper_leggings",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 4000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "silver_leggings",
+      "copper_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "silver_copper_boots_32127",
+    "item_num": 32127,
+    "output": "silver_copper_boots",
+    "outputQty": 1,
+    "station": "blast_furnace",
+    "difficulty": 4000,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "silver_boots",
+      "copper_ingot"
     ],
     "shaped": false
   }

@@ -9121,5 +9121,113 @@
     "img": "img/items/bowl_vegetable_soup.png",
     "tier": null,
     "category": "material"
+  },
+  "bronze_helmet": {
+    "name": {
+      "hu": "Bronz Sisak",
+      "en": "Bronze Helmet"
+    },
+    "img": "img/items/bronze_helmet.png",
+    "tier": "bronze",
+    "category": "armor"
+  },
+  "bronze_chestplate": {
+    "name": {
+      "hu": "Bronz Mellvért",
+      "en": "Bronze Chestplate"
+    },
+    "img": "img/items/bronze_chestplate.png",
+    "tier": "bronze",
+    "category": "armor"
+  },
+  "bronze_leggings": {
+    "name": {
+      "hu": "Bronz Lábvért",
+      "en": "Bronze Leggings"
+    },
+    "img": "img/items/bronze_leggings.png",
+    "tier": "bronze",
+    "category": "armor"
+  },
+  "bronze_boots": {
+    "name": {
+      "hu": "Bronz Csizma",
+      "en": "Bronze Boots"
+    },
+    "img": "img/items/bronze_boots.png",
+    "tier": "bronze",
+    "category": "armor"
+  },
+  "silver_copper_helmet": {
+    "name": {
+      "hu": "Ezüst-Réz Sisak",
+      "en": "Silver Copper Helmet"
+    },
+    "img": "img/items/silver_copper_helmet.png",
+    "tier": "silver_copper",
+    "category": "armor"
+  },
+  "silver_copper_chestplate": {
+    "name": {
+      "hu": "Ezüst-Réz Mellvért",
+      "en": "Silver Copper Chestplate"
+    },
+    "img": "img/items/silver_copper_chestplate.png",
+    "tier": "silver_copper",
+    "category": "armor"
+  },
+  "silver_copper_leggings": {
+    "name": {
+      "hu": "Ezüst-Réz Lábvért",
+      "en": "Silver Copper Leggings"
+    },
+    "img": "img/items/silver_copper_leggings.png",
+    "tier": "silver_copper",
+    "category": "armor"
+  },
+  "silver_copper_boots": {
+    "name": {
+      "hu": "Ezüst-Réz Csizma",
+      "en": "Silver Copper Boots"
+    },
+    "img": "img/items/silver_copper_boots.png",
+    "tier": "silver_copper",
+    "category": "armor"
+  },
+  "high_carbon_steel_helmet": {
+    "name": {
+      "hu": "Magas Szén-tartalmú Acél Sisak",
+      "en": "High Carbon Steel Helmet"
+    },
+    "img": "img/items/high_carbon_steel_helmet.png",
+    "tier": "high_carbon_steel",
+    "category": "armor"
+  },
+  "high_carbon_steel_chestplate": {
+    "name": {
+      "hu": "Magas Szén-tartalmú Acél Mellvért",
+      "en": "High Carbon Steel Chestplate"
+    },
+    "img": "img/items/high_carbon_steel_chestplate.png",
+    "tier": "high_carbon_steel",
+    "category": "armor"
+  },
+  "high_carbon_steel_leggings": {
+    "name": {
+      "hu": "Magas Szén-tartalmú Acél Lábvért",
+      "en": "High Carbon Steel Leggings"
+    },
+    "img": "img/items/high_carbon_steel_leggings.png",
+    "tier": "high_carbon_steel",
+    "category": "armor"
+  },
+  "high_carbon_steel_boots": {
+    "name": {
+      "hu": "Magas Szén-tartalmú Acél Csizma",
+      "en": "High Carbon Steel Boots"
+    },
+    "img": "img/items/high_carbon_steel_boots.png",
+    "tier": "high_carbon_steel",
+    "category": "armor"
   }
 }
