@@ -593,8 +593,8 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                         <span
                           style={{ color: 'var(--text)', cursor: 'help', borderBottom: '1px dotted var(--text2)' }}
                           title={lang === 'hu'
-                            ? `MITE crafting nehézségi pontszám: ${r.difficulty}`
-                            : `MITE crafting difficulty score: ${r.difficulty}`}
+                            ? `Crafting nehézségi pontszám: ${Math.round(r.difficulty)}\nMinél magasabb az érték, annál több idő és tapasztalat szükséges a tárgy minőségi craftolásához (Fine → Legendary). Az XP-követelmény ezzel az értékkel arányos.`
+                            : `Crafting difficulty score: ${Math.round(r.difficulty)}\nHigher values require more time and experience to craft the item at higher quality (Fine → Legendary). XP requirements scale proportionally with this value.`}
                         >
                           {Math.round(r.difficulty).toLocaleString()}
                         </span>
