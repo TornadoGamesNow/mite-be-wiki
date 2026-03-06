@@ -14735,58 +14735,6 @@
     "shaped": false
   },
   {
-    "id": "flint_knife_694",
-    "item_num": 1023,
-    "output": "flint_knife",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 25,
-    "skills": [],
-    "ingredients": [
-      "flint_workbench"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "flint_knife_695",
-    "item_num": 1023,
-    "output": "flint_knife",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 25,
-    "skills": [],
-    "ingredients": [
-      "flint_workbench"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "flint_knife_696",
-    "item_num": 1023,
-    "output": "flint_knife",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 25,
-    "skills": [],
-    "ingredients": [
-      "flint_workbench"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "flint_knife_697",
-    "item_num": 1023,
-    "output": "flint_knife",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 25,
-    "skills": [],
-    "ingredients": [
-      "flint_workbench"
-    ],
-    "shaped": false
-  },
-  {
     "id": "small_wooden_club_698",
     "item_num": 1024,
     "output": "small_wooden_club",
@@ -30869,6 +30817,23 @@
       "ancient_metal_ingot",
       "ancient_metal_ingot",
       "barrel"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "flint_knife_string_772896",
+    "item_num": 772896,
+    "output": "flint_knife",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 150,
+    "skills": [
+      "masonry"
+    ],
+    "ingredients": [
+      "flint",
+      "string",
+      "stick"
     ],
     "shaped": false
   }
