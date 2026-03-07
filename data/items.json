@@ -2426,7 +2426,7 @@
     },
     "img": "img/items/adamantium_shield.png",
     "tier": "adamantium",
-    "category": "weapon"
+    "category": "armor"
   },
   "adamantium_short_sword": {
     "name": {
@@ -2674,7 +2674,7 @@
     },
     "img": "img/items/ancient_metal_shield.png",
     "tier": "ancient_metal",
-    "category": "weapon"
+    "category": "armor"
   },
   "ancient_metal_short_sword": {
     "name": {
@@ -3687,7 +3687,7 @@
     },
     "img": "img/items/copper_shield.png",
     "tier": "copper",
-    "category": "weapon"
+    "category": "armor"
   },
   "copper_short_sword": {
     "name": {
@@ -4492,7 +4492,7 @@
     },
     "img": "img/items/gold_shield.png",
     "tier": "gold",
-    "category": "weapon"
+    "category": "armor"
   },
   "gold_short_sword": {
     "name": {
@@ -4837,7 +4837,7 @@
     },
     "img": "img/items/hard_stone_shield.png",
     "tier": "hard",
-    "category": "weapon"
+    "category": "armor"
   },
   "hard_stone_shovel": {
     "name": {
@@ -5121,7 +5121,7 @@
     },
     "img": "img/items/iron_shield.png",
     "tier": "iron",
-    "category": "weapon"
+    "category": "armor"
   },
   "iron_short_sword": {
     "name": {
@@ -5897,7 +5897,7 @@
     },
     "img": "img/items/mithril_shield.png",
     "tier": "mithril",
-    "category": "weapon"
+    "category": "armor"
   },
   "mithril_short_sword": {
     "name": {
@@ -7084,7 +7084,7 @@
     },
     "img": "img/items/silver_shield.png",
     "tier": "silver",
-    "category": "weapon"
+    "category": "armor"
   },
   "silver_short_sword": {
     "name": {

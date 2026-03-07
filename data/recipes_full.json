@@ -3014,12 +3014,12 @@
       ],
       [
         "stick",
-        "oak_planks",
+        "planks_oak",
         "stick"
       ],
       [
         "stick",
-        "oak_planks",
+        "planks_oak",
         "stick"
       ]
     ]
@@ -6863,13 +6863,13 @@
     "shaped": true,
     "pattern": [
       [
-        "chip_flint",
-        "chip_flint",
+        "flint_shard",
+        "flint_shard",
         "_"
       ],
       [
-        "chip_flint",
-        "chip_flint",
+        "flint_shard",
+        "flint_shard",
         "_"
       ],
       [
@@ -6976,7 +6976,7 @@
     "pattern": [
       [
         "_",
-        "oak_slab",
+        "wood_slab_single",
         "_"
       ],
       [
@@ -15699,7 +15699,7 @@
     "pattern": [
       [
         "_",
-        "chip_flint",
+        "flint_shard",
         "_"
       ],
       [
@@ -25470,9 +25470,9 @@
     "shaped": true,
     "pattern": [
       [
-        "chip_flint",
+        "flint_shard",
         "flint",
-        "chip_flint"
+        "flint_shard"
       ],
       [
         "string",
@@ -26375,7 +26375,7 @@
       ],
       [
         "ancient_metal_ingot",
-        "wooden_barrel",
+        "barrel",
         "ancient_metal_ingot"
       ],
       [
@@ -30527,7 +30527,7 @@
       ],
       [
         "_",
-        "oak_planks",
+        "planks_oak",
         "_"
       ],
       [
@@ -30554,12 +30554,12 @@
     "pattern": [
       [
         "_",
-        "oak_planks",
+        "planks_oak",
         "_"
       ],
       [
         "_",
-        "oak_planks",
+        "planks_oak",
         "_"
       ],
       [
@@ -30869,9 +30869,9 @@
     "shaped": true,
     "pattern": [
       [
-        "white_wool",
-        "white_wool",
-        "white_wool"
+        "wool_white",
+        "wool_white",
+        "wool_white"
       ],
       [
         "_",
@@ -31585,9 +31585,9 @@
         "stick"
       ],
       [
-        "oak_planks",
+        "planks_oak",
         "_",
-        "oak_planks"
+        "planks_oak"
       ]
     ]
   },
@@ -31894,9 +31894,9 @@
         "_"
       ],
       [
-        "oak_planks",
-        "oak_planks",
-        "oak_planks"
+        "planks_oak",
+        "planks_oak",
+        "planks_oak"
       ],
       [
         "_",
@@ -32481,7 +32481,7 @@
     "difficulty": 50,
     "skills": [],
     "ingredients": [
-      "chip_flint",
+      "flint_shard",
       "straw_rope",
       "stick"
     ],
@@ -32494,7 +32494,7 @@
       ],
       [
         "_",
-        "chip_flint",
+        "flint_shard",
         "straw_rope"
       ],
       [
@@ -33935,7 +33935,7 @@
     "pattern": [
       [
         "potato",
-        "steak",
+        "cooked_beef",
         "_"
       ],
       [
@@ -34039,7 +34039,7 @@
         "_"
       ],
       [
-        "chicken_egg",
+        "egg",
         "glass_bottle",
         "green_gelatinous_sphere"
       ],
@@ -34217,19 +34217,19 @@
     "shaped": true,
     "pattern": [
       [
-        "eye_of_ender",
-        "eye_of_ender",
-        "eye_of_ender"
+        "ender_eye",
+        "ender_eye",
+        "ender_eye"
       ],
       [
-        "eye_of_ender",
-        "eye_of_ender",
-        "eye_of_ender"
+        "ender_eye",
+        "ender_eye",
+        "ender_eye"
       ],
       [
-        "eye_of_ender",
-        "eye_of_ender",
-        "eye_of_ender"
+        "ender_eye",
+        "ender_eye",
+        "ender_eye"
       ]
     ],
     "added_version": "0.5.8"
