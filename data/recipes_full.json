@@ -523,22 +523,22 @@
     "ingredients": [
       "ink_sac",
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -556,22 +556,22 @@
     "ingredients": [
       "rose_red",
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -589,22 +589,22 @@
     "ingredients": [
       "cactus_green",
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -622,22 +622,22 @@
     "ingredients": [
       "cocoa_beans",
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -655,22 +655,22 @@
     "ingredients": [
       "lapis_lazuli",
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -688,22 +688,22 @@
     "ingredients": [
       "purple_dye",
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -721,22 +721,22 @@
     "ingredients": [
       "cyan_dye",
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -754,22 +754,22 @@
     "ingredients": [
       "light_gray_dye",
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -787,22 +787,22 @@
     "ingredients": [
       "gray_dye",
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -820,22 +820,22 @@
     "ingredients": [
       "pink_dye",
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -853,22 +853,22 @@
     "ingredients": [
       "lime_dye",
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -886,22 +886,22 @@
     "ingredients": [
       "dandelion_yellow",
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -919,22 +919,22 @@
     "ingredients": [
       "light_blue_dye",
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -952,22 +952,22 @@
     "ingredients": [
       "magenta_dye",
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -985,22 +985,22 @@
     "ingredients": [
       "orange_dye",
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -3600,40 +3600,40 @@
     ],
     "ingredients": [
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -5277,22 +5277,22 @@
     "skills": [],
     "ingredients": [
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       "flint_knife"
     ],
@@ -5308,22 +5308,22 @@
     "skills": [],
     "ingredients": [
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       "copper_short_sword"
     ],
@@ -5339,22 +5339,22 @@
     "skills": [],
     "ingredients": [
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       "silver_short_sword"
     ],
@@ -5370,22 +5370,22 @@
     "skills": [],
     "ingredients": [
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       "gold_short_sword"
     ],
@@ -5401,22 +5401,22 @@
     "skills": [],
     "ingredients": [
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       "iron_short_sword"
     ],
@@ -5432,22 +5432,22 @@
     "skills": [],
     "ingredients": [
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       "rusted_iron_short_sword"
     ],
@@ -5463,22 +5463,22 @@
     "skills": [],
     "ingredients": [
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       "ancient_metal_short_sword"
     ],
@@ -5494,22 +5494,22 @@
     "skills": [],
     "ingredients": [
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       "mithril_short_sword"
     ],
@@ -5525,22 +5525,22 @@
     "skills": [],
     "ingredients": [
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       "adamantium_short_sword"
     ],
@@ -6238,22 +6238,22 @@
       "stick",
       "stick",
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       "stick",
       "stick",
@@ -8151,58 +8151,58 @@
     ],
     "ingredients": [
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       [
         "planks_oak",
@@ -26468,58 +26468,58 @@
     "skills": [],
     "ingredients": [
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ]
     ],
     "shaped": false
@@ -26709,22 +26709,22 @@
     "skills": [],
     "ingredients": [
       [
-        "wool_white",
-        "wool_orange",
-        "wool_magenta",
-        "wool_light_blue",
-        "wool_yellow",
-        "wool_lime",
-        "wool_pink",
-        "wool_gray",
-        "wool_light_gray",
-        "wool_cyan",
-        "wool_purple",
-        "wool_blue",
-        "wool_brown",
-        "wool_green",
-        "wool_red",
-        "wool_black"
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
       ],
       "obsidian"
     ],
@@ -27044,7 +27044,8 @@
       "netherrack",
       "netherrack"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "nether_furnace_core_1272",
@@ -27065,7 +27066,8 @@
       "netherrack",
       "netherrack"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "obsidian_furnace_core_1273",
@@ -27086,7 +27088,8 @@
       "obsidian",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "obsidian_furnace_core_1274",
@@ -27107,7 +27110,8 @@
       "obsidian",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "stone_furnace_core_1275",
@@ -27128,7 +27132,8 @@
       "cobblestone",
       "cobblestone"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "stone_furnace_core_1276",
@@ -27149,7 +27154,8 @@
       "cobblestone",
       "cobblestone"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "world_marker_1277",
@@ -28465,7 +28471,8 @@
       "early-game",
       "station",
       "furnace"
-    ]
+    ],
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "hardened_clay_furnace",
@@ -32796,7 +32803,8 @@
         "cobblestone",
         "cobblestone"
       ]
-    ]
+    ],
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "torch_holy_831585",
@@ -33081,7 +33089,8 @@
         "obsidian",
         "obsidian"
       ]
-    ]
+    ],
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "netherrack_furnace_772861",
@@ -33120,7 +33129,8 @@
         "netherrack",
         "netherrack"
       ]
-    ]
+    ],
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "porridge_784440",
@@ -34402,14 +34412,14 @@
     "ingredients": [
       "string",
       "torch",
-      "wool_red"
+      "red_wool"
     ],
     "shaped": true,
     "pattern": [
       [
         "string",
         "torch",
-        "wool_red"
+        "red_wool"
       ],
       [
         null,
@@ -40824,14 +40834,14 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "wool_white"
+      "white_wool"
     ],
     "shaped": true,
     "pattern": [
       [
-        "wool_white",
-        "wool_white",
-        "wool_white"
+        "white_wool",
+        "white_wool",
+        "white_wool"
       ],
       [
         null,
@@ -41420,7 +41430,8 @@
         "cobblestone"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "furnace_core_obsidian_841456",
@@ -41452,7 +41463,8 @@
         "obsidian"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "furnace_core_netherrack_841457",
@@ -41484,7 +41496,8 @@
         "netherrack"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "obsidian_ingot_cool_mould_841458",

@@ -7860,7 +7860,8 @@
     },
     "img": "img/items/wool_black.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "wool_blue": {
     "name": {
@@ -7869,7 +7870,8 @@
     },
     "img": "img/items/wool_blue.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "wool_brown": {
     "name": {
@@ -7878,7 +7880,8 @@
     },
     "img": "img/items/wool_brown.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "wool_cyan": {
     "name": {
@@ -7887,7 +7890,8 @@
     },
     "img": "img/items/wool_cyan.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "wool_gray": {
     "name": {
@@ -7896,7 +7900,8 @@
     },
     "img": "img/items/wool_gray.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "wool_green": {
     "name": {
@@ -7905,7 +7910,8 @@
     },
     "img": "img/items/wool_green.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "wool_light_blue": {
     "name": {
@@ -7914,7 +7920,8 @@
     },
     "img": "img/items/wool_light_blue.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "wool_light_gray": {
     "name": {
@@ -7923,7 +7930,8 @@
     },
     "img": "img/items/wool_light_gray.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "wool_lime": {
     "name": {
@@ -7932,7 +7940,8 @@
     },
     "img": "img/items/wool_lime.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "wool_magenta": {
     "name": {
@@ -7941,7 +7950,8 @@
     },
     "img": "img/items/wool_magenta.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "wool_orange": {
     "name": {
@@ -7950,7 +7960,8 @@
     },
     "img": "img/items/wool_orange.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "wool_pink": {
     "name": {
@@ -7959,7 +7970,8 @@
     },
     "img": "img/items/wool_pink.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "wool_purple": {
     "name": {
@@ -7968,7 +7980,8 @@
     },
     "img": "img/items/wool_purple.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "wool_red": {
     "name": {
@@ -7977,7 +7990,8 @@
     },
     "img": "img/items/wool_red.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "wool_white": {
     "name": {
@@ -7986,7 +8000,8 @@
     },
     "img": "img/items/wool_white.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "wool_yellow": {
     "name": {
@@ -7995,7 +8010,8 @@
     },
     "img": "img/items/wool_yellow.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "world_marker": {
     "name": {
@@ -9451,7 +9467,8 @@
     },
     "img": "img/items/colling_liquid.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "obsidian_ingot_mould": {
     "name": {
