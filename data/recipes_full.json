@@ -5339,7 +5339,13 @@
     "ingredients": [
       "iron_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -5377,7 +5383,11 @@
       "iron_ingot",
       "iron_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -5415,7 +5425,11 @@
       "iron_ingot",
       "iron_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -5648,7 +5662,13 @@
     "ingredients": [
       "iron_ingot",
       "iron_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -5799,7 +5819,13 @@
     "ingredients": [
       "gold_ingot",
       "gold_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -5835,7 +5861,13 @@
     "ingredients": [
       "gold_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -5873,7 +5905,11 @@
       "gold_ingot",
       "gold_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -5911,7 +5947,11 @@
       "gold_ingot",
       "gold_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -6227,7 +6267,12 @@
       "iron_ingot",
       "iron_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -6264,7 +6309,12 @@
       "gold_ingot",
       "gold_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -13466,7 +13516,11 @@
       "copper_ingot",
       "copper_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -13504,7 +13558,11 @@
       "silver_ingot",
       "silver_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -13651,7 +13709,13 @@
     "ingredients": [
       "copper_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -13687,7 +13751,13 @@
     "ingredients": [
       "silver_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -13869,7 +13939,11 @@
       "copper_ingot",
       "copper_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -13907,7 +13981,11 @@
       "silver_ingot",
       "silver_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14020,7 +14098,12 @@
       "copper_ingot",
       "copper_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14057,7 +14140,12 @@
       "silver_ingot",
       "silver_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14171,7 +14259,9 @@
       "copper_ingot",
       "stick",
       "copper_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14211,7 +14301,9 @@
       "silver_ingot",
       "stick",
       "silver_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14251,7 +14343,9 @@
       "gold_ingot",
       "stick",
       "gold_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14291,7 +14385,9 @@
       "iron_ingot",
       "stick",
       "iron_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14410,7 +14506,10 @@
       "copper_ingot",
       "stick",
       "copper_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14449,7 +14548,10 @@
       "silver_ingot",
       "stick",
       "silver_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14488,7 +14590,10 @@
       "gold_ingot",
       "stick",
       "gold_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14527,7 +14632,10 @@
       "iron_ingot",
       "stick",
       "iron_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14644,7 +14752,10 @@
       "copper_ingot",
       "stick",
       "copper_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14683,7 +14794,10 @@
       "silver_ingot",
       "stick",
       "silver_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14722,7 +14836,10 @@
       "gold_ingot",
       "stick",
       "gold_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14761,7 +14878,10 @@
       "iron_ingot",
       "stick",
       "iron_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14877,7 +14997,11 @@
       "copper_ingot",
       "stick",
       "copper_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14915,7 +15039,11 @@
       "silver_ingot",
       "stick",
       "silver_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14953,7 +15081,11 @@
       "gold_ingot",
       "stick",
       "gold_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -14991,7 +15123,11 @@
       "iron_ingot",
       "stick",
       "iron_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -15351,7 +15487,13 @@
     "ingredients": [
       "copper_ingot",
       "copper_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -15387,7 +15529,13 @@
     "ingredients": [
       "silver_ingot",
       "silver_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -24294,7 +24442,13 @@
     "ingredients": [
       "hardstone_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -24368,7 +24522,11 @@
       "hardstone_ingot",
       "hardstone_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -25067,7 +25225,14 @@
     ],
     "ingredients": [
       "hardstone_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -30964,7 +31129,13 @@
     "ingredients": [
       "hardstone_ingot",
       "hardstone_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -31002,7 +31173,11 @@
       "hardstone_ingot",
       "hardstone_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -31042,7 +31217,9 @@
       "hardstone_ingot",
       "stick",
       "hardstone_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -31159,7 +31336,10 @@
       "hardstone_ingot",
       "hardstone_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -31196,7 +31376,10 @@
       "hardstone_ingot",
       "stick",
       "hardstone_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -31232,7 +31415,11 @@
       "hardstone_ingot",
       "stick",
       "hardstone_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -31298,7 +31485,13 @@
     "ingredients": [
       "hardstone_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -31448,7 +31641,13 @@
     "ingredients": [
       "silver_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -31482,7 +31681,13 @@
     "ingredients": [
       "gold_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -31934,7 +32139,14 @@
     ],
     "ingredients": [
       "copper_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -31969,7 +32181,14 @@
     ],
     "ingredients": [
       "iron_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -32004,7 +32223,14 @@
     ],
     "ingredients": [
       "gold_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -32039,7 +32265,14 @@
     ],
     "ingredients": [
       "silver_ingot",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -32270,7 +32503,13 @@
     "ingredients": [
       "copper_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -32306,7 +32545,13 @@
     "ingredients": [
       "iron_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
@@ -32375,7 +32620,12 @@
       "hardstone_ingot",
       "hardstone_ingot",
       "stick",
-      "stick"
+      "stick",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball",
+      "clay_ball"
     ],
     "shaped": true,
     "pattern": [
