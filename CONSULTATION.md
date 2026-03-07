@@ -110,7 +110,15 @@ A következő itemek valószínűleg a modban vannak, de nincsenek a wikiünkben
 - `oak_slab` és `oak_wood_slab_single` — mindkettő ugyanazt a képet mutatja. Alias?
 - `wood_slab_single` — ingredient több receptben (daylight_sensor, sign, barrel, grindstone), de nincs saját receptje. Vanilla MC item?
 
-## 9. Gyapjú duplikátumok (33 item)
+## 9. Blokk duplikátumok
+
+- `element_obsidian` és `elemental_obsidian` — mindkettő "Elemental Obsidian", ugyanaz a kép. `element_obsidian` használt (runestone receptekben ingrediens + saját recepta van). `elemental_obsidian` nincs semmilyen receptben. Törölhető?
+- `furnace_core_netherrack` (mcmod 32053) és `nether_furnace_core` (mcmod 1271–1272) — mindkettő "Netherrack Furnace Core" de KÜLÖNBÖZŐ kép. Két külön item?
+- Hasonlóan: `furnace_core_obsidian`/`obsidian_furnace_core` és `furnace_core_stone`/`stone_furnace_core`
+
+---
+
+## 10. Gyapjú duplikátumok (33 item)
 
 Két párhuzamos gyapjú ID-rendszer létezik:
 - **`wool_black`, `wool_blue`, ... `wool_yellow`** (16 szín) — ezek használatosak a legtöbb receptben (34–37 receptenként)
@@ -141,4 +149,7 @@ Megjegyzés: Van egy `wool` (sima fehér) és `white_wool_portal_stone` item is.
 - STATION_LABELS javítva RecipesHub.tsx-ben (`stone_workbench`/`hard_workbench` → `hardstone_workbench`/`ancient_metal_workbench`/`silver_workbench`)
 - 50 item kategória javítva: 11 nyers hús → `food`, 12 gyümölcs/növény → `food`, 3 bunkó/bot → `weapon`, 2 viselet → `armor`, 5 tároló → `tool`, 2 → `misc`, 14 elhelyezhető blokk → `block`
 - 11 item kategória javítva: pcb/battery/kbook/book/runestore → `misc`, fluid_tank/conveying_stone/way_stone/template_lantern/glow_stone_torch/pillager_flag → `block`
-- 8 barrel upgrade kategória javítva: `material` → `misc`
+- 8 barrel_upgrade → `misc`, bone_meal → `material`, bowl (üres) → `material`
+- sugar_water, bowl_water → `food`, tin_ingot → `ingot`
+- 36 bucket item (copper→adamantium, empty+filled) → `tool`
+- blast_furnace + 9 workbench → `station` kategória
