@@ -28,6 +28,7 @@ type ItemEntry = {
   name: { hu: string; en: string };
   img: string;
   tier: string | null;
+  removed_in?: string;
 };
 
 const recipes = recipesData as unknown as FullRecipe[];
@@ -351,12 +352,12 @@ const allSkills = [...new Set(recipes.flatMap(r => r.skills))].sort();
 const STATION_LABELS: Record<string, { hu: string; en: string }> = {
   hand:                    { hu: 'Kézzel',                    en: 'By hand' },
   flint_workbench:         { hu: 'Kovakő Munkaasztal',        en: 'Flint Workbench' },
-  stone_workbench:         { hu: 'Kőmag Munkaasztal',         en: 'Stone Workbench' },
   copper_workbench:        { hu: 'Réz Munkaasztal',           en: 'Copper Workbench' },
-  iron_workbench:          { hu: 'Vas Munkaasztal',           en: 'Iron Workbench' },
+  silver_workbench:        { hu: 'Ezüst Munkaasztal',         en: 'Silver Workbench' },
   gold_workbench:          { hu: 'Arany Munkaasztal',         en: 'Gold Workbench' },
-  hard_workbench:          { hu: 'Keménykő Munkaasztal',      en: 'Hardstone Workbench' },
-  ancient_workbench:       { hu: 'Ős Fém Munkaasztal',        en: 'Ancient Metal Workbench' },
+  iron_workbench:          { hu: 'Vas Munkaasztal',           en: 'Iron Workbench' },
+  hardstone_workbench:     { hu: 'Kőmag Munkaasztal',         en: 'Hardstone Workbench' },
+  ancient_metal_workbench: { hu: 'Ős Fém Munkaasztal',        en: 'Ancient Metal Workbench' },
   mithril_workbench:       { hu: 'Mithril Munkaasztal',       en: 'Mithril Workbench' },
   adamantium_workbench:    { hu: 'Adamantium Munkaasztal',    en: 'Adamantium Workbench' },
   stone_furnace:           { hu: 'Kő Kemence',                en: 'Stone Furnace' },
@@ -461,7 +462,14 @@ function RecipeListItem({ group, lang, onSelect }: {
     >
       <ItemIcon id={group.outputId} size={28} />
       <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ fontSize: '.85em', fontWeight: 500 }}>{getItemName(group.outputId, lang)}</div>
+        <div style={{ fontSize: '.85em', fontWeight: 500 }}>
+          {getItemName(group.outputId, lang)}
+          {items[group.outputId]?.removed_in && (
+            <span style={{ marginLeft: 5, fontSize: '.75em', color: '#ff6b6b', fontWeight: 600 }}>
+              ⚠️ v{items[group.outputId].removed_in}
+            </span>
+          )}
+        </div>
         <div style={{ fontSize: '.72em', color: 'var(--text2)' }}>{group.primaryRecipe.station}</div>
       </div>
       {group.recipes.length > 1 && (
@@ -562,6 +570,8 @@ function ItemDetailPanel({ itemId, lang, onClose, onSelectGroup }: {
               </div>
               <div style={{ minWidth: 0 }}>
                 <div style={{ fontSize: '.8em', color: 'var(--text2)', lineHeight: 1.7 }}>
+                  {(r as any).removed_version && <div style={{ color: '#ff6b6b', fontWeight: 600 }}>⚠️ v{(r as any).removed_version}</div>}
+                  {(r as any).added_version && <div style={{ color: '#6bcb77' }}>✅ v{(r as any).added_version}+</div>}
                   <div>🏭 {r.station}</div>
                   {!r.shaped && <div><span className="badge-shapeless">🔀 {lang === 'hu' ? 'Szabad' : 'Shapeless'}</span></div>}
                   {r.outputQty > 1 && <div>📦 ×{r.outputQty}</div>}
@@ -651,6 +661,11 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                   <div style={{ fontWeight: 700, fontSize: '1.18em', lineHeight: 1.25 }}>
                     {getItemName(group.outputId, lang)}
                   </div>
+                  {items[group.outputId]?.removed_in && (
+                    <div style={{ marginTop: 4, fontSize: '.8em', color: '#ff6b6b', fontWeight: 600, background: 'rgba(255,107,107,.12)', padding: '2px 8px', borderRadius: 4, display: 'inline-block' }}>
+                      ⚠️ {lang === 'hu' ? `Eltávolítva: v${items[group.outputId].removed_in}` : `Removed in v${items[group.outputId].removed_in}`}
+                    </div>
+                  )}
                   <div style={{ fontSize: '.72em', color: 'var(--text2)', marginTop: 4, fontFamily: 'monospace' }}>
                     {group.outputId}
                   </div>
@@ -724,6 +739,16 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
 
                     {/* Metadata — #5: rounded difficulty + tooltip */}
                     <div style={{ fontSize: '.83em', color: 'var(--text2)', lineHeight: 1.9, marginBottom: 14, padding: '8px 12px', background: 'var(--surface2)', borderRadius: 6 }}>
+                      {(r as any).removed_version && (
+                        <div style={{ color: '#ff6b6b', fontWeight: 600, marginBottom: 4 }}>
+                          ⚠️ {lang === 'hu' ? `Eltávolítva: v${(r as any).removed_version}` : `Removed in v${(r as any).removed_version}`}
+                        </div>
+                      )}
+                      {(r as any).added_version && (
+                        <div style={{ color: '#6bcb77', fontWeight: 600, marginBottom: 4 }}>
+                          ✅ {lang === 'hu' ? `Szükséges: v${(r as any).added_version}+` : `Requires v${(r as any).added_version}+`}
+                        </div>
+                      )}
                       <div>🏭 {r.station}</div>
                       <div>
                         ⚙️ {lang === 'hu' ? 'Nehézség' : 'Difficulty'}:{' '}
@@ -1266,7 +1291,7 @@ export default function RecipesHub() {
   const [stationFilter, setStationFilter] = useState('');
   const [skillFilter, setSkillFilter] = useState('');
   const [ingredientFilter, setIngredientFilter] = useState('');
-  const [typeFilter, setTypeFilter] = useState<'all' | 'shaped' | 'shapeless'>('all');
+  const [typeFilter, setTypeFilter] = useState<'all' | 'shaped' | 'shapeless' | 'removed' | 'current'>('all');
   const [selectedOutputId, setSelectedOutputId] = useState<string | null>(null);
   const [usedInModalItem, setUsedInModalItem] = useState<string | null>(null);
   const [fromSandbox, setFromSandbox] = useState(false);
@@ -1346,6 +1371,8 @@ export default function RecipesHub() {
       }
       if (typeFilter === 'shaped' && !g.hasShapedVariant) return false;
       if (typeFilter === 'shapeless' && !g.hasShapelessVariant) return false;
+      if (typeFilter === 'removed' && !items[g.outputId]?.removed_in) return false;
+      if (typeFilter === 'current' && items[g.outputId]?.removed_in) return false;
       return true;
     });
   }, [keyword, stationFilter, skillFilter, ingredientFilter, typeFilter, lang]);
@@ -1439,11 +1466,13 @@ export default function RecipesHub() {
                 </option>
               ))}
             </select>
-            <select value={typeFilter} onChange={e => setTypeFilter(e.target.value as 'all' | 'shaped' | 'shapeless')}
-              style={{ padding: '6px 10px', borderRadius: 6, border: '1px solid var(--surface2)', background: 'var(--bg)', color: 'var(--text)' }}>
+            <select value={typeFilter} onChange={e => setTypeFilter(e.target.value as 'all' | 'shaped' | 'shapeless' | 'removed' | 'current')}
+              style={{ padding: '6px 10px', borderRadius: 6, border: `1px solid ${typeFilter === 'removed' ? '#ff6b6b' : typeFilter === 'current' ? '#6bcb77' : 'var(--surface2)'}`, background: 'var(--bg)', color: typeFilter === 'removed' ? '#ff6b6b' : typeFilter === 'current' ? '#6bcb77' : 'var(--text)' }}>
               <option value="all">{lang === 'hu' ? '– Típus –' : '– Type –'}</option>
               <option value="shaped">{lang === 'hu' ? 'Elrendezett' : 'Shaped'}</option>
               <option value="shapeless">{lang === 'hu' ? 'Szabad' : 'Shapeless'}</option>
+              <option value="current">{lang === 'hu' ? '✅ Aktuális' : '✅ Current'}</option>
+              <option value="removed">{lang === 'hu' ? '⚠️ Eltávolított' : '⚠️ Removed'}</option>
             </select>
             {hasFilters && (
               <button onClick={clearFilters}

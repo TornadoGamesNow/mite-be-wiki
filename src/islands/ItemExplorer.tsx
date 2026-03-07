@@ -21,6 +21,7 @@ interface ItemData {
   img?: string;
   tier?: string;
   category?: string;
+  removed_in?: string;
 }
 
 // Convert items.json object to array
@@ -196,7 +197,7 @@ export default function ItemExplorer() {
       if (catFilter && item.category !== catFilter) return false;
       if (tierFilter && item.tier !== tierFilter) return false;
       const info = itemInfo[item.id];
-      if (!showRemoved && info?.removed) return false;
+      if (!showRemoved && (info?.removed || item.removed_in)) return false;
       if (q) {
         const nameMatch = item.name.hu.toLowerCase().includes(q)
           || item.name.en.toLowerCase().includes(q)
@@ -350,7 +351,7 @@ export default function ItemExplorer() {
           const tierMeta = item.tier ? TIER_META[item.tier] : null;
           const isSelected = selected?.id === item.id;
           const hasRecipe = itemsWithRecipe.has(item.id);
-          const isRemoved = itemInfo[item.id]?.removed;
+          const isRemoved = itemInfo[item.id]?.removed || !!item.removed_in;
           return (
             <div
               key={item.id}
@@ -449,13 +450,13 @@ export default function ItemExplorer() {
             {/* Body */}
             <div style={{ padding: '20px 24px', flex: 1 }}>
               {/* Removed warning */}
-              {itemInfo[selected.id]?.removed && (
+              {(itemInfo[selected.id]?.removed || selected.removed_in) && (
                 <div style={{ padding: '8px 12px', marginBottom: 16,
                   background: 'rgba(233,69,96,.1)', border: '1px solid rgba(233,69,96,.3)',
                   borderRadius: 6, fontSize: '.82em', color: 'var(--accent)' }}>
                   ⚠️ {lang === 'hu'
-                    ? `Ez az item el lett távolítva${itemInfo[selected.id].removed_v ? ` (v${itemInfo[selected.id].removed_v})` : ''}`
-                    : `This item was removed${itemInfo[selected.id].removed_v ? ` (v${itemInfo[selected.id].removed_v})` : ''}`}
+                    ? `Ez az item el lett távolítva${selected.removed_in ? ` (v${selected.removed_in})` : itemInfo[selected.id]?.removed_v ? ` (v${itemInfo[selected.id].removed_v})` : ''}`
+                    : `This item was removed${selected.removed_in ? ` (v${selected.removed_in})` : itemInfo[selected.id]?.removed_v ? ` (v${itemInfo[selected.id].removed_v})` : ''}`}
                 </div>
               )}
 
@@ -580,13 +581,19 @@ export default function ItemExplorer() {
                         const ingCounts: Record<string, number> = {};
                         for (const id of ings) { ingCounts[id] = (ingCounts[id] || 0) + 1; }
                         const station = STATION_LABELS[r.station] ?? r.station;
+                        const isRecipeRemoved = !!r.removed_version;
                         return (
-                          <div key={i} style={{ background: 'var(--surface)', border: '1px solid var(--surface2)',
-                            borderRadius: 6, padding: '8px 12px', fontSize: '.82em' }}>
+                          <div key={i} style={{ background: 'var(--surface)', border: `1px solid ${isRecipeRemoved ? 'rgba(233,69,96,.3)' : 'var(--surface2)'}`,
+                            borderRadius: 6, padding: '8px 12px', fontSize: '.82em', opacity: isRecipeRemoved ? 0.7 : 1 }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 6, flexWrap: 'wrap' }}>
                               <span style={{ fontWeight: 600, color: 'var(--text)' }}>
                                 {r.outputQty > 1 ? `×${r.outputQty} — ` : ''}{station}
                               </span>
+                              {isRecipeRemoved && (
+                                <span style={{ fontSize: '.8em', color: '#ff6b6b', fontWeight: 600 }}>
+                                  ⚠️ v{r.removed_version}
+                                </span>
+                              )}
                               {r.skills?.length > 0 && (
                                 <span style={{ fontSize: '.85em', color: 'var(--gold)', opacity: 0.8 }}>
                                   🎓 {r.skills.join(', ')}

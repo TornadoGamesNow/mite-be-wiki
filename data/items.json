@@ -633,7 +633,8 @@
     "img": "img/items/copper_hoe.png",
     "tier": "copper",
     "category": "tool",
-    "max_durability": 3200
+    "max_durability": 3200,
+    "removed_in": "0.6.0"
   },
   "copper_shovel": {
     "name": {
@@ -662,7 +663,8 @@
     "img": "img/items/copper_hatchet.png",
     "tier": "copper",
     "category": "tool",
-    "max_durability": 1600
+    "max_durability": 1600,
+    "removed_in": "0.6.0"
   },
   "copper_dagger": {
     "name": {
@@ -672,7 +674,8 @@
     "img": "img/items/copper_dagger.png",
     "tier": "copper",
     "category": "weapon",
-    "max_durability": 1600
+    "max_durability": 1600,
+    "removed_in": "0.6.0"
   },
   "copper_battle_axe": {
     "name": {
@@ -692,7 +695,8 @@
     "img": "img/items/copper_mattock.png",
     "tier": "copper",
     "category": "tool",
-    "max_durability": 6400
+    "max_durability": 6400,
+    "removed_in": "0.6.0"
   },
   "copper_scythe": {
     "name": {
@@ -702,7 +706,8 @@
     "img": "img/items/copper_scythe.png",
     "tier": "copper",
     "category": "tool",
-    "max_durability": 3200
+    "max_durability": 3200,
+    "removed_in": "0.6.0"
   },
   "copper_shears": {
     "name": {
@@ -712,7 +717,8 @@
     "img": "img/items/copper_shears.png",
     "tier": "copper",
     "category": "tool",
-    "max_durability": 3200
+    "max_durability": 3200,
+    "removed_in": "0.6.0"
   },
   "silver_sword": {
     "name": {
@@ -762,7 +768,8 @@
     "img": "img/items/gold_sword.png",
     "tier": "gold",
     "category": "weapon",
-    "max_durability": 3200
+    "max_durability": 3200,
+    "removed_in": "0.6.0"
   },
   "gold_pickaxe": {
     "name": {
@@ -772,7 +779,8 @@
     "img": "img/items/gold_pickaxe.png",
     "tier": "gold",
     "category": "tool",
-    "max_durability": 4800
+    "max_durability": 4800,
+    "removed_in": "0.6.0"
   },
   "gold_axe": {
     "name": {
@@ -782,7 +790,8 @@
     "img": "img/items/gold_axe.png",
     "tier": "gold",
     "category": "tool",
-    "max_durability": 4800
+    "max_durability": 4800,
+    "removed_in": "0.6.0"
   },
   "gold_war_hammer": {
     "name": {
@@ -921,7 +930,8 @@
     "img": "img/items/hardstone_sword.png",
     "tier": "hard",
     "category": "weapon",
-    "max_durability": 10400
+    "max_durability": 10400,
+    "removed_in": "0.6.0"
   },
   "hardstone_pickaxe": {
     "name": {
@@ -931,7 +941,8 @@
     "img": "img/items/hardstone_pickaxe.png",
     "tier": "hard",
     "category": "tool",
-    "max_durability": 15600
+    "max_durability": 15600,
+    "removed_in": "0.6.0"
   },
   "hardstone_war_hammer": {
     "name": {
@@ -941,7 +952,8 @@
     "img": "img/items/hardstone_war_hammer.png",
     "tier": "hard",
     "category": "weapon",
-    "max_durability": 26000
+    "max_durability": 26000,
+    "removed_in": "0.6.0"
   },
   "hardstone_hoe": {
     "name": {
@@ -951,7 +963,8 @@
     "img": "img/items/hardstone_hoe.png",
     "tier": "hard",
     "category": "tool",
-    "max_durability": 11200
+    "max_durability": 11200,
+    "removed_in": "0.6.0"
   },
   "hardstone_helmet": {
     "name": {
@@ -997,7 +1010,8 @@
     "img": "img/items/ancient_metal_sword.png",
     "tier": "ancient_metal",
     "category": "weapon",
-    "max_durability": 25600
+    "max_durability": 25600,
+    "removed_in": "0.5.5"
   },
   "ancient_metal_pickaxe": {
     "name": {
@@ -1007,7 +1021,8 @@
     "img": "img/items/ancient_metal_pickaxe.png",
     "tier": "ancient_metal",
     "category": "tool",
-    "max_durability": 44800
+    "max_durability": 44800,
+    "removed_in": "0.5.5"
   },
   "ancient_metal_axe": {
     "name": {
@@ -1017,7 +1032,8 @@
     "img": "img/items/ancient_metal_axe.png",
     "tier": "ancient_metal",
     "category": "tool",
-    "max_durability": 44800
+    "max_durability": 44800,
+    "removed_in": "0.5.5"
   },
   "ancient_metal_war_hammer": {
     "name": {
@@ -1037,7 +1053,8 @@
     "img": "img/items/mithril_sword.png",
     "tier": "mithril",
     "category": "weapon",
-    "max_durability": 76800
+    "max_durability": 76800,
+    "removed_in": "0.5.5"
   },
   "mithril_pickaxe": {
     "name": {
@@ -1047,7 +1064,8 @@
     "img": "img/items/mithril_pickaxe.png",
     "tier": "mithril",
     "category": "tool",
-    "max_durability": 115200
+    "max_durability": 115200,
+    "removed_in": "0.5.5"
   },
   "mithril_axe": {
     "name": {
@@ -1057,7 +1075,8 @@
     "img": "img/items/mithril_axe.png",
     "tier": "mithril",
     "category": "tool",
-    "max_durability": 115200
+    "max_durability": 115200,
+    "removed_in": "0.5.5"
   },
   "mithril_war_hammer": {
     "name": {
@@ -1077,7 +1096,8 @@
     "img": "img/items/adamantium_sword.png",
     "tier": "adamantium",
     "category": "weapon",
-    "max_durability": 204800
+    "max_durability": 204800,
+    "removed_in": "0.5.5"
   },
   "adamantium_pickaxe": {
     "name": {
@@ -1087,7 +1107,8 @@
     "img": "img/items/adamantium_pickaxe.png",
     "tier": "adamantium",
     "category": "tool",
-    "max_durability": 307200
+    "max_durability": 307200,
+    "removed_in": "0.5.5"
   },
   "adamantium_axe": {
     "name": {
@@ -1097,7 +1118,8 @@
     "img": "img/items/adamantium_axe.png",
     "tier": "adamantium",
     "category": "tool",
-    "max_durability": 307200
+    "max_durability": 307200,
+    "removed_in": "0.5.5"
   },
   "adamantium_war_hammer": {
     "name": {
@@ -1679,7 +1701,8 @@
     "img": "img/items/gold_battle_axe.png",
     "tier": "gold",
     "max_durability": 6400,
-    "category": "weapon"
+    "category": "weapon",
+    "removed_in": "0.6.0"
   },
   "mithril_battle_axe": {
     "name": {
@@ -1689,7 +1712,8 @@
     "img": "img/items/mithril_battle_axe.png",
     "tier": "mithril",
     "category": "weapon",
-    "max_durability": 153600
+    "max_durability": 153600,
+    "removed_in": "0.5.5"
   },
   "adamantium_battle_axe": {
     "name": {
@@ -1699,7 +1723,8 @@
     "img": "img/items/adamantium_battle_axe.png",
     "tier": "adamantium",
     "category": "weapon",
-    "max_durability": 409600
+    "max_durability": 409600,
+    "removed_in": "0.5.5"
   },
   "ancient_metal_battle_axe": {
     "name": {
@@ -1709,7 +1734,8 @@
     "img": "img/items/ancient_metal_battle_axe.png",
     "tier": "ancient_metal",
     "category": "weapon",
-    "max_durability": 51200
+    "max_durability": 51200,
+    "removed_in": "0.5.5"
   },
   "hardstone_battle_axe": {
     "name": {
@@ -1719,7 +1745,8 @@
     "img": "img/items/hardstone_battle_axe.png",
     "tier": "hard",
     "max_durability": 22800,
-    "category": "weapon"
+    "category": "weapon",
+    "removed_in": "0.6.0"
   },
   "silver_mattock": {
     "name": {
@@ -1729,7 +1756,8 @@
     "img": "img/items/silver_mattock.png",
     "tier": "silver",
     "max_durability": 6400,
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "0.6.0"
   },
   "gold_mattock": {
     "name": {
@@ -1739,7 +1767,8 @@
     "img": "img/items/gold_mattock.png",
     "tier": "gold",
     "max_durability": 6400,
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "0.6.0"
   },
   "mithril_mattock": {
     "name": {
@@ -1749,7 +1778,8 @@
     "img": "img/items/mithril_mattock.png",
     "tier": "mithril",
     "max_durability": 115200,
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "0.5.5"
   },
   "adamantium_mattock": {
     "name": {
@@ -1759,7 +1789,8 @@
     "img": "img/items/adamantium_mattock.png",
     "tier": "adamantium",
     "max_durability": 409600,
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "0.5.5"
   },
   "ancient_metal_mattock": {
     "name": {
@@ -1769,7 +1800,8 @@
     "img": "img/items/ancient_metal_mattock.png",
     "tier": "ancient_metal",
     "max_durability": 41600,
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "0.5.5"
   },
   "hardstone_mattock": {
     "name": {
@@ -1779,7 +1811,8 @@
     "img": "img/items/hardstone_mattock.png",
     "tier": "hard",
     "max_durability": 22800,
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "0.6.0"
   },
   "silver_scythe": {
     "name": {
@@ -1789,7 +1822,8 @@
     "img": "img/items/silver_scythe.png",
     "tier": "silver",
     "category": "tool",
-    "max_durability": 3200
+    "max_durability": 3200,
+    "removed_in": "0.6.0"
   },
   "gold_scythe": {
     "name": {
@@ -1799,7 +1833,8 @@
     "img": "img/items/gold_scythe.png",
     "tier": "gold",
     "category": "tool",
-    "max_durability": 3200
+    "max_durability": 3200,
+    "removed_in": "0.6.0"
   },
   "mithril_scythe": {
     "name": {
@@ -1809,7 +1844,8 @@
     "img": "img/items/mithril_scythe.png",
     "tier": "mithril",
     "max_durability": 64000,
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "0.5.5"
   },
   "adamantium_scythe": {
     "name": {
@@ -1819,7 +1855,8 @@
     "img": "img/items/adamantium_scythe.png",
     "tier": "adamantium",
     "max_durability": 204800,
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "0.5.5"
   },
   "ancient_metal_scythe": {
     "name": {
@@ -1829,7 +1866,8 @@
     "img": "img/items/ancient_metal_scythe.png",
     "tier": "ancient_metal",
     "max_durability": 22400,
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "0.5.5"
   },
   "hardstone_scythe": {
     "name": {
@@ -1839,7 +1877,8 @@
     "img": "img/items/hardstone_scythe.png",
     "tier": "hard",
     "category": "tool",
-    "max_durability": 16240
+    "max_durability": 16240,
+    "removed_in": "0.6.0"
   },
   "silver_shears": {
     "name": {
@@ -1899,7 +1938,8 @@
     "img": "img/items/hardstone_shears.png",
     "tier": "hard",
     "category": "tool",
-    "max_durability": 11200
+    "max_durability": 11200,
+    "removed_in": "0.6.0"
   },
   "silver_hatchet": {
     "name": {
@@ -1909,7 +1949,8 @@
     "img": "img/items/silver_hatchet.png",
     "tier": "silver",
     "category": "tool",
-    "max_durability": 1600
+    "max_durability": 1600,
+    "removed_in": "0.6.0"
   },
   "gold_hatchet": {
     "name": {
@@ -1919,7 +1960,8 @@
     "img": "img/items/gold_hatchet.png",
     "tier": "gold",
     "category": "tool",
-    "max_durability": 1600
+    "max_durability": 1600,
+    "removed_in": "0.6.0"
   },
   "mithril_hatchet": {
     "name": {
@@ -1929,7 +1971,8 @@
     "img": "img/items/mithril_hatchet.png",
     "tier": "mithril",
     "category": "tool",
-    "max_durability": 38400
+    "max_durability": 38400,
+    "removed_in": "0.5.5"
   },
   "adamantium_hatchet": {
     "name": {
@@ -1939,7 +1982,8 @@
     "img": "img/items/adamantium_hatchet.png",
     "tier": "adamantium",
     "category": "tool",
-    "max_durability": 102400
+    "max_durability": 102400,
+    "removed_in": "0.5.5"
   },
   "ancient_metal_hatchet": {
     "name": {
@@ -1949,7 +1993,8 @@
     "img": "img/items/ancient_metal_hatchet.png",
     "tier": "ancient_metal",
     "category": "tool",
-    "max_durability": 12800
+    "max_durability": 12800,
+    "removed_in": "0.5.5"
   },
   "hardstone_hatchet": {
     "name": {
@@ -1959,7 +2004,8 @@
     "img": "img/items/hardstone_hatchet.png",
     "tier": "hard",
     "category": "tool",
-    "max_durability": 10000
+    "max_durability": 10000,
+    "removed_in": "0.6.0"
   },
   "silver_hoe": {
     "name": {
@@ -1969,7 +2015,8 @@
     "img": "img/items/silver_hoe.png",
     "tier": "silver",
     "max_durability": 3200,
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "0.6.0"
   },
   "gold_hoe": {
     "name": {
@@ -1979,7 +2026,8 @@
     "img": "img/items/gold_hoe.png",
     "tier": "gold",
     "max_durability": 3200,
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "0.6.0"
   },
   "mithril_hoe": {
     "name": {
@@ -1989,7 +2037,8 @@
     "img": "img/items/mithril_hoe.png",
     "tier": "mithril",
     "max_durability": 64000,
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "0.5.5"
   },
   "adamantium_hoe": {
     "name": {
@@ -1999,7 +2048,8 @@
     "img": "img/items/adamantium_hoe.png",
     "tier": "adamantium",
     "max_durability": 204800,
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "0.5.5"
   },
   "ancient_metal_hoe": {
     "name": {
@@ -2009,7 +2059,8 @@
     "img": "img/items/ancient_metal_hoe.png",
     "tier": "ancient_metal",
     "max_durability": 22400,
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "0.5.5"
   },
   "ancient_metal_shears": {
     "name": {
@@ -2394,7 +2445,8 @@
     "img": "img/items/adamantium_shovel.png",
     "tier": "adamantium",
     "category": "tool",
-    "max_durability": 102400
+    "max_durability": 102400,
+    "removed_in": "0.5.5"
   },
   "advanced_enchantment_table": {
     "name": {
@@ -2430,7 +2482,8 @@
     },
     "img": "img/items/ancient_metal_barrel_upgrade.png",
     "tier": "ancient_metal",
-    "category": "misc"
+    "category": "misc",
+    "removed_in": "0.6.0"
   },
   "ancient_metal_block": {
     "name": {
@@ -2530,7 +2583,8 @@
     },
     "img": "img/items/ancient_metal_chest_upgrade.png",
     "tier": "ancient_metal",
-    "category": "misc"
+    "category": "misc",
+    "removed_in": "0.6.0"
   },
   "ancient_metal_coin": {
     "name": {
@@ -2639,7 +2693,8 @@
     "img": "img/items/ancient_metal_shovel.png",
     "tier": "ancient_metal",
     "category": "tool",
-    "max_durability": 8400
+    "max_durability": 8400,
+    "removed_in": "0.5.5"
   },
   "andesite": {
     "name": {
@@ -3307,7 +3362,8 @@
     },
     "img": "img/items/chicken_soup.png",
     "tier": null,
-    "category": "food"
+    "category": "food",
+    "removed_in": "0.5.6"
   },
   "chiseled_quartz_block": {
     "name": {
@@ -4455,7 +4511,8 @@
     "img": "img/items/gold_shovel.png",
     "tier": "gold",
     "category": "tool",
-    "max_durability": 1600
+    "max_durability": 1600,
+    "removed_in": "0.6.0"
   },
   "golden_apple": {
     "name": {
@@ -4609,7 +4666,8 @@
     "img": "img/items/hard_stone_axe.png",
     "tier": "hard",
     "category": "weapon",
-    "max_durability": 15600
+    "max_durability": 15600,
+    "removed_in": "0.6.0"
   },
   "hard_stone_battle_axe": {
     "name": {
@@ -4673,7 +4731,8 @@
     "img": "img/items/hard_stone_dagger.png",
     "tier": "hard",
     "max_durability": 9200,
-    "category": "weapon"
+    "category": "weapon",
+    "removed_in": "0.6.0"
   },
   "hard_stone_flint_and_steel": {
     "name": {
@@ -4782,7 +4841,8 @@
     "img": "img/items/hard_stone_shovel.png",
     "tier": "hard",
     "category": "tool",
-    "max_durability": 5800
+    "max_durability": 5800,
+    "removed_in": "0.6.0"
   },
   "hard_stone_sword": {
     "name": {
@@ -5251,7 +5311,7 @@
     },
     "img": "img/items/leather_cap.png",
     "tier": null,
-    "category": "tool"
+    "category": "armor"
   },
   "leather_pants": {
     "name": {
@@ -5260,7 +5320,7 @@
     },
     "img": "img/items/leather_pants.png",
     "tier": null,
-    "category": "tool"
+    "category": "armor"
   },
   "leather_sieve_mesh": {
     "name": {
@@ -5278,7 +5338,7 @@
     },
     "img": "img/items/leather_tunic.png",
     "tier": null,
-    "category": "tool"
+    "category": "armor"
   },
   "lever": {
     "name": {
@@ -5449,7 +5509,8 @@
     },
     "img": "img/items/lotus_seed_soup.png",
     "tier": null,
-    "category": "food"
+    "category": "food",
+    "removed_in": "0.5.6"
   },
   "magenta_bed": {
     "name": {
@@ -5847,7 +5908,8 @@
     "img": "img/items/mithril_shovel.png",
     "tier": "mithril",
     "category": "tool",
-    "max_durability": 33600
+    "max_durability": 33600,
+    "removed_in": "0.5.5"
   },
   "mossy_cobblestone": {
     "name": {
@@ -6381,7 +6443,8 @@
     },
     "img": "img/items/pumpkin_soup.png",
     "tier": null,
-    "category": "food"
+    "category": "food",
+    "removed_in": "0.5.6"
   },
   "purple_bed": {
     "name": {
@@ -7707,7 +7770,8 @@
     },
     "img": "img/items/wheat_soup.png",
     "tier": null,
-    "category": "food"
+    "category": "food",
+    "removed_in": "0.5.6"
   },
   "white_stained_clay_colored": {
     "name": {
@@ -8683,7 +8747,8 @@
     },
     "img": "img/items/copper_chest_upgrade.png",
     "tier": "copper",
-    "category": "material"
+    "category": "material",
+    "removed_in": "0.9.0"
   },
   "silver_chest_upgrade": {
     "name": {
@@ -8692,7 +8757,8 @@
     },
     "img": "img/items/silver_chest_upgrade.png",
     "tier": "silver",
-    "category": "material"
+    "category": "material",
+    "removed_in": "0.9.0"
   },
   "hard_chest_upgrade": {
     "name": {
@@ -8701,7 +8767,8 @@
     },
     "img": "img/items/hard_chest_upgrade.png",
     "tier": "hard",
-    "category": "material"
+    "category": "material",
+    "removed_in": "0.9.0"
   },
   "iron_chest_upgrade": {
     "name": {
@@ -8710,7 +8777,8 @@
     },
     "img": "img/items/iron_chest_upgrade.png",
     "tier": "iron",
-    "category": "material"
+    "category": "material",
+    "removed_in": "0.9.0"
   },
   "gold_chest_upgrade": {
     "name": {
@@ -8719,7 +8787,8 @@
     },
     "img": "img/items/gold_chest_upgrade.png",
     "tier": "gold",
-    "category": "material"
+    "category": "material",
+    "removed_in": "0.9.0"
   },
   "mithril_chest_upgrade": {
     "name": {
@@ -8728,7 +8797,8 @@
     },
     "img": "img/items/mithril_chest_upgrade.png",
     "tier": "mithril",
-    "category": "material"
+    "category": "material",
+    "removed_in": "0.9.0"
   },
   "adamantium_chest_upgrade": {
     "name": {
@@ -8737,7 +8807,8 @@
     },
     "img": "img/items/adamantium_chest_upgrade.png",
     "tier": "adamantium",
-    "category": "material"
+    "category": "material",
+    "removed_in": "0.9.0"
   },
   "barrel_copper_upgrade": {
     "name": {
@@ -8899,7 +8970,8 @@
     },
     "img": "img/items/sand_stone.png",
     "tier": "stone",
-    "category": "material"
+    "category": "material",
+    "removed_in": "0.6.0"
   },
   "torch_off": {
     "name": {
@@ -9115,7 +9187,7 @@
     },
     "img": "img/items/bad_duck_meat.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "duck_head": {
     "name": {
@@ -9142,7 +9214,7 @@
     },
     "img": "img/items/bad_duck_head_cooked.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "squid_meat": {
     "name": {
@@ -9169,7 +9241,7 @@
     },
     "img": "img/items/bad_cooked_squid_meat.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "bad_fish_cooked": {
     "name": {
@@ -9178,7 +9250,7 @@
     },
     "img": "img/items/bad_fish_cooked.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "bad_cooked_meat": {
     "name": {
@@ -9187,7 +9259,7 @@
     },
     "img": "img/items/bad_cooked_meat.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "banana": {
     "name": {
@@ -9232,7 +9304,7 @@
     },
     "img": "img/items/bad_mutton_cooked.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "cooked_mutton": {
     "name": {
@@ -9259,7 +9331,8 @@
     },
     "img": "img/items/porridge.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "0.5.6"
   },
   "cereal": {
     "name": {
@@ -9277,7 +9350,8 @@
     },
     "img": "img/items/beef_stew.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "0.5.6"
   },
   "sorbet": {
     "name": {
@@ -9313,7 +9387,8 @@
     },
     "img": "img/items/return_scroll.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "0.5.8"
   },
   "bound_scroll": {
     "name": {
@@ -9322,7 +9397,8 @@
     },
     "img": "img/items/bound_scroll.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "0.5.8"
   },
   "warp_scroll": {
     "name": {
@@ -9331,7 +9407,8 @@
     },
     "img": "img/items/warp_scroll.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "0.5.8"
   },
   "antique_atlas": {
     "name": {
@@ -9363,7 +9440,7 @@
   "colling_liquid": {
     "name": {
       "hu": "Hűtőfolyadék",
-      "en": "Colling Liquid"
+      "en": "Cooling Liquid (Basic)"
     },
     "img": "img/items/colling_liquid.png",
     "tier": null,
@@ -9819,7 +9896,8 @@
     "img": "img/items/silver_dagger.png",
     "tier": "silver",
     "category": "material",
-    "max_durability": 1600
+    "max_durability": 1600,
+    "removed_in": "0.6.0"
   },
   "gold_dagger": {
     "name": {
@@ -9829,7 +9907,8 @@
     "img": "img/items/gold_dagger.png",
     "tier": "gold",
     "category": "material",
-    "max_durability": 1600
+    "max_durability": 1600,
+    "removed_in": "0.6.0"
   },
   "rusted_iron_dagger": {
     "name": {
@@ -9849,7 +9928,8 @@
     "img": "img/items/ancient_metal_dagger.png",
     "tier": "ancient_metal",
     "category": "material",
-    "max_durability": 12800
+    "max_durability": 12800,
+    "removed_in": "0.5.5"
   },
   "mithril_dagger": {
     "name": {
@@ -9859,7 +9939,8 @@
     "img": "img/items/mithril_dagger.png",
     "tier": "mithril",
     "category": "material",
-    "max_durability": 38400
+    "max_durability": 38400,
+    "removed_in": "0.5.5"
   },
   "adamantium_dagger": {
     "name": {
@@ -9869,7 +9950,8 @@
     "img": "img/items/adamantium_dagger.png",
     "tier": "adamantium",
     "category": "material",
-    "max_durability": 102400
+    "max_durability": 102400,
+    "removed_in": "0.5.5"
   },
   "high_carbon_steel_dagger": {
     "name": {
@@ -9897,7 +9979,7 @@
     },
     "img": "img/armor/miner_helmet.png",
     "tier": null,
-    "category": "material",
+    "category": "armor",
     "max_durability": 150
   },
   "bamboo_helmet": {
@@ -9907,7 +9989,7 @@
     },
     "img": "img/armor/bamboo_helmet.png",
     "tier": null,
-    "category": "material",
+    "category": "armor",
     "max_durability": 100
   },
   "shield": {
@@ -9918,7 +10000,8 @@
     "img": "img/items/shield.png",
     "tier": null,
     "category": "material",
-    "max_durability": 400
+    "max_durability": 400,
+    "removed_in": "0.5.6"
   },
   "nether_quartz_shard": {
     "name": {
@@ -9954,7 +10037,8 @@
     },
     "img": "img/items/bowl_vegetable_soup.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "0.5.6"
   },
   "bronze_helmet": {
     "name": {
