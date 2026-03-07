@@ -30,6 +30,7 @@ function adaptFullRecipe(r: any, labelFallback?: { hu: string; en: string }) {
     output: r.output,
     outputCount: r.outputQty > 1 ? r.outputQty : undefined,
     label: r.label || labelFallback || { hu: r.output, en: r.output },
+    removedVersion: r.removed_version || undefined,
   };
 }
 
@@ -48,9 +49,10 @@ if (recipeFullId && !recipe) {
 
 if (recipeOutput && !recipe) {
   const allRecipes = (await import('../../data/recipes_full.json')).default as any[];
-  const r = allRecipes.find((r: any) =>
-    r.output === recipeOutput && !r.removed_version && r.shaped && r.pattern
-  );
+  // Prefer active recipes; fall back to any shaped recipe with pattern
+  const r =
+    allRecipes.find((r: any) => r.output === recipeOutput && !r.removed_version && r.shaped && r.pattern) ??
+    allRecipes.find((r: any) => r.output === recipeOutput && r.shaped && r.pattern);
   recipe = adaptFullRecipe(r);
 }
 
@@ -84,7 +86,13 @@ function resolveSlot(slot: SlotValue) {
 ---
 
 {recipe && (
-<div class="craft-table">
+<div class={`craft-table${recipe.removedVersion ? ' recipe-removed' : ''}`}>
+  {recipe.removedVersion && (
+    <div class="recipe-removed-notice">
+      <span data-lang="hu">⚠️ Régi recept — eltávolítva v{recipe.removedVersion}-ban</span>
+      <span data-lang="en">⚠️ Old recipe — removed in v{recipe.removedVersion}</span>
+    </div>
+  )}
   <div class={`craft-grid ${gridClass}`}>
     {recipe.pattern.flat().map((slot: SlotValue) => {
       const item = resolveSlot(slot);

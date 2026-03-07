@@ -127,6 +127,8 @@ tr:hover td { background: rgba(240,192,64,.05); }
 .craft-output { display: grid; grid-template-columns: 44px; grid-template-rows: 44px; }
 .craft-output .craft-slot { border-color: #f0c040 #886600 #886600 #f0c040; background: #6b6b3b; }
 .craft-label { width: 100%; font-size: .78em; color: var(--gold); margin-top: 5px; text-align: center; font-weight: 600; min-height: 1.2em; line-height: 1.2; word-break: break-word; }
+.recipe-removed-notice { flex: 0 0 100%; font-size: .7em; color: #ffaa44; background: rgba(255,150,0,.1); border: 1px solid rgba(255,150,0,.3); border-radius: 3px; padding: 2px 6px; text-align: center; margin-bottom: 6px; }
+.craft-table.recipe-removed { opacity: .8; border-color: #6a4a2a; }
 
 .craft-section { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0; padding: 16px 12px; background: linear-gradient(135deg, rgba(255,255,255,.02), rgba(255,255,255,.01)); border-radius: var(--radius); border: 1px solid rgba(255,255,255,.05); position: relative; }
 
