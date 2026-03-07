@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import TopNav from '../components/TopNav.astro';
 import Sidebar from '../components/Sidebar.astro';
 import '../styles/global.css';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const sidebarGroups = {
   hu: [
@@ -85,7 +86,7 @@ const sidebarGroups = {
 </div>
 <div class="faq-item">
 <h4>❓ Miért bányássza ki a zombi a falamat?</h4>
-<p>Bizonyos zombik <strong>csákányt hordanak</strong> és képesek kibontani a kőblokkokat. Mélyebbre ásás, kanyargós bejárat és <strong>Vas Ajtó</strong> segít ellene. Lásd a Biome útmutató szekciót.</p>
+<p>Bizonyos zombik <strong>csákányt hordanak</strong> és képesek kibontani a kőblokkokat. Mélyebbre ásás, kanyargós bejárat és <strong>Vas Ajtó</strong> segít ellene. Lásd a <a href={`${base}/biomes/`}>Biome útmutatót</a>.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Mikor mehetek a Netherbe?</h4>
@@ -120,22 +121,30 @@ const sidebarGroups = {
 <p>A Vérhold <strong>32 naponként</strong> ismétlődő apokaliptikus éjszaka. Minden szörny <strong>Erő I</strong> buffot kap, nappal a pókok és creeperek megvadulnak. <strong>6 evolúciós fázis</strong> van (32, 64, 128, 160, 192, 224. nap) — minden fázis erősebb. Y100 felett Hányinger+Gyengeség, Y50 alatt Égés. Túlélésért <strong>permanens jutalom</strong> jár (+10% bányász sebesség VAGY +1 támadás VAGY -10% szomjúság/éhség). Részletek a Referencia oldalon!</p>
 </div>
 <div class="faq-item">
+<h4>❓ Mi az a Szita (Sieve) és mire jó?</h4>
+<p>A Szita (Sieve) az egyik legfontosabb forrása az érceknek az korai játékban. Kavicsot tegyél a szitára, és kattints rá ismételten — különböző anyagok esnek ki: <strong>Kova, Ón, Csont</strong> töredékek és egyéb ritka tárgyak. A jobb anyagból készített szita (Réz, Vas) jobb drop rátával dolgozik. A szita recepthez <strong>Barkácsolás</strong> képesség szükséges. Részletek a <a href={`${base}/recipes/?skill=tinkering`}>Barkácsolás recepteknél</a>.</p>
+</div>
+<div class="faq-item">
+<h4>❓ Hogyan szerzek Tudáskönyveket (Knowledge Books)?</h4>
+<p>Tudáskönyveket az alábbi módokon szerezhetsz: <strong>Barlang romokban</strong> (földalatti random romokban jutalom ládák), <strong>Falvakban</strong> (kereskedőktől vásárolva vagy loot ládákból), <strong>Speciális ellenfélektől</strong> (pl. Csontváz Ura, Vérhold jutalmakból), és <strong>Vérhold végigjátszásakor</strong> jutalom ládából. Felesleges Tudáskönyvet sima Könyvvé alakíthatsz (és XP-t kapsz érte)!</p>
+</div>
+<div class="faq-item">
+<h4>❓ Mi a különbség Simple és Hardcore mód között?</h4>
+<p>A fő különbségek:</p>
+<ul style="margin:4px 0">
+  <li><strong>Fáklyák:</strong> Hardcore-ban 3 nap után kialszanak; Simple-ben nem alszanak ki (de eső eloltja mindkettőben)</li>
+  <li><strong>Mob spawning:</strong> Hardcore-ban agresszívabb, gyorsabb és több mob</li>
+  <li><strong>Halál:</strong> Hardcore-ban nem spawnolsz vissza automatikusan (szükséges az Ágy)</li>
+  <li><strong>Hőmérséklet:</strong> Hardcore-ban gyorsabban változik</li>
+</ul>
+<p>Kezdőknek <strong>Simple mód ajánlott</strong>. Átváltani csak new game-mel lehet.</p>
+</div>
+<div class="faq-item">
 <h4>❓ Hogyan jutok az End dimenzióba?</h4>
 <p>Az End portál a <strong>Nether dimenzióban</strong> található <strong>Mag Blokkok (Core Blocks)</strong> elpusztításával nyílik meg. Ehhez <strong>Mag Pusztítót (Core Destroyer)</strong> kell készítened. A Mag Blokk elpusztításakor automatikusan megjelenik az End portál. Ez az egyetlen belépési pont az Ender-sárkány elleni végső harchoz!</p>
 </div>
-<div class="faq-item">
-<h4>❓ Melyik foglalkozást válasszam?</h4>
-<p>A 3 legkedveltebb választás:</p>
-<ul style="margin:4px 0">
-  <li><strong>Bányász (Miner):</strong> Érc blokkok közvetlen olvasztása — óriási időmegtakarítás! Nélküle szitálás + öntőforma kell.</li>
-  <li><strong>Kovács (Blacksmith):</strong> Fém fegyverek és páncélok készítése — nélküle nem tudsz fém felszerelést craftolni!</li>
-  <li><strong>Harcos (Fighter):</strong> Erősebb közelharcra fókuszál — jobb sebzés és túlélőképesség.</li>
-</ul>
-<p>⚠️ <strong>Csak 1 foglalkozást választhatsz és nem változtatható!</strong> Kezdőknek Bányász vagy Kovács a legbiztonságosabb.</p>
-</div>
 </div>
 
-<!-- ===== KÉPESSÉGEK ===== -->
 </div>
 
 <div data-lang="en">
@@ -180,7 +189,7 @@ const sidebarGroups = {
 </div>
 <div class="faq-item">
 <h4>❓ Why is a zombie digging through my wall?</h4>
-<p>Some zombies <strong>carry pickaxes</strong> and can mine through stone blocks. Digging deeper, a zigzag entrance, and an <strong>Iron Door</strong> all help. See the Biome Guide section.</p>
+<p>Some zombies <strong>carry pickaxes</strong> and can mine through stone blocks. Digging deeper, a zigzag entrance, and an <strong>Iron Door</strong> all help. See the <a href={`${base}/biomes/`}>Biome Guide</a>.</p>
 </div>
 <div class="faq-item">
 <h4>❓ When can I go to the Nether?</h4>
@@ -215,6 +224,25 @@ const sidebarGroups = {
 <p>The Blood Moon is an apocalyptic night that recurs <strong>every 32 days</strong>. All mobs get <strong>Strength I</strong> buff, daytime spiders and creepers go berserk. There are <strong>6 evolution phases</strong> (days 32, 64, 128, 160, 192, 224) — each phase is harder. Above Y100: Nausea+Weakness. Below Y50: Burning. Surviving earns a <strong>permanent reward</strong> (+10% mining speed OR +1 attack OR -10% thirst/hunger). Check the Reference page for details!</p>
 </div>
 <div class="faq-item">
+<h4>❓ What is the Sieve and what is it for?</h4>
+<p>The Sieve is one of the most important early-game ore sources. Place gravel on the sieve and click repeatedly — various materials drop out: <strong>Flint, Tin, Bone</strong> fragments, and other rare items. Better material sieves (Copper, Iron) have better drop rates. Crafting a sieve requires the <strong>Tinkering</strong> skill. See <a href={`${base}/recipes/?skill=tinkering`}>Tinkering recipes</a> for details.</p>
+</div>
+<div class="faq-item">
+<h4>❓ How do I get Knowledge Books?</h4>
+<p>Knowledge Books can be obtained in the following ways: <strong>Cave ruins</strong> (loot chests in randomly generated underground ruins), <strong>Villages</strong> (purchased from traders or from loot chests), <strong>Special enemies</strong> (e.g. Skeleton Lord, Blood Moon rewards), and <strong>Blood Moon completion</strong> reward chests. Spare Knowledge Books can be crafted into regular Books for XP!</p>
+</div>
+<div class="faq-item">
+<h4>❓ What's the difference between Simple and Hardcore mode?</h4>
+<p>Key differences:</p>
+<ul style="margin:4px 0">
+  <li><strong>Torches:</strong> In Hardcore they burn out after 3 days; in Simple they don't (but rain extinguishes both)</li>
+  <li><strong>Mob spawning:</strong> More aggressive, faster, more mobs in Hardcore</li>
+  <li><strong>Death:</strong> In Hardcore you don't auto-respawn (a Bed is required)</li>
+  <li><strong>Temperature:</strong> Changes faster in Hardcore</li>
+</ul>
+<p><strong>Simple mode is recommended for beginners.</strong> Switching modes requires a new game.</p>
+</div>
+<div class="faq-item">
 <h4>❓ How do I reach the End dimension?</h4>
 <p>The End portal opens by destroying <strong>Core Blocks</strong> found in the <strong>Nether dimension</strong>. You need to craft a <strong>Core Destroyer</strong> for this. When a Core Block is destroyed, the End portal automatically appears. This is the only entry point for the final battle against the Ender Dragon!</p>
 </div>
@@ -230,7 +258,6 @@ const sidebarGroups = {
 </div>
 </div>
 
-<!-- ===== SKILLS ===== -->
 </div>
 
 <div data-lang="hu" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">

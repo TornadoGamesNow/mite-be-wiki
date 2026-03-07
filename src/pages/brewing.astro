@@ -66,9 +66,11 @@ const sidebarGroups = {
 <!-- ═══════════════════════════════════════════════ HUNGARIAN ═══ -->
 <div data-lang="hu">
 <h2 id="brewing-overview">🧪 Brewing — Bájitalfőzés</h2>
-<p>A MITE: Break Everything bájitalrendszere a vanilla Minecraft alapjaira épül, de számos egyedi effekttel és az Üst mechanikával egészül ki. A bájitalfőzéshez <strong>Brewer foglalkozás</strong> kötelező.</p>
+<p>A MITE: Break Everything bájitalrendszere a vanilla Minecraft alapjaira épül, de számos egyedi effekttel és az Üst mechanikával egészül ki.</p>
 
-<div class="info">⚗️ <strong>Gyors áttekintés:</strong> Főzőállvány + Brewer foglalkozás → bájitalok. Üst (Cauldron) → speciális receptek (Folyékony Arany, Higany, Ősi Fém Hátizsák). Sajt = Brewer + Keménykő Tejesvödör.</div>
+<div class="warning-box">⚠️ <strong>A Brewer foglalkozás jelenleg nincs aktiválva a v0.9.0-ban.</strong> A bájitalfőzés és a sajtkészítés <strong>foglalkozás nélkül is elérhető</strong> az aktuális verzióban — a Brewer foglalkozás rendszer érdekességképp van dokumentálva.</div>
+
+<div class="info">⚗️ <strong>Gyors áttekintés:</strong> Főzőállvány → bájitalok (foglalkozás nélkül is). Üst (Cauldron) → speciális receptek (Folyékony Arany, Higany, Ősi Fém Hátizsák). Sajt = bármilyen fém tejesvödör.</div>
 
 <!-- ─── Brewing Stand ─── -->
 <h2 id="brewing-stand">Főzőállvány</h2>
@@ -141,7 +143,7 @@ const sidebarGroups = {
 <h2 id="cauldron">Üst (Cauldron) Mechanikák</h2>
 <p>Az Üst nem csak vizet tárol — egyedi MITE receptek forrása, amelyek normál Főzőállványon NEM készíthetők el.</p>
 
-<div class="info">ℹ️ Az Üst standard Minecraft recepttel craftolandó: 7× Vas Rúd, U alakban (3×3 rács).</div>
+<div class="info">ℹ️ Az Üst <strong>Vas Munkaasztalon</strong> craftolható (blacksmithing skill szükséges): 7× Vas Rúd, U alakban (3×3 rács).</div>
 
 <table>
   <tr><th>Recept neve</th><th>Folyamat</th><th>Eredmény</th><th>Felhasználás</th></tr>
@@ -275,31 +277,34 @@ const sidebarGroups = {
 
 <!-- ─── Cheese ─── -->
 <h2 id="cheese">Sajt Készítés</h2>
-<p><strong>Brewer foglalkozás</strong> szükséges. Csak <strong>Keménykő Tejesvödör</strong> használható — réz vagy vas vödör nem működik! A Keménykő Tehén (hardstone cow) megfejéséhez Keménykő Vödör kell.</p>
+<p><strong>Brewer skill</strong> szükséges. Bármilyen anyagú tejesvödör használható — Keménykő, Réz, Ezüst, Arany, Vas, Ős Fém, Mithril, Adamantium. A vödör szintje határozza meg, melyik munkaasztalon craftolható a sajt.</p>
 
-<div class="warning">⚠️ A Tehén csak Keménykő (<em>Hardstone</em>) vödörrel fejhető meg MITE-ben — a szokásos vas vödör nem funkciónal megfejésre!</div>
+<div class="info">ℹ️ A tehenek fejéséhez az adott anyagú vödör kell (pl. Keménykő Vödör a Keménykő Tehénhez). A receptek <strong>6400 nehézség/db</strong> értékkel dolgoznak, függetlenül a vödör anyagától.</div>
 
 <table>
-  <tr><th>Hozzávaló</th><th>Eredmény</th><th>Nehézség/db</th><th>Hatékonyság</th></tr>
-  <tr><td>1× Keménykő Tejesvödör</td><td>1× Sajt</td><td style="color:var(--accent)">6 400</td><td>Alap (1×)</td></tr>
-  <tr><td>2× Keménykő Tejesvödör</td><td>2× Sajt</td><td style="color:var(--gold)">3 200/db</td><td>2× hatékonyabb</td></tr>
-  <tr><td>3× Keménykő Tejesvödör</td><td>3× Sajt</td><td style="color:var(--gold)">2 133/db</td><td>3× hatékonyabb</td></tr>
-  <tr><td>4× Keménykő Tejesvödör</td><td>4× Sajt</td><td style="color:var(--green)">1 600/db</td><td>4× hatékonyabb</td></tr>
-  <tr><td>5× Keménykő Tejesvödör</td><td>5× Sajt</td><td style="color:var(--green)">1 280/db</td><td style="color:var(--green)">5× hatékonyabb (MAX)</td></tr>
+  <tr><th>Vödörszám</th><th>Eredmény</th><th>Nehézség/db</th><th>Hatékonyság</th></tr>
+  <tr><td>1× vödör</td><td>1× Sajt</td><td style="color:var(--accent)">6 400</td><td>Alap (1×)</td></tr>
+  <tr><td>2× vödör</td><td>2× Sajt</td><td style="color:var(--gold)">3 200/db</td><td>2× hatékonyabb</td></tr>
+  <tr><td>3× vödör</td><td>3× Sajt</td><td style="color:var(--gold)">2 133/db</td><td>3× hatékonyabb</td></tr>
+  <tr><td>4× vödör</td><td>4× Sajt</td><td style="color:var(--green)">1 600/db</td><td>4× hatékonyabb</td></tr>
+  <tr><td>5× vödör</td><td>5× Sajt</td><td style="color:var(--green)">1 280/db</td><td>5× hatékonyabb</td></tr>
+  <tr><td>9× vödör</td><td>9× Sajt</td><td style="color:var(--green)">711/db</td><td style="color:var(--green)">9× hatékonyabb (MAX)</td></tr>
 </table>
 
-<p><strong>Sajt tápértéke:</strong> A Sajt az egyik legjobb ételek egyike MITE-ben — magas jóllakottság és szaturáció értékkel. Különösen hasznos hosszú expedíciókon.</p>
+<p><strong>Sajt tápértéke:</strong> Az egyik legjobb étel MITE-ben — magas jóllakottság és szaturáció. Különösen hasznos hosszú expedíciókon.</p>
 
-<div class="tip">💡 <strong>Pro tipp:</strong> Mindig tegyél be 5 vödröt egyszerre — az 5 vödörös recept 5× hatékonyabb az 1 vödörösnél ugyanolyan nehézségi ponthoz képest! Fejj minél több tehenet mielőtt sajtot csinálsz.</div>
+<div class="tip">💡 <strong>Pro tipp:</strong> Mindig tegyél be annyi vödröt amennyit csak tudsz — a receptek 9 vödörig skálázódnak, és minden extra vödör csökkenti a nehézség/db arányt!</div>
 
 </div><!-- end hu -->
 
 <!-- ═══════════════════════════════════════════════ ENGLISH ═══ -->
 <div data-lang="en">
 <h2 id="brewing-overview">🧪 Brewing — Potion Brewing</h2>
-<p>MITE: Break Everything's potion system builds on vanilla Minecraft foundations, extended with unique effects and the Cauldron mechanics. The <strong>Brewer profession</strong> is required for all brewing.</p>
+<p>MITE: Break Everything's potion system builds on vanilla Minecraft foundations, extended with unique effects and the Cauldron mechanics.</p>
 
-<div class="info">⚗️ <strong>Quick overview:</strong> Brewing Stand + Brewer profession → potions. Cauldron → special recipes (Liquid Gold, Mercury, Ancient Metal Backpack). Cheese = Brewer + Hardstone Milk Bucket.</div>
+<div class="warning-box">⚠️ <strong>The Brewer profession is not currently active in v0.9.0.</strong> Brewing and cheese-making are <strong>available without a profession</strong> in the current version — the Brewer profession system is documented here as a curiosity.</div>
+
+<div class="info">⚗️ <strong>Quick overview:</strong> Brewing Stand → potions (no profession needed). Cauldron → special recipes (Liquid Gold, Mercury, Ancient Metal Backpack). Cheese = any metal milk bucket.</div>
 
 <!-- ─── Brewing Stand EN ─── -->
 <h2 id="brewing-stand">Brewing Stand</h2>
@@ -343,7 +348,7 @@ const sidebarGroups = {
 <h2 id="cauldron">Cauldron Mechanics</h2>
 <p>The Cauldron isn't just for storing water — it's the source of unique MITE recipes that CANNOT be made in a Brewing Stand.</p>
 
-<div class="info">ℹ️ Craft the Cauldron with the standard Minecraft recipe: 7× Iron Ingots in a U-shape (3×3 grid).</div>
+<div class="info">ℹ️ Craft the Cauldron at an <strong>Iron Workbench</strong> (blacksmithing skill required): 7× Iron Ingots in a U-shape (3×3 grid).</div>
 
 <table>
   <tr><th>Recipe</th><th>Process</th><th>Result</th><th>Use</th></tr>
@@ -448,20 +453,21 @@ const sidebarGroups = {
 
 <!-- ─── Cheese EN ─── -->
 <h2 id="cheese">Cheese Crafting</h2>
-<p><strong>Brewer profession</strong> required. Only <strong>Hardstone Milk Buckets</strong> work — copper or iron buckets do not! You need a Hardstone Bucket to milk a Hardstone Cow.</p>
+<p><strong>Brewer skill</strong> required. Any milk bucket material works — Hardstone, Copper, Silver, Gold, Iron, Ancient Metal, Mithril, Adamantium. The bucket tier determines which workbench is needed to craft the cheese.</p>
 
-<div class="warning">⚠️ Cows can only be milked with a <em>Hardstone Bucket</em> in MITE — the regular iron bucket does not work for milking!</div>
+<div class="info">ℹ️ Each cow type requires a matching bucket material to milk. All recipes share the same <strong>6,400 difficulty/unit</strong> regardless of bucket material.</div>
 
 <table>
-  <tr><th>Input</th><th>Output</th><th>Difficulty/unit</th><th>Efficiency</th></tr>
-  <tr><td>1× Hardstone Milk Bucket</td><td>1× Cheese</td><td style="color:var(--accent)">6,400</td><td>Base (1×)</td></tr>
-  <tr><td>2× Hardstone Milk Bucket</td><td>2× Cheese</td><td style="color:var(--gold)">3,200/unit</td><td>2× efficient</td></tr>
-  <tr><td>3× Hardstone Milk Bucket</td><td>3× Cheese</td><td style="color:var(--gold)">2,133/unit</td><td>3× efficient</td></tr>
-  <tr><td>4× Hardstone Milk Bucket</td><td>4× Cheese</td><td style="color:var(--green)">1,600/unit</td><td>4× efficient</td></tr>
-  <tr><td>5× Hardstone Milk Bucket</td><td>5× Cheese</td><td style="color:var(--green)">1,280/unit</td><td style="color:var(--green)">5× efficient (MAX)</td></tr>
+  <tr><th>Buckets</th><th>Output</th><th>Difficulty/unit</th><th>Efficiency</th></tr>
+  <tr><td>1× bucket</td><td>1× Cheese</td><td style="color:var(--accent)">6,400</td><td>Base (1×)</td></tr>
+  <tr><td>2× buckets</td><td>2× Cheese</td><td style="color:var(--gold)">3,200/unit</td><td>2× efficient</td></tr>
+  <tr><td>3× buckets</td><td>3× Cheese</td><td style="color:var(--gold)">2,133/unit</td><td>3× efficient</td></tr>
+  <tr><td>4× buckets</td><td>4× Cheese</td><td style="color:var(--green)">1,600/unit</td><td>4× efficient</td></tr>
+  <tr><td>5× buckets</td><td>5× Cheese</td><td style="color:var(--green)">1,280/unit</td><td>5× efficient</td></tr>
+  <tr><td>9× buckets</td><td>9× Cheese</td><td style="color:var(--green)">711/unit</td><td style="color:var(--green)">9× efficient (MAX)</td></tr>
 </table>
 
-<div class="tip">💡 <strong>Pro tip:</strong> Always put in 5 buckets at once — the 5-bucket recipe is 5× more XP-efficient than making one at a time! Milk as many cows as possible before crafting.</div>
+<div class="tip">💡 <strong>Pro tip:</strong> Always use as many buckets as possible — recipes scale up to 9 buckets, and each additional bucket reduces the difficulty-per-unit ratio significantly!</div>
 
 </div><!-- end en -->
 

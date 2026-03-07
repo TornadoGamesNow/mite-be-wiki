@@ -1,0 +1,553 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import TopNav from '../components/TopNav.astro';
+import Sidebar from '../components/Sidebar.astro';
+import '../styles/global.css';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const sidebarGroups = {
+  hu: [
+    {
+      title: '🏠 Navigáció',
+      links: [{ href: './', label: '← Wiki főoldal' }],
+    },
+    {
+      title: '🌍 Biome-ok',
+      links: [
+        { href: '#attekintes', label: 'Áttekintés' },
+        { href: '#plains', label: '🌾 Síkság (Plains)' },
+        { href: '#forest', label: '🌲 Erdő (Forest)' },
+        { href: '#taiga', label: '🌨 Tajga (Taiga)' },
+        { href: '#desert', label: '🏜 Sivatag (Desert)' },
+        { href: '#swamp', label: '🌿 Mocsár (Swamp)' },
+        { href: '#mountains', label: '⛰ Hegyek (Mountains)' },
+        { href: '#jungle', label: '🌴 Dzsungel (Jungle)' },
+        { href: '#mushroom', label: '🍄 Gombaszigetek' },
+        { href: '#ocean', label: '🌊 Óceán (Ocean)' },
+        { href: '#nether', label: '🔥 Nether' },
+        { href: '#underground', label: '⛏ Föld Alatti Világ' },
+      ],
+    },
+  ],
+  en: [
+    {
+      title: '🏠 Navigation',
+      links: [{ href: './', label: '← Main wiki' }],
+    },
+    {
+      title: '🌍 Biomes',
+      links: [
+        { href: '#attekintes', label: 'Overview' },
+        { href: '#plains', label: '🌾 Plains' },
+        { href: '#forest', label: '🌲 Forest' },
+        { href: '#taiga', label: '🌨 Taiga' },
+        { href: '#desert', label: '🏜 Desert' },
+        { href: '#swamp', label: '🌿 Swamp' },
+        { href: '#mountains', label: '⛰ Mountains' },
+        { href: '#jungle', label: '🌴 Jungle' },
+        { href: '#mushroom', label: '🍄 Mushroom Islands' },
+        { href: '#ocean', label: '🌊 Ocean' },
+        { href: '#nether', label: '🔥 Nether' },
+        { href: '#underground', label: '⛏ Underground' },
+      ],
+    },
+  ],
+};
+---
+
+<BaseLayout title="Biome Útmutató — MITE: Break Everything Wiki">
+  <Header />
+  <TopNav currentPage="biomes" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<!-- ════════════════════════ HUNGARIAN ════════════════════════ -->
+<div data-lang="hu">
+<h2 id="attekintes">🌍 Biome Útmutató</h2>
+<p>A MITE:BE minden biome-ot egyedi kihívásokkal és lehetőségekkel ruház fel. Az alábbiakban összefoglaljuk a legfontosabb tudnivalókat biome-onként — a veszélyektől a stratégiai tanácsokig.</p>
+
+<div class="info-box">🌡️ <strong>Hőmérséklet mindenhol számít!</strong> Hideg biome-okban (Tajga, Hegyvidék) éjjel és esőben gyorsan csökken a testhőmérséklet. Mindig legyen nálad meleg étel és tűzütő!</div>
+
+<table class="compare-table">
+  <tr><th>Biome</th><th>Hőmérséklet</th><th>Főbb veszély</th><th>Különlegesség</th></tr>
+  <tr><td>🌾 Síkság</td><td>Mérsékelt</td><td>Átlagos mob spawning</td><td>Fáklyák sosem alszanak ki!</td></tr>
+  <tr><td>🌲 Erdő</td><td>Mérsékelt</td><td>Csökkentett látótávolság</td><td>Fa bőségben</td></tr>
+  <tr><td>🌨 Tajga</td><td>Hideg</td><td>Fagyás éjjel</td><td>Fenyő fa</td></tr>
+  <tr><td>🏜 Sivatag</td><td>Meleg</td><td>Sivatag Őr, hőguta</td><td>Homok és kaktusz</td></tr>
+  <tr><td>🌿 Mocsár</td><td>Mérsékelt</td><td>Boszorkányok, sár</td><td>Iszapbarlangok</td></tr>
+  <tr><td>⛰ Hegyvidék</td><td>Hideg</td><td>Zuhanás, fagyás</td><td>Ritka ércek felszínen</td></tr>
+  <tr><td>🌴 Dzsungel</td><td>Meleg</td><td>Mérgezés, kúszók</td><td>Bambusz, kakaó, banán</td></tr>
+  <tr><td>🍄 Gombaszigetek</td><td>Mérsékelt</td><td>Harci Torony</td><td>Mooshroom, nincs mob spawning</td></tr>
+  <tr><td>🌊 Óceán</td><td>Hideg</td><td>Fagyás, fulladás</td><td>Hal, korallok</td></tr>
+  <tr><td>🔥 Nether</td><td>Extrém forró</td><td>Blaze, Wither Csontváz, láva</td><td>Nether Erőd, Blaze Rúd</td></tr>
+  <tr><td>⛏ Föld Alatti</td><td>Normál</td><td>Revenant, Wight, Csontváz Ura</td><td>Ritka ércek, Tudáskönyvek</td></tr>
+</table>
+</div>
+
+<!-- ════ PLAINS ════ -->
+<div data-lang="hu" id="plains">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌾 Síkság (Plains)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>A legjobb kezdő biome! Nyílt terep, jó látótávolság, kevesebb meglepetés.</p>
+
+<table class="compare-table">
+  <tr><th>Tulajdonság</th><th>Részletek</th></tr>
+  <tr><td>Hőmérséklet</td><td>Mérsékelt — nincs fagyásveszély</td></tr>
+  <tr><td>Fáklya különlegesség</td><td><strong>Fáklyák soha nem alszanak ki a Síkságon!</strong> Egyetlen biome ahol ez igaz</td></tr>
+  <tr><td>Mob spawning</td><td>Átlagos — éjjeli védekezés szükséges</td></tr>
+  <tr><td>Erőforrások</td><td>Búza, ló, tehén, birka — jó élelmiszer forrás</td></tr>
+  <tr><td>Falvak</td><td>Legtöbbször síkságon jelennek meg!</td></tr>
+</table>
+
+<div class="info-box">💡 <strong>Kezdő tipp:</strong> Ha a world spawn pontod Síkságon van, maradj ott az első napokban — a fáklyák nem alszanak ki, ami sokat segít a védekezésben!</div>
+
+</div></div></div>
+</div>
+
+<!-- ════ FOREST ════ -->
+<div data-lang="hu" id="forest">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌲 Erdő (Forest)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Bőséges fa forrás, de a sűrű növényzet csökkenti a látótávolságot és megkönnyíti a mobok meglepetésszerű támadásait.</p>
+
+<table class="compare-table">
+  <tr><th>Tulajdonság</th><th>Részletek</th></tr>
+  <tr><td>Hőmérséklet</td><td>Mérsékelt</td></tr>
+  <tr><td>Erőforrások</td><td>Tölgy, nyírfa, fenyő — rengeteg fa; gomba; alma</td></tr>
+  <tr><td>Veszélyek</td><td>Csökkentett látótávolság → mobok közel kerülhetnek</td></tr>
+  <tr><td>Fáklyák</td><td>Kialszanak 3 nap után (Hardcore módban)</td></tr>
+</table>
+
+<div class="warning-box">⚠️ <strong>Erdőben légy óvatos éjjel!</strong> A fák között a zombik és pókok közvetlen közelről támadnak. Kerítéssel és jól megvilágított bázissal védekezz.</div>
+
+</div></div></div>
+</div>
+
+<!-- ════ TAIGA ════ -->
+<div data-lang="hu" id="taiga">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌨 Tajga (Taiga)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Hideg biome — a hőmérséklet-rendszer itt számít legjobban. Éjjel és esőben gyorsan megfagyhatsz.</p>
+
+<table class="compare-table">
+  <tr><th>Tulajdonság</th><th>Részletek</th></tr>
+  <tr><td>Hőmérséklet</td><td><strong>Hideg</strong> — éjjel fagyásveszély!</td></tr>
+  <tr><td>Erőforrások</td><td>Fenyőfa (spruce), farkas, liszt bokor</td></tr>
+  <tr><td>Havas Tajga</td><td>Még hidegebb — hóban járás lelassít</td></tr>
+  <tr><td>Fagyás megelőzése</td><td>Meleg étel (pörkölt, kása), tűz közelében tartózkodás, meleg ruházat</td></tr>
+</table>
+
+<div class="warning-box">🌡️ <strong>Testhőmérséklet:</strong> Tajgán éjjel + esőben gyorsan csökken. Ha nullára esik, megfagysz! Mindig legyen nálad pörkölt vagy meleg leves, és tartózkodj tűz közelében éjszaka.</div>
+
+</div></div></div>
+</div>
+
+<!-- ════ DESERT ════ -->
+<div data-lang="hu" id="desert">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🏜 Sivatag (Desert)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Forró, száraz biome egyedi ellenséggel — a Sivatag Őrrel. Ritka struktúrát (Sivatag Őr Torony) tartalmaz.</p>
+
+<table class="compare-table">
+  <tr><th>Tulajdonság</th><th>Részletek</th></tr>
+  <tr><td>Hőmérséklet</td><td>Meleg nappal — hőguta napközben lehetséges</td></tr>
+  <tr><td>Egyedi mob</td><td><strong>Sivatag Őr</strong> — gyors, erős, ritka dropok</td></tr>
+  <tr><td>Struktúra</td><td><strong>Sivatag Őr Torony</strong> — ritka loot ládákkal</td></tr>
+  <tr><td>Erőforrások</td><td>Homok, homokkő, kaktusz, dead bush</td></tr>
+  <tr><td>Víz</td><td>Nincs természetes vízforrás — hozz magaddal!</td></tr>
+</table>
+
+<div class="warning-box">🏜 <strong>Szitkozódó Sivatag Őr:</strong> Ne becsüld alá! Gyors és erős. Mithril+ felszerelés ajánlott a Torony megtámadásához.</div>
+
+</div></div></div>
+</div>
+
+<!-- ════ SWAMP ════ -->
+<div data-lang="hu" id="swamp">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌿 Mocsár (Swamp)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Nedves, sötét biome boszorkányokkal és iszapbarlangokkal. A mérgezés komoly veszélyt jelent.</p>
+
+<table class="compare-table">
+  <tr><th>Tulajdonság</th><th>Részletek</th></tr>
+  <tr><td>Hőmérséklet</td><td>Mérsékelt de nedves — vízben tartózkodás lehűt</td></tr>
+  <tr><td>Egyedi veszély</td><td><strong>Boszorkányok</strong> — méregbájitalokat dobnak; elvadult tündérek</td></tr>
+  <tr><td>Erőforrások</td><td>Iszap (clay), liliompad, mocsári fa</td></tr>
+  <tr><td>Barlangok</td><td>Iszapbarlangok — vízzel teli, nehéz navigálni</td></tr>
+</table>
+
+<div class="warning-box">🧪 <strong>Boszorkány:</strong> Ha méregbájitalt dob rád, azonnal fogyassz tejet (méregellenszer) vagy menekülj! A mérgezés gyorsan öl alacsony HP-nál.</div>
+
+</div></div></div>
+</div>
+
+<!-- ════ MOUNTAINS ════ -->
+<div data-lang="hu" id="mountains">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⛰ Hegyvidék (Mountains)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Látványos de veszélyes biome — esés és fagyás a két fő kockázat. Cserébe ritka ércek és kövek lelhetők fel a felszínen.</p>
+
+<table class="compare-table">
+  <tr><th>Tulajdonság</th><th>Részletek</th></tr>
+  <tr><td>Hőmérséklet</td><td><strong>Hideg</strong> nagy magasságban — fagyásveszély</td></tr>
+  <tr><td>Esési kockázat</td><td>Meredek lejtők — csúszás és esés kockázata</td></tr>
+  <tr><td>Erőforrások</td><td>Kőzet, kavics, hó; ritka esetben felszíni érc</td></tr>
+  <tr><td>Vérhold hatás</td><td>Y&gt;100: Hányinger+Gyengeség — <strong>vonulj le a magasból!</strong></td></tr>
+</table>
+
+<div class="info-box">⛏ <strong>Hegyvidéki bányászat:</strong> A meredek sziklafalakon néha felszínen látható ércek (réz, ezüst) — érdemes átvizsgálni a sziklákat mielőtt a föld alá mennél.</div>
+
+</div></div></div>
+</div>
+
+<!-- ════ JUNGLE ════ -->
+<div data-lang="hu" id="jungle">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌴 Dzsungel (Jungle)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Sűrű, bonyolult biome rengeteg természeti erőforrással — de nehéz navigálni és mérgező lények veszélyeztetik.</p>
+
+<table class="compare-table">
+  <tr><th>Tulajdonság</th><th>Részletek</th></tr>
+  <tr><td>Hőmérséklet</td><td>Meleg és nedves</td></tr>
+  <tr><td>Egyedi veszély</td><td>Mérgező pókok, dzsungel creeper variánsok</td></tr>
+  <tr><td>Erőforrások</td><td><strong>Bambusz</strong>, banán, kakaóbab, kókuszfa — egyedi ételek</td></tr>
+  <tr><td>Navigáció</td><td>Nagyon sűrű — könnyen elveszhetsz</td></tr>
+</table>
+
+<div class="info-box">🍌 <strong>Dzsungel ételek:</strong> A banán, kókusz és kakaóbab csak dzsungelben található. Ha ételkészítési képességed van (vagy v0.9.0+ foglalkozások), különleges receptekhez szükséges!</div>
+
+</div></div></div>
+</div>
+
+<!-- ════ MUSHROOM ════ -->
+<div data-lang="hu" id="mushroom">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🍄 Gombaszigetek (Mushroom Island)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Egyedi, ritka biome — normál mobok nem spawnolnak itt! Azonban a MITE:BE saját egyedi struktúrát ad ide.</p>
+
+<table class="compare-table">
+  <tr><th>Tulajdonság</th><th>Részletek</th></tr>
+  <tr><td>Mob spawning</td><td><strong>Normál mobok NEM jelennek meg!</strong> — de a MITE Harci Torony igen</td></tr>
+  <tr><td>Egyedi mob</td><td>Mooshroom (gombaborjú) — tejjel fejhető, gombás pörköltet ad</td></tr>
+  <tr><td>Struktúra</td><td><strong>Gombaerdő Harci Torony</strong> — fejlett loot, erős ellenfelek</td></tr>
+  <tr><td>Erőforrások</td><td>Óriás gombák, mycelium talaj</td></tr>
+</table>
+
+<div class="warning-box">⚔️ <strong>Harci Torony:</strong> A Gombaszigetek egyedi MITE struktúrája. Erős szörnyekkel, ritka jutalomládákkal. Mithril+ felszerelés szükséges a teljes megtisztításhoz.</div>
+
+</div></div></div>
+</div>
+
+<!-- ════ OCEAN ════ -->
+<div data-lang="hu" id="ocean">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌊 Óceán (Ocean)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Hatalmas vízfelület — a hőmérséklet-rendszer és a fulladás veszélye tja. Horgászatra és víz alatti bányászatra ideális.</p>
+
+<table class="compare-table">
+  <tr><th>Tulajdonság</th><th>Részletek</th></tr>
+  <tr><td>Hőmérséklet</td><td>Vízben tartózkodás lehűt — <strong>gyors fagyásveszély hideg biome-ban!</strong></td></tr>
+  <tr><td>Főbb veszély</td><td>Fulladás, hőmérséklet csökkentés, vízalatti ellenfelek</td></tr>
+  <tr><td>Erőforrások</td><td>Hal, tintahal, korallok, homok, kavics</td></tr>
+  <tr><td>Horgászat</td><td>Horgászat képességgel jobb fogás eséllyel</td></tr>
+</table>
+
+<div class="info-box">🎣 <strong>Horgászat tipp:</strong> Óceán szélén állva a legegyszerűbb halat fogni — nem kell vízbe menni! Vízi légzés bájital kötelező mélytengeri barlangokhoz.</div>
+
+</div></div></div>
+</div>
+
+<!-- ════ NETHER ════ -->
+<div data-lang="hu" id="nether">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🔥 Nether</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>A pokolba belépni komoly felkészülést igényel — de a legfontosabb anyagok (Blaze Rúd, Wither Rózsa, Mithril+ olvasztás) csak innen szerezhetők.</p>
+
+<div class="warning-box">🔥 <strong>Nether belépési feltételek:</strong> Mithril Csákány (Obszidián bányászáshoz) + Obszidián Öntőforma + Tűzütő. Tűzállóság bájital erősen ajánlott!</div>
+
+<table class="compare-table">
+  <tr><th>Tulajdonság</th><th>Részletek</th></tr>
+  <tr><td>Hőmérséklet</td><td>Extrém forró — hőguta veszély</td></tr>
+  <tr><td>Egyedi veszély</td><td>Tűz Elementális: <strong>3% azonnali halál ha éppen égsz!</strong> Tűzállóság kötelező</td></tr>
+  <tr><td>Portál mechanika</td><td>Obszidián portál az alapkőrétegen → Pillager Erőd (v0.9.0)</td></tr>
+  <tr><td>Nether Erőd</td><td>Blaze Rúd (hőfok 4 olvasztáshoz), Wither Rózsa, Nether Wart</td></tr>
+  <tr><td>Blaze</td><td>Blaze Rúd szükséges az Adamantium olvasztásához!</td></tr>
+  <tr><td>Wither Csontváz</td><td>Wither Rózsa dropol — Wither boss idézéséhez</td></tr>
+</table>
+
+<div class="info-box">🌋 <strong>Lávás vödör:</strong> Hőfok 3 (Mithril olvasztás) tüzelőanyaga. A Netherben töltsd fel — otthon nincs lávaforrás!</div>
+
+</div></div></div>
+</div>
+
+<!-- ════ UNDERGROUND ════ -->
+<div data-lang="hu" id="underground">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⛏ Föld Alatti Világ (Underground)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>A MITE:BE legkomplexebb "biome-ja" — Y=0 alatt speciális rétegek vannak saját mobokkal, struktúrákkal és ritka erőforrásokkal.</p>
+
+<table class="compare-table">
+  <tr><th>Réteg (Y)</th><th>Blokk</th><th>Jellemző mob</th><th>Különlegesség</th></tr>
+  <tr><td>Y 0 – (-30)</td><td>Keménykő</td><td>Revenant, Wight</td><td>Keménykő érc, speciális barlangok</td></tr>
+  <tr><td>Y (-30) – (-60)</td><td>Ókő (Ancient Stone)</td><td>Wight Gárda, Csontváz Ura</td><td>Kristálybarlangok, Mithril érc</td></tr>
+  <tr><td>Y (-60)+</td><td>Ősidők köve</td><td>Revenant, speciális ellenségek</td><td>Adamantium érc, titokzatos romok</td></tr>
+</table>
+
+<div class="warning-box">💀 <strong>Csontváz Ura (Skeleton Lord):</strong> Erős mini-boss a mélyebb rétegekben. Értékes dropok, de nehéz legyőzni. Mithril+ felszerelés szükséges.</div>
+
+<div class="info-box">🔮 <strong>Föld Alatti Romok (v0.9.0):</strong> Véletlenszerűen generált romok találhatók a barlangrendszerben — jutalomládákkal és Tudáskönyvekkel!</div>
+
+<h4>Föld Alatti Bányász Stratégia</h4>
+<ul>
+  <li><strong>Keménykő réteg:</strong> Kalapácsos zúzás Keménykő blokkokra → 12 ércdarab</li>
+  <li><strong>Revenant ellen:</strong> Ezüst fegyver hatékony — élőholt-ölő enchantment is segít</li>
+  <li><strong>Wight Gárda ellen:</strong> Gyors, erős — frontális harckerülés ajánlott, csapda stratégia</li>
+  <li><strong>Visszaút:</strong> Jelöld meg az utat! Könnyen elveszhetsz a mélyen</li>
+</ul>
+
+</div></div></div>
+</div>
+
+</div><!-- end hu main -->
+
+<!-- ════════════════════════ ENGLISH ════════════════════════ -->
+<div data-lang="en">
+<h2 id="attekintes-en">🌍 Biome Guide</h2>
+<p>MITE:BE gives every biome unique challenges and opportunities. Below is a summary of the key information for each biome — from dangers to strategic advice.</p>
+
+<div class="info-box">🌡️ <strong>Temperature matters everywhere!</strong> In cold biomes (Taiga, Mountains) your body temperature drops fast at night and in rain. Always carry warm food and a fire starter!</div>
+
+<table class="compare-table">
+  <tr><th>Biome</th><th>Temperature</th><th>Main Danger</th><th>Special Feature</th></tr>
+  <tr><td>🌾 Plains</td><td>Moderate</td><td>Normal mob spawning</td><td>Torches never burn out!</td></tr>
+  <tr><td>🌲 Forest</td><td>Moderate</td><td>Reduced visibility</td><td>Abundant wood</td></tr>
+  <tr><td>🌨 Taiga</td><td>Cold</td><td>Freezing at night</td><td>Spruce wood</td></tr>
+  <tr><td>🏜 Desert</td><td>Warm</td><td>Desert Guardian, heat stroke</td><td>Sand and cactus</td></tr>
+  <tr><td>🌿 Swamp</td><td>Moderate</td><td>Witches, mud</td><td>Mud caves</td></tr>
+  <tr><td>⛰ Mountains</td><td>Cold</td><td>Falling, freezing</td><td>Surface ore veins</td></tr>
+  <tr><td>🌴 Jungle</td><td>Warm</td><td>Poison, creepers</td><td>Bamboo, cocoa, banana</td></tr>
+  <tr><td>🍄 Mushroom Islands</td><td>Moderate</td><td>Combat Tower</td><td>No normal mob spawning</td></tr>
+  <tr><td>🌊 Ocean</td><td>Cold</td><td>Freezing, drowning</td><td>Fish, coral reefs</td></tr>
+  <tr><td>🔥 Nether</td><td>Extreme heat</td><td>Blaze, Wither Skeleton, lava</td><td>Nether Fortress, Blaze Rod</td></tr>
+  <tr><td>⛏ Underground</td><td>Normal</td><td>Revenant, Wight, Skeleton Lord</td><td>Rare ores, Knowledge Books</td></tr>
+</table>
+</div>
+
+<div data-lang="en" id="plains-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌾 Plains</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>The best starting biome! Open terrain, good visibility, fewer surprises.</p>
+
+<table class="compare-table">
+  <tr><th>Property</th><th>Details</th></tr>
+  <tr><td>Temperature</td><td>Moderate — no freezing risk</td></tr>
+  <tr><td>Torch special</td><td><strong>Torches NEVER burn out on Plains!</strong> The only biome where this is true</td></tr>
+  <tr><td>Mob spawning</td><td>Normal — nighttime defense required</td></tr>
+  <tr><td>Resources</td><td>Wheat, horse, cow, sheep — good food source</td></tr>
+  <tr><td>Villages</td><td>Most commonly spawn on Plains!</td></tr>
+</table>
+
+<div class="info-box">💡 <strong>Starter tip:</strong> If your world spawn is on Plains, stay there for the first few days — torches won't burn out, which greatly helps with defense!</div>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="forest-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌲 Forest</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Abundant wood supply, but dense vegetation reduces visibility and lets mobs sneak up on you.</p>
+
+<table class="compare-table">
+  <tr><th>Property</th><th>Details</th></tr>
+  <tr><td>Temperature</td><td>Moderate</td></tr>
+  <tr><td>Resources</td><td>Oak, birch, spruce — plenty of wood; mushrooms; apples</td></tr>
+  <tr><td>Dangers</td><td>Reduced visibility → mobs can get very close</td></tr>
+  <tr><td>Torches</td><td>Burn out after 3 days (in Hardcore mode)</td></tr>
+</table>
+
+<div class="warning-box">⚠️ <strong>Be careful at night in the Forest!</strong> Zombies and spiders attack from very close range between the trees. Defend with fences and a well-lit base.</div>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="taiga-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌨 Taiga</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Cold biome — the temperature system matters most here. You can freeze quickly at night and in rain.</p>
+
+<table class="compare-table">
+  <tr><th>Property</th><th>Details</th></tr>
+  <tr><td>Temperature</td><td><strong>Cold</strong> — freezing risk at night!</td></tr>
+  <tr><td>Resources</td><td>Spruce wood, wolves, berry bushes</td></tr>
+  <tr><td>Snowy Taiga</td><td>Even colder — walking through snow slows you down</td></tr>
+  <tr><td>Preventing freezing</td><td>Warm food (stew, porridge), stay near fire, warm clothing</td></tr>
+</table>
+
+<div class="warning-box">🌡️ <strong>Body temperature:</strong> Drops fast in Taiga at night + rain. If it hits zero, you die of cold! Always carry stew or warm soup, and stay near fire at night.</div>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="desert-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🏜 Desert</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Hot, dry biome with a unique enemy — the Desert Guardian. Contains a rare structure (Desert Guardian Tower).</p>
+
+<table class="compare-table">
+  <tr><th>Property</th><th>Details</th></tr>
+  <tr><td>Temperature</td><td>Warm during the day — heat stroke possible</td></tr>
+  <tr><td>Unique mob</td><td><strong>Desert Guardian</strong> — fast, strong, rare drops</td></tr>
+  <tr><td>Structure</td><td><strong>Desert Guardian Tower</strong> — rare loot chests</td></tr>
+  <tr><td>Resources</td><td>Sand, sandstone, cactus, dead bushes</td></tr>
+  <tr><td>Water</td><td>No natural water source — bring your own!</td></tr>
+</table>
+
+<div class="warning-box">🏜 <strong>Desert Guardian:</strong> Don't underestimate it! Fast and strong. Mithril+ gear recommended for attacking the Tower.</div>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="swamp-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌿 Swamp</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Wet, dark biome with witches and mud caves. Poison is a serious threat here.</p>
+
+<table class="compare-table">
+  <tr><th>Property</th><th>Details</th></tr>
+  <tr><td>Temperature</td><td>Moderate but wet — standing in water cools you down</td></tr>
+  <tr><td>Unique danger</td><td><strong>Witches</strong> — throw poison potions; hostile fairies</td></tr>
+  <tr><td>Resources</td><td>Clay, lily pads, swamp wood</td></tr>
+  <tr><td>Caves</td><td>Mud caves — water-filled, hard to navigate</td></tr>
+</table>
+
+<div class="warning-box">🧪 <strong>Witch:</strong> If it throws a poison potion at you, immediately drink milk (antidote) or flee! Poison kills quickly at low HP.</div>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="mountains-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⛰ Mountains</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Spectacular but dangerous biome — falling and freezing are the two main risks. In return, rare ores and stones can be found on the surface.</p>
+
+<table class="compare-table">
+  <tr><th>Property</th><th>Details</th></tr>
+  <tr><td>Temperature</td><td><strong>Cold</strong> at high altitude — freezing risk</td></tr>
+  <tr><td>Fall risk</td><td>Steep slopes — risk of slipping and falling</td></tr>
+  <tr><td>Resources</td><td>Stone, gravel, snow; occasionally surface ore veins</td></tr>
+  <tr><td>Blood Moon effect</td><td>Y&gt;100: Nausea+Weakness — <strong>get down from the heights!</strong></td></tr>
+</table>
+
+<div class="info-box">⛏ <strong>Mountain mining:</strong> Steep cliff faces sometimes expose surface ores (copper, silver) — worth scanning the rock walls before going underground.</div>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="jungle-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌴 Jungle</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Dense, complex biome with lots of natural resources — but hard to navigate and threatened by poisonous creatures.</p>
+
+<table class="compare-table">
+  <tr><th>Property</th><th>Details</th></tr>
+  <tr><td>Temperature</td><td>Warm and humid</td></tr>
+  <tr><td>Unique danger</td><td>Poisonous spiders, jungle creeper variants</td></tr>
+  <tr><td>Resources</td><td><strong>Bamboo</strong>, banana, cocoa beans, coconut palm — unique foods</td></tr>
+  <tr><td>Navigation</td><td>Very dense — easy to get lost</td></tr>
+</table>
+
+<div class="info-box">🍌 <strong>Jungle foods:</strong> Bananas, coconuts, and cocoa beans are only found in the Jungle. Needed for special recipes if you have food preparation skill (or v0.9.0+ professions)!</div>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="mushroom-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🍄 Mushroom Islands</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Unique, rare biome — normal mobs don't spawn here! However, MITE:BE adds its own unique structure to these islands.</p>
+
+<table class="compare-table">
+  <tr><th>Property</th><th>Details</th></tr>
+  <tr><td>Mob spawning</td><td><strong>Normal mobs DO NOT spawn!</strong> — but the MITE Combat Tower does</td></tr>
+  <tr><td>Unique mob</td><td>Mooshroom — can be milked, gives mushroom stew</td></tr>
+  <tr><td>Structure</td><td><strong>Mushroom Forest Combat Tower</strong> — advanced loot, strong enemies</td></tr>
+  <tr><td>Resources</td><td>Giant mushrooms, mycelium soil</td></tr>
+</table>
+
+<div class="warning-box">⚔️ <strong>Combat Tower:</strong> The unique MITE structure of Mushroom Islands. Tough monsters, rare reward chests. Mithril+ gear required for full clearance.</div>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="ocean-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌊 Ocean</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Vast water surface — the temperature system and drowning are the main threats. Ideal for fishing and underwater mining.</p>
+
+<table class="compare-table">
+  <tr><th>Property</th><th>Details</th></tr>
+  <tr><td>Temperature</td><td>Being in water cools you — <strong>rapid freezing risk in cold biomes!</strong></td></tr>
+  <tr><td>Main danger</td><td>Drowning, temperature loss, underwater enemies</td></tr>
+  <tr><td>Resources</td><td>Fish, squid, coral, sand, gravel</td></tr>
+  <tr><td>Fishing</td><td>Better catch rates with the Fishing skill</td></tr>
+</table>
+
+<div class="info-box">🎣 <strong>Fishing tip:</strong> Standing on the ocean shore is the easiest way to fish — no need to go in the water! Water Breathing potion is mandatory for deep-sea caves.</div>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="nether-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🔥 Nether</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>Entering the Nether requires serious preparation — but the most important materials (Blaze Rod, Wither Rose, Mithril+ smelting) can only be obtained here.</p>
+
+<div class="warning-box">🔥 <strong>Nether entry requirements:</strong> Mithril Pickaxe (for mining Obsidian) + Obsidian Ingot Mold + Flint and Steel. Fire Resistance potion strongly recommended!</div>
+
+<table class="compare-table">
+  <tr><th>Property</th><th>Details</th></tr>
+  <tr><td>Temperature</td><td>Extreme heat — heat stroke risk</td></tr>
+  <tr><td>Unique danger</td><td>Fire Elemental: <strong>3% instant death if you're on fire when it attacks!</strong> Fire Resistance mandatory</td></tr>
+  <tr><td>Portal mechanic</td><td>Obsidian portal at bedrock level → Pillager Fortress (v0.9.0)</td></tr>
+  <tr><td>Nether Fortress</td><td>Blaze Rod (heat level 4 smelting), Wither Rose, Nether Wart</td></tr>
+  <tr><td>Blaze</td><td>Blaze Rod required for Adamantium smelting!</td></tr>
+  <tr><td>Wither Skeleton</td><td>Drops Wither Rose — required for summoning the Wither boss</td></tr>
+</table>
+
+<div class="info-box">🌋 <strong>Lava bucket:</strong> Fuel for heat level 3 (Mithril smelting). Fill it up in the Nether — there's no lava source at home!</div>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="underground-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⛏ Underground World</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>MITE:BE's most complex "biome" — below Y=0 there are special layers with their own mobs, structures, and rare resources.</p>
+
+<table class="compare-table">
+  <tr><th>Layer (Y)</th><th>Block</th><th>Mobs</th><th>Special</th></tr>
+  <tr><td>Y 0 – (-30)</td><td>Hardstone</td><td>Revenant, Wight</td><td>Hardstone ore, special caves</td></tr>
+  <tr><td>Y (-30) – (-60)</td><td>Ancient Stone</td><td>Wight Guard, Skeleton Lord</td><td>Crystal caves, Mithril ore</td></tr>
+  <tr><td>Y (-60)+</td><td>Primordial Stone</td><td>Revenant, special enemies</td><td>Adamantium ore, mysterious ruins</td></tr>
+</table>
+
+<div class="warning-box">💀 <strong>Skeleton Lord:</strong> Strong mini-boss in the deeper layers. Valuable drops but hard to defeat. Mithril+ gear required.</div>
+
+<div class="info-box">🔮 <strong>Underground Ruins (v0.9.0):</strong> Randomly generated ruins are found throughout the cave system — with loot chests and Knowledge Books!</div>
+
+<h4>Underground Mining Strategy</h4>
+<ul>
+  <li><strong>Hardstone layer:</strong> War hammer crushing on Hardstone blocks → 12 ore particles</li>
+  <li><strong>Vs Revenant:</strong> Silver weapons are effective — Smite enchantment also helps</li>
+  <li><strong>Vs Wight Guard:</strong> Fast and strong — avoid frontal combat, use trap strategy</li>
+  <li><strong>Way back:</strong> Mark your path! It's easy to get lost in the depths</li>
+</ul>
+
+</div></div></div>
+</div>
+
+    </main>
+  </div>
+</BaseLayout>

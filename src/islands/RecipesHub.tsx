@@ -346,6 +346,42 @@ function getCraftingGroups(itemId: string): OutputGroup[] {
 
 const allGroups = groupByOutput(recipes);
 const allStations = [...new Set(recipes.map(r => r.station))].sort();
+const allSkills = [...new Set(recipes.flatMap(r => r.skills))].sort();
+
+const STATION_LABELS: Record<string, { hu: string; en: string }> = {
+  hand:                    { hu: 'Kézzel',                    en: 'By hand' },
+  flint_workbench:         { hu: 'Kovakő Munkaasztal',        en: 'Flint Workbench' },
+  stone_workbench:         { hu: 'Kőmag Munkaasztal',         en: 'Stone Workbench' },
+  copper_workbench:        { hu: 'Réz Munkaasztal',           en: 'Copper Workbench' },
+  iron_workbench:          { hu: 'Vas Munkaasztal',           en: 'Iron Workbench' },
+  gold_workbench:          { hu: 'Arany Munkaasztal',         en: 'Gold Workbench' },
+  hard_workbench:          { hu: 'Keménykő Munkaasztal',      en: 'Hardstone Workbench' },
+  ancient_workbench:       { hu: 'Ős Fém Munkaasztal',        en: 'Ancient Metal Workbench' },
+  mithril_workbench:       { hu: 'Mithril Munkaasztal',       en: 'Mithril Workbench' },
+  adamantium_workbench:    { hu: 'Adamantium Munkaasztal',    en: 'Adamantium Workbench' },
+  stone_furnace:           { hu: 'Kő Kemence',                en: 'Stone Furnace' },
+  blast_furnace:           { hu: 'Nagy Kemence (Olvasztó)',   en: 'Blast Furnace' },
+  obsidian_furnace:        { hu: 'Obszidián Kemence',         en: 'Obsidian Furnace' },
+  netherrack_furnace:      { hu: 'Pokoli Kő Kemence',         en: 'Netherrack Furnace' },
+  cauldron:                { hu: 'Üst',                       en: 'Cauldron' },
+  brewing_stand:           { hu: 'Főzetállvány',              en: 'Brewing Stand' },
+};
+
+const SKILL_LABELS: Record<string, { hu: string; en: string }> = {
+  blacksmithing:   { hu: 'Kovácsmesterség', en: 'Blacksmithing' },
+  carpentry:       { hu: 'Ácsmesterség',    en: 'Carpentry' },
+  fineArts:        { hu: 'Finom Mesterség', en: 'Fine Arts' },
+  foodPreparation: { hu: 'Ételkészítés',    en: 'Food Preparation' },
+  masonry:         { hu: 'Kőfaragás',       en: 'Masonry' },
+  brewing:         { hu: 'Főzőmesterség',   en: 'Brewing' },
+  archery:         { hu: 'Íjászat',         en: 'Archery' },
+  tinkering:       { hu: 'Barkácsolás',     en: 'Tinkering' },
+  fishing:         { hu: 'Horgászat',       en: 'Fishing' },
+  farming:         { hu: 'Gazdálkodás',     en: 'Farming' },
+  mining:          { hu: 'Bányászat',       en: 'Mining' },
+  blacksmith:      { hu: 'Kovács',          en: 'Blacksmith' },
+  smelting:        { hu: 'Olvasztás',       en: 'Smelting' },
+};
 
 // ── Shared sub-tab bar ────────────────────────────────────────────────────
 function SubTabs({ tabs, active, onSelect }: {
@@ -1228,6 +1264,8 @@ export default function RecipesHub() {
   const [lang, setLang] = useState<'hu' | 'en'>('hu');
   const [keyword, setKeyword] = useState('');
   const [stationFilter, setStationFilter] = useState('');
+  const [skillFilter, setSkillFilter] = useState('');
+  const [ingredientFilter, setIngredientFilter] = useState('');
   const [typeFilter, setTypeFilter] = useState<'all' | 'shaped' | 'shapeless'>('all');
   const [selectedOutputId, setSelectedOutputId] = useState<string | null>(null);
   const [usedInModalItem, setUsedInModalItem] = useState<string | null>(null);
@@ -1249,10 +1287,17 @@ export default function RecipesHub() {
     return onLangChange((l) => setLang(l as 'hu' | 'en'));
   }, []);
 
-  // URL ?search= param support (from mob drops deep-link)
+  // URL ?search= / ?skill= / ?ingredient= param support
   useEffect(() => {
-    const p = new URLSearchParams(location.search).get('search');
-    if (p) { setKeyword(p); setMode('browse'); }
+    const params = new URLSearchParams(location.search);
+    const s = params.get('search');
+    const sk = params.get('skill');
+    const ing = params.get('ingredient');
+    const st = params.get('station');
+    if (s) { setKeyword(s); setMode('browse'); }
+    if (sk) { setSkillFilter(sk); setMode('browse'); }
+    if (ing) { setIngredientFilter(ing); setMode('browse'); }
+    if (st) { setStationFilter(st); setMode('browse'); }
   }, []);
 
   // #9: Ctrl+K / Cmd+K to focus search
@@ -1272,11 +1317,13 @@ export default function RecipesHub() {
   const [pickerSlot, setPickerSlot] = useState<{ row: number; col: number } | null>(null);
   const [pickerQuery, setPickerQuery] = useState('');
 
-  const hasFilters = keyword !== '' || stationFilter !== '' || typeFilter !== 'all';
+  const hasFilters = keyword !== '' || stationFilter !== '' || skillFilter !== '' || ingredientFilter !== '' || typeFilter !== 'all';
 
   function clearFilters() {
     setKeyword('');
     setStationFilter('');
+    setSkillFilter('');
+    setIngredientFilter('');
     setTypeFilter('all');
   }
 
@@ -1287,11 +1334,21 @@ export default function RecipesHub() {
         if (!getItemName(g.outputId, lang).toLowerCase().includes(kw) && !g.outputId.includes(kw)) return false;
       }
       if (stationFilter && !g.recipes.some(r => r.station === stationFilter)) return false;
+      if (skillFilter && !g.recipes.some(r => r.skills.includes(skillFilter))) return false;
+      if (ingredientFilter) {
+        const ing = ingredientFilter.toLowerCase();
+        if (!g.recipes.some(r =>
+          (r.ingredients as (string | string[])[]).some(i => {
+            const id = Array.isArray(i) ? i[0] : i;
+            return id.includes(ing) || getItemName(id, lang).toLowerCase().includes(ing);
+          })
+        )) return false;
+      }
       if (typeFilter === 'shaped' && !g.hasShapedVariant) return false;
       if (typeFilter === 'shapeless' && !g.hasShapelessVariant) return false;
       return true;
     });
-  }, [keyword, stationFilter, typeFilter, lang]);
+  }, [keyword, stationFilter, skillFilter, ingredientFilter, typeFilter, lang]);
 
   const totalRecipeCount = filteredGroups.reduce((s, g) => s + g.recipes.length, 0);
   const selectedGroup = selectedOutputId ? allGroups.find(x => x.outputId === selectedOutputId) ?? null : null;
@@ -1362,9 +1419,25 @@ export default function RecipesHub() {
               />
             </div>
             <select value={stationFilter} onChange={e => setStationFilter(e.target.value)}
-              style={{ padding: '6px 10px', borderRadius: 6, border: '1px solid var(--surface2)', background: 'var(--bg)', color: 'var(--text)' }}>
+              style={{ padding: '6px 10px', borderRadius: 6, border: `1px solid ${stationFilter ? 'var(--gold)' : 'var(--surface2)'}`, background: 'var(--bg)', color: stationFilter ? 'var(--gold)' : 'var(--text)' }}>
               <option value="">{lang === 'hu' ? '– Összes állomás –' : '– All stations –'}</option>
-              {allStations.map(s => <option key={s} value={s}>{s}</option>)}
+              {allStations.map(s => <option key={s} value={s}>{STATION_LABELS[s]?.[lang] ?? s}</option>)}
+            </select>
+            <input
+              type="text"
+              placeholder={lang === 'hu' ? 'Alapanyag szűrése…' : 'Filter by ingredient…'}
+              value={ingredientFilter}
+              onChange={e => setIngredientFilter(e.target.value)}
+              style={{ padding: '6px 10px', borderRadius: 6, border: `1px solid ${ingredientFilter ? 'rgba(126,200,227,.6)' : 'var(--surface2)'}`, background: 'var(--bg)', color: ingredientFilter ? 'var(--text)' : 'var(--text)', width: 180 }}
+            />
+            <select value={skillFilter} onChange={e => setSkillFilter(e.target.value)}
+              style={{ padding: '6px 10px', borderRadius: 6, border: `1px solid ${skillFilter ? 'var(--gold)' : 'var(--surface2)'}`, background: 'var(--bg)', color: skillFilter ? 'var(--gold)' : 'var(--text)' }}>
+              <option value="">{lang === 'hu' ? '– Összes skill –' : '– All skills –'}</option>
+              {allSkills.map(s => (
+                <option key={s} value={s}>
+                  {(SKILL_LABELS[s]?.[lang] ?? s)}
+                </option>
+              ))}
             </select>
             <select value={typeFilter} onChange={e => setTypeFilter(e.target.value as 'all' | 'shaped' | 'shapeless')}
               style={{ padding: '6px 10px', borderRadius: 6, border: '1px solid var(--surface2)', background: 'var(--bg)', color: 'var(--text)' }}>

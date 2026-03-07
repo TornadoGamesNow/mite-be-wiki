@@ -1,9 +1,12 @@
-import { useState, useEffect, useMemo, useRef } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import itemsRaw from '../../data/items.json';
+import recipesRaw from '../../data/recipes_full.json';
 
 interface ItemInfo {
   mcmod_id?: number;
   desc?: string;
+  desc_en?: string;
+  desc_hu?: string;
   added?: string;
   removed_v?: string;
   removed?: boolean;
@@ -24,6 +27,32 @@ interface ItemData {
 const allItems: ItemData[] = Object.entries(itemsRaw as Record<string, Omit<ItemData, 'id'>>).map(
   ([id, v]) => ({ id, ...v })
 );
+
+// Build set of item IDs that have at least one recipe
+const itemsWithRecipe = new Set((recipesRaw as any[]).map(r => r.output as string));
+
+// Index: item ID → its recipes
+const recipesByOutput: Record<string, any[]> = {};
+for (const r of recipesRaw as any[]) {
+  const key = r.output as string;
+  if (!recipesByOutput[key]) recipesByOutput[key] = [];
+  recipesByOutput[key].push(r);
+}
+
+const STATION_LABELS: Record<string, string> = {
+  flint_workbench:          'Kovakő Munkaasztal',
+  copper_workbench:         'Réz Munkaasztal',
+  silver_workbench:         'Ezüst Munkaasztal',
+  gold_workbench:           'Arany Munkaasztal',
+  iron_workbench:           'Vas Munkaasztal',
+  hardstone_workbench:      'Kőmag Munkaasztal',
+  ancient_metal_workbench:  'Ős Fém Munkaasztal',
+  mithril_workbench:        'Mithril Munkaasztal',
+  adamantium_workbench:     'Adamantium Munkaasztal',
+  blast_furnace:            'Nagy Kemence',
+  stone_furnace:            'Kő Kemence',
+  hand:                     'Kézzel',
+};
 
 // --- Tier metadata ---
 const TIER_META: Record<string, { hu: string; en: string; color: string; bg: string }> = {
@@ -135,6 +164,7 @@ export default function ItemExplorer() {
   const [catFilter, setCatFilter] = useState('');
   const [tierFilter, setTierFilter] = useState('');
   const [selected, setSelected] = useState<ItemData | null>(null);
+  const [showRemoved, setShowRemoved] = useState(false);
   const [itemInfo, setItemInfo] = useState<Record<string, ItemInfo>>({});
 
   useEffect(() => {
@@ -165,10 +195,19 @@ export default function ItemExplorer() {
     return allItems.filter(item => {
       if (catFilter && item.category !== catFilter) return false;
       if (tierFilter && item.tier !== tierFilter) return false;
-      if (q && !item.name.hu.toLowerCase().includes(q) && !item.name.en.toLowerCase().includes(q) && !item.id.includes(q)) return false;
+      const info = itemInfo[item.id];
+      if (!showRemoved && info?.removed) return false;
+      if (q) {
+        const nameMatch = item.name.hu.toLowerCase().includes(q)
+          || item.name.en.toLowerCase().includes(q)
+          || item.id.includes(q);
+        const descMatch = (info?.desc_hu ?? '').toLowerCase().includes(q)
+          || (info?.desc_en ?? '').toLowerCase().includes(q);
+        if (!nameMatch && !descMatch) return false;
+      }
       return true;
     });
-  }, [search, catFilter, tierFilter]);
+  }, [search, catFilter, tierFilter, showRemoved, itemInfo]);
 
   const isFiltered = catFilter !== '' || tierFilter !== '' || search !== '';
 
@@ -246,22 +285,35 @@ export default function ItemExplorer() {
           </div>
         </div>
 
-        {/* Search */}
-        <div style={{ flexShrink: 0, position: 'relative' }}>
-          <input
-            type="search"
-            placeholder={lang === 'hu' ? 'Item keresése…' : 'Search items…'}
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-            style={{ padding: '6px 32px 6px 12px', borderRadius: 6, border: '1px solid var(--surface2)',
-                     background: 'var(--surface)', color: 'var(--text)', width: 220, fontFamily: 'inherit' }}
-          />
-          {search && (
-            <button onClick={() => setSearch('')}
-              style={{ position: 'absolute', right: 8, top: '50%', transform: 'translateY(-50%)',
-                       background: 'none', border: 'none', color: 'var(--text2)', cursor: 'pointer',
-                       fontSize: '1em', padding: '2px 4px', lineHeight: 1 }}>×</button>
-          )}
+        {/* Search + extra toggles */}
+        <div style={{ flexShrink: 0, display: 'flex', flexDirection: 'column', gap: 6, alignItems: 'flex-end' }}>
+          <div style={{ position: 'relative' }}>
+            <input
+              type="search"
+              placeholder={lang === 'hu' ? 'Item keresése…' : 'Search items…'}
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              style={{ padding: '6px 32px 6px 12px', borderRadius: 6, border: '1px solid var(--surface2)',
+                       background: 'var(--surface)', color: 'var(--text)', width: 220, fontFamily: 'inherit' }}
+            />
+            {search && (
+              <button onClick={() => setSearch('')}
+                style={{ position: 'absolute', right: 8, top: '50%', transform: 'translateY(-50%)',
+                         background: 'none', border: 'none', color: 'var(--text2)', cursor: 'pointer',
+                         fontSize: '1em', padding: '2px 4px', lineHeight: 1 }}>×</button>
+            )}
+          </div>
+          <button
+            onClick={() => setShowRemoved(v => !v)}
+            style={{
+              ...pillStyle(showRemoved, '#e94560', 'rgba(233,69,96,.12)'),
+              fontSize: '.72em',
+            }}
+          >
+            {showRemoved
+              ? (lang === 'hu' ? '✕ Eltávolított itemek látszanak' : '✕ Showing removed items')
+              : (lang === 'hu' ? 'Eltávolított itemek elrejtve' : 'Removed items hidden')}
+          </button>
         </div>
       </div>
 
@@ -297,6 +349,8 @@ export default function ItemExplorer() {
         {filtered.map(item => {
           const tierMeta = item.tier ? TIER_META[item.tier] : null;
           const isSelected = selected?.id === item.id;
+          const hasRecipe = itemsWithRecipe.has(item.id);
+          const isRemoved = itemInfo[item.id]?.removed;
           return (
             <div
               key={item.id}
@@ -304,13 +358,22 @@ export default function ItemExplorer() {
               style={{
                 display: 'flex', flexDirection: 'column', alignItems: 'center',
                 gap: 5, padding: '8px 6px',
-                border: `1px solid ${isSelected ? 'var(--gold)' : 'var(--surface2)'}`,
+                border: `1px solid ${isSelected ? 'var(--gold)' : isRemoved ? 'rgba(233,69,96,.3)' : 'var(--surface2)'}`,
                 borderRadius: 6, cursor: 'pointer',
-                background: isSelected ? 'rgba(240,192,64,.07)' : 'var(--surface)',
+                background: isSelected ? 'rgba(240,192,64,.07)' : isRemoved ? 'rgba(233,69,96,.05)' : 'var(--surface)',
                 transition: 'all .12s',
+                opacity: isRemoved ? 0.6 : 1,
+                position: 'relative',
               }}
               title={item.name[lang as 'hu' | 'en']}
             >
+              {hasRecipe && (
+                <span style={{
+                  position: 'absolute', top: 4, right: 5,
+                  fontSize: '.55em', color: 'var(--gold)', opacity: 0.8,
+                  lineHeight: 1,
+                }} title={lang === 'hu' ? 'Van recept' : 'Has recipe'}>⚒</span>
+              )}
               <ItemIcon item={item} size={32} />
               <span style={{ fontSize: '.7em', textAlign: 'center', lineHeight: 1.3,
                 color: 'var(--text)', wordBreak: 'break-word', maxWidth: '100%' }}>
@@ -417,19 +480,26 @@ export default function ItemExplorer() {
               )}
 
               {/* Description */}
-              {itemInfo[selected.id]?.desc && (
-                <div style={{ marginBottom: 20 }}>
-                  <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
-                    color: 'var(--text2)', marginBottom: 6 }}>
-                    {lang === 'hu' ? 'Leírás' : 'Description'}
+              {(() => {
+                const info = itemInfo[selected.id];
+                const descText = lang === 'hu'
+                  ? (info?.desc_hu || info?.desc_en || info?.desc)
+                  : (info?.desc_en || info?.desc);
+                if (!descText) return null;
+                return (
+                  <div style={{ marginBottom: 20 }}>
+                    <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
+                      color: 'var(--text2)', marginBottom: 6 }}>
+                      {lang === 'hu' ? 'Leírás' : 'Description'}
+                    </div>
+                    <div style={{ fontSize: '.88em', lineHeight: 1.65, color: 'var(--text)',
+                      background: 'var(--surface)', border: '1px solid var(--surface2)',
+                      borderRadius: 6, padding: '10px 14px' }}>
+                      {descText}
+                    </div>
                   </div>
-                  <div style={{ fontSize: '.88em', lineHeight: 1.65, color: 'var(--text)',
-                    background: 'var(--surface)', border: '1px solid var(--surface2)',
-                    borderRadius: 6, padding: '10px 14px' }}>
-                    {itemInfo[selected.id].desc}
-                  </div>
-                </div>
-              )}
+                );
+              })()}
 
               {/* Tier progression */}
               {(() => {
@@ -491,6 +561,70 @@ export default function ItemExplorer() {
                   </div>
                 </div>
               )}
+
+              {/* Inline recipes */}
+              {(() => {
+                const recs = recipesByOutput[selected.id];
+                if (!recs || recs.length === 0) return null;
+                return (
+                  <div style={{ marginBottom: 20 }}>
+                    <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
+                      color: 'var(--text2)', marginBottom: 8 }}>
+                      {lang === 'hu' ? 'Receptek' : 'Recipes'} ({recs.length})
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                      {recs.slice(0, 3).map((r: any, i: number) => {
+                        const ings: string[] = (r.ingredients as (string | string[])[]).map((x: string | string[]) =>
+                          Array.isArray(x) ? x[0] : x
+                        );
+                        const ingCounts: Record<string, number> = {};
+                        for (const id of ings) { ingCounts[id] = (ingCounts[id] || 0) + 1; }
+                        const station = STATION_LABELS[r.station] ?? r.station;
+                        return (
+                          <div key={i} style={{ background: 'var(--surface)', border: '1px solid var(--surface2)',
+                            borderRadius: 6, padding: '8px 12px', fontSize: '.82em' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 6, flexWrap: 'wrap' }}>
+                              <span style={{ fontWeight: 600, color: 'var(--text)' }}>
+                                {r.outputQty > 1 ? `×${r.outputQty} — ` : ''}{station}
+                              </span>
+                              {r.skills?.length > 0 && (
+                                <span style={{ fontSize: '.85em', color: 'var(--gold)', opacity: 0.8 }}>
+                                  🎓 {r.skills.join(', ')}
+                                </span>
+                              )}
+                            </div>
+                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
+                              {Object.entries(ingCounts).map(([ingId, cnt]) => {
+                                const ingData = (itemsRaw as any)[ingId];
+                                const ingName = ingData?.name?.[lang as 'hu' | 'en'] ?? ingId;
+                                const ingImg = ingData?.img;
+                                return (
+                                  <div key={ingId} title={ingName}
+                                    style={{ display: 'flex', alignItems: 'center', gap: 3,
+                                      background: 'var(--bg)', border: '1px solid var(--surface2)',
+                                      borderRadius: 4, padding: '2px 6px 2px 3px', fontSize: '.85em' }}>
+                                    {ingImg ? (
+                                      <img src={`${BASE}/${ingImg}`} width={16} height={16}
+                                        style={{ imageRendering: 'pixelated' }} alt={ingId} />
+                                    ) : <span style={{ width: 16, textAlign: 'center' }}>📦</span>}
+                                    {cnt > 1 && <span style={{ color: 'var(--gold)', fontWeight: 700 }}>×{cnt}</span>}
+                                    <span style={{ color: 'var(--text2)' }}>{ingName}</span>
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          </div>
+                        );
+                      })}
+                      {recs.length > 3 && (
+                        <div style={{ fontSize: '.78em', color: 'var(--text2)', textAlign: 'center' }}>
+                          {lang === 'hu' ? `+ ${recs.length - 3} további recept a Receptek oldalon` : `+ ${recs.length - 3} more recipes on the Recipes page`}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })()}
 
               {/* Bottom links */}
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', borderTop: '1px solid var(--surface2)', paddingTop: 16 }}>

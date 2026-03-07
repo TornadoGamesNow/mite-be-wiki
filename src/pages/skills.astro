@@ -1,0 +1,493 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import TopNav from '../components/TopNav.astro';
+import Sidebar from '../components/Sidebar.astro';
+import '../styles/global.css';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const sidebarGroups = {
+  hu: [
+    {
+      title: '🏠 Navigáció',
+      links: [
+        { href: './', label: '← Wiki főoldal' },
+      ],
+    },
+    {
+      title: '🎓 Képességek',
+      links: [
+        { href: '#attekintes', label: 'Áttekintés' },
+        { href: '#blacksmithing', label: 'Kovácsmesterség' },
+        { href: '#carpentry', label: 'Ácsmesterség' },
+        { href: '#fineArts', label: 'Finom Mesterség' },
+        { href: '#foodPreparation', label: 'Ételkészítés' },
+        { href: '#masonry', label: 'Kőfaragás' },
+        { href: '#brewing', label: 'Főzőmesterség' },
+        { href: '#archery', label: 'Íjászat' },
+        { href: '#tinkering', label: 'Barkácsolás' },
+        { href: '#fishing', label: 'Horgászat' },
+        { href: '#farming', label: 'Gazdálkodás' },
+        { href: '#mining', label: 'Bányászat' },
+      ],
+    },
+  ],
+  en: [
+    {
+      title: '🏠 Navigation',
+      links: [
+        { href: './', label: '← Main wiki' },
+      ],
+    },
+    {
+      title: '🎓 Skills',
+      links: [
+        { href: '#attekintes', label: 'Overview' },
+        { href: '#blacksmithing', label: 'Blacksmithing' },
+        { href: '#carpentry', label: 'Carpentry' },
+        { href: '#fineArts', label: 'Fine Arts' },
+        { href: '#foodPreparation', label: 'Food Preparation' },
+        { href: '#masonry', label: 'Masonry' },
+        { href: '#brewing', label: 'Brewing' },
+        { href: '#archery', label: 'Archery' },
+        { href: '#tinkering', label: 'Tinkering' },
+        { href: '#fishing', label: 'Fishing' },
+        { href: '#farming', label: 'Farming' },
+        { href: '#mining', label: 'Mining' },
+      ],
+    },
+  ],
+};
+---
+
+<BaseLayout title="Képességek — MITE: Break Everything Wiki">
+  <Header />
+  <TopNav currentPage="skills" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<div data-lang="hu" id="attekintes">
+<h2>Képességek (Skills)</h2>
+<p>A MITE:BE receptek egy részéhez valamelyik képesség ismerete szükséges. A képességeket Tudáskönyvekkel (Knowledge Books) szerezheted meg — ezeket barlangokban, falvakban és különleges ellenfelektől találhatod. Minden képesség meghatározza, milyen craftolási lehetőségek nyílnak meg számodra.</p>
+
+<div class="warning-box">⚠️ <strong>Fontos:</strong> A <strong>foglalkozás (Profession)</strong> rendszer jelenleg <strong>nincs aktiválva a v0.9.0-ban</strong>. A képességek önállóan is felvehetők Tudáskönyvekből — nem szükséges foglalkozást választani hozzájuk.</div>
+
+<h3>Képességek áttekintő táblázat</h3>
+<table class="compare-table">
+  <tr><th>Képesség</th><th>Receptek száma</th><th>Főbb állomások</th></tr>
+  <tr><td><a href={`${base}/recipes/?skill=blacksmithing`}>⚒ Kovácsmesterség (Blacksmithing)</a></td><td>331</td><td>Munkaasztalok, Nagy Kemence</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=carpentry`}>🪵 Ácsmesterség (Carpentry)</a></td><td>99</td><td>Munkaasztalok</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=fineArts`}>✨ Finom Mesterség (Fine Arts)</a></td><td>105</td><td>Munkaasztalok, Vas Munkaasztal</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=foodPreparation`}>🍖 Ételkészítés (Food Preparation)</a></td><td>94</td><td>Munkaasztalok, Kő Kemence</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=masonry`}>🧱 Kőfaragás (Masonry)</a></td><td>77</td><td>Munkaasztalok, Kő Kemence</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=brewing`}>🧪 Főzőmesterség (Brewing)</a></td><td>75</td><td>Munkaasztalok</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=archery`}>🏹 Íjászat (Archery)</a></td><td>18</td><td>Munkaasztalok</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=tinkering`}>🔧 Barkácsolás (Tinkering)</a></td><td>19</td><td>Kovakő, Vas, Arany Munkaasztal</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=fishing`}>🎣 Horgászat (Fishing)</a></td><td>10</td><td>Munkaasztalok</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=farming`}>🌾 Gazdálkodás (Farming)</a></td><td>4</td><td>Kovakő, Kőmag Munkaasztal</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=mining`}>⛏ Bányászat (Mining)</a></td><td>3</td><td>Kovakő, Vas Munkaasztal</td></tr>
+</table>
+</div>
+
+<!-- ===== BLACKSMITHING ===== -->
+<div data-lang="hu" id="blacksmithing">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⚒ Kovácsmesterség (Blacksmithing)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>A legkiterjedtebb képesség — <strong>331 recept</strong>. Nélküle nem készíthetsz fém szerszámokat, fegyvereket és páncélzatot. Kovacs mesterség szükséges szinte minden fémmegmunkáláshoz a rézrúd-formázástól az adamantium teljes készletig.</p>
+
+<table class="compare-table">
+  <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
+  <tr><td>Réz, Ezüst, Bronz, Vas, Arany szerszámok és fegyverek</td><td>Kovakő Munkaasztal szükséges</td></tr>
+  <tr><td>Kőmag, Ős Fém, Mithril, Adamantium felszerelés</td><td>Megfelelő szintű munkaasztal</td></tr>
+  <tr><td>Páncélok minden anyagból</td><td>Réztől Adamantiumig</td></tr>
+  <tr><td>Fém formák és öntőformák</td><td>Nagy Kemencénél szükséges</td></tr>
+  <tr><td>Háborús kalapácsok és speciális fegyverek</td><td>Csatabárd, Kasza, Kaszapárd</td></tr>
+</table>
+
+<div class="info-box">💡 <strong>Kovácsmesterség nélkül</strong> csak fa- és kőszerszámokat (Kova korszak) tudsz készíteni. Ez az első és legfontosabb képesség!</div>
+</div></div></div>
+</div>
+
+<!-- ===== CARPENTRY ===== -->
+<div data-lang="hu" id="carpentry">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🪵 Ácsmesterség (Carpentry)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>99 recept</strong>. A fahasznosítás mestere — deszkák, gerendák, dobozok, ládák, keretek és más fa alapú tárgyak készítéséhez szükséges.</p>
+
+<table class="compare-table">
+  <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
+  <tr><td>Deszkák és falemezek (Plank Boards)</td><td>Fejlettebb faanyagok</td></tr>
+  <tr><td>Ládák, szekrények, könyvespolcok</td><td>Tárolás és bútorzat</td></tr>
+  <tr><td>Munkaasztal alapok és keretrendszerek</td><td>Magasabb szintű munkaasztalokhoz</td></tr>
+  <tr><td>Fa kerítések, kapuk, ajtók</td><td>Építkezés</td></tr>
+  <tr><td>Torony állvány, rácsos állvány</td><td>Speciális építési elemek</td></tr>
+</table>
+
+</div></div></div>
+</div>
+
+<!-- ===== FINE ARTS ===== -->
+<div data-lang="hu" id="fineArts">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>✨ Finom Mesterség (Fine Arts)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>105 recept</strong>. Ékszerek, dísztárgyak, speciális tárgyak és finomabb munkák. Fejlett anyagokkal kombinálva különleges képességű eszközöket ad.</p>
+
+<table class="compare-table">
+  <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
+  <tr><td>Érmék (réz, ezüst, arany, ős fém)</td><td>Csereeszközök</td></tr>
+  <tr><td>Ékszerek és gyűrűk</td><td>Speciális bónuszok</td></tr>
+  <tr><td>Kristályüveg és dekorációs tárgyak</td><td>Díszítés</td></tr>
+  <tr><td>Speciális nyilak és lövedékek</td><td>Haladó harci eszközök</td></tr>
+  <tr><td>Szűrőpapírok és kémiai eszközök</td><td>Főzőmesterséggel kombinálva</td></tr>
+</table>
+
+</div></div></div>
+</div>
+
+<!-- ===== FOOD PREPARATION ===== -->
+<div data-lang="hu" id="foodPreparation">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🍖 Ételkészítés (Food Preparation)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>94 recept</strong>. Túlélés szempontjából kritikus — az élelmiszerek többsége csak ezzel a képességgel készíthető el. A kemencés sütéstől a komplex ételekig mindent fed.</p>
+
+<table class="compare-table">
+  <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
+  <tr><td>Kenyér, sütemények, ételek sütése</td><td>Kő Kemencében</td></tr>
+  <tr><td>Pörkölt, leves, porridge</td><td>Meleg ételek — hőmérséklet fenntartáshoz</td></tr>
+  <tr><td>Konzerv és tartósított ételek</td><td>Hosszabb eltarthatóság</td></tr>
+  <tr><td>Különleges gyógyhatású ételek</td><td>Méregellenszer, gyógyitalok</td></tr>
+  <tr><td>Gyümölcslevek és üdítők</td><td>Alternatív szomjúságoltók</td></tr>
+</table>
+
+<div class="info-box">🌡️ <strong>Hideg klímás biome-okban</strong> a meleg ételek (pörkölt, leves, porridge) hőmérséklet-visszatöltést adnak — ezért az ételkészítés képesség életmentő lehet!</div>
+
+</div></div></div>
+</div>
+
+<!-- ===== MASONRY ===== -->
+<div data-lang="hu" id="masonry">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🧱 Kőfaragás (Masonry)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>77 recept</strong>. Kőből, téglából és agyagból készített épületanyagok és struktúrák. Erős védelmi struktúrákhoz és fejlettebb tüzelőberendezések alapjaihoz szükséges.</p>
+
+<table class="compare-table">
+  <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
+  <tr><td>Tégla, kő tégla, kőlap variánsok</td><td>Erős épületanyagok</td></tr>
+  <tr><td>Kemencék (Kő, Edzett Agyag, Obszidián)</td><td>Kő Kemencében készíthetők</td></tr>
+  <tr><td>Agyag és homokkő blokkok</td><td>Épületdíszítés</td></tr>
+  <tr><td>Öntőformák ércolvasztáshoz</td><td>Kovakő Munkaasztalon kézzel is</td></tr>
+  <tr><td>Obszidián tégla és speciális blokkok</td><td>Haladó Nether-előkészület</td></tr>
+</table>
+
+</div></div></div>
+</div>
+
+<!-- ===== BREWING ===== -->
+<div data-lang="hu" id="brewing">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🧪 Főzőmesterség (Brewing)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>75 recept</strong>. Bájitalok, sajt és speciális italok készítéséhez szükséges. A hagyományos Minecraft főzetálványon túl az Üst-alapú receptek nagy részét is ez a képesség fedi.</p>
+
+<table class="compare-table">
+  <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
+  <tr><td>Bájitalok és fejlett bájitalok</td><td>Üst + főzetállvány</td></tr>
+  <tr><td>Sajt készítés (Cheese)</td><td>Bármilyen fém vödörrel, max. 9 vödör/köteg</td></tr>
+  <tr><td>Mézes italok és természetes kivonatok</td><td>Alternatív bájitalok</td></tr>
+  <tr><td>Vízpárlás és tisztított víz</td><td>Szűrőpapír szükséges</td></tr>
+  <tr><td>Speciális Nether italok</td><td>Tűzállóság növelés</td></tr>
+</table>
+
+<div class="info-box">🧀 <strong>Sajt recepthez</strong> bármilyen fém vödör megfelel (réztől adamantiumig). A sajt egyenként adható hozzá az üsthöz, maximum 9 vödörnyi adag készíthető egyszerre. Részletek a <a href="brewing/">Brewing oldalon</a>.</div>
+
+</div></div></div>
+</div>
+
+<!-- ===== ARCHERY ===== -->
+<div data-lang="hu" id="archery">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🏹 Íjászat (Archery)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>18 recept</strong>. Íjak, nyilak és távolsági harc felszerelések. Kiegészíti a Finom Mesterséget a speciális nyilak terén.</p>
+
+<table class="compare-table">
+  <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
+  <tr><td>Fa, Réz, Ezüst íjak</td><td>Alap íjak</td></tr>
+  <tr><td>Haladó íjak (Kőmag, Ős Fém, Mithril, Adamantium)</td><td>Nagyobb hatótáv és sebzés</td></tr>
+  <tr><td>Nyíl variánsok (tűz, robbanó, mérgező)</td><td>Speciális hatások</td></tr>
+  <tr><td>Tegez és nyíltartó</td><td>Több nyíl hordozása</td></tr>
+</table>
+
+</div></div></div>
+</div>
+
+<!-- ===== TINKERING ===== -->
+<div data-lang="hu" id="tinkering">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🔧 Barkácsolás (Tinkering)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>19 recept</strong>. Mechanikus és speciális eszközök. Kevés recept, de fontos tárgyakat old fel — elsősorban csapdák, szűrők és különleges szerkezetek.</p>
+
+<table class="compare-table">
+  <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
+  <tr><td>Szita variánsok (fa, réz, vas, stb.)</td><td>Kavics szitáláshoz</td></tr>
+  <tr><td>Szűrők és szűrőpapírok</td><td>Vízszűrés, főzőmesterséggel kombinálva</td></tr>
+  <tr><td>Csapdák és mechanikus szerkezetek</td><td>Védelmi célok</td></tr>
+  <tr><td>Speciális tárolóeszközök</td><td>Fluid Tank, Láda variánsok</td></tr>
+</table>
+
+</div></div></div>
+</div>
+
+<!-- ===== FISHING ===== -->
+<div data-lang="hu" id="fishing">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🎣 Horgászat (Fishing)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>10 recept</strong>. Horgászbotok és horgászathoz kapcsolódó felszerelések különböző anyagokból.</p>
+
+<table class="compare-table">
+  <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
+  <tr><td>Horgászbot variánsok (Réztől Adamantiumig)</td><td>Jobb bot = jobb fogás esély</td></tr>
+  <tr><td>Speciális horgok és csalizók</td><td>Ritka halak fogásához</td></tr>
+</table>
+
+</div></div></div>
+</div>
+
+<!-- ===== FARMING ===== -->
+<div data-lang="hu" id="farming">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌾 Gazdálkodás (Farming)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>4 recept</strong>. Gazdálkodással kapcsolatos speciális receptek — vetőmagok feldolgozása és kertészeti eszközök.</p>
+
+<table class="compare-table">
+  <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
+  <tr><td>Magok és vetőmagok feldolgozása</td><td>Speciális növényfajták</td></tr>
+  <tr><td>Kertészeti eszközök</td><td>Hatékonyabb termesztés</td></tr>
+</table>
+
+</div></div></div>
+</div>
+
+<!-- ===== MINING ===== -->
+<div data-lang="hu" id="mining">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⛏ Bányászat (Mining)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>3 recept</strong>. Bányászathoz kapcsolódó speciális szerszámok és kiegészítők. Kevés recept, de hasznos bányász felszereléseket old fel.</p>
+
+<table class="compare-table">
+  <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
+  <tr><td>Speciális bányászeszközök</td><td>Hatékonyabb bányászat</td></tr>
+  <tr><td>Dinamit és robbantószerek</td><td>Gyors blokk-eltávolítás</td></tr>
+</table>
+
+</div></div></div>
+</div>
+
+<!-- ===== ENGLISH ===== -->
+
+<div data-lang="en" id="attekintes-en">
+<h2>Skills</h2>
+<p>Some MITE:BE recipes require a specific skill to craft. Skills are obtained through Knowledge Books — found in caves, villages, and dropped by special enemies. Each skill unlocks a set of crafting recipes.</p>
+
+<div class="warning-box">⚠️ <strong>Note:</strong> The <strong>Profession</strong> system is currently <strong>not active in v0.9.0</strong>. Skills can be acquired independently via Knowledge Books — no profession choice is required.</div>
+
+<h3>Skills overview</h3>
+<table class="compare-table">
+  <tr><th>Skill</th><th>Recipes</th><th>Main stations</th></tr>
+  <tr><td><a href={`${base}/recipes/?skill=blacksmithing`}>⚒ Blacksmithing</a></td><td>331</td><td>Workbenches, Blast Furnace</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=carpentry`}>🪵 Carpentry</a></td><td>99</td><td>Workbenches</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=fineArts`}>✨ Fine Arts</a></td><td>105</td><td>Workbenches, Iron Workbench</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=foodPreparation`}>🍖 Food Preparation</a></td><td>94</td><td>Workbenches, Stone Furnace</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=masonry`}>🧱 Masonry</a></td><td>77</td><td>Workbenches, Stone Furnace</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=brewing`}>🧪 Brewing</a></td><td>75</td><td>Workbenches</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=archery`}>🏹 Archery</a></td><td>18</td><td>Workbenches</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=tinkering`}>🔧 Tinkering</a></td><td>19</td><td>Flint, Iron, Gold Workbench</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=fishing`}>🎣 Fishing</a></td><td>10</td><td>Workbenches</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=farming`}>🌾 Farming</a></td><td>4</td><td>Flint, Hardstone Workbench</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=mining`}>⛏ Mining</a></td><td>3</td><td>Flint, Iron Workbench</td></tr>
+</table>
+</div>
+
+<div data-lang="en" id="blacksmithing-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⚒ Blacksmithing</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p>The most extensive skill — <strong>331 recipes</strong>. Without it you cannot craft metal tools, weapons, or armor. Required for nearly all metalworking from copper rod shaping to a full adamantium set.</p>
+
+<table class="compare-table">
+  <tr><th>Unlocks</th><th>Notes</th></tr>
+  <tr><td>Copper, Silver, Bronze, Iron, Gold tools and weapons</td><td>Flint Workbench required</td></tr>
+  <tr><td>Hardstone, Ancient Metal, Mithril, Adamantium gear</td><td>Matching tier workbench</td></tr>
+  <tr><td>Armor for all metal tiers</td><td>Copper through Adamantium</td></tr>
+  <tr><td>Ingot molds and casting molds</td><td>Required for Blast Furnace</td></tr>
+  <tr><td>War hammers and special weapons</td><td>Battle axe, Scythe, Glaive</td></tr>
+</table>
+
+<div class="info-box">💡 <strong>Without Blacksmithing</strong> you are limited to flint and stone tools. This is the first and most critical skill to acquire!</div>
+</div></div></div>
+</div>
+
+<div data-lang="en" id="carpentry-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🪵 Carpentry</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>99 recipes</strong>. Mastery over wood — planks, beams, chests, frames, and other wood-based items.</p>
+
+<table class="compare-table">
+  <tr><th>Unlocks</th><th>Notes</th></tr>
+  <tr><td>Advanced planks and wood panels</td><td>Better building materials</td></tr>
+  <tr><td>Chests, cabinets, bookshelves</td><td>Storage and furniture</td></tr>
+  <tr><td>Workbench frames and cores</td><td>Required for higher-tier workbenches</td></tr>
+  <tr><td>Fences, gates, doors</td><td>Construction</td></tr>
+  <tr><td>Tower rack, lattice rack</td><td>Special building elements</td></tr>
+</table>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="fineArts-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>✨ Fine Arts</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>105 recipes</strong>. Jewelry, decorative items, and precision crafting. Combined with advanced materials it unlocks unique equipment.</p>
+
+<table class="compare-table">
+  <tr><th>Unlocks</th><th>Notes</th></tr>
+  <tr><td>Coins (copper, silver, gold, ancient metal)</td><td>Trade currency</td></tr>
+  <tr><td>Jewelry and rings</td><td>Special stat bonuses</td></tr>
+  <tr><td>Crystal glass and decorative objects</td><td>Decoration</td></tr>
+  <tr><td>Special arrows and projectiles</td><td>Advanced ranged combat</td></tr>
+  <tr><td>Filter papers and chemical tools</td><td>Combined with Brewing</td></tr>
+</table>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="foodPreparation-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🍖 Food Preparation</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>94 recipes</strong>. Critically important for survival — most food items require this skill. Covers everything from furnace baking to complex dishes.</p>
+
+<table class="compare-table">
+  <tr><th>Unlocks</th><th>Notes</th></tr>
+  <tr><td>Bread, cakes, and baked goods</td><td>In the Stone Furnace</td></tr>
+  <tr><td>Stew, soup, porridge</td><td>Warm food — needed for temperature management</td></tr>
+  <tr><td>Canned and preserved food</td><td>Longer shelf life</td></tr>
+  <tr><td>Medicinal food items</td><td>Antidotes, healing foods</td></tr>
+  <tr><td>Fruit juices and refreshments</td><td>Alternative thirst quenchers</td></tr>
+</table>
+
+<div class="info-box">🌡️ <strong>In cold biomes</strong> warm foods (stew, soup, porridge) restore body temperature — making Food Preparation potentially life-saving!</div>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="masonry-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🧱 Masonry</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>77 recipes</strong>. Stone, brick, and clay building materials. Required for strong defensive structures and advanced furnace construction.</p>
+
+<table class="compare-table">
+  <tr><th>Unlocks</th><th>Notes</th></tr>
+  <tr><td>Brick, stone brick, stone slab variants</td><td>Strong building blocks</td></tr>
+  <tr><td>Furnaces (Stone, Hardened Clay, Obsidian)</td><td>Crafted in the Stone Furnace</td></tr>
+  <tr><td>Clay and sandstone blocks</td><td>Decorative building</td></tr>
+  <tr><td>Ingot molds for ore smelting</td><td>Also craftable by hand at Flint Workbench</td></tr>
+  <tr><td>Obsidian bricks and special blocks</td><td>Advanced Nether preparation</td></tr>
+</table>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="brewing-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🧪 Brewing</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>75 recipes</strong>. Required for potions, cheese, and special drinks. Covers traditional Minecraft brewing stand use plus most cauldron-based recipes.</p>
+
+<table class="compare-table">
+  <tr><th>Unlocks</th><th>Notes</th></tr>
+  <tr><td>Potions and advanced potions</td><td>Cauldron + brewing stand</td></tr>
+  <tr><td>Cheese crafting</td><td>Any metal bucket works, max 9 buckets per batch</td></tr>
+  <tr><td>Mead and natural extracts</td><td>Alternative potions</td></tr>
+  <tr><td>Water distillation and purified water</td><td>Filter paper required</td></tr>
+  <tr><td>Special Nether drinks</td><td>Fire resistance boost</td></tr>
+</table>
+
+<div class="info-box">🧀 <strong>Cheese recipe</strong> works with any metal bucket (copper through adamantium). Buckets are added one at a time to the cauldron, with a maximum of 9 per batch. See the <a href="brewing/">Brewing page</a> for details.</div>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="archery-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🏹 Archery</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>18 recipes</strong>. Bows, arrows, and ranged combat equipment. Complements Fine Arts for special arrows.</p>
+
+<table class="compare-table">
+  <tr><th>Unlocks</th><th>Notes</th></tr>
+  <tr><td>Wood, Copper, Silver bows</td><td>Basic bows</td></tr>
+  <tr><td>Advanced bows (Hardstone, Ancient Metal, Mithril, Adamantium)</td><td>Greater range and damage</td></tr>
+  <tr><td>Arrow variants (fire, explosive, poison)</td><td>Special effects</td></tr>
+  <tr><td>Quiver and arrow holder</td><td>Carry more arrows</td></tr>
+</table>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="tinkering-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🔧 Tinkering</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>19 recipes</strong>. Mechanical and special devices. Few recipes but important items — traps, filters, and special mechanisms.</p>
+
+<table class="compare-table">
+  <tr><th>Unlocks</th><th>Notes</th></tr>
+  <tr><td>Sieve variants (wood, copper, iron, etc.)</td><td>For sifting gravel</td></tr>
+  <tr><td>Filters and filter paper</td><td>Water filtration, combined with Brewing</td></tr>
+  <tr><td>Traps and mechanical devices</td><td>Defensive purposes</td></tr>
+  <tr><td>Special storage items</td><td>Fluid Tank, chest variants</td></tr>
+</table>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="fishing-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🎣 Fishing</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>10 recipes</strong>. Fishing rods and fishing equipment in various materials.</p>
+
+<table class="compare-table">
+  <tr><th>Unlocks</th><th>Notes</th></tr>
+  <tr><td>Fishing rod variants (Copper through Adamantium)</td><td>Better rod = better catch chance</td></tr>
+  <tr><td>Special hooks and lures</td><td>For rare fish</td></tr>
+</table>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="farming-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌾 Farming</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>4 recipes</strong>. Farming-related special recipes — seed processing and gardening tools.</p>
+
+<table class="compare-table">
+  <tr><th>Unlocks</th><th>Notes</th></tr>
+  <tr><td>Seed and crop processing</td><td>Special plant varieties</td></tr>
+  <tr><td>Gardening tools</td><td>More efficient cultivation</td></tr>
+</table>
+
+</div></div></div>
+</div>
+
+<div data-lang="en" id="mining-en">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⛏ Mining</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+
+<p><strong>3 recipes</strong>. Mining-related special tools and accessories. Few recipes but useful mining equipment unlocked.</p>
+
+<table class="compare-table">
+  <tr><th>Unlocks</th><th>Notes</th></tr>
+  <tr><td>Special mining tools</td><td>More efficient mining</td></tr>
+  <tr><td>Explosives and blasting materials</td><td>Fast block removal</td></tr>
+</table>
+
+</div></div></div>
+</div>
+
+    </main>
+  </div>
+</BaseLayout>

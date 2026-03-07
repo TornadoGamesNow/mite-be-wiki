@@ -551,7 +551,7 @@ Csak <strong>5 db homok vagy kavics</strong> kell (kézzel bányászható!):
 <h4>Középső játék checklist (Nap 15–40)</h4>
 <table class="compare-table">
   <tr><th>Prioritás</th><th>Teendő</th><th>Miért fontos</th></tr>
-  <tr><td>🔴 Kötelező</td><td><strong>Bányász foglalkozás</strong> tanulása</td><td>Érc blokk közvetlen olvasztáshoz KÖTELEZŐ!</td></tr>
+  <tr><td>⚠️ Inaktív</td><td><strong>Bányász foglalkozás</strong> <em>(v0.9.0-ban inaktív)</em></td><td>Érc blokk közvetlen olvasztás — foglalkozás nélkül nem elérhető, de helyette kalapácsos zúzás működik</td></tr>
   <tr><td>🔴 Kötelező</td><td><strong>Kő Kemence Mag</strong> elkészítése</td><td>8× Kőtömb + Réz/Ezüst Munkaasztal → hőfok 2</td></tr>
   <tr><td>🔴 Kötelező</td><td><strong>Többblokkos Kemence</strong> (kőkemence) megépítése</td><td>Vas olvasztás CSAK hőfok 2-n lehetséges!</td></tr>
   <tr><td>🔴 Kötelező</td><td><strong>Vas Csákány</strong></td><td>Keménykő és Mithril érc bányászásának előfeltétele (harvest 3)</td></tr>
@@ -564,7 +564,7 @@ Csak <strong>5 db homok vagy kavics</strong> kell (kézzel bányászható!):
 <div class="warning-box">⚠️ <strong>Középső játék leggyakoribb elakadási pontok:</strong>
 <ul style="margin:4px 0 0 0">
   <li>Nincs Többblokkos Kemence → a Vas olvasztás egyszerűen nem működik!</li>
-  <li>Nincs Bányász foglalkozás → az érc blokk olvasztás nem működik!</li>
+  <li>Bányász foglalkozás v0.9.0-ban inaktív → érc blokk olvasztás helyett kalapácsos zúzást használj!</li>
   <li>Keménykőre próbálsz menni Vas Csákány nélkül → a blokk nem bányászható</li>
   <li>Elfogy a szén → hőfok 2-höz szén kötelező (fa/faszén nem elég!)</li>
 </ul></div>
@@ -616,7 +616,7 @@ Csak <strong>5 db homok vagy kavics</strong> kell (kézzel bányászható!):
   <tr style="background:rgba(150,220,100,0.12)"><td><strong>Kőzet Munkaasztal</strong></td><td>3×3-as crafting → szinte minden alap recept</td><td>Korai</td></tr>
   <tr style="background:rgba(150,220,100,0.12)"><td><strong>Szita</strong></td><td>Ércdarabok kavicsból → az első fémek szerzése</td><td>Korai</td></tr>
   <tr style="background:rgba(150,220,100,0.12)"><td><strong>Öntőforma</strong></td><td>Hatékony olvasztás — 1 rúd = 9 ércdarab</td><td>Korai</td></tr>
-  <tr style="background:rgba(200,160,80,0.12)"><td><strong>Bányász foglalkozás</strong></td><td>Érc blokk közvetlen olvasztása kemencébe</td><td>Középső</td></tr>
+  <tr style="background:rgba(100,100,100,0.12)"><td><strong>Bányász foglalkozás</strong> <em style="font-size:.8em;color:var(--accent)">(⚠️ inaktív v0.9.0)</em></td><td>Érc blokk közvetlen olvasztása kemencébe — jelenleg nem elérhető</td><td>—</td></tr>
   <tr style="background:rgba(200,160,80,0.12)"><td><strong>Többblokkos Kemence (Kő)</strong></td><td>Hőfok 2 → Vas, Arany olvasztás (szén kell!)</td><td>Középső</td></tr>
   <tr style="background:rgba(200,160,80,0.12)"><td><strong>Vas Csákány</strong> (harvest 3)</td><td>Keménykő érc + Mithril érc + <strong>Obszidián érc</strong> bányászása</td><td>Középső</td></tr>
   <tr style="background:rgba(255,200,80,0.12)"><td><strong>Többblokkos Kemence (Obszidián)</strong></td><td>Hőfok 3 → Mithril olvasztás (lávás vödör!)</td><td>Késői</td></tr>
@@ -1058,14 +1058,15 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <div class="tip">Az olvasztás után a fém munkaasztalon (pl. Réz Munkaasztal) készítheted a szerszámokat. A fabot mellé <strong>agyagot kell tenni</strong> a fogantyú védelmére!</div>
 
 <h3>Érc blokk közvetlen olvasztása</h3>
-<p><strong>Bányász foglalkozással</strong> az érc blokkokat közvetlenül berakhatod a kemencébe — 9× hatékonyabb az ércdaraboknál! <strong>1 érc blokk → 1 rúd.</strong></p>
+<div class="warning-box">⚠️ <strong>Bányász foglalkozás v0.9.0-ban inaktív</strong> — ez a funkció jelenleg nem érhető el. Helyette a kalapácsos zúzás ajánlott (lásd lent).</div>
+<p><em>Ha a foglalkozások engedélyezve lennének:</em> <strong>Bányász foglalkozással</strong> az érc blokkokat közvetlenül berakhatnád a kemencébe — 9× hatékonyabb az ércdaraboknál! <strong>1 érc blokk → 1 rúd.</strong></p>
 <table>
   <tr><th>Érc blokk</th><th>Szükséges hőfok</th><th>Eredmény</th></tr>
   <tr><td>Réz / Ezüst / Vas / Arany / Keménykő érc</td><td>2 — Keményített agyagkemence vagy Kő kemence</td><td>1 Rúd</td></tr>
   <tr><td>Mithril / Higany érc</td><td>3 — Obszidián kemence</td><td>1 Rúd</td></tr>
   <tr><td>Adamantium érc</td><td>4 — Pokoli kő kemence</td><td>1 Adamantium rúd</td></tr>
 </table>
-<div class="warning"><strong>Bányász foglalkozás kötelező!</strong> Nélküle az érc blokk nem olvasztható — csak az ércdarabok működnek a kemencében.</div>
+<div class="warning-box">⚠️ <strong>Bányász foglalkozás kötelező</strong> — de jelenleg inaktív v0.9.0-ban. Érc blokk olvasztás helyett kalapácsos zúzást használj!</div>
 
 <h3>Érc Zúzás — Háborús Kalapáccsal</h3>
 <p>Nincs Bányász foglalkozásod? Akkor sem kell elvesztegetned az érc blokkot! <strong>Tedd a munkaasztalra az érc blokkot és egy Háborús Kalapácsot</strong> — és 12 ércdarabot kapsz, ami több, mint a 9 darab, amit egy rúd visszabontásával kapnál!</p>
@@ -1081,7 +1082,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <table>
   <tr><th>Módszer</th><th>Hogyan?</th><th>Eredmény</th><th>Követelmény</th></tr>
   <tr><td>🧺 Szitálás</td><td>Kavicsot szitálsz → 9 ércdarab → kemence + öntőforma</td><td>1 Rúd</td><td>Keményített agyag kemence + öntőforma</td></tr>
-  <tr><td>⛏️ Érc blokk olvasztás</td><td>1 érc blokkot rakod a kemencébe</td><td>1 Rúd</td><td><strong>Bányász foglalkozás!</strong></td></tr>
+  <tr><td>⛏️ Érc blokk olvasztás</td><td>1 érc blokkot rakod a kemencébe</td><td>1 Rúd</td><td><strong>Bányász foglalkozás</strong> <em>(⚠️ inaktív v0.9.0)</em></td></tr>
   <tr><td>🔨 Kalapács zúzás</td><td>Érc blokk + megfelelő Háborús Kalapács → munkaasztal</td><td>12 Ércdarab → 1⅓ Rúd</td><td>Bronz vagy erősebb Háborús Kalapács</td></tr>
 </table>
 
@@ -1299,20 +1300,20 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
   <tr><td>Alma</td><td>2</td><td>1</td><td>—</td><td>1.0</td><td>✓</td><td>Tölgyfa levelekből</td></tr>
   <tr><td>Kenyér</td><td>8</td><td>2</td><td>—</td><td>—</td><td>—</td><td>Alap szénhidrát</td></tr>
   <tr><td>Tojás</td><td>1</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>Csirkétől, nyersen is ehető</td></tr>
-  <tr><td>Sajt 🧀</td><td>3</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>Főzőmester foglalkozás</td></tr>
+  <tr><td>Sajt 🧀</td><td>3</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>Főzőmester foglalkozás <em style="font-size:.8em">(⚠️ inaktív)</em></td></tr>
   <tr><td>Sárgarépa</td><td>1</td><td>2</td><td>—</td><td>2.0</td><td>—</td><td>Fitotápanyag forrás</td></tr>
   <tr><td>Sült burgonya</td><td>6</td><td>2</td><td>—</td><td>—</td><td>—</td><td>Közepes</td></tr>
   <tr><td>Nyers sertéshús</td><td>4</td><td>4</td><td>4.0</td><td>—</td><td>—</td><td>Nyersen is megy</td></tr>
   <tr><td>Sült sertéshús</td><td>8</td><td>8</td><td>8.0</td><td>—</td><td>—</td><td>Jó fehérjeforrás</td></tr>
   <tr><td>Sült csirke</td><td>6</td><td>6</td><td>6.0</td><td>—</td><td>—</td><td>Közepesen jó</td></tr>
   <tr><td>Sült steak 🥩</td><td>10</td><td>10</td><td>10.0</td><td>—</td><td>—</td><td>Kiváló fehérje</td></tr>
-  <tr><td>Sült hal (nagy)</td><td>10</td><td>10</td><td>10.0</td><td>—</td><td>—</td><td>Halász foglalkozás előny</td></tr>
+  <tr><td>Sült hal (nagy)</td><td>10</td><td>10</td><td>10.0</td><td>—</td><td>—</td><td>Halász foglalkozás előny <em style="font-size:.8em">(⚠️ inaktív)</em></td></tr>
   <tr><td>Sült elefánt hús 🐘</td><td>14</td><td>14</td><td>14.0</td><td>—</td><td>—</td><td>Ritka nagy zsákmány</td></tr>
   <tr><td>Sült medve/cápa hús</td><td>12</td><td>12</td><td>12.0</td><td>—</td><td>—</td><td>Veszélyes zsákmány</td></tr>
-  <tr><td>Burgonya püré 🥔</td><td>12</td><td>8</td><td>8.0</td><td>—</td><td>—</td><td><strong>Szakács</strong> foglalkozás</td></tr>
-  <tr><td>Tök pite 🎃</td><td>10</td><td>6</td><td>6.0</td><td>6.0</td><td>✓</td><td><strong>Szakács</strong> foglalkozás</td></tr>
-  <tr><td>Gombakrémleves</td><td>3</td><td>5</td><td>5.0</td><td>—</td><td>—</td><td><strong>Szakács</strong> foglalkozás</td></tr>
-  <tr><td>Zöldségkrémleves 🥦</td><td>7</td><td>7</td><td>7.0</td><td>7.0</td><td>—</td><td><strong>Szakács</strong> foglalkozás</td></tr>
+  <tr><td>Burgonya püré 🥔</td><td>12</td><td>8</td><td>8.0</td><td>—</td><td>—</td><td><strong>Szakács</strong> foglalkozás <em style="font-size:.8em">(⚠️ inaktív)</em></td></tr>
+  <tr><td>Tök pite 🎃</td><td>10</td><td>6</td><td>6.0</td><td>6.0</td><td>✓</td><td><strong>Szakács</strong> foglalkozás <em style="font-size:.8em">(⚠️ inaktív)</em></td></tr>
+  <tr><td>Gombakrémleves</td><td>3</td><td>5</td><td>5.0</td><td>—</td><td>—</td><td><strong>Szakács</strong> foglalkozás <em style="font-size:.8em">(⚠️ inaktív)</em></td></tr>
+  <tr><td>Zöldségkrémleves 🥦</td><td>7</td><td>7</td><td>7.0</td><td>7.0</td><td>—</td><td><strong>Szakács</strong> foglalkozás <em style="font-size:.8em">(⚠️ inaktív)</em></td></tr>
   <tr><td>Csirkeleves 🍲</td><td>10</td><td>10</td><td>10.0</td><td>10.0</td><td>—</td><td><strong>Szakács</strong> — komplex</td></tr>
   <tr style="background:rgba(255,100,0,0.08)"><td><strong>Marhapörkölt 🥩🔥</strong></td><td><strong>16</strong></td><td><strong>16</strong></td><td><strong>16.0</strong></td><td><strong>16.0</strong></td><td>—</td><td><strong>Legjobb étel!</strong> Szakács</td></tr>
 </table>
@@ -1931,7 +1932,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <h2 id="hardstone">Keménykő</h2>
 <p>A keménykő egy rejtélyes anyag az underground világból. Talán ősi erő lakozik benne.</p>
 <p>Teljes készlet készíthető belőle: csákány, fejsze, kard, tőr, háborús kalapács, kasza, kapa, lapát, sisak, mellvért, lábvért, csizmák, vödör, olló, munkaasztal, üllő.</p>
-<p><strong>Követelmény:</strong> Kovács (Blacksmith) foglalkozás szükséges az átlagos minőségű craftoláshoz.</p>
+<p><em>Megjegyzés: Kovács (Blacksmith) foglalkozás szükséges lenne az átlagos minőségű craftoláshoz — de ez jelenleg inaktív v0.9.0-ban.</em></p>
 
 <div class="craft-section">
 <div class="craft-table"><div class="craft-grid g3x3"><div class="craft-slot empty"></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#607d8b">Keménykő Rúd</div><div class="tt-name" data-lang="en" style="color:#607d8b">Hardstone Ingot</div><div class="tt-desc" data-lang="hu">Alávilágból, Vas csákány kell</div><div class="tt-desc" data-lang="en">From Underground, Iron pickaxe needed</div></div><img src="/mite-be-wiki/img/ingots/hardstone.png" alt=""></div><div class="craft-slot empty"></div><div class="craft-slot empty"></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#607d8b">Keménykő Rúd</div><div class="tt-name" data-lang="en" style="color:#607d8b">Hardstone Ingot</div><div class="tt-desc" data-lang="hu">Alávilágból, Vas csákány kell</div><div class="tt-desc" data-lang="en">From Underground, Iron pickaxe needed</div></div><img src="/mite-be-wiki/img/ingots/hardstone.png" alt=""></div><div class="craft-slot empty"></div><div class="craft-slot empty"></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Fabot</div><div class="tt-name" data-lang="en" style="color:#aaa">Stick</div><div class="tt-desc" data-lang="hu">Levelekből vagy fákból</div><div class="tt-desc" data-lang="en">From leaves or trees</div></div><img src="/mite-be-wiki/img/items/stick.png" alt=""></div><div class="craft-slot empty"></div></div><div class="craft-arrow-box">➜</div><div class="craft-output"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#607d8b">Keménykő Kard</div><div class="tt-name" data-lang="en" style="color:#607d8b">Hardstone Sword</div><div class="tt-desc" data-lang="hu">+8 Sebzés<br>10 400 Tartósság</div><div class="tt-desc" data-lang="en">+8 Attack Damage<br>10,400 Durability</div></div><img src="/mite-be-wiki/img/items/hardstone_sword.png" alt=""></div></div><div class="craft-label" data-lang="hu">Keménykő Kard</div><div class="craft-label" data-lang="en">Hardstone Sword</div></div>
@@ -2525,7 +2526,7 @@ Only <strong>5 sand or gravel blocks</strong> needed (hand-mineable!):
 <h4>Mid game checklist (Days 15–40)</h4>
 <table class="compare-table">
   <tr><th>Priority</th><th>Task</th><th>Why it matters</th></tr>
-  <tr><td>🔴 Required</td><td>Learn <strong>Miner profession</strong></td><td>Direct ore block smelting REQUIRES this!</td></tr>
+  <tr><td>⚠️ Inactive</td><td>Learn <strong>Miner profession</strong> <em>(inactive in v0.9.0)</em></td><td>Ore block direct smelting — use war hammer crushing instead</td></tr>
   <tr><td>🔴 Required</td><td>Craft <strong>Stone Furnace Core</strong></td><td>8× Stone Block + Copper/Silver Workbench = heat 2</td></tr>
   <tr><td>🔴 Required</td><td>Build <strong>Multiblock Furnace</strong> (stone)</td><td>Iron smelting is ONLY possible at heat level 2!</td></tr>
   <tr><td>🔴 Required</td><td><strong>Iron Pickaxe</strong></td><td>Required for mining Hardstone and Mithril ore (harvest 3)</td></tr>
@@ -2538,7 +2539,7 @@ Only <strong>5 sand or gravel blocks</strong> needed (hand-mineable!):
 <div class="warning-box">⚠️ <strong>Most common mid-game stalling points:</strong>
 <ul style="margin:4px 0 0 0">
   <li>No Multiblock Furnace → iron smelting simply won't work!</li>
-  <li>No Miner profession → ore block smelting won't work!</li>
+  <li>Miner profession is inactive in v0.9.0 → use war hammer crushing for ore blocks instead!</li>
   <li>Trying to mine Hardstone without an Iron Pickaxe → block cannot be mined</li>
   <li>Running out of coal → heat level 2 requires coal (wood/charcoal not enough!)</li>
 </ul></div>
@@ -3022,14 +3023,15 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 <div class="tip">After smelting, craft tools at a metal workbench (e.g., Copper Workbench). Place <strong>clay next to the stick</strong> to protect the handle!</div>
 
 <h3>Direct Ore Block Smelting</h3>
-<p>With the <strong>Mining profession</strong>, you can smelt ore blocks directly — 9× more efficient than ore particles! <strong>1 ore block → 1 ingot.</strong></p>
+<div class="warning-box">⚠️ <strong>Mining profession is inactive in v0.9.0</strong> — this feature is currently unavailable. Use war hammer crushing instead (see below).</div>
+<p><em>If professions were enabled:</em> With the <strong>Mining profession</strong>, you could smelt ore blocks directly — 9× more efficient than ore particles! <strong>1 ore block → 1 ingot.</strong></p>
 <table>
   <tr><th>Ore Block</th><th>Required Heat</th><th>Result</th></tr>
   <tr><td>Copper / Silver / Iron / Gold / Hardstone Ore</td><td>2 — Hardened Clay or Stone Furnace</td><td>1 Ingot</td></tr>
   <tr><td>Mithril / Mercury Ore</td><td>3 — Obsidian Furnace</td><td>1 Ingot</td></tr>
   <tr><td>Adamantium Ore</td><td>4 — Netherrack Furnace</td><td>1 Adamantium Ingot</td></tr>
 </table>
-<div class="warning"><strong>Mining profession required!</strong> Without it, ore blocks cannot be smelted — only ore particles work in the furnace.</div>
+<div class="warning-box">⚠️ <strong>Mining profession required</strong> — but currently inactive in v0.9.0. Use war hammer crushing for ore blocks instead!</div>
 
 <h3>Ore Crushing — With War Hammers</h3>
 <p>No Mining profession? You can still make good use of ore blocks! <strong>Place an ore block and a War Hammer on a workbench</strong> — and get 12 ore particles, which is more than the 9 you'd get from breaking down an ingot!</p>
@@ -3261,20 +3263,20 @@ If you find sheep before the first night and grab some wool, you can reach sievi
   <tr><td>Apple</td><td>2</td><td>1</td><td>—</td><td>1.0</td><td>✓</td><td>From oak leaves</td></tr>
   <tr><td>Bread</td><td>8</td><td>2</td><td>—</td><td>—</td><td>—</td><td>Basic carbohydrate</td></tr>
   <tr><td>Egg</td><td>1</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>From chickens, edible raw</td></tr>
-  <tr><td>Cheese 🧀</td><td>3</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>Brewer profession</td></tr>
+  <tr><td>Cheese 🧀</td><td>3</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>Brewer profession <em style="font-size:.8em">(⚠️ inactive)</em></td></tr>
   <tr><td>Carrot</td><td>1</td><td>2</td><td>—</td><td>2.0</td><td>—</td><td>Phytonutrient source</td></tr>
   <tr><td>Baked Potato</td><td>6</td><td>2</td><td>—</td><td>—</td><td>—</td><td>Moderate</td></tr>
   <tr><td>Raw Pork</td><td>4</td><td>4</td><td>4.0</td><td>—</td><td>—</td><td>Edible raw</td></tr>
   <tr><td>Cooked Pork</td><td>8</td><td>8</td><td>8.0</td><td>—</td><td>—</td><td>Good protein source</td></tr>
   <tr><td>Cooked Chicken</td><td>6</td><td>6</td><td>6.0</td><td>—</td><td>—</td><td>Moderate</td></tr>
   <tr><td>Cooked Steak 🥩</td><td>10</td><td>10</td><td>10.0</td><td>—</td><td>—</td><td>Excellent protein</td></tr>
-  <tr><td>Cooked Fish (large)</td><td>10</td><td>10</td><td>10.0</td><td>—</td><td>—</td><td>Fisher profession bonus</td></tr>
+  <tr><td>Cooked Fish (large)</td><td>10</td><td>10</td><td>10.0</td><td>—</td><td>—</td><td>Fisher profession bonus <em style="font-size:.8em">(⚠️ inactive)</em></td></tr>
   <tr><td>Cooked Elephant Meat 🐘</td><td>14</td><td>14</td><td>14.0</td><td>—</td><td>—</td><td>Rare big game</td></tr>
   <tr><td>Cooked Bear/Shark Meat</td><td>12</td><td>12</td><td>12.0</td><td>—</td><td>—</td><td>Dangerous quarry</td></tr>
-  <tr><td>Mashed Potatoes 🥔</td><td>12</td><td>8</td><td>8.0</td><td>—</td><td>—</td><td><strong>Cook</strong> profession</td></tr>
-  <tr><td>Pumpkin Pie 🎃</td><td>10</td><td>6</td><td>6.0</td><td>6.0</td><td>✓</td><td><strong>Cook</strong> profession</td></tr>
-  <tr><td>Cream of Mushroom Soup</td><td>3</td><td>5</td><td>5.0</td><td>—</td><td>—</td><td><strong>Cook</strong> profession</td></tr>
-  <tr><td>Vegetable Cream Soup 🥦</td><td>7</td><td>7</td><td>7.0</td><td>7.0</td><td>—</td><td><strong>Cook</strong> profession</td></tr>
+  <tr><td>Mashed Potatoes 🥔</td><td>12</td><td>8</td><td>8.0</td><td>—</td><td>—</td><td><strong>Cook</strong> profession <em style="font-size:.8em">(⚠️ inactive)</em></td></tr>
+  <tr><td>Pumpkin Pie 🎃</td><td>10</td><td>6</td><td>6.0</td><td>6.0</td><td>✓</td><td><strong>Cook</strong> profession <em style="font-size:.8em">(⚠️ inactive)</em></td></tr>
+  <tr><td>Cream of Mushroom Soup</td><td>3</td><td>5</td><td>5.0</td><td>—</td><td>—</td><td><strong>Cook</strong> profession <em style="font-size:.8em">(⚠️ inactive)</em></td></tr>
+  <tr><td>Vegetable Cream Soup 🥦</td><td>7</td><td>7</td><td>7.0</td><td>7.0</td><td>—</td><td><strong>Cook</strong> profession <em style="font-size:.8em">(⚠️ inactive)</em></td></tr>
   <tr><td>Chicken Stew 🍲</td><td>10</td><td>10</td><td>10.0</td><td>10.0</td><td>—</td><td><strong>Cook</strong> — complex</td></tr>
   <tr style="background:rgba(255,100,0,0.08)"><td><strong>Beef Stew 🥩🔥</strong></td><td><strong>16</strong></td><td><strong>16</strong></td><td><strong>16.0</strong></td><td><strong>16.0</strong></td><td>—</td><td><strong>Best food!</strong> Cook required</td></tr>
 </table>
