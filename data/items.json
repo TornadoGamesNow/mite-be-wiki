@@ -4676,7 +4676,8 @@
     },
     "img": "img/items/hard_stone_battle_axe.png",
     "tier": "hard",
-    "category": "weapon"
+    "category": "weapon",
+    "max_durability": 22800
   },
   "hard_stone_boots": {
     "name": {
@@ -4777,7 +4778,8 @@
     },
     "img": "img/items/hard_stone_hoe.png",
     "tier": "hard",
-    "category": "tool"
+    "category": "tool",
+    "max_durability": 11200
   },
   "hard_stone_leggings": {
     "name": {
@@ -4795,7 +4797,8 @@
     },
     "img": "img/items/hard_stone_mattock.png",
     "tier": "hard",
-    "category": "tool"
+    "category": "tool",
+    "max_durability": 22800
   },
   "hard_stone_pickaxe": {
     "name": {
@@ -4804,7 +4807,8 @@
     },
     "img": "img/items/hard_stone_pickaxe.png",
     "tier": "hard",
-    "category": "tool"
+    "category": "tool",
+    "max_durability": 15600
   },
   "hard_stone_scythe": {
     "name": {
@@ -4813,7 +4817,8 @@
     },
     "img": "img/items/hard_stone_scythe.png",
     "tier": "hard",
-    "category": "tool"
+    "category": "tool",
+    "max_durability": 16240
   },
   "hard_stone_shears": {
     "name": {
@@ -4822,7 +4827,8 @@
     },
     "img": "img/items/hard_stone_shears.png",
     "tier": "hard",
-    "category": "tool"
+    "category": "tool",
+    "max_durability": 11200
   },
   "hard_stone_shield": {
     "name": {
@@ -4851,7 +4857,8 @@
     },
     "img": "img/items/hard_stone_sword.png",
     "tier": "hard",
-    "category": "weapon"
+    "category": "weapon",
+    "max_durability": 10400
   },
   "hard_stone_war_hammer": {
     "name": {
@@ -4860,7 +4867,8 @@
     },
     "img": "img/items/hard_stone_war_hammer.png",
     "tier": "hard",
-    "category": "weapon"
+    "category": "weapon",
+    "max_durability": 26000
   },
   "hardstone_block": {
     "name": {

@@ -292,23 +292,6 @@
       "sand_stone"
     ],
     "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "sand_stone",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ],
     "removed_version": "0.6.0",
     "added_version": "0.6.0"
   },
@@ -3094,24 +3077,7 @@
     "ingredients": [
       "netherrack"
     ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "netherrack",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
+    "shaped": true
   },
   {
     "id": "nether_brick_fence_145",
@@ -7252,24 +7218,7 @@
     "ingredients": [
       "clay_ball"
     ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "clay_ball",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
+    "shaped": true
   },
   {
     "id": "paper_309",
@@ -30554,23 +30503,6 @@
       "ore_tin"
     ],
     "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "ore_tin"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "coal"
-      ]
-    ],
     "removed_version": "0.6.0",
     "added_version": "0.6.0"
   },
@@ -32584,23 +32516,6 @@
       "mercury_ore"
     ],
     "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "mercury_ore"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "coal"
-      ]
-    ],
     "removed_version": "0.6.0",
     "added_version": "0.6.0"
   },
@@ -33684,24 +33599,7 @@
     "ingredients": [
       "water_bowl"
     ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "water_bowl",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
+    "shaped": true
   },
   {
     "id": "bowl_water_784440",
@@ -33834,23 +33732,6 @@
       "sand"
     ],
     "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "sand",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ],
     "removed_version": "0.6.0",
     "added_version": "0.6.0"
   },
@@ -34010,24 +33891,7 @@
       "worm_raw"
     ],
     "shaped": true,
-    "item_num": 772979,
-    "pattern": [
-      [
-        "_",
-        "worm_raw",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
+    "item_num": 772979
   },
   {
     "id": "duck_cooked_446428",
@@ -34040,24 +33904,7 @@
       "duck_meat"
     ],
     "shaped": true,
-    "item_num": 446428,
-    "pattern": [
-      [
-        "_",
-        "duck_meat",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
+    "item_num": 446428
   },
   {
     "id": "duck_head_cooked_duck_head_cooked",
@@ -34069,24 +33916,7 @@
     "ingredients": [
       "duck_head"
     ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "duck_head",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
+    "shaped": true
   },
   {
     "id": "beef_stew_beef_stew",
@@ -34119,8 +33949,7 @@
         "_"
       ]
     ],
-    "removed_version": "0.5.6",
-    "added_version": "0.5.6"
+    "removed_version": "0.5.6"
   },
   {
     "id": "cereal_772963",
@@ -34258,24 +34087,7 @@
       "squid_meat"
     ],
     "shaped": true,
-    "item_num": 446430,
-    "pattern": [
-      [
-        "_",
-        "squid_meat",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
+    "item_num": 446430
   },
   {
     "id": "obsidian_furnace_772860",

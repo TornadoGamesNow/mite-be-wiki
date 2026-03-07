@@ -22,6 +22,7 @@ interface ItemData {
   tier?: string;
   category?: string;
   removed_in?: string;
+  max_durability?: number;
 }
 
 // Convert items.json object to array
@@ -434,6 +435,13 @@ export default function ItemExplorer() {
                         <span style={{ fontSize: '.7em', padding: '1px 8px', borderRadius: 10,
                           background: 'var(--surface2)', color: 'var(--text2)', fontWeight: 600 }}>
                           {CATEGORY_META[selected.category].icon} {CATEGORY_META[selected.category][lang as 'hu' | 'en']}
+                        </span>
+                      )}
+                      {selected.max_durability && (
+                        <span style={{ fontSize: '.7em', padding: '1px 8px', borderRadius: 10,
+                          background: 'rgba(78,204,163,.08)', color: 'var(--green)',
+                          border: '1px solid rgba(78,204,163,.2)', fontWeight: 600 }}>
+                          🛠 {selected.max_durability.toLocaleString()}
                         </span>
                       )}
                     </div>
