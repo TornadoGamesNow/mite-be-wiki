@@ -5,6 +5,9 @@ import type { SlotValue } from '../data/types';
 
 interface Props {
   recipeId?: string;
+  recipeFullId?: string;
+  recipeOutput?: string;
+  label?: { hu: string; en: string };
   recipe?: {
     gridSize: string;
     pattern: SlotValue[][];
@@ -15,20 +18,51 @@ interface Props {
   };
 }
 
-const { recipeId, recipe: recipeProp } = Astro.props;
+const { recipeId, recipeFullId, recipeOutput, label: labelOverride, recipe: recipeProp } = Astro.props;
 
-// Load recipe from JSON if recipeId provided
-let recipe = recipeProp;
-if (recipeId && !recipe) {
-  const allRecipes = (await import('../../data/recipes.json')).default;
-  recipe = allRecipes.find((r: any) => r.id === recipeId);
+function adaptFullRecipe(r: any, labelFallback?: { hu: string; en: string }) {
+  if (!r || !r.shaped || !r.pattern) return null;
+  const rows = r.pattern.length;
+  const cols = r.pattern[0]?.length || 3;
+  return {
+    gridSize: rows <= 2 && cols <= 2 ? '2x2' : '3x3',
+    pattern: r.pattern,
+    output: r.output,
+    outputCount: r.outputQty > 1 ? r.outputQty : undefined,
+    label: r.label || labelFallback || { hu: r.output, en: r.output },
+  };
 }
 
-if (!recipe) {
+// Load recipe from JSON if recipeId provided
+let recipe: any = recipeProp;
+if (recipeId && !recipe) {
+  const allRecipes = (await import('../../data/recipes.json')).default;
+  recipe = (allRecipes as any[]).find((r: any) => r.id === recipeId);
+}
+
+if (recipeFullId && !recipe) {
+  const allRecipes = (await import('../../data/recipes_full.json')).default as any[];
+  const r = allRecipes.find((r: any) => r.id === recipeFullId);
+  recipe = adaptFullRecipe(r);
+}
+
+if (recipeOutput && !recipe) {
+  const allRecipes = (await import('../../data/recipes_full.json')).default as any[];
+  const r = allRecipes.find((r: any) =>
+    r.output === recipeOutput && !r.removed_version && r.shaped && r.pattern
+  );
+  recipe = adaptFullRecipe(r);
+}
+
+if (labelOverride && recipe) {
+  recipe = { ...recipe, label: labelOverride };
+}
+
+if (!recipe && recipeId) {
   throw new Error(`Recipe not found: ${recipeId}`);
 }
 
-const gridClass = recipe.gridSize === '2x2' ? 'g2x2' : 'g3x3';
+const gridClass = recipe?.gridSize === '2x2' ? 'g2x2' : 'g3x3';
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 function getItem(id: string) {
@@ -36,16 +70,23 @@ function getItem(id: string) {
   return (items as Record<string, any>)[id] || null;
 }
 
-// For array slots (alternatives), SSR always renders the first item
+// For array slots (alternatives), pick first valid item ID found in items.json
 function resolveSlot(slot: SlotValue) {
-  const id = Array.isArray(slot) ? slot[0] : slot;
-  return getItem(id);
+  if (Array.isArray(slot)) {
+    for (const id of slot) {
+      const item = getItem(id);
+      if (item) return item;
+    }
+    return null;
+  }
+  return getItem(slot);
 }
 ---
 
+{recipe && (
 <div class="craft-table">
   <div class={`craft-grid ${gridClass}`}>
-    {recipe.pattern.flat().map((slot) => {
+    {recipe.pattern.flat().map((slot: SlotValue) => {
       const item = resolveSlot(slot);
       return item ? (
         <div class="craft-slot">
@@ -94,3 +135,4 @@ function resolveSlot(slot: SlotValue) {
     <span data-lang="en">{recipe.label.en}</span>
   </div>
 </div>
+)}
