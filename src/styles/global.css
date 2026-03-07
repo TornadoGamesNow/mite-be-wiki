@@ -163,6 +163,8 @@ tr:hover td { background: rgba(240,192,64,.05); }
 .prog-node.n-ancient { background: #2a2210; border-color: var(--ancient); color: var(--ancient); }
 .prog-node.n-mithril { background: #1a2830; border-color: var(--mithril); color: var(--mithril); }
 .prog-node.n-adam { background: #1e1830; border-color: var(--adamantium); color: var(--adamantium); }
+.prog-node.n-underground { background: #1a1a10; border-color: #7a6a30; color: #c8b060; }
+.prog-node.n-nether { background: #2a1008; border-color: #cc4400; color: #ff7040; }
 .prog-node.n-end { background: #2a1020; border-color: var(--accent); color: var(--accent2); }
 
 /* ===== Ore depth map ===== */
