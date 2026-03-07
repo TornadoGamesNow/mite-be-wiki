@@ -54,15 +54,19 @@ function getItemImg(id: string): string {
   return items[id]?.img || '';
 }
 
-const WOOD_PREFIX_EN = ['Oak', 'Spruce', 'Birch', 'Jungle'];
-const WOOD_PREFIX_HU = ['Tölgy', 'Luc', 'Nyír', 'Dzsungel'];
 function genericItemName(ids: string[], lang: 'hu' | 'en'): string {
-  const name = getItemName(ids[0], lang);
-  const prefixes = lang === 'en' ? WOOD_PREFIX_EN : WOOD_PREFIX_HU;
-  for (const p of prefixes) {
-    if (name.startsWith(p + ' ')) return name.slice(p.length + 1);
+  const names = ids.map(id => getItemName(id, lang)).filter(Boolean);
+  if (names.length <= 1) return names[0] ?? '';
+  const wordArrays = names.map(n => n.split(' '));
+  const minLen = Math.min(...wordArrays.map(w => w.length));
+  let commonSuffix: string[] = [];
+  for (let i = 1; i <= minLen; i++) {
+    const candidate = wordArrays.map(w => w[w.length - i]);
+    if (candidate.every(w => w === candidate[0])) {
+      commonSuffix.unshift(candidate[0]);
+    } else break;
   }
-  return name;
+  return commonSuffix.length > 0 ? commonSuffix.join(' ') : names[0];
 }
 
 function flattenIngredient(ing: string | string[]): string {
