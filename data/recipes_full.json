@@ -1444,19 +1444,19 @@
     "shaped": true,
     "pattern": [
       [
-        null,
+        "_",
         "coal",
-        null
+        "_"
       ],
       [
-        null,
+        "_",
         "stick",
-        null
+        "_"
       ],
       [
-        null,
-        null,
-        null
+        "_",
+        "_",
+        "_"
       ]
     ]
   },
@@ -1475,19 +1475,19 @@
     "shaped": true,
     "pattern": [
       [
-        null,
+        "_",
         "charcoal",
-        null
+        "_"
       ],
       [
-        null,
+        "_",
         "stick",
-        null
+        "_"
       ],
       [
-        null,
-        null,
-        null
+        "_",
+        "_",
+        "_"
       ]
     ]
   },
@@ -2595,19 +2595,19 @@
     "shaped": true,
     "pattern": [
       [
-        null,
+        "_",
         "redstone_dust",
-        null
+        "_"
       ],
       [
-        null,
+        "_",
         "stick",
-        null
+        "_"
       ],
       [
-        null,
-        null,
-        null
+        "_",
+        "_",
+        "_"
       ]
     ]
   },
