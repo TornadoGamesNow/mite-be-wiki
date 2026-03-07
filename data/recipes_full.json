@@ -13340,166 +13340,6 @@
     ]
   },
   {
-    "id": "copper_ingot_640",
-    "item_num": 962,
-    "output": "copper_ingot",
-    "outputQty": 9,
-    "station": "flint_workbench",
-    "difficulty": 3600,
-    "skills": [],
-    "ingredients": [
-      "copper_block"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "copper_nugget"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "coal"
-      ]
-    ],
-    "removed_version": "0.6.0",
-    "added_version": "0.6.0"
-  },
-  {
-    "id": "silver_ingot_641",
-    "item_num": 963,
-    "output": "silver_ingot",
-    "outputQty": 9,
-    "station": "flint_workbench",
-    "difficulty": 3600,
-    "skills": [],
-    "ingredients": [
-      "silver_block"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "silver_nugget"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "coal"
-      ]
-    ],
-    "removed_version": "0.6.0",
-    "added_version": "0.6.0"
-  },
-  {
-    "id": "mithril_bar_642",
-    "item_num": 964,
-    "output": "mithril_bar",
-    "outputQty": 9,
-    "station": "mithril_workbench",
-    "difficulty": 57600,
-    "skills": [],
-    "ingredients": [
-      "mithril_block"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "mithril_nugget"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "coal"
-      ]
-    ],
-    "removed_version": "0.6.0",
-    "added_version": "0.6.0"
-  },
-  {
-    "id": "adamantium_bar_643",
-    "item_num": 965,
-    "output": "adamantium_bar",
-    "outputQty": 9,
-    "station": "adamantium_workbench",
-    "difficulty": 230400,
-    "skills": [],
-    "ingredients": [
-      "adamantium_block"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "adamantium_nugget"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "coal"
-      ]
-    ],
-    "removed_version": "0.6.0",
-    "added_version": "0.6.0"
-  },
-  {
-    "id": "ancient_metal_ingot_644",
-    "item_num": 966,
-    "output": "ancient_metal_ingot",
-    "outputQty": 9,
-    "station": "ancient_metal_workbench",
-    "difficulty": 14400,
-    "skills": [],
-    "ingredients": [
-      "ancient_metal_block"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "ancient_metal_nugget"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "coal"
-      ]
-    ],
-    "removed_version": "0.6.0",
-    "added_version": "0.6.0"
-  },
-  {
     "id": "copper_pickaxe_645",
     "item_num": 967,
     "output": "copper_pickaxe",
@@ -24377,38 +24217,6 @@
         "hardstone_coin"
       ]
     ]
-  },
-  {
-    "id": "hardstone_ingot_1091",
-    "item_num": 2300,
-    "output": "hardstone_ingot",
-    "outputQty": 9,
-    "station": "flint_workbench",
-    "difficulty": 14400,
-    "skills": [],
-    "ingredients": [
-      "hardstone_block"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "hardstone_nugget"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "coal"
-      ]
-    ],
-    "removed_version": "0.6.0",
-    "added_version": "0.6.0"
   },
   {
     "id": "hard_stone_sword_1092",
@@ -35583,70 +35391,6 @@
     ]
   },
   {
-    "id": "hardstone_ingot_841187",
-    "item_num": 841187,
-    "output": "hardstone_ingot",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "hardstone_ore",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        null,
-        "hardstone_ore"
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        "coal"
-      ]
-    ],
-    "added_version": "0.6.0"
-  },
-  {
-    "id": "hardstone_ingot_841188",
-    "item_num": 841188,
-    "output": "hardstone_ingot",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "hardstone_nugget",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        null,
-        "hardstone_nugget"
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        "coal"
-      ]
-    ],
-    "added_version": "0.6.0"
-  },
-  {
     "id": "bad_fish_cooked_841189",
     "item_num": 841189,
     "output": "bad_fish_cooked",
@@ -37055,294 +36799,6 @@
         null
       ]
     ]
-  },
-  {
-    "id": "adamantium_bar_841234",
-    "item_num": 841234,
-    "output": "adamantium_bar",
-    "outputQty": 1,
-    "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "adamantium_ore",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        null,
-        "adamantium_ore"
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        "coal"
-      ]
-    ],
-    "added_version": "0.6.0"
-  },
-  {
-    "id": "adamantium_bar_841235",
-    "item_num": 841235,
-    "output": "adamantium_bar",
-    "outputQty": 1,
-    "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "adamantium_nugget",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        null,
-        "adamantium_nugget"
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        "coal"
-      ]
-    ],
-    "added_version": "0.6.0"
-  },
-  {
-    "id": "mithril_bar_841236",
-    "item_num": 841236,
-    "output": "mithril_bar",
-    "outputQty": 1,
-    "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "mithril_ore",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        null,
-        "mithril_ore"
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        "coal"
-      ]
-    ],
-    "added_version": "0.6.0"
-  },
-  {
-    "id": "mithril_bar_841237",
-    "item_num": 841237,
-    "output": "mithril_bar",
-    "outputQty": 1,
-    "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "mithril_nugget",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        null,
-        "mithril_nugget"
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        "coal"
-      ]
-    ],
-    "added_version": "0.6.0"
-  },
-  {
-    "id": "ancient_metal_ingot_841238",
-    "item_num": 841238,
-    "output": "ancient_metal_ingot",
-    "outputQty": 1,
-    "station": "ancient_metal_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "ancient_metal_nugget",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        null,
-        "ancient_metal_nugget"
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        "coal"
-      ]
-    ],
-    "added_version": "0.6.0"
-  },
-  {
-    "id": "silver_ingot_841239",
-    "item_num": 841239,
-    "output": "silver_ingot",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "silver_ore",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        null,
-        "silver_ore"
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        "coal"
-      ]
-    ],
-    "added_version": "0.6.0"
-  },
-  {
-    "id": "silver_ingot_841240",
-    "item_num": 841240,
-    "output": "silver_ingot",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "silver_nugget",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        null,
-        "silver_nugget"
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        "coal"
-      ]
-    ],
-    "added_version": "0.6.0"
-  },
-  {
-    "id": "copper_ingot_841241",
-    "item_num": 841241,
-    "output": "copper_ingot",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "copper_ore",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        null,
-        "copper_ore"
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        "coal"
-      ]
-    ],
-    "added_version": "0.6.0"
-  },
-  {
-    "id": "copper_ingot_841242",
-    "item_num": 841242,
-    "output": "copper_ingot",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "copper_nugget",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        null,
-        "copper_nugget"
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        "coal"
-      ]
-    ],
-    "added_version": "0.6.0"
   },
   {
     "id": "sandstone_furnace_idle_841243",
@@ -44619,6 +44075,192 @@
       [
         null,
         "high_carbon_steel_war_hammer",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "adamantium_bar_965",
+    "item_num": 965,
+    "output": "adamantium_bar",
+    "outputQty": 9,
+    "station": "adamantium_workbench",
+    "difficulty": 230400,
+    "skills": [],
+    "ingredients": [
+      "adamantium_block"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        "adamantium_block",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "copper_ingot_962",
+    "item_num": 962,
+    "output": "copper_ingot",
+    "outputQty": 9,
+    "station": "flint_workbench",
+    "difficulty": 3600,
+    "skills": [],
+    "ingredients": [
+      "copper_block"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        "copper_block",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "silver_ingot_963",
+    "item_num": 963,
+    "output": "silver_ingot",
+    "outputQty": 9,
+    "station": "flint_workbench",
+    "difficulty": 3600,
+    "skills": [],
+    "ingredients": [
+      "silver_block"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        "silver_block",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "mithril_bar_964",
+    "item_num": 964,
+    "output": "mithril_bar",
+    "outputQty": 9,
+    "station": "mithril_workbench",
+    "difficulty": 57600,
+    "skills": [],
+    "ingredients": [
+      "mithril_block"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        "mithril_block",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "ancient_metal_ingot_966",
+    "item_num": 966,
+    "output": "ancient_metal_ingot",
+    "outputQty": 9,
+    "station": "ancient_metal_workbench",
+    "difficulty": 14400,
+    "skills": [],
+    "ingredients": [
+      "ancient_metal_block"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        "ancient_metal_block",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "hardstone_ingot_2300",
+    "item_num": 2300,
+    "output": "hardstone_ingot",
+    "outputQty": 9,
+    "station": "flint_workbench",
+    "difficulty": 14400,
+    "skills": [],
+    "ingredients": [
+      "hardstone_block"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        "hardstone_block",
         null
       ],
       [
