@@ -1,5 +1,14 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import itemsRaw from '../../data/items.json';
+
+interface ItemInfo {
+  mcmod_id?: number;
+  desc?: string;
+  added?: string;
+  removed_v?: string;
+  removed?: boolean;
+  versions?: string[];
+}
 
 const BASE = (import.meta as any).env?.BASE_URL?.replace(/\/$/, '') ?? '';
 
@@ -55,6 +64,31 @@ const TIER_ORDER = ['flint','bone','wood','stone','copper','tin','silver','bronz
   'gold','hard','obsidian','rusted_iron','silver_copper','high_carbon_steel',
   'ancient_metal','mithril','adamantium','mercury'];
 
+// Precompute tier progression groups: base_name → sorted list of ItemData
+const tierGroups: Record<string, ItemData[]> = {};
+for (const item of allItems) {
+  if (!item.tier) continue;
+  if (item.id.startsWith(item.tier + '_')) {
+    const base = item.id.slice(item.tier.length + 1);
+    if (!tierGroups[base]) tierGroups[base] = [];
+    tierGroups[base].push(item);
+  }
+}
+// Sort each group by tier order
+for (const base in tierGroups) {
+  tierGroups[base].sort((a, b) =>
+    (TIER_ORDER.indexOf(a.tier!) - TIER_ORDER.indexOf(b.tier!))
+  );
+  // Only keep groups with 2+ members
+  if (tierGroups[base].length < 2) delete tierGroups[base];
+}
+
+function getTierGroup(item: ItemData): ItemData[] | null {
+  if (!item.tier || !item.id.startsWith(item.tier + '_')) return null;
+  const base = item.id.slice(item.tier.length + 1);
+  return tierGroups[base] ?? null;
+}
+
 const CAT_ORDER = ['weapon','tool','armor','material','block','food','ingot','station','misc'];
 
 function ItemIcon({ item, size }: { item: ItemData; size: number }) {
@@ -101,6 +135,14 @@ export default function ItemExplorer() {
   const [catFilter, setCatFilter] = useState('');
   const [tierFilter, setTierFilter] = useState('');
   const [selected, setSelected] = useState<ItemData | null>(null);
+  const [itemInfo, setItemInfo] = useState<Record<string, ItemInfo>>({});
+
+  useEffect(() => {
+    fetch(`${BASE}/data/item_info.json`)
+      .then(r => r.json())
+      .then(setItemInfo)
+      .catch(() => {});
+  }, []);
 
   useEffect(() => {
     try {
@@ -343,31 +385,145 @@ export default function ItemExplorer() {
 
             {/* Body */}
             <div style={{ padding: '20px 24px', flex: 1 }}>
-              {/* Item ID */}
-              <div style={{ marginBottom: 16 }}>
-                <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
-                  color: 'var(--text2)', marginBottom: 4 }}>
-                  {lang === 'hu' ? 'Item ID' : 'Item ID'}
+              {/* Removed warning */}
+              {itemInfo[selected.id]?.removed && (
+                <div style={{ padding: '8px 12px', marginBottom: 16,
+                  background: 'rgba(233,69,96,.1)', border: '1px solid rgba(233,69,96,.3)',
+                  borderRadius: 6, fontSize: '.82em', color: 'var(--accent)' }}>
+                  ⚠️ {lang === 'hu'
+                    ? `Ez az item el lett távolítva${itemInfo[selected.id].removed_v ? ` (v${itemInfo[selected.id].removed_v})` : ''}`
+                    : `This item was removed${itemInfo[selected.id].removed_v ? ` (v${itemInfo[selected.id].removed_v})` : ''}`}
                 </div>
-                <code style={{ fontSize: '.85em', background: 'var(--surface)', padding: '4px 10px',
-                  borderRadius: 4, border: '1px solid var(--surface2)', display: 'inline-block' }}>
-                  {selected.id}
-                </code>
-              </div>
+              )}
 
-              {/* Recipes link */}
-              <a
-                href={`${BASE}/recipes/?search=${encodeURIComponent(selected.id)}`}
-                style={{
-                  display: 'inline-flex', alignItems: 'center', gap: 6,
-                  padding: '8px 16px', borderRadius: 6, fontSize: '.88em', fontWeight: 600,
-                  background: 'rgba(240,192,64,.12)', color: 'var(--gold)',
-                  border: '1px solid rgba(240,192,64,.35)', textDecoration: 'none',
-                  transition: 'all .15s',
-                }}
-              >
-                ⚒ {lang === 'hu' ? 'Receptek megtekintése' : 'View recipes'}
-              </a>
+              {/* Version info */}
+              {(itemInfo[selected.id]?.added || itemInfo[selected.id]?.removed_v) && (
+                <div style={{ display: 'flex', gap: 8, marginBottom: 16, flexWrap: 'wrap' }}>
+                  {itemInfo[selected.id].added && (
+                    <span style={{ fontSize: '.78em', padding: '3px 10px', borderRadius: 10,
+                      background: 'rgba(78,204,163,.12)', color: 'var(--green)',
+                      border: '1px solid rgba(78,204,163,.3)', fontWeight: 600 }}>
+                      + v{itemInfo[selected.id].added}
+                    </span>
+                  )}
+                  {itemInfo[selected.id].removed_v && (
+                    <span style={{ fontSize: '.78em', padding: '3px 10px', borderRadius: 10,
+                      background: 'rgba(233,69,96,.1)', color: 'var(--accent)',
+                      border: '1px solid rgba(233,69,96,.3)', fontWeight: 600 }}>
+                      ✕ v{itemInfo[selected.id].removed_v}
+                    </span>
+                  )}
+                </div>
+              )}
+
+              {/* Description */}
+              {itemInfo[selected.id]?.desc && (
+                <div style={{ marginBottom: 20 }}>
+                  <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
+                    color: 'var(--text2)', marginBottom: 6 }}>
+                    {lang === 'hu' ? 'Leírás' : 'Description'}
+                  </div>
+                  <div style={{ fontSize: '.88em', lineHeight: 1.65, color: 'var(--text)',
+                    background: 'var(--surface)', border: '1px solid var(--surface2)',
+                    borderRadius: 6, padding: '10px 14px' }}>
+                    {itemInfo[selected.id].desc}
+                  </div>
+                </div>
+              )}
+
+              {/* Tier progression */}
+              {(() => {
+                const group = getTierGroup(selected);
+                if (!group) return null;
+                return (
+                  <div style={{ marginBottom: 20 }}>
+                    <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
+                      color: 'var(--text2)', marginBottom: 8 }}>
+                      {lang === 'hu' ? 'Tier progresszió' : 'Tier progression'}
+                    </div>
+                    <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
+                      {group.map(item => {
+                        const meta = item.tier ? TIER_META[item.tier] : null;
+                        const isCurrent = item.id === selected.id;
+                        return (
+                          <div
+                            key={item.id}
+                            onClick={() => setSelected(item)}
+                            title={item.name[lang as 'hu' | 'en']}
+                            style={{
+                              display: 'flex', flexDirection: 'column', alignItems: 'center',
+                              gap: 3, padding: '6px 8px', borderRadius: 6, cursor: 'pointer',
+                              border: `1px solid ${isCurrent ? (meta?.color ?? 'var(--gold)') : 'var(--surface2)'}`,
+                              background: isCurrent ? (meta?.bg ?? 'rgba(240,192,64,.1)') : 'var(--surface)',
+                              minWidth: 48,
+                            }}
+                          >
+                            <ItemIcon item={item} size={24} />
+                            {meta && (
+                              <span style={{ fontSize: '.55em', fontWeight: 700,
+                                color: meta.color, whiteSpace: 'nowrap' }}>
+                                {meta[lang as 'hu' | 'en']}
+                              </span>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              })()}
+
+              {/* Version notes */}
+              {itemInfo[selected.id]?.versions && itemInfo[selected.id].versions!.length > 0 && (
+                <div style={{ marginBottom: 20 }}>
+                  <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
+                    color: 'var(--text2)', marginBottom: 6 }}>
+                    {lang === 'hu' ? 'Verzió megjegyzések' : 'Version notes'}
+                  </div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                    {itemInfo[selected.id].versions!.map((v, i) => (
+                      <div key={i} style={{ fontSize: '.8em', padding: '5px 10px',
+                        background: 'var(--surface)', border: '1px solid var(--surface2)',
+                        borderRadius: 4, color: 'var(--text2)', lineHeight: 1.4 }}>
+                        {v}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Bottom links */}
+              <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', borderTop: '1px solid var(--surface2)', paddingTop: 16 }}>
+                <a
+                  href={`${BASE}/recipes/?search=${encodeURIComponent(selected.id)}`}
+                  style={{
+                    display: 'inline-flex', alignItems: 'center', gap: 6,
+                    padding: '7px 14px', borderRadius: 6, fontSize: '.85em', fontWeight: 600,
+                    background: 'rgba(240,192,64,.12)', color: 'var(--gold)',
+                    border: '1px solid rgba(240,192,64,.35)', textDecoration: 'none',
+                  }}
+                >
+                  ⚒ {lang === 'hu' ? 'Receptek' : 'Recipes'}
+                </a>
+                {itemInfo[selected.id]?.mcmod_id && (
+                  <a
+                    href={`https://www.mcmod.cn/item/${itemInfo[selected.id].mcmod_id}.html`}
+                    target="_blank" rel="noopener noreferrer"
+                    style={{
+                      display: 'inline-flex', alignItems: 'center', gap: 6,
+                      padding: '7px 14px', borderRadius: 6, fontSize: '.85em', fontWeight: 600,
+                      background: 'var(--surface)', color: 'var(--text2)',
+                      border: '1px solid var(--surface2)', textDecoration: 'none',
+                    }}
+                  >
+                    🌐 mcmod.cn
+                  </a>
+                )}
+                <div style={{ marginLeft: 'auto', fontSize: '.75em', color: 'var(--text2)',
+                  display: 'flex', alignItems: 'center' }}>
+                  <code>{selected.id}</code>
+                </div>
+              </div>
             </div>
           </div>
         </>
