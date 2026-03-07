@@ -138,46 +138,54 @@ if (typeof document !== 'undefined' && !document.getElementById(ARROW_ANIM_ID)) 
 }
 
 // ── Furnace-type grid components ─────────────────────────────────────────
-const FURNACE_SLOT: React.CSSProperties = {
-  width: 36, height: 36,
-  background: '#8b8b8b', border: '1px solid #555',
-  display: 'flex', alignItems: 'center', justifyContent: 'center',
-  boxShadow: 'inset 1px 1px 0 rgba(255,255,255,.07), inset -1px -1px 0 rgba(0,0,0,.3)',
-  position: 'relative',
-};
-const FURNACE_SLOT_MINI: React.CSSProperties = { ...FURNACE_SLOT, width: CELL, height: CELL };
+const SS = 34; // smelting slot size (mini cards)
+const SD = 40; // smelting slot size (detail panel)
+function makeSlot(size: number, gold?: boolean): React.CSSProperties {
+  return {
+    width: size, height: size, position: 'relative', flexShrink: 0,
+    background: gold ? '#6b5a1a' : '#8b8b8b',
+    border: `1px solid ${gold ? '#9a8030' : '#555'}`,
+    display: 'flex', alignItems: 'center', justifyContent: 'center',
+    boxShadow: gold
+      ? 'inset 1px 1px 0 rgba(255,220,80,.15), inset -1px -1px 0 rgba(0,0,0,.35)'
+      : 'inset 1px 1px 0 rgba(255,255,255,.08), inset -1px -1px 0 rgba(0,0,0,.25)',
+  };
+}
 
 function CountBadge({ n, mini }: { n: number; mini?: boolean }) {
   if (n <= 1) return null;
   return <span style={{ position: 'absolute', bottom: 1, right: 2, fontSize: mini ? '.48em' : '.58em', color: 'white', fontWeight: 700, textShadow: '0 0 2px black', lineHeight: 1 }}>{n}</span>;
 }
 
-/** blast_furnace mini card: input → alloy → output */
+/** blast_furnace mini card — ore + alloy side by side, fire below */
 function SmeltingMini({ recipe }: { recipe: FullRecipe }) {
   const flat = flattenIngredients(recipe.ingredients);
   const input = flat[0] || null;
   const material = flat[1] || null;
   const materialCount = recipe.ingredients.filter(i => flattenIngredient(i) === (material || '')).length;
   return (
-    <div style={{ background: 'linear-gradient(135deg,#7a5518 0%,#5c3d0b 55%,#6b4a10 100%)', padding: 3, borderRadius: 4, border: '1px solid #3d2606', boxShadow: 'inset 0 1px 4px rgba(0,0,0,.55)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 1 }}>
-      <div style={FURNACE_SLOT_MINI}>{input && <ItemIcon id={input} size={CELL - 6} />}</div>
-      <div style={{ fontSize: '.48em', color: '#ff9900', lineHeight: 1 }}>🔥</div>
-      <div style={FURNACE_SLOT_MINI}>{material && <ItemIcon id={material} size={CELL - 6} />}<CountBadge n={materialCount} mini /></div>
+    <div style={{ background: '#2e1e06', padding: '4px 5px', borderRadius: 5, border: '1px solid #6b4a10', boxShadow: 'inset 0 1px 5px rgba(0,0,0,.6)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
+      <div style={{ display: 'flex', gap: 3 }}>
+        <div style={makeSlot(SS)}>{input && <ItemIcon id={input} size={SS - 6} />}</div>
+        <div style={makeSlot(SS, true)}>{material && <ItemIcon id={material} size={SS - 6} />}<CountBadge n={materialCount} mini /></div>
+      </div>
+      <div style={{ fontSize: '.6em', color: '#ff8800', lineHeight: 1, letterSpacing: 2 }}>🔥</div>
     </div>
   );
 }
 
-/** stone_furnace mini card: input → output */
+/** stone_furnace mini card */
 function FurnaceMini({ recipe }: { recipe: FullRecipe }) {
-  const flat = flattenIngredients(recipe.ingredients);
-  const input = flat[0] || null;
+  const input = flattenIngredients(recipe.ingredients)[0] || null;
   return (
-    <div style={{ background: 'linear-gradient(135deg,#6a4a3a 0%,#4a2c1c 55%,#5a3a28 100%)', padding: 3, borderRadius: 4, border: '1px solid #3d1e06', boxShadow: 'inset 0 1px 4px rgba(0,0,0,.55)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 1 }}>
-      <div style={FURNACE_SLOT_MINI}>{input && <ItemIcon id={input} size={CELL - 6} />}</div>
-      <div style={{ fontSize: '.48em', color: '#ff9900', lineHeight: 1 }}>🔥</div>
+    <div style={{ background: '#221208', padding: '4px 6px', borderRadius: 5, border: '1px solid #5a3a28', boxShadow: 'inset 0 1px 5px rgba(0,0,0,.6)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
+      <div style={makeSlot(SS)}>{input && <ItemIcon id={input} size={SS - 6} />}</div>
+      <div style={{ fontSize: '.6em', color: '#ff7700', lineHeight: 1 }}>🔥</div>
     </div>
   );
 }
+
+const LABEL: React.CSSProperties = { fontSize: '.52em', color: '#aaa', letterSpacing: 1, textTransform: 'uppercase', lineHeight: 1 };
 
 /** blast_furnace detail panel */
 function SmeltingDetail({ recipe }: { recipe: FullRecipe }) {
@@ -186,22 +194,28 @@ function SmeltingDetail({ recipe }: { recipe: FullRecipe }) {
   const material = flat[1] || null;
   const materialCount = recipe.ingredients.filter(i => flattenIngredient(i) === (material || '')).length;
   return (
-    <div style={{ background: 'linear-gradient(135deg,#7a5518 0%,#5c3d0b 55%,#6b4a10 100%)', padding: 5, borderRadius: 6, border: '2px solid #3d2606', boxShadow: 'inset 0 2px 6px rgba(0,0,0,.55)', flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
-      <div style={FURNACE_SLOT}>{input && <ItemIcon id={input} size={30} />}</div>
-      <div style={{ fontSize: '.8em', color: '#ff9900', lineHeight: 1 }}>🔥</div>
-      <div style={FURNACE_SLOT}>{material && <ItemIcon id={material} size={30} />}<CountBadge n={materialCount} /></div>
+    <div style={{ background: '#2e1e06', padding: '8px 10px', borderRadius: 7, border: '2px solid #6b4a10', boxShadow: 'inset 0 2px 8px rgba(0,0,0,.6)', flexShrink: 0, display: 'flex', gap: 8, alignItems: 'center' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
+        <span style={LABEL}>Érc</span>
+        <div style={makeSlot(SD)}>{input && <ItemIcon id={input} size={SD - 8} />}</div>
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
+        <span style={LABEL}>Ötvöző</span>
+        <div style={makeSlot(SD, true)}>{material && <ItemIcon id={material} size={SD - 8} />}<CountBadge n={materialCount} /></div>
+      </div>
+      <div style={{ fontSize: '1.1em', color: '#ff8800', alignSelf: 'flex-end', paddingBottom: 2 }}>🔥</div>
     </div>
   );
 }
 
 /** stone_furnace detail panel */
 function FurnaceDetail({ recipe }: { recipe: FullRecipe }) {
-  const flat = flattenIngredients(recipe.ingredients);
-  const input = flat[0] || null;
+  const input = flattenIngredients(recipe.ingredients)[0] || null;
   return (
-    <div style={{ background: 'linear-gradient(135deg,#6a4a3a 0%,#4a2c1c 55%,#5a3a28 100%)', padding: 5, borderRadius: 6, border: '2px solid #3d1e06', boxShadow: 'inset 0 2px 6px rgba(0,0,0,.55)', flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
-      <div style={FURNACE_SLOT}>{input && <ItemIcon id={input} size={30} />}</div>
-      <div style={{ fontSize: '.8em', color: '#ff9900', lineHeight: 1 }}>🔥</div>
+    <div style={{ background: '#221208', padding: '8px 10px', borderRadius: 7, border: '2px solid #5a3a28', boxShadow: 'inset 0 2px 8px rgba(0,0,0,.6)', flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
+      <span style={LABEL}>Bemenet</span>
+      <div style={makeSlot(SD)}>{input && <ItemIcon id={input} size={SD - 8} />}</div>
+      <div style={{ fontSize: '1em', color: '#ff7700', lineHeight: 1 }}>🔥</div>
     </div>
   );
 }
