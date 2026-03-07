@@ -2291,7 +2291,7 @@
     },
     "img": "img/items/adamantium_bucket.png",
     "tier": "adamantium",
-    "category": "misc"
+    "category": "tool"
   },
   "adamantium_bucket_filled_with_milk": {
     "name": {
@@ -2300,7 +2300,7 @@
     },
     "img": "img/items/adamantium_bucket_filled_with_milk.png",
     "tier": "adamantium",
-    "category": "misc"
+    "category": "tool"
   },
   "adamantium_bucket_filled_with_stone": {
     "name": {
@@ -2309,7 +2309,7 @@
     },
     "img": "img/items/adamantium_bucket_filled_with_stone.png",
     "tier": "adamantium",
-    "category": "block"
+    "category": "tool"
   },
   "adamantium_bucket_filled_with_water": {
     "name": {
@@ -2318,7 +2318,7 @@
     },
     "img": "img/items/adamantium_bucket_filled_with_water.png",
     "tier": "adamantium",
-    "category": "misc"
+    "category": "tool"
   },
   "adamantium_chain_boots": {
     "name": {
@@ -2511,7 +2511,7 @@
     },
     "img": "img/items/ancient_metal_bucket.png",
     "tier": "ancient_metal",
-    "category": "misc"
+    "category": "tool"
   },
   "ancient_metal_bucket_filled_with_milk": {
     "name": {
@@ -2520,7 +2520,7 @@
     },
     "img": "img/items/ancient_metal_bucket_filled_with_milk.png",
     "tier": "ancient_metal",
-    "category": "misc"
+    "category": "tool"
   },
   "ancient_metal_bucket_filled_with_stone": {
     "name": {
@@ -2529,7 +2529,7 @@
     },
     "img": "img/items/ancient_metal_bucket_filled_with_stone.png",
     "tier": "ancient_metal",
-    "category": "block"
+    "category": "tool"
   },
   "ancient_metal_bucket_filled_with_water": {
     "name": {
@@ -2538,7 +2538,7 @@
     },
     "img": "img/items/ancient_metal_bucket_filled_with_water.png",
     "tier": "ancient_metal",
-    "category": "misc"
+    "category": "tool"
   },
   "ancient_metal_chain_boots": {
     "name": {
@@ -3552,7 +3552,7 @@
     },
     "img": "img/items/copper_bucket.png",
     "tier": "copper",
-    "category": "misc"
+    "category": "tool"
   },
   "copper_bucket_filled_with_milk": {
     "name": {
@@ -3561,7 +3561,7 @@
     },
     "img": "img/items/copper_bucket_filled_with_milk.png",
     "tier": "copper",
-    "category": "misc"
+    "category": "tool"
   },
   "copper_bucket_filled_with_stone": {
     "name": {
@@ -3570,7 +3570,7 @@
     },
     "img": "img/items/copper_bucket_filled_with_stone.png",
     "tier": "copper",
-    "category": "block"
+    "category": "tool"
   },
   "copper_bucket_filled_with_water": {
     "name": {
@@ -3579,7 +3579,7 @@
     },
     "img": "img/items/copper_bucket_filled_with_water.png",
     "tier": "copper",
-    "category": "misc"
+    "category": "tool"
   },
   "copper_chain_boots": {
     "name": {
@@ -4348,7 +4348,7 @@
     },
     "img": "img/items/gold_bucket.png",
     "tier": "gold",
-    "category": "misc"
+    "category": "tool"
   },
   "gold_bucket_filled_with_milk": {
     "name": {
@@ -4357,7 +4357,7 @@
     },
     "img": "img/items/gold_bucket_filled_with_milk.png",
     "tier": "gold",
-    "category": "misc"
+    "category": "tool"
   },
   "gold_bucket_filled_with_stone": {
     "name": {
@@ -4366,7 +4366,7 @@
     },
     "img": "img/items/gold_bucket_filled_with_stone.png",
     "tier": "gold",
-    "category": "block"
+    "category": "tool"
   },
   "gold_bucket_filled_with_water": {
     "name": {
@@ -4375,7 +4375,7 @@
     },
     "img": "img/items/gold_bucket_filled_with_water.png",
     "tier": "gold",
-    "category": "misc"
+    "category": "tool"
   },
   "gold_chain_boots": {
     "name": {
@@ -4695,7 +4695,7 @@
     },
     "img": "img/items/hard_stone_bucket_of_milk.png",
     "tier": "hard",
-    "category": "misc"
+    "category": "tool"
   },
   "hard_stone_bucket_of_stone": {
     "name": {
@@ -4704,7 +4704,7 @@
     },
     "img": "img/items/hard_stone_bucket_of_stone.png",
     "tier": "hard",
-    "category": "block"
+    "category": "tool"
   },
   "hard_stone_bucket_of_water": {
     "name": {
@@ -4713,7 +4713,7 @@
     },
     "img": "img/items/hard_stone_bucket_of_water.png",
     "tier": "hard",
-    "category": "misc"
+    "category": "tool"
   },
   "hard_stone_chestplate": {
     "name": {
@@ -4886,7 +4886,7 @@
     },
     "img": "img/items/hardstone_bucket.png",
     "tier": null,
-    "category": "misc"
+    "category": "tool"
   },
   "hardstone_coin": {
     "name": {
@@ -5013,7 +5013,7 @@
     },
     "img": "img/items/iron_bucket.png",
     "tier": "iron",
-    "category": "misc"
+    "category": "tool"
   },
   "iron_bucket_filled_with_milk": {
     "name": {
@@ -5022,7 +5022,7 @@
     },
     "img": "img/items/iron_bucket.png",
     "tier": "iron",
-    "category": "misc"
+    "category": "tool"
   },
   "iron_bucket_filled_with_stone": {
     "name": {
@@ -5031,7 +5031,7 @@
     },
     "img": "img/items/iron_bucket.png",
     "tier": "iron",
-    "category": "block"
+    "category": "tool"
   },
   "iron_bucket_filled_with_water": {
     "name": {
@@ -5040,7 +5040,7 @@
     },
     "img": "img/items/iron_bucket.png",
     "tier": "iron",
-    "category": "misc"
+    "category": "tool"
   },
   "iron_chain_boots": {
     "name": {
@@ -5762,7 +5762,7 @@
     },
     "img": "img/items/mithril_bucket.png",
     "tier": "mithril",
-    "category": "misc"
+    "category": "tool"
   },
   "mithril_bucket_filled_with_milk": {
     "name": {
@@ -5771,7 +5771,7 @@
     },
     "img": "img/items/mithril_bucket_filled_with_milk.png",
     "tier": "mithril",
-    "category": "misc"
+    "category": "tool"
   },
   "mithril_bucket_filled_with_stone": {
     "name": {
@@ -5780,7 +5780,7 @@
     },
     "img": "img/items/mithril_bucket_filled_with_stone.png",
     "tier": "mithril",
-    "category": "block"
+    "category": "tool"
   },
   "mithril_bucket_filled_with_water": {
     "name": {
@@ -5789,7 +5789,7 @@
     },
     "img": "img/items/mithril_bucket_filled_with_water.png",
     "tier": "mithril",
-    "category": "misc"
+    "category": "tool"
   },
   "mithril_chain_boots": {
     "name": {
@@ -6939,7 +6939,7 @@
     },
     "img": "img/items/silver_bucket.png",
     "tier": "silver",
-    "category": "misc"
+    "category": "tool"
   },
   "silver_bucket_filled_with_milk": {
     "name": {
@@ -6948,7 +6948,7 @@
     },
     "img": "img/items/silver_bucket_filled_with_milk.png",
     "tier": "silver",
-    "category": "misc"
+    "category": "tool"
   },
   "silver_bucket_filled_with_stone": {
     "name": {
@@ -6957,7 +6957,7 @@
     },
     "img": "img/items/silver_bucket_filled_with_stone.png",
     "tier": "silver",
-    "category": "block"
+    "category": "tool"
   },
   "silver_bucket_filled_with_water": {
     "name": {
@@ -6966,7 +6966,7 @@
     },
     "img": "img/items/silver_bucket_filled_with_water.png",
     "tier": "silver",
-    "category": "misc"
+    "category": "tool"
   },
   "silver_chain_boots": {
     "name": {
@@ -8555,7 +8555,7 @@
     },
     "img": "img/items/tin_ingot.png",
     "tier": "tin",
-    "category": "material"
+    "category": "ingot"
   },
   "pcb": {
     "name": {
@@ -10208,7 +10208,7 @@
     },
     "img": "img/items/bucket_stone.png",
     "tier": null,
-    "category": "material"
+    "category": "tool"
   },
   "bucket_liquefied_gold": {
     "name": {
@@ -10217,7 +10217,7 @@
     },
     "img": "img/items/bucket_liquefied_gold.png",
     "tier": "gold",
-    "category": "material"
+    "category": "tool"
   },
   "fluid_tank": {
     "name": {
@@ -10235,7 +10235,7 @@
     },
     "img": "img/items/bucket_clean_water.png",
     "tier": null,
-    "category": "material"
+    "category": "tool"
   },
   "jewelry_shield": {
     "name": {
@@ -10262,7 +10262,7 @@
     },
     "img": "img/items/bucket_liquefied_mercury.png",
     "tier": null,
-    "category": "material"
+    "category": "tool"
   },
   "conveying_stone": {
     "name": {
