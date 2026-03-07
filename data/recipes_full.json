@@ -13551,12 +13551,12 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -13587,12 +13587,12 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -13724,12 +13724,12 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -13758,12 +13758,12 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -13938,12 +13938,12 @@
       ],
       [
         "mithril_bar",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -13974,12 +13974,12 @@
       ],
       [
         "adamantium_bar",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -14079,12 +14079,12 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -14114,12 +14114,12 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -14304,12 +14304,12 @@
       ],
       [
         "mithril_bar",
-        "stick",
+        "hard_stick",
         "mithril_bar"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -14342,12 +14342,12 @@
       ],
       [
         "adamantium_bar",
-        "stick",
+        "hard_stick",
         "adamantium_bar"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -14527,12 +14527,12 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "mithril_bar"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -14564,12 +14564,12 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "adamantium_bar"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -14749,12 +14749,12 @@
       ],
       [
         "mithril_bar",
-        "stick",
+        "hard_stick",
         "mithril_bar"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -14786,12 +14786,12 @@
       ],
       [
         "adamantium_bar",
-        "stick",
+        "hard_stick",
         "adamantium_bar"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -14960,17 +14960,17 @@
     "shaped": true,
     "pattern": [
       [
-        "stick",
+        "hard_stick",
         "mithril_bar",
         "_"
       ],
       [
-        "stick",
+        "hard_stick",
         "_",
         "mithril_bar"
       ],
       [
-        "stick",
+        "hard_stick",
         "_",
         "_"
       ]
@@ -14996,17 +14996,17 @@
     "shaped": true,
     "pattern": [
       [
-        "stick",
+        "hard_stick",
         "adamantium_bar",
         "_"
       ],
       [
-        "stick",
+        "hard_stick",
         "_",
         "adamantium_bar"
       ],
       [
-        "stick",
+        "hard_stick",
         "_",
         "_"
       ]
@@ -15356,7 +15356,7 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -15390,7 +15390,7 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -22586,12 +22586,12 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -22620,12 +22620,12 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -22656,12 +22656,12 @@
       ],
       [
         "ancient_metal_ingot",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -22691,12 +22691,12 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -22729,12 +22729,12 @@
       ],
       [
         "ancient_metal_ingot",
-        "stick",
+        "hard_stick",
         "ancient_metal_ingot"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -22766,12 +22766,12 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "ancient_metal_ingot"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -22803,12 +22803,12 @@
       ],
       [
         "ancient_metal_ingot",
-        "stick",
+        "hard_stick",
         "ancient_metal_ingot"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -22833,17 +22833,17 @@
     "shaped": true,
     "pattern": [
       [
-        "stick",
+        "hard_stick",
         "ancient_metal_ingot",
         "_"
       ],
       [
-        "stick",
+        "hard_stick",
         "_",
         "ancient_metal_ingot"
       ],
       [
-        "stick",
+        "hard_stick",
         "_",
         "_"
       ]
@@ -22911,7 +22911,7 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -31211,12 +31211,12 @@
     "pattern": [
       [
         "adamantium_bar",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
@@ -31243,12 +31243,12 @@
     "pattern": [
       [
         "ancient_metal_ingot",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
@@ -31275,12 +31275,12 @@
     "pattern": [
       [
         "mithril_bar",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ],
       [
@@ -31651,19 +31651,19 @@
     "shaped": true,
     "pattern": [
       [
-        "adamantium_bar",
-        "adamantium_bar",
-        "adamantium_bar"
+        "_",
+        "_",
+        "sinew"
       ],
       [
-        "adamantium_bar",
-        "water_bag",
-        "adamantium_bar"
+        "_",
+        "leather",
+        "_"
       ],
       [
-        "adamantium_bar",
-        "adamantium_bar",
-        "adamantium_bar"
+        "leather",
+        "_",
+        "_"
       ]
     ]
   },
@@ -31924,7 +31924,7 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -31957,7 +31957,7 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -31990,7 +31990,7 @@
       ],
       [
         "_",
-        "stick",
+        "hard_stick",
         "_"
       ]
     ]
@@ -34187,7 +34187,7 @@
     "pattern": [
       [
         "_",
-        "raw_fish",
+        "_",
         "_"
       ],
       [
@@ -34249,7 +34249,7 @@
     "pattern": [
       [
         "_",
-        "raw_porkchop",
+        "_",
         "_"
       ],
       [
@@ -34372,7 +34372,7 @@
     "shaped": true,
     "pattern": [
       [
-        "chip_flint_knife",
+        "copper_dagger",
         "leather",
         "_"
       ],
@@ -34443,7 +34443,7 @@
       ],
       [
         "mithril_nugget",
-        "obsidian",
+        "element_obsidian",
         "mithril_nugget"
       ],
       [
