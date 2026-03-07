@@ -104,13 +104,28 @@ A következő itemek valószínűleg a modban vannak, de nincsenek a wikiünkben
 
 ---
 
+## 8. Duplikátum gyanús itemek
+
+- `fish_raw` (category=material) és `raw_fish` (category=food) — ugyanaz a neve és képe, de különböző ID. `fish_raw` nincs receptben. Törölhető?
+- `oak_slab` és `oak_wood_slab_single` — mindkettő ugyanazt a képet mutatja. Alias?
+- `wood_slab_single` — ingredient több receptben (daylight_sensor, sign, barrel, grindstone), de nincs saját receptje. Vanilla MC item?
+
+---
+
 ## Elvégzett automatikus javítások (nem igényelnek döntést)
 
-- `removed_in` mező hozzáadva 121 itemhez (majd 37-ről visszavéve ahol tévesen volt)
-- 84 item helyesen jelölve `removed_in`-nel
+- `removed_in` mező hozzáadva 84 itemhez (v0.5.5–v0.9.0)
+- 8 vízzsák fém variáns (`water_bag_copper`–`water_bag_adamantium`) `removed_in: "0.9.0"` jelölés kapott
+- 8 vízzsák upgrade recept hozzáadva recipes_full.json-ba (v0.5.6→v0.9.0)
+- 9 ore→ingot smelting recept hozzáadva (`copper_ingot`, `silver_ingot`, `gold_ingot`, `iron_ingot`, `hardstone_ingot`, `mithril_bar`, `adamantium_bar` + `cooked_chicken`, `baked_potato`)
 - 286 recept kapott `added_version`/`removed_version` tageket
 - 11 recept `workbench` → `flint_workbench` javítva
+- `chip_flint_knife` tier: `1` (szám) → `"flint"` (string) javítva
+- 45 item kategória javítva: bronze/silver_copper/hcs/rusted_iron fegyverek/eszközök `material` → `weapon`/`tool`; flint_and_steel variánsok → `tool`; `jewelry_shield` → `armor`; `bowl_milk`, bowl soups → `food`
+- 9 főtt étel kategória javítva `material` → `food`: `duck_cooked`, `duck_head_cooked`, `cooked_squid_meat`, `cooked_mutton`, `worm_cooked`, `duck_head`, `mutton_raw`, `squid_meat`, `worm_raw`
+- `rusted_iron_arrow` `material` → `weapon` javítva
 - `items.astro` item szám frissítve (1118 → 1126)
 - Changelog typo javítva ("Regebbi verziok" → "Régebbi verziók")
 - `ItemExplorer.tsx` + `RecipesHub.tsx` `removed_in` badge kezelés hozzáadva
 - `RecipesHub.tsx` új szűrők: ✅ Aktuális / ⚠️ Eltávolított
+- STATION_LABELS javítva RecipesHub.tsx-ben (`stone_workbench`/`hard_workbench` → `hardstone_workbench`/`ancient_metal_workbench`/`silver_workbench`)

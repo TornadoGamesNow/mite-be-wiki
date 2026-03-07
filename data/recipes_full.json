@@ -34770,5 +34770,410 @@
         "_"
       ]
     ]
+  },
+  {
+    "id": "water_bag_copper_785082",
+    "item_num": 785082,
+    "output": "water_bag_copper",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 400,
+    "skills": [],
+    "ingredients": [
+      "copper_ingot",
+      "copper_ingot",
+      "copper_ingot",
+      "copper_ingot",
+      "water_bag"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "copper_ingot",
+        "_"
+      ],
+      [
+        "copper_ingot",
+        "water_bag",
+        "copper_ingot"
+      ],
+      [
+        "_",
+        "copper_ingot",
+        "_"
+      ]
+    ],
+    "added_version": "0.5.6",
+    "removed_version": "0.9.0"
+  },
+  {
+    "id": "water_bag_silver_785083",
+    "item_num": 785083,
+    "output": "water_bag_silver",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 400,
+    "skills": [],
+    "ingredients": [
+      "silver_ingot",
+      "silver_ingot",
+      "silver_ingot",
+      "silver_ingot",
+      "water_bag"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "silver_ingot",
+        "_"
+      ],
+      [
+        "silver_ingot",
+        "water_bag",
+        "silver_ingot"
+      ],
+      [
+        "_",
+        "silver_ingot",
+        "_"
+      ]
+    ],
+    "added_version": "0.5.6",
+    "removed_version": "0.9.0"
+  },
+  {
+    "id": "water_bag_iron_785085",
+    "item_num": 785085,
+    "output": "water_bag_iron",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 400,
+    "skills": [],
+    "ingredients": [
+      "iron_ingot",
+      "iron_ingot",
+      "iron_ingot",
+      "iron_ingot",
+      "water_bag_copper"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "iron_ingot",
+        "_"
+      ],
+      [
+        "iron_ingot",
+        "water_bag_copper",
+        "iron_ingot"
+      ],
+      [
+        "_",
+        "iron_ingot",
+        "_"
+      ]
+    ],
+    "added_version": "0.5.6",
+    "removed_version": "0.9.0"
+  },
+  {
+    "id": "water_bag_gold_785084",
+    "item_num": 785084,
+    "output": "water_bag_gold",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 400,
+    "skills": [],
+    "ingredients": [
+      "gold_ingot",
+      "gold_ingot",
+      "gold_ingot",
+      "gold_ingot",
+      "water_bag_iron"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "gold_ingot",
+        "_"
+      ],
+      [
+        "gold_ingot",
+        "water_bag_iron",
+        "gold_ingot"
+      ],
+      [
+        "_",
+        "gold_ingot",
+        "_"
+      ]
+    ],
+    "added_version": "0.5.6",
+    "removed_version": "0.9.0"
+  },
+  {
+    "id": "water_bag_hard_785086",
+    "item_num": 785086,
+    "output": "water_bag_hard",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 400,
+    "skills": [],
+    "ingredients": [
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "hardstone_ingot",
+      "water_bag_gold"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "hardstone_ingot",
+        "_"
+      ],
+      [
+        "hardstone_ingot",
+        "water_bag_gold",
+        "hardstone_ingot"
+      ],
+      [
+        "_",
+        "hardstone_ingot",
+        "_"
+      ]
+    ],
+    "added_version": "0.5.6",
+    "removed_version": "0.9.0"
+  },
+  {
+    "id": "water_bag_ancient_metal_785087",
+    "item_num": 785087,
+    "output": "water_bag_ancient_metal",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 400,
+    "skills": [],
+    "ingredients": [
+      "ancient_metal_ingot",
+      "ancient_metal_ingot",
+      "ancient_metal_ingot",
+      "ancient_metal_ingot",
+      "water_bag_hard"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "ancient_metal_ingot",
+        "_"
+      ],
+      [
+        "ancient_metal_ingot",
+        "water_bag_hard",
+        "ancient_metal_ingot"
+      ],
+      [
+        "_",
+        "ancient_metal_ingot",
+        "_"
+      ]
+    ],
+    "added_version": "0.5.6",
+    "removed_version": "0.9.0"
+  },
+  {
+    "id": "water_bag_mithril_785088",
+    "item_num": 785088,
+    "output": "water_bag_mithril",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 400,
+    "skills": [],
+    "ingredients": [
+      "mithril_bar",
+      "mithril_bar",
+      "mithril_bar",
+      "mithril_bar",
+      "water_bag_ancient_metal"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "mithril_bar",
+        "_"
+      ],
+      [
+        "mithril_bar",
+        "water_bag_ancient_metal",
+        "mithril_bar"
+      ],
+      [
+        "_",
+        "mithril_bar",
+        "_"
+      ]
+    ],
+    "added_version": "0.5.6",
+    "removed_version": "0.9.0"
+  },
+  {
+    "id": "water_bag_adamantium_785089",
+    "item_num": 785089,
+    "output": "water_bag_adamantium",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 400,
+    "skills": [],
+    "ingredients": [
+      "adamantium_bar",
+      "adamantium_bar",
+      "adamantium_bar",
+      "adamantium_bar",
+      "water_bag_mithril"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "adamantium_bar",
+        "_"
+      ],
+      [
+        "adamantium_bar",
+        "water_bag_mithril",
+        "adamantium_bar"
+      ],
+      [
+        "_",
+        "adamantium_bar",
+        "_"
+      ]
+    ],
+    "added_version": "0.5.6",
+    "removed_version": "0.9.0"
+  },
+  {
+    "id": "copper_ingot_ore_smelt",
+    "item_num": null,
+    "output": "copper_ingot",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "copper_ore"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "silver_ingot_ore_smelt",
+    "item_num": null,
+    "output": "silver_ingot",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "silver_ore"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "gold_ingot_ore_smelt",
+    "item_num": null,
+    "output": "gold_ingot",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "gold_ore"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "iron_ingot_ore_smelt",
+    "item_num": null,
+    "output": "iron_ingot",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "iron_ore"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hardstone_ingot_ore_smelt",
+    "item_num": null,
+    "output": "hardstone_ingot",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "hardstone_ore"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "mithril_bar_ore_smelt",
+    "item_num": null,
+    "output": "mithril_bar",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "mithril_ore"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "adamantium_bar_ore_smelt",
+    "item_num": null,
+    "output": "adamantium_bar",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "adamantium_ore"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "cooked_chicken_smelt",
+    "item_num": null,
+    "output": "cooked_chicken",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "chicken"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "baked_potato_smelt",
+    "item_num": null,
+    "output": "baked_potato",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "potato"
+    ],
+    "shaped": false
   }
 ]

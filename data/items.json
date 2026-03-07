@@ -2390,7 +2390,7 @@
     },
     "img": "img/items/adamantium_flint_and_steel.png",
     "tier": "adamantium",
-    "category": "material"
+    "category": "tool"
   },
   "adamantium_fluid_tank": {
     "name": {
@@ -2638,7 +2638,7 @@
     },
     "img": "img/items/ancient_metal_flint_and_steel.png",
     "tier": "ancient_metal",
-    "category": "material"
+    "category": "tool"
   },
   "ancient_metal_fluid_tank": {
     "name": {
@@ -3073,7 +3073,7 @@
     },
     "img": "img/items/bowl_milk.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "bowl_water": {
     "name": {
@@ -3651,7 +3651,7 @@
     },
     "img": "img/items/copper_flint_and_steel.png",
     "tier": "copper",
-    "category": "material"
+    "category": "tool"
   },
   "copper_fluid_tank": {
     "name": {
@@ -4173,7 +4173,7 @@
     },
     "img": "img/items/flint_and_steel.png",
     "tier": "flint",
-    "category": "material"
+    "category": "tool"
   },
   "flint_axe": {
     "name": {
@@ -4456,7 +4456,7 @@
     },
     "img": "img/items/gold_flint_and_steel.png",
     "tier": "gold",
-    "category": "material"
+    "category": "tool"
   },
   "gold_fluid_tank": {
     "name": {
@@ -4741,7 +4741,7 @@
     },
     "img": "img/items/hard_stone_flint_and_steel.png",
     "tier": "hard",
-    "category": "material"
+    "category": "tool"
   },
   "hard_stone_fluid_tank": {
     "name": {
@@ -5853,7 +5853,7 @@
     },
     "img": "img/items/mithril_flint_and_steel.png",
     "tier": "mithril",
-    "category": "material"
+    "category": "tool"
   },
   "mithril_fluid_tank": {
     "name": {
@@ -7040,7 +7040,7 @@
     },
     "img": "img/items/silver_flint_and_steel.png",
     "tier": "silver",
-    "category": "material"
+    "category": "tool"
   },
   "silver_fluid_tank": {
     "name": {
@@ -8474,7 +8474,7 @@
     },
     "img": "img/items/mutton_raw.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "chip_flint_knife": {
     "name": {
@@ -8482,7 +8482,7 @@
       "en": "Chip Flint Knife"
     },
     "img": "img/items/chip_flint_knife.png",
-    "tier": 1,
+    "tier": "flint",
     "max_durability": 100,
     "category": "tool"
   },
@@ -9178,7 +9178,7 @@
     },
     "img": "img/items/duck_cooked.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "bad_duck_meat": {
     "name": {
@@ -9196,7 +9196,7 @@
     },
     "img": "img/items/duck_head.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "duck_head_cooked": {
     "name": {
@@ -9205,7 +9205,7 @@
     },
     "img": "img/items/duck_head_cooked.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "bad_duck_head_cooked": {
     "name": {
@@ -9223,7 +9223,7 @@
     },
     "img": "img/items/squid_meat.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "cooked_squid_meat": {
     "name": {
@@ -9232,7 +9232,7 @@
     },
     "img": "img/items/cooked_squid_meat.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "bad_cooked_squid_meat": {
     "name": {
@@ -9313,7 +9313,7 @@
     },
     "img": "img/items/cooked_mutton.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "blue_berries": {
     "name": {
@@ -9369,7 +9369,7 @@
     },
     "img": "img/items/worm_raw.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "worm_cooked": {
     "name": {
@@ -9378,7 +9378,7 @@
     },
     "img": "img/items/worm_cooked.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "return_scroll": {
     "name": {
@@ -9500,7 +9500,7 @@
     },
     "img": "img/items/rusted_iron_hatchet.png",
     "tier": "rusted_iron",
-    "category": "material",
+    "category": "tool",
     "max_durability": 1200
   },
   "high_carbon_steel_hatchet": {
@@ -9510,7 +9510,7 @@
     },
     "img": "img/items/high_carbon_steel_hatchet.png",
     "tier": "high_carbon_steel",
-    "category": "material",
+    "category": "tool",
     "max_durability": 9200
   },
   "rusted_iron_axe": {
@@ -9520,7 +9520,7 @@
     },
     "img": "img/items/rusted_iron_axe.png",
     "tier": "rusted_iron",
-    "category": "material",
+    "category": "tool",
     "max_durability": 3600
   },
   "bronze_axe": {
@@ -9530,7 +9530,7 @@
     },
     "img": "img/items/bronze_axe.png",
     "tier": "bronze",
-    "category": "material",
+    "category": "tool",
     "max_durability": 6000
   },
   "silver_copper_axe": {
@@ -9540,7 +9540,7 @@
     },
     "img": "img/items/silver_copper_axe.png",
     "tier": "silver_copper",
-    "category": "material",
+    "category": "tool",
     "max_durability": 7000
   },
   "high_carbon_steel_axe": {
@@ -9550,7 +9550,7 @@
     },
     "img": "img/items/high_carbon_steel_axe.png",
     "tier": "high_carbon_steel",
-    "category": "material",
+    "category": "tool",
     "max_durability": 12800
   },
   "rusted_iron_pickaxe": {
@@ -9560,7 +9560,7 @@
     },
     "img": "img/items/rusted_iron_pickaxe.png",
     "tier": "rusted_iron",
-    "category": "material",
+    "category": "tool",
     "max_durability": 3600
   },
   "bronze_pickaxe": {
@@ -9570,7 +9570,7 @@
     },
     "img": "img/items/bronze_pickaxe.png",
     "tier": "bronze",
-    "category": "material",
+    "category": "tool",
     "max_durability": 6000
   },
   "silver_copper_pickaxe": {
@@ -9580,7 +9580,7 @@
     },
     "img": "img/items/silver_copper_pickaxe.png",
     "tier": "silver_copper",
-    "category": "material",
+    "category": "tool",
     "max_durability": 7000
   },
   "high_carbon_steel_pickaxe": {
@@ -9590,7 +9590,7 @@
     },
     "img": "img/items/high_carbon_steel_pickaxe.png",
     "tier": "high_carbon_steel",
-    "category": "material",
+    "category": "tool",
     "max_durability": 12800
   },
   "rusted_iron_shovel": {
@@ -9600,7 +9600,7 @@
     },
     "img": "img/items/rusted_iron_shovel.png",
     "tier": "rusted_iron",
-    "category": "material",
+    "category": "tool",
     "max_durability": 1200
   },
   "bronze_shovel": {
@@ -9610,7 +9610,7 @@
     },
     "img": "img/items/bronze_shovel.png",
     "tier": "bronze",
-    "category": "material",
+    "category": "tool",
     "max_durability": 2000
   },
   "silver_copper_shovel": {
@@ -9620,7 +9620,7 @@
     },
     "img": "img/items/silver_copper_shovel.png",
     "tier": "silver_copper",
-    "category": "material",
+    "category": "tool",
     "max_durability": 3000
   },
   "high_carbon_steel_shovel": {
@@ -9630,7 +9630,7 @@
     },
     "img": "img/items/high_carbon_steel_shovel.png",
     "tier": "high_carbon_steel",
-    "category": "material",
+    "category": "tool",
     "max_durability": 4200
   },
   "rusted_iron_hoe": {
@@ -9640,7 +9640,7 @@
     },
     "img": "img/items/rusted_iron_hoe.png",
     "tier": "rusted_iron",
-    "category": "material",
+    "category": "tool",
     "max_durability": 2400
   },
   "high_carbon_steel_hoe": {
@@ -9650,7 +9650,7 @@
     },
     "img": "img/items/high_carbon_steel_hoe.png",
     "tier": "high_carbon_steel",
-    "category": "material",
+    "category": "tool",
     "max_durability": 9600
   },
   "rusted_iron_mattock": {
@@ -9660,7 +9660,7 @@
     },
     "img": "img/items/rusted_iron_mattock.png",
     "tier": "rusted_iron",
-    "category": "material",
+    "category": "tool",
     "max_durability": 4800
   },
   "high_carbon_steel_mattock": {
@@ -9670,7 +9670,7 @@
     },
     "img": "img/items/high_carbon_steel_mattock.png",
     "tier": "high_carbon_steel",
-    "category": "material",
+    "category": "tool",
     "max_durability": 18800
   },
   "rusted_iron_scythe": {
@@ -9680,7 +9680,7 @@
     },
     "img": "img/items/rusted_iron_scythe.png",
     "tier": "rusted_iron",
-    "category": "material",
+    "category": "weapon",
     "max_durability": 2400
   },
   "high_carbon_steel_scythe": {
@@ -9690,7 +9690,7 @@
     },
     "img": "img/items/high_carbon_steel_scythe.png",
     "tier": "high_carbon_steel",
-    "category": "material",
+    "category": "weapon",
     "max_durability": 12240
   },
   "rusted_iron_shears": {
@@ -9700,7 +9700,7 @@
     },
     "img": "img/items/rusted_iron_shears.png",
     "tier": "rusted_iron",
-    "category": "material",
+    "category": "tool",
     "max_durability": 2400
   },
   "high_carbon_steel_shears": {
@@ -9710,7 +9710,7 @@
     },
     "img": "img/items/high_carbon_steel_shears.png",
     "tier": "high_carbon_steel",
-    "category": "material",
+    "category": "tool",
     "max_durability": 9600
   },
   "water_bag_mercury": {
@@ -9795,7 +9795,7 @@
     },
     "img": "img/items/flint_spear.png",
     "tier": "flint",
-    "category": "material",
+    "category": "weapon",
     "max_durability": 10
   },
   "bone_cudgel": {
@@ -9815,7 +9815,7 @@
     },
     "img": "img/items/rusted_iron_sword.png",
     "tier": "rusted_iron",
-    "category": "material",
+    "category": "weapon",
     "max_durability": 2400
   },
   "bronze_sword": {
@@ -9825,7 +9825,7 @@
     },
     "img": "img/items/bronze_sword.png",
     "tier": "bronze",
-    "category": "material",
+    "category": "weapon",
     "max_durability": 4000
   },
   "silver_copper_sword": {
@@ -9835,7 +9835,7 @@
     },
     "img": "img/items/silver_copper_sword.png",
     "tier": "silver_copper",
-    "category": "material",
+    "category": "weapon",
     "max_durability": 5000
   },
   "high_carbon_steel_sword": {
@@ -9845,7 +9845,7 @@
     },
     "img": "img/items/high_carbon_steel_sword.png",
     "tier": "high_carbon_steel",
-    "category": "material",
+    "category": "weapon",
     "max_durability": 7200
   },
   "rusted_iron_battle_axe": {
@@ -9855,7 +9855,7 @@
     },
     "img": "img/items/rusted_iron_battle_axe.png",
     "tier": "rusted_iron",
-    "category": "material",
+    "category": "weapon",
     "max_durability": 4800
   },
   "bronze_battle_axe": {
@@ -9865,7 +9865,7 @@
     },
     "img": "img/items/bronze_battle_axe.png",
     "tier": "bronze",
-    "category": "material",
+    "category": "weapon",
     "max_durability": 8800
   },
   "silver_copper_battle_axe": {
@@ -9875,7 +9875,7 @@
     },
     "img": "img/items/silver_copper_battle_axe.png",
     "tier": "silver_copper",
-    "category": "material",
+    "category": "weapon",
     "max_durability": 9800
   },
   "high_carbon_steel_battle_axe": {
@@ -9885,7 +9885,7 @@
     },
     "img": "img/items/high_carbon_steel_battle_axe.png",
     "tier": "high_carbon_steel",
-    "category": "material",
+    "category": "weapon",
     "max_durability": 18800
   },
   "silver_dagger": {
@@ -9917,7 +9917,7 @@
     },
     "img": "img/items/rusted_iron_dagger.png",
     "tier": "rusted_iron",
-    "category": "material",
+    "category": "weapon",
     "max_durability": 1200
   },
   "ancient_metal_dagger": {
@@ -9960,7 +9960,7 @@
     },
     "img": "img/items/high_carbon_steel_dagger.png",
     "tier": "high_carbon_steel",
-    "category": "material",
+    "category": "weapon",
     "max_durability": 9200
   },
   "rusted_iron_arrow": {
@@ -9970,7 +9970,7 @@
     },
     "img": "img/arrows/rusted_iron_arrow.png",
     "tier": "rusted_iron",
-    "category": "material"
+    "category": "weapon"
   },
   "miner_helmet": {
     "name": {
@@ -10019,7 +10019,7 @@
     },
     "img": "img/items/bowl_cream_of_mushroom_soup.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "bowl_cream_of_vegetable_soup": {
     "name": {
@@ -10028,7 +10028,7 @@
     },
     "img": "img/items/bowl_cream_of_vegetable_soup.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "bowl_vegetable_soup": {
     "name": {
@@ -10236,7 +10236,7 @@
     },
     "img": "img/items/jewelry_shield.png",
     "tier": null,
-    "category": "material"
+    "category": "armor"
   },
   "advanced_filter_paper": {
     "name": {
@@ -10309,7 +10309,8 @@
     "img": "img/items/water_bag_copper.png",
     "tier": "copper",
     "category": "tool",
-    "max_durability": 5
+    "max_durability": 5,
+    "removed_in": "0.9.0"
   },
   "water_bag_silver": {
     "name": {
@@ -10319,7 +10320,8 @@
     "img": "img/items/water_bag_silver.png",
     "tier": "silver",
     "category": "tool",
-    "max_durability": 5
+    "max_durability": 5,
+    "removed_in": "0.9.0"
   },
   "water_bag_gold": {
     "name": {
@@ -10329,7 +10331,8 @@
     "img": "img/items/water_bag_gold.png",
     "tier": "gold",
     "category": "tool",
-    "max_durability": 8
+    "max_durability": 8,
+    "removed_in": "0.9.0"
   },
   "water_bag_iron": {
     "name": {
@@ -10339,7 +10342,8 @@
     "img": "img/items/water_bag_iron.png",
     "tier": "iron",
     "category": "tool",
-    "max_durability": 7
+    "max_durability": 7,
+    "removed_in": "0.9.0"
   },
   "water_bag_hard": {
     "name": {
@@ -10349,7 +10353,8 @@
     "img": "img/items/water_bag_hard.png",
     "tier": "hard",
     "category": "tool",
-    "max_durability": 10
+    "max_durability": 10,
+    "removed_in": "0.9.0"
   },
   "water_bag_ancient_metal": {
     "name": {
@@ -10359,7 +10364,8 @@
     "img": "img/items/water_bag_ancient_metal.png",
     "tier": "ancient_metal",
     "category": "tool",
-    "max_durability": 12
+    "max_durability": 12,
+    "removed_in": "0.9.0"
   },
   "water_bag_mithril": {
     "name": {
@@ -10369,7 +10375,8 @@
     "img": "img/items/water_bag_mithril.png",
     "tier": "mithril",
     "category": "tool",
-    "max_durability": 14
+    "max_durability": 14,
+    "removed_in": "0.9.0"
   },
   "water_bag_adamantium": {
     "name": {
@@ -10379,6 +10386,7 @@
     "img": "img/items/water_bag_adamantium.png",
     "tier": "adamantium",
     "category": "tool",
-    "max_durability": 16
+    "max_durability": 16,
+    "removed_in": "0.9.0"
   }
 }
