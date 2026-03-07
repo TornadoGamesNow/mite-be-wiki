@@ -33727,41 +33727,6 @@
     "removed_version": "pre-0.5.5"
   },
   {
-    "id": "obsidian_ingot_mould_816195",
-    "item_num": 816195,
-    "output": "obsidian_ingot_mould",
-    "outputQty": 2,
-    "station": "copper_workbench",
-    "difficulty": 800,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "obsidian",
-      "copper_war_hammer"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "obsidian",
-        "_"
-      ],
-      [
-        "_",
-        "copper_war_hammer",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ],
-    "added_version": "0.6.0",
-    "removed_version": "pre-0.5.5"
-  },
-  {
     "id": "colling_liquid_803142",
     "item_num": 803142,
     "output": "colling_liquid",
@@ -43139,70 +43104,6 @@
     ]
   },
   {
-    "id": "obsidian_ingot_mould_841426",
-    "item_num": 841426,
-    "output": "obsidian_ingot_mould",
-    "outputQty": 1,
-    "station": "copper_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "obsidian",
-      "flint_knife"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        "obsidian",
-        null
-      ],
-      [
-        null,
-        "flint_knife",
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ]
-    ],
-    "added_version": "0.6.0"
-  },
-  {
-    "id": "obsidian_ingot_mould_841427",
-    "item_num": 841427,
-    "output": "obsidian_ingot_mould",
-    "outputQty": 2,
-    "station": "copper_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "obsidian",
-      "copper_war_hammer"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        "obsidian",
-        null
-      ],
-      [
-        null,
-        "copper_war_hammer",
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ]
-    ],
-    "added_version": "0.6.0"
-  },
-  {
     "id": "element_obsidian_841428",
     "item_num": 841428,
     "output": "element_obsidian",
@@ -44285,5 +44186,447 @@
         "string"
       ]
     ]
+  },
+  {
+    "id": "obsidian_ingot_mould_flint_knife",
+    "item_num": 841426,
+    "output": "obsidian_ingot_mould",
+    "outputQty": 1,
+    "station": "copper_workbench",
+    "difficulty": 185,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "flint_knife",
+      "obsidian"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "obsidian",
+        null
+      ],
+      [
+        null,
+        "flint_knife",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "obsidian_ingot_mould_copper_war_hammer",
+    "item_num": 841427,
+    "output": "obsidian_ingot_mould",
+    "outputQty": 2,
+    "station": "copper_workbench",
+    "difficulty": 800,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "copper_war_hammer",
+      "obsidian"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "obsidian",
+        null
+      ],
+      [
+        null,
+        "copper_war_hammer",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "obsidian_ingot_mould_silver_war_hammer",
+    "item_num": 841428,
+    "output": "obsidian_ingot_mould",
+    "outputQty": 2,
+    "station": "copper_workbench",
+    "difficulty": 800,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "silver_war_hammer",
+      "obsidian"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "obsidian",
+        null
+      ],
+      [
+        null,
+        "silver_war_hammer",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "obsidian_ingot_mould_gold_war_hammer",
+    "item_num": 841429,
+    "output": "obsidian_ingot_mould",
+    "outputQty": 2,
+    "station": "copper_workbench",
+    "difficulty": 800,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "gold_war_hammer",
+      "obsidian"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "obsidian",
+        null
+      ],
+      [
+        null,
+        "gold_war_hammer",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "obsidian_ingot_mould_iron_war_hammer",
+    "item_num": 841430,
+    "output": "obsidian_ingot_mould",
+    "outputQty": 2,
+    "station": "copper_workbench",
+    "difficulty": 800,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_war_hammer",
+      "obsidian"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "obsidian",
+        null
+      ],
+      [
+        null,
+        "iron_war_hammer",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "obsidian_ingot_mould_mithril_war_hammer",
+    "item_num": 841431,
+    "output": "obsidian_ingot_mould",
+    "outputQty": 2,
+    "station": "copper_workbench",
+    "difficulty": 800,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "mithril_war_hammer",
+      "obsidian"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "obsidian",
+        null
+      ],
+      [
+        null,
+        "mithril_war_hammer",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "obsidian_ingot_mould_adamantium_war_hammer",
+    "item_num": 841432,
+    "output": "obsidian_ingot_mould",
+    "outputQty": 2,
+    "station": "copper_workbench",
+    "difficulty": 800,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "adamantium_war_hammer",
+      "obsidian"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "obsidian",
+        null
+      ],
+      [
+        null,
+        "adamantium_war_hammer",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "obsidian_ingot_mould_rusted_iron_war_hammer",
+    "item_num": 841433,
+    "output": "obsidian_ingot_mould",
+    "outputQty": 2,
+    "station": "copper_workbench",
+    "difficulty": 800,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "rusted_iron_war_hammer",
+      "obsidian"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "obsidian",
+        null
+      ],
+      [
+        null,
+        "rusted_iron_war_hammer",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "obsidian_ingot_mould_ancient_metal_war_hammer",
+    "item_num": 841434,
+    "output": "obsidian_ingot_mould",
+    "outputQty": 2,
+    "station": "copper_workbench",
+    "difficulty": 800,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "ancient_metal_war_hammer",
+      "obsidian"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "obsidian",
+        null
+      ],
+      [
+        null,
+        "ancient_metal_war_hammer",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "obsidian_ingot_mould_hardstone_war_hammer",
+    "item_num": 841435,
+    "output": "obsidian_ingot_mould",
+    "outputQty": 2,
+    "station": "copper_workbench",
+    "difficulty": 800,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "hardstone_war_hammer",
+      "obsidian"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "obsidian",
+        null
+      ],
+      [
+        null,
+        "hardstone_war_hammer",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "obsidian_ingot_mould_bronze_war_hammer",
+    "item_num": 841436,
+    "output": "obsidian_ingot_mould",
+    "outputQty": 2,
+    "station": "copper_workbench",
+    "difficulty": 800,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "bronze_war_hammer",
+      "obsidian"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "obsidian",
+        null
+      ],
+      [
+        null,
+        "bronze_war_hammer",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "obsidian_ingot_mould_silver_copper_war_hammer",
+    "item_num": 841437,
+    "output": "obsidian_ingot_mould",
+    "outputQty": 2,
+    "station": "copper_workbench",
+    "difficulty": 800,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "silver_copper_war_hammer",
+      "obsidian"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "obsidian",
+        null
+      ],
+      [
+        null,
+        "silver_copper_war_hammer",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "obsidian_ingot_mould_high_carbon_steel_war_hammer",
+    "item_num": 841438,
+    "output": "obsidian_ingot_mould",
+    "outputQty": 2,
+    "station": "copper_workbench",
+    "difficulty": 800,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "high_carbon_steel_war_hammer",
+      "obsidian"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "obsidian",
+        null
+      ],
+      [
+        null,
+        "high_carbon_steel_war_hammer",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
   }
 ]
