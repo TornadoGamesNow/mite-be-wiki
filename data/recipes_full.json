@@ -25068,79 +25068,43 @@
       "blacksmithing"
     ],
     "ingredients": [
-      "planks_oak",
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
       "copper_block",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "copper_shield_1145",
-    "item_num": 2453,
-    "output": "copper_shield",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 825,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_spruce",
-      "copper_block",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "copper_shield_1146",
-    "item_num": 2453,
-    "output": "copper_shield",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 825,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_birch",
-      "copper_block",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "copper_shield_1147",
-    "item_num": 2453,
-    "output": "copper_shield",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 825,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_jungle",
-      "copper_block",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle"
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ]
     ],
     "shaped": false
   },
@@ -25156,79 +25120,43 @@
       "blacksmithing"
     ],
     "ingredients": [
-      "planks_oak",
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
       "silver_block",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "silver_shield_1149",
-    "item_num": 2454,
-    "output": "silver_shield",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 825,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_spruce",
-      "silver_block",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "silver_shield_1150",
-    "item_num": 2454,
-    "output": "silver_shield",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 825,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_birch",
-      "silver_block",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "silver_shield_1151",
-    "item_num": 2454,
-    "output": "silver_shield",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 825,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_jungle",
-      "silver_block",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle"
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ]
     ],
     "shaped": false
   },
@@ -25244,79 +25172,43 @@
       "blacksmithing"
     ],
     "ingredients": [
-      "planks_oak",
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
       "iron_block",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "iron_shield_1153",
-    "item_num": 2455,
-    "output": "iron_shield",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 1625,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_spruce",
-      "iron_block",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "iron_shield_1154",
-    "item_num": 2455,
-    "output": "iron_shield",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 1625,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_birch",
-      "iron_block",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "iron_shield_1155",
-    "item_num": 2455,
-    "output": "iron_shield",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 1625,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_jungle",
-      "iron_block",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle"
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ]
     ],
     "shaped": false
   },
@@ -25332,79 +25224,43 @@
       "blacksmithing"
     ],
     "ingredients": [
-      "planks_oak",
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
       "gold_block",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "gold_shield_1157",
-    "item_num": 2456,
-    "output": "gold_shield",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 1625,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_spruce",
-      "gold_block",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "gold_shield_1158",
-    "item_num": 2456,
-    "output": "gold_shield",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 1625,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_birch",
-      "gold_block",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "gold_shield_1159",
-    "item_num": 2456,
-    "output": "gold_shield",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 1625,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_jungle",
-      "gold_block",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle"
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ]
     ],
     "shaped": false
   },
@@ -25420,79 +25276,43 @@
       "blacksmithing"
     ],
     "ingredients": [
-      "planks_oak",
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
       "ancient_metal_block",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "ancient_metal_shield_1161",
-    "item_num": 2457,
-    "output": "ancient_metal_shield",
-    "outputQty": 1,
-    "station": "ancient_metal_workbench",
-    "difficulty": 3225,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_spruce",
-      "ancient_metal_block",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "ancient_metal_shield_1162",
-    "item_num": 2457,
-    "output": "ancient_metal_shield",
-    "outputQty": 1,
-    "station": "ancient_metal_workbench",
-    "difficulty": 3225,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_birch",
-      "ancient_metal_block",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "ancient_metal_shield_1163",
-    "item_num": 2457,
-    "output": "ancient_metal_shield",
-    "outputQty": 1,
-    "station": "ancient_metal_workbench",
-    "difficulty": 3225,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_jungle",
-      "ancient_metal_block",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle"
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ]
     ],
     "shaped": false
   },
@@ -25508,79 +25328,43 @@
       "blacksmithing"
     ],
     "ingredients": [
-      "planks_oak",
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
       "hardstone_block",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "hard_stone_shield_1165",
-    "item_num": 2458,
-    "output": "hard_stone_shield",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 3225,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_spruce",
-      "hardstone_block",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "hard_stone_shield_1166",
-    "item_num": 2458,
-    "output": "hard_stone_shield",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 3225,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_birch",
-      "hardstone_block",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "hard_stone_shield_1167",
-    "item_num": 2458,
-    "output": "hard_stone_shield",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 3225,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_jungle",
-      "hardstone_block",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle"
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ]
     ],
     "shaped": false
   },
@@ -25596,79 +25380,43 @@
       "blacksmithing"
     ],
     "ingredients": [
-      "planks_oak",
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
       "mithril_block",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "mithril_shield_1169",
-    "item_num": 2459,
-    "output": "mithril_shield",
-    "outputQty": 1,
-    "station": "mithril_workbench",
-    "difficulty": 12825,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_spruce",
-      "mithril_block",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "mithril_shield_1170",
-    "item_num": 2459,
-    "output": "mithril_shield",
-    "outputQty": 1,
-    "station": "mithril_workbench",
-    "difficulty": 12825,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_birch",
-      "mithril_block",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "mithril_shield_1171",
-    "item_num": 2459,
-    "output": "mithril_shield",
-    "outputQty": 1,
-    "station": "mithril_workbench",
-    "difficulty": 12825,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_jungle",
-      "mithril_block",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle"
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ]
     ],
     "shaped": false
   },
@@ -25684,79 +25432,43 @@
       "blacksmithing"
     ],
     "ingredients": [
-      "planks_oak",
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
       "adamantium_block",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "adamantium_shield_1173",
-    "item_num": 2460,
-    "output": "adamantium_shield",
-    "outputQty": 1,
-    "station": "adamantium_workbench",
-    "difficulty": 51225,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_spruce",
-      "adamantium_block",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "adamantium_shield_1174",
-    "item_num": 2460,
-    "output": "adamantium_shield",
-    "outputQty": 1,
-    "station": "adamantium_workbench",
-    "difficulty": 51225,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_birch",
-      "adamantium_block",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "adamantium_shield_1175",
-    "item_num": 2460,
-    "output": "adamantium_shield",
-    "outputQty": 1,
-    "station": "adamantium_workbench",
-    "difficulty": 51225,
-    "skills": [
-      "carpentry",
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "planks_jungle",
-      "adamantium_block",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle"
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ]
     ],
     "shaped": false
   },

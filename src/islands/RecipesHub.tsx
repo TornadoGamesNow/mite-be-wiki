@@ -84,10 +84,20 @@ function ItemIcon({ id, size = 32 }: { id: string; size?: number }) {
   );
 }
 
-function shapelessToGrid(ingredients: (string | string[])[]): (string | null)[][] {
-  const flat = flattenIngredients(ingredients);
-  const grid: (string | null)[][] = Array.from({ length: 3 }, () => [null, null, null]);
-  flat.slice(0, 9).forEach((ing, i) => {
+function CyclingItemIcon({ id, size = 32 }: { id: string | string[]; size?: number }) {
+  const arr = Array.isArray(id) ? id.filter(Boolean) : [id];
+  const [idx, setIdx] = useState(0);
+  useEffect(() => {
+    if (arr.length <= 1) return;
+    const t = setInterval(() => setIdx(i => (i + 1) % arr.length), 1200);
+    return () => clearInterval(t);
+  }, [arr.length]);
+  return <ItemIcon id={arr[idx] || ''} size={size} />;
+}
+
+function shapelessToGrid(ingredients: (string | string[])[]): (string | string[] | null)[][] {
+  const grid: (string | string[] | null)[][] = Array.from({ length: 3 }, () => [null, null, null]);
+  ingredients.slice(0, 9).forEach((ing, i) => {
     grid[Math.floor(i / 3)][i % 3] = ing;
   });
   return grid;
@@ -272,7 +282,7 @@ function MiniGrid({ recipe, outputId, outputQty }: { recipe: FullRecipe; outputI
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 boxShadow: 'inset 1px 1px 0 rgba(255,255,255,.08), inset -1px -1px 0 rgba(0,0,0,.25)',
               }}>
-                {cell && cell !== '_' && <ItemIcon id={cell} size={CELL - 6} />}
+                {cell && cell !== '_' && <CyclingItemIcon id={cell} size={CELL - 6} />}
               </div>
             ))
           )}
@@ -577,7 +587,7 @@ function ItemDetailPanel({ itemId, lang, onClose, onSelectGroup }: {
                         display: 'flex', alignItems: 'center', justifyContent: 'center',
                         boxShadow: 'inset 1px 1px 0 rgba(255,255,255,.07), inset -1px -1px 0 rgba(0,0,0,.25)',
                       }}>
-                        {cell && cell !== '_' && <ItemIcon id={cell} size={20} />}
+                        {cell && cell !== '_' && <CyclingItemIcon id={cell} size={20} />}
                       </div>
                     ))
                   )}
@@ -739,7 +749,7 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                                 <div key={`${ri}-${ci}`} className="craft-slot" style={{
                                   boxShadow: 'inset 1px 1px 0 rgba(255,255,255,.07), inset -1px -1px 0 rgba(0,0,0,.3)',
                                 }}>
-                                  {cell && cell !== '_' && <ItemIcon id={cell} size={32} />}
+                                  {cell && cell !== '_' && <CyclingItemIcon id={cell} size={32} />}
                                 </div>
                               ))
                             )}
