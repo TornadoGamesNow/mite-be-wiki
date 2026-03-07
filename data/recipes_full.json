@@ -27035,7 +27035,7 @@
         "_"
       ]
     ],
-    "added_version": "0.8"
+    "added_version": "0.8.0"
   },
   {
     "id": "mercury_nugget_1209",
@@ -28062,7 +28062,7 @@
         "_"
       ]
     ],
-    "added_version": "0.8"
+    "added_version": "0.8.0"
   },
   {
     "id": "advanced_enchantment_table_1270",
@@ -31182,7 +31182,7 @@
     "station": "iron_workbench",
     "difficulty": 0,
     "skills": [
-      "blacksmith"
+      "blacksmithing"
     ],
     "ingredients": [
       "hardstone_ingot",
@@ -31203,7 +31203,7 @@
     "station": "iron_workbench",
     "difficulty": 0,
     "skills": [
-      "blacksmith"
+      "blacksmithing"
     ],
     "ingredients": [
       "hardstone_ingot",
@@ -34220,7 +34220,7 @@
         "_"
       ]
     ],
-    "added_version": "0.8"
+    "added_version": "0.8.0"
   },
   {
     "id": "cooked_beef_cooked_beef",
@@ -34524,7 +34524,7 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "raw_porkchop",
+      "porkchop",
       "coal"
     ],
     "shaped": true,
@@ -34654,7 +34654,7 @@
     "shaped": true,
     "pattern": [
       [
-        "copper_dagger",
+        "chip_flint_knife",
         "leather",
         "_"
       ],
@@ -34734,8 +34734,8 @@
         "_"
       ]
     ],
-    "removed_version": "0.8",
-    "added_version": "0.8"
+    "removed_version": "0.8.0",
+    "added_version": "0.8.0"
   },
   {
     "id": "runestore_1",
