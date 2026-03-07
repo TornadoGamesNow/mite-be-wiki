@@ -18,6 +18,7 @@ const sidebarGroups = {
       title: '❓ Kerdesek',
       links: [
         { href: '#faq', label: 'Gyakori kerdesek (FAQ)' },
+        { href: '#seed', label: '🗺️ Ajánlott Seed' },
       ],
     },
   ],
@@ -32,6 +33,7 @@ const sidebarGroups = {
       title: '❓ Questions',
       links: [
         { href: '#faq', label: 'Frequently Asked Questions' },
+        { href: '#seed-en', label: '🗺️ Recommended Seed' },
       ],
     },
   ],
@@ -260,11 +262,289 @@ const sidebarGroups = {
 
 </div>
 
+<!-- ════ SEED KÁRTYA HU ════ -->
+<div data-lang="hu">
+<h2 id="seed" style="margin-top:48px">🗺️ Ajánlott Seed</h2>
+<p>Ez a seed kiemelkedően jó kezdési pozíciót kínál: biztonságos spawn, közel élelmiszer, ércek és menedék — tökéletes az első napokhoz.</p>
+
+<div style="
+  background: linear-gradient(135deg, #0e1f2e 0%, #0a2a1a 60%, #1a1a0e 100%);
+  border: 2px solid #4ecca3;
+  border-radius: 14px;
+  padding: 24px;
+  margin: 20px 0;
+  box-shadow: 0 0 30px rgba(78,204,163,0.12), inset 0 1px 0 rgba(255,255,255,0.05);
+">
+  <!-- Seed szám fejléc -->
+  <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;flex-wrap:wrap">
+    <div style="font-size:2.2em">🌍</div>
+    <div style="flex:1">
+      <div style="font-size:.72em;color:#888;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px">Ajánlott Seed — v0.9.0</div>
+      <div style="font-family:monospace;font-size:1.5em;font-weight:700;color:#4ecca3;letter-spacing:.04em;word-break:break-all">182692071031253671</div>
+    </div>
+    <button onclick="navigator.clipboard.writeText('182692071031253671').then(()=>{this.textContent='✅ Másolva!';setTimeout(()=>this.textContent='📋 Másolás',1800)})"
+      style="
+        background:rgba(78,204,163,0.15);
+        border:1px solid #4ecca3;
+        color:#4ecca3;
+        border-radius:8px;
+        padding:8px 14px;
+        cursor:pointer;
+        font-size:.85em;
+        white-space:nowrap;
+        transition:background .2s;
+      "
+      onmouseover="this.style.background='rgba(78,204,163,0.28)'"
+      onmouseout="this.style.background='rgba(78,204,163,0.15)'">📋 Másolás</button>
+  </div>
+
+  <!-- Compass / térkép -->
+  <div style="display:grid;grid-template-columns:1fr auto 1fr;grid-template-rows:auto auto auto;gap:6px;margin-bottom:20px;max-width:520px;margin-left:auto;margin-right:auto">
+    <!-- Sor 1: ÉNy, É, ÉK -->
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:8px;font-size:.78em;color:#aaa;text-align:center">
+      <div style="color:#666;font-size:.8em;margin-bottom:2px">ÉNy</div>
+      —
+    </div>
+    <div style="background:rgba(100,160,255,0.1);border:1px solid rgba(100,160,255,0.3);border-radius:8px;padding:8px;font-size:.78em;color:#7ec8e3;text-align:center;min-width:120px">
+      <div style="color:#7ec8e3;font-size:.85em;font-weight:700;margin-bottom:3px">⬆ ÉSZAK</div>
+      ⛰️ Fennsík<br><span style="color:#888;font-size:.9em">Kaviccsal</span>
+    </div>
+    <div style="background:rgba(100,160,255,0.08);border:1px solid rgba(100,160,255,0.2);border-radius:8px;padding:8px;font-size:.78em;color:#b0d4ff;text-align:center">
+      <div style="color:#b0d4ff;font-size:.85em;font-weight:700;margin-bottom:3px">↗ ÉSZAK-KELET</div>
+      🏝️ Lebegő sziget<br>🏠 Természetes menedék<br><span style="color:#888;font-size:.9em">~300 tile-ra</span>
+    </div>
+    <!-- Sor 2: Ny, SPAWN, K -->
+    <div style="background:rgba(255,200,100,0.08);border:1px solid rgba(255,200,100,0.25);border-radius:8px;padding:8px;font-size:.78em;color:#f0c040;text-align:center">
+      <div style="color:#f0c040;font-size:.85em;font-weight:700;margin-bottom:3px">⬅ NYUGAT</div>
+      🌊 Folyópart<br>🎋 Cukornád bőven<br>🏜️ Sivatag határ
+    </div>
+    <div style="background:rgba(78,204,163,0.15);border:2px solid #4ecca3;border-radius:10px;padding:12px 8px;text-align:center;font-weight:700">
+      <div style="font-size:1.3em;margin-bottom:4px">🌾</div>
+      <div style="color:#4ecca3;font-size:.9em">SPAWN</div>
+      <div style="color:#888;font-size:.72em;margin-top:2px">Síkság<br>Fennsíkok közel</div>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:8px;font-size:.78em;color:#aaa;text-align:center">
+      <div style="color:#666;font-size:.8em;margin-bottom:2px">KELET</div>
+      ⛰️ Fennsík
+    </div>
+    <!-- Sor 3: DNy, D, DK -->
+    <div style="background:rgba(100,200,100,0.07);border:1px solid rgba(100,200,100,0.2);border-radius:8px;padding:8px;font-size:.78em;color:#88cc88;text-align:center">
+      <div style="color:#88cc88;font-size:.85em;font-weight:700;margin-bottom:3px">↙ DÉLNYUGAT</div>
+      🌿 Mocsár határ<br>🧙 Boszorkánykunyhók
+    </div>
+    <div style="background:rgba(100,200,100,0.1);border:1px solid rgba(100,200,100,0.3);border-radius:8px;padding:8px;font-size:.78em;color:#a8d8a8;text-align:center">
+      <div style="color:#a8d8a8;font-size:.85em;font-weight:700;margin-bottom:3px">⬇ DÉL</div>
+      🌲 Tölgyerdő<br>🍎 Alma bőven
+    </div>
+    <div style="background:rgba(200,100,100,0.1);border:1px solid rgba(200,100,100,0.3);border-radius:8px;padding:8px;font-size:.78em;color:#ffaaaa;text-align:center">
+      <div style="color:#ffaaaa;font-size:.85em;font-weight:700;margin-bottom:3px">↘ DÉL-KELET</div>
+      🏔️ Kanyon<br>⛏️ Vas + Ezüst bánya<br>🕳️ 2. szintű kanyon<br><span style="color:#d4d4d4;font-size:.9em">több vas bánya</span>
+    </div>
+  </div>
+
+  <!-- Erőforrás összefoglaló -->
+  <table style="width:100%;border-collapse:collapse;font-size:.85em;margin-bottom:16px">
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+      <th style="text-align:left;padding:6px 8px;color:#888;font-weight:600;text-transform:uppercase;font-size:.75em;letter-spacing:.08em">Erőforrás</th>
+      <th style="text-align:left;padding:6px 8px;color:#888;font-weight:600;text-transform:uppercase;font-size:.75em;letter-spacing:.08em">Elérhetőség</th>
+      <th style="text-align:left;padding:6px 8px;color:#888;font-weight:600;text-transform:uppercase;font-size:.75em;letter-spacing:.08em">Irány</th>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">🍎 Élelmiszer</td>
+      <td style="padding:5px 8px;color:#4ecca3">⭐⭐⭐ Kiváló</td>
+      <td style="padding:5px 8px;color:#aaa">Alma (D), állatok (Síkság), búza</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">⛏️ Vas érc</td>
+      <td style="padding:5px 8px;color:#4ecca3">⭐⭐⭐ Kiváló</td>
+      <td style="padding:5px 8px;color:#aaa">DK kanyon + 2. szintű kanyon</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">🪨 Kavics / Kő</td>
+      <td style="padding:5px 8px;color:#f0c040">⭐⭐ Jó</td>
+      <td style="padding:5px 8px;color:#aaa">É és K fennsíkok</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">🪵 Fa</td>
+      <td style="padding:5px 8px;color:#f0c040">⭐⭐ Jó</td>
+      <td style="padding:5px 8px;color:#aaa">D tölgyerdő</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">🎋 Cukornád</td>
+      <td style="padding:5px 8px;color:#4ecca3">⭐⭐⭐ Kiváló</td>
+      <td style="padding:5px 8px;color:#aaa">Ny folyópart</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">🧪 Ezüst érc</td>
+      <td style="padding:5px 8px;color:#f0c040">⭐⭐ Jó</td>
+      <td style="padding:5px 8px;color:#aaa">DK kanyon</td>
+    </tr>
+    <tr>
+      <td style="padding:5px 8px">🧙 Boszorkánykunyhó</td>
+      <td style="padding:5px 8px;color:#f0c040">⭐⭐ Közel</td>
+      <td style="padding:5px 8px;color:#aaa">DNy mocsár</td>
+    </tr>
+  </table>
+
+  <!-- Stratégiai tippek -->
+  <div style="background:rgba(78,204,163,0.07);border-left:3px solid #4ecca3;border-radius:0 8px 8px 0;padding:12px 16px;font-size:.85em">
+    <div style="color:#4ecca3;font-weight:700;margin-bottom:8px">💡 Optimális kezdés ezzel a seed-del</div>
+    <ol style="margin:0;padding-left:18px;line-height:1.9;color:#ccc">
+      <li>Spawnolj → azonnal gyűjts <strong>kavicsot a fennsíkról</strong> (É/K) → Kovaszilánkok</li>
+      <li>Menj <strong>ÉK-re ~300 tile-t</strong> → foglald el a természetes menedéket a lebegő sziget tövében</li>
+      <li>Gyűjts <strong>almát a déli tölgyerdőből</strong> — remek korai élelmiszer</li>
+      <li>Fedezd fel a <strong>DK kanyont</strong>: vas + ezüst bánya, alul még több vas</li>
+      <li>A <strong>DNy mocsárból</strong> boszorkánykunyhót keress — főzőasztal és ritka alapanyagok</li>
+      <li>A <strong>Ny folyóparton</strong> telepíts cukornád farmot papírhoz és könyvekhez</li>
+    </ol>
+  </div>
+</div>
+</div>
+
 <div data-lang="hu" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
   <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Teljes Magyar Wiki ⚔️</p>
   <p>A wiki a játékfájlok (MITE.lang, hu_HU.lang, class fájlok) alapján készült.</p>
   <p style="font-size:.85em;margin-top:8px;opacity:.7;">Ez egy nem hivatalos, közösségi wiki. A MITE:BE és minden kapcsolódó játékeszköz, textúra és védjegy az eredeti alkotóik tulajdona.</p>
 </div>
+<!-- ════ SEED CARD EN ════ -->
+<div data-lang="en">
+<h2 id="seed-en" style="margin-top:48px">🗺️ Recommended Seed</h2>
+<p>This seed offers an exceptionally strong starting position: safe spawn, nearby food, ores, and a shelter — perfect for the first days.</p>
+
+<div style="
+  background: linear-gradient(135deg, #0e1f2e 0%, #0a2a1a 60%, #1a1a0e 100%);
+  border: 2px solid #4ecca3;
+  border-radius: 14px;
+  padding: 24px;
+  margin: 20px 0;
+  box-shadow: 0 0 30px rgba(78,204,163,0.12), inset 0 1px 0 rgba(255,255,255,0.05);
+">
+  <!-- Seed number header -->
+  <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;flex-wrap:wrap">
+    <div style="font-size:2.2em">🌍</div>
+    <div style="flex:1">
+      <div style="font-size:.72em;color:#888;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px">Recommended Seed — v0.9.0</div>
+      <div style="font-family:monospace;font-size:1.5em;font-weight:700;color:#4ecca3;letter-spacing:.04em;word-break:break-all">182692071031253671</div>
+    </div>
+    <button onclick="navigator.clipboard.writeText('182692071031253671').then(()=>{this.textContent='✅ Copied!';setTimeout(()=>this.textContent='📋 Copy',1800)})"
+      style="
+        background:rgba(78,204,163,0.15);
+        border:1px solid #4ecca3;
+        color:#4ecca3;
+        border-radius:8px;
+        padding:8px 14px;
+        cursor:pointer;
+        font-size:.85em;
+        white-space:nowrap;
+        transition:background .2s;
+      "
+      onmouseover="this.style.background='rgba(78,204,163,0.28)'"
+      onmouseout="this.style.background='rgba(78,204,163,0.15)'">📋 Copy</button>
+  </div>
+
+  <!-- Compass / map -->
+  <div style="display:grid;grid-template-columns:1fr auto 1fr;grid-template-rows:auto auto auto;gap:6px;margin-bottom:20px;max-width:520px;margin-left:auto;margin-right:auto">
+    <!-- Row 1: NW, N, NE -->
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:8px;font-size:.78em;color:#aaa;text-align:center">
+      <div style="color:#666;font-size:.8em;margin-bottom:2px">NW</div>
+      —
+    </div>
+    <div style="background:rgba(100,160,255,0.1);border:1px solid rgba(100,160,255,0.3);border-radius:8px;padding:8px;font-size:.78em;color:#7ec8e3;text-align:center;min-width:120px">
+      <div style="color:#7ec8e3;font-size:.85em;font-weight:700;margin-bottom:3px">⬆ NORTH</div>
+      ⛰️ Plateau<br><span style="color:#888;font-size:.9em">Gravel-rich</span>
+    </div>
+    <div style="background:rgba(100,160,255,0.08);border:1px solid rgba(100,160,255,0.2);border-radius:8px;padding:8px;font-size:.78em;color:#b0d4ff;text-align:center">
+      <div style="color:#b0d4ff;font-size:.85em;font-weight:700;margin-bottom:3px">↗ NORTH-EAST</div>
+      🏝️ Floating island<br>🏠 Natural shelter<br><span style="color:#888;font-size:.9em">~300 tiles away</span>
+    </div>
+    <!-- Row 2: W, SPAWN, E -->
+    <div style="background:rgba(255,200,100,0.08);border:1px solid rgba(255,200,100,0.25);border-radius:8px;padding:8px;font-size:.78em;color:#f0c040;text-align:center">
+      <div style="color:#f0c040;font-size:.85em;font-weight:700;margin-bottom:3px">⬅ WEST</div>
+      🌊 Desert river<br>🎋 Sugarcane-rich<br>🏜️ Desert border
+    </div>
+    <div style="background:rgba(78,204,163,0.15);border:2px solid #4ecca3;border-radius:10px;padding:12px 8px;text-align:center;font-weight:700">
+      <div style="font-size:1.3em;margin-bottom:4px">🌾</div>
+      <div style="color:#4ecca3;font-size:.9em">SPAWN</div>
+      <div style="color:#888;font-size:.72em;margin-top:2px">Plains<br>Plateaus nearby</div>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:8px;font-size:.78em;color:#aaa;text-align:center">
+      <div style="color:#666;font-size:.8em;margin-bottom:2px">EAST</div>
+      ⛰️ Plateau
+    </div>
+    <!-- Row 3: SW, S, SE -->
+    <div style="background:rgba(100,200,100,0.07);border:1px solid rgba(100,200,100,0.2);border-radius:8px;padding:8px;font-size:.78em;color:#88cc88;text-align:center">
+      <div style="color:#88cc88;font-size:.85em;font-weight:700;margin-bottom:3px">↙ SOUTH-WEST</div>
+      🌿 Swamp border<br>🧙 Witch huts
+    </div>
+    <div style="background:rgba(100,200,100,0.1);border:1px solid rgba(100,200,100,0.3);border-radius:8px;padding:8px;font-size:.78em;color:#a8d8a8;text-align:center">
+      <div style="color:#a8d8a8;font-size:.85em;font-weight:700;margin-bottom:3px">⬇ SOUTH</div>
+      🌲 Oak Forest<br>🍎 Apple-rich
+    </div>
+    <div style="background:rgba(200,100,100,0.1);border:1px solid rgba(200,100,100,0.3);border-radius:8px;padding:8px;font-size:.78em;color:#ffaaaa;text-align:center">
+      <div style="color:#ffaaaa;font-size:.85em;font-weight:700;margin-bottom:3px">↘ SOUTH-EAST</div>
+      🏔️ Canyon<br>⛏️ Iron + Silver mines<br>🕳️ 2nd-level canyon<br><span style="color:#d4d4d4;font-size:.9em">more iron mines</span>
+    </div>
+  </div>
+
+  <!-- Resource summary -->
+  <table style="width:100%;border-collapse:collapse;font-size:.85em;margin-bottom:16px">
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+      <th style="text-align:left;padding:6px 8px;color:#888;font-weight:600;text-transform:uppercase;font-size:.75em;letter-spacing:.08em">Resource</th>
+      <th style="text-align:left;padding:6px 8px;color:#888;font-weight:600;text-transform:uppercase;font-size:.75em;letter-spacing:.08em">Availability</th>
+      <th style="text-align:left;padding:6px 8px;color:#888;font-weight:600;text-transform:uppercase;font-size:.75em;letter-spacing:.08em">Direction</th>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">🍎 Food</td>
+      <td style="padding:5px 8px;color:#4ecca3">⭐⭐⭐ Excellent</td>
+      <td style="padding:5px 8px;color:#aaa">Apples (S), animals (Plains), wheat</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">⛏️ Iron ore</td>
+      <td style="padding:5px 8px;color:#4ecca3">⭐⭐⭐ Excellent</td>
+      <td style="padding:5px 8px;color:#aaa">SE canyon + 2nd-level canyon</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">🪨 Gravel / Stone</td>
+      <td style="padding:5px 8px;color:#f0c040">⭐⭐ Good</td>
+      <td style="padding:5px 8px;color:#aaa">N and E plateaus</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">🪵 Wood</td>
+      <td style="padding:5px 8px;color:#f0c040">⭐⭐ Good</td>
+      <td style="padding:5px 8px;color:#aaa">S oak forest</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">🎋 Sugarcane</td>
+      <td style="padding:5px 8px;color:#4ecca3">⭐⭐⭐ Excellent</td>
+      <td style="padding:5px 8px;color:#aaa">W desert river</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">🧪 Silver ore</td>
+      <td style="padding:5px 8px;color:#f0c040">⭐⭐ Good</td>
+      <td style="padding:5px 8px;color:#aaa">SE canyon</td>
+    </tr>
+    <tr>
+      <td style="padding:5px 8px">🧙 Witch hut</td>
+      <td style="padding:5px 8px;color:#f0c040">⭐⭐ Nearby</td>
+      <td style="padding:5px 8px;color:#aaa">SW swamp</td>
+    </tr>
+  </table>
+
+  <!-- Strategic tips -->
+  <div style="background:rgba(78,204,163,0.07);border-left:3px solid #4ecca3;border-radius:0 8px 8px 0;padding:12px 16px;font-size:.85em">
+    <div style="color:#4ecca3;font-weight:700;margin-bottom:8px">💡 Optimal start with this seed</div>
+    <ol style="margin:0;padding-left:18px;line-height:1.9;color:#ccc">
+      <li>Spawn → immediately collect <strong>gravel from the northern plateau</strong> → Flint shards</li>
+      <li>Head <strong>~300 tiles NE</strong> → occupy the natural shelter at the foot of the floating island</li>
+      <li>Collect <strong>apples from the southern oak forest</strong> — excellent early food source</li>
+      <li>Explore the <strong>SE canyon</strong>: iron + silver mines, lower level has even more iron</li>
+      <li>Find a <strong>witch hut in the SW swamp</strong> — brewing stand and rare materials</li>
+      <li>Set up a <strong>sugarcane farm on the W riverbank</strong> for paper and books</li>
+    </ol>
+  </div>
+</div>
+</div>
+
 <div data-lang="en" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
   <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Complete Wiki ⚔️</p>
   <p>Built from game files (MITE.lang, hu_HU.lang, class files).</p>
