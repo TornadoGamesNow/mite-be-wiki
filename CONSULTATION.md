@@ -84,6 +84,23 @@ A következő itemek nem rendelkeznek crafting recepttel a wikiünkben, de bizto
 - `campfire` és `campfire_idle` — mindkettő van. Ez szándékos (on/off állapot)?
 - `miner_helmet`, `miner_s_helmet`, `mining_helmet` — háromféle ID. Ezek különböző itemek?
 
+### 5b. `stone_*` vs `flint_*` névütközések (flint kor eszközök)
+
+A `stone_axe`, `stone_pickaxe`, `stone_shovel`, `stone_spear` itemek nevét "Flint X"-re javítottuk (tier="flint", kova anyagból készülnek), de mindegyiknek létezik egy `flint_*` párja is más statokkal:
+
+| stone_* ID | flint_* ID | stone_* stat | flint_* stat |
+|------------|------------|--------------|--------------|
+| `stone_axe` (tool, nincs max_durability) | `flint_axe` (weapon, 1200 dur) | flint_workbench | flint_workbench |
+| `stone_pickaxe` (tool, nincs dur.) | `flint_pickaxe` (tool, 1200 dur) | flint_workbench | flint_workbench |
+| `stone_shovel` (tool, nincs dur.) | `flint_shovel` (tool, 400 dur) | flint_workbench | flint_workbench |
+| `stone_spear` / `sharp_flint_spear` (weapon) | `flint_spear` (weapon, 10 dur!) | flint_workbench | flint_workbench |
+
+**Kérdések:**
+- A `stone_*` és `flint_*` TÉNYLEG két külön item a játékban, vagy ugyanaz más ID-val?
+- Ha különbözők: hogyan különböztessük meg a nevüket? Pl. `stone_axe` → "Flint Tool Axe" vs `flint_axe` → "Flint Battle Axe"?
+- `flint_spear` max_durability: 10 — ez helyes? Ennyire törékeny?
+- `wooden_shovel` `tier: "flint"` — ez helyes? Fa ásónak flint tier?
+
 ---
 
 ## 6. Kategória kérdések (items.json)

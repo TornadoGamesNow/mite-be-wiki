@@ -110,8 +110,8 @@
   },
   "sharp_chip": {
     "name": {
-      "hu": "Éles Kőszilánk",
-      "en": "Sharp Stone Chip"
+      "hu": "Éles Kova Szilánk",
+      "en": "Sharp Flint Chip"
     },
     "img": "img/items/sharp_chip.png",
     "tier": null,
@@ -119,8 +119,8 @@
   },
   "stone_hatchet": {
     "name": {
-      "hu": "Kő Kézbalta",
-      "en": "Stone Short Hatchet"
+      "hu": "Kova Kézbalta",
+      "en": "Flint Short Hatchet"
     },
     "img": "img/items/flint_hatchet.png",
     "tier": "flint",
@@ -128,8 +128,8 @@
   },
   "stone_axe": {
     "name": {
-      "hu": "Kő Fejsze",
-      "en": "Stone Axe"
+      "hu": "Kova Fejsze",
+      "en": "Flint Axe"
     },
     "img": "img/items/flint_axe.png",
     "tier": "flint",
@@ -137,8 +137,8 @@
   },
   "stone_pickaxe": {
     "name": {
-      "hu": "Kő Csákány",
-      "en": "Stone Pickaxe"
+      "hu": "Kova Csákány",
+      "en": "Flint Pickaxe"
     },
     "img": "img/items/stone_pickaxe.png",
     "tier": "flint",
@@ -146,8 +146,8 @@
   },
   "stone_shovel": {
     "name": {
-      "hu": "Kő Ásó",
-      "en": "Stone Shovel"
+      "hu": "Kova Ásó",
+      "en": "Flint Shovel"
     },
     "img": "img/items/flint_shovel.png",
     "tier": "flint",
@@ -155,8 +155,8 @@
   },
   "stone_spear": {
     "name": {
-      "hu": "Hegyes Kő Lándzsa",
-      "en": "Sharp Stone Spear"
+      "hu": "Hegyes Kova Lándzsa",
+      "en": "Sharp Flint Spear"
     },
     "img": "img/items/flint_spear.png",
     "tier": "flint",
@@ -164,8 +164,8 @@
   },
   "stone_sword": {
     "name": {
-      "hu": "Kő Kard",
-      "en": "Stone Sword"
+      "hu": "Kova Kard",
+      "en": "Flint Sword"
     },
     "img": "img/items/stone_sword.png",
     "tier": "flint",
@@ -173,8 +173,8 @@
   },
   "stone_hoe": {
     "name": {
-      "hu": "Kő Kapa",
-      "en": "Stone Hoe"
+      "hu": "Kova Kapa",
+      "en": "Flint Hoe"
     },
     "img": "img/items/stone_hoe.png",
     "tier": "flint",
@@ -182,8 +182,8 @@
   },
   "stone_dagger": {
     "name": {
-      "hu": "Kő Tőr",
-      "en": "Stone Dagger"
+      "hu": "Kova Tőr",
+      "en": "Flint Dagger"
     },
     "img": "img/items/stone_dagger.png",
     "tier": "flint",

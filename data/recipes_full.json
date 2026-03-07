@@ -29212,8 +29212,8 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "EgyszerĹ± KĹ‘zet KĂ©s",
-      "en": "Simple Stone Knife"
+      "hu": "Egyszerű Kovakő Kés",
+      "en": "Simple Flint Knife"
     },
     "pattern": [
       [
@@ -29311,8 +29311,8 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "KĹ‘zet KĂ©s",
-      "en": "Stone Knife"
+      "hu": "Kovakő Kés",
+      "en": "Flint Knife"
     },
     "pattern": [
       [
