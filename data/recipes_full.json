@@ -1812,7 +1812,17 @@
       "stick",
       "planks_oak"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "copper_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_oak"
+      ]
+    ]
   },
   {
     "id": "copper_workbench_77",
@@ -1828,7 +1838,17 @@
       "stick",
       "planks_spruce"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "copper_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_spruce"
+      ]
+    ]
   },
   {
     "id": "copper_workbench_78",
@@ -1844,7 +1864,17 @@
       "stick",
       "planks_birch"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "copper_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_birch"
+      ]
+    ]
   },
   {
     "id": "copper_workbench_79",
@@ -1860,7 +1890,17 @@
       "stick",
       "planks_jungle"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "copper_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_jungle"
+      ]
+    ]
   },
   {
     "id": "silver_workbench_80",
@@ -1876,7 +1916,17 @@
       "stick",
       "planks_oak"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "silver_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_oak"
+      ]
+    ]
   },
   {
     "id": "silver_workbench_81",
@@ -1892,7 +1942,17 @@
       "stick",
       "planks_spruce"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "silver_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_spruce"
+      ]
+    ]
   },
   {
     "id": "silver_workbench_82",
@@ -1908,7 +1968,17 @@
       "stick",
       "planks_birch"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "silver_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_birch"
+      ]
+    ]
   },
   {
     "id": "silver_workbench_83",
@@ -1924,7 +1994,17 @@
       "stick",
       "planks_jungle"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "silver_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_jungle"
+      ]
+    ]
   },
   {
     "id": "gold_workbench_84",
@@ -1940,7 +2020,17 @@
       "stick",
       "planks_oak"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "gold_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_oak"
+      ]
+    ]
   },
   {
     "id": "gold_workbench_85",
@@ -1956,7 +2046,17 @@
       "stick",
       "planks_spruce"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "gold_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_spruce"
+      ]
+    ]
   },
   {
     "id": "gold_workbench_86",
@@ -1972,7 +2072,17 @@
       "stick",
       "planks_birch"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "gold_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_birch"
+      ]
+    ]
   },
   {
     "id": "gold_workbench_87",
@@ -1988,7 +2098,17 @@
       "stick",
       "planks_jungle"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "gold_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_jungle"
+      ]
+    ]
   },
   {
     "id": "iron_workbench_88",
@@ -2004,7 +2124,17 @@
       "stick",
       "planks_oak"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "iron_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_oak"
+      ]
+    ]
   },
   {
     "id": "iron_workbench_89",
@@ -2020,7 +2150,17 @@
       "stick",
       "planks_spruce"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "iron_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_spruce"
+      ]
+    ]
   },
   {
     "id": "iron_workbench_90",
@@ -2036,7 +2176,17 @@
       "stick",
       "planks_birch"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "iron_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_birch"
+      ]
+    ]
   },
   {
     "id": "iron_workbench_91",
@@ -2052,7 +2202,17 @@
       "stick",
       "planks_jungle"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "iron_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_jungle"
+      ]
+    ]
   },
   {
     "id": "ancient_metal_workbench_92",
@@ -2068,7 +2228,17 @@
       "stick",
       "planks_oak"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "ancient_metal_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_oak"
+      ]
+    ]
   },
   {
     "id": "ancient_metal_workbench_93",
@@ -2084,7 +2254,17 @@
       "stick",
       "planks_spruce"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "ancient_metal_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_spruce"
+      ]
+    ]
   },
   {
     "id": "ancient_metal_workbench_94",
@@ -2100,7 +2280,17 @@
       "stick",
       "planks_birch"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "ancient_metal_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_birch"
+      ]
+    ]
   },
   {
     "id": "ancient_metal_workbench_95",
@@ -2116,7 +2306,17 @@
       "stick",
       "planks_jungle"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "ancient_metal_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_jungle"
+      ]
+    ]
   },
   {
     "id": "mithril_workbench_96",
@@ -2132,7 +2332,17 @@
       "stick",
       "planks_oak"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "mithril_bar",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_oak"
+      ]
+    ]
   },
   {
     "id": "mithril_workbench_97",
@@ -2148,7 +2358,17 @@
       "stick",
       "planks_spruce"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "mithril_bar",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_spruce"
+      ]
+    ]
   },
   {
     "id": "mithril_workbench_98",
@@ -2164,7 +2384,17 @@
       "stick",
       "planks_birch"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "mithril_bar",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_birch"
+      ]
+    ]
   },
   {
     "id": "mithril_workbench_99",
@@ -2180,7 +2410,17 @@
       "stick",
       "planks_jungle"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "mithril_bar",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_jungle"
+      ]
+    ]
   },
   {
     "id": "adamantium_workbench_100",
@@ -2196,7 +2436,17 @@
       "stick",
       "planks_oak"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "adamantium_bar",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_oak"
+      ]
+    ]
   },
   {
     "id": "adamantium_workbench_101",
@@ -2212,7 +2462,17 @@
       "stick",
       "planks_spruce"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "adamantium_bar",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_spruce"
+      ]
+    ]
   },
   {
     "id": "adamantium_workbench_102",
@@ -2228,7 +2488,17 @@
       "stick",
       "planks_birch"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "adamantium_bar",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_birch"
+      ]
+    ]
   },
   {
     "id": "adamantium_workbench_103",
@@ -2244,7 +2514,17 @@
       "stick",
       "planks_jungle"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "adamantium_bar",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_jungle"
+      ]
+    ]
   },
   {
     "id": "obsidian_tool_bench_104",
@@ -2388,7 +2668,17 @@
       "stick",
       "planks_oak"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_oak"
+      ]
+    ]
   },
   {
     "id": "hardstone_workbench_113",
@@ -2404,7 +2694,17 @@
       "stick",
       "planks_spruce"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_spruce"
+      ]
+    ]
   },
   {
     "id": "hardstone_workbench_114",
@@ -2420,7 +2720,17 @@
       "stick",
       "planks_birch"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_birch"
+      ]
+    ]
   },
   {
     "id": "hardstone_workbench_115",
@@ -2436,7 +2746,17 @@
       "stick",
       "planks_jungle"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "hardstone_ingot",
+        "leather"
+      ],
+      [
+        "stick",
+        "planks_jungle"
+      ]
+    ]
   },
   {
     "id": "stone_furnace_idle_116",
@@ -3142,7 +3462,24 @@
       "obsidian",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "book",
+        null
+      ],
+      [
+        "diamond",
+        "obsidian",
+        "diamond"
+      ],
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ]
+    ]
   },
   {
     "id": "redstone_lamp_unlit_148",
@@ -5174,46 +5511,6 @@
     "shaped": false
   },
   {
-    "id": "enchantment_table_emerald_238",
-    "item_num": 245,
-    "output": "enchantment_table_emerald",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 2585,
-    "skills": [
-      "masonry",
-      "fineArts"
-    ],
-    "ingredients": [
-      "book",
-      "emerald",
-      "obsidian",
-      "emerald",
-      "obsidian",
-      "obsidian",
-      "obsidian"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "book",
-        "_"
-      ],
-      [
-        "_",
-        "obsidian",
-        "_"
-      ],
-      [
-        "obsidian",
-        "obsidian",
-        "obsidian"
-      ]
-    ],
-    "removed_version": "pre-0.5.5"
-  },
-  {
     "id": "runestone_nul_mithril_239",
     "item_num": 247,
     "output": "runestone_nul_mithril",
@@ -5232,43 +5529,6 @@
       "mithril_nugget"
     ],
     "shaped": false
-  },
-  {
-    "id": "hardened_clay_furnace_240",
-    "item_num": 250,
-    "output": "hardened_clay_furnace",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 720,
-    "skills": [
-      "masonry"
-    ],
-    "ingredients": [
-      "hardened_clay",
-      "hardened_clay",
-      "hardened_clay",
-      "hardened_clay"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "hard_ened_clay",
-        "hard_ened_clay",
-        "_"
-      ],
-      [
-        "hard_ened_clay",
-        "hard_ened_clay",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0",
-    "added_version": "0.6.0"
   },
   {
     "id": "ancient_metal_block_241",
@@ -13083,67 +13343,6 @@
     ]
   },
   {
-    "id": "ancient_metal_nugget_626",
-    "item_num": 961,
-    "output": "ancient_metal_nugget",
-    "outputQty": 9,
-    "station": "mithril_workbench",
-    "difficulty": 1600,
-    "skills": [],
-    "ingredients": [
-      "ancient_metal_ingot",
-      "mithril_war_hammer"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "ancient_metal_coin",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ],
-    "added_version": "0.6.0",
-    "removed_version": "0.6.0"
-  },
-  {
-    "id": "ancient_metal_nugget_627",
-    "item_num": 961,
-    "output": "ancient_metal_nugget",
-    "outputQty": 9,
-    "station": "adamantium_workbench",
-    "difficulty": 1600,
-    "skills": [],
-    "ingredients": [
-      "ancient_metal_ingot",
-      "adamantium_war_hammer"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "ancient_metal_nugget_628",
-    "item_num": 961,
-    "output": "ancient_metal_nugget",
-    "outputQty": 9,
-    "station": "ancient_metal_workbench",
-    "difficulty": 1600,
-    "skills": [],
-    "ingredients": [
-      "ancient_metal_ingot",
-      "ancient_metal_war_hammer"
-    ],
-    "shaped": false
-  },
-  {
     "id": "ancient_metal_nugget_629",
     "item_num": 961,
     "output": "ancient_metal_nugget",
@@ -13154,7 +13353,24 @@
     "ingredients": [
       "ancient_metal_chain"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "ancient_metal_chain",
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ]
   },
   {
     "id": "ancient_metal_nugget_630",
@@ -13167,7 +13383,24 @@
     "ingredients": [
       "ancient_metal_arrow"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "ancient_metal_arrow",
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ]
   },
   {
     "id": "ancient_metal_nugget_631",
@@ -13180,7 +13413,24 @@
     "ingredients": [
       "ancient_metal_coin"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "ancient_metal_coin",
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ]
   },
   {
     "id": "ancient_metal_nugget_632",
@@ -28925,43 +29175,6 @@
     ]
   },
   {
-    "id": "birch_fence_1305",
-    "item_num": 31982,
-    "output": "birch_fence",
-    "outputQty": 6,
-    "station": "flint_workbench",
-    "difficulty": 370,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "planks_birch",
-      "stick",
-      "planks_birch",
-      "planks_birch",
-      "stick",
-      "planks_birch"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ]
-  },
-  {
     "id": "jungle_fence_1306",
     "item_num": 31983,
     "output": "jungle_fence",
@@ -29572,6 +29785,9 @@
     "difficulty": 320,
     "skills": [],
     "ingredients": [
+      "clay_block",
+      "clay_block",
+      "clay_block",
       "clay_block"
     ],
     "shaped": true,
@@ -29607,6 +29823,9 @@
       "masonry"
     ],
     "ingredients": [
+      "hardened_clay",
+      "hardened_clay",
+      "hardened_clay",
       "hardened_clay"
     ],
     "shaped": true,
@@ -29617,11 +29836,18 @@
     "pattern": [
       [
         "hardened_clay",
-        "hardened_clay"
+        "hardened_clay",
+        null
       ],
       [
         "hardened_clay",
-        "hardened_clay"
+        "hardened_clay",
+        null
+      ],
+      [
+        null,
+        null,
+        null
       ]
     ],
     "gridSize": "2x2",
@@ -31664,7 +31890,8 @@
     "station": "iron_workbench",
     "difficulty": 2585,
     "skills": [
-      "masonry"
+      "masonry",
+      "fineArts"
     ],
     "ingredients": [
       "book",
@@ -31675,7 +31902,24 @@
       "obsidian",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "book",
+        null
+      ],
+      [
+        "emerald",
+        "obsidian",
+        "emerald"
+      ],
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ]
+    ]
   },
   {
     "id": "enhanced_ender_eye_32052",
@@ -32638,19 +32882,6 @@
         "log_birch",
         "log_jungle"
       ]
-    ],
-    "shaped": false
-  },
-  {
-    "id": "leather_32104",
-    "item_num": 32104,
-    "output": "leather",
-    "outputQty": 1,
-    "station": "stone_furnace",
-    "difficulty": 100,
-    "skills": [],
-    "ingredients": [
-      "hide"
     ],
     "shaped": false
   },
@@ -33913,8 +34144,10 @@
     "output": "stone_furnace",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 1600,
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "cobblestone",
       "cobblestone",
@@ -33925,7 +34158,24 @@
       "cobblestone",
       "cobblestone"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "cobblestone",
+        "cobblestone",
+        "cobblestone"
+      ],
+      [
+        "cobblestone",
+        null,
+        "cobblestone"
+      ],
+      [
+        "cobblestone",
+        "cobblestone",
+        "cobblestone"
+      ]
+    ]
   },
   {
     "id": "torch_holy_831585",
@@ -34179,8 +34429,10 @@
     "output": "obsidian_furnace",
     "outputQty": 1,
     "station": "gold_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 1920,
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "obsidian",
       "obsidian",
@@ -34191,7 +34443,24 @@
       "obsidian",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ],
+      [
+        "obsidian",
+        null,
+        "obsidian"
+      ],
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ]
+    ]
   },
   {
     "id": "netherrack_furnace_772861",
@@ -34199,8 +34468,10 @@
     "output": "netherrack_furnace",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 1280,
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "netherrack",
       "netherrack",
@@ -34211,7 +34482,24 @@
       "netherrack",
       "netherrack"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "netherrack",
+        "netherrack",
+        "netherrack"
+      ],
+      [
+        "netherrack",
+        null,
+        "netherrack"
+      ],
+      [
+        "netherrack",
+        "netherrack",
+        "netherrack"
+      ]
+    ]
   },
   {
     "id": "porridge_784440",
@@ -34318,196 +34606,6 @@
       ]
     ],
     "added_version": "0.5.8"
-  },
-  {
-    "id": "bad_cooked_squid_meat_0",
-    "item_num": 1,
-    "output": "bad_cooked_squid_meat",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "squid_meat",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "squid_meat",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ],
-    "removed_version": "pre-0.5.5"
-  },
-  {
-    "id": "bad_fish_cooked_0",
-    "item_num": 1,
-    "output": "bad_fish_cooked",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "raw_fish",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "bad_mutton_cooked_0",
-    "item_num": 1,
-    "output": "bad_mutton_cooked",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "mutton_raw",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "mutton_raw",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ],
-    "removed_version": "pre-0.5.5"
-  },
-  {
-    "id": "bad_cooked_meat_0",
-    "item_num": 1,
-    "output": "bad_cooked_meat",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "porkchop",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "bad_duck_meat_0",
-    "item_num": 1,
-    "output": "bad_duck_meat",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "duck_meat",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "duck_meat",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ],
-    "removed_version": "pre-0.5.5"
-  },
-  {
-    "id": "bad_duck_head_cooked_0",
-    "item_num": 1,
-    "output": "bad_duck_head_cooked",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "duck_head",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "duck_head",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ],
-    "removed_version": "pre-0.5.5"
   },
   {
     "id": "redstone_0",
@@ -35298,254 +35396,6 @@
     ]
   },
   {
-    "id": "duck_cooked_841184",
-    "item_num": 841184,
-    "output": "duck_cooked",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "duck_meat",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        "duck_meat",
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        "coal",
-        null
-      ]
-    ]
-  },
-  {
-    "id": "cooked_squid_meat_841185",
-    "item_num": 841185,
-    "output": "cooked_squid_meat",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "squid_meat",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        "squid_meat",
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        "coal",
-        null
-      ]
-    ]
-  },
-  {
-    "id": "bad_cooked_squid_meat_841186",
-    "item_num": 841186,
-    "output": "bad_cooked_squid_meat",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "squid_meat",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        "squid_meat",
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        "coal",
-        null
-      ]
-    ]
-  },
-  {
-    "id": "bad_fish_cooked_841189",
-    "item_num": 841189,
-    "output": "bad_fish_cooked",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "fish_raw",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        "fish_raw",
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        "coal",
-        null
-      ]
-    ]
-  },
-  {
-    "id": "bad_mutton_cooked_841190",
-    "item_num": 841190,
-    "output": "bad_mutton_cooked",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "mutton_raw",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        "mutton_raw",
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        "coal",
-        null
-      ]
-    ]
-  },
-  {
-    "id": "bad_cooked_meat_841191",
-    "item_num": 841191,
-    "output": "bad_cooked_meat",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "porkchop",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        "porkchop",
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        "coal",
-        null
-      ]
-    ]
-  },
-  {
-    "id": "bad_cooked_meat_841192",
-    "item_num": 841192,
-    "output": "bad_cooked_meat",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "beef",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        "beef",
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        "coal",
-        null
-      ]
-    ]
-  },
-  {
-    "id": "bad_duck_meat_841193",
-    "item_num": 841193,
-    "output": "bad_duck_meat",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "duck_meat",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        "duck_meat",
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        "coal",
-        null
-      ]
-    ]
-  },
-  {
     "id": "miner_helmet_841194",
     "item_num": 841194,
     "output": "miner_helmet",
@@ -35730,68 +35580,6 @@
         "iron_ingot",
         "iron_ingot",
         "iron_ingot"
-      ]
-    ]
-  },
-  {
-    "id": "duck_head_cooked_841200",
-    "item_num": 841200,
-    "output": "duck_head_cooked",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "duck_head",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        "duck_head",
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        "coal",
-        null
-      ]
-    ]
-  },
-  {
-    "id": "bad_duck_head_cooked_841201",
-    "item_num": 841201,
-    "output": "bad_duck_head_cooked",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "duck_head",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        "duck_head",
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        "coal",
-        null
       ]
     ]
   },
@@ -36009,38 +35797,6 @@
         null,
         null,
         null
-      ]
-    ]
-  },
-  {
-    "id": "enchantment_table_emerald_841209",
-    "item_num": 841209,
-    "output": "enchantment_table_emerald",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "book",
-      "emerald",
-      "obsidian"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        "book",
-        null
-      ],
-      [
-        "emerald",
-        "obsidian",
-        "emerald"
-      ],
-      [
-        "obsidian",
-        "obsidian",
-        "obsidian"
       ]
     ]
   },
@@ -36338,8 +36094,10 @@
     "output": "birch_fence",
     "outputQty": 6,
     "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 370,
+    "skills": [
+      "carpentry"
+    ],
     "ingredients": [
       "planks_birch",
       "stick"
@@ -36829,37 +36587,6 @@
         "sand_stone"
       ]
     ]
-  },
-  {
-    "id": "hardened_clay_furnace_841244",
-    "item_num": 841244,
-    "output": "hardened_clay_furnace",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "hard_ened_clay"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "hard_ened_clay",
-        "hard_ened_clay",
-        null
-      ],
-      [
-        "hard_ened_clay",
-        "hard_ened_clay",
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ]
-    ],
-    "added_version": "0.6.0"
   },
   {
     "id": "flint_knife_841245",
@@ -37433,36 +37160,6 @@
     "pattern": [
       [
         "iron_arrow",
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ]
-    ]
-  },
-  {
-    "id": "ancient_metal_nugget_841264",
-    "item_num": 841264,
-    "output": "ancient_metal_nugget",
-    "outputQty": 1,
-    "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "ancient_metal_arrow"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "ancient_metal_arrow",
         null,
         null
       ],
@@ -38286,37 +37983,6 @@
       [
         null,
         "water_bowl",
-        null
-      ]
-    ]
-  },
-  {
-    "id": "worm_cooked_841291",
-    "item_num": 841291,
-    "output": "worm_cooked",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "worm_raw",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        "worm_raw",
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        "coal",
         null
       ]
     ]
@@ -40537,7 +40203,7 @@
     "output": "blast_furnace",
     "outputQty": 1,
     "station": "iron_workbench",
-    "difficulty": 0,
+    "difficulty": 3041,
     "skills": [],
     "ingredients": [
       "stone",
@@ -40569,7 +40235,7 @@
     "output": "blast_furnace",
     "outputQty": 1,
     "station": "iron_workbench",
-    "difficulty": 0,
+    "difficulty": 1601,
     "skills": [],
     "ingredients": [
       "copper_ingot",
@@ -40600,7 +40266,7 @@
     "output": "blast_furnace",
     "outputQty": 1,
     "station": "iron_workbench",
-    "difficulty": 0,
+    "difficulty": 1601,
     "skills": [],
     "ingredients": [
       "stone_furnace",
@@ -42877,36 +42543,6 @@
     ]
   },
   {
-    "id": "clay_furnace_841438",
-    "item_num": 841438,
-    "output": "clay_furnace",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "clay_block"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "clay_block",
-        "clay_block",
-        null
-      ],
-      [
-        "clay_block",
-        "clay_block",
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ]
-    ]
-  },
-  {
     "id": "gold_nugget_841439",
     "item_num": 841439,
     "output": "gold_nugget",
@@ -42969,98 +42605,6 @@
       ]
     ],
     "added_version": "0.6.0"
-  },
-  {
-    "id": "ancient_metal_nugget_841441",
-    "item_num": 841441,
-    "output": "ancient_metal_nugget",
-    "outputQty": 9,
-    "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "ancient_metal_ingot",
-      "ancient_metal_war_hammer"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        "ancient_metal_ingot",
-        null
-      ],
-      [
-        null,
-        "ancient_metal_war_hammer",
-        null
-      ]
-    ],
-    "added_version": "0.6.0"
-  },
-  {
-    "id": "ancient_metal_nugget_841442",
-    "item_num": 841442,
-    "output": "ancient_metal_nugget",
-    "outputQty": 4,
-    "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "ancient_metal_chain"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "ancient_metal_chain",
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ]
-    ]
-  },
-  {
-    "id": "ancient_metal_nugget_841443",
-    "item_num": 841443,
-    "output": "ancient_metal_nugget",
-    "outputQty": 1,
-    "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "ancient_metal_coin"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "ancient_metal_coin",
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ]
-    ]
   },
   {
     "id": "chocolate_841444",
@@ -44270,5 +43814,192 @@
       ]
     ],
     "added_version": "0.6.0"
+  },
+  {
+    "id": "ancient_metal_nugget_mithril_war_hammer",
+    "item_num": 961,
+    "output": "ancient_metal_nugget",
+    "outputQty": 9,
+    "station": "mithril_workbench",
+    "difficulty": 1600,
+    "skills": [],
+    "ingredients": [
+      "ancient_metal_ingot",
+      "mithril_war_hammer"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "ancient_metal_ingot",
+        null
+      ],
+      [
+        null,
+        "mithril_war_hammer",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "ancient_metal_nugget_adamantium_war_hammer",
+    "item_num": 961,
+    "output": "ancient_metal_nugget",
+    "outputQty": 9,
+    "station": "adamantium_workbench",
+    "difficulty": 1600,
+    "skills": [],
+    "ingredients": [
+      "ancient_metal_ingot",
+      "adamantium_war_hammer"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "ancient_metal_ingot",
+        null
+      ],
+      [
+        null,
+        "adamantium_war_hammer",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "ancient_metal_nugget_ancient_metal_war_hammer",
+    "item_num": 961,
+    "output": "ancient_metal_nugget",
+    "outputQty": 9,
+    "station": "ancient_metal_workbench",
+    "difficulty": 1600,
+    "skills": [],
+    "ingredients": [
+      "ancient_metal_ingot",
+      "ancient_metal_war_hammer"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        null,
+        "ancient_metal_ingot",
+        null
+      ],
+      [
+        null,
+        "ancient_metal_war_hammer",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.6.0"
+  },
+  {
+    "id": "bad_duck_meat_duck_meat_furnace",
+    "item_num": null,
+    "output": "bad_duck_meat",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "duck_meat"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bad_duck_head_cooked_duck_head_furnace",
+    "item_num": null,
+    "output": "bad_duck_head_cooked",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "duck_head"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bad_mutton_cooked_mutton_raw_furnace",
+    "item_num": null,
+    "output": "bad_mutton_cooked",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "mutton_raw"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bad_cooked_squid_meat_squid_meat_furnace",
+    "item_num": null,
+    "output": "bad_cooked_squid_meat",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "squid_meat"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bad_fish_cooked_fish_raw_furnace",
+    "item_num": null,
+    "output": "bad_fish_cooked",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "fish_raw"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bad_cooked_meat_porkchop_furnace",
+    "item_num": null,
+    "output": "bad_cooked_meat",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "porkchop"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "bad_cooked_meat_beef_furnace",
+    "item_num": null,
+    "output": "bad_cooked_meat",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "beef"
+    ],
+    "shaped": false
   }
 ]
