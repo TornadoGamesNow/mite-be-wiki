@@ -978,14 +978,14 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 
 <h2 id="clay-furnace">Agyagkemence</h2>
 <div class="recipe">Agyag + Fa → Agyag Kemence</div>
-  <CraftingGrid recipeOutput="clay_furnace" label={{hu: "Agyag Kemence", en: "Clay Furnace"}}/>
+  <CraftingGrid recipeOutput="clay_furnace_idle" label={{hu: "Agyag Kemence", en: "Clay Furnace"}}/>
 
 <p>Keress agyagot patakokban vagy tavaknál. Az agyagkemence az első olvasztóeszközöd, de nem elég erős fém olvasztásához!</p>
 
 <h2 id="campfire">Tábortűz</h2>
 <div class="recipe">(Munkaasztalon craftolható)</div>
 <div class="craft-section">
-  <CraftingGrid recipeOutput="campfire" label={{hu: "Tábortűz", en: "Campfire"}}/>
+  <CraftingGrid recipeOutput="campfire_idle" label={{hu: "Tábortűz", en: "Campfire"}}/>
 </div>
 <p>A tábortűz lehetővé teszi, hogy a húst <strong>megsütve</strong> edd — ne megégetve! A megégett hús mérgezést okoz. Egyszerre <strong>8 darab húst</strong> tud sütni egyszerre.</p>
 <div class="warning">Megégett hús evése mérgezést okoz! Használj tábortüzet vagy sütőt!</div>
@@ -1338,7 +1338,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <h3>Gazdálkodás</h3>
 <div class="recipe">Kacsacsőrű kapa (bármely fém) → Föld szántása → Búza/Hagyma/Burgonya/Sárgarépa ültetés</div>
 <div class="craft-section">
-  <CraftingGrid recipeOutput="copper_hoe" label={{hu: "Réz Kapa", en: "Copper Hoe"}}/>
+  <CraftingGrid recipeOutput="stone_hoe" label={{hu: "Kova Kapa", en: "Flint Hoe"}}/>
 </div>
 
 <p>A növényeknek <strong>trágyára</strong> van szükségük a növekedéshez! Csontliszt a haldokló veteményesek megmentésére használható.</p>
@@ -1773,7 +1773,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <div class="craft-section">
   <CraftingGrid recipeOutput="miner_helmet" label={{hu: "Bányász Sisak (Vas Munkaasztal)", en: "Mining Helmet (Iron Workbench)"}}/>
   <CraftingGrid recipeOutput="battery" label={{hu: "Akkumulátor", en: "Battery"}}/>
-  <CraftingGrid recipeOutput="colling_liquid" label={{hu: "Hűtőfolyadék (Ősi Fém Munkaasztal)", en: "Cooling Liquid (Ancient Metal Workbench)"}}/>
+  <CraftingGrid recipeOutput="cooling_liquid" label={{hu: "Hűtőfolyadék (Ősi Fém Munkaasztal)", en: "Cooling Liquid (Ancient Metal Workbench)"}}/>
   <CraftingGrid recipeOutput="bedrock_pulverizer" label={{hu: "Alapkő Zúzó", en: "Bedrock Pulverizer"}}/>
   <CraftingGrid recipeOutput="ex_eye_of_ender" label={{hu: "Erősített Ender Szem", en: "Enhanced Ender Eye"}}/>
   <CraftingGrid recipeOutput="filter_paper" label={{hu: "Szűrőpapír", en: "Filter Paper"}}/>
@@ -1970,9 +1970,9 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <p><em>Megjegyzés: Kovács (Blacksmith) foglalkozás szükséges lenne az átlagos minőségű craftoláshoz — de ez jelenleg inaktív v0.9.0-ban.</em></p>
 
 <div class="craft-section">
-  <CraftingGrid recipeOutput="hardstone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword"}}/>
-  <CraftingGrid recipeOutput="hardstone_pickaxe" label={{hu: "Keménykő Csákány", en: "Hardstone Pickaxe"}}/>
-  <CraftingGrid recipeOutput="hardstone_war_hammer" label={{hu: "Keménykő Háborús Kalapács", en: "Hardstone War Hammer"}}/>
+  <CraftingGrid recipeOutput="hard_stone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword"}}/>
+  <CraftingGrid recipeOutput="hard_stone_pickaxe" label={{hu: "Keménykő Csákány", en: "Hardstone Pickaxe"}}/>
+  <CraftingGrid recipeOutput="hard_stone_war_hammer" label={{hu: "Keménykő Háborús Kalapács", en: "Hardstone War Hammer"}}/>
 </div>
 
 <!-- ===== ŐSI FÉM ===== -->
@@ -1993,9 +1993,8 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 
 
 <!-- ===== MITHRIL ===== --><div class="craft-section">
-  <CraftingGrid recipeOutput="mithril_sword" label={{hu: "Mithril Kard", en: "Mithril Sword"}}/>
-  <CraftingGrid recipeOutput="mithril_pickaxe" label={{hu: "Mithril Csákány", en: "Mithril Pickaxe"}}/>
-  <CraftingGrid recipeOutput="mithril_axe" label={{hu: "Mithril Fejsze", en: "Mithril Axe"}}/>
+  <CraftingGrid recipeOutput="mithril_short_sword" label={{hu: "Mithril Rövidkard", en: "Mithril Short Sword"}}/>
+  <CraftingGrid recipeOutput="mithril_hand_axe" label={{hu: "Mithril Kézbalta", en: "Mithril Hand Axe"}}/>
   <CraftingGrid recipeOutput="mithril_war_hammer" label={{hu: "Mithril Háborús Kalapács", en: "Mithril War Hammer"}}/>
 </div>
 
@@ -2023,8 +2022,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 
 
 <!-- ===== NETHER ===== --><div class="craft-section">
-  <CraftingGrid recipeOutput="ancient_metal_sword" label={{hu: "Ősi Fém Kard", en: "Ancient Metal Sword"}}/>
-  <CraftingGrid recipeOutput="ancient_metal_pickaxe" label={{hu: "Ősi Fém Csákány", en: "Ancient Metal Pickaxe"}}/>
+  <CraftingGrid recipeOutput="ancient_metal_short_sword" label={{hu: "Ősi Fém Rövidkard", en: "Ancient Metal Short Sword"}}/>
   <CraftingGrid recipeOutput="ancient_metal_war_hammer" label={{hu: "Ősi Fém Háborús Kalapács", en: "Ancient Metal War Hammer"}}/>
 </div>
 
@@ -2154,9 +2152,8 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <div class="tip">Az adamantium csákány képes az alapkő-zúzó kiásására is!</div>
 
 <div class="craft-section">
-  <CraftingGrid recipeOutput="adamantium_sword" label={{hu: "Adamantium Kard", en: "Adamantium Sword"}}/>
-  <CraftingGrid recipeOutput="adamantium_pickaxe" label={{hu: "Adamantium Csákány", en: "Adamantium Pickaxe"}}/>
-  <CraftingGrid recipeOutput="adamantium_axe" label={{hu: "Adamantium Fejsze", en: "Adamantium Axe"}}/>
+  <CraftingGrid recipeOutput="adamantium_short_sword" label={{hu: "Adamantium Rövidkard", en: "Adamantium Short Sword"}}/>
+  <CraftingGrid recipeOutput="adamantium_hand_axe" label={{hu: "Adamantium Kézbalta", en: "Adamantium Hand Axe"}}/>
   <CraftingGrid recipeOutput="adamantium_war_hammer" label={{hu: "Adamantium Háborús Kalapács", en: "Adamantium War Hammer"}}/>
 </div>
 <!-- ===== WITHER ===== -->
@@ -3011,14 +3008,14 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 
 <h2 id="clay-furnace">Clay Furnace</h2>
 <div class="recipe">Clay + Wood → Clay Furnace</div>
-  <CraftingGrid recipeOutput="clay_furnace" label={{hu: "Agyag Kemence", en: "Clay Furnace"}}/>
+  <CraftingGrid recipeOutput="clay_furnace_idle" label={{hu: "Agyag Kemence", en: "Clay Furnace"}}/>
 
 <p>Find clay near rivers and lakes. The clay furnace is your first smelting tool, but it's not hot enough for metal smelting!</p>
 
 <h2 id="campfire">Campfire</h2>
 <div class="recipe">(Craftable on workbench)</div>
 <div class="craft-section">
-  <CraftingGrid recipeOutput="campfire" label={{hu: "Tábortűz", en: "Campfire"}}/>
+  <CraftingGrid recipeOutput="campfire_idle" label={{hu: "Tábortűz", en: "Campfire"}}/>
 </div>
 <p>The campfire lets you <strong>cook meat properly</strong> — not burn it! Burned meat causes poisoning. It can cook up to <strong>8 pieces of meat</strong> simultaneously.</p>
 <div class="warning">Eating burned meat causes poisoning! Use a campfire or oven!</div>
@@ -3370,7 +3367,7 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 <h3>Farming</h3>
 <div class="recipe">Duck-billed Hoe (any metal) → Till soil → Plant wheat/onions/potatoes/carrots</div>
 <div class="craft-section">
-  <CraftingGrid recipeOutput="copper_hoe" label={{hu: "Réz Kapa", en: "Copper Hoe"}}/>
+  <CraftingGrid recipeOutput="stone_hoe" label={{hu: "Kova Kapa", en: "Flint Hoe"}}/>
 </div>
 
 <p>Plants need <strong>manure</strong> to grow! Bone meal can save dying crops.</p>
@@ -3805,7 +3802,7 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 <div class="craft-section">
   <CraftingGrid recipeOutput="miner_helmet" label={{hu: "Bányász Sisak (Vas Munkaasztal)", en: "Mining Helmet (Iron Workbench)"}}/>
   <CraftingGrid recipeOutput="battery" label={{hu: "Akkumulátor", en: "Battery"}}/>
-  <CraftingGrid recipeOutput="colling_liquid" label={{hu: "Hűtőfolyadék (Ősi Fém Munkaasztal)", en: "Cooling Liquid (Ancient Metal Workbench)"}}/>
+  <CraftingGrid recipeOutput="cooling_liquid" label={{hu: "Hűtőfolyadék (Ősi Fém Munkaasztal)", en: "Cooling Liquid (Ancient Metal Workbench)"}}/>
   <CraftingGrid recipeOutput="bedrock_pulverizer" label={{hu: "Alapkő Zúzó", en: "Bedrock Pulverizer"}}/>
   <CraftingGrid recipeOutput="ex_eye_of_ender" label={{hu: "Erősített Ender Szem", en: "Enhanced Ender Eye"}}/>
   <CraftingGrid recipeOutput="filter_paper" label={{hu: "Szűrőpapír", en: "Filter Paper"}}/>
@@ -3996,9 +3993,9 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 <p><strong>Requirement:</strong> Blacksmith profession required for average quality or better crafting.</p>
 
 <div class="craft-section">
-  <CraftingGrid recipeOutput="hardstone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword"}}/>
-  <CraftingGrid recipeOutput="hardstone_pickaxe" label={{hu: "Keménykő Csákány", en: "Hardstone Pickaxe"}}/>
-  <CraftingGrid recipeOutput="hardstone_war_hammer" label={{hu: "Keménykő Háborús Kalapács", en: "Hardstone War Hammer"}}/>
+  <CraftingGrid recipeOutput="hard_stone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword"}}/>
+  <CraftingGrid recipeOutput="hard_stone_pickaxe" label={{hu: "Keménykő Csákány", en: "Hardstone Pickaxe"}}/>
+  <CraftingGrid recipeOutput="hard_stone_war_hammer" label={{hu: "Keménykő Háborús Kalapács", en: "Hardstone War Hammer"}}/>
 </div>
 
 <!-- ===== ANCIENT METAL ===== -->
@@ -4019,9 +4016,8 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 
 
 <!-- ===== MITHRIL ===== --><div class="craft-section">
-  <CraftingGrid recipeOutput="mithril_sword" label={{hu: "Mithril Kard", en: "Mithril Sword"}}/>
-  <CraftingGrid recipeOutput="mithril_pickaxe" label={{hu: "Mithril Csákány", en: "Mithril Pickaxe"}}/>
-  <CraftingGrid recipeOutput="mithril_axe" label={{hu: "Mithril Fejsze", en: "Mithril Axe"}}/>
+  <CraftingGrid recipeOutput="mithril_short_sword" label={{hu: "Mithril Rövidkard", en: "Mithril Short Sword"}}/>
+  <CraftingGrid recipeOutput="mithril_hand_axe" label={{hu: "Mithril Kézbalta", en: "Mithril Hand Axe"}}/>
   <CraftingGrid recipeOutput="mithril_war_hammer" label={{hu: "Mithril Háborús Kalapács", en: "Mithril War Hammer"}}/>
 </div>
 
@@ -4049,8 +4045,7 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 
 
 <!-- ===== NETHER ===== --><div class="craft-section">
-  <CraftingGrid recipeOutput="ancient_metal_sword" label={{hu: "Ősi Fém Kard", en: "Ancient Metal Sword"}}/>
-  <CraftingGrid recipeOutput="ancient_metal_pickaxe" label={{hu: "Ősi Fém Csákány", en: "Ancient Metal Pickaxe"}}/>
+  <CraftingGrid recipeOutput="ancient_metal_short_sword" label={{hu: "Ősi Fém Rövidkard", en: "Ancient Metal Short Sword"}}/>
   <CraftingGrid recipeOutput="ancient_metal_war_hammer" label={{hu: "Ősi Fém Háborús Kalapács", en: "Ancient Metal War Hammer"}}/>
 </div>
 
@@ -4180,9 +4175,8 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 <div class="tip">The adamantium pickaxe can also dig out the Bedrock Pulverizer!</div>
 
 <div class="craft-section">
-  <CraftingGrid recipeOutput="adamantium_sword" label={{hu: "Adamantium Kard", en: "Adamantium Sword"}}/>
-  <CraftingGrid recipeOutput="adamantium_pickaxe" label={{hu: "Adamantium Csákány", en: "Adamantium Pickaxe"}}/>
-  <CraftingGrid recipeOutput="adamantium_axe" label={{hu: "Adamantium Fejsze", en: "Adamantium Axe"}}/>
+  <CraftingGrid recipeOutput="adamantium_short_sword" label={{hu: "Adamantium Rövidkard", en: "Adamantium Short Sword"}}/>
+  <CraftingGrid recipeOutput="adamantium_hand_axe" label={{hu: "Adamantium Kézbalta", en: "Adamantium Hand Axe"}}/>
   <CraftingGrid recipeOutput="adamantium_war_hammer" label={{hu: "Adamantium Háborús Kalapács", en: "Adamantium War Hammer"}}/>
 </div>
 <!-- ===== WITHER ===== -->
