@@ -2183,7 +2183,7 @@
       "en": "Bowl"
     },
     "img": "img/items/bowl_water.png",
-    "category": "food"
+    "category": "material"
   },
   "copper_chain": {
     "name": {
@@ -3028,7 +3028,7 @@
     },
     "img": "img/items/bone_meal.png",
     "tier": "bone",
-    "category": "food"
+    "category": "material"
   },
   "book_and_quill": {
     "name": {
@@ -3082,7 +3082,7 @@
     },
     "img": "img/items/bowl_water.png",
     "tier": null,
-    "category": "misc"
+    "category": "food"
   },
   "brewing_stand": {
     "name": {
@@ -7616,7 +7616,7 @@
     },
     "img": "img/items/sugar_water.png",
     "tier": null,
-    "category": "misc"
+    "category": "food"
   },
   "teleport_scroll_knowledge_book": {
     "name": {
