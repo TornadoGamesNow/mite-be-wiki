@@ -133,7 +133,8 @@
     },
     "img": "img/items/flint_axe.png",
     "tier": "flint",
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "pre-0.5.5"
   },
   "stone_pickaxe": {
     "name": {
@@ -142,7 +143,8 @@
     },
     "img": "img/items/stone_pickaxe.png",
     "tier": "flint",
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "pre-0.5.5"
   },
   "stone_shovel": {
     "name": {
@@ -151,7 +153,8 @@
     },
     "img": "img/items/flint_shovel.png",
     "tier": "flint",
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "pre-0.5.5"
   },
   "stone_spear": {
     "name": {
@@ -973,7 +976,8 @@
     },
     "img": "img/items/hardstone_helmet.png",
     "tier": "hard",
-    "category": "armor"
+    "category": "armor",
+    "removed_in": "0.6.0"
   },
   "hardstone_chestplate": {
     "name": {
@@ -982,7 +986,8 @@
     },
     "img": "img/items/hardstone_chestplate.png",
     "tier": "hard",
-    "category": "armor"
+    "category": "armor",
+    "removed_in": "0.6.0"
   },
   "hardstone_leggings": {
     "name": {
@@ -991,7 +996,8 @@
     },
     "img": "img/items/hardstone_leggings.png",
     "tier": "hard",
-    "category": "armor"
+    "category": "armor",
+    "removed_in": "0.6.0"
   },
   "hardstone_boots": {
     "name": {
@@ -1000,7 +1006,8 @@
     },
     "img": "img/items/hardstone_boots.png",
     "tier": "hard",
-    "category": "armor"
+    "category": "armor",
+    "removed_in": "0.6.0"
   },
   "ancient_metal_sword": {
     "name": {
@@ -6016,7 +6023,8 @@
     },
     "img": "img/items/nether_furnace_core.png",
     "tier": null,
-    "category": "block"
+    "category": "block",
+    "removed_in": "pre-0.5.5"
   },
   "nether_quartz": {
     "name": {
@@ -6125,7 +6133,8 @@
     },
     "img": "img/items/obsidian_furnace_core.png",
     "tier": "obsidian",
-    "category": "block"
+    "category": "block",
+    "removed_in": "pre-0.5.5"
   },
   "obsidian_furnace_idle": {
     "name": {
@@ -7535,7 +7544,8 @@
     },
     "img": "img/items/stone_furnace_core.png",
     "tier": "stone",
-    "category": "block"
+    "category": "block",
+    "removed_in": "pre-0.5.5"
   },
   "stone_furnace_idle": {
     "name": {
@@ -8092,7 +8102,8 @@
     },
     "img": "img/items/slimeball_black.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "black_widow_eye": {
     "name": {
@@ -8110,7 +8121,8 @@
     },
     "img": "img/items/slimeball_brown.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "chicken": {
     "name": {
@@ -8200,7 +8212,8 @@
     },
     "img": "img/items/slimeball_gray.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "porkchop": {
     "name": {
@@ -8218,7 +8231,8 @@
     },
     "img": "img/items/red_slime_ball.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "wool": {
     "name": {
@@ -8326,7 +8340,8 @@
     },
     "img": "img/items/raw_fish.png",
     "tier": null,
-    "category": "food"
+    "category": "food",
+    "removed_in": "pre-0.5.5"
   },
   "wood_spider_eye": {
     "name": {
@@ -8435,7 +8450,8 @@
     },
     "img": "img/items/illager_banner.png",
     "tier": null,
-    "category": "misc"
+    "category": "misc",
+    "removed_in": "pre-0.5.5"
   },
   "skeleton_lord_heart": {
     "name": {
@@ -8489,7 +8505,8 @@
     },
     "img": "img/items/manure.png",
     "tier": null,
-    "category": "material"
+    "category": "material",
+    "removed_in": "pre-0.5.5"
   },
   "mutton_raw": {
     "name": {
@@ -9365,7 +9382,8 @@
     },
     "img": "img/items/cereal.png",
     "tier": null,
-    "category": "food"
+    "category": "food",
+    "removed_in": "pre-0.5.5"
   },
   "beef_stew": {
     "name": {
@@ -9765,7 +9783,8 @@
     "img": "img/items/wood_club.png",
     "tier": "wood",
     "category": "weapon",
-    "max_durability": 400
+    "max_durability": 400,
+    "removed_in": "pre-0.5.5"
   },
   "green_gelatinous_sphere": {
     "name": {

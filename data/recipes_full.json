@@ -30015,7 +30015,8 @@
       "hardstone_ingot",
       "hardstone_ingot"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "0.6.0"
   },
   {
     "id": "hardstone_chestplate_32034",
@@ -30037,7 +30038,8 @@
       "hardstone_ingot",
       "hardstone_ingot"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "0.6.0"
   },
   {
     "id": "hardstone_leggings_32035",
@@ -30058,7 +30060,8 @@
       "hardstone_ingot",
       "hardstone_ingot"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "0.6.0"
   },
   {
     "id": "hardstone_boots_32036",
@@ -30076,7 +30079,8 @@
       "hardstone_ingot",
       "hardstone_ingot"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "0.6.0"
   },
   {
     "id": "hardstone_battle_axe_32037",
@@ -33977,13 +33981,13 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "fish_raw"
+      "raw_fish"
     ],
     "shaped": true,
     "pattern": [
       [
-        "fish_raw",
-        "fish_raw",
+        "raw_fish",
+        "raw_fish",
         null
       ],
       [
@@ -36255,7 +36259,8 @@
         "bowl_milk",
         null
       ]
-    ]
+    ],
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "pumpkin_soup_841285",
@@ -37440,7 +37445,8 @@
         "stick",
         null
       ]
-    ]
+    ],
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "mithril_bow_841323",
@@ -42415,7 +42421,7 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "fish_raw"
+      "raw_fish"
     ],
     "shaped": false
   },
