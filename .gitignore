@@ -27,3 +27,24 @@ Thumbs.db
 # AI assistant configs
 .claude/
 .github/copilot-instructions.md
+
+# Scraper scripts + generated cache (internal tooling, not public)
+scripts/scrape_mcmod_cache.py
+scripts/gen_item_docs.py
+scripts/update_from_cache.py
+scripts/import_from_cache.py
+scripts/translate_descriptions.py
+scripts/translate_batch.py
+scripts/fix_translations.py
+scripts/fix_hu_translations.py
+scripts/merge_translations.py
+scripts/retranslate_hu_claude.py
+scripts/check_layout.py
+scripts/mcmod_items_cache.json
+scripts/translations_cache.json
+scripts/translations_hu_cache.json
+scripts/translations_hu_claude_cache.json
+scripts/item-docs/
+scripts/__pycache__/
+scripts/*.txt
+scripts/*.log

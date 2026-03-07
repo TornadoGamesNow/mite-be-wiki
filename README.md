@@ -13,7 +13,7 @@ The first public bilingual wiki for **MITE: Break Everything** — a hardcore to
 | | Link | Size |
 |---|---|---|
 | 🇭🇺 **Hungarian version** | [archive.org/details/mite-be-v0.9.0-hungarian](https://archive.org/details/mite-be-v0.9.0-hungarian) | ~266 MB |
-| 🇬🇧 **English version** | [archive.org/details/mite-be-v0.9.0-english](https://archive.org/details/mite-be-v0.9.0-english) | ~13 KB |
+| 🇬🇧 **English version** | [archive.org/details/mite-be-v0.9.0-english](https://archive.org/details/mite-be-v0.9.0-english) | ~266 MB |
 
 **Requirements:** Java 8 + [PrismLauncher](https://prismlauncher.org)
 **Installation guide:** [tornadogamesnow.github.io/mite-be-wiki/install](https://tornadogamesnow.github.io/mite-be-wiki/install)
@@ -55,7 +55,7 @@ The first public bilingual wiki for **MITE: Break Everything** — a hardcore to
 
 ```
 src/pages/        — Astro pages (SSG)
-  index.astro       — Main wiki (HU+EN bilingual, ~4200+ lines)
+  index.astro       — Main wiki (HU+EN bilingual, ~4400+ lines)
   recipes.astro     — Recipe browser page
   mobs.astro        — Mob encyclopedia page
   brewing.astro     — Brewing page
@@ -84,10 +84,10 @@ src/islands/      — React "islands" (client-side interactive)
   VersionToggle.tsx     — Version toggle
 
 data/             — JSON data files (SSOT — authoritative source of truth)
-  items.json            — Item catalog: id → {name:{hu,en}, img, tier, category}
+  items.json            — Item catalog (~1126 items): id → {name:{hu,en}, img, tier, category}
   mobs.json             — Mob stats: hp, dmg, xp, drops, spawnZones, tags
   recipes.json          — Shaped crafting recipes (CraftingGrid + RecipeBrowser)
-  recipes_full.json     — Full recipe database (RecipesHub, generated)
+  recipes_full.json     — Full recipe database (~1487 recipes, used by RecipesHub)
   materials.json        — Material properties: enchantability, maxQuality, durabilityMult, sieve
   mechanics.json        — Game mechanics: furnace heat levels, armor protection, weapon damage
 
@@ -98,11 +98,7 @@ public/
     materials.js        — Material tables for reference.astro (manually maintained)
     sieve.js            — Sieve drop rates for reference.astro (manually maintained)
 
-scripts/          — Generator scripts (not run automatically at build time)
-  parse_recipes.py      — Recipe JSON generation from mod files
-  gen_recipes_full.py   — Regenerate recipes_full.json
-  gen_item_stubs.py     — Item stub generation
-  scrape-drops.js       — Mob drop scraper
+scripts/          — Internal generator scripts (not run at build time, mostly gitignored)
 ```
 
 ### Local development

@@ -797,7 +797,7 @@
     "mobType": "undead",
     "armor": 5,
     "description": {
-      "hu": "A Wight (古尸/Longdead) erősített változata, vörös szemekkel. Réz páncélkészletet visel és fegyvert hord (íj, ős fém kard vagy ős fém kés). A felszerelés és a fegyverek lehetnek varázsoltak.",
+      "hu": "A Wight (Longdead) erősített változata, vörös szemekkel. Réz páncélkészletet visel és fegyvert hord (íj, ős fém kard vagy ős fém kés). A felszerelés és a fegyverek lehetnek varázsoltak.",
       "en": "A reinforced variant of the Longdead (Wight) with red eyes. Wears a copper armor set and carries a weapon (bow, ancient metal sword, or ancient metal knife). Equipment and weapons may be enchanted."
     },
     "spawnInfo": {
