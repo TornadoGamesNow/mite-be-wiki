@@ -212,7 +212,7 @@
       "hu": "Lucfenyő Deszka",
       "en": "Spruce Planks"
     },
-    "img": "img/blocks/planks_oak.png",
+    "img": "img/blocks/planks_spruce.png",
     "tier": null,
     "category": "block"
   },
@@ -221,7 +221,7 @@
       "hu": "Nyírfa Deszka",
       "en": "Birch Planks"
     },
-    "img": "img/blocks/planks_oak.png",
+    "img": "img/blocks/planks_birch.png",
     "tier": null,
     "category": "block"
   },
@@ -230,7 +230,7 @@
       "hu": "Dzsungelfa Deszka",
       "en": "Jungle Planks"
     },
-    "img": "img/blocks/planks_oak.png",
+    "img": "img/blocks/planks_jungle.png",
     "tier": null,
     "category": "block"
   },
