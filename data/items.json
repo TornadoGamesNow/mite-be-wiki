@@ -376,7 +376,7 @@
     },
     "img": "img/items/book_normal.png",
     "tier": null,
-    "category": "material"
+    "category": "misc"
   },
   "diamond": {
     "name": {
@@ -1393,7 +1393,7 @@
     },
     "img": "img/items/battery.png",
     "tier": null,
-    "category": "material"
+    "category": "misc"
   },
   "cooling_liquid": {
     "name": {
@@ -3218,7 +3218,7 @@
     },
     "img": "img/items/campfire_idle.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "carbon_crystal": {
     "name": {
@@ -3399,7 +3399,7 @@
     },
     "img": "img/items/clay_furnace_idle.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "clay_portal_stone": {
     "name": {
@@ -3975,7 +3975,7 @@
     },
     "img": "img/items/empty_large_water_skin.png",
     "tier": null,
-    "category": "material"
+    "category": "tool"
   },
   "empty_map": {
     "name": {
@@ -3993,7 +3993,7 @@
     },
     "img": "img/items/empty_water_skin.png",
     "tier": null,
-    "category": "material"
+    "category": "tool"
   },
   "enchanted_golden_apple": {
     "name": {
@@ -5953,7 +5953,7 @@
     },
     "img": "img/items/mushroom_brown.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "mushroom_red": {
     "name": {
@@ -5962,7 +5962,7 @@
     },
     "img": "img/items/mushroom_red.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "mushroom_stew": {
     "name": {
@@ -6043,7 +6043,7 @@
     },
     "img": "img/items/netherrack_furnace_idle.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "note_block": {
     "name": {
@@ -6134,7 +6134,7 @@
     },
     "img": "img/items/obsidian_furnace_idle.png",
     "tier": "obsidian",
-    "category": "material"
+    "category": "block"
   },
   "obsidian_hatchet": {
     "name": {
@@ -6867,7 +6867,7 @@
     },
     "img": "img/items/sandstone_furnace_idle.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "sandstone_portal_stone": {
     "name": {
@@ -7337,7 +7337,7 @@
     },
     "img": "img/items/smelting_furnace_idle.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "smooth_sandstone": {
     "name": {
@@ -7544,7 +7544,7 @@
     },
     "img": "img/items/stone_furnace_idle.png",
     "tier": "stone",
-    "category": "material"
+    "category": "block"
   },
   "stone_portal_stone": {
     "name": {
@@ -7724,7 +7724,7 @@
     },
     "img": "img/items/water_skin.png",
     "tier": null,
-    "category": "material"
+    "category": "tool"
   },
   "waystone": {
     "name": {
@@ -8220,7 +8220,7 @@
     },
     "img": "img/items/wolf_raw.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "bear_raw": {
     "name": {
@@ -8229,7 +8229,7 @@
     },
     "img": "img/items/bear_raw.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "deer_raw": {
     "name": {
@@ -8238,7 +8238,7 @@
     },
     "img": "img/items/deer_raw.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "camel_raw": {
     "name": {
@@ -8247,7 +8247,7 @@
     },
     "img": "img/items/camel_raw.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "tiger_raw": {
     "name": {
@@ -8256,7 +8256,7 @@
     },
     "img": "img/items/tiger_raw.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "shark_raw": {
     "name": {
@@ -8265,7 +8265,7 @@
     },
     "img": "img/items/shark_raw.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "turkey_raw": {
     "name": {
@@ -8274,7 +8274,7 @@
     },
     "img": "img/items/turkey_raw.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "rat_raw": {
     "name": {
@@ -8283,7 +8283,7 @@
     },
     "img": "img/items/rat_raw.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "lion_raw": {
     "name": {
@@ -8292,7 +8292,7 @@
     },
     "img": "img/items/lion_raw.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "elephant_raw": {
     "name": {
@@ -8301,7 +8301,7 @@
     },
     "img": "img/items/elephant_raw.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "fish_raw": {
     "name": {
@@ -8310,7 +8310,7 @@
     },
     "img": "img/items/raw_fish.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "wood_spider_eye": {
     "name": {
@@ -8564,7 +8564,7 @@
     },
     "img": "img/items/pcb.png",
     "tier": null,
-    "category": "material"
+    "category": "misc"
   },
   "attribute_coin": {
     "name": {
@@ -8683,7 +8683,7 @@
     },
     "img": "img/items/runestore.png",
     "tier": null,
-    "category": "material"
+    "category": "misc"
   },
   "blast_furnace": {
     "name": {
@@ -8692,7 +8692,7 @@
     },
     "img": "img/items/blast_furnace.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "enchantment_table": {
     "name": {
@@ -8701,7 +8701,7 @@
     },
     "img": "img/items/enchantment_table.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "two_port_cauldron": {
     "name": {
@@ -8710,7 +8710,7 @@
     },
     "img": "img/items/two_port_cauldron.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "respawn_anchor": {
     "name": {
@@ -8719,7 +8719,7 @@
     },
     "img": "img/items/respawn_anchor.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "enchantment_table_custom": {
     "name": {
@@ -8728,7 +8728,7 @@
     },
     "img": "img/items/enchantment_table_custom.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "ancient_metal_backpack_upgrade": {
     "name": {
@@ -8825,7 +8825,7 @@
     },
     "img": "img/items/barrel_copper_upgrade.png",
     "tier": "copper",
-    "category": "material"
+    "category": "misc"
   },
   "barrel_silver_upgrade": {
     "name": {
@@ -8834,7 +8834,7 @@
     },
     "img": "img/items/barrel_silver_upgrade.png",
     "tier": "silver",
-    "category": "material"
+    "category": "misc"
   },
   "barrel_iron_upgrade": {
     "name": {
@@ -8843,7 +8843,7 @@
     },
     "img": "img/items/barrel_iron_upgrade.png",
     "tier": "iron",
-    "category": "material"
+    "category": "misc"
   },
   "barrel_gold_upgrade": {
     "name": {
@@ -8852,7 +8852,7 @@
     },
     "img": "img/items/barrel_gold_upgrade.png",
     "tier": "gold",
-    "category": "material"
+    "category": "misc"
   },
   "barrel_mithril_upgrade": {
     "name": {
@@ -8861,7 +8861,7 @@
     },
     "img": "img/items/barrel_mithril_upgrade.png",
     "tier": "mithril",
-    "category": "material"
+    "category": "misc"
   },
   "barrel_adamantium_upgrade": {
     "name": {
@@ -8870,7 +8870,7 @@
     },
     "img": "img/items/barrel_adamantium_upgrade.png",
     "tier": "adamantium",
-    "category": "material"
+    "category": "misc"
   },
   "barrel_hard_upgrade": {
     "name": {
@@ -8879,7 +8879,7 @@
     },
     "img": "img/items/barrel_hard_upgrade.png",
     "tier": "hard",
-    "category": "material"
+    "category": "misc"
   },
   "log_pitaya": {
     "name": {
@@ -8942,7 +8942,7 @@
     },
     "img": "img/items/mantle.png",
     "tier": null,
-    "category": "material"
+    "category": "armor"
   },
   "slow_sand": {
     "name": {
@@ -8997,7 +8997,7 @@
     },
     "img": "img/items/glow_stone_torch.png",
     "tier": "stone",
-    "category": "material"
+    "category": "block"
   },
   "pillager_flag": {
     "name": {
@@ -9006,7 +9006,7 @@
     },
     "img": "img/items/pillager_flag.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "template_lantern": {
     "name": {
@@ -9015,7 +9015,7 @@
     },
     "img": "img/items/template_lantern.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "thin_glass": {
     "name": {
@@ -9132,7 +9132,7 @@
     },
     "img": "img/items/coconut.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "grape": {
     "name": {
@@ -9141,7 +9141,7 @@
     },
     "img": "img/items/grape.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "strawberry": {
     "name": {
@@ -9150,7 +9150,7 @@
     },
     "img": "img/items/strawberry.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "pitaya": {
     "name": {
@@ -9159,7 +9159,7 @@
     },
     "img": "img/items/pitaya.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "wild_fruit": {
     "name": {
@@ -9168,7 +9168,7 @@
     },
     "img": "img/items/wild_fruit.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "sun_flower_seed": {
     "name": {
@@ -9276,7 +9276,7 @@
     },
     "img": "img/items/banana.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "hot_water": {
     "name": {
@@ -9294,7 +9294,7 @@
     },
     "img": "img/items/sugar_soup.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "seeds": {
     "name": {
@@ -9330,7 +9330,7 @@
     },
     "img": "img/items/blue_berries.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "porridge": {
     "name": {
@@ -9349,7 +9349,7 @@
     },
     "img": "img/items/cereal.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "beef_stew": {
     "name": {
@@ -9368,7 +9368,7 @@
     },
     "img": "img/items/sorbet.png",
     "tier": null,
-    "category": "material"
+    "category": "food"
   },
   "worm_raw": {
     "name": {
@@ -9425,7 +9425,7 @@
     },
     "img": "img/items/antique_atlas.png",
     "tier": null,
-    "category": "material"
+    "category": "misc"
   },
   "way_stone": {
     "name": {
@@ -9434,7 +9434,7 @@
     },
     "img": "img/items/way_stone.png",
     "tier": "stone",
-    "category": "material"
+    "category": "block"
   },
   "hard_stick": {
     "name": {
@@ -9481,7 +9481,7 @@
     },
     "img": "img/items/skin_cream_bottle.png",
     "tier": null,
-    "category": "material"
+    "category": "tool"
   },
   "oxygen_bottle": {
     "name": {
@@ -9490,7 +9490,7 @@
     },
     "img": "img/items/oxygen_bottle.png",
     "tier": null,
-    "category": "material"
+    "category": "tool"
   },
   "sleep_bag": {
     "name": {
@@ -9499,7 +9499,7 @@
     },
     "img": "img/items/sleep_bag.png",
     "tier": null,
-    "category": "material"
+    "category": "misc"
   },
   "rusted_iron_hatchet": {
     "name": {
@@ -9738,7 +9738,7 @@
     },
     "img": "img/items/wood_cudgel.png",
     "tier": "wood",
-    "category": "material",
+    "category": "weapon",
     "max_durability": 200
   },
   "wood_club": {
@@ -9748,7 +9748,7 @@
     },
     "img": "img/items/wood_club.png",
     "tier": "wood",
-    "category": "material",
+    "category": "weapon",
     "max_durability": 400
   },
   "green_gelatinous_sphere": {
@@ -9813,7 +9813,7 @@
     },
     "img": "img/items/bone_cudgel.png",
     "tier": "bone",
-    "category": "material",
+    "category": "weapon",
     "max_durability": 300
   },
   "rusted_iron_sword": {
@@ -10163,7 +10163,7 @@
     },
     "img": "img/items/barrel_ancient_metal_upgrade.png",
     "tier": "ancient_metal",
-    "category": "material"
+    "category": "misc"
   },
   "hide": {
     "name": {
@@ -10181,7 +10181,7 @@
     },
     "img": "img/items/raincoat.png",
     "tier": null,
-    "category": "material"
+    "category": "armor"
   },
   "torch_gun": {
     "name": {
@@ -10190,7 +10190,7 @@
     },
     "img": "img/items/torch_gun.png",
     "tier": null,
-    "category": "material"
+    "category": "tool"
   },
   "towerrack": {
     "name": {
@@ -10199,7 +10199,7 @@
     },
     "img": "img/items/towerrack.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "bucket_stone": {
     "name": {
@@ -10226,7 +10226,7 @@
     },
     "img": "img/items/fluid_tank.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "bucket_clean_water": {
     "name": {
@@ -10271,7 +10271,7 @@
     },
     "img": "img/items/conveying_stone.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "crate": {
     "name": {
@@ -10280,7 +10280,7 @@
     },
     "img": "img/items/crate.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "kbook": {
     "name": {
@@ -10289,7 +10289,7 @@
     },
     "img": "img/items/kbook.png",
     "tier": null,
-    "category": "material"
+    "category": "misc"
   },
   "oak_slab": {
     "name": {

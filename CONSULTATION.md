@@ -106,9 +106,19 @@ A következő itemek valószínűleg a modban vannak, de nincsenek a wikiünkben
 
 ## 8. Duplikátum gyanús itemek
 
-- `fish_raw` (category=material) és `raw_fish` (category=food) — ugyanaz a neve és képe, de különböző ID. `fish_raw` nincs receptben. Törölhető?
+- `fish_raw` (category=food) és `raw_fish` (category=food) — ugyanaz a neve és képe, de különböző ID. `fish_raw` nincs receptben. Törölhető?
 - `oak_slab` és `oak_wood_slab_single` — mindkettő ugyanazt a képet mutatja. Alias?
 - `wood_slab_single` — ingredient több receptben (daylight_sensor, sign, barrel, grindstone), de nincs saját receptje. Vanilla MC item?
+
+## 9. Gyapjú duplikátumok (33 item)
+
+Két párhuzamos gyapjú ID-rendszer létezik:
+- **`wool_black`, `wool_blue`, ... `wool_yellow`** (16 szín) — ezek használatosak a legtöbb receptben (34–37 receptenként)
+- **`black_wool`, `blue_wool`, ... `yellow_wool`** (15 szín) — csak 8 receptben szerepelnek, lehet hogy régi nevek
+
+**Kérdés:** Melyik a helyes ID-rendszer? A `wool_*` variánsokat kell megtartani? A `*_wool` variánsok törölhetők?
+
+Megjegyzés: Van egy `wool` (sima fehér) és `white_wool_portal_stone` item is.
 
 ---
 
@@ -129,3 +139,6 @@ A következő itemek valószínűleg a modban vannak, de nincsenek a wikiünkben
 - `ItemExplorer.tsx` + `RecipesHub.tsx` `removed_in` badge kezelés hozzáadva
 - `RecipesHub.tsx` új szűrők: ✅ Aktuális / ⚠️ Eltávolított
 - STATION_LABELS javítva RecipesHub.tsx-ben (`stone_workbench`/`hard_workbench` → `hardstone_workbench`/`ancient_metal_workbench`/`silver_workbench`)
+- 50 item kategória javítva: 11 nyers hús → `food`, 12 gyümölcs/növény → `food`, 3 bunkó/bot → `weapon`, 2 viselet → `armor`, 5 tároló → `tool`, 2 → `misc`, 14 elhelyezhető blokk → `block`
+- 11 item kategória javítva: pcb/battery/kbook/book/runestore → `misc`, fluid_tank/conveying_stone/way_stone/template_lantern/glow_stone_torch/pillager_flag → `block`
+- 8 barrel upgrade kategória javítva: `material` → `misc`
