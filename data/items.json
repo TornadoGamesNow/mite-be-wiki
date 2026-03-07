@@ -8674,7 +8674,7 @@
     },
     "img": "img/items/sieve.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "runestore": {
     "name": {
@@ -8737,7 +8737,7 @@
     },
     "img": "img/items/ancient_metal_backpack_upgrade.png",
     "tier": "ancient_metal",
-    "category": "material"
+    "category": "misc"
   },
   "big_backpack_upgrade": {
     "name": {
@@ -8746,7 +8746,7 @@
     },
     "img": "img/items/big_backpack_upgrade.png",
     "tier": null,
-    "category": "material"
+    "category": "misc"
   },
   "copper_chest_upgrade": {
     "name": {
@@ -9728,7 +9728,7 @@
     },
     "img": "img/items/water_bag_mercury.png",
     "tier": "mercury",
-    "category": "material",
+    "category": "tool",
     "max_durability": 16
   },
   "wood_cudgel": {
