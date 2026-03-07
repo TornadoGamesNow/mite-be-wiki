@@ -293,6 +293,7 @@ const sidebarGroups = {
   <tr style="background:rgba(255,150,50,0.12)"><td><strong>38.2–39°C</strong></td><td>Gyengeség I + Láng + Lassítás I + 1 HP/perc</td></tr>
   <tr style="background:rgba(255,80,30,0.14)"><td><strong>39–45°C+</strong></td><td>Gyengeség I + Láng + Lassítás I + 1 HP/20mp</td></tr>
 </table>
+<div class="warning-box">🔥 <strong>Kemence közelség = túlmelegedés!</strong> Ha 2–3 blokkon belül állsz egy égő kemencéhez, a testhőmérsékleted átléphet 37.2°C-ot → <strong>Gyengeség I</strong>. Korai játékban ez megakadályozza az állatok elleni harcot is! Megoldás: állj távolabb a kemencétől, vagy kezeld a hőmérsékleted hűtéssel (víz közelében dolgozz, jégtartás).</div>
 <div class="tip-card">🌡️ <strong>Módosítók (melegítés):</strong> Láva (2 blokk közel): +0.1°C/35mp · Tűz (3 blokk közel): +0.1°C/50mp · Fáklya tartása: +0.1°C/60mp · Égés (ég a játékos): +0.1°C/5mp · Nether: állandó +0.4°C · Futás: +0.1°C/90mp (max 37°C-ig) · Sivatag nappali: +0.1°C/óra<br>🌡️ <strong>Módosítók (hűtés):</strong> Vízbe merülés: −0.1°C/5mp · Jég tartása: −0.1°C/25mp · Fagylalt evése: −0.1°C · Földre alvás: −0.2–0.4°C (véletlen)</div>
 
 <h4 id="curses">Átkok & Betegségek</h4>
@@ -391,6 +392,7 @@ const sidebarGroups = {
   <tr style="background:rgba(255,150,50,0.12)"><td><strong>80</strong></td><td>Gyengeség I + Lassítás I</td></tr>
   <tr style="background:rgba(255,80,30,0.14)"><td><strong>100+</strong></td><td>Gyengeség I + Lassítás I + Bányász Fáradtság + 1 HP/óra</td></tr>
 </table>
+<div class="warning-box">😴 <strong>Korai játék figyelmeztetés:</strong> A mutató óránként 1-et emelkedik — ez azt jelenti, hogy <strong>kb. 2,5 játéknaponként</strong> kötelező az alvás (60 óra = 60 pont). A Gyengeség I debuff nemcsak harcban hátrányos: <strong>az állatokat sem tudod megölni</strong> hatékonyan alatta! Ha nem alszol időben, a progresszió lelassul.</div>
 <div class="tip-card">😴 <strong>Földön alvás</strong> (CapsLock + jobb klikk): éjszakai, zárt tér, 2 blokk belmagasság szükséges. 36°C alatt vagy 38.2°C felett az alvás hatékonysága csökkent (5–40 pont helyett csupán). Nehéz módban: földön alvás után garantáltan kapsz legalább 1 debuffot.</div>
 <div class="warning-box">🌙 <strong>Az ágy NEM ugrik éjszakát!</strong> A MITE:BE-ben sem az ágyban alvás, sem a földre alvás nem ugorja át az éjszakát — csak az álmosságot csökkenti. Az éjszakát át kell vészelni!</div>
 <div class="tip-card">🛏️ <strong>Egyszerű Alvó Zsák</strong> (v0.8+): 3× azonos színű gyapjú → Egyszerű Alvó Zsák (16 szín). Bárhová lerakható, jobb klikkel le lehet feküdni. <strong>Nem állít újraindulási pontot.</strong> Fő előnye: elkerülhetők a földre alvás debuffjai (Lassítás, Hideg, Éhség stb.).</div>
@@ -1756,6 +1758,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="false"><h3>Tudáskönyvek</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
 <p>A Tudáskönyv (Knowledge Book) egy speciális tárgy, amely haladó receptek feloldására szolgál. Amíg nem rendelkezel a megfelelő tudáskönyvvel, az adott recept nem jelenik meg sem a beépített receptkönyvben, sem a munkaasztalon.</p>
+<div class="warning-box">🔒 <strong>Kemény zárolás (Hard Gate)!</strong> A Tudáskönyv <em>nem opcionális</em> — ha egy recept Tudáskönyvhöz kötött, akkor <strong>még akkor sem tudod megcraftolni, ha minden alapanyagod megvan!</strong> Pl. a Hívóharang (Calling Bell) kiváló bányász eszköz, de Tudáskönyv nélkül lehetetlen elkészíteni. A könyveket <strong>Pillager Outpost ládákban</strong> kell megtalálni — nincs garancia arra, hogy közel van egy outpost.</div>
 
 <h3>Hogyan szerezhető meg?</h3>
 <p>A tudáskönyvek <strong>ládákban</strong> találhatók véletlenszerű eséllyel. Nemcsak a Földalatti Világ (Underworld) dungeon ládáiban, hanem a felszíni világ generált struktúráiban is megtalálhatók — például <strong>Pillager Outpost</strong>-okban (amelyek komoly tornyokkal és épületekkel rendelkező települések lehetnek).</p>
@@ -1948,6 +1951,14 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <div class="tip-card">💎 <strong>Mithril szerzés spawnerből:</strong> Az Underground szörnyidéző kamarákban (<em>spawner</em> szobákban) készen talált <strong>mithril rudak és blokkok</strong> is előfordulnak — ez hatékonyabb lehet, mint vakon bányászni. Pillager tábor mechanizmus (lásd alább) szintén nagy mennyiségű mithril forrás!</div>
 
 <h3>Pillager Tábor — Rejtett Kincs</h3>
+<div class="warning-box">⚔️ <strong>v0.9.0 Outpost nehézség figyelmeztetés!</strong> A v0.9.0-ban az outpost belseje <strong>drasztikusan megnehezedett</strong>:
+<ul style="margin:6px 0 0 0">
+  <li><strong>10+ Vindicator (Fosztogató) spawner</strong> az épületen belül — 2-3 lépésenként egy</li>
+  <li>A Fosztogatók <strong>képesek blokkokat bontani</strong> (elásnak hozzád!)</li>
+  <li>Gyorsabb spawn ráta mint korábban</li>
+  <li>Jutalmak csökkentve: a <strong>Szénkristály eltávolítva</strong> a lootból, helyette kevésbé értékes ásványok</li>
+</ul>
+<strong>Ne menj be felkészületlenül</strong> — bűvített arany alma és minimum Keménykő/Ősi Fém felszerelés szükséges!</div>
 <div class="tip-card">🏰 <strong>Pillager Outpost Portál (fővilágból):</strong> A fővilágban ás le az alapkő-rétegig, majd építs ott <strong>Obszidián portált</strong> és gyújtsd meg Tűzütővel. Ez az underground portál közvetlenül egy <strong>Pillager Outpost torony tetejére</strong> visz — ajánlott <strong>bűvített arany almát</strong> vinni magaddal az erős ellenfelek miatt!</div>
 <div class="tip-card">⚙️ <strong>Pillager tábor föld alatti mechanizmus:</strong> Az underground Pillager táborban <strong>üllőket kell lerakni a tábor körül + egy kart (lever) aktiválni a közepén</strong> → ez megnyit egy földalatti kamrát, amely <strong>Adamantium, Mithril és Redstone blokkokat</strong> tartalmaz. Ez az egyik legfőbb mithril forrás a játékban!</div>
 
@@ -2333,6 +2344,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
   <tr style="background:rgba(255,150,50,0.12)"><td><strong>38.2–39°C</strong></td><td>Weakness I + Fire + Slowness I + 1 HP/minute</td></tr>
   <tr style="background:rgba(255,80,30,0.14)"><td><strong>39–45°C+</strong></td><td>Weakness I + Fire + Slowness I + 1 HP/20s</td></tr>
 </table>
+<div class="warning-box">🔥 <strong>Furnace proximity = overheating!</strong> Standing within 2–3 blocks of a burning furnace can push your body temperature above 37.2°C → <strong>Weakness I</strong>. In early game, this makes fighting animals impossible too! Fix: step away from the furnace while it's running, or manage your temperature with cooling (work near water, hold ice).</div>
 <div class="tip-card">🌡️ <strong>Modifiers (warming):</strong> Lava (within 2 blocks): +0.1°C/35s · Fire (within 3 blocks): +0.1°C/50s · Holding a torch: +0.1°C/60s · On fire (burning): +0.1°C/5s · Nether: constant +0.4°C · Sprinting: +0.1°C/90s (capped at 37°C) · Desert daytime: +0.1°C/hour<br>🌡️ <strong>Modifiers (cooling):</strong> Submerging in water: −0.1°C/5s · Holding ice: −0.1°C/25s · Eating ice cream: −0.1°C · Sleeping on ground: −0.2–0.4°C (random)</div>
 
 <h4 id="curses">Curses &amp; Ailments</h4>
@@ -2430,6 +2442,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
   <tr style="background:rgba(255,150,50,0.12)"><td><strong>80</strong></td><td>Weakness I + Slowness I</td></tr>
   <tr style="background:rgba(255,80,30,0.14)"><td><strong>100+</strong></td><td>Weakness I + Slowness I + Mining Fatigue + 1 HP/hour</td></tr>
 </table>
+<div class="warning-box">😴 <strong>Early game warning:</strong> The meter rises by 1 per hour — meaning you <strong>must sleep roughly every 2.5 in-game days</strong> (60 hours = 60 points). Weakness I isn't just bad for combat: <strong>you can't effectively kill animals either!</strong> If you skip sleep, early-game progression slows to a crawl.</div>
 <div class="tip-card">😴 <strong>Sleeping on the ground</strong> (CapsLock + right-click): requires night, enclosed space, 2-block ceiling height. Below 36°C or above 38.2°C, sleep efficiency is reduced. Hard mode: sleeping on the ground always inflicts at least 1 debuff.</div>
 <div class="warning-box">🌙 <strong>Beds do NOT skip the night!</strong> In MITE:BE, neither sleeping in a bed nor sleeping on the ground skips the night — it only reduces drowsiness. You must survive through the night!</div>
 <div class="tip-card">🛏️ <strong>Simple Sleeping Bag</strong> (v0.8+): 3× matching-color wool → Simple Sleeping Bag (16 colors). Place anywhere, right-click to lie down. <strong>Does not set your respawn point.</strong> Main benefit: avoids the ground-sleep debuffs (Slowness, Cold, Hunger, etc.).</div>
@@ -3784,6 +3797,8 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="false"><h3>Knowledge Books</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body"><div class="collapsible-body-inner">
 <p>The Knowledge Book is a special item used to unlock advanced crafting recipes. Until you have the required knowledge book, the recipe won't appear in the built-in recipe book or on the workbench.</p>
 
+<div class="warning-box">🔒 <strong>Hard Gate Warning!</strong> The Knowledge Book is a <strong>hard prerequisite</strong> — even if you have all the ingredients, <strong>you cannot craft the recipe without the corresponding Knowledge Book</strong>. You must find and use (right-click to consume) the book first. Without it, the recipe simply doesn't exist in your crafting interface!</div>
+
 <h3>How to obtain?</h3>
 <p>Knowledge books are found in <strong>chests</strong> with a random drop chance. Not only in Underworld dungeon chests, but also in overworld generated structures — such as <strong>Pillager Outposts</strong> (which can be substantial settlements with tall towers and proper buildings).</p>
 
@@ -3973,6 +3988,8 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 </ul></div>
 <div class="tip-card">⚔️ <strong>Best weapon for the Underground (budget-friendly and durable):</strong> <strong>High-Carbon Steel War Hammer + Undead Slayer V</strong> one-shots skeletons and most undead. Made from cheap materials, very durable, and can also hit Earth Elementals (Stone Golems). The enchantment can be farmed at a max emerald enchanting table.</div>
 <div class="tip-card">💎 <strong>Efficient Mithril farming:</strong> Underground <strong>spawner rooms</strong> sometimes contain ready-made mithril ingots/blocks — more efficient than random mining. The Pillager camp underground mechanism (see below) is also a major mithril source!</div>
+
+<div class="warning-box">⚔️ <strong>v0.9.0 Outpost Difficulty Warning!</strong> Since v0.9.0, Pillager Outposts are significantly harder: <strong>10+ Vindicator spawners</strong> are active simultaneously, and enemies can <strong>break blocks</strong> — they'll dig through your barricades. The previously lootable <strong>Carbon Crystal has been removed</strong> from the reward pool. Approach with top-tier gear and enchanted golden apples. Consider clearing spawners before looting!</div>
 
 <h3>Pillager Camp — Hidden Treasure</h3>
 <div class="tip-card">🏰 <strong>Pillager Outpost Portal (from the overworld):</strong> Dig down to bedrock in the overworld, build an <strong>Obsidian portal</strong> there, and light it with Flint and Steel. This underground portal teleports you directly to the <strong>top of a Pillager Outpost tower</strong> — bring <strong>enchanted golden apples</strong> for the tough enemies!</div>
