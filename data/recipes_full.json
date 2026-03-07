@@ -29129,9 +29129,9 @@
     "shaped": true,
     "pattern": [
       [
-        "white_wool",
-        "white_wool",
-        "white_wool"
+        "wool",
+        "wool",
+        "wool"
       ],
       [
         "_",
@@ -29917,9 +29917,9 @@
         "_"
       ],
       [
-        "oak_planks",
-        "oak_planks",
-        "oak_planks"
+        "planks_oak",
+        "planks_oak",
+        "planks_oak"
       ],
       [
         "_",
@@ -31551,7 +31551,7 @@
         "_"
       ],
       [
-        "chicken_egg",
+        "egg",
         "glass_bottle",
         "green_gelatinous_sphere"
       ],
@@ -31964,19 +31964,19 @@
     "shaped": true,
     "pattern": [
       [
-        "eye_of_ender",
-        "eye_of_ender",
-        "eye_of_ender"
+        "ender_eye",
+        "ender_eye",
+        "ender_eye"
       ],
       [
-        "eye_of_ender",
-        "eye_of_ender",
-        "eye_of_ender"
+        "ender_eye",
+        "ender_eye",
+        "ender_eye"
       ],
       [
-        "eye_of_ender",
-        "eye_of_ender",
-        "eye_of_ender"
+        "ender_eye",
+        "ender_eye",
+        "ender_eye"
       ]
     ]
   }

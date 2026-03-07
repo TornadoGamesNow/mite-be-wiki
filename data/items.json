@@ -9491,5 +9491,23 @@
     "img": "img/items/kbook.png",
     "tier": null,
     "category": "material"
+  },
+  "oak_slab": {
+    "name": {
+      "hu": "Tölgyfa Lap",
+      "en": "Oak Slab"
+    },
+    "img": "img/items/oak_wood_slab_single.png",
+    "tier": null,
+    "category": "block"
+  },
+  "water_bottle": {
+    "name": {
+      "hu": "Vizes Palack",
+      "en": "Water Bottle"
+    },
+    "img": "img/items/glass_bottle.png",
+    "tier": null,
+    "category": "misc"
   }
 }
