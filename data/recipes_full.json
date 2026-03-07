@@ -30472,55 +30472,6 @@
     "removed_version": "pre-0.5.5"
   },
   {
-    "id": "campfire_32050",
-    "item_num": 32050,
-    "output": "campfire",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 330,
-    "skills": [],
-    "ingredients": [
-      "stick",
-      "stick",
-      [
-        "planks_oak",
-        "planks_spruce",
-        "planks_birch",
-        "planks_jungle"
-      ],
-      [
-        "log_oak",
-        "log_spruce",
-        "log_birch",
-        "log_jungle"
-      ],
-      [
-        "planks_oak",
-        "planks_spruce",
-        "planks_birch",
-        "planks_jungle"
-      ]
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "stick",
-        "_",
-        "stick"
-      ],
-      [
-        "planks_oak",
-        "_",
-        "planks_oak"
-      ]
-    ]
-  },
-  {
     "id": "enchanting_table_emerald_32051",
     "item_num": 32051,
     "output": "enchanting_table_emerald",
@@ -34280,38 +34231,6 @@
         null,
         null,
         null
-      ]
-    ]
-  },
-  {
-    "id": "campfire_841204",
-    "item_num": 841204,
-    "output": "campfire",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "stick",
-      "planks_oak",
-      "log_oak"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        null,
-        null,
-        null
-      ],
-      [
-        "stick",
-        null,
-        "stick"
-      ],
-      [
-        "planks_oak",
-        "log_oak",
-        "planks_oak"
       ]
     ]
   },

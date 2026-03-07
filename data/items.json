@@ -1190,7 +1190,7 @@
       "hu": "Tábortűz",
       "en": "Campfire"
     },
-    "img": "img/blocks/campfire.png",
+    "img": "img/items/campfire_idle.png",
     "tier": null,
     "category": "block"
   },
