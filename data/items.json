@@ -1246,7 +1246,7 @@
     },
     "img": "img/blocks/crafting_table_front.png",
     "tier": "flint",
-    "category": "block"
+    "category": "station"
   },
   "copper_workbench": {
     "name": {
@@ -1255,7 +1255,7 @@
     },
     "img": "img/blocks/workbench_copper.png",
     "tier": "copper",
-    "category": "block"
+    "category": "station"
   },
   "silver_workbench": {
     "name": {
@@ -1264,7 +1264,7 @@
     },
     "img": "img/blocks/workbench_silver.png",
     "tier": "silver",
-    "category": "block"
+    "category": "station"
   },
   "gold_workbench": {
     "name": {
@@ -1273,7 +1273,7 @@
     },
     "img": "img/blocks/workbench_gold.png",
     "tier": "gold",
-    "category": "block"
+    "category": "station"
   },
   "iron_workbench": {
     "name": {
@@ -1282,7 +1282,7 @@
     },
     "img": "img/blocks/workbench_iron.png",
     "tier": "iron",
-    "category": "block"
+    "category": "station"
   },
   "mithril_workbench": {
     "name": {
@@ -1291,7 +1291,7 @@
     },
     "img": "img/blocks/workbench_mithril.png",
     "tier": "mithril",
-    "category": "block"
+    "category": "station"
   },
   "adamantium_workbench": {
     "name": {
@@ -1300,7 +1300,7 @@
     },
     "img": "img/blocks/workbench_adamantium.png",
     "tier": "adamantium",
-    "category": "block"
+    "category": "station"
   },
   "water_bag": {
     "name": {
@@ -1672,7 +1672,7 @@
     },
     "img": "img/blocks/workbench_hard.png",
     "tier": "hard",
-    "category": "block"
+    "category": "station"
   },
   "ancient_metal_workbench": {
     "name": {
@@ -1681,7 +1681,7 @@
     },
     "img": "img/blocks/workbench_ancient_metal.png",
     "tier": "ancient_metal",
-    "category": "block"
+    "category": "station"
   },
   "silver_battle_axe": {
     "name": {
@@ -8692,7 +8692,7 @@
     },
     "img": "img/items/blast_furnace.png",
     "tier": null,
-    "category": "block"
+    "category": "station"
   },
   "enchantment_table": {
     "name": {
