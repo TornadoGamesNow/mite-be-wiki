@@ -18,6 +18,7 @@ type FullRecipe = {
 
 type OutputGroup = {
   outputId: string;
+  allOutputIds: string[];
   recipes: FullRecipe[];
   hasShapedVariant: boolean;
   hasShapelessVariant: boolean;
@@ -51,6 +52,17 @@ function getItemName(id: string, lang: 'hu' | 'en'): string {
 
 function getItemImg(id: string): string {
   return items[id]?.img || '';
+}
+
+const WOOD_PREFIX_EN = ['Oak', 'Spruce', 'Birch', 'Jungle'];
+const WOOD_PREFIX_HU = ['Tölgy', 'Luc', 'Nyír', 'Dzsungel'];
+function genericItemName(ids: string[], lang: 'hu' | 'en'): string {
+  const name = getItemName(ids[0], lang);
+  const prefixes = lang === 'en' ? WOOD_PREFIX_EN : WOOD_PREFIX_HU;
+  for (const p of prefixes) {
+    if (name.startsWith(p + ' ')) return name.slice(p.length + 1);
+  }
+  return name;
 }
 
 function flattenIngredient(ing: string | string[]): string {
@@ -238,11 +250,11 @@ function FurnaceDetail({ recipe }: { recipe: FullRecipe }) {
 // Fix szélességű ingredient blokk — minden recept típusnál ugyanott lesz a result ikon
 const INGR_W = 96; // 3×3 grid szélessége: 3×28 + 2×1(gap) + 2×3(padding) + 2×1(border) ≈ 96px
 
-function MiniGrid({ recipe, outputId, outputQty }: { recipe: FullRecipe; outputId: string; outputQty?: number }) {
+function MiniGrid({ recipe, outputId, outputQty }: { recipe: FullRecipe; outputId: string | string[]; outputQty?: number }) {
   const resultSlot = (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2, flexShrink: 0 }}>
       <div style={{ width: RESULT_ICON, height: RESULT_ICON, background: '#6b6b3b', border: '2px solid', borderColor: '#f0c040 #886600 #886600 #f0c040', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <ItemIcon id={outputId} size={RESULT_ICON - 8} />
+        <CyclingItemIcon id={outputId} size={RESULT_ICON - 8} />
       </div>
       {outputQty && outputQty > 1 && <span style={{ fontSize: '.7em', fontWeight: 700, color: 'var(--gold)', lineHeight: 1 }}>×{outputQty}</span>}
     </div>
@@ -321,7 +333,8 @@ function groupByOutput(recs: FullRecipe[]): OutputGroup[] {
     const hasShaped = rs.some(r => r.shaped);
     const hasShapeless = rs.some(r => !r.shaped);
     const primary = rs.find(r => r.shaped) || rs[0];
-    groups.push({ outputId, recipes: rs, hasShapedVariant: hasShaped, hasShapelessVariant: hasShapeless, primaryRecipe: primary });
+    const allOutputIds = [...new Set(rs.flatMap(r => Array.isArray(r.output) ? r.output : [r.output]))];
+    groups.push({ outputId, allOutputIds, recipes: rs, hasShapedVariant: hasShaped, hasShapelessVariant: hasShapeless, primaryRecipe: primary });
   }
   return groups.sort((a, b) => String(a.outputId).localeCompare(String(b.outputId)));
 }
@@ -364,7 +377,7 @@ function getUsedInGroups(ingredientId: string): OutputGroup[] {
 
 // Groups that PRODUCE a given item (i.e., it IS the output)
 function getCraftingGroups(itemId: string): OutputGroup[] {
-  return allGroups.filter(g => g.outputId === itemId);
+  return allGroups.filter(g => g.allOutputIds.includes(itemId));
 }
 
 // Merge alias groups: same-named items where one has removed_in → merge into active group
@@ -458,12 +471,14 @@ function SubTabs({ tabs, active, onSelect }: {
 
 // ── Ingredient row ────────────────────────────────────────────────────────
 function IngredientRow({ id, lang, onClickIngredient }: {
-  id: string; lang: 'hu' | 'en'; onClickIngredient: (id: string) => void;
+  id: string | string[]; lang: 'hu' | 'en'; onClickIngredient: (id: string) => void;
 }) {
+  const primaryId = Array.isArray(id) ? id[0] : id;
+  const displayName = Array.isArray(id) ? genericItemName(id, lang) : getItemName(id, lang);
   const [hov, setHov] = useState(false);
   return (
     <div
-      onClick={() => onClickIngredient(id)}
+      onClick={() => onClickIngredient(primaryId)}
       onMouseEnter={() => setHov(true)}
       onMouseLeave={() => setHov(false)}
       style={{
@@ -479,9 +494,9 @@ function IngredientRow({ id, lang, onClickIngredient }: {
         border: '1px solid #555', borderRadius: 4,
         display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
       }}>
-        <ItemIcon id={id} size={26} />
+        <CyclingItemIcon id={id} size={26} />
       </div>
-      <span style={{ fontSize: '.84em', lineHeight: 1.2, flex: 1 }}>{getItemName(id, lang)}</span>
+      <span style={{ fontSize: '.84em', lineHeight: 1.2, flex: 1 }}>{displayName}</span>
       {hov && <span style={{ fontSize: '.7em', color: 'var(--text2)', flexShrink: 0 }}>→</span>}
     </div>
   );
@@ -505,7 +520,7 @@ function RecipeListItem({ group, lang, onSelect }: {
         transition: 'background .1s, border-color .1s',
       }}
     >
-      <ItemIcon id={group.outputId} size={28} />
+      <CyclingItemIcon id={group.primaryRecipe.output} size={28} />
       <div style={{ flex: 1, minWidth: 0 }}>
         <div style={{ fontSize: '.85em', fontWeight: 500 }}>
           {getItemName(group.outputId, lang)}
@@ -701,7 +716,7 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
             )}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 18 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                <ItemIcon id={group.outputId} size={48} />
+                <CyclingItemIcon id={group.primaryRecipe.output} size={48} />
                 <div>
                   <div style={{ fontWeight: 700, fontSize: '1.18em', lineHeight: 1.25 }}>
                     {getItemName(group.outputId, lang)}
@@ -728,6 +743,13 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                 const extra = flat.length > 9 ? flat.length - 9 : 0;
                 const ingCounts = new Map<string, number>();
                 for (const id of flat) ingCounts.set(id, (ingCounts.get(id) || 0) + 1);
+                // Unique ingredients preserving array type for display
+                const seenIngKeys = new Set<string>();
+                const uniqueIngs: (string | string[])[] = [];
+                for (const ing of r.ingredients) {
+                  const key = Array.isArray(ing) ? ing[0] : ing;
+                  if (!seenIngKeys.has(key)) { seenIngKeys.add(key); uniqueIngs.push(ing); }
+                }
 
                 return (
                   <div key={i} style={{ paddingTop: i > 0 ? 20 : 0, borderTop: i > 0 ? '1px solid var(--surface2)' : 'none' }}>
@@ -775,7 +797,7 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                           border: '2px solid', borderColor: '#f0c040 #886600 #886600 #f0c040',
                           display: 'flex', alignItems: 'center', justifyContent: 'center',
                         }}>
-                          <ItemIcon id={group.outputId} size={44} />
+                          <CyclingItemIcon id={r.output} size={44} />
                         </div>
                         {r.outputQty > 1 && <span style={{ fontSize: '.9em', fontWeight: 700, color: 'var(--gold)' }}>×{r.outputQty}</span>}
                       </div>
@@ -824,18 +846,22 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                       </span>
                     </div>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-                      {[...ingCounts.entries()].map(([id, cnt]) => (
-                        <div key={id} style={{ display: 'flex', alignItems: 'center' }}>
-                          {cnt > 1 ? (
-                            <span style={{ fontSize: '.8em', color: 'var(--gold)', minWidth: 26, textAlign: 'right', paddingRight: 6, flexShrink: 0 }}>
-                              {cnt}×
-                            </span>
-                          ) : (
-                            <span style={{ minWidth: 26, flexShrink: 0 }} />
-                          )}
-                          <IngredientRow id={id} lang={lang} onClickIngredient={setItemDetailId} />
-                        </div>
-                      ))}
+                      {uniqueIngs.map((ing) => {
+                        const key = Array.isArray(ing) ? ing[0] : ing;
+                        const cnt = ingCounts.get(key) || 1;
+                        return (
+                          <div key={key} style={{ display: 'flex', alignItems: 'center' }}>
+                            {cnt > 1 ? (
+                              <span style={{ fontSize: '.8em', color: 'var(--gold)', minWidth: 26, textAlign: 'right', paddingRight: 6, flexShrink: 0 }}>
+                                {cnt}×
+                              </span>
+                            ) : (
+                              <span style={{ minWidth: 26, flexShrink: 0 }} />
+                            )}
+                            <IngredientRow id={ing} lang={lang} onClickIngredient={setItemDetailId} />
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 );
@@ -1407,7 +1433,10 @@ export default function RecipesHub() {
     return allGroups.filter(g => {
       if (keyword) {
         const kw = keyword.toLowerCase();
-        if (!getItemName(g.outputId, lang).toLowerCase().includes(kw) && !g.outputId.includes(kw)) return false;
+        const matches = g.allOutputIds.some(id =>
+          id.includes(kw) || getItemName(id, lang).toLowerCase().includes(kw)
+        );
+        if (!matches) return false;
       }
       if (stationFilter && !g.recipes.some(r => r.station === stationFilter)) return false;
       if (skillFilter && !g.recipes.some(r => r.skills.includes(skillFilter))) return false;
@@ -1429,7 +1458,7 @@ export default function RecipesHub() {
   }, [keyword, stationFilter, skillFilter, ingredientFilter, typeFilter, lang]);
 
   const totalRecipeCount = filteredGroups.reduce((s, g) => s + g.recipes.length, 0);
-  const selectedGroup = selectedOutputId ? allGroups.find(x => x.outputId === selectedOutputId) ?? null : null;
+  const selectedGroup = selectedOutputId ? allGroups.find(x => x.allOutputIds.includes(selectedOutputId)) ?? null : null;
 
   // Scroll to highlighted card after sandbox→browse navigation
   useEffect(() => {
@@ -1576,7 +1605,7 @@ export default function RecipesHub() {
                     }
                   }}
                 >
-                  <MiniGrid recipe={g.primaryRecipe} outputId={g.outputId} outputQty={g.primaryRecipe.outputQty} />
+                  <MiniGrid recipe={g.primaryRecipe} outputId={g.primaryRecipe.output} outputQty={g.primaryRecipe.outputQty} />
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 4 }}>
                     <span title={displayName} style={{ fontSize: '.72em', lineHeight: 1.2, flex: 1, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
                       {displayName}

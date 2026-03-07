@@ -177,7 +177,12 @@
   {
     "id": "planks_oak_9",
     "item_num": 5,
-    "output": "planks_oak",
+    "output": [
+      "planks_oak",
+      "planks_spruce",
+      "planks_birch",
+      "planks_jungle"
+    ],
     "outputQty": 4,
     "station": "flint_workbench",
     "difficulty": 120,
@@ -185,97 +190,12 @@
       "carpentry"
     ],
     "ingredients": [
-      "log_oak"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "planks_spruce_10",
-    "item_num": 5,
-    "output": "planks_spruce",
-    "outputQty": 4,
-    "station": "flint_workbench",
-    "difficulty": 120,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "log_spruce"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "planks_birch_11",
-    "item_num": 5,
-    "output": "planks_birch",
-    "outputQty": 4,
-    "station": "flint_workbench",
-    "difficulty": 120,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "log_birch"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "planks_jungle_12",
-    "item_num": 5,
-    "output": "planks_jungle",
-    "outputQty": 4,
-    "station": "flint_workbench",
-    "difficulty": 120,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "log_jungle"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "planks_oak_13",
-    "item_num": 5,
-    "output": "planks_oak",
-    "outputQty": 4,
-    "station": "flint_workbench",
-    "difficulty": 120,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "log_oak"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "planks_oak_14",
-    "item_num": 5,
-    "output": "planks_oak",
-    "outputQty": 4,
-    "station": "flint_workbench",
-    "difficulty": 120,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "log_oak"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "planks_oak_15",
-    "item_num": 5,
-    "output": "planks_oak",
-    "outputQty": 4,
-    "station": "flint_workbench",
-    "difficulty": 120,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "log_oak"
+      [
+        "log_oak",
+        "log_spruce",
+        "log_birch",
+        "log_jungle"
+      ]
     ],
     "shaped": false
   },
@@ -1496,7 +1416,12 @@
   {
     "id": "oak_wood_stairs_61",
     "item_num": 53,
-    "output": "oak_wood_stairs",
+    "output": [
+      "oak_wood_stairs",
+      "spruce_wood_stairs",
+      "birch_wood_stairs",
+      "jungle_wood_stairs"
+    ],
     "outputQty": 4,
     "station": "flint_workbench",
     "difficulty": 480,
@@ -1504,12 +1429,42 @@
       "carpentry"
     ],
     "ingredients": [
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak"
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ]
     ],
     "shaped": false
   },
@@ -2672,7 +2627,12 @@
   {
     "id": "oak_wood_slab_single_149",
     "item_num": 126,
-    "output": "oak_wood_slab_single",
+    "output": [
+      "oak_wood_slab_single",
+      "spruce_wood_slab_single",
+      "birch_wood_slab_single",
+      "jungle_wood_slab_single"
+    ],
     "outputQty": 6,
     "station": "flint_workbench",
     "difficulty": 240,
@@ -2680,60 +2640,24 @@
       "carpentry"
     ],
     "ingredients": [
-      "planks_oak",
-      "planks_oak",
-      "planks_oak"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "birch_wood_slab_single_150",
-    "item_num": 126,
-    "output": "birch_wood_slab_single",
-    "outputQty": 6,
-    "station": "flint_workbench",
-    "difficulty": 240,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "planks_birch",
-      "planks_birch",
-      "planks_birch"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "spruce_wood_slab_single_151",
-    "item_num": 126,
-    "output": "spruce_wood_slab_single",
-    "outputQty": 6,
-    "station": "flint_workbench",
-    "difficulty": 240,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "jungle_wood_slab_single_152",
-    "item_num": 126,
-    "output": "jungle_wood_slab_single",
-    "outputQty": 6,
-    "station": "flint_workbench",
-    "difficulty": 240,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle"
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ]
     ],
     "shaped": false
   },
@@ -2842,66 +2766,6 @@
         "emerald"
       ]
     ]
-  },
-  {
-    "id": "spruce_wood_stairs_157",
-    "item_num": 134,
-    "output": "spruce_wood_stairs",
-    "outputQty": 4,
-    "station": "flint_workbench",
-    "difficulty": 480,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "birch_wood_stairs_158",
-    "item_num": 135,
-    "output": "birch_wood_stairs",
-    "outputQty": 4,
-    "station": "flint_workbench",
-    "difficulty": 480,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "jungle_wood_stairs_159",
-    "item_num": 136,
-    "output": "jungle_wood_stairs",
-    "outputQty": 4,
-    "station": "flint_workbench",
-    "difficulty": 480,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle"
-    ],
-    "shaped": false
   },
   {
     "id": "beacon_160",
@@ -26725,86 +26589,68 @@
     "shaped": false
   },
   {
-    "id": "jungle_wood_crate_1245",
-    "item_num": 31753,
-    "output": "jungle_wood_crate",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 640,
-    "skills": [],
-    "ingredients": [
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "log_jungle",
-      "chest",
-      "log_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "birch_wood_crate_1246",
-    "item_num": 31754,
-    "output": "birch_wood_crate",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 640,
-    "skills": [],
-    "ingredients": [
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "log_birch",
-      "chest",
-      "log_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "spruce_wood_crate_1247",
-    "item_num": 31755,
-    "output": "spruce_wood_crate",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 640,
-    "skills": [],
-    "ingredients": [
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "log_spruce",
-      "chest",
-      "log_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce"
-    ],
-    "shaped": false
-  },
-  {
     "id": "oak_wood_crate_1248",
     "item_num": 31756,
-    "output": "oak_wood_crate",
+    "output": [
+      "oak_wood_crate",
+      "spruce_wood_crate",
+      "birch_wood_crate",
+      "jungle_wood_crate"
+    ],
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 640,
     "skills": [],
     "ingredients": [
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "log_oak",
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "log_oak",
+        "log_spruce",
+        "log_birch",
+        "log_jungle"
+      ],
       "chest",
-      "log_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak"
+      [
+        "log_oak",
+        "log_spruce",
+        "log_birch",
+        "log_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ]
     ],
     "shaped": false
   },
@@ -27734,7 +27580,12 @@
   {
     "id": "oak_sieve_1296",
     "item_num": 31967,
-    "output": "oak_sieve",
+    "output": [
+      "oak_sieve",
+      "spruce_sieve",
+      "birch_sieve",
+      "jungle_sieve"
+    ],
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 2300,
@@ -27742,117 +27593,24 @@
       "carpentry"
     ],
     "ingredients": [
-      "log_oak",
-      "planks_oak",
-      "log_oak",
-      "stick",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
       [
-        "_",
-        "_",
-        "_"
+        "log_oak",
+        "log_spruce",
+        "log_birch",
+        "log_jungle"
       ],
       [
-        "stick",
-        "_",
-        "stick"
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
       ],
       [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "spruce_sieve_1297",
-    "item_num": 31968,
-    "output": "spruce_sieve",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 2300,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "log_spruce",
-      "planks_spruce",
-      "log_spruce",
-      "stick",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
+        "log_oak",
+        "log_spruce",
+        "log_birch",
+        "log_jungle"
       ],
-      [
-        "stick",
-        "_",
-        "stick"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "birch_sieve_1298",
-    "item_num": 31969,
-    "output": "birch_sieve",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 2300,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "log_birch",
-      "planks_birch",
-      "log_birch",
-      "stick",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "stick",
-        "_",
-        "stick"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "jungle_sieve_1299",
-    "item_num": 31970,
-    "output": "jungle_sieve",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 2300,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "log_jungle",
-      "planks_jungle",
-      "log_jungle",
       "stick",
       "stick"
     ],
@@ -34747,13 +34505,23 @@
   {
     "id": "oak_sieve_841212",
     "item_num": 841212,
-    "output": "oak_sieve",
+    "output": [
+      "oak_sieve",
+      "spruce_sieve",
+      "birch_sieve",
+      "jungle_sieve"
+    ],
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "log_oak",
+      [
+        "log_oak",
+        "log_spruce",
+        "log_birch",
+        "log_jungle"
+      ],
       "string",
       "stick"
     ],
@@ -34779,14 +34547,29 @@
   {
     "id": "oak_sieve_841213",
     "item_num": 841213,
-    "output": "oak_sieve",
+    "output": [
+      "oak_sieve",
+      "spruce_sieve",
+      "birch_sieve",
+      "jungle_sieve"
+    ],
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "log_oak",
-      "planks_oak",
+      [
+        "log_oak",
+        "log_spruce",
+        "log_birch",
+        "log_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
       "stick"
     ],
     "shaped": true,
@@ -34795,166 +34578,6 @@
         "log_oak",
         "planks_oak",
         "log_oak"
-      ],
-      [
-        "stick",
-        null,
-        "stick"
-      ],
-      [
-        null,
-        null,
-        null
-      ]
-    ]
-  },
-  {
-    "id": "birch_sieve_841214",
-    "item_num": 841214,
-    "output": "birch_sieve",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "log_birch",
-      "string",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "log_birch",
-        "string",
-        "log_birch"
-      ],
-      [
-        "stick",
-        null,
-        "stick"
-      ],
-      [
-        null,
-        null,
-        null
-      ]
-    ]
-  },
-  {
-    "id": "birch_sieve_841215",
-    "item_num": 841215,
-    "output": "birch_sieve",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "log_birch",
-      "planks_birch",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "log_birch",
-        "planks_birch",
-        "log_birch"
-      ],
-      [
-        "stick",
-        null,
-        "stick"
-      ],
-      [
-        null,
-        null,
-        null
-      ]
-    ]
-  },
-  {
-    "id": "jungle_sieve_841216",
-    "item_num": 841216,
-    "output": "jungle_sieve",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "log_jungle",
-      "string",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "log_jungle",
-        "string",
-        "log_jungle"
-      ],
-      [
-        "stick",
-        null,
-        "stick"
-      ],
-      [
-        null,
-        null,
-        null
-      ]
-    ]
-  },
-  {
-    "id": "jungle_sieve_841217",
-    "item_num": 841217,
-    "output": "jungle_sieve",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "log_jungle",
-      "planks_jungle",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "log_jungle",
-        "planks_jungle",
-        "log_jungle"
-      ],
-      [
-        "stick",
-        null,
-        "stick"
-      ],
-      [
-        null,
-        null,
-        null
-      ]
-    ]
-  },
-  {
-    "id": "spruce_sieve_841218",
-    "item_num": 841218,
-    "output": "spruce_sieve",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "log_spruce",
-      "string",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "log_spruce",
-        "string",
-        "log_spruce"
       ],
       [
         "stick",
@@ -41289,38 +40912,6 @@
         "towerrack",
         null,
         "towerrack"
-      ],
-      [
-        null,
-        null,
-        null
-      ]
-    ]
-  },
-  {
-    "id": "spruce_sieve_841434",
-    "item_num": 841434,
-    "output": "spruce_sieve",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "log_spruce",
-      "planks_spruce",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "log_spruce",
-        "planks_spruce",
-        "log_spruce"
-      ],
-      [
-        "stick",
-        null,
-        "stick"
       ],
       [
         null,
