@@ -84,14 +84,26 @@ function ItemIcon({ id, size = 32 }: { id: string; size?: number }) {
   );
 }
 
+// Global synchronized tick — all cycling slots advance together
+let _globalTick = 0;
+const _tickListeners = new Set<() => void>();
+if (typeof window !== 'undefined') {
+  setInterval(() => { _globalTick++; _tickListeners.forEach(fn => fn()); }, 1200);
+}
+function useCycleIndex(n: number): number {
+  const [tick, setTick] = useState(_globalTick);
+  useEffect(() => {
+    if (n <= 1) return;
+    const fn = () => setTick(_globalTick);
+    _tickListeners.add(fn);
+    return () => { _tickListeners.delete(fn); };
+  }, [n]);
+  return tick % n;
+}
+
 function CyclingItemIcon({ id, size = 32 }: { id: string | string[]; size?: number }) {
   const arr = Array.isArray(id) ? id.filter(Boolean) : [id];
-  const [idx, setIdx] = useState(0);
-  useEffect(() => {
-    if (arr.length <= 1) return;
-    const t = setInterval(() => setIdx(i => (i + 1) % arr.length), 1200);
-    return () => clearInterval(t);
-  }, [arr.length]);
+  const idx = useCycleIndex(arr.length);
   return <ItemIcon id={arr[idx] || ''} size={size} />;
 }
 
