@@ -10431,5 +10431,14 @@
     "category": "tool",
     "max_durability": 16,
     "removed_in": "0.9.0"
+  },
+  "white_wool": {
+    "name": {
+      "hu": "Fehér Gyapjú",
+      "en": "White Wool"
+    },
+    "img": "img/items/white_wool.png",
+    "tier": null,
+    "category": "material"
   }
 }

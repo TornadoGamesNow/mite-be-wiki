@@ -31183,7 +31183,8 @@
       "stick",
       "stick"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "stone_shovel_32071",
@@ -31200,7 +31201,8 @@
       "stick",
       "stick"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "stone_hoe_32072",
@@ -34966,7 +34968,8 @@
         null,
         null
       ]
-    ]
+    ],
+    "removed_version": "0.6.0"
   },
   {
     "id": "chip_flint_841232",
@@ -35037,24 +35040,24 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "sand_stone"
+      "sandstone"
     ],
     "shaped": true,
     "pattern": [
       [
-        "sand_stone",
-        "sand_stone",
-        "sand_stone"
+        "sandstone",
+        "sandstone",
+        "sandstone"
       ],
       [
-        "sand_stone",
+        "sandstone",
         null,
-        "sand_stone"
+        "sandstone"
       ],
       [
-        "sand_stone",
-        "sand_stone",
-        "sand_stone"
+        "sandstone",
+        "sandstone",
+        "sandstone"
       ]
     ]
   },
@@ -40555,14 +40558,14 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "sand_stone",
+      "sandstone",
       "coal"
     ],
     "shaped": true,
     "pattern": [
       [
         null,
-        "sand_stone",
+        "sandstone",
         null
       ],
       [
@@ -40607,7 +40610,8 @@
         "ice",
         "tin_plate"
       ]
-    ]
+    ],
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "sand_stone_841422",
@@ -41515,7 +41519,7 @@
     "skills": [],
     "ingredients": [
       "obsidian_ingot_mould",
-      "colling_liquid"
+      "cooling_liquid"
     ],
     "shaped": true,
     "pattern": [
@@ -41526,7 +41530,7 @@
       ],
       [
         null,
-        "colling_liquid",
+        "cooling_liquid",
         null
       ],
       [
@@ -41974,7 +41978,8 @@
         null
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "obsidian_ingot_mould_bronze_war_hammer",
