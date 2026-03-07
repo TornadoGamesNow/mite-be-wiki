@@ -283,40 +283,15 @@
     "item_num": 20,
     "output": "glass",
     "outputQty": 1,
-    "station": "flint_workbench",
+    "station": "stone_furnace",
     "difficulty": 90,
     "skills": [
       "masonry"
     ],
     "ingredients": [
-      "glass_pane",
-      "glass_pane",
-      "glass_pane",
-      "glass_pane",
-      "glass_pane",
-      "glass_pane",
-      "glass_pane",
-      "glass_pane",
-      "glass_pane"
+      "sand_stone"
     ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "sand_stone",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
+    "shaped": false
   },
   {
     "id": "lapis_block_17",
@@ -3075,40 +3050,15 @@
     "item_num": 112,
     "output": "nether_brick",
     "outputQty": 2,
-    "station": "flint_workbench",
+    "station": "stone_furnace",
     "difficulty": 850,
     "skills": [
       "masonry"
     ],
     "ingredients": [
-      "nether_brick",
-      "nether_brick",
-      "nether_brick",
-      "nether_brick",
-      "soul_sand",
-      "nether_brick",
-      "nether_brick",
-      "nether_brick",
-      "nether_brick"
+      "netherrack"
     ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "netherrack",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
+    "shaped": false
   },
   {
     "id": "nether_brick_fence_145",
@@ -7134,32 +7084,15 @@
     "item_num": 336,
     "output": "brick",
     "outputQty": 4,
-    "station": "flint_workbench",
+    "station": "stone_furnace",
     "difficulty": 180,
     "skills": [
       "masonry"
     ],
     "ingredients": [
-      "hardened_clay"
+      "clay_ball"
     ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "clay_ball",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
+    "shaped": false
   },
   {
     "id": "paper_309",
