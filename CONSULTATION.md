@@ -106,9 +106,14 @@ A következő itemek valószínűleg a modban vannak, de nincsenek a wikiünkben
 
 ## 8. Duplikátum gyanús itemek
 
-- `fish_raw` (category=food) és `raw_fish` (category=food) — ugyanaz a neve és képe, de különböző ID. `fish_raw` nincs receptben. Törölhető?
-- `oak_slab` és `oak_wood_slab_single` — mindkettő ugyanazt a képet mutatja. Alias?
-- `wood_slab_single` — ingredient több receptben (daylight_sensor, sign, barrel, grindstone), de nincs saját receptje. Vanilla MC item?
+- `fish_raw` és `raw_fish` — mindkettő "Raw Fish", ugyanaz a kép. `fish_raw` nincs receptben. Törölhető?
+- `oak_slab` és `oak_wood_slab_single` — ugyanaz a kép. Alias?
+- `wood_slab_single` — ingredient több receptben, nincs saját receptje. Vanilla MC item?
+- `red_slime_ball` (1 receptben ingrediens) és `red_slimeball` (0 recept) — ugyanaz a kép. Melyik a helyes?
+- `dung` és `manure` — mindkettő 0 recept, ugyanaz a kép.
+- `obsidian_ingot_mold` (14 output recept, tool) és `obsidian_ingot_mould` (1 recept) — brit/amerikai helyesírás, két különböző item (mould=nyers, mold=kész)?
+- `slimeball_black`/`black_slimeball`, `slimeball_brown`/`brown_slimeball`, `slimeball_gray`/`grey_slimeball` — mindhárom párnak azonos képe van, a `slimeball_*` variáns van receptekben
+- `rusted_iron_axe`, `rusted_iron_hoe`, `rusted_iron_pickaxe`, `rusted_iron_shovel` — 0 recept, de ugyanaz a képük mint az `iron_axe`, `iron_hoe` stb. (amelyeknek VAN receptjük). Két külön item?
 
 ## 9. Blokk duplikátumok
 
