@@ -9358,8 +9358,7 @@
     },
     "img": "img/items/beef_stew.png",
     "tier": null,
-    "category": "material",
-    "removed_in": "0.5.6"
+    "category": "material"
   },
   "sorbet": {
     "name": {

@@ -5138,7 +5138,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "gold_shovel_260",
@@ -5179,7 +5180,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "gold_pickaxe_261",
@@ -5220,7 +5222,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "gold_axe_262",
@@ -5261,7 +5264,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "string_263",
@@ -5622,7 +5626,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "wheat_seeds_274",
@@ -13240,7 +13245,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "silver_hoe_661",
@@ -13281,7 +13287,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "mithril_hoe_662",
@@ -13640,7 +13647,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "silver_mattock_671",
@@ -13681,7 +13689,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "gold_mattock_672",
@@ -13722,7 +13731,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "iron_mattock_673",
@@ -13964,7 +13974,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "iron_battle_axe_679",
@@ -14124,7 +14135,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "silver_scythe_683",
@@ -14165,7 +14177,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "gold_scythe_684",
@@ -14206,7 +14219,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "iron_scythe_685",
@@ -23573,7 +23587,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "hard_stone_pickaxe_1094",
@@ -23650,7 +23665,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "hard_stone_leggings_1096",
@@ -24359,7 +24375,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "hard_stone_hand_axe_1122",
@@ -29887,7 +29904,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "hardstone_pickaxe_32031",
@@ -29928,7 +29946,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "hardstone_war_hammer_32032",
@@ -29969,7 +29988,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "hardstone_helmet_32033",
@@ -30088,7 +30108,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "hardstone_mattock_32038",
@@ -30127,7 +30148,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "hardstone_scythe_32039",
@@ -30166,7 +30188,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "hardstone_shears_32040",
@@ -30237,7 +30260,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "hardstone_chain_32042",
@@ -30392,7 +30416,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "gold_hatchet_32047",
@@ -30431,7 +30456,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "bedrock_pulverizer_32048",
@@ -30859,7 +30885,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "iron_dagger_32062",
@@ -30941,7 +30968,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "silver_dagger_32064",
@@ -30982,7 +31010,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "mithril_dagger_32065",
@@ -31123,7 +31152,8 @@
       "stick",
       "stick"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "stone_pickaxe_32070",
@@ -31218,7 +31248,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "iron_hatchet_32074",
@@ -31332,7 +31363,8 @@
         "clay_ball"
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "shield_32095",
@@ -33859,7 +33891,8 @@
         null
       ]
     ],
-    "added_version": "0.5.6"
+    "added_version": "0.5.6",
+    "removed_version": "0.5.6"
   },
   {
     "id": "sugar_block_841180",
@@ -33922,7 +33955,8 @@
         null
       ]
     ],
-    "added_version": "0.5.6"
+    "added_version": "0.5.6",
+    "removed_version": "0.5.6"
   },
   {
     "id": "fish_ball_841182",
@@ -36178,7 +36212,8 @@
         null
       ]
     ],
-    "added_version": "0.5.6"
+    "added_version": "0.5.6",
+    "removed_version": "0.5.6"
   },
   {
     "id": "cereal_841284",
@@ -36242,7 +36277,8 @@
         null
       ]
     ],
-    "added_version": "0.5.6"
+    "added_version": "0.5.6",
+    "removed_version": "0.5.6"
   },
   {
     "id": "bowl_cream_of_vegetable_soup_841286",
@@ -36309,7 +36345,8 @@
         null
       ]
     ],
-    "added_version": "0.5.6"
+    "added_version": "0.5.6",
+    "removed_version": "0.5.6"
   },
   {
     "id": "chicken_soup_841288",
@@ -36343,7 +36380,8 @@
         null
       ]
     ],
-    "added_version": "0.5.6"
+    "added_version": "0.5.6",
+    "removed_version": "0.5.6"
   },
   {
     "id": "sorbet_841289",
@@ -36649,7 +36687,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "mithril_sword_841300",
@@ -36681,7 +36720,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "adamantium_sword_841301",
@@ -36713,7 +36753,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "ancient_metal_battle_axe_841302",
@@ -36745,7 +36786,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "mithril_battle_axe_841303",
@@ -36777,7 +36819,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "adamantium_battle_axe_841304",
@@ -36809,7 +36852,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "ancient_metal_war_hammer_841305",
@@ -36937,7 +36981,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "mithril_dagger_841309",
@@ -36969,7 +37014,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "adamantium_dagger_841310",
@@ -37001,7 +37047,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "copper_arrow_841311",
@@ -37787,7 +37834,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "mithril_shovel_841336",
@@ -37819,7 +37867,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "adamantium_shovel_841337",
@@ -37851,7 +37900,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "obsidian_hatchet_841338",
@@ -37947,7 +37997,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "mithril_hatchet_841341",
@@ -37979,7 +38030,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "adamantium_hatchet_841342",
@@ -38011,7 +38063,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "ancient_metal_pickaxe_841343",
@@ -38043,7 +38096,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "mithril_pickaxe_841344",
@@ -38075,7 +38129,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "adamantium_pickaxe_841345",
@@ -38107,7 +38162,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "obsidian_axe_841346",
@@ -38203,7 +38259,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "mithril_axe_841349",
@@ -38235,7 +38292,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "ancient_metal_scythe_841350",
@@ -38267,7 +38325,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "mithril_scythe_841351",
@@ -38299,7 +38358,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "adamantium_scythe_841352",
@@ -38331,7 +38391,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "adamantium_axe_841353",
@@ -38363,7 +38424,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "ancient_metal_hoe_841354",
@@ -38395,7 +38457,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "mithril_hoe_841355",
@@ -38427,7 +38490,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "adamantium_hoe_841356",
@@ -38459,7 +38523,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "ancient_metal_mattock_841357",
@@ -38491,7 +38556,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "mithril_mattock_841358",
@@ -38523,7 +38589,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "adamantium_mattock_841359",
@@ -38555,7 +38622,8 @@
         null
       ]
     ],
-    "added_version": "0.5.5"
+    "added_version": "0.5.5",
+    "removed_version": "0.5.5"
   },
   {
     "id": "bottle_of_disenchanting_841360",
@@ -39668,7 +39736,8 @@
         null
       ]
     ],
-    "added_version": "0.5.8"
+    "added_version": "0.5.8",
+    "removed_version": "0.5.8"
   },
   {
     "id": "bound_scroll_841395",
@@ -39700,7 +39769,8 @@
         null
       ]
     ],
-    "added_version": "0.5.8"
+    "added_version": "0.5.8",
+    "removed_version": "0.5.8"
   },
   {
     "id": "enchantment_table_841396",
@@ -40362,7 +40432,8 @@
         null
       ]
     ],
-    "added_version": "0.5.6"
+    "added_version": "0.5.6",
+    "removed_version": "0.9.0"
   },
   {
     "id": "quiver_841417",
@@ -40552,7 +40623,8 @@
         null
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "bone_club_841423",
@@ -41059,40 +41131,6 @@
     ]
   },
   {
-    "id": "beef_stew_841446",
-    "item_num": 841446,
-    "output": "beef_stew",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "potato",
-      "steak",
-      "mushroom_brown",
-      "water_bowl"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "potato",
-        "steak",
-        "mushroom_brown"
-      ],
-      [
-        null,
-        "water_bowl",
-        null
-      ],
-      [
-        null,
-        null,
-        null
-      ]
-    ],
-    "added_version": "0.5.6"
-  },
-  {
     "id": "mashed_potato_841447",
     "item_num": 841447,
     "output": "mashed_potato",
@@ -41250,7 +41288,8 @@
         null
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "flint_spear_841452",
@@ -41348,7 +41387,8 @@
         null
       ]
     ],
-    "added_version": "0.6.0"
+    "added_version": "0.6.0",
+    "removed_version": "0.6.0"
   },
   {
     "id": "furnace_core_stone_841455",
@@ -42425,5 +42465,39 @@
         ]
       ]
     ]
+  },
+  {
+    "id": "beef_stew_841446",
+    "item_num": 841446,
+    "output": "beef_stew",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "potato",
+      "cooked_beef",
+      "mushroom_brown",
+      "water_bowl"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "potato",
+        "cooked_beef",
+        "mushroom_brown"
+      ],
+      [
+        null,
+        "water_bowl",
+        null
+      ],
+      [
+        null,
+        null,
+        null
+      ]
+    ],
+    "added_version": "0.5.6"
   }
 ]
