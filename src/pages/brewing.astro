@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import TopNav from '../components/TopNav.astro';
 import Sidebar from '../components/Sidebar.astro';
+import BrewingGrid from '../components/BrewingGrid.astro';
 import '../styles/global.css';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -116,6 +117,68 @@ const sidebarGroups = {
   <li>Zavaros Bájital + hatóanyag → kész bájital</li>
   <li>Opcionális: + <strong>Lőpor</strong> → Fröccsenő (Splash) változat</li>
 </ol>
+
+<h4 data-lang="hu">1. lépés — Zavaros Bájital alapja</h4>
+<BrewingGrid
+  ingredient="Netheri Szemölcs"
+  ingredientImg="img/items/nether_wart.png"
+  inputLabel="Vízpalack × 3"
+  inputImg="img/items/glass_bottle.png"
+  result="Zavaros Bájital (Awkward Potion)"
+  resultColor="#c0a0ff"
+  hu="Minden bájital receptjének kiindulópontja"
+  en="Starting point for every potion recipe"
+/>
+
+<h4 data-lang="hu">2. lépés — Hatóanyag hozzáadása (példák)</h4>
+<div style="display:flex;flex-wrap:wrap;gap:16px;margin:8px 0 16px">
+  <div>
+    <BrewingGrid
+      ingredient="Cukor"
+      ingredientImg="img/items/sugar.png"
+      inputLabel="Zavaros Bájital"
+      result="Sebesség Bájital"
+      resultColor="#88ff88"
+    />
+  </div>
+  <div>
+    <BrewingGrid
+      ingredient="Blaze Por"
+      ingredientImg="img/items/blaze_powder.png"
+      inputLabel="Zavaros Bájital"
+      result="Erő Bájital"
+      resultColor="#ff8844"
+    />
+  </div>
+  <div>
+    <BrewingGrid
+      ingredient="Magma Krém"
+      ingredientImg="img/items/magma_cream.png"
+      inputLabel="Zavaros Bájital"
+      result="Tűzállóság Bájital"
+      resultColor="#ff4444"
+    />
+  </div>
+  <div>
+    <BrewingGrid
+      ingredient="Ghast Könny"
+      ingredientImg="img/items/ghast_tear.png"
+      inputLabel="Zavaros Bájital"
+      result="Regeneráció Bájital"
+      resultColor="#ff88cc"
+    />
+  </div>
+</div>
+
+<h4 data-lang="hu">3. lépés — Fröccsenő változat (opcionális)</h4>
+<BrewingGrid
+  ingredient="Lőpor (Gunpowder)"
+  inputLabel="Bármilyen kész bájital"
+  result="Fröccsenő Bájital"
+  resultColor="#ffcc44"
+  hu="Dobható — ellenfelekre vagy szövetségesekre"
+  en="Throwable — at enemies or allies"
+/>
 
 <!-- ─── Brewer Profession ─── -->
 <h2 id="brewer-profession">Brewer Foglalkozás</h2>
@@ -233,37 +296,18 @@ const sidebarGroups = {
 
 <!-- ─── Disenchanting ─── -->
 <h2 id="disenchanting">Varázstalanító Palack (Disenchanting Bottle)</h2>
-<p>Egyedi MITE bájital amelyet <strong>Főzőállványon</strong> kell elkészíteni (Brewer kell):</p>
+<p>Egyedi MITE bájital amelyet <strong>Főzőállványon</strong> kell elkészíteni (Brewer kell). Recept: Pokoli Szemölcs + Szén → Vízpalackokon.</p>
 
-<div class="craft-section">
-  <div class="craft-table">
-    <div class="craft-grid g3x3">
-      <div class="craft-slot empty"></div>
-      <div class="craft-slot">
-        <div class="mc-tooltip"><div class="tt-name" style="color:#4ecca3">Pokoli Szemölcs</div><div class="tt-desc" data-lang="hu">Nether Wart — Nether Erődből</div></div>
-      </div>
-      <div class="craft-slot empty"></div>
-      <div class="craft-slot">
-        <div class="mc-tooltip"><div class="tt-name" style="color:#aaa">Vízpalack</div></div>
-      </div>
-      <div class="craft-slot">
-        <div class="mc-tooltip"><div class="tt-name" style="color:#aaa">Szén</div></div>
-      </div>
-      <div class="craft-slot empty"></div>
-      <div class="craft-slot empty"></div>
-      <div class="craft-slot empty"></div>
-      <div class="craft-slot empty"></div>
-    </div>
-    <div class="craft-arrow-box">➜</div>
-    <div class="craft-output">
-      <div class="craft-slot">
-        <div class="mc-tooltip"><div class="tt-name" style="color:#7ec8e3">Varázstalanító Palack</div></div>
-      </div>
-    </div>
-    <div class="craft-label" data-lang="hu">Varázstalanító Palack</div>
-    <div class="craft-label" data-lang="en">Disenchanting Bottle</div>
-  </div>
-</div>
+<BrewingGrid
+  ingredient="Nether Wart + Szén"
+  ingredientImg="img/items/nether_wart.png"
+  inputLabel="Vízpalack × 3"
+  inputImg="img/items/glass_bottle.png"
+  result="Varázstalanító Palack"
+  resultColor="#7ec8e3"
+  hu="Varázstalanító Palack"
+  en="Disenchanting Bottle"
+/>
 
 <p><strong>Hatásai:</strong></p>
 <ul>
@@ -321,6 +365,68 @@ const sidebarGroups = {
   <li>Awkward Potion + ingredient → finished potion</li>
   <li>Optional: + <strong>Gunpowder</strong> → Splash variant</li>
 </ol>
+
+<h4 data-lang="en">Step 1 — Awkward Potion base</h4>
+<BrewingGrid
+  ingredient="Nether Wart"
+  ingredientImg="img/items/nether_wart.png"
+  inputLabel="Water Bottle × 3"
+  inputImg="img/items/glass_bottle.png"
+  result="Awkward Potion"
+  resultColor="#c0a0ff"
+  hu="Minden bájital receptjének kiindulópontja"
+  en="Starting point for every potion recipe"
+/>
+
+<h4 data-lang="en">Step 2 — Add ingredient (examples)</h4>
+<div style="display:flex;flex-wrap:wrap;gap:16px;margin:8px 0 16px">
+  <div>
+    <BrewingGrid
+      ingredient="Sugar"
+      ingredientImg="img/items/sugar.png"
+      inputLabel="Awkward Potion"
+      result="Swiftness Potion"
+      resultColor="#88ff88"
+    />
+  </div>
+  <div>
+    <BrewingGrid
+      ingredient="Blaze Powder"
+      ingredientImg="img/items/blaze_powder.png"
+      inputLabel="Awkward Potion"
+      result="Strength Potion"
+      resultColor="#ff8844"
+    />
+  </div>
+  <div>
+    <BrewingGrid
+      ingredient="Magma Cream"
+      ingredientImg="img/items/magma_cream.png"
+      inputLabel="Awkward Potion"
+      result="Fire Resistance Potion"
+      resultColor="#ff4444"
+    />
+  </div>
+  <div>
+    <BrewingGrid
+      ingredient="Ghast Tear"
+      ingredientImg="img/items/ghast_tear.png"
+      inputLabel="Awkward Potion"
+      result="Regeneration Potion"
+      resultColor="#ff88cc"
+    />
+  </div>
+</div>
+
+<h4 data-lang="en">Step 3 — Splash variant (optional)</h4>
+<BrewingGrid
+  ingredient="Gunpowder"
+  inputLabel="Any finished potion"
+  result="Splash Potion"
+  resultColor="#ffcc44"
+  hu="Dobható — ellenfelekre vagy szövetségesekre"
+  en="Throwable — at enemies or allies"
+/>
 
 <!-- ─── Brewer EN ─── -->
 <h2 id="brewer-profession">Brewer Profession</h2>
@@ -438,8 +544,18 @@ const sidebarGroups = {
 
 <!-- ─── Disenchanting EN ─── -->
 <h2 id="disenchanting">Disenchanting Bottle</h2>
-<p>A unique MITE potion crafted in the <strong>Brewing Stand</strong> (Brewer required):</p>
-<p><strong>Recipe:</strong> Water Bottle + Coal + Nether Wart → Brewing Stand</p>
+<p>A unique MITE potion crafted in the <strong>Brewing Stand</strong> (Brewer required). Recipe: Nether Wart + Coal → Water Bottles.</p>
+
+<BrewingGrid
+  ingredient="Nether Wart + Coal"
+  ingredientImg="img/items/nether_wart.png"
+  inputLabel="Water Bottle × 3"
+  inputImg="img/items/glass_bottle.png"
+  result="Disenchanting Bottle"
+  resultColor="#7ec8e3"
+  hu="Varázstalanító Palack"
+  en="Disenchanting Bottle"
+/>
 
 <p><strong>Effects:</strong></p>
 <ul>
