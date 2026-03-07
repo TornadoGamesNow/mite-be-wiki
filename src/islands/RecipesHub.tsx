@@ -1291,7 +1291,7 @@ export default function RecipesHub() {
   const [stationFilter, setStationFilter] = useState('');
   const [skillFilter, setSkillFilter] = useState('');
   const [ingredientFilter, setIngredientFilter] = useState('');
-  const [typeFilter, setTypeFilter] = useState<'all' | 'shaped' | 'shapeless' | 'removed' | 'current'>('all');
+  const [typeFilter, setTypeFilter] = useState<'all' | 'shaped' | 'shapeless' | 'removed' | 'current'>('current');
   const [selectedOutputId, setSelectedOutputId] = useState<string | null>(null);
   const [usedInModalItem, setUsedInModalItem] = useState<string | null>(null);
   const [fromSandbox, setFromSandbox] = useState(false);
