@@ -311,7 +311,7 @@
       "en": "Obsidian Shard"
     },
     "img": "img/shards/obsidian.png",
-    "tier": null,
+    "tier": "obsidian",
     "category": "material"
   },
   "obsidian": {
@@ -410,7 +410,7 @@
       "en": "Tin Plate"
     },
     "img": "img/items/tin_plate.png",
-    "tier": null,
+    "tier": "tin",
     "category": "material"
   },
   "beacon": {
@@ -500,7 +500,7 @@
       "en": "Ancient Metal Bar"
     },
     "img": "img/ingots/ancient_metal.png",
-    "tier": "ancient",
+    "tier": "ancient_metal",
     "category": "ingot"
   },
   "mithril_bar": {
@@ -970,7 +970,7 @@
       "en": "Ancient Metal Sword"
     },
     "img": "img/items/ancient_metal_sword.png",
-    "tier": "ancient",
+    "tier": "ancient_metal",
     "category": "weapon"
   },
   "ancient_metal_pickaxe": {
@@ -979,7 +979,7 @@
       "en": "Ancient Metal Pickaxe"
     },
     "img": "img/items/ancient_metal_pickaxe.png",
-    "tier": "ancient",
+    "tier": "ancient_metal",
     "category": "tool"
   },
   "ancient_metal_axe": {
@@ -988,7 +988,7 @@
       "en": "Ancient Metal Axe"
     },
     "img": "img/items/ancient_metal_axe.png",
-    "tier": "ancient",
+    "tier": "ancient_metal",
     "category": "tool"
   },
   "ancient_metal_war_hammer": {
@@ -997,7 +997,7 @@
       "en": "Ancient Metal War Hammer"
     },
     "img": "img/items/ancient_metal_war_hammer.png",
-    "tier": "ancient",
+    "tier": "ancient_metal",
     "category": "weapon"
   },
   "mithril_sword": {
@@ -1124,7 +1124,7 @@
       "en": "Obsidian Ingot Mold"
     },
     "img": "img/items/obsidian_ingot_mould.png",
-    "tier": null,
+    "tier": "obsidian",
     "category": "tool"
   },
   "campfire": {
@@ -1160,7 +1160,7 @@
       "en": "Stone Furnace"
     },
     "img": "img/blocks/furnace_front_off.png",
-    "tier": null,
+    "tier": "stone",
     "category": "station"
   },
   "obsidian_furnace": {
@@ -1169,7 +1169,7 @@
       "en": "Obsidian Furnace"
     },
     "img": "img/blocks/obsidian.png",
-    "tier": null,
+    "tier": "obsidian",
     "category": "station"
   },
   "netherrack_furnace": {
@@ -1297,7 +1297,7 @@
       "en": "Ancient Metal Filter Paper"
     },
     "img": "img/items/filter_paper_ancient.png",
-    "tier": "ancient",
+    "tier": "ancient_metal",
     "category": "material"
   },
   "enchanting_table_emerald": {
@@ -1477,7 +1477,7 @@
       "en": "Ancient Metal Helmet"
     },
     "img": "img/armor/ancient_metal_helmet.png",
-    "tier": "ancient",
+    "tier": "ancient_metal",
     "category": "armor"
   },
   "ancient_metal_chestplate": {
@@ -1486,7 +1486,7 @@
       "en": "Ancient Metal Chestplate"
     },
     "img": "img/armor/ancient_metal_chestplate.png",
-    "tier": "ancient",
+    "tier": "ancient_metal",
     "category": "armor"
   },
   "ancient_metal_leggings": {
@@ -1495,7 +1495,7 @@
       "en": "Ancient Metal Leggings"
     },
     "img": "img/armor/ancient_metal_leggings.png",
-    "tier": "ancient",
+    "tier": "ancient_metal",
     "category": "armor"
   },
   "ancient_metal_boots": {
@@ -1504,7 +1504,7 @@
       "en": "Ancient Metal Boots"
     },
     "img": "img/armor/ancient_metal_boots.png",
-    "tier": "ancient",
+    "tier": "ancient_metal",
     "category": "armor"
   },
   "mithril_helmet": {
@@ -1621,7 +1621,7 @@
       "en": "Ancient Metal Workbench"
     },
     "img": "img/blocks/workbench_ancient_metal.png",
-    "tier": "ancient",
+    "tier": "ancient_metal",
     "category": "block"
   },
   "silver_battle_axe": {
@@ -1630,7 +1630,8 @@
       "en": "Silver Battle Axe"
     },
     "img": "img/items/silver_battle_axe.png",
-    "tier": "silver"
+    "tier": "silver",
+    "category": "weapon"
   },
   "gold_battle_axe": {
     "name": {
@@ -1648,7 +1649,8 @@
       "en": "Mithril Battle Axe"
     },
     "img": "img/items/mithril_battle_axe.png",
-    "tier": "mithril"
+    "tier": "mithril",
+    "category": "weapon"
   },
   "adamantium_battle_axe": {
     "name": {
@@ -1656,7 +1658,8 @@
       "en": "Adamantium Battle Axe"
     },
     "img": "img/items/adamantium_battle_axe.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "category": "weapon"
   },
   "ancient_metal_battle_axe": {
     "name": {
@@ -1664,7 +1667,8 @@
       "en": "Ancient Metal Battle Axe"
     },
     "img": "img/items/ancient_metal_battle_axe.png",
-    "tier": "ancient"
+    "tier": "ancient_metal",
+    "category": "weapon"
   },
   "hardstone_battle_axe": {
     "name": {
@@ -1722,7 +1726,7 @@
       "en": "Ancient Metal Mattock"
     },
     "img": "img/items/ancient_metal_mattock.png",
-    "tier": "ancient",
+    "tier": "ancient_metal",
     "max_durability": 41600,
     "category": "tool"
   },
@@ -1742,7 +1746,8 @@
       "en": "Silver Scythe"
     },
     "img": "img/items/silver_scythe.png",
-    "tier": "silver"
+    "tier": "silver",
+    "category": "tool"
   },
   "gold_scythe": {
     "name": {
@@ -1750,7 +1755,8 @@
       "en": "Gold Scythe"
     },
     "img": "img/items/gold_scythe.png",
-    "tier": "gold"
+    "tier": "gold",
+    "category": "tool"
   },
   "mithril_scythe": {
     "name": {
@@ -1778,7 +1784,7 @@
       "en": "Ancient Metal Scythe"
     },
     "img": "img/items/ancient_metal_scythe.png",
-    "tier": "ancient",
+    "tier": "ancient_metal",
     "max_durability": 22400,
     "category": "tool"
   },
@@ -1788,7 +1794,8 @@
       "en": "Hardstone Scythe"
     },
     "img": "img/items/hardstone_scythe.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "tool"
   },
   "silver_shears": {
     "name": {
@@ -1796,7 +1803,8 @@
       "en": "Silver Shears"
     },
     "img": "img/items/silver_shears.png",
-    "tier": "silver"
+    "tier": "silver",
+    "category": "tool"
   },
   "gold_shears": {
     "name": {
@@ -1804,7 +1812,8 @@
       "en": "Gold Shears"
     },
     "img": "img/items/gold_shears.png",
-    "tier": "gold"
+    "tier": "gold",
+    "category": "tool"
   },
   "iron_shears": {
     "name": {
@@ -1812,7 +1821,8 @@
       "en": "Iron Shears"
     },
     "img": "img/items/iron_shears.png",
-    "tier": "iron"
+    "tier": "iron",
+    "category": "tool"
   },
   "mithril_shears": {
     "name": {
@@ -1820,7 +1830,8 @@
       "en": "Mithril Shears"
     },
     "img": "img/items/mithril_shears.png",
-    "tier": "mithril"
+    "tier": "mithril",
+    "category": "tool"
   },
   "adamantium_shears": {
     "name": {
@@ -1828,7 +1839,8 @@
       "en": "Adamantium Shears"
     },
     "img": "img/items/adamantium_shears.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "category": "tool"
   },
   "hardstone_shears": {
     "name": {
@@ -1836,7 +1848,8 @@
       "en": "Hardstone Shears"
     },
     "img": "img/items/hardstone_shears.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "tool"
   },
   "silver_hatchet": {
     "name": {
@@ -1844,7 +1857,8 @@
       "en": "Silver Hatchet"
     },
     "img": "img/items/silver_hatchet.png",
-    "tier": "silver"
+    "tier": "silver",
+    "category": "tool"
   },
   "gold_hatchet": {
     "name": {
@@ -1852,7 +1866,8 @@
       "en": "Gold Hatchet"
     },
     "img": "img/items/gold_hatchet.png",
-    "tier": "gold"
+    "tier": "gold",
+    "category": "tool"
   },
   "mithril_hatchet": {
     "name": {
@@ -1860,7 +1875,8 @@
       "en": "Mithril Hatchet"
     },
     "img": "img/items/mithril_hatchet.png",
-    "tier": "mithril"
+    "tier": "mithril",
+    "category": "tool"
   },
   "adamantium_hatchet": {
     "name": {
@@ -1868,7 +1884,8 @@
       "en": "Adamantium Hatchet"
     },
     "img": "img/items/adamantium_hatchet.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "category": "tool"
   },
   "ancient_metal_hatchet": {
     "name": {
@@ -1876,7 +1893,8 @@
       "en": "Ancient Metal Hatchet"
     },
     "img": "img/items/ancient_metal_hatchet.png",
-    "tier": "ancient"
+    "tier": "ancient_metal",
+    "category": "tool"
   },
   "hardstone_hatchet": {
     "name": {
@@ -1884,7 +1902,8 @@
       "en": "Hardstone Hatchet"
     },
     "img": "img/items/hardstone_hatchet.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "tool"
   },
   "silver_hoe": {
     "name": {
@@ -1932,7 +1951,7 @@
       "en": "Ancient Metal Hoe"
     },
     "img": "img/items/ancient_metal_hoe.png",
-    "tier": "ancient",
+    "tier": "ancient_metal",
     "max_durability": 22400,
     "category": "tool"
   },
@@ -1942,35 +1961,41 @@
       "en": "Ancient Metal Shears"
     },
     "img": "img/items/ancient_metal_shears.png",
-    "tier": "ancient"
+    "tier": "ancient_metal",
+    "category": "tool"
   },
   "torch": {
     "name": {
       "hu": "Fáklya",
       "en": "Torch"
     },
-    "img": "img/items/torch.png"
+    "img": "img/items/torch.png",
+    "category": "block"
   },
   "bow": {
     "name": {
       "hu": "Íj",
       "en": "Bow"
     },
-    "img": "img/items/bow.png"
+    "img": "img/items/bow.png",
+    "category": "weapon"
   },
   "feather": {
     "name": {
       "hu": "Toll",
       "en": "Feather"
     },
-    "img": "img/items/feather.png"
+    "img": "img/items/feather.png",
+    "category": "material"
   },
   "flint_arrow": {
     "name": {
       "hu": "Kovanyíl",
       "en": "Flint Arrow"
     },
-    "img": "img/items/flint_arrow.png"
+    "img": "img/items/flint_arrow.png",
+    "category": "weapon",
+    "tier": "flint"
   },
   "copper_arrow": {
     "name": {
@@ -1978,7 +2003,8 @@
       "en": "Copper Arrow"
     },
     "img": "img/items/copper_arrow.png",
-    "tier": "copper"
+    "tier": "copper",
+    "category": "weapon"
   },
   "silver_arrow": {
     "name": {
@@ -1986,7 +2012,8 @@
       "en": "Silver Arrow"
     },
     "img": "img/items/silver_arrow.png",
-    "tier": "silver"
+    "tier": "silver",
+    "category": "weapon"
   },
   "gold_arrow": {
     "name": {
@@ -1994,7 +2021,8 @@
       "en": "Gold Arrow"
     },
     "img": "img/items/gold_arrow.png",
-    "tier": "gold"
+    "tier": "gold",
+    "category": "weapon"
   },
   "iron_arrow": {
     "name": {
@@ -2002,7 +2030,8 @@
       "en": "Iron Arrow"
     },
     "img": "img/items/iron_arrow.png",
-    "tier": "iron"
+    "tier": "iron",
+    "category": "weapon"
   },
   "mithril_arrow": {
     "name": {
@@ -2019,14 +2048,17 @@
       "en": "Adamantium Arrow"
     },
     "img": "img/items/adamantium_arrow.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "category": "weapon"
   },
   "obsidian_arrow": {
     "name": {
       "hu": "Obszidián Nyíl",
       "en": "Obsidian Arrow"
     },
-    "img": "img/items/obsidian_arrow.png"
+    "img": "img/items/obsidian_arrow.png",
+    "category": "weapon",
+    "tier": "obsidian"
   },
   "ancient_metal_arrow": {
     "name": {
@@ -2034,7 +2066,7 @@
       "en": "Ancient Metal Arrow"
     },
     "img": "img/items/ancient_metal_arrow.png",
-    "tier": "ancient",
+    "tier": "ancient_metal",
     "category": "weapon"
   },
   "bowl": {
@@ -2042,7 +2074,8 @@
       "hu": "Tál",
       "en": "Bowl"
     },
-    "img": "img/items/bowl_water.png"
+    "img": "img/items/bowl_water.png",
+    "category": "food"
   },
   "copper_chain": {
     "name": {
@@ -2050,7 +2083,8 @@
       "en": "Copper Chain"
     },
     "img": "img/items/copper_chain.png",
-    "tier": "copper"
+    "tier": "copper",
+    "category": "armor"
   },
   "silver_chain": {
     "name": {
@@ -2058,7 +2092,8 @@
       "en": "Silver Chain"
     },
     "img": "img/items/silver_chain.png",
-    "tier": "silver"
+    "tier": "silver",
+    "category": "armor"
   },
   "gold_chain": {
     "name": {
@@ -2066,7 +2101,8 @@
       "en": "Gold Chain"
     },
     "img": "img/items/gold_chain.png",
-    "tier": "gold"
+    "tier": "gold",
+    "category": "armor"
   },
   "iron_chain": {
     "name": {
@@ -2074,7 +2110,8 @@
       "en": "Iron Chain"
     },
     "img": "img/items/iron_chain.png",
-    "tier": "iron"
+    "tier": "iron",
+    "category": "armor"
   },
   "mithril_chain": {
     "name": {
@@ -2082,7 +2119,8 @@
       "en": "Mithril Chain"
     },
     "img": "img/items/mithril_chain.png",
-    "tier": "mithril"
+    "tier": "mithril",
+    "category": "armor"
   },
   "adamantium_chain": {
     "name": {
@@ -2090,7 +2128,8 @@
       "en": "Adamantium Chain"
     },
     "img": "img/items/adamantium_chain.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "category": "armor"
   },
   "ancient_metal_chain": {
     "name": {
@@ -2098,7 +2137,8 @@
       "en": "Ancient Metal Chain"
     },
     "img": "img/items/ancient_metal_chain.png",
-    "tier": "ancient"
+    "tier": "ancient_metal",
+    "category": "armor"
   },
   "hardstone_chain": {
     "name": {
@@ -2106,7 +2146,8 @@
       "en": "Hardstone Chain"
     },
     "img": "img/items/hardstone_chain.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "armor"
   },
   "activator_rail": {
     "name": {
@@ -2114,7 +2155,8 @@
       "en": "Activator Rail"
     },
     "img": "img/items/activator_rail.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "adamantium_anvil": {
     "name": {
@@ -2122,7 +2164,8 @@
       "en": "Adamantium Anvil"
     },
     "img": "img/items/adamantium_anvil.png",
-    "tier": null
+    "tier": "adamantium",
+    "category": "station"
   },
   "adamantium_block": {
     "name": {
@@ -2130,7 +2173,8 @@
       "en": "Adamantium Block"
     },
     "img": "img/blocks/adamantium_block.png",
-    "tier": null
+    "tier": "adamantium",
+    "category": "block"
   },
   "adamantium_bucket": {
     "name": {
@@ -2138,7 +2182,8 @@
       "en": "Adamantium Bucket"
     },
     "img": "img/items/adamantium_bucket.png",
-    "tier": null
+    "tier": "adamantium",
+    "category": "misc"
   },
   "adamantium_bucket_filled_with_milk": {
     "name": {
@@ -2146,7 +2191,8 @@
       "en": "Adamantium Bucket of Milk"
     },
     "img": "img/items/adamantium_bucket_filled_with_milk.png",
-    "tier": null
+    "tier": "adamantium",
+    "category": "misc"
   },
   "adamantium_bucket_filled_with_stone": {
     "name": {
@@ -2154,7 +2200,8 @@
       "en": "Adamantium Bucket of Stone"
     },
     "img": "img/items/adamantium_bucket_filled_with_stone.png",
-    "tier": null
+    "tier": "adamantium",
+    "category": "block"
   },
   "adamantium_bucket_filled_with_water": {
     "name": {
@@ -2162,7 +2209,8 @@
       "en": "Adamantium Bucket of Water"
     },
     "img": "img/items/adamantium_bucket_filled_with_water.png",
-    "tier": null
+    "tier": "adamantium",
+    "category": "misc"
   },
   "adamantium_chain_boots": {
     "name": {
@@ -2170,7 +2218,8 @@
       "en": "Adamantium Chain Boots"
     },
     "img": "img/armor/adamantium_chainmail_boots.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "category": "armor"
   },
   "adamantium_chain_chestplate": {
     "name": {
@@ -2178,7 +2227,8 @@
       "en": "Adamantium Chain Chestplate"
     },
     "img": "img/armor/adamantium_chainmail_chestplate.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "category": "armor"
   },
   "adamantium_chain_helmet": {
     "name": {
@@ -2186,7 +2236,8 @@
       "en": "Adamantium Chain Helmet"
     },
     "img": "img/armor/adamantium_chainmail_helmet.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "category": "armor"
   },
   "adamantium_chain_leggings": {
     "name": {
@@ -2194,7 +2245,8 @@
       "en": "Adamantium Chain Leggings"
     },
     "img": "img/armor/adamantium_chainmail_leggings.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "category": "armor"
   },
   "adamantium_coin": {
     "name": {
@@ -2202,7 +2254,8 @@
       "en": "Adamantium Coin"
     },
     "img": "img/items/adamantium_coin.png",
-    "tier": null
+    "tier": "adamantium",
+    "category": "material"
   },
   "adamantium_door": {
     "name": {
@@ -2210,7 +2263,8 @@
       "en": "Adamantium Door"
     },
     "img": "img/items/adamantium_door.png",
-    "tier": null
+    "tier": "adamantium",
+    "category": "block"
   },
   "adamantium_fence": {
     "name": {
@@ -2218,7 +2272,8 @@
       "en": "Adamantium Fence"
     },
     "img": "img/items/adamantium_fence.png",
-    "tier": null
+    "tier": "adamantium",
+    "category": "block"
   },
   "adamantium_flint_and_steel": {
     "name": {
@@ -2226,7 +2281,8 @@
       "en": "Adamantium Flint and Steel"
     },
     "img": "img/items/adamantium_flint_and_steel.png",
-    "tier": null
+    "tier": "adamantium",
+    "category": "material"
   },
   "adamantium_fluid_tank": {
     "name": {
@@ -2234,7 +2290,8 @@
       "en": "Adamantium Fluid Tank"
     },
     "img": "img/items/adamantium_fluid_tank.png",
-    "tier": null
+    "tier": "adamantium",
+    "category": "block"
   },
   "adamantium_hand_axe": {
     "name": {
@@ -2242,7 +2299,8 @@
       "en": "Adamantium Hand Axe"
     },
     "img": "img/items/adamantium_hand_axe.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "category": "tool"
   },
   "adamantium_ore": {
     "name": {
@@ -2250,7 +2308,8 @@
       "en": "Adamantium Ore"
     },
     "img": "img/blocks/adamantium_ore.png",
-    "tier": null
+    "tier": "adamantium",
+    "category": "block"
   },
   "adamantium_shield": {
     "name": {
@@ -2258,7 +2317,8 @@
       "en": "Adamantium Shield"
     },
     "img": "img/items/adamantium_shield.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "category": "weapon"
   },
   "adamantium_short_sword": {
     "name": {
@@ -2266,7 +2326,8 @@
       "en": "Adamantium Short Sword"
     },
     "img": "img/items/adamantium_sword.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "category": "weapon"
   },
   "adamantium_shovel": {
     "name": {
@@ -2274,7 +2335,8 @@
       "en": "Adamantium Shovel"
     },
     "img": "img/items/adamantium_shovel.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "category": "tool"
   },
   "advanced_enchantment_table": {
     "name": {
@@ -2282,7 +2344,8 @@
       "en": "Advanced Enchantment Table"
     },
     "img": "img/items/advanced_enchantment_table.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "advanced_enchantment_table_knowledge_book": {
     "name": {
@@ -2290,7 +2353,8 @@
       "en": "Advanced Enchantment Table Knowledge Book"
     },
     "img": "img/items/advanced_enchantment_table_knowledge_book.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "ancient_metal_anvil": {
     "name": {
@@ -2298,7 +2362,8 @@
       "en": "Ancient Metal Anvil"
     },
     "img": "img/items/ancient_metal_anvil.png",
-    "tier": null
+    "tier": "ancient_metal",
+    "category": "station"
   },
   "ancient_metal_barrel_upgrade": {
     "name": {
@@ -2306,7 +2371,7 @@
       "en": "Ancient Metal Barrel Upgrade"
     },
     "img": "img/items/ancient_metal_barrel_upgrade.png",
-    "tier": null,
+    "tier": "ancient_metal",
     "category": "misc"
   },
   "ancient_metal_block": {
@@ -2315,7 +2380,8 @@
       "en": "Ancient Metal Block"
     },
     "img": "img/blocks/ancient_metal_block.png",
-    "tier": null
+    "tier": "ancient_metal",
+    "category": "block"
   },
   "ancient_metal_bow": {
     "name": {
@@ -2323,7 +2389,8 @@
       "en": "Ancient Metal Bow"
     },
     "img": "img/items/ancient_metal_bow.png",
-    "tier": null
+    "tier": "ancient_metal",
+    "category": "weapon"
   },
   "ancient_metal_bucket": {
     "name": {
@@ -2331,7 +2398,8 @@
       "en": "Ancient Metal Bucket"
     },
     "img": "img/items/ancient_metal_bucket.png",
-    "tier": null
+    "tier": "ancient_metal",
+    "category": "misc"
   },
   "ancient_metal_bucket_filled_with_milk": {
     "name": {
@@ -2339,7 +2407,8 @@
       "en": "Ancient Metal Bucket of Milk"
     },
     "img": "img/items/ancient_metal_bucket_filled_with_milk.png",
-    "tier": null
+    "tier": "ancient_metal",
+    "category": "misc"
   },
   "ancient_metal_bucket_filled_with_stone": {
     "name": {
@@ -2347,7 +2416,8 @@
       "en": "Ancient Metal Bucket of Stone"
     },
     "img": "img/items/ancient_metal_bucket_filled_with_stone.png",
-    "tier": null
+    "tier": "ancient_metal",
+    "category": "block"
   },
   "ancient_metal_bucket_filled_with_water": {
     "name": {
@@ -2355,7 +2425,8 @@
       "en": "Ancient Metal Bucket of Water"
     },
     "img": "img/items/ancient_metal_bucket_filled_with_water.png",
-    "tier": null
+    "tier": "ancient_metal",
+    "category": "misc"
   },
   "ancient_metal_chain_boots": {
     "name": {
@@ -2363,7 +2434,8 @@
       "en": "Ancient Metal Chain Boots"
     },
     "img": "img/armor/ancient_metal_chainmail_boots.png",
-    "tier": "ancient"
+    "tier": "ancient_metal",
+    "category": "armor"
   },
   "ancient_metal_chain_chestplate": {
     "name": {
@@ -2371,7 +2443,8 @@
       "en": "Ancient Metal Chain Chestplate"
     },
     "img": "img/armor/ancient_metal_chainmail_chestplate.png",
-    "tier": "ancient"
+    "tier": "ancient_metal",
+    "category": "armor"
   },
   "ancient_metal_chain_helmet": {
     "name": {
@@ -2379,7 +2452,8 @@
       "en": "Ancient Metal Chain Helmet"
     },
     "img": "img/armor/ancient_metal_chainmail_helmet.png",
-    "tier": "ancient"
+    "tier": "ancient_metal",
+    "category": "armor"
   },
   "ancient_metal_chain_leggings": {
     "name": {
@@ -2387,7 +2461,8 @@
       "en": "Ancient Metal Chain Leggings"
     },
     "img": "img/armor/ancient_metal_chainmail_leggings.png",
-    "tier": "ancient"
+    "tier": "ancient_metal",
+    "category": "armor"
   },
   "ancient_metal_chest_upgrade": {
     "name": {
@@ -2395,7 +2470,8 @@
       "en": "Ancient Metal Chest Upgrade"
     },
     "img": "img/items/ancient_metal_chest_upgrade.png",
-    "tier": null
+    "tier": "ancient_metal",
+    "category": "misc"
   },
   "ancient_metal_coin": {
     "name": {
@@ -2403,7 +2479,8 @@
       "en": "Ancient Metal Coin"
     },
     "img": "img/items/ancient_metal_coin.png",
-    "tier": null
+    "tier": "ancient_metal",
+    "category": "material"
   },
   "ancient_metal_container_knowledge_book": {
     "name": {
@@ -2411,7 +2488,8 @@
       "en": "Ancient Metal Container Knowledge Book"
     },
     "img": "img/items/ancient_metal_container_knowledge_book.png",
-    "tier": null
+    "tier": "ancient_metal",
+    "category": "misc"
   },
   "ancient_metal_door": {
     "name": {
@@ -2419,7 +2497,8 @@
       "en": "Ancient Metal Door"
     },
     "img": "img/items/ancient_metal_door.png",
-    "tier": null
+    "tier": "ancient_metal",
+    "category": "block"
   },
   "ancient_metal_fence": {
     "name": {
@@ -2427,7 +2506,8 @@
       "en": "Ancient Metal Fence"
     },
     "img": "img/items/ancient_metal_fence.png",
-    "tier": null
+    "tier": "ancient_metal",
+    "category": "block"
   },
   "ancient_metal_filter_paper_knowledge_book": {
     "name": {
@@ -2435,7 +2515,8 @@
       "en": "Ancient Metal Filter Paper Knowledge Book"
     },
     "img": "img/items/ancient_metal_filter_paper_knowledge_book.png",
-    "tier": null
+    "tier": "ancient_metal",
+    "category": "misc"
   },
   "ancient_metal_flint_and_steel": {
     "name": {
@@ -2443,7 +2524,8 @@
       "en": "Ancient Metal Flint and Steel"
     },
     "img": "img/items/ancient_metal_flint_and_steel.png",
-    "tier": null
+    "tier": "ancient_metal",
+    "category": "material"
   },
   "ancient_metal_fluid_tank": {
     "name": {
@@ -2451,7 +2533,8 @@
       "en": "Ancient Metal Fluid Tank"
     },
     "img": "img/items/ancient_metal_fluid_tank.png",
-    "tier": null
+    "tier": "ancient_metal",
+    "category": "block"
   },
   "ancient_metal_hand_axe": {
     "name": {
@@ -2459,7 +2542,8 @@
       "en": "Ancient Metal Hand Axe"
     },
     "img": "img/items/ancient_metal_hand_axe.png",
-    "tier": "ancient"
+    "tier": "ancient_metal",
+    "category": "tool"
   },
   "ancient_metal_nugget": {
     "name": {
@@ -2467,7 +2551,8 @@
       "en": "Ancient Metal Nugget"
     },
     "img": "img/items/ancient_metal_nugget.png",
-    "tier": null
+    "tier": "ancient_metal",
+    "category": "material"
   },
   "ancient_metal_shield": {
     "name": {
@@ -2475,7 +2560,8 @@
       "en": "Ancient Metal Shield"
     },
     "img": "img/items/ancient_metal_shield.png",
-    "tier": "ancient"
+    "tier": "ancient_metal",
+    "category": "weapon"
   },
   "ancient_metal_short_sword": {
     "name": {
@@ -2483,7 +2569,8 @@
       "en": "Ancient Metal Short Sword"
     },
     "img": "img/items/ancient_metal_sword.png",
-    "tier": "ancient"
+    "tier": "ancient_metal",
+    "category": "weapon"
   },
   "ancient_metal_shovel": {
     "name": {
@@ -2491,7 +2578,8 @@
       "en": "Ancient Metal Shovel"
     },
     "img": "img/items/ancient_metal_shovel.png",
-    "tier": "ancient"
+    "tier": "ancient_metal",
+    "category": "tool"
   },
   "andesite": {
     "name": {
@@ -2499,7 +2587,8 @@
       "en": "Andesite"
     },
     "img": "img/items/andesite.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "apple": {
     "name": {
@@ -2507,7 +2596,8 @@
       "en": "Apple"
     },
     "img": "img/items/apple.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "armor_stand": {
     "name": {
@@ -2515,7 +2605,8 @@
       "en": "Armor Stand"
     },
     "img": "img/items/armor_stand.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "baked_potato": {
     "name": {
@@ -2523,7 +2614,8 @@
       "en": "Baked Potato"
     },
     "img": "img/items/baked_potato.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "bamboo": {
     "name": {
@@ -2531,7 +2623,8 @@
       "en": "Bamboo"
     },
     "img": "img/items/bamboo.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "banana_leaves": {
     "name": {
@@ -2539,7 +2632,8 @@
       "en": "Banana Leaves"
     },
     "img": "img/items/banana_leaves.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "barrel": {
     "name": {
@@ -2547,7 +2641,8 @@
       "en": "Barrel"
     },
     "img": "img/items/barrel.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "battery_knowledge_book": {
     "name": {
@@ -2555,7 +2650,8 @@
       "en": "Battery Knowledge Book"
     },
     "img": "img/items/battery.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "bed_black": {
     "name": {
@@ -2563,7 +2659,8 @@
       "en": "Black Bed"
     },
     "img": "img/items/bed_black.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "bed_white": {
     "name": {
@@ -2571,7 +2668,8 @@
       "en": "White Bed"
     },
     "img": "img/items/bed_white.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "beef_soup": {
     "name": {
@@ -2579,7 +2677,8 @@
       "en": "Beef Soup"
     },
     "img": "img/items/beef_soup.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "belt": {
     "name": {
@@ -2587,7 +2686,8 @@
       "en": "Belt"
     },
     "img": "img/items/belt.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "binding_scroll": {
     "name": {
@@ -2595,7 +2695,8 @@
       "en": "Binding Scroll"
     },
     "img": "img/items/binding_scroll.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "birch_door": {
     "name": {
@@ -2603,7 +2704,8 @@
       "en": "Birch Door"
     },
     "img": "img/items/birch_door.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "birch_fence": {
     "name": {
@@ -2611,7 +2713,8 @@
       "en": "Birch Fence"
     },
     "img": "img/items/birch_fence.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "birch_fence_gate": {
     "name": {
@@ -2619,7 +2722,8 @@
       "en": "Birch Fence Gate"
     },
     "img": "img/items/birch_fence_gate.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "birch_leaves": {
     "name": {
@@ -2627,7 +2731,8 @@
       "en": "Birch Leaves"
     },
     "img": "img/items/birch_leaves.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "birch_sieve": {
     "name": {
@@ -2635,7 +2740,8 @@
       "en": "Birch Sieve"
     },
     "img": "img/items/birch_sieve.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "birch_wood_crate": {
     "name": {
@@ -2643,7 +2749,8 @@
       "en": "Birch Wood Crate"
     },
     "img": "img/items/birch_wood_crate.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "birch_wood_slab_single": {
     "name": {
@@ -2651,7 +2758,8 @@
       "en": "Birch Wood Slab"
     },
     "img": "img/items/birch_wood_slab_single.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "birch_wood_stairs": {
     "name": {
@@ -2659,7 +2767,8 @@
       "en": "Birch Wood Stairs"
     },
     "img": "img/items/birch_wood_stairs.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "black_carpet": {
     "name": {
@@ -2667,7 +2776,8 @@
       "en": "Black Carpet"
     },
     "img": "img/items/black_carpet.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "black_stained_clay_colored": {
     "name": {
@@ -2675,7 +2785,8 @@
       "en": "Black Stained Clay"
     },
     "img": "img/items/black_stained_clay_colored.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "black_wool": {
     "name": {
@@ -2683,7 +2794,8 @@
       "en": "Black Wool"
     },
     "img": "img/items/black_wool.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "blaze_powder": {
     "name": {
@@ -2691,7 +2803,8 @@
       "en": "Blaze Powder"
     },
     "img": "img/items/blaze_powder.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "blaze_rod": {
     "name": {
@@ -2699,7 +2812,8 @@
       "en": "Blaze Rod"
     },
     "img": "img/items/blaze_rod.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "blue_bed": {
     "name": {
@@ -2707,7 +2821,8 @@
       "en": "Blue Bed"
     },
     "img": "img/items/blue_bed.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "blue_carpet": {
     "name": {
@@ -2715,7 +2830,8 @@
       "en": "Blue Carpet"
     },
     "img": "img/items/blue_carpet.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "blue_compass": {
     "name": {
@@ -2723,7 +2839,8 @@
       "en": "Blue Compass"
     },
     "img": "img/items/blue_compass.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "blue_stained_clay_colored": {
     "name": {
@@ -2731,7 +2848,8 @@
       "en": "Blue Stained Clay"
     },
     "img": "img/items/blue_stained_clay_colored.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "blue_wool": {
     "name": {
@@ -2739,7 +2857,8 @@
       "en": "Blue Wool"
     },
     "img": "img/items/blue_wool.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "blueberries": {
     "name": {
@@ -2747,7 +2866,8 @@
       "en": "Blueberries"
     },
     "img": "img/food/blueberries.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "blueberry_porridge": {
     "name": {
@@ -2755,7 +2875,8 @@
       "en": "Blueberry Porridge"
     },
     "img": "img/items/blueberry_porridge.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "boat": {
     "name": {
@@ -2763,7 +2884,8 @@
       "en": "Boat"
     },
     "img": "img/items/boat.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "bone": {
     "name": {
@@ -2771,7 +2893,8 @@
       "en": "Bone"
     },
     "img": "img/items/bone.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "bone_club": {
     "name": {
@@ -2779,7 +2902,7 @@
       "en": "Bone Club"
     },
     "img": "img/items/bone_club.png",
-    "tier": null,
+    "tier": "bone",
     "max_durability": 550,
     "category": "weapon"
   },
@@ -2789,7 +2912,8 @@
       "en": "Bone Meal"
     },
     "img": "img/items/bone_meal.png",
-    "tier": null
+    "tier": "bone",
+    "category": "food"
   },
   "book_and_quill": {
     "name": {
@@ -2797,7 +2921,8 @@
       "en": "Book and Quill"
     },
     "img": "img/items/book_and_quill.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "bookshelf": {
     "name": {
@@ -2805,7 +2930,8 @@
       "en": "Bookshelf"
     },
     "img": "img/items/bookshelf.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "bottle_o_enchanting": {
     "name": {
@@ -2813,7 +2939,8 @@
       "en": "Bottle o' Enchanting"
     },
     "img": "img/items/bottle_o_enchanting.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "bottle_of_disenchanting": {
     "name": {
@@ -2839,7 +2966,8 @@
       "en": "Bowl of Water"
     },
     "img": "img/items/bowl_water.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "brewing_stand": {
     "name": {
@@ -2847,7 +2975,8 @@
       "en": "Brewing Stand"
     },
     "img": "img/items/brewing_stand.png",
-    "tier": null
+    "tier": null,
+    "category": "station"
   },
   "brick": {
     "name": {
@@ -2864,7 +2993,8 @@
       "en": "Brick Slab"
     },
     "img": "img/items/brick_slab_single.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "brick_stairs": {
     "name": {
@@ -2872,7 +3002,8 @@
       "en": "Brick Stairs"
     },
     "img": "img/items/brick_stairs.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "bricks": {
     "name": {
@@ -2880,7 +3011,8 @@
       "en": "Bricks"
     },
     "img": "img/items/bricks.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "bronze_war_hammer": {
     "name": {
@@ -2898,7 +3030,8 @@
       "en": "Brown Bed"
     },
     "img": "img/items/brown_bed.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "brown_carpet": {
     "name": {
@@ -2906,7 +3039,8 @@
       "en": "Brown Carpet"
     },
     "img": "img/items/brown_carpet.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "brown_stained_clay_colored": {
     "name": {
@@ -2914,7 +3048,8 @@
       "en": "Brown Stained Clay"
     },
     "img": "img/items/brown_stained_clay_colored.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "brown_wool": {
     "name": {
@@ -2922,7 +3057,8 @@
       "en": "Brown Wool"
     },
     "img": "img/items/brown_wool.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "button_stone": {
     "name": {
@@ -2930,7 +3066,8 @@
       "en": "Stone Button"
     },
     "img": "img/items/button_stone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "button_wood": {
     "name": {
@@ -2938,7 +3075,8 @@
       "en": "Wood Button"
     },
     "img": "img/items/button_wood.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "cactus_green": {
     "name": {
@@ -2946,7 +3084,8 @@
       "en": "Cactus Green Dye"
     },
     "img": "img/items/cactus_green.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "cake": {
     "name": {
@@ -2954,7 +3093,8 @@
       "en": "Cake"
     },
     "img": "img/items/cake.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "campfire_idle": {
     "name": {
@@ -2962,7 +3102,8 @@
       "en": "Campfire"
     },
     "img": "img/items/campfire_idle.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "carbon_crystal": {
     "name": {
@@ -2979,7 +3120,8 @@
       "en": "Carpet"
     },
     "img": "img/items/carpet.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "carrot": {
     "name": {
@@ -2987,7 +3129,8 @@
       "en": "Carrot"
     },
     "img": "img/items/carrot.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "carrot_on_a_stick_adamantium": {
     "name": {
@@ -2995,7 +3138,8 @@
       "en": "Carrot on a Stick (Adamantium)"
     },
     "img": "img/items/carrot_on_a_stick_adamantium.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "carrot_on_a_stick_ancient_metal": {
     "name": {
@@ -3003,7 +3147,8 @@
       "en": "Carrot on a Stick (Ancient Metal)"
     },
     "img": "img/items/carrot_on_a_stick_ancient_metal.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "carrot_on_a_stick_copper": {
     "name": {
@@ -3011,7 +3156,8 @@
       "en": "Carrot on a Stick (Copper)"
     },
     "img": "img/items/carrot_on_a_stick_copper.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "carrot_on_a_stick_flint": {
     "name": {
@@ -3019,7 +3165,8 @@
       "en": "Carrot on a Stick (Flint)"
     },
     "img": "img/items/carrot_on_a_stick_flint.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "carrot_on_a_stick_gold": {
     "name": {
@@ -3027,7 +3174,8 @@
       "en": "Carrot on a Stick (Gold)"
     },
     "img": "img/items/carrot_on_a_stick_gold.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "carrot_on_a_stick_iron": {
     "name": {
@@ -3035,7 +3183,8 @@
       "en": "Carrot on a Stick (Iron)"
     },
     "img": "img/items/carrot_on_a_stick_iron.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "carrot_on_a_stick_mithril": {
     "name": {
@@ -3043,7 +3192,8 @@
       "en": "Carrot on a Stick (Mithril)"
     },
     "img": "img/items/carrot_on_a_stick_mithril.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "carrot_on_a_stick_obsidian": {
     "name": {
@@ -3051,7 +3201,8 @@
       "en": "Carrot on a Stick (Obsidian)"
     },
     "img": "img/items/carrot_on_a_stick_obsidian.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "carrot_on_a_stick_silver": {
     "name": {
@@ -3059,7 +3210,8 @@
       "en": "Carrot on a Stick (Silver)"
     },
     "img": "img/items/carrot_on_a_stick_silver.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "cauldron": {
     "name": {
@@ -3076,7 +3228,8 @@
       "en": "Cheese"
     },
     "img": "img/food/cheese.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "chest": {
     "name": {
@@ -3084,7 +3237,8 @@
       "en": "Chest"
     },
     "img": "img/items/chest.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "chicken_soup": {
     "name": {
@@ -3092,7 +3246,8 @@
       "en": "Chicken Soup"
     },
     "img": "img/items/chicken_soup.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "chiseled_quartz_block": {
     "name": {
@@ -3100,7 +3255,8 @@
       "en": "Chiseled Quartz Block"
     },
     "img": "img/items/chiseled_quartz_block.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "chiseled_sandstone": {
     "name": {
@@ -3108,7 +3264,8 @@
       "en": "Chiseled Sandstone"
     },
     "img": "img/items/chiseled_sandstone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "chocolate": {
     "name": {
@@ -3116,7 +3273,8 @@
       "en": "Chocolate"
     },
     "img": "img/food/chocolate.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "clay_furnace_idle": {
     "name": {
@@ -3124,7 +3282,8 @@
       "en": "Clay Furnace"
     },
     "img": "img/items/clay_furnace_idle.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "clay_portal_stone": {
     "name": {
@@ -3132,7 +3291,8 @@
       "en": "Clay Portal Stone"
     },
     "img": "img/items/clay_portal_stone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "clock": {
     "name": {
@@ -3149,7 +3309,8 @@
       "en": "Clock Knowledge Book"
     },
     "img": "img/items/clock_knowledge_book.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "coal_block": {
     "name": {
@@ -3157,7 +3318,8 @@
       "en": "Coal Block"
     },
     "img": "img/items/coal_block.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "coarse_dirt": {
     "name": {
@@ -3165,7 +3327,8 @@
       "en": "Coarse Dirt"
     },
     "img": "img/items/coarse_dirt.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "cobblestone_slab_single": {
     "name": {
@@ -3173,7 +3336,8 @@
       "en": "Cobblestone Slab"
     },
     "img": "img/items/cobblestone_slab_single.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "cobblestone_wall": {
     "name": {
@@ -3181,7 +3345,8 @@
       "en": "Cobblestone Wall"
     },
     "img": "img/items/cobblestone_wall.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "cocoa_beans": {
     "name": {
@@ -3189,7 +3354,8 @@
       "en": "Cocoa Beans"
     },
     "img": "img/items/cocoa_beans.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "coconut_leaves": {
     "name": {
@@ -3197,7 +3363,8 @@
       "en": "Coconut Leaves"
     },
     "img": "img/items/coconut_leaves.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "compass": {
     "name": {
@@ -3205,7 +3372,8 @@
       "en": "Compass"
     },
     "img": "img/items/compass.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "cooked_beef": {
     "name": {
@@ -3213,7 +3381,8 @@
       "en": "Cooked Beef"
     },
     "img": "img/items/cooked_beef.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "cooked_chicken": {
     "name": {
@@ -3221,7 +3390,8 @@
       "en": "Cooked Chicken"
     },
     "img": "img/items/cooked_chicken.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "cookie": {
     "name": {
@@ -3229,7 +3399,8 @@
       "en": "Cookie"
     },
     "img": "img/items/cookie.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "coolant_knowledge_book": {
     "name": {
@@ -3237,7 +3408,8 @@
       "en": "Coolant Knowledge Book"
     },
     "img": "img/items/coolant_knowledge_book.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "copper_anvil": {
     "name": {
@@ -3245,7 +3417,8 @@
       "en": "Copper Anvil"
     },
     "img": "img/items/copper_anvil.png",
-    "tier": null
+    "tier": "copper",
+    "category": "station"
   },
   "copper_block": {
     "name": {
@@ -3253,7 +3426,8 @@
       "en": "Copper Block"
     },
     "img": "img/blocks/copper_block.png",
-    "tier": null
+    "tier": "copper",
+    "category": "block"
   },
   "copper_bucket": {
     "name": {
@@ -3261,7 +3435,8 @@
       "en": "Copper Bucket"
     },
     "img": "img/items/copper_bucket.png",
-    "tier": null
+    "tier": "copper",
+    "category": "misc"
   },
   "copper_bucket_filled_with_milk": {
     "name": {
@@ -3269,7 +3444,8 @@
       "en": "Copper Bucket of Milk"
     },
     "img": "img/items/copper_bucket_filled_with_milk.png",
-    "tier": null
+    "tier": "copper",
+    "category": "misc"
   },
   "copper_bucket_filled_with_stone": {
     "name": {
@@ -3277,7 +3453,8 @@
       "en": "Copper Bucket of Stone"
     },
     "img": "img/items/copper_bucket_filled_with_stone.png",
-    "tier": null
+    "tier": "copper",
+    "category": "block"
   },
   "copper_bucket_filled_with_water": {
     "name": {
@@ -3285,7 +3462,8 @@
       "en": "Copper Bucket of Water"
     },
     "img": "img/items/copper_bucket_filled_with_water.png",
-    "tier": null
+    "tier": "copper",
+    "category": "misc"
   },
   "copper_chain_boots": {
     "name": {
@@ -3293,7 +3471,8 @@
       "en": "Copper Chain Boots"
     },
     "img": "img/armor/copper_chainmail_boots.png",
-    "tier": "copper"
+    "tier": "copper",
+    "category": "armor"
   },
   "copper_chain_chestplate": {
     "name": {
@@ -3301,7 +3480,8 @@
       "en": "Copper Chain Chestplate"
     },
     "img": "img/armor/copper_chainmail_chestplate.png",
-    "tier": "copper"
+    "tier": "copper",
+    "category": "armor"
   },
   "copper_chain_helmet": {
     "name": {
@@ -3309,7 +3489,8 @@
       "en": "Copper Chain Helmet"
     },
     "img": "img/armor/copper_chainmail_helmet.png",
-    "tier": "copper"
+    "tier": "copper",
+    "category": "armor"
   },
   "copper_chain_leggings": {
     "name": {
@@ -3317,7 +3498,8 @@
       "en": "Copper Chain Leggings"
     },
     "img": "img/armor/copper_chainmail_leggings.png",
-    "tier": "copper"
+    "tier": "copper",
+    "category": "armor"
   },
   "copper_coin": {
     "name": {
@@ -3325,7 +3507,8 @@
       "en": "Copper Coin"
     },
     "img": "img/items/copper_coin.png",
-    "tier": null
+    "tier": "copper",
+    "category": "material"
   },
   "copper_door": {
     "name": {
@@ -3333,7 +3516,8 @@
       "en": "Copper Door"
     },
     "img": "img/items/copper_door.png",
-    "tier": null
+    "tier": "copper",
+    "category": "block"
   },
   "copper_fence": {
     "name": {
@@ -3341,7 +3525,8 @@
       "en": "Copper Fence"
     },
     "img": "img/items/copper_fence.png",
-    "tier": null
+    "tier": "copper",
+    "category": "block"
   },
   "copper_flint_and_steel": {
     "name": {
@@ -3349,7 +3534,8 @@
       "en": "Copper Flint and Steel"
     },
     "img": "img/items/copper_flint_and_steel.png",
-    "tier": null
+    "tier": "copper",
+    "category": "material"
   },
   "copper_fluid_tank": {
     "name": {
@@ -3357,7 +3543,8 @@
       "en": "Copper Fluid Tank"
     },
     "img": "img/items/copper_fluid_tank.png",
-    "tier": null
+    "tier": "copper",
+    "category": "block"
   },
   "copper_hand_axe": {
     "name": {
@@ -3365,7 +3552,8 @@
       "en": "Copper Hand Axe"
     },
     "img": "img/items/copper_hand_axe.png",
-    "tier": "copper"
+    "tier": "copper",
+    "category": "tool"
   },
   "copper_ore": {
     "name": {
@@ -3373,7 +3561,8 @@
       "en": "Copper Ore"
     },
     "img": "img/blocks/copper_ore.png",
-    "tier": null
+    "tier": "copper",
+    "category": "block"
   },
   "copper_shield": {
     "name": {
@@ -3381,7 +3570,8 @@
       "en": "Copper Shield"
     },
     "img": "img/items/copper_shield.png",
-    "tier": "copper"
+    "tier": "copper",
+    "category": "weapon"
   },
   "copper_short_sword": {
     "name": {
@@ -3389,7 +3579,8 @@
       "en": "Copper Short Sword"
     },
     "img": "img/items/copper_sword.png",
-    "tier": "copper"
+    "tier": "copper",
+    "category": "weapon"
   },
   "core_breaker": {
     "name": {
@@ -3397,7 +3588,8 @@
       "en": "Core Breaker"
     },
     "img": "img/items/core_breaker.png",
-    "tier": null
+    "tier": null,
+    "category": "weapon"
   },
   "core_breaker_knowledge_book": {
     "name": {
@@ -3405,7 +3597,8 @@
       "en": "Core Breaker Knowledge Book"
     },
     "img": "img/items/core_breaker_knowledge_book.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "cornflower": {
     "name": {
@@ -3413,7 +3606,8 @@
       "en": "Cornflower"
     },
     "img": "img/items/cornflower.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "cream_of_mushroom_soup": {
     "name": {
@@ -3421,7 +3615,8 @@
       "en": "Cream of Mushroom Soup"
     },
     "img": "img/items/cream_of_mushroom_soup.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "cream_of_vegetable_soup": {
     "name": {
@@ -3429,7 +3624,8 @@
       "en": "Cream of Vegetable Soup"
     },
     "img": "img/items/cream_of_vegetable_soup.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "cyan_bed": {
     "name": {
@@ -3437,7 +3633,8 @@
       "en": "Cyan Bed"
     },
     "img": "img/items/cyan_bed.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "cyan_carpet": {
     "name": {
@@ -3445,7 +3642,8 @@
       "en": "Cyan Carpet"
     },
     "img": "img/items/cyan_carpet.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "cyan_dye": {
     "name": {
@@ -3453,7 +3651,8 @@
       "en": "Cyan Dye"
     },
     "img": "img/items/cyan_dye.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "cyan_stained_clay_colored": {
     "name": {
@@ -3461,7 +3660,8 @@
       "en": "Cyan Stained Clay"
     },
     "img": "img/items/cyan_stained_clay_colored.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "cyan_wool": {
     "name": {
@@ -3469,7 +3669,8 @@
       "en": "Cyan Wool"
     },
     "img": "img/items/cyan_wool.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "dahlia": {
     "name": {
@@ -3495,7 +3696,8 @@
       "en": "Dandelion"
     },
     "img": "img/items/dandelion.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "dandelion_yellow": {
     "name": {
@@ -3503,7 +3705,8 @@
       "en": "Dandelion Yellow Dye"
     },
     "img": "img/items/dandelion_yellow.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "daylight_sensor": {
     "name": {
@@ -3511,7 +3714,8 @@
       "en": "Daylight Sensor"
     },
     "img": "img/items/daylight_sensor.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "detector_rail": {
     "name": {
@@ -3519,7 +3723,8 @@
       "en": "Detector Rail"
     },
     "img": "img/items/detector_rail.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "diamond_block": {
     "name": {
@@ -3527,7 +3732,8 @@
       "en": "Diamond Block"
     },
     "img": "img/items/diamond_block.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "diamond_shard": {
     "name": {
@@ -3535,7 +3741,8 @@
       "en": "Diamond Shard"
     },
     "img": "img/items/diamond_shard.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "diorite": {
     "name": {
@@ -3543,7 +3750,8 @@
       "en": "Diorite"
     },
     "img": "img/items/diorite.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "dirt": {
     "name": {
@@ -3551,7 +3759,8 @@
       "en": "Dirt"
     },
     "img": "img/items/dirt.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "dirt_portal_stone": {
     "name": {
@@ -3559,7 +3768,8 @@
       "en": "Dirt Portal Stone"
     },
     "img": "img/items/dirt_portal_stone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "dispenser": {
     "name": {
@@ -3567,7 +3777,8 @@
       "en": "Dispenser"
     },
     "img": "img/items/dispenser.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "dough": {
     "name": {
@@ -3575,7 +3786,8 @@
       "en": "Dough"
     },
     "img": "img/food/dough.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "dropper": {
     "name": {
@@ -3583,7 +3795,8 @@
       "en": "Dropper"
     },
     "img": "img/items/dropper.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "egg": {
     "name": {
@@ -3591,7 +3804,8 @@
       "en": "Egg"
     },
     "img": "img/items/egg.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "element_obsidian": {
     "name": {
@@ -3608,7 +3822,8 @@
       "en": "Elemental Water Skin Knowledge Book"
     },
     "img": "img/items/elemental_water_skin_knowledge_book.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "emerald_block": {
     "name": {
@@ -3616,7 +3831,8 @@
       "en": "Emerald Block"
     },
     "img": "img/items/emerald_block.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "emerald_shard": {
     "name": {
@@ -3624,7 +3840,8 @@
       "en": "Emerald Shard"
     },
     "img": "img/items/emerald_shard.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "empty_antique_atlas": {
     "name": {
@@ -3641,7 +3858,8 @@
       "en": "Empty Large Water Skin"
     },
     "img": "img/items/empty_large_water_skin.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "empty_map": {
     "name": {
@@ -3658,7 +3876,8 @@
       "en": "Empty Water Skin"
     },
     "img": "img/items/empty_water_skin.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "enchanted_golden_apple": {
     "name": {
@@ -3666,7 +3885,8 @@
       "en": "Enchanted Golden Apple"
     },
     "img": "img/items/enchanted_golden_apple.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "enchantment_table_emerald": {
     "name": {
@@ -3674,7 +3894,8 @@
       "en": "Emerald Enchantment Table"
     },
     "img": "img/items/enchantment_table_emerald.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "ender_chest": {
     "name": {
@@ -3682,7 +3903,8 @@
       "en": "Ender Chest"
     },
     "img": "img/items/ender_chest.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "ender_pearl": {
     "name": {
@@ -3690,7 +3912,8 @@
       "en": "Ender Pearl"
     },
     "img": "img/items/ender_pearl.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "fence": {
     "name": {
@@ -3698,7 +3921,8 @@
       "en": "Fence"
     },
     "img": "img/items/fence.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "fence_gate": {
     "name": {
@@ -3706,7 +3930,8 @@
       "en": "Fence Gate"
     },
     "img": "img/items/fence_gate.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "fermented_spider_eye": {
     "name": {
@@ -3714,7 +3939,8 @@
       "en": "Fermented Spider Eye"
     },
     "img": "img/items/fermented_spider_eye.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "fire_charge": {
     "name": {
@@ -3722,7 +3948,8 @@
       "en": "Fire Charge"
     },
     "img": "img/items/fire_charge.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "fish_ball": {
     "name": {
@@ -3730,7 +3957,8 @@
       "en": "Fish Ball"
     },
     "img": "img/items/fish_ball.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "fishing_rod_adamantium": {
     "name": {
@@ -3738,7 +3966,8 @@
       "en": "Adamantium Fishing Rod"
     },
     "img": "img/items/fishing_rod_adamantium.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "fishing_rod_ancient_metal": {
     "name": {
@@ -3746,7 +3975,8 @@
       "en": "Ancient Metal Fishing Rod"
     },
     "img": "img/items/fishing_rod_ancient_metal.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "fishing_rod_copper": {
     "name": {
@@ -3754,7 +3984,8 @@
       "en": "Copper Fishing Rod"
     },
     "img": "img/items/fishing_rod_copper.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "fishing_rod_flint": {
     "name": {
@@ -3762,7 +3993,8 @@
       "en": "Flint Fishing Rod"
     },
     "img": "img/items/fishing_rod_flint.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "fishing_rod_gold": {
     "name": {
@@ -3770,7 +4002,8 @@
       "en": "Gold Fishing Rod"
     },
     "img": "img/items/fishing_rod_gold.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "fishing_rod_hard": {
     "name": {
@@ -3778,7 +4011,8 @@
       "en": "Hardstone Fishing Rod"
     },
     "img": "img/items/fishing_rod_hard.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "fishing_rod_iron": {
     "name": {
@@ -3786,7 +4020,8 @@
       "en": "Iron Fishing Rod"
     },
     "img": "img/items/fishing_rod_iron.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "fishing_rod_mithril": {
     "name": {
@@ -3794,7 +4029,8 @@
       "en": "Mithril Fishing Rod"
     },
     "img": "img/items/fishing_rod_mithril.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "fishing_rod_obsidian": {
     "name": {
@@ -3802,7 +4038,8 @@
       "en": "Obsidian Fishing Rod"
     },
     "img": "img/items/fishing_rod_obsidian.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "fishing_rod_silver": {
     "name": {
@@ -3810,7 +4047,8 @@
       "en": "Silver Fishing Rod"
     },
     "img": "img/items/fishing_rod_silver.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "flint_and_steel": {
     "name": {
@@ -3818,7 +4056,8 @@
       "en": "Flint and Steel"
     },
     "img": "img/items/flint_and_steel.png",
-    "tier": null
+    "tier": "flint",
+    "category": "material"
   },
   "flint_axe": {
     "name": {
@@ -3826,7 +4065,8 @@
       "en": "Flint Axe"
     },
     "img": "img/items/flint_axe.png",
-    "tier": "flint"
+    "tier": "flint",
+    "category": "weapon"
   },
   "flint_hatchet": {
     "name": {
@@ -3834,7 +4074,8 @@
       "en": "Flint Hatchet"
     },
     "img": "img/items/flint_hatchet.png",
-    "tier": "flint"
+    "tier": "flint",
+    "category": "tool"
   },
   "flint_pickaxe": {
     "name": {
@@ -3852,7 +4093,8 @@
       "en": "Flint Shovel"
     },
     "img": "img/items/flint_shovel.png",
-    "tier": "flint"
+    "tier": "flint",
+    "category": "tool"
   },
   "flour": {
     "name": {
@@ -3869,7 +4111,8 @@
       "en": "Flower Pot"
     },
     "img": "img/items/flower_pot.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "fruit_sorbet": {
     "name": {
@@ -3877,7 +4120,8 @@
       "en": "Fruit Sorbet"
     },
     "img": "img/items/fruit_sorbet.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "giant_tnt_knowledge_book": {
     "name": {
@@ -3885,7 +4129,8 @@
       "en": "Giant TNT Knowledge Book"
     },
     "img": "img/items/giant_tnt_knowledge_book.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "glass": {
     "name": {
@@ -3902,7 +4147,8 @@
       "en": "Glass Bottle"
     },
     "img": "img/items/glass_bottle.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "glass_pane": {
     "name": {
@@ -3910,7 +4156,8 @@
       "en": "Glass Pane"
     },
     "img": "img/items/glass_pane.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "glass_shard": {
     "name": {
@@ -3918,7 +4165,8 @@
       "en": "Glass Shard"
     },
     "img": "img/items/glass_shard.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "glistering_melon": {
     "name": {
@@ -3926,7 +4174,8 @@
       "en": "Glistering Melon Slice"
     },
     "img": "img/items/glistering_melon.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "glowstone": {
     "name": {
@@ -3934,7 +4183,8 @@
       "en": "Glowstone"
     },
     "img": "img/items/glowstone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "glowstone_dust": {
     "name": {
@@ -3942,7 +4192,8 @@
       "en": "Glowstone Dust"
     },
     "img": "img/items/glowstone_dust.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "glowstone_torch": {
     "name": {
@@ -3950,7 +4201,8 @@
       "en": "Glowstone Torch"
     },
     "img": "img/items/glowstone_torch.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "gold_anvil": {
     "name": {
@@ -3958,7 +4210,8 @@
       "en": "Gold Anvil"
     },
     "img": "img/items/gold_anvil.png",
-    "tier": null
+    "tier": "gold",
+    "category": "station"
   },
   "gold_block": {
     "name": {
@@ -3966,7 +4219,8 @@
       "en": "Gold Block"
     },
     "img": "img/blocks/gold_block.png",
-    "tier": null
+    "tier": "gold",
+    "category": "block"
   },
   "gold_bucket": {
     "name": {
@@ -3974,7 +4228,8 @@
       "en": "Gold Bucket"
     },
     "img": "img/items/gold_bucket.png",
-    "tier": null
+    "tier": "gold",
+    "category": "misc"
   },
   "gold_bucket_filled_with_milk": {
     "name": {
@@ -3982,7 +4237,8 @@
       "en": "Gold Bucket of Milk"
     },
     "img": "img/items/gold_bucket_filled_with_milk.png",
-    "tier": null
+    "tier": "gold",
+    "category": "misc"
   },
   "gold_bucket_filled_with_stone": {
     "name": {
@@ -3990,7 +4246,8 @@
       "en": "Gold Bucket of Stone"
     },
     "img": "img/items/gold_bucket_filled_with_stone.png",
-    "tier": null
+    "tier": "gold",
+    "category": "block"
   },
   "gold_bucket_filled_with_water": {
     "name": {
@@ -3998,7 +4255,8 @@
       "en": "Gold Bucket of Water"
     },
     "img": "img/items/gold_bucket_filled_with_water.png",
-    "tier": null
+    "tier": "gold",
+    "category": "misc"
   },
   "gold_chain_boots": {
     "name": {
@@ -4006,7 +4264,8 @@
       "en": "Gold Chain Boots"
     },
     "img": "img/armor/gold_chainmail_boots.png",
-    "tier": "gold"
+    "tier": "gold",
+    "category": "armor"
   },
   "gold_chain_chestplate": {
     "name": {
@@ -4014,7 +4273,8 @@
       "en": "Gold Chain Chestplate"
     },
     "img": "img/armor/gold_chainmail_chestplate.png",
-    "tier": "gold"
+    "tier": "gold",
+    "category": "armor"
   },
   "gold_chain_helmet": {
     "name": {
@@ -4022,7 +4282,8 @@
       "en": "Gold Chain Helmet"
     },
     "img": "img/armor/gold_chainmail_helmet.png",
-    "tier": "gold"
+    "tier": "gold",
+    "category": "armor"
   },
   "gold_chain_leggings": {
     "name": {
@@ -4030,7 +4291,8 @@
       "en": "Gold Chain Leggings"
     },
     "img": "img/armor/gold_chainmail_leggings.png",
-    "tier": "gold"
+    "tier": "gold",
+    "category": "armor"
   },
   "gold_coin": {
     "name": {
@@ -4038,7 +4300,8 @@
       "en": "Gold Coin"
     },
     "img": "img/items/gold_coin.png",
-    "tier": null
+    "tier": "gold",
+    "category": "material"
   },
   "gold_door": {
     "name": {
@@ -4046,7 +4309,8 @@
       "en": "Gold Door"
     },
     "img": "img/items/gold_door.png",
-    "tier": null
+    "tier": "gold",
+    "category": "block"
   },
   "gold_fence": {
     "name": {
@@ -4054,7 +4318,8 @@
       "en": "Gold Fence"
     },
     "img": "img/items/gold_fence.png",
-    "tier": null
+    "tier": "gold",
+    "category": "block"
   },
   "gold_filter_paper": {
     "name": {
@@ -4062,7 +4327,8 @@
       "en": "Gold Filter Paper"
     },
     "img": "img/items/gold_filter_paper.png",
-    "tier": null
+    "tier": "gold",
+    "category": "material"
   },
   "gold_flint_and_steel": {
     "name": {
@@ -4070,7 +4336,8 @@
       "en": "Gold Flint and Steel"
     },
     "img": "img/items/gold_flint_and_steel.png",
-    "tier": null
+    "tier": "gold",
+    "category": "material"
   },
   "gold_fluid_tank": {
     "name": {
@@ -4078,7 +4345,8 @@
       "en": "Gold Fluid Tank"
     },
     "img": "img/items/gold_fluid_tank.png",
-    "tier": null
+    "tier": "gold",
+    "category": "block"
   },
   "gold_hand_axe": {
     "name": {
@@ -4086,7 +4354,8 @@
       "en": "Gold Hand Axe"
     },
     "img": "img/items/gold_hand_axe.png",
-    "tier": "gold"
+    "tier": "gold",
+    "category": "tool"
   },
   "gold_ore": {
     "name": {
@@ -4094,7 +4363,8 @@
       "en": "Gold Ore"
     },
     "img": "img/items/gold_ore.png",
-    "tier": null
+    "tier": "gold",
+    "category": "block"
   },
   "gold_shield": {
     "name": {
@@ -4102,7 +4372,8 @@
       "en": "Gold Shield"
     },
     "img": "img/items/gold_shield.png",
-    "tier": "gold"
+    "tier": "gold",
+    "category": "weapon"
   },
   "gold_short_sword": {
     "name": {
@@ -4110,7 +4381,8 @@
       "en": "Gold Short Sword"
     },
     "img": "img/items/gold_sword.png",
-    "tier": "gold"
+    "tier": "gold",
+    "category": "weapon"
   },
   "gold_shovel": {
     "name": {
@@ -4118,7 +4390,8 @@
       "en": "Gold Shovel"
     },
     "img": "img/items/gold_shovel.png",
-    "tier": "gold"
+    "tier": "gold",
+    "category": "tool"
   },
   "golden_apple": {
     "name": {
@@ -4126,7 +4399,8 @@
       "en": "Golden Apple"
     },
     "img": "img/items/golden_apple.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "golden_carrot": {
     "name": {
@@ -4134,7 +4408,8 @@
       "en": "Golden Carrot"
     },
     "img": "img/items/golden_carrot.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "granite": {
     "name": {
@@ -4142,7 +4417,8 @@
       "en": "Granite"
     },
     "img": "img/items/granite.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "gravel": {
     "name": {
@@ -4150,7 +4426,8 @@
       "en": "Gravel"
     },
     "img": "img/items/gravel.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "gray_bed": {
     "name": {
@@ -4158,7 +4435,8 @@
       "en": "Gray Bed"
     },
     "img": "img/items/gray_bed.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "gray_carpet": {
     "name": {
@@ -4166,7 +4444,8 @@
       "en": "Gray Carpet"
     },
     "img": "img/items/gray_carpet.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "gray_dye": {
     "name": {
@@ -4174,7 +4453,8 @@
       "en": "Gray Dye"
     },
     "img": "img/items/gray_dye.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "gray_stained_clay_colored": {
     "name": {
@@ -4182,7 +4462,8 @@
       "en": "Gray Stained Clay"
     },
     "img": "img/items/gray_stained_clay_colored.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "gray_wool": {
     "name": {
@@ -4190,7 +4471,8 @@
       "en": "Gray Wool"
     },
     "img": "img/items/gray_wool.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "green_bed": {
     "name": {
@@ -4198,7 +4480,8 @@
       "en": "Green Bed"
     },
     "img": "img/items/green_bed.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "green_carpet": {
     "name": {
@@ -4206,7 +4489,8 @@
       "en": "Green Carpet"
     },
     "img": "img/items/green_carpet.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "green_stained_clay_colored": {
     "name": {
@@ -4214,7 +4498,8 @@
       "en": "Green Stained Clay"
     },
     "img": "img/items/green_stained_clay_colored.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "green_wool": {
     "name": {
@@ -4222,7 +4507,8 @@
       "en": "Green Wool"
     },
     "img": "img/items/green_wool.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "grindstone": {
     "name": {
@@ -4230,7 +4516,8 @@
       "en": "Grindstone"
     },
     "img": "img/items/grindstone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "gunpowder": {
     "name": {
@@ -4238,7 +4525,8 @@
       "en": "Gunpowder"
     },
     "img": "img/items/gunpowder.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "hard_stone_anvil": {
     "name": {
@@ -4246,7 +4534,8 @@
       "en": "Hardstone Anvil"
     },
     "img": "img/items/hard_stone_anvil.png",
-    "tier": null
+    "tier": "hard",
+    "category": "station"
   },
   "hard_stone_axe": {
     "name": {
@@ -4254,7 +4543,8 @@
       "en": "Hardstone Axe"
     },
     "img": "img/items/hard_stone_axe.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "weapon"
   },
   "hard_stone_battle_axe": {
     "name": {
@@ -4262,7 +4552,8 @@
       "en": "Hardstone Battle Axe"
     },
     "img": "img/items/hard_stone_battle_axe.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "weapon"
   },
   "hard_stone_boots": {
     "name": {
@@ -4270,7 +4561,8 @@
       "en": "Hardstone Boots"
     },
     "img": "img/items/hard_stone_boots.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "armor"
   },
   "hard_stone_bucket_of_milk": {
     "name": {
@@ -4278,7 +4570,8 @@
       "en": "Hardstone Bucket of Milk"
     },
     "img": "img/items/hard_stone_bucket_of_milk.png",
-    "tier": null
+    "tier": "hard",
+    "category": "misc"
   },
   "hard_stone_bucket_of_stone": {
     "name": {
@@ -4286,7 +4579,8 @@
       "en": "Hardstone Bucket of Stone"
     },
     "img": "img/items/hard_stone_bucket_of_stone.png",
-    "tier": null
+    "tier": "hard",
+    "category": "block"
   },
   "hard_stone_bucket_of_water": {
     "name": {
@@ -4294,7 +4588,8 @@
       "en": "Hardstone Bucket of Water"
     },
     "img": "img/items/hard_stone_bucket_of_water.png",
-    "tier": null
+    "tier": "hard",
+    "category": "misc"
   },
   "hard_stone_chestplate": {
     "name": {
@@ -4302,7 +4597,8 @@
       "en": "Hardstone Chestplate"
     },
     "img": "img/items/hard_stone_chestplate.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "armor"
   },
   "hard_stone_dagger": {
     "name": {
@@ -4320,7 +4616,8 @@
       "en": "Hardstone Flint and Steel"
     },
     "img": "img/items/hard_stone_flint_and_steel.png",
-    "tier": null
+    "tier": "hard",
+    "category": "material"
   },
   "hard_stone_fluid_tank": {
     "name": {
@@ -4328,7 +4625,8 @@
       "en": "Hardstone Fluid Tank"
     },
     "img": "img/items/hard_stone_fluid_tank.png",
-    "tier": null
+    "tier": "hard",
+    "category": "block"
   },
   "hard_stone_hand_axe": {
     "name": {
@@ -4336,7 +4634,8 @@
       "en": "Hardstone Hand Axe"
     },
     "img": "img/items/hard_stone_hand_axe.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "tool"
   },
   "hard_stone_helmet": {
     "name": {
@@ -4344,7 +4643,8 @@
       "en": "Hardstone Helmet"
     },
     "img": "img/items/hard_stone_helmet.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "armor"
   },
   "hard_stone_hoe": {
     "name": {
@@ -4352,7 +4652,8 @@
       "en": "Hardstone Hoe"
     },
     "img": "img/items/hard_stone_hoe.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "tool"
   },
   "hard_stone_leggings": {
     "name": {
@@ -4360,7 +4661,8 @@
       "en": "Hardstone Leggings"
     },
     "img": "img/items/hard_stone_leggings.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "armor"
   },
   "hard_stone_mattock": {
     "name": {
@@ -4368,7 +4670,8 @@
       "en": "Hardstone Mattock"
     },
     "img": "img/items/hard_stone_mattock.png",
-    "tier": null
+    "tier": "hard",
+    "category": "tool"
   },
   "hard_stone_pickaxe": {
     "name": {
@@ -4376,7 +4679,8 @@
       "en": "Hardstone Pickaxe"
     },
     "img": "img/items/hard_stone_pickaxe.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "tool"
   },
   "hard_stone_scythe": {
     "name": {
@@ -4384,7 +4688,8 @@
       "en": "Hardstone Scythe"
     },
     "img": "img/items/hard_stone_scythe.png",
-    "tier": null
+    "tier": "hard",
+    "category": "tool"
   },
   "hard_stone_shears": {
     "name": {
@@ -4392,7 +4697,8 @@
       "en": "Hardstone Shears"
     },
     "img": "img/items/hard_stone_shears.png",
-    "tier": null
+    "tier": "hard",
+    "category": "tool"
   },
   "hard_stone_shield": {
     "name": {
@@ -4400,7 +4706,8 @@
       "en": "Hardstone Shield"
     },
     "img": "img/items/hard_stone_shield.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "weapon"
   },
   "hard_stone_shovel": {
     "name": {
@@ -4408,7 +4715,8 @@
       "en": "Hardstone Shovel"
     },
     "img": "img/items/hard_stone_shovel.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "tool"
   },
   "hard_stone_sword": {
     "name": {
@@ -4416,7 +4724,8 @@
       "en": "Hardstone Sword"
     },
     "img": "img/items/hard_stone_sword.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "weapon"
   },
   "hard_stone_war_hammer": {
     "name": {
@@ -4424,7 +4733,8 @@
       "en": "Hardstone War Hammer"
     },
     "img": "img/items/hard_stone_war_hammer.png",
-    "tier": "hard"
+    "tier": "hard",
+    "category": "weapon"
   },
   "hardstone_block": {
     "name": {
@@ -4432,7 +4742,8 @@
       "en": "Hardstone Block"
     },
     "img": "img/blocks/hardstone_block.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "hardstone_bucket": {
     "name": {
@@ -4440,7 +4751,8 @@
       "en": "Hardstone Bucket"
     },
     "img": "img/items/hardstone_bucket.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "hardstone_coin": {
     "name": {
@@ -4448,7 +4760,8 @@
       "en": "Hardstone Coin"
     },
     "img": "img/items/hardstone_coin.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "hardstone_nugget": {
     "name": {
@@ -4456,7 +4769,8 @@
       "en": "Hardstone Nugget"
     },
     "img": "img/items/hardstone_nugget.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "hardstone_ore": {
     "name": {
@@ -4464,7 +4778,8 @@
       "en": "Hardstone Ore"
     },
     "img": "img/blocks/hardstone_ore.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "hay_bale": {
     "name": {
@@ -4472,7 +4787,8 @@
       "en": "Hay Bale"
     },
     "img": "img/items/hay_bale.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "high_carbon_steel_war_hammer": {
     "name": {
@@ -4490,7 +4806,8 @@
       "en": "Hopper"
     },
     "img": "img/items/hopper.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "ice_cream": {
     "name": {
@@ -4498,7 +4815,8 @@
       "en": "Ice Cream"
     },
     "img": "img/items/ice_cream.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "ice_cream_cone": {
     "name": {
@@ -4506,7 +4824,8 @@
       "en": "Ice Cream Cone"
     },
     "img": "img/items/ice_cream_cone.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "ink_sac": {
     "name": {
@@ -4514,7 +4833,8 @@
       "en": "Ink Sac"
     },
     "img": "img/items/ink_sac.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "iron_anvil": {
     "name": {
@@ -4522,7 +4842,8 @@
       "en": "Iron Anvil"
     },
     "img": "img/items/iron_anvil.png",
-    "tier": null
+    "tier": "iron",
+    "category": "station"
   },
   "iron_bars": {
     "name": {
@@ -4530,7 +4851,8 @@
       "en": "Iron Bars"
     },
     "img": "img/items/iron_bars.png",
-    "tier": null
+    "tier": "iron",
+    "category": "block"
   },
   "iron_block": {
     "name": {
@@ -4538,7 +4860,8 @@
       "en": "Iron Block"
     },
     "img": "img/items/iron_block.png",
-    "tier": null
+    "tier": "iron",
+    "category": "block"
   },
   "iron_boat": {
     "name": {
@@ -4546,7 +4869,8 @@
       "en": "Iron Boat"
     },
     "img": "img/items/iron_boat.png",
-    "tier": null
+    "tier": "iron",
+    "category": "misc"
   },
   "iron_bucket": {
     "name": {
@@ -4554,7 +4878,8 @@
       "en": "Iron Bucket"
     },
     "img": "img/items/iron_bucket.png",
-    "tier": null
+    "tier": "iron",
+    "category": "misc"
   },
   "iron_bucket_filled_with_milk": {
     "name": {
@@ -4562,7 +4887,8 @@
       "en": "Iron Bucket of Milk"
     },
     "img": "img/items/iron_bucket.png",
-    "tier": null
+    "tier": "iron",
+    "category": "misc"
   },
   "iron_bucket_filled_with_stone": {
     "name": {
@@ -4570,7 +4896,8 @@
       "en": "Iron Bucket of Stone"
     },
     "img": "img/items/iron_bucket.png",
-    "tier": null
+    "tier": "iron",
+    "category": "block"
   },
   "iron_bucket_filled_with_water": {
     "name": {
@@ -4578,7 +4905,8 @@
       "en": "Iron Bucket of Water"
     },
     "img": "img/items/iron_bucket.png",
-    "tier": null
+    "tier": "iron",
+    "category": "misc"
   },
   "iron_chain_boots": {
     "name": {
@@ -4586,7 +4914,8 @@
       "en": "Iron Chain Boots"
     },
     "img": "img/items/iron_chain_boots.png",
-    "tier": "iron"
+    "tier": "iron",
+    "category": "armor"
   },
   "iron_chain_chestplate": {
     "name": {
@@ -4594,7 +4923,8 @@
       "en": "Iron Chain Chestplate"
     },
     "img": "img/items/iron_chain_chestplate.png",
-    "tier": "iron"
+    "tier": "iron",
+    "category": "armor"
   },
   "iron_chain_helmet": {
     "name": {
@@ -4602,7 +4932,8 @@
       "en": "Iron Chain Helmet"
     },
     "img": "img/items/iron_chain_helmet.png",
-    "tier": "iron"
+    "tier": "iron",
+    "category": "armor"
   },
   "iron_chain_leggings": {
     "name": {
@@ -4610,7 +4941,8 @@
       "en": "Iron Chain Leggings"
     },
     "img": "img/items/iron_chain_leggings.png",
-    "tier": "iron"
+    "tier": "iron",
+    "category": "armor"
   },
   "iron_door": {
     "name": {
@@ -4618,7 +4950,8 @@
       "en": "Iron Door"
     },
     "img": "img/items/iron_door.png",
-    "tier": null
+    "tier": "iron",
+    "category": "block"
   },
   "iron_fluid_tank": {
     "name": {
@@ -4626,7 +4959,8 @@
       "en": "Iron Fluid Tank"
     },
     "img": "img/items/iron_fluid_tank.png",
-    "tier": null
+    "tier": "iron",
+    "category": "block"
   },
   "iron_hand_axe": {
     "name": {
@@ -4634,7 +4968,8 @@
       "en": "Iron Hand Axe"
     },
     "img": "img/items/iron_hand_axe.png",
-    "tier": "iron"
+    "tier": "iron",
+    "category": "tool"
   },
   "iron_ore": {
     "name": {
@@ -4642,7 +4977,8 @@
       "en": "Iron Ore"
     },
     "img": "img/items/iron_ore.png",
-    "tier": null
+    "tier": "iron",
+    "category": "block"
   },
   "iron_shield": {
     "name": {
@@ -4650,7 +4986,8 @@
       "en": "Iron Shield"
     },
     "img": "img/items/iron_shield.png",
-    "tier": "iron"
+    "tier": "iron",
+    "category": "weapon"
   },
   "iron_short_sword": {
     "name": {
@@ -4658,7 +4995,8 @@
       "en": "Iron Short Sword"
     },
     "img": "img/items/iron_short_sword.png",
-    "tier": "iron"
+    "tier": "iron",
+    "category": "weapon"
   },
   "item_frame": {
     "name": {
@@ -4666,7 +5004,8 @@
       "en": "Item Frame"
     },
     "img": "img/items/item_frame.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "jack_o_lantern": {
     "name": {
@@ -4674,7 +5013,8 @@
       "en": "Jack-o'-Lantern"
     },
     "img": "img/items/jack_o_lantern.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "jukebox": {
     "name": {
@@ -4682,7 +5022,8 @@
       "en": "Jukebox"
     },
     "img": "img/items/jukebox.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "jungle_door": {
     "name": {
@@ -4690,7 +5031,8 @@
       "en": "Jungle Door"
     },
     "img": "img/items/jungle_door.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "jungle_fence": {
     "name": {
@@ -4698,7 +5040,8 @@
       "en": "Jungle Fence"
     },
     "img": "img/items/jungle_fence.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "jungle_fence_gate": {
     "name": {
@@ -4706,7 +5049,8 @@
       "en": "Jungle Fence Gate"
     },
     "img": "img/items/jungle_fence_gate.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "jungle_leaves": {
     "name": {
@@ -4714,7 +5058,8 @@
       "en": "Jungle Leaves"
     },
     "img": "img/items/jungle_leaves.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "jungle_sieve": {
     "name": {
@@ -4722,7 +5067,8 @@
       "en": "Jungle Sieve"
     },
     "img": "img/items/jungle_sieve.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "jungle_wood_crate": {
     "name": {
@@ -4730,7 +5076,8 @@
       "en": "Jungle Wood Crate"
     },
     "img": "img/items/jungle_wood_crate.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "jungle_wood_slab_single": {
     "name": {
@@ -4738,7 +5085,8 @@
       "en": "Jungle Wood Slab"
     },
     "img": "img/items/jungle_wood_slab_single.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "jungle_wood_stairs": {
     "name": {
@@ -4746,7 +5094,8 @@
       "en": "Jungle Wood Stairs"
     },
     "img": "img/items/jungle_wood_stairs.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "ladder": {
     "name": {
@@ -4754,7 +5103,8 @@
       "en": "Ladder"
     },
     "img": "img/items/ladder.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "lantern": {
     "name": {
@@ -4762,7 +5112,8 @@
       "en": "Lantern"
     },
     "img": "img/blocks/lantern.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "lapis_block": {
     "name": {
@@ -4770,7 +5121,8 @@
       "en": "Lapis Lazuli Block"
     },
     "img": "img/items/lapis_block.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "lapis_lazuli": {
     "name": {
@@ -4778,7 +5130,8 @@
       "en": "Lapis Lazuli"
     },
     "img": "img/items/lapis_lazuli.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "large_backpack_upgrade": {
     "name": {
@@ -4786,7 +5139,8 @@
       "en": "Large Backpack Upgrade"
     },
     "img": "img/items/large_backpack_upgrade.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "latiao": {
     "name": {
@@ -4794,7 +5148,8 @@
       "en": "Latiao (Spicy Snack)"
     },
     "img": "img/items/latiao.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "lead": {
     "name": {
@@ -4802,7 +5157,8 @@
       "en": "Lead"
     },
     "img": "img/items/lead.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "leaf_portal_stone": {
     "name": {
@@ -4810,7 +5166,8 @@
       "en": "Leaf Portal Stone"
     },
     "img": "img/items/leaf_portal_stone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "leather_boots": {
     "name": {
@@ -4818,7 +5175,8 @@
       "en": "Leather Boots"
     },
     "img": "img/items/leather_boots.png",
-    "tier": null
+    "tier": null,
+    "category": "armor"
   },
   "leather_cap": {
     "name": {
@@ -4826,7 +5184,8 @@
       "en": "Leather Cap"
     },
     "img": "img/items/leather_cap.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "leather_pants": {
     "name": {
@@ -4834,7 +5193,8 @@
       "en": "Leather Pants"
     },
     "img": "img/items/leather_pants.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "leather_sieve_mesh": {
     "name": {
@@ -4842,7 +5202,8 @@
       "en": "Leather Sieve Mesh"
     },
     "img": "img/items/leather_sieve_mesh.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "leather_tunic": {
     "name": {
@@ -4850,7 +5211,8 @@
       "en": "Leather Tunic"
     },
     "img": "img/items/leather_tunic.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "lever": {
     "name": {
@@ -4858,7 +5220,8 @@
       "en": "Lever"
     },
     "img": "img/items/lever.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "light_blue_bed": {
     "name": {
@@ -4866,7 +5229,8 @@
       "en": "Light Blue Bed"
     },
     "img": "img/items/light_blue_bed.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "light_blue_carpet": {
     "name": {
@@ -4874,7 +5238,8 @@
       "en": "Light Blue Carpet"
     },
     "img": "img/items/light_blue_carpet.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "light_blue_dye": {
     "name": {
@@ -4882,7 +5247,8 @@
       "en": "Light Blue Dye"
     },
     "img": "img/items/light_blue_dye.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "light_blue_stained_clay_colored": {
     "name": {
@@ -4890,7 +5256,8 @@
       "en": "Light Blue Stained Clay"
     },
     "img": "img/items/light_blue_stained_clay_colored.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "light_blue_wool": {
     "name": {
@@ -4898,7 +5265,8 @@
       "en": "Light Blue Wool"
     },
     "img": "img/items/light_blue_wool.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "light_gray_bed": {
     "name": {
@@ -4906,7 +5274,8 @@
       "en": "Light Gray Bed"
     },
     "img": "img/items/light_gray_bed.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "light_gray_carpet": {
     "name": {
@@ -4914,7 +5283,8 @@
       "en": "Light Gray Carpet"
     },
     "img": "img/items/light_gray_carpet.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "light_gray_dye": {
     "name": {
@@ -4922,7 +5292,8 @@
       "en": "Light Gray Dye"
     },
     "img": "img/items/light_gray_dye.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "light_gray_stained_clay_colored": {
     "name": {
@@ -4930,7 +5301,8 @@
       "en": "Light Gray Stained Clay"
     },
     "img": "img/items/light_gray_stained_clay_colored.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "light_gray_wool": {
     "name": {
@@ -4938,7 +5310,8 @@
       "en": "Light Gray Wool"
     },
     "img": "img/items/light_gray_wool.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "lily_pad": {
     "name": {
@@ -4946,7 +5319,8 @@
       "en": "Lily Pad"
     },
     "img": "img/items/lily_pad.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "lime_bed": {
     "name": {
@@ -4954,7 +5328,8 @@
       "en": "Lime Bed"
     },
     "img": "img/items/lime_bed.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "lime_carpet": {
     "name": {
@@ -4962,7 +5337,8 @@
       "en": "Lime Carpet"
     },
     "img": "img/items/lime_carpet.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "lime_dye": {
     "name": {
@@ -4970,7 +5346,8 @@
       "en": "Lime Dye"
     },
     "img": "img/items/lime_dye.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "lime_stained_clay_colored": {
     "name": {
@@ -4978,7 +5355,8 @@
       "en": "Lime Stained Clay"
     },
     "img": "img/items/lime_stained_clay_colored.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "lime_wool": {
     "name": {
@@ -4986,7 +5364,8 @@
       "en": "Lime Wool"
     },
     "img": "img/items/lime_wool.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "log_portal_stone": {
     "name": {
@@ -4994,7 +5373,8 @@
       "en": "Log Portal Stone"
     },
     "img": "img/items/log_portal_stone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "lotus_seed_soup": {
     "name": {
@@ -5002,7 +5382,8 @@
       "en": "Lotus Seed Soup"
     },
     "img": "img/items/lotus_seed_soup.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "magenta_bed": {
     "name": {
@@ -5010,7 +5391,8 @@
       "en": "Magenta Bed"
     },
     "img": "img/items/magenta_bed.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "magenta_carpet": {
     "name": {
@@ -5018,7 +5400,8 @@
       "en": "Magenta Carpet"
     },
     "img": "img/items/magenta_carpet.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "magenta_dye": {
     "name": {
@@ -5026,7 +5409,8 @@
       "en": "Magenta Dye"
     },
     "img": "img/items/magenta_dye.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "magenta_stained_clay_colored": {
     "name": {
@@ -5034,7 +5418,8 @@
       "en": "Magenta Stained Clay"
     },
     "img": "img/items/magenta_stained_clay_colored.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "magenta_wool": {
     "name": {
@@ -5042,7 +5427,8 @@
       "en": "Magenta Wool"
     },
     "img": "img/items/magenta_wool.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "magma_block": {
     "name": {
@@ -5050,7 +5436,8 @@
       "en": "Magma Block"
     },
     "img": "img/items/magma_block.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "magma_cream": {
     "name": {
@@ -5058,7 +5445,8 @@
       "en": "Magma Cream"
     },
     "img": "img/items/magma_cream.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "map": {
     "name": {
@@ -5075,7 +5463,8 @@
       "en": "Mashed Potato"
     },
     "img": "img/items/mashed_potato.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "melon_seeds": {
     "name": {
@@ -5083,7 +5472,8 @@
       "en": "Melon Seeds"
     },
     "img": "img/items/melon_seeds.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "melon_slice": {
     "name": {
@@ -5091,7 +5481,8 @@
       "en": "Melon Slice"
     },
     "img": "img/items/melon_slice.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "mercury_ingot": {
     "name": {
@@ -5099,7 +5490,8 @@
       "en": "Mercury Ingot"
     },
     "img": "img/items/mercury_ingot.png",
-    "tier": null
+    "tier": "mercury",
+    "category": "ingot"
   },
   "mercury_nugget": {
     "name": {
@@ -5107,7 +5499,7 @@
       "en": "Mercury Nugget"
     },
     "img": "img/items/mercury_nugget.png",
-    "tier": null,
+    "tier": "mercury",
     "category": "material"
   },
   "mercury_ore": {
@@ -5116,7 +5508,8 @@
       "en": "Mercury Ore"
     },
     "img": "img/items/mercury_ore.png",
-    "tier": null
+    "tier": "mercury",
+    "category": "block"
   },
   "minecart": {
     "name": {
@@ -5124,7 +5517,8 @@
       "en": "Minecart"
     },
     "img": "img/items/minecart.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "minecart_with_chest": {
     "name": {
@@ -5132,7 +5526,8 @@
       "en": "Minecart with Chest"
     },
     "img": "img/items/minecart_with_chest.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "minecart_with_furnace": {
     "name": {
@@ -5140,7 +5535,8 @@
       "en": "Minecart with Furnace"
     },
     "img": "img/items/minecart_with_furnace.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "minecart_with_hopper": {
     "name": {
@@ -5148,7 +5544,8 @@
       "en": "Minecart with Hopper"
     },
     "img": "img/items/minecart_with_hopper.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "minecart_with_tnt": {
     "name": {
@@ -5156,7 +5553,8 @@
       "en": "Minecart with TNT"
     },
     "img": "img/items/minecart_with_tnt.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "miner_s_helmet": {
     "name": {
@@ -5164,7 +5562,8 @@
       "en": "Miner's Helmet"
     },
     "img": "img/items/miner_s_helmet.png",
-    "tier": null
+    "tier": null,
+    "category": "armor"
   },
   "miner_s_helmet_knowledge_book": {
     "name": {
@@ -5172,7 +5571,8 @@
       "en": "Miner's Helmet Knowledge Book"
     },
     "img": "img/items/miner_s_helmet_knowledge_book.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "mint_leaf": {
     "name": {
@@ -5189,7 +5589,8 @@
       "en": "Mint Salad"
     },
     "img": "img/items/mint_salad.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "mithril_anvil": {
     "name": {
@@ -5197,7 +5598,8 @@
       "en": "Mithril Anvil"
     },
     "img": "img/items/mithril_anvil.png",
-    "tier": null
+    "tier": "mithril",
+    "category": "station"
   },
   "mithril_block": {
     "name": {
@@ -5205,7 +5607,8 @@
       "en": "Mithril Block"
     },
     "img": "img/blocks/mithril_block.png",
-    "tier": null
+    "tier": "mithril",
+    "category": "block"
   },
   "mithril_bow": {
     "name": {
@@ -5213,7 +5616,8 @@
       "en": "Mithril Bow"
     },
     "img": "img/items/mithril_bow.png",
-    "tier": null
+    "tier": "mithril",
+    "category": "weapon"
   },
   "mithril_bucket": {
     "name": {
@@ -5221,7 +5625,8 @@
       "en": "Mithril Bucket"
     },
     "img": "img/items/mithril_bucket.png",
-    "tier": null
+    "tier": "mithril",
+    "category": "misc"
   },
   "mithril_bucket_filled_with_milk": {
     "name": {
@@ -5229,7 +5634,8 @@
       "en": "Mithril Bucket of Milk"
     },
     "img": "img/items/mithril_bucket_filled_with_milk.png",
-    "tier": null
+    "tier": "mithril",
+    "category": "misc"
   },
   "mithril_bucket_filled_with_stone": {
     "name": {
@@ -5237,7 +5643,8 @@
       "en": "Mithril Bucket of Stone"
     },
     "img": "img/items/mithril_bucket_filled_with_stone.png",
-    "tier": null
+    "tier": "mithril",
+    "category": "block"
   },
   "mithril_bucket_filled_with_water": {
     "name": {
@@ -5245,7 +5652,8 @@
       "en": "Mithril Bucket of Water"
     },
     "img": "img/items/mithril_bucket_filled_with_water.png",
-    "tier": null
+    "tier": "mithril",
+    "category": "misc"
   },
   "mithril_chain_boots": {
     "name": {
@@ -5253,7 +5661,8 @@
       "en": "Mithril Chain Boots"
     },
     "img": "img/armor/mithril_chainmail_boots.png",
-    "tier": "mithril"
+    "tier": "mithril",
+    "category": "armor"
   },
   "mithril_chain_chestplate": {
     "name": {
@@ -5261,7 +5670,8 @@
       "en": "Mithril Chain Chestplate"
     },
     "img": "img/armor/mithril_chainmail_chestplate.png",
-    "tier": "mithril"
+    "tier": "mithril",
+    "category": "armor"
   },
   "mithril_chain_helmet": {
     "name": {
@@ -5269,7 +5679,8 @@
       "en": "Mithril Chain Helmet"
     },
     "img": "img/armor/mithril_chainmail_helmet.png",
-    "tier": "mithril"
+    "tier": "mithril",
+    "category": "armor"
   },
   "mithril_chain_leggings": {
     "name": {
@@ -5277,7 +5688,8 @@
       "en": "Mithril Chain Leggings"
     },
     "img": "img/armor/mithril_chainmail_leggings.png",
-    "tier": "mithril"
+    "tier": "mithril",
+    "category": "armor"
   },
   "mithril_coin": {
     "name": {
@@ -5285,7 +5697,8 @@
       "en": "Mithril Coin"
     },
     "img": "img/items/mithril_coin.png",
-    "tier": null
+    "tier": "mithril",
+    "category": "material"
   },
   "mithril_door": {
     "name": {
@@ -5293,7 +5706,8 @@
       "en": "Mithril Door"
     },
     "img": "img/items/mithril_door.png",
-    "tier": null
+    "tier": "mithril",
+    "category": "block"
   },
   "mithril_fence": {
     "name": {
@@ -5301,7 +5715,8 @@
       "en": "Mithril Fence"
     },
     "img": "img/items/mithril_fence.png",
-    "tier": null
+    "tier": "mithril",
+    "category": "block"
   },
   "mithril_flint_and_steel": {
     "name": {
@@ -5309,7 +5724,8 @@
       "en": "Mithril Flint and Steel"
     },
     "img": "img/items/mithril_flint_and_steel.png",
-    "tier": null
+    "tier": "mithril",
+    "category": "material"
   },
   "mithril_fluid_tank": {
     "name": {
@@ -5317,7 +5733,8 @@
       "en": "Mithril Fluid Tank"
     },
     "img": "img/items/mithril_fluid_tank.png",
-    "tier": null
+    "tier": "mithril",
+    "category": "block"
   },
   "mithril_hand_axe": {
     "name": {
@@ -5325,7 +5742,8 @@
       "en": "Mithril Hand Axe"
     },
     "img": "img/items/mithril_hand_axe.png",
-    "tier": "mithril"
+    "tier": "mithril",
+    "category": "tool"
   },
   "mithril_ore": {
     "name": {
@@ -5333,7 +5751,8 @@
       "en": "Mithril Ore"
     },
     "img": "img/blocks/mithril_ore.png",
-    "tier": null
+    "tier": "mithril",
+    "category": "block"
   },
   "mithril_shield": {
     "name": {
@@ -5341,7 +5760,8 @@
       "en": "Mithril Shield"
     },
     "img": "img/items/mithril_shield.png",
-    "tier": "mithril"
+    "tier": "mithril",
+    "category": "weapon"
   },
   "mithril_short_sword": {
     "name": {
@@ -5349,7 +5769,8 @@
       "en": "Mithril Short Sword"
     },
     "img": "img/items/mithril_sword.png",
-    "tier": "mithril"
+    "tier": "mithril",
+    "category": "weapon"
   },
   "mithril_shovel": {
     "name": {
@@ -5357,7 +5778,8 @@
       "en": "Mithril Shovel"
     },
     "img": "img/items/mithril_shovel.png",
-    "tier": "mithril"
+    "tier": "mithril",
+    "category": "tool"
   },
   "mossy_cobblestone": {
     "name": {
@@ -5365,7 +5787,8 @@
       "en": "Mossy Cobblestone"
     },
     "img": "img/items/mossy_cobblestone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "mossy_cobblestone_portal_stone": {
     "name": {
@@ -5373,7 +5796,8 @@
       "en": "Mossy Cobblestone Portal Stone"
     },
     "img": "img/items/mossy_cobblestone_portal_stone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "mossy_cobblestone_wall": {
     "name": {
@@ -5381,7 +5805,8 @@
       "en": "Mossy Cobblestone Wall"
     },
     "img": "img/items/mossy_cobblestone_wall.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "mushroom_brown": {
     "name": {
@@ -5389,7 +5814,8 @@
       "en": "Brown Mushroom"
     },
     "img": "img/items/mushroom_brown.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "mushroom_red": {
     "name": {
@@ -5397,7 +5823,8 @@
       "en": "Red Mushroom"
     },
     "img": "img/items/mushroom_red.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "mushroom_stew": {
     "name": {
@@ -5405,7 +5832,8 @@
       "en": "Mushroom Stew"
     },
     "img": "img/items/mushroom_stew.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "nether_brick": {
     "name": {
@@ -5422,7 +5850,8 @@
       "en": "Nether Brick Fence"
     },
     "img": "img/items/nether_brick_fence.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "nether_brick_slab_single": {
     "name": {
@@ -5430,7 +5859,8 @@
       "en": "Nether Brick Slab"
     },
     "img": "img/items/nether_brick_slab_single.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "nether_brick_stairs": {
     "name": {
@@ -5438,7 +5868,8 @@
       "en": "Nether Brick Stairs"
     },
     "img": "img/items/nether_brick_stairs.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "nether_furnace_core": {
     "name": {
@@ -5446,7 +5877,8 @@
       "en": "Netherrack Furnace Core"
     },
     "img": "img/items/nether_furnace_core.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "nether_quartz": {
     "name": {
@@ -5454,7 +5886,8 @@
       "en": "Nether Quartz"
     },
     "img": "img/items/nether_quartz.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "nether_wart": {
     "name": {
@@ -5462,7 +5895,8 @@
       "en": "Nether Wart"
     },
     "img": "img/items/nether_wart.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "netherrack_furnace_idle": {
     "name": {
@@ -5470,7 +5904,8 @@
       "en": "Netherrack Furnace"
     },
     "img": "img/items/netherrack_furnace_idle.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "note_block": {
     "name": {
@@ -5478,7 +5913,8 @@
       "en": "Note Block"
     },
     "img": "img/items/note_block.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "oak_leaves": {
     "name": {
@@ -5486,7 +5922,8 @@
       "en": "Oak Leaves"
     },
     "img": "img/items/oak_leaves.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "oak_sieve": {
     "name": {
@@ -5494,7 +5931,8 @@
       "en": "Oak Sieve"
     },
     "img": "img/items/oak_sieve.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "oak_wood_crate": {
     "name": {
@@ -5502,7 +5940,8 @@
       "en": "Oak Wood Crate"
     },
     "img": "img/items/oak_wood_crate.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "oak_wood_slab_single": {
     "name": {
@@ -5510,7 +5949,8 @@
       "en": "Oak Wood Slab"
     },
     "img": "img/items/oak_wood_slab_single.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "oak_wood_stairs": {
     "name": {
@@ -5518,7 +5958,8 @@
       "en": "Oak Wood Stairs"
     },
     "img": "img/items/oak_wood_stairs.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "oatmeal_porridge": {
     "name": {
@@ -5526,7 +5967,8 @@
       "en": "Oatmeal Porridge"
     },
     "img": "img/items/oatmeal_porridge.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "obsidian_axe": {
     "name": {
@@ -5534,7 +5976,8 @@
       "en": "Obsidian Axe"
     },
     "img": "img/items/obsidian_axe.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "category": "weapon"
   },
   "obsidian_furnace_core": {
     "name": {
@@ -5542,7 +5985,8 @@
       "en": "Obsidian Furnace Core"
     },
     "img": "img/items/obsidian_furnace_core.png",
-    "tier": null
+    "tier": "obsidian",
+    "category": "block"
   },
   "obsidian_furnace_idle": {
     "name": {
@@ -5550,7 +5994,8 @@
       "en": "Obsidian Furnace"
     },
     "img": "img/items/obsidian_furnace_idle.png",
-    "tier": null
+    "tier": "obsidian",
+    "category": "material"
   },
   "obsidian_hatchet": {
     "name": {
@@ -5558,7 +6003,8 @@
       "en": "Obsidian Hatchet"
     },
     "img": "img/items/obsidian_hatchet.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "category": "tool"
   },
   "obsidian_ingot_mold_cooling": {
     "name": {
@@ -5566,7 +6012,8 @@
       "en": "Obsidian Ingot Mold (Cooling)"
     },
     "img": "img/items/obsidian_ingot_mold_cooling.png",
-    "tier": null
+    "tier": "obsidian",
+    "category": "block"
   },
   "obsidian_shovel": {
     "name": {
@@ -5574,7 +6021,8 @@
       "en": "Obsidian Shovel"
     },
     "img": "img/items/obsidian_shovel.png",
-    "tier": "adamantium"
+    "tier": "adamantium",
+    "category": "tool"
   },
   "obsidian_slab_single": {
     "name": {
@@ -5582,7 +6030,8 @@
       "en": "Obsidian Slab"
     },
     "img": "img/items/obsidian_slab_single.png",
-    "tier": null
+    "tier": "obsidian",
+    "category": "block"
   },
   "obsidian_stairs": {
     "name": {
@@ -5590,7 +6039,8 @@
       "en": "Obsidian Stairs"
     },
     "img": "img/items/obsidian_stairs.png",
-    "tier": null
+    "tier": "obsidian",
+    "category": "block"
   },
   "obsidian_tool_bench": {
     "name": {
@@ -5598,7 +6048,8 @@
       "en": "Obsidian Tool Bench"
     },
     "img": "img/items/obsidian_tool_bench.png",
-    "tier": null
+    "tier": "obsidian",
+    "category": "block"
   },
   "onion": {
     "name": {
@@ -5606,7 +6057,8 @@
       "en": "Onion"
     },
     "img": "img/food/onion.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "onion_allium": {
     "name": {
@@ -5623,7 +6075,8 @@
       "en": "Orange"
     },
     "img": "img/food/orange.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "orange_bed": {
     "name": {
@@ -5631,7 +6084,8 @@
       "en": "Orange Bed"
     },
     "img": "img/items/orange_bed.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "orange_carpet": {
     "name": {
@@ -5639,7 +6093,8 @@
       "en": "Orange Carpet"
     },
     "img": "img/items/orange_carpet.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "orange_dye": {
     "name": {
@@ -5647,7 +6102,8 @@
       "en": "Orange Dye"
     },
     "img": "img/items/orange_dye.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "orange_stained_clay_colored": {
     "name": {
@@ -5655,7 +6111,8 @@
       "en": "Orange Stained Clay"
     },
     "img": "img/items/orange_stained_clay_colored.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "orange_wool": {
     "name": {
@@ -5663,7 +6120,8 @@
       "en": "Orange Wool"
     },
     "img": "img/items/orange_wool.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "orchid": {
     "name": {
@@ -5680,7 +6138,8 @@
       "en": "Painting"
     },
     "img": "img/items/painting.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "pink_bed": {
     "name": {
@@ -5688,7 +6147,8 @@
       "en": "Pink Bed"
     },
     "img": "img/items/pink_bed.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "pink_carpet": {
     "name": {
@@ -5696,7 +6156,8 @@
       "en": "Pink Carpet"
     },
     "img": "img/items/pink_carpet.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "pink_dye": {
     "name": {
@@ -5704,7 +6165,8 @@
       "en": "Pink Dye"
     },
     "img": "img/items/pink_dye.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "pink_stained_clay_colored": {
     "name": {
@@ -5712,7 +6174,8 @@
       "en": "Pink Stained Clay"
     },
     "img": "img/items/pink_stained_clay_colored.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "pink_wool": {
     "name": {
@@ -5720,7 +6183,8 @@
       "en": "Pink Wool"
     },
     "img": "img/items/pink_wool.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "piston": {
     "name": {
@@ -5728,7 +6192,8 @@
       "en": "Piston"
     },
     "img": "img/items/piston.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "pitaya_leaves": {
     "name": {
@@ -5736,7 +6201,8 @@
       "en": "Pitaya Leaves"
     },
     "img": "img/items/pitaya_leaves.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "polished_andesite": {
     "name": {
@@ -5744,7 +6210,8 @@
       "en": "Polished Andesite"
     },
     "img": "img/items/polished_andesite.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "polished_diorite": {
     "name": {
@@ -5752,7 +6219,8 @@
       "en": "Polished Diorite"
     },
     "img": "img/items/polished_diorite.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "polished_granite": {
     "name": {
@@ -5760,7 +6228,8 @@
       "en": "Polished Granite"
     },
     "img": "img/items/polished_granite.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "potato": {
     "name": {
@@ -5768,7 +6237,8 @@
       "en": "Potato"
     },
     "img": "img/items/potato.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "potion_of_g_2_moisture": {
     "name": {
@@ -5776,7 +6246,8 @@
       "en": "Potion of Moisture II"
     },
     "img": "img/items/potion_of_g_2_moisture.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "powered_rail": {
     "name": {
@@ -5784,7 +6255,8 @@
       "en": "Powered Rail"
     },
     "img": "img/items/powered_rail.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "pressure_plate_stone": {
     "name": {
@@ -5792,7 +6264,8 @@
       "en": "Stone Pressure Plate"
     },
     "img": "img/items/pressure_plate_stone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "pressure_plate_wood": {
     "name": {
@@ -5800,7 +6273,8 @@
       "en": "Wood Pressure Plate"
     },
     "img": "img/items/pressure_plate_wood.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "pumpkin": {
     "name": {
@@ -5808,7 +6282,8 @@
       "en": "Pumpkin"
     },
     "img": "img/items/pumpkin.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "pumpkin_pie": {
     "name": {
@@ -5816,7 +6291,8 @@
       "en": "Pumpkin Pie"
     },
     "img": "img/items/pumpkin_pie.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "pumpkin_seeds": {
     "name": {
@@ -5824,7 +6300,8 @@
       "en": "Pumpkin Seeds"
     },
     "img": "img/items/pumpkin_seeds.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "pumpkin_soup": {
     "name": {
@@ -5832,7 +6309,8 @@
       "en": "Pumpkin Soup"
     },
     "img": "img/items/pumpkin_soup.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "purple_bed": {
     "name": {
@@ -5840,7 +6318,8 @@
       "en": "Purple Bed"
     },
     "img": "img/items/purple_bed.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "purple_carpet": {
     "name": {
@@ -5848,7 +6327,8 @@
       "en": "Purple Carpet"
     },
     "img": "img/items/purple_carpet.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "purple_dye": {
     "name": {
@@ -5856,7 +6336,8 @@
       "en": "Purple Dye"
     },
     "img": "img/items/purple_dye.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "purple_stained_clay_colored": {
     "name": {
@@ -5864,7 +6345,8 @@
       "en": "Purple Stained Clay"
     },
     "img": "img/items/purple_stained_clay_colored.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "purple_wool": {
     "name": {
@@ -5872,7 +6354,8 @@
       "en": "Purple Wool"
     },
     "img": "img/items/purple_wool.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "quartz": {
     "name": {
@@ -5880,7 +6363,8 @@
       "en": "Quartz"
     },
     "img": "img/shards/quartz.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "quartz_block": {
     "name": {
@@ -5888,7 +6372,8 @@
       "en": "Quartz Block"
     },
     "img": "img/items/quartz_block.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "quartz_pillar": {
     "name": {
@@ -5896,7 +6381,8 @@
       "en": "Quartz Pillar"
     },
     "img": "img/items/quartz_pillar.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "quartz_shard": {
     "name": {
@@ -5904,7 +6390,8 @@
       "en": "Quartz Shard"
     },
     "img": "img/items/quartz_shard.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "quartz_slab_single": {
     "name": {
@@ -5912,7 +6399,8 @@
       "en": "Quartz Slab"
     },
     "img": "img/items/quartz_slab_single.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "quartz_stairs": {
     "name": {
@@ -5920,7 +6408,8 @@
       "en": "Quartz Stairs"
     },
     "img": "img/items/quartz_stairs.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "quiver": {
     "name": {
@@ -5937,7 +6426,8 @@
       "en": "Rail"
     },
     "img": "img/items/rail.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "rain_hat": {
     "name": {
@@ -5945,7 +6435,8 @@
       "en": "Rain Hat"
     },
     "img": "img/items/rain_hat.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "raw_fish": {
     "name": {
@@ -5953,7 +6444,8 @@
       "en": "Raw Fish"
     },
     "img": "img/items/raw_fish.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "raw_fish_large": {
     "name": {
@@ -5961,7 +6453,8 @@
       "en": "Large Raw Fish"
     },
     "img": "img/items/raw_fish_large.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "recall_scroll": {
     "name": {
@@ -5969,7 +6462,8 @@
       "en": "Recall Scroll"
     },
     "img": "img/items/recall_scroll.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "red_bed": {
     "name": {
@@ -5977,7 +6471,8 @@
       "en": "Red Bed"
     },
     "img": "img/items/red_bed.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "red_carpet": {
     "name": {
@@ -5985,7 +6480,8 @@
       "en": "Red Carpet"
     },
     "img": "img/items/red_carpet.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "red_slime_ball": {
     "name": {
@@ -5993,7 +6489,8 @@
       "en": "Red Slime Ball"
     },
     "img": "img/items/red_slime_ball.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "red_stained_clay_colored": {
     "name": {
@@ -6001,7 +6498,8 @@
       "en": "Red Stained Clay"
     },
     "img": "img/items/red_stained_clay_colored.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "red_wool": {
     "name": {
@@ -6009,7 +6507,8 @@
       "en": "Red Wool"
     },
     "img": "img/items/red_wool.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "redstone_comparator": {
     "name": {
@@ -6017,7 +6516,8 @@
       "en": "Redstone Comparator"
     },
     "img": "img/items/redstone_comparator.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "redstone_lamp_unlit": {
     "name": {
@@ -6025,7 +6525,8 @@
       "en": "Redstone Lamp (Unlit)"
     },
     "img": "img/items/redstone_lamp_unlit.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "redstone_repeater": {
     "name": {
@@ -6033,7 +6534,8 @@
       "en": "Redstone Repeater"
     },
     "img": "img/items/redstone_repeater.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "redstone_torch_lit": {
     "name": {
@@ -6041,7 +6543,8 @@
       "en": "Redstone Torch"
     },
     "img": "img/items/redstone_torch_lit.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "reinforced_eye_of_ender": {
     "name": {
@@ -6049,7 +6552,8 @@
       "en": "Reinforced Eye of Ender"
     },
     "img": "img/items/reinforced_eye_of_ender.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "reinforced_eye_of_ender_knowledge_book": {
     "name": {
@@ -6057,7 +6561,8 @@
       "en": "Reinforced Eye of Ender Knowledge Book"
     },
     "img": "img/items/reinforced_eye_of_ender_knowledge_book.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "rose": {
     "name": {
@@ -6065,7 +6570,8 @@
       "en": "Rose"
     },
     "img": "img/items/rose.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "rose_red": {
     "name": {
@@ -6073,7 +6579,8 @@
       "en": "Rose Red Dye"
     },
     "img": "img/items/rose_red.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "rotten_flesh": {
     "name": {
@@ -6081,7 +6588,8 @@
       "en": "Rotten Flesh"
     },
     "img": "img/items/rotten_flesh.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "runestone_nul_adamantium": {
     "name": {
@@ -6089,7 +6597,8 @@
       "en": "Adamantium Null Runestone"
     },
     "img": "img/items/runestone_nul_adamantium.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "runestone_nul_mithril": {
     "name": {
@@ -6097,7 +6606,8 @@
       "en": "Mithril Null Runestone"
     },
     "img": "img/items/runestone_nul_mithril.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "rusted_iron_chain": {
     "name": {
@@ -6105,7 +6615,8 @@
       "en": "Rusted Iron Chain"
     },
     "img": "img/items/rusted_iron_chain.png",
-    "tier": null
+    "tier": "rusted_iron",
+    "category": "armor"
   },
   "rusted_iron_chain_boots": {
     "name": {
@@ -6113,7 +6624,8 @@
       "en": "Rusted Iron Chain Boots"
     },
     "img": "img/armor/rusted_iron_chainmail_boots.png",
-    "tier": "iron"
+    "tier": "iron",
+    "category": "armor"
   },
   "rusted_iron_chain_chestplate": {
     "name": {
@@ -6121,7 +6633,8 @@
       "en": "Rusted Iron Chain Chestplate"
     },
     "img": "img/armor/rusted_iron_chainmail_chestplate.png",
-    "tier": "iron"
+    "tier": "iron",
+    "category": "armor"
   },
   "rusted_iron_chain_helmet": {
     "name": {
@@ -6129,7 +6642,8 @@
       "en": "Rusted Iron Chain Helmet"
     },
     "img": "img/armor/rusted_iron_chainmail_helmet.png",
-    "tier": "iron"
+    "tier": "iron",
+    "category": "armor"
   },
   "rusted_iron_chain_leggings": {
     "name": {
@@ -6137,7 +6651,8 @@
       "en": "Rusted Iron Chain Leggings"
     },
     "img": "img/armor/rusted_iron_chainmail_leggings.png",
-    "tier": "iron"
+    "tier": "iron",
+    "category": "armor"
   },
   "rusted_iron_short_sword": {
     "name": {
@@ -6145,7 +6660,8 @@
       "en": "Rusted Iron Short Sword"
     },
     "img": "img/items/rusted_iron_sword.png",
-    "tier": "iron"
+    "tier": "iron",
+    "category": "weapon"
   },
   "rusted_iron_war_hammer": {
     "name": {
@@ -6153,7 +6669,8 @@
       "en": "Rusted Iron War Hammer"
     },
     "img": "img/items/rusted_iron_war_hammer.png",
-    "tier": "iron"
+    "tier": "iron",
+    "category": "weapon"
   },
   "sacred_sandstone": {
     "name": {
@@ -6161,7 +6678,8 @@
       "en": "Sacred Sandstone"
     },
     "img": "img/items/sacred_sandstone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "saddle": {
     "name": {
@@ -6169,7 +6687,8 @@
       "en": "Saddle"
     },
     "img": "img/items/saddle.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "salad": {
     "name": {
@@ -6177,7 +6696,8 @@
       "en": "Salad"
     },
     "img": "img/items/salad.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "sand": {
     "name": {
@@ -6185,7 +6705,8 @@
       "en": "Sand"
     },
     "img": "img/items/sand.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "sandstone": {
     "name": {
@@ -6193,7 +6714,8 @@
       "en": "Sandstone"
     },
     "img": "img/items/sandstone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "sandstone_furnace_idle": {
     "name": {
@@ -6201,7 +6723,8 @@
       "en": "Sandstone Furnace"
     },
     "img": "img/items/sandstone_furnace_idle.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "sandstone_portal_stone": {
     "name": {
@@ -6209,7 +6732,8 @@
       "en": "Sandstone Portal Stone"
     },
     "img": "img/items/sandstone_portal_stone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "sandstone_slab_single": {
     "name": {
@@ -6217,7 +6741,8 @@
       "en": "Sandstone Slab"
     },
     "img": "img/items/sandstone_slab_single.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "sandstone_stairs": {
     "name": {
@@ -6225,7 +6750,8 @@
       "en": "Sandstone Stairs"
     },
     "img": "img/items/sandstone_stairs.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "sharp_flint_spear": {
     "name": {
@@ -6233,7 +6759,8 @@
       "en": "Sharp Flint Spear"
     },
     "img": "img/items/sharp_flint_spear.png",
-    "tier": "flint"
+    "tier": "flint",
+    "category": "weapon"
   },
   "sign": {
     "name": {
@@ -6250,7 +6777,8 @@
       "en": "Silver Anvil"
     },
     "img": "img/items/silver_anvil.png",
-    "tier": null
+    "tier": "silver",
+    "category": "station"
   },
   "silver_block": {
     "name": {
@@ -6258,7 +6786,8 @@
       "en": "Silver Block"
     },
     "img": "img/blocks/silver_block.png",
-    "tier": null
+    "tier": "silver",
+    "category": "block"
   },
   "silver_bucket": {
     "name": {
@@ -6266,7 +6795,8 @@
       "en": "Silver Bucket"
     },
     "img": "img/items/silver_bucket.png",
-    "tier": null
+    "tier": "silver",
+    "category": "misc"
   },
   "silver_bucket_filled_with_milk": {
     "name": {
@@ -6274,7 +6804,8 @@
       "en": "Silver Bucket of Milk"
     },
     "img": "img/items/silver_bucket_filled_with_milk.png",
-    "tier": null
+    "tier": "silver",
+    "category": "misc"
   },
   "silver_bucket_filled_with_stone": {
     "name": {
@@ -6282,7 +6813,8 @@
       "en": "Silver Bucket of Stone"
     },
     "img": "img/items/silver_bucket_filled_with_stone.png",
-    "tier": null
+    "tier": "silver",
+    "category": "block"
   },
   "silver_bucket_filled_with_water": {
     "name": {
@@ -6290,7 +6822,8 @@
       "en": "Silver Bucket of Water"
     },
     "img": "img/items/silver_bucket_filled_with_water.png",
-    "tier": null
+    "tier": "silver",
+    "category": "misc"
   },
   "silver_chain_boots": {
     "name": {
@@ -6298,7 +6831,8 @@
       "en": "Silver Chain Boots"
     },
     "img": "img/armor/silver_chainmail_boots.png",
-    "tier": "silver"
+    "tier": "silver",
+    "category": "armor"
   },
   "silver_chain_chestplate": {
     "name": {
@@ -6306,7 +6840,8 @@
       "en": "Silver Chain Chestplate"
     },
     "img": "img/armor/silver_chainmail_chestplate.png",
-    "tier": "silver"
+    "tier": "silver",
+    "category": "armor"
   },
   "silver_chain_helmet": {
     "name": {
@@ -6314,7 +6849,8 @@
       "en": "Silver Chain Helmet"
     },
     "img": "img/armor/silver_chainmail_helmet.png",
-    "tier": "silver"
+    "tier": "silver",
+    "category": "armor"
   },
   "silver_chain_leggings": {
     "name": {
@@ -6322,7 +6858,8 @@
       "en": "Silver Chain Leggings"
     },
     "img": "img/armor/silver_chainmail_leggings.png",
-    "tier": "silver"
+    "tier": "silver",
+    "category": "armor"
   },
   "silver_coin": {
     "name": {
@@ -6330,7 +6867,8 @@
       "en": "Silver Coin"
     },
     "img": "img/items/silver_coin.png",
-    "tier": null
+    "tier": "silver",
+    "category": "material"
   },
   "silver_copper_war_hammer": {
     "name": {
@@ -6348,7 +6886,8 @@
       "en": "Silver Door"
     },
     "img": "img/items/silver_door.png",
-    "tier": null
+    "tier": "silver",
+    "category": "block"
   },
   "silver_fence": {
     "name": {
@@ -6356,7 +6895,8 @@
       "en": "Silver Fence"
     },
     "img": "img/items/silver_fence.png",
-    "tier": null
+    "tier": "silver",
+    "category": "block"
   },
   "silver_flint_and_steel": {
     "name": {
@@ -6364,7 +6904,8 @@
       "en": "Silver Flint and Steel"
     },
     "img": "img/items/silver_flint_and_steel.png",
-    "tier": null
+    "tier": "silver",
+    "category": "material"
   },
   "silver_fluid_tank": {
     "name": {
@@ -6372,7 +6913,8 @@
       "en": "Silver Fluid Tank"
     },
     "img": "img/items/silver_fluid_tank.png",
-    "tier": null
+    "tier": "silver",
+    "category": "block"
   },
   "silver_hand_axe": {
     "name": {
@@ -6380,7 +6922,8 @@
       "en": "Silver Hand Axe"
     },
     "img": "img/items/silver_hand_axe.png",
-    "tier": "silver"
+    "tier": "silver",
+    "category": "tool"
   },
   "silver_ore": {
     "name": {
@@ -6388,7 +6931,8 @@
       "en": "Silver Ore"
     },
     "img": "img/blocks/silver_ore.png",
-    "tier": null
+    "tier": "silver",
+    "category": "block"
   },
   "silver_shield": {
     "name": {
@@ -6396,7 +6940,8 @@
       "en": "Silver Shield"
     },
     "img": "img/items/silver_shield.png",
-    "tier": "silver"
+    "tier": "silver",
+    "category": "weapon"
   },
   "silver_short_sword": {
     "name": {
@@ -6404,7 +6949,8 @@
       "en": "Silver Short Sword"
     },
     "img": "img/items/silver_sword.png",
-    "tier": "silver"
+    "tier": "silver",
+    "category": "weapon"
   },
   "silver_shovel": {
     "name": {
@@ -6412,7 +6958,8 @@
       "en": "Silver Shovel"
     },
     "img": "img/items/silver_shovel.png",
-    "tier": "silver"
+    "tier": "silver",
+    "category": "tool"
   },
   "simple_black_sleeping_bag": {
     "name": {
@@ -6420,7 +6967,8 @@
       "en": "Black Sleeping Bag"
     },
     "img": "img/items/simple_black_sleeping_bag.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "simple_blue_sleeping_bag": {
     "name": {
@@ -6428,7 +6976,8 @@
       "en": "Blue Sleeping Bag"
     },
     "img": "img/items/simple_blue_sleeping_bag.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "simple_bone_club": {
     "name": {
@@ -6436,7 +6985,8 @@
       "en": "Simple Bone Club"
     },
     "img": "img/items/simple_bone_club.png",
-    "tier": null
+    "tier": null,
+    "category": "weapon"
   },
   "simple_brown_sleeping_bag": {
     "name": {
@@ -6444,7 +6994,8 @@
       "en": "Brown Sleeping Bag"
     },
     "img": "img/items/simple_brown_sleeping_bag.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "simple_cyan_sleeping_bag": {
     "name": {
@@ -6452,7 +7003,8 @@
       "en": "Cyan Sleeping Bag"
     },
     "img": "img/items/simple_cyan_sleeping_bag.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "simple_flint_knife": {
     "name": {
@@ -6460,7 +7012,8 @@
       "en": "Simple Flint Knife"
     },
     "img": "img/items/simple_flint_knife.png",
-    "tier": "flint"
+    "tier": "flint",
+    "category": "weapon"
   },
   "simple_gray_sleeping_bag": {
     "name": {
@@ -6468,7 +7021,8 @@
       "en": "Gray Sleeping Bag"
     },
     "img": "img/items/simple_gray_sleeping_bag.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "simple_green_sleeping_bag": {
     "name": {
@@ -6476,7 +7030,8 @@
       "en": "Green Sleeping Bag"
     },
     "img": "img/items/simple_green_sleeping_bag.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "simple_light_blue_sleeping_bag": {
     "name": {
@@ -6484,7 +7039,8 @@
       "en": "Light Blue Sleeping Bag"
     },
     "img": "img/items/simple_light_blue_sleeping_bag.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "simple_light_gray_sleeping_bag": {
     "name": {
@@ -6492,7 +7048,8 @@
       "en": "Light Gray Sleeping Bag"
     },
     "img": "img/items/simple_light_gray_sleeping_bag.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "simple_lime_sleeping_bag": {
     "name": {
@@ -6500,7 +7057,8 @@
       "en": "Lime Sleeping Bag"
     },
     "img": "img/items/simple_lime_sleeping_bag.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "simple_magenta_sleeping_bag": {
     "name": {
@@ -6508,7 +7066,8 @@
       "en": "Magenta Sleeping Bag"
     },
     "img": "img/items/simple_magenta_sleeping_bag.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "simple_orange_sleeping_bag": {
     "name": {
@@ -6516,7 +7075,8 @@
       "en": "Orange Sleeping Bag"
     },
     "img": "img/items/simple_orange_sleeping_bag.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "simple_pink_sleeping_bag": {
     "name": {
@@ -6524,7 +7084,8 @@
       "en": "Pink Sleeping Bag"
     },
     "img": "img/items/simple_pink_sleeping_bag.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "simple_purple_sleeping_bag": {
     "name": {
@@ -6532,7 +7093,8 @@
       "en": "Purple Sleeping Bag"
     },
     "img": "img/items/simple_purple_sleeping_bag.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "simple_red_sleeping_bag": {
     "name": {
@@ -6540,7 +7102,8 @@
       "en": "Red Sleeping Bag"
     },
     "img": "img/items/simple_red_sleeping_bag.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "simple_white_sleeping_bag": {
     "name": {
@@ -6548,7 +7111,8 @@
       "en": "White Sleeping Bag"
     },
     "img": "img/items/simple_white_sleeping_bag.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "simple_yellow_sleeping_bag": {
     "name": {
@@ -6556,7 +7120,8 @@
       "en": "Yellow Sleeping Bag"
     },
     "img": "img/items/simple_yellow_sleeping_bag.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "skin_care_bottle": {
     "name": {
@@ -6564,7 +7129,8 @@
       "en": "Skin Care Bottle"
     },
     "img": "img/items/skin_care_bottle.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "slimeball_black": {
     "name": {
@@ -6572,7 +7138,8 @@
       "en": "Black Slime Ball"
     },
     "img": "img/items/slimeball_black.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "slimeball_brown": {
     "name": {
@@ -6580,7 +7147,8 @@
       "en": "Brown Slime Ball"
     },
     "img": "img/items/slimeball_brown.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "slimeball_gray": {
     "name": {
@@ -6588,7 +7156,8 @@
       "en": "Gray Slime Ball"
     },
     "img": "img/items/slimeball_gray.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "slimeball_green": {
     "name": {
@@ -6596,7 +7165,8 @@
       "en": "Green Slime Ball"
     },
     "img": "img/items/slimeball_green.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "small": {
     "name": {
@@ -6604,7 +7174,8 @@
       "en": "Small Item"
     },
     "img": "img/items/small.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "small_wooden_club": {
     "name": {
@@ -6612,7 +7183,8 @@
       "en": "Small Wooden Club"
     },
     "img": "img/items/small_wooden_club.png",
-    "tier": null
+    "tier": null,
+    "category": "weapon"
   },
   "smelting_furnace_idle": {
     "name": {
@@ -6620,7 +7192,8 @@
       "en": "Smelting Furnace"
     },
     "img": "img/items/smelting_furnace_idle.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "smooth_sandstone": {
     "name": {
@@ -6628,7 +7201,8 @@
       "en": "Smooth Sandstone"
     },
     "img": "img/items/smooth_sandstone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "snow_block": {
     "name": {
@@ -6636,7 +7210,8 @@
       "en": "Snow Block"
     },
     "img": "img/items/snow_block.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "snow_slab": {
     "name": {
@@ -6644,7 +7219,8 @@
       "en": "Snow Slab"
     },
     "img": "img/items/snow_slab.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "snow_thin": {
     "name": {
@@ -6652,7 +7228,8 @@
       "en": "Snow Layer"
     },
     "img": "img/items/snow_thin.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "snowball": {
     "name": {
@@ -6660,7 +7237,8 @@
       "en": "Snowball"
     },
     "img": "img/items/snowball.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "soul_sand": {
     "name": {
@@ -6668,7 +7246,8 @@
       "en": "Soul Sand"
     },
     "img": "img/items/soul_sand.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "spider_eye": {
     "name": {
@@ -6676,7 +7255,8 @@
       "en": "Spider Eye"
     },
     "img": "img/items/spider_eye.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "spruce_door": {
     "name": {
@@ -6684,7 +7264,8 @@
       "en": "Spruce Door"
     },
     "img": "img/items/spruce_door.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "spruce_fence": {
     "name": {
@@ -6692,7 +7273,8 @@
       "en": "Spruce Fence"
     },
     "img": "img/items/spruce_fence.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "spruce_fence_gate": {
     "name": {
@@ -6700,7 +7282,8 @@
       "en": "Spruce Fence Gate"
     },
     "img": "img/items/spruce_fence_gate.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "spruce_leaves": {
     "name": {
@@ -6708,7 +7291,8 @@
       "en": "Spruce Leaves"
     },
     "img": "img/items/spruce_leaves.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "spruce_sieve": {
     "name": {
@@ -6716,7 +7300,8 @@
       "en": "Spruce Sieve"
     },
     "img": "img/items/spruce_sieve.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "spruce_wood_crate": {
     "name": {
@@ -6724,7 +7309,8 @@
       "en": "Spruce Wood Crate"
     },
     "img": "img/items/spruce_wood_crate.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "spruce_wood_slab_single": {
     "name": {
@@ -6732,7 +7318,8 @@
       "en": "Spruce Wood Slab"
     },
     "img": "img/items/spruce_wood_slab_single.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "spruce_wood_stairs": {
     "name": {
@@ -6740,7 +7327,8 @@
       "en": "Spruce Wood Stairs"
     },
     "img": "img/items/spruce_wood_stairs.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "sticky_piston": {
     "name": {
@@ -6748,7 +7336,8 @@
       "en": "Sticky Piston"
     },
     "img": "img/items/sticky_piston.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "stone": {
     "name": {
@@ -6765,7 +7354,8 @@
       "en": "Stone Brick Slab"
     },
     "img": "img/items/stone_brick_slab_single.png",
-    "tier": null
+    "tier": "stone",
+    "category": "block"
   },
   "stone_brick_stairs": {
     "name": {
@@ -6773,7 +7363,8 @@
       "en": "Stone Brick Stairs"
     },
     "img": "img/items/stone_brick_stairs.png",
-    "tier": null
+    "tier": "stone",
+    "category": "block"
   },
   "stone_bricks": {
     "name": {
@@ -6781,7 +7372,8 @@
       "en": "Stone Bricks"
     },
     "img": "img/items/stone_bricks.png",
-    "tier": null
+    "tier": "stone",
+    "category": "block"
   },
   "stone_chip": {
     "name": {
@@ -6789,7 +7381,8 @@
       "en": "Stone Chip"
     },
     "img": "img/items/stone_chip.png",
-    "tier": null
+    "tier": "stone",
+    "category": "material"
   },
   "stone_furnace_core": {
     "name": {
@@ -6797,7 +7390,8 @@
       "en": "Stone Furnace Core"
     },
     "img": "img/items/stone_furnace_core.png",
-    "tier": null
+    "tier": "stone",
+    "category": "block"
   },
   "stone_furnace_idle": {
     "name": {
@@ -6805,7 +7399,8 @@
       "en": "Stone Furnace"
     },
     "img": "img/items/stone_furnace_idle.png",
-    "tier": null
+    "tier": "stone",
+    "category": "material"
   },
   "stone_portal_stone": {
     "name": {
@@ -6813,7 +7408,8 @@
       "en": "Stone Portal Stone"
     },
     "img": "img/items/stone_portal_stone.png",
-    "tier": null
+    "tier": "stone",
+    "category": "block"
   },
   "stone_slab_single": {
     "name": {
@@ -6821,7 +7417,7 @@
       "en": "Stone Slab"
     },
     "img": "img/items/stone_slab_single.png",
-    "tier": null,
+    "tier": "stone",
     "category": "block"
   },
   "stone_stairs": {
@@ -6830,7 +7426,8 @@
       "en": "Stone Stairs"
     },
     "img": "img/items/stone_stairs.png",
-    "tier": null
+    "tier": "stone",
+    "category": "block"
   },
   "string_sieve_mesh": {
     "name": {
@@ -6838,7 +7435,8 @@
       "en": "String Sieve Mesh"
     },
     "img": "img/items/string_sieve_mesh.png",
-    "tier": null
+    "tier": null,
+    "category": "tool"
   },
   "sugar": {
     "name": {
@@ -6846,7 +7444,8 @@
       "en": "Sugar"
     },
     "img": "img/items/sugar.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "sugar_block": {
     "name": {
@@ -6854,7 +7453,8 @@
       "en": "Sugar Block"
     },
     "img": "img/items/sugar_block.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "sugar_cane": {
     "name": {
@@ -6862,7 +7462,8 @@
       "en": "Sugar Cane"
     },
     "img": "img/items/sugar_cane.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "sugar_water": {
     "name": {
@@ -6870,7 +7471,8 @@
       "en": "Sugar Water"
     },
     "img": "img/items/sugar_water.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "teleport_scroll_knowledge_book": {
     "name": {
@@ -6878,7 +7480,8 @@
       "en": "Teleport Scroll Knowledge Book"
     },
     "img": "img/items/teleport_scroll_knowledge_book.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "tnt": {
     "name": {
@@ -6886,7 +7489,8 @@
       "en": "TNT"
     },
     "img": "img/items/tnt.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "trapdoor": {
     "name": {
@@ -6894,7 +7498,8 @@
       "en": "Trapdoor"
     },
     "img": "img/items/trapdoor.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "trapped_chest": {
     "name": {
@@ -6902,7 +7507,8 @@
       "en": "Trapped Chest"
     },
     "img": "img/items/trapped_chest.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "tripwire_hook": {
     "name": {
@@ -6910,7 +7516,8 @@
       "en": "Tripwire Hook"
     },
     "img": "img/items/tripwire_hook.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "tulip": {
     "name": {
@@ -6927,7 +7534,8 @@
       "en": "Vegetable Soup"
     },
     "img": "img/items/vegetable_soup.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "villager_s_bed": {
     "name": {
@@ -6935,7 +7543,8 @@
       "en": "Villager's Bed"
     },
     "img": "img/items/villager_s_bed.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "vines": {
     "name": {
@@ -6943,7 +7552,8 @@
       "en": "Vines"
     },
     "img": "img/items/vines.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "water_bowl": {
     "name": {
@@ -6960,7 +7570,8 @@
       "en": "Water Filter"
     },
     "img": "img/items/water_filter.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "water_skin": {
     "name": {
@@ -6968,7 +7579,8 @@
       "en": "Water Skin"
     },
     "img": "img/items/water_skin.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "waystone": {
     "name": {
@@ -6976,7 +7588,8 @@
       "en": "Waystone"
     },
     "img": "img/items/waystone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "waystone_knowledge_book": {
     "name": {
@@ -6984,7 +7597,8 @@
       "en": "Waystone Knowledge Book"
     },
     "img": "img/items/waystone_knowledge_book.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "weighted_pressure_plate_heavy": {
     "name": {
@@ -6992,7 +7606,8 @@
       "en": "Heavy Weighted Pressure Plate"
     },
     "img": "img/items/weighted_pressure_plate_heavy.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "weighted_pressure_plate_light": {
     "name": {
@@ -7000,7 +7615,8 @@
       "en": "Light Weighted Pressure Plate"
     },
     "img": "img/items/weighted_pressure_plate_light.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "wheat_seeds": {
     "name": {
@@ -7008,7 +7624,8 @@
       "en": "Wheat Seeds"
     },
     "img": "img/items/wheat_seeds.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wheat_soup": {
     "name": {
@@ -7016,7 +7633,8 @@
       "en": "Wheat Soup"
     },
     "img": "img/items/wheat_soup.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "white_stained_clay_colored": {
     "name": {
@@ -7024,7 +7642,8 @@
       "en": "White Stained Clay"
     },
     "img": "img/items/white_stained_clay_colored.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "white_wool_portal_stone": {
     "name": {
@@ -7032,7 +7651,8 @@
       "en": "White Wool Portal Stone"
     },
     "img": "img/items/white_wool_portal_stone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "wither_skeleton_skull": {
     "name": {
@@ -7040,7 +7660,8 @@
       "en": "Wither Skeleton Skull"
     },
     "img": "img/items/wither_skeleton_skull.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wither_skeleton_skull_fragment": {
     "name": {
@@ -7048,7 +7669,8 @@
       "en": "Wither Skeleton Skull Fragment"
     },
     "img": "img/items/wither_skeleton_skull_fragment.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wood_slab_single": {
     "name": {
@@ -7056,7 +7678,8 @@
       "en": "Wood Slab"
     },
     "img": "img/items/wood_slab_single.png",
-    "tier": null
+    "tier": "wood",
+    "category": "block"
   },
   "wooden_club": {
     "name": {
@@ -7064,7 +7687,8 @@
       "en": "Wooden Club"
     },
     "img": "img/items/wooden_club.png",
-    "tier": null
+    "tier": null,
+    "category": "weapon"
   },
   "wooden_door": {
     "name": {
@@ -7072,7 +7696,8 @@
       "en": "Wooden Door"
     },
     "img": "img/items/wooden_door.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "wooden_shovel": {
     "name": {
@@ -7080,7 +7705,8 @@
       "en": "Wooden Shovel"
     },
     "img": "img/items/wooden_shovel.png",
-    "tier": "flint"
+    "tier": "flint",
+    "category": "tool"
   },
   "wool_black": {
     "name": {
@@ -7088,7 +7714,8 @@
       "en": "Black Wool"
     },
     "img": "img/items/wool_black.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wool_blue": {
     "name": {
@@ -7096,7 +7723,8 @@
       "en": "Blue Wool"
     },
     "img": "img/items/wool_blue.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wool_brown": {
     "name": {
@@ -7104,7 +7732,8 @@
       "en": "Brown Wool"
     },
     "img": "img/items/wool_brown.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wool_cyan": {
     "name": {
@@ -7112,7 +7741,8 @@
       "en": "Cyan Wool"
     },
     "img": "img/items/wool_cyan.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wool_gray": {
     "name": {
@@ -7120,7 +7750,8 @@
       "en": "Gray Wool"
     },
     "img": "img/items/wool_gray.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wool_green": {
     "name": {
@@ -7128,7 +7759,8 @@
       "en": "Green Wool"
     },
     "img": "img/items/wool_green.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wool_light_blue": {
     "name": {
@@ -7136,7 +7768,8 @@
       "en": "Light Blue Wool"
     },
     "img": "img/items/wool_light_blue.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wool_light_gray": {
     "name": {
@@ -7144,7 +7777,8 @@
       "en": "Light Gray Wool"
     },
     "img": "img/items/wool_light_gray.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wool_lime": {
     "name": {
@@ -7152,7 +7786,8 @@
       "en": "Lime Wool"
     },
     "img": "img/items/wool_lime.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wool_magenta": {
     "name": {
@@ -7160,7 +7795,8 @@
       "en": "Magenta Wool"
     },
     "img": "img/items/wool_magenta.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wool_orange": {
     "name": {
@@ -7168,7 +7804,8 @@
       "en": "Orange Wool"
     },
     "img": "img/items/wool_orange.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wool_pink": {
     "name": {
@@ -7176,7 +7813,8 @@
       "en": "Pink Wool"
     },
     "img": "img/items/wool_pink.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wool_purple": {
     "name": {
@@ -7184,7 +7822,8 @@
       "en": "Purple Wool"
     },
     "img": "img/items/wool_purple.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wool_red": {
     "name": {
@@ -7192,7 +7831,8 @@
       "en": "Red Wool"
     },
     "img": "img/items/wool_red.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wool_white": {
     "name": {
@@ -7200,7 +7840,8 @@
       "en": "White Wool"
     },
     "img": "img/items/wool_white.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wool_yellow": {
     "name": {
@@ -7208,7 +7849,8 @@
       "en": "Yellow Wool"
     },
     "img": "img/items/wool_yellow.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "world_marker": {
     "name": {
@@ -7216,7 +7858,8 @@
       "en": "World Marker"
     },
     "img": "img/items/world_marker.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "world_marker_knowledge_book": {
     "name": {
@@ -7224,7 +7867,8 @@
       "en": "World Marker Knowledge Book"
     },
     "img": "img/items/world_marker_knowledge_book.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "yellow_bed": {
     "name": {
@@ -7232,7 +7876,8 @@
       "en": "Yellow Bed"
     },
     "img": "img/items/yellow_bed.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "yellow_carpet": {
     "name": {
@@ -7240,7 +7885,8 @@
       "en": "Yellow Carpet"
     },
     "img": "img/items/yellow_carpet.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "yellow_stained_clay_colored": {
     "name": {
@@ -7248,7 +7894,8 @@
       "en": "Yellow Stained Clay"
     },
     "img": "img/items/yellow_stained_clay_colored.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "yellow_wool": {
     "name": {
@@ -7256,7 +7903,8 @@
       "en": "Yellow Wool"
     },
     "img": "img/items/yellow_wool.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "arrow": {
     "name": {
@@ -7264,7 +7912,8 @@
       "en": "Arrow"
     },
     "img": "img/arrows/flint_arrow.png",
-    "tier": null
+    "tier": null,
+    "category": "weapon"
   },
   "beef": {
     "name": {
@@ -7272,7 +7921,8 @@
       "en": "Raw Beef"
     },
     "img": "img/food/beef_raw.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "black_slimeball": {
     "name": {
@@ -7280,7 +7930,8 @@
       "en": "Black Slimeball"
     },
     "img": "img/items/slimeball_black.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "black_widow_eye": {
     "name": {
@@ -7288,7 +7939,8 @@
       "en": "Black Widow Eye"
     },
     "img": "img/items/black_widow_eye.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "brown_slimeball": {
     "name": {
@@ -7296,7 +7948,8 @@
       "en": "Brown Slimeball"
     },
     "img": "img/items/slimeball_brown.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "chicken": {
     "name": {
@@ -7304,7 +7957,8 @@
       "en": "Raw Chicken"
     },
     "img": "img/items/chicken_raw.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "crab_leg": {
     "name": {
@@ -7312,7 +7966,8 @@
       "en": "Crab Leg"
     },
     "img": "img/items/crab_leg.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "crab_meat": {
     "name": {
@@ -7320,7 +7975,8 @@
       "en": "Crab Meat"
     },
     "img": "img/items/crab_meat.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "duck_meat": {
     "name": {
@@ -7328,7 +7984,8 @@
       "en": "Duck Meat"
     },
     "img": "img/items/duck_meat.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "earth_elemental_core": {
     "name": {
@@ -7336,7 +7993,8 @@
       "en": "Earth Elemental Core"
     },
     "img": "img/items/earth_elemental_core.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "elemental_obsidian": {
     "name": {
@@ -7344,7 +8002,8 @@
       "en": "Elemental Obsidian"
     },
     "img": "img/items/element_obsidian.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "fire_elemental_core": {
     "name": {
@@ -7352,7 +8011,8 @@
       "en": "Fire Elemental Core"
     },
     "img": "img/items/fire_elemental_core.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "ghast_tear": {
     "name": {
@@ -7360,7 +8020,8 @@
       "en": "Ghast Tear"
     },
     "img": "img/items/ghast_tear.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "ghoul_flesh": {
     "name": {
@@ -7368,7 +8029,8 @@
       "en": "Ghoul Flesh"
     },
     "img": "img/items/ghoul_flesh.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "grey_slimeball": {
     "name": {
@@ -7376,7 +8038,8 @@
       "en": "Grey Slimeball"
     },
     "img": "img/items/slimeball_gray.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "porkchop": {
     "name": {
@@ -7384,7 +8047,8 @@
       "en": "Raw Porkchop"
     },
     "img": "img/items/porkchop_raw.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "red_slimeball": {
     "name": {
@@ -7392,7 +8056,8 @@
       "en": "Red Slimeball"
     },
     "img": "img/items/red_slime_ball.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wool": {
     "name": {
@@ -7400,7 +8065,8 @@
       "en": "Wool"
     },
     "img": "img/items/wool_white.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "wolf_raw": {
     "name": {
@@ -7408,7 +8074,8 @@
       "en": "Raw Wolf Meat"
     },
     "img": "img/items/wolf_raw.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "bear_raw": {
     "name": {
@@ -7416,7 +8083,8 @@
       "en": "Raw Bear Meat"
     },
     "img": "img/items/bear_raw.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "deer_raw": {
     "name": {
@@ -7424,7 +8092,8 @@
       "en": "Raw Deer Meat"
     },
     "img": "img/items/deer_raw.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "camel_raw": {
     "name": {
@@ -7432,7 +8101,8 @@
       "en": "Raw Camel Meat"
     },
     "img": "img/items/camel_raw.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "tiger_raw": {
     "name": {
@@ -7440,7 +8110,8 @@
       "en": "Raw Tiger Meat"
     },
     "img": "img/items/tiger_raw.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "shark_raw": {
     "name": {
@@ -7448,7 +8119,8 @@
       "en": "Raw Shark Meat"
     },
     "img": "img/items/shark_raw.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "turkey_raw": {
     "name": {
@@ -7456,7 +8128,8 @@
       "en": "Raw Turkey Meat"
     },
     "img": "img/items/turkey_raw.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "rat_raw": {
     "name": {
@@ -7464,7 +8137,8 @@
       "en": "Raw Rat"
     },
     "img": "img/items/rat_raw.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "lion_raw": {
     "name": {
@@ -7472,7 +8146,8 @@
       "en": "Raw Lion Meat"
     },
     "img": "img/items/lion_raw.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "elephant_raw": {
     "name": {
@@ -7480,7 +8155,8 @@
       "en": "Raw Elephant Meat"
     },
     "img": "img/items/elephant_raw.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "fish_raw": {
     "name": {
@@ -7488,7 +8164,8 @@
       "en": "Raw Fish"
     },
     "img": "img/items/raw_fish.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "wood_spider_eye": {
     "name": {
@@ -7496,7 +8173,8 @@
       "en": "Wood Spider Eye"
     },
     "img": "img/items/spider_eye_wood.png",
-    "tier": null
+    "tier": "wood",
+    "category": "material"
   },
   "vampire_bat_fang": {
     "name": {
@@ -7504,7 +8182,8 @@
       "en": "Vampire Bat Fang"
     },
     "img": "img/items/vampire_bat_fang.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "hell_hound_hide": {
     "name": {
@@ -7512,7 +8191,8 @@
       "en": "Hell Hound Hide"
     },
     "img": "img/items/hell_hound_hide.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "demon_spider_eye": {
     "name": {
@@ -7520,7 +8200,8 @@
       "en": "Demon Spider Eye"
     },
     "img": "img/items/demon_spider_eye.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "xp_bottle": {
     "name": {
@@ -7528,7 +8209,8 @@
       "en": "XP Bottle"
     },
     "img": "img/items/xp_bottle.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "soulstone": {
     "name": {
@@ -7536,7 +8218,8 @@
       "en": "Soulstone"
     },
     "img": "img/items/soulstone.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "crystal_glass": {
     "name": {
@@ -7544,7 +8227,8 @@
       "en": "Crystal Glass"
     },
     "img": "img/items/crystal_glass.png",
-    "tier": null
+    "tier": null,
+    "category": "block"
   },
   "potion": {
     "name": {
@@ -7552,7 +8236,8 @@
       "en": "Potion"
     },
     "img": "img/items/potion.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "ominous_banner": {
     "name": {
@@ -7560,7 +8245,8 @@
       "en": "Ominous Banner"
     },
     "img": "img/items/illager_banner.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "phase_spider_eye": {
     "name": {
@@ -7568,7 +8254,8 @@
       "en": "Phase Spider Eye"
     },
     "img": "img/items/phase_spider_eye.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "crossbow": {
     "name": {
@@ -7586,7 +8273,8 @@
       "en": "Illager Banner"
     },
     "img": "img/items/illager_banner.png",
-    "tier": null
+    "tier": null,
+    "category": "misc"
   },
   "skeleton_lord_heart": {
     "name": {
@@ -7594,7 +8282,8 @@
       "en": "Skeleton Lord Heart"
     },
     "img": "img/items/skeleton_lord_heart.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "poppy": {
     "name": {
@@ -7602,7 +8291,8 @@
       "en": "Poppy"
     },
     "img": "img/items/rose.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "dragon_egg": {
     "name": {
@@ -7610,7 +8300,8 @@
       "en": "Dragon Egg"
     },
     "img": "img/items/dragon_egg.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "honey": {
     "name": {
@@ -7618,7 +8309,8 @@
       "en": "Honey"
     },
     "img": "img/items/honey.png",
-    "tier": null
+    "tier": null,
+    "category": "food"
   },
   "scorpion_venom": {
     "name": {
@@ -7626,7 +8318,8 @@
       "en": "Scorpion Venom"
     },
     "img": "img/items/scorpion_venom.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "dung": {
     "name": {
@@ -7634,7 +8327,8 @@
       "en": "Dung"
     },
     "img": "img/items/manure.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "mutton_raw": {
     "name": {
@@ -7642,7 +8336,8 @@
       "en": "Raw Mutton"
     },
     "img": "img/items/mutton_raw.png",
-    "tier": null
+    "tier": null,
+    "category": "material"
   },
   "chip_flint_knife": {
     "name": {
