@@ -345,7 +345,30 @@ function getCraftingGroups(itemId: string): OutputGroup[] {
   return allGroups.filter(g => g.outputId === itemId);
 }
 
-const allGroups = groupByOutput(recipes);
+// Merge alias groups: same-named items where one has removed_in → merge into active group
+function mergeAliasGroups(groups: OutputGroup[]): OutputGroup[] {
+  const nameToActive = new Map<string, OutputGroup>();
+  for (const g of groups) {
+    if (!items[g.outputId]?.removed_in) {
+      const nameEn = getItemName(g.outputId, 'en').toLowerCase();
+      if (!nameToActive.has(nameEn)) nameToActive.set(nameEn, g);
+    }
+  }
+  const merged = new Set<string>();
+  for (const g of groups) {
+    if (!items[g.outputId]?.removed_in) continue;
+    const nameEn = getItemName(g.outputId, 'en').toLowerCase();
+    const activeGroup = nameToActive.get(nameEn);
+    if (activeGroup) {
+      const tagged = g.recipes.map(r => ({ ...r, _mergedFromId: g.outputId } as FullRecipe & { _mergedFromId: string }));
+      activeGroup.recipes.push(...tagged);
+      merged.add(g.outputId);
+    }
+  }
+  return groups.filter(g => !merged.has(g.outputId));
+}
+
+const allGroups = mergeAliasGroups(groupByOutput(recipes));
 const allStations = [...new Set(recipes.map(r => r.station))].sort();
 const allSkills = [...new Set(recipes.flatMap(r => r.skills))].sort();
 
@@ -739,6 +762,12 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
 
                     {/* Metadata — #5: rounded difficulty + tooltip */}
                     <div style={{ fontSize: '.83em', color: 'var(--text2)', lineHeight: 1.9, marginBottom: 14, padding: '8px 12px', background: 'var(--surface2)', borderRadius: 6 }}>
+                      {(r as any)._mergedFromId && (
+                        <div style={{ color: '#aaa', fontWeight: 600, marginBottom: 4, fontSize: '.9em' }}>
+                          📦 {lang === 'hu' ? `Régi ID: ` : `Old ID: `}<code style={{ fontSize: '.9em' }}>{(r as any)._mergedFromId}</code>
+                          {items[(r as any)._mergedFromId]?.removed_in && <span style={{ color: '#ff9a44' }}> (v{items[(r as any)._mergedFromId].removed_in})</span>}
+                        </div>
+                      )}
                       {(r as any).removed_version && (
                         <div style={{ color: '#ff6b6b', fontWeight: 600, marginBottom: 4 }}>
                           ⚠️ {lang === 'hu' ? `Eltávolítva: v${(r as any).removed_version}` : `Removed in v${(r as any).removed_version}`}
@@ -1342,14 +1371,14 @@ export default function RecipesHub() {
   const [pickerSlot, setPickerSlot] = useState<{ row: number; col: number } | null>(null);
   const [pickerQuery, setPickerQuery] = useState('');
 
-  const hasFilters = keyword !== '' || stationFilter !== '' || skillFilter !== '' || ingredientFilter !== '' || typeFilter !== 'all';
+  const hasFilters = keyword !== '' || stationFilter !== '' || skillFilter !== '' || ingredientFilter !== '' || typeFilter !== 'current';
 
   function clearFilters() {
     setKeyword('');
     setStationFilter('');
     setSkillFilter('');
     setIngredientFilter('');
-    setTypeFilter('all');
+    setTypeFilter('current');
   }
 
   const filteredGroups = useMemo(() => {
