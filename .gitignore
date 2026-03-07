@@ -13,12 +13,10 @@ MiTE-BE_v0.9.0_hungarian.zip
 mite-be-english/
 mite-be-english.zip
 lang-work/
-scripts/patch_class_strings.py
-scripts/patch_existing_zip.py
-scripts/build_final_instance.py
-scripts/build_lang_pack.py
-scripts/build_hungarian_zip.py
 reference/
+
+# All scripts (internal tooling — not public)
+scripts/
 
 # OS
 .DS_Store
