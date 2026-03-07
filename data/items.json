@@ -251,7 +251,7 @@
       "hu": "Lucfenyő Rönk",
       "en": "Spruce Log"
     },
-    "img": "img/blocks/log_oak.png",
+    "img": "img/blocks/log_spruce.png",
     "tier": null,
     "category": "block"
   },
@@ -260,7 +260,7 @@
       "hu": "Nyírfa Rönk",
       "en": "Birch Log"
     },
-    "img": "img/blocks/log_oak.png",
+    "img": "img/blocks/log_birch.png",
     "tier": null,
     "category": "block"
   },
@@ -269,7 +269,7 @@
       "hu": "Dzsungelfa Rönk",
       "en": "Jungle Log"
     },
-    "img": "img/blocks/log_oak.png",
+    "img": "img/blocks/log_jungle.png",
     "tier": null,
     "category": "block"
   },
@@ -278,7 +278,7 @@
       "hu": "Kőtömb",
       "en": "Cobblestone"
     },
-    "img": "img/blocks/stone.png",
+    "img": "img/blocks/cobblestone.png",
     "tier": null,
     "category": "block"
   },
@@ -1190,7 +1190,8 @@
     },
     "img": "img/items/obsidian_ingot_mould.png",
     "tier": "obsidian",
-    "category": "tool"
+    "category": "tool",
+    "removed_in": "pre-0.5.5"
   },
   "campfire": {
     "name": {
@@ -3260,7 +3261,7 @@
       "en": "Carrot on a Stick (Adamantium)"
     },
     "img": "img/items/carrot_on_a_stick_adamantium.png",
-    "tier": null,
+    "tier": "adamantium",
     "category": "tool"
   },
   "carrot_on_a_stick_ancient_metal": {
@@ -3269,7 +3270,7 @@
       "en": "Carrot on a Stick (Ancient Metal)"
     },
     "img": "img/items/carrot_on_a_stick_ancient_metal.png",
-    "tier": null,
+    "tier": "ancient_metal",
     "category": "tool"
   },
   "carrot_on_a_stick_copper": {
@@ -3278,7 +3279,7 @@
       "en": "Carrot on a Stick (Copper)"
     },
     "img": "img/items/carrot_on_a_stick_copper.png",
-    "tier": null,
+    "tier": "copper",
     "category": "tool"
   },
   "carrot_on_a_stick_flint": {
@@ -3287,7 +3288,7 @@
       "en": "Carrot on a Stick (Flint)"
     },
     "img": "img/items/carrot_on_a_stick_flint.png",
-    "tier": null,
+    "tier": "flint",
     "category": "tool"
   },
   "carrot_on_a_stick_gold": {
@@ -3296,7 +3297,7 @@
       "en": "Carrot on a Stick (Gold)"
     },
     "img": "img/items/carrot_on_a_stick_gold.png",
-    "tier": null,
+    "tier": "gold",
     "category": "tool"
   },
   "carrot_on_a_stick_iron": {
@@ -3305,7 +3306,7 @@
       "en": "Carrot on a Stick (Iron)"
     },
     "img": "img/items/carrot_on_a_stick_iron.png",
-    "tier": null,
+    "tier": "iron",
     "category": "tool"
   },
   "carrot_on_a_stick_mithril": {
@@ -3314,7 +3315,7 @@
       "en": "Carrot on a Stick (Mithril)"
     },
     "img": "img/items/carrot_on_a_stick_mithril.png",
-    "tier": null,
+    "tier": "mithril",
     "category": "tool"
   },
   "carrot_on_a_stick_obsidian": {
@@ -3323,7 +3324,7 @@
       "en": "Carrot on a Stick (Obsidian)"
     },
     "img": "img/items/carrot_on_a_stick_obsidian.png",
-    "tier": null,
+    "tier": "obsidian",
     "category": "tool"
   },
   "carrot_on_a_stick_silver": {
@@ -3332,7 +3333,7 @@
       "en": "Carrot on a Stick (Silver)"
     },
     "img": "img/items/carrot_on_a_stick_silver.png",
-    "tier": null,
+    "tier": "silver",
     "category": "tool"
   },
   "cauldron": {
@@ -4089,7 +4090,7 @@
       "en": "Adamantium Fishing Rod"
     },
     "img": "img/items/fishing_rod_adamantium.png",
-    "tier": null,
+    "tier": "adamantium",
     "category": "tool"
   },
   "fishing_rod_ancient_metal": {
@@ -4098,7 +4099,7 @@
       "en": "Ancient Metal Fishing Rod"
     },
     "img": "img/items/fishing_rod_ancient_metal.png",
-    "tier": null,
+    "tier": "ancient_metal",
     "category": "tool"
   },
   "fishing_rod_copper": {
@@ -4107,7 +4108,7 @@
       "en": "Copper Fishing Rod"
     },
     "img": "img/items/fishing_rod_copper.png",
-    "tier": null,
+    "tier": "copper",
     "category": "tool"
   },
   "fishing_rod_flint": {
@@ -4116,7 +4117,7 @@
       "en": "Flint Fishing Rod"
     },
     "img": "img/items/fishing_rod_flint.png",
-    "tier": null,
+    "tier": "flint",
     "category": "tool"
   },
   "fishing_rod_gold": {
@@ -4125,7 +4126,7 @@
       "en": "Gold Fishing Rod"
     },
     "img": "img/items/fishing_rod_gold.png",
-    "tier": null,
+    "tier": "gold",
     "category": "tool"
   },
   "fishing_rod_hard": {
@@ -4134,7 +4135,7 @@
       "en": "Hardstone Fishing Rod"
     },
     "img": "img/items/fishing_rod_hard.png",
-    "tier": null,
+    "tier": "hard",
     "category": "tool"
   },
   "fishing_rod_iron": {
@@ -4143,7 +4144,7 @@
       "en": "Iron Fishing Rod"
     },
     "img": "img/items/fishing_rod_iron.png",
-    "tier": null,
+    "tier": "iron",
     "category": "tool"
   },
   "fishing_rod_mithril": {
@@ -4152,7 +4153,7 @@
       "en": "Mithril Fishing Rod"
     },
     "img": "img/items/fishing_rod_mithril.png",
-    "tier": null,
+    "tier": "mithril",
     "category": "tool"
   },
   "fishing_rod_obsidian": {
@@ -4161,7 +4162,7 @@
       "en": "Obsidian Fishing Rod"
     },
     "img": "img/items/fishing_rod_obsidian.png",
-    "tier": null,
+    "tier": "obsidian",
     "category": "tool"
   },
   "fishing_rod_silver": {
@@ -4170,7 +4171,7 @@
       "en": "Silver Fishing Rod"
     },
     "img": "img/items/fishing_rod_silver.png",
-    "tier": null,
+    "tier": "silver",
     "category": "tool"
   },
   "flint_and_steel": {
@@ -4892,7 +4893,7 @@
       "en": "Hardstone Bucket"
     },
     "img": "img/items/hardstone_bucket.png",
-    "tier": null,
+    "tier": "hard",
     "category": "tool"
   },
   "hardstone_coin": {
@@ -6162,7 +6163,8 @@
     },
     "img": "img/items/obsidian_ingot_mold_cooling.png",
     "tier": "obsidian",
-    "category": "block"
+    "category": "block",
+    "removed_in": "pre-0.5.5"
   },
   "obsidian_shovel": {
     "name": {
@@ -8176,7 +8178,8 @@
     },
     "img": "img/items/element_obsidian.png",
     "tier": null,
-    "category": "block"
+    "category": "block",
+    "removed_in": "pre-0.5.5"
   },
   "fire_elemental_core": {
     "name": {

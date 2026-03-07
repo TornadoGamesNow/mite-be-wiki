@@ -12,6 +12,9 @@
   --iron: #d4d4d4; --mithril: #7ec8e3;
   --adamantium: #b388ff; --ancient: #8b6914;
   --flint: #aaaaaa; --hard: #607d8b; --text: #e8e8f0; --text2: #9999b0;
+  --bone: #e8e0c8; --tin: #999999; --bronze: #cd7f32;
+  --rusted_iron: #b34700; --silver_copper: #a8c0cd; --high_carbon_steel: #b0bec5;
+  --ancient_metal: #c8a034; --obsidian: #9c27b0; --mercury: #80deea; --wood: #8b6432; --stone: #888888;
   --radius: 10px; --shadow: 0 4px 20px rgba(0,0,0,0.4);
   --section-gap: 56px;
 }

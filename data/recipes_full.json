@@ -25777,7 +25777,8 @@
       "flint_knife",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "obsidian_ingot_mold_1195",
@@ -25791,7 +25792,8 @@
       "copper_war_hammer",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "obsidian_ingot_mold_1196",
@@ -25805,7 +25807,8 @@
       "silver_war_hammer",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "obsidian_ingot_mold_1197",
@@ -25819,7 +25822,8 @@
       "gold_war_hammer",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "obsidian_ingot_mold_1198",
@@ -25833,7 +25837,8 @@
       "iron_war_hammer",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "obsidian_ingot_mold_1199",
@@ -25847,7 +25852,8 @@
       "mithril_war_hammer",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "obsidian_ingot_mold_1200",
@@ -25861,7 +25867,8 @@
       "adamantium_war_hammer",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "obsidian_ingot_mold_1201",
@@ -25875,7 +25882,8 @@
       "rusted_iron_war_hammer",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "obsidian_ingot_mold_1202",
@@ -25889,7 +25897,8 @@
       "ancient_metal_war_hammer",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "obsidian_ingot_mold_1203",
@@ -25903,7 +25912,8 @@
       "hard_stone_war_hammer",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "obsidian_ingot_mold_1204",
@@ -25917,7 +25927,8 @@
       "bronze_war_hammer",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "obsidian_ingot_mold_1205",
@@ -25931,7 +25942,8 @@
       "silver_copper_war_hammer",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "obsidian_ingot_mold_1206",
@@ -25945,7 +25957,8 @@
       "high_carbon_steel_war_hammer",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "obsidian_ingot_mold_cooling_1207",
@@ -25959,7 +25972,8 @@
       "obsidian_ingot_mold",
       "cooling_liquid"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "mercury_nugget_1208",
@@ -28553,7 +28567,7 @@
   {
     "id": "ingot_mold",
     "item_num": 1323,
-    "output": "obsidian_ingot_mold",
+    "output": "obsidian_ingot_mould",
     "outputQty": 1,
     "station": "hand",
     "difficulty": 185,
@@ -37366,7 +37380,7 @@
     "skills": [],
     "ingredients": [
       "mithril_nugget",
-      "elemental_obsidian"
+      "element_obsidian"
     ],
     "shaped": true,
     "pattern": [
@@ -37377,7 +37391,7 @@
       ],
       [
         "mithril_nugget",
-        "elemental_obsidian",
+        "element_obsidian",
         "mithril_nugget"
       ],
       [
@@ -41256,7 +41270,7 @@
     "skills": [],
     "ingredients": [
       "adamantium_nugget",
-      "elemental_obsidian"
+      "element_obsidian"
     ],
     "shaped": true,
     "pattern": [
@@ -41267,7 +41281,7 @@
       ],
       [
         "adamantium_nugget",
-        "elemental_obsidian",
+        "element_obsidian",
         "adamantium_nugget"
       ],
       [
