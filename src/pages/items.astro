@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import TopNav from '../components/TopNav.astro';
+import ItemExplorer from '../islands/ItemExplorer.tsx';
+import '../styles/global.css';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<BaseLayout title="Items — MITE:BE Wiki">
+  <Header />
+  <TopNav currentPage="items" />
+  <main style="max-width:1440px; margin:0 auto; padding:24px 32px;">
+    <div data-lang="hu">
+      <h2>Item Böngésző</h2>
+      <p style="color:var(--text2)">1118 item · szűrés kategória és tier szerint</p>
+    </div>
+    <div data-lang="en">
+      <h2>Item Browser</h2>
+      <p style="color:var(--text2)">1118 items · filter by category and tier</p>
+    </div>
+    <ItemExplorer client:load />
+  </main>
+</BaseLayout>
+<script is:inline src={`${base}/js/app.js`}></script>
