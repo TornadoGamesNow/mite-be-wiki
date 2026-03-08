@@ -853,8 +853,8 @@ Az első éjszaka legjobb módszere — csak 5 db homok vagy kavics kell:
     <p>Törd el a <strong>magas füvet</strong> – <em>Búzamag</em> vagy <em>Növényszál</em> hullhat belőle. A búzamag megehető (kevés telítettséget ad), a növényszál a kötélhez kell.</p>
   </div>
   <div class="timeline-item">
-    <h4>2. Fűkötél készítés</h4>
-    <div class="recipe">4× Növényszál → 1× Fűkötél (Szalma Kötél)</div>
+    <h4>2. Szalma Kötél készítés</h4>
+    <div class="recipe">4× Növényszál → Szalma Kötél</div>
   <CraftingGrid recipeOutput="straw_rope" label={{hu: "Szalma Kötél", en: "Straw Rope"}}/>
 
   </div>
@@ -891,7 +891,7 @@ Az első éjszaka legjobb módszere — csak 5 db homok vagy kavics kell:
 <p>A kovaszilánkokból (Kova Csipke) és kovadarabokból (Kőzet / Pedzerit) készíted az első igazi szerszámaidat.</p>
 
 <h3>Alap Kova Kés (Egyszerű Kova Kés)</h3>
-<div class="recipe">Fűkötél + Kovaszilánk + Fabot → Egyszerű Kova Kés</div>
+<div class="recipe">Szalma Kötél + Kovaszilánk + Fabot → Egyszerű Kova Kés</div>
   <CraftingGrid recipeFullId="simple_stone_knife" label={{hu: "Egyszerű Kova Kés", en: "Simple Flint Knife"}}/>
 
 <p>Az első vágóeszközöd. Ezzel tudsz bőrt vágni, ami bőrkötelet ad.</p>
@@ -913,18 +913,18 @@ Az első éjszaka legjobb módszere — csak 5 db homok vagy kavics kell:
 
 
 <h3>Kis Fejsze (Kova Kézbalta)</h3>
-<div class="recipe">Fabot + Bőrkötél + Kova → Kova Kézbalta</div>
+<div class="recipe">Kova + Ín + 2× Fabot → Kova Kézbalta</div>
   <CraftingGrid recipeOutput="flint_hatchet" label={{hu: "Kova Kézbalta", en: "Flint Short Hatchet"}}/>
 
 <p>Végre tudsz fát vágni! Ez a mérföldkő, ami mindent megváltoztat.</p>
 
 <h3>Kova Fejsze (nagy)</h3>
-<div class="recipe">3× Kova + Bőrkötél/Zsineg → Kova Fejsze</div>
+<div class="recipe">3× Kova + Ín + 2× Fabot → Kova Fejsze</div>
   <CraftingGrid recipeOutput="flint_axe" label={{hu: "Kova Fejsze", en: "Flint Axe"}}/>
 
 
 <h3>Kova Csákány</h3>
-<div class="recipe">Kova + Fabot + Bőrkötél → Kova Csákány</div>
+<div class="recipe">Kova + 2× Chip Kova + 2× Zsineg + 2× Fabot → Kova Csákány</div>
 
 <p>A kő törésénél <em>Éles Kova Szilánk</em> hullhat — ez a lándzsák alapanyaga.</p>
 <div class="info">A Kova Csákány képes szénérc törésre is (1,5× tartósság költség).</div>
@@ -939,13 +939,13 @@ Az első éjszaka legjobb módszere — csak 5 db homok vagy kavics kell:
 <!-- ===== MUNKAASZTAL ===== -->
 
 <h2 id="workbench">Munkaasztal</h2>
-<div class="recipe">Fa deszkák + Kova kés → Kőzet Munkaasztal</div>
+<div class="recipe">Kova + Kötél/Zsineg + Fabot + Fa deszkák → Kova Munkaasztal</div>
   <CraftingGrid recipeOutput="flint_workbench" label={{hu: "Kőzet Munkaasztal (Selyem)", en: "Flint Workbench (Silk)"}}/>
 
 <p>A munkaasztal megnyitja a 3×3-as crafting rendszert. Innentől sokkal több recept elérhető!</p>
 
 <h3>Falapát</h3>
-<div class="recipe">Fa deszkák + Fabot → Fa Lapát (munkaasztalon)</div>
+<div class="recipe">3× Fabot → Fa Lapát (Kova Munkaasztalon)</div>
   <CraftingGrid recipeOutput="wooden_shovel" label={{hu: "Fa Lapát", en: "Wooden Shovel"}}/>
 
 <p>Gyorsabb kavicsbányászat = több kovaszilánk!</p>
@@ -1795,13 +1795,13 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 
 <h3>Bányász Sisak</h3>
 <p>A Bányász Sisak mobil fényforrás, ami 30 másodpercenként 1 tartósságot fogyaszt. <strong>Vas Munkaasztalon</strong> készíthető a tudáskönyv feloldása után. Akkumulátorral újratölthető vas vagy magasabb szintű üllőn (75 tartósság/db).</p>
-<div class="recipe">Arany Rúd + Bőr + Vörös Kő Por + Bőr + Ón Lemez + Vas Rúd + Ón Lemez → Bányász Sisak (Vas Munkaasztalon)</div>
+<div class="recipe">Arany Rúd + 2× Bőr + Vörös Kő Por + 2× Vas Rúd → Bányász Sisak (Vas Munkaasztalon)</div>
   <CraftingGrid recipeOutput="miner_helmet" label={{hu: "Bányász Sisak (Vas Munkaasztal)", en: "Mining Helmet (Iron Workbench)"}}/>
 
 
 <h3>Akkumulátor</h3>
 <p>A Bányász Sisak feltöltéséhez szükséges tárgy. Craftoláshoz szintén tudáskönyv feloldás szükséges.</p>
-<div class="recipe">4× Ón Lemez + 2× Vörös Kő Por + Vas Rúd → Akkumulátor</div>
+<div class="recipe">4× Ón Lemez + Vörös Kő Por + Szén → Akkumulátor</div>
   <CraftingGrid recipeOutput="battery" label={{hu: "Akkumulátor", en: "Battery"}}/>
 
 
@@ -2889,8 +2889,8 @@ The best method for the first night — only 5 sand or gravel blocks needed:
     <p>Break <strong>tall grass</strong> — it can drop <em>Wheat Seeds</em> or <em>Plant Fiber</em>. Seeds are edible (small satiation), plant fiber is used for rope.</p>
   </div>
   <div class="timeline-item">
-    <h4>2. Craft Grass Rope</h4>
-    <div class="recipe">4× Plant Fiber → 1× Grass Rope (Straw Rope)</div>
+    <h4>2. Craft Straw Rope</h4>
+    <div class="recipe">4× Plant Fiber → Straw Rope</div>
   <CraftingGrid recipeOutput="straw_rope" label={{hu: "Szalma Kötél", en: "Straw Rope"}}/>
   </div>
   <div class="timeline-item">
@@ -2926,7 +2926,7 @@ The best method for the first night — only 5 sand or gravel blocks needed:
 <p>From flint chips and flint pieces, you craft your first real tools.</p>
 
 <h3>Basic Flint Knife (Chip Flint Knife)</h3>
-<div class="recipe">Grass Rope + Flint Chip + Stick → Basic Flint Knife</div>
+<div class="recipe">Straw Rope + Flint Chip + Stick → Basic Flint Knife</div>
   <CraftingGrid recipeFullId="simple_stone_knife" label={{hu: "Egyszerű Kova Kés", en: "Simple Flint Knife"}}/>
 <p>Your first cutting tool. Use it to cut leather from hides, which gives you leather rope.</p>
 
@@ -2945,16 +2945,16 @@ The best method for the first night — only 5 sand or gravel blocks needed:
   <CraftingGrid recipeFullId="stone_knife" label={{hu: "Kova Kés", en: "Flint Knife"}}/>
 
 <h3>Small Hatchet (Flint Hatchet)</h3>
-<div class="recipe">Stick + Leather Rope + Flint → Flint Hatchet</div>
+<div class="recipe">Flint + Sinew + 2× Sticks → Flint Hatchet</div>
   <CraftingGrid recipeOutput="flint_hatchet" label={{hu: "Kova Kézbalta", en: "Flint Short Hatchet"}}/>
 <p>You can finally chop wood! This is the milestone that changes everything.</p>
 
 <h3>Flint Axe (full size)</h3>
-<div class="recipe">3× Flint + Leather Rope/String → Flint Axe</div>
+<div class="recipe">3× Flint + Sinew + 2× Sticks → Flint Axe</div>
   <CraftingGrid recipeOutput="flint_axe" label={{hu: "Kova Fejsze", en: "Flint Axe"}}/>
 
 <h3>Flint Pickaxe</h3>
-<div class="recipe">Flint + Stick + Leather Rope → Flint Pickaxe</div>
+<div class="recipe">Flint + 2× Chip Flint + 2× String + 2× Sticks → Flint Pickaxe</div>
 <p>Breaking stone with this can drop <em>Sharp Flint Chips</em> — used for spears.</p>
 <div class="info">The Flint Pickaxe can also break coal ore (at 1.5× durability cost).</div>
 
@@ -2968,12 +2968,12 @@ The best method for the first night — only 5 sand or gravel blocks needed:
 <!-- ===== WORKBENCH ===== -->
 
 <h2 id="workbench">Workbench</h2>
-<div class="recipe">Wood Planks + Flint Knife → Flint Workbench</div>
+<div class="recipe">Flint + Rope/String + Stick + Wood Planks → Flint Workbench</div>
   <CraftingGrid recipeOutput="flint_workbench" label={{hu: "Kőzet Munkaasztal (Selyem)", en: "Flint Workbench (Silk)"}}/>
 <p>The workbench unlocks the 3×3 crafting grid. Many more recipes become available!</p>
 
 <h3>Wood Shovel</h3>
-<div class="recipe">Wood Planks + Stick → Wood Shovel (on workbench)</div>
+<div class="recipe">3× Sticks → Wood Shovel (on Flint Workbench)</div>
   <CraftingGrid recipeOutput="wooden_shovel" label={{hu: "Fa Lapát", en: "Wooden Shovel"}}/>
 <p>Faster gravel mining = more flint chips!</p>
 
@@ -3820,13 +3820,13 @@ If you find sheep before the first night and grab some wool, you can reach sievi
 
 <h3>Mining Helmet</h3>
 <p>The Mining Helmet is a mobile light source that consumes 1 durability every 30 seconds. Craftable on an <strong>Iron Workbench</strong> after unlocking the knowledge book. Rechargeable with Batteries on iron or higher tier anvils (75 durability/each).</p>
-<div class="recipe">Gold Ingot + Leather + Redstone Dust + Leather + Tin Plate + Iron Ingot + Tin Plate → Mining Helmet (Iron Workbench)</div>
+<div class="recipe">Gold Ingot + 2× Leather + Redstone Dust + 2× Iron Ingot → Mining Helmet (Iron Workbench)</div>
   <CraftingGrid recipeOutput="miner_helmet" label={{hu: "Bányász Sisak (Vas Munkaasztal)", en: "Mining Helmet (Iron Workbench)"}}/>
 
 
 <h3>Battery</h3>
 <p>Required item for recharging the Mining Helmet. Also requires a knowledge book unlock.</p>
-<div class="recipe">4× Tin Plate + 2× Redstone Dust + Iron Ingot → Battery</div>
+<div class="recipe">4× Tin Plate + Redstone Dust + Coal → Battery</div>
   <CraftingGrid recipeOutput="battery" label={{hu: "Akkumulátor", en: "Battery"}}/>
 
 
