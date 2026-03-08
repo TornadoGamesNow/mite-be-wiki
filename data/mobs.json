@@ -1412,7 +1412,7 @@
         },
         "qty": "12",
         "chance": "always",
-        "itemId": "elemental_obsidian"
+        "itemId": "element_obsidian"
       },
       {
         "item": {
@@ -1439,7 +1439,7 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": "illager_banner"
+        "itemId": "ominous_banner"
       }
     ],
     "image": "pillager_captain.png",
@@ -1985,7 +1985,7 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": "brown_slimeball"
+        "itemId": "slimeball_brown"
       }
     ],
     "image": "brown_slime.png",
@@ -2031,7 +2031,7 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": "red_slimeball"
+        "itemId": "red_slime_ball"
       }
     ],
     "image": "red_slime.png",
@@ -2075,7 +2075,7 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": "grey_slimeball"
+        "itemId": "slimeball_gray"
       }
     ],
     "image": "grey_slime.png",
@@ -2121,7 +2121,7 @@
         },
         "qty": "1",
         "chance": "always",
-        "itemId": "black_slimeball"
+        "itemId": "slimeball_black"
       }
     ],
     "image": "black_slime.png",
@@ -5133,7 +5133,7 @@
         },
         "qty": "1",
         "chance": "uncommon",
-        "itemId": "fish_raw"
+        "itemId": "raw_fish"
       }
     ],
     "image": "medium_fish.png",
