@@ -812,7 +812,7 @@
       "hu": "Vas Kard",
       "en": "Iron Sword"
     },
-    "img": "img/items/rusted_iron_sword.png",
+    "img": "img/items/iron_sword.png",
     "tier": "iron",
     "category": "weapon",
     "max_durability": 6400
@@ -822,7 +822,7 @@
       "hu": "Vas Csákány",
       "en": "Iron Pickaxe"
     },
-    "img": "img/items/rusted_iron_pickaxe.png",
+    "img": "img/items/iron_pickaxe.png",
     "tier": "iron",
     "category": "tool",
     "max_durability": 9600
@@ -832,7 +832,7 @@
       "hu": "Vas Fejsze",
       "en": "Iron Axe"
     },
-    "img": "img/items/rusted_iron_axe.png",
+    "img": "img/items/iron_axe.png",
     "tier": "iron",
     "category": "tool",
     "max_durability": 9600
@@ -852,7 +852,7 @@
       "hu": "Vas Kapa",
       "en": "Iron Hoe"
     },
-    "img": "img/items/rusted_iron_hoe.png",
+    "img": "img/items/iron_hoe.png",
     "tier": "iron",
     "category": "tool",
     "max_durability": 6400
@@ -862,7 +862,7 @@
       "hu": "Vas Ásó",
       "en": "Iron Shovel"
     },
-    "img": "img/items/rusted_iron_shovel.png",
+    "img": "img/items/iron_shovel.png",
     "tier": "iron",
     "category": "tool",
     "max_durability": 3200
@@ -1208,7 +1208,7 @@
       "hu": "Agyag Kemence",
       "en": "Clay Furnace"
     },
-    "img": "img/blocks/furnace_front_off.png",
+    "img": "img/blocks/furnace_clay_front.png",
     "tier": null,
     "category": "station"
   },
@@ -1226,7 +1226,7 @@
       "hu": "Kő Kemence",
       "en": "Stone Furnace"
     },
-    "img": "img/blocks/furnace_front_off.png",
+    "img": "img/blocks/furnace_stone_front.png",
     "tier": "stone",
     "category": "station"
   },
@@ -1235,7 +1235,7 @@
       "hu": "Obszidián Kemence",
       "en": "Obsidian Furnace"
     },
-    "img": "img/blocks/obsidian.png",
+    "img": "img/blocks/furnace_obsidian_front.png",
     "tier": "obsidian",
     "category": "station"
   },
