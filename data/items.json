@@ -1508,7 +1508,7 @@
       "hu": "Vas Sisak",
       "en": "Iron Helmet"
     },
-    "img": "img/armor/rusted_iron_helmet.png",
+    "img": "img/armor/iron_helmet.png",
     "tier": "iron",
     "category": "armor"
   },
@@ -1517,7 +1517,7 @@
       "hu": "Vas Mellvért",
       "en": "Iron Chestplate"
     },
-    "img": "img/armor/rusted_iron_chestplate.png",
+    "img": "img/armor/iron_chestplate.png",
     "tier": "iron",
     "category": "armor"
   },
@@ -1526,7 +1526,7 @@
       "hu": "Vas Lábvért",
       "en": "Iron Leggings"
     },
-    "img": "img/armor/rusted_iron_leggings.png",
+    "img": "img/armor/iron_leggings.png",
     "tier": "iron",
     "category": "armor"
   },
@@ -1535,7 +1535,7 @@
       "hu": "Vas Csizma",
       "en": "Iron Boots"
     },
-    "img": "img/armor/rusted_iron_boots.png",
+    "img": "img/armor/iron_boots.png",
     "tier": "iron",
     "category": "armor"
   },
