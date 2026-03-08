@@ -37,6 +37,21 @@ const sidebarGroups = {
       ],
     },
   ],
+  ru: [
+    {
+      title: '🏠 Навигация',
+      links: [
+        { href: './', label: '← Главная вики' },
+      ],
+    },
+    {
+      title: '❓ Вопросы',
+      links: [
+        { href: '#faq', label: 'Часто задаваемые вопросы (FAQ)' },
+        { href: '#seed-ru', label: '🗺️ Рекомендуемый сид' },
+      ],
+    },
+  ],
 };
 ---
 <BaseLayout title="FAQ — MITE: Break Everything Wiki">
@@ -549,6 +564,247 @@ const sidebarGroups = {
   <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Complete Wiki ⚔️</p>
   <p>Built from game files (MITE.lang, hu_HU.lang, class files).</p>
   <p style="font-size:.85em;margin-top:8px;opacity:.7;">This is an unofficial, community-driven wiki. MITE:BE and all related game assets, textures, and trademarks belong to their respective original creators.</p>
+</div>
+
+<div data-lang="ru">
+<h2 id="faq">Часто задаваемые вопросы — FAQ</h2>
+<p>Самые распространённые вопросы, с которыми сталкиваются новые игроки.</p>
+
+<div class="faq-list">
+<div class="faq-item">
+<h4>❓ Почему я не могу сломать дерево голыми руками?</h4>
+<p>В MITE:BE <strong>ничего нельзя сломать голыми руками</strong>. Для рубки дерева нужен <strong>Кремнёвый топорик</strong> (Кремень + Кожаная верёвка + Палка) — нож годится только для резки кожи и травы, но не для дерева! Смотрите раздел Кремниевый век.</p>
+</div>
+<div class="faq-item">
+<h4>❓ Как получить кремень в начале игры?</h4>
+<p>Ищите <strong>гравий на поверхности</strong> (на берегах рек, склонах холмов) и ломайте его <strong>голыми руками</strong> — у гравия уровень добычи 0, инструменты не нужны! С вероятностью ~10% выпадает <strong>Кремень</strong>. 1 Кремень = 4 Кремниевых осколка (крафтятся без верстака).</p>
+</div>
+<div class="faq-item">
+<h4>❓ Почему я так быстро умираю ночью?</h4>
+<p>Мобы намного сильнее и <strong>чувствуют игрока сквозь стены</strong> по близости. Факелы гаснут, в темноте спавнятся мобы. Укрытие до первой ночи обязательно.</p>
+</div>
+<div class="faq-item">
+<h4>❓ Что такое индикатор температуры?</h4>
+<p>В холодных биомах, ночью или в воде <strong>температура тела падает</strong>. Если она достигнет нуля — вы замёрзнете насмерть. Помогает огонь, тёплая еда и одежда.</p>
+</div>
+<div class="faq-item">
+<h4>❓ Почему руда не плавится в моей печи?</h4>
+<p>Каждая руда требует определённого <strong>уровня жара</strong>. Медь/Серебро: уровень 2 (Каменная печь). Мифрил: уровень 3 (Обсидиановая печь). Адамантий: уровень 4 (Адская печь). Смотрите раздел Печи.</p>
+</div>
+<div class="faq-item">
+<h4>❓ Почему я не могу добывать железную руду медной киркой?</h4>
+<p><strong>Уровень добычи</strong> недостаточен. Для железной руды нужна <strong>Железная кирка</strong> (уровень 3). Медная/Серебряная — только уровень 2.</p>
+</div>
+<div class="faq-item">
+<h4>❓ Как выбрать профессию и можно ли её сменить?</h4>
+<div class="warning-box" style="margin-bottom:8px">⚠️ <strong>Профессии в v0.9.0 не активированы</strong> — эта функция, вероятно, ещё не готова. Информация ниже приведена в вики для ознакомления.</div>
+<p>Предлагается автоматически при первом повышении уровня. Можно выбрать <strong>только одну</strong> и <strong>изменить её нельзя!</strong> Кузнец и Шахтёр — лучший выбор для новичков.</p>
+</div>
+<div class="faq-item">
+<h4>❓ Факелы действительно гаснут?</h4>
+<p><strong>Режим Хардкор:</strong> Да! Установленные факелы гаснут через <strong>3 игровых дня</strong>. Кроме того, <strong>дождь гасит</strong> факелы на улице.</p>
+<p><strong>Простой режим:</strong> Факелы <strong>НЕ гаснут</strong> со временем — но <strong>дождь всё равно их гасит</strong>! Размещайте факелы под укрытием.</p>
+<p>В обоих режимах: если убежище погружается в темноту, внутри могут появиться мобы. Всегда носите <strong>Огниво</strong>. <strong>Исключение:</strong> На равнинах факелы никогда не гаснут!</p>
+</div>
+<div class="faq-item">
+<h4>❓ Почему зомби копает мою стену?</h4>
+<p>Некоторые зомби <strong>носят кирки</strong> и могут разрушать каменные блоки. Поможет более глубокое укрытие, извилистый вход и <strong>Железная дверь</strong>.</p>
+</div>
+<div class="faq-item">
+<h4>❓ Когда можно идти в Незер?</h4>
+<p>Нужны: <strong>Мифриловая кирка</strong> (для добычи обсидиана) + <strong>Обсидиановая форма для слитков</strong> + Огниво. Зелье огнестойкости настоятельно рекомендуется!</p>
+</div>
+<div class="faq-item">
+<h4>❓ Как вернуться домой из биомного портала?</h4>
+<p>Постройте <strong>обычную обсидиановую рамку в любом месте основного мира</strong> (НЕ на слое коренной породы!) и подожгите — это вернёт вас к <strong>точке спавна мира</strong>.</p>
+</div>
+<div class="faq-item">
+<h4>❓ В моём мире не спавнятся деревни или пиллагеры!</h4>
+<p>Команда <code>/villages</code> показывает условие (обычно: создать Бронзовую кирку или Молот 15+ дней назад). Если условие выполнено, а постройки всё равно не появляются — это известный баг без чёткого решения.</p>
+</div>
+<div class="faq-item">
+<h4>❓ Как получить опыт из Книг знаний?</h4>
+<p>Лишние Книги знаний можно <strong>скрафтить в обычные Книги</strong> на верстаке — каждый раз вы получаете <strong>очки опыта</strong>. Делайте это с дублирующимися или ненужными книгами!</p>
+</div>
+<div class="faq-item">
+<h4>❓ Есть ли система сохранений на случай гибели?</h4>
+<p>Да! Игра автоматически создаёт резервную копию примерно <strong>каждые 5 минут</strong>. Сохранения находятся в папке <strong>backup</strong> внутри директории сохранений MITE:BE.</p>
+</div>
+<div class="faq-item">
+<h4>❓ Что такое HIM и как его победить?</h4>
+<p><strong>HIM</strong> — главный враг игры. <strong>400 HP</strong>, иммунитет почти ко всему. Обычное оружие и зелья бесполезны. Требуется полный комплект <strong>Адамантиевого снаряжения</strong> и особая стратегия. Величайший вызов игры!</p>
+</div>
+<div class="faq-item">
+<h4>❓ Как работает Котёл (Cauldron)?</h4>
+<p>Котёл не только для хранения воды! Размещённый <strong>под источником лавы</strong>, он позволяет варить особые рецепты: Золотая руда в котёл = <strong>Жидкое золото</strong> (4 Золотых яблока). Ртутная руда + Лава = <strong>Жидкая ртуть</strong>. Кожаный рюкзак + 4 слитка Древнего металла в ртути = <strong>Рюкзак из Древнего металла</strong> (ждать 30 сек).</p>
+</div>
+<div class="faq-item">
+<h4>❓ Что происходит во время Кровавой луны?</h4>
+<p>Кровавая луна — апокалиптическая ночь, повторяющаяся <strong>каждые 32 дня</strong>. Все мобы получают баф <strong>Силы I</strong>, днём пауки и криперы впадают в бешенство. Есть <strong>6 фаз эволюции</strong> (32, 64, 128, 160, 192, 224 дни). За выживание — <strong>постоянная награда</strong> (+10% скорость добычи, +1 атака, -10% жажда/голод).</p>
+</div>
+<div class="faq-item">
+<h4>❓ Что такое Сито (Sieve) и для чего оно?</h4>
+<p>Сито — один из важнейших источников руды в начале игры. Кладите гравий на сито и кликайте — выпадают различные материалы: <strong>Кремень, Олово, Кость</strong> и редкие предметы. Сита из лучших материалов (Медь, Железо) дают более высокий дроп.</p>
+</div>
+<div class="faq-item">
+<h4>❓ Как получить Книги знаний?</h4>
+<p>Книги знаний можно получить: в <strong>Пещерных руинах</strong> (сундуки с лутом), в <strong>Деревнях</strong> (у торговцев или в сундуках), от <strong>Особых врагов</strong> (Король скелетов, Кровавая луна) и в <strong>наградных сундуках после Кровавой луны</strong>.</p>
+</div>
+<div class="faq-item">
+<h4>❓ В чём разница между Простым и Хардкор режимами?</h4>
+<p>Ключевые отличия:</p>
+<ul style="margin:4px 0">
+  <li><strong>Факелы:</strong> В Хардкоре гаснут через 3 дня; в Простом — нет (но дождь гасит оба)</li>
+  <li><strong>Спавн мобов:</strong> В Хардкоре агрессивнее, быстрее, больше мобов</li>
+  <li><strong>Смерть:</strong> В Хардкоре нет авто-возрождения (нужна Кровать)</li>
+  <li><strong>Температура:</strong> В Хардкоре меняется быстрее</li>
+</ul>
+<p>Новичкам рекомендуется <strong>Простой режим</strong>. Смена режима требует новой игры.</p>
+</div>
+<div class="faq-item">
+<h4>❓ Как попасть в измерение Энд?</h4>
+<p>Портал в Энд открывается уничтожением <strong>Блоков ядра (Core Blocks)</strong> в измерении <strong>Незер</strong>. Для этого нужно создать <strong>Разрушитель ядра (Core Destroyer)</strong>. После уничтожения блока ядра портал появляется автоматически.</p>
+</div>
+</div>
+
+</div>
+
+<!-- ════ SEED КАРТА RU ════ -->
+<div data-lang="ru">
+<h2 id="seed-ru" style="margin-top:48px">🗺️ Рекомендуемый сид</h2>
+<p>Этот сид предлагает исключительно хорошую стартовую позицию: безопасный спавн, еда рядом, руды и укрытие — идеально для первых дней.</p>
+
+<div style="
+  background: linear-gradient(135deg, #0e1f2e 0%, #0a2a1a 60%, #1a1a0e 100%);
+  border: 2px solid #4ecca3;
+  border-radius: 14px;
+  padding: 24px;
+  margin: 20px 0;
+  box-shadow: 0 0 30px rgba(78,204,163,0.12), inset 0 1px 0 rgba(255,255,255,0.05);
+">
+  <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;flex-wrap:wrap">
+    <div style="font-size:2.2em">🌍</div>
+    <div style="flex:1">
+      <div style="font-size:.72em;color:#888;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px">Рекомендуемый сид — v0.9.0</div>
+      <div style="font-family:monospace;font-size:1.5em;font-weight:700;color:#4ecca3;letter-spacing:.04em;word-break:break-all">182692071031253671</div>
+    </div>
+    <button onclick="navigator.clipboard.writeText('182692071031253671').then(()=>{this.textContent='✅ Скопировано!';setTimeout(()=>this.textContent='📋 Копировать',1800)})"
+      style="
+        background:rgba(78,204,163,0.15);
+        border:1px solid #4ecca3;
+        color:#4ecca3;
+        border-radius:8px;
+        padding:8px 14px;
+        cursor:pointer;
+        font-size:.85em;
+        white-space:nowrap;
+        transition:background .2s;
+      "
+      onmouseover="this.style.background='rgba(78,204,163,0.28)'"
+      onmouseout="this.style.background='rgba(78,204,163,0.15)'">📋 Копировать</button>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr auto 1fr;grid-template-rows:auto auto auto;gap:6px;margin-bottom:20px;max-width:520px;margin-left:auto;margin-right:auto">
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:8px;font-size:.78em;color:#aaa;text-align:center">
+      <div style="color:#666;font-size:.8em;margin-bottom:2px">СЗ</div>
+      —
+    </div>
+    <div style="background:rgba(100,160,255,0.1);border:1px solid rgba(100,160,255,0.3);border-radius:8px;padding:8px;font-size:.78em;color:#7ec8e3;text-align:center;min-width:120px">
+      <div style="color:#7ec8e3;font-size:.85em;font-weight:700;margin-bottom:3px">⬆ СЕВЕР</div>
+      ⛰️ Плато<br><span style="color:#888;font-size:.9em">Богато гравием</span>
+    </div>
+    <div style="background:rgba(100,160,255,0.08);border:1px solid rgba(100,160,255,0.2);border-radius:8px;padding:8px;font-size:.78em;color:#b0d4ff;text-align:center">
+      <div style="color:#b0d4ff;font-size:.85em;font-weight:700;margin-bottom:3px">↗ СЕВЕРО-ВОСТОК</div>
+      🏝️ Плавучий остров<br>🏠 Природное укрытие<br><span style="color:#888;font-size:.9em">~300 блоков</span>
+    </div>
+    <div style="background:rgba(255,200,100,0.08);border:1px solid rgba(255,200,100,0.25);border-radius:8px;padding:8px;font-size:.78em;color:#f0c040;text-align:center">
+      <div style="color:#f0c040;font-size:.85em;font-weight:700;margin-bottom:3px">⬅ ЗАПАД</div>
+      🌊 Пустынная река<br>🎋 Много тростника<br>🏜️ Граница пустыни
+    </div>
+    <div style="background:rgba(78,204,163,0.15);border:2px solid #4ecca3;border-radius:10px;padding:12px 8px;text-align:center;font-weight:700">
+      <div style="font-size:1.3em;margin-bottom:4px">🌾</div>
+      <div style="color:#4ecca3;font-size:.9em">СПАВН</div>
+      <div style="color:#888;font-size:.72em;margin-top:2px">Равнины<br>Плато рядом</div>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:8px;font-size:.78em;color:#aaa;text-align:center">
+      <div style="color:#666;font-size:.8em;margin-bottom:2px">ВОСТОК</div>
+      ⛰️ Плато
+    </div>
+    <div style="background:rgba(100,200,100,0.07);border:1px solid rgba(100,200,100,0.2);border-radius:8px;padding:8px;font-size:.78em;color:#88cc88;text-align:center">
+      <div style="color:#88cc88;font-size:.85em;font-weight:700;margin-bottom:3px">↙ ЮГО-ЗАПАД</div>
+      🌿 Граница болота<br>🧙 Избушки ведьм
+    </div>
+    <div style="background:rgba(100,200,100,0.1);border:1px solid rgba(100,200,100,0.3);border-radius:8px;padding:8px;font-size:.78em;color:#a8d8a8;text-align:center">
+      <div style="color:#a8d8a8;font-size:.85em;font-weight:700;margin-bottom:3px">⬇ ЮГ</div>
+      🌲 Дубовый лес<br>🍎 Много яблок
+    </div>
+    <div style="background:rgba(200,100,100,0.1);border:1px solid rgba(200,100,100,0.3);border-radius:8px;padding:8px;font-size:.78em;color:#ffaaaa;text-align:center">
+      <div style="color:#ffaaaa;font-size:.85em;font-weight:700;margin-bottom:3px">↘ ЮГО-ВОСТОК</div>
+      🏔️ Каньон<br>⛏️ Железо + Серебряные шахты<br>🕳️ 2-й уровень каньона<br><span style="color:#d4d4d4;font-size:.9em">ещё больше железа</span>
+    </div>
+  </div>
+
+  <table style="width:100%;border-collapse:collapse;font-size:.85em;margin-bottom:16px">
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+      <th style="text-align:left;padding:6px 8px;color:#888;font-weight:600;text-transform:uppercase;font-size:.75em;letter-spacing:.08em">Ресурс</th>
+      <th style="text-align:left;padding:6px 8px;color:#888;font-weight:600;text-transform:uppercase;font-size:.75em;letter-spacing:.08em">Доступность</th>
+      <th style="text-align:left;padding:6px 8px;color:#888;font-weight:600;text-transform:uppercase;font-size:.75em;letter-spacing:.08em">Направление</th>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">🍎 Еда</td>
+      <td style="padding:5px 8px;color:#4ecca3">⭐⭐⭐ Отлично</td>
+      <td style="padding:5px 8px;color:#aaa">Яблоки (Ю), животные (Равнины), пшеница</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">⛏️ Железная руда</td>
+      <td style="padding:5px 8px;color:#4ecca3">⭐⭐⭐ Отлично</td>
+      <td style="padding:5px 8px;color:#aaa">ЮВ каньон + 2-й уровень</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">🪨 Гравий / Камень</td>
+      <td style="padding:5px 8px;color:#f0c040">⭐⭐ Хорошо</td>
+      <td style="padding:5px 8px;color:#aaa">С и В плато</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">🪵 Дерево</td>
+      <td style="padding:5px 8px;color:#f0c040">⭐⭐ Хорошо</td>
+      <td style="padding:5px 8px;color:#aaa">Ю дубовый лес</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">🎋 Тростник</td>
+      <td style="padding:5px 8px;color:#4ecca3">⭐⭐⭐ Отлично</td>
+      <td style="padding:5px 8px;color:#aaa">З пустынная река</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+      <td style="padding:5px 8px">🧪 Серебряная руда</td>
+      <td style="padding:5px 8px;color:#f0c040">⭐⭐ Хорошо</td>
+      <td style="padding:5px 8px;color:#aaa">ЮВ каньон</td>
+    </tr>
+    <tr>
+      <td style="padding:5px 8px">🧙 Избушка ведьмы</td>
+      <td style="padding:5px 8px;color:#f0c040">⭐⭐ Рядом</td>
+      <td style="padding:5px 8px;color:#aaa">ЮЗ болото</td>
+    </tr>
+  </table>
+
+  <div style="background:rgba(78,204,163,0.07);border-left:3px solid #4ecca3;border-radius:0 8px 8px 0;padding:12px 16px;font-size:.85em">
+    <div style="color:#4ecca3;font-weight:700;margin-bottom:8px">💡 Оптимальный старт с этим сидом</div>
+    <ol style="margin:0;padding-left:18px;line-height:1.9;color:#ccc">
+      <li>Спавн → сразу соберите <strong>гравий с северного плато</strong> → Кремниевые осколки</li>
+      <li>Идите <strong>~300 блоков на СВ</strong> → займите природное укрытие у плавучего острова</li>
+      <li>Соберите <strong>яблоки в южном дубовом лесу</strong> — отличная еда для начала</li>
+      <li>Исследуйте <strong>ЮВ каньон</strong>: железо + серебряные шахты, внизу ещё больше железа</li>
+      <li>Найдите <strong>избушку ведьмы в ЮЗ болоте</strong> — стойка для зельеварения и редкие материалы</li>
+      <li>Создайте <strong>ферму тростника у З реки</strong> для бумаги и книг</li>
+    </ol>
+  </div>
+</div>
+</div>
+
+<div data-lang="ru" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
+  <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Полная вики ⚔️</p>
+  <p>Создана на основе файлов игры (MITE.lang, hu_HU.lang, class-файлы).</p>
+  <p style="font-size:.85em;margin-top:8px;opacity:.7;">Это неофициальная вики сообщества. MITE:BE и все связанные игровые ресурсы, текстуры и торговые марки принадлежат их создателям.</p>
 </div>
 
     </main>

@@ -217,6 +217,98 @@ const sidebarGroups = {
       ],
     },
   ],
+  ru: [
+    {
+      title: '🏠 Основы',
+      links: [
+        { href: 'install', label: 'Руководство по установке' },
+        { href: '#intro-ru', label: 'Введение' },
+        { href: '#quickstart-ru', label: 'Быстрый старт' },
+        { href: 'faq', label: 'Частые вопросы (FAQ)' },
+        { href: '#new-mechanics-ru', label: 'Новые механики' },
+        { href: '#game-modes-ru', label: 'Режимы игры' },
+        { href: '#phase-guide-ru', label: 'Путеводитель по фазам' },
+        { href: '#skills-ru', label: 'Навыки & профессии' },
+      ],
+    },
+    {
+      title: '🪨 Ранняя игра',
+      links: [
+        { href: '#biomes-ru', label: 'Путеводитель по биомам' },
+        { href: '#first-minutes-ru', label: 'Первые минуты' },
+        { href: '#flint-age-ru', label: 'Кремниевый век' },
+        { href: '#workbench-ru', label: 'Верстак' },
+        { href: '#sieve-ru', label: 'Сито & частицы руды' },
+      ],
+    },
+    {
+      title: '🔥 Печи & Плавка',
+      links: [
+        { href: '#clay-furnace-ru', label: 'Глиняная печь' },
+        { href: '#campfire-ru', label: 'Костёр' },
+        { href: '#ingot-mold-ru', label: 'Обсидиановая форма' },
+        { href: '#first-metal-ru', label: 'Первая плавка металла' },
+        { href: '#multiblock-ru', label: 'Многоблочная печь' },
+      ],
+    },
+    {
+      title: '⚔️ Металлические эпохи',
+      links: [
+        { href: '#copper-silver-ru', label: 'Медь & серебро' },
+        { href: '#alloys-ru', label: 'Сплавы' },
+        { href: '#iron-ru', label: 'Железо & сталь' },
+        { href: '#metal-hierarchy-ru', label: 'Иерархия металлов' },
+      ],
+    },
+    {
+      title: '🏡 Выживание & Строительство',
+      links: [
+        { href: '#food-ru', label: 'Еда & питание' },
+        { href: '#water-ru', label: 'Вода & гидратация' },
+        { href: '#backpacks-ru', label: 'Рюкзаки' },
+        { href: '#armor-weapons-ru', label: 'Броня & оружие' },
+        { href: '#enchanting-ru', label: 'Зачарование' },
+        { href: '#bow-arrows-ru', label: 'Лук & система стрел' },
+        { href: '#knowledge-books-ru', label: 'Книги знаний' },
+      ],
+    },
+    {
+      title: '🕳️ Подземный мир',
+      links: [
+        { href: '#caves-ru', label: 'Пещеры & добыча' },
+        { href: '#underground-ru', label: 'Подземный мир' },
+        { href: '#hardstone-ru', label: 'Твёрдый камень' },
+        { href: '#ancient-metal-ru', label: 'Древний металл' },
+      ],
+    },
+    {
+      title: '🔮 Мифическая эпоха',
+      links: [
+        { href: '#mithril-ru', label: 'Мифрил' },
+        { href: '#nether-ru', label: 'Незер' },
+        { href: '#portals-ru', label: 'Типы порталов' },
+        { href: '#adamantium-ru', label: 'Адамант' },
+      ],
+    },
+    {
+      title: '🐉 Финальные испытания',
+      links: [
+        { href: '#wither-ru', label: 'Босс Иссушитель' },
+        { href: '#bedrock-pulverizer-ru', label: 'Дробилка коренной породы' },
+        { href: '#ender-dragon-ru', label: 'Дракон Края' },
+      ],
+    },
+    {
+      title: '📋 Справочник',
+      links: [
+        { href: 'reference#mobs-ru', label: 'Мобы & Существа' },
+        { href: 'reference#potions-ru', label: 'Зелья & Эффекты' },
+        { href: 'reference#quality-ru', label: 'Уровни верстаков' },
+        { href: 'reference#blood-moon-ru', label: 'Кровавая луна' },
+        { href: 'reference#achievements-ru', label: 'Достижения' },
+      ],
+    },
+  ],
 };
 ---
 
@@ -4382,7 +4474,209 @@ If you find sheep before the first night and grab some wool, you can reach sievi
   <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Complete Wiki ⚔️</p>
   <p>Built from game files (MITE.lang, hu_HU.lang, class files).</p>
   <p style="font-size:.85em;margin-top:8px;opacity:.7;">This is an unofficial, community-driven wiki. MITE:BE and all related game assets, textures, and trademarks belong to their respective original creators.</p>
-      </div>
+</div>
+
+      <div data-lang="ru">
+<h2 id="intro-ru">Введение</h2>
+<p><strong>MITE:BE</strong> (Minecraft Is Too Easy: Break Everything) — это чрезвычайно хардкорный мод для выживания в Minecraft 1.6.4. В отличие от обычного Minecraft, здесь нельзя просто срубить дерево и сразу добраться до алмазов — вместо этого нужно двигаться шаг за шагом через полностью переработанную систему крафта и материалов, начиная со сбора травы голыми руками и заканчивая победой над Драконом Края в снаряжении из адаманта.</p>
+
+<h3>Путь прогрессии</h3>
+<div class="prog-tree">
+<span class="prog-node n-fiber"><img src="/mite-be-wiki/img/items/plant_fiber.png" alt="">Растительное волокно</span>
+<span class="prog-arrow">→</span><span class="prog-node n-fiber"><img src="/mite-be-wiki/img/items/straw_rope.png" alt="">Соломенная верёвка</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/shards/flint.png" alt="">Кремниевый нож</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/crafting_table_front.png" alt="">Верстак</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/sieve.png" alt="">Сито</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/clay.png" alt="">Глиняная печь</span>
+<span class="prog-arrow">→</span><span class="prog-node n-copper"><img src="/mite-be-wiki/img/ingots/copper.png" alt="">Медь</span>
+<span class="prog-arrow">→</span><span class="prog-node n-silver"><img src="/mite-be-wiki/img/ingots/silver.png" alt="">Серебро</span>
+<span class="prog-arrow">→</span><span class="prog-node n-iron"><img src="/mite-be-wiki/img/items/iron_ingot.png" alt="">Железо</span>
+<span class="prog-arrow">→</span><span class="prog-node n-hard"><img src="/mite-be-wiki/img/ingots/hardstone.png" alt="">Твёрдый камень</span>
+<span class="prog-arrow">→</span><span class="prog-node n-underground">🕳️ Подземный мир</span>
+<span class="prog-arrow">→</span><span class="prog-node n-ancient"><img src="/mite-be-wiki/img/ingots/ancient_metal.png" alt="">Древний металл</span>
+<span class="prog-arrow">→</span><span class="prog-node n-mithril"><img src="/mite-be-wiki/img/ingots/mithril.png" alt="">Мифрил</span>
+<span class="prog-arrow">→</span><span class="prog-node n-nether">🔥 Незер</span>
+<span class="prog-arrow">→</span><span class="prog-node n-adam"><img src="/mite-be-wiki/img/ingots/adamantium.png" alt="">Адамант</span>
+<span class="prog-arrow">→</span><span class="prog-node n-end">Дракон Края</span>
+</div>
+
+<h2 id="new-mechanics-ru">Новые механики</h2>
+<p>MITE:BE вводит множество новых механик по сравнению с обычным Minecraft:</p>
+
+<h3 id="game-modes-ru">🎮 Режимы игры — Simple vs Hardcore</h3>
+<p>MITE:BE имеет два основных режима. Режим <strong>Simple (Survivor)</strong> предназначен для обучения и знакомства с игрой, а <strong>Hardcore</strong> — это окончательное брутальное испытание. Между ними <em>огромное</em> количество механических различий!</p>
+
+<div class="warning-box">⚠️ <strong>Вики по умолчанию охватывает ОБА режима.</strong> Там, где есть специфические различия для режима, они отмечены отдельно. Если не указано иное, данная механика одинакова в обоих режимах.</div>
+
+<table class="compare-table">
+  <tr><th>Механика</th><th>Simple (Survivor)</th><th>Hardcore</th></tr>
+  <tr><td><strong>Угасание факелов</strong></td><td>Со временем НЕ гаснут, но дождь тушит!</td><td>✅ Гаснут через 3 дня + дождь тоже тушит</td></tr>
+  <tr><td><strong>Проходимость листьев</strong></td><td>❌ Твёрдые — можно стоять</td><td>✅ Проходимые — игрок проваливается сквозь</td></tr>
+  <tr><td><strong>Генерация гравия</strong></td><td>75% шанс</td><td>55% шанс</td></tr>
+  <tr><td><strong>Блокировка щитом</strong></td><td>Обычный шанс, -50% урона</td><td>-3% шанс блока, только -20% урона</td></tr>
+  <tr><td><strong>Жилы руды</strong></td><td>✅ Генерируются</td><td>❌ Жилы руды не генерируются</td></tr>
+</table>
+
+<h2 id="phase-guide-ru">Путеводитель по фазам прогрессии</h2>
+<p>MITE:BE — это игра с несколькими чётко выраженными фазами. Важно понять правильный порядок прогрессии, чтобы не застрять:</p>
+
+<div class="info-box">📋 <strong>Фазы прогрессии:</strong> Кремниевая → Медная → Серебряная → Железная → Твёрдый камень → Подземный мир → Древний металл → Мифрил → Незер → Адамант → Конец</div>
+
+<h3 id="first-minutes-ru">Первые минуты</h3>
+<ol>
+  <li>Собирайте <strong>растительное волокно</strong> (ПКМ по траве)</li>
+  <li>Сделайте <strong>соломенную верёвку</strong> (растительное волокно × 3)</li>
+  <li>Найдите <strong>кремень</strong> в реке/гравии</li>
+  <li>Сделайте <strong>кремниевый нож</strong> (верёвка + кремень + палка)</li>
+  <li>Сделайте <strong>кремниевый верстак</strong> (нож + бревно)</li>
+  <li>Сделайте <strong>сито</strong> — для получения частиц руды</li>
+</ol>
+
+<h3 id="flint-age-ru">⛏ Кремниевый век</h3>
+<p>На кремниевом верстаке можно сделать базовые инструменты: нож, лопату, кирку. <strong>Никакого железа, никаких алмазов</strong> — только кремень и дерево!</p>
+
+<h3 id="sieve-ru">🔲 Сито & частицы руды</h3>
+<p>Сито (Sieve) — это первый шаг к металлу. Просейте грунт/гравий для получения <strong>частиц руды</strong> (9 частиц → 1 слиток в печи + форма).</p>
+
+<h3 id="clay-furnace-ru">🏺 Глиняная печь</h3>
+<p>Найдите глину у рек. Слепите кирпичи, обожгите в костре, постройте глиняную печь. Это ваша первая настоящая печь — можно обжигать дерево и базовые материалы.</p>
+
+<h3 id="ingot-mold-ru">📐 Обсидиановая форма для слитков</h3>
+<p>Для получения металлических слитков нужна форма. Форму делают из обсидиана — для этого нужно сначала найти обсидиан и сделать форму на верстаке.</p>
+
+<h3 id="first-metal-ru">🔶 Первая плавка металла</h3>
+<p>После сбора 9 частиц медной руды: засыпьте в печь + поместите форму + добавьте уголь → ждите → получите медный слиток!</p>
+
+<h3 id="multiblock-ru">🏭 Многоблочная печь</h3>
+<p>Для плавки большинства металлов нужна многоблочная печь 3×3×3 с ядром (каменным, обсидиановым или из адского камня). Это основная система плавки в игре.</p>
+
+<h3 id="copper-silver-ru">🔶🔷 Медь & Серебро</h3>
+<p>Медный верстак открывает медные инструменты и оружие. Серебряный верстак — серебряные инструменты. Серебро особенно эффективно против нежити!</p>
+
+<h3 id="alloys-ru">⚗️ Сплавы</h3>
+<p>Некоторые металлы нужно смешивать: <strong>Бронза</strong> (медь + олово), <strong>Серебряно-медный сплав</strong>, <strong>Высокоуглеродистая сталь</strong> — каждый открывает новый уровень прогрессии.</p>
+
+<h3 id="iron-ru">⚙️ Железо & Сталь</h3>
+<p>Железо требует <strong>каменного угля</strong> (нагрев 2) для плавки. Железный верстак открывает широкий спектр инструментов и ядро обсидиановой печи.</p>
+
+<h3 id="metal-hierarchy-ru">📊 Иерархия металлов</h3>
+<table class="compare-table">
+  <tr><th>Металл</th><th>Верстак</th><th>Требует</th></tr>
+  <tr><td>Кремень</td><td>Кремниевый верстак</td><td>—</td></tr>
+  <tr><td>Медь / Серебро</td><td>Медный / Серебряный</td><td>Каменная печь</td></tr>
+  <tr><td>Железо</td><td>Железный верстак</td><td>Обсидиановая печь</td></tr>
+  <tr><td>Твёрдый камень</td><td>Верстак из твёрдого камня</td><td>Обсидиановая печь</td></tr>
+  <tr><td>Древний металл</td><td>Верстак из Древнего металла</td><td>Адская каменная печь</td></tr>
+  <tr><td>Мифрил</td><td>Мифриловый верстак</td><td>Лавовое ведро (нагрев 3)</td></tr>
+  <tr><td>Адамант</td><td>Адамантиевый верстак</td><td>Стержень Блейза (нагрев 4)</td></tr>
+</table>
+
+<h2 id="food-ru">🍖 Еда & Питание</h2>
+<p>MITE:BE добавляет сложную систему питания. Разная еда восстанавливает разное количество голода и даёт разные эффекты. <strong>Сырое мясо опасно</strong> — готовьте всегда! Приготовленные блюда дают значительно лучшие бонусы.</p>
+
+<h2 id="water-ru">💧 Вода & Гидратация</h2>
+<p>Вода — критически важный ресурс. Нужна сумка для воды (water bag) для переноски. <strong>Нельзя пить воду напрямую из рек/озёр</strong> без очистки! Используйте фильтрованную воду или кипячёную.</p>
+
+<h2 id="backpacks-ru">🎒 Рюкзаки</h2>
+<p>Рюкзаки значительно расширяют инвентарь. Доступны металлические рюкзаки разных уровней — от медного до адамантового. Рюкзак из Древнего металла получают через котёл с ртутью.</p>
+
+<h2 id="armor-weapons-ru">⚔️ Броня & Оружие</h2>
+<p>Каждый металл имеет полный комплект брони и оружия. Серебряное оружие особенно эффективно против нежити. Адамантиевое снаряжение — максимальная защита в игре.</p>
+
+<h2 id="enchanting-ru">✨ Зачарование</h2>
+<p>Стол зачарований из изумруда позволяет зачаровывать снаряжение. Зачарования работают аналогично ванильному Minecraft, но с дополнительными эффектами MITE.</p>
+
+<h2 id="bow-arrows-ru">🏹 Лук & Система стрел</h2>
+<p>Различные типы стрел дают разные эффекты: обычные, огненные, отравленные и многие другие. Колчан позволяет носить больше стрел.</p>
+
+<h2 id="knowledge-books-ru">📚 Книги знаний</h2>
+<p>Книги знаний можно найти в лутовых сундуках структур. Использование книги открывает новые рецепты крафта. После использования книга превращается в обычную книгу (источник XP).</p>
+
+<h2 id="caves-ru">🕳️ Пещеры & Добыча</h2>
+<p>Пещеры MITE:BE значительно опаснее, чем в обычном Minecraft. Ниже Y=0 начинается Подземный мир с особыми слоями блоков и мобов.</p>
+
+<h2 id="underground-ru">⛏️ Подземный мир</h2>
+<p>Ниже Y=0 мир меняется: новые типы камня (твёрдый камень, Древний камень, первозданный камень), новые мобы (Ревенант, Вайт, Повелитель скелетов) и особые структуры.</p>
+
+<h3 id="hardstone-ru">Твёрдый камень</h3>
+<p>Слой Y 0 до (-30). Для добычи нужна кирка из твёрдого камня или лучше. Военным молотом можно дробить блоки твёрдого камня для получения 12 частиц руды.</p>
+
+<h3 id="ancient-metal-ru">Древний металл</h3>
+<p>Слой Y (-30) до (-60). Древний металл — переходный материал перед мифрилом. Верстак из Древнего металла даёт +50% скорости крафта!</p>
+
+<h2 id="mithril-ru">💎 Мифрил</h2>
+<p>Мифрил находится в слое Y (-30) до (-60). Для плавки нужен нагрев 3 (ведро лавы). Мифриловый верстак открывает ядро адской каменной печи.</p>
+
+<h2 id="nether-ru">🔥 Незер</h2>
+<p>Для входа в Незер нужна мифриловая кирка (для добычи обсидиана), обсидиановая форма и огниво. Зелье огнестойкости настоятельно рекомендуется. Крепость Незера содержит Стержень Блейза (нужен для плавки адаманта) и Розу Иссушителя.</p>
+
+<h2 id="portals-ru">🌀 Типы порталов</h2>
+<p>MITE:BE добавляет биомные порталы. Обсидиановый портал у уровня коренной породы телепортирует в Крепость Разорителей (v0.9.0)!</p>
+
+<h2 id="adamantium-ru">⚫ Адамант</h2>
+<p>Высший металл в игре. Для плавки нужен нагрев 4 (Стержень Блейза) и адская каменная печь. Адамантиевое снаряжение — максимальная защита и урон.</p>
+
+<h2 id="wither-ru">💀 Босс Иссушитель</h2>
+<p>Иссушитель призывается с помощью Роз Иссушителя (из Крепости Незера). После победы — Звезда Незера, необходимая для Дробилки коренной породы.</p>
+
+<h2 id="bedrock-pulverizer-ru">🪨 Дробилка коренной породы</h2>
+<p>Устройство для уничтожения ядра коренной породы. Требует Звезду Незера и Усиленное Oko Края. После активации открывается портал в измерение Края.</p>
+
+<h2 id="ender-dragon-ru">🐉 Дракон Края</h2>
+<p>Финальный босс. Разрушайте кристаллы адамантовыми стрелами, затем побеждайте дракона. Победа над Драконом Края — одна из финальных целей игры!</p>
+
+<h2 id="skills-ru">🎓 Навыки & Профессии</h2>
+<p>MITE:BE включает систему навыков — прогрессируйте в: кузнечном деле, плотницком деле, тонком мастерстве, приготовлении пищи, каменщике, зельеварении, стрельбе из лука, механике, рыбалке, фермерстве, добыче руды. Каждый навык открывает новые рецепты и улучшения.</p>
+
+<h2>Мобы & Существа</h2>
+<div class="mob-teaser-stats">
+  <div class="mob-stat-chip">
+    <span class="mob-stat-num">124</span>
+    <span class="mob-stat-label">мобов</span>
+  </div>
+  <div class="mob-stat-chip">
+    <span class="mob-stat-num">3</span>
+    <span class="mob-stat-label">региона</span>
+  </div>
+  <div class="mob-stat-chip">
+    <span class="mob-stat-num">10</span>
+    <span class="mob-stat-label">боссов</span>
+  </div>
+  <div class="mob-stat-chip">
+    <span class="mob-stat-num">4</span>
+    <span class="mob-stat-label">уровня сложности</span>
+  </div>
+</div>
+<div class="mob-teaser-cards">
+  <div class="mob-card">
+    <div class="mob-card-icon">🐺</div>
+    <div class="mob-card-name">Страшный волк</div>
+    <span class="diff-badge diff-mid">II</span>
+  </div>
+  <div class="mob-card">
+    <div class="mob-card-icon">💀</div>
+    <div class="mob-card-name">Повелитель костей</div>
+    <span class="diff-badge diff-boss">★</span>
+  </div>
+  <div class="mob-card">
+    <div class="mob-card-icon">👻</div>
+    <div class="mob-card-name">Упырь</div>
+    <span class="diff-badge diff-early">I</span>
+  </div>
+  <div class="mob-card">
+    <div class="mob-card-icon">🔥</div>
+    <div class="mob-card-name">Огненный элементаль</div>
+    <span class="diff-badge diff-late">III</span>
+  </div>
+</div>
+<a href={`${base}/mobs/`} class="mob-teaser-btn">Открыть бестиарий →</a>
+</div>
+
+<div data-lang="ru" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
+  <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Полная вики ⚔️</p>
+  <p>Создана на основе игровых файлов (MITE.lang, hu_HU.lang, class-файлов).</p>
+  <p style="font-size:.85em;margin-top:8px;opacity:.7;">Это неофициальная вики, созданная сообществом. MITE:BE и все связанные игровые ресурсы, текстуры и торговые марки принадлежат их соответствующим авторам.</p>
+</div>
     </main>
   </div>
 </BaseLayout>

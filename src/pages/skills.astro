@@ -57,6 +57,31 @@ const sidebarGroups = {
       ],
     },
   ],
+  ru: [
+    {
+      title: '🏠 Навигация',
+      links: [
+        { href: './', label: '← Главная вики' },
+      ],
+    },
+    {
+      title: '🎓 Навыки',
+      links: [
+        { href: '#attekintes', label: 'Обзор' },
+        { href: '#blacksmithing', label: 'Кузнечное дело' },
+        { href: '#carpentry', label: 'Плотницкое дело' },
+        { href: '#fineArts', label: 'Тонкое мастерство' },
+        { href: '#foodPreparation', label: 'Приготовление пищи' },
+        { href: '#masonry', label: 'Каменщик' },
+        { href: '#brewing', label: 'Зельеварение' },
+        { href: '#archery', label: 'Стрельба из лука' },
+        { href: '#tinkering', label: 'Механик' },
+        { href: '#fishing', label: 'Рыбалка' },
+        { href: '#farming', label: 'Фермерство' },
+        { href: '#mining', label: 'Добыча руды' },
+      ],
+    },
+  ],
 };
 ---
 
@@ -485,6 +510,176 @@ const sidebarGroups = {
   <tr><td>Explosives and blasting materials</td><td>Fast block removal</td></tr>
 </table>
 
+</div></div></div>
+</div>
+
+<!-- ===== RUSSIAN ===== -->
+
+<div data-lang="ru" id="attekintes-ru">
+<h2>Навыки (Skills)</h2>
+<p>Часть рецептов MITE:BE требует определённого навыка для крафта. Навыки получаются через Книги знаний — найденные в пещерах, деревнях и выпавшие от особых врагов. Каждый навык открывает набор рецептов крафта.</p>
+
+<div class="warning-box">⚠️ <strong>Примечание:</strong> Система <strong>Профессий</strong> в настоящее время <strong>не активирована в v0.9.0</strong>. Навыки можно получать независимо через Книги знаний — выбор профессии не требуется.</div>
+
+<h3>Обзор навыков</h3>
+<table class="compare-table">
+  <tr><th>Навык</th><th>Рецептов</th><th>Основные станции</th></tr>
+  <tr><td><a href={`${base}/recipes/?skill=blacksmithing`}>⚒ Кузнечное дело</a></td><td>331</td><td>Верстаки, Доменная печь</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=carpentry`}>🪵 Плотницкое дело</a></td><td>99</td><td>Верстаки</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=fineArts`}>✨ Тонкое мастерство</a></td><td>105</td><td>Верстаки, Железный верстак</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=foodPreparation`}>🍖 Приготовление пищи</a></td><td>94</td><td>Верстаки, Каменная печь</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=masonry`}>🧱 Каменщик</a></td><td>77</td><td>Верстаки, Каменная печь</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=brewing`}>🧪 Зельеварение</a></td><td>75</td><td>Верстаки</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=archery`}>🏹 Стрельба из лука</a></td><td>18</td><td>Верстаки</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=tinkering`}>🔧 Механик</a></td><td>19</td><td>Кремнёвый, Железный, Золотой верстак</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=fishing`}>🎣 Рыбалка</a></td><td>10</td><td>Верстаки</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=farming`}>🌾 Фермерство</a></td><td>4</td><td>Кремнёвый, Твёрдокаменный верстак</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=mining`}>⛏ Добыча руды</a></td><td>3</td><td>Кремнёвый, Железный верстак</td></tr>
+</table>
+</div>
+
+<div data-lang="ru" id="blacksmithing-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⚒ Кузнечное дело (Blacksmithing)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p>Самый обширный навык — <strong>331 рецепт</strong>. Без него нельзя скрафтить металлические инструменты, оружие или броню. Требуется почти для всей металлообработки.</p>
+<table class="compare-table">
+  <tr><th>Открывает</th><th>Примечания</th></tr>
+  <tr><td>Медные, Серебряные, Бронзовые, Железные, Золотые инструменты и оружие</td><td>Кремнёвый верстак</td></tr>
+  <tr><td>Снаряжение из Твёрдого камня, Древнего металла, Мифрила, Адамантия</td><td>Верстак соответствующего тира</td></tr>
+  <tr><td>Броня из всех металлических тиров</td><td>От меди до адамантия</td></tr>
+  <tr><td>Слитковые и литейные формы</td><td>Нужны для Доменной печи</td></tr>
+  <tr><td>Боевые молоты и особое оружие</td><td>Боевой топор, коса, алебарда</td></tr>
+</table>
+<div class="info-box">💡 <strong>Без Кузнечного дела</strong> вы ограничены кремнёвыми и каменными инструментами. Это первый и важнейший навык!</div>
+</div></div></div>
+</div>
+
+<div data-lang="ru" id="carpentry-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🪵 Плотницкое дело (Carpentry)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p><strong>99 рецептов</strong>. Мастерство дерева — доски, балки, сундуки, рамы и другие деревянные предметы.</p>
+<table class="compare-table">
+  <tr><th>Открывает</th><th>Примечания</th></tr>
+  <tr><td>Улучшенные доски и деревянные панели</td><td>Лучшие строительные материалы</td></tr>
+  <tr><td>Сундуки, шкафы, книжные полки</td><td>Хранение и мебель</td></tr>
+  <tr><td>Рамы и каркасы верстаков</td><td>Нужны для верстаков более высокого тира</td></tr>
+  <tr><td>Заборы, ворота, двери</td><td>Строительство</td></tr>
+  <tr><td>Башенная стойка, решётчатая стойка</td><td>Особые строительные элементы</td></tr>
+</table>
+</div></div></div>
+</div>
+
+<div data-lang="ru" id="fineArts-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>✨ Тонкое мастерство (Fine Arts)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p><strong>105 рецептов</strong>. Ювелирные украшения, декоративные предметы и точное ремесло. В сочетании с редкими материалами открывает уникальное снаряжение.</p>
+<table class="compare-table">
+  <tr><th>Открывает</th><th>Примечания</th></tr>
+  <tr><td>Монеты (медь, серебро, золото, Древний металл)</td><td>Торговая валюта</td></tr>
+  <tr><td>Украшения и кольца</td><td>Особые бонусы к характеристикам</td></tr>
+  <tr><td>Хрустальное стекло и декоративные предметы</td><td>Декор</td></tr>
+  <tr><td>Особые стрелы и снаряды</td><td>Продвинутый дальний бой</td></tr>
+  <tr><td>Фильтрующая бумага и химические инструменты</td><td>В сочетании с Зельеварением</td></tr>
+</table>
+</div></div></div>
+</div>
+
+<div data-lang="ru" id="foodPreparation-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🍖 Приготовление пищи (Food Preparation)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p><strong>94 рецепта</strong>. Критически важен для выживания — большинство еды требует этого навыка. Охватывает всё от выпечки до сложных блюд.</p>
+<table class="compare-table">
+  <tr><th>Открывает</th><th>Примечания</th></tr>
+  <tr><td>Хлеб, пироги и выпечка</td><td>В Каменной печи</td></tr>
+  <tr><td>Тушёное мясо, суп, каша</td><td>Тёплая еда — нужна для поддержания температуры</td></tr>
+  <tr><td>Консервы и заготовки</td><td>Дольше хранятся</td></tr>
+  <tr><td>Лечебная пища</td><td>Противоядия, целебные продукты</td></tr>
+  <tr><td>Фруктовые соки и освежающие напитки</td><td>Альтернативные средства от жажды</td></tr>
+</table>
+<div class="info-box">🌡️ <strong>В холодных биомах</strong> тёплая еда (тушёнка, суп, каша) восстанавливает температуру тела — Приготовление пищи может спасти жизнь!</div>
+</div></div></div>
+</div>
+
+<div data-lang="ru" id="masonry-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🧱 Каменщик (Masonry)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p><strong>77 рецептов</strong>. Строительные материалы из камня, кирпича и глины. Нужен для прочных оборонительных сооружений и строительства печей.</p>
+<table class="compare-table">
+  <tr><th>Открывает</th><th>Примечания</th></tr>
+  <tr><td>Кирпич, каменный кирпич, каменные плиты</td><td>Прочные строительные блоки</td></tr>
+  <tr><td>Печи (Каменная, Обожжённая глина, Обсидиановая)</td><td>Крафт в Каменной печи</td></tr>
+  <tr><td>Глиняные и песчаниковые блоки</td><td>Декоративное строительство</td></tr>
+  <tr><td>Слитковые формы для плавки</td><td>Можно крафтить вручную на Кремнёвом верстаке</td></tr>
+  <tr><td>Обсидиановый кирпич и особые блоки</td><td>Подготовка к Незеру</td></tr>
+</table>
+</div></div></div>
+</div>
+
+<div data-lang="ru" id="brewing-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🧪 Зельеварение (Brewing)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p><strong>75 рецептов</strong>. Нужен для зелий, сыра и особых напитков. Охватывает традиционное зельеварение и рецепты на основе котла.</p>
+<table class="compare-table">
+  <tr><th>Открывает</th><th>Примечания</th></tr>
+  <tr><td>Зелья и продвинутые зелья</td><td>Котёл + стойка для зелий</td></tr>
+  <tr><td>Крафт сыра</td><td>Любое металлическое ведро, макс. 9 вёдер за раз</td></tr>
+  <tr><td>Медовые напитки и натуральные экстракты</td><td>Альтернативные зелья</td></tr>
+  <tr><td>Дистилляция воды и очищенная вода</td><td>Нужна фильтрующая бумага</td></tr>
+  <tr><td>Особые напитки Незера</td><td>Усиление огнестойкости</td></tr>
+</table>
+</div></div></div>
+</div>
+
+<div data-lang="ru" id="archery-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🏹 Стрельба из лука (Archery)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p><strong>18 рецептов</strong>. Луки, стрелы и снаряжение для дальнего боя. Дополняет Тонкое мастерство для особых стрел.</p>
+<table class="compare-table">
+  <tr><th>Открывает</th><th>Примечания</th></tr>
+  <tr><td>Деревянный, Медный, Серебряный луки</td><td>Базовые луки</td></tr>
+  <tr><td>Продвинутые луки (Твёрдокаменный, Древний металл, Мифрил, Адамантий)</td><td>Больше дальность и урон</td></tr>
+  <tr><td>Варианты стрел (огонь, взрыв, яд)</td><td>Особые эффекты</td></tr>
+  <tr><td>Колчан и держатель для стрел</td><td>Носите больше стрел</td></tr>
+</table>
+</div></div></div>
+</div>
+
+<div data-lang="ru" id="tinkering-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🔧 Механик (Tinkering)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p><strong>19 рецептов</strong>. Механические и особые устройства. Мало рецептов, но важные предметы — ловушки, фильтры и особые механизмы.</p>
+<table class="compare-table">
+  <tr><th>Открывает</th><th>Примечания</th></tr>
+  <tr><td>Варианты сита (дерево, медь, железо и др.)</td><td>Для просеивания гравия</td></tr>
+  <tr><td>Фильтры и фильтрующая бумага</td><td>Фильтрация воды, в сочетании с Зельеварением</td></tr>
+  <tr><td>Ловушки и механические устройства</td><td>Оборонительные цели</td></tr>
+  <tr><td>Особые ёмкости для хранения</td><td>Резервуар для жидкостей, варианты сундуков</td></tr>
+</table>
+</div></div></div>
+</div>
+
+<div data-lang="ru" id="fishing-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🎣 Рыбалка (Fishing)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p><strong>10 рецептов</strong>. Удочки и рыболовное снаряжение из различных материалов.</p>
+<table class="compare-table">
+  <tr><th>Открывает</th><th>Примечания</th></tr>
+  <tr><td>Варианты удочек (от Меди до Адамантия)</td><td>Лучшая удочка = больше шанс улова</td></tr>
+  <tr><td>Особые крючки и приманки</td><td>Для редкой рыбы</td></tr>
+</table>
+</div></div></div>
+</div>
+
+<div data-lang="ru" id="farming-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌾 Фермерство (Farming)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p><strong>4 рецепта</strong>. Особые рецепты фермерства — обработка семян и садоводческие инструменты.</p>
+<table class="compare-table">
+  <tr><th>Открывает</th><th>Примечания</th></tr>
+  <tr><td>Обработка семян и культур</td><td>Особые сорта растений</td></tr>
+  <tr><td>Садоводческие инструменты</td><td>Более эффективное выращивание</td></tr>
+</table>
+</div></div></div>
+</div>
+
+<div data-lang="ru" id="mining-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⛏ Добыча руды (Mining)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p><strong>3 рецепта</strong>. Особые инструменты и аксессуары для добычи руды. Мало рецептов, но полезное горное снаряжение.</p>
+<table class="compare-table">
+  <tr><th>Открывает</th><th>Примечания</th></tr>
+  <tr><td>Особые горные инструменты</td><td>Более эффективная добыча</td></tr>
+  <tr><td>Взрывчатка и подрывные материалы</td><td>Быстрое уничтожение блоков</td></tr>
+</table>
 </div></div></div>
 </div>
 

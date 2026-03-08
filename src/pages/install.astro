@@ -44,6 +44,24 @@ const sidebarGroups = {
       ],
     },
   ],
+  ru: [
+    {
+      title: '🏠 Навигация',
+      links: [
+        { href: './', label: '← Главная вики' },
+      ],
+    },
+    {
+      title: '📦 Установка',
+      links: [
+        { href: '#prerequisites-ru', label: 'Предварительные требования' },
+        { href: '#download-ru', label: 'Скачивание' },
+        { href: '#install-ru', label: 'Установка' },
+        { href: '#first-launch-ru', label: 'Первый запуск' },
+        { href: '#troubleshooting-ru', label: 'Устранение проблем' },
+      ],
+    },
+  ],
 };
 ---
 <BaseLayout title="Telepites — MITE: Break Everything Wiki">
@@ -276,6 +294,111 @@ details.advanced .details-content{padding:4px 16px 16px;}
 <div class="tip-card">💡 <strong>Community help:</strong> Join the MiTE Discord (<a href="https://discord.gg/7myyGAXJ6v" target="_blank" rel="noopener">discord.gg/7myyGAXJ6v</a>) for support. The <strong>r/MITE</strong> subreddit is also an active resource.</div>
 </div>
 
+<!-- ==================== RUSSIAN ==================== -->
+<div data-lang="ru">
+<h2 id="prerequisites-ru">Предварительные требования</h2>
+
+<div class="warning-box">⚠️ <strong>Важно:</strong> MITE:BE <em>не совместима</em> с современными версиями Minecraft. Требуется именно <strong>Minecraft 1.6.4</strong>, <strong>без Forge</strong>.</div>
+
+<h3><span class="step-number">1</span> Установка Java 8</h3>
+<p>Minecraft 1.6.4 требует <strong>Java 8</strong> — более новые версии (Java 11, 17, 21 и т.д.) работать не будут!</p>
+<ol>
+  <li>Скачайте <strong>Java 8 JRE</strong> с: <a href="https://adoptium.net/temurin/releases/?version=8" target="_blank" rel="noopener">adoptium.net — Eclipse Temurin 8</a></li>
+  <li>Выберите версию для вашей ОС (Windows x64 → рекомендуется <code>.msi</code>)</li>
+  <li>Установите обычным образом — запомните путь установки!</li>
+</ol>
+<div class="tip-card">💡 Если Java уже установлена, запустите <code>java -version</code> в терминале. Должно начинаться с <strong>"1.8.0"</strong>.</div>
+
+<h3><span class="step-number">2</span> Установка PrismLauncher</h3>
+<ol>
+  <li>Скачайте PrismLauncher с: <a href="https://prismlauncher.org/download/" target="_blank" rel="noopener">prismlauncher.org</a></li>
+  <li>Установите и запустите</li>
+  <li>Добавьте <strong>аккаунт Minecraft</strong> (требуется аккаунт Microsoft)</li>
+  <li><strong>Настройки → Java</strong> → нажмите <em>"Auto-detect"</em> и выберите установку <strong>Java 8 (1.8.0)</strong></li>
+</ol>
+<div class="warning-box">⚠️ Если не настроить Java 8 в PrismLauncher, мод <strong>не будет работать</strong> — это самая частая ошибка!</div>
+
+<!-- ===== СКАЧИВАНИЕ ===== -->
+<h2 id="download-ru">Скачивание MITE:BE</h2>
+<p>Мод распространяется как <strong>полный экземпляр PrismLauncher</strong> — всё включено (Minecraft 1.6.4 + JAR-файлы модов + текстур-пак).</p>
+
+<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin:24px 0;">
+  <a href="https://archive.org/download/mite-be-v0.9.0-english/MiTE-BE_v0.9.0_english.zip" class="download-btn">
+    ⬇ Скачать английскую версию
+    <span>Экземпляр PrismLauncher · ZIP · ~266 МБ</span>
+  </a>
+  <a href="https://archive.org/download/mite-be-v0.9.0-hungarian/MiTE-BE_v0.9.0_hungarian.zip" class="download-btn" style="background:linear-gradient(135deg,#546e7a,#37474f);">
+    ⬇ Скачать венгерскую версию
+    <span>Экземпляр PrismLauncher · ZIP · ~266 МБ</span>
+  </a>
+</div>
+<div class="warning-box">⚠️ <strong>Не распаковывайте ZIP-файл!</strong> PrismLauncher импортирует его напрямую — нужен весь ZIP целиком!</div>
+
+<!-- ===== УСТАНОВКА ===== -->
+<h2 id="install-ru">Установка (Импорт)</h2>
+<ol>
+  <li>Откройте <strong>PrismLauncher</strong></li>
+  <li>Нажмите кнопку <strong>"Add Instance"</strong> (Добавить экземпляр)</li>
+  <li>Выберите вкладку <strong>"Import"</strong> (Импорт)</li>
+  <li>Укажите путь к скачанному файлу <code>MiTE-BE_v0.9.0_english.zip</code> (или <code>_hungarian.zip</code>)</li>
+  <li>Нажмите <strong>OK</strong> — PrismLauncher автоматически всё настроит</li>
+  <li>Дважды щёлкните новый экземпляр для <strong>запуска</strong></li>
+</ol>
+<p>Если главное меню Minecraft появляется с логотипом MITE:BE — <strong>готово, установка прошла успешно!</strong></p>
+
+<details class="advanced">
+<summary>Продвинутый: Ручная установка (без импорта экземпляра)</summary>
+<div class="details-content">
+<p>Если импорт ZIP не работает, или вы предпочитаете ручную настройку:</p>
+<ol>
+  <li>PrismLauncher: <strong>Add Instance</strong> → версия Minecraft: <strong>1.6.4</strong> (Vanilla, без Forge!)</li>
+  <li>Распакуйте ZIP во временную папку</li>
+  <li>Правая кнопка мыши на экземпляре → <strong>Edit Mods</strong> → добавьте файлы <code>.jar</code> из папки <code>.minecraft/</code></li>
+  <li>Скопируйте папки <code>resourcepacks</code> и <code>config</code> в папку <code>.minecraft</code> экземпляра</li>
+  <li>Запустите экземпляр</li>
+</ol>
+</div>
+</details>
+
+<!-- ===== ПЕРВЫЙ ЗАПУСК ===== -->
+<h2 id="first-launch-ru">Советы для первого запуска</h2>
+<ul>
+  <li><strong>Выбор игрового режима:</strong> MITE:BE предлагает два режима — <strong>Simple</strong> (факелы не гаснут, проще) и <strong>Hardcore</strong> (факелы гаснут, сложнее). Для новичков рекомендуется Simple!</li>
+  <li><strong>Выбор биома:</strong> Биом <strong>Нагорье (Highland)</strong> — рекомендуемый стартовый биом — ровная местность, хорошие ресурсы, нет экстремальных опасностей.</li>
+  <li><strong>Вики:</strong> Держите открытым <a href="./#phase-guide">Путеводитель по фазам</a> — он ведёт вас через прогрессию шаг за шагом!</li>
+  <li>🗺️ <strong>Сид:</strong> Не знаете какой сид выбрать? Смотрите наш <a href={`${base}/faq/#seed-ru`}><strong>Путеводитель по рекомендуемому сиду</strong></a> — парящий остров, каньон с рудами, яблоневый лес рядом.</li>
+</ul>
+<div class="tip-card">💡 Minecraft 1.6.4 — старая версия, не удивляйтесь старой графике и меню!</div>
+
+<!-- ===== УСТРАНЕНИЕ ПРОБЛЕМ ===== -->
+<h2 id="troubleshooting-ru">Устранение проблем</h2>
+<table class="compare-table">
+  <tr><th style="width:35%">Проблема</th><th>Решение</th></tr>
+  <tr>
+    <td><strong>"Ошибка версии Java"</strong> / сбой при запуске</td>
+    <td>PrismLauncher → Настройки → Java → убедитесь, что выбрана <strong>Java 8 (1.8.0)</strong>. НЕ Java 17 или 21!</td>
+  </tr>
+  <tr>
+    <td><strong>Чёрный экран</strong> / не загружается</td>
+    <td>1) Проверьте настройку Java 8. 2) Настройки → Java → Мин. память: <strong>512 МБ</strong>, Макс. память: <strong>2048 МБ</strong>. 3) Попробуйте перезапустить.</td>
+  </tr>
+  <tr>
+    <td><strong>"Мод не загружается"</strong></td>
+    <td>MITE:BE <strong>НЕ использует Forge!</strong> Устанавливайте на Vanilla 1.6.4. Если Forge есть в экземпляре — удалите его.</td>
+  </tr>
+  <tr>
+    <td><strong>Импорт ZIP не работает</strong></td>
+    <td>Убедитесь, что выбран оригинальный файл <code>.zip</code> (не распакованная папка). Если проблема сохраняется, попробуйте ручную установку (выше).</td>
+  </tr>
+  <tr>
+    <td><strong>Отсутствуют текстуры</strong></td>
+    <td>Настройки → Текстур-паки → убедитесь, что текстур-пак MITE:BE активен.</td>
+  </tr>
+</table>
+
+<div class="tip-card">💡 <strong>Помощь сообщества:</strong> Обратитесь за поддержкой в Discord MiTE (<a href="https://discord.gg/7myyGAXJ6v" target="_blank" rel="noopener">discord.gg/7myyGAXJ6v</a>). Сабреддит <strong>r/MITE</strong> также является активным ресурсом.</div>
+</div>
+
 <div data-lang="hu" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
   <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Teljes Magyar Wiki ⚔️</p>
   <p>A wiki a játékfájlok (MITE.lang, hu_HU.lang, class fájlok) alapján készült.</p>
@@ -285,6 +408,11 @@ details.advanced .details-content{padding:4px 16px 16px;}
   <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Complete Wiki ⚔️</p>
   <p>Built from game files (MITE.lang, hu_HU.lang, class files).</p>
   <p style="font-size:.85em;margin-top:8px;opacity:.7;">This is an unofficial, community-driven wiki. MITE:BE and all related game assets, textures, and trademarks belong to their respective original creators.</p>
+</div>
+<div data-lang="ru" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
+  <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Полная вики ⚔️</p>
+  <p>Создана на основе игровых файлов (MITE.lang, hu_HU.lang, class-файлов).</p>
+  <p style="font-size:.85em;margin-top:8px;opacity:.7;">Это неофициальная вики, созданная сообществом. MITE:BE и все связанные игровые ресурсы, текстуры и торговые марки принадлежат их соответствующим авторам.</p>
 </div>
 
     </main>

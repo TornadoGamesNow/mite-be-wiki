@@ -28,6 +28,12 @@ export default function LanguageSwitcher() {
       >
         English
       </button>
+      <button
+        className={`lang-btn${lang === 'ru' ? ' active' : ''}`}
+        onClick={() => toggle('ru')}
+      >
+        Русский
+      </button>
     </div>
   );
 }

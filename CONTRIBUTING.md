@@ -61,24 +61,31 @@ Always cite the source mod reference file (see below) when correcting numeric da
 
 ---
 
-## Bilingual content (HU/EN)
+## Trilingual content (HU/EN/RU)
 
-Every piece of user-facing content must have **both languages**.
+Every piece of user-facing content must have **all three languages**.
 
 In Astro components, use `data-lang` attributes:
 
 ```html
 <p data-lang="hu">Magyar szöveg</p>
 <p data-lang="en">English text</p>
+<p data-lang="ru">Русский текст</p>
 ```
 
-In JSON data files, use the `{ hu: "...", en: "..." }` object format:
+In JSON data files, use the `{ hu: "...", en: "...", ru: "..." }` object format:
 
 ```json
-"name": { "hu": "Réz Csákány", "en": "Copper Pickaxe" }
+"name": { "hu": "Réz Csákány", "en": "Copper Pickaxe", "ru": "Медная кирка" }
 ```
 
-In React islands, the active language is tracked via `lang` state: `lang === 'hu' ? ... : ...`
+In React islands, the active language is tracked via `lang` state (`'hu' | 'en' | 'ru'`):
+
+```tsx
+lang === 'hu' ? 'Magyar' : lang === 'ru' ? 'Русский' : 'English'
+```
+
+The active language is stored in `localStorage` under the key `mite-wiki-lang` and dispatched via the `mite-lang-change` DOM event.
 
 ---
 
@@ -97,7 +104,7 @@ Or pass data directly with the `recipe` prop:
   gridSize: "3x3",
   pattern: [["copper_ingot","copper_ingot","copper_ingot"],["_","stick","_"],["_","stick","_"]],
   output: "copper_pickaxe",
-  label: { hu: "Réz Csákány", en: "Copper Pickaxe" }
+  label: { hu: "Réz Csákány", en: "Copper Pickaxe", ru: "Медная кирка" }
 }} />
 ```
 
@@ -115,7 +122,7 @@ Edit `data/mobs.json`. A mob entry looks like:
 ```json
 {
   "id": "zombie",
-  "name": { "hu": "Zombi", "en": "Zombie" },
+  "name": { "hu": "Zombi", "en": "Zombie", "ru": "Зомби" },
   "image": "zombie.png",
   "hp": 20,
   "damage": "3",
@@ -125,7 +132,7 @@ Edit `data/mobs.json`. A mob entry looks like:
   "spawnZones": ["surface", "underground"],
   "tags": [],
   "drops": [
-    { "item": { "hu": "Csont", "en": "Bone" }, "itemId": "bone", "chance": "100%" }
+    { "item": { "hu": "Csont", "en": "Bone", "ru": "Кость" }, "itemId": "bone", "chance": "100%" }
   ]
 }
 ```
@@ -140,7 +147,7 @@ Edit `data/items.json`:
 
 ```json
 "my_item": {
-  "name": { "hu": "Az én itemem", "en": "My Item" },
+  "name": { "hu": "Az én itemem", "en": "My Item", "ru": "Мой предмет" },
   "img": "img/items/my_item.png",
   "tier": null,
   "category": "tool"
@@ -172,7 +179,7 @@ Game data comes from the mod's `MITE/reference/` directory inside the mod ZIP:
 ## What we're looking for
 
 - Corrections to stats, drop rates, or recipe details (always cite the source reference file)
-- Missing translations (HU or EN)
+- Missing or incorrect translations (HU, EN, or RU)
 - New crafting grid visuals for recipes that are currently text-only
 - Texture images (`32×32 PNG`, pixelated style) for items/blocks not yet in `public/img/`
 
@@ -180,7 +187,7 @@ Game data comes from the mod's `MITE/reference/` directory inside the mod ZIP:
 
 ## Guidelines
 
-- Always provide both HU and EN for any new content
+- Always provide HU, EN, and RU for any new content
 - One PR per topic keeps reviews fast
 - Numeric data must be sourced from the mod's reference files
 

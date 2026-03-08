@@ -31,7 +31,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <script is:inline>
     (function(){
       var l = localStorage.getItem('mite-wiki-lang');
-      if (l === 'hu' || l === 'en') document.documentElement.setAttribute('data-lang-init', l);
+      if (l === 'hu' || l === 'en' || l === 'ru') document.documentElement.setAttribute('data-lang-init', l);
     })();
   </script>
 </head>

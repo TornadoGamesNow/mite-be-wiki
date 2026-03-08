@@ -6,17 +6,17 @@ const { currentPage = '' } = Astro.props;
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const pages = [
-  { href: `${base}/`, id: 'home', hu: 'Kezdőlap', en: 'Home' },
-  { href: `${base}/reference/`, id: 'reference', hu: 'Referencia', en: 'Reference' },
-  { href: `${base}/install/`, id: 'install', hu: 'Telepítés', en: 'Install' },
-  { href: `${base}/faq/`, id: 'faq', hu: 'GYIK', en: 'FAQ' },
-  { href: `${base}/recipes/`, id: 'recipes', hu: 'Receptek', en: 'Recipes' },
-  { href: `${base}/items/`, id: 'items', hu: 'Itemek', en: 'Items' },
-  { href: `${base}/mobs/`, id: 'mobs', hu: 'Bestiary', en: 'Bestiary' },
-  { href: `${base}/skills/`, id: 'skills', hu: 'Képességek', en: 'Skills' },
-  { href: `${base}/biomes/`, id: 'biomes', hu: 'Biome-ok', en: 'Biomes' },
-  { href: `${base}/brewing/`, id: 'brewing', hu: 'Brewing', en: 'Brewing' },
-  { href: `${base}/changelog/`, id: 'changelog', hu: 'Changelog', en: 'Changelog' },
+  { href: `${base}/`, id: 'home', hu: 'Kezdőlap', en: 'Home', ru: 'Главная' },
+  { href: `${base}/reference/`, id: 'reference', hu: 'Referencia', en: 'Reference', ru: 'Справочник' },
+  { href: `${base}/install/`, id: 'install', hu: 'Telepítés', en: 'Install', ru: 'Установка' },
+  { href: `${base}/faq/`, id: 'faq', hu: 'GYIK', en: 'FAQ', ru: 'FAQ' },
+  { href: `${base}/recipes/`, id: 'recipes', hu: 'Receptek', en: 'Recipes', ru: 'Рецепты' },
+  { href: `${base}/items/`, id: 'items', hu: 'Itemek', en: 'Items', ru: 'Предметы' },
+  { href: `${base}/mobs/`, id: 'mobs', hu: 'Bestiary', en: 'Bestiary', ru: 'Бестиарий' },
+  { href: `${base}/skills/`, id: 'skills', hu: 'Képességek', en: 'Skills', ru: 'Навыки' },
+  { href: `${base}/biomes/`, id: 'biomes', hu: 'Biome-ok', en: 'Biomes', ru: 'Биомы' },
+  { href: `${base}/brewing/`, id: 'brewing', hu: 'Brewing', en: 'Brewing', ru: 'Зельеварение' },
+  { href: `${base}/changelog/`, id: 'changelog', hu: 'Changelog', en: 'Changelog', ru: 'Журнал изменений' },
 ];
 ---
 <nav class="top-nav">
@@ -24,6 +24,7 @@ const pages = [
     <a href={p.href} aria-current={p.id === currentPage ? 'page' : undefined}>
       <span data-lang="hu">{p.hu}</span>
       <span data-lang="en">{p.en}</span>
+      <span data-lang="ru">{p.ru}</span>
     </a>
   ))}
 </nav>

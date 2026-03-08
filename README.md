@@ -1,6 +1,6 @@
 # MITE: Break Everything — Wiki
 
-The first public bilingual wiki for **MITE: Break Everything** — a hardcore total-conversion Minecraft 1.6.4 mod.
+The first public trilingual wiki for **MITE: Break Everything** — a hardcore total-conversion Minecraft 1.6.4 mod.
 
 🌐 **Live site:** [tornadogamesnow.github.io/mite-be-wiki](https://tornadogamesnow.github.io/mite-be-wiki)
 
@@ -35,7 +35,7 @@ The first public bilingual wiki for **MITE: Break Everything** — a hardcore to
 
 ### Main page topics
 
-- 🇭🇺 / 🇬🇧 Bilingual — Magyar & English
+- 🇭🇺 / 🇬🇧 / 🇷🇺 Trilingual — Magyar, English & Русский
 - Full progression guide: Flint Age → Copper/Silver → Iron/Steel → Hardstone → Ancient Metal → Mithril → Adamantium
 - Biome guide, 5 portal types, ore distribution
 - Visual crafting grids with tooltips and tier badges
@@ -84,7 +84,7 @@ src/islands/      — React "islands" (client-side interactive)
   VersionToggle.tsx     — Version toggle
 
 data/             — JSON data files (SSOT — authoritative source of truth)
-  items.json            — Item catalog (~1126 items): id → {name:{hu,en}, img, tier, category}
+  items.json            — Item catalog (~1126 items): id → {name:{hu,en,ru}, img, tier, category}
   mobs.json             — Mob stats: hp, dmg, xp, drops, spawnZones, tags
   recipes.json          — Shaped crafting recipes (CraftingGrid + RecipeBrowser)
   recipes_full.json     — Full recipe database (~1487 recipes, used by RecipesHub)

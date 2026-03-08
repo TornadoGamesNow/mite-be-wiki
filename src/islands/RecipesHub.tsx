@@ -26,7 +26,7 @@ type OutputGroup = {
 };
 
 type ItemEntry = {
-  name: { hu: string; en: string };
+  name: { hu: string; en: string; ru?: string };
   img: string;
   tier: string | null;
   removed_in?: string;
@@ -42,10 +42,10 @@ function toTitleCase(id: string): string {
   return id.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 }
 
-function getItemName(id: string, lang: 'hu' | 'en'): string {
+function getItemName(id: string, lang: 'hu' | 'en' | 'ru'): string {
   const entry = items[id];
   if (!entry) return toTitleCase(id);
-  const name = entry.name?.[lang];
+  const name = (entry.name as any)?.[lang] ?? entry.name?.en;
   if (!name || name === id) return toTitleCase(id);
   return name;
 }
@@ -54,7 +54,7 @@ function getItemImg(id: string): string {
   return items[id]?.img || '';
 }
 
-function genericItemName(ids: string[], lang: 'hu' | 'en'): string {
+function genericItemName(ids: string[], lang: 'hu' | 'en' | 'ru'): string {
   const names = ids.map(id => getItemName(id, lang)).filter(Boolean);
   if (names.length <= 1) return names[0] ?? '';
   const wordArrays = names.map(n => n.split(' '));
@@ -360,7 +360,7 @@ function matchShapeless(grid: (string | null)[][], recs: FullRecipe[]): FullReci
   });
 }
 
-function buildTooltip(g: OutputGroup, lang: 'hu' | 'en'): string {
+function buildTooltip(g: OutputGroup, lang: 'hu' | 'en' | 'ru'): string {
   const r = g.primaryRecipe;
   const ings = flattenIngredients(r.ingredients);
   const counts = new Map<string, number>();
@@ -369,7 +369,7 @@ function buildTooltip(g: OutputGroup, lang: 'hu' | 'en'): string {
     .map(([id, cnt]) => `${cnt > 1 ? cnt + '× ' : ''}${getItemName(id, lang)}`)
     .join('\n');
   const extra = ings.length > 9 ? `\n+${ings.length - 9} more` : '';
-  return `${getItemName(g.outputId, lang)}\n\n${lang === 'hu' ? 'Hozzávalók' : 'Ingredients'}:\n${ingList}${extra}`;
+  return `${getItemName(g.outputId, lang)}\n\n${lang === 'hu' ? 'Hozzávalók' : lang === 'ru' ? 'Ингредиенты' : 'Ingredients'}:\n${ingList}${extra}`;
 }
 
 // Groups that USE a given ingredient
@@ -411,39 +411,39 @@ const allGroups = mergeAliasGroups(groupByOutput(recipes));
 const allStations = [...new Set(recipes.map(r => r.station))].sort();
 const allSkills = [...new Set(recipes.flatMap(r => r.skills))].sort();
 
-const STATION_LABELS: Record<string, { hu: string; en: string }> = {
-  hand:                    { hu: 'Kézzel',                    en: 'By hand' },
-  flint_workbench:         { hu: 'Kovakő Munkaasztal',        en: 'Flint Workbench' },
-  copper_workbench:        { hu: 'Réz Munkaasztal',           en: 'Copper Workbench' },
-  silver_workbench:        { hu: 'Ezüst Munkaasztal',         en: 'Silver Workbench' },
-  gold_workbench:          { hu: 'Arany Munkaasztal',         en: 'Gold Workbench' },
-  iron_workbench:          { hu: 'Vas Munkaasztal',           en: 'Iron Workbench' },
-  hardstone_workbench:     { hu: 'Kőmag Munkaasztal',         en: 'Hardstone Workbench' },
-  ancient_metal_workbench: { hu: 'Ős Fém Munkaasztal',        en: 'Ancient Metal Workbench' },
-  mithril_workbench:       { hu: 'Mithril Munkaasztal',       en: 'Mithril Workbench' },
-  adamantium_workbench:    { hu: 'Adamantium Munkaasztal',    en: 'Adamantium Workbench' },
-  stone_furnace:           { hu: 'Kő Kemence',                en: 'Stone Furnace' },
-  blast_furnace:           { hu: 'Nagy Kemence (Olvasztó)',   en: 'Blast Furnace' },
-  obsidian_furnace:        { hu: 'Obszidián Kemence',         en: 'Obsidian Furnace' },
-  netherrack_furnace:      { hu: 'Pokoli Kő Kemence',         en: 'Netherrack Furnace' },
-  cauldron:                { hu: 'Üst',                       en: 'Cauldron' },
-  brewing_stand:           { hu: 'Főzetállvány',              en: 'Brewing Stand' },
+const STATION_LABELS: Record<string, { hu: string; en: string; ru: string }> = {
+  hand:                    { hu: 'Kézzel',                    en: 'By hand',                  ru: 'Руками' },
+  flint_workbench:         { hu: 'Kovakő Munkaasztal',        en: 'Flint Workbench',           ru: 'Кремниевый верстак' },
+  copper_workbench:        { hu: 'Réz Munkaasztal',           en: 'Copper Workbench',          ru: 'Медный верстак' },
+  silver_workbench:        { hu: 'Ezüst Munkaasztal',         en: 'Silver Workbench',          ru: 'Серебряный верстак' },
+  gold_workbench:          { hu: 'Arany Munkaasztal',         en: 'Gold Workbench',            ru: 'Золотой верстак' },
+  iron_workbench:          { hu: 'Vas Munkaasztal',           en: 'Iron Workbench',            ru: 'Железный верстак' },
+  hardstone_workbench:     { hu: 'Kőmag Munkaasztal',         en: 'Hardstone Workbench',       ru: 'Верстак из твёрдого камня' },
+  ancient_metal_workbench: { hu: 'Ős Fém Munkaasztal',        en: 'Ancient Metal Workbench',   ru: 'Верстак из древнего металла' },
+  mithril_workbench:       { hu: 'Mithril Munkaasztal',       en: 'Mithril Workbench',         ru: 'Мифриловый верстак' },
+  adamantium_workbench:    { hu: 'Adamantium Munkaasztal',    en: 'Adamantium Workbench',      ru: 'Адамантиевый верстак' },
+  stone_furnace:           { hu: 'Kő Kemence',                en: 'Stone Furnace',             ru: 'Каменная печь' },
+  blast_furnace:           { hu: 'Nagy Kemence (Olvasztó)',   en: 'Blast Furnace',             ru: 'Доменная печь' },
+  obsidian_furnace:        { hu: 'Obszidián Kemence',         en: 'Obsidian Furnace',          ru: 'Обсидиановая печь' },
+  netherrack_furnace:      { hu: 'Pokoli Kő Kemence',         en: 'Netherrack Furnace',        ru: 'Печь из адского камня' },
+  cauldron:                { hu: 'Üst',                       en: 'Cauldron',                  ru: 'Котёл' },
+  brewing_stand:           { hu: 'Főzetállvány',              en: 'Brewing Stand',             ru: 'Стойка для зелий' },
 };
 
-const SKILL_LABELS: Record<string, { hu: string; en: string }> = {
-  blacksmithing:   { hu: 'Kovácsmesterség', en: 'Blacksmithing' },
-  carpentry:       { hu: 'Ácsmesterség',    en: 'Carpentry' },
-  fineArts:        { hu: 'Finom Mesterség', en: 'Fine Arts' },
-  foodPreparation: { hu: 'Ételkészítés',    en: 'Food Preparation' },
-  masonry:         { hu: 'Kőfaragás',       en: 'Masonry' },
-  brewing:         { hu: 'Főzőmesterség',   en: 'Brewing' },
-  archery:         { hu: 'Íjászat',         en: 'Archery' },
-  tinkering:       { hu: 'Barkácsolás',     en: 'Tinkering' },
-  fishing:         { hu: 'Horgászat',       en: 'Fishing' },
-  farming:         { hu: 'Gazdálkodás',     en: 'Farming' },
-  mining:          { hu: 'Bányászat',       en: 'Mining' },
-  blacksmith:      { hu: 'Kovács',          en: 'Blacksmith' },
-  smelting:        { hu: 'Olvasztás',       en: 'Smelting' },
+const SKILL_LABELS: Record<string, { hu: string; en: string; ru: string }> = {
+  blacksmithing:   { hu: 'Kovácsmesterség', en: 'Blacksmithing',    ru: 'Кузнечное дело' },
+  carpentry:       { hu: 'Ácsmesterség',    en: 'Carpentry',        ru: 'Плотницкое дело' },
+  fineArts:        { hu: 'Finom Mesterség', en: 'Fine Arts',        ru: 'Тонкое мастерство' },
+  foodPreparation: { hu: 'Ételkészítés',    en: 'Food Preparation', ru: 'Приготовление пищи' },
+  masonry:         { hu: 'Kőfaragás',       en: 'Masonry',          ru: 'Каменщик' },
+  brewing:         { hu: 'Főzőmesterség',   en: 'Brewing',          ru: 'Зельеварение' },
+  archery:         { hu: 'Íjászat',         en: 'Archery',          ru: 'Стрельба из лука' },
+  tinkering:       { hu: 'Barkácsolás',     en: 'Tinkering',        ru: 'Механик' },
+  fishing:         { hu: 'Horgászat',       en: 'Fishing',          ru: 'Рыбалка' },
+  farming:         { hu: 'Gazdálkodás',     en: 'Farming',          ru: 'Фермерство' },
+  mining:          { hu: 'Bányászat',       en: 'Mining',           ru: 'Горное дело' },
+  blacksmith:      { hu: 'Kovács',          en: 'Blacksmith',       ru: 'Кузнец' },
+  smelting:        { hu: 'Olvasztás',       en: 'Smelting',         ru: 'Плавка' },
 };
 
 // ── Shared sub-tab bar ────────────────────────────────────────────────────
@@ -475,7 +475,7 @@ function SubTabs({ tabs, active, onSelect }: {
 
 // ── Ingredient row ────────────────────────────────────────────────────────
 function IngredientRow({ id, lang, onClickIngredient }: {
-  id: string | string[]; lang: 'hu' | 'en'; onClickIngredient: (id: string) => void;
+  id: string | string[]; lang: 'hu' | 'en' | 'ru'; onClickIngredient: (id: string) => void;
 }) {
   const primaryId = Array.isArray(id) ? id[0] : id;
   const displayName = Array.isArray(id) ? genericItemName(id, lang) : getItemName(id, lang);
@@ -508,7 +508,7 @@ function IngredientRow({ id, lang, onClickIngredient }: {
 
 // ── Recipe compact row (for "used in" / "crafting" lists) ─────────────────
 function RecipeListItem({ group, lang, onSelect }: {
-  group: OutputGroup; lang: 'hu' | 'en'; onSelect: (id: string) => void;
+  group: OutputGroup; lang: 'hu' | 'en' | 'ru'; onSelect: (id: string) => void;
 }) {
   const [hov, setHov] = useState(false);
   return (
@@ -546,7 +546,7 @@ function RecipeListItem({ group, lang, onSelect }: {
 // ── Item detail panel (ingredient view) ───────────────────────────────────
 // Single scrolling page: craft preview (if craftable) + used-in list
 function ItemDetailPanel({ itemId, lang, onClose, onSelectGroup }: {
-  itemId: string; lang: 'hu' | 'en';
+  itemId: string; lang: 'hu' | 'en' | 'ru';
   onClose: () => void; onSelectGroup: (id: string) => void;
 }) {
   const usedIn = useMemo(() => getUsedInGroups(itemId), [itemId]);
@@ -567,7 +567,7 @@ function ItemDetailPanel({ itemId, lang, onClose, onSelectGroup }: {
             padding: '4px 10px', lineHeight: 1, whiteSpace: 'nowrap',
           }}
         >
-          ← {lang === 'hu' ? 'Vissza' : 'Back'}
+          ← {lang === 'hu' ? 'Vissza' : lang === 'ru' ? 'Назад' : 'Back'}
         </button>
         <ItemIcon id={itemId} size={32} />
         <div style={{ minWidth: 0 }}>
@@ -583,7 +583,7 @@ function ItemDetailPanel({ itemId, lang, onClose, onSelectGroup }: {
         return (
           <div style={{ marginBottom: 20 }}>
             <div style={{ fontSize: '.8em', fontWeight: 600, color: 'var(--text2)', marginBottom: 8, textTransform: 'uppercase', letterSpacing: '.06em' }}>
-              {lang === 'hu' ? 'Craftolás' : 'Crafting'}
+              {lang === 'hu' ? 'Craftolás' : lang === 'ru' ? 'Крафт' : 'Crafting'}
               {craftingGroup.recipes.length > 1 && (
                 <span style={{ marginLeft: 6, fontWeight: 400, color: 'var(--gold)', textTransform: 'none' }}>({craftingGroup.recipes.length} variáns)</span>
               )}
@@ -596,7 +596,7 @@ function ItemDetailPanel({ itemId, lang, onClose, onSelectGroup }: {
               onClick={() => { onSelectGroup(craftingGroup.outputId); onClose(); }}
               onMouseEnter={e => (e.currentTarget.style.borderColor = 'var(--gold)')}
               onMouseLeave={e => (e.currentTarget.style.borderColor = 'transparent')}
-              title={lang === 'hu' ? 'Recept megnyitása' : 'Open recipe'}
+              title={lang === 'hu' ? 'Recept megnyitása' : lang === 'ru' ? 'Открыть рецепт' : 'Open recipe'}
             >
               {/* mini craft grid */}
               <div style={{
@@ -637,7 +637,7 @@ function ItemDetailPanel({ itemId, lang, onClose, onSelectGroup }: {
                   {(r as any).removed_version && <div style={{ color: '#ff6b6b', fontWeight: 600 }}>⚠️ v{(r as any).removed_version}</div>}
                   {(r as any).added_version && <div style={{ color: '#6bcb77' }}>✅ v{(r as any).added_version}+</div>}
                   <div>🏭 {r.station}</div>
-                  {!r.shaped && <div><span className="badge-shapeless">🔀 {lang === 'hu' ? 'Szabad' : 'Shapeless'}</span></div>}
+                  {!r.shaped && <div><span className="badge-shapeless">🔀 {lang === 'hu' ? 'Szabad' : lang === 'ru' ? 'Без формы' : 'Shapeless'}</span></div>}
                   {r.outputQty > 1 && <div>📦 ×{r.outputQty}</div>}
                 </div>
               </div>
@@ -648,12 +648,12 @@ function ItemDetailPanel({ itemId, lang, onClose, onSelectGroup }: {
 
       {/* Used-in list */}
       <div style={{ fontSize: '.8em', fontWeight: 600, color: 'var(--text2)', marginBottom: 8, textTransform: 'uppercase', letterSpacing: '.06em' }}>
-        {lang === 'hu' ? `Felhasználva (${usedIn.length})` : `Used in (${usedIn.length})`}
+        {lang === 'hu' ? `Felhasználva (${usedIn.length})` : lang === 'ru' ? `Используется (${usedIn.length})` : `Used in (${usedIn.length})`}
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
         {usedIn.length === 0 ? (
           <div style={{ fontSize: '.85em', color: 'var(--text2)' }}>
-            {lang === 'hu' ? 'Nem szerepel egyetlen receptben sem.' : 'Not used in any recipe.'}
+            {lang === 'hu' ? 'Nem szerepel egyetlen receptben sem.' : lang === 'ru' ? 'Не используется ни в одном рецепте.' : 'Not used in any recipe.'}
           </div>
         ) : (
           usedIn.map(g => (
@@ -668,7 +668,7 @@ function ItemDetailPanel({ itemId, lang, onClose, onSelectGroup }: {
 
 // ── Detail Drawer ─────────────────────────────────────────────────────────
 function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: {
-  group: OutputGroup; lang: 'hu' | 'en'; onClose: () => void; onSelectGroup: (id: string) => void;
+  group: OutputGroup; lang: 'hu' | 'en' | 'ru'; onClose: () => void; onSelectGroup: (id: string) => void;
   onBackToSandbox?: () => void;
 }) {
   const [itemDetailId, setItemDetailId] = useState<string | null>(null);
@@ -715,7 +715,7 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                   color: 'var(--gold)', fontSize: '.78em', fontWeight: 600,
                 }}
               >
-                ← {lang === 'hu' ? 'Vissza a sandboxhoz' : 'Back to sandbox'}
+                ← {lang === 'hu' ? 'Vissza a sandboxhoz' : lang === 'ru' ? 'Назад к песочнице' : 'Back to sandbox'}
               </button>
             )}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 18 }}>
@@ -727,7 +727,7 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                   </div>
                   {items[group.outputId]?.removed_in && (
                     <div style={{ marginTop: 4, fontSize: '.8em', color: '#ff6b6b', fontWeight: 600, background: 'rgba(255,107,107,.12)', padding: '2px 8px', borderRadius: 4, display: 'inline-block' }}>
-                      ⚠️ {lang === 'hu' ? `Eltávolítva: v${items[group.outputId].removed_in}` : `Removed in v${items[group.outputId].removed_in}`}
+                      ⚠️ {lang === 'hu' ? `Eltávolítva: v${items[group.outputId].removed_in}` : lang === 'ru' ? `Удалено в v${items[group.outputId].removed_in}` : `Removed in v${items[group.outputId].removed_in}`}
                     </div>
                   )}
                   <div style={{ fontSize: '.72em', color: 'var(--text2)', marginTop: 4, fontFamily: 'monospace' }}>
@@ -759,10 +759,10 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                   <div key={i} style={{ paddingTop: i > 0 ? 20 : 0, borderTop: i > 0 ? '1px solid var(--surface2)' : 'none' }}>
                     {/* Badges */}
                     <div style={{ marginBottom: 12, display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                      {!r.shaped && <span className="badge-shapeless">🔀 {lang === 'hu' ? 'Szabad' : 'Shapeless'}</span>}
+                      {!r.shaped && <span className="badge-shapeless">🔀 {lang === 'hu' ? 'Szabad' : lang === 'ru' ? 'Без формы' : 'Shapeless'}</span>}
                       {group.recipes.length > 1 && (
                         <span style={{ fontSize: '.72em', padding: '2px 7px', borderRadius: 4, background: 'rgba(255,200,0,.12)', color: 'var(--gold)', border: '1px solid rgba(255,200,0,.25)' }}>
-                          {lang === 'hu' ? `${i + 1}. variáns` : `Variant ${i + 1}`}
+                          {lang === 'hu' ? `${i + 1}. variáns` : lang === 'ru' ? `Вариант ${i + 1}` : `Variant ${i + 1}`}
                         </span>
                       )}
                     </div>
@@ -812,27 +812,29 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                     <div style={{ fontSize: '.83em', color: 'var(--text2)', lineHeight: 1.9, marginBottom: 14, padding: '8px 12px', background: 'var(--surface2)', borderRadius: 6 }}>
                       {(r as any)._mergedFromId && (
                         <div style={{ color: '#aaa', fontWeight: 600, marginBottom: 4, fontSize: '.9em' }}>
-                          📦 {lang === 'hu' ? `Régi ID: ` : `Old ID: `}<code style={{ fontSize: '.9em' }}>{(r as any)._mergedFromId}</code>
+                          📦 {lang === 'hu' ? `Régi ID: ` : lang === 'ru' ? `Старый ID: ` : `Old ID: `}<code style={{ fontSize: '.9em' }}>{(r as any)._mergedFromId}</code>
                           {items[(r as any)._mergedFromId]?.removed_in && <span style={{ color: '#ff9a44' }}> (v{items[(r as any)._mergedFromId].removed_in})</span>}
                         </div>
                       )}
                       {(r as any).removed_version && (
                         <div style={{ color: '#ff6b6b', fontWeight: 600, marginBottom: 4 }}>
-                          ⚠️ {lang === 'hu' ? `Eltávolítva: v${(r as any).removed_version}` : `Removed in v${(r as any).removed_version}`}
+                          ⚠️ {lang === 'hu' ? `Eltávolítva: v${(r as any).removed_version}` : lang === 'ru' ? `Удалено в v${(r as any).removed_version}` : `Removed in v${(r as any).removed_version}`}
                         </div>
                       )}
                       {(r as any).added_version && (
                         <div style={{ color: '#6bcb77', fontWeight: 600, marginBottom: 4 }}>
-                          ✅ {lang === 'hu' ? `Szükséges: v${(r as any).added_version}+` : `Requires v${(r as any).added_version}+`}
+                          ✅ {lang === 'hu' ? `Szükséges: v${(r as any).added_version}+` : lang === 'ru' ? `Требуется v${(r as any).added_version}+` : `Requires v${(r as any).added_version}+`}
                         </div>
                       )}
                       <div>🏭 {r.station}</div>
                       <div>
-                        ⚙️ {lang === 'hu' ? 'Nehézség' : 'Difficulty'}:{' '}
+                        ⚙️ {lang === 'hu' ? 'Nehézség' : lang === 'ru' ? 'Сложность' : 'Difficulty'}:{' '}
                         <span
                           style={{ color: 'var(--text)', cursor: 'help', borderBottom: '1px dotted var(--text2)' }}
                           title={lang === 'hu'
                             ? `Crafting nehézségi pontszám: ${Math.round(r.difficulty)}\nMinél magasabb az érték, annál több idő és tapasztalat szükséges a tárgy minőségi craftolásához (Fine → Legendary). Az XP-követelmény ezzel az értékkel arányos.`
+                            : lang === 'ru'
+                            ? `Сложность крафта: ${Math.round(r.difficulty)}\nЧем выше значение, тем больше времени и опыта нужно для крафта предмета высокого качества (Fine → Legendary). Требования к XP пропорциональны этому значению.`
                             : `Crafting difficulty score: ${Math.round(r.difficulty)}\nHigher values require more time and experience to craft the item at higher quality (Fine → Legendary). XP requirements scale proportionally with this value.`}
                         >
                           {Math.round(r.difficulty).toLocaleString()}
@@ -844,9 +846,9 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
 
                     {/* Ingredients — #2: clickable rows */}
                     <div style={{ fontSize: '.8em', color: 'var(--text2)', marginBottom: 8, fontWeight: 500 }}>
-                      {lang === 'hu' ? 'Hozzávalók' : 'Ingredients'}
+                      {lang === 'hu' ? 'Hozzávalók' : lang === 'ru' ? 'Ингредиенты' : 'Ingredients'}
                       <span style={{ fontSize: '.85em', fontWeight: 400, marginLeft: 6 }}>
-                        ({lang === 'hu' ? 'kattints a receptekért' : 'click for recipes'})
+                        ({lang === 'hu' ? 'kattints a receptekért' : lang === 'ru' ? 'клик для рецептов' : 'click for recipes'})
                       </span>
                     </div>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
@@ -880,7 +882,7 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
 
 // ── Hoverable row components (hooks cannot be inside .map) ────────────────
 function ModalRow({ group, lang, onNavigate, onClose }: {
-  group: OutputGroup; lang: 'hu' | 'en';
+  group: OutputGroup; lang: 'hu' | 'en' | 'ru';
   onNavigate: (id: string) => void; onClose: () => void;
 }) {
   const [hov, setHov] = useState(false);
@@ -902,13 +904,13 @@ function ModalRow({ group, lang, onNavigate, onClose }: {
         <div style={{ fontSize: '.85em', fontWeight: 500 }}>{getItemName(group.outputId, lang)}</div>
         <div style={{ fontSize: '.7em', color: 'var(--text2)' }}>{group.primaryRecipe.station}</div>
       </div>
-      {hov && <span style={{ fontSize: '.8em', color: 'var(--gold)', flexShrink: 0 }}>→ {lang === 'hu' ? 'Recept' : 'Recipe'}</span>}
+      {hov && <span style={{ fontSize: '.8em', color: 'var(--gold)', flexShrink: 0 }}>→ {lang === 'hu' ? 'Recept' : lang === 'ru' ? 'Рецепт' : 'Recipe'}</span>}
     </div>
   );
 }
 
 function TooltipRow({ group, lang, onNavigate }: {
-  group: OutputGroup; lang: 'hu' | 'en'; onNavigate: (id: string) => void;
+  group: OutputGroup; lang: 'hu' | 'en' | 'ru'; onNavigate: (id: string) => void;
 }) {
   const [hov, setHov] = useState(false);
   return (
@@ -937,7 +939,7 @@ function TooltipRow({ group, lang, onNavigate }: {
 
 // ── "Used in" full modal ───────────────────────────────────────────────────
 function UsedInModal({ itemId, lang, onClose, onNavigate }: {
-  itemId: string; lang: 'hu' | 'en'; onClose: () => void; onNavigate: (id: string) => void;
+  itemId: string; lang: 'hu' | 'en' | 'ru'; onClose: () => void; onNavigate: (id: string) => void;
 }) {
   const usedIn = useMemo(() => getUsedInGroups(itemId), [itemId]);
   useEffect(() => {
@@ -963,7 +965,7 @@ function UsedInModal({ itemId, lang, onClose, onNavigate }: {
             <div>
               <div style={{ fontWeight: 700, fontSize: '.95em' }}>{getItemName(itemId, lang)}</div>
               <div style={{ fontSize: '.7em', color: 'var(--gold)', marginTop: 2 }}>
-                {lang === 'hu' ? `${usedIn.length} receptben szerepel` : `Used in ${usedIn.length} recipes`}
+                {lang === 'hu' ? `${usedIn.length} receptben szerepel` : lang === 'ru' ? `Используется в ${usedIn.length} рецептах` : `Used in ${usedIn.length} recipes`}
               </div>
             </div>
           </div>
@@ -982,7 +984,7 @@ function UsedInModal({ itemId, lang, onClose, onNavigate }: {
 
 // ── Picker item row with "Used in" hover tooltip ──────────────────────────
 function PickerItem({ id, lang, isSelected, onSelect, onNavigate, onOpenModal }: {
-  id: string; lang: 'hu' | 'en'; isSelected: boolean;
+  id: string; lang: 'hu' | 'en' | 'ru'; isSelected: boolean;
   onSelect: (id: string) => void; onNavigate: (outputId: string) => void;
   onOpenModal: (id: string) => void;
 }) {
@@ -1067,7 +1069,7 @@ function PickerItem({ id, lang, isSelected, onSelect, onNavigate, onOpenModal }:
           }}
         >
           <div style={{ fontSize: '.7em', fontWeight: 700, color: 'var(--gold)', marginBottom: 10, textTransform: 'uppercase', letterSpacing: '.07em' }}>
-            {lang === 'hu' ? `Felhasználva (${usedIn.length})` : `Used in (${usedIn.length})`}
+            {lang === 'hu' ? `Felhasználva (${usedIn.length})` : lang === 'ru' ? `Используется (${usedIn.length})` : `Used in (${usedIn.length})`}
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
             {usedIn.slice(0, 8).map(g => (
@@ -1083,7 +1085,7 @@ function PickerItem({ id, lang, isSelected, onSelect, onNavigate, onOpenModal }:
                 color: 'var(--gold)', fontSize: '.75em', fontWeight: 600,
               }}
             >
-              +{usedIn.length - 8} {lang === 'hu' ? 'recept — Mind' : 'more — View all'}
+              +{usedIn.length - 8} {lang === 'hu' ? 'recept — Mind' : lang === 'ru' ? 'ещё — Все' : 'more — View all'}
             </button>
           )}
         </div>
@@ -1098,7 +1100,7 @@ function SandboxCell({ cell, isActive, pendingItem, lang, onClick, onRightClick,
   cell: string | null;
   isActive: boolean;
   pendingItem: string | null;
-  lang: 'hu' | 'en';
+  lang: 'hu' | 'en' | 'ru';
   onClick: () => void;
   onRightClick: (e: React.MouseEvent) => void;
   onDropItem: (id: string) => void;
@@ -1132,8 +1134,8 @@ function SandboxCell({ cell, isActive, pendingItem, lang, onClick, onRightClick,
       }}
       title={
         cell ? getItemName(cell, lang)
-        : pendingItem ? (lang === 'hu' ? `Elhelyezés: ${getItemName(pendingItem, lang)}` : `Place: ${getItemName(pendingItem, lang)}`)
-        : (lang === 'hu' ? 'Kattints vagy húzd ide' : 'Click or drag here')
+        : pendingItem ? (lang === 'hu' ? `Elhelyezés: ${getItemName(pendingItem, lang)}` : lang === 'ru' ? `Поместить: ${getItemName(pendingItem, lang)}` : `Place: ${getItemName(pendingItem, lang)}`)
+        : (lang === 'hu' ? 'Kattints vagy húzd ide' : lang === 'ru' ? 'Нажмите или перетащите' : 'Click or drag here')
       }
     >
       {cell && cell !== '_' && <ItemIcon id={cell} size={32} />}
@@ -1150,7 +1152,7 @@ function SandboxCell({ cell, isActive, pendingItem, lang, onClick, onRightClick,
 function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandboxMatches,
   pickerSlot, setPickerSlot, pickerQuery, setPickerQuery, pickerItems, onViewRecipe, onOpenModal,
 }: {
-  lang: 'hu' | 'en';
+  lang: 'hu' | 'en' | 'ru';
   sandboxGrid: (string | null)[][];
   setSandboxCell: (r: number, c: number, v: string | null) => void;
   clearSandbox: () => void;
@@ -1192,9 +1194,9 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
         border: '1px solid var(--surface2)', borderRadius: 8, overflow: 'hidden',
       }}>
         {[
-          { icon: '📦', step: lang === 'hu' ? 'Válassz tárgyat' : 'Pick an item', sub: lang === 'hu' ? 'a listából jobbra' : 'from the list' },
-          { icon: '🧩', step: lang === 'hu' ? 'Kattints a cellára' : 'Click a cell', sub: lang === 'hu' ? 'a 3×3 rácsban' : 'in the 3×3 grid' },
-          { icon: '➜', step: lang === 'hu' ? 'Nézd az eredményt' : 'See the result', sub: lang === 'hu' ? 'jobbra' : 'on the right' },
+          { icon: '📦', step: lang === 'hu' ? 'Válassz tárgyat' : lang === 'ru' ? 'Выбери предмет' : 'Pick an item', sub: lang === 'hu' ? 'a listából jobbra' : lang === 'ru' ? 'из списка справа' : 'from the list' },
+          { icon: '🧩', step: lang === 'hu' ? 'Kattints a cellára' : lang === 'ru' ? 'Нажми на ячейку' : 'Click a cell', sub: lang === 'hu' ? 'a 3×3 rácsban' : lang === 'ru' ? 'в сетке 3×3' : 'in the 3×3 grid' },
+          { icon: '➜', step: lang === 'hu' ? 'Nézd az eredményt' : lang === 'ru' ? 'Смотри результат' : 'See the result', sub: lang === 'hu' ? 'jobbra' : lang === 'ru' ? 'справа' : 'on the right' },
         ].map((h, i) => (
           <div key={i} style={{
             flex: 1, padding: '10px 14px', display: 'flex', alignItems: 'center', gap: 10,
@@ -1215,7 +1217,7 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
         {/* ── LEFT: Crafting grid ── */}
         <div>
           <div style={{ fontSize: '.75em', fontWeight: 600, color: 'var(--text2)', textTransform: 'uppercase', letterSpacing: '.06em', marginBottom: 8 }}>
-            {lang === 'hu' ? 'Crafting tábla' : 'Crafting table'}
+            {lang === 'hu' ? 'Crafting tábla' : lang === 'ru' ? 'Стол крафта' : 'Crafting table'}
           </div>
           <div style={{
             background: 'linear-gradient(135deg,#8a601a 0%,#63430d 55%,#7a5212 100%)',
@@ -1244,12 +1246,12 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
           <div style={{ marginTop: 10 }}>
             <button onClick={clearSandbox}
               style={{ padding: '5px 12px', borderRadius: 5, border: '1px solid var(--surface2)', background: 'var(--surface)', color: 'var(--text)', cursor: 'pointer', fontSize: '.82em' }}>
-              🗑️ {lang === 'hu' ? 'Rács törlése' : 'Clear grid'}
+              🗑️ {lang === 'hu' ? 'Rács törlése' : lang === 'ru' ? 'Очистить сетку' : 'Clear grid'}
             </button>
           </div>
           {/* right-click hint */}
           <div style={{ marginTop: 8, fontSize: '.7em', color: 'var(--text2)', opacity: .7 }}>
-            {lang === 'hu' ? 'Jobb klikk = cella törlése' : 'Right-click = remove item'}
+            {lang === 'hu' ? 'Jobb klikk = cella törlése' : lang === 'ru' ? 'ПКМ = убрать предмет' : 'Right-click = remove item'}
           </div>
         </div>
 
@@ -1257,13 +1259,13 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
         <div>
           <div style={{ fontSize: '.75em', fontWeight: 600, color: 'var(--text2)', textTransform: 'uppercase', letterSpacing: '.06em', marginBottom: 8 }}>
             {selectedPickerItem
-              ? (lang === 'hu' ? `✔ ${getItemName(selectedPickerItem, lang)} kiválasztva` : `✔ ${getItemName(selectedPickerItem, lang)} selected`)
-              : (lang === 'hu' ? 'Tárgy lista' : 'Item list')}
+              ? (lang === 'hu' ? `✔ ${getItemName(selectedPickerItem, lang)} kiválasztva` : lang === 'ru' ? `✔ ${getItemName(selectedPickerItem, lang)} выбран` : `✔ ${getItemName(selectedPickerItem, lang)} selected`)
+              : (lang === 'hu' ? 'Tárgy lista' : lang === 'ru' ? 'Список предметов' : 'Item list')}
           </div>
           <input
             type="text"
             autoFocus
-            placeholder={lang === 'hu' ? 'Keresés…' : 'Search…'}
+            placeholder={lang === 'hu' ? 'Keresés…' : lang === 'ru' ? 'Поиск…' : 'Search…'}
             value={pickerQuery}
             onChange={e => setPickerQuery(e.target.value)}
             style={{ width: '100%', padding: '6px 10px', borderRadius: 6, border: '1px solid var(--surface2)', background: 'var(--bg)', color: 'var(--text)', marginBottom: 8, boxSizing: 'border-box', fontSize: '.85em' }}
@@ -1287,7 +1289,7 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
           </div>
           {selectedPickerItem && (
             <div style={{ marginTop: 8, fontSize: '.78em', color: 'var(--gold)' }}>
-              {lang === 'hu' ? '← Kattints egy cellára az elhelyezéshez' : '← Click a cell to place it'}
+              {lang === 'hu' ? '← Kattints egy cellára az elhelyezéshez' : lang === 'ru' ? '← Нажми на ячейку для размещения' : '← Click a cell to place it'}
             </div>
           )}
         </div>
@@ -1295,7 +1297,7 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
         {/* ── RIGHT: Result ── */}
         <div style={{ minWidth: 160 }}>
           <div style={{ fontSize: '.75em', fontWeight: 600, color: 'var(--text2)', textTransform: 'uppercase', letterSpacing: '.06em', marginBottom: 8 }}>
-            {lang === 'hu' ? 'Eredmény' : 'Result'}
+            {lang === 'hu' ? 'Eredmény' : lang === 'ru' ? 'Результат' : 'Result'}
           </div>
           {allMatches.length === 0 ? (
             <div style={{
@@ -1306,13 +1308,13 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
               <div style={{ fontSize: '.82em', color: 'var(--text2)', lineHeight: 1.8 }}>
                 {hasItems ? (
                   <>
-                    <div style={{ fontWeight: 600, color: 'var(--text)' }}>{lang === 'hu' ? 'Nincs egyező recept.' : 'No recipe yet.'}</div>
-                    <div>{lang === 'hu' ? 'Adj hozzá még hozzávalókat.' : 'Add more ingredients.'}</div>
+                    <div style={{ fontWeight: 600, color: 'var(--text)' }}>{lang === 'hu' ? 'Nincs egyező recept.' : lang === 'ru' ? 'Рецепт не найден.' : 'No recipe yet.'}</div>
+                    <div>{lang === 'hu' ? 'Adj hozzá még hozzávalókat.' : lang === 'ru' ? 'Добавь больше ингредиентов.' : 'Add more ingredients.'}</div>
                   </>
                 ) : (
                   <>
-                    <div style={{ fontWeight: 600, color: 'var(--text)' }}>{lang === 'hu' ? 'Tedd be a hozzávalókat' : 'Fill the grid'}</div>
-                    <div>{lang === 'hu' ? 'a rácsba az eredményért.' : 'to see results.'}</div>
+                    <div style={{ fontWeight: 600, color: 'var(--text)' }}>{lang === 'hu' ? 'Tedd be a hozzávalókat' : lang === 'ru' ? 'Заполни сетку' : 'Fill the grid'}</div>
+                    <div>{lang === 'hu' ? 'a rácsba az eredményért.' : lang === 'ru' ? 'чтобы увидеть результат.' : 'to see results.'}</div>
                   </>
                 )}
               </div>
@@ -1350,7 +1352,7 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
                         color: 'var(--gold)', fontSize: '.8em', fontWeight: 600,
                       }}
                     >
-                      {lang === 'hu' ? '📖 Recept megtekintése' : '📖 View recipe'}
+                      {lang === 'hu' ? '📖 Recept megtekintése' : lang === 'ru' ? '📖 Посмотреть рецепт' : '📖 View recipe'}
                     </button>
                   </div>
                 );
@@ -1367,7 +1369,7 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
 export default function RecipesHub() {
   const [mode, setMode] = useState<'browse' | 'sandbox'>('browse');
   const [transitioning, setTransitioning] = useState(false);
-  const [lang, setLang] = useState<'hu' | 'en'>('hu');
+  const [lang, setLang] = useState<'hu' | 'en' | 'ru'>('hu');
   const [keyword, setKeyword] = useState('');
   const [stationFilter, setStationFilter] = useState('');
   const [skillFilter, setSkillFilter] = useState('');
@@ -1389,8 +1391,8 @@ export default function RecipesHub() {
   }
 
   useEffect(() => {
-    setLang(getCurrentLang() as 'hu' | 'en');
-    return onLangChange((l) => setLang(l as 'hu' | 'en'));
+    setLang(getCurrentLang() as 'hu' | 'en' | 'ru');
+    return onLangChange((l) => setLang(l as 'hu' | 'en' | 'ru'));
   }, []);
 
   // URL ?search= / ?skill= / ?ingredient= param support
@@ -1504,7 +1506,7 @@ export default function RecipesHub() {
       {/* Tabs */}
       <div className="hub-tabs">
         <button className={`hub-tab${mode === 'browse' ? ' active' : ''}`} onClick={() => setMode('browse')}>
-          🔍 {lang === 'hu' ? 'Böngésző' : 'Browse'}
+          🔍 {lang === 'hu' ? 'Böngésző' : lang === 'ru' ? 'Обзор' : 'Browse'}
         </button>
         <button className={`hub-tab${mode === 'sandbox' ? ' active' : ''}`} onClick={() => setMode('sandbox')}>
           🧪 Sandbox
@@ -1523,7 +1525,7 @@ export default function RecipesHub() {
               <input
                 ref={searchRef}
                 type="text"
-                placeholder={lang === 'hu' ? 'Recept vagy tárgy keresése… (Ctrl+K)' : 'Search recipes or items… (Ctrl+K)'}
+                placeholder={lang === 'hu' ? 'Recept vagy tárgy keresése… (Ctrl+K)' : lang === 'ru' ? 'Поиск рецептов или предметов… (Ctrl+K)' : 'Search recipes or items… (Ctrl+K)'}
                 value={keyword}
                 onChange={e => setKeyword(e.target.value)}
                 style={{ width: '100%', padding: '6px 10px', borderRadius: 6, border: '1px solid var(--surface2)', background: 'var(--bg)', color: 'var(--text)', boxSizing: 'border-box' }}
@@ -1531,19 +1533,19 @@ export default function RecipesHub() {
             </div>
             <select value={stationFilter} onChange={e => setStationFilter(e.target.value)}
               style={{ padding: '6px 10px', borderRadius: 6, border: `1px solid ${stationFilter ? 'var(--gold)' : 'var(--surface2)'}`, background: 'var(--bg)', color: stationFilter ? 'var(--gold)' : 'var(--text)' }}>
-              <option value="">{lang === 'hu' ? '– Összes állomás –' : '– All stations –'}</option>
+              <option value="">{lang === 'hu' ? '– Összes állomás –' : lang === 'ru' ? '– Все станции –' : '– All stations –'}</option>
               {allStations.map(s => <option key={s} value={s}>{STATION_LABELS[s]?.[lang] ?? s}</option>)}
             </select>
             <input
               type="text"
-              placeholder={lang === 'hu' ? 'Alapanyag szűrése…' : 'Filter by ingredient…'}
+              placeholder={lang === 'hu' ? 'Alapanyag szűrése…' : lang === 'ru' ? 'Фильтр по ингредиенту…' : 'Filter by ingredient…'}
               value={ingredientFilter}
               onChange={e => setIngredientFilter(e.target.value)}
               style={{ padding: '6px 10px', borderRadius: 6, border: `1px solid ${ingredientFilter ? 'rgba(126,200,227,.6)' : 'var(--surface2)'}`, background: 'var(--bg)', color: ingredientFilter ? 'var(--text)' : 'var(--text)', width: 180 }}
             />
             <select value={skillFilter} onChange={e => setSkillFilter(e.target.value)}
               style={{ padding: '6px 10px', borderRadius: 6, border: `1px solid ${skillFilter ? 'var(--gold)' : 'var(--surface2)'}`, background: 'var(--bg)', color: skillFilter ? 'var(--gold)' : 'var(--text)' }}>
-              <option value="">{lang === 'hu' ? '– Összes skill –' : '– All skills –'}</option>
+              <option value="">{lang === 'hu' ? '– Összes skill –' : lang === 'ru' ? '– Все навыки –' : '– All skills –'}</option>
               {allSkills.map(s => (
                 <option key={s} value={s}>
                   {(SKILL_LABELS[s]?.[lang] ?? s)}
@@ -1552,16 +1554,16 @@ export default function RecipesHub() {
             </select>
             <select value={typeFilter} onChange={e => setTypeFilter(e.target.value as 'all' | 'shaped' | 'shapeless' | 'removed' | 'current')}
               style={{ padding: '6px 10px', borderRadius: 6, border: `1px solid ${typeFilter === 'removed' ? '#ff6b6b' : typeFilter === 'current' ? '#6bcb77' : 'var(--surface2)'}`, background: 'var(--bg)', color: typeFilter === 'removed' ? '#ff6b6b' : typeFilter === 'current' ? '#6bcb77' : 'var(--text)' }}>
-              <option value="all">{lang === 'hu' ? '– Típus –' : '– Type –'}</option>
-              <option value="shaped">{lang === 'hu' ? 'Elrendezett' : 'Shaped'}</option>
-              <option value="shapeless">{lang === 'hu' ? 'Szabad' : 'Shapeless'}</option>
-              <option value="current">{lang === 'hu' ? '✅ Aktuális' : '✅ Current'}</option>
-              <option value="removed">{lang === 'hu' ? '⚠️ Eltávolított' : '⚠️ Removed'}</option>
+              <option value="all">{lang === 'hu' ? '– Típus –' : lang === 'ru' ? '– Тип –' : '– Type –'}</option>
+              <option value="shaped">{lang === 'hu' ? 'Elrendezett' : lang === 'ru' ? 'С формой' : 'Shaped'}</option>
+              <option value="shapeless">{lang === 'hu' ? 'Szabad' : lang === 'ru' ? 'Без формы' : 'Shapeless'}</option>
+              <option value="current">{lang === 'hu' ? '✅ Aktuális' : lang === 'ru' ? '✅ Актуальный' : '✅ Current'}</option>
+              <option value="removed">{lang === 'hu' ? '⚠️ Eltávolított' : lang === 'ru' ? '⚠️ Удалённый' : '⚠️ Removed'}</option>
             </select>
             {hasFilters && (
               <button onClick={clearFilters}
                 style={{ padding: '6px 12px', borderRadius: 6, border: '1px solid var(--surface2)', background: 'var(--surface2)', color: 'var(--text2)', cursor: 'pointer', fontSize: '.85em', whiteSpace: 'nowrap' }}>
-                ✕ {lang === 'hu' ? 'Szűrők törlése' : 'Clear filters'}
+                ✕ {lang === 'hu' ? 'Szűrők törlése' : lang === 'ru' ? 'Сбросить фильтры' : 'Clear filters'}
               </button>
             )}
           </div>
@@ -1569,7 +1571,7 @@ export default function RecipesHub() {
           {/* Stat badge */}
           <div style={{ marginBottom: 12 }}>
             <span style={{ fontSize: '.8em', color: 'var(--text2)', padding: '3px 10px', background: 'var(--surface)', border: '1px solid var(--surface2)', borderRadius: 20 }}>
-              {filteredGroups.length} {lang === 'hu' ? 'tárgy' : 'items'} · {totalRecipeCount} {lang === 'hu' ? 'recept' : 'recipes'}
+              {filteredGroups.length} {lang === 'hu' ? 'tárgy' : lang === 'ru' ? 'предм.' : 'items'} · {totalRecipeCount} {lang === 'hu' ? 'recept' : lang === 'ru' ? 'рецептов' : 'recipes'}
             </span>
           </div>
 

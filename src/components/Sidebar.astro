@@ -13,6 +13,7 @@ interface Props {
   groups: {
     hu: SidebarSection[];
     en: SidebarSection[];
+    ru?: SidebarSection[];
   };
 }
 
@@ -66,4 +67,27 @@ function resolveHref(href: string): string {
     </div>
   </nav>
 </div>
+
+<!-- RU Sidebar -->
+{groups.ru && (
+<div data-lang="ru">
+  <nav class="sidebar">
+    <div class="search-wrap">
+      <input type="text" class="search-input" id="search-input-ru" placeholder="Страницы, предметы, рецепты..." aria-label="Search" />
+    </div>
+    <div class="sidebar-nav">
+      {groups.ru.map(section => (
+        <>
+          <h3>{section.title}</h3>
+          <ul>
+            {section.links.map(link => (
+              <li><a href={resolveHref(link.href)}>{link.label}</a></li>
+            ))}
+          </ul>
+        </>
+      ))}
+    </div>
+  </nav>
+</div>
+)}
 

@@ -31,14 +31,14 @@ interface Mob {
   speed?: number | null;
 }
 
-const mobTypeMeta: Record<string, { hu: string; en: string; color: string; bg: string }> = {
-  undead:   { hu: 'Élőhalott', en: 'Undead',    color: '#b0bec5', bg: 'rgba(176,190,197,.12)' },
-  monster:  { hu: 'Szörny',    en: 'Monster',   color: 'var(--accent)', bg: 'rgba(233,69,96,.10)' },
-  animal:   { hu: 'Állat',     en: 'Animal',    color: 'var(--green)', bg: 'rgba(78,204,163,.10)' },
-  nether:   { hu: 'Nether',    en: 'Nether',    color: '#ff7043', bg: 'rgba(255,112,67,.12)' },
-  end:      { hu: 'End',       en: 'End',        color: 'var(--adamantium)', bg: 'rgba(179,136,255,.12)' },
-  elemental:{ hu: 'Elementális',en: 'Elemental', color: '#ffd54f', bg: 'rgba(255,213,79,.12)' },
-  boss:     { hu: 'Boss',      en: 'Boss',       color: 'var(--adamantium)', bg: 'rgba(179,136,255,.20)' },
+const mobTypeMeta: Record<string, { hu: string; en: string; ru: string; color: string; bg: string }> = {
+  undead:   { hu: 'Élőhalott', en: 'Undead',    ru: 'Нежить',      color: '#b0bec5', bg: 'rgba(176,190,197,.12)' },
+  monster:  { hu: 'Szörny',    en: 'Monster',   ru: 'Монстр',      color: 'var(--accent)', bg: 'rgba(233,69,96,.10)' },
+  animal:   { hu: 'Állat',     en: 'Animal',    ru: 'Животное',    color: 'var(--green)', bg: 'rgba(78,204,163,.10)' },
+  nether:   { hu: 'Nether',    en: 'Nether',    ru: 'Незер',       color: '#ff7043', bg: 'rgba(255,112,67,.12)' },
+  end:      { hu: 'End',       en: 'End',        ru: 'Энд',         color: 'var(--adamantium)', bg: 'rgba(179,136,255,.12)' },
+  elemental:{ hu: 'Elementális',en: 'Elemental', ru: 'Элементаль', color: '#ffd54f', bg: 'rgba(255,213,79,.12)' },
+  boss:     { hu: 'Boss',      en: 'Boss',       ru: 'Босс',        color: 'var(--adamantium)', bg: 'rgba(179,136,255,.20)' },
 };
 
 function MobSprite({ mob, size }: { mob: Mob; size: number }) {
@@ -79,12 +79,12 @@ const chanceColor: Record<string, string> = {
   looting: '#64b5f6',
 };
 
-const chanceLabel: Record<string, { hu: string; en: string }> = {
-  always:   { hu: 'Mindig',       en: 'Always'   },
-  common:   { hu: 'Gyakori',      en: 'Common'   },
-  uncommon: { hu: 'Ritka',        en: 'Uncommon' },
-  rare:     { hu: 'Nagyon ritka', en: 'Rare'     },
-  looting:  { hu: 'Looting',      en: 'Looting'  },
+const chanceLabel: Record<string, { hu: string; en: string; ru: string }> = {
+  always:   { hu: 'Mindig',       en: 'Always',   ru: 'Всегда'        },
+  common:   { hu: 'Gyakori',      en: 'Common',   ru: 'Часто'         },
+  uncommon: { hu: 'Ritka',        en: 'Uncommon', ru: 'Редко'         },
+  rare:     { hu: 'Nagyon ritka', en: 'Rare',     ru: 'Очень редко'   },
+  looting:  { hu: 'Looting',      en: 'Looting',  ru: 'Лутинг'        },
 };
 
 const dmgTypeIcon: Record<string, string> = {
@@ -103,26 +103,26 @@ function dmgDisplay(mob: Mob, useIcon = false) {
   return suffix ? `${base} ${suffix}` : base;
 }
 
-const tagMeta: Record<string, { hu: string; en: string; icon: string }> = {
-  poison:                { hu: 'Méreg',           en: 'Poison',              icon: '☠️' },
-  fire_immune:           { hu: 'Tűzimmun',         en: 'Fire immune',         icon: '🛡️' },
-  fire_damage:           { hu: 'Tűzkár',           en: 'Fire dmg',            icon: '🔥' },
-  burning:               { hu: 'Meggyújt',         en: 'Burning',             icon: '🔥' },
-  invisible:             { hu: 'Láthatatlan',      en: 'Invisible',           icon: '👁️' },
-  phasing:               { hu: 'Falon átmegy',     en: 'Phasing',             icon: '👻' },
-  explosion:             { hu: 'Robbanás',          en: 'Explosion',           icon: '💥' },
-  summoner:              { hu: 'Idéző',             en: 'Summoner',            icon: '⚰️' },
-  life_steal:            { hu: 'Életlopás',         en: 'Life steal',          icon: '🩸' },
-  requires_silver:       { hu: 'Ezüst kell',       en: 'Req. Silver',         icon: '⚔️' },
-  requires_mithril:      { hu: 'Mithril kell',     en: 'Req. Mithril',        icon: '⚔️' },
-  requires_ancient_metal:{ hu: 'Ősi Fém kell',     en: 'Req. Ancient Metal',  icon: '⚔️' },
-  instant_kill:          { hu: 'Instant halál',    en: 'Instant kill',        icon: '💀' },
-  pickaxe_only:          { hu: 'Csak csákány',     en: 'Pickaxe only',        icon: '⛏️' },
-  flying:                { hu: 'Repülő',            en: 'Flying',              icon: '🦅' },
-  pack:                  { hu: 'Falka',             en: 'Pack',                icon: '🐺' },
-  wall_detection:        { hu: 'Falon érzékel',    en: 'Wall detect',         icon: '🧱' },
-  gold_passive:          { hu: 'Arannyal passzív', en: 'Gold passive',        icon: '🪙' },
-  potion:                { hu: 'Bájital',           en: 'Potion',              icon: '🧪' },
+const tagMeta: Record<string, { hu: string; en: string; ru: string; icon: string }> = {
+  poison:                { hu: 'Méreg',           en: 'Poison',              ru: 'Яд',                   icon: '☠️' },
+  fire_immune:           { hu: 'Tűzimmun',         en: 'Fire immune',         ru: 'Иммунитет к огню',     icon: '🛡️' },
+  fire_damage:           { hu: 'Tűzkár',           en: 'Fire dmg',            ru: 'Урон огнём',           icon: '🔥' },
+  burning:               { hu: 'Meggyújt',         en: 'Burning',             ru: 'Поджигает',            icon: '🔥' },
+  invisible:             { hu: 'Láthatatlan',      en: 'Invisible',           ru: 'Невидимый',            icon: '👁️' },
+  phasing:               { hu: 'Falon átmegy',     en: 'Phasing',             ru: 'Сквозь стены',         icon: '👻' },
+  explosion:             { hu: 'Robbanás',          en: 'Explosion',           ru: 'Взрыв',                icon: '💥' },
+  summoner:              { hu: 'Idéző',             en: 'Summoner',            ru: 'Призыватель',          icon: '⚰️' },
+  life_steal:            { hu: 'Életlopás',         en: 'Life steal',          ru: 'Кража жизни',          icon: '🩸' },
+  requires_silver:       { hu: 'Ezüst kell',       en: 'Req. Silver',         ru: 'Нужно серебро',        icon: '⚔️' },
+  requires_mithril:      { hu: 'Mithril kell',     en: 'Req. Mithril',        ru: 'Нужен мифрил',         icon: '⚔️' },
+  requires_ancient_metal:{ hu: 'Ősi Fém kell',     en: 'Req. Ancient Metal',  ru: 'Нужен древний металл', icon: '⚔️' },
+  instant_kill:          { hu: 'Instant halál',    en: 'Instant kill',        ru: 'Мгновенная смерть',    icon: '💀' },
+  pickaxe_only:          { hu: 'Csak csákány',     en: 'Pickaxe only',        ru: 'Только кирка',         icon: '⛏️' },
+  flying:                { hu: 'Repülő',            en: 'Flying',              ru: 'Летающий',             icon: '🦅' },
+  pack:                  { hu: 'Falka',             en: 'Pack',                ru: 'Стая',                 icon: '🐺' },
+  wall_detection:        { hu: 'Falon érzékel',    en: 'Wall detect',         ru: 'Обнаруж. сквозь стены',icon: '🧱' },
+  gold_passive:          { hu: 'Arannyal passzív', en: 'Gold passive',        ru: 'Пассивен к золоту',    icon: '🪙' },
+  potion:                { hu: 'Bájital',           en: 'Potion',              ru: 'Зелье',                icon: '🧪' },
 };
 
 export default function MobExplorer() {
@@ -195,12 +195,12 @@ export default function MobExplorer() {
     if (typeFilter && mob.mobType !== typeFilter) return false;
     if (search) {
       const q = search.toLowerCase();
-      if (!mob.name.hu.toLowerCase().includes(q) && !mob.name.en.toLowerCase().includes(q)) return false;
+      if (!mob.name.hu.toLowerCase().includes(q) && !mob.name.en.toLowerCase().includes(q) && !(mob.name as any).ru?.toLowerCase().includes(q)) return false;
     }
     return true;
   }).sort((a, b) => {
     let cmp = 0;
-    if (sortKey === 'name') cmp = a.name[lang as 'hu' | 'en'].localeCompare(b.name[lang as 'hu' | 'en']);
+    if (sortKey === 'name') cmp = a.name[lang as 'hu' | 'en' | 'ru'].localeCompare(b.name[lang as 'hu' | 'en' | 'ru']);
     else if (sortKey === 'hp') cmp = (a.hp ?? 0) - (b.hp ?? 0);
     else if (sortKey === 'xp') cmp = (a.xp ?? 0) - (b.xp ?? 0);
     else if (sortKey === 'dmg') cmp = a.dmgMax - b.dmgMax;
@@ -258,9 +258,9 @@ export default function MobExplorer() {
   }
 
   const zoneLabel = (z: string) =>
-    z === 'surface'     ? (lang === 'hu' ? 'Felszín'     : 'Surface')     :
-    z === 'underground' ? (lang === 'hu' ? 'Föld alatti' : 'Underground') :
-    z === 'nether'      ? 'Nether' : (lang === 'hu' ? 'Ismeretlen' : 'Unknown');
+    z === 'surface'     ? (lang === 'hu' ? 'Felszín'     : lang === 'ru' ? 'Поверхность'  : 'Surface')     :
+    z === 'underground' ? (lang === 'hu' ? 'Föld alatti' : lang === 'ru' ? 'Под землёй'   : 'Underground') :
+    z === 'nether'      ? 'Nether' : (lang === 'hu' ? 'Ismeretlen' : lang === 'ru' ? 'Неизвестно' : 'Unknown');
 
   return (
     <div style={{ position: 'relative' }}>
@@ -274,13 +274,13 @@ export default function MobExplorer() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap', marginBottom: 6 }}>
             <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
               letterSpacing: '.6px', minWidth: 64 }}>
-              {lang === 'hu' ? 'Nehézség' : 'Difficulty'}
+              {lang === 'hu' ? 'Nehézség' : lang === 'ru' ? 'Сложность' : 'Difficulty'}
             </span>
             {(['', 'early', 'mid', 'late', 'boss'] as const).map(d => {
               const count = d ? allMobs.filter(m => m.difficulty === d).length : allMobs.length;
               return (
                 <button key={d} onClick={() => setDiffFilter(d)} style={diffBtnStyle(d)}>
-                  {d ? `${diffMeta[d].badge} ${diffMeta[d].label}` : (lang === 'hu' ? 'Mind' : 'All')}
+                  {d ? `${diffMeta[d].badge} ${diffMeta[d].label}` : (lang === 'hu' ? 'Mind' : lang === 'ru' ? 'Все' : 'All')}
                   <span style={{ opacity: .55, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>
                     ({count})
                   </span>
@@ -292,13 +292,13 @@ export default function MobExplorer() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap' }}>
             <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
               letterSpacing: '.6px', minWidth: 64 }}>
-              {lang === 'hu' ? 'Régió' : 'Region'}
+              {lang === 'hu' ? 'Régió' : lang === 'ru' ? 'Регион' : 'Region'}
             </span>
             {(['', 'surface', 'underground', 'nether'] as const).map(z => {
               const count = z ? allMobs.filter(m => m.spawnZones.includes(z)).length : allMobs.length;
               return (
                 <button key={z} onClick={() => setZoneFilter(z)} style={zoneBtnStyle(z)}>
-                  {z ? `${zoneIcon[z]} ${zoneLabel(z)}` : (lang === 'hu' ? 'Mind' : 'All')}
+                  {z ? `${zoneIcon[z]} ${zoneLabel(z)}` : (lang === 'hu' ? 'Mind' : lang === 'ru' ? 'Все' : 'All')}
                   <span style={{ opacity: .55, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>
                     ({count})
                   </span>
@@ -310,7 +310,7 @@ export default function MobExplorer() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap', marginTop: 4 }}>
             <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
               letterSpacing: '.6px', minWidth: 64 }}>
-              {lang === 'hu' ? 'Típus' : 'Type'}
+              {lang === 'hu' ? 'Típus' : lang === 'ru' ? 'Тип' : 'Type'}
             </span>
             {['', 'undead', 'monster', 'animal', 'nether', 'elemental', 'boss', 'end'].map(t => {
               const count = t ? allMobs.filter(m => m.mobType === t).length : allMobs.length;
@@ -325,7 +325,7 @@ export default function MobExplorer() {
                   color: active && meta ? meta.color : 'var(--text2)',
                   transition: 'all .15s',
                 } as React.CSSProperties}>
-                  {t ? (mobTypeMeta[t]?.[lang as 'hu' | 'en'] ?? t) : (lang === 'hu' ? 'Mind' : 'All')}
+                  {t ? (mobTypeMeta[t]?.[lang as 'hu' | 'en' | 'ru'] ?? t) : (lang === 'hu' ? 'Mind' : lang === 'ru' ? 'Все' : 'All')}
                   <span style={{ opacity: .55, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>({count})</span>
                 </button>
               );
@@ -338,7 +338,7 @@ export default function MobExplorer() {
           <div style={{ position: 'relative' }}>
             <input
               type="search"
-              placeholder={lang === 'hu' ? 'Szörny keresése…' : 'Search mobs…'}
+              placeholder={lang === 'hu' ? 'Szörny keresése…' : lang === 'ru' ? 'Поиск мобов…' : 'Search mobs…'}
               value={search}
               onChange={e => setSearch(e.target.value)}
               style={{ padding: '6px 32px 6px 12px', borderRadius: 6, border: '1px solid var(--surface2)',
@@ -381,7 +381,7 @@ export default function MobExplorer() {
                   borderRadius: 20, fontSize: '.72em', fontWeight: 600,
                   background: mobTypeMeta[typeFilter].bg, color: mobTypeMeta[typeFilter].color,
                   border: `1px solid ${mobTypeMeta[typeFilter].color}55` }}>
-                  {mobTypeMeta[typeFilter][lang as 'hu' | 'en']}
+                  {mobTypeMeta[typeFilter][lang as 'hu' | 'en' | 'ru']}
                   <button onClick={() => setTypeFilter('')}
                     style={{ background: 'none', border: 'none', color: 'inherit', cursor: 'pointer',
                       padding: 0, lineHeight: 1, marginLeft: 2, opacity: .7 }}>×</button>
@@ -391,7 +391,7 @@ export default function MobExplorer() {
                 <button onClick={() => { setDiffFilter(''); setZoneFilter(''); setTypeFilter(''); setSearch(''); }}
                   style={{ fontSize: '.7em', color: 'var(--text2)', background: 'none', border: 'none',
                     cursor: 'pointer', padding: '2px 4px', textDecoration: 'underline' }}>
-                  {lang === 'hu' ? 'Törlés' : 'Clear all'}
+                  {lang === 'hu' ? 'Törlés' : lang === 'ru' ? 'Сбросить' : 'Clear all'}
                 </button>
               )}
             </div>
@@ -402,8 +402,8 @@ export default function MobExplorer() {
       {/* Count */}
       <div style={{ fontSize: '.8em', color: 'var(--text2)', marginBottom: 4 }}>
         {isFiltered
-          ? <><span style={{ color: 'var(--text)', fontWeight: 600 }}>{filtered.length}</span> {lang === 'hu' ? 'találat' : 'results'} <span style={{ opacity: .5 }}>/ {allMobs.length}</span></>
-          : <>{lang === 'hu' ? 'Összesen' : 'All'} <span style={{ color: 'var(--text)', fontWeight: 600 }}>{allMobs.length}</span> {lang === 'hu' ? 'szörny' : 'mobs'}</>
+          ? <><span style={{ color: 'var(--text)', fontWeight: 600 }}>{filtered.length}</span> {lang === 'hu' ? 'találat' : lang === 'ru' ? 'результатов' : 'results'} <span style={{ opacity: .5 }}>/ {allMobs.length}</span></>
+          : <>{lang === 'hu' ? 'Összesen' : lang === 'ru' ? 'Всего' : 'All'} <span style={{ color: 'var(--text)', fontWeight: 600 }}>{allMobs.length}</span> {lang === 'hu' ? 'szörny' : lang === 'ru' ? 'мобов' : 'mobs'}</>
         }
       </div>
 
@@ -420,7 +420,7 @@ export default function MobExplorer() {
                 <span className={`diff-badge ${diffMeta[mob.difficulty].cls}`} style={{ marginRight: 4 }}>
                   {diffMeta[mob.difficulty].badge}
                 </span>
-                {mob.name[lang as 'hu' | 'en']}
+                {mob.name[lang as 'hu' | 'en' | 'ru']}
                 <span style={{ opacity: .6, marginLeft: 4, fontSize: '.85em' }}>
                   {mob.tags.slice(0, 3).map(t => tagMeta[t]?.icon ?? '').join('')}
                 </span>
@@ -448,7 +448,7 @@ export default function MobExplorer() {
         ))}
         {filtered.length === 0 && (
           <div style={{ padding: '24px', textAlign: 'center', color: 'var(--text2)', fontStyle: 'italic', gridColumn: '1/-1' }}>
-            {lang === 'hu' ? 'Nincs találat a szűrőkre.' : 'No mobs match filters.'}
+            {lang === 'hu' ? 'Nincs találat a szűrőkre.' : lang === 'ru' ? 'Мобы не найдены.' : 'No mobs match filters.'}
           </div>
         )}
       </div>
@@ -464,9 +464,9 @@ export default function MobExplorer() {
         </colgroup>
         <thead style={{ position: 'sticky', top: 0, zIndex: 2 }}>
           <tr style={{ borderBottom: '2px solid var(--surface2)' }}>
-            <SortTh k="name" label={lang === 'hu' ? 'Név' : 'Name'} />
+            <SortTh k="name" label={lang === 'hu' ? 'Név' : lang === 'ru' ? 'Имя' : 'Name'} />
             <SortTh k="hp" label="HP" />
-            <SortTh k="dmg" label={lang === 'hu' ? '⚔ Sebzés' : '⚔ Damage'} />
+            <SortTh k="dmg" label={lang === 'hu' ? '⚔ Sebzés' : lang === 'ru' ? '⚔ Урон' : '⚔ Damage'} />
             <SortTh k="xp" label="⭐ XP" />
           </tr>
         </thead>
@@ -483,7 +483,7 @@ export default function MobExplorer() {
                   <span className={`diff-badge ${diffMeta[mob.difficulty].cls}`} style={{ marginRight: 2 }}>
                     {diffMeta[mob.difficulty].badge}
                   </span>
-                  {mob.name[lang as 'hu' | 'en']}
+                  {mob.name[lang as 'hu' | 'en' | 'ru']}
                   <span style={{ marginLeft: 2, opacity: .6, fontSize: '.9em' }}>
                     {mob.tags.slice(0, 3).map(t => tagMeta[t]?.icon ?? '').join('')}
                     {mob.tags.length > 3 && (
@@ -512,7 +512,7 @@ export default function MobExplorer() {
             <tr>
               <td colSpan={4} style={{ textAlign: 'center', padding: '24px', color: 'var(--text2)',
                 fontStyle: 'italic' }}>
-                {lang === 'hu' ? 'Nincs találat a szűrőkre.' : 'No mobs match filters.'}
+                {lang === 'hu' ? 'Nincs találat a szűrőkre.' : lang === 'ru' ? 'Мобы не найдены.' : 'No mobs match filters.'}
               </td>
             </tr>
           )}
@@ -544,7 +544,7 @@ export default function MobExplorer() {
                   <MobSprite mob={selectedMob} size={72} />
                   <div>
                   <h3 style={{ margin: '0 0 8px', fontSize: '1.35em' }}>
-                    {selectedMob.name[lang as 'hu' | 'en']}
+                    {selectedMob.name[lang as 'hu' | 'en' | 'ru']}
                   </h3>
                   <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
                     <span className={`diff-badge ${diffMeta[selectedMob.difficulty].cls}`}>
@@ -563,7 +563,7 @@ export default function MobExplorer() {
                         color: mobTypeMeta[selectedMob.mobType].color,
                         border: `1px solid ${mobTypeMeta[selectedMob.mobType].color}44`,
                       }}>
-                        {mobTypeMeta[selectedMob.mobType][lang as 'hu' | 'en']}
+                        {mobTypeMeta[selectedMob.mobType][lang as 'hu' | 'en' | 'ru']}
                       </span>
                     )}
                   </div>
@@ -584,12 +584,12 @@ export default function MobExplorer() {
                 borderRadius: 8, overflow: 'hidden' }}>
                 {[
                   { val: selectedMob.hp ?? '?', label: '❤ HP', color: 'var(--green)' },
-                  { val: dmgDisplay(selectedMob, true), label: `⚔ ${lang === 'hu' ? 'Sebzés' : 'Damage'}`, color: 'var(--accent)' },
-                  ...(selectedMob.armor != null ? [{ val: selectedMob.armor, label: `🛡 ${lang === 'hu' ? 'Páncél' : 'Armor'}`, color: 'var(--mithril)' }] : []),
+                  { val: dmgDisplay(selectedMob, true), label: `⚔ ${lang === 'hu' ? 'Sebzés' : lang === 'ru' ? 'Урон' : 'Damage'}`, color: 'var(--accent)' },
+                  ...(selectedMob.armor != null ? [{ val: selectedMob.armor, label: `🛡 ${lang === 'hu' ? 'Páncél' : lang === 'ru' ? 'Броня' : 'Armor'}`, color: 'var(--mithril)' }] : []),
                   { val: selectedMob.xp ?? '?', label: '⭐ XP', color: 'var(--gold)' },
                   ...(selectedMob.speed != null ? [{
                     val: selectedMob.speed.toFixed(2),
-                    label: `🏃 ${lang === 'hu' ? 'Sebesség' : 'Speed'}`,
+                    label: `🏃 ${lang === 'hu' ? 'Sebesség' : lang === 'ru' ? 'Скорость' : 'Speed'}`,
                     color: 'var(--text)',
                   }] : []),
                 ].map((s, i, arr) => (
@@ -609,7 +609,7 @@ export default function MobExplorer() {
                       padding: '3px 10px', borderRadius: 20, fontSize: '.75em',
                       background: 'var(--surface)', border: '1px solid var(--surface2)',
                     }}>
-                      {tagMeta[t]?.icon ?? ''} {tagMeta[t]?.[lang as 'hu' | 'en'] ?? t}
+                      {tagMeta[t]?.icon ?? ''} {tagMeta[t]?.[lang as 'hu' | 'en' | 'ru'] ?? t}
                     </span>
                   ))}
                 </div>
@@ -622,31 +622,31 @@ export default function MobExplorer() {
                   border: '1px solid rgba(233,69,96,.3)', borderRadius: 6,
                   fontSize: '.82em', marginBottom: 12, color: 'var(--accent)',
                 }}>
-                  ⚠️ {lang === 'hu' ? 'Speciális fegyver szükséges!' : 'Requires special weapon!'}
+                  ⚠️ {lang === 'hu' ? 'Speciális fegyver szükséges!' : lang === 'ru' ? 'Необходимо специальное оружие!' : 'Requires special weapon!'}
                 </div>
               )}
 
               {/* Description */}
-              {selectedMob.description?.[lang as 'hu' | 'en'] && (
+              {selectedMob.description?.[lang as 'hu' | 'en' | 'ru'] && (
                 <div style={{ marginBottom: 16 }}>
                   <p style={{ margin: 0, fontSize: '.92em', color: 'var(--text)', lineHeight: 1.65,
                     fontStyle: 'italic', opacity: 0.85 }}>
-                    {selectedMob.description[lang as 'hu' | 'en']}
+                    {selectedMob.description[lang as 'hu' | 'en' | 'ru']}
                   </p>
                 </div>
               )}
 
               {/* Spawn info */}
-              {selectedMob.spawnInfo?.[lang as 'hu' | 'en'] && (
+              {selectedMob.spawnInfo?.[lang as 'hu' | 'en' | 'ru'] && (
                 <div style={{ marginBottom: 16 }}>
                   <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
                     color: 'var(--text2)', marginBottom: 6 }}>
-                    🗺 {lang === 'hu' ? 'Megjelenés' : 'Spawn'}
+                    🗺 {lang === 'hu' ? 'Megjelenés' : lang === 'ru' ? 'Появление' : 'Spawn'}
                   </div>
                   <div style={{ fontSize: '.9em', color: 'var(--text)', lineHeight: 1.55,
                     background: 'var(--surface)', border: '1px solid var(--surface2)',
                     borderRadius: 6, padding: '10px 14px' }}>
-                    {selectedMob.spawnInfo[lang as 'hu' | 'en']}
+                    {selectedMob.spawnInfo[lang as 'hu' | 'en' | 'ru']}
                   </div>
                 </div>
               )}
@@ -656,15 +656,15 @@ export default function MobExplorer() {
                 <div style={{ marginTop: 0, marginBottom: 16 }}>
                   <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
                     color: 'var(--text2)', marginBottom: 6 }}>
-                    ⚙ {lang === 'hu' ? 'Különleges mechanika' : 'Special mechanics'}
+                    ⚙ {lang === 'hu' ? 'Különleges mechanika' : lang === 'ru' ? 'Особые механики' : 'Special mechanics'}
                   </div>
                   <div style={{ fontSize: '.9em', color: 'var(--text)', lineHeight: 1.6,
                     background: 'var(--surface)', border: '1px solid var(--surface2)',
                     borderRadius: 6, padding: '10px 14px' }}>
-                    {selectedMob.special[lang as 'hu' | 'en']
+                    {selectedMob.special[lang as 'hu' | 'en' | 'ru']
                       .split(/ — |; /)
                       .map((part, i) => {
-                        const parts = selectedMob.special![lang as 'hu' | 'en'].split(/ — |; /);
+                        const parts = selectedMob.special![lang as 'hu' | 'en' | 'ru'].split(/ — |; /);
                         return (
                           <div key={i} style={{ display: 'flex', gap: 6, alignItems: 'flex-start',
                             marginBottom: i < parts.length - 1 ? 4 : 0 }}>
@@ -682,7 +682,7 @@ export default function MobExplorer() {
                 <div style={{ marginTop: 0 }}>
                   <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
                     color: 'var(--text2)', marginBottom: 6 }}>
-                    🎁 {lang === 'hu' ? 'Dropok' : 'Drops'}
+                    🎁 {lang === 'hu' ? 'Dropok' : lang === 'ru' ? 'Дропы' : 'Drops'}
                   </div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
                     {selectedMob.drops.map((drop, i) => (
@@ -692,23 +692,23 @@ export default function MobExplorer() {
                         border: '1px solid var(--surface2)', borderRadius: 5 }}>
                         <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                           <span style={{ color: 'var(--text)' }}>
-                            {drop.item[lang as 'hu' | 'en']}
+                            {drop.item[lang as 'hu' | 'en' | 'ru']}
                             {drop.qty && <span style={{ color: 'var(--text2)', marginLeft: 4 }}>×{drop.qty}</span>}
                           </span>
                           {drop.itemId && (
                             <a href={`${BASE}/recipes/?search=${encodeURIComponent(drop.itemId)}`}
-                              title={lang === 'hu' ? 'Receptek megtekintése' : 'View recipes'}
+                              title={lang === 'hu' ? 'Receptek megtekintése' : lang === 'ru' ? 'Просмотр рецептов' : 'View recipes'}
                               onClick={e => e.stopPropagation()}
                               style={{ fontSize: '.78em', color: 'var(--mithril)', textDecoration: 'none',
                                 padding: '1px 5px', borderRadius: 3, border: '1px solid rgba(126,200,227,.3)',
                                 background: 'rgba(126,200,227,.08)', flexShrink: 0 }}>
-                              {lang === 'hu' ? '→ recept' : '→ recipe'}
+                              {lang === 'hu' ? '→ recept' : lang === 'ru' ? '→ рецепт' : '→ recipe'}
                             </a>
                           )}
                         </span>
                         <span style={{ fontSize: '.8em', color: chanceColor[drop.chance] ?? 'var(--text2)',
                           fontWeight: 600, flexShrink: 0 }}>
-                          {chanceLabel[drop.chance]?.[lang as 'hu' | 'en'] ?? drop.chance}
+                          {chanceLabel[drop.chance]?.[lang as 'hu' | 'en' | 'ru'] ?? drop.chance}
                         </span>
                       </div>
                     ))}
