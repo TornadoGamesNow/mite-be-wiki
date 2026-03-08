@@ -163,7 +163,8 @@
     },
     "img": "img/items/flint_spear.png",
     "tier": "flint",
-    "category": "weapon"
+    "category": "weapon",
+    "removed_in": "pre-0.5.5"
   },
   "stone_sword": {
     "name": {
@@ -2441,7 +2442,7 @@
       "hu": "Adamantium Rövid Kard",
       "en": "Adamantium Short Sword"
     },
-    "img": "img/items/adamantium_sword.png",
+    "img": "img/items/adamantium_short_sword.png",
     "tier": "adamantium",
     "category": "weapon"
   },
@@ -2689,7 +2690,7 @@
       "hu": "Ősi Fém Rövid Kard",
       "en": "Ancient Metal Short Sword"
     },
-    "img": "img/items/ancient_metal_sword.png",
+    "img": "img/items/ancient_metal_short_sword.png",
     "tier": "ancient_metal",
     "category": "weapon"
   },
@@ -3702,7 +3703,7 @@
       "hu": "Réz Rövid Kard",
       "en": "Copper Short Sword"
     },
-    "img": "img/items/copper_sword.png",
+    "img": "img/items/copper_short_sword.png",
     "tier": "copper",
     "category": "weapon"
   },
@@ -4507,7 +4508,7 @@
       "hu": "Arany Rövid Kard",
       "en": "Gold Short Sword"
     },
-    "img": "img/items/gold_sword.png",
+    "img": "img/items/gold_short_sword.png",
     "tier": "gold",
     "category": "weapon"
   },
@@ -5912,7 +5913,7 @@
       "hu": "Mithril Rövid Kard",
       "en": "Mithril Short Sword"
     },
-    "img": "img/items/mithril_sword.png",
+    "img": "img/items/mithril_short_sword.png",
     "tier": "mithril",
     "category": "weapon"
   },
@@ -6812,7 +6813,7 @@
       "hu": "Rozsdás Vas Rövid Kard",
       "en": "Rusted Iron Short Sword"
     },
-    "img": "img/items/rusted_iron_sword.png",
+    "img": "img/items/rusted_iron_short_sword.png",
     "tier": "iron",
     "category": "weapon"
   },
@@ -7102,7 +7103,7 @@
       "hu": "Ezüst Rövid Kard",
       "en": "Silver Short Sword"
     },
-    "img": "img/items/silver_sword.png",
+    "img": "img/items/silver_short_sword.png",
     "tier": "silver",
     "category": "weapon"
   },
@@ -10336,7 +10337,8 @@
     },
     "img": "img/items/oak_wood_slab_single.png",
     "tier": null,
-    "category": "block"
+    "category": "block",
+    "removed_in": "pre-0.5.5"
   },
   "water_bottle": {
     "name": {
