@@ -41,19 +41,23 @@ for (const r of recipesRaw as any[]) {
   recipesByOutput[key].push(r);
 }
 
-const STATION_LABELS: Record<string, string> = {
-  flint_workbench:          'Kovakő Munkaasztal',
-  copper_workbench:         'Réz Munkaasztal',
-  silver_workbench:         'Ezüst Munkaasztal',
-  gold_workbench:           'Arany Munkaasztal',
-  iron_workbench:           'Vas Munkaasztal',
-  hardstone_workbench:      'Kőmag Munkaasztal',
-  ancient_metal_workbench:  'Ős Fém Munkaasztal',
-  mithril_workbench:        'Mithril Munkaasztal',
-  adamantium_workbench:     'Adamantium Munkaasztal',
-  blast_furnace:            'Nagy Kemence',
-  stone_furnace:            'Kő Kemence',
-  hand:                     'Kézzel',
+const STATION_LABELS: Record<string, { hu: string; en: string }> = {
+  flint_workbench:          { hu: 'Kovakő Munkaasztal',     en: 'Flint Workbench' },
+  copper_workbench:         { hu: 'Réz Munkaasztal',        en: 'Copper Workbench' },
+  silver_workbench:         { hu: 'Ezüst Munkaasztal',      en: 'Silver Workbench' },
+  gold_workbench:           { hu: 'Arany Munkaasztal',      en: 'Gold Workbench' },
+  iron_workbench:           { hu: 'Vas Munkaasztal',        en: 'Iron Workbench' },
+  hardstone_workbench:      { hu: 'Kőmag Munkaasztal',      en: 'Hardstone Workbench' },
+  ancient_metal_workbench:  { hu: 'Ős Fém Munkaasztal',     en: 'Ancient Metal Workbench' },
+  mithril_workbench:        { hu: 'Mithril Munkaasztal',    en: 'Mithril Workbench' },
+  adamantium_workbench:     { hu: 'Adamantium Munkaasztal', en: 'Adamantium Workbench' },
+  blast_furnace:            { hu: 'Nagy Kemence',           en: 'Blast Furnace' },
+  stone_furnace:            { hu: 'Kő Kemence',             en: 'Stone Furnace' },
+  obsidian_furnace:         { hu: 'Obszidián Kemence',      en: 'Obsidian Furnace' },
+  netherrack_furnace:       { hu: 'Pokoli Kő Kemence',      en: 'Netherrack Furnace' },
+  brewing_stand:            { hu: 'Főzetállvány',           en: 'Brewing Stand' },
+  cauldron:                 { hu: 'Üst',                    en: 'Cauldron' },
+  hand:                     { hu: 'Kézzel',                 en: 'By hand' },
 };
 
 // --- Tier metadata ---
@@ -588,7 +592,7 @@ export default function ItemExplorer() {
                         );
                         const ingCounts: Record<string, number> = {};
                         for (const id of ings) { ingCounts[id] = (ingCounts[id] || 0) + 1; }
-                        const station = STATION_LABELS[r.station] ?? r.station;
+                        const station = STATION_LABELS[r.station]?.[lang as 'hu' | 'en'] ?? r.station;
                         const isRecipeRemoved = !!r.removed_version;
                         return (
                           <div key={i} style={{ background: 'var(--surface)', border: `1px solid ${isRecipeRemoved ? 'rgba(233,69,96,.3)' : 'var(--surface2)'}`,
