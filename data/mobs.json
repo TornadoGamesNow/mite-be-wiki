@@ -4604,12 +4604,12 @@
     "drops": [
       {
         "item": {
-          "hu": "Trágya",
-          "en": "Fertilizer"
+          "hu": "Trágya (Manure)",
+          "en": "Manure"
         },
         "qty": "1",
         "chance": "always",
-        "itemId": "dung"
+        "itemId": "manure"
       }
     ],
     "image": "earthworm.png",
