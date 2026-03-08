@@ -12,8 +12,8 @@ The first public bilingual wiki for **MITE: Break Everything** — a hardcore to
 
 | | Link | Size |
 |---|---|---|
-| 🇭🇺 **Hungarian version** | [archive.org/details/mite-be-v0.9.0-hungarian](https://archive.org/details/mite-be-v0.9.0-hungarian) | ~266 MB |
-| 🇬🇧 **English version** | [archive.org/details/mite-be-v0.9.0-english](https://archive.org/details/mite-be-v0.9.0-english) | ~266 MB |
+| 🇭🇺 **Hungarian version** | [MiTE-BE_v0.9.0_hungarian.zip](https://archive.org/download/mite-be-v0.9.0-hungarian/MiTE-BE_v0.9.0_hungarian.zip) | ~266 MB |
+| 🇬🇧 **English version** | [MiTE-BE_v0.9.0_english.zip](https://archive.org/download/mite-be-v0.9.0-english/MiTE-BE_v0.9.0_english.zip) | ~266 MB |
 
 **Requirements:** Java 8 + [PrismLauncher](https://prismlauncher.org)
 **Installation guide:** [tornadogamesnow.github.io/mite-be-wiki/install](https://tornadogamesnow.github.io/mite-be-wiki/install)
