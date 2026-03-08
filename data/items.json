@@ -10345,7 +10345,7 @@
       "hu": "Vizes Palack",
       "en": "Water Bottle"
     },
-    "img": "img/items/glass_bottle.png",
+    "img": "img/items/water_bottle.png",
     "tier": null,
     "category": "misc"
   },
