@@ -27899,7 +27899,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "FĹ±kĂ¶tĂ©l",
+      "hu": "Fűkötél",
       "en": "Straw Rope"
     },
     "pattern": [
@@ -27967,7 +27967,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "BĹ‘rkĂ¶tĂ©l",
+      "hu": "Bőrkötél",
       "en": "Leather Rope"
     },
     "pattern": [
@@ -27999,7 +27999,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Kova (KĹ‘zet)",
+      "hu": "Kova (Kőzet)",
       "en": "Flint"
     },
     "pattern": [
@@ -28067,7 +28067,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "KĹ‘zet RĂ¶vid Fejsze",
+      "hu": "Kőzet Rövid Fejsze",
       "en": "Stone Short Hatchet"
     },
     "pattern": [
@@ -28157,7 +28157,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "RĂ©z Munkaasztal",
+      "hu": "Réz Munkaasztal",
       "en": "Copper Workbench"
     },
     "pattern": [
@@ -28202,7 +28202,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "EzĂĽst Munkaasztal",
+      "hu": "Ezüst Munkaasztal",
       "en": "Silver Workbench"
     },
     "pattern": [
@@ -28337,7 +28337,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "KemĂ©nykĹ‘ Munkaasztal",
+      "hu": "Keménykő Munkaasztal",
       "en": "Hardstone Workbench"
     },
     "pattern": [
@@ -28506,7 +28506,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "KemĂ©nyĂ­tett Agyag Kemence",
+      "hu": "Keményített Agyag Kemence",
       "en": "Hardened Clay Furnace"
     },
     "pattern": [
@@ -28546,7 +28546,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "ObszidiĂˇn",
+      "hu": "Obszidián",
       "en": "Obsidian"
     },
     "pattern": [
@@ -28578,7 +28578,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "ObszidiĂˇn Ă–ntĹ‘forma",
+      "hu": "Obszidián Öntőforma",
       "en": "Obsidian Ingot Mold"
     },
     "pattern": [

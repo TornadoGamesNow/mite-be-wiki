@@ -1392,7 +1392,7 @@
       "en": "Mining Helmet"
     },
     "img": "img/items/mining_helmet.png",
-    "tier": null,
+    "tier": "gold",
     "category": "armor"
   },
   "battery": {
@@ -3144,7 +3144,7 @@
       "en": "Bronze War Hammer"
     },
     "img": "img/items/bronze_war_hammer.png",
-    "tier": "copper",
+    "tier": "bronze",
     "max_durability": 12000,
     "category": "weapon"
   },
@@ -4903,7 +4903,7 @@
       "en": "Hardstone Coin"
     },
     "img": "img/items/hardstone_coin.png",
-    "tier": null,
+    "tier": "hard",
     "category": "material"
   },
   "hardstone_nugget": {
@@ -4912,7 +4912,7 @@
       "en": "Hardstone Nugget"
     },
     "img": "img/items/hardstone_nugget.png",
-    "tier": null,
+    "tier": "hard",
     "category": "material"
   },
   "hardstone_ore": {
@@ -4939,7 +4939,7 @@
       "en": "High Carbon Steel War Hammer"
     },
     "img": "img/items/high_carbon_steel_war_hammer.png",
-    "tier": "iron",
+    "tier": "high_carbon_steel",
     "max_durability": 22000,
     "category": "weapon"
   },
@@ -5706,7 +5706,7 @@
       "en": "Miner's Helmet"
     },
     "img": "img/items/miner_s_helmet.png",
-    "tier": null,
+    "tier": "gold",
     "category": "armor"
   },
   "miner_s_helmet_knowledge_book": {
@@ -6124,7 +6124,7 @@
       "en": "Obsidian Axe"
     },
     "img": "img/items/obsidian_axe.png",
-    "tier": "adamantium",
+    "tier": "obsidian",
     "category": "weapon",
     "max_durability": 2400
   },
@@ -6153,7 +6153,7 @@
       "en": "Obsidian Hatchet"
     },
     "img": "img/items/obsidian_hatchet.png",
-    "tier": "adamantium",
+    "tier": "obsidian",
     "category": "tool",
     "max_durability": 800
   },
@@ -6173,7 +6173,7 @@
       "en": "Obsidian Shovel"
     },
     "img": "img/items/obsidian_shovel.png",
-    "tier": "adamantium",
+    "tier": "obsidian",
     "category": "tool",
     "max_durability": 800
   },
@@ -6751,7 +6751,7 @@
       "en": "Adamantium Null Runestone"
     },
     "img": "img/items/runestone_nul_adamantium.png",
-    "tier": null,
+    "tier": "adamantium",
     "category": "material"
   },
   "runestone_nul_mithril": {
@@ -6760,7 +6760,7 @@
       "en": "Mithril Null Runestone"
     },
     "img": "img/items/runestone_nul_mithril.png",
-    "tier": null,
+    "tier": "mithril",
     "category": "material"
   },
   "rusted_iron_chain": {
@@ -6778,7 +6778,7 @@
       "en": "Rusted Iron Chain Boots"
     },
     "img": "img/armor/rusted_iron_chainmail_boots.png",
-    "tier": "iron",
+    "tier": "rusted_iron",
     "category": "armor"
   },
   "rusted_iron_chain_chestplate": {
@@ -6787,7 +6787,7 @@
       "en": "Rusted Iron Chain Chestplate"
     },
     "img": "img/armor/rusted_iron_chainmail_chestplate.png",
-    "tier": "iron",
+    "tier": "rusted_iron",
     "category": "armor"
   },
   "rusted_iron_chain_helmet": {
@@ -6796,7 +6796,7 @@
       "en": "Rusted Iron Chain Helmet"
     },
     "img": "img/armor/rusted_iron_chainmail_helmet.png",
-    "tier": "iron",
+    "tier": "rusted_iron",
     "category": "armor"
   },
   "rusted_iron_chain_leggings": {
@@ -6805,7 +6805,7 @@
       "en": "Rusted Iron Chain Leggings"
     },
     "img": "img/armor/rusted_iron_chainmail_leggings.png",
-    "tier": "iron",
+    "tier": "rusted_iron",
     "category": "armor"
   },
   "rusted_iron_short_sword": {
@@ -6814,7 +6814,7 @@
       "en": "Rusted Iron Short Sword"
     },
     "img": "img/items/rusted_iron_short_sword.png",
-    "tier": "iron",
+    "tier": "rusted_iron",
     "category": "weapon"
   },
   "rusted_iron_war_hammer": {
@@ -6823,7 +6823,7 @@
       "en": "Rusted Iron War Hammer"
     },
     "img": "img/items/rusted_iron_war_hammer.png",
-    "tier": "iron",
+    "tier": "rusted_iron",
     "category": "weapon",
     "max_durability": 6000
   },
@@ -7031,7 +7031,7 @@
       "en": "Silver-Copper War Hammer"
     },
     "img": "img/items/silver_copper_war_hammer.png",
-    "tier": "silver",
+    "tier": "silver_copper",
     "max_durability": 13000,
     "category": "weapon"
   },
@@ -7141,7 +7141,7 @@
       "en": "Simple Bone Club"
     },
     "img": "img/items/simple_bone_club.png",
-    "tier": null,
+    "tier": "bone",
     "category": "weapon"
   },
   "simple_brown_sleeping_bag": {
@@ -9494,7 +9494,7 @@
   },
   "obsidian_ingot_mould": {
     "name": {
-      "hu": "Obszidián Rúd Mould",
+      "hu": "Obszidián Öntőforma",
       "en": "Obsidian Ingot Mould"
     },
     "img": "img/items/obsidian_ingot_mould.png",
@@ -9504,8 +9504,8 @@
   },
   "obsidian_ingot_cool_mould": {
     "name": {
-      "hu": "Obszidián Rúd Cool Mould",
-      "en": "Obsidian Ingot Cool Mould"
+      "hu": "Hűtött Obszidián Öntőforma",
+      "en": "Cooled Obsidian Ingot Mould"
     },
     "img": "img/items/obsidian_ingot_cool_mould.png",
     "tier": "obsidian",
@@ -10025,7 +10025,7 @@
       "en": "Miner Helmet"
     },
     "img": "img/armor/miner_helmet.png",
-    "tier": null,
+    "tier": "iron",
     "category": "armor",
     "max_durability": 150
   },
@@ -10243,7 +10243,7 @@
   "bucket_stone": {
     "name": {
       "hu": "Kővel Teli Vödör",
-      "en": "Bucket Stone"
+      "en": "Bucket of Stone"
     },
     "img": "img/items/bucket_stone.png",
     "tier": null,
@@ -10252,7 +10252,7 @@
   "bucket_liquefied_gold": {
     "name": {
       "hu": "Olvadt Arannyal Teli Vödör",
-      "en": "Bucket Liquefied Gold"
+      "en": "Bucket of Liquefied Gold"
     },
     "img": "img/items/bucket_liquefied_gold.png",
     "tier": "gold",
@@ -10270,7 +10270,7 @@
   "bucket_clean_water": {
     "name": {
       "hu": "Tiszta Vízzel Teli Vödör",
-      "en": "Bucket Clean Water"
+      "en": "Bucket of Clean Water"
     },
     "img": "img/items/bucket_clean_water.png",
     "tier": null,
@@ -10297,10 +10297,10 @@
   "bucket_liquefied_mercury": {
     "name": {
       "hu": "Olvadt Higannyal Teli Vödör",
-      "en": "Bucket Liquefied Mercury"
+      "en": "Bucket of Liquefied Mercury"
     },
     "img": "img/items/bucket_liquefied_mercury.png",
-    "tier": null,
+    "tier": "mercury",
     "category": "tool"
   },
   "conveying_stone": {
