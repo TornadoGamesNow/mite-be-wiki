@@ -21,12 +21,15 @@ const sidebarGroups = getSidebarGroups('progression');
 <script is:inline>
 (function() {
   var pages = ['early-game','furnaces','metal-ages','underground','late-game','nether','endgame'];
+  var labels = { hu: 'fejezet befejezve', en: 'chapters completed', ru: 'глав завершено' };
   try {
     var done = JSON.parse(localStorage.getItem('mite-wiki-progress') || '[]');
     var count = pages.filter(function(p) { return done.includes(p); }).length;
     var el = document.getElementById('prog-summary');
     if (el && count > 0) {
-      el.innerHTML = '<span style="color:#4caf50">✓ ' + count + '/7</span> fejezet befejezve';
+      var lang = (localStorage.getItem('mite-wiki-lang') || 'hu');
+      var label = labels[lang] || labels.hu;
+      el.innerHTML = '<span style="color:#4caf50">✓ ' + count + '/7</span> ' + label;
     }
   } catch(e) {}
 })();

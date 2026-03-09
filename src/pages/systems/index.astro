@@ -17,6 +17,24 @@ const sidebarGroups = getSidebarGroups('systems');
     <Sidebar groups={sidebarGroups} />
     <main class="content">
 
+<div id="sys-summary" style="margin-bottom:16px; font-size:.9em; color:var(--text2);"></div>
+<script is:inline>
+(function() {
+  var pages = ['nutrition','combat','survival','skills'];
+  var labels = { hu: 'fejezet befejezve', en: 'chapters completed', ru: 'глав завершено' };
+  try {
+    var done = JSON.parse(localStorage.getItem('mite-wiki-progress') || '[]');
+    var count = pages.filter(function(p) { return done.includes(p); }).length;
+    var el = document.getElementById('sys-summary');
+    if (el && count > 0) {
+      var lang = (localStorage.getItem('mite-wiki-lang') || 'hu');
+      var label = labels[lang] || labels.hu;
+      el.innerHTML = '<span style="color:#4caf50">✓ ' + count + '/4</span> ' + label;
+    }
+  } catch(e) {}
+})();
+</script>
+
 <div data-lang="hu">
 <h2>⚙ A MITE:BE Játékrendszerei</h2>
 <p>A MITE:BE számos összetett rendszerrel bővíti ki a Minecraft alapmechanikáit. Ezek a rendszerek egymással kölcsönhatásban alakítják a túlélési tapasztalatot.</p>

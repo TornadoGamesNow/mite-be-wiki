@@ -813,13 +813,10 @@ document.addEventListener('DOMContentLoaded', () => {
     createToc();
     buildToc();
 
-    // Rebuild when language changes
-    document.addEventListener('langChange', function() {
-      buildToc();
-    });
-    window.addEventListener('mite:langChange', function() {
-      buildToc();
-    });
+    // Rebuild when language changes (all event names used across app)
+    document.addEventListener('langChange', function() { buildToc(); });
+    window.addEventListener('mite:langChange', function() { buildToc(); });
+    window.addEventListener('mite-lang-change', function() { buildToc(); });
   }
 
   if (document.readyState === 'loading') {
