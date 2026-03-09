@@ -35,7 +35,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     })();
   </script>
 </head>
-<body>
+<body data-pagefind-meta={`title:${title}`}>
   <div class="progress-bar" id="progress-bar"></div>
   <slot />
   <button class="back-to-top" id="back-to-top" aria-label="Back to top">&uarr;</button>

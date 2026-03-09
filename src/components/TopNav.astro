@@ -30,6 +30,10 @@ const pages = [
       </a>
     ))}
   </div>
+  <div class="wiki-search" id="wiki-search">
+    <input type="text" class="wiki-search-input" id="wiki-search-input" autocomplete="off" />
+    <div class="wiki-search-results" id="wiki-search-results"></div>
+  </div>
 </nav>
 
 <script>
@@ -42,4 +46,117 @@ const pages = [
       links.classList.toggle('open');
     });
   }
+</script>
+
+<script is:inline>
+  (function() {
+    var searchInput = document.getElementById('wiki-search-input');
+    var searchResults = document.getElementById('wiki-search-results');
+    if (!searchInput || !searchResults) return;
+
+    var pagefind = null;
+    var debounceTimer = null;
+
+    var placeholders = { hu: 'Keresés...', en: 'Search...', ru: 'Поиск...' };
+
+    function getLang() {
+      return document.documentElement.getAttribute('data-lang-init') || 'hu';
+    }
+
+    function updatePlaceholder() {
+      searchInput.placeholder = placeholders[getLang()] || placeholders.hu;
+    }
+    updatePlaceholder();
+    window.addEventListener('mite-lang-change', function() { updatePlaceholder(); });
+
+    function initPagefind() {
+      if (pagefind) return Promise.resolve(pagefind);
+      var base = document.querySelector('link[rel="canonical"]');
+      var prefix = '/mite-be-wiki';
+      return import(prefix + '/pagefind/pagefind.js').then(function(pf) {
+        pagefind = pf;
+        return pf.init();
+      }).then(function() { return pagefind; });
+    }
+
+    searchInput.addEventListener('input', function() {
+      clearTimeout(debounceTimer);
+      var q = searchInput.value.trim();
+      if (q.length < 2) {
+        searchResults.innerHTML = '';
+        searchResults.classList.remove('open');
+        return;
+      }
+      debounceTimer = setTimeout(function() { doSearch(q); }, 150);
+    });
+
+    searchInput.addEventListener('keydown', function(e) {
+      var items = searchResults.querySelectorAll('.ws-item');
+      var active = searchResults.querySelector('.ws-item.active');
+      var idx = -1;
+      items.forEach(function(el, i) { if (el === active) idx = i; });
+
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        idx = Math.min(idx + 1, items.length - 1);
+        items.forEach(function(el, i) { el.classList.toggle('active', i === idx); });
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        idx = Math.max(idx - 1, 0);
+        items.forEach(function(el, i) { el.classList.toggle('active', i === idx); });
+      } else if (e.key === 'Enter' && active) {
+        e.preventDefault();
+        var href = active.getAttribute('data-href');
+        if (href) window.location.href = href;
+      } else if (e.key === 'Escape') {
+        searchResults.innerHTML = '';
+        searchResults.classList.remove('open');
+        searchInput.blur();
+      }
+    });
+
+    searchInput.addEventListener('blur', function() {
+      setTimeout(function() { searchResults.classList.remove('open'); }, 200);
+    });
+
+    searchInput.addEventListener('focus', function() {
+      if (searchResults.innerHTML) searchResults.classList.add('open');
+    });
+
+    function doSearch(query) {
+      initPagefind().then(function(pf) {
+        return pf.search(query);
+      }).then(function(search) {
+        return Promise.all(search.results.slice(0, 8).map(function(r) { return r.data(); }));
+      }).then(function(results) {
+        if (results.length === 0) {
+          var lang = getLang();
+          var noRes = lang === 'en' ? 'No results' : lang === 'ru' ? 'Нет результатов' : 'Nincs találat';
+          searchResults.innerHTML = '<div class="ws-empty">' + noRes + '</div>';
+          searchResults.classList.add('open');
+          return;
+        }
+
+        searchResults.innerHTML = results.map(function(r) {
+          var title = (r.meta && r.meta.title) || r.url;
+          var excerpt = r.excerpt || '';
+          return '<div class="ws-item" data-href="' + r.url + '">' +
+            '<div class="ws-title">' + title + '</div>' +
+            '<div class="ws-excerpt">' + excerpt + '</div>' +
+            '</div>';
+        }).join('');
+
+        searchResults.querySelectorAll('.ws-item').forEach(function(el) {
+          el.addEventListener('mousedown', function() {
+            var href = el.getAttribute('data-href');
+            if (href) window.location.href = href;
+          });
+        });
+
+        searchResults.classList.add('open');
+      }).catch(function(e) {
+        console.error('Pagefind search error:', e);
+      });
+    }
+  })();
 </script>
