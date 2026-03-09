@@ -1,0 +1,184 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import TopNav from '../components/TopNav.astro';
+import Sidebar from '../components/Sidebar.astro';
+import PageSummary from '../components/PageSummary.astro';
+import RelatedPages from '../components/RelatedPages.astro';
+import { getSidebarGroups } from '../data/sidebar-config.ts';
+import '../styles/global.css';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const sidebarGroups = getSidebarGroups('quick-start');
+---
+<BaseLayout title="Gyors Kezdés — MITE:BE Wiki">
+  <Header />
+  <TopNav currentPage="home" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<PageSummary keyPoints={{
+  hu: [
+    'Nap 1 egyetlen célja: túlélni az első éjszakát',
+    'Kavicsból kézzel ~10% eséllyel Kova — 4 Kovaszilánk — Kovakés',
+    'Sötétedés előtt mássz fára — lebegő fa bázis az első éjszakára',
+  ],
+  en: [
+    'Day 1 single goal: survive the first night',
+    'Gravel yields Flint by hand (~10%) — 4 Shards — Flint Knife',
+    'Climb a tree before dark — floating tree base for night 1',
+  ],
+  ru: [
+    'Единственная цель 1-го дня: пережить первую ночь',
+    'Из гравия руками ~10% шанс на Кремень — 4 осколка — нож',
+    'До темноты залезь на дерево — парящая база на первую ночь',
+  ],
+}} />
+
+<div data-lang="hu">
+<h2 id="quickstart">Gyors Kezdés — Nap 1 Esszenciája</h2>
+<p>A nappalok rövidek. Ne próbálj mindent megcsinálni — az első nap egyetlen célja: <strong>túlélni az első éjszakát</strong>. Tartsd szem előtt a sorrendet!</p>
+
+<div class="info-box">🎯 <strong>Nap 1 prioritás (ebben a sorrendben):</strong>
+<ol style="margin:6px 0 0 0">
+  <li>Ellenőrizd a <strong>Biom-odat</strong> — ha óceán: azonnal új világ</li>
+  <li>Törj <strong>magas füvet</strong> → legalább <strong>4 növényszál</strong> (Szalmakötélhez)</li>
+  <li>Törj <strong>kavicsot kézzel</strong> (harvest szint 0!) → ~10% eséllyel <strong>Kova</strong> esik → 1 Kova = 4 Kovaszilánk → <strong>Kovakés</strong></li>
+  <li>Szedd fel a <strong>botokat a földről</strong> (fákról leesett ágak)</li>
+  <li>Ölj állatot → <strong>étel + bőr</strong></li>
+  <li><strong>Sötétedés előtt: mássz fel egy fára</strong> → lebegő fa bázis (lásd lent)</li>
+</ol></div>
+
+<div class="warning-box">🌙 <strong>A fa vágás és munkaasztal — ez a 2. nap feladata!</strong> Az első napon csak kavicsot, élelmet, növényszálat, botot és bőrt gyűjts — a többi másnapra vár. A nappalok nagyon rövidek, ne szórd el az idődet!</div>
+<div class="info-box">🎮 <strong>Mód-különbség:</strong> Hardcore módban kevesebb kavics generálódik (<strong>55%</strong> esély vs Simple <strong>75%</strong>). Több kavicsot kell bányászni ugyanannyi kovaért!</div>
+
+<div class="info-box">🎮 <strong>Hardcore módban:</strong> A falevelek átjárhatók, ezért a fára mászáskor átesel rajtuk. <strong>Extra homokot/kavicsot</strong> vigyél magaddal, hogy a törzs tetejére felállva oldalra építkezz a lombkorona fölé!</div>
+<div class="info-box">🌳 <strong>Lebegő Fa Bázis — Legjobb Első Éjszakai Módszer:</strong><br>
+Csak <strong>5 db homok vagy kavics</strong> kell (kézzel bányászható!):
+<ol style="margin:8px 0 0 18px">
+  <li>Keress egy fát és mássz fel a tetejére</li>
+  <li>Vedd ki a fa <strong>2 alsó tönkjét</strong> — így a pók nem tud felmászni</li>
+  <li>A fa tetején helyezz el <strong>1 homok/kavics blokkot magad alá</strong> + <strong>4-et körbe</strong></li>
+  <li>Feküdj le (guggoló/fekvő pozíció) — a nyilak átrepülnek fölötted</li>
+</ol>
+<strong>Miért működik?</strong> Nyilak nem találnak el. Zombi nem tud semmit kitörni. Pók nem tud felmászni. Reggelre le is ugorhatsz.</div>
+
+<div class="tip-card">🕯️ <strong>Fáklyád valószínűleg NEM lesz az első éjszakán</strong> — ez teljesen normális! A fa tetején sötétben is biztonságban vagy.</div>
+
+<h3>Első Napok Teendői (Nap 2–7)</h3>
+<table class="compare-table">
+  <tr><th>Prioritás</th><th>Teendő</th><th>Miért fontos</th></tr>
+  <tr><td>🔴 Kötelező</td><td><strong>Kovakés + Kovamunkaasztal</strong></td><td>3×3-as Barkácsolás feloldása</td></tr>
+  <tr><td>🔴 Kötelező</td><td><strong>Szita</strong> elkészítése</td><td>Ércdarabok kavicsból → nélküle nincs fém</td></tr>
+  <tr><td>🔴 Kötelező</td><td><strong>Agyagkemence</strong> + Tábortűz</td><td>Első olvasztás + hőszabályozás</td></tr>
+  <tr><td>🟡 Fontos</td><td><strong>Obszidián Öntőforma</strong></td><td>1 rúd = 9 ércdarab — hatékony olvasztás</td></tr>
+  <tr><td>🟡 Fontos</td><td><strong>Víztömlő</strong> + szűrőpapír</td><td>Szomjúság-kezelés — kritikus a túléléshez!</td></tr>
+  <tr><td>🟡 Fontos</td><td><strong>Bőr Hátizsák</strong></td><td>Leltár-kezelés a csökkentett kötegméretekhez</td></tr>
+</table>
+
+<h3>Leggyakoribb Első Napok Hibák</h3>
+<div class="warning-box">⚠️ <strong>Kerüld ezeket:</strong>
+<ul style="margin:4px 0 0 0">
+  <li>Éjjel kimész menedék nélkül (különösen az első éjszakán)</li>
+  <li>Csak gyümölcsöt eszel fehérje nélkül → Alultápláltság debuff</li>
+  <li>Nem csinálsz tüzet → lefagyás veszélye</li>
+  <li>Barlangba mész réz páncél előtt</li>
+  <li>Elfelejtesz kavicsot gyűjteni Kovaért</li>
+</ul></div>
+</div>
+
+<div data-lang="en">
+<h2 id="quickstart-en">Quick Start — Day 1 Essentials</h2>
+<p>Days are short. Don't try to do everything — the sole goal of Day 1 is: <strong>survive the first night</strong>. Keep the order in mind!</p>
+
+<div class="info-box">🎯 <strong>Day 1 priorities (in this order):</strong>
+<ol style="margin:6px 0 0 0">
+  <li>Check your <strong>biome</strong> — if ocean: start a new world immediately</li>
+  <li>Break <strong>tall grass</strong> → at least <strong>4 plant fiber</strong> (for Straw Rope)</li>
+  <li>Break <strong>gravel by hand</strong> (harvest level 0!) → ~10% chance of <strong>Flint</strong> → 1 Flint = 4 Shards → <strong>Flint Knife</strong></li>
+  <li>Pick up <strong>sticks from the ground</strong> (fallen branches from trees)</li>
+  <li>Kill an animal → <strong>food + leather</strong></li>
+  <li><strong>Before dark: climb a tree</strong> → floating tree base (see below)</li>
+</ol></div>
+
+<div class="warning-box">🌙 <strong>Tree cutting and workbench — that's a Day 2 task!</strong> On Day 1 only gather gravel, food, plant fiber, sticks, and leather — the rest can wait. Days are very short, don't waste your time!</div>
+
+<div class="info-box">🌳 <strong>Floating Tree Base — Best First Night Method:</strong><br>
+Only <strong>5 sand or gravel blocks</strong> needed (mineable by hand!):
+<ol style="margin:8px 0 0 18px">
+  <li>Find a tree and climb to the top</li>
+  <li>Remove the <strong>2 bottom logs</strong> — spiders can't climb up anymore</li>
+  <li>At the top, place <strong>1 sand/gravel block under yourself</strong> + <strong>4 around you</strong></li>
+  <li>Crouch/lie down — arrows fly over you, zombies can't break anything</li>
+</ol>
+<strong>Why it works:</strong> Arrows miss. Zombies can't break anything. Spiders can't climb the floating tree. You can jump down in the morning.</div>
+
+<div class="tip-card">🕯️ <strong>You probably won't have a torch on your first night</strong> — this is completely normal! You're safe in the tree top even in the dark.</div>
+
+<h3>First Days Tasks (Days 2–7)</h3>
+<table class="compare-table">
+  <tr><th>Priority</th><th>Task</th><th>Why important</th></tr>
+  <tr><td>🔴 Required</td><td><strong>Flint Knife + Flint Workbench</strong></td><td>Unlocks 3×3 crafting</td></tr>
+  <tr><td>🔴 Required</td><td><strong>Sieve</strong> construction</td><td>Ore fragments from gravel → no sieve = no metal</td></tr>
+  <tr><td>🔴 Required</td><td><strong>Clay Furnace</strong> + Campfire</td><td>First smelting + temperature regulation</td></tr>
+  <tr><td>🟡 Important</td><td><strong>Obsidian Ingot Mold</strong></td><td>1 ingot = 9 ore fragments — efficient smelting</td></tr>
+  <tr><td>🟡 Important</td><td><strong>Water Bag</strong> + filter paper</td><td>Thirst management — critical for survival!</td></tr>
+  <tr><td>🟡 Important</td><td><strong>Leather Backpack</strong></td><td>Inventory management for reduced stack sizes</td></tr>
+</table>
+
+<h3>Most Common Mistakes</h3>
+<div class="warning-box">⚠️ <strong>Avoid these:</strong>
+<ul style="margin:4px 0 0 0">
+  <li>Going outside at night without shelter (especially the first night)</li>
+  <li>Eating only fruit without protein → Malnourishment debuff</li>
+  <li>Not making fire → risk of freezing</li>
+  <li>Going into caves before copper armor</li>
+  <li>Forgetting to gather gravel for Flint</li>
+</ul></div>
+</div>
+
+<div data-lang="ru">
+<h2 id="quickstart-ru">Быстрый старт — Суть первого дня</h2>
+<p>Дни коротки. Не пытайтесь сделать всё — единственная цель 1-го дня: <strong>пережить первую ночь</strong>.</p>
+
+<div class="info-box">🎯 <strong>Приоритеты 1-го дня (в этом порядке):</strong>
+<ol style="margin:6px 0 0 0">
+  <li>Проверьте <strong>биом</strong> — если океан: сразу создавайте новый мир</li>
+  <li>Сломайте <strong>высокую траву</strong> → не менее <strong>4 растительных волокон</strong> (для Соломенной верёвки)</li>
+  <li>Ломайте <strong>гравий руками</strong> (уровень добычи 0!) → ~10% шанс получить <strong>Кремень</strong> → 4 осколка → <strong>Кремнёвый нож</strong></li>
+  <li>Подбирайте <strong>палки с земли</strong> (упавшие ветки)</li>
+  <li>Убейте животное → <strong>еда + кожа</strong></li>
+  <li><strong>До темноты: залезьте на дерево</strong> — Парящая Древесная База</li>
+</ol></div>
+
+<div class="warning-box">🌙 <strong>Рубка деревьев и верстак — задача 2-го дня!</strong> В первый день собирайте только гравий, еду, волокна, палки и кожу.</div>
+
+<div class="info-box">🌳 <strong>Парящая Древесная База — лучший метод для первой ночи:</strong><br>
+Нужно всего <strong>5 блоков песка или гравия</strong> (можно добыть руками):
+<ol style="margin:8px 0 0 18px">
+  <li>Найдите дерево и залезьте на вершину</li>
+  <li>Уберите <strong>2 нижних ствола</strong> — пауки не смогут залезть</li>
+  <li>На вершине поставьте <strong>1 блок под себя</strong> + <strong>4 вокруг</strong></li>
+  <li>Присядьте/лягте — стрелы пролетят мимо</li>
+</ol></div>
+
+<h3>Первые дни (Дни 2–7)</h3>
+<table class="compare-table">
+  <tr><th>Приоритет</th><th>Задача</th><th>Почему важно</th></tr>
+  <tr><td>🔴 Обязательно</td><td><strong>Кремнёвый нож + Верстак</strong></td><td>Разблокирует крафт 3×3</td></tr>
+  <tr><td>🔴 Обязательно</td><td><strong>Сито</strong></td><td>Частицы руды из гравия — без сита нет металла</td></tr>
+  <tr><td>🔴 Обязательно</td><td><strong>Глиняная печь</strong> + Костёр</td><td>Первая плавка + контроль температуры</td></tr>
+  <tr><td>🟡 Важно</td><td><strong>Форма для слитков</strong></td><td>1 слиток = 9 частиц руды</td></tr>
+  <tr><td>🟡 Важно</td><td><strong>Фляга для воды</strong> + фильтровальная бумага</td><td>Управление жаждой — критически важно!</td></tr>
+</table>
+</div>
+
+<RelatedPages
+  prev={{ href: `${base}/introduction/`, label: { hu: 'Bevezetés', en: 'Introduction', ru: 'Введение' } }}
+  next={{ href: `${base}/game-modes/`, label: { hu: 'Játékmódok', en: 'Game Modes', ru: 'Режимы игры' } }}
+/>
+
+  </main>
+    </div>
+</BaseLayout>

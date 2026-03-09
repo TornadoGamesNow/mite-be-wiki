@@ -1,0 +1,437 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import TopNav from '../../components/TopNav.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import CraftingGrid from '../../components/CraftingGrid.astro';
+import PageSummary from '../../components/PageSummary.astro';
+import ProgressionBreadcrumb from '../../components/ProgressionBreadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import '../../styles/global.css';
+
+import { getSidebarGroups } from '../../data/sidebar-config.ts';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const sidebarGroups = getSidebarGroups('progression/underground');
+---
+<BaseLayout title="Földalatti Világ | MITE:BE Wiki">
+  <Header />
+  <TopNav currentPage="progression" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<ProgressionBreadcrumb current="underground" />
+
+<PageSummary keyPoints={{
+  hu: [
+    'Belépéshez minimum teljes vaskészlet — mélyebbre ősi fém kell',
+    'Fázispók: csak Ősi Fém karddal! Láthatatlan Leső: csak Mithril+',
+    'Fosztogató Őrszem: üllők + kar — Adamantium/Mithril blokkok',
+  ],
+  en: [
+    'Minimum full iron gear to enter — Ancient Metal for deeper levels',
+    'Phase Spider: Ancient Metal sword only! Stalker: Mithril+ only',
+    'Pillager Outpost: place anvils + lever — Adamantium/Mithril loot',
+  ],
+  ru: [
+    'Минимум — полный железный комплект; глубже — Древний металл',
+    'Фазовый паук: только Древний металл! Невидимый: только Мифрил+',
+    'Аванпост: наковальни + рычаг — адамант/мифриловые блоки',
+  ],
+}} />
+
+<div data-lang="hu">
+
+<!-- ===== BARLANGOK ===== -->
+
+<h2 id="caves">Barlangok & Bányászat</h2>
+<p>Az Y=35 alatti területek veszélyes, de gazdag barlangrendszerek. Itt találod a ritka érceket és a szénkristályt.</p>
+
+<div class="tip">Bányászsisak készítése jobb fényforrást biztosít — kiváló a földalatti világ felfedezéséhez! (Knowledge Bookvel nyitható meg.)</div>
+
+<h3>Szerszámszintek — Melyik csákány melyik ércre?</h3>
+<p>A MITE:BE-ben minden blokk rendelkezik egy <strong>betakarítási szinttel</strong>. Alacsonyabb szintű csákánnyal a blokk nem bányászható, csak lassan törik és nem ad semmit!</p>
+<table class="compare-table">
+  <tr><th>Szint</th><th>Szerszámok</th><th>Bányászható blokkok</th></tr>
+  <tr>
+    <td><strong>1 — Kova/Kőzet</strong></td>
+    <td>Kovacsákány, Kovacsákány, Kova Mattock, Kovaféjsze</td>
+    <td>Rönk, Homokk, Üveg, Jég, Kemény Agyag, Homokk Stalaktit</td>
+  </tr>
+  <tr>
+    <td><strong>2 — Réz/Ezüst szint</strong></td>
+    <td>Réz, Ezüst, Arany, Bronz, Ezüst-Réz, Obszidián, Rozsdás Vasalt csákány</td>
+    <td><strong>Kő</strong>, Szén/Vas/Arany/Réz/Ezüst/Lápiszuli/Vöröskő (Redstone) érc, Rézblokk, Ezüstblokk, Arany blokk (2)</td>
+  </tr>
+  <tr>
+    <td><strong>3 — Vas szint</strong></td>
+    <td>Vas, Ősi Fém, Keménykő, Szénacél csákány</td>
+    <td><strong>Obszidián</strong>, Smaragd érc, <strong>Mithrilérc</strong>, <strong>Keménykő érc</strong>, Vasblokk (4!), Aranyblokk (3)</td>
+  </tr>
+  <tr>
+    <td><strong>4 — Mithril szint</strong></td>
+    <td>Mithrilcsákány</td>
+    <td><strong>Gyémánt érc</strong>, <strong>Adamantiumérc</strong>, Vasblokk, Keménykőblokk (4)</td>
+  </tr>
+  <tr>
+    <td><strong>5 — Adamantium szint</strong></td>
+    <td>Adamantiumcsákány</td>
+    <td>Gyémánt blokk (5), Mithril blokk (5), Keménykő ládák (4)</td>
+  </tr>
+  <tr>
+    <td><strong>100 — Alapkő</strong></td>
+    <td>Csak Alapkő Zúzó</td>
+    <td>Bedrock (Alapkő)</td>
+  </tr>
+</table>
+<div class="warning-box"><strong>⚠️ Fontos:</strong> Gyémánt ércet <em>NEM tudsz</em> vascsákánnyal bányászni! Mithrilcsákány Required. Adamantiumércre is Mithrilcsákány kell minimum. Ez az oka, hogy a Mithril korszak áttörés a játékban.</div>
+
+<h3>Mob Tapasztalat (XP) Táblázat</h3>
+<p>Gyorsan gazdag tapasztalatra akarsz szert tenni? Ezek a lények adják a legtöbb XP-t:</p>
+<table class="compare-table">
+  <tr><th>Lény</th><th>XP</th><th>Helyszín</th></tr>
+  <tr><td>Mutáns Csontváz Úr</td><td style="color:#a0f"><strong>1000</strong></td><td>Mélybarlang/Alvilág — Boss</td></tr>
+  <tr><td>Obszidián Gólem</td><td style="color:#f44"><strong>150</strong></td><td>Alvilág</td></tr>
+  <tr><td>Ender Sárkány</td><td style="color:#f44"><strong>100</strong></td><td>The End</td></tr>
+  <tr><td>Zombihívó</td><td style="color:#ff0"><strong>80</strong></td><td>Temetők/Alvilág</td></tr>
+  <tr><td>Wither (Hervadó)</td><td style="color:#ff0"><strong>50</strong></td><td>Alvilág (Nether) Boss</td></tr>
+  <tr><td>Barlang Pók</td><td style="color:#5f5"><strong>10</strong></td><td>Barlangrendszerek</td></tr>
+  <tr><td>Csontváz/Creeper/Pók/Zombi</td><td style="color:#aaa"><strong>5</strong></td><td>Mindenütt éjjel</td></tr>
+  <tr><td>Elefánt 🐘</td><td style="color:#aaa"><strong>25</strong></td><td>Szavanna</td></tr>
+</table>
+
+<h3>Természeti csodák a mélyben</h3>
+<p>Stalaktitok, sztalagmitok, fénygombák, fényfüvek, jeges gombák és jégcsapok díszítik a barlangokat. A <strong>Piros Kristály Barlang</strong> különleges biomként jelenik meg (32 nap után nyílik meg).</p>
+
+
+<!-- ===== UNDERGROUND ===== -->
+
+<h2 id="underground">Földalatti világ (Alvilág)</h2>
+<p>A MITE:BE-ben az Underground egy <strong>külön dimenzió</strong> a fővilág alatt. Belépéshez építs egy <strong>Obszidián portált az alapkő-rétegre</strong> a fővilágban, és gyújtsd meg Tűzgyújtóvel.</p>
+
+<div class="warning-box">⚠️ A föld alatti világ gazdag ércekben, de tele van mutáns szörnyekkel! Minimum <strong>teljes Vas felszerelés</strong> ajánlott belépés előtt. Készíts menekülési útvonalat!</div>
+
+<h3>Struktúrák</h3>
+<ul>
+  <li><strong>Vörös Kristály Barlang</strong> — ritka Biom, amely a 32. nap után nyílik meg. Értékes kristályok találhatók benne.</li>
+  <li><strong>Smaragd Erdő</strong> — földalatti erdő Biom, fénygombákkal és egyedi növényzettel. Smaragd érc itt gyakoribb.</li>
+  <li><strong>Gombaerdő Harcitorony</strong> — erődített struktúra gombaerdő Biom-ban. Jutalomládák és erős őrök találhatók benne.</li>
+  <li><strong>Barlang díszek:</strong> stalaktitok, sztalagmitok, fénygombák, fényfüvek, jeges gombák, jégcsapok díszítik a barlangokat.</li>
+</ul>
+
+<h3>Rétegek és Mélységek</h3>
+<table class="compare-table">
+  <tr><th>Mélység</th><th>Tartalom</th><th>Ajánlott felszerelés</th></tr>
+  <tr><td>Felső rétegek (Y 40+)</td><td>Keménykő érc, gyengébb mobok</td><td>Vas páncél + fegyver</td></tr>
+  <tr><td>Középső rétegek (Y 20–40)</td><td>Ősi Fém érc, Smaragd érc, erősebb mobok</td><td>Keménykő/Ősi Fém páncél</td></tr>
+  <tr><td>Mély rétegek (Y 0–20)</td><td>Mithrilérc, boss szörnyek, dupla spawner</td><td>Ősi Fém+ páncél, bájitalok</td></tr>
+  <tr><td>Alapkő réteg</td><td><strong>Köpeny</strong> (Alvilág (Nether) átjárat)</td><td>Mithril páncél ajánlott</td></tr>
+</table>
+
+<h3>Underground Szörnyek</h3>
+<table class="compare-table">
+  <tr><th>Szörny</th><th>Életerő (HP)</th><th>Sebzés</th><th>XP</th><th>Speciális</th></tr>
+  <tr><td>Sírkamrai holttetem (Ghoul)</td><td>20</td><td>5</td><td>10</td><td>Lassítás hatás</td></tr>
+  <tr><td>Lidérc (Wight)</td><td>30</td><td>7</td><td>15</td><td>Lassítás + éheztetés</td></tr>
+  <tr><td>Láthatatlan Követő (Invisible Stalker)</td><td>20</td><td>5</td><td>10</td><td>Láthatatlan! Csak <strong>mithril+</strong> fegyverrel vagy Ártalom bájitallal sebezhetető</td></tr>
+  <tr><td>Fekete Özvegy Pók</td><td>12</td><td>4</td><td>8</td><td>Erős mérgezés</td></tr>
+  <tr><td>Fázis Pók (Phase Spider)</td><td>6</td><td>3</td><td>10</td><td>Falon átmegy! Csak <strong>Ősi Fém kard</strong> sebzi</td></tr>
+  <tr><td>Vámpír Denevér</td><td>3</td><td>1</td><td>5</td><td>Életlopás</td></tr>
+  <tr><td>Óriás Vámpír Denevér</td><td>6</td><td>2</td><td>10</td><td>Életlopás + nagy sebzés</td></tr>
+  <tr><td>Csont Úr (Bone Lord)</td><td>20</td><td>5</td><td>25</td><td>Boss — csontváz idézés</td></tr>
+  <tr><td>Föld Elementális (5 változat)</td><td>30</td><td>12</td><td>15</td><td>4 páncél — csak <strong>megfelelő csákánnyal</strong> sebezhetető!</td></tr>
+</table>
+<div class="info-box">⛏️ <strong>Föld Elementális:</strong> 5 változatban létezik (föld, kő, homok, kavics, agyag). Csak csákánnyal sebezhetők hatékonyan — kard alig hat rájuk! A csákány anyagának legalább olyan erősnek kell lennie, mint az elementális típusának.</div>
+
+<h3>Környezeti Veszélyek</h3>
+<ul>
+  <li><strong>Örök sötétség:</strong> A föld alatti világban nincs természetes napfény. Fáklyák és fénygombák az egyetlen világítás.</li>
+  <li><strong>Repülő Hamu (Flying Ash):</strong> Bizonyos területeken hamu lebeg a levegőben, csökkentve a látótávolságot.</li>
+  <li><strong>Köd:</strong> Egyes barlangokban sűrű köd nehezíti a tájékozódást.</li>
+  <li><strong>Megnövelt láva:</strong> Több lávató és lávafolyam található, mint a fővilágban.</li>
+  <li><strong>Dupla spawnerek:</strong> A mély szinteken a szörnyidéző blokkok párosával jelennek meg.</li>
+</ul>
+
+<h3>Stratégiai Tippek</h3>
+<div class="tip-card">💡 <strong>Felkészülés az Underground-ra:</strong>
+<ul style="margin:4px 0 0 0">
+  <li>Minimum <strong>teljes Vas páncél és fegyver</strong> — Keménykő/Ősi Fém ajánlott a mélyebb szintekhez</li>
+  <li>Vigyél legalább <strong>64 fáklyát</strong> és <strong>Tűzgyújtót</strong></li>
+  <li>Mindig jelöld meg a visszavezető utat (fáklyák mindig bal oldalon → visszafelé jobb oldalon)</li>
+  <li>Készíts <strong>Visszatérő Portált</strong> mielőtt túl mélyre mennél (Obszidián keret a föld alatt → visszavisz a fővilágba)</li>
+  <li><strong>Ősi Fém kard</strong> elengedhetetlen a Fázis Pókok ellen — más fegyver nem hat rájuk!</li>
+  <li>Vigyél bájitalokat (Regeneráció, Éjszakai Látás) ha elérhetőek</li>
+</ul></div>
+<div class="tip-card">⚔️ <strong>Legjobb fegyver az Underground-ra:</strong> A <strong>Szénacél harci kalapács + Élőholt Ölő V</strong> bűvölet egy csapással megöli a csontvázakat és más élőholtakat. Olcsó anyagból készül, tartós, és a Föld Elementálisokat (Kő Golemeket) is eléri.</div>
+<div class="tip-card">💎 <strong>Mithril szerzés spawnerből:</strong> Az Underground szörnyidéző kamarákban (<em>spawner</em> szobákban) készen talált <strong>mithril rudak és blokkok</strong> is előfordulnak — ez hatékonyabb lehet, mint vakon bányászni.</div>
+
+<h3>Pillager Tábor — Rejtett Kincs</h3>
+<div class="warning-box">⚔️ <strong>v0.9.0 Outpost nehézség figyelmeztetés!</strong> A v0.9.0-ban az outpost belseje <strong>drasztikusan megnehezedett</strong>:
+<ul style="margin:6px 0 0 0">
+  <li><strong>10+ Vindicator (Fosztogató) spawner</strong> az épületen belül — 2-3 lépésenként egy</li>
+  <li>A Fosztogatók <strong>képesek blokkokat bontani</strong> (elásnak hozzád!)</li>
+  <li>Gyorsabb spawn ráta mint korábban</li>
+  <li>Jutalmak csökkentve: a <strong>Szénkristály eltávolítva</strong> a lootból, helyette kevésbé értékes ásványok</li>
+</ul>
+<strong>Ne menj be felkészületlenül</strong> — bűvített arany alma és minimum Keménykő/Ősi Fém felszerelés Required!</div>
+<div class="tip-card">🏰 <strong>Pillager Outpost Portál (fővilágból):</strong> A fővilágban ás le az alapkő-rétegig, majd építs ott <strong>Obszidián portált</strong> és gyújtsd meg Tűzgyújtóvel. Ez az underground portál közvetlenül egy <strong>Pillager Outpost torony tetejére</strong> visz!</div>
+<div class="tip-card">⚙️ <strong>Pillager tábor föld alatti mechanizmus:</strong> Az underground Pillager táborban <strong>üllőket kell lerakni a tábor körül + egy kart (lever) aktiválni a közepén</strong> → ez megnyit egy földalatti kamrát, amely <strong>Adamantium, Mithril és Vöröskő (Redstone) blokkokat</strong> tartalmaz. Ez az egyik legfőbb mithril forrás a játékban!</div>
+
+<h3>Underground → Alvilág (Nether) Átjárat</h3>
+<p>Az Underground legmélyebb szintjén, az <strong>alapkő-rétegben</strong> megtalálható a <strong>Köpeny (Mantle)</strong> — ez a Alvilág (Nether) dimenzió felé vezető átjárat. Építs portált a magma-rétegen a Alvilág (Nether) eléréséhez.</p>
+<div class="info-box">🔥 <strong>Nehéz módban 3 alapkő-réteg van!</strong> A Köpeny megtalálása tovább tarthat.</div>
+
+
+<!-- ===== KEMÉNYKŐ ===== -->
+
+<h2 id="hardstone">Keménykő</h2>
+<p>A keménykő egy rejtélyes anyag az Földalatti világból. Talán ősi erő lakozik benne.</p>
+<p>Teljes készlet készíthető belőle: csákány, fejsze, kard, tőr, harci kalapács, kasza, kapa, lapát, sisak, mellvért, Nadrág, csizmák, vödör, olló, munkaasztal, üllő.</p>
+<p><em>Megjegyzés: Kovács (Blacksmith) foglalkozás Required lenne az átlagos minőségű craftoláshoz — de ez jelenleg inaktív v0.9.0-ban.</em></p>
+
+<div class="craft-section">
+  <CraftingGrid recipeOutput="hard_stone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword"}}/>
+  <CraftingGrid recipeOutput="hard_stone_pickaxe" label={{hu: "Keménykőcsákány", en: "Hardstone Pickaxe"}}/>
+  <CraftingGrid recipeOutput="hard_stone_war_hammer" label={{hu: "Keménykő harci kalapács", en: "Hardstone War Hammer"}}/>
+</div>
+
+<!-- ===== ŐSI FÉM ===== -->
+
+<h2 id="ancient-metal">Ősi Fém</h2>
+<p>Gonosz és félelmetes ősi erő lakozik benne. Az ősi fém a földalatti világ legrejtélyesebb anyaga.</p>
+
+<h3>Szett hatás (4/4 darab)</h3>
+<ul>
+  <li><strong>Megerősítés I:</strong> -30% Sérülés az Alvilágból</li>
+  <li><strong>Megerősítés II:</strong> Az Alvilágbeli Denevérek nem támadnak meg</li>
+  <li>Az elhasznált páncél rugalmas a korróziót megelőzően</li>
+  <li>Képes Fázis Pókokat elütni (kard)</li>
+</ul>
+
+<div class="craft-section">
+  <CraftingGrid recipeOutput="mithril_short_sword" label={{hu: "Mithril Rövidkard", en: "Mithril Short Sword"}}/>
+  <CraftingGrid recipeOutput="mithril_hand_axe" label={{hu: "Mithril Kézbalta", en: "Mithril Hand Axe"}}/>
+  <CraftingGrid recipeOutput="mithril_war_hammer" label={{hu: "Mithril harci kalapács", en: "Mithril War Hammer"}}/>
+</div>
+
+</div>
+
+<div data-lang="en">
+
+<!-- ===== CAVES ===== -->
+
+<h2 id="caves">Caves & Mining</h2>
+<p>Areas below Y=35 are dangerous but resource-rich cave systems. Here you'll find rare ores and carbon crystals.</p>
+
+<div class="tip">Craft a Mining Helmet for a better light source — excellent for underground exploration! (Unlocked via knowledge book.)</div>
+
+<h3>Tool Levels — Which Pickaxe for Which Ore?</h3>
+<p>In MITE:BE, every block has a <strong>mining level</strong>. A lower-level pickaxe cannot mine the block — it just breaks slowly and drops nothing!</p>
+<table class="compare-table">
+  <tr><th>Level</th><th>Tools</th><th>Mineable Blocks</th></tr>
+  <tr>
+    <td><strong>1 — Flint/Rock</strong></td>
+    <td>Flint Pickaxe, Rock Pickaxe, Flint Mattock, Flint Axe</td>
+    <td>Logs, Sandstone, Glass, Ice, Hardened Clay, Sandstone Stalactites</td>
+  </tr>
+  <tr>
+    <td><strong>2 — Copper/Silver tier</strong></td>
+    <td>Copper, Silver, Gold, Bronze, Silver Copper, Obsidian, Rusted Iron pickaxe</td>
+    <td><strong>Stone</strong>, Coal/Iron/Gold/Copper/Silver/Lapis/Redstone ore, Copper/Silver blocks</td>
+  </tr>
+  <tr>
+    <td><strong>3 — Iron tier</strong></td>
+    <td>Iron, Ancient Metal, Hardstone, High Carbon Steel pickaxe</td>
+    <td><strong>Obsidian</strong>, Emerald ore, <strong>Mithril ore</strong>, <strong>Hardstone ore</strong>, Gold block (3), Iron block (4!)</td>
+  </tr>
+  <tr>
+    <td><strong>4 — Mithril tier</strong></td>
+    <td>Mithril pickaxe</td>
+    <td><strong>Diamond ore</strong>, <strong>Adamantium ore</strong>, Iron block, Hardstone block (4)</td>
+  </tr>
+  <tr>
+    <td><strong>5 — Adamantium tier</strong></td>
+    <td>Adamantium pickaxe</td>
+    <td>Diamond block (5), Mithril block (5)</td>
+  </tr>
+  <tr>
+    <td><strong>100 — Bedrock</strong></td>
+    <td>Bedrock Pulverizer only</td>
+    <td>Bedrock</td>
+  </tr>
+</table>
+<div class="warning-box"><strong>⚠️ Critical:</strong> You <em>cannot</em> mine Diamond Ore with an Iron Pickaxe! You need a Mithril Pickaxe. Same for Adamantium Ore. This is why reaching the Mithril age is a major breakthrough.</div>
+
+<h3>Mob Experience (XP) Table</h3>
+<p>Want to level up fast? These are the best XP sources:</p>
+<table class="compare-table">
+  <tr><th>Mob</th><th>XP</th><th>Location</th></tr>
+  <tr><td>Variant Skeleton Lord</td><td style="color:#a0f"><strong>1000</strong></td><td>Deep Caves/Underground — Boss</td></tr>
+  <tr><td>Obsidian Golem</td><td style="color:#f44"><strong>150</strong></td><td>Underground</td></tr>
+  <tr><td>Ender Dragon</td><td style="color:#f44"><strong>100</strong></td><td>The End</td></tr>
+  <tr><td>Zombie Caller</td><td style="color:#ff0"><strong>80</strong></td><td>Graveyards/Underground</td></tr>
+  <tr><td>Wither</td><td style="color:#ff0"><strong>50</strong></td><td>Nether Boss</td></tr>
+  <tr><td>Cave Spider</td><td style="color:#5f5"><strong>10</strong></td><td>Cave systems</td></tr>
+  <tr><td>Skeleton/Creeper/Spider/Zombie</td><td style="color:#aaa"><strong>5</strong></td><td>Night-time everywhere</td></tr>
+  <tr><td>Elephant 🐘</td><td style="color:#aaa"><strong>25</strong></td><td>Savanna</td></tr>
+</table>
+
+<h3>Natural Wonders</h3>
+<p>Stalactites, stalagmites, glow mushrooms, glow weeds, ice mushrooms, and icicles decorate the caves. The <strong>Red Crystal Cave</strong> appears as a special Biome (unlocks after day 32).</p>
+
+
+<!-- ===== UNDERGROUND ===== -->
+
+<h2 id="underground">Underground Dimension</h2>
+<p>In MITE:BE, the Underground is a <strong>separate Dimension</strong> beneath the overworld. To enter, build an <strong>Obsidian portal on the bedrock layer</strong> in the overworld and light it with Flint and Steel.</p>
+
+<div class="warning-box">⚠️ The Underground is rich in ores but full of mutant monsters! Minimum <strong>full iron gear</strong> is recommended before entering. Prepare an escape route!</div>
+
+<h3>Structures</h3>
+<ul>
+  <li><strong>Red Crystal Cave</strong> — rare biome that unlocks after day 32. Valuable crystals found here.</li>
+  <li><strong>Emerald Forest</strong> — underground forest biome with glow mushrooms and unique vegetation. Emerald ore is more common here.</li>
+  <li><strong>Mushroom Forest Battle Tower</strong> — fortified structure in mushroom forest biome. Reward chests and strong guardians.</li>
+</ul>
+
+<h3>Layers and Depths</h3>
+<table class="compare-table">
+  <tr><th>Depth</th><th>Contents</th><th>Recommended Gear</th></tr>
+  <tr><td>Upper layers (Y 40+)</td><td>Hardstone ore, weaker mobs</td><td>Iron armor + weapon</td></tr>
+  <tr><td>Middle layers (Y 20–40)</td><td>Ancient Metal ore, Emerald ore, stronger mobs</td><td>Hardstone/Ancient Metal armor</td></tr>
+  <tr><td>Deep layers (Y 0–20)</td><td>Mithril ore, boss mobs, double spawners</td><td>Ancient Metal+ armor, potions</td></tr>
+  <tr><td>Bedrock layer</td><td><strong>Mantle</strong> (Nether gateway)</td><td>Mithril armor recommended</td></tr>
+</table>
+
+<h3>Underground Mobs</h3>
+<table class="compare-table">
+  <tr><th>Mob</th><th>HP</th><th>Damage</th><th>XP</th><th>Special</th></tr>
+  <tr><td>Ghoul</td><td>20</td><td>5</td><td>10</td><td>Slowness effect</td></tr>
+  <tr><td>Wight</td><td>30</td><td>7</td><td>15</td><td>Slowness + hunger</td></tr>
+  <tr><td>Invisible Stalker</td><td>20</td><td>5</td><td>10</td><td>Invisible! Only <strong>mithril+</strong> weapon or Harming Potion damages it</td></tr>
+  <tr><td>Black Widow Spider</td><td>12</td><td>4</td><td>8</td><td>Strong poison</td></tr>
+  <tr><td>Phase Spider</td><td>6</td><td>3</td><td>10</td><td>Passes through walls! Only <strong>Ancient Metal sword</strong> damages it</td></tr>
+  <tr><td>Vampire Bat</td><td>3</td><td>1</td><td>5</td><td>Life steal</td></tr>
+  <tr><td>Earth Elemental (5 variants)</td><td>30</td><td>12</td><td>15</td><td>4 armor — only <strong>appropriate pickaxe</strong> damages it!</td></tr>
+</table>
+<div class="info-box">⛏️ <strong>Earth Elemental:</strong> Exists in 5 variants (earth, stone, sand, gravel, clay). Only pickaxes damage them effectively — swords barely work! The pickaxe material must be at least as strong as the elemental's type.</div>
+
+<h3>Strategy Tips</h3>
+<div class="tip-card">💡 <strong>Preparing for the Underground:</strong>
+<ul style="margin:4px 0 0 0">
+  <li>Minimum <strong>full iron armor and weapon</strong> — Hardstone/Ancient Metal for deeper levels</li>
+  <li>Bring at least <strong>64 torches</strong> and <strong>Flint and Steel</strong></li>
+  <li>Always mark your return path (torches always on the left → on the right coming back)</li>
+  <li>Build a <strong>Return Portal</strong> before going too deep (Obsidian frame underground → returns to overworld)</li>
+  <li><strong>Ancient Metal sword</strong> is essential for Phase Spiders — no other weapon works!</li>
+  <li>Bring potions (Regeneration, Night Vision) if available</li>
+</ul></div>
+<div class="tip-card">⚔️ <strong>Best Underground weapon:</strong> <strong>High-Carbon Steel War Hammer + Undead Slayer V</strong> one-shots skeletons and undead. Cheap, durable, also hits Earth Elementals (Stone Golems).</div>
+<div class="tip-card">💎 <strong>Mithril from spawners:</strong> Underground spawner rooms may contain ready-made <strong>mithril ingots/blocks</strong> — more efficient than blind mining.</div>
+
+<h3>Pillager Camp — Hidden Treasure</h3>
+<div class="warning-box">⚔️ <strong>v0.9.0 Outpost difficulty warning!</strong> The outpost interior is <strong>drastically harder</strong> in v0.9.0:
+<ul style="margin:6px 0 0 0">
+  <li><strong>10+ Vindicator spawners</strong> inside the building — one every 2-3 steps</li>
+  <li>Vindicators <strong>can break blocks</strong> (they'll dig to reach you!)</li>
+  <li>Faster spawn rate than before</li>
+  <li>Rewards reduced: <strong>Carbon Crystal removed</strong> from loot, replaced with less valuable minerals</li>
+</ul>
+<strong>Do not enter unprepared</strong> — enchanted golden apple and minimum Hardstone/Ancient Metal gear Required!</div>
+<div class="tip-card">⚙️ <strong>Pillager camp underground mechanism:</strong> In the underground Pillager camp, <strong>place anvils around the camp + activate a lever in the center</strong> → this opens an underground chamber containing <strong>Adamantium, Mithril, and Redstone blocks</strong>. This is one of the main mithril sources in the game!</div>
+
+<h3>Underground → Nether Gateway</h3>
+<p>In the deepest level of the Underground, at the <strong>bedrock layer</strong>, you'll find the <strong>Mantle</strong> — the gateway to the Nether dimension. Build a portal on the magma layer to reach the Nether.</p>
+<div class="info-box">🔥 <strong>On Hard Difficulty, there are 3 bedrock layers!</strong> Finding the Mantle may take longer.</div>
+
+
+<!-- ===== HARDSTONE ===== -->
+
+<h2 id="hardstone">Hardstone</h2>
+<p>Hardstone is a mysterious material from the Underground. Perhaps ancient power resides within it.</p>
+<p>A full set can be crafted: pickaxe, axe, sword, dagger, war hammer, scythe, hoe, shovel, helmet, chestplate, leggings, boots, bucket, shears, workbench, anvil.</p>
+
+<div class="craft-section">
+  <CraftingGrid recipeOutput="hard_stone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword"}}/>
+  <CraftingGrid recipeOutput="hard_stone_pickaxe" label={{hu: "Keménykőcsákány", en: "Hardstone Pickaxe"}}/>
+  <CraftingGrid recipeOutput="hard_stone_war_hammer" label={{hu: "Keménykő harci kalapács", en: "Hardstone War Hammer"}}/>
+</div>
+
+<!-- ===== ANCIENT METAL ===== -->
+
+<h2 id="ancient-metal">Ancient Metal</h2>
+<p>Evil and terrifying ancient power resides within. Ancient Metal is the most mysterious material of the Underground.</p>
+
+<h3>Set Bonus (4/4 pieces)</h3>
+<ul>
+  <li><strong>Enhancement I:</strong> -30% Damage from the Nether</li>
+  <li><strong>Enhancement II:</strong> Nether Bats won't attack you</li>
+  <li>Worn armor resists corrosion</li>
+  <li>Able to hit Phase Spiders (sword)</li>
+</ul>
+
+<div class="craft-section">
+  <CraftingGrid recipeOutput="mithril_short_sword" label={{hu: "Mithril Rövidkard", en: "Mithril Short Sword"}}/>
+  <CraftingGrid recipeOutput="mithril_hand_axe" label={{hu: "Mithril Kézbalta", en: "Mithril Hand Axe"}}/>
+  <CraftingGrid recipeOutput="mithril_war_hammer" label={{hu: "Mithril harci kalapács", en: "Mithril War Hammer"}}/>
+</div>
+
+</div>
+
+<div data-lang="ru">
+
+<h2 id="caves">Пещеры и добыча</h2>
+<p>Территории ниже Y=35 — опасные, но богатые ресурсами пещерные системы. Здесь найдёшь редкие руды и угольные кристаллы.</p>
+
+<h3>Уровни инструментов — какая кирка для какой руды?</h3>
+<table class="compare-table">
+  <tr><th>Уровень</th><th>Инструменты</th><th>Добываемые блоки</th></tr>
+  <tr><td><strong>2 — Медь/Серебро</strong></td><td>Медная, серебряная, золотая, бронзовая кирки</td><td><strong>Камень</strong>, угольная/железная/медная/серебряная руда</td></tr>
+  <tr><td><strong>3 — Железо</strong></td><td>Железная, твердокаменная, HC стальная кирки</td><td><strong>Обсидиан</strong>, <strong>Мифриловая руда</strong>, <strong>Твердокаменная руда</strong></td></tr>
+  <tr><td><strong>4 — Мифрил</strong></td><td>Мифриловая кирка</td><td><strong>Алмазная руда</strong>, <strong>Адамантовая руда</strong></td></tr>
+  <tr><td><strong>100 — Бедрок</strong></td><td>Только Измельчитель бедрока</td><td>Бедрок (Коренная порода)</td></tr>
+</table>
+<div class="warning-box"><strong>⚠️ Важно:</strong> Алмазную руду нельзя добыть железной киркой! Нужна Мифриловая кирка. То же для Адамантовой руды.</div>
+
+<h2 id="underground">Подземный мир</h2>
+<p>В MITE:BE Подземный мир — <strong>отдельное измерение</strong> под обычным миром. Чтобы войти, построй <strong>Обсидиановый портал на уровне бедрока</strong> и подожги его кремнём и сталью.</p>
+
+<div class="warning-box">⚠️ Подземный мир богат рудами, но полон мутировавших монстров! Минимум <strong>полная железная экипировка</strong> перед входом.</div>
+
+<h3>Монстры Подземного мира</h3>
+<table class="compare-table">
+  <tr><th>Монстр</th><th>ОЗ</th><th>Урон</th><th>XP</th><th>Особое</th></tr>
+  <tr><td>Гуль</td><td>20</td><td>5</td><td>10</td><td>Замедление</td></tr>
+  <tr><td>Вайт</td><td>30</td><td>7</td><td>15</td><td>Замедление + голод</td></tr>
+  <tr><td>Невидимый Преследователь</td><td>20</td><td>5</td><td>10</td><td>Невидим! Только <strong>мифрил+</strong> оружие или зелье урона</td></tr>
+  <tr><td>Фазовый Паук</td><td>6</td><td>3</td><td>10</td><td>Проходит сквозь стены! Только <strong>Меч Древнего металла</strong></td></tr>
+  <tr><td>Земляной Элементаль</td><td>30</td><td>12</td><td>15</td><td>4 брони — только <strong>кирка</strong> наносит урон!</td></tr>
+</table>
+
+<h2 id="hardstone">Твердокамень</h2>
+<p>Таинственный материал из Подземного мира. Возможно, в нём живёт древняя сила.</p>
+<div class="craft-section">
+  <CraftingGrid recipeOutput="hard_stone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword"}}/>
+  <CraftingGrid recipeOutput="hard_stone_pickaxe" label={{hu: "Keménykőcsákány", en: "Hardstone Pickaxe"}}/>
+</div>
+
+<h2 id="ancient-metal">Древний металл</h2>
+<p>Злая и грозная древняя сила живёт в нём. Древний металл — самый загадочный материал Подземного мира.</p>
+<h3>Бонус комплекта (4/4 предмета)</h3>
+<ul>
+  <li>-30% урон из Незера</li>
+  <li>Летучие мыши Незера не атакуют</li>
+  <li>Меч наносит урон Фазовым Паукам</li>
+</ul>
+
+</div>
+
+<RelatedPages
+  prev={{ href: `${base}/progression/metal-ages/`, label: { hu: 'Fémkorszakok', en: 'Metal Ages', ru: 'Металлические эпохи' } }}
+  next={{ href: `${base}/progression/late-game/`, label: { hu: 'Késői Játék', en: 'Late Game', ru: 'Поздняя игра' } }}
+/>
+
+    </main>
+  </div>
+</BaseLayout>

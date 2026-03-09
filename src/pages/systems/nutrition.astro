@@ -1,0 +1,296 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import TopNav from '../../components/TopNav.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import CraftingGrid from '../../components/CraftingGrid.astro';
+import PageSummary from '../../components/PageSummary.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import { getSidebarGroups } from '../../data/sidebar-config.ts';
+import '../../styles/global.css';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const sidebarGroups = getSidebarGroups('systems/nutrition');
+---
+<BaseLayout title="Táplálkozás & Víz — MITE:BE Wiki">
+  <Header />
+  <TopNav currentPage="systems" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<PageSummary keyPoints={{
+  hu: [
+    '4 tápanyag (Jóllakottság, Táplálék, Fehérje, Fitó) — arányosan fogyassz',
+    'Fejfájás = egyoldalú étrend — salátával orvosolható (Tál + 3× Pitypang)',
+    'Marha Pörkölt (16/16/16/16) a legjobb étel — Szakács képesség kell',
+  ],
+  en: [
+    '4 nutrients (Satiation, Nutrition, Protein, Phyto) — must stay balanced',
+    'Headache = unbalanced diet — fix with salad (Bowl + 3x Dandelion)',
+    'Beef Stew (16/16/16/16) is the best food — requires Cook skill',
+  ],
+  ru: [
+    '4 вещества (Насыщение, Питание, Белок, Фито) — держи баланс',
+    'Головная боль = дисбаланс — лечи салатом (Миска + 3× Одуванчик)',
+    'Говяжье рагу (16/16/16/16) — лучшая еда, нужна Кулинария',
+  ],
+}} />
+
+<div data-lang="hu">
+<h2 id="food">Élelmiszer &amp; Táplálkozás</h2>
+<p>A MITE:BE-ben az étrend sokszínűsége kritikus! Egyoldalú táplálkozás Alultápláltságot okoz. Nyomj <strong>P</strong>-t a táplálkozási mutató megnyitásához!</p>
+
+<div class="info-box">🤕 <strong>Fejfájás tünet?</strong> Ha a karaktered rendszeresen szenved fejfájástól (folyamatos sebzés), az szinte biztosan <strong>kiegyensúlyozatlan étrend</strong> jele. Egyél salátát: <strong>Tál + 3× Pitypang</strong> (vagy más zöldség). Nyomj P-t az étrend részleteiért!</div>
+
+<h3>Korai ételek</h3>
+<table>
+  <tr><th>Étel</th><th>Forrás</th><th>Megjegyzés</th></tr>
+  <tr><td>Búzamag</td><td>Magas fű</td><td>Azonnal ehető, kevés tápérték</td></tr>
+  <tr><td>Alma</td><td>Tölgyfa levelek</td><td>Jó gyümölcs</td></tr>
+  <tr><td>Tojás</td><td>Csirkék</td><td>Ehető nyersen</td></tr>
+  <tr><td>Sült hús</td><td>Tábortűz/kemence</td><td>Fehérje — fontos!</td></tr>
+  <tr><td>Kenyér</td><td>Liszt + Víz + Sütés</td><td>Alapvető szénhidrát</td></tr>
+  <tr><td>Saláta</td><td>Tál + Zöldség (pl. 3× Pitypang)</td><td>Növényi tápanyag — fejfájás ellen!</td></tr>
+</table>
+
+<h3>Tápértékek</h3>
+<p>A MITE:BE 4 tápanyagot követ. <strong>Telítettség</strong> (éhség csökkentés), <strong>Táplálkozás</strong> (tényleges tápérték), <strong>Fehérje</strong> és <strong>Növényi tápanyag</strong>. Az <strong>IR</strong> (Inzulinválasz) magas cukortartalmú ételeknél jelenik meg — az egyoldalúan cukros étrend rontja az energiaszintet!</p>
+<table class="compare-table">
+  <tr><th>Étel</th><th>Tel.</th><th>Tápl.</th><th>Fehérje</th><th>Fitotáp.</th><th>IR</th><th>Megjegyzés</th></tr>
+  <tr><td>Búzamag</td><td>1</td><td>0</td><td>—</td><td>—</td><td>—</td><td>Korai vészkijárat</td></tr>
+  <tr><td>Alma</td><td>2</td><td>1</td><td>—</td><td>1.0</td><td>✓</td><td>Tölgyfa levelekből</td></tr>
+  <tr><td>Kenyér</td><td>8</td><td>2</td><td>—</td><td>—</td><td>—</td><td>Alap szénhidrát</td></tr>
+  <tr><td>Tojás</td><td>1</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>Csirkétől, nyersen is ehető</td></tr>
+  <tr><td>Sajt 🧀</td><td>3</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>Főzőmester foglalkozás</td></tr>
+  <tr><td>Sárgarépa</td><td>1</td><td>2</td><td>—</td><td>2.0</td><td>—</td><td>Növényi tápanyag forrás</td></tr>
+  <tr><td>Sült burgonya</td><td>6</td><td>2</td><td>—</td><td>—</td><td>—</td><td>Közepes</td></tr>
+  <tr><td>Nyers sertéshús</td><td>4</td><td>4</td><td>4.0</td><td>—</td><td>—</td><td>Nyersen is megy</td></tr>
+  <tr><td>Sült sertéshús</td><td>8</td><td>8</td><td>8.0</td><td>—</td><td>—</td><td>Jó fehérjeforrás</td></tr>
+  <tr><td>Sült csirke</td><td>6</td><td>6</td><td>6.0</td><td>—</td><td>—</td><td>Közepesen jó</td></tr>
+  <tr><td>Sült steak 🥩</td><td>10</td><td>10</td><td>10.0</td><td>—</td><td>—</td><td>Kiváló fehérje</td></tr>
+  <tr><td>Sült hal (nagy)</td><td>10</td><td>10</td><td>10.0</td><td>—</td><td>—</td><td>Horgász foglalkozás előny</td></tr>
+  <tr><td>Sült elefánt hús 🐘</td><td>14</td><td>14</td><td>14.0</td><td>—</td><td>—</td><td>Ritka nagy zsákmány</td></tr>
+  <tr><td>Sült medve/cápa hús</td><td>12</td><td>12</td><td>12.0</td><td>—</td><td>—</td><td>Veszélyes zsákmány</td></tr>
+  <tr><td>Burgonya püré 🥔</td><td>12</td><td>8</td><td>8.0</td><td>—</td><td>—</td><td>Szakács foglalkozás</td></tr>
+  <tr><td>Tök pite 🎃</td><td>10</td><td>6</td><td>6.0</td><td>6.0</td><td>✓</td><td>Szakács foglalkozás</td></tr>
+  <tr><td>Gombakrémleves</td><td>3</td><td>5</td><td>5.0</td><td>—</td><td>—</td><td>Szakács foglalkozás</td></tr>
+  <tr><td>Zöldségkrémleves 🥦</td><td>7</td><td>7</td><td>7.0</td><td>7.0</td><td>—</td><td>Szakács foglalkozás</td></tr>
+  <tr><td>Csirkeleves 🍲</td><td>10</td><td>10</td><td>10.0</td><td>10.0</td><td>—</td><td>Szakács — komplex</td></tr>
+  <tr style="background:rgba(255,100,0,0.08)"><td><strong>Marhapörkölt 🥩🔥</strong></td><td><strong>16</strong></td><td><strong>16</strong></td><td><strong>16.0</strong></td><td><strong>16.0</strong></td><td>—</td><td><strong>Legjobb étel!</strong> Szakács</td></tr>
+</table>
+<div class="warning-box"><strong>Figyelem:</strong> Megégett hús, mérgezett burgonya és nyers csirkehús mérgezést okozhat! A <strong>Marhapörkölt</strong> minden tápanyagból a legtöbbet adja — ha van Szakács képességed, ez az end-game étel.</div>
+
+<h3>Fejlett ételek</h3>
+<p>Marhapörkölt, csirkeleves, zöldségkrémleves, tökléves, fagylalt, sajt, kása, gabonapehely, csokoládé... a Szakács képesség nyitja meg a komplex recepteket.</p>
+
+<h3>Gazdálkodás</h3>
+<div class="recipe">Kacsacsőrű kapa (bármely fém) → Föld szántása → Búza/Hagyma/Burgonya/Sárgarépa ültetés</div>
+<div class="craft-section">
+  <CraftingGrid recipeOutput="hard_stone_hoe" label={{hu: "Keménykő Kapa", en: "Hardstone Hoe"}}/>
+</div>
+<p>A növényeknek <strong>trágyára</strong> van szükségük a növekedéshez! Csontliszt a haldokló veteményesek megmentésére használható.</p>
+
+<h3>Féregkomposzt — Komposztálási Értékek</h3>
+<p>A komposztládában férgek segítségével szerves anyagokból trágya készíthető. Minél magasabb a komposztálási értéke, annál hatékonyabb az adott tárgy.</p>
+<table class="compare-table">
+  <tr><th>Érték</th><th>Tárgyak</th></tr>
+  <tr style="background:rgba(100,200,100,0.12)"><td><strong>4.5 🏆</strong></td><td>Szénabalzsam</td></tr>
+  <tr style="background:rgba(100,200,100,0.08)"><td><strong>3.2</strong></td><td>Marhapörkölt (+Tál)</td></tr>
+  <tr><td><strong>2.4</strong></td><td>Torta</td></tr>
+  <tr><td><strong>2.0</strong></td><td>Tök (+Mag), Dinnye (+Mag), Csirkeleveség (+Tál), Burgonya Püré (+Tál), Jack O'Lantern</td></tr>
+  <tr><td><strong>1.6</strong></td><td>Tök Pite</td></tr>
+  <tr><td><strong>1.2</strong></td><td>Hal Golyó, Zöldségleveség (+Tál)</td></tr>
+  <tr><td><strong>1.0</strong></td><td>Falevél (mindegyik), Kenyér, Szőlőinda, Nyers/Sült Steak, Nagy Hal</td></tr>
+  <tr><td><strong>0.8</strong></td><td>Nyers/Sült Sertéshús, Sült Burgonya, Liszt, Tészta</td></tr>
+  <tr><td><strong>0.6</strong></td><td>Nyers/Sült Csirke, Nyers/Sült Hal, Sajt, Gomba (kis), Fagylalt (+Tál), Kása (+Tál)</td></tr>
+  <tr style="color:#aaa"><td><strong>0.3</strong></td><td>Virágok, Alma, Narancs, Banán, Rothadó Hús, Cukornád, Csípős Szalagok</td></tr>
+  <tr style="color:#aaa"><td><strong>0.1</strong></td><td>Papír, Cukor, Pókszem, Sült Wurm</td></tr>
+</table>
+<div class="info-box">🌱 <strong>Hatékony komposztálás:</strong> A <strong>Szénabalzsam</strong> (4.5) a legjobb komposztálható anyag — 9 búzából készíthető. A levesek visszaadják a Tálat, tehát nem pazarlók!</div>
+
+<h2 id="water">Víz &amp; Hidratáció</h2>
+<p>A szomjúság rendszer miatt tiszta vízre van szükséged!</p>
+
+<h3>Progresszió</h3>
+<div class="flow">
+  <span class="flow-item">Víz Táska (bőr)</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Víz Szűrő (fa)</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Szűrő Papír</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Tiszta Víz</span>
+</div>
+<div class="craft-section">
+  <CraftingGrid recipeOutput="big_water_bag" label={{hu: "Nagy Vizestasak", en: "Big Water Bag"}}/>
+  <CraftingGrid recipeOutput="wooden_water_filter" label={{hu: "Fa Vízszűrő", en: "Wooden Water Filter"}}/>
+</div>
+<p>Fém víztáskák egyre nagyobb kapacitással rendelkeznek:</p>
+<table class="compare-table">
+  <tr><th>Víztömlő</th><th>Kapacitás</th></tr>
+  <tr><td>Bőr Víztömlő</td><td>3 L</td></tr>
+  <tr><td>Nagy Víztömlő</td><td>8 L</td></tr>
+  <tr><td><span class="tier t-copper">Réz / Ezüst</span></td><td>5 L</td></tr>
+  <tr><td><span class="tier t-iron">Vas</span></td><td>7 L</td></tr>
+  <tr><td><span class="tier t-iron">Arany</span></td><td>8 L</td></tr>
+  <tr><td><span class="tier t-hard">Keménykő</span></td><td>10 L</td></tr>
+  <tr><td><span class="tier t-ancient">Ősi Fém</span></td><td>12 L</td></tr>
+  <tr><td><span class="tier t-mithril">Mithril</span></td><td>14 L</td></tr>
+  <tr><td><span class="tier t-adamantium">Adamantium</span></td><td>16 L</td></tr>
+  <tr><td>Elemi víztömlő</td><td>16 L</td></tr>
+</table>
+<p><strong>Elemi víztömlő</strong> (higannyal): A legfejlettebb, Knowledge Bookvel nyitható meg.</p>
+
+<h3>Szomjúság-fogyasztási Sebesség</h3>
+<p>A szomjúság fogyása az aktuális <strong>maximum HP-tól</strong> függ. Minél több életerőd van, annál gyorsabban szomjazol!</p>
+<table class="compare-table">
+  <tr><th>Max HP</th><th>Fogyás (1 egység)</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>3 szív</td><td>4 perc</td></tr>
+  <tr><td>4 szív</td><td>3 perc</td></tr>
+  <tr><td>5–6 szív</td><td>2 perc</td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td>7–8 szív</td><td>90 másodperc</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td>9–10 szív</td><td>60 másodperc</td></tr>
+</table>
+<div class="info-box">💧 <strong>Fontos:</strong> Futás során a szomjúság <strong>2×</strong> gyorsabban fogy! Alvás után annyi szomjúság fogy, amennyit az éhség is fogyott. 1 vízcsep 2 szomjúság egységet tölt vissza. 0 szomjúságnál: Gyengeség státusz, majd HP sebzés.</div>
+</div>
+
+<div data-lang="en">
+<h2 id="food-en">Food &amp; Nutrition</h2>
+<p>Diet variety is critical in MITE:BE! One-sided eating causes Malnourishment. Press <strong>P</strong> to open the nutrition screen!</p>
+
+<div class="info-box">🤕 <strong>Getting headache damage?</strong> If your character is taking periodic damage from a headache debuff, it's almost certainly an <strong>unbalanced diet</strong>. Eat a salad: <strong>Bowl + 3× Dandelion</strong> (or any other vegetable). Press P to check your nutrition breakdown!</div>
+
+<h3>Early Game Foods</h3>
+<table>
+  <tr><th>Food</th><th>Source</th><th>Notes</th></tr>
+  <tr><td>Wheat Seeds</td><td>Tall grass</td><td>Immediately edible, low nutrition</td></tr>
+  <tr><td>Apple</td><td>Oak tree leaves</td><td>Good fruit source</td></tr>
+  <tr><td>Egg</td><td>Chickens</td><td>Edible raw</td></tr>
+  <tr><td>Cooked meat</td><td>Campfire/Furnace</td><td>Protein — important!</td></tr>
+  <tr><td>Bread</td><td>Flour + Water + Baking</td><td>Basic carbohydrate</td></tr>
+  <tr><td>Salad</td><td>Bowl + Vegetables (e.g. 3× Dandelion)</td><td>Phytonutrients — cures headache!</td></tr>
+</table>
+
+<h3>Food Nutrition Values</h3>
+<p>MITE:BE tracks 4 nutrients: <strong>Satiation</strong> (hunger fill), <strong>Nutrition</strong> (actual nourishment), <strong>Protein</strong>, and <strong>Phytonutrients</strong>. <strong>IR</strong> (Insulin Response) appears on sugary foods — an overly sweet diet degrades energy levels!</p>
+<table class="compare-table">
+  <tr><th>Food</th><th>Sat.</th><th>Nutr.</th><th>Protein</th><th>Phyto.</th><th>IR</th><th>Notes</th></tr>
+  <tr><td>Wheat Seeds</td><td>1</td><td>0</td><td>—</td><td>—</td><td>—</td><td>Early emergency food</td></tr>
+  <tr><td>Apple</td><td>2</td><td>1</td><td>—</td><td>1.0</td><td>✓</td><td>From oak leaves</td></tr>
+  <tr><td>Bread</td><td>8</td><td>2</td><td>—</td><td>—</td><td>—</td><td>Basic carbohydrate</td></tr>
+  <tr><td>Egg</td><td>1</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>From chickens, edible raw</td></tr>
+  <tr><td>Cheese 🧀</td><td>3</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>Brewer skill</td></tr>
+  <tr><td>Carrot</td><td>1</td><td>2</td><td>—</td><td>2.0</td><td>—</td><td>Phytonutrient source</td></tr>
+  <tr><td>Baked Potato</td><td>6</td><td>2</td><td>—</td><td>—</td><td>—</td><td>Moderate</td></tr>
+  <tr><td>Raw Pork</td><td>4</td><td>4</td><td>4.0</td><td>—</td><td>—</td><td>Edible raw</td></tr>
+  <tr><td>Cooked Pork</td><td>8</td><td>8</td><td>8.0</td><td>—</td><td>—</td><td>Good protein source</td></tr>
+  <tr><td>Cooked Chicken</td><td>6</td><td>6</td><td>6.0</td><td>—</td><td>—</td><td>Moderate</td></tr>
+  <tr><td>Cooked Steak 🥩</td><td>10</td><td>10</td><td>10.0</td><td>—</td><td>—</td><td>Excellent protein</td></tr>
+  <tr><td>Cooked Fish (large)</td><td>10</td><td>10</td><td>10.0</td><td>—</td><td>—</td><td>Fisher skill bonus</td></tr>
+  <tr><td>Cooked Elephant Meat 🐘</td><td>14</td><td>14</td><td>14.0</td><td>—</td><td>—</td><td>Rare big game</td></tr>
+  <tr><td>Mashed Potatoes 🥔</td><td>12</td><td>8</td><td>8.0</td><td>—</td><td>—</td><td>Cook skill</td></tr>
+  <tr><td>Pumpkin Pie 🎃</td><td>10</td><td>6</td><td>6.0</td><td>6.0</td><td>✓</td><td>Cook skill</td></tr>
+  <tr><td>Chicken Stew 🍲</td><td>10</td><td>10</td><td>10.0</td><td>10.0</td><td>—</td><td>Cook — complex</td></tr>
+  <tr style="background:rgba(255,100,0,0.08)"><td><strong>Beef Stew 🥩🔥</strong></td><td><strong>16</strong></td><td><strong>16</strong></td><td><strong>16.0</strong></td><td><strong>16.0</strong></td><td>—</td><td><strong>Best food!</strong> Cook Required</td></tr>
+</table>
+<div class="warning-box"><strong>Warning:</strong> Burnt meat, poisoned potatoes, and raw chicken can cause poisoning! <strong>Beef Stew</strong> provides the maximum of all nutrients — if you have the Cook skill, this is your endgame food.</div>
+
+<h3>Worm Composting — Composting Values</h3>
+<table class="compare-table">
+  <tr><th>Value</th><th>Items</th></tr>
+  <tr style="background:rgba(100,200,100,0.12)"><td><strong>4.5 🏆</strong></td><td>Hay Bale</td></tr>
+  <tr style="background:rgba(100,200,100,0.08)"><td><strong>3.2</strong></td><td>Beef Stew (+ Bowl returned)</td></tr>
+  <tr><td><strong>2.4</strong></td><td>Cake</td></tr>
+  <tr><td><strong>2.0</strong></td><td>Pumpkin (+ Seeds), Melon (+ Seeds), Chicken Soup (+ Bowl), Mashed Potato (+ Bowl)</td></tr>
+  <tr><td><strong>1.6</strong></td><td>Pumpkin Pie</td></tr>
+  <tr><td><strong>1.2</strong></td><td>Fish Balls, Vegetable Stew (+ Bowl)</td></tr>
+  <tr><td><strong>1.0</strong></td><td>Leaves (all types), Bread, Vines, Raw/Cooked Steak, Large Fish</td></tr>
+  <tr><td><strong>0.8</strong></td><td>Raw/Cooked Pork, Baked Potato, Flour, Dough/Pasta</td></tr>
+  <tr><td><strong>0.6</strong></td><td>Raw/Cooked Chicken, Raw/Cooked Fish, Cheese, Small Mushroom, Eggs</td></tr>
+  <tr style="color:#aaa"><td><strong>0.3</strong></td><td>Flowers, Apple, Orange, Banana, Rotten Flesh, Sugar Cane, Seeds</td></tr>
+  <tr style="color:#aaa"><td><strong>0.1</strong></td><td>Paper, Sugar, Spider Eye, Roasted Wurm</td></tr>
+</table>
+
+<h2 id="water-en">Water &amp; Hydration</h2>
+<p>The thirst system means you need clean water!</p>
+
+<h3>Progression</h3>
+<div class="flow">
+  <span class="flow-item">Water Bag (leather)</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Water Filter (wood)</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Filter Paper</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Clean Water</span>
+</div>
+<p>Metal water bags have increasing capacity:</p>
+<table class="compare-table">
+  <tr><th>Water Bag</th><th>Capacity</th></tr>
+  <tr><td>Leather Water Bag</td><td>3 L</td></tr>
+  <tr><td>Large Water Bag</td><td>8 L</td></tr>
+  <tr><td><span class="tier t-copper">Copper / Silver</span></td><td>5 L</td></tr>
+  <tr><td><span class="tier t-iron">Iron</span></td><td>7 L</td></tr>
+  <tr><td><span class="tier t-iron">Gold</span></td><td>8 L</td></tr>
+  <tr><td><span class="tier t-hard">Hardstone</span></td><td>10 L</td></tr>
+  <tr><td><span class="tier t-ancient">Ancient Metal</span></td><td>12 L</td></tr>
+  <tr><td><span class="tier t-mithril">Mithril</span></td><td>14 L</td></tr>
+  <tr><td><span class="tier t-adamantium">Adamantium</span></td><td>16 L</td></tr>
+  <tr><td>Elemental Water Bag</td><td>16 L</td></tr>
+</table>
+
+<h3>Thirst Consumption Rate</h3>
+<p>Thirst drains based on your current <strong>maximum HP</strong>. The more hearts you have, the faster you get thirsty!</p>
+<table class="compare-table">
+  <tr><th>Max HP</th><th>1 unit drain rate</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>3 hearts</td><td>4 minutes</td></tr>
+  <tr><td>4 hearts</td><td>3 minutes</td></tr>
+  <tr><td>5–6 hearts</td><td>2 minutes</td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td>7–8 hearts</td><td>90 seconds</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td>9–10 hearts</td><td>60 seconds</td></tr>
+</table>
+<div class="info-box">💧 <strong>Important:</strong> Thirst drains <strong>2×</strong> faster while sprinting! After sleeping, thirst drains by the same amount as hunger. 1 water drop restores 2 thirst units. At 0 thirst: Weakness status, then HP damage.</div>
+</div>
+
+<div data-lang="ru">
+<h2 id="food-ru">🍖 Еда и питание</h2>
+<p>MITE:BE добавляет развитую систему питания. Разные блюда по-разному утоляют голод и дают собственные эффекты. <strong>Сырым мясом лучше не рисковать</strong> — готовая еда заметно выгоднее и безопаснее.</p>
+
+<div class="info-box">🤕 <strong>Получаете урон от головной боли?</strong> Это почти наверняка признак <strong>несбалансированной диеты</strong>. Съешьте салат: <strong>Чаша + 3× Одуванчик</strong>. Нажмите P, чтобы проверить питание!</div>
+
+<table class="compare-table">
+  <tr><th>Еда</th><th>Нас.</th><th>Питат.</th><th>Белок</th><th>Фито.</th><th>Примечание</th></tr>
+  <tr><td>Семена пшеницы</td><td>1</td><td>0</td><td>—</td><td>—</td><td>Аварийная еда</td></tr>
+  <tr><td>Яблоко</td><td>2</td><td>1</td><td>—</td><td>1.0</td><td>Из листьев дуба</td></tr>
+  <tr><td>Хлеб</td><td>8</td><td>2</td><td>—</td><td>—</td><td>Базовый углевод</td></tr>
+  <tr><td>Яйцо</td><td>1</td><td>3</td><td>3.0</td><td>—</td><td>Можно есть сырым</td></tr>
+  <tr><td>Жареная свинина</td><td>8</td><td>8</td><td>8.0</td><td>—</td><td>Хороший белок</td></tr>
+  <tr><td>Жареный стейк 🥩</td><td>10</td><td>10</td><td>10.0</td><td>—</td><td>Отличный белок</td></tr>
+  <tr style="background:rgba(255,100,0,0.08)"><td><strong>Тушёнка 🥩🔥</strong></td><td><strong>16</strong></td><td><strong>16</strong></td><td><strong>16.0</strong></td><td><strong>16.0</strong></td><td><strong>Лучшая еда!</strong></td></tr>
+</table>
+
+<h2 id="water-ru">💧 Вода и гидратация</h2>
+<p>Вода — критически важный ресурс. Для переноски нужна фляга или сумка для воды. <strong>Пить воду прямо из рек и озёр нельзя</strong> без очистки: используйте фильтрованную или кипячёную воду.</p>
+
+<table class="compare-table">
+  <tr><th>Сумка для воды</th><th>Вместимость</th></tr>
+  <tr><td>Кожаная сумка</td><td>3 Л</td></tr>
+  <tr><td>Большая сумка</td><td>8 Л</td></tr>
+  <tr><td><span class="tier t-copper">Медная / Серебряная</span></td><td>5 Л</td></tr>
+  <tr><td><span class="tier t-iron">Железная</span></td><td>7 Л</td></tr>
+  <tr><td><span class="tier t-hard">Твердокаменная</span></td><td>10 Л</td></tr>
+  <tr><td><span class="tier t-mithril">Мифриловая</span></td><td>14 Л</td></tr>
+  <tr><td><span class="tier t-adamantium">Адамантиевая</span></td><td>16 Л</td></tr>
+</table>
+<div class="info-box">💧 <strong>Важно:</strong> Жажда убывает <strong>в 2 раза быстрее</strong> при беге! При 0 жажды: эффект Слабости, затем урон по HP.</div>
+</div>
+
+<RelatedPages
+  prev={{ href: `${base}/systems/`, label: { hu: 'Rendszerek', en: 'Systems', ru: 'Системы' } }}
+  next={{ href: `${base}/systems/combat/`, label: { hu: 'Harc', en: 'Combat', ru: 'Бой' } }}
+/>
+
+  </main>
+    </div>
+</BaseLayout>

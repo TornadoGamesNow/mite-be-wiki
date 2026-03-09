@@ -1,0 +1,28 @@
+---
+interface Props {
+  href: string;
+  icon: string;
+  title: { hu: string; en: string; ru: string };
+  description: { hu: string; en: string; ru: string };
+  accentColor?: string;
+}
+
+const { href, icon, title, description, accentColor = 'var(--gold)' } = Astro.props;
+---
+
+<a href={href} class="hub-card" style={`--card-accent: ${accentColor}`}>
+  <div class="hub-card-icon">{icon}</div>
+  <div class="hub-card-body">
+    <div class="hub-card-title">
+      <span data-lang="hu">{title.hu}</span>
+      <span data-lang="en">{title.en}</span>
+      <span data-lang="ru">{title.ru}</span>
+    </div>
+    <div class="hub-card-desc">
+      <span data-lang="hu">{description.hu}</span>
+      <span data-lang="en">{description.en}</span>
+      <span data-lang="ru">{description.ru}</span>
+    </div>
+  </div>
+  <div class="hub-card-arrow">→</div>
+</a>

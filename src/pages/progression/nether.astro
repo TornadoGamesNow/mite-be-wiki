@@ -1,0 +1,326 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import TopNav from '../../components/TopNav.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import CraftingGrid from '../../components/CraftingGrid.astro';
+import PageSummary from '../../components/PageSummary.astro';
+import ProgressionBreadcrumb from '../../components/ProgressionBreadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import '../../styles/global.css';
+
+import { getSidebarGroups } from '../../data/sidebar-config.ts';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const sidebarGroups = getSidebarGroups('progression/nether');
+---
+<BaseLayout title="Alvilág (Nether) | MITE:BE Wiki">
+  <Header />
+  <TopNav currentPage="progression" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<ProgressionBreadcrumb current="nether" />
+
+<PageSummary keyPoints={{
+  hu: [
+    'Köpeny (Mantle) a bedrock rétegen — Pokoli Portal a magma szintjén',
+    'Tűzállóság ital + arany tárgy kötelező — Tűzelementalok és Zombi Disznók',
+    'Magblokk (Core Block) megsemmisítése — End Portal nyílik',
+  ],
+  en: [
+    'Find Mantle on bedrock layer — build Hell Portal at magma level',
+    'Fire Resistance potion + gold item mandatory — Fire Elementals attack',
+    'Destroy the Core Block — End Portal opens (only path to The End)',
+  ],
+  ru: [
+    'Мантия на уровне бедрока — Адский портал на уровне магмы',
+    'Зелье огнестойкости + золотой предмет обязательны — Огненные Элементали',
+    'Уничтожь Ядровый Блок — открывается портал в Край',
+  ],
+}} />
+
+<div data-lang="hu">
+
+<!-- ===== NETHER ===== -->
+
+<h2 id="nether">Alvilág (Nether)</h2>
+<p>A Alvilág (Nether) eléréséhez meg kell találnod a <strong>Köpenyt</strong> a földalatti világ alapkő-rétegében, és portált kell elhelyezned.</p>
+<div class="info">Nehéz módban 3 alapkő-réteg van!</div>
+
+<div class="warning-box">🔥 <strong>A Alvilág (Nether) a játék legnehezebb dimenziója!</strong> Teljes <strong>Mithril felszerelés</strong> erősen ajánlott. Tűzálló bájital kötelező a Tűz Elementális és a láva veszélyek miatt. Ne menj be felkészületlenül!</div>
+
+<h3 id="nether-mobs">Alvilág (Nether) Szörnyek</h3>
+<table class="compare-table">
+  <tr><th>Szörny</th><th>HP</th><th>Sebzés</th><th>XP</th><th>Speciális</th></tr>
+  <tr><td>Démon Pók (Demon Spider)</td><td>12</td><td>4</td><td>15</td><td>Tűzálló, mérgező</td></tr>
+  <tr><td>Pokol Kutya (Hell Hound)</td><td>8</td><td>3</td><td>6</td><td>Tűzálló, gyors, falkában támad</td></tr>
+  <tr><td>Alvilág (Nether) Creeper</td><td>20</td><td>2–40</td><td>15</td><td>Tűzálló, nagyobb robbanás</td></tr>
+  <tr><td>Vörös Lángoszlop (Red Blaze)</td><td>40</td><td>6</td><td>20</td><td><strong>6 tűzgolyó egyszerre!</strong> Lángoszlop Pálcát ejt</td></tr>
+  <tr><td>Tűz Elementális (Fire Elemental)</td><td>20</td><td>5</td><td>15</td><td><strong>3% azonnali ölés</strong> égő játékoson! Víz/hógolyó/Sértés bájital hat rá</td></tr>
+  <tr><td>Greater Ghast</td><td>100</td><td>9 (tűzgolyó)</td><td>20</td><td>Óriási, repülő, tűzokádó — golyóit visszaütheted!</td></tr>
+  <tr><td>Zombi Disznóember</td><td>20</td><td>5</td><td>15</td><td>Semleges ha aranyat viselsz, különben azonnal agresszív</td></tr>
+  <tr><td>Vámpír/Óriás Vámpír Denevér</td><td>3/6</td><td>1/2</td><td>5/10</td><td>Életlopás</td></tr>
+</table>
+<div class="info-box">🔥 <strong>Tűz Elementális:</strong> A leghírhedtebb Alvilág (Nether) szörny. Ha <strong>éppen égsz</strong> amikor megtámad, van <strong>3% esélye azonnal megölni</strong> téged! Varázstárgyak, víz, hógolyók és Sértés bájital hat rá — tűz és ezüst fegyver NEM sebzi. Tűzálló bájital kötelező ellene!</div>
+
+<h3 id="core-blocks">Mag Blokkok (Core Blocks)</h3>
+<p>A Alvilág (Nether) mélyén találhatók a <strong>Mag Blokkok</strong> — láva textúrájú blokkok, amelyek fényt adnak (fényszint 15).</p>
+<ul>
+  <li><strong>8 blokkon belül</strong> láva sebzést okoznak a játékosnak (v0.8.0+)</li>
+  <li>Az egyetlen módja az elpusztításuknak a <strong>Mag Pusztító (Core Destroyer)</strong></li>
+  <li>Mag Blokk elpusztításakor <strong>End portál nyílik</strong> — ez az egyetlen út az End dimenzióba!</li>
+</ul>
+<div class="warning-box">⚠️ <strong>End Dimenzió:</strong> A Mag Blokk elpusztítása (Mag Pusztító segítségével) megnyitja az End portált. Ez az Ender-sárkány legyőzéséhez szükséges egyetlen belépési pont!</div>
+
+<h3>Alvilág (Nether) Erőforrások</h3>
+<ul>
+  <li><strong>Alvilágkő (Netherrack):</strong> A Alvilág (Nether) alapkőzete — Alvilágkőkemence építéséhez kell (hőfok 4)</li>
+  <li><strong>Lángoszlop Pálca (Blaze Rod):</strong> Vörös Lángoszlopokból ejthető — <strong>hőfok 4 tüzelőanyag</strong>, Adamantium olvasztáshoz nélkülözhetetlen!</li>
+  <li><strong>Glowstone:</strong> Fényforrás, bájital készítéshez is szükséges</li>
+  <li><strong>Alvilág (Nether) Kvarc:</strong> Bájital és Bűvölés receptekhez</li>
+  <li><strong>Hervadt Rózsa (Wither Rose):</strong> Alvilág (Nether)-erőd jutalomládáiból — Wither boss idézéséhez kell</li>
+</ul>
+
+<h3>Alvilág (Nether)-erőd</h3>
+<p>Fedezd fel a Alvilág (Nether)-erődöt! Az erőd jutalomládájából <strong>Hervadt Rózsa (Wither Rose)</strong> kerülhet elő.</p>
+
+<h3>Stratégiai Tippek</h3>
+<div class="tip-card">💡 <strong>Alvilág (Nether) túlélési útmutató:</strong>
+<ul style="margin:4px 0 0 0">
+  <li><strong>Tűzálló bájital</strong> kötelező — Tűz Elementális nélküle szinte lehetetlen</li>
+  <li><strong>Arany valami</strong> viselése — Zombi Disznóemberek nélküle azonnal agresszívak</li>
+  <li>Blaze Gazdálkodás: készülj Lángoszlop vadászatra (Blaze-rúd = Adamantium olvasztás kulcsa)</li>
+  <li>Lávavödör beszerzés: a Alvilág (Nether)ben rengeteg láva van, tölts vödröket a kemencéidhez</li>
+  <li>Tartalék páncél és fegyver ajánlott — a Alvilág (Nether) halálos!</li>
+</ul></div>
+
+<h3>Alvilágkőkemence</h3>
+<div class="recipe">Alvilágkő blokkok + Alvilágkőkemence Mag → Alvilágkő többblokkos kemence</div>
+<p>Ez kell az <strong>adamantium olvasztásához</strong>!</p>
+
+<h3 id="portals">Portál Típusok</h3>
+<p>A MITE:BE-ben 5 féle portál létezik, amelyek különböző dimenziók között teleportálnak. A portál alapja Obszidián keretből és Tűzgyújtóből áll.</p>
+<table class="compare-table">
+  <tr><th>#</th><th>Portál</th><th>Hol építsd</th><th>Célpont</th><th>Szín</th></tr>
+  <tr><td>1</td><td><strong>Normál Portál</strong></td><td>Fővilág (nincs alapkő alatta)</td><td>Világ megjelenési pontja</td><td style="color:#88aaff">Kék</td></tr>
+  <tr><td>2</td><td><strong>Alvilág (Nether) Portál</strong></td><td>Fővilág alapkő-rétege</td><td>Föld alatti világ</td><td style="color:#b388ff">Lila</td></tr>
+  <tr><td>3</td><td><strong>Visszatérő Portál</strong></td><td>Bárhol a föld alatti világban</td><td>Fővilág</td><td style="color:#4ecca3">Cián</td></tr>
+  <tr><td>4</td><td><strong>Pokol Portál</strong></td><td>Föld alatti világ magma-rétege</td><td>Alvilág (Nether) dimenzió</td><td style="color:#ff5555">Piros</td></tr>
+  <tr><td>5</td><td><strong>Pokol Visszatérő Portál</strong></td><td>Bárhol a Alvilág (Nether)ben</td><td>Föld alatti világ</td><td style="color:#b388ff">Lila</td></tr>
+</table>
+<div class="info-box">🔮 <strong>v0.9.0 különlegesség:</strong> Fővilágban, az alapkőrétegen normál Obszidián portál gyújtásával → 10 másodperc Hányinger → 5 másodperc múlva az összes játékost a Pillager-erőd romjaira teleportálja!</div>
+
+<h3 id="biome-portals">Biom Portálok (v0.8.0+)</h3>
+<p>8 különböző Biom portál érhető el <strong>Átalakítókövek</strong> segítségével. Minden Átalakítókövet egy megfelelő anyag + Obszidián keverékéből craftolsz egy normál munkaasztalon, majd az Obszidián keret helyett ezt a követ használod.</p>
+<div class="warning-box">⚠️ <strong>v0.9.0 változás:</strong> A Biom portálok <strong>már nem struktúrák közelébe</strong> teleportálnak — csak az adott Biom általános terépre visznek véletlenszerű helyre. Minden belépés más-más helyhez vezet. A visszatéréshez bármely szabályos Obszidián keret (NEM alapkőn) → megjelenési ponthoz visz vissza.</div>
+<table class="compare-table">
+  <tr><th>Portál</th><th>Átalakítókő alapanyag</th><th>Barkácsolás</th><th>Cél Biom</th></tr>
+  <tr><td><strong>Sivatag Portál</strong></td><td>Homok</td><td>Homok + Obszidián</td><td>Sivatag</td></tr>
+  <tr><td><strong>Mocsár Portál</strong></td><td>Mohás Kőhalom</td><td>Mohás Kőhalom + Obszidián</td><td>Mocsár</td></tr>
+  <tr><td><strong>Síkság Portál</strong></td><td>Föld</td><td>Föld + Obszidián</td><td>Síkság</td></tr>
+  <tr><td><strong>Magasföld Portál</strong></td><td>Kő</td><td>Kő + Obszidián</td><td>Magasföld (Highland)</td></tr>
+  <tr><td><strong>Erdő Portál</strong></td><td>Rönk</td><td>Rönk + Obszidián</td><td>Erdő</td></tr>
+  <tr><td><strong>Óceán Portál</strong></td><td>Agyag</td><td>Agyag + Obszidián</td><td>Óceán</td></tr>
+  <tr><td><strong>Tundra Portál</strong></td><td>Fehér Gyapjú</td><td>Fehér Gyapjú + Obszidián</td><td>Havas Biom</td></tr>
+  <tr><td><strong>Dzsungel Portál</strong></td><td>Falevél</td><td>Falevél + Obszidián</td><td>Dzsungel</td></tr>
+</table>
+
+<!-- ===== ADAMANTIUM ===== -->
+
+<h2 id="adamantium">Adamantium — A Pokol Mélyéről</h2>
+<p>A pokol mélyéről, gonosz lényeggel és borzalmas erővel átitatva. Adamantium-ércet <strong>mithril csákánnyal/háborús kalapáccsal</strong> bányászhatsz.</p>
+<div class="warning-box">🔥 <strong>Olvasztás:</strong> Adamantiumérc olvasztásához kizárólag <strong>Blaze-rúd</strong> (heat level 4) és <strong>AlvilágKőkemence</strong> szükséges — az olvadáspontja (6210°C) meghaladja az Obszidián Kemence maximumát (5000°C)! Bányász foglalkozás is szükséges.</div>
+
+<p>Adamantium nyilak rendkívül hasznosak — ezekkel kell elpusztítanod az Ender-kristályokat!</p>
+
+<div class="tip">Az Adamantiumcsákány képes az Alapkőzet-zúzó kiásására is!</div>
+
+<div class="craft-section">
+  <CraftingGrid recipeOutput="adamantium_short_sword" label={{hu: "Adamantium Rövidkard", en: "Adamantium Short Sword"}}/>
+  <CraftingGrid recipeOutput="adamantium_hand_axe" label={{hu: "Adamantium Kézbalta", en: "Adamantium Hand Axe"}}/>
+  <CraftingGrid recipeOutput="adamantium_war_hammer" label={{hu: "Adamantium harci kalapács", en: "Adamantium War Hammer"}}/>
+</div>
+
+</div>
+
+<div data-lang="en">
+
+<!-- ===== NETHER ===== -->
+
+<h2 id="nether">The Nether</h2>
+<p>To reach the Nether, find the <strong>Mantle</strong> in the Underground's bedrock layer and place a portal.</p>
+<div class="info">On Hard Difficulty, there are 3 bedrock layers!</div>
+
+<div class="warning-box">🔥 <strong>The Nether is the hardest Dimension in the game!</strong> Full <strong>Mithril gear</strong> strongly recommended. Fire Resistance potion is mandatory against Fire Elementals and lava hazards. Do not enter unprepared!</div>
+
+<h3 id="nether-mobs">Nether Mobs</h3>
+<table class="compare-table">
+  <tr><th>Mob</th><th>HP</th><th>Damage</th><th>XP</th><th>Special</th></tr>
+  <tr><td>Demon Spider</td><td>12</td><td>4</td><td>15</td><td>Fire resistant, poisonous</td></tr>
+  <tr><td>Hell Hound</td><td>8</td><td>3</td><td>6</td><td>Fire resistant, fast, hunts in packs</td></tr>
+  <tr><td>Nether Creeper</td><td>20</td><td>2–40</td><td>15</td><td>Fire resistant, larger explosion</td></tr>
+  <tr><td>Red Blaze</td><td>40</td><td>6</td><td>20</td><td><strong>6 fireballs at once!</strong> Drops Blaze Rods</td></tr>
+  <tr><td>Fire Elemental</td><td>20</td><td>5</td><td>15</td><td><strong>3% instant kill</strong> on burning players! Water/snowballs/harming potions work</td></tr>
+  <tr><td>Greater Ghast</td><td>100</td><td>9 (fireball)</td><td>20</td><td>Huge, flying, fire-breathing — deflect its fireballs!</td></tr>
+  <tr><td>Zombie Pigman</td><td>20</td><td>5</td><td>15</td><td>Neutral if wearing gold, otherwise immediately hostile</td></tr>
+  <tr><td>Vampire/Giant Vampire Bat</td><td>3/6</td><td>1/2</td><td>5/10</td><td>Life steal</td></tr>
+</table>
+<div class="info-box">🔥 <strong>Fire Elemental:</strong> The most infamous Nether mob. If you are <strong>on fire</strong> when it attacks, there is a <strong>3% chance it instantly kills</strong> you! Enchanted items, water, snowballs, and Harming Potions work against it — fire and Silver weapons do NOT. Fire Resistance potion is mandatory!</div>
+
+<h3 id="core-blocks">Core Blocks</h3>
+<p>Deep in the Nether you'll find <strong>Core Blocks</strong> — lava-textured blocks that emit light (light level 15).</p>
+<ul>
+  <li>Within <strong>8 blocks</strong>, they deal lava damage to the player (v0.8.0+)</li>
+  <li>The only way to destroy them is with the <strong>Core Destroyer</strong></li>
+  <li>Destroying a Core Block <strong>opens an End Portal</strong> — this is the only way to the End Dimension!</li>
+</ul>
+<div class="warning-box">⚠️ <strong>End Dimension:</strong> Destroying a Core Block (with the Core Destroyer) opens the End Portal. This is the only entry point required to defeat the Ender Dragon!</div>
+
+<h3>Nether Resources</h3>
+<ul>
+  <li><strong>Netherrack:</strong> The Nether's base stone — Required for building the Netherrack Furnace (heat 4)</li>
+  <li><strong>Blaze Rod:</strong> Dropped by Red Blazes — <strong>heat level 4 fuel</strong>, essential for Adamantium smelting!</li>
+  <li><strong>Glowstone:</strong> Light source, also Required for potion brewing</li>
+  <li><strong>Nether Quartz:</strong> Used in potion and enchanting recipes</li>
+  <li><strong>Wither Rose:</strong> Found in Nether Fortress loot chests — Required to summon the Wither Boss</li>
+</ul>
+
+<h3>Nether Fortress</h3>
+<p>Explore the Nether Fortress! Reward chests may contain <strong>Wither Rose</strong>.</p>
+
+<h3>Strategy Tips</h3>
+<div class="tip-card">💡 <strong>Nether survival guide:</strong>
+<ul style="margin:4px 0 0 0">
+  <li><strong>Fire Resistance potion</strong> is mandatory — Fire Elemental is nearly impossible without it</li>
+  <li>Wear <strong>something Gold</strong> — Zombie Pigmen are immediately hostile without it</li>
+  <li>Blaze Farming: prepare for Blaze Rod hunting (Blaze Rods = key to Adamantium smelting)</li>
+  <li>Lava bucket collection: the Nether has abundant lava, fill buckets for your furnaces</li>
+  <li>Spare armor and weapons recommended — the Nether is lethal!</li>
+</ul></div>
+
+<h3>Netherrack Furnace</h3>
+<div class="recipe">Netherrack Blocks + Netherrack Furnace Core → Netherrack Multiblock Furnace</div>
+<p>Required for <strong>adamantium smelting</strong>!</p>
+
+<h3 id="portals">Portal Types</h3>
+<p>MITE:BE has 5 portal types that teleport between different Dimensions. Each portal requires an Obsidian frame and Flint and Steel.</p>
+<table class="compare-table">
+  <tr><th>#</th><th>Portal</th><th>Where to Build</th><th>Destination</th><th>Color</th></tr>
+  <tr><td>1</td><td><strong>Normal Portal</strong></td><td>Overworld (no bedrock beneath)</td><td>World spawn point</td><td style="color:#88aaff">Blue</td></tr>
+  <tr><td>2</td><td><strong>Nether Portal</strong></td><td>Overworld bedrock layer</td><td>Underground Dimension</td><td style="color:#b388ff">Purple</td></tr>
+  <tr><td>3</td><td><strong>Return Portal</strong></td><td>Anywhere in Underground</td><td>Overworld</td><td style="color:#4ecca3">Turquoise</td></tr>
+  <tr><td>4</td><td><strong>Hell Portal</strong></td><td>Underground magma layer</td><td>The Nether Dimension</td><td style="color:#ff5555">Red</td></tr>
+  <tr><td>5</td><td><strong>Hell Return Portal</strong></td><td>Anywhere in the Nether</td><td>Underground Dimension</td><td style="color:#b388ff">Purple</td></tr>
+</table>
+<div class="info-box">🔮 <strong>v0.9.0 special:</strong> Lighting a normal Obsidian portal on the bedrock layer in the Overworld → 10 seconds of Nausea → after 5 seconds, all players are teleported to the ruins of a Pillager Fortress!</div>
+
+<h3 id="biome-portals">Biome Portals (v0.8.0+)</h3>
+<p>8 Biome portals are available using <strong>Transmutation Stones</strong>. Each Transmutation Stone is crafted from its corresponding material + Obsidian on a regular Workbench, then used in place of regular Obsidian in the portal frame.</p>
+<div class="warning-box">⚠️ <strong>v0.9.0 change:</strong> Biome portals <strong>no longer teleport near Structures</strong> — they only bring you to general Biome terrain at a random location. Each entry takes you somewhere different. To return home: any standard Obsidian frame (NOT on bedrock) → returns to world spawn.</div>
+<table class="compare-table">
+  <tr><th>Portal</th><th>Transmutation Stone material</th><th>Crafting</th><th>Destination Biome</th></tr>
+  <tr><td><strong>Desert Portal</strong></td><td>Sand</td><td>Sand + Obsidian</td><td>Desert</td></tr>
+  <tr><td><strong>Swamp Portal</strong></td><td>Mossy Cobblestone</td><td>Mossy Cobblestone + Obsidian</td><td>Swamp</td></tr>
+  <tr><td><strong>Plains Portal</strong></td><td>Dirt</td><td>Dirt + Obsidian</td><td>Plains</td></tr>
+  <tr><td><strong>Highland Portal</strong></td><td>Stone</td><td>Stone + Obsidian</td><td>Highland/Plateau</td></tr>
+  <tr><td><strong>Forest Portal</strong></td><td>Log</td><td>Log + Obsidian</td><td>Forest</td></tr>
+  <tr><td><strong>Ocean Portal</strong></td><td>Clay</td><td>Clay + Obsidian</td><td>Ocean</td></tr>
+  <tr><td><strong>Tundra Portal</strong></td><td>White Wool</td><td>White Wool + Obsidian</td><td>Snowy Biome</td></tr>
+  <tr><td><strong>Jungle Portal</strong></td><td>Leaves</td><td>Leaves + Obsidian</td><td>Jungle</td></tr>
+</table>
+
+<!-- ===== ADAMANTIUM ===== -->
+
+<h2 id="adamantium">Adamantium — From the Depths of Hell</h2>
+<p>From the depths of the Nether, imbued with evil essence and terrible power. Mine adamantium ore with a <strong>mithril pickaxe/war hammer</strong>.</p>
+<div class="warning-box">🔥 <strong>Smelting:</strong> Adamantium ore requires a <strong>Blaze Rod</strong> (heat level 4) AND a <strong>Netherrack Furnace</strong> — its melting point (6210°C) exceeds the Obsidian Furnace max (5000°C)! Miner profession also required.</div>
+
+<p>Adamantium arrows are extremely useful — you'll need them to destroy End Crystals!</p>
+
+<div class="tip">The adamantium pickaxe can also dig out the Bedrock Pulverizer!</div>
+
+<div class="craft-section">
+  <CraftingGrid recipeOutput="adamantium_short_sword" label={{hu: "Adamantium Rövidkard", en: "Adamantium Short Sword"}}/>
+  <CraftingGrid recipeOutput="adamantium_hand_axe" label={{hu: "Adamantium Kézbalta", en: "Adamantium Hand Axe"}}/>
+  <CraftingGrid recipeOutput="adamantium_war_hammer" label={{hu: "Adamantium harci kalapács", en: "Adamantium War Hammer"}}/>
+</div>
+
+</div>
+
+<div data-lang="ru">
+
+<h2 id="nether">Незер</h2>
+<p>Для входа в Незер найди <strong>Мантию</strong> в подземном слое коренной породы и создай портал.</p>
+<div class="info">В сложном режиме 3 слоя коренной породы!</div>
+
+<div class="warning-box">🔥 <strong>Незер — самое сложное измерение игры!</strong> Настоятельно рекомендуется полный комплект <strong>мифрила</strong>. Зелье огнестойкости обязательно против Огненных элементалей и лавы. Не входи неподготовленным!</div>
+
+<h3 id="nether-mobs">Мобы Незера</h3>
+<table class="compare-table">
+  <tr><th>Моб</th><th>HP</th><th>Урон</th><th>XP</th><th>Особое</th></tr>
+  <tr><td>Демонический паук</td><td>12</td><td>4</td><td>15</td><td>Огнестойкий, ядовитый</td></tr>
+  <tr><td>Адская гончая</td><td>8</td><td>3</td><td>6</td><td>Огнестойкая, быстрая, стайная</td></tr>
+  <tr><td>Незер-крипер</td><td>20</td><td>2–40</td><td>15</td><td>Огнестойкий, больший взрыв</td></tr>
+  <tr><td>Красный Бласт</td><td>40</td><td>6</td><td>20</td><td><strong>6 огненных шаров одновременно!</strong> Роняет Стержни Бласта</td></tr>
+  <tr><td>Огненный элементаль</td><td>20</td><td>5</td><td>15</td><td><strong>3% мгновенное убийство</strong> горящего игрока!</td></tr>
+  <tr><td>Greater Ghast</td><td>100</td><td>9 (огн. шар)</td><td>20</td><td>Огромный, летающий — можно отбить шары!</td></tr>
+  <tr><td>Зомби-свинолюд</td><td>20</td><td>5</td><td>15</td><td>Нейтральный если носишь золото, иначе сразу враждебный</td></tr>
+  <tr><td>Вампир/Гигантская летучая мышь</td><td>3/6</td><td>1/2</td><td>5/10</td><td>Кража жизни</td></tr>
+</table>
+<div class="info-box">🔥 <strong>Огненный элементаль:</strong> Если ты <strong>горишь</strong> в момент атаки — <strong>3% шанс мгновенной смерти</strong>! Вода, снежки и Зелье вреда работают, огонь и серебро — нет. Зелье огнестойкости обязательно!</div>
+
+<h3 id="core-blocks">Ядро-блоки (Core Blocks)</h3>
+<p>В глубинах Незера находятся <strong>Ядро-блоки</strong> — блоки с текстурой лавы (уровень освещённости 15).</p>
+<ul>
+  <li>В радиусе <strong>8 блоков</strong> наносят урон как лава (v0.8.0+)</li>
+  <li>Уничтожить можно только <strong>Разрушителем ядра (Core Destroyer)</strong></li>
+  <li>Уничтожение Ядро-блока <strong>открывает Портал в Энд</strong> — единственный путь в измерение Энд!</li>
+</ul>
+
+<h3>Ресурсы Незера</h3>
+<ul>
+  <li><strong>Адский камень (Netherrack):</strong> Основной камень Незера — нужен для Печи из адского камня (тепловой уровень 4)</li>
+  <li><strong>Стержень Бласта (Blaze Rod):</strong> Роняют Красные Бласты — <strong>тепловой уровень 4</strong>, необходим для плавки Адаманта!</li>
+  <li><strong>Светокамень:</strong> Источник света, нужен для зелий</li>
+  <li><strong>Незер-кварц:</strong> Для зелий и чар</li>
+  <li><strong>Цветок Иссушителя (Wither Rose):</strong> Из сундуков крепости Незера — нужен для призыва Иссушителя</li>
+</ul>
+
+<h3 id="portals">Типы порталов</h3>
+<table class="compare-table">
+  <tr><th>#</th><th>Портал</th><th>Где строить</th><th>Назначение</th><th>Цвет</th></tr>
+  <tr><td>1</td><td><strong>Обычный портал</strong></td><td>Верхний мир (без коренной породы)</td><td>Точка появления мира</td><td style="color:#88aaff">Синий</td></tr>
+  <tr><td>2</td><td><strong>Портал Незера</strong></td><td>Слой коренной породы Верхнего мира</td><td>Подземное измерение</td><td style="color:#b388ff">Фиолетовый</td></tr>
+  <tr><td>3</td><td><strong>Возвратный портал</strong></td><td>В любом месте Подземелья</td><td>Верхний мир</td><td style="color:#4ecca3">Бирюзовый</td></tr>
+  <tr><td>4</td><td><strong>Адский портал</strong></td><td>Магмовый слой Подземелья</td><td>Незер</td><td style="color:#ff5555">Красный</td></tr>
+  <tr><td>5</td><td><strong>Адский возвратный портал</strong></td><td>В любом месте Незера</td><td>Подземное измерение</td><td style="color:#b388ff">Фиолетовый</td></tr>
+</table>
+
+<h3 id="biome-portals">Биом-порталы (v0.8.0+)</h3>
+<p>8 биом-порталов доступно с помощью <strong>Камней Трансмутации</strong>. Каждый камень создаётся из материала + Обсидиан на обычном верстаке.</p>
+<div class="warning-box">⚠️ <strong>Изменение v0.9.0:</strong> Биом-порталы <strong>больше не телепортируют к структурам</strong> — только в случайное место нужного биома. Для возврата домой: обычная рамка из обсидиана (НЕ на коренной породе) → точка появления.</div>
+
+<h2 id="adamantium">Адамант — Из глубин Незера</h2>
+<p>Из глубин Незера, пропитан злой сущностью. Добывай адамантовую руду <strong>мифриловой киркой/молотом войны</strong>.</p>
+<div class="warning-box">🔥 <strong>Плавка:</strong> Адамантовая руда требует <strong>Стержень Бласта</strong> (уровень 4) и <strong>Печь из адского камня</strong> — температура плавления (6210°C) превышает максимум Обсидиановой печи (5000°C)!</div>
+
+<p>Адамантовые стрелы необходимы для уничтожения Кристаллов Энда!</p>
+
+<div class="craft-section">
+  <CraftingGrid recipeOutput="adamantium_short_sword" label={{hu: "Adamantium Rövidkard", en: "Adamantium Short Sword"}}/>
+  <CraftingGrid recipeOutput="adamantium_hand_axe" label={{hu: "Adamantium Kézbalta", en: "Adamantium Hand Axe"}}/>
+  <CraftingGrid recipeOutput="adamantium_war_hammer" label={{hu: "Adamantium harci kalapács", en: "Adamantium War Hammer"}}/>
+</div>
+
+</div>
+
+<RelatedPages
+  prev={{ href: `${base}/progression/late-game/`, label: { hu: 'Késői Játék', en: 'Late Game', ru: 'Поздняя игра' } }}
+  next={{ href: `${base}/progression/endgame/`, label: { hu: 'Végső Kihívás', en: 'Endgame', ru: 'Эндгейм' } }}
+/>
+
+    </main>
+  </div>
+</BaseLayout>

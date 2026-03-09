@@ -4,79 +4,10 @@ import Header from '../components/Header.astro';
 import TopNav from '../components/TopNav.astro';
 import Sidebar from '../components/Sidebar.astro';
 import '../styles/global.css';
+import { getSidebarGroups } from '../data/sidebar-config.ts';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-const sidebarGroups = {
-  hu: [
-    {
-      title: '🏠 Navigáció',
-      links: [{ href: './', label: '← Wiki főoldal' }],
-    },
-    {
-      title: '🌍 Biomok',
-      links: [
-        { href: '#attekintes', label: 'Áttekintés' },
-        { href: '#plains', label: '🌾 Síkság (Plains)' },
-        { href: '#forest', label: '🌲 Erdő (Forest)' },
-        { href: '#taiga', label: '🌨 Tajga (Taiga)' },
-        { href: '#desert', label: '🏜 Sivatag (Desert)' },
-        { href: '#swamp', label: '🌿 Mocsár (Swamp)' },
-        { href: '#mountains', label: '⛰ Hegyek (Mountains)' },
-        { href: '#jungle', label: '🌴 Dzsungel (Jungle)' },
-        { href: '#mushroom', label: '🍄 Gombaszigetek' },
-        { href: '#ocean', label: '🌊 Óceán (Ocean)' },
-        { href: '#nether', label: '🔥 Nether' },
-        { href: '#underground', label: '⛏ Földalatti világ' },
-      ],
-    },
-  ],
-  en: [
-    {
-      title: '🏠 Navigation',
-      links: [{ href: './', label: '← Main wiki' }],
-    },
-    {
-      title: '🌍 Biomes',
-      links: [
-        { href: '#attekintes-en', label: 'Overview' },
-        { href: '#plains-en', label: '🌾 Plains' },
-        { href: '#forest-en', label: '🌲 Forest' },
-        { href: '#taiga-en', label: '🌨 Taiga' },
-        { href: '#desert-en', label: '🏜 Desert' },
-        { href: '#swamp-en', label: '🌿 Swamp' },
-        { href: '#mountains-en', label: '⛰ Mountains' },
-        { href: '#jungle-en', label: '🌴 Jungle' },
-        { href: '#mushroom-en', label: '🍄 Mushroom Islands' },
-        { href: '#ocean-en', label: '🌊 Ocean' },
-        { href: '#nether-en', label: '🔥 Nether' },
-        { href: '#underground-en', label: '⛏ Underground' },
-      ],
-    },
-  ],
-  ru: [
-    {
-      title: '🏠 Навигация',
-      links: [{ href: './', label: '← Главная вики' }],
-    },
-    {
-      title: '🌍 Биомы',
-      links: [
-        { href: '#attekintes-ru', label: 'Обзор' },
-        { href: '#plains-ru', label: '🌾 Равнины' },
-        { href: '#forest-ru', label: '🌲 Лес' },
-        { href: '#taiga-ru', label: '🌨 Тайга' },
-        { href: '#desert-ru', label: '🏜 Пустыня' },
-        { href: '#swamp-ru', label: '🌿 Болото' },
-        { href: '#mountains-ru', label: '⛰ Горы' },
-        { href: '#jungle-ru', label: '🌴 Джунгли' },
-        { href: '#mushroom-ru', label: '🍄 Грибные острова' },
-        { href: '#ocean-ru', label: '🌊 Океан' },
-        { href: '#nether-ru', label: '🔥 Незер' },
-        { href: '#underground-ru', label: '⛏ Подземный мир' },
-      ],
-    },
-  ],
-};
+const sidebarGroups = getSidebarGroups('biomes');
 ---
 
 <BaseLayout title="Biom Útmutató — MITE: Break Everything Wiki">

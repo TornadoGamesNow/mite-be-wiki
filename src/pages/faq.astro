@@ -4,55 +4,10 @@ import Header from '../components/Header.astro';
 import TopNav from '../components/TopNav.astro';
 import Sidebar from '../components/Sidebar.astro';
 import '../styles/global.css';
+import { getSidebarGroups } from '../data/sidebar-config.ts';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-const sidebarGroups = {
-  hu: [
-    {
-      title: '🏠 Navigacio',
-      links: [
-        { href: './', label: '← Wiki fooldal' },
-      ],
-    },
-    {
-      title: '❓ Kerdesek',
-      links: [
-        { href: '#faq', label: 'Gyakori kerdesek (FAQ)' },
-        { href: '#seed', label: '🗺️ Ajánlott Seed' },
-      ],
-    },
-  ],
-  en: [
-    {
-      title: '🏠 Navigation',
-      links: [
-        { href: './', label: '← Main wiki' },
-      ],
-    },
-    {
-      title: '❓ Questions',
-      links: [
-        { href: '#faq', label: 'Frequently Asked Questions' },
-        { href: '#seed-en', label: '🗺️ Recommended Seed' },
-      ],
-    },
-  ],
-  ru: [
-    {
-      title: '🏠 Навигация',
-      links: [
-        { href: './', label: '← Главная вики' },
-      ],
-    },
-    {
-      title: '❓ Вопросы',
-      links: [
-        { href: '#faq', label: 'Часто задаваемые вопросы (FAQ)' },
-        { href: '#seed-ru', label: '🗺️ Рекомендуемый сид' },
-      ],
-    },
-  ],
-};
+const sidebarGroups = getSidebarGroups('faq');
 ---
 <BaseLayout title="FAQ — MITE: Break Everything Wiki">
   <Header />

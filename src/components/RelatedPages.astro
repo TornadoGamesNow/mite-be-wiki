@@ -1,0 +1,56 @@
+---
+interface PageRef {
+  href: string;
+  label: { hu: string; en: string; ru: string };
+}
+
+interface Props {
+  prev?: PageRef;
+  next?: PageRef;
+  related?: PageRef[];
+}
+
+const { prev, next, related } = Astro.props;
+---
+
+<div class="related-pages">
+  <div class="related-pages-nav">
+    {prev && (
+      <a href={prev.href} class="related-pages-btn related-pages-prev">
+        <span class="related-pages-arrow">←</span>
+        <span>
+          <span data-lang="hu">{prev.label.hu}</span>
+          <span data-lang="en">{prev.label.en}</span>
+          <span data-lang="ru">{prev.label.ru}</span>
+        </span>
+      </a>
+    )}
+    {!prev && <div></div>}
+    {next && (
+      <a href={next.href} class="related-pages-btn related-pages-next">
+        <span>
+          <span data-lang="hu">{next.label.hu}</span>
+          <span data-lang="en">{next.label.en}</span>
+          <span data-lang="ru">{next.label.ru}</span>
+        </span>
+        <span class="related-pages-arrow">→</span>
+      </a>
+    )}
+  </div>
+  {related && related.length > 0 && (
+    <div class="related-pages-links">
+      <span class="related-pages-label">
+        <span data-lang="hu">Kapcsolódó:</span>
+        <span data-lang="en">Related:</span>
+        <span data-lang="ru">Связанные:</span>
+      </span>
+      {related.map(r => (
+        <a href={r.href} class="related-pages-link">
+          <span data-lang="hu">{r.label.hu}</span>
+          <span data-lang="en">{r.label.en}</span>
+          <span data-lang="ru">{r.label.ru}</span>
+        </a>
+      ))}
+    </div>
+  )}
+</div>

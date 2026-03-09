@@ -39,14 +39,14 @@ function resolveHref(href: string): string {
     </div>
     <div class="sidebar-nav">
       {groups.hu.map(section => (
-        <>
-          <h3>{section.title}</h3>
+        <details class="sidebar-section" open>
+          <summary class="sidebar-section-title">{section.title}</summary>
           <ul>
             {section.links.map(link => (
               <li><a href={resolveHref(link.href)}>{link.label}</a></li>
             ))}
           </ul>
-        </>
+        </details>
       ))}
     </div>
   </nav>
@@ -65,14 +65,14 @@ function resolveHref(href: string): string {
     </div>
     <div class="sidebar-nav">
       {groups.en.map(section => (
-        <>
-          <h3>{section.title}</h3>
+        <details class="sidebar-section" open>
+          <summary class="sidebar-section-title">{section.title}</summary>
           <ul>
             {section.links.map(link => (
               <li><a href={resolveHref(link.href)}>{link.label}</a></li>
             ))}
           </ul>
-        </>
+        </details>
       ))}
     </div>
   </nav>
@@ -92,14 +92,14 @@ function resolveHref(href: string): string {
     </div>
     <div class="sidebar-nav">
       {groups.ru.map(section => (
-        <>
-          <h3>{section.title}</h3>
+        <details class="sidebar-section" open>
+          <summary class="sidebar-section-title">{section.title}</summary>
           <ul>
             {section.links.map(link => (
               <li><a href={resolveHref(link.href)}>{link.label}</a></li>
             ))}
           </ul>
-        </>
+        </details>
       ))}
     </div>
   </nav>

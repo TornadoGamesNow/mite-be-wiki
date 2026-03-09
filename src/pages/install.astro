@@ -5,64 +5,10 @@ import TopNav from '../components/TopNav.astro';
 import Sidebar from '../components/Sidebar.astro';
 import '../styles/global.css';
 
+import { getSidebarGroups } from '../data/sidebar-config.ts';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-const sidebarGroups = {
-  hu: [
-    {
-      title: '🏠 Navigacio',
-      links: [
-        { href: './', label: '← Wiki fooldal' },
-      ],
-    },
-    {
-      title: '📦 Telepites',
-      links: [
-        { href: '#prerequisites', label: 'Elofeltetelek' },
-        { href: '#download', label: 'Letoltes' },
-        { href: '#install', label: 'Telepites' },
-        { href: '#first-launch', label: 'Elso inditas' },
-        { href: '#troubleshooting', label: 'Hibaelharitas' },
-      ],
-    },
-  ],
-  en: [
-    {
-      title: '🏠 Navigation',
-      links: [
-        { href: './', label: '← Main wiki' },
-      ],
-    },
-    {
-      title: '📦 Installation',
-      links: [
-        { href: '#prerequisites', label: 'Prerequisites' },
-        { href: '#download', label: 'Download' },
-        { href: '#install', label: 'Installation' },
-        { href: '#first-launch', label: 'First Launch' },
-        { href: '#troubleshooting', label: 'Troubleshooting' },
-      ],
-    },
-  ],
-  ru: [
-    {
-      title: '🏠 Навигация',
-      links: [
-        { href: './', label: '← Главная вики' },
-      ],
-    },
-    {
-      title: '📦 Установка',
-      links: [
-        { href: '#prerequisites-ru', label: 'Предварительные требования' },
-        { href: '#download-ru', label: 'Скачивание' },
-        { href: '#install-ru', label: 'Установка' },
-        { href: '#first-launch-ru', label: 'Первый запуск' },
-        { href: '#troubleshooting-ru', label: 'Устранение проблем' },
-      ],
-    },
-  ],
-};
+const sidebarGroups = getSidebarGroups('install');
 ---
 <BaseLayout title="Telepites — MITE: Break Everything Wiki">
   <Header />

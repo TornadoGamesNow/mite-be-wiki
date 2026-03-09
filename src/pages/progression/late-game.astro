@@ -1,0 +1,209 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import TopNav from '../../components/TopNav.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import CraftingGrid from '../../components/CraftingGrid.astro';
+import PageSummary from '../../components/PageSummary.astro';
+import ProgressionBreadcrumb from '../../components/ProgressionBreadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import '../../styles/global.css';
+
+import { getSidebarGroups } from '../../data/sidebar-config.ts';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const sidebarGroups = getSidebarGroups('progression/late-game');
+---
+<BaseLayout title="Késői Játék | MITE:BE Wiki">
+  <Header />
+  <TopNav currentPage="progression" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<ProgressionBreadcrumb current="late-game" />
+
+<PageSummary keyPoints={{
+  hu: [
+    'Mithril: vas csákány + Obszidián multiblokkos kemence kell',
+    'Mithril szett (4/4): +40% sprint sebesség, −30% sebzéscsökkentés',
+    '~4 stack obszidián kell — Kétszájú Üst tömeggyártja',
+  ],
+  en: [
+    'Mithril needs iron pickaxe + Obsidian multiblock furnace',
+    'Mithril set (4/4): +40% sprint speed, −30% damage reduction',
+    '~4 stacks of obsidian needed — Two-Mouthed Cauldron mass-produces it',
+  ],
+  ru: [
+    'Мифрил: железная кирка + обсидиановая многоблочная печь',
+    'Комплект мифрила (4/4): +40% скорость, −30% снижение урона',
+    '~4 стака обсидиана — Двуротый котёл их массово создаёт',
+  ],
+}} />
+
+<div data-lang="hu">
+
+<!-- ===== MITHRIL ===== -->
+
+<h2 id="mithril">Mithril — A Mitikus Kor</h2>
+<p>Borzasztó mágia lakozik benne. Mithril-ércet <strong>vas csákánnyal/háborús kalapáccsal</strong> bányászhatsz. Az olvasztáshoz <strong>Obszidián többblokkos kemence</strong> kell.</p>
+<div class="warning-box">🌋 <strong>Olvasztás:</strong> Mithrilérc olvasztásához <strong>Lávavödör</strong> (heat level 3) Required tüzelőanyagként! Szén (heat 2) nem elég. Bányász foglalkozás is Required.</div>
+
+<h3>Mithril szett hatás</h3>
+<ul>
+  <li><strong>Megerősítés I (4/4):</strong> +40% Futás Sebesség</li>
+  <li><strong>Megerősítés II (4/4):</strong> -30% Sérülés Csökkentés</li>
+</ul>
+
+<p>Teljes készlet: csákány, fejsze, ásó, kés, tőr, kard, harci kalapács, csatafejsze, kasza, kapa, <strong>íj</strong> (egyedülálló!), sisak, mellvért, Nadrág, csizmák, lánc változatok, vödör, olló.</p>
+
+<h3>Mithril vs Adamantium</h3>
+<table class="compare-table">
+  <tr><th>Tulajdonság</th><th>Mithril</th><th>Adamantium</th></tr>
+  <tr><td>Bűvölhetőség</td><td>⭐ Jobb enchantment sebzés</td><td>Gyengébb</td></tr>
+  <tr><td>Tartósság</td><td>Alacsonyabb</td><td>⭐ Jobb tartósság</td></tr>
+  <tr><td>Ajánlott</td><td>Fegyverekhez</td><td>Páncélhoz / tartós eszközökhöz</td></tr>
+</table>
+<div class="tip-card">💎 <strong>Mithril szerzés hatékonyabban:</strong> Az underground <strong>spawner szobákban</strong> készen talált mithril rudak/blokkok is előfordulnak — ez hatékonyabb lehet, mint vakon bányászni. A Pillager tábor föld alatti mechanizmusa szintén nagy mithril forrás!</div>
+
+<div class="craft-section">
+  <CraftingGrid recipeOutput="ancient_metal_short_sword" label={{hu: "Ősi Fém Rövidkard", en: "Ancient Metal Short Sword"}}/>
+  <CraftingGrid recipeOutput="ancient_metal_war_hammer" label={{hu: "Ősi Fém harci kalapács", en: "Ancient Metal War Hammer"}}/>
+</div>
+
+
+<!-- ===== KÉTSZÁJÚ ÜST ===== -->
+
+<h2 id="two-cauldron">Kétszájú Üst & Elementális Obszidián</h2>
+<p>A <strong>Kétszájú Üst (Two-Mouthed Cauldron)</strong> egy MITE:BE-specifikus multiblokk szerkezet, amely tömegesen állít elő Obszidiánt — nélkülözhetetlen az előrehaladáshoz (kb. 4 stack területigény).</p>
+
+<h3>Elkészítése</h3>
+<div class="flow">
+  <span class="flow-item">Normál Üst</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Jobb klikk csákánnyal</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Kétszájú Üst</span>
+</div>
+
+<h3>Működése</h3>
+<ul>
+  <li>Bal oldalra: <strong>lávavödör</strong> → jobb oldalra: <strong>vízvödör</strong> (vagy fordítva)</li>
+  <li>Alá: <strong>Hopper (Tölcsér)</strong> — ez gyűjti össze a keletkező Obszidiánt</li>
+  <li>Eredmény: <strong>tömegesen gyártott Obszidián</strong> — sokkal hatékonyabb mint kézzel</li>
+</ul>
+
+<h3>Elementális Obszidián (Higanyos módszer)</h3>
+<p>A <strong>Higany</strong> (~Y24, Mocsár Biom-ban) vödörbe töltve és a Kétszájú Üstbe öntve <strong>Elementális Obszidiánt</strong> hoz létre víz+lávával kombinálva. Ez speciális blokk, amely egyes receptekhez Required. Higany az Alvilágban is megtalálható.</p>
+<div class="warning-box">⚠️ <strong>~4 stack Obszidián Required</strong> a további fejlődéshez (portálok, kemencék). A Kétszájú Üst felállítása elengedhetetlen — ne hagyd ki!</div>
+
+</div>
+
+<div data-lang="en">
+
+<!-- ===== MITHRIL ===== -->
+
+<h2 id="mithril">Mithril — The Mythic Age</h2>
+<p>Terrible magic resides within. Mine mithril ore with an <strong>iron pickaxe/war hammer</strong>. Requires an <strong>Obsidian multiblock furnace</strong> to smelt.</p>
+<div class="warning-box">🌋 <strong>Smelting:</strong> Mithril ore requires a <strong>Lava Bucket</strong> (heat level 3) as fuel — coal (heat 2) is not hot enough! Miner profession Required.</div>
+
+<h3>Mithril Set Bonus</h3>
+<ul>
+  <li><strong>Enhancement I (4/4):</strong> +40% Sprint Speed</li>
+  <li><strong>Enhancement II (4/4):</strong> -30% Damage Reduction</li>
+</ul>
+
+<p>Full set: pickaxe, axe, shovel, knife, dagger, sword, war hammer, battle axe, scythe, hoe, <strong>bow</strong> (unique!), helmet, chestplate, leggings, boots, chain variants, bucket, shears.</p>
+
+<h3>Mithril vs Adamantium</h3>
+<table class="compare-table">
+  <tr><th>Property</th><th>Mithril</th><th>Adamantium</th></tr>
+  <tr><td>Enchantability</td><td>⭐ Better enchantment damage</td><td>Lower</td></tr>
+  <tr><td>Durability</td><td>Lower</td><td>⭐ Better Durability</td></tr>
+  <tr><td>Recommended for</td><td>Weapons</td><td>Armor / durable tools</td></tr>
+</table>
+<div class="tip-card">💎 <strong>More efficient mithril farming:</strong> Underground <strong>spawner rooms</strong> may contain ready-made mithril ingots/blocks — more efficient than random Mining. The Pillager camp underground mechanism is also a major mithril source!</div>
+
+<div class="craft-section">
+  <CraftingGrid recipeOutput="ancient_metal_short_sword" label={{hu: "Ősi Fém Rövidkard", en: "Ancient Metal Short Sword"}}/>
+  <CraftingGrid recipeOutput="ancient_metal_war_hammer" label={{hu: "Ősi Fém harci kalapács", en: "Ancient Metal War Hammer"}}/>
+</div>
+
+
+<!-- ===== TWO-MOUTHED CAULDRON ===== -->
+
+<h2 id="two-cauldron">Two-Mouthed Cauldron &amp; Elemental Obsidian</h2>
+<p>The <strong>Two-Mouthed Cauldron</strong> is a MITE:BE-specific multiblock Structure that mass-produces Obsidian — essential for progression (roughly 4 stacks Required).</p>
+
+<h3>How to Create It</h3>
+<div class="flow">
+  <span class="flow-item">Normal Cauldron</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Right Click with Pickaxe</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Two-Mouthed Cauldron</span>
+</div>
+
+<h3>How It Works</h3>
+<ul>
+  <li>Left side: <strong>lava bucket</strong> → right side: <strong>water bucket</strong> (or vice versa)</li>
+  <li>Underneath: <strong>Hopper</strong> — collects the produced Obsidian</li>
+  <li>Result: <strong>mass-produced Obsidian</strong> — far more efficient than manual methods</li>
+</ul>
+
+<h3>Elemental Obsidian (Mercury method)</h3>
+<p><strong>Mercury</strong> (~Y24, found in Swamp Biomes) can be collected in a bucket and poured into the Two-Mouthed Cauldron combined with water+lava to create <strong>Elemental Obsidian</strong> — a special block Required for certain recipes. Mercury is also found in the Underground.</p>
+<div class="warning-box">⚠️ <strong>~4 stacks of Obsidian Required</strong> for further progression (portals, furnaces). Setting up the Two-Mouthed Cauldron is essential — don't skip it!</div>
+
+</div>
+
+<div data-lang="ru">
+
+<h2 id="mithril">Мифрил — Мифическая эпоха</h2>
+<p>Ужасная магия живёт в нём. Добывай мифриловую руду <strong>железной киркой/молотом войны</strong>. Для плавки нужна <strong>Обсидиановая многоблочная печь</strong>.</p>
+<div class="warning-box">🌋 <strong>Плавка:</strong> Для мифриловой руды нужно <strong>Ведро лавы</strong> (тепловой уровень 3) — уголь (уровень 2) не достаточно горячий! Также нужна профессия Горняка.</div>
+
+<h3>Бонус комплекта мифрила</h3>
+<ul>
+  <li><strong>Усиление I (4/4):</strong> +40% Скорость бега</li>
+  <li><strong>Усиление II (4/4):</strong> -30% Снижение урона</li>
+</ul>
+
+<h3>Мифрил vs Адамант</h3>
+<table class="compare-table">
+  <tr><th>Свойство</th><th>Мифрил</th><th>Адамант</th></tr>
+  <tr><td>Заколдовываемость</td><td>⭐ Лучший урон от чар</td><td>Ниже</td></tr>
+  <tr><td>Прочность</td><td>Ниже</td><td>⭐ Лучшая прочность</td></tr>
+  <tr><td>Рекомендуется для</td><td>Оружия</td><td>Брони / прочных инструментов</td></tr>
+</table>
+
+<h2 id="two-cauldron">Двуротый котёл и Элементарный обсидиан</h2>
+<p><strong>Двуротый котёл</strong> — специфический для MITE:BE мультиблочный механизм, который массово производит обсидиан — необходим для прогрессии (около 4 стаков).</p>
+
+<h3>Как создать</h3>
+<div class="flow">
+  <span class="flow-item">Обычный котёл</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">ПКМ киркой</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Двуротый котёл</span>
+</div>
+
+<h3>Как работает</h3>
+<ul>
+  <li>Слева: <strong>ведро лавы</strong> → справа: <strong>ведро воды</strong> (или наоборот)</li>
+  <li>Снизу: <strong>Воронка (Hopper)</strong> — собирает производимый обсидиан</li>
+  <li>Результат: <strong>массово производимый обсидиан</strong></li>
+</ul>
+<div class="warning-box">⚠️ <strong>~4 стака обсидиана необходимо</strong> для дальнейшей прогрессии (порталы, печи). Установка двуротого котла обязательна!</div>
+
+</div>
+
+<RelatedPages
+  prev={{ href: `${base}/progression/underground/`, label: { hu: 'Földalatti Világ', en: 'Underground', ru: 'Подземный мир' } }}
+  next={{ href: `${base}/progression/nether/`, label: { hu: 'Alvilág (Nether)', en: 'The Nether', ru: 'Незер' } }}
+/>
+
+    </main>
+  </div>
+</BaseLayout>

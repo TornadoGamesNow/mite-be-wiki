@@ -1,0 +1,310 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import TopNav from '../../components/TopNav.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import CraftingGrid from '../../components/CraftingGrid.astro';
+import PageSummary from '../../components/PageSummary.astro';
+import ProgressionBreadcrumb from '../../components/ProgressionBreadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import '../../styles/global.css';
+
+import { getSidebarGroups } from '../../data/sidebar-config.ts';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const sidebarGroups = getSidebarGroups('progression/furnaces');
+---
+<BaseLayout title="Kemencék & Olvasztás | MITE:BE Wiki">
+  <Header />
+  <TopNav currentPage="progression" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<ProgressionBreadcrumb current="furnaces" />
+
+<PageSummary keyPoints={{
+  hu: [
+    'Agyagkemence = első hőforrás, de fémolvasztásra nem elég',
+    'Tábortűz kötelező — nélküle a hús megég és mérgezést okoz',
+    'Obszidián öntőforma + edzett agyagkemence = első fémrúd',
+  ],
+  en: [
+    'Clay furnace = first heat source, not hot enough for metals',
+    'Campfire is mandatory — without it meat burns and poisons you',
+    'Obsidian mold + hardened clay furnace = your first metal ingot',
+  ],
+  ru: [
+    'Глиняная печь = первый источник тепла, но не плавит металлы',
+    'Костёр обязателен — без него мясо горит и отравляет',
+    'Обсидиановая форма + обожжённая печь = первый слиток металла',
+  ],
+}} />
+
+<div data-lang="hu">
+
+<!-- ===== KEMENCÉK ===== -->
+
+<h2 id="clay-furnace">Agyagkemence</h2>
+<div class="recipe">4× Agyagblokk → Agyag Kemence (Kova Munkaasztalon)</div>
+
+<p>Keress agyagot patakokban vagy tavaknál. Az agyagkemence az első olvasztóeszközöd, de nem elég erős fém olvasztásához!</p>
+
+<h2 id="campfire">Tábortűz</h2>
+<div class="recipe">(Munkaasztalon craftolható)</div>
+<p>A tábortűz lehetővé teszi, hogy a húst <strong>megsütve</strong> edd — ne megégetve! A megégett hús mérgezést okoz. Egyszerre <strong>8 darab húst</strong> tud sütni egyszerre.</p>
+<div class="warning">Megégett hús evése mérgezést okoz! Használj tábortüzet vagy sütőt!</div>
+<div class="tip-card">🔥 <strong>Tűzgyújtós grillezés (tábortűz nélkül):</strong> Ha még nincs tábortüzed, grillezni tudsz <strong>éghető blokkon</strong> (pl. fadeszkán) is: dobd le a nyers húst a blokkra, majd gyújtsd meg Tűzgyújtóvel. A tűz a húsba „szívódik" — miután kialszik, gyújtsd meg újra. Körülbelül <strong>4 gyújtás</strong> kell a teljes átsütéshez (esetleg egy extra, ha néhány darab még nyers maradt).</div>
+
+<h2 id="hardened-clay">Keményített Agyagkemence</h2>
+<div class="recipe">Agyag + fejlettebb anyagok → Kemény Agyag Kemence</div>
+<div class="craft-section">
+  <CraftingGrid recipeOutput="hardened_clay_furnace" label={{hu: "Keményített Agyag Kemence", en: "Égetett agyagkemence"}}/>
+</div>
+
+<p>Erősebb, mint az alap agyagkemence. Bányássz szenet a Kovacsákánnyal a tüzelőhöz!</p>
+<div class="furnace-full">
+  <!-- Olvasztás: 2×2 slot -->
+  <div class="furnace-full-section">
+    <div class="furnace-full-section-title">⬇ Olvasztás</div>
+    <div class="furnace-full-2x2">
+      <div><div class="furnace-slot-lbl">ércdarab ×9</div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#cd7f32">Réz Ércdarab</div><div class="tt-name" data-lang="en" style="color:#cd7f32">Copper Ore Fragment</div></div><img src="/mite-be-wiki/img/nuggets/copper.png" alt="ércdarab"></div></div>
+      <div><div class="furnace-slot-lbl">öntőforma</div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián Öntőforma</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian Ingot Mold</div></div><img src="/mite-be-wiki/img/items/obsidian_ingot_mould.png" alt="öntőforma"></div></div>
+      <div><div class="furnace-slot-lbl">tüzelő</div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Szén</div><div class="tt-name" data-lang="en" style="color:#aaa">Coal</div></div><img src="/mite-be-wiki/img/items/coal.png" alt="szén"></div></div>
+      <div><div class="furnace-slot-lbl">rúd kimenet</div><div class="craft-output"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#cd7f32">Rézrúd</div><div class="tt-name" data-lang="en" style="color:#cd7f32">Copper Ingot</div></div><img src="/mite-be-wiki/img/ingots/copper.png" alt="rúd"></div></div></div>
+    </div>
+  </div>
+  <div class="furnace-full-sep">│</div>
+  <!-- Formázás: 3×3 rács -->
+  <div class="furnace-full-section">
+    <div class="furnace-full-section-title">🔨 Formázás <span style="color:#e8a020;font-size:.9em">(Kovács)</span></div>
+    <div class="craft-grid g3x3">
+      <div class="craft-slot empty"></div><div class="craft-slot empty"></div><div class="craft-slot empty"></div>
+      <div class="craft-slot empty"></div><div class="craft-slot empty"></div><div class="craft-slot empty"></div>
+      <div class="craft-slot empty"></div><div class="craft-slot empty"></div><div class="craft-slot empty"></div>
+    </div>
+  </div>
+  <div class="furnace-full-arrow">→</div>
+  <!-- Kész tárgy kimenet -->
+  <div class="furnace-full-section">
+    <div class="furnace-full-section-title">Kész tárgy</div>
+    <div class="craft-output" style="margin-top:8px"><div class="craft-slot empty"></div></div>
+  </div>
+</div>
+
+<h2 id="ingot-mold">Obszidián Öntőforma</h2>
+<p>Ez a kulcs a fémolvasztáshoz!</p>
+<div class="flow">
+  <span class="flow-item">Kavics szitálása</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Obszidián szilánk</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Obszidián készítés</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Kovakés + Obszidián = Sablon</span>
+</div>
+<div class="craft-section">
+  <CraftingGrid recipeOutput="obsidian_ingot_mould" label={{hu: "Obszidián Öntőforma", en: "Obsidian Ingot Mould"}}/>
+  <CraftingGrid recipeOutput="obsidian" label={{hu: "Obszidián Blokk", en: "Obsidian Block"}}/>
+</div>
+<p>Az Obszidián öntőforma <strong>20 ércrudat</strong> tud lehűteni, mielőtt elhasználódik.</p>
+
+<h3>Kalapács + Obszidián = 2 Sablon</h3>
+<p>Obszidiánt + Kalapácsot bármelyik munkaasztalra téve közvetlenül 2 sablont készíthetsz — hatékonyabb módszer!</p>
+  <CraftingGrid recipeFullId="obsidian_ingot_mould_copper_war_hammer" label={{hu: "2× Öntőforma", en: "2× Ingot Mould"}}/>
+
+<!-- ===== ELSŐ FÉM ===== -->
+
+<h2 id="first-metal">Első Fém Olvasztás</h2>
+<p>Az első igazi áttörés! Réz vagy ezüst olvasztása:</p>
+<div class="flow">
+  <span class="flow-item">9× Ércdarab</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Keményített agyagkemence</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">+ Obszidián öntőforma</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Fémrúd!</span>
+</div>
+<div class="craft-section">
+<div class="furnace-ui"><div class="furnace-row"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#cd7f32">Réz Ércdarab</div><div class="tt-name" data-lang="en" style="color:#cd7f32">Copper Ore Fragment</div><div class="tt-desc" data-lang="hu">Szitálásból nyerhető</div><div class="tt-desc" data-lang="en">Obtained from sieving</div></div><img src="/mite-be-wiki/img/nuggets/copper.png" alt=""></div></div><div class="furnace-flame">🔥</div><div class="furnace-row"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Szén</div><div class="tt-name" data-lang="en" style="color:#aaa">Coal</div><div class="tt-desc" data-lang="hu">Szénérc bányászásából</div><div class="tt-desc" data-lang="en">From Mining coal ore</div></div><img src="/mite-be-wiki/img/items/coal.png" alt=""></div></div><div class="furnace-progress">⬇</div><div class="furnace-row"><div class="craft-output"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#cd7f32">Rézrúd</div><div class="tt-name" data-lang="en" style="color:#cd7f32">Copper Ingot</div><div class="tt-desc" data-lang="hu">9 rézérc olvasztásából<br>Bányász szint: 2</div><div class="tt-desc" data-lang="en">From smelting 9 copper ore<br>Mining level: 2</div></div><img src="/mite-be-wiki/img/ingots/copper.png" alt=""></div></div></div><div class="craft-label" data-lang="hu">Réz Olvasztás</div><div class="craft-label" data-lang="en">Copper Smelting</div></div>
+<div class="furnace-ui"><div class="furnace-row"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#c0c0c0">Ezüst Ércdarab</div><div class="tt-name" data-lang="en" style="color:#c0c0c0">Silver Ore Fragment</div><div class="tt-desc" data-lang="hu">Szitálásból nyerhető</div><div class="tt-desc" data-lang="en">Obtained from sieving</div></div><img src="/mite-be-wiki/img/nuggets/silver.png" alt=""></div></div><div class="furnace-flame">🔥</div><div class="furnace-row"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Szén</div><div class="tt-name" data-lang="en" style="color:#aaa">Coal</div><div class="tt-desc" data-lang="hu">Szénérc bányászásából</div><div class="tt-desc" data-lang="en">From Mining coal ore</div></div><img src="/mite-be-wiki/img/items/coal.png" alt=""></div></div><div class="furnace-progress">⬇</div><div class="furnace-row"><div class="craft-output"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#c0c0c0">Ezüstrúd</div><div class="tt-name" data-lang="en" style="color:#c0c0c0">Silver Ingot</div><div class="tt-desc" data-lang="hu">Extra sebzés élőholtak ellen</div><div class="tt-desc" data-lang="en">Extra damage against undead</div></div><img src="/mite-be-wiki/img/ingots/silver.png" alt=""></div></div></div><div class="craft-label" data-lang="hu">Ezüst Olvasztás</div><div class="craft-label" data-lang="en">Silver Smelting</div></div>
+</div>
+<p><strong>Shift+jobb klikk</strong>: szenet adsz a kemencéhez. Ezután megkezdődik az olvasztás.</p>
+
+<div class="tip">Az olvasztás után a fém munkaasztalon (pl. Réz Munkaasztal) készítheted a szerszámokat. A fabot mellé <strong>agyagot kell tenni</strong> a fogantyú védelmére!</div>
+
+<h3>Érc blokk közvetlen olvasztása</h3>
+<div class="warning-box">⚠️ <strong>Bányász foglalkozás v0.9.0-ban inaktív</strong> — ez a funkció jelenleg nem érhető el. Helyette a kalapácsos zúzás ajánlott (lásd lent).</div>
+<p><em>Ha a foglalkozások engedélyezve lennének:</em> <strong>Bányász foglalkozással</strong> az érc blokkokat közvetlenül berakhatnád a kemencébe — 9× hatékonyabb az ércdaraboknál! <strong>1 érc blokk → 1 rúd.</strong></p>
+<table>
+  <tr><th>Érc blokk</th><th>Required hőfok</th><th>Eredmény</th></tr>
+  <tr><td>Réz / Ezüst / Vas / Arany / Keménykő érc</td><td>2 — Keményített agyagkemence vagy Kőkemence</td><td>1 Rúd</td></tr>
+  <tr><td>Mithril / Higany érc</td><td>3 — Obszidián kemence</td><td>1 Rúd</td></tr>
+  <tr><td>Adamantiumérc</td><td>4 — AlvilágKőkemence</td><td>1 Adamantiumrúd</td></tr>
+</table>
+<div class="warning-box">⚠️ <strong>Bányász foglalkozás kötelező</strong> — de jelenleg inaktív v0.9.0-ban. Érc blokk olvasztás helyett kalapácsos zúzást használj!</div>
+
+<h3>Érc Zúzás — Háborús Kalapáccsal</h3>
+<p>Nincs Bányász foglalkozásod? Akkor sem kell elvesztegetned az érc blokkot! <strong>Tedd a munkaasztalra az érc blokkot és egy harci kalapácsot</strong> — és 12 ércdarabot kapsz, ami több, mint a 9 darab, amit egy rúd visszabontásával kapnál!</p>
+<table>
+  <tr><th>Input</th><th>Required Kalapács</th><th>Output</th></tr>
+  <tr><td>Réz / Ezüst / Arany érc blokk</td><td>Bronz, Ezüst-Réz, vagy Szénacél harci kalapács</td><td>12 ércdarab</td></tr>
+  <tr><td>Vas érc blokk</td><td>Csak Szénacél harci kalapács</td><td>12 ércdarab</td></tr>
+  <tr><td>Bármely Fémrúd</td><td>Bármely (Bronz / Ezüst-Réz / Szénacél) harci kalapács</td><td>9 ércdarab</td></tr>
+</table>
+<div class="info"><strong>Összehasonlítás:</strong> 1 érc blokk = 12 ércdarab kalapáccsal → 1⅓ rúd (vsz szita útján). Bányász foglalkozással az érc blokk közvetlenül 1 rudat ad, de a kalapácsos zúzás 33%-kal többet hoz ki belőle ha utána olvasztod!</div>
+
+<h3>Érc Feldolgozás — Módszer Összehasonlítás</h3>
+<table>
+  <tr><th>Módszer</th><th>Hogyan?</th><th>Eredmény</th><th>Követelmény</th></tr>
+  <tr><td>🧺 Szitálás</td><td>Kavicsot szitálsz → 9 ércdarab → kemence + öntőforma</td><td>1 Rúd</td><td>Keményített agyag kemence + öntőforma</td></tr>
+  <tr><td>⛏️ Érc blokk olvasztás</td><td>1 érc blokkot rakod a kemencébe</td><td>1 Rúd</td><td><strong>Bányász foglalkozás</strong> <em>(⚠️ inaktív v0.9.0)</em></td></tr>
+  <tr><td>🔨 Kalapács zúzás</td><td>Érc blokk + megfelelő harci kalapács → munkaasztal</td><td>12 Ércdarab → 1⅓ Rúd</td><td>Bronz vagy erősebb harci kalapács</td></tr>
+</table>
+
+</div>
+
+<div data-lang="en">
+
+<!-- ===== FURNACES ===== -->
+
+<h2 id="clay-furnace">Clay Furnace</h2>
+<div class="recipe">4× Clay Block → Clay Furnace (at Flint Workbench)</div>
+
+<p>Find clay in streams or near ponds. The clay furnace is your first smelting tool, but it's not hot enough for metal smelting!</p>
+
+<h2 id="campfire">Campfire</h2>
+<div class="recipe">(Craftable at Workbench)</div>
+<p>The campfire lets you cook meat <strong>properly</strong> — not burn it! Burned meat causes poisoning. Can cook <strong>8 pieces of meat</strong> at once.</p>
+<div class="warning">Eating burned meat causes poisoning! Use a campfire or furnace!</div>
+<div class="tip-card">🔥 <strong>Improvised grilling (without campfire):</strong> If you don't have a campfire yet, you can grill on a <strong>flammable block</strong> (e.g., wood plank): drop raw meat on the block, then ignite it with Flint and Steel. The fire "absorbs" into the meat — after it goes out, light it again. About <strong>4 ignitions</strong> are needed for full cooking.</div>
+
+<h2 id="hardened-clay">Hardened Clay Furnace</h2>
+<div class="recipe">Clay + advanced materials → Hardened Clay Furnace</div>
+<div class="craft-section">
+  <CraftingGrid recipeOutput="hardened_clay_furnace" label={{hu: "Keményített Agyag Kemence", en: "Hardened Clay Furnace"}}/>
+</div>
+
+<p>Stronger than the basic clay furnace. Mine coal with the Flint Pickaxe for fuel!</p>
+
+<h2 id="ingot-mold">Obsidian Ingot Mold</h2>
+<p>This is the key to metal smelting!</p>
+<div class="flow">
+  <span class="flow-item">Sieve gravel</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Obsidian shards</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Craft Obsidian</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Flint Knife + Obsidian = Mold</span>
+</div>
+<div class="craft-section">
+  <CraftingGrid recipeOutput="obsidian_ingot_mould" label={{hu: "Obsidian Öntőforma", en: "Obsidian Ingot Mould"}}/>
+  <CraftingGrid recipeOutput="obsidian" label={{hu: "Obsidian Blokk", en: "Obsidian Block"}}/>
+</div>
+<p>The Obsidian ingot mold can cool <strong>20 ingots</strong> before breaking.</p>
+
+<h3>Hammer + Obsidian = 2 Molds</h3>
+<p>Placing Obsidian + Hammer on any Workbench directly produces 2 molds — more efficient method!</p>
+  <CraftingGrid recipeFullId="obsidian_ingot_mould_copper_war_hammer" label={{hu: "2× Öntőforma", en: "2× Ingot Mould"}}/>
+
+<!-- ===== FIRST METAL ===== -->
+
+<h2 id="first-metal">First Metal Smelting</h2>
+<p>The first big breakthrough! Smelting copper or silver:</p>
+<div class="flow">
+  <span class="flow-item">9× Ore Particles</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Hardened Clay Furnace</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">+ Obsidian Ingot Mold</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Metal Ingot!</span>
+</div>
+<div class="craft-section">
+<div class="furnace-ui"><div class="furnace-row"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#cd7f32">Réz Ércdarab</div><div class="tt-name" data-lang="en" style="color:#cd7f32">Copper Ore Fragment</div><div class="tt-desc" data-lang="hu">Szitálásból nyerhető</div><div class="tt-desc" data-lang="en">Obtained from sieving</div></div><img src="/mite-be-wiki/img/nuggets/copper.png" alt=""></div></div><div class="furnace-flame">🔥</div><div class="furnace-row"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Szén</div><div class="tt-name" data-lang="en" style="color:#aaa">Coal</div><div class="tt-desc" data-lang="hu">Szénérc bányászásából</div><div class="tt-desc" data-lang="en">From Mining coal ore</div></div><img src="/mite-be-wiki/img/items/coal.png" alt=""></div></div><div class="furnace-progress">⬇</div><div class="furnace-row"><div class="craft-output"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#cd7f32">Rézrúd</div><div class="tt-name" data-lang="en" style="color:#cd7f32">Copper Ingot</div><div class="tt-desc" data-lang="hu">9 rézérc olvasztásából<br>Bányász szint: 2</div><div class="tt-desc" data-lang="en">From smelting 9 copper ore<br>Mining level: 2</div></div><img src="/mite-be-wiki/img/ingots/copper.png" alt=""></div></div></div><div class="craft-label" data-lang="hu">Réz Olvasztás</div><div class="craft-label" data-lang="en">Copper Smelting</div></div>
+<div class="furnace-ui"><div class="furnace-row"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#c0c0c0">Ezüst Ércdarab</div><div class="tt-name" data-lang="en" style="color:#c0c0c0">Silver Ore Fragment</div><div class="tt-desc" data-lang="hu">Szitálásból nyerhető</div><div class="tt-desc" data-lang="en">Obtained from sieving</div></div><img src="/mite-be-wiki/img/nuggets/silver.png" alt=""></div></div><div class="furnace-flame">🔥</div><div class="furnace-row"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Szén</div><div class="tt-name" data-lang="en" style="color:#aaa">Coal</div><div class="tt-desc" data-lang="hu">Szénérc bányászásából</div><div class="tt-desc" data-lang="en">From Mining coal ore</div></div><img src="/mite-be-wiki/img/items/coal.png" alt=""></div></div><div class="furnace-progress">⬇</div><div class="furnace-row"><div class="craft-output"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#c0c0c0">Ezüstrúd</div><div class="tt-name" data-lang="en" style="color:#c0c0c0">Silver Ingot</div><div class="tt-desc" data-lang="hu">Extra sebzés élőholtak ellen</div><div class="tt-desc" data-lang="en">Extra damage against undead</div></div><img src="/mite-be-wiki/img/ingots/silver.png" alt=""></div></div></div><div class="craft-label" data-lang="hu">Ezüst Olvasztás</div><div class="craft-label" data-lang="en">Silver Smelting</div></div>
+</div>
+<p><strong>Shift+Right Click</strong>: adds coal to the furnace. Smelting then begins.</p>
+
+<div class="tip">After smelting, craft tools at a metal Workbench (e.g., Copper Workbench). Place <strong>clay next to the stick</strong> to protect the handle!</div>
+
+<h3>Direct Ore Block Smelting</h3>
+<div class="warning-box">⚠️ <strong>Mining profession is inactive in v0.9.0</strong> — this feature is currently unavailable. Use war hammer crushing instead (see below).</div>
+<p><em>If professions were enabled:</em> With the <strong>Mining profession</strong>, you could smelt ore blocks directly — 9× more efficient than ore particles! <strong>1 ore block → 1 ingot.</strong></p>
+<table>
+  <tr><th>Ore Block</th><th>Required Heat</th><th>Result</th></tr>
+  <tr><td>Copper / Silver / Iron / Gold / Hardstone Ore</td><td>2 — Hardened Clay or Stone Furnace</td><td>1 Ingot</td></tr>
+  <tr><td>Mithril / Mercury Ore</td><td>3 — Obsidian Furnace</td><td>1 Ingot</td></tr>
+  <tr><td>Adamantium Ore</td><td>4 — Netherrack Furnace</td><td>1 Adamantium Ingot</td></tr>
+</table>
+<div class="warning-box">⚠️ <strong>Mining profession Required</strong> — but currently inactive in v0.9.0. Use war hammer crushing for ore blocks instead!</div>
+
+<h3>Ore Crushing — With War Hammers</h3>
+<p>No Mining profession? You can still make good use of ore blocks! <strong>Place an ore block and a War Hammer on a Workbench</strong> — and get 12 ore particles, which is more than the 9 you'd get from breaking down an ingot!</p>
+<table>
+  <tr><th>Input</th><th>Required Hammer</th><th>Output</th></tr>
+  <tr><td>Copper / Silver / Gold ore block</td><td>Bronze, Silver Copper, or High-Carbon Steel War Hammer</td><td>12 ore particles</td></tr>
+  <tr><td>Iron ore block</td><td>High-Carbon Steel War Hammer only</td><td>12 ore particles</td></tr>
+  <tr><td>Any metal ingot</td><td>Any (Bronze / Silver Copper / High-Carbon Steel) War Hammer</td><td>9 ore particles</td></tr>
+</table>
+<div class="info"><strong>Comparison:</strong> 1 ore block = 12 particles via crushing → 1⅓ ingots (via smelting). With Mining profession the ore block gives 1 ingot directly, but hammer crushing extracts 33% more if you then smelt the particles!</div>
+
+<h3>Ore Processing — Method Comparison</h3>
+<table>
+  <tr><th>Method</th><th>How?</th><th>Result</th><th>Requirement</th></tr>
+  <tr><td>🧺 Sieving</td><td>Sieve gravel → 9 ore particles → furnace + mold</td><td>1 Ingot</td><td>Hardened Clay Furnace + ingot mold</td></tr>
+  <tr><td>⛏️ Direct ore block smelting</td><td>Put 1 ore block in furnace</td><td>1 Ingot</td><td><strong>Mining profession!</strong></td></tr>
+  <tr><td>🔨 War Hammer crushing</td><td>Ore block + appropriate War Hammer → Workbench</td><td>12 particles → 1⅓ Ingots</td><td>Bronze or better War Hammer</td></tr>
+</table>
+
+</div>
+
+<div data-lang="ru">
+
+<h2 id="clay-furnace">Глиняная печь</h2>
+<div class="recipe">4× Глиняный блок → Глиняная печь (на кремниевом верстаке)</div>
+<p>Найди глину у ручьёв или прудов. Глиняная печь — первый инструмент плавки, но для металлов не годится!</p>
+
+<h2 id="campfire">Костёр</h2>
+<p>Костёр позволяет готовить мясо правильно — не сжигая его. Сгоревшее мясо вызывает отравление. Может готовить <strong>8 кусков мяса</strong> одновременно.</p>
+<div class="warning">Поедание сгоревшего мяса вызывает отравление! Используй костёр или печь!</div>
+
+<h2 id="hardened-clay">Обожжённая глиняная печь</h2>
+<div class="craft-section">
+  <CraftingGrid recipeOutput="hardened_clay_furnace" label={{hu: "Keményített Agyag Kemence", en: "Hardened Clay Furnace"}}/>
+</div>
+<p>Сильнее базовой глиняной печи. Добывай уголь кремниевой киркой для топлива!</p>
+
+<h2 id="ingot-mold">Обсидиановая форма для слитков</h2>
+<p>Ключ к плавке металлов! Из гравия через сито получаешь осколки обсидиана → крафтишь обсидиан → форму.</p>
+<div class="craft-section">
+  <CraftingGrid recipeOutput="obsidian_ingot_mould" label={{hu: "Obsidian Öntőforma", en: "Obsidian Ingot Mould"}}/>
+</div>
+<p>Обсидиановая форма выдерживает <strong>20 слитков</strong> прежде чем сломается.</p>
+
+<h2 id="first-metal">Первая плавка металла</h2>
+<p>Первый прорыв! Плавка меди или серебра:</p>
+<div class="flow">
+  <span class="flow-item">9× Фрагментов руды</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Обожжённая печь</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">+ Форма для слитков</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Слиток!</span>
+</div>
+<p><strong>Shift+ПКМ</strong>: добавляет уголь в печь. После этого начинается плавка.</p>
+<div class="tip">После плавки делай инструменты на металлическом верстаке (например, Медном). Рядом с палкой клади <strong>глину</strong> для защиты рукоятки!</div>
+
+</div>
+
+<RelatedPages
+  prev={{ href: `${base}/progression/early-game/`, label: { hu: 'Korai Játék', en: 'Early Game', ru: 'Начало игры' } }}
+  next={{ href: `${base}/progression/metal-ages/`, label: { hu: 'Fémkorszakok', en: 'Metal Ages', ru: 'Металлические эпохи' } }}
+/>
+
+    </main>
+  </div>
+</BaseLayout>

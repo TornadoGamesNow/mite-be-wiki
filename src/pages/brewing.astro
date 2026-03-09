@@ -6,79 +6,10 @@ import Sidebar from '../components/Sidebar.astro';
 import BrewingGrid from '../components/BrewingGrid.astro';
 import '../styles/global.css';
 
+import { getSidebarGroups } from '../data/sidebar-config.ts';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-const sidebarGroups = {
-  hu: [
-    {
-      title: '🧪 Bájitalfőzés',
-      links: [
-        { href: '#brewing-overview', label: 'Áttekintés' },
-        { href: '#brewing-stand', label: 'Főzőállvány' },
-        { href: '#brewer-profession', label: 'Bájitalkészítő szakma' },
-        { href: '#cauldron', label: 'Üst-mechanikák' },
-        { href: '#potions', label: 'Bájital-hatások' },
-        { href: '#splash-potions', label: 'Fröccsenő bájitalok' },
-        { href: '#disenchanting', label: 'Varázstalanító palack' },
-        { href: '#cheese', label: 'Sajtkészítés' },
-      ],
-    },
-    {
-      title: '🔗 Kapcsolódó',
-      links: [
-        { href: `${base}/reference/#potions`, label: '↗ Referencia: Bájitalok' },
-        { href: `${base}/reference/#mobs`, label: '↗ Referencia: Szörnyek' },
-        { href: `${base}/`, label: '← Wiki főoldal' },
-      ],
-    },
-  ],
-  en: [
-    {
-      title: '🧪 Brewing',
-      links: [
-        { href: '#brewing-overview', label: 'Overview' },
-        { href: '#brewing-stand', label: 'Brewing Stand' },
-        { href: '#brewer-profession', label: 'Brewer Profession' },
-        { href: '#cauldron', label: 'Cauldron Mechanics' },
-        { href: '#potions', label: 'Potion Effects' },
-        { href: '#splash-potions', label: 'Splash Potions' },
-        { href: '#disenchanting', label: 'Disenchanting Bottle' },
-        { href: '#cheese', label: 'Cheese Crafting' },
-      ],
-    },
-    {
-      title: '🔗 Related',
-      links: [
-        { href: `${base}/reference/#potions`, label: '↗ Reference: Potions' },
-        { href: `${base}/reference/#mobs`, label: '↗ Reference: Mobs' },
-        { href: `${base}/`, label: '← Main wiki' },
-      ],
-    },
-  ],
-  ru: [
-    {
-      title: '🧪 Зельеварение',
-      links: [
-        { href: '#brewing-overview', label: 'Обзор' },
-        { href: '#brewing-stand', label: 'Стойка для зелий' },
-        { href: '#brewer-profession', label: 'Профессия «Зельевар»' },
-        { href: '#cauldron', label: 'Механики котла' },
-        { href: '#potions', label: 'Эффекты зелий' },
-        { href: '#splash-potions', label: 'Взрывные зелья' },
-        { href: '#disenchanting', label: 'Бутылка расчарования' },
-        { href: '#cheese', label: 'Крафт сыра' },
-      ],
-    },
-    {
-      title: '🔗 Связанное',
-      links: [
-        { href: `${base}/reference/#potions`, label: '↗ Справочник: Зелья' },
-        { href: `${base}/reference/#mobs`, label: '↗ Справочник: Мобы' },
-        { href: `${base}/`, label: '← Главная вики' },
-      ],
-    },
-  ],
-};
+const sidebarGroups = getSidebarGroups('brewing');
 ---
 <BaseLayout title="Bájitalfőzés — MITE: Break Everything Wiki">
   <Header />

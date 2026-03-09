@@ -1,0 +1,590 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import TopNav from '../components/TopNav.astro';
+import Sidebar from '../components/Sidebar.astro';
+import PageSummary from '../components/PageSummary.astro';
+import RelatedPages from '../components/RelatedPages.astro';
+import { getSidebarGroups } from '../data/sidebar-config.ts';
+import '../styles/global.css';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const sidebarGroups = getSidebarGroups('game-modes');
+---
+<BaseLayout title="Játékmódok — MITE:BE Wiki">
+  <Header />
+  <TopNav currentPage="home" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<PageSummary keyPoints={{
+  hu: [
+    'Simple: fáklya nem alszik el; Hardcore: levelek átjárhatók, nincs érckupac',
+    'Testhőmérséklet: 36–37°C optimális — kemence és víz egyaránt befolyásolja',
+    'Vér Hold (32., 64., 128.+ nap): zombik fejlődnek, szaporodnak, felrobbannak',
+  ],
+  en: [
+    'Simple: torches don\'t time out; Hardcore: leaves passable, no ore clusters',
+    'Body temp: 36–37°C optimal — furnaces heat you, water cools you',
+    'Blood Moon (day 32, 64, 128+): zombies evolve, multiply, explode',
+  ],
+  ru: [
+    'Simple: факелы не гаснут; Hardcore: листья проходимы, нет рудных скоплений',
+    'Температура тела: 36–37°C — печь греет, вода охлаждает',
+    'Кровавая Луна (32, 64, 128+ день): зомби эволюционируют, множатся, взрываются',
+  ],
+}} />
+
+<div data-lang="hu">
+<h2 id="game-modes">Játékmódok — Simple vs Hardcore</h2>
+<p>A MITE:BE két alapvető játékmóddal rendelkezik. A <strong>Simple (Survivor)</strong> mód a tanulásra és ismerkedésre szolgál, míg a <strong>Hardcore</strong> a végleges, brutális kihívás. A kettő között <em>rengeteg</em> mechanikai különbség van!</p>
+
+<div class="warning-box">⚠️ <strong>A wiki alapértelmezetten MINDKÉT módra vonatkozik.</strong> Ahol mód-specifikus különbség van, ott külön jelöljük. Ha nem jelezzük, az adott mechanika mindkét módban azonos.</div>
+
+<table class="compare-table">
+  <tr><th>Mechanika</th><th>Simple (Survivor)</th><th>Hardcore</th></tr>
+  <tr><td><strong>Fáklya kialvás</strong></td><td>Idővel NEM alszanak ki, de eső eloltja!</td><td>✅ 3 nap után kialszanak + eső is eloltja</td></tr>
+  <tr><td><strong>Falevél átjárhatóság</strong></td><td>❌ Tömör — rá lehet állni</td><td>✅ Átjárható — átesik rajta a játékos (fára mászáshoz extra blokkok kellenek)</td></tr>
+  <tr><td><strong>Kavics generálás</strong></td><td>75% esély</td><td>55% esély</td></tr>
+  <tr><td><strong>Pajzs blokkolás</strong></td><td>Normál esély, 50% sebzéscsökkentés</td><td>−3% blokkolási esély, csak 20% sebzéscsökkentés</td></tr>
+  <tr><td><strong>Érc csomók</strong></td><td>✅ Generálódnak</td><td>❌ Nem generálódnak érc csomók</td></tr>
+  <tr><td><strong>Érc Y40 felett</strong></td><td>Normál eloszlás</td><td>Csak Adamantiumérc található Y40 felett</td></tr>
+  <tr><td><strong>Zombi spawn esőben</strong></td><td>❌ Nem spawningolnak</td><td>✅ Esőben is spawningolnak</td></tr>
+  <tr><td><strong>Mob spawn Y0-10 fénynél</strong></td><td>❌ Fényben nem spawningolnak</td><td>✅ Fénynél is spawningolnak</td></tr>
+  <tr><td><strong>Vérhold mutáns zombik</strong></td><td>Normál spawn sebesség</td><td>Dupla spawn sebesség</td></tr>
+  <tr><td><strong>Ender-sárkány Életerő (HP)</strong></td><td>100 Életerő (HP)</td><td>1000 Életerő (HP)</td></tr>
+  <tr><td><strong>Enderman és víz</strong></td><td>Fél a víztől (vanilla)</td><td>NEM fél a víztől!</td></tr>
+  <tr><td><strong>Halál</strong></td><td>Újraéledés lehetséges</td><td>Permadeath — világ törlődik</td></tr>
+  <tr><td><strong>Halál utáni debuff</strong></td><td colspan="2">Mindkét módban: <strong>Súlyos sérülés</strong> státuszhatás a meghalás után <abbr class="src-cl" title="Forrás: mod changelog — személyesen nem ellenőrzött">📜 changelog</abbr></td></tr>
+  <tr><td><strong>Zombi újjáéledés</strong></td><td>❌ Nem</td><td>✅ Megölt zombik visszatérhetnek <abbr class="src-cl" title="Forrás: mod changelog — személyesen nem ellenőrzött">📜 changelog</abbr></td></tr>
+  <tr><td><strong>Boszorkány spawn</strong></td><td>✅ Normál</td><td>❌ Boszorkányok nem spawningolnak <abbr class="src-cl" title="Forrás: mod changelog — személyesen nem ellenőrzött">📜 changelog</abbr></td></tr>
+  <tr><td><strong>Nehézség</strong></td><td>Tanulásra ideális</td><td>Végleges, kompromisszum nélküli kihívás</td></tr>
+</table>
+<div class="tip-card">💡 <strong>Tanács:</strong> Ha most kezded a MITE:BE-t, <strong>Simple módban</strong> tanulj meg mindent. A Hardcore mód a tapasztalt játékosoknak szól — a mechanikai különbségek jelentősek, és egy hiba végleges!</div>
+
+<h2 id="new-mechanics">Új Mechanikák</h2>
+<p>A MITE:BE számos új mechanikát vezet be a vanilla Minecrafthoz képest:</p>
+
+<h3 id="temperature">Testhőmérséklet</h3>
+<p>A testhőmérséklet 36–37°C-ban optimális. Tűz, láva, Alvilág (Nether) Biom emeli — víz, eső, jég csökkenti. A napszúrás és a fagyás valós veszélyek.</p>
+<table class="compare-table">
+  <tr><th>Hőmérséklet</th><th>Hatás</th></tr>
+  <tr style="background:rgba(100,180,255,0.12)"><td><strong>&lt;35.8°C</strong></td><td>Hideg státusz — enyhe lassítás</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>36–37°C</strong></td><td>✅ Optimális — nincs debuff</td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>37.2–38.1°C</strong></td><td>Gyengeség I</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td><strong>38.2–39°C</strong></td><td>Gyengeség I + Láng + Lassítás I + 1 Életerő (HP)/perc</td></tr>
+  <tr style="background:rgba(255,80,30,0.14)"><td><strong>39–45°C+</strong></td><td>Gyengeség I + Láng + Lassítás I + 1 Életerő (HP)/20mp</td></tr>
+</table>
+<div class="warning-box">🔥 <strong>Kemence közelség = túlmelegedés!</strong> Ha 2–3 blokkon belül állsz egy égő kemencéhez, a testhőmérsékleted átléphet 37.2°C-ot → <strong>Gyengeség I</strong>. Korai játékban ez megakadályozza az állatok elleni harcot is! Megoldás: állj távolabb a kemencétől, vagy kezeld a hőmérsékleted hűtéssel (víz közelében dolgozz, jégtartás).</div>
+<div class="tip-card">🌡️ <strong>Módosítók (melegítés):</strong> Láva (2 blokk közel): +0.1°C/35mp · Tűz (3 blokk közel): +0.1°C/50mp · Fáklya tartása: +0.1°C/60mp · Égés (ég a játékos): +0.1°C/5mp · Alvilág (Nether): állandó +0.4°C · Futás: +0.1°C/90mp (max 37°C-ig) · Sivatag nappali: +0.1°C/óra<br>🌡️ <strong>Módosítók (hűtés):</strong> Vízbe merülés: −0.1°C/5mp · Jég tartása: −0.1°C/25mp · Fagylalt evése: −0.1°C · Földre alvás: −0.2–0.4°C (véletlen)</div>
+
+<h3 id="curses">Átkok &amp; Betegségek</h3>
+<p>Boszorkányok 16 különböző átkot alkalmazhatnak. Az adott boszorkányt kell megölni a feloldáshoz, vagy a hatás ellen való itallal. Minden átkot egyszerre csak egy kap a játékos:</p>
+<div class="info-box">🎮 <strong>Hardcore mód:</strong> Boszorkányok Hardcore módban <strong>nem spawningolnak</strong> — ez a mechanikarendszer ott nem aktív.</div>
+<table class="compare-table">
+  <tr><th>#</th><th>Átok típusa</th><th>Hatás</th></tr>
+  <tr><td>1</td><td>Bőrkorrózió</td><td>Összes felszerelés tartóssági fogyasztása 2×</td></tr>
+  <tr><td>2</td><td>Nem Tud Lélegzetet Visszatartani</td><td>Max víz alatti oxigén 30%-ra csökken (3 buborék)</td></tr>
+  <tr><td>3</td><td>Nem Tud Futni</td><td>Futás teljesen letiltva</td></tr>
+  <tr><td>4</td><td>Nem Tud Húst Enni</td><td>Semmilyen állati termék nem fogyasztható</td></tr>
+  <tr><td>5</td><td>Nem Tud Zöldséget Enni</td><td>Növényi alapú ételek nem fogyaszthatók</td></tr>
+  <tr><td>6</td><td>Nem Tud Levest Inni</td><td>Levesek és raguk nem fogyaszthatók</td></tr>
+  <tr><td>7</td><td>Enderek Ellensége</td><td>Minden Enderman provokálatlanul támad</td></tr>
+  <tr><td>8</td><td>Csökkent Intelligencia</td><td>−20 effektív szintpenalty (~25% craftolási minőségpenalty)</td></tr>
+  <tr><td>9</td><td>Növény Fóbia</td><td>60% sebességcsökkentés növény blokkokon; 80% indákon</td></tr>
+  <tr><td>10</td><td>Páncél Elutasítása</td><td>Nem viselhet páncélt; felszerelt tárgyak kiesnek</td></tr>
+  <tr><td>11</td><td>Láda Fóbia</td><td>Nem nyithat ládákat</td></tr>
+  <tr><td>12</td><td>Nem Tud Aludni</td><td>Ágyba fekhet, de nem alszik el</td></tr>
+  <tr><td>13</td><td>Pókfóbia</td><td>Csak 25% eséllyel okoz sebzést pókoknak</td></tr>
+  <tr><td>14</td><td>Farkasfóbia</td><td>Csak 25% eséllyel okoz sebzést farkasoknak</td></tr>
+  <tr><td>15</td><td>Creeperfóbia</td><td>Csak 25% eséllyel okoz sebzést creepereknek</td></tr>
+  <tr><td>16</td><td>Élőholtfóbia</td><td>Csak 25% eséllyel okoz sebzést élőholt moboknak</td></tr>
+</table>
+
+<h3 id="diabetes">Cukorbetegség (Diabetes)</h3>
+<p>Gyümölcsök, cukor és édességek fogyasztása inzulinrezisztenciát tölt fel (+4 800/édesség, 1 200/perc magától fogy). Tej <strong>nem</strong> gyógyítja!</p>
+<table class="compare-table">
+  <tr><th>Küszöb</th><th>Szint</th><th>Időtartam</th><th>Hatás</th></tr>
+  <tr><td>48 000</td><td>Enyhe</td><td>40–80 perc</td><td>Hányinger I (20mp) minden édesség után</td></tr>
+  <tr><td>96 000</td><td>Közepes</td><td>80–120 perc</td><td>Hányinger II (20mp) minden édesség után</td></tr>
+  <tr><td>144 000</td><td>Súlyos</td><td>120–160 perc</td><td>Hányinger III + Méreg (5–10mp) minden édesség után</td></tr>
+</table>
+
+<h3 id="heat-stroke">Napszúrás (Heat Stroke)</h3>
+<p>Sivatagban 60+ másodpercig tartózkodva, vagy láva mellett (2 blokkon belül) 40+ másodpercig: <strong>Gyengeség II + Lassítás II</strong> + étel nem ad tápanyagot (végtelen ideig, amíg meg nem gyógyítják). Gyógyítja: forró víz vagy cukros víz.</p>
+
+<h3 id="quality">Minőségi rendszer</h3>
+<p>A készített tárgyaknak <strong>minőségi szintjük</strong> van. Jobb klikkel magasabb minőséget választhatsz (több XP-be kerül). A minőség elsősorban a tárgy <strong>tartósságát</strong> befolyásolja:</p>
+<table>
+  <tr><th>Minőség</th><th>Leírás</th></tr>
+  <tr><td style="color:#888">Szörnyű</td><td>Legrosszabb tartósság – ne használd ha nem muszáj</td></tr>
+  <tr><td style="color:#aaa">Rossz</td><td>Alap alatti tartósság</td></tr>
+  <tr><td style="color:#ccc">Átlagos</td><td>Alap tartósság, ingyenes</td></tr>
+  <tr><td style="color:var(--green)">Jó</td><td>Kicsit tartósabb</td></tr>
+  <tr><td style="color:var(--gold)">Kiváló</td><td>Érezhetően tartósabb</td></tr>
+  <tr><td style="color:var(--accent2)">Kitűnő</td><td>Jelentősen tartósabb</td></tr>
+  <tr><td style="color:var(--mithril)">Mestermű</td><td>Kiemelkedő tartósság</td></tr>
+  <tr><td style="color:var(--adamantium)">Legendás</td><td>Maximális tartósság</td></tr>
+</table>
+<div class="tip-card">💡 <strong>Normál minőség craftelése ingyenes (0 XP).</strong> Csak a magasabb minőség kerül XP-be, és ez elsősorban a <strong>tartósságot</strong> javítja. Tervezd meg az XP-d beosztását!</div>
+
+<h3 id="stack-sizes">Korlátozott Kötegméret</h3>
+<p>A MITE:BE drastikusan csökkenti a legtöbb blokk kötegméretét. Ez komoly <strong>leltár- és tárolástervezést</strong> igényel!</p>
+<table class="compare-table">
+  <tr><th>Kategória</th><th>Példák</th><th>MITE köteg</th><th>Vanilla köteg</th></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Kő / Kőtömb</strong></td><td>Kő, Gránit, Diorit, Andezit</td><td><strong>8</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Rönk</strong></td><td>Tölgy, Lucfenyő, Nyár, Jungle Rönk</td><td><strong>4</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Deszka</strong></td><td>Minden deszka típus</td><td><strong>8</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Föld / Fű</strong></td><td>Föld, Füves Blokk, Podzol</td><td><strong>4</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,150,100,0.10)"><td><strong>Ércek</strong></td><td>Vas, Réz, Arany, Gyémánt, Mithril stb.</td><td><strong>5</strong></td><td>64</td></tr>
+  <tr><td>Homok / Homokkő</td><td>Homok, Sötét Homok, Homokkő fajták</td><td>8</td><td>64</td></tr>
+  <tr><td>Kavics</td><td>Kavics, Pokol Kavics</td><td>8</td><td>64</td></tr>
+  <tr><td>Üveg</td><td>Üveg blokk, Üveg Panel</td><td>4 / 16</td><td>64</td></tr>
+  <tr><td>Gyapjú</td><td>Minden gyapjú szín</td><td>8</td><td>64</td></tr>
+  <tr><td>Jég / Hó</td><td>Jég, Hó blokk</td><td>4</td><td>64</td></tr>
+  <tr><td>Obszidián</td><td>Obszidián</td><td>5</td><td>64</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Fáklya</td><td>Fáklya, Vöröskő (Redstone) Fáklya</td><td>32</td><td>64</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Virágok / Fű</td><td>Pitypang, Rózsa, Tulipán stb.</td><td>32</td><td>64</td></tr>
+  <tr><td>Létra / Sín</td><td>Létra, Sín</td><td>8</td><td>64</td></tr>
+</table>
+<div class="warning-box">📦 <strong>Fontos:</strong> A csökkentett kötegméretek miatt szükséged van <strong>több tároló ládára</strong>, és az anyaggyűjtés is hamarabb tölti meg a leltárat. Tervezz előre — különösen építési projekteknél!</div>
+
+<h3 id="gelatinous-cube">Zselé (Gelatinous Cube) Blokk-Feloldás</h3>
+<p>A kis Zselé lények kétféle savas anyaggal tudnak blokkokat feloldani: <strong>Pepzin</strong> és <strong>Sav</strong>. 400 tick ≈ 20 másodperc. Az alap építőanyagok biztonsága fontos bázistervezésnél!</p>
+<table class="compare-table">
+  <tr><th>Anyag</th><th>Pepzin</th><th>Sav</th><th>Megjegyzés</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Kő, Kőtömb, Obszidián</strong></td><td>✅ Biztonságos</td><td>✅ Biztonságos</td><td>Legjobb építőanyag</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Üveg, Homokko, Tégla</strong></td><td>✅ Biztonságos</td><td>✅ Biztonságos</td><td>Teljesen immunis</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Arany Blokk 🥇</strong></td><td>✅ Biztonságos</td><td>✅ Biztonságos</td><td>Meglepő — immunis!</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Mithril / Adam. / Ősi Fém Blokk</strong></td><td>✅ Biztonságos</td><td>✅ Biztonságos</td><td>Endgame anyagok</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Réz, Ezüst, Vas Blokk</strong></td><td>✅ Biztonságos</td><td>⚠️ 400 tick</td><td>Sav-sérülékeny!</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Fa, Ajtó, Kerítés, Létra, Láda</strong></td><td>✅ Biztonságos</td><td>⚠️ 400 tick</td><td>Sav feloldja</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Gyapjú, Szőnyeg</strong></td><td>⚠️ 400 tick</td><td>❌ Azonnal</td><td>Mindkettőre érzékeny!</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Pókháló</strong></td><td>❌ Azonnal</td><td>❌ Azonnal</td><td>Leggyorsabban oldódik</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Ágy</strong></td><td>⚠️ 400 tick</td><td>⚠️ 400 tick</td><td>Ne hagyj ágyat szabadon!</td></tr>
+</table>
+<div class="info-box">🏠 <strong>Bázisépítési tanács:</strong> Kő, kőtömb, Obszidián és üveg blokkokból épített bázis teljes mértékben védett a Zselé lények ellen. Meglepő módon az <strong>Arany Blokk</strong> is immunis — viszont a Réz és Ezüst blokkok savra érzékenyek.</div>
+
+<h3 id="sleepiness">Álmosság</h3>
+<p>Az álmossági mutató óránként 1 ponttal növekszik. Alvás csökkenti. <strong>Alvilág (Nether)ben</strong> feleakkora az ütem. Ha 0–7 között van, <strong>+10% mozgássebesség bónuszt</strong> adsz!</p>
+<table class="compare-table">
+  <tr><th>Szint</th><th>Hatás</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>0–59</strong></td><td>Nincs debuff (0–7 között: +10% sebesség bónusz)</td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>60</strong></td><td>Gyengeség I</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td><strong>80</strong></td><td>Gyengeség I + Lassítás I</td></tr>
+  <tr style="background:rgba(255,80,30,0.14)"><td><strong>100+</strong></td><td>Gyengeség I + Lassítás I + Bányász Fáradtság + 1 Életerő (HP)/óra</td></tr>
+</table>
+<div class="warning-box">😴 <strong>Korai játék figyelmeztetés:</strong> A mutató óránként 1-et emelkedik — ez azt jelenti, hogy <strong>kb. 2,5 játéknaponként</strong> kötelező az alvás. A Gyengeség I debuff nemcsak harcban hátrányos: <strong>az állatokat sem tudod megölni</strong> hatékonyan alatta!</div>
+<div class="warning-box">🌙 <strong>Az ágy NEM ugrik éjszakát!</strong> A MITE:BE-ben sem az ágyban alvás, sem a földre alvás nem ugorja át az éjszakát — csak az álmosságot csökkenti. Az éjszakát át kell vészelni!</div>
+<div class="tip-card">🛏️ <strong>Egyszerű Alvó Zsák</strong> (v0.8+): 3× azonos színű gyapjú → Egyszerű Alvó Zsák (16 szín). Bárhová lerakható, jobb klikkel le lehet feküdni. <strong>Nem állít újraindulási pontot.</strong> Fő előnye: elkerülhetők a földre alvás debuffjai.</div>
+
+<h3 id="foggy-weather">Ködös Időjárás (v0.9.0)</h3>
+<p>Köd az első 7 napon belül nem jelenhet meg. Legalább 50 naponta egyszer előfordul, 48–72 óráig tart. <strong>Szerencse III bónusz</strong> köd alatt — Szerencse III csákánnyal Szerencse VI-ot kapsz!</p>
+<div class="warning-box">⚗️ <strong>Köd alatt 3 párhuzamos veszély aktív:</strong></div>
+<table class="compare-table">
+  <tr><th>Típus</th><th>Keletkezés</th><th>Hatás szintenként</th></tr>
+  <tr style="background:rgba(255,200,0,0.08)">
+    <td><strong>Savasság</strong></td>
+    <td>1 pont/30mp köd alatt</td>
+    <td>10: Gyengeség I · 20: +Lassítás I (40mp-ként seb.) · 30: +Éhség I + Vakság I (20mp-ként seb.)</td>
+  </tr>
+  <tr style="background:rgba(100,150,255,0.10)">
+    <td><strong>Oxigénhiány</strong></td>
+    <td>1 pont/30mp köd alatt</td>
+    <td>10: Gyengeség I · 20: 0.5 szív/40mp + Lassítás I · 30: 0.5 szív/30mp + Vakság I</td>
+  </tr>
+  <tr style="background:rgba(100,255,100,0.08)">
+    <td><strong>Magas Oxigén</strong> (Jungle &lt;Y50)</td>
+    <td>Köd alatt aktív</td>
+    <td>5 perc: Sietés I · 10 perc: +Gyorsaság I · 20 perc: +Életerő (HP) Regen · 40 perc: Gyengeség I + Éhség I + Bányász Fáradtság I</td>
+  </tr>
+</table>
+<div class="info-box">💊 <strong>Gyógyítás:</strong> Savasság: vízbe merülés (−2/10mp) vagy Bőrápoló-üveg (10 percig dupla védelem). Oxigénhiány: Y45 feletti réteg (+1/2mp) vagy Oxigénpalack (−4 pont/db).</div>
+
+<h3 id="moon-cycle">Hold Ciklus</h3>
+<p>A hold 7 különböző fázist vesz fel — mindegyik más hatást hoz! A legsúlyosabb a <strong>Vérhold</strong>, amely 6-szor evolválódik, egyre erősebb zombikat hozva.</p>
+<table class="compare-table">
+  <tr><th>Hold</th><th>Mikor</th><th>Hatások</th></tr>
+  <tr style="background:rgba(255,80,80,0.12)"><td><strong>🔴 Vérhold</strong></td><td>32., 64., 128., 160., 192., 224. nap</td><td>Mobok Erőség I · égbolt/eső vörös · Y≥100: Hányinger+Gyengeség, 1HP/20mp · Y≤50: tűzseb., 1HP/10mp · utána: állandó véletlenszerű bónusz</td></tr>
+  <tr style="background:rgba(255,255,100,0.10)"><td><strong>🟡 Sárga Hold</strong></td><td>32n−8. nap (24., 56., 120…)</td><td>Terménynövekedés +200% · aratási hozam +1 érett terménynként</td></tr>
+  <tr style="background:rgba(200,200,255,0.12)"><td><strong>👻 Fantom Hold</strong></td><td>128n−8. nap (120., 248…)</td><td>Halvány fehér glória a hold körül</td></tr>
+  <tr style="background:rgba(100,150,255,0.12)"><td><strong>🔵 Kék Hold</strong></td><td>Minden 50. nap</td><td>Ellenséges mob limit 30/játékos · állatok növekedése +200% · mindig tiszta időjárás</td></tr>
+  <tr style="background:rgba(255,255,255,0.06)"><td><strong>⚪ Telihold</strong></td><td>Minden 8. nap</td><td>Mob spawn ráta +50%</td></tr>
+  <tr style="background:rgba(50,50,100,0.14)"><td><strong>🌑 Újhold</strong></td><td>Standard holdciklus</td><td>Mob spawn −50% · spawnolt mobok sebessége csökkentett (0.21)</td></tr>
+  <tr style="background:rgba(255,100,50,0.12)"><td><strong>⚡ Elszámolás Napja</strong></td><td>96–97. nap</td><td>Vérholdas mobok + villám azonnal megöli a nyílt terepen lévő mobokat (nincs XP/drop)</td></tr>
+</table>
+<div class="info-box">🎁 <strong>Vérhold utáni véletlenszerű bónusz</strong> (egy a négyből): mining speed +10% · Sebzés +1 · Vízfogyasztás −10% · Éhség/Telítettség fogyasztás −10%<br><strong>Evolúció:</strong> Minden vérholdnál (32., 64., 128…) a zombik erősebbek lesznek — növekvő sebzés, Életerő (HP) és blokktörő képesség!</div>
+
+<h3 id="defecation">Ürítés Rendszer (J gomb)</h3>
+<p>Az ürítési mutató étkezéssel töltődik (főtt hús: +5, rothadt hús: +8, görögdinnye: +2, kenyér: +2). Ha eléri a 80-at, akaratlanul bekövetkezik (Hányinger 5 perc + Lassítás I 1 perc). Nyomj <strong>J</strong>-t a kézi ürítéshez!</p>
+<table class="compare-table">
+  <tr><th>Mutató szint</th><th>Időtartam</th><th>Trágyahozam</th><th>Bónusz</th></tr>
+  <tr><td>0–30</td><td>3 másodperc</td><td>1 trágya</td><td>—</td></tr>
+  <tr><td>31–60</td><td>6 másodperc</td><td>2 trágya</td><td>—</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>61–79</strong></td><td>10 másodperc</td><td>3 trágya</td><td>Gyorsaság I + Sietés I (10 másodperc)</td></tr>
+  <tr style="background:rgba(255,80,30,0.12)"><td><strong>80+ (akaratlan)</strong></td><td>Azonnal</td><td>4 trágya</td><td>—</td></tr>
+</table>
+<div class="tip-card">🌱 <strong>Trágya:</strong> Termőföldhöz adva növeli a termésmennyiséget. Ha 3+ napig nem üríted (és 50+ a mutató), az időtartam megduplázódik.</div>
+
+<h3 id="world-marker">Világjelölő &amp; Partner NPC-k</h3>
+<p>A <strong>Világjelölő</strong> (Respawn Anchor) automatikus újraéledési pontként funkcionál. Ha a közelében halsz meg, itt éledsz újra. <strong>Hardcore módban nem működik.</strong></p>
+<table class="compare-table">
+  <tr><th>Partner Típus</th><th>Belső Azonosító</th><th>Leírás</th></tr>
+  <tr><td><strong>Harcos Falusember</strong></td><td>partner_sparta</td><td>Harci képességekkel rendelkező NPC szövetséges</td></tr>
+  <tr><td><strong>Utazó falusi</strong></td><td>partner_traveller</td><td>Felfedezésben és szállítmányozásban segítő NPC</td></tr>
+  <tr><td><strong>Bányász Falusember</strong></td><td>partner_miner</td><td>Bányászatban specializált NPC szövetséges</td></tr>
+</table>
+<div class="tip-card">🤝 <strong>Hordozás:</strong> Shift + Jobb klikk entitáson → elkezded hordozni azt az entitást. Hasznos állatok áthelyezéséhez, NPC partnerek hordozásához és kis élőlények elmozdításához.</div>
+
+<h3 id="debug-keys">Debug Billentyűk</h3>
+<div class="tip-card">🔧 <strong>F3+H</strong> — Részletes Tooltip mód: tárgyak tartóssági százaléka látható, bűvölés ID számok megjelennek, belső item adatok láthatók.</div>
+<div class="tip-card">🔧 <strong>F3+B</strong> — Hitbox megjelenítés: összes entitás és blokk ütközési doboza látható. Hasznos mob AI teszteléshez és precíz építkezéshez.</div>
+</div>
+
+<div data-lang="en">
+<h2 id="game-modes-en">Game Modes — Simple vs Hardcore</h2>
+<p>MITE:BE has two fundamental game modes. <strong>Simple (Survivor)</strong> mode is for learning and exploration, while <strong>Hardcore</strong> is the ultimate, brutal challenge. There are <em>many</em> mechanical differences between them!</p>
+
+<div class="warning-box">⚠️ <strong>This wiki applies to BOTH modes by default.</strong> Where mode-specific differences exist, they are explicitly marked. If not indicated, the mechanic works the same in both modes.</div>
+
+<table class="compare-table">
+  <tr><th>Mechanic</th><th>Simple (Survivor)</th><th>Hardcore</th></tr>
+  <tr><td><strong>Torch burnout</strong></td><td>No time-based burnout, but rain extinguishes!</td><td>✅ Burn out after 3 days + rain extinguishes</td></tr>
+  <tr><td><strong>Leaf passability</strong></td><td>❌ Solid — can stand on them</td><td>✅ Passable — player falls through (extra blocks required for tree climbing)</td></tr>
+  <tr><td><strong>Gravel generation</strong></td><td>75% chance</td><td>55% chance</td></tr>
+  <tr><td><strong>Shield blocking</strong></td><td>Normal chance, 50% damage reduction</td><td>−3% block chance, only 20% damage reduction</td></tr>
+  <tr><td><strong>Ore clusters</strong></td><td>✅ Generate normally</td><td>❌ No ore clusters generate</td></tr>
+  <tr><td><strong>Ore above Y40</strong></td><td>Normal distribution</td><td>Only Adamantium ore found above Y40</td></tr>
+  <tr><td><strong>Zombie rain spawning</strong></td><td>❌ Don't spawn in rain</td><td>✅ Spawn in rain</td></tr>
+  <tr><td><strong>Mob spawn Y0-10 in light</strong></td><td>❌ Don't spawn in light</td><td>✅ Spawn even in light</td></tr>
+  <tr><td><strong>Blood Moon mutant zombies</strong></td><td>Normal spawn rate</td><td>Double spawn rate</td></tr>
+  <tr><td><strong>Ender Dragon HP</strong></td><td>100 HP</td><td>1000 HP</td></tr>
+  <tr><td><strong>Enderman and water</strong></td><td>Afraid of water (vanilla)</td><td>NOT afraid of water!</td></tr>
+  <tr><td><strong>Death</strong></td><td>Respawn possible</td><td>Permadeath — world is deleted</td></tr>
+  <tr><td><strong>Post-death debuff</strong></td><td colspan="2">Both modes: <strong>Severe Injury</strong> status effect applied on respawn <abbr class="src-cl" title="Source: mod changelog — not personally verified">📜 changelog</abbr></td></tr>
+  <tr><td><strong>Zombie revival</strong></td><td>❌ No</td><td>✅ Killed zombies may return <abbr class="src-cl" title="Source: mod changelog — not personally verified">📜 changelog</abbr></td></tr>
+  <tr><td><strong>Witch spawning</strong></td><td>✅ Normal</td><td>❌ Witches do not spawn <abbr class="src-cl" title="Source: mod changelog — not personally verified">📜 changelog</abbr></td></tr>
+  <tr><td><strong>Difficulty</strong></td><td>Ideal for learning</td><td>Ultimate, uncompromising challenge</td></tr>
+</table>
+<div class="tip-card">💡 <strong>Advice:</strong> If you're new to MITE:BE, <strong>start in Simple mode</strong> to learn. Hardcore mode is for experienced players — the mechanical differences are significant, and one mistake is permanent!</div>
+
+<h2 id="new-mechanics-en">New Mechanics</h2>
+<p>MITE:BE introduces many new systems on top of vanilla Minecraft:</p>
+
+<h3 id="temperature-en">Body Temperature</h3>
+<p>Optimal body temperature is 36–37°C. Fire, lava, and the Nether raise it — water, rain, and ice lower it. Sunstroke and freezing are real dangers.</p>
+<table class="compare-table">
+  <tr><th>Temperature</th><th>Effect</th></tr>
+  <tr style="background:rgba(100,180,255,0.12)"><td><strong>&lt;35.8°C</strong></td><td>Cold status — slight slowdown</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>36–37°C</strong></td><td>✅ Optimal — no debuffs</td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>37.2–38.1°C</strong></td><td>Weakness I</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td><strong>38.2–39°C</strong></td><td>Weakness I + Fire + Slowness I + 1 HP/minute</td></tr>
+  <tr style="background:rgba(255,80,30,0.14)"><td><strong>39–45°C+</strong></td><td>Weakness I + Fire + Slowness I + 1 HP/20s</td></tr>
+</table>
+<div class="warning-box">🔥 <strong>Furnace proximity = overheating!</strong> Standing within 2–3 blocks of a burning furnace can push your body temperature above 37.2°C → <strong>Weakness I</strong>. In early game this makes fighting animals impossible too! Fix: step away from the furnace, or manage your temperature with cooling (work near water, hold ice).</div>
+<div class="tip-card">🌡️ <strong>Modifiers (warming):</strong> Lava (within 2 blocks): +0.1°C/35s · Fire (within 3 blocks): +0.1°C/50s · Holding a torch: +0.1°C/60s · On fire: +0.1°C/5s · the Nether: constant +0.4°C · Sprinting: +0.1°C/90s (capped at 37°C) · Desert daytime: +0.1°C/hour<br>🌡️ <strong>Modifiers (cooling):</strong> Submerging in water: −0.1°C/5s · Holding ice: −0.1°C/25s · Eating ice cream: −0.1°C · Sleeping on ground: −0.2–0.4°C (random)</div>
+
+<h3 id="curses-en">Curses &amp; Ailments</h3>
+<p>Witches can inflict 16 different curses. You must kill that specific witch to remove it, or use a dispel potion. Only one curse is active at a time:</p>
+<div class="info-box">🎮 <strong>Hardcore mode:</strong> Witches <strong>do not spawn</strong> in Hardcore mode — this mechanic is inactive there.</div>
+<table class="compare-table">
+  <tr><th>#</th><th>Curse Type</th><th>Effect</th></tr>
+  <tr><td>1</td><td>Corrosive Skin</td><td>All equipment durability consumption doubled</td></tr>
+  <tr><td>2</td><td>Can't Hold Breath</td><td>Max underwater oxygen reduced to 30% (3 bubble capacity)</td></tr>
+  <tr><td>3</td><td>Can't Sprint</td><td>Sprinting completely disabled</td></tr>
+  <tr><td>4</td><td>Can't Eat Meat</td><td>Unable to consume any animal products</td></tr>
+  <tr><td>5</td><td>Can't Eat Vegetables</td><td>Unable to consume plant-based foods</td></tr>
+  <tr><td>6</td><td>Can't Drink Soup</td><td>Unable to consume soups or stews</td></tr>
+  <tr><td>7</td><td>Enderman Hatred</td><td>All Endermen attack unprovoked</td></tr>
+  <tr><td>8</td><td>Reduced Intelligence</td><td>−20 effective level penalty (~25% crafting quality penalty)</td></tr>
+  <tr><td>9</td><td>Plant Phobia</td><td>60% speed reduction through plant blocks; 80% through vines</td></tr>
+  <tr><td>10</td><td>Armor Rejection</td><td>Cannot wear armor; equipped items are expelled</td></tr>
+  <tr><td>11</td><td>Chest Phobia</td><td>Cannot open chests</td></tr>
+  <tr><td>12</td><td>Can't Sleep</td><td>Can lie in bed but will not fall asleep</td></tr>
+  <tr><td>13</td><td>Spider Phobia</td><td>Only 25% chance to deal damage to spiders</td></tr>
+  <tr><td>14</td><td>Wolf Phobia</td><td>Only 25% chance to deal damage to wolves</td></tr>
+  <tr><td>15</td><td>Creeper Phobia</td><td>Only 25% chance to deal damage to creepers</td></tr>
+  <tr><td>16</td><td>Undead Phobia</td><td>Only 25% chance to deal damage to undead mobs</td></tr>
+</table>
+
+<h3 id="diabetes-en">Diabetes</h3>
+<p>Eating fruits, sugar, and sweets fills an insulin resistance meter (+4,800 per sweet food). It decays naturally (1,200/minute). Milk does <strong>not</strong> cure it!</p>
+<table class="compare-table">
+  <tr><th>Threshold</th><th>Level</th><th>Duration</th><th>Effect</th></tr>
+  <tr><td>48,000</td><td>Mild</td><td>40–80 min</td><td>Nausea I (20s) after each sweet food</td></tr>
+  <tr><td>96,000</td><td>Moderate</td><td>80–120 min</td><td>Nausea II (20s) after each sweet food</td></tr>
+  <tr><td>144,000</td><td>Severe</td><td>120–160 min</td><td>Nausea III + Poison (5–10s) after each sweet food</td></tr>
+</table>
+
+<h3 id="heat-stroke-en">Heat Stroke</h3>
+<p>Being in a desert for 60+ seconds, or near lava (within 2 blocks) for 40+ seconds: <strong>Weakness II + Slowness II</strong> + food provides no nutrition (indefinitely until cured). Cure: bowl of hot water or sugar water.</p>
+
+<h3 id="quality-en">Quality System</h3>
+<p>Crafted items have <strong>quality tiers</strong>. Right-click to select a higher quality (costs more XP). Quality primarily affects <strong>durability</strong>:</p>
+<table>
+  <tr><th>Quality</th><th>Description</th></tr>
+  <tr><td style="color:#888">Wretched</td><td>Worst durability — avoid if possible</td></tr>
+  <tr><td style="color:#aaa">Poor</td><td>Below-average durability</td></tr>
+  <tr><td style="color:#ccc">Average</td><td>Base durability, free</td></tr>
+  <tr><td style="color:var(--green)">Fine</td><td>+50% durability</td></tr>
+  <tr><td style="color:var(--gold)">Excellent</td><td>+100% durability</td></tr>
+  <tr><td style="color:var(--accent2)">Superb</td><td>+150% durability</td></tr>
+  <tr><td style="color:var(--mithril)">Masterwork</td><td>+200% durability</td></tr>
+  <tr><td style="color:var(--adamantium)">Legendary</td><td>+250% durability (Mithril/Adamantium only)</td></tr>
+</table>
+<div class="tip-card">💡 <strong>Normal quality crafting is free (0 XP).</strong> Only higher quality tiers cost XP, and the benefit is primarily increased <strong>durability</strong>. Plan your XP budget wisely!</div>
+
+<h3 id="stack-sizes-en">Reduced Stack Sizes</h3>
+<p>MITE:BE drastically reduces the stack size of most blocks. This demands careful <strong>inventory and storage planning</strong>!</p>
+<table class="compare-table">
+  <tr><th>Category</th><th>Examples</th><th>MITE Stack</th><th>Vanilla Stack</th></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Stone / Cobblestone</strong></td><td>Stone, Granite, Diorite, Andesite</td><td><strong>8</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Logs</strong></td><td>Oak, Spruce, Birch, Jungle logs</td><td><strong>4</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Planks</strong></td><td>All wood plank types</td><td><strong>8</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Dirt / Grass</strong></td><td>Dirt, Grass Block, Podzol</td><td><strong>4</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,150,100,0.10)"><td><strong>Ores</strong></td><td>Iron, Copper, Gold, Diamond, Mithril, Adamantium, etc.</td><td><strong>5</strong></td><td>64</td></tr>
+  <tr><td>Sand / Sandstone</td><td>Sand, Soul Sand, Sandstone types</td><td>8</td><td>64</td></tr>
+  <tr><td>Gravel</td><td>Gravel, Netherrack Gravel</td><td>8</td><td>64</td></tr>
+  <tr><td>Glass</td><td>Glass Block, Glass Pane</td><td>4 / 16</td><td>64</td></tr>
+  <tr><td>Wool</td><td>All wool colors</td><td>8</td><td>64</td></tr>
+  <tr><td>Ice / Snow</td><td>Ice, Snow Block</td><td>4</td><td>64</td></tr>
+  <tr><td>Obsidian</td><td>Obsidian</td><td>5</td><td>64</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Torches</td><td>Torch, Redstone Torch</td><td>32</td><td>64</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Flowers / Tall Grass</td><td>Dandelion, Rose, Tulip, etc.</td><td>32</td><td>64</td></tr>
+  <tr><td>Ladders / Rails</td><td>Ladder, Rail</td><td>8</td><td>64</td></tr>
+</table>
+<div class="warning-box">📦 <strong>Important:</strong> Reduced stack sizes mean you'll need <strong>more chests</strong>, and your inventory fills much faster while gathering materials. Plan ahead — especially for large building projects!</div>
+
+<h3 id="gelatinous-cube-en">Gelatinous Cube Block Dissolution</h3>
+<p>Small Gelatinous Cube (Jelly) creatures can dissolve blocks with two types of substances: <strong>Pepsin</strong> and <strong>Acid</strong>. 400 ticks ≈ 20 seconds. Knowing which materials are safe is critical for base building!</p>
+<table class="compare-table">
+  <tr><th>Material</th><th>Pepsin</th><th>Acid</th><th>Notes</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Stone, Cobblestone, Obsidian</strong></td><td>✅ Safe</td><td>✅ Safe</td><td>Best building materials</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Glass, Sandstone, Brick</strong></td><td>✅ Safe</td><td>✅ Safe</td><td>Fully immune</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Block of Gold 🥇</strong></td><td>✅ Safe</td><td>✅ Safe</td><td>Surprising — immune!</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Mithril / Adam. / Block of Ancient Metal</strong></td><td>✅ Safe</td><td>✅ Safe</td><td>Endgame materials</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Copper, Silver, Block of Iron</strong></td><td>✅ Safe</td><td>⚠️ 400 ticks</td><td>Acid-vulnerable!</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Wood, Doors, Fences, Ladders, Chests</strong></td><td>✅ Safe</td><td>⚠️ 400 ticks</td><td>Acid dissolves them</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Wool, Carpet</strong></td><td>⚠️ 400 ticks</td><td>❌ Instant</td><td>Vulnerable to both!</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Cobweb</strong></td><td>❌ Instant</td><td>❌ Instant</td><td>Dissolves fastest</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Bed</strong></td><td>⚠️ 400 ticks</td><td>⚠️ 400 ticks</td><td>Don't leave beds exposed!</td></tr>
+</table>
+<div class="info-box">🏠 <strong>Base building tip:</strong> Bases built from stone, cobblestone, Obsidian, and glass blocks are fully protected against Gelatinous Cubes. Surprisingly, <strong>Blocks of Gold</strong> are also immune — but Copper and Silver blocks are acid-vulnerable.</div>
+
+<h3 id="sleepiness-en">Drowsiness</h3>
+<p>The Drowsiness meter increases by 1 per in-game hour. Sleep reduces it. <strong>In the Nether</strong>, the accumulation rate is halved. At 0–7, you gain a <strong>+10% movement speed bonus</strong>!</p>
+<table class="compare-table">
+  <tr><th>Level</th><th>Effect</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>0–59</strong></td><td>No debuff (0–7: +10% speed bonus)</td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>60</strong></td><td>Weakness I</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td><strong>80</strong></td><td>Weakness I + Slowness I</td></tr>
+  <tr style="background:rgba(255,80,30,0.14)"><td><strong>100+</strong></td><td>Weakness I + Slowness I + Mining Fatigue + 1 HP/hour</td></tr>
+</table>
+<div class="warning-box">😴 <strong>Early game warning:</strong> The meter rises by 1 per hour — meaning you <strong>must sleep roughly every 2.5 in-game days</strong>. Weakness I isn't just bad for combat: <strong>you can't effectively kill animals either!</strong></div>
+<div class="warning-box">🌙 <strong>Beds do NOT skip the night!</strong> In MITE:BE, neither sleeping in a bed nor sleeping on the ground skips the night — it only reduces Drowsiness. You must survive through the night!</div>
+<div class="tip-card">🛏️ <strong>Simple Sleep Bag</strong> (v0.8+): 3× matching-color wool → Simple Sleep Bag (16 colors). Place anywhere, right-click to lie down. <strong>Does not set your respawn point.</strong> Main benefit: avoids the ground-sleep debuffs.</div>
+
+<h3 id="foggy-weather-en">Foggy Weather (v0.9.0)</h3>
+<p>Fog cannot appear within the first 7 days. It occurs at least once every 50 days and lasts 48–72 hours. <strong>Fortune III bonus</strong> during fog — Fortune III pickaxe gives you Fortune VI!</p>
+<div class="warning-box">⚗️ <strong>3 simultaneous hazards active during fog:</strong></div>
+<table class="compare-table">
+  <tr><th>Type</th><th>Accumulation</th><th>Effects by level</th></tr>
+  <tr style="background:rgba(255,200,0,0.08)">
+    <td><strong>Acidity</strong></td>
+    <td>1 pt/30s during fog</td>
+    <td>10: Weakness I · 20: +Slowness I (damage every 40s) · 30: +Hunger I + Blindness I (damage every 20s)</td>
+  </tr>
+  <tr style="background:rgba(100,150,255,0.10)">
+    <td><strong>Oxygen Deficiency</strong></td>
+    <td>1 pt/30s during fog</td>
+    <td>10: Weakness I · 20: 0.5 hearts/40s + Slowness I · 30: 0.5 hearts/30s + Blindness I</td>
+  </tr>
+  <tr style="background:rgba(100,255,100,0.08)">
+    <td><strong>High Oxygen</strong> (Jungle &lt;Y50)</td>
+    <td>Active during fog</td>
+    <td>5 min: Haste I · 10 min: +Speed I · 20 min: +HP Regen · 40 min: Weakness I + Hunger I + Mining Fatigue I (overexposure!)</td>
+  </tr>
+</table>
+<div class="info-box">💊 <strong>Cures:</strong> Acidity: submerge in water (−2/10s) or Skin Care Bottle (double protection for 10 min). Oxygen Deficiency: move above Y45 (+1/2s recovery) or Oxygen Bottle (−4 pts each).</div>
+
+<h3 id="moon-cycle-en">Moon Cycle</h3>
+<p>The moon has 7 different phases — each with unique effects! The most severe is the <strong>Blood Moon</strong>, which evolves 6 times, spawning increasingly powerful zombies.</p>
+<table class="compare-table">
+  <tr><th>Moon</th><th>When</th><th>Effects</th></tr>
+  <tr style="background:rgba(255,80,80,0.12)"><td><strong>🔴 Blood Moon</strong></td><td>Days 32, 64, 128, 160, 192, 224</td><td>Mobs gain Strength I · sky/rain turns red · Y≥100: Nausea+Weakness, 1HP/20s · Y≤50: fire damage, 1HP/10s · after: permanent random bonus</td></tr>
+  <tr style="background:rgba(255,255,100,0.10)"><td><strong>🟡 Yellow Moon</strong></td><td>Day 32n−8 (days 24, 56, 120…)</td><td>Crop growth +200% · harvest yield +1 per ripe crop</td></tr>
+  <tr style="background:rgba(200,200,255,0.12)"><td><strong>👻 Phantom Moon</strong></td><td>Day 128n−8 (days 120, 248…)</td><td>Faint white halo around the moon</td></tr>
+  <tr style="background:rgba(100,150,255,0.12)"><td><strong>🔵 Blue Moon</strong></td><td>Every 50th day</td><td>Hostile mob cap 30/player · animal growth +200% · always clear weather</td></tr>
+  <tr style="background:rgba(255,255,255,0.06)"><td><strong>⚪ Full Moon</strong></td><td>Every 8th day</td><td>Mob spawn rate +50%</td></tr>
+  <tr style="background:rgba(50,50,100,0.14)"><td><strong>🌑 New Moon</strong></td><td>Standard moon cycle</td><td>Mob spawn −50% · spawned mobs have reduced speed (0.21)</td></tr>
+  <tr style="background:rgba(255,100,50,0.12)"><td><strong>⚡ Day of Reckoning</strong></td><td>Days 96–97</td><td>Blood Moon mobs + lightning instantly kills exposed mobs (no XP/drops)</td></tr>
+</table>
+<div class="info-box">🎁 <strong>Post-Blood Moon random bonus</strong> (one of four): Mining speed +10% · Damage +1 · Water consumption −10% · Hunger/Saturation consumption −10%<br><strong>Evolution:</strong> Each Blood Moon (days 32, 64, 128…) makes zombies stronger — increasing damage, HP, and block-breaking ability!</div>
+
+<h3 id="defecation-en">Defecation System (J key)</h3>
+<p>The defecation meter fills from eating (cooked meat: +5, rotten flesh: +8, watermelon: +2, bread: +2). At 80, it triggers involuntarily (Nausea for 5 min + Slowness I for 1 min). Press <strong>J</strong> to defecate manually!</p>
+<table class="compare-table">
+  <tr><th>Meter Level</th><th>Duration</th><th>Manure Yield</th><th>Bonus</th></tr>
+  <tr><td>0–30</td><td>3 seconds</td><td>1 manure</td><td>—</td></tr>
+  <tr><td>31–60</td><td>6 seconds</td><td>2 manure</td><td>—</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>61–79</strong></td><td>10 seconds</td><td>3 manure</td><td>Speed I + Haste I (10 seconds)</td></tr>
+  <tr style="background:rgba(255,80,30,0.12)"><td><strong>80+ (involuntary)</strong></td><td>Immediately</td><td>4 manure</td><td>—</td></tr>
+</table>
+<div class="tip-card">🌱 <strong>Manure:</strong> Applied to farmland, it increases crop yields. If you haven't defecated in 3+ days (and meter is 50+), the duration doubles.</div>
+
+<h3 id="world-marker-en">World Marker &amp; Partner NPCs</h3>
+<p>The <strong>World Marker</strong> (Respawn Anchor) is a special block that functions as an automatic respawn point. If you die near one, you respawn there. <strong>Does not work in Hardcore mode.</strong></p>
+<table class="compare-table">
+  <tr><th>Partner Type</th><th>Internal ID</th><th>Description</th></tr>
+  <tr><td><strong>Warrior Villager</strong></td><td>partner_sparta</td><td>A combat-capable NPC ally</td></tr>
+  <tr><td><strong>Traveller</strong></td><td>partner_traveller</td><td>An NPC assistant for exploration and transport</td></tr>
+  <tr><td><strong>Miner Villager</strong></td><td>partner_miner</td><td>A mining-specialized NPC ally</td></tr>
+</table>
+<div class="tip-card">🤝 <strong>Carrying:</strong> Shift + Right Click on an entity → you start carrying that entity. Useful for moving animals between farms, carrying NPC partners, and relocating small creatures.</div>
+
+<h3 id="debug-keys-en">Debug Keys</h3>
+<div class="tip-card">🔧 <strong>F3+H</strong> — Detailed Tooltip mode: item durability percentage shown, enchantment ID numbers displayed, internal item data visible.</div>
+<div class="tip-card">🔧 <strong>F3+B</strong> — Hitbox display: all entity and block collision boxes visible. Useful for mob AI testing and precise building.</div>
+</div>
+
+<div data-lang="ru">
+<h2 id="game-modes-ru">Режимы игры — Simple и Hardcore</h2>
+<p>В MITE:BE есть два основных режима. <strong>Simple (Survivor)</strong> больше подходит для знакомства с игрой, а <strong>Hardcore</strong> рассчитан на тех, кто хочет по-настоящему сурового выживания. Различий в механиках между ними немало.</p>
+
+<div class="warning-box">⚠️ <strong>Вики по умолчанию охватывает ОБА режима.</strong> Где есть различия между режимами, они отмечены отдельно. Если не указано иное, данная механика одинакова в обоих режимах.</div>
+
+<table class="compare-table">
+  <tr><th>Механика</th><th>Simple (Survivor)</th><th>Hardcore</th></tr>
+  <tr><td><strong>Угасание факелов</strong></td><td>Со временем НЕ гаснут, но дождь тушит!</td><td>✅ Гаснут через 3 дня + дождь тоже тушит</td></tr>
+  <tr><td><strong>Проходимость листьев</strong></td><td>❌ Твёрдые — можно стоять</td><td>✅ Проходимые — игрок проваливается сквозь</td></tr>
+  <tr><td><strong>Генерация гравия</strong></td><td>75% шанс</td><td>55% шанс</td></tr>
+  <tr><td><strong>Блокировка щитом</strong></td><td>Обычный шанс, −50% урона</td><td>−3% шанс блока, только −20% урона</td></tr>
+  <tr><td><strong>Жилы руды</strong></td><td>✅ Генерируются</td><td>❌ Жилы руды не генерируются</td></tr>
+  <tr><td><strong>Руда выше Y40</strong></td><td>Обычное распределение</td><td>Только адамантиевая руда выше Y40</td></tr>
+  <tr><td><strong>Спавн зомби в дождь</strong></td><td>❌ Не спавнятся</td><td>✅ Спавнятся в дождь</td></tr>
+  <tr><td><strong>Спавн мобов Y0-10 при свете</strong></td><td>❌ Не спавнятся при свете</td><td>✅ Спавнятся даже при свете</td></tr>
+  <tr><td><strong>Мутантные зомби Кровавой луны</strong></td><td>Обычная скорость спавна</td><td>Двойная скорость спавна</td></tr>
+  <tr><td><strong>Здоровье Дракона Края</strong></td><td>100 HP</td><td>1000 HP</td></tr>
+  <tr><td><strong>Эндермен и вода</strong></td><td>Боится воды (ваниль)</td><td>НЕ боится воды!</td></tr>
+  <tr><td><strong>Смерть</strong></td><td>Возможно возрождение</td><td>Permadeath — мир удаляется</td></tr>
+  <tr><td><strong>Дебафф после смерти</strong></td><td colspan="2">В обоих режимах: эффект <strong>Тяжёлое ранение</strong> после возрождения <abbr class="src-cl" title="Источник: changelog мода — лично не проверено">📜 changelog</abbr></td></tr>
+  <tr><td><strong>Возрождение зомби</strong></td><td>❌ Нет</td><td>✅ Убитые зомби могут вернуться <abbr class="src-cl" title="Источник: changelog мода — лично не проверено">📜 changelog</abbr></td></tr>
+  <tr><td><strong>Спавн ведьм</strong></td><td>✅ Обычный</td><td>❌ Ведьмы не спавнятся <abbr class="src-cl" title="Источник: changelog мода — лично не проверено">📜 changelog</abbr></td></tr>
+  <tr><td><strong>Сложность</strong></td><td>Идеально для изучения</td><td>Абсолютный, бескомпромиссный вызов</td></tr>
+</table>
+<div class="tip-card">💡 <strong>Совет:</strong> Если вы только начинаете знакомство с MITE:BE, <strong>начните в режиме Simple</strong>. Режим Hardcore рассчитан на опытных игроков — механические различия существенны, и одна ошибка может быть последней!</div>
+
+<h2 id="new-mechanics-ru">Новые механики</h2>
+<p>MITE:BE добавляет множество новых механик по сравнению с обычным Minecraft:</p>
+
+<h3 id="temperature-ru">Температура тела</h3>
+<p>Оптимальная температура тела 36–37°C. Огонь, лава и Незер её повышают — вода, дождь и лёд понижают. Тепловой удар и переохлаждение — реальные угрозы.</p>
+<table class="compare-table">
+  <tr><th>Температура</th><th>Эффект</th></tr>
+  <tr style="background:rgba(100,180,255,0.12)"><td><strong>&lt;35.8°C</strong></td><td>Статус холода — небольшое замедление</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>36–37°C</strong></td><td>✅ Оптимально — дебаффов нет</td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>37.2–38.1°C</strong></td><td>Слабость I</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td><strong>38.2–39°C</strong></td><td>Слабость I + Горение + Замедление I + 1 HP/мин</td></tr>
+  <tr style="background:rgba(255,80,30,0.14)"><td><strong>39–45°C+</strong></td><td>Слабость I + Горение + Замедление I + 1 HP/20 сек</td></tr>
+</table>
+<div class="warning-box">🔥 <strong>Близость к печи = перегрев!</strong> Нахождение в 2–3 блоках от горящей печи может поднять температуру выше 37.2°C → <strong>Слабость I</strong>. В начале игры это делает невозможной даже охоту на животных!</div>
+
+<h3 id="curses-ru">Проклятия и болезни</h3>
+<p>Ведьмы могут наложить 16 различных проклятий. Чтобы снять проклятие, нужно убить именно ту ведьму или использовать зелье рассеивания. Одновременно активно только одно проклятие:</p>
+<div class="info-box">🎮 <strong>Режим Hardcore:</strong> Ведьмы в Hardcore <strong>не спавнятся</strong> — эта система там неактивна.</div>
+<table class="compare-table">
+  <tr><th>#</th><th>Тип проклятия</th><th>Эффект</th></tr>
+  <tr><td>1</td><td>Разъедание кожи</td><td>Износ всего снаряжения ×2</td></tr>
+  <tr><td>2</td><td>Не может задержать дыхание</td><td>Макс. кислород под водой снижен до 30% (3 пузыря)</td></tr>
+  <tr><td>3</td><td>Не может бежать</td><td>Спринт полностью отключён</td></tr>
+  <tr><td>4</td><td>Не может есть мясо</td><td>Нельзя употреблять животные продукты</td></tr>
+  <tr><td>5</td><td>Не может есть овощи</td><td>Нельзя употреблять растительную пищу</td></tr>
+  <tr><td>6</td><td>Не может пить суп</td><td>Нельзя употреблять супы и рагу</td></tr>
+  <tr><td>7</td><td>Враг Эндерменов</td><td>Все Эндермены атакуют без провокации</td></tr>
+  <tr><td>8</td><td>Снижение интеллекта</td><td>−20 к эффективному уровню (~25% штраф к качеству крафта)</td></tr>
+  <tr><td>9</td><td>Фитофобия</td><td>−60% скорости на растительных блоках; −80% на лианах</td></tr>
+  <tr><td>10</td><td>Отторжение брони</td><td>Нельзя надеть броню; надетые предметы выпадают</td></tr>
+  <tr><td>11</td><td>Сундукофобия</td><td>Нельзя открывать сундуки</td></tr>
+  <tr><td>12</td><td>Не может спать</td><td>Можно лечь в кровать, но не заснуть</td></tr>
+  <tr><td>13</td><td>Арахнофобия</td><td>Только 25% шанс нанести урон паукам</td></tr>
+  <tr><td>14</td><td>Волкофобия</td><td>Только 25% шанс нанести урон волкам</td></tr>
+  <tr><td>15</td><td>Криперофобия</td><td>Только 25% шанс нанести урон криперам</td></tr>
+  <tr><td>16</td><td>Нежитефобия</td><td>Только 25% шанс нанести урон нежити</td></tr>
+</table>
+
+<h3 id="diabetes-ru">Диабет</h3>
+<p>Употребление фруктов, сахара и сладостей заполняет шкалу инсулинорезистентности (+4 800 за каждый сладкий продукт, убывает на 1 200/мин). Молоко <strong>не</strong> лечит!</p>
+<table class="compare-table">
+  <tr><th>Порог</th><th>Уровень</th><th>Длительность</th><th>Эффект</th></tr>
+  <tr><td>48 000</td><td>Лёгкий</td><td>40–80 мин</td><td>Тошнота I (20 сек) после каждого сладкого</td></tr>
+  <tr><td>96 000</td><td>Средний</td><td>80–120 мин</td><td>Тошнота II (20 сек) после каждого сладкого</td></tr>
+  <tr><td>144 000</td><td>Тяжёлый</td><td>120–160 мин</td><td>Тошнота III + Яд (5–10 сек) после каждого сладкого</td></tr>
+</table>
+
+<h3 id="heat-stroke-ru">Тепловой удар</h3>
+<p>Нахождение в пустыне 60+ секунд или рядом с лавой (в 2 блоках) 40+ секунд: <strong>Слабость II + Замедление II</strong> + еда не даёт питательных веществ (бессрочно, пока не вылечат). Лечение: горячая или сладкая вода.</p>
+
+<h3 id="quality-ru">Система качества</h3>
+<p>Скрафченные предметы имеют <strong>уровни качества</strong>. Правый клик позволяет выбрать более высокое качество (стоит больше опыта). Качество в первую очередь влияет на <strong>прочность</strong>:</p>
+<table>
+  <tr><th>Качество</th><th>Описание</th></tr>
+  <tr><td style="color:#888">Ужасное</td><td>Наихудшая прочность — избегайте, если возможно</td></tr>
+  <tr><td style="color:#aaa">Плохое</td><td>Прочность ниже базовой</td></tr>
+  <tr><td style="color:#ccc">Среднее</td><td>Базовая прочность, бесплатно</td></tr>
+  <tr><td style="color:var(--green)">Хорошее</td><td>+50% прочности</td></tr>
+  <tr><td style="color:var(--gold)">Отличное</td><td>+100% прочности</td></tr>
+  <tr><td style="color:var(--accent2)">Превосходное</td><td>+150% прочности</td></tr>
+  <tr><td style="color:var(--mithril)">Шедевр</td><td>+200% прочности</td></tr>
+  <tr><td style="color:var(--adamantium)">Легендарное</td><td>+250% прочности (только Мифрил/Адамант)</td></tr>
+</table>
+<div class="tip-card">💡 <strong>Крафт обычного качества бесплатен (0 опыта).</strong> Только более высокие уровни требуют опыта, и основной бонус — увеличенная <strong>прочность</strong>. Планируйте расход опыта заранее!</div>
+
+<h3 id="stack-sizes-ru">Уменьшенные размеры стеков</h3>
+<p>MITE:BE резко уменьшает размеры стеков большинства блоков. Это требует тщательного <strong>планирования инвентаря и хранения</strong>!</p>
+<table class="compare-table">
+  <tr><th>Категория</th><th>Примеры</th><th>Стек MITE</th><th>Стек ваниль</th></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Камень / Булыжник</strong></td><td>Камень, Гранит, Диорит, Андезит</td><td><strong>8</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Брёвна</strong></td><td>Дуб, Ель, Берёза, Джунглевое бревно</td><td><strong>4</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Доски</strong></td><td>Все виды досок</td><td><strong>8</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Земля / Трава</strong></td><td>Земля, Блок травы, Подзол</td><td><strong>4</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,150,100,0.10)"><td><strong>Руды</strong></td><td>Железо, Медь, Золото, Алмаз, Мифрил и др.</td><td><strong>5</strong></td><td>64</td></tr>
+  <tr><td>Песок / Песчаник</td><td>Песок, Душевой песок, Виды песчаника</td><td>8</td><td>64</td></tr>
+  <tr><td>Гравий</td><td>Гравий, Адский гравий</td><td>8</td><td>64</td></tr>
+  <tr><td>Стекло</td><td>Блок стекла, Стеклянная панель</td><td>4 / 16</td><td>64</td></tr>
+  <tr><td>Шерсть</td><td>Все цвета шерсти</td><td>8</td><td>64</td></tr>
+  <tr><td>Лёд / Снег</td><td>Лёд, Снежный блок</td><td>4</td><td>64</td></tr>
+  <tr><td>Обсидиан</td><td>Обсидиан</td><td>5</td><td>64</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Факелы</td><td>Факел, Факел из красного камня</td><td>32</td><td>64</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Цветы / Трава</td><td>Одуванчик, Роза, Тюльпан и др.</td><td>32</td><td>64</td></tr>
+  <tr><td>Лестницы / Рельсы</td><td>Лестница, Рельс</td><td>8</td><td>64</td></tr>
+</table>
+<div class="warning-box">📦 <strong>Важно:</strong> Из-за уменьшенных стеков вам потребуется <strong>больше сундуков</strong>, а инвентарь при сборе ресурсов заполняется намного быстрее. Планируйте заранее — особенно при крупном строительстве!</div>
+
+<h3 id="moon-cycle-ru">Цикл луны</h3>
+<p>Луна имеет 7 различных фаз — каждая со своими эффектами! Наиболее опасная — <strong>Кровавая луна</strong>, которая эволюционирует 6 раз, порождая всё более сильных зомби.</p>
+<table class="compare-table">
+  <tr><th>Луна</th><th>Когда</th><th>Эффекты</th></tr>
+  <tr style="background:rgba(255,80,80,0.12)"><td><strong>🔴 Кровавая луна</strong></td><td>Дни 32, 64, 128, 160, 192, 224</td><td>Мобы получают Силу I · небо/дождь краснеет · Y≥100: Тошнота+Слабость, 1HP/20с · Y≤50: урон огнём, 1HP/10с · после: постоянный случайный бонус</td></tr>
+  <tr style="background:rgba(255,255,100,0.10)"><td><strong>🟡 Жёлтая луна</strong></td><td>День 32n−8 (24, 56, 120…)</td><td>Рост урожая +200% · урожайность +1 со спелого растения</td></tr>
+  <tr style="background:rgba(200,200,255,0.12)"><td><strong>👻 Призрачная луна</strong></td><td>День 128n−8 (120, 248…)</td><td>Бледное белое свечение вокруг луны</td></tr>
+  <tr style="background:rgba(100,150,255,0.12)"><td><strong>🔵 Синяя луна</strong></td><td>Каждый 50-й день</td><td>Лимит враждебных мобов 30/игрок · рост животных +200% · всегда ясная погода</td></tr>
+  <tr style="background:rgba(255,255,255,0.06)"><td><strong>⚪ Полнолуние</strong></td><td>Каждый 8-й день</td><td>Скорость спавна мобов +50%</td></tr>
+  <tr style="background:rgba(50,50,100,0.14)"><td><strong>🌑 Новолуние</strong></td><td>Стандартный цикл</td><td>Спавн мобов −50% · снижена скорость мобов (0.21)</td></tr>
+  <tr style="background:rgba(255,100,50,0.12)"><td><strong>⚡ День расплаты</strong></td><td>Дни 96–97</td><td>Мобы Кровавой луны + молнии мгновенно убивают открытых мобов (без опыта/дропа)</td></tr>
+</table>
+<div class="info-box">🎁 <strong>Случайный бонус после Кровавой луны</strong> (один из четырёх): скорость добычи +10% · Урон +1 · Потребление воды −10% · Потребление голода/сытости −10%</div>
+
+<h3 id="debug-keys-ru">Отладочные клавиши</h3>
+<div class="tip-card">🔧 <strong>F3+H</strong> — Подробный режим подсказок: показывает процент прочности предмета, ID зачарований и внутренние данные предмета.</div>
+<div class="tip-card">🔧 <strong>F3+B</strong> — Отображение хитбоксов: видны все коллизии сущностей и блоков. Полезно для тестирования ИИ мобов и точного строительства.</div>
+</div>
+
+<RelatedPages
+  prev={{ href: `${base}/quick-start/`, label: { hu: 'Gyors Kezdés', en: 'Quick Start', ru: 'Быстрый старт' } }}
+  next={{ href: `${base}/systems/`, label: { hu: 'Rendszerek', en: 'Systems', ru: 'Системы' } }}
+/>
+
+  </main>
+    </div>
+</BaseLayout>

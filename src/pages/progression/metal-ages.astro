@@ -1,0 +1,419 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import TopNav from '../../components/TopNav.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import CraftingGrid from '../../components/CraftingGrid.astro';
+import PageSummary from '../../components/PageSummary.astro';
+import ProgressionBreadcrumb from '../../components/ProgressionBreadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import '../../styles/global.css';
+
+import { getSidebarGroups } from '../../data/sidebar-config.ts';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const sidebarGroups = getSidebarGroups('progression/metal-ages');
+---
+<BaseLayout title="Fémkorszakok | MITE:BE Wiki">
+  <Header />
+  <TopNav currentPage="progression" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<ProgressionBreadcrumb current="metal-ages" />
+
+<PageSummary keyPoints={{
+  hu: [
+    'Réz és ezüst: szitából vagy bányászatból — az első igazi fémek',
+    'Ötvözetek (bronz, ezüst-réz, HCS) ötvöző kemencében készülnek',
+    'Vas olvasztáshoz 26 blokkos többblokkos kőkemence szükséges',
+  ],
+  en: [
+    'Copper & silver from sieve or mining — your first real metals',
+    'Alloys (bronze, silver-copper, HCS) are made in the Alloying Furnace',
+    'Iron smelting needs a 26-block multiblock stone furnace',
+  ],
+  ru: [
+    'Медь и серебро из сита или шахты — первые настоящие металлы',
+    'Сплавы (бронза, серебро-медь, HCS) — в плавильной печи',
+    'Железо плавится в 26-блочной многоблочной каменной печи',
+  ],
+}} />
+
+<div data-lang="hu">
+
+<!-- ===== RÉZ & EZÜST ===== -->
+
+<h2 id="copper-silver">Réz & Ezüst Korszak</h2>
+<p>Az első igazi fémek! Réz és ezüst szerszámokat, fegyvereket és páncélt készíthetsz.</p>
+
+<h3>Réz készlet</h3>
+<p>Csákány, fejsze, ásó, kés, tőr, kard, harci kalapács, sarló, kapa, sisak, mellvért, Nadrág, csizmák, lánc változatok, vödör, pajzs...</p>
+
+<h3>Ezüst készlet</h3>
+<p>Azonos készlet az ezüsthöz. Az ezüst fegyverek <strong>extra sebzést okoznak élőholtak ellen</strong>!</p>
+
+<div class="tip">Réz vödör Required láva és víz szállításához. Arany vödör nem létezik az elején!</div>
+
+<div class="craft-section">
+  <CraftingGrid recipeOutput="copper_pickaxe" label={{hu: "Rézcsákány", en: "Copper Pickaxe"}}/>
+  <CraftingGrid recipeOutput="copper_axe" label={{hu: "Réz Fejsze", en: "Copper Axe"}}/>
+  <CraftingGrid recipeOutput="copper_sword" label={{hu: "Rézkard", en: "Copper Sword"}}/>
+  <CraftingGrid recipeOutput="copper_war_hammer" label={{hu: "Réz harci kalapács", en: "Copper War Hammer"}}/>
+  <CraftingGrid recipeOutput="silver_sword" label={{hu: "Ezüstkard", en: "Silver Sword"}}/>
+</div>
+
+<!-- ===== ÖTVÖZETEK ===== -->
+
+<h2 id="alloys">Ötvözetek</h2>
+<p>Az olvasztóban (Smelter) különböző ötvözeteket készíthetsz, amelyek erősebbek az alap fémeknél!</p>
+
+<table>
+  <tr><th>Ötvözet</th><th>Összetétel</th><th>Különleges képesség</th></tr>
+  <tr class="alloy-row"><td><span class="tier t-copper">Bronz</span></td><td>Réz + Ón</td><td>+20% futás sebesség (teljes szett)</td></tr>
+  <tr class="alloy-row"><td><span class="tier t-silver">Ezüst-Réz</span></td><td>Ezüst + Réz</td><td>-10% elszenvedett sérülés, extra sebzés élőholtak ellen, debuff csökkentés. Réz és ezüst darabokkal javítható.</td></tr>
+  <tr class="alloy-row"><td><span class="tier t-iron">Szénacél</span></td><td>Vas + Szénkristály</td><td>5% sérülés csökkentés darabonként, lánc bányászat (tartsd a gombot). Elég erős a földalatti világ bejárásához.</td></tr>
+</table>
+
+<div class="info"><strong>Szénkristály</strong> szerzése két módon lehetséges:<br>
+① Természetesen előfordul a <strong>mély barlangoban</strong> (Y&lt;35)<br>
+② <strong>Szénblokk olvasztása Blast Furnace-ban</strong> — tedd a szénblokkot az olvasztórésbe (bal felső slot), <em>nem az üzemanyag slotba!</em></div>
+
+
+<!-- ===== TÖBBBLOKKOS KEMENCE ===== -->
+
+<h2 id="multiblock">Többblokkos Kemence</h2>
+<p>A magasabb olvadáspontú fémekhez (vas, mithril, adamantium) többblokkos kemence kell.</p>
+
+<h3>Építés</h3>
+<div class="recipe">Kőkemencemag készítése → 3×3×3-as üreges kocka szerkezet (26 blokk) → Kemence-mag elhelyezése bármelyik oldalra (felső/alsó kivételével)</div>
+<div class="craft-section">
+  <CraftingGrid recipeOutput="furnace_core_stone" label={{hu: "Kő Kemence Mag", en: "Stone Furnace Core"}}/>
+  <CraftingGrid recipeOutput="furnace_core_obsidian" label={{hu: "Obszidián Kemence Mag", en: "Obsidian Furnace Core"}}/>
+  <CraftingGrid recipeOutput="furnace_core_netherrack" label={{hu: "Alvilágkőkemencemag", en: "Netherrack Furnace Core"}}/>
+</div>
+
+
+<h3>Típusok</h3>
+<table>
+  <tr><th>Kemence típus</th><th>Anyag</th><th>Mire jó</th></tr>
+  <tr><td>Kőkemence</td><td>Kő blokkok + Kőkemencemag</td><td>Vas, arany olvasztás</td></tr>
+  <tr><td>Obszidián kemence</td><td>Obszidián blokkok + Obszidiánkemencemag</td><td>Mithril olvasztás</td></tr>
+  <tr><td>AlvilágKőkemence</td><td>Alvilágkő blokkok + AlvilágKőkemencemag</td><td>Adamantium olvasztás</td></tr>
+</table>
+
+<h3>Hőkezelés</h3>
+<p>A kemencében a hőmérséklet-kijelző az aktuális hőmérsékletet mutatja. Különböző érceknek más az olvadáspontja. A kemence hőmérséklete idővel csökken.</p>
+
+<div class="tip"><strong>Végtelen fűtés:</strong> Végtelen lávaforrást a többblokkos kemence aljára téve végtelen fűtést kapsz! Több láva hatása összeadódik.</div>
+
+<h3>Láva Vödör Olvadási Esély</h3>
+<p>Lávás fűtésnél az olvasztott fémtárgyaknak <strong>anyagfüggő esélye</strong> van véletlenszerűen megolvadni és elveszni. Magasabb szintű fémek nagyobb hőállékonysággal bírnak.</p>
+<table class="compare-table">
+  <tr><th>Anyag</th><th>Olvadási Esély</th></tr>
+  <tr style="background:rgba(255,100,50,0.15)"><td><span class="tier t-copper">Réz / Ezüst</span></td><td>16%</td></tr>
+  <tr style="background:rgba(255,150,30,0.20)"><td><span class="tier t-silver">Arany</span></td><td>20% ⚠️</td></tr>
+  <tr><td><span class="tier t-iron">Vas</span></td><td>8%</td></tr>
+  <tr><td><span class="tier t-hard">Keménykő</span></td><td>4%</td></tr>
+  <tr><td><span class="tier t-ancient">Ősi Fém</span></td><td>2%</td></tr>
+  <tr><td><span class="tier t-mithril">Mithril</span></td><td>1%</td></tr>
+  <tr style="background:rgba(100,200,100,0.12)"><td><span class="tier t-adamantium">Adamantium</span></td><td>0% ✅</td></tr>
+</table>
+<div class="tip-card">🔥 <strong>Arany figyelmeztetés:</strong> Az arany tárgyak a legmagasabb olvadási eséllyel rendelkeznek (20%)! Lávás kemencében való olvasztás közben figyelj az arany tárgyakra.</div>
+
+
+<!-- ===== VAS ===== -->
+
+<h2 id="iron">Vas & Acél</h2>
+<p>A vas a többblokkos kemencéből nyerhető ki. A vas korszak után jön a Szénacél.</p>
+
+<h3>Vascsákány — fontos mérföldkő!</h3>
+<p>Vas csákánnyal bányászhatsz <strong>Mithrilércet</strong>! Ez az első igazi belépő a mitikus korba.</p>
+
+<h3>Szénacél</h3>
+<p>Vas + Szénkristály = Szénacél. Az utolsó ötvözet. Teljesítménye elég a földalatti világ sötétségének átvágásához.</p>
+<div class="info">A Szénacél csákány képes a <strong>lánc bányászatra</strong>: tartsd a gombot és egyszerre több blokkot törsz! Bányászási sebessége meghaladja a mithrilét — a felszíni és underground kitermeléshez ez a legjobb választás.</div>
+<div class="tip-card">⚒️ <strong>Ötvözés a kemencében:</strong> Tedd a <strong>vas tárgyat</strong> (kard, csákány stb.) az üzemanyag slot FELETTI slotba, a <strong>Szénkristályt</strong> a bal oldali slotba. Így alakítja át acéllá.</div>
+<div class="tip-card">💡 <strong>XP-vel craftolj nagyobb tartósságért:</strong> Barkácsolás közben az XP-d belekerül a tárgyba — minél több XP van rajtad, annál tartósabb lesz az elkészült eszköz. Érdemes XP-vel telve craftolni a Szénacél tárgyakat!</div>
+<div class="tip-card">⚔️ <strong>Szénacél harci kalapács Underground-ban:</strong> A <strong>Szénacél harci kalapács + Élőholt Ölő V</strong> bűvölettel a föld alatti világ legjobb fegyvere — olcsó, tartós, és egy csapással legyőzi a csontvázakat és más élőholtakat. Max szintű smaragd bűvölőasztalon bűvölhető Level 5-re.</div>
+
+
+<div class="craft-section">
+  <CraftingGrid recipeOutput="iron_sword" label={{hu: "Vaskard", en: "Iron Sword"}}/>
+  <CraftingGrid recipeOutput="iron_pickaxe" label={{hu: "Vascsákány", en: "Iron Pickaxe"}}/>
+  <CraftingGrid recipeOutput="iron_axe" label={{hu: "Vas Fejsze", en: "Iron Axe"}}/>
+  <CraftingGrid recipeOutput="iron_war_hammer" label={{hu: "Vas harci kalapács", en: "Iron War Hammer"}}/>
+</div>
+
+<!-- ===== Fémhierarchia ===== -->
+
+<h2 id="metal-hierarchy">Fémhierarchia</h2>
+<table>
+  <tr><th>Szint</th><th>Anyag</th><th>Honnan?</th><th>Mire kell bányászni?</th></tr>
+  <tr><td><span class="tier t-flint">1</span></td><td>Kova (Kőzet)</td><td>Kavicsból</td><td>Kézi bányászat</td></tr>
+  <tr><td><span class="tier t-copper">2</span></td><td>Réz</td><td>Szitálás / Bányászat</td><td>Kovacsákány</td></tr>
+  <tr><td><span class="tier t-silver">2</span></td><td>Ezüst</td><td>Szitálás / Bányászat</td><td>Kovacsákány</td></tr>
+  <tr><td><span class="tier t-gold">3</span></td><td>Arany</td><td>Mély bányászat</td><td>Réz/Ezüstcsákány</td></tr>
+  <tr><td><span class="tier t-iron">4</span></td><td>Vas</td><td>Mély bányászat</td><td>Réz/Ezüstcsákány</td></tr>
+  <tr><td><span class="tier t-hard">5</span></td><td>Keménykő</td><td>Földalatti világ</td><td>Vascsákány</td></tr>
+  <tr><td><span class="tier t-ancient">6</span></td><td>Ősi Fém</td><td>Földalatti világ</td><td>Vascsákány</td></tr>
+  <tr><td><span class="tier t-mithril">7</span></td><td>Mithril</td><td>Mély bányászat</td><td>Vascsákány / harci kalapács</td></tr>
+  <tr><td><span class="tier t-adamantium">8</span></td><td>Adamantium</td><td>Alvilág (Nether) közelében</td><td>Mithrilcsákány / harci kalapács</td></tr>
+</table>
+
+<h3>Érc Mélység Térkép</h3>
+<div class="ore-map">
+<div class="ore-layer"><img src="/mite-be-wiki/img/items/coal.png" alt=""><span class="ore-label">Szén</span><span class="ore-bar" style="width:90%;background:#333">Y 0-128</span></div>
+<div class="ore-layer"><img src="/mite-be-wiki/img/ingots/copper.png" alt=""><span class="ore-label">Réz / Ezüst</span><span class="ore-bar" style="width:60%;background:#cd7f32">Y 0-64</span></div>
+<div class="ore-layer"><img src="/mite-be-wiki/img/items/gold_ingot.png" alt=""><span class="ore-label">Arany</span><span class="ore-bar" style="width:35%;background:#f0c040">Y 0-32</span></div>
+<div class="ore-layer"><img src="/mite-be-wiki/img/items/iron_ingot.png" alt=""><span class="ore-label">Vas</span><span class="ore-bar" style="width:45%;background:#d4d4d4">Y 0-48</span></div>
+<div class="ore-layer"><img src="/mite-be-wiki/img/shards/diamond.png" alt=""><span class="ore-label">Gyémánt</span><span class="ore-bar" style="width:18%;background:#7ec8e3">Y 0-16</span></div>
+<div class="ore-layer"><img src="/mite-be-wiki/img/items/emerald.png" alt=""><span class="ore-label">Smaragd</span><span class="ore-bar" style="width:25%;background:#4ecca3">Y 4-32</span></div>
+<div class="ore-layer"><img src="/mite-be-wiki/img/ingots/mithril.png" alt=""><span class="ore-label">Mithril</span><span class="ore-bar" style="width:22%;background:#7ec8e3">Y 0-24</span></div>
+<div class="ore-layer"><img src="/mite-be-wiki/img/ingots/adamantium.png" alt=""><span class="ore-label">Adamantium</span><span class="ore-bar" style="width:15%;background:#b388ff">Alvilág (Nether)</span></div>
+<div class="ore-layer"><span class="ore-label">🌊 Higany</span><span class="ore-bar" style="width:22%;background:#8899aa">Y 0-25 — Mocsár Biom</span></div>
+<div class="ore-layer"><span class="ore-label">⚫ Széntipp (Szén Kristály)</span><span class="ore-bar" style="width:20%;background:#444">Y 0-20 — CSAK Magasföld Biom</span></div>
+</div>
+
+<h3>Érc-eloszlás Biom-onként</h3>
+<p>A különböző Biom-okban eltérő ércek és eltérő mennyiségek találhatók! Ez stratégiai fontosságú.</p>
+<table class="compare-table">
+  <tr><th>Érc</th><th>Mocsár</th><th>Magasföld</th><th>Dzsungel</th></tr>
+  <tr><td>Réz</td><td>Y0-128 (súly 40)</td><td>Y35-128 (súly 40)</td><td>Y0-128 (súly 40, 6-10/ér)</td></tr>
+  <tr><td>Ezüst</td><td>Y0-96</td><td>Y40-96</td><td>Y0-96</td></tr>
+  <tr><td>Ón (Tin)</td><td>Y0-128</td><td>Y40-128</td><td>Y0-128</td></tr>
+  <tr><td>Vas</td><td>Y0-50</td><td>Y10-40</td><td>Y0-50 (8-12/ér — legtöbb!)</td></tr>
+  <tr><td>Arany</td><td>Y0-48</td><td>Y0-48 (kis érméret!)</td><td>Y0-48 (4-6/ér)</td></tr>
+  <tr><td>Gyémánt</td><td>Y0-32 (súly 10)</td><td>❌ nem termel!</td><td>Y0-17 (súly 20 — 2×!)</td></tr>
+  <tr style="background:rgba(150,200,100,0.10)"><td><strong>Szén Kristály</strong></td><td>❌</td><td>✅ Y0-20 (súly 100 — leggyakoribb!)</td><td>❌</td></tr>
+  <tr style="background:rgba(150,200,100,0.10)"><td><strong>Keménykő</strong></td><td>❌</td><td>✅ Y0-20</td><td>❌</td></tr>
+  <tr><td>Higany</td><td>✅ Y0-20</td><td>❌</td><td>❌</td></tr>
+  <tr><td>Smaragd</td><td>❌</td><td>✅ Y0-20</td><td>❌</td></tr>
+  <tr><td>Elemi Obszidián</td><td>✅ Y0-15</td><td>❌</td><td>❌</td></tr>
+</table>
+<div class="info-box">⚒️ <strong>Biom stratégia:</strong> <strong>Dzsungel</strong> = legjobb fém-Biom (legnagyobb értípusok, 2× gyémánt). <strong>Magasföld</strong> = kötelező Szén Kristályért (ötvözéshez) és Keménykőért — de nincs Gyémánt! <strong>Mocsár</strong> = Higany + Elemi Obszidián (portálhoz Required).<br>Biom portálokkal: Magasföld Portál (Kő + Obszidián) → Dzsungel Portál (Falevél + Obszidián)!</div>
+<div class="info-box">🎮 <strong>Hardcore mód-különbség:</strong> Hardcore módban <strong>nem generálódnak érc csomók</strong>, és <strong>Y40 felett csak Adamantiumérc</strong> található. A bányászat lényegesen nehezebb!</div>
+
+<!-- ===== ÖTVÖZÉSI RENDSZER ===== -->
+
+<h2 id="alloying">Ötvözési Rendszer (Ötvöző Kemence)</h2>
+<p>A MITE:BE-ben a normál fém felszerelések <strong>tovább fejleszthetők ötvözéssel</strong> egy Ötvöző Kemencében. Az ötvözés NEM alapanyagokból készít ötvözetet — meglévő, <strong>teljes tartósságú felszereléspéldányokat</strong> alakít át.</p>
+<div class="warning-box">⚠️ <strong>Kritikus szabály:</strong> Kizárólag <strong>100% tartósságú (sértetlen)</strong> eszközöket és páncélokat lehet ötvözni! Sérült tárgyak nem olvaszthatók be.</div>
+
+<h3>Ötvöző Kemence Elkészítése</h3>
+<table class="compare-table">
+  <tr><th>Recept</th><th>Alapanyagok</th><th>Required Munkaasztal</th></tr>
+  <tr><td><strong>Réz (legolcsóbb)</strong></td><td>4× Rézrúd + 1× Kőkemence</td><td>Réz Munkaasztal</td></tr>
+  <tr><td>Ezüst</td><td>4× Ezüstrúd + 1× Kőkemence</td><td>Réz Munkaasztal</td></tr>
+  <tr><td>Vas</td><td>6× Kő + 2× Vasrúd + 1× Kőkemence</td><td>Vas Munkaasztal</td></tr>
+</table>
+<p><strong>Tüzelőanyag:</strong> Szén (30mp), Szénkocka (270mp), Lávavödör (120mp). <strong>Kötegméret:</strong> 1/köteg.</p>
+
+<h3>Ötvözetek</h3>
+<table class="compare-table">
+  <tr><th>Ötvözet</th><th>Alap felszerelés</th><th>Hozzáadott anyag</th><th>Eredmény</th><th>Bónusz (teljes szett)</th></tr>
+  <tr style="background:rgba(205,127,50,0.12)"><td><strong>Bronz</strong></td><td>Teljes tartósságú Réz eszköz/páncél</td><td>Ón Rudak</td><td>Bronz eszköz/páncél</td><td>Tűz időtartam −50% · Futási sebesség +20%</td></tr>
+  <tr style="background:rgba(192,192,128,0.12)"><td><strong>Ezüst-Réz</strong></td><td>Teljes tartósságú Ezüst eszköz/páncél</td><td>Réz Rudak</td><td>Ezüst-Réz eszköz/páncél</td><td>Tűz időtartam −80% · Összes sebzés −10%</td></tr>
+  <tr style="background:rgba(180,180,180,0.12)"><td><strong>Szénacél</strong></td><td>Teljes tartósságú Vas eszköz/páncél</td><td>Szénkristály-szilánkok</td><td>Szénacél eszköz/páncél</td><td>Sebzés −5%/darab · Saválló · Lánc-bányászás képesség</td></tr>
+</table>
+
+<h3>Required alapanyag mennyiségek (teljes szett)</h3>
+<table class="compare-table">
+  <tr><th>Ötvözet</th><th>Sisak</th><th>Mellvért</th><th>Nadrág</th><th>Csizma</th><th>Összesen</th></tr>
+  <tr><td>Bronz (Ón)</td><td>3</td><td>6</td><td>5</td><td>2</td><td><strong>16 Ón Rúd</strong></td></tr>
+  <tr><td>Ezüst-Réz (Réz)</td><td>5</td><td>7</td><td>6</td><td>3</td><td><strong>21 Rézrúd</strong></td></tr>
+  <tr><td>Szénacél (Szén Kristály)</td><td>2</td><td>4</td><td>3</td><td>1</td><td><strong>10 Szén Kristály</strong></td></tr>
+</table>
+
+<h3>Szén Kristály megszerzése</h3>
+<p><strong>KIZÁRÓLAG Magasföld Biom-ban terem</strong>, Y0-20 szint között (súly: 100 — a legelterjedtebb érc ott!). Módok:</p>
+<ul>
+  <li>Szén Kristály Fürtöt bányásszad (1 fürt = 4 szilánk)</li>
+  <li>Szénkockából olvasztható: 1 Szénkocka → 1 Szén Kristály Szilánk (az Ötvöző Kemencében)</li>
+</ul>
+<div class="tip-card">💡 <strong>Higany Üst fejlesztés (Ősi Fém páncélhoz):</strong> Ha teljes tartósságú Ősi Fém páncéldarabot kattintasz egy láva fölé helyezett Higany Üstra (Higany Érc + Üst a mocsárból), a teljes szett viselésénél a testhőmérséklet stabilan marad! Ez a fejlesztés független az Ötvöző Kemencétől.</div>
+<div class="info-box">📝 <strong>Más ötvözetek:</strong> A játék referencia adatai szerint <em>csak</em> a fenti 3 ötvözet létezik az Ötvöző Kemencében. Keménykő, Mithril és Adamantium felszerelések NEM ötvözhetők — standard nagy kemencéből kerülnek ki.</div>
+
+</div>
+
+<div data-lang="en">
+
+<!-- ===== COPPER & SILVER ===== -->
+
+<h2 id="copper-silver">Copper & Silver Age</h2>
+<p>Your first real metals! Craft tools, weapons, and armor from copper and silver.</p>
+
+<h3>Full equipment set per metal</h3>
+<p>Pickaxe, axe, shovel, knife, dagger, sword, war hammer, battle axe, scythe, hoe, helmet, chestplate, leggings, boots (plate + chain variants), bucket, shield, shears, coins...</p>
+
+<h3>Silver Bonus</h3>
+<p>Silver weapons deal <strong>extra damage to undead</strong> mobs!</p>
+
+<div class="craft-section">
+  <CraftingGrid recipeOutput="copper_pickaxe" label={{hu: "Rézcsákány", en: "Copper Pickaxe"}}/>
+  <CraftingGrid recipeOutput="copper_axe" label={{hu: "Réz Fejsze", en: "Copper Axe"}}/>
+  <CraftingGrid recipeOutput="copper_sword" label={{hu: "Rézkard", en: "Copper Sword"}}/>
+  <CraftingGrid recipeOutput="copper_war_hammer" label={{hu: "Réz harci kalapács", en: "Copper War Hammer"}}/>
+  <CraftingGrid recipeOutput="silver_sword" label={{hu: "Ezüstkard", en: "Silver Sword"}}/>
+</div>
+
+
+<h2 id="alloys">Alloys</h2>
+<p>In the smelter, you can create various alloys that are stronger than base metals!</p>
+
+<table>
+  <tr><th>Alloy</th><th>Components</th><th>Special Ability</th></tr>
+  <tr class="alloy-row"><td><span class="tier t-copper">Bronze</span></td><td>Copper + Tin</td><td>+20% Sprint Speed (full set)</td></tr>
+  <tr class="alloy-row"><td><span class="tier t-silver">Silver Copper</span></td><td>Silver + Copper</td><td>-10% Damage Taken, Bonus vs undead, debuff reduction. Repairable with copper and Silver nuggets.</td></tr>
+  <tr class="alloy-row"><td><span class="tier t-iron">High Carbon Steel</span></td><td>Iron + Carbon Crystal</td><td>5% Damage Reduction per piece, chain Mining (hold button). Strong enough for the Underground.</td></tr>
+</table>
+
+<div class="info"><strong>Carbon Crystal</strong> can be obtained two ways:<br>
+① Found naturally in <strong>deep caves</strong> (Y&lt;35)<br>
+② <strong>Smelt a Block of Coal in a Blast Furnace</strong> — put the coal block in the smelting slot (top-left), <em>not the fuel slot!</em></div>
+
+
+<!-- ===== MULTIBLOCK FURNACE ===== -->
+
+<h2 id="multiblock">Multiblock Furnace</h2>
+<p>Higher-melting-point metals (iron, mithril, adamantium) require a multiblock furnace.</p>
+
+<h3>Construction</h3>
+<div class="recipe">Craft a Furnace Core → Build a 3×3×3 hollow cube (26 blocks) → Place the core on any side (except top/bottom)</div>
+<div class="craft-section">
+  <CraftingGrid recipeOutput="furnace_core_stone" label={{hu: "Kő Kemence Mag", en: "Stone Furnace Core"}}/>
+  <CraftingGrid recipeOutput="furnace_core_obsidian" label={{hu: "Obsidian Kemence Mag", en: "Obsidian Furnace Core"}}/>
+  <CraftingGrid recipeOutput="furnace_core_netherrack" label={{hu: "Netherrackkemencemag", en: "Netherrack Furnace Core"}}/>
+</div>
+
+
+<h3>Types</h3>
+<table>
+  <tr><th>Furnace Type</th><th>Material</th><th>Used For</th></tr>
+  <tr><td>Stone Furnace</td><td>Stone Blocks + Stone Furnace Core</td><td>Iron, gold smelting</td></tr>
+  <tr><td>Obsidian Furnace</td><td>Obsidian Blocks + Obsidian Furnace Core</td><td>Mithril smelting</td></tr>
+  <tr><td>Netherrack Furnace</td><td>Netherrack Blocks + Netherrack Furnace Core</td><td>Adamantium smelting</td></tr>
+</table>
+
+<h3>Heat Management</h3>
+<p>The furnace displays its current temperature. Different ores have different melting points. Temperature drops over time.</p>
+
+<div class="tip"><strong>Infinite heating:</strong> Place an infinite lava source at the bottom of the multiblock furnace for infinite heat! Multiple lava sources stack!</div>
+
+<h3>Lava Bucket Melt Chance</h3>
+<p>When using lava-heated furnaces, metal items have a <strong>material-dependent chance</strong> of accidentally melting and being lost.</p>
+<table class="compare-table">
+  <tr><th>Material</th><th>Melt Chance</th></tr>
+  <tr style="background:rgba(255,100,50,0.15)"><td><span class="tier t-copper">Copper / Silver</span></td><td>16%</td></tr>
+  <tr style="background:rgba(255,150,30,0.20)"><td><span class="tier t-silver">Gold</span></td><td>20% ⚠️</td></tr>
+  <tr><td><span class="tier t-iron">Iron</span></td><td>8%</td></tr>
+  <tr><td><span class="tier t-hard">Hardstone</span></td><td>4%</td></tr>
+  <tr><td><span class="tier t-ancient">Ancient Metal</span></td><td>2%</td></tr>
+  <tr><td><span class="tier t-mithril">Mithril</span></td><td>1%</td></tr>
+  <tr style="background:rgba(100,200,100,0.12)"><td><span class="tier t-adamantium">Adamantium</span></td><td>0% ✅</td></tr>
+</table>
+
+
+<!-- ===== IRON ===== -->
+
+<h2 id="iron">Iron & Steel</h2>
+<p>Iron is obtained from the multiblock furnace. After the iron age comes high carbon steel.</p>
+
+<h3>Iron Pickaxe — Critical Milestone!</h3>
+<p>Iron pickaxe can mine <strong>mithril ore</strong>! This is your first real entry into the mythic age.</p>
+
+<h3>High Carbon Steel</h3>
+<p>Iron + Carbon Crystal = High Carbon Steel. The final alloy. Strong enough to cut through the darkness of the Underground.</p>
+<div class="info">The high carbon steel pickaxe has <strong>chain Mining</strong>: hold the button to break multiple blocks at once! Its Mining Speed exceeds mithril — it's the best choice for overworld and underground excavation.</div>
+<div class="tip-card">⚒️ <strong>Alloying in the furnace:</strong> Place the <strong>iron tool</strong> (sword, pickaxe, etc.) in the slot ABOVE the fuel slot, and the <strong>Carbon Crystal</strong> in the left-side slot. This converts it to steel.</div>
+<div class="tip-card">💡 <strong>Craft with XP for better Durability:</strong> XP is consumed during Crafting — the more XP you have, the more durable the resulting tool. Always craft high-carbon steel items while topped up on XP!</div>
+<div class="tip-card">⚔️ <strong>High-Carbon Steel War Hammer in the Underground:</strong> <strong>High-Carbon Steel War Hammer + Undead Slayer V</strong> is the best weapon for the Underground — cheap, durable, one-shots skeletons and undead in a single blow.</div>
+
+<div class="craft-section">
+  <CraftingGrid recipeOutput="iron_sword" label={{hu: "Vaskard", en: "Iron Sword"}}/>
+  <CraftingGrid recipeOutput="iron_pickaxe" label={{hu: "Vascsákány", en: "Iron Pickaxe"}}/>
+  <CraftingGrid recipeOutput="iron_axe" label={{hu: "Vas Fejsze", en: "Iron Axe"}}/>
+  <CraftingGrid recipeOutput="iron_war_hammer" label={{hu: "Vas harci kalapács", en: "Iron War Hammer"}}/>
+</div>
+
+<!-- ===== METAL HIERARCHY ===== -->
+
+<h2 id="metal-hierarchy">Metal Hierarchy</h2>
+<table>
+  <tr><th>Tier</th><th>Material</th><th>Source</th><th>Required Pickaxe</th></tr>
+  <tr><td><span class="tier t-flint">1</span></td><td>Flint</td><td>From gravel</td><td>Bare hands</td></tr>
+  <tr><td><span class="tier t-copper">2</span></td><td>Copper</td><td>Sieving / Mining</td><td>Flint pickaxe</td></tr>
+  <tr><td><span class="tier t-silver">2</span></td><td>Silver</td><td>Sieving / Mining</td><td>Flint pickaxe</td></tr>
+  <tr><td><span class="tier t-gold">3</span></td><td>Gold</td><td>Deep Mining</td><td>Copper/Silver pickaxe</td></tr>
+  <tr><td><span class="tier t-iron">4</span></td><td>Iron</td><td>Deep Mining</td><td>Copper/Silver pickaxe</td></tr>
+  <tr><td><span class="tier t-hard">5</span></td><td>Hardstone</td><td>Underground</td><td>Iron pickaxe</td></tr>
+  <tr><td><span class="tier t-ancient">6</span></td><td>Ancient Metal</td><td>Underground</td><td>Iron pickaxe</td></tr>
+  <tr><td><span class="tier t-mithril">7</span></td><td>Mithril</td><td>Deep Mining</td><td>Iron pickaxe / war hammer</td></tr>
+  <tr><td><span class="tier t-adamantium">8</span></td><td>Adamantium</td><td>Near the Nether</td><td>Mithril pickaxe / war hammer</td></tr>
+</table>
+
+<h2 id="alloying">Alloying System (Alloying Furnace)</h2>
+<p>In MITE:BE, standard metal equipment can be <strong>upgraded through alloying</strong> in an Alloying Furnace. Alloying does NOT create alloys from raw materials — it transforms existing, <strong>fully-durable equipment</strong>.</p>
+<div class="warning-box">⚠️ <strong>Critical rule:</strong> Only <strong>100% durability (intact)</strong> tools and armor can be alloyed! Damaged items cannot be smelted.</div>
+
+<h3>Alloys</h3>
+<table class="compare-table">
+  <tr><th>Alloy</th><th>Base Equipment</th><th>Added Material</th><th>Result</th><th>Bonus (full set)</th></tr>
+  <tr style="background:rgba(205,127,50,0.12)"><td><strong>Bronze</strong></td><td>Full-durability Copper tool/armor</td><td>Tin Ingots</td><td>Bronze tool/armor</td><td>Fire duration −50% · Sprint Speed +20%</td></tr>
+  <tr style="background:rgba(192,192,128,0.12)"><td><strong>Silver Copper</strong></td><td>Full-durability Silver tool/armor</td><td>Copper Ingots</td><td>Silver Copper tool/armor</td><td>Fire duration −80% · All damage −10%</td></tr>
+  <tr style="background:rgba(180,180,180,0.12)"><td><strong>High Carbon Steel</strong></td><td>Full-durability Iron tool/armor</td><td>Carbon Crystal Shards</td><td>High Carbon Steel tool/armor</td><td>Damage −5%/piece · Acid-resistant · Chain-Mining ability</td></tr>
+</table>
+
+</div>
+
+<div data-lang="ru">
+
+<h2 id="copper-silver">Эпоха меди и серебра</h2>
+<p>Первые настоящие металлы! Крафти инструменты, оружие и броню из меди и серебра.</p>
+
+<h3>Серебряный бонус</h3>
+<p>Серебряное оружие наносит <strong>дополнительный урон нежити</strong>!</p>
+
+<div class="craft-section">
+  <CraftingGrid recipeOutput="copper_pickaxe" label={{hu: "Rézcsákány", en: "Copper Pickaxe"}}/>
+  <CraftingGrid recipeOutput="copper_sword" label={{hu: "Rézkard", en: "Copper Sword"}}/>
+  <CraftingGrid recipeOutput="silver_sword" label={{hu: "Ezüstkard", en: "Silver Sword"}}/>
+</div>
+
+<h2 id="alloys">Сплавы</h2>
+<p>В плавильной печи можно создавать сплавы, которые сильнее базовых металлов!</p>
+<table>
+  <tr><th>Сплав</th><th>Состав</th><th>Особая способность</th></tr>
+  <tr><td><span class="tier t-copper">Бронза</span></td><td>Медь + Олово</td><td>+20% скорость бега (полный комплект)</td></tr>
+  <tr><td><span class="tier t-silver">Серебряная медь</span></td><td>Серебро + Медь</td><td>-10% получаемый урон, дебафф-снижение</td></tr>
+  <tr><td><span class="tier t-iron">Углеродистая сталь</span></td><td>Железо + Угольный кристалл</td><td>5% снижение урона за предмет, цепная добыча</td></tr>
+</table>
+
+<h2 id="multiblock">Многоблочная печь</h2>
+<p>Для металлов с высокой температурой плавки (железо, мифрил, адамант) нужна многоблочная печь. Конструкция: полый куб 3×3×3 (26 блоков) + ядро печи на боковую стену.</p>
+
+<h2 id="iron">Железо и Сталь</h2>
+<p>Железо получается из многоблочной печи. Железная кирка позволяет добывать мифриловую руду!</p>
+
+<h2 id="metal-hierarchy">Иерархия металлов</h2>
+<table>
+  <tr><th>Уровень</th><th>Материал</th><th>Источник</th><th>Нужная кирка</th></tr>
+  <tr><td><span class="tier t-flint">1</span></td><td>Кремень</td><td>Из гравия</td><td>Голые руки</td></tr>
+  <tr><td><span class="tier t-copper">2</span></td><td>Медь</td><td>Сито / Шахта</td><td>Кремниевая кирка</td></tr>
+  <tr><td><span class="tier t-iron">4</span></td><td>Железо</td><td>Глубокие шахты</td><td>Медная/серебряная кирка</td></tr>
+  <tr><td><span class="tier t-hard">5</span></td><td>Твердокамень</td><td>Подземный мир</td><td>Железная кирка</td></tr>
+  <tr><td><span class="tier t-mithril">7</span></td><td>Мифрил</td><td>Глубокие шахты</td><td>Железная кирка / молот войны</td></tr>
+  <tr><td><span class="tier t-adamantium">8</span></td><td>Адамант</td><td>Незер</td><td>Мифриловая кирка / молот войны</td></tr>
+</table>
+
+</div>
+
+<RelatedPages
+  prev={{ href: `${base}/progression/furnaces/`, label: { hu: 'Kemencék & Olvasztás', en: 'Furnaces & Smelting', ru: 'Печи и плавка' } }}
+  next={{ href: `${base}/progression/underground/`, label: { hu: 'Földalatti Világ', en: 'Underground', ru: 'Подземный мир' } }}
+/>
+
+    </main>
+  </div>
+</BaseLayout>

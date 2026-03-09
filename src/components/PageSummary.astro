@@ -1,0 +1,34 @@
+---
+interface Props {
+  keyPoints: { hu: string[]; en: string[]; ru: string[] };
+  ruNotice?: boolean;
+}
+
+const { keyPoints, ruNotice = false } = Astro.props;
+---
+
+<div class="page-summary">
+  <div data-lang="hu">
+    <div class="page-summary-title">Fő Pontok</div>
+    <ul>
+      {keyPoints.hu.map(point => <li>{point}</li>)}
+    </ul>
+  </div>
+  <div data-lang="en">
+    <div class="page-summary-title">Key Points</div>
+    <ul>
+      {keyPoints.en.map(point => <li>{point}</li>)}
+    </ul>
+  </div>
+  <div data-lang="ru">
+    {ruNotice && (
+      <div class="page-summary-ru-notice">
+        ℹ Этот раздел пока содержит краткое описание. Полный перевод в процессе.
+      </div>
+    )}
+    <div class="page-summary-title">Ключевые моменты</div>
+    <ul>
+      {keyPoints.ru.map(point => <li>{point}</li>)}
+    </ul>
+  </div>
+</div>

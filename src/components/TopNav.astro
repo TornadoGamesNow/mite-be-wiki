@@ -5,30 +5,111 @@ interface Props {
 const { currentPage = '' } = Astro.props;
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const pages = [
-  { href: `${base}/`, id: 'home', hu: 'Kezdőlap', en: 'Home', ru: 'Главная' },
-  { href: `${base}/reference/`, id: 'reference', hu: 'Referencia', en: 'Reference', ru: 'Справочник' },
-  { href: `${base}/install/`, id: 'install', hu: 'Telepítés', en: 'Install', ru: 'Установка' },
-  { href: `${base}/faq/`, id: 'faq', hu: 'GYIK', en: 'FAQ', ru: 'FAQ' },
-  { href: `${base}/recipes/`, id: 'recipes', hu: 'Receptek', en: 'Recipes', ru: 'Рецепты' },
-  { href: `${base}/items/`, id: 'items', hu: 'Itemek', en: 'Items', ru: 'Предметы' },
-  { href: `${base}/mobs/`, id: 'mobs', hu: 'Bestiary', en: 'Bestiary', ru: 'Бестиарий' },
-  { href: `${base}/skills/`, id: 'skills', hu: 'Képességek', en: 'Skills', ru: 'Навыки' },
-  { href: `${base}/biomes/`, id: 'biomes', hu: 'Biome-ok', en: 'Biomes', ru: 'Биомы' },
-  { href: `${base}/brewing/`, id: 'brewing', hu: 'Brewing', en: 'Brewing', ru: 'Зельеварение' },
-  { href: `${base}/changelog/`, id: 'changelog', hu: 'Changelog', en: 'Changelog', ru: 'Журнал изменений' },
-];
+
+function isActive(ids: string[]): boolean {
+  return ids.includes(currentPage);
+}
 ---
 <nav class="top-nav">
   <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">&#9776;</button>
   <div class="top-nav-links">
-    {pages.map(p => (
-      <a href={p.href} aria-current={p.id === currentPage ? 'page' : undefined}>
-        <span data-lang="hu">{p.hu}</span>
-        <span data-lang="en">{p.en}</span>
-        <span data-lang="ru">{p.ru}</span>
-      </a>
-    ))}
+
+    <!-- Home -->
+    <a href={`${base}/`} aria-current={currentPage === 'home' ? 'page' : undefined}>
+      <span data-lang="hu">Kezdőlap</span>
+      <span data-lang="en">Home</span>
+      <span data-lang="ru">Главная</span>
+    </a>
+
+    <!-- Guide dropdown -->
+    <div class="nav-dropdown">
+      <button class="nav-dropdown-toggle" class:list={[{ active: isActive(['introduction','quick-start','game-modes','progression','systems']) }]}>
+        <span data-lang="hu">Guide ▾</span>
+        <span data-lang="en">Guide ▾</span>
+        <span data-lang="ru">Гайд ▾</span>
+      </button>
+      <div class="nav-dropdown-menu">
+        <a href={`${base}/introduction/`}>
+          <span data-lang="hu">Bevezetés</span>
+          <span data-lang="en">Introduction</span>
+          <span data-lang="ru">Введение</span>
+        </a>
+        <a href={`${base}/quick-start/`}>
+          <span data-lang="hu">Gyors kezdés</span>
+          <span data-lang="en">Quick Start</span>
+          <span data-lang="ru">Быстрый старт</span>
+        </a>
+        <a href={`${base}/progression/`}>
+          <span data-lang="hu">Haladás</span>
+          <span data-lang="en">Progression</span>
+          <span data-lang="ru">Прогресс</span>
+        </a>
+        <a href={`${base}/systems/`}>
+          <span data-lang="hu">Rendszerek</span>
+          <span data-lang="en">Systems</span>
+          <span data-lang="ru">Системы</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Reference dropdown -->
+    <div class="nav-dropdown">
+      <button class="nav-dropdown-toggle" class:list={[{ active: isActive(['recipes','items','mobs','biomes','brewing','reference']) }]}>
+        <span data-lang="hu">Referencia ▾</span>
+        <span data-lang="en">Reference ▾</span>
+        <span data-lang="ru">Справочник ▾</span>
+      </button>
+      <div class="nav-dropdown-menu">
+        <a href={`${base}/items/`}>
+          <span data-lang="hu">Itemek</span>
+          <span data-lang="en">Items</span>
+          <span data-lang="ru">Предметы</span>
+        </a>
+        <a href={`${base}/recipes/`}>
+          <span data-lang="hu">Receptek</span>
+          <span data-lang="en">Recipes</span>
+          <span data-lang="ru">Рецепты</span>
+        </a>
+        <a href={`${base}/mobs/`}>
+          <span data-lang="hu">Bestiary</span>
+          <span data-lang="en">Bestiary</span>
+          <span data-lang="ru">Бестиарий</span>
+        </a>
+        <a href={`${base}/biomes/`}>
+          <span data-lang="hu">Biome-ok</span>
+          <span data-lang="en">Biomes</span>
+          <span data-lang="ru">Биомы</span>
+        </a>
+        <a href={`${base}/brewing/`}>
+          <span data-lang="hu">Brewing</span>
+          <span data-lang="en">Brewing</span>
+          <span data-lang="ru">Зельеварение</span>
+        </a>
+        <a href={`${base}/reference/`}>
+          <span data-lang="hu">Referencia</span>
+          <span data-lang="en">Reference</span>
+          <span data-lang="ru">Справочник</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Standalone links -->
+    <a href={`${base}/install/`} aria-current={currentPage === 'install' ? 'page' : undefined}>
+      <span data-lang="hu">Telepítés</span>
+      <span data-lang="en">Install</span>
+      <span data-lang="ru">Установка</span>
+    </a>
+    <a href={`${base}/faq/`} aria-current={currentPage === 'faq' ? 'page' : undefined}>
+      <span data-lang="hu">GYIK</span>
+      <span data-lang="en">FAQ</span>
+      <span data-lang="ru">FAQ</span>
+    </a>
+    <a href={`${base}/changelog/`} aria-current={currentPage === 'changelog' ? 'page' : undefined}>
+      <span data-lang="hu">Changelog</span>
+      <span data-lang="en">Changelog</span>
+      <span data-lang="ru">Changelog</span>
+    </a>
+
   </div>
   <div class="wiki-search" id="wiki-search">
     <input type="text" class="wiki-search-input" id="wiki-search-input" autocomplete="off" />
@@ -46,6 +127,30 @@ const pages = [
       links.classList.toggle('open');
     });
   }
+
+  // Mobile: click toggle for dropdowns
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      const dropdown = (toggle as HTMLElement).closest('.nav-dropdown');
+      const menu = dropdown?.querySelector('.nav-dropdown-menu') as HTMLElement | null;
+      if (!menu) return;
+      const isOpen = menu.style.display === 'block';
+      // Close all
+      document.querySelectorAll('.nav-dropdown-menu').forEach((m: Element) => {
+        (m as HTMLElement).style.display = '';
+      });
+      if (!isOpen) menu.style.display = 'block';
+    });
+  });
+
+  // Close dropdown on outside click
+  document.addEventListener('click', (e) => {
+    if (!(e.target as HTMLElement).closest('.nav-dropdown')) {
+      document.querySelectorAll('.nav-dropdown-menu').forEach((m: Element) => {
+        (m as HTMLElement).style.display = '';
+      });
+    }
+  });
 </script>
 
 <script is:inline>
@@ -71,7 +176,6 @@ const pages = [
 
     function initPagefind() {
       if (pagefind) return Promise.resolve(pagefind);
-      var base = document.querySelector('link[rel="canonical"]');
       var prefix = '/mite-be-wiki';
       return import(prefix + '/pagefind/pagefind.js').then(function(pf) {
         pagefind = pf;

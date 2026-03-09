@@ -1,0 +1,43 @@
+---
+type Step = 'early-game' | 'furnaces' | 'metal-ages' | 'underground' | 'late-game' | 'nether' | 'endgame';
+
+interface Props {
+  current: Step;
+}
+
+const { current } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const steps: { id: Step; hu: string; en: string; ru: string; icon: string }[] = [
+  { id: 'early-game',  hu: 'Korai',   en: 'Early',     ru: 'Начало',  icon: '🪨' },
+  { id: 'furnaces',    hu: 'Kemence', en: 'Furnaces',  ru: 'Печи',    icon: '🔥' },
+  { id: 'metal-ages',  hu: 'Fémek',   en: 'Metals',    ru: 'Металлы', icon: '⚙' },
+  { id: 'underground', hu: 'Föld',    en: 'Underground',ru: 'Земля',  icon: '⛏' },
+  { id: 'late-game',   hu: 'Késő',    en: 'Late',      ru: 'Поздно',  icon: '🌟' },
+  { id: 'nether',      hu: 'Nether',  en: 'Nether',    ru: 'Незер',   icon: '🌋' },
+  { id: 'endgame',     hu: 'Vége',    en: 'Endgame',   ru: 'Конец',   icon: '👑' },
+];
+---
+
+<div class="progression-breadcrumb">
+  {steps.map((step, i) => (
+    <>
+      {i > 0 && <span class="pb-sep">›</span>}
+      {step.id === current ? (
+        <span class="pb-node pb-current">
+          {step.icon}
+          <span data-lang="hu">{step.hu}</span>
+          <span data-lang="en">{step.en}</span>
+          <span data-lang="ru">{step.ru}</span>
+        </span>
+      ) : (
+        <a href={`${base}/progression/${step.id}/`} class="pb-node pb-other">
+          {step.icon}
+          <span data-lang="hu">{step.hu}</span>
+          <span data-lang="en">{step.en}</span>
+          <span data-lang="ru">{step.ru}</span>
+        </a>
+      )}
+    </>
+  ))}
+</div>

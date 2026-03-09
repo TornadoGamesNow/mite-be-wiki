@@ -1,0 +1,206 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import TopNav from '../components/TopNav.astro';
+import Sidebar from '../components/Sidebar.astro';
+import PageSummary from '../components/PageSummary.astro';
+import RelatedPages from '../components/RelatedPages.astro';
+import { getSidebarGroups } from '../data/sidebar-config.ts';
+import '../styles/global.css';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const sidebarGroups = getSidebarGroups('introduction');
+---
+<BaseLayout title="Bevezetés — MITE:BE Wiki">
+  <Header />
+  <TopNav currentPage="home" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<PageSummary keyPoints={{
+  hu: [
+    'Fát sem lehet kézzel törni — mindent alulról kell felépíteni',
+    'A progresszió lineáris — minden fázis blokkolja a következőt',
+    'Simple módban kezdj — a Hardcore alapjaiban más',
+  ],
+  en: [
+    'You cannot punch trees — everything must be built from scratch',
+    'Progression is linear — every phase blocks the next',
+    'Start in Simple mode — Hardcore differs fundamentally',
+  ],
+  ru: [
+    'Нельзя рубить деревья — всё строится с нуля',
+    'Прогресс линейный — каждый этап блокирует следующий',
+    'Начинай в Simple — Hardcore принципиально другой',
+  ],
+}} />
+
+<div data-lang="hu">
+<h2 id="intro">Mi a MITE:BE?</h2>
+<p>A <strong>MITE:BE</strong> (Minecraft Is Too Easy: Break Everything) egy rendkívül nehéz túlélési mod a Minecraft 1.6.4-hez. A vanilla Minecrafthoz képest a játék teljesen átdolgozott fejlődési rendszert kínál, ahol nem léphetsz egyből a kőkorszakból a gyémánt korszakba — ehelyett lépésről lépésre kell haladnod, kezdve a csupasz kézzel való túléléstől egészen az adamantium felszereléssel történő Ender-sárkány legyőzéséig.</p>
+
+<div class="info-box">🎮 <strong>Fontos:</strong> A MITE:BE Minecraft 1.6.4-hez készült mod. A wiki a <strong>v0.9.0</strong> verzióra vonatkozik.</div>
+
+<h3>Fejlődési Útvonal</h3>
+<div class="prog-tree">
+<span class="prog-node n-fiber"><img src="/mite-be-wiki/img/items/plant_fiber.png" alt="">Növényszál</span>
+<span class="prog-arrow">→</span><span class="prog-node n-fiber"><img src="/mite-be-wiki/img/items/straw_rope.png" alt="">Szalmakötél</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/shards/flint.png" alt="">Kovakés</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/crafting_table_front.png" alt="">Munkaasztal</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/sieve.png" alt="">Szita</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/items/clay_furnace_idle.png" alt="">Agyagkemence</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/items/stone_furnace_idle.png" alt="">Kőkemence</span>
+<span class="prog-arrow">→</span><span class="prog-node n-copper"><img src="/mite-be-wiki/img/ingots/copper.png" alt="">Réz</span>
+<span class="prog-arrow">→</span><span class="prog-node n-silver"><img src="/mite-be-wiki/img/ingots/silver.png" alt="">Ezüst</span>
+<span class="prog-arrow">→</span><span class="prog-node n-iron"><img src="/mite-be-wiki/img/items/iron_ingot.png" alt="">Vas</span>
+<span class="prog-arrow">→</span><span class="prog-node n-hard"><img src="/mite-be-wiki/img/ingots/hardstone.png" alt="">Keménykő</span>
+<span class="prog-arrow">→</span><span class="prog-node n-underground">🕳️ Földalatti világ</span>
+<span class="prog-arrow">→</span><span class="prog-node n-ancient"><img src="/mite-be-wiki/img/ingots/ancient_metal.png" alt="">Ősi Fém</span>
+<span class="prog-arrow">→</span><span class="prog-node n-mithril"><img src="/mite-be-wiki/img/ingots/mithril.png" alt="">Mithril</span>
+<span class="prog-arrow">→</span><span class="prog-node n-nether">🔥 Alvilág (Nether)</span>
+<span class="prog-arrow">→</span><span class="prog-node n-adam"><img src="/mite-be-wiki/img/ingots/adamantium.png" alt="">Adamantium</span>
+<span class="prog-arrow">→</span><span class="prog-node n-end">Ender-sárkány</span>
+</div>
+
+<h3>Mire számíts?</h3>
+<ul>
+  <li><strong>Az első éjszaka:</strong> Valószínűleg nem lesz fáklyád. Ez normális. Mássz fel egy fára.</li>
+  <li><strong>Az első napok:</strong> Semmi fém. Csak kovakő, szalmakötél és növényszál.</li>
+  <li><strong>Az első kemence:</strong> Agyagból kell megépíteni — kő kemence csak ezután jöhet.</li>
+  <li><strong>Az első fém:</strong> Kavics szitálásból kapott ércdarabokból — ezért kell a szita!</li>
+  <li><strong>A progresszió blokkoló:</strong> Nem tudsz Vascsákány nélkül Keménykőt bányászni. Nincs rövidút.</li>
+</ul>
+
+<h3>Hogyan olvasd ezt a wikit?</h3>
+<div class="info-box">📚 <strong>Ajánlott olvasási sorrend:</strong>
+<ol style="margin:6px 0 0 0">
+  <li><strong>Bevezetés</strong> (ez az oldal) — Mi a MITE:BE és mit várhatsz</li>
+  <li><a href={`${base}/quick-start/`}><strong>Gyors Kezdés</strong></a> — Az első napok döntései és prioritásai</li>
+  <li><a href={`${base}/game-modes/`}><strong>Játékmódok</strong></a> — Simple vs. Hardcore, az új mechanikák áttekintése</li>
+  <li><a href={`${base}/systems/`}><strong>Rendszerek</strong></a> — Mélyebb megértés (táplálkozás, harc, képességek)</li>
+  <li><a href={`${base}/progression/`}><strong>Haladás</strong></a> — Részletes fázis útmutatók</li>
+</ol></div>
+
+<h3>A Szint &amp; XP Rendszer</h3>
+<p>A MITE:BE-ben a <strong>szintednek</strong> közvetlen hatása van a játékmenetre. A szint <strong>-40-tól +200-ig</strong> terjedhet — a halál XP-t von le, így a szinted csökkenhet!</p>
+
+<table class="compare-table">
+  <tr><th>Szint</th><th>XP szükséges</th><th>Max. HP</th><th>Bányászat</th><th>Barkácsolási sebesség</th></tr>
+  <tr><td>0</td><td>0</td><td>3♥</td><td>0%</td><td>0%</td></tr>
+  <tr><td>5</td><td>200</td><td>4♥</td><td>0%</td><td>+10%</td></tr>
+  <tr><td>15</td><td>1 350</td><td>5♥</td><td>+10%</td><td>+30%</td></tr>
+  <tr><td>30</td><td>4 950</td><td>7♥</td><td>+10%</td><td>+60%</td></tr>
+  <tr><td>50</td><td>13 250</td><td>10♥</td><td>+20%</td><td>+100%</td></tr>
+</table>
+<div class="info-box">⚠️ <strong>Negatív szinten</strong> a Barkácsolás lassabb lesz (–2%/szint). A halál szintet von le — ezért értékes a szinted.</div>
+</div>
+
+<div data-lang="en">
+<h2 id="intro-en">What is MITE:BE?</h2>
+<p><strong>MITE:BE</strong> (Minecraft Is Too Easy: Break Everything) is an extremely hardcore survival mod for Minecraft 1.6.4. Unlike vanilla Minecraft, you can't just punch a tree and rush to diamonds — instead, you must progress step by step through a completely redesigned crafting and material system, starting from gathering grass with your bare hands all the way to defeating the Ender Dragon with adamantium gear.</p>
+
+<div class="info-box">🎮 <strong>Note:</strong> MITE:BE is a mod for Minecraft 1.6.4. This wiki covers <strong>v0.9.0</strong>.</div>
+
+<h3>Progression Path</h3>
+<div class="prog-tree">
+<span class="prog-node n-fiber"><img src="/mite-be-wiki/img/items/plant_fiber.png" alt="">Plant Fiber</span>
+<span class="prog-arrow">→</span><span class="prog-node n-fiber"><img src="/mite-be-wiki/img/items/straw_rope.png" alt="">Straw Rope</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/shards/flint.png" alt="">Flint Knife</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/crafting_table_front.png" alt="">Workbench</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/sieve.png" alt="">Sieve</span>
+<span class="prog-arrow">→</span><span class="prog-node n-copper"><img src="/mite-be-wiki/img/ingots/copper.png" alt="">Copper</span>
+<span class="prog-arrow">→</span><span class="prog-node n-silver"><img src="/mite-be-wiki/img/ingots/silver.png" alt="">Silver</span>
+<span class="prog-arrow">→</span><span class="prog-node n-iron"><img src="/mite-be-wiki/img/items/iron_ingot.png" alt="">Iron</span>
+<span class="prog-arrow">→</span><span class="prog-node n-hard"><img src="/mite-be-wiki/img/ingots/hardstone.png" alt="">Hardstone</span>
+<span class="prog-arrow">→</span><span class="prog-node n-underground">🕳️ Underground</span>
+<span class="prog-arrow">→</span><span class="prog-node n-ancient"><img src="/mite-be-wiki/img/ingots/ancient_metal.png" alt="">Ancient Metal</span>
+<span class="prog-arrow">→</span><span class="prog-node n-mithril"><img src="/mite-be-wiki/img/ingots/mithril.png" alt="">Mithril</span>
+<span class="prog-arrow">→</span><span class="prog-node n-nether">🔥 The Nether</span>
+<span class="prog-arrow">→</span><span class="prog-node n-adam"><img src="/mite-be-wiki/img/ingots/adamantium.png" alt="">Adamantium</span>
+<span class="prog-arrow">→</span><span class="prog-node n-end">Ender Dragon</span>
+</div>
+
+<h3>What to expect?</h3>
+<ul>
+  <li><strong>First night:</strong> You probably won't have a torch. This is normal. Climb a tree.</li>
+  <li><strong>First days:</strong> No metal. Only flint, straw rope and plant fiber.</li>
+  <li><strong>First furnace:</strong> Built from clay — stone furnace comes after.</li>
+  <li><strong>First metal:</strong> From ore fragments obtained by sieving gravel — that's why you need the sieve!</li>
+  <li><strong>Progression is blocking:</strong> You can't mine Hardstone without an Iron Pickaxe. No shortcuts.</li>
+</ul>
+
+<h3>How to use this wiki?</h3>
+<div class="info-box">📚 <strong>Recommended reading order:</strong>
+<ol style="margin:6px 0 0 0">
+  <li><strong>Introduction</strong> (this page) — What MITE:BE is and what to expect</li>
+  <li><a href={`${base}/quick-start/`}><strong>Quick Start</strong></a> — First day decisions and priorities</li>
+  <li><a href={`${base}/game-modes/`}><strong>Game Modes</strong></a> — Simple vs. Hardcore, new mechanics overview</li>
+  <li><a href={`${base}/systems/`}><strong>Systems</strong></a> — Deeper understanding (nutrition, combat, skills)</li>
+  <li><a href={`${base}/progression/`}><strong>Progression</strong></a> — Detailed phase guides</li>
+</ol></div>
+
+<h3>Level &amp; XP System</h3>
+<p>In MITE:BE, your <strong>level</strong> has a direct impact on gameplay. Level can range from <strong>-40 to +200</strong> — death deducts XP, so your level can decrease!</p>
+
+<table class="compare-table">
+  <tr><th>Level</th><th>XP needed</th><th>Max HP</th><th>Mining</th><th>Crafting speed</th></tr>
+  <tr><td>0</td><td>0</td><td>3♥</td><td>0%</td><td>0%</td></tr>
+  <tr><td>5</td><td>200</td><td>4♥</td><td>0%</td><td>+10%</td></tr>
+  <tr><td>15</td><td>1 350</td><td>5♥</td><td>+10%</td><td>+30%</td></tr>
+  <tr><td>30</td><td>4 950</td><td>7♥</td><td>+10%</td><td>+60%</td></tr>
+  <tr><td>50</td><td>13 250</td><td>10♥</td><td>+20%</td><td>+100%</td></tr>
+</table>
+<div class="info-box">⚠️ <strong>At negative levels</strong> crafting slows down (–2%/level). Death deducts level — so your level is precious.</div>
+</div>
+
+<div data-lang="ru">
+<h2 id="intro-ru">Что такое MITE:BE?</h2>
+<p><strong>MITE:BE</strong> (Minecraft Is Too Easy: Break Everything) — крайне хардкорный мод на выживание для Minecraft 1.6.4. В отличие от обычного Minecraft, здесь нельзя просто срубить дерево и быстро добраться до алмазов: прогресс строится поэтапно, через полностью переработанные материалы и систему крафта, от сбора травы голыми руками до победы над Драконом Края в адамантиевом снаряжении.</p>
+
+<h3>Путь прогрессии</h3>
+<div class="prog-tree">
+<span class="prog-node n-fiber"><img src="/mite-be-wiki/img/items/plant_fiber.png" alt="">Растительное волокно</span>
+<span class="prog-arrow">→</span><span class="prog-node n-fiber"><img src="/mite-be-wiki/img/items/straw_rope.png" alt="">Соломенная верёвка</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/shards/flint.png" alt="">Кремнёвый нож</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/crafting_table_front.png" alt="">Верстак</span>
+<span class="prog-arrow">→</span><span class="prog-node n-copper"><img src="/mite-be-wiki/img/ingots/copper.png" alt="">Медь</span>
+<span class="prog-arrow">→</span><span class="prog-node n-iron"><img src="/mite-be-wiki/img/items/iron_ingot.png" alt="">Железо</span>
+<span class="prog-arrow">→</span><span class="prog-node n-hard"><img src="/mite-be-wiki/img/ingots/hardstone.png" alt="">Твердокамень</span>
+<span class="prog-arrow">→</span><span class="prog-node n-underground">🕳️ Подземный мир</span>
+<span class="prog-arrow">→</span><span class="prog-node n-ancient"><img src="/mite-be-wiki/img/ingots/ancient_metal.png" alt="">Древний металл</span>
+<span class="prog-arrow">→</span><span class="prog-node n-mithril"><img src="/mite-be-wiki/img/ingots/mithril.png" alt="">Мифрил</span>
+<span class="prog-arrow">→</span><span class="prog-node n-nether">🔥 Незер</span>
+<span class="prog-arrow">→</span><span class="prog-node n-adam"><img src="/mite-be-wiki/img/ingots/adamantium.png" alt="">Адамант</span>
+<span class="prog-arrow">→</span><span class="prog-node n-end">Дракон Края</span>
+</div>
+
+<h3>Чего ожидать?</h3>
+<ul>
+  <li><strong>Первая ночь:</strong> У вас, скорее всего, не будет факела. Это нормально. Залезайте на дерево.</li>
+  <li><strong>Первые дни:</strong> Никакого металла — только кремень, соломенная верёвка и растительное волокно.</li>
+  <li><strong>Прогресс блокирующий:</strong> Без железной кирки нельзя добыть твердокамень. Никаких сокращений.</li>
+</ul>
+
+<h3>Как читать эту вики?</h3>
+<div class="info-box">📚 <strong>Рекомендуемый порядок чтения:</strong>
+<ol style="margin:6px 0 0 0">
+  <li><strong>Введение</strong> (эта страница)</li>
+  <li><a href={`${base}/quick-start/`}><strong>Быстрый старт</strong></a></li>
+  <li><a href={`${base}/game-modes/`}><strong>Режимы игры</strong></a></li>
+  <li><a href={`${base}/systems/`}><strong>Системы</strong></a></li>
+  <li><a href={`${base}/progression/`}><strong>Прогресс</strong></a></li>
+</ol></div>
+</div>
+
+<RelatedPages
+  next={{ href: `${base}/quick-start/`, label: { hu: 'Gyors Kezdés', en: 'Quick Start', ru: 'Быстрый старт' } }}
+  related={[
+    { href: `${base}/install/`, label: { hu: 'Telepítés', en: 'Installation', ru: 'Установка' } },
+    { href: `${base}/faq/`, label: { hu: 'GYIK (FAQ)', en: 'FAQ', ru: 'FAQ' } },
+  ]}
+/>
+
+  </main>
+    </div>
+</BaseLayout>

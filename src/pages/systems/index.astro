@@ -1,0 +1,142 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import TopNav from '../../components/TopNav.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import '../../styles/global.css';
+
+import { getSidebarGroups } from '../../data/sidebar-config.ts';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const sidebarGroups = getSidebarGroups('systems');
+---
+<BaseLayout title="Játékrendszerek | MITE:BE Wiki">
+  <Header />
+  <TopNav currentPage="systems" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<div data-lang="hu">
+<h2>⚙ A MITE:BE Játékrendszerei</h2>
+<p>A MITE:BE számos összetett rendszerrel bővíti ki a Minecraft alapmechanikáit. Ezek a rendszerek egymással kölcsönhatásban alakítják a túlélési tapasztalatot.</p>
+
+<div class="hub-grid">
+  <a href={`${base}/systems/nutrition/`} class="hub-card" style="--card-accent: var(--green)">
+    <div class="hub-card-icon">🍖</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Táplálkozás</div>
+      <div class="hub-card-desc">Étrend egyensúly, tápanyagok, víz és hidratáció. Egyoldalú étkezés alultápláltságot okoz!</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/systems/combat/`} class="hub-card" style="--card-accent: var(--accent)">
+    <div class="hub-card-icon">⚔</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Harc</div>
+      <div class="hub-card-desc">Páncélok, fegyverek, varázslat, távolsági harc íjjal és nyilakkal.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/systems/survival/`} class="hub-card" style="--card-accent: var(--copper)">
+    <div class="hub-card-icon">🎒</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Túlélés</div>
+      <div class="hub-card-desc">Hátizsákok, hőmérséklet-kezelés, tudáskönyvek és egyéb túlélési mechanikák.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/systems/skills/`} class="hub-card" style="--card-accent: var(--gold)">
+    <div class="hub-card-icon">📜</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Képességek</div>
+      <div class="hub-card-desc">11 szakma (kovácsmesterség, ácsmesterség, főzés stb.) és tudáskönyvek rendszere.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+</div>
+</div>
+
+<div data-lang="en">
+<h2>⚙ MITE:BE Game Systems</h2>
+<p>MITE:BE extends Minecraft's base mechanics with numerous complex systems. These systems interact with each other to shape the survival experience.</p>
+
+<div class="hub-grid">
+  <a href={`${base}/systems/nutrition/`} class="hub-card" style="--card-accent: var(--green)">
+    <div class="hub-card-icon">🍖</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Nutrition</div>
+      <div class="hub-card-desc">Diet balance, nutrients, water and hydration. One-sided eating causes malnutrition!</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/systems/combat/`} class="hub-card" style="--card-accent: var(--accent)">
+    <div class="hub-card-icon">⚔</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Combat</div>
+      <div class="hub-card-desc">Armor, weapons, enchanting, ranged combat with bows and arrows.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/systems/survival/`} class="hub-card" style="--card-accent: var(--copper)">
+    <div class="hub-card-icon">🎒</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Survival</div>
+      <div class="hub-card-desc">Backpacks, temperature management, knowledge books, and other survival mechanics.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/systems/skills/`} class="hub-card" style="--card-accent: var(--gold)">
+    <div class="hub-card-icon">📜</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Skills</div>
+      <div class="hub-card-desc">11 professions (blacksmithing, carpentry, cooking etc.) and the Knowledge Books system.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+</div>
+</div>
+
+<div data-lang="ru">
+<h2>⚙ Игровые системы MITE:BE</h2>
+<p>MITE:BE расширяет базовую механику Minecraft множеством сложных систем, которые взаимодействуют друг с другом и формируют опыт выживания.</p>
+
+<div class="hub-grid">
+  <a href={`${base}/systems/nutrition/`} class="hub-card" style="--card-accent: var(--green)">
+    <div class="hub-card-icon">🍖</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Питание</div>
+      <div class="hub-card-desc">Баланс рациона, питательные вещества, вода и гидратация. Однобокое питание вызывает недоедание!</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/systems/combat/`} class="hub-card" style="--card-accent: var(--accent)">
+    <div class="hub-card-icon">⚔</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Бой</div>
+      <div class="hub-card-desc">Броня, оружие, зачарование, дальний бой с луком и стрелами.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/systems/survival/`} class="hub-card" style="--card-accent: var(--copper)">
+    <div class="hub-card-icon">🎒</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Выживание</div>
+      <div class="hub-card-desc">Рюкзаки, управление температурой, книги знаний и другие механики выживания.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/systems/skills/`} class="hub-card" style="--card-accent: var(--gold)">
+    <div class="hub-card-icon">📜</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Навыки</div>
+      <div class="hub-card-desc">11 профессий (кузнечное дело, плотницкое дело, кулинария и др.) и система Книг знаний.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+</div>
+</div>
+
+    </main>
+  </div>
+</BaseLayout>

@@ -4,76 +4,10 @@ import Header from '../components/Header.astro';
 import TopNav from '../components/TopNav.astro';
 import Sidebar from '../components/Sidebar.astro';
 import '../styles/global.css';
+import { getSidebarGroups } from '../data/sidebar-config.ts';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-const sidebarGroups = {
-  hu: [
-    {
-      title: '🏠 Navigáció',
-      links: [
-        { href: './', label: '← Wiki főoldal' },
-      ],
-    },
-    {
-      title: '📋 Referenciák',
-      links: [
-        { href: '#mobs', label: 'Mobs & Creatures' },
-        { href: '#potions', label: 'Potions & Effects' },
-        { href: '#potions', label: '↳ Sajtkészítés' },
-        { href: '#quality', label: 'Munkaasztal szintek' },
-        { href: '#blood-moon', label: 'Blood Moon' },
-        { href: '#fog-event', label: 'Fog Event' },
-        { href: '#Teljesítménys', label: 'Teljesítmények' },
-        { href: '#keybinds', label: 'Keybindings' },
-        { href: '#Építménys', label: '🏛️ Structures' },
-      ],
-    },
-  ],
-  en: [
-    {
-      title: '🏠 Navigation',
-      links: [
-        { href: './', label: '← Main wiki' },
-      ],
-    },
-    {
-      title: '📋 Reference',
-      links: [
-        { href: '#mobs', label: 'Mobs & Creatures' },
-        { href: '#potions', label: 'Potions & Effects' },
-        { href: '#potions', label: '↳ Cheese Crafting' },
-        { href: '#quality', label: 'Workbench Tiers' },
-        { href: '#blood-moon', label: 'Blood Moon' },
-        { href: '#fog-event', label: 'Fog Event' },
-        { href: '#achievements', label: 'Achievements' },
-        { href: '#keybinds', label: 'Keybindings' },
-        { href: '#structures', label: '🏛️ Structures' },
-      ],
-    },
-  ],
-  ru: [
-    {
-      title: '🏠 Навигация',
-      links: [
-        { href: './', label: '← Главная вики' },
-      ],
-    },
-    {
-      title: '📋 Справочник',
-      links: [
-        { href: '#mobs-ru', label: 'Мобы и существа' },
-        { href: '#potions-ru', label: 'Зелья и эффекты' },
-        { href: '#potions-ru', label: '↳ Изготовление сыра' },
-        { href: '#quality-ru', label: 'Уровни верстаков' },
-        { href: '#blood-moon-ru', label: 'Кровавая луна' },
-        { href: '#fog-event-ru', label: 'Событие тумана' },
-        { href: '#achievements-ru', label: 'Достижения' },
-        { href: '#keybinds-ru', label: 'Управление' },
-        { href: '#structures-ru', label: '🏛️ Структуры' },
-      ],
-    },
-  ],
-};
+const sidebarGroups = getSidebarGroups('reference');
 ---
 
 <BaseLayout title="Referenciák — MITE: Break Everything Wiki">

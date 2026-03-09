@@ -1,0 +1,205 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import TopNav from '../../components/TopNav.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import PageSummary from '../../components/PageSummary.astro';
+import ProgressionBreadcrumb from '../../components/ProgressionBreadcrumb.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import '../../styles/global.css';
+
+import { getSidebarGroups } from '../../data/sidebar-config.ts';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const sidebarGroups = getSidebarGroups('progression/endgame');
+---
+<BaseLayout title="Végső Kihívás | MITE:BE Wiki">
+  <Header />
+  <TopNav currentPage="progression" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<ProgressionBreadcrumb current="endgame" />
+
+<PageSummary keyPoints={{
+  hu: [
+    'Wither — Nether Csillag — Bedrock Porzó — End Portal',
+    'Porzót a Nether bedrock magjára kell helyezni — Adamantium csákánnyal visszavehető',
+    'Ender Sárkány: 100 HP (Simple) / 1000 HP (Hardcore) — Mithril íj + Adamantium nyíl',
+  ],
+  en: [
+    'Wither — Nether Star — Bedrock Pulverizer — End Portal',
+    'Pulverizer placed on Nether bedrock core — retrieved with Adamantium pickaxe',
+    'Ender Dragon: 100 HP (Simple) / 1000 HP (Hardcore) — Mithril bow + Adama arrows',
+  ],
+  ru: [
+    'Иссушитель — Звезда Незера — Дробитель Бедрока — Портал в Край',
+    'Дробитель на ядро бедрока в Незере — забрать кайлом из адаманта',
+    'Дракон Края: 100 HP (Simple) / 1000 HP (Hardcore) — лук мифрил + стрелы адамант',
+  ],
+}} />
+
+<div data-lang="hu">
+
+<!-- ===== WITHER ===== -->
+
+<h2 id="wither">Wither Boss</h2>
+<p>A Hervadt Rózsát Lélekporba ültetve <strong>Wither-csontváz aratókat</strong> idézhetsz. Győzd le a Wither bosst!</p>
+<p>A Wither legyőzése után <strong>Alvilág (Nether)-csillagot (Pokol Csillag)</strong> kapsz — ez nélkülözhetetlen az Alapkőzet-zúzó elkészítéséhez!</p>
+
+<div class="tip-card">💡 <strong>Wither stratégia:</strong> Teljes Mithril vagy Adamantium páncél ajánlott. A Wither sebzése lerombolja a blokkokat, ezért zárt térben érdemes harcolni. Mithril íj rendkívül hatékony ellene.</div>
+
+
+<!-- ===== BEDROCK PULVERIZER ===== -->
+
+<h2 id="bedrock-pulverizer">Alapkőzet-zúzó</h2>
+<p>A MITE:BE végső gépe!</p>
+
+<div class="flow">
+  <span class="flow-item">Alvilág (Nether)-csillag</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Alapkőzet-zúzó készítés</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Alvilág (Nether) aljára helyezés</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Alapkő-magra</span>
+</div>
+
+<p>Erősített Ender-szemmel aktiváld a gépet a mag elpusztításához!</p>
+
+<div class="warning-box">⚠️ Az alapkő-mag elpusztításakor End-portál nyílik! <strong>Adamantium csákánnyal ásd ki az Alapkőzet-zúzót</strong> — szükséged lesz még rá!</div>
+
+
+<!-- ===== THE END ===== -->
+
+<h2 id="the-end">Az End</h2>
+<p>Az alapkő-mag elpusztítása után megnyílik az End-portál. Irány az End!</p>
+<p>Az Endben az <strong>Ender-sárkány</strong> vár rád, End-kristályokkal védve.</p>
+
+
+<!-- ===== ENDER DRAGON ===== -->
+
+<h2 id="ender-dragon">Ender-sárkány Legyőzése</h2>
+<div class="info-box">🎮 <strong>Mód-különbség:</strong> Az Ender-sárkány HP-ja módtól függ: Simple módban <strong>100 HP</strong>, Hardcore módban <strong>1000 HP</strong>! A Hardcore sárkány elleni felkészülés lényegesen komolyabb felszerelést és stratégiát igényel.</div>
+<p>A végső csata!</p>
+<ol>
+  <li><strong>Ender-kristályok elpusztítása</strong> — Adamantium csákánnyal vagy nyíllal! Ha nem pusztítod el őket, a sárkány folyamatosan gyógyul.</li>
+  <li><strong>A sárkány legyőzése</strong> — Íjjal és közelharci fegyverekkel. Mithril íj + Adamantium-nyíl a legjobb kombináció.</li>
+  <li><strong>Hazaút</strong> — A sárkány legyőzése után End-portálon keresztül visszakerülsz a fővilágba.</li>
+</ol>
+
+<div class="tip">Ha az Ender-sárkány meghal, az összes jelenlévő játékos megkapja a teljesítményt!</div>
+
+</div>
+
+<div data-lang="en">
+
+<!-- ===== WITHER ===== -->
+
+<h2 id="wither">Wither Boss</h2>
+<p>Plant the Wither Rose in Soul Sand to summon <strong>Wither Skeleton Reapers</strong>. Defeat the Wither boss!</p>
+<p>Defeating the Wither drops a <strong>Nether Star</strong> — essential for crafting the Bedrock Pulverizer!</p>
+
+<div class="tip-card">💡 <strong>Wither strategy:</strong> Full Mithril or Adamantium armor recommended. The Wither's damage destroys blocks, so fighting in an enclosed space is advised. A Mithril bow is extremely effective against it.</div>
+
+
+<!-- ===== BEDROCK PULVERIZER ===== -->
+
+<h2 id="bedrock-pulverizer">Bedrock Pulverizer</h2>
+<p>The ultimate machine in MITE:BE!</p>
+
+<div class="flow">
+  <span class="flow-item">Nether Star</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Craft Bedrock Pulverizer</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Place on the Nether's bedrock floor</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">On the Bedrock Core</span>
+</div>
+
+<p>Activate the machine with a <strong>Reinforced Eye of Ender</strong> to destroy the core!</p>
+
+<div class="warning-box">⚠️ When the bedrock core is destroyed, an End Portal opens! <strong>Mine the Bedrock Pulverizer with an adamantium pickaxe</strong> — you'll still need it!</div>
+
+
+<!-- ===== THE END ===== -->
+
+<h2 id="the-end">The End</h2>
+<p>After destroying the bedrock core, the End Portal opens. Time to enter The End!</p>
+<p>The <strong>Ender Dragon</strong> awaits, protected by End Crystals.</p>
+
+
+<!-- ===== ENDER DRAGON ===== -->
+
+<h2 id="ender-dragon">Defeating the Ender Dragon</h2>
+<div class="info-box">🎮 <strong>Mode difference:</strong> The Ender Dragon's HP depends on game mode: Simple mode <strong>100 HP</strong>, Hardcore mode <strong>1000 HP</strong>! Preparing for the Hardcore dragon requires significantly better gear and strategy.</div>
+<p>The final battle!</p>
+<ol>
+  <li><strong>Destroy the End Crystals</strong> — Use adamantium pickaxe or arrows! If you don't destroy them, the dragon heals continuously.</li>
+  <li><strong>Defeat the Dragon</strong> — Bow and melee weapons. Mithril bow + adamantium arrows is the best combo.</li>
+  <li><strong>Return Home</strong> — After defeating the dragon, use the End Portal to return to the overworld.</li>
+</ol>
+
+<div class="tip">When the Ender Dragon dies, all players present receive the achievement!</div>
+
+</div>
+
+<div data-lang="ru">
+
+<!-- ===== WITHER ===== -->
+
+<h2 id="wither">Иссушитель (Wither Boss)</h2>
+<p>Посади Цветок Иссушителя в Песок Душ, чтобы призвать <strong>Жнецов-скелетов Иссушителя</strong>. Победи Иссушителя!</p>
+<p>После победы над Иссушителем получишь <strong>Звезду Незера</strong> — необходима для создания Дробилки коренной породы!</p>
+
+<div class="tip-card">💡 <strong>Стратегия против Иссушителя:</strong> Рекомендуется полный комплект Мифрила или Адаманта. Иссушитель разрушает блоки, поэтому лучше сражаться в замкнутом пространстве. Мифриловый лук очень эффективен.</div>
+
+<!-- ===== BEDROCK PULVERIZER ===== -->
+
+<h2 id="bedrock-pulverizer">Дробилка коренной породы</h2>
+<p>Финальная машина в MITE:BE!</p>
+
+<div class="flow">
+  <span class="flow-item">Звезда Незера</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Создать Дробилку</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Поставить на дно Незера</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">На ядро коренной породы</span>
+</div>
+
+<p>Активируй машину <strong>Усиленным Эндер-глазом</strong>, чтобы уничтожить ядро!</p>
+
+<div class="warning-box">⚠️ При уничтожении ядра коренной породы открывается Портал в Энд! <strong>Добудь Дробилку Адамантовой киркой</strong> — она ещё понадобится!</div>
+
+<!-- ===== THE END ===== -->
+
+<h2 id="the-end">Энд (The End)</h2>
+<p>После уничтожения ядра коренной породы открывается Портал в Энд. Время идти в Энд!</p>
+<p><strong>Дракон Края</strong> ждёт, защищённый Кристаллами Энда.</p>
+
+<!-- ===== ENDER DRAGON ===== -->
+
+<h2 id="ender-dragon">Победа над Драконом Края</h2>
+<div class="info-box">🎮 <strong>Разница режимов:</strong> HP Дракона Края зависит от режима: Simple — <strong>100 HP</strong>, Hardcore — <strong>1000 HP</strong>! В Hardcore нужна значительно лучшая экипировка и стратегия.</div>
+<p>Финальная битва!</p>
+<ol>
+  <li><strong>Уничтожить Кристаллы Энда</strong> — Адамантовой киркой или стрелами! Без их уничтожения дракон постоянно восстанавливает здоровье.</li>
+  <li><strong>Победить дракона</strong> — Луком и оружием ближнего боя. Мифриловый лук + Адамантовые стрелы — лучшая комбинация.</li>
+  <li><strong>Путь домой</strong> — После победы используй Портал в Энд для возврата в Верхний мир.</li>
+</ol>
+
+<div class="tip">Когда Дракон Края погибает, достижение получают все присутствующие игроки!</div>
+
+</div>
+
+<RelatedPages
+  prev={{ href: `${base}/progression/nether/`, label: { hu: 'Alvilág (Nether)', en: 'The Nether', ru: 'Незер' } }}
+/>
+
+    </main>
+  </div>
+</BaseLayout>

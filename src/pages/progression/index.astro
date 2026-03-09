@@ -1,0 +1,265 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import TopNav from '../../components/TopNav.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import '../../styles/global.css';
+
+import { getSidebarGroups } from '../../data/sidebar-config.ts';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const sidebarGroups = getSidebarGroups('progression');
+---
+<BaseLayout title="Fejlődési Útmutató | MITE:BE Wiki">
+  <Header />
+  <TopNav currentPage="progression" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<div data-lang="hu">
+<h1 id="progression">Fejlődési Útmutató</h1>
+<p>A MITE:BE progressziója lépésről lépésre halad — kovakortól az Ender-sárkányig. Válaszd ki a megfelelő szakaszt a bal oldali menüből vagy az alábbi kártyákból!</p>
+
+<div class="prog-tree" style="margin:24px 0">
+  <span class="prog-node n-flint">🪨 Korai</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-flint">🔥 Kemence</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-copper">⚙️ Fémek</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-underground">⛏️ Föld</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-mithril">🌟 Késő</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-nether">🌋 Nether</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-adam">👑 Vége</span>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:24px">
+
+  <a href={`${base}/progression/early-game/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--bg3)'">
+      <div style="font-size:2em;margin-bottom:8px">🪨</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">1. Korai Játék</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Első percek, kovakorszak, munkaasztal, szita. A nulláról indulsz — kovaszilánkkal és növényszállal.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/furnaces/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--bg3)'">
+      <div style="font-size:2em;margin-bottom:8px">🔥</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">2. Kemencék & Olvasztás</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Agyagkemence, tábortűz, keményített agyagkemence, öntőforma, első fémrúd olvasztása.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/metal-ages/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--bg3)'">
+      <div style="font-size:2em;margin-bottom:8px">⚙️</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">3. Fémkorszakok</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Réz, ezüst, ötvözetek (bronz, ezüst-réz, szénacél), többblokkos kemence, vas, fémhierarchia.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/underground/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--bg3)'">
+      <div style="font-size:2em;margin-bottom:8px">⛏️</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">4. Földalatti Világ</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Barlangok, Underground dimenzió, keménykő, ősi fém. Minimum vas felszerelés ajánlott.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/late-game/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--bg3)'">
+      <div style="font-size:2em;margin-bottom:8px">🌟</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">5. Késői Játék</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Mithril korszak, kétszájú üst, elementális obszidián — felkészülés az Alvilágra.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/nether/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--bg3)'">
+      <div style="font-size:2em;margin-bottom:8px">🌋</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">6. Alvilág (Nether)</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Portálok, Nether szörnyek, Blaze-rúd, adamantium olvasztás, Wither boss.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/endgame/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--bg3)'">
+      <div style="font-size:2em;margin-bottom:8px">👑</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">7. Végső Szakasz</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Alapkőzet-zúzó, The End, Ender-sárkány legyőzése — a játék vége!</p>
+    </div>
+  </a>
+
+</div>
+</div>
+
+<div data-lang="en">
+<h1 id="progression">Progression Guide</h1>
+<p>MITE:BE's progression moves step by step — from the flint age to the Ender Dragon. Choose a stage from the sidebar or the cards below!</p>
+
+<div class="prog-tree" style="margin:24px 0">
+  <span class="prog-node n-flint">🪨 Early</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-flint">🔥 Furnaces</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-copper">⚙️ Metals</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-underground">⛏️ Underground</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-mithril">🌟 Late</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-nether">🌋 Nether</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-adam">👑 End</span>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:24px">
+
+  <a href={`${base}/progression/early-game/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--bg3)'">
+      <div style="font-size:2em;margin-bottom:8px">🪨</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">1. Early Game</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">First minutes, flint age, workbench, sieve. Starting from zero — with flint shards and plant fibers.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/furnaces/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--bg3)'">
+      <div style="font-size:2em;margin-bottom:8px">🔥</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">2. Furnaces & Smelting</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Clay furnace, campfire, hardened clay furnace, ingot mold, first metal smelting.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/metal-ages/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--bg3)'">
+      <div style="font-size:2em;margin-bottom:8px">⚙️</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">3. Metal Ages</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Copper, silver, alloys (bronze, silver-copper, high-carbon steel), multiblock furnace, iron, metal hierarchy.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/underground/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--bg3)'">
+      <div style="font-size:2em;margin-bottom:8px">⛏️</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">4. Underground</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Caves, Underground dimension, hardstone, ancient metal. Full iron gear strongly recommended.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/late-game/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--bg3)'">
+      <div style="font-size:2em;margin-bottom:8px">🌟</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">5. Late Game</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Mithril age, two-mouthed cauldron, elemental obsidian — preparing for the Nether.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/nether/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--bg3)'">
+      <div style="font-size:2em;margin-bottom:8px">🌋</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">6. The Nether</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Portals, Nether mobs, Blaze Rods, adamantium smelting, Wither boss.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/endgame/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--bg3)'">
+      <div style="font-size:2em;margin-bottom:8px">👑</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">7. Endgame</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Bedrock Pulverizer, The End, defeating the Ender Dragon — game complete!</p>
+    </div>
+  </a>
+
+</div>
+</div>
+
+<div data-lang="ru">
+<h1 id="progression">Руководство по прогрессии</h1>
+<p>Прогрессия MITE:BE идёт шаг за шагом — от кремниевой эпохи до Дракона Края. Выберите этап в боковом меню или из карточек ниже!</p>
+
+<div class="prog-tree" style="margin:24px 0">
+  <span class="prog-node n-flint">🪨 Начало</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-flint">🔥 Печи</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-copper">⚙️ Металлы</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-underground">⛏️ Земля</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-mithril">🌟 Поздно</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-nether">🌋 Незер</span>
+  <span class="prog-arrow">→</span>
+  <span class="prog-node n-adam">👑 Конец</span>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:24px">
+
+  <a href={`${base}/progression/early-game/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px">
+      <div style="font-size:2em;margin-bottom:8px">🪨</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">1. Начало игры</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Первые минуты, кремниевая эпоха, верстак, сито.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/furnaces/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px">
+      <div style="font-size:2em;margin-bottom:8px">🔥</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">2. Печи и плавка</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Глиняная печь, костёр, форма для слитков, первый металл.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/metal-ages/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px">
+      <div style="font-size:2em;margin-bottom:8px">⚙️</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">3. Металлические эпохи</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Медь, серебро, сплавы, многоблочная печь, железо.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/underground/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px">
+      <div style="font-size:2em;margin-bottom:8px">⛏️</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">4. Подземный мир</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Пещеры, подземное измерение, твердокамень, древний металл.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/late-game/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px">
+      <div style="font-size:2em;margin-bottom:8px">🌟</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">5. Поздняя игра</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Мифрил, двуротый котёл, подготовка к Незеру.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/nether/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px">
+      <div style="font-size:2em;margin-bottom:8px">🌋</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">6. Незер</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Порталы, мобы Незера, адамант, босс Иссушитель.</p>
+    </div>
+  </a>
+
+  <a href={`${base}/progression/endgame/`} style="text-decoration:none">
+    <div style="background:var(--bg2);border:1px solid var(--bg3);border-radius:10px;padding:20px">
+      <div style="font-size:2em;margin-bottom:8px">👑</div>
+      <h3 style="margin:0 0 8px;color:var(--accent)">7. Финал</h3>
+      <p style="margin:0;color:var(--text2);font-size:.9em">Измельчитель бедрока, Край, победа над Драконом.</p>
+    </div>
+  </a>
+
+</div>
+</div>
+
+    </main>
+  </div>
+</BaseLayout>

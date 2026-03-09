@@ -1,0 +1,353 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import TopNav from '../../components/TopNav.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import CraftingGrid from '../../components/CraftingGrid.astro';
+import PageSummary from '../../components/PageSummary.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
+import { getSidebarGroups } from '../../data/sidebar-config.ts';
+import '../../styles/global.css';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const sidebarGroups = getSidebarGroups('systems/combat');
+---
+<BaseLayout title="Harc — MITE:BE Wiki">
+  <Header />
+  <TopNav currentPage="systems" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<PageSummary keyPoints={{
+  hu: [
+    'Páncél 50% alatt elveszíti a védelmet — tartsd karban!',
+    'Kasza: leghosszabb hatótáv, de harcban 4× gyorsabban kopik',
+    'Adamantium nyíl az egyetlen, ami az End Kristályokat elpusztítja',
+  ],
+  en: [
+    'Armor loses protection below 50% durability — keep it maintained!',
+    'Scythe: longest reach, but wears 4x faster in combat',
+    'Adamantium arrows are the only ones that destroy End Crystals',
+  ],
+  ru: [
+    'Броня теряет защиту ниже 50% прочности — следи за состоянием!',
+    'Коса: самый длинный радиус, но в 4× быстрее изнашивается в бою',
+    'Стрелы из адаманта — единственные, уничтожающие Кристаллы Края',
+  ],
+}} />
+
+<div data-lang="hu">
+<h2 id="armor-weapons">Páncél &amp; Fegyverek</h2>
+
+<h3>Páncél típusok</h3>
+<p>Minden fémszintnek van teljes páncélkészlete (sisak, mellvért, Nadrág, csizmák) <strong>lemez</strong> és <strong>lánc</strong> változatban.</p>
+
+<h3>Szett hatások</h3>
+<table>
+  <tr><th>Szett</th><th>Hatás</th></tr>
+  <tr><td><span class="tier t-copper">Bronz</span></td><td>+20% Futás Sebesség</td></tr>
+  <tr><td><span class="tier t-silver">Ezüst-Réz</span></td><td>-10% Elszenvedett Sérülés</td></tr>
+  <tr><td><span class="tier t-iron">Szénacél</span></td><td>5% Sérülés Csökkentés darabonként</td></tr>
+  <tr><td><span class="tier t-mithril">Mithril (4/4)</span></td><td>+40% Futás Sebesség, -30% Sérülés Csökkentés</td></tr>
+  <tr><td><span class="tier t-ancient">Ősi Fém (4/4)</span></td><td>-30% Sérülés az Alvilágból, Alvilágbeli Denevérek nem támadnak, Korróziógátló</td></tr>
+  <tr><td><span class="tier t-adamantium">Adamantium (4/4)</span></td><td>Szürke/fekete nyálkák korróziója nem hat rá; tűzkár nem csökkenti a tartósságot</td></tr>
+  <tr><td>Higany Elem (4/4)</td><td>Testhőmérséklet marad 36,5°C örökké</td></tr>
+</table>
+
+<h3>Páncél Védelmi Értékek</h3>
+<p>A teljes védelemhez 20 pont kell. A páncél 50% tartósság alatt elveszíti védelmi értékét! <em>(Lemezpáncél adatok)</em></p>
+<table class="compare-table">
+  <tr><th>Anyag</th><th>Sisak</th><th>Mellvért</th><th>Nadrág</th><th>Csizmák</th><th>Összesen</th></tr>
+  <tr><td><span class="tier t-flint">Bőr</span></td><td>0.42</td><td>0.67</td><td>0.58</td><td>0.33</td><td>2.00</td></tr>
+  <tr><td><span style="color:#f0c040">Arany</span></td><td>1.25</td><td>2.00</td><td>1.75</td><td>1.00</td><td>6.00</td></tr>
+  <tr><td><span class="tier t-copper">Réz / Ezüst</span></td><td>1.46</td><td>2.33</td><td>2.04</td><td>1.17</td><td>7.00</td></tr>
+  <tr><td><span class="tier t-copper">Bronz</span></td><td>1.60</td><td>2.40</td><td>2.10</td><td>1.30</td><td>7.40</td></tr>
+  <tr><td><span class="tier t-silver">Ezüst-Réz ötvözet</span></td><td>1.70</td><td>2.50</td><td>2.20</td><td>1.30</td><td>7.70</td></tr>
+  <tr><td><span class="tier t-iron">Vas (Vasalt)</span></td><td>1.67</td><td>2.67</td><td>2.33</td><td>1.33</td><td>8.00</td></tr>
+  <tr><td><span class="tier t-iron">Szénacél</span></td><td>1.70</td><td>2.70</td><td>2.30</td><td>1.30</td><td>8.00</td></tr>
+  <tr><td><span class="tier t-hard">Keménykő</span></td><td>1.80</td><td>2.80</td><td>2.40</td><td>1.40</td><td>8.40</td></tr>
+  <tr><td><span class="tier t-ancient">Ősi Fém</span></td><td>1.90</td><td>2.90</td><td>2.50</td><td>1.50</td><td>8.80</td></tr>
+  <tr><td><span class="tier t-mithril">Mithril</span></td><td>2.00</td><td>3.00</td><td>2.70</td><td>1.60</td><td>9.30</td></tr>
+  <tr><td><span class="tier t-adamantium">Adamantium</span></td><td>2.08</td><td>3.33</td><td>2.92</td><td>1.67</td><td>10.00</td></tr>
+</table>
+<div class="info-box">A maximális 20 pont eléréséhez 2× Adamantium szett kellene — ez a játékban elérhetetlen. A cél a minél magasabb védelmi szint elérése bűvölésekkel kiegészítve!</div>
+
+<div class="craft-section">
+  <CraftingGrid recipeOutput="copper_helmet" label={{hu: "Sisak", en: "Helmet"}}/>
+  <CraftingGrid recipeOutput="copper_chestplate" label={{hu: "Mellvért", en: "Chestplate"}}/>
+  <CraftingGrid recipeOutput="copper_leggings" label={{hu: "Nadrág", en: "Leggings"}}/>
+  <CraftingGrid recipeOutput="copper_boots" label={{hu: "Csizma", en: "Boots"}}/>
+</div>
+
+<h3>Fegyver típusok</h3>
+<table>
+  <tr><th>Fegyver</th><th>Jellemző</th></tr>
+  <tr><td>Kard</td><td>Magas sebzés, blokkolás</td></tr>
+  <tr><td>Tőr</td><td>Nem blokkolhat, de Henteskedés bűvöléssel több hús az állatokból</td></tr>
+  <tr><td>Háborús kalapács</td><td>33% tartósság-csökkentés, extra sebzés csontvázak ellen — érc zúzásra is használható!</td></tr>
+  <tr><td>Csatafejsze</td><td>Erős, lassú</td></tr>
+  <tr><td>Lándzsa</td><td>Hatótáv, korai fegyver</td></tr>
+  <tr><td>Kasza</td><td>Mezőgazdasági + harci hibrid — Betakarítás és Vámpír bűvölés, de 4× kopás combat közben!</td></tr>
+  <tr><td>Íj / Számszeríj</td><td>Távharc</td></tr>
+  <tr><td>Pajzs</td><td>Fém pajzsok (réz → adamantium) — blokkolás jobb klikkel</td></tr>
+</table>
+
+<h3>Kard Sebzés Összehasonlítás</h3>
+<table class="compare-table">
+  <tr><th>Anyag</th><th>Kard Sebzés</th><th>Csatafejsze</th><th>Háb. Kalapács</th></tr>
+  <tr><td><span class="tier t-copper">Réz</span></td><td>+7</td><td>+7</td><td>+5</td></tr>
+  <tr><td><span class="tier t-silver">Ezüst</span></td><td>+7</td><td>+7</td><td>+5</td></tr>
+  <tr><td><span class="tier t-iron">Vas (Vasalt)</span></td><td>+8</td><td>+8</td><td>+6</td></tr>
+  <tr><td><span class="tier t-hard">Keménykő</span></td><td>+8</td><td>+8</td><td>+6</td></tr>
+  <tr><td><span class="tier t-ancient">Ősi Fém</span></td><td>+9</td><td>+9</td><td>+7</td></tr>
+  <tr><td><span class="tier t-mithril">Mithril</span></td><td>+11</td><td>+11</td><td>+9</td></tr>
+  <tr><td><span class="tier t-adamantium">Adamantium</span></td><td>+10</td><td>+10</td><td>+8</td></tr>
+</table>
+<div class="info-box">⚔️ <strong>Különleges kard bónuszok:</strong>
+<ul style="margin:4px 0 0 0">
+  <li><strong>Ezüstkard:</strong> Élőholtak meggyullasztása — 100 tickig ég (5 másodperc)</li>
+  <li><strong>Szénacél Kard:</strong> AoE hatás — az 5 blokkon belüli mobokra +4 sebzés ütésenként</li>
+  <li><strong>Ősi Fém Kard:</strong> Átfázik a Fázis Pókokra; korróziótól védett</li>
+</ul></div>
+
+<h3>Fegyver Kopási Sebesség (Decay Rate)</h3>
+<table class="compare-table">
+  <tr><th>Fegyver</th><th>Kopás vs. Ellenség</th><th>Kopás vs. Blokk</th><th>Megjegyzés</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Kard</strong></td><td><strong>0.5× ✅</strong></td><td>2× ❌</td><td>Harcban sokáig bírja, de NE bányássz vele!</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Tőr</strong></td><td><strong>0.5× ✅</strong></td><td>2× ❌</td><td>Ugyanolyan mint a kard vs. entitások</td></tr>
+  <tr><td><strong>Csatafejsze</strong></td><td>0.75×</td><td>1.25×</td><td>Kiegyensúlyozott harci és favágó eszköz</td></tr>
+  <tr><td><strong>Háborús kalapács</strong></td><td>0.67×</td><td>0.67×</td><td>Mindkét esetben gazdaságos</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Ácskapa (Mattock)</strong></td><td>1×</td><td><strong>0.4× ✅</strong></td><td>Leggazdaságosabb blokk-bontó eszköz!</td></tr>
+  <tr style="background:rgba(255,100,100,0.15)"><td><strong>Kasza</strong></td><td><strong>4× ‼️</strong></td><td>2×</td><td>⚠️ Harcban nagyon gyorsan kopik!</td></tr>
+</table>
+
+<h3 id="reach">⚔️ Elérési Távolság (Reach)</h3>
+<p>A MITE:BE-ben az elérési távolság <strong>jóval kisebb</strong> mint a vanilla Minecraftban!</p>
+<table class="compare-table">
+  <tr><th>Bónusz</th><th>Teljes elérés (blokkok ellen)</th><th>Eszköz / Tárgy</th></tr>
+  <tr style="background:rgba(255,80,80,0.10)"><td>Alap (üres kéz)</td><td><strong>2.75 blokk</strong></td><td>— (vanilla-ban 4.5!)</td></tr>
+  <tr><td>+0.50</td><td>3.25 blokk</td><td>Fabot, Csont, Fa Buzogány, Kézbalta</td></tr>
+  <tr style="background:rgba(200,160,80,0.12)"><td>+0.75</td><td>3.50 blokk</td><td>Vaskard, Vascsákány, Vas Ásó, Vas Fejsze, Vas Kapa, Háborús Kalapács, Csatafejsze</td></tr>
+  <tr style="background:rgba(100,200,100,0.12)"><td><strong>+1.00</strong></td><td><strong>3.75 blokk</strong></td><td>⭐ <strong>Vas Kasza</strong> — legjobb közelharci elérés!</td></tr>
+</table>
+<div class="info-box">⚠️ <strong>Fontos:</strong> Réz, Ezüst, Bronz, Keménykő (és magasabb szintű) változatai csak Vas szintű eszközök kapnak +0.75 bónuszt az elérés adataiban. Ellenfelekhez való közelharci elérés alap értéke: <strong>1.5 blokk</strong>.</div>
+
+<h2 id="enchanting">Bűvölőasztal</h2>
+
+<h3>Smaragd Bűvölőasztal</h3>
+<div class="recipe">Smaragd + Obszidián + Könyv → Smaragd Bűvölőasztal</div>
+
+<h3>Gyémánt Bűvölőasztal</h3>
+<p>Erős bűvölésekhez <strong>24 könyvespolc</strong> szükséges! A Gyémánt Bűvölőasztal <strong>Lapis lazulit</strong> igényel bűvöléshez. A magasabb szintű asztal lehetővé teszi a kívánt bűvölés közvetlen kiválasztását.</p>
+<div class="warning-box">💎 <strong>Gyémánt gazdálkodás:</strong> Az összes hasznos recepthez összesen kb. <strong>11 gyémánt</strong> szükséges — takarékoskodj velük!<ul style="margin:4px 0 0 0"><li>2 gyémánt → Gyémánt Bűvölőasztal</li><li>Maradék → egyéb kulcs receptek</li></ul></div>
+
+<h3>Elérhető bűvölések</h3>
+<p>Ritkaság: <span style="color:#aaa">■ Közönséges</span> · <span style="color:#5f5">■ Ritka</span> · <span style="color:#55f">■ SzoÜst</span> · <span style="color:#a0f">■ Epikus</span> &nbsp;|&nbsp; <span style="background:rgba(255,200,0,0.12);padding:0 4px">Sárga = MITE-specifikus bűvölés</span></p>
+<table class="compare-table">
+  <tr><th>Bűvölés</th><th>Ritkaság</th><th>Max szint</th><th>Mire</th></tr>
+  <tr><td>Védelem</td><td style="color:#aaa">Közönséges</td><td>IV</td><td>Páncél</td></tr>
+  <tr><td>Tűzvédelem</td><td style="color:#55f">SzoÜst</td><td>IV</td><td>Páncél</td></tr>
+  <tr><td>Pehelykönnyű hullás</td><td style="color:#55f">SzoÜst</td><td>IV</td><td>Csizma</td></tr>
+  <tr><td>Élesség</td><td style="color:#aaa">Közönséges</td><td>V</td><td>Kard</td></tr>
+  <tr><td>Visszalökés</td><td style="color:#55f">SzoÜst</td><td>II</td><td>Kard</td></tr>
+  <tr><td>Tűzaspektus</td><td style="color:#5f5">Ritka</td><td>II</td><td>Kard</td></tr>
+  <tr><td>Fosztogatás</td><td style="color:#55f">SzoÜst</td><td>III</td><td>Kard</td></tr>
+  <tr><td>Hatékonyság</td><td style="color:#aaa">Közönséges</td><td>V</td><td>Szerszám</td></tr>
+  <tr><td>Töretlenség</td><td style="color:#55f">SzoÜst</td><td>V</td><td>Bármely</td></tr>
+  <tr><td>Erő</td><td style="color:#aaa">Közönséges</td><td>V</td><td>Íj</td></tr>
+  <tr><td>Láng</td><td style="color:#5f5">Ritka</td><td>I</td><td>Íj</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Vámpír 🩸</strong></td><td style="color:#a0f">Epikus</td><td>V</td><td>Fegyver</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Sokk ⚡</strong></td><td style="color:#55f">SzoÜst</td><td>V</td><td>Fegyver</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Élőholt Ölő ☠️</strong></td><td style="color:#5f5">Ritka</td><td>V</td><td>Fegyver</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Fa Döntés 🪓</strong></td><td style="color:#55f">SzoÜst</td><td>V</td><td>Fejsze</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Regenerálódás 💚</strong></td><td style="color:#5f5">Ritka</td><td>V</td><td>Páncél</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Gyorsaság 🏃</strong></td><td style="color:#55f">SzoÜst</td><td>V</td><td>Csizma</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Méreg ☠️</strong></td><td style="color:#5f5">Ritka</td><td>V</td><td>Fegyver</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Betakarítás 🌾</strong></td><td style="color:#55f">SzoÜst</td><td>V</td><td>Sarló</td></tr>
+</table>
+<div class="info-box"><strong>Stratégia:</strong> A <strong>Vámpír</strong> (epikus) a legerősebb harci bűvölés — minden találatnál életerőt lop. A <strong>Fa Döntés</strong> fejszén egész fákat dönt le egy csapással!</div>
+
+<h3 id="bow-arrows">Íj &amp; Nyíl Rendszer</h3>
+<p>A MITE:BE kibővíti az íjas rendszert — 10 nyíltípus, 3 íj és egy Tegez / Nyíltegez (96 nyíl). A nyilak kötegmérete 16.</p>
+<div class="tip-card">🔦 <strong>Fáklya kilövés íjjal:</strong> Az íjjal <strong>fáklyát is ki lehet lőni</strong> a célpontokra — pl. a barlang falára vagy mennyezetére —, hogy előre megvilágítsd a területet bányászás előtt.</div>
+<table class="compare-table">
+  <tr><th>Nyíl</th><th>Sebzés</th><th>Visszaszerzési esély</th><th>Speciális</th></tr>
+  <tr><td>Kova Nyíl</td><td>+1</td><td>30%</td><td>Kezdő nyíl</td></tr>
+  <tr><td>Obszidián Nyíl</td><td>+2</td><td>40%</td><td>—</td></tr>
+  <tr><td>Réz Nyíl</td><td>+3</td><td>60%</td><td>—</td></tr>
+  <tr style="background:rgba(192,192,128,0.10)"><td><strong>Ezüst Nyíl</strong></td><td>+3</td><td>60%</td><td>Extra sebzés élőholtak ellen + White Ghoul sebzésére képes</td></tr>
+  <tr><td>Vas Nyíl</td><td>+4</td><td>70%</td><td>—</td></tr>
+  <tr style="background:rgba(126,200,227,0.12)"><td><strong>Mithril-nyíl</strong></td><td>+7</td><td>80%</td><td>Legjobb sebzés!</td></tr>
+  <tr style="background:rgba(179,136,255,0.14)"><td><strong>Adamantium-nyíl</strong></td><td>+6</td><td>90%</td><td>Az egyetlen nyíl, amely elpusztítja az End Kristályokat!</td></tr>
+</table>
+<table class="compare-table">
+  <tr><th>Íj</th><th>Tartósság</th><th>Sebesség Bónusz</th><th>Megjegyzés</th></tr>
+  <tr><td>Vanilla Íj</td><td>385</td><td>—</td><td>Standard</td></tr>
+  <tr style="background:rgba(126,200,227,0.12)"><td><strong>Mithril Íj</strong></td><td>128 használat</td><td>+25% húzás és röpülési sebesség</td><td>Legjobbra fejleszthető (Legendary → Artifact)</td></tr>
+</table>
+<div class="info-box">🏹 <strong>Tegez / Nyíltegez (Quiver):</strong> 6 slot × 16 nyíl = <strong>96 nyíl</strong>. Kiegészítő slotba kerül. Receptje: 1 Toll + 2 Bőr.<br><strong>Legjobb kombó:</strong> Mithril Íj + Adamantium-nyíl — az End Kristályok ellen kötelező!</div>
+</div>
+
+<div data-lang="en">
+<h2 id="armor-weapons-en">Armor &amp; Weapons</h2>
+
+<h3>Armor Types</h3>
+<p>Every metal tier has a full armor set (helmet, chestplate, leggings, boots) in both <strong>plate</strong> and <strong>chain</strong> variants.</p>
+
+<h3>Set Bonuses</h3>
+<table>
+  <tr><th>Set</th><th>Bonus</th></tr>
+  <tr><td><span class="tier t-copper">Bronze</span></td><td>+20% Sprint Speed</td></tr>
+  <tr><td><span class="tier t-silver">Silver Copper</span></td><td>-10% Damage Taken</td></tr>
+  <tr><td><span class="tier t-iron">High Carbon Steel</span></td><td>5% Damage Reduction per piece</td></tr>
+  <tr><td><span class="tier t-mithril">Mithril (4/4)</span></td><td>+40% Sprint Speed, -30% Damage Reduction</td></tr>
+  <tr><td><span class="tier t-ancient">Ancient Metal (4/4)</span></td><td>-30% Underground Damage, Vampire Bats won't attack, Corrosion Resistance</td></tr>
+  <tr><td><span class="tier t-adamantium">Adamantium (4/4)</span></td><td>Immune to corrosion from gray/black slimes; fire damage does not reduce Durability</td></tr>
+  <tr><td>Mercury Element (4/4)</td><td>Body temperature stays at 36.5°C permanently</td></tr>
+</table>
+
+<h3>Armor Protection Values</h3>
+<p>A total of 20 points = complete Protection. Armor loses its value below 50% Durability! <em>(Plate armor values)</em></p>
+<table class="compare-table">
+  <tr><th>Material</th><th>Helmet</th><th>Chest</th><th>Legs</th><th>Boots</th><th>Total</th></tr>
+  <tr><td><span class="tier t-flint">Leather</span></td><td>0.42</td><td>0.67</td><td>0.58</td><td>0.33</td><td>2.00</td></tr>
+  <tr><td><span style="color:#f0c040">Gold</span></td><td>1.25</td><td>2.00</td><td>1.75</td><td>1.00</td><td>6.00</td></tr>
+  <tr><td><span class="tier t-copper">Copper / Silver</span></td><td>1.46</td><td>2.33</td><td>2.04</td><td>1.17</td><td>7.00</td></tr>
+  <tr><td><span class="tier t-copper">Bronze</span></td><td>1.60</td><td>2.40</td><td>2.10</td><td>1.30</td><td>7.40</td></tr>
+  <tr><td><span class="tier t-iron">Iron (Ironbound)</span></td><td>1.67</td><td>2.67</td><td>2.33</td><td>1.33</td><td>8.00</td></tr>
+  <tr><td><span class="tier t-hard">Hardstone</span></td><td>1.80</td><td>2.80</td><td>2.40</td><td>1.40</td><td>8.40</td></tr>
+  <tr><td><span class="tier t-ancient">Ancient Metal</span></td><td>1.90</td><td>2.90</td><td>2.50</td><td>1.50</td><td>8.80</td></tr>
+  <tr><td><span class="tier t-mithril">Mithril</span></td><td>2.00</td><td>3.00</td><td>2.70</td><td>1.60</td><td>9.30</td></tr>
+  <tr><td><span class="tier t-adamantium">Adamantium</span></td><td>2.08</td><td>3.33</td><td>2.92</td><td>1.67</td><td>10.00</td></tr>
+</table>
+
+<h3>Weapon Types</h3>
+<table>
+  <tr><th>Weapon</th><th>Characteristic</th></tr>
+  <tr><td>Sword</td><td>High damage, can block</td></tr>
+  <tr><td>Dagger</td><td>Can't block, but enchantable with Butcher for extra meat drops</td></tr>
+  <tr><td>War Hammer</td><td>33% Durability reduction, bonus damage vs skeletons — also usable for ore crushing!</td></tr>
+  <tr><td>Battle Axe</td><td>High damage, slow swing</td></tr>
+  <tr><td>Scythe</td><td>Farming + combat hybrid — Harvesting and Vampire enchantments, but 4× Durability decay in combat!</td></tr>
+  <tr><td>Bow / Crossbow</td><td>Ranged combat</td></tr>
+  <tr><td>Shield</td><td>Metal shields (copper → adamantium) — block with right-click</td></tr>
+</table>
+
+<h3>Shield Block Chances</h3>
+<table class="compare-table">
+  <tr><th>Shield material</th><th>Block chance</th></tr>
+  <tr><td><span class="tier t-copper">Copper / Silver</span></td><td>6%</td></tr>
+  <tr><td><span class="tier t-iron">Iron</span></td><td>8%</td></tr>
+  <tr><td><span class="tier t-iron">Gold</span></td><td>12%</td></tr>
+  <tr><td><span class="tier t-mithril">Mithril</span></td><td>15%</td></tr>
+  <tr><td><span class="tier t-adamantium">Adamantium</span></td><td>18%</td></tr>
+</table>
+<div class="info-box">🎮 <strong>Mode difference:</strong> In Hardcore mode, shield block chance is <strong>3% lower</strong>, and successful blocks only provide <strong>20% damage reduction</strong> (Simple mode: 50%).</div>
+
+<h3 id="reach-en">Reach Distance</h3>
+<p>In MITE:BE, reach is <strong>significantly shorter</strong> than vanilla Minecraft!</p>
+<table class="compare-table">
+  <tr><th>Bonus</th><th>Total reach (vs blocks)</th><th>Tool / Item</th></tr>
+  <tr style="background:rgba(255,80,80,0.10)"><td>Base (empty hand)</td><td><strong>2.75 blocks</strong></td><td>— (vanilla: 4.5!)</td></tr>
+  <tr style="background:rgba(200,160,80,0.12)"><td>+0.75</td><td>3.50 blocks</td><td>Iron Sword, Iron Pickaxe, Iron Shovel, Iron Axe, Iron Hoe, War Hammer, Battle Axe</td></tr>
+  <tr style="background:rgba(100,200,100,0.12)"><td><strong>+1.00</strong></td><td><strong>3.75 blocks</strong></td><td>⭐ <strong>Iron Scythe</strong> — best melee reach!</td></tr>
+</table>
+
+<h2 id="enchanting-en">Enchanting</h2>
+
+<h3>Emerald Enchanting Table</h3>
+<div class="recipe">Emerald + Obsidian + Book → Emerald Enchanting Table</div>
+
+<h3>Diamond Enchanting Table</h3>
+<p>For powerful enchantments, <strong>24 bookshelves</strong> are required! The Diamond table uses <strong>Lapis lazuli</strong> and allows direct selection of desired enchantments.</p>
+<div class="tip-card">⚡ <strong>XP-saving trick:</strong> Before enchanting at the Diamond table, first apply a low-level enchantment (e.g. Protection I) at the Emerald table. The Diamond table then calculates the <strong>upgrade cost</strong>, not the full enchantment — saving significant XP.</div>
+
+<h3>Available Enchantments</h3>
+<table class="compare-table">
+  <tr><th>Enchantment</th><th>Rarity</th><th>Max level</th><th>Target</th></tr>
+  <tr><td>Protection</td><td style="color:#aaa">Common</td><td>IV</td><td>Armor</td></tr>
+  <tr><td>Fire Protection</td><td style="color:#55f">Uncommon</td><td>IV</td><td>Armor</td></tr>
+  <tr><td>Sharpness</td><td style="color:#aaa">Common</td><td>V</td><td>Sword</td></tr>
+  <tr><td>Knockback</td><td style="color:#55f">Uncommon</td><td>II</td><td>Sword</td></tr>
+  <tr><td>Unbreaking</td><td style="color:#55f">Uncommon</td><td>V</td><td>Any</td></tr>
+  <tr><td>Efficiency</td><td style="color:#aaa">Common</td><td>V</td><td>Tool</td></tr>
+  <tr><td>Power</td><td style="color:#aaa">Common</td><td>V</td><td>Bow</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Vampire 🩸</strong></td><td style="color:#a0f">Epic</td><td>V</td><td>Weapon</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Shock ⚡</strong></td><td style="color:#55f">Uncommon</td><td>V</td><td>Weapon</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Regeneration 💚</strong></td><td style="color:#5f5">Rare</td><td>V</td><td>Armor</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Speed 🏃</strong></td><td style="color:#55f">Uncommon</td><td>V</td><td>Boots</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Harvesting 🌾</strong></td><td style="color:#55f">Uncommon</td><td>V</td><td>Scythe</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Tree Felling 🪓</strong></td><td style="color:#55f">Uncommon</td><td>V</td><td>Axe</td></tr>
+</table>
+
+<h3 id="bow-arrows-en">Bow &amp; Arrow System</h3>
+<table class="compare-table">
+  <tr><th>Arrow</th><th>Damage</th><th>Recover chance</th><th>Special</th></tr>
+  <tr><td>Flint Arrow</td><td>+1</td><td>30%</td><td>Starter arrow</td></tr>
+  <tr><td>Copper Arrow</td><td>+3</td><td>60%</td><td>—</td></tr>
+  <tr style="background:rgba(192,192,128,0.10)"><td><strong>Silver Arrow</strong></td><td>+3</td><td>60%</td><td>Bonus vs undead + can hit White Ghouls</td></tr>
+  <tr><td>Iron Arrow</td><td>+4</td><td>70%</td><td>—</td></tr>
+  <tr style="background:rgba(126,200,227,0.12)"><td><strong>Mithril Arrow</strong></td><td>+7</td><td>80%</td><td>Best damage!</td></tr>
+  <tr style="background:rgba(179,136,255,0.14)"><td><strong>Adamantium Arrow</strong></td><td>+6</td><td>90%</td><td>The only arrow that destroys End Crystals!</td></tr>
+</table>
+<div class="info-box">🏹 <strong>Quiver:</strong> 6 slots × 16 arrows = <strong>96 arrows</strong>. Recipe: 1 Feather + 2 Leather.<br><strong>Best combo:</strong> Mithril Bow + Adamantium Arrows — essential for End Crystals!</div>
+</div>
+
+<div data-lang="ru">
+<h2 id="armor-weapons-ru">⚔️ Броня и оружие</h2>
+<p>У каждого металла есть свой комплект брони и оружия. Серебряное оружие особенно хорошо работает против нежити, а адамантиевое снаряжение даёт максимальную защиту в игре.</p>
+
+<h3>Бонусы комплектов</h3>
+<table>
+  <tr><th>Комплект</th><th>Бонус</th></tr>
+  <tr><td><span class="tier t-copper">Бронза</span></td><td>+20% скорость бега</td></tr>
+  <tr><td><span class="tier t-mithril">Мифрил (4/4)</span></td><td>+40% скорость бега, -30% снижение урона</td></tr>
+  <tr><td><span class="tier t-ancient">Древний металл (4/4)</span></td><td>-30% урона из подземного мира, устойчивость к коррозии</td></tr>
+  <tr><td><span class="tier t-adamantium">Адамант (4/4)</span></td><td>Иммунитет к коррозии слизей; огонь не снижает прочность</td></tr>
+</table>
+
+<h3>Значения защиты брони</h3>
+<table class="compare-table">
+  <tr><th>Материал</th><th>Шлем</th><th>Нагрудник</th><th>Поножи</th><th>Ботинки</th><th>Итого</th></tr>
+  <tr><td>Кожа</td><td>0.42</td><td>0.67</td><td>0.58</td><td>0.33</td><td>2.00</td></tr>
+  <tr><td><span class="tier t-copper">Медь / Серебро</span></td><td>1.46</td><td>2.33</td><td>2.04</td><td>1.17</td><td>7.00</td></tr>
+  <tr><td><span class="tier t-iron">Железо</span></td><td>1.67</td><td>2.67</td><td>2.33</td><td>1.33</td><td>8.00</td></tr>
+  <tr><td><span class="tier t-mithril">Мифрил</span></td><td>2.00</td><td>3.00</td><td>2.70</td><td>1.60</td><td>9.30</td></tr>
+  <tr><td><span class="tier t-adamantium">Адамант</span></td><td>2.08</td><td>3.33</td><td>2.92</td><td>1.67</td><td>10.00</td></tr>
+</table>
+<div class="warning-box">⚠️ <strong>Броня теряет защитную ценность ниже 50% прочности!</strong> Следите за состоянием снаряжения и чините его своевременно.</div>
+
+<h2 id="enchanting-ru">✨ Зачарование</h2>
+<p>Изумрудный стол зачарований позволяет накладывать чары на снаряжение. Алмазный стол зачарований требует <strong>24 книжные полки</strong> вокруг для сильных чар.</p>
+
+<table class="compare-table">
+  <tr><th>Зачарование</th><th>Цель</th><th>Макс. уровень</th></tr>
+  <tr><td>Острота</td><td>Меч</td><td>V</td></tr>
+  <tr><td>Защита</td><td>Броня</td><td>IV</td></tr>
+  <tr><td>Несломимость</td><td>Любое</td><td>V</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Вампир 🩸</strong></td><td>Оружие</td><td>V</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Регенерация 💚</strong></td><td>Броня</td><td>V</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Скорость 🏃</strong></td><td>Ботинки</td><td>V</td></tr>
+</table>
+
+<h2 id="bow-arrows-ru">🏹 Лук и система стрел</h2>
+<p>Разные типы стрел дают разные эффекты. Колчан позволяет носить больше стрел (96 штук).</p>
+<table class="compare-table">
+  <tr><th>Стрела</th><th>Урон</th><th>Примечание</th></tr>
+  <tr><td>Кремнёвая</td><td>+1</td><td>Начальная</td></tr>
+  <tr><td>Медная</td><td>+3</td><td>—</td></tr>
+  <tr><td>Железная</td><td>+4</td><td>—</td></tr>
+  <tr style="background:rgba(126,200,227,0.12)"><td><strong>Мифриловая</strong></td><td>+7</td><td>Лучший урон!</td></tr>
+  <tr style="background:rgba(179,136,255,0.14)"><td><strong>Адамантиевая</strong></td><td>+6</td><td>Единственная, уничтожающая кристаллы Края!</td></tr>
+</table>
+</div>
+
+<RelatedPages
+  prev={{ href: `${base}/systems/nutrition/`, label: { hu: 'Táplálkozás', en: 'Nutrition', ru: 'Питание' } }}
+  next={{ href: `${base}/systems/survival/`, label: { hu: 'Túlélés', en: 'Survival', ru: 'Выживание' } }}
+/>
+
+  </main>
+    </div>
+</BaseLayout>
