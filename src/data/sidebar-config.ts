@@ -22,7 +22,7 @@ function pageToCategory(currentPage: string): Category {
   if (['install', 'introduction', 'quick-start', 'game-modes', 'faq'].includes(currentPage)) return 'start-here';
   if (currentPage === 'progression' || currentPage.startsWith('progression/')) return 'progression';
   if (currentPage === 'systems' || currentPage.startsWith('systems/')) return 'systems';
-  if (['recipes', 'items', 'mobs', 'biomes', 'brewing', 'reference'].includes(currentPage)) return 'reference';
+  if (['recipes', 'items', 'mobs', 'biomes', 'brewing', 'reference', 'crafting-tree'].includes(currentPage)) return 'reference';
   if (currentPage === 'changelog') return 'updates';
   return 'none';
 }
@@ -69,6 +69,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
         title: '📚 Referencia',
         links: [
           { href: `${base}/recipes/`, label: 'Receptek' },
+          { href: `${base}/crafting-tree/`, label: 'Crafting Fa' },
           { href: `${base}/items/`, label: 'Itemek' },
           { href: `${base}/mobs/`, label: 'Bestiary' },
           { href: `${base}/biomes/`, label: 'Biome-ok' },
