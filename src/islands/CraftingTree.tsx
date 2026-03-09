@@ -354,28 +354,6 @@ export default function CraftingTree() {
 
   return (
     <div style={{ fontFamily: 'inherit', maxWidth: 720 }}>
-      {/* Language tabs */}
-      <div style={{ display: 'flex', gap: 6, marginBottom: 14 }}>
-        {(['hu', 'en', 'ru'] as const).map(l => (
-          <button
-            key={l}
-            onClick={() => setLang(l)}
-            style={{
-              padding: '4px 12px',
-              borderRadius: 4,
-              border: '1px solid var(--surface2)',
-              background: lang === l ? 'var(--gold)' : 'var(--surface)',
-              color: lang === l ? '#000' : 'var(--text)',
-              cursor: 'pointer',
-              fontSize: '.85em',
-              fontWeight: lang === l ? 600 : 400,
-            }}
-          >
-            {l.toUpperCase()}
-          </button>
-        ))}
-      </div>
-
       {/* Search box */}
       <div style={{ position: 'relative', marginBottom: 20 }}>
         <input
