@@ -1,4 +1,4 @@
----
+﻿---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import TopNav from '../components/TopNav.astro';
@@ -111,15 +111,15 @@ const sidebarGroups = {
 </div>
 <div class="faq-item">
 <h4>❓ Hogyan jutok vissza biome portálból?</h4>
-<p>Épits egy <strong>normál obszidián keretet bárhol a fővilágban</strong> (NEM alapkőrétegen!) és gyújtsd meg — ez visszavisz a <strong>világ spawn pontjára</strong>. Biome portál visszafelé nem kell. Ha a spawn nem ideális, <strong>Világ Horgony</strong> tudáskönyvvel átállíthatod.</p>
+<p>Épits egy <strong>normál obszidián keretet bárhol a fővilágban</strong> (NEM alapkőrétegen!) és gyújtsd meg — ez visszavisz a <strong>világ spawn pontjára</strong>. Biome portál visszafelé nem kell. Ha a spawn nem ideális, <strong>Világ Horgony</strong> Knowledge Bookvel átállíthatod.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Nem jelennek meg falvak vagy pillagerek a világomban!</h4>
 <p>A falvak megjelenéséhez a <code>/villages</code> parancs mutatja a feltételt (általában: Bronz Csákány vagy Kalapács elkészítése 15+ napja). Ha már teljesítetted és még mindig nem jelennek meg, ez ismert bug, amelyre nincs egyértelmű megoldás. Közösségi tapasztalat szerint néhány játékosnál sosem jelennek meg struktúrák — függhet a világ magjától (seed) és a biome-elosztástól.</p>
 </div>
 <div class="faq-item">
-<h4>❓ Hogyan nyerek XP-t a Tudáskönyvekből?</h4>
-<p>Felesleges Tudáskönyveket <strong>sima Könyvvé alakíthatod</strong> munkaasztalon — minden átalakításkor <strong>tapasztalati pontot kapsz</strong>. Érdemes minden felhasznált vagy azonos Tudáskönyvet így hasznosítani!</p>
+<h4>❓ Hogyan nyerek XP-t a Knowledge Bookekből?</h4>
+<p>Felesleges Knowledge Bookeket <strong>sima Könyvvé alakíthatod</strong> munkaasztalon — minden átalakításkor <strong>experience pointsot kapsz</strong>. Érdemes minden felhasznált vagy azonos Knowledge Booket így hasznosítani!</p>
 </div>
 <div class="faq-item">
 <h4>❓ Van mentési rendszer véletlen halál ellen?</h4>
@@ -135,15 +135,15 @@ const sidebarGroups = {
 </div>
 <div class="faq-item">
 <h4>❓ Mi történik Vérhold alatt?</h4>
-<p>A Vérhold <strong>32 naponként</strong> ismétlődő apokaliptikus éjszaka. Minden szörny <strong>Erő I</strong> buffot kap, nappal a pókok és creeperek megvadulnak. <strong>6 evolúciós fázis</strong> van (32, 64, 128, 160, 192, 224. nap) — minden fázis erősebb. Y100 felett Hányinger+Gyengeség, Y50 alatt Égés. Túlélésért <strong>permanens jutalom</strong> jár (+10% bányász sebesség VAGY +1 támadás VAGY -10% szomjúság/éhség). Részletek a Referencia oldalon!</p>
+<p>A Vérhold <strong>32 naponként</strong> ismétlődő apokaliptikus éjszaka. Minden szörny <strong>Erő I</strong> buffot kap, nappal a pókok és creeperek megvadulnak. <strong>6 evolution phases</strong> van (32, 64, 128, 160, 192, 224. nap) — minden fázis erősebb. Y100 felett Hányinger+Gyengeség, Y50 alatt Égés. Túlélésért <strong>permanent reward</strong> jár (+10% mining speed VAGY +1 attack VAGY -10% thirst/hunger). Részletek a Referencia oldalon!</p>
 </div>
 <div class="faq-item">
 <h4>❓ Mi az a Szita (Sieve) és mire jó?</h4>
 <p>A Szita (Sieve) az egyik legfontosabb forrása az érceknek az korai játékban. Kavicsot tegyél a szitára, és kattints rá ismételten — különböző anyagok esnek ki: <strong>Kova, Ón, Csont</strong> töredékek és egyéb ritka tárgyak. A jobb anyagból készített szita (Réz, Vas) jobb drop rátával dolgozik. A szita recepthez <strong>Barkácsolás</strong> képesség szükséges. Részletek a <a href={`${base}/recipes/?skill=tinkering`}>Barkácsolás recepteknél</a>.</p>
 </div>
 <div class="faq-item">
-<h4>❓ Hogyan szerzek Tudáskönyveket (Knowledge Books)?</h4>
-<p>Tudáskönyveket az alábbi módokon szerezhetsz: <strong>Barlang romokban</strong> (földalatti random romokban jutalom ládák), <strong>Falvakban</strong> (kereskedőktől vásárolva vagy loot ládákból), <strong>Speciális ellenfélektől</strong> (pl. Csontváz Ura, Vérhold jutalmakból), és <strong>Vérhold végigjátszásakor</strong> jutalom ládából. Felesleges Tudáskönyvet sima Könyvvé alakíthatsz (és XP-t kapsz érte)!</p>
+<h4>❓ Hogyan szerzek Knowledge Bookeket (Knowledge Books)?</h4>
+<p>Knowledge Bookeket az alábbi módokon szerezhetsz: <strong>Barlang romokban</strong> (földalatti random romokban jutalom ládák), <strong>Falvakban</strong> (kereskedőktől vásárolva vagy loot ládákból), <strong>Speciális ellenfélektől</strong> (pl. Csontváz Ura, Blood Moon Rewardsból), és <strong>Vérhold végigjátszásakor</strong> jutalom ládából. Felesleges Knowledge Booket sima Könyvvé alakíthatsz (és XP-t kapsz érte)!</p>
 </div>
 <div class="faq-item">
 <h4>❓ Mi a különbség Simple és Hardcore mód között?</h4>
@@ -573,15 +573,15 @@ const sidebarGroups = {
 <div class="faq-list">
 <div class="faq-item">
 <h4>❓ Почему я не могу сломать дерево голыми руками?</h4>
-<p>В MITE:BE <strong>ничего нельзя сломать голыми руками</strong>. Для рубки дерева нужен <strong>Кремнёвый топорик</strong> (Кремень + Кожаная верёвка + Палка) — нож годится только для резки кожи и травы, но не для дерева! Смотрите раздел Кремниевый век.</p>
+<p>В MITE:BE <strong>ничего нельзя сломать голыми руками</strong>. Для рубки дерева нужен <strong>Кремнёвый топорик</strong> (Кремень + Кожаная верёвка + Палка) — нож годится только для резки кожи и травы, но не для дерева! Смотрите раздел Кремнёвый век.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Как получить кремень в начале игры?</h4>
-<p>Ищите <strong>гравий на поверхности</strong> (на берегах рек, склонах холмов) и ломайте его <strong>голыми руками</strong> — у гравия уровень добычи 0, инструменты не нужны! С вероятностью ~10% выпадает <strong>Кремень</strong>. 1 Кремень = 4 Кремниевых осколка (крафтятся без верстака).</p>
+<p>Ищите <strong>гравий на поверхности</strong> (на берегах рек, склонах холмов) и ломайте его <strong>голыми руками</strong> — у гравия уровень добычи 0, инструменты не нужны! С вероятностью ~10% выпадает <strong>Кремень</strong>. 1 Кремень = 4 Кремнёвых осколка (крафтятся без верстака).</p>
 </div>
 <div class="faq-item">
 <h4>❓ Почему я так быстро умираю ночью?</h4>
-<p>Мобы намного сильнее и <strong>чувствуют игрока сквозь стены</strong> по близости. Факелы гаснут, в темноте спавнятся мобы. Укрытие до первой ночи обязательно.</p>
+<p>Мобы гораздо сильнее и <strong>чувствуют игрока сквозь стены</strong> поблизости. Факелы гаснут, в темноте появляются мобы. Укрытие до первой ночи обязательно.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Что такое индикатор температуры?</h4>
@@ -598,7 +598,7 @@ const sidebarGroups = {
 <div class="faq-item">
 <h4>❓ Как выбрать профессию и можно ли её сменить?</h4>
 <div class="warning-box" style="margin-bottom:8px">⚠️ <strong>Профессии в v0.9.0 не активированы</strong> — эта функция, вероятно, ещё не готова. Информация ниже приведена в вики для ознакомления.</div>
-<p>Предлагается автоматически при первом повышении уровня. Можно выбрать <strong>только одну</strong> и <strong>изменить её нельзя!</strong> Кузнец и Шахтёр — лучший выбор для новичков.</p>
+<p>При первом повышении уровня игра автоматически предложит выбрать профессию. Выбрать можно <strong>только одну</strong>, и <strong>сменить её потом нельзя</strong>. Для новичков обычно лучше всего подходят Кузнец и Шахтёр.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Факелы действительно гаснут?</h4>
@@ -619,12 +619,12 @@ const sidebarGroups = {
 <p>Постройте <strong>обычную обсидиановую рамку в любом месте основного мира</strong> (НЕ на слое коренной породы!) и подожгите — это вернёт вас к <strong>точке спавна мира</strong>.</p>
 </div>
 <div class="faq-item">
-<h4>❓ В моём мире не спавнятся деревни или пиллагеры!</h4>
-<p>Команда <code>/villages</code> показывает условие (обычно: создать Бронзовую кирку или Молот 15+ дней назад). Если условие выполнено, а постройки всё равно не появляются — это известный баг без чёткого решения.</p>
+<h4>❓ В моём мире не спавнятся деревни или разбойники (pillagers)!</h4>
+<p>Команда <code>/villages</code> показывает условие (обычно: создать бронзовую кирку или молот 15+ дней назад). Если условие выполнено, а постройки всё равно не появляются — это известный баг без чёткого решения.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Как получить опыт из Книг знаний?</h4>
-<p>Лишние Книги знаний можно <strong>скрафтить в обычные Книги</strong> на верстаке — каждый раз вы получаете <strong>очки опыта</strong>. Делайте это с дублирующимися или ненужными книгами!</p>
+<p>Лишние Книги знаний можно <strong>скрафтить в обычные Книги</strong> на верстаке — каждый раз вы получаете <strong>опыт</strong>. Делайте это с дублирующимися или ненужными книгами!</p>
 </div>
 <div class="faq-item">
 <h4>❓ Есть ли система сохранений на случай гибели?</h4>
@@ -632,11 +632,11 @@ const sidebarGroups = {
 </div>
 <div class="faq-item">
 <h4>❓ Что такое HIM и как его победить?</h4>
-<p><strong>HIM</strong> — главный враг игры. <strong>400 HP</strong>, иммунитет почти ко всему. Обычное оружие и зелья бесполезны. Требуется полный комплект <strong>Адамантиевого снаряжения</strong> и особая стратегия. Величайший вызов игры!</p>
+<p><strong>HIM</strong> — главный враг игры. У него <strong>400 HP</strong>, и он почти ко всему иммунен. Обычное оружие и зелья против него бесполезны. Нужны полный комплект <strong>адамантиевого снаряжения</strong> и особая стратегия. Это главное испытание всей игры.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Как работает Котёл (Cauldron)?</h4>
-<p>Котёл не только для хранения воды! Размещённый <strong>под источником лавы</strong>, он позволяет варить особые рецепты: Золотая руда в котёл = <strong>Жидкое золото</strong> (4 Золотых яблока). Ртутная руда + Лава = <strong>Жидкая ртуть</strong>. Кожаный рюкзак + 4 слитка Древнего металла в ртути = <strong>Рюкзак из Древнего металла</strong> (ждать 30 сек).</p>
+<p>Котёл нужен не только для воды. Если поставить его <strong>под источником лавы</strong>, в нём можно готовить особые рецепты: золотая руда в котле даёт <strong>Жидкое золото</strong> (на 4 золотых яблока), ртутная руда с лавой даёт <strong>Жидкую ртуть</strong>, а кожаный рюкзак с 4 слитками Древнего металла в ртути через 30 секунд превращается в <strong>Рюкзак из Древнего металла</strong>.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Что происходит во время Кровавой луны?</h4>
@@ -648,7 +648,7 @@ const sidebarGroups = {
 </div>
 <div class="faq-item">
 <h4>❓ Как получить Книги знаний?</h4>
-<p>Книги знаний можно получить: в <strong>Пещерных руинах</strong> (сундуки с лутом), в <strong>Деревнях</strong> (у торговцев или в сундуках), от <strong>Особых врагов</strong> (Король скелетов, Кровавая луна) и в <strong>наградных сундуках после Кровавой луны</strong>.</p>
+<p>Книги знаний можно получить: в <strong>Пещерных руинах</strong> (сундуки с добычей), в <strong>Деревнях</strong> (у торговцев или в сундуках), от <strong>Особых врагов</strong> (Король скелетов, Кровавая луна) и в <strong>наградных сундуках после Кровавой луны</strong>.</p>
 </div>
 <div class="faq-item">
 <h4>❓ В чём разница между Простым и Хардкор режимами?</h4>
@@ -790,7 +790,7 @@ const sidebarGroups = {
   <div style="background:rgba(78,204,163,0.07);border-left:3px solid #4ecca3;border-radius:0 8px 8px 0;padding:12px 16px;font-size:.85em">
     <div style="color:#4ecca3;font-weight:700;margin-bottom:8px">💡 Оптимальный старт с этим сидом</div>
     <ol style="margin:0;padding-left:18px;line-height:1.9;color:#ccc">
-      <li>Спавн → сразу соберите <strong>гравий с северного плато</strong> → Кремниевые осколки</li>
+      <li>Спавн → сразу соберите <strong>гравий с северного плато</strong> → Кремнёвые осколки</li>
       <li>Идите <strong>~300 блоков на СВ</strong> → займите природное укрытие у плавучего острова</li>
       <li>Соберите <strong>яблоки в южном дубовом лесу</strong> — отличная еда для начала</li>
       <li>Исследуйте <strong>ЮВ каньон</strong>: железо + серебряные шахты, внизу ещё больше железа</li>

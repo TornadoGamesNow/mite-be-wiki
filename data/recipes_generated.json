@@ -26409,7 +26409,7 @@
       ],
       "label": {
         "hu": "Kova Munkaasztal",
-        "en": "Flint Workbench"
+        "en": "Flint Toolbench"
       },
       "tags": [
         "flint-age",
@@ -26439,7 +26439,7 @@
       ],
       "label": {
         "hu": "Réz Munkaasztal",
-        "en": "Copper Workbench"
+        "en": "Copper Toolbench"
       },
       "tags": [
         "copper-age",
@@ -26470,7 +26470,7 @@
       ],
       "label": {
         "hu": "Ezüst Munkaasztal",
-        "en": "Silver Workbench"
+        "en": "Silver Toolbench"
       },
       "tags": [
         "silver-age",
@@ -26501,7 +26501,7 @@
       ],
       "label": {
         "hu": "Arany Munkaasztal",
-        "en": "Gold Workbench"
+        "en": "Gold Toolbench"
       },
       "tags": [
         "gold-age",
@@ -26532,7 +26532,7 @@
       ],
       "label": {
         "hu": "Vas Munkaasztal",
-        "en": "Iron Workbench"
+        "en": "Iron Toolbench"
       },
       "tags": [
         "iron-age",
@@ -26563,10 +26563,10 @@
       ],
       "label": {
         "hu": "Keménykő Munkaasztal",
-        "en": "Hardstone Workbench"
+        "en": "Hardstone Toolbench"
       },
       "tags": [
-        "hardstone-age",
+        "Hardstone-age",
         "station"
       ],
       "difficulty": 1805,
@@ -26594,7 +26594,7 @@
       ],
       "label": {
         "hu": "Mithril Munkaasztal",
-        "en": "Mithril Workbench"
+        "en": "Mithril Toolbench"
       },
       "tags": [
         "mithril-age",
@@ -26625,7 +26625,7 @@
       ],
       "label": {
         "hu": "Adamantium Munkaasztal",
-        "en": "Adamantium Workbench"
+        "en": "Adamantium Toolbench"
       },
       "tags": [
         "adamantium-age",
@@ -27881,7 +27881,7 @@
         "en": "Hardstone Sword"
       },
       "tags": [
-        "hardstone",
+        "Hardstone",
         "weapon",
         "sword"
       ],
@@ -27919,7 +27919,7 @@
         "en": "Hardstone Pickaxe"
       },
       "tags": [
-        "hardstone",
+        "Hardstone",
         "tool",
         "pickaxe"
       ],
@@ -27957,7 +27957,7 @@
         "en": "Hardstone War Hammer"
       },
       "tags": [
-        "hardstone",
+        "Hardstone",
         "weapon",
         "war-hammer"
       ],
@@ -27995,7 +27995,7 @@
         "en": "Hardstone Helmet"
       },
       "tags": [
-        "hardstone",
+        "Hardstone",
         "armor",
         "helmet"
       ],
@@ -28028,7 +28028,7 @@
         "en": "Hardstone Chestplate"
       },
       "tags": [
-        "hardstone",
+        "Hardstone",
         "armor",
         "chestplate"
       ],
@@ -28523,7 +28523,7 @@
       ],
       "label": {
         "hu": "Arany Sisak",
-        "en": "Gold Helmet"
+        "en": "Golden Helmet"
       },
       "tags": [
         "armor",
@@ -28556,7 +28556,7 @@
       ],
       "label": {
         "hu": "Arany Mellvért",
-        "en": "Gold Chestplate"
+        "en": "Golden Chestplate"
       },
       "tags": [
         "armor",
@@ -28589,7 +28589,7 @@
       ],
       "label": {
         "hu": "Arany Lábvért",
-        "en": "Gold Leggings"
+        "en": "Golden Leggings"
       },
       "tags": [
         "armor",
@@ -28622,7 +28622,7 @@
       ],
       "label": {
         "hu": "Arany Csizma",
-        "en": "Gold Boots"
+        "en": "Golden Boots"
       },
       "tags": [
         "armor",
@@ -29352,10 +29352,10 @@
       ],
       "label": {
         "hu": "Ősi Fém Munkaasztal",
-        "en": "Ancient Metal Workbench"
+        "en": "Ancient Metal Toolbench"
       },
       "tags": [
-        "hardstone-age",
+        "Hardstone-age",
         "station"
       ],
       "difficulty": 1805,
@@ -30392,7 +30392,7 @@
       "output": "gold_hatchet",
       "label": {
         "hu": "Arany Kézbalta",
-        "en": "Gold Hatchet"
+        "en": "Golden Hatchet"
       },
       "tags": [
         "tool",
@@ -30577,7 +30577,7 @@
       "output": "gold_hoe",
       "label": {
         "hu": "Arany Kapa",
-        "en": "Gold Hoe"
+        "en": "Golden Hoe"
       },
       "tags": [
         "tool"

@@ -1,4 +1,4 @@
-{
+﻿{
   "plant_fiber": {
     "name": {
       "hu": "Növényszál",
@@ -548,7 +548,7 @@
     "name": {
       "hu": "Keménykő Rúd",
       "en": "Hardstone Ingot",
-      "ru": "Твёрдокаменный слиток"
+      "ru": "Твердокаменный слиток"
     },
     "img": "img/items/hardstone_ingot.png",
     "tier": "hard",
@@ -557,7 +557,7 @@
   "ancient_metal_ingot": {
     "name": {
       "hu": "Ősi Fém Rúd",
-      "en": "Ancient Metal Bar",
+      "en": "Ancient Metal Ingot",
       "ru": "Слиток древнего металла"
     },
     "img": "img/ingots/ancient_metal.png",
@@ -567,7 +567,7 @@
   "mithril_bar": {
     "name": {
       "hu": "Mithril Rúd",
-      "en": "Mithril Bar",
+      "en": "Mithril Ingot",
       "ru": "Мифриловый слиток"
     },
     "img": "img/ingots/mithril.png",
@@ -577,7 +577,7 @@
   "adamantium_bar": {
     "name": {
       "hu": "Adamantium Rúd",
-      "en": "Adamantium Bar",
+      "en": "Adamantium Ingot",
       "ru": "Адамантиевый слиток"
     },
     "img": "img/ingots/adamantium.png",
@@ -587,8 +587,8 @@
   "hardstone_handle": {
     "name": {
       "hu": "Keménykő Fogantyú",
-      "en": "Hard Stone Handle",
-      "ru": "Рукоятка из твёрдого камня"
+      "en": "Hardstone Handle",
+      "ru": "Рукоятка из твердокамня"
     },
     "img": "img/items/hardstone_handle.png",
     "tier": "hard",
@@ -849,7 +849,7 @@
   "gold_sword": {
     "name": {
       "hu": "Arany Kard",
-      "en": "Gold Sword",
+      "en": "Golden Sword",
       "ru": "Золотой меч"
     },
     "img": "img/items/gold_sword.png",
@@ -861,7 +861,7 @@
   "gold_pickaxe": {
     "name": {
       "hu": "Arany Csákány",
-      "en": "Gold Pickaxe",
+      "en": "Golden Pickaxe",
       "ru": "Золотая кирка"
     },
     "img": "img/items/gold_pickaxe.png",
@@ -873,7 +873,7 @@
   "gold_axe": {
     "name": {
       "hu": "Arany Fejsze",
-      "en": "Gold Axe",
+      "en": "Golden Axe",
       "ru": "Золотой топор"
     },
     "img": "img/items/gold_axe.png",
@@ -1028,7 +1028,7 @@
     "name": {
       "hu": "Keménykő Kard",
       "en": "Hardstone Sword",
-      "ru": "Твёрдокаменный меч"
+      "ru": "Твердокаменный меч"
     },
     "img": "img/items/hardstone_sword.png",
     "tier": "hard",
@@ -1040,7 +1040,7 @@
     "name": {
       "hu": "Keménykő Csákány",
       "en": "Hardstone Pickaxe",
-      "ru": "Твёрдокаменная кирка"
+      "ru": "Твердокаменная кирка"
     },
     "img": "img/items/hardstone_pickaxe.png",
     "tier": "hard",
@@ -1052,7 +1052,7 @@
     "name": {
       "hu": "Keménykő Háborús Kalapács",
       "en": "Hardstone War Hammer",
-      "ru": "Твёрдокаменный боевой молот"
+      "ru": "Твердокаменный боевой молот"
     },
     "img": "img/items/hardstone_war_hammer.png",
     "tier": "hard",
@@ -1064,7 +1064,7 @@
     "name": {
       "hu": "Keménykő Kapa",
       "en": "Hardstone Hoe",
-      "ru": "Твёрдокаменная мотыга"
+      "ru": "Твердокаменная мотыга"
     },
     "img": "img/items/hardstone_hoe.png",
     "tier": "hard",
@@ -1076,7 +1076,7 @@
     "name": {
       "hu": "Keménykő Sisak",
       "en": "Hardstone Helmet",
-      "ru": "Твёрдокаменный шлем"
+      "ru": "Твердокаменный шлем"
     },
     "img": "img/items/hardstone_helmet.png",
     "tier": "hard",
@@ -1087,7 +1087,7 @@
     "name": {
       "hu": "Keménykő Mellvért",
       "en": "Hardstone Chestplate",
-      "ru": "Твёрдокаменный нагрудник"
+      "ru": "Твердокаменный нагрудник"
     },
     "img": "img/items/hardstone_chestplate.png",
     "tier": "hard",
@@ -1098,7 +1098,7 @@
     "name": {
       "hu": "Keménykő Lábvért",
       "en": "Hardstone Leggings",
-      "ru": "Твёрдокаменные поножи"
+      "ru": "Твердокаменные поножи"
     },
     "img": "img/items/hardstone_leggings.png",
     "tier": "hard",
@@ -1109,7 +1109,7 @@
     "name": {
       "hu": "Keménykő Csizma",
       "en": "Hardstone Boots",
-      "ru": "Твёрдокаменные ботинки"
+      "ru": "Твердокаменные ботинки"
     },
     "img": "img/items/hardstone_boots.png",
     "tier": "hard",
@@ -1370,7 +1370,7 @@
   },
   "netherrack_furnace": {
     "name": {
-      "hu": "Pokoli Kő Kemence",
+      "hu": "Alvilágkőkemence",
       "en": "Netherrack Furnace",
       "ru": "Печь из адского камня"
     },
@@ -1539,7 +1539,8 @@
     },
     "img": "img/items/mining_helmet.png",
     "tier": "gold",
-    "category": "armor"
+    "category": "armor",
+    "removed_in": "pre-0.5.5"
   },
   "battery": {
     "name": {
@@ -1624,7 +1625,7 @@
   "gold_helmet": {
     "name": {
       "hu": "Arany Sisak",
-      "en": "Gold Helmet",
+      "en": "Golden Helmet",
       "ru": "Золотой шлем"
     },
     "img": "img/armor/gold_helmet.png",
@@ -1843,7 +1844,7 @@
   },
   "furnace_core_netherrack": {
     "name": {
-      "hu": "Pokoli Kő Kemence Mag",
+      "hu": "Alvilágkőkemencemag",
       "en": "Netherrack Furnace Core",
       "ru": "Ядро печи из адского камня"
     },
@@ -1855,7 +1856,7 @@
     "name": {
       "hu": "Keménykő Munkaasztal",
       "en": "Hardstone Workbench",
-      "ru": "Твёрдокаменный верстак"
+      "ru": "Твердокаменный верстак"
     },
     "img": "img/blocks/workbench_hard.png",
     "tier": "hard",
@@ -1934,7 +1935,7 @@
     "name": {
       "hu": "Keménykő Csatabárd",
       "en": "Hardstone Battle Axe",
-      "ru": "Твёрдокаменный боевой топор"
+      "ru": "Твердокаменный боевой топор"
     },
     "img": "img/items/hardstone_battle_axe.png",
     "tier": "hard",
@@ -2006,7 +2007,7 @@
     "name": {
       "hu": "Keménykő Ácskapa",
       "en": "Hardstone Mattock",
-      "ru": "Твёрдокаменная мотыга-кирка"
+      "ru": "Твердокаменная мотыга-кирка"
     },
     "img": "img/items/hardstone_mattock.png",
     "tier": "hard",
@@ -2078,7 +2079,7 @@
     "name": {
       "hu": "Keménykő Kasza",
       "en": "Hardstone Scythe",
-      "ru": "Твёрдокаменная коса"
+      "ru": "Твердокаменная коса"
     },
     "img": "img/items/hardstone_scythe.png",
     "tier": "hard",
@@ -2145,7 +2146,7 @@
     "name": {
       "hu": "Keménykő Olló",
       "en": "Hardstone Shears",
-      "ru": "Твёрдокаменные ножницы"
+      "ru": "Твердокаменные ножницы"
     },
     "img": "img/items/hardstone_shears.png",
     "tier": "hard",
@@ -2168,7 +2169,7 @@
   "gold_hatchet": {
     "name": {
       "hu": "Arany Kézbalta",
-      "en": "Gold Hatchet",
+      "en": "Golden Hatchet",
       "ru": "Золотой топорик"
     },
     "img": "img/items/gold_hatchet.png",
@@ -2217,7 +2218,7 @@
     "name": {
       "hu": "Keménykő Kézbalta",
       "en": "Hardstone Hatchet",
-      "ru": "Твёрдокаменный топорик"
+      "ru": "Твердокаменный топорик"
     },
     "img": "img/items/hardstone_hatchet.png",
     "tier": "hard",
@@ -2240,7 +2241,7 @@
   "gold_hoe": {
     "name": {
       "hu": "Arany Kapa",
-      "en": "Gold Hoe",
+      "en": "Golden Hoe",
       "ru": "Золотая мотыга"
     },
     "img": "img/items/gold_hoe.png",
@@ -2496,7 +2497,7 @@
     "name": {
       "hu": "Keménykő Lánc",
       "en": "Hardstone Chain",
-      "ru": "Твёрдокаменная цепь"
+      "ru": "Твердокаменная цепь"
     },
     "img": "img/items/hardstone_chain.png",
     "tier": "hard",
@@ -2525,7 +2526,7 @@
   "adamantium_block": {
     "name": {
       "hu": "Adamantium Blokk",
-      "en": "Adamantium Block",
+      "en": "Block of Adamantium",
       "ru": "Адамантиевый блок"
     },
     "img": "img/blocks/adamantium_block.png",
@@ -2758,7 +2759,7 @@
   "ancient_metal_block": {
     "name": {
       "hu": "Ősi Fém Blokk",
-      "en": "Ancient Metal Block",
+      "en": "Block of Ancient Metal",
       "ru": "Блок из древнего металла"
     },
     "img": "img/blocks/ancient_metal_block.png",
@@ -3729,8 +3730,7 @@
     },
     "img": "img/items/chicken_soup.png",
     "tier": null,
-    "category": "food",
-    "removed_in": "0.5.6"
+    "category": "food"
   },
   "chiseled_quartz_block": {
     "name": {
@@ -3925,7 +3925,7 @@
   "copper_block": {
     "name": {
       "hu": "Réz Blokk",
-      "en": "Copper Block",
+      "en": "Block of Copper",
       "ru": "Медный блок"
     },
     "img": "img/blocks/copper_block.png",
@@ -4576,7 +4576,7 @@
     "name": {
       "hu": "Keménykő Horgászbot",
       "en": "Hardstone Fishing Rod",
-      "ru": "Твёрдокаменная удочка"
+      "ru": "Твердокаменная удочка"
     },
     "img": "img/items/fishing_rod_hard.png",
     "tier": "hard",
@@ -4809,7 +4809,7 @@
   "gold_block": {
     "name": {
       "hu": "Arany Blokk",
-      "en": "Gold Block",
+      "en": "Block of Gold",
       "ru": "Блок золота"
     },
     "img": "img/blocks/gold_block.png",
@@ -4999,7 +4999,7 @@
   "gold_shovel": {
     "name": {
       "hu": "Arany Ásó",
-      "en": "Gold Shovel",
+      "en": "Golden Shovel",
       "ru": "Золотая лопата"
     },
     "img": "img/items/gold_shovel.png",
@@ -5162,7 +5162,7 @@
     "name": {
       "hu": "Keménykő Üllő",
       "en": "Hardstone Anvil",
-      "ru": "Твёрдокаменная наковальня"
+      "ru": "Твердокаменная наковальня"
     },
     "img": "img/items/hard_stone_anvil.png",
     "tier": "hard",
@@ -5172,7 +5172,7 @@
     "name": {
       "hu": "Keménykő Fejsze",
       "en": "Hardstone Axe",
-      "ru": "Твёрдокаменный топор"
+      "ru": "Твердокаменный топор"
     },
     "img": "img/items/hard_stone_axe.png",
     "tier": "hard",
@@ -5184,7 +5184,7 @@
     "name": {
       "hu": "Keménykő Csatafejsze",
       "en": "Hardstone Battle Axe",
-      "ru": "Твёрдокаменный боевой топор"
+      "ru": "Твердокаменный боевой топор"
     },
     "img": "img/items/hard_stone_battle_axe.png",
     "tier": "hard",
@@ -5195,7 +5195,7 @@
     "name": {
       "hu": "Keménykő Csizma",
       "en": "Hardstone Boots",
-      "ru": "Твёрдокаменные ботинки"
+      "ru": "Твердокаменные ботинки"
     },
     "img": "img/items/hard_stone_boots.png",
     "tier": "hard",
@@ -5205,7 +5205,7 @@
     "name": {
       "hu": "Keménykő Tejes Vödör",
       "en": "Hardstone Bucket of Milk",
-      "ru": "Твёрдокаменное ведро молока"
+      "ru": "Твердокаменное ведро молока"
     },
     "img": "img/items/hard_stone_bucket_of_milk.png",
     "tier": "hard",
@@ -5215,7 +5215,7 @@
     "name": {
       "hu": "Keménykő Kőzetes Vödör",
       "en": "Hardstone Bucket of Stone",
-      "ru": "Твёрдокаменное ведро камня"
+      "ru": "Твердокаменное ведро камня"
     },
     "img": "img/items/hard_stone_bucket_of_stone.png",
     "tier": "hard",
@@ -5225,7 +5225,7 @@
     "name": {
       "hu": "Keménykő Vizes Vödör",
       "en": "Hardstone Bucket of Water",
-      "ru": "Твёрдокаменное ведро воды"
+      "ru": "Твердокаменное ведро воды"
     },
     "img": "img/items/hard_stone_bucket_of_water.png",
     "tier": "hard",
@@ -5235,7 +5235,7 @@
     "name": {
       "hu": "Keménykő Mellvért",
       "en": "Hardstone Chestplate",
-      "ru": "Твёрдокаменный нагрудник"
+      "ru": "Твердокаменный нагрудник"
     },
     "img": "img/items/hard_stone_chestplate.png",
     "tier": "hard",
@@ -5245,7 +5245,7 @@
     "name": {
       "hu": "Keménykő Tőr",
       "en": "Hardstone Dagger",
-      "ru": "Твёрдокаменный кинжал"
+      "ru": "Твердокаменный кинжал"
     },
     "img": "img/items/hard_stone_dagger.png",
     "tier": "hard",
@@ -5257,7 +5257,7 @@
     "name": {
       "hu": "Keménykő Tűzkő és Acél",
       "en": "Hardstone Flint and Steel",
-      "ru": "Твёрдокаменное огниво"
+      "ru": "Твердокаменное огниво"
     },
     "img": "img/items/hard_stone_flint_and_steel.png",
     "tier": "hard",
@@ -5267,7 +5267,7 @@
     "name": {
       "hu": "Keménykő Folyadék Tank",
       "en": "Hardstone Fluid Tank",
-      "ru": "Твёрдокаменный бак для жидкости"
+      "ru": "Твердокаменный бак для жидкости"
     },
     "img": "img/items/hard_stone_fluid_tank.png",
     "tier": "hard",
@@ -5277,7 +5277,7 @@
     "name": {
       "hu": "Keménykő Kézifejsze",
       "en": "Hardstone Hand Axe",
-      "ru": "Твёрдокаменный ручной топор"
+      "ru": "Твердокаменный ручной топор"
     },
     "img": "img/items/hard_stone_hand_axe.png",
     "tier": "hard",
@@ -5287,7 +5287,7 @@
     "name": {
       "hu": "Keménykő Sisak",
       "en": "Hardstone Helmet",
-      "ru": "Твёрдокаменный шлем"
+      "ru": "Твердокаменный шлем"
     },
     "img": "img/items/hard_stone_helmet.png",
     "tier": "hard",
@@ -5297,7 +5297,7 @@
     "name": {
       "hu": "Keménykő Kapa",
       "en": "Hardstone Hoe",
-      "ru": "Твёрдокаменная мотыга"
+      "ru": "Твердокаменная мотыга"
     },
     "img": "img/items/hard_stone_hoe.png",
     "tier": "hard",
@@ -5308,7 +5308,7 @@
     "name": {
       "hu": "Keménykő Lábvért",
       "en": "Hardstone Leggings",
-      "ru": "Твёрдокаменные поножи"
+      "ru": "Твердокаменные поножи"
     },
     "img": "img/items/hard_stone_leggings.png",
     "tier": "hard",
@@ -5318,7 +5318,7 @@
     "name": {
       "hu": "Keménykő Kapacs",
       "en": "Hardstone Mattock",
-      "ru": "Твёрдокаменная мотыга-кирка"
+      "ru": "Твердокаменная мотыга-кирка"
     },
     "img": "img/items/hard_stone_mattock.png",
     "tier": "hard",
@@ -5329,7 +5329,7 @@
     "name": {
       "hu": "Keménykő Csákány",
       "en": "Hardstone Pickaxe",
-      "ru": "Твёрдокаменная кирка"
+      "ru": "Твердокаменная кирка"
     },
     "img": "img/items/hard_stone_pickaxe.png",
     "tier": "hard",
@@ -5340,7 +5340,7 @@
     "name": {
       "hu": "Keménykő Kasza",
       "en": "Hardstone Scythe",
-      "ru": "Твёрдокаменная коса"
+      "ru": "Твердокаменная коса"
     },
     "img": "img/items/hard_stone_scythe.png",
     "tier": "hard",
@@ -5351,7 +5351,7 @@
     "name": {
       "hu": "Keménykő Olló",
       "en": "Hardstone Shears",
-      "ru": "Твёрдокаменные ножницы"
+      "ru": "Твердокаменные ножницы"
     },
     "img": "img/items/hard_stone_shears.png",
     "tier": "hard",
@@ -5362,7 +5362,7 @@
     "name": {
       "hu": "Keménykő Pajzs",
       "en": "Hardstone Shield",
-      "ru": "Твёрдокаменный щит"
+      "ru": "Твердокаменный щит"
     },
     "img": "img/items/hard_stone_shield.png",
     "tier": "hard",
@@ -5372,7 +5372,7 @@
     "name": {
       "hu": "Keménykő Ásó",
       "en": "Hardstone Shovel",
-      "ru": "Твёрдокаменная лопата"
+      "ru": "Твердокаменная лопата"
     },
     "img": "img/items/hard_stone_shovel.png",
     "tier": "hard",
@@ -5384,7 +5384,7 @@
     "name": {
       "hu": "Keménykő Kard",
       "en": "Hardstone Sword",
-      "ru": "Твёрдокаменный меч"
+      "ru": "Твердокаменный меч"
     },
     "img": "img/items/hard_stone_sword.png",
     "tier": "hard",
@@ -5395,7 +5395,7 @@
     "name": {
       "hu": "Keménykő Háborús Kalapács",
       "en": "Hardstone War Hammer",
-      "ru": "Твёрдокаменный боевой молот"
+      "ru": "Твердокаменный боевой молот"
     },
     "img": "img/items/hard_stone_war_hammer.png",
     "tier": "hard",
@@ -5405,8 +5405,8 @@
   "hardstone_block": {
     "name": {
       "hu": "Keménykő Blokk",
-      "en": "Hardstone Block",
-      "ru": "Твёрдокаменный блок"
+      "en": "Block of Hardstone",
+      "ru": "Твердокаменный блок"
     },
     "img": "img/blocks/hardstone_block.png",
     "tier": null,
@@ -5416,7 +5416,7 @@
     "name": {
       "hu": "Keménykő Vödör",
       "en": "Hardstone Bucket",
-      "ru": "Твёрдокаменное ведро"
+      "ru": "Твердокаменное ведро"
     },
     "img": "img/items/hardstone_bucket.png",
     "tier": "hard",
@@ -5426,7 +5426,7 @@
     "name": {
       "hu": "Keménykő Érme",
       "en": "Hardstone Coin",
-      "ru": "Твёрдокаменная монета"
+      "ru": "Твердокаменная монета"
     },
     "img": "img/items/hardstone_coin.png",
     "tier": "hard",
@@ -5436,7 +5436,7 @@
     "name": {
       "hu": "Keménykő Ércdarab",
       "en": "Hardstone Nugget",
-      "ru": "Твёрдокаменный самородок"
+      "ru": "Твердокаменный самородок"
     },
     "img": "img/items/hardstone_nugget.png",
     "tier": "hard",
@@ -5446,7 +5446,7 @@
     "name": {
       "hu": "Keménykő Érc",
       "en": "Hardstone Ore",
-      "ru": "Твёрдокаменная руда"
+      "ru": "Твердокаменная руда"
     },
     "img": "img/blocks/hardstone_ore.png",
     "tier": null,
@@ -5536,7 +5536,7 @@
   "iron_block": {
     "name": {
       "hu": "Vas Blokk",
-      "en": "Iron Block",
+      "en": "Block of Iron",
       "ru": "Блок железа"
     },
     "img": "img/items/iron_block.png",
@@ -6121,8 +6121,7 @@
     },
     "img": "img/items/lotus_seed_soup.png",
     "tier": null,
-    "category": "food",
-    "removed_in": "0.5.6"
+    "category": "food"
   },
   "magenta_bed": {
     "name": {
@@ -6322,7 +6321,8 @@
     },
     "img": "img/items/miner_s_helmet.png",
     "tier": "gold",
-    "category": "armor"
+    "category": "armor",
+    "removed_in": "pre-0.5.5"
   },
   "miner_s_helmet_knowledge_book": {
     "name": {
@@ -6367,7 +6367,7 @@
   "mithril_block": {
     "name": {
       "hu": "Mithril Blokk",
-      "en": "Mithril Block",
+      "en": "Block of Mithril",
       "ru": "Мифриловый блок"
     },
     "img": "img/blocks/mithril_block.png",
@@ -6669,13 +6669,14 @@
   },
   "nether_furnace_core": {
     "name": {
-      "hu": "Pokoli Kő Kemence Mag",
+      "hu": "Alvilágkőkemencemag",
       "en": "Netherrack Furnace Core",
       "ru": "Ядро печи из адского камня"
     },
     "img": "img/items/nether_furnace_core.png",
     "tier": null,
     "category": "block",
+    "removed_in": "0.6.0",
     "removed_in": "pre-0.5.5"
   },
   "nether_quartz": {
@@ -6700,7 +6701,7 @@
   },
   "netherrack_furnace_idle": {
     "name": {
-      "hu": "Pokoli Kő Kemence",
+      "hu": "Alvilágkőkemence",
       "en": "Netherrack Furnace",
       "ru": "Печь из адского камня"
     },
@@ -6798,6 +6799,7 @@
     "img": "img/items/obsidian_furnace_core.png",
     "tier": "obsidian",
     "category": "block",
+    "removed_in": "0.6.0",
     "removed_in": "pre-0.5.5"
   },
   "obsidian_furnace_idle": {
@@ -7161,8 +7163,7 @@
     },
     "img": "img/items/pumpkin_soup.png",
     "tier": null,
-    "category": "food",
-    "removed_in": "0.5.6"
+    "category": "food"
   },
   "purple_bed": {
     "name": {
@@ -7688,7 +7689,7 @@
   "silver_block": {
     "name": {
       "hu": "Ezüst Blokk",
-      "en": "Silver Block",
+      "en": "Block of Silver",
       "ru": "Серебряный блок"
     },
     "img": "img/blocks/silver_block.png",
@@ -7788,7 +7789,7 @@
   "silver_copper_war_hammer": {
     "name": {
       "hu": "Ezüst-Réz Háborús Kalapács",
-      "en": "Silver-Copper War Hammer",
+      "en": "Silver Copper War Hammer",
       "ru": "Серебряно-медный боевой молот"
     },
     "img": "img/items/silver_copper_war_hammer.png",
@@ -8366,6 +8367,7 @@
     "img": "img/items/stone_furnace_core.png",
     "tier": "stone",
     "category": "block",
+    "removed_in": "0.6.0",
     "removed_in": "pre-0.5.5"
   },
   "stone_furnace_idle": {
@@ -8636,8 +8638,7 @@
     },
     "img": "img/items/wheat_soup.png",
     "tier": null,
-    "category": "food",
-    "removed_in": "0.5.6"
+    "category": "food"
   },
   "white_stained_clay_colored": {
     "name": {
@@ -9620,7 +9621,7 @@
   "ex_eye_of_ender": {
     "name": {
       "hu": "Kiterjesztett Ender Szem",
-      "en": "Ex Eye Of Ender",
+      "en": "Ex Eye of Ender",
       "ru": "Расширенный глаз Края"
     },
     "img": "img/items/ex_eye_of_ender.png",
@@ -9690,7 +9691,7 @@
   "two_port_cauldron": {
     "name": {
       "hu": "Kétnyílású Üst",
-      "en": "Two Port Cauldron",
+      "en": "Two-Port Cauldron",
       "ru": "Котёл с двумя отверстиями"
     },
     "img": "img/items/two_port_cauldron.png",
@@ -9977,7 +9978,7 @@
   "hard_ened_clay": {
     "name": {
       "hu": "Kemény Ened Clay",
-      "en": "Hard Ened Clay",
+      "en": "Hardened Clay",
       "ru": "Обожжённая глина"
     },
     "img": "img/items/hard_ened_clay.png",
@@ -9987,7 +9988,7 @@
   "sand_stone": {
     "name": {
       "hu": "Sand Ko",
-      "en": "Sand Stone",
+      "en": "Sandstone",
       "ru": "Песчаник"
     },
     "img": "img/items/sand_stone.png",
@@ -10008,7 +10009,7 @@
   "glow_stone_torch": {
     "name": {
       "hu": "Glow Ko Torch",
-      "en": "Glow Stone Torch",
+      "en": "Glowstone Torch",
       "ru": "Светящийся факел"
     },
     "img": "img/items/glow_stone_torch.png",
@@ -10048,7 +10049,7 @@
   "torch_holy": {
     "name": {
       "hu": "Tisztító Fáklya",
-      "en": "Torch Holy",
+      "en": "Holy Torch",
       "ru": "Священный факел"
     },
     "img": "img/items/torch_holy.png",
@@ -10208,7 +10209,7 @@
   "sun_flower_seed": {
     "name": {
       "hu": "Napraforgó Mag",
-      "en": "Sun Flower Seed",
+      "en": "Sunflower Seeds",
       "ru": "Семя подсолнуха"
     },
     "img": "img/items/sun_flower_seed.png",
@@ -10378,7 +10379,7 @@
   "blue_berries": {
     "name": {
       "hu": "Kék Áfonya",
-      "en": "Blue Berries",
+      "en": "Blueberries",
       "ru": "Черника"
     },
     "img": "img/items/blue_berries.png",
@@ -10393,8 +10394,7 @@
     },
     "img": "img/items/porridge.png",
     "tier": null,
-    "category": "material",
-    "removed_in": "0.5.6"
+    "category": "food"
   },
   "cereal": {
     "name": {
@@ -10455,8 +10455,7 @@
     },
     "img": "img/items/return_scroll.png",
     "tier": null,
-    "category": "material",
-    "removed_in": "0.5.8"
+    "category": "misc"
   },
   "bound_scroll": {
     "name": {
@@ -10466,8 +10465,7 @@
     },
     "img": "img/items/bound_scroll.png",
     "tier": null,
-    "category": "material",
-    "removed_in": "0.5.8"
+    "category": "misc"
   },
   "warp_scroll": {
     "name": {
@@ -10477,7 +10475,7 @@
     },
     "img": "img/items/warp_scroll.png",
     "tier": null,
-    "category": "material",
+    "category": "misc",
     "removed_in": "0.5.8"
   },
   "antique_atlas": {
@@ -10493,7 +10491,7 @@
   "way_stone": {
     "name": {
       "hu": "Utko",
-      "en": "Way Stone",
+      "en": "Waystone",
       "ru": "Путевой камень"
     },
     "img": "img/items/way_stone.png",
@@ -10503,8 +10501,8 @@
   "hard_stick": {
     "name": {
       "hu": "Kemény Bot",
-      "en": "Hard Stick",
-      "ru": "Твёрдая палка"
+      "en": "Hardstone Stick",
+      "ru": "Твердокаменная палка"
     },
     "img": "img/items/hard_stick.png",
     "tier": "hard",
@@ -10818,7 +10816,7 @@
   "water_bag_mercury": {
     "name": {
       "hu": "Vizes Tasak Higany",
-      "en": "Water Bag Mercury",
+      "en": "Mercury Water Bag",
       "ru": "Ртутный мешок для воды"
     },
     "img": "img/items/water_bag_mercury.png",
@@ -11173,8 +11171,7 @@
     },
     "img": "img/items/bowl_vegetable_soup.png",
     "tier": null,
-    "category": "material",
-    "removed_in": "0.5.6"
+    "category": "food"
   },
   "bronze_helmet": {
     "name": {
@@ -11339,7 +11336,7 @@
   "towerrack": {
     "name": {
       "hu": "Kőoszlop",
-      "en": "Towerrack",
+      "en": "Tower Rack 1/2",
       "ru": "Стойка башни"
     },
     "img": "img/items/towerrack.png",
@@ -11519,7 +11516,7 @@
     "name": {
       "hu": "Keménykő Vizestasak",
       "en": "Hardstone Water Bag",
-      "ru": "Твёрдокаменный мешок для воды"
+      "ru": "Твердокаменный мешок для воды"
     },
     "img": "img/items/water_bag_hard.png",
     "tier": "hard",
@@ -11574,3 +11571,5 @@
     "category": "material"
   }
 }
+
+

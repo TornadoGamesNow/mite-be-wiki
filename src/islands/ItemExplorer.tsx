@@ -42,12 +42,12 @@ for (const r of recipesRaw as any[]) {
 }
 
 const STATION_LABELS: Record<string, { hu: string; en: string; ru: string }> = {
-  flint_workbench:          { hu: 'Kovakő Munkaasztal',     en: 'Flint Workbench',          ru: 'Кремниевый верстак' },
+  flint_workbench:          { hu: 'Kovakő Munkaasztal',     en: 'Flint Workbench',          ru: 'Кремнёвый верстак' },
   copper_workbench:         { hu: 'Réz Munkaasztal',        en: 'Copper Workbench',         ru: 'Медный верстак' },
   silver_workbench:         { hu: 'Ezüst Munkaasztal',      en: 'Silver Workbench',         ru: 'Серебряный верстак' },
   gold_workbench:           { hu: 'Arany Munkaasztal',      en: 'Gold Workbench',           ru: 'Золотой верстак' },
   iron_workbench:           { hu: 'Vas Munkaasztal',        en: 'Iron Workbench',           ru: 'Железный верстак' },
-  hardstone_workbench:      { hu: 'Kőmag Munkaasztal',      en: 'Hardstone Workbench',      ru: 'Верстак из твёрдого камня' },
+  hardstone_workbench:      { hu: 'Kőmag Munkaasztal',      en: 'Hardstone Workbench',      ru: 'Твердокаменный верстак' },
   ancient_metal_workbench:  { hu: 'Ős Fém Munkaasztal',     en: 'Ancient Metal Workbench',  ru: 'Верстак из древнего металла' },
   mithril_workbench:        { hu: 'Mithril Munkaasztal',    en: 'Mithril Workbench',        ru: 'Мифриловый верстак' },
   adamantium_workbench:     { hu: 'Adamantium Munkaasztal', en: 'Adamantium Workbench',     ru: 'Адамантиевый верстак' },
@@ -72,7 +72,7 @@ const TIER_META: Record<string, { hu: string; en: string; ru: string; color: str
   bronze:             { hu: 'Bronz',              en: 'Bronze',             ru: 'Бронза',                 color: '#b87333', bg: 'rgba(184,115,51,.15)' },
   iron:               { hu: 'Vas',                en: 'Iron',               ru: 'Железо',                 color: '#d4d4d4', bg: 'rgba(212,212,212,.12)' },
   gold:               { hu: 'Arany',              en: 'Gold',               ru: 'Золото',                 color: '#f0c040', bg: 'rgba(240,192,64,.15)' },
-  hard:               { hu: 'Kőmag',              en: 'Hardstone',          ru: 'Твёрдый камень',         color: '#7ecaab', bg: 'rgba(126,202,171,.15)' },
+  hard:               { hu: 'Kőmag',              en: 'Hardstone',          ru: 'Твердокамень',         color: '#7ecaab', bg: 'rgba(126,202,171,.15)' },
   obsidian:           { hu: 'Obszidián',           en: 'Obsidian',           ru: 'Обсидиан',               color: '#7c4dff', bg: 'rgba(124,77,255,.15)' },
   rusted_iron:        { hu: 'Rozsdás Vas',         en: 'Rusted Iron',        ru: 'Ржавое железо',          color: '#b34700', bg: 'rgba(179,71,0,.15)' },
   silver_copper:      { hu: 'Ezüst-Réz',           en: 'Silver-Copper',      ru: 'Серебряно-медный',       color: '#a8c0cd', bg: 'rgba(168,192,205,.15)' },

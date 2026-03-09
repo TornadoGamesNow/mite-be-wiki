@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useRef } from 'react';
+﻿import { useState, useMemo, useEffect, useRef } from 'react';
 import recipesData from '../../data/recipes_full.json';
 import itemsData from '../../data/items.json';
 import { getCurrentLang, onLangChange } from '../i18n/lang';
@@ -413,35 +413,35 @@ const allSkills = [...new Set(recipes.flatMap(r => r.skills))].sort();
 
 const STATION_LABELS: Record<string, { hu: string; en: string; ru: string }> = {
   hand:                    { hu: 'Kézzel',                    en: 'By hand',                  ru: 'Руками' },
-  flint_workbench:         { hu: 'Kovakő Munkaasztal',        en: 'Flint Workbench',           ru: 'Кремниевый верстак' },
-  copper_workbench:        { hu: 'Réz Munkaasztal',           en: 'Copper Workbench',          ru: 'Медный верстак' },
-  silver_workbench:        { hu: 'Ezüst Munkaasztal',         en: 'Silver Workbench',          ru: 'Серебряный верстак' },
-  gold_workbench:          { hu: 'Arany Munkaasztal',         en: 'Gold Workbench',            ru: 'Золотой верстак' },
-  iron_workbench:          { hu: 'Vas Munkaasztal',           en: 'Iron Workbench',            ru: 'Железный верстак' },
-  hardstone_workbench:     { hu: 'Kőmag Munkaasztal',         en: 'Hardstone Workbench',       ru: 'Верстак из твёрдого камня' },
-  ancient_metal_workbench: { hu: 'Ős Fém Munkaasztal',        en: 'Ancient Metal Workbench',   ru: 'Верстак из древнего металла' },
-  mithril_workbench:       { hu: 'Mithril Munkaasztal',       en: 'Mithril Workbench',         ru: 'Мифриловый верстак' },
-  adamantium_workbench:    { hu: 'Adamantium Munkaasztal',    en: 'Adamantium Workbench',      ru: 'Адамантиевый верстак' },
-  stone_furnace:           { hu: 'Kő Kemence',                en: 'Stone Furnace',             ru: 'Каменная печь' },
-  blast_furnace:           { hu: 'Nagy Kemence (Olvasztó)',   en: 'Blast Furnace',             ru: 'Доменная печь' },
-  obsidian_furnace:        { hu: 'Obszidián Kemence',         en: 'Obsidian Furnace',          ru: 'Обсидиановая печь' },
-  netherrack_furnace:      { hu: 'Pokoli Kő Kemence',         en: 'Netherrack Furnace',        ru: 'Печь из адского камня' },
+  flint_workbench:         { hu: 'Kovamunkaasztal',        en: 'Flint Workbench',           ru: 'Кремнёвый верстак' },
+  copper_workbench:        { hu: 'Rézmunkaasztal',           en: 'Copper Workbench',          ru: 'Медный верстак' },
+  silver_workbench:        { hu: 'Ezüstmunkaasztal',         en: 'Silver Workbench',          ru: 'Серебряный верстак' },
+  gold_workbench:          { hu: 'Aranymunkaasztal',         en: 'Gold Workbench',            ru: 'Золотой верстак' },
+  iron_workbench:          { hu: 'Vasmunkaasztal',           en: 'Iron Workbench',            ru: 'Железный верстак' },
+  hardstone_workbench:     { hu: 'Keménykőmunkaasztal',         en: 'Hardstone Workbench',       ru: 'Твердокаменный верстак' },
+  ancient_metal_workbench: { hu: 'Ősi fémmunkaasztal',        en: 'Ancient Metal Workbench',   ru: 'Верстак из древнего металла' },
+  mithril_workbench:       { hu: 'Mithrilmunkaasztal',       en: 'Mithril Workbench',         ru: 'Мифриловый верстак' },
+  adamantium_workbench:    { hu: 'Adamantiummunkaasztal',    en: 'Adamantium Workbench',      ru: 'Адамантиевый верстак' },
+  stone_furnace:           { hu: 'Kőkemence',                en: 'Stone Furnace',             ru: 'Каменная печь' },
+  blast_furnace:           { hu: 'Nagyolvasztó',   en: 'Blast Furnace',             ru: 'Доменная печь' },
+  obsidian_furnace:        { hu: 'Obszidiánkemence',         en: 'Obsidian Furnace',          ru: 'Обсидиановая печь' },
+  netherrack_furnace:      { hu: 'Alvilágkőkemence',         en: 'Netherrack Furnace',        ru: 'Печь из адского камня' },
   cauldron:                { hu: 'Üst',                       en: 'Cauldron',                  ru: 'Котёл' },
-  brewing_stand:           { hu: 'Főzetállvány',              en: 'Brewing Stand',             ru: 'Стойка для зелий' },
+  brewing_stand:           { hu: 'Főzőállvány',              en: 'Brewing Stand',             ru: 'Стойка для зелий' },
 };
 
 const SKILL_LABELS: Record<string, { hu: string; en: string; ru: string }> = {
-  blacksmithing:   { hu: 'Kovácsmesterség', en: 'Blacksmithing',    ru: 'Кузнечное дело' },
-  carpentry:       { hu: 'Ácsmesterség',    en: 'Carpentry',        ru: 'Плотницкое дело' },
-  fineArts:        { hu: 'Finom Mesterség', en: 'Fine Arts',        ru: 'Тонкое мастерство' },
+  Kovácsmesterség:   { hu: 'Kovácsmesterség', en: 'Blacksmithing',    ru: 'Кузнечное дело' },
+  Ácsmesterség:       { hu: 'Ácsmesterség',    en: 'Carpentry',        ru: 'Плотницкое дело' },
+  fineArts:        { hu: 'Művészet', en: 'Fine Arts',        ru: 'Тонкое мастерство' },
   foodPreparation: { hu: 'Ételkészítés',    en: 'Food Preparation', ru: 'Приготовление пищи' },
-  masonry:         { hu: 'Kőfaragás',       en: 'Masonry',          ru: 'Каменщик' },
+  Kőfaragás:         { hu: 'Kőfaragás',       en: 'Masonry',          ru: 'Каменное дело' },
   brewing:         { hu: 'Főzőmesterség',   en: 'Brewing',          ru: 'Зельеварение' },
-  archery:         { hu: 'Íjászat',         en: 'Archery',          ru: 'Стрельба из лука' },
-  tinkering:       { hu: 'Barkácsolás',     en: 'Tinkering',        ru: 'Механик' },
-  fishing:         { hu: 'Horgászat',       en: 'Fishing',          ru: 'Рыбалка' },
-  farming:         { hu: 'Gazdálkodás',     en: 'Farming',          ru: 'Фермерство' },
-  mining:          { hu: 'Bányászat',       en: 'Mining',           ru: 'Горное дело' },
+  Íjászat:         { hu: 'Íjászat',         en: 'Archery',          ru: 'Стрельба из лука' },
+  Barkácsolás:       { hu: 'Barkácsolás',     en: 'Tinkering',        ru: 'Механика' },
+  Horgászat:         { hu: 'Horgászat',       en: 'Fishing',          ru: 'Рыбалка' },
+  Gazdálkodás:         { hu: 'Gazdálkodás',     en: 'Farming',          ru: 'Земледелие' },
+  Bányászat:          { hu: 'Bányászat',       en: 'Mining',           ru: 'Горное дело' },
   blacksmith:      { hu: 'Kovács',          en: 'Blacksmith',       ru: 'Кузнец' },
   smelting:        { hu: 'Olvasztás',       en: 'Smelting',         ru: 'Плавка' },
 };

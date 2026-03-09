@@ -31,6 +31,12 @@ function resolveHref(href: string): string {
   <nav class="sidebar">
     <div class="search-wrap">
       <input type="text" class="search-input" id="search-input-hu" placeholder="Oldalak, tárgyak, receptek..." aria-label="Search" />
+      <button class="sidebar-toggle" aria-expanded="false" aria-label="Toggle sidebar">
+        <span data-lang="hu">Navigáció</span>
+        <span data-lang="en">Navigation</span>
+        <span data-lang="ru">Навигация</span>
+        <span class="sidebar-toggle-icon">&#9660;</span>
+      </button>
     </div>
     <div class="sidebar-nav">
       {groups.hu.map(section => (
@@ -52,6 +58,12 @@ function resolveHref(href: string): string {
   <nav class="sidebar">
     <div class="search-wrap">
       <input type="text" class="search-input" id="search-input-en" placeholder="Pages, items, recipes..." aria-label="Search" />
+      <button class="sidebar-toggle" aria-expanded="false" aria-label="Toggle sidebar">
+        <span data-lang="hu">Navigáció</span>
+        <span data-lang="en">Navigation</span>
+        <span data-lang="ru">Навигация</span>
+        <span class="sidebar-toggle-icon">&#9660;</span>
+      </button>
     </div>
     <div class="sidebar-nav">
       {groups.en.map(section => (
@@ -74,6 +86,12 @@ function resolveHref(href: string): string {
   <nav class="sidebar">
     <div class="search-wrap">
       <input type="text" class="search-input" id="search-input-ru" placeholder="Страницы, предметы, рецепты..." aria-label="Search" />
+      <button class="sidebar-toggle" aria-expanded="false" aria-label="Toggle sidebar">
+        <span data-lang="hu">Navigáció</span>
+        <span data-lang="en">Navigation</span>
+        <span data-lang="ru">Навигация</span>
+        <span class="sidebar-toggle-icon">&#9660;</span>
+      </button>
     </div>
     <div class="sidebar-nav">
       {groups.ru.map(section => (
@@ -91,3 +109,13 @@ function resolveHref(href: string): string {
 </div>
 )}
 
+<script>
+  document.querySelectorAll('.sidebar-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      const nav = btn.closest('.sidebar')?.querySelector('.sidebar-nav');
+      if (nav) nav.classList.toggle('sidebar-nav-open');
+    });
+  });
+</script>

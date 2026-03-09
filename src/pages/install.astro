@@ -1,4 +1,4 @@
----
+﻿---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import TopNav from '../components/TopNav.astro';
@@ -104,7 +104,7 @@ details.advanced .details-content{padding:4px 16px 16px;}
   <li>Töltsd le a PrismLauncher-t innen: <a href="https://prismlauncher.org/download/" target="_blank" rel="noopener">prismlauncher.org</a></li>
   <li>Telepítsd és indítsd el</li>
   <li>Adj hozzá egy <strong>Minecraft fiókot</strong> (Microsoft fiók szükséges)</li>
-  <li><strong>Beállítások → Java</strong> → kattints az <em>"Auto-detect"</em> gombra és válaszd ki a <strong>Java 8 (1.8.0)</strong> telepítést</li>
+  <li><strong>Beállítások → Java</strong> → kattints az <em>"Automatikus felismerés"</em> gombra és válaszd ki a <strong>Java 8 (1.8.0)</strong> telepítést</li>
 </ol>
 <div class="warning-box">⚠️ Ha nem állítod be a Java 8-at a PrismLauncherben, a mod <strong>nem fog működni</strong> — a leggyakoribb hiba ez!</div>
 
@@ -156,7 +156,7 @@ details.advanced .details-content{padding:4px 16px 16px;}
   <li><strong>Játékmód választás:</strong> A MITE:BE két módot kínál — <strong>Simple</strong> (fáklyák nem alszanak ki, könnyebb) és <strong>Hardcore</strong> (fáklya kialszik, nehezebb). Kezdőknek a Simple ajánlott!</li>
   <li><strong>Biome választás:</strong> A <strong>Magasföld (Highland)</strong> biome az ajánlott kezdő biome — lapos terep, jó erőforrások, nincs extrém veszély.</li>
   <li><strong>Wiki:</strong> Tartsd nyitva a <a href="./#phase-guide">Fázis Útmutatót</a> — lépésről lépésre végigvezet a progresszión!</li>
-  <li>🗺️ <strong>Seed:</strong> Ha nem tudod, milyen seed-et indíts, nézd meg az <a href={`${base}/faq/#seed`}><strong>Ajánlott Seed útmutatónkat</strong></a> — floating island, kanyon ércekkel, alma-erdő közel.</li>
+  <li>🗺️ <strong>Seed:</strong> Ha nem tudod, milyen seed-et indíts, nézd meg az <a href={`${base}/faq/#seed`}><strong>Ajánlott Seed útmutatónkat</strong></a> — lebegő sziget, kanyon ércekkel, alma-erdő közel.</li>
 </ul>
 <div class="tip-card">💡 A Minecraft 1.6.4 régi verzió — ne lepődj meg a régebbi grafikán és menürendszeren!</div>
 
@@ -305,7 +305,7 @@ details.advanced .details-content{padding:4px 16px 16px;}
 <ol>
   <li>Скачайте <strong>Java 8 JRE</strong> с: <a href="https://adoptium.net/temurin/releases/?version=8" target="_blank" rel="noopener">adoptium.net — Eclipse Temurin 8</a></li>
   <li>Выберите версию для вашей ОС (Windows x64 → рекомендуется <code>.msi</code>)</li>
-  <li>Установите обычным образом — запомните путь установки!</li>
+  <li>Установите как обычно — запомните путь установки!</li>
 </ol>
 <div class="tip-card">💡 Если Java уже установлена, запустите <code>java -version</code> в терминале. Должно начинаться с <strong>"1.8.0"</strong>.</div>
 
@@ -314,13 +314,13 @@ details.advanced .details-content{padding:4px 16px 16px;}
   <li>Скачайте PrismLauncher с: <a href="https://prismlauncher.org/download/" target="_blank" rel="noopener">prismlauncher.org</a></li>
   <li>Установите и запустите</li>
   <li>Добавьте <strong>аккаунт Minecraft</strong> (требуется аккаунт Microsoft)</li>
-  <li><strong>Настройки → Java</strong> → нажмите <em>"Auto-detect"</em> и выберите установку <strong>Java 8 (1.8.0)</strong></li>
+  <li><strong>Настройки → Java</strong> → нажмите <em>"Автоопределение"</em> и выберите установку <strong>Java 8 (1.8.0)</strong></li>
 </ol>
 <div class="warning-box">⚠️ Если не настроить Java 8 в PrismLauncher, мод <strong>не будет работать</strong> — это самая частая ошибка!</div>
 
 <!-- ===== СКАЧИВАНИЕ ===== -->
 <h2 id="download-ru">Скачивание MITE:BE</h2>
-<p>Мод распространяется как <strong>полный экземпляр PrismLauncher</strong> — всё включено (Minecraft 1.6.4 + JAR-файлы модов + текстур-пак).</p>
+<p>Мод распространяется как <strong>готовый экземпляр PrismLauncher</strong> — всё включено (Minecraft 1.6.4 + JAR-файлы модов + текстур-пак).</p>
 
 <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin:24px 0;">
   <a href="https://archive.org/download/mite-be-v0.9.0-english/MiTE-BE_v0.9.0_english.zip" class="download-btn">
@@ -363,10 +363,10 @@ details.advanced .details-content{padding:4px 16px 16px;}
 <!-- ===== ПЕРВЫЙ ЗАПУСК ===== -->
 <h2 id="first-launch-ru">Советы для первого запуска</h2>
 <ul>
-  <li><strong>Выбор игрового режима:</strong> MITE:BE предлагает два режима — <strong>Simple</strong> (факелы не гаснут, проще) и <strong>Hardcore</strong> (факелы гаснут, сложнее). Для новичков рекомендуется Simple!</li>
-  <li><strong>Выбор биома:</strong> Биом <strong>Нагорье (Highland)</strong> — рекомендуемый стартовый биом — ровная местность, хорошие ресурсы, нет экстремальных опасностей.</li>
-  <li><strong>Вики:</strong> Держите открытым <a href="./#phase-guide">Путеводитель по фазам</a> — он ведёт вас через прогрессию шаг за шагом!</li>
-  <li>🗺️ <strong>Сид:</strong> Не знаете какой сид выбрать? Смотрите наш <a href={`${base}/faq/#seed-ru`}><strong>Путеводитель по рекомендуемому сиду</strong></a> — парящий остров, каньон с рудами, яблоневый лес рядом.</li>
+  <li><strong>Выбор игрового режима:</strong> В MITE:BE есть два режима: <strong>Simple</strong> (факелы не гаснут, играть проще) и <strong>Hardcore</strong> (факелы гаснут, выживать заметно сложнее). Новичкам лучше начинать с Simple.</li>
+  <li><strong>Выбор биома:</strong> Для старта лучше всего подходит биом <strong>Нагорье (Highland)</strong>: ровная местность, хорошие ресурсы и без экстремальных угроз.</li>
+  <li><strong>Вики:</strong> Держите открытым <a href="./#phase-guide">Путеводитель по фазам</a> — он пошагово проводит по всей прогрессии.</li>
+  <li>🗺️ <strong>Сид:</strong> Если не знаете, какой сид выбрать, загляните в наш <a href={`${base}/faq/#seed-ru`}><strong>путеводитель по рекомендуемому сиду</strong></a>: рядом есть парящий остров, каньон с рудами и яблоневый лес.</li>
 </ul>
 <div class="tip-card">💡 Minecraft 1.6.4 — старая версия, не удивляйтесь старой графике и меню!</div>
 

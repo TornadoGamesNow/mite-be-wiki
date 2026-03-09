@@ -1,4 +1,4 @@
-/* MITE: Break Everything Wiki — App v6 */
+﻿/* MITE: Break Everything Wiki — App v6 */
 
 // ── Language Switcher ──
 function setLang(lang) {
@@ -485,7 +485,7 @@ function initDataTables(lang) {
   if (d.mobs) {
     const mobHeaders = [
       { hu: 'Szörny', en: 'Mob' },
-      { hu: 'HP', en: 'HP' },
+      { hu: 'Életerő (HP)', en: 'Életerő (HP)' },
       { hu: 'Sebzés', en: 'Damage' },
       { hu: 'XP', en: 'XP' },
       { hu: 'Speciális', en: 'Special' }
@@ -493,7 +493,7 @@ function initDataTables(lang) {
     function mobRows(list) {
       return list.map(m => ({ cells: [
         { text: m.name },
-        { text: String(m.hp) },
+        { text: String(m.Életerő (HP)) },
         { text: m.dmg },
         { text: String(m.xp) },
         { text: m.special }

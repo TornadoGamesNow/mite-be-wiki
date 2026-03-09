@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": "zombie",
     "name": {
@@ -57,7 +57,7 @@
     },
     "spawnInfo": {
       "hu": "Felszín és föld alatt, éjjel. Nehéz módban 50. réteg alatt nappal is.",
-      "en": "Surface and underground at night. Hard mode: below Y=50 also during day.",
+      "en": "Surface and underground at night. Nehéz mód: below Y=50 also during day.",
       "ru": "Поверхность и под землёй ночью. Сложный режим: ниже Y=50 также днём."
     },
     "speed": 0.23
@@ -519,7 +519,7 @@
     },
     "spawnInfo": {
       "hu": "Nappal is aktív. Nehéz módban 50. réteg alatt és Underground Worldben.",
-      "en": "Active in daylight. Hard mode: below Y=50 and Underground World.",
+      "en": "Active in daylight. Nehéz mód: below Y=50 and Underground World.",
       "ru": "Активен при дневном свете. Сложный режим: ниже Y=50 и Подземный мир."
     },
     "speed": 0.21
@@ -641,7 +641,7 @@
   {
     "id": "zombie_caller",
     "name": {
-      "hu": "Zombi Hívó",
+      "hu": "Zombihívó",
       "en": "Zombie Caller",
       "ru": "Призыватель зомби"
     },
@@ -713,7 +713,7 @@
   {
     "id": "dire_wolf",
     "name": {
-      "hu": "Szörnyű Farkas",
+      "hu": "Zord farkas",
       "en": "Dire Wolf",
       "ru": "Лютоволк"
     },
@@ -827,7 +827,7 @@
     },
     "spawnInfo": {
       "hu": "Vérhold: felszín; Y=0-40 (mélyebb helyen nagyobb esély). Nehéz módban 50. réteg alatt.",
-      "en": "Blood Moon: surface; Y=0–40 (higher chance deeper). Hard mode below Y=50.",
+      "en": "Blood Moon: surface; Y=0–40 (higher chance deeper). Nehéz mód below Y=50.",
       "ru": "Кровавая луна: поверхность; Y=0–40 (больший шанс глубже). Сложный режим ниже Y=50."
     },
     "speed": 0.25
@@ -914,7 +914,7 @@
     ],
     "special": {
       "hu": "Halálos mérgezés: 50 mp Mérgezés (nehéz módban 60 mp). Nappal is ellenséges. Nehéz módban: már mérgezett játékoson minden sebzés igaz sebzéssé konvertálódik.",
-      "en": "Lethal Poison: 50s Poison (hard mode: 60s). Hostile in daylight. Hard mode: attacks on already-poisoned player convert all damage to true damage.",
+      "en": "Lethal Poison: 50s Poison (Nehéz mód: 60s). Hostile in daylight. Nehéz mód: attacks on already-poisoned player convert all damage to true damage.",
       "ru": "Смертельный яд: Отравление 50 сек (сложн.: 60 сек). Агрессивен днём. Сложн.: атаки по уже отравленному игроку конвертируют весь урон в истинный."
     },
     "drops": [
@@ -949,7 +949,7 @@
     },
     "spawnInfo": {
       "hu": "Ritka megjelenés. Nehéz módban 50. réteg alatt.",
-      "en": "Rare spawn. Hard mode: below Y=50.",
+      "en": "Rare spawn. Nehéz mód: below Y=50.",
       "ru": "Редкое появление. Сложный режим: ниже Y=50."
     },
     "speed": 0.8
@@ -1106,7 +1106,7 @@
     ],
     "special": {
       "hu": "Nagy robbanás: követ/kavicsot is tör. Robbanáskor meggyújtja a körülötte lévő blokkokat. Tűz/láva immunitás. Nehéz módban: túléli saját robbanását.",
-      "en": "Large explosion: breaks stone/cobblestone. Ignites surrounding blocks on explosion. Fire/lava immunity. Hard mode: survives its own explosion.",
+      "en": "Large explosion: breaks stone/cobblestone. Ignites surrounding blocks on explosion. Fire/lava immunity. Nehéz mód: survives its own explosion.",
       "ru": "Большой взрыв: ломает камень/булыжник. При взрыве поджигает окружающие блоки. Иммунитет к огню/лаве. Сложн.: переживает собственный взрыв."
     },
     "drops": [
@@ -1239,7 +1239,7 @@
     "mobType": "elemental",
     "armor": 4,
     "description": {
-      "hu": "Öt anyagváltozatban létezik: agyag, kavics, obszidián, netherrack, end kő. Gyorsan tör köves blokkokat és ajtókat. Rendkívüli rezisztencia — csak robbanás, villám, esési sérülés és megfelelő bányász szintű csákány/háborús kalapács sebzi.",
+      "hu": "Öt anyagváltozatban létezik: agyag, kavics, Obszidián, netherrack, end kő. Gyorsan tör köves blokkokat és ajtókat. Rendkívüli rezisztencia — csak robbanás, villám, esési sérülés és megfelelő bányász szintű csákány/háborús kalapács sebzi.",
       "en": "Exists in five material variants: clay, cobblestone, obsidian, netherrack, endstone. Quickly breaks stone and doors. Extreme resistance — only harmed by explosions, lightning, fall damage, and pickaxes/warhammers of equivalent or higher mining tier.",
       "ru": "Существует в пяти материальных вариантах: глина, булыжник, обсидиан, незерак, камень Края. Быстро ломает камень и двери. Экстремальная сопротивляемость — получает урон только от взрывов, молнии, урона от падения и кирок/боевых молотов эквивалентного или более высокого уровня добычи."
     },
@@ -1377,7 +1377,7 @@
     ],
     "special": {
       "hu": "Teleport támadás: célpont érzékelésekor 0.5 mp-enként teleportál. Távolsági sebzés immunitás. Nehéz módban: találat Lassítás I-et okoz 2-4 mp-re.",
-      "en": "Teleport attack: teleports every 0.5s when detecting a target. Immune to ranged damage. Hard mode: hit inflicts Slowness I for 2–4s.",
+      "en": "Teleport attack: teleports every 0.5s when detecting a target. Immune to ranged damage. Nehéz mód: hit inflicts Slowness I for 2–4s.",
       "ru": "Телепортационная атака: телепортируется каждые 0.5 сек при обнаружении цели. Иммунитет к дальнему урону. Сложн.: удар накладывает Замедление I на 2–4 сек."
     },
     "drops": [
@@ -1439,7 +1439,7 @@
     ],
     "special": {
       "hu": "Találatkor meggyújtja a játékost. Lávában regeneráció. Nehéz módban: 1-3% esély azonnali megölésre, ha a játékos már ég.",
-      "en": "Sets player on fire on hit. Lava regeneration. Hard mode: 1–3% chance to instantly kill already-burning player.",
+      "en": "Sets player on fire on hit. Lava regeneration. Nehéz mód: 1–3% chance to instantly kill already-burning player.",
       "ru": "Поджигает игрока при ударе. Регенерация в лаве. Сложн.: шанс 1–3% мгновенно убить уже горящего игрока."
     },
     "drops": [
@@ -1564,7 +1564,7 @@
         },
         "qty": "12",
         "chance": "always",
-        "itemId": "element_obsidian"
+        "itemId": "elemental_obsidian"
       },
       {
         "item": {
@@ -1859,7 +1859,7 @@
   {
     "id": "bone_lord",
     "name": {
-      "hu": "Csont Úr",
+      "hu": "Csontvázúr",
       "en": "Bone Lord",
       "ru": "Костяной лорд"
     },
@@ -1910,7 +1910,7 @@
   {
     "id": "ancient_bone_lord",
     "name": {
-      "hu": "Ősi Csont Úr",
+      "hu": "Ősi Csontvázúr",
       "en": "Ancient Bone Lord",
       "ru": "Древний костяной лорд"
     },
@@ -2851,7 +2851,7 @@
     "mobType": "monster",
     "armor": 0,
     "description": {
-      "hu": "Kizárólag obszidiánból álló golem. Természetesen megjelenik 40 blokknál mélyebben a felszín alatt. Aktívan megtámadja a játékosokat és falusiakat.",
+      "hu": "Kizárólag Obszidiánból álló golem. Természetesen megjelenik 40 blokknál mélyebben a felszín alatt. Aktívan megtámadja a játékosokat és falusiakat.",
       "en": "A golem composed entirely of obsidian. Naturally spawns more than 40 blocks below the surface. Actively attacks players and villagers.",
       "ru": "Голем, полностью состоящий из обсидиана. Естественно появляется глубже 40 блоков под поверхностью. Активно атакует игроков и жителей."
     },
@@ -2932,7 +2932,7 @@
     "tags": [],
     "special": {
       "hu": "Íjas vagy kardos támadás. Nehéz módban: íjnak Erő II, kardnak Élesség II varázslattal.",
-      "en": "Bow or sword attack. Hard mode: bow has Power II, sword has Sharpness II.",
+      "en": "Bow or sword attack. Nehéz mód: bow has Power II, sword has Sharpness II.",
       "ru": "Атака луком или мечом. Сложн.: лук с Мощью II, меч с Остротой II."
     },
     "drops": [
@@ -3624,7 +3624,7 @@
   {
     "id": "confused_creeper",
     "name": {
-      "hu": "Zavart Creeper",
+      "hu": "Zavart creeper",
       "en": "Confused Creeper",
       "ru": "Запутанный крипер"
     },
@@ -3829,7 +3829,7 @@
   {
     "id": "corrupted_snowman",
     "name": {
-      "hu": "Romlott Hóember",
+      "hu": "Gonosz hóember",
       "en": "Corrupted Snowman",
       "ru": "Искажённый снежный голем"
     },
@@ -4221,7 +4221,7 @@
       "pack"
     ],
     "special": {
-      "hu": "Kúszó és álló forma. Blokktörés képesség.",
+      "hu": "Creeper és álló forma. Blokktörés képesség.",
       "en": "Crawling and standing form. Block-breaking ability.",
       "ru": "Ползущая и стоячая форма. Способность ломать блоки."
     },
@@ -4241,7 +4241,7 @@
     "mobType": "undead",
     "armor": 0,
     "description": {
-      "hu": "Vérhold esemény alatt megjelenő mutáns zombi. Két formája van: kúszó (kisebb ütközési doboz) és álló.",
+      "hu": "Vérhold esemény alatt megjelenő mutáns zombi. Két formája van: Creeper (kisebb ütközési doboz) és álló.",
       "en": "A mutant zombie spawning during the Blood Moon event. Has two forms: crawling (smaller hitbox) and standing.",
       "ru": "Мутировавший зомби, появляющийся во время события Кровавой луны. Имеет две формы: ползущую (меньший хитбокс) и стоячую."
     },
@@ -7032,3 +7032,5 @@
     "speed": 0.2
   }
 ]
+
+

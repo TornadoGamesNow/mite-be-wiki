@@ -47,3 +47,8 @@ scripts/__pycache__/
 scripts/*.txt
 scripts/*.log
 MiTE-BE_v0.9.0_english_dev.zip
+MiTE-BE_v0.9.0_russian.zip
+TRANSLATION_ISSUES.md
+
+# Extracted class files
+net/

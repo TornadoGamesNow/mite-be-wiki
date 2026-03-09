@@ -1,4 +1,4 @@
----
+﻿---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import TopNav from '../components/TopNav.astro';
@@ -17,15 +17,15 @@ const sidebarGroups = {
     {
       title: '📋 Referenciák',
       links: [
-        { href: '#mobs', label: 'Szörnyek' },
-        { href: '#potions', label: 'Bájitalok & hatások' },
-        { href: '#potions', label: '↳ Sajt készítés' },
+        { href: '#mobs', label: 'Mobs & Creatures' },
+        { href: '#potions', label: 'Potions & Effects' },
+        { href: '#potions', label: '↳ Sajtkészítés' },
         { href: '#quality', label: 'Munkaasztal szintek' },
-        { href: '#blood-moon', label: 'Vérhold rendszer' },
-        { href: '#fog-event', label: 'Ködfolt esemény' },
-        { href: '#achievements', label: 'Teljesítmények' },
-        { href: '#keybinds', label: 'Gyorsbillentyűk' },
-        { href: '#structures', label: '🏛️ Struktúrák' },
+        { href: '#blood-moon', label: 'Blood Moon' },
+        { href: '#fog-event', label: 'Fog Event' },
+        { href: '#Teljesítménys', label: 'Teljesítmények' },
+        { href: '#keybinds', label: 'Keybindings' },
+        { href: '#Építménys', label: '🏛️ Structures' },
       ],
     },
   ],
@@ -96,30 +96,30 @@ const sidebarGroups = {
 
 <h3>Nether Szörnyek</h3>
 <div id="mob-table-nether"></div>
-<div class="warning-box">🔥 <strong>Tűz Elementális:</strong> Ha <strong>éppen égsz</strong> amikor megtámad, <strong>3% esélye azonnal megöl!</strong> Tűzálló bájital kötelező. Hatásos: varázstárgyak, víz, hógolyók, Sebzés bájital. NEM hat: tűz, ezüst fegyver.</div>
+<div class="warning-box">🔥 <strong>Tűz Elementális:</strong> Ha <strong>éppen égsz</strong> amikor megtámad, <strong>3% esélye azonnal megöl!</strong> Tűzálló bájital kötelező. Hatásos: varázstárgyak, víz, hógolyók, Sértés bájital. NEM hat: tűz, ezüst fegyver.</div>
 
 <h3>Főellenfél: HIM</h3>
 <table class="compare-table">
   <tr><th>Tulajdonság</th><th>Érték</th></tr>
-  <tr><td>HP</td><td><strong>400</strong></td></tr>
+  <tr><td>Életerő (HP)</td><td><strong>400</strong></td></tr>
   <tr><td>Sebzés</td><td>Változó — rendkívül magas</td></tr>
   <tr><td>Immunis</td><td>Szinte mindenre — speciális mechanika szükséges</td></tr>
   <tr><td>XP</td><td>Hatalmas mennyiség</td></tr>
 </table>
-<div class="warning-box">💀 <strong>HIM:</strong> A játék végső ellensége. 400 HP, szinte mindenre immunis. Speciális mechanikával győzhető le — a közönséges fegyverek és bájitalok hatástalanok. Teljes Adamantium felszerelés és speciális stratégia szükséges!</div>
+<div class="warning-box">💀 <strong>HIM:</strong> A játék végső ellensége. 400 Életerő (HP), szinte mindenre immunis. Speciális mechanikával győzhető le — a közönséges fegyverek és bájitalok hatástalanok. Teljes Adamantium felszerelés és speciális stratégia szükséges!</div>
 
 <h3>Speciális Lények</h3>
-<p>Változat Zombi, Változat Kúszó, Változat Pók, Változat Csontváz — erősebb verziók a szokásos szörnyekből.</p>
-<p>Baby Kúszó, Zavart Kúszó, Szétválasztott Kúszó, Megfagyott Kúszó, Végvilág Villám Kúszó — Creeper variánsok.</p>
-<p>Zombi Hívó, Bombázó, Obszidián Gólem, Sivatag Őr, Romlott Hóember — speciális szörnyek.</p>
-<p><strong>Partnerek:</strong> Harcos Lakos, Utazó, Bányász Lakos — szövetségesek!</p>
+<p>Zombiváltozat, Creeperváltozat, Pókváltozat, Csontvázváltozat — erősebb verziók a szokásos szörnyekből.</p>
+<p>Creeper-gyerek, Zavart creeper, Osztódó creeper, Fagyott creeper, Végvilági villám-creeper — Creeper variánsok.</p>
+<p>Zombihívó, Bombázó, Obszidián Gólem, Sivatagi őr, Gonosz hóember — speciális szörnyek.</p>
+<p><strong>Partnerek:</strong> Harcos falusi, Utazó falusi, Bányász falusi — szövetségesek!</p>
 
 </div></div></div>
 </div>
 <div data-lang="hu" id="potions">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>Bájitalok & Hatások</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<div class="warning-box">⚠️ <strong>A Brewer foglalkozás jelenleg nincs aktiválva a v0.9.0-ban</strong> — a bájitalfőzés foglalkozás nélkül is működik az aktuális verzióban. Az alábbi leírás érdekességképp szerepel.</div>
+<div class="warning-box">⚠️ <strong>A Bájitalkészítő szakma jelenleg nincs aktiválva a v0.9.0-ban</strong> — a bájitalfőzés foglalkozás nélkül is működik az aktuális verzióban. Az alábbi leírás érdekességképp szerepel.</div>
 
 <h4>Bájital Hatások</h4>
 <table class="compare-table">
@@ -128,15 +128,15 @@ const sidebarGroups = {
   <tr><td>Erő</td><td>Több ütés sebzés</td><td>I–IV</td></tr>
   <tr><td>Regeneráció</td><td>Folyamatos gyógyulás</td><td>I–IV</td></tr>
   <tr><td>Tűzállóság</td><td>Tűz és láva nem sebez</td><td>I</td></tr>
-  <tr><td>Láva Ellenállás</td><td>Speciális MITE effekt — láva sebzés csökkentés</td><td>I</td></tr>
+  <tr><td>Láva Ellenállás</td><td>Speciális MITE effekt — láva Sebzéscsökkentés</td><td>I</td></tr>
   <tr><td>Éjszakai Látás</td><td>Látás sötétben</td><td>I</td></tr>
-  <tr><td>Vízben Való Légzés</td><td>Víz alatti lélegzés</td><td>I</td></tr>
+  <tr><td>Víz alatti légzés</td><td>Víz alatti lélegzés</td><td>I</td></tr>
   <tr><td>Láthatatlanság</td><td>Szörnyek nem látnak</td><td>I</td></tr>
-  <tr><td>Sebzés (Harming)</td><td>Azonnali sebzés — Tűz Elementális ellen hatásos!</td><td>I–II</td></tr>
+  <tr><td>Sértés</td><td>Azonnali sebzés — Tűz Elementális ellen hatásos!</td><td>I–II</td></tr>
   <tr><td>Gyógyítás (Healing)</td><td>Azonnali gyógyulás</td><td>I–II</td></tr>
   <tr><td>Mérgezés</td><td>Folyamatos sebzés</td><td>I–IV</td></tr>
   <tr><td>Gyengeség</td><td>Kevesebb sebzés</td><td>I–II</td></tr>
-  <tr><td>Lassúság</td><td>Lassabb mozgás</td><td>I–II</td></tr>
+  <tr><td>Lassítás</td><td>Lassabb mozgás</td><td>I–II</td></tr>
   <tr><td>Sorvadás</td><td>Wither hatás</td><td>I–II</td></tr>
   <tr><td>Korrózió</td><td>Felszerelés károsodás</td><td>I</td></tr>
   <tr><td>Alvászavar</td><td>Nem tudsz aludni</td><td>I</td></tr>
@@ -153,19 +153,19 @@ const sidebarGroups = {
   <tr><th>Recept</th><th>Folyamat</th><th>Eredmény</th></tr>
   <tr><td><strong>Folyékony Arany</strong></td><td>Üst lávaforrás alá + Arany érc beledobás → 10 mp várakozás</td><td>Folyékony arany — 4 Aranyalma készíthető belőle (4 alma/üst)</td></tr>
   <tr><td><strong>Folyékony Higany</strong></td><td>Higany érc + Láva az üstben → olvasztás</td><td>Folyékony higany (vödörrel szedhető)</td></tr>
-  <tr><td><strong>Ősi Fém Hátizsák</strong></td><td>Bőr hátizsák + 4 Ősi Fém rúd higanyba → 30 mp várakozás</td><td>Ősi Fém hátizsák (több slot, tartósabb)</td></tr>
+  <tr><td><strong>Ősi Fém Hátizsák</strong></td><td>Bőr hátizsák + 4 Ősi fémrúd higanyba → 30 mp várakozás</td><td>Ősi Fém hátizsák (több slot, tartósabb)</td></tr>
 </table>
 
 <h4>Varázstalanító Palack (Disenchanting Bottle)</h4>
 <p>Különleges bájital amely bűvöléseket és hatásokat távolít el:</p>
 <ul>
-  <li><strong>Recept:</strong> Vízpalack + Szén + Pokoli Szemölcs (Nether Wart)</li>
+  <li><strong>Recept:</strong> Vizespalack + Szén + Alvilági szemölcs (Nether Wart)</li>
   <li><strong>Hatásai:</strong> Bűvölés eltávolítás tárgyakról, bájital hatások törlése, boszorkány átkok eltávolítása</li>
   <li>Rendkívül hasznos ha rossz bűvölést kaptál, vagy boszorkány megátkozott!</li>
 </ul>
 
-<h4>Sajt Készítés</h4>
-<p>Bármilyen fém tejesvödör használható (Réztől Adamantiumig) — a vödör szintje határozza meg a craftolási állomást. <em>(⚠️ Brewer foglalkozás v0.9.0-ban inaktív — foglalkozás nélkül is elérhető)</em></p>
+<h4>Sajtkészítés</h4>
+<p>Bármilyen fém tejesvödör használható (Réztől Adamantiumig) — a vödör szintje határozza meg a craftolási állomást. <em>(⚠️ Bájitalkészítő szakma v0.9.0-ban inaktív — foglalkozás nélkül is elérhető)</em></p>
 <table class="compare-table">
   <tr><th>Hozzávaló</th><th>Eredmény</th><th>Nehézség/db</th><th>Megjegyzés</th></tr>
   <tr><td>1× Fém Tejesvödör</td><td>1× Sajt</td><td>6 400</td><td>Alaprecept</td></tr>
@@ -190,45 +190,40 @@ const sidebarGroups = {
 <p>Az alaprecept (Réztől felfelé): <strong>fémrúd/fémnyelv + Bőr + Bot + (bármely) Deszka</strong>.</p>
 <table class="compare-table">
   <tr><th>Munkaasztal</th><th>Kulcsanyag</th><th>Egyéb összetevők</th><th>Nehézség</th></tr>
-  <tr><td><strong>Kőzet Munkaasztal</strong></td><td>Kova Kés</td><td>Fatörzs</td><td>270</td></tr>
-  <tr><td><strong>Réz Munkaasztal</strong></td><td>Réz Nyelv</td><td>Bőr + Bot + Deszka</td><td>605</td></tr>
-  <tr><td><strong>Ezüst Munkaasztal</strong></td><td>Ezüst Nyelv</td><td>Bőr + Bot + Deszka</td><td>605</td></tr>
-  <tr><td><strong>Arany Munkaasztal</strong></td><td>Arany Rúd</td><td>Bőr + Bot + Deszka</td><td>605</td></tr>
-  <tr><td><strong>Vas Munkaasztal</strong></td><td>Vas Rúd</td><td>Bőr + Bot + Deszka</td><td>1005</td></tr>
+  <tr><td><strong>Kovamunkaasztal</strong></td><td>Kovakés</td><td>Rönk</td><td>270</td></tr>
+  <tr><td><strong>Réz Munkaasztal</strong></td><td>Rézöntvény</td><td>Bőr + Bot + Deszka</td><td>605</td></tr>
+  <tr><td><strong>Ezüst Munkaasztal</strong></td><td>Ezüstöntvény</td><td>Bőr + Bot + Deszka</td><td>605</td></tr>
+  <tr><td><strong>Arany Munkaasztal</strong></td><td>Aranyrúd</td><td>Bőr + Bot + Deszka</td><td>605</td></tr>
+  <tr><td><strong>Vas Munkaasztal</strong></td><td>Vasrúd</td><td>Bőr + Bot + Deszka</td><td>1005</td></tr>
   <tr><td><strong>Keménykő Munkaasztal</strong></td><td>Keménykő Rúd</td><td>Bőr + Bot + Deszka</td><td>1805</td></tr>
-  <tr><td><strong>Ősi Fém Munkaasztal</strong></td><td>Ősi Fém Nyelv</td><td>Bőr + Bot + Deszka</td><td>1805</td></tr>
-  <tr><td><strong>Mithril Munkaasztal</strong></td><td>Mithril Nyelv</td><td>Bőr + Bot + Deszka</td><td>6605</td></tr>
-  <tr><td><strong>Adamantium Munkaasztal</strong></td><td>Adamantium Nyelv</td><td>Bőr + Bot + Deszka</td><td>25805</td></tr>
-  <tr><td><strong>Obszidián Munkaasztal</strong></td><td>Obszidián</td><td>Zsinór/Ón + Bot + Fatörzs</td><td>410</td></tr>
+  <tr><td><strong>Ősi Fém Munkaasztal</strong></td><td>Ősi fémöntvény</td><td>Bőr + Bot + Deszka</td><td>1805</td></tr>
+  <tr><td><strong>Mithril Munkaasztal</strong></td><td>Mithrilöntvény</td><td>Bőr + Bot + Deszka</td><td>6605</td></tr>
+  <tr><td><strong>Adamantium Munkaasztal</strong></td><td>Adamantiumöntvény</td><td>Bőr + Bot + Deszka</td><td>25805</td></tr>
+  <tr><td><strong>Obszidián Munkaasztal</strong></td><td>Obszidián</td><td>Zsinór/Ón + Bot + Rönk</td><td>410</td></tr>
 </table>
 
 <h3>Mit lehet melyiken készíteni?</h3>
 <p>A munkaasztal anyaga meghatározza a maximum szintet, amit rajta készíthetsz:</p>
 <table class="compare-table">
   <tr><th>Munkaasztal</th><th>Feloldott tárgyak és szintek</th></tr>
-  <tr><td><strong>Kőzet Munkaasztal</strong></td><td>Kova és fa szerszámok, kő és fa építőelemek, egyszerű receptek</td></tr>
-  <tr><td><strong>Réz Munkaasztal</strong></td><td>Réz szerszámok, réz fegyverek, réz páncél; <strong>Kő Kemence Mag</strong></td></tr>
-  <tr><td><strong>Ezüst Munkaasztal</strong></td><td>Ezüst szerszámok, ezüst fegyverek, ezüst páncél; <strong>Kő Kemence Mag</strong></td></tr>
-  <tr><td><strong>Arany Munkaasztal</strong></td><td>Arany szerszámok, fegyverek, páncél; <strong>Obszidián Kemence Mag</strong></td></tr>
-  <tr><td><strong>Vas Munkaasztal</strong></td><td>Vas szerszámok, fegyverek, páncél; <strong>Obszidián Kemence Mag</strong></td></tr>
+  <tr><td><strong>Kovamunkaasztal</strong></td><td>Kova és fa szerszámok, kő és fa építőelemek, egyszerű receptek</td></tr>
+  <tr><td><strong>Réz Munkaasztal</strong></td><td>Réz szerszámok, réz fegyverek, réz páncél; <strong>Kőkemencemag</strong></td></tr>
+  <tr><td><strong>Ezüst Munkaasztal</strong></td><td>Ezüst szerszámok, ezüst fegyverek, ezüst páncél; <strong>Kőkemencemag</strong></td></tr>
+  <tr><td><strong>Arany Munkaasztal</strong></td><td>Arany szerszámok, fegyverek, páncél; <strong>Obszidiánkemencemag</strong></td></tr>
+  <tr><td><strong>Vas Munkaasztal</strong></td><td>Vas szerszámok, fegyverek, páncél; <strong>Obszidiánkemencemag</strong></td></tr>
   <tr><td><strong>Keménykő Munkaasztal</strong></td><td>Keménykő szerszámok és fegyverek</td></tr>
-  <tr><td><strong>Ősi Fém Munkaasztal</strong></td><td>Ősi fém eszközök, fejlett elektronika (Bányász Sisak, Hűtőfolyadék) — <strong>+50% crafting sebesség!</strong></td></tr>
-  <tr><td><strong>Mithril Munkaasztal</strong></td><td>Mithril tárgyak; <strong>Pokoli Kő Kemence Mag</strong></td></tr>
-  <tr><td><strong>Adamantium Munkaasztal</strong></td><td>Adamantium tárgyak (legjobb fém szint); <strong>Pokoli Kő Kemence Mag</strong></td></tr>
-  <tr><td><strong>Obszidián Munkaasztal</strong></td><td>Alap receptek + speciális obszidián tárgyak — <em>NEM lép be a normál szint-hierarchiába; főként korai játék alternatíva</em></td></tr>
+  <tr><td><strong>Ősi Fém Munkaasztal</strong></td><td>Ősi fém eszközök, fejlett elektronika (Bányászsisak, Hűtőfolyadék) — <strong>+50% Barkácsolási sebesség!</strong></td></tr>
+  <tr><td><strong>Mithril Munkaasztal</strong></td><td>Mithril tárgyak; <strong>Netherrack Furnace Core</strong></td></tr>
+  <tr><td><strong>Adamantium Munkaasztal</strong></td><td>Adamantium tárgyak (legjobb fém szint); <strong>Netherrack Furnace Core</strong></td></tr>
+  <tr><td><strong>Obszidián Munkaasztal</strong></td><td>Alap receptek + speciális Obszidián tárgyak — <em>NEM lép be a normál szint-hierarchiába; főként korai játék alternatíva</em></td></tr>
 </table>
 
-<div class="tip-card"><strong>Különleges: Kemence Mag recept!</strong><br>A Kemence Mag elkészítéséhez maga a munkaasztal kerül a rácsközépre — és elhasználódik!
+<div class="tip-card"><strong>Különleges: Kemencemag recept!</strong><br>A Kemencemag elkészítéséhez maga a munkaasztal kerül a rácsközépre — és elhasználódik!
 <ul style="margin:6px 0 0 0">
-  <li><strong>Kő Kemence Mag:</strong> 8× Kőtömb + <em>Réz</em> vagy <em>Ezüst Munkaasztal</em> (középen)</li>
-  <li><strong>Obszidián Kemence Mag:</strong> 8× Obszidián + <em>Arany</em> vagy <em>Vas Munkaasztal</em> (középen)</li>
-  <li><strong>Pokoli Kő Kemence Mag:</strong> 8× Pokoli Kő + <em>Mithril</em> vagy <em>Adamantium Munkaasztal</em> (középen)</li>
+  <li><strong>Kőkemencemag:</strong> 8× Kőtömb + <em>Réz</em> vagy <em>Ezüst Munkaasztal</em> (középen)</li>
+  <li><strong>Obszidiánkemencemag:</strong> 8× Obszidián + <em>Arany</em> vagy <em>Vas Munkaasztal</em> (középen)</li>
+  <li><strong>Netherrack Furnace Core:</strong> 8× Alvilágkő + <em>Mithril</em> vagy <em>Adamantium Munkaasztal</em> (középen)</li>
 </ul></div>
-<div class="craft-section" style="margin-top:12px">
-<div class="craft-table"><div class="craft-grid g3x3"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kőtömb</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone</div><div class="tt-desc" data-lang="hu">Kőzet blokk</div><div class="tt-desc" data-lang="en">Stone block</div></div><img src="/mite-be-wiki/img/blocks/stone.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kőtömb</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone</div><div class="tt-desc" data-lang="hu">Kőzet blokk</div><div class="tt-desc" data-lang="en">Stone block</div></div><img src="/mite-be-wiki/img/blocks/stone.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kőtömb</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone</div><div class="tt-desc" data-lang="hu">Kőzet blokk</div><div class="tt-desc" data-lang="en">Stone block</div></div><img src="/mite-be-wiki/img/blocks/stone.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kőtömb</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone</div><div class="tt-desc" data-lang="hu">Kőzet blokk</div><div class="tt-desc" data-lang="en">Stone block</div></div><img src="/mite-be-wiki/img/blocks/stone.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#cd7f32">Réz Munkaasztal</div><div class="tt-name" data-lang="en" style="color:#cd7f32">Copper Workbench</div><div class="tt-desc" data-lang="hu">Elhasználódik a receptben!</div><div class="tt-desc" data-lang="en">Consumed in the recipe!</div></div><img src="/mite-be-wiki/img/blocks/workbench_copper.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kőtömb</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone</div><div class="tt-desc" data-lang="hu">Kőzet blokk</div><div class="tt-desc" data-lang="en">Stone block</div></div><img src="/mite-be-wiki/img/blocks/stone.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kőtömb</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone</div><div class="tt-desc" data-lang="hu">Kőzet blokk</div><div class="tt-desc" data-lang="en">Stone block</div></div><img src="/mite-be-wiki/img/blocks/stone.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kőtömb</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone</div><div class="tt-desc" data-lang="hu">Kőzet blokk</div><div class="tt-desc" data-lang="en">Stone block</div></div><img src="/mite-be-wiki/img/blocks/stone.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kőtömb</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone</div><div class="tt-desc" data-lang="hu">Kőzet blokk</div><div class="tt-desc" data-lang="en">Stone block</div></div><img src="/mite-be-wiki/img/blocks/stone.png" alt=""></div></div><div class="craft-arrow-box">➜</div><div class="craft-output"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kő Kemence Mag</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone Furnace Core</div><div class="tt-desc" data-lang="hu">Kő kemence építéséhez</div><div class="tt-desc" data-lang="en">For building a stone furnace</div></div><img src="/mite-be-wiki/img/blocks/furnace_core_stone.png" alt=""></div></div><div class="craft-label" data-lang="hu">Kő Kemence Mag</div><div class="craft-label" data-lang="en">Stone Furnace Core</div></div>
-<div class="craft-table"><div class="craft-grid g3x3"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian</div><div class="tt-desc" data-lang="hu">Obszidián</div><div class="tt-desc" data-lang="en">Obsidian</div></div><img src="/mite-be-wiki/img/blocks/obsidian.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian</div><div class="tt-desc" data-lang="hu">Obszidián</div><div class="tt-desc" data-lang="en">Obsidian</div></div><img src="/mite-be-wiki/img/blocks/obsidian.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian</div><div class="tt-desc" data-lang="hu">Obszidián</div><div class="tt-desc" data-lang="en">Obsidian</div></div><img src="/mite-be-wiki/img/blocks/obsidian.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian</div><div class="tt-desc" data-lang="hu">Obszidián</div><div class="tt-desc" data-lang="en">Obsidian</div></div><img src="/mite-be-wiki/img/blocks/obsidian.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#d4d4d4">Vas Munkaasztal</div><div class="tt-name" data-lang="en" style="color:#d4d4d4">Iron Workbench</div><div class="tt-desc" data-lang="hu">Elhasználódik a receptben!</div><div class="tt-desc" data-lang="en">Consumed in the recipe!</div></div><img src="/mite-be-wiki/img/blocks/workbench_iron.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian</div><div class="tt-desc" data-lang="hu">Obszidián</div><div class="tt-desc" data-lang="en">Obsidian</div></div><img src="/mite-be-wiki/img/blocks/obsidian.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian</div><div class="tt-desc" data-lang="hu">Obszidián</div><div class="tt-desc" data-lang="en">Obsidian</div></div><img src="/mite-be-wiki/img/blocks/obsidian.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian</div><div class="tt-desc" data-lang="hu">Obszidián</div><div class="tt-desc" data-lang="en">Obsidian</div></div><img src="/mite-be-wiki/img/blocks/obsidian.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian</div><div class="tt-desc" data-lang="hu">Obszidián</div><div class="tt-desc" data-lang="en">Obsidian</div></div><img src="/mite-be-wiki/img/blocks/obsidian.png" alt=""></div></div><div class="craft-arrow-box">➜</div><div class="craft-output"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián Kemence Mag</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian Furnace Core</div><div class="tt-desc" data-lang="hu">Obszidián kemence építéséhez</div><div class="tt-desc" data-lang="en">For building an obsidian furnace</div></div><img src="/mite-be-wiki/img/blocks/furnace_core_obsidian.png" alt=""></div></div><div class="craft-label" data-lang="hu">Obszidián Kemence Mag</div><div class="craft-label" data-lang="en">Obsidian Furnace Core</div></div>
-<div class="craft-table"><div class="craft-grid g3x3"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack</div><div class="tt-desc" data-lang="hu">Nether blokk</div><div class="tt-desc" data-lang="en">Nether block</div></div><img src="/mite-be-wiki/img/blocks/netherrack.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack</div><div class="tt-desc" data-lang="hu">Nether blokk</div><div class="tt-desc" data-lang="en">Nether block</div></div><img src="/mite-be-wiki/img/blocks/netherrack.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack</div><div class="tt-desc" data-lang="hu">Nether blokk</div><div class="tt-desc" data-lang="en">Nether block</div></div><img src="/mite-be-wiki/img/blocks/netherrack.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack</div><div class="tt-desc" data-lang="hu">Nether blokk</div><div class="tt-desc" data-lang="en">Nether block</div></div><img src="/mite-be-wiki/img/blocks/netherrack.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#7ec8e3">Mithril Munkaasztal</div><div class="tt-name" data-lang="en" style="color:#7ec8e3">Mithril Workbench</div><div class="tt-desc" data-lang="hu">Elhasználódik a receptben!</div><div class="tt-desc" data-lang="en">Consumed in the recipe!</div></div><img src="/mite-be-wiki/img/blocks/workbench_mithril.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack</div><div class="tt-desc" data-lang="hu">Nether blokk</div><div class="tt-desc" data-lang="en">Nether block</div></div><img src="/mite-be-wiki/img/blocks/netherrack.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack</div><div class="tt-desc" data-lang="hu">Nether blokk</div><div class="tt-desc" data-lang="en">Nether block</div></div><img src="/mite-be-wiki/img/blocks/netherrack.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack</div><div class="tt-desc" data-lang="hu">Nether blokk</div><div class="tt-desc" data-lang="en">Nether block</div></div><img src="/mite-be-wiki/img/blocks/netherrack.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack</div><div class="tt-desc" data-lang="hu">Nether blokk</div><div class="tt-desc" data-lang="en">Nether block</div></div><img src="/mite-be-wiki/img/blocks/netherrack.png" alt=""></div></div><div class="craft-arrow-box">➜</div><div class="craft-output"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő Kemence Mag</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack Furnace Core</div><div class="tt-desc" data-lang="hu">Pokoli kő kemence építéséhez</div><div class="tt-desc" data-lang="en">For building a netherrack furnace</div></div><img src="/mite-be-wiki/img/blocks/furnace_core_netherrack.png" alt=""></div></div><div class="craft-label" data-lang="hu">Pokoli Kő Kemence Mag</div><div class="craft-label" data-lang="en">Netherrack Furnace Core</div></div>
-</div>
 
 <p>Minden munkaasztalnak létezik <strong>Automata</strong> változata is (PCB-vel fejleszthető)!</p>
 
@@ -245,7 +240,7 @@ const sidebarGroups = {
   <tr style="background:rgba(80,80,80,0.18)"><td><strong>Szénblokk 🪨</strong></td><td>16 000 tick (~13 perc)</td><td>2</td><td>Leghosszabb égés!</td></tr>
   <tr><td>Szén (kő)</td><td>3 200 tick</td><td>2</td><td>Fém olvasztáshoz szükséges</td></tr>
   <tr><td>Faszén</td><td>3 200 tick</td><td>1</td><td>Kevésbé forró</td></tr>
-  <tr><td>Fatörzs</td><td>1 600 tick</td><td>1</td><td>Kezdők tüzelőanyaga</td></tr>
+  <tr><td>Rönk</td><td>1 600 tick</td><td>1</td><td>Kezdők tüzelőanyaga</td></tr>
   <tr><td>Fáklya</td><td>800 tick</td><td>1</td><td>—</td></tr>
   <tr><td>Deszka / Faeszközök</td><td>400 tick</td><td>1</td><td>Alacsony értékű</td></tr>
 </table>
@@ -257,10 +252,10 @@ const sidebarGroups = {
   <tr><th>Olvasztandó</th><th>Hőfok</th><th>Minimum tüzelőanyag</th><th>Eredmény</th></tr>
   <tr><td>Szén érc, Fa</td><td>1</td><td>Bármi (fa, faszén...)</td><td>Szén / Faszén</td></tr>
   <tr><td>Réz, Ezüst, Keménykő, Vas, Arany, Gyémánt, Ón érc</td><td>2</td><td><strong>Szén (kő)</strong></td><td>Megfelelő rúd</td></tr>
-  <tr style="background:rgba(255,80,0,0.12)"><td><strong>Mithril érc</strong></td><td><strong>3</strong></td><td><strong>Lávavödör</strong></td><td>Mithril rúd</td></tr>
-  <tr style="background:rgba(255,30,0,0.22)"><td><strong>⚠️ Adamantium érc</strong></td><td><strong>4 ‼️</strong></td><td><strong>Blázesrúd</strong></td><td>Adamantium rúd</td></tr>
+  <tr style="background:rgba(255,80,0,0.12)"><td><strong>Mithrilérc</strong></td><td><strong>3</strong></td><td><strong>Lávavödör</strong></td><td>Mithrilrúd</td></tr>
+  <tr style="background:rgba(255,30,0,0.22)"><td><strong>⚠️ Adamantiumérc</strong></td><td><strong>4 ‼️</strong></td><td><strong>Blaze-rúd</strong></td><td>Adamantiumrúd</td></tr>
 </table>
-<div class="warning-box">🔥 <strong>Kritikus!</strong> Az Adamantium olvasztásához kizárólag <strong>Blázesrúd (heat 4)</strong> és <strong>Pokoli Kő Kemence</strong> szükséges — az Adamantium olvadáspontja (6 210°C) meghaladja az Obszidián Kemence maximumát (5 000°C). Lávavödörrel nem olvad el!</div>
+<div class="warning-box">🔥 <strong>Kritikus!</strong> Az Adamantium olvasztásához kizárólag <strong>Blaze-rúd (heat 4)</strong> és <strong>Alvilágkő-kemence</strong> szükséges — az Adamantium olvadáspontja (6 210°C) meghaladja az Obszidián Kemence maximumát (5 000°C). Lávavödörrel nem olvad el!</div>
 
 
 </div>
@@ -314,12 +309,12 @@ const sidebarGroups = {
 <h4>Jutalom Vérhold Túlélése Után</h4>
 <p>Minden túlélt vérhold után az alábbi jutalmak egyikét kapod (véletlenszerű):</p>
 <ul>
-  <li>Bányász sebesség <strong>+10%</strong></li>
-  <li>Támadási sebzés <strong>+1</strong></li>
+  <li>mining speed <strong>+10%</strong></li>
+  <li>attacki sebzés <strong>+1</strong></li>
   <li>Szomjúság fogyás <strong>-10%</strong></li>
   <li>Éhség fogyás <strong>-10%</strong></li>
 </ul>
-<div class="tip-card">💡 <strong>Tipp:</strong> A vérhold jutalmak halmozódnak! 6 túlélt vérhold = 6 bónusz. Érdemes minden vérholdat túlélni a permanens erősödés miatt.</div>
+<div class="tip-card">💡 <strong>Tipp:</strong> A Blood Moon Rewards halmozódnak! 6 túlélt vérhold = 6 bónusz. Érdemes minden vérholdat túlélni a permanens erősödés miatt.</div>
 
 </div></div></div>
 </div>
@@ -331,26 +326,26 @@ const sidebarGroups = {
 </div></div></div>
 </div>
 <div data-lang="hu" id="achievements">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>Teljesítmények (Achievements)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>Teljesítmények (Teljesítménys)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p>A MITE:BE több mint 130 egyedi teljesítményt tartalmaz, amelyek a progressziót követik. Íme a legfontosabbak:</p>
 
 <h3>Korai játék (1-15)</h3>
 <div class="ach"><span class="ach-name">Honnan jöttem?</span> <span class="ach-cond">(Induló teljesítmény)</span><div class="ach-desc">Nem tudod, ki vagy, miért kerültél ide, ebbe a világba...</div></div>
 <div class="ach"><span class="ach-name">Éhes vagyok!</span> <span class="ach-cond">(Búzamag szerzés)</span><div class="ach-desc">Fű elpusztításakor búzamag vagy növényszál hullhat.</div></div>
-<div class="ach"><span class="ach-name">Kovakő és penge</span> <span class="ach-cond">(Alap kova kés)</span><div class="ach-desc">Fűkötél + kovaszilánk + fabot</div></div>
+<div class="ach"><span class="ach-name">Kovakő és penge</span> <span class="ach-cond">(Alap Kovakés)</span><div class="ach-desc">Szalmakötél + kovaszilánk + fabot</div></div>
 <div class="ach"><span class="ach-name">Kövektől a városig</span> <span class="ach-cond">(Munkaasztal)</span><div class="ach-desc">Az első munkaasztal!</div></div>
 <div class="ach"><span class="ach-name">Primitív romantika</span> <span class="ach-cond">(Agyagkemence)</span><div class="ach-desc">Keress agyagot patakokban</div></div>
 
 <h3>Fém korszak (16-28)</h3>
 <div class="ach"><span class="ach-name">Egyre profibb leszek</span> <span class="ach-cond">(Obsz. öntőforma)</span><div class="ach-desc">Az öntőforma 20 ércrudat lehűthet</div></div>
-<div class="ach"><span class="ach-name">Az ember legyőzi a természetet</span> <span class="ach-cond">(Első fém rúd)</span><div class="ach-desc">9 ércdarab → kemence → öntőforma → fém!</div></div>
+<div class="ach"><span class="ach-name">Az ember legyőzi a természetet</span> <span class="ach-cond">(Első Fémrúd)</span><div class="ach-desc">9 ércdarab → kemence → öntőforma → fém!</div></div>
 <div class="ach"><span class="ach-name">Mesterkohász</span> <span class="ach-cond">(Multiblokk kemence)</span><div class="ach-desc">3×3×3 üreges kocka szerkezet</div></div>
 <div class="ach"><span class="ach-name">Varázsos ütés</span> <span class="ach-cond">(Smaragd bűvölőasztal)</span><div class="ach-desc">Bűvöld a felszerelésed!</div></div>
 
 <h3>Végső kihívások (36-43)</h3>
-<div class="ach"><span class="ach-name">Forró pokol-kapu</span> <span class="ach-cond">(Köpeny megtalálása)</span><div class="ach-desc">A földalatti világ alapkő-rétegében</div></div>
-<div class="ach"><span class="ach-name">Halhatatlan legenda</span> <span class="ach-cond">(Nether-csillag)</span><div class="ach-desc">Az alapkő-zúzóhoz kell!</div></div>
-<div class="ach"><span class="ach-name">A föld megremeg?!</span> <span class="ach-cond">(Bedrock Pulverizer)</span><div class="ach-desc">Alapkő-magra, Erősített Ender-szemmel aktiválás</div></div>
+<div class="ach"><span class="ach-name">Forró pokol-Kapu</span> <span class="ach-cond">(Köpeny megtalálása)</span><div class="ach-desc">A földalatti világ alapkő-rétegében</div></div>
+<div class="ach"><span class="ach-name">Halhatatlan legenda</span> <span class="ach-cond">(Alvilági csillag)</span><div class="ach-desc">Az Alapkőzet-zúzóhoz kell!</div></div>
+<div class="ach"><span class="ach-name">A föld megremeg?!</span> <span class="ach-cond">(Alapkőzet-zúzó)</span><div class="ach-desc">Alapkő-magra, Erősített Ender-szemmel aktiválás</div></div>
 <div class="ach"><span class="ach-name">A Vég Birodalma</span> <span class="ach-cond">(End belépés)</span><div class="ach-desc">Az alapkő-mag elpusztításakor nyílik</div></div>
 <div class="ach"><span class="ach-name">Végső csata</span> <span class="ach-cond">(Ender-sárkány)</span><div class="ach-desc">Adamantium-nyíllal pusztítsd a kristályokat, győzd le a sárkányt!</div></div>
 <div class="ach"><span class="ach-name">Vége van mindennek?</span> <span class="ach-cond">(Hazaút az Endből)</span><div class="ach-desc">Tényleg vége van?</div></div>
@@ -369,7 +364,7 @@ const sidebarGroups = {
   <tr><td>128.</td><td>Kék hold</td><td>A termés virágzik — jó jel!</td></tr>
   <tr><td>200.</td><td>200 nap!</td><td>Elégedettség, gazdagodás</td></tr>
   <tr><td>300.</td><td>300 nap</td><td>Luxusra fordíthatod az erőforrásokat</td></tr>
-  <tr><td>400.</td><td>Az élet ilyen egyszerű</td><td>Bányász, gazda, harcos — élvezed az életet</td></tr>
+  <tr><td>400.</td><td>Túl egyszerű az élet</td><td>Bányász, gazda, harcos — élvezed az életet</td></tr>
 </table>
 
 </div></div></div>
@@ -384,7 +379,7 @@ const sidebarGroups = {
   <tr><td><strong>Víztasak ürítése</strong></td><td>—</td><td>Vizet önt a víztasakból</td></tr>
   <tr><td><strong>Ürítés</strong></td><td>J</td><td>Kézi ürítés (defecation)</td></tr>
   <tr><td><strong>Hátizsák megnyitása</strong></td><td>—</td><td>Megnyitja a hátizsákot</td></tr>
-  <tr><td><strong>Tárgyak rendezése</strong></td><td>—</td><td>Inventory rendezés (InvTweaks)</td></tr>
+  <tr><td><strong>Tárgyak rendezése</strong></td><td>—</td><td>Leltár rendezés (InvTweaks)</td></tr>
   <tr><td><strong>Csapat menü</strong></td><td>—</td><td>Squad/csapat kezelés</td></tr>
   <tr><td><strong>Játékos státusz</strong></td><td>—</td><td>Megmutatja a játékos részletes státuszát</td></tr>
   <tr><td><strong>Játékos cipelése</strong></td><td>—</td><td>Egy másik játékost cipelhet a hátán (multiplayer)</td></tr>
@@ -395,13 +390,13 @@ const sidebarGroups = {
   <tr><td><strong>Zoom</strong></td><td>—</td><td>Nagyítás (mint távcső)</td></tr>
   <tr><td><strong>Fáklya fogadása</strong></td><td>—</td><td>Másik játékostól érkező fáklya elfogadása</td></tr>
   <tr><td><strong>Vein Miner</strong></td><td>—</td><td>Egész ércréteg egyszerre bányászása</td></tr>
-  <tr><td><strong>Bányász sisak lámpa</strong></td><td>—</td><td>Bányász sisak fényének ki/be kapcsolása</td></tr>
+  <tr><td><strong>Bányászsisak lámpa</strong></td><td>—</td><td>Bányászsisak fényének ki/be kapcsolása</td></tr>
   <tr><td><strong>Esőkabát megjelenítés</strong></td><td>—</td><td>Esőkabát vizuális megjelenítése</td></tr>
   <tr><td><strong>Hátizsák megjelenítés</strong></td><td>—</td><td>Hátizsák vizuális megjelenítése a háton</td></tr>
   <tr><td><strong>Chunk újratöltés</strong></td><td>—</td><td>Renderelt chunk-ok kényszer-újratöltése</td></tr>
   <tr><td><strong>Fű/levél minőség</strong></td><td>—</td><td>Better Grass and Leaves beállítások</td></tr>
 </table>
-<div class="info-box">💡 Az alapértelmezett billentyűkiosztás játéktól és verzióktól függően változhat. Minden keybindot testreszabhatsz a Beállítások → Billentyűk menüben.</div>
+<div class="info-box">💡 Az alapértelmezett billentyűkiosztás játéktól és verzióktól függően változhat. Minden keybindot testreszabhatsz a Beállítások → Irányítás menüben.</div>
 </div></div></div>
 </div>
 
@@ -423,12 +418,12 @@ const sidebarGroups = {
 <h3>Ultimate Boss: HIM</h3>
 <table class="compare-table">
   <tr><th>Stat</th><th>Value</th></tr>
-  <tr><td>HP</td><td><strong>400</strong></td></tr>
+  <tr><td>Health (HP)</td><td><strong>400</strong></td></tr>
   <tr><td>Damage</td><td>Variable — extremely high</td></tr>
   <tr><td>Immunities</td><td>Immune to nearly everything — special mechanics required</td></tr>
   <tr><td>XP</td><td>Massive amount</td></tr>
 </table>
-<div class="warning-box">💀 <strong>HIM:</strong> The game's ultimate enemy. 400 HP, immune to nearly everything. Requires special mechanics to defeat — normal weapons and potions are useless. Full Adamantium gear and a specific strategy are essential!</div>
+<div class="warning-box">💀 <strong>HIM:</strong> The game's ultimate enemy. 400 Health (HP), immune to nearly everything. Requires special mechanics to defeat — normal weapons and potions are useless. Full Adamantium gear and a specific strategy are essential!</div>
 
 <h3>Special Mobs</h3>
 <p>Variant Zombie, Variant Creeper, Variant Spider, Variant Skeleton — stronger versions of common mobs.</p>
@@ -487,7 +482,7 @@ const sidebarGroups = {
 </ul>
 
 <h4>Cheese Crafting</h4>
-<p>Any metal milk bucket works (Copper through Adamantium) — the bucket tier determines which workbench is needed. <em>(⚠️ Brewer profession inactive in v0.9.0 — available without a profession)</em></p>
+<p>Any metal milk bucket works (Copper through Adamantium) — the bucket tier determines which Workbench is required. <em>(⚠️ Brewer profession inactive in v0.9.0 — available without a profession)</em></p>
 <table class="compare-table">
   <tr><th>Ingredients</th><th>Result</th><th>Difficulty/unit</th><th>Notes</th></tr>
   <tr><td>1× Metal Milk Bucket</td><td>1× Cheese</td><td>6,400</td><td>Basic recipe</td></tr>
@@ -513,14 +508,14 @@ const sidebarGroups = {
 <table class="compare-table">
   <tr><th>Workbench</th><th>Key Material</th><th>Other Components</th><th>Difficulty</th></tr>
   <tr><td><strong>Flint Workbench</strong></td><td>Flint Knife</td><td>Wood Log</td><td>270</td></tr>
-  <tr><td><strong>Copper Workbench</strong></td><td>Réz Nyelv (Copper Bar)</td><td>Leather + Stick + Plank</td><td>605</td></tr>
-  <tr><td><strong>Silver Workbench</strong></td><td>Ezüst Nyelv (Silver Bar)</td><td>Leather + Stick + Plank</td><td>605</td></tr>
+  <tr><td><strong>Copper Workbench</strong></td><td>Copper Bar</td><td>Leather + Stick + Plank</td><td>605</td></tr>
+  <tr><td><strong>Silver Workbench</strong></td><td>Silver Bar</td><td>Leather + Stick + Plank</td><td>605</td></tr>
   <tr><td><strong>Gold Workbench</strong></td><td>Gold Ingot</td><td>Leather + Stick + Plank</td><td>605</td></tr>
   <tr><td><strong>Iron Workbench</strong></td><td>Iron Ingot</td><td>Leather + Stick + Plank</td><td>1005</td></tr>
   <tr><td><strong>Hardstone Workbench</strong></td><td>Hardstone Ingot</td><td>Leather + Stick + Plank</td><td>1805</td></tr>
-  <tr><td><strong>Ancient Metal Workbench</strong></td><td>Ősi Fém Nyelv (Ancient Metal Bar)</td><td>Leather + Stick + Plank</td><td>1805</td></tr>
-  <tr><td><strong>Mithril Workbench</strong></td><td>Mithril Nyelv (Mithril Bar)</td><td>Leather + Stick + Plank</td><td>6605</td></tr>
-  <tr><td><strong>Adamantium Workbench</strong></td><td>Adamantium Nyelv (Adamantium Bar)</td><td>Leather + Stick + Plank</td><td>25805</td></tr>
+  <tr><td><strong>Ancient Metal Workbench</strong></td><td>Ancient Metal Bar</td><td>Leather + Stick + Plank</td><td>1805</td></tr>
+  <tr><td><strong>Mithril Workbench</strong></td><td>Mithril Bar</td><td>Leather + Stick + Plank</td><td>6605</td></tr>
+  <tr><td><strong>Adamantium Workbench</strong></td><td>Adamantium Bar</td><td>Leather + Stick + Plank</td><td>25805</td></tr>
   <tr><td><strong>Obsidian Workbench</strong></td><td>Obsidian</td><td>String/Tin + Stick + Log</td><td>410</td></tr>
 </table>
 
@@ -534,10 +529,10 @@ const sidebarGroups = {
   <tr><td><strong>Gold Workbench</strong></td><td>Gold tools, weapons &amp; armor; <strong>Obsidian Furnace Core</strong></td></tr>
   <tr><td><strong>Iron Workbench</strong></td><td>Iron tools, weapons &amp; armor; <strong>Obsidian Furnace Core</strong></td></tr>
   <tr><td><strong>Hardstone Workbench</strong></td><td>Hardstone tools and weapons</td></tr>
-  <tr><td><strong>Ancient Metal Workbench</strong></td><td>Ancient metal items, advanced electronics (Mining Helmet, Cooling Liquid) — <strong>+50% crafting speed!</strong></td></tr>
+  <tr><td><strong>Ancient Metal Workbench</strong></td><td>Ancient metal items, advanced electronics (Mining Helmet, Cooling Liquid) — <strong>+50% Crafting Speed!</strong></td></tr>
   <tr><td><strong>Mithril Workbench</strong></td><td>Mithril items; <strong>Netherrack Furnace Core</strong></td></tr>
   <tr><td><strong>Adamantium Workbench</strong></td><td>Adamantium items (best metal tier); <strong>Netherrack Furnace Core</strong></td></tr>
-  <tr><td><strong>Obsidian Workbench</strong></td><td>Basic recipes + special obsidian items — <em>NOT part of the normal tier hierarchy; mainly an early-game alternative</em></td></tr>
+  <tr><td><strong>Obsidian Workbench</strong></td><td>Basic recipes + special Obsidian items — <em>NOT part of the normal tier hierarchy; mainly an early-game alternative</em></td></tr>
 </table>
 
 <div class="tip-card"><strong>Special: Furnace Core recipe!</strong><br>To craft a Furnace Core, the workbench itself goes into the center slot of the crafting grid — and gets consumed!
@@ -546,11 +541,6 @@ const sidebarGroups = {
   <li><strong>Obsidian Furnace Core:</strong> 8× Obsidian + <em>Gold</em> or <em>Iron Workbench</em> (center)</li>
   <li><strong>Netherrack Furnace Core:</strong> 8× Netherrack + <em>Mithril</em> or <em>Adamantium Workbench</em> (center)</li>
 </ul></div>
-<div class="craft-section" style="margin-top:12px">
-<div class="craft-table"><div class="craft-grid g3x3"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kőtömb</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone</div><div class="tt-desc" data-lang="hu">Kőzet blokk</div><div class="tt-desc" data-lang="en">Stone block</div></div><img src="/mite-be-wiki/img/blocks/stone.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kőtömb</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone</div><div class="tt-desc" data-lang="hu">Kőzet blokk</div><div class="tt-desc" data-lang="en">Stone block</div></div><img src="/mite-be-wiki/img/blocks/stone.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kőtömb</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone</div><div class="tt-desc" data-lang="hu">Kőzet blokk</div><div class="tt-desc" data-lang="en">Stone block</div></div><img src="/mite-be-wiki/img/blocks/stone.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kőtömb</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone</div><div class="tt-desc" data-lang="hu">Kőzet blokk</div><div class="tt-desc" data-lang="en">Stone block</div></div><img src="/mite-be-wiki/img/blocks/stone.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#cd7f32">Réz Munkaasztal</div><div class="tt-name" data-lang="en" style="color:#cd7f32">Copper Workbench</div><div class="tt-desc" data-lang="hu">Elhasználódik a receptben!</div><div class="tt-desc" data-lang="en">Consumed in the recipe!</div></div><img src="/mite-be-wiki/img/blocks/workbench_copper.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kőtömb</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone</div><div class="tt-desc" data-lang="hu">Kőzet blokk</div><div class="tt-desc" data-lang="en">Stone block</div></div><img src="/mite-be-wiki/img/blocks/stone.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kőtömb</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone</div><div class="tt-desc" data-lang="hu">Kőzet blokk</div><div class="tt-desc" data-lang="en">Stone block</div></div><img src="/mite-be-wiki/img/blocks/stone.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kőtömb</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone</div><div class="tt-desc" data-lang="hu">Kőzet blokk</div><div class="tt-desc" data-lang="en">Stone block</div></div><img src="/mite-be-wiki/img/blocks/stone.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kőtömb</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone</div><div class="tt-desc" data-lang="hu">Kőzet blokk</div><div class="tt-desc" data-lang="en">Stone block</div></div><img src="/mite-be-wiki/img/blocks/stone.png" alt=""></div></div><div class="craft-arrow-box">➜</div><div class="craft-output"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Kő Kemence Mag</div><div class="tt-name" data-lang="en" style="color:#aaa">Stone Furnace Core</div><div class="tt-desc" data-lang="hu">Kő kemence építéséhez</div><div class="tt-desc" data-lang="en">For building a stone furnace</div></div><img src="/mite-be-wiki/img/blocks/furnace_core_stone.png" alt=""></div></div><div class="craft-label" data-lang="hu">Kő Kemence Mag</div><div class="craft-label" data-lang="en">Stone Furnace Core</div></div>
-<div class="craft-table"><div class="craft-grid g3x3"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian</div><div class="tt-desc" data-lang="hu">Obszidián</div><div class="tt-desc" data-lang="en">Obsidian</div></div><img src="/mite-be-wiki/img/blocks/obsidian.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian</div><div class="tt-desc" data-lang="hu">Obszidián</div><div class="tt-desc" data-lang="en">Obsidian</div></div><img src="/mite-be-wiki/img/blocks/obsidian.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian</div><div class="tt-desc" data-lang="hu">Obszidián</div><div class="tt-desc" data-lang="en">Obsidian</div></div><img src="/mite-be-wiki/img/blocks/obsidian.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian</div><div class="tt-desc" data-lang="hu">Obszidián</div><div class="tt-desc" data-lang="en">Obsidian</div></div><img src="/mite-be-wiki/img/blocks/obsidian.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#d4d4d4">Vas Munkaasztal</div><div class="tt-name" data-lang="en" style="color:#d4d4d4">Iron Workbench</div><div class="tt-desc" data-lang="hu">Elhasználódik a receptben!</div><div class="tt-desc" data-lang="en">Consumed in the recipe!</div></div><img src="/mite-be-wiki/img/blocks/workbench_iron.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian</div><div class="tt-desc" data-lang="hu">Obszidián</div><div class="tt-desc" data-lang="en">Obsidian</div></div><img src="/mite-be-wiki/img/blocks/obsidian.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian</div><div class="tt-desc" data-lang="hu">Obszidián</div><div class="tt-desc" data-lang="en">Obsidian</div></div><img src="/mite-be-wiki/img/blocks/obsidian.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian</div><div class="tt-desc" data-lang="hu">Obszidián</div><div class="tt-desc" data-lang="en">Obsidian</div></div><img src="/mite-be-wiki/img/blocks/obsidian.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian</div><div class="tt-desc" data-lang="hu">Obszidián</div><div class="tt-desc" data-lang="en">Obsidian</div></div><img src="/mite-be-wiki/img/blocks/obsidian.png" alt=""></div></div><div class="craft-arrow-box">➜</div><div class="craft-output"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián Kemence Mag</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian Furnace Core</div><div class="tt-desc" data-lang="hu">Obszidián kemence építéséhez</div><div class="tt-desc" data-lang="en">For building an obsidian furnace</div></div><img src="/mite-be-wiki/img/blocks/furnace_core_obsidian.png" alt=""></div></div><div class="craft-label" data-lang="hu">Obszidián Kemence Mag</div><div class="craft-label" data-lang="en">Obsidian Furnace Core</div></div>
-<div class="craft-table"><div class="craft-grid g3x3"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack</div><div class="tt-desc" data-lang="hu">Nether blokk</div><div class="tt-desc" data-lang="en">Nether block</div></div><img src="/mite-be-wiki/img/blocks/netherrack.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack</div><div class="tt-desc" data-lang="hu">Nether blokk</div><div class="tt-desc" data-lang="en">Nether block</div></div><img src="/mite-be-wiki/img/blocks/netherrack.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack</div><div class="tt-desc" data-lang="hu">Nether blokk</div><div class="tt-desc" data-lang="en">Nether block</div></div><img src="/mite-be-wiki/img/blocks/netherrack.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack</div><div class="tt-desc" data-lang="hu">Nether blokk</div><div class="tt-desc" data-lang="en">Nether block</div></div><img src="/mite-be-wiki/img/blocks/netherrack.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#7ec8e3">Mithril Munkaasztal</div><div class="tt-name" data-lang="en" style="color:#7ec8e3">Mithril Workbench</div><div class="tt-desc" data-lang="hu">Elhasználódik a receptben!</div><div class="tt-desc" data-lang="en">Consumed in the recipe!</div></div><img src="/mite-be-wiki/img/blocks/workbench_mithril.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack</div><div class="tt-desc" data-lang="hu">Nether blokk</div><div class="tt-desc" data-lang="en">Nether block</div></div><img src="/mite-be-wiki/img/blocks/netherrack.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack</div><div class="tt-desc" data-lang="hu">Nether blokk</div><div class="tt-desc" data-lang="en">Nether block</div></div><img src="/mite-be-wiki/img/blocks/netherrack.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack</div><div class="tt-desc" data-lang="hu">Nether blokk</div><div class="tt-desc" data-lang="en">Nether block</div></div><img src="/mite-be-wiki/img/blocks/netherrack.png" alt=""></div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack</div><div class="tt-desc" data-lang="hu">Nether blokk</div><div class="tt-desc" data-lang="en">Nether block</div></div><img src="/mite-be-wiki/img/blocks/netherrack.png" alt=""></div></div><div class="craft-arrow-box">➜</div><div class="craft-output"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#943543">Pokoli Kő Kemence Mag</div><div class="tt-name" data-lang="en" style="color:#943543">Netherrack Furnace Core</div><div class="tt-desc" data-lang="hu">Pokoli kő kemence építéséhez</div><div class="tt-desc" data-lang="en">For building a netherrack furnace</div></div><img src="/mite-be-wiki/img/blocks/furnace_core_netherrack.png" alt=""></div></div><div class="craft-label" data-lang="hu">Pokoli Kő Kemence Mag</div><div class="craft-label" data-lang="en">Netherrack Furnace Core</div></div>
-</div>
 
 <p>Every workbench also has an <strong>Auto</strong> variant (upgradeable with PCB)!</p>
 
@@ -564,7 +554,7 @@ const sidebarGroups = {
   <tr><th>Fuel</th><th>Burn Time</th><th>Heat Level</th><th>Notes</th></tr>
   <tr style="background:rgba(255,100,0,0.20)"><td><strong>Blaze Rod 🔥</strong></td><td>2,400 ticks (~2 min)</td><td><strong>4 ⭐</strong></td><td>Highest heat level!</td></tr>
   <tr style="background:rgba(255,80,0,0.12)"><td>Lava Bucket 🌋</td><td>3,200 ticks (~2.7 min)</td><td><strong>3</strong></td><td>High heat</td></tr>
-  <tr style="background:rgba(80,80,80,0.18)"><td><strong>Coal Block 🪨</strong></td><td>16,000 ticks (~13 min)</td><td>2</td><td>Longest burn time!</td></tr>
+  <tr style="background:rgba(80,80,80,0.18)"><td><strong>Block of Coal 🪨</strong></td><td>16,000 ticks (~13 min)</td><td>2</td><td>Longest burn time!</td></tr>
   <tr><td>Coal</td><td>3,200 ticks</td><td>2</td><td>Required for metal smelting</td></tr>
   <tr><td>Charcoal</td><td>3,200 ticks</td><td>1</td><td>Less hot than coal</td></tr>
   <tr><td>Log</td><td>1,600 ticks</td><td>1</td><td>Early-game fuel</td></tr>
@@ -636,7 +626,7 @@ const sidebarGroups = {
 <h4>Rewards After Surviving Blood Moon</h4>
 <p>After each survived blood moon, you receive one of the following rewards (random):</p>
 <ul>
-  <li>Mining speed <strong>+10%</strong></li>
+  <li>Mining Speed <strong>+10%</strong></li>
   <li>Attack damage <strong>+1</strong></li>
   <li>Thirst drain <strong>-10%</strong></li>
   <li>Hunger drain <strong>-10%</strong></li>
@@ -657,7 +647,7 @@ const sidebarGroups = {
 <p>MITE:BE features over 130 unique achievements that track your progression. Here are the key ones:</p>
 
 <h3>Early Game (1-15)</h3>
-<div class="ach"><span class="ach-name">Where Did I Come From?</span> <span class="ach-cond">(Starting achievement)</span><div class="ach-desc">You don't know who you are, why you ended up here, in this world...</div></div>
+<div class="ach"><span class="ach-name">Where Did I Come From?</span> <span class="ach-cond">(Starting Achievement)</span><div class="ach-desc">You don't know who you are, why you ended up here, in this world...</div></div>
 <div class="ach"><span class="ach-name">I'm Hungry!</span> <span class="ach-cond">(Get Wheat Seeds)</span><div class="ach-desc">Breaking grass may drop wheat seeds or plant fiber.</div></div>
 <div class="ach"><span class="ach-name">Flint and Blade</span> <span class="ach-cond">(Basic Flint Knife)</span><div class="ach-desc">Grass rope + flint chip + stick</div></div>
 <div class="ach"><span class="ach-name">From Stones to a City</span> <span class="ach-cond">(Workbench)</span><div class="ach-desc">Your first workbench!</div></div>
@@ -671,8 +661,8 @@ const sidebarGroups = {
 
 <h3>Endgame (36-43)</h3>
 <div class="ach"><span class="ach-name">Scorching Hell Gate</span> <span class="ach-cond">(Find the Mantle)</span><div class="ach-desc">In the Underground's bedrock layer</div></div>
-<div class="ach"><span class="ach-name">Immortal Legend</span> <span class="ach-cond">(Nether Star)</span><div class="ach-desc">Required for the Bedrock Pulverizer!</div></div>
-<div class="ach"><span class="ach-name">The Earth Trembles?!</span> <span class="ach-cond">(Bedrock Pulverizer)</span><div class="ach-desc">Place on bedrock core, activate with Reinforced Eye of Ender</div></div>
+<div class="ach"><span class="ach-name">Immortal Legend</span> <span class="ach-cond">(Nether Star)</span><div class="ach-desc">Required for the Bedrock Crusher!</div></div>
+<div class="ach"><span class="ach-name">The Earth Trembles?!</span> <span class="ach-cond">(Bedrock Crusher)</span><div class="ach-desc">Place on bedrock core, activate with Reinforced Eye of Ender</div></div>
 <div class="ach"><span class="ach-name">The Realm of the End</span> <span class="ach-cond">(Enter the End)</span><div class="ach-desc">Opens when the bedrock core is destroyed</div></div>
 <div class="ach"><span class="ach-name">The Final Battle</span> <span class="ach-cond">(Ender Dragon)</span><div class="ach-desc">Destroy crystals with adamantium arrows, defeat the dragon!</div></div>
 <div class="ach"><span class="ach-name">Is It All Over?</span> <span class="ach-cond">(Return from the End)</span><div class="ach-desc">Is it really over?</div></div>
@@ -685,7 +675,7 @@ const sidebarGroups = {
   <tr><td>12</td><td>Got My First Gear!</td><td>Warm furnace, equipment ready</td></tr>
   <tr><td>16</td><td>I Challenge This World!</td><td>Energy radiating from ores</td></tr>
   <tr><td>50</td><td>Days Keep Passing...</td><td>Many biomes explored, animals friendly</td></tr>
-  <tr><td>80</td><td>Found My Rhythm</td><td>Space-warping magic in obsidian</td></tr>
+  <tr><td>80</td><td>Found My Rhythm</td><td>Space-warping magic in Obsidian</td></tr>
   <tr><td>96</td><td>No Longer My Rival</td><td>Blood moon is nothing</td></tr>
   <tr><td>100</td><td>100 Days</td><td>Who am I? Why was I brought here?</td></tr>
   <tr><td>128</td><td>Blue Moon</td><td>Crops flourish — a good omen!</td></tr>
@@ -727,7 +717,7 @@ const sidebarGroups = {
 </div></div></div>
 </div>
 
-<!-- ═══════════════════════ STRUKTÚRÁK / STRUCTURES ═══════════════════════ -->
+<!-- ═══════════════════════ STRUKTÚRÁK / ÉpítményS ═══════════════════════ -->
 <div data-lang="hu" id="structures">
 <h2>🏛️ Struktúrák & Helyszínek</h2>
 <p>A MITE:BE világa számos egyedi struktúrát tartalmaz — mindegyik sajátos mob spawnerekkel, jutalomládákkal és kihívásokkal. Az alábbi táblázat összefoglalja a főbb helyszíneket és lootjukat.</p>
@@ -735,16 +725,16 @@ const sidebarGroups = {
 <table>
   <tr><th>Struktúra</th><th>Dimenzió</th><th>Legfontosabb loot</th><th>Mob spawnerek</th><th>Megjegyzés</th></tr>
   <tr>
-    <td><strong style="color:var(--gold)">Pillager Erőd</strong></td>
+    <td><strong style="color:var(--gold)">Pillager-erőd</strong></td>
     <td>Fővilág</td>
-    <td>Tudáskönyv, fejlett fegyverek, ritka anyagok</td>
+    <td>Knowledge Book, fejlett fegyverek, ritka anyagok</td>
     <td>Pillager, Pillager Kapitány, Zombie Caller</td>
     <td>v0.9.0: Obszidián portál az alapkőrétegen → teleportál ide!</td>
   </tr>
   <tr>
     <td><strong>Dungeon (Börtön)</strong></td>
     <td>Fővilág / Föld alatti</td>
-    <td>Bájitalok, arany, fegyverek, Tudáskönyv</td>
+    <td>Bájitalok, arany, fegyverek, Knowledge Book</td>
     <td>Zombi, Csontváz, Pók (véletlenszerű)</td>
     <td>Kő falak, 1-2 láda, mob spawner blokk közepén</td>
   </tr>
@@ -752,14 +742,14 @@ const sidebarGroups = {
     <td><strong>Faluközpont (Village)</strong></td>
     <td>Fővilág</td>
     <td>Étel, alapanyagok, kereskedelem</td>
-    <td>Harcos / Utazó / Bányász Lakos (Partner NPC)</td>
+    <td>Harcos / Utazó falusi / Bányász falusi (Partner NPC)</td>
     <td>Falvak ritkán spawnolnak — kerülj Plains biome-ba!</td>
   </tr>
   <tr>
-    <td><strong>Sivatag Őr Torony</strong></td>
+    <td><strong>Sivatagi őr Torony</strong></td>
     <td>Fővilág (Sivatag)</td>
     <td>Ritka tárgyak, sivatagi kincslőcs</td>
-    <td>Sivatag Őr</td>
+    <td>Sivatagi őr</td>
     <td>Csak sivatag biome-ban generálódik</td>
   </tr>
   <tr>
@@ -772,12 +762,12 @@ const sidebarGroups = {
   <tr>
     <td><strong>Föld Alatti Világ (Underworld)</strong></td>
     <td>Fővilág Y&lt;0</td>
-    <td>Tudáskönyvek, ritka ércek, Keménykő szint tárgyak</td>
+    <td>Knowledge Bookek, ritka ércek, Keménykő szint tárgyak</td>
     <td>Revenant, Kísértet, Csontváz Ura, Wight Gárda</td>
     <td>Speciális rétegek: Kő → Keménykő → Ókő → Ősidők</td>
   </tr>
   <tr>
-    <td><strong>Gombaerdő Harci Torony</strong></td>
+    <td><strong>Gombaerdő Harcitorony</strong></td>
     <td>Fővilág (Mushroom Island)</td>
     <td>Jutalomládák, fejlett anyagok</td>
     <td>Erős szörnyek, egyedi őrök</td>
@@ -788,17 +778,17 @@ const sidebarGroups = {
     <td>End</td>
     <td>Elytra (ha van), chorus fruit, End kőzetek</td>
     <td>Enderman, Sárkány Tojás</td>
-    <td>Eléréshez: Core Breaker → Enhanced Ender Eye folyamat</td>
+    <td>Eléréshez: Magromboló → Enhanced Ender Eye folyamat</td>
   </tr>
 </table>
 
-<h3>Pillager Erőd — részletek</h3>
-<div class="info">🔮 <strong>v0.9.0 különlegesség:</strong> A fővilágban, az alapkőrétegen (<em>y=0</em> vagy alatta) <strong>normál obszidián portál meggyújtása</strong> → 10 másodperc Hányinger → 5 másodperc múlva az összes játékos a <strong>Pillager Erőd romjaira</strong> teleportálódik!</div>
+<h3>Pillager-erőd — részletek</h3>
+<div class="info">🔮 <strong>v0.9.0 különlegesség:</strong> A fővilágban, az alapkőrétegen (<em>y=0</em> vagy alatta) <strong>normál Obszidián portál meggyújtása</strong> → 10 másodperc Hányinger → 5 másodperc múlva az összes játékos a <strong>Pillager-erőd romjaira</strong> teleportálódik!</div>
 
 <ul>
-  <li>A Pillager Erőd a játék egyik leggazdagabb jutalom-helyszíne</li>
-  <li><strong>Tudáskönyv:</strong> Jutalomládából ejthető — új recepteket nyit meg, majd Könyv tárggyá alakul (XP forrásaként)</li>
-  <li><strong>Zombi Hívó (Zombie Caller):</strong> Erős mini-boss, zombi rajt idéz</li>
+  <li>A Pillager-erőd a játék egyik leggazdagabb jutalom-helyszíne</li>
+  <li><strong>Knowledge Book:</strong> Jutalomládából ejthető — új recepteket nyit meg, majd Könyv tárggyá alakul (XP forrásaként)</li>
+  <li><strong>Zombihívó (Zombie Caller):</strong> Erős mini-boss, zombi rajt idéz</li>
   <li><strong>Pillager Kapitány:</strong> Speciális vezér, különleges dropok</li>
   <li>Ajánlott: Mithril vagy jobb felszerelés a teljes erőd átkutatásához</li>
 </ul>
@@ -807,19 +797,19 @@ const sidebarGroups = {
 <p>A föld alatti rétegek nem csak bányászásra valók — saját mini-struktúrákat és szobákat tartalmaznak:</p>
 <table>
   <tr><th>Réteg (Y szint)</th><th>Blokk típus</th><th>Különleges struktúrák</th><th>Jellemző mob</th></tr>
-  <tr><td>Y 0 – (-30)</td><td>Keménykő (Hardstone)</td><td>Keménykő kamrák, ér-barlangok</td><td>Revenant, Wight</td></tr>
+  <tr><td>Y 0 – (-30)</td><td>Keménykő (Keménykő)</td><td>Keménykő kamrák, ér-barlangok</td><td>Revenant, Wight</td></tr>
   <tr><td>Y (-30) – (-60)</td><td>Ókő (Ancient Stone)</td><td>Kristály barlangok, Ősi Csontváz sírhelyek</td><td>Wight Gárda, Csontváz Ura</td></tr>
-  <tr><td>Y (-60)+</td><td>Ősidők köve</td><td>Titokzatos romok, Adamantium erek</td><td>Revenant, speciális ellenségek</td></tr>
+  <tr><td>Y (-60)+</td><td>Ősidők köve</td><td>mysterious ruins, Adamantium erek</td><td>Revenant, speciális ellenségek</td></tr>
 </table>
 
-<h3>Loot prioritás útmutató</h3>
+<h3>Zsákmány prioritás útmutató</h3>
 <div class="tip">💡 <strong>Mire érdemes vadászni?</strong>
 <ul style="margin-top:8px">
   <li><strong>Korai játék:</strong> Faluközpont → Partner NPC-k → alapanyag kereskedelem</li>
-  <li><strong>Közép játék:</strong> Pillager Erőd → Tudáskönyv + Pillager drops</li>
+  <li><strong>Közép játék:</strong> Pillager-erőd → Knowledge Book + Pillager drops</li>
   <li><strong>Nether:</strong> Nether Erőd → Hervadt Rózsa (Wither idézéshez kötelező)</li>
-  <li><strong>Késői játék:</strong> Föld Alatti → Csontváz Ura drops + Adamantium érc</li>
-  <li><strong>End:</strong> Core Breaker → Enhanced Ender Eye → Dragon legyőzése</li>
+  <li><strong>Késői játék:</strong> Föld Alatti → Csontváz Ura drops + Adamantiumérc</li>
+  <li><strong>End:</strong> Magromboló → Enhanced Ender Eye → Dragon legyőzése</li>
 </ul></div>
 </div>
 
@@ -860,7 +850,7 @@ const sidebarGroups = {
   <tr>
     <td><strong>Nether Fortress</strong></td>
     <td>Nether</td>
-    <td>Wither Rose (needed for Wither summon), Nether Wart, Blaze Rod</td>
+    <td>Wither Rose (required for Wither summon), Nether Wart, Blaze Rod</td>
     <td>Blaze, Wither Skeleton, Red Blaze</td>
     <td>Wither Rose from loot chests here — required for Wither boss</td>
   </tr>
@@ -883,12 +873,12 @@ const sidebarGroups = {
     <td>The End</td>
     <td>Elytra (if present), chorus fruit, End stone</td>
     <td>Enderman, Dragon Egg</td>
-    <td>Access requires: Core Breaker → Enhanced Ender Eye process</td>
+    <td>Access requires: Bedrock Crusher → Enhanced Ender Eye process</td>
   </tr>
 </table>
 
 <h3>Pillager Fortress — Details</h3>
-<div class="info">🔮 <strong>v0.9.0 special:</strong> In the overworld, lighting a <strong>normal obsidian portal at bedrock level</strong> (y=0 or below) → 10 seconds Nausea → 5 seconds later all players teleport to the <strong>Pillager Fortress ruins</strong>!</div>
+<div class="info">🔮 <strong>v0.9.0 special:</strong> In the overworld, lighting a <strong>normal Obsidian portal at bedrock level</strong> (y=0 or below) → 10 seconds Nausea → 5 seconds later all players teleport to the <strong>Pillager Fortress ruins</strong>!</div>
 
 <ul>
   <li>The Pillager Fortress is one of the richest loot locations in the game</li>
@@ -914,7 +904,7 @@ const sidebarGroups = {
   <li><strong>Mid game:</strong> Pillager Fortress → Knowledge Book + Pillager drops</li>
   <li><strong>Nether:</strong> Nether Fortress → Wither Rose (required for Wither summon)</li>
   <li><strong>Late game:</strong> Underground → Skeleton Lord drops + Adamantium ore</li>
-  <li><strong>End game:</strong> Core Breaker → Enhanced Ender Eye → defeat Dragon</li>
+  <li><strong>End game:</strong> Bedrock Crusher → Enhanced Ender Eye → defeat Dragon</li>
 </ul></div>
 </div>
 
@@ -934,19 +924,19 @@ const sidebarGroups = {
 <div id="mob-table-nether"></div>
 <div class="warning-box">🔥 <strong>Огненный элементаль:</strong> Если вы <strong>горите</strong> в момент атаки, есть <strong>3% шанс мгновенной смерти!</strong> Зелье огнестойкости обязательно. Эффективно: зачарованные предметы, вода, снежки, зелья Вреда. НЕ эффективно: огонь, серебряное оружие.</div>
 
-<h3>Финальный босс: ОН</h3>
+<h3>Финальный босс: HIM</h3>
 <table class="compare-table">
   <tr><th>Характеристика</th><th>Значение</th></tr>
-  <tr><td>HP</td><td><strong>400</strong></td></tr>
+  <tr><td>Здоровье (HP)</td><td><strong>400</strong></td></tr>
   <tr><td>Урон</td><td>Переменный — крайне высокий</td></tr>
   <tr><td>Иммунитеты</td><td>Почти ко всему — требуются особые механики</td></tr>
   <tr><td>XP</td><td>Огромное количество</td></tr>
 </table>
-<div class="warning-box">💀 <strong>ОН:</strong> Финальный враг игры. 400 HP, иммунен почти ко всему. Для победы требуются особые механики — обычное оружие и зелья бесполезны. Необходимо полное снаряжение из адаманта и особая стратегия!</div>
+<div class="warning-box">💀 <strong>HIM:</strong> Финальный враг игры. У него 400 HP, и он почти ко всему иммунен. Для победы нужны особые механики: обычное оружие и зелья здесь бесполезны. Понадобятся полное снаряжение из адаманта и особая стратегия.</div>
 
 <h3>Особые существа</h3>
-<p>Вариант Зомби, Вариант Крипера, Вариант Паука, Вариант Скелета — усиленные версии обычных мобов.</p>
-<p>Детёныш Крипера, Растерянный Крипер, Разделённый Крипер, Замороженный Крипер, Конец Молниеносный Крипер — варианты крипера.</p>
+<p>Варианты Зомби, Крипера, Паука и Скелета — это усиленные версии обычных мобов.</p>
+<p>Детёныш Крипера, Растерянный Крипер, Разделённый Крипер, Замороженный Крипер и Молниеносный Крипер Края — разновидности криперов.</p>
 <p>Призыватель Зомби, Бомбардировщик, Обсидиановый Голем, Страж Пустыни, Злой Снеговик — особые существа.</p>
 <p><strong>Союзники:</strong> Воин-Житель, Путешественник, Шахтёр-Житель — ваши союзники!</p>
 
@@ -981,15 +971,15 @@ const sidebarGroups = {
   <tr><td>Паралич</td><td>Невозможность двигаться</td><td>I</td></tr>
   <tr><td>Уязвимость</td><td>Получаете больше урона</td><td>I</td></tr>
 </table>
-<p>Большинство зелий можно также приготовить как <strong>Бросательные</strong> варианты — добавив порох. Бросательные зелья можно бросать во врагов или союзников.</p>
+<p>Большинство зелий можно превратить в <strong>взрывные</strong>, если добавить порох. Такие зелья можно бросать во врагов или союзников.</p>
 
 <h4>Механики котла</h4>
-<p>Котёл не только хранит воду — он позволяет выполнять особые рецепты:</p>
+<p>Котёл нужен не только для воды — в нём можно готовить особые рецепты:</p>
 <table class="compare-table">
   <tr><th>Рецепт</th><th>Процесс</th><th>Результат</th></tr>
-  <tr><td><strong>Жидкое золото</strong></td><td>Котёл под источником лавы + бросить золотую руду → ждать 10 сек</td><td>Жидкое золото — можно сделать 4 золотых яблока (4 яблока/котёл)</td></tr>
-  <tr><td><strong>Жидкая ртуть</strong></td><td>Руда ртути + лава в котле → плавка</td><td>Жидкая ртуть (собрать ведром)</td></tr>
-  <tr><td><strong>Рюкзак из Древнего металла</strong></td><td>Кожаный рюкзак + 4 слитка Древнего металла в ртуть → ждать 30 сек</td><td>Рюкзак из Древнего металла (больше ячеек, прочнее)</td></tr>
+  <tr><td><strong>Жидкое золото</strong></td><td>Поставьте котёл под источник лавы, бросьте золотую руду и подождите 10 сек.</td><td>Жидкое золото, из которого можно сделать 4 золотых яблока</td></tr>
+  <tr><td><strong>Жидкая ртуть</strong></td><td>Руда ртути + лава в котле → дождитесь переплавки</td><td>Жидкая ртуть (можно набрать ведром)</td></tr>
+  <tr><td><strong>Рюкзак из Древнего металла</strong></td><td>Погрузите кожаный рюкзак и 4 слитка Древнего металла в ртуть и подождите 30 сек.</td><td>Рюкзак из Древнего металла: больше ячеек и выше прочность</td></tr>
 </table>
 
 <h4>Флакон расчарования</h4>
@@ -1026,12 +1016,12 @@ const sidebarGroups = {
 <p>Базовый рецепт (медный и выше): <strong>слиток/пластина металла + Кожа + Палка + (любые) Доски</strong>.</p>
 <table class="compare-table">
   <tr><th>Верстак</th><th>Ключевой материал</th><th>Другие компоненты</th><th>Сложность</th></tr>
-  <tr><td><strong>Кремниевый верстак</strong></td><td>Кремниевый нож</td><td>Бревно</td><td>270</td></tr>
+  <tr><td><strong>Кремнёвый верстак</strong></td><td>Кремнёвый нож</td><td>Бревно</td><td>270</td></tr>
   <tr><td><strong>Медный верстак</strong></td><td>Медная пластина</td><td>Кожа + Палка + Доска</td><td>605</td></tr>
   <tr><td><strong>Серебряный верстак</strong></td><td>Серебряная пластина</td><td>Кожа + Палка + Доска</td><td>605</td></tr>
   <tr><td><strong>Золотой верстак</strong></td><td>Золотой слиток</td><td>Кожа + Палка + Доска</td><td>605</td></tr>
   <tr><td><strong>Железный верстак</strong></td><td>Железный слиток</td><td>Кожа + Палка + Доска</td><td>1005</td></tr>
-  <tr><td><strong>Верстак из твёрдого камня</strong></td><td>Слиток твёрдого камня</td><td>Кожа + Палка + Доска</td><td>1805</td></tr>
+  <tr><td><strong>Твердокаменный верстак</strong></td><td>Твердокаменный слиток</td><td>Кожа + Палка + Доска</td><td>1805</td></tr>
   <tr><td><strong>Верстак из Древнего металла</strong></td><td>Пластина Древнего металла</td><td>Кожа + Палка + Доска</td><td>1805</td></tr>
   <tr><td><strong>Мифриловый верстак</strong></td><td>Мифриловая пластина</td><td>Кожа + Палка + Доска</td><td>6605</td></tr>
   <tr><td><strong>Адамантиевый верстак</strong></td><td>Адамантиевая пластина</td><td>Кожа + Палка + Доска</td><td>25805</td></tr>
@@ -1042,13 +1032,13 @@ const sidebarGroups = {
 <p>Материал верстака определяет максимальный уровень предметов, которые можно на нём крафтить:</p>
 <table class="compare-table">
   <tr><th>Верстак</th><th>Открытые предметы и уровни</th></tr>
-  <tr><td><strong>Кремниевый верстак</strong></td><td>Кремниевые и деревянные инструменты, каменные/деревянные строительные материалы, базовые рецепты</td></tr>
+  <tr><td><strong>Кремнёвый верстак</strong></td><td>Кремнёвые и деревянные инструменты, каменные/деревянные строительные материалы, базовые рецепты</td></tr>
   <tr><td><strong>Медный верстак</strong></td><td>Медные инструменты, оружие и броня; <strong>Ядро каменной печи</strong></td></tr>
   <tr><td><strong>Серебряный верстак</strong></td><td>Серебряные инструменты, оружие и броня; <strong>Ядро каменной печи</strong></td></tr>
   <tr><td><strong>Золотой верстак</strong></td><td>Золотые инструменты, оружие и броня; <strong>Ядро обсидиановой печи</strong></td></tr>
   <tr><td><strong>Железный верстак</strong></td><td>Железные инструменты, оружие и броня; <strong>Ядро обсидиановой печи</strong></td></tr>
-  <tr><td><strong>Верстак из твёрдого камня</strong></td><td>Инструменты и оружие из твёрдого камня</td></tr>
-  <tr><td><strong>Верстак из Древнего металла</strong></td><td>Предметы из Древнего металла, продвинутая электроника (Шахтёрская каска, Охлаждающая жидкость) — <strong>+50% скорость крафта!</strong></td></tr>
+  <tr><td><strong>Твердокаменный верстак</strong></td><td>Твердокаменные инструменты и оружие</td></tr>
+  <tr><td><strong>Верстак из Древнего металла</strong></td><td>Предметы из Древнего металла, продвинутая электроника (Шахтёрская каска, Охлаждающая жидкость) — <strong>+50% к скорости крафта!</strong></td></tr>
   <tr><td><strong>Мифриловый верстак</strong></td><td>Мифриловые предметы; <strong>Ядро адской каменной печи</strong></td></tr>
   <tr><td><strong>Адамантиевый верстак</strong></td><td>Адамантиевые предметы (лучший металлический уровень); <strong>Ядро адской каменной печи</strong></td></tr>
   <tr><td><strong>Обсидиановый верстак</strong></td><td>Базовые рецепты + особые обсидиановые предметы — <em>НЕ входит в обычную иерархию уровней; в основном альтернатива раннего этапа игры</em></td></tr>
@@ -1087,7 +1077,7 @@ const sidebarGroups = {
 <table class="compare-table">
   <tr><th>Что плавить</th><th>Нагрев</th><th>Минимальное топливо</th><th>Результат</th></tr>
   <tr><td>Угольная руда, Дерево</td><td>1</td><td>Что угодно (дерево, древесный уголь...)</td><td>Уголь / Древесный уголь</td></tr>
-  <tr><td>Медь, Серебро, Твёрдый камень, Железо, Золото, Алмаз, Олово (руда)</td><td>2</td><td><strong>Уголь</strong></td><td>Соответствующий слиток</td></tr>
+  <tr><td>Медь, Серебро, Твердокамень, Железо, Золото, Алмаз, Олово (руда)</td><td>2</td><td><strong>Уголь</strong></td><td>Соответствующий слиток</td></tr>
   <tr style="background:rgba(255,80,0,0.12)"><td><strong>Мифриловая руда</strong></td><td><strong>3</strong></td><td><strong>Ведро лавы</strong></td><td>Мифриловый слиток</td></tr>
   <tr style="background:rgba(255,30,0,0.22)"><td><strong>⚠️ Адамантиевая руда</strong></td><td><strong>4 ‼️</strong></td><td><strong>Стержень Блейза</strong></td><td>Адамантиевый слиток</td></tr>
 </table>
@@ -1101,23 +1091,23 @@ const sidebarGroups = {
 <div class="timeline">
   <div class="timeline-item">
     <h4>🌕 День 30 — Приближается красная луна</h4>
-    <p>Вы видели много монстров в пещерах. Кровь начинает развращать этот мир.</p>
+    <p>Вы уже видели множество монстров в пещерах. Кажется, сам мир начинает пропитываться кровью.</p>
   </div>
   <div class="timeline-item">
     <h4>🔴 День 32 — 1-я Кровавая луна (Эволюция I)</h4>
-    <p>Поднимается кровавая луна, нежить бродит свободно. Днём пауки и крипперы сходят с ума. Кровавый дождь приносит усталость. Ночь — начало кошмара — хватай оружие, защищай базу! Все мобы получают бафф <strong>Сила I</strong>.</p>
+    <p>Поднимается кровавая луна, нежить бродит свободно. Днём пауки и крипперы впадают в ярость. Кровавый дождь накладывает усталость. Ночь превращается в настоящий кошмар — хватайтесь за оружие и защищайте базу. Все мобы получают бафф <strong>Сила I</strong>.</p>
   </div>
   <div class="timeline-item">
     <h4>🏚️ День 33 — Разрушенная база</h4>
-    <p>Кровавая луна закончилась. Вы грустно смотрите на разрушенную базу, но стали сильнее. Готовьтесь к следующей!</p>
+    <p>Кровавая луна закончилась. База разрушена, но вы стали сильнее. Готовьтесь к следующей.</p>
   </div>
   <div class="timeline-item">
     <h4>🔴 День 64 — 2-я Кровавая луна (Эволюция II)</h4>
-    <p>Но теперь вы исключительны. Ваш меч легко прорезает самую твёрдую шкуру. Однако монстры стали сильнее.</p>
+    <p>К этому моменту вы уже закалены. Ваш меч легко пробивает даже самую прочную шкуру, но и монстры стали заметно опаснее.</p>
   </div>
   <div class="timeline-item">
     <h4>🔵 День 128 — 3-я Кровавая луна (Эволюция III) + Синяя луна</h4>
-    <p>Не все луны плохие! Поднялась синяя луна, урожай процветает — добрый знак. Но монстры Кровавой луны снова окрепли.</p>
+    <p>Не каждая луна несёт беду: синяя луна ускоряет рост урожая и считается добрым знаком. Но монстры Кровавой луны к этому времени тоже становятся сильнее.</p>
   </div>
   <div class="timeline-item">
     <h4>🔴 День 160 — 4-я Кровавая луна (Эволюция IV)</h4>
@@ -1167,7 +1157,7 @@ const sidebarGroups = {
 <h3>Ранний этап (1-15)</h3>
 <div class="ach"><span class="ach-name">Откуда я пришёл?</span> <span class="ach-cond">(Начальное достижение)</span><div class="ach-desc">Вы не знаете, кто вы, почему оказались здесь, в этом мире...</div></div>
 <div class="ach"><span class="ach-name">Я голоден!</span> <span class="ach-cond">(Получить семена пшеницы)</span><div class="ach-desc">Разрушение травы может дать семена пшеницы или растительное волокно.</div></div>
-<div class="ach"><span class="ach-name">Кремень и лезвие</span> <span class="ach-cond">(Базовый кремниевый нож)</span><div class="ach-desc">Травяная верёвка + кремниевый осколок + палка</div></div>
+<div class="ach"><span class="ach-name">Кремень и лезвие</span> <span class="ach-cond">(Базовый кремнёвый нож)</span><div class="ach-desc">Травяная верёвка + кремнёвый осколок + палка</div></div>
 <div class="ach"><span class="ach-name">От камней к городу</span> <span class="ach-cond">(Верстак)</span><div class="ach-desc">Ваш первый верстак!</div></div>
 <div class="ach"><span class="ach-name">Примитивная романтика</span> <span class="ach-cond">(Глиняная печь)</span><div class="ach-desc">Найдите глину у ручьёв</div></div>
 
@@ -1247,7 +1237,7 @@ const sidebarGroups = {
     <td>Верхний мир</td>
     <td>Книга знаний, продвинутое оружие, редкие материалы</td>
     <td>Разоритель, Капитан Разорителей, Призыватель Зомби</td>
-    <td>v0.9.0: Обсидиановый портал у уровня коренной породы → телепортирует сюда!</td>
+    <td>v0.9.0: Обсидиановый портал на уровне коренной породы → телепортирует сюда!</td>
   </tr>
   <tr>
     <td><strong>Подземелье</strong></td>
@@ -1280,9 +1270,9 @@ const sidebarGroups = {
   <tr>
     <td><strong>Подземный мир</strong></td>
     <td>Верхний мир Y&lt;0</td>
-    <td>Книги знаний, редкие руды, предметы уровня твёрдого камня</td>
+    <td>Книги знаний, редкие руды, предметы уровня твердокамня</td>
     <td>Ревенант, Тень, Повелитель скелетов, Страж Вайт</td>
-    <td>Особые слои: Камень → Твёрдый камень → Древний камень → Первозданный</td>
+    <td>Особые слои: Камень → Твердокамень → Древний камень → Первозданный</td>
   </tr>
   <tr>
     <td><strong>Боевая башня Грибного леса</strong></td>
@@ -1301,7 +1291,7 @@ const sidebarGroups = {
 </table>
 
 <h3>Крепость Разорителей — подробности</h3>
-<div class="info">🔮 <strong>Особенность v0.9.0:</strong> В верхнем мире, поджигание <strong>обычного обсидианового портала у уровня коренной породы</strong> (y=0 или ниже) → 10 секунд Тошноты → через 5 секунд все игроки телепортируются к <strong>руинам Крепости Разорителей</strong>!</div>
+<div class="info">🔮 <strong>Особенность v0.9.0:</strong> В Верхнем мире подожгите <strong>обычный обсидиановый портал на уровне коренной породы</strong> (y=0 или ниже) → 10 секунд Тошноты → ещё через 5 секунд все игроки телепортируются к <strong>руинам Крепости Разорителей</strong>!</div>
 
 <ul>
   <li>Крепость Разорителей — одна из богатейших лутовых локаций в игре</li>
@@ -1315,7 +1305,7 @@ const sidebarGroups = {
 <p>Подземные слои нужны не только для добычи — они содержат собственные мини-структуры и камеры:</p>
 <table>
   <tr><th>Слой (уровень Y)</th><th>Тип блока</th><th>Особые структуры</th><th>Типичные мобы</th></tr>
-  <tr><td>Y 0 – (-30)</td><td>Твёрдый камень</td><td>Камеры из твёрдого камня, рудные пещеры</td><td>Ревенант, Вайт</td></tr>
+  <tr><td>Y 0 – (-30)</td><td>Твердокамень</td><td>Камеры из твердокамня, рудные пещеры</td><td>Ревенант, Вайт</td></tr>
   <tr><td>Y (-30) – (-60)</td><td>Древний камень</td><td>Хрустальные пещеры, погребения Древних скелетов</td><td>Страж Вайт, Повелитель скелетов</td></tr>
   <tr><td>Y (-60)+</td><td>Первозданный камень</td><td>Таинственные руины, жилы адаманта</td><td>Ревенант, особые враги</td></tr>
 </table>

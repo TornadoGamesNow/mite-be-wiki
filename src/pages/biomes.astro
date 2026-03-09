@@ -1,4 +1,4 @@
----
+﻿---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import TopNav from '../components/TopNav.astro';
@@ -13,7 +13,7 @@ const sidebarGroups = {
       links: [{ href: './', label: '← Wiki főoldal' }],
     },
     {
-      title: '🌍 Biome-ok',
+      title: '🌍 Biomok',
       links: [
         { href: '#attekintes', label: 'Áttekintés' },
         { href: '#plains', label: '🌾 Síkság (Plains)' },
@@ -26,7 +26,7 @@ const sidebarGroups = {
         { href: '#mushroom', label: '🍄 Gombaszigetek' },
         { href: '#ocean', label: '🌊 Óceán (Ocean)' },
         { href: '#nether', label: '🔥 Nether' },
-        { href: '#underground', label: '⛏ Föld Alatti Világ' },
+        { href: '#underground', label: '⛏ Földalatti világ' },
       ],
     },
   ],
@@ -79,7 +79,7 @@ const sidebarGroups = {
 };
 ---
 
-<BaseLayout title="Biome Útmutató — MITE: Break Everything Wiki">
+<BaseLayout title="Biom Útmutató — MITE: Break Everything Wiki">
   <Header />
   <TopNav currentPage="biomes" />
   <div class="container">
@@ -88,24 +88,24 @@ const sidebarGroups = {
 
 <!-- ════════════════════════ HUNGARIAN ════════════════════════ -->
 <div data-lang="hu">
-<h2 id="attekintes">🌍 Biome Útmutató</h2>
-<p>A MITE:BE minden biome-ot egyedi kihívásokkal és lehetőségekkel ruház fel. Az alábbiakban összefoglaljuk a legfontosabb tudnivalókat biome-onként — a veszélyektől a stratégiai tanácsokig.</p>
+<h2 id="attekintes">🌍 Biom Útmutató</h2>
+<p>A MITE:BE minden biomot egyedi kihívásokkal és lehetőségekkel ruház fel. Az alábbiakban összefoglaljuk a legfontosabb tudnivalókat biomonként — a veszélyektől a stratégiai tanácsokig.</p>
 
-<div class="info-box">🌡️ <strong>Hőmérséklet mindenhol számít!</strong> Hideg biome-okban (Tajga, Hegyvidék) éjjel és esőben gyorsan csökken a testhőmérséklet. Mindig legyen nálad meleg étel és tűzütő!</div>
+<div class="info-box">🌡️ <strong>A hőmérséklet mindenhol számít!</strong> A hideg biomokban (Tajga, Hegyvidék) éjjel és esőben gyorsan csökken a testhőmérséklet. Mindig legyen nálad meleg étel és tűzgyújtó eszköz!</div>
 
 <table class="compare-table">
-  <tr><th>Biome</th><th>Hőmérséklet</th><th>Főbb veszély</th><th>Különlegesség</th></tr>
-  <tr><td>🌾 Síkság</td><td>Mérsékelt</td><td>Átlagos mob spawning</td><td>Fáklyák sosem alszanak ki!</td></tr>
-  <tr><td>🌲 Erdő</td><td>Mérsékelt</td><td>Csökkentett látótávolság</td><td>Fa bőségben</td></tr>
-  <tr><td>🌨 Tajga</td><td>Hideg</td><td>Fagyás éjjel</td><td>Fenyő fa</td></tr>
-  <tr><td>🏜 Sivatag</td><td>Meleg</td><td>Sivatag Őr, hőguta</td><td>Homok és kaktusz</td></tr>
+  <tr><th>Biom</th><th>Hőmérséklet</th><th>Fő veszély</th><th>Különlegesség</th></tr>
+  <tr><td>🌾 Síkság</td><td>Mérsékelt</td><td>Átlagos szörny-megjelenés</td><td>A fáklyák sosem alszanak ki!</td></tr>
+  <tr><td>🌲 Erdő</td><td>Mérsékelt</td><td>Csökkentett látótávolság</td><td>Bőséges faanyag</td></tr>
+  <tr><td>🌨 Tajga</td><td>Hideg</td><td>Fagyás éjszaka</td><td>Lucfenyő</td></tr>
+  <tr><td>🏜 Sivatag</td><td>Meleg</td><td>Sivatagi őr, hőguta</td><td>Homok és kaktusz</td></tr>
   <tr><td>🌿 Mocsár</td><td>Mérsékelt</td><td>Boszorkányok, sár</td><td>Iszapbarlangok</td></tr>
-  <tr><td>⛰ Hegyvidék</td><td>Hideg</td><td>Zuhanás, fagyás</td><td>Ritka ércek felszínen</td></tr>
-  <tr><td>🌴 Dzsungel</td><td>Meleg</td><td>Mérgezés, kúszók</td><td>Bambusz, kakaó, banán</td></tr>
-  <tr><td>🍄 Gombaszigetek</td><td>Mérsékelt</td><td>Harci Torony</td><td>Mooshroom, nincs mob spawning</td></tr>
+  <tr><td>⛰ Hegyvidék</td><td>Hideg</td><td>Zuhanás, fagyás</td><td>Ritka ércek a felszínen</td></tr>
+  <tr><td>🌴 Dzsungel</td><td>Meleg</td><td>Mérgezés, creeper-ek</td><td>Bambusz, kakaó, banán</td></tr>
+  <tr><td>🍄 Gombaszigetek</td><td>Mérsékelt</td><td>Harcitorony</td><td>Mooshroom, nincs szörny-megjelenés</td></tr>
   <tr><td>🌊 Óceán</td><td>Hideg</td><td>Fagyás, fulladás</td><td>Hal, korallok</td></tr>
-  <tr><td>🔥 Nether</td><td>Extrém forró</td><td>Blaze, Wither Csontváz, láva</td><td>Nether Erőd, Blaze Rúd</td></tr>
-  <tr><td>⛏ Föld Alatti</td><td>Normál</td><td>Revenant, Wight, Csontváz Ura</td><td>Ritka ércek, Tudáskönyvek</td></tr>
+  <tr><td>🔥 Nether</td><td>Extrém forró</td><td>Blaze, Wither csontváz, láva</td><td>Nether erőd, Blaze-rúd</td></tr>
+  <tr><td>⛏ Földalatti világ</td><td>Normál</td><td>Lidérc, Holttetem, Csontvázúr</td><td>Ritka ércek, Tudáskönyvek</td></tr>
 </table>
 </div>
 
@@ -113,18 +113,18 @@ const sidebarGroups = {
 <div data-lang="hu" id="plains">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌾 Síkság (Plains)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>A legjobb kezdő biome! Nyílt terep, jó látótávolság, kevesebb meglepetés.</p>
+<p>A legjobb kezdő biom! Nyílt terep, jó látótávolság, kevesebb meglepetés.</p>
 
 <table class="compare-table">
   <tr><th>Tulajdonság</th><th>Részletek</th></tr>
   <tr><td>Hőmérséklet</td><td>Mérsékelt — nincs fagyásveszély</td></tr>
-  <tr><td>Fáklya különlegesség</td><td><strong>Fáklyák soha nem alszanak ki a Síkságon!</strong> Egyetlen biome ahol ez igaz</td></tr>
-  <tr><td>Mob spawning</td><td>Átlagos — éjjeli védekezés szükséges</td></tr>
-  <tr><td>Erőforrások</td><td>Búza, ló, tehén, birka — jó élelmiszer forrás</td></tr>
+  <tr><td>Fáklya különlegesség</td><td><strong>Fáklyák soha nem alszanak ki a Síkságon!</strong> Egyetlen biom, ahol ez igaz</td></tr>
+  <tr><td>Szörny-megjelenés</td><td>Átlagos — éjszakai védekezés szükséges</td></tr>
+  <tr><td>Erőforrások</td><td>Búza, ló, tehén, birka — jó élelmiszerforrás</td></tr>
   <tr><td>Falvak</td><td>Legtöbbször síkságon jelennek meg!</td></tr>
 </table>
 
-<div class="info-box">💡 <strong>Kezdő tipp:</strong> Ha a world spawn pontod Síkságon van, maradj ott az első napokban — a fáklyák nem alszanak ki, ami sokat segít a védekezésben!</div>
+<div class="info-box">💡 <strong>Kezdő tipp:</strong> Ha a világ kezdőpontja (world spawn) a Síkságon van, maradj ott az első napokban — a fáklyák nem alszanak ki, ami sokat segít a védekezésben!</div>
 
 </div></div></div>
 </div>
@@ -133,13 +133,13 @@ const sidebarGroups = {
 <div data-lang="hu" id="forest">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌲 Erdő (Forest)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>Bőséges fa forrás, de a sűrű növényzet csökkenti a látótávolságot és megkönnyíti a mobok meglepetésszerű támadásait.</p>
+<p>Bőséges faforrás, de a sűrű növényzet csökkenti a látótávolságot és megkönnyíti a szörnyek meglepetésszerű támadásait.</p>
 
 <table class="compare-table">
   <tr><th>Tulajdonság</th><th>Részletek</th></tr>
   <tr><td>Hőmérséklet</td><td>Mérsékelt</td></tr>
-  <tr><td>Erőforrások</td><td>Tölgy, nyírfa, fenyő — rengeteg fa; gomba; alma</td></tr>
-  <tr><td>Veszélyek</td><td>Csökkentett látótávolság → mobok közel kerülhetnek</td></tr>
+  <tr><td>Erőforrások</td><td>Tölgy, nyírfa, lucfenyő — rengeteg fa; gomba; alma</td></tr>
+  <tr><td>Veszélyek</td><td>Csökkentett látótávolság → a szörnyek közel kerülhetnek</td></tr>
   <tr><td>Fáklyák</td><td>Kialszanak 3 nap után (Hardcore módban)</td></tr>
 </table>
 
@@ -152,13 +152,13 @@ const sidebarGroups = {
 <div data-lang="hu" id="taiga">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌨 Tajga (Taiga)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>Hideg biome — a hőmérséklet-rendszer itt számít legjobban. Éjjel és esőben gyorsan megfagyhatsz.</p>
+<p>Hideg biom — a hőmérséklet-rendszer itt számít legjobban. Éjjel és esőben gyorsan megfagyhatsz.</p>
 
 <table class="compare-table">
   <tr><th>Tulajdonság</th><th>Részletek</th></tr>
   <tr><td>Hőmérséklet</td><td><strong>Hideg</strong> — éjjel fagyásveszély!</td></tr>
-  <tr><td>Erőforrások</td><td>Fenyőfa (spruce), farkas, liszt bokor</td></tr>
-  <tr><td>Havas Tajga</td><td>Még hidegebb — hóban járás lelassít</td></tr>
+  <tr><td>Erőforrások</td><td>Lucfenyő (spruce), farkas, lisztbokor</td></tr>
+  <tr><td>Havas Tajga</td><td>Még hidegebb — a hóban járás lelassít</td></tr>
   <tr><td>Fagyás megelőzése</td><td>Meleg étel (pörkölt, kása), tűz közelében tartózkodás, meleg ruházat</td></tr>
 </table>
 
@@ -171,18 +171,18 @@ const sidebarGroups = {
 <div data-lang="hu" id="desert">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🏜 Sivatag (Desert)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>Forró, száraz biome egyedi ellenséggel — a Sivatag Őrrel. Ritka struktúrát (Sivatag Őr Torony) tartalmaz.</p>
+<p>Forró, száraz biom egyedi ellenséggel — a Sivatagi őrrel. Ritka struktúrát (Sivatagi őrtorony) tartalmaz.</p>
 
 <table class="compare-table">
   <tr><th>Tulajdonság</th><th>Részletek</th></tr>
-  <tr><td>Hőmérséklet</td><td>Meleg nappal — hőguta napközben lehetséges</td></tr>
-  <tr><td>Egyedi mob</td><td><strong>Sivatag Őr</strong> — gyors, erős, ritka dropok</td></tr>
-  <tr><td>Struktúra</td><td><strong>Sivatag Őr Torony</strong> — ritka loot ládákkal</td></tr>
-  <tr><td>Erőforrások</td><td>Homok, homokkő, kaktusz, dead bush</td></tr>
+  <tr><td>Hőmérséklet</td><td>Meleg nappal — hőguta lehetséges napközben</td></tr>
+  <tr><td>Egyedi szörny</td><td><strong>Sivatagi őr</strong> — gyors, erős, ritka dropok</td></tr>
+  <tr><td>Struktúra</td><td><strong>Sivatagi őrtorony</strong> — ritka zsákmányládákkal</td></tr>
+  <tr><td>Erőforrások</td><td>Homok, homokkő, kaktusz, ördögszekér</td></tr>
   <tr><td>Víz</td><td>Nincs természetes vízforrás — hozz magaddal!</td></tr>
 </table>
 
-<div class="warning-box">🏜 <strong>Szitkozódó Sivatag Őr:</strong> Ne becsüld alá! Gyors és erős. Mithril+ felszerelés ajánlott a Torony megtámadásához.</div>
+<div class="warning-box">🏜 <strong>Szitkozódó sivatagi őr:</strong> Ne becsüld alá! Gyors és erős. Mithril+ felszerelés ajánlott a torony megtámadásához.</div>
 
 </div></div></div>
 </div>
@@ -191,17 +191,17 @@ const sidebarGroups = {
 <div data-lang="hu" id="swamp">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌿 Mocsár (Swamp)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>Nedves, sötét biome boszorkányokkal és iszapbarlangokkal. A mérgezés komoly veszélyt jelent.</p>
+<p>Nedves, sötét biom boszorkányokkal és iszapbarlangokkal. A mérgezés komoly veszélyt jelent.</p>
 
 <table class="compare-table">
   <tr><th>Tulajdonság</th><th>Részletek</th></tr>
-  <tr><td>Hőmérséklet</td><td>Mérsékelt de nedves — vízben tartózkodás lehűt</td></tr>
+  <tr><td>Hőmérséklet</td><td>Mérsékelt de nedves — a vízben tartózkodás lehűt</td></tr>
   <tr><td>Egyedi veszély</td><td><strong>Boszorkányok</strong> — méregbájitalokat dobnak; elvadult tündérek</td></tr>
-  <tr><td>Erőforrások</td><td>Iszap (clay), liliompad, mocsári fa</td></tr>
+  <tr><td>Erőforrások</td><td>Iszap (clay), liliomlevél, mocsári fa</td></tr>
   <tr><td>Barlangok</td><td>Iszapbarlangok — vízzel teli, nehéz navigálni</td></tr>
 </table>
 
-<div class="warning-box">🧪 <strong>Boszorkány:</strong> Ha méregbájitalt dob rád, azonnal fogyassz tejet (méregellenszer) vagy menekülj! A mérgezés gyorsan öl alacsony HP-nál.</div>
+<div class="warning-box">🧪 <strong>Boszorkány:</strong> Ha méregbájitalt dob rád, azonnal fogyassz tejet (antidote) vagy menekülj! A mérgezés gyorsan öl alacsony életerőnél (HP).</div>
 
 </div></div></div>
 </div>
@@ -210,7 +210,7 @@ const sidebarGroups = {
 <div data-lang="hu" id="mountains">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⛰ Hegyvidék (Mountains)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>Látványos de veszélyes biome — esés és fagyás a két fő kockázat. Cserébe ritka ércek és kövek lelhetők fel a felszínen.</p>
+<p>Látványos de veszélyes biom — az esés és a fagyás a két fő kockázat. Cserébe ritka ércek és kövek lelhetők fel a felszínen.</p>
 
 <table class="compare-table">
   <tr><th>Tulajdonság</th><th>Részletek</th></tr>
@@ -220,7 +220,7 @@ const sidebarGroups = {
   <tr><td>Vérhold hatás</td><td>Y&gt;100: Hányinger+Gyengeség — <strong>vonulj le a magasból!</strong></td></tr>
 </table>
 
-<div class="info-box">⛏ <strong>Hegyvidéki bányászat:</strong> A meredek sziklafalakon néha felszínen látható ércek (réz, ezüst) — érdemes átvizsgálni a sziklákat mielőtt a föld alá mennél.</div>
+<div class="info-box">⛏ <strong>Hegyvidéki bányászat:</strong> A meredek sziklafalakon néha a felszínen is láthatóak ércek (réz, ezüst) — érdemes átvizsgálni a sziklákat mielőtt a föld alá mennél.</div>
 
 </div></div></div>
 </div>
@@ -229,7 +229,7 @@ const sidebarGroups = {
 <div data-lang="hu" id="jungle">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌴 Dzsungel (Jungle)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>Sűrű, bonyolult biome rengeteg természeti erőforrással — de nehéz navigálni és mérgező lények veszélyeztetik.</p>
+<p>Sűrű, bonyolult biom rengeteg természeti erőforrással — de nehéz navigálni és mérgező lények veszélyeztetik.</p>
 
 <table class="compare-table">
   <tr><th>Tulajdonság</th><th>Részletek</th></tr>
@@ -239,7 +239,7 @@ const sidebarGroups = {
   <tr><td>Navigáció</td><td>Nagyon sűrű — könnyen elveszhetsz</td></tr>
 </table>
 
-<div class="info-box">🍌 <strong>Dzsungel ételek:</strong> A banán, kókusz és kakaóbab csak dzsungelben található. Ha ételkészítési képességed van (vagy v0.9.0+ foglalkozások), különleges receptekhez szükséges!</div>
+<div class="info-box">🍌 <strong>Dzsungel ételek:</strong> A banán, kókusz és kakaóbab csak a dzsungelben található. Ha ételkészítési képességed van (vagy v0.9.0+ foglalkozások), különleges receptekhez szükséges!</div>
 
 </div></div></div>
 </div>
@@ -248,17 +248,17 @@ const sidebarGroups = {
 <div data-lang="hu" id="mushroom">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🍄 Gombaszigetek (Mushroom Island)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>Egyedi, ritka biome — normál mobok nem spawnolnak itt! Azonban a MITE:BE saját egyedi struktúrát ad ide.</p>
+<p>Egyedi, ritka biom — normál szörnyek nem jelennek meg itt! Azonban a MITE:BE saját egyedi struktúrát ad ide.</p>
 
 <table class="compare-table">
   <tr><th>Tulajdonság</th><th>Részletek</th></tr>
-  <tr><td>Mob spawning</td><td><strong>Normál mobok NEM jelennek meg!</strong> — de a MITE Harci Torony igen</td></tr>
-  <tr><td>Egyedi mob</td><td>Mooshroom (gombaborjú) — tejjel fejhető, gombás pörköltet ad</td></tr>
-  <tr><td>Struktúra</td><td><strong>Gombaerdő Harci Torony</strong> — fejlett loot, erős ellenfelek</td></tr>
+  <tr><td>Szörny-megjelenés</td><td><strong>Normál szörnyek NEM jelennek meg!</strong> — de a MITE harcitorony igen</td></tr>
+  <tr><td>Egyedi szörny</td><td>Mooshroom (gombatehén) — tejjel fejhető, gombás pörköltet ad</td></tr>
+  <tr><td>Struktúra</td><td><strong>Gombaerdő harcitorony</strong> — fejlett zsákmány, erős ellenfelek</td></tr>
   <tr><td>Erőforrások</td><td>Óriás gombák, mycelium talaj</td></tr>
 </table>
 
-<div class="warning-box">⚔️ <strong>Harci Torony:</strong> A Gombaszigetek egyedi MITE struktúrája. Erős szörnyekkel, ritka jutalomládákkal. Mithril+ felszerelés szükséges a teljes megtisztításhoz.</div>
+<div class="warning-box">⚔️ <strong>Harcitorony:</strong> A Gombaszigetek egyedi MITE struktúrája. Erős szörnyekkel, ritka jutalomládákkal. Mithril+ felszerelés szükséges a teljes megtisztításhoz.</div>
 
 </div></div></div>
 </div>
@@ -267,17 +267,17 @@ const sidebarGroups = {
 <div data-lang="hu" id="ocean">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌊 Óceán (Ocean)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>Hatalmas vízfelület — a hőmérséklet-rendszer és a fulladás veszélye tja. Horgászatra és víz alatti bányászatra ideális.</p>
+<p>Hatalmas vízfelület — a hőmérséklet-rendszer és a fulladás veszélye kíséri. Horgászatra és víz alatti bányászatra ideális.</p>
 
 <table class="compare-table">
   <tr><th>Tulajdonság</th><th>Részletek</th></tr>
-  <tr><td>Hőmérséklet</td><td>Vízben tartózkodás lehűt — <strong>gyors fagyásveszély hideg biome-ban!</strong></td></tr>
-  <tr><td>Főbb veszély</td><td>Fulladás, hőmérséklet csökkentés, vízalatti ellenfelek</td></tr>
+  <tr><td>Hőmérséklet</td><td>A vízben tartózkodás lehűt — <strong>gyors fagyásveszély hideg biomokban!</strong></td></tr>
+  <tr><td>Fő veszély</td><td>Fulladás, hőmérséklet-csökkenés, vízalatti ellenfelek</td></tr>
   <tr><td>Erőforrások</td><td>Hal, tintahal, korallok, homok, kavics</td></tr>
-  <tr><td>Horgászat</td><td>Horgászat képességgel jobb fogás eséllyel</td></tr>
+  <tr><td>Horgászat</td><td>Horgászat képességgel jobb fogási esély</td></tr>
 </table>
 
-<div class="info-box">🎣 <strong>Horgászat tipp:</strong> Óceán szélén állva a legegyszerűbb halat fogni — nem kell vízbe menni! Vízi légzés bájital kötelező mélytengeri barlangokhoz.</div>
+<div class="info-box">🎣 <strong>Horgászat tipp:</strong> Az óceán szélén állva a legegyszerűbb halat fogni — nem kell vízbe menni! Víz alatti légzés bájital kötelező a mélytengeri barlangokhoz.</div>
 
 </div></div></div>
 </div>
@@ -286,48 +286,48 @@ const sidebarGroups = {
 <div data-lang="hu" id="nether">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🔥 Nether</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>A pokolba belépni komoly felkészülést igényel — de a legfontosabb anyagok (Blaze Rúd, Wither Rózsa, Mithril+ olvasztás) csak innen szerezhetők.</p>
+<p>A Netherbe belépni komoly felkészülést igényel — de a legfontosabb anyagok (Blaze-rúd, Wither-rózsa, Mithril+ olvasztás) csak innen szerezhetők.</p>
 
-<div class="warning-box">🔥 <strong>Nether belépési feltételek:</strong> Mithril Csákány (Obszidián bányászáshoz) + Obszidián Öntőforma + Tűzütő. Tűzállóság bájital erősen ajánlott!</div>
+<div class="warning-box">🔥 <strong>Nether belépési feltételek:</strong> Mithrilcsákány (obszidián bányászáshoz) + obszidián öntőforma + tűzgyújtó eszköz. Tűzállóság bájital erősen ajánlott!</div>
 
 <table class="compare-table">
   <tr><th>Tulajdonság</th><th>Részletek</th></tr>
   <tr><td>Hőmérséklet</td><td>Extrém forró — hőguta veszély</td></tr>
-  <tr><td>Egyedi veszély</td><td>Tűz Elementális: <strong>3% azonnali halál ha éppen égsz!</strong> Tűzállóság kötelező</td></tr>
-  <tr><td>Portál mechanika</td><td>Obszidián portál az alapkőrétegen → Pillager Erőd (v0.9.0)</td></tr>
-  <tr><td>Nether Erőd</td><td>Blaze Rúd (hőfok 4 olvasztáshoz), Wither Rózsa, Nether Wart</td></tr>
-  <tr><td>Blaze</td><td>Blaze Rúd szükséges az Adamantium olvasztásához!</td></tr>
-  <tr><td>Wither Csontváz</td><td>Wither Rózsa dropol — Wither boss idézéséhez</td></tr>
+  <tr><td>Egyedi veszély</td><td>Tűzelementál: <strong>3% azonnali halál ha éppen égsz!</strong> Tűzállóság kötelező</td></tr>
+  <tr><td>Portál mechanika</td><td>Obszidián portál az alapkőrétegen → Pillager-erőd (v0.9.0)</td></tr>
+  <tr><td>Nether erőd</td><td>Blaze-rúd (hőfok 4 olvasztáshoz), Wither-rózsa, Alvilági szemölcs</td></tr>
+  <tr><td>Blaze</td><td>Blaze-rúd szükséges az adamantium olvasztásához!</td></tr>
+  <tr><td>Wither csontváz</td><td>Wither-rózsát dob — Wither boss idézéséhez</td></tr>
 </table>
 
-<div class="info-box">🌋 <strong>Lávás vödör:</strong> Hőfok 3 (Mithril olvasztás) tüzelőanyaga. A Netherben töltsd fel — otthon nincs lávaforrás!</div>
+<div class="info-box">🌋 <strong>Lávavödör:</strong> Hőfok 3 (Mithril olvasztás) tüzelőanyaga. A Netherben töltsd fel — otthon nincs lávaforrás!</div>
 
 </div></div></div>
 </div>
 
 <!-- ════ UNDERGROUND ════ -->
 <div data-lang="hu" id="underground">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⛏ Föld Alatti Világ (Underground)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⛏ Földalatti világ (Underground)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>A MITE:BE legkomplexebb "biome-ja" — Y=0 alatt speciális rétegek vannak saját mobokkal, struktúrákkal és ritka erőforrásokkal.</p>
+<p>A MITE:BE legkomplexebb "biomja" — Y=0 alatt speciális rétegek vannak saját szörnyekkel, struktúrákkal és ritka erőforrásokkal.</p>
 
 <table class="compare-table">
-  <tr><th>Réteg (Y)</th><th>Blokk</th><th>Jellemző mob</th><th>Különlegesség</th></tr>
-  <tr><td>Y 0 – (-30)</td><td>Keménykő</td><td>Revenant, Wight</td><td>Keménykő érc, speciális barlangok</td></tr>
-  <tr><td>Y (-30) – (-60)</td><td>Ókő (Ancient Stone)</td><td>Wight Gárda, Csontváz Ura</td><td>Kristálybarlangok, Mithril érc</td></tr>
-  <tr><td>Y (-60)+</td><td>Ősidők köve</td><td>Revenant, speciális ellenségek</td><td>Adamantium érc, titokzatos romok</td></tr>
+  <tr><th>Réteg (Y)</th><th>Blokk</th><th>Jellemző szörny</th><th>Különlegesség</th></tr>
+  <tr><td>Y 0 – (-30)</td><td>Keménykő</td><td>Holttetem, Lidérc</td><td>Keménykő érc, speciális barlangok</td></tr>
+  <tr><td>Y (-30) – (-60)</td><td>Ősi kő (Ancient Stone)</td><td>Lidércgárda, Csontvázúr</td><td>Kristálybarlangok, mithrilérc</td></tr>
+  <tr><td>Y (-60)+</td><td>Őskő</td><td>Holttetem, speciális ellenségek</td><td>Adamantiumérc, titokzatos romok</td></tr>
 </table>
 
-<div class="warning-box">💀 <strong>Csontváz Ura (Skeleton Lord):</strong> Erős mini-boss a mélyebb rétegekben. Értékes dropok, de nehéz legyőzni. Mithril+ felszerelés szükséges.</div>
+<div class="warning-box">💀 <strong>Csontvázúr:</strong> Erős mini-boss a mélyebb rétegekben. Értékes dropok, de nehéz legyőzni. Mithril+ felszerelés szükséges.</div>
 
-<div class="info-box">🔮 <strong>Föld Alatti Romok (v0.9.0):</strong> Véletlenszerűen generált romok találhatók a barlangrendszerben — jutalomládákkal és Tudáskönyvekkel!</div>
+<div class="info-box">🔮 <strong>Föld alatti romok (v0.9.0):</strong> Véletlenszerűen generált romok találhatók a barlangrendszerben — zsákmányládákkal és tudáskönyvekkel!</div>
 
-<h4>Föld Alatti Bányász Stratégia</h4>
+<h4>Földalatti bányászati stratégia</h4>
 <ul>
-  <li><strong>Keménykő réteg:</strong> Kalapácsos zúzás Keménykő blokkokra → 12 ércdarab</li>
-  <li><strong>Revenant ellen:</strong> Ezüst fegyver hatékony — élőholt-ölő enchantment is segít</li>
-  <li><strong>Wight Gárda ellen:</strong> Gyors, erős — frontális harckerülés ajánlott, csapda stratégia</li>
-  <li><strong>Visszaút:</strong> Jelöld meg az utat! Könnyen elveszhetsz a mélyen</li>
+  <li><strong>Keménykő réteg:</strong> Kalapácsos zúzás keménykő blokkokra → 12 ércdarab</li>
+  <li><strong>Holttetem ellen:</strong> Ezüst fegyver hatékony — élőholt-ölő bűvölés is segít</li>
+  <li><strong>Lidércgárda ellen:</strong> Gyors, erős — a frontális harc kerülése ajánlott, csapda-stratégia</li>
+  <li><strong>Visszaút:</strong> Jelöld meg az utat! Könnyen elveszhetsz a mélyben</li>
 </ul>
 
 </div></div></div>
@@ -352,7 +352,7 @@ const sidebarGroups = {
   <tr><td>🍄 Mushroom Islands</td><td>Moderate</td><td>Combat Tower</td><td>No normal mob spawning</td></tr>
   <tr><td>🌊 Ocean</td><td>Cold</td><td>Freezing, drowning</td><td>Fish, coral reefs</td></tr>
   <tr><td>🔥 Nether</td><td>Extreme heat</td><td>Blaze, Wither Skeleton, lava</td><td>Nether Fortress, Blaze Rod</td></tr>
-  <tr><td>⛏ Underground</td><td>Normal</td><td>Revenant, Wight, Skeleton Lord</td><td>Rare ores, Knowledge Books</td></tr>
+  <tr><td>⛏ Underground World</td><td>Normal</td><td>Revenant, Wight, Skeleton Lord</td><td>Rare ores, Knowledge Books</td></tr>
 </table>
 </div>
 
@@ -479,7 +479,7 @@ const sidebarGroups = {
   <tr><td>Navigation</td><td>Very dense — easy to get lost</td></tr>
 </table>
 
-<div class="info-box">🍌 <strong>Jungle foods:</strong> Bananas, coconuts, and cocoa beans are only found in the Jungle. Needed for special recipes if you have food preparation skill (or v0.9.0+ professions)!</div>
+<div class="info-box">🍌 <strong>Jungle foods:</strong> Bananas, coconuts, and cocoa beans are only found in the jungle. Needed for special recipes if you have food preparation skill (or v0.9.0+ professions)!</div>
 
 </div></div></div>
 </div>
@@ -512,7 +512,7 @@ const sidebarGroups = {
   <tr><td>Temperature</td><td>Being in water cools you — <strong>rapid freezing risk in cold biomes!</strong></td></tr>
   <tr><td>Main danger</td><td>Drowning, temperature loss, underwater enemies</td></tr>
   <tr><td>Resources</td><td>Fish, squid, coral, sand, gravel</td></tr>
-  <tr><td>Fishing</td><td>Better catch rates with the Fishing skill</td></tr>
+  <tr><td>Fishing</td><td>Better catch rates with the fishing skill</td></tr>
 </table>
 
 <div class="info-box">🎣 <strong>Fishing tip:</strong> Standing on the ocean shore is the easiest way to fish — no need to go in the water! Water Breathing potion is mandatory for deep-sea caves.</div>
@@ -525,12 +525,12 @@ const sidebarGroups = {
 
 <p>Entering the Nether requires serious preparation — but the most important materials (Blaze Rod, Wither Rose, Mithril+ smelting) can only be obtained here.</p>
 
-<div class="warning-box">🔥 <strong>Nether entry requirements:</strong> Mithril Pickaxe (for mining Obsidian) + Obsidian Ingot Mold + Flint and Steel. Fire Resistance potion strongly recommended!</div>
+<div class="warning-box">🔥 <strong>Nether entry requirements:</strong> Mithril pickaxe (for mining obsidian) + obsidian ingot mold + flint and steel. Fire Resistance potion strongly recommended!</div>
 
 <table class="compare-table">
   <tr><th>Property</th><th>Details</th></tr>
   <tr><td>Temperature</td><td>Extreme heat — heat stroke risk</td></tr>
-  <tr><td>Unique danger</td><td>Fire Elemental: <strong>3% instant death if you're on fire when it attacks!</strong> Fire Resistance mandatory</td></tr>
+  <tr><td>Unique danger</td><td>Fire Elemental: <strong>3% instant death if you're on fire when it attacks!</strong> Fire resistance mandatory</td></tr>
   <tr><td>Portal mechanic</td><td>Obsidian portal at bedrock level → Pillager Fortress (v0.9.0)</td></tr>
   <tr><td>Nether Fortress</td><td>Blaze Rod (heat level 4 smelting), Wither Rose, Nether Wart</td></tr>
   <tr><td>Blaze</td><td>Blaze Rod required for Adamantium smelting!</td></tr>
@@ -556,11 +556,11 @@ const sidebarGroups = {
 
 <div class="warning-box">💀 <strong>Skeleton Lord:</strong> Strong mini-boss in the deeper layers. Valuable drops but hard to defeat. Mithril+ gear required.</div>
 
-<div class="info-box">🔮 <strong>Underground Ruins (v0.9.0):</strong> Randomly generated ruins are found throughout the cave system — with loot chests and Knowledge Books!</div>
+<div class="info-box">🔮 <strong>Underworld Ruins (v0.9.0):</strong> Randomly generated ruins are found throughout the cave system — with loot chests and Knowledge Books!</div>
 
 <h4>Underground Mining Strategy</h4>
 <ul>
-  <li><strong>Hardstone layer:</strong> War hammer crushing on Hardstone blocks → 12 ore particles</li>
+  <li><strong>Hardstone layer:</strong> War hammer crushing on hardstone blocks → 12 ore particles</li>
   <li><strong>Vs Revenant:</strong> Silver weapons are effective — Smite enchantment also helps</li>
   <li><strong>Vs Wight Guard:</strong> Fast and strong — avoid frontal combat, use trap strategy</li>
   <li><strong>Way back:</strong> Mark your path! It's easy to get lost in the depths</li>
@@ -579,7 +579,7 @@ const sidebarGroups = {
 <table class="compare-table">
   <tr><th>Биом</th><th>Температура</th><th>Главная опасность</th><th>Особенность</th></tr>
   <tr><td>🌾 Равнины</td><td>Умеренная</td><td>Обычный спавн мобов</td><td>Факелы никогда не гаснут!</td></tr>
-  <tr><td>🌲 Лес</td><td>Умеренная</td><td>Сниженная видимость</td><td>Много дерева</td></tr>
+  <tr><td>🌲 Лес</td><td>Умеренная</td><td>Сниженная видимость</td><td>Много древесины</td></tr>
   <tr><td>🌨 Тайга</td><td>Холодная</td><td>Замерзание ночью</td><td>Еловая древесина</td></tr>
   <tr><td>🏜 Пустыня</td><td>Тёплая</td><td>Страж Пустыни, тепловой удар</td><td>Песок и кактус</td></tr>
   <tr><td>🌿 Болото</td><td>Умеренная</td><td>Ведьмы, грязь</td><td>Грязевые пещеры</td></tr>
@@ -602,7 +602,7 @@ const sidebarGroups = {
   <tr><td>Температура</td><td>Умеренная — нет риска замерзания</td></tr>
   <tr><td>Особенность факелов</td><td><strong>Факелы НИКОГДА не гаснут на Равнинах!</strong> Единственный биом, где это так</td></tr>
   <tr><td>Спавн мобов</td><td>Обычный — требуется ночная защита</td></tr>
-  <tr><td>Ресурсы</td><td>Пшеница, лошадь, корова, овца — хороший источник еды</td></tr>
+  <tr><td>Ресурсы</td><td>Пшеница, лошади, коровы и овцы — хороший источник пищи</td></tr>
   <tr><td>Деревни</td><td>Чаще всего появляются на Равнинах!</td></tr>
 </table>
 
@@ -679,7 +679,7 @@ const sidebarGroups = {
   <tr><td>Пещеры</td><td>Грязевые пещеры — заполнены водой, трудно ориентироваться</td></tr>
 </table>
 
-<div class="warning-box">🧪 <strong>Ведьма:</strong> Если она бросит в вас зелье яда, немедленно выпейте молоко (противоядие) или убегите! Яд быстро убивает при низком HP.</div>
+<div class="warning-box">🧪 <strong>Ведьма:</strong> Если она попадёт в вас зельем яда, сразу выпейте молоко или отступайте. При низком запасе здоровья яд убивает очень быстро.</div>
 
 </div></div></div>
 </div>
@@ -710,7 +710,7 @@ const sidebarGroups = {
 <table class="compare-table">
   <tr><th>Свойство</th><th>Подробности</th></tr>
   <tr><td>Температура</td><td>Тёплая и влажная</td></tr>
-  <tr><td>Уникальная опасность</td><td>Ядовитые пауки, варианты крипперов джунглей</td></tr>
+  <tr><td>Уникальная опасность</td><td>Ядовитые пауки и разновидности криперов джунглей</td></tr>
   <tr><td>Ресурсы</td><td><strong>Бамбук</strong>, банан, какао-бобы, кокосовая пальма — уникальная еда</td></tr>
   <tr><td>Навигация</td><td>Очень густые — легко заблудиться</td></tr>
 </table>
@@ -727,7 +727,7 @@ const sidebarGroups = {
 
 <table class="compare-table">
   <tr><th>Свойство</th><th>Подробности</th></tr>
-  <tr><td>Спавн мобов</td><td><strong>Обычные мобы НЕ появляются!</strong> — но Боевая башня MITE появляется</td></tr>
+  <tr><td>Спавн мобов</td><td><strong>Обычные мобы НЕ появляются!</strong> Однако здесь может появиться Боевая башня MITE</td></tr>
   <tr><td>Уникальный моб</td><td>Грибная корова (Mooshroom) — можно доить, даёт грибную похлёбку</td></tr>
   <tr><td>Структура</td><td><strong>Боевая башня Грибного леса</strong> — продвинутый лут, сильные враги</td></tr>
   <tr><td>Ресурсы</td><td>Гигантские грибы, грибница</td></tr>
@@ -751,7 +751,7 @@ const sidebarGroups = {
   <tr><td>Рыбалка</td><td>Лучшие шансы улова с навыком Рыбалки</td></tr>
 </table>
 
-<div class="info-box">🎣 <strong>Совет по рыбалке:</strong> Стоя на берегу океана — самый простой способ рыбачить, не нужно заходить в воду! Зелье водного дыхания обязательно для глубоководных пещер.</div>
+<div class="info-box">🎣 <strong>Совет по рыбалке:</strong> Проще всего рыбачить с берега, не заходя в воду. Для глубоководных пещер обязательно берите зелье водного дыхания.</div>
 
 </div></div></div>
 </div>
@@ -759,17 +759,17 @@ const sidebarGroups = {
 <div data-lang="ru" id="nether-ru">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🔥 Незер (Nether)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>Вход в Незер требует серьёзной подготовки — но самые важные материалы (Стержень блейза, Роза Иссушителя, выплавка мифрила+) можно получить только здесь.</p>
+<p>Поход в Незер требует серьёзной подготовки, но именно там добываются ключевые материалы: Стержень Блейза, Роза Иссушителя и ресурсы для высокотемпературной выплавки.</p>
 
 <div class="warning-box">🔥 <strong>Требования для входа в Незер:</strong> Кирка из мифрила (для добычи обсидиана) + форма для слитков обсидиана + огниво. Зелье огнестойкости настоятельно рекомендуется!</div>
 
 <table class="compare-table">
   <tr><th>Свойство</th><th>Подробности</th></tr>
   <tr><td>Температура</td><td>Экстремальная жара — риск теплового удара</td></tr>
-  <tr><td>Уникальная опасность</td><td>Огненный элементаль: <strong>3% мгновенная смерть если вы горите в момент атаки!</strong> Огнестойкость обязательна</td></tr>
-  <tr><td>Механика портала</td><td>Обсидиановый портал у уровня коренной породы → Крепость Разорителей (v0.9.0)</td></tr>
-  <tr><td>Крепость Незера</td><td>Стержень блейза (выплавка 4 уровня тепла), Роза Иссушителя, Адский гриб</td></tr>
-  <tr><td>Блейз</td><td>Стержень блейза необходим для выплавки адаманта!</td></tr>
+  <tr><td>Уникальная опасность</td><td>Огненный элементаль: <strong>если в момент его удара вы горите, есть 3% шанс мгновенной смерти!</strong> Огнестойкость обязательна</td></tr>
+  <tr><td>Механика портала</td><td>Обсидиановый портал на уровне коренной породы → Крепость Разорителей (v0.9.0)</td></tr>
+  <tr><td>Крепость Незера</td><td>Стержень Блейза (выплавка 4 уровня тепла), Роза Иссушителя, Адский гриб</td></tr>
+  <tr><td>Блейз</td><td>Стержень Блейза необходим для выплавки адаманта!</td></tr>
   <tr><td>Иссушитель-скелет</td><td>Дропает Розу Иссушителя — необходима для призыва босса Иссушителя</td></tr>
 </table>
 
@@ -785,18 +785,18 @@ const sidebarGroups = {
 
 <table class="compare-table">
   <tr><th>Слой (Y)</th><th>Блок</th><th>Мобы</th><th>Особенность</th></tr>
-  <tr><td>Y 0 – (-30)</td><td>Твёрдый камень</td><td>Ревенант, Вайт</td><td>Руда твёрдого камня, особые пещеры</td></tr>
+  <tr><td>Y 0 – (-30)</td><td>Твердокамень</td><td>Ревенант, Вайт</td><td>Твердокаменная руда, особые пещеры</td></tr>
   <tr><td>Y (-30) – (-60)</td><td>Древний камень</td><td>Страж Вайт, Повелитель скелетов</td><td>Хрустальные пещеры, руда мифрила</td></tr>
   <tr><td>Y (-60)+</td><td>Первозданный камень</td><td>Ревенант, особые враги</td><td>Руда адаманта, таинственные руины</td></tr>
 </table>
 
-<div class="warning-box">💀 <strong>Повелитель скелетов (Skeleton Lord):</strong> Сильный мини-босс в глубоких слоях. Ценные дропы, но сложно победить. Требуется снаряжение из мифрила и выше.</div>
+<div class="warning-box">💀 <strong>Повелитель скелетов (Skeleton Lord):</strong> Сильный мини-босс в глубоких слоях. Ценные дропы, но победить его непросто. Требуется снаряжение из мифрила и выше.</div>
 
-<div class="info-box">🔮 <strong>Подземные руины (v0.9.0):</strong> Случайно сгенерированные руины находятся по всей системе пещер — с сундуками с лутом и Книгами знаний!</div>
+<div class="info-box">🔮 <strong>Подземные руины (v0.9.0):</strong> По всей пещерной системе встречаются случайно сгенерированные руины с сундуками и Книгами знаний.</div>
 
 <h4>Стратегия добычи в Подземном мире</h4>
 <ul>
-  <li><strong>Слой твёрдого камня:</strong> Дробление военным молотом по блокам твёрдого камня → 12 частиц руды</li>
+  <li><strong>Слой твердокамня:</strong> Дробление боевым молотом по блокам твердокамня → 12 частиц руды</li>
   <li><strong>Против Ревенанта:</strong> Серебряное оружие эффективно — зачарование «Кара» также помогает</li>
   <li><strong>Против Стража Вайта:</strong> Быстрый и сильный — избегайте лобового боя, используйте стратегию ловушек</li>
   <li><strong>Обратный путь:</strong> Отмечайте дорогу! В глубинах легко потеряться</li>

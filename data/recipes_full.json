@@ -28109,7 +28109,7 @@
     "shaped": true,
     "label": {
       "hu": "Kova Munkaasztal",
-      "en": "Flint Workbench"
+      "en": "Flint Toolbench"
     },
     "pattern": [
       [
@@ -28158,7 +28158,7 @@
     "shaped": true,
     "label": {
       "hu": "Réz Munkaasztal",
-      "en": "Copper Workbench"
+      "en": "Copper Toolbench"
     },
     "pattern": [
       [
@@ -28203,7 +28203,7 @@
     "shaped": true,
     "label": {
       "hu": "Ezüst Munkaasztal",
-      "en": "Silver Workbench"
+      "en": "Silver Toolbench"
     },
     "pattern": [
       [
@@ -28248,7 +28248,7 @@
     "shaped": true,
     "label": {
       "hu": "Arany Munkaasztal",
-      "en": "Gold Workbench"
+      "en": "Gold Toolbench"
     },
     "pattern": [
       [
@@ -28293,7 +28293,7 @@
     "shaped": true,
     "label": {
       "hu": "Vas Munkaasztal",
-      "en": "Iron Workbench"
+      "en": "Iron Toolbench"
     },
     "pattern": [
       [
@@ -28338,7 +28338,7 @@
     "shaped": true,
     "label": {
       "hu": "Keménykő Munkaasztal",
-      "en": "Hardstone Workbench"
+      "en": "Hardstone Toolbench"
     },
     "pattern": [
       [
@@ -28357,7 +28357,7 @@
     ],
     "gridSize": "2x2",
     "tags": [
-      "hardstone-age",
+      "Hardstone-age",
       "station"
     ]
   },
@@ -28383,7 +28383,7 @@
     "shaped": true,
     "label": {
       "hu": "Mithril Munkaasztal",
-      "en": "Mithril Workbench"
+      "en": "Mithril Toolbench"
     },
     "pattern": [
       [
@@ -28428,7 +28428,7 @@
     "shaped": true,
     "label": {
       "hu": "Adamantium Munkaasztal",
-      "en": "Adamantium Workbench"
+      "en": "Adamantium Toolbench"
     },
     "pattern": [
       [

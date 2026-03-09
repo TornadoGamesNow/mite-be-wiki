@@ -11,16 +11,16 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const sidebarGroups = {
   hu: [
     {
-      title: '🧪 Brewing',
+      title: '🧪 Bájitalfőzés',
       links: [
         { href: '#brewing-overview', label: 'Áttekintés' },
         { href: '#brewing-stand', label: 'Főzőállvány' },
-        { href: '#brewer-profession', label: 'Brewer Foglalkozás' },
-        { href: '#cauldron', label: 'Üst Mechanikák' },
-        { href: '#potions', label: 'Bájital Hatások' },
-        { href: '#splash-potions', label: 'Fröccsenő Bájitalok' },
-        { href: '#disenchanting', label: 'Varázstalanító Palack' },
-        { href: '#cheese', label: 'Sajt Készítés' },
+        { href: '#brewer-profession', label: 'Bájitalkészítő szakma' },
+        { href: '#cauldron', label: 'Üst-mechanikák' },
+        { href: '#potions', label: 'Bájital-hatások' },
+        { href: '#splash-potions', label: 'Fröccsenő bájitalok' },
+        { href: '#disenchanting', label: 'Varázstalanító palack' },
+        { href: '#cheese', label: 'Sajtkészítés' },
       ],
     },
     {
@@ -61,7 +61,7 @@ const sidebarGroups = {
       links: [
         { href: '#brewing-overview', label: 'Обзор' },
         { href: '#brewing-stand', label: 'Стойка для зелий' },
-        { href: '#brewer-profession', label: 'Профессия Зельевар' },
+        { href: '#brewer-profession', label: 'Профессия «Зельевар»' },
         { href: '#cauldron', label: 'Механики котла' },
         { href: '#potions', label: 'Эффекты зелий' },
         { href: '#splash-potions', label: 'Взрывные зелья' },
@@ -80,7 +80,7 @@ const sidebarGroups = {
   ],
 };
 ---
-<BaseLayout title="Brewing — MITE: Break Everything Wiki">
+<BaseLayout title="Bájitalfőzés — MITE: Break Everything Wiki">
   <Header />
   <TopNav currentPage="brewing" />
   <div class="container">
@@ -89,34 +89,34 @@ const sidebarGroups = {
 
 <!-- ═══════════════════════════════════════════════ HUNGARIAN ═══ -->
 <div data-lang="hu">
-<h2 id="brewing-overview">🧪 Brewing — Bájitalfőzés</h2>
-<p>A MITE: Break Everything bájitalrendszere a vanilla Minecraft alapjaira épül, de számos egyedi effekttel és az Üst mechanikával egészül ki.</p>
+<h2 id="brewing-overview">🧪 Bájitalfőzés (Brewing)</h2>
+<p>A MITE: Break Everything bájitalrendszere a vanilla Minecraft alapjaira épül, de számos egyedi hatással és az üst-mechanikával egészül ki.</p>
 
-<div class="warning-box">⚠️ <strong>A Brewer foglalkozás jelenleg nincs aktiválva a v0.9.0-ban.</strong> A bájitalfőzés és a sajtkészítés <strong>foglalkozás nélkül is elérhető</strong> az aktuális verzióban — a Brewer foglalkozás rendszer érdekességképp van dokumentálva.</div>
+<div class="warning-box">⚠️ <strong>A bájitalkészítő szakma jelenleg nincs aktiválva a v0.9.0-ban.</strong> A bájitalfőzés és a sajtkészítés <strong>szakma nélkül is elérhető</strong> az aktuális verzióban — a bájitalkészítő rendszer csak érdekességképpen van dokumentálva.</div>
 
-<div class="info">⚗️ <strong>Gyors áttekintés:</strong> Főzőállvány → bájitalok (foglalkozás nélkül is). Üst (Cauldron) → speciális receptek (Folyékony Arany, Higany, Ősi Fém Hátizsák). Sajt = bármilyen fém tejesvödör.</div>
+<div class="info">⚗️ <strong>Gyors áttekintés:</strong> Főzőállvány → bájitalok (szakma nélkül is). Üst (Cauldron) → speciális receptek (Folyékony arany, Higany, Ősi fémhátizsák). Sajt = bármilyen fémtejesvödör.</div>
 
 <!-- ─── Brewing Stand ─── -->
-<h2 id="brewing-stand">Főzőállvány</h2>
-<p>A Főzőállvány elkészítéséhez <strong>Kova Munkaasztal</strong> (vagy magasabb) szükséges:</p>
+<h2 id="brewing-stand">Főzőállvány (Brewing Stand)</h2>
+<p>A főzőállvány elkészítéséhez <strong>kovamunkaasztal</strong> (vagy magasabb) szükséges:</p>
 
 <div class="craft-section">
   <div class="craft-table">
     <div class="craft-grid g3x3">
       <div class="craft-slot empty"></div>
       <div class="craft-slot">
-        <div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#e94560">Pokoli Bot (Blaze Rod)</div><div class="tt-name" data-lang="en" style="color:#e94560">Blaze Rod</div><div class="tt-desc" data-lang="hu">Blaze dobja (Nether)</div><div class="tt-desc" data-lang="en">Dropped by Blaze (Nether)</div></div>
-        <img src="{base}/img/items/blaze_rod.png" alt="" onerror="this.style.opacity=.3">
+        <div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#e94560">Blaze-rúd (Blaze Rod)</div><div class="tt-name" data-lang="en" style="color:#e94560">Blaze Rod</div><div class="tt-desc" data-lang="hu">Blaze dobja (Alvilág)</div><div class="tt-desc" data-lang="en">Dropped by Blaze (Nether)</div></div>
+        <img src={`${base}/img/items/blaze_rod.png`} alt="" onerror="this.style.opacity=.3">
       </div>
       <div class="craft-slot empty"></div>
       <div class="craft-slot">
-        <div class="mc-tooltip"><div class="tt-name" style="color:#aaa">Kő/Cobblestone</div><div class="tt-desc" data-lang="hu">Kavicsos kő</div><div class="tt-desc" data-lang="en">Cobblestone</div></div>
-        <img src="{base}/img/blocks/stone.png" alt="" onerror="this.style.opacity=.3">
+        <div class="mc-tooltip"><div class="tt-name" style="color:#aaa">Zúzott kő (Cobblestone)</div><div class="tt-desc" data-lang="hu">Bányászott kő</div><div class="tt-desc" data-lang="en">Cobblestone</div></div>
+        <img src={`${base}/img/blocks/stone.png`} alt="" onerror="this.style.opacity=.3">
       </div>
       <div class="craft-slot empty"></div>
       <div class="craft-slot">
-        <div class="mc-tooltip"><div class="tt-name" style="color:#aaa">Kő/Cobblestone</div></div>
-        <img src="{base}/img/blocks/stone.png" alt="" onerror="this.style.opacity=.3">
+        <div class="mc-tooltip"><div class="tt-name" style="color:#aaa">Zúzott kő</div></div>
+        <img src={`${base}/img/blocks/stone.png`} alt="" onerror="this.style.opacity=.3">
       </div>
       <div class="craft-slot empty"></div>
       <div class="craft-slot empty"></div>
@@ -135,21 +135,21 @@ const sidebarGroups = {
 
 <p>A bájitalfőzés folyamata:</p>
 <ol>
-  <li><strong>Vízpalack</strong> → Akármelyik vízforrásból (Glass Bottle + víz)</li>
-  <li>Vízpalack a Főzőállványba + <strong>Netheri Szemölcs (Nether Wart)</strong> → Zavaros Bájital (Awkward Potion)</li>
-  <li>Zavaros Bájital + hatóanyag → kész bájital</li>
-  <li>Opcionális: + <strong>Lőpor</strong> → Fröccsenő (Splash) változat</li>
+  <li><strong>Vizespalack</strong> → Akármelyik vízforrásból (üvegpalack + víz)</li>
+  <li>Vizespalack a főzőállványba + <strong>alvilági szemölcs (Nether Wart)</strong> → Zavaros bájital (Awkward Potion)</li>
+  <li>Zavaros bájital + hatóanyag → kész bájital</li>
+  <li>Opcionális: + <strong>lőpor</strong> → Fröccsenő (Splash) változat</li>
 </ol>
 
-<h4 data-lang="hu">1. lépés — Zavaros Bájital alapja</h4>
+<h4 data-lang="hu">1. lépés — Zavaros bájital alapja</h4>
 <BrewingGrid
-  ingredient="Netheri Szemölcs"
+  ingredient="Alvilági szemölcs"
   ingredientImg="img/items/nether_wart.png"
-  inputLabel="Vízpalack × 3"
+  inputLabel="Vizespalack × 3"
   inputImg="img/items/glass_bottle.png"
-  result="Zavaros Bájital (Awkward Potion)"
+  result="Zavaros bájital (Awkward Potion)"
   resultColor="#c0a0ff"
-  hu="Minden bájital receptjének kiindulópontja"
+  hu="Minden bájitalrecept kiindulópontja"
   en="Starting point for every potion recipe"
 />
 
@@ -159,35 +159,35 @@ const sidebarGroups = {
     <BrewingGrid
       ingredient="Cukor"
       ingredientImg="img/items/sugar.png"
-      inputLabel="Zavaros Bájital"
-      result="Sebesség Bájital"
+      inputLabel="Zavaros bájital"
+      result="Gyorsaság bájital"
       resultColor="#88ff88"
     />
   </div>
   <div>
     <BrewingGrid
-      ingredient="Blaze Por"
+      ingredient="Blaze-por"
       ingredientImg="img/items/blaze_powder.png"
-      inputLabel="Zavaros Bájital"
-      result="Erő Bájital"
+      inputLabel="Zavaros bájital"
+      result="Erő bájital"
       resultColor="#ff8844"
     />
   </div>
   <div>
     <BrewingGrid
-      ingredient="Magma Krém"
+      ingredient="Magmakrém"
       ingredientImg="img/items/magma_cream.png"
-      inputLabel="Zavaros Bájital"
-      result="Tűzállóság Bájital"
+      inputLabel="Zavaros bájital"
+      result="Tűzállóság bájital"
       resultColor="#ff4444"
     />
   </div>
   <div>
     <BrewingGrid
-      ingredient="Ghast Könny"
+      ingredient="Ghast-könny"
       ingredientImg="img/items/ghast_tear.png"
-      inputLabel="Zavaros Bájital"
-      result="Regeneráció Bájital"
+      inputLabel="Zavaros bájital"
+      result="Regeneráció bájital"
       resultColor="#ff88cc"
     />
   </div>
@@ -195,172 +195,172 @@ const sidebarGroups = {
 
 <h4 data-lang="hu">3. lépés — Fröccsenő változat (opcionális)</h4>
 <BrewingGrid
-  ingredient="Lőpor (Gunpowder)"
+  ingredient="Lőpor"
   inputLabel="Bármilyen kész bájital"
-  result="Fröccsenő Bájital"
+  result="Fröccsenő bájital"
   resultColor="#ffcc44"
   hu="Dobható — ellenfelekre vagy szövetségesekre"
   en="Throwable — at enemies or allies"
 />
 
 <!-- ─── Brewer Profession ─── -->
-<h2 id="brewer-profession">Brewer Foglalkozás</h2>
-<div class="warning-box">⚠️ <strong>A foglalkozások jelenleg nincsenek aktiválva a v0.9.0-ban.</strong> Ez az adat a játék fájljaiban megtalálható, de valószínűleg még nem készült el teljesen — érdekességképp szerepel a wikiben.</div>
+<h2 id="brewer-profession">Bájitalkészítő szakma</h2>
+<div class="warning-box">⚠️ <strong>A szakmák jelenleg nincsenek aktiválva a v0.9.0-ban.</strong> Ez az adat a játék fájljaiban megtalálható, de valószínűleg még nem készült el teljesen — érdekességképp szerepel a wikiben.</div>
 
-<p>A Brewer foglalkozás előnyei:</p>
+<p>A bájitalkészítő szakma előnyei:</p>
 <ul>
-  <li>🧪 Bájitalfőzés (Brewing Stand használata)</li>
-  <li>🧀 Sajt készítése (Keménykő Tejesvödörből)</li>
-  <li>⚗️ Speciális Üst receptek elérése</li>
-  <li>💊 Varázstalanító Palack elkészítése</li>
+  <li>🧪 Bájitalfőzés (főzőállvány használata)</li>
+  <li>🧀 Sajtkészítés (keménykő tejesvödörből)</li>
+  <li>⚗️ Speciális üst-receptek elérése</li>
+  <li>💊 Varázstalanító palack elkészítése</li>
 </ul>
 
 <table>
-  <tr><th>Szint</th><th>XP szükséglet</th><th>Hatás</th></tr>
-  <tr><td>1</td><td>0</td><td>Alapszintű bájitalok (Erő I, Sebesség I, Regeneráció I...)</td></tr>
-  <tr><td>2</td><td>~500 XP</td><td>Bájital II szintek elérhetők; splash potions hatékonyabb</td></tr>
+  <tr><th>Szint</th><th>XP-szükséglet</th><th>Hatás</th></tr>
+  <tr><td>1</td><td>0</td><td>Alapszintű bájitalok (Erő I, Gyorsaság I, Regeneráció I...)</td></tr>
+  <tr><td>2</td><td>~500 XP</td><td>Bájital II szintek elérhetők; a fröccsenő bájitalok hatékonyabbak</td></tr>
   <tr><td>3</td><td>~2000 XP</td><td>Bájital III szintek; hosszabb időtartam</td></tr>
-  <tr><td>4</td><td>~8000 XP</td><td>Bájital IV szintek (max erő/sebesség); sajt 5× hatékonyabb recept</td></tr>
+  <tr><td>4</td><td>~8000 XP</td><td>Bájital IV szintek (max. erő/gyorsaság); 5× hatékonyabb sajt-recept</td></tr>
 </table>
 
-<div class="tip">💡 <strong>Tipp:</strong> Brewer és Blacksmith/Enchanter kombinálás nem lehetséges — csak 1 foglalkozás választható. Ha harcra fókuszálsz, fontold meg, hogy Brewer helyett Enchanterrel indul-e a karaktered.</div>
+<div class="tip">💡 <strong>Tipp:</strong> A bájitalkészítő és a kovács/bűvölő szakmák kombinálása nem lehetséges — csak 1 szakma választható. Ha harcra fókuszálsz, fontold meg, hogy bájitalkészítő helyett bűvölővel indulsz-e.</div>
 
 <!-- ─── Cauldron ─── -->
-<h2 id="cauldron">Üst (Cauldron) Mechanikák</h2>
-<p>Az Üst nem csak vizet tárol — egyedi MITE receptek forrása, amelyek normál Főzőállványon NEM készíthetők el.</p>
+<h2 id="cauldron">Üst (Cauldron) mechanikák</h2>
+<p>Az üst nem csak vizet tárol — egyedi MITE-receptek forrása, amelyek normál főzőállványon NEM készíthetők el.</p>
 
-<div class="info">ℹ️ Az Üst <strong>Vas Munkaasztalon</strong> craftolható (blacksmithing skill szükséges): 7× Vas Rúd, U alakban (3×3 rács).</div>
+<div class="info">ℹ️ Az üst <strong>vasmunkaasztalon</strong> készíthető el (kovácsmesterség képesség szükséges): 7× vasrúd, U alakban (3×3 rács).</div>
 
 <table>
   <tr><th>Recept neve</th><th>Folyamat</th><th>Eredmény</th><th>Felhasználás</th></tr>
   <tr>
-    <td><strong style="color:var(--gold)">Folyékony Arany</strong></td>
-    <td>Üst lávaforrás alá helyezve + Arany érc beledobás → 10 mp várakozás</td>
+    <td><strong style="color:var(--gold)">Folyékony arany</strong></td>
+    <td>Üst lávaforrás alá helyezve + aranyérc beledobása → 10 mp várakozás</td>
     <td>Folyékony arany az üstben</td>
-    <td>4× Aranyalma (Golden Apple) készíthető belőle</td>
+    <td>4× aranyalma (Golden Apple) készíthető belőle</td>
   </tr>
   <tr>
-    <td><strong style="color:var(--silver)">Folyékony Higany</strong></td>
-    <td>Higany érc + Láva az üstben → olvasztás</td>
+    <td><strong style="color:var(--silver)">Folyékony higany</strong></td>
+    <td>Higanyérc + láva az üstben → olvasztás</td>
     <td>Folyékony higany (vödörrel szedhető)</td>
-    <td>Ötvözési alapanyag; Ősi Fém Hátizsák recepthez</td>
+    <td>Ötvözési alapanyag; ősifém-hátizsák receptjéhez</td>
   </tr>
   <tr>
-    <td><strong style="color:var(--ancient)">Ősi Fém Hátizsák</strong></td>
-    <td>Bőr Hátizsák + 4× Ősi Fém Rúd higanyba → 30 mp várakozás</td>
-    <td>Ősi Fém Hátizsák</td>
-    <td>Több tárgy slot, tartósabb hátizsák</td>
+    <td><strong style="color:var(--ancient)">Ősifém-hátizsák</strong></td>
+    <td>Bőrhátizsák + 4× ősifém-rúd a higanyba → 30 mp várakozás</td>
+    <td>Ősifém-hátizsák</td>
+    <td>Több tárgyhely, tartósabb hátizsák</td>
   </tr>
 </table>
 
-<div class="tip">💡 <strong>Higany forrás:</strong> Mocsár biome-ban található Higany érc (Y 0–40). Olvasztáshoz @3 kemence (Obszidián Kemence) szükséges!</div>
+<div class="tip">💡 <strong>Higanyforrás:</strong> A mocsár biomban található higanyérc (Y 0–40). Olvasztásához @3 kemence (obszidiánkemence) szükséges!</div>
 
 <!-- ─── Potion Effects ─── -->
-<h2 id="potions">Bájital Hatások</h2>
-<p>A MITE: Break Everything 20 különböző bájital effektet tartalmaz, köztük vanilla és egyedi MITE hatásokat:</p>
+<h2 id="potions">Bájital-hatások</h2>
+<p>A MITE: Break Everything 20 különböző bájitalhatást tartalmaz, köztük vanilla és egyedi MITE-hatásokat:</p>
 
 <table>
   <tr><th>Bájital / Hatás</th><th>Típus</th><th>Leírás</th><th>Szintek</th></tr>
-  <tr><td><strong>Sebesség</strong></td><td>Pozitív</td><td>Gyorsabb mozgás</td><td>I–IV</td></tr>
-  <tr><td><strong>Erő</strong></td><td>Pozitív</td><td>Több ütés sebzés</td><td>I–IV</td></tr>
+  <tr><td><strong>Gyorsaság</strong></td><td>Pozitív</td><td>Gyorsabb mozgás</td><td>I–IV</td></tr>
+  <tr><td><strong>Erő</strong></td><td>Pozitív</td><td>Több ütési sebzés</td><td>I–IV</td></tr>
   <tr><td><strong>Regeneráció</strong></td><td>Pozitív</td><td>Folyamatos gyógyulás</td><td>I–IV</td></tr>
-  <tr><td><strong>Gyógyítás</strong></td><td>Pozitív (azonnali)</td><td>Azonnali HP visszatöltés</td><td>I–II</td></tr>
-  <tr><td><strong>Tűzállóság</strong></td><td>Pozitív</td><td>Tűz és láva nem sebez</td><td>I</td></tr>
-  <tr><td><strong>Láva Ellenállás</strong> ⭐</td><td>Pozitív (MITE)</td><td>Speciális MITE effekt — láva sebzés csökkentés</td><td>I</td></tr>
-  <tr><td><strong>Éjszakai Látás</strong></td><td>Pozitív</td><td>Teljes látás sötétben</td><td>I</td></tr>
-  <tr><td><strong>Vízben Való Légzés</strong></td><td>Pozitív</td><td>Víz alatti lélegzés korlátlanul</td><td>I</td></tr>
-  <tr><td><strong>Láthatatlanság</strong></td><td>Pozitív</td><td>Szörnyek nem látnak (kivétel: HIM)</td><td>I</td></tr>
-  <tr><td><strong>Sebzés (Harming)</strong></td><td>Negatív/Fegyver</td><td>Azonnali sebzés — Tűz Elementális ellen kiváló!</td><td>I–II</td></tr>
+  <tr><td><strong>Gyógyítás</strong></td><td>Pozitív (azonnali)</td><td>Azonnali életerő-visszatöltés</td><td>I–II</td></tr>
+  <tr><td><strong>Tűzállóság</strong></td><td>Pozitív</td><td>A tűz és a láva nem sebez</td><td>I</td></tr>
+  <tr><td><strong>Láva-ellenállás</strong> ⭐</td><td>Pozitív (MITE)</td><td>Speciális MITE-hatás — láva-sebzés csökkentése</td><td>I</td></tr>
+  <tr><td><strong>Éjjellátás</strong></td><td>Pozitív</td><td>Teljes látás sötétben</td><td>I</td></tr>
+  <tr><td><strong>Víz alatti légzés</strong></td><td>Pozitív</td><td>Korlátlan légzés a víz alatt</td><td>I</td></tr>
+  <tr><td><strong>Láthatatlanság</strong></td><td>Pozitív</td><td>A szörnyek nem látnak (kivétel: HIM)</td><td>I</td></tr>
+  <tr><td><strong>Sértés (Harming)</strong></td><td>Negatív/Fegyver</td><td>Azonnali sebzés — tűzelementál ellen kiváló!</td><td>I–II</td></tr>
   <tr><td><strong>Mérgezés</strong></td><td>Negatív</td><td>Folyamatos mérgezési sebzés</td><td>I–IV</td></tr>
   <tr><td><strong>Gyengeség</strong></td><td>Negatív</td><td>Csökkentett ütési sebzés</td><td>I–II</td></tr>
-  <tr><td><strong>Lassúság</strong></td><td>Negatív</td><td>Lassabb mozgás</td><td>I–II</td></tr>
-  <tr><td><strong>Sorvadás (Wither)</strong></td><td>Negatív</td><td>Wither betegség hatás</td><td>I–II</td></tr>
-  <tr><td><strong>Korrózió</strong> ⭐</td><td>Negatív (MITE)</td><td>Felszerelés tartósság csökkentés</td><td>I</td></tr>
-  <tr><td><strong>Alvászavar</strong> ⭐</td><td>Negatív (MITE)</td><td>Alvás nem lehetséges az effekt alatt</td><td>I</td></tr>
-  <tr><td><strong>Hideg</strong> ⭐</td><td>Negatív (MITE)</td><td>Fagyás — melegítsd magad tűzzel!</td><td>I</td></tr>
-  <tr><td><strong>Napszúrás</strong> ⭐</td><td>Negatív (MITE)</td><td>Hőség hatás</td><td>I</td></tr>
+  <tr><td><strong>Lassítás</strong></td><td>Negatív</td><td>Lassabb mozgás</td><td>I–II</td></tr>
+  <tr><td><strong>Sorvadás (Wither)</strong></td><td>Negatív</td><td>Sorvadásos betegség hatás</td><td>I–II</td></tr>
+  <tr><td><strong>Korrózió</strong> ⭐</td><td>Negatív (MITE)</td><td>Felszerelés tartósságának csökkentése</td><td>I</td></tr>
+  <tr><td><strong>Alvászavar</strong> ⭐</td><td>Negatív (MITE)</td><td>Az alvás nem lehetséges a hatás alatt</td><td>I</td></tr>
+  <tr><td><strong>Fagyás</strong> ⭐</td><td>Negatív (MITE)</td><td>Fagyás — melegítsd magad tűzzel!</td><td>I</td></tr>
+  <tr><td><strong>Napszúrás</strong> ⭐</td><td>Negatív (MITE)</td><td>Hőség-hatás</td><td>I</td></tr>
   <tr><td><strong>Paralízis</strong> ⭐</td><td>Negatív (MITE)</td><td>Teljes mozgásképtelenség</td><td>I</td></tr>
   <tr><td><strong>Sebezhetőség</strong> ⭐</td><td>Negatív (MITE)</td><td>Több bekapott sebzés minden forrásból</td><td>I</td></tr>
 </table>
-<p style="font-size:.82em;color:var(--text2)">⭐ = MITE egyedi effekt, vanilla Minecraft-ban nem szerepel</p>
+<p style="font-size:.82em;color:var(--text2)">⭐ = MITE-egyedi hatás, a vanilla Minecraftban nem szerepel</p>
 
-<h3>Hatóanyagok → Effektek</h3>
+<h3>Hatóanyagok → Hatások</h3>
 <table>
-  <tr><th>Hatóanyag</th><th>Bázis effekt</th><th>Megjegyzés</th></tr>
-  <tr><td>Nether Wart (Pokoli Szemölcs)</td><td>Zavaros bájital (alap)</td><td>Minden recept kezdete</td></tr>
-  <tr><td>Cukor</td><td>Sebesség</td><td>–</td></tr>
-  <tr><td>Blaze Por</td><td>Erő</td><td>Blaze Rod-ból</td></tr>
-  <tr><td>Ghast Könny</td><td>Regeneráció</td><td>Ghast dropja</td></tr>
-  <tr><td>Magma Krém</td><td>Tűzállóság</td><td>Magma Cube dropja</td></tr>
-  <tr><td>Arany Sárgarépa</td><td>Éjszakai Látás</td><td>–</td></tr>
+  <tr><th>Hatóanyag</th><th>Bázishatás</th><th>Megjegyzés</th></tr>
+  <tr><td>Alvilági szemölcs (Nether Wart)</td><td>Zavaros bájital (alap)</td><td>Minden recept kezdete</td></tr>
+  <tr><td>Cukor</td><td>Gyorsaság</td><td>–</td></tr>
+  <tr><td>Blaze-por</td><td>Erő</td><td>Blaze-rúdból</td></tr>
+  <tr><td>Ghast-könny</td><td>Regeneráció</td><td>Ghast dobja</td></tr>
+  <tr><td>Magmakrém</td><td>Tűzállóság</td><td>Magmakocka dobja</td></tr>
+  <tr><td>Arany sárgarépa</td><td>Éjjellátás</td><td>–</td></tr>
   <tr><td>Pókszem</td><td>Mérgezés</td><td>–</td></tr>
-  <tr><td>Puffer Hal</td><td>Vízben Légzés</td><td>–</td></tr>
-  <tr><td>Csillogó Dinnyeszelet</td><td>Gyógyítás</td><td>–</td></tr>
-  <tr><td>Fermentált Pókszem</td><td>Gyengeség / Sebzés</td><td>Negatív effektekhez</td></tr>
-  <tr><td>+ Szikkasztó Lőpor (Gunpowder)</td><td>Fröccsenő változat</td><td>Minden bájitalra alkalmazható</td></tr>
-  <tr><td>+ Redstone</td><td>Hosszabb időtartam</td><td>Effekt szintet nem növeli</td></tr>
-  <tr><td>+ Glistering Melon / Blaze Por (szint)</td><td>Erősebb hatás (II)</td><td>Redstone VAGY Glowstone — nem mindkettő!</td></tr>
+  <tr><td>Gömbhal</td><td>Víz alatti légzés</td><td>–</td></tr>
+  <tr><td>Csillogó dinnyeszelet</td><td>Gyógyítás</td><td>–</td></tr>
+  <tr><td>Fermentált pókszem</td><td>Gyengeség / Sértés</td><td>Negatív hatásokhoz</td></tr>
+  <tr><td>+ Lőpor</td><td>Fröccsenő változat</td><td>Minden bájitalra alkalmazható</td></tr>
+  <tr><td>+ Vöröskő</td><td>Hosszabb időtartam</td><td>A hatás szintjét nem növeli</td></tr>
+  <tr><td>+ Izzókő-por</td><td>Erősebb hatás (II)</td><td>Vöröskő VAGY izzókő — nem mindkettő!</td></tr>
 </table>
 
 <!-- ─── Splash ─── -->
-<h2 id="splash-potions">Fröccsenő Bájitalok (Splash Potions)</h2>
-<p>A legtöbb bájital Fröccsenő változatban is elkészíthető — a kész bájitalhoz <strong>Lőport (Gunpowder)</strong> adj a Főzőállványban.</p>
+<h2 id="splash-potions">Fröccsenő bájitalok (Splash Potions)</h2>
+<p>A legtöbb bájital fröccsenő változatban is elkészíthető — a kész bájitalhoz <strong>lőport (Gunpowder)</strong> adj a főzőállványban.</p>
 
-<div class="tip">💡 Fröccsenő bájitalok dobhatók ellenfelekre (Sebzés, Lassúság, Gyengeség) VAGY szövetségesekre (Gyógyítás, Erő). A Harming Splash különösen hatékony a tüzet nem félő Tűz Elementális ellen!</div>
+<div class="tip">💡 A fröccsenő bájitalok dobhatók ellenfelekre (Sértés, Lassítás, Gyengeség) VAGY szövetségesekre (Gyógyítás, Erő). A sértés-bájital különösen hatékony a tüzet nem félő tűzelementál ellen!</div>
 
 <table>
   <tr><th>Stratégia</th><th>Bájital</th><th>Célpont</th></tr>
-  <tr><td>Erős boss harc</td><td>Erő IV Splash</td><td>Magad</td></tr>
-  <tr><td>Menekülés</td><td>Sebesség IV Splash</td><td>Magad</td></tr>
-  <tr><td>Tűz Elementális</td><td>Harming Splash</td><td>Ellenség (nem sebzi magát!)</td></tr>
-  <tr><td>Mérgezés tömbök</td><td>Mérgezés IV Splash</td><td>Szörny csoportok</td></tr>
+  <tr><td>Erős boss-harc</td><td>Erő IV Splash</td><td>Saját magad</td></tr>
+  <tr><td>Menekülés</td><td>Gyorsaság IV Splash</td><td>Saját magad</td></tr>
+  <tr><td>Tűzelementál</td><td>Sértés Splash</td><td>Ellenség (nem sebzi magát!)</td></tr>
+  <tr><td>Szörnycsoportok</td><td>Mérgezés IV Splash</td><td>Szörnycsoportok</td></tr>
   <tr><td>Sérült szövetséges</td><td>Gyógyítás II Splash</td><td>Partner NPC</td></tr>
 </table>
 
 <!-- ─── Disenchanting ─── -->
-<h2 id="disenchanting">Varázstalanító Palack (Disenchanting Bottle)</h2>
-<p>Egyedi MITE bájital amelyet <strong>Főzőállványon</strong> kell elkészíteni (Brewer kell). Recept: Pokoli Szemölcs + Szén → Vízpalackokon.</p>
+<h2 id="disenchanting">Varázstalanító palack (Disenchanting Bottle)</h2>
+<p>Egyedi MITE-bájital, amelyet <strong>főzőállványon</strong> kell elkészíteni (szakma szükséges). Recept: alvilági szemölcs + szén → vizespalackokon.</p>
 
 <BrewingGrid
-  ingredient="Nether Wart + Szén"
+  ingredient="Alvilági szemölcs + szén"
   ingredientImg="img/items/nether_wart.png"
-  inputLabel="Vízpalack × 3"
+  inputLabel="Vizespalack × 3"
   inputImg="img/items/glass_bottle.png"
-  result="Varázstalanító Palack"
+  result="Varázstalanító palack"
   resultColor="#7ec8e3"
-  hu="Varázstalanító Palack"
+  hu="Varázstalanító palack"
   en="Disenchanting Bottle"
 />
 
 <p><strong>Hatásai:</strong></p>
 <ul>
-  <li>✅ Bűvölések eltávolítása tárgyakról (az XP visszakapható!)</li>
-  <li>✅ Aktív bájital hatások törlése saját magadról</li>
-  <li>✅ Boszorkány átkok eltávolítása</li>
-  <li>⚠️ Tárgy minőségét (Quality) NEM érinti</li>
+  <li>✅ Bűvölések eltávolítása tárgyakról (a tapasztalati pont visszakapható!)</li>
+  <li>✅ Aktív bájitalhatások törlése saját magadról</li>
+  <li>✅ Boszorkányátkok eltávolítása</li>
+  <li>⚠️ A tárgy minőségét (Quality) NEM érinti</li>
 </ul>
 
-<div class="tip">💡 Rendkívül hasznos ha rossz bűvölést kaptál az Enchanting Table-nél, vagy ha Boszorkány megátkozta a felszerelésed!</div>
+<div class="tip">💡 Rendkívül hasznos, ha rossz bűvölést kaptál a bűvölőasztalnál, vagy ha egy boszorkány megátkozta a felszerelésedet!</div>
 
 <!-- ─── Cheese ─── -->
-<h2 id="cheese">Sajt Készítés</h2>
-<p><strong>Brewer skill</strong> szükséges. Bármilyen anyagú tejesvödör használható — Keménykő, Réz, Ezüst, Arany, Vas, Ős Fém, Mithril, Adamantium. A vödör szintje határozza meg, melyik munkaasztalon craftolható a sajt.</p>
+<h2 id="cheese">Sajtkészítés</h2>
+<p><strong>Bájitalkészítő képesség</strong> szükséges. Bármilyen anyagú tejesvödör használható — keménykő, réz, ezüst, arany, vas, ősifém, mithril, adamantium. A vödör szintje határozza meg, melyik munkaasztalon készíthető el a sajt.</p>
 
-<div class="info">ℹ️ A tehenek fejéséhez az adott anyagú vödör kell (pl. Keménykő Vödör a Keménykő Tehénhez). A receptek <strong>6400 nehézség/db</strong> értékkel dolgoznak, függetlenül a vödör anyagától.</div>
+<div class="info">ℹ️ A tehenek fejéséhez az adott anyagú vödör kell (pl. keménykő vödör a keménykő tehénhez). A receptek <strong>6400 nehézség/db</strong> értékkel dolgoznak, függetlenül a vödör anyagától.</div>
 
 <table>
   <tr><th>Vödörszám</th><th>Eredmény</th><th>Nehézség/db</th><th>Hatékonyság</th></tr>
-  <tr><td>1× vödör</td><td>1× Sajt</td><td style="color:var(--accent)">6 400</td><td>Alap (1×)</td></tr>
-  <tr><td>2× vödör</td><td>2× Sajt</td><td style="color:var(--gold)">3 200/db</td><td>2× hatékonyabb</td></tr>
-  <tr><td>3× vödör</td><td>3× Sajt</td><td style="color:var(--gold)">2 133/db</td><td>3× hatékonyabb</td></tr>
-  <tr><td>4× vödör</td><td>4× Sajt</td><td style="color:var(--green)">1 600/db</td><td>4× hatékonyabb</td></tr>
-  <tr><td>5× vödör</td><td>5× Sajt</td><td style="color:var(--green)">1 280/db</td><td>5× hatékonyabb</td></tr>
-  <tr><td>9× vödör</td><td>9× Sajt</td><td style="color:var(--green)">711/db</td><td style="color:var(--green)">9× hatékonyabb (MAX)</td></tr>
+  <tr><td>1× vödör</td><td>1× sajt</td><td style="color:var(--accent)">6 400</td><td>Alap (1×)</td></tr>
+  <tr><td>2× vödör</td><td>2× sajt</td><td style="color:var(--gold)">3 200/db</td><td>2× hatékonyabb</td></tr>
+  <tr><td>3× vödör</td><td>3× sajt</td><td style="color:var(--gold)">2 133/db</td><td>3× hatékonyabb</td></tr>
+  <tr><td>4× vödör</td><td>4× sajt</td><td style="color:var(--green)">1 600/db</td><td>4× hatékonyabb</td></tr>
+  <tr><td>5× vödör</td><td>5× sajt</td><td style="color:var(--green)">1 280/db</td><td>5× hatékonyabb</td></tr>
+  <tr><td>9× vödör</td><td>9× sajt</td><td style="color:var(--green)">711/db</td><td style="color:var(--green)">9× hatékonyabb (MAX)</td></tr>
 </table>
 
-<p><strong>Sajt tápértéke:</strong> Az egyik legjobb étel MITE-ben — magas jóllakottság és szaturáció. Különösen hasznos hosszú expedíciókon.</p>
+<p><strong>A sajt tápértéke:</strong> Az egyik legjobb étel a MITE-ben — magas jóllakottságot és telítettséget ad. Különösen hasznos hosszú expedíciókon.</p>
 
-<div class="tip">💡 <strong>Pro tipp:</strong> Mindig tegyél be annyi vödröt amennyit csak tudsz — a receptek 9 vödörig skálázódnak, és minden extra vödör csökkenti a nehézség/db arányt!</div>
+<div class="tip">💡 <strong>Pro tipp:</strong> Mindig tegyél be annyi vödröt, amennyit csak tudsz — a receptek 9 vödörig skálázódnak, és minden extra vödör jelentősen csökkenti a darabonkénti nehézséget!</div>
 
 </div><!-- end hu -->
 
@@ -397,7 +397,7 @@ const sidebarGroups = {
   inputImg="img/items/glass_bottle.png"
   result="Awkward Potion"
   resultColor="#c0a0ff"
-  hu="Minden bájital receptjének kiindulópontja"
+  hu="Minden bájitalrecept kiindulópontja"
   en="Starting point for every potion recipe"
 />
 
@@ -458,7 +458,7 @@ const sidebarGroups = {
 <p>Brewer profession benefits:</p>
 <ul>
   <li>🧪 Potion brewing (Brewing Stand access)</li>
-  <li>🧀 Cheese crafting (from Hardstone Milk Buckets)</li>
+  <li>🧀 Cheese crafting (from metal milk buckets)</li>
   <li>⚗️ Special Cauldron recipes</li>
   <li>💊 Disenchanting Bottle crafting</li>
 </ul>
@@ -576,7 +576,7 @@ const sidebarGroups = {
   inputImg="img/items/glass_bottle.png"
   result="Disenchanting Bottle"
   resultColor="#7ec8e3"
-  hu="Varázstalanító Palack"
+  hu="Varázstalanító palack"
   en="Disenchanting Bottle"
 />
 
@@ -613,36 +613,36 @@ const sidebarGroups = {
 <!-- ═══════════════════════════════════════════════ RUSSIAN ═══ -->
 <div data-lang="ru">
 <h2 id="brewing-overview">🧪 Зельеварение</h2>
-<p>Система зелий MITE: Break Everything построена на основе ванильного Minecraft, расширенная уникальными эффектами и механикой Котла.</p>
+<p>Система зелий в MITE:BE построена на основе ванильного Minecraft и дополнена уникальными эффектами и механиками котла.</p>
 
-<div class="warning-box">⚠️ <strong>Профессия Зельевар в v0.9.0 не активирована.</strong> Зельеварение и приготовление сыра <strong>доступны без профессии</strong> в текущей версии — система профессий задокументирована для ознакомления.</div>
+<div class="warning-box">⚠️ <strong>Профессия «Зельевар» в v0.9.0 не активирована.</strong> Зельеварение и приготовление сыра <strong>доступны без профессии</strong> в текущей версии — блок про профессии оставлен здесь только для справки.</div>
 
-<div class="info">⚗️ <strong>Краткий обзор:</strong> Стойка для зелий → зелья (профессия не нужна). Котёл → особые рецепты (Жидкое золото, Ртуть, Рюкзак из Древнего металла). Сыр = любое металлическое ведро с молоком.</div>
+<div class="info">⚗️ <strong>Краткий обзор:</strong> Стойка для зелий → обычные зелья. Котёл → особые рецепты (жидкое золото, ртуть, рюкзак из Древнего металла). Сыр готовится из любого металлического ведра с молоком.</div>
 
 <h2 id="brewing-stand">Стойка для зелий</h2>
-<p>Для крафта Стойки для зелий нужен <strong>Кремнёвый верстак</strong> (или выше):</p>
+<p>Для создания стойки для зелий нужен <strong>Кремнёвый верстак</strong> или верстак более высокого тира:</p>
 <ul>
-  <li><strong>Ингредиенты:</strong> 1× Стержень Пламенника + 2× Булыжник</li>
+  <li><strong>Ингредиенты:</strong> 1× Стержень Блейза + 2× Булыжник</li>
   <li><strong>Станция:</strong> Кремнёвый верстак или выше</li>
 </ul>
 
 <p>Процесс зельеварения:</p>
 <ol>
-  <li><strong>Бутылка с водой</strong> → любой источник воды (Стеклянная бутылка + вода)</li>
-  <li>Бутылка с водой в Стойку + <strong>Адский гриб (Nether Wart)</strong> → Неловкое зелье</li>
+  <li><strong>Бутылка с водой</strong> → наберите воду в стеклянную бутылку из любого источника</li>
+  <li>Поместите бутылку с водой в стойку и добавьте <strong>Адский гриб (Nether Wart)</strong> → получится Неловкое зелье</li>
   <li>Неловкое зелье + ингредиент → готовое зелье</li>
-  <li>Опционально: + <strong>Порох</strong> → Взрывной вариант</li>
+  <li>По желанию: добавьте <strong>Порох</strong> → получится взрывной вариант</li>
 </ol>
 
-<h2 id="brewer-profession">Профессия Зельевар</h2>
+<h2 id="brewer-profession">Профессия «Зельевар»</h2>
 <div class="warning-box">⚠️ <strong>Профессии в v0.9.0 не активированы.</strong> Данные существуют в файлах игры, но функция не готова — приведено для ознакомления.</div>
 
-<p>Преимущества профессии Зельевар:</p>
+<p>Что должна была бы открывать профессия «Зельевар»:</p>
 <ul>
   <li>🧪 Варка зелий (доступ к Стойке для зелий)</li>
   <li>🧀 Приготовление сыра (из металлических вёдер с молоком)</li>
-  <li>⚗️ Особые рецепты Котла</li>
-  <li>💊 Крафт Бутылки расчарования</li>
+  <li>⚗️ Особые рецепты котла</li>
+  <li>💊 Создание бутылки расчарования</li>
 </ul>
 
 <table>
@@ -650,31 +650,31 @@ const sidebarGroups = {
   <tr><td>1</td><td>0</td><td>Базовые зелья (Сила I, Скорость I, Регенерация I...)</td></tr>
   <tr><td>2</td><td>~500 XP</td><td>Зелья II уровня; более эффективные взрывные зелья</td></tr>
   <tr><td>3</td><td>~2000 XP</td><td>Зелья III уровня; увеличенная длительность</td></tr>
-  <tr><td>4</td><td>~8000 XP</td><td>Зелья IV уровня (макс. сила/скорость); рецепт сыра 5×</td></tr>
+  <tr><td>4</td><td>~8000 XP</td><td>Зелья IV уровня (макс. сила/скорость); рецепты сыра до 5×</td></tr>
 </table>
 
 <h2 id="cauldron">Механики котла</h2>
-<p>Котёл не только для хранения воды — источник уникальных рецептов MITE, которые НЕЛЬЗЯ приготовить на Стойке.</p>
+<p>Котёл нужен не только для хранения воды: через него готовятся уникальные рецепты MITE, недоступные на стойке для зелий.</p>
 
 <table>
   <tr><th>Рецепт</th><th>Процесс</th><th>Результат</th><th>Применение</th></tr>
   <tr>
     <td><strong style="color:var(--gold)">Жидкое золото</strong></td>
-    <td>Котёл под источником лавы + бросить Золотую руду → ждать 10 сек</td>
+    <td>Поставьте котёл под источник лавы, бросьте золотую руду и подождите 10 сек</td>
     <td>Жидкое золото в котле</td>
-    <td>Скрафтить 4× Золотых яблока</td>
+    <td>Используется для создания 4× золотых яблок</td>
   </tr>
   <tr>
     <td><strong style="color:var(--silver)">Жидкая ртуть</strong></td>
-    <td>Ртутная руда + Лава в котле → плавка</td>
+    <td>Ртутная руда + лава в котле → плавка</td>
     <td>Жидкая ртуть (набрать ведром)</td>
     <td>Сплавной ингредиент; рецепт Рюкзака из Древнего металла</td>
   </tr>
   <tr>
     <td><strong style="color:var(--ancient)">Рюкзак из Древнего металла</strong></td>
-    <td>Кожаный рюкзак + 4× Слиток Древнего металла в ртуть → ждать 30 сек</td>
+    <td>Погрузите кожаный рюкзак и 4× слитка Древнего металла в ртуть и подождите 30 сек</td>
     <td>Рюкзак из Древнего металла</td>
-    <td>Больше слотов, прочнее рюкзак</td>
+    <td>Больше слотов и выше прочность</td>
   </tr>
 </table>
 
@@ -683,20 +683,20 @@ const sidebarGroups = {
 
 <table>
   <tr><th>Зелье / Эффект</th><th>Тип</th><th>Описание</th><th>Уровни</th></tr>
-  <tr><td><strong>Скорость</strong></td><td>Положительный</td><td>Быстрее движение</td><td>I–IV</td></tr>
+  <tr><td><strong>Скорость</strong></td><td>Положительный</td><td>Повышает скорость передвижения</td><td>I–IV</td></tr>
   <tr><td><strong>Сила</strong></td><td>Положительный</td><td>Увеличенный урон в ближнем бою</td><td>I–IV</td></tr>
   <tr><td><strong>Регенерация</strong></td><td>Положительный</td><td>Непрерывное лечение</td><td>I–IV</td></tr>
-  <tr><td><strong>Мгновенное здоровье</strong></td><td>Положительный (мгновенный)</td><td>Мгновенное восстановление HP</td><td>I–II</td></tr>
+  <tr><td><strong>Мгновенное здоровье</strong></td><td>Положительный (мгновенный)</td><td>Мгновенно восстанавливает здоровье</td><td>I–II</td></tr>
   <tr><td><strong>Огнестойкость</strong></td><td>Положительный</td><td>Огонь и лава не наносят урон</td><td>I</td></tr>
   <tr><td><strong>Сопротивление лаве</strong> ⭐</td><td>Положительный (MITE)</td><td>Особый эффект MITE — снижение урона от лавы</td><td>I</td></tr>
   <tr><td><strong>Ночное зрение</strong></td><td>Положительный</td><td>Полный обзор в темноте</td><td>I</td></tr>
   <tr><td><strong>Подводное дыхание</strong></td><td>Положительный</td><td>Неограниченное дыхание под водой</td><td>I</td></tr>
   <tr><td><strong>Невидимость</strong></td><td>Положительный</td><td>Мобы вас не видят (исключение: HIM)</td><td>I</td></tr>
-  <tr><td><strong>Мгновенный урон</strong></td><td>Негативный/Оружие</td><td>Мгновенный урон — отлично против Огненных элементалей!</td><td>I–II</td></tr>
+  <tr><td><strong>Мгновенный урон</strong></td><td>Негативный / боевой</td><td>Мгновенно наносит урон; особенно полезен против Огненных элементалей</td><td>I–II</td></tr>
   <tr><td><strong>Яд</strong></td><td>Негативный</td><td>Непрерывный урон от яда</td><td>I–IV</td></tr>
   <tr><td><strong>Слабость</strong></td><td>Негативный</td><td>Сниженный урон в ближнем бою</td><td>I–II</td></tr>
   <tr><td><strong>Замедление</strong></td><td>Негативный</td><td>Сниженная скорость передвижения</td><td>I–II</td></tr>
-  <tr><td><strong>Иссушение</strong></td><td>Негативный</td><td>Эффект болезни Иссушения</td><td>I–II</td></tr>
+  <tr><td><strong>Иссушение</strong></td><td>Негативный</td><td>Накладывает эффект иссушения</td><td>I–II</td></tr>
   <tr><td><strong>Коррозия</strong> ⭐</td><td>Негативный (MITE)</td><td>Снижает прочность снаряжения</td><td>I</td></tr>
   <tr><td><strong>Бессонница</strong> ⭐</td><td>Негативный (MITE)</td><td>Нельзя спать под этим эффектом</td><td>I</td></tr>
   <tr><td><strong>Холод</strong> ⭐</td><td>Негативный (MITE)</td><td>Замерзание — согрейтесь у огня!</td><td>I</td></tr>
@@ -707,23 +707,23 @@ const sidebarGroups = {
 <p style="font-size:.82em;color:var(--text2)">⭐ = уникальный эффект MITE, отсутствующий в ванильном Minecraft</p>
 
 <h2 id="splash-potions">Взрывные зелья (Splash Potions)</h2>
-<p>Большинство зелий можно сделать в Взрывном варианте — добавьте <strong>Порох</strong> к готовому зелью на Стойке.</p>
+<p>Большинство зелий можно сделать во взрывном варианте — добавьте <strong>Порох</strong> к готовому зелью на стойке.</p>
 
 <div class="tip">💡 Взрывные зелья можно бросать во врагов (Мгновенный урон, Замедление, Слабость) ИЛИ союзников (Мгновенное здоровье, Сила). Взрывное зелье Мгновенного урона особенно эффективно против Огненных элементалей!</div>
 
 <h2 id="disenchanting">Бутылка расчарования</h2>
-<p>Уникальное зелье MITE, созданное на <strong>Стойке для зелий</strong>. Рецепт: Адский гриб + Уголь → Бутылки с водой.</p>
+<p>Уникальное зелье MITE, создаваемое на <strong>стойке для зелий</strong>. Рецепт: адский гриб + уголь + бутылка воды.</p>
 
 <p><strong>Эффекты:</strong></p>
 <ul>
   <li>✅ Снять зачарования с предметов (XP возвращается!)</li>
   <li>✅ Очистить активные эффекты зелий с себя</li>
-  <li>✅ Снять проклятия ведьм</li>
+  <li>✅ Снимает ведьмины проклятия</li>
   <li>⚠️ НЕ влияет на качество (Quality) предмета</li>
 </ul>
 
 <h2 id="cheese">Крафт сыра</h2>
-<p>Требуется навык <strong>Зельевара</strong>. Подходит любое металлическое ведро с молоком — Твёрдокаменное, Медное, Серебряное, Золотое, Железное, Древний металл, Мифрил, Адамантий. Тир ведра определяет, на каком верстаке крафтится сыр.</p>
+<p>Требуется навык <strong>Зельеварения</strong>. Подойдёт любое металлическое ведро с молоком: твердокаменное, медное, серебряное, золотое, железное, из Древнего металла, мифриловое или адамантиевое. Материал ведра определяет, на каком верстаке крафтится сыр.</p>
 
 <table>
   <tr><th>Вёдра</th><th>Результат</th><th>Сложность/шт</th><th>Эффективность</th></tr>

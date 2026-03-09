@@ -1,4 +1,4 @@
----
+﻿---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import TopNav from '../components/TopNav.astro';
@@ -18,17 +18,17 @@ const sidebarGroups = {
       title: '🎓 Képességek',
       links: [
         { href: '#attekintes', label: 'Áttekintés' },
-        { href: '#blacksmithing', label: 'Kovácsmesterség' },
-        { href: '#carpentry', label: 'Ácsmesterség' },
-        { href: '#fineArts', label: 'Finom Mesterség' },
+        { href: '#Kovácsmesterség', label: 'Kovácsmesterség' },
+        { href: '#Ácsmesterség', label: 'Ácsmesterség' },
+        { href: '#fineArts', label: 'Művészet' },
         { href: '#foodPreparation', label: 'Ételkészítés' },
-        { href: '#masonry', label: 'Kőfaragás' },
+        { href: '#Kőfaragás', label: 'Kőfaragás' },
         { href: '#brewing', label: 'Főzőmesterség' },
-        { href: '#archery', label: 'Íjászat' },
-        { href: '#tinkering', label: 'Barkácsolás' },
-        { href: '#fishing', label: 'Horgászat' },
-        { href: '#farming', label: 'Gazdálkodás' },
-        { href: '#mining', label: 'Bányászat' },
+        { href: '#Íjászat', label: 'Íjászat' },
+        { href: '#Barkácsolás', label: 'Barkácsolás' },
+        { href: '#Horgászat', label: 'Horgászat' },
+        { href: '#Gazdálkodás', label: 'Gazdálkodás' },
+        { href: '#Bányászat', label: 'Bányászat' },
       ],
     },
   ],
@@ -43,17 +43,17 @@ const sidebarGroups = {
       title: '🎓 Skills',
       links: [
         { href: '#attekintes', label: 'Overview' },
-        { href: '#blacksmithing', label: 'Blacksmithing' },
-        { href: '#carpentry', label: 'Carpentry' },
+        { href: '#Kovácsmesterség', label: 'Blacksmithing' },
+        { href: '#Ácsmesterség', label: 'Carpentry' },
         { href: '#fineArts', label: 'Fine Arts' },
         { href: '#foodPreparation', label: 'Food Preparation' },
-        { href: '#masonry', label: 'Masonry' },
+        { href: '#Kőfaragás', label: 'Masonry' },
         { href: '#brewing', label: 'Brewing' },
-        { href: '#archery', label: 'Archery' },
-        { href: '#tinkering', label: 'Tinkering' },
-        { href: '#fishing', label: 'Fishing' },
-        { href: '#farming', label: 'Farming' },
-        { href: '#mining', label: 'Mining' },
+        { href: '#Íjászat', label: 'Archery' },
+        { href: '#Barkácsolás', label: 'Tinkering' },
+        { href: '#Horgászat', label: 'Fishing' },
+        { href: '#Gazdálkodás', label: 'Farming' },
+        { href: '#Bányászat', label: 'Mining' },
       ],
     },
   ],
@@ -68,17 +68,17 @@ const sidebarGroups = {
       title: '🎓 Навыки',
       links: [
         { href: '#attekintes', label: 'Обзор' },
-        { href: '#blacksmithing', label: 'Кузнечное дело' },
-        { href: '#carpentry', label: 'Плотницкое дело' },
+        { href: '#Kovácsmesterség', label: 'Кузнечное дело' },
+        { href: '#Ácsmesterség', label: 'Плотницкое дело' },
         { href: '#fineArts', label: 'Тонкое мастерство' },
         { href: '#foodPreparation', label: 'Приготовление пищи' },
-        { href: '#masonry', label: 'Каменщик' },
+        { href: '#Kőfaragás', label: 'Каменное дело' },
         { href: '#brewing', label: 'Зельеварение' },
-        { href: '#archery', label: 'Стрельба из лука' },
-        { href: '#tinkering', label: 'Механик' },
-        { href: '#fishing', label: 'Рыбалка' },
-        { href: '#farming', label: 'Фермерство' },
-        { href: '#mining', label: 'Добыча руды' },
+        { href: '#Íjászat', label: 'Стрельба из лука' },
+        { href: '#Barkácsolás', label: 'Механика' },
+        { href: '#Horgászat', label: 'Рыбалка' },
+        { href: '#Gazdálkodás', label: 'Земледелие' },
+        { href: '#Bányászat', label: 'Горное дело' },
       ],
     },
   ],
@@ -101,66 +101,66 @@ const sidebarGroups = {
 <h3>Képességek áttekintő táblázat</h3>
 <table class="compare-table">
   <tr><th>Képesség</th><th>Receptek száma</th><th>Főbb állomások</th></tr>
-  <tr><td><a href={`${base}/recipes/?skill=blacksmithing`}>⚒ Kovácsmesterség (Blacksmithing)</a></td><td>331</td><td>Munkaasztalok, Nagy Kemence</td></tr>
-  <tr><td><a href={`${base}/recipes/?skill=carpentry`}>🪵 Ácsmesterség (Carpentry)</a></td><td>99</td><td>Munkaasztalok</td></tr>
-  <tr><td><a href={`${base}/recipes/?skill=fineArts`}>✨ Finom Mesterség (Fine Arts)</a></td><td>105</td><td>Munkaasztalok, Vas Munkaasztal</td></tr>
-  <tr><td><a href={`${base}/recipes/?skill=foodPreparation`}>🍖 Ételkészítés (Food Preparation)</a></td><td>94</td><td>Munkaasztalok, Kő Kemence</td></tr>
-  <tr><td><a href={`${base}/recipes/?skill=masonry`}>🧱 Kőfaragás (Masonry)</a></td><td>77</td><td>Munkaasztalok, Kő Kemence</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=blacksmithing`}>⚒ Kovácsmesterség (Kovácsmesterség)</a></td><td>331</td><td>Munkaasztalok, Nagyolvasztó</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=carpentry`}>🪵 Ácsmesterség (Ácsmesterség)</a></td><td>99</td><td>Munkaasztalok</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=fineArts`}>✨ Művészet (Művészet)</a></td><td>105</td><td>Munkaasztalok, Vas Munkaasztal</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=foodPreparation`}>🍖 Ételkészítés (Food Preparation)</a></td><td>94</td><td>Munkaasztalok, Kőkemence</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=masonry`}>🧱 Kőfaragás (Kőfaragás)</a></td><td>77</td><td>Munkaasztalok, Kőkemence</td></tr>
   <tr><td><a href={`${base}/recipes/?skill=brewing`}>🧪 Főzőmesterség (Brewing)</a></td><td>75</td><td>Munkaasztalok</td></tr>
-  <tr><td><a href={`${base}/recipes/?skill=archery`}>🏹 Íjászat (Archery)</a></td><td>18</td><td>Munkaasztalok</td></tr>
-  <tr><td><a href={`${base}/recipes/?skill=tinkering`}>🔧 Barkácsolás (Tinkering)</a></td><td>19</td><td>Kovakő, Vas, Arany Munkaasztal</td></tr>
-  <tr><td><a href={`${base}/recipes/?skill=fishing`}>🎣 Horgászat (Fishing)</a></td><td>10</td><td>Munkaasztalok</td></tr>
-  <tr><td><a href={`${base}/recipes/?skill=farming`}>🌾 Gazdálkodás (Farming)</a></td><td>4</td><td>Kovakő, Kőmag Munkaasztal</td></tr>
-  <tr><td><a href={`${base}/recipes/?skill=mining`}>⛏ Bányászat (Mining)</a></td><td>3</td><td>Kovakő, Vas Munkaasztal</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=archery`}>🏹 Íjászat (Íjászat)</a></td><td>18</td><td>Munkaasztalok</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=tinkering`}>🔧 Barkácsolás (Barkácsolás)</a></td><td>19</td><td>Kovakő, Vas, Arany Munkaasztal</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=fishing`}>🎣 Horgászat (Horgászat)</a></td><td>10</td><td>Munkaasztalok</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=farming`}>🌾 Gazdálkodás (Gazdálkodás)</a></td><td>4</td><td>Kovakő, Keménykő Munkaasztal</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=mining`}>⛏ Bányászat (Bányászat)</a></td><td>3</td><td>Kovakő, Vas Munkaasztal</td></tr>
 </table>
 </div>
 
-<!-- ===== BLACKSMITHING ===== -->
+<!-- ===== Kovácsmesterség ===== -->
 <div data-lang="hu" id="blacksmithing">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⚒ Kovácsmesterség (Blacksmithing)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⚒ Kovácsmesterség (Kovácsmesterség)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>A legkiterjedtebb képesség — <strong>331 recept</strong>. Nélküle nem készíthetsz fém szerszámokat, fegyvereket és páncélzatot. Kovacs mesterség szükséges szinte minden fémmegmunkáláshoz a rézrúd-formázástól az adamantium teljes készletig.</p>
+<p>A legkiterjedtebb képesség — <strong>331 recept</strong>. Nélküle nem készíthetsz fém szerszámokat, fegyvereket és páncélzatot. Kovácsmesterség szükséges szinte minden fémmegmunkáláshoz a rézrúd-formázástól az adamantium teljes készletig.</p>
 
 <table class="compare-table">
   <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
-  <tr><td>Réz, Ezüst, Bronz, Vas, Arany szerszámok és fegyverek</td><td>Kovakő Munkaasztal szükséges</td></tr>
-  <tr><td>Kőmag, Ős Fém, Mithril, Adamantium felszerelés</td><td>Megfelelő szintű munkaasztal</td></tr>
+  <tr><td>Réz, Ezüst, Bronz, Vas, Arany szerszámok és fegyverek</td><td>Kovamunkaasztal szükséges</td></tr>
+  <tr><td>Keménykő, Ősi fém, Mithril, Adamantium felszerelés</td><td>Megfelelő szintű munkaasztal</td></tr>
   <tr><td>Páncélok minden anyagból</td><td>Réztől Adamantiumig</td></tr>
   <tr><td>Fém formák és öntőformák</td><td>Nagy Kemencénél szükséges</td></tr>
-  <tr><td>Háborús kalapácsok és speciális fegyverek</td><td>Csatabárd, Kasza, Kaszapárd</td></tr>
+  <tr><td>Háborús kalapácsok és speciális fegyverek</td><td>Csatabárd, Kasza, Kaszabárd</td></tr>
 </table>
 
 <div class="info-box">💡 <strong>Kovácsmesterség nélkül</strong> csak fa- és kőszerszámokat (Kova korszak) tudsz készíteni. Ez az első és legfontosabb képesség!</div>
 </div></div></div>
 </div>
 
-<!-- ===== CARPENTRY ===== -->
+<!-- ===== Ácsmesterség ===== -->
 <div data-lang="hu" id="carpentry">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🪵 Ácsmesterség (Carpentry)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🪵 Ácsmesterség (Ácsmesterség)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
 <p><strong>99 recept</strong>. A fahasznosítás mestere — deszkák, gerendák, dobozok, ládák, keretek és más fa alapú tárgyak készítéséhez szükséges.</p>
 
 <table class="compare-table">
   <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
-  <tr><td>Deszkák és falemezek (Plank Boards)</td><td>Fejlettebb faanyagok</td></tr>
+  <tr><td>Deszkák és Deszkalapok (Plank Boards)</td><td>Fejlettebb faanyagok</td></tr>
   <tr><td>Ládák, szekrények, könyvespolcok</td><td>Tárolás és bútorzat</td></tr>
   <tr><td>Munkaasztal alapok és keretrendszerek</td><td>Magasabb szintű munkaasztalokhoz</td></tr>
-  <tr><td>Fa kerítések, kapuk, ajtók</td><td>Építkezés</td></tr>
+  <tr><td>Fa Kerítések, Kapuk, ajtók</td><td>Építkezés</td></tr>
   <tr><td>Torony állvány, rácsos állvány</td><td>Speciális építési elemek</td></tr>
 </table>
 
 </div></div></div>
 </div>
 
-<!-- ===== FINE ARTS ===== -->
+<!-- ===== Művészet ===== -->
 <div data-lang="hu" id="fineArts">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>✨ Finom Mesterség (Fine Arts)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>✨ Művészet (Művészet)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
 <p><strong>105 recept</strong>. Ékszerek, dísztárgyak, speciális tárgyak és finomabb munkák. Fejlett anyagokkal kombinálva különleges képességű eszközöket ad.</p>
 
 <table class="compare-table">
   <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
-  <tr><td>Érmék (réz, ezüst, arany, ős fém)</td><td>Csereeszközök</td></tr>
+  <tr><td>Érmék (réz, ezüst, arany, Ősi fém)</td><td>Csereeszközök</td></tr>
   <tr><td>Ékszerek és gyűrűk</td><td>Speciális bónuszok</td></tr>
   <tr><td>Kristályüveg és dekorációs tárgyak</td><td>Díszítés</td></tr>
   <tr><td>Speciális nyilak és lövedékek</td><td>Haladó harci eszközök</td></tr>
@@ -179,20 +179,20 @@ const sidebarGroups = {
 <table class="compare-table">
   <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
   <tr><td>Kenyér, sütemények, ételek sütése</td><td>Kő Kemencében</td></tr>
-  <tr><td>Pörkölt, leves, porridge</td><td>Meleg ételek — hőmérséklet fenntartáshoz</td></tr>
+  <tr><td>Pörkölt, leves, zabkása</td><td>Meleg ételek — hőmérséklet fenntartáshoz</td></tr>
   <tr><td>Konzerv és tartósított ételek</td><td>Hosszabb eltarthatóság</td></tr>
   <tr><td>Különleges gyógyhatású ételek</td><td>Méregellenszer, gyógyitalok</td></tr>
   <tr><td>Gyümölcslevek és üdítők</td><td>Alternatív szomjúságoltók</td></tr>
 </table>
 
-<div class="info-box">🌡️ <strong>Hideg klímás biome-okban</strong> a meleg ételek (pörkölt, leves, porridge) hőmérséklet-visszatöltést adnak — ezért az ételkészítés képesség életmentő lehet!</div>
+<div class="info-box">🌡️ <strong>Hideg klímás biome-okban</strong> a meleg ételek (pörkölt, leves, zabkása) hőmérséklet-visszatöltést adnak — ezért az ételkészítés képesség életmentő lehet!</div>
 
 </div></div></div>
 </div>
 
-<!-- ===== MASONRY ===== -->
+<!-- ===== Kőfaragás ===== -->
 <div data-lang="hu" id="masonry">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🧱 Kőfaragás (Masonry)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🧱 Kőfaragás (Kőfaragás)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
 <p><strong>77 recept</strong>. Kőből, téglából és agyagból készített épületanyagok és struktúrák. Erős védelmi struktúrákhoz és fejlettebb tüzelőberendezések alapjaihoz szükséges.</p>
 
@@ -201,7 +201,7 @@ const sidebarGroups = {
   <tr><td>Tégla, kő tégla, kőlap variánsok</td><td>Erős épületanyagok</td></tr>
   <tr><td>Kemencék (Kő, Edzett Agyag, Obszidián)</td><td>Kő Kemencében készíthetők</td></tr>
   <tr><td>Agyag és homokkő blokkok</td><td>Épületdíszítés</td></tr>
-  <tr><td>Öntőformák ércolvasztáshoz</td><td>Kovakő Munkaasztalon kézzel is</td></tr>
+  <tr><td>Öntőformák ércolvasztáshoz</td><td>Kovamunkaasztalon kézzel is</td></tr>
   <tr><td>Obszidián tégla és speciális blokkok</td><td>Haladó Nether-előkészület</td></tr>
 </table>
 
@@ -217,7 +217,7 @@ const sidebarGroups = {
 <table class="compare-table">
   <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
   <tr><td>Bájitalok és fejlett bájitalok</td><td>Üst + főzetállvány</td></tr>
-  <tr><td>Sajt készítés (Cheese)</td><td>Bármilyen fém vödörrel, max. 9 vödör/köteg</td></tr>
+  <tr><td>Sajtkészítés (Cheese)</td><td>Bármilyen fém vödörrel, max. 9 vödör/köteg</td></tr>
   <tr><td>Mézes italok és természetes kivonatok</td><td>Alternatív bájitalok</td></tr>
   <tr><td>Vízpárlás és tisztított víz</td><td>Szűrőpapír szükséges</td></tr>
   <tr><td>Speciális Nether italok</td><td>Tűzállóság növelés</td></tr>
@@ -228,16 +228,16 @@ const sidebarGroups = {
 </div></div></div>
 </div>
 
-<!-- ===== ARCHERY ===== -->
+<!-- ===== Íjászat ===== -->
 <div data-lang="hu" id="archery">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🏹 Íjászat (Archery)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🏹 Íjászat (Íjászat)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p><strong>18 recept</strong>. Íjak, nyilak és távolsági harc felszerelések. Kiegészíti a Finom Mesterséget a speciális nyilak terén.</p>
+<p><strong>18 recept</strong>. Íjak, nyilak és távolsági harc felszerelések. Kiegészíti a Művészetet a speciális nyilak terén.</p>
 
 <table class="compare-table">
   <tr><th>Mit tesz lehetővé</th><th>Megjegyzés</th></tr>
   <tr><td>Fa, Réz, Ezüst íjak</td><td>Alap íjak</td></tr>
-  <tr><td>Haladó íjak (Kőmag, Ős Fém, Mithril, Adamantium)</td><td>Nagyobb hatótáv és sebzés</td></tr>
+  <tr><td>Haladó íjak (Keménykő, Ősi fém, Mithril, Adamantium)</td><td>Nagyobb hatótáv és sebzés</td></tr>
   <tr><td>Nyíl variánsok (tűz, robbanó, mérgező)</td><td>Speciális hatások</td></tr>
   <tr><td>Tegez és nyíltartó</td><td>Több nyíl hordozása</td></tr>
 </table>
@@ -245,9 +245,9 @@ const sidebarGroups = {
 </div></div></div>
 </div>
 
-<!-- ===== TINKERING ===== -->
+<!-- ===== Barkácsolás ===== -->
 <div data-lang="hu" id="tinkering">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🔧 Barkácsolás (Tinkering)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🔧 Barkácsolás (Barkácsolás)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
 <p><strong>19 recept</strong>. Mechanikus és speciális eszközök. Kevés recept, de fontos tárgyakat old fel — elsősorban csapdák, szűrők és különleges szerkezetek.</p>
 
@@ -262,9 +262,9 @@ const sidebarGroups = {
 </div></div></div>
 </div>
 
-<!-- ===== FISHING ===== -->
+<!-- ===== Horgászat ===== -->
 <div data-lang="hu" id="fishing">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🎣 Horgászat (Fishing)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🎣 Horgászat (Horgászat)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
 <p><strong>10 recept</strong>. Horgászbotok és horgászathoz kapcsolódó felszerelések különböző anyagokból.</p>
 
@@ -277,9 +277,9 @@ const sidebarGroups = {
 </div></div></div>
 </div>
 
-<!-- ===== FARMING ===== -->
+<!-- ===== Gazdálkodás ===== -->
 <div data-lang="hu" id="farming">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌾 Gazdálkodás (Farming)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌾 Gazdálkodás (Gazdálkodás)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
 <p><strong>4 recept</strong>. Gazdálkodással kapcsolatos speciális receptek — vetőmagok feldolgozása és kertészeti eszközök.</p>
 
@@ -292,9 +292,9 @@ const sidebarGroups = {
 </div></div></div>
 </div>
 
-<!-- ===== MINING ===== -->
+<!-- ===== Bányászat ===== -->
 <div data-lang="hu" id="mining">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⛏ Bányászat (Mining)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⛏ Bányászat (Bányászat)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
 <p><strong>3 recept</strong>. Bányászathoz kapcsolódó speciális szerszámok és kiegészítők. Kevés recept, de hasznos bányász felszereléseket old fel.</p>
 
@@ -528,23 +528,23 @@ const sidebarGroups = {
   <tr><td><a href={`${base}/recipes/?skill=carpentry`}>🪵 Плотницкое дело</a></td><td>99</td><td>Верстаки</td></tr>
   <tr><td><a href={`${base}/recipes/?skill=fineArts`}>✨ Тонкое мастерство</a></td><td>105</td><td>Верстаки, Железный верстак</td></tr>
   <tr><td><a href={`${base}/recipes/?skill=foodPreparation`}>🍖 Приготовление пищи</a></td><td>94</td><td>Верстаки, Каменная печь</td></tr>
-  <tr><td><a href={`${base}/recipes/?skill=masonry`}>🧱 Каменщик</a></td><td>77</td><td>Верстаки, Каменная печь</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=masonry`}>🧱 Каменное дело</a></td><td>77</td><td>Верстаки, Каменная печь</td></tr>
   <tr><td><a href={`${base}/recipes/?skill=brewing`}>🧪 Зельеварение</a></td><td>75</td><td>Верстаки</td></tr>
   <tr><td><a href={`${base}/recipes/?skill=archery`}>🏹 Стрельба из лука</a></td><td>18</td><td>Верстаки</td></tr>
-  <tr><td><a href={`${base}/recipes/?skill=tinkering`}>🔧 Механик</a></td><td>19</td><td>Кремнёвый, Железный, Золотой верстак</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=tinkering`}>🔧 Механика</a></td><td>19</td><td>Кремнёвый, Железный, Золотой верстак</td></tr>
   <tr><td><a href={`${base}/recipes/?skill=fishing`}>🎣 Рыбалка</a></td><td>10</td><td>Верстаки</td></tr>
-  <tr><td><a href={`${base}/recipes/?skill=farming`}>🌾 Фермерство</a></td><td>4</td><td>Кремнёвый, Твёрдокаменный верстак</td></tr>
-  <tr><td><a href={`${base}/recipes/?skill=mining`}>⛏ Добыча руды</a></td><td>3</td><td>Кремнёвый, Железный верстак</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=farming`}>🌾 Земледелие</a></td><td>4</td><td>Кремнёвый, Твердокаменный верстак</td></tr>
+  <tr><td><a href={`${base}/recipes/?skill=mining`}>⛏ Горное дело</a></td><td>3</td><td>Кремнёвый, Железный верстак</td></tr>
 </table>
 </div>
 
-<div data-lang="ru" id="blacksmithing-ru">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⚒ Кузнечное дело (Blacksmithing)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<div data-lang="ru" id="Kovácsmesterség-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⚒ Кузнечное дело (Kovácsmesterség)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p>Самый обширный навык — <strong>331 рецепт</strong>. Без него нельзя скрафтить металлические инструменты, оружие или броню. Требуется почти для всей металлообработки.</p>
 <table class="compare-table">
   <tr><th>Открывает</th><th>Примечания</th></tr>
   <tr><td>Медные, Серебряные, Бронзовые, Железные, Золотые инструменты и оружие</td><td>Кремнёвый верстак</td></tr>
-  <tr><td>Снаряжение из Твёрдого камня, Древнего металла, Мифрила, Адамантия</td><td>Верстак соответствующего тира</td></tr>
+  <tr><td>Твердокаменное снаряжение, снаряжение из Древнего металла, Мифрила и Адамантия</td><td>Верстак соответствующего тира</td></tr>
   <tr><td>Броня из всех металлических тиров</td><td>От меди до адамантия</td></tr>
   <tr><td>Слитковые и литейные формы</td><td>Нужны для Доменной печи</td></tr>
   <tr><td>Боевые молоты и особое оружие</td><td>Боевой топор, коса, алебарда</td></tr>
@@ -553,8 +553,8 @@ const sidebarGroups = {
 </div></div></div>
 </div>
 
-<div data-lang="ru" id="carpentry-ru">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🪵 Плотницкое дело (Carpentry)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<div data-lang="ru" id="Ácsmesterség-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🪵 Плотницкое дело (Ácsmesterség)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p><strong>99 рецептов</strong>. Мастерство дерева — доски, балки, сундуки, рамы и другие деревянные предметы.</p>
 <table class="compare-table">
   <tr><th>Открывает</th><th>Примечания</th></tr>
@@ -568,7 +568,7 @@ const sidebarGroups = {
 </div>
 
 <div data-lang="ru" id="fineArts-ru">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>✨ Тонкое мастерство (Fine Arts)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>✨ Тонкое мастерство (Művészet)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p><strong>105 рецептов</strong>. Ювелирные украшения, декоративные предметы и точное ремесло. В сочетании с редкими материалами открывает уникальное снаряжение.</p>
 <table class="compare-table">
   <tr><th>Открывает</th><th>Примечания</th></tr>
@@ -596,13 +596,13 @@ const sidebarGroups = {
 </div></div></div>
 </div>
 
-<div data-lang="ru" id="masonry-ru">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🧱 Каменщик (Masonry)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
-<p><strong>77 рецептов</strong>. Строительные материалы из камня, кирпича и глины. Нужен для прочных оборонительных сооружений и строительства печей.</p>
+<div data-lang="ru" id="Kőfaragás-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🧱 Каменное дело (Kőfaragás)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p><strong>77 рецептов</strong>. Навык для работы с камнем, кирпичом и глиной. Нужен для прочных построек и возведения печей.</p>
 <table class="compare-table">
   <tr><th>Открывает</th><th>Примечания</th></tr>
   <tr><td>Кирпич, каменный кирпич, каменные плиты</td><td>Прочные строительные блоки</td></tr>
-  <tr><td>Печи (Каменная, Обожжённая глина, Обсидиановая)</td><td>Крафт в Каменной печи</td></tr>
+  <tr><td>Печи (Каменная, из обожжённой глины, Обсидиановая)</td><td>Крафт в Каменной печи</td></tr>
   <tr><td>Глиняные и песчаниковые блоки</td><td>Декоративное строительство</td></tr>
   <tr><td>Слитковые формы для плавки</td><td>Можно крафтить вручную на Кремнёвом верстаке</td></tr>
   <tr><td>Обсидиановый кирпич и особые блоки</td><td>Подготовка к Незеру</td></tr>
@@ -612,7 +612,7 @@ const sidebarGroups = {
 
 <div data-lang="ru" id="brewing-ru">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🧪 Зельеварение (Brewing)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
-<p><strong>75 рецептов</strong>. Нужен для зелий, сыра и особых напитков. Охватывает традиционное зельеварение и рецепты на основе котла.</p>
+<p><strong>75 рецептов</strong>. Навык для работы с зельями, сыром и особыми напитками. Охватывает традиционное зельеварение и рецепты на основе котла.</p>
 <table class="compare-table">
   <tr><th>Открывает</th><th>Примечания</th></tr>
   <tr><td>Зелья и продвинутые зелья</td><td>Котёл + стойка для зелий</td></tr>
@@ -624,46 +624,46 @@ const sidebarGroups = {
 </div></div></div>
 </div>
 
-<div data-lang="ru" id="archery-ru">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🏹 Стрельба из лука (Archery)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<div data-lang="ru" id="Íjászat-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🏹 Стрельба из лука (Íjászat)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p><strong>18 рецептов</strong>. Луки, стрелы и снаряжение для дальнего боя. Дополняет Тонкое мастерство для особых стрел.</p>
 <table class="compare-table">
   <tr><th>Открывает</th><th>Примечания</th></tr>
   <tr><td>Деревянный, Медный, Серебряный луки</td><td>Базовые луки</td></tr>
-  <tr><td>Продвинутые луки (Твёрдокаменный, Древний металл, Мифрил, Адамантий)</td><td>Больше дальность и урон</td></tr>
+  <tr><td>Продвинутые луки (Твердокаменный, Древний металл, Мифрил, Адамантий)</td><td>Выше дальность и урон</td></tr>
   <tr><td>Варианты стрел (огонь, взрыв, яд)</td><td>Особые эффекты</td></tr>
   <tr><td>Колчан и держатель для стрел</td><td>Носите больше стрел</td></tr>
 </table>
 </div></div></div>
 </div>
 
-<div data-lang="ru" id="tinkering-ru">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🔧 Механик (Tinkering)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
-<p><strong>19 рецептов</strong>. Механические и особые устройства. Мало рецептов, но важные предметы — ловушки, фильтры и особые механизмы.</p>
+<div data-lang="ru" id="Barkácsolás-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🔧 Механика (Barkácsolás)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p><strong>19 рецептов</strong>. Навык для механических и вспомогательных устройств. Рецептов немного, но среди них есть очень важные предметы: сита, фильтры, ловушки и хранилища.</p>
 <table class="compare-table">
   <tr><th>Открывает</th><th>Примечания</th></tr>
   <tr><td>Варианты сита (дерево, медь, железо и др.)</td><td>Для просеивания гравия</td></tr>
   <tr><td>Фильтры и фильтрующая бумага</td><td>Фильтрация воды, в сочетании с Зельеварением</td></tr>
   <tr><td>Ловушки и механические устройства</td><td>Оборонительные цели</td></tr>
-  <tr><td>Особые ёмкости для хранения</td><td>Резервуар для жидкостей, варианты сундуков</td></tr>
+  <tr><td>Особые ёмкости для хранения</td><td>Резервуары для жидкостей и улучшенные варианты сундуков</td></tr>
 </table>
 </div></div></div>
 </div>
 
-<div data-lang="ru" id="fishing-ru">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🎣 Рыбалка (Fishing)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<div data-lang="ru" id="Horgászat-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🎣 Рыбалка (Horgászat)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p><strong>10 рецептов</strong>. Удочки и рыболовное снаряжение из различных материалов.</p>
 <table class="compare-table">
   <tr><th>Открывает</th><th>Примечания</th></tr>
-  <tr><td>Варианты удочек (от Меди до Адамантия)</td><td>Лучшая удочка = больше шанс улова</td></tr>
+  <tr><td>Варианты удочек (от меди до адамантия)</td><td>Чем лучше удочка, тем выше шанс улова</td></tr>
   <tr><td>Особые крючки и приманки</td><td>Для редкой рыбы</td></tr>
 </table>
 </div></div></div>
 </div>
 
-<div data-lang="ru" id="farming-ru">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌾 Фермерство (Farming)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
-<p><strong>4 рецепта</strong>. Особые рецепты фермерства — обработка семян и садоводческие инструменты.</p>
+<div data-lang="ru" id="Gazdálkodás-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌾 Земледелие (Gazdálkodás)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p><strong>4 рецепта</strong>. Навык, связанный с выращиванием культур: обработкой семян и садовыми инструментами.</p>
 <table class="compare-table">
   <tr><th>Открывает</th><th>Примечания</th></tr>
   <tr><td>Обработка семян и культур</td><td>Особые сорта растений</td></tr>
@@ -672,9 +672,9 @@ const sidebarGroups = {
 </div></div></div>
 </div>
 
-<div data-lang="ru" id="mining-ru">
-<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⛏ Добыча руды (Mining)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
-<p><strong>3 рецепта</strong>. Особые инструменты и аксессуары для добычи руды. Мало рецептов, но полезное горное снаряжение.</p>
+<div data-lang="ru" id="Bányászat-ru">
+<div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⛏ Горное дело (Bányászat)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
+<p><strong>3 рецепта</strong>. Навык, связанный с добычей руды и горным снаряжением. Рецептов немного, но они полезны для шахтёрских вылазок.</p>
 <table class="compare-table">
   <tr><th>Открывает</th><th>Примечания</th></tr>
   <tr><td>Особые горные инструменты</td><td>Более эффективная добыча</td></tr>

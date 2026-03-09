@@ -20,11 +20,26 @@ const pages = [
 ];
 ---
 <nav class="top-nav">
-  {pages.map(p => (
-    <a href={p.href} aria-current={p.id === currentPage ? 'page' : undefined}>
-      <span data-lang="hu">{p.hu}</span>
-      <span data-lang="en">{p.en}</span>
-      <span data-lang="ru">{p.ru}</span>
-    </a>
-  ))}
+  <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">&#9776;</button>
+  <div class="top-nav-links">
+    {pages.map(p => (
+      <a href={p.href} aria-current={p.id === currentPage ? 'page' : undefined}>
+        <span data-lang="hu">{p.hu}</span>
+        <span data-lang="en">{p.en}</span>
+        <span data-lang="ru">{p.ru}</span>
+      </a>
+    ))}
+  </div>
 </nav>
+
+<script>
+  const btn = document.querySelector('.hamburger-btn');
+  const links = document.querySelector('.top-nav-links');
+  if (btn && links) {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      links.classList.toggle('open');
+    });
+  }
+</script>
