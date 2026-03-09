@@ -5,6 +5,7 @@ import TopNav from '../../components/TopNav.astro';
 import Sidebar from '../../components/Sidebar.astro';
 import PageSummary from '../../components/PageSummary.astro';
 import RelatedPages from '../../components/RelatedPages.astro';
+import ProgressComplete from '../../components/ProgressComplete.astro';
 import { getSidebarGroups } from '../../data/sidebar-config.ts';
 import '../../styles/global.css';
 
@@ -546,6 +547,7 @@ const sidebarGroups = getSidebarGroups('systems/skills');
 </div></div></div>
 </div>
 
+<ProgressComplete pageId="skills" />
 <RelatedPages
   prev={{ href: `${base}/systems/survival/`, label: { hu: 'Túlélés', en: 'Survival', ru: 'Выживание' } }}
   next={{ href: `${base}/systems/`, label: { hu: 'Rendszerek főoldal', en: 'Systems Overview', ru: 'Обзор систем' } }}

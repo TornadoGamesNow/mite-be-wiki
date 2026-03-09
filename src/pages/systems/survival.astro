@@ -6,6 +6,7 @@ import Sidebar from '../../components/Sidebar.astro';
 import CraftingGrid from '../../components/CraftingGrid.astro';
 import PageSummary from '../../components/PageSummary.astro';
 import RelatedPages from '../../components/RelatedPages.astro';
+import ProgressComplete from '../../components/ProgressComplete.astro';
 import { getSidebarGroups } from '../../data/sidebar-config.ts';
 import '../../styles/global.css';
 
@@ -203,6 +204,7 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 </table>
 </div>
 
+<ProgressComplete pageId="survival" />
 <RelatedPages
   prev={{ href: `${base}/systems/combat/`, label: { hu: 'Harc', en: 'Combat', ru: 'Бой' } }}
   next={{ href: `${base}/systems/skills/`, label: { hu: 'Képességek', en: 'Skills', ru: 'Навыки' } }}

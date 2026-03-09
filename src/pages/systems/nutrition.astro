@@ -6,6 +6,7 @@ import Sidebar from '../../components/Sidebar.astro';
 import CraftingGrid from '../../components/CraftingGrid.astro';
 import PageSummary from '../../components/PageSummary.astro';
 import RelatedPages from '../../components/RelatedPages.astro';
+import ProgressComplete from '../../components/ProgressComplete.astro';
 import { getSidebarGroups } from '../../data/sidebar-config.ts';
 import '../../styles/global.css';
 
@@ -51,7 +52,7 @@ const sidebarGroups = getSidebarGroups('systems/nutrition');
   <tr><td>Tojás</td><td>Csirkék</td><td>Ehető nyersen</td></tr>
   <tr><td>Sült hús</td><td>Tábortűz/kemence</td><td>Fehérje — fontos!</td></tr>
   <tr><td>Kenyér</td><td>Liszt + Víz + Sütés</td><td>Alapvető szénhidrát</td></tr>
-  <tr><td>Saláta</td><td>Tál + Zöldség (pl. 3× Pitypang)</td><td>Növényi tápanyag — fejfájás ellen!</td></tr>
+  <tr><td><span class="wiki-item" data-id="salad">Saláta</span></td><td>Tál + Zöldség (pl. 3× <span class="wiki-item" data-id="dandelion">Pitypang</span>)</td><td>Növényi tápanyag — fejfájás ellen!</td></tr>
 </table>
 
 <h3>Tápértékek</h3>
@@ -77,7 +78,7 @@ const sidebarGroups = getSidebarGroups('systems/nutrition');
   <tr><td>Gombakrémleves</td><td>3</td><td>5</td><td>5.0</td><td>—</td><td>—</td><td>Szakács foglalkozás</td></tr>
   <tr><td>Zöldségkrémleves 🥦</td><td>7</td><td>7</td><td>7.0</td><td>7.0</td><td>—</td><td>Szakács foglalkozás</td></tr>
   <tr><td>Csirkeleves 🍲</td><td>10</td><td>10</td><td>10.0</td><td>10.0</td><td>—</td><td>Szakács — komplex</td></tr>
-  <tr style="background:rgba(255,100,0,0.08)"><td><strong>Marhapörkölt 🥩🔥</strong></td><td><strong>16</strong></td><td><strong>16</strong></td><td><strong>16.0</strong></td><td><strong>16.0</strong></td><td>—</td><td><strong>Legjobb étel!</strong> Szakács</td></tr>
+  <tr style="background:rgba(255,100,0,0.08)"><td><strong><span class="wiki-item" data-id="beef_stew">Marhapörkölt</span> 🥩🔥</strong></td><td><strong>16</strong></td><td><strong>16</strong></td><td><strong>16.0</strong></td><td><strong>16.0</strong></td><td>—</td><td><strong>Legjobb étel!</strong> Szakács</td></tr>
 </table>
 <div class="warning-box"><strong>Figyelem:</strong> Megégett hús, mérgezett burgonya és nyers csirkehús mérgezést okozhat! A <strong>Marhapörkölt</strong> minden tápanyagból a legtöbbet adja — ha van Szakács képességed, ez az end-game étel.</div>
 
@@ -286,6 +287,7 @@ const sidebarGroups = getSidebarGroups('systems/nutrition');
 <div class="info-box">💧 <strong>Важно:</strong> Жажда убывает <strong>в 2 раза быстрее</strong> при беге! При 0 жажды: эффект Слабости, затем урон по HP.</div>
 </div>
 
+<ProgressComplete pageId="nutrition" />
 <RelatedPages
   prev={{ href: `${base}/systems/`, label: { hu: 'Rendszerek', en: 'Systems', ru: 'Системы' } }}
   next={{ href: `${base}/systems/combat/`, label: { hu: 'Harc', en: 'Combat', ru: 'Бой' } }}

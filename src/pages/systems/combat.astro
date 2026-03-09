@@ -6,6 +6,7 @@ import Sidebar from '../../components/Sidebar.astro';
 import CraftingGrid from '../../components/CraftingGrid.astro';
 import PageSummary from '../../components/PageSummary.astro';
 import RelatedPages from '../../components/RelatedPages.astro';
+import ProgressComplete from '../../components/ProgressComplete.astro';
 import { getSidebarGroups } from '../../data/sidebar-config.ts';
 import '../../styles/global.css';
 
@@ -129,7 +130,7 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr style="background:rgba(255,80,80,0.10)"><td>Alap (üres kéz)</td><td><strong>2.75 blokk</strong></td><td>— (vanilla-ban 4.5!)</td></tr>
   <tr><td>+0.50</td><td>3.25 blokk</td><td>Fabot, Csont, Fa Buzogány, Kézbalta</td></tr>
   <tr style="background:rgba(200,160,80,0.12)"><td>+0.75</td><td>3.50 blokk</td><td>Vaskard, Vascsákány, Vas Ásó, Vas Fejsze, Vas Kapa, Háborús Kalapács, Csatafejsze</td></tr>
-  <tr style="background:rgba(100,200,100,0.12)"><td><strong>+1.00</strong></td><td><strong>3.75 blokk</strong></td><td>⭐ <strong>Vas Kasza</strong> — legjobb közelharci elérés!</td></tr>
+  <tr style="background:rgba(100,200,100,0.12)"><td><strong>+1.00</strong></td><td><strong>3.75 blokk</strong></td><td>⭐ <strong><span class="wiki-item" data-id="iron_scythe">Vas Kasza</span></strong> — legjobb közelharci elérés!</td></tr>
 </table>
 <div class="info-box">⚠️ <strong>Fontos:</strong> Réz, Ezüst, Bronz, Keménykő (és magasabb szintű) változatai csak Vas szintű eszközök kapnak +0.75 bónuszt az elérés adataiban. Ellenfelekhez való közelharci elérés alap értéke: <strong>1.5 blokk</strong>.</div>
 
@@ -179,7 +180,7 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr style="background:rgba(192,192,128,0.10)"><td><strong>Ezüst Nyíl</strong></td><td>+3</td><td>60%</td><td>Extra sebzés élőholtak ellen + White Ghoul sebzésére képes</td></tr>
   <tr><td>Vas Nyíl</td><td>+4</td><td>70%</td><td>—</td></tr>
   <tr style="background:rgba(126,200,227,0.12)"><td><strong>Mithril-nyíl</strong></td><td>+7</td><td>80%</td><td>Legjobb sebzés!</td></tr>
-  <tr style="background:rgba(179,136,255,0.14)"><td><strong>Adamantium-nyíl</strong></td><td>+6</td><td>90%</td><td>Az egyetlen nyíl, amely elpusztítja az End Kristályokat!</td></tr>
+  <tr style="background:rgba(179,136,255,0.14)"><td><strong><span class="wiki-item" data-id="adamantium_arrow">Adamantium-nyíl</span></strong></td><td>+6</td><td>90%</td><td>Az egyetlen nyíl, amely elpusztítja az End Kristályokat!</td></tr>
 </table>
 <table class="compare-table">
   <tr><th>Íj</th><th>Tartósság</th><th>Sebesség Bónusz</th><th>Megjegyzés</th></tr>
@@ -343,6 +344,7 @@ const sidebarGroups = getSidebarGroups('systems/combat');
 </table>
 </div>
 
+<ProgressComplete pageId="combat" />
 <RelatedPages
   prev={{ href: `${base}/systems/nutrition/`, label: { hu: 'Táplálkozás', en: 'Nutrition', ru: 'Питание' } }}
   next={{ href: `${base}/systems/survival/`, label: { hu: 'Túlélés', en: 'Survival', ru: 'Выживание' } }}
