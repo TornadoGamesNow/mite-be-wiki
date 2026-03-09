@@ -752,8 +752,7 @@
     "img": "img/items/copper_dagger.png",
     "tier": "copper",
     "category": "weapon",
-    "max_durability": 1600,
-    "removed_in": "0.6.0"
+    "max_durability": 1600
   },
   "copper_battle_axe": {
     "name": {
@@ -5250,8 +5249,7 @@
     "img": "img/items/hard_stone_dagger.png",
     "tier": "hard",
     "max_durability": 9200,
-    "category": "weapon",
-    "removed_in": "0.6.0"
+    "category": "weapon"
   },
   "hard_stone_flint_and_steel": {
     "name": {
@@ -11015,9 +11013,8 @@
     },
     "img": "img/items/silver_dagger.png",
     "tier": "silver",
-    "category": "material",
-    "max_durability": 1600,
-    "removed_in": "0.6.0"
+    "category": "weapon",
+    "max_durability": 1600
   },
   "gold_dagger": {
     "name": {
@@ -11027,9 +11024,8 @@
     },
     "img": "img/items/gold_dagger.png",
     "tier": "gold",
-    "category": "material",
-    "max_durability": 1600,
-    "removed_in": "0.6.0"
+    "category": "weapon",
+    "max_durability": 1600
   },
   "rusted_iron_dagger": {
     "name": {
@@ -11050,9 +11046,8 @@
     },
     "img": "img/items/ancient_metal_dagger.png",
     "tier": "ancient_metal",
-    "category": "material",
-    "max_durability": 12800,
-    "removed_in": "0.5.5"
+    "category": "weapon",
+    "max_durability": 12800
   },
   "mithril_dagger": {
     "name": {
@@ -11062,9 +11057,8 @@
     },
     "img": "img/items/mithril_dagger.png",
     "tier": "mithril",
-    "category": "material",
-    "max_durability": 38400,
-    "removed_in": "0.5.5"
+    "category": "weapon",
+    "max_durability": 38400
   },
   "adamantium_dagger": {
     "name": {
@@ -11074,9 +11068,8 @@
     },
     "img": "img/items/adamantium_dagger.png",
     "tier": "adamantium",
-    "category": "material",
-    "max_durability": 102400,
-    "removed_in": "0.5.5"
+    "category": "weapon",
+    "max_durability": 102400
   },
   "high_carbon_steel_dagger": {
     "name": {
