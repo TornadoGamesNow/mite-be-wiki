@@ -2,6 +2,7 @@
 import recipesData from '../../data/recipes_full.json';
 import itemsData from '../../data/items.json';
 import { getCurrentLang, onLangChange } from '../i18n/lang';
+import CraftingTree from './CraftingTree';
 
 type FullRecipe = {
   id: string;
@@ -1367,7 +1368,7 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
 }
 
 export default function RecipesHub() {
-  const [mode, setMode] = useState<'browse' | 'sandbox'>('browse');
+  const [mode, setMode] = useState<'browse' | 'sandbox' | 'tree'>('browse');
   const [transitioning, setTransitioning] = useState(false);
   const [lang, setLang] = useState<'hu' | 'en' | 'ru'>('hu');
   const [keyword, setKeyword] = useState('');
@@ -1511,6 +1512,9 @@ export default function RecipesHub() {
         <button className={`hub-tab${mode === 'sandbox' ? ' active' : ''}`} onClick={() => setMode('sandbox')}>
           🧪 Sandbox
         </button>
+        <button className={`hub-tab${mode === 'tree' ? ' active' : ''}`} onClick={() => setMode('tree')}>
+          🌳 {lang === 'hu' ? 'Crafting Fa' : lang === 'ru' ? 'Дерево' : 'Tree'}
+        </button>
       </div>
 
       {mode === 'browse' && (
@@ -1646,6 +1650,8 @@ export default function RecipesHub() {
           } : undefined}
         />
       )}
+
+      {mode === 'tree' && <CraftingTree />}
 
       {mode === 'sandbox' && (
         <SandboxPanel

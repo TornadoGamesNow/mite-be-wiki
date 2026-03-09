@@ -22,7 +22,7 @@ function pageToCategory(currentPage: string): Category {
   if (['install', 'introduction', 'quick-start', 'game-modes', 'faq'].includes(currentPage)) return 'start-here';
   if (currentPage === 'progression' || currentPage.startsWith('progression/')) return 'progression';
   if (currentPage === 'systems' || currentPage.startsWith('systems/')) return 'systems';
-  if (['recipes', 'items', 'mobs', 'biomes', 'brewing', 'reference', 'crafting-tree'].includes(currentPage)) return 'reference';
+  if (['recipes', 'items', 'mobs', 'biomes', 'brewing', 'reference'].includes(currentPage)) return 'reference';
   if (currentPage === 'changelog') return 'updates';
   return 'none';
 }
@@ -69,7 +69,6 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
         title: '📚 Referencia',
         links: [
           { href: `${base}/recipes/`, label: 'Receptek' },
-          { href: `${base}/crafting-tree/`, label: 'Crafting Fa' },
           { href: `${base}/items/`, label: 'Itemek' },
           { href: `${base}/mobs/`, label: 'Bestiary' },
           { href: `${base}/biomes/`, label: 'Biome-ok' },
@@ -122,7 +121,6 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
         title: '📚 Reference',
         links: [
           { href: `${base}/recipes/`, label: 'Recipes' },
-          { href: `${base}/crafting-tree/`, label: 'Crafting Tree' },
           { href: `${base}/items/`, label: 'Items' },
           { href: `${base}/mobs/`, label: 'Bestiary' },
           { href: `${base}/biomes/`, label: 'Biomes' },
@@ -175,7 +173,6 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
         title: '📚 Справочник',
         links: [
           { href: `${base}/recipes/`, label: 'Рецепты' },
-          { href: `${base}/crafting-tree/`, label: 'Дерево крафта' },
           { href: `${base}/items/`, label: 'Предметы' },
           { href: `${base}/mobs/`, label: 'Бестиарий' },
           { href: `${base}/biomes/`, label: 'Биомы' },
