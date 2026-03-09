@@ -472,10 +472,8 @@ h2:hover .anchor-link, h3:hover .anchor-link { opacity: 1; }
 /* Filter btn egységes szélesség a diff gombokra */
 .filter-btn-diff { min-width: 52px; text-align: center; }
 
-/* ===== DRAWER OVERLAY (mobile) ===== */
-@media (max-width: 768px) {
-  .drawer-overlay { display:block !important; }
-}
+/* ===== DRAWER OVERLAY ===== */
+/* overlay is always visible when rendered (display controlled by React) */
 
 /* ===== HubCard grid ===== */
 .hub-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 24px 0; }

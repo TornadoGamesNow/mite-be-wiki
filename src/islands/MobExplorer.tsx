@@ -524,7 +524,7 @@ export default function MobExplorer() {
       {selectedMob && (
         <>
           <div onClick={closeMob}
-            style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,.4)', zIndex: 99, display: 'none' }}
+            style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,.4)', zIndex: 99 }}
             className="drawer-overlay" />
           <div className="mob-drawer-panel" style={{
             position: 'fixed', top: 0, right: 0, bottom: 0, width: 'min(520px, 100vw)',
