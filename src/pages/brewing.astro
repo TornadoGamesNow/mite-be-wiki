@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import TopNav from '../components/TopNav.astro';
 import Sidebar from '../components/Sidebar.astro';
 import BrewingGrid from '../components/BrewingGrid.astro';
+import PageSummary from '../components/PageSummary.astro';
 import '../styles/global.css';
 
 import { getSidebarGroups } from '../data/sidebar-config.ts';
@@ -17,6 +18,23 @@ const sidebarGroups = getSidebarGroups('brewing');
   <div class="container">
     <Sidebar groups={sidebarGroups} />
     <main class="content">
+<PageSummary keyPoints={{
+  hu: [
+    'Főzőállvány: 3 összetevő-slot + 1 üzemanyag (Lőpor vagy Salétromkő) + 3 üveg',
+    'Vízlégzés, Tűzállóság, Éjjellátás — ezek a leghasznosabb MITE italok',
+    'Üst: Folyékony Arany (erősítés), Higany (speciális), Diszenchantálás',
+  ],
+  en: [
+    'Brewing Stand: 3 ingredient slots + 1 fuel (Gunpowder or Niter) + 3 bottles',
+    'Water Breathing, Fire Resistance, Night Vision — most useful MITE potions',
+    'Cauldron: Liquid Gold (buff), Mercury (special), Disenchanting Bottle',
+  ],
+  ru: [
+    'Стойка зелий: 3 слота ингредиентов + топливо (Порох/Селитра) + 3 бутылки',
+    'Дыхание под водой, Огнестойкость, Ночное зрение — полезнейшие зелья',
+    'Котёл: Жидкое золото (усиление), Ртуть (спецэффект), Бутылка расчарования',
+  ],
+}} />
 
 <!-- ═══════════════════════════════════════════════ HUNGARIAN ═══ -->
 <div data-lang="hu">

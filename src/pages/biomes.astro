@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import TopNav from '../components/TopNav.astro';
 import Sidebar from '../components/Sidebar.astro';
 import '../styles/global.css';
+import PageSummary from '../components/PageSummary.astro';
 import { getSidebarGroups } from '../data/sidebar-config.ts';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
@@ -16,6 +17,23 @@ const sidebarGroups = getSidebarGroups('biomes');
   <div class="container">
     <Sidebar groups={sidebarGroups} />
     <main class="content">
+<PageSummary keyPoints={{
+  hu: [
+    'Minden biome más hőmérsékletet jelent — sivatag túlmelegít, hó megfagyaszt',
+    'Vadász Cabin: erdőkben, értékes zsákmány + tudáskönyvek',
+    'Gombás biome: egyetlen biztonságos terület, ahol nem spawnnol semmi veszélyes',
+  ],
+  en: [
+    'Every biome has different temperature — desert overheats, snow freezes you',
+    'Hunter Cabin: found in forests, valuable loot + knowledge books',
+    'Mushroom biome: the only truly safe area — nothing dangerous spawns there',
+  ],
+  ru: [
+    'Каждый биом — разная температура: пустыня перегревает, снег замораживает',
+    'Охотничья хижина: в лесах, ценный лут + книги знаний',
+    'Грибной биом: единственная безопасная зона — опасные мобы не спавнятся',
+  ],
+}} />
 
 <!-- ════════════════════════ HUNGARIAN ════════════════════════ -->
 <div data-lang="hu">

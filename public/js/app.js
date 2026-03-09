@@ -666,3 +666,165 @@ document.addEventListener('DOMContentLoaded', () => {
   initKeyboardNav();
   initSectionAnchors();
 });
+
+// ── Floating Table of Contents ──
+(function() {
+  var toc = null;
+  var tocList = null;
+  var tocObserver = null;
+  var tocItems = [];
+  var isCollapsed = false;
+
+  var TOC_TITLES = { hu: 'Tartalom', en: 'Contents', ru: 'Содержание' };
+
+  function getCurrentLang() {
+    return document.documentElement.getAttribute('data-lang-init') || 'hu';
+  }
+
+  // Returns h2 elements that are children of the currently-visible data-lang block.
+  // Falls back to all h2[id] if no data-lang structure is found.
+  function getVisibleH2s() {
+    var lang = getCurrentLang();
+    var langBlock = document.querySelector('.content [data-lang="' + lang + '"]');
+    if (langBlock) {
+      return Array.from(langBlock.querySelectorAll('h2[id]'));
+    }
+    // Fallback: visible h2s not inside a hidden language block
+    return Array.from(document.querySelectorAll('h2[id]')).filter(function(h) {
+      var lc = h.closest('[data-lang]');
+      if (!lc) return true;
+      return lc.getAttribute('data-lang') === lang;
+    });
+  }
+
+  function buildToc() {
+    if (!toc) return;
+    // Disconnect previous observer
+    if (tocObserver) { tocObserver.disconnect(); tocObserver = null; }
+    tocItems = [];
+
+    var h2s = getVisibleH2s();
+    var lang = getCurrentLang();
+
+    // Update title
+    var titleEl = toc.querySelector('.toc-title');
+    if (titleEl) titleEl.textContent = TOC_TITLES[lang] || TOC_TITLES.hu;
+
+    // Clear list
+    tocList.innerHTML = '';
+
+    if (h2s.length < 4) {
+      toc.style.display = 'none';
+      return;
+    }
+
+    toc.style.display = '';
+
+    h2s.forEach(function(h) {
+      // Strip the anchor-link emoji from the text
+      var text = h.childNodes[0]
+        ? h.childNodes[0].textContent.trim()
+        : h.textContent.trim();
+
+      var li = document.createElement('li');
+      li.className = 'toc-item';
+
+      var a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.textContent = text;
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        h.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', '#' + h.id);
+      });
+
+      li.appendChild(a);
+      tocList.appendChild(li);
+      tocItems.push({ li: li, h: h });
+    });
+
+    // IntersectionObserver to highlight active section
+    tocObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        var item = tocItems.find(function(i) { return i.h === entry.target; });
+        if (!item) return;
+        if (entry.isIntersecting) {
+          tocItems.forEach(function(i) { i.li.classList.remove('active'); });
+          item.li.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-10% 0px -80% 0px' });
+
+    // Fallback scroll-based active tracking (more reliable on long pages)
+    function updateActiveByScroll() {
+      var best = null;
+      for (var i = 0; i < tocItems.length; i++) {
+        var rect = tocItems[i].h.getBoundingClientRect();
+        if (rect.top <= 100) best = tocItems[i];
+        else break;
+      }
+      if (best) {
+        tocItems.forEach(function(item) { item.li.classList.remove('active'); });
+        best.li.classList.add('active');
+      }
+    }
+
+    window.addEventListener('scroll', updateActiveByScroll, { passive: true });
+    h2s.forEach(function(h) { tocObserver.observe(h); });
+    updateActiveByScroll();
+  }
+
+  function createToc() {
+    var el = document.createElement('div');
+    el.id = 'wiki-toc';
+
+    var header = document.createElement('div');
+    header.className = 'toc-header';
+
+    var title = document.createElement('span');
+    title.className = 'toc-title';
+    title.textContent = TOC_TITLES[getCurrentLang()] || TOC_TITLES.hu;
+
+    var toggle = document.createElement('button');
+    toggle.className = 'toc-toggle';
+    toggle.title = 'Toggle';
+    toggle.setAttribute('aria-label', 'Toggle table of contents');
+    toggle.textContent = '▲';
+    toggle.addEventListener('click', function() {
+      isCollapsed = !isCollapsed;
+      el.classList.toggle('collapsed', isCollapsed);
+    });
+
+    header.appendChild(title);
+    header.appendChild(toggle);
+
+    var list = document.createElement('ul');
+    list.className = 'toc-list';
+
+    el.appendChild(header);
+    el.appendChild(list);
+    document.body.appendChild(el);
+
+    toc = el;
+    tocList = list;
+  }
+
+  function init() {
+    createToc();
+    buildToc();
+
+    // Rebuild when language changes
+    document.addEventListener('langChange', function() {
+      buildToc();
+    });
+    window.addEventListener('mite:langChange', function() {
+      buildToc();
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();

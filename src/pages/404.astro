@@ -1,0 +1,151 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import TopNav from '../components/TopNav.astro';
+import Sidebar from '../components/Sidebar.astro';
+import '../styles/global.css';
+import { getSidebarGroups } from '../data/sidebar-config.ts';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const sidebarGroups = getSidebarGroups('none');
+---
+<BaseLayout title="404 — MITE:BE Wiki" description="Az oldal nem található.">
+  <Header />
+  <TopNav currentPage="none" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<style>
+.not-found-box {
+  text-align: center;
+  padding: 48px 24px 40px;
+  background: var(--surface);
+  border: 1px solid var(--surface2);
+  border-radius: var(--radius);
+  margin: 32px 0;
+}
+.not-found-code {
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--gold);
+  letter-spacing: -4px;
+  margin-bottom: 8px;
+}
+.not-found-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 16px;
+}
+.not-found-msg {
+  font-size: 1.15rem;
+  color: var(--text2);
+  margin: 0 0 28px;
+}
+.home-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background: var(--gold);
+  color: #1a1209;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: opacity .15s, transform .15s;
+  margin-bottom: 36px;
+}
+.home-btn:hover {
+  opacity: .85;
+  transform: translateY(-2px);
+  color: #1a1209;
+}
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 4px;
+}
+.quick-links a {
+  padding: 8px 18px;
+  background: var(--bg2, var(--surface2));
+  border: 1px solid var(--surface2);
+  border-radius: var(--radius);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: .95rem;
+  transition: background .15s, border-color .15s;
+}
+.quick-links a:hover {
+  background: var(--surface2);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+.quick-links-label {
+  font-size: .85rem;
+  color: var(--text2);
+  margin-bottom: 10px;
+}
+</style>
+
+<!-- ==================== HUNGARIAN ==================== -->
+<div data-lang="hu">
+  <div class="not-found-box">
+    <span class="not-found-icon">🪨</span>
+    <div class="not-found-code">404</div>
+    <p class="not-found-msg">Ez az oldal nem létezik — lehet hogy átköltözött?</p>
+    <a href={`${base}/`} class="home-btn">← Vissza a főoldalra</a>
+    <div>
+      <p class="quick-links-label">Gyorslinkek a legfontosabb oldalakhoz:</p>
+      <div class="quick-links">
+        <a href={`${base}/introduction/`}>Bevezetés</a>
+        <a href={`${base}/progression/`}>Haladás</a>
+        <a href={`${base}/items/`}>Tárgyak</a>
+        <a href={`${base}/recipes/`}>Receptek</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== ENGLISH ==================== -->
+<div data-lang="en">
+  <div class="not-found-box">
+    <span class="not-found-icon">🪨</span>
+    <div class="not-found-code">404</div>
+    <p class="not-found-msg">This page doesn't exist — it may have moved.</p>
+    <a href={`${base}/`} class="home-btn">← Back to homepage</a>
+    <div>
+      <p class="quick-links-label">Quick links to the most important pages:</p>
+      <div class="quick-links">
+        <a href={`${base}/introduction/`}>Introduction</a>
+        <a href={`${base}/progression/`}>Progression</a>
+        <a href={`${base}/items/`}>Items</a>
+        <a href={`${base}/recipes/`}>Recipes</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== RUSSIAN ==================== -->
+<div data-lang="ru">
+  <div class="not-found-box">
+    <span class="not-found-icon">🪨</span>
+    <div class="not-found-code">404</div>
+    <p class="not-found-msg">Страница не найдена — возможно, она переехала.</p>
+    <a href={`${base}/`} class="home-btn">← На главную</a>
+    <div>
+      <p class="quick-links-label">Быстрые ссылки на важные разделы:</p>
+      <div class="quick-links">
+        <a href={`${base}/introduction/`}>Введение</a>
+        <a href={`${base}/progression/`}>Прогрессия</a>
+        <a href={`${base}/items/`}>Предметы</a>
+        <a href={`${base}/recipes/`}>Рецепты</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+  </div>
+</BaseLayout>
