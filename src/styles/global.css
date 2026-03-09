@@ -100,14 +100,14 @@ ul, ol { margin: 8px 0 8px 25px; }
 li { margin: 3px 0; }
 
 /* ===== Info boxes ===== */
-.tip, .warning, .recipe-box, .recipe, .info { padding: 12px 16px; border-radius: var(--radius); margin: 14px 0; border-left: 4px solid; backdrop-filter: blur(4px); line-height: 1.7; }
+.tip, .warning, .warning-box, .recipe-box, .recipe, .info, .info-box { padding: 12px 16px; border-radius: var(--radius); margin: 14px 0; border-left: 4px solid; backdrop-filter: blur(4px); line-height: 1.7; }
 .tip { background: rgba(78,204,163,.07); border-color: var(--green); }
 .tip::before { content: '\1F4A1 '; font-size: 1em; }
-.warning { background: rgba(233,69,96,.07); border-color: var(--accent); }
+.warning, .warning-box { background: rgba(233,69,96,.07); border-color: var(--accent); }
 .warning::before { content: '\26A0\FE0F '; font-size: 1em; }
 .recipe-box, .recipe { background: rgba(240,192,64,.07); border-color: var(--gold); }
 .recipe::before { content: '\1F528 '; font-size: 1em; }
-.info { background: rgba(126,200,227,.07); border-color: var(--mithril); }
+.info, .info-box { background: rgba(126,200,227,.07); border-color: var(--mithril); }
 
 /* ===== Tables ===== */
 table { width: 100%; border-collapse: collapse; margin: 14px 0; background: var(--surface); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
