@@ -721,10 +721,8 @@ document.addEventListener('DOMContentLoaded', () => {
     toc.style.display = '';
 
     h2s.forEach(function(h) {
-      // Strip the anchor-link emoji from the text
-      var text = h.childNodes[0]
-        ? h.childNodes[0].textContent.trim()
-        : h.textContent.trim();
+      // Strip the anchor-link element from heading text
+      var text = h.textContent.replace('🔗', '').trim();
 
       var li = document.createElement('li');
       li.className = 'toc-item';
