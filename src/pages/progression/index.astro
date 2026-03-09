@@ -17,6 +17,21 @@ const sidebarGroups = getSidebarGroups('progression');
     <Sidebar groups={sidebarGroups} />
     <main class="content">
 
+<div id="prog-summary" style="margin-bottom:16px; font-size:.9em; color:var(--text2);"></div>
+<script is:inline>
+(function() {
+  var pages = ['early-game','furnaces','metal-ages','underground','late-game','nether','endgame'];
+  try {
+    var done = JSON.parse(localStorage.getItem('mite-wiki-progress') || '[]');
+    var count = pages.filter(function(p) { return done.includes(p); }).length;
+    var el = document.getElementById('prog-summary');
+    if (el && count > 0) {
+      el.innerHTML = '<span style="color:#4caf50">✓ ' + count + '/7</span> fejezet befejezve';
+    }
+  } catch(e) {}
+})();
+</script>
+
 <div data-lang="hu">
 <h1 id="progression">Fejlődési Útmutató</h1>
 <p>A MITE:BE progressziója lépésről lépésre halad — kovakortól az Ender-sárkányig. Válaszd ki a megfelelő szakaszt a bal oldali menüből vagy az alábbi kártyákból!</p>

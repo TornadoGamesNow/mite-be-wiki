@@ -5,12 +5,13 @@ interface Props {
 const { currentPage = '' } = Astro.props;
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const isDev = import.meta.env.DEV;
 
 function isActive(ids: string[]): boolean {
   return ids.includes(currentPage);
 }
 ---
-<nav class="top-nav">
+<nav class="top-nav" data-dev={isDev ? 'true' : 'false'}>
   <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">&#9776;</button>
   <div class="top-nav-links">
 
@@ -259,7 +260,18 @@ function isActive(ids: string[]): boolean {
 
         searchResults.classList.add('open');
       }).catch(function(e) {
-        console.error('Pagefind search error:', e);
+        var nav = document.querySelector('.top-nav');
+        var devMode = nav && nav.getAttribute('data-dev') === 'true';
+        if (devMode) {
+          var lang = getLang();
+          var msg = lang === 'en' ? 'Search only available after build'
+                  : lang === 'ru' ? 'Поиск доступен только после сборки'
+                  : 'Keresés csak build után érhető el';
+          searchResults.innerHTML = '<div class="ws-empty ws-dev-notice">' + msg + '</div>';
+          searchResults.classList.add('open');
+        } else {
+          console.error('Pagefind search error:', e);
+        }
       });
     }
   })();

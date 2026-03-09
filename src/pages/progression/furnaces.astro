@@ -7,6 +7,7 @@ import CraftingGrid from '../../components/CraftingGrid.astro';
 import PageSummary from '../../components/PageSummary.astro';
 import ProgressionBreadcrumb from '../../components/ProgressionBreadcrumb.astro';
 import RelatedPages from '../../components/RelatedPages.astro';
+import ProgressComplete from '../../components/ProgressComplete.astro';
 import '../../styles/global.css';
 
 import { getSidebarGroups } from '../../data/sidebar-config.ts';
@@ -45,10 +46,10 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 
 <!-- ===== KEMENCÉK ===== -->
 
-<h2 id="clay-furnace">Agyagkemence</h2>
-<div class="recipe">4× Agyagblokk → Agyag Kemence (Kova Munkaasztalon)</div>
+<h2 id="clay-furnace"><span class="wiki-item" data-id="clay_furnace">Agyagkemence</span></h2>
+<div class="recipe">4× Agyagblokk → <span class="wiki-item" data-id="clay_furnace">Agyag Kemence</span> (Kova Munkaasztalon)</div>
 
-<p>Keress agyagot patakokban vagy tavaknál. Az agyagkemence az első olvasztóeszközöd, de nem elég erős fém olvasztásához!</p>
+<p>Keress agyagot patakokban vagy tavaknál. Az <span class="wiki-item" data-id="clay_furnace">agyagkemence</span> az első olvasztóeszközöd, de nem elég erős fém olvasztásához!</p>
 
 <h2 id="campfire">Tábortűz</h2>
 <div class="recipe">(Munkaasztalon craftolható)</div>
@@ -92,7 +93,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
   </div>
 </div>
 
-<h2 id="ingot-mold">Obszidián Öntőforma</h2>
+<h2 id="ingot-mold">Obszidián <span class="wiki-item" data-id="obsidian_ingot_mould">Öntőforma</span></h2>
 <p>Ez a kulcs a fémolvasztáshoz!</p>
 <div class="flow">
   <span class="flow-item">Kavics szitálása</span>
@@ -299,6 +300,8 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 <div class="tip">После плавки делай инструменты на металлическом верстаке (например, Медном). Рядом с палкой клади <strong>глину</strong> для защиты рукоятки!</div>
 
 </div>
+
+<ProgressComplete pageId="furnaces" />
 
 <RelatedPages
   prev={{ href: `${base}/progression/early-game/`, label: { hu: 'Korai Játék', en: 'Early Game', ru: 'Начало игры' } }}

@@ -7,6 +7,7 @@ import CraftingGrid from '../../components/CraftingGrid.astro';
 import PageSummary from '../../components/PageSummary.astro';
 import ProgressionBreadcrumb from '../../components/ProgressionBreadcrumb.astro';
 import RelatedPages from '../../components/RelatedPages.astro';
+import ProgressComplete from '../../components/ProgressComplete.astro';
 import '../../styles/global.css';
 
 import { getSidebarGroups } from '../../data/sidebar-config.ts';
@@ -315,6 +316,8 @@ const sidebarGroups = getSidebarGroups('progression/nether');
 </div>
 
 </div>
+
+<ProgressComplete pageId="nether" />
 
 <RelatedPages
   prev={{ href: `${base}/progression/late-game/`, label: { hu: 'Késői Játék', en: 'Late Game', ru: 'Поздняя игра' } }}

@@ -1,0 +1,52 @@
+---
+interface Props { pageId: string; }
+const { pageId } = Astro.props;
+---
+
+<div class="progress-complete" id={`progress-complete-${pageId}`}>
+  <button class="progress-complete-btn" id={`progress-btn-${pageId}`} data-page={pageId}>
+    <span class="progress-complete-icon">☐</span>
+    <span data-lang="hu">Befejeztem ezt a fejezetet</span>
+    <span data-lang="en">Mark this chapter as complete</span>
+    <span data-lang="ru">Отметить главу как выполненную</span>
+  </button>
+</div>
+
+<script is:inline define:vars={{ pageId }}>
+(function() {
+  var key = 'mite-wiki-progress';
+  function getProgress() {
+    try { return JSON.parse(localStorage.getItem(key) || '[]'); } catch(e) { return []; }
+  }
+  function setProgress(arr) {
+    localStorage.setItem(key, JSON.stringify(arr));
+  }
+  function updateUI(done) {
+    var btn = document.getElementById('progress-btn-' + pageId);
+    if (!btn) return;
+    var icon = btn.querySelector('.progress-complete-icon');
+    if (done) {
+      btn.classList.add('done');
+      if (icon) icon.textContent = '✓';
+    } else {
+      btn.classList.remove('done');
+      if (icon) icon.textContent = '☐';
+    }
+  }
+  var progress = getProgress();
+  var isDone = progress.includes(pageId);
+  updateUI(isDone);
+  var btn = document.getElementById('progress-btn-' + pageId);
+  if (btn) {
+    btn.addEventListener('click', function() {
+      var p = getProgress();
+      var idx = p.indexOf(pageId);
+      if (idx >= 0) { p.splice(idx, 1); } else { p.push(pageId); }
+      setProgress(p);
+      updateUI(p.includes(pageId));
+      // Breadcrumb frissítése
+      window.dispatchEvent(new CustomEvent('progress-update'));
+    });
+  }
+})();
+</script>

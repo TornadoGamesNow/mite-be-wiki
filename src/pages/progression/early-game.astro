@@ -7,6 +7,7 @@ import CraftingGrid from '../../components/CraftingGrid.astro';
 import PageSummary from '../../components/PageSummary.astro';
 import ProgressionBreadcrumb from '../../components/ProgressionBreadcrumb.astro';
 import RelatedPages from '../../components/RelatedPages.astro';
+import ProgressComplete from '../../components/ProgressComplete.astro';
 import '../../styles/global.css';
 
 import { getSidebarGroups } from '../../data/sidebar-config.ts';
@@ -70,7 +71,7 @@ const sidebarGroups = getSidebarGroups('progression/early-game');
   </div>
   <div class="timeline-item">
     <h4>4. Kovaszilánk szerzés</h4>
-    <p>Áss <strong>kavicsot</strong> (Zuzalék) kézzel – <em>Kovaszilánk (Kova Csipke)</em> eshet ki belőle. Ez az első „szerszám-anyag".</p>
+    <p>Áss <strong>kavicsot</strong> (Zuzalék) kézzel – <em><span class="wiki-item" data-id="flint_shard">Kovaszilánk</span> (Kova Csipke)</em> eshet ki belőle. Ez az első „szerszám-anyag".</p>
   </div>
 </div>
 
@@ -96,8 +97,8 @@ const sidebarGroups = getSidebarGroups('progression/early-game');
 <h2 id="flint-age">Kova Korszak</h2>
 <p>A kovaszilánkokból (Kova Csipke) és kovadarabokból (Kőzet / Pedzerit) készíted az első igazi szerszámaidat.</p>
 
-<h3>Alap Kovakés (Kovakés)</h3>
-<div class="recipe">Szalmakötél + Kovaszilánk + Fabot → Kovakés</div>
+<h3>Alap Kovakés (<span class="wiki-item" data-id="flint_knife">Kovakés</span>)</h3>
+<div class="recipe"><span class="wiki-item" data-id="straw_rope">Szalmakötél</span> + <span class="wiki-item" data-id="flint_shard">Kovaszilánk</span> + Fabot → <span class="wiki-item" data-id="flint_knife">Kovakés</span></div>
   <CraftingGrid recipeFullId="simple_stone_knife" label={{hu: "Kovakés", en: "Simple Flint Knife"}}/>
 
 <p>Az első vágóeszközöd. Ezzel tudsz bőrt vágni, ami bőrkötelet ad.</p>
@@ -118,8 +119,8 @@ const sidebarGroups = getSidebarGroups('progression/early-game');
   <CraftingGrid recipeFullId="stone_knife" label={{hu: "Kovakés", en: "Flint Knife"}}/>
 
 
-<h3>Kis Fejsze (Kova Kézbalta)</h3>
-<div class="recipe">Kova + Ín + 2× Fabot → Kova Kézbalta</div>
+<h3>Kis Fejsze (<span class="wiki-item" data-id="flint_hatchet">Kova Kézbalta</span>)</h3>
+<div class="recipe">Kova + Ín + 2× Fabot → <span class="wiki-item" data-id="flint_hatchet">Kova Kézbalta</span></div>
   <CraftingGrid recipeOutput="flint_hatchet" label={{hu: "Kova Kézbalta", en: "Flint Short Hatchet"}}/>
 
 <p>Végre tudsz fát vágni! Ez a mérföldkő, ami mindent megváltoztat.</p>
@@ -373,6 +374,8 @@ If you find a sheep before the first night and get some wool, you can sieve much
 <div class="warning">Не пренебрегай ситом — это основной способ получить металлы в ранней игре!</div>
 
 </div>
+
+<ProgressComplete pageId="early-game" />
 
 <RelatedPages
   next={{ href: `${base}/progression/furnaces/`, label: { hu: 'Kemencék & Olvasztás', en: 'Furnaces & Smelting', ru: 'Печи и плавка' } }}

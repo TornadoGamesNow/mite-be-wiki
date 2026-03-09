@@ -71,6 +71,7 @@ html:not([data-lang-init]) span[data-lang="hu"] { display: inline; }
 .ws-excerpt { color: var(--text2); font-size: .82em; margin-top: 2px; line-height: 1.4; }
 .ws-excerpt mark { background: var(--green); color: var(--bg); padding: 0 2px; border-radius: 2px; }
 .ws-empty { padding: 14px; color: var(--text2); text-align: center; font-size: .9em; }
+.ws-dev-notice { color: #92400e; background: #fef3c7; border: 1px solid #f59e0b; border-radius: 4px; }
 
 /* ===== Layout container ===== */
 .container { display: flex; max-width: 1440px; margin: 0 auto; }
@@ -536,6 +537,13 @@ h2:hover .anchor-link, h3:hover .anchor-link { opacity: 1; }
 .related-pages-label { font-size: .78em; color: var(--text2); text-transform: uppercase; letter-spacing: .5px; }
 .related-pages-link { font-size: .86em; color: var(--green); padding: 2px 8px; background: var(--surface); border-radius: 4px; border: 1px solid var(--surface2); text-decoration: none; transition: color .15s, border-color .15s; }
 .related-pages-link:hover { color: var(--gold); border-color: var(--gold); }
+
+/* ===== Progress Complete ===== */
+.progress-complete { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--surface2); }
+.progress-complete-btn { display: inline-flex; align-items: center; gap: 10px; padding: 10px 20px; background: var(--surface); border: 1px solid var(--surface2); border-radius: 8px; color: var(--text2); cursor: pointer; font-size: .9em; font-family: inherit; transition: all .2s; }
+.progress-complete-btn:hover { border-color: var(--gold); color: var(--text); }
+.progress-complete-btn.done { background: rgba(100,200,100,.1); border-color: #4caf50; color: #4caf50; }
+.progress-complete-icon { font-size: 1.1em; }
 
 /* ===== ProgressionBreadcrumb ===== */
 .progression-breadcrumb {

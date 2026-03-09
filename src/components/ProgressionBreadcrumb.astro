@@ -24,14 +24,14 @@ const steps: { id: Step; hu: string; en: string; ru: string; icon: string }[] = 
     <>
       {i > 0 && <span class="pb-sep">›</span>}
       {step.id === current ? (
-        <span class="pb-node pb-current">
+        <span class="pb-node pb-current" data-page={step.id}>
           {step.icon}
           <span data-lang="hu">{step.hu}</span>
           <span data-lang="en">{step.en}</span>
           <span data-lang="ru">{step.ru}</span>
         </span>
       ) : (
-        <a href={`${base}/progression/${step.id}/`} class="pb-node pb-other">
+        <a href={`${base}/progression/${step.id}/`} class="pb-node pb-other" data-page={step.id}>
           {step.icon}
           <span data-lang="hu">{step.hu}</span>
           <span data-lang="en">{step.en}</span>
@@ -41,3 +41,30 @@ const steps: { id: Step; hu: string; en: string; ru: string; icon: string }[] = 
     </>
   ))}
 </div>
+
+<script is:inline>
+(function() {
+  function updateBreadcrumb() {
+    try {
+      var progress = JSON.parse(localStorage.getItem('mite-wiki-progress') || '[]');
+      document.querySelectorAll('.pb-node[data-page]').forEach(function(node) {
+        var page = node.getAttribute('data-page');
+        if (progress.includes(page)) {
+          if (!node.querySelector('.prog-done-icon')) {
+            var icon = document.createElement('span');
+            icon.className = 'prog-done-icon';
+            icon.textContent = ' ✓';
+            icon.style.cssText = 'color:#4caf50;font-size:.8em;';
+            node.appendChild(icon);
+          }
+        } else {
+          var existing = node.querySelector('.prog-done-icon');
+          if (existing) existing.remove();
+        }
+      });
+    } catch(e) {}
+  }
+  updateBreadcrumb();
+  window.addEventListener('progress-update', updateBreadcrumb);
+})();
+</script>

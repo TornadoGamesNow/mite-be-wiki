@@ -576,6 +576,81 @@ function initSectionAnchors() {
   });
 }
 
+// ── Item tooltips ──────────────────────────────────────────────
+(function() {
+  var tip = null;
+  var BASE = document.documentElement.dataset.base || '';
+
+  function createTip() {
+    var el = document.createElement('div');
+    el.id = 'wiki-item-tip';
+    el.style.cssText = [
+      'position:fixed','z-index:9999','pointer-events:none',
+      'background:var(--bg2,#1a1a2e)','border:1px solid var(--surface2,#333)',
+      'border-radius:8px','padding:8px 12px','display:none',
+      'align-items:center','gap:10px','box-shadow:0 4px 20px rgba(0,0,0,.5)',
+      'max-width:260px','font-family:inherit'
+    ].join(';');
+    document.body.appendChild(el);
+    return el;
+  }
+
+  function show(e) {
+    var id = this.dataset.id;
+    if (!id) return;
+    // items adatot a window.MITE_ITEMS-ből olvasuk (ha be van töltve)
+    var items = window.MITE_ITEMS || {};
+    var item = items[id];
+    if (!tip) tip = createTip();
+    var lang = localStorage.getItem('mite-wiki-lang') || 'hu';
+    var name = item ? (item.name[lang] || item.name.en || id) : id;
+    var img = item ? item.img : null;
+    var tier = item ? item.tier : null;
+    var tierColors = {
+      flint:'#aaa',bone:'#e0d0b0',copper:'#cd7f32',silver:'#c0c0c0',
+      iron:'#a8a9ad',gold:'#ffd700',bronze:'#cd7f32',
+      hardstone:'#8B7355',ancient_metal:'#9b59b6',mithril:'#4fc3f7',
+      adamantium:'#f0c040',mercury:'#00e5ff'
+    };
+    var color = tier ? (tierColors[tier] || '#aaa') : '#aaa';
+    tip.style.display = 'flex';
+    tip.innerHTML = (img ? '<img src="' + BASE + '/' + img + '" width="28" height="28" style="image-rendering:pixelated;flex-shrink:0">' : '') +
+      '<div><div style="font-weight:600;color:var(--text,#eee)">' + name + '</div>' +
+      (tier ? '<div style="font-size:.75em;color:' + color + ';margin-top:2px">' + tier + '</div>' : '') +
+      '</div>';
+    moveTip(e);
+  }
+
+  function moveTip(e) {
+    if (!tip || tip.style.display === 'none') return;
+    var x = e.clientX + 16, y = e.clientY + 16;
+    var w = tip.offsetWidth, h = tip.offsetHeight;
+    if (x + w > window.innerWidth - 8) x = e.clientX - w - 8;
+    if (y + h > window.innerHeight - 8) y = e.clientY - h - 8;
+    tip.style.left = x + 'px';
+    tip.style.top = y + 'px';
+  }
+
+  function hide() {
+    if (tip) tip.style.display = 'none';
+  }
+
+  function init() {
+    document.querySelectorAll('.wiki-item[data-id]').forEach(function(el) {
+      el.style.cssText += 'cursor:help;border-bottom:1px dotted var(--gold,#f0c040);';
+      el.addEventListener('mouseenter', show);
+      el.addEventListener('mousemove', moveTip);
+      el.addEventListener('mouseleave', hide);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+
 // ── Init All ──
 document.addEventListener('DOMContentLoaded', () => {
   let saved;

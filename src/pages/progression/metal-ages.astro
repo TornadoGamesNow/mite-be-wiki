@@ -7,6 +7,7 @@ import CraftingGrid from '../../components/CraftingGrid.astro';
 import PageSummary from '../../components/PageSummary.astro';
 import ProgressionBreadcrumb from '../../components/ProgressionBreadcrumb.astro';
 import RelatedPages from '../../components/RelatedPages.astro';
+import ProgressComplete from '../../components/ProgressComplete.astro';
 import '../../styles/global.css';
 
 import { getSidebarGroups } from '../../data/sidebar-config.ts';
@@ -71,7 +72,7 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 
 <table>
   <tr><th>Ötvözet</th><th>Összetétel</th><th>Különleges képesség</th></tr>
-  <tr class="alloy-row"><td><span class="tier t-copper">Bronz</span></td><td>Réz + Ón</td><td>+20% futás sebesség (teljes szett)</td></tr>
+  <tr class="alloy-row"><td><span class="tier t-copper"><span class="wiki-item" data-id="bronze_ingot">Bronz</span></span></td><td>Réz + Ón</td><td>+20% futás sebesség (teljes szett)</td></tr>
   <tr class="alloy-row"><td><span class="tier t-silver">Ezüst-Réz</span></td><td>Ezüst + Réz</td><td>-10% elszenvedett sérülés, extra sebzés élőholtak ellen, debuff csökkentés. Réz és ezüst darabokkal javítható.</td></tr>
   <tr class="alloy-row"><td><span class="tier t-iron">Szénacél</span></td><td>Vas + Szénkristály</td><td>5% sérülés csökkentés darabonként, lánc bányászat (tartsd a gombot). Elég erős a földalatti világ bejárásához.</td></tr>
 </table>
@@ -408,6 +409,8 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 </table>
 
 </div>
+
+<ProgressComplete pageId="metal-ages" />
 
 <RelatedPages
   prev={{ href: `${base}/progression/furnaces/`, label: { hu: 'Kemencék & Olvasztás', en: 'Furnaces & Smelting', ru: 'Печи и плавка' } }}

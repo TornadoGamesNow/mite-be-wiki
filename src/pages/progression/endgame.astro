@@ -6,6 +6,7 @@ import Sidebar from '../../components/Sidebar.astro';
 import PageSummary from '../../components/PageSummary.astro';
 import ProgressionBreadcrumb from '../../components/ProgressionBreadcrumb.astro';
 import RelatedPages from '../../components/RelatedPages.astro';
+import ProgressComplete from '../../components/ProgressComplete.astro';
 import '../../styles/global.css';
 
 import { getSidebarGroups } from '../../data/sidebar-config.ts';
@@ -195,6 +196,8 @@ const sidebarGroups = getSidebarGroups('progression/endgame');
 <div class="tip">Когда Дракон Края погибает, достижение получают все присутствующие игроки!</div>
 
 </div>
+
+<ProgressComplete pageId="endgame" />
 
 <RelatedPages
   prev={{ href: `${base}/progression/nether/`, label: { hu: 'Alvilág (Nether)', en: 'The Nether', ru: 'Незер' } }}
