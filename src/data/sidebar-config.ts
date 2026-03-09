@@ -122,6 +122,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
         title: '📚 Reference',
         links: [
           { href: `${base}/recipes/`, label: 'Recipes' },
+          { href: `${base}/crafting-tree/`, label: 'Crafting Tree' },
           { href: `${base}/items/`, label: 'Items' },
           { href: `${base}/mobs/`, label: 'Bestiary' },
           { href: `${base}/biomes/`, label: 'Biomes' },
@@ -174,6 +175,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
         title: '📚 Справочник',
         links: [
           { href: `${base}/recipes/`, label: 'Рецепты' },
+          { href: `${base}/crafting-tree/`, label: 'Дерево крафта' },
           { href: `${base}/items/`, label: 'Предметы' },
           { href: `${base}/mobs/`, label: 'Бестиарий' },
           { href: `${base}/biomes/`, label: 'Биомы' },
