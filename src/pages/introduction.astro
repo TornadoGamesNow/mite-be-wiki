@@ -11,9 +11,9 @@ import '../styles/global.css';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const sidebarGroups = getSidebarGroups('introduction');
 ---
-<BaseLayout title="Bevezetés — MITE:BE Wiki" description="Mi a MITE: Break Everything? Ismerd meg a moddot, a fejlődési rendszert és azt, mire számíts mint új játékos.">
+<BaseLayout title="Introduction — MITE:BE Wiki" description="What is MITE: Break Everything? Learn about the mod, progression system and what to expect as a new player.">
   <Header />
-  <TopNav currentPage="home" />
+  <TopNav currentPage="introduction" />
   <div class="container">
     <Sidebar groups={sidebarGroups} />
     <main class="content">
@@ -164,7 +164,10 @@ const sidebarGroups = getSidebarGroups('introduction');
 <span class="prog-arrow">→</span><span class="prog-node n-fiber"><img src="/mite-be-wiki/img/items/straw_rope.png" alt="">Соломенная верёвка</span>
 <span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/shards/flint.png" alt="">Кремнёвый нож</span>
 <span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/crafting_table_front.png" alt="">Верстак</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/sieve.png" alt="">Сито</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/items/clay_furnace_idle.png" alt="">Глиняная печь</span>
 <span class="prog-arrow">→</span><span class="prog-node n-copper"><img src="/mite-be-wiki/img/ingots/copper.png" alt="">Медь</span>
+<span class="prog-arrow">→</span><span class="prog-node n-silver"><img src="/mite-be-wiki/img/ingots/silver.png" alt="">Серебро</span>
 <span class="prog-arrow">→</span><span class="prog-node n-iron"><img src="/mite-be-wiki/img/items/iron_ingot.png" alt="">Железо</span>
 <span class="prog-arrow">→</span><span class="prog-node n-hard"><img src="/mite-be-wiki/img/ingots/hardstone.png" alt="">Твердокамень</span>
 <span class="prog-arrow">→</span><span class="prog-node n-underground">🕳️ Подземный мир</span>
@@ -179,18 +182,33 @@ const sidebarGroups = getSidebarGroups('introduction');
 <ul>
   <li><strong>Первая ночь:</strong> У вас, скорее всего, не будет факела. Это нормально. Залезайте на дерево.</li>
   <li><strong>Первые дни:</strong> Никакого металла — только кремень, соломенная верёвка и растительное волокно.</li>
+  <li><strong>Первая печь:</strong> Строится из глины — каменная печь приходит только после этого.</li>
+  <li><strong>Первый металл:</strong> Из фрагментов руды при просеивании гравия — вот зачем нужно сито!</li>
   <li><strong>Прогресс блокирующий:</strong> Без железной кирки нельзя добыть твердокамень. Никаких сокращений.</li>
 </ul>
 
 <h3>Как читать эту вики?</h3>
 <div class="info-box">📚 <strong>Рекомендуемый порядок чтения:</strong>
 <ol style="margin:6px 0 0 0">
-  <li><strong>Введение</strong> (эта страница)</li>
-  <li><a href={`${base}/quick-start/`}><strong>Быстрый старт</strong></a></li>
-  <li><a href={`${base}/game-modes/`}><strong>Режимы игры</strong></a></li>
-  <li><a href={`${base}/systems/`}><strong>Системы</strong></a></li>
-  <li><a href={`${base}/progression/`}><strong>Прогресс</strong></a></li>
+  <li><strong>Введение</strong> (эта страница) — Что такое MITE:BE и чего ожидать</li>
+  <li><a href={`${base}/quick-start/`}><strong>Быстрый старт</strong></a> — Решения и приоритеты первых дней</li>
+  <li><a href={`${base}/game-modes/`}><strong>Режимы игры</strong></a> — Simple vs. Hardcore, обзор новых механик</li>
+  <li><a href={`${base}/systems/`}><strong>Системы</strong></a> — Глубокое понимание (питание, бой, навыки)</li>
+  <li><a href={`${base}/progression/`}><strong>Прогресс</strong></a> — Детальные руководства по этапам</li>
 </ol></div>
+
+<h3>Система уровней и XP</h3>
+<p>В MITE:BE твой <strong>уровень</strong> напрямую влияет на геймплей. Уровень может быть от <strong>-40 до +200</strong> — смерть вычитает XP, так что уровень может снижаться!</p>
+
+<table class="compare-table">
+  <tr><th>Уровень</th><th>Нужно XP</th><th>Макс. HP</th><th>Добыча</th><th>Скорость крафта</th></tr>
+  <tr><td>0</td><td>0</td><td>3♥</td><td>0%</td><td>0%</td></tr>
+  <tr><td>5</td><td>200</td><td>4♥</td><td>0%</td><td>+10%</td></tr>
+  <tr><td>15</td><td>1 350</td><td>5♥</td><td>+10%</td><td>+30%</td></tr>
+  <tr><td>30</td><td>4 950</td><td>7♥</td><td>+10%</td><td>+60%</td></tr>
+  <tr><td>50</td><td>13 250</td><td>10♥</td><td>+20%</td><td>+100%</td></tr>
+</table>
+<div class="info-box">⚠️ <strong>На отрицательных уровнях</strong> крафт замедляется (–2%/уровень). Смерть снижает уровень — поэтому твой уровень ценен.</div>
 </div>
 
 <RelatedPages

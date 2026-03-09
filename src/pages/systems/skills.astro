@@ -13,9 +13,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const sidebarGroups = getSidebarGroups('systems/skills');
 ---
 
-<BaseLayout title="Képességek — MITE:BE Wiki" description="MITE:BE képességek: Tudáskönyvek, Kovácsmesterség (331 recept), Ételkészítés, Barkácsolás — hogyan és hol szerzed meg őket.">
+<BaseLayout title="Skills — MITE:BE Wiki" description="MITE:BE skills: Knowledge Books, Blacksmithing (331 recipes), Food Prep, Tinkering — how and where to get them.">
   <Header />
-  <TopNav currentPage="home" />
+  <TopNav currentPage="systems" />
   <div class="container">
     <Sidebar groups={sidebarGroups} />
     <main class="content">
@@ -402,7 +402,7 @@ const sidebarGroups = getSidebarGroups('systems/skills');
 </table>
 </div>
 
-<div data-lang="ru" id="Kovácsmesterség-ru">
+<div data-lang="ru" id="blacksmithing-ru">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⚒ Кузнечное дело</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p>Самый обширный навык — <strong>331 рецепт</strong>. Без него нельзя скрафтить металлические инструменты, оружие или броню.</p>
 <table class="compare-table">
@@ -417,7 +417,7 @@ const sidebarGroups = getSidebarGroups('systems/skills');
 </div></div></div>
 </div>
 
-<div data-lang="ru" id="Ácsmesterség-ru">
+<div data-lang="ru" id="carpentry-ru">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🪵 Плотницкое дело</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p><strong>99 рецептов</strong>. Мастерство дерева — доски, балки, сундуки, рамы и другие деревянные предметы.</p>
 <table class="compare-table">
@@ -460,7 +460,7 @@ const sidebarGroups = getSidebarGroups('systems/skills');
 </div></div></div>
 </div>
 
-<div data-lang="ru" id="Kőfaragás-ru">
+<div data-lang="ru" id="masonry-ru">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🧱 Каменное дело</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p><strong>77 рецептов</strong>. Навык для работы с камнем, кирпичом и глиной. Нужен для прочных построек и возведения печей.</p>
 <table class="compare-table">
@@ -488,7 +488,7 @@ const sidebarGroups = getSidebarGroups('systems/skills');
 </div></div></div>
 </div>
 
-<div data-lang="ru" id="Íjászat-ru">
+<div data-lang="ru" id="archery-ru">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🏹 Стрельба из лука</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p><strong>18 рецептов</strong>. Луки, стрелы и снаряжение для дальнего боя.</p>
 <table class="compare-table">
@@ -501,7 +501,7 @@ const sidebarGroups = getSidebarGroups('systems/skills');
 </div></div></div>
 </div>
 
-<div data-lang="ru" id="Barkácsolás-ru">
+<div data-lang="ru" id="tinkering-ru">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🔧 Механика</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p><strong>19 рецептов</strong>. Навык для механических устройств — сита, фильтры, ловушки и хранилища.</p>
 <table class="compare-table">
@@ -514,7 +514,7 @@ const sidebarGroups = getSidebarGroups('systems/skills');
 </div></div></div>
 </div>
 
-<div data-lang="ru" id="Horgászat-ru">
+<div data-lang="ru" id="fishing-ru">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🎣 Рыбалка</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p><strong>10 рецептов</strong>. Удочки и рыболовное снаряжение из различных материалов.</p>
 <table class="compare-table">
@@ -525,7 +525,7 @@ const sidebarGroups = getSidebarGroups('systems/skills');
 </div></div></div>
 </div>
 
-<div data-lang="ru" id="Gazdálkodás-ru">
+<div data-lang="ru" id="farming-ru">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌾 Земледелие</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p><strong>4 рецепта</strong>. Навык для обработки семян и садовых инструментов.</p>
 <table class="compare-table">
@@ -536,7 +536,7 @@ const sidebarGroups = getSidebarGroups('systems/skills');
 </div></div></div>
 </div>
 
-<div data-lang="ru" id="Bányászat-ru">
+<div data-lang="ru" id="mining-ru">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>⛏ Горное дело</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 <p><strong>3 рецепта</strong>. Навык для горного снаряжения и добычи.</p>
 <table class="compare-table">

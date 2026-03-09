@@ -15,7 +15,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const sidebarGroups = getSidebarGroups('progression/underground');
 ---
-<BaseLayout title="Földalatti Világ | MITE:BE Wiki" description="MITE:BE földalatti világ: barlangok, Underground dimenzió, keménykő, Ősi Fém. Minimum teljes vas felszereléssel lépj be.">
+<BaseLayout title="Underground World | MITE:BE Wiki" description="MITE:BE underground world: caves, Underground dimension, hardstone, Ancient Metal. Enter with full iron gear minimum.">
   <Header />
   <TopNav currentPage="progression" />
   <div class="container">
@@ -385,20 +385,59 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 <h2 id="caves">Пещеры и добыча</h2>
 <p>Территории ниже Y=35 — опасные, но богатые ресурсами пещерные системы. Здесь найдёшь редкие руды и угольные кристаллы.</p>
 
+<div class="tip">Скрафти Шахтёрскую каску для лучшего источника света — отлично подходит для исследования! (Открывается через Книгу знаний.)</div>
+
 <h3>Уровни инструментов — какая кирка для какой руды?</h3>
+<p>В MITE:BE каждый блок имеет <strong>уровень добычи</strong>. Кирка меньшего уровня не добудет блок — он просто медленно сломается и ничего не даст!</p>
 <table class="compare-table">
   <tr><th>Уровень</th><th>Инструменты</th><th>Добываемые блоки</th></tr>
-  <tr><td><strong>2 — Медь/Серебро</strong></td><td>Медная, серебряная, золотая, бронзовая кирки</td><td><strong>Камень</strong>, угольная/железная/медная/серебряная руда</td></tr>
+  <tr><td><strong>1 — Кремень/Камень</strong></td><td>Кремниевая, Каменная кирки</td><td>Брёвна, Песчаник, Стекло, Лёд</td></tr>
+  <tr><td><strong>2 — Медь/Серебро</strong></td><td>Медная, серебряная, золотая, бронзовая кирки</td><td><strong>Камень</strong>, угольная/железная/медная/серебряной руда</td></tr>
   <tr><td><strong>3 — Железо</strong></td><td>Железная, твердокаменная, HC стальная кирки</td><td><strong>Обсидиан</strong>, <strong>Мифриловая руда</strong>, <strong>Твердокаменная руда</strong></td></tr>
   <tr><td><strong>4 — Мифрил</strong></td><td>Мифриловая кирка</td><td><strong>Алмазная руда</strong>, <strong>Адамантовая руда</strong></td></tr>
   <tr><td><strong>100 — Бедрок</strong></td><td>Только Измельчитель бедрока</td><td>Бедрок (Коренная порода)</td></tr>
 </table>
-<div class="warning-box"><strong>⚠️ Важно:</strong> Алмазную руду нельзя добыть железной киркой! Нужна Мифриловая кирка. То же для Адамантовой руды.</div>
+<div class="warning-box"><strong>⚠️ Важно:</strong> Алмазную руду нельзя добыть железной киркой! Нужна Мифриловая кирка. То же для Адамантовой руды. Вот почему достижение Мифриловой эпохи — ключевой прорыв в игре.</div>
+
+<h3>Таблица опыта (XP) с монстров</h3>
+<p>Хочешь быстро набрать опыт? Лучшие источники XP:</p>
+<table class="compare-table">
+  <tr><th>Существо</th><th>XP</th><th>Место</th></tr>
+  <tr><td>Властелин Скелетов-Мутантов</td><td style="color:#a0f"><strong>1000</strong></td><td>Глубокие пещеры/Подземный мир — Босс</td></tr>
+  <tr><td>Обсидиановый Голем</td><td style="color:#f44"><strong>150</strong></td><td>Подземный мир</td></tr>
+  <tr><td>Дракон Эндера</td><td style="color:#f44"><strong>100</strong></td><td>Энд</td></tr>
+  <tr><td>Призыватель Зомби</td><td style="color:#ff0"><strong>80</strong></td><td>Кладбища/Подземный мир</td></tr>
+  <tr><td>Иссушитель (Wither)</td><td style="color:#ff0"><strong>50</strong></td><td>Незер — Босс</td></tr>
+  <tr><td>Пещерный паук</td><td style="color:#5f5"><strong>10</strong></td><td>Пещерные системы</td></tr>
+  <tr><td>Скелет/Крипер/Паук/Зомби</td><td style="color:#aaa"><strong>5</strong></td><td>Везде ночью</td></tr>
+</table>
+
+<h3>Природные чудеса в глубинах</h3>
+<p>Сталактиты, сталагмиты, светящиеся грибы, световые водоросли, ледяные грибы и сосульки украшают пещеры. <strong>Пещера Красного Кристалла</strong> появляется как особый биом (открывается после 32 дня).</p>
+
+
+<!-- ===== UNDERGROUND ===== -->
 
 <h2 id="underground">Подземный мир</h2>
 <p>В MITE:BE Подземный мир — <strong>отдельное измерение</strong> под обычным миром. Чтобы войти, построй <strong>Обсидиановый портал на уровне бедрока</strong> и подожги его кремнём и сталью.</p>
 
-<div class="warning-box">⚠️ Подземный мир богат рудами, но полон мутировавших монстров! Минимум <strong>полная железная экипировка</strong> перед входом.</div>
+<div class="warning-box">⚠️ Подземный мир богат рудами, но полон мутировавших монстров! Минимум <strong>полная железная экипировка</strong> перед входом. Подготовь маршрут отступления!</div>
+
+<h3>Структуры</h3>
+<ul>
+  <li><strong>Пещера Красного Кристалла</strong> — редкий биом, открывается после 32 дня. Ценные кристаллы.</li>
+  <li><strong>Изумрудный Лес</strong> — подземный лесной биом со светящимися грибами. Изумрудная руда встречается чаще.</li>
+  <li><strong>Боевая Башня Грибного Леса</strong> — укреплённая структура в биоме Грибного Леса. Сундуки с наградами и сильные стражи.</li>
+</ul>
+
+<h3>Слои и глубины</h3>
+<table class="compare-table">
+  <tr><th>Глубина</th><th>Содержимое</th><th>Рекомендуемая экипировка</th></tr>
+  <tr><td>Верхние слои (Y 40+)</td><td>Твердокаменная руда, слабые монстры</td><td>Железная броня + оружие</td></tr>
+  <tr><td>Средние слои (Y 20–40)</td><td>Руда Древнего металла, Изумрудная руда, сильные монстры</td><td>Твердокаменная/Древний металл броня</td></tr>
+  <tr><td>Глубокие слои (Y 0–20)</td><td>Мифриловая руда, боссы, двойные спавнеры</td><td>Древний металл+ броня, зелья</td></tr>
+  <tr><td>Слой бедрока</td><td><strong>Мантия</strong> (переход в Незер)</td><td>Мифриловая броня рекомендована</td></tr>
+</table>
 
 <h3>Монстры Подземного мира</h3>
 <table class="compare-table">
@@ -406,25 +445,67 @@ const sidebarGroups = getSidebarGroups('progression/underground');
   <tr><td>Гуль</td><td>20</td><td>5</td><td>10</td><td>Замедление</td></tr>
   <tr><td>Вайт</td><td>30</td><td>7</td><td>15</td><td>Замедление + голод</td></tr>
   <tr><td>Невидимый Преследователь</td><td>20</td><td>5</td><td>10</td><td>Невидим! Только <strong>мифрил+</strong> оружие или зелье урона</td></tr>
+  <tr><td>Чёрная вдова</td><td>12</td><td>4</td><td>8</td><td>Сильное отравление</td></tr>
   <tr><td>Фазовый Паук</td><td>6</td><td>3</td><td>10</td><td>Проходит сквозь стены! Только <strong>Меч Древнего металла</strong></td></tr>
-  <tr><td>Земляной Элементаль</td><td>30</td><td>12</td><td>15</td><td>4 брони — только <strong>кирка</strong> наносит урон!</td></tr>
+  <tr><td>Летучая мышь-вампир / Гигантская</td><td>3/6</td><td>1/2</td><td>5/10</td><td>Кража жизни</td></tr>
+  <tr><td>Земляной Элементаль (5 видов)</td><td>30</td><td>12</td><td>15</td><td>4 брони — только <strong>кирка</strong> наносит урон!</td></tr>
 </table>
+<div class="info-box">⛏️ <strong>Земляной Элементаль:</strong> 5 видов (земля, камень, песок, гравий, глина). Только кирки наносят им урон — мечи почти не работают! Материал кирки должен быть не ниже уровня элементаля.</div>
+
+<h3>Стратегические советы</h3>
+<div class="tip-card">💡 <strong>Подготовка к Подземному миру:</strong>
+<ul style="margin:4px 0 0 0">
+  <li>Минимум <strong>полная железная броня и оружие</strong> — Твердокаменная/Древний металл для глубоких уровней</li>
+  <li>Возьми не менее <strong>64 факелов</strong> и <strong>Кремень и сталь</strong></li>
+  <li>Всегда помечай обратный путь (факелы слева → справа при возврате)</li>
+  <li>Построй <strong>Возвратный Портал</strong> до того, как зайдёшь слишком глубоко</li>
+  <li><strong>Меч Древнего металла</strong> обязателен для Фазовых Пауков — другое оружие не работает!</li>
+  <li>Возьми зелья (Регенерация, Ночное Зрение) если они доступны</li>
+</ul></div>
+<div class="tip-card">⚔️ <strong>Лучшее оружие для Подземного мира:</strong> <strong>Молот войны из Высокоуглеродистой стали + Убийца Нежити V</strong> — одним ударом уничтожает скелетов и нежить. Дёшево, прочно, и поражает Земляных Элементалей.</div>
+<div class="tip-card">💎 <strong>Мифрил из спавнеров:</strong> В подземных комнатах со спавнерами могут находиться готовые <strong>мифриловые слитки и блоки</strong> — это эффективнее, чем просто копать вслепую.</div>
+
+<h3>Лагерь Грабителей — Скрытое сокровище</h3>
+<div class="warning-box">⚔️ <strong>Предупреждение о сложности аванпоста в v0.9.0!</strong> Внутри аванпоста стало <strong>значительно сложнее</strong>:
+<ul style="margin:6px 0 0 0">
+  <li><strong>10+ спавнеров Карателей</strong> внутри здания — один каждые 2-3 шага</li>
+  <li>Каратели <strong>могут ломать блоки</strong> (они докопаются до тебя!)</li>
+  <li>Скорость появления выше, чем раньше</li>
+  <li>Награды уменьшены: <strong>Угольный кристалл убран</strong> из добычи</li>
+</ul>
+<strong>Не заходи неподготовленным</strong> — зачарованное золотое яблоко и минимум Твердокаменная/Древний металл экипировка!</div>
+<div class="tip-card">⚙️ <strong>Подземный механизм Лагеря Грабителей:</strong> В подземном лагере <strong>разложи наковальни вокруг + активируй рычаг в центре</strong> → откроется подземная камера с <strong>Адамантовыми, Мифриловыми и Красностонными блоками</strong>. Один из главных источников мифрила в игре!</div>
+
+<h3>Подземный мир → Незер</h3>
+<p>На самом глубоком уровне Подземного мира, в <strong>слое бедрока</strong>, найдёшь <strong>Мантию</strong> — переход в измерение Незер. Построй портал на магмовом слое для доступа в Незер.</p>
+<div class="info-box">🔥 <strong>В сложном режиме 3 слоя бедрока!</strong> Поиск Мантии займёт больше времени.</div>
+
+
+<!-- ===== HARDSTONE ===== -->
 
 <h2 id="hardstone">Твердокамень</h2>
 <p>Таинственный материал из Подземного мира. Возможно, в нём живёт древняя сила.</p>
+<p>Полный набор: кирка, топор, меч, кинжал, молот войны, коса, мотыга, лопата, шлем, нагрудник, поножи, ботинки, ведро, ножницы, верстак, наковальня.</p>
 <div class="craft-section">
   <CraftingGrid recipeOutput="hard_stone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword"}}/>
   <CraftingGrid recipeOutput="hard_stone_pickaxe" label={{hu: "Keménykőcsákány", en: "Hardstone Pickaxe"}}/>
+  <CraftingGrid recipeOutput="hard_stone_war_hammer" label={{hu: "Keménykő harci kalapács", en: "Hardstone War Hammer"}}/>
 </div>
 
 <h2 id="ancient-metal">Древний металл</h2>
 <p>Злая и грозная древняя сила живёт в нём. Древний металл — самый загадочный материал Подземного мира.</p>
 <h3>Бонус комплекта (4/4 предмета)</h3>
 <ul>
-  <li>-30% урон из Незера</li>
-  <li>Летучие мыши Незера не атакуют</li>
+  <li><strong>Усиление I:</strong> -30% урон из Незера</li>
+  <li><strong>Усиление II:</strong> Летучие мыши Незера не атакуют</li>
+  <li>Изношенная броня устойчива к коррозии</li>
   <li>Меч наносит урон Фазовым Паукам</li>
 </ul>
+<div class="craft-section">
+  <CraftingGrid recipeOutput="mithril_short_sword" label={{hu: "Mithril Rövidkard", en: "Mithril Short Sword"}}/>
+  <CraftingGrid recipeOutput="mithril_hand_axe" label={{hu: "Mithril Kézbalta", en: "Mithril Hand Axe"}}/>
+  <CraftingGrid recipeOutput="mithril_war_hammer" label={{hu: "Mithril harci kalapács", en: "Mithril War Hammer"}}/>
+</div>
 
 </div>
 

@@ -13,7 +13,7 @@ import '../../styles/global.css';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const sidebarGroups = getSidebarGroups('systems/survival');
 ---
-<BaseLayout title="Túlélés — MITE:BE Wiki" description="MITE:BE túlélés: hátizsák (B gomb), testhőmérséklet 36-37°C, csökkentett stack méretek, tárolás tervezése.">
+<BaseLayout title="Survival — MITE:BE Wiki" description="MITE:BE survival: backpack (B key), body temperature 36-37°C, reduced stack sizes, storage planning.">
   <Header />
   <TopNav currentPage="systems" />
   <div class="container">
@@ -171,37 +171,63 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 <p>Рюкзаки заметно расширяют инвентарь. Клавиша <strong>B</strong> — открыть рюкзак.</p>
 <table class="compare-table">
   <tr><th>Рюкзак</th><th>Ячейки</th><th>Примечание</th></tr>
-  <tr><td>Кожаный</td><td>10</td><td>Базовый</td></tr>
-  <tr><td>Медный / Серебряный</td><td>21</td><td>—</td></tr>
-  <tr><td>Железный</td><td>36</td><td>—</td></tr>
+  <tr><td>Кожаный</td><td>10</td><td>3 кожи + 3 верёвки — базовый</td></tr>
+  <tr><td>Медный / Серебряный</td><td>21</td><td>Нужен инструмент улучшения</td></tr>
+  <tr><td>Железный</td><td>36</td><td>Значительное увеличение</td></tr>
+  <tr><td>Золотой</td><td>44</td><td>—</td></tr>
   <tr><td>Твердокаменный</td><td>55</td><td>—</td></tr>
   <tr style="background:rgba(180,120,255,0.12)"><td><strong>Из Древнего металла</strong></td><td><strong>78</strong></td><td>Через котёл с ртутью!</td></tr>
   <tr><td>Мифриловый</td><td>90</td><td>—</td></tr>
   <tr><td>Адамантиевый</td><td>102</td><td>Лучший рюкзак в игре</td></tr>
 </table>
+<div class="tip-card">🎒 <strong>Улучшение рюкзака до Древнего металла (78 ячеек):</strong> Инструмент улучшения большого рюкзака + 4× Слиток Древнего металла → помести в котёл с ртутью с источником лавы снизу, подожди ~30 секунд.</div>
 
 <h2 id="temperature-ru">🌡️ Температура тела</h2>
 <p>Оптимальная температура — 36–37°C. Огонь, лава и Незер повышают её; вода, дождь и лёд снижают.</p>
 <table class="compare-table">
   <tr><th>Температура</th><th>Эффект</th></tr>
-  <tr style="background:rgba(100,180,255,0.12)"><td>&lt;35.8°C</td><td>Холод — лёгкое замедление</td></tr>
-  <tr style="background:rgba(100,200,100,0.10)"><td>36–37°C</td><td>✅ Оптимально</td></tr>
-  <tr style="background:rgba(255,200,0,0.10)"><td>37.2–38.1°C</td><td>Слабость I</td></tr>
-  <tr style="background:rgba(255,80,30,0.14)"><td>39°C+</td><td>Слабость I + Огонь + Замедление I + урон</td></tr>
+  <tr style="background:rgba(100,180,255,0.12)"><td><strong>&lt;35.8°C</strong></td><td>Холод — лёгкое замедление</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>36–37°C</strong></td><td>✅ Оптимально — дебаффов нет</td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>37.2–38.1°C</strong></td><td>Слабость I</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td><strong>38.2–39°C</strong></td><td>Слабость I + Горение + Замедление I + 1 HP/мин</td></tr>
+  <tr style="background:rgba(255,80,30,0.14)"><td><strong>39–45°C+</strong></td><td>Слабость I + Горение + Замедление I + 1 HP/20с</td></tr>
 </table>
-<div class="warning-box">🔥 <strong>Близость к печи = перегрев!</strong> 2–3 блока от горящей печи могут поднять температуру выше 37.2°C → <strong>Слабость I</strong>.</div>
+<div class="warning-box">🔥 <strong>Близость к печи = перегрев!</strong> 2–3 блока от горящей печи могут поднять температуру выше 37.2°C → <strong>Слабость I</strong>. Решение: отойди подальше или управляй температурой (работай рядом с водой).</div>
+<div class="tip-card">🌡️ <strong>Модификаторы нагрева:</strong> Лава (2 блока): +0.1°C/35с · Огонь (3 блока): +0.1°C/50с · Держать факел: +0.1°C/60с · Незер: постоянный +0.4°C<br>🌡️ <strong>Модификаторы охлаждения:</strong> Погружение в воду: −0.1°C/5с · Держать лёд: −0.1°C/25с · Съесть мороженое: −0.1°C</div>
+
+<h3>Уменьшенные размеры стеков</h3>
+<p>MITE:BE резко уменьшает размеры стеков большинства блоков — требует серьёзного <strong>планирования инвентаря и хранения</strong>!</p>
+<table class="compare-table">
+  <tr><th>Категория</th><th>Примеры</th><th>Стек MITE</th><th>Стек ваниль</th></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Камень / Булыжник</strong></td><td>Камень, Гранит, Диорит, Андезит</td><td><strong>8</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Брёвна</strong></td><td>Дуб, Ель, Берёза, Джунглевое бревно</td><td><strong>4</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Доски</strong></td><td>Все виды досок</td><td><strong>8</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Руды</strong></td><td>Железо, Медь, Золото, Алмаз, Мифрил</td><td><strong>5</strong></td><td>64</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Факелы</td><td>Факел, Факел из красного камня</td><td>32</td><td>64</td></tr>
+</table>
+<div class="warning-box">📦 <strong>Важно:</strong> Из-за уменьшенных стеков вам потребуется <strong>больше сундуков</strong>, а инвентарь при сборе ресурсов заполняется намного быстрее. Планируйте заранее!</div>
 
 <h2 id="knowledge-books-ru">📚 Книги знаний</h2>
-<p>Книги знаний можно найти в сундуках структур. После использования они открывают новые рецепты крафта.</p>
-<div class="warning-box">🔒 <strong>Жёсткое ограничение!</strong> Без Книги знаний некоторые рецепты недоступны, даже если есть все материалы!</div>
+<p>Книга знаний — особый предмет, открывающий продвинутые рецепты. Если рецепт заблокирован Книгой знаний, скрафтить его <strong>не получится</strong>, даже если все материалы есть!</p>
+<div class="warning-box">🔒 <strong>Жёсткое ограничение!</strong> Книги знаний находятся в сундуках <strong>Аванпостов мародёров</strong> — нет гарантии, что один из них окажется рядом.</div>
 
+<h3>Список книг знаний</h3>
 <table>
-  <tr><th>Книга знаний</th><th>Открывает</th></tr>
-  <tr><td>Шлем шахтёра</td><td>Шлем шахтёра (источник света)</td></tr>
-  <tr><td>Аккумулятор</td><td>Аккумулятор (подзарядка шлема)</td></tr>
-  <tr><td>Дробилка коренной породы</td><td>Дробилка коренной породы</td></tr>
-  <tr><td>Усиленное Око Края</td><td>9× Ок Края → Усиленное Oko</td></tr>
+  <tr><th>Книга знаний</th><th>Открывает</th><th>Примечание</th></tr>
+  <tr><td>Шлем шахтёра</td><td>Шлем шахтёра</td><td>Крафт на Железном верстаке, прочность: 150</td></tr>
+  <tr><td>Аккумулятор</td><td>Аккумулятор</td><td>Подзарядка шлема (75 прочности за шт.)</td></tr>
+  <tr><td>Элементная фляга</td><td>Элементная фляга для воды</td><td>Продвинутое водохранилище из кожи и шёлка</td></tr>
+  <tr><td>Фильтровальная бумага</td><td>Фильтровальная бумага из Древнего металла</td><td>Продвинутая фильтрация воды</td></tr>
+  <tr><td>Дробилка коренной породы</td><td>Дробилка коренной породы</td><td>Маяк + Красный камень + Обсидиан</td></tr>
+  <tr><td>Усиленное Oko Края</td><td>Усиленное Oko Края</td><td>9× Okon Края → Усиленное Oko</td></tr>
+  <tr><td>Стол зачарований</td><td>Продвинутый стол зачарований</td><td>Для более сильных зачарований</td></tr>
+  <tr><td>Телепортационный обелиск</td><td>Телепортационный обелиск</td><td>Точка телепортации</td></tr>
 </table>
+<div class="tip-card">💡 Лишние Книги знаний можно превратить в обычные книги на верстаке — в обмен ты получишь очки опыта!</div>
+
+<h3>Горный шлем (Miner Helmet)</h3>
+<p>Горный шлем — мобильный источник света, потребляющий 1 единицу прочности каждые 30 секунд. Крафтится на <strong>Железном верстаке</strong> после получения Книги знаний. Перезаряжается Аккумулятором (75 прочности за штуку).</p>
+<div class="tip-card">💡 Горный шлем освобождает руки от факела — очень удобен в пещерах и шахтах!</div>
 </div>
 
 <ProgressComplete pageId="survival" />

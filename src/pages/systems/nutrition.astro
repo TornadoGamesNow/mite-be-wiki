@@ -13,7 +13,7 @@ import '../../styles/global.css';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const sidebarGroups = getSidebarGroups('systems/nutrition');
 ---
-<BaseLayout title="Táplálkozás & Víz — MITE:BE Wiki" description="MITE:BE táplálkozás és víz: 4 tápanyag egyensúlya, fejfájás elkerülése, legjobb ételek, vízforrások.">
+<BaseLayout title="Nutrition & Water — MITE:BE Wiki" description="MITE:BE nutrition and water: balancing 4 nutrients, avoiding headaches, best foods, water sources.">
   <Header />
   <TopNav currentPage="systems" />
   <div class="container">
@@ -256,35 +256,109 @@ const sidebarGroups = getSidebarGroups('systems/nutrition');
 
 <div data-lang="ru">
 <h2 id="food-ru">🍖 Еда и питание</h2>
-<p>MITE:BE добавляет развитую систему питания. Разные блюда по-разному утоляют голод и дают собственные эффекты. <strong>Сырым мясом лучше не рисковать</strong> — готовая еда заметно выгоднее и безопаснее.</p>
+<p>Разнообразие рациона в MITE:BE критически важно! Однобокое питание вызывает Недоедание. Нажмите <strong>P</strong>, чтобы открыть экран питания!</p>
 
 <div class="info-box">🤕 <strong>Получаете урон от головной боли?</strong> Это почти наверняка признак <strong>несбалансированной диеты</strong>. Съешьте салат: <strong>Чаша + 3× Одуванчик</strong>. Нажмите P, чтобы проверить питание!</div>
 
-<table class="compare-table">
-  <tr><th>Еда</th><th>Нас.</th><th>Питат.</th><th>Белок</th><th>Фито.</th><th>Примечание</th></tr>
-  <tr><td>Семена пшеницы</td><td>1</td><td>0</td><td>—</td><td>—</td><td>Аварийная еда</td></tr>
-  <tr><td>Яблоко</td><td>2</td><td>1</td><td>—</td><td>1.0</td><td>Из листьев дуба</td></tr>
-  <tr><td>Хлеб</td><td>8</td><td>2</td><td>—</td><td>—</td><td>Базовый углевод</td></tr>
-  <tr><td>Яйцо</td><td>1</td><td>3</td><td>3.0</td><td>—</td><td>Можно есть сырым</td></tr>
-  <tr><td>Жареная свинина</td><td>8</td><td>8</td><td>8.0</td><td>—</td><td>Хороший белок</td></tr>
-  <tr><td>Жареный стейк 🥩</td><td>10</td><td>10</td><td>10.0</td><td>—</td><td>Отличный белок</td></tr>
-  <tr style="background:rgba(255,100,0,0.08)"><td><strong>Тушёнка 🥩🔥</strong></td><td><strong>16</strong></td><td><strong>16</strong></td><td><strong>16.0</strong></td><td><strong>16.0</strong></td><td><strong>Лучшая еда!</strong></td></tr>
+<h3>Ранние продукты</h3>
+<table>
+  <tr><th>Еда</th><th>Источник</th><th>Примечание</th></tr>
+  <tr><td>Семена пшеницы</td><td>Высокая трава</td><td>Сразу съедобно, мало питания</td></tr>
+  <tr><td>Яблоко</td><td>Листья дуба</td><td>Хороший фрукт</td></tr>
+  <tr><td>Яйцо</td><td>Куры</td><td>Можно есть сырым</td></tr>
+  <tr><td>Жареное мясо</td><td>Костёр/Печь</td><td>Белок — важно!</td></tr>
+  <tr><td>Хлеб</td><td>Мука + Вода + Выпечка</td><td>Базовый углевод</td></tr>
+  <tr><td>Салат</td><td>Чаша + Овощи (напр. 3× Одуванчик)</td><td>Фитонутриенты — лечит головную боль!</td></tr>
 </table>
+
+<h3>Питательная ценность продуктов</h3>
+<p>MITE:BE отслеживает 4 питательных вещества: <strong>Насыщение</strong>, <strong>Питание</strong>, <strong>Белок</strong> и <strong>Фитонутриенты</strong>. <strong>ИР</strong> (Инсулиновый ответ) появляется у сладких продуктов — избыток сладкого снижает уровень энергии!</p>
+<table class="compare-table">
+  <tr><th>Еда</th><th>Нас.</th><th>Питат.</th><th>Белок</th><th>Фито.</th><th>ИР</th><th>Примечание</th></tr>
+  <tr><td>Семена пшеницы</td><td>1</td><td>0</td><td>—</td><td>—</td><td>—</td><td>Аварийная еда</td></tr>
+  <tr><td>Яблоко</td><td>2</td><td>1</td><td>—</td><td>1.0</td><td>✓</td><td>Из листьев дуба</td></tr>
+  <tr><td>Хлеб</td><td>8</td><td>2</td><td>—</td><td>—</td><td>—</td><td>Базовый углевод</td></tr>
+  <tr><td>Морковь</td><td>1</td><td>2</td><td>—</td><td>2.0</td><td>—</td><td>Источник фитонутриентов</td></tr>
+  <tr><td>Яйцо</td><td>1</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>Можно есть сырым</td></tr>
+  <tr><td>Сыр 🧀</td><td>3</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>Навык Пивовара</td></tr>
+  <tr><td>Запечённый картофель</td><td>6</td><td>2</td><td>—</td><td>—</td><td>—</td><td>Средний</td></tr>
+  <tr><td>Сырая свинина</td><td>4</td><td>4</td><td>4.0</td><td>—</td><td>—</td><td>Можно есть сырой</td></tr>
+  <tr><td>Жареная свинина</td><td>8</td><td>8</td><td>8.0</td><td>—</td><td>—</td><td>Хороший белок</td></tr>
+  <tr><td>Жареная курица</td><td>6</td><td>6</td><td>6.0</td><td>—</td><td>—</td><td>Средняя</td></tr>
+  <tr><td>Жареный стейк 🥩</td><td>10</td><td>10</td><td>10.0</td><td>—</td><td>—</td><td>Отличный белок</td></tr>
+  <tr><td>Жареная рыба (большая)</td><td>10</td><td>10</td><td>10.0</td><td>—</td><td>—</td><td>Бонус навыка рыбака</td></tr>
+  <tr><td>Жареное мясо слона 🐘</td><td>14</td><td>14</td><td>14.0</td><td>—</td><td>—</td><td>Редкая крупная добыча</td></tr>
+  <tr><td>Картофельное пюре 🥔</td><td>12</td><td>8</td><td>8.0</td><td>—</td><td>—</td><td>Навык повара</td></tr>
+  <tr><td>Тыквенный пирог 🎃</td><td>10</td><td>6</td><td>6.0</td><td>6.0</td><td>✓</td><td>Навык повара</td></tr>
+  <tr><td>Куриное рагу 🍲</td><td>10</td><td>10</td><td>10.0</td><td>10.0</td><td>—</td><td>Навык повара — сложный рецепт</td></tr>
+  <tr style="background:rgba(255,100,0,0.08)"><td><strong>Говяжье рагу 🥩🔥</strong></td><td><strong>16</strong></td><td><strong>16</strong></td><td><strong>16.0</strong></td><td><strong>16.0</strong></td><td>—</td><td><strong>Лучшая еда!</strong> Повар</td></tr>
+</table>
+<div class="warning-box"><strong>Внимание:</strong> Сгоревшее мясо, отравленный картофель и сырая курица могут вызвать отравление! <strong>Говяжье рагу</strong> даёт максимум по всем питательным веществам — если есть навык Повара, это ваша эндгейм-еда.</div>
+
+<h3>Развитые блюда</h3>
+<p>Говяжье рагу, куриное рагу, овощной суп, тыквенный суп, мороженое, сыр, каша, хлопья, шоколад — навык Повара открывает сложные рецепты.</p>
+
+<h3>Фермерство</h3>
+<p>Любая металлическая мотыга → вспашка земли → посев пшеницы/лука/картофеля/моркови. Растениям нужен <strong>навоз</strong> для роста! Костная мука помогает умирающим посевам.</p>
+
+<h3>Вермикомпостирование — значения компостирования</h3>
+<p>В компостере с червями из органических материалов производится навоз. Чем выше значение компостирования, тем эффективнее предмет.</p>
+<table class="compare-table">
+  <tr><th>Значение</th><th>Предметы</th></tr>
+  <tr style="background:rgba(100,200,100,0.12)"><td><strong>4.5 🏆</strong></td><td>Тюк сена</td></tr>
+  <tr style="background:rgba(100,200,100,0.08)"><td><strong>3.2</strong></td><td>Говяжье рагу (+ чаша возвращается)</td></tr>
+  <tr><td><strong>2.4</strong></td><td>Торт</td></tr>
+  <tr><td><strong>2.0</strong></td><td>Тыква (+ семена), Дыня (+ семена), Куриный суп (+ чаша), Картофельное пюре (+ чаша)</td></tr>
+  <tr><td><strong>1.6</strong></td><td>Тыквенный пирог</td></tr>
+  <tr><td><strong>1.2</strong></td><td>Рыбные шарики, Овощной суп (+ чаша)</td></tr>
+  <tr><td><strong>1.0</strong></td><td>Листья (все виды), Хлеб, Лианы, Сырой/Жареный стейк, Большая рыба</td></tr>
+  <tr><td><strong>0.8</strong></td><td>Сырая/Жареная свинина, Запечённый картофель, Мука, Тесто/Паста</td></tr>
+  <tr><td><strong>0.6</strong></td><td>Сырая/Жареная курица, Сырая/Жареная рыба, Сыр, Маленький гриб, Яйца</td></tr>
+  <tr style="color:#aaa"><td><strong>0.3</strong></td><td>Цветы, Яблоко, Апельсин, Банан, Гнилая плоть, Сахарный тростник, Семена</td></tr>
+  <tr style="color:#aaa"><td><strong>0.1</strong></td><td>Бумага, Сахар, Глаз паука, Жареный червь</td></tr>
+</table>
+<div class="info-box">🌱 <strong>Эффективное компостирование:</strong> <strong>Тюк сена</strong> (4.5) — лучший компостируемый материал (из 9 пшеницы). Супы возвращают чашу — не расточительны!</div>
 
 <h2 id="water-ru">💧 Вода и гидратация</h2>
-<p>Вода — критически важный ресурс. Для переноски нужна фляга или сумка для воды. <strong>Пить воду прямо из рек и озёр нельзя</strong> без очистки: используйте фильтрованную или кипячёную воду.</p>
+<p>Система жажды требует чистой воды! <strong>Пить воду прямо из рек и озёр нельзя</strong> без очистки: используйте фильтрованную или кипячёную воду.</p>
 
+<h3>Прогресс</h3>
+<div class="flow">
+  <span class="flow-item">Кожаная фляга</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Деревянный фильтр</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Фильтровальная бумага</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-item">Чистая вода</span>
+</div>
+<p>Металлические фляги имеют возрастающую вместимость:</p>
 <table class="compare-table">
-  <tr><th>Сумка для воды</th><th>Вместимость</th></tr>
-  <tr><td>Кожаная сумка</td><td>3 Л</td></tr>
-  <tr><td>Большая сумка</td><td>8 Л</td></tr>
+  <tr><th>Фляга для воды</th><th>Вместимость</th></tr>
+  <tr><td>Кожаная фляга</td><td>3 Л</td></tr>
+  <tr><td>Большая фляга</td><td>8 Л</td></tr>
   <tr><td><span class="tier t-copper">Медная / Серебряная</span></td><td>5 Л</td></tr>
   <tr><td><span class="tier t-iron">Железная</span></td><td>7 Л</td></tr>
+  <tr><td><span class="tier t-iron">Золотая</span></td><td>8 Л</td></tr>
   <tr><td><span class="tier t-hard">Твердокаменная</span></td><td>10 Л</td></tr>
+  <tr><td><span class="tier t-ancient">Древний металл</span></td><td>12 Л</td></tr>
   <tr><td><span class="tier t-mithril">Мифриловая</span></td><td>14 Л</td></tr>
   <tr><td><span class="tier t-adamantium">Адамантиевая</span></td><td>16 Л</td></tr>
+  <tr><td>Элементная фляга</td><td>16 Л</td></tr>
 </table>
-<div class="info-box">💧 <strong>Важно:</strong> Жажда убывает <strong>в 2 раза быстрее</strong> при беге! При 0 жажды: эффект Слабости, затем урон по HP.</div>
+<p><strong>Элементная фляга</strong> (с ртутью): самая продвинутая, открывается Книгой знаний.</p>
+
+<h3>Скорость убывания жажды</h3>
+<p>Жажда убывает в зависимости от текущего <strong>максимального HP</strong>. Чем больше сердец, тем быстрее хочется пить!</p>
+<table class="compare-table">
+  <tr><th>Макс HP</th><th>Скорость убывания (1 ед.)</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>3 сердца</td><td>4 минуты</td></tr>
+  <tr><td>4 сердца</td><td>3 минуты</td></tr>
+  <tr><td>5–6 сердец</td><td>2 минуты</td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td>7–8 сердец</td><td>90 секунд</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td>9–10 сердец</td><td>60 секунд</td></tr>
+</table>
+<div class="info-box">💧 <strong>Важно:</strong> Жажда убывает <strong>в 2 раза быстрее</strong> при беге! После сна жажда убывает на столько же, сколько голод. 1 капля воды восстанавливает 2 единицы жажды. При 0 жажды: Слабость, затем урон по HP.</div>
 </div>
 
 <ProgressComplete pageId="nutrition" />

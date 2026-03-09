@@ -15,7 +15,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const sidebarGroups = getSidebarGroups('progression/metal-ages');
 ---
-<BaseLayout title="Fémkorszakok | MITE:BE Wiki" description="MITE:BE fémkorszakok: réz, ezüst, ötvözetek (bronz, ezüst-réz, szénacél), többblokkos kemence, vas és acél.">
+<BaseLayout title="Metal Ages | MITE:BE Wiki" description="MITE:BE metal ages: copper, silver, alloys (bronze, silver-copper, carbon steel), multiblock furnace, iron and steel.">
   <Header />
   <TopNav currentPage="progression" />
   <div class="container">
@@ -373,39 +373,139 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 <h2 id="copper-silver">Эпоха меди и серебра</h2>
 <p>Первые настоящие металлы! Крафти инструменты, оружие и броню из меди и серебра.</p>
 
+<h3>Полный набор снаряжения</h3>
+<p>Кирка, топор, лопата, нож, кинжал, меч, молот войны, боевой топор, коса, мотыга, шлем, нагрудник, поножи, ботинки (пластины + кольчуга), ведро, щит, ножницы...</p>
+
 <h3>Серебряный бонус</h3>
 <p>Серебряное оружие наносит <strong>дополнительный урон нежити</strong>!</p>
 
+<div class="tip">Медное ведро нужно для транспортировки лавы и воды. Золотого ведра в начале не существует!</div>
+
 <div class="craft-section">
   <CraftingGrid recipeOutput="copper_pickaxe" label={{hu: "Rézcsákány", en: "Copper Pickaxe"}}/>
+  <CraftingGrid recipeOutput="copper_axe" label={{hu: "Réz Fejsze", en: "Copper Axe"}}/>
   <CraftingGrid recipeOutput="copper_sword" label={{hu: "Rézkard", en: "Copper Sword"}}/>
+  <CraftingGrid recipeOutput="copper_war_hammer" label={{hu: "Réz harci kalapács", en: "Copper War Hammer"}}/>
   <CraftingGrid recipeOutput="silver_sword" label={{hu: "Ezüstkard", en: "Silver Sword"}}/>
 </div>
+
+<!-- ===== СПЛАВЫ ===== -->
 
 <h2 id="alloys">Сплавы</h2>
 <p>В плавильной печи можно создавать сплавы, которые сильнее базовых металлов!</p>
 <table>
   <tr><th>Сплав</th><th>Состав</th><th>Особая способность</th></tr>
-  <tr><td><span class="tier t-copper">Бронза</span></td><td>Медь + Олово</td><td>+20% скорость бега (полный комплект)</td></tr>
-  <tr><td><span class="tier t-silver">Серебряная медь</span></td><td>Серебро + Медь</td><td>-10% получаемый урон, дебафф-снижение</td></tr>
-  <tr><td><span class="tier t-iron">Углеродистая сталь</span></td><td>Железо + Угольный кристалл</td><td>5% снижение урона за предмет, цепная добыча</td></tr>
+  <tr class="alloy-row"><td><span class="tier t-copper">Бронза</span></td><td>Медь + Олово</td><td>+20% скорость бега (полный комплект)</td></tr>
+  <tr class="alloy-row"><td><span class="tier t-silver">Серебряная медь</span></td><td>Серебро + Медь</td><td>-10% получаемый урон, дебафф-снижение. Ремонтируется медными и серебряными самородками.</td></tr>
+  <tr class="alloy-row"><td><span class="tier t-iron">Углеродистая сталь</span></td><td>Железо + Угольный кристалл</td><td>5% снижение урона за предмет, цепная добыча (удержи кнопку). Достаточно сильна для Подземного мира.</td></tr>
 </table>
 
+<div class="info"><strong>Угольный кристалл</strong> добывается двумя способами:<br>
+① Встречается в <strong>глубоких пещерах</strong> (Y&lt;35)<br>
+② <strong>Переплавка Угольного блока в Доменной печи</strong> — положи угольный блок в слот плавки (левый верхний), <em>не в слот топлива!</em></div>
+
+
+<!-- ===== МНОГОБЛОЧНАЯ ПЕЧЬ ===== -->
+
 <h2 id="multiblock">Многоблочная печь</h2>
-<p>Для металлов с высокой температурой плавки (железо, мифрил, адамант) нужна многоблочная печь. Конструкция: полый куб 3×3×3 (26 блоков) + ядро печи на боковую стену.</p>
+<p>Для металлов с высокой температурой плавки (железо, мифрил, адамант) нужна многоблочная печь.</p>
+
+<h3>Конструкция</h3>
+<div class="recipe">Скрафти Ядро печи → Построй полый куб 3×3×3 (26 блоков) → Помести ядро на любую боковую стену (не сверху/снизу)</div>
+<div class="craft-section">
+  <CraftingGrid recipeOutput="furnace_core_stone" label={{hu: "Kő Kemence Mag", en: "Stone Furnace Core"}}/>
+  <CraftingGrid recipeOutput="furnace_core_obsidian" label={{hu: "Obszidián Kemence Mag", en: "Obsidian Furnace Core"}}/>
+  <CraftingGrid recipeOutput="furnace_core_netherrack" label={{hu: "Alvilágkőkemencemag", en: "Netherrack Furnace Core"}}/>
+</div>
+
+<h3>Типы печей</h3>
+<table>
+  <tr><th>Тип печи</th><th>Материал</th><th>Для чего</th></tr>
+  <tr><td>Каменная печь</td><td>Каменные блоки + Ядро каменной печи</td><td>Плавка железа, золота</td></tr>
+  <tr><td>Обсидиановая печь</td><td>Обсидиановые блоки + Ядро обсидиановой печи</td><td>Плавка мифрила</td></tr>
+  <tr><td>Печь из адского камня</td><td>Блоки адского камня + Ядро печи из адского камня</td><td>Плавка адаманта</td></tr>
+</table>
+
+<div class="tip"><strong>Бесконечный нагрев:</strong> Помести бесконечный источник лавы на дно многоблочной печи — бесконечное тепло! Несколько источников лавы суммируются.</div>
+
+<h3>Шанс расплавления при лавовом нагреве</h3>
+<p>При использовании лавовых печей металлические предметы имеют <strong>материалозависимый шанс</strong> случайно расплавиться и пропасть.</p>
+<table class="compare-table">
+  <tr><th>Материал</th><th>Шанс расплавления</th></tr>
+  <tr style="background:rgba(255,100,50,0.15)"><td><span class="tier t-copper">Медь / Серебро</span></td><td>16%</td></tr>
+  <tr style="background:rgba(255,150,30,0.20)"><td><span class="tier t-silver">Золото</span></td><td>20% ⚠️</td></tr>
+  <tr><td><span class="tier t-iron">Железо</span></td><td>8%</td></tr>
+  <tr><td><span class="tier t-hard">Твердокамень</span></td><td>4%</td></tr>
+  <tr><td><span class="tier t-ancient">Древний металл</span></td><td>2%</td></tr>
+  <tr><td><span class="tier t-mithril">Мифрил</span></td><td>1%</td></tr>
+  <tr style="background:rgba(100,200,100,0.12)"><td><span class="tier t-adamantium">Адамант</span></td><td>0% ✅</td></tr>
+</table>
+<div class="tip-card">🔥 <strong>Предупреждение о золоте:</strong> Золотые предметы имеют наибольший шанс расплавления (20%)! Следи за ними при использовании лавовой печи.</div>
+
+
+<!-- ===== ЖЕЛЕЗО ===== -->
 
 <h2 id="iron">Железо и Сталь</h2>
-<p>Железо получается из многоблочной печи. Железная кирка позволяет добывать мифриловую руду!</p>
+<p>Железо получается из многоблочной печи. После железной эпохи идёт высокоуглеродистая сталь.</p>
+
+<h3>Железная кирка — важная веха!</h3>
+<p>Железной киркой можно добывать <strong>Мифриловую руду</strong>! Это первый настоящий вход в мифическую эпоху.</p>
+
+<h3>Высокоуглеродистая сталь</h3>
+<p>Железо + Угольный кристалл = Высокоуглеродистая сталь. Последний сплав. Достаточно мощная для прохождения тёмного Подземного мира.</p>
+<div class="info">Кирка из высокоуглеродистой стали умеет <strong>цепную добычу</strong>: удержи кнопку и ломай несколько блоков одновременно! Её скорость превышает мифриловую — лучший выбор для добычи.</div>
+<div class="tip-card">⚒️ <strong>Сплавление в печи:</strong> Положи <strong>железный инструмент</strong> (меч, кирка и т.д.) в слот НАД слотом топлива, а <strong>Угольный кристалл</strong> в левый слот. Так он превратится в сталь.</div>
+<div class="tip-card">💡 <strong>Крафт с XP для лучшей прочности:</strong> XP расходуется при крафте — чем больше XP, тем прочнее инструмент. Всегда крафти предметы из углеродистой стали с полным XP!</div>
+<div class="tip-card">⚔️ <strong>Молот войны из углеродистой стали в Подземном мире:</strong> <strong>Молот войны + Убийца Нежити V</strong> — лучшее оружие в Подземном мире, убивает скелетов и нежить одним ударом.</div>
+
+<div class="craft-section">
+  <CraftingGrid recipeOutput="iron_sword" label={{hu: "Vaskard", en: "Iron Sword"}}/>
+  <CraftingGrid recipeOutput="iron_pickaxe" label={{hu: "Vascsákány", en: "Iron Pickaxe"}}/>
+  <CraftingGrid recipeOutput="iron_axe" label={{hu: "Vas Fejsze", en: "Iron Axe"}}/>
+  <CraftingGrid recipeOutput="iron_war_hammer" label={{hu: "Vas harci kalapács", en: "Iron War Hammer"}}/>
+</div>
+
+<!-- ===== ИЕРАРХИЯ МЕТАЛЛОВ ===== -->
 
 <h2 id="metal-hierarchy">Иерархия металлов</h2>
 <table>
   <tr><th>Уровень</th><th>Материал</th><th>Источник</th><th>Нужная кирка</th></tr>
   <tr><td><span class="tier t-flint">1</span></td><td>Кремень</td><td>Из гравия</td><td>Голые руки</td></tr>
   <tr><td><span class="tier t-copper">2</span></td><td>Медь</td><td>Сито / Шахта</td><td>Кремниевая кирка</td></tr>
+  <tr><td><span class="tier t-silver">2</span></td><td>Серебро</td><td>Сито / Шахта</td><td>Кремниевая кирка</td></tr>
+  <tr><td><span class="tier t-gold">3</span></td><td>Золото</td><td>Глубокие шахты</td><td>Медная/серебряная кирка</td></tr>
   <tr><td><span class="tier t-iron">4</span></td><td>Железо</td><td>Глубокие шахты</td><td>Медная/серебряная кирка</td></tr>
   <tr><td><span class="tier t-hard">5</span></td><td>Твердокамень</td><td>Подземный мир</td><td>Железная кирка</td></tr>
+  <tr><td><span class="tier t-ancient">6</span></td><td>Древний металл</td><td>Подземный мир</td><td>Железная кирка</td></tr>
   <tr><td><span class="tier t-mithril">7</span></td><td>Мифрил</td><td>Глубокие шахты</td><td>Железная кирка / молот войны</td></tr>
   <tr><td><span class="tier t-adamantium">8</span></td><td>Адамант</td><td>Незер</td><td>Мифриловая кирка / молот войны</td></tr>
+</table>
+
+<h3>Распределение руды по биомам</h3>
+<p>В разных биомах встречаются разные руды и в разных количествах! Это стратегически важно.</p>
+<table class="compare-table">
+  <tr><th>Руда</th><th>Болото</th><th>Нагорье</th><th>Джунгли</th></tr>
+  <tr><td>Медь</td><td>Y0-128</td><td>Y35-128</td><td>Y0-128 (6-10/жила)</td></tr>
+  <tr><td>Серебро</td><td>Y0-96</td><td>Y40-96</td><td>Y0-96</td></tr>
+  <tr><td>Железо</td><td>Y0-50</td><td>Y10-40</td><td>Y0-50 (8-12/жила — больше всего!)</td></tr>
+  <tr><td>Алмаз</td><td>Y0-32</td><td>❌ не генерируется!</td><td>Y0-17 (в 2 раза чаще!)</td></tr>
+  <tr style="background:rgba(150,200,100,0.10)"><td><strong>Угольный кристалл</strong></td><td>❌</td><td>✅ Y0-20 (самый частый!)</td><td>❌</td></tr>
+  <tr><td>Ртуть</td><td>✅ Y0-20</td><td>❌</td><td>❌</td></tr>
+</table>
+<div class="info-box">⚒️ <strong>Стратегия по биомам:</strong> <strong>Джунгли</strong> = лучший металлический биом (самые большие жилы, алмазов в 2×). <strong>Нагорье</strong> = обязательно для Угольного кристалла и Твердокамня — но нет алмазов! <strong>Болото</strong> = Ртуть + Элементарный обсидиан.</div>
+
+<!-- ===== СИСТЕМА СПЛАВЛЕНИЯ ===== -->
+
+<h2 id="alloying">Система сплавления (Плавильная печь)</h2>
+<p>В MITE:BE стандартное металлическое снаряжение можно <strong>улучшить сплавлением</strong> в Плавильной печи. Сплавление НЕ создаёт сплавы из сырья — оно преобразует существующее <strong>снаряжение с полной прочностью</strong>.</p>
+<div class="warning-box">⚠️ <strong>Критическое правило:</strong> Только снаряжение с <strong>100% прочностью (целое)</strong> можно сплавлять! Повреждённые предметы нельзя переплавить.</div>
+
+<h3>Сплавы</h3>
+<table class="compare-table">
+  <tr><th>Сплав</th><th>Базовое снаряжение</th><th>Добавляемый материал</th><th>Бонус (полный комплект)</th></tr>
+  <tr style="background:rgba(205,127,50,0.12)"><td><strong>Бронза</strong></td><td>Медный инструмент/броня (100% прочность)</td><td>Оловянные слитки</td><td>Время горения −50% · Скорость бега +20%</td></tr>
+  <tr style="background:rgba(192,192,128,0.12)"><td><strong>Серебряная медь</strong></td><td>Серебряный инструмент/броня (100% прочность)</td><td>Медные слитки</td><td>Время горения −80% · Весь урон −10%</td></tr>
+  <tr style="background:rgba(180,180,180,0.12)"><td><strong>Углеродистая сталь</strong></td><td>Железный инструмент/броня (100% прочность)</td><td>Осколки угольного кристалла</td><td>Урон −5%/предмет · Кислотостойкость · Цепная добыча</td></tr>
 </table>
 
 </div>

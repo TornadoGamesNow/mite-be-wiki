@@ -284,13 +284,7 @@ mark.search-hl { background: rgba(240,192,64,.3); color: var(--gold); padding: 0
 h2:hover .anchor-link, h3:hover .anchor-link { opacity: 1; }
 .anchor-link:hover { color: var(--gold); }
 
-/* ===== MobExplorer: Bestiary cards + diff badges ===== */
-.diff-badge { display: inline-flex; align-items: center; justify-content: center; padding: 1px 7px; border-radius: 20px; font-size: .72em; font-weight: 700; }
-.diff-early { background: rgba(78,204,163,.15); color: var(--green); border: 1px solid rgba(78,204,163,.4); }
-.diff-mid   { background: rgba(240,192,64,.15); color: var(--gold);  border: 1px solid rgba(240,192,64,.4); }
-.diff-late  { background: rgba(233,69,96,.15);  color: var(--accent);border: 1px solid rgba(233,69,96,.4); }
-.diff-boss  { background: rgba(179,136,255,.18);color: var(--adamantium); border: 1px solid rgba(179,136,255,.5); }
-
+/* ===== MobExplorer: Bestiary cards ===== */
 .mob-card-grid { display: none; }
 .mob-table-wrap { display: block; }
 

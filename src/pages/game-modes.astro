@@ -11,9 +11,9 @@ import '../styles/global.css';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const sidebarGroups = getSidebarGroups('game-modes');
 ---
-<BaseLayout title="Játékmódok — MITE:BE Wiki" description="Simple vs Hardcore módok összehasonlítása MITE:BE-ben: hőmérséklet, átkök, Hold ciklus, fáklya kialvás és egyéb egyedi mechanikák.">
+<BaseLayout title="Game Modes — MITE:BE Wiki" description="Simple vs Hardcore mode comparison in MITE:BE: temperature, curses, moon cycle, torch burnout and other unique mechanics.">
   <Header />
-  <TopNav currentPage="home" />
+  <TopNav currentPage="game-modes" />
   <div class="container">
     <Sidebar groups={sidebarGroups} />
     <main class="content">
@@ -561,6 +561,58 @@ const sidebarGroups = getSidebarGroups('game-modes');
 </table>
 <div class="warning-box">📦 <strong>Важно:</strong> Из-за уменьшенных стеков вам потребуется <strong>больше сундуков</strong>, а инвентарь при сборе ресурсов заполняется намного быстрее. Планируйте заранее — особенно при крупном строительстве!</div>
 
+<h3 id="gelatinous-cube-ru">Растворение блоков Желейным Кубом</h3>
+<p>Маленькие Желейные Кубы могут растворять блоки двумя кислотными веществами: <strong>Пепсин</strong> и <strong>Кислота</strong>. 400 тиков ≈ 20 секунд. Безопасность строительных материалов важна при проектировании базы!</p>
+<table class="compare-table">
+  <tr><th>Материал</th><th>Пепсин</th><th>Кислота</th><th>Примечание</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Камень, Булыжник, Обсидиан</strong></td><td>✅ Безопасно</td><td>✅ Безопасно</td><td>Лучший стройматериал</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Стекло, Песчаник, Кирпич</strong></td><td>✅ Безопасно</td><td>✅ Безопасно</td><td>Полностью иммунны</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Золотой блок 🥇</strong></td><td>✅ Безопасно</td><td>✅ Безопасно</td><td>Удивительно — иммунен!</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Блоки Мифрила / Адаманта / Древнего металла</strong></td><td>✅ Безопасно</td><td>✅ Безопасно</td><td>Эндгейм-материалы</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Блоки Меди, Серебра, Железа</strong></td><td>✅ Безопасно</td><td>⚠️ 400 тиков</td><td>Уязвимы к кислоте!</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Дерево, Дверь, Забор, Лестница, Сундук</strong></td><td>✅ Безопасно</td><td>⚠️ 400 тиков</td><td>Кислота растворяет</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Шерсть, Ковёр</strong></td><td>⚠️ 400 тиков</td><td>❌ Мгновенно</td><td>Уязвимы к обоим!</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Паутина</strong></td><td>❌ Мгновенно</td><td>❌ Мгновенно</td><td>Растворяется быстрее всего</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Кровать</strong></td><td>⚠️ 400 тиков</td><td>⚠️ 400 тиков</td><td>Не оставляйте кровать на виду!</td></tr>
+</table>
+<div class="info-box">🏠 <strong>Совет по строительству базы:</strong> База из камня, булыжника, обсидиана и стекла полностью защищена от Желейных Кубов. Неожиданно, но <strong>золотой блок</strong> тоже иммунен — зато блоки меди и серебра уязвимы к кислоте.</div>
+
+<h3 id="sleepiness-ru">Сонливость</h3>
+<p>Показатель сонливости растёт на 1 в час. Сон снижает его. <strong>В Незере</strong> скорость роста вдвое меньше. При показателе 0–7 получаешь <strong>бонус +10% к скорости движения!</strong></p>
+<table class="compare-table">
+  <tr><th>Уровень</th><th>Эффект</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>0–59</strong></td><td>Дебаффов нет (при 0–7: бонус +10% к скорости)</td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>60</strong></td><td>Слабость I</td></tr>
+  <tr style="background:rgba(255,150,50,0.12)"><td><strong>80</strong></td><td>Слабость I + Замедление I</td></tr>
+  <tr style="background:rgba(255,80,30,0.14)"><td><strong>100+</strong></td><td>Слабость I + Замедление I + Усталость шахтёра + 1 HP/ч</td></tr>
+</table>
+<div class="warning-box">😴 <strong>Предупреждение для начала игры:</strong> Показатель растёт на 1 в час — это означает, что спать необходимо примерно <strong>каждые 2,5 игровых дня</strong>. Дебафф Слабость I мешает не только в бою: <strong>убивать животных</strong> тоже станет затруднительно!</div>
+<div class="warning-box">🌙 <strong>Кровать НЕ пропускает ночь!</strong> В MITE:BE сон в кровати не перематывает время — он только снижает сонливость. Ночь нужно пережить!</div>
+<div class="tip-card">🛏️ <strong>Простой Спальный Мешок</strong> (v0.8+): 3× шерсть одного цвета → Простой Спальный Мешок (16 цветов). Можно положить где угодно, лечь правым кликом. <strong>Не устанавливает точку возрождения.</strong> Главное преимущество: избежать дебаффов от сна на земле.</div>
+
+<h3 id="foggy-weather-ru">Туманная погода (v0.9.0)</h3>
+<p>Туман не может появиться в первые 7 дней. Возникает не реже одного раза в 50 дней, длится 48–72 часа. <strong>Бонус Удачи III</strong> во время тумана — с киркой Удача III получаешь Удачу VI!</p>
+<div class="warning-box">⚗️ <strong>Во время тумана активны 3 параллельные опасности:</strong></div>
+<table class="compare-table">
+  <tr><th>Тип</th><th>Возникновение</th><th>Эффект по уровням</th></tr>
+  <tr style="background:rgba(255,200,0,0.08)">
+    <td><strong>Кислотность</strong></td>
+    <td>1 очко/30с в тумане</td>
+    <td>10: Слабость I · 20: +Замедление I (урон кажд. 40с) · 30: +Голод I + Слепота I (урон кажд. 20с)</td>
+  </tr>
+  <tr style="background:rgba(100,150,255,0.10)">
+    <td><strong>Нехватка кислорода</strong></td>
+    <td>1 очко/30с в тумане</td>
+    <td>10: Слабость I · 20: 0,5 сердца/40с + Замедление I · 30: 0,5 сердца/30с + Слепота I</td>
+  </tr>
+  <tr style="background:rgba(100,255,100,0.08)">
+    <td><strong>Избыток кислорода</strong> (Джунгли &lt;Y50)</td>
+    <td>Активно во время тумана</td>
+    <td>5 мин: Спешка I · 10 мин: +Скорость I · 20 мин: +Регенерация HP · 40 мин: Слабость I + Голод I + Усталость шахтёра I</td>
+  </tr>
+</table>
+<div class="info-box">💊 <strong>Лечение:</strong> Кислотность: погружение в воду (−2/10с) или Флакон ухода за кожей (двойная защита 10 мин). Нехватка кислорода: слой выше Y45 (+1/2с) или Баллон с кислородом (−4 очка/шт.).</div>
+
 <h3 id="moon-cycle-ru">Цикл луны</h3>
 <p>Луна имеет 7 различных фаз — каждая со своими эффектами! Наиболее опасная — <strong>Кровавая луна</strong>, которая эволюционирует 6 раз, порождая всё более сильных зомби.</p>
 <table class="compare-table">
@@ -574,6 +626,27 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr style="background:rgba(255,100,50,0.12)"><td><strong>⚡ День расплаты</strong></td><td>Дни 96–97</td><td>Мобы Кровавой луны + молнии мгновенно убивают открытых мобов (без опыта/дропа)</td></tr>
 </table>
 <div class="info-box">🎁 <strong>Случайный бонус после Кровавой луны</strong> (один из четырёх): скорость добычи +10% · Урон +1 · Потребление воды −10% · Потребление голода/сытости −10%</div>
+
+<h3 id="defecation-ru">Система дефекации (клавиша J)</h3>
+<p>Показатель заполняется при еде (жареное мясо: +5, гнилое мясо: +8, арбуз: +2, хлеб: +2). При достижении 80 — непроизвольное опорожнение (Тошнота 5 мин + Замедление I 1 мин). Нажми <strong>J</strong> для ручного опорожнения!</p>
+<table class="compare-table">
+  <tr><th>Уровень</th><th>Длительность</th><th>Навоз</th><th>Бонус</th></tr>
+  <tr><td>0–30</td><td>3 секунды</td><td>1 навоз</td><td>—</td></tr>
+  <tr><td>31–60</td><td>6 секунд</td><td>2 навоза</td><td>—</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>61–79</strong></td><td>10 секунд</td><td>3 навоза</td><td>Скорость I + Спешка I (10 секунд)</td></tr>
+  <tr style="background:rgba(255,80,30,0.12)"><td><strong>80+ (непроизвольно)</strong></td><td>Мгновенно</td><td>4 навоза</td><td>—</td></tr>
+</table>
+<div class="tip-card">🌱 <strong>Навоз:</strong> Улучшает урожайность при внесении в почву. Если не опорожняться 3+ дней (при показателе 50+), длительность удваивается.</div>
+
+<h3 id="world-marker-ru">Мировой маркер &amp; NPC-напарники</h3>
+<p><strong>Мировой маркер</strong> (Respawn Anchor) работает как автоматическая точка возрождения. Если умрёшь рядом — возродишься здесь. <strong>В режиме Hardcore не работает.</strong></p>
+<table class="compare-table">
+  <tr><th>Тип напарника</th><th>Внутренний ID</th><th>Описание</th></tr>
+  <tr><td><strong>Воин-деревенщик</strong></td><td>partner_sparta</td><td>NPC-союзник с боевыми навыками</td></tr>
+  <tr><td><strong>Странник</strong></td><td>partner_traveller</td><td>NPC-помощник для исследования и транспортировки</td></tr>
+  <tr><td><strong>Шахтёр-деревенщик</strong></td><td>partner_miner</td><td>NPC-союзник, специализированный на добыче</td></tr>
+</table>
+<div class="tip-card">🤝 <strong>Перенос:</strong> Shift + ПКМ по сущности → начинаешь нести её. Удобно для перемещения животных, переноски NPC-напарников и небольших существ.</div>
 
 <h3 id="debug-keys-ru">Отладочные клавиши</h3>
 <div class="tip-card">🔧 <strong>F3+H</strong> — Подробный режим подсказок: показывает процент прочности предмета, ID зачарований и внутренние данные предмета.</div>

@@ -15,7 +15,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const sidebarGroups = getSidebarGroups('progression/early-game');
 ---
-<BaseLayout title="Korai Játék | MITE:BE Wiki" description="MITE:BE korai játék: első percek, kovakőkor, munkaasztal, szita. Nulláról indulsz — kovaszilánkkal és növényszállal.">
+<BaseLayout title="Early Game | MITE:BE Wiki" description="MITE:BE early game: first minutes, flint age, workbench, sieve. Starting from scratch with flint shards and plant fiber.">
   <Header />
   <TopNav currentPage="progression" />
   <div class="container">
@@ -177,8 +177,8 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <p>80% eséllyel kapsz valamit kavics szitálásakor. A ritka anyagok esélye alacsony, de sok szitálással felhalmozható!</p>
 <div id="sieve-table-gravel"></div>
 <h3>Alvilág (Nether) Kavics Szitálás</h3>
-<p>A Alvilág (Nether) kavicsból sokkal több Arany esik — az arany farmolás lényegesen hatékonyabb a Alvilág (Nether)ben!</p>
-<div id="sieve-table-Alvilág (Nether)"></div>
+<p>A Nether kavicsból sokkal több Arany esik — az arany farmolás lényegesen hatékonyabb a Netherben!</p>
+<div id="sieve-table-nether"></div>
 
 </div>
 
@@ -191,7 +191,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <div style="background:rgba(78,204,163,0.08);border:1px solid rgba(78,204,163,0.35);border-radius:8px;padding:10px 16px;margin-bottom:14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">
   <span style="font-size:1.3em">🗺️</span>
   <span style="flex:1;font-size:.9em;color:#ccc">Not sure where to start? We analyzed an excellent starter seed — floating island, canyon with iron+silver mine, apple forest nearby.</span>
-  <a href={`${base}/faq/#seed`} style="background:rgba(78,204,163,0.18);border:1px solid #4ecca3;color:#4ecca3;border-radius:6px;padding:6px 12px;font-size:.82em;font-weight:600;white-space:nowrap;text-decoration:none">Recommended Seed →</a>
+  <a href={`${base}/faq/#seed-en`} style="background:rgba(78,204,163,0.18);border:1px solid #4ecca3;color:#4ecca3;border-radius:6px;padding:6px 12px;font-size:.82em;font-weight:600;white-space:nowrap;text-decoration:none">Recommended Seed →</a>
 </div>
 
 <div class="timeline">
@@ -325,6 +325,12 @@ If you find a sheep before the first night and get some wool, you can sieve much
 <h2 id="first-minutes">Первые минуты — Выживание голыми руками</h2>
 <p>В MITE:BE нет механики «ударь по дереву». Голыми руками дерево не сломать! Первые шаги:</p>
 
+<div style="background:rgba(78,204,163,0.08);border:1px solid rgba(78,204,163,0.35);border-radius:8px;padding:10px 16px;margin-bottom:14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+  <span style="font-size:1.3em">🗺️</span>
+  <span style="flex:1;font-size:.9em;color:#ccc">Не знаешь, где начать? Мы проанализировали отличный стартовый сид — парящий остров, каньон с шахтой железа+серебра, рядом яблоневый лес.</span>
+  <a href={`${base}/faq/#seed-ru`} style="background:rgba(78,204,163,0.18);border:1px solid #4ecca3;color:#4ecca3;border-radius:6px;padding:6px 12px;font-size:.82em;font-weight:600;white-space:nowrap;text-decoration:none">Рекомендуемый сид →</a>
+</div>
+
 <div class="timeline">
   <div class="timeline-item">
     <h4>1. Сбор травы</h4>
@@ -347,6 +353,20 @@ If you find a sheep before the first night and get some wool, you can sieve much
 
 <div class="tip">Палки под дубами экономят время на ломание листьев. Пшеничные зёрна сразу съедобны!</div>
 
+<h3>Частые ошибки и советы</h3>
+<div class="tips-grid">
+<div class="tip-card"><strong>Не сжигай мясо!</strong> Используй костёр или печь. Сгоревшее мясо вызывает отравление!</div>
+<div class="tip-card"><strong>Постоянно просеивай!</strong> Сито — основной ранний источник металла. Не пренебрегай им!</div>
+<div class="tip-card"><strong>Береги форму для слитков!</strong> Только 20 использований! Всегда держи несколько запасных.</div>
+<div class="tip-card"><strong>Разнообразное питание!</strong> Однотипное питание вызывает Истощение. Ешь мясо, фрукты и овощи!</div>
+<div class="tip-card"><strong>Кремниевая кирка = уголь!</strong> Кремниевая кирка может добывать угольную руду, хотя и с 1.5× расходом прочности.</div>
+<div class="tip-card"><strong>Кожаная верёвка пораньше!</strong> Убивай животных ради кожи как только появится нож — кожаная верёвка нужна для лучших инструментов.</div>
+<div class="tip-card"><strong>Фильтруй воду!</strong> Сырая вода может вызвать болезнь. Скрафти фильтровальную бумагу для чистой воды!</div>
+<div class="tip-card"><strong>Уровень верстака!</strong> Рецепты высокого уровня требуют верстак более высокого уровня (медный, железный и т.д.)</div>
+<div class="tip-card"><strong>🐑 Овца = главный приоритет!</strong> Шерсть серой овцы → Шпагат → Шпагатная сетчатая шахта — самый быстрый путь к просеиванию, можно пропустить кремниевую эпоху!</div>
+<div class="tip-card"><strong>Гравий можно бросать!</strong> Гравий в руке можно бросить в моба. Полезно в опасных ситуациях без оружия.</div>
+</div>
+
 <h2 id="flint-age">Кремниевая эпоха</h2>
 <p>Из кремниевых осколков и кусков кремня делаешь первые настоящие инструменты.</p>
 
@@ -362,16 +382,49 @@ If you find a sheep before the first night and get some wool, you can sieve much
 
 <p>Наконец можно рубить дерево! Это ключевой этап ранней игры.</p>
 
+<h3>Большой кремниевый топор</h3>
+<div class="recipe">3× Кремень + Жила + 2× Палка → Большой кремниевый топор</div>
+  <CraftingGrid recipeOutput="flint_axe" label={{hu: "Kovaféjsze", en: "Flint Axe"}}/>
+
+<h3>Кремниевая кирка</h3>
+<p>При добыче камня может выпасть <em>Острый кремниевый осколок</em> — основа для копий.</p>
+<div class="info">Кремниевая кирка может добывать угольную руду (1,5× расход прочности).</div>
+
+<h3>Острое кремниевое копьё</h3>
+<div class="recipe">Острые кремниевые осколки + Палка → Острое кремниевое копьё</div>
+  <CraftingGrid recipeOutput="flint_spear" label={{hu: "Éles Kova Lándzsa", en: "Sharp Flint Spear"}}/>
+
+<p>Эффективнее дубины — первое настоящее оружие!</p>
+
 <h3>Кремниевый Верстак</h3>
 <div class="recipe">Кремень + Верёвка + Палка + Доски → Кремниевый Верстак</div>
   <CraftingGrid recipeOutput="flint_workbench" label={{hu: "Kovamunkaasztal (Selyem)", en: "Flint Workbench (Silk)"}}/>
 
 <p>Верстак открывает сетку крафта 3×3. Доступно гораздо больше рецептов!</p>
 
+<h3>Деревянная лопата</h3>
+<div class="recipe">3× Палка → Деревянная лопата (на кремниевом верстаке)</div>
+  <CraftingGrid recipeOutput="wooden_shovel" label={{hu: "Fa Lapát", en: "Wooden Shovel"}}/>
+
+<p>Более быстрая добыча гравия = больше кремниевых осколков!</p>
+
 <h2 id="sieve">Сито и фрагменты руды</h2>
 <p>Сито — один из важнейших инструментов MITE:BE! Положи <strong>гравий</strong> в сито — и из него отфильтруются <strong>фрагменты руды</strong> (медь, серебро, золото и т.д.).</p>
 
+<div class="tip">При просеивании гравия также может выпасть <strong>осколок обсидиана</strong> — позже понадобится для формы для слитков!</div>
+
 <div class="warning">Не пренебрегай ситом — это основной способ получить металлы в ранней игре!</div>
+
+<div class="info-box">🐑 <strong>Шпагатное сито — ранний пропуск этапов!</strong><br>
+<strong>Белая шерсть (овца) → Шпагат → Шпагатная сетка → Сито + Шпагатная сетка</strong><br>
+Если до первой ночи найти овцу и получить немного шерсти, просеивать можно гораздо раньше, чем по обычному прогрессу. Ищи овцу в первую очередь!</div>
+
+<h3>Шансы выпадения при просеивании гравия</h3>
+<p>80% шанс получить что-нибудь при просеивании гравия. Редкие материалы редки, но накапливаются при большом объёме просеивания!</p>
+<div id="sieve-table-gravel"></div>
+<h3>Просеивание Незерного гравия</h3>
+<p>Незерный гравий даёт гораздо больше золота — золотая ферма в Незере намного эффективнее!</p>
+<div id="sieve-table-nether"></div>
 
 </div>
 

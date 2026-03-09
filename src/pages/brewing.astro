@@ -12,7 +12,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const sidebarGroups = getSidebarGroups('brewing');
 ---
-<BaseLayout title="Bájitalfőzés — MITE: Break Everything Wiki" description="MITE:BE bájitalfőzés: főzőállvány, bájital hatások, üst receptek (Folyékony arany, Higany), sajtkészítés.">
+<BaseLayout title="Brewing — MITE: Break Everything Wiki" description="MITE:BE brewing: brewing stand, potion effects, cauldron recipes (Liquid Gold, Mercury), cheese making.">
   <Header />
   <TopNav currentPage="brewing" />
   <div class="container">
@@ -583,6 +583,66 @@ const sidebarGroups = getSidebarGroups('brewing');
   <li>По желанию: добавьте <strong>Порох</strong> → получится взрывной вариант</li>
 </ol>
 
+<h4>Шаг 1 — Основа: Неловкое зелье</h4>
+<BrewingGrid
+  ingredient="Адский гриб"
+  ingredientImg="img/items/nether_wart.png"
+  inputLabel="Бутылка с водой × 3"
+  inputImg="img/items/glass_bottle.png"
+  result="Неловкое зелье (Awkward Potion)"
+  resultColor="#c0a0ff"
+  ru="Отправная точка для всех рецептов зелий"
+/>
+
+<h4>Шаг 2 — Добавьте ингредиент (примеры)</h4>
+<div style="display:flex;flex-wrap:wrap;gap:16px;margin:8px 0 16px">
+  <div>
+    <BrewingGrid
+      ingredient="Сахар"
+      ingredientImg="img/items/sugar.png"
+      inputLabel="Неловкое зелье"
+      result="Зелье скорости"
+      resultColor="#88ff88"
+    />
+  </div>
+  <div>
+    <BrewingGrid
+      ingredient="Порошок Блейза"
+      ingredientImg="img/items/blaze_powder.png"
+      inputLabel="Неловкое зелье"
+      result="Зелье силы"
+      resultColor="#ff8844"
+    />
+  </div>
+  <div>
+    <BrewingGrid
+      ingredient="Магмовый крем"
+      ingredientImg="img/items/magma_cream.png"
+      inputLabel="Неловкое зелье"
+      result="Зелье огнестойкости"
+      resultColor="#ff4444"
+    />
+  </div>
+  <div>
+    <BrewingGrid
+      ingredient="Слеза Гаста"
+      ingredientImg="img/items/ghast_tear.png"
+      inputLabel="Неловкое зелье"
+      result="Зелье регенерации"
+      resultColor="#ff88cc"
+    />
+  </div>
+</div>
+
+<h4>Шаг 3 — Взрывной вариант (необязательно)</h4>
+<BrewingGrid
+  ingredient="Порох"
+  inputLabel="Любое готовое зелье"
+  result="Взрывное зелье"
+  resultColor="#ffcc44"
+  ru="Можно бросить во врагов или союзников"
+/>
+
 <h2 id="brewer-profession">Профессия «Зельевар»</h2>
 <div class="warning-box">⚠️ <strong>Профессии в v0.9.0 не активированы.</strong> Данные существуют в файлах игры, но функция не готова — приведено для ознакомления.</div>
 
@@ -655,10 +715,37 @@ const sidebarGroups = getSidebarGroups('brewing');
 </table>
 <p style="font-size:.82em;color:var(--text2)">⭐ = уникальный эффект MITE, отсутствующий в ванильном Minecraft</p>
 
+<h3>Ингредиенты → Эффекты</h3>
+<table>
+  <tr><th>Ингредиент</th><th>Базовый эффект</th><th>Примечание</th></tr>
+  <tr><td>Адский гриб (Nether Wart)</td><td>Неловкое зелье (база)</td><td>Начало любого рецепта</td></tr>
+  <tr><td>Сахар</td><td>Скорость</td><td>–</td></tr>
+  <tr><td>Порошок Блейза</td><td>Сила</td><td>Из стержня Блейза</td></tr>
+  <tr><td>Слеза Гаста</td><td>Регенерация</td><td>Выпадает с Гастов</td></tr>
+  <tr><td>Магмовый крем</td><td>Огнестойкость</td><td>Выпадает с Магмовых кубов</td></tr>
+  <tr><td>Золотая морковь</td><td>Ночное зрение</td><td>–</td></tr>
+  <tr><td>Глаз паука</td><td>Яд</td><td>–</td></tr>
+  <tr><td>Рыба-шар</td><td>Подводное дыхание</td><td>–</td></tr>
+  <tr><td>Сверкающий ломтик дыни</td><td>Мгновенное здоровье</td><td>–</td></tr>
+  <tr><td>Ферментированный глаз паука</td><td>Слабость / Мгновенный урон</td><td>Для негативных эффектов</td></tr>
+  <tr><td>+ Порох</td><td>Взрывной вариант</td><td>Можно применить к любому зелью</td></tr>
+  <tr><td>+ Красный камень</td><td>Увеличенная длительность</td><td>Не повышает уровень эффекта</td></tr>
+  <tr><td>+ Светокаменная пыль</td><td>Более сильный эффект (II)</td><td>Красный камень ИЛИ пыль — не оба!</td></tr>
+</table>
+
 <h2 id="splash-potions">Взрывные зелья</h2>
 <p>Большинство зелий можно сделать во взрывном варианте — добавьте <strong>Порох</strong> к готовому зелью на стойке.</p>
 
 <div class="tip">💡 Взрывные зелья можно бросать как во врагов (Мгновенный урон, Замедление, Слабость), так и в союзников (Мгновенное здоровье, Сила). Взрывное зелье мгновенного урона особенно эффективно против Огненных элементалей.</div>
+
+<table>
+  <tr><th>Стратегия</th><th>Зелье</th><th>Цель</th></tr>
+  <tr><td>Бой с боссом</td><td>Сила IV (взрывное)</td><td>На себя</td></tr>
+  <tr><td>Побег</td><td>Скорость IV (взрывное)</td><td>На себя</td></tr>
+  <tr><td>Огненный элементаль</td><td>Мгновенный урон (взрывное)</td><td>Враг (себя не заденет!)</td></tr>
+  <tr><td>Группа мобов</td><td>Яд IV (взрывное)</td><td>Группа мобов</td></tr>
+  <tr><td>Раненый союзник</td><td>Мгновенное здоровье II (взрывное)</td><td>NPC-напарник</td></tr>
+</table>
 
 <h2 id="disenchanting">Бутылка расчарования</h2>
 <p>Уникальное зелье MITE, которое создаётся на <strong>стойке для зелий</strong>. Рецепт: адский гриб + уголь + бутылка воды.</p>

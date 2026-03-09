@@ -11,9 +11,9 @@ import '../styles/global.css';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const sidebarGroups = getSidebarGroups('quick-start');
 ---
-<BaseLayout title="Gyors Kezdés — MITE:BE Wiki" description="Gyors start guide MITE:BE-hez: az első nap túlélése, kovakő gyűjtés, első bázis fa tetején — lépésről lépésre.">
+<BaseLayout title="Quick Start — MITE:BE Wiki" description="Quick start guide for MITE:BE: surviving day one, gathering flint, first base in a tree — step by step.">
   <Header />
-  <TopNav currentPage="home" />
+  <TopNav currentPage="quick-start" />
   <div class="container">
     <Sidebar groups={sidebarGroups} />
     <main class="content">
@@ -171,7 +171,20 @@ Only <strong>5 sand or gravel blocks</strong> needed (mineable by hand!):
   <tr><td>🔴 Обязательно</td><td><strong>Глиняная печь</strong> + Костёр</td><td>Первая плавка + контроль температуры</td></tr>
   <tr><td>🟡 Важно</td><td><strong>Форма для слитков</strong></td><td>1 слиток = 9 частиц руды</td></tr>
   <tr><td>🟡 Важно</td><td><strong>Фляга для воды</strong> + фильтровальная бумага</td><td>Управление жаждой — критически важно!</td></tr>
+  <tr><td>🟡 Важно</td><td><strong>Кожаный рюкзак</strong></td><td>Управление инвентарём при уменьшенных стопках</td></tr>
 </table>
+
+<div class="tip-card">🕯️ <strong>Факела в первую ночь у вас, скорее всего, не будет</strong> — это совершенно нормально! На вершине дерева вы в безопасности даже в темноте.</div>
+
+<h3>Частые ошибки</h3>
+<div class="warning-box">⚠️ <strong>Избегайте этого:</strong>
+<ul style="margin:4px 0 0 0">
+  <li>Выходить ночью без укрытия (особенно в первую ночь)</li>
+  <li>Есть только фрукты без белков → Дебафф «Недоедание»</li>
+  <li>Не разводить огонь → риск замерзания</li>
+  <li>Заходить в пещеры без медного доспеха</li>
+  <li>Забыть собрать гравий для Кремня</li>
+</ul></div>
 </div>
 
 <RelatedPages

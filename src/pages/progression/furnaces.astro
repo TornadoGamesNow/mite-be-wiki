@@ -15,7 +15,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const sidebarGroups = getSidebarGroups('progression/furnaces');
 ---
-<BaseLayout title="Kemencék & Olvasztás | MITE:BE Wiki" description="MITE:BE kemencék és olvasztás: agyagkemence, tábortűz, keményített agyagkemence, öntőforma, első fémrúd.">
+<BaseLayout title="Furnaces & Smelting | MITE:BE Wiki" description="MITE:BE furnaces and smelting: clay furnace, campfire, hardened clay furnace, ingot mold, first metal ingot.">
   <Header />
   <TopNav currentPage="progression" />
   <div class="container">
@@ -271,6 +271,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 <h2 id="campfire">Костёр</h2>
 <p>Костёр позволяет готовить мясо правильно — не сжигая его. Сгоревшее мясо вызывает отравление. Может готовить <strong>8 кусков мяса</strong> одновременно.</p>
 <div class="warning">Поедание сгоревшего мяса вызывает отравление! Используй костёр или печь!</div>
+<div class="tip-card">🔥 <strong>Импровизированный гриль (без костра):</strong> Если костра ещё нет, можно жарить на <strong>горючем блоке</strong> (например, деревянной доске): брось сырое мясо на блок, затем подожги Кремнём и сталью. Огонь «впитывается» в мясо — после того, как погаснет, подожги снова. Нужно примерно <strong>4 поджигания</strong> для полного приготовления.</div>
 
 <h2 id="hardened-clay">Обожжённая глиняная печь</h2>
 <div class="craft-section">
@@ -285,6 +286,10 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 </div>
 <p>Обсидиановая форма выдерживает <strong>20 слитков</strong> прежде чем сломается.</p>
 
+<h3>Молот + Обсидиан = 2 Формы</h3>
+<p>Положи Обсидиан + Молот на любой верстак — сразу получишь 2 формы. Более эффективный метод!</p>
+<CraftingGrid recipeFullId="obsidian_ingot_mould_copper_war_hammer" label={{hu: "2× Öntőforma", en: "2× Ingot Mould"}}/>
+
 <h2 id="first-metal">Первая плавка металла</h2>
 <p>Первый прорыв! Плавка меди или серебра:</p>
 <div class="flow">
@@ -298,6 +303,33 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 </div>
 <p><strong>Shift+ПКМ</strong>: добавляет уголь в печь. После этого начинается плавка.</p>
 <div class="tip">После плавки делай инструменты на металлическом верстаке (например, Медном). Рядом с палкой клади <strong>глину</strong> для защиты рукоятки!</div>
+
+<h3>Прямая плавка блоков руды</h3>
+<div class="warning-box">⚠️ <strong>Профессия Горняка неактивна в v0.9.0</strong> — эта функция сейчас недоступна. Вместо этого используй дробление молотом войны (см. ниже).</div>
+<table>
+  <tr><th>Блок руды</th><th>Нужный нагрев</th><th>Результат</th></tr>
+  <tr><td>Медь / Серебро / Железо / Золото / Твердокамень</td><td>2 — Обожжённая или Каменная печь</td><td>1 Слиток</td></tr>
+  <tr><td>Мифрил / Ртуть</td><td>3 — Обсидиановая печь</td><td>1 Слиток</td></tr>
+  <tr><td>Адамантовая руда</td><td>4 — Печь из адского камня</td><td>1 Адамантовый слиток</td></tr>
+</table>
+
+<h3>Дробление руды — Молотом войны</h3>
+<p>Нет профессии Горняка? Положи <strong>блок руды и молот войны на верстак</strong> — получишь 12 фрагментов руды, больше чем 9 от переплавки слитка!</p>
+<table>
+  <tr><th>Вход</th><th>Нужный молот</th><th>Выход</th></tr>
+  <tr><td>Блок медной / серебряной / золотой руды</td><td>Бронзовый, Серебряно-медный или HC стальной молот</td><td>12 фрагментов руды</td></tr>
+  <tr><td>Блок железной руды</td><td>Только HC стальной молот</td><td>12 фрагментов руды</td></tr>
+  <tr><td>Любой металлический слиток</td><td>Любой (бронзовый / серебряно-медный / HC стальной) молот</td><td>9 фрагментов руды</td></tr>
+</table>
+<div class="info"><strong>Сравнение:</strong> 1 блок руды = 12 фрагментов при дроблении → 1⅓ слитка (через плавку). С профессией Горняка блок даёт 1 слиток напрямую, но дробление молотом извлекает на 33% больше если потом переплавить!</div>
+
+<h3>Методы обработки руды — Сравнение</h3>
+<table>
+  <tr><th>Метод</th><th>Как?</th><th>Результат</th><th>Требование</th></tr>
+  <tr><td>🧺 Просеивание</td><td>Просеиваешь гравий → 9 фрагментов → печь + форма</td><td>1 Слиток</td><td>Обожжённая глиняная печь + форма</td></tr>
+  <tr><td>⛏️ Прямая плавка блока</td><td>Кладёшь блок руды в печь</td><td>1 Слиток</td><td><strong>Профессия Горняка!</strong> <em>(⚠️ неактивна v0.9.0)</em></td></tr>
+  <tr><td>🔨 Дробление молотом</td><td>Блок руды + подходящий молот → верстак</td><td>12 фрагментов → 1⅓ Слитка</td><td>Бронзовый или лучший молот</td></tr>
+</table>
 
 </div>
 

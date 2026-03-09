@@ -13,7 +13,7 @@ import '../../styles/global.css';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const sidebarGroups = getSidebarGroups('systems/combat');
 ---
-<BaseLayout title="Harc — MITE:BE Wiki" description="MITE:BE harc: páncél típusok és szett hatások, fegyverek, varázslatok, íj és nyilak, harci stratégiák.">
+<BaseLayout title="Combat — MITE:BE Wiki" description="MITE:BE combat: armor types and set bonuses, weapons, enchantments, bow and arrows, combat strategies.">
   <Header />
   <TopNav currentPage="systems" />
   <div class="container">
@@ -297,51 +297,149 @@ const sidebarGroups = getSidebarGroups('systems/combat');
 
 <div data-lang="ru">
 <h2 id="armor-weapons-ru">⚔️ Броня и оружие</h2>
-<p>У каждого металла есть свой комплект брони и оружия. Серебряное оружие особенно хорошо работает против нежити, а адамантиевое снаряжение даёт максимальную защиту в игре.</p>
+
+<h3>Типы брони</h3>
+<p>У каждого металлического уровня есть полный комплект брони (шлем, нагрудник, поножи, ботинки) в двух вариантах: <strong>пластинчатая</strong> и <strong>кольчужная</strong>. Серебряное оружие особенно хорошо против нежити, адамантиевое снаряжение даёт максимальную защиту.</p>
 
 <h3>Бонусы комплектов</h3>
 <table>
   <tr><th>Комплект</th><th>Бонус</th></tr>
   <tr><td><span class="tier t-copper">Бронза</span></td><td>+20% скорость бега</td></tr>
+  <tr><td><span class="tier t-silver">Серебро-медь</span></td><td>-10% получаемого урона</td></tr>
+  <tr><td><span class="tier t-iron">Высокоуглеродистая сталь</span></td><td>5% снижение урона за каждый элемент</td></tr>
   <tr><td><span class="tier t-mithril">Мифрил (4/4)</span></td><td>+40% скорость бега, -30% снижение урона</td></tr>
-  <tr><td><span class="tier t-ancient">Древний металл (4/4)</span></td><td>-30% урона из подземного мира, устойчивость к коррозии</td></tr>
-  <tr><td><span class="tier t-adamantium">Адамант (4/4)</span></td><td>Иммунитет к коррозии слизей; огонь не снижает прочность</td></tr>
+  <tr><td><span class="tier t-ancient">Древний металл (4/4)</span></td><td>-30% урона из подземного мира, вампирские летучие мыши не атакуют, устойчивость к коррозии</td></tr>
+  <tr><td><span class="tier t-adamantium">Адамант (4/4)</span></td><td>Иммунитет к коррозии от серых/чёрных слизней; огонь не снижает прочность</td></tr>
+  <tr><td>Ртутный элемент (4/4)</td><td>Температура тела навсегда остаётся 36,5°C</td></tr>
 </table>
 
 <h3>Значения защиты брони</h3>
+<p>Всего 20 очков = полная защита. Броня теряет ценность ниже 50% прочности! <em>(Данные для пластинчатой брони)</em></p>
 <table class="compare-table">
   <tr><th>Материал</th><th>Шлем</th><th>Нагрудник</th><th>Поножи</th><th>Ботинки</th><th>Итого</th></tr>
-  <tr><td>Кожа</td><td>0.42</td><td>0.67</td><td>0.58</td><td>0.33</td><td>2.00</td></tr>
+  <tr><td><span class="tier t-flint">Кожа</span></td><td>0.42</td><td>0.67</td><td>0.58</td><td>0.33</td><td>2.00</td></tr>
+  <tr><td><span style="color:#f0c040">Золото</span></td><td>1.25</td><td>2.00</td><td>1.75</td><td>1.00</td><td>6.00</td></tr>
   <tr><td><span class="tier t-copper">Медь / Серебро</span></td><td>1.46</td><td>2.33</td><td>2.04</td><td>1.17</td><td>7.00</td></tr>
+  <tr><td><span class="tier t-copper">Бронза</span></td><td>1.60</td><td>2.40</td><td>2.10</td><td>1.30</td><td>7.40</td></tr>
+  <tr><td><span class="tier t-silver">Серебро-медь</span></td><td>1.70</td><td>2.50</td><td>2.20</td><td>1.30</td><td>7.70</td></tr>
   <tr><td><span class="tier t-iron">Железо</span></td><td>1.67</td><td>2.67</td><td>2.33</td><td>1.33</td><td>8.00</td></tr>
+  <tr><td><span class="tier t-iron">Высокоугл. сталь</span></td><td>1.70</td><td>2.70</td><td>2.30</td><td>1.30</td><td>8.00</td></tr>
+  <tr><td><span class="tier t-hard">Твердокамень</span></td><td>1.80</td><td>2.80</td><td>2.40</td><td>1.40</td><td>8.40</td></tr>
+  <tr><td><span class="tier t-ancient">Древний металл</span></td><td>1.90</td><td>2.90</td><td>2.50</td><td>1.50</td><td>8.80</td></tr>
   <tr><td><span class="tier t-mithril">Мифрил</span></td><td>2.00</td><td>3.00</td><td>2.70</td><td>1.60</td><td>9.30</td></tr>
   <tr><td><span class="tier t-adamantium">Адамант</span></td><td>2.08</td><td>3.33</td><td>2.92</td><td>1.67</td><td>10.00</td></tr>
 </table>
 <div class="warning-box">⚠️ <strong>Броня теряет защитную ценность ниже 50% прочности!</strong> Следите за состоянием снаряжения и чините его своевременно.</div>
 
-<h2 id="enchanting-ru">✨ Зачарование</h2>
-<p>Изумрудный стол зачарований позволяет накладывать чары на снаряжение. Алмазный стол зачарований требует <strong>24 книжные полки</strong> вокруг для сильных чар.</p>
-
-<table class="compare-table">
-  <tr><th>Зачарование</th><th>Цель</th><th>Макс. уровень</th></tr>
-  <tr><td>Острота</td><td>Меч</td><td>V</td></tr>
-  <tr><td>Защита</td><td>Броня</td><td>IV</td></tr>
-  <tr><td>Несломимость</td><td>Любое</td><td>V</td></tr>
-  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Вампир 🩸</strong></td><td>Оружие</td><td>V</td></tr>
-  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Регенерация 💚</strong></td><td>Броня</td><td>V</td></tr>
-  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Скорость 🏃</strong></td><td>Ботинки</td><td>V</td></tr>
+<h3>Типы оружия</h3>
+<table>
+  <tr><th>Оружие</th><th>Особенность</th></tr>
+  <tr><td>Меч</td><td>Высокий урон, возможность блокирования</td></tr>
+  <tr><td>Кинжал</td><td>Не блокирует, но с зачарованием Мясник даёт больше мяса с животных</td></tr>
+  <tr><td>Боевой молот</td><td>-33% прочности мобов, бонусный урон скелетам — можно также дробить руды!</td></tr>
+  <tr><td>Боевой топор</td><td>Высокий урон, медленный замах</td></tr>
+  <tr><td>Коса</td><td>Гибрид земледелия и боя — зачарования Жатва и Вампир, но 4× износ в бою!</td></tr>
+  <tr><td>Лук / Арбалет</td><td>Дальний бой</td></tr>
+  <tr><td>Щит</td><td>Металлические щиты (медь → адамант) — блокировка правой кнопкой мыши</td></tr>
 </table>
+
+<h3>Шанс блокирования щита</h3>
+<table class="compare-table">
+  <tr><th>Материал щита</th><th>Шанс блока</th></tr>
+  <tr><td><span class="tier t-copper">Медь / Серебро</span></td><td>6%</td></tr>
+  <tr><td><span class="tier t-iron">Железо</span></td><td>8%</td></tr>
+  <tr><td><span class="tier t-iron">Золото</span></td><td>12%</td></tr>
+  <tr><td><span class="tier t-mithril">Мифрил</span></td><td>15%</td></tr>
+  <tr><td><span class="tier t-adamantium">Адамант</span></td><td>18%</td></tr>
+</table>
+<div class="info-box">🎮 <strong>Разница режимов:</strong> В режиме Hardcore шанс блока <strong>на 3% ниже</strong>, а успешный блок даёт лишь <strong>20% снижения урона</strong> (в Simple — 50%).</div>
+
+<h3>Сравнение урона мечей</h3>
+<table class="compare-table">
+  <tr><th>Материал</th><th>Урон меча</th><th>Боевой топор</th><th>Боевой молот</th></tr>
+  <tr><td><span class="tier t-copper">Медь</span></td><td>+7</td><td>+7</td><td>+5</td></tr>
+  <tr><td><span class="tier t-silver">Серебро</span></td><td>+7</td><td>+7</td><td>+5</td></tr>
+  <tr><td><span class="tier t-iron">Железо</span></td><td>+8</td><td>+8</td><td>+6</td></tr>
+  <tr><td><span class="tier t-hard">Твердокамень</span></td><td>+8</td><td>+8</td><td>+6</td></tr>
+  <tr><td><span class="tier t-ancient">Древний металл</span></td><td>+9</td><td>+9</td><td>+7</td></tr>
+  <tr><td><span class="tier t-mithril">Мифрил</span></td><td>+11</td><td>+11</td><td>+9</td></tr>
+  <tr><td><span class="tier t-adamantium">Адамант</span></td><td>+10</td><td>+10</td><td>+8</td></tr>
+</table>
+<div class="info-box">⚔️ <strong>Особые бонусы мечей:</strong>
+<ul style="margin:4px 0 0 0">
+  <li><strong>Серебряный меч:</strong> Поджигает нежить — горит 100 тиков (5 секунд)</li>
+  <li><strong>Меч из высокоугл. стали:</strong> AoE-эффект — +4 урона по мобам в 5 блоках за удар</li>
+  <li><strong>Меч из древнего металла:</strong> Проходит сквозь Фазовых пауков; коррозиестоек</li>
+</ul></div>
+
+<h3>Скорость износа оружия</h3>
+<table class="compare-table">
+  <tr><th>Оружие</th><th>Износ vs. враг</th><th>Износ vs. блок</th><th>Примечание</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Меч</strong></td><td><strong>0.5× ✅</strong></td><td>2× ❌</td><td>В бою держится долго, но НЕ копай им!</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td><strong>Кинжал</strong></td><td><strong>0.5× ✅</strong></td><td>2× ❌</td><td>Как меч vs. сущности</td></tr>
+  <tr><td><strong>Боевой топор</strong></td><td>0.75×</td><td>1.25×</td><td>Сбалансирован в бою и для рубки</td></tr>
+  <tr><td><strong>Боевой молот</strong></td><td>0.67×</td><td>0.67×</td><td>Экономичен в обоих случаях</td></tr>
+  <tr style="background:rgba(255,100,100,0.15)"><td><strong>Коса</strong></td><td><strong>4× ‼️</strong></td><td>2×</td><td>⚠️ Очень быстро изнашивается в бою!</td></tr>
+</table>
+
+<h3>Дистанция атаки</h3>
+<p>В MITE:BE дистанция атаки <strong>значительно меньше</strong>, чем в ванильном Minecraft!</p>
+<table class="compare-table">
+  <tr><th>Бонус</th><th>Полная дистанция (vs блоки)</th><th>Инструмент / Предмет</th></tr>
+  <tr style="background:rgba(255,80,80,0.10)"><td>База (пустые руки)</td><td><strong>2.75 блока</strong></td><td>— (в ванилле: 4.5!)</td></tr>
+  <tr style="background:rgba(200,160,80,0.12)"><td>+0.75</td><td>3.50 блока</td><td>Железный меч, Железная кирка, Железная лопата, Железный топор, Боевой топор</td></tr>
+  <tr style="background:rgba(100,200,100,0.12)"><td><strong>+1.00</strong></td><td><strong>3.75 блока</strong></td><td>⭐ <strong>Железная коса</strong> — лучший радиус в ближнем бою!</td></tr>
+</table>
+
+<h2 id="enchanting-ru">✨ Зачарование</h2>
+
+<h3>Изумрудный стол зачарований</h3>
+<div class="recipe">Изумруд + Обсидиан + Книга → Изумрудный стол зачарований</div>
+
+<h3>Алмазный стол зачарований</h3>
+<p>Для мощных зачарований нужны <strong>24 книжные полки</strong>! Алмазный стол использует <strong>Лазурит</strong> и позволяет выбрать нужное зачарование напрямую.</p>
+<div class="tip-card">⚡ <strong>Экономия опыта:</strong> Перед зачарованием на Алмазном столе сначала нанесите дешёвое зачарование (напр. Защита I) на Изумрудном столе. Алмазный стол рассчитывает <strong>стоимость улучшения</strong>, а не полного зачарования — экономит значительный опыт.</div>
+<div class="warning-box">💎 <strong>Экономия алмазов:</strong> На все полезные рецепты нужно около <strong>11 алмазов</strong> — используйте их экономно!</div>
+
+<h3>Доступные зачарования</h3>
+<p>Редкость: <span style="color:#aaa">■ Обычное</span> · <span style="color:#5f5">■ Редкое</span> · <span style="color:#55f">■ Необычное</span> · <span style="color:#a0f">■ Эпическое</span> &nbsp;|&nbsp; <span style="background:rgba(255,200,0,0.12);padding:0 4px">Жёлтый = зачарование MITE</span></p>
+<table class="compare-table">
+  <tr><th>Зачарование</th><th>Редкость</th><th>Макс. уровень</th><th>Цель</th></tr>
+  <tr><td>Защита</td><td style="color:#aaa">Обычное</td><td>IV</td><td>Броня</td></tr>
+  <tr><td>Огнезащита</td><td style="color:#55f">Необычное</td><td>IV</td><td>Броня</td></tr>
+  <tr><td>Острота</td><td style="color:#aaa">Обычное</td><td>V</td><td>Меч</td></tr>
+  <tr><td>Отдача</td><td style="color:#55f">Необычное</td><td>II</td><td>Меч</td></tr>
+  <tr><td>Несломимость</td><td style="color:#55f">Необычное</td><td>V</td><td>Любое</td></tr>
+  <tr><td>Эффективность</td><td style="color:#aaa">Обычное</td><td>V</td><td>Инструмент</td></tr>
+  <tr><td>Сила</td><td style="color:#aaa">Обычное</td><td>V</td><td>Лук</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Вампир 🩸</strong></td><td style="color:#a0f">Эпическое</td><td>V</td><td>Оружие</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Удар ⚡</strong></td><td style="color:#55f">Необычное</td><td>V</td><td>Оружие</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Регенерация 💚</strong></td><td style="color:#5f5">Редкое</td><td>V</td><td>Броня</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Скорость 🏃</strong></td><td style="color:#55f">Необычное</td><td>V</td><td>Ботинки</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Жатва 🌾</strong></td><td style="color:#55f">Необычное</td><td>V</td><td>Коса</td></tr>
+  <tr style="background:rgba(255,200,0,0.08)"><td><strong>Валка деревьев 🪓</strong></td><td style="color:#55f">Необычное</td><td>V</td><td>Топор</td></tr>
+</table>
+<div class="info-box"><strong>Стратегия:</strong> <strong>Вампир</strong> (эпическое) — сильнейшее боевое зачарование: ворует HP при каждом попадании. <strong>Валка деревьев</strong> на топоре рубит всё дерево одним ударом!</div>
 
 <h2 id="bow-arrows-ru">🏹 Лук и система стрел</h2>
-<p>Разные типы стрел дают разные эффекты. Колчан позволяет носить больше стрел (96 штук).</p>
+<p>MITE:BE расширяет систему стрел — 10 типов стрел, 3 вида луков, Колчан (96 стрел). Размер стека стрел: 16.</p>
+<div class="tip-card">🔦 <strong>Выстрел факелом из лука:</strong> Луком можно <strong>выстрелить факелом</strong> по целям — например, прикрепить к стене или потолку пещеры — чтобы заранее осветить территорию перед добычей.</div>
 <table class="compare-table">
-  <tr><th>Стрела</th><th>Урон</th><th>Примечание</th></tr>
-  <tr><td>Кремнёвая</td><td>+1</td><td>Начальная</td></tr>
-  <tr><td>Медная</td><td>+3</td><td>—</td></tr>
-  <tr><td>Железная</td><td>+4</td><td>—</td></tr>
-  <tr style="background:rgba(126,200,227,0.12)"><td><strong>Мифриловая</strong></td><td>+7</td><td>Лучший урон!</td></tr>
-  <tr style="background:rgba(179,136,255,0.14)"><td><strong>Адамантиевая</strong></td><td>+6</td><td>Единственная, уничтожающая кристаллы Края!</td></tr>
+  <tr><th>Стрела</th><th>Урон</th><th>Шанс возврата</th><th>Особенность</th></tr>
+  <tr><td>Кремнёвая</td><td>+1</td><td>30%</td><td>Начальная стрела</td></tr>
+  <tr><td>Обсидиановая</td><td>+2</td><td>40%</td><td>—</td></tr>
+  <tr><td>Медная</td><td>+3</td><td>60%</td><td>—</td></tr>
+  <tr style="background:rgba(192,192,128,0.10)"><td><strong>Серебряная</strong></td><td>+3</td><td>60%</td><td>Бонус против нежити + бьёт Белых Упырей</td></tr>
+  <tr><td>Железная</td><td>+4</td><td>70%</td><td>—</td></tr>
+  <tr style="background:rgba(126,200,227,0.12)"><td><strong>Мифриловая</strong></td><td>+7</td><td>80%</td><td>Лучший урон!</td></tr>
+  <tr style="background:rgba(179,136,255,0.14)"><td><strong>Адамантиевая</strong></td><td>+6</td><td>90%</td><td>Единственная, уничтожающая Кристаллы Края!</td></tr>
 </table>
+<table class="compare-table">
+  <tr><th>Лук</th><th>Прочность</th><th>Бонус скорости</th><th>Примечание</th></tr>
+  <tr><td>Обычный лук</td><td>385</td><td>—</td><td>Стандартный</td></tr>
+  <tr style="background:rgba(126,200,227,0.12)"><td><strong>Мифриловый лук</strong></td><td>128 исп.</td><td>+25% скорость натяжения и полёта</td><td>Лучший (Legendary → Artifact)</td></tr>
+</table>
+<div class="info-box">🏹 <strong>Колчан:</strong> 6 ячеек × 16 стрел = <strong>96 стрел</strong>. Рецепт: 1 Перо + 2 Кожи.<br><strong>Лучший комбо:</strong> Мифриловый лук + Адамантиевые стрелы — обязателен для Кристаллов Края!</div>
 </div>
 
 <ProgressComplete pageId="combat" />

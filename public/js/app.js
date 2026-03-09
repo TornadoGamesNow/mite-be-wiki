@@ -460,7 +460,7 @@ function renderTable(containerId, headers, rows, lang) {
   const el = findVisibleEl(containerId);
   if (!el) return;
   let html = '<table class="compare-table"><tr>';
-  html += headers.map(h => '<th>' + (typeof h === 'string' ? h : h[lang]) + '</th>').join('');
+  html += headers.map(h => '<th>' + (typeof h === 'string' ? h : (h[lang] || h.en || h.hu || '')) + '</th>').join('');
   html += '</tr>';
   for (const row of rows) {
     let rowStyle = '';
@@ -469,7 +469,7 @@ function renderTable(containerId, headers, rows, lang) {
     if (row.bad) rowStyle += 'color:#a44;';
     html += '<tr' + (rowStyle ? ' style="' + rowStyle + '"' : '') + '>';
     for (const cell of row.cells) {
-      const rawText = typeof cell.text === 'string' ? cell.text : cell.text[lang];
+      const rawText = typeof cell.text === 'string' ? cell.text : (cell.text[lang] || cell.text.en || cell.text.hu || '');
       const text = cell.bold ? '<strong>' + rawText + '</strong>' : rawText;
       html += cell.tier
         ? '<td><span class="tier ' + cell.tier + '">' + text + '</span></td>'
@@ -488,11 +488,11 @@ function initDataTables(lang) {
   // ── Mob Tables ──
   if (d.mobs) {
     const mobHeaders = [
-      { hu: 'Szörny', en: 'Mob' },
-      { hu: 'HP', en: 'HP' },
-      { hu: 'Sebzés', en: 'Damage' },
-      { hu: 'XP', en: 'XP' },
-      { hu: 'Speciális', en: 'Special' }
+      { hu: 'Szörny', en: 'Mob', ru: 'Моб' },
+      { hu: 'HP', en: 'HP', ru: 'HP' },
+      { hu: 'Sebzés', en: 'Damage', ru: 'Урон' },
+      { hu: 'XP', en: 'XP', ru: 'XP' },
+      { hu: 'Speciális', en: 'Special', ru: 'Особое' }
     ];
     function mobRows(list) {
       return list.map(m => ({ cells: [
@@ -511,9 +511,9 @@ function initDataTables(lang) {
   // ── Sieve Tables ──
   if (d.sieve) {
     const sieveHeaders = [
-      { hu: 'Anyag', en: 'Item' },
-      { hu: 'Esély', en: 'Chance' },
-      { hu: 'Hasznosság', en: 'Use' }
+      { hu: 'Anyag', en: 'Item', ru: 'Материал' },
+      { hu: 'Esély', en: 'Chance', ru: 'Шанс' },
+      { hu: 'Hasznosság', en: 'Use', ru: 'Применение' }
     ];
     function sieveRows(list) {
       return list.map(s => ({ cells: [
@@ -531,7 +531,7 @@ function initDataTables(lang) {
     // Enchantability
     if (d.materials.enchantability) {
       renderTable('material-enchantability',
-        [{ hu: 'Anyag', en: 'Material' }, { hu: 'Bűvölhetőség', en: 'Enchantability' }, { hu: 'Megjegyzés', en: 'Note' }],
+        [{ hu: 'Anyag', en: 'Material', ru: 'Материал' }, { hu: 'Bűvölhetőség', en: 'Enchantability', ru: 'Зачаровываемость' }, { hu: 'Megjegyzés', en: 'Note', ru: 'Примечание' }],
         d.materials.enchantability.map(r => ({ bg: r.bg, muted: r.muted, cells: [
           { text: r.materials },
           { text: String(r.value), bold: true },
@@ -542,7 +542,7 @@ function initDataTables(lang) {
     // Max Quality
     if (d.materials.maxQuality) {
       renderTable('material-max-quality',
-        [{ hu: 'Minőség', en: 'Quality' }, { hu: 'Anyagok', en: 'Materials' }],
+        [{ hu: 'Minőség', en: 'Quality', ru: 'Качество' }, { hu: 'Anyagok', en: 'Materials', ru: 'Материалы' }],
         d.materials.maxQuality.map(r => ({ bg: r.bg, muted: r.muted, bad: r.bad, cells: [
           { text: r.quality, bold: true },
           { text: r.materials }
@@ -552,7 +552,7 @@ function initDataTables(lang) {
     // Durability Multipliers
     if (d.materials.durabilityMult) {
       renderTable('material-durability-mult',
-        [{ hu: 'Szorzó', en: 'Multiplier' }, { hu: 'Anyagok', en: 'Materials' }],
+        [{ hu: 'Szorzó', en: 'Multiplier', ru: 'Множитель' }, { hu: 'Anyagok', en: 'Materials', ru: 'Материалы' }],
         d.materials.durabilityMult.map(r => ({ bg: r.bg, muted: r.muted, bad: r.bad, cells: [
           { text: r.mult, bold: true },
           { text: r.materials, tier: r.tier || null }

@@ -9,6 +9,7 @@ interface Props {
   resultColor?: string;
   hu?: string;
   en?: string;
+  ru?: string;
 }
 
 const {
@@ -16,7 +17,7 @@ const {
   inputLabel, inputImg,
   result, resultImg,
   resultColor = '#4ecca3',
-  hu, en,
+  hu, en, ru,
 } = Astro.props;
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -40,7 +41,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     ">
       <!-- Ingredient slot (top) -->
       <div style="font-size:.6em;color:#aaa;letter-spacing:.06em;text-transform:uppercase;line-height:1;margin-bottom:2px">
-        <span data-lang="hu">Alapanyag</span><span data-lang="en">Ingredient</span>
+        <span data-lang="hu">Alapanyag</span><span data-lang="en">Ingredient</span><span data-lang="ru">Ингредиент</span>
       </div>
       <div style="
         width:42px;height:42px;
@@ -68,7 +69,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
       <!-- 3 bottle slots -->
       <div style="font-size:.6em;color:#aaa;letter-spacing:.06em;text-transform:uppercase;line-height:1;margin-bottom:2px">
-        <span data-lang="hu">Palackok</span><span data-lang="en">Bottles</span>
+        <span data-lang="hu">Palackok</span><span data-lang="en">Bottles</span><span data-lang="ru">Бутылки</span>
       </div>
       <div style="display:flex;gap:5px">
         {[0,1,2].map(() => (
@@ -120,4 +121,5 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <!-- Labels -->
   {hu && <div class="craft-label" data-lang="hu">{hu}</div>}
   {en && <div class="craft-label" data-lang="en">{en}</div>}
+  {ru && <div class="craft-label" data-lang="ru">{ru}</div>}
 </div>
