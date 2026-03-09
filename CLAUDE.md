@@ -52,7 +52,7 @@ Minden adat `data/` mappában JSON/JS formátumban:
 
 ⚠️ `public/data/mobs.js` és `public/data/materials.js` **manuálisan karbantartott** fájlok, nem generálódnak a JSON-okból!
 
-### Kétnyelvűség (HU/EN)
+### Háromnyelvűség (HU/EN/RU)
 
 - Minden szöveges adat `{ hu: "...", en: "..." }` objektum
 - `localStorage` kulcs: `mite-wiki-lang`

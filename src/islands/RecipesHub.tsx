@@ -637,7 +637,7 @@ function ItemDetailPanel({ itemId, lang, onClose, onSelectGroup }: {
                   {(r as any).removed_version && <div style={{ color: '#ff6b6b', fontWeight: 600 }}>⚠️ v{(r as any).removed_version}</div>}
                   {(r as any).added_version && <div style={{ color: '#6bcb77' }}>✅ v{(r as any).added_version}+</div>}
                   <div>🏭 {r.station}</div>
-                  {!r.shaped && <div><span className="badge-shapeless">🔀 {lang === 'hu' ? 'Szabad' : lang === 'ru' ? 'Без формы' : 'Shapeless'}</span></div>}
+                  {!r.shaped && <div><span className="badge-shapeless">🔀 {lang === 'hu' ? 'Szabad' : lang === 'ru' ? 'Без раскладки' : 'Shapeless'}</span></div>}
                   {r.outputQty > 1 && <div>📦 ×{r.outputQty}</div>}
                 </div>
               </div>
@@ -759,7 +759,7 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                   <div key={i} style={{ paddingTop: i > 0 ? 20 : 0, borderTop: i > 0 ? '1px solid var(--surface2)' : 'none' }}>
                     {/* Badges */}
                     <div style={{ marginBottom: 12, display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                      {!r.shaped && <span className="badge-shapeless">🔀 {lang === 'hu' ? 'Szabad' : lang === 'ru' ? 'Без формы' : 'Shapeless'}</span>}
+                      {!r.shaped && <span className="badge-shapeless">🔀 {lang === 'hu' ? 'Szabad' : lang === 'ru' ? 'Без раскладки' : 'Shapeless'}</span>}
                       {group.recipes.length > 1 && (
                         <span style={{ fontSize: '.72em', padding: '2px 7px', borderRadius: 4, background: 'rgba(255,200,0,.12)', color: 'var(--gold)', border: '1px solid rgba(255,200,0,.25)' }}>
                           {lang === 'hu' ? `${i + 1}. variáns` : lang === 'ru' ? `Вариант ${i + 1}` : `Variant ${i + 1}`}
@@ -823,7 +823,7 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                       )}
                       {(r as any).added_version && (
                         <div style={{ color: '#6bcb77', fontWeight: 600, marginBottom: 4 }}>
-                          ✅ {lang === 'hu' ? `Szükséges: v${(r as any).added_version}+` : lang === 'ru' ? `Требуется v${(r as any).added_version}+` : `Requires v${(r as any).added_version}+`}
+                          ✅ {lang === 'hu' ? `Szükséges: v${(r as any).added_version}+` : lang === 'ru' ? `Доступно с v${(r as any).added_version}+` : `Requires v${(r as any).added_version}+`}
                         </div>
                       )}
                       <div>🏭 {r.station}</div>
@@ -834,7 +834,7 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                           title={lang === 'hu'
                             ? `Crafting nehézségi pontszám: ${Math.round(r.difficulty)}\nMinél magasabb az érték, annál több idő és tapasztalat szükséges a tárgy minőségi craftolásához (Fine → Legendary). Az XP-követelmény ezzel az értékkel arányos.`
                             : lang === 'ru'
-                            ? `Сложность крафта: ${Math.round(r.difficulty)}\nЧем выше значение, тем больше времени и опыта нужно для крафта предмета высокого качества (Fine → Legendary). Требования к XP пропорциональны этому значению.`
+                            ? `Сложность крафта: ${Math.round(r.difficulty)}\nЧем выше значение, тем больше времени и опыта нужно, чтобы создать предмет более высокого качества (Fine → Legendary). Требуемый опыт растёт пропорционально этому значению.`
                             : `Crafting difficulty score: ${Math.round(r.difficulty)}\nHigher values require more time and experience to craft the item at higher quality (Fine → Legendary). XP requirements scale proportionally with this value.`}
                         >
                           {Math.round(r.difficulty).toLocaleString()}
@@ -848,7 +848,7 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                     <div style={{ fontSize: '.8em', color: 'var(--text2)', marginBottom: 8, fontWeight: 500 }}>
                       {lang === 'hu' ? 'Hozzávalók' : lang === 'ru' ? 'Ингредиенты' : 'Ingredients'}
                       <span style={{ fontSize: '.85em', fontWeight: 400, marginLeft: 6 }}>
-                        ({lang === 'hu' ? 'kattints a receptekért' : lang === 'ru' ? 'клик для рецептов' : 'click for recipes'})
+                        ({lang === 'hu' ? 'kattints a receptekért' : lang === 'ru' ? 'нажмите, чтобы открыть рецепты' : 'click for recipes'})
                       </span>
                     </div>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
@@ -1085,7 +1085,7 @@ function PickerItem({ id, lang, isSelected, onSelect, onNavigate, onOpenModal }:
                 color: 'var(--gold)', fontSize: '.75em', fontWeight: 600,
               }}
             >
-              +{usedIn.length - 8} {lang === 'hu' ? 'recept — Mind' : lang === 'ru' ? 'ещё — Все' : 'more — View all'}
+              +{usedIn.length - 8} {lang === 'hu' ? 'recept — Mind' : lang === 'ru' ? 'ещё — показать все' : 'more — View all'}
             </button>
           )}
         </div>
@@ -1251,7 +1251,7 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
           </div>
           {/* right-click hint */}
           <div style={{ marginTop: 8, fontSize: '.7em', color: 'var(--text2)', opacity: .7 }}>
-            {lang === 'hu' ? 'Jobb klikk = cella törlése' : lang === 'ru' ? 'ПКМ = убрать предмет' : 'Right-click = remove item'}
+            {lang === 'hu' ? 'Jobb klikk = cella törlése' : lang === 'ru' ? 'Щелчок правой кнопкой мыши удаляет предмет' : 'Right-click = remove item'}
           </div>
         </div>
 
@@ -1506,7 +1506,7 @@ export default function RecipesHub() {
       {/* Tabs */}
       <div className="hub-tabs">
         <button className={`hub-tab${mode === 'browse' ? ' active' : ''}`} onClick={() => setMode('browse')}>
-          🔍 {lang === 'hu' ? 'Böngésző' : lang === 'ru' ? 'Обзор' : 'Browse'}
+          🔍 {lang === 'hu' ? 'Böngésző' : lang === 'ru' ? 'Браузер' : 'Browse'}
         </button>
         <button className={`hub-tab${mode === 'sandbox' ? ' active' : ''}`} onClick={() => setMode('sandbox')}>
           🧪 Sandbox
@@ -1555,10 +1555,10 @@ export default function RecipesHub() {
             <select value={typeFilter} onChange={e => setTypeFilter(e.target.value as 'all' | 'shaped' | 'shapeless' | 'removed' | 'current')}
               style={{ padding: '6px 10px', borderRadius: 6, border: `1px solid ${typeFilter === 'removed' ? '#ff6b6b' : typeFilter === 'current' ? '#6bcb77' : 'var(--surface2)'}`, background: 'var(--bg)', color: typeFilter === 'removed' ? '#ff6b6b' : typeFilter === 'current' ? '#6bcb77' : 'var(--text)' }}>
               <option value="all">{lang === 'hu' ? '– Típus –' : lang === 'ru' ? '– Тип –' : '– Type –'}</option>
-              <option value="shaped">{lang === 'hu' ? 'Elrendezett' : lang === 'ru' ? 'С формой' : 'Shaped'}</option>
-              <option value="shapeless">{lang === 'hu' ? 'Szabad' : lang === 'ru' ? 'Без формы' : 'Shapeless'}</option>
-              <option value="current">{lang === 'hu' ? '✅ Aktuális' : lang === 'ru' ? '✅ Актуальный' : '✅ Current'}</option>
-              <option value="removed">{lang === 'hu' ? '⚠️ Eltávolított' : lang === 'ru' ? '⚠️ Удалённый' : '⚠️ Removed'}</option>
+              <option value="shaped">{lang === 'hu' ? 'Elrendezett' : lang === 'ru' ? 'С раскладкой' : 'Shaped'}</option>
+              <option value="shapeless">{lang === 'hu' ? 'Szabad' : lang === 'ru' ? 'Без раскладки' : 'Shapeless'}</option>
+              <option value="current">{lang === 'hu' ? '✅ Aktuális' : lang === 'ru' ? '✅ Текущие' : '✅ Current'}</option>
+              <option value="removed">{lang === 'hu' ? '⚠️ Eltávolított' : lang === 'ru' ? '⚠️ Удалённые' : '⚠️ Removed'}</option>
             </select>
             {hasFilters && (
               <button onClick={clearFilters}
@@ -1571,7 +1571,7 @@ export default function RecipesHub() {
           {/* Stat badge */}
           <div style={{ marginBottom: 12 }}>
             <span style={{ fontSize: '.8em', color: 'var(--text2)', padding: '3px 10px', background: 'var(--surface)', border: '1px solid var(--surface2)', borderRadius: 20 }}>
-              {filteredGroups.length} {lang === 'hu' ? 'tárgy' : lang === 'ru' ? 'предм.' : 'items'} · {totalRecipeCount} {lang === 'hu' ? 'recept' : lang === 'ru' ? 'рецептов' : 'recipes'}
+              {filteredGroups.length} {lang === 'hu' ? 'tárgy' : lang === 'ru' ? 'предметов' : 'items'} · {totalRecipeCount} {lang === 'hu' ? 'recept' : lang === 'ru' ? 'рецептов' : 'recipes'}
             </span>
           </div>
 

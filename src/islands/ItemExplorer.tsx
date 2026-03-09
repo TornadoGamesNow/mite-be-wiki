@@ -76,7 +76,7 @@ const TIER_META: Record<string, { hu: string; en: string; ru: string; color: str
   obsidian:           { hu: 'Obszidián',           en: 'Obsidian',           ru: 'Обсидиан',               color: '#7c4dff', bg: 'rgba(124,77,255,.15)' },
   rusted_iron:        { hu: 'Rozsdás Vas',         en: 'Rusted Iron',        ru: 'Ржавое железо',          color: '#b34700', bg: 'rgba(179,71,0,.15)' },
   silver_copper:      { hu: 'Ezüst-Réz',           en: 'Silver-Copper',      ru: 'Серебряно-медный',       color: '#a8c0cd', bg: 'rgba(168,192,205,.15)' },
-  high_carbon_steel:  { hu: 'Szénacél',            en: 'High Carbon Steel',  ru: 'Высокоугл. сталь',       color: '#b0bec5', bg: 'rgba(176,190,197,.15)' },
+  high_carbon_steel:  { hu: 'Szénacél',            en: 'High Carbon Steel',  ru: 'Высокоуглеродистая сталь', color: '#b0bec5', bg: 'rgba(176,190,197,.15)' },
   ancient_metal:      { hu: 'Ős Fém',              en: 'Ancient Metal',      ru: 'Древний металл',         color: '#c8a034', bg: 'rgba(200,160,52,.15)' },
   mithril:            { hu: 'Mithril',             en: 'Mithril',            ru: 'Мифрил',                 color: '#7ec8e3', bg: 'rgba(126,200,227,.15)' },
   adamantium:         { hu: 'Adamantium',           en: 'Adamantium',         ru: 'Адамантий',              color: '#b388ff', bg: 'rgba(179,136,255,.15)' },
@@ -524,7 +524,7 @@ export default function ItemExplorer() {
                   <div style={{ marginBottom: 20 }}>
                     <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
                       color: 'var(--text2)', marginBottom: 8 }}>
-                      {lang === 'hu' ? 'Tier progresszió' : lang === 'ru' ? 'Прогрессия тира' : 'Tier progression'}
+                      {lang === 'hu' ? 'Tier progresszió' : lang === 'ru' ? 'Линейка тиров' : 'Tier progression'}
                     </div>
                     <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
                       {group.map(item => {
@@ -639,7 +639,7 @@ export default function ItemExplorer() {
                       })}
                       {recs.length > 3 && (
                         <div style={{ fontSize: '.78em', color: 'var(--text2)', textAlign: 'center' }}>
-                          {lang === 'hu' ? `+ ${recs.length - 3} további recept a Receptek oldalon` : lang === 'ru' ? `+ ${recs.length - 3} рецептов на странице Рецептов` : `+ ${recs.length - 3} more recipes on the Recipes page`}
+                          {lang === 'hu' ? `+ ${recs.length - 3} további recept a Receptek oldalon` : lang === 'ru' ? `+ ещё ${recs.length - 3} рецептов на странице рецептов` : `+ ${recs.length - 3} more recipes on the Recipes page`}
                         </div>
                       )}
                     </div>

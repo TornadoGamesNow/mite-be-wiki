@@ -14,6 +14,7 @@ The first public trilingual wiki for **MITE: Break Everything** — a hardcore t
 |---|---|---|
 | 🇭🇺 **Hungarian version** | [MiTE-BE_v0.9.0_hungarian.zip](https://archive.org/download/mite-be-v0.9.0-hungarian/MiTE-BE_v0.9.0_hungarian.zip) | ~266 MB |
 | 🇬🇧 **English version** | [MiTE-BE_v0.9.0_english.zip](https://archive.org/download/mite-be-v0.9.0-english/MiTE-BE_v0.9.0_english.zip) | ~266 MB |
+| 🇷🇺 **Russian version** | [MiTE-BE_v0.9.0_russian.zip](https://archive.org/download/mi-te-be-v-0.9.0-russian/MiTE-BE_v0.9.0_russian.zip) | ~266 MB |
 
 **Requirements:** Java 8 + [PrismLauncher](https://prismlauncher.org)
 **Installation guide:** [tornadogamesnow.github.io/mite-be-wiki/install](https://tornadogamesnow.github.io/mite-be-wiki/install)
@@ -55,7 +56,7 @@ The first public trilingual wiki for **MITE: Break Everything** — a hardcore t
 
 ```
 src/pages/        — Astro pages (SSG)
-  index.astro       — Main wiki (HU+EN bilingual, ~4400+ lines)
+  index.astro       — Main wiki (HU+EN+RU trilingual, ~4400+ lines)
   recipes.astro     — Recipe browser page
   mobs.astro        — Mob encyclopedia page
   brewing.astro     — Brewing page

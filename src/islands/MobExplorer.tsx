@@ -84,7 +84,7 @@ const chanceLabel: Record<string, { hu: string; en: string; ru: string }> = {
   common:   { hu: 'Gyakori',      en: 'Common',   ru: 'Часто'         },
   uncommon: { hu: 'Ritka',        en: 'Uncommon', ru: 'Редко'         },
   rare:     { hu: 'Nagyon ritka', en: 'Rare',     ru: 'Очень редко'   },
-  looting:  { hu: 'Looting',      en: 'Looting',  ru: 'Лутинг'        },
+  looting:  { hu: 'Looting',      en: 'Looting',  ru: 'Добыча'        },
 };
 
 const dmgTypeIcon: Record<string, string> = {
@@ -120,7 +120,7 @@ const tagMeta: Record<string, { hu: string; en: string; ru: string; icon: string
   pickaxe_only:          { hu: 'Csak csákány',     en: 'Pickaxe only',        ru: 'Только кирка',         icon: '⛏️' },
   flying:                { hu: 'Repülő',            en: 'Flying',              ru: 'Летающий',             icon: '🦅' },
   pack:                  { hu: 'Falka',             en: 'Pack',                ru: 'Стая',                 icon: '🐺' },
-  wall_detection:        { hu: 'Falon érzékel',    en: 'Wall detect',         ru: 'Обнаруж. сквозь стены',icon: '🧱' },
+  wall_detection:        { hu: 'Falon érzékel',    en: 'Wall detect',         ru: 'Чует сквозь стены',    icon: '🧱' },
   gold_passive:          { hu: 'Arannyal passzív', en: 'Gold passive',        ru: 'Пассивен к золоту',    icon: '🪙' },
   potion:                { hu: 'Bájital',           en: 'Potion',              ru: 'Зелье',                icon: '🧪' },
 };
@@ -622,7 +622,7 @@ export default function MobExplorer() {
                   border: '1px solid rgba(233,69,96,.3)', borderRadius: 6,
                   fontSize: '.82em', marginBottom: 12, color: 'var(--accent)',
                 }}>
-                  ⚠️ {lang === 'hu' ? 'Speciális fegyver szükséges!' : lang === 'ru' ? 'Необходимо специальное оружие!' : 'Requires special weapon!'}
+                  ⚠️ {lang === 'hu' ? 'Speciális fegyver szükséges!' : lang === 'ru' ? 'Нужно особое оружие!' : 'Requires special weapon!'}
                 </div>
               )}
 
@@ -641,7 +641,7 @@ export default function MobExplorer() {
                 <div style={{ marginBottom: 16 }}>
                   <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
                     color: 'var(--text2)', marginBottom: 6 }}>
-                    🗺 {lang === 'hu' ? 'Megjelenés' : lang === 'ru' ? 'Появление' : 'Spawn'}
+                    🗺 {lang === 'hu' ? 'Megjelenés' : lang === 'ru' ? 'Где встречается' : 'Spawn'}
                   </div>
                   <div style={{ fontSize: '.9em', color: 'var(--text)', lineHeight: 1.55,
                     background: 'var(--surface)', border: '1px solid var(--surface2)',
@@ -682,7 +682,7 @@ export default function MobExplorer() {
                 <div style={{ marginTop: 0 }}>
                   <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
                     color: 'var(--text2)', marginBottom: 6 }}>
-                    🎁 {lang === 'hu' ? 'Dropok' : lang === 'ru' ? 'Дропы' : 'Drops'}
+                    🎁 {lang === 'hu' ? 'Dropok' : lang === 'ru' ? 'Добыча' : 'Drops'}
                   </div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
                     {selectedMob.drops.map((drop, i) => (

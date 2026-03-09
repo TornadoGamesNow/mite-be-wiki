@@ -212,7 +212,8 @@
     },
     "img": "img/items/stone_dagger.png",
     "tier": "flint",
-    "category": "weapon"
+    "category": "weapon",
+    "removed_in": "legacy"
   },
   "wooden_sieve": {
     "name": {

@@ -31,7 +31,7 @@ There is no automated test command. A clean `npm run build` means everything is 
 
 | File / Folder | What to edit here |
 |-------------|------------------|
-| `src/pages/index.astro` | Main wiki content (bilingual HU+EN, ~4200+ lines) |
+| `src/pages/index.astro` | Main wiki content (trilingual HU+EN+RU, ~4200+ lines) |
 | `src/pages/*.astro` | Other pages (recipes, mobs, brewing, reference, etc.) |
 | `src/islands/MobExplorer.tsx` | Mob search/filter logic |
 | `src/islands/RecipeBrowser.tsx` | Recipe browser (recipes.json-based, tier merging) |
