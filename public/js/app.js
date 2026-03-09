@@ -8,7 +8,7 @@ function setLang(lang) {
   });
   try { localStorage.setItem('mite-wiki-lang', lang); } catch(e) {}
   document.querySelectorAll('.search-input').forEach(si => {
-    si.placeholder = lang === 'hu' ? 'Oldalak, tárgyak, receptek...' : 'Pages, items, recipes...';
+    si.placeholder = lang === 'hu' ? 'Oldalak, tárgyak, receptek...' : lang === 'ru' ? 'Страницы, предметы, рецепты...' : 'Pages, items, recipes...';
   });
   // Invalidate index when language changes
   _searchIndex = null;
@@ -445,9 +445,13 @@ function initBackToTop() {
 
 // ── Keyboard Navigation ──
 function initKeyboardNav() {
+  const langs = ['hu', 'en', 'ru'];
   document.addEventListener('keydown', e => {
-    if (e.altKey && e.key === 'ArrowLeft') setLang('hu');
-    if (e.altKey && e.key === 'ArrowRight') setLang('en');
+    if (!e.altKey) return;
+    const cur = document.documentElement.getAttribute('data-lang-init') || 'hu';
+    const idx = langs.indexOf(cur);
+    if (e.key === 'ArrowLeft') setLang(langs[(idx + 2) % 3]);
+    if (e.key === 'ArrowRight') setLang(langs[(idx + 1) % 3]);
   });
 }
 
