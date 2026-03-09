@@ -559,12 +559,12 @@ h2:hover .anchor-link, h3:hover .anchor-link { opacity: 1; }
 .pb-other:hover { color: var(--text); background: rgba(255,255,255,.04); }
 
 /* ===== TopNav dropdown ===== */
-.nav-dropdown { position: relative; }
+.nav-dropdown { position: relative; padding-bottom: 4px; }
 .nav-dropdown-toggle { padding: 6px 16px; border-radius: 6px; color: var(--green); font-size: .95em; transition: all .2s; cursor: pointer; background: none; border: none; font-family: inherit; display: flex; align-items: center; gap: 5px; }
 .nav-dropdown-toggle:hover { background: var(--surface); color: var(--gold); }
 .nav-dropdown-toggle.active { background: var(--surface); color: var(--gold); font-weight: 600; }
 .nav-dropdown-menu {
-  display: none; position: absolute; top: calc(100% + 4px); left: 0;
+  display: none; position: absolute; top: 100%; left: 0;
   background: var(--bg2); border: 1px solid var(--surface2); border-radius: 8px;
   box-shadow: var(--shadow); z-index: 200; min-width: 180px; padding: 4px 0;
 }
