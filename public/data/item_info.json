@@ -1798,62 +1798,83 @@
   },
   "torch": {
     "mcmod_id": 772804,
-    "desc": "同原版 火把 。额外设定了游戏内时间燃烧3天后熄灭，变成 熄灭的火把 。 火把可以被所有类型的弓发射出去，发射后在地面生成火把方块。 0.5.8版本，火把堆叠改每组32个。 0.5.8版本，在平原地形，火把不会熄灭。",
+    "desc": "Torch that burns for 3 in-game days before turning into an extinguished torch. It can also be fired from bows and placed where it lands.",
     "versions": [
-      "0.5.8版本，火把堆叠改每组32个",
-      "0.5.8版本，在平原地形，火把不会熄灭"
+      "v0.5.8: Stack size increased to 32, and torches no longer burn out in Plains terrain."
     ],
-    "desc_en": "Same as the vanilla Torch, but it burns for 3 in-game days before turning into an extinguished torch. Torches can be fired from bows and place a torch block where they land. In version 0.5.8, the stack size increased to 32, and torches no longer go out in Plains terrain.",
-    "desc_hu": "Ugyanaz, mint a vanilla fáklya, de 3 játéknap után kiég, és kioltott fáklyává válik. A fáklyák íjjal is kilőhetők, és becsapódáskor fáklyablokkot helyeznek le. A 0.5.8-as verzióban a kötegméret 32-re nőtt, és a fáklyák a Plains biomon nem alszanak ki."
+    "desc_en": "Torch that burns for 3 in-game days before turning into an extinguished torch. It can also be fired from bows and placed where it lands.",
+    "desc_hu": "Fáklya, amely 3 játéknapig ég, majd kioltott fáklyává válik. Íjjal is kilőhető, és ott helyez le fáklyát, ahol földet ér.",
+    "desc_ru": "Факел, который горит 3 игровых дня, а затем превращается в потухший факел. Его также можно выстрелить из лука, и он поставится в месте приземления.",
+    "versions_en": [
+      "v0.5.8: Stack size increased to 32, and torches no longer burn out in Plains terrain."
+    ],
+    "versions_hu": [
+      "v0.5.8: A kötegméret 32-re nőtt, és Plains területen a fáklyák nem alszanak ki."
+    ],
+    "versions_ru": [
+      "v0.5.8: Размер стака увеличен до 32, а на равнинах факелы больше не гаснут."
+    ]
   },
   "flint_arrow": {
     "mcmod_id": 773310,
-    "desc": "弹射物伤害+1。 射中生物后有30%的几率可回收。",
-    "desc_en": "Projectile damage +1. There is a 30% chance of being recovered after hitting a creature.",
-    "desc_hu": "Lövedék sérülése +1. 30% esély van a felépülésre, miután eltalált egy lényt."
+    "desc": "Arrow with +1 projectile damage and a 30% recovery chance after hitting a target.",
+    "desc_en": "Arrow with +1 projectile damage and a 30% recovery chance after hitting a target.",
+    "desc_hu": "+1 lövedéksebzésű nyíl, amely találat után 30% eséllyel visszaszerezhető.",
+    "desc_ru": "Стрела с уроном снаряда +1 и шансом 30% вернуться после попадания."
   },
   "copper_arrow": {
     "mcmod_id": 773309,
-    "desc": "弹射物伤害+3。 射中生物后有60%的几率可回收。",
-    "desc_en": "Projectile damage +3. There is a 60% chance of being recovered after hitting a creature.",
-    "desc_hu": "Lövedék sérülése +3. 60% esély van a felépülésre, miután eltalált egy lényt."
+    "desc": "Arrow with +3 projectile damage and a 60% recovery chance after hitting a target.",
+    "desc_en": "Arrow with +3 projectile damage and a 60% recovery chance after hitting a target.",
+    "desc_hu": "+3 lövedéksebzésű nyíl, amely találat után 60% eséllyel visszaszerezhető.",
+    "desc_ru": "Стрела с уроном снаряда +3 и шансом 60% вернуться после попадания."
   },
   "silver_arrow": {
     "mcmod_id": 773312,
-    "desc": "弹射物伤害+3。 对亡灵怪物有伤害加成，可以伤害白色食尸鬼。 射中生物后有60%的几率可回收。",
-    "desc_en": "Projectile damage +3. It has a damage bonus against undead monsters and can damage white ghouls. There is a 60% chance of being recovered after hitting a creature.",
-    "desc_hu": "Lövedék sérülése +3. Sebzésbónuszt tartalmaz élőhalott szörnyek ellen, és fehér ghoulokat is sebzhet. 60% esély van a felépülésre, miután eltalált egy lényt.",
-    "desc_ru": "Урон снаряда +3. Имеет бонус против нежити и может наносить урон белым гулям. После попадания по существу с вероятностью 60% возвращается."
+    "desc": "Arrow with +3 projectile damage, bonus damage against undead, and a 60% recovery chance.",
+    "desc_en": "Arrow with +3 projectile damage, bonus damage against undead, and a 60% recovery chance.",
+    "desc_hu": "+3 lövedéksebzésű nyíl, bónusz sebzéssel az élőholtak ellen, 60% visszaszerzési eséllyel.",
+    "desc_ru": "Стрела с уроном снаряда +3, бонусом против нежити и шансом 60% вернуться после попадания."
   },
   "gold_arrow": {
     "mcmod_id": 773313,
-    "desc": "弹射物伤害+2. 射中生物后有50%的几率可回收。",
-    "desc_en": "Projectile damage +2. There is a 50% chance of being recovered after hitting a creature.",
-    "desc_hu": "Lövedék sérülése +2. 50% esély van a felépülésre, miután eltalált egy lényt.",
-    "desc_ru": "Урон снаряда +2. После попадания по существу с вероятностью 50% возвращается."
+    "desc": "Arrow with +2 projectile damage and a 50% recovery chance after hitting a target.",
+    "desc_en": "Arrow with +2 projectile damage and a 50% recovery chance after hitting a target.",
+    "desc_hu": "+2 lövedéksebzésű nyíl, amely találat után 50% eséllyel visszaszerezhető.",
+    "desc_ru": "Стрела с уроном снаряда +2 и шансом 50% вернуться после попадания."
   },
   "iron_arrow": {
     "mcmod_id": 773315,
-    "desc": "弹射物伤害+4。 射中生物后有70%的几率可回收。",
-    "desc_en": "Projectile damage +4. There is a 70% chance of being recovered after hitting a creature.",
-    "desc_hu": "Lövedék sérülése +4. 70% esély van a felépülésre, miután eltalált egy lényt."
+    "desc": "Arrow with +4 projectile damage and a 70% recovery chance after hitting a target.",
+    "desc_en": "Arrow with +4 projectile damage and a 70% recovery chance after hitting a target.",
+    "desc_hu": "+4 lövedéksebzésű nyíl, amely találat után 70% eséllyel visszaszerezhető.",
+    "desc_ru": "Стрела с уроном снаряда +4 и шансом 70% вернуться после попадания."
   },
   "mithril_arrow": {
     "mcmod_id": 773317,
-    "desc": "弹射物伤害+7。 射中生物后有80%的几率可回收。",
-    "desc_en": "Projectile damage +7. There is an 80% chance of being recovered after hitting a creature.",
-    "desc_hu": "Lövedék sérülése +7. 80% esély van a felépülésre, miután eltalált egy lényt.",
-    "desc_ru": "Урон снаряда +7. После попадания по существу с вероятностью 80% возвращается."
+    "desc": "Arrow with +7 projectile damage and an 80% recovery chance after hitting a target.",
+    "desc_en": "Arrow with +7 projectile damage and an 80% recovery chance after hitting a target.",
+    "desc_hu": "+7 lövedéksebzésű nyíl, amely találat után 80% eséllyel visszaszerezhető.",
+    "desc_ru": "Стрела с уроном снаряда +7 и шансом 80% вернуться после попадания."
   },
   "adamantium_arrow": {
     "mcmod_id": 773318,
-    "desc": "弹射物伤害+6。 射中生物后有90%的几率可回收。 0.5.9版本新增设定，艾德曼箭可以破坏末影水晶，且只能用艾德曼箭或工具破坏末影水晶。",
+    "desc": "Arrow with +6 projectile damage and a 90% recovery chance after hitting a target.",
     "versions": [
-      "0.5.9版本新增设定，艾德曼箭可以破坏末影水晶，且只能用艾德曼箭或工具破坏末影水晶"
+      "v0.5.9: Adamantium arrows can break End Crystals; Adamantium tools can also break them."
     ],
-    "desc_en": "Projectile damage +6. There is a 90% chance to recover it after hitting a creature. Since version 0.5.9, Adamantium Arrows can break End Crystals, and End Crystals can only be broken with Adamantium Arrows or Adamantium tools.",
-    "desc_hu": "Lövedéksebzés +6. Egy lény eltalálása után 90% eséllyel visszaszerezhető. A 0.5.9-es verzió óta az Adamantium nyilak képesek széttörni az End Crystalokat, és az End Crystalokat csak Adamantium nyilakkal vagy Adamantium eszközökkel lehet összetörni.",
-    "desc_ru": "Урон снаряда +6. После попадания по существу с вероятностью 90% возвращается. С версии 0.5.9 адамантиевые стрелы могут разрушать кристаллы Края; те же кристаллы также ломаются адамантиевыми инструментами."
+    "desc_en": "Arrow with +6 projectile damage and a 90% recovery chance after hitting a target.",
+    "desc_hu": "+6 lövedéksebzésű nyíl, amely találat után 90% eséllyel visszaszerezhető.",
+    "desc_ru": "Стрела с уроном снаряда +6 и шансом 90% вернуться после попадания.",
+    "versions_en": [
+      "v0.5.9: Adamantium arrows can break End Crystals; Adamantium tools can also break them."
+    ],
+    "versions_hu": [
+      "v0.5.9: Az Adamantium nyilak képesek széttörni az End Crystalokat; Adamantium eszközökkel is törhetők."
+    ],
+    "versions_ru": [
+      "v0.5.9: Адамантиевые стрелы могут ломать кристаллы Края; адамантиевые инструменты тоже."
+    ]
   },
   "obsidian_arrow": {
     "mcmod_id": 773311,
@@ -1863,10 +1884,10 @@
   },
   "ancient_metal_arrow": {
     "mcmod_id": 773316,
-    "desc": "弹射物伤害+5，击杀拿弓的古尸时有几率掉落。 射中生物后有80%的几率可回收。 远古金属武器不会被腐蚀。 可在工作台中合成远古金属粒。",
-    "desc_en": "Projectile damage +5, has a chance to drop when killing an ancient corpse holding a bow. There is an 80% chance of being recovered after hitting a creature. Ancient metal weapons cannot be corroded. Ancient metal nuggets can be crafted at the workbench.",
-    "desc_hu": "A lövedék sebzése +5, esélye van leesni, amikor megöl egy íjat tartó ősi holttestet. 80% esély van a felépülésre, miután eltalált egy lényt. Az ősi fémfegyvereket nem lehet korrodálni. Ősi fémrögök készíthetők a munkapadon.",
-    "desc_ru": "Урон снаряда +5. Может выпасть с древнего трупа с луком. После попадания по существу с вероятностью 80% возвращается. Оружие из древнего металла не подвержено коррозии, а самородки древнего металла можно изготавливать на верстаке."
+    "desc": "Arrow with +5 projectile damage and an 80% recovery chance. It can also drop from bow-using ancient undead.",
+    "desc_en": "Arrow with +5 projectile damage and an 80% recovery chance. It can also drop from bow-using ancient undead.",
+    "desc_hu": "+5 lövedéksebzésű nyíl, amely találat után 80% eséllyel visszaszerezhető. Íjat használó ősi élőhalottakból is eshet.",
+    "desc_ru": "Стрела с уроном снаряда +5 и шансом 80% вернуться после попадания. Может выпадать с древней нежити, использующей лук."
   },
   "copper_chain": {
     "mcmod_id": 773275,
@@ -4130,56 +4151,96 @@
   },
   "return_scroll": {
     "mcmod_id": 777367,
-    "desc": "回城卷轴将会自动绑定离你最近的一个已激活的传送石碑，手持卷轴长按右键即可回到被自动绑定的石碑旁。 一次性消耗品，但无法进行跨世界传送（如从 地下世界 无法传送至 主世界 ）。 0.9.0版本，需要获得对应的 知识书 解锁权限才能合成。",
+    "desc": "Legacy return scroll that auto-binds to the nearest activated teleportation stele and returns you there. It is single-use and does not work across worlds.",
     "versions": [
-      "0.9.0版本，需要获得对应的"
+      "Legacy note: In the local recipe set, Return Scroll recipes are marked as removed in v0.5.8."
     ],
     "desc_en": "A one-time return scroll that automatically binds to the nearest activated teleportation stele and returns you there on use. It does not work across worlds. In the local recipe set, Return Scroll recipes are marked as removed in version 0.5.8, so treat this as legacy teleport-scroll data.",
-    "desc_hu": "Egyszer használatos visszatérési tekercs, amely automatikusan a legközelebbi aktivált teleportációs sztéléhez kötődik, és használatkor oda visz vissza. Világok között nem működik. A helyi receptkészletben a Return Scroll receptek 0.5.8-ban eltávolítottnak vannak jelölve, ezért ezt itt legacy teleport-tekercs adatként érdemes kezelni."
+    "desc_hu": "Egyszer használatos, legacy visszatérési tekercs, amely automatikusan a legközelebbi aktivált teleportációs sztéléhez kötődik, és oda visz vissza. Világok között nem működik.",
+    "desc_ru": "Одноразовый legacy-свиток возврата, который автоматически привязывается к ближайшей активированной телепортационной стеле и возвращает к ней. Между мирами не работает.",
+    "versions_en": [
+      "Legacy note: In the local recipe set, Return Scroll recipes are marked as removed in v0.5.8."
+    ],
+    "versions_hu": [
+      "Legacy megjegyzés: a helyi receptkészletben a Return Scroll receptek v0.5.8-ban eltávolítottnak vannak jelölve."
+    ],
+    "versions_ru": [
+      "Legacy-примечание: в локальном наборе рецептов рецепты Return Scroll помечены как удалённые в v0.5.8."
+    ]
   },
   "bound_scroll": {
     "mcmod_id": 777368,
-    "desc": "和回城卷轴一样可以绑定一个坐标石碑，手持卷轴长按右键即可回到绑定的石碑旁。 回城卷轴只能绑定一次，绑定卷轴可以绑定多次。",
+    "desc": "Legacy bound scroll that can be linked to a chosen teleportation stele and rebound multiple times.",
     "desc_en": "Like the Return Scroll, this scroll can be bound to a chosen teleportation stele and used to return to it; unlike Return Scroll, it can be rebound multiple times. In the local recipe set, Bound Scroll recipes are marked as removed in version 0.5.8, so treat this as legacy teleport-scroll data.",
-    "desc_hu": "A Return Scrollhoz hasonlóan ez a tekercs is egy választott teleportációs sztéléhez köthető, és oda visz vissza; a Return Scrolllal ellentétben többször is újraköthető. A helyi receptkészletben a Bound Scroll receptek 0.5.8-ban eltávolítottnak vannak jelölve, ezért ezt itt legacy teleport-tekercs adatként érdemes kezelni."
+    "desc_hu": "Legacy kötött tekercs, amely egy választott teleportációs sztéléhez kapcsolható, és többször újraköthető.",
+    "desc_ru": "Legacy-свиток привязки, который можно связать с выбранной телепортационной стелой и перепривязывать многократно."
   },
   "warp_scroll": {
     "mcmod_id": 777369,
-    "desc": "手持传送卷轴右击可传送至所有已点亮的传送石碑。 一次性消耗品，但无法进行跨世界传送（如从 地下世界 无法传送至 主世界 ）。",
+    "desc": "Legacy warp scroll that targets lit teleportation steles. It is single-use and does not work across worlds.",
     "desc_en": "Legacy teleport scroll that targets lit teleportation steles. It is single-use and does not work across worlds. In the local recipe set, Warp Scroll is marked as removed in version 0.5.8.",
-    "desc_hu": "Legacy teleport-tekercs, amely a világító teleportációs sztélékhez kapcsolódik. Egyszer használatos, és nem működik világok között. A helyi receptkészletben a Warp Scroll 0.5.8-ban eltávolítottnak van jelölve."
+    "desc_hu": "Legacy teleport-tekercs, amely az aktivált teleportációs sztélékhez kapcsolódik. Egyszer használatos, és nem működik világok között.",
+    "desc_ru": "Legacy-свиток телепортации, который работает с активированными телепортационными стелами. Одноразовый и не работает между мирами."
   },
   "antique_atlas": {
     "mcmod_id": 779581,
-    "desc": "古式地图一个全新形式的多功能地图。相比原版的地图拥有更好的 GUI，并且不同生态群系用不同的显示，同时对一些特殊建筑物（如村庄）会有相应的小图标标注，玩家也可以自行在地图中创建地标，也可以像原版地图一样对其进行备份。 一份古式地图是由一份空古式地图使用后获得。",
-    "desc_en": "Ancient Maps A new form of multifunctional map. Compared with the original map, it has a better GUI, and different ecological biomes have different displays. At the same time, some special buildings (such as villages) will be marked with corresponding small icons. Players can also create landmarks in the map themselves, or back them up like the original map. An ancient map is obtained by using an empty ancient map.",
-    "desc_hu": "Ősi térképek A többfunkciós térkép új formája. Az eredeti térképhez képest jobb grafikus felhasználói felülettel rendelkezik, és a különböző ökológiai életközösségek eltérő megjelenítéssel rendelkeznek. Ugyanakkor néhány különleges épület (például falvak) megfelelő kis ikonokkal lesz megjelölve. A játékosok maguk is létrehozhatnak tereptárgyakat a térképen, vagy biztonsági másolatot készíthetnek róluk, mint az eredeti térképen. Egy ősi térképet egy üres ősi térkép felhasználásával kapunk."
+    "desc": "Enhanced atlas map with its own interface, biome coloring, landmark markers, and backup support. Created by using an empty antique atlas.",
+    "desc_en": "Enhanced atlas map with its own interface, biome coloring, landmark markers, and backup support. Created by using an empty antique atlas.",
+    "desc_hu": "Fejlettebb atlasz-térkép saját felülettel, biomszínezéssel, jelölőpontokkal és mentési lehetőséggel. Egy üres antik atlasz használatával jön létre.",
+    "desc_ru": "Улучшенный атлас со своим интерфейсом, раскраской биомов, метками ориентиров и возможностью копирования. Получается при использовании пустого антикварного атласа."
   },
   "way_stone": {
     "mcmod_id": 779582,
-    "desc": "传送石碑在激活后可将玩家传送至另一个位置的传送石碑和免去了玩家长途跋涉的烦恼。 玩家还可以通过 回城卷轴 、 绑定卷轴 和 传送卷轴 回到传送石碑。 传送石碑目前只会在地下世界的 蘑菇林战斗高塔 顶层刷新1个。 0.5.8版本，使用石碑传送需扣除一定经验值：500格内无需经验，超过500格每增加300距离，需要100xp传送经验。 0.9.0版本，需要获得对应的 知识书 解锁权限才能合成。",
+    "desc": "Teleportation stele used as a long-distance travel anchor. It can be activated and linked into the teleport network, and older scroll items reference it as a target.",
     "versions": [
-      "0.5.8版本，使用石碑传送需扣除一定经验值：500格内无需经验，超过500格每增加300距离，需要100xp传送经验",
-      "0.9.0版本，需要获得对应的"
+      "v0.5.8: Teleporting by stele costs experience beyond short distances.",
+      "v0.9.0: Crafting requires the related knowledge book."
     ],
     "desc_en": "The teleportation stele is a long-distance travel destination that can be activated and linked into the teleport system. Older scroll-type teleport items reference it as a target. The local data confirms an active Waystone recipe and a Knowledge Book requirement in v0.9.0, but I am not treating older fixed spawn-location claims as reliable here.",
-    "desc_hu": "A teleportációs sztélé egy nagy távolságú utazási célpont, amely aktiválható és beköthető a teleport-rendszerbe. A régebbi teleport-tekercs típusú itemek is erre hivatkoznak célpontként. A helyi adatok v0.9.0-ban aktív Waystone receptet és Tudáskönyv-követelményt támasztanak alá, de a régi fix spawnhelyes állításokat itt nem kezelem megbízhatónak."
+    "desc_hu": "A teleportációs sztélé egy nagy távolságú utazási horgony, amely aktiválható és beköthető a teleport-hálózatba. A régebbi teleporttekercsek is erre hivatkoznak célpontként.",
+    "desc_ru": "Телепортационная стела служит якорем для дальних перемещений. Её можно активировать и включить в сеть телепортации, а старые свитки телепортации используют её как цель.",
+    "versions_en": [
+      "v0.5.8: Teleporting by stele costs experience beyond short distances.",
+      "v0.9.0: Crafting requires the related knowledge book."
+    ],
+    "versions_hu": [
+      "v0.5.8: Rövid távon túl a sztélével való teleportálás XP-be kerül.",
+      "v0.9.0: A craftoláshoz a kapcsolódó tudáskönyv kell."
+    ],
+    "versions_ru": [
+      "v0.5.8: Телепортация через стелу начинает требовать опыт на более дальних дистанциях.",
+      "v0.9.0: Для крафта нужна соответствующая книга знаний."
+    ]
   },
   "hard_stick": {
     "mcmod_id": 782758,
-    "desc": "由两个硬石锭合成，用于制作各类远古金属/秘银/艾德曼工具或武器。",
-    "desc_en": "Crafted from two Hardstone Ingots. Used to craft various Ancient Metal, Mithril, and Adamantium tools and weapons.",
-    "desc_hu": "Két Hardstone rúdból craftolható. Különféle Ancient Metal, Mithril és Adamantium eszközök és fegyverek készítésére szolgál."
+    "desc": "Handle material crafted from 2 Hardstone Ingots. Used for many Ancient Metal, Mithril, and Adamantium tools and weapons.",
+    "desc_en": "Handle material crafted from 2 Hardstone Ingots. Used for many Ancient Metal, Mithril, and Adamantium tools and weapons.",
+    "desc_hu": "2 Hardstone ingotból készülő nyélanyag. Sok Ancient Metal, Mithril és Adamantium eszköz és fegyver alapanyaga.",
+    "desc_ru": "Материал для рукоятей, создаваемый из 2 hardstone-слитков. Используется во многих инструментах и оружии из Ancient Metal, Mithril и Adamantium."
   },
   "colling_liquid": {
     "mcmod_id": 803142,
-    "desc": "0.5.8版本加入，可减少双口坩埚30秒冷却时间。手持冷却液按住shift同时右击双口坩埚，可提供持续5天的冷却加速。处于冷却加速的双开坩埚呈深蓝色，且无法再使用冷却液。 0.9.0版本，需要获得对应的 知识书 解锁权限才能合成。",
+    "desc": "Coolant item for the double-port crucible. Shift-right-clicking the crucible applies a long cooling-speed boost.",
     "versions": [
-      "0.5.8版本加入，可减少双口坩埚30秒冷却时间",
-      "0.9.0版本，需要获得对应的"
+      "v0.5.8: Added to reduce double-port crucible cooling time by 30 seconds for 5 in-game days.",
+      "v0.9.0: Crafting requires the related knowledge book."
     ],
-    "desc_en": "Added in version 0.5.8, it can reduce the cooling time of the double-port crucible by 30 seconds. Holding down shift while holding the coolant while right-clicking the Dual-Port Crucible will provide a cooling acceleration that lasts for 5 days. Double Crucibles that are under cooling acceleration are dark blue and can no longer use coolant. For version 0.9.0, you need to obtain the corresponding knowledge book to unlock the permission to craft it.",
-    "desc_hu": "A 0.5.8-as verzióhoz hozzáadva 30 másodperccel csökkentheti a kétnyílású tégely hűtési idejét. Ha lenyomva tartja a váltógombot, miközben lenyomva tartja a hűtőfolyadékot, miközben a jobb gombbal kattint a Dual-Port Crucible-re, 5 napig tartó hűtési gyorsulást biztosít. A hűtési gyorsítás alatt álló kettős tégelyek sötétkék színűek, és már nem használhatnak hűtőfolyadékot. A 0.9.0-s verzió esetén be kell szereznie a megfelelő tudáskönyvet, hogy feloldja a létrehozási engedélyt."
+    "desc_en": "Coolant item for the double-port crucible. Shift-right-clicking the crucible applies a long cooling-speed boost.",
+    "desc_hu": "Hűtőfolyadék a kétcsatornás tégelyhez. Shift+jobb klikkel tartós hűtési sebességbónuszt ad a tégelyre.",
+    "desc_ru": "Охлаждающая жидкость для двухканального тигля. Shift+ПКМ по тиглю даёт длительное ускорение охлаждения.",
+    "versions_en": [
+      "v0.5.8: Added to reduce double-port crucible cooling time by 30 seconds for 5 in-game days.",
+      "v0.9.0: Crafting requires the related knowledge book."
+    ],
+    "versions_hu": [
+      "v0.5.8: Ekkor került be; 30 másodperccel csökkenti a kétcsatornás tégely hűlését 5 játéknapig.",
+      "v0.9.0: A craftoláshoz a kapcsolódó tudáskönyv kell."
+    ],
+    "versions_ru": [
+      "v0.5.8: Добавлена и ускоряет охлаждение двухканального тигля на 30 секунд в течение 5 игровых дней.",
+      "v0.9.0: Для крафта нужна соответствующая книга знаний."
+    ]
   },
   "obsidian_ingot_mould": {
     "mcmod_id": 816195,
@@ -4798,25 +4859,25 @@
   },
   "bucket_liquefied_mercury": {
     "mcmod_id": 829257,
-    "desc": "Bucket of liquefied mercury. It is taken from a mercury-filled cauldron and can be poured back in. If placed in the world it quickly disappears, damages players on contact, and extinguishes torches. It can also empower the double crucible for 7 in-game days, turning its obsidian output into Elemental Obsidian.",
+    "desc": "Bucket of liquefied mercury. Obtained by right-clicking a cauldron filled with liquefied mercury (place mercury ore in a cauldron above lava in v0.8.0+). Right-clicking the cauldron again pours the buckets back in. Cannot be placed as a solid block (Ctrl+place causes it to vanish immediately). If placed, it disappears quickly; players in contact take 1 damage/second and torches are extinguished. Has no effect on water or lava. Right-clicking a double-mouthed crucible with it imbues elemental power (particle effect), lasting 7 in-game days — obsidian produced by an empowered crucible becomes Elemental Obsidian. Coolant effects also apply to empowered crucibles.",
     "versions": [
-      "v0.8.0: Liquefied mercury was added as a cauldron process above magma.",
-      "v0.9.0: Liquefied mercury gained upgrade and crucible-empower interactions."
+      "v0.8.0: Place mercury ore in a cauldron above lava to produce liquefied mercury.",
+      "v0.9.0: Place 1 Leather Backpack + 4 Ancient Metal Ingots into a cauldron of liquefied mercury (right-click while holding each item); after 30 seconds all items are consumed and an Ancient Metal Backpack Upgrade is produced. Lava heat source must remain under the cauldron during conversion."
     ],
-    "desc_en": "Bucket of liquefied mercury. It is taken from a mercury-filled cauldron and can be poured back in. If placed in the world it quickly disappears, damages players on contact, and extinguishes torches. It can also empower the double crucible for 7 in-game days, turning its obsidian output into Elemental Obsidian.",
-    "desc_hu": "Folyékony higannyal töltött vödör. Folyékony higannyal teli üstből vehető ki, és oda vissza is önthető. Lerakva gyorsan eltűnik, sebzi az érintkező játékost, és kioltja a fáklyákat. A kétcsőrű tégelyt is fel tudja erősíteni 7 játéknapra, így az Elemental Obsidian-t termel.",
-    "desc_ru": "Ведро с жидкой ртутью. Его можно набрать из котла с жидкой ртутью и вылить обратно. При установке в мире оно быстро исчезает, наносит урон при касании и тушит факелы. Также может усилить двойной тигель на 7 игровых дней, превращая его обсидиан в Elemental Obsidian.",
+    "desc_en": "Bucket of liquefied mercury. Obtained by right-clicking a cauldron filled with liquefied mercury (place mercury ore in a cauldron above lava in v0.8.0+). Right-clicking the cauldron again pours the buckets back in. Cannot be placed as a solid block (Ctrl+place causes it to vanish immediately). If placed, it disappears quickly; players in contact take 1 damage/second and torches are extinguished. Has no effect on water or lava. Right-clicking a double-mouthed crucible with it imbues elemental power (particle effect), lasting 7 in-game days — obsidian produced by an empowered crucible becomes Elemental Obsidian. Coolant effects also apply to empowered crucibles.",
+    "desc_hu": "Folyékony higannyal töltött vödör. Folyékony higannyal teli üstből szerezhető be (jobb klikk vödörrel az üstre). Higanyércet tegyél láva fölé helyezett üstbe a folyadék előállításához. Az üstre jobb klikkelve a vödröket vissza is öntheted. Nem helyezhető le szilárd blokkként (Ctrl+lerakás hatástalan, azonnal eltűnik). Ha mégis lerakod, gyorsan eltűnik; az érintkező játékos 1 sebzést kap másodpercenként, és kioltja a fáklyákat. Vízre és lávára nincs hatással. A kétcsőrű tégely jobb klikkelésével elemi erővel tölthető fel (részecske-effekttel jelezve), ami 7 játéknapig tart — az erősített tégely által termelt obszidián Elemental Obsidianná változik. A hűtőanyag-hatások az erősített tégelyre is érvényesek.",
+    "desc_ru": "Ведро с жидкой ртутью. Получается правым кликом по котлу, наполненному жидкой ртутью (с v0.8.0 — положи ртутную руду в котёл над лавой). Повторный правый клик по котлу выливает содержимое обратно. Нельзя поставить как твёрдый блок (Ctrl+установка — жидкость исчезает мгновенно). При размещении быстро исчезает; игроки в контакте получают 1 урон в секунду, факелы гасятся. На воду и лаву не действует. Правый клик по двуствольному тиглю наделяет его стихийной силой (отображается частицами) на 7 игровых дней — обсидиан из такого тигля становится Elemental Obsidian. Эффекты охладителя распространяются и на усиленный тигель.",
     "versions_en": [
-      "v0.8.0: Liquefied mercury was added as a cauldron process above magma.",
-      "v0.9.0: Liquefied mercury gained upgrade and crucible-empower interactions."
+      "v0.8.0: Place mercury ore in a cauldron above lava to produce liquefied mercury.",
+      "v0.9.0: Place 1 Leather Backpack + 4 Ancient Metal Ingots into a cauldron of liquefied mercury (right-click while holding each item); after 30 seconds all items are consumed and an Ancient Metal Backpack Upgrade is produced. Lava heat source must remain under the cauldron during conversion."
     ],
     "versions_hu": [
-      "v0.8.0: A folyékony higany bekerült mint magma fölötti üstös folyamat.",
-      "v0.9.0: A folyékony higany upgrade- és tégelyerősítő funkciót is kapott."
+      "v0.8.0: Higanyércet tegyél láva fölé helyezett üstbe a folyékony higany előállításához.",
+      "v0.9.0: Tegyél 1 Bőr Hátizsákot és 4 Ősifém Rudat folyékony higannyal teli üstbe (jobb klikk az üstre az adott tárggyal a kézben); 30 másodperc után az összes tárgy elhasználódik és létrejön az Ősifém Hátizsák Fejlesztő. Az átalakítás alatt lávaforrásnak kell lennie az üst alatt."
     ],
     "versions_ru": [
-      "v0.8.0: Жидкую ртуть добавили как процесс в котле над магмой.",
-      "v0.9.0: У жидкой ртути появились взаимодействия с улучшениями и усилением тигля."
+      "v0.8.0: Положи ртутную руду в котёл над лавой для получения жидкой ртути.",
+      "v0.9.0: Положи 1 Кожаный рюкзак и 4 слитка Древнего металла в котёл с жидкой ртутью (правый клик по котлу с предметом в руке); через 30 секунд все предметы расходуются и создаётся Улучшение рюкзака из Древнего металла. Во время превращения под котлом должен оставаться источник лавы."
     ]
   },
   "conveying_stone": {
