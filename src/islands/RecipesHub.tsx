@@ -224,12 +224,14 @@ function SmeltingMini({ recipe }: { recipe: FullRecipe }) {
 
 /** stone_furnace mini card: input → 🔥 → (fuel) – same height as SmeltingMini */
 function FurnaceMini({ recipe }: { recipe: FullRecipe }) {
-  const input = flattenIngredients(recipe.ingredients)[0] || null;
+  const flat = flattenIngredients(recipe.ingredients);
+  const input = flat[0] || null;
+  const fuel = flat[1] || null;
   return (
     <div style={{ background: '#221208', padding: '4px 6px', borderRadius: 5, border: '1px solid #5a3a28', boxShadow: 'inset 0 1px 5px rgba(0,0,0,.6)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
       <div style={makeSlot(SS)}>{input && <ItemIcon id={input} size={SS - 6} />}</div>
       <div style={{ fontSize: '.6em', color: '#ff7700', lineHeight: 1 }}>🔥</div>
-      <div style={{ ...makeSlot(SS), opacity: 0.25 }} />
+      <div style={makeSlot(SS)}>{fuel && <ItemIcon id={fuel} size={SS - 6} />}</div>
     </div>
   );
 }
@@ -253,11 +255,14 @@ function SmeltingDetail({ recipe }: { recipe: FullRecipe }) {
 
 /** stone_furnace detail panel */
 function FurnaceDetail({ recipe }: { recipe: FullRecipe }) {
-  const input = flattenIngredients(recipe.ingredients)[0] || null;
+  const flat = flattenIngredients(recipe.ingredients);
+  const input = flat[0] || null;
+  const fuel = flat[1] || null;
   return (
     <div style={{ background: '#221208', padding: '8px 10px', borderRadius: 7, border: '2px solid #5a3a28', boxShadow: 'inset 0 2px 8px rgba(0,0,0,.6)', flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
       <div style={makeSlot(SD)}>{input && <ItemIcon id={input} size={SD - 8} />}</div>
       <div style={{ fontSize: '1em', color: '#ff7700', lineHeight: 1 }}>🔥</div>
+      <div style={makeSlot(SD)}>{fuel && <ItemIcon id={fuel} size={SD - 8} />}</div>
     </div>
   );
 }
