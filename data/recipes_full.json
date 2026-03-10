@@ -2843,43 +2843,6 @@
     "shaped": false
   },
   {
-    "id": "oak_wood_slab_single_149",
-    "item_num": 126,
-    "output": [
-      "oak_wood_slab_single",
-      "spruce_wood_slab_single",
-      "birch_wood_slab_single",
-      "jungle_wood_slab_single"
-    ],
-    "outputQty": 6,
-    "station": "flint_workbench",
-    "difficulty": 240,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      [
-        "planks_oak",
-        "planks_spruce",
-        "planks_birch",
-        "planks_jungle"
-      ],
-      [
-        "planks_oak",
-        "planks_spruce",
-        "planks_birch",
-        "planks_jungle"
-      ],
-      [
-        "planks_oak",
-        "planks_spruce",
-        "planks_birch",
-        "planks_jungle"
-      ]
-    ],
-    "shaped": false
-  },
-  {
     "id": "sandstone_stairs_153",
     "item_num": 128,
     "output": "sandstone_stairs",
@@ -46027,6 +45990,142 @@
         "planks_jungle",
         "planks_jungle",
         "planks_jungle"
+      ]
+    ]
+  },
+  {
+    "id": "oak_wood_slab_single_shaped",
+    "item_num": 126,
+    "output": "oak_wood_slab_single",
+    "outputQty": 6,
+    "station": "flint_workbench",
+    "difficulty": 240,
+    "skills": [
+      "carpentry"
+    ],
+    "ingredients": [
+      "planks_oak",
+      "planks_oak",
+      "planks_oak"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "planks_oak",
+        "planks_oak",
+        "planks_oak"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
+  },
+  {
+    "id": "spruce_wood_slab_single_shaped",
+    "item_num": 126,
+    "output": "spruce_wood_slab_single",
+    "outputQty": 6,
+    "station": "flint_workbench",
+    "difficulty": 240,
+    "skills": [
+      "carpentry"
+    ],
+    "ingredients": [
+      "planks_spruce",
+      "planks_spruce",
+      "planks_spruce"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "planks_spruce",
+        "planks_spruce",
+        "planks_spruce"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
+  },
+  {
+    "id": "birch_wood_slab_single_shaped",
+    "item_num": 126,
+    "output": "birch_wood_slab_single",
+    "outputQty": 6,
+    "station": "flint_workbench",
+    "difficulty": 240,
+    "skills": [
+      "carpentry"
+    ],
+    "ingredients": [
+      "planks_birch",
+      "planks_birch",
+      "planks_birch"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "planks_birch",
+        "planks_birch",
+        "planks_birch"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
+  },
+  {
+    "id": "jungle_wood_slab_single_shaped",
+    "item_num": 126,
+    "output": "jungle_wood_slab_single",
+    "outputQty": 6,
+    "station": "flint_workbench",
+    "difficulty": 240,
+    "skills": [
+      "carpentry"
+    ],
+    "ingredients": [
+      "planks_jungle",
+      "planks_jungle",
+      "planks_jungle"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "planks_jungle",
+        "planks_jungle",
+        "planks_jungle"
+      ],
+      [
+        "_",
+        "_",
+        "_"
       ]
     ]
   }
