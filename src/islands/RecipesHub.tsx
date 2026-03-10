@@ -1592,7 +1592,7 @@ export default function RecipesHub() {
   const pickerItems = useMemo(() => {
     const q = pickerQuery.toLowerCase();
     return (Object.entries(items) as [string, ItemEntry][])
-      .filter(([id, item]) => !q || id.includes(q) || item.name.hu.toLowerCase().includes(q) || item.name.en.toLowerCase().includes(q))
+      .filter(([id, item]) => !q || id.includes(q) || item.name.hu.toLowerCase().includes(q) || item.name.en.toLowerCase().includes(q) || ((item.name as any).ru ?? '').toLowerCase().includes(q))
       .slice(0, 60);
   }, [pickerQuery]);
 
