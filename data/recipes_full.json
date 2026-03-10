@@ -36770,31 +36770,14 @@
     "item_num": 841202,
     "output": "hot_water",
     "outputQty": 1,
-    "station": "flint_workbench",
+    "station": "stone_furnace",
     "difficulty": 0,
     "skills": [],
     "ingredients": [
       "water_bowl",
       "coal"
     ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "water_bowl",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
+    "shaped": false
   },
   {
     "id": "sugar_soup_841203",
