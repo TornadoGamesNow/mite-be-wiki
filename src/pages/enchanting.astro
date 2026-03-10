@@ -1,0 +1,577 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import TopNav from '../components/TopNav.astro';
+import Sidebar from '../components/Sidebar.astro';
+import CraftingGrid from '../components/CraftingGrid.astro';
+import PageSummary from '../components/PageSummary.astro';
+import '../styles/global.css';
+
+import { getSidebarGroups } from '../data/sidebar-config.ts';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const sidebarGroups = getSidebarGroups('enchanting');
+---
+<BaseLayout title="Enchanting — MITE: Break Everything Wiki" description="MITE:BE enchanting: enchanting tables, MITE-specific enchantments with descriptions, XP table, disenchanting bottle.">
+  <Header />
+  <TopNav currentPage="enchanting" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+<PageSummary keyPoints={{
+  hu: [
+    '3 bűvölőasztal-szint: Gyémánt → Smaragd → Egyéni (Haladó)',
+    'Az Egyéni asztal: nincs könyvespolc szükséges, meghatározott bűvölések XP-ért',
+    '20 MITE-specifikus bűvölés — leírásokkal és XP-táblázattal',
+  ],
+  en: [
+    '3 enchanting table tiers: Diamond → Emerald → Custom (Advanced)',
+    'Custom table: no bookshelves needed, choose specific enchantments for XP',
+    '20 MITE-specific enchantments — with descriptions and XP table',
+  ],
+  ru: [
+    '3 уровня столов зачарования: Алмаз → Изумруд → Кастомный (Продвинутый)',
+    'Кастомный стол: не нужны полки, выбирай конкретные чары за опыт',
+    '20 MITE-специфичных чар — с описаниями и таблицей опыта',
+  ],
+}} />
+
+<!-- ═══════════════════════════════════════════════ HUNGARIAN ═══ -->
+<div data-lang="hu">
+<h2 id="enchanting-overview">✨ Bűvölés (Enchanting)</h2>
+<p>A MITE: Break Everything három bűvölőasztalt tartalmaz. Az alap véletlenszerű bűvöléseket ad, a legfejlettebb (Egyéni) lehetővé teszi a <strong>meghatározott bűvölések</strong> kiválasztását XP-ért — könyvespolcok nélkül.</p>
+
+<h2 id="enchanting-tables">Bűvölőasztalok összehasonlítása</h2>
+<table class="compare-table">
+  <tr><th>Asztal</th><th>Könyvespolc?</th><th>Bűvölés módja</th><th>Munkaasztal</th></tr>
+  <tr>
+    <td><img src={`${base}/img/items/enchantment_table.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Bűvölőasztal</strong></td>
+    <td>Igen (max 15)</td><td>Véletlenszerű (3 opció)</td><td>Vas Munkaasztal</td>
+  </tr>
+  <tr>
+    <td><img src={`${base}/img/items/enchantment_table_emerald.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Smaragd Bűvölőasztal</strong></td>
+    <td>Igen (max 15)</td><td>Véletlenszerű (erősebb)</td><td>—</td>
+  </tr>
+  <tr style="background:rgba(200,150,255,0.08)">
+    <td><img src={`${base}/img/items/enchantment_table_custom.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Egyéni Bűvölőasztal</strong></td>
+    <td><strong>Nem!</strong></td><td>Meghatározott bűvölés XP-ért</td><td>Mithril / Adamantium</td>
+  </tr>
+</table>
+
+<h3 id="base-table">Bűvölőasztal</h3>
+<p>Az alap bűvölőasztal. Minden bűvöléshez <strong>3 Lapis Lazuli</strong> szükséges, és a lapis megmarad az asztalban bezárás után is.</p>
+<div class="craft-section">
+  <CraftingGrid recipeFullId="enchantment_table_841396" label={{ hu: "Bűvölőasztal", en: "Enchantment Table" }} />
+</div>
+
+<h3 id="emerald-table">Smaragd Bűvölőasztal</h3>
+<p>Az alap asztal fejlettebb változata — erősebb bűvölési opciókat kínál ugyanolyan mechanikaval. A lapis itt is megmarad az asztalban.</p>
+<div class="craft-section">
+  <CraftingGrid recipe={{ gridSize: '3x3', pattern: [['_','book','_'],['emerald','obsidian','emerald'],['obsidian','obsidian','obsidian']], output: 'enchantment_table_emerald', label: { hu: 'Smaragd Bűvölőasztal', en: 'Emerald Enchantment Table' } }} />
+</div>
+
+<h3 id="custom-table">Egyéni Bűvölőasztal</h3>
+<p>A legfejlettebb bűvölőasztal (v0.6.0+). <strong>Nem kell könyvespolc</strong> — te választod ki pontosan melyik bűvölést akarod, és fizetsz érte XP-ben + <strong>3 Lapis Lazuli + 1 Könyv</strong>.</p>
+<div class="warning-box">⚠️ <strong>v0.9.0:</strong> Craftoláshoz az <strong>Egyéni Bűvölőasztal Tudáskönyve</strong> szükséges. Csak <strong>Mithril vagy Adamantium Munkaasztalon</strong> készíthető, és csak Mithril/Adamantium csákány vagy harci kalapács töri szét.</div>
+<div class="craft-section">
+  <CraftingGrid recipeFullId="enchantment_table_custom_32141" label={{ hu: "Egyéni Bűvölőasztal", en: "Enchantment Table Custom" }} />
+</div>
+<div class="tip">Arany almát az Egyéni Asztalnál bűvölni <strong>csak 100 XP-be kerül</strong>, extra anyag nem szükséges. Bűvölések csak erősebbé tehetők — eltávolítani vagy gyengíteni NEM lehet.</div>
+
+<!-- ─── MITE-specifikus bűvölések ─── -->
+<h2 id="mite-enchants">MITE-specifikus bűvölések</h2>
+<p>Az alábbi 20 bűvölés a MITE:BE mod saját bűvölése — ezek a vanilla Minecraftban nem léteznek.</p>
+
+<h4>⚔ Fegyver</h4>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Bűvölés</th><th>EN neve</th><th>Tárgy</th><th>Hatás (szintenként)</th><th>Max</th></tr>
+  <tr><td><strong>Lefegyverzés</strong></td><td>Disarming</td><td>Kard</td><td>20% esély, hogy az ellenfél elejtse a tartott tárgyát</td><td>V</td></tr>
+  <tr><td><strong>Vérszívás</strong></td><td>Vampiric</td><td>Fém kard / rövid kard / kasza</td><td>10% esély életerő-szívásra támadáskor</td><td>V</td></tr>
+  <tr><td><strong>Elkábítás</strong></td><td>Stun</td><td>Bot / rövid bot / harci kalapács</td><td>10% esély az ellenfél elkábítására (hatás részecskék nélkül)</td><td>V</td></tr>
+  <tr><td><strong>Húsvágás</strong></td><td>Butchering</td><td>Rövid kard</td><td>Megölt állatokból több hús esik ki</td><td>III</td></tr>
+</table>
+
+<h4>⛏ Szerszám</h4>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Bűvölés</th><th>EN neve</th><th>Tárgy</th><th>Hatás</th><th>Max</th></tr>
+  <tr><td><strong>Átütés</strong></td><td>Piercing</td><td>Csákány</td><td>Szintenként 1 páncélpontot figyelmen kívül hagy ütéskor</td><td>V</td></tr>
+  <tr><td><strong>Törhetetlenség</strong></td><td>Unbreaking</td><td>Szerszámok, páncél</td><td>Csökkenti a tárgy kopásának mértékét</td><td>V</td></tr>
+  <tr><td><strong>Szerencse</strong></td><td>Fortune</td><td>Csákány</td><td>Szintenként +10% extra érc drop esély</td><td>III</td></tr>
+  <tr><td><strong>Aratás</strong></td><td>Harvesting</td><td>Kasza / kapa / csákány</td><td>Betakarított termények mennyisége nő</td><td>V</td></tr>
+  <tr><td><strong>Fakivágás</strong></td><td>Tree Felling</td><td>Fejsze / harci fejsze</td><td>Szintenként 1 extra rönk esik le a fa tetejéről (tartósságot fogyaszt)</td><td>V</td></tr>
+  <tr><td><strong>Termékenység</strong></td><td>Fertility</td><td>Csákány / kapa / kasza</td><td>20% esély talaj termékenyítésére (V. szint: 100%)</td><td>V</td></tr>
+</table>
+
+<h4>🏹 Íj</h4>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Bűvölés</th><th>EN neve</th><th>Hatás</th><th>Max</th></tr>
+  <tr><td><strong>Gyorsaság</strong></td><td>Quickness</td><td>Felgyorsítja az íj felhúzási sebességét</td><td>V</td></tr>
+  <tr><td><strong>Pontosság</strong></td><td>Accuracy</td><td>Csökkenti a nyíl szóródását, növeli a pontosságot</td><td>V</td></tr>
+  <tr><td><strong>Méreg</strong></td><td>Poison</td><td>A nyíl megmérgezia célpontot: szintenként 1 sebzés 4 mp alatt</td><td>V</td></tr>
+  <tr><td><strong>Visszaszerzés</strong></td><td>Recovery</td><td>Az élőlénybe fúródott nyilak visszaszerzési esélye szintenként 5%</td><td>V</td></tr>
+</table>
+
+<h4>🎣 Horgászbot</h4>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Bűvölés</th><th>EN neve</th><th>Hatás</th><th>Max</th></tr>
+  <tr><td><strong>Csali</strong></td><td>Luring</td><td>Rövidíti a horgászás várakozási idejét</td><td>V</td></tr>
+</table>
+
+<h4>🛡 Páncél</h4>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Bűvölés</th><th>EN neve</th><th>Tárgy</th><th>Hatás</th><th>Max</th></tr>
+  <tr><td><strong>Védekezés</strong></td><td>Protection</td><td>Teljes páncél</td><td>Szintenként +12,5% páncélérték az adott darabra</td><td>IV</td></tr>
+  <tr><td><strong>Szabad mozgás</strong></td><td>Free Action</td><td>Páncél</td><td>Szintenként 20% lassítás elleni rezisztencia</td><td>IV</td></tr>
+  <tr><td><strong>Megújulás</strong></td><td>Regeneration</td><td>Mellvért</td><td>Szintenként 50%-kal gyorsabb életpont-regeneráció</td><td>V</td></tr>
+  <tr><td><strong>Sebesség</strong></td><td>Speed</td><td>Csizma</td><td>Szintenként +5% mozgássebesség</td><td>V</td></tr>
+  <tr><td><strong>Kitartás</strong></td><td>Endurance</td><td>Mellvért</td><td>Szintenként 20%-kal kevesebb éhség fogy akciókhoz (bányászat, harc, stb.)</td><td>IV</td></tr>
+</table>
+
+<!-- ─── XP táblázat ─── -->
+<h2 id="xp-table">XP táblázat — Egyéni Bűvölőasztal</h2>
+<p>Az Egyéni Bűvölőasztalnál minden bűvölés pontosan ennyi XP-be kerül (+ 3 Lapis + 1 Könyv):</p>
+
+<table class="compare-table" style="font-size:0.82em">
+  <tr><th>Bűvölés</th><th>I</th><th>II</th><th>III</th><th>IV</th><th>V</th></tr>
+
+  <tr><td colspan="6" style="background:rgba(255,100,50,0.1);font-weight:bold;padding:4px 8px">⚔ Kard / Rövid kard / Kasza</td></tr>
+  <tr><td>Élesség — Sharpness</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>4 000</td></tr>
+  <tr><td>Hasítás — Cleaving</td><td>1 320</td><td>2 640</td><td>3 960</td><td>5 280</td><td>6 600</td></tr>
+  <tr><td>⚗ Lefegyverzés — Disarming</td><td>1 200</td><td>2 400</td><td>3 600</td><td>4 800</td><td>6 000</td></tr>
+  <tr><td>⚗ Vérszívás — Vampiric</td><td>1 000</td><td>3 000</td><td>7 000</td><td>15 000</td><td>31 000</td></tr>
+  <tr><td>⚗ Húsvágás — Butchering</td><td>2 000</td><td>4 000</td><td>6 000</td><td>—</td><td>—</td></tr>
+  <tr><td>Csapás — Smite</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>—</td></tr>
+  <tr><td>Ízeltlábúak Bánata</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>—</td></tr>
+  <tr><td>Visszaütés — Knockback</td><td>3 000</td><td>6 000</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>Tűzvarázs — Fire Aspect</td><td>2 500</td><td>5 000</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>Zsákmányszerzés — Looting</td><td>1 000</td><td>2 000</td><td>3 000</td><td>—</td><td>—</td></tr>
+
+  <tr><td colspan="6" style="background:rgba(200,150,50,0.1);font-weight:bold;padding:4px 8px">🔨 Bot / Harci kalapács</td></tr>
+  <tr><td>⚗ Elkábítás — Stun</td><td>1 800</td><td>3 600</td><td>5 400</td><td>7 200</td><td>9 000</td></tr>
+
+  <tr><td colspan="6" style="background:rgba(100,200,100,0.1);font-weight:bold;padding:4px 8px">⛏ Szerszám (csákány / fejsze / kasza / kapa)</td></tr>
+  <tr><td>Hatékonyság — Efficiency</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>4 000</td></tr>
+  <tr><td>Selyemkéz — Silk Touch</td><td>5 000</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>⚗ Törhetetlenség — Unbreaking</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>4 000</td></tr>
+  <tr><td>⚗ Szerencse — Fortune</td><td>1 600</td><td>3 200</td><td>4 800</td><td>—</td><td>—</td></tr>
+  <tr><td>⚗ Átütés — Piercing</td><td>1 620</td><td>2 640</td><td>3 960</td><td>5 280</td><td>6 600</td></tr>
+  <tr><td>⚗ Aratás — Harvesting</td><td>1 120</td><td>2 240</td><td>3 360</td><td>4 480</td><td>5 600</td></tr>
+  <tr><td>⚗ Fakivágás — Tree Felling</td><td>1 320</td><td>2 640</td><td>3 960</td><td>5 280</td><td>6 600</td></tr>
+  <tr><td>⚗ Termékenység — Fertility</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>5 000</td></tr>
+
+  <tr><td colspan="6" style="background:rgba(255,200,50,0.1);font-weight:bold;padding:4px 8px">🏹 Íj</td></tr>
+  <tr><td>Erő — Power</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>4 000</td></tr>
+  <tr><td>Ütés — Punch</td><td>1 000</td><td>2 000</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>Láng — Flame</td><td>2 000</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>⚗ Gyorsaság — Quickness</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>5 000</td></tr>
+  <tr><td>⚗ Pontosság — Accuracy</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>4 000</td></tr>
+  <tr><td>⚗ Méreg — Poison</td><td>1 250</td><td>2 500</td><td>3 750</td><td>5 000</td><td>6 250</td></tr>
+  <tr><td>⚗ Visszaszerzés — Recovery</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>5 000</td></tr>
+
+  <tr><td colspan="6" style="background:rgba(150,200,255,0.1);font-weight:bold;padding:4px 8px">🎣 Horgászbot</td></tr>
+  <tr><td>⚗ Csali — Luring</td><td>1 150</td><td>2 300</td><td>3 450</td><td>4 600</td><td>5 750</td></tr>
+
+  <tr><td colspan="6" style="background:rgba(100,150,255,0.1);font-weight:bold;padding:4px 8px">🛡 Páncél</td></tr>
+  <tr><td>⚗ Védekezés — Protection</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>—</td></tr>
+  <tr><td>Tűzvédelem — Fire Protection</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>—</td></tr>
+  <tr><td>Zuhanásvédelem — Feather Fall</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>—</td></tr>
+  <tr><td>Robbanásvédelem — Blast Prot.</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>—</td></tr>
+  <tr><td>Lövedékvédelem — Proj. Prot.</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>—</td></tr>
+  <tr><td>Vízalatti lélegzés — Respiration</td><td>2 450</td><td>4 900</td><td>7 350</td><td>—</td><td>—</td></tr>
+  <tr><td>Víz Affinitás — Aqua Affinity</td><td>2 450</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>Tövisek — Thorns</td><td>2 100</td><td>4 200</td><td>6 300</td><td>—</td><td>—</td></tr>
+  <tr><td>⚗ Szabad mozgás — Free Action</td><td>1 450</td><td>2 900</td><td>4 350</td><td>5 800</td><td>—</td></tr>
+  <tr><td>⚗ Kitartás — Endurance</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>—</td></tr>
+  <tr><td>⚗ Sebesség — Speed</td><td>1 150</td><td>2 300</td><td>3 450</td><td>4 600</td><td>5 750</td></tr>
+  <tr><td>⚗ Megújulás — Regeneration</td><td>2 100</td><td>4 200</td><td>6 300</td><td>8 400</td><td>10 500</td></tr>
+</table>
+<p style="font-size:0.8em;opacity:0.7">⚗ = MITE-specifikus bűvölés</p>
+
+<!-- ─── Enchantability ─── -->
+<h2 id="enchantability">Anyag Enchantability</h2>
+<p>Minél magasabb egy anyag enchantability értéke, annál jobb bűvölési opciókat kapsz a véletlenszerű asztaloknál. Az Egyéni asztalnál ez nem számít.</p>
+<table class="compare-table">
+  <tr><th>Érték</th><th>Anyagok</th><th>Minősítés</th></tr>
+  <tr style="background:rgba(200,150,255,0.15)"><td><strong>100</strong></td><td>Mithril / Higany</td><td>⭐ Legjobb</td></tr>
+  <tr style="background:rgba(255,220,0,0.10)"><td><strong>50</strong></td><td>Arany</td><td>Jó</td></tr>
+  <tr><td><strong>40</strong></td><td>Adamantium / Ősi Fém / Kvarc</td><td>Közepes</td></tr>
+  <tr><td><strong>35</strong></td><td>Keménykő</td><td>—</td></tr>
+  <tr><td><strong>30</strong></td><td>Réz / Vas / Ezüst / Bronz / HC Acél</td><td>Standard</td></tr>
+  <tr style="opacity:0.65"><td><strong>10</strong></td><td>Bőr / Fa / Csont</td><td>Gyenge</td></tr>
+</table>
+
+<!-- ─── Disenchanting ─── -->
+<h2 id="disenchanting">Varázstalanítás</h2>
+<p>Ha rossz bűvölést kaptál, a <strong>Varázstalanítás Palack</strong> eltávolítja — és a befektetett XP visszajön!</p>
+<div class="craft-section">
+  <CraftingGrid recipeOutput="bottle_of_disenchanting" label={{ hu: "Varázstalanítás Palack", en: "Bottle of Disenchanting" }} />
+</div>
+<ul>
+  <li>✅ Bűvölések eltávolítása tárgyakról (XP visszajár!)</li>
+  <li>✅ Aktív bájitalhatások törlése magadról</li>
+  <li>✅ Boszorkányátkok eltávolítása</li>
+  <li>⚠️ A tárgy minőségét NEM érinti</li>
+</ul>
+<div class="tip">Lásd még: <a href={`${base}/brewing/`}>Főzés oldal</a> a bájitalok részleteiért.</div>
+
+</div><!-- end hu -->
+
+<!-- ═══════════════════════════════════════════════ ENGLISH ═══ -->
+<div data-lang="en">
+<h2 id="enchanting-overview">✨ Enchanting</h2>
+<p>MITE: Break Everything features three enchanting tables. The basic one gives random enchantments, while the most advanced (Custom) lets you <strong>choose specific enchantments</strong> for XP — no bookshelves needed.</p>
+
+<h2 id="enchanting-tables">Enchanting Tables Comparison</h2>
+<table class="compare-table">
+  <tr><th>Table</th><th>Bookshelves?</th><th>Enchanting Method</th><th>Workbench</th></tr>
+  <tr>
+    <td><img src={`${base}/img/items/enchantment_table.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Enchantment Table</strong></td>
+    <td>Yes (max 15)</td><td>Random (3 options)</td><td>Iron Workbench</td>
+  </tr>
+  <tr>
+    <td><img src={`${base}/img/items/enchantment_table_emerald.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Emerald Enchantment Table</strong></td>
+    <td>Yes (max 15)</td><td>Random (stronger)</td><td>—</td>
+  </tr>
+  <tr style="background:rgba(200,150,255,0.08)">
+    <td><img src={`${base}/img/items/enchantment_table_custom.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Enchantment Table Custom</strong></td>
+    <td><strong>No!</strong></td><td>Choose specific enchantments for XP</td><td>Mithril / Adamantium</td>
+  </tr>
+</table>
+
+<h3 id="base-table">Enchantment Table</h3>
+<p>The base enchanting table. Each enchantment requires <strong>3 Lapis Lazuli</strong>, which is saved inside the table when you close it.</p>
+<div class="craft-section">
+  <CraftingGrid recipeFullId="enchantment_table_841396" label={{ hu: "Bűvölőasztal", en: "Enchantment Table" }} />
+</div>
+
+<h3 id="emerald-table">Emerald Enchantment Table</h3>
+<p>The upgraded version of the base table — provides stronger enchantment options with the same mechanics. Lapis Lazuli is also saved.</p>
+<div class="craft-section">
+  <CraftingGrid recipe={{ gridSize: '3x3', pattern: [['_','book','_'],['emerald','obsidian','emerald'],['obsidian','obsidian','obsidian']], output: 'enchantment_table_emerald', label: { hu: 'Smaragd Bűvölőasztal', en: 'Emerald Enchantment Table' } }} />
+</div>
+
+<h3 id="custom-table">Enchantment Table Custom</h3>
+<p>The most advanced table (v0.6.0+). <strong>No bookshelves required</strong> — you choose exactly which enchantment you want and pay XP + <strong>3 Lapis Lazuli + 1 Book</strong>.</p>
+<div class="warning-box">⚠️ <strong>v0.9.0:</strong> Requires the <strong>Enchantment Table Custom Knowledge Book</strong> to craft. Can only be crafted at a <strong>Mithril or Adamantium Workbench</strong>, and can only be broken by Mithril/Adamantium warhammers or pickaxes.</div>
+<div class="craft-section">
+  <CraftingGrid recipeFullId="enchantment_table_custom_32141" label={{ hu: "Egyéni Bűvölőasztal", en: "Enchantment Table Custom" }} />
+</div>
+<div class="tip">Enchanting a golden apple at the Custom table only costs <strong>100 XP</strong>, no extra materials. Enchantments can only be added or strengthened — they cannot be removed or weakened here.</div>
+
+<!-- ─── MITE-specific enchantments ─── -->
+<h2 id="mite-enchants">MITE-Specific Enchantments</h2>
+<p>These 20 enchantments are unique to MITE:BE — they do not exist in vanilla Minecraft.</p>
+
+<h4>⚔ Sword / Scythe</h4>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Enchantment</th><th>Applies to</th><th>Effect (per level)</th><th>Max</th></tr>
+  <tr><td><strong>Disarming</strong></td><td>Sword</td><td>20% chance per level to make the enemy drop their held item</td><td>V</td></tr>
+  <tr><td><strong>Vampiric</strong></td><td>Metal sword / shortsword / scythe</td><td>10% chance per level to restore health on hit</td><td>V</td></tr>
+  <tr><td><strong>Stun</strong></td><td>Stick / short stick / warhammer</td><td>10% chance per level to stun the enemy (no particle effect)</td><td>V</td></tr>
+  <tr><td><strong>Butchering</strong></td><td>Short sword</td><td>Increases meat drops from killed animals</td><td>III</td></tr>
+</table>
+
+<h4>⛏ Tools</h4>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Enchantment</th><th>Applies to</th><th>Effect</th><th>Max</th></tr>
+  <tr><td><strong>Piercing</strong></td><td>Pickaxe</td><td>Ignores 1 armor point per level when striking</td><td>V</td></tr>
+  <tr><td><strong>Unbreaking</strong></td><td>Tools, armor</td><td>Reduces item durability loss</td><td>V</td></tr>
+  <tr><td><strong>Fortune</strong></td><td>Pickaxe</td><td>+10% extra ore drop chance per level</td><td>III</td></tr>
+  <tr><td><strong>Harvesting</strong></td><td>Scythe / hoe / pickaxe</td><td>Increases crop drops when harvesting</td><td>V</td></tr>
+  <tr><td><strong>Tree Felling</strong></td><td>Axe / battle axe</td><td>Each level drops 1 extra log from above the cut; costs extra durability</td><td>V</td></tr>
+  <tr><td><strong>Fertility</strong></td><td>Pickaxe / hoe / scythe</td><td>20% chance to enrich soil (level V: 100%)</td><td>V</td></tr>
+</table>
+
+<h4>🏹 Bow</h4>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Enchantment</th><th>Effect</th><th>Max</th></tr>
+  <tr><td><strong>Quickness</strong></td><td>Increases bow draw speed</td><td>V</td></tr>
+  <tr><td><strong>Accuracy</strong></td><td>Reduces arrow spread, increases precision</td><td>V</td></tr>
+  <tr><td><strong>Poison</strong></td><td>Arrow poisons the target: 1 damage per level over 4 seconds</td><td>V</td></tr>
+  <tr><td><strong>Recovery</strong></td><td>5% chance per level to recover arrows that hit living entities</td><td>V</td></tr>
+</table>
+
+<h4>🎣 Fishing Rod</h4>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Enchantment</th><th>Effect</th><th>Max</th></tr>
+  <tr><td><strong>Luring</strong></td><td>Reduces fishing wait time</td><td>V</td></tr>
+</table>
+
+<h4>🛡 Armor</h4>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Enchantment</th><th>Applies to</th><th>Effect</th><th>Max</th></tr>
+  <tr><td><strong>Protection</strong></td><td>All armor pieces</td><td>+12.5% armor value per level on that piece</td><td>IV</td></tr>
+  <tr><td><strong>Free Action</strong></td><td>Armor</td><td>20% slow resistance per level</td><td>IV</td></tr>
+  <tr><td><strong>Regeneration</strong></td><td>Chestplate</td><td>+50% health regeneration speed per level</td><td>V</td></tr>
+  <tr><td><strong>Speed</strong></td><td>Boots</td><td>+5% movement speed per level</td><td>V</td></tr>
+  <tr><td><strong>Endurance</strong></td><td>Chestplate</td><td>20% less hunger consumed per level for actions (mining, combat, etc.)</td><td>IV</td></tr>
+</table>
+
+<!-- ─── XP Table ─── -->
+<h2 id="xp-table">XP Table — Custom Enchantment Table</h2>
+<p>XP cost for each enchantment at each level (+ 3 Lapis + 1 Book per enchant):</p>
+
+<table class="compare-table" style="font-size:0.82em">
+  <tr><th>Enchantment</th><th>I</th><th>II</th><th>III</th><th>IV</th><th>V</th></tr>
+
+  <tr><td colspan="6" style="background:rgba(255,100,50,0.1);font-weight:bold;padding:4px 8px">⚔ Sword / Shortsword / Scythe</td></tr>
+  <tr><td>Sharpness</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>4 000</td></tr>
+  <tr><td>Cleaving</td><td>1 320</td><td>2 640</td><td>3 960</td><td>5 280</td><td>6 600</td></tr>
+  <tr><td>⚗ Disarming</td><td>1 200</td><td>2 400</td><td>3 600</td><td>4 800</td><td>6 000</td></tr>
+  <tr><td>⚗ Vampiric</td><td>1 000</td><td>3 000</td><td>7 000</td><td>15 000</td><td>31 000</td></tr>
+  <tr><td>⚗ Butchering</td><td>2 000</td><td>4 000</td><td>6 000</td><td>—</td><td>—</td></tr>
+  <tr><td>Smite</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>—</td></tr>
+  <tr><td>Bane of Arthropods</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>—</td></tr>
+  <tr><td>Knockback</td><td>3 000</td><td>6 000</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>Fire Aspect</td><td>2 500</td><td>5 000</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>Looting</td><td>1 000</td><td>2 000</td><td>3 000</td><td>—</td><td>—</td></tr>
+
+  <tr><td colspan="6" style="background:rgba(200,150,50,0.1);font-weight:bold;padding:4px 8px">🔨 Stick / Warhammer</td></tr>
+  <tr><td>⚗ Stun</td><td>1 800</td><td>3 600</td><td>5 400</td><td>7 200</td><td>9 000</td></tr>
+
+  <tr><td colspan="6" style="background:rgba(100,200,100,0.1);font-weight:bold;padding:4px 8px">⛏ Tools (pickaxe / axe / scythe / hoe)</td></tr>
+  <tr><td>Efficiency</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>4 000</td></tr>
+  <tr><td>Silk Touch</td><td>5 000</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>⚗ Unbreaking</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>4 000</td></tr>
+  <tr><td>⚗ Fortune</td><td>1 600</td><td>3 200</td><td>4 800</td><td>—</td><td>—</td></tr>
+  <tr><td>⚗ Piercing</td><td>1 620</td><td>2 640</td><td>3 960</td><td>5 280</td><td>6 600</td></tr>
+  <tr><td>⚗ Harvesting</td><td>1 120</td><td>2 240</td><td>3 360</td><td>4 480</td><td>5 600</td></tr>
+  <tr><td>⚗ Tree Felling</td><td>1 320</td><td>2 640</td><td>3 960</td><td>5 280</td><td>6 600</td></tr>
+  <tr><td>⚗ Fertility</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>5 000</td></tr>
+
+  <tr><td colspan="6" style="background:rgba(255,200,50,0.1);font-weight:bold;padding:4px 8px">🏹 Bow</td></tr>
+  <tr><td>Power</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>4 000</td></tr>
+  <tr><td>Punch</td><td>1 000</td><td>2 000</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>Flame</td><td>2 000</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>⚗ Quickness</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>5 000</td></tr>
+  <tr><td>⚗ Accuracy</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>4 000</td></tr>
+  <tr><td>⚗ Poison</td><td>1 250</td><td>2 500</td><td>3 750</td><td>5 000</td><td>6 250</td></tr>
+  <tr><td>⚗ Recovery</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>5 000</td></tr>
+
+  <tr><td colspan="6" style="background:rgba(150,200,255,0.1);font-weight:bold;padding:4px 8px">🎣 Fishing Rod</td></tr>
+  <tr><td>⚗ Luring</td><td>1 150</td><td>2 300</td><td>3 450</td><td>4 600</td><td>5 750</td></tr>
+
+  <tr><td colspan="6" style="background:rgba(100,150,255,0.1);font-weight:bold;padding:4px 8px">🛡 Armor</td></tr>
+  <tr><td>⚗ Protection</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>—</td></tr>
+  <tr><td>Fire Protection</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>—</td></tr>
+  <tr><td>Feather Falling</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>—</td></tr>
+  <tr><td>Blast Protection</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>—</td></tr>
+  <tr><td>Projectile Protection</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>—</td></tr>
+  <tr><td>Respiration</td><td>2 450</td><td>4 900</td><td>7 350</td><td>—</td><td>—</td></tr>
+  <tr><td>Aqua Affinity</td><td>2 450</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>Thorns</td><td>2 100</td><td>4 200</td><td>6 300</td><td>—</td><td>—</td></tr>
+  <tr><td>⚗ Free Action</td><td>1 450</td><td>2 900</td><td>4 350</td><td>5 800</td><td>—</td></tr>
+  <tr><td>⚗ Endurance</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>—</td></tr>
+  <tr><td>⚗ Speed</td><td>1 150</td><td>2 300</td><td>3 450</td><td>4 600</td><td>5 750</td></tr>
+  <tr><td>⚗ Regeneration</td><td>2 100</td><td>4 200</td><td>6 300</td><td>8 400</td><td>10 500</td></tr>
+</table>
+<p style="font-size:0.8em;opacity:0.7">⚗ = MITE-specific enchantment</p>
+
+<h2 id="enchantability">Material Enchantability</h2>
+<p>Higher enchantability = better random enchantment options at the base and Emerald tables. Not relevant for the Custom table.</p>
+<table class="compare-table">
+  <tr><th>Value</th><th>Materials</th><th>Rating</th></tr>
+  <tr style="background:rgba(200,150,255,0.15)"><td><strong>100</strong></td><td>Mithril / Mercury</td><td>⭐ Best</td></tr>
+  <tr style="background:rgba(255,220,0,0.10)"><td><strong>50</strong></td><td>Gold</td><td>Good</td></tr>
+  <tr><td><strong>40</strong></td><td>Adamantium / Ancient Metal / Quartz</td><td>Moderate</td></tr>
+  <tr><td><strong>35</strong></td><td>Hardstone</td><td>—</td></tr>
+  <tr><td><strong>30</strong></td><td>Copper / Iron / Silver / Bronze / HC Steel</td><td>Standard</td></tr>
+  <tr style="opacity:0.65"><td><strong>10</strong></td><td>Leather / Wood / Bone</td><td>Weak</td></tr>
+</table>
+
+<h2 id="disenchanting">Disenchanting</h2>
+<p>Got a bad enchantment? The <strong>Bottle of Disenchanting</strong> removes it — and returns your invested XP!</p>
+<div class="craft-section">
+  <CraftingGrid recipeOutput="bottle_of_disenchanting" label={{ hu: "Varázstalanítás Palack", en: "Bottle of Disenchanting" }} />
+</div>
+<ul>
+  <li>✅ Remove enchantments from items (XP returned!)</li>
+  <li>✅ Clear active potion effects from yourself</li>
+  <li>✅ Remove witch curses</li>
+  <li>⚠️ Does NOT affect item quality</li>
+</ul>
+<div class="tip">See also: <a href={`${base}/brewing/`}>Brewing page</a> for potion details.</div>
+
+</div><!-- end en -->
+
+<!-- ═══════════════════════════════════════════════ RUSSIAN ═══ -->
+<div data-lang="ru">
+<h2 id="enchanting-overview">✨ Зачарование</h2>
+<p>В MITE:BE три стола зачарования. Базовый даёт случайные чары, а самый продвинутый (Кастомный) позволяет <strong>выбирать конкретные чары</strong> за опыт — без книжных полок.</p>
+
+<h2 id="enchanting-tables">Сравнение столов зачарования</h2>
+<table class="compare-table">
+  <tr><th>Стол</th><th>Полки?</th><th>Метод</th><th>Верстак</th></tr>
+  <tr>
+    <td><img src={`${base}/img/items/enchantment_table.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Стол зачарования</strong></td>
+    <td>Да (макс 15)</td><td>Случайный (3 варианта)</td><td>Железный верстак</td>
+  </tr>
+  <tr>
+    <td><img src={`${base}/img/items/enchantment_table_emerald.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Изумрудный стол</strong></td>
+    <td>Да (макс 15)</td><td>Случайный (мощнее)</td><td>—</td>
+  </tr>
+  <tr style="background:rgba(200,150,255,0.08)">
+    <td><img src={`${base}/img/items/enchantment_table_custom.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Кастомный стол</strong></td>
+    <td><strong>Нет!</strong></td><td>Выбор чар за опыт</td><td>Мифрил / Адамант</td>
+  </tr>
+</table>
+
+<h3 id="base-table">Стол зачарования</h3>
+<p>Базовый стол. Каждое зачарование требует <strong>3 лазурита</strong>, который сохраняется при закрытии.</p>
+<div class="craft-section">
+  <CraftingGrid recipeFullId="enchantment_table_841396" label={{ hu: "Bűvölőasztal", en: "Enchantment Table" }} />
+</div>
+
+<h3 id="emerald-table">Изумрудный стол зачарования</h3>
+<p>Улучшенная версия базового стола — предоставляет более сильные варианты зачарований. Лазурит тоже сохраняется.</p>
+<div class="craft-section">
+  <CraftingGrid recipe={{ gridSize: '3x3', pattern: [['_','book','_'],['emerald','obsidian','emerald'],['obsidian','obsidian','obsidian']], output: 'enchantment_table_emerald', label: { hu: 'Smaragd Bűvölőasztal', en: 'Emerald Enchantment Table' } }} />
+</div>
+
+<h3 id="custom-table">Кастомный стол зачарования</h3>
+<p>Самый мощный стол (с v0.6.0). <strong>Полки не нужны</strong> — ты выбираешь нужное зачарование и платишь опытом + <strong>3 лазурита + 1 книга</strong>.</p>
+<div class="warning-box">⚠️ <strong>v0.9.0:</strong> Для крафта нужна <strong>Книга знаний кастомного стола</strong>. Крафтится только на <strong>Мифриловом или Адамантовом верстаке</strong>, ломается только Мифриловым/Адамантовым молотом или киркой.</div>
+<div class="craft-section">
+  <CraftingGrid recipeFullId="enchantment_table_custom_32141" label={{ hu: "Egyéni Bűvölőasztal", en: "Enchantment Table Custom" }} />
+</div>
+<div class="tip">Зачарование золотого яблока на кастомном столе стоит всего <strong>100 опыта</strong>. Чары можно только усиливать — убрать или ослабить здесь нельзя.</div>
+
+<!-- ─── MITE-специфичные чары ─── -->
+<h2 id="mite-enchants">MITE-специфичные чары</h2>
+<p>Эти 20 чар уникальны для MITE:BE — в ванильном Minecraft их нет.</p>
+
+<h4>⚔ Меч / Коса</h4>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Чары</th><th>EN</th><th>Предмет</th><th>Эффект (за уровень)</th><th>Макс</th></tr>
+  <tr><td><strong>Разоружение</strong></td><td>Disarming</td><td>Меч</td><td>20% шанс выбить предмет из рук врага</td><td>V</td></tr>
+  <tr><td><strong>Вампиризм</strong></td><td>Vampiric</td><td>Металл. меч / короткий меч / коса</td><td>10% шанс восполнить здоровье при ударе</td><td>V</td></tr>
+  <tr><td><strong>Оглушение</strong></td><td>Stun</td><td>Палка / короткая палка / боевой молот</td><td>10% шанс оглушить врага (без частиц эффекта)</td><td>V</td></tr>
+  <tr><td><strong>Мясник</strong></td><td>Butchering</td><td>Короткий меч</td><td>Убитые животные дают больше мяса</td><td>III</td></tr>
+</table>
+
+<h4>⛏ Инструменты</h4>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Чары</th><th>EN</th><th>Предмет</th><th>Эффект</th><th>Макс</th></tr>
+  <tr><td><strong>Пронзание</strong></td><td>Piercing</td><td>Кирка</td><td>Каждый уровень игнорирует 1 единицу брони при ударе</td><td>V</td></tr>
+  <tr><td><strong>Несокрушимость</strong></td><td>Unbreaking</td><td>Инструменты, броня</td><td>Уменьшает скорость износа предмета</td><td>V</td></tr>
+  <tr><td><strong>Удача</strong></td><td>Fortune</td><td>Кирка</td><td>+10% шанс дополнительного дропа руды за уровень</td><td>III</td></tr>
+  <tr><td><strong>Жатва</strong></td><td>Harvesting</td><td>Коса / мотыга / кирка</td><td>Увеличивает количество собранного урожая</td><td>V</td></tr>
+  <tr><td><strong>Лесоруб</strong></td><td>Tree Felling</td><td>Топор / боевой топор</td><td>Каждый уровень даёт 1 доп. бревно сверху; тратит прочность</td><td>V</td></tr>
+  <tr><td><strong>Плодородие</strong></td><td>Fertility</td><td>Кирка / мотыга / коса</td><td>20% шанс обогатить почву (V уровень: 100%)</td><td>V</td></tr>
+</table>
+
+<h4>🏹 Лук</h4>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Чары</th><th>EN</th><th>Эффект</th><th>Макс</th></tr>
+  <tr><td><strong>Быстрота</strong></td><td>Quickness</td><td>Увеличивает скорость натяжения лука</td><td>V</td></tr>
+  <tr><td><strong>Точность</strong></td><td>Accuracy</td><td>Уменьшает разброс стрел, увеличивает точность</td><td>V</td></tr>
+  <tr><td><strong>Яд</strong></td><td>Poison</td><td>Стрела отравляет цель: 1 урон за уровень за 4 секунды</td><td>V</td></tr>
+  <tr><td><strong>Возврат</strong></td><td>Recovery</td><td>5% шанс за уровень подобрать стрелу, попавшую в существо</td><td>V</td></tr>
+</table>
+
+<h4>🎣 Удочка</h4>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Чары</th><th>EN</th><th>Эффект</th><th>Макс</th></tr>
+  <tr><td><strong>Приманка</strong></td><td>Luring</td><td>Сокращает время ожидания при рыбалке</td><td>V</td></tr>
+</table>
+
+<h4>🛡 Броня</h4>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Чары</th><th>EN</th><th>Предмет</th><th>Эффект</th><th>Макс</th></tr>
+  <tr><td><strong>Защита</strong></td><td>Protection</td><td>Вся броня</td><td>+12,5% к броне за уровень на данной части</td><td>IV</td></tr>
+  <tr><td><strong>Свободное движение</strong></td><td>Free Action</td><td>Броня</td><td>20% сопротивления к замедлению за уровень</td><td>IV</td></tr>
+  <tr><td><strong>Регенерация</strong></td><td>Regeneration</td><td>Нагрудник</td><td>+50% к скорости регенерации здоровья за уровень</td><td>V</td></tr>
+  <tr><td><strong>Скорость</strong></td><td>Speed</td><td>Ботинки</td><td>+5% к скорости передвижения за уровень</td><td>V</td></tr>
+  <tr><td><strong>Выносливость</strong></td><td>Endurance</td><td>Нагрудник</td><td>-20% расхода голода за уровень при действиях (добыча, бой и др.)</td><td>IV</td></tr>
+</table>
+
+<!-- ─── XP Table ─── -->
+<h2 id="xp-table">Таблица опыта — Кастомный стол</h2>
+<p>Стоимость опыта для каждого чара и уровня (+ 3 лазурита + 1 книга):</p>
+
+<table class="compare-table" style="font-size:0.82em">
+  <tr><th>Зачарование</th><th>I</th><th>II</th><th>III</th><th>IV</th><th>V</th></tr>
+
+  <tr><td colspan="6" style="background:rgba(255,100,50,0.1);font-weight:bold;padding:4px 8px">⚔ Меч / Короткий меч / Коса</td></tr>
+  <tr><td>Острота — Sharpness</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>4 000</td></tr>
+  <tr><td>Рассечение — Cleaving</td><td>1 320</td><td>2 640</td><td>3 960</td><td>5 280</td><td>6 600</td></tr>
+  <tr><td>⚗ Разоружение — Disarming</td><td>1 200</td><td>2 400</td><td>3 600</td><td>4 800</td><td>6 000</td></tr>
+  <tr><td>⚗ Вампиризм — Vampiric</td><td>1 000</td><td>3 000</td><td>7 000</td><td>15 000</td><td>31 000</td></tr>
+  <tr><td>⚗ Мясник — Butchering</td><td>2 000</td><td>4 000</td><td>6 000</td><td>—</td><td>—</td></tr>
+  <tr><td>Кара небесная — Smite</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>—</td></tr>
+  <tr><td>Бич членистоногих</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>—</td></tr>
+  <tr><td>Отбрасывание — Knockback</td><td>3 000</td><td>6 000</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>Огненный аспект</td><td>2 500</td><td>5 000</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>Мародёрство — Looting</td><td>1 000</td><td>2 000</td><td>3 000</td><td>—</td><td>—</td></tr>
+
+  <tr><td colspan="6" style="background:rgba(200,150,50,0.1);font-weight:bold;padding:4px 8px">🔨 Палка / Боевой молот</td></tr>
+  <tr><td>⚗ Оглушение — Stun</td><td>1 800</td><td>3 600</td><td>5 400</td><td>7 200</td><td>9 000</td></tr>
+
+  <tr><td colspan="6" style="background:rgba(100,200,100,0.1);font-weight:bold;padding:4px 8px">⛏ Инструменты (кирка / топор / коса / мотыга)</td></tr>
+  <tr><td>Эффективность</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>4 000</td></tr>
+  <tr><td>Шёлковое касание</td><td>5 000</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>⚗ Несокрушимость — Unbreaking</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>4 000</td></tr>
+  <tr><td>⚗ Удача — Fortune</td><td>1 600</td><td>3 200</td><td>4 800</td><td>—</td><td>—</td></tr>
+  <tr><td>⚗ Пронзание — Piercing</td><td>1 620</td><td>2 640</td><td>3 960</td><td>5 280</td><td>6 600</td></tr>
+  <tr><td>⚗ Жатва — Harvesting</td><td>1 120</td><td>2 240</td><td>3 360</td><td>4 480</td><td>5 600</td></tr>
+  <tr><td>⚗ Лесоруб — Tree Felling</td><td>1 320</td><td>2 640</td><td>3 960</td><td>5 280</td><td>6 600</td></tr>
+  <tr><td>⚗ Плодородие — Fertility</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>5 000</td></tr>
+
+  <tr><td colspan="6" style="background:rgba(255,200,50,0.1);font-weight:bold;padding:4px 8px">🏹 Лук</td></tr>
+  <tr><td>Сила — Power</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>4 000</td></tr>
+  <tr><td>Удар — Punch</td><td>1 000</td><td>2 000</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>Пламя — Flame</td><td>2 000</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>⚗ Быстрота — Quickness</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>5 000</td></tr>
+  <tr><td>⚗ Точность — Accuracy</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>4 000</td></tr>
+  <tr><td>⚗ Яд — Poison</td><td>1 250</td><td>2 500</td><td>3 750</td><td>5 000</td><td>6 250</td></tr>
+  <tr><td>⚗ Возврат — Recovery</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>5 000</td></tr>
+
+  <tr><td colspan="6" style="background:rgba(150,200,255,0.1);font-weight:bold;padding:4px 8px">🎣 Удочка</td></tr>
+  <tr><td>⚗ Приманка — Luring</td><td>1 150</td><td>2 300</td><td>3 450</td><td>4 600</td><td>5 750</td></tr>
+
+  <tr><td colspan="6" style="background:rgba(100,150,255,0.1);font-weight:bold;padding:4px 8px">🛡 Броня</td></tr>
+  <tr><td>⚗ Защита — Protection</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>—</td></tr>
+  <tr><td>Защита от огня</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>—</td></tr>
+  <tr><td>Защита от падений</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>—</td></tr>
+  <tr><td>Защита от взрывов</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>—</td></tr>
+  <tr><td>Защита от снарядов</td><td>1 000</td><td>2 000</td><td>3 000</td><td>4 000</td><td>—</td></tr>
+  <tr><td>Дыхание под водой</td><td>2 450</td><td>4 900</td><td>7 350</td><td>—</td><td>—</td></tr>
+  <tr><td>Сродство с водой</td><td>2 450</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+  <tr><td>Шипы — Thorns</td><td>2 100</td><td>4 200</td><td>6 300</td><td>—</td><td>—</td></tr>
+  <tr><td>⚗ Свободное движение — Free Action</td><td>1 450</td><td>2 900</td><td>4 350</td><td>5 800</td><td>—</td></tr>
+  <tr><td>⚗ Выносливость — Endurance</td><td>800</td><td>1 600</td><td>2 400</td><td>3 200</td><td>—</td></tr>
+  <tr><td>⚗ Скорость — Speed</td><td>1 150</td><td>2 300</td><td>3 450</td><td>4 600</td><td>5 750</td></tr>
+  <tr><td>⚗ Регенерация — Regeneration</td><td>2 100</td><td>4 200</td><td>6 300</td><td>8 400</td><td>10 500</td></tr>
+</table>
+<p style="font-size:0.8em;opacity:0.7">⚗ = MITE-специфичное зачарование</p>
+
+<h2 id="enchantability">Зачаровываемость материалов</h2>
+<p>Чем выше зачаровываемость, тем лучше варианты чар на базовом и изумрудном столах. Для кастомного стола — не важна.</p>
+<table class="compare-table">
+  <tr><th>Значение</th><th>Материалы</th><th>Оценка</th></tr>
+  <tr style="background:rgba(200,150,255,0.15)"><td><strong>100</strong></td><td>Мифрил / Ртуть</td><td>⭐ Лучший</td></tr>
+  <tr style="background:rgba(255,220,0,0.10)"><td><strong>50</strong></td><td>Золото</td><td>Хорошо</td></tr>
+  <tr><td><strong>40</strong></td><td>Адамант / Древний Металл / Кварц</td><td>Среднее</td></tr>
+  <tr><td><strong>35</strong></td><td>Твёрдый Камень</td><td>—</td></tr>
+  <tr><td><strong>30</strong></td><td>Медь / Железо / Серебро / Бронза / ВУС</td><td>Стандарт</td></tr>
+  <tr style="opacity:0.65"><td><strong>10</strong></td><td>Кожа / Дерево / Кость</td><td>Слабое</td></tr>
+</table>
+
+<h2 id="disenchanting">Расколдовывание</h2>
+<p>Получили плохое зачарование? <strong>Бутылка расколдовывания</strong> снимет его — и вернёт вложенный опыт!</p>
+<div class="craft-section">
+  <CraftingGrid recipeOutput="bottle_of_disenchanting" label={{ hu: "Varázstalanítás Palack", en: "Bottle of Disenchanting" }} />
+</div>
+<ul>
+  <li>✅ Снимает зачарования с предметов (опыт возвращается!)</li>
+  <li>✅ Убирает активные эффекты зелий с себя</li>
+  <li>✅ Снимает проклятия ведьм</li>
+  <li>⚠️ НЕ влияет на качество предмета</li>
+</ul>
+<div class="tip">Смотрите также: <a href={`${base}/brewing/`}>Зельеварение</a>.</div>
+
+</div><!-- end ru -->
+
+    </main>
+  </div>
+</BaseLayout>
