@@ -2441,7 +2441,54 @@
         "planks_jungle"
       ]
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "stone_bricks_137",
@@ -6910,7 +6957,7 @@
     "id": "wooden_door_297",
     "item_num": 324,
     "output": "wooden_door",
-    "outputQty": 1,
+    "outputQty": 3,
     "station": "flint_workbench",
     "difficulty": 480,
     "skills": [
@@ -6924,7 +6971,24 @@
       "planks_oak",
       "planks_oak"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "planks_oak",
+        "planks_oak",
+        "_"
+      ],
+      [
+        "planks_oak",
+        "planks_oak",
+        "_"
+      ],
+      [
+        "planks_oak",
+        "planks_oak",
+        "_"
+      ]
+    ]
   },
   {
     "id": "iron_bucket_298",
@@ -7034,7 +7098,7 @@
     "id": "iron_door_303",
     "item_num": 330,
     "output": "iron_door",
-    "outputQty": 1,
+    "outputQty": 3,
     "station": "iron_workbench",
     "difficulty": 4800,
     "skills": [
@@ -7048,7 +7112,24 @@
       "iron_ingot",
       "iron_ingot"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "iron_ingot",
+        "iron_ingot",
+        "_"
+      ],
+      [
+        "iron_ingot",
+        "iron_ingot",
+        "_"
+      ],
+      [
+        "iron_ingot",
+        "iron_ingot",
+        "_"
+      ]
+    ]
   },
   {
     "id": "redstone_dust_304",
@@ -17634,7 +17715,7 @@
     "id": "copper_door_759",
     "item_num": 1111,
     "output": "copper_door",
-    "outputQty": 1,
+    "outputQty": 3,
     "station": "copper_workbench",
     "difficulty": 2400,
     "skills": [
@@ -17648,13 +17729,30 @@
       "copper_ingot",
       "copper_ingot"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "copper_ingot",
+        "copper_ingot",
+        "_"
+      ],
+      [
+        "copper_ingot",
+        "copper_ingot",
+        "_"
+      ],
+      [
+        "copper_ingot",
+        "copper_ingot",
+        "_"
+      ]
+    ]
   },
   {
     "id": "silver_door_760",
     "item_num": 1112,
     "output": "silver_door",
-    "outputQty": 1,
+    "outputQty": 3,
     "station": "silver_workbench",
     "difficulty": 2400,
     "skills": [
@@ -17668,13 +17766,30 @@
       "silver_ingot",
       "silver_ingot"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "silver_ingot",
+        "silver_ingot",
+        "_"
+      ],
+      [
+        "silver_ingot",
+        "silver_ingot",
+        "_"
+      ],
+      [
+        "silver_ingot",
+        "silver_ingot",
+        "_"
+      ]
+    ]
   },
   {
     "id": "gold_door_761",
     "item_num": 1113,
     "output": "gold_door",
-    "outputQty": 1,
+    "outputQty": 3,
     "station": "gold_workbench",
     "difficulty": 2400,
     "skills": [
@@ -17688,13 +17803,30 @@
       "gold_ingot",
       "gold_ingot"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "gold_ingot",
+        "gold_ingot",
+        "_"
+      ],
+      [
+        "gold_ingot",
+        "gold_ingot",
+        "_"
+      ],
+      [
+        "gold_ingot",
+        "gold_ingot",
+        "_"
+      ]
+    ]
   },
   {
     "id": "mithril_door_762",
     "item_num": 1114,
     "output": "mithril_door",
-    "outputQty": 1,
+    "outputQty": 3,
     "station": "mithril_workbench",
     "difficulty": 38400,
     "skills": [
@@ -17708,13 +17840,30 @@
       "mithril_bar",
       "mithril_bar"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "mithril_bar",
+        "mithril_bar",
+        "_"
+      ],
+      [
+        "mithril_bar",
+        "mithril_bar",
+        "_"
+      ],
+      [
+        "mithril_bar",
+        "mithril_bar",
+        "_"
+      ]
+    ]
   },
   {
     "id": "adamantium_door_763",
     "item_num": 1115,
     "output": "adamantium_door",
-    "outputQty": 1,
+    "outputQty": 3,
     "station": "adamantium_workbench",
     "difficulty": 153600,
     "skills": [
@@ -17728,7 +17877,24 @@
       "adamantium_bar",
       "adamantium_bar"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "adamantium_bar",
+        "adamantium_bar",
+        "_"
+      ],
+      [
+        "adamantium_bar",
+        "adamantium_bar",
+        "_"
+      ],
+      [
+        "adamantium_bar",
+        "adamantium_bar",
+        "_"
+      ]
+    ]
   },
   {
     "id": "emerald_shard_764",
@@ -23816,7 +23982,7 @@
     "id": "ancient_metal_door_1054",
     "item_num": 1260,
     "output": "ancient_metal_door",
-    "outputQty": 1,
+    "outputQty": 3,
     "station": "ancient_metal_workbench",
     "difficulty": 9600,
     "skills": [
@@ -23830,7 +23996,24 @@
       "ancient_metal_ingot",
       "ancient_metal_ingot"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "ancient_metal_ingot",
+        "ancient_metal_ingot",
+        "_"
+      ],
+      [
+        "ancient_metal_ingot",
+        "ancient_metal_ingot",
+        "_"
+      ],
+      [
+        "ancient_metal_ingot",
+        "ancient_metal_ingot",
+        "_"
+      ]
+    ]
   },
   {
     "id": "ancient_metal_chain_1055",
@@ -25365,7 +25548,7 @@
     "id": "jungle_door_1113",
     "item_num": 2349,
     "output": "jungle_door",
-    "outputQty": 1,
+    "outputQty": 3,
     "station": "flint_workbench",
     "difficulty": 480,
     "skills": [
@@ -25379,13 +25562,30 @@
       "planks_jungle",
       "planks_jungle"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "planks_jungle",
+        "planks_jungle",
+        "_"
+      ],
+      [
+        "planks_jungle",
+        "planks_jungle",
+        "_"
+      ],
+      [
+        "planks_jungle",
+        "planks_jungle",
+        "_"
+      ]
+    ]
   },
   {
     "id": "birch_door_1114",
     "item_num": 2350,
     "output": "birch_door",
-    "outputQty": 1,
+    "outputQty": 3,
     "station": "flint_workbench",
     "difficulty": 480,
     "skills": [
@@ -25399,13 +25599,30 @@
       "planks_birch",
       "planks_birch"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "planks_birch",
+        "planks_birch",
+        "_"
+      ],
+      [
+        "planks_birch",
+        "planks_birch",
+        "_"
+      ],
+      [
+        "planks_birch",
+        "planks_birch",
+        "_"
+      ]
+    ]
   },
   {
     "id": "spruce_door_1115",
     "item_num": 2351,
     "output": "spruce_door",
-    "outputQty": 1,
+    "outputQty": 3,
     "station": "flint_workbench",
     "difficulty": 480,
     "skills": [
@@ -25419,7 +25636,24 @@
       "planks_spruce",
       "planks_spruce"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "planks_spruce",
+        "planks_spruce",
+        "_"
+      ],
+      [
+        "planks_spruce",
+        "planks_spruce",
+        "_"
+      ],
+      [
+        "planks_spruce",
+        "planks_spruce",
+        "_"
+      ]
+    ]
   },
   {
     "id": "straw_rope_1116",
