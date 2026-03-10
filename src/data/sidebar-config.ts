@@ -17,13 +17,13 @@ export interface SidebarGroups {
   ru: SidebarSection[];
 }
 
-type Category = 'start-here' | 'progression' | 'systems' | 'reference' | 'updates' | 'none';
+type Category = 'start-here' | 'progression' | 'systems' | 'reference' | 'updates' | 'none' | 'enchanting';
 
 function pageToCategory(currentPage: string): Category {
   if (['install', 'introduction', 'quick-start', 'game-modes', 'faq'].includes(currentPage)) return 'start-here';
   if (currentPage === 'progression' || currentPage.startsWith('progression/')) return 'progression';
   if (currentPage === 'systems' || currentPage.startsWith('systems/')) return 'systems';
-  if (['recipes', 'items', 'mobs', 'biomes', 'brewing', 'reference'].includes(currentPage)) return 'reference';
+  if (['recipes', 'items', 'mobs', 'biomes', 'brewing', 'enchanting', 'reference'].includes(currentPage)) return 'reference';
   if (currentPage === 'changelog') return 'updates';
   return 'none';
 }
@@ -85,6 +85,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
           { href: `${base}/mobs/`, label: 'Bestiary' },
           { href: `${base}/biomes/`, label: 'Biome-ok' },
           { href: `${base}/brewing/`, label: 'Főzés' },
+          { href: `${base}/enchanting/`, label: 'Bűvölés' },
           { href: `${base}/reference/`, label: 'Referencia táblák' },
         ],
       },
@@ -142,6 +143,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
           { href: `${base}/mobs/`, label: 'Bestiary' },
           { href: `${base}/biomes/`, label: 'Biomes' },
           { href: `${base}/brewing/`, label: 'Brewing' },
+          { href: `${base}/enchanting/`, label: 'Enchanting' },
           { href: `${base}/reference/`, label: 'Reference tables' },
         ],
       },
@@ -199,6 +201,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
           { href: `${base}/mobs/`, label: 'Бестиарий' },
           { href: `${base}/biomes/`, label: 'Биомы' },
           { href: `${base}/brewing/`, label: 'Зельеварение' },
+          { href: `${base}/enchanting/`, label: 'Зачарование' },
           { href: `${base}/reference/`, label: 'Справочные таблицы' },
         ],
       },

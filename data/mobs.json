@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "zombie",
     "name": {
@@ -6,11 +6,11 @@
       "en": "Zombie",
       "ru": "Зомби"
     },
-    "hp": 20,
+    "hp": 30,
     "dmgMin": 4,
     "dmgMax": 4,
     "dmgType": "melee",
-    "xp": 5,
+    "xp": 15,
     "spawnZones": [
       "surface",
       "underground"
@@ -60,7 +60,9 @@
       "en": "Surface and underground at night. Nehéz mód: below Y=50 also during day.",
       "ru": "Поверхность и под землёй ночью. Сложный режим: ниже Y=50 также днём."
     },
-    "speed": 0.23
+    "speed": 0.23,
+    "mcmod_id": 773874,
+    "preview": "zombie_preview.jpg"
   },
   {
     "id": "skeleton",
@@ -69,7 +71,7 @@
       "en": "Skeleton",
       "ru": "Скелет"
     },
-    "hp": 6,
+    "hp": 12,
     "dmgMin": 4,
     "dmgMax": 4,
     "dmgType": "ranged",
@@ -120,7 +122,9 @@
       "en": "Surface and underground at night.",
       "ru": "Поверхность и под землёй ночью."
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "mcmod_id": 773873,
+    "preview": "skeleton_preview.jpg"
   },
   {
     "id": "creeper",
@@ -181,7 +185,8 @@
       "en": "Surface at night.",
       "ru": "Поверхность ночью."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "preview": "creeper_preview.jpg"
   },
   {
     "id": "spider",
@@ -242,7 +247,8 @@
       "en": "Surface (night) and underground (day and night).",
       "ru": "Поверхность (ночью) и под землёй (днём и ночью)."
     },
-    "speed": 0.21
+    "speed": 0.21,
+    "preview": "spider_preview.jpg"
   },
   {
     "id": "wood_spider",
@@ -251,11 +257,11 @@
       "en": "Wood Spider",
       "ru": "Лесной паук"
     },
-    "hp": 6,
-    "dmgMin": 4,
-    "dmgMax": 4,
+    "hp": 15,
+    "dmgMin": 3,
+    "dmgMax": 3,
     "dmgType": "melee",
-    "xp": 5,
+    "xp": 10,
     "spawnZones": [
       "surface"
     ],
@@ -304,7 +310,9 @@
       "en": "Wooded areas, surface.",
       "ru": "Лесистые районы, поверхность."
     },
-    "speed": 0.8
+    "speed": 0.8,
+    "mcmod_id": 773427,
+    "preview": "wood_spider_preview.jpg"
   },
   {
     "id": "vampire_bat",
@@ -357,7 +365,9 @@
       "en": "Underground World (large numbers). Caves.",
       "ru": "Подземный мир (большое количество). Пещеры."
     },
-    "speed": 0.1
+    "speed": 0.1,
+    "mcmod_id": 773469,
+    "preview": "vampire_bat_preview.jpg"
   },
   {
     "id": "ghoul",
@@ -366,11 +376,11 @@
       "en": "Ghoul",
       "ru": "Гуль"
     },
-    "hp": 20,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 50,
+    "dmgMin": 8,
+    "dmgMax": 8,
     "dmgType": "melee",
-    "xp": 10,
+    "xp": 25,
     "spawnZones": [
       "underground"
     ],
@@ -408,7 +418,9 @@
       "en": "Deep underground; small amounts on surface; anywhere during Blood Moon.",
       "ru": "Глубоко под землёй; небольшое количество на поверхности; везде во время Кровавой луны."
     },
-    "speed": 0.28
+    "speed": 0.28,
+    "mcmod_id": 773418,
+    "preview": "ghoul_preview.jpg"
   },
   {
     "id": "hell_hound",
@@ -460,7 +472,9 @@
       "en": "Dark areas, Nether.",
       "ru": "Тёмные районы, Незер."
     },
-    "speed": 0.4
+    "speed": 0.4,
+    "mcmod_id": 773472,
+    "preview": "hell_hound_preview.jpg"
   },
   {
     "id": "demon_spider",
@@ -469,11 +483,11 @@
       "en": "Demon Spider",
       "ru": "Демонический паук"
     },
-    "hp": 12,
+    "hp": 14,
     "dmgMin": 4,
     "dmgMax": 4,
     "dmgType": "melee",
-    "xp": 15,
+    "xp": 30,
     "spawnZones": [
       "nether"
     ],
@@ -522,7 +536,9 @@
       "en": "Active in daylight. Nehéz mód: below Y=50 and Underground World.",
       "ru": "Активен при дневном свете. Сложный режим: ниже Y=50 и Подземный мир."
     },
-    "speed": 0.21
+    "speed": 0.21,
+    "mcmod_id": 773426,
+    "preview": "demon_spider_preview.jpg"
   },
   {
     "id": "zombie_pigman",
@@ -584,7 +600,8 @@
       "en": "Nether, and rarely on surface after lightning strikes.",
       "ru": "Незер, и редко на поверхности после удара молнии."
     },
-    "speed": 0.5
+    "speed": 0.5,
+    "preview": "zombie_pigman_preview.jpg"
   },
   {
     "id": "soul_spirit",
@@ -636,7 +653,9 @@
       "en": "No current natural spawn mechanism.",
       "ru": "Нет текущего естественного механизма появления."
     },
-    "speed": 0.22
+    "speed": 0.22,
+    "mcmod_id": 772810,
+    "preview": "soul_spirit_preview.jpg"
   },
   {
     "id": "zombie_caller",
@@ -645,7 +664,7 @@
       "en": "Zombie Caller",
       "ru": "Призыватель зомби"
     },
-    "hp": 70,
+    "hp": 150,
     "dmgMin": 5,
     "dmgMax": 5,
     "dmgType": "melee",
@@ -708,7 +727,9 @@
       "en": "More than 50 blocks below surface.",
       "ru": "Более 50 блоков ниже поверхности."
     },
-    "speed": 0.23
+    "speed": 0.23,
+    "mcmod_id": 772895,
+    "preview": "zombie_caller_preview.jpg"
   },
   {
     "id": "dire_wolf",
@@ -769,7 +790,9 @@
       "en": "Taiga or ice plains biomes.",
       "ru": "Биомы тайги или ледяных равнин."
     },
-    "speed": 0.4
+    "speed": 0.4,
+    "mcmod_id": 773473,
+    "preview": "dire_wolf_preview.jpg"
   },
   {
     "id": "wight",
@@ -778,11 +801,11 @@
       "en": "Wight",
       "ru": "Вайт"
     },
-    "hp": 30,
-    "dmgMin": 7,
-    "dmgMax": 7,
+    "hp": 50,
+    "dmgMin": 8,
+    "dmgMax": 8,
     "dmgType": "melee",
-    "xp": 15,
+    "xp": 25,
     "spawnZones": [
       "underground"
     ],
@@ -830,7 +853,9 @@
       "en": "Blood Moon: surface; Y=0–40 (higher chance deeper). Nehéz mód below Y=50.",
       "ru": "Кровавая луна: поверхность; Y=0–40 (больший шанс глубже). Сложный режим ниже Y=50."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "mcmod_id": 773420,
+    "preview": "wight_preview.jpg"
   },
   {
     "id": "wight_guard",
@@ -839,11 +864,11 @@
       "en": "Wight Guard",
       "ru": "Страж-вайт"
     },
-    "hp": 24,
+    "hp": 35,
     "dmgMin": 8,
     "dmgMax": 8,
     "dmgType": "melee",
-    "xp": 25,
+    "xp": 35,
     "spawnZones": [
       "underground"
     ],
@@ -891,7 +916,9 @@
       "en": "Deep underground (Underground World).",
       "ru": "Глубоко под землёй (Подземный мир)."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "mcmod_id": 799319,
+    "preview": "wight_guard_preview.jpg"
   },
   {
     "id": "black_widow_spider",
@@ -900,11 +927,11 @@
       "en": "Black Widow Spider",
       "ru": "Паук чёрная вдова"
     },
-    "hp": 12,
-    "dmgMin": 4,
-    "dmgMax": 4,
+    "hp": 30,
+    "dmgMin": 5,
+    "dmgMax": 5,
     "dmgType": "melee",
-    "xp": 8,
+    "xp": 20,
     "spawnZones": [
       "underground"
     ],
@@ -952,7 +979,9 @@
       "en": "Rare spawn. Nehéz mód: below Y=50.",
       "ru": "Редкое появление. Сложный режим: ниже Y=50."
     },
-    "speed": 0.8
+    "speed": 0.8,
+    "mcmod_id": 773425,
+    "preview": "black_widow_spider_preview.jpg"
   },
   {
     "id": "witch",
@@ -1023,7 +1052,8 @@
       "en": "Witch huts and underground areas.",
       "ru": "Хижины ведьм и подземные районы."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "preview": "witch_preview.jpg"
   },
   {
     "id": "pillager",
@@ -1082,7 +1112,9 @@
       "en": "Pillager Outpost.",
       "ru": "Аванпост разбойников."
     },
-    "speed": 0.35
+    "speed": 0.35,
+    "mcmod_id": 777343,
+    "preview": "pillager_preview.jpg"
   },
   {
     "id": "nether_creeper",
@@ -1134,7 +1166,8 @@
       "en": "Below Y=20 on surface and in Underground World.",
       "ru": "Ниже Y=20 на поверхности и в Подземном мире."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "mcmod_id": 773429
   },
   {
     "id": "red_blaze",
@@ -1197,7 +1230,9 @@
       "en": "Nether Fortress, light level ≤ 11.",
       "ru": "Незерская крепость, уровень освещения ≤ 11."
     },
-    "speed": 0.21
+    "speed": 0.21,
+    "mcmod_id": 772811,
+    "preview": "red_blaze_preview.jpg"
   },
   {
     "id": "earth_elemental",
@@ -1206,9 +1241,9 @@
       "en": "Earth Elemental",
       "ru": "Земляной элементаль"
     },
-    "hp": 30,
-    "dmgMin": 12,
-    "dmgMax": 12,
+    "hp": 40,
+    "dmgMin": 7,
+    "dmgMax": 7,
     "dmgType": "melee",
     "xp": 15,
     "spawnZones": [
@@ -1248,7 +1283,9 @@
       "en": "Same depth as Wights. Depends on block type beneath it.",
       "ru": "Та же глубина, что и у вайтов. Зависит от типа блока под ним."
     },
-    "speed": 0.2
+    "speed": 0.2,
+    "mcmod_id": 773431,
+    "preview": "earth_elemental_preview.jpg"
   },
   {
     "id": "giant_vampire_bat",
@@ -1301,7 +1338,9 @@
       "en": "Underground World.",
       "ru": "Подземный мир."
     },
-    "speed": 0.1
+    "speed": 0.1,
+    "mcmod_id": 773471,
+    "preview": "giant_vampire_bat_preview.jpg"
   },
   {
     "id": "invisible_stalker",
@@ -1310,11 +1349,11 @@
       "en": "Invisible Stalker",
       "ru": "Невидимый преследователь"
     },
-    "hp": 20,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 40,
+    "dmgMin": 8,
+    "dmgMax": 8,
     "dmgType": "melee",
-    "xp": 10,
+    "xp": 20,
     "spawnZones": [
       "underground"
     ],
@@ -1353,7 +1392,9 @@
       "en": "Underground World; darkest underground areas. Blood Moon: deserts.",
       "ru": "Подземный мир; самые тёмные подземные районы. Кровавая луна: пустыни."
     },
-    "speed": 0.23
+    "speed": 0.23,
+    "mcmod_id": 773417,
+    "preview": "invisible_stalker_preview.jpg"
   },
   {
     "id": "phase_spider",
@@ -1362,11 +1403,11 @@
       "en": "Phase Spider",
       "ru": "Фазовый паук"
     },
-    "hp": 6,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "hp": 30,
+    "dmgMin": 5,
+    "dmgMax": 5,
     "dmgType": "melee",
-    "xp": 10,
+    "xp": 30,
     "spawnZones": [
       "underground"
     ],
@@ -1415,7 +1456,9 @@
       "en": "Small numbers below Y=40. Massively in Underground World.",
       "ru": "Небольшое количество ниже Y=40. Массово в Подземном мире."
     },
-    "speed": 0.8
+    "speed": 0.8,
+    "mcmod_id": 773428,
+    "preview": "phase_spider_preview.jpg"
   },
   {
     "id": "fire_elemental",
@@ -1424,11 +1467,11 @@
       "en": "Fire Elemental",
       "ru": "Огненный элементаль"
     },
-    "hp": 20,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 40,
+    "dmgMin": 6,
+    "dmgMax": 6,
     "dmgType": "melee",
-    "xp": 15,
+    "xp": 25,
     "spawnZones": [
       "nether"
     ],
@@ -1467,7 +1510,9 @@
       "en": "Shallow lava pools and flowing lava in Overworld. Lava lakes in Nether.",
       "ru": "Мелкие лавовые бассейны и текущая лава в Обычном мире. Лавовые озёра в Незере."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "mcmod_id": 773430,
+    "preview": "fire_elemental_preview.jpg"
   },
   {
     "id": "greater_ghast",
@@ -1538,11 +1583,11 @@
       "en": "Pillager Captain",
       "ru": "Капитан разбойников"
     },
-    "hp": 60,
+    "hp": 220,
     "dmgMin": 8,
     "dmgMax": 8,
     "dmgType": "ranged",
-    "xp": 10,
+    "xp": 500,
     "spawnZones": [
       "surface"
     ],
@@ -1610,7 +1655,9 @@
       "en": "Pillager Outpost (captain variant).",
       "ru": "Аванпост разбойников (вариант капитана)."
     },
-    "speed": 0.35
+    "speed": 0.35,
+    "mcmod_id": 777344,
+    "preview": "pillager_captain_preview.jpg"
   },
   {
     "id": "zealot",
@@ -1732,7 +1779,8 @@
       "en": "Plains biomes.",
       "ru": "Биомы равнин."
     },
-    "speed": 0.35
+    "speed": 0.35,
+    "mcmod_id": 772892
   },
   {
     "id": "zealot_snowy",
@@ -1793,7 +1841,8 @@
       "en": "Snowy biomes.",
       "ru": "Снежные биомы."
     },
-    "speed": 0.35
+    "speed": 0.35,
+    "mcmod_id": 772891
   },
   {
     "id": "zealot_jungle",
@@ -1863,9 +1912,9 @@
       "en": "Bone Lord",
       "ru": "Костяной лорд"
     },
-    "hp": 20,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 40,
+    "dmgMin": 10,
+    "dmgMax": 10,
     "dmgType": "melee",
     "xp": 25,
     "spawnZones": [
@@ -1905,7 +1954,9 @@
       "en": "Blood Moon: chance on surface. Underground World spawner.",
       "ru": "Кровавая луна: шанс на поверхности. Спавнер Подземного мира."
     },
-    "speed": 0.26
+    "speed": 0.26,
+    "mcmod_id": 773423,
+    "preview": "bone_lord_preview.jpg"
   },
   {
     "id": "ancient_bone_lord",
@@ -1914,9 +1965,9 @@
       "en": "Ancient Bone Lord",
       "ru": "Древний костяной лорд"
     },
-    "hp": 24,
-    "dmgMin": 8,
-    "dmgMax": 8,
+    "hp": 40,
+    "dmgMin": 10,
+    "dmgMax": 10,
     "dmgType": "melee",
     "xp": 30,
     "spawnZones": [
@@ -1957,7 +2008,9 @@
       "en": "Underground World only.",
       "ru": "Только Подземный мир."
     },
-    "speed": 0.27
+    "speed": 0.27,
+    "mcmod_id": 773424,
+    "preview": "ancient_bone_lord_preview.jpg"
   },
   {
     "id": "white_ghoul",
@@ -1966,11 +2019,11 @@
       "en": "White Ghoul",
       "ru": "Белый гуль"
     },
-    "hp": 20,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 50,
+    "dmgMin": 8,
+    "dmgMax": 8,
     "dmgType": "melee",
-    "xp": 10,
+    "xp": 25,
     "spawnZones": [
       "underground"
     ],
@@ -2006,7 +2059,9 @@
       "en": "Cold/snowy biomes.",
       "ru": "Холодные/снежные биомы."
     },
-    "speed": 0.28
+    "speed": 0.28,
+    "mcmod_id": 773418,
+    "preview": "white_ghoul_preview.jpg"
   },
   {
     "id": "black_ghoul",
@@ -2015,11 +2070,11 @@
       "en": "Black Ghoul",
       "ru": "Чёрный гуль"
     },
-    "hp": 20,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 50,
+    "dmgMin": 8,
+    "dmgMax": 8,
     "dmgType": "melee",
-    "xp": 10,
+    "xp": 25,
     "spawnZones": [
       "underground"
     ],
@@ -2055,7 +2110,9 @@
       "en": "Vanishes in sunlight. Deep underground.",
       "ru": "Исчезает на солнечном свету. Глубоко под землёй."
     },
-    "speed": 0.28
+    "speed": 0.28,
+    "mcmod_id": 773419,
+    "preview": "black_ghoul_preview.jpg"
   },
   {
     "id": "shadow",
@@ -2064,9 +2121,9 @@
       "en": "Shadow",
       "ru": "Тень"
     },
-    "hp": 20,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 50,
+    "dmgMin": 8,
+    "dmgMax": 8,
     "dmgType": "melee",
     "xp": 25,
     "spawnZones": [
@@ -2106,7 +2163,9 @@
       "en": "Deeper than Ghouls. Blood Moon: ice plains. Underground World.",
       "ru": "Глубже гулей. Кровавая луна: ледяные равнины. Подземный мир."
     },
-    "speed": 0.23
+    "speed": 0.23,
+    "mcmod_id": 773419,
+    "preview": "shadow_preview.jpg"
   },
   {
     "id": "revenant",
@@ -2115,11 +2174,11 @@
       "en": "Revenant",
       "ru": "Ревенант"
     },
-    "hp": 12,
-    "dmgMin": 6,
-    "dmgMax": 6,
+    "hp": 60,
+    "dmgMin": 10,
+    "dmgMax": 10,
     "dmgType": "melee",
-    "xp": 15,
+    "xp": 35,
     "spawnZones": [
       "underground"
     ],
@@ -2167,7 +2226,9 @@
       "en": "Underground World only. Large numbers in Longdead dungeons.",
       "ru": "Только Подземный мир. Большое количество в данжах нежити."
     },
-    "speed": 0.26
+    "speed": 0.26,
+    "mcmod_id": 773421,
+    "preview": "revenant_preview.jpg"
   },
   {
     "id": "brown_slime",
@@ -2216,7 +2277,9 @@
       "en": "Deep underground.",
       "ru": "Глубоко под землёй."
     },
-    "speed": 0.1
+    "speed": 0.1,
+    "mcmod_id": 773435,
+    "preview": "brown_slime_preview.jpg"
   },
   {
     "id": "red_slime",
@@ -2267,7 +2330,9 @@
       "en": "Underground.",
       "ru": "Под землёй."
     },
-    "speed": 0.1
+    "speed": 0.1,
+    "mcmod_id": 773432,
+    "preview": "red_slime_preview.jpg"
   },
   {
     "id": "grey_slime",
@@ -2316,7 +2381,9 @@
       "en": "Underground, appears when mining stone or ores.",
       "ru": "Под землёй, появляется при добыче камня или руд."
     },
-    "speed": 0.1
+    "speed": 0.1,
+    "mcmod_id": 773433,
+    "preview": "grey_slime_preview.jpg"
   },
   {
     "id": "black_slime",
@@ -2367,7 +2434,9 @@
       "en": "Deep underground.",
       "ru": "Глубоко под землёй."
     },
-    "speed": 0.1
+    "speed": 0.1,
+    "mcmod_id": 773434,
+    "preview": "black_slime_preview.jpg"
   },
   {
     "id": "shadow_bat",
@@ -2419,7 +2488,9 @@
       "en": "Underground World. Vanishes in sunlight.",
       "ru": "Подземный мир. Исчезает на солнечном свету."
     },
-    "speed": 0.23
+    "speed": 0.23,
+    "mcmod_id": 773470,
+    "preview": "shadow_bat_preview.jpg"
   },
   {
     "id": "explosive_silverfish",
@@ -2471,7 +2542,9 @@
       "en": "Nether, hidden inside netherrack.",
       "ru": "Незер, спрятан внутри незерака."
     },
-    "speed": 0.6
+    "speed": 0.6,
+    "mcmod_id": 773437,
+    "preview": "explosive_silverfish_preview.jpg"
   },
   {
     "id": "copper_poison_silverfish",
@@ -2523,7 +2596,9 @@
       "en": "When mining copper ore; rarely in stone blocks in deep mine shafts.",
       "ru": "При добыче медной руды; редко в каменных блоках в глубоких шахтах."
     },
-    "speed": 0.6
+    "speed": 0.6,
+    "mcmod_id": 773438,
+    "preview": "copper_poison_silverfish_preview.jpg"
   },
   {
     "id": "ancient_silverfish",
@@ -2575,7 +2650,9 @@
       "en": "Underground World, infested stone bricks.",
       "ru": "Подземный мир, заражённые каменные кирпичи."
     },
-    "speed": 0.6
+    "speed": 0.6,
+    "mcmod_id": 773663,
+    "preview": "ancient_silverfish_preview.jpg"
   },
   {
     "id": "clay_golem",
@@ -2633,11 +2710,11 @@
       "en": "Skeleton Lord",
       "ru": "Скелет-лорд"
     },
-    "hp": 20,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 40,
+    "dmgMin": 10,
+    "dmgMax": 10,
     "dmgType": "melee",
-    "xp": 15,
+    "xp": 25,
     "spawnZones": [
       "underground"
     ],
@@ -2685,7 +2762,9 @@
       "en": "Blood Moon: chance on surface. Underground World: always spawns one.",
       "ru": "Кровавая луна: шанс на поверхности. Подземный мир: всегда появляется один."
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "mcmod_id": 773423,
+    "preview": "skeleton_lord_preview.jpg"
   },
   {
     "id": "ancient_skeleton_lord",
@@ -2694,9 +2773,9 @@
       "en": "Ancient Skeleton Lord",
       "ru": "Древний скелет-лорд"
     },
-    "hp": 24,
-    "dmgMin": 8,
-    "dmgMax": 8,
+    "hp": 40,
+    "dmgMin": 10,
+    "dmgMax": 10,
     "dmgType": "melee",
     "xp": 30,
     "spawnZones": [
@@ -2747,7 +2826,9 @@
       "en": "Underground World only.",
       "ru": "Только Подземный мир."
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "mcmod_id": 773424,
+    "preview": "ancient_skeleton_lord_preview.jpg"
   },
   {
     "id": "variant_skeleton_lord",
@@ -2809,7 +2890,9 @@
       "en": "Underground World only.",
       "ru": "Только Подземный мир."
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "mcmod_id": 799445,
+    "preview": "variant_skeleton_lord_preview.jpg"
   },
   {
     "id": "obsidian_golem",
@@ -2860,7 +2943,9 @@
       "en": "More than 40 blocks below surface.",
       "ru": "Более 40 блоков ниже поверхности."
     },
-    "speed": 0.22
+    "speed": 0.22,
+    "mcmod_id": 772894,
+    "preview": "obsidian_golem_preview.jpg"
   },
   {
     "id": "plains_zombie",
@@ -2911,7 +2996,9 @@
       "en": "Plains biomes.",
       "ru": "Биомы равнин."
     },
-    "speed": 0.23
+    "speed": 0.23,
+    "mcmod_id": 772889,
+    "preview": "plains_zombie_preview.jpg"
   },
   {
     "id": "plains_skeleton",
@@ -2920,11 +3007,11 @@
       "en": "Plains Skeleton",
       "ru": "Равнинный скелет"
     },
-    "hp": 6,
+    "hp": 10,
     "dmgMin": 4,
     "dmgMax": 4,
     "dmgType": "ranged",
-    "xp": 5,
+    "xp": 20,
     "spawnZones": [
       "surface"
     ],
@@ -2970,7 +3057,9 @@
       "en": "Plains biomes.",
       "ru": "Биомы равнин."
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "mcmod_id": 772888,
+    "preview": "plains_skeleton_preview.jpg"
   },
   {
     "id": "plains_creeper",
@@ -2979,11 +3068,11 @@
       "en": "Plains Creeper",
       "ru": "Равнинный крипер"
     },
-    "hp": 20,
+    "hp": 25,
     "dmgMin": 3,
     "dmgMax": 20,
     "dmgType": "explosion",
-    "xp": 5,
+    "xp": 15,
     "spawnZones": [
       "surface"
     ],
@@ -3021,7 +3110,9 @@
       "en": "Plains biomes.",
       "ru": "Биомы равнин."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "mcmod_id": 772890,
+    "preview": "plains_creeper_preview.jpg"
   },
   {
     "id": "plains_spider",
@@ -3030,11 +3121,11 @@
       "en": "Plains Spider",
       "ru": "Равнинный паук"
     },
-    "hp": 12,
-    "dmgMin": 4,
-    "dmgMax": 4,
+    "hp": 15,
+    "dmgMin": 6,
+    "dmgMax": 6,
     "dmgType": "melee",
-    "xp": 5,
+    "xp": 15,
     "spawnZones": [
       "surface"
     ],
@@ -3082,7 +3173,9 @@
       "en": "Plains biomes.",
       "ru": "Биомы равнин."
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "mcmod_id": 772887,
+    "preview": "plains_spider_preview.jpg"
   },
   {
     "id": "snowy_zombie",
@@ -3143,7 +3236,9 @@
       "en": "Snowy biomes.",
       "ru": "Снежные биомы."
     },
-    "speed": 0.23
+    "speed": 0.23,
+    "mcmod_id": 772886,
+    "preview": "snowy_zombie_preview.jpg"
   },
   {
     "id": "snowy_skeleton",
@@ -3202,7 +3297,9 @@
       "en": "Snowy biomes.",
       "ru": "Снежные биомы."
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "mcmod_id": 772815,
+    "preview": "snowy_skeleton_preview.jpg"
   },
   {
     "id": "snowy_creeper",
@@ -3263,7 +3360,9 @@
       "en": "Snowy biomes.",
       "ru": "Снежные биомы."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "mcmod_id": 772816,
+    "preview": "snowy_creeper_preview.jpg"
   },
   {
     "id": "snowy_spider",
@@ -3325,7 +3424,9 @@
       "en": "Snowy biomes.",
       "ru": "Снежные биомы."
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "mcmod_id": 772814,
+    "preview": "snowy_spider_preview.jpg"
   },
   {
     "id": "jungle_zombie",
@@ -3619,7 +3720,9 @@
       "en": "Below Y=30 in caves/mines. [Removed]",
       "ru": "Ниже Y=30 в пещерах/шахтах. [Удалён]"
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "mcmod_id": 771963,
+    "preview": "tnt_skeleton_preview.jpg"
   },
   {
     "id": "confused_creeper",
@@ -3670,7 +3773,9 @@
       "en": "Nighttime, plains and jungle biomes.",
       "ru": "Ночное время, биомы равнин и джунглей."
     },
-    "speed": 0.24
+    "speed": 0.24,
+    "mcmod_id": 771968,
+    "preview": "confused_creeper_preview.jpg"
   },
   {
     "id": "end_lightning_creeper",
@@ -3721,7 +3826,9 @@
       "en": "Thunderstorm/rainstorm weather only.",
       "ru": "Только во время грозы."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "mcmod_id": 773665,
+    "preview": "end_lightning_creeper_preview.jpg"
   },
   {
     "id": "little_creeper",
@@ -3772,7 +3879,9 @@
       "en": "Same as vanilla creeper.",
       "ru": "Аналогично ванильному криперу."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "mcmod_id": 772806,
+    "preview": "little_creeper_preview.jpg"
   },
   {
     "id": "bomber",
@@ -3824,7 +3933,9 @@
       "en": "No current natural spawn mechanism.",
       "ru": "Нет текущего естественного механизма появления."
     },
-    "speed": 0.21
+    "speed": 0.21,
+    "mcmod_id": 773666,
+    "preview": "bomber_preview.jpg"
   },
   {
     "id": "corrupted_snowman",
@@ -3875,7 +3986,9 @@
       "en": "Snowy biomes.",
       "ru": "Снежные биомы."
     },
-    "speed": 0.23
+    "speed": 0.23,
+    "mcmod_id": 772893,
+    "preview": "corrupted_snowman_preview.jpg"
   },
   {
     "id": "desert_guardian",
@@ -3934,7 +4047,9 @@
       "en": "Desert Temples.",
       "ru": "Пустынные храмы."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "mcmod_id": 772813,
+    "preview": "desert_guardian_preview.jpg"
   },
   {
     "id": "pigman_leader",
@@ -4045,7 +4160,9 @@
       "en": "Randomly on surface and in Underground World.",
       "ru": "Случайно на поверхности и в Подземном мире."
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "mcmod_id": 772809,
+    "preview": "child_skeleton_preview.jpg"
   },
   {
     "id": "child_iron_golem",
@@ -4146,7 +4263,9 @@
       "en": "Nether (random spawn).",
       "ru": "Незер (случайное появление)."
     },
-    "speed": 0.11
+    "speed": 0.11,
+    "mcmod_id": 772807,
+    "preview": "child_ghast_preview.jpg"
   },
   {
     "id": "variant_child_ghast",
@@ -4198,7 +4317,9 @@
       "en": "Nether (random spawn).",
       "ru": "Незер (случайное появление)."
     },
-    "speed": 0.11
+    "speed": 0.11,
+    "mcmod_id": 772808,
+    "preview": "variant_child_ghast_preview.jpg"
   },
   {
     "id": "variant_zombie",
@@ -4250,7 +4371,9 @@
       "en": "Blood Moon event only.",
       "ru": "Только во время события Кровавой луны."
     },
-    "speed": 0.23
+    "speed": 0.23,
+    "mcmod_id": 764750,
+    "preview": "variant_zombie_preview.jpg"
   },
   {
     "id": "variant_skeleton",
@@ -4310,7 +4433,9 @@
       "en": "Blood Moon event only.",
       "ru": "Только событие Кровавой луны."
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "mcmod_id": 764751,
+    "preview": "variant_skeleton_preview.jpg"
   },
   {
     "id": "variant_spider",
@@ -4373,7 +4498,8 @@
       "en": "Blood Moon event only.",
       "ru": "Только событие Кровавой луны."
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "preview": "variant_spider_preview.jpg"
   },
   {
     "id": "variant_creeper",
@@ -4424,7 +4550,9 @@
       "en": "Blood Moon event only.",
       "ru": "Только событие Кровавой луны."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "mcmod_id": 771964,
+    "preview": "variant_creeper_preview.jpg"
   },
   {
     "id": "him",
@@ -4477,7 +4605,9 @@
       "en": "Underground World, randomly near the player.",
       "ru": "Подземный мир, случайно вблизи игрока."
     },
-    "speed": 0.21
+    "speed": 0.21,
+    "mcmod_id": 772812,
+    "preview": "him_preview.jpg"
   },
   {
     "id": "slime",
@@ -4526,7 +4656,8 @@
       "en": "Wet caves, swamps, randomly below Y=40.",
       "ru": "Влажные пещеры, болота, случайно ниже Y=40."
     },
-    "speed": 0.1
+    "speed": 0.1,
+    "preview": "slime_preview.jpg"
   },
   {
     "id": "ghast",
@@ -4588,7 +4719,8 @@
       "en": "Nether (open areas).",
       "ru": "Незер (открытые районы)."
     },
-    "speed": 0.1
+    "speed": 0.1,
+    "preview": "ghast_preview.jpg"
   },
   {
     "id": "cave_spider",
@@ -4649,7 +4781,8 @@
       "en": "Mine shafts, hiding in stone blocks.",
       "ru": "Шахты, спрятан в каменных блоках."
     },
-    "speed": 0.21
+    "speed": 0.21,
+    "preview": "cave_spider_preview.jpg"
   },
   {
     "id": "blaze",
@@ -4702,7 +4835,8 @@
       "en": "Nether Fortress.",
       "ru": "Незерская крепость."
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "preview": "blaze_preview.jpg"
   },
   {
     "id": "magma_cube",
@@ -4753,7 +4887,9 @@
       "en": "Nether, near lava.",
       "ru": "Незер, вблизи лавы."
     },
-    "speed": 0.2
+    "speed": 0.2,
+    "mcmod_id": 773436,
+    "preview": "magma_cube_preview.jpg"
   },
   {
     "id": "wither",
@@ -4806,7 +4942,8 @@
       "en": "Player-summoned (3 Wither skulls + soul sand).",
       "ru": "Призывается игроком (3 черепа Иссушителя + песок душ)."
     },
-    "speed": 0.6
+    "speed": 0.6,
+    "preview": "wither_preview.jpg"
   },
   {
     "id": "enderman",
@@ -4857,7 +4994,8 @@
       "en": "Surface (night), Nether, End dimension.",
       "ru": "Поверхность (ночью), Незер, измерение Края."
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "preview": "enderman_preview.jpg"
   },
   {
     "id": "silverfish",
@@ -4867,8 +5005,8 @@
       "ru": "Чешуйница"
     },
     "hp": 8,
-    "dmgMin": 1,
-    "dmgMax": 1,
+    "dmgMin": 3,
+    "dmgMax": 3,
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
@@ -4897,7 +5035,9 @@
       "en": "In infested stone blocks when mined.",
       "ru": "В заражённых каменных блоках при добыче."
     },
-    "speed": 0.6
+    "speed": 0.6,
+    "mcmod_id": 773439,
+    "preview": "silverfish_preview.jpg"
   },
   {
     "id": "ender_dragon",
@@ -4959,7 +5099,8 @@
       "en": "End dimension only.",
       "ru": "Только измерение Края."
     },
-    "speed": 0.1
+    "speed": 0.1,
+    "preview": "ender_dragon_preview.jpg"
   },
   {
     "id": "iron_golem",
@@ -5018,7 +5159,8 @@
       "en": "Naturally in villages; player-constructable.",
       "ru": "Естественно в деревнях; игрок может создать."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "preview": "iron_golem_preview.jpg"
   },
   {
     "id": "vindicator",
@@ -5077,7 +5219,9 @@
       "en": "Added in v0.9.0.",
       "ru": "Добавлен в v0.9.0."
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "mcmod_id": 831516,
+    "preview": "vindicator_preview.jpg"
   },
   {
     "id": "earthworm",
@@ -5126,7 +5270,9 @@
       "en": "When mining grass/dirt blocks (3%).",
       "ru": "При добыче блоков травы/земли (3%)."
     },
-    "speed": 0.18
+    "speed": 0.18,
+    "mcmod_id": 771956,
+    "preview": "earthworm_preview.jpg"
   },
   {
     "id": "crab",
@@ -5185,7 +5331,9 @@
       "en": "On sand near rivers.",
       "ru": "На песке вблизи рек."
     },
-    "speed": 0.23
+    "speed": 0.23,
+    "mcmod_id": 771954,
+    "preview": "crab_preview.jpg"
   },
   {
     "id": "mallard",
@@ -5236,7 +5384,9 @@
       "en": "Plains and jungle biomes.",
       "ru": "Биомы равнин и джунглей."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "mcmod_id": 771962,
+    "preview": "mallard_preview.jpg"
   },
   {
     "id": "pig",
@@ -5285,7 +5435,8 @@
       "en": "Plains, forest, any grassy biome.",
       "ru": "Равнины, лес, любой травянистый биом."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "preview": "pig_preview.jpg"
   },
   {
     "id": "sheep",
@@ -5344,7 +5495,8 @@
       "en": "Plains, forest, any grassy biome.",
       "ru": "Равнины, лес, любой травянистый биом."
     },
-    "speed": 0.23
+    "speed": 0.23,
+    "preview": "sheep_preview.jpg"
   },
   {
     "id": "cow",
@@ -5403,7 +5555,8 @@
       "en": "Plains, forest, any grassy biome.",
       "ru": "Равнины, лес, любой травянистый биом."
     },
-    "speed": 0.2
+    "speed": 0.2,
+    "preview": "cow_preview.jpg"
   },
   {
     "id": "chicken",
@@ -5464,7 +5617,8 @@
       "en": "Plains, forest, any grassy biome.",
       "ru": "Равнины, лес, любой травянистый биом."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "preview": "chicken_preview.jpg"
   },
   {
     "id": "wolf",
@@ -5504,7 +5658,8 @@
       "en": "Taiga, forest biomes.",
       "ru": "Биомы тайги, леса."
     },
-    "speed": 0.4
+    "speed": 0.4,
+    "preview": "wolf_preview.jpg"
   },
   {
     "id": "mooshroom",
@@ -5573,7 +5728,8 @@
       "en": "Mushroom field biome only.",
       "ru": "Только биом грибного поля."
     },
-    "speed": 0.2
+    "speed": 0.2,
+    "preview": "mooshroom_preview.jpg"
   },
   {
     "id": "ocelot",
@@ -5611,7 +5767,8 @@
       "en": "Jungle biomes.",
       "ru": "Биомы джунглей."
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "preview": "ocelot_preview.jpg"
   },
   {
     "id": "horse",
@@ -5660,7 +5817,8 @@
       "en": "Plains, savanna biomes.",
       "ru": "Биомы равнин, саванны."
     },
-    "speed": 0.2
+    "speed": 0.2,
+    "preview": "horse_preview.jpg"
   },
   {
     "id": "medium_fish",
@@ -5767,7 +5925,9 @@
       "en": "Plains, forest, plateau, swamp biomes.",
       "ru": "Биомы равнин, леса, плато, болота."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "mcmod_id": 808647,
+    "preview": "turkey_preview.jpg"
   },
   {
     "id": "scorpion",
@@ -5818,7 +5978,9 @@
       "en": "Desert biomes.",
       "ru": "Пустынные биомы."
     },
-    "speed": 1.0
+    "speed": 1.0,
+    "mcmod_id": 808648,
+    "preview": "scorpion_preview.jpg"
   },
   {
     "id": "rat",
@@ -5870,7 +6032,9 @@
       "en": "Plains and forest biomes.",
       "ru": "Биомы равнин и леса."
     },
-    "speed": 0.7
+    "speed": 0.7,
+    "mcmod_id": 804408,
+    "preview": "rat_preview.jpg"
   },
   {
     "id": "shark",
@@ -5919,7 +6083,9 @@
       "en": "Ocean biomes.",
       "ru": "Биомы океана."
     },
-    "speed": 0.3
+    "speed": 0.3,
+    "mcmod_id": 808641,
+    "preview": "shark_preview.jpg"
   },
   {
     "id": "bee",
@@ -5970,7 +6136,89 @@
       "hu": "Erdők és dzsungelek, virágok közelén.",
       "en": "Forests and jungles, near flower patches.",
       "ru": "Леса и джунгли, вблизи цветочных полян."
-    }
+    },
+    "mcmod_id": 808649,
+    "preview": "bee_preview.jpg"
+  },
+  {
+    "id": "butterfly",
+    "name": {
+      "hu": "Pillangó",
+      "en": "Butterfly",
+      "ru": "Бабочка"
+    },
+    "hp": 1,
+    "dmgMin": 0,
+    "dmgMax": 0,
+    "xp": 0,
+    "armor": 0,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "mobType": "animal",
+    "tags": [
+      "flying",
+      "passive"
+    ],
+    "description": {
+      "hu": "Apró, ártalmatlan pillangó, amely réteken és erdőkben röpköd. Nem támad, egyszerűen csak díszíti a tájat.",
+      "en": "A tiny, harmless butterfly fluttering across meadows and forests. It does not attack and simply adds life to the scenery.",
+      "ru": "Крошечная безобидная бабочка, порхающая по лугам и лесам. Не атакует и просто украшает пейзаж."
+    },
+    "spawnInfo": {
+      "hu": "Felszín, rétek és erdők.",
+      "en": "Surface, meadows and forests.",
+      "ru": "Поверхность, луга и леса."
+    },
+    "special": {
+      "hu": "Passzív, nem támad.",
+      "en": "Passive, does not attack.",
+      "ru": "Пассивная, не атакует."
+    },
+    "drops": [],
+    "mcmod_id": 808650,
+    "preview": "butterfly_preview.jpg"
+  },
+  {
+    "id": "fly",
+    "name": {
+      "hu": "Légy",
+      "en": "Fly",
+      "ru": "Муха"
+    },
+    "hp": 1,
+    "dmgMin": 0,
+    "dmgMax": 0,
+    "xp": 0,
+    "armor": 0,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "mobType": "animal",
+    "tags": [
+      "flying",
+      "passive"
+    ],
+    "description": {
+      "hu": "Apró, ártalmatlan légy, amely a felszínen röpköd. Nem támad.",
+      "en": "A tiny, harmless fly buzzing around the surface. Does not attack.",
+      "ru": "Крошечная безобидная муха, жужжащая на поверхности. Не атакует."
+    },
+    "spawnInfo": {
+      "hu": "Felszín.",
+      "en": "Surface.",
+      "ru": "Поверхность."
+    },
+    "special": {
+      "hu": "Passzív, nem támad.",
+      "en": "Passive, does not attack.",
+      "ru": "Пассивная, не атакует."
+    },
+    "drops": [],
+    "mcmod_id": 808642,
+    "preview": "fly_preview.jpg"
   },
   {
     "id": "coyote",
@@ -6031,7 +6279,9 @@
       "en": "Plateau and forest biomes.",
       "ru": "Биомы плато и леса."
     },
-    "speed": 0.38
+    "speed": 0.38,
+    "mcmod_id": 808652,
+    "preview": "coyote_preview.jpg"
   },
   {
     "id": "cougar",
@@ -6090,7 +6340,9 @@
       "en": "Plains, plateau, forest, desert biomes.",
       "ru": "Биомы равнин, плато, леса, пустыни."
     },
-    "speed": 0.38
+    "speed": 0.38,
+    "mcmod_id": 808651,
+    "preview": "cougar_preview.jpg"
   },
   {
     "id": "black_bear",
@@ -6159,7 +6411,9 @@
       "en": "Forest and swamp biomes.",
       "ru": "Биомы леса и болота."
     },
-    "speed": 0.28
+    "speed": 0.28,
+    "mcmod_id": 808653,
+    "preview": "black_bear_preview.jpg"
   },
   {
     "id": "yak",
@@ -6218,7 +6472,9 @@
       "en": "Plains, jungle, plateau, forest biomes.",
       "ru": "Биомы равнин, джунглей, плато, леса."
     },
-    "speed": 0.2
+    "speed": 0.2,
+    "mcmod_id": 808654,
+    "preview": "yak_preview.jpg"
   },
   {
     "id": "musk_ox",
@@ -6287,7 +6543,9 @@
       "en": "Plains, jungle, plateau, forest biomes.",
       "ru": "Биомы равнин, джунглей, плато, леса."
     },
-    "speed": 0.23
+    "speed": 0.23,
+    "mcmod_id": 808645,
+    "preview": "musk_ox_preview.jpg"
   },
   {
     "id": "camel",
@@ -6346,7 +6604,9 @@
       "en": "Desert biomes.",
       "ru": "Пустынные биомы."
     },
-    "speed": 0.175
+    "speed": 0.175,
+    "mcmod_id": 808659,
+    "preview": "camel_preview.jpg"
   },
   {
     "id": "boar",
@@ -6405,7 +6665,9 @@
       "en": "Forest, swamp, jungle, plains, plateau biomes.",
       "ru": "Биомы леса, болота, джунглей, равнин, плато."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "mcmod_id": 808656,
+    "preview": "boar_preview.jpg"
   },
   {
     "id": "hyena",
@@ -6456,7 +6718,9 @@
       "en": "Plains, plateau, forest biomes.",
       "ru": "Биомы равнин, плато, леса."
     },
-    "speed": 0.38
+    "speed": 0.38,
+    "mcmod_id": 808657,
+    "preview": "hyena_preview.jpg"
   },
   {
     "id": "saber_toothed_tiger",
@@ -6525,7 +6789,9 @@
       "en": "Jungle biomes.",
       "ru": "Биомы джунглей."
     },
-    "speed": 0.38
+    "speed": 0.38,
+    "mcmod_id": 808658,
+    "preview": "saber_toothed_tiger_preview.jpg"
   },
   {
     "id": "panther",
@@ -6584,7 +6850,9 @@
       "en": "Nighttime: forest, swamp, plateau biomes.",
       "ru": "Ночное время: биомы леса, болота, плато."
     },
-    "speed": 0.38
+    "speed": 0.38,
+    "mcmod_id": 808660,
+    "preview": "panther_preview.jpg"
   },
   {
     "id": "polar_bear",
@@ -6653,7 +6921,9 @@
       "en": "Snowy tundra biomes.",
       "ru": "Биомы заснеженной тундры."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "mcmod_id": 808661,
+    "preview": "polar_bear_preview.jpg"
   },
   {
     "id": "grizzly_bear",
@@ -6722,7 +6992,9 @@
       "en": "Taiga and forest biomes.",
       "ru": "Биомы тайги и леса."
     },
-    "speed": 0.28
+    "speed": 0.28,
+    "mcmod_id": 808640,
+    "preview": "grizzly_bear_preview.jpg"
   },
   {
     "id": "deer",
@@ -6791,7 +7063,9 @@
       "en": "Plateau and forest biomes.",
       "ru": "Биомы плато и леса."
     },
-    "speed": 0.33
+    "speed": 0.33,
+    "mcmod_id": 808662,
+    "preview": "deer_preview.jpg"
   },
   {
     "id": "duck",
@@ -6850,7 +7124,9 @@
       "en": "Swamp biomes.",
       "ru": "Биомы болот."
     },
-    "speed": 0.25
+    "speed": 0.25,
+    "mcmod_id": 808646,
+    "preview": "duck_preview.jpg"
   },
   {
     "id": "elephant",
@@ -6863,7 +7139,7 @@
     "dmgMin": 10,
     "dmgMax": 10,
     "dmgType": "melee",
-    "xp": 25,
+    "xp": 5,
     "spawnZones": [
       "surface"
     ],
@@ -6909,7 +7185,9 @@
       "en": "Plains, forest, swamp biomes.",
       "ru": "Биомы равнин, леса, болота."
     },
-    "speed": 0.2
+    "speed": 0.2,
+    "mcmod_id": 808643,
+    "preview": "elephant_preview.jpg"
   },
   {
     "id": "llama",
@@ -6968,7 +7246,9 @@
       "en": "Plateau and desert biomes.",
       "ru": "Биомы плато и пустыни."
     },
-    "speed": 0.175
+    "speed": 0.175,
+    "mcmod_id": 808663,
+    "preview": "llama_preview.jpg"
   },
   {
     "id": "pheasant",
@@ -7029,8 +7309,203 @@
       "en": "Plains, forest, jungle, plateau, swamp biomes.",
       "ru": "Биомы равнин, леса, джунглей, плато, болота."
     },
-    "speed": 0.2
+    "speed": 0.2,
+    "mcmod_id": 808664,
+    "preview": "pheasant_preview.jpg"
+  },
+  {
+    "id": "squid",
+    "name": {
+      "hu": "Tintahal",
+      "en": "Squid",
+      "ru": "Кальмар"
+    },
+    "hp": 10,
+    "dmgMin": 0,
+    "dmgMax": 0,
+    "xp": 1,
+    "armor": 0,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "mobType": "animal",
+    "tags": [
+      "passive"
+    ],
+    "description": {
+      "hu": "Passzív vízben élő tintahal.",
+      "en": "A passive squid living in water.",
+      "ru": "Пассивный кальмар, живущий в воде."
+    },
+    "spawnInfo": {
+      "hu": "Felszíni vizek.",
+      "en": "Surface waters.",
+      "ru": "Поверхностные воды."
+    },
+    "special": {
+      "hu": "Passzív, nem támad.",
+      "en": "Passive, does not attack.",
+      "ru": "Пассивный, не атакует."
+    },
+    "drops": [],
+    "mcmod_id": 773872,
+    "preview": "squid_preview.jpg"
+  },
+  {
+    "id": "carp",
+    "name": {
+      "hu": "Ponty",
+      "en": "Carp",
+      "ru": "Карп"
+    },
+    "hp": 10,
+    "dmgMin": 0,
+    "dmgMax": 0,
+    "xp": 1,
+    "armor": 0,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "mobType": "animal",
+    "tags": [
+      "passive"
+    ],
+    "description": {
+      "hu": "Passzív vízben élő hal.",
+      "en": "A passive fish living in water.",
+      "ru": "Пассивная рыба, живущая в воде."
+    },
+    "spawnInfo": {
+      "hu": "Felszíni vizek.",
+      "en": "Surface waters.",
+      "ru": "Поверхностные воды."
+    },
+    "special": {
+      "hu": "Passzív, nem támad.",
+      "en": "Passive, does not attack.",
+      "ru": "Пассивный, не атакует."
+    },
+    "drops": [],
+    "mcmod_id": 808644,
+    "preview": "carp_preview.jpg"
+  },
+  {
+    "id": "longdead",
+    "name": {
+      "hu": "Holttetem",
+      "en": "Longdead",
+      "ru": "Мертвец"
+    },
+    "hp": 35,
+    "dmgMin": 8,
+    "dmgMax": 8,
+    "xp": 35,
+    "armor": 0,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "mid",
+    "mobType": "undead",
+    "tags": [
+      "undead"
+    ],
+    "description": {
+      "hu": "Ősi holttetem, amely a föld mélyén kísért. Erős közelharci csapással rendelkezik.",
+      "en": "An ancient longdead haunting the underground depths. Deals heavy melee damage.",
+      "ru": "Древний мертвец, бродящий в глубинах подземелий. Наносит сильный урон в ближнем бою."
+    },
+    "spawnInfo": {
+      "hu": "Föld alatt, mélyebb szintek.",
+      "en": "Underground, deeper levels.",
+      "ru": "Под землёй, глубокие уровни."
+    },
+    "special": {
+      "hu": "Erős közelharci csapás.",
+      "en": "Heavy melee attack.",
+      "ru": "Сильный удар в ближнем бою."
+    },
+    "drops": [],
+    "mcmod_id": 773422,
+    "preview": "longdead_preview.jpg"
+  },
+  {
+    "id": "bad_wolf",
+    "name": {
+      "hu": "Gonosz Farkas",
+      "en": "Bad Wolf",
+      "ru": "Злой Волк"
+    },
+    "hp": 40,
+    "dmgMin": 6,
+    "dmgMax": 6,
+    "xp": 5,
+    "armor": 0,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "mid",
+    "mobType": "animal",
+    "tags": [
+      "hostile"
+    ],
+    "description": {
+      "hu": "Agresszív farkasváltozat, amely aktívan vadászik a játékosra. Nem szelídíthető.",
+      "en": "An aggressive wolf variant that actively hunts the player. Cannot be tamed.",
+      "ru": "Агрессивный волк, активно охотящийся на игрока. Нельзя приручить."
+    },
+    "spawnInfo": {
+      "hu": "Felszín, erdők.",
+      "en": "Surface, forests.",
+      "ru": "Поверхность, леса."
+    },
+    "special": {
+      "hu": "Mindig ellenséges, nem szelídíthető.",
+      "en": "Always hostile, cannot be tamed.",
+      "ru": "Всегда враждебный, не поддаётся приручению."
+    },
+    "drops": [],
+    "mcmod_id": 773667,
+    "preview": "bad_wolf_preview.jpg"
+  },
+  {
+    "id": "mutation_spider",
+    "name": {
+      "hu": "Mutalt Pok",
+      "en": "Mutation Spider",
+      "ru": "Мутировавший Паук"
+    },
+    "hp": 40,
+    "dmgMin": 7,
+    "dmgMax": 7,
+    "xp": 5,
+    "armor": 0,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "mid",
+    "mobType": "monster",
+    "tags": [
+      "hostile"
+    ],
+    "description": {
+      "hu": "Mutált pókváltozat, erősebb és veszélyesebb az átlagosnál.",
+      "en": "A mutated spider variant, stronger and more dangerous than average.",
+      "ru": "Мутировавший паук, более сильный и опасный, чем обычный."
+    },
+    "spawnInfo": {
+      "hu": "Föld alatt.",
+      "en": "Underground.",
+      "ru": "Под землёй."
+    },
+    "special": {
+      "hu": "Fokozott sebzés.",
+      "en": "Increased damage output.",
+      "ru": "Повышенный урон."
+    },
+    "drops": [],
+    "mcmod_id": 773664,
+    "preview": "mutation_spider_preview.jpg"
   }
 ]
-
-

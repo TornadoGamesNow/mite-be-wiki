@@ -56,7 +56,7 @@ function isActive(ids: string[]): boolean {
 
     <!-- Reference dropdown -->
     <div class="nav-dropdown">
-      <button class="nav-dropdown-toggle" class:list={[{ active: isActive(['recipes','items','mobs','biomes','brewing','reference']) }]}>
+      <button class="nav-dropdown-toggle" class:list={[{ active: isActive(['recipes','items','mobs','biomes','brewing','enchanting','reference']) }]}>
         <span data-lang="hu">Referencia ▾</span>
         <span data-lang="en">Reference ▾</span>
         <span data-lang="ru">Справочник ▾</span>
@@ -86,6 +86,11 @@ function isActive(ids: string[]): boolean {
           <span data-lang="hu">Brewing</span>
           <span data-lang="en">Brewing</span>
           <span data-lang="ru">Зельеварение</span>
+        </a>
+        <a href={`${base}/enchanting/`}>
+          <span data-lang="hu">Bűvölés</span>
+          <span data-lang="en">Enchanting</span>
+          <span data-lang="ru">Зачарование</span>
         </a>
         <a href={`${base}/reference/`}>
           <span data-lang="hu">Referencia</span>

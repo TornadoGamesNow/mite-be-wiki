@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import itemsRaw from '../../data/items.json';
 import recipesRaw from '../../data/recipes_full.json';
+import { buildRecipesByOutput, getCanonicalItemId, getItemAliasIds, isItemRemoved } from '../data/item-status';
 
 interface ItemInfo {
   mcmod_id?: number;
@@ -12,6 +13,9 @@ interface ItemInfo {
   removed_v?: string;
   removed?: boolean;
   versions?: string[];
+  versions_en?: string[];
+  versions_hu?: string[];
+  versions_ru?: string[];
 }
 
 const BASE = (import.meta as any).env?.BASE_URL?.replace(/\/$/, '') ?? '';
@@ -31,16 +35,9 @@ const allItems: ItemData[] = Object.entries(itemsRaw as Record<string, Omit<Item
   ([id, v]) => ({ id, ...v })
 );
 
-// Build set of item IDs that have at least one recipe
-const itemsWithRecipe = new Set((recipesRaw as any[]).map(r => r.output as string));
-
-// Index: item ID → its recipes
-const recipesByOutput: Record<string, any[]> = {};
-for (const r of recipesRaw as any[]) {
-  const key = r.output as string;
-  if (!recipesByOutput[key]) recipesByOutput[key] = [];
-  recipesByOutput[key].push(r);
-}
+const recipesByOutput = buildRecipesByOutput(recipesRaw as any[]);
+const itemsWithRecipe = new Set(Object.keys(recipesByOutput));
+const visibleItems = allItems.filter(item => getCanonicalItemId(item.id) === item.id);
 
 const STATION_LABELS: Record<string, { hu: string; en: string; ru: string }> = {
   flint_workbench:          { hu: 'Kovakő Munkaasztal',     en: 'Flint Workbench',          ru: 'Кремнёвый верстак' },
@@ -102,7 +99,7 @@ const TIER_ORDER = ['flint','bone','wood','stone','copper','tin','silver','bronz
 
 // Precompute tier progression groups: base_name → sorted list of ItemData
 const tierGroups: Record<string, ItemData[]> = {};
-for (const item of allItems) {
+for (const item of visibleItems) {
   if (!item.tier) continue;
   if (item.id.startsWith(item.tier + '_')) {
     const base = item.id.slice(item.tier.length + 1);
@@ -197,18 +194,27 @@ export default function ItemExplorer() {
     return () => window.removeEventListener('keydown', onKey);
   }, [selected]);
 
+  function getInfo(itemId: string): ItemInfo | undefined {
+    for (const id of getItemAliasIds(itemId)) {
+      const info = itemInfo[id];
+      if (info) return info;
+    }
+    return undefined;
+  }
+
   const filtered = useMemo(() => {
     const q = search.toLowerCase();
-    return allItems.filter(item => {
+    return visibleItems.filter(item => {
       if (catFilter && item.category !== catFilter) return false;
       if (tierFilter && item.tier !== tierFilter) return false;
-      const info = itemInfo[item.id];
-      if (!showRemoved && (info?.removed || item.removed_in)) return false;
+      const info = getInfo(item.id);
+      if (!showRemoved && isItemRemoved(item.id, item, info, recipesByOutput)) return false;
       if (q) {
         const nameMatch = item.name.hu.toLowerCase().includes(q)
           || item.name.en.toLowerCase().includes(q)
           || (item.name.ru ?? '').toLowerCase().includes(q)
-          || item.id.includes(q);
+          || item.id.includes(q)
+          || getItemAliasIds(item.id).some(id => id.includes(q));
         const descMatch = (info?.desc_hu ?? '').toLowerCase().includes(q)
           || (info?.desc_en ?? '').toLowerCase().includes(q)
           || (info?.desc_ru ?? '').toLowerCase().includes(q);
@@ -223,8 +229,8 @@ export default function ItemExplorer() {
   // Available tiers in current filtered set (for tier filter buttons)
   const tiersInCat = useMemo(() => {
     const base = catFilter
-      ? allItems.filter(i => i.category === catFilter)
-      : allItems;
+      ? visibleItems.filter(i => i.category === catFilter)
+      : visibleItems;
     return new Set(base.map(i => i.tier).filter(Boolean));
   }, [catFilter]);
 
@@ -365,8 +371,8 @@ export default function ItemExplorer() {
         <span style={{ fontSize: '.8em', color: 'var(--text2)', padding: '3px 10px',
           background: 'var(--surface)', border: '1px solid var(--surface2)', borderRadius: 20 }}>
           {isFiltered
-            ? <><span style={{ color: 'var(--text)', fontWeight: 600 }}>{filtered.length}</span> / {allItems.length} {lang === 'hu' ? 'item' : lang === 'ru' ? 'предметов' : 'items'}</>
-            : <><span style={{ color: 'var(--text)', fontWeight: 600 }}>{allItems.length}</span> {lang === 'hu' ? 'item' : lang === 'ru' ? 'предметов' : 'items'}</>
+            ? <><span style={{ color: 'var(--text)', fontWeight: 600 }}>{filtered.length}</span> / {visibleItems.length} {lang === 'hu' ? 'item' : lang === 'ru' ? 'предметов' : 'items'}</>
+            : <><span style={{ color: 'var(--text)', fontWeight: 600 }}>{visibleItems.length}</span> {lang === 'hu' ? 'item' : lang === 'ru' ? 'предметов' : 'items'}</>
           }
         </span>
         {isFiltered && (
@@ -394,7 +400,8 @@ export default function ItemExplorer() {
           const tierMeta = item.tier ? TIER_META[item.tier] : null;
           const isSelected = selected?.id === item.id;
           const hasRecipe = itemsWithRecipe.has(item.id);
-          const isRemoved = itemInfo[item.id]?.removed || !!item.removed_in;
+          const info = getInfo(item.id);
+          const isRemoved = isItemRemoved(item.id, item, info, recipesByOutput);
           return (
             <div
               key={item.id}
@@ -504,41 +511,49 @@ export default function ItemExplorer() {
             {/* Body */}
             <div style={{ padding: '20px 24px', flex: 1 }}>
               {/* Removed warning */}
-              {(itemInfo[selected.id]?.removed || selected.removed_in) && (
+              {(() => {
+                const info = getInfo(selected.id);
+                if (!isItemRemoved(selected.id, selected, info, recipesByOutput)) return null;
+                return (
                 <div style={{ padding: '8px 12px', marginBottom: 16,
                   background: 'rgba(233,69,96,.1)', border: '1px solid rgba(233,69,96,.3)',
                   borderRadius: 6, fontSize: '.82em', color: 'var(--accent)' }}>
                   ⚠️ {lang === 'hu'
-                    ? `Ez az item el lett távolítva${selected.removed_in ? ` (v${selected.removed_in})` : itemInfo[selected.id]?.removed_v ? ` (v${itemInfo[selected.id].removed_v})` : ''}`
+                    ? `Ez az item el lett távolítva${selected.removed_in ? ` (v${selected.removed_in})` : info?.removed_v ? ` (v${info.removed_v})` : ''}`
                     : lang === 'ru'
-                    ? `Этот предмет был удалён${selected.removed_in ? ` (v${selected.removed_in})` : itemInfo[selected.id]?.removed_v ? ` (v${itemInfo[selected.id].removed_v})` : ''}`
-                    : `This item was removed${selected.removed_in ? ` (v${selected.removed_in})` : itemInfo[selected.id]?.removed_v ? ` (v${itemInfo[selected.id].removed_v})` : ''}`}
+                    ? `Этот предмет был удалён${selected.removed_in ? ` (v${selected.removed_in})` : info?.removed_v ? ` (v${info.removed_v})` : ''}`
+                    : `This item was removed${selected.removed_in ? ` (v${selected.removed_in})` : info?.removed_v ? ` (v${info.removed_v})` : ''}`}
                 </div>
-              )}
+                );
+              })()}
 
               {/* Version info */}
-              {(itemInfo[selected.id]?.added || itemInfo[selected.id]?.removed_v) && (
+              {(() => {
+                const info = getInfo(selected.id);
+                if (!(info?.added || info?.removed_v)) return null;
+                return (
                 <div style={{ display: 'flex', gap: 8, marginBottom: 16, flexWrap: 'wrap' }}>
-                  {itemInfo[selected.id].added && (
+                  {info.added && (
                     <span style={{ fontSize: '.78em', padding: '3px 10px', borderRadius: 10,
                       background: 'rgba(78,204,163,.12)', color: 'var(--green)',
                       border: '1px solid rgba(78,204,163,.3)', fontWeight: 600 }}>
-                      + v{itemInfo[selected.id].added}
+                      + v{info.added}
                     </span>
                   )}
-                  {itemInfo[selected.id].removed_v && (
+                  {info.removed_v && (
                     <span style={{ fontSize: '.78em', padding: '3px 10px', borderRadius: 10,
                       background: 'rgba(233,69,96,.1)', color: 'var(--accent)',
                       border: '1px solid rgba(233,69,96,.3)', fontWeight: 600 }}>
-                      ✕ v{itemInfo[selected.id].removed_v}
+                      ✕ v{info.removed_v}
                     </span>
                   )}
                 </div>
-              )}
+                );
+              })()}
 
               {/* Description */}
               {(() => {
-                const info = itemInfo[selected.id];
+                const info = getInfo(selected.id);
                 const descText = lang === 'hu'
                   ? (info?.desc_hu || info?.desc_en || info?.desc_ru || info?.desc)
                   : lang === 'ru'
@@ -603,23 +618,32 @@ export default function ItemExplorer() {
               })()}
 
               {/* Version notes */}
-              {itemInfo[selected.id]?.versions && itemInfo[selected.id].versions!.length > 0 && (
-                <div style={{ marginBottom: 20 }}>
-                  <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
-                    color: 'var(--text2)', marginBottom: 6 }}>
-                    {lang === 'hu' ? 'Verzió megjegyzések' : lang === 'ru' ? 'Заметки о версии' : 'Version notes'}
+              {(() => {
+                const info = getInfo(selected.id);
+                const versionNotes = lang === 'hu'
+                  ? (info?.versions_hu || info?.versions_en || info?.versions_ru || info?.versions)
+                  : lang === 'ru'
+                    ? (info?.versions_ru || info?.versions_en || info?.versions_hu || info?.versions)
+                    : (info?.versions_en || info?.versions_ru || info?.versions_hu || info?.versions);
+                if (!versionNotes || versionNotes.length === 0) return null;
+                return (
+                  <div style={{ marginBottom: 20 }}>
+                    <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
+                      color: 'var(--text2)', marginBottom: 6 }}>
+                      {lang === 'hu' ? 'Verzió megjegyzések' : lang === 'ru' ? 'Заметки о версии' : 'Version notes'}
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                      {versionNotes.map((v, i) => (
+                        <div key={i} style={{ fontSize: '.8em', padding: '5px 10px',
+                          background: 'var(--surface)', border: '1px solid var(--surface2)',
+                          borderRadius: 4, color: 'var(--text2)', lineHeight: 1.4 }}>
+                          {v}
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-                    {itemInfo[selected.id].versions!.map((v, i) => (
-                      <div key={i} style={{ fontSize: '.8em', padding: '5px 10px',
-                        background: 'var(--surface)', border: '1px solid var(--surface2)',
-                        borderRadius: 4, color: 'var(--text2)', lineHeight: 1.4 }}>
-                        {v}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+                );
+              })()}
 
               {/* Inline recipes */}
               {(() => {
@@ -694,7 +718,7 @@ export default function ItemExplorer() {
               {/* Bottom links */}
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', borderTop: '1px solid var(--surface2)', paddingTop: 16 }}>
                 <a
-                  href={`${BASE}/recipes/?search=${encodeURIComponent(selected.id)}`}
+                  href={`${BASE}/recipes/?search=${encodeURIComponent(getCanonicalItemId(selected.id))}`}
                   style={{
                     display: 'inline-flex', alignItems: 'center', gap: 6,
                     padding: '7px 14px', borderRadius: 6, fontSize: '.85em', fontWeight: 600,
@@ -704,9 +728,12 @@ export default function ItemExplorer() {
                 >
                   ⚒ {lang === 'hu' ? 'Receptek' : lang === 'ru' ? 'Рецепты' : 'Recipes'}
                 </a>
-                {itemInfo[selected.id]?.mcmod_id && (
+                {(() => {
+                  const info = getInfo(selected.id);
+                  if (!info?.mcmod_id) return null;
+                  return (
                   <a
-                    href={`https://www.mcmod.cn/item/${itemInfo[selected.id].mcmod_id}.html`}
+                    href={`https://www.mcmod.cn/item/${info.mcmod_id}.html`}
                     target="_blank" rel="noopener noreferrer"
                     style={{
                       display: 'inline-flex', alignItems: 'center', gap: 6,
@@ -717,7 +744,8 @@ export default function ItemExplorer() {
                   >
                     🌐 mcmod.cn
                   </a>
-                )}
+                  );
+                })()}
                 <div style={{ marginLeft: 'auto', fontSize: '.75em', color: 'var(--text2)',
                   display: 'flex', alignItems: 'center' }}>
                   <code>{selected.id}</code>

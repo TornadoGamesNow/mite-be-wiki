@@ -3,6 +3,7 @@ import recipesData from '../../data/recipes_full.json';
 import itemsData from '../../data/items.json';
 import { getCurrentLang, onLangChange } from '../i18n/lang';
 import CraftingTree from './CraftingTree';
+import { buildRecipesByOutput, getCanonicalItemId, getRecipeOutputId, getRecipeOutputIds, isItemRemoved } from '../data/item-status';
 
 type FullRecipe = {
   id: string;
@@ -35,6 +36,7 @@ type ItemEntry = {
 
 const recipes = recipesData as unknown as FullRecipe[];
 const items = itemsData as unknown as Record<string, ItemEntry>;
+const recipesByOutput = buildRecipesByOutput(recipes);
 
 const BASE = (import.meta as any).env?.BASE_URL?.replace(/\/$/, '') ?? '';
 
@@ -44,7 +46,7 @@ function toTitleCase(id: string): string {
 }
 
 function getItemName(id: string, lang: 'hu' | 'en' | 'ru'): string {
-  const entry = items[id];
+  const entry = items[getCanonicalItemId(id)] ?? items[id];
   if (!entry) return toTitleCase(id);
   const name = (entry.name as any)?.[lang] ?? entry.name?.en;
   if (!name || name === id) return toTitleCase(id);
@@ -52,7 +54,8 @@ function getItemName(id: string, lang: 'hu' | 'en' | 'ru'): string {
 }
 
 function getItemImg(id: string): string {
-  return items[id]?.img || '';
+  const canonicalId = getCanonicalItemId(id);
+  return items[canonicalId]?.img || items[id]?.img || '';
 }
 
 function genericItemName(ids: string[], lang: 'hu' | 'en' | 'ru'): string {
@@ -329,14 +332,78 @@ function MiniGrid({ recipe, outputId, outputQty }: { recipe: FullRecipe; outputI
   );
 }
 
-function getOutputId(output: string | string[]): string {
-  return Array.isArray(output) ? output[0] : output;
+function getRecipeSourceId(outputId: string, recipe: FullRecipe): string {
+  return ((recipe as any)._mergedFromId as string | undefined) || outputId;
+}
+
+function isOutputRemoved(outputId: string): boolean {
+  const canonicalId = getCanonicalItemId(outputId);
+  return isItemRemoved(canonicalId, items[canonicalId] ?? items[outputId], undefined, recipesByOutput);
+}
+
+function normalizeRecipeValue(value: any): any {
+  if (Array.isArray(value)) return value.map(normalizeRecipeValue);
+  if (typeof value === 'string') return getCanonicalItemId(value);
+  return value;
+}
+
+function getRecipeSignature(recipe: FullRecipe): string {
+  return JSON.stringify({
+    output: normalizeRecipeValue(recipe.output),
+    outputQty: recipe.outputQty,
+    station: recipe.station,
+    shaped: recipe.shaped,
+    pattern: normalizeRecipeValue(recipe.pattern ?? []),
+    ingredients: normalizeRecipeValue(recipe.ingredients ?? []),
+    skills: recipe.skills ?? [],
+  });
+}
+
+function isRecipeLegacy(outputId: string, recipe: FullRecipe): boolean {
+  const sourceId = getRecipeSourceId(outputId, recipe);
+  return !!(recipe as any).removed_version || isOutputRemoved(sourceId);
+}
+
+function compareRecipes(outputId: string, a: FullRecipe, b: FullRecipe): number {
+  const legacyDiff = Number(isRecipeLegacy(outputId, a)) - Number(isRecipeLegacy(outputId, b));
+  if (legacyDiff !== 0) return legacyDiff;
+
+  const shapedDiff = Number(!a.shaped) - Number(!b.shaped);
+  if (shapedDiff !== 0) return shapedDiff;
+
+  const patternDiff = Number(!(a.pattern && a.shaped)) - Number(!(b.pattern && b.shaped));
+  if (patternDiff !== 0) return patternDiff;
+
+  const sourceDiff = Number(getRecipeSourceId(outputId, a) !== outputId) - Number(getRecipeSourceId(outputId, b) !== outputId);
+  if (sourceDiff !== 0) return sourceDiff;
+
+  const difficultyDiff = a.difficulty - b.difficulty;
+  if (difficultyDiff !== 0) return difficultyDiff;
+
+  return a.item_num - b.item_num;
+}
+
+function sortGroupRecipes(group: OutputGroup): OutputGroup {
+  const deduped = new Map<string, FullRecipe>();
+  for (const recipe of group.recipes) {
+    const sig = getRecipeSignature(recipe);
+    const prev = deduped.get(sig);
+    if (!prev || compareRecipes(group.outputId, recipe, prev) < 0) {
+      deduped.set(sig, recipe);
+    }
+  }
+  const recipes = [...deduped.values()].sort((a, b) => compareRecipes(group.outputId, a, b));
+  return {
+    ...group,
+    recipes,
+    primaryRecipe: recipes[0] ?? group.primaryRecipe,
+  };
 }
 
 function groupByOutput(recs: FullRecipe[]): OutputGroup[] {
   const map = new Map<string, FullRecipe[]>();
   for (const r of recs) {
-    const key = getOutputId(r.output);
+    const key = getRecipeOutputId(r.output);
     if (!map.has(key)) map.set(key, []);
     map.get(key)!.push(r);
   }
@@ -344,9 +411,10 @@ function groupByOutput(recs: FullRecipe[]): OutputGroup[] {
   for (const [outputId, rs] of map) {
     const hasShaped = rs.some(r => r.shaped);
     const hasShapeless = rs.some(r => !r.shaped);
-    const primary = rs.find(r => r.shaped) || rs[0];
-    const allOutputIds = [...new Set(rs.flatMap(r => Array.isArray(r.output) ? r.output : [r.output]))];
-    groups.push({ outputId, allOutputIds, recipes: rs, hasShapedVariant: hasShaped, hasShapelessVariant: hasShapeless, primaryRecipe: primary });
+    const sortedRecipes = [...rs].sort((a, b) => compareRecipes(outputId, a, b));
+    const primary = sortedRecipes[0] || rs[0];
+    const allOutputIds = [...new Set(rs.flatMap(r => getRecipeOutputIds(r.output)))];
+    groups.push({ outputId, allOutputIds, recipes: sortedRecipes, hasShapedVariant: hasShaped, hasShapelessVariant: hasShapeless, primaryRecipe: primary });
   }
   return groups.sort((a, b) => String(a.outputId).localeCompare(String(b.outputId)));
 }
@@ -382,28 +450,30 @@ function buildTooltip(g: OutputGroup, lang: 'hu' | 'en' | 'ru'): string {
 
 // Groups that USE a given ingredient
 function getUsedInGroups(ingredientId: string): OutputGroup[] {
+  const canonicalId = getCanonicalItemId(ingredientId);
   return allGroups.filter(g =>
-    g.recipes.some(r => flattenIngredients(r.ingredients).includes(ingredientId))
+    g.recipes.some(r => flattenIngredients(r.ingredients).some(id => getCanonicalItemId(id) === canonicalId))
   );
 }
 
 // Groups that PRODUCE a given item (i.e., it IS the output)
 function getCraftingGroups(itemId: string): OutputGroup[] {
-  return allGroups.filter(g => g.allOutputIds.includes(itemId));
+  const canonicalId = getCanonicalItemId(itemId);
+  return allGroups.filter(g => g.allOutputIds.includes(canonicalId));
 }
 
 // Merge alias groups: same-named items where one has removed_in → merge into active group
 function mergeAliasGroups(groups: OutputGroup[]): OutputGroup[] {
   const nameToActive = new Map<string, OutputGroup>();
   for (const g of groups) {
-    if (!items[g.outputId]?.removed_in) {
+    if (!isOutputRemoved(g.outputId)) {
       const nameEn = getItemName(g.outputId, 'en').toLowerCase();
       if (!nameToActive.has(nameEn)) nameToActive.set(nameEn, g);
     }
   }
   const merged = new Set<string>();
   for (const g of groups) {
-    if (!items[g.outputId]?.removed_in) continue;
+    if (!isOutputRemoved(g.outputId)) continue;
     const nameEn = getItemName(g.outputId, 'en').toLowerCase();
     const activeGroup = nameToActive.get(nameEn);
     if (activeGroup) {
@@ -412,7 +482,9 @@ function mergeAliasGroups(groups: OutputGroup[]): OutputGroup[] {
       merged.add(g.outputId);
     }
   }
-  return groups.filter(g => !merged.has(g.outputId));
+  return groups
+    .filter(g => !merged.has(g.outputId))
+    .map(sortGroupRecipes);
 }
 
 const allGroups = mergeAliasGroups(groupByOutput(recipes));
@@ -536,7 +608,7 @@ function RecipeListItem({ group, lang, onSelect }: {
       <div style={{ flex: 1, minWidth: 0 }}>
         <div style={{ fontSize: '.85em', fontWeight: 500 }}>
           {getItemName(group.outputId, lang)}
-          {items[group.outputId]?.removed_in && (
+          {isOutputRemoved(group.outputId) && items[group.outputId]?.removed_in && (
             <span style={{ marginLeft: 5, fontSize: '.75em', color: '#ff6b6b', fontWeight: 600 }}>
               ⚠️ v{items[group.outputId].removed_in}
             </span>
@@ -733,7 +805,7 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                   <div style={{ fontWeight: 700, fontSize: '1.18em', lineHeight: 1.25 }}>
                     {getItemName(group.outputId, lang)}
                   </div>
-                  {items[group.outputId]?.removed_in && (
+                  {isOutputRemoved(group.outputId) && items[group.outputId]?.removed_in && (
                     <div style={{ marginTop: 4, fontSize: '.8em', color: '#ff6b6b', fontWeight: 600, background: 'rgba(255,107,107,.12)', padding: '2px 8px', borderRadius: 4, display: 'inline-block' }}>
                       ⚠️ {lang === 'hu' ? `Eltávolítva: v${items[group.outputId].removed_in}` : lang === 'ru' ? `Удалено в v${items[group.outputId].removed_in}` : `Removed in v${items[group.outputId].removed_in}`}
                     </div>
@@ -821,7 +893,7 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                       {(r as any)._mergedFromId && (
                         <div style={{ color: '#aaa', fontWeight: 600, marginBottom: 4, fontSize: '.9em' }}>
                           📦 {lang === 'hu' ? `Régi ID: ` : lang === 'ru' ? `Старый ID: ` : `Old ID: `}<code style={{ fontSize: '.9em' }}>{(r as any)._mergedFromId}</code>
-                          {items[(r as any)._mergedFromId]?.removed_in && <span style={{ color: '#ff9a44' }}> (v{items[(r as any)._mergedFromId].removed_in})</span>}
+                          {isOutputRemoved((r as any)._mergedFromId) && items[(r as any)._mergedFromId]?.removed_in && <span style={{ color: '#ff9a44' }}> (v{items[(r as any)._mergedFromId].removed_in})</span>}
                         </div>
                       )}
                       {(r as any).removed_version && (
@@ -1493,14 +1565,14 @@ export default function RecipesHub() {
       }
       if (typeFilter === 'shaped' && !g.hasShapedVariant) return false;
       if (typeFilter === 'shapeless' && !g.hasShapelessVariant) return false;
-      if (typeFilter === 'removed' && !items[g.outputId]?.removed_in) return false;
-      if (typeFilter === 'current' && items[g.outputId]?.removed_in) return false;
+      if (typeFilter === 'removed' && !isOutputRemoved(g.outputId)) return false;
+      if (typeFilter === 'current' && isOutputRemoved(g.outputId)) return false;
       return true;
     });
   }, [keyword, stationFilter, skillFilter, ingredientFilter, typeFilter, lang]);
 
   const totalRecipeCount = filteredGroups.reduce((s, g) => s + g.recipes.length, 0);
-  const selectedGroup = selectedOutputId ? allGroups.find(x => x.allOutputIds.includes(selectedOutputId)) ?? null : null;
+  const selectedGroup = selectedOutputId ? allGroups.find(x => x.allOutputIds.includes(getCanonicalItemId(selectedOutputId))) ?? null : null;
 
   // Scroll to highlighted card after sandbox→browse navigation
   useEffect(() => {

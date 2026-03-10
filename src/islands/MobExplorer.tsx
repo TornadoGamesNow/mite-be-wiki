@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import mobsData from '../../data/mobs.json';
+import mobsData from '../../data/mobs.json'; // updated
 
 const BASE = (import.meta as any).env?.BASE_URL?.replace(/\/$/, '') ?? '';
 
@@ -26,6 +26,7 @@ interface Mob {
   spawnInfo?: { hu: string; en: string };
   drops?: Drop[];
   image?: string | null;
+  preview?: string | null;
   mobType?: string;
   armor?: number | null;
   speed?: number | null;
@@ -59,6 +60,26 @@ function MobSprite({ mob, size }: { mob: Mob; size: number }) {
       onError={() => setErr(true)}
       style={{ imageRendering: 'pixelated', objectFit: 'contain', flexShrink: 0, display: 'block' }}
     />
+  );
+}
+
+function MobPreviewImage({ mob }: { mob: Mob }) {
+  const [err, setErr] = useState(false);
+  if (!mob.preview || err) return null;
+  return (
+    <div style={{
+      width: '100%', background: '#0a0a0f',
+      borderBottom: '1px solid var(--surface2)',
+      display: 'flex', justifyContent: 'center', alignItems: 'center',
+      maxHeight: 220, overflow: 'hidden',
+    }}>
+      <img
+        src={`${BASE}/img/mobs/${mob.preview}`}
+        alt={mob.name.en}
+        onError={() => setErr(true)}
+        style={{ width: '100%', objectFit: 'cover', display: 'block', maxHeight: 220 }}
+      />
+    </div>
   );
 }
 
@@ -551,17 +572,20 @@ export default function MobExplorer() {
             boxShadow: '-4px 0 32px rgba(0,0,0,.4)',
             display: 'flex', flexDirection: 'column',
           }}>
+            {/* mcmod preview image (rendered screenshot) */}
+            <MobPreviewImage mob={selectedMob} />
+
             {/* Sticky header */}
             <div style={{
               position: 'sticky', top: 0, zIndex: 1,
               background: 'var(--bg)', borderBottom: '1px solid var(--surface2)',
-              padding: '20px 24px 16px',
+              padding: '16px 24px 14px',
             }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-                  <MobSprite mob={selectedMob} size={72} />
+                <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+                  <MobSprite mob={selectedMob} size={48} />
                   <div>
-                  <h3 style={{ margin: '0 0 8px', fontSize: '1.35em' }}>
+                  <h3 style={{ margin: '0 0 6px', fontSize: '1.25em' }}>
                     {selectedMob.name[lang as 'hu' | 'en' | 'ru']}
                   </h3>
                   <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>

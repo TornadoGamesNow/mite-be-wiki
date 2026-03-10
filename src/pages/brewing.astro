@@ -58,18 +58,21 @@ const sidebarGroups = getSidebarGroups('brewing');
         <img src={`${base}/img/items/blaze_rod.png`} alt="" onerror="this.style.opacity=.3">
       </div>
       <div class="craft-slot empty"></div>
+      <div class="craft-slot empty"></div>
+      <div class="craft-slot empty"></div>
+      <div class="craft-slot empty"></div>
       <div class="craft-slot">
         <div class="mc-tooltip"><div class="tt-name" style="color:#aaa">Zúzott kő (Cobblestone)</div><div class="tt-desc" data-lang="hu">Bányászott kő</div><div class="tt-desc" data-lang="en">Cobblestone</div></div>
         <img src={`${base}/img/blocks/stone.png`} alt="" onerror="this.style.opacity=.3">
       </div>
-      <div class="craft-slot empty"></div>
       <div class="craft-slot">
         <div class="mc-tooltip"><div class="tt-name" style="color:#aaa">Zúzott kő</div></div>
         <img src={`${base}/img/blocks/stone.png`} alt="" onerror="this.style.opacity=.3">
       </div>
-      <div class="craft-slot empty"></div>
-      <div class="craft-slot empty"></div>
-      <div class="craft-slot empty"></div>
+      <div class="craft-slot">
+        <div class="mc-tooltip"><div class="tt-name" style="color:#aaa">Zúzott kő</div></div>
+        <img src={`${base}/img/blocks/stone.png`} alt="" onerror="this.style.opacity=.3">
+      </div>
     </div>
     <div class="craft-arrow-box">➜</div>
     <div class="craft-output">
@@ -145,6 +148,7 @@ const sidebarGroups = getSidebarGroups('brewing');
 <h4 data-lang="hu">3. lépés — Fröccsenő változat (opcionális)</h4>
 <BrewingGrid
   ingredient="Lőpor"
+  ingredientImg="img/items/gunpowder.png"
   inputLabel="Bármilyen kész bájital"
   result="Fröccsenő bájital"
   resultColor="#ffcc44"
@@ -172,7 +176,7 @@ const sidebarGroups = getSidebarGroups('brewing');
   <tr><td>4</td><td>~8000 XP</td><td>Bájital IV szintek (max. erő/gyorsaság); 5× hatékonyabb sajt-recept</td></tr>
 </table>
 
-<div class="tip">💡 <strong>Tipp:</strong> Mivel a szakmák jelenleg inaktívak, ezt itt csak történeti megjegyzésként kezelem: ha a rendszer később aktiválódik, a bájitalkészítő és más szakmák közti kizárások újra relevánsak lehetnek.</div>
+<div class="tip"><strong>Tipp:</strong> Mivel a szakmák jelenleg inaktívak, ezt itt csak történeti megjegyzésként kezelem: ha a rendszer később aktiválódik, a bájitalkészítő és más szakmák közti kizárások újra relevánsak lehetnek.</div>
 
 <!-- ─── Cauldron ─── -->
 <h2 id="cauldron">Üst (Cauldron) mechanikák</h2>
@@ -202,67 +206,54 @@ const sidebarGroups = getSidebarGroups('brewing');
   </tr>
 </table>
 
-<div class="tip">💡 <strong>Higanyforrás:</strong> A mocsár biomban található higanyérc (Y 0–40). Olvasztásához @3 kemence (obszidiánkemence) szükséges!</div>
+<div class="tip"><strong>Higanyforrás:</strong> A mocsár biomban található higanyérc (Y 0–40). Olvasztásához @3 kemence (obszidiánkemence) szükséges!</div>
 
 <!-- ─── Potion Effects ─── -->
-<h2 id="potions">Bájital-hatások</h2>
-<p>A MITE: Break Everything 20 különböző bájitalhatást tartalmaz, köztük vanilla és egyedi MITE-hatásokat:</p>
+<h2 id="potions">Főzhető bájitalok</h2>
+<p>A MITE:BE-ban <strong>11 főzhető bájitalhatás</strong> létezik, összesen <strong>52 változatban</strong> (alap · erős II · hosszított · fröccsenő). A Zavaros Bájital (Awkward Potion) minden recept kötelező alapja.</p>
 
-<table>
-  <tr><th>Bájital / Hatás</th><th>Típus</th><th>Leírás</th><th>Szintek</th></tr>
-  <tr><td><strong>Gyorsaság</strong></td><td>Pozitív</td><td>Gyorsabb mozgás</td><td>I–IV</td></tr>
-  <tr><td><strong>Erő</strong></td><td>Pozitív</td><td>Több ütési sebzés</td><td>I–IV</td></tr>
-  <tr><td><strong>Regeneráció</strong></td><td>Pozitív</td><td>Folyamatos gyógyulás</td><td>I–IV</td></tr>
-  <tr><td><strong>Gyógyítás</strong></td><td>Pozitív (azonnali)</td><td>Azonnali életerő-visszatöltés</td><td>I–II</td></tr>
-  <tr><td><strong>Tűzállóság</strong></td><td>Pozitív</td><td>A tűz és a láva nem sebez</td><td>I</td></tr>
-  <tr><td><strong>Láva-ellenállás</strong> ⭐</td><td>Pozitív (MITE)</td><td>Speciális MITE-hatás — láva-sebzés csökkentése</td><td>I</td></tr>
-  <tr><td><strong>Éjjellátás</strong></td><td>Pozitív</td><td>Teljes látás sötétben</td><td>I</td></tr>
-  <tr><td><strong>Víz alatti légzés</strong></td><td>Pozitív</td><td>Korlátlan légzés a víz alatt</td><td>I</td></tr>
-  <tr><td><strong>Láthatatlanság</strong></td><td>Pozitív</td><td>A szörnyek nem látnak (kivétel: HIM)</td><td>I</td></tr>
-  <tr><td><strong>Sértés (Harming)</strong></td><td>Negatív/Fegyver</td><td>Azonnali sebzés — tűzelementál ellen kiváló!</td><td>I–II</td></tr>
-  <tr><td><strong>Mérgezés</strong></td><td>Negatív</td><td>Folyamatos mérgezési sebzés</td><td>I–IV</td></tr>
-  <tr><td><strong>Gyengeség</strong></td><td>Negatív</td><td>Csökkentett ütési sebzés</td><td>I–II</td></tr>
-  <tr><td><strong>Lassítás</strong></td><td>Negatív</td><td>Lassabb mozgás</td><td>I–II</td></tr>
-  <tr><td><strong>Sorvadás (Wither)</strong></td><td>Negatív</td><td>Sorvadásos betegség hatás</td><td>I–II</td></tr>
-  <tr><td><strong>Korrózió</strong> ⭐</td><td>Negatív (MITE)</td><td>Felszerelés tartósságának csökkentése</td><td>I</td></tr>
-  <tr><td><strong>Alvászavar</strong> ⭐</td><td>Negatív (MITE)</td><td>Az alvás nem lehetséges a hatás alatt</td><td>I</td></tr>
-  <tr><td><strong>Fagyás</strong> ⭐</td><td>Negatív (MITE)</td><td>Fagyás — melegítsd magad tűzzel!</td><td>I</td></tr>
-  <tr><td><strong>Napszúrás</strong> ⭐</td><td>Negatív (MITE)</td><td>Hőség-hatás</td><td>I</td></tr>
-  <tr><td><strong>Paralízis</strong> ⭐</td><td>Negatív (MITE)</td><td>Teljes mozgásképtelenség</td><td>I</td></tr>
-  <tr><td><strong>Sebezhetőség</strong> ⭐</td><td>Negatív (MITE)</td><td>Több bekapott sebzés minden forrásból</td><td>I</td></tr>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Hatás</th><th>Hatóanyag</th><th>I</th><th>II</th><th>Hosszított</th><th>Fröccsenő (I)</th></tr>
+  <tr><td colspan="6" style="background:rgba(100,200,100,0.08);font-weight:bold;padding:4px 8px">✅ Pozitív</td></tr>
+  <tr><td><strong>Regeneráció</strong></td><td>Ghast-könny</td><td>0:45</td><td>0:22</td><td>2:00</td><td>0:33</td></tr>
+  <tr><td><strong>Gyorsaság</strong></td><td>Cukor</td><td>3:00</td><td>1:30</td><td>8:00</td><td>2:15</td></tr>
+  <tr><td><strong>Erő</strong></td><td>Blaze-por</td><td>3:00</td><td>1:30</td><td>8:00</td><td>2:15</td></tr>
+  <tr><td><strong>Tűzállóság</strong></td><td>Magmakrém</td><td>3:00</td><td>—</td><td>8:00</td><td>2:15</td></tr>
+  <tr><td><strong>Éjjellátás</strong></td><td>Arany sárgarépa</td><td>3:00</td><td>—</td><td>8:00</td><td>2:15</td></tr>
+  <tr><td><strong>Láthatatlanság</strong></td><td>Fermentált pókszem †</td><td>3:00</td><td>—</td><td>8:00</td><td>2:15</td></tr>
+  <tr><td><strong>Gyógyítás</strong></td><td>Csillogó dinnyeszelet</td><td>azonnali</td><td>azonnali</td><td>—</td><td>✓</td></tr>
+  <tr><td colspan="6" style="background:rgba(255,80,80,0.08);font-weight:bold;padding:4px 8px">❌ Negatív</td></tr>
+  <tr><td><strong>Mérgezés</strong></td><td>Pókszem</td><td>0:45</td><td>0:22</td><td>2:00</td><td>0:33</td></tr>
+  <tr><td><strong>Gyengeség</strong></td><td>Fermentált pókszem †</td><td>1:30</td><td>—</td><td>4:00</td><td>1:07</td></tr>
+  <tr><td><strong>Lassítás</strong></td><td>Fermentált pókszem †</td><td>1:30</td><td>—</td><td>4:00</td><td>1:07</td></tr>
+  <tr><td><strong>Sértés</strong></td><td>Fermentált pókszem †</td><td>azonnali</td><td>azonnali</td><td>—</td><td>✓</td></tr>
 </table>
-<p style="font-size:.82em;color:var(--text2)">⭐ = MITE-egyedi hatás, a vanilla Minecraftban nem szerepel</p>
+<p style="font-size:0.8em;opacity:0.7">† Fermentált pókszem: Vizespalack → Gyengeség | Gyorsaság → Lassítás | Éjjellátás → Láthatatlanság | Mérgezés/Gyógyítás → Sértés<br>
+Fröccsenő időtartam ≈ alap × 75%. II. szintű és hosszított splash változatok is léteznek.</p>
 
-<h3>Hatóanyagok → Hatások</h3>
-<table>
-  <tr><th>Hatóanyag</th><th>Bázishatás</th><th>Megjegyzés</th></tr>
-  <tr><td>Alvilági szemölcs (Nether Wart)</td><td>Zavaros bájital (alap)</td><td>Minden recept kezdete</td></tr>
-  <tr><td>Cukor</td><td>Gyorsaság</td><td>–</td></tr>
-  <tr><td>Blaze-por</td><td>Erő</td><td>Blaze-rúdból</td></tr>
-  <tr><td>Ghast-könny</td><td>Regeneráció</td><td>Ghast dobja</td></tr>
-  <tr><td>Magmakrém</td><td>Tűzállóság</td><td>Magmakocka dobja</td></tr>
-  <tr><td>Arany sárgarépa</td><td>Éjjellátás</td><td>–</td></tr>
-  <tr><td>Pókszem</td><td>Mérgezés</td><td>–</td></tr>
-  <tr><td>Gömbhal</td><td>Víz alatti légzés</td><td>–</td></tr>
-  <tr><td>Csillogó dinnyeszelet</td><td>Gyógyítás</td><td>–</td></tr>
-  <tr><td>Fermentált pókszem</td><td>Gyengeség / Sértés</td><td>Negatív hatásokhoz</td></tr>
-  <tr><td>+ Lőpor</td><td>Fröccsenő változat</td><td>Minden bájitalra alkalmazható</td></tr>
-  <tr><td>+ Vöröskő</td><td>Hosszabb időtartam</td><td>A hatás szintjét nem növeli</td></tr>
-  <tr><td>+ Izzókő-por</td><td>Erősebb hatás (II)</td><td>Vöröskő VAGY izzókő — nem mindkettő!</td></tr>
+<h3 id="modifiers">Módosítók</h3>
+<table class="compare-table">
+  <tr><th>Hozzáadott anyag</th><th>Hatás</th></tr>
+  <tr><td>+ Izzókő-por (Glowstone Dust)</td><td>II. szint — erősebb, rövidebb időtartam</td></tr>
+  <tr><td>+ Vöröskő (Redstone)</td><td>Hosszított időtartam — nem növeli a szintet</td></tr>
+  <tr><td>+ Lőpor (Gunpowder)</td><td>Fröccsenő változat — dobható</td></tr>
 </table>
+<div class="tip">Vöröskő VAGY izzókő-por — nem kombinálhatók egymással!</div>
+
+<div class="info-box">ℹ️ <strong>MITE-specifikus game mechanic effektek</strong> (nem főzhetők, csak mobos/környezeti hatások okozzák): Korrózió · Alvászavar · Fagyás · Napszúrás · Paralízis · Sebezhetőség</div>
 
 <!-- ─── Splash ─── -->
 <h2 id="splash-potions">Fröccsenő bájitalok (Splash Potions)</h2>
 <p>A legtöbb bájital fröccsenő változatban is elkészíthető — a kész bájitalhoz <strong>lőport (Gunpowder)</strong> adj a főzőállványban.</p>
 
-<div class="tip">💡 A fröccsenő bájitalok dobhatók ellenfelekre (Sértés, Lassítás, Gyengeség) VAGY szövetségesekre (Gyógyítás, Erő). A sértés-bájital különösen hatékony a tüzet nem félő tűzelementál ellen!</div>
+<div class="tip">A fröccsenő bájitalok dobhatók ellenfelekre (Sértés, Lassítás, Gyengeség) VAGY szövetségesekre (Gyógyítás, Erő). A sértés-bájital különösen hatékony a tüzet nem félő tűzelementál ellen!</div>
 
-<table>
+<table class="compare-table">
   <tr><th>Stratégia</th><th>Bájital</th><th>Célpont</th></tr>
-  <tr><td>Erős boss-harc</td><td>Erő IV Splash</td><td>Saját magad</td></tr>
-  <tr><td>Menekülés</td><td>Gyorsaság IV Splash</td><td>Saját magad</td></tr>
-  <tr><td>Tűzelementál</td><td>Sértés Splash</td><td>Ellenség (nem sebzi magát!)</td></tr>
-  <tr><td>Szörnycsoportok</td><td>Mérgezés IV Splash</td><td>Szörnycsoportok</td></tr>
+  <tr><td>Boss-harc</td><td>Erő II Splash</td><td>Saját magad</td></tr>
+  <tr><td>Menekülés</td><td>Gyorsaság II Splash</td><td>Saját magad</td></tr>
+  <tr><td>Tűzelementál</td><td>Sértés II Splash</td><td>Ellenség (nem sebzi magát!)</td></tr>
+  <tr><td>Szörnycsoportok</td><td>Mérgezés II Splash</td><td>Szörnycsoportok</td></tr>
   <tr><td>Sérült szövetséges</td><td>Gyógyítás II Splash</td><td>Partner NPC</td></tr>
 </table>
 
@@ -289,7 +280,7 @@ const sidebarGroups = getSidebarGroups('brewing');
   <li>⚠️ A tárgy minőségét (Quality) NEM érinti</li>
 </ul>
 
-<div class="tip">💡 Rendkívül hasznos, ha rossz bűvölést kaptál a bűvölőasztalnál, vagy ha egy boszorkány megátkozta a felszerelésedet!</div>
+<div class="tip">Rendkívül hasznos, ha rossz bűvölést kaptál a bűvölőasztalnál, vagy ha egy boszorkány megátkozta a felszerelésedet!</div>
 
 <!-- ─── Cheese ─── -->
 <h2 id="cheese">Sajtkészítés</h2>
@@ -309,7 +300,7 @@ const sidebarGroups = getSidebarGroups('brewing');
 
 <p><strong>A sajt tápértéke:</strong> Az egyik legjobb étel a MITE-ben — magas jóllakottságot és telítettséget ad. Különösen hasznos hosszú expedíciókon.</p>
 
-<div class="tip">💡 <strong>Pro tipp:</strong> Mindig tegyél be annyi vödröt, amennyit csak tudsz — a receptek 9 vödörig skálázódnak, és minden extra vödör jelentősen csökkenti a darabonkénti nehézséget!</div>
+<div class="tip"><strong>Pro tipp:</strong> Mindig tegyél be annyi vödröt, amennyit csak tudsz — a receptek 9 vödörig skálázódnak, és minden extra vödör jelentősen csökkenti a darabonkénti nehézséget!</div>
 
 </div><!-- end hu -->
 
@@ -326,7 +317,7 @@ const sidebarGroups = getSidebarGroups('brewing');
 <h2 id="brewing-stand">Brewing Stand</h2>
 <p>Craft the Brewing Stand at a <strong>Flint Workbench</strong> (or higher):</p>
 <ul>
-  <li><strong>Ingredients:</strong> 1× Blaze Rod + 2× Cobblestone</li>
+  <li><strong>Ingredients:</strong> 1× Blaze Rod + 3× Cobblestone</li>
   <li><strong>Station:</strong> Flint Workbench or higher</li>
 </ul>
 
@@ -393,6 +384,7 @@ const sidebarGroups = getSidebarGroups('brewing');
 <h4 data-lang="en">Step 3 — Splash variant (optional)</h4>
 <BrewingGrid
   ingredient="Gunpowder"
+  ingredientImg="img/items/gunpowder.png"
   inputLabel="Any finished potion"
   result="Splash Potion"
   resultColor="#ffcc44"
@@ -420,7 +412,7 @@ const sidebarGroups = getSidebarGroups('brewing');
   <tr><td>4</td><td>~8000 XP</td><td>Potion level IV (max strength/speed); 5× cheese recipe</td></tr>
 </table>
 
-<div class="tip">💡 <strong>Tip:</strong> Because professions are currently inactive, treat this as historical context only: if the system is enabled later, Brewer may again conflict with other profession choices.</div>
+<div class="tip"><strong>Tip:</strong> Because professions are currently inactive, treat this as historical context only: if the system is enabled later, Brewer may again conflict with other profession choices.</div>
 
 <!-- ─── Cauldron EN ─── -->
 <h2 id="cauldron">Cauldron Mechanics</h2>
@@ -450,67 +442,54 @@ const sidebarGroups = getSidebarGroups('brewing');
   </tr>
 </table>
 
-<div class="tip">💡 <strong>Mercury source:</strong> Mercury ore found in Swamp biome (Y 0–40). Requires @3 furnace (Obsidian Furnace) to smelt!</div>
+<div class="tip"><strong>Mercury source:</strong> Mercury ore found in Swamp biome (Y 0–40). Requires @3 furnace (Obsidian Furnace) to smelt!</div>
 
 <!-- ─── Potion Effects EN ─── -->
-<h2 id="potions">Potion Effects</h2>
-<p>MITE: Break Everything contains 20 different potion effects, including vanilla and unique MITE effects:</p>
+<h2 id="potions">Brewable Potions</h2>
+<p>MITE:BE has <strong>11 brewable potion effects</strong> in <strong>52 variants total</strong> (base · strong II · extended · splash). Every recipe starts with Nether Wart → Awkward Potion.</p>
 
-<table>
-  <tr><th>Potion / Effect</th><th>Type</th><th>Description</th><th>Levels</th></tr>
-  <tr><td><strong>Speed</strong></td><td>Positive</td><td>Faster movement</td><td>I–IV</td></tr>
-  <tr><td><strong>Strength</strong></td><td>Positive</td><td>Increased melee damage</td><td>I–IV</td></tr>
-  <tr><td><strong>Regeneration</strong></td><td>Positive</td><td>Continuous healing</td><td>I–IV</td></tr>
-  <tr><td><strong>Instant Health</strong></td><td>Positive (instant)</td><td>Instant HP restoration</td><td>I–II</td></tr>
-  <tr><td><strong>Fire Resistance</strong></td><td>Positive</td><td>Fire and lava don't damage you</td><td>I</td></tr>
-  <tr><td><strong>Lava Resistance</strong> ⭐</td><td>Positive (MITE)</td><td>MITE-specific effect — reduces lava damage</td><td>I</td></tr>
-  <tr><td><strong>Night Vision</strong></td><td>Positive</td><td>Full vision in darkness</td><td>I</td></tr>
-  <tr><td><strong>Water Breathing</strong></td><td>Positive</td><td>Unlimited underwater breathing</td><td>I</td></tr>
-  <tr><td><strong>Invisibility</strong></td><td>Positive</td><td>Mobs can't see you (exception: HIM)</td><td>I</td></tr>
-  <tr><td><strong>Instant Damage</strong></td><td>Negative/Weapon</td><td>Instant damage — excellent against Fire Elementals!</td><td>I–II</td></tr>
-  <tr><td><strong>Poison</strong></td><td>Negative</td><td>Continuous poison damage</td><td>I–IV</td></tr>
-  <tr><td><strong>Weakness</strong></td><td>Negative</td><td>Reduced melee damage output</td><td>I–II</td></tr>
-  <tr><td><strong>Slowness</strong></td><td>Negative</td><td>Reduced movement speed</td><td>I–II</td></tr>
-  <tr><td><strong>Wither</strong></td><td>Negative</td><td>Wither disease effect</td><td>I–II</td></tr>
-  <tr><td><strong>Corrosion</strong> ⭐</td><td>Negative (MITE)</td><td>Reduces equipment durability</td><td>I</td></tr>
-  <tr><td><strong>Insomnia</strong> ⭐</td><td>Negative (MITE)</td><td>Cannot sleep while under this effect</td><td>I</td></tr>
-  <tr><td><strong>Cold</strong> ⭐</td><td>Negative (MITE)</td><td>Freezing — warm yourself with fire!</td><td>I</td></tr>
-  <tr><td><strong>Sunstroke</strong> ⭐</td><td>Negative (MITE)</td><td>Heat effect</td><td>I</td></tr>
-  <tr><td><strong>Paralysis</strong> ⭐</td><td>Negative (MITE)</td><td>Complete inability to move</td><td>I</td></tr>
-  <tr><td><strong>Vulnerability</strong> ⭐</td><td>Negative (MITE)</td><td>Increased damage taken from all sources</td><td>I</td></tr>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Effect</th><th>Ingredient</th><th>I</th><th>II</th><th>Extended</th><th>Splash (I)</th></tr>
+  <tr><td colspan="6" style="background:rgba(100,200,100,0.08);font-weight:bold;padding:4px 8px">✅ Positive</td></tr>
+  <tr><td><strong>Regeneration</strong></td><td>Ghast Tear</td><td>0:45</td><td>0:22</td><td>2:00</td><td>0:33</td></tr>
+  <tr><td><strong>Speed</strong></td><td>Sugar</td><td>3:00</td><td>1:30</td><td>8:00</td><td>2:15</td></tr>
+  <tr><td><strong>Strength</strong></td><td>Blaze Powder</td><td>3:00</td><td>1:30</td><td>8:00</td><td>2:15</td></tr>
+  <tr><td><strong>Fire Resistance</strong></td><td>Magma Cream</td><td>3:00</td><td>—</td><td>8:00</td><td>2:15</td></tr>
+  <tr><td><strong>Night Vision</strong></td><td>Golden Carrot</td><td>3:00</td><td>—</td><td>8:00</td><td>2:15</td></tr>
+  <tr><td><strong>Invisibility</strong></td><td>Fermented Spider Eye †</td><td>3:00</td><td>—</td><td>8:00</td><td>2:15</td></tr>
+  <tr><td><strong>Instant Health</strong></td><td>Glistering Melon Slice</td><td>instant</td><td>instant</td><td>—</td><td>✓</td></tr>
+  <tr><td colspan="6" style="background:rgba(255,80,80,0.08);font-weight:bold;padding:4px 8px">❌ Negative</td></tr>
+  <tr><td><strong>Poison</strong></td><td>Spider Eye</td><td>0:45</td><td>0:22</td><td>2:00</td><td>0:33</td></tr>
+  <tr><td><strong>Weakness</strong></td><td>Fermented Spider Eye †</td><td>1:30</td><td>—</td><td>4:00</td><td>1:07</td></tr>
+  <tr><td><strong>Slowness</strong></td><td>Fermented Spider Eye †</td><td>1:30</td><td>—</td><td>4:00</td><td>1:07</td></tr>
+  <tr><td><strong>Instant Damage</strong></td><td>Fermented Spider Eye †</td><td>instant</td><td>instant</td><td>—</td><td>✓</td></tr>
 </table>
-<p style="font-size:.82em;color:var(--text2)">⭐ = MITE-unique effect, not present in vanilla Minecraft</p>
+<p style="font-size:0.8em;opacity:0.7">† Fermented Spider Eye: Water Bottle → Weakness | Speed → Slowness | Night Vision → Invisibility | Poison/Health → Instant Damage<br>
+Splash duration ≈ base × 75%. II and extended splash variants also exist.</p>
 
-<h3>Ingredients → Effects</h3>
-<table>
-  <tr><th>Ingredient</th><th>Base effect</th><th>Note</th></tr>
-  <tr><td>Nether Wart</td><td>Awkward Potion (base)</td><td>Starting point for every recipe</td></tr>
-  <tr><td>Sugar</td><td>Speed</td><td>–</td></tr>
-  <tr><td>Blaze Powder</td><td>Strength</td><td>From Blaze Rod</td></tr>
-  <tr><td>Ghast Tear</td><td>Regeneration</td><td>Dropped by Ghasts</td></tr>
-  <tr><td>Magma Cream</td><td>Fire Resistance</td><td>Dropped by Magma Cubes</td></tr>
-  <tr><td>Golden Carrot</td><td>Night Vision</td><td>–</td></tr>
-  <tr><td>Spider Eye</td><td>Poison</td><td>–</td></tr>
-  <tr><td>Pufferfish</td><td>Water Breathing</td><td>–</td></tr>
-  <tr><td>Glistering Melon Slice</td><td>Instant Health</td><td>–</td></tr>
-  <tr><td>Fermented Spider Eye</td><td>Weakness / Instant Damage</td><td>For negative effects</td></tr>
-  <tr><td>+ Gunpowder</td><td>Splash variant</td><td>Applicable to any potion</td></tr>
-  <tr><td>+ Redstone</td><td>Extended duration</td><td>Does not increase effect level</td></tr>
-  <tr><td>+ Glowstone Dust</td><td>Stronger effect (II)</td><td>Redstone OR Glowstone — not both!</td></tr>
+<h3 id="modifiers">Modifiers</h3>
+<table class="compare-table">
+  <tr><th>Added ingredient</th><th>Effect</th></tr>
+  <tr><td>+ Glowstone Dust</td><td>Level II — stronger, shorter duration</td></tr>
+  <tr><td>+ Redstone</td><td>Extended duration — does not increase level</td></tr>
+  <tr><td>+ Gunpowder</td><td>Splash variant — throwable</td></tr>
 </table>
+<div class="tip">Redstone OR Glowstone Dust — cannot combine both!</div>
+
+<div class="info-box">ℹ️ <strong>MITE-specific game mechanic effects</strong> (not brewable — caused by mobs/environment): Corrosion · Insomnia · Cold · Sunstroke · Paralysis · Vulnerability</div>
 
 <!-- ─── Splash EN ─── -->
 <h2 id="splash-potions">Splash Potions</h2>
 <p>Most potions can be made in Splash form — add <strong>Gunpowder</strong> to any finished potion in the Brewing Stand.</p>
 
-<div class="tip">💡 Splash potions can be thrown at enemies (Instant Damage, Slowness, Weakness) OR allies (Instant Health, Strength). Harming Splash is especially effective against Fire Elementals which are otherwise fire-immune!</div>
+<div class="tip">Splash potions can be thrown at enemies (Instant Damage, Slowness, Weakness) OR allies (Instant Health, Strength). Instant Damage Splash is especially effective against Fire Elementals which are otherwise fire-immune!</div>
 
-<table>
+<table class="compare-table">
   <tr><th>Strategy</th><th>Potion</th><th>Target</th></tr>
-  <tr><td>Boss fight boost</td><td>Strength IV Splash</td><td>Yourself</td></tr>
-  <tr><td>Escape</td><td>Speed IV Splash</td><td>Yourself</td></tr>
-  <tr><td>Fire Elemental</td><td>Harming Splash</td><td>Enemy (won't hurt you!)</td></tr>
-  <tr><td>Crowd control</td><td>Poison IV Splash</td><td>Mob groups</td></tr>
+  <tr><td>Boss fight</td><td>Strength II Splash</td><td>Yourself</td></tr>
+  <tr><td>Escape</td><td>Speed II Splash</td><td>Yourself</td></tr>
+  <tr><td>Fire Elemental</td><td>Instant Damage II Splash</td><td>Enemy (won't hurt you!)</td></tr>
+  <tr><td>Crowd control</td><td>Poison II Splash</td><td>Mob groups</td></tr>
   <tr><td>Wounded ally</td><td>Instant Health II Splash</td><td>Partner NPC</td></tr>
 </table>
 
@@ -537,7 +516,7 @@ const sidebarGroups = getSidebarGroups('brewing');
   <li>⚠️ Does NOT affect item Quality</li>
 </ul>
 
-<div class="tip">💡 Extremely useful if you got a bad enchantment at the Enchanting Table, or if a Witch cursed your equipment!</div>
+<div class="tip">Extremely useful if you got a bad enchantment at the Enchanting Table, or if a Witch cursed your equipment!</div>
 
 <!-- ─── Cheese EN ─── -->
 <h2 id="cheese">Cheese Crafting</h2>
@@ -555,7 +534,7 @@ const sidebarGroups = getSidebarGroups('brewing');
   <tr><td>9× buckets</td><td>9× Cheese</td><td style="color:var(--green)">711/unit</td><td style="color:var(--green)">9× efficient (MAX)</td></tr>
 </table>
 
-<div class="tip">💡 <strong>Pro tip:</strong> Always use as many buckets as possible — recipes scale up to 9 buckets, and each additional bucket reduces the difficulty-per-unit ratio significantly!</div>
+<div class="tip"><strong>Pro tip:</strong> Always use as many buckets as possible — recipes scale up to 9 buckets, and each additional bucket reduces the difficulty-per-unit ratio significantly!</div>
 
 </div><!-- end en -->
 
@@ -571,7 +550,7 @@ const sidebarGroups = getSidebarGroups('brewing');
 <h2 id="brewing-stand">Стойка для зелий</h2>
 <p>Для создания стойки для зелий нужен <strong>Кремнёвый верстак</strong> или верстак более высокого тира:</p>
 <ul>
-  <li><strong>Ингредиенты:</strong> 1× Стержень Блейза + 2× Булыжник</li>
+  <li><strong>Ингредиенты:</strong> 1× Стержень Блейза + 3× Булыжник</li>
   <li><strong>Станция:</strong> Кремнёвый верстак или выше</li>
 </ul>
 
@@ -637,6 +616,7 @@ const sidebarGroups = getSidebarGroups('brewing');
 <h4>Шаг 3 — Взрывной вариант (необязательно)</h4>
 <BrewingGrid
   ingredient="Порох"
+  ingredientImg="img/items/gunpowder.png"
   inputLabel="Любое готовое зелье"
   result="Взрывное зелье"
   resultColor="#ffcc44"
@@ -687,63 +667,50 @@ const sidebarGroups = getSidebarGroups('brewing');
   </tr>
 </table>
 
-<h2 id="potions">Эффекты зелий</h2>
-<p>В MITE:BE есть 20 различных эффектов зелий, включая ванильные и уникальные эффекты мода:</p>
+<h2 id="potions">Варимые зелья</h2>
+<p>В MITE:BE есть <strong>11 варимых эффектов зелий</strong>, всего <strong>52 варианта</strong> (базовый · усиленный II · длительный · взрывной). Каждый рецепт начинается с Адского гриба → Неловкое зелье.</p>
 
-<table>
-  <tr><th>Зелье / Эффект</th><th>Тип</th><th>Описание</th><th>Уровни</th></tr>
-  <tr><td><strong>Скорость</strong></td><td>Положительный</td><td>Повышает скорость передвижения</td><td>I–IV</td></tr>
-  <tr><td><strong>Сила</strong></td><td>Положительный</td><td>Увеличенный урон в ближнем бою</td><td>I–IV</td></tr>
-  <tr><td><strong>Регенерация</strong></td><td>Положительный</td><td>Непрерывное лечение</td><td>I–IV</td></tr>
-  <tr><td><strong>Мгновенное здоровье</strong></td><td>Положительный (мгновенный)</td><td>Мгновенно восстанавливает здоровье</td><td>I–II</td></tr>
-  <tr><td><strong>Огнестойкость</strong></td><td>Положительный</td><td>Огонь и лава не наносят урон</td><td>I</td></tr>
-  <tr><td><strong>Сопротивление лаве</strong> ⭐</td><td>Положительный (MITE)</td><td>Особый эффект MITE — снижение урона от лавы</td><td>I</td></tr>
-  <tr><td><strong>Ночное зрение</strong></td><td>Положительный</td><td>Полный обзор в темноте</td><td>I</td></tr>
-  <tr><td><strong>Подводное дыхание</strong></td><td>Положительный</td><td>Неограниченное дыхание под водой</td><td>I</td></tr>
-  <tr><td><strong>Невидимость</strong></td><td>Положительный</td><td>Мобы вас не видят (исключение: HIM)</td><td>I</td></tr>
-  <tr><td><strong>Мгновенный урон</strong></td><td>Негативный / боевой</td><td>Мгновенно наносит урон; особенно полезен против Огненных элементалей</td><td>I–II</td></tr>
-  <tr><td><strong>Яд</strong></td><td>Негативный</td><td>Непрерывный урон от яда</td><td>I–IV</td></tr>
-  <tr><td><strong>Слабость</strong></td><td>Негативный</td><td>Сниженный урон в ближнем бою</td><td>I–II</td></tr>
-  <tr><td><strong>Замедление</strong></td><td>Негативный</td><td>Сниженная скорость передвижения</td><td>I–II</td></tr>
-  <tr><td><strong>Иссушение</strong></td><td>Негативный</td><td>Накладывает эффект иссушения</td><td>I–II</td></tr>
-  <tr><td><strong>Коррозия</strong> ⭐</td><td>Негативный (MITE)</td><td>Снижает прочность снаряжения</td><td>I</td></tr>
-  <tr><td><strong>Бессонница</strong> ⭐</td><td>Негативный (MITE)</td><td>Нельзя спать под этим эффектом</td><td>I</td></tr>
-  <tr><td><strong>Холод</strong> ⭐</td><td>Негативный (MITE)</td><td>Замерзание — согрейтесь у огня!</td><td>I</td></tr>
-  <tr><td><strong>Тепловой удар</strong> ⭐</td><td>Негативный (MITE)</td><td>Эффект жары</td><td>I</td></tr>
-  <tr><td><strong>Паралич</strong> ⭐</td><td>Негативный (MITE)</td><td>Полная неспособность двигаться</td><td>I</td></tr>
-  <tr><td><strong>Уязвимость</strong> ⭐</td><td>Негативный (MITE)</td><td>Увеличенный получаемый урон из всех источников</td><td>I</td></tr>
+<table class="compare-table" style="font-size:0.85em">
+  <tr><th>Эффект</th><th>Ингредиент</th><th>I</th><th>II</th><th>Длительное</th><th>Взрывное (I)</th></tr>
+  <tr><td colspan="6" style="background:rgba(100,200,100,0.08);font-weight:bold;padding:4px 8px">✅ Положительные</td></tr>
+  <tr><td><strong>Регенерация</strong></td><td>Слеза Гаста</td><td>0:45</td><td>0:22</td><td>2:00</td><td>0:33</td></tr>
+  <tr><td><strong>Скорость</strong></td><td>Сахар</td><td>3:00</td><td>1:30</td><td>8:00</td><td>2:15</td></tr>
+  <tr><td><strong>Сила</strong></td><td>Порошок Блейза</td><td>3:00</td><td>1:30</td><td>8:00</td><td>2:15</td></tr>
+  <tr><td><strong>Огнестойкость</strong></td><td>Магмовый крем</td><td>3:00</td><td>—</td><td>8:00</td><td>2:15</td></tr>
+  <tr><td><strong>Ночное зрение</strong></td><td>Золотая морковь</td><td>3:00</td><td>—</td><td>8:00</td><td>2:15</td></tr>
+  <tr><td><strong>Невидимость</strong></td><td>Ферм. глаз паука †</td><td>3:00</td><td>—</td><td>8:00</td><td>2:15</td></tr>
+  <tr><td><strong>Мгновенное здоровье</strong></td><td>Сверкающий ломтик дыни</td><td>мгнов.</td><td>мгнов.</td><td>—</td><td>✓</td></tr>
+  <tr><td colspan="6" style="background:rgba(255,80,80,0.08);font-weight:bold;padding:4px 8px">❌ Негативные</td></tr>
+  <tr><td><strong>Яд</strong></td><td>Глаз паука</td><td>0:45</td><td>0:22</td><td>2:00</td><td>0:33</td></tr>
+  <tr><td><strong>Слабость</strong></td><td>Ферм. глаз паука †</td><td>1:30</td><td>—</td><td>4:00</td><td>1:07</td></tr>
+  <tr><td><strong>Замедление</strong></td><td>Ферм. глаз паука †</td><td>1:30</td><td>—</td><td>4:00</td><td>1:07</td></tr>
+  <tr><td><strong>Мгновенный урон</strong></td><td>Ферм. глаз паука †</td><td>мгнов.</td><td>мгнов.</td><td>—</td><td>✓</td></tr>
 </table>
-<p style="font-size:.82em;color:var(--text2)">⭐ = уникальный эффект MITE, отсутствующий в ванильном Minecraft</p>
+<p style="font-size:0.8em;opacity:0.7">† Ферментированный глаз паука: Бутылка воды → Слабость | Скорость → Замедление | Ночное зрение → Невидимость | Яд/Здоровье → Урон<br>
+Длительность взрывного зелья ≈ базовая × 75%. Взрывные варианты II и длительные тоже существуют.</p>
 
-<h3>Ингредиенты → Эффекты</h3>
-<table>
-  <tr><th>Ингредиент</th><th>Базовый эффект</th><th>Примечание</th></tr>
-  <tr><td>Адский гриб (Nether Wart)</td><td>Неловкое зелье (база)</td><td>Начало любого рецепта</td></tr>
-  <tr><td>Сахар</td><td>Скорость</td><td>–</td></tr>
-  <tr><td>Порошок Блейза</td><td>Сила</td><td>Из стержня Блейза</td></tr>
-  <tr><td>Слеза Гаста</td><td>Регенерация</td><td>Выпадает с Гастов</td></tr>
-  <tr><td>Магмовый крем</td><td>Огнестойкость</td><td>Выпадает с Магмовых кубов</td></tr>
-  <tr><td>Золотая морковь</td><td>Ночное зрение</td><td>–</td></tr>
-  <tr><td>Глаз паука</td><td>Яд</td><td>–</td></tr>
-  <tr><td>Рыба-шар</td><td>Подводное дыхание</td><td>–</td></tr>
-  <tr><td>Сверкающий ломтик дыни</td><td>Мгновенное здоровье</td><td>–</td></tr>
-  <tr><td>Ферментированный глаз паука</td><td>Слабость / Мгновенный урон</td><td>Для негативных эффектов</td></tr>
-  <tr><td>+ Порох</td><td>Взрывной вариант</td><td>Можно применить к любому зелью</td></tr>
-  <tr><td>+ Красный камень</td><td>Увеличенная длительность</td><td>Не повышает уровень эффекта</td></tr>
-  <tr><td>+ Светокаменная пыль</td><td>Более сильный эффект (II)</td><td>Красный камень ИЛИ пыль — не оба!</td></tr>
+<h3 id="modifiers">Модификаторы</h3>
+<table class="compare-table">
+  <tr><th>Добавленный ингредиент</th><th>Эффект</th></tr>
+  <tr><td>+ Светокаменная пыль</td><td>Уровень II — сильнее, но короче</td></tr>
+  <tr><td>+ Красный камень</td><td>Увеличенная длительность — не повышает уровень</td></tr>
+  <tr><td>+ Порох</td><td>Взрывной вариант — можно бросить</td></tr>
 </table>
+<div class="tip">Красный камень ИЛИ светокаменная пыль — нельзя комбинировать!</div>
+
+<div class="info-box">ℹ️ <strong>Уникальные игровые эффекты MITE</strong> (не варятся — вызываются мобами/окружением): Коррозия · Бессонница · Холод · Тепловой удар · Паралич · Уязвимость</div>
 
 <h2 id="splash-potions">Взрывные зелья</h2>
-<p>Большинство зелий можно сделать во взрывном варианте — добавьте <strong>Порох</strong> к готовому зелью на стойке.</p>
+<p>Большинство зелий можно сделать во взрывном варианте — добавьте <strong>Порох</strong> к готовому зелью на стойке для зелий.</p>
 
-<div class="tip">💡 Взрывные зелья можно бросать как во врагов (Мгновенный урон, Замедление, Слабость), так и в союзников (Мгновенное здоровье, Сила). Взрывное зелье мгновенного урона особенно эффективно против Огненных элементалей.</div>
+<div class="tip">Взрывные зелья можно бросать как во врагов (Мгновенный урон, Замедление, Слабость), так и в союзников (Мгновенное здоровье, Сила). Взрывное зелье мгновенного урона особенно эффективно против Огненных элементалей.</div>
 
-<table>
+<table class="compare-table">
   <tr><th>Стратегия</th><th>Зелье</th><th>Цель</th></tr>
-  <tr><td>Бой с боссом</td><td>Сила IV (взрывное)</td><td>На себя</td></tr>
-  <tr><td>Побег</td><td>Скорость IV (взрывное)</td><td>На себя</td></tr>
-  <tr><td>Огненный элементаль</td><td>Мгновенный урон (взрывное)</td><td>Враг (себя не заденет!)</td></tr>
-  <tr><td>Группа мобов</td><td>Яд IV (взрывное)</td><td>Группа мобов</td></tr>
+  <tr><td>Бой с боссом</td><td>Сила II (взрывное)</td><td>На себя</td></tr>
+  <tr><td>Побег</td><td>Скорость II (взрывное)</td><td>На себя</td></tr>
+  <tr><td>Огненный элементаль</td><td>Мгновенный урон II (взрывное)</td><td>Враг (себя не заденет!)</td></tr>
+  <tr><td>Группа мобов</td><td>Яд II (взрывное)</td><td>Группа мобов</td></tr>
   <tr><td>Раненый союзник</td><td>Мгновенное здоровье II (взрывное)</td><td>NPC-напарник</td></tr>
 </table>
 
@@ -771,7 +738,7 @@ const sidebarGroups = getSidebarGroups('brewing');
   <tr><td>9× вёдер</td><td>9× Сыра</td><td style="color:var(--green)">711/шт</td><td style="color:var(--green)">В 9 раз эффективнее (максимум)</td></tr>
 </table>
 
-<div class="tip">💡 <strong>Совет:</strong> Старайтесь использовать как можно больше вёдер: рецепты масштабируются до 9 вёдер, и каждое дополнительное ведро заметно снижает сложность в расчёте на единицу результата.</div>
+<div class="tip"><strong>Совет:</strong> Старайтесь использовать как можно больше вёдер: рецепты масштабируются до 9 вёдер, и каждое дополнительное ведро заметно снижает сложность в расчёте на единицу результата.</div>
 
 </div><!-- end ru -->
 

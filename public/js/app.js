@@ -602,12 +602,14 @@ function initSectionAnchors() {
   function show(e) {
     var id = this.dataset.id;
     if (!id) return;
+    var aliases = window.MITE_ITEM_ALIASES || {};
+    var canonicalId = aliases[id] || id;
     // items adatot a window.MITE_ITEMS-ből olvasuk (ha be van töltve)
     var items = window.MITE_ITEMS || {};
-    var item = items[id];
+    var item = items[canonicalId] || items[id];
     if (!tip) tip = createTip();
     var lang = localStorage.getItem('mite-wiki-lang') || 'hu';
-    var name = item ? (item.name[lang] || item.name.en || id) : id;
+    var name = item ? (item.name[lang] || item.name.en || canonicalId) : canonicalId;
     var img = item ? item.img : null;
     var tier = item ? item.tier : null;
     var tierColors = {
