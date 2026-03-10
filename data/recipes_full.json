@@ -10052,7 +10052,24 @@
       "melon_slice",
       "melon_slice"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "melon_slice",
+        "melon_slice",
+        "_"
+      ],
+      [
+        "melon_slice",
+        "melon_slice",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "blaze_rod_455",
