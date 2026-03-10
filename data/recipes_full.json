@@ -32979,11 +32979,15 @@
     "difficulty": 6000,
     "skills": [],
     "ingredients": [
+      "gold_block",
+      "emerald_block",
+      "gold_block",
+      "redstone_block",
       "enchantment_table",
-      "diamond",
-      "diamond",
-      "diamond",
-      "diamond"
+      "redstone_block",
+      "gold_block",
+      "emerald_block",
+      "gold_block"
     ],
     "shaped": true,
     "pattern": [
@@ -33580,7 +33584,16 @@
     "difficulty": 2000,
     "skills": [],
     "ingredients": [
+      "obsidian",
+      "obsidian",
+      "obsidian",
+      "obsidian",
       "blue_compass"
+      ,
+      "obsidian",
+      "obsidian",
+      "obsidian",
+      "obsidian"
     ],
     "shaped": true,
     "pattern": [

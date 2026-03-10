@@ -295,348 +295,669 @@
   },
   "copper_sword": {
     "mcmod_id": 773283,
-    "desc": "攻击伤害+7，最大品质可达到精良。 0.6.0版本修改铜剑只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的铜剑所需的经验值： 普通 优秀 精良 铜剑 0 330 660",
+    "desc": "Copper sword with 7 attack damage. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改铜剑只能在"
+      "v0.6.0: Copper swords were moved to furnace crafting."
     ],
     "desc_en": "Copper sword with 7 attack damage. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "7 sebzésű rézkard. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Медный меч с уроном 7. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Медный меч с уроном 7. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Copper swords were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A rézkard kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Медные мечи были переведены на печное создание."
+    ]
   },
   "copper_pickaxe": {
     "mcmod_id": 773571,
-    "desc": "攻击伤害+5，最大品质可达精良，能伤害除黑曜石土元素之外的所有土元素。 无法挖掘钻石矿石、绿宝石矿石和黑曜石。 0.5.9版本新增设定，无需精准采集可直接挖掘冰。 0.6.0版本修改铜镐只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的铜镐所需的经验值： 普通 优秀 精良 铜镐 0 500 1000 品质附加效果： 普通：无 优秀：+50%耐久",
+    "desc": "Copper pickaxe with 5 attack damage. Damages most earth elementals, can mine ice without Silk Touch, and is crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.5.9版本新增设定，无需精准采集可直接挖掘冰",
-      "0.6.0版本修改铜镐只能在"
+      "v0.5.9: Copper pickaxes gained direct ice mining without Silk Touch.",
+      "v0.6.0: Copper pickaxes were moved to furnace crafting."
     ],
     "desc_en": "Copper pickaxe with 5 attack damage. Damages most earth elementals, can mine ice without Silk Touch, and is crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "5 sebzésű rézcsákány. A legtöbb föld elementált sebzi, Selyemérintés nélkül is bányássza a jeget, és edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Медная кирка с уроном 5. Бьёт большинство земляных элементалей, добывает лёд без Шёлкового касания и крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Медная кирка с уроном 5. Бьёт большинство земляных элементалей, добывает лёд без Шёлкового касания и крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.5.9: Copper pickaxes gained direct ice mining without Silk Touch.",
+      "v0.6.0: Copper pickaxes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.5.9: A rézcsákány Silk Touch nélkül is tud jeget bányászni.",
+      "v0.6.0: A rézcsákány kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.5.9: Медные кирки получили прямую добычу льда без Шёлкового касания.",
+      "v0.6.0: Медные кирки были переведены на печное создание."
+    ]
   },
   "copper_axe": {
     "mcmod_id": 773583,
-    "desc": "攻击伤害+6，最大品质可达精良。 0.6.0版本修改铜斧只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的铜斧所需的经验值： 普通 优秀 精良 铜斧 0 500 1000",
+    "desc": "Copper axe with 6 attack damage. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改铜斧只能在"
+      "v0.6.0: Copper axes were moved to furnace crafting."
     ],
     "desc_en": "Copper axe with 6 attack damage. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "6 sebzésű rézbalta. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Медный топор с уроном 6. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Медный топор с уроном 6. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Copper axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A rézbalta kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Медные топоры были переведены на печное создание."
+    ]
   },
   "copper_war_hammer": {
     "mcmod_id": 773295,
-    "desc": "战锤是一种高耐久的武器，可以用来战斗、挖矿，还可以用来挖南瓜、按钮等方块，挖掘消耗的耐久度比其他工具少。 可用附魔：击晕、击退、亡灵杀手、耐久。 攻击伤害+5，制作品质最大可达精良。 0.6.0版本新增： 铜战锤只能在 硬化粘土炉 或 大型熔炉 中合成。 战锤消耗180耐久和1个矿合成12个对应粒。 战锤消耗140耐久和1个锭合成9个对应粒。 战锤和工作台等级不低于参与合成的矿石或锭。 制作不同品质的铜战锤所需的经验值： 普通 优秀 精良 铜战锤 0 820 1640",
+    "desc": "Copper warhammer with 5 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本新增："
+      "v0.6.0: Copper warhammers were moved to furnace crafting."
     ],
     "desc_en": "Copper warhammer with 5 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "5 sebzésű réz harci kalapács. Harcra, bányászatra, illetve ércek vagy ingotok szemcsékre bontására használható. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Медный боевой молот с уроном 5. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Медный боевой молот с уроном 5. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Copper warhammers were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A réz harci kalapács kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Медные боевые молоты были переведены на печное создание."
+    ]
   },
   "copper_hoe": {
     "mcmod_id": 773638,
-    "desc": "攻击伤害+4，最大品质可达精良。 0.6.0版本修改铜锄只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的铜锄所需的经验值： 普通 优秀 精良 铜锄 0 340 680",
+    "desc": "Copper hoe with 4 attack damage. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改铜锄只能在"
+      "v0.6.0: Copper hoes were moved to furnace crafting."
     ],
     "desc_en": "Copper hoe with 4 attack damage. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "4 sebzésű rézkapa. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Медная мотыга с уроном 4. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Медная мотыга с уроном 4. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Copper hoes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A rézkapa kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Медные мотыги были переведены на печное создание."
+    ]
   },
   "copper_shovel": {
     "mcmod_id": 773553,
-    "desc": "攻击伤害+4，最大品质可达精良。 0.6.0版本修改铜锹只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的铜锹所需的经验值： 普通 优秀 精良 铜锹 0 180 360",
+    "desc": "Copper shovel with 4 attack damage. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改铜锹只能在"
+      "v0.6.0: Copper shovels were moved to furnace crafting."
     ],
     "desc_en": "Copper shovel with 4 attack damage. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "4 sebzésű rézlapát. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Медная лопата с уроном 4. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Медная лопата с уроном 4. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Copper shovels were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A rézlapát kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Медные лопаты были переведены на печное создание."
+    ]
   },
   "copper_dagger": {
     "mcmod_id": 773301,
-    "desc": "攻击伤害+5，最大品质可达精良。 无法格挡。 0.6.0版本修改铜短剑只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的铜短剑所需的经验值： 普通 优秀 精良 铜短剑 0 170 340",
+    "desc": "Copper dagger with 5 attack damage. Cannot block. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改铜短剑只能在"
+      "v0.6.0: Copper daggers were moved to furnace crafting."
     ],
     "desc_en": "Copper dagger with 5 attack damage. Cannot block. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "5 sebzésű réztőr. Nem tud blokkolni. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Медный кинжал с уроном 5. Не может блокировать. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Медный кинжал с уроном 5. Не может блокировать. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Copper daggers were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A réztőr kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Медные кинжалы были переведены на печное создание."
+    ]
   },
   "copper_battle_axe": {
     "mcmod_id": 773289,
-    "desc": "战斧是剑和斧子的混合工具。它的耐久比同材质的剑或者斧子两者中的任意一个都高，并且它的成本要低于同时制作上述两个工具，它的攻击力相当于同材质的剑。 砍伐原木（硬度为120）有额外耐久损耗，一次消耗150点耐久，使用大斧头则不会有此额外损耗。 铜战斧攻击伤害+7，攻击消耗75耐久，最大品质可达精良。 0.6.0版本修改铜战斧只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的铜战斧所需的经验值： 普通 优秀 精良 铜战斧 0 660 1320",
+    "desc": "Copper battle axe with 7 attack damage. Axe-sword hybrid with extra durability cost when chopping logs. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改铜战斧只能在"
+      "v0.6.0: Copper battle axes were moved to furnace crafting."
     ],
     "desc_en": "Copper battle axe with 7 attack damage. Axe-sword hybrid with extra durability cost when chopping logs. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "7 sebzésű réz csatabárd. Fejsze-kard hibrid, amely rönkvágáskor plusz tartósságot fogyaszt. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Медный боевой топор с уроном 7. Гибрид топора и меча; при рубке брёвен тратит дополнительную прочность. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Медный боевой топор с уроном 7. Гибрид топора и меча; при рубке брёвен тратит дополнительную прочность. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Copper battle axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A réz csatabárd kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Медные боевые топоры были переведены на печное создание."
+    ]
   },
   "copper_mattock": {
     "mcmod_id": 773685,
-    "desc": "鸭嘴锄是锹和锄头的混合工具。它的耐久比同材质的锹或者锄头两者中的任意一个都高，尽管它的成本要高于同时制作上述两种工具。 攻击伤害+4，最大品质可达精良。 0.6.0版本修改铜鸭嘴锄只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的铜鸭嘴锄所需的经验值： 普通 优秀 精良 铜鸭嘴锄 0 660 1320",
+    "desc": "Copper mattock with 4 attack damage. Shovel-hoe hybrid tool. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改铜鸭嘴锄只能在"
+      "v0.6.0: Copper mattocks were moved to furnace crafting."
     ],
     "desc_en": "Copper mattock with 4 attack damage. Shovel-hoe hybrid tool. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "4 sebzésű réz kacsacsőrű kapa. Ásó-kapa hibrid eszköz. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Медная мотыга-кирка с уроном 4. Гибрид лопаты и мотыги. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Медная мотыга-кирка с уроном 4. Гибрид лопаты и мотыги. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Copper mattocks were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A réz kacsacsőrű kapa kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Медные мотыги-кирки были переведены на печное создание."
+    ]
   },
   "copper_scythe": {
     "mcmod_id": 773591,
-    "desc": "镰刀用来快速收割高草和小麦（收割其他作物没有速度加成）。 攻击伤害+4，最大品质可达精良。 0.6.0版本修改铜镰刀只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的铜镰刀所需的经验值： 普通 优秀 精良 铜镰刀 0 350 700",
+    "desc": "Copper scythe with 4 attack damage. Harvests tall grass and wheat quickly. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改铜镰刀只能在"
+      "v0.6.0: Copper scythes were moved to furnace crafting."
     ],
     "desc_en": "Copper scythe with 4 attack damage. Harvests tall grass and wheat quickly. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "4 sebzésű rézkasza. Gyorsan arat magas füvet és búzát. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Медная коса с уроном 4. Быстро срезает высокую траву и пшеницу. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Медная коса с уроном 4. Быстро срезает высокую траву и пшеницу. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Copper scythes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A rézkasza kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Медные косы были переведены на печное создание."
+    ]
   },
   "copper_shears": {
     "mcmod_id": 773503,
-    "desc": "点击左键可用来快速破坏高草，点击右键可以剪下高草物品。 攻击伤害+3，最大品质可达精良。 0.6.0版本修改铜剪刀只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的铜剪刀所需的经验值： 普通 优秀 精良 铜剪刀 0 320 640",
+    "desc": "Copper shears with 3 attack damage. Useful for cutting grass. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改铜剪刀只能在"
+      "v0.6.0: Copper shears were moved to furnace crafting."
     ],
     "desc_en": "Copper shears with 3 attack damage. Useful for cutting grass. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "3 sebzésű rézolló. Fű nyírására is használható. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Медные ножницы с уроном 3. Подходят и для срезания травы. Крафтятся в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Медные ножницы с уроном 3. Подходят и для срезания травы. Крафтятся в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Copper shears were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A rézolló kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Медные ножницы были переведены на печное создание."
+    ]
   },
   "silver_sword": {
     "mcmod_id": 773284,
-    "desc": "攻击伤害+7，对亡灵有伤害加成，最大品质可达到精良。可以攻击黑色食尸鬼、尸妖、暗影蝙蝠。可以燃烧100 ticks （0.5物品）。 0.6.0版本修改银剑只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的银剑所需的经验值： 普通 优秀 精良 银剑 0 330 660",
+    "desc": "Silver sword with 7 attack damage. Strong against undead; can hit black ghouls, wights, and shadow bats. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改银剑只能在"
+      "v0.6.0: Silver swords were moved to furnace crafting."
     ],
     "desc_en": "Silver sword with 7 attack damage. Strong against undead; can hit black ghouls, wights, and shadow bats. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "7 sebzésű ezüst kard. Erős az élőholtak ellen; megsebezheti a fekete ghoulokat, a wighteket és az árnyékdenevéreket. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Серебряный меч с уроном 7. Эффективен против нежити; может бить чёрных гулей, умертвий и теневых летучих мышей. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Серебряный меч с уроном 7. Эффективен против нежити; может бить чёрных гулей, умертвий и теневых летучих мышей. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Silver swords were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ezüst kard kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Серебряные мечи были переведены на печное создание."
+    ]
   },
   "silver_pickaxe": {
     "mcmod_id": 773572,
-    "desc": "攻击伤害+5，自带亡灵杀手，最大品质可达精良。无法挖掘钻石矿石、绿宝石矿石和黑曜石。 对亡灵怪物有伤害加成， 可以攻击 白色食尸鬼。 能伤害除黑曜石土元素之外的所有 土元素 。 0.5.9版本新增设定，无需精准采集可直接挖掘冰。 0.6.0版本修改银镐只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的银镐所需的经验值： 普通 优秀 精良 银镐 0 500 1000",
+    "desc": "Silver pickaxe with 5 attack damage. Strong against undead, can hit white ghouls, damages most earth elementals, and mines ice without Silk Touch. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.5.9版本新增设定，无需精准采集可直接挖掘冰",
-      "0.6.0版本修改银镐只能在"
+      "v0.5.9: Silver pickaxes gained direct ice mining without Silk Touch.",
+      "v0.6.0: Silver pickaxes were moved to furnace crafting."
     ],
     "desc_en": "Silver pickaxe with 5 attack damage. Strong against undead, can hit white ghouls, damages most earth elementals, and mines ice without Silk Touch. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "5 sebzésű ezüst csákány. Erős az élőholtak ellen, megsebezheti a fehér ghoulokat, sebzi a legtöbb földelementált, és a jeget Silk Touch nélkül is bányássza. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Серебряная кирка с уроном 5. Эффективна против нежити, может бить белых гулей, наносит урон большинству земляных элементалей и добывает лёд без Шёлкового касания. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Серебряная кирка с уроном 5. Эффективна против нежити, может бить белых гулей, наносит урон большинству земляных элементалей и добывает лёд без Шёлкового касания. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.5.9: Silver pickaxes gained direct ice mining without Silk Touch.",
+      "v0.6.0: Silver pickaxes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.5.9: Az ezüst csákány Silk Touch nélkül is tud jeget bányászni.",
+      "v0.6.0: Az ezüst csákány kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.5.9: Серебряные кирки получили прямую добычу льда без Шёлкового касания.",
+      "v0.6.0: Серебряные кирки были переведены на печное создание."
+    ]
   },
   "silver_axe": {
     "mcmod_id": 773584,
-    "desc": "对亡灵怪物有伤害加成；可以攻击白色食尸鬼。 攻击伤害+6，最大品质可达精良。 0.6.0版本修改银斧只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的银斧所需的经验值： 普通 优秀 精良 银斧 0 500 1000",
+    "desc": "Silver axe with 6 attack damage. Strong against undead and can hit white ghouls. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改银斧只能在"
+      "v0.6.0: Silver axes were moved to furnace crafting."
     ],
     "desc_en": "Silver axe with 6 attack damage. Strong against undead and can hit white ghouls. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "6 sebzésű ezüst fejsze. Erős az élőholtak ellen, és megsebezheti a fehér ghoulokat. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Серебряный топор с уроном 6. Эффективен против нежити и может бить белых гулей. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Серебряный топор с уроном 6. Эффективен против нежити и может бить белых гулей. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Silver axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ezüst fejsze kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Серебряные топоры были переведены на печное создание."
+    ]
   },
   "silver_war_hammer": {
     "mcmod_id": 773296,
-    "desc": "战锤是一种耐久度特别高的武器，它也可以用来挖矿。 攻击伤害+5，最大品质可达精良。对亡灵怪物有伤害加成。 可以攻击黑色食尸鬼、尸妖、暗影蝙蝠。 0.6.0版本新增： 银战锤只能在 硬化粘土炉 或 大型熔炉 中合成。 战锤消耗180耐久和1个矿合成12个对应粒。 战锤消耗140耐久和1个锭合成9个对应粒。 战锤和工作台等级不低于参与合成的矿石或锭。 制作不同品质的银战锤所需的经验值： 普通 优秀 精良 银战锤 0 820 1640",
+    "desc": "Silver warhammer with 5 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Strong against undead; can hit black ghouls, wights, and shadow bats. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本新增："
+      "v0.6.0: Silver warhammers were moved to furnace crafting."
     ],
     "desc_en": "Silver warhammer with 5 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Strong against undead; can hit black ghouls, wights, and shadow bats. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "5 sebzésű ezüst harci kalapács. Harcra, bányászatra, illetve ércek és rudak szemcsékre bontására használható. Erős az élőholtak ellen; megsebezheti a fekete ghoulokat, a wighteket és az árnyékdenevéreket. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Серебряный боевой молот с уроном 5. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Эффективен против нежити; может бить чёрных гулей, умертвий и теневых летучих мышей. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Серебряный боевой молот с уроном 5. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Эффективен против нежити; может бить чёрных гулей, умертвий и теневых летучих мышей. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Silver warhammers were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ezüst harci kalapács kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Серебряные боевые молоты были переведены на печное создание."
+    ]
   },
   "gold_sword": {
     "mcmod_id": 773815,
-    "desc": "攻击伤害+6，最大品质可达史诗。 0.6.0版本修改金剑只能在 大型熔炉 中合成。 制作不同品质的金剑所需的经验值： 普通 优秀 精良 史诗 金剑 0 330 660 1320",
+    "desc": "Gold sword with 6 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改金剑只能在"
+      "v0.6.0: Gold swords were moved to furnace crafting."
     ],
     "desc_en": "Gold sword with 6 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "6 sebzésű arany kard. Nagy kemencében készül.",
-    "desc_ru": "Золотой меч с уроном 6. Крафтится в большой печи."
+    "desc_ru": "Золотой меч с уроном 6. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Gold swords were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az arany kard kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Золотые мечи были переведены на печное создание."
+    ]
   },
   "gold_pickaxe": {
     "mcmod_id": 773573,
-    "desc": "攻击伤害+4，最大品质可达史诗，能伤害除黑曜石土元素之外的所有土元素。 无法挖掘钻石矿石、绿宝石矿石和黑曜石。 0.5.9版本新增设定，无需精准采集可直接挖掘冰。 0.6.0版本修改金镐只能在 大型熔炉 中合成。 制作不同品质的金镐所需的经验值： 普通 优秀 精良 史诗 金镐 0 500 1000 2000",
+    "desc": "Gold pickaxe with 4 attack damage. Damages most earth elementals and mines ice without Silk Touch. Crafted in the Large Furnace.",
     "versions": [
-      "0.5.9版本新增设定，无需精准采集可直接挖掘冰",
-      "0.6.0版本修改金镐只能在"
+      "v0.5.9: Gold pickaxes gained direct ice mining without Silk Touch.",
+      "v0.6.0: Gold pickaxes were moved to furnace crafting."
     ],
     "desc_en": "Gold pickaxe with 4 attack damage. Damages most earth elementals and mines ice without Silk Touch. Crafted in the Large Furnace.",
     "desc_hu": "4 sebzésű arany csákány. Sebzi a legtöbb földelementált, és a jeget Silk Touch nélkül is bányássza. Nagy kemencében készül.",
-    "desc_ru": "Золотая кирка с уроном 4. Наносит урон большинству земляных элементалей и добывает лёд без Шёлкового касания. Крафтится в большой печи."
+    "desc_ru": "Золотая кирка с уроном 4. Наносит урон большинству земляных элементалей и добывает лёд без Шёлкового касания. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.5.9: Gold pickaxes gained direct ice mining without Silk Touch.",
+      "v0.6.0: Gold pickaxes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.5.9: Az arany csákány Silk Touch nélkül is tud jeget bányászni.",
+      "v0.6.0: Az arany csákány kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.5.9: Золотые кирки получили прямую добычу льда без Шёлкового касания.",
+      "v0.6.0: Золотые кирки были переведены на печное создание."
+    ]
   },
   "gold_axe": {
     "mcmod_id": 773585,
-    "desc": "攻击伤害+5，最大品质可达史诗。 0.6.0版本修改金斧只能在 大型熔炉 中合成。 制作不同品质的金斧所需的经验值： 普通 优秀 精良 史诗 金斧 0 500 1000 2000",
+    "desc": "Gold axe with 5 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改金斧只能在"
+      "v0.6.0: Gold axes were moved to furnace crafting."
     ],
     "desc_en": "Gold axe with 5 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "5 sebzésű arany fejsze. Nagy kemencében készül.",
-    "desc_ru": "Золотой топор с уроном 5. Крафтится в большой печи."
+    "desc_ru": "Золотой топор с уроном 5. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Gold axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az arany fejsze kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Золотые топоры были переведены на печное создание."
+    ]
   },
   "gold_war_hammer": {
     "mcmod_id": 773817,
-    "desc": "攻击力+4，最大品质可达史诗。 0.6.0版本新增： 金战锤只能在 大型熔炉 中合成。 战锤消耗180耐久和1个矿合成12个对应粒。 战锤消耗140耐久和1个锭合成9个对应粒。 战锤和工作台等级不低于参与合成的矿石或锭。 制作不同品质的金战锤所需的经验值： 普通 优秀 精良 史诗 金战锤 0 820 1640 3280",
+    "desc": "Gold-tier warhammer. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本新增："
+      "v0.6.0: Gold warhammers were moved to furnace crafting."
     ],
     "desc_en": "Gold-tier warhammer. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
     "desc_hu": "Arany szintű harci kalapács. Harcra, bányászatra, illetve ércek és rudak szemcsékre bontására használható. Nagy kemencében készül.",
-    "desc_ru": "Боевой молот золотого тира. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Крафтится в большой печи."
+    "desc_ru": "Боевой молот золотого тира. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Gold warhammers were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az arany harci kalapács kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Золотые боевые молоты были переведены на печное создание."
+    ]
   },
   "iron_sword": {
     "mcmod_id": 773814,
-    "desc": "攻击伤害+8，最大品质可达传说。 0.6.0版本修改铁剑只能在 大型熔炉 中合成。 制作不同品质的铁剑所需的经验值： 普通 优秀 精良 史诗 传说 铁剑 0 650 1300 2600 5200",
+    "desc": "Iron sword with 8 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改铁剑只能在"
+      "v0.6.0: Iron swords were moved to furnace crafting."
     ],
     "desc_en": "Iron sword with 8 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "8 sebzésű vaskard. Nagy kemencében készül.",
-    "desc_ru": "Железный меч с уроном 8. Крафтится в большой печи."
+    "desc_ru": "Железный меч с уроном 8. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Iron swords were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A vaskard kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Железные мечи были переведены на печное создание."
+    ]
   },
   "iron_pickaxe": {
     "mcmod_id": 773574,
-    "desc": "攻击伤害+6，最大品质可达传说，可伤害所有类型的土元素。 无法挖掘钻石矿石。 0.5.9版本新增设定，无需精准采集可直接挖掘冰。 0.6.0版本修改铁镐只能在 大型熔炉 中合成。 制作不同品质的铁镐所需的经验值： 普通 优秀 精良 史诗 传说 铁镐 0 980 1960 3920 7840",
+    "desc": "Iron pickaxe with 6 attack damage. Damages earth elementals, can mine ice without Silk Touch, and is crafted in the Large Furnace.",
     "versions": [
-      "0.5.9版本新增设定，无需精准采集可直接挖掘冰",
-      "0.6.0版本修改铁镐只能在"
+      "v0.5.9: Iron pickaxes gained direct ice mining without Silk Touch.",
+      "v0.6.0: Iron pickaxes were moved to furnace crafting."
     ],
     "desc_en": "Iron pickaxe with 6 attack damage. Damages earth elementals, can mine ice without Silk Touch, and is crafted in the Large Furnace.",
     "desc_hu": "6 sebzésű vascsákány. Sebzi a föld elementálokat, Selyemérintés nélkül is bányássza a jeget, és nagy kemencében készül.",
-    "desc_ru": "Железная кирка с уроном 6. Бьёт земляных элементалей, добывает лёд без Шёлкового касания и крафтится в большой печи."
+    "desc_ru": "Железная кирка с уроном 6. Бьёт земляных элементалей, добывает лёд без Шёлкового касания и крафтится в большой печи.",
+    "versions_en": [
+      "v0.5.9: Iron pickaxes gained direct ice mining without Silk Touch.",
+      "v0.6.0: Iron pickaxes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.5.9: A vascsákány Silk Touch nélkül is tud jeget bányászni.",
+      "v0.6.0: A vascsákány kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.5.9: Железные кирки получили прямую добычу льда без Шёлкового касания.",
+      "v0.6.0: Железные кирки были переведены на печное создание."
+    ]
   },
   "iron_axe": {
     "mcmod_id": 773586,
-    "desc": "攻击伤害+7，最大品质可达传说。 0.6.0版本修改铁斧只能在 大型熔炉 中合成。 制作不同品质的铁斧所需的经验值： 普通 优秀 精良 史诗 传说 铁斧 0 980 1960 3920 7840",
+    "desc": "Iron axe with 7 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改铁斧只能在"
+      "v0.6.0: Iron axes were moved to furnace crafting."
     ],
     "desc_en": "Iron axe with 7 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "7 sebzésű vasbalta. Nagy kemencében készül.",
-    "desc_ru": "Железный топор с уроном 7. Крафтится в большой печи."
+    "desc_ru": "Железный топор с уроном 7. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Iron axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A vasbalta kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Железные топоры были переведены на печное создание."
+    ]
   },
   "iron_war_hammer": {
     "mcmod_id": 773818,
-    "desc": "攻击力+6，最大品质可达传说。 0.6.0版本新增： 铁战锤只能在 大型熔炉 中合成。 战锤消耗180耐久和1个矿合成12个对应粒。 战锤消耗140耐久和1个锭合成9个对应粒。 战锤和工作台等级不低于参与合成的矿石或锭。 制作不同品质的铁战锤所需的经验值： 普通 优秀 精良 史诗 传说 铁战锤 0 1620 3240 6480 12960",
+    "desc": "Iron warhammer with 6 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本新增："
+      "v0.6.0: Iron warhammers were moved to furnace crafting."
     ],
     "desc_en": "Iron warhammer with 6 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
     "desc_hu": "6 sebzésű vas harci kalapács. Harcra, bányászatra, illetve ércek vagy ingotok szemcsékre bontására használható. Nagy kemencében készül.",
-    "desc_ru": "Железный боевой молот с уроном 6. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Крафтится в большой печи."
+    "desc_ru": "Железный боевой молот с уроном 6. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Iron warhammers were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A vas harci kalapács kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Железные боевые молоты были переведены на печное создание."
+    ]
   },
   "iron_hoe": {
     "mcmod_id": 773641,
-    "desc": "攻击伤害+5，最大品质可达传说。 0.6.0版本修改铁锄只能在 大型熔炉 中合成。 制作不同品质的铁锄所需的经验值： 普通 优秀 精良 史诗 传说 铁锄 0 660 1320 2640 5280",
+    "desc": "Iron hoe with 5 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改铁锄只能在"
+      "v0.6.0: Iron hoes were moved to furnace crafting."
     ],
     "desc_en": "Iron hoe with 5 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "5 sebzésű vaskapa. Nagy kemencében készül.",
-    "desc_ru": "Железная мотыга с уроном 5. Крафтится в большой печи."
+    "desc_ru": "Железная мотыга с уроном 5. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Iron hoes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A vaskapa kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Железные мотыги были переведены на печное создание."
+    ]
   },
   "iron_shovel": {
     "mcmod_id": 773556,
-    "desc": "攻击伤害+5，最大品质可达传说。 0.6.0版本修改铁锹只能在 大型熔炉 中合成。 制作不同品质的铁锹所需的经验值： 普通 优秀 精良 史诗 传说 铁锹 0 340 680 1360 2720",
+    "desc": "Iron shovel with 5 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改铁锹只能在"
+      "v0.6.0: Iron shovels were moved to furnace crafting."
     ],
     "desc_en": "Iron shovel with 5 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "5 sebzésű vaslapát. Nagy kemencében készül.",
-    "desc_ru": "Железная лопата с уроном 5. Крафтится в большой печи."
+    "desc_ru": "Железная лопата с уроном 5. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Iron shovels were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A vaslapát kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Железные лопаты были переведены на печное создание."
+    ]
   },
   "iron_hatchet": {
     "mcmod_id": 773566,
-    "desc": "攻击伤害+6，最大品质可达传说。 0.6.0版本修改铁手斧只能在 大型熔炉 中合成。 制作不同品质的铁手斧所需的经验值： 普通 优秀 精良 史诗 传说 铁手斧 0 340 680 1360 2720",
+    "desc": "Iron hand axe with 6 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改铁手斧只能在"
+      "v0.6.0: Iron hand axes were moved to furnace crafting."
     ],
     "desc_en": "Iron hand axe with 6 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "6 sebzésű vas kézifejsze. Nagy kemencében készül.",
-    "desc_ru": "Железный топорик с уроном 6. Крафтится в большой печи."
+    "desc_ru": "Железный топорик с уроном 6. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Iron hand axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A vas kézifejsze kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Железные топорики были переведены на печное создание."
+    ]
   },
   "iron_dagger": {
     "mcmod_id": 773305,
-    "desc": "攻击伤害+6，最大品质可达传说。 无法格挡。 0.6.0版本修改铁短剑只能在 大型熔炉 中合成。 制作不同品质的铁短剑所需的经验值： 普通 优秀 精良 史诗 传说 铁短剑 0 330 660 1320 2640",
+    "desc": "Iron dagger with 6 attack damage. Cannot block. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改铁短剑只能在"
+      "v0.6.0: Iron daggers were moved to furnace crafting."
     ],
     "desc_en": "Iron dagger with 6 attack damage. Cannot block. Crafted in the Large Furnace.",
     "desc_hu": "6 sebzésű vastőr. Nem tud blokkolni. Nagy kemencében készül.",
-    "desc_ru": "Железный кинжал с уроном 6. Не может блокировать. Крафтится в большой печи."
+    "desc_ru": "Железный кинжал с уроном 6. Не может блокировать. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Iron daggers were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A vastőr kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Железные кинжалы были переведены на печное создание."
+    ]
   },
   "iron_battle_axe": {
     "mcmod_id": 773871,
-    "desc": "铁战斧攻击伤害+8，攻击消耗75耐久，最大品质可达传说。 0.6.0版本修改铁战斧只能在 大型熔炉 中合成。 制作不同品质的铁战斧所需的经验值： 普通 优秀 精良 史诗 传说 铁战斧 0 1300 2600 5200 10400",
+    "desc": "Iron battle axe with 8 attack damage. Axe-sword hybrid with extra durability cost when chopping logs. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改铁战斧只能在"
+      "v0.6.0: Iron battle axes were moved to furnace crafting."
     ],
     "desc_en": "Iron battle axe with 8 attack damage. Axe-sword hybrid with extra durability cost when chopping logs. Crafted in the Large Furnace.",
     "desc_hu": "8 sebzésű vas csatabárd. Fejsze-kard hibrid, amely rönkvágáskor plusz tartósságot fogyaszt. Nagy kemencében készül.",
-    "desc_ru": "Железный боевой топор с уроном 8. Гибрид топора и меча; при рубке брёвен тратит дополнительную прочность. Крафтится в большой печи."
+    "desc_ru": "Железный боевой топор с уроном 8. Гибрид топора и меча; при рубке брёвен тратит дополнительную прочность. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Iron battle axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A vas csatabárd kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Железные боевые топоры были переведены на печное создание."
+    ]
   },
   "iron_mattock": {
     "mcmod_id": 773688,
-    "desc": "鸭嘴锄是锹和锄头的混合工具。它的耐久比同材质的锹或者锄头两者中的任意一个都高，尽管它的成本要高于同时制作上述两种工具。 攻击伤害+5，最大品质可达传说。 0.6.0版本修改铁鸭嘴锄只能在 大型熔炉 中合成。 制作不同品质的铁鸭嘴锄所需的经验值： 普通 优秀 精良 史诗 传说 铁鸭嘴锄 0 1300 2600 5200 10400",
+    "desc": "Iron mattock with 5 attack damage. Shovel-hoe hybrid tool. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改铁鸭嘴锄只能在"
+      "v0.6.0: Iron mattocks were moved to furnace crafting."
     ],
     "desc_en": "Iron mattock with 5 attack damage. Shovel-hoe hybrid tool. Crafted in the Large Furnace.",
     "desc_hu": "5 sebzésű vas kacsacsőrű kapa. Ásó-kapa hibrid eszköz. Nagy kemencében készül.",
-    "desc_ru": "Железная мотыга-кирка с уроном 5. Гибрид лопаты и мотыги. Крафтится в большой печи."
+    "desc_ru": "Железная мотыга-кирка с уроном 5. Гибрид лопаты и мотыги. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Iron mattocks were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A vas kacsacsőrű kapa kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Железные мотыги-кирки были переведены на печное создание."
+    ]
   },
   "iron_scythe": {
     "mcmod_id": 773594,
-    "desc": "镰刀用来快速收割高草和小麦（收割其他作物没有速度加成）。 攻击伤害+5，最大品质可达传说。 0.6.0版本修改铁镰刀只能在 大型熔炉 中合成。 制作不同品质的铁镰刀所需的经验值： 普通 优秀 精良 史诗 传说 铁镰刀 0 670 1340 2680 5360",
+    "desc": "Iron scythe with 5 attack damage. Harvests tall grass and wheat quickly. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改铁镰刀只能在"
+      "v0.6.0: Iron scythes were moved to furnace crafting."
     ],
     "desc_en": "Iron scythe with 5 attack damage. Harvests tall grass and wheat quickly. Crafted in the Large Furnace.",
     "desc_hu": "5 sebzésű vaskasza. Gyorsan arat magas füvet és búzát. Nagy kemencében készül.",
-    "desc_ru": "Железная коса с уроном 5. Быстро срезает высокую траву и пшеницу. Крафтится в большой печи."
+    "desc_ru": "Железная коса с уроном 5. Быстро срезает высокую траву и пшеницу. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Iron scythes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A vaskasza kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Железные косы были переведены на печное создание."
+    ]
   },
   "hard_stone_sword": {
     "mcmod_id": 443992,
-    "desc": "攻击伤害+8。在硬石工作台上制作出时有30%的概率随机获得 锋利 I、 屠宰 I、 耐久 I、 抢夺 I四种属性中的一个，各属性概率相等。可以攻击土元素，最大品质可达到精良，可用附魔： 锋利 ， 节肢杀手 ， 火焰附加 ， 抢夺 ， 吸血 ， 缴械 。 硬石武器无法被腐蚀，并且减少20%耐久消耗。 0.6.0版本修改硬石剑只能在 大型熔炉 中合成。 制作不同品质的硬石剑所需的经验值： 普通 优秀 精良 硬石剑 0 1290 2580",
+    "desc": "Hardstone sword with 8 attack damage. Resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改硬石剑只能在"
+      "v0.6.0: Hardstone swords were moved to furnace crafting."
     ],
     "desc_en": "Hardstone sword with 8 attack damage. Resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
     "desc_hu": "8 sebzésű keménykő kard. Ellenáll a korróziónak, és 20%-kal lassabban kopik. Nagy kemencében készül.",
-    "desc_ru": "Твердокаменный меч с уроном 8. Не ржавеет и теряет на 20% меньше прочности. Крафтится в большой печи."
+    "desc_ru": "Твердокаменный меч с уроном 8. Не ржавеет и теряет на 20% меньше прочности. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Hardstone swords were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A keménykő kard kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Твердокаменные мечи были переведены на печное создание."
+    ]
   },
   "hard_stone_pickaxe": {
     "mcmod_id": 443996,
-    "desc": "攻击伤害+6，和铜/银/金镐同级，制作出后除附带 穿透 V属性外，如果是在硬石工作台上合成，则有30%的概率随机获得 效率 I、 耐久 I、 时运 I三种属性中的一个，各属性概率相等。可以攻击 土元素 ，可用附魔： 效率 ， 精准采集 ， 耐久 ， 时运 ， 穿透 。品质最大可达到精良。无法挖掘钻石矿石、绿宝石矿石和黑曜石。硬石工具无法被腐蚀，并且减少20%耐久消耗。 0.5.9版本新增设定，无需精准采集可直接挖掘冰。 0.6.0版本修改硬石镐只能在 大型熔炉 中合成。 制作不同品质的硬石镐所需的经验值： 普通 优秀 精良 硬石镐 0 1940 3880",
+    "desc": "Hardstone pickaxe with 6 attack damage. Damages earth elementals, mines ice without Silk Touch, resists corrosion, and loses 20% less durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.5.9版本新增设定，无需精准采集可直接挖掘冰",
-      "0.6.0版本修改硬石镐只能在"
+      "v0.5.9: Hardstone pickaxes gained direct ice mining without Silk Touch.",
+      "v0.6.0: Hardstone pickaxes were moved to furnace crafting."
     ],
     "desc_en": "Hardstone pickaxe with 6 attack damage. Damages earth elementals, mines ice without Silk Touch, resists corrosion, and loses 20% less durability. Crafted in the Large Furnace.",
     "desc_hu": "6 sebzésű keménykő csákány. Sebzi a föld elementálokat, Selyemérintés nélkül is bányássza a jeget, ellenáll a korróziónak, és 20%-kal lassabban kopik. Nagy kemencében készül.",
-    "desc_ru": "Твердокаменная кирка с уроном 6. Бьёт земляных элементалей, добывает лёд без Шёлкового касания, не ржавеет и теряет на 20% меньше прочности. Крафтится в большой печи."
+    "desc_ru": "Твердокаменная кирка с уроном 6. Бьёт земляных элементалей, добывает лёд без Шёлкового касания, не ржавеет и теряет на 20% меньше прочности. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.5.9: Hardstone pickaxes gained direct ice mining without Silk Touch.",
+      "v0.6.0: Hardstone pickaxes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.5.9: A keménykő csákány Silk Touch nélkül is tud jeget bányászni.",
+      "v0.6.0: A keménykő csákány kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.5.9: Твердокаменные кирки получили прямую добычу льда без Шёлкового касания.",
+      "v0.6.0: Твердокаменные кирки были переведены на печное создание."
+    ]
   },
   "hard_stone_war_hammer": {
     "mcmod_id": 773816,
-    "desc": "攻击力+6，最大品质可达精良。 硬石武器无法被腐蚀，并且减少20%耐久消耗。 0.6.0版本新增： 战锤消耗180耐久和1个矿合成12个对应粒。 战锤消耗140耐久和1个锭合成9个对应粒。 战锤和工作台等级不低于参与合成的矿石或锭。 硬石战锤只能在 大型熔炉 中合成。 制作不同品质的硬石战锤所需的经验值： 普通 优秀 精良 硬石战锤 0 3220 6440",
+    "desc": "Hardstone warhammer with 6 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本新增："
+      "v0.6.0: Hardstone warhammers were moved to furnace crafting."
     ],
     "desc_en": "Hardstone warhammer with 6 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
     "desc_hu": "6 sebzésű keménykő harci kalapács. Harcra, bányászatra, illetve ércek vagy ingotok szemcsékre bontására használható. Ellenáll a korróziónak, és 20%-kal lassabban kopik. Nagy kemencében készül.",
-    "desc_ru": "Твердокаменный боевой молот с уроном 6. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Не ржавеет и теряет на 20% меньше прочности. Крафтится в большой печи."
+    "desc_ru": "Твердокаменный боевой молот с уроном 6. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Не ржавеет и теряет на 20% меньше прочности. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Hardstone warhammers were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A keménykő harci kalapács kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Твердокаменные боевые молоты были переведены на печное создание."
+    ]
   },
   "hard_stone_hoe": {
     "mcmod_id": 777324,
-    "desc": "攻击伤害+5，最大品质可达精良。 0.6.0版本修改硬石锄只能在 大型熔炉 中合成。 制作不同品质的硬石锄所需的经验值： 普通 优秀 精良 硬石锄 0 1300 2600",
+    "desc": "Hardstone hoe with 5 attack damage. Resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改硬石锄只能在"
+      "v0.6.0: Hardstone hoes were moved to furnace crafting."
     ],
     "desc_en": "Hardstone hoe with 5 attack damage. Resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
     "desc_hu": "5 sebzésű keménykő kapa. Ellenáll a korróziónak, és 20%-kal lassabban kopik. Nagy kemencében készül.",
-    "desc_ru": "Твердокаменная мотыга с уроном 5. Не ржавеет и теряет на 20% меньше прочности. Крафтится в большой печи."
+    "desc_ru": "Твердокаменная мотыга с уроном 5. Не ржавеет и теряет на 20% меньше прочности. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Hardstone hoes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A keménykő kapa kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Твердокаменные мотыги были переведены на печное создание."
+    ]
   },
   "ancient_metal_sword": {
     "mcmod_id": 773286,
@@ -811,12 +1132,22 @@
   },
   "big_water_bag": {
     "mcmod_id": 831586,
-    "desc": "0.9.0版本新增，装满水后可以饮用8次，对水方块右键可以装水，容量为8升。 装有脏水的水袋可在熔炉里烧制，获得装有净水的水袋，烧制时间为30秒。",
+    "desc": "Large water bag added in v0.9.0. Holds 8 liters, can be filled by right-clicking water, and dirty water inside can be purified in a furnace.",
     "versions": [
-      "0.9.0版本新增，装满水后可以饮用8次，对水方块右键可以装水，容量为8升"
+      "v0.9.0: Big water bags were added."
     ],
-    "desc_en": "Newly added in version 0.9.0, you can drink it 8 times after filling it with water. You can fill it with water by right-clicking on the water block, with a capacity of 8 liters. A water bag filled with dirty water can be fired in a furnace to obtain a water bag filled with clean water. The firing time is 30 seconds.",
-    "desc_hu": "A 0.9.0-s verzióban újonnan hozzáadva, vízzel feltöltve 8-szor fogyasztható. A 8 literes űrtartalmú vizesblokkra jobb gombbal kattintva feltöltheti vízzel. A piszkos vízzel töltött vizeszsákot kemencében ki lehet égetni, így tiszta vízzel töltött vizeszsákot kapunk. A tüzelési idő 30 másodperc."
+    "desc_en": "Large water bag added in v0.9.0. Holds 8 liters, can be filled by right-clicking water, and dirty water inside can be purified in a furnace.",
+    "desc_hu": "A v0.9.0-ban hozzáadott nagy víztasak. 8 liter vizet tárol, vízre jobb kattintva tölthető fel, a benne lévő szennyezett víz pedig kemencében tisztítható.",
+    "desc_ru": "Большой мешок для воды, добавленный в v0.9.0. Вмещает 8 литров, наполняется ПКМ по воде, а грязную воду внутри можно очистить в печи.",
+    "versions_en": [
+      "v0.9.0: Big water bags were added."
+    ],
+    "versions_hu": [
+      "v0.9.0: Bekerült a nagy víztasak."
+    ],
+    "versions_ru": [
+      "v0.9.0: Был добавлен большой мешок для воды."
+    ]
   },
   "wooden_water_filter": {
     "mcmod_id": 785027,
@@ -2588,27 +2919,31 @@
   },
   "rubace_cluster": {
     "mcmod_id": 777334,
-    "desc": "生长在地下世界的红水晶洞穴中，分为四个生长阶段。破坏完全体可获得红水晶碎片，其他生长阶段破坏无任何掉落。",
-    "desc_en": "It grows in the red crystal cave of the underground world and is divided into four growth stages. Red crystal fragments can be obtained by destroying the complete body, and nothing will be dropped if destroyed at other growth stages.",
-    "desc_hu": "A földalatti világ vörös kristálybarlangjában nő, és négy növekedési szakaszra oszlik. Vörös kristálytöredékek nyerhetők a teljes test elpusztításával, és semmi sem esik le, ha más növekedési szakaszokban megsemmisül."
+    "desc": "Fully grown rubace crystal cluster from Underground red crystal caves. Only the mature cluster drops red crystal shards when broken.",
+    "desc_en": "Fully grown rubace crystal cluster from Underground red crystal caves. Only the mature cluster drops red crystal shards when broken.",
+    "desc_hu": "Teljesen kifejlett rubace-kristályhalmaz a földalatti vörös kristálybarlangokból. Töréskor csak az érett halmaz ad vörös kristályszilánkot.",
+    "desc_ru": "Полностью выросшее скопление кристалла rubace из подземных красных кристальных пещер. При разрушении только зрелое скопление даёт красные кристальные осколки."
   },
   "rubace_small_bud": {
     "mcmod_id": 777335,
-    "desc": "生长在红水晶洞穴中的矿物，未完全长成，经过2个游戏内天数可长成为中型红水晶芽，被采集破坏后无任何掉落物。",
-    "desc_en": "The minerals growing in the red crystal cave are not fully grown. They can grow into medium-sized red crystal buds after 2 in-game days. Nothing will be dropped after being collected and destroyed.",
-    "desc_hu": "A vörös kristálybarlangban termő ásványok még nem teljesen kifejlődtek. 2 játéknap után közepes méretű vörös kristályrügyekké nőhetnek. Összegyűjtés és megsemmisítés után semmi sem kerül ledobásra."
+    "desc": "Small immature rubace bud from red crystal caves. It grows into the medium bud stage after about 2 in-game days and drops nothing if broken early.",
+    "desc_en": "Small immature rubace bud from red crystal caves. It grows into the medium bud stage after about 2 in-game days and drops nothing if broken early.",
+    "desc_hu": "Kis, éretlen rubace-rügy a vörös kristálybarlangokból. Nagyjából 2 játéknap után közepes rüggyé nő, és korán kitörve nem dob semmit.",
+    "desc_ru": "Маленькая незрелая почка rubace из красных кристальных пещер. Примерно через 2 игровых дня вырастает в среднюю стадию и при раннем разрушении ничего не даёт."
   },
   "rubace_medium_bud": {
     "mcmod_id": 777336,
-    "desc": "生长在红水晶洞穴中的矿物，未完全长成，经过3个游戏内天数可长成为大型红水晶芽，被采集破坏后无任何掉落物。",
-    "desc_en": "The minerals growing in the red crystal cave are not fully grown. They can grow into large red crystal buds after 3 in-game days. Nothing will be dropped after being collected and destroyed.",
-    "desc_hu": "A vörös kristálybarlangban termő ásványok még nem teljesen kifejlődtek. 3 játékon belüli nap után nagy vörös kristályrügyekké nőhetnek. Összegyűjtés és megsemmisítés után semmi sem kerül ledobásra."
+    "desc": "Medium rubace bud from red crystal caves. It advances to the large bud stage after about 3 in-game days and gives no drops if broken too soon.",
+    "desc_en": "Medium rubace bud from red crystal caves. It advances to the large bud stage after about 3 in-game days and gives no drops if broken too soon.",
+    "desc_hu": "Közepes rubace-rügy a vörös kristálybarlangokból. Nagyjából 3 játéknap után nagy rüggyé fejlődik, és túl korán kitörve nem ad droppot.",
+    "desc_ru": "Средняя почка rubace из красных кристальных пещер. Примерно через 3 игровых дня переходит в большую стадию и при слишком раннем разрушении ничего не даёт."
   },
   "rubace_large_bud": {
     "mcmod_id": 777337,
-    "desc": "生长在红水晶洞穴中的矿物，未完全长成，经过1个游戏内天数可长成为红水晶簇，被采集破坏后无任何掉落物。",
-    "desc_en": "The minerals growing in the red crystal cave are not fully grown. They can grow into red crystal clusters after 1 in-game day. Nothing will be dropped after being collected and destroyed.",
-    "desc_hu": "A vörös kristálybarlangban termő ásványok még nem teljesen kifejlődtek. 1 játékon belüli nap után vörös kristályhalmazokká nőhetnek. Összegyűjtés és megsemmisítés után semmi sem kerül ledobásra."
+    "desc": "Large rubace bud from red crystal caves. After about 1 more in-game day it matures into the full crystal cluster, but still gives no drops if broken early.",
+    "desc_en": "Large rubace bud from red crystal caves. After about 1 more in-game day it matures into the full crystal cluster, but still gives no drops if broken early.",
+    "desc_hu": "Nagy rubace-rügy a vörös kristálybarlangokból. Még nagyjából 1 játéknap után teljes kristályhalmazzá érik, de korán kitörve továbbra sem ad semmit.",
+    "desc_ru": "Большая почка rubace из красных кристальных пещер. Примерно через ещё 1 игровой день созревает в полное скопление, но при раннем разрушении всё ещё ничего не даёт."
   },
   "tin_ingot": {
     "mcmod_id": 777286,
@@ -2734,33 +3069,68 @@
   },
   "ex_eye_of_ender": {
     "mcmod_id": 802102,
-    "desc": "0.5.8版本加入，是地核破坏者的启动源，手持该物品右击已放置好的地核破坏者即可启动。强化末影之眼是由末影之眼合成。 0.9.0版本，需要获得对应的 知识书 解锁权限才能合成。",
+    "desc": "Enhanced Eye of Ender used to activate the Earth Core Destroyer. In newer versions, crafting it also requires the matching knowledge-book unlock.",
     "versions": [
-      "0.5.8版本加入，是地核破坏者的启动源，手持该物品右击已放置好的地核破坏者即可启动",
-      "0.9.0版本，需要获得对应的"
+      "v0.5.8: Added as the activation item for the Earth Core Destroyer.",
+      "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
     ],
-    "desc_en": "Added in version 0.5.8, it is the activation source of the Earth Core Destroyer. Holding this item and right-clicking on the placed Earth Core Destroyer can activate it. Enhanced Eyes of Ender are crafted from Eyes of Ender. For version 0.9.0, you need to obtain the corresponding knowledge book to unlock the permission to craft it.",
-    "desc_hu": "A 0.5.8-as verzióhoz hozzáadva az Earth Core Destroyer aktiválási forrása. Ezt az elemet lenyomva és a jobb gombbal az elhelyezett Earth Core Destroyer-re kattintva aktiválhatja. Az Enhanced Eyes of Ender az Eyes of Enderből készült. A 0.9.0-s verzió esetén be kell szereznie a megfelelő tudáskönyvet, hogy feloldja a létrehozási engedélyt."
+    "desc_en": "Enhanced Eye of Ender used to activate the Earth Core Destroyer. In newer versions, crafting it also requires the matching knowledge-book unlock.",
+    "desc_hu": "Fejlesztett Ender-szem, amely az Earth Core Destroyer aktiválásához kell. Az újabb verziókban a craftolásához a megfelelő tudáskönyv-feloldás is szükséges.",
+    "desc_ru": "Усиленный глаз Эндера, нужный для активации Earth Core Destroyer. В новых версиях для его крафта также требуется разблокировка соответствующей книги знаний.",
+    "versions_en": [
+      "v0.5.8: Added as the activation item for the Earth Core Destroyer.",
+      "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
+    ],
+    "versions_hu": [
+      "v0.5.8: Megjelent az Earth Core Destroyer indítóitemjeként.",
+      "v0.9.0: A craftolásához a megfelelő tudáskönyv-feloldás kell."
+    ],
+    "versions_ru": [
+      "v0.5.8: Добавлен как предмет активации Earth Core Destroyer.",
+      "v0.9.0: Для крафта требуется разблокировка соответствующей книги знаний."
+    ]
   },
   "skull_shard": {
     "mcmod_id": 802103,
-    "desc": "0.5.8版本加入，在下界击杀凋灵骷髅概率获得，受抢夺附魔影响，9个凋灵骷髅头颅碎片可以合成1个凋灵骷髅头颅。",
+    "desc": "Wither skeleton skull fragment obtained from Nether wither skeletons, with Looting affecting the drop chance. Nine fragments combine into one full wither skeleton skull.",
     "versions": [
-      "0.5.8版本加入，在下界击杀凋灵骷髅概率获得，受抢夺附魔影响，9个凋灵骷髅头颅碎片可以合成1个凋灵骷髅头颅"
+      "v0.5.8: Skull fragments were added."
     ],
-    "desc_en": "Added in version 0.5.8, there is a chance to obtain it by killing the Wither Skeleton in the Nether. Affected by the Looting enchantment, 9 Wither Skeleton skull fragments can be crafted into 1 Wither Skull skull.",
-    "desc_hu": "A 0.5.8-as verzióhoz hozzáadva van esély a megszerzésére a Wither Skeleton megölésével a Netherben. A Looting varázslat által érintett 9 Wither Skeleton koponyatöredékből 1 Wither Skull koponya alakítható."
+    "desc_en": "Wither skeleton skull fragment obtained from Nether wither skeletons, with Looting affecting the drop chance. Nine fragments combine into one full wither skeleton skull.",
+    "desc_hu": "Wither skeleton koponyatöredék, amely netherbeli wither skeletonokból eshet, és a Looting befolyásolja az esélyét. Kilenc darab egy teljes wither skeleton koponyává áll össze.",
+    "desc_ru": "Осколок черепа визер-скелета, выпадающий с визер-скелетов в Нижнем мире, причём Шалкер/Добыча влияет на шанс. Девять осколков собираются в полноценный череп визер-скелета.",
+    "versions_en": [
+      "v0.5.8: Skull fragments were added."
+    ],
+    "versions_hu": [
+      "v0.5.8: Megjelentek a koponyatöredékek."
+    ],
+    "versions_ru": [
+      "v0.5.8: Были добавлены осколки черепа."
+    ]
   },
   "tiny_stone": {
     "mcmod_id": 811608,
-    "desc": "0.5.9版本新增，在地面上随机生成石子，投掷伤害为1。 4个石子可以合成在任意工作台合成1个圆石。 0.6.0版本调整： 简单模式，每个区块有75%概率刷新2-4个石子。 困难模式，每个区块有55%概率刷新1-3个石子。 2个石子在铜及以上工作台合成1个圆石。",
+    "desc": "Small loose stone found on the ground. It can be thrown for 1 damage, and in newer versions 2 pieces can be crafted into 1 cobblestone on a copper-or-better workbench.",
     "versions": [
-      "0.5.9版本新增，在地面上随机生成石子，投掷伤害为1",
-      "0.6.0版本调整："
+      "v0.5.9: Tiny stones were added as ground spawns and throwable pebbles.",
+      "v0.6.0: Cobblestone crafting changed from 4 stones on any bench to 2 stones on a copper-or-better bench."
     ],
-    "desc_en": "Small stones that spawn on the ground. They deal 1 damage when thrown. In newer versions, 2 stones can be crafted into 1 cobblestone on a copper-or-better workbench.",
-    "desc_hu": "A földön megjelenő apró kövek. Eldobva 1 sebzést okoznak. Az újabb verziókban 2 kőből 1 macskakő készül réz vagy jobb munkaasztalon.",
-    "desc_ru": "Мелкие камни, появляющиеся на земле. При броске наносят 1 урон. В новых версиях из 2 камней можно сделать 1 булыжник на медном верстаке или лучше."
+    "desc_en": "Small loose stone found on the ground. It can be thrown for 1 damage, and in newer versions 2 pieces can be crafted into 1 cobblestone on a copper-or-better workbench.",
+    "desc_hu": "Apró, földön található kavicskő. Eldobva 1 sebzést okoz, az újabb verziókban pedig 2 darabból 1 macskakő készül réz vagy jobb munkaasztalon.",
+    "desc_ru": "Мелкий камешек, лежащий на земле. При броске наносит 1 урон, а в новых версиях из 2 штук можно сделать 1 булыжник на медном верстаке или лучше.",
+    "versions_en": [
+      "v0.5.9: Tiny stones were added as ground spawns and throwable pebbles.",
+      "v0.6.0: Cobblestone crafting changed from 4 stones on any bench to 2 stones on a copper-or-better bench."
+    ],
+    "versions_hu": [
+      "v0.5.9: Megjelentek a földön spawnoló, eldobható apró kövek.",
+      "v0.6.0: A macskakő craft 4 kőről bármely asztalon 2 kőre változott réz vagy jobb asztalon."
+    ],
+    "versions_ru": [
+      "v0.5.9: Были добавлены мелкие камни как наземный спавн и метаемая галька.",
+      "v0.6.0: Крафт булыжника изменился с 4 камней на любом верстаке на 2 камня на медном верстаке или лучше."
+    ]
   },
   "sieve": {
     "mcmod_id": 772042,
@@ -2809,32 +3179,68 @@
   },
   "two_port_cauldron": {
     "mcmod_id": 802106,
-    "desc": "0.5.8版本加入，可自动将水和岩浆融合为黑曜石的装置。玩家使用任意镐子 （ 除燧石镐 ） 右键炼药锅，会使其两边凿开小口，变为双口坩埚。 如下图中所示，在双口坩埚小口两侧放置无限水和无限岩浆，坩埚中会将两者合二为一，冷却120秒后彻底变为黑曜石，如果使用冷却液可减少15秒冷却时间。 双口坩埚的底部放置漏斗可漏掉黑曜石，玩家可以在底部放置漏斗+箱子做到全自动产出黑曜石，也可以空手右击装有黑曜石的坩埚将其收入背包中。 注意：双口坩埚无法像 炼药锅 一样液化金矿。 如果不慎掉入，将会收到岩浆伤害，死亡后，会显示“XXX试图在岩浆里游泳”",
+    "desc": "Two-port cauldron that automates obsidian production from water and lava. It cools into obsidian over time, works with hopper automation, and coolant can shorten the wait.",
     "versions": [
-      "0.5.8版本加入，可自动将水和岩浆融合为黑曜石的装置"
+      "v0.5.8: Two-port cauldrons were added."
     ],
-    "desc_en": "Added in version 0.5.8, a device that can automatically fuse water and magma into obsidian. If the player uses any pickaxe (except the flint pickaxe) to right-click the cauldron, small openings will be cut on both sides of it, turning it into a double-mouthed cauldron. As shown in the picture below, place infinite water and infinite magma on both sides of the small mouth of a double-mouth crucible. The two will merge into one in the crucible. After cooling for 120 seconds, it will completely turn into obsidian. If coolant is used, the cooling time can be reduced by 15 seconds. Placing a funnel at the bottom of a double-mouth crucible can leak out obsidian. Players can place a funnel and a box at the bottom to automatically produce obsidian, or they can right-click the crucible containing obsidian with bare hands to put it in their backpack. Note: The Double Cauldron cannot liquefy gold ore like the Cauldron. If you accidentally fall in, you will receive damage from the lava. After death, \"XXX tried to swim in the lava\" will be displayed.",
-    "desc_hu": "A 0.5.8-as verzióban hozzáadva egy olyan eszközt, amely képes automatikusan olvasztani a vizet és a magmát obszidiánná. Ha a játékos bármilyen csákánnyal (kivéve a kovakő csákányt) kattint a jobb gombbal az üstre, akkor kis nyílások lesznek kivágva annak mindkét oldalán, így kétszájú üstré válik. Az alábbi képen látható módon helyezzen végtelen vizet és végtelen magmát egy kétszájú tégely kis szájának mindkét oldalára. A kettő eggyé fog olvadni a tégelyben. 120 másodperces hűtés után teljesen obszidiánná alakul. Hűtőfolyadék használata esetén a hűtési idő 15 másodperccel csökkenthető. Ha egy tölcsért helyezünk el a kétszájú olvasztótégely alján, akkor az obszidián kiszivároghat. A játékosok elhelyezhetnek egy tölcsért és egy dobozt az aljára, hogy automatikusan obszidiánt állítsanak elő, vagy a jobb gombbal az obszidiánt tartalmazó tégelyre puszta kézzel behelyezhetik a hátizsákjukba. Megjegyzés: A kettős üst nem tudja cseppfolyósítani az aranyat olyanok, mint az Üst. Ha véletlenül beleesik, a láva kárt okoz. A halál után megjelenik a „XXX megpróbált úszni a lávában” üzenet."
+    "desc_en": "Two-port cauldron that automates obsidian production from water and lava. It cools into obsidian over time, works with hopper automation, and coolant can shorten the wait.",
+    "desc_hu": "Kétcsőrű üst, amely automatizálja az obszidián készítését vízből és lávából. Idővel obszidiánná hűl, tölcsérekkel automatizálható, és a hűtőfolyadék lerövidítheti a várakozást.",
+    "desc_ru": "Двухпортовый котёл, автоматизирующий производство обсидиана из воды и лавы. Со временем остывает в обсидиан, работает с воронками, а охлаждающая жидкость сокращает ожидание.",
+    "versions_en": [
+      "v0.5.8: Two-port cauldrons were added."
+    ],
+    "versions_hu": [
+      "v0.5.8: Megjelentek a kétcsőrű üstök."
+    ],
+    "versions_ru": [
+      "v0.5.8: Были добавлены двухпортовые котлы."
+    ]
   },
   "respawn_anchor": {
     "mcmod_id": 811918,
-    "desc": "0.5.9版本新增，使用红石块激活即可改变世界重生点（手持红石块右击放置在地上的世标器即可激活），激活中的世标器会散发紫色的波纹，只能在主世界生效。 当主世界有世标器激活时，通过建立在主世界的 普通黑曜石传送门 就会返回该世标器位置。 只能用铁镐及以上等级镐（包括高碳钢镐）拆除。 0.9.0版本，需要获得对应的 知识书 解锁权限才能合成。",
+    "desc": "World marker that sets the overworld respawn point after activation with a redstone block. In later versions, crafting it also requires the matching knowledge-book unlock.",
     "versions": [
-      "0.5.9版本新增，使用红石块激活即可改变世界重生点（手持红石块右击放置在地上的世标器即可激活），激活中的世标器会散发紫色的波纹，只能在主世界生效",
-      "0.9.0版本，需要获得对应的"
+      "v0.5.9: Respawn anchors were added as overworld world markers.",
+      "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
     ],
-    "desc_en": "Newly added in version 0.5.9, you can use a red stone block to activate it to change the world's respawn point (right-click the World Marker placed on the ground with a red stone block to activate). The activated World Marker will emit purple ripples and can only take effect in the main world. When a world marker is activated in the main world, the location of the world marker will be returned through the ordinary obsidian portal established in the main world. It can only be removed with iron picks and above (including high carbon steel picks). For version 0.9.0, you need to obtain the corresponding knowledge book to unlock the permission to craft it.",
-    "desc_hu": "A 0.5.9-es verzióban újonnan hozzáadott piros kőblokk segítségével aktiválhatod a világ újjászületési pontjának megváltoztatásához (az aktiváláshoz kattintson a jobb gombbal a földre helyezett világjelölőre egy piros kőtömbbel). Az aktivált világjelző lila hullámokat bocsát ki, és csak a fővilágban léphet érvénybe. Amikor egy világjelzőt aktiválnak a fővilágban, a világjelző helye a fővilágban létrehozott közönséges obszidián portálon keresztül kerül visszaadásra. Csak vascsákányokkal és afelettikkel távolítható el (beleértve a magas széntartalmú acél csákányokat is). A 0.9.0-s verzió esetén be kell szereznie a megfelelő tudáskönyvet, hogy feloldja a létrehozási engedélyt."
+    "desc_en": "World marker that sets the overworld respawn point after activation with a redstone block. In later versions, crafting it also requires the matching knowledge-book unlock.",
+    "desc_hu": "Világjelölő, amely vöröskőtömbbel aktiválva beállítja a fővilági respawnpontot. A későbbi verziókban a craftolásához a megfelelő tudáskönyv-feloldás is kell.",
+    "desc_ru": "Мировой маркер, который после активации блоком редстоуна задаёт точку возрождения в обычном мире. В более поздних версиях для крафта также нужна разблокировка соответствующей книги знаний.",
+    "versions_en": [
+      "v0.5.9: Respawn anchors were added as overworld world markers.",
+      "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
+    ],
+    "versions_hu": [
+      "v0.5.9: Megjelentek a fővilági világjelölőként működő respawn anchorök.",
+      "v0.9.0: A craftoláshoz a megfelelő tudáskönyv-feloldás kell."
+    ],
+    "versions_ru": [
+      "v0.5.9: Были добавлены respawn anchor как мировые маркеры обычного мира.",
+      "v0.9.0: Для крафта требуется разблокировка соответствующей книги знаний."
+    ]
   },
   "enchantment_table_custom": {
     "mcmod_id": 826854,
-    "desc": "0.6.0版本新增，作为 钻石附魔台 的进阶版，可以对物品进行指定附魔，并且不需要在周围放置书架。 高级附魔台只能在秘银或艾德曼工作台中合成，只能被秘银或艾德曼材质的战锤或镐破坏。 每次在高级附魔台中附魔需要消耗3个 青金石 、1本 书 以及一定xp。 在高级附魔台中附魔 金苹果 不需要消耗额外材料，只需要消耗100xp。 在高级附魔台中附魔只能选择增加更多或更强附魔属性，无法消除或降低。 0.9.0版本，需要获得对应的 知识书 解锁权限才能合成。 不同附魔效果所需xp如下表所示： 附魔效果 等级Ⅰ 等级Ⅱ 等级Ⅲ 等级Ⅳ 等级Ⅴ 耐久 800 1600 2400 3200 4000 效率 800 1600 2400 3200 4000 缴械 1200 2400 3600 4800 6000 迅捷 1000 2000 3000 4000 5000 精准 800 1600 2400 3200 4000 中毒 1250 2500 3750 5000 6250 屠宰 2000 4000 6000 击晕 1800 3600 5400 7200 9000 吸血 1000 3000 7000 15000 31000 回收 1000 2000 3000 4000 5000 锋利 800 1600 2400 3200 4000 劈裂 1320 2640 3960 5280 6600 收获 1120 2240 3360 4480 5600 穿透 1620 2640 3960 5280 6600 饵钓 1150 2300 3450 4600 5750 肥沃 1000 2000 3000 4000 5000 砍伐 1320 2640 3960 5280 6600 时运 1600 3200 4800 灵活移动 1450 2900 4350 5800 再生 2100 4200 6300 8400 10500 速度 1150 2300 3450 4600 5750 耐力 800 1600 2400 3200 保护 800 1600 2400 3200 火焰保护 1000 2000 3000 4000 掉落保护 1000 2000 3000 4000 爆炸保护 1000 2000 3000 4000 弹射物保护 1000 2000 3000 4000 水下呼吸 2450 4900 7350 水下速掘 2450 荆棘 2100 4200 6300 亡灵杀手 800 1600 2400 3200 节肢杀手 800 1600 2400 3200 击退 3000 6000 火焰附加 2500 5000 抢夺 1000 2000 3000 精准采集 5000 力量 800 1600 2400 3200 4000 冲击 1000 2000 火矢 2000",
+    "desc": "Advanced enchanting table for targeted enchantment choices without surrounding bookshelves. It consumes lapis, a book, and XP per enchant, and later versions gate crafting behind a knowledge-book unlock.",
     "versions": [
-      "0.6.0版本新增，作为",
-      "0.9.0版本，需要获得对应的"
+      "v0.6.0: Advanced enchanting tables were added.",
+      "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
     ],
-    "desc_en": "Newly added in version 0.6.0, as an advanced version of the Diamond Enchanting Table, items can be specifically enchanted without placing bookshelves around them. Advanced enchantment tables can only be crafted at a Mithril or Adamantium Workbench, and can only be destroyed by warhammers or pickaxes made of Mithril or Adamantium. Each enchantment in the advanced enchantment table requires 3 lapis lazuli, 1 book and a certain amount of xp. Enchanting golden apples in the advanced enchanting table does not require additional materials, only 100xp. Enchanting in the advanced enchanting table can only add more or stronger enchanting properties, but cannot eliminate or reduce them. For version 0.9.0, you need to obtain the corresponding knowledge book to unlock the permission to craft it. The xp required for different enchanting effects is shown in the following table: Enchanting effect Level I Level II Level III Level IV Level V Durability 800 1600 2400 3200 4000 Efficiency 800 1600 2400 3200 4000 Disarm 1200 2400 3600 4800 6000 Swiftness 1000 2000 3000 4000 5000 Accuracy 800 1600 2400 3200 4000 Poison 1250 2500 3750 5000 6250 Slaughter 2000 4000 6000 Stun 1800 3600 5400 7200 9000 Vampiric 1000 3000 7000 15000 31000 Recycling 1000 2000 3000 4000 5000 Sharp 800 1600 2400 3200 4000 Cleaving 1320 2640 3960 5280 6600 Harvest 1120 2240 3360 4480 5600 Penetration 1620 2640 3960 5280 6600 Bait fishing 1150 2300 3450 4600 5750 Fertility 1000 2000 3000 4000 5000 Felling 1320 2640 3960 5280 6600 Fortune 1600 3200 4800 Flexible Movement 1450 2900 4350 5800 Regeneration 2100 4200 6300 8400 10500 Speed 1150 2300 3450 4600 5750 Endurance 800 1600 2400 3200 Protection 800 1600 2400 3200 Flame protection 1000 2000 3000 400 0 Drop protection 1000 2000 3000 4000 Explosion protection 1000 2000 3000 4000 Projectile protection 1000 2000 3000 4000 Water breathing 2450 4900 7350 Underwater speed digging 2450 Thorns 2100 4200 6300 Undead Killer 800 1600 2400 3200 Arthropod Killer 800 1600 2400 3200 Knockback 3000 6000 Fire Addition 2500 5000 Loot 1000 2000 3000 Accurate Collection 5000 Strength 800 1600 2400 3200 4000 Impact 1000 2000 Fire Arrow 2000",
-    "desc_hu": "A 0.6.0-s verzióban újonnan hozzáadott, a Diamond Enchanting Table továbbfejlesztett változataként az elemeket kifejezetten elvarázsolhatják anélkül, hogy könyvespolcokat helyeznének köréjük. Fejlett varázslóasztalok csak Mithril vagy Adamantium munkaasztalon készíthetők, és csak Mithrilből vagy Adamantiumból készült harci kalapácsokkal vagy csákányokkal lehet megsemmisíteni. A speciális varázstábla minden varázslatához 3 lapis lazuli, 1 könyv és bizonyos mennyiségű xp szükséges. Az aranyalmák elvarázsolásához a fejlett varázslatos asztalon nincs szükség további anyagokra, csak 100xp. A speciális varázslatos táblázatban a varázslat csak több vagy erősebb varázslatot adhat hozzá, de nem küszöbölheti ki vagy csökkentheti azokat. A 0.9.0-s verzió esetén be kell szereznie a megfelelő tudáskönyvet, hogy feloldja a létrehozási engedélyt. A különböző varázslatos effektusokhoz szükséges xp a következő táblázatban látható: Varázslatos effektus Level I Lev el II III. szint IV. szint V. szint Tartósság 800 1600 2400 3200 4000 Hatékonyság 800 1600 2400 3200 4000 Hatástalanítás 1200 2400 3600 4800 6000 Swift 4800 6000 400 200 2000 5000 pontosság 800 1600 2400 3200 4000 méreg 1250 2500 3750 5000 6250 vágás 2000 4000 6000 kábítás 1800 3600 700 500 vampiric 3000 7000 15000 31000 Újrahasznosítás 1000 2000 3000 4000 5000 Sharp 800 1600 2400 3200 4000 Hasítás 1320 2640 39060 612 20 20 3360 4480 5600 Behatolás 1620 2640 3960 5280 6600 Csalihorgászat 1150 2300 3450 4600 5750 Termékenység 1000 2000 3000 4000 3000 4000 2000 610 5280 6600 Fortune 1600 3200 4800 Rugalmas mozgás 1450 2900 4350 5800 Regeneráció 2100 4200 6300 8400 10500 Sebesség 1150 2300 480 u 2300 700 1600 2400 3200 Védelem 800 1600 2400 3200 Lángvédelem 1000 2000 3000 400 0 Leesés elleni védelem 1000 2000 3000 4000 Robbanásvédelem 1000 2000 4000 Lövedékvédelem 1000 2000 3000 4000 Vízlégzés 2450 4900 7350 Víz alatti gyorsásás 2450 Tövis 2100 4200 6300 Élőhalott Gyilkos 800 1600 Killer Arthro 600 1600 24000 300 2400 3200 Visszaütés 3000 6000 Tűz hozzáadása 2500 5000 Zsákmány 1000 2000 3000 Pontos begyűjtés 5000 Erő 800 1600 2400 3200 4000 Beütés 2000 Tűz 1000"
+    "desc_en": "Advanced enchanting table for targeted enchantment choices without surrounding bookshelves. It consumes lapis, a book, and XP per enchant, and later versions gate crafting behind a knowledge-book unlock.",
+    "desc_hu": "Fejlett varázslóasztal célzott enchantválasztásokhoz, környező könyvespolcok nélkül. Minden enchant lapist, egy könyvet és XP-t fogyaszt, a későbbi verziókban pedig a craftolása tudáskönyv-feloldáshoz kötött.",
+    "desc_ru": "Продвинутый стол зачарования для выбора конкретных чар без окружающих книжных полок. Каждое зачарование тратит лазурит, книгу и XP, а в поздних версиях крафт дополнительно закрыт за книгой знаний.",
+    "versions_en": [
+      "v0.6.0: Advanced enchanting tables were added.",
+      "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
+    ],
+    "versions_hu": [
+      "v0.6.0: Megjelentek a fejlett varázslóasztalok.",
+      "v0.9.0: A craftoláshoz a megfelelő tudáskönyv-feloldás kell."
+    ],
+    "versions_ru": [
+      "v0.6.0: Были добавлены продвинутые столы зачарования.",
+      "v0.9.0: Для крафта требуется разблокировка соответствующей книги знаний."
+    ]
   },
   "ancient_metal_backpack_upgrade": {
     "mcmod_id": 831515,
@@ -2849,142 +3255,288 @@
   },
   "big_backpack_upgrade": {
     "mcmod_id": 841176,
-    "desc": "0.9.0版本新增，拖动大背包升级道具点击饰品栏内的皮革背包即可升级。 升级后的大背包容量为7×3。",
+    "desc": "Backpack upgrade item for turning the equipped leather backpack into the larger 7x3 version.",
     "versions": [
-      "0.9.0版本新增，拖动大背包升级道具点击饰品栏内的皮革背包即可升级"
+      "v0.9.0: Big backpack upgrades were added."
     ],
-    "desc_en": "Added in version 0.9.0. Use this upgrade item on the equipped Leather Backpack in the accessory slot to upgrade it. The upgraded backpack has a 7×3 capacity.",
-    "desc_hu": "A 0.9.0-s verzióban hozzáadott fejlesztő item. A kiegészítő slotban viselt Leather Backpacken használva fejleszti azt. A fejlesztett hátizsák kapacitása 7×3."
+    "desc_en": "Backpack upgrade item for turning the equipped leather backpack into the larger 7x3 version.",
+    "desc_hu": "Hátizsákfejlesztő item, amely a felszerelt bőrhátizsákot a nagyobb, 7x3-as verzióvá alakítja.",
+    "desc_ru": "Предмет улучшения рюкзака, превращающий надетый кожаный рюкзак в более крупную версию 7x3.",
+    "versions_en": [
+      "v0.9.0: Big backpack upgrades were added."
+    ],
+    "versions_hu": [
+      "v0.9.0: Megjelentek a nagy hátizsákfejlesztések."
+    ],
+    "versions_ru": [
+      "v0.9.0: Были добавлены улучшения большого рюкзака."
+    ]
   },
   "copper_chest_upgrade": {
     "mcmod_id": 446688,
-    "desc": "Shift+右键普通箱子使用，将箱子升级为一个9x5的铜箱子。 铜箱升级道具只能对普通箱子使用升级，不能跨等级升级。 0.9.0版本修改，去掉除远古金属箱升级道具以外的其他合成表。",
+    "desc": "Chest upgrade item that converts a normal chest into a 9x5 copper chest. It only works on the expected lower-tier chest and does not skip tiers.",
     "versions": [
-      "0.9.0版本修改，去掉除远古金属箱升级道具以外的其他合成表"
+      "v0.9.0: Most older chest-upgrade crafting routes were removed."
     ],
-    "desc_en": "Shift+right-click on an ordinary box to upgrade the box to a 9x5 copper box. Copper box upgrade props can only be used to upgrade ordinary boxes and cannot be upgraded across levels. Version 0.9.0 has been modified to remove other synthesis tables except the ancient metal box upgrade props.",
-    "desc_hu": "A Shift + jobb gombbal kattintson egy közönséges dobozra, hogy a dobozt 9x5-ös rézdobozra frissítse. A rézdoboz-frissítési kellékek csak a közönséges dobozok frissítésére használhatók, és nem fejleszthetők több szinten. A 0.9.0-s verziót úgy módosították, hogy eltávolítsák a többi szintézis táblázatot, kivéve az ősi fémdoboz-frissítési kellékeket."
+    "desc_en": "Chest upgrade item that converts a normal chest into a 9x5 copper chest. It only works on the expected lower-tier chest and does not skip tiers.",
+    "desc_hu": "Ládafejlesztő item, amely egy normál ládát 9x5-ös rézláda-változattá alakít. Csak a megfelelő alapszintű ládán működik, szintet nem ugrik át.",
+    "desc_ru": "Предмет улучшения сундука, превращающий обычный сундук в медный сундук 9x5. Работает только на ожидаемом нижнем уровне и не позволяет пропускать ступени.",
+    "versions_en": [
+      "v0.9.0: Most older chest-upgrade crafting routes were removed."
+    ],
+    "versions_hu": [
+      "v0.9.0: A régebbi ládafejlesztő craftok nagy része kikerült."
+    ],
+    "versions_ru": [
+      "v0.9.0: Большинство старых путей крафта улучшений сундуков было убрано."
+    ]
   },
   "silver_chest_upgrade": {
     "mcmod_id": 446689,
-    "desc": "Shift+右键普通箱子使用，将箱子升级为一个9x6的银箱子。 银箱升级道具只能对普通箱子使用升级，不能跨等级升级。 0.9.0版本修改，去掉除远古金属箱升级道具以外的其他合成表。",
+    "desc": "Chest upgrade item that converts a normal chest into a 9x6 silver chest. It only works on the expected lower-tier chest and does not skip tiers.",
     "versions": [
-      "0.9.0版本修改，去掉除远古金属箱升级道具以外的其他合成表"
+      "v0.9.0: Most older chest-upgrade crafting routes were removed."
     ],
-    "desc_en": "Shift+right-click on an ordinary box to upgrade the box to a 9x6 silver box. Silver chest upgrade props can only be used to upgrade ordinary chests and cannot be upgraded across levels. Version 0.9.0 has been modified to remove other synthesis tables except the ancient metal box upgrade props.",
-    "desc_hu": "A Shift + jobb gombbal kattintson egy közönséges dobozra, hogy a dobozt 9x6-os ezüst dobozra frissítse. Az ezüst láda-frissítési kellékek csak a közönséges ládák frissítésére használhatók, és nem fejleszthetők több szinten. A 0.9.0-s verziót úgy módosították, hogy eltávolítsák a többi szintézis táblázatot, kivéve az ősi fémdoboz-frissítési kellékeket.",
-    "desc_ru": "Shift + ПКМ по обычному сундуку улучшает его до серебряного сундука 9x6. Это улучшение работает только на обычных сундуках и не позволяет перескакивать уровни. В 0.9.0 остальные таблицы крафта таких улучшений были убраны, кроме актуальных улучшений древнего металла."
+    "desc_en": "Chest upgrade item that converts a normal chest into a 9x6 silver chest. It only works on the expected lower-tier chest and does not skip tiers.",
+    "desc_hu": "Ládafejlesztő item, amely egy normál ládát 9x6-os ezüstládává alakít. Csak a megfelelő alapszintű ládán működik, szintet nem ugrik át.",
+    "desc_ru": "Предмет улучшения сундука, превращающий обычный сундук в серебряный сундук 9x6. Работает только на ожидаемом нижнем уровне и не позволяет пропускать ступени.",
+    "versions_en": [
+      "v0.9.0: Most older chest-upgrade crafting routes were removed."
+    ],
+    "versions_hu": [
+      "v0.9.0: A régebbi ládafejlesztő craftok nagy része kikerült."
+    ],
+    "versions_ru": [
+      "v0.9.0: Большинство старых путей крафта улучшений сундуков было убрано."
+    ]
   },
   "hard_chest_upgrade": {
     "mcmod_id": 446690,
-    "desc": "Shift+右键金箱子使用，将箱子升级为一个15x5的硬石箱子。 硬石箱升级道具只能对金箱子使用升级，不能跨等级升级。 0.9.0版本修改，去掉除远古金属箱升级道具以外的其他合成表。",
+    "desc": "Chest upgrade item that converts a gold chest into a 15x5 hardstone chest. It only works on the expected lower-tier chest and does not skip tiers.",
     "versions": [
-      "0.9.0版本修改，去掉除远古金属箱升级道具以外的其他合成表"
+      "v0.9.0: Most older chest-upgrade crafting routes were removed."
     ],
-    "desc_en": "Shift + right click on the gold box to upgrade the box to a 15x5 Hardstone box. Hardstone chest upgrade props can only be used to upgrade gold chests and cannot be upgraded across levels. Version 0.9.0 has been modified to remove other synthesis tables except the ancient metal box upgrade props.",
-    "desc_hu": "Shift + jobb kattintás az arany dobozra, hogy a dobozt 15x5-ös keménykődobozra frissítse. A keménykőből készült láda-frissítési kellékek csak aranyládák fejlesztésére használhatók, és nem fejleszthetők szintek között. A 0.9.0-s verziót úgy módosították, hogy eltávolítsák a többi szintézis táblázatot, kivéve az ősi fémdoboz-frissítési kellékeket."
+    "desc_en": "Chest upgrade item that converts a gold chest into a 15x5 hardstone chest. It only works on the expected lower-tier chest and does not skip tiers.",
+    "desc_hu": "Ládafejlesztő item, amely egy aranyládát 15x5-ös keménykőládává alakít. Csak a megfelelő alapszintű ládán működik, szintet nem ugrik át.",
+    "desc_ru": "Предмет улучшения сундука, превращающий золотой сундук в твердокаменный сундук 15x5. Работает только на ожидаемом нижнем уровне и не позволяет пропускать ступени.",
+    "versions_en": [
+      "v0.9.0: Most older chest-upgrade crafting routes were removed."
+    ],
+    "versions_hu": [
+      "v0.9.0: A legtöbb régi ládafejlesztő recept kikerült."
+    ],
+    "versions_ru": [
+      "v0.9.0: Большинство старых рецептов улучшения сундуков было удалено."
+    ]
   },
   "iron_chest_upgrade": {
     "mcmod_id": 446692,
-    "desc": "Shift+右键铜或银箱子使用，将箱子升级为一个11x5的铁箱子。 铁箱升级道具只能对铜或银箱子使用升级，不能跨等级升级。 0.9.0版本修改，去掉除远古金属箱升级道具以外的其他合成表。",
+    "desc": "Chest upgrade item that converts a copper or silver chest into an 11x5 iron chest. It only works on the expected lower-tier chest and does not skip tiers.",
     "versions": [
-      "0.9.0版本修改，去掉除远古金属箱升级道具以外的其他合成表"
+      "v0.9.0: Most older chest-upgrade crafting routes were removed."
     ],
-    "desc_en": "Shift + right-click on a copper or silver box to upgrade the box to an 11x5 iron box. Iron box upgrade props can only be used to upgrade copper or silver boxes, and cannot be upgraded across levels. Version 0.9.0 has been modified to remove other synthesis tables except the ancient metal box upgrade props.",
-    "desc_hu": "Shift + jobb gombbal kattintson egy réz vagy ezüst dobozra, hogy a dobozt 11x5-ös vasdobozra frissítse. A vasdoboz-frissítési kellékek csak réz vagy ezüst dobozok frissítésére használhatók, és nem fejleszthetők szintek között. A 0.9.0-s verziót úgy módosították, hogy eltávolítsák a többi szintézis táblázatot, kivéve az ősi fémdoboz-frissítési kellékeket."
+    "desc_en": "Chest upgrade item that converts a copper or silver chest into an 11x5 iron chest. It only works on the expected lower-tier chest and does not skip tiers.",
+    "desc_hu": "Ládafejlesztő item, amely egy réz- vagy ezüstládát 11x5-ös vasládává alakít. Csak a megfelelő alapszintű ládán működik, szintet nem ugrik át.",
+    "desc_ru": "Предмет улучшения сундука, превращающий медный или серебряный сундук в железный сундук 11x5. Работает только на ожидаемом нижнем уровне и не позволяет пропускать ступени.",
+    "versions_en": [
+      "v0.9.0: Most older chest-upgrade crafting routes were removed."
+    ],
+    "versions_hu": [
+      "v0.9.0: A legtöbb régi ládafejlesztő recept kikerült."
+    ],
+    "versions_ru": [
+      "v0.9.0: Большинство старых рецептов улучшения сундуков было удалено."
+    ]
   },
   "gold_chest_upgrade": {
     "mcmod_id": 446693,
-    "desc": "Shift+右键铁箱子使用，将箱子升级为一个13x5的金箱子。 金箱升级道具只能对铁箱子使用升级，不能跨等级升级。 0.9.0版本修改，去掉除远古金属箱升级道具以外的其他合成表。",
+    "desc": "Chest upgrade item that converts an iron chest into a 13x5 gold chest. It only works on the expected lower-tier chest and does not skip tiers.",
     "versions": [
-      "0.9.0版本修改，去掉除远古金属箱升级道具以外的其他合成表"
+      "v0.9.0: Most older chest-upgrade crafting routes were removed."
     ],
-    "desc_en": "Shift + right click on the iron box to upgrade the box to a 13x5 gold box. Gold box upgrade props can only be used to upgrade iron boxes and cannot be upgraded across levels. Version 0.9.0 has been modified to remove other synthesis tables except the ancient metal box upgrade props.",
-    "desc_hu": "Shift + jobb kattintás a vasdobozra, hogy a dobozt 13x5-ös aranydobozra frissítse. Az aranydoboz-frissítési kellékek csak vasdobozok fejlesztésére használhatók, és nem fejleszthetők szintek között. A 0.9.0-s verziót úgy módosították, hogy eltávolítsák a többi szintézis táblázatot, kivéve az ősi fémdoboz-frissítési kellékeket.",
-    "desc_ru": "Shift + ПКМ по железному сундуку улучшает его до золотого сундука 13x5. Улучшение работает только на железных сундуках и не позволяет пропускать уровни. В 0.9.0 прочие таблицы крафта таких улучшений были убраны, кроме актуальных улучшений древнего металла."
+    "desc_en": "Chest upgrade item that converts an iron chest into a 13x5 gold chest. It only works on the expected lower-tier chest and does not skip tiers.",
+    "desc_hu": "Ládafejlesztő item, amely egy vasládát 13x5-ös aranyládává alakít. Csak a megfelelő alapszintű ládán működik, szintet nem ugrik át.",
+    "desc_ru": "Предмет улучшения сундука, превращающий железный сундук в золотой сундук 13x5. Работает только на ожидаемом нижнем уровне и не позволяет пропускать ступени.",
+    "versions_en": [
+      "v0.9.0: Most older chest-upgrade crafting routes were removed."
+    ],
+    "versions_hu": [
+      "v0.9.0: A legtöbb régi ládafejlesztő recept kikerült."
+    ],
+    "versions_ru": [
+      "v0.9.0: Большинство старых рецептов улучшения сундуков было удалено."
+    ]
   },
   "mithril_chest_upgrade": {
     "mcmod_id": 446695,
-    "desc": "Shift+右键远古金属箱子使用，将箱子升级为一个17x7的秘银箱子。 秘银箱升级道具只能对远古金属箱子使用升级，不能跨等级升级。 0.9.0版本修改，去掉除远古金属箱升级道具以外的其他合成表。",
+    "desc": "Chest upgrade item that converts an ancient metal chest into a 17x7 mithril chest. It only works on the expected lower-tier chest and does not skip tiers.",
     "versions": [
-      "0.9.0版本修改，去掉除远古金属箱升级道具以外的其他合成表"
+      "v0.9.0: Most older chest-upgrade crafting routes were removed."
     ],
-    "desc_en": "Shift + right-click on the ancient metal box to upgrade the box to a 17x7 mithril box. Mithril chest upgrade props can only be used to upgrade ancient metal chests, and cannot be upgraded across levels. Version 0.9.0 has been modified to remove other synthesis tables except the ancient metal box upgrade props.",
-    "desc_hu": "Shift + jobb gombbal kattintson az ősi fémdobozra, hogy a dobozt 17x7-es Mithril dobozra frissítse. A Mithril láda frissítő kellékei csak az ősi fémládák frissítésére használhatók, és nem frissíthetők szintek között. A 0.9.0-s verziót úgy módosították, hogy eltávolítsák a többi szintézis táblázatot, kivéve az ősi fémdoboz-frissítési kellékeket.",
-    "desc_ru": "Shift + ПКМ по сундуку из древнего металла улучшает его до мифрилового сундука 17x7. Улучшение работает только на сундуках из древнего металла и не позволяет пропускать уровни. В 0.9.0 прочие таблицы крафта таких улучшений были убраны, кроме актуальных улучшений древнего металла."
+    "desc_en": "Chest upgrade item that converts an ancient metal chest into a 17x7 mithril chest. It only works on the expected lower-tier chest and does not skip tiers.",
+    "desc_hu": "Ládafejlesztő item, amely egy ősi fémládát 17x7-es mithril ládává alakít. Csak a megfelelő alapszintű ládán működik, szintet nem ugrik át.",
+    "desc_ru": "Предмет улучшения сундука, превращающий сундук из древнего металла в мифриловый сундук 17x7. Работает только на ожидаемом нижнем уровне и не позволяет пропускать ступени.",
+    "versions_en": [
+      "v0.9.0: Most older chest-upgrade crafting routes were removed."
+    ],
+    "versions_hu": [
+      "v0.9.0: A legtöbb régi ládafejlesztő recept kikerült."
+    ],
+    "versions_ru": [
+      "v0.9.0: Большинство старых рецептов улучшения сундуков было удалено."
+    ]
   },
   "adamantium_chest_upgrade": {
     "mcmod_id": 446696,
-    "desc": "Shift+右键秘银箱子使用，将箱子升级为一个19x7的艾德曼箱子。 艾德曼箱升级道具只能对秘银箱子使用升级，不能跨等级升级。 0.9.0版本修改，去掉除远古金属箱升级道具以外的其他合成表。",
+    "desc": "Chest upgrade item that converts a mithril chest into a 19x7 adamantium chest. It only works on the expected lower-tier chest and does not skip tiers.",
     "versions": [
-      "0.9.0版本修改，去掉除远古金属箱升级道具以外的其他合成表"
+      "v0.9.0: Most older chest-upgrade crafting routes were removed."
     ],
-    "desc_en": "Shift+right-click on the Mithril chest to upgrade it into a 19x7 Adamantium chest. The Adamantium chest upgrade can only be used on Mithril chests and cannot skip tiers. Version 0.9.0 removed the other chest-upgrade crafting tables except the Ancient Metal chest upgrade.",
-    "desc_hu": "Shift+jobb kattintással a Mithril ládát 19x7-es Adamantium ládává fejlesztheted. Az Adamantium ládafejlesztés csak Mithril ládán használható, és nem lehet vele szinteket átugrani. A 0.9.0-s verzióban az Ancient Metal ládafejlesztésen kívüli többi ládafejlesztő craft kikerült.",
-    "desc_ru": "Shift + ПКМ по мифриловому сундуку улучшает его до адамантиевого сундука 19x7. Улучшение работает только на мифриловых сундуках и не позволяет пропускать уровни. В 0.9.0 все прочие крафты улучшения сундуков, кроме ветки Ancient Metal, были убраны."
+    "desc_en": "Chest upgrade item that converts a mithril chest into a 19x7 adamantium chest. It only works on the expected lower-tier chest and does not skip tiers.",
+    "desc_hu": "Ládafejlesztő item, amely egy mithril ládát 19x7-es adamantium ládává alakít. Csak a megfelelő alapszintű ládán működik, szintet nem ugrik át.",
+    "desc_ru": "Предмет улучшения сундука, превращающий мифриловый сундук в адамантиевый сундук 19x7. Работает только на ожидаемом нижнем уровне и не позволяет пропускать ступени.",
+    "versions_en": [
+      "v0.9.0: Most older chest-upgrade crafting routes were removed."
+    ],
+    "versions_hu": [
+      "v0.9.0: A legtöbb régi ládafejlesztő recept kikerült."
+    ],
+    "versions_ru": [
+      "v0.9.0: Большинство старых рецептов улучшения сундуков было удалено."
+    ]
   },
   "barrel_copper_upgrade": {
     "mcmod_id": 785074,
-    "desc": "手持升级道具，按住Shift+右击普通木桶使用，将其升级为一个9x5的铜木桶。 铜木桶升级道具只能对普通木桶使用升级，不能跨等级升级。 0.9.0版本修改，去掉除远古金属木桶升级道具以外的其他合成表。",
+    "desc": "Barrel upgrade item that converts a normal barrel into a 9x5 copper barrel. It only works on the expected lower-tier barrel and does not skip tiers.",
     "versions": [
-      "0.9.0版本修改，去掉除远古金属木桶升级道具以外的其他合成表"
+      "v0.9.0: Most older barrel-upgrade crafting routes were removed."
     ],
-    "desc_en": "Hold the upgrade item, hold down Shift+right-click on the ordinary barrel to upgrade it to a 9x5 copper barrel. The copper barrel upgrade props can only be used to upgrade ordinary barrels and cannot be upgraded across levels. Version 0.9.0 has been modified to remove other crafting tables except for the ancient metal barrel upgrade props.",
-    "desc_hu": "Tartsa lenyomva a frissítő elemet, tartsa lenyomva a Shift billentyűkombinációt + kattintson a jobb gombbal a normál hordóra, hogy 9x5-ös rézhordóvá frissítse. A rézhordó-frissítési kellékek csak a közönséges hordók fejlesztésére használhatók, és nem fejleszthetők több szinten. A 0.9.0-s verziót úgy módosították, hogy eltávolítsák a többi ravaszkodó asztalt, kivéve az ősi fémhordó-frissítési kellékeket."
+    "desc_en": "Barrel upgrade item that converts a normal barrel into a 9x5 copper barrel. It only works on the expected lower-tier barrel and does not skip tiers.",
+    "desc_hu": "Hordófejlesztő item, amely egy normál hordót 9x5-ös rézhordóvá alakít. Csak a megfelelő alapszintű hordón működik, szintet nem ugrik át.",
+    "desc_ru": "Предмет улучшения бочки, превращающий обычную бочку в медную бочку 9x5. Работает только на ожидаемом нижнем уровне и не позволяет пропускать ступени.",
+    "versions_en": [
+      "v0.9.0: Most older barrel-upgrade crafting routes were removed."
+    ],
+    "versions_hu": [
+      "v0.9.0: A legtöbb régi hordófejlesztő recept kikerült."
+    ],
+    "versions_ru": [
+      "v0.9.0: Большинство старых рецептов улучшения бочек было удалено."
+    ]
   },
   "barrel_silver_upgrade": {
     "mcmod_id": 785075,
-    "desc": "手持升级道具，按住Shift+右击普通木桶使用，将其升级为一个9x6的银木桶。 银木桶升级道具只能对普通木桶使用升级，不能跨等级升级。 0.9.0版本修改，去掉除远古金属木桶升级道具以外的其他合成表。",
+    "desc": "Barrel upgrade item that converts a normal barrel into a 9x6 silver barrel. It only works on the expected lower-tier barrel and does not skip tiers.",
     "versions": [
-      "0.9.0版本修改，去掉除远古金属木桶升级道具以外的其他合成表"
+      "v0.9.0: Most older barrel-upgrade crafting routes were removed."
     ],
-    "desc_en": "Hold the upgrade item, hold down Shift+right-click on the ordinary barrel to upgrade it to a 9x6 silver barrel. The silver barrel upgrade prop can only be used to upgrade ordinary barrels, and cannot be upgraded across levels. Version 0.9.0 has been modified to remove other crafting tables except for the ancient metal barrel upgrade props.",
-    "desc_hu": "Tartsa lenyomva a frissítési elemet, tartsa lenyomva a Shift billentyűkombinációt + kattintson a jobb gombbal a normál hordóra, hogy 9x6-os ezüst hordóra frissítse. Az ezüst hordó frissítési támaszték csak a közönséges hordók frissítésére használható, és nem fejleszthető szintek között. A 0.9.0-s verziót úgy módosították, hogy eltávolítsák a többi ravaszkodó asztalt, kivéve az ősi fémhordó-frissítési kellékeket."
+    "desc_en": "Barrel upgrade item that converts a normal barrel into a 9x6 silver barrel. It only works on the expected lower-tier barrel and does not skip tiers.",
+    "desc_hu": "Hordófejlesztő item, amely egy normál hordót 9x6-os ezüsthordóvá alakít. Csak a megfelelő alapszintű hordón működik, szintet nem ugrik át.",
+    "desc_ru": "Предмет улучшения бочки, превращающий обычную бочку в серебряную бочку 9x6. Работает только на ожидаемом нижнем уровне и не позволяет пропускать ступени.",
+    "versions_en": [
+      "v0.9.0: Most older barrel-upgrade crafting routes were removed."
+    ],
+    "versions_hu": [
+      "v0.9.0: A legtöbb régi hordófejlesztő recept kikerült."
+    ],
+    "versions_ru": [
+      "v0.9.0: Большинство старых рецептов улучшения бочек было удалено."
+    ]
   },
   "barrel_iron_upgrade": {
     "mcmod_id": 785076,
-    "desc": "手持升级道具，按住Shift+右击铜或银木桶使用，将其升级为一个11x5的铁木桶。 铁木桶升级道具只能对铜或银木桶使用升级，不能跨等级升级。 0.9.0版本修改，去掉除远古金属木桶升级道具以外的其他合成表。",
+    "desc": "Barrel upgrade item that converts a copper or silver barrel into an 11x5 iron barrel. It only works on the expected lower-tier barrel and does not skip tiers.",
     "versions": [
-      "0.9.0版本修改，去掉除远古金属木桶升级道具以外的其他合成表"
+      "v0.9.0: Most older barrel-upgrade crafting routes were removed."
     ],
-    "desc_en": "Hold the upgrade item, hold down Shift + right-click on the copper or silver barrel to upgrade it to an 11x5 iron barrel. The iron barrel upgrade prop can only be used to upgrade copper or silver barrels, and cannot be upgraded across levels. Version 0.9.0 has been modified to remove other crafting tables except for the ancient metal barrel upgrade props.",
-    "desc_hu": "Tartsa lenyomva a frissítő elemet, tartsa lenyomva a Shift billentyűt + kattintson a jobb gombbal a réz vagy ezüst hordóra, hogy 11x5-ös vashordóvá frissítse. A vashordó-frissítési támasz csak réz- vagy ezüsthordók fejlesztésére használható, szintek között nem fejleszthető. A 0.9.0-s verziót úgy módosították, hogy eltávolítsák a többi ravaszkodó asztalt, kivéve az ősi fémhordó-frissítési kellékeket."
+    "desc_en": "Barrel upgrade item that converts a copper or silver barrel into an 11x5 iron barrel. It only works on the expected lower-tier barrel and does not skip tiers.",
+    "desc_hu": "Hordófejlesztő item, amely egy réz- vagy ezüsthordót 11x5-ös vashordóvá alakít. Csak a megfelelő alapszintű hordón működik, szintet nem ugrik át.",
+    "desc_ru": "Предмет улучшения бочки, превращающий медную или серебряную бочку в железную бочку 11x5. Работает только на ожидаемом нижнем уровне и не позволяет пропускать ступени.",
+    "versions_en": [
+      "v0.9.0: Most older barrel-upgrade crafting routes were removed."
+    ],
+    "versions_hu": [
+      "v0.9.0: A legtöbb régi hordófejlesztő recept kikerült."
+    ],
+    "versions_ru": [
+      "v0.9.0: Большинство старых рецептов улучшения бочек было удалено."
+    ]
   },
   "barrel_gold_upgrade": {
     "mcmod_id": 785077,
-    "desc": "手持升级道具，按住Shift+右击铁木桶使用，将其升级为一个13x5的金木桶。 金木桶升级道具只能对铁木桶使用升级，不能跨等级升级。 0.9.0版本修改，去掉除远古金属木桶升级道具以外的其他合成表。",
+    "desc": "Barrel upgrade item that converts an iron barrel into a 13x5 gold barrel. It only works on the expected lower-tier barrel and does not skip tiers.",
     "versions": [
-      "0.9.0版本修改，去掉除远古金属木桶升级道具以外的其他合成表"
+      "v0.9.0: Most older barrel-upgrade crafting routes were removed."
     ],
-    "desc_en": "Hold the upgrade item, hold down Shift+right-click on the iron barrel to upgrade it to a 13x5 golden barrel. The golden barrel upgrade props can only be used to upgrade iron barrels and cannot be upgraded across levels. Version 0.9.0 has been modified to remove other crafting tables except for the ancient metal barrel upgrade props.",
-    "desc_hu": "Tartsa lenyomva a frissítő elemet, tartsa lenyomva a Shift billentyűkombinációt + kattintson a jobb gombbal a vascsőre, hogy 13x5-ös aranyhordóvá frissítse. Az aranyhordó frissítési kellékek csak vashordók fejlesztésére használhatók, és nem fejleszthetők szintek között. A 0.9.0-s verziót úgy módosították, hogy eltávolítsák a többi ravaszkodó asztalt, kivéve az ősi fémhordó-frissítési kellékeket."
+    "desc_en": "Barrel upgrade item that converts an iron barrel into a 13x5 gold barrel. It only works on the expected lower-tier barrel and does not skip tiers.",
+    "desc_hu": "Hordófejlesztő item, amely egy vashordót 13x5-ös aranyhordóvá alakít. Csak a megfelelő alapszintű hordón működik, szintet nem ugrik át.",
+    "desc_ru": "Предмет улучшения бочки, превращающий железную бочку в золотую бочку 13x5. Работает только на ожидаемом нижнем уровне и не позволяет пропускать ступени.",
+    "versions_en": [
+      "v0.9.0: Most older barrel-upgrade crafting routes were removed."
+    ],
+    "versions_hu": [
+      "v0.9.0: A legtöbb régi hordófejlesztő recept kikerült."
+    ],
+    "versions_ru": [
+      "v0.9.0: Большинство старых рецептов улучшения бочек было удалено."
+    ]
   },
   "barrel_mithril_upgrade": {
     "mcmod_id": 785079,
-    "desc": "手持升级道具，按住Shift+右击远古金属木桶使用，将其升级为一个17x7的秘银木桶。 秘银木桶升级道具只能对远古金属木桶使用升级，不能跨等级升级。 0.9.0版本修改，去掉除远古金属木桶升级道具以外的其他合成表。",
+    "desc": "Barrel upgrade item that converts an ancient metal barrel into a 17x7 mithril barrel. It only works on the expected lower-tier barrel and does not skip tiers.",
     "versions": [
-      "0.9.0版本修改，去掉除远古金属木桶升级道具以外的其他合成表"
+      "v0.9.0: Most older barrel-upgrade crafting routes were removed."
     ],
-    "desc_en": "Hold the upgrade item, hold down Shift + right-click on the ancient metal barrel to upgrade it to a 17x7 mithril barrel. The mithril barrel upgrade prop can only be used to upgrade ancient metal barrels, and cannot be upgraded across levels. Version 0.9.0 has been modified to remove other crafting tables except for the ancient metal barrel upgrade props.",
-    "desc_hu": "Tartsa lenyomva a frissítési elemet, tartsa lenyomva a Shift billentyűt + kattintson a jobb gombbal az ősi fémcsőre, hogy 17x7-es mithril hordóvá frissítse. A mithril hordójavító támasz csak régi fémhordók fejlesztésére használható, és nem fejleszthető szintek között. A 0.9.0-s verziót úgy módosították, hogy eltávolítsák a többi ravaszkodó asztalt, kivéve az ősi fémhordó-frissítési kellékeket."
+    "desc_en": "Barrel upgrade item that converts an ancient metal barrel into a 17x7 mithril barrel. It only works on the expected lower-tier barrel and does not skip tiers.",
+    "desc_hu": "Hordófejlesztő item, amely egy ősi fémhordót 17x7-es mithril hordóvá alakít. Csak a megfelelő alapszintű hordón működik, szintet nem ugrik át.",
+    "desc_ru": "Предмет улучшения бочки, превращающий бочку из древнего металла в мифриловую бочку 17x7. Работает только на ожидаемом нижнем уровне и не позволяет пропускать ступени.",
+    "versions_en": [
+      "v0.9.0: Most older barrel-upgrade crafting routes were removed."
+    ],
+    "versions_hu": [
+      "v0.9.0: A legtöbb régi hordófejlesztő recept kikerült."
+    ],
+    "versions_ru": [
+      "v0.9.0: Большинство старых рецептов улучшения бочек было удалено."
+    ]
   },
   "barrel_adamantium_upgrade": {
     "mcmod_id": 785080,
-    "desc": "手持升级道具，按住Shift+右击秘银木桶使用，将其升级为一个19x7的艾德曼木桶。 艾德曼木桶升级道具只能对秘银木桶使用升级，不能跨等级升级。 0.9.0版本修改，去掉除远古金属木桶升级道具以外的其他合成表。",
+    "desc": "Barrel upgrade item that converts a mithril barrel into a 19x7 adamantium barrel. It only works on the expected lower-tier barrel and does not skip tiers.",
     "versions": [
-      "0.9.0版本修改，去掉除远古金属木桶升级道具以外的其他合成表"
+      "v0.9.0: Most older barrel-upgrade crafting routes were removed."
     ],
-    "desc_en": "Holding the upgrade item, hold down Shift + right-click on the mithril barrel to upgrade it to a 19x7 Adamantium barrel. The Adamantium Barrel upgrade prop can only be used to upgrade Mithril Barrels and cannot be upgraded across levels. Version 0.9.0 has been modified to remove other crafting tables except for the ancient metal barrel upgrade props.",
-    "desc_hu": "A frissítési elemet lenyomva tartva tartsa lenyomva a Shift billentyűt + kattintson a jobb gombbal a mithril hordóra, hogy 19x7-es Adamantium hordóvá frissítse. Az Adamantium Barrel frissítési támasz csak Mithril hordók frissítésére használható, és nem frissíthető szintek között. A 0.9.0-s verziót úgy módosították, hogy eltávolítsák a többi ravaszkodó asztalt, kivéve az ősi fémhordó-frissítési kellékeket."
+    "desc_en": "Barrel upgrade item that converts a mithril barrel into a 19x7 adamantium barrel. It only works on the expected lower-tier barrel and does not skip tiers.",
+    "desc_hu": "Hordófejlesztő item, amely egy mithril hordót 19x7-es adamantium hordóvá alakít. Csak a megfelelő alapszintű hordón működik, szintet nem ugrik át.",
+    "desc_ru": "Предмет улучшения бочки, превращающий мифриловую бочку в адамантиевую бочку 19x7. Работает только на ожидаемом нижнем уровне и не позволяет пропускать ступени.",
+    "versions_en": [
+      "v0.9.0: Most older barrel-upgrade crafting routes were removed."
+    ],
+    "versions_hu": [
+      "v0.9.0: A legtöbb régi hordófejlesztő recept kikerült."
+    ],
+    "versions_ru": [
+      "v0.9.0: Большинство старых рецептов улучшения бочек было удалено."
+    ]
   },
   "barrel_hard_upgrade": {
     "mcmod_id": 785133,
-    "desc": "手持升级道具，按住Shift+右击金木桶使用，将其升级为一个15x5的硬石木桶。 硬石木桶升级道具只能对金木桶使用升级，不能跨等级升级。 0.9.0版本修改，去掉除远古金属木桶升级道具以外的其他合成表。",
+    "desc": "Barrel upgrade item that converts a gold barrel into a 15x5 hardstone barrel. It only works on the expected lower-tier barrel and does not skip tiers.",
     "versions": [
-      "0.9.0版本修改，去掉除远古金属木桶升级道具以外的其他合成表"
+      "v0.9.0: Most older barrel-upgrade crafting routes were removed."
     ],
-    "desc_en": "Hold the upgrade item, hold down Shift + right-click the golden barrel to upgrade it to a 15x5 Hardstone barrel. The Hardstone barrel upgrade prop can only be used to upgrade the golden barrel, and cannot be upgraded across levels. Version 0.9.0 has been modified to remove other crafting tables except for the ancient metal barrel upgrade props.",
-    "desc_hu": "Tartsa lenyomva a frissítési elemet, tartsa lenyomva a Shift billentyűt + kattintson a jobb gombbal az aranyhordóra, hogy 15x5-ös keménykőhordóvá frissítse. A keménykőből készült hordó-frissítési támasz csak az aranyhordó fejlesztésére használható, szintek között nem fejleszthető. A 0.9.0-s verziót úgy módosították, hogy eltávolítsák a többi ravaszkodó asztalt, kivéve az ősi fémhordó-frissítési kellékeket."
+    "desc_en": "Barrel upgrade item that converts a gold barrel into a 15x5 hardstone barrel. It only works on the expected lower-tier barrel and does not skip tiers.",
+    "desc_hu": "Hordófejlesztő item, amely egy aranyhordót 15x5-ös keménykőhordóvá alakít. Csak a megfelelő alapszintű hordón működik, szintet nem ugrik át.",
+    "desc_ru": "Предмет улучшения бочки, превращающий золотую бочку в твердокаменную бочку 15x5. Работает только на ожидаемом нижнем уровне и не позволяет пропускать ступени.",
+    "versions_en": [
+      "v0.9.0: Most older barrel-upgrade crafting routes were removed."
+    ],
+    "versions_hu": [
+      "v0.9.0: A legtöbb régi hordófejlesztő recept kikerült."
+    ],
+    "versions_ru": [
+      "v0.9.0: Большинство старых рецептов улучшения бочек было удалено."
+    ]
   },
   "log_pitaya": {
     "mcmod_id": 772036,
@@ -3405,48 +3957,98 @@
   },
   "obsidian_ingot_mould": {
     "mcmod_id": 816195,
-    "desc": "0.6.0版本新增，用于熔炉中熔炼矿石成矿锭的必需工具，每成功熔炼一次后消耗其一点耐久值。 可用 燧石小刀 和黑曜石在任意工作台合成，也可使用 战锤 和黑曜石合成。",
+    "desc": "Obsidian ingot template required for turning molten ore into ingots through the furnace route. Each successful use consumes durability.",
     "versions": [
-      "0.6.0版本新增，用于熔炉中熔炼矿石成矿锭的必需工具，每成功熔炼一次后消耗其一点耐久值"
+      "v0.6.0: Obsidian ingot templates were added."
     ],
-    "desc_en": "Newly added in version 0.6.0, it is a necessary tool used to smelt ore into ore ingots in the furnace. Each time it is successfully smelted, one point of its durability is consumed. It can be crafted with a flint knife and obsidian at any workbench, or with a warhammer and obsidian.",
-    "desc_hu": "A 0.6.0-s verzióban újonnan hozzáadott, szükséges eszköz az érc kemencében való érctömbökké történő olvasztására. Minden alkalommal, amikor sikeresen olvasztják, tartósságának egy pontja fogy el. Készíthető kovakő késsel és obszidiánnal bármelyik munkapadon, vagy hadikalapáccsal és obszidiánnal."
+    "desc_en": "Obsidian ingot template required for turning molten ore into ingots through the furnace route. Each successful use consumes durability.",
+    "desc_hu": "Obszidián rúdforma, amely az olvasztási útvonalon kötelező a megolvadt érc rudakká alakításához. Minden sikeres használat csökkenti a tartósságát.",
+    "desc_ru": "Обсидиановая форма для слитков, необходимая для превращения расплавленной руды в слитки через печной путь. Каждое успешное использование тратит прочность.",
+    "versions_en": [
+      "v0.6.0: Obsidian ingot templates were added."
+    ],
+    "versions_hu": [
+      "v0.6.0: Megjelentek az obszidián rúdformák."
+    ],
+    "versions_ru": [
+      "v0.6.0: Были добавлены обсидиановые формы для слитков."
+    ]
   },
   "obsidian_ingot_cool_mould": {
     "mcmod_id": 818797,
-    "desc": "0.6.0版本新增，用于熔炉中熔炼矿石成矿锭的必需工具，每成功熔炼一次后消耗其一点耐久值。 由 冷却液 和 黑曜石锭模板 合成。",
+    "desc": "Cooled variant of the obsidian ingot template, crafted from coolant and the base mould. It is used in the same ore-to-ingot processing line and also loses durability on use.",
     "versions": [
-      "0.6.0版本新增，用于熔炉中熔炼矿石成矿锭的必需工具，每成功熔炼一次后消耗其一点耐久值"
+      "v0.6.0: Cooled obsidian ingot moulds were added."
     ],
-    "desc_en": "Newly added in version 0.6.0, it is a necessary tool used to smelt ore into ore ingots in the furnace. Each time it is successfully smelted, one point of its durability is consumed. Crafted from Coolant and Obsidian Ingot Template.",
-    "desc_hu": "A 0.6.0-s verzióban újonnan hozzáadott, szükséges eszköz az érc kemencében való érctömbökké történő olvasztására. Minden alkalommal, amikor sikeresen olvasztják, tartósságának egy pontja fogy el. Hűtőfolyadékból és Obszidián rúdsablonból készült."
+    "desc_en": "Cooled variant of the obsidian ingot template, crafted from coolant and the base mould. It is used in the same ore-to-ingot processing line and also loses durability on use.",
+    "desc_hu": "Az obszidián rúdforma hűtött változata, amely hűtőfolyadékból és az alap formából készül. Ugyanabban az ércből-rúdba feldolgozási láncban használható, és használatkor ez is veszít a tartósságából.",
+    "desc_ru": "Охлаждённый вариант обсидиановой формы для слитков, создаваемый из охлаждающей жидкости и базовой формы. Используется в той же цепочке переработки руды в слитки и тоже теряет прочность при использовании.",
+    "versions_en": [
+      "v0.6.0: Cooled obsidian ingot moulds were added."
+    ],
+    "versions_hu": [
+      "v0.6.0: Megjelentek a hűtött obszidián rúdformák."
+    ],
+    "versions_ru": [
+      "v0.6.0: Были добавлены охлаждённые обсидиановые формы для слитков."
+    ]
   },
   "skin_cream_bottle": {
     "mcmod_id": 828506,
-    "desc": "0.8版本新增道具，可以延长1倍酸性值增加时间，持续效果10分钟。 使用方法：在背包内拿起护肤瓶，对准人物头部右键。 制作方法：由骨粉、鸡蛋、粘土、粘液球和玻璃瓶在工作台合成。",
+    "desc": "Protective skin-cream bottle used against the mod's acidity mechanic. Applied from the inventory onto the player and lasts about 10 minutes.",
     "versions": [
-      "0.8版本新增道具，可以延长1倍酸性值增加时间，持续效果10分钟"
+      "v0.8.0: Skin cream bottles were added."
     ],
-    "desc_en": "A new prop is added in version 0.8, which can extend the acid value increase time by 1 times, and the effect lasts for 10 minutes. How to use: Pick up the skin care bottle in the backpack and right-click on the character's head. Production method: craft at the workbench from bone meal, eggs, clay, slime balls and glass bottles.",
-    "desc_hu": "A 0.8-as verzióban egy új támaszt adnak hozzá, ami 1-szeresére növelheti a savérték növekedési idejét, és a hatás 10 percig tart. Használat: Vegye fel a bőrápoló palackot a hátizsákban, és kattintson a jobb gombbal a karakter fejére. Gyártási mód: kézműves munkapadon csontlisztből, tojásból, agyagból, iszapgolyókból és üvegpalackokból."
+    "desc_en": "Protective skin-cream bottle used against the mod's acidity mechanic. Applied from the inventory onto the player and lasts about 10 minutes.",
+    "desc_hu": "Védő bőrápoló palack a mod savasság-mechanikája ellen. Az inventoryból a játékosra használható, és nagyjából 10 percig tart.",
+    "desc_ru": "Защитный флакон крема для кожи против механики кислотности в моде. Применяется из инвентаря на игрока и длится около 10 минут.",
+    "versions_en": [
+      "v0.8.0: Skin cream bottles were added."
+    ],
+    "versions_hu": [
+      "v0.8.0: Megjelentek a bőrápoló palackok."
+    ],
+    "versions_ru": [
+      "v0.8.0: Были добавлены флаконы крема для кожи."
+    ]
   },
   "oxygen_bottle": {
     "mcmod_id": 828507,
-    "desc": "0.8版本新增道具，可以用于消除缺氧值，每个减少4点缺氧值。 使用方法：在背包内拿起氧气瓶，对准人物头部右键。 制作方法：手持 玻璃瓶 在丛林地形，对着天空右键。",
+    "desc": "Consumable oxygen bottle that reduces the mod's hypoxia value by 4. It is used from the inventory on the player.",
     "versions": [
-      "0.8版本新增道具，可以用于消除缺氧值，每个减少4点缺氧值"
+      "v0.8.0: Oxygen bottles were added."
     ],
-    "desc_en": "Version 0.8 adds new props that can be used to eliminate hypoxia, each reducing hypoxia by 4 points. How to use: Pick up the oxygen bottle in the backpack and right-click on the character's head. How to make: Hold the glass bottle in the jungle terrain and right-click on the sky.",
-    "desc_hu": "A 0.8-as verzió új kiegészítőket tartalmaz, amelyekkel kiküszöbölhető a hipoxia, mindegyik 4 ponttal csökkenti a hipoxiát. Használat: Vegye fel a hátizsákban lévő oxigénpalackot, és kattintson a jobb gombbal a karakter fejére. Elkészítés: Tartsa az üvegpalackot a dzsungel terepen, és kattintson jobb gombbal az égre."
+    "desc_en": "Consumable oxygen bottle that reduces the mod's hypoxia value by 4. It is used from the inventory on the player.",
+    "desc_hu": "Elfogyasztható oxigénpalack, amely 4-gyel csökkenti a mod hipoxiaértékét. Az inventoryból a játékosra használható.",
+    "desc_ru": "Расходуемый кислородный флакон, уменьшающий значение гипоксии в моде на 4. Используется из инвентаря на игрока.",
+    "versions_en": [
+      "v0.8.0: Oxygen bottles were added."
+    ],
+    "versions_hu": [
+      "v0.8.0: Megjelentek az oxigénpalackok."
+    ],
+    "versions_ru": [
+      "v0.8.0: Были добавлены кислородные флаконы."
+    ]
   },
   "sleep_bag": {
     "mcmod_id": 828563,
-    "desc": "0.8版本新增物品，手持简易睡袋，鼠标右键地面可将简易睡袋放在地上，空手右键即可躺下。 简易睡袋为玩家在外边随时随地提供便利，但缺点是无法设置重生点，好在优点是不会获得因席地而睡产生的debuff。",
+    "desc": "Portable sleep bag for resting away from base. It can be placed on the ground and used without setting a respawn point, but it avoids the penalty of sleeping directly on bare ground.",
     "versions": [
-      "0.8版本新增物品，手持简易睡袋，鼠标右键地面可将简易睡袋放在地上，空手右键即可躺下"
+      "v0.8.0: Sleep bags were added."
     ],
-    "desc_en": "There are new items added in version 0.8. Hold a simple Sleep Bag and right-click the ground to place the Sleep Bag on the ground. Right-click with an empty hand to lie down. A simple Sleep Bag provides convenience for players to go outside anytime and anywhere, but the disadvantage is that they cannot set a respawn point. Fortunately, the advantage is that they will not get the debuff caused by sleeping on the ground.",
-    "desc_hu": "A 0.8-as verzió új elemeket tartalmaz. Fogjon meg egy egyszerű hálózsákot, és kattintson jobb gombbal a talajra, hogy a hálózsákot a földre helyezze. Kattintson a jobb gombbal üres kézzel, hogy lefeküdjön. Egy egyszerű hálózsák kényelmét szolgálja a játékosok számára, hogy bárhol és bármikor kimenjenek a szabadba, de a hátránya, hogy nem tudják beállítani az újrakezdési pontot. Szerencsére az előnye, hogy nem kapják meg a földön alvás okozta debuffot."
+    "desc_en": "Portable sleep bag for resting away from base. It can be placed on the ground and used without setting a respawn point, but it avoids the penalty of sleeping directly on bare ground.",
+    "desc_hu": "Hordozható hálózsák távoli pihenéshez. Lehelyezhető a földre, használható respawnpont állítása nélkül, viszont elkerüli a puszta földön alvás büntetését.",
+    "desc_ru": "Переносной спальный мешок для отдыха вдали от базы. Его можно положить на землю и использовать без установки точки возрождения, зато он избегает штрафа за сон прямо на голой земле.",
+    "versions_en": [
+      "v0.8.0: Sleep bags were added."
+    ],
+    "versions_hu": [
+      "v0.8.0: Megjelentek a hálózsákok."
+    ],
+    "versions_ru": [
+      "v0.8.0: Были добавлены спальные мешки."
+    ]
   },
   "rusted_iron_hatchet": {
     "mcmod_id": 773562,
