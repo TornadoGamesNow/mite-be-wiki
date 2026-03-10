@@ -2722,7 +2722,8 @@
       "masonry"
     ],
     "ingredients": [
-      "netherrack"
+      "netherrack",
+      "coal"
     ],
     "shaped": true
   },
@@ -7281,7 +7282,8 @@
       "masonry"
     ],
     "ingredients": [
-      "clay_ball"
+      "clay_ball",
+      "coal"
     ],
     "shaped": true
   },
@@ -33720,7 +33722,8 @@
         "log_spruce",
         "log_birch",
         "log_jungle"
-      ]
+      ],
+      "coal"
     ],
     "shaped": false
   },
@@ -34766,7 +34769,8 @@
       "foodPreparation"
     ],
     "ingredients": [
-      "water_bowl"
+      "water_bowl",
+      "coal"
     ],
     "shaped": true
   },
@@ -35099,7 +35103,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "worm_raw"
+      "worm_raw",
+      "coal"
     ],
     "shaped": true,
     "item_num": 772979
@@ -35112,7 +35117,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "duck_meat"
+      "duck_meat",
+      "coal"
     ],
     "shaped": true,
     "item_num": 446428
@@ -35125,7 +35131,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "duck_head"
+      "duck_head",
+      "coal"
     ],
     "shaped": true
   },
@@ -35272,7 +35279,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "beef"
+      "beef",
+      "coal"
     ],
     "shaped": false
   },
@@ -35284,7 +35292,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "mutton_raw"
+      "mutton_raw",
+      "coal"
     ],
     "shaped": false,
     "item_num": 772250
@@ -35297,7 +35306,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "squid_meat"
+      "squid_meat",
+      "coal"
     ],
     "shaped": true,
     "item_num": 446430
@@ -36245,7 +36255,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "copper_ore"
+      "copper_ore",
+      "coal"
     ],
     "shaped": false
   },
@@ -36258,7 +36269,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "silver_ore"
+      "silver_ore",
+      "coal"
     ],
     "shaped": false
   },
@@ -36271,7 +36283,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "gold_ore"
+      "gold_ore",
+      "coal"
     ],
     "shaped": false
   },
@@ -36284,7 +36297,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "iron_ore"
+      "iron_ore",
+      "coal"
     ],
     "shaped": false
   },
@@ -36297,7 +36311,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "hardstone_ore"
+      "hardstone_ore",
+      "coal"
     ],
     "shaped": false
   },
@@ -36310,7 +36325,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "mithril_ore"
+      "mithril_ore",
+      "coal"
     ],
     "shaped": false
   },
@@ -36323,7 +36339,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "adamantium_ore"
+      "adamantium_ore",
+      "coal"
     ],
     "shaped": false
   },
@@ -36336,7 +36353,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "chicken"
+      "chicken",
+      "coal"
     ],
     "shaped": false
   },
@@ -36349,7 +36367,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "potato"
+      "potato",
+      "coal"
     ],
     "shaped": false
   },
@@ -44782,7 +44801,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "duck_meat"
+      "duck_meat",
+      "coal"
     ],
     "shaped": false
   },
@@ -44795,7 +44815,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "duck_head"
+      "duck_head",
+      "coal"
     ],
     "shaped": false
   },
@@ -44808,7 +44829,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "mutton_raw"
+      "mutton_raw",
+      "coal"
     ],
     "shaped": false
   },
@@ -44821,7 +44843,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "squid_meat"
+      "squid_meat",
+      "coal"
     ],
     "shaped": false
   },
@@ -44834,7 +44857,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "raw_fish"
+      "raw_fish",
+      "coal"
     ],
     "shaped": false
   },
@@ -44847,7 +44871,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "porkchop"
+      "porkchop",
+      "coal"
     ],
     "shaped": false
   },
@@ -44860,7 +44885,8 @@
     "difficulty": 0,
     "skills": [],
     "ingredients": [
-      "beef"
+      "beef",
+      "coal"
     ],
     "shaped": false
   },
