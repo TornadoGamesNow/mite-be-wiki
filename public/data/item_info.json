@@ -4769,10 +4769,9 @@
   },
   "bucket_stone": {
     "mcmod_id": 772997,
-    "desc": "Special bucket state created when a magma bucket is submerged in water. It can be converted back into the matching empty bucket, but not exploited for free stone.",
-    "desc_en": "Special bucket state created when a magma bucket is submerged in water. It can be converted back into the matching empty bucket, but not exploited for free stone.",
-    "desc_hu": "Speciális vödörállapot, amely akkor jön létre, ha egy magmás vödör vízbe merül. Visszaalakítható a megfelelő üres vödörré, de nem használható ingyen kőtermelésre.",
-    "desc_ru": "Особое состояние ведра, возникающее при погружении ведра с магмой в воду. Его можно вернуть в соответствующее пустое ведро, но нельзя использовать для бесплатного получения камня."
+    "desc_en": "A special bucket state created when a player carries a lava-filled bucket into water — the lava solidifies and the bucket becomes a bucket of stone. It can be crafted back into an empty bucket, but no cobblestone or stone is obtained in the process.",
+    "desc_hu": "Speciális vödörállapot: ha a játékos lávával teli vödörrel vízbe merül, a láva megszilárdul és a vödör kővel telt vödörré alakul. Crafting segítségével visszaalakítható üres vödörré, de a folyamat során sem kavics, sem kő nem keletkezik.",
+    "desc_ru": "Особое состояние ведра: если игрок держит ведро с лавой и погружается в воду, лава затвердевает, и ведро превращается в ведро с камнями. Его можно скрафтить обратно в пустое ведро, однако ни булыжник, ни камень при этом не выпадают."
   },
   "bucket_liquefied_gold": {
     "mcmod_id": 777325,
