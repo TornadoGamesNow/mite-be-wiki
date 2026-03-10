@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "straw_rope",
     "output": "straw_rope",
@@ -32,7 +32,7 @@
     "pattern": [
       [
         "straw_rope",
-        "flint_szilánk"
+        "flint_shard"
       ],
       [
         "_",
@@ -80,12 +80,12 @@
     "gridSize": "2x2",
     "pattern": [
       [
-        "flint_szilánk",
-        "flint_szilánk"
+        "flint_shard",
+        "flint_shard"
       ],
       [
-        "flint_szilánk",
-        "flint_szilánk"
+        "flint_shard",
+        "flint_shard"
       ]
     ],
     "label": {
@@ -195,9 +195,9 @@
     "gridSize": "3x3",
     "pattern": [
       [
-        "flint_szilánk",
+        "flint_shard",
         "flint",
-        "flint_szilánk"
+        "flint_shard"
       ],
       [
         "sinew",
@@ -415,13 +415,13 @@
     "skill": "blacksmithing"
   },
   {
-    "id": "Keménykő_workbench",
-    "output": "Keménykő_workbench",
+    "id": "hardstone_workbench",
+    "output": "hardstone_workbench",
     "station": "hand",
     "gridSize": "2x2",
     "pattern": [
       [
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "leather"
       ],
       [
@@ -679,18 +679,18 @@
     "skill": "masonry"
   },
   {
-    "id": "Obszidián",
-    "output": "Obszidián",
+    "id": "obsidian",
+    "output": "obsidian",
     "station": "hand",
     "gridSize": "2x2",
     "pattern": [
       [
-        "Obszidián_szilánk",
-        "Obszidián_szilánk"
+        "obsidian_shard",
+        "obsidian_shard"
       ],
       [
-        "Obszidián_szilánk",
-        "Obszidián_szilánk"
+        "obsidian_shard",
+        "obsidian_shard"
       ]
     ],
     "label": {
@@ -704,12 +704,12 @@
   },
   {
     "id": "ingot_mold",
-    "output": "Obszidián_ingot_mold",
+    "output": "obsidian_ingot_mould",
     "station": "hand",
     "gridSize": "2x2",
     "pattern": [
       [
-        "Obszidián",
+        "obsidian",
         "flint_knife"
       ],
       [
@@ -729,13 +729,13 @@
   },
   {
     "id": "ingot_mold_x2",
-    "output": "Obszidián_ingot_mold",
+    "output": "obsidian_ingot_mould",
     "outputCount": 2,
     "station": "copper_workbench",
     "gridSize": "2x2",
     "pattern": [
       [
-        "Obszidián",
+        "obsidian",
         "copper_war_hammer"
       ],
       [
@@ -1220,7 +1220,7 @@
         ],
         [
           "coal",
-          "Faszén"
+          "charcoal"
         ],
         [
           "planks_oak",
@@ -1447,13 +1447,13 @@
       ],
       [
         "emerald",
-        "Obszidián",
+        "obsidian",
         "emerald"
       ],
       [
-        "Obszidián",
-        "Obszidián",
-        "Obszidián"
+        "obsidian",
+        "obsidian",
+        "obsidian"
       ]
     ],
     "label": {
@@ -1481,13 +1481,13 @@
       ],
       [
         "diamond",
-        "Obszidián",
+        "obsidian",
         "diamond"
       ],
       [
-        "Obszidián",
-        "Obszidián",
-        "Obszidián"
+        "obsidian",
+        "obsidian",
+        "obsidian"
       ]
     ],
     "label": {
@@ -1516,7 +1516,7 @@
       [
         [
           "coal",
-          "Faszén"
+          "charcoal"
         ],
         "_",
         "_"
@@ -1676,13 +1676,13 @@
       ],
       [
         "redstone_block",
-        "Obszidián",
+        "obsidian",
         "redstone_block"
       ],
       [
-        "Obszidián",
-        "Obszidián",
-        "Obszidián"
+        "obsidian",
+        "obsidian",
+        "obsidian"
       ]
     ],
     "label": {
@@ -1728,19 +1728,19 @@
     ]
   },
   {
-    "id": "Keménykő_sword",
-    "output": "Keménykő_sword",
+    "id": "hardstone_sword",
+    "output": "hardstone_sword",
     "station": "iron_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
         "_",
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "_"
       ],
       [
         "_",
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "_"
       ],
       [
@@ -1766,15 +1766,15 @@
     "skill": "blacksmithing"
   },
   {
-    "id": "Keménykő_pickaxe",
-    "output": "Keménykő_pickaxe",
+    "id": "hardstone_pickaxe",
+    "output": "hardstone_pickaxe",
     "station": "iron_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
-        "Keménykő_ingot",
-        "Keménykő_ingot",
-        "Keménykő_ingot"
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
       ],
       [
         "_",
@@ -1804,20 +1804,20 @@
     "skill": "blacksmithing"
   },
   {
-    "id": "Keménykő_war_hammer",
-    "output": "Keménykő_war_hammer",
+    "id": "hardstone_war_hammer",
+    "output": "hardstone_war_hammer",
     "station": "iron_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
-        "Keménykő_ingot",
-        "Keménykő_ingot",
-        "Keménykő_ingot"
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
       ],
       [
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "stick",
-        "Keménykő_ingot"
+        "hardstone_ingot"
       ],
       [
         "_",
@@ -1842,20 +1842,20 @@
     "skill": "blacksmithing"
   },
   {
-    "id": "Keménykő_helmet",
-    "output": "Keménykő_helmet",
+    "id": "hardstone_helmet",
+    "output": "hardstone_helmet",
     "station": "iron_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
-        "Keménykő_ingot",
-        "Keménykő_ingot",
-        "Keménykő_ingot"
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
       ],
       [
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "_",
-        "Keménykő_ingot"
+        "hardstone_ingot"
       ],
       [
         "_",
@@ -1875,25 +1875,25 @@
     "skill": "blacksmithing"
   },
   {
-    "id": "Keménykő_chestplate",
-    "output": "Keménykő_chestplate",
+    "id": "hardstone_chestplate",
+    "output": "hardstone_chestplate",
     "station": "iron_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "_",
-        "Keménykő_ingot"
+        "hardstone_ingot"
       ],
       [
-        "Keménykő_ingot",
-        "Keménykő_ingot",
-        "Keménykő_ingot"
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
       ],
       [
-        "Keménykő_ingot",
-        "Keménykő_ingot",
-        "Keménykő_ingot"
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
       ]
     ],
     "label": {
@@ -1925,7 +1925,7 @@
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -1962,7 +1962,7 @@
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -1994,12 +1994,12 @@
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -2031,12 +2031,12 @@
       ],
       [
         "mithril_bar",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -2068,12 +2068,12 @@
       ],
       [
         "mithril_bar",
-        "Keménykő_handle",
+        "hardstone_handle",
         "mithril_bar"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -2110,7 +2110,7 @@
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -2142,12 +2142,12 @@
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -2179,12 +2179,12 @@
       ],
       [
         "adamantium_bar",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -2216,12 +2216,12 @@
       ],
       [
         "adamantium_bar",
-        "Keménykő_handle",
+        "hardstone_handle",
         "adamantium_bar"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -2637,25 +2637,25 @@
     "skill": "Blacksmith"
   },
   {
-    "id": "Keménykő_leggings",
-    "output": "Keménykő_leggings",
+    "id": "hardstone_leggings",
+    "output": "hardstone_leggings",
     "station": "iron_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
-        "Keménykő_ingot",
-        "Keménykő_ingot",
-        "Keménykő_ingot"
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
       ],
       [
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "_",
-        "Keménykő_ingot"
+        "hardstone_ingot"
       ],
       [
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "_",
-        "Keménykő_ingot"
+        "hardstone_ingot"
       ]
     ],
     "label": {
@@ -2670,8 +2670,8 @@
     "skill": "Blacksmith"
   },
   {
-    "id": "Keménykő_boots",
-    "output": "Keménykő_boots",
+    "id": "hardstone_boots",
+    "output": "hardstone_boots",
     "station": "iron_workbench",
     "gridSize": "3x3",
     "pattern": [
@@ -2681,14 +2681,14 @@
         "_"
       ],
       [
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "_",
-        "Keménykő_ingot"
+        "hardstone_ingot"
       ],
       [
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "_",
-        "Keménykő_ingot"
+        "hardstone_ingot"
       ]
     ],
     "label": {
@@ -3134,28 +3134,28 @@
     "difficulty": 1760
   },
   {
-    "id": "furnace_core_Obszidián",
-    "output": "furnace_core_Obszidián",
+    "id": "furnace_core_obsidian",
+    "output": "furnace_core_obsidian",
     "station": "gold_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
-        "Obszidián",
-        "Obszidián",
-        "Obszidián"
+        "obsidian",
+        "obsidian",
+        "obsidian"
       ],
       [
-        "Obszidián",
+        "obsidian",
         [
           "gold_workbench",
           "iron_workbench"
         ],
-        "Obszidián"
+        "obsidian"
       ],
       [
-        "Obszidián",
-        "Obszidián",
-        "Obszidián"
+        "obsidian",
+        "obsidian",
+        "obsidian"
       ]
     ],
     "label": {
@@ -3370,12 +3370,12 @@
       ],
       [
         "ancient_metal_ingot",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -3401,12 +3401,12 @@
       ],
       [
         "mithril_bar",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -3432,12 +3432,12 @@
       ],
       [
         "adamantium_bar",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -3452,17 +3452,17 @@
     ]
   },
   {
-    "id": "Keménykő_battle_axe",
+    "id": "hardstone_battle_axe",
     "station": "Keménykő_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
-        "Keménykő_ingot",
-        "Keménykő_ingot",
-        "Keménykő_ingot"
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
       ],
       [
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "stick",
         "_"
       ],
@@ -3472,7 +3472,7 @@
         "_"
       ]
     ],
-    "output": "Keménykő_battle_axe",
+    "output": "hardstone_battle_axe",
     "label": {
       "hu": "Keménykő Csatabárd",
       "en": "Hardstone Battle Axe"
@@ -3614,12 +3614,12 @@
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "ancient_metal_ingot"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -3644,12 +3644,12 @@
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "mithril_bar"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -3674,12 +3674,12 @@
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "adamantium_bar"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -3693,19 +3693,19 @@
     ]
   },
   {
-    "id": "Keménykő_mattock",
+    "id": "hardstone_mattock",
     "station": "Keménykő_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
-        "Keménykő_ingot",
-        "Keménykő_ingot",
-        "Keménykő_ingot"
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
       ],
       [
         "_",
         "stick",
-        "Keménykő_ingot"
+        "hardstone_ingot"
       ],
       [
         "_",
@@ -3713,7 +3713,7 @@
         "_"
       ]
     ],
-    "output": "Keménykő_mattock",
+    "output": "hardstone_mattock",
     "label": {
       "hu": "Keménykő Ácskapa",
       "en": "Hardstone Mattock"
@@ -3852,17 +3852,17 @@
     "gridSize": "3x3",
     "pattern": [
       [
-        "Keménykő_handle",
+        "hardstone_handle",
         "ancient_metal_ingot",
         "_"
       ],
       [
-        "Keménykő_handle",
+        "hardstone_handle",
         "ancient_metal_ingot",
         "_"
       ],
       [
-        "Keménykő_handle",
+        "hardstone_handle",
         "_",
         "_"
       ]
@@ -3883,17 +3883,17 @@
     "gridSize": "3x3",
     "pattern": [
       [
-        "Keménykő_handle",
+        "hardstone_handle",
         "mithril_bar",
         "_"
       ],
       [
-        "Keménykő_handle",
+        "hardstone_handle",
         "mithril_bar",
         "_"
       ],
       [
-        "Keménykő_handle",
+        "hardstone_handle",
         "_",
         "_"
       ]
@@ -3914,17 +3914,17 @@
     "gridSize": "3x3",
     "pattern": [
       [
-        "Keménykő_handle",
+        "hardstone_handle",
         "adamantium_bar",
         "_"
       ],
       [
-        "Keménykő_handle",
+        "hardstone_handle",
         "adamantium_bar",
         "_"
       ],
       [
-        "Keménykő_handle",
+        "hardstone_handle",
         "_",
         "_"
       ]
@@ -3940,18 +3940,18 @@
     ]
   },
   {
-    "id": "Keménykő_scythe",
+    "id": "hardstone_scythe",
     "station": "Keménykő_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
         "stick",
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "_"
       ],
       [
         "stick",
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "_"
       ],
       [
@@ -3960,7 +3960,7 @@
         "_"
       ]
     ],
-    "output": "Keménykő_scythe",
+    "output": "hardstone_scythe",
     "label": {
       "hu": "Keménykő Kasza",
       "en": "Hardstone Scythe"
@@ -4181,17 +4181,17 @@
     ]
   },
   {
-    "id": "Keménykő_shears",
+    "id": "hardstone_shears",
     "station": "Keménykő_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
         "_",
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "_"
       ],
       [
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "_",
         "_"
       ],
@@ -4201,7 +4201,7 @@
         "_"
       ]
     ],
-    "output": "Keménykő_shears",
+    "output": "hardstone_shears",
     "label": {
       "hu": "Keménykő Olló",
       "en": "Hardstone Shears"
@@ -4284,12 +4284,12 @@
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -4315,12 +4315,12 @@
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -4346,12 +4346,12 @@
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -4366,13 +4366,13 @@
     ]
   },
   {
-    "id": "Keménykő_hatchet",
+    "id": "hardstone_hatchet",
     "station": "Keménykő_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
         "_",
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "_"
       ],
       [
@@ -4386,7 +4386,7 @@
         "_"
       ]
     ],
-    "output": "Keménykő_hatchet",
+    "output": "hardstone_hatchet",
     "label": {
       "hu": "Keménykő Kézbalta",
       "en": "Hardstone Hatchet"
@@ -4468,12 +4468,12 @@
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -4498,12 +4498,12 @@
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -4528,12 +4528,12 @@
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ],
       [
         "_",
-        "Keménykő_handle",
+        "hardstone_handle",
         "_"
       ]
     ],
@@ -4609,7 +4609,7 @@
     "pattern": [
       [
         "_",
-        "flint_szilánk",
+        "flint_shard",
         "_"
       ],
       [
@@ -4763,13 +4763,13 @@
     "outputCount": 4
   },
   {
-    "id": "Obszidián_arrow",
+    "id": "obsidian_arrow",
     "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
         "_",
-        "Obszidián_szilánk",
+        "obsidian_shard",
         "_"
       ],
       [
@@ -4783,7 +4783,7 @@
         "_"
       ]
     ],
-    "output": "Obszidián_arrow",
+    "output": "obsidian_arrow",
     "label": {
       "hu": "Obszidián Nyíl",
       "en": "Obsidian Arrow"
@@ -5115,17 +5115,17 @@
     "outputCount": 4
   },
   {
-    "id": "Keménykő_chain",
+    "id": "hardstone_chain",
     "station": "Keménykő_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
         "_",
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "_"
       ],
       [
-        "Keménykő_ingot",
+        "hardstone_ingot",
         "_",
         "_"
       ],
@@ -5135,7 +5135,7 @@
         "_"
       ]
     ],
-    "output": "Keménykő_chain",
+    "output": "hardstone_chain",
     "label": {
       "hu": "Keménykő Lánc",
       "en": "Hardstone Chain"
@@ -5176,5 +5176,3 @@
     }
   }
 ]
-
-
