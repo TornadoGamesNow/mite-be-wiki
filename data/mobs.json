@@ -6082,7 +6082,8 @@
     },
     "drops": [],
     "mcmod_id": 808650,
-    "preview": "butterfly_preview.jpg"
+    "preview": "butterfly_preview.jpg",
+    "dmgType": "melee"
   },
   {
     "id": "fly",
@@ -6122,7 +6123,8 @@
     },
     "drops": [],
     "mcmod_id": 808642,
-    "preview": "fly_preview.jpg"
+    "preview": "fly_preview.jpg",
+    "dmgType": "melee"
   },
   {
     "id": "coyote",
@@ -7265,7 +7267,8 @@
       }
     ],
     "mcmod_id": 773872,
-    "preview": "squid_preview.jpg"
+    "preview": "squid_preview.jpg",
+    "dmgType": "melee"
   },
   {
     "id": "carp",
@@ -7315,7 +7318,8 @@
       }
     ],
     "mcmod_id": 808644,
-    "preview": "carp_preview.jpg"
+    "preview": "carp_preview.jpg",
+    "dmgType": "melee"
   },
   {
     "id": "longdead",
@@ -7426,7 +7430,8 @@
       }
     ],
     "mcmod_id": 773667,
-    "preview": "bad_wolf_preview.jpg"
+    "preview": "bad_wolf_preview.jpg",
+    "dmgType": "melee"
   },
   {
     "id": "mutation_spider",
@@ -7486,7 +7491,8 @@
       }
     ],
     "mcmod_id": 773664,
-    "preview": "mutation_spider_preview.jpg"
+    "preview": "mutation_spider_preview.jpg",
+    "dmgType": "melee"
   },
   {
     "id": "bat",

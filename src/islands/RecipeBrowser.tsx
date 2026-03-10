@@ -255,11 +255,11 @@ export default function RecipeBrowser() {
     });
   }, [merged, stationFilter, tagFilter, keyword, lang]);
 
-  const stationLabel = lang === 'hu' ? 'Munkaasztal' : 'Station';
-  const tagLabel = lang === 'hu' ? 'Címke' : 'Tag';
-  const searchLabel = lang === 'hu' ? 'Keresés...' : 'Search...';
-  const allLabel = lang === 'hu' ? 'Mind' : 'All';
-  const countLabel = lang === 'hu' ? `${filtered.length} recept` : `${filtered.length} recipes`;
+  const stationLabel = lang === 'hu' ? 'Munkaasztal' : lang === 'ru' ? 'Станция' : 'Station';
+  const tagLabel = lang === 'hu' ? 'Címke' : lang === 'ru' ? 'Тег' : 'Tag';
+  const searchLabel = lang === 'hu' ? 'Keresés...' : lang === 'ru' ? 'Поиск...' : 'Search...';
+  const allLabel = lang === 'hu' ? 'Mind' : lang === 'ru' ? 'Все' : 'All';
+  const countLabel = lang === 'hu' ? `${filtered.length} recept` : lang === 'ru' ? `${filtered.length} рецептов` : `${filtered.length} recipes`;
 
   return (
     <div style={{ margin: '14px 0' }}>
@@ -276,7 +276,7 @@ export default function RecipeBrowser() {
           <option value="">{allLabel} {stationLabel}</option>
           {allStations.map((s) => (
             <option key={s} value={s}>
-              {s === 'hand' ? (lang === 'hu' ? 'Kézzel' : 'By Hand') : s}
+              {s === 'hand' ? (lang === 'hu' ? 'Kézzel' : lang === 'ru' ? 'Вручную' : 'By Hand') : s}
             </option>
           ))}
         </select>
@@ -318,7 +318,7 @@ export default function RecipeBrowser() {
             <div key={recipe.id} className="craft-table">
               {recipe.variantCount > 1 && (
                 <div className="craft-variant-badge" title={
-                  lang === 'hu' ? `${recipe.variantCount} változat` : `${recipe.variantCount} variants`
+                  lang === 'hu' ? `${recipe.variantCount} változat` : lang === 'ru' ? `${recipe.variantCount} вариантов` : `${recipe.variantCount} variants`
                 }>
                   ×{recipe.variantCount}
                 </div>
@@ -370,7 +370,7 @@ export default function RecipeBrowser() {
         })}
         {filtered.length === 0 && (
           <p style={{ color: 'var(--text2)', padding: '20px', textAlign: 'center', width: '100%' }}>
-            {lang === 'hu' ? 'Nincs egyező recept.' : 'No matching recipes.'}
+            {lang === 'hu' ? 'Nincs egyező recept.' : lang === 'ru' ? 'Нет подходящих рецептов.' : 'No matching recipes.'}
           </p>
         )}
       </div>
