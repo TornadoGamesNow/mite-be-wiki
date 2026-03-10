@@ -1439,182 +1439,345 @@
   },
   "silver_battle_axe": {
     "mcmod_id": 773290,
-    "desc": "战斧是剑和斧子的混合工具。它的耐久比同材质的剑或者斧子两者中的任意一个都高，并且它的成本要低于同时制作上述两个工具，它的攻击力相当于同材质的剑。 砍伐原木（硬度为120）有额外耐久损耗，一次消耗150点耐久，使用大斧头则不会有此额外损耗。 攻击伤害+7，对亡灵怪物有伤害加成，可以攻击白色食尸鬼，最大品质可达精良。 0.6.0版本修改银战斧只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的银战斧所需的经验值： 普通 优秀 精良 银战斧 0 660 1320",
+    "desc": "Silver battle axe with 7 attack damage. Axe-sword hybrid with undead bonus; can hit white ghouls. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改银战斧只能在"
+      "v0.6.0: Silver battle axes were moved to furnace crafting."
     ],
     "desc_en": "Silver battle axe with 7 attack damage. Axe-sword hybrid with undead bonus; can hit white ghouls. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "7 sebzésű ezüst csatabárd. Fejsze-kard hibrid élőholt-bónusszal; megsebezheti a fehér ghoulokat. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Серебряный боевой топор с уроном 7. Гибрид топора и меча с бонусом против нежити; может бить белых гулей. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Серебряный боевой топор с уроном 7. Гибрид топора и меча с бонусом против нежити; может бить белых гулей. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Silver battle axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ezüst csatabárdok kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Серебряные боевые топоры были переведены на крафт через печи."
+    ]
   },
   "gold_battle_axe": {
     "mcmod_id": 773870,
-    "desc": "金战斧攻击伤害+6，攻击消耗75耐久，最大品质可达史诗。 0.6.0版本修改金战斧只能在 大型熔炉 中合成。 制作不同品质的金战斧所需的经验值： 普通 优秀 精良 史诗 金战斧 0 660 1320 2640",
+    "desc": "Gold battle axe with 6 attack damage. Axe-sword hybrid with extra durability cost when chopping logs. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改金战斧只能在"
+      "v0.6.0: Gold battle axes were moved to furnace crafting."
     ],
     "desc_en": "Gold battle axe with 6 attack damage. Axe-sword hybrid with extra durability cost when chopping logs. Crafted in the Large Furnace.",
     "desc_hu": "6 sebzésű arany csatabárd. Fejsze-kard hibrid, amely rönkvágáskor plusz tartósságot fogyaszt. Nagy kemencében készül.",
-    "desc_ru": "Золотой боевой топор с уроном 6. Гибрид топора и меча; при рубке брёвен тратит дополнительную прочность. Крафтится в большой печи."
+    "desc_ru": "Золотой боевой топор с уроном 6. Гибрид топора и меча; при рубке брёвен тратит дополнительную прочность. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Gold battle axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az arany csatabárdok kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Золотые боевые топоры были переведены на крафт через печи."
+    ]
   },
   "mithril_battle_axe": {
     "mcmod_id": 773293,
-    "desc": "战斧是剑和斧子的混合工具。它的耐久比同材质的剑或者斧子两者中的任意一个都高，并且它的成本要低于同时制作上述两个工具，它的攻击力相当于同材质的剑。 砍伐原木（硬度为120）有额外耐久损耗，一次消耗150点耐久，使用大斧头则不会有此额外损耗。 攻击伤害+11，最大品质可达神器。 0.6.0版本修改秘银战斧只能在 大型熔炉 中合成。 制作不同品质的秘银战斧所需的经验值： 普通 优秀 精良 史诗 传说 神器 秘银战斧 0 10260 20520 41040 82080 164160",
+    "desc": "Mithril battle axe with 11 attack damage. Hybrid axe-sword weapon with extra durability, but chopping logs costs additional durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改秘银战斧只能在"
+      "v0.6.0: Mithril battle axes were moved to furnace crafting."
     ],
     "desc_en": "Mithril battle axe with 11 attack damage. Hybrid axe-sword weapon with extra durability, but chopping logs costs additional durability. Crafted in the Large Furnace.",
     "desc_hu": "11 sebzésű mithril csatabárd. Fejsze-kard hibridfegyver extra tartóssággal, de a rönkök vágása plusz tartósságot fogyaszt. Nagy kemencében készül.",
-    "desc_ru": "Мифриловый боевой топор с уроном 11. Гибрид топора и меча с высокой прочностью, но рубка брёвен расходует дополнительную прочность. Крафтится в большой печи."
+    "desc_ru": "Мифриловый боевой топор с уроном 11. Гибрид топора и меча с высокой прочностью, но рубка брёвен расходует дополнительную прочность. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Mithril battle axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A mithril csatabárdok kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Мифриловые боевые топоры были переведены на крафт через печи."
+    ]
   },
   "adamantium_battle_axe": {
     "mcmod_id": 773294,
-    "desc": "战斧是剑和斧子的混合工具。它的耐久比同材质的剑或者斧子两者中的任意一个都高，并且它的成本要低于同时制作上述两个工具，它的攻击力相当于同材质的剑。 本模组中基础伤害最高的武器。 砍伐原木（硬度为120）有额外耐久损耗，一次消耗150点耐久，使用大斧头则不会有此额外损耗。 攻击伤害+10，最大品质可达到神器。 0.6.0版本修改艾德曼战斧只能在 大型熔炉 中合成。 制作不同品质的艾德曼战斧所需的经验值： 普通 优秀 精良 史诗 传说 神器 艾德曼战斧 0 40980 81960 163920 327840 655680",
+    "desc": "Adamantium battle axe with 10 attack damage. Extremely durable axe-sword hybrid; chopping logs costs additional durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改艾德曼战斧只能在"
+      "v0.6.0: Adamantium battle axes were moved to furnace crafting."
     ],
     "desc_en": "Adamantium battle axe with 10 attack damage. Extremely durable axe-sword hybrid; chopping logs costs additional durability. Crafted in the Large Furnace.",
     "desc_hu": "10 sebzésű adamantium csatabárd. Rendkívül tartós fejsze-kard hibrid; a rönkök vágása plusz tartósságot fogyaszt. Nagy kemencében készül.",
-    "desc_ru": "Адамантиевый боевой топор с уроном 10. Очень прочный гибрид топора и меча; рубка брёвен расходует дополнительную прочность. Крафтится в большой печи."
+    "desc_ru": "Адамантиевый боевой топор с уроном 10. Очень прочный гибрид топора и меча; рубка брёвен расходует дополнительную прочность. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Adamantium battle axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az adamantium csatabárdok kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Адамантиевые боевые топоры были переведены на крафт через печи."
+    ]
   },
   "ancient_metal_battle_axe": {
     "mcmod_id": 773292,
-    "desc": "攻击伤害+9，最大品质可达传说。 远古金属武器不会被腐蚀。 0.6.0版本修改远古金属战斧只能在 大型熔炉 中合成。 制作不同品质的远古金属战斧所需的经验值： 普通 优秀 精良 史诗 传说 远古金属战斧 0 2580 5160 10320 20640",
+    "desc": "Ancient metal battle axe with 9 attack damage. Durable axe-sword hybrid that does not corrode. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改远古金属战斧只能在"
+      "v0.6.0: Ancient Metal battle axes were moved to furnace crafting."
     ],
     "desc_en": "Ancient metal battle axe with 9 attack damage. Durable axe-sword hybrid that does not corrode. Crafted in the Large Furnace.",
     "desc_hu": "9 sebzésű ősi fém csatabárd. Tartós fejsze-kard hibrid, amely nem korrodálódik. Nagy kemencében készül.",
-    "desc_ru": "Боевой топор из древнего металла с уроном 9. Прочный гибрид топора и меча, не подверженный коррозии. Крафтится в большой печи."
+    "desc_ru": "Боевой топор из древнего металла с уроном 9. Прочный гибрид топора и меча, не подверженный коррозии. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Ancient Metal battle axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ősi fém csatabárdok kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Боевые топоры из древнего металла были переведены на крафт через печи."
+    ]
   },
   "hard_stone_battle_axe": {
     "mcmod_id": 773869,
-    "desc": "硬石战斧攻击伤害+8，攻击消耗75耐久，最大品质可达精良。 硬石武器无法被腐蚀，并且减少20%耐久消耗。 0.6.0版本修改硬石战斧只能在 大型熔炉 中合成。 制作不同品质的硬石战斧所需的经验值： 普通 优秀 精良 硬石战斧 0 2580 5160",
+    "desc": "Hardstone battle axe with 8 attack damage. Hardstone weapons resist corrosion and lose 20% less durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改硬石战斧只能在"
+      "v0.6.0: Hardstone battle axes were moved to furnace crafting."
     ],
     "desc_en": "Hardstone battle axe with 8 attack damage. Hardstone weapons resist corrosion and lose 20% less durability. Crafted in the Large Furnace.",
-    "desc_hu": "8 sebzésű keménykő csatabárd. A keménykő fegyverek ellenállnak a korróziónak, és 20%-kal lassabban kopnak. Nagy kemencében készül."
+    "desc_hu": "8 sebzésű keménykő csatabárd. A keménykő fegyverek ellenállnak a korróziónak, és 20%-kal lassabban kopnak. Nagy kemencében készül.",
+    "desc_ru": "Твердокаменный боевой топор с уроном 8. Твердокаменные оружия не ржавеют и теряют на 20% меньше прочности. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Hardstone battle axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A keménykő csatabárdok kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Твердокаменные боевые топоры были переведены на крафт через печи."
+    ]
   },
   "silver_mattock": {
     "mcmod_id": 773686,
-    "desc": "鸭嘴锄是锹和锄头的混合工具。它的耐久比同材质的锹或者锄头两者中的任意一个都高，尽管它的成本要高于同时制作上述两种工具。 攻击伤害+5，最大品质可达精良。 对亡灵怪物有伤害加成， 可以攻击白色食尸鬼。 0.6.0版本修改银鸭嘴锄只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的银鸭嘴锄所需的经验值： 普通 优秀 精良 银鸭嘴锄 0 660 1320",
+    "desc": "Silver mattock with 5 attack damage. Shovel-hoe hybrid with undead bonus; can hit white ghouls. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改银鸭嘴锄只能在"
+      "v0.6.0: Silver mattocks were moved to furnace crafting."
     ],
     "desc_en": "Silver mattock with 5 attack damage. Shovel-hoe hybrid with undead bonus; can hit white ghouls. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "5 sebzésű ezüst kacsacsőrű kapa. Ásó-kapa hibrid élőholt-bónusszal; megsebezheti a fehér ghoulokat. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Серебряная мотыга-кирка с уроном 5. Гибрид лопаты и мотыги с бонусом против нежити; может бить белых гулей. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Серебряная мотыга-кирка с уроном 5. Гибрид лопаты и мотыги с бонусом против нежити; может бить белых гулей. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Silver mattocks were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ezüst mattockok kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Серебряные маттоки были переведены на крафт через печи."
+    ]
   },
   "gold_mattock": {
     "mcmod_id": 773687,
-    "desc": "鸭嘴锄是锹和锄头的混合工具。它的耐久比同材质的锹或者锄头两者中的任意一个都高，尽管它的成本要高于同时制作上述两种工具。 攻击伤害+3，最大品质可达史诗。 0.6.0版本修改金鸭嘴锄只能在 大型熔炉 中合成。 制作不同品质的金鸭嘴锄所需的经验值： 普通 优秀 精良 史诗 金鸭嘴锄 0 660 1320 2640",
+    "desc": "Gold mattock with 3 attack damage. Shovel-hoe hybrid tool. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改金鸭嘴锄只能在"
+      "v0.6.0: Gold mattocks were moved to furnace crafting."
     ],
     "desc_en": "Gold mattock with 3 attack damage. Shovel-hoe hybrid tool. Crafted in the Large Furnace.",
     "desc_hu": "3 sebzésű arany kacsacsőrű kapa. Ásó-kapa hibrid eszköz. Nagy kemencében készül.",
-    "desc_ru": "Золотая мотыга-кирка с уроном 3. Гибрид лопаты и мотыги. Крафтится в большой печи."
+    "desc_ru": "Золотая мотыга-кирка с уроном 3. Гибрид лопаты и мотыги. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Gold mattocks were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az arany mattockok kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Золотые маттоки были переведены на крафт через печи."
+    ]
   },
   "mithril_mattock": {
     "mcmod_id": 773690,
-    "desc": "鸭嘴锄是锹和锄头的混合工具。它的耐久比同材质的锹或者锄头两者中的任意一个都高，尽管它的成本要高于同时制作上述两种工具。 攻击伤害+8，最大品质可达神器。 0.6.0版本修改秘银鸭嘴锄只能在 大型熔炉 中合成。 制作不同品质的秘银鸭嘴锄所需的经验值： 普通 优秀 精良 史诗 传说 神器 秘银鸭嘴锄 0 10260 20520 41040 82080 164160",
+    "desc": "Mithril mattock with 8 attack damage. Hybrid shovel-hoe tool with high durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改秘银鸭嘴锄只能在"
+      "v0.6.0: Mithril mattocks were moved to furnace crafting."
     ],
     "desc_en": "Mithril mattock with 8 attack damage. Hybrid shovel-hoe tool with high durability. Crafted in the Large Furnace.",
     "desc_hu": "8 sebzésű mithril kacsacsőrű kapa. Nagy tartósságú ásó-kapa hibrid eszköz. Nagy kemencében készül.",
-    "desc_ru": "Мифриловый матток с уроном 8. Прочный гибрид лопаты и мотыги. Крафтится в большой печи."
+    "desc_ru": "Мифриловый матток с уроном 8. Прочный гибрид лопаты и мотыги. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Mithril mattocks were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A mithril mattockok kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Мифриловые маттоки были переведены на крафт через печи."
+    ]
   },
   "adamantium_mattock": {
     "mcmod_id": 773691,
-    "desc": "鸭嘴锄是锹和锄头的混合工具。它的耐久比同材质的锹或者锄头两者中的任意一个都高，尽管它的成本要高于同时制作上述两种工具。 攻击伤害+7，最大品质可达到神器。 是游戏中耐久度最高的鸭嘴锄。 0.6.0版本修改艾德曼鸭嘴锄只能在 大型熔炉 中合成。 制作不同品质的艾德曼鸭嘴锄所需的经验值： 普通 优秀 精良 史诗 传说 神器 艾德曼鸭嘴锄 0 40980 81960 163920 327840 655680",
+    "desc": "Adamantium mattock with 7 attack damage. Very durable shovel-hoe hybrid tool. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改艾德曼鸭嘴锄只能在"
+      "v0.6.0: Adamantium mattocks were moved to furnace crafting."
     ],
     "desc_en": "Adamantium mattock with 7 attack damage. Very durable shovel-hoe hybrid tool. Crafted in the Large Furnace.",
     "desc_hu": "7 sebzésű adamantium kacsacsőrű kapa. Nagyon tartós ásó-kapa hibrid eszköz. Nagy kemencében készül.",
-    "desc_ru": "Адамантиевый матток с уроном 7. Очень прочный гибрид лопаты и мотыги. Крафтится в большой печи."
+    "desc_ru": "Адамантиевый матток с уроном 7. Очень прочный гибрид лопаты и мотыги. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Adamantium mattocks were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az adamantium mattockok kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Адамантиевые маттоки были переведены на крафт через печи."
+    ]
   },
   "ancient_metal_mattock": {
     "mcmod_id": 773689,
-    "desc": "鸭嘴锄是锹和锄头的混合工具。它的耐久比同材质的锹或者锄头两者中的任意一个都高，尽管它的成本要高于同时制作上述两种工具。 攻击伤害+6，最大品质可达传说。 远古金属工具不会被腐蚀。 0.6.0版本修改远古金属鸭嘴锄只能在 大型熔炉 中合成。 制作不同品质的远古金属鸭嘴锄所需的经验值： 普通 优秀 精良 史诗 传说 远古金属鸭嘴锄 0 2580 5160 10320 20640",
+    "desc": "Ancient metal mattock with 6 attack damage. Shovel-hoe hybrid tool that does not corrode. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改远古金属鸭嘴锄只能在"
+      "v0.6.0: Ancient Metal mattocks were moved to furnace crafting."
     ],
     "desc_en": "Ancient metal mattock with 6 attack damage. Shovel-hoe hybrid tool that does not corrode. Crafted in the Large Furnace.",
     "desc_hu": "6 sebzésű ősi fém kacsacsőrű kapa. Ásó-kapa hibrid eszköz, amely nem korrodálódik. Nagy kemencében készül.",
-    "desc_ru": "Мотыга-кирка из древнего металла с уроном 6. Гибрид лопаты и мотыги, который не ржавеет. Крафтится в большой печи."
+    "desc_ru": "Мотыга-кирка из древнего металла с уроном 6. Гибрид лопаты и мотыги, который не ржавеет. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Ancient Metal mattocks were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ősi fém mattockok kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Маттоки из древнего металла были переведены на крафт через печи."
+    ]
   },
   "hard_stone_mattock": {
     "mcmod_id": 773683,
-    "desc": "鸭嘴锄是锹和锄头的混合工具。它的耐久比同材质的锹或者锄头两者中的任意一个都高，尽管它的成本要高于同时制作上述两种工具。 攻击伤害+5，最大品质可达精良。 硬石工具无法被腐蚀，并且减少20%耐久消耗。 0.6.0版本修改硬石鸭嘴锄只能在 大型熔炉 中合成。 制作不同品质的硬石鸭嘴锄所需的经验值： 普通 优秀 精良 硬石鸭嘴锄 0 2580 5160",
+    "desc": "Hardstone mattock with 5 attack damage. Shovel-hoe hybrid tool that resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改硬石鸭嘴锄只能在"
+      "v0.6.0: Hardstone mattocks were moved to furnace crafting."
     ],
     "desc_en": "Hardstone mattock with 5 attack damage. Shovel-hoe hybrid tool that resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
     "desc_hu": "5 sebzésű keménykő kacsacsőrű kapa. Ásó-kapa hibrid eszköz, amely ellenáll a korróziónak és 20%-kal lassabban kopik. Nagy kemencében készül.",
-    "desc_ru": "Твердокаменная мотыга-кирка с уроном 5. Гибрид лопаты и мотыги; не ржавеет и теряет на 20% меньше прочности. Крафтится в большой печи."
+    "desc_ru": "Твердокаменная мотыга-кирка с уроном 5. Гибрид лопаты и мотыги; не ржавеет и теряет на 20% меньше прочности. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Hardstone mattocks were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A keménykő mattockok kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Твердокаменные маттоки были переведены на крафт через печи."
+    ]
   },
   "silver_scythe": {
     "mcmod_id": 773592,
-    "desc": "镰刀用来快速收割高草和小麦（收割其他作物没有速度加成）。 攻击伤害+4，最大品质可达精良。 对亡灵怪物有伤害加成， 可以攻击白色食尸鬼。 0.6.0版本修改银镰刀只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的银镰刀所需的经验值： 普通 优秀 精良 银镰刀 0 350 700",
+    "desc": "Silver scythe with 4 attack damage. Harvests tall grass and wheat quickly, with undead bonus and white-ghoul damage. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改银镰刀只能在"
+      "v0.6.0: Silver scythes were moved to furnace crafting."
     ],
     "desc_en": "Silver scythe with 4 attack damage. Harvests tall grass and wheat quickly, with undead bonus and white-ghoul damage. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "4 sebzésű ezüst kasza. Gyorsan arat magas füvet és búzát, élőholt-bónusszal és fehér ghoul sebzéssel. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Серебряная коса с уроном 4. Быстро срезает высокую траву и пшеницу, имеет бонус против нежити и может бить белых гулей. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Серебряная коса с уроном 4. Быстро срезает высокую траву и пшеницу, имеет бонус против нежити и может бить белых гулей. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Silver scythes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ezüst kaszák kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Серебряные косы были переведены на крафт через печи."
+    ]
   },
   "gold_scythe": {
     "mcmod_id": 773593,
-    "desc": "镰刀用来快速收割高草和小麦（收割其他作物没有速度加成）。 攻击伤害+3，最大品质可达史诗。 0.6.0版本修改金镰刀只能在 大型熔炉 中合成。 制作不同品质的金镰刀所需的经验值： 普通 优秀 精良 史诗 金镰刀 0 350 700 1400",
+    "desc": "Gold scythe with 3 attack damage. Harvests tall grass and wheat quickly. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改金镰刀只能在"
+      "v0.6.0: Gold scythes were moved to furnace crafting."
     ],
     "desc_en": "Gold scythe with 3 attack damage. Harvests tall grass and wheat quickly. Crafted in the Large Furnace.",
     "desc_hu": "3 sebzésű arany kasza. Gyorsan arat magas füvet és búzát. Nagy kemencében készül.",
-    "desc_ru": "Золотая коса с уроном 3. Быстро срезает высокую траву и пшеницу. Крафтится в большой печи."
+    "desc_ru": "Золотая коса с уроном 3. Быстро срезает высокую траву и пшеницу. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Gold scythes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az arany kaszák kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Золотые косы были переведены на крафт через печи."
+    ]
   },
   "mithril_scythe": {
     "mcmod_id": 773596,
-    "desc": "镰刀用来快速收割高草和小麦（收割其他作物没有速度加成）。 攻击伤害+8，最大品质可达神器。 注：秘银系列工具没有“吸血”附魔。 0.6.0版本修改秘银镰刀只能在 大型熔炉 中合成。 制作不同品质的秘银镰刀所需的经验值： 普通 优秀 精良 史诗 传说 神器 秘银镰刀 0 5150 10300 20600 41200 82400",
+    "desc": "Mithril scythe with 8 attack damage. Harvests tall grass and wheat quickly. Mithril tools do not roll the vampiric enchantment. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改秘银镰刀只能在"
+      "v0.6.0: Mithril scythes were moved to furnace crafting."
     ],
     "desc_en": "Mithril scythe with 8 attack damage. Harvests tall grass and wheat quickly. Mithril tools do not roll the vampiric enchantment. Crafted in the Large Furnace.",
     "desc_hu": "8 sebzésű mithril kasza. Gyorsan arat magas füvet és búzát. A mithril eszközök nem kaphatják meg a vámpirikus bűvölést. Nagy kemencében készül.",
-    "desc_ru": "Мифриловая коса с уроном 8. Быстро срезает высокую траву и пшеницу. Мифриловые инструменты не получают вампирическое зачарование. Крафтится в большой печи."
+    "desc_ru": "Мифриловая коса с уроном 8. Быстро срезает высокую траву и пшеницу. Мифриловые инструменты не получают вампирическое зачарование. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Mithril scythes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A mithril kaszák kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Мифриловые косы были переведены на крафт через печи."
+    ]
   },
   "adamantium_scythe": {
     "mcmod_id": 773597,
-    "desc": "镰刀用来快速收割高草和小麦（收割其他作物没有速度加成）。 攻击伤害+7，最大品质可达到神器。 0.6.0版本修改艾德曼镰刀只能在 大型熔炉 中合成。 制作不同品质的艾德曼镰刀所需的经验值： 普通 优秀 精良 史诗 传说 神器 艾德曼镰刀 0 20510 41020 82040 164080 328160",
+    "desc": "Adamantium scythe with 7 attack damage. Harvests tall grass and wheat quickly. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改艾德曼镰刀只能在"
+      "v0.6.0: Adamantium scythes were moved to furnace crafting."
     ],
     "desc_en": "Adamantium scythe with 7 attack damage. Harvests tall grass and wheat quickly. Crafted in the Large Furnace.",
     "desc_hu": "7 sebzésű adamantium kasza. Gyorsan arat magas füvet és búzát. Nagy kemencében készül.",
-    "desc_ru": "Адамантиевая коса с уроном 7. Быстро срезает высокую траву и пшеницу. Крафтится в большой печи."
+    "desc_ru": "Адамантиевая коса с уроном 7. Быстро срезает высокую траву и пшеницу. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Adamantium scythes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az adamantium kaszák kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Адамантиевые косы были переведены на крафт через печи."
+    ]
   },
   "ancient_metal_scythe": {
     "mcmod_id": 773595,
-    "desc": "镰刀用来快速收割高草和小麦（收割其他作物没有速度加成）。 攻击伤害+6，最大品质可达传说。 远古金属工具不会被腐蚀。 0.6.0版本修改远古金属镰刀只能在 大型熔炉 中合成。 制作不同品质的远古金属镰刀所需的经验值： 普通 优秀 精良 史诗 传说 远古金属镰刀 0 1310 2620 5240 10480",
+    "desc": "Ancient metal scythe with 6 attack damage. Harvests tall grass and wheat quickly, and does not corrode. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改远古金属镰刀只能在"
+      "v0.6.0: Ancient Metal scythes were moved to furnace crafting."
     ],
     "desc_en": "Ancient metal scythe with 6 attack damage. Harvests tall grass and wheat quickly, and does not corrode. Crafted in the Large Furnace.",
     "desc_hu": "6 sebzésű ősi fém kasza. Gyorsan arat magas füvet és búzát, és nem korrodálódik. Nagy kemencében készül.",
-    "desc_ru": "Коса из древнего металла с уроном 6. Быстро срезает высокую траву и пшеницу, не подвержена коррозии. Крафтится в большой печи."
+    "desc_ru": "Коса из древнего металла с уроном 6. Быстро срезает высокую траву и пшеницу, не подвержена коррозии. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Ancient Metal scythes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ősi fém kaszák kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Косы из древнего металла были переведены на крафт через печи."
+    ]
   },
   "hard_stone_scythe": {
     "mcmod_id": 773589,
-    "desc": "镰刀用来快速收割高草和小麦（收割其他作物没有速度加成）。 攻击伤害+5，最大品质可达精良。 硬石工具无法被腐蚀，并且减少20%耐久消耗。 0.6.0版本修改硬石镰刀只能在 大型熔炉 中合成。 制作不同品质的硬石镰刀所需的经验值： 普通 优秀 精良 硬石镰刀 0 1310 2620",
+    "desc": "Hardstone scythe with 5 attack damage. Harvests tall grass and wheat quickly, resists corrosion, and loses 20% less durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改硬石镰刀只能在"
+      "v0.6.0: Hardstone scythes were moved to furnace crafting."
     ],
     "desc_en": "Hardstone scythe with 5 attack damage. Harvests tall grass and wheat quickly, resists corrosion, and loses 20% less durability. Crafted in the Large Furnace.",
     "desc_hu": "5 sebzésű keménykő kasza. Gyorsan arat magas füvet és búzát, ellenáll a korróziónak, és 20%-kal lassabban kopik. Nagy kemencében készül.",
-    "desc_ru": "Твердокаменная коса с уроном 5. Быстро срезает высокую траву и пшеницу, не ржавеет и теряет на 20% меньше прочности. Крафтится в большой печи."
+    "desc_ru": "Твердокаменная коса с уроном 5. Быстро срезает высокую траву и пшеницу, не ржавеет и теряет на 20% меньше прочности. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Hardstone scythes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A keménykő kaszák kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Твердокаменные косы были переведены на крафт через печи."
+    ]
   },
   "silver_shears": {
     "mcmod_id": 773504,
@@ -5048,50 +5211,50 @@
   },
   "copper_bucket_filled_with_lava": {
     "mcmod_id": 772862,
-    "desc_en": "A bucket filled with lava. Right-click any lava block with an empty bucket to collect lava — this does not consume the lava block. Pouring lava on the ground produces only flowing lava, which disappears after a while and does NOT form obsidian when it contacts water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Lava buckets can also be used as fuel (smelts 16 items). Because scooping lava does not require a lava source block, lava can be regenerated indefinitely: pour lava on the ground, then quickly right-click with multiple empty buckets before it disappears. Warning: when scooping lava, the bucket in hand has a chance to melt. Melt chances — Copper: 16%, Silver: 16%, Gold: 20%, Iron: 8%, Hardstone: 4%, Ancient Metal: 2%, Mithril: 1%, Adamantium: 0% (never melts).",
-    "desc_hu": "Lávával töltött vödör. Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez — ez nem fogyasztja el a lávablokkot. A földre öntött láva csak folyó lávát alkot, ami egy idő után eltűnik, és vízzel érintkezve NEM hoz létre obszidiánt. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. A lávás vödör tüzelőanyagként is használható (16 tárgyat éget el). Mivel a láva gyűjtéséhez nem szükséges lávaforrás blokk, a láva korlátlanul újratermelhető: öntsd a lávát a földre, majd gyorsan jobb klikkelj több üres vödörrel, mielőtt eltűnik. Figyelem: láva merítésekor a kézben lévő vödörnek esélye van megolvadni. Olvadási esélyek — Réz: 16%, Ezüst: 16%, Arany: 20%, Vas: 8%, Keménykő: 4%, Ősi fém: 2%, Mithril: 1%, Adamantium: 0% (soha nem olvad).",
-    "desc_ru": "Ведро с лавой. Нажмите ПКМ по любому блоку лавы с пустым ведром, чтобы зачерпнуть лаву — блок лавы при этом не расходуется. При выливании лавы на землю образуется лишь текущая лава, которая вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника лавы за счёт опыта. Вёдра с лавой можно использовать как топливо (переплавляет 16 предметов). Поскольку для зачерпывания лавы не требуется блок-источник, лаву можно добывать бесконечно: вылейте лаву на землю, а затем быстро кликайте ПКМ несколькими пустыми вёдрами, пока она не исчезла. Внимание: при зачерпывании лавы ведро в руке имеет шанс расплавиться. Шансы расплавления — Медное: 16%, Серебряное: 16%, Золотое: 20%, Железное: 8%, Твердокаменное: 4%, Из древнего металла: 2%, Мифриловое: 1%, Адамантиевое: 0% (никогда не плавится)."
+    "desc_en": "Right-click any lava block with an empty bucket to collect lava (lava block is not consumed). Pouring lava on the ground creates only flowing lava — it disappears after a while and does NOT form obsidian on contact with water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Can be used as fuel (smelts 16 items). Tip: lava can be farmed indefinitely — pour it on the ground, then quickly scoop it back up with multiple empty buckets before it disappears. Melt chance when scooping lava: 16%.",
+    "desc_hu": "Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez (a lávablokk megmarad). A földre öntött láva csak folyó lávát alkot — egy idő után eltűnik, és vízzel érintkezve NEM keletkezik obszidián. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. Tüzelőanyagként is használható (16 tárgyat éget el). Tipp: a láva korlátlanul újratermelhető — öntsd a földre, majd gyorsan merítsd vissza több üres vödörrel, mielőtt eltűnik. Olvadási esély lávamerítéskor: 16%.",
+    "desc_ru": "Нажмите ПКМ по любому блоку лавы с пустым ведром (блок лавы не расходуется). Вылитая на землю лава образует лишь текущую лаву — она вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Ctrl + ПКМ: разместите постоянный блок источника лавы, потратив опыт. Можно использовать как топливо (переплавляет 16 предметов). Совет: лаву можно добывать бесконечно — выливайте её на землю и быстро зачерпывайте несколькими пустыми вёдрами, пока она не исчезла. Шанс расплавления при зачерпывании лавы: 16%."
   },
   "silver_bucket_filled_with_lava": {
     "mcmod_id": 772862,
-    "desc_en": "A bucket filled with lava. Right-click any lava block with an empty bucket to collect lava — this does not consume the lava block. Pouring lava on the ground produces only flowing lava, which disappears after a while and does NOT form obsidian when it contacts water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Lava buckets can also be used as fuel (smelts 16 items). Because scooping lava does not require a lava source block, lava can be regenerated indefinitely: pour lava on the ground, then quickly right-click with multiple empty buckets before it disappears. Warning: when scooping lava, the bucket in hand has a chance to melt. Melt chances — Copper: 16%, Silver: 16%, Gold: 20%, Iron: 8%, Hardstone: 4%, Ancient Metal: 2%, Mithril: 1%, Adamantium: 0% (never melts).",
-    "desc_hu": "Lávával töltött vödör. Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez — ez nem fogyasztja el a lávablokkot. A földre öntött láva csak folyó lávát alkot, ami egy idő után eltűnik, és vízzel érintkezve NEM hoz létre obszidiánt. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. A lávás vödör tüzelőanyagként is használható (16 tárgyat éget el). Mivel a láva gyűjtéséhez nem szükséges lávaforrás blokk, a láva korlátlanul újratermelhető: öntsd a lávát a földre, majd gyorsan jobb klikkelj több üres vödörrel, mielőtt eltűnik. Figyelem: láva merítésekor a kézben lévő vödörnek esélye van megolvadni. Olvadási esélyek — Réz: 16%, Ezüst: 16%, Arany: 20%, Vas: 8%, Keménykő: 4%, Ősi fém: 2%, Mithril: 1%, Adamantium: 0% (soha nem olvad).",
-    "desc_ru": "Ведро с лавой. Нажмите ПКМ по любому блоку лавы с пустым ведром, чтобы зачерпнуть лаву — блок лавы при этом не расходуется. При выливании лавы на землю образуется лишь текущая лава, которая вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника лавы за счёт опыта. Вёдра с лавой можно использовать как топливо (переплавляет 16 предметов). Поскольку для зачерпывания лавы не требуется блок-источник, лаву можно добывать бесконечно: вылейте лаву на землю, а затем быстро кликайте ПКМ несколькими пустыми вёдрами, пока она не исчезла. Внимание: при зачерпывании лавы ведро в руке имеет шанс расплавиться. Шансы расплавления — Медное: 16%, Серебряное: 16%, Золотое: 20%, Железное: 8%, Твердокаменное: 4%, Из древнего металла: 2%, Мифриловое: 1%, Адамантиевое: 0% (никогда не плавится)."
+    "desc_en": "Right-click any lava block with an empty bucket to collect lava (lava block is not consumed). Pouring lava on the ground creates only flowing lava — it disappears after a while and does NOT form obsidian on contact with water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Can be used as fuel (smelts 16 items). Tip: lava can be farmed indefinitely — pour it on the ground, then quickly scoop it back up with multiple empty buckets before it disappears. Melt chance when scooping lava: 16%.",
+    "desc_hu": "Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez (a lávablokk megmarad). A földre öntött láva csak folyó lávát alkot — egy idő után eltűnik, és vízzel érintkezve NEM keletkezik obszidián. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. Tüzelőanyagként is használható (16 tárgyat éget el). Tipp: a láva korlátlanul újratermelhető — öntsd a földre, majd gyorsan merítsd vissza több üres vödörrel, mielőtt eltűnik. Olvadási esély lávamerítéskor: 16%.",
+    "desc_ru": "Нажмите ПКМ по любому блоку лавы с пустым ведром (блок лавы не расходуется). Вылитая на землю лава образует лишь текущую лаву — она вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Ctrl + ПКМ: разместите постоянный блок источника лавы, потратив опыт. Можно использовать как топливо (переплавляет 16 предметов). Совет: лаву можно добывать бесконечно — выливайте её на землю и быстро зачерпывайте несколькими пустыми вёдрами, пока она не исчезла. Шанс расплавления при зачерпывании лавы: 16%."
   },
   "gold_bucket_filled_with_lava": {
     "mcmod_id": 772862,
-    "desc_en": "A bucket filled with lava. Right-click any lava block with an empty bucket to collect lava — this does not consume the lava block. Pouring lava on the ground produces only flowing lava, which disappears after a while and does NOT form obsidian when it contacts water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Lava buckets can also be used as fuel (smelts 16 items). Because scooping lava does not require a lava source block, lava can be regenerated indefinitely: pour lava on the ground, then quickly right-click with multiple empty buckets before it disappears. Warning: when scooping lava, the bucket in hand has a chance to melt. Melt chances — Copper: 16%, Silver: 16%, Gold: 20%, Iron: 8%, Hardstone: 4%, Ancient Metal: 2%, Mithril: 1%, Adamantium: 0% (never melts).",
-    "desc_hu": "Lávával töltött vödör. Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez — ez nem fogyasztja el a lávablokkot. A földre öntött láva csak folyó lávát alkot, ami egy idő után eltűnik, és vízzel érintkezve NEM hoz létre obszidiánt. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. A lávás vödör tüzelőanyagként is használható (16 tárgyat éget el). Mivel a láva gyűjtéséhez nem szükséges lávaforrás blokk, a láva korlátlanul újratermelhető: öntsd a lávát a földre, majd gyorsan jobb klikkelj több üres vödörrel, mielőtt eltűnik. Figyelem: láva merítésekor a kézben lévő vödörnek esélye van megolvadni. Olvadási esélyek — Réz: 16%, Ezüst: 16%, Arany: 20%, Vas: 8%, Keménykő: 4%, Ősi fém: 2%, Mithril: 1%, Adamantium: 0% (soha nem olvad).",
-    "desc_ru": "Ведро с лавой. Нажмите ПКМ по любому блоку лавы с пустым ведром, чтобы зачерпнуть лаву — блок лавы при этом не расходуется. При выливании лавы на землю образуется лишь текущая лава, которая вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника лавы за счёт опыта. Вёдра с лавой можно использовать как топливо (переплавляет 16 предметов). Поскольку для зачерпывания лавы не требуется блок-источник, лаву можно добывать бесконечно: вылейте лаву на землю, а затем быстро кликайте ПКМ несколькими пустыми вёдрами, пока она не исчезла. Внимание: при зачерпывании лавы ведро в руке имеет шанс расплавиться. Шансы расплавления — Медное: 16%, Серебряное: 16%, Золотое: 20%, Железное: 8%, Твердокаменное: 4%, Из древнего металла: 2%, Мифриловое: 1%, Адамантиевое: 0% (никогда не плавится)."
+    "desc_en": "Right-click any lava block with an empty bucket to collect lava (lava block is not consumed). Pouring lava on the ground creates only flowing lava — it disappears after a while and does NOT form obsidian on contact with water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Can be used as fuel (smelts 16 items). Tip: lava can be farmed indefinitely — pour it on the ground, then quickly scoop it back up with multiple empty buckets before it disappears. Melt chance when scooping lava: 20%.",
+    "desc_hu": "Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez (a lávablokk megmarad). A földre öntött láva csak folyó lávát alkot — egy idő után eltűnik, és vízzel érintkezve NEM keletkezik obszidián. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. Tüzelőanyagként is használható (16 tárgyat éget el). Tipp: a láva korlátlanul újratermelhető — öntsd a földre, majd gyorsan merítsd vissza több üres vödörrel, mielőtt eltűnik. Olvadási esély lávamerítéskor: 20%.",
+    "desc_ru": "Нажмите ПКМ по любому блоку лавы с пустым ведром (блок лавы не расходуется). Вылитая на землю лава образует лишь текущую лаву — она вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Ctrl + ПКМ: разместите постоянный блок источника лавы, потратив опыт. Можно использовать как топливо (переплавляет 16 предметов). Совет: лаву можно добывать бесконечно — выливайте её на землю и быстро зачерпывайте несколькими пустыми вёдрами, пока она не исчезла. Шанс расплавления при зачерпывании лавы: 20%."
   },
   "iron_bucket_filled_with_lava": {
     "mcmod_id": 772862,
-    "desc_en": "A bucket filled with lava. Right-click any lava block with an empty bucket to collect lava — this does not consume the lava block. Pouring lava on the ground produces only flowing lava, which disappears after a while and does NOT form obsidian when it contacts water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Lava buckets can also be used as fuel (smelts 16 items). Because scooping lava does not require a lava source block, lava can be regenerated indefinitely: pour lava on the ground, then quickly right-click with multiple empty buckets before it disappears. Warning: when scooping lava, the bucket in hand has a chance to melt. Melt chances — Copper: 16%, Silver: 16%, Gold: 20%, Iron: 8%, Hardstone: 4%, Ancient Metal: 2%, Mithril: 1%, Adamantium: 0% (never melts).",
-    "desc_hu": "Lávával töltött vödör. Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez — ez nem fogyasztja el a lávablokkot. A földre öntött láva csak folyó lávát alkot, ami egy idő után eltűnik, és vízzel érintkezve NEM hoz létre obszidiánt. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. A lávás vödör tüzelőanyagként is használható (16 tárgyat éget el). Mivel a láva gyűjtéséhez nem szükséges lávaforrás blokk, a láva korlátlanul újratermelhető: öntsd a lávát a földre, majd gyorsan jobb klikkelj több üres vödörrel, mielőtt eltűnik. Figyelem: láva merítésekor a kézben lévő vödörnek esélye van megolvadni. Olvadási esélyek — Réz: 16%, Ezüst: 16%, Arany: 20%, Vas: 8%, Keménykő: 4%, Ősi fém: 2%, Mithril: 1%, Adamantium: 0% (soha nem olvad).",
-    "desc_ru": "Ведро с лавой. Нажмите ПКМ по любому блоку лавы с пустым ведром, чтобы зачерпнуть лаву — блок лавы при этом не расходуется. При выливании лавы на землю образуется лишь текущая лава, которая вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника лавы за счёт опыта. Вёдра с лавой можно использовать как топливо (переплавляет 16 предметов). Поскольку для зачерпывания лавы не требуется блок-источник, лаву можно добывать бесконечно: вылейте лаву на землю, а затем быстро кликайте ПКМ несколькими пустыми вёдрами, пока она не исчезла. Внимание: при зачерпывании лавы ведро в руке имеет шанс расплавиться. Шансы расплавления — Медное: 16%, Серебряное: 16%, Золотое: 20%, Железное: 8%, Твердокаменное: 4%, Из древнего металла: 2%, Мифриловое: 1%, Адамантиевое: 0% (никогда не плавится)."
+    "desc_en": "Right-click any lava block with an empty bucket to collect lava (lava block is not consumed). Pouring lava on the ground creates only flowing lava — it disappears after a while and does NOT form obsidian on contact with water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Can be used as fuel (smelts 16 items). Tip: lava can be farmed indefinitely — pour it on the ground, then quickly scoop it back up with multiple empty buckets before it disappears. Melt chance when scooping lava: 8%.",
+    "desc_hu": "Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez (a lávablokk megmarad). A földre öntött láva csak folyó lávát alkot — egy idő után eltűnik, és vízzel érintkezve NEM keletkezik obszidián. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. Tüzelőanyagként is használható (16 tárgyat éget el). Tipp: a láva korlátlanul újratermelhető — öntsd a földre, majd gyorsan merítsd vissza több üres vödörrel, mielőtt eltűnik. Olvadási esély lávamerítéskor: 8%.",
+    "desc_ru": "Нажмите ПКМ по любому блоку лавы с пустым ведром (блок лавы не расходуется). Вылитая на землю лава образует лишь текущую лаву — она вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Ctrl + ПКМ: разместите постоянный блок источника лавы, потратив опыт. Можно использовать как топливо (переплавляет 16 предметов). Совет: лаву можно добывать бесконечно — выливайте её на землю и быстро зачерпывайте несколькими пустыми вёдрами, пока она не исчезла. Шанс расплавления при зачерпывании лавы: 8%."
   },
   "hard_stone_bucket_of_lava": {
     "mcmod_id": 772862,
-    "desc_en": "A bucket filled with lava. Right-click any lava block with an empty bucket to collect lava — this does not consume the lava block. Pouring lava on the ground produces only flowing lava, which disappears after a while and does NOT form obsidian when it contacts water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Lava buckets can also be used as fuel (smelts 16 items). Because scooping lava does not require a lava source block, lava can be regenerated indefinitely: pour lava on the ground, then quickly right-click with multiple empty buckets before it disappears. Warning: when scooping lava, the bucket in hand has a chance to melt. Melt chances — Copper: 16%, Silver: 16%, Gold: 20%, Iron: 8%, Hardstone: 4%, Ancient Metal: 2%, Mithril: 1%, Adamantium: 0% (never melts).",
-    "desc_hu": "Lávával töltött vödör. Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez — ez nem fogyasztja el a lávablokkot. A földre öntött láva csak folyó lávát alkot, ami egy idő után eltűnik, és vízzel érintkezve NEM hoz létre obszidiánt. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. A lávás vödör tüzelőanyagként is használható (16 tárgyat éget el). Mivel a láva gyűjtéséhez nem szükséges lávaforrás blokk, a láva korlátlanul újratermelhető: öntsd a lávát a földre, majd gyorsan jobb klikkelj több üres vödörrel, mielőtt eltűnik. Figyelem: láva merítésekor a kézben lévő vödörnek esélye van megolvadni. Olvadási esélyek — Réz: 16%, Ezüst: 16%, Arany: 20%, Vas: 8%, Keménykő: 4%, Ősi fém: 2%, Mithril: 1%, Adamantium: 0% (soha nem olvad).",
-    "desc_ru": "Ведро с лавой. Нажмите ПКМ по любому блоку лавы с пустым ведром, чтобы зачерпнуть лаву — блок лавы при этом не расходуется. При выливании лавы на землю образуется лишь текущая лава, которая вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника лавы за счёт опыта. Вёдра с лавой можно использовать как топливо (переплавляет 16 предметов). Поскольку для зачерпывания лавы не требуется блок-источник, лаву можно добывать бесконечно: вылейте лаву на землю, а затем быстро кликайте ПКМ несколькими пустыми вёдрами, пока она не исчезла. Внимание: при зачерпывании лавы ведро в руке имеет шанс расплавиться. Шансы расплавления — Медное: 16%, Серебряное: 16%, Золотое: 20%, Железное: 8%, Твердокаменное: 4%, Из древнего металла: 2%, Мифриловое: 1%, Адамантиевое: 0% (никогда не плавится)."
+    "desc_en": "Right-click any lava block with an empty bucket to collect lava (lava block is not consumed). Pouring lava on the ground creates only flowing lava — it disappears after a while and does NOT form obsidian on contact with water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Can be used as fuel (smelts 16 items). Tip: lava can be farmed indefinitely — pour it on the ground, then quickly scoop it back up with multiple empty buckets before it disappears. Melt chance when scooping lava: 4%.",
+    "desc_hu": "Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez (a lávablokk megmarad). A földre öntött láva csak folyó lávát alkot — egy idő után eltűnik, és vízzel érintkezve NEM keletkezik obszidián. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. Tüzelőanyagként is használható (16 tárgyat éget el). Tipp: a láva korlátlanul újratermelhető — öntsd a földre, majd gyorsan merítsd vissza több üres vödörrel, mielőtt eltűnik. Olvadási esély lávamerítéskor: 4%.",
+    "desc_ru": "Нажмите ПКМ по любому блоку лавы с пустым ведром (блок лавы не расходуется). Вылитая на землю лава образует лишь текущую лаву — она вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Ctrl + ПКМ: разместите постоянный блок источника лавы, потратив опыт. Можно использовать как топливо (переплавляет 16 предметов). Совет: лаву можно добывать бесконечно — выливайте её на землю и быстро зачерпывайте несколькими пустыми вёдрами, пока она не исчезла. Шанс расплавления при зачерпывании лавы: 4%."
   },
   "ancient_metal_bucket_filled_with_lava": {
     "mcmod_id": 772862,
-    "desc_en": "A bucket filled with lava. Right-click any lava block with an empty bucket to collect lava — this does not consume the lava block. Pouring lava on the ground produces only flowing lava, which disappears after a while and does NOT form obsidian when it contacts water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Lava buckets can also be used as fuel (smelts 16 items). Because scooping lava does not require a lava source block, lava can be regenerated indefinitely: pour lava on the ground, then quickly right-click with multiple empty buckets before it disappears. Warning: when scooping lava, the bucket in hand has a chance to melt. Melt chances — Copper: 16%, Silver: 16%, Gold: 20%, Iron: 8%, Hardstone: 4%, Ancient Metal: 2%, Mithril: 1%, Adamantium: 0% (never melts).",
-    "desc_hu": "Lávával töltött vödör. Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez — ez nem fogyasztja el a lávablokkot. A földre öntött láva csak folyó lávát alkot, ami egy idő után eltűnik, és vízzel érintkezve NEM hoz létre obszidiánt. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. A lávás vödör tüzelőanyagként is használható (16 tárgyat éget el). Mivel a láva gyűjtéséhez nem szükséges lávaforrás blokk, a láva korlátlanul újratermelhető: öntsd a lávát a földre, majd gyorsan jobb klikkelj több üres vödörrel, mielőtt eltűnik. Figyelem: láva merítésekor a kézben lévő vödörnek esélye van megolvadni. Olvadási esélyek — Réz: 16%, Ezüst: 16%, Arany: 20%, Vas: 8%, Keménykő: 4%, Ősi fém: 2%, Mithril: 1%, Adamantium: 0% (soha nem olvad).",
-    "desc_ru": "Ведро с лавой. Нажмите ПКМ по любому блоку лавы с пустым ведром, чтобы зачерпнуть лаву — блок лавы при этом не расходуется. При выливании лавы на землю образуется лишь текущая лава, которая вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника лавы за счёт опыта. Вёдра с лавой можно использовать как топливо (переплавляет 16 предметов). Поскольку для зачерпывания лавы не требуется блок-источник, лаву можно добывать бесконечно: вылейте лаву на землю, а затем быстро кликайте ПКМ несколькими пустыми вёдрами, пока она не исчезла. Внимание: при зачерпывании лавы ведро в руке имеет шанс расплавиться. Шансы расплавления — Медное: 16%, Серебряное: 16%, Золотое: 20%, Железное: 8%, Твердокаменное: 4%, Из древнего металла: 2%, Мифриловое: 1%, Адамантиевое: 0% (никогда не плавится)."
+    "desc_en": "Right-click any lava block with an empty bucket to collect lava (lava block is not consumed). Pouring lava on the ground creates only flowing lava — it disappears after a while and does NOT form obsidian on contact with water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Can be used as fuel (smelts 16 items). Tip: lava can be farmed indefinitely — pour it on the ground, then quickly scoop it back up with multiple empty buckets before it disappears. Melt chance when scooping lava: 2%.",
+    "desc_hu": "Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez (a lávablokk megmarad). A földre öntött láva csak folyó lávát alkot — egy idő után eltűnik, és vízzel érintkezve NEM keletkezik obszidián. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. Tüzelőanyagként is használható (16 tárgyat éget el). Tipp: a láva korlátlanul újratermelhető — öntsd a földre, majd gyorsan merítsd vissza több üres vödörrel, mielőtt eltűnik. Olvadási esély lávamerítéskor: 2%.",
+    "desc_ru": "Нажмите ПКМ по любому блоку лавы с пустым ведром (блок лавы не расходуется). Вылитая на землю лава образует лишь текущую лаву — она вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Ctrl + ПКМ: разместите постоянный блок источника лавы, потратив опыт. Можно использовать как топливо (переплавляет 16 предметов). Совет: лаву можно добывать бесконечно — выливайте её на землю и быстро зачерпывайте несколькими пустыми вёдрами, пока она не исчезла. Шанс расплавления при зачерпывании лавы: 2%."
   },
   "mithril_bucket_filled_with_lava": {
     "mcmod_id": 772862,
-    "desc_en": "A bucket filled with lava. Right-click any lava block with an empty bucket to collect lava — this does not consume the lava block. Pouring lava on the ground produces only flowing lava, which disappears after a while and does NOT form obsidian when it contacts water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Lava buckets can also be used as fuel (smelts 16 items). Because scooping lava does not require a lava source block, lava can be regenerated indefinitely: pour lava on the ground, then quickly right-click with multiple empty buckets before it disappears. Warning: when scooping lava, the bucket in hand has a chance to melt. Melt chances — Copper: 16%, Silver: 16%, Gold: 20%, Iron: 8%, Hardstone: 4%, Ancient Metal: 2%, Mithril: 1%, Adamantium: 0% (never melts).",
-    "desc_hu": "Lávával töltött vödör. Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez — ez nem fogyasztja el a lávablokkot. A földre öntött láva csak folyó lávát alkot, ami egy idő után eltűnik, és vízzel érintkezve NEM hoz létre obszidiánt. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. A lávás vödör tüzelőanyagként is használható (16 tárgyat éget el). Mivel a láva gyűjtéséhez nem szükséges lávaforrás blokk, a láva korlátlanul újratermelhető: öntsd a lávát a földre, majd gyorsan jobb klikkelj több üres vödörrel, mielőtt eltűnik. Figyelem: láva merítésekor a kézben lévő vödörnek esélye van megolvadni. Olvadási esélyek — Réz: 16%, Ezüst: 16%, Arany: 20%, Vas: 8%, Keménykő: 4%, Ősi fém: 2%, Mithril: 1%, Adamantium: 0% (soha nem olvad).",
-    "desc_ru": "Ведро с лавой. Нажмите ПКМ по любому блоку лавы с пустым ведром, чтобы зачерпнуть лаву — блок лавы при этом не расходуется. При выливании лавы на землю образуется лишь текущая лава, которая вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника лавы за счёт опыта. Вёдра с лавой можно использовать как топливо (переплавляет 16 предметов). Поскольку для зачерпывания лавы не требуется блок-источник, лаву можно добывать бесконечно: вылейте лаву на землю, а затем быстро кликайте ПКМ несколькими пустыми вёдрами, пока она не исчезла. Внимание: при зачерпывании лавы ведро в руке имеет шанс расплавиться. Шансы расплавления — Медное: 16%, Серебряное: 16%, Золотое: 20%, Железное: 8%, Твердокаменное: 4%, Из древнего металла: 2%, Мифриловое: 1%, Адамантиевое: 0% (никогда не плавится)."
+    "desc_en": "Right-click any lava block with an empty bucket to collect lava (lava block is not consumed). Pouring lava on the ground creates only flowing lava — it disappears after a while and does NOT form obsidian on contact with water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Can be used as fuel (smelts 16 items). Tip: lava can be farmed indefinitely — pour it on the ground, then quickly scoop it back up with multiple empty buckets before it disappears. Melt chance when scooping lava: 1%.",
+    "desc_hu": "Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez (a lávablokk megmarad). A földre öntött láva csak folyó lávát alkot — egy idő után eltűnik, és vízzel érintkezve NEM keletkezik obszidián. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. Tüzelőanyagként is használható (16 tárgyat éget el). Tipp: a láva korlátlanul újratermelhető — öntsd a földre, majd gyorsan merítsd vissza több üres vödörrel, mielőtt eltűnik. Olvadási esély lávamerítéskor: 1%.",
+    "desc_ru": "Нажмите ПКМ по любому блоку лавы с пустым ведром (блок лавы не расходуется). Вылитая на землю лава образует лишь текущую лаву — она вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Ctrl + ПКМ: разместите постоянный блок источника лавы, потратив опыт. Можно использовать как топливо (переплавляет 16 предметов). Совет: лаву можно добывать бесконечно — выливайте её на землю и быстро зачерпывайте несколькими пустыми вёдрами, пока она не исчезла. Шанс расплавления при зачерпывании лавы: 1%."
   },
   "adamantium_bucket_filled_with_lava": {
     "mcmod_id": 772862,
-    "desc_en": "A bucket filled with lava. Right-click any lava block with an empty bucket to collect lava — this does not consume the lava block. Pouring lava on the ground produces only flowing lava, which disappears after a while and does NOT form obsidian when it contacts water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Lava buckets can also be used as fuel (smelts 16 items). Because scooping lava does not require a lava source block, lava can be regenerated indefinitely: pour lava on the ground, then quickly right-click with multiple empty buckets before it disappears. Warning: when scooping lava, the bucket in hand has a chance to melt. Melt chances — Copper: 16%, Silver: 16%, Gold: 20%, Iron: 8%, Hardstone: 4%, Ancient Metal: 2%, Mithril: 1%, Adamantium: 0% (never melts).",
-    "desc_hu": "Lávával töltött vödör. Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez — ez nem fogyasztja el a lávablokkot. A földre öntött láva csak folyó lávát alkot, ami egy idő után eltűnik, és vízzel érintkezve NEM hoz létre obszidiánt. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. A lávás vödör tüzelőanyagként is használható (16 tárgyat éget el). Mivel a láva gyűjtéséhez nem szükséges lávaforrás blokk, a láva korlátlanul újratermelhető: öntsd a lávát a földre, majd gyorsan jobb klikkelj több üres vödörrel, mielőtt eltűnik. Figyelem: láva merítésekor a kézben lévő vödörnek esélye van megolvadni. Olvadási esélyek — Réz: 16%, Ezüst: 16%, Arany: 20%, Vas: 8%, Keménykő: 4%, Ősi fém: 2%, Mithril: 1%, Adamantium: 0% (soha nem olvad).",
-    "desc_ru": "Ведро с лавой. Нажмите ПКМ по любому блоку лавы с пустым ведром, чтобы зачерпнуть лаву — блок лавы при этом не расходуется. При выливании лавы на землю образуется лишь текущая лава, которая вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника лавы за счёт опыта. Вёдра с лавой можно использовать как топливо (переплавляет 16 предметов). Поскольку для зачерпывания лавы не требуется блок-источник, лаву можно добывать бесконечно: вылейте лаву на землю, а затем быстро кликайте ПКМ несколькими пустыми вёдрами, пока она не исчезла. Внимание: при зачерпывании лавы ведро в руке имеет шанс расплавиться. Шансы расплавления — Медное: 16%, Серебряное: 16%, Золотое: 20%, Железное: 8%, Твердокаменное: 4%, Из древнего металла: 2%, Мифриловое: 1%, Адамантиевое: 0% (никогда не плавится)."
+    "desc_en": "Right-click any lava block with an empty bucket to collect lava (lava block is not consumed). Pouring lava on the ground creates only flowing lava — it disappears after a while and does NOT form obsidian on contact with water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Can be used as fuel (smelts 16 items). Tip: lava can be farmed indefinitely — pour it on the ground, then quickly scoop it back up with multiple empty buckets before it disappears. This bucket never melts when scooping lava.",
+    "desc_hu": "Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez (a lávablokk megmarad). A földre öntött láva csak folyó lávát alkot — egy idő után eltűnik, és vízzel érintkezve NEM keletkezik obszidián. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. Tüzelőanyagként is használható (16 tárgyat éget el). Tipp: a láva korlátlanul újratermelhető — öntsd a földre, majd gyorsan merítsd vissza több üres vödörrel, mielőtt eltűnik. Ez a vödör soha nem olvad el lávamerítéskor.",
+    "desc_ru": "Нажмите ПКМ по любому блоку лавы с пустым ведром (блок лавы не расходуется). Вылитая на землю лава образует лишь текущую лаву — она вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Ctrl + ПКМ: разместите постоянный блок источника лавы, потратив опыт. Можно использовать как топливо (переплавляет 16 предметов). Совет: лаву можно добывать бесконечно — выливайте её на землю и быстро зачерпывайте несколькими пустыми вёдрами, пока она не исчезла. Это ведро никогда не расплавится при зачерпывании лавы."
   }
 }
