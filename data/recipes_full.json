@@ -3027,7 +3027,24 @@
       "iron_ingot",
       "iron_ingot"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "iron_block",
+        "iron_block",
+        "iron_block"
+      ],
+      [
+        "_",
+        "iron_ingot",
+        "_"
+      ],
+      [
+        "iron_ingot",
+        "iron_ingot",
+        "iron_ingot"
+      ]
+    ]
   },
   {
     "id": "trapped_chest_165",
@@ -3704,7 +3721,24 @@
       "hardstone_ingot",
       "hardstone_ingot"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "hardstone_block",
+        "hardstone_block",
+        "hardstone_block"
+      ],
+      [
+        "_",
+        "hardstone_ingot",
+        "_"
+      ],
+      [
+        "hardstone_ingot",
+        "hardstone_ingot",
+        "hardstone_ingot"
+      ]
+    ]
   },
   {
     "id": "hay_bale_195",
@@ -4648,7 +4682,24 @@
       "copper_ingot",
       "copper_ingot"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "copper_block",
+        "copper_block",
+        "copper_block"
+      ],
+      [
+        "_",
+        "copper_ingot",
+        "_"
+      ],
+      [
+        "copper_ingot",
+        "copper_ingot",
+        "copper_ingot"
+      ]
+    ]
   },
   {
     "id": "silver_anvil_234",
@@ -4669,7 +4720,24 @@
       "silver_ingot",
       "silver_ingot"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "silver_block",
+        "silver_block",
+        "silver_block"
+      ],
+      [
+        "_",
+        "silver_ingot",
+        "_"
+      ],
+      [
+        "silver_ingot",
+        "silver_ingot",
+        "silver_ingot"
+      ]
+    ]
   },
   {
     "id": "gold_anvil_235",
@@ -4690,7 +4758,24 @@
       "gold_ingot",
       "gold_ingot"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "gold_block",
+        "gold_block",
+        "gold_block"
+      ],
+      [
+        "_",
+        "gold_ingot",
+        "_"
+      ],
+      [
+        "gold_ingot",
+        "gold_ingot",
+        "gold_ingot"
+      ]
+    ]
   },
   {
     "id": "mithril_anvil_236",
@@ -4711,7 +4796,24 @@
       "mithril_bar",
       "mithril_bar"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "mithril_block",
+        "mithril_block",
+        "mithril_block"
+      ],
+      [
+        "_",
+        "mithril_bar",
+        "_"
+      ],
+      [
+        "mithril_bar",
+        "mithril_bar",
+        "mithril_bar"
+      ]
+    ]
   },
   {
     "id": "adamantium_anvil_237",
@@ -4732,7 +4834,24 @@
       "adamantium_bar",
       "adamantium_bar"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "adamantium_block",
+        "adamantium_block",
+        "adamantium_block"
+      ],
+      [
+        "_",
+        "adamantium_bar",
+        "_"
+      ],
+      [
+        "adamantium_bar",
+        "adamantium_bar",
+        "adamantium_bar"
+      ]
+    ]
   },
   {
     "id": "runestone_nul_mithril_239",
@@ -4813,7 +4932,24 @@
       "ancient_metal_ingot",
       "ancient_metal_ingot"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "ancient_metal_block",
+        "ancient_metal_block",
+        "ancient_metal_block"
+      ],
+      [
+        "_",
+        "ancient_metal_ingot",
+        "_"
+      ],
+      [
+        "ancient_metal_ingot",
+        "ancient_metal_ingot",
+        "ancient_metal_ingot"
+      ]
+    ]
   },
   {
     "id": "iron_shovel_243",
@@ -26424,7 +26560,24 @@
       "ice",
       "tin_plate"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "tin_plate",
+        "_"
+      ],
+      [
+        "tin_plate",
+        "ice",
+        "tin_plate"
+      ],
+      [
+        "tin_plate",
+        "ice",
+        "tin_plate"
+      ]
+    ]
   },
   {
     "id": "gold_filter_paper_1189",
@@ -33516,8 +33669,13 @@
     "difficulty": 200,
     "skills": [],
     "ingredients": [
+      "tin_plate",
+      "tin_plate",
       "ice",
-      "ice"
+      "tin_plate",
+      "tin_plate",
+      "ice",
+      "tin_plate"
     ],
     "shaped": true,
     "pattern": [
@@ -33622,8 +33780,7 @@
       "obsidian",
       "obsidian",
       "obsidian",
-      "blue_compass"
-      ,
+      "blue_compass",
       "obsidian",
       "obsidian",
       "obsidian",
@@ -42043,7 +42200,12 @@
     "skills": [],
     "ingredients": [
       "tin_plate",
-      "ice"
+      "tin_plate",
+      "ice",
+      "tin_plate",
+      "tin_plate",
+      "ice",
+      "tin_plate"
     ],
     "shaped": true,
     "pattern": [
