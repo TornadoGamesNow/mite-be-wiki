@@ -4237,7 +4237,7 @@
   {
     "id": "campfire_idle_215",
     "item_num": 194,
-    "output": "campfire_idle",
+    "output": "campfire",
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 330,
@@ -4264,7 +4264,39 @@
         "planks_jungle"
       ]
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "stick",
+        "_",
+        "stick"
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "log_oak",
+          "log_spruce",
+          "log_birch",
+          "log_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ]
   },
   {
     "id": "runestone_nul_adamantium_216",
