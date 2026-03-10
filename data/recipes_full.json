@@ -6907,7 +6907,24 @@
       "water_bowl",
       "water_bowl"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "water_bowl",
+        "_"
+      ],
+      [
+        "water_bowl",
+        "iron_bucket",
+        "water_bowl"
+      ],
+      [
+        "_",
+        "water_bowl",
+        "_"
+      ]
+    ]
   },
   {
     "id": "minecart_301",
@@ -18182,7 +18199,24 @@
       "water_bowl",
       "water_bowl"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "water_bowl",
+        "_"
+      ],
+      [
+        "water_bowl",
+        "copper_bucket",
+        "water_bowl"
+      ],
+      [
+        "_",
+        "water_bowl",
+        "_"
+      ]
+    ]
   },
   {
     "id": "silver_bucket_filled_with_water_791",
@@ -18199,7 +18233,24 @@
       "water_bowl",
       "water_bowl"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "water_bowl",
+        "_"
+      ],
+      [
+        "water_bowl",
+        "silver_bucket",
+        "water_bowl"
+      ],
+      [
+        "_",
+        "water_bowl",
+        "_"
+      ]
+    ]
   },
   {
     "id": "gold_bucket_filled_with_water_792",
@@ -18216,7 +18267,24 @@
       "water_bowl",
       "water_bowl"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "water_bowl",
+        "_"
+      ],
+      [
+        "water_bowl",
+        "gold_bucket",
+        "water_bowl"
+      ],
+      [
+        "_",
+        "water_bowl",
+        "_"
+      ]
+    ]
   },
   {
     "id": "mithril_bucket_filled_with_water_793",
@@ -18233,7 +18301,24 @@
       "water_bowl",
       "water_bowl"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "water_bowl",
+        "_"
+      ],
+      [
+        "water_bowl",
+        "mithril_bucket",
+        "water_bowl"
+      ],
+      [
+        "_",
+        "water_bowl",
+        "_"
+      ]
+    ]
   },
   {
     "id": "adamantium_bucket_filled_with_water_794",
@@ -18250,7 +18335,24 @@
       "water_bowl",
       "water_bowl"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "water_bowl",
+        "_"
+      ],
+      [
+        "water_bowl",
+        "adamantium_bucket",
+        "water_bowl"
+      ],
+      [
+        "_",
+        "water_bowl",
+        "_"
+      ]
+    ]
   },
   {
     "id": "ancient_metal_bucket_filled_with_water_795",
@@ -18267,7 +18369,24 @@
       "water_bowl",
       "water_bowl"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "water_bowl",
+        "_"
+      ],
+      [
+        "water_bowl",
+        "ancient_metal_bucket",
+        "water_bowl"
+      ],
+      [
+        "_",
+        "water_bowl",
+        "_"
+      ]
+    ]
   },
   {
     "id": "copper_bucket_filled_with_milk_796",
@@ -24913,7 +25032,24 @@
       "water_bowl",
       "water_bowl"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "water_bowl",
+        "_"
+      ],
+      [
+        "water_bowl",
+        "hardstone_bucket",
+        "water_bowl"
+      ],
+      [
+        "_",
+        "water_bowl",
+        "_"
+      ]
+    ]
   },
   {
     "id": "hard_stone_bucket_of_milk_1105",
