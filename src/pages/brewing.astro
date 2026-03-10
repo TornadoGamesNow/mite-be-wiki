@@ -43,7 +43,7 @@ const sidebarGroups = getSidebarGroups('brewing');
 
 <div class="warning-box">⚠️ <strong>A bájitalkészítő szakma jelenleg nincs aktiválva a v0.9.0-ban.</strong> A bájitalfőzés és a sajtkészítés <strong>szakma nélkül is elérhető</strong> az aktuális verzióban — a bájitalkészítő rendszer csak érdekességképpen van dokumentálva.</div>
 
-<div class="info">⚗️ <strong>Gyors áttekintés:</strong> Főzőállvány → bájitalok (szakma nélkül is). Üst (Cauldron) → speciális receptek (Folyékony arany, Higany, Ősi fémhátizsák). Sajt = bármilyen fémtejesvödör.</div>
+<div class="info">⚗️ <strong>Gyors áttekintés:</strong> Főzőállvány → bájitalok (szakma nélkül is). Üst (Cauldron) → speciális receptek (Folyékony arany, Higany, Ősi fém hátizsák-fejlesztő). Sajt = bármilyen fémtejesvödör.</div>
 
 <!-- ─── Brewing Stand ─── -->
 <h2 id="brewing-stand">Főzőállvány (Brewing Stand)</h2>
@@ -172,7 +172,7 @@ const sidebarGroups = getSidebarGroups('brewing');
   <tr><td>4</td><td>~8000 XP</td><td>Bájital IV szintek (max. erő/gyorsaság); 5× hatékonyabb sajt-recept</td></tr>
 </table>
 
-<div class="tip">💡 <strong>Tipp:</strong> A bájitalkészítő és a kovács/bűvölő szakmák kombinálása nem lehetséges — csak 1 szakma választható. Ha harcra fókuszálsz, fontold meg, hogy bájitalkészítő helyett bűvölővel indulsz-e.</div>
+<div class="tip">💡 <strong>Tipp:</strong> Mivel a szakmák jelenleg inaktívak, ezt itt csak történeti megjegyzésként kezelem: ha a rendszer később aktiválódik, a bájitalkészítő és más szakmák közti kizárások újra relevánsak lehetnek.</div>
 
 <!-- ─── Cauldron ─── -->
 <h2 id="cauldron">Üst (Cauldron) mechanikák</h2>
@@ -192,13 +192,13 @@ const sidebarGroups = getSidebarGroups('brewing');
     <td><strong style="color:var(--silver)">Folyékony higany</strong></td>
     <td>Higanyérc + láva az üstben → olvasztás</td>
     <td>Folyékony higany (vödörrel szedhető)</td>
-    <td>Ötvözési alapanyag; ősifém-hátizsák receptjéhez</td>
+    <td>Ötvözési alapanyag; ősifém hátizsák-fejlesztő receptjéhez</td>
   </tr>
   <tr>
-    <td><strong style="color:var(--ancient)">Ősifém-hátizsák</strong></td>
-    <td>Bőrhátizsák + 4× ősifém-rúd a higanyba → 30 mp várakozás</td>
-    <td>Ősifém-hátizsák</td>
-    <td>Több tárgyhely, tartósabb hátizsák</td>
+    <td><strong style="color:var(--ancient)">Ősifém hátizsák-fejlesztő</strong></td>
+    <td>Nagy hátizsák-fejlesztő + 4× ősifém-rúd a higanyba → 30 mp várakozás</td>
+    <td>Ősifém hátizsák-fejlesztő</td>
+    <td>Fejlesztő tárgy, amellyel a hátizsák továbbfejleszthető</td>
   </tr>
 </table>
 
@@ -268,7 +268,7 @@ const sidebarGroups = getSidebarGroups('brewing');
 
 <!-- ─── Disenchanting ─── -->
 <h2 id="disenchanting">Varázstalanító palack (Disenchanting Bottle)</h2>
-<p>Egyedi MITE-bájital, amelyet <strong>főzőállványon</strong> kell elkészíteni (szakma szükséges). Recept: alvilági szemölcs + szén → vizespalackokon.</p>
+<p>Egyedi MITE-bájital, amelyet <strong>főzőállványon</strong> kell elkészíteni. A helyi v0.9.0 adatok alapján ezt jelenleg nem kezelem aktív szakmakövetelményként. Recept: alvilági szemölcs + szén → vizespalackokon.</p>
 
 <BrewingGrid
   ingredient="Alvilági szemölcs + szén"
@@ -293,7 +293,7 @@ const sidebarGroups = getSidebarGroups('brewing');
 
 <!-- ─── Cheese ─── -->
 <h2 id="cheese">Sajtkészítés</h2>
-<p><strong>Bájitalkészítő képesség</strong> szükséges. Bármilyen anyagú tejesvödör használható — keménykő, réz, ezüst, arany, vas, ősifém, mithril, adamantium. A vödör szintje határozza meg, melyik munkaasztalon készíthető el a sajt.</p>
+<p>A helyi v0.9.0 adatok alapján a sajt jelenleg <strong>aktív szakmakövetelmény nélkül</strong> készíthető. Bármilyen anyagú tejesvödör használható — keménykő, réz, ezüst, arany, vas, ősifém, mithril, adamantium. A vödör szintje határozza meg, melyik munkaasztalon készíthető el a sajt.</p>
 
 <div class="info">ℹ️ A tehenek fejéséhez az adott anyagú vödör kell (pl. keménykő vödör a keménykő tehénhez). A receptek <strong>6400 nehézség/db</strong> értékkel dolgoznak, függetlenül a vödör anyagától.</div>
 
@@ -320,7 +320,7 @@ const sidebarGroups = getSidebarGroups('brewing');
 
 <div class="warning-box">⚠️ <strong>The Brewer profession is not currently active in v0.9.0.</strong> Brewing and cheese-making are <strong>available without a profession</strong> in the current version — the Brewer profession system is documented here as a curiosity.</div>
 
-<div class="info">⚗️ <strong>Quick overview:</strong> Brewing Stand → potions (no profession needed). Cauldron → special recipes (Liquid Gold, Mercury, Ancient Metal Backpack). Cheese = any metal milk bucket.</div>
+<div class="info">⚗️ <strong>Quick overview:</strong> Brewing Stand → potions (no profession needed). Cauldron → special recipes (Liquid Gold, Mercury, Ancient Metal Backpack Upgrade). Cheese = any metal milk bucket.</div>
 
 <!-- ─── Brewing Stand EN ─── -->
 <h2 id="brewing-stand">Brewing Stand</h2>
@@ -420,7 +420,7 @@ const sidebarGroups = getSidebarGroups('brewing');
   <tr><td>4</td><td>~8000 XP</td><td>Potion level IV (max strength/speed); 5× cheese recipe</td></tr>
 </table>
 
-<div class="tip">💡 <strong>Tip:</strong> Brewer and Blacksmith/Enchanter cannot be combined — only 1 profession per character. If you focus on combat, consider whether Enchanter might be more valuable than Brewer for your playstyle.</div>
+<div class="tip">💡 <strong>Tip:</strong> Because professions are currently inactive, treat this as historical context only: if the system is enabled later, Brewer may again conflict with other profession choices.</div>
 
 <!-- ─── Cauldron EN ─── -->
 <h2 id="cauldron">Cauldron Mechanics</h2>
@@ -440,13 +440,13 @@ const sidebarGroups = getSidebarGroups('brewing');
     <td><strong style="color:var(--silver)">Liquid Mercury</strong></td>
     <td>Mercury ore + Lava in cauldron → smelting process</td>
     <td>Liquid mercury (collect with bucket)</td>
-    <td>Alloying ingredient; Ancient Metal Backpack recipe</td>
+    <td>Alloying ingredient; Ancient Metal Backpack Upgrade recipe</td>
   </tr>
   <tr>
-    <td><strong style="color:var(--ancient)">Ancient Metal Backpack</strong></td>
-    <td>Leather Backpack + 4× Ancient Metal Ingot in mercury → wait 30 seconds</td>
-    <td>Ancient Metal Backpack</td>
-    <td>More inventory slots, more durable backpack</td>
+    <td><strong style="color:var(--ancient)">Ancient Metal Backpack Upgrade</strong></td>
+    <td>Big Backpack Upgrade + 4× Ancient Metal Ingots in mercury → wait 30 seconds</td>
+    <td>Ancient Metal Backpack Upgrade</td>
+    <td>Upgrade item used to further improve the backpack</td>
   </tr>
 </table>
 
@@ -516,7 +516,7 @@ const sidebarGroups = getSidebarGroups('brewing');
 
 <!-- ─── Disenchanting EN ─── -->
 <h2 id="disenchanting">Disenchanting Bottle</h2>
-<p>A unique MITE potion crafted in the <strong>Brewing Stand</strong> (Brewer required). Recipe: Nether Wart + Coal → Water Bottles.</p>
+<p>A unique MITE potion crafted in the <strong>Brewing Stand</strong>. Based on the local v0.9.0 data, I am not treating it as an active Brewer-only recipe right now. Recipe: Nether Wart + Coal → Water Bottles.</p>
 
 <BrewingGrid
   ingredient="Nether Wart + Coal"
@@ -541,7 +541,7 @@ const sidebarGroups = getSidebarGroups('brewing');
 
 <!-- ─── Cheese EN ─── -->
 <h2 id="cheese">Cheese Crafting</h2>
-<p><strong>Brewer skill</strong> required. Any milk bucket material works — Hardstone, Copper, Silver, Gold, Iron, Ancient Metal, Mithril, Adamantium. The bucket tier determines which workbench is needed to craft the cheese.</p>
+<p>Based on the local v0.9.0 data, cheese is currently craftable <strong>without an active Brewer requirement</strong>. Any milk bucket material works — Hardstone, Copper, Silver, Gold, Iron, Ancient Metal, Mithril, Adamantium. The bucket tier determines which workbench is needed to craft the cheese.</p>
 
 <div class="info">ℹ️ Each cow type requires a matching bucket material to milk. All recipes share the same <strong>6,400 difficulty/unit</strong> regardless of bucket material.</div>
 
@@ -566,7 +566,7 @@ const sidebarGroups = getSidebarGroups('brewing');
 
 <div class="warning-box">⚠️ <strong>Профессия «Зельевар» в v0.9.0 не активирована.</strong> Зельеварение и приготовление сыра <strong>доступны без профессии</strong> в текущей версии — блок про профессии оставлен здесь только для справки.</div>
 
-<div class="info">⚗️ <strong>Краткий обзор:</strong> Стойка для зелий → обычные зелья. Котёл → особые рецепты (жидкое золото, ртуть, рюкзак из Древнего металла). Сыр готовится из любого металлического ведра с молоком.</div>
+<div class="info">⚗️ <strong>Краткий обзор:</strong> Стойка для зелий → обычные зелья. Котёл → особые рецепты (жидкое золото, ртуть, улучшение рюкзака из Древнего металла). Сыр готовится из любого металлического ведра с молоком.</div>
 
 <h2 id="brewing-stand">Стойка для зелий</h2>
 <p>Для создания стойки для зелий нужен <strong>Кремнёвый верстак</strong> или верстак более высокого тира:</p>
@@ -680,10 +680,10 @@ const sidebarGroups = getSidebarGroups('brewing');
     <td>Сплавной ингредиент; рецепт Рюкзака из Древнего металла</td>
   </tr>
   <tr>
-    <td><strong style="color:var(--ancient)">Рюкзак из Древнего металла</strong></td>
-    <td>Погрузите кожаный рюкзак и 4 слитка Древнего металла в ртуть и подождите 30 секунд.</td>
-    <td>Рюкзак из Древнего металла</td>
-    <td>Больше слотов и выше прочность</td>
+    <td><strong style="color:var(--ancient)">Улучшение рюкзака из Древнего металла</strong></td>
+    <td>Погрузите большое улучшение рюкзака и 4 слитка Древнего металла в ртуть и подождите 30 секунд.</td>
+    <td>Улучшение рюкзака из Древнего металла</td>
+    <td>Предмет улучшения для дальнейшего апгрейда рюкзака</td>
   </tr>
 </table>
 
@@ -759,7 +759,7 @@ const sidebarGroups = getSidebarGroups('brewing');
 </ul>
 
 <h2 id="cheese">Крафт сыра</h2>
-<p>Требуется навык <strong>Зельеварения</strong>. Подойдёт любое металлическое ведро с молоком: твердокаменное, медное, серебряное, золотое, железное, из Древнего металла, мифриловое или адамантиевое. Материал ведра определяет, на каком верстаке крафтится сыр.</p>
+<p>По локальным данным v0.9.0 сыр сейчас крафтится <strong>без активного требования профессии «Зельевар»</strong>. Подойдёт любое металлическое ведро с молоком: твердокаменное, медное, серебряное, золотое, железное, из Древнего металла, мифриловое или адамантиевое. Материал ведра определяет, на каком верстаке крафтится сыр.</p>
 
 <table>
   <tr><th>Вёдра</th><th>Результат</th><th>Сложность/шт</th><th>Эффективность</th></tr>

@@ -22,17 +22,17 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 
 <PageSummary keyPoints={{
   hu: [
-    'Hátizsák (B gomb) — Adamantium Hátizsák a legjobb: 102 slot',
+    'Hátizsák (B gomb) — v0.9.0-ban a biztosan megszerezhető végpont az Ősi Fém Hátizsák: 78 slot',
     'Testhőmérséklet: 36–37°C optimális — kemence 2-3 blokkon belül túlmelegíthet',
     'Csökkentett stack méretek (kő: 8, rönk: 4, érc: 5) — több tároló kell',
   ],
   en: [
-    'Backpack (B key) — Adamantium Backpack is best: 102 slots',
+    'Backpack (B key) — in v0.9.0 the reliably obtainable end point is the Ancient Metal Backpack: 78 slots',
     'Body temp: 36–37°C optimal — 2-3 blocks from furnace overheats you',
     'Reduced stack sizes (stone: 8, logs: 4, ores: 5) — you need more storage',
   ],
   ru: [
-    'Рюкзак (клавиша B) — Адамантовый рюкзак лучший: 102 слота',
+    'Рюкзак (клавиша B) — в v0.9.0 надёжно достижимый максимум: рюкзак из Древнего металла на 78 ячеек',
     'Температура тела: 36–37°C — в 2-3 блоках от печи можно перегреться',
     'Уменьшенные стаки (камень: 8, брёвна: 4, руда: 5) — нужно больше хранилищ',
   ],
@@ -42,17 +42,14 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 <h2 id="backpacks">Hátizsákok</h2>
 <p>Extra tárhelyért hátizsákokat készíthetsz, egyre nagyobb kapacitással. <strong>B gomb</strong> = hátizsák megnyitása!</p>
 <table class="compare-table">
-  <tr><th>Hátizsák</th><th>Slotok</th><th>Megjegyzés</th></tr>
-  <tr><td>Bőr Hátizsák</td><td>10</td><td>3 bőr + 3 kötél — alap</td></tr>
-  <tr><td>Réz / Ezüst Hátizsák</td><td>21</td><td>Fejlesztő eszközzel</td></tr>
-  <tr><td>Vas Hátizsák</td><td>36</td><td>Megnőtt kapacitás</td></tr>
-  <tr><td>Arany Hátizsák</td><td>44</td><td>—</td></tr>
-  <tr><td>Keménykő Hátizsák</td><td>55</td><td>Belépés a mitikus kor hátizsákjaiba</td></tr>
-  <tr style="background:rgba(180,120,255,0.12)"><td><strong>Ősi Fém Hátizsák</strong></td><td><strong>78</strong></td><td>Higany Üstban fejleszthető!</td></tr>
-  <tr><td>Mithril Hátizsák</td><td>90</td><td>—</td></tr>
-  <tr><td>Adamantium Hátizsák</td><td>102</td><td>A legjobb hátizsák</td></tr>
+  <tr><th>Hátizsák</th><th>Slotok</th><th>v0.9.0 státusz</th></tr>
+  <tr><td>Bőr Hátizsák</td><td>10</td><td>Normál recepttel elkészíthető alap hátizsák</td></tr>
+  <tr><td>Nagy Hátizsák</td><td>21</td><td><span class="wiki-item" data-id="big_backpack_upgrade">Big Backpack Upgrade</span> tárggyal fejleszthető</td></tr>
+  <tr style="background:rgba(180,120,255,0.12)"><td><strong>Ősi Fém Hátizsák</strong></td><td><strong>78</strong></td><td><span class="wiki-item" data-id="ancient_metal_backpack_upgrade">Ancient Metal Backpack Upgrade</span> + higanyüst + Knowledge Book</td></tr>
+  <tr><td>Réz / Ezüst / Vas / Arany / Keménykő</td><td>21 / 21 / 36 / 44 / 55</td><td>Régi hátizsák-típusok a játékfájlokban; a jelenlegi v0.9.0-ban nincs helyi receptlista hozzájuk</td></tr>
+  <tr><td>Mithril / Adamantium</td><td>90 / 102</td><td>A játékfájlok név szerint tartalmazzák, de a v0.9.0-hoz nem találtam hozzájuk receptet vagy fejlesztő tárgyat</td></tr>
 </table>
-<div class="tip-card">🎒 <strong>Ősi Fém Hátizsák fejlesztése (78 slot):</strong> Nagy Hátizsák Fejlesztő Eszköz + 4× Ősi fémrúd → Higany Üstba kell tenni, lávaforrást tegyél alá, majd várj ~30 másodpercet.</div>
+<div class="tip-card">🎒 <strong>Biztos v0.9.0 útvonal:</strong> Bőr Hátizsák → Nagy Hátizsák Fejlesztő → Ősi Fém Hátizsák Fejlesztő. Az utolsó lépéshez a nagy hátizsák-fejlesztőt és 4× ősi fémrudat kell teljes higanyüstbe tenni, alul magma/láva hőforrással, majd kb. 30 másodpercet várni.</div>
 
 <h2 id="temperature">Testhőmérséklet</h2>
 <p>A testhőmérséklet 36–37°C-ban optimális. Tűz, láva, Alvilág emeli — víz, eső, jég csökkenti.</p>
@@ -84,7 +81,7 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 
 <h2 id="knowledge-books">Tudáskönyvek (Knowledge Books)</h2>
 <p>A Knowledge Book (Knowledge Book) egy speciális tárgy, amely haladó receptek feloldására szolgál. Amíg nem rendelkezel a megfelelő Knowledge Bookvel, az adott recept <strong>nem craftolható</strong>!</p>
-<div class="warning-box">🔒 <strong>Kemény zárolás (Hard Gate)!</strong> Ha egy recept Knowledge Bookhöz kötött, akkor <strong>még akkor sem tudod megcraftolni, ha minden alapanyagod megvan!</strong> A könyveket <strong>Pillager Outpost ládákban</strong> kell megtalálni.</div>
+<div class="warning-box">🔒 <strong>Kemény zárolás (Hard Gate)!</strong> Ha egy recept Knowledge Bookhöz kötött, akkor <strong>még akkor sem tudod megcraftolni, ha minden alapanyagod megvan!</strong> A v0.9.0 kínai item-leírások alapján a könyvek elsődleges, biztos forrása a <strong>föld alatti dungeon treasure chest</strong> loot.</div>
 
 <div class="craft-section">
   <CraftingGrid recipeOutput="miner_helmet" label={{hu: "Bányászsisak (Vas Munkaasztal)", en: "Miner Helmet (Iron Workbench)"}}/>
@@ -103,11 +100,11 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <tr><td>Továbbfejlesztett vég szem tudáskönyv</td><td>Erősített Ender Szem</td><td>9× Ender Szem → Erősített Ender Szem</td></tr>
   <tr><td>Fejlett varázslóasztal tudáskönyv</td><td>Fejlett Varázslóasztal</td><td>Erősebb bűvölések eléréséhez</td></tr>
   <tr><td>Teleport kő tudáskönyv</td><td>Teleport Kő</td><td>Teleportálási célpont; Kemény kő munkaasztalon: Ender gyöngy + vöröskő + kőtégla</td></tr>
-  <tr><td>Teleport tekercs tudáskönyv</td><td>Teleport Tekercs</td><td>Egyszeri használatú teleportálás útjelzőhöz</td></tr>
+  <tr><td>Teleport tekercs tudáskönyv</td><td>Teleport Tekercs</td><td>A helyi receptadatokban legacy/eltávolított teleport-scroll hivatkozásként látszik</td></tr>
   <tr><td>Óra tudáskönyv</td><td>Óra</td><td>8× arany nugget + vöröskő; napszak jelzés</td></tr>
   <tr><td>Hűtő folyadék tudáskönyv</td><td>Hűtő Folyadék</td><td>Ónlemez + jég; hőmérséklet csökkentésére</td></tr>
   <tr><td>Óriás TNT tudáskönyv</td><td>Óriás TNT</td><td>Nagyobb hatósugarú robbanás</td></tr>
-  <tr><td>Újraéledés horgony tudáskönyv</td><td>Újraéledés Horgony</td><td>Kemény kő munkaasztalon: kék iránytű</td></tr>
+  <tr><td>Világ Jelölő tudáskönyv</td><td>Világ Jelölő</td><td>Világ újraéledési pontjának beállítása; helyi receptadat: obszidián + kék iránytű</td></tr>
   <tr><td>Ősi fém tároló tudáskönyv</td><td>Ősi Fém Tároló</td><td>Fejlett tároló eszköz ősi fémből</td></tr>
 </table>
 
@@ -120,17 +117,14 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 <h2 id="backpacks-en">Backpacks</h2>
 <p>Extra inventory space through craftable backpacks with increasing capacity. <strong>B key</strong> = open your equipped backpack!</p>
 <table class="compare-table">
-  <tr><th>Backpack</th><th>Slots</th><th>Notes</th></tr>
-  <tr><td>Leather Backpack</td><td>10</td><td>3 leather + 3 rope — starter</td></tr>
-  <tr><td>Copper / Silver Backpack</td><td>21</td><td>Upgrade tool required</td></tr>
-  <tr><td>Iron Backpack</td><td>36</td><td>Significant capacity increase</td></tr>
-  <tr><td>Gold Backpack</td><td>44</td><td>—</td></tr>
-  <tr><td>Hardstone Backpack</td><td>55</td><td>Entry into mythic-tier bags</td></tr>
-  <tr style="background:rgba(180,120,255,0.12)"><td><strong>Ancient Metal Backpack</strong></td><td><strong>78</strong></td><td>Mercury cauldron upgrade!</td></tr>
-  <tr><td>Mithril Backpack</td><td>90</td><td>—</td></tr>
-  <tr><td>Adamantium Backpack</td><td>102</td><td>Best backpack in the game</td></tr>
+  <tr><th>Backpack</th><th>Slots</th><th>v0.9.0 status</th></tr>
+  <tr><td>Leather Backpack</td><td>10</td><td>Starter backpack with a normal recipe</td></tr>
+  <tr><td>Big Backpack</td><td>21</td><td>Upgrade the leather backpack with <span class="wiki-item" data-id="big_backpack_upgrade">Big Backpack Upgrade</span></td></tr>
+  <tr style="background:rgba(180,120,255,0.12)"><td><strong>Ancient Metal Backpack</strong></td><td><strong>78</strong></td><td><span class="wiki-item" data-id="ancient_metal_backpack_upgrade">Ancient Metal Backpack Upgrade</span> + mercury cauldron + knowledge book</td></tr>
+  <tr><td>Copper / Silver / Iron / Gold / Hardstone</td><td>21 / 21 / 36 / 44 / 55</td><td>Legacy backpack tiers still named in the files, but no local v0.9.0 recipe list was found for them</td></tr>
+  <tr><td>Mithril / Adamantium</td><td>90 / 102</td><td>Named in the files, but I found no v0.9.0 recipe or upgrade item for actually obtaining them</td></tr>
 </table>
-<div class="tip-card">🎒 <strong>Ancient Metal Backpack upgrade (78 slots):</strong> Large Backpack Upgrade Tool + 4× Ancient Metal Ingots → place in Mercury Cauldron with lava heat source below, wait ~30 seconds.</div>
+<div class="tip-card">🎒 <strong>Reliable v0.9.0 route:</strong> Leather Backpack → Big Backpack Upgrade → Ancient Metal Backpack Upgrade. The last step uses the big backpack upgrade plus 4× Ancient Metal Ingots in a full mercury cauldron with magma/lava heat below for about 30 seconds.</div>
 
 <h2 id="temperature-en">Body Temperature</h2>
 <p>Body temperature is optimal at 36–37°C. Fire, lava, and the Nether raise it — water, rain, and ice lower it.</p>
@@ -157,7 +151,7 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 
 <h2 id="knowledge-books-en">Knowledge Books</h2>
 <p>A Knowledge Book is a special item that unlocks advanced recipes. If a recipe is gated behind a Knowledge Book, you <strong>cannot craft it</strong> even if you have all the materials!</p>
-<div class="warning-box">🔒 <strong>Hard Gate!</strong> Knowledge Books are found in <strong>Pillager Outpost chests</strong> — there's no guarantee one is nearby.</div>
+<div class="warning-box">🔒 <strong>Hard Gate!</strong> Based on the v0.9.0 Chinese item pages, the primary reliable source for Knowledge Books is <strong>underground dungeon treasure chests</strong>.</div>
 
 <h3>Knowledge Books List</h3>
 <table>
@@ -170,11 +164,11 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <tr><td>Enhanced Ender Eye Knowledge Book</td><td>Enhanced Ender Eye</td><td>9× Ender Eyes → Enhanced Ender Eye</td></tr>
   <tr><td>Advanced Enchanting Table Knowledge Book</td><td>Advanced Enchanting Table</td><td>Stronger enchantments</td></tr>
   <tr><td>Teleport Stone Knowledge Book</td><td>Teleport Stone</td><td>Teleportation destination; Hardstone Workbench: Ender Pearl + Redstone Block + Stone Bricks</td></tr>
-  <tr><td>Teleport Scroll Knowledge Book</td><td>Teleport Scroll</td><td>Single-use teleport to a bound Teleport Stone</td></tr>
+  <tr><td>Teleport Scroll Knowledge Book</td><td>Teleport Scroll</td><td>Appears as a legacy/removed teleport-scroll reference in the local recipe data</td></tr>
   <tr><td>Clock Knowledge Book</td><td>Clock</td><td>8× Gold Nuggets + Redstone Dust; shows time of day</td></tr>
   <tr><td>Cooling Liquid Knowledge Book</td><td>Cooling Liquid</td><td>Tin plates + Ice; reduces body temperature</td></tr>
   <tr><td>Giant TNT Knowledge Book</td><td>Giant TNT</td><td>Larger explosion radius than regular TNT</td></tr>
-  <tr><td>Respawn Anchor Knowledge Book</td><td>Respawn Anchor</td><td>Hardstone Workbench: Blue Compass</td></tr>
+  <tr><td>World Marker Knowledge Book</td><td>World Marker</td><td>Sets the world's respawn point; local recipe data uses obsidian + Blue Compass</td></tr>
   <tr><td>Ancient Metal Container Knowledge Book</td><td>Ancient Metal Container</td><td>Advanced storage item from Ancient Metal</td></tr>
 </table>
 <div class="tip-card">💡 Extra Knowledge Books can be converted to regular books at the workbench, giving you experience points!</div>
@@ -184,17 +178,14 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 <h2 id="backpacks-ru">🎒 Рюкзаки</h2>
 <p>Рюкзаки заметно расширяют инвентарь. Клавиша <strong>B</strong> — открыть рюкзак.</p>
 <table class="compare-table">
-  <tr><th>Рюкзак</th><th>Ячейки</th><th>Примечание</th></tr>
-  <tr><td>Кожаный</td><td>10</td><td>3 кожи + 3 верёвки — базовый</td></tr>
-  <tr><td>Медный / Серебряный</td><td>21</td><td>Нужен инструмент улучшения</td></tr>
-  <tr><td>Железный</td><td>36</td><td>Значительное увеличение</td></tr>
-  <tr><td>Золотой</td><td>44</td><td>—</td></tr>
-  <tr><td>Твердокаменный</td><td>55</td><td>—</td></tr>
-  <tr style="background:rgba(180,120,255,0.12)"><td><strong>Из Древнего металла</strong></td><td><strong>78</strong></td><td>Через котёл с ртутью!</td></tr>
-  <tr><td>Мифриловый</td><td>90</td><td>—</td></tr>
-  <tr><td>Адамантиевый</td><td>102</td><td>Лучший рюкзак в игре</td></tr>
+  <tr><th>Рюкзак</th><th>Ячейки</th><th>Статус в v0.9.0</th></tr>
+  <tr><td>Кожаный</td><td>10</td><td>Базовый рюкзак с обычным рецептом</td></tr>
+  <tr><td>Большой рюкзак</td><td>21</td><td>Улучшается предметом <span class="wiki-item" data-id="big_backpack_upgrade">Big Backpack Upgrade</span></td></tr>
+  <tr style="background:rgba(180,120,255,0.12)"><td><strong>Из Древнего металла</strong></td><td><strong>78</strong></td><td><span class="wiki-item" data-id="ancient_metal_backpack_upgrade">Ancient Metal Backpack Upgrade</span> + котёл с ртутью + книга знаний</td></tr>
+  <tr><td>Медный / Серебряный / Железный / Золотой / Твердокаменный</td><td>21 / 21 / 36 / 44 / 55</td><td>Старые типы рюкзаков всё ещё названы в файлах, но локального списка рецептов v0.9.0 для них не найдено</td></tr>
+  <tr><td>Мифриловый / Адамантиевый</td><td>90 / 102</td><td>Есть в файлах по названиям, но рецепт или предмет улучшения для v0.9.0 не найден</td></tr>
 </table>
-<div class="tip-card">🎒 <strong>Улучшение рюкзака до Древнего металла (78 ячеек):</strong> Инструмент улучшения большого рюкзака + 4× Слиток Древнего металла → помести в котёл с ртутью с источником лавы снизу, подожди ~30 секунд.</div>
+<div class="tip-card">🎒 <strong>Надёжный путь в v0.9.0:</strong> Кожаный рюкзак → Big Backpack Upgrade → Ancient Metal Backpack Upgrade. Последний этап требует большой апгрейд рюкзака, 4× слитка Древнего металла и полного котла с ртутью с источником магмы/лавы снизу примерно на 30 секунд.</div>
 
 <h2 id="temperature-ru">🌡️ Температура тела</h2>
 <p>Оптимальная температура — 36–37°C. Огонь, лава и Незер повышают её; вода, дождь и лёд снижают.</p>
@@ -223,7 +214,7 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 
 <h2 id="knowledge-books-ru">📚 Книги знаний</h2>
 <p>Книга знаний — особый предмет, открывающий продвинутые рецепты. Если рецепт заблокирован Книгой знаний, скрафтить его <strong>не получится</strong>, даже если все материалы есть!</p>
-<div class="warning-box">🔒 <strong>Жёсткое ограничение!</strong> Книги знаний находятся в сундуках <strong>Аванпостов мародёров</strong> — нет гарантии, что один из них окажется рядом.</div>
+<div class="warning-box">🔒 <strong>Жёсткое ограничение!</strong> По китайским описаниям предметов для v0.9.0 основной надёжный источник Книг знаний — <strong>сундуки подземных данжей</strong>.</div>
 
 <h3>Список книг знаний</h3>
 <table>
@@ -236,11 +227,11 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <tr><td>Книга знаний: Улучшенное око Эндера</td><td>Улучшенное око Эндера</td><td>9× Глаз Края → Улучшенное Oko Эндера</td></tr>
   <tr><td>Книга знаний: Высокое зачарование</td><td>Продвинутый стол зачарований</td><td>Для более сильных зачарований</td></tr>
   <tr><td>Книга знаний: Телепорт-камень</td><td>Телепорт-камень</td><td>Точка телепортации; верстак из твёрдого камня: жемчуг края + блок красного камня + каменный кирпич</td></tr>
-  <tr><td>Книга знаний: Свиток</td><td>Телепорт-свиток</td><td>Одноразовая телепортация к привязанному камню</td></tr>
+  <tr><td>Книга знаний: Свиток</td><td>Телепорт-свиток</td><td>В локальных рецептах выглядит как legacy/удалённая ссылка на телепорт-свиток</td></tr>
   <tr><td>Книга знаний: Часы</td><td>Часы</td><td>8× золотой самородок + красный камень; показывает время суток</td></tr>
   <tr><td>Книга знаний: Охлаждающая жидкость</td><td>Охлаждающая жидкость</td><td>Оловянные пластины + лёд; снижает температуру тела</td></tr>
   <tr><td>Книга знаний: ТНТ</td><td>Гигантский ТНТ</td><td>Радиус взрыва больше обычного ТНТ</td></tr>
-  <tr><td>Книга знаний: Якорь возрождения</td><td>Якорь возрождения</td><td>Верстак из твёрдого камня: синий компас</td></tr>
+  <tr><td>Книга знаний: Маркер мира</td><td>Маркер мира</td><td>Задаёт мировую точку возрождения; локальный рецепт использует обсидиан и синий компас</td></tr>
   <tr><td>Книга знаний: Контейнер</td><td>Контейнер из Древнего металла</td><td>Продвинутый предмет для хранения</td></tr>
 </table>
 <div class="tip-card">💡 Лишние Книги знаний можно превратить в обычные книги на верстаке — в обмен ты получишь очки опыта!</div>

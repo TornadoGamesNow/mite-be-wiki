@@ -26,21 +26,21 @@ const sidebarGroups = getSidebarGroups('reference');
 
 <h3>Underground Szörnyek</h3>
 <div id="mob-table-underground"></div>
-<div class="info-box">⛏️ <strong>Föld Elementális:</strong> 5 változat (föld, kő, homok, kavics, agyag). Csak csákánnyal sebezhetők — kard alig hat! A csákány anyagának legalább olyan erősnek kell lennie.</div>
+<div class="info-box">⛏️ <strong>Föld Elementális:</strong> A helyi mob-adat szerint találatkor bénít, és csak robbanás, villám, esés vagy megfelelő erősségű csákány sebzi megbízhatóan.</div>
 
 <h3>Nether Szörnyek</h3>
 <div id="mob-table-nether"></div>
-<div class="warning-box">🔥 <strong>Tűz Elementális:</strong> Ha <strong>éppen égsz</strong> amikor megtámad, <strong>3% esélye azonnal megöl!</strong> Tűzálló bájital kötelező. Hatásos: varázstárgyak, víz, hógolyók, Sértés bájital. NEM hat: tűz, ezüst fegyver.</div>
+<div class="warning-box">🔥 <strong>Tűz Elementális:</strong> A helyi mob-adat szerint találatkor meggyújt, lávában regenerálódik, és <strong>Hardcore módban 1-3% eséllyel</strong> azonnal megölhet, ha a játékos már ég. A tűzállóság erősen ajánlott.</div>
 
 <h3>Főellenfél: HIM</h3>
 <table class="compare-table">
   <tr><th>Tulajdonság</th><th>Érték</th></tr>
   <tr><td>Életerő (HP)</td><td><strong>400</strong></td></tr>
-  <tr><td>Sebzés</td><td>Változó — rendkívül magas</td></tr>
-  <tr><td>Immunis</td><td>Szinte mindenre — speciális mechanika szükséges</td></tr>
-  <tr><td>XP</td><td>Hatalmas mennyiség</td></tr>
+  <tr><td>Sebzés</td><td>2 alap közelharci sebzés + instant-kill mechanika</td></tr>
+  <tr><td>Immunis</td><td>A helyi mob-adat szerint minden sebzésre immunis</td></tr>
+  <tr><td>XP</td><td>5</td></tr>
 </table>
-<div class="warning-box">💀 <strong>HIM:</strong> A játék végső ellensége. 400 Életerő (HP), szinte mindenre immunis. Speciális mechanikával győzhető le — a közönséges fegyverek és bájitalok hatástalanok. Teljes Adamantium felszerelés és speciális stratégia szükséges!</div>
+<div class="warning-box">💀 <strong>HIM:</strong> A helyi <code>mobs.json</code> 400 HP-t, teljes sebzésimmunitást, valamint <code>instant_kill</code>, <code>wall_detection</code> és <code>requires_ancient_metal</code> tageket jelez. Ezt a bossfightot itt csak lokális adat alapján, óvatosan dokumentáljuk.</div>
 
 <h3>Speciális Lények</h3>
 <p>Zombiváltozat, Creeperváltozat, Pókváltozat, Csontvázváltozat — erősebb verziók a szokásos szörnyekből.</p>
@@ -87,7 +87,7 @@ const sidebarGroups = getSidebarGroups('reference');
   <tr><th>Recept</th><th>Folyamat</th><th>Eredmény</th></tr>
   <tr><td><strong>Folyékony Arany</strong></td><td>Üst lávaforrás alá + Arany érc beledobás → 10 mp várakozás</td><td>Folyékony arany — 4 Aranyalma készíthető belőle (4 alma/üst)</td></tr>
   <tr><td><strong>Folyékony Higany</strong></td><td>Higany érc + Láva az üstben → olvasztás</td><td>Folyékony higany (vödörrel szedhető)</td></tr>
-  <tr><td><strong>Ősi Fém Hátizsák</strong></td><td>Bőr hátizsák + 4 Ősi fémrúd higanyba → 30 mp várakozás</td><td>Ősi Fém hátizsák (több slot, tartósabb)</td></tr>
+  <tr><td><strong>Ősi Fém Hátizsák Fejlesztő</strong></td><td>Nagy hátizsák-fejlesztő + 4 Ősi fémrúd higanyba → ~30 mp várakozás</td><td>Ősi Fém hátizsák-fejlesztő tárgy, amely a hátizsákot fejleszti tovább</td></tr>
 </table>
 
 <h4>Varázstalanító Palack (Disenchanting Bottle)</h4>
@@ -215,8 +215,8 @@ const sidebarGroups = getSidebarGroups('reference');
     <p>De most már rendkívüli vagy. A kardod könnyedén áthatol a keményebb bőrön is. A szörnyek azonban erősebbek lettek.</p>
   </div>
   <div class="timeline-item">
-    <h4>🔵 128. nap — 3. Vérhold (Evolúció III) + Kék Hold</h4>
-    <p>Nem csak rossz holdak vannak! Felkelt a kék hold, a termés virágzik — ez jó jel. De a vérhold szörnyei ismét erősödtek.</p>
+    <h4>🔴 128. nap — 3. Vérhold (Evolúció III)</h4>
+    <p>A harmadik vérholdtól kezdve a zombik újabb fejlődési küszöböt lépnek át. A Kék Hold ettől külön esemény: a játékmód-oldal jelenlegi 0.9.0 összefoglalója szerint 50 napos ciklushoz kötött.</p>
   </div>
   <div class="timeline-item">
     <h4>🔴 160. nap — 4. Vérhold (Evolúció IV)</h4>
@@ -281,7 +281,7 @@ const sidebarGroups = getSidebarGroups('reference');
 <div class="ach"><span class="ach-name">Halhatatlan legenda</span> <span class="ach-cond">(Alvilági csillag)</span><div class="ach-desc">Az Alapkőzet-zúzóhoz kell!</div></div>
 <div class="ach"><span class="ach-name">A föld megremeg?!</span> <span class="ach-cond">(Alapkőzet-zúzó)</span><div class="ach-desc">Alapkő-magra, Erősített Ender-szemmel aktiválás</div></div>
 <div class="ach"><span class="ach-name">A Vég Birodalma</span> <span class="ach-cond">(End belépés)</span><div class="ach-desc">Az alapkő-mag elpusztításakor nyílik</div></div>
-<div class="ach"><span class="ach-name">Végső csata</span> <span class="ach-cond">(Ender-sárkány)</span><div class="ach-desc">Adamantium-nyíllal pusztítsd a kristályokat, győzd le a sárkányt!</div></div>
+<div class="ach"><span class="ach-name">Végső csata</span> <span class="ach-cond">(Ender-sárkány)</span><div class="ach-desc">Adamantium-nyíllal vagy adamantium eszközzel törd a kristályokat, majd győzd le a sárkányt!</div></div>
 <div class="ach"><span class="ach-name">Vége van mindennek?</span> <span class="ach-cond">(Hazaút az Endből)</span><div class="ach-desc">Tényleg vége van?</div></div>
 
 <h3>Időalapú teljesítmények</h3>
@@ -295,7 +295,6 @@ const sidebarGroups = getSidebarGroups('reference');
   <tr><td>80.</td><td>Ráéreztem a ritmusra</td><td>Obszidiánban téreltoló mágia</td></tr>
   <tr><td>96.</td><td>Már nem vetélytársam</td><td>A vérhold semmi</td></tr>
   <tr><td>100.</td><td>100 nap</td><td>Ki vagyok? Miért kerültem ide?</td></tr>
-  <tr><td>128.</td><td>Kék hold</td><td>A termés virágzik — jó jel!</td></tr>
   <tr><td>200.</td><td>200 nap!</td><td>Elégedettség, gazdagodás</td></tr>
   <tr><td>300.</td><td>300 nap</td><td>Luxusra fordíthatod az erőforrásokat</td></tr>
   <tr><td>400.</td><td>Túl egyszerű az élet</td><td>Bányász, gazda, harcos — élvezed az életet</td></tr>
@@ -343,21 +342,21 @@ const sidebarGroups = getSidebarGroups('reference');
 
 <h3>Underground Mobs</h3>
 <div id="mob-table-underground"></div>
-<div class="info-box">⛏️ <strong>Earth Elementals:</strong> 5 variants (dirt, stone, sand, gravel, clay). Only damaged by pickaxe — swords barely work! Pickaxe material must be at least as strong as the elemental's type.</div>
+<div class="info-box">⛏️ <strong>Earth Elementals:</strong> The local mob data says they stun on hit and are reliably damaged only by explosions, lightning, fall damage, or an equivalent-tier pickaxe.</div>
 
 <h3>Nether Mobs</h3>
 <div id="mob-table-nether"></div>
-<div class="warning-box">🔥 <strong>Fire Elemental:</strong> If you are <strong>on fire</strong> when attacked, it has a <strong>3% chance to instantly kill</strong> you! Fire Resistance potion mandatory. Effective: enchanted items, water, snowballs, Harming potions. NOT effective: fire, silver weapons.</div>
+<div class="warning-box">🔥 <strong>Fire Elemental:</strong> The local mob data says it sets the player on fire on hit, regenerates in lava, and in <strong>Hardcore</strong> has a <strong>1-3% instant-kill chance</strong> against an already-burning player. Fire Resistance is strongly recommended.</div>
 
 <h3>Ultimate Boss: HIM</h3>
 <table class="compare-table">
   <tr><th>Stat</th><th>Value</th></tr>
   <tr><td>Health (HP)</td><td><strong>400</strong></td></tr>
-  <tr><td>Damage</td><td>Variable — extremely high</td></tr>
-  <tr><td>Immunities</td><td>Immune to nearly everything — special mechanics required</td></tr>
-  <tr><td>XP</td><td>Massive amount</td></tr>
+  <tr><td>Damage</td><td>2 base melee damage + instant-kill mechanics</td></tr>
+  <tr><td>Immunities</td><td>The local mob data marks it immune to all damage</td></tr>
+  <tr><td>XP</td><td>5</td></tr>
 </table>
-<div class="warning-box">💀 <strong>HIM:</strong> The game's ultimate enemy. 400 Health (HP), immune to nearly everything. Requires special mechanics to defeat — normal weapons and potions are useless. Full Adamantium gear and a specific strategy are essential!</div>
+<div class="warning-box">💀 <strong>HIM:</strong> The local <code>mobs.json</code> lists 400 HP, full damage immunity, and the tags <code>instant_kill</code>, <code>wall_detection</code>, and <code>requires_ancient_metal</code>. This fight is documented cautiously here from local data only.</div>
 
 <h3>Special Mobs</h3>
 <p>Variant Zombie, Variant Creeper, Variant Spider, Variant Skeleton — stronger versions of common mobs.</p>
@@ -404,7 +403,7 @@ const sidebarGroups = getSidebarGroups('reference');
   <tr><th>Recipe</th><th>Process</th><th>Result</th></tr>
   <tr><td><strong>Liquid Gold</strong></td><td>Cauldron under lava source + drop Gold ore → wait 10 sec</td><td>Liquid gold — make 4 Golden Apples (4 apples/cauldron)</td></tr>
   <tr><td><strong>Liquid Mercury</strong></td><td>Mercury ore + Lava in cauldron → smelting</td><td>Liquid mercury (collect with bucket)</td></tr>
-  <tr><td><strong>Ancient Metal Backpack</strong></td><td>Leather backpack + 4 Ancient Metal ingots in mercury → wait 30 sec</td><td>Ancient Metal backpack (more slots, more durable)</td></tr>
+  <tr><td><strong>Ancient Metal Backpack Upgrade</strong></td><td>Big Backpack Upgrade + 4 Ancient Metal Ingots in mercury → wait ~30 sec</td><td>Upgrade item used to further improve the backpack</td></tr>
 </table>
 
 <h4>Disenchanting Bottle</h4>
@@ -532,8 +531,8 @@ const sidebarGroups = getSidebarGroups('reference');
     <p>But now you're extraordinary. Your sword cuts through the toughest hide with ease. The monsters, however, have grown stronger.</p>
   </div>
   <div class="timeline-item">
-    <h4>🔵 Day 128 — 3rd Blood Moon (Evolution III) + Blue Moon</h4>
-    <p>Not all moons are bad! The blue moon rises, crops flourish — a good omen. But the blood moon monsters have grown stronger still.</p>
+    <h4>🔴 Day 128 — 3rd Blood Moon (Evolution III)</h4>
+    <p>From the third Blood Moon onward, zombies step into another evolution tier. The Blue Moon is a separate event; the current v0.9.0 summary on the game-modes page ties it to a 50-day cycle instead.</p>
   </div>
   <div class="timeline-item">
     <h4>🔴 Day 160 — 4th Blood Moon (Evolution IV)</h4>
@@ -598,7 +597,7 @@ const sidebarGroups = getSidebarGroups('reference');
 <div class="ach"><span class="ach-name">Immortal Legend</span> <span class="ach-cond">(Nether Star)</span><div class="ach-desc">Required for the Bedrock Crusher!</div></div>
 <div class="ach"><span class="ach-name">The Earth Trembles?!</span> <span class="ach-cond">(Bedrock Crusher)</span><div class="ach-desc">Place on bedrock core, activate with Reinforced Eye of Ender</div></div>
 <div class="ach"><span class="ach-name">The Realm of the End</span> <span class="ach-cond">(Enter the End)</span><div class="ach-desc">Opens when the bedrock core is destroyed</div></div>
-<div class="ach"><span class="ach-name">The Final Battle</span> <span class="ach-cond">(Ender Dragon)</span><div class="ach-desc">Destroy crystals with adamantium arrows, defeat the dragon!</div></div>
+<div class="ach"><span class="ach-name">The Final Battle</span> <span class="ach-cond">(Ender Dragon)</span><div class="ach-desc">Break crystals with adamantium arrows or adamantium tools, then defeat the dragon!</div></div>
 <div class="ach"><span class="ach-name">Is It All Over?</span> <span class="ach-cond">(Return from the End)</span><div class="ach-desc">Is it really over?</div></div>
 
 <h3>Time-Based Achievements</h3>
@@ -612,7 +611,6 @@ const sidebarGroups = getSidebarGroups('reference');
   <tr><td>80</td><td>Found My Rhythm</td><td>Space-warping magic in Obsidian</td></tr>
   <tr><td>96</td><td>No Longer My Rival</td><td>Blood moon is nothing</td></tr>
   <tr><td>100</td><td>100 Days</td><td>Who am I? Why was I brought here?</td></tr>
-  <tr><td>128</td><td>Blue Moon</td><td>Crops flourish — a good omen!</td></tr>
   <tr><td>200</td><td>200 Days!</td><td>Satisfaction, growing wealth</td></tr>
   <tr><td>300</td><td>300 Days</td><td>Resources spent on luxury now</td></tr>
   <tr><td>400</td><td>Life Is This Simple</td><td>Miner, farmer, warrior — enjoy life</td></tr>
@@ -721,7 +719,7 @@ const sidebarGroups = getSidebarGroups('reference');
 
 <ul>
   <li>A Pillager-erőd a játék egyik leggazdagabb jutalom-helyszíne</li>
-  <li><strong>Knowledge Book:</strong> Jutalomládából ejthető — új recepteket nyit meg, majd Könyv tárggyá alakul (XP forrásaként)</li>
+  <li><strong>Knowledge Book:</strong> Biztosan igazoltan a föld alatti dungeon kincsesládáiból szerezhető — új recepteket nyit meg, majd Könyv tárggyá alakítható XP-ért</li>
   <li><strong>Zombihívó (Zombie Caller):</strong> Erős mini-boss, zombi rajt idéz</li>
   <li><strong>Pillager Kapitány:</strong> Speciális vezér, különleges dropok</li>
   <li>Ajánlott: Mithril vagy jobb felszerelés a teljes erőd átkutatásához</li>
@@ -740,7 +738,7 @@ const sidebarGroups = getSidebarGroups('reference');
 <div class="tip">💡 <strong>Mire érdemes vadászni?</strong>
 <ul style="margin-top:8px">
   <li><strong>Korai játék:</strong> Faluközpont → Partner NPC-k → alapanyag kereskedelem</li>
-  <li><strong>Közép játék:</strong> Pillager-erőd → Knowledge Book + Pillager drops</li>
+  <li><strong>Közép játék:</strong> föld alatti dungeon-ök → Knowledge Book + ritka loot</li>
   <li><strong>Nether:</strong> Nether Erőd → Hervadt Rózsa (Wither idézéshez kötelező)</li>
   <li><strong>Késői játék:</strong> Föld Alatti → Csontváz Ura drops + Adamantiumérc</li>
   <li><strong>End:</strong> Magromboló → Enhanced Ender Eye → Dragon legyőzése</li>
@@ -816,7 +814,7 @@ const sidebarGroups = getSidebarGroups('reference');
 
 <ul>
   <li>The Pillager Fortress is one of the richest loot locations in the game</li>
-  <li><strong>Knowledge Book:</strong> Can be found in loot chests — unlocks new recipes, then transforms into a Book (XP source)</li>
+  <li><strong>Knowledge Book:</strong> Reliably confirmed from underground dungeon treasure chests — unlocks new recipes, then can be turned into a Book for XP</li>
   <li><strong>Zombie Caller:</strong> Strong mini-boss that summons zombie hordes</li>
   <li><strong>Pillager Captain:</strong> Special leader with unique drops</li>
   <li>Recommended: Mithril or better gear to clear the entire fortress</li>
@@ -835,7 +833,7 @@ const sidebarGroups = getSidebarGroups('reference');
 <div class="tip">💡 <strong>What's worth hunting?</strong>
 <ul style="margin-top:8px">
   <li><strong>Early game:</strong> Village → Partner NPCs → material trading</li>
-  <li><strong>Mid game:</strong> Pillager Fortress → Knowledge Book + Pillager drops</li>
+  <li><strong>Mid game:</strong> underground dungeons → Knowledge Books + rare loot</li>
   <li><strong>Nether:</strong> Nether Fortress → Wither Rose (required for Wither summon)</li>
   <li><strong>Late game:</strong> Underground → Skeleton Lord drops + Adamantium ore</li>
   <li><strong>End game:</strong> Bedrock Crusher → Enhanced Ender Eye → defeat Dragon</li>
@@ -852,21 +850,21 @@ const sidebarGroups = getSidebarGroups('reference');
 
 <h3>Подземные мобы</h3>
 <div id="mob-table-underground"></div>
-<div class="info-box">⛏️ <strong>Земляные элементали:</strong> 5 вариантов (земля, камень, песок, гравий, глина). Повреждаются только киркой — мечи почти бесполезны! Материал кирки должен быть не слабее типа элементаля.</div>
+<div class="info-box">⛏️ <strong>Земляные элементали:</strong> По локальным данным мобов они оглушают при ударе и надёжно получают урон только от взрывов, молнии, падения или кирки подходящего уровня.</div>
 
 <h3>Мобы Незера</h3>
 <div id="mob-table-nether"></div>
-<div class="warning-box">🔥 <strong>Огненный элементаль:</strong> Если вы <strong>горите</strong> в момент атаки, есть <strong>3% шанс мгновенной смерти!</strong> Зелье огнестойкости обязательно. Эффективно: зачарованные предметы, вода, снежки, зелья Вреда. НЕ эффективно: огонь, серебряное оружие.</div>
+<div class="warning-box">🔥 <strong>Огненный элементаль:</strong> По локальным данным мобов он поджигает при ударе, регенерирует в лаве и в режиме <strong>Hardcore</strong> имеет <strong>1-3% шанс мгновенно убить</strong> уже горящего игрока. Огнестойкость настоятельно рекомендуется.</div>
 
 <h3>Финальный босс: HIM</h3>
 <table class="compare-table">
   <tr><th>Характеристика</th><th>Значение</th></tr>
   <tr><td>Здоровье (HP)</td><td><strong>400</strong></td></tr>
-  <tr><td>Урон</td><td>Переменный — крайне высокий</td></tr>
-  <tr><td>Иммунитеты</td><td>Почти ко всему — требуются особые механики</td></tr>
-  <tr><td>XP</td><td>Огромное количество</td></tr>
+  <tr><td>Урон</td><td>2 базового урона в ближнем бою + instant-kill механики</td></tr>
+  <tr><td>Иммунитеты</td><td>По локальным данным мобов полностью иммунен ко всему урону</td></tr>
+  <tr><td>XP</td><td>5</td></tr>
 </table>
-<div class="warning-box">💀 <strong>HIM:</strong> Финальный враг игры. У него 400 HP, и он почти ко всему иммунен. Для победы нужны особые механики: обычное оружие и зелья здесь бесполезны. Понадобятся полное снаряжение из адаманта и особая стратегия.</div>
+<div class="warning-box">💀 <strong>HIM:</strong> Локальный <code>mobs.json</code> показывает 400 HP, полный иммунитет ко всему урону и теги <code>instant_kill</code>, <code>wall_detection</code> и <code>requires_ancient_metal</code>. Поэтому этот бой здесь описан осторожно и только по локальным данным.</div>
 
 <h3>Особые существа</h3>
 <p>Варианты Зомби, Крипера, Паука и Скелета — это усиленные версии обычных мобов.</p>
@@ -913,7 +911,7 @@ const sidebarGroups = getSidebarGroups('reference');
   <tr><th>Рецепт</th><th>Процесс</th><th>Результат</th></tr>
   <tr><td><strong>Жидкое золото</strong></td><td>Поставьте котёл под источник лавы, бросьте золотую руду и подождите 10 секунд.</td><td>Жидкое золото, из которого можно сделать 4 золотых яблока</td></tr>
   <tr><td><strong>Жидкая ртуть</strong></td><td>Руда ртути + лава в котле → дождитесь переплавки</td><td>Жидкая ртуть (можно набрать ведром)</td></tr>
-  <tr><td><strong>Рюкзак из Древнего металла</strong></td><td>Погрузите кожаный рюкзак и 4 слитка Древнего металла в ртуть и подождите 30 секунд.</td><td>Рюкзак из Древнего металла: больше ячеек и выше прочность</td></tr>
+  <tr><td><strong>Улучшение рюкзака из Древнего металла</strong></td><td>Погрузите большое улучшение рюкзака и 4 слитка Древнего металла в ртуть и подождите около 30 секунд.</td><td>Предмет улучшения для дальнейшего апгрейда рюкзака</td></tr>
 </table>
 
 <h4>Флакон расчарования</h4>
@@ -1040,8 +1038,8 @@ const sidebarGroups = getSidebarGroups('reference');
     <p>К этому моменту вы уже закалены. Ваш меч легко пробивает даже самую прочную шкуру, но и монстры стали заметно опаснее.</p>
   </div>
   <div class="timeline-item">
-    <h4>🔵 День 128 — 3-я Кровавая луна (Эволюция III) + Синяя луна</h4>
-    <p>Не каждая луна несёт беду: синяя луна ускоряет рост урожая и считается добрым знаком. Но монстры Кровавой луны к этому времени тоже становятся сильнее.</p>
+    <h4>🔴 День 128 — 3-я Кровавая луна (Эволюция III)</h4>
+    <p>Начиная с третьей Кровавой луны зомби переходят на новый порог эволюции. Синяя луна — отдельное событие; в текущем сводном описании v0.9.0 на странице режимов она привязана к 50-дневному циклу.</p>
   </div>
   <div class="timeline-item">
     <h4>🔴 День 160 — 4-я Кровавая луна (Эволюция IV)</h4>
@@ -1106,7 +1104,7 @@ const sidebarGroups = getSidebarGroups('reference');
 <div class="ach"><span class="ach-name">Бессмертная легенда</span> <span class="ach-cond">(Звезда Незера)</span><div class="ach-desc">Нужна для Дробилки коренной породы!</div></div>
 <div class="ach"><span class="ach-name">Земля содрогается?!</span> <span class="ach-cond">(Дробилка коренной породы)</span><div class="ach-desc">Поместить на ядро коренной породы, активировать Усиленным Оком Края</div></div>
 <div class="ach"><span class="ach-name">Царство Края</span> <span class="ach-cond">(Войти в Край)</span><div class="ach-desc">Открывается при уничтожении ядра коренной породы</div></div>
-<div class="ach"><span class="ach-name">Финальная битва</span> <span class="ach-cond">(Дракон Края)</span><div class="ach-desc">Разрушьте кристаллы адамантовыми стрелами, победите дракона!</div></div>
+<div class="ach"><span class="ach-name">Финальная битва</span> <span class="ach-cond">(Дракон Края)</span><div class="ach-desc">Ломайте кристаллы адамантовыми стрелами или адамантовыми инструментами, затем победите дракона!</div></div>
 <div class="ach"><span class="ach-name">Всё ли закончилось?</span> <span class="ach-cond">(Возвращение из Края)</span><div class="ach-desc">Действительно ли всё кончено?</div></div>
 
 <h3>Достижения на основе времени</h3>
@@ -1120,7 +1118,6 @@ const sidebarGroups = getSidebarGroups('reference');
   <tr><td>80</td><td>Нашёл свой ритм</td><td>Искривляющая пространство магия в обсидиане</td></tr>
   <tr><td>96</td><td>Больше не соперник</td><td>Кровавая луна — ничто</td></tr>
   <tr><td>100</td><td>100 дней</td><td>Кто я? Почему я здесь оказался?</td></tr>
-  <tr><td>128</td><td>Синяя луна</td><td>Урожай процветает — добрый знак!</td></tr>
   <tr><td>200</td><td>200 дней!</td><td>Удовлетворение, растущее богатство</td></tr>
   <tr><td>300</td><td>300 дней</td><td>Теперь ресурсы тратятся на роскошь</td></tr>
   <tr><td>400</td><td>Жизнь так проста</td><td>Шахтёр, фермер, воин — наслаждайтесь жизнью</td></tr>
@@ -1255,21 +1252,6 @@ const sidebarGroups = getSidebarGroups('reference');
 </ul></div>
 </div>
 
-<div data-lang="hu" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
-  <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Teljes Magyar Wiki ⚔️</p>
-  <p>A wiki a játékfájlok (MITE.lang, hu_HU.lang, class fájlok) alapján készült.</p>
-  <p style="font-size:.85em;margin-top:8px;opacity:.7;">Ez egy nem hivatalos, közösségi wiki. A MITE:BE és minden kapcsolódó játékeszköz, textúra és védjegy az eredeti alkotóik tulajdona.</p>
-</div>
-<div data-lang="en" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
-  <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Complete Wiki ⚔️</p>
-  <p>Built from game files (MITE.lang, hu_HU.lang, class files).</p>
-  <p style="font-size:.85em;margin-top:8px;opacity:.7;">This is an unofficial, community-driven wiki. MITE:BE and all related game assets, textures, and trademarks belong to their respective original creators.</p>
-</div>
-<div data-lang="ru" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
-  <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Полное руководство ⚔️</p>
-  <p>Создана на основе игровых файлов (MITE.lang, hu_HU.lang, class-файлов).</p>
-  <p style="font-size:.85em;margin-top:8px;opacity:.7;">Это неофициальная вики, созданная сообществом. MITE:BE и все связанные игровые ресурсы, текстуры и торговые марки принадлежат их соответствующим авторам.</p>
-</div>
 
     </main>
   </div>

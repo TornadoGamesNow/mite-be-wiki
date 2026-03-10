@@ -161,6 +161,13 @@ if (typeof document !== 'undefined' && !document.getElementById(ARROW_ANIM_ID)) 
     }
     .picker-item-selected { animation: selectedGlow 1.6s ease-in-out infinite; }
 
+    /* Result empty state pulse */
+    @keyframes resultWaiting {
+      0%, 100% { border-color: rgba(78,204,163,.2); }
+      50%       { border-color: rgba(78,204,163,.45); }
+    }
+    .result-waiting { animation: resultWaiting 2.5s ease-in-out infinite; }
+
     /* Result match pop-in */
     @keyframes resultPop {
       0%   { opacity: 0; transform: scale(.88) translateY(6px); }
@@ -1189,43 +1196,42 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
 
   return (
     <div>
-      {/* #1: 3-step hint */}
+      {/* Kompakt hint sáv */}
       <div style={{
-        display: 'flex', gap: 0, marginBottom: 20, background: 'var(--surface)',
-        border: '1px solid var(--surface2)', borderRadius: 8, overflow: 'hidden',
+        display: 'flex', alignItems: 'center', gap: 6, marginBottom: 16,
+        fontSize: '.8em', color: 'var(--text2)',
       }}>
         {[
-          { icon: '📦', step: lang === 'hu' ? 'Válassz tárgyat' : lang === 'ru' ? 'Выбери предмет' : 'Pick an item', sub: lang === 'hu' ? 'a listából jobbra' : lang === 'ru' ? 'из списка справа' : 'from the list' },
-          { icon: '🧩', step: lang === 'hu' ? 'Kattints a cellára' : lang === 'ru' ? 'Нажми на ячейку' : 'Click a cell', sub: lang === 'hu' ? 'a 3×3 rácsban' : lang === 'ru' ? 'в сетке 3×3' : 'in the 3×3 grid' },
-          { icon: '➜', step: lang === 'hu' ? 'Nézd az eredményt' : lang === 'ru' ? 'Смотри результат' : 'See the result', sub: lang === 'hu' ? 'jobbra' : lang === 'ru' ? 'справа' : 'on the right' },
-        ].map((h, i) => (
-          <div key={i} style={{
-            flex: 1, padding: '10px 14px', display: 'flex', alignItems: 'center', gap: 10,
-            borderLeft: i > 0 ? '1px solid var(--surface2)' : 'none',
-          }}>
-            <span style={{ fontSize: '1.3em', flexShrink: 0 }}>{h.icon}</span>
-            <div>
-              <div style={{ fontSize: '.82em', fontWeight: 600, color: 'var(--text)' }}>{h.step}</div>
-              <div style={{ fontSize: '.72em', color: 'var(--text2)' }}>{h.sub}</div>
-            </div>
-          </div>
+          lang === 'hu' ? '① Válassz tárgyat' : lang === 'ru' ? '① Выбери предмет' : '① Pick an item',
+          lang === 'hu' ? '② Kattints cellára' : lang === 'ru' ? '② Нажми на ячейку' : '② Click a grid cell',
+          lang === 'hu' ? '③ Nézd az eredményt' : lang === 'ru' ? '③ Смотри результат' : '③ See the result',
+        ].map((step, i) => (
+          <span key={i} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+            {i > 0 && <span style={{ opacity: .3 }}>›</span>}
+            <span style={{ padding: '3px 10px', borderRadius: 20, background: 'var(--surface)', border: '1px solid var(--surface2)' }}>
+              {step}
+            </span>
+          </span>
         ))}
       </div>
 
-      {/* #2: 3-column layout */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: 24, alignItems: 'start' }}>
+      {/* 3-column layout: grid | picker | result */}
+      <div style={{ display: 'flex', gap: 20, alignItems: 'start', flexWrap: 'wrap' }}>
 
         {/* ── LEFT: Crafting grid ── */}
         <div>
-          <div style={{ fontSize: '.75em', fontWeight: 600, color: 'var(--text2)', textTransform: 'uppercase', letterSpacing: '.06em', marginBottom: 8 }}>
+          <div style={{ fontSize: '.72em', fontWeight: 600, color: 'var(--text2)', textTransform: 'uppercase', letterSpacing: '.06em', marginBottom: 8 }}>
             {lang === 'hu' ? 'Crafting tábla' : lang === 'ru' ? 'Стол крафта' : 'Crafting table'}
           </div>
           <div style={{
-            background: 'linear-gradient(135deg,#8a601a 0%,#63430d 55%,#7a5212 100%)',
-            padding: 7, borderRadius: 7,
-            boxShadow: 'inset 0 3px 8px rgba(0,0,0,.6), 0 2px 10px rgba(0,0,0,.4)',
-            border: '2px solid #3d2606',
+            background: 'linear-gradient(135deg,#9a6b1c 0%,#6e4910 50%,#8a5c14 100%)',
+            padding: 9, borderRadius: 8,
+            boxShadow: hasItems
+              ? 'inset 0 3px 10px rgba(0,0,0,.65), 0 4px 20px rgba(0,0,0,.5), 0 0 0 3px rgba(240,192,64,.25)'
+              : 'inset 0 3px 10px rgba(0,0,0,.65), 0 4px 16px rgba(0,0,0,.45)',
+            border: `3px solid ${hasItems ? '#8a6824' : '#4d3008'}`,
             display: 'inline-block', width: 'fit-content',
+            transition: 'border-color .3s, box-shadow .3s',
           }}>
             <div className="craft-grid g3x3">
               {sandboxGrid.map((row, ri) =>
@@ -1244,24 +1250,28 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
               )}
             </div>
           </div>
-          <div style={{ marginTop: 10 }}>
-            <button onClick={clearSandbox}
-              style={{ padding: '5px 12px', borderRadius: 5, border: '1px solid var(--surface2)', background: 'var(--surface)', color: 'var(--text)', cursor: 'pointer', fontSize: '.82em' }}>
-              🗑️ {lang === 'hu' ? 'Rács törlése' : lang === 'ru' ? 'Очистить сетку' : 'Clear grid'}
+          <div style={{ marginTop: 8, display: 'flex', flexDirection: 'column', gap: 5 }}>
+            <button onClick={clearSandbox} disabled={!hasItems}
+              style={{ padding: '5px 12px', borderRadius: 6,
+                border: `1px solid ${hasItems ? 'rgba(233,69,96,.45)' : 'var(--surface2)'}`,
+                background: hasItems ? 'rgba(233,69,96,.1)' : 'transparent',
+                color: hasItems ? '#e94560' : 'var(--text2)',
+                cursor: hasItems ? 'pointer' : 'default', fontSize: '.8em',
+                fontFamily: 'inherit', transition: 'all .15s', opacity: hasItems ? 1 : .65 }}>
+              ↩ {lang === 'hu' ? 'Rács ürítése' : lang === 'ru' ? 'Очистить сетку' : 'Reset grid'}
             </button>
-          </div>
-          {/* right-click hint */}
-          <div style={{ marginTop: 8, fontSize: '.7em', color: 'var(--text2)', opacity: .7 }}>
-            {lang === 'hu' ? 'Jobb klikk = cella törlése' : lang === 'ru' ? 'Щелчок правой кнопкой мыши удаляет предмет' : 'Right-click = remove item'}
+            <span style={{ fontSize: '.66em', color: 'var(--text2)', opacity: .5, paddingLeft: 2 }}>
+              {lang === 'hu' ? 'Jobb klikk = cellát töröl' : lang === 'ru' ? 'ПКМ = удалить ячейку' : 'Right-click removes a cell'}
+            </span>
           </div>
         </div>
 
-        {/* ── MIDDLE: Item picker (always visible) ── */}
-        <div>
-          <div style={{ fontSize: '.75em', fontWeight: 600, color: 'var(--text2)', textTransform: 'uppercase', letterSpacing: '.06em', marginBottom: 8 }}>
+        {/* ── MIDDLE: Item picker ── */}
+        <div style={{ flex: '1 1 230px', minWidth: 200 }}>
+          <div style={{ fontSize: '.72em', fontWeight: 600, color: 'var(--text2)', textTransform: 'uppercase', letterSpacing: '.06em', marginBottom: 8 }}>
             {selectedPickerItem
-              ? (lang === 'hu' ? `✔ ${getItemName(selectedPickerItem, lang)} kiválasztva` : lang === 'ru' ? `✔ ${getItemName(selectedPickerItem, lang)} выбран` : `✔ ${getItemName(selectedPickerItem, lang)} selected`)
-              : (lang === 'hu' ? 'Tárgy lista' : lang === 'ru' ? 'Список предметов' : 'Item list')}
+              ? <span style={{ color: 'var(--gold)' }}>✔ {getItemName(selectedPickerItem, lang)}</span>
+              : (lang === 'hu' ? 'Tárgyak' : lang === 'ru' ? 'Предметы' : 'Items')}
           </div>
           <input
             type="text"
@@ -1269,10 +1279,9 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
             placeholder={lang === 'hu' ? 'Keresés…' : lang === 'ru' ? 'Поиск…' : 'Search…'}
             value={pickerQuery}
             onChange={e => setPickerQuery(e.target.value)}
-            style={{ width: '100%', padding: '6px 10px', borderRadius: 6, border: '1px solid var(--surface2)', background: 'var(--bg)', color: 'var(--text)', marginBottom: 8, boxSizing: 'border-box', fontSize: '.85em' }}
+            style={{ width: '100%', padding: '6px 10px', borderRadius: 6, border: '1px solid var(--surface2)', background: 'var(--bg)', color: 'var(--text)', marginBottom: 6, boxSizing: 'border-box', fontSize: '.84em', outline: 'none' }}
           />
-          {/* Item list: [icon] Name rows with "Used in" hover tooltip */}
-          <div className="sandbox-picker" style={{ display: 'flex', flexDirection: 'column', gap: 3, maxHeight: 300, overflowY: 'auto', paddingRight: 3 }}>
+          <div className="sandbox-picker" style={{ display: 'flex', flexDirection: 'column', gap: 2, maxHeight: 260, overflowY: 'auto', paddingRight: 3 }}>
             {pickerItems.map(([id]) => (
               <PickerItem
                 key={id}
@@ -1289,33 +1298,56 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
             ))}
           </div>
           {selectedPickerItem && (
-            <div style={{ marginTop: 8, fontSize: '.78em', color: 'var(--gold)' }}>
-              {lang === 'hu' ? '← Kattints egy cellára az elhelyezéshez' : lang === 'ru' ? '← Нажми на ячейку для размещения' : '← Click a cell to place it'}
+            <div style={{
+              marginTop: 7, padding: '4px 10px', borderRadius: 20,
+              background: 'rgba(240,192,64,.1)', border: '1px solid rgba(240,192,64,.25)',
+              fontSize: '.75em', color: 'var(--gold)', display: 'inline-flex', alignItems: 'center', gap: 5,
+            }}>
+              <span style={{ opacity: .7 }}>←</span>
+              {lang === 'hu' ? 'Kattints a rácsra' : lang === 'ru' ? 'Нажми на ячейку' : 'Click a grid cell'}
             </div>
           )}
         </div>
 
-        {/* ── RIGHT: Result ── */}
-        <div style={{ minWidth: 160 }}>
-          <div style={{ fontSize: '.75em', fontWeight: 600, color: 'var(--text2)', textTransform: 'uppercase', letterSpacing: '.06em', marginBottom: 8 }}>
+        {/* ── RIGHT: Result – DOMINANT ── */}
+        <div style={{ width: 220, flexShrink: 0 }}>
+          <div style={{ fontSize: '.72em', fontWeight: 600,
+            color: allMatches.length > 0 ? 'var(--gold)' : 'var(--text2)',
+            textTransform: 'uppercase', letterSpacing: '.06em', marginBottom: 8,
+            transition: 'color .3s',
+          }}>
             {lang === 'hu' ? 'Eredmény' : lang === 'ru' ? 'Результат' : 'Result'}
+            {allMatches.length > 0 && <span style={{ marginLeft: 6, opacity: .6 }}>({allMatches.length})</span>}
           </div>
           {allMatches.length === 0 ? (
-            <div style={{
-              padding: '16px 14px', background: 'var(--surface)', border: '1px solid var(--surface2)',
-              borderRadius: 8, textAlign: 'center',
+            <div className="result-waiting" style={{
+              padding: '20px 14px',
+              background: 'linear-gradient(160deg, rgba(78,204,163,.04) 0%, var(--surface) 100%)',
+              border: '2px solid rgba(78,204,163,.2)',
+              borderRadius: 10, textAlign: 'center',
+              display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 8,
             }}>
-              <div style={{ fontSize: '2em', marginBottom: 8, opacity: .28 }}>⚒️</div>
-              <div style={{ fontSize: '.82em', color: 'var(--text2)', lineHeight: 1.8 }}>
+              <div style={{ fontSize: '2.8em', opacity: hasItems ? .35 : .18, transition: 'opacity .4s' }}>
+                {hasItems ? '🔍' : '⚒️'}
+              </div>
+              <div style={{ fontSize: '.84em', lineHeight: 1.65 }}>
                 {hasItems ? (
                   <>
-                    <div style={{ fontWeight: 600, color: 'var(--text)' }}>{lang === 'hu' ? 'Nincs egyező recept.' : lang === 'ru' ? 'Рецепт не найден.' : 'No recipe yet.'}</div>
-                    <div>{lang === 'hu' ? 'Adj hozzá még hozzávalókat.' : lang === 'ru' ? 'Добавь больше ингредиентов.' : 'Add more ingredients.'}</div>
+                    <strong style={{ color: 'var(--text)', display: 'block', marginBottom: 3 }}>
+                      {lang === 'hu' ? 'Nincs egyező recept' : lang === 'ru' ? 'Рецепт не найден' : 'No match yet'}
+                    </strong>
+                    <span style={{ color: 'var(--text2)' }}>
+                      {lang === 'hu' ? 'Próbálj más elrendezést' : lang === 'ru' ? 'Попробуй другой порядок' : 'Try a different layout'}
+                    </span>
                   </>
                 ) : (
                   <>
-                    <div style={{ fontWeight: 600, color: 'var(--text)' }}>{lang === 'hu' ? 'Tedd be a hozzávalókat' : lang === 'ru' ? 'Заполни сетку' : 'Fill the grid'}</div>
-                    <div>{lang === 'hu' ? 'a rácsba az eredményért.' : lang === 'ru' ? 'чтобы увидеть результат.' : 'to see results.'}</div>
+                    <strong style={{ color: 'var(--green)', display: 'block', marginBottom: 3, opacity: .7 }}>
+                      {lang === 'hu' ? 'Várom a hozzávalókat…' : lang === 'ru' ? 'Жду ингредиентов…' : 'Waiting for ingredients…'}
+                    </strong>
+                    <span style={{ color: 'var(--text2)', fontSize: '.9em' }}>
+                      {lang === 'hu' ? 'Válassz tárgyat, majd kattints a rácsra' : lang === 'ru' ? 'Выбери предмет и кликни на ячейку' : 'Pick an item, then click a grid cell'}
+                    </span>
                   </>
                 )}
               </div>
@@ -1326,31 +1358,34 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
                 const outId = getOutputId(r.output);
                 return (
                   <div key={`${outId}-${i}`} className="result-match" style={{
-                    background: 'var(--surface)', border: '1px solid var(--surface2)',
-                    borderRadius: 8, padding: '14px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10,
+                    background: 'linear-gradient(145deg, #332a1a, #251e10)',
+                    border: '2px solid rgba(240,192,64,.45)',
+                    boxShadow: '0 0 0 1px rgba(240,192,64,.12), 0 6px 24px rgba(0,0,0,.5)',
+                    borderRadius: 10, padding: '16px 14px',
+                    display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10,
+                    animation: 'resultPop .25s cubic-bezier(.22,.68,0,1.15) both',
                   }}>
-                    {/* big output icon */}
                     <div style={{
-                      width: 64, height: 64, background: '#6b6b3b',
+                      width: 72, height: 72, background: '#6b6b3b',
                       border: '3px solid', borderColor: '#f0c040 #886600 #886600 #f0c040',
                       display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      boxShadow: '0 0 12px rgba(240,192,64,.3)',
                     }}>
-                      <ItemIcon id={outId} size={50} />
+                      <ItemIcon id={outId} size={56} />
                     </div>
                     <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontWeight: 700, fontSize: '.95em' }}>{getItemName(outId, lang)}</div>
-                      <div style={{ fontSize: '.72em', color: 'var(--text2)', marginTop: 3 }}>
-                        {r.shaped ? '📐' : '🔀'} {r.station}
-                        {r.outputQty > 1 && <span style={{ color: 'var(--gold)', marginLeft: 4 }}>×{r.outputQty}</span>}
+                      <div style={{ fontWeight: 700, fontSize: '1em', color: 'var(--text)' }}>{getItemName(outId, lang)}</div>
+                      {r.outputQty > 1 && <div style={{ color: 'var(--gold)', fontWeight: 700, fontSize: '.95em', marginTop: 2 }}>×{r.outputQty}</div>}
+                      <div style={{ fontSize: '.72em', color: 'var(--text2)', marginTop: 4 }}>
+                        {r.shaped ? '📐' : '🔀'} {STATION_LABELS[r.station]?.[lang] ?? r.station}
                       </div>
                     </div>
-                    {/* #5: View recipe button */}
                     <button
                       onClick={() => onViewRecipe(outId)}
                       style={{
-                        width: '100%', padding: '6px 10px', borderRadius: 6, cursor: 'pointer',
-                        border: '1px solid var(--gold)', background: 'rgba(240,192,64,.12)',
-                        color: 'var(--gold)', fontSize: '.8em', fontWeight: 600,
+                        width: '100%', padding: '7px 10px', borderRadius: 6, cursor: 'pointer',
+                        border: '1px solid var(--gold)', background: 'rgba(240,192,64,.15)',
+                        color: 'var(--gold)', fontSize: '.82em', fontWeight: 600, fontFamily: 'inherit',
                       }}
                     >
                       {lang === 'hu' ? '📖 Recept megtekintése' : lang === 'ru' ? '📖 Посмотреть рецепт' : '📖 View recipe'}
@@ -1519,55 +1554,78 @@ export default function RecipesHub() {
 
       {mode === 'browse' && (
         <div style={{ opacity: transitioning ? 0 : 1, transition: 'opacity .18s ease' }}>
-          {/* Filter bar */}
+          {/* Filter bar – egy sor, vizuális hierarchia mérettel + opacity-val */}
           <div style={{
             background: 'var(--surface)', border: '1px solid var(--surface2)',
-            borderRadius: 8, padding: '12px 16px', marginBottom: 12,
+            borderRadius: 8, padding: '11px 14px', marginBottom: 12,
             display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center',
           }}>
-            <div style={{ position: 'relative', flex: 1, minWidth: 200 }}>
+            {/* Search – domináns */}
+            <div style={{ position: 'relative', flex: '1 1 180px', minWidth: 160 }}>
               <input
                 ref={searchRef}
                 type="text"
-                placeholder={lang === 'hu' ? 'Recept vagy tárgy keresése… (Ctrl+K)' : lang === 'ru' ? 'Поиск рецептов или предметов… (Ctrl+K)' : 'Search recipes or items… (Ctrl+K)'}
+                placeholder={lang === 'hu' ? 'Keresés… (Ctrl+K)' : lang === 'ru' ? 'Поиск… (Ctrl+K)' : 'Search… (Ctrl+K)'}
                 value={keyword}
                 onChange={e => setKeyword(e.target.value)}
-                style={{ width: '100%', padding: '6px 10px', borderRadius: 6, border: '1px solid var(--surface2)', background: 'var(--bg)', color: 'var(--text)', boxSizing: 'border-box' }}
+                style={{ width: '100%', padding: '7px 12px', borderRadius: 6,
+                  border: `1px solid ${keyword ? 'var(--green)' : 'var(--surface2)'}`,
+                  background: 'var(--bg)', color: 'var(--text)', boxSizing: 'border-box',
+                  fontSize: '.93em', outline: 'none', transition: 'border-color .2s' }}
               />
             </div>
+
+            {/* Elválasztó */}
+            <div style={{ width: 1, height: 24, background: 'var(--surface2)', flexShrink: 0 }} />
+
+            {/* Közepes kontrollok: station + ingredient */}
             <select value={stationFilter} onChange={e => setStationFilter(e.target.value)}
-              style={{ padding: '6px 10px', borderRadius: 6, border: `1px solid ${stationFilter ? 'var(--gold)' : 'var(--surface2)'}`, background: 'var(--bg)', color: stationFilter ? 'var(--gold)' : 'var(--text)' }}>
-              <option value="">{lang === 'hu' ? '– Összes állomás –' : lang === 'ru' ? '– Все станции –' : '– All stations –'}</option>
+              style={{ padding: '6px 9px', borderRadius: 6, fontSize: '.85em',
+                border: `1px solid ${stationFilter ? 'var(--gold)' : 'var(--surface2)'}`,
+                background: 'var(--bg)', color: stationFilter ? 'var(--gold)' : 'var(--text)' }}>
+              <option value="">{lang === 'hu' ? '– Állomás –' : lang === 'ru' ? '– Станция –' : '– Station –'}</option>
               {allStations.map(s => <option key={s} value={s}>{STATION_LABELS[s]?.[lang] ?? s}</option>)}
             </select>
             <input
               type="text"
-              placeholder={lang === 'hu' ? 'Alapanyag szűrése…' : lang === 'ru' ? 'Фильтр по ингредиенту…' : 'Filter by ingredient…'}
+              placeholder={lang === 'hu' ? 'Alapanyag…' : lang === 'ru' ? 'Ингредиент…' : 'Ingredient…'}
               value={ingredientFilter}
               onChange={e => setIngredientFilter(e.target.value)}
-              style={{ padding: '6px 10px', borderRadius: 6, border: `1px solid ${ingredientFilter ? 'rgba(126,200,227,.6)' : 'var(--surface2)'}`, background: 'var(--bg)', color: ingredientFilter ? 'var(--text)' : 'var(--text)', width: 180 }}
+              style={{ padding: '6px 9px', borderRadius: 6, width: 130, fontSize: '.85em',
+                border: `1px solid ${ingredientFilter ? 'rgba(126,200,227,.6)' : 'var(--surface2)'}`,
+                background: 'var(--bg)', color: 'var(--text)', outline: 'none' }}
             />
+
+            {/* Elválasztó */}
+            <div style={{ width: 1, height: 24, background: 'var(--surface2)', flexShrink: 0, opacity: .6 }} />
+
+            {/* Halk kontrollok: skill + type */}
             <select value={skillFilter} onChange={e => setSkillFilter(e.target.value)}
-              style={{ padding: '6px 10px', borderRadius: 6, border: `1px solid ${skillFilter ? 'var(--gold)' : 'var(--surface2)'}`, background: 'var(--bg)', color: skillFilter ? 'var(--gold)' : 'var(--text)' }}>
-              <option value="">{lang === 'hu' ? '– Összes skill –' : lang === 'ru' ? '– Все навыки –' : '– All skills –'}</option>
+              style={{ padding: '6px 9px', borderRadius: 6, fontSize: '.82em', opacity: skillFilter ? 1 : 0.75,
+                border: `1px solid ${skillFilter ? 'rgba(240,192,64,.5)' : 'var(--surface2)'}`,
+                background: 'var(--bg)', color: skillFilter ? 'var(--gold)' : 'var(--text2)' }}>
+              <option value="">{lang === 'hu' ? '– Skill –' : lang === 'ru' ? '– Навык –' : '– Skill –'}</option>
               {allSkills.map(s => (
-                <option key={s} value={s}>
-                  {(SKILL_LABELS[s]?.[lang] ?? s)}
-                </option>
+                <option key={s} value={s}>{(SKILL_LABELS[s]?.[lang] ?? s)}</option>
               ))}
             </select>
             <select value={typeFilter} onChange={e => setTypeFilter(e.target.value as 'all' | 'shaped' | 'shapeless' | 'removed' | 'current')}
-              style={{ padding: '6px 10px', borderRadius: 6, border: `1px solid ${typeFilter === 'removed' ? '#ff6b6b' : typeFilter === 'current' ? '#6bcb77' : 'var(--surface2)'}`, background: 'var(--bg)', color: typeFilter === 'removed' ? '#ff6b6b' : typeFilter === 'current' ? '#6bcb77' : 'var(--text)' }}>
+              style={{ padding: '6px 9px', borderRadius: 6, fontSize: '.82em', opacity: typeFilter !== 'current' ? 1 : 0.75,
+                border: `1px solid ${typeFilter === 'removed' ? 'rgba(255,107,107,.5)' : typeFilter === 'current' ? 'var(--surface2)' : 'var(--surface2)'}`,
+                background: 'var(--bg)', color: typeFilter === 'removed' ? '#ff6b6b' : typeFilter === 'current' ? 'var(--text2)' : 'var(--text2)' }}>
               <option value="all">{lang === 'hu' ? '– Típus –' : lang === 'ru' ? '– Тип –' : '– Type –'}</option>
               <option value="shaped">{lang === 'hu' ? 'Elrendezett' : lang === 'ru' ? 'С раскладкой' : 'Shaped'}</option>
               <option value="shapeless">{lang === 'hu' ? 'Szabad' : lang === 'ru' ? 'Без раскладки' : 'Shapeless'}</option>
               <option value="current">{lang === 'hu' ? '✅ Aktuális' : lang === 'ru' ? '✅ Текущие' : '✅ Current'}</option>
               <option value="removed">{lang === 'hu' ? '⚠️ Eltávolított' : lang === 'ru' ? '⚠️ Удалённые' : '⚠️ Removed'}</option>
             </select>
+
             {hasFilters && (
               <button onClick={clearFilters}
-                style={{ padding: '6px 12px', borderRadius: 6, border: '1px solid var(--surface2)', background: 'var(--surface2)', color: 'var(--text2)', cursor: 'pointer', fontSize: '.85em', whiteSpace: 'nowrap' }}>
-                ✕ {lang === 'hu' ? 'Szűrők törlése' : lang === 'ru' ? 'Сбросить фильтры' : 'Clear filters'}
+                style={{ padding: '5px 10px', borderRadius: 6, border: '1px solid var(--surface2)',
+                  background: 'transparent', color: 'var(--text2)', cursor: 'pointer',
+                  fontSize: '.8em', whiteSpace: 'nowrap', fontFamily: 'inherit', marginLeft: 'auto' }}>
+                ✕ {lang === 'hu' ? 'Törlés' : lang === 'ru' ? 'Сброс' : 'Clear'}
               </button>
             )}
           </div>
@@ -1580,7 +1638,7 @@ export default function RecipesHub() {
           </div>
 
           {/* Card grid */}
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, alignItems: 'flex-start' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(190px, 1fr))', gap: 16, alignItems: 'flex-start' }}>
             {filteredGroups.map(g => {
               const isSelected = selectedOutputId === g.outputId;
               const displayName = getItemName(g.outputId, lang);
@@ -1591,39 +1649,41 @@ export default function RecipesHub() {
                   className="output-card"
                   title={buildTooltip(g, lang)}
                   style={{
-                    width: 200, minWidth: 200, padding: '8px 10px', cursor: 'pointer',
-                    background: isSelected ? 'linear-gradient(145deg, #4a3a28, #352b20)' : 'linear-gradient(145deg, #3b2f20, #2a2218)',
+                    padding: '10px 10px 8px', cursor: 'pointer',
+                    background: isSelected ? 'linear-gradient(145deg, #4f3e28, #382e1e)' : 'linear-gradient(145deg, #3b2f20, #2a2218)',
                     border: `2px solid ${isSelected ? 'var(--gold)' : '#5a4a3a'}`,
-                    boxShadow: isSelected ? '0 0 0 3px rgba(255,200,0,0.25), 0 4px 16px rgba(0,0,0,.5)' : 'none',
+                    boxShadow: isSelected ? '0 0 0 3px rgba(255,200,0,0.25), 0 6px 20px rgba(0,0,0,.55)' : '0 2px 8px rgba(0,0,0,.3)',
                     borderRadius: 'var(--radius)',
-                    display: 'flex', flexDirection: 'column', gap: 6,
-                    transition: 'border-color .15s, box-shadow .15s, background .15s',
+                    display: 'flex', flexDirection: 'column', gap: 7,
+                    transition: 'border-color .15s, box-shadow .15s, transform .15s',
                   }}
                   onClick={() => setSelectedOutputId(g.outputId === selectedOutputId ? null : g.outputId)}
                   onMouseEnter={e => {
                     if (!isSelected) {
                       const el = e.currentTarget as HTMLDivElement;
-                      el.style.borderColor = 'var(--gold)';
-                      el.style.boxShadow = '0 0 0 2px rgba(255,200,0,0.15), 0 4px 16px rgba(0,0,0,.4)';
+                      el.style.borderColor = 'rgba(240,192,64,.7)';
+                      el.style.boxShadow = '0 0 0 2px rgba(255,200,0,0.15), 0 6px 20px rgba(0,0,0,.5)';
+                      el.style.transform = 'translateY(-2px)';
                     }
                   }}
                   onMouseLeave={e => {
                     if (!isSelected) {
                       const el = e.currentTarget as HTMLDivElement;
                       el.style.borderColor = '#5a4a3a';
-                      el.style.boxShadow = 'none';
+                      el.style.boxShadow = '0 2px 8px rgba(0,0,0,.3)';
+                      el.style.transform = '';
                     }
                   }}
                 >
                   <MiniGrid recipe={g.primaryRecipe} outputId={g.primaryRecipe.output} outputQty={g.primaryRecipe.outputQty} />
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 4 }}>
-                    <span title={displayName} style={{ fontSize: '.72em', lineHeight: 1.2, flex: 1, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
+                    <span title={displayName} style={{ fontSize: '.76em', fontWeight: 500, lineHeight: 1.25, flex: 1, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', color: isSelected ? 'var(--gold)' : '#e8d8b8' }}>
                       {displayName}
                     </span>
                     <div style={{ display: 'flex', gap: 3, flexShrink: 0 }}>
                       {g.hasShapelessVariant && <span className="badge-shapeless">🔀</span>}
                       {g.recipes.length > 1 && (
-                        <span style={{ fontSize: '.65em', padding: '1px 4px', borderRadius: 3, background: 'rgba(255,200,0,.15)', color: 'var(--gold)', border: '1px solid rgba(255,200,0,.3)' }}>
+                        <span style={{ fontSize: '.68em', padding: '1px 5px', borderRadius: 3, background: 'rgba(255,200,0,.15)', color: '#f0c040', border: '1px solid rgba(255,200,0,.3)', fontWeight: 700 }}>
                           ×{g.recipes.length}
                         </span>
                       )}
@@ -1651,9 +1711,14 @@ export default function RecipesHub() {
         />
       )}
 
-      {mode === 'tree' && <CraftingTree />}
+      {mode === 'tree' && (
+        <div style={{ maxWidth: 860, margin: '0 auto' }}>
+          <CraftingTree />
+        </div>
+      )}
 
       {mode === 'sandbox' && (
+        <div style={{ maxWidth: 1000, margin: '0 auto' }}>
         <SandboxPanel
           lang={lang}
           sandboxGrid={sandboxGrid}
@@ -1668,6 +1733,7 @@ export default function RecipesHub() {
           onViewRecipe={(id) => navigateFromSandbox(id)}
           onOpenModal={(id) => setUsedInModalItem(id)}
         />
+        </div>
       )}
 
       {usedInModalItem && (

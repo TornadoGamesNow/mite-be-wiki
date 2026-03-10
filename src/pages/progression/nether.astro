@@ -15,7 +15,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const sidebarGroups = getSidebarGroups('progression/nether');
 ---
-<BaseLayout title="Nether | MITE:BE Wiki" description="MITE:BE Nether: Nether Portal, Fire Resistance required, gold item needed, Adamantium, destroying the Core Block.">
+<BaseLayout title="Nether | MITE:BE Wiki" description="MITE:BE Nether: Nether Portal, Fire Resistance, adamantium smelting, and the Core Block.">
   <Header />
   <TopNav currentPage="progression" />
   <div class="container">
@@ -27,17 +27,17 @@ const sidebarGroups = getSidebarGroups('progression/nether');
 <PageSummary keyPoints={{
   hu: [
     'Köpeny (Mantle) a bedrock rétegen — Pokoli Portal a magma szintjén',
-    'Tűzállóság ital + arany tárgy kötelező — Tűzelementalok és Zombi Disznók',
+    'Tűzállóság ital erősen ajánlott — Tűzelementalok és láva mindenütt',
     'Magblokk (Core Block) megsemmisítése — End Portal nyílik',
   ],
   en: [
     'Find Mantle on bedrock layer — build Hell Portal at magma level',
-    'Fire Resistance potion + gold item mandatory — Fire Elementals attack',
+    'Fire Resistance potion strongly recommended — Fire Elementals and lava are everywhere',
     'Destroy the Core Block — End Portal opens (only path to The End)',
   ],
   ru: [
     'Мантия на уровне бедрока — Адский портал на уровне магмы',
-    'Зелье огнестойкости + золотой предмет обязательны — Огненные Элементали',
+    'Зелье огнестойкости настоятельно рекомендуется — Огненные элементали и лава повсюду',
     'Уничтожь Ядровый Блок — открывается портал в Край',
   ],
 }} />
@@ -61,7 +61,7 @@ const sidebarGroups = getSidebarGroups('progression/nether');
   <tr><td>Vörös Lángoszlop (Red Blaze)</td><td>40</td><td>6</td><td>20</td><td><strong>6 tűzgolyó egyszerre!</strong> Lángoszlop Pálcát ejt</td></tr>
   <tr><td>Tűz Elementális (Fire Elemental)</td><td>20</td><td>5</td><td>15</td><td><strong>3% azonnali ölés</strong> égő játékoson! Víz/hógolyó/Sértés bájital hat rá</td></tr>
   <tr><td>Greater Ghast</td><td>100</td><td>9 (tűzgolyó)</td><td>20</td><td>Óriási, repülő, tűzokádó — golyóit visszaütheted!</td></tr>
-  <tr><td>Zombi Disznóember</td><td>20</td><td>5</td><td>15</td><td>Semleges ha aranyat viselsz, különben azonnal agresszív</td></tr>
+  <tr><td>Zombi Disznóember</td><td>20</td><td>5</td><td>15</td><td>Semleges, amíg nem provokálod; az egyik megtámadása az egész közeli csoportot berántja</td></tr>
   <tr><td>Vámpír/Óriás Vámpír Denevér</td><td>3/6</td><td>1/2</td><td>5/10</td><td>Életlopás</td></tr>
 </table>
 <div class="info-box">🔥 <strong>Tűz Elementális:</strong> A leghírhedtebb Alvilág (Nether) szörny. Ha <strong>éppen égsz</strong> amikor megtámad, van <strong>3% esélye azonnal megölni</strong> téged! Varázstárgyak, víz, hógolyók és Sértés bájital hat rá — tűz és ezüst fegyver NEM sebzi. Tűzálló bájital kötelező ellene!</div>
@@ -91,7 +91,7 @@ const sidebarGroups = getSidebarGroups('progression/nether');
 <div class="tip-card">💡 <strong>Alvilág (Nether) túlélési útmutató:</strong>
 <ul style="margin:4px 0 0 0">
   <li><strong>Tűzálló bájital</strong> kötelező — Tűz Elementális nélküle szinte lehetetlen</li>
-  <li><strong>Arany valami</strong> viselése — Zombi Disznóemberek nélküle azonnal agresszívak</li>
+  <li>A <strong>Zombi Disznóembereket ne üsd meg</strong> feleslegesen — csoportosan agresszívvá válnak</li>
   <li>Blaze Gazdálkodás: készülj Lángoszlop vadászatra (Blaze-rúd = Adamantium olvasztás kulcsa)</li>
   <li>Lávavödör beszerzés: a Alvilág (Nether)ben rengeteg láva van, tölts vödröket a kemencéidhez</li>
   <li>Tartalék páncél és fegyver ajánlott — a Alvilág (Nether) halálos!</li>
@@ -163,12 +163,12 @@ const sidebarGroups = getSidebarGroups('progression/nether');
   <tr><td>Hell Hound</td><td>8</td><td>3</td><td>6</td><td>Fire resistant, fast, hunts in packs</td></tr>
   <tr><td>Nether Creeper</td><td>20</td><td>2–40</td><td>15</td><td>Fire resistant, larger explosion</td></tr>
   <tr><td>Red Blaze</td><td>40</td><td>6</td><td>20</td><td><strong>6 fireballs at once!</strong> Drops Blaze Rods</td></tr>
-  <tr><td>Fire Elemental</td><td>20</td><td>5</td><td>15</td><td><strong>3% instant kill</strong> on burning players! Water/snowballs/harming potions work</td></tr>
+  <tr><td>Fire Elemental</td><td>20</td><td>5</td><td>15</td><td><strong>Hardcore: 1-3% instant kill</strong> on already-burning players; water/snowballs/harming potions work</td></tr>
   <tr><td>Greater Ghast</td><td>100</td><td>9 (fireball)</td><td>20</td><td>Huge, flying, fire-breathing — deflect its fireballs!</td></tr>
-  <tr><td>Zombie Pigman</td><td>20</td><td>5</td><td>15</td><td>Neutral if wearing gold, otherwise immediately hostile</td></tr>
+  <tr><td>Zombie Pigman</td><td>20</td><td>5</td><td>15</td><td>Neutral unless provoked; hitting one pulls nearby pigmen into group aggro</td></tr>
   <tr><td>Vampire/Giant Vampire Bat</td><td>3/6</td><td>1/2</td><td>5/10</td><td>Life steal</td></tr>
 </table>
-<div class="info-box">🔥 <strong>Fire Elemental:</strong> The most infamous Nether mob. If you are <strong>on fire</strong> when it attacks, there is a <strong>3% chance it instantly kills</strong> you! Enchanted items, water, snowballs, and Harming Potions work against it — fire and Silver weapons do NOT. Fire Resistance potion is mandatory!</div>
+<div class="info-box">🔥 <strong>Fire Elemental:</strong> The local mob data says it sets you on fire on hit, regenerates in lava, and in <strong>Hardcore</strong> has a <strong>1-3% instant-kill chance</strong> against an already-burning player. Enchanted items, water, snowballs, and Harming Potions work against it. Fire Resistance is strongly recommended.</div>
 
 <h3 id="core-blocks">Core Blocks</h3>
 <p>Deep in the Nether you'll find <strong>Core Blocks</strong> — lava-textured blocks that emit light (light level 15).</p>
@@ -195,7 +195,7 @@ const sidebarGroups = getSidebarGroups('progression/nether');
 <div class="tip-card">💡 <strong>Nether survival guide:</strong>
 <ul style="margin:4px 0 0 0">
   <li><strong>Fire Resistance potion</strong> is mandatory — Fire Elemental is nearly impossible without it</li>
-  <li>Wear <strong>something Gold</strong> — Zombie Pigmen are immediately hostile without it</li>
+  <li>Do <strong>not provoke Zombie Pigmen</strong> needlessly — hitting one can aggro the whole nearby pack</li>
   <li>Blaze Farming: prepare for Blaze Rod hunting (Blaze Rods = key to Adamantium smelting)</li>
   <li>Lava bucket collection: the Nether has abundant lava, fill buckets for your furnaces</li>
   <li>Spare armor and weapons recommended — the Nether is lethal!</li>
@@ -236,7 +236,7 @@ const sidebarGroups = getSidebarGroups('progression/nether');
 
 <h2 id="adamantium">Adamantium — From the Depths of Hell</h2>
 <p>From the depths of the Nether, imbued with evil essence and terrible power. Mine adamantium ore with a <strong>mithril pickaxe/war hammer</strong>.</p>
-<div class="warning-box">🔥 <strong>Smelting:</strong> Adamantium ore requires a <strong>Blaze Rod</strong> (heat level 4) AND a <strong>Netherrack Furnace</strong> — its melting point (6210°C) exceeds the Obsidian Furnace max (5000°C)! Miner profession also required.</div>
+<div class="warning-box">🔥 <strong>Smelting:</strong> Adamantium ore requires a <strong>Blaze Rod</strong> (heat level 4) AND a <strong>Netherrack Furnace</strong> — its melting point (6210°C) exceeds the Obsidian Furnace max (5000°C). Based on the local v0.9.0 data, I am not treating a Miner profession as an active requirement here.</div>
 
 <p>Adamantium arrows are extremely useful — you'll need them to destroy End Crystals!</p>
 
@@ -267,7 +267,7 @@ const sidebarGroups = getSidebarGroups('progression/nether');
   <tr><td>Красный Бласт</td><td>40</td><td>6</td><td>20</td><td><strong>6 огненных шаров одновременно!</strong> Роняет Стержни Бласта</td></tr>
   <tr><td>Огненный элементаль</td><td>20</td><td>5</td><td>15</td><td><strong>3% мгновенное убийство</strong> горящего игрока!</td></tr>
   <tr><td>Greater Ghast</td><td>100</td><td>9 (огн. шар)</td><td>20</td><td>Огромный, летающий — можно отбить шары!</td></tr>
-  <tr><td>Зомби-свинолюд</td><td>20</td><td>5</td><td>15</td><td>Нейтральный если носишь золото, иначе сразу враждебный</td></tr>
+  <tr><td>Зомби-свинолюд</td><td>20</td><td>5</td><td>15</td><td>Нейтрален, пока не спровоцирован; удар по одному агрит всю ближайшую группу</td></tr>
   <tr><td>Вампир/Гигантская летучая мышь</td><td>3/6</td><td>1/2</td><td>5/10</td><td>Кража жизни</td></tr>
 </table>
 <div class="info-box">🔥 <strong>Огненный элементаль:</strong> Если ты <strong>горишь</strong> в момент атаки — <strong>3% шанс мгновенной смерти</strong>! Вода, снежки и Зелье вреда работают, огонь и серебро — нет. Зелье огнестойкости обязательно!</div>
@@ -296,7 +296,7 @@ const sidebarGroups = getSidebarGroups('progression/nether');
 <div class="tip-card">💡 <strong>Руководство по выживанию в Незере:</strong>
 <ul style="margin:4px 0 0 0">
   <li><strong>Зелье огнестойкости</strong> обязательно — Огненный элементаль почти непобедим без него</li>
-  <li>Надень <strong>что-нибудь золотое</strong> — Зомби-свинолюды сразу враждебны без золота</li>
+  <li><strong>Не провоцируй зомби-свинолюдей</strong> без необходимости — удар по одному агрит всех рядом</li>
   <li>Фермерство Бластов: готовься к охоте за Стержнями Бласта (Стержень = ключ к плавке Адаманта)</li>
   <li>Собирай вёдра лавы: в Незере её в изобилии, наполняй вёдра для печей</li>
   <li>Рекомендуется запасная броня и оружие — Незер смертоносен!</li>

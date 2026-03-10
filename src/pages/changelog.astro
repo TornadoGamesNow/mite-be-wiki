@@ -174,11 +174,11 @@ details.old-ver .old-body { padding: 4px 16px 14px; }
         <li><strong>Knowledge Book rendszer</strong> — receptek felfedezése és megtanulása; Könyvvé alakítható XP-ért</li>
         <li><strong>Tisztító Fáklya</strong> — speciális fáklya szörny-tisztításhoz</li>
         <li><strong>Föld Alatti Romok</strong> — véletlenszerűen generált romok a barlangrendszerben</li>
-        <li><strong>Fejlett Víztasak</strong> — Elemi Víztasak és Nagy Víztasak (fém variánsok: Réz → Adamantium); régi fém víztasak variánsok eltávolítva</li>
+        <li><strong>Fejlett Víztasak</strong> — Elemi Víztasak és Nagy Víztasak; a víztasak-progresszió átdolgozva, miközben a helyi receptadatok több fém variánst is tartalmaznak (Réz → Adamantium)</li>
         <li><strong>Ládás Tárolórendszer</strong> (9×6 slot) — fejlett tárolás, Barkácsolás képesség szükséges</li>
         <li><strong>Humanoid "Warden" mob</strong> — új erős ellenfél a föld alatti rétegekben</li>
         <li><strong>Vérhold Esemény</strong> (Reckoning Day) — 32 naponként ismétlődő apokaliptikus éjszaka, 6 evolution phasessal (32, 64, 128, 160, 192, 224. nap)</li>
-        <li><strong>Blood Moon Rewards</strong> — minden túlélt vérhold permanent bónuszt ad (+10% bányászat, +1 sebzés, -10% thirst/hunger)</li>
+        <li><strong>Blood Moon Rewards</strong> — minden túlélt vérhold egy véletlen permanent bónuszt ad: +10% bányászati sebesség, +1 támadási sebzés, -10% szomjúságfogyás vagy -10% éhségfogyás</li>
       </ul>
     </div>
     <div class="cl-section">
@@ -189,7 +189,7 @@ details.old-ver .old-body { padding: 4px 16px 14px; }
         <li>Tápláltsági küszöbértékek frissítve</li>
         <li>Portál célpontok átírva — biome portál visszafelé nem szükséges</li>
         <li>Kandalló egyszerre 8 húst tud sütni (volt: 1)</li>
-        <li><strong>Víztasak rendszer átdolgozva</strong> — régi fém víztasak variánsok (réz, ezüst, arany, kőmag, ős fém, mithril, adamantium) eltávolítva; helyettük Elemi és Nagy Víztasak</li>
+        <li><strong>Víztasak rendszer átdolgozva</strong> — az Elemi és Nagy Víztasak hangsúlyosabb lett, de a helyi receptadatokban továbbra is több fém víztasak variáns szerepel</li>
         <li>Sajt készítés: bármilyen fém vödörrel működik (réztől adamantiumig), max. 9 vödör köteg</li>
         <li>Belső crafting asztal keresés módosítva — pontosabb egyeztetés</li>
       </ul>
@@ -511,12 +511,6 @@ details.old-ver .old-body { padding: 4px 16px 14px; }
   </div>
 </details>
 
-<div style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
-  <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Teljes Magyar Wiki ⚔️</p>
-  <p>A wiki a játékfájlok (MITE.lang, hu_HU.lang, class fájlok) alapján készült.</p>
-  <p style="font-size:.85em;margin-top:8px;opacity:.7;">Ez egy nem hivatalos, közösségi wiki. A MITE:BE és minden kapcsolódó játékeszköz, textúra és védjegy az eredeti alkotóik tulajdona.</p>
-</div>
-
 </div><!-- /hu content -->
 
 <!-- ════════════════════ ENGLISH ════════════════════ -->
@@ -576,7 +570,7 @@ details.old-ver .old-body { padding: 4px 16px 14px; }
         <li>Portal destinations reworked</li>
         <li>Various item properties and mob attributes updated</li>
         <li>Fireplace now cooks 8 meat simultaneously (was: 1)</li>
-        <li>Some backpack and water bag crafting recipes removed</li>
+        <li>Backpack progression was simplified, and water bag progression was reworked; local recipe data still contains multiple metal water bag variants</li>
       </ul>
     </div>
     <div class="cl-section">
@@ -810,7 +804,7 @@ details.old-ver .old-body { padding: 4px 16px 14px; }
       <h4><span class="ct ct-new">New</span> Features</h4>
       <ul>
         <li><strong>Alloy introduction</strong> — Bronze, Silver Copper, High Carbon Steel systems (foundation of current alloying!)</li>
-        <li><strong>Carbon Crystal system</strong> — special material (Highland biome)</li>
+        <li><strong>Carbon Crystal system</strong> — special material system introduced</li>
         <li><strong>Tin material</strong> introduced</li>
         <li><strong>Teleportation Stone system</strong></li>
         <li><strong>XP Coins</strong> — experience point storage</li>
@@ -895,12 +889,6 @@ details.old-ver .old-body { padding: 4px 16px 14px; }
   </div>
 </details>
 
-<div style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
-  <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Complete Wiki ⚔️</p>
-  <p>Built from game files (MITE.lang, hu_HU.lang, class files).</p>
-  <p style="font-size:.85em;margin-top:8px;opacity:.7;">This is an unofficial, community-driven wiki. MITE:BE and all related game assets, textures, and trademarks belong to their respective original creators.</p>
-</div>
-
 </div><!-- /en content -->
 
 <!-- ════════════════════ RUSSIAN ════════════════════ -->
@@ -944,11 +932,11 @@ details.old-ver .old-body { padding: 4px 16px 14px; }
 <li><strong>Система книг знаний</strong> — открытие и изучение рецептов крафта; лишние экземпляры можно превращать в книги за очки опыта</li>
         <li><strong>Факел очищения</strong> — специальный факел для уничтожения мобов</li>
 <li><strong>Подземные руины</strong> — руины, разбросанные по всей пещерной системе</li>
-        <li><strong>Элементальная сумка для воды / Большая сумка для воды</strong> (металлические варианты: Медь → Адамант); старые металлические варианты сумок удалены</li>
+        <li><strong>Элементальная сумка для воды / Большая сумка для воды</strong> — прогрессия сумок для воды переработана, при этом локальные рецепты всё ещё содержат несколько металлических вариантов (Медь → Адамант)</li>
         <li><strong>Система хранения в ящиках</strong> (9×6 ячеек) — продвинутое хранение, требует навык Плотницкого дела</li>
         <li><strong>Гуманоидный моб «Страж»</strong> — новый мощный враг в подземных слоях</li>
         <li><strong>Событие «Кровавая луна»</strong> (День Расплаты) — апокалиптическая ночь каждые 32 дня, 6 эволюционных фаз</li>
-        <li><strong>Награды за Кровавую луну</strong> — каждая пережитая луна даёт постоянный бонус (+10% добыча, +1 урон, -10% жажда/голод)</li>
+        <li><strong>Награды за Кровавую луну</strong> — каждая пережитая луна даёт один случайный постоянный бонус: +10% к скорости добычи, +1 к урону, -10% к расходу жажды или -10% к расходу голода</li>
       </ul>
     </div>
     <div class="cl-section">
@@ -959,7 +947,7 @@ details.old-ver .old-body { padding: 4px 16px 14px; }
         <li>Обновлены пороги питания</li>
         <li>Переработаны назначения порталов — обратный биомный портал не нужен</li>
         <li>Камин теперь готовит 8 мясных блоков одновременно (было: 1)</li>
-        <li><strong>Переработана система сумок для воды</strong> — старые металлические варианты удалены; вместо них Элементальная и Большая сумки</li>
+        <li><strong>Переработана система сумок для воды</strong> — Элементальная и Большая сумки стали важнее, но в локальных рецептах всё ещё есть несколько металлических вариантов сумок</li>
 <li>Сыроварение: работает с любым металлическим ведром (от медного до адамантового), максимум 9 вёдер за раз</li>
       </ul>
     </div>
@@ -1279,12 +1267,6 @@ details.old-ver .old-body { padding: 4px 16px 14px; }
     </ul>
   </div>
 </details>
-
-<div style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
-  <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Полное руководство ⚔️</p>
-  <p>Создана на основе игровых файлов (MITE.lang, hu_HU.lang, class-файлов).</p>
-  <p style="font-size:.85em;margin-top:8px;opacity:.7;">Это неофициальная вики, созданная сообществом. MITE:BE и все связанные игровые ресурсы, текстуры и торговые марки принадлежат их соответствующим авторам.</p>
-</div>
 
 </div><!-- /ru content -->
 

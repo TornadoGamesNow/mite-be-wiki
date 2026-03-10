@@ -8,6 +8,7 @@ export interface SidebarLink {
 export interface SidebarSection {
   title: string;
   links: SidebarLink[];
+  isOpen?: boolean;
 }
 
 export interface SidebarGroups {
@@ -30,10 +31,18 @@ function pageToCategory(currentPage: string): Category {
 export function getSidebarGroups(currentPage: string): SidebarGroups {
   const cat = pageToCategory(currentPage);
 
+  // homepage: csak start-here nyitva (nyugodtabb)
+  // belső oldal: aktív szekció + start-here (kontextus + navigáció)
+  const o = (c: Category) =>
+    cat === c ||
+    (cat === 'none' && c === 'start-here') ||
+    (cat !== 'none' && cat !== 'start-here' && c === 'start-here');
+
   return {
     hu: [
       {
         title: '🚀 Kezdőlap',
+        isOpen: o('start-here'),
         links: [
           { href: `${base}/install/`, label: 'Telepítési útmutató' },
           { href: `${base}/introduction/`, label: 'Bevezetés' },
@@ -44,6 +53,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
       },
       {
         title: '📈 Haladás',
+        isOpen: o('progression'),
         links: [
           { href: `${base}/progression/`, label: 'Áttekintés' },
           { href: `${base}/progression/early-game/`, label: '🪨 Korai játék' },
@@ -57,6 +67,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
       },
       {
         title: '⚙ Rendszerek',
+        isOpen: o('systems'),
         links: [
           { href: `${base}/systems/`, label: 'Áttekintés' },
           { href: `${base}/systems/nutrition/`, label: '🍖 Táplálkozás' },
@@ -67,6 +78,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
       },
       {
         title: '📚 Referencia',
+        isOpen: o('reference'),
         links: [
           { href: `${base}/recipes/`, label: 'Receptek' },
           { href: `${base}/items/`, label: 'Itemek' },
@@ -78,6 +90,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
       },
       {
         title: '📋 Frissítések',
+        isOpen: o('updates'),
         links: [
           { href: `${base}/changelog/`, label: 'Changelog' },
         ],
@@ -86,6 +99,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
     en: [
       {
         title: '🚀 Start Here',
+        isOpen: o('start-here'),
         links: [
           { href: `${base}/install/`, label: 'Installation guide' },
           { href: `${base}/introduction/`, label: 'Introduction' },
@@ -96,6 +110,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
       },
       {
         title: '📈 Progression',
+        isOpen: o('progression'),
         links: [
           { href: `${base}/progression/`, label: 'Overview' },
           { href: `${base}/progression/early-game/`, label: '🪨 Early Game' },
@@ -109,6 +124,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
       },
       {
         title: '⚙ Systems',
+        isOpen: o('systems'),
         links: [
           { href: `${base}/systems/`, label: 'Overview' },
           { href: `${base}/systems/nutrition/`, label: '🍖 Nutrition' },
@@ -119,6 +135,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
       },
       {
         title: '📚 Reference',
+        isOpen: o('reference'),
         links: [
           { href: `${base}/recipes/`, label: 'Recipes' },
           { href: `${base}/items/`, label: 'Items' },
@@ -130,6 +147,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
       },
       {
         title: '📋 Updates',
+        isOpen: o('updates'),
         links: [
           { href: `${base}/changelog/`, label: 'Changelog' },
         ],
@@ -138,6 +156,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
     ru: [
       {
         title: '🚀 Начало',
+        isOpen: o('start-here'),
         links: [
           { href: `${base}/install/`, label: 'Установка' },
           { href: `${base}/introduction/`, label: 'Введение' },
@@ -148,6 +167,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
       },
       {
         title: '📈 Прогресс',
+        isOpen: o('progression'),
         links: [
           { href: `${base}/progression/`, label: 'Обзор' },
           { href: `${base}/progression/early-game/`, label: '🪨 Начало игры' },
@@ -161,6 +181,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
       },
       {
         title: '⚙ Системы',
+        isOpen: o('systems'),
         links: [
           { href: `${base}/systems/`, label: 'Обзор' },
           { href: `${base}/systems/nutrition/`, label: '🍖 Питание' },
@@ -171,6 +192,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
       },
       {
         title: '📚 Справочник',
+        isOpen: o('reference'),
         links: [
           { href: `${base}/recipes/`, label: 'Рецепты' },
           { href: `${base}/items/`, label: 'Предметы' },
@@ -182,6 +204,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
       },
       {
         title: '📋 Обновления',
+        isOpen: o('updates'),
         links: [
           { href: `${base}/changelog/`, label: 'Журнал изменений' },
         ],

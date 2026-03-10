@@ -53,7 +53,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr><td><strong>Zombi spawn esőben</strong></td><td>❌ Nem spawningolnak</td><td>✅ Esőben is spawningolnak</td></tr>
   <tr><td><strong>Mob spawn Y0-10 fénynél</strong></td><td>❌ Fényben nem spawningolnak</td><td>✅ Fénynél is spawningolnak</td></tr>
   <tr><td><strong>Vérhold mutáns zombik</strong></td><td>Normál spawn sebesség</td><td>Dupla spawn sebesség</td></tr>
-  <tr><td><strong>Ender-sárkány Életerő (HP)</strong></td><td>100 Életerő (HP)</td><td>1000 Életerő (HP)</td></tr>
+  <tr><td><strong>Ender-sárkány Életerő (HP)</strong></td><td colspan="2">A helyi <code>mobs.json</code> 200 HP-t jelez; a 100/1000 HP mód-bontás itt nincs megerősítve</td></tr>
   <tr><td><strong>Enderman és víz</strong></td><td>Fél a víztől (vanilla)</td><td>NEM fél a víztől!</td></tr>
   <tr><td><strong>Halál</strong></td><td>Újraéledés lehetséges</td><td>Permadeath — világ törlődik</td></tr>
   <tr><td><strong>Halál utáni debuff</strong></td><td colspan="2">Mindkét módban: <strong>Súlyos sérülés</strong> státuszhatás a meghalás után <abbr class="src-cl" title="Forrás: mod changelog — személyesen nem ellenőrzött">📜 changelog</abbr></td></tr>
@@ -228,7 +228,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
 <div class="tip-card">🌱 <strong>Trágya:</strong> Termőföldhöz adva növeli a termésmennyiséget. Ha 3+ napig nem üríted (és 50+ a mutató), az időtartam megduplázódik.</div>
 
 <h3 id="world-marker">Világjelölő &amp; Partner NPC-k</h3>
-<p>A <strong>Világjelölő</strong> (Respawn Anchor) automatikus újraéledési pontként funkcionál. Ha a közelében halsz meg, itt éledsz újra. <strong>Hardcore módban nem működik.</strong></p>
+<p>A <strong>Világjelölő</strong> a helyi item-adatok alapján a világ újraéledési pontjának beállítására szolgál. A jelenlegi adatokban külön tételként szerepel a <strong>Respawn Anchor</strong> is, ezért itt nem kezelem őket ugyanannak a blokknek. <strong>Hardcore módban az újraéledéses funkciók nem használhatók.</strong></p>
 <table class="compare-table">
   <tr><th>Partner Típus</th><th>Belső Azonosító</th><th>Leírás</th></tr>
   <tr><td><strong>Harcos Falusember</strong></td><td>partner_sparta</td><td>Harci képességekkel rendelkező NPC szövetséges</td></tr>
@@ -259,7 +259,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr><td><strong>Zombie rain spawning</strong></td><td>❌ Don't spawn in rain</td><td>✅ Spawn in rain</td></tr>
   <tr><td><strong>Mob spawn Y0-10 in light</strong></td><td>❌ Don't spawn in light</td><td>✅ Spawn even in light</td></tr>
   <tr><td><strong>Blood Moon mutant zombies</strong></td><td>Normal spawn rate</td><td>Double spawn rate</td></tr>
-  <tr><td><strong>Ender Dragon HP</strong></td><td>100 HP</td><td>1000 HP</td></tr>
+  <tr><td><strong>Ender Dragon HP</strong></td><td colspan="2">The local <code>mobs.json</code> lists 200 HP; the 100/1000 mode split is not confirmed here</td></tr>
   <tr><td><strong>Enderman and water</strong></td><td>Afraid of water (vanilla)</td><td>NOT afraid of water!</td></tr>
   <tr><td><strong>Death</strong></td><td>Respawn possible</td><td>Permadeath — world is deleted</td></tr>
   <tr><td><strong>Post-death debuff</strong></td><td colspan="2">Both modes: <strong>Severe Injury</strong> status effect applied on respawn <abbr class="src-cl" title="Source: mod changelog — not personally verified">📜 changelog</abbr></td></tr>
@@ -434,7 +434,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
 <div class="tip-card">🌱 <strong>Manure:</strong> Applied to farmland, it increases crop yields. If you haven't defecated in 3+ days (and meter is 50+), the duration doubles.</div>
 
 <h3 id="world-marker-en">World Marker &amp; Partner NPCs</h3>
-<p>The <strong>World Marker</strong> (Respawn Anchor) is a special block that functions as an automatic respawn point. If you die near one, you respawn there. <strong>Does not work in Hardcore mode.</strong></p>
+<p>Based on the local item data, the <strong>World Marker</strong> is used to set the world's respawn point. The current data set also contains a separate <strong>Respawn Anchor</strong> item, so I am not treating them as the same block here. <strong>Respawn-related systems do not help in Hardcore mode.</strong></p>
 <table class="compare-table">
   <tr><th>Partner Type</th><th>Internal ID</th><th>Description</th></tr>
   <tr><td><strong>Warrior Villager</strong></td><td>partner_sparta</td><td>A combat-capable NPC ally</td></tr>
@@ -465,7 +465,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr><td><strong>Спавн зомби в дождь</strong></td><td>❌ Не спавнятся</td><td>✅ Спавнятся в дождь</td></tr>
   <tr><td><strong>Спавн мобов Y0-10 при свете</strong></td><td>❌ Не спавнятся при свете</td><td>✅ Спавнятся даже при свете</td></tr>
   <tr><td><strong>Мутантные зомби Кровавой луны</strong></td><td>Обычная скорость спавна</td><td>Двойная скорость спавна</td></tr>
-  <tr><td><strong>Здоровье Дракона Края</strong></td><td>100 HP</td><td>1000 HP</td></tr>
+  <tr><td><strong>Здоровье Дракона Края</strong></td><td colspan="2">Локальный <code>mobs.json</code> показывает 200 HP; разделение 100/1000 по режимам здесь не подтверждено</td></tr>
   <tr><td><strong>Эндермен и вода</strong></td><td>Боится воды (ваниль)</td><td>НЕ боится воды!</td></tr>
   <tr><td><strong>Смерть</strong></td><td>Возможно возрождение</td><td>Permadeath — мир удаляется</td></tr>
   <tr><td><strong>Дебафф после смерти</strong></td><td colspan="2">В обоих режимах: эффект <strong>Тяжёлое ранение</strong> после возрождения <abbr class="src-cl" title="Источник: changelog мода — лично не проверено">📜 changelog</abbr></td></tr>
@@ -639,7 +639,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
 <div class="tip-card">🌱 <strong>Навоз:</strong> Улучшает урожайность при внесении в почву. Если не опорожняться 3+ дней (при показателе 50+), длительность удваивается.</div>
 
 <h3 id="world-marker-ru">Мировой маркер &amp; NPC-напарники</h3>
-<p><strong>Мировой маркер</strong> (Respawn Anchor) работает как автоматическая точка возрождения. Если умрёшь рядом — возродишься здесь. <strong>В режиме Hardcore не работает.</strong></p>
+<p>По локальным данным предметов <strong>Маркер мира</strong> служит для задания мировой точки возрождения. При этом в данных отдельно присутствует и <strong>Якорь возрождения</strong>, поэтому здесь я не считаю их одним и тем же блоком. <strong>В Hardcore механики возрождения не помогают.</strong></p>
 <table class="compare-table">
   <tr><th>Тип напарника</th><th>Внутренний ID</th><th>Описание</th></tr>
   <tr><td><strong>Воин-деревенщик</strong></td><td>partner_sparta</td><td>NPC-союзник с боевыми навыками</td></tr>

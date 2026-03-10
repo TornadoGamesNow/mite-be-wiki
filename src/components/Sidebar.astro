@@ -1,13 +1,5 @@
 ---
-interface SidebarLink {
-  href: string;
-  label: string;
-}
-
-interface SidebarSection {
-  title: string;
-  links: SidebarLink[];
-}
+import type { SidebarSection } from '../data/sidebar-config.ts';
 
 interface Props {
   groups: {
@@ -22,7 +14,6 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 function resolveHref(href: string): string {
   if (href.startsWith('#') || href.startsWith('http') || href.startsWith('/')) return href;
   if (href === '.' || href === './') return `${base}/`;
-  // relative page link → prefix with base
   return `${base}/${href}`;
 }
 ---
@@ -39,7 +30,7 @@ function resolveHref(href: string): string {
     </div>
     <div class="sidebar-nav">
       {groups.hu.map(section => (
-        <details class="sidebar-section" open>
+        <details class="sidebar-section" open={section.isOpen || undefined}>
           <summary class="sidebar-section-title">{section.title}</summary>
           <ul>
             {section.links.map(link => (
@@ -65,7 +56,7 @@ function resolveHref(href: string): string {
     </div>
     <div class="sidebar-nav">
       {groups.en.map(section => (
-        <details class="sidebar-section" open>
+        <details class="sidebar-section" open={section.isOpen || undefined}>
           <summary class="sidebar-section-title">{section.title}</summary>
           <ul>
             {section.links.map(link => (
@@ -92,7 +83,7 @@ function resolveHref(href: string): string {
     </div>
     <div class="sidebar-nav">
       {groups.ru.map(section => (
-        <details class="sidebar-section" open>
+        <details class="sidebar-section" open={section.isOpen || undefined}>
           <summary class="sidebar-section-title">{section.title}</summary>
           <ul>
             {section.links.map(link => (

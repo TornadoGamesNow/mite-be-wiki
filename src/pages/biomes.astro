@@ -21,17 +21,17 @@ const sidebarGroups = getSidebarGroups('biomes');
   hu: [
     'Minden biome más hőmérsékletet jelent — sivatag túlmelegít, hó megfagyaszt',
     'Vadász Cabin: erdőkben, értékes zsákmány + tudáskönyvek',
-    'Gombás biome: egyetlen biztonságos terület, ahol nem spawnnol semmi veszélyes',
+    'Gombás biome: normál mobok nem spawnolnak, de a struktúrák továbbra is veszélyesek',
   ],
   en: [
     'Every biome has different temperature — desert overheats, snow freezes you',
     'Hunter Cabin: found in forests, valuable loot + knowledge books',
-    'Mushroom biome: the only truly safe area — nothing dangerous spawns there',
+    'Mushroom biome: normal mobs do not spawn, but structures can still be dangerous',
   ],
   ru: [
     'Каждый биом — разная температура: пустыня перегревает, снег замораживает',
     'Охотничья хижина: в лесах, ценный лут + книги знаний',
-    'Грибной биом: единственная безопасная зона — опасные мобы не спавнятся',
+    'Грибной биом: обычные мобы не спавнятся, но структуры всё ещё могут быть опасны',
   ],
 }} />
 
@@ -62,7 +62,7 @@ const sidebarGroups = getSidebarGroups('biomes');
 <div data-lang="hu" id="plains">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌾 Síkság (Plains)</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>A legjobb kezdő biom! Nyílt terep, jó látótávolság, kevesebb meglepetés.</p>
+<p>Erős kezdő ajánlás. Nyílt terep, jó látótávolság, kevesebb meglepetés.</p>
 
 <table class="compare-table">
   <tr><th>Tulajdonság</th><th>Részletek</th></tr>
@@ -308,7 +308,7 @@ const sidebarGroups = getSidebarGroups('biomes');
 <div data-lang="en" id="plains-en">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌾 Plains</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>The best starting biome! Open terrain, good visibility, fewer surprises.</p>
+<p>A strong starting recommendation. Open terrain, good visibility, fewer surprises.</p>
 
 <table class="compare-table">
   <tr><th>Property</th><th>Details</th></tr>
@@ -472,18 +472,18 @@ const sidebarGroups = getSidebarGroups('biomes');
 <div data-lang="en" id="nether-en">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🔥 Nether</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>Entering the Nether requires serious preparation — but the most important materials (Blaze Rod, Wither Rose, Mithril+ smelting) can only be obtained here.</p>
+<p>Entering the Nether requires serious preparation — but key materials for late progression, such as Blaze Rods and Wither Roses, are obtained here.</p>
 
 <div class="warning-box">🔥 <strong>Nether entry requirements:</strong> Mithril pickaxe (for mining obsidian) + obsidian ingot mold + flint and steel. Fire Resistance potion strongly recommended!</div>
 
 <table class="compare-table">
   <tr><th>Property</th><th>Details</th></tr>
   <tr><td>Temperature</td><td>Extreme heat — heat stroke risk</td></tr>
-  <tr><td>Unique danger</td><td>Fire Elemental: <strong>3% instant death if you're on fire when it attacks!</strong> Fire resistance mandatory</td></tr>
+  <tr><td>Unique danger</td><td>Fire Elemental: in <strong>Hardcore</strong>, an already-burning player faces a <strong>1-3% instant-kill chance</strong> on hit; Fire Resistance strongly recommended</td></tr>
   <tr><td>Portal mechanic</td><td>Obsidian portal at bedrock level → Pillager Fortress (v0.9.0)</td></tr>
-  <tr><td>Nether Fortress</td><td>Blaze Rod (heat level 4 smelting), Wither Rose, Nether Wart</td></tr>
+  <tr><td>Nether Fortress</td><td>Blaze Rod (heat level 4 smelting), Nether Wart, reward chests that can contain Wither Rose</td></tr>
   <tr><td>Blaze</td><td>Blaze Rod required for Adamantium smelting!</td></tr>
-  <tr><td>Wither Skeleton</td><td>Drops Wither Rose — required for summoning the Wither boss</td></tr>
+  <tr><td>Wither Skeleton</td><td>Key Nether enemy; Wither Rose is treated here as Nether Fortress reward-chest loot for Wither summoning</td></tr>
 </table>
 
 <div class="info-box">🌋 <strong>Lava bucket:</strong> Fuel for heat level 3 (Mithril smelting). Fill it up in the Nether — there's no lava source at home!</div>
@@ -544,7 +544,7 @@ const sidebarGroups = getSidebarGroups('biomes');
 <div data-lang="ru" id="plains-ru">
 <div class="collapsible"><div class="collapsible-toggle" role="button" tabindex="0" aria-expanded="true"><h3>🌾 Равнины</h3><span class="toggle-icon">▶</span></div><div class="collapsible-body open"><div class="collapsible-body-inner">
 
-<p>Лучший начальный биом! Открытая местность, хорошая видимость, меньше неожиданностей.</p>
+<p>Сильная стартовая рекомендация. Открытая местность, хорошая видимость, меньше неожиданностей.</p>
 
 <table class="compare-table">
   <tr><th>Свойство</th><th>Подробности</th></tr>
@@ -715,11 +715,11 @@ const sidebarGroups = getSidebarGroups('biomes');
 <table class="compare-table">
   <tr><th>Свойство</th><th>Подробности</th></tr>
   <tr><td>Температура</td><td>Экстремальная жара — риск теплового удара</td></tr>
-  <tr><td>Уникальная опасность</td><td>Огненный элементаль: <strong>если в момент его удара вы горите, есть 3% шанс мгновенной смерти!</strong> Огнестойкость обязательна</td></tr>
+  <tr><td>Уникальная опасность</td><td>Огненный элементаль: в <strong>Hardcore</strong> по уже горящему игроку есть <strong>1-3% шанс мгновенного убийства</strong>; огнестойкость настоятельно рекомендуется</td></tr>
   <tr><td>Механика портала</td><td>Обсидиановый портал на уровне коренной породы → Крепость Разорителей (v0.9.0)</td></tr>
-  <tr><td>Крепость Незера</td><td>Стержень Блейза (выплавка 4 уровня тепла), Роза Иссушителя, Адский гриб</td></tr>
+  <tr><td>Крепость Незера</td><td>Стержень Блейза (выплавка 4 уровня тепла), Адский гриб, сундуки с наградой, где может встретиться Роза Иссушителя</td></tr>
   <tr><td>Блейз</td><td>Стержень Блейза необходим для выплавки адаманта!</td></tr>
-  <tr><td>Иссушитель-скелет</td><td>С него выпадает Роза Иссушителя — она нужна для призыва босса Иссушителя</td></tr>
+  <tr><td>Иссушитель-скелет</td><td>Ключевой моб Незера; Роза Иссушителя здесь рассматривается как лут из сундуков крепости Незера для призыва Иссушителя</td></tr>
 </table>
 
 <div class="info-box">🌋 <strong>Ведро лавы:</strong> Топливо для 3 уровня тепла (выплавка мифрила). Наполните в Незере — дома нет источника лавы!</div>

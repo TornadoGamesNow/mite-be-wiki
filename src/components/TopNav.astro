@@ -12,6 +12,7 @@ function isActive(ids: string[]): boolean {
 }
 ---
 <nav class="top-nav" data-dev={isDev ? 'true' : 'false'}>
+  <div class="top-nav-inner">
   <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">&#9776;</button>
   <div class="top-nav-links">
 
@@ -111,14 +112,29 @@ function isActive(ids: string[]): boolean {
       <span data-lang="ru">Changelog</span>
     </a>
 
+    <div id="mobile-sidebar-links"></div>
   </div>
   <div class="wiki-search" id="wiki-search">
     <input type="text" class="wiki-search-input" id="wiki-search-input" autocomplete="off" />
     <div class="wiki-search-results" id="wiki-search-results"></div>
   </div>
+  </div>
 </nav>
 
 <script>
+  // ── Backdrop ────────────────────────────────────────────────
+  const backdrop = document.createElement('div');
+  backdrop.id = 'nav-backdrop';
+  document.body.appendChild(backdrop);
+
+  function closeMenu() {
+    btn?.setAttribute('aria-expanded', 'false');
+    links?.classList.remove('open');
+    backdrop.classList.remove('active');
+  }
+  backdrop.addEventListener('click', closeMenu);
+
+  // ── Hamburger toggle ─────────────────────────────────────────
   const btn = document.querySelector('.hamburger-btn');
   const links = document.querySelector('.top-nav-links');
   if (btn && links) {
@@ -126,17 +142,71 @@ function isActive(ids: string[]): boolean {
       const expanded = btn.getAttribute('aria-expanded') === 'true';
       btn.setAttribute('aria-expanded', String(!expanded));
       links.classList.toggle('open');
+      backdrop.classList.toggle('active', !expanded);
+      if (!expanded && window.innerWidth <= 600) {
+        populateMobileSidebarNav();
+      }
     });
   }
 
-  // Mobile: click toggle for dropdowns
+  // ── Sidebar nav inside hamburger (≤600px) ────────────────────
+  function populateMobileSidebarNav() {
+    const mobileNav = document.getElementById('mobile-sidebar-links');
+    if (!mobileNav || mobileNav.dataset.populated) return;
+    const lang = document.documentElement.getAttribute('data-lang-init') || 'hu';
+    const langSidebar = document.querySelector(`[data-lang="${lang}"] .sidebar-nav`);
+    if (!langSidebar) return;
+
+    // separator before docs block
+    const sep = document.createElement('div');
+    sep.className = 'mobile-nav-docs-sep';
+    mobileNav.appendChild(sep);
+
+    const docsLabel = document.createElement('span');
+    docsLabel.className = 'mobile-nav-docs-heading';
+    docsLabel.textContent = lang === 'en' ? 'Page Navigation' : lang === 'ru' ? 'Навигация' : 'Oldalnavigáció';
+    mobileNav.appendChild(docsLabel);
+
+    langSidebar.querySelectorAll('details').forEach(srcDetails => {
+      const srcSummary = srcDetails.querySelector('summary');
+      const anchors = srcDetails.querySelectorAll('a');
+      if (!anchors.length) return;
+
+      const section = document.createElement('details');
+      section.className = 'mobile-nav-section';
+
+      const summary = document.createElement('summary');
+      summary.className = 'mobile-nav-section-title';
+      summary.textContent = srcSummary?.textContent?.trim() ?? '';
+      section.appendChild(summary);
+
+      const group = document.createElement('div');
+      group.className = 'mobile-nav-links-group';
+      anchors.forEach(a => {
+        const clone = a.cloneNode(true) as HTMLElement;
+        clone.className = 'mobile-nav-link';
+        group.appendChild(clone);
+      });
+      section.appendChild(group);
+      mobileNav.appendChild(section);
+    });
+
+    mobileNav.dataset.populated = '1';
+  }
+
+  // Repopulate on language change
+  window.addEventListener('mite-lang-change', () => {
+    const mobileNav = document.getElementById('mobile-sidebar-links');
+    if (mobileNav) { mobileNav.innerHTML = ''; delete mobileNav.dataset.populated; }
+  });
+
+  // ── Desktop dropdowns ────────────────────────────────────────
   document.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
-    toggle.addEventListener('click', (e) => {
+    toggle.addEventListener('click', () => {
       const dropdown = (toggle as HTMLElement).closest('.nav-dropdown');
       const menu = dropdown?.querySelector('.nav-dropdown-menu') as HTMLElement | null;
       if (!menu) return;
       const isOpen = menu.style.display === 'block';
-      // Close all
       document.querySelectorAll('.nav-dropdown-menu').forEach((m: Element) => {
         (m as HTMLElement).style.display = '';
       });
@@ -144,7 +214,6 @@ function isActive(ids: string[]): boolean {
     });
   });
 
-  // Close dropdown on outside click
   document.addEventListener('click', (e) => {
     if (!(e.target as HTMLElement).closest('.nav-dropdown')) {
       document.querySelectorAll('.nav-dropdown-menu').forEach((m: Element) => {
@@ -163,7 +232,7 @@ function isActive(ids: string[]): boolean {
     var pagefind = null;
     var debounceTimer = null;
 
-    var placeholders = { hu: 'Keresés...', en: 'Search...', ru: 'Поиск...' };
+    var placeholders = { hu: 'Wiki keresés…', en: 'Wiki search…', ru: 'Поиск по вики…' };
 
     function getLang() {
       return document.documentElement.getAttribute('data-lang-init') || 'hu';

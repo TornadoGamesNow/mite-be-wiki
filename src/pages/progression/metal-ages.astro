@@ -159,8 +159,8 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
   <tr><td><span class="tier t-iron">4</span></td><td>Vas</td><td>Mély bányászat</td><td>Réz/Ezüstcsákány</td></tr>
   <tr><td><span class="tier t-hard">5</span></td><td>Keménykő</td><td>Földalatti világ</td><td>Vascsákány</td></tr>
   <tr><td><span class="tier t-ancient">6</span></td><td>Ősi Fém</td><td>Földalatti világ</td><td>Vascsákány</td></tr>
-  <tr><td><span class="tier t-mithril">7</span></td><td>Mithril</td><td>Mély bányászat</td><td>Vascsákány / harci kalapács</td></tr>
-  <tr><td><span class="tier t-adamantium">8</span></td><td>Adamantium</td><td>Alvilág (Nether) közelében</td><td>Mithrilcsákány / harci kalapács</td></tr>
+  <tr><td><span class="tier t-mithril">7</span></td><td>Mithril</td><td>Földalatti világ</td><td>Vascsákány / harci kalapács</td></tr>
+  <tr><td><span class="tier t-adamantium">8</span></td><td>Adamantium</td><td>Földalatti világ legmélye</td><td>Mithrilcsákány / harci kalapács</td></tr>
 </table>
 
 <h3>Érc Mélység Térkép</h3>
@@ -171,30 +171,20 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 <div class="ore-layer"><img src="/mite-be-wiki/img/items/iron_ingot.png" alt=""><span class="ore-label">Vas</span><span class="ore-bar" style="width:45%;background:#d4d4d4">Y 0-48</span></div>
 <div class="ore-layer"><img src="/mite-be-wiki/img/shards/diamond.png" alt=""><span class="ore-label">Gyémánt</span><span class="ore-bar" style="width:18%;background:#7ec8e3">Y 0-16</span></div>
 <div class="ore-layer"><img src="/mite-be-wiki/img/items/emerald.png" alt=""><span class="ore-label">Smaragd</span><span class="ore-bar" style="width:25%;background:#4ecca3">Y 4-32</span></div>
-<div class="ore-layer"><img src="/mite-be-wiki/img/ingots/mithril.png" alt=""><span class="ore-label">Mithril</span><span class="ore-bar" style="width:22%;background:#7ec8e3">Y 0-24</span></div>
-<div class="ore-layer"><img src="/mite-be-wiki/img/ingots/adamantium.png" alt=""><span class="ore-label">Adamantium</span><span class="ore-bar" style="width:15%;background:#b388ff">Alvilág (Nether)</span></div>
+<div class="ore-layer"><img src="/mite-be-wiki/img/ingots/mithril.png" alt=""><span class="ore-label">Mithril</span><span class="ore-bar" style="width:22%;background:#7ec8e3">Földalatti világ egész területe</span></div>
+<div class="ore-layer"><img src="/mite-be-wiki/img/ingots/adamantium.png" alt=""><span class="ore-label">Adamantium</span><span class="ore-bar" style="width:15%;background:#b388ff">Földalatti világ legmélye</span></div>
 <div class="ore-layer"><span class="ore-label">🌊 Higany</span><span class="ore-bar" style="width:22%;background:#8899aa">Y 0-25 — Mocsár Biom</span></div>
-<div class="ore-layer"><span class="ore-label">⚫ Széntipp (Szén Kristály)</span><span class="ore-bar" style="width:20%;background:#444">Y 0-20 — CSAK Magasföld Biom</span></div>
+<div class="ore-layer"><span class="ore-label">⚫ Szén Kristály</span><span class="ore-bar" style="width:20%;background:#444">Fővilág, magma közelében, kb. Y&lt;30</span></div>
 </div>
 
 <h3>Érc-eloszlás Biom-onként</h3>
-<p>A különböző Biom-okban eltérő ércek és eltérő mennyiségek találhatók! Ez stratégiai fontosságú.</p>
-<table class="compare-table">
-  <tr><th>Érc</th><th>Mocsár</th><th>Magasföld</th><th>Dzsungel</th></tr>
-  <tr><td>Réz</td><td>Y0-128 (súly 40)</td><td>Y35-128 (súly 40)</td><td>Y0-128 (súly 40, 6-10/ér)</td></tr>
-  <tr><td>Ezüst</td><td>Y0-96</td><td>Y40-96</td><td>Y0-96</td></tr>
-  <tr><td>Ón (Tin)</td><td>Y0-128</td><td>Y40-128</td><td>Y0-128</td></tr>
-  <tr><td>Vas</td><td>Y0-50</td><td>Y10-40</td><td>Y0-50 (8-12/ér — legtöbb!)</td></tr>
-  <tr><td>Arany</td><td>Y0-48</td><td>Y0-48 (kis érméret!)</td><td>Y0-48 (4-6/ér)</td></tr>
-  <tr><td>Gyémánt</td><td>Y0-32 (súly 10)</td><td>❌ nem termel!</td><td>Y0-17 (súly 20 — 2×!)</td></tr>
-  <tr style="background:rgba(150,200,100,0.10)"><td><strong>Szén Kristály</strong></td><td>❌</td><td>✅ Y0-20 (súly 100 — leggyakoribb!)</td><td>❌</td></tr>
-  <tr style="background:rgba(150,200,100,0.10)"><td><strong>Keménykő</strong></td><td>❌</td><td>✅ Y0-20</td><td>❌</td></tr>
-  <tr><td>Higany</td><td>✅ Y0-20</td><td>❌</td><td>❌</td></tr>
-  <tr><td>Smaragd</td><td>❌</td><td>✅ Y0-20</td><td>❌</td></tr>
-  <tr><td>Elemi Obszidián</td><td>✅ Y0-15</td><td>❌</td><td>❌</td></tr>
-</table>
-<div class="info-box">⚒️ <strong>Biom stratégia:</strong> <strong>Dzsungel</strong> = legjobb fém-Biom (legnagyobb értípusok, 2× gyémánt). <strong>Magasföld</strong> = kötelező Szén Kristályért (ötvözéshez) és Keménykőért — de nincs Gyémánt! <strong>Mocsár</strong> = Higany + Elemi Obszidián (portálhoz Required).<br>Biom portálokkal: Magasföld Portál (Kő + Obszidián) → Dzsungel Portál (Falevél + Obszidián)!</div>
-<div class="info-box">🎮 <strong>Hardcore mód-különbség:</strong> Hardcore módban <strong>nem generálódnak érc csomók</strong>, és <strong>Y40 felett csak Adamantiumérc</strong> található. A bányászat lényegesen nehezebb!</div>
+<p>A korábbi részletes biome-táblázat több pontja régi vagy közösségi eredetű adatokra támaszkodott. Itt csak a helyi v0.9.0 fájlokkal biztosan igazolható pontokat tartjuk meg:</p>
+<ul>
+  <li><strong>Higany:</strong> 0.9.0-ban csak mocsárban, 25-ös szint alatt frissül.</li>
+  <li><strong>Szén Kristály:</strong> a fővilágban, magma közelében, nagyjából Y30 alatt jelenik meg.</li>
+  <li><strong>Mithril:</strong> az egész földalatti világban véletlenszerűen frissül.</li>
+  <li><strong>Adamantium:</strong> a földalatti világ legmélyebb részein jelenik meg.</li>
+</ul>
 
 <!-- ===== ÖTVÖZÉSI RENDSZER ===== -->
 
@@ -228,10 +218,10 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 </table>
 
 <h3>Szén Kristály megszerzése</h3>
-<p><strong>KIZÁRÓLAG Magasföld Biom-ban terem</strong>, Y0-20 szint között (súly: 100 — a legelterjedtebb érc ott!). Módok:</p>
+<p>A helyi v0.9.0 itemadat szerint a <strong>Szén Kristály</strong> a fővilágban, magma közelében, nagyjából Y30 alatt jelenik meg. Biztosan igazolt források:</p>
 <ul>
-  <li>Szén Kristály Fürtöt bányásszad (1 fürt = 4 szilánk)</li>
-  <li>Szénkockából olvasztható: 1 Szénkocka → 1 Szén Kristály Szilánk (az Ötvöző Kemencében)</li>
+  <li>Természetes lelőhely bányászata a magma közeli fővilági rétegekben.</li>
+  <li><code>Blast Furnace</code>-ben 1 <code>coal_block</code> + 1 <code>coal</code> receptből 1 <code>carbon_crystal_shard</code> készíthető.</li>
 </ul>
 <div class="tip-card">💡 <strong>Higany Üst fejlesztés (Ősi Fém páncélhoz):</strong> Ha teljes tartósságú Ősi Fém páncéldarabot kattintasz egy láva fölé helyezett Higany Üstra (Higany Érc + Üst a mocsárból), a teljes szett viselésénél a testhőmérséklet stabilan marad! Ez a fejlesztés független az Ötvöző Kemencétől.</div>
 <div class="info-box">📝 <strong>Más ötvözetek:</strong> A játék referencia adatai szerint <em>csak</em> a fenti 3 ötvözet létezik az Ötvöző Kemencében. Keménykő, Mithril és Adamantium felszerelések NEM ötvözhetők — standard nagy kemencéből kerülnek ki.</div>
@@ -270,9 +260,9 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
   <tr class="alloy-row"><td><span class="tier t-iron">High Carbon Steel</span></td><td>Iron + Carbon Crystal</td><td>5% Damage Reduction per piece, chain Mining (hold button). Strong enough for the Underground.</td></tr>
 </table>
 
-<div class="info"><strong>Carbon Crystal</strong> can be obtained two ways:<br>
-① Found naturally in <strong>deep caves</strong> (Y&lt;35)<br>
-② <strong>Smelt a Block of Coal in a Blast Furnace</strong> — put the coal block in the smelting slot (top-left), <em>not the fuel slot!</em></div>
+<div class="info"><strong>Carbon Crystal</strong> is placed by the local v0.9.0 item data near magma in the overworld, roughly below Y30.<br>
+① Mine natural Carbon Crystal deposits near magma<br>
+② In a <strong>Blast Furnace</strong>, <code>coal_block</code> + <code>coal</code> crafts 1 <strong>carbon_crystal_shard</strong></div>
 
 
 <!-- ===== MULTIBLOCK FURNACE ===== -->
@@ -350,8 +340,8 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
   <tr><td><span class="tier t-iron">4</span></td><td>Iron</td><td>Deep Mining</td><td>Copper/Silver pickaxe</td></tr>
   <tr><td><span class="tier t-hard">5</span></td><td>Hardstone</td><td>Underground</td><td>Iron pickaxe</td></tr>
   <tr><td><span class="tier t-ancient">6</span></td><td>Ancient Metal</td><td>Underground</td><td>Iron pickaxe</td></tr>
-  <tr><td><span class="tier t-mithril">7</span></td><td>Mithril</td><td>Deep Mining</td><td>Iron pickaxe / war hammer</td></tr>
-  <tr><td><span class="tier t-adamantium">8</span></td><td>Adamantium</td><td>Near the Nether</td><td>Mithril pickaxe / war hammer</td></tr>
+  <tr><td><span class="tier t-mithril">7</span></td><td>Mithril</td><td>Underground world</td><td>Iron pickaxe / war hammer</td></tr>
+  <tr><td><span class="tier t-adamantium">8</span></td><td>Adamantium</td><td>Deepest Underground</td><td>Mithril pickaxe / war hammer</td></tr>
 </table>
 
 <h2 id="alloying">Alloying System (Alloying Furnace)</h2>
@@ -400,9 +390,9 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
   <tr class="alloy-row"><td><span class="tier t-iron">Углеродистая сталь</span></td><td>Железо + Угольный кристалл</td><td>5% снижение урона за предмет, цепная добыча (удержи кнопку). Достаточно сильна для Подземного мира.</td></tr>
 </table>
 
-<div class="info"><strong>Угольный кристалл</strong> добывается двумя способами:<br>
-① Встречается в <strong>глубоких пещерах</strong> (Y&lt;35)<br>
-② <strong>Переплавка Угольного блока в Доменной печи</strong> — положи угольный блок в слот плавки (левый верхний), <em>не в слот топлива!</em></div>
+<div class="info"><strong>Угольный кристалл</strong> по локальным данным v0.9.0 появляется рядом с магмой в верхнем мире, примерно ниже Y30.<br>
+① Добыча природных залежей рядом с магмой<br>
+② В <strong>Доменной печи</strong> рецепт <code>coal_block</code> + <code>coal</code> даёт 1 <strong>carbon_crystal_shard</strong></div>
 
 
 <!-- ===== МНОГОБЛОЧНАЯ ПЕЧЬ ===== -->
@@ -477,22 +467,18 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
   <tr><td><span class="tier t-iron">4</span></td><td>Железо</td><td>Глубокие шахты</td><td>Медная/серебряная кирка</td></tr>
   <tr><td><span class="tier t-hard">5</span></td><td>Твердокамень</td><td>Подземный мир</td><td>Железная кирка</td></tr>
   <tr><td><span class="tier t-ancient">6</span></td><td>Древний металл</td><td>Подземный мир</td><td>Железная кирка</td></tr>
-  <tr><td><span class="tier t-mithril">7</span></td><td>Мифрил</td><td>Глубокие шахты</td><td>Железная кирка / молот войны</td></tr>
-  <tr><td><span class="tier t-adamantium">8</span></td><td>Адамант</td><td>Незер</td><td>Мифриловая кирка / молот войны</td></tr>
+  <tr><td><span class="tier t-mithril">7</span></td><td>Мифрил</td><td>Подземный мир</td><td>Железная кирка / молот войны</td></tr>
+  <tr><td><span class="tier t-adamantium">8</span></td><td>Адамант</td><td>Самые глубокие слои Подземного мира</td><td>Мифриловая кирка / молот войны</td></tr>
 </table>
 
 <h3>Распределение руды по биомам</h3>
-<p>В разных биомах встречаются разные руды и в разных количествах! Это стратегически важно.</p>
-<table class="compare-table">
-  <tr><th>Руда</th><th>Болото</th><th>Нагорье</th><th>Джунгли</th></tr>
-  <tr><td>Медь</td><td>Y0-128</td><td>Y35-128</td><td>Y0-128 (6-10/жила)</td></tr>
-  <tr><td>Серебро</td><td>Y0-96</td><td>Y40-96</td><td>Y0-96</td></tr>
-  <tr><td>Железо</td><td>Y0-50</td><td>Y10-40</td><td>Y0-50 (8-12/жила — больше всего!)</td></tr>
-  <tr><td>Алмаз</td><td>Y0-32</td><td>❌ не генерируется!</td><td>Y0-17 (в 2 раза чаще!)</td></tr>
-  <tr style="background:rgba(150,200,100,0.10)"><td><strong>Угольный кристалл</strong></td><td>❌</td><td>✅ Y0-20 (самый частый!)</td><td>❌</td></tr>
-  <tr><td>Ртуть</td><td>✅ Y0-20</td><td>❌</td><td>❌</td></tr>
-</table>
-<div class="info-box">⚒️ <strong>Стратегия по биомам:</strong> <strong>Джунгли</strong> = лучший металлический биом (самые большие жилы, алмазов в 2×). <strong>Нагорье</strong> = обязательно для Угольного кристалла и Твердокамня — но нет алмазов! <strong>Болото</strong> = Ртуть + Элементарный обсидиан.</div>
+<p>Прежняя подробная таблица по биомам частично опиралась на старые или комьюнити-данные. Здесь оставлены только пункты, которые уверенно подтверждаются локальными файлами v0.9.0:</p>
+<ul>
+  <li><strong>Ртуть:</strong> в 0.9.0 обновляется только в болоте ниже 25 уровня.</li>
+  <li><strong>Угольный кристалл:</strong> появляется в верхнем мире рядом с магмой, примерно ниже Y30.</li>
+  <li><strong>Мифрил:</strong> случайно обновляется по всему Подземному миру.</li>
+  <li><strong>Адамант:</strong> появляется в самых глубоких частях Подземного мира.</li>
+</ul>
 
 <!-- ===== СИСТЕМА СПЛАВЛЕНИЯ ===== -->
 

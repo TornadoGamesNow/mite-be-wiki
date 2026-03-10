@@ -5,13 +5,18 @@ import TopNav from '../components/TopNav.astro';
 import RecipesHub from '../islands/RecipesHub.tsx';
 import '../styles/global.css';
 ---
-<BaseLayout title="Recipes — MITE:BE Wiki" description="MITE:BE crafting receptek: 1500+ recept szűrhető böngészőben — állomás, nehézség, skill és anyag szerint.">
+<BaseLayout title="Recipes — MITE:BE Wiki" description="MITE:BE crafting receptek: 1686 recept szűrhető böngészőben — állomás, nehézség, skill és anyag szerint.">
   <Header />
   <TopNav currentPage="recipes" />
-  <main style="max-width:1440px; margin:0 auto; padding:24px 32px;">
-    <h2 data-lang="hu">🔧 Receptek</h2>
-    <h2 data-lang="en">🔧 Recipes</h2>
-    <h2 data-lang="ru">🔧 Рецепты</h2>
+  <main id="recipes-page" style="max-width:1800px; margin:0 auto; padding:8px 32px 24px;">
+    <h2 data-lang="hu" style="padding-top:8px; margin-bottom:6px">Receptek</h2>
+    <h2 data-lang="en" style="padding-top:8px; margin-bottom:6px">Recipes</h2>
+    <h2 data-lang="ru" style="padding-top:8px; margin-bottom:6px">Рецепты</h2>
     <RecipesHub client:load />
   </main>
 </BaseLayout>
+<style is:global>
+  @media (min-width: 640px) {
+    body:has(#recipes-page) .wiki-search { display: none; }
+  }
+</style>

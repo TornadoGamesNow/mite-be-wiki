@@ -129,7 +129,7 @@ export default function MobExplorer() {
   const [lang, setLang] = useState<string>('hu');
   const [selectedMob, setSelectedMob] = useState<Mob | null>(null);
   const [diffFilter, setDiffFilter] = useState<'' | 'early' | 'mid' | 'late' | 'boss'>('');
-  const [zoneFilter, setZoneFilter] = useState<'' | 'surface' | 'underground' | 'nether'>('');
+  const [zoneFilter, setZoneFilter] = useState<'' | 'surface' | 'underground' | 'nether' | 'unknown'>('');
   const [typeFilter, setTypeFilter] = useState<string>('');
   const [search, setSearch] = useState('');
   const [sortKey, setSortKey] = useState<'name' | 'hp' | 'dmg' | 'xp'>('name');
@@ -215,8 +215,11 @@ export default function MobExplorer() {
       <th
         onClick={() => { if (sortKey === k) setSortAsc(!sortAsc); else { setSortKey(k); setSortAsc(true); } }}
         style={{ cursor: 'pointer', userSelect: 'none', whiteSpace: 'nowrap',
-          color: active ? 'var(--gold)' : 'var(--text2)',
-          background: 'var(--surface)', padding: '8px 10px' }}
+          position: 'sticky', top: 0, zIndex: 2,
+          background: 'rgba(14,14,20,.97)', padding: '9px 10px',
+          fontSize: '.75em', letterSpacing: '.7px', textTransform: 'uppercase',
+          color: active ? 'var(--gold)' : 'var(--text2)', fontWeight: active ? 700 : 500,
+          boxShadow: '0 2px 8px rgba(0,0,0,.5)' }}
       >
         {label} {active ? (sortAsc ? '▲' : '▼') : <span style={{ opacity: .3 }}>▲</span>}
       </th>
@@ -246,7 +249,7 @@ export default function MobExplorer() {
   }
 
   // Region pill button style
-  function zoneBtnStyle(z: '' | 'surface' | 'underground' | 'nether') {
+  function zoneBtnStyle(z: '' | 'surface' | 'underground' | 'nether' | 'unknown') {
     const active = zoneFilter === z;
     return {
       padding: '4px 12px', borderRadius: 20, fontSize: '.8em', fontWeight: 600,
@@ -264,99 +267,52 @@ export default function MobExplorer() {
 
   return (
     <div style={{ position: 'relative' }}>
-      {/* Filter bar + search egy sorban */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start',
-        gap: 16, marginBottom: 10, flexWrap: 'wrap' }}>
-
-        {/* Bal: filterek */}
-        <div style={{ flex: 1, minWidth: 0 }}>
-          {/* Difficulty row */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap', marginBottom: 6 }}>
-            <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
-              letterSpacing: '.6px', minWidth: 64 }}>
-              {lang === 'hu' ? 'Nehézség' : lang === 'ru' ? 'Сложность' : 'Difficulty'}
-            </span>
-            {(['', 'early', 'mid', 'late', 'boss'] as const).map(d => {
-              const count = d ? allMobs.filter(m => m.difficulty === d).length : allMobs.length;
-              return (
-                <button key={d} onClick={() => setDiffFilter(d)} style={diffBtnStyle(d)}>
-                  {d ? `${diffMeta[d].badge} ${diffMeta[d].label}` : (lang === 'hu' ? 'Mind' : lang === 'ru' ? 'Все' : 'All')}
-                  <span style={{ opacity: .55, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>
-                    ({count})
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-          {/* Region row */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap' }}>
-            <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
-              letterSpacing: '.6px', minWidth: 64 }}>
-              {lang === 'hu' ? 'Régió' : lang === 'ru' ? 'Регион' : 'Region'}
-            </span>
-            {(['', 'surface', 'underground', 'nether'] as const).map(z => {
-              const count = z ? allMobs.filter(m => m.spawnZones.includes(z)).length : allMobs.length;
-              return (
-                <button key={z} onClick={() => setZoneFilter(z)} style={zoneBtnStyle(z)}>
-                  {z ? `${zoneIcon[z]} ${zoneLabel(z)}` : (lang === 'hu' ? 'Mind' : lang === 'ru' ? 'Все' : 'All')}
-                  <span style={{ opacity: .55, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>
-                    ({count})
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-          {/* Type row */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap', marginTop: 4 }}>
-            <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
-              letterSpacing: '.6px', minWidth: 64 }}>
-              {lang === 'hu' ? 'Típus' : lang === 'ru' ? 'Тип' : 'Type'}
-            </span>
-            {['', 'undead', 'monster', 'animal', 'nether', 'elemental', 'boss', 'end'].map(t => {
-              const count = t ? allMobs.filter(m => m.mobType === t).length : allMobs.length;
-              const meta = t ? mobTypeMeta[t] : null;
-              const active = typeFilter === t;
-              return (
-                <button key={t} onClick={() => setTypeFilter(t)} style={{
-                  padding: '3px 10px', borderRadius: 20, fontSize: '.78em', fontWeight: active ? 700 : 600,
-                  cursor: 'pointer',
-                  border: `1px solid ${active && meta ? meta.color + '88' : 'var(--surface2)'}`,
-                  background: active && meta ? meta.bg : 'transparent',
-                  color: active && meta ? meta.color : 'var(--text2)',
-                  transition: 'all .15s',
-                } as React.CSSProperties}>
-                  {t ? (mobTypeMeta[t]?.[lang as 'hu' | 'en' | 'ru'] ?? t) : (lang === 'hu' ? 'Mind' : lang === 'ru' ? 'Все' : 'All')}
-                  <span style={{ opacity: .55, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>({count})</span>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Jobb: search + active chips */}
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 6, flexShrink: 0 }}>
-          <div style={{ position: 'relative' }}>
+      {/* Single-column filter container */}
+      <div style={{
+        background: 'var(--surface)',
+        border: '1px solid var(--surface2)',
+        borderRadius: 8,
+        padding: '11px 14px',
+        marginBottom: 8,
+      }}>
+        {/* Search row — first, same visual weight as filter rows */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap',
+          paddingBottom: 7, borderBottom: '1px solid rgba(255,255,255,.06)', marginBottom: 7 }}>
+          <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
+            letterSpacing: '.6px', minWidth: 64, flexShrink: 0 }}>
+            {lang === 'hu' ? 'Keresés' : lang === 'ru' ? 'Поиск' : 'Search'}
+          </span>
+          <div style={{ position: 'relative', flex: '1 1 180px', maxWidth: 400 }}>
+            <span style={{
+              position: 'absolute', left: 8, top: '50%', transform: 'translateY(-50%)',
+              fontSize: '.82em', color: 'var(--text2)', pointerEvents: 'none', lineHeight: 1,
+            }}>🔍</span>
             <input
-              type="search"
-              placeholder={lang === 'hu' ? 'Szörny keresése…' : lang === 'ru' ? 'Поиск мобов…' : 'Search mobs…'}
+              type="text"
+              placeholder={lang === 'hu' ? 'Szörny neve…' : lang === 'ru' ? 'Имя моба…' : 'Mob name…'}
               value={search}
               onChange={e => setSearch(e.target.value)}
-              style={{ padding: '6px 32px 6px 12px', borderRadius: 6, border: '1px solid var(--surface2)',
-                       background: 'var(--surface)', color: 'var(--text)', width: 220 }}
+              style={{
+                width: '100%', boxSizing: 'border-box',
+                padding: '4px 24px 4px 26px', borderRadius: 5,
+                border: `1px solid ${search ? 'rgba(240,192,64,.28)' : 'rgba(255,255,255,.09)'}`,
+                background: 'rgba(0,0,0,.15)', color: 'var(--text)',
+                outline: 'none', transition: 'border-color .2s', fontSize: '.88em',
+              }}
             />
             {search && (
               <button onClick={() => setSearch('')}
-                style={{ position: 'absolute', right: 8, top: '50%', transform: 'translateY(-50%)',
+                style={{ position: 'absolute', right: 6, top: '50%', transform: 'translateY(-50%)',
                          background: 'none', border: 'none', color: 'var(--text2)', cursor: 'pointer',
-                         fontSize: '1em', padding: '2px 4px', lineHeight: 1 }}>×</button>
+                         fontSize: '.8em', padding: '1px 3px', lineHeight: 1, opacity: .55 }}>✕</button>
             )}
           </div>
-          {/* Active filter chips */}
-          {(diffFilter || zoneFilter) && (
-            <div style={{ display: 'flex', gap: 6, alignItems: 'center', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
+          {/* Active chips — right side of search row */}
+          {isFiltered && (
+            <div style={{ display: 'flex', gap: 5, alignItems: 'center', flexWrap: 'wrap', marginLeft: 'auto' }}>
               {diffFilter && (
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '2px 8px',
-                  borderRadius: 20, fontSize: '.72em', fontWeight: 600,
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 3, padding: '2px 7px',
+                  borderRadius: 20, fontSize: '.7em', fontWeight: 600,
                   background: diffMeta[diffFilter].bg, color: diffMeta[diffFilter].color,
                   border: `1px solid ${diffMeta[diffFilter].border}` }}>
                   {diffMeta[diffFilter].badge} {diffMeta[diffFilter].label}
@@ -366,8 +322,8 @@ export default function MobExplorer() {
                 </span>
               )}
               {zoneFilter && (
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '2px 8px',
-                  borderRadius: 20, fontSize: '.72em', fontWeight: 600,
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 3, padding: '2px 7px',
+                  borderRadius: 20, fontSize: '.7em', fontWeight: 600,
                   background: 'rgba(126,200,227,.15)', color: 'var(--mithril)',
                   border: '1px solid rgba(126,200,227,.35)' }}>
                   {zoneIcon[zoneFilter]} {zoneLabel(zoneFilter)}
@@ -377,8 +333,8 @@ export default function MobExplorer() {
                 </span>
               )}
               {typeFilter && mobTypeMeta[typeFilter] && (
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '2px 8px',
-                  borderRadius: 20, fontSize: '.72em', fontWeight: 600,
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 3, padding: '2px 7px',
+                  borderRadius: 20, fontSize: '.7em', fontWeight: 600,
                   background: mobTypeMeta[typeFilter].bg, color: mobTypeMeta[typeFilter].color,
                   border: `1px solid ${mobTypeMeta[typeFilter].color}55` }}>
                   {mobTypeMeta[typeFilter][lang as 'hu' | 'en' | 'ru']}
@@ -387,17 +343,79 @@ export default function MobExplorer() {
                       padding: 0, lineHeight: 1, marginLeft: 2, opacity: .7 }}>×</button>
                 </span>
               )}
-              {isFiltered && (
-                <button onClick={() => { setDiffFilter(''); setZoneFilter(''); setTypeFilter(''); setSearch(''); }}
-                  style={{ fontSize: '.7em', color: 'var(--text2)', background: 'none', border: 'none',
-                    cursor: 'pointer', padding: '2px 4px', textDecoration: 'underline' }}>
-                  {lang === 'hu' ? 'Törlés' : lang === 'ru' ? 'Сбросить' : 'Clear all'}
-                </button>
-              )}
+              <button onClick={() => { setDiffFilter(''); setZoneFilter(''); setTypeFilter(''); setSearch(''); }}
+                style={{ fontSize: '.68em', color: 'var(--text2)', background: 'none', border: 'none',
+                  cursor: 'pointer', padding: '1px 3px', opacity: .65, textDecoration: 'underline' }}>
+                {lang === 'hu' ? 'Törlés' : lang === 'ru' ? 'Сброс' : 'Clear'}
+              </button>
             </div>
           )}
         </div>
-      </div>
+
+        {/* Difficulty row */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap',
+          paddingBottom: 7, borderBottom: '1px solid rgba(255,255,255,.06)', marginBottom: 7 }}>
+          <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
+            letterSpacing: '.6px', minWidth: 64, marginRight: 2 }}>
+            {lang === 'hu' ? 'Nehézség' : lang === 'ru' ? 'Сложность' : 'Difficulty'}
+          </span>
+          {(['', 'early', 'mid', 'late', 'boss'] as const).map(d => {
+            const count = d ? allMobs.filter(m => m.difficulty === d).length : allMobs.length;
+            return (
+              <button key={d} onClick={() => setDiffFilter(d)} style={diffBtnStyle(d)}>
+                {d ? `${diffMeta[d].badge} ${diffMeta[d].label}` : (lang === 'hu' ? 'Mind' : lang === 'ru' ? 'Все' : 'All')}
+                <span style={{ opacity: .55, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>({count})</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Region row */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap',
+          paddingBottom: 7, borderBottom: '1px solid rgba(255,255,255,.06)', marginBottom: 7 }}>
+          <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
+            letterSpacing: '.6px', minWidth: 64, marginRight: 2 }}>
+            {lang === 'hu' ? 'Régió' : lang === 'ru' ? 'Регион' : 'Region'}
+          </span>
+          {(['', 'surface', 'underground', 'nether', 'unknown'] as const).map(z => {
+            const count = z ? allMobs.filter(m => m.spawnZones.includes(z)).length : allMobs.length;
+            return (
+              <button key={z} onClick={() => setZoneFilter(z)} style={zoneBtnStyle(z)}>
+                {z ? `${zoneIcon[z]} ${zoneLabel(z)}` : (lang === 'hu' ? 'Mind' : lang === 'ru' ? 'Все' : 'All')}
+                <span style={{ opacity: .55, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>({count})</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Type row */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap' }}>
+          <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
+            letterSpacing: '.6px', minWidth: 64, marginRight: 2 }}>
+            {lang === 'hu' ? 'Típus' : lang === 'ru' ? 'Тип' : 'Type'}
+          </span>
+          {['', 'undead', 'monster', 'animal', 'nether', 'elemental', 'boss', 'end'].map(t => {
+            const count = t ? allMobs.filter(m => m.mobType === t).length : allMobs.length;
+            const meta = t ? mobTypeMeta[t] : null;
+            const active = typeFilter === t;
+            const isAll = t === '' && active;
+            return (
+              <button key={t} onClick={() => setTypeFilter(t)} style={{
+                padding: '3px 10px', borderRadius: 20, fontSize: '.78em',
+                fontWeight: (isAll || (active && meta)) ? 700 : 600,
+                cursor: 'pointer',
+                border: `1px solid ${isAll ? 'var(--text)' : active && meta ? meta.color + '88' : 'var(--surface2)'}`,
+                background: isAll ? 'var(--surface2)' : active && meta ? meta.bg : 'transparent',
+                color: isAll ? 'var(--text)' : active && meta ? meta.color : 'var(--text2)',
+                transition: 'all .15s',
+              } as React.CSSProperties}>
+                {t ? (mobTypeMeta[t]?.[lang as 'hu' | 'en' | 'ru'] ?? t) : (lang === 'hu' ? 'Mind' : lang === 'ru' ? 'Все' : 'All')}
+                <span style={{ opacity: .55, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>({count})</span>
+              </button>
+            );
+          })}
+        </div>
+      </div>{/* end unified filter container */}
 
       {/* Count */}
       <div style={{ fontSize: '.8em', color: 'var(--text2)', marginBottom: 4 }}>
@@ -455,15 +473,15 @@ export default function MobExplorer() {
 
       {/* Table (hidden on mobile via CSS) */}
       <div className="mob-table-wrap" style={{ overflowY: 'auto', maxHeight: '70vh', borderRadius: 6, border: '1px solid var(--surface2)' }}>
-      <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+      <table style={{ width: '100%', borderCollapse: 'separate', borderSpacing: 0 }}>
         <colgroup>
           <col style={{ width: '50%' }} />
           <col style={{ width: '13%' }} />
           <col style={{ width: '22%' }} />
           <col style={{ width: '15%' }} />
         </colgroup>
-        <thead style={{ position: 'sticky', top: 0, zIndex: 2 }}>
-          <tr style={{ borderBottom: '2px solid var(--surface2)' }}>
+        <thead>
+          <tr style={{ borderBottom: '2px solid rgba(240,192,64,.45)' }}>
             <SortTh k="name" label={lang === 'hu' ? 'Név' : lang === 'ru' ? 'Имя' : 'Name'} />
             <SortTh k="hp" label="HP" />
             <SortTh k="dmg" label={lang === 'hu' ? '⚔ Sebzés' : lang === 'ru' ? '⚔ Урон' : '⚔ Damage'} />

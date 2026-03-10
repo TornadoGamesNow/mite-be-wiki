@@ -24,17 +24,17 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   hu: [
     'Páncél 50% alatt elveszíti a védelmet — tartsd karban!',
     'Kasza: leghosszabb hatótáv, de harcban 4× gyorsabban kopik',
-    'Adamantium nyíl az egyetlen, ami az End Kristályokat elpusztítja',
+    'Adamantium nyíl az egyetlen nyíl, ami End Kristályt tör — adamantium eszköz is működik',
   ],
   en: [
     'Armor loses protection below 50% durability — keep it maintained!',
     'Scythe: longest reach, but wears 4x faster in combat',
-    'Adamantium arrows are the only ones that destroy End Crystals',
+    'Adamantium arrows are the only arrows that break End Crystals — adamantium tools work too',
   ],
   ru: [
     'Броня теряет защиту ниже 50% прочности — следи за состоянием!',
     'Коса: самый длинный радиус, но в 4× быстрее изнашивается в бою',
-    'Стрелы из адаманта — единственные, уничтожающие Кристаллы Края',
+    'Стрелы из адаманта — единственные стрелы для Кристаллов Края, но подходят и адамантовые инструменты',
   ],
 }} />
 
@@ -180,14 +180,14 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr style="background:rgba(192,192,128,0.10)"><td><strong>Ezüst Nyíl</strong></td><td>+3</td><td>60%</td><td>Extra sebzés élőholtak ellen + White Ghoul sebzésére képes</td></tr>
   <tr><td>Vas Nyíl</td><td>+4</td><td>70%</td><td>—</td></tr>
   <tr style="background:rgba(126,200,227,0.12)"><td><strong>Mithril-nyíl</strong></td><td>+7</td><td>80%</td><td>Legjobb sebzés!</td></tr>
-  <tr style="background:rgba(179,136,255,0.14)"><td><strong><span class="wiki-item" data-id="adamantium_arrow">Adamantium-nyíl</span></strong></td><td>+6</td><td>90%</td><td>Az egyetlen nyíl, amely elpusztítja az End Kristályokat!</td></tr>
+  <tr style="background:rgba(179,136,255,0.14)"><td><strong><span class="wiki-item" data-id="adamantium_arrow">Adamantium-nyíl</span></strong></td><td>+6</td><td>90%</td><td>Az egyetlen nyíl, amely End Kristályt tör; adamantium eszköz is jó rá</td></tr>
 </table>
 <table class="compare-table">
   <tr><th>Íj</th><th>Tartósság</th><th>Sebesség Bónusz</th><th>Megjegyzés</th></tr>
   <tr><td>Vanilla Íj</td><td>385</td><td>—</td><td>Standard</td></tr>
   <tr style="background:rgba(126,200,227,0.12)"><td><strong>Mithril Íj</strong></td><td>128 használat</td><td>+25% húzás és röpülési sebesség</td><td>Legjobbra fejleszthető (Legendary → Artifact)</td></tr>
 </table>
-<div class="info-box">🏹 <strong>Tegez / Nyíltegez (Quiver):</strong> 6 slot × 16 nyíl = <strong>96 nyíl</strong>. Kiegészítő slotba kerül. Receptje: 1 Toll + 2 Bőr.<br><strong>Legjobb kombó:</strong> Mithril Íj + Adamantium-nyíl — az End Kristályok ellen kötelező!</div>
+<div class="info-box">🏹 <strong>Tegez / Nyíltegez (Quiver):</strong> 6 slot × 16 nyíl = <strong>96 nyíl</strong>. Kiegészítő slotba kerül. Receptje: 1 Toll + 2 Bőr.<br><strong>Legjobb kombó:</strong> Mithril Íj + Adamantium-nyíl — a legjobb távoli megoldás az End Kristályok ellen.</div>
 </div>
 
 <div data-lang="en">
@@ -241,6 +241,8 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr><td><span class="tier t-copper">Copper / Silver</span></td><td>6%</td></tr>
   <tr><td><span class="tier t-iron">Iron</span></td><td>8%</td></tr>
   <tr><td><span class="tier t-iron">Gold</span></td><td>12%</td></tr>
+  <tr><td><span class="tier t-hard">Hardstone</span></td><td>12%</td></tr>
+  <tr><td><span class="tier t-ancient">Ancient Metal</span></td><td>10%</td></tr>
   <tr><td><span class="tier t-mithril">Mithril</span></td><td>15%</td></tr>
   <tr><td><span class="tier t-adamantium">Adamantium</span></td><td>18%</td></tr>
 </table>
@@ -290,9 +292,9 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr style="background:rgba(192,192,128,0.10)"><td><strong>Silver Arrow</strong></td><td>+3</td><td>60%</td><td>Bonus vs undead + can hit White Ghouls</td></tr>
   <tr><td>Iron Arrow</td><td>+4</td><td>70%</td><td>—</td></tr>
   <tr style="background:rgba(126,200,227,0.12)"><td><strong>Mithril Arrow</strong></td><td>+7</td><td>80%</td><td>Best damage!</td></tr>
-  <tr style="background:rgba(179,136,255,0.14)"><td><strong>Adamantium Arrow</strong></td><td>+6</td><td>90%</td><td>The only arrow that destroys End Crystals!</td></tr>
+  <tr style="background:rgba(179,136,255,0.14)"><td><strong>Adamantium Arrow</strong></td><td>+6</td><td>90%</td><td>The only arrow that breaks End Crystals; adamantium tools work too</td></tr>
 </table>
-<div class="info-box">🏹 <strong>Quiver:</strong> 6 slots × 16 arrows = <strong>96 arrows</strong>. Recipe: 1 Feather + 2 Leather.<br><strong>Best combo:</strong> Mithril Bow + Adamantium Arrows — essential for End Crystals!</div>
+<div class="info-box">🏹 <strong>Quiver:</strong> 6 slots × 16 arrows = <strong>96 arrows</strong>. Recipe: 1 Feather + 2 Leather.<br><strong>Best combo:</strong> Mithril Bow + Adamantium Arrows — the best ranged answer to End Crystals.</div>
 </div>
 
 <div data-lang="ru">
@@ -349,6 +351,8 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr><td><span class="tier t-copper">Медь / Серебро</span></td><td>6%</td></tr>
   <tr><td><span class="tier t-iron">Железо</span></td><td>8%</td></tr>
   <tr><td><span class="tier t-iron">Золото</span></td><td>12%</td></tr>
+  <tr><td><span class="tier t-hard">Твердокамень</span></td><td>12%</td></tr>
+  <tr><td><span class="tier t-ancient">Древний металл</span></td><td>10%</td></tr>
   <tr><td><span class="tier t-mithril">Мифрил</span></td><td>15%</td></tr>
   <tr><td><span class="tier t-adamantium">Адамант</span></td><td>18%</td></tr>
 </table>
@@ -432,14 +436,14 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr style="background:rgba(192,192,128,0.10)"><td><strong>Серебряная</strong></td><td>+3</td><td>60%</td><td>Бонус против нежити + бьёт Белых Упырей</td></tr>
   <tr><td>Железная</td><td>+4</td><td>70%</td><td>—</td></tr>
   <tr style="background:rgba(126,200,227,0.12)"><td><strong>Мифриловая</strong></td><td>+7</td><td>80%</td><td>Лучший урон!</td></tr>
-  <tr style="background:rgba(179,136,255,0.14)"><td><strong>Адамантиевая</strong></td><td>+6</td><td>90%</td><td>Единственная, уничтожающая Кристаллы Края!</td></tr>
+  <tr style="background:rgba(179,136,255,0.14)"><td><strong>Адамантиевая</strong></td><td>+6</td><td>90%</td><td>Единственная стрела для Кристаллов Края; адамантовые инструменты тоже подходят</td></tr>
 </table>
 <table class="compare-table">
   <tr><th>Лук</th><th>Прочность</th><th>Бонус скорости</th><th>Примечание</th></tr>
   <tr><td>Обычный лук</td><td>385</td><td>—</td><td>Стандартный</td></tr>
   <tr style="background:rgba(126,200,227,0.12)"><td><strong>Мифриловый лук</strong></td><td>128 исп.</td><td>+25% скорость натяжения и полёта</td><td>Лучший (Legendary → Artifact)</td></tr>
 </table>
-<div class="info-box">🏹 <strong>Колчан:</strong> 6 ячеек × 16 стрел = <strong>96 стрел</strong>. Рецепт: 1 Перо + 2 Кожи.<br><strong>Лучший комбо:</strong> Мифриловый лук + Адамантиевые стрелы — обязателен для Кристаллов Края!</div>
+<div class="info-box">🏹 <strong>Колчан:</strong> 6 ячеек × 16 стрел = <strong>96 стрел</strong>. Рецепт: 1 Перо + 2 Кожи.<br><strong>Лучший комбо:</strong> Мифриловый лук + Адамантиевые стрелы — лучший дальний вариант против Кристаллов Края.</div>
 </div>
 
 <ProgressComplete pageId="combat" />

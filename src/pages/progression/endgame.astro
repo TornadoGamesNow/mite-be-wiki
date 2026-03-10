@@ -14,7 +14,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const sidebarGroups = getSidebarGroups('progression/endgame');
 ---
-<BaseLayout title="Endgame | MITE:BE Wiki" description="MITE:BE endgame: Wither, Nether Star, Bedrock Pulverizer, Ender Dragon — 100 HP (Simple) / 1000 HP (Hardcore).">
+<BaseLayout title="Endgame | MITE:BE Wiki" description="MITE:BE endgame: Wither, Nether Star, Bedrock Pulverizer, Ender Dragon — local mob data lists 200 HP.">
   <Header />
   <TopNav currentPage="progression" />
   <div class="container">
@@ -27,17 +27,17 @@ const sidebarGroups = getSidebarGroups('progression/endgame');
   hu: [
     'Wither — Nether Csillag — Bedrock Porzó — End Portal',
     'Porzót a Nether bedrock magjára kell helyezni — Adamantium csákánnyal visszavehető',
-    'Ender Sárkány: 100 HP (Simple) / 1000 HP (Hardcore) — Mithril íj + Adamantium nyíl',
+    'Ender Sárkány: a helyi mob-adat 200 HP-t jelez — Mithril íj + Adamantium nyíl',
   ],
   en: [
     'Wither — Nether Star — Bedrock Pulverizer — End Portal',
     'Pulverizer placed on Nether bedrock core — retrieved with Adamantium pickaxe',
-    'Ender Dragon: 100 HP (Simple) / 1000 HP (Hardcore) — Mithril bow + Adama arrows',
+    'Ender Dragon: local mob data lists 200 HP — Mithril bow + Adamantium arrows',
   ],
   ru: [
     'Иссушитель — Звезда Незера — Дробитель Бедрока — Портал в Край',
     'Дробитель на ядро бедрока в Незере — забрать кайлом из адаманта',
-    'Дракон Края: 100 HP (Simple) / 1000 HP (Hardcore) — лук мифрил + стрелы адамант',
+    'Дракон Края: локальные данные мобов показывают 200 HP — мифриловый лук + адамантовые стрелы',
   ],
 }} />
 
@@ -82,7 +82,7 @@ const sidebarGroups = getSidebarGroups('progression/endgame');
 <!-- ===== ENDER DRAGON ===== -->
 
 <h2 id="ender-dragon">Ender-sárkány Legyőzése</h2>
-<div class="info-box">🎮 <strong>Mód-különbség:</strong> Az Ender-sárkány HP-ja módtól függ: Simple módban <strong>100 HP</strong>, Hardcore módban <strong>1000 HP</strong>! A Hardcore sárkány elleni felkészülés lényegesen komolyabb felszerelést és stratégiát igényel.</div>
+<div class="info-box">🎮 <strong>Helyi adat:</strong> A csomagolt <code>data/mobs.json</code> az Ender-sárkányhoz <strong>200 HP</strong>-t jelez. A korábbi 100/1000 HP mód-bontást a helyi v0.9.0 adatok nem támasztják alá.</div>
 <p>A végső csata!</p>
 <ol>
   <li><strong>Ender-kristályok elpusztítása</strong> — Adamantium csákánnyal vagy nyíllal! Ha nem pusztítod el őket, a sárkány folyamatosan gyógyul.</li>
@@ -135,7 +135,7 @@ const sidebarGroups = getSidebarGroups('progression/endgame');
 <!-- ===== ENDER DRAGON ===== -->
 
 <h2 id="ender-dragon">Defeating the Ender Dragon</h2>
-<div class="info-box">🎮 <strong>Mode difference:</strong> The Ender Dragon's HP depends on game mode: Simple mode <strong>100 HP</strong>, Hardcore mode <strong>1000 HP</strong>! Preparing for the Hardcore dragon requires significantly better gear and strategy.</div>
+<div class="info-box">🎮 <strong>Local data:</strong> The bundled <code>data/mobs.json</code> lists the Ender Dragon at <strong>200 HP</strong>. The earlier 100/1000 HP mode split is not supported by the local v0.9.0 data.</div>
 <p>The final battle!</p>
 <ol>
   <li><strong>Destroy the End Crystals</strong> — Use adamantium pickaxe or arrows! If you don't destroy them, the dragon heals continuously.</li>
@@ -185,7 +185,7 @@ const sidebarGroups = getSidebarGroups('progression/endgame');
 <!-- ===== ENDER DRAGON ===== -->
 
 <h2 id="ender-dragon">Победа над Драконом Края</h2>
-<div class="info-box">🎮 <strong>Разница режимов:</strong> HP Дракона Края зависит от режима: Simple — <strong>100 HP</strong>, Hardcore — <strong>1000 HP</strong>! В Hardcore нужна значительно лучшая экипировка и стратегия.</div>
+<div class="info-box">🎮 <strong>Локальные данные:</strong> В комплектном <code>data/mobs.json</code> у Дракона Края указано <strong>200 HP</strong>. Прежнее разделение 100/1000 HP по режимам локальными данными v0.9.0 не подтверждается.</div>
 <p>Финальная битва!</p>
 <ol>
   <li><strong>Уничтожить Кристаллы Энда</strong> — Адамантовой киркой или стрелами! Без их уничтожения дракон постоянно восстанавливает здоровье.</li>

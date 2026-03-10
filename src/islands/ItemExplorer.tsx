@@ -7,6 +7,7 @@ interface ItemInfo {
   desc?: string;
   desc_en?: string;
   desc_hu?: string;
+  desc_ru?: string;
   added?: string;
   removed_v?: string;
   removed?: boolean;
@@ -17,7 +18,7 @@ const BASE = (import.meta as any).env?.BASE_URL?.replace(/\/$/, '') ?? '';
 
 interface ItemData {
   id: string;
-  name: { hu: string; en: string };
+  name: { hu: string; en: string; ru?: string };
   img?: string;
   tier?: string;
   category?: string;
@@ -206,9 +207,11 @@ export default function ItemExplorer() {
       if (q) {
         const nameMatch = item.name.hu.toLowerCase().includes(q)
           || item.name.en.toLowerCase().includes(q)
+          || (item.name.ru ?? '').toLowerCase().includes(q)
           || item.id.includes(q);
         const descMatch = (info?.desc_hu ?? '').toLowerCase().includes(q)
-          || (info?.desc_en ?? '').toLowerCase().includes(q);
+          || (info?.desc_en ?? '').toLowerCase().includes(q)
+          || (info?.desc_ru ?? '').toLowerCase().includes(q);
         if (!nameMatch && !descMatch) return false;
       }
       return true;
@@ -237,49 +240,83 @@ export default function ItemExplorer() {
     } as React.CSSProperties;
   }
 
-  const labelStyle: React.CSSProperties = {
-    fontSize: '.7em', color: 'var(--gold)', opacity: 0.65, textTransform: 'uppercase',
-    letterSpacing: '1px', fontWeight: 700, minWidth: 72, flexShrink: 0,
-  };
-
   return (
     <div style={{ position: 'relative' }}>
+      <style>{`
+        .item-card { transition: all .15s; }
+        .item-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,.45); transform: translateY(-2px); }
+        .item-card:hover:not(.ic-selected):not(.ic-removed) { border-color: rgba(240,192,64,.4) !important; background: rgba(240,192,64,.04) !important; }
+        .item-card.ic-selected:hover { box-shadow: 0 0 0 1px rgba(240,192,64,.5), 0 4px 14px rgba(0,0,0,.4), inset 0 1px 0 rgba(240,192,64,.1); }
+        .item-grid { scrollbar-width: thin; scrollbar-color: var(--surface2) transparent; }
+        .item-grid::-webkit-scrollbar { width: 4px; }
+        .item-grid::-webkit-scrollbar-thumb { background: var(--surface2); border-radius: 2px; }
+        .item-grid::-webkit-scrollbar-track { background: transparent; }
+      `}</style>
       {/* Filter bar */}
-      <div style={{ marginBottom: 10 }}>
+      <div style={{
+        background: 'var(--surface)', border: '1px solid var(--surface2)',
+        borderRadius: 8, padding: '11px 14px', marginBottom: 10,
+      }}>
 
-        {/* Top row: search (dominant) + removed toggle */}
-        <div style={{ display: 'flex', gap: 10, alignItems: 'center', marginBottom: 8, flexWrap: 'wrap' }}>
-          <div style={{ position: 'relative', flex: '1 1 240px', maxWidth: 380 }}>
+        {/* Search row */}
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center',
+          paddingBottom: 7, borderBottom: '1px solid rgba(255,255,255,.06)', marginBottom: 7 }}>
+          <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
+            letterSpacing: '.6px', fontWeight: 600, minWidth: 64, marginRight: 2, flexShrink: 0 }}>
+            {lang === 'hu' ? 'Keresés' : lang === 'ru' ? 'Поиск' : 'Search'}
+          </span>
+          <div style={{ position: 'relative', flex: '1 1 180px', maxWidth: 340 }}>
             <input
               type="search"
               placeholder={lang === 'hu' ? 'Item keresése…' : lang === 'ru' ? 'Поиск предметов…' : 'Search items…'}
               value={search}
               onChange={e => setSearch(e.target.value)}
-              style={{ padding: '7px 32px 7px 12px', borderRadius: 6,
-                       border: `1px solid ${search ? 'var(--green)' : 'var(--surface2)'}`,
-                       background: 'var(--surface)', color: 'var(--text)',
-                       width: '100%', fontFamily: 'inherit', fontSize: '.92em', outline: 'none' }}
+              style={{ padding: '6px 28px 6px 10px', borderRadius: 6,
+                       border: `1px solid ${search ? 'rgba(240,192,64,.35)' : 'rgba(255,255,255,.09)'}`,
+                       background: 'rgba(0,0,0,.15)', color: 'var(--text)',
+                       width: '100%', boxSizing: 'border-box',
+                       fontFamily: 'inherit', fontSize: '.88em', outline: 'none',
+                       transition: 'border-color .2s' }}
             />
             {search && (
               <button onClick={() => setSearch('')}
-                style={{ position: 'absolute', right: 8, top: '50%', transform: 'translateY(-50%)',
+                style={{ position: 'absolute', right: 6, top: '50%', transform: 'translateY(-50%)',
                          background: 'none', border: 'none', color: 'var(--text2)', cursor: 'pointer',
-                         fontSize: '1em', padding: '2px 4px', lineHeight: 1 }}>×</button>
+                         fontSize: '.9em', padding: '2px 4px', lineHeight: 1 }}>×</button>
             )}
           </div>
           <button
             onClick={() => setShowRemoved(v => !v)}
-            style={{ ...pillStyle(showRemoved, '#e94560', 'rgba(233,69,96,.12)'), fontSize: '.72em', flexShrink: 0 }}
+            style={{
+              display: 'flex', alignItems: 'center', gap: 5, marginLeft: 'auto',
+              padding: '4px 10px 4px 7px', borderRadius: 20, fontSize: '.78em', fontWeight: 600,
+              cursor: 'pointer', fontFamily: 'inherit', transition: 'all .2s', flexShrink: 0,
+              border: `1px solid ${showRemoved ? 'rgba(233,69,96,.7)' : 'rgba(255,255,255,.09)'}`,
+              background: showRemoved ? 'rgba(233,69,96,.13)' : 'transparent',
+              color: showRemoved ? '#e94560' : 'var(--text2)',
+            }}
           >
-            {showRemoved
-              ? (lang === 'hu' ? '✕ Eltávolított látszik' : lang === 'ru' ? '✕ Удалённые видны' : '✕ Showing removed')
-              : (lang === 'hu' ? 'Eltávolítottak rejtve' : lang === 'ru' ? 'Удалённые скрыты' : 'Removed hidden')}
+            <span style={{
+              display: 'inline-flex', width: 24, height: 13, borderRadius: 7, alignItems: 'center',
+              background: showRemoved ? 'rgba(233,69,96,.4)' : 'var(--surface2)',
+              padding: '0 2px', transition: 'all .2s', flexShrink: 0,
+              justifyContent: showRemoved ? 'flex-end' : 'flex-start',
+            }}>
+              <span style={{
+                width: 9, height: 9, borderRadius: '50%',
+                background: showRemoved ? '#e94560' : 'var(--text2)',
+                transition: 'background .2s', flexShrink: 0,
+              }} />
+            </span>
+            {lang === 'hu' ? 'Eltávolítottak' : lang === 'ru' ? 'Удалённые' : 'Removed'}
           </button>
         </div>
 
         {/* Category row */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 5, flexWrap: 'wrap', marginBottom: 5 }}>
-          <span style={labelStyle}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 5, flexWrap: 'wrap',
+          paddingBottom: 7, borderBottom: '1px solid rgba(255,255,255,.06)', marginBottom: 7 }}>
+          <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
+            letterSpacing: '.6px', fontWeight: 600, minWidth: 64, marginRight: 2, flexShrink: 0 }}>
             {lang === 'hu' ? 'Kateg.' : lang === 'ru' ? 'Катег.' : 'Cat.'}
           </span>
           <button onClick={() => { setCatFilter(''); setTierFilter(''); }} style={pillStyle(catFilter === '')}>
@@ -304,7 +341,10 @@ export default function ItemExplorer() {
 
         {/* Tier row */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 5, flexWrap: 'wrap' }}>
-          <span style={labelStyle}>Tier</span>
+          <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
+            letterSpacing: '.6px', fontWeight: 600, minWidth: 64, marginRight: 2, flexShrink: 0 }}>
+            Tier
+          </span>
           {TIER_ORDER.filter(t => tiersInCat.has(t)).map(tier => {
             const meta = TIER_META[tier];
             const count = allItems.filter(i => i.tier === tier && (!catFilter || i.category === catFilter)).length;
@@ -321,27 +361,28 @@ export default function ItemExplorer() {
       </div>
 
       {/* Count + clear */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: 12, fontSize: '.8em',
-        color: 'var(--text2)', marginBottom: 8 }}>
-        <span>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
+        <span style={{ fontSize: '.8em', color: 'var(--text2)', padding: '3px 10px',
+          background: 'var(--surface)', border: '1px solid var(--surface2)', borderRadius: 20 }}>
           {isFiltered
-            ? <><span style={{ color: 'var(--text)', fontWeight: 600 }}>{filtered.length}</span> {lang === 'hu' ? 'találat' : lang === 'ru' ? 'результатов' : 'results'} <span style={{ opacity: .5 }}>/ {allItems.length}</span></>
-            : <>{lang === 'hu' ? 'Összesen' : lang === 'ru' ? 'Всего' : 'All'} <span style={{ color: 'var(--text)', fontWeight: 600 }}>{allItems.length}</span> {lang === 'hu' ? 'item' : lang === 'ru' ? 'предметов' : 'items'}</>
+            ? <><span style={{ color: 'var(--text)', fontWeight: 600 }}>{filtered.length}</span> / {allItems.length} {lang === 'hu' ? 'item' : lang === 'ru' ? 'предметов' : 'items'}</>
+            : <><span style={{ color: 'var(--text)', fontWeight: 600 }}>{allItems.length}</span> {lang === 'hu' ? 'item' : lang === 'ru' ? 'предметов' : 'items'}</>
           }
         </span>
         {isFiltered && (
           <button onClick={() => { setCatFilter(''); setTierFilter(''); setSearch(''); }}
-            style={{ background: 'none', border: 'none', color: 'var(--text2)', cursor: 'pointer',
-              fontSize: '.9em', padding: '1px 4px', textDecoration: 'underline', fontFamily: 'inherit' }}>
-            {lang === 'hu' ? 'Szűrők törlése' : lang === 'ru' ? 'Сбросить фильтры' : 'Clear filters'}
+            style={{ padding: '3px 9px', borderRadius: 6, border: '1px solid var(--surface2)',
+              background: 'transparent', color: 'var(--text2)', cursor: 'pointer',
+              fontSize: '.78em', whiteSpace: 'nowrap', fontFamily: 'inherit' }}>
+            ✕ {lang === 'hu' ? 'Törlés' : lang === 'ru' ? 'Сброс' : 'Clear'}
           </button>
         )}
       </div>
 
       {/* Item grid */}
-      <div style={{
+      <div className="item-grid" style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))',
         gap: 6,
         maxHeight: '65vh',
         overflowY: 'auto',
@@ -358,14 +399,16 @@ export default function ItemExplorer() {
             <div
               key={item.id}
               onClick={() => setSelected(isSelected ? null : item)}
+              className={`item-card${isSelected ? ' ic-selected' : ''}${isRemoved ? ' ic-removed' : ''}`}
               style={{
-                display: 'flex', flexDirection: 'column', alignItems: 'center',
-                gap: 5, padding: '8px 8px',
+                display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+                gap: 5, padding: '10px 6px 8px',
                 border: `1px solid ${isSelected ? 'var(--gold)' : isRemoved ? 'rgba(233,69,96,.3)' : 'var(--surface2)'}`,
-                borderRadius: 6, cursor: 'pointer',
-                background: isSelected ? 'rgba(240,192,64,.07)' : isRemoved ? 'rgba(233,69,96,.05)' : 'var(--surface)',
-                transition: 'all .12s',
-                opacity: isRemoved ? 0.6 : 1,
+                borderRadius: 8, cursor: 'pointer',
+                background: isSelected ? 'rgba(240,192,64,.09)' : isRemoved ? 'rgba(233,69,96,.05)' : 'var(--surface)',
+                boxShadow: isSelected ? '0 0 0 1px rgba(240,192,64,.4), inset 0 1px 0 rgba(240,192,64,.1)' : 'none',
+                transition: 'all .15s',
+                opacity: isRemoved ? 0.5 : 1,
                 position: 'relative',
               }}
               title={item.name[lang as 'hu' | 'en' | 'ru']}
@@ -378,15 +421,17 @@ export default function ItemExplorer() {
                 }} title={lang === 'hu' ? 'Van recept' : lang === 'ru' ? 'Есть рецепт' : 'Has recipe'}>⚒</span>
               )}
               <ItemIcon item={item} size={32} />
-              <span style={{ fontSize: '.73em', textAlign: 'center', lineHeight: 1.3,
-                color: 'var(--text)', wordBreak: 'break-word', maxWidth: '100%' }}>
+              <span style={{ fontSize: '.75em', fontWeight: 500, textAlign: 'center', lineHeight: 1.25,
+                color: isSelected ? 'var(--gold)' : 'var(--text)', wordBreak: 'break-word', maxWidth: '100%',
+                flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 {item.name[lang as 'hu' | 'en' | 'ru']}
               </span>
               {tierMeta && (
                 <span style={{
-                  fontSize: '.62em', padding: '1px 6px', borderRadius: 8,
+                  fontSize: '.62em', padding: '2px 7px', borderRadius: 8,
                   background: tierMeta.bg, color: tierMeta.color,
-                  border: `1px solid ${tierMeta.color}66`, fontWeight: 700,
+                  border: `1px solid ${tierMeta.color}55`, fontWeight: 700,
+                  letterSpacing: '.3px',
                 }}>
                   {tierMeta[lang as 'hu' | 'en' | 'ru']}
                 </span>
@@ -495,8 +540,10 @@ export default function ItemExplorer() {
               {(() => {
                 const info = itemInfo[selected.id];
                 const descText = lang === 'hu'
-                  ? (info?.desc_hu || info?.desc_en || info?.desc)
-                  : (info?.desc_en || info?.desc);
+                  ? (info?.desc_hu || info?.desc_en || info?.desc_ru || info?.desc)
+                  : lang === 'ru'
+                    ? (info?.desc_ru || info?.desc_en || info?.desc_hu || info?.desc)
+                    : (info?.desc_en || info?.desc_ru || info?.desc_hu || info?.desc);
                 if (!descText) return null;
                 return (
                   <div style={{ marginBottom: 20 }}>

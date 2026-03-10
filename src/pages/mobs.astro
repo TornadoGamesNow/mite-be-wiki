@@ -6,23 +6,25 @@ import MobExplorer from '../islands/MobExplorer.tsx';
 import '../styles/global.css';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
-<BaseLayout title="Bestiary — MITE:BE Wiki" description="MITE:BE bestiary: ellenségek HP, sebzés, XP, drop és spawnhelyek szerint — felszín, föld alatti, Nether.">
+<BaseLayout title="Bestiary — MITE:BE Wiki" description="MITE:BE bestiary: ellenségek HP, sebzés, XP, drop és spawnzóna szerint — felszín, föld alatti, Nether és ismeretlen.">
   <Header />
   <TopNav currentPage="mobs" />
-  <main style="max-width:1440px; margin:0 auto; padding:24px 32px;">
+  <main id="mobs-page" style="max-width:1800px; margin:0 auto; padding:8px 32px 24px;">
     <div data-lang="hu">
-      <h2>Szörny Enciklopédia</h2>
-      <p style="color:var(--text2)">124 szörny · 4 zóna · egyedi mechanikák</p>
+      <h2 style="padding-top:8px; margin-bottom:6px">Szörny Enciklopédia</h2>
     </div>
     <div data-lang="en">
-      <h2>Bestiary</h2>
-      <p style="color:var(--text2)">124 mobs · 4 zones · unique mechanics</p>
+      <h2 style="padding-top:8px; margin-bottom:6px">Bestiary</h2>
     </div>
     <div data-lang="ru">
-      <h2>Бестиарий</h2>
-      <p style="color:var(--text2)">124 моба · 4 зоны · уникальные механики</p>
+      <h2 style="padding-top:8px; margin-bottom:6px">Бестиарий</h2>
     </div>
     <MobExplorer client:load />
   </main>
 </BaseLayout>
+<style is:global>
+  @media (min-width: 640px) {
+    body:has(#mobs-page) .wiki-search { display: none; }
+  }
+</style>
 <script is:inline src={`${base}/js/app.js`}></script>

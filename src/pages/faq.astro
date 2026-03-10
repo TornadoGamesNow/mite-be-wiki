@@ -31,7 +31,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ Miért halok meg olyan gyorsan éjjel?</h4>
-<p>A mobok sokkal erősebbek és <strong>fal mögött is érzékelik a játékost</strong> közelség alapján. Fáklyák kialszanak, sötétben mobok spawningolnak. Menedék az első éjszaka előtt kötelező.</p>
+<p>A mobok sokkal erősebbek, a sötétség gyorsan veszélyessé válik, és egyes ellenfelek közelségalapú érzékelést is használnak. Az első éjszaka előtt legyen biztos menedéked.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Mi az a hőmérséklet-mutató?</h4>
@@ -48,7 +48,7 @@ const sidebarGroups = getSidebarGroups('faq');
 <div class="faq-item">
 <h4>❓ Hogyan válasszak foglalkozást és megváltoztatható-e?</h4>
 <div class="warning-box" style="margin-bottom:8px">⚠️ <strong>A foglalkozások jelenleg nincsenek aktiválva a v0.9.0-ban</strong> — valószínűleg még nem kész ez a funkció. A lenti infó érdekességképp szerepel a wikiben.</div>
-<p>Az első szintlépéskor automatikusan felajánlja. <strong>Csak egyet választhatsz</strong> és <strong>nem változtatható meg utólag!</strong> Gondold meg — Kovács és Bányász a leghasznosabb kezdőknek.</p>
+<p>A helyi v0.9.0 adatok alapján jelenleg <strong>nincs aktív profession-választás</strong>, ezért ebben a verzióban nincs mit kiválasztani vagy később módosítani.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Kialszanak a fáklyák?</h4>
@@ -66,7 +66,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ Hogyan jutok vissza biome portálból?</h4>
-<p>Épits egy <strong>normál obszidián keretet bárhol a fővilágban</strong> (NEM alapkőrétegen!) és gyújtsd meg — ez visszavisz a <strong>világ spawn pontjára</strong>. Biome portál visszafelé nem kell. Ha a spawn nem ideális, <strong>Világ Horgony</strong> Knowledge Bookvel átállíthatod.</p>
+<p>Épits egy <strong>normál obszidián keretet bárhol a fővilágban</strong> (NEM alapkőrétegen!) és gyújtsd meg — ez visszavisz a <strong>világ spawn pontjára</strong>. Biome portál visszafelé nem kell. Ha a spawn nem ideális, a <strong>Világ Jelölő</strong> Tudáskönyv feloldásával átállíthatod a világ újraéledési pontját.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Nem jelennek meg falvak vagy pillagerek a világomban!</h4>
@@ -82,15 +82,15 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ Mi az a HIM és hogyan győzhető le?</h4>
-<p><strong>HIM</strong> a játék végső ellensége — <strong>400 HP</strong>, szinte mindenre immunis. Közönséges fegyverek és bájitalok hatástalanok ellene. Legyőzéséhez speciális mechanika szükséges: teljes <strong>Adamantium felszerelés</strong> és speciális stratégia elengedhetetlen. A játék legnagyobb kihívása!</p>
+<p><strong>HIM</strong> a helyi <code>mobs.json</code> szerint <strong>400 HP</strong>-val és teljes sebzésimmunitással szerepel, plusz <code>instant_kill</code> és <code>requires_ancient_metal</code> tagekkel. Biztosan csak annyi állítható róla, hogy speciális mechanikás bossfight.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Hogyan működik az Üst (Cauldron)?</h4>
-<p>Az Üst nem csak vizet tárol! <strong>Lávaforrás alá</strong> téve speciális receptekhez használható: Arany érc beledobása = <strong>Folyékony Arany</strong> (4 Aranyalma készíthető). Higany érc + Láva = <strong>Folyékony Higany</strong>. Bőr hátizsák + 4 Ősi Fém rúd higanyba = <strong>Ősi Fém Hátizsák</strong> (30 mp várakozás). Lásd a Referencia oldalon a Bájitalok szekciót.</p>
+<p>Az Üst nem csak vizet tárol! <strong>Lávaforrás alá</strong> téve speciális receptekhez használható: Arany érc beledobása = <strong>Folyékony Arany</strong> (4 Aranyalma készíthető). Higany érc + Láva = <strong>Folyékony Higany</strong>. A v0.9.0-ban a biztosan igazolt hátizsákos higanyrecept: <strong>Nagy Hátizsák Fejlesztő + 4 Ősi Fém rúd</strong> → <strong>Ősi Fém Hátizsák Fejlesztő</strong> (kb. 30 mp, alul magma/láva hőforrás). Lásd a Referencia oldalon a Bájitalok szekciót.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Mi történik Vérhold alatt?</h4>
-<p>A Vérhold <strong>32 naponként</strong> ismétlődő apokaliptikus éjszaka. Minden szörny <strong>Erő I</strong> buffot kap, nappal a pókok és creeperek megvadulnak. <strong>6 evolution phases</strong> van (32, 64, 128, 160, 192, 224. nap) — minden fázis erősebb. Y100 felett Hányinger+Gyengeség, Y50 alatt Égés. Túlélésért <strong>permanent reward</strong> jár (+10% mining speed VAGY +1 attack VAGY -10% thirst/hunger). Részletek a Referencia oldalon!</p>
+<p>A Vérhold <strong>32 naponként</strong> ismétlődő apokaliptikus éjszaka. Minden szörny <strong>Erő I</strong> buffot kap, nappal a pókok és creeperek megvadulnak. <strong>6 evolution phase</strong> van (32, 64, 128, 160, 192, 224. nap) — minden fázis erősebb. Y100 felett Hányinger+Gyengeség, Y50 alatt Égés. Túlélésért <strong>1 véletlen állandó jutalom</strong> jár: +10% bányászati sebesség, +1 támadási sebzés, -10% szomjúságfogyás vagy -10% éhségfogyás. Részletek a Referencia oldalon!</p>
 </div>
 <div class="faq-item">
 <h4>❓ Mi az a Szita (Sieve) és mire jó?</h4>
@@ -98,7 +98,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ Hogyan szerzek Knowledge Bookeket (Knowledge Books)?</h4>
-<p>Knowledge Bookeket az alábbi módokon szerezhetsz: <strong>Barlang romokban</strong> (földalatti random romokban jutalom ládák), <strong>Falvakban</strong> (kereskedőktől vásárolva vagy loot ládákból), <strong>Speciális ellenfélektől</strong> (pl. Csontváz Ura, Blood Moon Rewardsból), és <strong>Vérhold végigjátszásakor</strong> jutalom ládából. Felesleges Knowledge Booket sima Könyvvé alakíthatsz (és XP-t kapsz érte)!</p>
+<p>A v0.9.0-hoz biztosan igazolt forrás a <strong>föld alatti világ dungeon treasure chest</strong> lootja. Más lelőhelyekről vannak közösségi állítások, de ezeket itt nem kezelem biztos tényként. Felesleges Knowledge Booket sima Könyvvé alakíthatsz, ami XP-t ad.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Mi a különbség Simple és Hardcore mód között?</h4>
@@ -134,7 +134,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ Why am I dying so fast at night?</h4>
-<p>Mobs are much stronger and <strong>can sense you through walls</strong> using proximity detection. Torches burn out and darkness causes mob spawns. Shelter before the first night is mandatory.</p>
+<p>Mobs are much stronger, darkness becomes dangerous quickly, and some enemies use proximity-based detection. Have safe shelter before the first night.</p>
 </div>
 <div class="faq-item">
 <h4>❓ What is the temperature meter?</h4>
@@ -151,7 +151,7 @@ const sidebarGroups = getSidebarGroups('faq');
 <div class="faq-item">
 <h4>❓ How do I choose a profession and can I change it?</h4>
 <div class="warning-box" style="margin-bottom:8px">⚠️ <strong>Professions are not currently active in v0.9.0</strong> — this feature is likely not yet finished. The info below is included in the wiki as a curiosity.</div>
-<p>It's offered automatically on your first level-up. You can only choose <strong>ONE</strong> and it <strong>cannot be changed afterwards!</strong> Blacksmith and Miner are most useful for beginners.</p>
+<p>Based on the local v0.9.0 data, there is <strong>no active profession choice</strong> to make right now, so there is nothing to pick or respec in this version.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Do torches really burn out?</h4>
@@ -169,7 +169,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ How do I return home from a biome portal?</h4>
-<p>Build a <strong>standard obsidian frame anywhere in the overworld</strong> (NOT on the bedrock layer!) and light it — this returns you to your <strong>world spawn point</strong>. No special portal needed to go back. If your spawn isn't ideal, the <strong>World Anchor</strong> knowledge book lets you reset world spawn.</p>
+<p>Build a <strong>standard obsidian frame anywhere in the overworld</strong> (NOT on the bedrock layer!) and light it — this returns you to your <strong>world spawn point</strong>. No special portal needed to go back. If your spawn is not ideal, unlocking the <strong>World Marker</strong> Knowledge Book lets you change the world's respawn point.</p>
 </div>
 <div class="faq-item">
 <h4>❓ No villages or pillagers are spawning in my world!</h4>
@@ -185,15 +185,15 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ What is HIM and how do you defeat it?</h4>
-<p><strong>HIM</strong> is the game's ultimate enemy — <strong>400 HP</strong>, immune to nearly everything. Normal weapons and potions are useless against it. Defeating it requires special mechanics: full <strong>Adamantium gear</strong> and a specific strategy are essential. The game's greatest challenge!</p>
+<p><strong>HIM</strong> appears in the local <code>mobs.json</code> with <strong>400 HP</strong>, full damage immunity, and tags like <code>instant_kill</code> and <code>requires_ancient_metal</code>. The safe statement here is only that it is a special-mechanics bossfight.</p>
 </div>
 <div class="faq-item">
 <h4>❓ How does the Cauldron work?</h4>
-<p>The Cauldron isn't just for water! Placed <strong>under a lava source</strong>, it enables special recipes: drop Gold ore in = <strong>Liquid Gold</strong> (make 4 Golden Apples). Mercury ore + Lava = <strong>Liquid Mercury</strong>. Leather backpack + 4 Ancient Metal ingots in mercury = <strong>Ancient Metal Backpack</strong> (30 sec wait). See the Potions section on the Reference page for details.</p>
+<p>The Cauldron isn't just for water! Placed <strong>under a lava source</strong>, it enables special recipes: drop Gold ore in = <strong>Liquid Gold</strong> (make 4 Golden Apples). Mercury ore + Lava = <strong>Liquid Mercury</strong>. In v0.9.0, the backpack-related mercury recipe I could verify is <strong>Big Backpack Upgrade + 4 Ancient Metal Ingots</strong> into a full mercury cauldron to produce the <strong>Ancient Metal Backpack Upgrade</strong> after about 30 seconds with magma/lava heat below.</p>
 </div>
 <div class="faq-item">
 <h4>❓ What happens during a Blood Moon?</h4>
-<p>The Blood Moon is an apocalyptic night that recurs <strong>every 32 days</strong>. All mobs get <strong>Strength I</strong> buff, daytime spiders and creepers go berserk. There are <strong>6 evolution phases</strong> (days 32, 64, 128, 160, 192, 224) — each phase is harder. Above Y100: Nausea+Weakness. Below Y50: Burning. Surviving earns a <strong>permanent reward</strong> (+10% mining speed OR +1 attack OR -10% thirst/hunger). Check the Reference page for details!</p>
+<p>The Blood Moon is an apocalyptic night that recurs <strong>every 32 days</strong>. All mobs get <strong>Strength I</strong> buff, daytime spiders and creepers go berserk. There are <strong>6 evolution phases</strong> (days 32, 64, 128, 160, 192, 224) — each phase is harder. Above Y100: Nausea+Weakness. Below Y50: Burning. Surviving grants <strong>1 random permanent reward</strong>: +10% mining speed, +1 attack damage, -10% thirst drain, or -10% hunger drain. Check the Reference page for details!</p>
 </div>
 <div class="faq-item">
 <h4>❓ What is the Sieve and what is it for?</h4>
@@ -201,7 +201,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ How do I get Knowledge Books?</h4>
-<p>Knowledge Books can be obtained in the following ways: <strong>Cave ruins</strong> (loot chests in randomly generated underground ruins), <strong>Villages</strong> (purchased from traders or from loot chests), <strong>Special enemies</strong> (e.g. Skeleton Lord, Blood Moon rewards), and <strong>Blood Moon completion</strong> reward chests. Spare Knowledge Books can be crafted into regular Books for XP!</p>
+<p>The reliably confirmed v0.9.0 source is <strong>underground dungeon treasure chests</strong>. There are community claims about additional sources, but I am not treating those as confirmed here. Spare Knowledge Books can be crafted into regular Books for XP.</p>
 </div>
 <div class="faq-item">
 <h4>❓ What's the difference between Simple and Hardcore mode?</h4>
@@ -220,13 +220,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ Which profession should I choose?</h4>
-<p>The 3 most popular choices:</p>
-<ul style="margin:4px 0">
-  <li><strong>Miner:</strong> Smelt ore blocks directly — huge time savings! Without it, you need sieving + ingot molds.</li>
-  <li><strong>Blacksmith:</strong> Craft metal weapons and armor — without it, you can't craft metal gear!</li>
-  <li><strong>Fighter:</strong> Focused on stronger melee combat — better damage and survivability.</li>
-</ul>
-<p>⚠️ <strong>You can only choose 1 profession and it cannot be changed!</strong> Miner or Blacksmith is safest for beginners.</p>
+<p>In the local v0.9.0 data set, <strong>professions are currently inactive</strong>. So for this version there is no reliable “best profession” recommendation to give.</p>
 </div>
 </div>
 
@@ -371,11 +365,6 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 </div>
 
-<div data-lang="hu" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
-  <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Teljes Magyar Wiki ⚔️</p>
-  <p>A wiki a játékfájlok (MITE.lang, hu_HU.lang, class fájlok) alapján készült.</p>
-  <p style="font-size:.85em;margin-top:8px;opacity:.7;">Ez egy nem hivatalos, közösségi wiki. A MITE:BE és minden kapcsolódó játékeszköz, textúra és védjegy az eredeti alkotóik tulajdona.</p>
-</div>
 <!-- ════ SEED CARD EN ════ -->
 <div data-lang="en">
 <h2 id="seed-en" style="margin-top:48px">🗺️ Recommended Seed</h2>
@@ -515,12 +504,6 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 </div>
 
-<div data-lang="en" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
-  <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Complete Wiki ⚔️</p>
-  <p>Built from game files (MITE.lang, hu_HU.lang, class files).</p>
-  <p style="font-size:.85em;margin-top:8px;opacity:.7;">This is an unofficial, community-driven wiki. MITE:BE and all related game assets, textures, and trademarks belong to their respective original creators.</p>
-</div>
-
 <div data-lang="ru">
 <h2 id="faq">Часто задаваемые вопросы — FAQ</h2>
 <p>Самые распространённые вопросы, с которыми сталкиваются новые игроки.</p>
@@ -553,7 +536,7 @@ const sidebarGroups = getSidebarGroups('faq');
 <div class="faq-item">
 <h4>❓ Как выбрать профессию и можно ли её сменить?</h4>
 <div class="warning-box" style="margin-bottom:8px">⚠️ <strong>Профессии в v0.9.0 не активированы</strong> — эта функция, вероятно, ещё не готова. Информация ниже приведена в вики для ознакомления.</div>
-<p>При первом повышении уровня игра автоматически предложит выбрать профессию. Выбрать можно <strong>только одну</strong>, и <strong>сменить её потом нельзя</strong>. Для новичков обычно лучше всего подходят Кузнец и Шахтёр.</p>
+<p>По локальным данным v0.9.0 сейчас <strong>нет активного выбора профессии</strong>, так что в этой версии выбирать и менять нечего.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Факелы действительно гаснут?</h4>
@@ -587,7 +570,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ Что такое HIM и как его победить?</h4>
-<p><strong>HIM</strong> — главный враг игры. У него <strong>400 HP</strong>, и он почти ко всему иммунен. Обычное оружие и зелья против него бесполезны. Нужны полный комплект <strong>адамантиевого снаряжения</strong> и особая стратегия. Это главное испытание всей игры.</p>
+<p><strong>HIM</strong> в локальном <code>mobs.json</code> имеет <strong>400 HP</strong>, полный иммунитет ко всему урону и теги вроде <code>instant_kill</code> и <code>requires_ancient_metal</code>. Надёжно можно утверждать только то, что это бой со специальной механикой.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Как работает Котёл (Cauldron)?</h4>
@@ -595,7 +578,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ Что происходит во время Кровавой луны?</h4>
-<p>Кровавая луна — апокалиптическая ночь, повторяющаяся <strong>каждые 32 дня</strong>. Все мобы получают баф <strong>Силы I</strong>, днём пауки и криперы впадают в бешенство. Есть <strong>6 фаз эволюции</strong> (32, 64, 128, 160, 192, 224 дни). За выживание — <strong>постоянная награда</strong> (+10% скорость добычи, +1 атака, -10% жажда/голод).</p>
+<p>Кровавая луна — апокалиптическая ночь, повторяющаяся <strong>каждые 32 дня</strong>. Все мобы получают баф <strong>Силы I</strong>, днём пауки и криперы впадают в бешенство. Есть <strong>6 фаз эволюции</strong> (32, 64, 128, 160, 192, 224 дни). За выживание даётся <strong>1 случайная постоянная награда</strong>: +10% к скорости добычи, +1 к урону, -10% к расходу жажды или -10% к расходу голода.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Что такое Сито (Sieve) и для чего оно?</h4>
@@ -754,12 +737,6 @@ const sidebarGroups = getSidebarGroups('faq');
     </ol>
   </div>
 </div>
-</div>
-
-<div data-lang="ru" style="text-align:center;color:var(--text2);padding:40px 0;border-top:2px solid var(--bg3);margin-top:40px;">
-  <p style="font-size:1.1em;color:var(--gold);">⚔️ MITE:BE v0.9.0 — Полное руководство ⚔️</p>
-  <p>Создана на основе файлов игры (MITE.lang, hu_HU.lang, class-файлы).</p>
-  <p style="font-size:.85em;margin-top:8px;opacity:.7;">Это неофициальная вики сообщества. MITE:BE и все связанные игровые ресурсы, текстуры и торговые марки принадлежат их создателям.</p>
 </div>
 
     </main>
