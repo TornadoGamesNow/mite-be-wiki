@@ -6917,43 +6917,6 @@
     ]
   },
   {
-    "id": "wooden_door_297",
-    "item_num": 324,
-    "output": "wooden_door",
-    "outputQty": 3,
-    "station": "flint_workbench",
-    "difficulty": 480,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak",
-      "planks_oak"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "planks_oak",
-        "planks_oak",
-        "_"
-      ],
-      [
-        "planks_oak",
-        "planks_oak",
-        "_"
-      ],
-      [
-        "planks_oak",
-        "planks_oak",
-        "_"
-      ]
-    ]
-  },
-  {
     "id": "iron_bucket_298",
     "item_num": 325,
     "output": "iron_bucket",
@@ -25506,117 +25469,6 @@
       "bowl_water"
     ],
     "shaped": false
-  },
-  {
-    "id": "jungle_door_1113",
-    "item_num": 2349,
-    "output": "jungle_door",
-    "outputQty": 3,
-    "station": "flint_workbench",
-    "difficulty": 480,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle",
-      "planks_jungle"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "planks_jungle",
-        "planks_jungle",
-        "_"
-      ],
-      [
-        "planks_jungle",
-        "planks_jungle",
-        "_"
-      ],
-      [
-        "planks_jungle",
-        "planks_jungle",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "birch_door_1114",
-    "item_num": 2350,
-    "output": "birch_door",
-    "outputQty": 3,
-    "station": "flint_workbench",
-    "difficulty": 480,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch",
-      "planks_birch"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "planks_birch",
-        "planks_birch",
-        "_"
-      ],
-      [
-        "planks_birch",
-        "planks_birch",
-        "_"
-      ],
-      [
-        "planks_birch",
-        "planks_birch",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "spruce_door_1115",
-    "item_num": 2351,
-    "output": "spruce_door",
-    "outputQty": 3,
-    "station": "flint_workbench",
-    "difficulty": 480,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce",
-      "planks_spruce"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "planks_spruce",
-        "planks_spruce",
-        "_"
-      ],
-      [
-        "planks_spruce",
-        "planks_spruce",
-        "_"
-      ],
-      [
-        "planks_spruce",
-        "planks_spruce",
-        "_"
-      ]
-    ]
   },
   {
     "id": "straw_rope_1116",
@@ -46125,6 +45977,108 @@
       [
         "_",
         "_",
+        "_"
+      ]
+    ]
+  },
+  {
+    "id": "wood_door_merged",
+    "item_num": 324,
+    "output": [
+      "wooden_door",
+      "spruce_door",
+      "birch_door",
+      "jungle_door"
+    ],
+    "outputQty": 3,
+    "station": "flint_workbench",
+    "difficulty": 480,
+    "skills": [
+      "carpentry"
+    ],
+    "ingredients": [
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ]
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "_"
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "_"
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
         "_"
       ]
     ]
