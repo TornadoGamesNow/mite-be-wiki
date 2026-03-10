@@ -3214,7 +3214,24 @@
       "iron_ingot",
       "iron_ingot"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "iron_ingot",
+        "_",
+        "iron_ingot"
+      ],
+      [
+        "iron_ingot",
+        "chest",
+        "iron_ingot"
+      ],
+      [
+        "_",
+        "iron_ingot",
+        "_"
+      ]
+    ]
   },
   {
     "id": "quartz_block_171",
