@@ -9759,7 +9759,8 @@
     },
     "img": "img/items/barrel_copper_upgrade.png",
     "tier": "copper",
-    "category": "misc"
+    "category": "misc",
+    "removed_in": "0.9.0"
   },
   "barrel_silver_upgrade": {
     "name": {
@@ -9769,7 +9770,8 @@
     },
     "img": "img/items/barrel_silver_upgrade.png",
     "tier": "silver",
-    "category": "misc"
+    "category": "misc",
+    "removed_in": "0.9.0"
   },
   "barrel_iron_upgrade": {
     "name": {
@@ -9779,7 +9781,8 @@
     },
     "img": "img/items/barrel_iron_upgrade.png",
     "tier": "iron",
-    "category": "misc"
+    "category": "misc",
+    "removed_in": "0.9.0"
   },
   "barrel_gold_upgrade": {
     "name": {
@@ -9789,7 +9792,8 @@
     },
     "img": "img/items/barrel_gold_upgrade.png",
     "tier": "gold",
-    "category": "misc"
+    "category": "misc",
+    "removed_in": "0.9.0"
   },
   "barrel_mithril_upgrade": {
     "name": {
@@ -9799,7 +9803,8 @@
     },
     "img": "img/items/barrel_mithril_upgrade.png",
     "tier": "mithril",
-    "category": "misc"
+    "category": "misc",
+    "removed_in": "0.9.0"
   },
   "barrel_adamantium_upgrade": {
     "name": {
@@ -9809,7 +9814,8 @@
     },
     "img": "img/items/barrel_adamantium_upgrade.png",
     "tier": "adamantium",
-    "category": "misc"
+    "category": "misc",
+    "removed_in": "0.9.0"
   },
   "barrel_hard_upgrade": {
     "name": {
@@ -9819,7 +9825,8 @@
     },
     "img": "img/items/barrel_hard_upgrade.png",
     "tier": "hard",
-    "category": "misc"
+    "category": "misc",
+    "removed_in": "0.9.0"
   },
   "log_pitaya": {
     "name": {
