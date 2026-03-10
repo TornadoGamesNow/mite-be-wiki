@@ -11499,5 +11499,85 @@
     "img": "img/items/white_wool.png",
     "tier": null,
     "category": "material"
+  },
+  "copper_bucket_filled_with_lava": {
+    "name": {
+      "hu": "Réz Lávás Vödör",
+      "en": "Copper Bucket of Lava",
+      "ru": "Медное ведро лавы"
+    },
+    "img": "img/items/copper_bucket_filled_with_lava.png",
+    "tier": "copper",
+    "category": "tool"
+  },
+  "silver_bucket_filled_with_lava": {
+    "name": {
+      "hu": "Ezüst Lávás Vödör",
+      "en": "Silver Bucket of Lava",
+      "ru": "Серебряное ведро лавы"
+    },
+    "img": "img/items/silver_bucket_filled_with_lava.png",
+    "tier": "silver",
+    "category": "tool"
+  },
+  "gold_bucket_filled_with_lava": {
+    "name": {
+      "hu": "Arany Lávás Vödör",
+      "en": "Gold Bucket of Lava",
+      "ru": "Золотое ведро лавы"
+    },
+    "img": "img/items/gold_bucket_filled_with_lava.png",
+    "tier": "gold",
+    "category": "tool"
+  },
+  "iron_bucket_filled_with_lava": {
+    "name": {
+      "hu": "Vas Lávás Vödör",
+      "en": "Iron Bucket of Lava",
+      "ru": "Железное ведро лавы"
+    },
+    "img": "img/items/iron_bucket_filled_with_lava.png",
+    "tier": "iron",
+    "category": "tool"
+  },
+  "hard_stone_bucket_of_lava": {
+    "name": {
+      "hu": "Keménykő Lávás Vödör",
+      "en": "Hardstone Bucket of Lava",
+      "ru": "Твердокаменное ведро лавы"
+    },
+    "img": "img/items/hard_stone_bucket_of_lava.png",
+    "tier": "hard",
+    "category": "tool"
+  },
+  "ancient_metal_bucket_filled_with_lava": {
+    "name": {
+      "hu": "Ősi Fém Lávás Vödör",
+      "en": "Ancient Metal Bucket of Lava",
+      "ru": "Ведро лавы из древнего металла"
+    },
+    "img": "img/items/ancient_metal_bucket_filled_with_lava.png",
+    "tier": "ancient_metal",
+    "category": "tool"
+  },
+  "mithril_bucket_filled_with_lava": {
+    "name": {
+      "hu": "Mithril Lávás Vödör",
+      "en": "Mithril Bucket of Lava",
+      "ru": "Мифриловое ведро лавы"
+    },
+    "img": "img/items/mithril_bucket_filled_with_lava.png",
+    "tier": "mithril",
+    "category": "tool"
+  },
+  "adamantium_bucket_filled_with_lava": {
+    "name": {
+      "hu": "Adamantium Lávás Vödör",
+      "en": "Adamantium Bucket of Lava",
+      "ru": "Адамантиевое ведро лавы"
+    },
+    "img": "img/items/adamantium_bucket_filled_with_lava.png",
+    "tier": "adamantium",
+    "category": "tool"
   }
 }

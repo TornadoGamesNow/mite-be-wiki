@@ -4339,144 +4339,215 @@
   },
   "rusted_iron_hatchet": {
     "mcmod_id": 773562,
-    "desc": "无法合成，手持锈铁手斧的僵尸死亡后有几率掉落。 攻击伤害+4，最高品质只是粗糙。",
-    "desc_en": "It cannot be synthesized. Zombies holding rusty iron hand axes have a chance to drop them after death. Attack damage +4, highest quality is just rough.",
-    "desc_hu": "Nem készíthető el. A rozsdás vaskézbaltákat tartó zombiknak esélyük van elejteni azokat a halál után. Támadási sebzés +4, a legjobb minőség csak durva."
+    "desc": "Uncraftable rusty iron hatchet dropped by some zombies. Attack damage +4, with only rough quality.",
+    "desc_en": "Uncraftable rusty iron hatchet dropped by some zombies. Attack damage +4, with only rough quality.",
+    "desc_hu": "Nem craftolható rozsdás vas kézbalta, amelyet egyes zombik dobhatnak. Támadási sebzés: +4, a minősége legfeljebb durva.",
+    "desc_ru": "Некрафтящийся ржавый железный ручной топорик, который могут выбросить некоторые зомби. Урон: +4, максимальное качество только грубое."
   },
   "high_carbon_steel_hatchet": {
     "mcmod_id": 777322,
-    "desc": "高碳钢手斧是用铁手斧在冶炼炉结合1个碳晶冶炼而成。可在各类金属砧使用铁粒修复。 攻击伤害+6。",
-    "desc_en": "High carbon steel hand axes are smelted by combining an iron hand axe with a carbon crystal in a smelting furnace. Iron particles can be used to repair various metal anvils. Attack damage +6.",
-    "desc_hu": "A magas széntartalmú acél kézi fejszét úgy olvasztják meg, hogy egy vas kézi fejszét szénkristállyal kombinálnak olvasztókemencében. A vasrészecskék különféle fémüllők javítására használhatók. Támadási sebzés +6."
+    "desc": "High Carbon Steel hatchet made in the blast furnace from an iron hatchet. Repairs with iron nuggets. Attack damage +6.",
+    "desc_en": "High Carbon Steel hatchet made in the blast furnace from an iron hatchet. Repairs with iron nuggets. Attack damage +6.",
+    "desc_hu": "Magas széntartalmú acél kézbalta, amely vas kézbaltából készül a kohóban. Vasrögökkel javítható. Támadási sebzés: +6.",
+    "desc_ru": "Ручной топорик из высокоуглеродистой стали, создаваемый в плавильной печи из железного. Чинится железными крупицами. Урон: +6."
   },
   "rusted_iron_axe": {
     "mcmod_id": 773582,
-    "desc": "无法合成，手持锈铁斧的僵尸死亡后有几率掉落。 攻击伤害+5，最高品质只是粗糙。",
-    "desc_en": "It cannot be synthesized. Zombies holding rusty axes have a chance to drop them after death. Attack damage +5, highest quality is just rough.",
-    "desc_hu": "Nem készíthető el. A rozsdás fejszét tartó zombiknak esélyük van elejteni őket a halál után. Támadási sebzés +5, a legjobb minőség csak durva."
+    "desc": "Uncraftable rusty iron axe dropped by some zombies. Attack damage +5, with only rough quality.",
+    "desc_en": "Uncraftable rusty iron axe dropped by some zombies. Attack damage +5, with only rough quality.",
+    "desc_hu": "Nem craftolható rozsdás vas fejsze, amelyet egyes zombik dobhatnak. Támadási sebzés: +5, a minősége legfeljebb durva.",
+    "desc_ru": "Некрафтящийся ржавый железный топор, который могут выбросить некоторые зомби. Урон: +5, максимальное качество только грубое."
   },
   "bronze_axe": {
     "mcmod_id": 777300,
-    "desc": "青铜斧是用铜斧在冶炼炉结合2个锡锭冶炼而成。可在各类金属砧使用铜粒修复。 攻击伤害+6。",
-    "desc_en": "A bronze axe is smelted by combining a copper axe with 2 tin ingots in a smelting furnace. Copper grains can be used for repair on all types of metal anvils. Attack damage +6.",
-    "desc_hu": "A bronzbaltát úgy olvasztják meg, hogy egy rézbaltát 2 bádogrudakkal kombinálnak olvasztókemencében. A rézszemcsék minden típusú fém üllőn javíthatók. Támadási sebzés +6."
+    "desc": "Bronze axe made in the blast furnace from a copper axe and tin. Repairs with copper nuggets. Attack damage +6.",
+    "desc_en": "Bronze axe made in the blast furnace from a copper axe and tin. Repairs with copper nuggets. Attack damage +6.",
+    "desc_hu": "Bronz fejsze, amely réz fejszéből és ónból készül a kohóban. Rézrögökkel javítható. Támadási sebzés: +6.",
+    "desc_ru": "Бронзовый топор, создаваемый в плавильной печи из медного топора и олова. Чинится медными крупицами. Урон: +6."
   },
   "silver_copper_axe": {
     "mcmod_id": 777301,
-    "desc": "银铜斧是用银斧在冶炼炉结合1个铜锭冶炼而成。可在各类金属砧使用铜粒或银粒修复。 攻击伤害+6.5，对亡灵怪物有伤害加成，可以攻击白色食尸鬼。",
-    "desc_en": "A Silver Copper axe is smelted by combining a silver axe with a copper ingot in a smelting furnace. Can be repaired using copper or silver grains on various metal anvils. Attack damage +6.5, damage bonus to undead monsters, and can attack white ghouls.",
-    "desc_hu": "Az ezüst-réz fejszét úgy olvasztják meg, hogy egy ezüstbaltát egy réztuskóval kombinálnak egy olvasztókemencében. Réz- vagy ezüstszemcsékkel javítható különféle fémüllőkön. Támadássebzés +6,5, sebzésbónusz élőhalott szörnyeknek, és támadhat fehér ghoulokat.",
+    "desc": "Silver-Copper axe made in the blast furnace from a silver axe and copper. Repairs with copper or silver nuggets. Attack damage +6.5 with bonus damage to undead.",
+    "desc_en": "Silver-Copper axe made in the blast furnace from a silver axe and copper. Repairs with copper or silver nuggets. Attack damage +6.5 with bonus damage to undead.",
+    "desc_hu": "Ezüst-réz fejsze, amely ezüst fejszéből és rézből készül a kohóban. Réz- vagy ezüströgökkel javítható. Támadási sebzés: +6,5, bónusz sebzéssel az élőholtak ellen.",
     "desc_ru": "Серебряно-медный топор выплавляется в плавильной печи из серебряного топора и одного медного слитка. Чинится медными или серебряными крупицами на разных металлических наковальнях. Урон +6,5, имеет бонус против нежити и может бить белых гулей."
   },
   "high_carbon_steel_axe": {
     "mcmod_id": 777302,
-    "desc": "高碳钢斧是用铁斧在冶炼炉结合1个碳晶冶炼而成。可在各类金属砧使用铁粒修复。 攻击伤害+7。 附加额外效果： 0.5.9版本新增，连锁挖掘。",
+    "desc": "High Carbon Steel axe made in the blast furnace from an iron axe. Repairs with iron nuggets. Attack damage +7.",
     "versions": [
-      "0.5.9版本新增，连锁挖掘"
+      "v0.5.9: Gained chain-mining."
     ],
-    "desc_en": "High carbon steel axes are smelted by combining an iron axe with a carbon crystal in a smelting furnace. Iron particles can be used to repair various metal anvils. Attack damage +7. Additional additional effects: Newly added in version 0.5.9, chain mining.",
-    "desc_hu": "A magas széntartalmú acélbaltákat úgy olvasztják meg, hogy egy vas fejszét szénkristállyal kombinálnak olvasztókemencében. A vasrészecskék különféle fémüllők javítására használhatók. Támadási sebzés +7. További további hatások: Újonnan hozzáadva a 0.5.9-es verzióban, láncbányászat."
+    "desc_en": "High Carbon Steel axe made in the blast furnace from an iron axe. Repairs with iron nuggets. Attack damage +7.",
+    "desc_hu": "Magas széntartalmú acél fejsze, amely vas fejszéből készül a kohóban. Vasrögökkel javítható. Támadási sebzés: +7.",
+    "desc_ru": "Топор из высокоуглеродистой стали, создаваемый в плавильной печи из железного топора. Чинится железными крупицами. Урон: +7.",
+    "versions_en": [
+      "v0.5.9: Gained chain-mining."
+    ],
+    "versions_hu": [
+      "v0.5.9: Megkapta a láncbányászat hatást."
+    ],
+    "versions_ru": [
+      "v0.5.9: Получил эффект цепной добычи."
+    ]
   },
   "rusted_iron_pickaxe": {
     "mcmod_id": 773570,
-    "desc": "无法合成，手持锈铁镐的僵尸死亡后有几率掉落。 锈铁系列工具的挖掘等级都低于铁，与铜镐为一个等级，因此无法挖掘钻石矿石、绿宝石矿石和黑曜石。 攻击伤害+4，最高品质只是粗糙。0.5.9版本新增设定，无需精准采集可直接挖掘冰。",
+    "desc": "Uncraftable rusty iron pickaxe dropped by some zombies. Its mining tier matches copper, not iron. Attack damage +4.",
     "versions": [
-      "0.5.9版本新增设定，无需精准采集可直接挖掘冰"
+      "v0.5.9: Can mine ice without Silk Touch."
     ],
-    "desc_en": "It cannot be synthesized. Zombies holding rusty iron pickaxes have a chance to drop them after death. The mining level of the rusty iron series tools is lower than that of iron, and is the same level as the copper pickaxe, so it cannot mine diamond ore, emerald ore and obsidian. Attack damage +4, highest quality is just rough. Version 0.5.9 has a new setting that allows you to dig ice directly without precise collection.",
-    "desc_hu": "Nem készíthető el. A rozsdás vascsákányokat tartó zombiknak esélyük van elejteni őket a haláluk után. A rozsdás vas sorozatú szerszámok bányászati ​​szintje alacsonyabb, mint a vasé, és megegyezik a rézcsákánnyal, így gyémántércet, smaragdércet és obszidiánt nem tud bányászni. Támadási sebzés +4, a legjobb minőség csak durva. A 0.5.9-es verzió új beállítással rendelkezik, amely lehetővé teszi, hogy precíz gyűjtés nélkül közvetlenül ásson jeget."
+    "desc_en": "Uncraftable rusty iron pickaxe dropped by some zombies. Its mining tier matches copper, not iron. Attack damage +4.",
+    "desc_hu": "Nem craftolható rozsdás vascsákány, amelyet egyes zombik dobhatnak. A bányászati szintje a rézével egyezik, nem a vaséval. Támadási sebzés: +4.",
+    "desc_ru": "Некрафтящаяся ржавая железная кирка, которую могут выбросить некоторые зомби. По уровню добычи соответствует меди, а не железу. Урон: +4.",
+    "versions_en": [
+      "v0.5.9: Can mine ice without Silk Touch."
+    ],
+    "versions_hu": [
+      "v0.5.9: Silk Touch nélkül is bányászhat jeget."
+    ],
+    "versions_ru": [
+      "v0.5.9: Может добывать лёд без Шёлкового касания."
+    ]
   },
   "bronze_pickaxe": {
     "mcmod_id": 777297,
-    "desc": "青铜镐是用铜镐在冶炼炉结合2个锡锭冶炼而成。可在各类金属砧使用铜粒修复。 攻击伤害+5，能伤害所有土元素。 无法挖掘钻石矿石、绿宝石矿石和黑曜石。 0.5.9版本新增设定，无需精准采集可直接挖掘冰。 可以继承铜镐的品质。",
+    "desc": "Bronze pickaxe made in the blast furnace from a copper pickaxe and tin. Repairs with copper nuggets. Attack damage +5.",
     "versions": [
-      "0.5.9版本新增设定，无需精准采集可直接挖掘冰"
+      "v0.5.9: Can mine ice without Silk Touch."
     ],
-    "desc_en": "A bronze pickaxe is smelted by combining a copper pickaxe with 2 tin ingots in a smelting furnace. Copper grains can be used for repair on all types of metal anvils. Attack damage +5, can damage all earth elements. Diamond ore, emerald ore, and obsidian cannot be mined. Version 0.5.9 has a new setting that allows you to dig ice directly without precise collection. Can inherit the quality of a copper pickaxe.",
-    "desc_hu": "Egy bronz csákány olvasztása úgy történik, hogy egy rézcsákányt 2 bádogrudakkal kombinálnak olvasztókemencében. A rézszemcsék minden típusú fém üllőn javíthatók. Támadási sebzés +5, károsíthatja az összes földelemet. Gyémánt, smaragd és obszidián nem bányászható. A 0.5.9-es verzió új beállítással rendelkezik, amely lehetővé teszi, hogy precíz gyűjtés nélkül közvetlenül ásson jeget. Örökölheti a réz csákány minőségét."
+    "desc_en": "Bronze pickaxe made in the blast furnace from a copper pickaxe and tin. Repairs with copper nuggets. Attack damage +5.",
+    "desc_hu": "Bronz csákány, amely réz csákányból és ónból készül a kohóban. Rézrögökkel javítható. Támadási sebzés: +5.",
+    "desc_ru": "Бронзовая кирка, создаваемая в плавильной печи из медной кирки и олова. Чинится медными крупицами. Урон: +5.",
+    "versions_en": [
+      "v0.5.9: Can mine ice without Silk Touch."
+    ],
+    "versions_hu": [
+      "v0.5.9: Silk Touch nélkül is bányászhat jeget."
+    ],
+    "versions_ru": [
+      "v0.5.9: Может добывать лёд без Шёлкового касания."
+    ]
   },
   "silver_copper_pickaxe": {
     "mcmod_id": 777298,
-    "desc": "银铜镐是用银镐在冶炼炉结合2个铜锭冶炼而成。可在各类金属砧使用铜粒或银粒修复。 攻击伤害+5.5，能伤害所有土元素，对亡灵怪物有伤害加成，可以攻击白色食尸鬼。 无法挖掘钻石矿石、绿宝石矿石和黑曜石。 0.5.9版本新增设定，无需精准采集可直接挖掘冰。",
+    "desc": "Silver-Copper pickaxe made in the blast furnace from a silver pickaxe and copper. Repairs with copper or silver nuggets. Attack damage +5.5 with undead bonus damage.",
     "versions": [
-      "0.5.9版本新增设定，无需精准采集可直接挖掘冰"
+      "v0.5.9: Can mine ice without Silk Touch."
     ],
-    "desc_en": "A silver copper pickaxe is smelted by combining two copper ingots with a silver pickaxe in a smelting furnace. Can be repaired using copper or silver grains on various metal anvils. Attack damage +5.5, can damage all earth elements, has a damage bonus to undead monsters, and can attack white ghouls. Diamond ore, emerald ore, and obsidian cannot be mined. Version 0.5.9 has a new setting that allows you to dig ice directly without precise collection.",
-    "desc_hu": "Az ezüstréz csákány olvasztása úgy történik, hogy egy olvasztókemencében két réztuskót egy ezüst csákánnyal kombinálnak. Réz- vagy ezüstszemcsékkel javítható különféle fémüllőkön. Támadási sebzés +5,5, sebzi a földelementálokat, sebzésbónusza van élőhalott szörnyek ellen, és támadhat fehér ghoulokat. Gyémánt, smaragd és obszidián nem bányászható vele. A 0.5.9 óta Silk Touch nélkül is képes jeget bányászni.",
-    "desc_ru": "Серебряно-медная кирка выплавляется в плавильной печи из серебряной кирки и двух медных слитков. Чинится медными или серебряными крупицами на разных металлических наковальнях. Урон +5,5, наносит урон земляным элементалям, имеет бонус против нежити и может бить белых гулей. Алмазную руду, изумрудную руду и обсидиан ею добывать нельзя. С версии 0.5.9 может добывать лёд без Шёлкового касания."
+    "desc_en": "Silver-Copper pickaxe made in the blast furnace from a silver pickaxe and copper. Repairs with copper or silver nuggets. Attack damage +5.5 with undead bonus damage.",
+    "desc_hu": "Ezüst-réz csákány, amely ezüst csákányból és rézből készül a kohóban. Réz- vagy ezüströgökkel javítható. Támadási sebzés: +5,5, bónusz sebzéssel az élőholtak ellen.",
+    "desc_ru": "Серебряно-медная кирка, создаваемая в плавильной печи из серебряной кирки и меди. Чинится медными или серебряными крупицами. Урон: +5,5, с бонусом против нежити.",
+    "versions_en": [
+      "v0.5.9: Can mine ice without Silk Touch."
+    ],
+    "versions_hu": [
+      "v0.5.9: Silk Touch nélkül is bányászhat jeget."
+    ],
+    "versions_ru": [
+      "v0.5.9: Может добывать лёд без Шёлкового касания."
+    ]
   },
   "high_carbon_steel_pickaxe": {
     "mcmod_id": 777299,
-    "desc": "高碳钢镐是用铁镐在冶炼炉结合1个碳晶冶炼而成。可在各类金属砧使用铁粒修复。0.5.9版本新增设定，无需精准采集可直接挖掘冰。 攻击伤害+6，无法挖掘钻石矿石。 附加额外效果： 连锁挖掘。",
+    "desc": "High Carbon Steel pickaxe made in the blast furnace from an iron pickaxe. Repairs with iron nuggets. Attack damage +6.",
     "versions": [
-      "0.5.9版本新增设定，无需精准采集可直接挖掘冰"
+      "v0.5.9: Can mine ice without Silk Touch and gained chain-mining."
     ],
-    "desc_en": "High carbon steel pickaxes are smelted by combining an iron pickaxe with a carbon crystal in a smelting furnace. Iron particles can be used to repair various metal anvils. Version 0.5.9 has a new setting that allows you to dig ice directly without precise collection. Attack damage +6, unable to mine diamond ore. Additional additional effects: chain mining.",
-    "desc_hu": "A nagy széntartalmú acél csákányokat úgy olvasztják meg, hogy egy vascsákányt szénkristállyal kombinálnak olvasztókemencében. A vasrészecskék különféle fémüllők javítására használhatók. A 0.5.9-es verzió új beállítással rendelkezik, amely lehetővé teszi, hogy precíz gyűjtés nélkül közvetlenül ásson jeget. Támadási sebzés +6, nem tud gyémánt ércet bányászni. További további hatások: láncbányászat."
+    "desc_en": "High Carbon Steel pickaxe made in the blast furnace from an iron pickaxe. Repairs with iron nuggets. Attack damage +6.",
+    "desc_hu": "Magas széntartalmú acél csákány, amely vas csákányból készül a kohóban. Vasrögökkel javítható. Támadási sebzés: +6.",
+    "desc_ru": "Кирка из высокоуглеродистой стали, создаваемая в плавильной печи из железной кирки. Чинится железными крупицами. Урон: +6.",
+    "versions_en": [
+      "v0.5.9: Can mine ice without Silk Touch and gained chain-mining."
+    ],
+    "versions_hu": [
+      "v0.5.9: Silk Touch nélkül is bányászhat jeget, és megkapta a láncbányászatot."
+    ],
+    "versions_ru": [
+      "v0.5.9: Может добывать лёд без Шёлкового касания и получил цепную добычу."
+    ]
   },
   "rusted_iron_shovel": {
     "mcmod_id": 773552,
-    "desc": "无法合成，手持锈铁锹的僵尸死亡后有几率掉落。 攻击伤害+3，最高品质只是粗糙。",
-    "desc_en": "It cannot be synthesized. Zombies holding rusty shovels have a chance to drop it after death. Attack damage +3, highest quality is just rough.",
-    "desc_hu": "Nem készíthető el. A rozsdás lapátot tartó zombiknak esélyük van elejteni a halál után. Támadási sebzés +3, a legjobb minőség csak durva."
+    "desc": "Uncraftable rusty iron shovel dropped by some zombies. Attack damage +3, with only rough quality.",
+    "desc_en": "Uncraftable rusty iron shovel dropped by some zombies. Attack damage +3, with only rough quality.",
+    "desc_hu": "Nem craftolható rozsdás vas lapát, amelyet egyes zombik dobhatnak. Támadási sebzés: +3, a minősége legfeljebb durva.",
+    "desc_ru": "Некрафтящаяся ржавая железная лопата, которую могут выбросить некоторые зомби. Урон: +3, максимальное качество только грубое."
   },
   "bronze_shovel": {
     "mcmod_id": 777303,
-    "desc": "青铜锹是用铜锹在冶炼炉结合1个锡锭冶炼而成。可在各类金属砧使用铜粒修复。 攻击伤害+4。",
-    "desc_en": "A bronze shovel is smelted by combining a copper shovel with a tin ingot in a smelting furnace. Copper grains can be used for repair on all types of metal anvils. Attack damage +4.",
-    "desc_hu": "A bronz lapátot úgy olvasztják meg, hogy egy rézlapátot egy olvasztókemencében egy bádogrudaval kombinálnak. A rézszemcsék minden típusú fém üllőn javíthatók. Támadási sebzés +4."
+    "desc": "Bronze shovel made in the blast furnace from a copper shovel and tin. Repairs with copper nuggets. Attack damage +4.",
+    "desc_en": "Bronze shovel made in the blast furnace from a copper shovel and tin. Repairs with copper nuggets. Attack damage +4.",
+    "desc_hu": "Bronz lapát, amely réz lapátból és ónból készül a kohóban. Rézrögökkel javítható. Támadási sebzés: +4.",
+    "desc_ru": "Бронзовая лопата, создаваемая в плавильной печи из медной лопаты и олова. Чинится медными крупицами. Урон: +4."
   },
   "silver_copper_shovel": {
     "mcmod_id": 777304,
-    "desc": "银铜锹是用银锹在冶炼炉结合1个铜锭冶炼而成。可在各类金属砧使用铜粒或银粒修复。 攻击伤害+4.5，对亡灵怪物有伤害加成，可以攻击白色食尸鬼。",
-    "desc_en": "A silver copper spade is smelted by combining a silver spade with a copper ingot in a smelting furnace. Can be repaired using copper or silver grains on various metal anvils. Attack damage +4.5, damage bonus to undead monsters, and can attack white ghouls.",
-    "desc_hu": "Az ezüst-réz ásót úgy olvasztják meg, hogy egy ezüst ásót egy réztuskóval kombinálnak olvasztókemencében. Réz- vagy ezüstszemcsékkel javítható különféle fémüllőkön. Támadássebzés +4,5, sebzésbónusz élőhalott szörnyeknek, és támadhat fehér ghoulokat.",
+    "desc": "Silver-Copper shovel made in the blast furnace from a silver shovel and copper. Repairs with copper or silver nuggets. Attack damage +4.5 with undead bonus damage.",
+    "desc_en": "Silver-Copper shovel made in the blast furnace from a silver shovel and copper. Repairs with copper or silver nuggets. Attack damage +4.5 with undead bonus damage.",
+    "desc_hu": "Ezüst-réz lapát, amely ezüst lapátból és rézből készül a kohóban. Réz- vagy ezüströgökkel javítható. Támadási sebzés: +4,5, bónusz sebzéssel az élőholtak ellen.",
     "desc_ru": "Серебряно-медная лопата выплавляется в плавильной печи из серебряной лопаты и одного медного слитка. Чинится медными или серебряными крупицами на разных металлических наковальнях. Урон +4,5, имеет бонус против нежити и может бить белых гулей."
   },
   "high_carbon_steel_shovel": {
     "mcmod_id": 777305,
-    "desc": "高碳钢锹是用铁锹在冶炼炉结合1个碳晶冶炼而成。可在各类金属砧使用铁粒修复。 攻击伤害+5。 附加额外效果： 0.5.9版本新增，连锁挖掘。",
+    "desc": "High Carbon Steel shovel made in the blast furnace from an iron shovel. Repairs with iron nuggets. Attack damage +5.",
     "versions": [
-      "0.5.9版本新增，连锁挖掘"
+      "v0.5.9: Gained chain-mining."
     ],
-    "desc_en": "High carbon steel shovels are smelted by combining a shovel with a carbon crystal in a smelting furnace. Iron particles can be used to repair various metal anvils. Attack damage +5. Additional additional effects: Newly added in version 0.5.9, chain mining.",
-    "desc_hu": "A magas széntartalmú acél lapátokat olvasztókemence szénkristályával való kombinálásával olvasztják. A vasrészecskék különféle fémüllők javítására használhatók. Támadási sebzés +5. További további hatások: Újonnan hozzáadva a 0.5.9-es verzióban, láncbányászat."
+    "desc_en": "High Carbon Steel shovel made in the blast furnace from an iron shovel. Repairs with iron nuggets. Attack damage +5.",
+    "desc_hu": "Magas széntartalmú acél lapát, amely vas lapátból készül a kohóban. Vasrögökkel javítható. Támadási sebzés: +5.",
+    "desc_ru": "Лопата из высокоуглеродистой стали, создаваемая в плавильной печи из железной лопаты. Чинится железными крупицами. Урон: +5.",
+    "versions_en": [
+      "v0.5.9: Gained chain-mining."
+    ],
+    "versions_hu": [
+      "v0.5.9: Megkapta a láncbányászat hatást."
+    ],
+    "versions_ru": [
+      "v0.5.9: Получила эффект цепной добычи."
+    ]
   },
   "rusted_iron_hoe": {
     "mcmod_id": 773637,
-    "desc": "无法合成，手持锈铁锄的僵尸死亡后有几率掉落。 攻击伤害+3，最高品质只有粗糙。",
-    "desc_en": "It cannot be crafted. Zombies holding rusty iron hoe have a chance to drop it after death. Attack damage +3, the highest quality is only rough.",
-    "desc_hu": "Nem lehet kialakítani. A rozsdás vaskapát tartó zombiknak esélyük van elejteni azt a halál után. Támadási sebzés +3, a legjobb minőség csak durva."
+    "desc": "Uncraftable rusty iron hoe dropped by some zombies. Attack damage +3, with only rough quality.",
+    "desc_en": "Uncraftable rusty iron hoe dropped by some zombies. Attack damage +3, with only rough quality.",
+    "desc_hu": "Nem craftolható rozsdás vas kapa, amelyet egyes zombik dobhatnak. Támadási sebzés: +3, a minősége legfeljebb durva.",
+    "desc_ru": "Некрафтящаяся ржавая железная мотыга, которую могут выбросить некоторые зомби. Урон: +3, максимальное качество только грубое."
   },
   "high_carbon_steel_hoe": {
     "mcmod_id": 777323,
-    "desc": "高碳钢锄是用铁锄在冶炼炉结合1个碳晶冶炼而成。可在各类金属砧使用铁粒修复。 攻击伤害+5。",
-    "desc_en": "High carbon steel hoe is smelted by combining an iron hoe with a carbon crystal in a smelting furnace. Iron particles can be used to repair various metal anvils. Attack damage +5.",
-    "desc_hu": "A magas széntartalmú acélkapát úgy olvasztják meg, hogy egy vaskapát szénkristállyal kombinálnak olvasztókemencében. A vasrészecskék különféle fémüllők javítására használhatók. Támadási sebzés +5."
+    "desc": "High Carbon Steel hoe made in the blast furnace from an iron hoe. Repairs with iron nuggets. Attack damage +5.",
+    "desc_en": "High Carbon Steel hoe made in the blast furnace from an iron hoe. Repairs with iron nuggets. Attack damage +5.",
+    "desc_hu": "Magas széntartalmú acél kapa, amely vas kapából készül a kohóban. Vasrögökkel javítható. Támadási sebzés: +5.",
+    "desc_ru": "Мотыга из высокоуглеродистой стали, создаваемая в плавильной печи из железной мотыги. Чинится железными крупицами. Урон: +5."
   },
   "high_carbon_steel_mattock": {
     "mcmod_id": 777320,
-    "desc": "高碳钢鸭嘴锄是用铁鸭嘴锄在冶炼炉结合1个碳晶冶炼而成。可在各类金属砧使用铁粒修复。 攻击伤害+5。",
-    "desc_en": "High carbon steel duckbill hoe is smelted by combining an iron duckbill hoe with a carbon crystal in a smelting furnace. Iron particles can be used to repair various metal anvils. Attack damage +5.",
-    "desc_hu": "A nagy széntartalmú acél kacsacsőrű kapát úgy olvasztják meg, hogy egy vas kacsacsőrű kapát egy szénkristállyal kombinálnak olvasztókemencében. A vasrészecskék különféle fémüllők javítására használhatók. Támadási sebzés +5."
+    "desc": "High Carbon Steel mattock made in the blast furnace from an iron mattock. Repairs with iron nuggets. Attack damage +5.",
+    "desc_en": "High Carbon Steel mattock made in the blast furnace from an iron mattock. Repairs with iron nuggets. Attack damage +5.",
+    "desc_hu": "Magas széntartalmú acél mattock, amely vas mattockból készül a kohóban. Vasrögökkel javítható. Támadási sebzés: +5.",
+    "desc_ru": "Матток из высокоуглеродистой стали, создаваемый в плавильной печи из железного маттока. Чинится железными крупицами. Урон: +5."
   },
   "rusted_iron_scythe": {
     "mcmod_id": 773590,
-    "desc": "无法合成，手持锈铁镰刀的僵尸死亡后有几率掉落。 镰刀用来快速收割高草和小麦（收割其他作物没有速度加成）。 攻击伤害+3，最高品质只有粗糙。",
-    "desc_en": "It cannot be synthesized. Zombies holding rusty scythes have a chance to drop them after death. The sickle is used to quickly harvest tall grass and wheat (no speed bonus for harvesting other crops). Attack damage +3, the highest quality is only rough.",
-    "desc_hu": "Nem készíthető el. A rozsdás kaszát tartó zombiknak esélyük van elejteni őket a haláluk után. A sarlót magas fű és búza gyors betakarítására használják (más növények betakarításához nincs sebességbónusz). Támadási sebzés +3, a legjobb minőség csak durva."
+    "desc": "Uncraftable rusty iron scythe dropped by some zombies. Good for fast grass and wheat harvesting. Attack damage +3.",
+    "desc_en": "Uncraftable rusty iron scythe dropped by some zombies. Good for fast grass and wheat harvesting. Attack damage +3.",
+    "desc_hu": "Nem craftolható rozsdás vas kasza, amelyet egyes zombik dobhatnak. Fű és búza gyors betakarítására jó. Támadási sebzés: +3.",
+    "desc_ru": "Некрафтящаяся ржавая железная коса, которую могут выбросить некоторые зомби. Подходит для быстрого сбора травы и пшеницы. Урон: +3."
   },
   "high_carbon_steel_scythe": {
     "mcmod_id": 777321,
-    "desc": "高碳钢镰刀是用铁镰刀在冶炼炉结合1个碳晶冶炼而成。可在各类金属砧使用铁粒修复。 攻击伤害+5。",
-    "desc_en": "High carbon steel sickles are smelted by combining an iron sickle with a carbon crystal in a smelting furnace. Iron particles can be used to repair various metal anvils. Attack damage +5.",
-    "desc_hu": "A nagy széntartalmú acél sarló olvasztása úgy történik, hogy egy vassarlót szénkristállyal kombinálnak olvasztókemencében. A vasrészecskék különféle fémüllők javítására használhatók. Támadási sebzés +5."
+    "desc": "High Carbon Steel scythe made in the blast furnace from an iron scythe. Repairs with iron nuggets. Attack damage +5.",
+    "desc_en": "High Carbon Steel scythe made in the blast furnace from an iron scythe. Repairs with iron nuggets. Attack damage +5.",
+    "desc_hu": "Magas széntartalmú acél kasza, amely vas kaszából készül a kohóban. Vasrögökkel javítható. Támadási sebzés: +5.",
+    "desc_ru": "Коса из высокоуглеродистой стали, создаваемая в плавильной печи из железной косы. Чинится железными крупицами. Урон: +5."
   },
   "high_carbon_steel_shears": {
     "mcmod_id": 777318,
-    "desc": "高碳钢剪刀是用铁剪刀在冶炼炉结合1个碳晶冶炼而成。可在各类金属砧使用铁粒修复。 攻击伤害+4。",
-    "desc_en": "High carbon steel scissors are smelted by combining iron scissors with a carbon crystal in a smelting furnace. Iron particles can be used to repair various metal anvils. Attack damage +4.",
-    "desc_hu": "A nagy széntartalmú acél olló olvasztása vasolló és szénkristály kombinálásával történik olvasztókemencében. A vasrészecskék különféle fémüllők javítására használhatók. Támadási sebzés +4."
+    "desc": "High Carbon Steel shears made in the blast furnace from iron shears. Repairs with iron nuggets. Attack damage +4.",
+    "desc_en": "High Carbon Steel shears made in the blast furnace from iron shears. Repairs with iron nuggets. Attack damage +4.",
+    "desc_hu": "Magas széntartalmú acél olló, amely vas ollóból készül a kohóban. Vasrögökkel javítható. Támadási sebzés: +4.",
+    "desc_ru": "Ножницы из высокоуглеродистой стали, создаваемые в плавильной печи из железных ножниц. Чинятся железными крупицами. Урон: +4."
   },
   "water_bag_mercury": {
     "mcmod_id": 831587,
@@ -4974,5 +5045,53 @@
     "desc_en": "A bucket filled with water. Right-click on water while holding an empty bucket, or throw an empty bucket into a pool of water to collect it (does not consume water blocks). Pouring water directly on the ground produces only flowing water, which disappears after a while. Hold Ctrl and right-click to place a permanent water source block at the cost of 100 XP (available from R146+). In this mod, buckets are mainly used to pour water onto naturally generated lava to create obsidian, or to transfer water into a bowl for food crafting.",
     "desc_hu": "Vízzel töltött vödör. Jobb klikk vízre üres vödörrel, vagy dobd a vödröt egy vízmedencébe a feltöltéshez (nem fogyasztja el a vízblokkot). Ha a vizet közvetlenül a földre öntöd, csak folyó víz keletkezik, ami egy idő után eltűnik. Ctrl + jobb klikk: 100 XP elköltésével állandó vízforrás blokkot helyezhetsz el (R146-os verziótól elérhető). A modban a vödör főként arra használatos, hogy vizet önts a természetesen generált lávaforrásokra obszidián létrehozásához, vagy hogy vizet tölts egy tálba ételek elkészítéséhez.",
     "desc_ru": "Ведро с водой. Нажмите ПКМ по воде с пустым ведром или бросьте пустое ведро в водоём, чтобы набрать воду (блок воды не расходуется). При выливании воды на землю появляется лишь текущая вода, которая вскоре исчезает. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника воды за 100 XP (доступно с версии R146). В этом моде вёдра используются в основном для того, чтобы лить воду на естественные источники лавы для создания обсидиана, или переливать воду в чашу для приготовления еды."
+  },
+  "copper_bucket_filled_with_lava": {
+    "mcmod_id": 772862,
+    "desc_en": "A bucket filled with lava. Right-click any lava block with an empty bucket to collect lava — this does not consume the lava block. Pouring lava on the ground produces only flowing lava, which disappears after a while and does NOT form obsidian when it contacts water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Lava buckets can also be used as fuel (smelts 16 items). Because scooping lava does not require a lava source block, lava can be regenerated indefinitely: pour lava on the ground, then quickly right-click with multiple empty buckets before it disappears. Warning: when scooping lava, the bucket in hand has a chance to melt. Melt chances — Copper: 16%, Silver: 16%, Gold: 20%, Iron: 8%, Hardstone: 4%, Ancient Metal: 2%, Mithril: 1%, Adamantium: 0% (never melts).",
+    "desc_hu": "Lávával töltött vödör. Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez — ez nem fogyasztja el a lávablokkot. A földre öntött láva csak folyó lávát alkot, ami egy idő után eltűnik, és vízzel érintkezve NEM hoz létre obszidiánt. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. A lávás vödör tüzelőanyagként is használható (16 tárgyat éget el). Mivel a láva gyűjtéséhez nem szükséges lávaforrás blokk, a láva korlátlanul újratermelhető: öntsd a lávát a földre, majd gyorsan jobb klikkelj több üres vödörrel, mielőtt eltűnik. Figyelem: láva merítésekor a kézben lévő vödörnek esélye van megolvadni. Olvadási esélyek — Réz: 16%, Ezüst: 16%, Arany: 20%, Vas: 8%, Keménykő: 4%, Ősi fém: 2%, Mithril: 1%, Adamantium: 0% (soha nem olvad).",
+    "desc_ru": "Ведро с лавой. Нажмите ПКМ по любому блоку лавы с пустым ведром, чтобы зачерпнуть лаву — блок лавы при этом не расходуется. При выливании лавы на землю образуется лишь текущая лава, которая вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника лавы за счёт опыта. Вёдра с лавой можно использовать как топливо (переплавляет 16 предметов). Поскольку для зачерпывания лавы не требуется блок-источник, лаву можно добывать бесконечно: вылейте лаву на землю, а затем быстро кликайте ПКМ несколькими пустыми вёдрами, пока она не исчезла. Внимание: при зачерпывании лавы ведро в руке имеет шанс расплавиться. Шансы расплавления — Медное: 16%, Серебряное: 16%, Золотое: 20%, Железное: 8%, Твердокаменное: 4%, Из древнего металла: 2%, Мифриловое: 1%, Адамантиевое: 0% (никогда не плавится)."
+  },
+  "silver_bucket_filled_with_lava": {
+    "mcmod_id": 772862,
+    "desc_en": "A bucket filled with lava. Right-click any lava block with an empty bucket to collect lava — this does not consume the lava block. Pouring lava on the ground produces only flowing lava, which disappears after a while and does NOT form obsidian when it contacts water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Lava buckets can also be used as fuel (smelts 16 items). Because scooping lava does not require a lava source block, lava can be regenerated indefinitely: pour lava on the ground, then quickly right-click with multiple empty buckets before it disappears. Warning: when scooping lava, the bucket in hand has a chance to melt. Melt chances — Copper: 16%, Silver: 16%, Gold: 20%, Iron: 8%, Hardstone: 4%, Ancient Metal: 2%, Mithril: 1%, Adamantium: 0% (never melts).",
+    "desc_hu": "Lávával töltött vödör. Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez — ez nem fogyasztja el a lávablokkot. A földre öntött láva csak folyó lávát alkot, ami egy idő után eltűnik, és vízzel érintkezve NEM hoz létre obszidiánt. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. A lávás vödör tüzelőanyagként is használható (16 tárgyat éget el). Mivel a láva gyűjtéséhez nem szükséges lávaforrás blokk, a láva korlátlanul újratermelhető: öntsd a lávát a földre, majd gyorsan jobb klikkelj több üres vödörrel, mielőtt eltűnik. Figyelem: láva merítésekor a kézben lévő vödörnek esélye van megolvadni. Olvadási esélyek — Réz: 16%, Ezüst: 16%, Arany: 20%, Vas: 8%, Keménykő: 4%, Ősi fém: 2%, Mithril: 1%, Adamantium: 0% (soha nem olvad).",
+    "desc_ru": "Ведро с лавой. Нажмите ПКМ по любому блоку лавы с пустым ведром, чтобы зачерпнуть лаву — блок лавы при этом не расходуется. При выливании лавы на землю образуется лишь текущая лава, которая вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника лавы за счёт опыта. Вёдра с лавой можно использовать как топливо (переплавляет 16 предметов). Поскольку для зачерпывания лавы не требуется блок-источник, лаву можно добывать бесконечно: вылейте лаву на землю, а затем быстро кликайте ПКМ несколькими пустыми вёдрами, пока она не исчезла. Внимание: при зачерпывании лавы ведро в руке имеет шанс расплавиться. Шансы расплавления — Медное: 16%, Серебряное: 16%, Золотое: 20%, Железное: 8%, Твердокаменное: 4%, Из древнего металла: 2%, Мифриловое: 1%, Адамантиевое: 0% (никогда не плавится)."
+  },
+  "gold_bucket_filled_with_lava": {
+    "mcmod_id": 772862,
+    "desc_en": "A bucket filled with lava. Right-click any lava block with an empty bucket to collect lava — this does not consume the lava block. Pouring lava on the ground produces only flowing lava, which disappears after a while and does NOT form obsidian when it contacts water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Lava buckets can also be used as fuel (smelts 16 items). Because scooping lava does not require a lava source block, lava can be regenerated indefinitely: pour lava on the ground, then quickly right-click with multiple empty buckets before it disappears. Warning: when scooping lava, the bucket in hand has a chance to melt. Melt chances — Copper: 16%, Silver: 16%, Gold: 20%, Iron: 8%, Hardstone: 4%, Ancient Metal: 2%, Mithril: 1%, Adamantium: 0% (never melts).",
+    "desc_hu": "Lávával töltött vödör. Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez — ez nem fogyasztja el a lávablokkot. A földre öntött láva csak folyó lávát alkot, ami egy idő után eltűnik, és vízzel érintkezve NEM hoz létre obszidiánt. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. A lávás vödör tüzelőanyagként is használható (16 tárgyat éget el). Mivel a láva gyűjtéséhez nem szükséges lávaforrás blokk, a láva korlátlanul újratermelhető: öntsd a lávát a földre, majd gyorsan jobb klikkelj több üres vödörrel, mielőtt eltűnik. Figyelem: láva merítésekor a kézben lévő vödörnek esélye van megolvadni. Olvadási esélyek — Réz: 16%, Ezüst: 16%, Arany: 20%, Vas: 8%, Keménykő: 4%, Ősi fém: 2%, Mithril: 1%, Adamantium: 0% (soha nem olvad).",
+    "desc_ru": "Ведро с лавой. Нажмите ПКМ по любому блоку лавы с пустым ведром, чтобы зачерпнуть лаву — блок лавы при этом не расходуется. При выливании лавы на землю образуется лишь текущая лава, которая вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника лавы за счёт опыта. Вёдра с лавой можно использовать как топливо (переплавляет 16 предметов). Поскольку для зачерпывания лавы не требуется блок-источник, лаву можно добывать бесконечно: вылейте лаву на землю, а затем быстро кликайте ПКМ несколькими пустыми вёдрами, пока она не исчезла. Внимание: при зачерпывании лавы ведро в руке имеет шанс расплавиться. Шансы расплавления — Медное: 16%, Серебряное: 16%, Золотое: 20%, Железное: 8%, Твердокаменное: 4%, Из древнего металла: 2%, Мифриловое: 1%, Адамантиевое: 0% (никогда не плавится)."
+  },
+  "iron_bucket_filled_with_lava": {
+    "mcmod_id": 772862,
+    "desc_en": "A bucket filled with lava. Right-click any lava block with an empty bucket to collect lava — this does not consume the lava block. Pouring lava on the ground produces only flowing lava, which disappears after a while and does NOT form obsidian when it contacts water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Lava buckets can also be used as fuel (smelts 16 items). Because scooping lava does not require a lava source block, lava can be regenerated indefinitely: pour lava on the ground, then quickly right-click with multiple empty buckets before it disappears. Warning: when scooping lava, the bucket in hand has a chance to melt. Melt chances — Copper: 16%, Silver: 16%, Gold: 20%, Iron: 8%, Hardstone: 4%, Ancient Metal: 2%, Mithril: 1%, Adamantium: 0% (never melts).",
+    "desc_hu": "Lávával töltött vödör. Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez — ez nem fogyasztja el a lávablokkot. A földre öntött láva csak folyó lávát alkot, ami egy idő után eltűnik, és vízzel érintkezve NEM hoz létre obszidiánt. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. A lávás vödör tüzelőanyagként is használható (16 tárgyat éget el). Mivel a láva gyűjtéséhez nem szükséges lávaforrás blokk, a láva korlátlanul újratermelhető: öntsd a lávát a földre, majd gyorsan jobb klikkelj több üres vödörrel, mielőtt eltűnik. Figyelem: láva merítésekor a kézben lévő vödörnek esélye van megolvadni. Olvadási esélyek — Réz: 16%, Ezüst: 16%, Arany: 20%, Vas: 8%, Keménykő: 4%, Ősi fém: 2%, Mithril: 1%, Adamantium: 0% (soha nem olvad).",
+    "desc_ru": "Ведро с лавой. Нажмите ПКМ по любому блоку лавы с пустым ведром, чтобы зачерпнуть лаву — блок лавы при этом не расходуется. При выливании лавы на землю образуется лишь текущая лава, которая вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника лавы за счёт опыта. Вёдра с лавой можно использовать как топливо (переплавляет 16 предметов). Поскольку для зачерпывания лавы не требуется блок-источник, лаву можно добывать бесконечно: вылейте лаву на землю, а затем быстро кликайте ПКМ несколькими пустыми вёдрами, пока она не исчезла. Внимание: при зачерпывании лавы ведро в руке имеет шанс расплавиться. Шансы расплавления — Медное: 16%, Серебряное: 16%, Золотое: 20%, Железное: 8%, Твердокаменное: 4%, Из древнего металла: 2%, Мифриловое: 1%, Адамантиевое: 0% (никогда не плавится)."
+  },
+  "hard_stone_bucket_of_lava": {
+    "mcmod_id": 772862,
+    "desc_en": "A bucket filled with lava. Right-click any lava block with an empty bucket to collect lava — this does not consume the lava block. Pouring lava on the ground produces only flowing lava, which disappears after a while and does NOT form obsidian when it contacts water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Lava buckets can also be used as fuel (smelts 16 items). Because scooping lava does not require a lava source block, lava can be regenerated indefinitely: pour lava on the ground, then quickly right-click with multiple empty buckets before it disappears. Warning: when scooping lava, the bucket in hand has a chance to melt. Melt chances — Copper: 16%, Silver: 16%, Gold: 20%, Iron: 8%, Hardstone: 4%, Ancient Metal: 2%, Mithril: 1%, Adamantium: 0% (never melts).",
+    "desc_hu": "Lávával töltött vödör. Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez — ez nem fogyasztja el a lávablokkot. A földre öntött láva csak folyó lávát alkot, ami egy idő után eltűnik, és vízzel érintkezve NEM hoz létre obszidiánt. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. A lávás vödör tüzelőanyagként is használható (16 tárgyat éget el). Mivel a láva gyűjtéséhez nem szükséges lávaforrás blokk, a láva korlátlanul újratermelhető: öntsd a lávát a földre, majd gyorsan jobb klikkelj több üres vödörrel, mielőtt eltűnik. Figyelem: láva merítésekor a kézben lévő vödörnek esélye van megolvadni. Olvadási esélyek — Réz: 16%, Ezüst: 16%, Arany: 20%, Vas: 8%, Keménykő: 4%, Ősi fém: 2%, Mithril: 1%, Adamantium: 0% (soha nem olvad).",
+    "desc_ru": "Ведро с лавой. Нажмите ПКМ по любому блоку лавы с пустым ведром, чтобы зачерпнуть лаву — блок лавы при этом не расходуется. При выливании лавы на землю образуется лишь текущая лава, которая вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника лавы за счёт опыта. Вёдра с лавой можно использовать как топливо (переплавляет 16 предметов). Поскольку для зачерпывания лавы не требуется блок-источник, лаву можно добывать бесконечно: вылейте лаву на землю, а затем быстро кликайте ПКМ несколькими пустыми вёдрами, пока она не исчезла. Внимание: при зачерпывании лавы ведро в руке имеет шанс расплавиться. Шансы расплавления — Медное: 16%, Серебряное: 16%, Золотое: 20%, Железное: 8%, Твердокаменное: 4%, Из древнего металла: 2%, Мифриловое: 1%, Адамантиевое: 0% (никогда не плавится)."
+  },
+  "ancient_metal_bucket_filled_with_lava": {
+    "mcmod_id": 772862,
+    "desc_en": "A bucket filled with lava. Right-click any lava block with an empty bucket to collect lava — this does not consume the lava block. Pouring lava on the ground produces only flowing lava, which disappears after a while and does NOT form obsidian when it contacts water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Lava buckets can also be used as fuel (smelts 16 items). Because scooping lava does not require a lava source block, lava can be regenerated indefinitely: pour lava on the ground, then quickly right-click with multiple empty buckets before it disappears. Warning: when scooping lava, the bucket in hand has a chance to melt. Melt chances — Copper: 16%, Silver: 16%, Gold: 20%, Iron: 8%, Hardstone: 4%, Ancient Metal: 2%, Mithril: 1%, Adamantium: 0% (never melts).",
+    "desc_hu": "Lávával töltött vödör. Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez — ez nem fogyasztja el a lávablokkot. A földre öntött láva csak folyó lávát alkot, ami egy idő után eltűnik, és vízzel érintkezve NEM hoz létre obszidiánt. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. A lávás vödör tüzelőanyagként is használható (16 tárgyat éget el). Mivel a láva gyűjtéséhez nem szükséges lávaforrás blokk, a láva korlátlanul újratermelhető: öntsd a lávát a földre, majd gyorsan jobb klikkelj több üres vödörrel, mielőtt eltűnik. Figyelem: láva merítésekor a kézben lévő vödörnek esélye van megolvadni. Olvadási esélyek — Réz: 16%, Ezüst: 16%, Arany: 20%, Vas: 8%, Keménykő: 4%, Ősi fém: 2%, Mithril: 1%, Adamantium: 0% (soha nem olvad).",
+    "desc_ru": "Ведро с лавой. Нажмите ПКМ по любому блоку лавы с пустым ведром, чтобы зачерпнуть лаву — блок лавы при этом не расходуется. При выливании лавы на землю образуется лишь текущая лава, которая вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника лавы за счёт опыта. Вёдра с лавой можно использовать как топливо (переплавляет 16 предметов). Поскольку для зачерпывания лавы не требуется блок-источник, лаву можно добывать бесконечно: вылейте лаву на землю, а затем быстро кликайте ПКМ несколькими пустыми вёдрами, пока она не исчезла. Внимание: при зачерпывании лавы ведро в руке имеет шанс расплавиться. Шансы расплавления — Медное: 16%, Серебряное: 16%, Золотое: 20%, Железное: 8%, Твердокаменное: 4%, Из древнего металла: 2%, Мифриловое: 1%, Адамантиевое: 0% (никогда не плавится)."
+  },
+  "mithril_bucket_filled_with_lava": {
+    "mcmod_id": 772862,
+    "desc_en": "A bucket filled with lava. Right-click any lava block with an empty bucket to collect lava — this does not consume the lava block. Pouring lava on the ground produces only flowing lava, which disappears after a while and does NOT form obsidian when it contacts water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Lava buckets can also be used as fuel (smelts 16 items). Because scooping lava does not require a lava source block, lava can be regenerated indefinitely: pour lava on the ground, then quickly right-click with multiple empty buckets before it disappears. Warning: when scooping lava, the bucket in hand has a chance to melt. Melt chances — Copper: 16%, Silver: 16%, Gold: 20%, Iron: 8%, Hardstone: 4%, Ancient Metal: 2%, Mithril: 1%, Adamantium: 0% (never melts).",
+    "desc_hu": "Lávával töltött vödör. Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez — ez nem fogyasztja el a lávablokkot. A földre öntött láva csak folyó lávát alkot, ami egy idő után eltűnik, és vízzel érintkezve NEM hoz létre obszidiánt. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. A lávás vödör tüzelőanyagként is használható (16 tárgyat éget el). Mivel a láva gyűjtéséhez nem szükséges lávaforrás blokk, a láva korlátlanul újratermelhető: öntsd a lávát a földre, majd gyorsan jobb klikkelj több üres vödörrel, mielőtt eltűnik. Figyelem: láva merítésekor a kézben lévő vödörnek esélye van megolvadni. Olvadási esélyek — Réz: 16%, Ezüst: 16%, Arany: 20%, Vas: 8%, Keménykő: 4%, Ősi fém: 2%, Mithril: 1%, Adamantium: 0% (soha nem olvad).",
+    "desc_ru": "Ведро с лавой. Нажмите ПКМ по любому блоку лавы с пустым ведром, чтобы зачерпнуть лаву — блок лавы при этом не расходуется. При выливании лавы на землю образуется лишь текущая лава, которая вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника лавы за счёт опыта. Вёдра с лавой можно использовать как топливо (переплавляет 16 предметов). Поскольку для зачерпывания лавы не требуется блок-источник, лаву можно добывать бесконечно: вылейте лаву на землю, а затем быстро кликайте ПКМ несколькими пустыми вёдрами, пока она не исчезла. Внимание: при зачерпывании лавы ведро в руке имеет шанс расплавиться. Шансы расплавления — Медное: 16%, Серебряное: 16%, Золотое: 20%, Железное: 8%, Твердокаменное: 4%, Из древнего металла: 2%, Мифриловое: 1%, Адамантиевое: 0% (никогда не плавится)."
+  },
+  "adamantium_bucket_filled_with_lava": {
+    "mcmod_id": 772862,
+    "desc_en": "A bucket filled with lava. Right-click any lava block with an empty bucket to collect lava — this does not consume the lava block. Pouring lava on the ground produces only flowing lava, which disappears after a while and does NOT form obsidian when it contacts water. Hold Ctrl and right-click to place a permanent lava source block at the cost of XP. Lava buckets can also be used as fuel (smelts 16 items). Because scooping lava does not require a lava source block, lava can be regenerated indefinitely: pour lava on the ground, then quickly right-click with multiple empty buckets before it disappears. Warning: when scooping lava, the bucket in hand has a chance to melt. Melt chances — Copper: 16%, Silver: 16%, Gold: 20%, Iron: 8%, Hardstone: 4%, Ancient Metal: 2%, Mithril: 1%, Adamantium: 0% (never melts).",
+    "desc_hu": "Lávával töltött vödör. Jobb klikk bármely lávablokkra üres vödörrel a láva gyűjtéséhez — ez nem fogyasztja el a lávablokkot. A földre öntött láva csak folyó lávát alkot, ami egy idő után eltűnik, és vízzel érintkezve NEM hoz létre obszidiánt. Ctrl + jobb klikk: XP elköltésével állandó lávaforrás blokkot helyezhetsz el. A lávás vödör tüzelőanyagként is használható (16 tárgyat éget el). Mivel a láva gyűjtéséhez nem szükséges lávaforrás blokk, a láva korlátlanul újratermelhető: öntsd a lávát a földre, majd gyorsan jobb klikkelj több üres vödörrel, mielőtt eltűnik. Figyelem: láva merítésekor a kézben lévő vödörnek esélye van megolvadni. Olvadási esélyek — Réz: 16%, Ezüst: 16%, Arany: 20%, Vas: 8%, Keménykő: 4%, Ősi fém: 2%, Mithril: 1%, Adamantium: 0% (soha nem olvad).",
+    "desc_ru": "Ведро с лавой. Нажмите ПКМ по любому блоку лавы с пустым ведром, чтобы зачерпнуть лаву — блок лавы при этом не расходуется. При выливании лавы на землю образуется лишь текущая лава, которая вскоре исчезает и НЕ создаёт обсидиан при контакте с водой. Удерживая Ctrl и нажав ПКМ, разместите постоянный блок источника лавы за счёт опыта. Вёдра с лавой можно использовать как топливо (переплавляет 16 предметов). Поскольку для зачерпывания лавы не требуется блок-источник, лаву можно добывать бесконечно: вылейте лаву на землю, а затем быстро кликайте ПКМ несколькими пустыми вёдрами, пока она не исчезла. Внимание: при зачерпывании лавы ведро в руке имеет шанс расплавиться. Шансы расплавления — Медное: 16%, Серебряное: 16%, Золотое: 20%, Железное: 8%, Твердокаменное: 4%, Из древнего металла: 2%, Мифриловое: 1%, Адамантиевое: 0% (никогда не плавится)."
   }
 }
