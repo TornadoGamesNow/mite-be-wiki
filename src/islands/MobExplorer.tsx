@@ -113,7 +113,7 @@ const dmgTypeIcon: Record<string, string> = {
 };
 
 const zoneIcon: Record<string, string> = {
-  surface: '🌍', underground: '⛏', nether: '🔥', unknown: '❓',
+  surface: '🌍', underground: '⛏', nether: '🔥', end: '🔮', unknown: '❓',
 };
 
 function dmgDisplay(mob: Mob, useIcon = false) {
@@ -150,7 +150,7 @@ export default function MobExplorer() {
   const [lang, setLang] = useState<string>('hu');
   const [selectedMob, setSelectedMob] = useState<Mob | null>(null);
   const [diffFilter, setDiffFilter] = useState<'' | 'early' | 'mid' | 'late' | 'boss'>('');
-  const [zoneFilter, setZoneFilter] = useState<'' | 'surface' | 'underground' | 'nether' | 'unknown'>('');
+  const [zoneFilter, setZoneFilter] = useState<'' | 'surface' | 'underground' | 'nether' | 'end' | 'unknown'>('');
   const [typeFilter, setTypeFilter] = useState<string>('');
   const [search, setSearch] = useState('');
   const [sortKey, setSortKey] = useState<'name' | 'hp' | 'dmg' | 'xp'>('name');
@@ -270,7 +270,7 @@ export default function MobExplorer() {
   }
 
   // Region pill button style
-  function zoneBtnStyle(z: '' | 'surface' | 'underground' | 'nether' | 'unknown') {
+  function zoneBtnStyle(z: '' | 'surface' | 'underground' | 'nether' | 'end' | 'unknown') {
     const active = zoneFilter === z;
     return {
       padding: '4px 12px', borderRadius: 20, fontSize: '.8em', fontWeight: 600,
@@ -284,7 +284,9 @@ export default function MobExplorer() {
   const zoneLabel = (z: string) =>
     z === 'surface'     ? (lang === 'hu' ? 'Felszín'     : lang === 'ru' ? 'Поверхность'  : 'Surface')     :
     z === 'underground' ? (lang === 'hu' ? 'Föld alatti' : lang === 'ru' ? 'Под землёй'   : 'Underground') :
-    z === 'nether'      ? 'Nether' : (lang === 'hu' ? 'Ismeretlen' : lang === 'ru' ? 'Неизвестно' : 'Unknown');
+    z === 'nether'      ? 'Nether' :
+    z === 'end'         ? 'End' :
+    (lang === 'hu' ? 'Ismeretlen' : lang === 'ru' ? 'Неизвестно' : 'Unknown');
 
   return (
     <div style={{ position: 'relative' }}>
@@ -398,7 +400,7 @@ export default function MobExplorer() {
             letterSpacing: '.6px', minWidth: 64, marginRight: 2 }}>
             {lang === 'hu' ? 'Régió' : lang === 'ru' ? 'Регион' : 'Region'}
           </span>
-          {(['', 'surface', 'underground', 'nether', 'unknown'] as const).map(z => {
+          {(['', 'surface', 'underground', 'nether', 'end', 'unknown'] as const).map(z => {
             const count = z ? allMobs.filter(m => m.spawnZones.includes(z)).length : allMobs.length;
             return (
               <button key={z} onClick={() => setZoneFilter(z)} style={zoneBtnStyle(z)}>
