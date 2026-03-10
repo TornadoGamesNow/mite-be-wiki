@@ -7,8 +7,8 @@
       "ru": "Зомби"
     },
     "hp": 30,
-    "dmgMin": 4,
-    "dmgMax": 4,
+    "dmgMin": 5,
+    "dmgMax": 7,
     "dmgType": "melee",
     "xp": 15,
     "spawnZones": [
@@ -133,7 +133,7 @@
       "en": "Creeper",
       "ru": "Крипер"
     },
-    "hp": 20,
+    "hp": 25,
     "dmgMin": 5,
     "dmgMax": 10,
     "dmgType": "explosion",
@@ -429,9 +429,9 @@
       "en": "Hell Hound",
       "ru": "Адский пёс"
     },
-    "hp": 8,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "hp": 20,
+    "dmgMin": 4,
+    "dmgMax": 8,
     "dmgType": "melee",
     "xp": 6,
     "spawnZones": [
@@ -547,9 +547,9 @@
       "en": "Zombie Pigman",
       "ru": "Зомби-пигмен"
     },
-    "hp": 20,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 60,
+    "dmgMin": 8,
+    "dmgMax": 8,
     "dmgType": "melee",
     "xp": 15,
     "spawnZones": [
@@ -738,9 +738,9 @@
       "en": "Dire Wolf",
       "ru": "Лютоволк"
     },
-    "hp": 8,
-    "dmgMin": 3,
-    "dmgMax": 3,
+    "hp": 24,
+    "dmgMin": 5,
+    "dmgMax": 6,
     "dmgType": "melee",
     "xp": 4,
     "spawnZones": [
@@ -1123,7 +1123,7 @@
       "en": "Nether Creeper",
       "ru": "Незерский крипер"
     },
-    "hp": 20,
+    "hp": 40,
     "dmgMin": 2,
     "dmgMax": 40,
     "dmgType": "explosion",
@@ -1177,8 +1177,8 @@
       "ru": "Красный бластер"
     },
     "hp": 40,
-    "dmgMin": 6,
-    "dmgMax": 6,
+    "dmgMin": 10,
+    "dmgMax": 10,
     "dmgType": "fireball",
     "xp": 20,
     "spawnZones": [
@@ -2174,9 +2174,9 @@
       "en": "Revenant",
       "ru": "Ревенант"
     },
-    "hp": 60,
-    "dmgMin": 10,
-    "dmgMax": 10,
+    "hp": 30,
+    "dmgMin": 6,
+    "dmgMax": 6,
     "dmgType": "melee",
     "xp": 35,
     "spawnZones": [
@@ -2661,9 +2661,9 @@
       "en": "Clay Golem",
       "ru": "Глиняный голем"
     },
-    "hp": 20,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 30,
+    "dmgMin": 6,
+    "dmgMax": 6,
     "dmgType": "melee",
     "xp": 15,
     "spawnZones": [
@@ -2837,7 +2837,7 @@
       "en": "Variant Skeleton Lord",
       "ru": "Мутировавший скелет-лорд"
     },
-    "hp": 150,
+    "hp": 200,
     "dmgMin": 12,
     "dmgMax": 12,
     "dmgType": "melee",
@@ -4444,7 +4444,7 @@
       "en": "Variant Spider",
       "ru": "Мутировавший паук"
     },
-    "hp": 30,
+    "hp": 40,
     "dmgMin": 7,
     "dmgMax": 7,
     "dmgType": "melee",
@@ -4729,7 +4729,7 @@
       "en": "Cave Spider",
       "ru": "Пещерный паук"
     },
-    "hp": 12,
+    "hp": 16,
     "dmgMin": 2,
     "dmgMax": 2,
     "dmgType": "melee",
@@ -4791,9 +4791,9 @@
       "en": "Blaze",
       "ru": "Бластер"
     },
-    "hp": 20,
-    "dmgMin": 5,
-    "dmgMax": 5,
+    "hp": 60,
+    "dmgMin": 6,
+    "dmgMax": 6,
     "dmgType": "fireball",
     "xp": 20,
     "spawnZones": [
@@ -4953,8 +4953,8 @@
       "ru": "Эндермен"
     },
     "hp": 40,
-    "dmgMin": 7,
-    "dmgMax": 7,
+    "dmgMin": 10,
+    "dmgMax": 10,
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
@@ -5505,7 +5505,7 @@
       "en": "Cow",
       "ru": "Корова"
     },
-    "hp": 10,
+    "hp": 20,
     "dmgMin": 0,
     "dmgMax": 0,
     "dmgType": "melee",
@@ -5627,9 +5627,9 @@
       "en": "Wolf",
       "ru": "Волк"
     },
-    "hp": 8,
-    "dmgMin": 4,
-    "dmgMax": 4,
+    "hp": 12,
+    "dmgMin": 3,
+    "dmgMax": 3,
     "dmgType": "melee",
     "xp": 2,
     "spawnZones": [
@@ -7435,7 +7435,7 @@
     "dmgMin": 8,
     "dmgMax": 8,
     "xp": 35,
-    "armor": 0,
+    "armor": 3,
     "spawnZones": [
       "underground"
     ],
