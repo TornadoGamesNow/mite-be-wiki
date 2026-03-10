@@ -35400,31 +35400,14 @@
     "item_num": 1,
     "output": "redstone",
     "outputQty": 4,
-    "station": "flint_workbench",
+    "station": "stone_furnace",
     "difficulty": 0,
     "skills": [],
     "ingredients": [
       "redstone_ore",
       "coal"
     ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "redstone_ore",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ],
+    "shaped": false,
     "removed_version": "pre-0.5.5"
   },
   {
@@ -37134,31 +37117,14 @@
     "item_num": 841224,
     "output": "redstone",
     "outputQty": 4,
-    "station": "flint_workbench",
+    "station": "stone_furnace",
     "difficulty": 0,
     "skills": [],
     "ingredients": [
       "redstone_ore",
       "coal"
     ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "redstone_ore",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
+    "shaped": false
   },
   {
     "id": "flint_hatchet_841225",
