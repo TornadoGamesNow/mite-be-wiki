@@ -4802,10 +4802,9 @@
   },
   "bucket_clean_water": {
     "mcmod_id": 785029,
-    "desc": "Bucket of clean water. It can be filled from freshwater lakes or from the water-filter and fluid-tank system. The bucket holds 2 liters, and placing a true water source still costs XP.",
-    "desc_en": "Bucket of clean water. It can be filled from freshwater lakes or from the water-filter and fluid-tank system. The bucket holds 2 liters, and placing a true water source still costs XP.",
-    "desc_hu": "Tiszta vizes vödör. Édesvizű tavakból vagy a vízszűrő-folyadéktank rendszerből tölthető meg. 2 liter vizet tart, és az igazi vízforrás lerakása továbbra is XP-be kerül.",
-    "desc_ru": "Ведро чистой воды. Его можно наполнить из пресных озёр или через связку фильтра воды и резервуара. Вмещает 2 литра, а установка настоящего источника воды всё ещё стоит XP."
+    "desc_en": "A bucket filled with clean water. Right-click a freshwater lake with an empty bucket to collect water (does not consume the water block). Can also be obtained via a water filter and water reservoir, or by smelting in a furnace. Pouring water directly on the ground produces only running water (not a clean water source), which disappears after a while. Hold Ctrl and right-click to spend 100 XP and place a permanent water source block. Capacity: 2 liters.",
+    "desc_hu": "Tiszta vízzel töltött vödör. Jobb klikk édesvizű tóra üres vödörrel a víz gyűjtéséhez (nem fogyasztja el a vízblokkot). Szerezhető vízszűrőből és vízrezervoárból is, vagy kemencében olvasztással. Ha a vizet közvetlenül a földre öntöd, csak folyó víz (nem tiszta vízforrás) folyik ki, ami egy idő után eltűnik. Tartsd lenyomva a Ctrl billentyűt és jobb klikk: 100 XP elköltésével állandó vízforrás blokkot helyezhetsz el. Kapacitás: 2 liter.",
+    "desc_ru": "Ведро с чистой водой. Нажмите ПКМ по пресному озеру с пустым ведром, чтобы набрать воду (блок воды не расходуется). Также можно получить через фильтр воды и резервуар или переплавкой в печи. При выливании воды на землю вытекает лишь проточная вода (не чистый источник), которая вскоре исчезнет. Удерживая Ctrl и нажав ПКМ, потратьте 100 XP, чтобы разместить постоянный блок источника воды. Вместимость: 2 литра."
   },
   "jewelry_shield": {
     "mcmod_id": 785090,
