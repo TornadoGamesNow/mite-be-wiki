@@ -6291,7 +6291,24 @@
       "leather",
       "leather"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "leather",
+        "leather",
+        "leather"
+      ],
+      [
+        "leather",
+        "_",
+        "leather"
+      ],
+      [
+        "leather",
+        "_",
+        "leather"
+      ]
+    ]
   },
   {
     "id": "leather_boots_279",
