@@ -961,126 +961,243 @@
   },
   "ancient_metal_sword": {
     "mcmod_id": 773286,
-    "desc": "攻击伤害+9，可击中相位蜘蛛，最大品质可达到传说。 远古金属武器不会被腐蚀。 0.6.0版本修改远古金属剑只能在 大型熔炉 中合成。 制作不同品质的远古金属剑所需的经验值： 普通 优秀 精良 史诗 传说 远古金属剑 0 1290 2580 5160 10320",
+    "desc": "Ancient metal sword with 9 attack damage. Can hit phase spiders and does not corrode. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改远古金属剑只能在"
+      "v0.6.0: Ancient metal swords were moved to furnace crafting."
     ],
     "desc_en": "Ancient metal sword with 9 attack damage. Can hit phase spiders and does not corrode. Crafted in the Large Furnace.",
     "desc_hu": "9 sebzésű ősi fém kard. Megsebezheti a fázispókokat, és nem korrodálódik. Nagy kemencében készül.",
-    "desc_ru": "Меч из древнего металла с уроном 9. Может бить фазовых пауков и не подвержен коррозии. Крафтится в большой печи."
+    "desc_ru": "Меч из древнего металла с уроном 9. Может бить фазовых пауков и не подвержен коррозии. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Ancient metal swords were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ősi fém kard kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Мечи из древнего металла были переведены на печное создание."
+    ]
   },
   "ancient_metal_pickaxe": {
     "mcmod_id": 773575,
-    "desc": "攻击伤害+7，最大品质可达传说，可伤害所有类型的土元素。 可破坏铜及铜硬度以下的金属箱子和金属块。无法挖掘钻石矿石。 远古金属工具不会被腐蚀。 0.5.9版本新增设定，无需精准采集可直接挖掘冰。 0.6.0版本修改远古金属镐只能在 大型熔炉 中合成。 制作不同品质的远古金属镐所需的经验值： 普通 优秀 精良 史诗 传说 远古金属镐 0 1940 3880 7760 15520",
+    "desc": "Ancient metal pickaxe with 7 attack damage. Damages all earth elementals, breaks lower-tier metal blocks, and mines ice without Silk Touch. Does not corrode. Crafted in the Large Furnace.",
     "versions": [
-      "0.5.9版本新增设定，无需精准采集可直接挖掘冰",
-      "0.6.0版本修改远古金属镐只能在"
+      "v0.5.9: Ancient metal pickaxes gained direct ice mining without Silk Touch.",
+      "v0.6.0: Ancient metal pickaxes were moved to furnace crafting."
     ],
     "desc_en": "Ancient metal pickaxe with 7 attack damage. Damages all earth elementals, breaks lower-tier metal blocks, and mines ice without Silk Touch. Does not corrode. Crafted in the Large Furnace.",
     "desc_hu": "7 sebzésű ősi fém csákány. Minden földelementált sebzi, feltöri az alacsonyabb szintű fémtömböket, és a jeget Silk Touch nélkül is bányássza. Nem korrodálódik. Nagy kemencében készül.",
-    "desc_ru": "Кирка из древнего металла с уроном 7. Наносит урон всем земляным элементалям, ломает металлические блоки более низкого уровня и добывает лёд без Шёлкового касания. Не ржавеет. Крафтится в большой печи."
+    "desc_ru": "Кирка из древнего металла с уроном 7. Наносит урон всем земляным элементалям, ломает металлические блоки более низкого уровня и добывает лёд без Шёлкового касания. Не ржавеет. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.5.9: Ancient metal pickaxes gained direct ice mining without Silk Touch.",
+      "v0.6.0: Ancient metal pickaxes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.5.9: Az ősi fém csákány Silk Touch nélkül is tud jeget bányászni.",
+      "v0.6.0: Az ősi fém csákány kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.5.9: Кирки из древнего металла получили прямую добычу льда без Шёлкового касания.",
+      "v0.6.0: Кирки из древнего металла были переведены на печное создание."
+    ]
   },
   "ancient_metal_axe": {
     "mcmod_id": 773587,
-    "desc": "攻击伤害+8，最大品质可达传说。 远古金属工具不会被腐蚀。 0.6.0版本修改远古金属斧只能在 大型熔炉 中合成。 制作不同品质的远古金属斧所需的经验值： 普通 优秀 精良 史诗 传说 远古金属斧 0 1940 3880 7760 15520",
+    "desc": "Ancient metal axe with 8 attack damage. Does not corrode. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改远古金属斧只能在"
+      "v0.6.0: Ancient metal axes were moved to furnace crafting."
     ],
     "desc_en": "Ancient metal axe with 8 attack damage. Does not corrode. Crafted in the Large Furnace.",
     "desc_hu": "8 sebzésű ősi fém fejsze. Nem korrodálódik. Nagy kemencében készül.",
-    "desc_ru": "Топор из древнего металла с уроном 8. Не подвержен коррозии. Крафтится в большой печи."
+    "desc_ru": "Топор из древнего металла с уроном 8. Не подвержен коррозии. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Ancient metal axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ősi fém fejsze kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Топоры из древнего металла были переведены на печное создание."
+    ]
   },
   "ancient_metal_war_hammer": {
     "mcmod_id": 773298,
-    "desc": "攻击力+7，最大品质可达传说。 远古金属武器不会被腐蚀。 0.6.0版本新增： 战锤消耗180耐久和1个矿合成12个对应粒。 战锤消耗140耐久和1个锭合成9个对应粒。 战锤和工作台等级不低于参与合成的矿石或锭。 远古金属战锤只能在 大型熔炉 中合成。 制作不同品质的远古金属战锤所需的经验值： 普通 优秀 精良 史诗 传说 远古金属战锤 0 3220 6440 12880 25760",
+    "desc": "Ancient metal warhammer with 7 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Does not corrode. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本新增："
+      "v0.6.0: Ancient metal warhammers were moved to furnace crafting."
     ],
     "desc_en": "Ancient metal warhammer with 7 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Does not corrode. Crafted in the Large Furnace.",
     "desc_hu": "7 sebzésű ősi fém harci kalapács. Harcra, bányászatra, illetve ércek és rudak szemcsékre bontására használható. Nem korrodálódik. Nagy kemencében készül.",
-    "desc_ru": "Боевой молот из древнего металла с уроном 7. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Не ржавеет. Крафтится в большой печи."
+    "desc_ru": "Боевой молот из древнего металла с уроном 7. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Не ржавеет. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Ancient metal warhammers were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ősi fém harci kalapács kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Боевые молоты из древнего металла были переведены на печное создание."
+    ]
   },
   "mithril_sword": {
     "mcmod_id": 773287,
-    "desc": "攻击伤害+11，最大品质可达到神器。 注：秘银工具没有“吸血”附魔。 0.6.0版本修改秘银剑只能在 大型熔炉 中合成。 制作不同品质的秘银剑所需的经验值： 普通 优秀 精良 史诗 传说 神器 秘银剑 0 5130 10260 20520 41040 82080",
+    "desc": "Mithril sword with 11 attack damage. Mithril tools do not roll the vampiric enchantment. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改秘银剑只能在"
+      "v0.6.0: Mithril swords were moved to furnace crafting."
     ],
     "desc_en": "Mithril sword with 11 attack damage. Mithril tools do not roll the vampiric enchantment. Crafted in the Large Furnace.",
     "desc_hu": "11 sebzésű mithril kard. A mithril eszközök nem kaphatják meg a vámpirikus bűvölést. Nagy kemencében készül.",
-    "desc_ru": "Мифриловый меч с уроном 11. Мифриловые инструменты не получают вампирическое зачарование. Крафтится в большой печи."
+    "desc_ru": "Мифриловый меч с уроном 11. Мифриловые инструменты не получают вампирическое зачарование. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Mithril swords were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A mithril kard kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Мифриловые мечи были переведены на печное создание."
+    ]
   },
   "mithril_pickaxe": {
     "mcmod_id": 773576,
-    "desc": "攻击伤害+9， 最大品质可达神器。 可伤害所有类型的 土元素 。 可挖掘钻石矿石，可破坏秘银硬度以下的金属箱子和金属块； 0.5.9版本新增设定，无需精准采集可直接挖掘冰。 0.6.0版本修改秘银镐只能在 大型熔炉 中合成。 制作不同品质的秘银镐所需的经验值： 普通 优秀 精良 史诗 传说 神器 秘银镐 0 7700 15400 30800 61600 123200",
+    "desc": "Mithril pickaxe with 9 attack damage. Damages all earth elementals, can mine diamond ore, and can break metal blocks below mithril hardness. Ice can be mined without Silk Touch. Crafted in the Large Furnace.",
     "versions": [
-      "0.5.9版本新增设定，无需精准采集可直接挖掘冰",
-      "0.6.0版本修改秘银镐只能在"
+      "v0.5.9: Mithril pickaxes gained direct ice mining without Silk Touch.",
+      "v0.6.0: Mithril pickaxes were moved to furnace crafting."
     ],
     "desc_en": "Mithril pickaxe with 9 attack damage. Damages all earth elementals, can mine diamond ore, and can break metal blocks below mithril hardness. Ice can be mined without Silk Touch. Crafted in the Large Furnace.",
     "desc_hu": "9 sebzésű mithril csákány. Minden földelementált sebzi, bányászhat gyémántércet, és feltöri a mithrilnél gyengébb fémtömböket. A jeget Silk Touch nélkül is bányássza. Nagy kemencében készül.",
-    "desc_ru": "Мифриловая кирка с уроном 9. Наносит урон всем земляным элементалям, добывает алмазную руду и ломает металлические блоки ниже мифриловой прочности. Лёд добывается без Шёлкового касания. Крафтится в большой печи."
+    "desc_ru": "Мифриловая кирка с уроном 9. Наносит урон всем земляным элементалям, добывает алмазную руду и ломает металлические блоки ниже мифриловой прочности. Лёд добывается без Шёлкового касания. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.5.9: Mithril pickaxes gained direct ice mining without Silk Touch.",
+      "v0.6.0: Mithril pickaxes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.5.9: A mithril csákány Silk Touch nélkül is tud jeget bányászni.",
+      "v0.6.0: A mithril csákány kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.5.9: Мифриловые кирки получили прямую добычу льда без Шёлкового касания.",
+      "v0.6.0: Мифриловые кирки были переведены на печное создание."
+    ]
   },
   "mithril_axe": {
     "mcmod_id": 773588,
-    "desc": "攻击伤害+10，最大品质可达神器。 0.6.0版本修改秘银斧只能在 大型熔炉 中合成。 制作不同品质的秘银斧所需的经验值： 普通 优秀 精良 史诗 传说 神器 秘银斧 0 7700 15400 30800 61600 123200",
+    "desc": "Mithril axe with 10 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改秘银斧只能在"
+      "v0.6.0: Mithril axes were moved to furnace crafting."
     ],
     "desc_en": "Mithril axe with 10 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "10 sebzésű mithril fejsze. Nagy kemencében készül.",
-    "desc_ru": "Мифриловый топор с уроном 10. Крафтится в большой печи."
+    "desc_ru": "Мифриловый топор с уроном 10. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Mithril axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A mithril fejsze kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Мифриловые топоры были переведены на печное создание."
+    ]
   },
   "mithril_war_hammer": {
     "mcmod_id": 773299,
-    "desc": "攻击力+9， 最大品质可达神器。 0.6.0版本新增： 战锤消耗180耐久和1个矿合成12个对应粒。 战锤消耗140耐久和1个锭合成9个对应粒。 战锤和工作台等级不低于参与合成的矿石或锭。 秘银战锤只能在 大型熔炉 中合成。 制作不同品质的秘银战锤所需的经验值： 普通 优秀 精良 史诗 传说 神器 秘银战锤 0 12820 25640 51280 102560 205120",
+    "desc": "Mithril warhammer with 9 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本新增："
+      "v0.6.0: Mithril warhammers were moved to furnace crafting."
     ],
     "desc_en": "Mithril warhammer with 9 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
     "desc_hu": "9 sebzésű mithril harci kalapács. Harcra, bányászatra, illetve ércek és rudak szemcsékre bontására használható. Nagy kemencében készül.",
-    "desc_ru": "Мифриловый боевой молот с уроном 9. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Крафтится в большой печи."
+    "desc_ru": "Мифриловый боевой молот с уроном 9. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Mithril warhammers were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A mithril harci kalapács kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Мифриловые боевые молоты были переведены на печное создание."
+    ]
   },
   "adamantium_sword": {
     "mcmod_id": 773288,
-    "desc": "基础伤害最高的武器，攻击伤害+10。 0.6.0版本修改艾德曼剑只能在 大型熔炉 中合成。 制作不同品质的艾德曼剑所需的经验值： 普通 优秀 精良 史诗 传说 神器 艾德曼剑 0 20490 40980 81960 163920 327840",
+    "desc": "Adamantium sword with 10 attack damage. One of the strongest melee weapons in the mod. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改艾德曼剑只能在"
+      "v0.6.0: Adamantium swords were moved to furnace crafting."
     ],
     "desc_en": "Adamantium sword with 10 attack damage. One of the strongest melee weapons in the mod. Crafted in the Large Furnace.",
     "desc_hu": "10 sebzésű adamantium kard. A mod egyik legerősebb közelharci fegyvere. Nagy kemencében készül.",
-    "desc_ru": "Адамантиевый меч с уроном 10. Одно из самых сильных оружий ближнего боя в моде. Крафтится в большой печи."
+    "desc_ru": "Адамантиевый меч с уроном 10. Одно из самых сильных оружий ближнего боя в моде. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Adamantium swords were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az adamantium kard kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Адамантиевые мечи были переведены на печное создание."
+    ]
   },
   "adamantium_pickaxe": {
     "mcmod_id": 773577,
-    "desc": "攻击伤害+8，最大品质可达到神器。 可伤害所有类型的 土元素 ，可破坏艾德曼硬度以下的金属箱子和金属块， 可以破坏 末影 水晶 。 0.5.9版本新增设定，无需精准采集可直接挖掘冰。 0.6.0版本修改艾德曼镐只能在 大型熔炉 中合成。 制作不同品质的艾德曼镐所需的经验值： 普通 优秀 精良 史诗 传说 神器 艾德曼镐 0 30740 61480 122960 245920 491840",
+    "desc": "Adamantium pickaxe with 8 attack damage. Damages all earth elementals, breaks metal blocks below adamantium hardness, and can destroy End Crystals. Ice can be mined without Silk Touch. Crafted in the Large Furnace.",
     "versions": [
-      "0.5.9版本新增设定，无需精准采集可直接挖掘冰",
-      "0.6.0版本修改艾德曼镐只能在"
+      "v0.5.9: Adamantium pickaxes gained direct ice mining without Silk Touch.",
+      "v0.6.0: Adamantium pickaxes were moved to furnace crafting."
     ],
     "desc_en": "Adamantium pickaxe with 8 attack damage. Damages all earth elementals, breaks metal blocks below adamantium hardness, and can destroy End Crystals. Ice can be mined without Silk Touch. Crafted in the Large Furnace.",
     "desc_hu": "8 sebzésű adamantium csákány. Minden földelementált sebzi, feltöri az adamantiumnál gyengébb fémtömböket, és elpusztíthatja az End Crystalokat. A jeget Silk Touch nélkül is bányássza. Nagy kemencében készül.",
-    "desc_ru": "Адамантиевая кирка с уроном 8. Наносит урон всем земляным элементалям, ломает металлические блоки ниже адамантиевой прочности и может разрушать кристаллы Края. Лёд добывается без Шёлкового касания. Крафтится в большой печи."
+    "desc_ru": "Адамантиевая кирка с уроном 8. Наносит урон всем земляным элементалям, ломает металлические блоки ниже адамантиевой прочности и может разрушать кристаллы Края. Лёд добывается без Шёлкового касания. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.5.9: Adamantium pickaxes gained direct ice mining without Silk Touch.",
+      "v0.6.0: Adamantium pickaxes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.5.9: Az adamantium csákány Silk Touch nélkül is tud jeget bányászni.",
+      "v0.6.0: Az adamantium csákány kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.5.9: Адамантиевые кирки получили прямую добычу льда без Шёлкового касания.",
+      "v0.6.0: Адамантиевые кирки были переведены на печное создание."
+    ]
   },
   "adamantium_axe": {
     "mcmod_id": 773636,
-    "desc": "耐久度最大的斧头类工具。 攻击伤害+9，最大品质可达到神器。 0.6.0版本修改艾德曼斧只能在 大型熔炉 中合成。 制作不同品质的艾德曼斧所需的经验值： 普通 优秀 精良 史诗 传说 神器 艾德曼斧 0 30740 61480 122960 245920 491840",
+    "desc": "Adamantium axe with 9 attack damage. Very high durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改艾德曼斧只能在"
+      "v0.6.0: Adamantium axes were moved to furnace crafting."
     ],
     "desc_en": "Adamantium axe with 9 attack damage. Very high durability. Crafted in the Large Furnace.",
     "desc_hu": "9 sebzésű adamantium fejsze. Nagyon magas tartósságú eszköz. Nagy kemencében készül.",
-    "desc_ru": "Адамантиевый топор с уроном 9. Очень высокая прочность. Крафтится в большой печи."
+    "desc_ru": "Адамантиевый топор с уроном 9. Очень высокая прочность. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Adamantium axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az adamantium fejsze kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Адамантиевые топоры были переведены на печное создание."
+    ]
   },
   "adamantium_war_hammer": {
     "mcmod_id": 773300,
-    "desc": "攻击力+8，可以破坏末影水晶，最大品质可达到神器。 0.6.0版本新增： 战锤消耗180耐久和1个矿合成12个对应粒。 战锤消耗140耐久和1个锭合成9个对应粒。 战锤和工作台等级不低于参与合成的矿石或锭。 艾德曼战锤只能在 大型熔炉 中合成。 制作不同品质的艾德曼战锤所需的经验值： 普通 优秀 精良 史诗 传说 神器 艾德曼战锤 0 51220 102440 204880 409760 819520",
+    "desc": "Adamantium warhammer with 8 attack damage. Can destroy End Crystals, and is used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本新增："
+      "v0.6.0: Adamantium warhammers were moved to furnace crafting."
     ],
     "desc_en": "Adamantium warhammer with 8 attack damage. Can destroy End Crystals, and is used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
     "desc_hu": "8 sebzésű adamantium harci kalapács. Elpusztíthatja az End Crystalokat, és harcra, bányászatra, illetve ércek és rudak szemcsékre bontására használható. Nagy kemencében készül.",
-    "desc_ru": "Адамантиевый боевой молот с уроном 8. Может разрушать кристаллы Края, используется в бою, для добычи блоков и дробления руд или слитков на самородки. Крафтится в большой печи."
+    "desc_ru": "Адамантиевый боевой молот с уроном 8. Может разрушать кристаллы Края, используется в бою, для добычи блоков и дробления руд или слитков на самородки. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Adamantium warhammers were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az adamantium harci kalapács kemencés craftolásra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Адамантиевые боевые молоты были переведены на печное создание."
+    ]
   },
   "campfire_idle": {
     "mcmod_id": 771970,
