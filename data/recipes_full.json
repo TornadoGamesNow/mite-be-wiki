@@ -4647,9 +4647,9 @@
   {
     "id": "netherrack_furnace_idle_230",
     "item_num": 224,
-    "output": "netherrack_furnace_idle",
+    "output": "netherrack_furnace",
     "outputQty": 1,
-    "station": "flint_workbench",
+    "station": "mithril_workbench",
     "difficulty": 1280,
     "skills": [
       "masonry"
@@ -4662,7 +4662,8 @@
       "netherrack",
       "netherrack",
       "netherrack",
-      "netherrack"
+      "netherrack",
+      "mithril_workbench"
     ],
     "shaped": true,
     "pattern": [
@@ -4673,7 +4674,7 @@
       ],
       [
         "netherrack",
-        "_",
+        "mithril_workbench",
         "netherrack"
       ],
       [
