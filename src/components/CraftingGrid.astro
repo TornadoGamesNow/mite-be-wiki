@@ -7,14 +7,14 @@ interface Props {
   recipeId?: string;
   recipeFullId?: string;
   recipeOutput?: string;
-  label?: { hu: string; en: string };
+  label?: { hu: string; en: string; ru?: string };
   recipe?: {
     gridSize: string;
     pattern: SlotValue[][];
     output: string;
     outputCount?: number;
-    label: { hu: string; en: string };
-    tooltip?: { hu: string; en: string };
+    label: { hu: string; en: string; ru?: string };
+    tooltip?: { hu: string; en: string; ru?: string };
   };
 }
 
@@ -91,6 +91,7 @@ function resolveSlot(slot: SlotValue) {
     <div class="recipe-removed-notice">
       <span data-lang="hu">⚠️ Régi recept — eltávolítva v{recipe.removedVersion}-ban</span>
       <span data-lang="en">⚠️ Old recipe — removed in v{recipe.removedVersion}</span>
+      <span data-lang="ru">⚠️ Старый рецепт — удалён в v{recipe.removedVersion}</span>
     </div>
   )}
   <div class={`craft-grid ${gridClass}`}>
@@ -102,6 +103,7 @@ function resolveSlot(slot: SlotValue) {
           <div class="mc-tooltip">
             <div class="tt-name" data-lang="hu" style={item.tier ? `color: var(--${item.tier})` : ''}>{item.name.hu}</div>
             <div class="tt-name" data-lang="en" style={item.tier ? `color: var(--${item.tier})` : ''}>{item.name.en}</div>
+            <div class="tt-name" data-lang="ru" style={item.tier ? `color: var(--${item.tier})` : ''}>{(item.name as any).ru ?? item.name.en}</div>
           </div>
         </div>
       ) : (
@@ -124,10 +126,12 @@ function resolveSlot(slot: SlotValue) {
           <div class="mc-tooltip">
             <div class="tt-name" data-lang="hu" style={outputItem.tier ? `color: var(--${outputItem.tier})` : ''}>{outputItem.name.hu}</div>
             <div class="tt-name" data-lang="en" style={outputItem.tier ? `color: var(--${outputItem.tier})` : ''}>{outputItem.name.en}</div>
+            <div class="tt-name" data-lang="ru" style={outputItem.tier ? `color: var(--${outputItem.tier})` : ''}>{(outputItem.name as any).ru ?? outputItem.name.en}</div>
             {recipe.tooltip && (
               <>
                 <div class="tt-desc" data-lang="hu">{recipe.tooltip.hu}</div>
                 <div class="tt-desc" data-lang="en">{recipe.tooltip.en}</div>
+                <div class="tt-desc" data-lang="ru">{recipe.tooltip.ru ?? recipe.tooltip.en}</div>
               </>
             )}
           </div>
@@ -141,6 +145,7 @@ function resolveSlot(slot: SlotValue) {
   <div class="craft-label">
     <span data-lang="hu">{recipe.label.hu}</span>
     <span data-lang="en">{recipe.label.en}</span>
+    <span data-lang="ru">{recipe.label.ru ?? recipe.label.en}</span>
   </div>
 </div>
 )}

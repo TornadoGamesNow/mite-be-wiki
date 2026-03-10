@@ -7,9 +7,10 @@ interface Props {
   output: string;
   labelHu: string;
   labelEn: string;
+  labelRu?: string;
 }
 
-const { input, fuel, output, labelHu, labelEn } = Astro.props;
+const { input, fuel, output, labelHu, labelEn, labelRu } = Astro.props;
 
 function getItem(id: string) {
   return (items as Record<string, any>)[id] || null;
@@ -41,5 +42,6 @@ const outputItem = getItem(output);
   <div class="craft-label">
     <span data-lang="hu">{labelHu}</span>
     <span data-lang="en">{labelEn}</span>
+    <span data-lang="ru">{labelRu ?? labelEn}</span>
   </div>
 </div>
