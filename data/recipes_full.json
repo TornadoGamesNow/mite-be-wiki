@@ -7143,7 +7143,49 @@
         "planks_jungle"
       ]
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "_",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ]
+    ]
   },
   {
     "id": "iron_bucket_filled_with_milk_307",
