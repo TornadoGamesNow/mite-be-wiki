@@ -1201,51 +1201,93 @@
   },
   "campfire_idle": {
     "mcmod_id": 771970,
-    "desc": "用于前期阶段烧制肉类食物，使用火把和木质工具当作燃料。 使用篝火烧制不会烧糊。 0.9.0版本，篝火史诗级加强，可同时烧制8块生肉，而一个火把提供的燃料总共可以烧制32块肉。下图为加强版篝火操作界面。 篝火正面有方块遮挡时无法打开。",
+    "desc": "Early campfire used mainly for cooking meat. It burns with torches or wooden tools, cooked food does not burn, and the front must stay unobstructed.",
     "versions": [
-      "0.9.0版本，篝火史诗级加强，可同时烧制8块生肉，而一个火把提供的燃料总共可以烧制32块肉"
+      "v0.9.0: Campfire reworked to cook up to 8 raw meats at once, and one torch provides enough fuel for 32 pieces."
     ],
-    "desc_en": "Used to cook meat in the early stages, using torches and wooden tools as fuel. It won't burn when cooked over a campfire. In version 0.9.0, the bonfire has been enhanced to an epic level. It can cook 8 pieces of raw meat at the same time, and the fuel provided by a torch can cook a total of 32 pieces of meat. The picture below shows the enhanced version of the Bonfire operation interface. The bonfire cannot be opened when there is a block in front of it.",
-    "desc_hu": "Hús főzésére használták a korai szakaszban, fáklyák és faszerszámok tüzelőanyagként. Tábortűzön főzve nem ég meg. A 0.9.0-s verzióban a máglyát epikus szintre emelték. Egyszerre 8 darab nyers húst tud sütni, a fáklya által biztosított tüzelőanyagból pedig összesen 32 darab húst. Az alábbi képen a Bonfire kezelőfelület továbbfejlesztett változata látható. A máglyát nem lehet kinyitni, ha egy blokk van előtte."
+    "desc_en": "Early campfire used mainly for cooking meat. It burns with torches or wooden tools, cooked food does not burn, and the front must stay unobstructed.",
+    "desc_hu": "Korai tábortűz, főleg hús sütésére. Fáklyával vagy faeszközökkel működik tüzelőként, az étel nem ég meg benne, és az elejét szabadon kell hagyni.",
+    "desc_ru": "Ранний костёр в основном для жарки мяса. Использует факелы или деревянные инструменты как топливо, еда не подгорает, а передняя сторона должна оставаться свободной.",
+    "versions_en": [
+      "v0.9.0: Reworked to cook up to 8 raw meats at once, and one torch provides enough fuel for 32 pieces."
+    ],
+    "versions_hu": [
+      "v0.9.0: Egyszerre legfeljebb 8 nyers húst süt, és egy fáklya összesen 32 darabhoz ad elég tüzelőt."
+    ],
+    "versions_ru": [
+      "v0.9.0: Костёр может жарить до 8 кусков сырого мяса одновременно, а одного факела хватает на 32 куска."
+    ]
   },
   "clay_furnace_idle": {
     "mcmod_id": 772857,
-    "desc": "四个粘土块就可以合成。只能放入热值为1的能燃烧的木制品或木炭，无法烧制矿石，只能烧制食物、红砖。 烧制肉如果使用熔炉会获得烧糊的肉，需要使用 篝火 才能获得烤熟的肉。 注意： 熔炉前方有方块挡住时无法工作（无法打开GUI），火焰会暂时熄灭。 流水经过工作中的熔炉，火焰会暂时熄灭。 用工具敲掉熔炉等便携方块不掉耐久。",
-    "desc_en": "It can be crafted from four clay blocks. Only burning wood products or charcoal with a calorific value of 1 can be put in. Ore cannot be burned, only food and red bricks can be burned. If you use a furnace to cook meat, you will get burnt meat. You need to use a campfire to get cooked meat. Note: The furnace will not work if there is a block in front of it (the GUI cannot be opened), and the flame will be temporarily extinguished. As water passes through a working furnace, the flames are temporarily extinguished. Knocking down portable blocks such as furnaces with tools does not lose durability.",
-    "desc_hu": "Négy agyagtömbből készíthető. Csak égető faáru vagy 1-es fűtőértékű faszén rakható bele Érc nem égethető, csak étel és vörös tégla égethető. Ha kemencét használ a hús főzéséhez, megégett húst kap. A főtt húshoz tábortüzet kell használni. Megjegyzés: A kemence nem működik, ha egy blokk van előtte (a grafikus felületet nem lehet kinyitni), és a láng átmenetileg kialszik. Amint a víz áthalad egy működő kemencén, a lángok átmenetileg kialszanak. Hordozható blokkok, például kemencék szerszámokkal történő ledöntése nem veszíti el a tartósságot."
+    "desc": "Basic furnace crafted from 4 clay blocks. It is mainly for food and bricks, uses weak fuels, and does not smelt regular ores.",
+    "desc_en": "Basic furnace crafted from 4 clay blocks. It is mainly for food and bricks, uses weak fuels, and does not smelt regular ores.",
+    "desc_hu": "Alap kemence 4 agyagtömbből. Főleg ételhez és téglához való, gyenge tüzelőt használ, és a normál érceket nem olvasztja.",
+    "desc_ru": "Базовая печь из 4 глиняных блоков. Используется в основном для еды и кирпича, работает на слабом топливе и не плавит обычные руды."
   },
   "hardened_clay_furnace": {
     "mcmod_id": 772859,
-    "desc": "四个 硬化粘土 合成。在粘土炉的基础上，能够使用方块类热度为1的燃料，并且可以熔炼煤矿石，烧制 木炭 、仙人掌绿、地狱砖、硬化粘土和沙石。不能使用热度在2以上的燃料，不能烧制除煤矿石以外的其他任何矿物（但可以把铜粒、银粒烧成锭）。 烧制肉如果使用熔炉会获得烧糊的肉，需要使用 篝火 才能获得烤熟的肉。 0.6.0版本调整硬化粘土炉内部结构，增加放置 黑曜石模板 的孔槽用于熔炼矿物成锭，增加了合成台功能用于熔炼制作武器装备。另外手持煤炭/木炭按shift+右键硬化粘土炉可以直接添加燃料。 注意： 熔炉前方有方块挡住时无法工作（无法打开GUI），火焰会暂时熄灭。 流水经过工作中的熔炉，火焰会暂时熄灭。 用工具敲掉熔炉等便携方块不掉耐久。",
+    "desc": "Improved furnace crafted from 4 hardened clay blocks. It expands basic smelting and supports the obsidian template workflow for ingot production.",
     "versions": [
-      "0.6.0版本调整硬化粘土炉内部结构，增加放置"
+      "v0.6.0: Internal structure reworked, adding the obsidian template slot and built-in crafting functionality."
     ],
-    "desc_en": "Four Hardened Clays are crafted. On the basis of the clay furnace, it can use block-type fuel with a heat of 1, and can smelt coal ore and burn charcoal, cactus green, nether bricks, hardened clay and sand. You cannot use fuel with a heat above 2, and you cannot burn any minerals except coal ore (but you can burn copper and silver grains into ingots). If you use a furnace to cook meat, you will get burnt meat. You need to use a campfire to get cooked meat. Version 0.6.0 adjusts the internal structure of the hardened clay furnace, adds slots for placing obsidian templates for smelting minerals into ingots, and adds a synthesis bench function for smelting and making weapons and equipment. In addition, you can add fuel directly to the hardened clay furnace by holding coal/charcoal and pressing shift+right-click. Note: The furnace will not work if there is a block in front of it (the GUI cannot be opened), and the flame will be temporarily extinguished. As water passes through a working furnace, the flames are temporarily extinguished. Knocking down portable blocks such as furnaces with tools does not lose durability.",
-    "desc_hu": "Négy keményített agyag készül. Az agyagkemence bázisán 1-es hőfokú tömb típusú tüzelőanyagot tud használni, illetve tud szénércet olvasztani és szenet, kaktuszzöldet, alsótéglát, edzett agyagot és homokot égetni. Nem használhat 2-nél magasabb hőfokú tüzelőanyagot, és nem égethet el ásványi anyagokat, kivéve a szénércet (de réz- és ezüstszemcséket égethet rúdba). Ha kemencét használ a hús főzéséhez, megégett húst kap. A főtt húshoz tábortüzet kell használni. A 0.6.0-s verzió beállítja az edzett agyagkemence belső szerkezetét, nyílásokat ad hozzá az ásványok bugákba olvasztásához szükséges obszidián sablonok elhelyezéséhez, és hozzáad egy szintézispad funkciót a fegyverek és felszerelések olvasztásához, valamint készítéséhez. Ezenkívül közvetlenül tölthet be tüzelőanyagot az edzett agyagkemencébe a szén/faszén nyomva tartása és a Shift+jobb gomb megnyomásával. Megjegyzés: A kemence nem fog működni, ha van előtte egy blokk (a grafikus felhasználói felület képes nem szabad kinyitni), és a láng átmenetileg kialszik. Amint a víz áthalad egy működő kemencén, a lángok átmenetileg kialszanak. Hordozható blokkok, például kemencék szerszámokkal történő ledöntése nem veszíti el a tartósságot."
+    "desc_en": "Improved furnace crafted from 4 hardened clay blocks. It expands basic smelting and supports the obsidian template workflow for ingot production.",
+    "desc_hu": "Fejlesztett kemence 4 keményített agyagblokkból. Bővíti az alap olvasztást, és támogatja az obszidián sablonos bugagyártási folyamatot.",
+    "desc_ru": "Улучшенная печь из 4 блоков обожжённой глины. Расширяет базовую плавку и поддерживает работу с обсидиановым шаблоном для получения слитков.",
+    "versions_en": [
+      "v0.6.0: Internal structure reworked, adding the obsidian template slot and built-in crafting functionality."
+    ],
+    "versions_hu": [
+      "v0.6.0: Átdolgozott belső felépítés, obszidián sablonhely és beépített craft funkció került bele."
+    ],
+    "versions_ru": [
+      "v0.6.0: Внутренняя структура переработана, добавлены слот под обсидиановый шаблон и встроенная функция крафта."
+    ]
   },
   "stone_furnace_idle": {
     "mcmod_id": 772856,
-    "desc": "八个圆石合成。可以使用最大热值为2的燃料——煤炭（煤炭块），可以熔炼除了秘银矿石、艾德曼矿石和汞矿以外的所有矿石。无法烧制玻璃（用热度为1的燃料烧制4个沙子得到的是沙石，热度高于1的任何燃料烧制4个沙子得到的才是玻璃）。不能使用热值超过2的燃料。 烧制肉如果使用石熔炉，有5%的几率获得烧糊的肉。 0.6.0版本移除石熔炉的熔炉功能，该方块已无实际作用。 特别提醒：石熔炉不是 熔炉核心 ！搭建大型熔炉需要熔炉核心。 注意： 熔炉前方有方块挡住时无法工作（无法打开GUI），火焰会暂时熄灭。 流水经过工作中的熔炉，火焰会暂时熄灭。 用工具敲掉熔炉等便携方块不掉耐久。 各燃料热值表如下： 燃料 热值 可燃烧的方块 1 木炭 1 煤炭 2 煤炭块 2 岩浆桶 3 烈焰棒 4",
+    "desc": "Stone furnace crafted from 8 cobblestone. It was the mid-tier furnace before the multi-block furnace core system replaced its practical role.",
     "versions": [
-      "0.6.0版本移除石熔炉的熔炉功能，该方块已无实际作用"
+      "v0.6.0: The Stone Furnace lost its real furnace function and became a legacy block."
     ],
-    "desc_en": "Made from eight cobblestones. You can use coal (coal block), a fuel with a maximum calorific value of 2, to smelt all ores except mithril ore, adelman ore and mercury ore. Glass cannot be smelted (burning 4 sand with a fuel with a heat of 1 will result in sand, and burning 4 sand with any fuel with a heat higher than 1 will result in glass). Fuels with a calorific value exceeding 2 cannot be used. If you use a stone furnace to cook meat, there is a 5% chance of getting burnt meat. Version 0.6.0 removes the furnace function of the Stone Furnace, and the block has no practical effect. Special reminder: The stone furnace is not the furnace core! A furnace core is required to build a large furnace. Note: The furnace will not work if there is a block in front of it (the GUI cannot be opened), and the flame will be temporarily extinguished. As water passes through a working furnace, the flames are temporarily extinguished. Knocking down portable blocks such as furnaces with tools does not lose durability. The calorific value table of each fuel is as follows: Fuel Calorific Value Burnable Blocks 1 Charcoal 1 Coal 2 Block of Coal 2 Magma Barrel 3 Flame Rod 4",
-    "desc_hu": "Nyolc macskakőből készült. A 2-es maximális fűtőértékű tüzelőanyag szenet (szénblokkot) használhat az összes érc olvasztására, kivéve a mithrilérc, az adelmanérc és a higanyérc. Az üveg nem olvasztható (4 homok elégetése 1-es hőfokú tüzelőanyaggal homokot eredményez, 4 homok elégetése bármilyen 1-nél magasabb hőfokú tüzelőanyaggal üveget eredményez). 2-t meghaladó fűtőértékű tüzelőanyag nem használható. Ha kőkemencét használ a hús sütéséhez, 5% esély van arra, hogy megégjen a hús. A 0.6.0 verzió eltávolítja a Stone Furnace kemence funkcióját, és a blokknak nincs gyakorlati hatása. Külön emlékeztető: A kő kemence nem a kemence magja! Egy nagy kemence építéséhez kemencemag szükséges. Megjegyzés: A kemence nem működik, ha egy blokk van előtte (a grafikus felületet nem lehet kinyitni), és a láng átmenetileg kialszik. Ahogy a víz áthalad egy működő kemencén, a lángok ideiglenesen kialszik. Hordozható blokkok, például kemencék szerszámokkal történő ledöntése nem veszíti el a tartósságot. Az egyes tüzelőanyagok fűtőérték-táblázata a következő: Üzemanyag fűtőérték éghető blokkok 1 faszén 1 szén 2 széntömb 2 magma hordó 3 lángrúd 4"
+    "desc_en": "Stone furnace crafted from 8 cobblestone. It was the mid-tier furnace before the multi-block furnace core system replaced its practical role.",
+    "desc_hu": "8 macskakőből készülő kőkemence. A többblokkos kemencemagos rendszer előtt ez volt a középső szintű kemence, később legacy blokkká vált.",
+    "desc_ru": "Каменная печь из 8 булыжников. Раньше была печью среднего уровня, но после появления многоблочной системы с ядром печи стала legacy-блоком.",
+    "versions_en": [
+      "v0.6.0: The Stone Furnace lost its real furnace function and became a legacy block."
+    ],
+    "versions_hu": [
+      "v0.6.0: A kőkemence elvesztette a tényleges kemencefunkcióját, és legacy blokkká vált."
+    ],
+    "versions_ru": [
+      "v0.6.0: Каменная печь лишилась своей реальной функции печи и стала legacy-блоком."
+    ]
   },
   "netherrack_furnace_idle": {
     "mcmod_id": 772861,
-    "desc": "八个地狱岩合成。在黑曜石熔炉的基础上，可以使用热度为4的燃料——烈焰棒，熔炼艾德曼矿石。 烧制肉如果使用地狱岩熔炉，不会烧糊。 0.6.0版本移除地狱岩熔炉的熔炉功能，该方块已无实际作用。 特别提醒：地狱岩熔炉不是 熔炉核心 ！搭建大型熔炉需要熔炉核心。 注意： 熔炉前方有方块挡住时无法工作（无法打开GUI），火焰会暂时熄灭。 流水经过工作中的熔炉，火焰会暂时熄灭。 用工具敲掉熔炉等便携方块不掉耐久。",
+    "desc": "Netherrack furnace crafted from 8 netherrack blocks. It was the top legacy furnace tier before large furnace cores took over that role.",
     "versions": [
-      "0.6.0版本移除地狱岩熔炉的熔炉功能，该方块已无实际作用"
+      "v0.6.0: The Netherrack Furnace lost its real furnace function and became a legacy block."
     ],
-    "desc_en": "Crafted from eight Netherrack blocks. Based on the Obsidian Furnace, it can use heat level 4 fuel such as a Blaze Rod to smelt Adamantium Ore. If you use a Netherrack Furnace to cook meat, it will not burn. Version 0.6.0 removes the furnace function of the Netherrack Furnace, and the block has no practical effect. Special reminder: The Netherrack Furnace is not the Furnace Core! A furnace core is required to build a large furnace. Note: The furnace will not work if there is a block in front of it (the GUI cannot be opened), and the flame will be temporarily extinguished. As water passes through a working furnace, the flames are temporarily extinguished. Knocking down portable blocks such as furnaces with tools does not lose durability.",
-    "desc_hu": "Nyolc Netherrack blokkból craftolható. Az obszidián kemence továbbfejlesztett változataként 4-es hőfokú tüzelőanyaggal, például blaze rúddal képes Adamantium ércet olvasztani. Ha Netherrack kemencét használsz hús sütésére, az nem ég meg. A 0.6.0-s verzió eltávolítja a Netherrack kemence tényleges kemencefunkcióját, így a blokk önmagában már nem tölt be gyakorlati szerepet. Fontos: a Netherrack kemence nem azonos a kemencemaggal. Nagy kemence építéséhez kemencemag kell. Megjegyzés: a kemence nem működik, ha blokk van előtte, és a láng ideiglenesen kialszik. Ha víz folyik át egy működő kemencén, a lángok szintén ideiglenesen kialszanak. A hordozható blokkok, például kemencék szerszámmal történő leverése nem fogyaszt tartósságot."
+    "desc_en": "Netherrack furnace crafted from 8 netherrack blocks. It was the top legacy furnace tier before large furnace cores took over that role.",
+    "desc_hu": "8 netherrack blokkból készülő netherrack kemence. A nagy kemencemagok korszaka előtt ez volt a felső legacy kemenceszint.",
+    "desc_ru": "Адская печь из 8 блоков адского камня. До появления больших ядер печи это был верхний legacy-уровень печей.",
+    "versions_en": [
+      "v0.6.0: The Netherrack Furnace lost its real furnace function and became a legacy block."
+    ],
+    "versions_hu": [
+      "v0.6.0: A netherrack kemence elvesztette a tényleges kemencefunkcióját, és legacy blokkká vált."
+    ],
+    "versions_ru": [
+      "v0.6.0: Адская печь лишилась своей реальной функции печи и стала legacy-блоком."
+    ]
   },
   "water_bag": {
     "mcmod_id": 785081,
-    "desc": "装满水后可以饮用3次，对水方块右键可以装水，容量为3升。 手持水袋按住shift同时右键可以查看水袋信息，按住Ctrl同时右键可以在地上倒出流水。 装有脏水的水袋可在熔炉里烧制，获得装有净水的水袋，烧制时间为10秒。",
-    "desc_en": "After filling with water, you can drink it 3 times. Right-click on the water block to fill it with water. The capacity is 3 liters. Hold the water bag and hold down shift while right-clicking to view the water bag information. Hold down Ctrl and right-click to pour water on the ground. A water bag containing dirty water can be fired in a furnace to obtain a water bag containing clean water. The firing time is 10 seconds.",
-    "desc_hu": "A vízzel való feltöltést követően 3-szor ihatja meg. Kattintson a jobb gombbal a vizesblokkra, hogy feltöltse vízzel. Űrtartalma 3 liter. Tartsa lenyomva a vízzsákot, és tartsa lenyomva a Shift gombot, miközben a jobb gombbal kattintson a vízzsák információinak megtekintéséhez. Tartsa lenyomva a Ctrl billentyűt, és kattintson a jobb gombbal, hogy vizet öntsön a földre. A piszkos vizet tartalmazó vizeszsákot ki lehet égetni egy kemencében, hogy tiszta vizet tartalmazó vízzsákot kapjunk. A tüzelési idő 10 másodperc."
+    "desc": "Basic water bag with 3 liters of capacity and 3 drinks. Fill it from water, inspect it with Shift-right-click, and pour it with Ctrl-right-click.",
+    "desc_en": "Basic water bag with 3 liters of capacity and 3 drinks. Fill it from water, inspect it with Shift-right-click, and pour it with Ctrl-right-click.",
+    "desc_hu": "Alap víztasak 3 liter kapacitással és 3 itallal. Vízből tölthető, Shift+jobb klikkel ellenőrizhető, Ctrl+jobb klikkel kiönthető.",
+    "desc_ru": "Базовый бурдюк на 3 литра и 3 глотка. Наполняется из источника воды, проверяется Shift+ПКМ, выливается Ctrl+ПКМ."
   },
   "big_water_bag": {
     "mcmod_id": 831586,
@@ -1268,65 +1310,132 @@
   },
   "wooden_water_filter": {
     "mcmod_id": 785027,
-    "desc": "滤水器可用于净化水，需要搭配滤纸才能使用。 滤水器同时最多可净化9升水，手持水碗/水瓶/水桶/装满水的水袋右击滤水器上层，可以将待净化的水放置在滤水器上层，通过滤水器中部的 滤纸 ，已净化后的水会保存在滤水器下层。 玩家可手持空容器按住shift同时右击滤水器上层/下层部分用以装脏/净水，如果拆除滤纸会立即停止过滤。 当玩家对着滤水器按shift时会显示当前滤水器相关信息。 滤水器只能被斧工具（战斧除外）破坏。 0.5.8版本新增设定，滤水器上方如果存在无限水源，会自动流入滤水器上层。 注意：滤水器虽为功能性方块，但无法按Shift+右键搬起。",
+    "desc": "Wooden water filter used with filter paper to purify water. It processes up to 9 liters, with dirty water on top and clean water collected below.",
     "versions": [
-      "0.5.8版本新增设定，滤水器上方如果存在无限水源，会自动流入滤水器上层"
+      "v0.5.8: Infinite water sources above the filter can automatically feed the upper tank."
     ],
-    "desc_en": "Water filters can be used to purify water and require filter paper to be used. The water filter can purify up to 9 liters of water at the same time. Hold a water bowl/water bottle/bucket/water bag filled with water and right-click on the upper layer of the water filter to place the water to be purified on the upper layer of the water filter. Through the filter paper in the middle of the water filter, the purified water will be stored in the lower layer of the water filter. Players can hold an empty container and hold down shift while right-clicking on the upper/lower part of the water filter to hold dirty/clean water. If the filter paper is removed, the filtering will stop immediately. When the player presses shift on the water filter, the current water filter related information will be displayed. Water filters can only be destroyed by ax tools (except battle axes). There is a new setting in version 0.5.8. If there is an unlimited water source above the water filter, it will automatically flow into the upper layer of the water filter. Note: Although the water filter is a functional block, it cannot be lifted by pressing Shift + right click.",
-    "desc_hu": "A vízszűrők a víz tisztítására használhatók, és szűrőpapírt kell használni. A vízszűrő egyszerre akár 9 liter vizet is képes megtisztítani. Fogjon meg egy vízzel megtöltött vizestálat/vizes palackot/vödröt/vizeszacskót, és kattintson a jobb gombbal a vízszűrő felső rétegére, hogy a tisztítandó vizet a vízszűrő felső rétegére helyezze. A vízszűrő közepén lévő szűrőpapíron keresztül a tisztított víz a vízszűrő alsó rétegében kerül tárolásra. A játékosok tarthatnak egy üres edényt, és lenyomva tarthatják a shiftet, miközben a jobb gombbal a vízszűrő felső/alsó részén kattintanak a piszkos/tiszta víz megtartásához. Ha eltávolítja a szűrőpapírt, a szűrés azonnal leáll. Amikor a játékos megnyomja a shift gombot a vízszűrőn, megjelenik az aktuális vízszűrővel kapcsolatos információ. A vízszűrőket csak fejszeszerszámokkal lehet megsemmisíteni (kivéve a harci fejszét). Van egy új setti ng a 0.5.8-as verzióban. Ha a vízszűrő felett korlátlan vízforrás van, az automatikusan a vízszűrő felső rétegébe áramlik. Megjegyzés: Bár a vízszűrő egy funkcionális blokk, nem emelhető ki a Shift + jobb klikk lenyomásával."
+    "desc_en": "Wooden water filter used with filter paper to purify water. It processes up to 9 liters, with dirty water on top and clean water collected below.",
+    "desc_hu": "Fa vízszűrő, amely szűrőpapírral együtt tisztítja a vizet. Egyszerre legfeljebb 9 litert kezel, felül a szennyezett, alul a tiszta vízzel.",
+    "desc_ru": "Деревянный фильтр для воды, работающий с фильтровальной бумагой. Очищает до 9 литров: грязная вода сверху, чистая снизу.",
+    "versions_en": [
+      "v0.5.8: Infinite water sources above the filter can automatically feed the upper tank."
+    ],
+    "versions_hu": [
+      "v0.5.8: A szűrő fölötti végtelen vízforrás automatikusan töltheti a felső tartályt."
+    ],
+    "versions_ru": [
+      "v0.5.8: Бесконечный источник воды над фильтром может автоматически заполнять верхний резервуар."
+    ]
   },
   "filter_paper": {
     "mcmod_id": 785028,
-    "desc": "用于结合滤水器进行过滤作用，非潜行状态时拿着滤纸单击右键即可放入滤水器，每消耗一点耐久可过滤一升纯净水水（两瓶/两碗纯净水）。",
-    "desc_en": "Used to combine with a water filter for filtration. When not sneaking, right-click on the filter paper to put it into the water filter. Each point of durability consumed can filter one liter of pure water (two bottles/two bowls of pure water).",
-    "desc_hu": "Szűréshez vízszűrővel kombinálható. Ha nem lopóz, kattintson a jobb gombbal a szűrőpapírra, hogy behelyezze a vízszűrőbe. Minden elfogyasztott tartóssági pont egy liter tiszta vizet képes kiszűrni (két palack/két tál tiszta víz)."
+    "desc": "Filter paper for the wooden water filter. Each point of durability purifies 1 liter of water.",
+    "desc_en": "Filter paper for the wooden water filter. Each point of durability purifies 1 liter of water.",
+    "desc_hu": "Szűrőpapír a fa vízszűrőhöz. Minden egyes tartósságpont 1 liter vizet tisztít meg.",
+    "desc_ru": "Фильтровальная бумага для деревянного фильтра воды. Каждая единица прочности очищает 1 литр воды."
   },
   "battery": {
     "mcmod_id": 777366,
-    "desc": "由锡板、红石和煤炭合成，可用于修复 矿工帽 。每个电池可修复75点耐久。 0.5.7版本，困难模式下每个电池可修复50点耐久。 0.9.0版本，需要获得对应的 知识书 解锁权限才能合成。",
+    "desc": "Battery used to repair the miner helmet. Each battery restores 75 durability under normal rules.",
     "versions": [
-      "0.5.7版本，困难模式下每个电池可修复50点耐久",
-      "0.9.0版本，需要获得对应的"
+      "v0.5.7: In Hardcore, one battery restores 50 durability instead of 75.",
+      "v0.9.0: Crafting requires the related knowledge book."
     ],
-    "desc_en": "Crafted from tin plate, redstone and coal, it can be used to repair Miner's Hat. Each battery can repair 75 points of durability. In version 0.5.7, each battery can repair 50 points of durability in hard mode. For version 0.9.0, you need to obtain the corresponding knowledge book to unlock the permission to craft it.",
-    "desc_hu": "Ónlemezből, vöröskőből és szénből készült, és használható a bányászkalap javítására. Minden akkumulátor 75 tartóssági pontot képes javítani. A 0.5.7-es verzióban minden akkumulátor 50 tartóssági pontot képes javítani kemény üzemmódban. A 0.9.0-s verzió esetén be kell szereznie a megfelelő tudáskönyvet, hogy feloldja a létrehozási engedélyt."
+    "desc_en": "Battery used to repair the miner helmet. Each battery restores 75 durability under normal rules.",
+    "desc_hu": "A bányászsisak javítására szolgáló akkumulátor. Normál szabályok mellett egy darab 75 tartósságot állít vissza.",
+    "desc_ru": "Батарея для ремонта шахтёрского шлема. При обычных правилах одна батарея восстанавливает 75 прочности.",
+    "versions_en": [
+      "v0.5.7: In Hardcore, one battery restores 50 durability instead of 75.",
+      "v0.9.0: Crafting requires the related knowledge book."
+    ],
+    "versions_hu": [
+      "v0.5.7: Hardcore módban egy akkumulátor 75 helyett 50 tartósságot állít vissza.",
+      "v0.9.0: A craftoláshoz a kapcsolódó tudáskönyv kell."
+    ],
+    "versions_ru": [
+      "v0.5.7: В Hardcore одна батарея восстанавливает 50 прочности вместо 75.",
+      "v0.9.0: Для крафта нужна соответствующая книга знаний."
+    ]
   },
   "bedrock_pulverizer": {
     "mcmod_id": 802105,
-    "desc": "0.5.8版本加入，将地核破坏者放在 地核 上，使用 强化末影之眼 启动，即可破坏地核。已破坏的地核会转变为末地传送门。 地核破坏者不能被搬运，且只能用 艾德曼镐 破坏。 0.9.0版本后，需要获得对应的 知识书 解锁权限才能合成。",
+    "desc": "Special device placed on the core block and activated with an Enhanced Eye of Ender to break the core. The destroyed core becomes an End portal.",
     "versions": [
-      "0.5.8版本加入，将地核破坏者放在",
-      "0.9.0版本后，需要获得对应的"
+      "v0.5.8: Added to the mod.",
+      "v0.9.0: Crafting requires the related knowledge book."
     ],
-    "desc_en": "Added in version 0.5.8, place the Core Destroyer on the core block and activate it with the Enhanced Eye of Ender to destroy the core. Destroyed cores are transformed into end portals. The Core Destroyer cannot be moved and can only be broken with an Adamantium Pickaxe. For version 0.9.0, you need to obtain the corresponding knowledge book to unlock the permission to craft it.",
-    "desc_hu": "A 0.5.8-as verzióhoz hozzáadva helyezze a Core Destroyert a magblokkra, és aktiválja az Enhanced Eye of Ender segítségével, hogy megsemmisítse a magot. A megsemmisült magok végportálokká alakulnak. A Core Destroyer nem mozgatható és csak Adamantium Pickaxe-vel törhető. A 0.9.0-s verzió esetén be kell szereznie a megfelelő tudáskönyvet, hogy feloldja a létrehozási engedélyt."
+    "desc_en": "Special device placed on the core block and activated with an Enhanced Eye of Ender to break the core. The destroyed core becomes an End portal.",
+    "desc_hu": "Speciális eszköz, amelyet a magblokkra kell tenni, majd Fejlesztett Ender Szemmel aktiválni a mag megsemmisítéséhez. A megsemmisült mag End portállá alakul.",
+    "desc_ru": "Специальное устройство, которое ставится на блок ядра и активируется улучшенным глазом Эндера, чтобы разрушить ядро. Разрушенное ядро превращается в портал в Энд.",
+    "versions_en": [
+      "v0.5.8: Added to the mod.",
+      "v0.9.0: Crafting requires the related knowledge book."
+    ],
+    "versions_hu": [
+      "v0.5.8: Ekkor került a modba.",
+      "v0.9.0: A craftoláshoz a kapcsolódó tudáskönyv kell."
+    ],
+    "versions_ru": [
+      "v0.5.8: Добавлен в мод.",
+      "v0.9.0: Для крафта нужна соответствующая книга знаний."
+    ]
   },
   "stone_furnace_core": {
     "mcmod_id": 816192,
-    "desc": "0.6.0版本新增，由圆石和铜或银工作台合成，用于搭建 多方块结构3×3大型石熔炉 的重要方块。",
+    "desc": "Core block for building the 3x3 large Stone Furnace structure.",
     "versions": [
-      "0.6.0版本新增，由圆石和铜或银工作台合成，用于搭建"
+      "v0.6.0: Added as part of the large furnace system."
     ],
-    "desc_en": "Newly added in version 0.6.0, it is crafted from cobblestone and copper or Silver Toolbench, and is an important block used to build a multi-block structure 3×3 large stone furnace.",
-    "desc_hu": "A 0.6.0-s verzióban újonnan hozzáadott, macskakőből és réz vagy ezüst munkapadból készült, és fontos blokk, amelyet több blokkos szerkezetű, 3 × 3-as nagy kőkemencék építéséhez használnak."
+    "desc_en": "Core block for building the 3x3 large Stone Furnace structure.",
+    "desc_hu": "A 3x3-as nagy kőkemence szerkezetének központi eleme.",
+    "desc_ru": "Основной блок для постройки большой каменной печи 3x3.",
+    "versions_en": [
+      "v0.6.0: Added as part of the large furnace system."
+    ],
+    "versions_hu": [
+      "v0.6.0: A nagy kemencerendszer részeként került be."
+    ],
+    "versions_ru": [
+      "v0.6.0: Добавлен как часть системы больших печей."
+    ]
   },
   "obsidian_furnace_core": {
     "mcmod_id": 816193,
-    "desc": "0.6.0版本新增，由黑曜石和金或铁工作台合成，用于搭建 多方块结构3×3大型黑曜石熔炉 的重要方块。",
+    "desc": "Core block for building the 3x3 large Obsidian Furnace structure.",
     "versions": [
-      "0.6.0版本新增，由黑曜石和金或铁工作台合成，用于搭建"
+      "v0.6.0: Added as part of the large furnace system."
     ],
-    "desc_en": "Newly added in version 0.6.0, it is crafted from obsidian and gold or Iron Toolbench, and is an important block used to build a multi-block structure 3×3 large obsidian furnace.",
-    "desc_hu": "A 0.6.0-s verzióban újonnan hozzáadott, obszidiánból és aranyból vagy vasból készült munkapad, és fontos blokk, amelyet egy többblokkos szerkezetű, 3 × 3-as nagy obszidián kemence építéséhez használnak."
+    "desc_en": "Core block for building the 3x3 large Obsidian Furnace structure.",
+    "desc_hu": "A 3x3-as nagy obszidiánkemence szerkezetének központi eleme.",
+    "desc_ru": "Основной блок для постройки большой обсидиановой печи 3x3.",
+    "versions_en": [
+      "v0.6.0: Added as part of the large furnace system."
+    ],
+    "versions_hu": [
+      "v0.6.0: A nagy kemencerendszer részeként került be."
+    ],
+    "versions_ru": [
+      "v0.6.0: Добавлен как часть системы больших печей."
+    ]
   },
   "nether_furnace_core": {
     "mcmod_id": 816194,
-    "desc": "0.6.0版本新增，由地狱岩和秘银或艾德曼工作台合成，用于搭建 多方块结构3×3大型地狱岩熔炉 的重要方块。",
+    "desc": "Core block for building the 3x3 large Netherrack Furnace structure.",
     "versions": [
-      "0.6.0版本新增，由地狱岩和秘银或艾德曼工作台合成，用于搭建"
+      "v0.6.0: Added as part of the large furnace system."
     ],
-    "desc_en": "Added in version 0.6.0. Crafted from Netherrack and on a Mithril or Adamantium Workbench, it is an important component used to build the 3×3 multi-block Netherrack Furnace.",
-    "desc_hu": "A 0.6.0-s verzióban került be. Netherrackból készül, Mithril vagy Adamantium munkaasztalon, és a 3×3-as többblokkos Netherrack kemence fontos alkatrésze."
+    "desc_en": "Core block for building the 3x3 large Netherrack Furnace structure.",
+    "desc_hu": "A 3x3-as nagy netherrack kemence szerkezetének központi eleme.",
+    "desc_ru": "Основной блок для постройки большой адской печи 3x3.",
+    "versions_en": [
+      "v0.6.0: Added as part of the large furnace system."
+    ],
+    "versions_hu": [
+      "v0.6.0: A nagy kemencerendszer részeként került be."
+    ],
+    "versions_ru": [
+      "v0.6.0: Добавлен как часть системы больших печей."
+    ]
   },
   "silver_battle_axe": {
     "mcmod_id": 773290,

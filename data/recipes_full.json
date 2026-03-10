@@ -2027,7 +2027,24 @@
       "cobblestone",
       "cobblestone"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "cobblestone",
+        "cobblestone",
+        "cobblestone"
+      ],
+      [
+        "cobblestone",
+        "_",
+        "cobblestone"
+      ],
+      [
+        "cobblestone",
+        "cobblestone",
+        "cobblestone"
+      ]
+    ]
   },
   {
     "id": "ladder_117",
@@ -4556,7 +4573,24 @@
       "netherrack",
       "netherrack"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "netherrack",
+        "netherrack",
+        "netherrack"
+      ],
+      [
+        "netherrack",
+        "_",
+        "netherrack"
+      ],
+      [
+        "netherrack",
+        "netherrack",
+        "netherrack"
+      ]
+    ]
   },
   {
     "id": "obsidian_slab_single_231",
