@@ -237,70 +237,28 @@ export default function ItemExplorer() {
     } as React.CSSProperties;
   }
 
+  const labelStyle: React.CSSProperties = {
+    fontSize: '.7em', color: 'var(--gold)', opacity: 0.65, textTransform: 'uppercase',
+    letterSpacing: '1px', fontWeight: 700, minWidth: 72, flexShrink: 0,
+  };
+
   return (
     <div style={{ position: 'relative' }}>
       {/* Filter bar */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start',
-        gap: 16, marginBottom: 10, flexWrap: 'wrap' }}>
+      <div style={{ marginBottom: 10 }}>
 
-        <div style={{ flex: 1, minWidth: 0 }}>
-          {/* Category row */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 5, flexWrap: 'wrap', marginBottom: 6 }}>
-            <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
-              letterSpacing: '.6px', minWidth: 72 }}>
-              {lang === 'hu' ? 'Kategória' : lang === 'ru' ? 'Категория' : 'Category'}
-            </span>
-            <button onClick={() => { setCatFilter(''); setTierFilter(''); }} style={pillStyle(catFilter === '')}>
-              {lang === 'hu' ? 'Mind' : lang === 'ru' ? 'Все' : 'All'}
-              <span style={{ opacity: .5, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>
-                ({allItems.length})
-              </span>
-            </button>
-            {CAT_ORDER.map(cat => {
-              const meta = CATEGORY_META[cat];
-              const count = allItems.filter(i => i.category === cat).length;
-              const active = catFilter === cat;
-              return (
-                <button key={cat} onClick={() => { setCatFilter(active ? '' : cat); setTierFilter(''); }}
-                  style={pillStyle(active, 'var(--gold)', 'rgba(240,192,64,.12)')}>
-                  {meta.icon} {meta[lang as 'hu' | 'en' | 'ru']}
-                  <span style={{ opacity: .5, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>({count})</span>
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Tier row */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 5, flexWrap: 'wrap' }}>
-            <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
-              letterSpacing: '.6px', minWidth: 72 }}>
-              {lang === 'hu' ? 'Tier' : 'Tier'}
-            </span>
-            {TIER_ORDER.filter(t => tiersInCat.has(t)).map(tier => {
-              const meta = TIER_META[tier];
-              const count = allItems.filter(i => i.tier === tier && (!catFilter || i.category === catFilter)).length;
-              const active = tierFilter === tier;
-              return (
-                <button key={tier} onClick={() => setTierFilter(active ? '' : tier)}
-                  style={pillStyle(active, meta?.color, meta?.bg)}>
-                  {meta?.[lang as 'hu' | 'en' | 'ru'] ?? tier}
-                  <span style={{ opacity: .5, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>({count})</span>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Search + extra toggles */}
-        <div style={{ flexShrink: 0, display: 'flex', flexDirection: 'column', gap: 6, alignItems: 'flex-end' }}>
-          <div style={{ position: 'relative' }}>
+        {/* Top row: search (dominant) + removed toggle */}
+        <div style={{ display: 'flex', gap: 10, alignItems: 'center', marginBottom: 8, flexWrap: 'wrap' }}>
+          <div style={{ position: 'relative', flex: '1 1 240px', maxWidth: 380 }}>
             <input
               type="search"
               placeholder={lang === 'hu' ? 'Item keresése…' : lang === 'ru' ? 'Поиск предметов…' : 'Search items…'}
               value={search}
               onChange={e => setSearch(e.target.value)}
-              style={{ padding: '6px 32px 6px 12px', borderRadius: 6, border: '1px solid var(--surface2)',
-                       background: 'var(--surface)', color: 'var(--text)', width: 220, fontFamily: 'inherit' }}
+              style={{ padding: '7px 32px 7px 12px', borderRadius: 6,
+                       border: `1px solid ${search ? 'var(--green)' : 'var(--surface2)'}`,
+                       background: 'var(--surface)', color: 'var(--text)',
+                       width: '100%', fontFamily: 'inherit', fontSize: '.92em', outline: 'none' }}
             />
             {search && (
               <button onClick={() => setSearch('')}
@@ -311,15 +269,54 @@ export default function ItemExplorer() {
           </div>
           <button
             onClick={() => setShowRemoved(v => !v)}
-            style={{
-              ...pillStyle(showRemoved, '#e94560', 'rgba(233,69,96,.12)'),
-              fontSize: '.72em',
-            }}
+            style={{ ...pillStyle(showRemoved, '#e94560', 'rgba(233,69,96,.12)'), fontSize: '.72em', flexShrink: 0 }}
           >
             {showRemoved
-              ? (lang === 'hu' ? '✕ Eltávolított itemek látszanak' : lang === 'ru' ? '✕ Удалённые предметы видны' : '✕ Showing removed items')
-              : (lang === 'hu' ? 'Eltávolított itemek elrejtve' : lang === 'ru' ? 'Удалённые предметы скрыты' : 'Removed items hidden')}
+              ? (lang === 'hu' ? '✕ Eltávolított látszik' : lang === 'ru' ? '✕ Удалённые видны' : '✕ Showing removed')
+              : (lang === 'hu' ? 'Eltávolítottak rejtve' : lang === 'ru' ? 'Удалённые скрыты' : 'Removed hidden')}
           </button>
+        </div>
+
+        {/* Category row */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 5, flexWrap: 'wrap', marginBottom: 5 }}>
+          <span style={labelStyle}>
+            {lang === 'hu' ? 'Kateg.' : lang === 'ru' ? 'Катег.' : 'Cat.'}
+          </span>
+          <button onClick={() => { setCatFilter(''); setTierFilter(''); }} style={pillStyle(catFilter === '')}>
+            {lang === 'hu' ? 'Mind' : lang === 'ru' ? 'Все' : 'All'}
+            <span style={{ opacity: .4, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>
+              ({allItems.length})
+            </span>
+          </button>
+          {CAT_ORDER.map(cat => {
+            const meta = CATEGORY_META[cat];
+            const count = allItems.filter(i => i.category === cat).length;
+            const active = catFilter === cat;
+            return (
+              <button key={cat} onClick={() => { setCatFilter(active ? '' : cat); setTierFilter(''); }}
+                style={pillStyle(active, 'var(--gold)', 'rgba(240,192,64,.12)')}>
+                {meta.icon} {meta[lang as 'hu' | 'en' | 'ru']}
+                <span style={{ opacity: .4, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>({count})</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Tier row */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 5, flexWrap: 'wrap' }}>
+          <span style={labelStyle}>Tier</span>
+          {TIER_ORDER.filter(t => tiersInCat.has(t)).map(tier => {
+            const meta = TIER_META[tier];
+            const count = allItems.filter(i => i.tier === tier && (!catFilter || i.category === catFilter)).length;
+            const active = tierFilter === tier;
+            return (
+              <button key={tier} onClick={() => setTierFilter(active ? '' : tier)}
+                style={pillStyle(active, meta?.color, meta?.bg)}>
+                {meta?.[lang as 'hu' | 'en' | 'ru'] ?? tier}
+                <span style={{ opacity: .4, fontWeight: 400, marginLeft: 4, fontSize: '.85em' }}>({count})</span>
+              </button>
+            );
+          })}
         </div>
       </div>
 
@@ -363,7 +360,7 @@ export default function ItemExplorer() {
               onClick={() => setSelected(isSelected ? null : item)}
               style={{
                 display: 'flex', flexDirection: 'column', alignItems: 'center',
-                gap: 5, padding: '8px 6px',
+                gap: 5, padding: '8px 8px',
                 border: `1px solid ${isSelected ? 'var(--gold)' : isRemoved ? 'rgba(233,69,96,.3)' : 'var(--surface2)'}`,
                 borderRadius: 6, cursor: 'pointer',
                 background: isSelected ? 'rgba(240,192,64,.07)' : isRemoved ? 'rgba(233,69,96,.05)' : 'var(--surface)',
@@ -381,15 +378,15 @@ export default function ItemExplorer() {
                 }} title={lang === 'hu' ? 'Van recept' : lang === 'ru' ? 'Есть рецепт' : 'Has recipe'}>⚒</span>
               )}
               <ItemIcon item={item} size={32} />
-              <span style={{ fontSize: '.7em', textAlign: 'center', lineHeight: 1.3,
+              <span style={{ fontSize: '.73em', textAlign: 'center', lineHeight: 1.3,
                 color: 'var(--text)', wordBreak: 'break-word', maxWidth: '100%' }}>
                 {item.name[lang as 'hu' | 'en' | 'ru']}
               </span>
               {tierMeta && (
                 <span style={{
-                  fontSize: '.6em', padding: '1px 6px', borderRadius: 8,
+                  fontSize: '.62em', padding: '1px 6px', borderRadius: 8,
                   background: tierMeta.bg, color: tierMeta.color,
-                  border: `1px solid ${tierMeta.color}44`, fontWeight: 700,
+                  border: `1px solid ${tierMeta.color}66`, fontWeight: 700,
                 }}>
                   {tierMeta[lang as 'hu' | 'en' | 'ru']}
                 </span>
