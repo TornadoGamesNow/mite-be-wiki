@@ -79,6 +79,10 @@ const sidebarGroups = getSidebarGroups('enchanting');
 <div class="tip">Arany almát az Egyéni Asztalnál bűvölni <strong>csak 100 XP-be kerül</strong>, extra anyag nem szükséges. Bűvölések csak erősebbé tehetők — eltávolítani vagy gyengíteni NEM lehet.</div>
 
 <!-- ─── MITE-specifikus bűvölések ─── -->
+<div class="enchant-search-bar" style="margin:1.5rem 0 0.5rem">
+  <input class="enchant-search" type="search" autocomplete="off" placeholder="🔍 Bűvölés keresése..."
+    style="width:100%;padding:8px 14px;border-radius:8px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.07);color:inherit;font-size:0.9em;box-sizing:border-box">
+</div>
 <h2 id="mite-enchants">MITE-specifikus bűvölések</h2>
 <p>Az alábbi 20 bűvölés a MITE:BE mod saját bűvölése — ezek a vanilla Minecraftban nem léteznek.</p>
 
@@ -259,6 +263,10 @@ const sidebarGroups = getSidebarGroups('enchanting');
 <div class="tip">Enchanting a golden apple at the Custom table only costs <strong>100 XP</strong>, no extra materials. Enchantments can only be added or strengthened — they cannot be removed or weakened here.</div>
 
 <!-- ─── MITE-specific enchantments ─── -->
+<div class="enchant-search-bar" style="margin:1.5rem 0 0.5rem">
+  <input class="enchant-search" type="search" autocomplete="off" placeholder="🔍 Search enchantments..."
+    style="width:100%;padding:8px 14px;border-radius:8px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.07);color:inherit;font-size:0.9em;box-sizing:border-box">
+</div>
 <h2 id="mite-enchants">MITE-Specific Enchantments</h2>
 <p>These 20 enchantments are unique to MITE:BE — they do not exist in vanilla Minecraft.</p>
 
@@ -437,6 +445,10 @@ const sidebarGroups = getSidebarGroups('enchanting');
 <div class="tip">Зачарование золотого яблока на кастомном столе стоит всего <strong>100 опыта</strong>. Чары можно только усиливать — убрать или ослабить здесь нельзя.</div>
 
 <!-- ─── MITE-специфичные чары ─── -->
+<div class="enchant-search-bar" style="margin:1.5rem 0 0.5rem">
+  <input class="enchant-search" type="search" autocomplete="off" placeholder="🔍 Поиск чар..."
+    style="width:100%;padding:8px 14px;border-radius:8px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.07);color:inherit;font-size:0.9em;box-sizing:border-box">
+</div>
 <h2 id="mite-enchants">MITE-специфичные чары</h2>
 <p>Эти 20 чар уникальны для MITE:BE — в ванильном Minecraft их нет.</p>
 
@@ -575,3 +587,94 @@ const sidebarGroups = getSidebarGroups('enchanting');
     </main>
   </div>
 </BaseLayout>
+
+<script is:inline>
+(function () {
+  function init() {
+    document.querySelectorAll('.enchant-search').forEach(function (inp) {
+      inp.addEventListener('input', function () {
+        var q = this.value.trim().toLowerCase();
+        // Sync value to all other language search boxes
+        document.querySelectorAll('.enchant-search').forEach(function (o) {
+          if (o !== inp) o.value = inp.value;
+        });
+        filterAll(q);
+      });
+    });
+  }
+
+  function getSiblings(from, until) {
+    var els = [];
+    var el = from ? from.nextElementSibling : null;
+    while (el && el !== until) { els.push(el); el = el.nextElementSibling; }
+    return els;
+  }
+
+  function filterAll(q) {
+    document.querySelectorAll('[data-lang]').forEach(function (div) {
+      var miteH2 = div.querySelector('#mite-enchants');
+      var xpH2   = div.querySelector('#xp-table');
+      var enchH2 = div.querySelector('#enchantability');
+      if (!miteH2 || !xpH2 || !enchH2) return;
+
+      // ── MITE enchants section: h4 + individual tables ──
+      var currentH4 = null;
+      getSiblings(miteH2, xpH2).forEach(function (el) {
+        if (el.tagName === 'H4') {
+          currentH4 = el;
+          el.style.display = '';
+        } else if (el.tagName === 'TABLE') {
+          var anyVisible = false;
+          el.querySelectorAll('tr').forEach(function (row) {
+            if (row.querySelector('th')) { row.style.display = ''; return; }
+            if (!q) { row.style.display = ''; anyVisible = true; return; }
+            var match = row.textContent.toLowerCase().includes(q);
+            row.style.display = match ? '' : 'none';
+            if (match) anyVisible = true;
+          });
+          var show = !q || anyVisible;
+          el.style.display = show ? '' : 'none';
+          if (currentH4) currentH4.style.display = show ? '' : 'none';
+        }
+      });
+
+      // ── XP table: category header rows (td[colspan]) ──
+      getSiblings(xpH2, enchH2).forEach(function (el) {
+        if (el.tagName !== 'TABLE') return;
+        var rows = Array.from(el.querySelectorAll('tr'));
+        var groups = [];
+        var group = null;
+        rows.forEach(function (row) {
+          if (row.querySelector('th')) { row.style.display = ''; return; }
+          if (row.querySelector('td[colspan]')) {
+            group = { header: row, rows: [] };
+            groups.push(group);
+          } else if (group) {
+            group.rows.push(row);
+          }
+        });
+        groups.forEach(function (g) {
+          if (!q) {
+            g.header.style.display = '';
+            g.rows.forEach(function (r) { r.style.display = ''; });
+            return;
+          }
+          var matched = 0;
+          g.rows.forEach(function (r) {
+            var m = r.textContent.toLowerCase().includes(q);
+            r.style.display = m ? '' : 'none';
+            if (m) matched++;
+          });
+          g.header.style.display = matched ? '' : 'none';
+        });
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>

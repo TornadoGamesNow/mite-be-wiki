@@ -5644,7 +5644,18 @@
       "en": "Tameable with bones. When tamed: fights alongside player. Rabies effect from wild wolves in some versions.",
       "ru": "Приручается костями. Приручённый: сражается рядом с игроком. Эффект бешенства от диких волков в некоторых версиях."
     },
-    "drops": [],
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers Farkas Hús",
+          "en": "Raw Wolf Meat",
+          "ru": "Сырое мясо волка"
+        },
+        "qty": "1",
+        "chance": "uncommon",
+        "itemId": "wolf_raw"
+      }
+    ],
     "image": "wolf.png",
     "mobType": "animal",
     "armor": 0,
@@ -7348,7 +7359,18 @@
       "en": "Passive, does not attack.",
       "ru": "Пассивный, не атакует."
     },
-    "drops": [],
+    "drops": [
+      {
+        "item": {
+          "hu": "Tintazacskó",
+          "en": "Ink Sac",
+          "ru": "Мешочек с чернилами"
+        },
+        "qty": "0-3",
+        "chance": "always",
+        "itemId": "ink_sac"
+      }
+    ],
     "mcmod_id": 773872,
     "preview": "squid_preview.jpg"
   },
@@ -7387,7 +7409,18 @@
       "en": "Passive, does not attack.",
       "ru": "Пассивный, не атакует."
     },
-    "drops": [],
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers Hal",
+          "en": "Raw Fish",
+          "ru": "Сырая рыба"
+        },
+        "qty": "1",
+        "chance": "always",
+        "itemId": "raw_fish"
+      }
+    ],
     "mcmod_id": 808644,
     "preview": "carp_preview.jpg"
   },
@@ -7426,7 +7459,28 @@
       "en": "Heavy melee attack.",
       "ru": "Сильный удар в ближнем бою."
     },
-    "drops": [],
+    "drops": [
+      {
+        "item": {
+          "hu": "Csont",
+          "en": "Bone",
+          "ru": "Кость"
+        },
+        "qty": "0-2",
+        "chance": "common",
+        "itemId": "bone"
+      },
+      {
+        "item": {
+          "hu": "Rothadt Hús",
+          "en": "Rotten Flesh",
+          "ru": "Гнилая плоть"
+        },
+        "qty": "0-1",
+        "chance": "uncommon",
+        "itemId": "rotten_flesh"
+      }
+    ],
     "mcmod_id": 773422,
     "preview": "longdead_preview.jpg"
   },
@@ -7465,7 +7519,18 @@
       "en": "Always hostile, cannot be tamed.",
       "ru": "Всегда враждебный, не поддаётся приручению."
     },
-    "drops": [],
+    "drops": [
+      {
+        "item": {
+          "hu": "Nyers Farkas Hús",
+          "en": "Raw Wolf Meat",
+          "ru": "Сырое мясо волка"
+        },
+        "qty": "1-2",
+        "chance": "common",
+        "itemId": "wolf_raw"
+      }
+    ],
     "mcmod_id": 773667,
     "preview": "bad_wolf_preview.jpg"
   },
@@ -7504,7 +7569,28 @@
       "en": "Increased damage output.",
       "ru": "Повышенный урон."
     },
-    "drops": [],
+    "drops": [
+      {
+        "item": {
+          "hu": "Fonál",
+          "en": "String",
+          "ru": "Нить"
+        },
+        "qty": "0-2",
+        "chance": "common",
+        "itemId": "string"
+      },
+      {
+        "item": {
+          "hu": "Pókszem",
+          "en": "Spider Eye",
+          "ru": "Паучий глаз"
+        },
+        "qty": "0-1",
+        "chance": "uncommon",
+        "itemId": "spider_eye"
+      }
+    ],
     "mcmod_id": 773664,
     "preview": "mutation_spider_preview.jpg"
   }
