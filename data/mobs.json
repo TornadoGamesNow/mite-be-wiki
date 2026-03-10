@@ -1906,113 +1906,6 @@
     "speed": 0.35
   },
   {
-    "id": "bone_lord",
-    "name": {
-      "hu": "Csontvázúr",
-      "en": "Bone Lord",
-      "ru": "Костяной лорд"
-    },
-    "hp": 40,
-    "dmgMin": 10,
-    "dmgMax": 10,
-    "dmgType": "melee",
-    "xp": 25,
-    "spawnZones": [
-      "underground"
-    ],
-    "difficulty": "boss",
-    "tags": [
-      "summoner"
-    ],
-    "special": {
-      "hu": "Csontváz idézés (70% íjas, 30% közelharcos). Düh aura a közeli csontvázkáknak.",
-      "en": "Skeleton Summon (70% archers, 30% melee). Rage Aura for nearby skeletons.",
-      "ru": "Призыв скелетов (70% лучники, 30% ближний бой). Аура ярости для соседних скелетов."
-    },
-    "drops": [
-      {
-        "item": {
-          "hu": "Csont",
-          "en": "Bone",
-          "ru": "Кость"
-        },
-        "qty": "2-4",
-        "chance": "always",
-        "itemId": "bone"
-      }
-    ],
-    "image": "bone_lord.png",
-    "mobType": "undead",
-    "armor": 3,
-    "description": {
-      "hu": "Vörös szemű csontváz, teljes rozsdás vas felszerelésben. Ha beazonosít egy célpontot, sosem despawneol. Csontváz csapatot idéz maga köré.",
-      "en": "A red-eyed skeleton in full rusted iron equipment. Once it locks onto a player it never despawns. Summons a skeleton squad around itself.",
-      "ru": "Краснооглазый скелет в полном заржавелом железном снаряжении. Однажды обнаружив цель, никогда не деспавнится. Призывает вокруг себя отряд скелетов."
-    },
-    "spawnInfo": {
-      "hu": "Vérhold: eséllyel a felszínen. Underground World spawner.",
-      "en": "Blood Moon: chance on surface. Underground World spawner.",
-      "ru": "Кровавая луна: шанс на поверхности. Спавнер Подземного мира."
-    },
-    "speed": 0.26,
-    "mcmod_id": 773423,
-    "preview": "bone_lord_preview.jpg"
-  },
-  {
-    "id": "ancient_bone_lord",
-    "name": {
-      "hu": "Ősi Csontvázúr",
-      "en": "Ancient Bone Lord",
-      "ru": "Древний костяной лорд"
-    },
-    "hp": 40,
-    "dmgMin": 10,
-    "dmgMax": 10,
-    "dmgType": "melee",
-    "xp": 30,
-    "spawnZones": [
-      "underground"
-    ],
-    "difficulty": "boss",
-    "tags": [
-      "summoner",
-      "requires_mithril"
-    ],
-    "special": {
-      "hu": "Longdead idézés fokozott statiszikájú hullámban. Halálkor: páncél 10 mp-ig sebezhetetlenül harcol tovább.",
-      "en": "Longdead Summon in enhanced waves. On death: armor fights invincibly for 10s.",
-      "ru": "Призыв нежити усиленными волнами. При смерти: броня продолжает сражаться 10 сек неуязвимо."
-    },
-    "drops": [
-      {
-        "item": {
-          "hu": "Csont",
-          "en": "Bone",
-          "ru": "Кость"
-        },
-        "qty": "3-6",
-        "chance": "always",
-        "itemId": "bone"
-      }
-    ],
-    "image": "ancient_bone_lord.png",
-    "mobType": "undead",
-    "armor": 4,
-    "description": {
-      "hu": "Ős fém páncélban és fegyverrel járó, erősebb Csontváz Úr változat. Az Underground Worldben jelenik meg. Halálkor a páncélja tovább harcol 10 mp-ig (sebezhetetlenül).",
-      "en": "A stronger Skeleton Lord variant in ancient metal armor and weapons. Spawns in the Underground World. On death, the armor continues fighting for 10 seconds (invincibly).",
-      "ru": "Более сильный вариант Костяного Лорда в броне и с оружием из древнего металла. Появляется в Подземном мире. При смерти броня продолжает сражаться 10 секунд (неуязвимо)."
-    },
-    "spawnInfo": {
-      "hu": "Kizárólag Underground World.",
-      "en": "Underground World only.",
-      "ru": "Только Подземный мир."
-    },
-    "speed": 0.27,
-    "mcmod_id": 773424,
-    "preview": "ancient_bone_lord_preview.jpg"
-  },
-  {
     "id": "white_ghoul",
     "name": {
       "hu": "Fehér Ghoul",
@@ -7482,7 +7375,8 @@
       }
     ],
     "mcmod_id": 773422,
-    "preview": "longdead_preview.jpg"
+    "preview": "longdead_preview.jpg",
+    "dmgType": "melee"
   },
   {
     "id": "bad_wolf",
@@ -7593,5 +7487,201 @@
     ],
     "mcmod_id": 773664,
     "preview": "mutation_spider_preview.jpg"
+  },
+  {
+    "id": "bat",
+    "name": {
+      "hu": "Denevér",
+      "en": "Bat",
+      "ru": "Летучая мышь"
+    },
+    "hp": 3,
+    "dmgMin": 0,
+    "dmgMax": 0,
+    "dmgType": "melee",
+    "xp": 0,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "flying",
+      "passive"
+    ],
+    "special": {
+      "hu": "Passzív, nem támad. Falakra tud akasztódni.",
+      "en": "Passive, does not attack. Can hang from ceilings.",
+      "ru": "Пассивная, не атакует. Может висеть на потолке."
+    },
+    "drops": [],
+    "image": "bat.png",
+    "mobType": "animal",
+    "armor": 0,
+    "description": {
+      "hu": "Passzív, repülő denevér, amely föld alatti barlangokban él. Nem agresszív és nem ejt értékes tárgyakat.",
+      "en": "A passive, flying creature found in underground caves. Non-aggressive and drops no valuable items.",
+      "ru": "Пассивное летающее существо, обитающее в подземных пещерах. Неагрессивное, не выбрасывает ценных предметов."
+    },
+    "spawnInfo": {
+      "hu": "Sötét, föld alatti barlangok.",
+      "en": "Dark underground caves.",
+      "ru": "Тёмные подземные пещеры."
+    },
+    "speed": 0.6
+  },
+  {
+    "id": "child_creeper",
+    "name": {
+      "hu": "Kis Creeper",
+      "en": "Child Creeper",
+      "ru": "Детёныш Крипера"
+    },
+    "hp": 10,
+    "dmgMin": 2,
+    "dmgMax": 10,
+    "dmgType": "explosion",
+    "xp": 3,
+    "spawnZones": [
+      "surface"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "explosion"
+    ],
+    "special": {
+      "hu": "Gyerek méretű creeper, kisebb robbanással.",
+      "en": "Child-sized creeper with a smaller explosion.",
+      "ru": "Крипер детского размера с меньшим взрывом."
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Puskapor",
+          "en": "Gunpowder",
+          "ru": "Порох"
+        },
+        "qty": "0-1",
+        "chance": "uncommon",
+        "itemId": "gunpowder"
+      }
+    ],
+    "image": "child_creeper.png",
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Kisebb méretű creeper változat. Kisebb HP-val és robbanással rendelkezik mint a felnőtt creeper.",
+      "en": "A smaller-sized creeper variant. Has less HP and a smaller explosion than a full-grown creeper.",
+      "ru": "Крипер меньшего размера. Имеет меньше HP и меньший взрыв, чем взрослый крипер."
+    },
+    "spawnInfo": {
+      "hu": "Azonos területeken mint a vanília creeper.",
+      "en": "Same areas as vanilla creeper.",
+      "ru": "Те же места, что и у ванильного крипера."
+    },
+    "speed": 0.25
+  },
+  {
+    "id": "arachnid",
+    "name": {
+      "hu": "Arachnida",
+      "en": "Arachnid",
+      "ru": "Арахнид"
+    },
+    "hp": 12,
+    "dmgMin": 4,
+    "dmgMax": 4,
+    "dmgType": "melee",
+    "xp": 5,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "fast"
+    ],
+    "special": {
+      "hu": "Rendkívül gyors mozgás — a normál entitások ötszöröse.",
+      "en": "Extremely fast movement — roughly 5× the speed of normal mobs.",
+      "ru": "Чрезвычайно быстрое передвижение — примерно в 5 раз быстрее обычных мобов."
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Pókfonal",
+          "en": "String",
+          "ru": "Нить"
+        },
+        "qty": "0-2",
+        "chance": "common",
+        "itemId": "string"
+      }
+    ],
+    "image": "arachnid.png",
+    "mobType": "monster",
+    "armor": 0,
+    "description": {
+      "hu": "Rendkívül gyors pókszerű lény föld alatt. Képes falra mászni. Mozgási sebessége messze meghaladja a többi mob sebességét.",
+      "en": "An extremely fast spider-like creature found underground. Can climb walls. Its movement speed far exceeds that of other mobs.",
+      "ru": "Чрезвычайно быстрое паукообразное существо, обитающее под землёй. Может карабкаться по стенам. Скорость передвижения намного превышает скорость других мобов."
+    },
+    "spawnInfo": {
+      "hu": "Föld alatti barlangok.",
+      "en": "Underground caves.",
+      "ru": "Подземные пещеры."
+    },
+    "speed": 4.0
+  },
+  {
+    "id": "giant_zombie",
+    "name": {
+      "hu": "Óriás Zombi",
+      "en": "Giant Zombie",
+      "ru": "Гигантский зомби"
+    },
+    "hp": 100,
+    "dmgMin": 50,
+    "dmgMax": 50,
+    "dmgType": "melee",
+    "xp": 50,
+    "spawnZones": [
+      "surface",
+      "underground"
+    ],
+    "difficulty": "late",
+    "tags": [
+      "boss",
+      "undead"
+    ],
+    "special": {
+      "hu": "Óriási méret, óriási sebzés. Miniboss jellegű ellenfél.",
+      "en": "Enormous size and massive damage. Functions as a mini-boss.",
+      "ru": "Огромный размер и колоссальный урон. Выступает как мини-босс."
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Rothadó hús",
+          "en": "Rotten Flesh",
+          "ru": "Гнилая плоть"
+        },
+        "qty": "3-6",
+        "chance": "common",
+        "itemId": "rotten_flesh"
+      }
+    ],
+    "image": "giant_zombie.png",
+    "mobType": "undead",
+    "armor": 0,
+    "description": {
+      "hu": "Hatalmas méretű zombi változat, amely szörnyű sebzést oszt ki (50 szív/ütés). Miniboss szintű fenyegetés, 100 HP-val.",
+      "en": "A massive zombie variant dealing catastrophic damage (50 hearts per hit). A mini-boss level threat with 100 HP.",
+      "ru": "Огромный вариант зомби, наносящий катастрофический урон (50 сердец за удар). Угроза уровня мини-босса со 100 HP."
+    },
+    "spawnInfo": {
+      "hu": "Ritka megjelenés felszínen és föld alatt.",
+      "en": "Rare spawn on surface and underground.",
+      "ru": "Редкое появление на поверхности и под землёй."
+    },
+    "speed": 0.5
   }
 ]

@@ -1313,50 +1313,52 @@
   },
   "copper_chain": {
     "mcmod_id": 773275,
-    "desc": "用四个 铜粒 合成，用来制作铜锁链套装。",
-    "desc_en": "Synthesize with four Copper Nuggets to make a Copper Chain Set.",
-    "desc_hu": "Szintetizáljon négy rézröggel, hogy rézlánckészletet készítsen."
+    "desc": "Chain component crafted from four copper nuggets. Used for copper chain armor recipes.",
+    "desc_en": "Chain component crafted from four copper nuggets. Used for copper chain armor recipes.",
+    "desc_hu": "Négy rézrögből craftolható láncelem. A réz láncpáncél receptjeihez kell.",
+    "desc_ru": "Кольчужный элемент из четырёх медных самородков. Нужен для рецептов медной кольчужной брони."
   },
   "silver_chain": {
     "mcmod_id": 773276,
-    "desc": "由四个 银粒 合成，可合成银锁链套装。",
-    "desc_en": "Made from four Silver Grains, it can be crafted into a Silver Chain Set.",
-    "desc_hu": "Négy ezüstszemből készült, ezüst lánc készletté alakítható.",
-    "desc_ru": "Создаётся из четырёх серебряных самородков и используется для серебряного кольчужного комплекта."
+    "desc": "Chain component crafted from four silver nuggets. Used for silver chain armor recipes.",
+    "desc_en": "Chain component crafted from four silver nuggets. Used for silver chain armor recipes.",
+    "desc_hu": "Négy ezüströgből craftolható láncelem. Az ezüst láncpáncél receptjeihez kell.",
+    "desc_ru": "Кольчужный элемент из четырёх серебряных самородков. Нужен для рецептов серебряной кольчужной брони."
   },
   "gold_chain": {
     "mcmod_id": 773277,
-    "desc": "四个 金粒 合成，用来制作金锁链套装。",
-    "desc_en": "Four gold nuggets are synthesized and used to make a gold chain set.",
-    "desc_hu": "Négy aranyrögöt készítenek, amelyekből aranylánc-készletet készítenek.",
-    "desc_ru": "Создаётся из четырёх золотых самородков и используется для золотого кольчужного комплекта."
+    "desc": "Chain component crafted from four gold nuggets. Used for gold chain armor recipes.",
+    "desc_en": "Chain component crafted from four gold nuggets. Used for gold chain armor recipes.",
+    "desc_hu": "Négy aranyrögből craftolható láncelem. Az arany láncpáncél receptjeihez kell.",
+    "desc_ru": "Кольчужный элемент из четырёх золотых самородков. Нужен для рецептов золотой кольчужной брони."
   },
   "iron_chain": {
     "mcmod_id": 773279,
-    "desc": "四个 铁粒 合成，用于制作铁锁链套装。",
-    "desc_en": "Four Iron Nuggets are synthesized and used to make the Iron Chain Set.",
-    "desc_hu": "Négy vasrögöt készítenek, és az Iron Chain Set elkészítéséhez használják fel."
+    "desc": "Chain component crafted from four iron nuggets. Used for iron chain armor recipes.",
+    "desc_en": "Chain component crafted from four iron nuggets. Used for iron chain armor recipes.",
+    "desc_hu": "Négy vasrögből craftolható láncelem. A vas láncpáncél receptjeihez kell.",
+    "desc_ru": "Кольчужный элемент из четырёх железных самородков. Нужен для рецептов железной кольчужной брони."
   },
   "mithril_chain": {
     "mcmod_id": 773281,
-    "desc": "四个 秘银粒 合成，可用于制作秘银锁链套装。",
-    "desc_en": "Four Mithril Grains are synthesized and can be used to make the Mithril Chain Set.",
-    "desc_hu": "Négy Mithril szemcsét készítenek, és felhasználhatók a Mithril lánckészlet elkészítésére.",
-    "desc_ru": "Создаётся из четырёх мифриловых крупиц и используется для мифрилового кольчужного комплекта."
+    "desc": "Chain component crafted from four mithril nuggets. Used for mithril chain armor recipes.",
+    "desc_en": "Chain component crafted from four mithril nuggets. Used for mithril chain armor recipes.",
+    "desc_hu": "Négy mithrilrögből craftolható láncelem. A mithril láncpáncél receptjeihez kell.",
+    "desc_ru": "Кольчужный элемент из четырёх мифриловых крупиц. Нужен для рецептов мифриловой кольчужной брони."
   },
   "adamantium_chain": {
     "mcmod_id": 773282,
-    "desc": "四个 艾德曼粒 合成，用于制作艾德曼锁链装备。",
-    "desc_en": "Four Adamantium grains are synthesized and used to make Adamantium chain equipment.",
-    "desc_hu": "Négy Adamantium szemcse készül, és Adamantium láncfelszerelések előállításához használható.",
-    "desc_ru": "Создаётся из четырёх адамантиевых крупиц и используется для адамантиевой кольчужной экипировки."
+    "desc": "Chain component crafted from four adamantium nuggets. Used for adamantium chain armor recipes.",
+    "desc_en": "Chain component crafted from four adamantium nuggets. Used for adamantium chain armor recipes.",
+    "desc_hu": "Négy adamantiumrögből craftolható láncelem. Az adamantium láncpáncél receptjeihez kell.",
+    "desc_ru": "Кольчужный элемент из четырёх адамантиевых крупиц. Нужен для рецептов адамантиевой кольчужной брони."
   },
   "ancient_metal_chain": {
     "mcmod_id": 773280,
-    "desc": "四个 远古金属粒 合成，用于合成远古金属锁链装备",
-    "desc_en": "Four ancient metal grains are synthesized, used to synthesize ancient metal chain equipment",
-    "desc_hu": "Négy ősi fémszemcsét készítenek, amelyeket ősi fémlánc-berendezések elkészítéséhez használnak",
-    "desc_ru": "Создаётся из четырёх крупиц древнего металла и используется для кольчужной экипировки из древнего металла."
+    "desc": "Chain component crafted from four ancient metal nuggets. Used for Ancient Metal chain armor recipes.",
+    "desc_en": "Chain component crafted from four ancient metal nuggets. Used for Ancient Metal chain armor recipes.",
+    "desc_hu": "Négy ősi fémrögből craftolható láncelem. Az Ancient Metal láncpáncél receptjeihez kell.",
+    "desc_ru": "Кольчужный элемент из четырёх крупиц древнего металла. Нужен для рецептов кольчужной брони из Ancient Metal."
   },
   "adamantium_block": {
     "mcmod_id": 773012,
@@ -1367,10 +1369,10 @@
   },
   "adamantium_coin": {
     "mcmod_id": 772946,
-    "desc": "由艾德曼粒合成得到，需要消耗10000XP经验，经验会在硬币合成为艾德曼粒时返还，相当于一个可以存储一定量经验的物品。 只能在艾德曼工作台合成。",
-    "desc_en": "It is synthesized from Adamantium grains and requires 10,000 XP experience. The experience will be returned when the coins are synthesized into Adamantium grains, which is equivalent to an item that can store a certain amount of experience. Can only be crafted at the Adamantium Workbench.",
-    "desc_hu": "Adamantium szemcsékből készítik, és 10 000 XP tapasztalat szükséges. Az élmény vissza fog térni, amikor az érméket Adamantium-szemcsékké alakítják, ami egy bizonyos mennyiségű tapasztalat tárolására alkalmas tárggyal egyenértékű. Csak az Adamantium Workbenchben készíthető.",
-    "desc_ru": "Создаётся из адамантиевых крупиц и требует 10 000 XP. Опыт возвращается при обратной переработке монеты в крупицы, поэтому предмет можно использовать как хранилище опыта. Крафтится только на адамантиевом верстаке."
+    "desc": "Adamantium coin crafted from one adamantium nugget. The current recipe uses the Adamantium Workbench.",
+    "desc_en": "Adamantium coin crafted from one adamantium nugget. The current recipe uses the Adamantium Workbench.",
+    "desc_hu": "Egy adamantiumrögből craftolható adamantium érme. A jelenlegi recept Adamantium munkaasztalt használ.",
+    "desc_ru": "Адамантиевая монета из одной адамантиевой крупицы. Текущий рецепт использует адамантиевый верстак."
   },
   "adamantium_ore": {
     "mcmod_id": 772950,
@@ -1440,20 +1442,29 @@
   },
   "ancient_metal_coin": {
     "mcmod_id": 772944,
-    "desc": "由远古金属粒合成得到，需要消耗500XP经验，经验会在硬币合成为远古金属粒时返还，相当于一个可以存储一定量经验的物品。 只能在硬石/远古金属/秘银/艾德曼工作台合成。",
-    "desc_en": "It is synthesized from Ancient Metal grains and requires 500 XP experience. The experience will be returned when the coins are synthesized into Ancient Metal grains, which is equivalent to an item that can store a certain amount of experience. Can only be crafted at the Hardstone, Ancient Metal, Mithril, or Adamantium Workbench.",
-    "desc_hu": "Ősi fémszemcsékből készül, és 500 XP tapasztalat szükséges hozzá. Az élmény visszajár, amikor az érmét újra ősi fémszemcsékké alakítod, így egy bizonyos mennyiségű élmény tárolására alkalmas tárgynak tekinthető. Csak Keménykő, Ancient Metal, Mithril vagy Adamantium munkaasztalon készíthető.",
-    "desc_ru": "Создаётся из крупиц древнего металла и требует 500 XP. Опыт возвращается при обратной переработке монеты в крупицы, поэтому предмет можно использовать как хранилище опыта. Крафтится только на твердокаменном, древнеметаллическом, мифриловом или адамантиевом верстаке."
+    "desc": "Ancient Metal coin crafted from one ancient metal nugget. The current recipe uses the Ancient Metal Workbench.",
+    "desc_en": "Ancient Metal coin crafted from one ancient metal nugget. The current recipe uses the Ancient Metal Workbench.",
+    "desc_hu": "Egy ősi fémrögből craftolható Ancient Metal érme. A jelenlegi recept Ancient Metal munkaasztalt használ.",
+    "desc_ru": "Монета Ancient Metal из одной крупицы древнего металла. Текущий рецепт использует верстак Ancient Metal."
   },
   "ancient_metal_nugget": {
     "mcmod_id": 772901,
-    "desc": "同MITE原版 远古金属粒 。 0.6.0版本调整： 移除9个远古金属粒合成一个远古金属锭的公式。 远古金属锭 只有在 大型熔炉 中熔炼远古金属粒或 远古金属装备 ，随后在 黑耀石模板 中冷却后获得。 远古金属粒的熔点为3550，按住shift即可显示熔点。",
+    "desc": "Ancient Metal nugget used for coins, chains, arrows, and Large Furnace metal processing. Local data still shows it as a recyclable sub-material rather than a simple direct-ingot step.",
     "versions": [
-      "0.6.0版本调整："
+      "v0.6.0: The direct 9 nuggets to 1 ingot recipe was removed."
     ],
-    "desc_en": "Same as MITE original ancient metal particles. Version 0.6.0 adjustment: Removed the formula for synthesizing 9 ancient metal nuggets into one ancient metal ingot. Ancient metal ingots can only be obtained by smelting ancient metal nuggets or ancient metal equipment in a large furnace and then cooling them in an obsidian template. The melting point of ancient metal particles is 3550. Hold down shift to display the melting point.",
-    "desc_hu": "Ugyanaz, mint a MITE eredeti ősi fémrészecskéi. A 0.6.0-s verzió módosítása: Eltávolítottuk a 9 ősi fémrög elkészítésának képletét egyetlen ősi fémrúdba. Ősi fémrúdokat csak úgy lehet előállítani, hogy ősi fémrögöket vagy ősi fémberendezéseket egy nagy kemencében megolvasztanak, majd egy obszidián sablonban lehűtik. Az ősi fémrészecskék olvadáspontja 3550. Tartsa lenyomva a shift gombot az olvadáspont megjelenítéséhez.",
-    "desc_ru": "То же, что и обычные частицы древнего металла из MITE. В версии 0.6.0 рецепт 9 самородков в 1 слиток убран. Слитки древнего металла теперь получают только переплавкой самородков или снаряжения из древнего металла в большой печи с последующим охлаждением в обсидиановой форме. Температура плавления частиц древнего металла: 3550."
+    "desc_en": "Ancient Metal nugget used for coins, chains, arrows, and Large Furnace metal processing. Local data still shows it as a recyclable sub-material rather than a simple direct-ingot step.",
+    "desc_hu": "Ősi fémrög, amely érmékhez, láncokhoz, nyilakhoz és a Nagy Kemence fémfeldolgozási útvonalához kell. A helyi adatok szerint inkább újrahasznosítható köztes anyag, nem egyszerű közvetlen ingot-lépcső.",
+    "desc_ru": "Крупица Ancient Metal для монет, цепей, стрел и линии переработки металлов через Большую печь. По локальным данным это скорее промежуточный перерабатываемый материал, а не простой прямой шаг к слитку.",
+    "versions_en": [
+      "v0.6.0: The direct 9 nuggets to 1 ingot recipe was removed."
+    ],
+    "versions_hu": [
+      "v0.6.0: Kikerült a közvetlen 9 rög -> 1 rúd recept."
+    ],
+    "versions_ru": [
+      "v0.6.0: Прямой рецепт 9 крупиц -> 1 слиток был удалён."
+    ]
   },
   "ancient_metal_shovel": {
     "mcmod_id": 773557,
@@ -1473,15 +1484,17 @@
   },
   "bamboo": {
     "mcmod_id": 771994,
-    "desc": "在丛林生长，该物品主要用于制作斗笠，可种植在地面上，生长规则与甘蔗相同。竹子长度达到9格时，会停止生长。",
-    "desc_en": "Growing in the jungle, this item is mainly used to make bucket hats and can be planted on the ground. The growth rules are the same as sugar cane. Bamboo will stop growing when its length reaches 9 blocks.",
-    "desc_hu": "A dzsungelben növő elemet főként vödörsapkák készítésére használják, és a földre is ültethető. A növekedési szabályok ugyanazok, mint a cukornád esetében. A bambusz növekedése leáll, ha hossza eléri a 9 blokkot."
+    "desc": "Jungle plant used mainly for bucket hats and similar recipes. It can be planted on the ground and grows like sugar cane, stopping at about 9 blocks tall.",
+    "desc_en": "Jungle plant used mainly for bucket hats and similar recipes. It can be planted on the ground and grows like sugar cane, stopping at about 9 blocks tall.",
+    "desc_hu": "Dzsungelnövény, amely főleg vödörsapkához és hasonló receptekhez kell. A földre ültethető, cukornádhoz hasonlóan nő, és nagyjából 9 blokk magasságnál megáll.",
+    "desc_ru": "Растение джунглей, используемое в основном для шляп и похожих рецептов. Сажается на землю, растёт как сахарный тростник и останавливается примерно на высоте 9 блоков."
   },
   "banana_leaves": {
     "mcmod_id": 772048,
-    "desc": "手持剪刀右击香蕉树叶可获得，香蕉树只会在丛林地区生成。",
-    "desc_en": "You can get it by right-clicking on a banana leaf while holding scissors. Banana trees only spawn in jungle areas.",
-    "desc_hu": "Megszerezheti, ha ollót fogva jobb gombbal rákattint egy banánlevélre. A banánfák csak dzsungelben ívnak."
+    "desc": "Banana tree leaves collected with shears. Banana trees generate in jungle areas.",
+    "desc_en": "Banana tree leaves collected with shears. Banana trees generate in jungle areas.",
+    "desc_hu": "Ollóval begyűjthető banánfalevelek. A banánfák dzsungelterületeken jelennek meg.",
+    "desc_ru": "Листья бананового дерева, собираемые ножницами. Банановые деревья генерируются в джунглях."
   },
   "barrel": {
     "mcmod_id": 784541,
@@ -1499,15 +1512,17 @@
   },
   "birch_fence": {
     "mcmod_id": 772188,
-    "desc": "此段资料引用于“ 木栅栏 (Fence) ”并与其保持同步更新。 编辑 等同于原版 栅栏 ， 不同材料（橡木/白桦木/丛林木/云杉木）合成不同材质的木栅栏。",
-    "desc_en": "This information is quoted from \"Fence\" and is updated synchronously with it. Edit Equivalent to the original fence, different materials (oak/birch/jungle wood/spruce) can be synthesized into wooden fences of different materials.",
-    "desc_hu": "Ez az információ a \"Kerítés\"-ből származik, és azzal szinkronban frissül. Szerkesztés Az eredeti kerítéssel egyenértékű különböző anyagok (tölgy/nyír/dzsungelfa/luc) elkészíthetők különböző anyagú fa kerítésekké."
+    "desc": "Birch fence variant. Functionally it follows the standard wooden fence behavior.",
+    "desc_en": "Birch fence variant. Functionally it follows the standard wooden fence behavior.",
+    "desc_hu": "Nyírfa kerítésváltozat. Működésében a szokásos fakerítést követi.",
+    "desc_ru": "Вариант берёзового забора. По функции соответствует обычному деревянному забору."
   },
   "birch_fence_gate": {
     "mcmod_id": 772192,
-    "desc": "此段资料引用于“ 木栅栏门 (Fence Gate) ”并与其保持同步更新。 编辑 等同于原版 栅栏门 ，不同材料（橡木/白桦木/丛林木/云杉木）合成不同材质的木栅栏门。",
-    "desc_en": "This information is quoted from \"Fence Gate\" and is updated synchronously with it. Edit: Equivalent to the original fence door. Different materials (oak/birch/jungle wood/spruce) can be used to synthesize wooden fence doors of different materials.",
-    "desc_hu": "Ez az információ a „Kerítéskapu”-ból származik, és azzal szinkronban frissül. Szerk.: Az eredeti kerítésajtóval egyenértékű. Különböző anyagok (tölgy/nyír/dzsungelfa/luc) használhatók különböző anyagokból készült fa kerítésajtók elkészítéséhez."
+    "desc": "Birch fence gate variant. Functionally it follows the standard wooden fence gate behavior.",
+    "desc_en": "Birch fence gate variant. Functionally it follows the standard wooden fence gate behavior.",
+    "desc_hu": "Nyírfa kerítéskapu-változat. Működésében a szokásos fa kerítéskaput követi.",
+    "desc_ru": "Вариант берёзовой калитки. По функции соответствует обычной деревянной калитке."
   },
   "birch_sieve": {
     "mcmod_id": 772158,
@@ -1523,32 +1538,47 @@
   },
   "blue_compass": {
     "mcmod_id": 446698,
-    "desc": "用于标记地点，在需要标记的地点按住Shift+右键即可标记，标记成功后指针会永远指向标记地点；玩家进入地下世界和地狱会导致指南针失灵。",
-    "desc_en": "Used to mark a location. Press and hold Shift+right key at the location to be marked. After successful marking, the pointer will always point to the marked location. Players entering the underground world and hell will cause the compass to malfunction.",
-    "desc_hu": "Hely megjelölésére szolgál. Nyomja meg és tartsa lenyomva a Shift+jobb billentyűt a megjelölni kívánt helyen. Sikeres jelölés után a mutató mindig a megjelölt helyre mutat. A földalatti világba és a pokolba belépő játékosok az iránytű hibás működését okozzák."
+    "desc": "Compass that can bind to a marked location with Shift + right-click. It points to that spot afterwards, but does not work reliably in the Underground or Nether.",
+    "desc_en": "Compass that can bind to a marked location with Shift + right-click. It points to that spot afterwards, but does not work reliably in the Underground or Nether.",
+    "desc_hu": "Iránytű, amely Shift + jobb kattintással egy kijelölt helyhez köthető. Ezután oda mutat, de a Földalattiban és a Netherben nem működik megbízhatóan.",
+    "desc_ru": "Компас, который можно привязать к отмеченной точке через Shift + ПКМ. После этого он указывает на неё, но в Подземном мире и Нижнем мире работает ненадёжно."
   },
   "bone_club": {
     "mcmod_id": 811570,
-    "desc": "0.5.9版本新增，攻击伤害+2，可以格挡，耐久值为120点。 0.6.0版本调整，攻击伤害+4，耐久值改为550点。 制作不同品质的骨棒所需的经验值： 普通 优秀 骨棒 0 100",
+    "desc": "Primitive bone club weapon with blocking. In the modern balance state it deals 4 damage and has 550 durability.",
     "versions": [
-      "0.5.9版本新增，攻击伤害+2，可以格挡，耐久值为120点",
-      "0.6.0版本调整，攻击伤害+4，耐久值改为550点"
+      "v0.5.9: Added as a weaker 2-damage, 120-durability weapon.",
+      "v0.6.0: Raised to 4 damage and 550 durability."
     ],
-    "desc_en": "Bone rod added in v0.5.9. In v0.6.0 it was adjusted to 4 attack damage and 550 durability.",
-    "desc_hu": "A csontbot a v0.5.9-ben került be. A v0.6.0-ban 4 sebzésre és 550 tartósságra módosult.",
-    "desc_ru": "Костяной жезл добавлен в v0.5.9. В v0.6.0 его изменили до 4 урона и 550 прочности."
+    "desc_en": "Primitive bone club weapon with blocking. In the modern balance state it deals 4 damage and has 550 durability.",
+    "desc_hu": "Kezdetleges csontfegyver blokkolással. A jelenlegi egyensúlyi állapotban 4 sebzést okoz és 550 tartóssága van.",
+    "desc_ru": "Примитивное костяное оружие с возможностью блокирования. В текущем балансе наносит 4 урона и имеет 550 прочности.",
+    "versions_en": [
+      "v0.5.9: Added as a weaker 2-damage, 120-durability weapon.",
+      "v0.6.0: Raised to 4 damage and 550 durability."
+    ],
+    "versions_hu": [
+      "v0.5.9: Gyengébb, 2 sebzésű és 120 tartósságú fegyverként került be.",
+      "v0.6.0: 4 sebzésre és 550 tartósságra erősödött."
+    ],
+    "versions_ru": [
+      "v0.5.9: Добавлено как более слабое оружие с 2 уроном и 120 прочности.",
+      "v0.6.0: Усилено до 4 урона и 550 прочности."
+    ]
   },
   "bottle_of_disenchanting": {
     "mcmod_id": 773788,
-    "desc": "又译“清醒药剂”，用 水瓶 、 地狱疣 和 煤炭 合成。 可以在任何一种砧上消耗一瓶对一个任意附魔装备、武器或者工具进行祛魔，也可以喝下用来解除女巫的诅咒。 此外，饮用祛魔之瓶会像饮用 牛奶 一样清除玩家持有的所有药水效果。",
-    "desc_en": "Also translated as \"Sobriety Potion\", it is crafted with Water Bottle, Nether Wart and Coal. A vial can be consumed on any anvil to disenchant any enchanted piece of equipment, weapon, or tool, or it can be drunk to lift a witch's curse. Additionally, drinking the Exorcist Bottle will remove all potion effects from the player's possession, just like drinking milk.",
-    "desc_hu": "\"Józanító bájitalnak\" is fordítják, vízpalackból, Nether Wartból és szénből készült. Egy fiolát bármelyik üllőn el lehet fogyasztani, hogy elvarázsoljon bármilyen elvarázsolt felszerelést, fegyvert vagy szerszámot, vagy megihat egy boszorkány átkát. Ezenkívül az Ördögűző üveg elfogyasztása eltávolítja a játékos birtokából az összes bájital hatást, akárcsak a tejivás."
+    "desc": "Disenchanting bottle crafted from a water bottle, nether wart, and coal. It can remove enchantments on an anvil or clear potion effects when drunk.",
+    "desc_en": "Disenchanting bottle crafted from a water bottle, nether wart, and coal. It can remove enchantments on an anvil or clear potion effects when drunk.",
+    "desc_hu": "Leszedő üveg vízpalackból, nether wartból és szénből. Üllőn varázsok eltávolítására használható, megiva pedig letisztítja a bájitalhatásokat.",
+    "desc_ru": "Флакон снятия чар из пузырька воды, адского нароста и угля. На наковальне снимает зачарования, а при выпивании очищает эффекты зелий."
   },
   "brick": {
     "mcmod_id": 779558,
-    "desc": "同原版 红砖 ，可投掷。 投掷伤害+1。",
-    "desc_en": "Same as the original Red Brick, can be thrown. Throwing damage +1.",
-    "desc_hu": "Ugyanaz, mint az eredeti Red Brick, dobható. Dobási sebzés +1."
+    "desc": "Red brick item that can also be thrown as a weak projectile. Throw damage: 1.",
+    "desc_en": "Red brick item that can also be thrown as a weak projectile. Throw damage: 1.",
+    "desc_hu": "Vörös tégla item, amely gyenge lövedékként el is dobható. Dobási sebzés: 1.",
+    "desc_ru": "Предмет красного кирпича, который можно бросать как слабый снаряд. Урон при броске: 1."
   },
   "bronze_war_hammer": {
     "mcmod_id": 777291,
@@ -1558,9 +1588,10 @@
   },
   "carbon_crystal": {
     "mcmod_id": 777338,
-    "desc": "生长在岩浆附近的碳晶矿物，采集后直接获得碳晶，受时运和精准影响。 刷新机制： 主世界30格以下的岩浆附近刷新； 每次刷新2个。",
-    "desc_en": "Carbon crystal minerals grow near magma. Carbon crystals are obtained directly after collection, which is affected by luck and accuracy. Refresh mechanism: Refresh near the magma below 30 blocks in the main world; 2 are refreshed each time.",
-    "desc_hu": "A magma közelében szénkristály ásványok nőnek. A szénkristályokat közvetlenül a begyűjtés után nyerik, amit a szerencse és a pontosság befolyásol. Frissítési mechanizmus: Frissítés a magma közelében, 30 blokk alatt a fővilágban; 2 minden alkalommal frissül."
+    "desc": "Carbon crystal deposit that appears near magma in the overworld, generally below about Y30. Mining it gives carbon crystal directly, with fortune and silk-touch style effects influencing the result.",
+    "desc_en": "Carbon crystal deposit that appears near magma in the overworld, generally below about Y30. Mining it gives carbon crystal directly, with fortune and silk-touch style effects influencing the result.",
+    "desc_hu": "Magma közelében megjelenő szénkristály-lerakódás a fővilágban, általában nagyjából Y30 alatt. Kibányászva közvetlenül szénkristályt ad, az eredményt pedig a fortune és a silk-touch jellegű hatások befolyásolják.",
+    "desc_ru": "Залежь углеродного кристалла, появляющаяся рядом с магмой в обычном мире, обычно ниже примерно Y30. При добыче сразу даёт углеродный кристалл, а результат зависит от эффектов удачи и аналога шёлкового касания."
   },
   "cauldron": {
     "mcmod_id": 777347,
@@ -1613,30 +1644,43 @@
   },
   "chicken_soup": {
     "mcmod_id": 772970,
-    "desc": "用洋葱、胡萝卜、熟鸡肉和一碗水合成。 饥饿值 饱和度 蛋白质 植物营养 水分 鸡肉汤 10点（ ） 10点（ ） 50% 50% 4",
-    "desc_en": "Crafted from onions, carrots, cooked chicken, and a bowl of water. Hunger value saturation protein plant nutrition moisture chicken soup 10 points ( ) 10 points ( ) 50% 50% 4",
-    "desc_hu": "Hagymából, sárgarépából, főtt csirkéből és egy tál vízből készült. Éhségérték telítettség fehérje növény táplálkozás nedvesség csirkeleves 10 pont ( ) 10 pont ( ) 50% 50% 4"
+    "desc": "Soup made from onion, carrot, cooked chicken, and a bowl of water. A strong early mixed-nutrition meal.",
+    "desc_en": "Soup made from onion, carrot, cooked chicken, and a bowl of water. A strong early mixed-nutrition meal.",
+    "desc_hu": "Hagymából, répából, főtt csirkéből és egy tál vízből készült leves. Erős korai, vegyes tápértékű étel.",
+    "desc_ru": "Суп из лука, моркови, приготовленной курицы и миски воды. Сытная ранняя еда со смешанной питательностью."
   },
   "chocolate": {
     "mcmod_id": 772964,
-    "desc": "用糖和可可豆合成，是前期容易获得的食物之一，但很容易食用过量，造成胰岛素抵抗。 饥饿值 饱和度 糖分 胰岛素反应 水分 巧克力 3点（ ） 3点（ ） 1000 3.33% -1",
-    "desc_en": "Synthesized from sugar and cocoa beans, it is one of the foods that is easily available in the early stage, but it is easy to overdose and cause insulin resistance. Hunger value Saturation Sugar Insulin response Moisture Chocolate 3 points ( ) 3 points ( ) 1000 3.33% -1",
-    "desc_hu": "Cukorból és kakaóbabból szintetizálva a korai stádiumban könnyen beszerezhető, de könnyen túladagolható, inzulinrezisztenciát okozó élelmiszerek közé tartozik. Éhségérték Telítettség Cukor Inzulin válasz Nedvesség Csokoládé 3 pont ( ) 3 pont ( ) 1000 3,33% -1"
+    "desc": "Simple sweet food crafted from sugar and cocoa beans. Easy to obtain early, but mainly a sugar-heavy snack.",
+    "desc_en": "Simple sweet food crafted from sugar and cocoa beans. Easy to obtain early, but mainly a sugar-heavy snack.",
+    "desc_hu": "Egyszerű édes étel cukorból és kakaóbabból. Korán könnyen megszerezhető, de főleg cukros nasi.",
+    "desc_ru": "Простая сладкая еда из сахара и какао-бобов. Легко добывается в начале игры, но это в основном сахарный перекус."
   },
   "clock": {
     "mcmod_id": 785124,
-    "desc": "本作中作为饰品，装备后可以在游戏左上角能够显示时间和天数。 0.9.0版本，需要获得对应的 知识书 解锁权限才能合成。",
+    "desc": "Accessory clock that shows the current time and day while equipped. In 0.9.0 its recipe is tied to the related knowledge book unlock.",
     "versions": [
-      "0.9.0版本，需要获得对应的"
+      "v0.9.0: Crafting the clock requires its knowledge-book unlock."
     ],
-    "desc_en": "As an accessory in this game, when equipped, the time and day can be displayed in the upper left corner of the game. For version 0.9.0, you need to obtain the corresponding knowledge book to unlock the permission to craft it.",
-    "desc_hu": "Ebben a játékban kiegészítőként, ha fel van szerelve, a játék bal felső sarkában megjeleníthető az idő és a nap. A 0.9.0-s verzió esetén be kell szereznie a megfelelő tudáskönyvet, hogy feloldja a létrehozási engedélyt."
+    "desc_en": "Accessory clock that shows the current time and day while equipped. In 0.9.0 its recipe is tied to the related knowledge book unlock.",
+    "desc_hu": "Kiegészítő óra, amely felszerelve mutatja az aktuális időt és napot. A 0.9.0-ban a receptje a kapcsolódó tudáskönyv-feloldáshoz kötött.",
+    "desc_ru": "Аксессуар-часы, показывающие текущее время и день, пока надеты. В 0.9.0 их рецепт привязан к разблокировке через книгу знаний.",
+    "versions_en": [
+      "v0.9.0: Crafting the clock requires its knowledge-book unlock."
+    ],
+    "versions_hu": [
+      "v0.9.0: Az óra craftjához kell a hozzá tartozó tudáskönyv-feloldás."
+    ],
+    "versions_ru": [
+      "v0.9.0: Для крафта часов нужна разблокировка через соответствующую книгу знаний."
+    ]
   },
   "coconut_leaves": {
     "mcmod_id": 772049,
-    "desc": "手持剪刀右击椰树叶可获得，椰树只会在丛林地区生成。",
-    "desc_en": "You can get it by right-clicking on a coconut leaf with scissors. Coconut trees only spawn in jungle areas.",
-    "desc_hu": "Egy kókuszlevélre jobb gombbal ollóval kaphatod meg. A kókuszfák csak dzsungelben ívnak."
+    "desc": "Coconut tree leaves collected with shears. Coconut trees generate in jungle areas.",
+    "desc_en": "Coconut tree leaves collected with shears. Coconut trees generate in jungle areas.",
+    "desc_hu": "Ollóval begyűjthető kókuszpálma-levelek. A kókuszfák dzsungelterületeken jelennek meg.",
+    "desc_ru": "Листья кокосовой пальмы, собираемые ножницами. Кокосовые деревья генерируются в джунглях."
   },
   "copper_block": {
     "mcmod_id": 773006,
@@ -1646,9 +1690,10 @@
   },
   "copper_coin": {
     "mcmod_id": 772941,
-    "desc": "由铜粒合成得到，需要消耗5XP经验，经验会在硬币合成为铜粒时返还，相当于一个可以存储一定量经验的物品。 无法在燧石工具台或黑曜石工具台合成。",
-    "desc_en": "It is synthesized from copper nuggets and requires 5XP experience. The experience will be returned when the coins are synthesized into copper nuggets, which is equivalent to an item that can store a certain amount of experience. Cannot be crafted at a Flint Tool Bench or Obsidian Toolbench.",
-    "desc_hu": "Rézrögökből készítik, és 5XP tapasztalat szükséges. Az élmény vissza fog térni, amikor az érméket rézrögökké készítik, ami egyenértékű egy bizonyos mennyiségű élmény tárolására alkalmas elemmel. Nem készíthető Flint Tool Padon vagy Obsidian Tool Padon."
+    "desc": "Copper coin crafted from one copper nugget. The current recipe uses the Flint Workbench.",
+    "desc_en": "Copper coin crafted from one copper nugget. The current recipe uses the Flint Workbench.",
+    "desc_hu": "Egy rézrögből craftolható rézérme. A jelenlegi recept Kovakő munkaasztalt használ.",
+    "desc_ru": "Медная монета из одного медного самородка. Текущий рецепт использует кремнёвый верстак."
   },
   "copper_ore": {
     "mcmod_id": 772947,
@@ -1671,15 +1716,17 @@
   },
   "dahlia": {
     "mcmod_id": 773799,
-    "desc": "大丽花可合成 粉红色染料 ，在沼泽地区可以找到，对 草方块 用 骨粉 也有几率可以得到（无视生物群系）。",
-    "desc_en": "Dahlias can be used to craft pink dye, which can be found in swamp areas and has a chance to be obtained by using bone meal on grass blocks (regardless of the biome).",
-    "desc_hu": "A dáliákból rózsaszín festéket lehet készíteni, amely mocsaras területeken található, és füves tömbökön csontliszttel is előállítható (életközösségtől függetlenül)."
+    "desc": "Flower used for pink dye. It appears in swamps and can also come from bonemealed grass.",
+    "desc_en": "Flower used for pink dye. It appears in swamps and can also come from bonemealed grass.",
+    "desc_hu": "Rózsaszín festékhez használható virág. Mocsarakban jelenik meg, és csontlisztezett fűből is származhat.",
+    "desc_ru": "Цветок для розового красителя. Появляется в болотах и может выпадать из травы после костной муки."
   },
   "daisy": {
     "mcmod_id": 773802,
-    "desc": "外观与原版1.7.2首次出现的 滨菊 一样。 滨菊在除了沼泽和丛林外的其他生物群系都能找到，也可以通过对 草方块 使用 骨粉 获得（有概率，无视生物群系），可以用来合成 淡灰色染料 。",
-    "desc_en": "The appearance is the same as Binju, which first appeared in vanilla 1.7.2. Binju can be found in other biomes except swamps and jungles. It can also be obtained by using bone meal on grass blocks (with probability, regardless of biome), and can be used to craft light gray dye.",
-    "desc_hu": "A megjelenés ugyanaz, mint a Binju, amely először a vanília 1.7.2-ben jelent meg. A binju a mocsarak és dzsungelek kivételével más életközösségekben is megtalálható. Úgy is beszerezhető, hogy csontlisztet használnak fűtömbökön (valószínűséggel, életközösségtől függetlenül), és világosszürke festék készítésére is használható."
+    "desc": "Daisy-like flower used for light gray dye. It appears in many biomes outside swamps and jungles, and can also come from bonemealed grass.",
+    "desc_en": "Daisy-like flower used for light gray dye. It appears in many biomes outside swamps and jungles, and can also come from bonemealed grass.",
+    "desc_hu": "Margarétaszerű virág világosszürke festékhez. Sok biomon megjelenik a mocsarak és dzsungelek kivételével, és csontlisztezett fűből is származhat.",
+    "desc_ru": "Цветок в стиле ромашки для светло-серого красителя. Появляется во многих биомах вне болот и джунглей, а также может выпадать из травы после костной муки."
   },
   "diamond_shard": {
     "mcmod_id": 772906,
@@ -1695,9 +1742,10 @@
   },
   "dough": {
     "mcmod_id": 772977,
-    "desc": "用水和面粉合成得到，可以烤成面包，也可以直接食用。 饥饿值 饱和度 面团 2点（ ） 6点（ ）",
-    "desc_en": "It is synthesized from water and flour and can be baked into bread or eaten directly. Hunger value saturation level dough 2 points ( ) 6 points ( )",
-    "desc_hu": "Vízből és lisztből készítik, és kenyérbe süthető vagy közvetlenül fogyasztható. Éhségérték telítettségi szintű tészta 2 pont ( ) 6 pont ( )"
+    "desc": "Basic dough made from water and flour. It can be baked into bread or eaten directly in an emergency.",
+    "desc_en": "Basic dough made from water and flour. It can be baked into bread or eaten directly in an emergency.",
+    "desc_hu": "Alaptészta vízből és lisztből. Kenyérré süthető, vagy végszükségben közvetlenül is megehető.",
+    "desc_ru": "Базовое тесто из воды и муки. Его можно испечь в хлеб или съесть напрямую в крайнем случае."
   },
   "emerald_shard": {
     "mcmod_id": 772905,
@@ -1707,15 +1755,17 @@
   },
   "empty_antique_atlas": {
     "mcmod_id": 779580,
-    "desc": "手持空古式地图右键可获得 古式地图 ，空古式地图有10%的概率出现在地下世界的远古骷髅刷怪笼内。",
-    "desc_en": "Right-click on the empty ancient map to obtain the ancient map. The empty ancient map has a 10% probability of appearing in the ancient skeleton monster spawner in the underground world.",
-    "desc_hu": "Kattintson a jobb gombbal az üres ősi térképre, hogy megkapja az ősi térképet. Az üres ősi térkép 10%-os valószínűséggel jelenik meg a földalatti világ ősi csontváza szörnyszülöttében."
+    "desc": "Empty antique atlas that becomes a usable antique map when right-clicked. It appears as rare loot in some Underground structures.",
+    "desc_en": "Empty antique atlas that becomes a usable antique map when right-clicked. It appears as rare loot in some Underground structures.",
+    "desc_hu": "Üres antik atlasz, amely jobb kattintásra használható antik térképpé válik. Ritka zsákmányként jelenik meg egyes földalatti struktúrákban.",
+    "desc_ru": "Пустой старинный атлас, который по ПКМ превращается в рабочую старинную карту. Редко встречается как лут в некоторых подземных структурах."
   },
   "empty_map": {
     "mcmod_id": 780400,
-    "desc": "功能同原版的 探险家地图 ，加入了新的合成方式。",
-    "desc_en": "The functions are the same as the original Explorer Map, with a new crafting method added.",
-    "desc_hu": "A funkciók megegyeznek az eredeti Explorer Map funkcióival, egy új szerkesztési módszerrel."
+    "desc": "Empty map item used to create a normal map. Local data treats it as the blank form for the map-copying and map-opening flow.",
+    "desc_en": "Empty map item used to create a normal map. Local data treats it as the blank form for the map-copying and map-opening flow.",
+    "desc_hu": "Üres térkép, amelyből normál térkép készül. A helyi adatok a térképnyitás és térképmásolás üres alapformájaként kezelik.",
+    "desc_ru": "Пустая карта, из которой создаётся обычная карта. В локальных данных это пустая форма для открытия и копирования карт."
   },
   "enchantment_table_emerald": {
     "mcmod_id": 772039,
@@ -1739,9 +1789,10 @@
   },
   "fish_ball": {
     "mcmod_id": 444013,
-    "desc": "鱼丸由两条生鱼或生鲑鱼合成，食用后有额外效果。 饥饿值 饱和度 糖分 蛋白质 胰岛素反应 水分 鱼丸 6点（ ） 6点（ ） 100 30% 0.33% -1",
-    "desc_en": "Fish balls are made from two pieces of raw fish or raw salmon, and have additional effects after being consumed. Hunger value Saturation Sugar Protein Insulin response Water Fish balls 6 points ( ) 6 points ( ) 100 30% 0.33% -1",
-    "desc_hu": "A halgolyók két darab nyers halból vagy nyers lazacból készülnek, és fogyasztásuk után további hatást fejtenek ki. Éhségérték Telítettség Cukor Fehérje Inzulin válasz Víz Halgolyók 6 pont ( ) 6 pont ( ) 100 30% 0,33% -1"
+    "desc": "Food made from two raw fish or raw salmon. A compact protein-focused early meal.",
+    "desc_en": "Food made from two raw fish or raw salmon. A compact protein-focused early meal.",
+    "desc_hu": "Két nyers halból vagy nyers lazacból készülő étel. Tömör, fehérjeközpontú korai fogás.",
+    "desc_ru": "Еда из двух сырых рыб или сырого лосося. Компактная ранняя пища с упором на белок."
   },
   "flint_and_steel": {
     "mcmod_id": 802093,
@@ -1825,10 +1876,10 @@
   },
   "gold_coin": {
     "mcmod_id": 772943,
-    "desc": "由金粒合成得到，需要消耗100XP经验，经验会在硬币合成为金粒时返还，相当于一个可以存储一定量经验的物品。 无法在燧石工具台或黑曜石工具台合成。",
-    "desc_en": "It is synthesized from gold grains and requires 100XP experience. The experience will be returned when the coins are synthesized into gold grains, which is equivalent to an item that can store a certain amount of experience. Cannot be crafted at a Flint Tool Bench or Obsidian Toolbench.",
-    "desc_hu": "Aranyszemcsékből készítik és 100XP tapasztalatot igényel. Az élmény visszaadható, amikor az érméket aranyszemcsékké készítik, ami egyenértékű egy bizonyos mennyiségű élmény tárolására alkalmas tárgynak. Nem készíthető Flint Tool Padon vagy Obsidian Tool Padon.",
-    "desc_ru": "Создаётся из золотых крупиц и требует 100 XP. Опыт возвращается при обратной переработке монеты в крупицы, поэтому предмет можно использовать как хранилище опыта. Не крафтится на кремнёвом или обсидиановом верстаке."
+    "desc": "Gold coin crafted from one gold nugget. The current recipe uses the Flint Workbench.",
+    "desc_en": "Gold coin crafted from one gold nugget. The current recipe uses the Flint Workbench.",
+    "desc_hu": "Egy aranyrögből craftolható aranyérme. A jelenlegi recept Kovakő munkaasztalt használ.",
+    "desc_ru": "Золотая монета из одного золотого самородка. Текущий рецепт использует кремнёвый верстак."
   },
   "gold_shovel": {
     "mcmod_id": 773555,
@@ -1887,27 +1938,48 @@
   },
   "hardstone_coin": {
     "mcmod_id": 771981,
-    "desc": "由硬石粒合成得到，需要消耗300XP经验，经验会在硬币合成为硬石粒时返还，相当于一个可以存储一定量经验的物品。 只能在硬石/远古金属/秘银/艾德曼工作台合成。",
-    "desc_en": "Crafted from Hardstone grains and costs 300 XP. Converting the coin back returns the stored experience, so it functions as a simple XP storage item. Local item docs still describe it as craftable on Hardstone, Ancient Metal, Mithril, or Adamantium workbenches.",
-    "desc_hu": "Keménykőszemcsékből készül, és 300 XP-be kerül. Visszaalakításkor a tárolt tapasztalat visszajár, ezért egyszerű XP-tároló tárgyként működik. A helyi item-doksik szerint Keménykő, Ancient Metal, Mithril vagy Adamantium munkaasztalon készíthető."
+    "desc": "Hardstone coin crafted from one hardstone nugget. The current recipe uses the Flint Workbench.",
+    "desc_en": "Hardstone coin crafted from one hardstone nugget. The current recipe uses the Flint Workbench.",
+    "desc_hu": "Egy keménykőrögből craftolható keménykő érme. A jelenlegi recept Kovakő munkaasztalt használ.",
+    "desc_ru": "Монета из твердокамня из одной твердокаменной крупицы. Текущий рецепт использует кремнёвый верстак."
   },
   "hardstone_nugget": {
     "mcmod_id": 446691,
-    "desc": "直接破坏 沙砾 有12%几率（使用 木筛 为80%）获得金属粒之一。 9个硬石粒可以合成一个硬石锭，也可合成 硬石币 储存经验。 0.6.0版本调整： 移除9个硬石粒合成一个硬石锭的公式。 硬石锭 只有在 大型熔炉 中熔炼硬石矿或硬石粒，随后在 黑耀石模板 中冷却后获得。 硬石矿和硬石粒的熔点都为3550，按住shift即可显示熔点。",
+    "desc": "Hardstone nugget obtained from gravel processing and hardstone recycling routes. It also feeds the hardstone coin and Large Furnace processing chain.",
     "versions": [
-      "0.6.0版本调整："
+      "v0.6.0: The direct 9 nuggets to 1 ingot recipe was removed."
     ],
-    "desc_en": "直接破坏 沙砾 有12%几率（使用 木筛 为80%）获得金属粒之一。 9个硬石粒可以合成一个硬石锭，也可合成 硬石币 储存经验。 Version 0.6.0 adjustment: Removed the formula for synthesizing 9 Hardstone grains into one Hardstone ingot. 硬石锭 只有在 大型熔炉 中熔炼硬石矿或硬石粒，随后在 黑耀石模板 中冷却后获得。 硬石矿和硬石粒的熔点都为3550，按住shift即可显示熔点。",
-    "desc_hu": "直接破坏 沙砾 有12%几率（使用 木筛 为80%）获得金属粒之一. 9个硬石粒可以合成一个硬石锭，也可合成 硬石币 储存经验。 0.6.0 keménykő a szinkronbeállításhoz: A képlet 9-es verziója a kőbeállításhoz eltávolítva. ingot. 硬石锭 只有在 大型熔炉 中熔炼硬石矿或硬石粒，随后在 】耀石模李 中巀石模李 中巀石模李 中型熔炉硬石矿和硬石粒的熔点都为3550，按住shift即可显示熔点."
+    "desc_en": "Hardstone nugget obtained from gravel processing and hardstone recycling routes. It also feeds the hardstone coin and Large Furnace processing chain.",
+    "desc_hu": "Keménykőrög, amely kavicsfeldolgozásból és hardstone újrahasznosításból származhat. A keménykő érme és a Nagy Kemence feldolgozási láncának is alapanyaga.",
+    "desc_ru": "Твердокаменная крупица из обработки гравия и путей переработки hardstone. Также используется для монеты из твердокамня и линии обработки через Большую печь.",
+    "versions_en": [
+      "v0.6.0: The direct 9 nuggets to 1 ingot recipe was removed."
+    ],
+    "versions_hu": [
+      "v0.6.0: Kikerült a közvetlen 9 rög -> 1 rúd recept."
+    ],
+    "versions_ru": [
+      "v0.6.0: Прямой рецепт 9 крупиц -> 1 слиток был удалён."
+    ]
   },
   "hardstone_ore": {
     "mcmod_id": 771999,
-    "desc": "外观和煤矿石相似，可在 石熔炉 及以上用至少热值为2的燃料（煤炭、煤炭块）熔炼成 硬石锭 。 0.6.0版本调整： 硬石锭 只有在 大型熔炉 中熔炼硬石矿或 硬石粒 ，随后在 黑耀石模板 中冷却后获得。 硬石矿和硬石粒的熔点都为3550，按住shift即可显示熔点。 硬石矿和 硬石战锤 可以在对应等级工作台上合成硬石粒。 刷新机制： 地下世界全部范围随机刷新； 主世界24格以下随机刷新； 每次刷新1-5个。",
+    "desc": "Hardstone ore found in the Underground and deep overworld layers. In local 0.6.0+ data, hardstone is routed through nugget processing and the Large Furnace plus Obsidian Template path.",
     "versions": [
-      "0.6.0版本调整："
+      "v0.6.0: Hardstone ingots switched to the Large Furnace plus Obsidian Template route."
     ],
-    "desc_en": "Similar in appearance to coal ore, it can be smelted into Hardstone ingots in a Stone Furnace or above using fuel (coal, coal blocks) with a calorific value of at least 2. Version 0.6.0 adjustment: Hardstone Ingots can only be obtained by smelting Hardstone Ore or Hardstone Nuggets in a Large Furnace and then cooling them in an Obsidian Template. The melting point of Hardstone ore and Hardstone particles is 3550. Hold down shift to display the melting point. Hardstone Ore and Hardstone Warhammer can be used to synthesize Hardstone grains on the workbench of the corresponding level. Refresh mechanism: The entire underground world is randomly refreshed; the main world is randomly refreshed below 24 blocks; 1-5 are refreshed each time.",
-    "desc_hu": "Megjelenésében a szénérchez hasonlóan keménykő tuskóba olvasztható kőkemencében vagy magasabb szinten olyan tüzelőanyag (szén, szénblokkok) felhasználásával, amelynek fűtőértéke legalább 2. 0.6.0-s verzió beállítás: Keménykő ingots csak úgy nyerhető, ha Keménykő Ore vagy Keménykő Nuggetsben olvasztja őket Obsidian Templomban, majd Largening Nuggetsében. A keménykőzetérc és a keménykő részecskék olvadáspontja 3550. Tartsa lenyomva a shift gombot az olvadáspont megjelenítéséhez. A Keménykő Ore és a Keménykő Warhammer keménykőszemcsék elkészítéséhez használható a megfelelő szintű munkapadon. Frissítési mechanizmus: Az egész földalatti világ véletlenszerűen frissül; a fővilág véletlenszerűen frissül 24 blokk alatt; Minden alkalommal 1-5 frissül."
+    "desc_en": "Hardstone ore found in the Underground and deep overworld layers. In local 0.6.0+ data, hardstone is routed through nugget processing and the Large Furnace plus Obsidian Template path.",
+    "desc_hu": "Keménykőérc, amely a Földalattiban és a mélyebb felszíni rétegekben található. A helyi 0.6.0+ adatokban a hardstone rögfeldolgozáson és a Nagy Kemence + Obszidián Forma útvonalon megy át.",
+    "desc_ru": "Твердокаменная руда из Подземного мира и глубоких слоёв верхнего мира. По локальным данным 0.6.0+ hardstone проходит через переработку в крупицы и схему Большая печь + обсидиановая форма.",
+    "versions_en": [
+      "v0.6.0: Hardstone ingots switched to the Large Furnace plus Obsidian Template route."
+    ],
+    "versions_hu": [
+      "v0.6.0: A hardstone rúd a Nagy Kemence + Obszidián Forma útvonalra váltott."
+    ],
+    "versions_ru": [
+      "v0.6.0: Слитки hardstone перевели на схему Большая печь + обсидиановая форма."
+    ]
   },
   "high_carbon_steel_war_hammer": {
     "mcmod_id": 777293,
@@ -1917,9 +1989,10 @@
   },
   "ice_cream": {
     "mcmod_id": 772976,
-    "desc": "用雪球、可可豆、糖和一碗牛奶合成。 饥饿值 饱和度 糖分 蛋白质 胰岛素反应 水分 冰激凌 4点（ ） 5点（ ） 1000 20% 3.33% -1",
-    "desc_en": "Crafted from snowballs, cocoa beans, sugar and a bowl of milk. Hunger value Saturation Sugar Protein Insulin response Water Ice cream 4 points ( ) 5 points ( ) 1000 20% 3.33% -1",
-    "desc_hu": "Hógolyókból, kakaóbabból, cukorból és egy tál tejből készült. Éhségérték Telítettség Cukor Fehérje Inzulin válasz Víz Fagylalt 4 pont ( ) 5 pont ( ) 1000 20% 3,33% -1"
+    "desc": "Dessert crafted from snowballs, cocoa beans, sugar, and a bowl of milk. A richer sweet food than plain chocolate.",
+    "desc_en": "Dessert crafted from snowballs, cocoa beans, sugar, and a bowl of milk. A richer sweet food than plain chocolate.",
+    "desc_hu": "Hógolyóból, kakaóbabból, cukorból és egy tál tejből készült desszert. Tartalmasabb édesség, mint a sima csokoládé.",
+    "desc_ru": "Десерт из снежков, какао-бобов, сахара и миски молока. Более сытная сладость, чем обычный шоколад."
   },
   "iron_block": {
     "mcmod_id": 773009,
@@ -1929,21 +2002,24 @@
   },
   "iron_boat": {
     "mcmod_id": 446699,
-    "desc": "可以在岩浆上行驶，被破坏后会自动收入背包。",
-    "desc_en": "It can drive on lava and will be automatically put into the backpack after being destroyed.",
-    "desc_hu": "Láván hajthat, és megsemmisítése után automatikusan a hátizsákba kerül."
+    "desc": "Iron boat that can travel on lava. When broken, it returns to the inventory instead of behaving like a normal wooden boat.",
+    "desc_en": "Iron boat that can travel on lava. When broken, it returns to the inventory instead of behaving like a normal wooden boat.",
+    "desc_hu": "Vascsónak, amely láván is tud haladni. Töréskor visszakerül a készletbe, nem úgy viselkedik, mint egy sima fa csónak.",
+    "desc_ru": "Железная лодка, способная двигаться по лаве. При разрушении возвращается в инвентарь, а не ведёт себя как обычная деревянная лодка."
   },
   "jungle_fence": {
     "mcmod_id": 772189,
-    "desc": "此段资料引用于“ 木栅栏 (Fence) ”并与其保持同步更新。 编辑 等同于原版 栅栏 ， 不同材料（橡木/白桦木/丛林木/云杉木）合成不同材质的木栅栏。",
-    "desc_en": "This information is quoted from \"Fence\" and is updated synchronously with it. Edit Equivalent to the original fence, different materials (oak/birch/jungle wood/spruce) can be synthesized into wooden fences of different materials.",
-    "desc_hu": "Ez az információ a \"Kerítés\"-ből származik, és azzal szinkronban frissül. Szerkesztés Az eredeti kerítéssel egyenértékű különböző anyagok (tölgy/nyír/dzsungelfa/luc) elkészíthetők különböző anyagú fa kerítésekké."
+    "desc": "Jungle fence variant. Functionally it follows the standard wooden fence behavior.",
+    "desc_en": "Jungle fence variant. Functionally it follows the standard wooden fence behavior.",
+    "desc_hu": "Dzsungelfa kerítésváltozat. Működésében a szokásos fakerítést követi.",
+    "desc_ru": "Вариант забора из древесины джунглей. По функции соответствует обычному деревянному забору."
   },
   "jungle_fence_gate": {
     "mcmod_id": 772194,
-    "desc": "此段资料引用于“ 木栅栏门 (Fence Gate) ”并与其保持同步更新。 编辑 等同于原版 栅栏门 ，不同材料（橡木/白桦木/丛林木/云杉木）合成不同材质的木栅栏门。",
-    "desc_en": "This information is quoted from \"Fence Gate\" and is updated synchronously with it. Edit: Equivalent to the original fence door. Different materials (oak/birch/jungle wood/spruce) can be used to synthesize wooden fence doors of different materials.",
-    "desc_hu": "Ez az információ a „Kerítéskapu”-ból származik, és azzal szinkronban frissül. Szerk.: Az eredeti kerítésajtóval egyenértékű. Különböző anyagok (tölgy/nyír/dzsungelfa/luc) használhatók különböző anyagokból készült fa kerítésajtók elkészítéséhez."
+    "desc": "Jungle fence gate variant. Functionally it follows the standard wooden fence gate behavior.",
+    "desc_en": "Jungle fence gate variant. Functionally it follows the standard wooden fence gate behavior.",
+    "desc_hu": "Dzsungelfa kerítéskapu-változat. Működésében a szokásos fa kerítéskaput követi.",
+    "desc_ru": "Вариант калитки из древесины джунглей. По функции соответствует обычной деревянной калитке."
   },
   "jungle_sieve": {
     "mcmod_id": 772159,
@@ -1959,74 +2035,134 @@
   },
   "lantern": {
     "mcmod_id": 772040,
-    "desc": "春节装饰方块，照明亮度与 荧石火把 相同，亮度为15。",
-    "desc_en": "The Spring Festival decorative block has the same lighting brightness as the Glowstone Torch, with a brightness of 15.",
-    "desc_hu": "A Tavaszi Fesztivál díszblokk fényereje megegyezik a Glowstone fáklyával, 15-ös fényerővel."
+    "desc": "Spring Festival lantern decoration. It emits light level 15, matching the brightness of a glowstone torch.",
+    "desc_en": "Spring Festival lantern decoration. It emits light level 15, matching the brightness of a glowstone torch.",
+    "desc_hu": "Tavaszi Fesztivál-lámpás díszblokk. 15-ös fényt ad, ugyanakkora fényerővel, mint a glowstone fáklya.",
+    "desc_ru": "Декоративный фонарь Праздника весны. Даёт уровень света 15, как светокаменный факел."
   },
   "lapis_lazuli": {
     "mcmod_id": 772246,
-    "desc": "同原版 青金石 ，增加新功能，手持右键消耗1个青金石可获得25XP。 0.6.0版本调整，青金石矿石除了直接挖掘破坏，在 大型熔炉 中熔炼同样可以获得青金石，且不需要 黑耀石模板 。",
+    "desc": "Lapis lazuli with an extra utility effect: consuming one by right-click grants XP. Local docs also note a Large Furnace source from lapis ore in newer versions.",
     "versions": [
-      "0.6.0版本调整，青金石矿石除了直接挖掘破坏，在"
+      "v0.6.0: Lapis can also be obtained from lapis ore through the Large Furnace route."
     ],
-    "desc_en": "Same as the original Lapis Lazuli, with new features added. Right-click it and consume 1 Lapis Lazuli to get 25XP. Adjusted in version 0.6.0, in addition to directly mining and destroying lapis lazuli ore, lapis lazuli can also be obtained by smelting it in a large furnace, and does not require an obsidian template.",
-    "desc_hu": "Ugyanaz, mint az eredeti Lapis Lazuli, új funkciókkal. Kattintson a jobb gombbal, és fogyasszon el 1 Lapis Lazulit, hogy 25XP-t kapjon. A 0.6.0-s verzióban módosítva a lapis lazuli érc közvetlen bányászása és megsemmisítése mellett a lapis lazuli nagy kemencében történő olvasztással is beszerezhető, és nem igényel obszidián sablont."
+    "desc_en": "Lapis lazuli with an extra utility effect: consuming one by right-click grants XP. Local docs also note a Large Furnace source from lapis ore in newer versions.",
+    "desc_hu": "Lazúrkő extra utility hatással: jobb kattintással elfogyasztva XP-t ad. A helyi doksik szerint újabb verziókban lazúrércből Nagy Kemencén át is szerezhető.",
+    "desc_ru": "Лазурит с дополнительной утилитарной функцией: при правом клике расходуется и даёт XP. Локальные доки также отмечают получение из лазуритовой руды через Большую печь в новых версиях.",
+    "versions_en": [
+      "v0.6.0: Lapis can also be obtained from lapis ore through the Large Furnace route."
+    ],
+    "versions_hu": [
+      "v0.6.0: Lazúr lazúrércből a Nagy Kemence útvonalon is szerezhető."
+    ],
+    "versions_ru": [
+      "v0.6.0: Лазурит также можно получать из лазуритовой руды через Большую печь."
+    ]
   },
   "lotus_seed_soup": {
     "mcmod_id": 444012,
-    "desc": "莲子汤由睡莲、水碗和糖合成，食用后有额外效果。 饥饿值 饱和度 糖分 植物营养 胰岛素反应 水分 上火 莲子汤 3点（ ） 2点（ ） 300 12.5% 1% 3 -25%",
-    "desc_en": "Lotus seed soup is composed of water lilies, water bowls and sugar, and has additional effects after consumption. Hunger value, saturation, sugar, plant nutrition, insulin response, water, irritation, lotus seed soup 3 points ( ) 2 points ( ) 300 12.5% ​​1% 3 -25%",
-    "desc_hu": "A lótuszmag leves tavirózsákból, vizestálakból és cukorból áll, és fogyasztás után további hatásai vannak. Éhségérték, telítettség, cukor, növényi táplálkozás, inzulinválasz, víz, irritáció, lótuszmag leves 3 pont ( ) 2 pont ( ) 300 12,5% 1% 3 -25%"
+    "desc": "Soup made from lily pads, a bowl of water, and sugar. A light plant-based food item from the early cooking line.",
+    "desc_en": "Soup made from lily pads, a bowl of water, and sugar. A light plant-based food item from the early cooking line.",
+    "desc_hu": "Tavirózsából, egy tál vízből és cukorból készülő leves. Könnyű, korai növényi étel.",
+    "desc_ru": "Суп из кувшинок, миски воды и сахара. Лёгкая ранняя растительная еда."
   },
   "map": {
     "mcmod_id": 780401,
-    "desc": "手持空地图右键可获得一份地图，也可使用空地图和地图在工作台上获得两份一样的地图。",
-    "desc_en": "Right-click on an empty map to get a map, or you can use an empty map and a map to get two identical maps on the workbench.",
-    "desc_hu": "Kattintson jobb gombbal egy üres térképre egy térkép megjelenítéséhez, vagy használhat egy üres térképet és egy térképet, hogy két egyforma térképet kapjon a munkaasztalon."
+    "desc": "Filled map obtained by right-clicking an empty map. It can also be cloned on a workbench with one empty map and one existing map.",
+    "desc_en": "Filled map obtained by right-clicking an empty map. It can also be cloned on a workbench with one empty map and one existing map.",
+    "desc_hu": "Kitöltött térkép, amelyet üres térképre jobb kattintással kapsz meg. Munkaasztalon egy üres és egy meglévő térképből másolat is készíthető.",
+    "desc_ru": "Заполненная карта, получаемая правым кликом по пустой карте. Её также можно копировать на верстаке из одной пустой и одной готовой карты."
   },
   "mashed_potato": {
     "mcmod_id": 772975,
-    "desc": "用烤马铃薯、奶酪、一碗牛奶合成。 饥饿值 饱和度 蛋白质 土豆泥 8点（ ） 12点（ ） 40%",
-    "desc_en": "Crafted with baked potatoes, cheese, and a bowl of milk. Hunger value saturation protein mashed potatoes 8 points ( ) 12 points ( ) 40%",
-    "desc_hu": "Sült burgonyával, sajttal és egy tál tejjel készült. Éhségérték telítettség fehérje burgonyapüré 8 pont ( ) 12 pont ( ) 40%"
+    "desc": "Meal made from baked potato, cheese, and a bowl of milk. A richer early food than plain potato dishes.",
+    "desc_en": "Meal made from baked potato, cheese, and a bowl of milk. A richer early food than plain potato dishes.",
+    "desc_hu": "Sült burgonyából, sajtból és egy tál tejből készülő étel. Tartalmasabb korai fogás, mint az egyszerű krumplis ételek.",
+    "desc_ru": "Блюдо из печёного картофеля, сыра и миски молока. Более сытная ранняя еда, чем простые картофельные блюда."
   },
   "mercury_ingot": {
     "mcmod_id": 771975,
-    "desc": "可以用于给武器镀一层汞，每镀一层增加0.1的伤害。在合成台中和武器合成即可镀层。 通过 汞矿 烧制而成。 0.6.0版本调整，汞锭只有在 大型熔炉 中熔炼 汞矿 ，随后在 黑耀石模板 中冷却后获得。",
+    "desc": "Mercury ingot used for mercury-coating weapons and later mercury-based crafting. In local 0.6.0+ data it comes from mercury ore processing rather than the old direct route.",
     "versions": [
-      "0.6.0版本调整，汞锭只有在"
+      "v0.6.0: Mercury ingots were moved to the newer mercury-ore processing route."
     ],
-    "desc_en": "Can be used to coat weapons with a layer of mercury, increasing the damage by 0.1 per layer. It can be plated by combining it with weapons in the crafting station. Made from mercury ore. Adjusted in version 0.6.0, mercury ingots can only be obtained by smelting mercury ore in a large furnace and then cooling it in an obsidian template.",
-    "desc_hu": "Használható fegyverek bevonására higanyréteggel, rétegenként 0,1-el növelve a sebzést. A ravaszkodó állomáson fegyverekkel kombinálva bevonható. Higanyércből készült. A 0.6.0-s verzióban beállított higanyrúd csak úgy nyerhető, hogy a higanyércet egy nagy kemencében olvasztják, majd egy obszidiánsablonban lehűtik."
+    "desc_en": "Mercury ingot used for mercury-coating weapons and later mercury-based crafting. In local 0.6.0+ data it comes from mercury ore processing rather than the old direct route.",
+    "desc_hu": "Higanyrúd, amely fegyverek higanybevonásához és a későbbi higanyalapú craftokhoz kell. A helyi 0.6.0+ adatokban már a higanyérc feldolgozási útvonalából jön, nem a régi közvetlen rendszerből.",
+    "desc_ru": "Ртутный слиток для ртутного покрытия оружия и более поздних рецептов на основе ртути. По локальным данным 0.6.0+ он получается через переработку ртутной руды, а не по старой прямой схеме.",
+    "versions_en": [
+      "v0.6.0: Mercury ingots were moved to the newer mercury-ore processing route."
+    ],
+    "versions_hu": [
+      "v0.6.0: A higanyrúd az újabb higanyérc-feldolgozási útvonalra került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Ртутные слитки перевели на новую схему переработки ртутной руды."
+    ]
   },
   "mercury_nugget": {
     "mcmod_id": 828505,
-    "desc": "0.8版本新增材料，可由 汞锭 或 汞矿 和 铁战锤 在工作台合成。",
+    "desc": "Mercury nugget introduced for the later mercury material line. Local recipes show it being broken down from mercury ingots or mercury ore with an iron war hammer.",
     "versions": [
-      "0.8版本新增材料，可由"
+      "v0.8.0: Mercury nuggets were added."
     ],
-    "desc_en": "New materials added in version 0.8, which can be crafted from Mercury Ingots or Mercury Ore and Iron Warhammer at the workbench.",
-    "desc_hu": "Új anyagok hozzáadva a 0.8-as verzióhoz, amelyek Mercury Ingots vagy Mercury Ore és Iron Warhammer segítségével készíthetők a munkapadon."
+    "desc_en": "Mercury nugget introduced for the later mercury material line. Local recipes show it being broken down from mercury ingots or mercury ore with an iron war hammer.",
+    "desc_hu": "Higanyrög, amely a későbbi higanyanyag-vonal részeként jelent meg. A helyi receptek szerint higanyrúdból vagy higanyércből bontható ki vas harci kalapáccsal.",
+    "desc_ru": "Ртутная крупица, добавленная для более поздней линии ртутных материалов. По локальным рецептам получается разбором ртутного слитка или ртутной руды железным боевым молотом.",
+    "versions_en": [
+      "v0.8.0: Mercury nuggets were added."
+    ],
+    "versions_hu": [
+      "v0.8.0: Megjelentek a higanyrögök."
+    ],
+    "versions_ru": [
+      "v0.8.0: Были добавлены ртутные крупицы."
+    ]
   },
   "mercury_ore": {
     "mcmod_id": 772184,
-    "desc": "外表和 钻石矿石 相似，略微泛绿，较为稀有。 可以加工成 汞锭 ，用于给武器镀层以增加伤害。 0.6.0版本调整： 汞锭 只有在 大型熔炉 中熔炼汞矿，随后在 黑耀石模板 中冷却后获得。 汞矿熔点为0，按住shift即可显示熔点。 刷新机制： 主世界10格以下随机刷新； 每次刷新1个。 0.8.0版本新增，在放置在岩浆上的炼药锅中放入汞矿，可以获得液化汞。 0.9.0版本调整，汞矿仅在沼泽25层以下刷新。",
+    "desc": "Rare greenish mercury ore used for mercury ingots, nuggets, and later liquid-mercury processing. In the current local data, its reliable spawn note is swamp biomes below about Y25.",
     "versions": [
-      "0.6.0版本调整：",
-      "0.8.0版本新增，在放置在岩浆上的炼药锅中放入汞矿，可以获得液化汞",
-      "0.9.0版本调整，汞矿仅在沼泽25层以下刷新"
+      "v0.6.0: Mercury ingots switched to the newer mercury-ore processing route.",
+      "v0.8.0: Mercury ore gained a liquid-mercury cauldron use.",
+      "v0.9.0: Mercury ore spawn was restricted to swamps below level 25."
     ],
-    "desc_en": "The appearance is similar to diamond ore, slightly greenish, and relatively rare. Can be crafted into Mercury Ingots , used to coat weapons for increased damage. Adjustments in version 0.6.0: Mercury Ingots can only be obtained by smelting Mercury Ore in a Large Furnace and then cooling it in an Obsidian Template. The melting point of mercury ore is 0. Hold down shift to display the melting point. Refresh mechanism: The main world is refreshed randomly if there are less than 10 blocks in the main world; 1 is refreshed each time. Newly added in version 0.8.0, you can obtain liquefied mercury by placing mercury ore in a cauldron placed on magma. Adjusted in version 0.9.0, mercury mines are only refreshed below the 25th level of the swamp.",
-    "desc_hu": "Megjelenése a gyémántérchez hasonló, enyhén zöldes és viszonylag ritka. Mercury ingotokba alakítható, fegyverek bevonására használható a nagyobb sebzés érdekében. Kiigazítások a 0.6.0-s verzióban: A higanyrúdokat csak úgy lehet beszerezni, hogy a higanyércet egy nagy kemencében olvasztják, majd egy obszidiánsablonban lehűtik. A higanyérc olvadáspontja 0. Tartsa lenyomva a shift gombot az olvadáspont megjelenítéséhez. Frissítési mechanizmus: A fővilág véletlenszerűen frissül, ha 10-nél kevesebb blokk van a fővilágban; 1 minden alkalommal frissül. A 0.8.0-s verzióban újonnan hozzáadott cseppfolyósított higanyt úgy kaphatja meg, hogy higanyércet helyez a magmára helyezett üstbe. A 0.9.0-s verzióban módosítva a higanybányák csak a mocsár 25. szintje alatt frissülnek."
+    "desc_en": "Rare greenish mercury ore used for mercury ingots, nuggets, and later liquid-mercury processing. In the current local data, its reliable spawn note is swamp biomes below about Y25.",
+    "desc_hu": "Ritka, zöldes higanyérc, amely higanyrúdhoz, higanyröghöz és a későbbi folyékony higanyos feldolgozáshoz kell. A jelenlegi helyi adatokban a biztos spawn-megjegyzés: mocsárbiomokban, nagyjából Y25 alatt.",
+    "desc_ru": "Редкая зеленоватая ртутная руда для ртутных слитков, крупиц и более поздней переработки в жидкую ртуть. По текущим локальным данным надёжное правило спавна: болота ниже примерно Y25.",
+    "versions_en": [
+      "v0.6.0: Mercury ingots switched to the newer mercury-ore processing route.",
+      "v0.8.0: Mercury ore gained a liquid-mercury cauldron use.",
+      "v0.9.0: Mercury ore spawn was restricted to swamps below level 25."
+    ],
+    "versions_hu": [
+      "v0.6.0: A higanyrúd az újabb higanyérc-feldolgozási útvonalra váltott.",
+      "v0.8.0: A higanyérc folyékony higanyos üsthasználatot kapott.",
+      "v0.9.0: A higanyérc spawnja mocsarakban, 25-ös szint alattira szűkült."
+    ],
+    "versions_ru": [
+      "v0.6.0: Ртутные слитки перевели на новую схему переработки ртутной руды.",
+      "v0.8.0: У ртутной руды появилось применение в котле для жидкой ртути.",
+      "v0.9.0: Спавн ртутной руды ограничили болотами ниже 25 уровня."
+    ]
   },
   "mint_leaf": {
     "mcmod_id": 857953,
-    "desc": "0.9.0版本新增，破坏薄荷植物后获得，用于合成薄荷沙拉。",
+    "desc": "Mint leaf harvested from mint plants. Mainly used as an ingredient for mint salad.",
     "versions": [
-      "0.9.0版本新增，破坏薄荷植物后获得，用于合成薄荷沙拉"
+      "v0.9.0: Mint leaves were added."
     ],
-    "desc_en": "Newly added in version 0.9.0, obtained after destroying mint plants and used to craft mint salad.",
-    "desc_hu": "Újonnan hozzáadva a 0.9.0-s verzióban, mentanövények elpusztítása után készült, és mentasaláta készítésére használták."
+    "desc_en": "Mint leaf harvested from mint plants. Mainly used as an ingredient for mint salad.",
+    "desc_hu": "Mentanövényből szedhető mentalevél. Főleg a mentasaláta egyik alapanyaga.",
+    "desc_ru": "Лист мяты, получаемый с растения мяты. Используется в основном как ингредиент мятного салата.",
+    "versions_en": [
+      "v0.9.0: Mint leaves were added."
+    ],
+    "versions_hu": [
+      "v0.9.0: Megjelent a mentalevél."
+    ],
+    "versions_ru": [
+      "v0.9.0: Были добавлены листья мяты."
+    ]
   },
   "mithril_block": {
     "mcmod_id": 773011,
@@ -2044,10 +2180,10 @@
   },
   "mithril_coin": {
     "mcmod_id": 772945,
-    "desc": "由秘银粒合成得到，需要消耗2500XP经验，经验会在硬币合成为秘银粒时返还，相当于一个可以存储一定量经验的物品。 只能在秘银工作台或艾德曼工作台合成（装上电子板的工作台不可以合成）。",
-    "desc_en": "It is synthesized from Mithril grains and requires 2500 XP experience. The experience will be returned when the coins are synthesized into Mithril grains, which is equivalent to an item that can store a certain amount of experience. It can only be crafted at the Mithril Toolbench or Adamantium Workbench (a workbench with an electronic board cannot craft it).",
-    "desc_hu": "Mithril szemcsékből készül, és 2500 XP tapasztalat szükséges hozzá. Az élmény visszajár, amikor az érmét újra Mithril szemcsékké alakítod, így egy bizonyos mennyiségű tapasztalat tárolására alkalmas tárgynak tekinthető. Csak Mithril vagy Adamantium munkaasztalon készíthető, elektronikus táblával szerelt munkaasztalon nem.",
-    "desc_ru": "Создаётся из мифриловых крупиц и требует 2500 XP. Опыт возвращается при обратной переработке монеты в крупицы, поэтому предмет можно использовать как хранилище опыта. Крафтится только на мифриловом или адамантиевом верстаке; верстак с электронной платой для этого не подходит."
+    "desc": "Mithril coin crafted from one mithril nugget. The current recipe uses the Mithril Workbench.",
+    "desc_en": "Mithril coin crafted from one mithril nugget. The current recipe uses the Mithril Workbench.",
+    "desc_hu": "Egy mithrilrögből craftolható mithril érme. A jelenlegi recept Mithril munkaasztalt használ.",
+    "desc_ru": "Мифриловая монета из одной мифриловой крупицы. Текущий рецепт использует мифриловый верстак."
   },
   "mithril_ore": {
     "mcmod_id": 772949,
@@ -2080,25 +2216,40 @@
   },
   "mushroom_red": {
     "mcmod_id": 772980,
-    "desc": "任意硬度的工具均可采摘，获取掉落物。可在丛林、森林、沼泽生态群系获得（沼泽相对较多）。 此蘑菇可以直接食用；但是会带来 10s 中毒 I和60s 反胃 的负面效果，不到万不得已千万不要单独食用！ 可配合 褐色蘑菇 制作 蘑菇煲食用。 饥饿值 饱和度 蛋白质 植物营养素 胰岛素反应 红蘑菇 1点（ ） 1点（ ） 0 0 0",
-    "desc_en": "Tools of any hardness can be picked to obtain dropped items. Can be obtained in jungle, forest, and swamp biomes (swamps are relatively common). This mushroom can be eaten directly; however, it will cause the negative effects of poisoning for 10 seconds and nausea for 60 seconds. Do not eat it alone unless absolutely necessary! Can be used with brown mushrooms to make mushroom stew. Hunger value Saturation Protein Phytonutrients Insulin response Red mushroom 1 point ( ) 1 point ( ) 0 0 0",
-    "desc_hu": "Bármilyen keménységű szerszámok felszedhetők az elejtett tárgyak megszerzéséhez. Megszerezhető dzsungelben, erdőben és mocsárban (a mocsarak viszonylag gyakoriak). Ez a gomba közvetlenül fogyasztható; azonban a mérgezés negatív hatásait 10 másodpercig, és 60 másodpercig hányingert okoz. Ne fogyaszd egyedül, hacsak nem feltétlenül szükséges! Barna gombával együtt használható gombapörkölt készítéséhez. Éhségérték Telítettség Fehérje Fitonutriensek Inzulinválasz Piros gomba 1 pont ( ) 1 pont ( ) 0 0 0"
+    "desc": "Red mushroom found in forests, jungles, and especially swamps. It can be eaten raw in emergencies, but causes poison and nausea; it is much safer in mushroom stew.",
+    "desc_en": "Red mushroom found in forests, jungles, and especially swamps. It can be eaten raw in emergencies, but causes poison and nausea; it is much safer in mushroom stew.",
+    "desc_hu": "Vörös gomba, amely erdőkben, dzsungelekben és főleg mocsarakban található. Vészhelyzetben nyersen is megehető, de mérgezést és hányingert okoz; gombapörköltben sokkal biztonságosabb.",
+    "desc_ru": "Красный гриб из лесов, джунглей и особенно болот. В крайнем случае его можно съесть сырым, но он вызывает отравление и тошноту; в грибном рагу он куда безопаснее."
   },
   "nether_brick": {
     "mcmod_id": 779559,
-    "desc": "同原版 下界砖 ，可投掷。 投掷伤害+1。",
-    "desc_en": "Same as the original Nether Brick, can be thrown. Throwing damage +1.",
-    "desc_hu": "Ugyanaz, mint az eredeti Nether Brick, dobható. Dobási sebzés +1."
+    "desc": "Nether brick item that can also be thrown as a weak projectile. Throw damage: 1.",
+    "desc_en": "Nether brick item that can also be thrown as a weak projectile. Throw damage: 1.",
+    "desc_hu": "Nether tégla item, amely gyenge lövedékként el is dobható. Dobási sebzés: 1.",
+    "desc_ru": "Предмет адского кирпича, который можно бросать как слабый снаряд. Урон при броске: 1."
   },
   "nether_quartz": {
     "mcmod_id": 772248,
-    "desc": "同原版 下界石英 ，增加新功能，手持右键消耗1个下界石英可获得50XP。 0.5.7版本更新后，困难模式中1个下界石英调整为65XP。 0.6.0版本调整，下界石英矿石除了直接挖掘破坏，在 大型熔炉 中熔炼同样可以获得下界石英，且不需要 黑耀石模板 。",
+    "desc": "Nether quartz with an added utility effect: right-clicking consumes one and grants XP. In newer versions it can also come from nether quartz ore through the Large Furnace route.",
     "versions": [
-      "0.5.7版本更新后，困难模式中1个下界石英调整为65XP",
-      "0.6.0版本调整，下界石英矿石除了直接挖掘破坏，在"
+      "v0.5.7: In Hardcore, one nether quartz grants 65 XP instead of 50.",
+      "v0.6.0: Nether quartz ore can also be processed through the Large Furnace route without an Obsidian Template."
     ],
-    "desc_en": "Same as the original version of Nether Quartz, with new features added. You can get 50XP by right-clicking and consuming 1 Nether Quartz. After the update to version 0.5.7, 1 Nether Quartz in Hard Mode has been adjusted to 65XP. Adjusted in version 0.6.0, in addition to directly mining and destroying nether quartz ore, nether quartz can also be obtained by smelting it in a large furnace without the need for an obsidian template.",
-    "desc_hu": "Ugyanaz, mint a Nether Quartz eredeti verziója, új funkciókkal. 50XP-t kaphat, ha jobb gombbal kattint, és elfogyaszt 1 Nether Quartzot. A 0.5.7-es verzióra történő frissítés után az 1 Nether Quartz kemény módban 65XP-re lett állítva. A 0.6.0-s verzióban módosítva, a kvarcérc közvetlen bányászatán és megsemmisítésén túlmenően a kvarc nagy kemencében történő olvasztásával is előállítható obszidiánsablon szükségessége nélkül."
+    "desc_en": "Nether quartz with an added utility effect: right-clicking consumes one and grants XP. In newer versions it can also come from nether quartz ore through the Large Furnace route.",
+    "desc_hu": "Netherkvarc extra utility hatással: jobb kattintással elfogyaszt egyet és XP-t ad. Újabb verziókban netherkvarcércből a Nagy Kemence útvonalán is szerezhető.",
+    "desc_ru": "Адский кварц с дополнительной утилитарной функцией: при правом клике расходуется и даёт XP. В новых версиях его также можно получать из кварцевой руды через Большую печь.",
+    "versions_en": [
+      "v0.5.7: In Hardcore, one nether quartz grants 65 XP instead of 50.",
+      "v0.6.0: Nether quartz ore can also be processed through the Large Furnace route without an Obsidian Template."
+    ],
+    "versions_hu": [
+      "v0.5.7: Hardcore módban egy netherkvarc 50 helyett 65 XP-t ad.",
+      "v0.6.0: A netherkvarcérc Obszidián Forma nélkül, a Nagy Kemence útvonalán is feldolgozható."
+    ],
+    "versions_ru": [
+      "v0.5.7: В хардкоре один адский кварц даёт 65 XP вместо 50.",
+      "v0.6.0: Кварцевую руду Нижнего мира можно обрабатывать через Большую печь без обсидиановой формы."
+    ]
   },
   "obsidian_axe": {
     "mcmod_id": 773581,
@@ -2123,81 +2274,111 @@
   },
   "onion": {
     "mcmod_id": 772968,
-    "desc": "与胡萝卜、小麦、马铃薯一样是一种作物，需要阳光才会生长，火把和岩浆等方块光没有作用。 可通过击杀僵尸村民、击杀女巫、刷怪笼宝箱获得。 饥饿值 饱和度 植物营养 水分 洋葱 1点（ ） 1点（ ） 5% 1",
-    "desc_en": "Like carrots, wheat, and potatoes, it is a crop that requires sunlight to grow. Block light such as torches and lava has no effect. It can be obtained by killing zombie villagers, killing witches, and monster spawner treasure chests. Hunger value Saturation Plant nutrition Moisture Onion 1 point ( ) 1 point ( ) 5% 1",
-    "desc_hu": "A sárgarépához, a búzához és a burgonyához hasonlóan ez is olyan növény, amelynek növekedéséhez napfényre van szükség. A blokkfény, például a fáklyák és a láva, nincs hatással. Megszerezhető zombi falusiak megölésével, boszorkányok meggyilkolásával és szörnyszülöttek kincsesládáival. Éhségérték Telítettség Növénytáplálkozás Nedvesség Hagyma 1 pont ( ) 1 pont ( ) 5% 1"
+    "desc": "Crop ingredient that needs direct sunlight to grow; torch or lava light is not enough. It can also appear from zombie villager or witch drops and some loot chests.",
+    "desc_en": "Crop ingredient that needs direct sunlight to grow; torch or lava light is not enough. It can also appear from zombie villager or witch drops and some loot chests.",
+    "desc_hu": "Növényi alapanyag, amelynek közvetlen napfény kell a növekedéshez; a fáklya- vagy lávafény nem elég. Zombi falusi és boszorkány dropból, illetve egyes lootládákból is származhat.",
+    "desc_ru": "Овощная культура, которой для роста нужен прямой солнечный свет; света факелов или лавы недостаточно. Также может выпадать с зомби-жителей, ведьм и попадаться в некоторых сундуках с лутом."
   },
   "onion_allium": {
     "mcmod_id": 773801,
-    "desc": "外观和原版1.7.2首次出现的 绒球葱 一样。 和原版绒球葱的区别是会自然生成在许多生物群系中，而不是像原版那样仅仅生成在繁花森林中。葱在 沼泽小屋 中的宝箱中可以找到，击杀 女巫 有概率获得，对 草方块 使用 骨粉 也有几率可以得到（无视生物群系）。",
-    "desc_en": "The appearance is the same as the Pom Pom Scallion that first appeared in the original version 1.7.2. The difference from the original pom-pom onion is that it naturally generates in many biomes, instead of just generating in flower forests like the original version. Onions can be found in treasure chests in Swamp Huts. They have a chance to be obtained by killing witches. There is also a chance that they can be obtained by using bonemeal on grass blocks (regardless of the biome).",
-    "desc_hu": "A megjelenés megegyezik a Pom Pom Scallionéval, amely először az eredeti 1.7.2-es verzióban jelent meg. A különbség az eredeti pom-pom hagymához képest az, hogy természetesen számos biomában generál, ahelyett, hogy csak virágerdőkben keletkezne, mint az eredeti változat. A hagyma a Mocsárkunyhók kincsesládáiban található. Esélyük van arra, hogy boszorkányok megölésével megszerezzék őket. Arra is van esély, hogy csontliszttel fűtömbökön (életközösségtől függetlenül) beszerezhetők."
+    "desc": "Allium-style wild onion plant. Unlike vanilla allium, it can generate in many biomes and can also come from swamp hut chests, witch drops, or bonemealed grass.",
+    "desc_en": "Allium-style wild onion plant. Unlike vanilla allium, it can generate in many biomes and can also come from swamp hut chests, witch drops, or bonemealed grass.",
+    "desc_hu": "Vad hagymaféle, amely alliumként néz ki. A vanilla alliumtól eltérően sok biomon megjelenhet, és mocsárkunyhó-ládákból, boszorkány dropból vagy csontlisztezett fűből is származhat.",
+    "desc_ru": "Дикий лук в стиле аллиума. В отличие от ванильного аллиума, может генерироваться во многих биомах, а также встречаться в сундуках ведьминых хижин, выпадать с ведьм или появляться из травы после костной муки."
   },
   "orange": {
     "mcmod_id": 772972,
-    "desc": "破坏丛林生物群系的橡木树叶有0.5%的几率获得橘子，而不是苹果。 森林地形也会刷新橙子树，破坏后100%获得橘子。 饥饿值 饱和度 糖分 植物营养 胰岛素反应 水分 橘子 1点（ ） 2点（ ） 1000 5% 3.33% 2",
-    "desc_en": "Destroying oak leaves in the jungle biome has a 0.5% chance of yielding oranges instead of apples. The forest terrain will also refresh orange trees, and oranges will be obtained 100% after destruction. Hunger value Saturation Sugar Phytonutrient Insulin response Water Orange 1 point ( ) 2 points ( ) 1000 5% 3.33% 2",
-    "desc_hu": "A dzsungelben lévő tölgylevelek elpusztítása 0,5%-os eséllyel narancsot hoz alma helyett. Az erdei terep a narancsfákat is felfrissíti, a narancs pedig 100%-ban megsemmisül. Éhségérték Telítettség Cukor Fitotápanyag Inzulin válasz Víznarancs 1 pont ( ) 2 pont ( ) 1000 5% 3,33% 2"
+    "desc": "Fruit obtained from orange trees and some jungle oak leaf drops. Used as a simple early food and ingredient.",
+    "desc_en": "Fruit obtained from orange trees and some jungle oak leaf drops. Used as a simple early food and ingredient.",
+    "desc_hu": "Narancsfa termése, amely egyes dzsungelbeli tölgyfalomb-dropokból is jöhet. Egyszerű korai ételként és alapanyagként használható.",
+    "desc_ru": "Фрукт с апельсиновых деревьев; также может выпадать с некоторых дубовых листьев в джунглях. Используется как простая ранняя еда и ингредиент."
   },
   "orchid": {
     "mcmod_id": 773803,
-    "desc": "外观与原版1.7.2首次出现的 兰花 一样。 兰花会自然生成在丛林而不是沼泽，并且对 草方块 使用 骨粉 也有几率可以得到（无视生物群系）。",
-    "desc_en": "The appearance is the same as the Orchid that first appeared in vanilla 1.7.2. Orchids generate naturally in jungles rather than swamps, and have a chance to be obtained by using bonemeal on grass blocks (regardless of biome).",
-    "desc_hu": "A megjelenés megegyezik az Orchideával, amely először a vaníliában jelent meg 1.7.2. Az orchideák természetesen dzsungelben teremnek, nem mocsarakban, és esélyük van rá, hogy csontlisztet használva fűtömbökön (életközösségtől függetlenül)."
+    "desc": "Orchid-style flower that grows naturally in jungles instead of swamps. It can also come from bonemealed grass.",
+    "desc_en": "Orchid-style flower that grows naturally in jungles instead of swamps. It can also come from bonemealed grass.",
+    "desc_hu": "Orchideaszerű virág, amely természetesen dzsungelben nő a mocsár helyett. Csontlisztezett fűből is származhat.",
+    "desc_ru": "Цветок в стиле орхидеи, который естественно растёт в джунглях, а не в болотах. Также может выпадать из травы после костной муки."
   },
   "pitaya_leaves": {
     "mcmod_id": 772047,
-    "desc": "手持剪刀右击火龙果树叶可获得，火龙果树只会在丛林地区生成。",
-    "desc_en": "You can get it by right-clicking on a dragon fruit leaf while holding scissors. Dragon fruit trees only spawn in jungle areas.",
-    "desc_hu": "Megszerezheti, ha ollót fogva jobb gombbal rákattint egy sárkány gyümölcslevélre. A sárkánygyümölcsfák csak a dzsungelben költenek."
+    "desc": "Dragon fruit tree leaves collected with shears. Dragon fruit trees generate in jungle areas.",
+    "desc_en": "Dragon fruit tree leaves collected with shears. Dragon fruit trees generate in jungle areas.",
+    "desc_hu": "Ollóval begyűjthető sárkánygyümölcsfa-levelek. A sárkánygyümölcsfák dzsungelterületeken jelennek meg.",
+    "desc_ru": "Листья драконьего фрукта, собираемые ножницами. Деревья драконьего фрукта генерируются в джунглях."
   },
   "pumpkin_soup": {
     "mcmod_id": 772965,
-    "desc": "用南瓜和一碗水合成。 饥饿值 饱和度 植物营养 水分 南瓜汤 2点（ ） 1点（ ） 10% 6",
-    "desc_en": "Crafted from a pumpkin and a bowl of water. Hunger value, saturation, plant nutrition, water, pumpkin soup 2 points ( ) 1 point ( ) 10% 6",
-    "desc_hu": "Sütőtökből és egy tál vízből készült. Éhségérték, telítettség, növényi táplálkozás, víz, sütőtökleves 2 pont ( ) 1 pont ( ) 10% 6"
+    "desc": "Simple soup made from pumpkin and a bowl of water. A light early plant-based meal.",
+    "desc_en": "Simple soup made from pumpkin and a bowl of water. A light early plant-based meal.",
+    "desc_hu": "Egyszerű leves sütőtökből és egy tál vízből. Könnyű korai növényi étel.",
+    "desc_ru": "Простой суп из тыквы и миски воды. Лёгкая ранняя растительная еда."
   },
   "quiver": {
     "mcmod_id": 785099,
-    "desc": "箭袋为玩家提供了一个额外的存放箭矢的空间。 手持箭袋，按住shift并右键即可打开，一共6个空格，每格可以存放一组箭矢（即16根箭）。 箭袋需装备在饰品栏中，消耗箭矢顺序从左往右。",
-    "desc_en": "Quivers provide players with an extra space to store their arrows. Hold the quiver in hand, hold down shift and right-click to open it. There are 6 spaces in total, and each space can store a set of arrows (i.e. 16 arrows). The quiver needs to be equipped in the accessory slot, and the arrows are consumed in order from left to right.",
-    "desc_hu": "A tegezek extra helyet biztosítanak a játékosoknak a nyilak tárolására. Tartsa a tegezt a kezében, tartsa lenyomva a Shift-et, és kattintson a jobb gombbal a kinyitáshoz. Összesen 6 mező van, és minden mezőben egy sor nyíl (azaz 16 nyíl) tárolható. A tegezt a tartozéknyílásba kell felszerelni, és a nyilakat balról jobbra sorrendben kell elfogyasztani."
+    "desc": "Accessory quiver with 6 arrow slots. Open it with Shift + right-click, then equip it to feed arrows from left to right.",
+    "desc_en": "Accessory quiver with 6 arrow slots. Open it with Shift + right-click, then equip it to feed arrows from left to right.",
+    "desc_hu": "6 nyílhelyes tegez-kiegészítő. Shift + jobb kattintással nyitható meg, felszerelve pedig balról jobbra fogyasztja a nyilakat.",
+    "desc_ru": "Аксессуар-колчан на 6 слотов для стрел. Открывается через Shift + ПКМ, а в надетом виде расходует стрелы слева направо."
   },
   "rusted_iron_chain": {
     "mcmod_id": 773278,
-    "desc": "无法合成，可在废弃矿井的箱子矿车中找到。 可以制作锈铁锁链套装。 这是本模组中最差的材料，它甚至不能做出一件普通品质的装备....",
-    "desc_en": "Cannot be crafted and can be found in minecart chests in abandoned mineshafts. Can craft rusty iron chain sets. This is the worst material in this mod, it can't even make an average quality piece of equipment....",
-    "desc_hu": "Nem készíthető, és megtalálható a bányakocsi ládáiban, elhagyott aknatengelyekben. Rozsdás vas lánckészleteket készíthet. Ez a legrosszabb anyag ebben a modban, még egy átlagos minőségű berendezést sem tud csinálni...."
+    "desc": "Uncraftable rusty chain material found in abandoned mineshaft loot. Used for the weakest rusty iron chain gear line.",
+    "desc_en": "Uncraftable rusty chain material found in abandoned mineshaft loot. Used for the weakest rusty iron chain gear line.",
+    "desc_hu": "Nem craftolható rozsdás láncalapanyag, amely elhagyott tárnák lootjában található. A leggyengébb rozsdás vas láncfelszerelés-vonalhoz kell.",
+    "desc_ru": "Некрафтящийся ржавый цепной материал из лута заброшенных шахт. Используется для самой слабой линии ржавой железной кольчужной экипировки."
   },
   "rusted_iron_war_hammer": {
     "mcmod_id": 773297,
-    "desc": "无法合成，看似手持铁战锤的僵尸死亡后掉落。 攻击伤害+4。",
-    "desc_en": "Unable to craft, dropped by zombies that appear to be holding iron hammers after death. Attack damage +4.",
-    "desc_hu": "Nem lehet kézművesíteni, elejtették a zombik, akik úgy tűnik, hogy vaskalapácsot tartanak a haláluk után. Támadási sebzés +4."
+    "desc": "Uncraftable rusty iron war hammer dropped by some hammer-carrying zombies. Attack damage: 4.",
+    "desc_en": "Uncraftable rusty iron war hammer dropped by some hammer-carrying zombies. Attack damage: 4.",
+    "desc_hu": "Nem craftolható rozsdás vasháborús kalapács, amelyet egyes kalapácsos zombik dobhatnak. Sebzés: 4.",
+    "desc_ru": "Некрафтящийся ржавый железный боевой молот, который может выпадать с некоторых зомби с молотом. Урон: 4."
   },
   "salad": {
     "mcmod_id": 772959,
-    "desc": "三个蒲公英和一个木碗合成。 0.5.7版本，困难模式中的水分调整为1。 饥饿值 饱和度 植物营养 水分 上火 沙拉 1点（ ） 1点（ ） 8% 2 -20%",
+    "desc": "Very simple early salad made from dandelions and a wooden bowl. Mostly a stopgap plant-food option.",
     "versions": [
-      "0.5.7版本，困难模式中的水分调整为1"
+      "v0.5.7: Hard Mode adjusted its water value."
     ],
-    "desc_en": "Crafted from three dandelions and a wooden bowl. In version 0.5.7, the water content in hard mode is adjusted to 1. Hunger value Saturation Plant nutrition Moisture Burning Salad 1 point ( ) 1 point ( ) 8% 2 -20%",
-    "desc_hu": "Három pitypangból és egy fatálból készült. A 0.5.7-es verzióban a víztartalom kemény üzemmódban 1-re van állítva. Éhségérték Telítettség Növénytáplálkozás Nedvesség Égő saláta 1 pont ( ) 1 pont ( ) 8% 2 -20%"
+    "desc_en": "Very simple early salad made from dandelions and a wooden bowl. Mostly a stopgap plant-food option.",
+    "desc_hu": "Nagyon egyszerű korai saláta pitypangból és fatálból. Inkább átmeneti növényi ételmegoldás.",
+    "desc_ru": "Очень простой ранний салат из одуванчиков и деревянной миски. Скорее временный растительный вариант еды.",
+    "versions_en": [
+      "v0.5.7: Hard Mode adjusted its water value."
+    ],
+    "versions_hu": [
+      "v0.5.7: Hard Mode-ban módosult a vízértéke."
+    ],
+    "versions_ru": [
+      "v0.5.7: В Hard Mode было изменено значение воды."
+    ]
   },
   "sandstone_furnace_idle": {
     "mcmod_id": 772858,
-    "desc": "八个沙石合成。能够使用热值为1的燃料，并且可以熔炼煤矿石，烧制木炭、仙人掌绿、地狱砖、硬化粘土和沙石（用热度为1的燃料烧制4个沙子得到的是沙石）。不能使用热度为2以上的燃料，不能烧制除煤矿石以外的其他任何矿物。烧制肉如果使用沙石炉，有5%的几率获得烧糊的肉。 0.6.0版本移除沙石炉的熔炉功能，前期熔炼需先合成 粘土炉 。 注意： 熔炉前方有方块挡住时无法工作（无法打开GUI），火焰会暂时熄灭。 流水经过工作中的熔炉，火焰会暂时熄灭。 用工具敲掉熔炉等便携方块不掉耐久。",
+    "desc": "Early sandstone furnace block. In newer versions its original smelting role was largely replaced by the clay furnace and later furnace progression.",
     "versions": [
-      "0.6.0版本移除沙石炉的熔炉功能，前期熔炼需先合成"
+      "v0.6.0: The old sandstone-furnace smelting role was removed in favor of the clay furnace path."
     ],
-    "desc_en": "Synthesized from eight sand and stones. Can use fuel with a calorific value of 1, and can smelt coal ore, and burn charcoal, cactus green, nether bricks, hardened clay, and sand (burning 4 sand with a fuel with a calorific value of 1 will yield sand and gravel). Fuels with a heat value above 2 cannot be used, and any minerals other than coal or ore cannot be burned. If you use a sandstone oven to cook meat, there is a 5% chance of getting burnt meat. Version 0.6.0 removes the furnace function of the sand and stone furnace. The clay furnace must be synthesized for early smelting. Note: The furnace will not work if there is a block in front of it (the GUI cannot be opened), and the flame will be temporarily extinguished. As water passes through a working furnace, the flames are temporarily extinguished. Knocking down portable blocks such as furnaces with tools does not lose durability.",
-    "desc_hu": "Nyolc homokból és kőből szintetizálva. Használhat 1-es fűtőértékű tüzelőanyagot, tud szénércet olvasztani, szenet, kaktuszzöldet, téglákat, edzett agyagot és homokot égetni (4 homok elégetése 1-es fűtőértékű tüzelőanyaggal homokot és kavicsot eredményez). A 2-nél nagyobb hőértékű tüzelőanyagok nem használhatók, és a szénen és az ércen kívül semmilyen ásványi anyag nem égethető el. Ha homokkő sütőt használ a hús sütéséhez, 5% esély van arra, hogy megégjen a hús. A 0.6.0 verzió eltávolítja a homok- és kőkemencék kemence funkcióját. Az agyagkemencét elkészíteni kell a korai olvasztáshoz. Megjegyzés: A kemence nem működik, ha egy blokk van előtte (a grafikus felületet nem lehet kinyitni), és a láng átmenetileg kialszik. Amint a víz áthalad egy működő kemencén, a lángok átmenetileg kialszanak. Hordozható blokkok, például kemencék szerszámokkal történő ledöntése nem veszíti el a tartósságot."
+    "desc_en": "Early sandstone furnace block. In newer versions its original smelting role was largely replaced by the clay furnace and later furnace progression.",
+    "desc_hu": "Korai homokkő kemenceblokk. Az újabb verziókban az eredeti olvasztó szerepét nagyrészt az agyagkemence és a későbbi kemenceprogresszió váltotta le.",
+    "desc_ru": "Ранний блок песчаниковой печи. В новых версиях её исходную роль в плавке в основном заменили глиняная печь и более поздняя прогрессия печей.",
+    "versions_en": [
+      "v0.6.0: The old sandstone-furnace smelting role was removed in favor of the clay furnace path."
+    ],
+    "versions_hu": [
+      "v0.6.0: A régi homokkőkemencés olvasztó szerep kikerült, helyét az agyagkemence útvonal vette át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Старую плавильную роль песчаниковой печи убрали в пользу пути через глиняную печь."
+    ]
   },
   "sign": {
     "mcmod_id": 777566,
-    "desc": "功能同原版 告示牌 ，改变了合成公式。",
-    "desc_en": "The function is the same as the original Notice Board, but the crafting formula has been changed.",
-    "desc_hu": "A funkció megegyezik az eredeti hirdetőtáblával, de a készítési képlet megváltozott."
+    "desc": "Sign with the usual vanilla-style function, but using the mod's adjusted recipe path.",
+    "desc_en": "Sign with the usual vanilla-style function, but using the mod's adjusted recipe path.",
+    "desc_hu": "Tábla a szokásos vanilla-szerű funkcióval, de a mod módosított receptútvonalával.",
+    "desc_ru": "Табличка с обычной ванильной функцией, но с изменённым рецептом в рамках мода."
   },
   "silver_block": {
     "mcmod_id": 773007,
@@ -2208,10 +2389,10 @@
   },
   "silver_coin": {
     "mcmod_id": 772942,
-    "desc": "由银粒合成得到，需要消耗25XP经验，经验会在硬币合成为银粒时返还，相当于一个可以存储一定量经验的物品。 无法在燧石工具台或黑曜石工具台合成。",
-    "desc_en": "It is synthesized from silver grains and requires 25XP experience. The experience will be returned when the coins are synthesized into silver grains, which is equivalent to an item that can store a certain amount of experience. Cannot be crafted at a Flint Tool Bench or Obsidian Toolbench.",
-    "desc_hu": "Ezüstszemcsékből készítik, és 25XP tapasztalatot igényel. Az élmény visszaadható, amikor az érméket ezüstszemcsékké készítik, ami egyenértékű egy bizonyos mennyiségű élmény tárolására alkalmas tárgyjal. Nem készíthető Flint Tool Padon vagy Obsidian Tool Padon.",
-    "desc_ru": "Создаётся из серебряных крупиц и требует 25 XP. Опыт возвращается при обратной переработке монеты в крупицы, поэтому предмет можно использовать как хранилище опыта. Не крафтится на кремнёвом или обсидиановом верстаке."
+    "desc": "Silver coin crafted from one silver nugget. The current recipe uses the Flint Workbench.",
+    "desc_en": "Silver coin crafted from one silver nugget. The current recipe uses the Flint Workbench.",
+    "desc_hu": "Egy ezüströgből craftolható ezüstérme. A jelenlegi recept Kovakő munkaasztalt használ.",
+    "desc_ru": "Серебряная монета из одной серебряной крупицы. Текущий рецепт использует кремнёвый верстак."
   },
   "silver_ore": {
     "mcmod_id": 772948,
@@ -2248,21 +2429,24 @@
   },
   "snowball": {
     "mcmod_id": 772253,
-    "desc": "同原版 雪球 。新增功能，怪物被雪球砸中时，会有15%的概率获得缓慢I的效果20秒。",
-    "desc_en": "Same as the original Snowball. New feature: When a monster is hit by a snowball, there is a 15% chance of receiving the slow I effect for 20 seconds.",
-    "desc_hu": "Ugyanaz, mint az eredeti hógolyó. Új funkció: Ha egy szörnyet eltalál egy hógolyó, 15% esély van arra, hogy 20 másodpercig megkapja a lassú I effektust."
+    "desc": "Snowball with an extra combat effect: hits have a small chance to apply Slowness I for 20 seconds.",
+    "desc_en": "Snowball with an extra combat effect: hits have a small chance to apply Slowness I for 20 seconds.",
+    "desc_hu": "Hógolyó extra harci hatással: találatkor kis eséllyel 20 másodperces Lassúság I-et ad.",
+    "desc_ru": "Снежок с дополнительным боевым эффектом: при попадании с небольшим шансом накладывает Замедление I на 20 секунд."
   },
   "spruce_fence": {
     "mcmod_id": 772187,
-    "desc": "此段资料引用于“ 木栅栏 (Fence) ”并与其保持同步更新。 编辑 等同于原版 栅栏 ， 不同材料（橡木/白桦木/丛林木/云杉木）合成不同材质的木栅栏。",
-    "desc_en": "This information is quoted from \"Fence\" and is updated synchronously with it. Edit Equivalent to the original fence, different materials (oak/birch/jungle wood/spruce) can be synthesized into wooden fences of different materials.",
-    "desc_hu": "Ez az információ a \"Kerítés\"-ből származik, és azzal szinkronban frissül. Szerkesztés Az eredeti kerítéssel egyenértékű különböző anyagok (tölgy/nyír/dzsungelfa/luc) elkészíthetők különböző anyagú fa kerítésekké."
+    "desc": "Spruce fence variant. Functionally it follows the standard wooden fence behavior.",
+    "desc_en": "Spruce fence variant. Functionally it follows the standard wooden fence behavior.",
+    "desc_hu": "Lucfenyő kerítésváltozat. Működésében a szokásos fakerítést követi.",
+    "desc_ru": "Вариант елового забора. По функции соответствует обычному деревянному забору."
   },
   "spruce_fence_gate": {
     "mcmod_id": 772193,
-    "desc": "此段资料引用于“ 木栅栏门 (Fence Gate) ”并与其保持同步更新。 编辑 等同于原版 栅栏门 ，不同材料（橡木/白桦木/丛林木/云杉木）合成不同材质的木栅栏门。",
-    "desc_en": "This information is quoted from \"Fence Gate\" and is updated synchronously with it. Edit: Equivalent to the original fence door. Different materials (oak/birch/jungle wood/spruce) can be used to synthesize wooden fence doors of different materials.",
-    "desc_hu": "Ez az információ a „Kerítéskapu”-ból származik, és azzal szinkronban frissül. Szerk.: Az eredeti kerítésajtóval egyenértékű. Különböző anyagok (tölgy/nyír/dzsungelfa/luc) használhatók különböző anyagokból készült fa kerítésajtók elkészítéséhez."
+    "desc": "Spruce fence gate variant. Functionally it follows the standard wooden fence gate behavior.",
+    "desc_en": "Spruce fence gate variant. Functionally it follows the standard wooden fence gate behavior.",
+    "desc_hu": "Lucfenyő kerítéskapu-változat. Működésében a szokásos fa kerítéskaput követi.",
+    "desc_ru": "Вариант еловой калитки. По функции соответствует обычной деревянной калитке."
   },
   "spruce_sieve": {
     "mcmod_id": 772160,
@@ -2278,94 +2462,129 @@
   },
   "stone": {
     "mcmod_id": 779556,
-    "desc": "主世界最常见的方块之一，同原版 石头 ，改变了获得方式，无法再通过烧制获得，增加了合成方式。",
-    "desc_en": "One of the most common blocks in the main world, it is the same as the original stone, but the acquisition method has been changed. It can no longer be obtained by burning, and a crafting method has been added.",
-    "desc_hu": "Az egyik legelterjedtebb blokk a nagyvilágban, megegyezik az eredeti kővel, de a beszerzési mód megváltozott. Égetéssel már nem lehet beszerezni, és egy kézműves módszer is bekerült."
+    "desc": "Basic stone block for building and crafting. Unlike vanilla, the mod routes part of its progression through adjusted crafting paths instead of relying only on furnace smelting.",
+    "desc_en": "Basic stone block for building and crafting. Unlike vanilla, the mod routes part of its progression through adjusted crafting paths instead of relying only on furnace smelting.",
+    "desc_hu": "Alap kőblokk építéshez és craftoláshoz. A modban a megszerzés egy része módosított craftútvonalakon megy, nem csak sima kemencés olvasztáson.",
+    "desc_ru": "Базовый каменный блок для строительства и крафта. В моде часть получения переведена на изменённые рецепты, а не только на обычную переплавку в печи."
   },
   "stone_slab_single": {
     "mcmod_id": 780402,
-    "desc": "同原版的 平滑石头台阶 。",
-    "desc_en": "Same as the original smooth stone steps.",
-    "desc_hu": "Ugyanaz, mint az eredeti sima kőlépcsőknél."
+    "desc": "Smooth stone slab variant used mainly as a building block.",
+    "desc_en": "Smooth stone slab variant used mainly as a building block.",
+    "desc_hu": "Sima kőlap-változat, főleg építőblokknak.",
+    "desc_ru": "Вариант плиты из гладкого камня, используемый в основном для строительства."
   },
   "sugar_block": {
     "mcmod_id": 444011,
-    "desc": "由四个糖合成，食用后有额外效果。 饥饿值 饱和度 糖分 胰岛素反应 水分 糖块 3点（ ） 3点（ ） 1200 4% -1",
-    "desc_en": "Synthesized from four sugars, it has additional effects after consumption. Hunger value Saturation Sugar Insulin response Water Sugar cube 3 points ( ) 3 points ( ) 1200 4% -1",
-    "desc_hu": "Négy cukorból szintetizálva, fogyasztás után további hatásai vannak. Éhségérték Telítettség Cukor Inzulin válasz Víz Kockacukor 3 pont ( ) 3 pont ( ) 1200 4% -1"
+    "desc": "Food block crafted from four sugar. A concentrated sugar source with a small moisture penalty.",
+    "desc_en": "Food block crafted from four sugar. A concentrated sugar source with a small moisture penalty.",
+    "desc_hu": "Négy cukorból craftolható élelmiszerblokk. Tömény cukorforrás, kisebb nedvességvesztéssel.",
+    "desc_ru": "Съедобный блок из четырёх сахара. Концентрированный источник сахара с небольшим штрафом к влажности."
   },
   "tulip": {
     "mcmod_id": 773800,
-    "desc": "郁金香可合成 橙色染料 ，在沼泽地区能找到，对 草方块 使用 骨粉 也有几率可以得到（无视生物群系）。",
-    "desc_en": "Tulips can be used to craft orange dye, which can be found in swamp areas and has a chance to be obtained by using bone meal on grass blocks (regardless of biome).",
-    "desc_hu": "A tulipánokból narancssárga festéket lehet készíteni, amely mocsaras területeken található, és fűtömbökön csontliszttel is beszerezhető (életközösségtől függetlenül)."
+    "desc": "Flower used for orange dye. It appears in swamp areas and can also come from bonemealed grass.",
+    "desc_en": "Flower used for orange dye. It appears in swamp areas and can also come from bonemealed grass.",
+    "desc_hu": "Virág, amelyből narancssárga festék készül. Mocsaras területeken jelenik meg, és csontlisztezett fűből is jöhet.",
+    "desc_ru": "Цветок для получения оранжевого красителя. Появляется в болотах и может выпадать из травы после костной муки."
   },
   "water_bowl": {
     "mcmod_id": 784440,
-    "desc": "手持 碗 右击淡水湖，可获得纯净水碗。纯净水碗通过熔炉烧制成 热水 。 喝下纯净水碗可补充8水分。",
-    "desc_en": "Hold the bowl and right-click on the freshwater lake to get the pure water bowl. Purified water bowls are fired into hot water through a furnace. Drinking a bowl of pure water can replenish 8 water points.",
-    "desc_hu": "Tartsa a tálat, és kattintson a jobb gombbal az édesvizű tóra, hogy megkapja a tiszta vizű tálat. A tisztított vizes tálakat kemencén keresztül forró vízbe égetik. Egy tál tiszta víz megivása 8 vízpontot pótolhat."
+    "desc": "Bowl of clean water collected from freshwater. It restores moisture and can be heated into hot water in a furnace.",
+    "desc_en": "Bowl of clean water collected from freshwater. It restores moisture and can be heated into hot water in a furnace.",
+    "desc_hu": "Édesvízből gyűjtött tiszta vízzel teli tál. Nedvességet tölt vissza, és kemencében forró vízzé melegíthető.",
+    "desc_ru": "Миска чистой воды, набираемой из пресной воды. Восполняет влагу и может быть нагрета в печи до горячей воды."
   },
   "wheat_soup": {
     "mcmod_id": 444010,
-    "desc": "小麦汤由小麦种子和水碗合成，食用后有额外效果。 饥饿值 饱和度 糖分 蛋白质 植物营养 胰岛素反应 水分 小麦汤 2点（ ） 1点（ ） 400 7.5% 10% 1.33% 3",
-    "desc_en": "Wheat soup is made from wheat seeds and water bowls, and has additional effects after consumption. Hunger value Saturation Sugar Protein Phytonutrient Insulin response Moisture Wheat soup 2 points ( ) 1 point ( ) 400 7.5% 10% 1.33% 3",
-    "desc_hu": "A búzaleves búzamagból és vizestálakból készül, és fogyasztás után további hatásai vannak. Éhségérték Telítettség Cukor Fehérje Fitotápanyag Inzulin válasz Nedvesség Búzaleves 2 pont ( ) 1 pont ( ) 400 7,5% 10% 1,33% 3"
+    "desc": "Simple early soup made from wheat seeds and a bowl of water. A light grain-based food.",
+    "desc_en": "Simple early soup made from wheat seeds and a bowl of water. A light grain-based food.",
+    "desc_hu": "Egyszerű korai leves búzamagból és egy tál vízből. Könnyű, gabonaalapú étel.",
+    "desc_ru": "Простой ранний суп из семян пшеницы и миски воды. Лёгкая зерновая еда."
   },
   "crab_leg": {
     "mcmod_id": 444017,
-    "desc": "击杀螃蟹掉落。 饥饿值 饱和度 蛋白质 蟹腿 3点（ ） 1点（ ） 15%",
-    "desc_en": "Dropped by killing crabs. Hunger value saturation protein crab legs 3 points ( ) 1 point ( ) 15%",
-    "desc_hu": "Rákok megölésével esett le. Éhségérték telítettség fehérje rákcomb 3 pont ( ) 1 pont ( ) 15%"
+    "desc": "Raw crab leg dropped by crabs. Basic seafood ingredient and emergency food.",
+    "desc_en": "Raw crab leg dropped by crabs. Basic seafood ingredient and emergency food.",
+    "desc_hu": "Nyers rákláb, amely rákokból esik. Alap tengeri alapanyag és vészkaja.",
+    "desc_ru": "Сырая крабовая нога, выпадающая с крабов. Базовый морской ингредиент и еда на крайний случай."
   },
   "crab_meat": {
     "mcmod_id": 444016,
-    "desc": "击杀螃蟹掉落。 饥饿值 饱和度 蛋白质 蟹肉 3点（ ） 1点（ ） 15%",
-    "desc_en": "Dropped by killing crabs. Hunger value saturation protein crab meat 3 points ( ) 1 point ( ) 15%",
-    "desc_hu": "Rákok megölésével esett le. Éhségérték telítettségi fehérje rákhús 3 pont ( ) 1 pont ( ) 15%"
+    "desc": "Raw crab meat dropped by crabs. Used as a seafood ingredient or eaten in emergencies.",
+    "desc_en": "Raw crab meat dropped by crabs. Used as a seafood ingredient or eaten in emergencies.",
+    "desc_hu": "Nyers rákhús, amely rákokból esik. Tengeri alapanyagként használható, vagy vészhelyzetben megehető.",
+    "desc_ru": "Сырое крабовое мясо, выпадающее с крабов. Используется как морской ингредиент или съедается в крайнем случае."
   },
   "duck_meat": {
     "mcmod_id": 446426,
-    "desc": "击杀绿头鸭掉落。 饥饿值 饱和度 蛋白质 水分 鸭肉 3点（ ） 3点（ ） 10% 1",
-    "desc_en": "Dropped by killing a mallard. Hunger value saturation protein moisture duck meat 3 points ( ) 3 points ( ) 10% 1",
-    "desc_hu": "Egy tőkés réce megölésével esett le. Éhségérték telítettség fehérje nedvesség kacsahús 3 pont ( ) 3 pont ( ) 10% 1"
+    "desc": "Raw duck meat from mallards. A simple early meat source with some moisture value.",
+    "desc_en": "Raw duck meat from mallards. A simple early meat source with some moisture value.",
+    "desc_hu": "Nyers kacsahús tőkés récéből. Egyszerű korai húsforrás, némi nedvességértékkel.",
+    "desc_ru": "Сырое утиное мясо с крякв. Простой ранний источник мяса с небольшой влагой."
   },
   "crossbow": {
     "mcmod_id": 813965,
-    "desc": "无法合成 掠夺者队长 死亡后有几率掉落 弩和弓相似，但弩无法在附魔台上进行附魔。弩的装填需要更长的时间，攻击伤害比弓更高，也因较小的射击误差而拥有比弓更远的射程。玩家可长按右键拉弦，拉满弦后松开右键即可，拉弦过程中玩家只能以潜行速度移动。与弓不同，弩只有在拉满弦后才能进行射击。拉满弦后，玩家即可以正常速度移动，且此时玩家可以将弩移动到物品栏中的其他任意存储槽上。",
-    "desc_en": "Cannot be crafted. Raider Captain has a chance to be dropped after death. Crossbows are similar to bows, but crossbows cannot be enchanted on an enchantment table. Crossbows take longer to reload, have higher attack damage than bows, and have a longer range than bows due to smaller firing errors. Players can press and hold the right button to pull the string, and then release the right button when the string is full. During the string pulling process, the player can only move at stealth speed. Unlike a bow, a crossbow cannot be fired until the string is fully drawn. After the string is fully drawn, the player can move at normal speed, and at this time the player can move the crossbow to any other storage slot in the inventory.",
-    "desc_hu": "Nem készíthető. Raider kapitánynak esélye van arra, hogy halála után elessék. A számszeríj hasonló az íjakhoz, de a számszeríj nem varázsolható varázsasztalra. A számszeríjak újratöltése tovább tart, nagyobb a támadási sebzésük, mint az íjaké, és a kisebb tüzelési hibák miatt nagyobb a hatótávolsága, mint az íjaké. A játékosok megnyomhatják és lenyomva tarthatják a jobb oldali gombot a húr meghúzásához, majd elengedhetik a jobb oldali gombot, amikor a húr megtelt. A húrhúzási folyamat során a játékos csak lopakodó sebességgel tud mozogni. Az íjjal ellentétben a számszeríjjal nem lehet elsütni addig, amíg a húr teljesen meg nem húzódik. Miután a húr teljesen kihúzódott, a játékos normál sebességgel mozoghat, és ekkor a játékos áthelyezheti a számszeríjat a készlet bármely másik tárolóhelyére."
+    "desc": "Uncraftable ranged weapon that can drop from pillager captains. It reloads slower than a bow, but hits harder and shoots more accurately.",
+    "desc_en": "Uncraftable ranged weapon that can drop from pillager captains. It reloads slower than a bow, but hits harder and shoots more accurately.",
+    "desc_hu": "Nem craftolható távolsági fegyver, amely pillager kapitányoktól eshet. Lassabban tölt, mint egy íj, de nagyobbat üt és pontosabban lő.",
+    "desc_ru": "Некрафтящийся арбалет, который может выпадать с капитанов разбойников. Перезаряжается медленнее лука, но бьёт сильнее и стреляет точнее."
   },
   "mutton_raw": {
     "mcmod_id": 772249,
-    "desc": "同原版 生羊肉 ，增加可直接食用的设定。 饥饿值 饱和度 蛋白质 水分 生羊肉 3点（ ） 3点（ ） 15% 1",
-    "desc_en": "Same as the original raw mutton, with the added setting of being able to be eaten directly. Hunger value saturation protein moisture raw mutton 3 points ( ) 3 points ( ) 15% 1",
-    "desc_hu": "Ugyanaz, mint az eredeti nyers birkahús, azzal a hozzáadott beállítással, hogy közvetlenül fogyasztható. Éhségérték telítettség fehérje nedvesség nyers birkahús 3 pont ( ) 3 pont ( ) 15% 1"
+    "desc": "Raw mutton that, unlike vanilla expectations, can be eaten directly in emergencies. A basic early meat source with moderate protein and moisture value.",
+    "desc_en": "Raw mutton that, unlike vanilla expectations, can be eaten directly in emergencies. A basic early meat source with moderate protein and moisture value.",
+    "desc_hu": "Nyers birkahús, amely a vanilla elvárással szemben szükség esetén közvetlenül is megehető. Alap korai húsforrás, közepes fehérje- és nedvességértékkel.",
+    "desc_ru": "Сырая баранина, которую в отличие от ванильных ожиданий можно есть напрямую в крайнем случае. Базовый ранний источник мяса с умеренным белком и влагой."
   },
   "chip_flint_knife": {
     "mcmod_id": 772045,
-    "desc": "前期用于切割皮革的好工具。 但与燧石小刀不同的是，简易的燧石小刀切割皮革时只能切割出一个 皮革绳 。 攻击伤害 +1",
-    "desc_en": "A great tool for cutting leather early on. But unlike the flint knife, a simple flint knife can only cut a leather rope when cutting leather. Attack damage +1",
-    "desc_hu": "Kiváló eszköz a bőr korai vágásához. De a kovakő késsel ellentétben az egyszerű kovakő kés csak bőrvágáskor képes elvágni egy bőrkötelet. Támadási sebzés +1"
+    "desc": "Crude early flint knife for cutting leather. Weaker than the proper flint knife and only yields a single leather strip when processing hide.",
+    "desc_en": "Crude early flint knife for cutting leather. Weaker than the proper flint knife and only yields a single leather strip when processing hide.",
+    "desc_hu": "Nyers korai kovakőkés bőr vágásához. Gyengébb a rendes kovakő késnél, és bőr feldolgozásakor csak egyetlen bőrszalagot ad.",
+    "desc_ru": "Грубый ранний кремнёвый нож для резки кожи. Слабее обычного кремнёвого ножа и при обработке шкуры даёт только одну кожаную полоску."
   },
   "redstone_ore": {
     "mcmod_id": 772259,
-    "desc": "同原版 红石矿石 。修改设定，需要激活后才能破坏，并且破坏后不再掉落经验。 0.6.0版本调整： 红石矿石除了直接挖掘破坏，在 大型熔炉 中熔炼同样可以获得红石，且不需要 黑耀石模板 。 红石矿石熔点为2300，按住shift即可显示熔点。 刷新机制： 地下世界全部范围随机刷新； 主世界24格以下随机刷新； 每次刷新1-5个。",
+    "desc": "Redstone ore with modified harvesting rules: it must be activated before breaking and no longer drops XP directly. In newer versions it can also be processed through the Large Furnace route.",
     "versions": [
-      "0.6.0版本调整："
+      "v0.6.0: Redstone ore gained the Large Furnace processing route without an Obsidian Template."
     ],
-    "desc_en": "Same as original redstone ore. Modify the settings to require activation before it can be destroyed, and experience will no longer be dropped after destruction. Version 0.6.0 adjustment: In addition to directly mining and destroying redstone ore, redstone can also be obtained by smelting it in a large furnace, and does not require an obsidian template. The melting point of redstone ore is 2300. Hold down shift to display the melting point. Refresh mechanism: The entire underground world is randomly refreshed; the main world is randomly refreshed below 24 blocks; 1-5 are refreshed each time.",
-    "desc_hu": "Ugyanaz, mint az eredeti vöröskőérc. Módosítsa a beállításokat úgy, hogy aktiválást igényeljen, mielőtt megsemmisülhet, és a tapasztalatok a megsemmisítés után többé nem vesznek el. 0.6.0-s verzió beállítás: A vöröskőérc közvetlen bányászata és megsemmisítése mellett a vöröskő nagy kemencében történő olvasztással is előállítható, és nem igényel obszidián sablont. A vöröskőérc olvadáspontja 2300. Tartsa lenyomva a shift gombot az olvadáspont megjelenítéséhez. Frissítési mechanizmus: Az egész földalatti világ véletlenszerűen frissül; a fővilág véletlenszerűen frissül 24 blokk alatt; Minden alkalommal 1-5 frissül."
+    "desc_en": "Redstone ore with modified harvesting rules: it must be activated before breaking and no longer drops XP directly. In newer versions it can also be processed through the Large Furnace route.",
+    "desc_hu": "Vöröskőérc módosított kitermelési szabályokkal: törés előtt aktiválni kell, és már nem dob közvetlenül XP-t. Újabb verziókban a Nagy Kemence útvonalán is feldolgozható.",
+    "desc_ru": "Редстоуновая руда с изменёнными правилами добычи: перед разрушением её нужно активировать, и она больше не даёт XP напрямую. В новых версиях её также можно обрабатывать через Большую печь.",
+    "versions_en": [
+      "v0.6.0: Redstone ore gained the Large Furnace processing route without an Obsidian Template."
+    ],
+    "versions_hu": [
+      "v0.6.0: A vöröskőérc megkapta a Nagy Kemence útvonalát Obszidián Forma nélkül."
+    ],
+    "versions_ru": [
+      "v0.6.0: У редстоуновой руды появился путь обработки через Большую печь без обсидиановой формы."
+    ]
   },
   "ore_tin": {
     "mcmod_id": 777285,
-    "desc": "外观与 银矿石 很像，颜色更亮白，可在 石熔炉 或级别以上的熔炉中用至少热值为2的燃料熔炼成锡锭。可在冶炼炉结合铜装备冶炼青铜合金。 0.6.0版本调整： 锡锭 只有在 大型熔炉 中熔炼锡矿，随后在 黑耀石模板 中冷却后获得。 锡矿熔点为232，按住shift即可显示熔点。 刷新机制： 主世界128格以下随机刷新； 每次刷新1-4个； 0.5.7版本，困难模式中，改为30-128格之间随机刷新。",
+    "desc": "Bright tin ore that resembles silver ore. In current data, tin is obtained through the Large Furnace plus Obsidian Template route and remains part of the bronze progression line.",
     "versions": [
-      "0.6.0版本调整：",
-      "0.5.7版本，困难模式中，改为30-128格之间随机刷新"
+      "v0.5.7: In Hardcore, tin ore spawn shifted to roughly Y30-128.",
+      "v0.6.0: Tin ingots moved to the Large Furnace plus Obsidian Template route."
     ],
-    "desc_en": "It looks very similar to Silver Ore, but is brighter in color. It can be smelted into tin ingots in a Stone Furnace or above using fuel with a calorific value of at least 2. Bronze alloy can be smelted in a smelting furnace with copper equipment. Version 0.6.0 adjustment: Tin ingots can only be obtained by smelting tin ore in a large furnace and then cooling it in an obsidian template. The melting point of tin ore is 232. Hold down shift to display the melting point. Refresh mechanism: The main world is randomly refreshed below 128 squares; 1-4 are refreshed each time; in version 0.5.7, in difficulty mode, it is changed to random refreshes between 30-128 squares.",
-    "desc_hu": "Nagyon hasonlít az ezüstérchez, de színe világosabb. Legalább 2 fűtőértékű tüzelőanyag felhasználásával Kőkemencében vagy afeletti bádogrudakká olvasztható. A bronzötvözet rézberendezéssel ellátott olvasztókemencében olvasztható. 0.6.0-s verzió beállítás: Ónöntvényeket csak úgy lehet előállítani, hogy az ónércet egy nagy kemencében olvasztják, majd obszidián sablonban lehűtik. Az ónérc olvadáspontja 232. Tartsa lenyomva a shift gombot az olvadáspont megjelenítéséhez. Frissítési mechanizmus: A fővilág véletlenszerűen frissül 128 négyzet alatt; minden alkalommal 1-4 frissül; a 0.5.7-es verzióban nehézségi módban véletlenszerű frissítésre vált 30-128 négyzet között."
+    "desc_en": "Bright tin ore that resembles silver ore. In current data, tin is obtained through the Large Furnace plus Obsidian Template route and remains part of the bronze progression line.",
+    "desc_hu": "Világos ónérc, amely az ezüstérchez hasonlít. A jelenlegi adatokban az ón a Nagy Kemence + Obszidián Forma útvonalon készül, és továbbra is a bronzprogresszió része.",
+    "desc_ru": "Светлая оловянная руда, похожая на серебряную. По текущим данным олово получают через Большую печь и обсидиановую форму, и оно остаётся частью бронзовой прогрессии.",
+    "versions_en": [
+      "v0.5.7: In Hardcore, tin ore spawn shifted to roughly Y30-128.",
+      "v0.6.0: Tin ingots moved to the Large Furnace plus Obsidian Template route."
+    ],
+    "versions_hu": [
+      "v0.5.7: Hardcore módban az ónérc spawnja nagyjából Y30-128 közé tolódott.",
+      "v0.6.0: Az ónrúd a Nagy Kemence + Obszidián Forma útvonalra került át."
+    ],
+    "versions_ru": [
+      "v0.5.7: В хардкоре спавн оловянной руды сместился примерно в диапазон Y30-128.",
+      "v0.6.0: Оловянные слитки перевели на схему Большая печь + обсидиановая форма."
+    ]
   },
   "rubace_cluster": {
     "mcmod_id": 777334,
@@ -2393,58 +2612,87 @@
   },
   "tin_ingot": {
     "mcmod_id": 777286,
-    "desc": "由锡矿在石熔炉及以上熔炉使用热值至少为2的燃料熔炼获得。 可在冶炼炉结合铜装备冶炼成青铜装备。 0.6.0版本调整，锡锭只有在 大型熔炉 中熔炼 锡矿 ，随后在 黑耀石模板 中冷却后获得。",
+    "desc": "Tin ingot used mainly for bronze equipment and related metal progression. In modern data it is produced by smelting tin ore in the Large Furnace and cooling it in an Obsidian Template.",
     "versions": [
-      "0.6.0版本调整，锡锭只有在"
+      "v0.6.0: Tin ingots moved fully to the Large Furnace plus Obsidian Template route."
     ],
-    "desc_en": "It is obtained by smelting tin ore in stone furnaces and above using fuel with a calorific value of at least 2. It can be combined with copper equipment in the smelting furnace to smelt it into bronze equipment. Adjusted in version 0.6.0, tin ingots can only be obtained by smelting tin ore in a large furnace and then cooling it in an obsidian template.",
-    "desc_hu": "Ónércet legalább 2 fűtőértékű tüzelőanyag felhasználásával állítják elő kőkemencékben és magasabb szinten. Az olvasztókemencében lévő rézberendezéssel kombinálva bronzberendezéssé olvasztható. A 0.6.0-s verzióban beállított óningot csak úgy lehet előállítani, hogy az ónércet egy nagy kemencében olvasztják, majd egy obszidián sablonban lehűtik."
+    "desc_en": "Tin ingot used mainly for bronze equipment and related metal progression. In modern data it is produced by smelting tin ore in the Large Furnace and cooling it in an Obsidian Template.",
+    "desc_hu": "Ónrúd, amely főleg bronzfelszereléshez és a kapcsolódó fémprogresszióhoz kell. A modern adatokban ónércből készül Nagy Kemencében olvasztva és Obszidián Formában lehűtve.",
+    "desc_ru": "Оловянный слиток, нужный в основном для бронзового снаряжения и связанной металлопрогрессии. В современных данных получается плавкой оловянной руды в Большой печи с охлаждением в обсидиановой форме.",
+    "versions_en": [
+      "v0.6.0: Tin ingots moved fully to the Large Furnace plus Obsidian Template route."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ónrúd teljesen a Nagy Kemence + Obszidián Forma útvonalra váltott."
+    ],
+    "versions_ru": [
+      "v0.6.0: Оловянные слитки полностью перевели на схему Большая печь + обсидиановая форма."
+    ]
   },
   "pcb": {
     "mcmod_id": 771971,
-    "desc": "作为战利品存在地下世界的远古骷髅刷怪笼遗迹的宝箱中，50%开出1个。 手持电子板，右键工作台，使其成为自动合成台，增加了合成的速度。",
-    "desc_en": "50% of the treasure chests in the ancient skeleton spawner ruins that exist as trophies in the underground world will yield one. Hold the electronic board and right-click the workbench to make it an automatic synthesis platform, increasing the speed of synthesis.",
-    "desc_hu": "A földalatti világban trófeaként létező ősi csontváz ívóromokban található kincsesládák 50%-a hoz egyet. Tartsa meg az elektronikus táblát, és kattintson a jobb gombbal a munkaasztalra, hogy automatikus szintézis platformmá váljon, növelve a szintézis sebességét."
+    "desc": "Rare PCB loot from Underground ancient skeleton spawner ruins. Right-clicking a workbench with it upgrades that station into an automatic crafting table.",
+    "desc_en": "Rare PCB loot from Underground ancient skeleton spawner ruins. Right-clicking a workbench with it upgrades that station into an automatic crafting table.",
+    "desc_hu": "Ritka PCB-loot a földalatti ősi csontváz-spawner romokból. Ha munkaasztalra jobb kattintasz vele, az állomás automata craftasztallá fejlődik.",
+    "desc_ru": "Редкий PCB-лут из подземных руин древнего спавнера скелетов. ПКМ по верстаку с этой платой улучшает его до автоматического верстака."
   },
   "attribute_coin": {
     "mcmod_id": 771972,
-    "desc": "食用后可增加一种额外属性，有概率从战利品箱子中获得。 额外属性：4%合成速度、4%挖掘速度、0.1攻击力。",
-    "desc_en": "After consumption, an additional attribute can be added, which can be obtained from loot boxes with a probability. Additional attributes: 4% synthesis speed, 4% mining speed, 0.1 attack power.",
-    "desc_hu": "A fogyasztás után egy további attribútum adható hozzá, ami a loot boxokból valószínûséggel megszerezhetõ. További tulajdonságok: 4% szintézis sebesség, 4% bányászati ​​sebesség, 0,1 támadóerő."
+    "desc": "Consumable loot coin that grants one permanent bonus attribute. The possible bonuses include crafting speed, mining speed, or a small attack increase.",
+    "desc_en": "Consumable loot coin that grants one permanent bonus attribute. The possible bonuses include crafting speed, mining speed, or a small attack increase.",
+    "desc_hu": "Elfogyasztható lootérme, amely egy állandó bónusztattribútumot ad. A lehetséges jutalmak között craftsebesség, bányászási sebesség vagy kisebb támadáserő-növekedés szerepel.",
+    "desc_ru": "Расходуемая лут-монета, дающая один постоянный бонусный атрибут. Возможные бонусы включают скорость крафта, скорость добычи или небольшую прибавку к урону."
   },
   "manure": {
     "mcmod_id": 771976,
-    "desc": "如果玩家的 排泄值 不为0，可以通过按下J键进行排泄获得，获得的数量取决于排泄值的高低。也可以通过击杀 蚯蚓 获得。用于增加植物生长速度。",
-    "desc_en": "If the player's excretion value is not 0, it can be obtained by pressing the J key to excret. The amount obtained depends on the level of the excretion value. Can also be obtained by killing Earthworms. Used to increase plant growth rate.",
-    "desc_hu": "Ha a játékos kiürülési értéke nem 0, akkor azt a J gomb megnyomásával kaphatja meg a kiválasztáshoz. A kapott mennyiség a kiválasztási érték szintjétől függ. Földigiliszták leölésével is beszerezhető. A növények növekedési ütemének növelésére szolgál."
+    "desc": "Fertilizer item used to accelerate plant growth. It can come from the mod's bodily-needs system or from killing earthworms.",
+    "desc_en": "Fertilizer item used to accelerate plant growth. It can come from the mod's bodily-needs system or from killing earthworms.",
+    "desc_hu": "Trágya item, amely a növények növekedését gyorsítja. A mod testi szükséglet-rendszeréből vagy földigiliszták öléséből származhat.",
+    "desc_ru": "Предмет удобрения, ускоряющий рост растений. Может поступать из системы телесных потребностей мода или с убитых дождевых червей."
   },
   "redstone": {
     "mcmod_id": 772252,
-    "desc": "同原版 红石粉 ，增加新功能，手持右键消耗1个红石可获得30XP。 0.5.7版本更新后，困难模式中1个红石调整为20XP。 0.6.0版本调整，红石矿石除了直接挖掘破坏，在 大型熔炉 中熔炼同样可以获得红石，且不需要 黑耀石模板 。",
+    "desc": "Redstone dust with an added utility effect: right-clicking consumes one and grants XP. In newer versions it can also come from redstone ore through the Large Furnace route.",
     "versions": [
-      "0.5.7版本更新后，困难模式中1个红石调整为20XP",
-      "0.6.0版本调整，红石矿石除了直接挖掘破坏，在"
+      "v0.5.7: In Hardcore, one redstone grants 20 XP instead of 30.",
+      "v0.6.0: Redstone ore can also be processed through the Large Furnace route without an Obsidian Template."
     ],
-    "desc_en": "The same as the original red stone powder, with new functions added. You can get 30XP by right-clicking and consuming 1 red stone. After the update to version 0.5.7, the cost of 1 redstone in hard mode is adjusted to 20XP. Adjusted in version 0.6.0, in addition to directly mining and destroying redstone ore, redstone can also be obtained by smelting it in a large furnace, and does not require an obsidian template.",
-    "desc_hu": "Ugyanaz, mint az eredeti vörös kőpor, új funkciókkal. 30XP-t kaphatsz, ha jobb gombbal kattintasz és elfogyasztasz 1 piros követ. A 0.5.7-es verzióra való frissítés után kemény módban 1 redstone költsége 20XP-re módosul. A 0.6.0-s verzióban módosítva a vöröskőérc közvetlen bányászata és megsemmisítése mellett a vöröskő nagy kemencében történő olvasztással is nyerhető, és nem igényel obszidián sablont."
+    "desc_en": "Redstone dust with an added utility effect: right-clicking consumes one and grants XP. In newer versions it can also come from redstone ore through the Large Furnace route.",
+    "desc_hu": "Vöröskőpor extra utility hatással: jobb kattintással elfogyaszt egyet és XP-t ad. Újabb verziókban vöröskőércből a Nagy Kemence útvonalán is szerezhető.",
+    "desc_ru": "Редстоуновая пыль с дополнительной утилитарной функцией: при правом клике расходуется и даёт XP. В новых версиях её также можно получать из редстоуновой руды через Большую печь.",
+    "versions_en": [
+      "v0.5.7: In Hardcore, one redstone grants 20 XP instead of 30.",
+      "v0.6.0: Redstone ore can also be processed through the Large Furnace route without an Obsidian Template."
+    ],
+    "versions_hu": [
+      "v0.5.7: Hardcore módban egy vöröskő 30 helyett 20 XP-t ad.",
+      "v0.6.0: A vöröskőérc Obszidián Forma nélkül, a Nagy Kemence útvonalán is feldolgozható."
+    ],
+    "versions_ru": [
+      "v0.5.7: В хардкоре один редстоун даёт 20 XP вместо 30.",
+      "v0.6.0: Редстоуновую руду можно обрабатывать через Большую печь без обсидиановой формы."
+    ]
   },
   "chip_flint": {
     "mcmod_id": 772848,
-    "desc": "由 燧石 加工成的碎片材料，用于制作各类燧石工具。也可直接破坏 沙砾 （ 地狱砂砾 ）有12%几率（使用 木筛 为80%）获得。 4个燧石碎片可以合成一个燧石。",
-    "desc_en": "Fragment material processed from flint, used to make various flint tools. You can also directly destroy gravel (hell gravel) with a 12% chance (80% using a wooden sieve). 4 flint fragments can be used to craft one flint.",
-    "desc_hu": "Kovakőből megmunkált töredékanyag, különféle kovakőszerszámok készítéséhez használtak. A kavicsot (pokolkavicsot) közvetlenül is megsemmisítheti 12% eséllyel (80% fa szitával). 4 kovakő töredékből egy kovakő készíthető."
+    "desc": "Flint fragment material used for early flint tools. It can come from breaking gravel directly or more efficiently through sieve routes, and four fragments combine into one flint.",
+    "desc_en": "Flint fragment material used for early flint tools. It can come from breaking gravel directly or more efficiently through sieve routes, and four fragments combine into one flint.",
+    "desc_hu": "Korai kovakőszerszámokhoz használt kovakőtöredék. Jöhet közvetlen kavicstörésből vagy hatékonyabban szitálásból, és négy darab egy teljes kovakővé áll össze.",
+    "desc_ru": "Кремнёвый осколок для ранних кремнёвых инструментов. Получается из прямого разбивания гравия или эффективнее через сито, а четыре осколка собираются в один кремень."
   },
   "rubace_shard": {
     "mcmod_id": 777339,
-    "desc": "在地下世界随机刷新的红水晶洞穴里，破坏完全体的红水晶簇后获得的材料，受到时运采集影响。 单个红水晶碎片右键直接使用可获得500XP。",
-    "desc_en": "In the red crystal caves that are randomly refreshed in the underground world, the materials obtained after destroying all the red crystal clusters are affected by fortune collection. Right-click on a single red crystal fragment and use it directly to get 500XP.",
-    "desc_hu": "A földalatti világban véletlenszerűen felfrissülő vörös kristálybarlangokban az összes vörös kristályhalmaz elpusztítása után nyert anyagokat a vagyongyűjtés befolyásolja. Kattintson a jobb gombbal egy vörös kristálydarabra, és használja közvetlenül az 500XP-hez."
+    "desc": "Red crystal shard obtained from fully grown rubace clusters in Underground crystal caves. It is affected by fortune-like effects and can be consumed directly for 500 XP.",
+    "desc_en": "Red crystal shard obtained from fully grown rubace clusters in Underground crystal caves. It is affected by fortune-like effects and can be consumed directly for 500 XP.",
+    "desc_hu": "Vörös kristályszilánk, amely teljesen kifejlett rubace-halmazon szerezhető a földalatti kristálybarlangokban. A fortune jellegű hatások befolyásolják, és közvetlenül elfogyasztva 500 XP-t ad.",
+    "desc_ru": "Красный кристальный осколок, получаемый с полностью выросших скоплений rubace в подземных кристальных пещерах. На него влияют эффекты удачи, а при прямом использовании он даёт 500 XP."
   },
   "carbon_crystal_shard": {
     "mcmod_id": 777341,
-    "desc": "使用非精准的镐挖掘 碳晶簇 获得，也可由完整的碳晶簇分解可得，用于结合铁装备/工具在冶炼炉里可冶炼成高碳钢装备/工具。",
-    "desc_en": "Use a non-precise pickaxe to mine Carbon Clusters, which can also be obtained by decomposing complete Carbon Clusters. They can be combined with iron equipment/tools to be smelted into high-carbon steel equipment/tools in a smelting furnace.",
-    "desc_hu": "Használjon nem precíz csákányt a szénhalmazok bányászásához, amelyet teljes szénhalmazok lebontásával is megkaphat. Kombinálhatók vasberendezésekkel/szerszámokkal, melyeket olvasztókemencében nagy széntartalmú acélberendezésekké/szerszámokká olvasztanak."
+    "desc": "Carbon crystal shard obtained from carbon crystal deposits or by breaking down full clusters. It is the key additive for turning iron gear into high-carbon steel through the smelting route.",
+    "desc_en": "Carbon crystal shard obtained from carbon crystal deposits or by breaking down full clusters. It is the key additive for turning iron gear into high-carbon steel through the smelting route.",
+    "desc_hu": "Szénkristályszilánk, amely szénkristály-lerakódásból vagy teljes halmazok lebontásából jön. Ez a fő adalék a vasfelszerelések nagy széntartalmú acéllá alakításához az olvasztási útvonalon.",
+    "desc_ru": "Осколок углеродного кристалла, получаемый из залежей углеродного кристалла или при разборе полных скоплений. Это основной компонент для превращения железного снаряжения в высокоуглеродистую сталь через плавильный путь."
   },
   "mesh_string": {
     "mcmod_id": 777404,
