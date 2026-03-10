@@ -349,7 +349,7 @@ export default function ItemExplorer() {
         <div style={{ display: 'flex', alignItems: 'center', gap: 5, flexWrap: 'wrap' }}>
           <span style={{ fontSize: '.72em', color: 'var(--text2)', textTransform: 'uppercase',
             letterSpacing: '.6px', fontWeight: 600, minWidth: 64, marginRight: 2, flexShrink: 0 }}>
-            Tier
+            {lang === 'hu' ? 'Tier' : lang === 'ru' ? 'Уровень' : 'Tier'}
           </span>
           {TIER_ORDER.filter(t => tiersInCat.has(t)).map(tier => {
             const meta = TIER_META[tier];
