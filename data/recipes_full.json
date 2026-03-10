@@ -25890,7 +25890,54 @@
         "planks_jungle"
       ]
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "copper_block",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        "_",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "_"
+      ]
+    ]
   },
   {
     "id": "silver_shield_1148",
@@ -25942,7 +25989,54 @@
         "planks_jungle"
       ]
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "silver_block",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        "_",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "_"
+      ]
+    ]
   },
   {
     "id": "iron_shield_1152",
@@ -25994,7 +26088,54 @@
         "planks_jungle"
       ]
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "iron_block",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        "_",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "_"
+      ]
+    ]
   },
   {
     "id": "gold_shield_1156",
@@ -26046,7 +26187,54 @@
         "planks_jungle"
       ]
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "gold_block",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        "_",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "_"
+      ]
+    ]
   },
   {
     "id": "ancient_metal_shield_1160",
@@ -26098,7 +26286,54 @@
         "planks_jungle"
       ]
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "ancient_metal_block",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        "_",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "_"
+      ]
+    ]
   },
   {
     "id": "hard_stone_shield_1164",
@@ -26150,7 +26385,54 @@
         "planks_jungle"
       ]
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "hardstone_block",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        "_",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "_"
+      ]
+    ]
   },
   {
     "id": "mithril_shield_1168",
@@ -26202,7 +26484,54 @@
         "planks_jungle"
       ]
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "mithril_block",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        "_",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "_"
+      ]
+    ]
   },
   {
     "id": "adamantium_shield_1172",
@@ -26254,7 +26583,54 @@
         "planks_jungle"
       ]
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "adamantium_block",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        "_",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "_"
+      ]
+    ]
   },
   {
     "id": "ancient_metal_barrel_upgrade_1176",
