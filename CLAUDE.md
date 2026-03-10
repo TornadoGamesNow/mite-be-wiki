@@ -30,7 +30,7 @@ Nincs tesztelési parancs. Lokális ellenőrzés: `npm run build` (ha hibátlanu
 `src/islands/` — React "islands" (client-side interaktív):
 - `MobExplorer.tsx` — mob kereső/szűrő
 - `RecipeBrowser.tsx` / `RecipesHub.tsx` — recept böngésző
-- `SearchBox.tsx`, `LanguageSwitcher.tsx`, `VersionToggle.tsx`
+- `LanguageSwitcher.tsx`, `CraftingTree.tsx`
 
 ### Adat-réteg
 

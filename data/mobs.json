@@ -1672,7 +1672,7 @@
     "dmgType": "melee",
     "xp": 40,
     "spawnZones": [
-      "unknown"
+      "end"
     ],
     "difficulty": "late",
     "tags": [
@@ -1733,7 +1733,7 @@
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
-      "unknown"
+      "end"
     ],
     "difficulty": "late",
     "tags": [
@@ -1795,7 +1795,7 @@
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
-      "unknown"
+      "end"
     ],
     "difficulty": "late",
     "tags": [
@@ -1857,7 +1857,7 @@
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
-      "unknown"
+      "end"
     ],
     "difficulty": "late",
     "tags": [
@@ -3683,7 +3683,7 @@
     "dmgType": "explosion",
     "xp": 40,
     "spawnZones": [
-      "unknown"
+      "end"
     ],
     "difficulty": "late",
     "tags": [
@@ -4851,7 +4851,7 @@
     "dmgType": "melee",
     "xp": 5,
     "spawnZones": [
-      "unknown"
+      "end"
     ],
     "difficulty": "late",
     "tags": [
@@ -4945,7 +4945,7 @@
     "dmgType": "melee",
     "xp": 100,
     "spawnZones": [
-      "unknown"
+      "end"
     ],
     "difficulty": "boss",
     "tags": [
