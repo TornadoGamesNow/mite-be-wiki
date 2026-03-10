@@ -130,17 +130,18 @@
     "tier": null,
     "category": "material"
   },
-  "stone_hatchet": {
+  "flint_hatchet": {
     "name": {
-      "hu": "Kova Kézbalta",
-      "en": "Flint Short Hatchet",
-      "ru": "Кремниевый короткий топорик"
+      "hu": "Kova Balta",
+      "en": "Flint Hatchet",
+      "ru": "Кремниевый топорик"
     },
     "img": "img/items/flint_hatchet.png",
     "tier": "flint",
-    "category": "tool"
+    "category": "tool",
+    "max_durability": 400
   },
-  "stone_axe": {
+  "flint_axe": {
     "name": {
       "hu": "Kova Fejsze",
       "en": "Flint Axe",
@@ -148,21 +149,21 @@
     },
     "img": "img/items/flint_axe.png",
     "tier": "flint",
-    "category": "tool",
-    "removed_in": "pre-0.5.5"
+    "category": "weapon",
+    "max_durability": 1200
   },
-  "stone_pickaxe": {
+  "flint_pickaxe": {
     "name": {
       "hu": "Kova Csákány",
       "en": "Flint Pickaxe",
       "ru": "Кремниевая кирка"
     },
-    "img": "img/items/stone_pickaxe.png",
+    "img": "img/items/flint_pickaxe.png",
     "tier": "flint",
-    "category": "tool",
-    "removed_in": "pre-0.5.5"
+    "max_durability": 1200,
+    "category": "tool"
   },
-  "stone_shovel": {
+  "flint_shovel": {
     "name": {
       "hu": "Kova Ásó",
       "en": "Flint Shovel",
@@ -171,48 +172,7 @@
     "img": "img/items/flint_shovel.png",
     "tier": "flint",
     "category": "tool",
-    "removed_in": "pre-0.5.5"
-  },
-  "stone_spear": {
-    "name": {
-      "hu": "Hegyes Kova Lándzsa",
-      "en": "Sharp Flint Spear",
-      "ru": "Острое кремниевое копьё"
-    },
-    "img": "img/items/flint_spear.png",
-    "tier": "flint",
-    "category": "weapon",
-    "removed_in": "pre-0.5.5"
-  },
-  "stone_sword": {
-    "name": {
-      "hu": "Kova Kard",
-      "en": "Flint Sword",
-      "ru": "Кремниевый меч"
-    },
-    "img": "img/items/stone_sword.png",
-    "tier": "flint",
-    "category": "weapon"
-  },
-  "stone_hoe": {
-    "name": {
-      "hu": "Kova Kapa",
-      "en": "Flint Hoe",
-      "ru": "Кремниевая мотыга"
-    },
-    "img": "img/items/stone_hoe.png",
-    "tier": "flint",
-    "category": "tool"
-  },
-  "stone_dagger": {
-    "name": {
-      "hu": "Kova Tőr",
-      "en": "Flint Dagger",
-      "ru": "Кремниевый кинжал"
-    },
-    "img": "img/items/stone_dagger.png",
-    "tier": "flint",
-    "category": "weapon"
+    "max_durability": 400
   },
   "wooden_sieve": {
     "name": {
@@ -4575,50 +4535,6 @@
     "tier": "flint",
     "category": "tool"
   },
-  "flint_axe": {
-    "name": {
-      "hu": "Kova Fejsze",
-      "en": "Flint Axe",
-      "ru": "Кремниевый топор"
-    },
-    "img": "img/items/flint_axe.png",
-    "tier": "flint",
-    "category": "weapon",
-    "max_durability": 1200
-  },
-  "flint_hatchet": {
-    "name": {
-      "hu": "Kova Balta",
-      "en": "Flint Hatchet",
-      "ru": "Кремниевый топорик"
-    },
-    "img": "img/items/flint_hatchet.png",
-    "tier": "flint",
-    "category": "tool",
-    "max_durability": 400
-  },
-  "flint_pickaxe": {
-    "name": {
-      "hu": "Kova Csákány",
-      "en": "Flint Pickaxe",
-      "ru": "Кремниевая кирка"
-    },
-    "img": "img/items/flint_pickaxe.png",
-    "tier": "flint",
-    "max_durability": 1200,
-    "category": "tool"
-  },
-  "flint_shovel": {
-    "name": {
-      "hu": "Kova Ásó",
-      "en": "Flint Shovel",
-      "ru": "Кремниевая лопата"
-    },
-    "img": "img/items/flint_shovel.png",
-    "tier": "flint",
-    "category": "tool",
-    "max_durability": 400
-  },
   "flour": {
     "name": {
       "hu": "Liszt",
@@ -8497,16 +8413,6 @@
     "tier": null,
     "category": "food"
   },
-  "water_filter": {
-    "name": {
-      "hu": "Vízszűrő",
-      "en": "Water Filter",
-      "ru": "Фильтр воды"
-    },
-    "img": "img/items/water_filter.png",
-    "tier": null,
-    "category": "block"
-  },
   "water_skin": {
     "name": {
       "hu": "Víztömlő",
@@ -9613,7 +9519,8 @@
     },
     "img": "img/items/blast_furnace.png",
     "tier": null,
-    "category": "station"
+    "category": "station",
+    "removed_in": "0.1.0"
   },
   "enchantment_table": {
     "name": {
@@ -10840,17 +10747,6 @@
     "tier": null,
     "category": "material"
   },
-  "flint_spear": {
-    "name": {
-      "hu": "Kova Lándzsa",
-      "en": "Flint Spear",
-      "ru": "Кремниевое копьё"
-    },
-    "img": "img/items/flint_spear.png",
-    "tier": "flint",
-    "category": "weapon",
-    "max_durability": 10
-  },
   "bone_cudgel": {
     "name": {
       "hu": "Csont Bunkós Bot",
@@ -11587,5 +11483,71 @@
     "img": "img/items/adamantium_bucket_filled_with_lava.png",
     "tier": "adamantium",
     "category": "tool"
+  },
+  "copper_filter_paper": {
+    "name": {
+      "hu": "Réz Szűrőpapír",
+      "en": "Copper Filter Paper",
+      "ru": "Медная фильтровальная бумага"
+    },
+    "img": "img/items/advanced_filter_paper.png",
+    "tier": null,
+    "category": "misc",
+    "removed_in": "0.9.0"
+  },
+  "silver_filter_paper": {
+    "name": {
+      "hu": "Ezüst Szűrőpapír",
+      "en": "Silver Filter Paper",
+      "ru": "Серебряная фильтровальная бумага"
+    },
+    "img": "img/items/advanced_filter_paper.png",
+    "tier": null,
+    "category": "misc",
+    "removed_in": "0.9.0"
+  },
+  "iron_filter_paper": {
+    "name": {
+      "hu": "Vas Szűrőpapír",
+      "en": "Iron Filter Paper",
+      "ru": "Железная фильтровальная бумага"
+    },
+    "img": "img/items/advanced_filter_paper.png",
+    "tier": null,
+    "category": "misc",
+    "removed_in": "0.9.0"
+  },
+  "hardstone_filter_paper": {
+    "name": {
+      "hu": "Kemény Kő Szűrőpapír",
+      "en": "Hard Stone Filter Paper",
+      "ru": "Твёрдокаменная фильтровальная бумага"
+    },
+    "img": "img/items/advanced_filter_paper.png",
+    "tier": null,
+    "category": "misc",
+    "removed_in": "0.9.0"
+  },
+  "mithril_filter_paper": {
+    "name": {
+      "hu": "Mitril Szűrőpapír",
+      "en": "Mithril Filter Paper",
+      "ru": "Митриловая фильтровальная бумага"
+    },
+    "img": "img/items/advanced_filter_paper.png",
+    "tier": null,
+    "category": "misc",
+    "removed_in": "0.9.0"
+  },
+  "adamantium_filter_paper": {
+    "name": {
+      "hu": "Adamantium Szűrőpapír",
+      "en": "Adamantium Filter Paper",
+      "ru": "Адамантиевая фильтровальная бумага"
+    },
+    "img": "img/items/advanced_filter_paper.png",
+    "tier": null,
+    "category": "misc",
+    "removed_in": "0.9.0"
   }
 }

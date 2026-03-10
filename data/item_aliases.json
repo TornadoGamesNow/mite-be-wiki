@@ -2,5 +2,9 @@
   "glow_stone_torch": "glowstone_torch",
   "hard_ened_clay": "hardened_clay",
   "miner_s_helmet": "miner_helmet",
-  "waystone": "way_stone"
+  "waystone": "way_stone",
+  "stone_furnace_core": "furnace_core_stone",
+  "obsidian_furnace_core": "furnace_core_obsidian",
+  "nether_furnace_core": "furnace_core_netherrack",
+  "netherrack_furnace_idle": "netherrack_furnace"
 }

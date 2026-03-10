@@ -81,6 +81,22 @@ function flattenIngredients(ings: (string | string[])[]): string[] {
   return ings.map(flattenIngredient);
 }
 
+function normalizeGridCell(cell: string | string[] | null | undefined): string | string[] | null {
+  if (Array.isArray(cell)) return cell.map(id => getCanonicalItemId(id));
+  if (cell == null || cell === '_') return null;
+  return getCanonicalItemId(cell);
+}
+
+function cellsMatch(patternCell: string | string[] | null | undefined, gridCell: string | null | undefined): boolean {
+  const normalizedPattern = normalizeGridCell(patternCell);
+  const normalizedGrid = normalizeGridCell(gridCell);
+
+  if (normalizedPattern == null) return normalizedGrid == null;
+  if (normalizedGrid == null) return false;
+  if (Array.isArray(normalizedPattern)) return normalizedPattern.includes(normalizedGrid);
+  return normalizedPattern === normalizedGrid;
+}
+
 function ItemIcon({ id, size = 32 }: { id: string; size?: number }) {
   const img = getItemImg(id);
   if (img) {
@@ -364,6 +380,41 @@ function getRecipeSignature(recipe: FullRecipe): string {
   });
 }
 
+function getRecipeLooseSignature(recipe: FullRecipe): string {
+  const ingredients = (recipe.ingredients ?? [])
+    .map(normalizeRecipeValue)
+    .map(value => JSON.stringify(value))
+    .sort();
+  return JSON.stringify({
+    output: normalizeRecipeValue(recipe.output),
+    outputQty: recipe.outputQty,
+    station: normalizeRecipeValue(recipe.station),
+    ingredients,
+  });
+}
+
+function compareRecipesForDedup(outputId: string, a: FullRecipe, b: FullRecipe): number {
+  const legacyDiff = Number(isRecipeLegacy(outputId, a)) - Number(isRecipeLegacy(outputId, b));
+  if (legacyDiff !== 0) return legacyDiff;
+
+  const shapedDiff = Number(!a.shaped) - Number(!b.shaped);
+  if (shapedDiff !== 0) return shapedDiff;
+
+  const patternDiff = Number(!(a.pattern && a.shaped)) - Number(!(b.pattern && b.shaped));
+  if (patternDiff !== 0) return patternDiff;
+
+  const sourceDiff = Number(getRecipeSourceId(outputId, a) !== outputId) - Number(getRecipeSourceId(outputId, b) !== outputId);
+  if (sourceDiff !== 0) return sourceDiff;
+
+  const skillsDiff = Number((b.skills?.length ?? 0) > 0) - Number((a.skills?.length ?? 0) > 0);
+  if (skillsDiff !== 0) return skillsDiff;
+
+  const difficultyPresenceDiff = Number((b.difficulty ?? 0) > 0) - Number((a.difficulty ?? 0) > 0);
+  if (difficultyPresenceDiff !== 0) return difficultyPresenceDiff;
+
+  return compareRecipes(outputId, a, b);
+}
+
 function isRecipeLegacy(outputId: string, recipe: FullRecipe): boolean {
   const sourceId = getRecipeSourceId(outputId, recipe);
   return !!(recipe as any).removed_version || isOutputRemoved(sourceId);
@@ -382,6 +433,12 @@ function compareRecipes(outputId: string, a: FullRecipe, b: FullRecipe): number 
   const sourceDiff = Number(getRecipeSourceId(outputId, a) !== outputId) - Number(getRecipeSourceId(outputId, b) !== outputId);
   if (sourceDiff !== 0) return sourceDiff;
 
+  const outputQtyDiff = (a.outputQty || 1) - (b.outputQty || 1);
+  if (outputQtyDiff !== 0) return outputQtyDiff;
+
+  const ingredientCountDiff = (a.ingredients?.length ?? 0) - (b.ingredients?.length ?? 0);
+  if (ingredientCountDiff !== 0) return ingredientCountDiff;
+
   const difficultyDiff = a.difficulty - b.difficulty;
   if (difficultyDiff !== 0) return difficultyDiff;
 
@@ -397,7 +454,15 @@ function sortGroupRecipes(group: OutputGroup): OutputGroup {
       deduped.set(sig, recipe);
     }
   }
-  const recipes = [...deduped.values()].sort((a, b) => compareRecipes(group.outputId, a, b));
+  const relaxed = new Map<string, FullRecipe>();
+  for (const recipe of deduped.values()) {
+    const sig = getRecipeLooseSignature(recipe);
+    const prev = relaxed.get(sig);
+    if (!prev || compareRecipesForDedup(group.outputId, recipe, prev) < 0) {
+      relaxed.set(sig, recipe);
+    }
+  }
+  const recipes = [...relaxed.values()].sort((a, b) => compareRecipes(group.outputId, a, b));
   return {
     ...group,
     recipes,
@@ -427,16 +492,20 @@ function groupByOutput(recs: FullRecipe[]): OutputGroup[] {
 function matchShaped(grid: (string | null)[][], recs: FullRecipe[]): FullRecipe[] {
   return recs.filter(r => r.shaped && r.pattern).filter(r =>
     r.pattern!.every((row, ri) => row.every((_cell, ci) =>
-      (_cell ?? null) === (grid[ri]?.[ci] ?? null)
+      cellsMatch(_cell as any, grid[ri]?.[ci] ?? null)
     ))
   );
 }
 
 function matchShapeless(grid: (string | null)[][], recs: FullRecipe[]): FullRecipe[] {
-  const placed = grid.flat().filter((x): x is string => Boolean(x)).sort();
+  const placed = grid
+    .flat()
+    .filter((x): x is string => Boolean(x))
+    .map(id => getCanonicalItemId(id))
+    .sort();
   if (placed.length === 0) return [];
   return recs.filter(r => !r.shaped).filter(r => {
-    const needed = flattenIngredients(r.ingredients).sort();
+    const needed = flattenIngredients(r.ingredients).map(id => getCanonicalItemId(id)).sort();
     return JSON.stringify(placed) === JSON.stringify(needed);
   });
 }
@@ -498,6 +567,7 @@ const allSkills = [...new Set(recipes.flatMap(r => r.skills))].sort();
 
 const STATION_LABELS: Record<string, { hu: string; en: string; ru: string }> = {
   hand:                    { hu: 'Kézzel',                    en: 'By hand',                  ru: 'Руками' },
+  workbench:               { hu: 'Munkaasztal',               en: 'Workbench',                ru: 'Верстак' },
   flint_workbench:         { hu: 'Kovamunkaasztal',        en: 'Flint Workbench',           ru: 'Кремнёвый верстак' },
   copper_workbench:        { hu: 'Rézmunkaasztal',           en: 'Copper Workbench',          ru: 'Медный верстак' },
   silver_workbench:        { hu: 'Ezüstmunkaasztal',         en: 'Silver Workbench',          ru: 'Серебряный верстак' },
@@ -1432,7 +1502,7 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               {allMatches.map((r, i) => {
-                const outId = getOutputId(r.output);
+                const outId = getRecipeOutputId(r.output);
                 return (
                   <div key={`${outId}-${i}`} className="result-match" style={{
                     background: 'linear-gradient(145deg, #332a1a, #251e10)',

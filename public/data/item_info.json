@@ -1781,183 +1781,345 @@
   },
   "silver_shears": {
     "mcmod_id": 773504,
-    "desc": "攻击伤害+3，最大品质可达精良。 对亡灵怪物有伤害加成， 可以攻击白色食尸鬼。 0.6.0版本修改银剪刀只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的银剪刀所需的经验值： 普通 优秀 精良 银剪刀 0 320 640",
+    "desc": "Silver shears with 3 attack damage. Strong against undead and can hit white ghouls. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改银剪刀只能在"
+      "v0.6.0: Silver shears were moved to furnace crafting."
     ],
     "desc_en": "Silver shears with 3 attack damage. Strong against undead and can hit white ghouls. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "3 sebzésű ezüst olló. Erős az élőholtak ellen, és megsebezheti a fehér ghoulokat. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Серебряные ножницы с уроном 3. Эффективны против нежити и могут бить белых гулей. Крафтятся в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Серебряные ножницы с уроном 3. Эффективны против нежити и могут бить белых гулей. Крафтятся в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Silver shears were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ezüst ollók kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Серебряные ножницы были переведены на крафт через печи."
+    ]
   },
   "gold_shears": {
     "mcmod_id": 773505,
-    "desc": "攻击伤害+2，最大品质可达史诗。 0.6.0版本修改金剪刀只能在 大型熔炉 中合成。 制作不同品质的金剪刀所需的经验值： 普通 优秀 精良 史诗 金剪刀 0 320 640 1280",
+    "desc": "Gold shears with 2 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改金剪刀只能在"
+      "v0.6.0: Gold shears were moved to furnace crafting."
     ],
     "desc_en": "Gold shears with 2 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "2 sebzésű arany olló. Nagy kemencében készül.",
-    "desc_ru": "Золотые ножницы с уроном 2. Крафтятся в большой печи."
+    "desc_ru": "Золотые ножницы с уроном 2. Крафтятся в большой печи.",
+    "versions_en": [
+      "v0.6.0: Gold shears were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az arany ollók kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Золотые ножницы были переведены на крафт через печи."
+    ]
   },
   "iron_shears": {
     "mcmod_id": 773506,
-    "desc": "攻击伤害+4，最大品质可达传说。 0.6.0版本修改铁剪刀只能在 大型熔炉 中合成。 制作不同品质的铁剪刀所需的经验值： 普通 优秀 精良 史诗 传说 铁剪刀 0 640 1280 2560 5120",
+    "desc": "Iron shears with 4 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改铁剪刀只能在"
+      "v0.6.0: Iron shears were moved to furnace crafting."
     ],
     "desc_en": "Iron shears with 4 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "4 sebzésű vasolló. Nagy kemencében készül.",
-    "desc_ru": "Железные ножницы с уроном 4. Крафтятся в большой печи."
+    "desc_ru": "Железные ножницы с уроном 4. Крафтятся в большой печи.",
+    "versions_en": [
+      "v0.6.0: Iron shears were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A vasollók kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Железные ножницы были переведены на крафт через печи."
+    ]
   },
   "mithril_shears": {
     "mcmod_id": 773508,
-    "desc": "攻击伤害+7， 最大品质可达神器。 0.6.0版本修改秘银剪刀只能在 大型熔炉 中合成。 制作不同品质的秘银剪刀所需的经验值： 普通 优秀 精良 史诗 传说 神器 秘银剪刀 0 5120 10240 20480 40960 81920",
+    "desc": "Mithril shears with 7 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改秘银剪刀只能在"
+      "v0.6.0: Mithril shears were moved to furnace crafting."
     ],
     "desc_en": "Mithril shears with 7 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "7 sebzésű mithril olló. Nagy kemencében készül.",
-    "desc_ru": "Мифриловые ножницы с уроном 7. Крафтятся в большой печи."
+    "desc_ru": "Мифриловые ножницы с уроном 7. Крафтятся в большой печи.",
+    "versions_en": [
+      "v0.6.0: Mithril shears were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A mithril ollók kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Мифриловые ножницы были переведены на крафт через печи."
+    ]
   },
   "adamantium_shears": {
     "mcmod_id": 773509,
-    "desc": "攻击伤害+6，最大品质可达到神器。 0.6.0版本修改艾德曼剪刀只能在 大型熔炉 中合成。 制作不同品质的艾德曼剪刀所需的经验值： 普通 优秀 精良 史诗 传说 神器 艾德曼剪刀 0 20480 40960 81920 163840 327680",
+    "desc": "Adamantium shears with 6 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改艾德曼剪刀只能在"
+      "v0.6.0: Adamantium shears were moved to furnace crafting."
     ],
     "desc_en": "Adamantium shears with 6 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "6 sebzésű adamantium olló. Nagy kemencében készül.",
-    "desc_ru": "Адамантиевые ножницы с уроном 6. Крафтятся в большой печи."
+    "desc_ru": "Адамантиевые ножницы с уроном 6. Крафтятся в большой печи.",
+    "versions_en": [
+      "v0.6.0: Adamantium shears were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az adamantium ollók kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Адамантиевые ножницы были переведены на крафт через печи."
+    ]
   },
   "hard_stone_shears": {
     "mcmod_id": 443991,
-    "desc": "攻击伤害+4。左键点击可用来快速破坏 草 ，点击右键可以剪下草。可用附魔： 精准采集 ，品质最大可达到精良。 硬石工具无法被腐蚀，并且减少20%耐久消耗。 0.6.0版本修改硬石剪刀只能在 大型熔炉 中合成。 制作不同品质的硬石剪刀所需的经验值： 普通 优秀 精良 硬石剪刀 0 1280 2560",
+    "desc": "Hardstone shears with 4 attack damage. Useful for cutting grass, resists corrosion, and loses 20% less durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改硬石剪刀只能在"
+      "v0.6.0: Hardstone shears were moved to furnace crafting."
     ],
     "desc_en": "Hardstone shears with 4 attack damage. Useful for cutting grass, resists corrosion, and loses 20% less durability. Crafted in the Large Furnace.",
     "desc_hu": "4 sebzésű keménykő olló. Fű nyírására is használható, ellenáll a korróziónak, és 20%-kal lassabban kopik. Nagy kemencében készül.",
-    "desc_ru": "Твердокаменные ножницы с уроном 4. Подходят для срезания травы, не ржавеют и теряют на 20% меньше прочности. Крафтятся в большой печи."
+    "desc_ru": "Твердокаменные ножницы с уроном 4. Подходят для срезания травы, не ржавеют и теряют на 20% меньше прочности. Крафтятся в большой печи.",
+    "versions_en": [
+      "v0.6.0: Hardstone shears were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A keménykő ollók kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Твердокаменные ножницы были переведены на крафт через печи."
+    ]
   },
   "silver_hatchet": {
     "mcmod_id": 773564,
-    "desc": "攻击伤害+5，最大品质可达精良。 对亡灵怪物有伤害加成， 可以攻击白色食尸鬼。 0.6.0版本修改银手斧只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的银手斧所需的经验值： 普通 优秀 精良 银手斧 0 180 360",
+    "desc": "Silver hand axe with 5 attack damage. Strong against undead and can hit white ghouls. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改银手斧只能在"
+      "v0.6.0: Silver hand axes were moved to furnace crafting."
     ],
     "desc_en": "Silver hand axe with 5 attack damage. Strong against undead and can hit white ghouls. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "5 sebzésű ezüst kézifejsze. Erős az élőholtak ellen, és megsebezheti a fehér ghoulokat. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Серебряный ручной топор с уроном 5. Эффективен против нежити и может бить белых гулей. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Серебряный ручной топор с уроном 5. Эффективен против нежити и может бить белых гулей. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Silver hand axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ezüst kézifejszék kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Серебряные ручные топоры были переведены на крафт через печи."
+    ]
   },
   "gold_hatchet": {
     "mcmod_id": 773565,
-    "desc": "攻击伤害+4，最大品质可达史诗。 0.6.0版本修改金手斧只能在 大型熔炉 中合成。 制作不同品质的金手斧所需的经验值： 普通 优秀 精良 史诗 金手斧 0 180 360 720",
+    "desc": "Gold hand axe with 4 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改金手斧只能在"
+      "v0.6.0: Gold hand axes were moved to furnace crafting."
     ],
     "desc_en": "Gold hand axe with 4 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "4 sebzésű arany kézifejsze. Nagy kemencében készül.",
-    "desc_ru": "Золотой топорик с уроном 4. Крафтится в большой печи."
+    "desc_ru": "Золотой топорик с уроном 4. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Gold hand axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az arany kézifejszék kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Золотые ручные топоры были переведены на крафт через печи."
+    ]
   },
   "mithril_hatchet": {
     "mcmod_id": 773568,
-    "desc": "攻击伤害+9，最大品质可达神器。 0.6.0版本修改秘银手斧只能在 大型熔炉 中合成。 制作不同品质的秘银手斧所需的经验值： 普通 优秀 精良 史诗 传说 神器 秘银手斧 0 2580 5160 10320 20640 41280",
+    "desc": "Mithril hand axe with 9 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改秘银手斧只能在"
+      "v0.6.0: Mithril hand axes were moved to furnace crafting."
     ],
     "desc_en": "Mithril hand axe with 9 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "9 sebzésű mithril kézifejsze. Nagy kemencében készül.",
-    "desc_ru": "Мифриловый ручной топор с уроном 9. Крафтится в большой печи."
+    "desc_ru": "Мифриловый ручной топор с уроном 9. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Mithril hand axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A mithril kézifejszék kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Мифриловые ручные топоры были переведены на крафт через печи."
+    ]
   },
   "adamantium_hatchet": {
     "mcmod_id": 773569,
-    "desc": "攻击伤害+8，最大品质可达到神器。 0.6.0版本修改艾德曼手斧只能在 大型熔炉 中合成。 制作不同品质的艾德曼手斧所需的经验值： 普通 优秀 精良 史诗 传说 神器 艾德曼手斧 0 10260 20520 41040 82080 164160",
+    "desc": "Adamantium hand axe with 8 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改艾德曼手斧只能在"
+      "v0.6.0: Adamantium hand axes were moved to furnace crafting."
     ],
     "desc_en": "Adamantium hand axe with 8 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "8 sebzésű adamantium kézifejsze. Nagy kemencében készül.",
-    "desc_ru": "Адамантиевый ручной топор с уроном 8. Крафтится в большой печи."
+    "desc_ru": "Адамантиевый ручной топор с уроном 8. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Adamantium hand axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az adamantium kézifejszék kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Адамантиевые ручные топоры были переведены на крафт через печи."
+    ]
   },
   "ancient_metal_hatchet": {
     "mcmod_id": 773567,
-    "desc": "攻击伤害+7，最大品质可达传说。 远古金属工具不会被腐蚀。 0.6.0版本修改远古金属手斧只能在 大型熔炉 中合成。 制作不同品质的远古金属手斧所需的经验值： 普通 优秀 精良 史诗 传说 远古金属手斧 0 660 1320 2640 5280",
+    "desc": "Ancient metal hand axe with 7 attack damage. Does not corrode. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改远古金属手斧只能在"
+      "v0.6.0: Ancient Metal hand axes were moved to furnace crafting."
     ],
     "desc_en": "Ancient metal hand axe with 7 attack damage. Does not corrode. Crafted in the Large Furnace.",
     "desc_hu": "7 sebzésű ősi fém kézifejsze. Nem korrodálódik. Nagy kemencében készül.",
-    "desc_ru": "Ручной топор из древнего металла с уроном 7. Не подвержен коррозии. Крафтится в большой печи."
+    "desc_ru": "Ручной топор из древнего металла с уроном 7. Не подвержен коррозии. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Ancient Metal hand axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ősi fém kézifejszék kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Ручные топоры из древнего металла были переведены на крафт через печи."
+    ]
   },
   "hardstone_hatchet": {
     "mcmod_id": 773560,
-    "desc": "攻击伤害+6，最大品质可达精良。 手斧工具砍伐原木（硬度为120）有额外耐久损耗，一次消耗160点耐久。使用大斧头则不会有此额外损耗。 硬石工具无法被腐蚀，并且减少20%耐久消耗。 0.6.0版本修改硬石手斧只能在 大型熔炉 中合成。 制作不同品质的硬石手斧所需的经验值： 普通 优秀 精良 硬石手斧 0 660 1320",
+    "desc": "Hardstone hand axe with 6 attack damage. Resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改硬石手斧只能在"
+      "v0.6.0: Hardstone hand axes were moved to furnace crafting."
     ],
     "desc_en": "Hardstone hand axe with 6 attack damage. Resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
     "desc_hu": "6 sebzésű keménykő kézifejsze. Ellenáll a korróziónak, és 20%-kal lassabban kopik. Nagy kemencében készül.",
-    "desc_ru": "Твердокаменный топорик с уроном 6. Не ржавеет и теряет на 20% меньше прочности. Крафтится в большой печи."
+    "desc_ru": "Твердокаменный топорик с уроном 6. Не ржавеет и теряет на 20% меньше прочности. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Hardstone hand axes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A keménykő kézifejszék kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Твердокаменные ручные топоры были переведены на крафт через печи."
+    ]
   },
   "silver_hoe": {
     "mcmod_id": 773639,
-    "desc": "攻击伤害+4，最大品质可达精良。 对亡灵怪物有伤害加成， 可以攻击白色食尸鬼。 0.6.0版本修改银锄只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的银锄所需的经验值： 普通 优秀 精良 银锄 0 340 680",
+    "desc": "Silver hoe with 4 attack damage. Strong against undead and can hit white ghouls. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改银锄只能在"
+      "v0.6.0: Silver hoes were moved to furnace crafting."
     ],
     "desc_en": "Silver hoe with 4 attack damage. Strong against undead and can hit white ghouls. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "4 sebzésű ezüst kapa. Erős az élőholtak ellen, és megsebezheti a fehér ghoulokat. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Серебряная мотыга с уроном 4. Эффективна против нежити и может бить белых гулей. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Серебряная мотыга с уроном 4. Эффективна против нежити и может бить белых гулей. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Silver hoes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ezüst kapák kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Серебряные мотыги были переведены на крафт через печи."
+    ]
   },
   "gold_hoe": {
     "mcmod_id": 773640,
-    "desc": "攻击伤害+3，最大品质可达史诗。 0.6.0版本修改金锄只能在 大型熔炉 中合成。 制作不同品质的金锄所需的经验值： 普通 优秀 精良 史诗 金锄 0 340 680 1360",
+    "desc": "Gold hoe with 3 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改金锄只能在"
+      "v0.6.0: Gold hoes were moved to furnace crafting."
     ],
     "desc_en": "Gold hoe with 3 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "3 sebzésű arany kapa. Nagy kemencében készül.",
-    "desc_ru": "Золотая мотыга с уроном 3. Крафтится в большой печи."
+    "desc_ru": "Золотая мотыга с уроном 3. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Gold hoes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az arany kapák kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Золотые мотыги были переведены на крафт через печи."
+    ]
   },
   "mithril_hoe": {
     "mcmod_id": 773643,
-    "desc": "攻击伤害+8，最大品质可达神器。 0.6.0版本修改秘银锄只能在 大型熔炉 中合成。 制作不同品质的秘银锄所需的经验值： 普通 优秀 精良 史诗 传说 神器 秘银锄 0 5140 10280 20560 41120 82240",
+    "desc": "Mithril hoe with 8 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改秘银锄只能在"
+      "v0.6.0: Mithril hoes were moved to furnace crafting."
     ],
     "desc_en": "Mithril hoe with 8 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "8 sebzésű mithril kapa. Nagy kemencében készül.",
-    "desc_ru": "Мифриловая мотыга с уроном 8. Крафтится в большой печи."
+    "desc_ru": "Мифриловая мотыга с уроном 8. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Mithril hoes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: A mithril kapák kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Мифриловые мотыги были переведены на крафт через печи."
+    ]
   },
   "adamantium_hoe": {
     "mcmod_id": 773644,
-    "desc": "攻击伤害+7，最大品质可达到神器。 是游戏中耐久度最高的锄头。 0.6.0版本修改艾德曼锄只能在 大型熔炉 中合成。 制作不同品质的艾德曼锄所需的经验值： 普通 优秀 精良 史诗 传说 神器 艾德曼锄 0 20500 41000 82000 164000 328000",
+    "desc": "Adamantium hoe with 7 attack damage. Very high durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改艾德曼锄只能在"
+      "v0.6.0: Adamantium hoes were moved to furnace crafting."
     ],
     "desc_en": "Adamantium hoe with 7 attack damage. Very high durability. Crafted in the Large Furnace.",
     "desc_hu": "7 sebzésű adamantium kapa. Nagyon magas tartósságú eszköz. Nagy kemencében készül.",
-    "desc_ru": "Адамантиевая мотыга с уроном 7. Инструмент с очень высокой прочностью. Крафтится в большой печи."
+    "desc_ru": "Адамантиевая мотыга с уроном 7. Инструмент с очень высокой прочностью. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Adamantium hoes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az adamantium kapák kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Адамантиевые мотыги были переведены на крафт через печи."
+    ]
   },
   "ancient_metal_hoe": {
     "mcmod_id": 773642,
-    "desc": "攻击伤害+6，最大品质可达传说。 远古金属工具不会被腐蚀。 0.6.0版本修改远古金属锄只能在 大型熔炉 中合成。 制作不同品质的远古金属锄所需的经验值： 普通 优秀 精良 史诗 传说 远古金属锄 0 1300 2600 5200 10400",
+    "desc": "Ancient metal hoe with 6 attack damage. Does not corrode. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改远古金属锄只能在"
+      "v0.6.0: Ancient Metal hoes were moved to furnace crafting."
     ],
     "desc_en": "Ancient metal hoe with 6 attack damage. Does not corrode. Crafted in the Large Furnace.",
     "desc_hu": "6 sebzésű ősi fém kapa. Nem korrodálódik. Nagy kemencében készül.",
-    "desc_ru": "Мотыга из древнего металла с уроном 6. Не ржавеет. Крафтится в большой печи."
+    "desc_ru": "Мотыга из древнего металла с уроном 6. Не ржавеет. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Ancient Metal hoes were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ősi fém kapák kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Мотыги из древнего металла были переведены на крафт через печи."
+    ]
   },
   "ancient_metal_shears": {
     "mcmod_id": 773507,
-    "desc": "攻击伤害+5，最大品质可达传说。 远古金属工具不会被腐蚀。 0.6.0版本修改远古金属剪刀只能在 大型熔炉 中合成。 制作不同品质的远古金属剪刀所需的经验值： 普通 优秀 精良 史诗 传说 远古金属剪刀 0 1280 2560 5120 10240",
+    "desc": "Ancient metal shears with 5 attack damage. Does not corrode. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改远古金属剪刀只能在"
+      "v0.6.0: Ancient Metal shears were moved to furnace crafting."
     ],
     "desc_en": "Ancient metal shears with 5 attack damage. Does not corrode. Crafted in the Large Furnace.",
     "desc_hu": "5 sebzésű ősi fém olló. Nem korrodálódik. Nagy kemencében készül.",
-    "desc_ru": "Ножницы из древнего металла с уроном 5. Не подвержены коррозии. Крафтятся в большой печи."
+    "desc_ru": "Ножницы из древнего металла с уроном 5. Не подвержены коррозии. Крафтятся в большой печи.",
+    "versions_en": [
+      "v0.6.0: Ancient Metal shears were moved to furnace crafting."
+    ],
+    "versions_hu": [
+      "v0.6.0: Az ősi fém ollók kemencés gyártásra kerültek át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Ножницы из древнего металла были переведены на крафт через печи."
+    ]
   },
   "torch": {
     "mcmod_id": 772804,
@@ -2041,9 +2203,10 @@
   },
   "obsidian_arrow": {
     "mcmod_id": 773311,
-    "desc": "弹射物伤害+2。 射中生物后有40%的几率可回收。",
-    "desc_en": "Projectile damage +2. There is a 40% chance of being recovered after hitting a creature.",
-    "desc_hu": "Lövedék sérülése +2. 40% esély van a felépülésre, miután eltalált egy lényt."
+    "desc": "Arrow with +2 projectile damage and a 40% recovery chance after hitting a target.",
+    "desc_en": "Arrow with +2 projectile damage and a 40% recovery chance after hitting a target.",
+    "desc_hu": "+2 lövedéksebzésű nyíl, amely találat után 40% eséllyel visszaszerezhető.",
+    "desc_ru": "Стрела с уроном снаряда +2 и шансом 40% вернуться после попадания."
   },
   "ancient_metal_arrow": {
     "mcmod_id": 773316,
@@ -2103,7 +2266,7 @@
   },
   "adamantium_block": {
     "mcmod_id": 773012,
-    "desc": "九个 艾德曼锭 合成。 且艾德曼块拥有良好的爆炸抗性，所以可以当作一种可合成的“基岩”。 可以用来合成艾德曼砧；可以当做信标基座使用；可被活塞或黏性活塞推动 不会被凋灵生成时的爆炸及黑色凋灵之首摧毁，会被凋灵的“强制摧毁”行为摧毁变为掉落物。",
+    "desc": "Crafted from nine Adamantium Ingots. The Adamantium Block has very high blast resistance, so it can function like a craftable near-bedrock-grade block. It is used for Adamantium Anvils, can serve as a beacon base, and can be pushed by pistons. It survives some Wither-related explosions, but not the Wither's forced-destruction behavior.",
     "desc_en": "Crafted from nine Adamantium Ingots. The Adamantium Block has very high blast resistance, so it can function like a craftable near-bedrock-grade block. It is used for Adamantium Anvils, can serve as a beacon base, and can be pushed by pistons. It survives some Wither-related explosions, but not the Wither's forced-destruction behavior.",
     "desc_hu": "Kilenc Adamantium rúdból craftolható. Az Adamantium Blokk nagyon magas robbanásállóságú, ezért egy craftolható, alapkőzet-közeli ellenállású blokkként használható. Adamantium üllőhöz is kell, beacon-alapként is működik, és dugattyúval is tolható. Egyes Wither-robbanásokat túlél, de a Wither kényszerített blokkrombolását nem.",
     "desc_ru": "Крафтится из девяти адамантиевых слитков. Обладает очень высокой взрывостойкостью, поэтому служит почти как создаваемый блок уровня коренной породы. Нужен для адамантиевой наковальни, подходит как основание для маяка и может толкаться поршнем. Некоторые взрывы Визера выдерживает, но не его принудительное разрушение блоков."
@@ -2140,46 +2303,74 @@
   },
   "adamantium_shovel": {
     "mcmod_id": 773559,
-    "desc": "攻击伤害+7，最大品质可达到神器。 0.6.0版本修改艾德曼锹只能在 大型熔炉 中合成。 制作不同品质的艾德曼锹所需的经验值： 普通 优秀 精良 史诗 传说 神器 艾德曼锹 0 10260 20520 41040 82080 164160",
+    "desc": "Adamantium shovel with 7 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改艾德曼锹只能在"
+      "In v0.6.0, Adamantium shovels were moved to the Large Furnace."
     ],
     "desc_en": "Adamantium shovel with 7 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "7 sebzésű adamantium ásó. Nagy kemencében készül.",
-    "desc_ru": "Адамантиевая лопата с уроном 7. Крафтится в большой печи."
+    "desc_ru": "Адамантиевая лопата с уроном 7. Крафтится в большой печи.",
+    "versions_en": [
+      "In v0.6.0, Adamantium shovels were moved to the Large Furnace."
+    ],
+    "versions_hu": [
+      "A 0.6.0-s verzióban az adamantium ásók a Nagy kemencébe kerültek át."
+    ],
+    "versions_ru": [
+      "В версии 0.6.0 адамантиевые лопаты были перенесены в Большую печь."
+    ]
   },
   "barrel_ancient_metal_upgrade": {
     "mcmod_id": 785078,
-    "desc": "手持升级道具，按住Shift+右击硬石木桶使用，将其升级为一个15x7的远古金属木桶。 远古金属木桶升级道具只能对硬石木桶使用升级，不能跨等级升级。 0.9.0版本修改，去掉除远古金属木桶升级道具以外的其他合成表，手持升级道具按住shift同时右击地上的普通木桶即可升级为远古金属木桶。 注：需要获得对应的 知识书 解锁权限才能合成。",
+    "desc": "Upgrade item for turning a placed barrel into an Ancient Metal Barrel. In v0.9.0 the upgrade path was simplified to the dedicated upgrade item, and crafting it requires the matching Knowledge Book.",
     "versions": [
-      "0.9.0版本修改，去掉除远古金属木桶升级道具以外的其他合成表，手持升级道具按住shift同时右击地上的普通木桶即可升级为远古金属木桶"
+      "In v0.9.0, barrel upgrades were simplified to the dedicated upgrade item route."
     ],
-    "desc_en": "Hold the upgrade item, hold down Shift+right-click on the Hardstone barrel to upgrade it to a 15x7 ancient metal barrel. The ancient metal barrel upgrade props can only be used to upgrade Hardstone barrels, and cannot be upgraded across levels. Modified in version 0.9.0, other crafting tables except for the ancient metal barrel upgrade props have been removed. Hold down shift while holding the upgrade prop while right-clicking on an ordinary barrel on the ground to upgrade it to an ancient metal barrel. Note: You need to obtain the corresponding knowledge book to unlock the permission to craft it.",
-    "desc_hu": "Tartsa lenyomva a frissítési elemet, tartsa lenyomva a Shift billentyűt+kattintson a jobb gombbal a keménykőből készült hordóra, hogy 15x7-es ősi fémhordóvá frissítse. Az ősi fémhordó-frissítési kellékek csak keménykőhordók fejlesztésére használhatók, és nem fejleszthetők szintek között. Módosítva a 0.9.0-s verzióban, az ősi fémhordó-frissítési kellékek kivételével a többi kézműves asztalt eltávolították. Tartsa lenyomva a Shift billentyűt, miközben lenyomva tartja a frissítési támasztékot, miközben a jobb gombbal kattint a földön lévő közönséges hordóra, hogy régi fémhordóvá frissítse azt. Megjegyzés: Be kell szereznie a megfelelő tudáskönyvet, hogy feloldja a létrehozási engedélyt."
+    "desc_en": "Upgrade item for turning a placed barrel into an Ancient Metal Barrel. In v0.9.0 the upgrade path was simplified to the dedicated upgrade item, and crafting it requires the matching Knowledge Book.",
+    "desc_hu": "Fejlesztő item, amellyel egy lerakott hordó Ősi Fém Hordóvá alakítható. A 0.9.0-s verzióban a fejlesztési út a dedikált upgrade itemre egyszerűsödött, és a craftolásához a megfelelő Tudáskönyv kell.",
+    "desc_ru": "Предмет улучшения, который превращает установленную бочку в бочку из древнего металла. В версии 0.9.0 путь улучшения упростили до отдельного предмета улучшения, а для крафта нужна соответствующая Книга знаний.",
+    "versions_en": [
+      "In v0.9.0, barrel upgrades were simplified to the dedicated upgrade item route."
+    ],
+    "versions_hu": [
+      "A 0.9.0-s verzióban a hordófejlesztések a dedikált upgrade itemes útra egyszerűsödtek."
+    ],
+    "versions_ru": [
+      "В версии 0.9.0 улучшения бочек упростили до пути через отдельный предмет улучшения."
+    ]
   },
   "ancient_metal_block": {
     "mcmod_id": 773010,
-    "desc": "9个 远古金属锭 合成。 可用于制作远古金属砧。 不可以拿来当信标基座使用。",
+    "desc": "Crafted from 9 ancient metal ingots. Can be used to craft an ancient metal anvil. It cannot be used as a beacon base.",
     "desc_en": "Crafted from 9 ancient metal ingots. Can be used to craft an ancient metal anvil. It cannot be used as a beacon base.",
     "desc_hu": "9 ősi fémrúdból készült. Használható egy ősi fém üllő készítéséhez. Jelzőalapként nem használható.",
     "desc_ru": "Создаётся из 9 слитков древнего металла. Используется для крафта наковальни из древнего металла. Основанием для маяка служить не может."
   },
   "ancient_metal_bow": {
     "mcmod_id": 773490,
-    "desc": "拉弓速度和箭矢飞行速度+10%，多由古尸携带。 可以在 远古金属砧 或 艾德曼砧 上使用 远古金属粒 修复，最高品质可达传说。 远古金属武器不会被腐蚀。 制作不同品质的秘银弓所需的经验值： 普通 优秀 精良 史诗 传说 远古金属弓 0 700 1400 2800 5600",
+    "desc": "Ancient metal bow with +10% draw speed and arrow speed. Often found on ancient corpses. Repairable with ancient metal nuggets on ancient metal or adamantium anvils, and does not corrode.",
     "desc_en": "Ancient metal bow with +10% draw speed and arrow speed. Often found on ancient corpses. Repairable with ancient metal nuggets on ancient metal or adamantium anvils, and does not corrode.",
     "desc_hu": "Ősi fém íj +10% húzási sebességgel és nyílsebességgel. Gyakran ősi hulláknál található. Ősi fém szemcsékkel javítható ősi fém vagy adamantium üllőn, és nem korrodálódik.",
     "desc_ru": "Лук из древнего металла с бонусом +10% к скорости натяжения и полёта стрелы. Часто встречается у древних трупов. Чинится самородками древнего металла на наковальне из древнего металла или адамантия и не ржавеет."
   },
   "ancient_metal_chest_upgrade": {
     "mcmod_id": 446694,
-    "desc": "Shift+右键硬石箱子使用，将箱子升级为一个15x7的远古金属箱子。 远古金属箱升级道具只能硬石箱子使用升级，不能跨等级升级。 0.9.0版本修改，去掉除远古金属箱升级道具以外的其他合成表，手持升级道具按住shift同时右击地上的普通箱子或板条箱即可升级为远古金属箱子。 注：需要获得对应的 知识书 解锁权限才能合成。",
+    "desc": "Upgrade item for turning a placed chest or crate into an Ancient Metal Chest. In v0.9.0 the chest upgrade path was simplified to the dedicated upgrade item, and crafting it requires the matching Knowledge Book.",
     "versions": [
-      "0.9.0版本修改，去掉除远古金属箱升级道具以外的其他合成表，手持升级道具按住shift同时右击地上的普通箱子或板条箱即可升级为远古金属箱子"
+      "In v0.9.0, chest upgrades were simplified to the dedicated upgrade item route."
     ],
-    "desc_en": "Shift + right-click on the Hardstone box to upgrade the box to a 15x7 ancient metal box. Ancient metal chest upgrade props can only be used to upgrade Hardstone chests and cannot be upgraded across levels. Modified in version 0.9.0, other synthesis tables except for the ancient metal box upgrade items have been removed. Hold down shift while holding the upgrade item while right-clicking on an ordinary box or crate on the ground to upgrade it to an ancient metal box. Note: You need to obtain the corresponding knowledge book to unlock the permission to synthesize it.",
-    "desc_hu": "Shift + jobb gombbal kattintson a keménykődobozra, hogy a dobozt 15x7-es ősi fémdobozra frissítse. Az ősi fémláda-frissítési kellékek csak keménykő ládák fejlesztésére használhatók, és nem fejleszthetők szintek között. A 0.9.0-s verzióban a többi ládafejlesztő craft kikerült, kivéve az ősi fémdoboz fejlesztési elemeit. Tartsa lenyomva a Shift billentyűt, miközben a fejlesztő itemet használja egy földre helyezett közönséges dobozon vagy ládán. Megjegyzés: A craft feloldásához be kell szerezni a megfelelő Tudáskönyvet.",
-    "desc_ru": "Shift + ПКМ по твердокаменному сундуку улучшает его до сундука из древнего металла размером 15x7. Это улучшение работает только на твердокаменных сундуках и не позволяет пропускать уровни. В 0.9.0 прочие крафты улучшения сундуков были убраны, кроме актуальных улучшений древнего металла. Для создания требуется соответствующая Книга знаний."
+    "desc_en": "Upgrade item for turning a placed chest or crate into an Ancient Metal Chest. In v0.9.0 the chest upgrade path was simplified to the dedicated upgrade item, and crafting it requires the matching Knowledge Book.",
+    "desc_hu": "Fejlesztő item, amellyel egy lerakott láda vagy rekesz Ősi Fém Ládává alakítható. A 0.9.0-s verzióban a ládafejlesztési út a dedikált upgrade itemre egyszerűsödött, és a craftolásához a megfelelő Tudáskönyv kell.",
+    "desc_ru": "Предмет улучшения, который превращает установленный сундук или ящик в сундук из древнего металла. В версии 0.9.0 путь улучшения сундуков упростили до отдельного предмета улучшения, а для крафта нужна соответствующая Книга знаний.",
+    "versions_en": [
+      "In v0.9.0, chest upgrades were simplified to the dedicated upgrade item route."
+    ],
+    "versions_hu": [
+      "A 0.9.0-s verzióban a ládafejlesztések a dedikált upgrade itemes útra egyszerűsödtek."
+    ],
+    "versions_ru": [
+      "В версии 0.9.0 улучшения сундуков упростили до пути через отдельный предмет улучшения."
+    ]
   },
   "ancient_metal_coin": {
     "mcmod_id": 772944,
@@ -2209,19 +2400,29 @@
   },
   "ancient_metal_shovel": {
     "mcmod_id": 773557,
-    "desc": "攻击伤害+6，最大品质可达传说。 远古金属工具不会被腐蚀。 0.6.0版本修改远古金属锹只能在 大型熔炉 中合成。 制作不同品质的远古金属锹所需的经验值： 普通 优秀 精良 史诗 传说 远古金属锹 0 660 1320 2640 5280",
+    "desc": "Ancient metal shovel with 6 attack damage. Does not corrode. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改远古金属锹只能在"
+      "In v0.6.0, ancient metal shovels were moved to the Large Furnace."
     ],
     "desc_en": "Ancient metal shovel with 6 attack damage. Does not corrode. Crafted in the Large Furnace.",
     "desc_hu": "6 sebzésű ősi fém ásó. Nem korrodálódik. Nagy kemencében készül.",
-    "desc_ru": "Лопата из древнего металла с уроном 6. Не ржавеет. Крафтится в большой печи."
+    "desc_ru": "Лопата из древнего металла с уроном 6. Не ржавеет. Крафтится в большой печи.",
+    "versions_en": [
+      "In v0.6.0, ancient metal shovels were moved to the Large Furnace."
+    ],
+    "versions_hu": [
+      "A 0.6.0-s verzióban az ősi fém ásók a Nagy kemencébe kerültek át."
+    ],
+    "versions_ru": [
+      "В версии 0.6.0 лопаты из древнего металла были перенесены в Большую печь."
+    ]
   },
   "armor_stand": {
     "mcmod_id": 446697,
-    "desc": "用于恢复 斗笠 的耐久。 外形同基岩版盔甲架。",
+    "desc": "Stand used to restore the durability of the straw hat. It looks like the Bedrock Edition armor stand.",
     "desc_en": "Used to restore the durability of the hat. The appearance is the same as the Bedrock Edition armor stand.",
-    "desc_hu": "A sapka tartósságának helyreállítására szolgál. Megjelenése megegyezik a Bedrock Edition páncélállványéval."
+    "desc_hu": "A szalmakalap tartósságának helyreállítására szolgál. Megjelenése megegyezik a Bedrock Edition páncélállványéval.",
+    "desc_ru": "Стойка для восстановления прочности соломенной шляпы. Внешне совпадает со стойкой для брони из Bedrock Edition."
   },
   "bamboo": {
     "mcmod_id": 771994,
@@ -2267,15 +2468,30 @@
   },
   "birch_sieve": {
     "mcmod_id": 772158,
-    "desc": "此段资料引用于“ 木筛 (Sieve) ”并与其保持同步更新。 编辑 可用于筛选沙砾或地狱砂砾，有80%概率筛选获得矿物碎片或金属粒。不返还沙砾。 手持沙砾或地狱砂砾右击放置在地上的木筛，继续点击可以加快筛选速度。 值得注意的是，空手无法破坏木筛，需用斧类工具进行破坏。 0.5.5 版本， 硬石粒 从原来的 12.57% 降低至 0.25%。 0.5.5版本后，所有木筛需要制作 筛网 ，才能够正常筛选沙砾。 0.5.7版本，困难模式中筛选矿物粒的概率调整为60%。 0.6.0版本调整： 筛选沙砾产出黑曜石碎片的概率调整为18%。 如果成功筛选出物品，则数量为1~3个。 筛网内沙砾爆出各物品数量上限调整： 燧石碎片：1-3 铜粒：1-2 银粒：1-2 黑曜石碎片：1-2 筛选沙砾 概率 燧石碎片 53.42% 铜粒 25.14% 硬石粒 0.25% 燧石 4.40% 银粒 3.14% 金粒 0.63% 黑曜石碎片 0.25% 绿宝石碎片 0.25% 钻石碎片 0.13% 秘银粒 0.06% 艾德曼粒 0.01% 筛选地狱砂砾 概率 燧石碎片 57.12% 燧石 4.19% 金粒 38.08% 石英碎片 0.61%",
+    "desc": "Birch wooden sieve for processing gravel and nether gravel. Requires a sieve mesh before use.",
     "versions": [
-      "0.5.5 版本，",
-      "0.5.5版本后，所有木筛需要制作",
-      "0.5.7版本，困难模式中筛选矿物粒的概率调整为60%",
-      "0.6.0版本调整："
+      "In v0.5.5, wooden sieves began requiring a mesh.",
+      "In v0.5.7, hard mode sieve yields were reduced.",
+      "In v0.6.0, sieve output chances were adjusted again."
     ],
     "desc_en": "A wooden sieve variant. It can sift gravel or hell gravel with an 80% chance to yield mineral fragments or metal particles, and repeated clicks speed up the process. Wooden sieves cannot be broken by hand and require an axe-type tool. Local reference data also notes post-0.5.5 mesh requirements and later balance changes to screening probabilities.",
-    "desc_hu": "Fa szita-változat. Kavics és pokolkavics szitálására használható, 80% eséllyel ad ásványtöredéket vagy fémrészecskét, és ismételt kattintással gyorsítható. Kézzel nem törhető, fejszetípusú szerszám kell hozzá. A helyi referenciaadatok a 0.5.5 utáni hálókövetelményt és a későbbi szitálási valószínűség-módosításokat is jelzik."
+    "desc_hu": "Fa szita-változat. Kavics és pokolkavics szitálására használható, 80% eséllyel ad ásványtöredéket vagy fémrészecskét, és ismételt kattintással gyorsítható. Kézzel nem törhető, fejszetípusú szerszám kell hozzá. A helyi referenciaadatok a 0.5.5 utáni hálókövetelményt és a későbbi szitálási valószínűség-módosításokat is jelzik.",
+    "desc_ru": "Берёзовое деревянное сито для обработки гравия и адского гравия. Перед использованием требует установленную сетку.",
+    "versions_en": [
+      "In v0.5.5, wooden sieves began requiring a mesh.",
+      "In v0.5.7, hard mode sieve yields were reduced.",
+      "In v0.6.0, sieve output chances were adjusted again."
+    ],
+    "versions_hu": [
+      "A 0.5.5-ös verziótól a fa szitákhoz már szitaháló kell.",
+      "A 0.5.7-es verzióban a nehéz módú szitálás hozama csökkent.",
+      "A 0.6.0-s verzióban a szita drop-esélyeit újrahangolták."
+    ],
+    "versions_ru": [
+      "В версии 0.5.5 деревянные сита начали требовать сетку.",
+      "В версии 0.5.7 уменьшили выход сит в сложном режиме.",
+      "В версии 0.6.0 шансы дропа из сит снова перенастроили."
+    ]
   },
   "blue_compass": {
     "mcmod_id": 446698,
@@ -2323,9 +2539,10 @@
   },
   "bronze_war_hammer": {
     "mcmod_id": 777291,
-    "desc": "战锤是一种高耐久的武器，可以用来战斗、挖矿，还可以用来挖南瓜、按钮等方块，挖掘消耗的耐久度比其他工具少。 青铜战锤是用铜战锤在冶炼炉结合3个锡锭冶炼而成。可在各类金属砧使用铜粒修复。 青铜战锤的品质取决于参与冶炼的铜战锤品质。 攻击伤害+5。",
-    "desc_en": "The warhammer is a highly durable weapon that can be used for combat, mining, and for digging blocks such as pumpkins and buttons. Mining consumes less durability than other tools. The Bronze Warhammer is smelted by combining a copper warhammer with 3 tin ingots in a smelting furnace. Copper grains can be used for repair on all types of metal anvils. The quality of a bronze warhammer depends on the quality of the copper warhammer involved in smelting. Attack damage +5.",
-    "desc_hu": "A harci kalapács egy rendkívül tartós fegyver, amely használható harcra, bányászatra, valamint blokkok, például sütőtök és gombok ásására. A bányászat kevésbé tartós, mint más eszközök. A Bronze Warhammert úgy olvasztják meg, hogy egy réz kalapácsot 3 bádogrudakkal kombinálnak olvasztókemencében. A rézszemcsék minden típusú fém üllőn javíthatók. A bronz harci kalapács minősége az olvasztáshoz használt réz kalapács minőségétől függ. Támadási sebzés +5."
+    "desc": "Bronze war hammer with 5 attack damage. Smelted from a copper war hammer and tin, and repairable with copper nuggets on metal anvils.",
+    "desc_en": "Bronze war hammer with 5 attack damage. Smelted from a copper war hammer and tin, and repairable with copper nuggets on metal anvils.",
+    "desc_hu": "5 sebzésű bronz harci kalapács. Réz harci kalapácsból és ónból olvasztható, és fémüllőkön rézrögökkel javítható.",
+    "desc_ru": "Бронзовый боевой молот с уроном 5. Выплавляется из медного боевого молота и олова, чинится медными крупицами на металлических наковальнях."
   },
   "carbon_crystal": {
     "mcmod_id": 777338,
@@ -2425,9 +2642,10 @@
   },
   "copper_block": {
     "mcmod_id": 773006,
-    "desc": "九个 铜锭 合成。 可以用来合成铜砧。 可当做信标基座使用。",
+    "desc": "Crafted from nine Copper Ingots. Can be used to craft a copper anvil. Can be used as a beacon base.",
     "desc_en": "Crafted from nine Copper Ingots. Can be used to craft a copper anvil. Can be used as a beacon base.",
-    "desc_hu": "Kilenc réztuskóból készült. Használható réz üllő készítésére. Használható jeladó alapként."
+    "desc_hu": "Kilenc réztuskóból készült. Használható réz üllő készítésére. Használható jeladó alapként.",
+    "desc_ru": "Создаётся из девяти медных слитков. Используется для крафта медной наковальни и подходит как основание для маяка."
   },
   "copper_coin": {
     "mcmod_id": 772941,
@@ -2471,15 +2689,17 @@
   },
   "diamond_shard": {
     "mcmod_id": 772906,
-    "desc": "直接破坏 沙砾 有12%几率（使用 木筛 为80%）获得金属粒之一。 9个钻石碎片可以合成一个钻石。",
-    "desc_en": "Destroying gravel directly has a 12% chance (80% using a wooden sieve) to obtain one of the metal particles. 9 diamond fragments can be combined into one diamond.",
-    "desc_hu": "A kavics közvetlen megsemmisítésének 12% az esélye (80% faszitával), hogy megkapja valamelyik fémszemcsét. 9 gyémánt töredék kombinálható egy gyémánttá."
+    "desc": "Diamond shard obtained mainly from gravel processing. Nine shards combine into one diamond.",
+    "desc_en": "Diamond shard obtained mainly from gravel processing. Nine shards combine into one diamond.",
+    "desc_hu": "Gyémántszilánk, amely főleg kavics feldolgozásából szerezhető. Kilenc szilánkból egy gyémánt áll össze.",
+    "desc_ru": "Алмазный осколок, который в основном получают из обработки гравия. Девять осколков складываются в один алмаз."
   },
   "dirt": {
     "mcmod_id": 772799,
-    "desc": "同原版 泥土 。增加了重力效果，泥土在下方没有方块时会掉落，直到下方有方块为止。",
-    "desc_en": "Same as original soil. Added a gravity effect so that dirt will fall when there are no blocks underneath it until there is a block underneath.",
-    "desc_hu": "Ugyanaz, mint az eredeti talaj. Gravitációs effektus hozzáadva, hogy a szennyeződés leessen, ha nincs alatta blokk, amíg nincs alatta."
+    "desc": "Dirt with added gravity behavior. If there is no support below it, it falls until it lands on a solid block.",
+    "desc_en": "Dirt with added gravity behavior. If there is no support below it, it falls until it lands on a solid block.",
+    "desc_hu": "Földblokk plusz gravitációs viselkedéssel. Ha nincs alatta támasz, addig esik, amíg szilárd blokkra nem ér.",
+    "desc_ru": "Земля с добавленной гравитацией. Если снизу нет опоры, блок падает, пока не упрётся в твёрдый блок."
   },
   "dough": {
     "mcmod_id": 772977,
@@ -2490,9 +2710,10 @@
   },
   "emerald_shard": {
     "mcmod_id": 772905,
-    "desc": "直接破坏 沙砾 有12%几率（使用 木筛 为80%）获得金属粒之一。 9个绿宝石碎片可以合成一个绿宝石。",
-    "desc_en": "Destroying gravel directly has a 12% chance (80% using a wooden sieve) to obtain one of the metal particles. 9 emerald fragments can be combined into one emerald.",
-    "desc_hu": "A kavics közvetlen megsemmisítésének 12% az esélye (80% faszitával), hogy megkapja valamelyik fémszemcsét. 9 smaragd töredék kombinálható egy smaragdba."
+    "desc": "Emerald shard obtained mainly from gravel processing. Nine shards combine into one emerald.",
+    "desc_en": "Emerald shard obtained mainly from gravel processing. Nine shards combine into one emerald.",
+    "desc_hu": "Smaragdszilánk, amely főleg kavics feldolgozásából szerezhető. Kilenc szilánkból egy smaragd áll össze.",
+    "desc_ru": "Изумрудный осколок, который в основном получают из обработки гравия. Девять осколков складываются в один изумруд."
   },
   "empty_antique_atlas": {
     "mcmod_id": 779580,
@@ -2510,9 +2731,10 @@
   },
   "enchantment_table_emerald": {
     "mcmod_id": 772039,
-    "desc": "替换了原版图片，功能同 绿宝石附魔台 。",
-    "desc_en": "Replaced the original image and has the same function as the Emerald Enchanting Table.",
-    "desc_hu": "Lecserélte az eredeti képet, és ugyanaz a funkciója, mint az Emerald Enchanting Table."
+    "desc": "Alternate visual variant of the Emerald Enchanting Table with the same gameplay function.",
+    "desc_en": "Alternate visual variant of the Emerald Enchanting Table with the same gameplay function.",
+    "desc_hu": "Az Emerald Enchanting Table alternatív kinézetű változata, azonos játékmeneti funkcióval.",
+    "desc_ru": "Визуальный вариант Emerald Enchanting Table с той же игровой функцией."
   },
   "fence": {
     "mcmod_id": 772185,
@@ -2556,63 +2778,90 @@
   },
   "flint_axe": {
     "mcmod_id": 772257,
-    "desc": "玩家初期普遍使用的工具之一。燧石系列工具不能被附魔。 攻击伤害+4，最大品质可达优秀。 制作不同品质的燧石斧所需的经验值： 普通 优秀 燧石斧 0 150",
+    "desc": "Flint axe with 4 attack damage. Flint tools cannot be enchanted.",
     "desc_en": "Flint axe with 4 attack damage. Flint tools cannot be enchanted.",
     "desc_hu": "4 sebzésű kovakőbalta. A kovakőszerszámokat nem lehet elvarázsolni.",
     "desc_ru": "Кремниевый топор с уроном 4. Кремниевые инструменты нельзя зачаровать."
   },
   "flint_hatchet": {
     "mcmod_id": 772256,
-    "desc": "攻击伤害+3，最大品质可达优秀。燧石系列工具不能被附魔。 制作不同品质的燧石手斧所需的经验值： 普通 优秀 燧石手斧 0 70",
+    "desc": "Flint hand axe with 3 attack damage. Flint tools cannot be enchanted.",
     "desc_en": "Flint hand axe with 3 attack damage. Flint tools cannot be enchanted.",
     "desc_hu": "3 sebzésű kovakő kézifejsze. A kovakőszerszámokat nem lehet elvarázsolni.",
     "desc_ru": "Кремниевый топорик с уроном 3. Кремниевые инструменты нельзя зачаровать."
   },
   "flint_pickaxe": {
     "mcmod_id": 783945,
-    "desc": "攻击伤害+3，最大品质可达优秀，只能破坏石头方块（包含闪长岩、花岗岩和安山岩），可用燧石碎片修复。 破坏石头或圆石后会将其破坏成 沙砾 ，并且有10%的概率掉落 燧石碎片 。 0.5.6版本修改为20%掉落锋利石片。 0.6.0版本新增燧石镐可破坏煤炭矿，每次破坏消耗360点耐久。 制作不同品质的燧石镐所需的经验值： 普通 优秀 燧石镐 0 10",
+    "desc": "Flint pickaxe with 3 attack damage. Breaks basic stone, can mine coal, and can be repaired with flint shards.",
     "versions": [
-      "0.5.6版本修改为20%掉落锋利石片",
-      "0.6.0版本新增燧石镐可破坏煤炭矿，每次破坏消耗360点耐久"
+      "In v0.5.6, flint pickaxes were changed to drop sharp flint more often.",
+      "In v0.6.0, flint pickaxes gained the ability to mine coal ore."
     ],
     "desc_en": "Flint pickaxe with 3 attack damage. Breaks basic stone, can mine coal, and can be repaired with flint shards.",
     "desc_hu": "3 sebzésű kovakő csákány. Alap kőfajtákat tör, szenet is bányászhat, és kovakőszilánkokkal javítható.",
-    "desc_ru": "Кремниевая кирка с уроном 3. Ломает базовый камень, может добывать уголь и чинится кремниевыми осколками."
+    "desc_ru": "Кремниевая кирка с уроном 3. Ломает базовый камень, может добывать уголь и чинится кремниевыми осколками.",
+    "versions_en": [
+      "In v0.5.6, flint pickaxes were changed to drop sharp flint more often.",
+      "In v0.6.0, flint pickaxes gained the ability to mine coal ore."
+    ],
+    "versions_hu": [
+      "A 0.5.6-os verzióban a kovakő csákányok gyakrabban kezdtek éles kovaszilánkot dobni.",
+      "A 0.6.0-s verzióban a kovakő csákányok megkapták a szénérc bányászásának képességét."
+    ],
+    "versions_ru": [
+      "В версии 0.5.6 кремниевые кирки стали чаще давать острый кремень.",
+      "В версии 0.6.0 кремниевые кирки получили возможность добывать угольную руду."
+    ]
   },
   "flint_shovel": {
     "mcmod_id": 773550,
-    "desc": "攻击伤害+2，最大品质可达优秀。 燧石系列工具不能被附魔。 制作不同品质的燧石锹所需的经验值： 普通 优秀 燧石锹 0 70",
+    "desc": "Flint shovel with 2 attack damage. Flint tools cannot be enchanted.",
     "desc_en": "Flint shovel with 2 attack damage. Flint tools cannot be enchanted.",
     "desc_hu": "2 sebzésű kovakőlapát. A kovakőszerszámokat nem lehet elvarázsolni.",
     "desc_ru": "Кремниевая лопата с уроном 2. Кремниевые инструменты нельзя зачаровать."
   },
   "flour": {
     "mcmod_id": 773789,
-    "desc": "三个 小麦 合成， 面包 、 曲奇 、 南瓜派 和 蛋糕 的合成都需要它。 如果将面粉投入水中，五秒钟后会消失。",
-    "desc_en": "It is required for the crafting of three wheats, bread, cookies, pumpkin pie and cake. If you drop flour into water, it will disappear after five seconds.",
-    "desc_hu": "Három búza, kenyér, sütemény, sütőtökös pite és sütemény elkészítéséhez szükséges. Ha lisztet csepegtet a vízbe, az öt másodperc múlva eltűnik."
+    "desc": "Flour made from wheat. Used for bread, cookies, pumpkin pie, cake, and similar foods. If dropped into water, it disappears after a few seconds.",
+    "desc_en": "Flour made from wheat. Used for bread, cookies, pumpkin pie, cake, and similar foods. If dropped into water, it disappears after a few seconds.",
+    "desc_hu": "Búzából készült liszt. Kenyérhez, sütikhez, sütőtökös pitéhez, tortához és hasonló ételekhez kell. Ha vízbe dobod, pár másodperc után eltűnik.",
+    "desc_ru": "Мука из пшеницы. Нужна для хлеба, печенья, тыквенного пирога, торта и похожей еды. Если бросить её в воду, она исчезнет через несколько секунд."
   },
   "glass": {
     "mcmod_id": 803022,
-    "desc": "同原版 玻璃 。用热度至少为2的燃料，在 熔炉 里燃烧4个沙子后获得1个玻璃。 0.5.8版本，修改为2个沙子后燃烧获得1个玻璃。 0.6.0版本，修改为1个 沙石 后燃烧获得1个玻璃，且需要熔炉热值达到1700度。",
+    "desc": "Glass block used for windows, panes, and other building recipes. Later versions changed the exact furnace input and heat requirements.",
     "versions": [
-      "0.5.8版本，修改为2个沙子后燃烧获得1个玻璃",
-      "0.6.0版本，修改为1个"
+      "In v0.5.8, glass production was reduced to 2 sand per glass.",
+      "In v0.6.0, glass was moved to the sandstone-based furnace recipe path."
     ],
-    "desc_en": "Same as original glass. Using fuel with a heat of at least 2, burn 4 sand in a furnace to obtain 1 glass. In version 0.5.8, it is modified to obtain 1 glass after burning 2 sands. In version 0.6.0, it is modified to obtain 1 glass after burning 1 sand and stone, and the calorific value of the furnace needs to reach 1700 degrees.",
-    "desc_hu": "Ugyanaz, mint az eredeti üveg. Legalább 2 hőfokú tüzelőanyagot használva égessen el 4 homokot egy kemencében, hogy 1 üveget kapjon. A 0.5.8-as verzióban úgy módosult, hogy 2 homok elégetése után 1 üveget kapjon. A 0.6.0-s verzióban úgy módosul, hogy 1 homok és kő elégetése után 1 üveget kapjon, és a kemence fűtőértékének el kell érnie az 1700 fokot."
+    "desc_en": "Glass block used for windows, panes, and other building recipes. Later versions changed the exact furnace input and heat requirements.",
+    "desc_hu": "Üvegblokk ablakokhoz, üvegtáblákhoz és más építési receptekhez. A későbbi verziók módosították a pontos kemencehozzávalókat és hőigényt.",
+    "desc_ru": "Стеклянный блок для окон, стеклянных панелей и других строительных рецептов. В поздних версиях изменили точный вход рецепта и требования к температуре печи.",
+    "versions_en": [
+      "In v0.5.8, glass production was reduced to 2 sand per glass.",
+      "In v0.6.0, glass was moved to the sandstone-based furnace recipe path."
+    ],
+    "versions_hu": [
+      "A 0.5.8-as verzióban az üveg receptje 2 homok per üveg arányra változott.",
+      "A 0.6.0-s verzióban az üveg a homokkő-alapú kemencés receptútra került át."
+    ],
+    "versions_ru": [
+      "В версии 0.5.8 производство стекла изменили на 2 песка за одно стекло.",
+      "В версии 0.6.0 стекло перевели на путь рецепта через песчаниковую печь."
+    ]
   },
   "glass_shard": {
     "mcmod_id": 772908,
-    "desc": "打碎玻璃和玻璃板均可获得（玻璃掉落x6，玻璃板掉落x1），可合成玻璃板。 玻璃材料可以被投掷物、弹射物、掉落的方块以及掉落高度大于等于7格的生物破坏，掉落与正常破坏一样数目的玻璃碎片。",
-    "desc_en": "You can get both glass and glass plates by breaking them (glass drop x6, glass plate drop x1), which can be synthesized into glass plates. Glass materials can be destroyed by thrown objects, projectiles, falling blocks, and creatures whose falling height is greater than or equal to 7 blocks, and will drop the same number of glass fragments as normal destruction.",
-    "desc_hu": "Üveg- és üveglapokat is kaphat töréssel (üvegcsepp x6, üveglapcsepp x1), amelyek üveglapokká elkészíthetők. Az üveganyagokat megsemmisíthetik a kidobott tárgyak, lövedékek, leeső tömbök és olyan lények, amelyek esési magassága legalább 7 tömb, és ugyanannyi üvegdarabot dobnak le, mint a normál megsemmisítés."
+    "desc": "Glass shard dropped from broken glass and glass panes. Used in pane-related crafting and other glass recipes.",
+    "desc_en": "Glass shard dropped from broken glass and glass panes. Used in pane-related crafting and other glass recipes.",
+    "desc_hu": "Üvegszilánk, amely törött üvegből és üvegtáblából esik. Üvegtáblás és más üveges receptekhez használható.",
+    "desc_ru": "Стеклянный осколок, выпадающий из разбитого стекла и стеклянных панелей. Используется в рецептах панелей и других стеклянных крафтах."
   },
   "gold_block": {
     "mcmod_id": 773008,
-    "desc": "同原版 金块 。",
-    "desc_en": "Same as the original Gold Nugget.",
-    "desc_hu": "Ugyanaz, mint az eredeti Gold Nugget.",
+    "desc": "Gold block crafted from nine gold ingots. It works as a beacon base and in gold-block recipes.",
+    "desc_en": "Gold block crafted from nine gold ingots. It works as a beacon base and in gold-block recipes.",
+    "desc_hu": "Kilenc aranyrúdból craftolható aranyblokk. Jeladóalapként és aranyblokkos receptekben használható.",
     "desc_ru": "Блок из золота. По сути соответствует обычному золотому блоку."
   },
   "gold_coin": {
@@ -2624,58 +2873,100 @@
   },
   "gold_shovel": {
     "mcmod_id": 773555,
-    "desc": "攻击伤害+3，最大品质可达史诗。 0.6.0版本修改金锹只能在 大型熔炉 中合成。 制作不同品质的金锹所需的经验值： 普通 优秀 精良 史诗 金锹 0 180 360 720",
+    "desc": "Gold shovel with 3 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改金锹只能在"
+      "In v0.6.0, gold shovels were moved to the Large Furnace."
     ],
     "desc_en": "Gold shovel with 3 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "3 sebzésű aranylapát. Nagy kemencében készül.",
-    "desc_ru": "Золотая лопата с уроном 3. Крафтится в большой печи."
+    "desc_ru": "Золотая лопата с уроном 3. Крафтится в большой печи.",
+    "versions_en": [
+      "In v0.6.0, gold shovels were moved to the Large Furnace."
+    ],
+    "versions_hu": [
+      "A 0.6.0-s verzióban az aranylapátok a Nagy kemencébe kerültek át."
+    ],
+    "versions_ru": [
+      "В версии 0.6.0 золотые лопаты были перенесены в Большую печь."
+    ]
   },
   "gravel": {
     "mcmod_id": 772197,
-    "desc": "同原版 沙砾 。 增加直接破坏后有12%概率获得矿物碎片或金属粒。此概率受时运影响，使用附魔时运的铲子挖掘最大可提升至60%。 也可以使用 木筛 进行筛选，有80%概率获得矿物碎片或金属粒。 直接破坏沙砾获得 概率 燧石 2% 燧石碎片 31% 铜粒 43.5% 硬石粒 8.2% 银粒 18.9% 金粒 12.5% 黑曜石碎片 8.2% 绿宝石碎片 5.4% 钻石碎片 3.6% 秘银粒 2.3% 艾德曼粒 1%",
+    "desc": "Gravel can drop mineral fragments or metal particles when broken directly, and Luck increases that chance. It can also be processed with a wooden sieve for a much higher yield chance. Local item docs explicitly show gravel as an early source of metal grains, so I do not treat sieving as the only way to obtain them.",
     "desc_en": "Gravel can drop mineral fragments or metal particles when broken directly, and Luck increases that chance. It can also be processed with a wooden sieve for a much higher yield chance. Local item docs explicitly show gravel as an early source of metal grains, so I do not treat sieving as the only way to obtain them.",
-    "desc_hu": "A kavics közvetlen töréskor is dobhat ásványtöredékeket vagy fémszemcséket, és a Szerencse ezt az esélyt tovább növeli. Faszitával is feldolgozható, ott jóval magasabb a siker esélye. A helyi item-doksik kifejezetten jelzik, hogy a kavics már korán is adhat fémszemcséket, ezért a szitálást nem kezelem egyetlen forrásként."
+    "desc_hu": "A kavics közvetlen töréskor is dobhat ásványtöredékeket vagy fémszemcséket, és a Szerencse ezt az esélyt tovább növeli. Faszitával is feldolgozható, ott jóval magasabb a siker esélye. A helyi item-doksik kifejezetten jelzik, hogy a kavics már korán is adhat fémszemcséket, ezért a szitálást nem kezelem egyetlen forrásként.",
+    "desc_ru": "Гравий может прямо при разрушении давать минеральные осколки и металлические крупицы, а Удача повышает этот шанс. Его также можно просеивать через деревянное сито для значительно лучшего выхода. Локальные описания предметов прямо показывают гравий как ранний источник металлических крупиц, поэтому сито здесь не единственный путь."
   },
   "grindstone": {
     "mcmod_id": 772044,
-    "desc": "同高版本 砂轮 。",
-    "desc_en": "Same height version as grinding wheel.",
-    "desc_hu": "A csiszolókoronggal megegyező magasságú változat."
+    "desc": "Early grindstone-style utility block. Used in the same role as the grinding wheel entry.",
+    "desc_en": "Early grindstone-style utility block. Used in the same role as the grinding wheel entry.",
+    "desc_hu": "Korai köszörűkő-jellegű utility blokk. Ugyanazt a szerepet tölti be, mint a grinding wheel bejegyzés.",
+    "desc_ru": "Ранний служебный блок типа точильного камня. Выполняет ту же роль, что и запись grinding wheel."
   },
   "hard_stone_axe": {
     "mcmod_id": 443997,
-    "desc": "攻击伤害+7，与铜/银/金斧同级，在硬石工作台上制作出时有30%的概率随机获得砍树I、效率I、耐久I三种属性中的一个，各属性概率相等。可以攻击 土元素 ，可用附魔： 效率 ， 耐久 ， 砍伐 。品质最大可达到精良。 硬石工具无法被腐蚀，并且减少20%耐久消耗。 0.6.0版本修改硬石斧只能在 大型熔炉 中合成。 制作不同品质的硬石斧所需的经验值： 普通 优秀 精良 硬石斧 0 1940 3880",
+    "desc": "Hardstone axe with 7 attack damage. Resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改硬石斧只能在"
+      "In v0.6.0, Hardstone axes were moved to the Large Furnace."
     ],
     "desc_en": "Hardstone axe with 7 attack damage. Resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
-    "desc_hu": "7 sebzésű keménykő fejsze. Ellenáll a korróziónak, és 20%-kal lassabban kopik. Nagy kemencében készül."
+    "desc_hu": "7 sebzésű keménykő fejsze. Ellenáll a korróziónak, és 20%-kal lassabban kopik. Nagy kemencében készül.",
+    "desc_ru": "Твердокаменный топор с уроном 7. Устойчив к коррозии и теряет на 20% меньше прочности. Крафтится в большой печи.",
+    "versions_en": [
+      "In v0.6.0, Hardstone axes were moved to the Large Furnace."
+    ],
+    "versions_hu": [
+      "A 0.6.0-s verzióban a keménykő fejszék a Nagy kemencébe kerültek át."
+    ],
+    "versions_ru": [
+      "В версии 0.6.0 твердокаменные топоры были перенесены в Большую печь."
+    ]
   },
   "hard_stone_dagger": {
     "mcmod_id": 773819,
-    "desc": "攻击伤害+6，最大品质可达精良。 硬石武器无法被腐蚀，并且减少20%耐久消耗。 无法格挡。 0.6.0版本修改硬石短剑只能在 大型熔炉 中合成。 制作不同品质的硬石短剑所需的经验值： 普通 优秀 精良 硬石短剑 0 650 1300",
+    "desc": "Hardstone dagger with 6 attack damage. Cannot block, resists corrosion, and loses 20% less durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改硬石短剑只能在"
+      "In v0.6.0, Hardstone daggers were moved to the Large Furnace."
     ],
     "desc_en": "Hardstone dagger with 6 attack damage. Cannot block, resists corrosion, and loses 20% less durability. Crafted in the Large Furnace.",
-    "desc_hu": "6 sebzésű keménykő tőr. Nem tud blokkolni, ellenáll a korróziónak, és 20%-kal lassabban kopik. Nagy kemencében készül."
+    "desc_hu": "6 sebzésű keménykő tőr. Nem tud blokkolni, ellenáll a korróziónak, és 20%-kal lassabban kopik. Nagy kemencében készül.",
+    "desc_ru": "Твердокаменный кинжал с уроном 6. Не умеет блокировать, устойчив к коррозии и теряет на 20% меньше прочности. Крафтится в большой печи.",
+    "versions_en": [
+      "In v0.6.0, Hardstone daggers were moved to the Large Furnace."
+    ],
+    "versions_hu": [
+      "A 0.6.0-s verzióban a keménykő tőrök a Nagy kemencébe kerültek át."
+    ],
+    "versions_ru": [
+      "В версии 0.6.0 твердокаменные кинжалы были перенесены в Большую печь."
+    ]
   },
   "hard_stone_shovel": {
     "mcmod_id": 443998,
-    "desc": "攻击伤害+5，与铜/银/金铲同级，在硬石工作台上制作出时有30%的概率获得 效率 I、 耐久 I、 时运 I三种属性中的一个，各属性概率相等。可以攻击 土元素 ，可用附魔： 效率 ， 精准采集 ， 耐久 ， 时运 ，品质最大可达到精良。 硬石工具无法被腐蚀，并且减少20%耐久消耗。 0.6.0版本修改硬石锹只能在 大型熔炉 中合成。 制作不同品质的硬石锹所需的经验值： 普通 优秀 精良 硬石锹 0 660 1320",
+    "desc": "Hardstone shovel with 5 attack damage. Resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改硬石锹只能在"
+      "In v0.6.0, Hardstone shovels were moved to the Large Furnace."
     ],
     "desc_en": "Hardstone shovel with 5 attack damage. Resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
-    "desc_hu": "5 sebzésű keménykő lapát. Ellenáll a korróziónak, és 20%-kal lassabban kopik. Nagy kemencében készül."
+    "desc_hu": "5 sebzésű keménykő lapát. Ellenáll a korróziónak, és 20%-kal lassabban kopik. Nagy kemencében készül.",
+    "desc_ru": "Твердокаменная лопата с уроном 5. Устойчива к коррозии и теряет на 20% меньше прочности. Крафтится в большой печи.",
+    "versions_en": [
+      "In v0.6.0, Hardstone shovels were moved to the Large Furnace."
+    ],
+    "versions_hu": [
+      "A 0.6.0-s verzióban a keménykő lapátok a Nagy kemencébe kerültek át."
+    ],
+    "versions_ru": [
+      "В версии 0.6.0 твердокаменные лопаты были перенесены в Большую печь."
+    ]
   },
   "hardstone_block": {
     "mcmod_id": 772000,
-    "desc": "九个 硬石锭 合成。 可以用来合成硬石砧。 可以当做信标基座使用。",
+    "desc": "Crafted from nine Hardstone Ingots. Can be used to craft Hardstone Anvils. Can be used as a beacon base.",
     "desc_en": "Crafted from nine Hardstone Ingots. Can be used to craft Hardstone Anvils. Can be used as a beacon base.",
-    "desc_hu": "Kilenc Keménykő tuskóból készült. Keménykő üllők készítésére használható. Használható jeladó alapként."
+    "desc_hu": "Kilenc Keménykő tuskóból készült. Keménykő üllők készítésére használható. Használható jeladó alapként.",
+    "desc_ru": "Создаётся из девяти твердокаменных слитков. Используется для крафта твердокаменной наковальни и подходит как основание для маяка."
   },
   "hardstone_coin": {
     "mcmod_id": 771981,
@@ -2724,9 +3015,10 @@
   },
   "high_carbon_steel_war_hammer": {
     "mcmod_id": 777293,
-    "desc": "战锤是一种高耐久的武器，可以用来战斗、挖矿，还可以用来挖南瓜、按钮等方块，挖掘消耗的耐久度比其他工具少。 高碳钢战锤是用铁战锤在冶炼炉结合1个碳晶冶炼而成。可在各类金属砧使用铁粒修复。 高碳钢战锤的品质取决于参与冶炼的铁战锤品质。 攻击伤害+6。",
-    "desc_en": "The warhammer is a highly durable weapon that can be used for combat, mining, and for digging blocks such as pumpkins and buttons. Mining consumes less durability than other tools. The high carbon steel warhammer is smelted by combining an iron warhammer with a carbon crystal in a smelting furnace. Iron particles can be used to repair various metal anvils. The quality of a high carbon steel warhammer depends on the quality of the iron warhammer involved in its smelting. Attack damage +6.",
-    "desc_hu": "A harci kalapács egy rendkívül tartós fegyver, amely használható harcra, bányászatra, valamint blokkok, például sütőtök és gombok ásására. A bányászat kevésbé tartós, mint más eszközök. A nagy széntartalmú acél kalapácsot úgy olvasztják meg, hogy egy vas kalapácsot szénkristállyal kombinálnak olvasztókemencében. A vasrészecskék különféle fémüllők javítására használhatók. A magas széntartalmú acél harci kalapács minősége az olvasztáshoz használt vas harci kalapács minőségétől függ. Támadási sebzés +6."
+    "desc": "High-carbon steel war hammer with 6 attack damage. Smelted from an iron war hammer and a carbon crystal, and repairable with iron nuggets on metal anvils.",
+    "desc_en": "High-carbon steel war hammer with 6 attack damage. Smelted from an iron war hammer and a carbon crystal, and repairable with iron nuggets on metal anvils.",
+    "desc_hu": "6 sebzésű magas széntartalmú acél harci kalapács. Vas harci kalapácsból és szénkristályból olvasztható, és fémüllőkön vasrögökkel javítható.",
+    "desc_ru": "Боевой молот из высокоуглеродистой стали с уроном 6. Выплавляется из железного боевого молота и углеродного кристалла, чинится железными крупицами на металлических наковальнях."
   },
   "ice_cream": {
     "mcmod_id": 772976,
@@ -2737,9 +3029,10 @@
   },
   "iron_block": {
     "mcmod_id": 773009,
-    "desc": "同原版 铁块 。",
+    "desc": "Iron block crafted from nine iron ingots. Used in beacon bases and iron-block recipes.",
     "desc_en": "Same as the original iron block.",
-    "desc_hu": "Ugyanaz, mint az eredeti vastömb."
+    "desc_hu": "Kilenc vasrúdból craftolható vastömb. Jeladóalapként és vastömbös receptekben használható.",
+    "desc_ru": "Железный блок из девяти железных слитков. Используется как основание для маяка и в рецептах с железным блоком."
   },
   "iron_boat": {
     "mcmod_id": 446699,
@@ -2764,15 +3057,30 @@
   },
   "jungle_sieve": {
     "mcmod_id": 772159,
-    "desc": "此段资料引用于“ 木筛 (Sieve) ”并与其保持同步更新。 编辑 可用于筛选沙砾或地狱砂砾，有80%概率筛选获得矿物碎片或金属粒。不返还沙砾。 手持沙砾或地狱砂砾右击放置在地上的木筛，继续点击可以加快筛选速度。 值得注意的是，空手无法破坏木筛，需用斧类工具进行破坏。 0.5.5 版本， 硬石粒 从原来的 12.57% 降低至 0.25%。 0.5.5版本后，所有木筛需要制作 筛网 ，才能够正常筛选沙砾。 0.5.7版本，困难模式中筛选矿物粒的概率调整为60%。 0.6.0版本调整： 筛选沙砾产出黑曜石碎片的概率调整为18%。 如果成功筛选出物品，则数量为1~3个。 筛网内沙砾爆出各物品数量上限调整： 燧石碎片：1-3 铜粒：1-2 银粒：1-2 黑曜石碎片：1-2 筛选沙砾 概率 燧石碎片 53.42% 铜粒 25.14% 硬石粒 0.25% 燧石 4.40% 银粒 3.14% 金粒 0.63% 黑曜石碎片 0.25% 绿宝石碎片 0.25% 钻石碎片 0.13% 秘银粒 0.06% 艾德曼粒 0.01% 筛选地狱砂砾 概率 燧石碎片 57.12% 燧石 4.19% 金粒 38.08% 石英碎片 0.61%",
+    "desc": "Jungle wooden sieve for processing gravel and nether gravel. Requires a sieve mesh before use.",
     "versions": [
-      "0.5.5 版本，",
-      "0.5.5版本后，所有木筛需要制作",
-      "0.5.7版本，困难模式中筛选矿物粒的概率调整为60%",
-      "0.6.0版本调整："
+      "In v0.5.5, wooden sieves began requiring a mesh.",
+      "In v0.5.7, hard mode sieve yields were reduced.",
+      "In v0.6.0, sieve output chances were adjusted again."
     ],
     "desc_en": "A wooden sieve variant. It can sift gravel or hell gravel with an 80% chance to yield mineral fragments or metal particles, and repeated clicks speed up the process. Wooden sieves cannot be broken by hand and require an axe-type tool. Local reference data also notes post-0.5.5 mesh requirements and later balance changes to screening probabilities.",
-    "desc_hu": "Fa szita-változat. Kavics és pokolkavics szitálására használható, 80% eséllyel ad ásványtöredéket vagy fémrészecskét, és ismételt kattintással gyorsítható. Kézzel nem törhető, fejszetípusú szerszám kell hozzá. A helyi referenciaadatok a 0.5.5 utáni hálókövetelményt és a későbbi szitálási valószínűség-módosításokat is jelzik."
+    "desc_hu": "Fa szita-változat. Kavics és pokolkavics szitálására használható, 80% eséllyel ad ásványtöredéket vagy fémrészecskét, és ismételt kattintással gyorsítható. Kézzel nem törhető, fejszetípusú szerszám kell hozzá. A helyi referenciaadatok a 0.5.5 utáni hálókövetelményt és a későbbi szitálási valószínűség-módosításokat is jelzik.",
+    "desc_ru": "Деревянное сито из древесины джунглей для обработки гравия и адского гравия. Перед использованием требует установленную сетку.",
+    "versions_en": [
+      "In v0.5.5, wooden sieves began requiring a mesh.",
+      "In v0.5.7, hard mode sieve yields were reduced.",
+      "In v0.6.0, sieve output chances were adjusted again."
+    ],
+    "versions_hu": [
+      "A 0.5.5-ös verziótól a fa szitákhoz már szitaháló kell.",
+      "A 0.5.7-es verzióban a nehéz módú szitálás hozama csökkent.",
+      "A 0.6.0-s verzióban a szita drop-esélyeit újrahangolták."
+    ],
+    "versions_ru": [
+      "В версии 0.5.5 деревянные сита начали требовать сетку.",
+      "В версии 0.5.7 уменьшили выход сит в сложном режиме.",
+      "В версии 0.6.0 шансы дропа из сит снова перенастроили."
+    ]
   },
   "lantern": {
     "mcmod_id": 772040,
@@ -2907,14 +3215,14 @@
   },
   "mithril_block": {
     "mcmod_id": 773011,
-    "desc": "九个 秘银锭 合成，只能被艾德曼镐或战锤破坏。 可以用来合成秘银砧。 可当做信标基座使用。",
+    "desc": "Crafted from nine Mithril Bars, it can only be destroyed with an Adamantium Pickaxe or Warhammer. Can be used to craft Mithril anvils. Can be used as a beacon base.",
     "desc_en": "Crafted from nine Mithril Bars, it can only be destroyed with an Adamantium Pickaxe or Warhammer. Can be used to craft Mithril anvils. Can be used as a beacon base.",
     "desc_hu": "Kilenc Mithril rúdból készül, és csak Adamantium csákánnyal vagy harci kalapáccsal lehet megsemmisíteni. Mithril üllők készítésére használható. Jeladó alapjaként is működik.",
     "desc_ru": "Создаётся из девяти мифриловых слитков и разрушается только адамантиевой киркой или боевым молотом. Используется для крафта мифриловой наковальни и подходит как основание для маяка."
   },
   "mithril_bow": {
     "mcmod_id": 773489,
-    "desc": "拉弓速度和箭矢飞行速度+25%。 秘银弓的耐久度是弓四倍。 可以在 秘银砧 或 艾德曼砧 上使用 秘银粒 修复，最高品质可达神器。 制作不同品质的秘银弓所需的经验值： 普通 优秀 精良 史诗 传说 神器 秘银弓 0 2620 5240 10480 20960 41920",
+    "desc": "Mithril bow with +25% draw speed and arrow speed. About four times more durable than a normal bow. Repairable with mithril nuggets on mithril or adamantium anvils.",
     "desc_en": "Mithril bow with +25% draw speed and arrow speed. About four times more durable than a normal bow. Repairable with mithril nuggets on mithril or adamantium anvils.",
     "desc_hu": "Mithril íj +25% húzási sebességgel és nyílsebességgel. Nagyjából négyszer tartósabb a normál íjnál. Mithril szemcsékkel javítható mithril vagy adamantium üllőn.",
     "desc_ru": "Мифриловый лук с бонусом +25% к скорости натяжения и полёта стрелы. Примерно в четыре раза прочнее обычного лука. Чинится мифриловыми крупицами на мифриловой или адамантиевой наковальне."
@@ -2947,13 +3255,22 @@
   },
   "mithril_shovel": {
     "mcmod_id": 773558,
-    "desc": "攻击伤害+8，最大品质可达神器。 0.6.0版本修改秘银锹只能在 大型熔炉 中合成。 制作不同品质的秘银锹所需的经验值： 普通 优秀 精良 史诗 传说 神器 秘银锹 0 2580 5160 10320 20640 41280",
+    "desc": "Mithril shovel with 8 attack damage. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改秘银锹只能在"
+      "In v0.6.0, Mithril shovels were moved to the Large Furnace."
     ],
     "desc_en": "Mithril shovel with 8 attack damage. Crafted in the Large Furnace.",
     "desc_hu": "8 sebzésű mithril ásó. Nagy kemencében készül.",
-    "desc_ru": "Мифриловая лопата с уроном 8. Крафтится в большой печи."
+    "desc_ru": "Мифриловая лопата с уроном 8. Крафтится в большой печи.",
+    "versions_en": [
+      "In v0.6.0, Mithril shovels were moved to the Large Furnace."
+    ],
+    "versions_hu": [
+      "A 0.6.0-s verzióban a mithril ásók a Nagy kemencébe kerültek át."
+    ],
+    "versions_ru": [
+      "В версии 0.6.0 мифриловые лопаты были перенесены в Большую печь."
+    ]
   },
   "mushroom_red": {
     "mcmod_id": 772980,
@@ -2994,21 +3311,21 @@
   },
   "obsidian_axe": {
     "mcmod_id": 773581,
-    "desc": "攻击伤害+5，最大品质可达优秀。黑曜石系列工具不能被附魔。 制作不同品质的黑曜石斧所需的经验值： 普通 优秀 黑曜石斧 0 318",
+    "desc": "Obsidian axe with 5 attack damage. Obsidian tools cannot be enchanted.",
     "desc_en": "Obsidian axe with 5 attack damage. Obsidian tools cannot be enchanted.",
     "desc_hu": "5 sebzésű obszidián fejsze. Az obszidián szerszámokat nem lehet elvarázsolni.",
     "desc_ru": "Обсидиановый топор с уроном 5. Обсидиановые инструменты нельзя зачаровать."
   },
   "obsidian_hatchet": {
     "mcmod_id": 773561,
-    "desc": "攻击伤害+4，最大品质可达优秀。黑曜石系列工具不能被附魔。 制作不同品质的黑曜石手斧所需的经验值： 普通 优秀 黑曜石手斧 0 128",
+    "desc": "Obsidian hand axe with 4 attack damage. Obsidian tools cannot be enchanted.",
     "desc_en": "Obsidian hand axe with 4 attack damage. Obsidian tools cannot be enchanted.",
     "desc_hu": "4 sebzésű obszidián kézifejsze. Az obszidián szerszámokat nem lehet elvarázsolni.",
     "desc_ru": "Обсидиановый топорик с уроном 4. Обсидиановые инструменты нельзя зачаровать."
   },
   "obsidian_shovel": {
     "mcmod_id": 773551,
-    "desc": "攻击伤害+3，最大品质可达优秀。 黑曜石系列工具不能被附魔。 制作不同品质的黑曜石锹所需的经验值： 普通 优秀 黑曜石锹 0 126",
+    "desc": "Obsidian shovel with 3 attack damage. Obsidian tools cannot be enchanted.",
     "desc_en": "Obsidian shovel with 3 attack damage. Obsidian tools cannot be enchanted.",
     "desc_hu": "3 sebzésű obszidiánlapát. Az obszidián szerszámokat nem lehet elvarázsolni.",
     "desc_ru": "Обсидиановая лопата с уроном 3. Обсидиановые инструменты нельзя зачаровать."
@@ -3123,7 +3440,7 @@
   },
   "silver_block": {
     "mcmod_id": 773007,
-    "desc": "九个 银锭 合成。 可以用来合成银砧。 可当做信标基座使用。",
+    "desc": "Crafted from nine Silver Ingots. Can be used to craft silver anvils. Can be used as a beacon base.",
     "desc_en": "Crafted from nine Silver Ingots. Can be used to craft silver anvils. Can be used as a beacon base.",
     "desc_hu": "Kilenc ezüst tuskóból készült. Ezüst üllők készítésére használható. Használható jeladó alapként.",
     "desc_ru": "Создаётся из девяти серебряных слитков. Используется для крафта серебряной наковальни и подходит как основание для маяка."
@@ -3160,13 +3477,22 @@
   },
   "silver_shovel": {
     "mcmod_id": 773554,
-    "desc": "攻击伤害+4，最大品质可达精良。 对亡灵怪物有伤害加成， 可以攻击白色食尸鬼。 0.6.0版本修改银锹只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的银锹所需的经验值： 普通 优秀 精良 银锹 0 180 360",
+    "desc": "Silver shovel with 4 attack damage. Strong against undead and can hit white ghouls. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改银锹只能在"
+      "In v0.6.0, silver shovels were moved to the Hardened Clay Furnace or Large Furnace."
     ],
     "desc_en": "Silver shovel with 4 attack damage. Strong against undead and can hit white ghouls. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "4 sebzésű ezüst ásó. Erős az élőholtak ellen, és megsebezheti a fehér ghoulokat. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Серебряная лопата с уроном 4. Эффективна против нежити и может бить белых гулей. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Серебряная лопата с уроном 4. Эффективна против нежити и может бить белых гулей. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "In v0.6.0, silver shovels were moved to the Hardened Clay Furnace or Large Furnace."
+    ],
+    "versions_hu": [
+      "A 0.6.0-s verzióban az ezüst ásók az Edzett Agyagkemencébe vagy a Nagy kemencébe kerültek át."
+    ],
+    "versions_ru": [
+      "В версии 0.6.0 серебряные лопаты были перенесены в печь из обожжённой глины или в большую печь."
+    ]
   },
   "snowball": {
     "mcmod_id": 772253,
@@ -3191,15 +3517,30 @@
   },
   "spruce_sieve": {
     "mcmod_id": 772160,
-    "desc": "此段资料引用于“ 木筛 (Sieve) ”并与其保持同步更新。 编辑 可用于筛选沙砾或地狱砂砾，有80%概率筛选获得矿物碎片或金属粒。不返还沙砾。 手持沙砾或地狱砂砾右击放置在地上的木筛，继续点击可以加快筛选速度。 值得注意的是，空手无法破坏木筛，需用斧类工具进行破坏。 0.5.5 版本， 硬石粒 从原来的 12.57% 降低至 0.25%。 0.5.5版本后，所有木筛需要制作 筛网 ，才能够正常筛选沙砾。 0.5.7版本，困难模式中筛选矿物粒的概率调整为60%。 0.6.0版本调整： 筛选沙砾产出黑曜石碎片的概率调整为18%。 如果成功筛选出物品，则数量为1~3个。 筛网内沙砾爆出各物品数量上限调整： 燧石碎片：1-3 铜粒：1-2 银粒：1-2 黑曜石碎片：1-2 筛选沙砾 概率 燧石碎片 53.42% 铜粒 25.14% 硬石粒 0.25% 燧石 4.40% 银粒 3.14% 金粒 0.63% 黑曜石碎片 0.25% 绿宝石碎片 0.25% 钻石碎片 0.13% 秘银粒 0.06% 艾德曼粒 0.01% 筛选地狱砂砾 概率 燧石碎片 57.12% 燧石 4.19% 金粒 38.08% 石英碎片 0.61%",
+    "desc": "Spruce wooden sieve for processing gravel and nether gravel. Requires a sieve mesh before use.",
     "versions": [
-      "0.5.5 版本，",
-      "0.5.5版本后，所有木筛需要制作",
-      "0.5.7版本，困难模式中筛选矿物粒的概率调整为60%",
-      "0.6.0版本调整："
+      "In v0.5.5, wooden sieves began requiring a mesh.",
+      "In v0.5.7, hard mode sieve yields were reduced.",
+      "In v0.6.0, sieve output chances were adjusted again."
     ],
     "desc_en": "A wooden sieve variant. It can sift gravel or hell gravel with an 80% chance to yield mineral fragments or metal particles, and repeated clicks speed up the process. Wooden sieves cannot be broken by hand and require an axe-type tool. Local reference data also notes post-0.5.5 mesh requirements and later balance changes to screening probabilities.",
-    "desc_hu": "Fa szita-változat. Kavics és pokolkavics szitálására használható, 80% eséllyel ad ásványtöredéket vagy fémrészecskét, és ismételt kattintással gyorsítható. Kézzel nem törhető, fejszetípusú szerszám kell hozzá. A helyi referenciaadatok a 0.5.5 utáni hálókövetelményt és a későbbi szitálási valószínűség-módosításokat is jelzik."
+    "desc_hu": "Fa szita-változat. Kavics és pokolkavics szitálására használható, 80% eséllyel ad ásványtöredéket vagy fémrészecskét, és ismételt kattintással gyorsítható. Kézzel nem törhető, fejszetípusú szerszám kell hozzá. A helyi referenciaadatok a 0.5.5 utáni hálókövetelményt és a későbbi szitálási valószínűség-módosításokat is jelzik.",
+    "desc_ru": "Еловое деревянное сито для обработки гравия и адского гравия. Перед использованием требует установленную сетку.",
+    "versions_en": [
+      "In v0.5.5, wooden sieves began requiring a mesh.",
+      "In v0.5.7, hard mode sieve yields were reduced.",
+      "In v0.6.0, sieve output chances were adjusted again."
+    ],
+    "versions_hu": [
+      "A 0.5.5-ös verziótól a fa szitákhoz már szitaháló kell.",
+      "A 0.5.7-es verzióban a nehéz módú szitálás hozama csökkent.",
+      "A 0.6.0-s verzióban a szita drop-esélyeit újrahangolták."
+    ],
+    "versions_ru": [
+      "В версии 0.5.5 деревянные сита начали требовать сетку.",
+      "В версии 0.5.7 уменьшили выход сит в сложном режиме.",
+      "В версии 0.6.0 шансы дропа из сит снова перенастроили."
+    ]
   },
   "stone": {
     "mcmod_id": 779556,
@@ -3571,21 +3912,24 @@
   },
   "runestore": {
     "mcmod_id": 773477,
-    "desc": "由一个黑曜石和四个 秘银粒 或 艾德曼粒 合成。有十六种图案，在合成前可以鼠标放到输出栏上按右键切换图案，不同图案的符文石不可叠加。 不同的图案有不同的名字：Nul、Quas、Por、An、Nox、Flam、Vas、Des、Ort、Tym、Corp、Lor、Mani、Jux、Ylem 和 Sanct。 用原版搭建地狱传送门的方法放置黑曜石并把传送门的四个角替换成符文石后用打火石点燃黑曜石即可以形成符文门，或者直接将已被打火石启动的地狱传送门的四个角换成符文石即可直接形成符文门，艾德曼符文门传送距离是秘银符文门的 8 倍，艾德曼符文门传送的距离会从玩家的出生点开始至少两万米。 玩家可携带任何物品进入符文门传送到较远的地区，建议携带指南针前往。因为不会产生返回的传送门，建议获得村庄生成条件再做符文门，有很大几率遇到村庄。",
+    "desc": "Crafted from one Obsidian and four Mithril or Adamantium grains. There are sixteen patterns, and different rune patterns do not stack. Replacing the four portal corners of an obsidian frame with runestones creates a rune gate when ignited with flint and steel. Adamantium rune gates travel farther than Mithril ones. Treat rune gates as one-way long-distance travel unless you have another return method ready.",
     "desc_en": "Crafted from one Obsidian and four Mithril or Adamantium grains. There are sixteen patterns, and different rune patterns do not stack. Replacing the four portal corners of an obsidian frame with runestones creates a rune gate when ignited with flint and steel. Adamantium rune gates travel farther than Mithril ones. Treat rune gates as one-way long-distance travel unless you have another return method ready.",
-    "desc_hu": "Egy Obszidiánból és négy Mithril- vagy Adamantium-szemcséből craftolható. Tizenhat minta létezik, és a különböző rúnaminták nem rakhatók egymásra. Ha egy obszidián portálkeret négy sarkát rúnakövekre cseréled, majd tűzkővel meggyújtod, rúnakaput kapsz. Az Adamantium rúnakapuk messzebbre visznek, mint a Mithril változatok. A rúnakapukat érdemes egyirányú, nagy távolságú utazásként kezelni, hacsak nincs külön visszaút előkészítve."
+    "desc_hu": "Egy Obszidiánból és négy Mithril- vagy Adamantium-szemcséből craftolható. Tizenhat minta létezik, és a különböző rúnaminták nem rakhatók egymásra. Ha egy obszidián portálkeret négy sarkát rúnakövekre cseréled, majd tűzkővel meggyújtod, rúnakaput kapsz. Az Adamantium rúnakapuk messzebbre visznek, mint a Mithril változatok. A rúnakapukat érdemes egyirányú, nagy távolságú utazásként kezelni, hacsak nincs külön visszaút előkészítve.",
+    "desc_ru": "Создаётся из одного обсидиана и четырёх мифриловых или адамантиевых крупиц. Есть шестнадцать вариантов рисунка, и разные руны не складываются в один стак. Если заменить четыре угла обсидиановой рамки портала руническими камнями и поджечь её огнивом, получится рунические врата. Адамантиевые врата переносят дальше, чем мифриловые. Используй их как односторонний дальний переход, если не подготовлен путь назад."
   },
   "blast_furnace": {
     "mcmod_id": 777269,
-    "desc": "0.5.5新增冶炼炉，用于制作各类合金装备，目前仅支持煤炭、煤炭块和岩浆桶作为燃料。 冶炼炉还能强化远古金属和秘银护甲，强化后才能激活额外套装效果。 冶炼炉只能被铁及以上的镐才能挖掘。 在冶炼炉冶炼工具或装备期间破坏冶炼炉，手持冶炼炉掉落的工具或装备时会因为高温而持续扣血。 冶炼炉烧制燃料及时间： 类型 单个燃烧时间 煤炭 30秒 岩浆桶 120秒 煤炭块 270秒",
-    "desc_en": "0.5.5 adds a new smelting furnace, which is used to make various alloy equipment. Currently, it only supports coal, coal blocks and magma barrels as fuel. The smelting furnace can also strengthen ancient metal and mithril armor. After strengthening, additional set effects can be activated. The smelting furnace can only be mined with a pickaxe of Iron or above. Destroying the smelting furnace while smelting tools or equipment, and holding the tools or equipment dropped by the smelting furnace will continue to deduct blood due to the high temperature. Smelting furnace burning fuel and time: Type Single burning time Coal 30 seconds Magma bucket 120 seconds Coal block 270 seconds",
-    "desc_hu": "A 0.5.5 új olvasztókemencét ad hozzá, amelyet különféle ötvözetberendezések készítésére használnak. Jelenleg csak szenet, szénblokkokat és magmahordókat támogat üzemanyagként. Az olvasztó kemence az ősi fém és mithril páncélt is megerősítheti. Erősítés után további beállított effektusok aktiválhatók. Az olvasztó kemencét csak vascsákánnyal vagy annál magasabb csákánnyal lehet bányászni. Az olvasztókemence megsemmisítése szerszámok vagy berendezések olvasztása közben, valamint az olvasztókemencéből leejtett szerszámok vagy berendezések megtartása a magas hőmérséklet miatt továbbra is vérlevonást eredményez. Az olvasztókemencében égő tüzelőanyag és idő: Típus Egyszeri égési idő Szén 30 másodperc Magma vödör 120 másodperc Szénblokk 270 másodperc"
+    "desc": "Blast furnace used for alloy gear and some upgraded armor processes. It accepts only a limited fuel set and should be mined with at least an iron pickaxe.",
+    "desc_en": "Blast furnace used for alloy gear and some upgraded armor processes. It accepts only a limited fuel set and should be mined with at least an iron pickaxe.",
+    "desc_hu": "Olvasztókemence ötvözött felszerelésekhez és néhány fejlettebb páncélfolyamathoz. Csak korlátozott üzemanyagkészletet fogad el, és legalább vascsákánnyal érdemes kibányászni.",
+    "desc_ru": "Плавильная печь для сплавного снаряжения и некоторых улучшенных процессов с бронёй. Принимает только ограниченный набор топлива, а добывать её стоит минимум железной киркой."
   },
   "enchantment_table": {
     "mcmod_id": 777403,
-    "desc": "功能同原版 附魔台 。 新增每次附魔需要3个 青金石 ，并且青金石可以保存在附魔台中，关闭界面不会掉出。",
-    "desc_en": "The functions are the same as the original enchantment table. Added that each enchantment requires 3 lapis lazuli, and the lapis lazuli can be saved in the enchantment table, and the interface will not fall out when closing the interface.",
-    "desc_hu": "A funkciók megegyeznek az eredeti varázstáblával. Hozzátéve, hogy minden varázslathoz 3 lapis lazuli kell, és a lapis lazuli elmenthető az enchantment táblába, és az interfész nem fog kiesni a felület bezárásakor."
+    "desc": "Standard enchanting table behavior, but each enchant costs 3 lapis lazuli. The table stores the lapis instead of dropping it when the interface closes.",
+    "desc_en": "Standard enchanting table behavior, but each enchant costs 3 lapis lazuli. The table stores the lapis instead of dropping it when the interface closes.",
+    "desc_hu": "Normál varázsasztal-viselkedés, de minden varázslat 3 lapis lazulit kér. A lapist az asztal tárolja, nem dobja ki a felület bezárásakor.",
+    "desc_ru": "Обычный стол зачарования, но каждое зачарование требует 3 лазурита. Лазурит хранится в столе и не выпадает при закрытии интерфейса."
   },
   "two_port_cauldron": {
     "mcmod_id": 802106,
@@ -3654,14 +3998,22 @@
   },
   "ancient_metal_backpack_upgrade": {
     "mcmod_id": 831515,
-    "desc": "0.9.0版本新增，通过把大背包升级道具与4个远古金属锭放入整锅的液化汞内，在经过30秒转化，消耗锅内所有物品后生成。 注意此过程中，锅底部需要有岩浆热源，需要获得对应的 知识书 解锁权限才能合成。 拖动背包中的远古金属背包升级道具到饰品栏中已装备的皮革背包，点击后即升级。 此段资料引用于“ 背包 (Back Pack) ”并与其保持同步更新。 编辑 提供一个额外储存空间，将背包穿戴到饰品栏中，按B打开自己背着的背包。 背包按容量从小到大分别为：皮革背包＜铜背包=银背包＜铁背包＜金背包＜硬石背包＜远古金属背包＜秘银背包＜艾德曼背包。 注：当前版本0.5.6暂不更新秘银和艾德曼背包。 0.9.0版本修改，移除除皮革背包以外的所有背包合成公式。同时新增远古金属背包升级道具，可将饰品栏中的皮革背包升级为远古金属背包。 艾德曼背包和秘银背包暂没有对应的合成配方或升级道具。 并且初始的皮革背包和远古金属背包在饰品栏摘不下来。 背包类型 列×行 皮革背包 5×2 铜背包 7×3 银背包 7×3 铁背包 9×4 金背包 11×4 硬石背包 11×5 远古金属背包 13×6 秘银背包 15×6 艾德曼背包 17×6",
+    "desc": "Ancient metal backpack upgrade item. In v0.9.0 it became the main way to turn the big-backpack upgrade path into the Ancient Metal Backpack. Crafting requires the matching Knowledge Book, and the item upgrades the equipped leather backpack in the accessory slot.",
     "versions": [
-      "0.9.0版本新增，通过把大背包升级道具与4个远古金属锭放入整锅的液化汞内，在经过30秒转化，消耗锅内所有物品后生成",
-      "0.9.0版本修改，移除除皮革背包以外的所有背包合成公式"
+      "In v0.9.0, backpack progression was simplified to the leather backpack plus dedicated upgrade item path."
     ],
-    "desc_en": "Added in version 0.9.0. This upgrade item is produced by converting 1 backpack-upgrade item plus 4 Ancient Metal Ingots in a full cauldron of liquefied mercury for 30 seconds. A magma heat source is required beneath the cauldron, and the relevant Knowledge Book must be unlocked. Use the resulting upgrade item on your equipped backpack to turn it into an Ancient Metal Backpack.",
-    "desc_hu": "A 0.9.0-s verzióban hozzáadott fejlesztő item. Úgy készül, hogy 1 hátizsák-fejlesztő itemet és 4 Ősi Fém rudat 30 másodpercre teljes folyékony higannyal töltött üstbe helyezel. Az üst alatt magma hőforrás kell, és a megfelelő Tudáskönyvet is fel kell oldani. Az elkészült fejlesztő itemet a felszerelt hátizsákon használva Ancient Metal Backpackké fejlesztheted.",
-    "desc_ru": "Предмет улучшения, добавленный в версии 0.9.0. Создаётся, если поместить 1 предмет улучшения рюкзака и 4 слитка древнего металла в полностью заполненный котёл с жидкой ртутью на 30 секунд. Под котлом нужен источник тепла магмы, а соответствующая Книга знаний должна быть разблокирована. Готовое улучшение применяется к надетому рюкзаку и превращает его в Ancient Metal Backpack."
+    "desc_en": "Ancient metal backpack upgrade item. In v0.9.0 it became the main way to turn the big-backpack upgrade path into the Ancient Metal Backpack. Crafting requires the matching Knowledge Book, and the item upgrades the equipped leather backpack in the accessory slot.",
+    "desc_hu": "Ősi fém hátizsák-fejlesztő item. A 0.9.0-s verzióban ez lett a fő út a nagy hátizsák-fejlesztésből az Ősi Fém Hátizsákig. A craftoláshoz a megfelelő Tudáskönyv kell, és az item a kiegészítőhelyen viselt bőrhátizsákot fejleszti tovább.",
+    "desc_ru": "Предмет улучшения рюкзака из древнего металла. В версии 0.9.0 он стал основным способом перевести ветку большого рюкзака в рюкзак из древнего металла. Для крафта нужна соответствующая Книга знаний, а сам предмет улучшает кожаный рюкзак в слоте аксессуара.",
+    "versions_en": [
+      "In v0.9.0, backpack progression was simplified to the leather backpack plus dedicated upgrade item path."
+    ],
+    "versions_hu": [
+      "A 0.9.0-s verzióban a hátizsák-progresszió a bőr hátizsák + dedikált upgrade item útra egyszerűsödött."
+    ],
+    "versions_ru": [
+      "В версии 0.9.0 развитие рюкзаков упростили до кожаного рюкзака и отдельного предмета улучшения."
+    ]
   },
   "big_backpack_upgrade": {
     "mcmod_id": 841176,
@@ -3950,367 +4302,507 @@
   },
   "log_pitaya": {
     "mcmod_id": 772036,
-    "desc": "破坏火龙果树后获得的植物方块，火龙果树有概率在主世界生成。",
-    "desc_en": "Plant blocks obtained after destroying dragon fruit trees. Dragon fruit trees have a probability of being generated in the main world.",
-    "desc_hu": "Ültesse be a sárkány gyümölcsfák elpusztítása után kapott blokkokat. A sárkánygyümölcsfák valószínűleg a fővilágban keletkeznek."
+    "desc": "Plant log block from dragon fruit trees. Dragon fruit trees can generate in overworld jungle areas.",
+    "desc_en": "Plant log block from dragon fruit trees. Dragon fruit trees can generate in overworld jungle areas.",
+    "desc_hu": "A sárkánygyümölcsfák növényi fatörzsblokkja. A sárkánygyümölcsfák a fővilág dzsungelterületein jelenhetnek meg.",
+    "desc_ru": "Растительный ствол дерева драконьего фрукта. Такие деревья могут появляться в джунглях обычного мира."
   },
   "log_banana": {
     "mcmod_id": 772037,
-    "desc": "破坏香蕉树后获得的植物方块，香蕉树有概率在主世界生成。",
-    "desc_en": "Plant blocks obtained after destroying banana trees. Banana trees have a probability of being generated in the main world.",
-    "desc_hu": "A banánfák elpusztítása után kapott tömböket ültesse be. A banánfák valószínűleg a fővilágban keletkeznek."
+    "desc": "Plant log block from banana trees. Banana trees can generate in overworld jungle areas.",
+    "desc_en": "Plant log block from banana trees. Banana trees can generate in overworld jungle areas.",
+    "desc_hu": "A banánfák növényi fatörzsblokkja. A banánfák a fővilág dzsungelterületein jelenhetnek meg.",
+    "desc_ru": "Растительный ствол бананового дерева. Банановые деревья могут появляться в джунглях обычного мира."
   },
   "log_coconut": {
     "mcmod_id": 772038,
-    "desc": "破坏椰树后获得的植物方块，椰树有概率在主世界生成。",
-    "desc_en": "Plant blocks obtained after destroying coconut trees. Coconut trees have a probability of being generated in the main world.",
-    "desc_hu": "Ültesse be a kókuszfák elpusztítása után kapott blokkokat. A kókuszfák valószínűleg a világban keletkeznek."
+    "desc": "Plant log block from coconut trees. Coconut trees can generate in overworld jungle areas.",
+    "desc_en": "Plant log block from coconut trees. Coconut trees can generate in overworld jungle areas.",
+    "desc_hu": "A kókuszfák növényi fatörzsblokkja. A kókuszfák a fővilág dzsungelterületein jelenhetnek meg.",
+    "desc_ru": "Растительный ствол кокосового дерева. Кокосовые деревья могут появляться в джунглях обычного мира."
   },
   "magma": {
     "mcmod_id": 772041,
-    "desc": "新增设定放在水中可以将玩家拖入水底，其他同原版本 岩浆块 。",
-    "desc_en": "A new setting is added to drag players into the water when placed in the water. Others are the same as the original version of Magma Block.",
-    "desc_hu": "Egy új beállítással a játékosokat a vízbe vonszolja, amikor a vízbe helyezik. Mások megegyeznek a Magma Block eredeti verziójával."
+    "desc": "Magma block variant that can drag players downward in water, while otherwise behaving like a normal magma block.",
+    "desc_en": "Magma block variant that can drag players downward in water, while otherwise behaving like a normal magma block.",
+    "desc_hu": "Magma blokk-változat, amely vízben lefelé húzhatja a játékost, egyébként pedig normál magma blokként viselkedik.",
+    "desc_ru": "Вариант магмового блока, который в воде может тянуть игрока вниз, а в остальном ведёт себя как обычный блок магмы."
   },
   "gravel_nether": {
     "mcmod_id": 772198,
-    "desc": "在下界世界随机生成，在下方没有方块时会掉落，此时它是一个实体。 掉到地上后会变成方块，如果碰到透明方块会掉落自身。 增加直接破坏后有12%概率获得矿物碎片或金属粒。此概率受时运影响，使用附魔时运的铲子挖掘最大可提升至60%。 也可以使用 木筛 进行筛选，有80%概率获得矿物碎片或金属粒。 地狱砂砾直接破坏获得 概率 燧石 2% 燧石碎片 28% 金粒 48% 石英碎片 22%",
-    "desc_en": "Randomly generated in the nether world, it will drop when there is no block below it. At this time, it is an entity. It will turn into a block when it falls to the ground. If it hits a transparent block, it will drop itself. Increases the probability of obtaining mineral fragments or metal particles by 12% after direct destruction. This probability is affected by luck, and digging with a shovel enchanted with luck can increase to a maximum of 60%. You can also use a wooden sieve to screen, with an 80% probability of obtaining mineral fragments or metal particles. Probability of obtaining Hell Gravel by direct destruction: Flint 2%, Flint Fragments 28%, Gold Nuggets 48%, Quartz Fragments 22%",
-    "desc_hu": "Véletlenszerűen generálva az alvilágban, leesik, ha nincs alatta blokk. Jelenleg ez egy entitás. Ha a földre esik, tömbbé válik. Ha egy átlátszó tömbnek ütközik, akkor leesik. Közvetlen megsemmisítés után 12%-kal növeli az ásványi töredékek vagy fémrészecskék megszerzésének valószínűségét. Ezt a valószínűséget befolyásolja a szerencse, és a szerencsével varázsolt lapáttal való ásás maximum 60%-ra nőhet. Használhat faszitát is a szitáláshoz, 80%-os valószínűséggel ásványi töredékek vagy fémszemcsék képződéséhez. Pokolkavics közvetlen megsemmisítéssel történő megszerzésének valószínűsége: Tőkés 2%, Tűzkőtöredékek 28%, Aranyrögök 48%, Kvarctöredékek 22%"
+    "desc": "Nether gravel that can fall like a gravity block. Breaking or sieving it yields Nether-oriented fragments such as flint, gold nuggets, and quartz shards.",
+    "desc_en": "Nether gravel that can fall like a gravity block. Breaking or sieving it yields Nether-oriented fragments such as flint, gold nuggets, and quartz shards.",
+    "desc_hu": "Netheri kavics, amely gravitációs blokként lezuhanhat. Törve vagy szitálva netheres töredékeket adhat, például kovát, aranyrögöt és kvarcszilánkot.",
+    "desc_ru": "Адский гравий, который падает как гравитационный блок. При разрушении или просеивании даёт незерские фрагменты вроде кремня, золотых самородков и кварцевых осколков."
   },
   "core": {
     "mcmod_id": 773486,
-    "desc": "在地狱底部生成，材质类似 岩浆 ，动态材质，但不可流动，不可被破坏。 会发出亮度为15的光，玩家挨着该方块或在方块旁边（上方、前后和左右，距离<3）待一段时间后会着火，伤害与岩浆相等。 0.5.8版本加入地核破坏者可破坏地核，被破坏的地核会变为末地传送门。 0.5.8版本修改为玩家距离地核<8，待一段时间后会着火，伤害与岩浆相等。",
+    "desc": "Hell core block found deep in the Nether. It emits strong light, cannot normally be destroyed, and ignites players who remain too close for too long.",
     "versions": [
-      "0.5.8版本加入地核破坏者可破坏地核，被破坏的地核会变为末地传送门",
-      "0.5.8版本修改为玩家距离地核<8，待一段时间后会着火，伤害与岩浆相等"
+      "In v0.5.8, the Core Destroyer was added so the core could be broken.",
+      "In v0.5.8, the dangerous heat radius around the core was increased."
     ],
-    "desc_en": "Generated at the bottom of hell, the material is similar to magma, a dynamic material, but it cannot flow or be destroyed. It will emit light with a brightness of 15. If the player stays next to the block or next to the block (above, front, back and left, distance <3) for a period of time, it will catch fire, and the damage will be equal to that of magma. Version 0.5.8 adds the Earth Core Destroyer, which can destroy the Earth's core, and the destroyed Earth's core will become an end portal. Version 0.5.8 was modified so that if the distance between the player and the core is less than 8, it will catch fire after a period of time, and the damage will be equal to that of magma.",
-    "desc_hu": "A pokol fenekén keletkezett anyag hasonló a magmához, egy dinamikus anyaghoz, de nem tud folyni vagy elpusztulni. 15-ös fényerővel bocsát ki fényt. Ha a játékos a blokk mellett vagy a blokk mellett (fölül, elöl, hátul és balra, távolság"
+    "desc_en": "Hell core block found deep in the Nether. It emits strong light, cannot normally be destroyed, and ignites players who remain too close for too long.",
+    "desc_hu": "A Nether mélyén található magblokk. Erős fényt ad, normálisan nem pusztítható el, és meggyújtja a túl sokáig túl közel maradó játékost.",
+    "desc_ru": "Ядро Нижнего мира, встречающееся в глубинах Незера. Даёт сильный свет, обычно не разрушается и поджигает игрока, если тот слишком долго стоит рядом.",
+    "versions_en": [
+      "In v0.5.8, the Core Destroyer was added so the core could be broken.",
+      "In v0.5.8, the dangerous heat radius around the core was increased."
+    ],
+    "versions_hu": [
+      "A 0.5.8-as verzióban bekerült a Core Destroyer, amellyel a mag már szétbontható.",
+      "A 0.5.8-as verzióban a mag veszélyes hősugara is nagyobb lett."
+    ],
+    "versions_ru": [
+      "В версии 0.5.8 добавили Core Destroyer, чтобы ядро можно было разрушить.",
+      "В версии 0.5.8 увеличили опасный радиус жара вокруг ядра."
+    ]
   },
   "mantle": {
     "mcmod_id": 773782,
-    "desc": "在地下世界最底部（Y<5）生成，通常成片生成，无法破坏，硬度和 基岩 相同。 在地幔上建造传送门即可形成 地狱门 ，传送门方块显示红色即为成功打开地狱门，可进入 地狱 。 会发出亮度为15的光，在挨着该方块或在方块旁边（距离<3，上方与前后左右）待一段时间时，玩家会着火，伤害与 岩浆 相等；在地幔上放 水 一样会受伤。",
-    "desc_en": "Generated at the bottom of the underground world (Y<5), usually in pieces, cannot be destroyed, and has the same hardness as bedrock. The Hell Gate can be formed by building a portal on the mantle. If the portal square displays red, the Hell Gate has been successfully opened and you can enter Hell. It will emit light with a brightness of 15. When the player stays next to the block or next to the block (distance <3, above, front, back, left, and right) for a period of time, the player will catch fire, and the damage is equal to magma; putting water on the mantle will also cause damage.",
-    "desc_hu": "A földalatti világ alján keletkezik (Y"
+    "desc": "Mantle layer found at the bottom of the Underground world. It is bedrock-hard, dangerous to stand on, and used as the base for opening the Hell gate route.",
+    "desc_en": "Mantle layer found at the bottom of the Underground world. It is bedrock-hard, dangerous to stand on, and used as the base for opening the Hell gate route.",
+    "desc_hu": "A föld alatti világ alján található köpenyréteg. Alapkőzet-keménységű, veszélyes rajta állni, és a pokolkapu-útvonal megnyitásának alapja.",
+    "desc_ru": "Слой мантии на дне Подземного мира. По прочности как коренная порода, опасен для стояния и служит основой для открытия пути в Нижний мир."
   },
   "slow_sand": {
     "mcmod_id": 773783,
-    "desc": "新增设定放在水中可以将玩家浮到水面(指世界的海平面的高度) ，其他同原版 灵魂沙 。",
-    "desc_en": "The new setting is that placing the player in the water can float the player to the surface (referring to the height of the sea level in the world). The other settings are the same as the original Soul Sand.",
-    "desc_hu": "Az új beállítás szerint a játékos vízbe helyezése a felszínre úsztathatja (a világ tengerszintjének magasságára utalva). A többi beállítás megegyezik az eredeti Soul Sandéval."
+    "desc": "Soul-sand variant that can lift the player upward in water toward the surface, while otherwise behaving like Soul Sand.",
+    "desc_en": "Soul-sand variant that can lift the player upward in water toward the surface, while otherwise behaving like Soul Sand.",
+    "desc_hu": "Lélekhomok-változat, amely vízben a felszín felé emelheti a játékost, egyébként pedig az alap Soul Sandhez hasonlóan viselkedik.",
+    "desc_ru": "Вариант песка душ, который в воде может поднимать игрока к поверхности, а в остальном ведёт себя как обычный Soul Sand."
   },
   "rubace_budding": {
     "mcmod_id": 777340,
-    "desc": "组成红水晶洞穴的方块，上面会生长出红水晶矿物，分别经历小型红水晶芽、中型红水晶芽、大型红水晶芽、红水晶簇。 直接破坏红水晶母岩无任何掉落物，使用精准采集也不行。 红水晶母岩会根据游戏内的时间推移，缓慢长出红水晶簇，总共历时7天： 红水晶母岩——小型红水晶芽，需要1天； 小型红水晶芽——中型红水晶芽，需要2天； 中型红水晶芽——大型红水晶芽，需要3天； 大型红水晶芽——红水晶簇，需要1天。",
-    "desc_en": "Red crystal minerals will grow on the blocks that make up the red crystal cave, and they will go through small red crystal buds, medium red crystal buds, large red crystal buds, and red crystal clusters. Nothing will be dropped if you directly destroy the red crystal mother rock, nor will you use precise collection. The red crystal mother rock will slowly grow red crystal clusters according to the passage of time in the game, which takes a total of 7 days: red crystal mother rock - small red crystal buds, which takes 1 day; small red crystal buds - medium red crystal buds, which takes 2 days; medium red crystal buds - large red crystal buds, which takes 3 days; large red crystal buds - red crystal clusters, which takes 1 day.",
-    "desc_hu": "A vörös kristálybarlangot alkotó tömbökön vörös kristályásványok fognak növekedni, és kis piros kristályrügyeken, közepes vörös kristályrügyeken, nagy vörös kristályrügyeken és vörös kristályhalmazokon mennek keresztül. Semmi sem esik el, ha közvetlenül megsemmisíted a vörös kristály anyakőzetet, és nem is használsz precíz gyűjtést. A vörös kristály anyakőzet lassan vörös kristályhalmazokat növeszt a játék idő múlásának megfelelően, ami összesen 7 napot vesz igénybe: vörös kristály anyakőzet - kis vörös kristályrügyek, ami 1 napot vesz igénybe; kis piros kristályrügyek - közepes vörös kristályrügyek, ami 2 napot vesz igénybe; közepes vörös kristályrügyek - nagy vörös kristályrügyek, ami 3 napot vesz igénybe; nagy vörös kristályrügyek - vörös kristályfürtök, ami 1 napot vesz igénybe."
+    "desc": "Base budding block of the red crystal cave. It slowly grows through the bud stages into a full rubace cluster over about 7 in-game days, and does not drop itself when broken.",
+    "desc_en": "Base budding block of the red crystal cave. It slowly grows through the bud stages into a full rubace cluster over about 7 in-game days, and does not drop itself when broken.",
+    "desc_hu": "A vörös kristálybarlang alap növeszkedő blokkja. Nagyjából 7 játéknap alatt fejlődik végig a rügyfázisokon teljes rubace kristályfürtté, és kitörve nem ejti magát.",
+    "desc_ru": "Базовый растущий блок пещеры красных кристаллов. Примерно за 7 игровых дней он проходит все стадии роста до полного скопления rubace и не выпадает сам при разрушении."
   },
   "hard_ened_clay": {
     "mcmod_id": 799980,
-    "desc": "由 红砖 在工作台合成获得，可用于合成 硬化粘土炉 。",
-    "desc_en": "Crafted from red bricks at the workbench, it is used to craft the Hardened Clay Furnace.",
-    "desc_hu": "Munkapadon vörös téglákból craftolható, és az edzett agyagkemence elkészítéséhez használható."
+    "desc": "Crafted from red bricks at a workbench. Used to make the Hardened Clay Furnace.",
+    "desc_en": "Crafted from red bricks at a workbench. Used to make the Hardened Clay Furnace.",
+    "desc_hu": "Vörös téglákból készül munkaasztalon. Az edzett agyagkemence receptjéhez használható.",
+    "desc_ru": "Создаётся из красного кирпича на верстаке. Используется для крафта печи из закалённой глины."
   },
   "sand_stone": {
     "mcmod_id": 803852,
-    "desc": "热度为1的燃料烧制4个沙子可以获得沙石，可合成 沙石炉 。 0.6版本调整，1个沙子烧制成1个沙石，需要熔炉热量达到1200度。",
+    "desc": "Sandstone used for sandstone furnaces and related building recipes. Later versions changed the exact smelting ratio and heat requirement.",
     "versions": [
-      "0.6版本调整，1个沙子烧制成1个沙石，需要熔炉热量达到1200度"
+      "In v0.6.0, sandstone smelting was changed to a hotter one-sand recipe."
     ],
-    "desc_en": "Burning 4 pieces of sand with fuel with a heat of 1 can obtain sand and stone, which can be crafted into a sand and stone furnace. Adjusted in version 0.6. To smelt 1 sand into 1 sandstone, the furnace heat needs to reach 1200 degrees.",
-    "desc_hu": "4 darab homok elégetésével 1-es hőfokú tüzelőanyaggal homok és kő nyerhető, amelyekből homok- és kőkemencét alakíthatunk ki. A 0.6-os verzióban módosítva. 1 homok 1 homokkővé olvasztásához a kemence hőjének el kell érnie az 1200 fokot."
+    "desc_en": "Sandstone used for sandstone furnaces and related building recipes. Later versions changed the exact smelting ratio and heat requirement.",
+    "desc_hu": "Homokkő, amely homokkőkemencékhez és kapcsolódó építési receptekhez kell. A későbbi verziók módosították a pontos olvasztási arányt és a hőigényt.",
+    "desc_ru": "Песчаник для песчаниковых печей и связанных строительных рецептов. В поздних версиях изменили точную пропорцию переплавки и требуемую температуру.",
+    "versions_en": [
+      "In v0.6.0, sandstone smelting was changed to a hotter one-sand recipe."
+    ],
+    "versions_hu": [
+      "A 0.6.0-s verzióban a homokkő olvasztása forróbb, egyhomokos receptre váltott."
+    ],
+    "versions_ru": [
+      "В версии 0.6.0 переплавку песчаника перевели на более горячий рецепт из одного песка."
+    ]
   },
   "torch_off": {
     "mcmod_id": 772046,
-    "desc": "火把在燃烧三天、下雨淋湿后后自动熄灭。 可以手持打火石或燃烧的火把，右击已放置的熄灭的火把，进行重新点燃。 0.5.7版本更新后，简单模式下，火把不会因为燃烧时间超过3天而熄灭。 0.5.8版本，火把堆叠改每组32个。",
+    "desc": "Extinguished torch left behind after a normal torch burns out or gets soaked. It can be relit with flint and steel or a burning torch.",
     "versions": [
-      "0.5.7版本更新后，简单模式下，火把不会因为燃烧时间超过3天而熄灭",
-      "0.5.8版本，火把堆叠改每组32个"
+      "In v0.5.7, simple mode stopped timing out torches.",
+      "In v0.5.8, torch stack size increased to 32."
     ],
-    "desc_en": "The torch burns for three days and then goes out automatically when it rains and gets wet. You can hold a flint or a burning torch and right-click an extinguished torch to relight it. After the update to version 0.5.7, in simple mode, the torch will not go out because it burns for more than 3 days. In version 0.5.8, the number of torch stacks increased to 32 per group.",
-    "desc_hu": "A fáklya három napig ég, majd automatikusan kialszik, ha esik és nedves lesz. Tarthat egy kovakőt vagy égő fáklyát, és jobb gombbal rákattinthat egy kialudt fáklyára az újragyújtáshoz. A 0.5.7-es verzióra való frissítés után egyszerű módban a zseblámpa nem alszik ki, mert több mint 3 napig ég. A 0.5.8-as verzióban a fáklyák száma csoportonként 32-re nőtt."
+    "desc_en": "Extinguished torch left behind after a normal torch burns out or gets soaked. It can be relit with flint and steel or a burning torch.",
+    "desc_hu": "Normál fáklya után maradó kialudt fáklya, ha az leég vagy elázik. Tűzkővel vagy égő fáklyával újragyújtható.",
+    "desc_ru": "Потухший факел, остающийся после выгорания или намокания обычного факела. Его можно снова зажечь огнивом или горящим факелом.",
+    "versions_en": [
+      "In v0.5.7, simple mode stopped timing out torches.",
+      "In v0.5.8, torch stack size increased to 32."
+    ],
+    "versions_hu": [
+      "A 0.5.7-es verzióban az egyszerű mód már nem időzíti ki a fáklyákat.",
+      "A 0.5.8-as verzióban a fáklyák kötegmérete 32-re nőtt."
+    ],
+    "versions_ru": [
+      "В версии 0.5.7 в простом режиме факелы перестали тухнуть по таймеру.",
+      "В версии 0.5.8 размер стака факелов увеличили до 32."
+    ]
   },
   "glow_stone_torch": {
     "mcmod_id": 772166
   },
   "pillager_flag": {
     "mcmod_id": 777342,
-    "desc": "击杀掠夺者有概率掉落，手持时，周围20格的村民兑换产出翻倍。",
+    "desc": "Has a chance to drop from Pillagers. While held, villager trade output is doubled within a 20-block radius.",
     "desc_en": "Has a chance to drop from Pillagers. While held, villager trade output is doubled within a 20-block radius.",
-    "desc_hu": "Pillagerektől eshet. Kézben tartva 20 blokkon belül megduplázza a falusi trade-ek kimenetét."
+    "desc_hu": "Pillagerektől eshet. Kézben tartva 20 blokkon belül megduplázza a falusi trade-ek kimenetét.",
+    "desc_ru": "Может выпадать с разбойников. Пока флаг в руке, объём обмена жителей в радиусе 20 блоков удваивается."
   },
   "template_lantern": {
     "mcmod_id": 783986,
-    "desc": "0.5.6版本加入的装饰类照明方块，亮度为15。",
+    "desc": "Decorative lantern template/light source added in v0.5.6. It emits light level 15.",
     "versions": [
-      "0.5.6版本加入的装饰类照明方块，亮度为15"
+      "In v0.5.6, this decorative light block was added."
     ],
-    "desc_en": "The decorative lighting blocks added in version 0.5.6 have a brightness of 15.",
-    "desc_hu": "A 0.5.6-os verzióban hozzáadott dekoratív világítóblokkok fényereje 15."
+    "desc_en": "Decorative lantern template/light source added in v0.5.6. It emits light level 15.",
+    "desc_hu": "A 0.5.6-os verzióban hozzáadott dekoratív lámpás-/fényforrásblokk. 15-ös fényszintet ad.",
+    "desc_ru": "Декоративный блок-основа/источник света, добавленный в версии 0.5.6. Даёт уровень света 15.",
+    "versions_en": [
+      "In v0.5.6, this decorative light block was added."
+    ],
+    "versions_hu": [
+      "A 0.5.6-os verzióban bekerült ez a dekoratív fényblokk."
+    ],
+    "versions_ru": [
+      "В версии 0.5.6 добавили этот декоративный световой блок."
+    ]
   },
   "thin_glass": {
     "mcmod_id": 803023,
-    "desc": "同原版 玻璃板 。1个玻璃可以在工作台合成6个玻璃板。 0.5.8版本，修改为1个玻璃可以合成8个玻璃板。",
+    "desc": "Glass pane variant used in thin window and decoration builds. Later versions increased the output count from one glass block.",
     "versions": [
-      "0.5.8版本，修改为1个玻璃可以合成8个玻璃板"
+      "In v0.5.8, one glass block began producing 8 panes."
     ],
-    "desc_en": "Same as the original glass plate. 1 piece of glass can be crafted into 6 glass plates at the workbench. Version 0.5.8, modified to allow 8 glass plates to be crafted from 1 glass.",
-    "desc_hu": "Ugyanaz, mint az eredeti üveglap. 1 üvegből 6 üveglap készíthető a munkapadon. 0.5.8-as verzió, amelyet úgy módosítottak, hogy 1 üvegből 8 üveglapot lehessen készíteni."
+    "desc_en": "Glass pane variant used in thin window and decoration builds. Later versions increased the output count from one glass block.",
+    "desc_hu": "Üvegtábla-változat vékony ablakokhoz és díszítéshez. A későbbi verziók megnövelték az egy üvegből kapott darabszámot.",
+    "desc_ru": "Вариант стеклянной панели для тонких окон и декора. В поздних версиях увеличили количество панелей из одного блока стекла.",
+    "versions_en": [
+      "In v0.5.8, one glass block began producing 8 panes."
+    ],
+    "versions_hu": [
+      "A 0.5.8-as verzióban egy üvegből már 8 üvegtábla készült."
+    ],
+    "versions_ru": [
+      "В версии 0.5.8 из одного блока стекла стало получаться 8 панелей."
+    ]
   },
   "torch_holy": {
     "mcmod_id": 831585,
-    "desc": "0.9.0版本新增，净化火炬半径10格内的菜不受血月枯萎影响，净化火炬不会被雨水熄灭。 在困难版雨天内，净化火炬半径10格内不会刷新僵尸 净化火炬是在酿造台由生羊肉和火把合成。",
+    "desc": "Purifying Torch added in v0.9.0. It protects nearby crops from Blood Moon withering, is not extinguished by rain, and suppresses nearby zombie spawns in hard-mode rain.",
     "versions": [
-      "0.9.0版本新增，净化火炬半径10格内的菜不受血月枯萎影响，净化火炬不会被雨水熄灭"
+      "In v0.9.0, the Purifying Torch was added."
     ],
-    "desc_en": "Newly added in version 0.9.0, vegetables within a 10-block radius of the purification torch are not affected by the blood moon withering, and the purification torch will not be extinguished by rain. In the rainy weather of the Hard Edition, zombies will not be spawned within a 10-block radius of the Purifying Torch. The Purifying Torch is crafted from raw mutton and torches at the brewing stand.",
-    "desc_hu": "A 0.9.0-s verzióban újonnan hozzáadott zöldségeket a tisztító fáklya 10 blokk sugarú körzetében nem érinti a vérhold hervadása, és a tisztító fáklyát az eső sem fogja eloltani. A Hard Edition esős időjárásában a zombik nem fognak megjelenni a Purifying Torch 10 háztömbnyi körzetében. A tisztító fáklyát nyers birkahúsból és a főzőállványon lévő fáklyákból készítik."
+    "desc_en": "Purifying Torch added in v0.9.0. It protects nearby crops from Blood Moon withering, is not extinguished by rain, and suppresses nearby zombie spawns in hard-mode rain.",
+    "desc_hu": "A 0.9.0-s verzióban bekerült Tisztító Fáklya. Megvédi a közeli terményeket a Vérhold alatti hervadástól, az eső nem oltja ki, és hard módban esőben visszafogja a közeli zombispawnokat.",
+    "desc_ru": "Очищающий факел, добавленный в версии 0.9.0. Защищает ближайшие культуры от увядания во время Кровавой луны, не гаснет под дождём и подавляет спавн зомби рядом в дождливом хард-режиме.",
+    "versions_en": [
+      "In v0.9.0, the Purifying Torch was added."
+    ],
+    "versions_hu": [
+      "A 0.9.0-s verzióban bekerült a Tisztító Fáklya."
+    ],
+    "versions_ru": [
+      "В версии 0.9.0 добавили Очищающий факел."
+    ]
   },
   "sapling_pitaya": {
     "mcmod_id": 772033,
-    "desc": "破坏火龙果树概率获得，仅在丛林地形生成和种植。",
-    "desc_en": "Probability obtained by destroying dragon fruit trees, only generated and planted in jungle terrain.",
-    "desc_hu": "Sárkánygyümölcsfák elpusztításával kapott valószínűség, csak dzsungel terepen keletkezett és ültethető."
+    "desc": "Sapling obtained from destroying dragon fruit trees. It generates and can be planted only in jungle terrain.",
+    "desc_en": "Sapling obtained from destroying dragon fruit trees. It generates and can be planted only in jungle terrain.",
+    "desc_hu": "A sárkánygyümölcsfákból szerezhető csemete. Csak dzsungelterepen jelenik meg és ültethető.",
+    "desc_ru": "Саженец, получаемый с деревьев драконьего фрукта. Генерируется и высаживается только в джунглях."
   },
   "sapling_coconut": {
     "mcmod_id": 772034,
-    "desc": "破坏椰树概率获得，仅在丛林地形生成和种植。",
-    "desc_en": "Probability obtained by destroying coconut trees, only generated and planted in jungle terrain.",
-    "desc_hu": "A kókuszfák elpusztításával kapott valószínűség, csak dzsungel terepen keletkezik és ültetett."
+    "desc": "Sapling obtained from destroying coconut trees. It generates and can be planted only in jungle terrain.",
+    "desc_en": "Sapling obtained from destroying coconut trees. It generates and can be planted only in jungle terrain.",
+    "desc_hu": "A kókuszfákból szerezhető csemete. Csak dzsungelterepen jelenik meg és ültethető.",
+    "desc_ru": "Саженец, получаемый с кокосовых деревьев. Генерируется и высаживается только в джунглях."
   },
   "sapling_banana": {
     "mcmod_id": 772035,
-    "desc": "破坏香蕉树概率获得，仅在丛林地形生成和种植。",
-    "desc_en": "Probability obtained by destroying banana trees, only generated and planted in jungle terrain.",
-    "desc_hu": "A banánfák elpusztításával kapott valószínűség, csak dzsungel terepen keletkezett és ültetett."
+    "desc": "Sapling obtained from destroying banana trees. It generates and can be planted only in jungle terrain.",
+    "desc_en": "Sapling obtained from destroying banana trees. It generates and can be planted only in jungle terrain.",
+    "desc_hu": "A banánfákból szerezhető csemete. Csak dzsungelterepen jelenik meg és ültethető.",
+    "desc_ru": "Саженец, получаемый с банановых деревьев. Генерируется и высаживается только в джунглях."
   },
   "sunflower": {
     "mcmod_id": 772251,
-    "desc": "向日葵在平原地形概率刷新，破坏后可获得一个瓜子。 向日葵永远面向东方。 可以使用骨粉催熟获得更多向日葵。",
+    "desc": "Sunflowers can generate in Plains terrain, and breaking them yields a melon seed. Sunflowers always face east. Bonemeal can be used to grow more sunflowers.",
     "desc_en": "Sunflowers can generate in Plains terrain, and breaking them yields a melon seed. Sunflowers always face east. Bonemeal can be used to grow more sunflowers.",
-    "desc_hu": "A napraforgó Plains terepen jelenhet meg, és eltöréskor dinnyemagot ad. A napraforgó mindig kelet felé néz. Csontliszttel további napraforgók növeszthetők."
+    "desc_hu": "A napraforgó Plains terepen jelenhet meg, és eltöréskor dinnyemagot ad. A napraforgó mindig kelet felé néz. Csontliszttel további napraforgók növeszthetők.",
+    "desc_ru": "Подсолнух может появляться на равнинах, а при разрушении даёт семечку арбуза. Подсолнух всегда смотрит на восток. Костная мука помогает вырастить больше подсолнухов."
   },
   "blueberry_bush": {
     "mcmod_id": 773786,
-    "desc": "可以在 丛林 生物群系中发现： 左击破坏葡萄丛掉落一个 葡萄 ； 右击采摘获得一个葡萄，不久后葡萄丛还会长出葡萄； 剪刀右击可剪下，掉落葡萄丛和一个葡萄（如果成熟了的话）。 葡萄丛只能种植在丛林生物群系中。",
-    "desc_en": "Can be found in the jungle biome: left-click to destroy a grape bush and drop a grape; right-click to pick a grape, and soon the grape bush will grow grapes; right-click with scissors to cut it, dropping a grape bush and a grape (if mature). Grape bushes can only be planted in jungle biomes.",
-    "desc_hu": "Megtalálható a dzsungel életközösségében: kattintson a bal gombbal egy szőlőbokor elpusztításához és egy szőlő eldobásához; kattintson a jobb gombbal a szőlő kiválasztásához, és hamarosan a szőlőbokor szőlőt fog növeszteni; jobb gombbal ollóval vágd le, ejts le egy szőlőbokrot és egy szőlőt (ha érett). Szőlőbokrokat csak dzsungelben lehet ültetni."
+    "desc": "Berry bush that grows in jungle biomes. It can be harvested by right-clicking, broken for the fruit, or cut with shears for the bush itself.",
+    "desc_en": "Berry bush that grows in jungle biomes. It can be harvested by right-clicking, broken for the fruit, or cut with shears for the bush itself.",
+    "desc_hu": "Dzsungelbiomokban növő bogyós bokor. Jobb klikkel szüretelhető, simán törve a gyümölcsöt adja, ollóval pedig maga a bokor is megszerezhető.",
+    "desc_ru": "Ягодный куст, растущий в джунглях. Его можно собирать правым кликом, ломать ради плода или срезать ножницами вместе с самим кустом."
   },
   "strawberry_bush": {
     "mcmod_id": 773785,
-    "desc": "可以在 平原 生物群系中发现： 左击破坏草莓丛掉落一个 草莓 ； 右击采摘获得一个草莓，不久后草莓丛还会长出草莓； 剪刀右击可剪下，掉落草莓丛和一个草莓（如果成熟了的话）。 草莓丛只能种植在平原生物群系中。",
-    "desc_en": "Can be found in the Plains biome: left-click to destroy a strawberry bush and drop a strawberry; right-click to pick a strawberry, and soon the strawberry bush will grow strawberries; right-click with scissors to cut it, dropping a strawberry bush and a strawberry (if mature). Strawberry bushes can only be planted in plains biomes.",
-    "desc_hu": "Megtalálható a Plains életközösségben: kattintson a bal gombbal egy eperbokor elpusztításához és egy eper eldobásához; jobb gombbal epret szedhetsz, és hamarosan az eperbokor epret növeszt; jobb gombbal ollóval vágd le, ejts le egy eperbokrét és egy epret (ha érett). Eperbokrokat csak síksági biomákba lehet ültetni."
+    "desc": "Berry bush that grows in Plains biomes. It can be harvested by right-clicking, broken for the fruit, or cut with shears for the bush itself.",
+    "desc_en": "Berry bush that grows in Plains biomes. It can be harvested by right-clicking, broken for the fruit, or cut with shears for the bush itself.",
+    "desc_hu": "Plains biomokban növő bogyós bokor. Jobb klikkel szüretelhető, simán törve a gyümölcsöt adja, ollóval pedig maga a bokor is megszerezhető.",
+    "desc_ru": "Ягодный куст, растущий на равнинах. Его можно собирать правым кликом, ломать ради плода или срезать ножницами вместе с самим кустом."
   },
   "orange_bush": {
     "mcmod_id": 773787,
-    "desc": "可以在 森林 生物群系中发现： 左击破坏橙子树掉落一个橙子（同 橘子 ）； 右击采摘获得一个橙子，不久后橙子树还会长出橙子； 剪刀右击可剪下，掉落橙子树和一个橙子（如果成熟了的话）。 橙子树只能种植在森林生物群系中。",
-    "desc_en": "Can be found in the forest biome: left-click to destroy the orange tree and drop an orange (same as orange); right-click to pick and get an orange, and the orange tree will grow oranges soon; right-click with the scissors to cut, and drop the orange tree and an orange (if mature). Orange trees can only be planted in forest biomes.",
-    "desc_hu": "Megtalálható az erdei életközösségben: kattintson a bal gombbal a narancsfa elpusztításához, és dobjon egy narancsot (ugyanaz, mint a narancs); kattintson a jobb gombbal narancs kiválasztásához, és a narancsfa hamarosan narancsot növeszt; kattintson a jobb gombbal az ollóval a vágáshoz, és dobja le a narancsfát és egy narancsot (ha érett). Narancsfát csak az erdei biomákba lehet ültetni."
+    "desc": "Orange bush/tree variant that grows in Forest biomes. Fruit can be harvested, broken off, or the plant can be cut with shears.",
+    "desc_en": "Orange bush/tree variant that grows in Forest biomes. Fruit can be harvested, broken off, or the plant can be cut with shears.",
+    "desc_hu": "Erdei biomokban növő narancsbokor-/fa-változat. A gyümölcs szüretelhető, letörhető, vagy ollóval maga a növény is kivágható.",
+    "desc_ru": "Вариант апельсинового куста/деревца для лесных биомов. Плод можно собирать, срывать или срезать ножницами вместе с растением."
   },
   "dead_bush": {
     "mcmod_id": 773811,
-    "desc": "生成在 地狱 里的 地狱砂砾 上，碰到会造成 凋零 效果，类似 凋零玫瑰 。 用 剪刀 破坏可掉落本体，可以带回家种在 花盆 里做装饰品，但如果玩家碰到依然会造成凋零效果。 凋零灌木是在本模组中唯一拥有粒子效果的植物，在它的周围会闪烁着白色的粒子效果。 凋零灌木将拥有更大的概率掉落木棍。",
-    "desc_en": "Generates on Hell Gravel in Hell, and will cause a withering effect when touched, similar to a withering rose. The main body can be dropped by destroying it with scissors. You can take it home and plant it in a flower pot as a decoration, but it will still cause a withering effect if the player touches it. The withered bush is the only plant with particle effects in this module, and white particle effects will flash around it. Withered bushes will have a greater chance of dropping sticks.",
-    "desc_hu": "A Hell Gravel in Hell-en keletkezik, és megérintve hervadó hatást okoz, hasonlóan egy hervadó rózsához. A főtestet ollóval lerombolva le lehet ejteni. Hazaviheted és virágcserépbe ültetheted dísznek, de akkor is hervadó hatást vált ki, ha a játékos hozzáér. Ebben a modulban a kiszáradt bokor az egyetlen részecskeeffektussal rendelkező növény, és körülötte fehér részecskeeffektusok fognak villogni. Az elszáradt bokroknál nagyobb eséllyel ejtik le a botokat."
+    "desc": "Withering bush that grows on Nether gravel. Touching it causes a wither-like effect, but it can be collected with shears as a dangerous decorative plant.",
+    "desc_en": "Withering bush that grows on Nether gravel. Touching it causes a wither-like effect, but it can be collected with shears as a dangerous decorative plant.",
+    "desc_hu": "Netheri kavicson növő hervasztó bokor. Érintése hervadásszerű hatást okoz, de ollóval begyűjthető veszélyes dísznövényként.",
+    "desc_ru": "Увядающий куст, растущий на незерском гравии. При касании накладывает эффект, похожий на иссушение, но его можно срезать ножницами как опасное декоративное растение."
   },
   "wither_rose": {
     "mcmod_id": 811576,
-    "desc": "0.5.9版本新增，在下界的地狱堡垒的奖励箱内有20%概率开出1个凋灵玫瑰。 将凋灵玫瑰种在灵魂沙上，会在凋灵玫瑰半径15格内刷新1-2个凋灵骷髅，刷新出来的凋灵骷髅会优先破坏凋灵玫瑰。 仅在下界才会刷新出凋灵骷髅。",
+    "desc": "Added in v0.5.9. Found in Nether Fortress reward chests. When planted on Soul Sand, it can attract 1-2 nearby Wither Skeletons that tend to destroy the flower first.",
     "versions": [
-      "0.5.9版本新增，在下界的地狱堡垒的奖励箱内有20%概率开出1个凋灵玫瑰"
+      "In v0.5.9, Wither Roses were added as Nether Fortress reward-chest loot."
     ],
-    "desc_en": "Newly added in version 0.5.9, there is a 20% chance of finding a Wither Rose in the reward box of the Hell Fortress in the Nether. Planting the Wither Rose on the Soul Sand will refresh 1-2 Wither Skeletons within a 15-block radius of the Wither Rose. The refreshed Wither Skeletons will give priority to destroying the Wither Rose. Wither skeletons will only spawn in the Nether.",
-    "desc_hu": "A 0.5.9-es verzióban újonnan hozzáadott, 20% esély van arra, hogy egy Hervadrózsát találjanak a Pokol Erődjének jutalomdobozában a Netherben. A hervadrózsa elültetése a lélekhomokba 1-2 hervadócsontvázat frissít a hervadórózsa 15 tömbnyi körzetében. A felfrissített Wither Skeletons elsőbbséget fog adni a Wither Rose elpusztításának. A hervad csontvázak csak a Hollandiában fognak megjelenni."
+    "desc_en": "Added in v0.5.9. Found in Nether Fortress reward chests. When planted on Soul Sand, it can attract 1-2 nearby Wither Skeletons that tend to destroy the flower first.",
+    "desc_hu": "A 0.5.9-es verzióban került be. A Nether Fortress jutalomládáiban jelenhet meg, és lélekhomokra ültetve 1-2 Wither csontvázat képes vonzani a közelébe. Ezek a Wither Skeletonok először magát a rózsát próbálják elpusztítani.",
+    "desc_ru": "Добавлена в версии 0.5.9. Встречается в наградных сундуках адской крепости. Если посадить её на песок душ, она может притягивать 1-2 ближайших скелета-иссушителя, которые обычно сначала ломают сам цветок.",
+    "versions_en": [
+      "In v0.5.9, Wither Roses were added as Nether Fortress reward-chest loot."
+    ],
+    "versions_hu": [
+      "A 0.5.9-es verzióban a Wither Rózsa a Nether Fortress jutalomládáinak lootjába került."
+    ],
+    "versions_ru": [
+      "В версии 0.5.9 розы иссушения добавили в лут наградных сундуков адской крепости."
+    ]
   },
   "mint": {
     "mcmod_id": 857952,
-    "desc": "0.9.0版本新增植物，在草原地形随机刷新，破坏后可获得1~3个薄荷叶，用于合成薄荷沙拉。",
+    "desc": "New plant added in v0.9.0. It randomly generates in Plains terrain, and breaking it yields 1 to 3 mint leaves for Mint Salad recipes.",
     "versions": [
-      "0.9.0版本新增植物，在草原地形随机刷新，破坏后可获得1~3个薄荷叶，用于合成薄荷沙拉"
+      "In v0.9.0, mint was added as a Plains plant."
     ],
-    "desc_en": "New plant added in version 0.9.0. It randomly generates in Plains terrain, and breaking it yields 1 to 3 mint leaves for Mint Salad recipes.",
-    "desc_hu": "A 0.9.0-s verzióban hozzáadott új növény. Véletlenszerűen jelenik meg a Plains terepen, és eltöréskor 1-3 mentalevelet ad, amelyből mentasaláta készíthető."
+    "desc_en": "New plant added in v0.9.0. It randomly generates in Plains terrain, and breaking it yields 1 to 3 mint leaves for Mint Salad recipes.",
+    "desc_hu": "A 0.9.0-s verzióban hozzáadott új növény. Véletlenszerűen jelenik meg a Plains terepen, és eltöréskor 1-3 mentalevelet ad, amelyből mentasaláta készíthető.",
+    "desc_ru": "Новое растение версии 0.9.0. Случайно появляется на равнинах и при разрушении даёт 1-3 листа мяты для рецептов мятного салата.",
+    "versions_en": [
+      "In v0.9.0, mint was added as a Plains plant."
+    ],
+    "versions_hu": [
+      "A 0.9.0-s verzióban a menta új Plains-növényként került be."
+    ],
+    "versions_ru": [
+      "В версии 0.9.0 мяту добавили как новое растение равнин."
+    ]
   },
   "coconut": {
     "mcmod_id": 444004,
-    "desc": "在丛林中的椰子树可以找到，破坏椰子方块后可以掉落一个椰子。 饥饿值 饱和度 糖分 蛋白质 植物营养 胰岛素反应 水分 椰子 1点（ ） 2点（ ） 700 0.44% 3.12% 2.33% 6",
-    "desc_en": "Coconut trees can be found in the jungle. Breaking a coconut block will drop a coconut. Hunger value Saturation Sugar Protein Phytonutrient Insulin response Moisture Coconut 1 point ( ) 2 points ( ) 700 0.44% 3.12% 2.33% 6",
-    "desc_hu": "Kókuszfák találhatók a dzsungelben. Egy kókuszdió tömb eltörésekor a kókuszdió leesik. Éhségérték Telítettség Cukor Fehérje Fitotápanyag Inzulin válasz Nedvesség Kókusz 1 pont ( ) 2 pont ( ) 700 0,44% 3,12% 2,33% 6"
+    "desc": "Fruit found on coconut trees in jungle areas. Breaking a coconut block drops one coconut.",
+    "desc_en": "Fruit found on coconut trees in jungle areas. Breaking a coconut block drops one coconut.",
+    "desc_hu": "Dzsungelbeli kókuszfák gyümölcse. Egy kókuszblokk eltörése egy darab kókuszt dob.",
+    "desc_ru": "Плод кокосовых деревьев в джунглях. При разрушении кокосового блока выпадает один кокос."
   },
   "grape": {
     "mcmod_id": 444005,
-    "desc": "右键 葡萄丛 获得1个葡萄，葡萄丛可在丛林生成。 饥饿值 饱和度 糖分 蛋白质 植物营养 胰岛素反应 水分 葡萄 1点（ ） 1点（ ） 700 0.38% 4.38% 2.33% 2",
+    "desc": "Harvested by right-clicking a grape bush. Grape bushes generate in jungles.",
     "desc_en": "Harvested by right-clicking a grape bush. Grape bushes generate in jungles.",
     "desc_hu": "Jobb klikkel szüretelhető a szőlőbokorról. A szőlőbokor dzsungelben jelenik meg.",
     "desc_ru": "Собирается правым кликом с виноградного куста. Виноградные кусты появляются в джунглях."
   },
   "strawberry": {
     "mcmod_id": 444006,
-    "desc": "右键草莓植株获得1个草莓，草莓植株可在平原生成。 饥饿值 饱和度 糖分 植物营养 胰岛素反应 水分 草莓 1点（ ） 1点（ ） 750 6.25% 2.5% 2",
+    "desc": "Harvested by right-clicking a strawberry plant. Strawberry plants generate in plains.",
     "desc_en": "Harvested by right-clicking a strawberry plant. Strawberry plants generate in plains.",
     "desc_hu": "Jobb klikkel szüretelhető az epernövényről. Az eper síkságon jelenik meg.",
     "desc_ru": "Собирается правым кликом с куста клубники. Клубника появляется на равнинах."
   },
   "pitaya": {
     "mcmod_id": 444009,
-    "desc": "在丛林地形随机刷新的火龙果树上获得，食用后获得额外效果。 饥饿值 饱和度 糖分 蛋白质 植物营养 胰岛素反应 水分 火龙果 1点（ ） 2点（ ） 400 0.19% 3.75% 1.33% 2",
-    "desc_en": "Obtained from dragon fruit trees that are randomly refreshed in the jungle terrain. After eating, you will gain additional effects. Hunger value Saturation Sugar Protein Phytonutrient Insulin response Water Dragon fruit 1 point ( ) 2 points ( ) 400 0.19% 3.75% 1.33% 2",
-    "desc_hu": "A dzsungel terepen véletlenszerűen frissülő sárkánygyümölcsfákból nyerték. Evés után további hatásokat érhet el. Éhségérték Telítettség Cukor Fehérje Fitotápanyag Inzulin válasz Víz Sárkánygyümölcs 1 pont ( ) 2 pont ( ) 400 0,19% 3,75% 1,33% 2"
+    "desc": "Dragon fruit collected from jungle pitaya trees. Eating it grants the food value plus its extra effect.",
+    "desc_en": "Dragon fruit collected from jungle pitaya trees. Eating it grants the food value plus its extra effect.",
+    "desc_hu": "Dzsungelbeli pitayafákról gyűjthető sárkánygyümölcs. Elfogyasztva a normál tápérték mellett extra hatást is ad.",
+    "desc_ru": "Питайя с деревьев джунглей. При употреблении даёт обычную сытость и дополнительный эффект."
   },
   "wild_fruit": {
     "mcmod_id": 444015,
-    "desc": "破坏 橡树树叶 有1%的概率获得，食用后有1/20的概率获得 反胃 ，累计食用20个野果会获得5秒 中毒 效果，可用于繁殖 猪 。 0.5.6版本更新采摘后游戏内时间经过3天，野果会变成苹果。 饥饿值 饱和度 植物营养 水分 上火 野果 1点（ ） 1点（ ） 1.88% 1 -5%",
+    "desc": "Rare fruit from breaking oak leaves. Can cause nausea, can be used to breed pigs, and eventually ripens into an apple after a few in-game days.",
     "versions": [
-      "0.5.6版本更新采摘后游戏内时间经过3天，野果会变成苹果"
+      "v0.5.6: Picked wild fruit ripens into an apple after about 3 in-game days."
     ],
-    "desc_en": "There is a 1% chance of getting Oak Leaves by destroying them. There is a 1/20 chance of getting Nausea after eating them. If you eat 20 wild fruits in total, you will get Poisoned effect for 5 seconds, which can be used to breed pigs. Version 0.5.6 update: After 3 days of in-game time have passed after picking, wild fruits will turn into apples. Hunger value, saturation, plant nutrition, water, heat, wild fruits 1 point ( ) 1 point ( ) 1.88% 1 -5%",
-    "desc_hu": "1% esély van arra, hogy tölgyleveleket szerezzenek, ha elpusztítják őket. Evés után 1/20 az esélye annak, hogy hányingert kap. Ha összesen 20 vadgyümölcsöt eszel, akkor 5 másodpercig mérgezett hatást kapsz, amivel sertéstenyésztésre is lehet használni. 0.5.6-os verzió frissítése: 3 nap játékon belüli idő elteltével a szedés után a vadon termő gyümölcsök almává változnak. Éhségérték, telítettség, növényi táplálkozás, víz, hő, vadon termő gyümölcsök 1 pont ( ) 1 pont ( ) 1,88% 1 -5%"
+    "desc_en": "Rare fruit from breaking oak leaves. Can cause nausea, can be used to breed pigs, and eventually ripens into an apple after a few in-game days.",
+    "desc_hu": "Ritka gyümölcs, ami tölgyfalevelek törésekor eshet. Hányingert okozhat, disznószaporításhoz is használható, és néhány játéknap után almává érik.",
+    "desc_ru": "Редкий плод, выпадающий при разрушении дубовой листвы. Может вызвать тошноту, подходит для разведения свиней и через несколько игровых дней созревает в яблоко.",
+    "versions_en": [
+      "v0.5.6: Picked wild fruit ripens into an apple after about 3 in-game days."
+    ],
+    "versions_hu": [
+      "v0.5.6: A leszedett vadgyümölcs nagyjából 3 játéknap után almává érik."
+    ],
+    "versions_ru": [
+      "v0.5.6: Сорванный дикий плод примерно через 3 игровых дня созревает в яблоко."
+    ]
   },
   "sun_flower_seed": {
     "mcmod_id": 446425,
-    "desc": "破坏向日葵获得，累计食用30个会获得上火效果，喝 一碗水 即可解除效果。 饥饿值 饱和度 水分 上火 瓜子 1点（ ） 1点（ ） 每吃5个-1 2.5%",
-    "desc_en": "Obtained by destroying sunflowers. If you eat 30 sunflowers in total, you will get the irritating effect. Drinking a bowl of water can cancel the effect. Hunger value, saturation, moisture, irritation, melon seeds 1 point ( ) 1 point ( ) -1 for every 5 eaten 2.5%",
-    "desc_hu": "Napraforgó elpusztításával nyerték. Ha összesen 30 napraforgót eszel, akkor az irritáló hatást éred el. Egy tál víz megivása megszüntetheti a hatást. Éhségérték, telítettség, nedvesség, irritáció, dinnyemag 1 pont ( ) 1 pont ( ) -1 minden 5 elfogyasztott 2,5%"
+    "desc": "Edible sunflower seeds obtained from sunflowers. Eating too many can trigger a heat effect that can be cleared with a bowl of water.",
+    "desc_en": "Edible sunflower seeds obtained from sunflowers. Eating too many can trigger a heat effect that can be cleared with a bowl of water.",
+    "desc_hu": "Napraforgóból szerezhető ehető mag. Túl sok elfogyasztása hőhatást okozhat, amit egy tál víz megszüntet.",
+    "desc_ru": "Съедобные семечки, получаемые из подсолнуха. Если съесть слишком много, можно получить перегрев, который снимается миской воды."
   },
   "duck_cooked": {
     "mcmod_id": 446428,
-    "desc": "鸭肉在熔炉烧制获得，食用后获得额外效果。 饥饿值 饱和度 蛋白质 水分 熟鸭肉 6点（ ） 6点（ ） 30% -1",
-    "desc_en": "Duck meat is obtained by cooking it in a furnace and will gain additional effects after being eaten. Hunger value saturation protein moisture cooked duck 6 points ( ) 6 points ( ) 30% -1",
-    "desc_hu": "A kacsahús kemencében történő főzésével nyerhető, és elfogyasztása után további hatást ér el. Éhségérték telítettség fehérje nedvesség főtt kacsa 6 pont ( ) 6 pont ( ) 30% -1"
+    "desc": "Cooked duck meat prepared in a furnace. Restores good hunger and provides strong protein food.",
+    "desc_en": "Cooked duck meat prepared in a furnace. Restores good hunger and provides strong protein food.",
+    "desc_hu": "Kemencében sült kacsahús. Jól tölti az éhséget, és jó fehérjeforrás.",
+    "desc_ru": "Приготовленное в печи утиное мясо. Хорошо восстанавливает сытость и даёт много белковой пищи."
   },
   "bad_duck_meat": {
     "mcmod_id": 446437,
-    "desc": "在 黑曜石熔炉 以下等级（不包括黑曜石熔炉）的熔炉中烧生鸭肉有5%的几率获得，食用后有50%的概率获得10秒 中毒 I效果。 烧糊的肉在背包/箱子中放置超过3天，会变成腐肉。 饥饿值 饱和度 蛋白质 水分 烧糊的鸭肉 1点（ ） 6点（ ） 1.25% -6",
-    "desc_en": "There is a 5% chance of obtaining raw duck meat when roasted in a furnace of a level below the Obsidian Furnace (excluding the Obsidian Furnace), and there is a 50% chance of obtaining the Poison I effect for 10 seconds after eating it. Burnt meat will turn into rotten flesh if left in a backpack/chest for more than 3 days. Hunger value, saturation, protein, moisture, burnt duck meat 1 point ( ) 6 points ( ) 1.25% -6",
-    "desc_hu": "5% esély van nyers kacsahús megszerzésére, ha az Obszidián kemence szintje alatti kemencében sütik (kivéve az Obszidián kemencét), és 50% az esélye annak, hogy elfogyasztása után 10 másodpercig eléri az I. méreghatást. Az odaégett hús rothadt hússá válik, ha több mint 3 napig a hátizsákban/ládában marad. Éhségérték, telítettség, fehérje, nedvesség, égetett kacsahús 1 pont ( ) 6 pont ( ) 1,25% -6"
+    "desc": "Burnt duck meat from low-tier furnaces. Has a high poison risk and can rot into rotten flesh if stored too long.",
+    "desc_en": "Burnt duck meat from low-tier furnaces. Has a high poison risk and can rot into rotten flesh if stored too long.",
+    "desc_hu": "Alacsonyabb szintű kemencében megégett kacsahús. Magas a mérgezésveszélye, és hosszabb tárolás után rothadt hússá válhat.",
+    "desc_ru": "Подгоревшее утиное мясо из печей низкого уровня. Имеет высокий риск отравления и со временем может сгнить в гнилую плоть."
   },
   "duck_head": {
     "mcmod_id": 446427,
-    "desc": "击杀绿头鸭掉落，食用后有80%的概率获得20秒 中毒 I效果。 饥饿值 饱和度 蛋白质 水分 绿色鸭头 2点（ ） 1点（ ） 5% -1",
-    "desc_en": "Dropped by killing a mallard. After eating, there is an 80% chance of obtaining the Poison I effect for 20 seconds. Hunger value saturation protein moisture green duck head 2 points ( ) 1 point ( ) 5% -1",
-    "desc_hu": "Egy tőkés réce megölésével esett le. Evés után 80% esély van arra, hogy 20 másodpercig elérje a Poison I hatást. Éhségérték telítettség fehérje nedvesség zöld kacsafej 2 pont ( ) 1 pont ( ) 5% -1"
+    "desc": "Raw duck head dropped by mallards. Technically edible, but very likely to poison you.",
+    "desc_en": "Raw duck head dropped by mallards. Technically edible, but very likely to poison you.",
+    "desc_hu": "Tőkés récéről eső nyers kacsafej. Meg lehet enni, de nagyon könnyen megmérgez.",
+    "desc_ru": "Сырая утиная голова, выпадающая с крякв. Формально съедобна, но очень легко отравляет."
   },
   "duck_head_cooked": {
     "mcmod_id": 764748,
-    "desc": "通过 绿色鸭头 烧制而成。 饥饿值 饱和度 蛋白质 水分 熟鸭头 6点（ ） 6点（ ） 30% -1",
-    "desc_en": "Made by firing green duck head. Hunger value saturation protein moisture cooked duck head 6 points ( ) 6 points ( ) 30% -1",
-    "desc_hu": "Zöld kacsafej égetésével készült. Éhségérték telítettség fehérje nedvesség főtt kacsafej 6 pont ( ) 6 pont ( ) 30% -1"
+    "desc": "Cooked duck head made by baking a raw duck head. Safer and much more filling than the raw version.",
+    "desc_en": "Cooked duck head made by baking a raw duck head. Safer and much more filling than the raw version.",
+    "desc_hu": "Nyers kacsafejből sütött főtt kacsafej. Biztonságosabb és sokkal laktatóbb, mint a nyers változat.",
+    "desc_ru": "Приготовленная утиная голова, получаемая из сырой. Безопаснее и гораздо сытнее сырого варианта."
   },
   "bad_duck_head_cooked": {
     "mcmod_id": 764749,
-    "desc": "在 黑曜石熔炉 以下等级（不包括黑曜石熔炉）的熔炉中烧 绿色鸭头 须有5%的几率获得，食用后有80%的概率获得10秒 中毒 I效果。 烧糊的肉在背包/箱子中放置超过3天，会变成腐肉。 饥饿值 饱和度 蛋白质 水分 烧糊的鸭头 1点（ ） 6点（ ） 1.25% -6",
-    "desc_en": "There is a 5% chance of obtaining a Green Duck Head when burned in a furnace of a level below Obsidian Furnace (excluding Obsidian Furnace), and there is an 80% chance of obtaining the Poison I effect for 10 seconds after consumption. Burnt meat will turn into rotten flesh if left in a backpack/chest for more than 3 days. Hunger value, saturation, protein, moisture, burnt duck head 1 point ( ) 6 points ( ) 1.25% -6",
-    "desc_hu": "5% esély van a zöld kacsafej megszerzésére, ha az Obszidián kemence szintje alatti kemencében égetik el (kivéve az Obszidián kemencét), és 80% az esélye annak, hogy a fogyasztás után 10 másodpercig eléri az I. méreghatást. Az odaégett hús rothadt hússá válik, ha több mint 3 napig a hátizsákban/ládában marad. Éhségérték, telítettség, fehérje, nedvesség, égett kacsafej 1 pont ( ) 6 pont ( ) 1,25% -6"
+    "desc": "Burnt duck head from low-tier furnaces. Very risky to eat and can rot into rotten flesh over time.",
+    "desc_en": "Burnt duck head from low-tier furnaces. Very risky to eat and can rot into rotten flesh over time.",
+    "desc_hu": "Alacsonyabb szintű kemencében megégett kacsafej. Nagyon kockázatos megenni, és idővel rothadt hússá válhat.",
+    "desc_ru": "Подгоревшая утиная голова из печей низкого уровня. Её очень рискованно есть, и со временем она может превратиться в гнилую плоть."
   },
   "squid_meat": {
     "mcmod_id": 446429,
-    "desc": "击杀鱿鱼后概率获得，食用后可获得额外效果。 饥饿值 饱和度 蛋白质 水分 生鱿鱼须 2点（ ） 1点（ ） 10% 1",
-    "desc_en": "There is a chance to get it after killing the squid, and you can get additional effects after eating it. Hunger value, saturation, protein, moisture, raw squid tentacles 2 points ( ) 1 point ( ) 10% 1",
-    "desc_hu": "A tintahal elpusztítása után van esély rá, és további hatások érhetők el elfogyasztása után. Éhségérték, telítettség, fehérje, nedvesség, nyers tintahal csáp 2 pont ( ) 1 pont ( ) 10% 1"
+    "desc": "Raw squid meat dropped by squid. Light food on its own, but mainly worth cooking first.",
+    "desc_en": "Raw squid meat dropped by squid. Light food on its own, but mainly worth cooking first.",
+    "desc_hu": "Tintahalból eső nyers tintahús. Önmagában is ehető, de inkább érdemes előbb megsütni.",
+    "desc_ru": "Сырое мясо кальмара, выпадающее с кальмаров. Его можно есть и так, но обычно лучше сначала приготовить."
   },
   "cooked_squid_meat": {
     "mcmod_id": 446430,
-    "desc": "生鱿鱼须在熔炉烧制获得，食用后获得额外效果。 饥饿值 饱和度 蛋白质 水分 熟鱿鱼须 6点（ ） 1点（ ） 30% -2",
-    "desc_en": "Raw squid must be cooked in a furnace and will gain additional effects after being eaten. Hunger value, saturation, protein, moisture, cooked squid tentacles 6 points ( ) 1 point ( ) 30% -2",
-    "desc_hu": "A nyers tintahalat kemencében kell megfőzni, és elfogyasztása után további hatások érik. Éhségérték, telítettség, fehérje, nedvesség, főtt tintahal csáp 6 pont ( ) 1 pont ( ) 30% -2"
+    "desc": "Cooked squid meat from a furnace. Better hunger value and protein than the raw drop.",
+    "desc_en": "Cooked squid meat from a furnace. Better hunger value and protein than the raw drop.",
+    "desc_hu": "Kemencében sült tintahús. Többet ér éhségben és fehérjében, mint a nyers változat.",
+    "desc_ru": "Приготовленное в печи мясо кальмара. Даёт больше сытости и белка, чем сырая версия."
   },
   "bad_cooked_squid_meat": {
     "mcmod_id": 446431,
-    "desc": "在 黑曜石熔炉 以下等级（不包括黑曜石熔炉）的熔炉中烧鱿鱼须有5%的几率获得，食用后有50%的概率获得10秒 中毒 I效果。 烧糊的肉在背包/箱子中放置超过3天，会变成腐肉。 饥饿值 饱和度 蛋白质 水分 烧糊的鱿鱼须 1点（ ） 6点（ ） 1.25% -6",
-    "desc_en": "There is a 5% chance of obtaining squid whiskers when burned in a furnace of a level below Obsidian Furnace (excluding Obsidian Furnace), and there is a 50% chance of obtaining a 10-second Poison I effect after eating it. Burnt meat will turn into rotten flesh if left in a backpack/chest for more than 3 days. Hunger value, saturation, protein, moisture, burnt squid tentacles 1 point ( ) 6 points ( ) 1.25% -6",
-    "desc_hu": "5% esély van arra, hogy tintahalbajusz keletkezik, ha az Obszidián kemence szintje alatti kemencében égetik el (az Obszidián kemence kivételével), és 50% az esélye annak, hogy elfogyasztása után 10 másodperces I. méreghatást érnek el. Az odaégett hús rothadt hússá válik, ha több mint 3 napig a hátizsákban/ládában marad. Éhségérték, telítettség, fehérje, nedvesség, égett tintahal csáp 1 pont ( ) 6 pont ( ) 1,25% -6"
+    "desc": "Burnt squid meat from low-tier furnaces. Risky food that can poison you and later rot into rotten flesh.",
+    "desc_en": "Burnt squid meat from low-tier furnaces. Risky food that can poison you and later rot into rotten flesh.",
+    "desc_hu": "Alacsonyabb szintű kemencében megégett tintahús. Kockázatos étel, ami megmérgezhet, majd később rothadt hússá válhat.",
+    "desc_ru": "Подгоревшее мясо кальмара из печей низкого уровня. Опасная еда, которая может отравить и со временем сгнить в гнилую плоть."
   },
   "bad_fish_cooked": {
     "mcmod_id": 446433,
-    "desc": "在 黑曜石熔炉 以下等级（不包括黑曜石熔炉）的熔炉中烧 生鱼 有5%的几率获得，食用后有50%的概率获得10秒 中毒 I效果。 烧糊的肉在背包/箱子中放置超过3天，会变成腐肉。 饥饿值 饱和度 蛋白质 水分 烧糊的鱼肉 1点（ ） 6点（ ） 1.25% -6",
-    "desc_en": "There is a 5% chance of obtaining raw fish when cooked in a furnace of a level below Obsidian Furnace (excluding Obsidian Furnace), and there is a 50% chance of obtaining the Poison I effect for 10 seconds after eating it. Burnt meat will turn into rotten flesh if left in a backpack/chest for more than 3 days. Hunger value, saturation, protein, moisture, burnt fish 1 point ( ) 6 points ( ) 1.25% -6",
-    "desc_hu": "5% esély van nyers hal megszerzésére, ha Obszidián kemence alatti fokozatú kemencében főzik (az Obszidián kemence kivételével), és 50% az esélye annak, hogy elfogyasztása után 10 másodpercig eléri az I. méreghatást. Az odaégett hús rothadt hússá válik, ha több mint 3 napig a hátizsákban/ládában marad. Éhségérték, telítettség, fehérje, nedvesség, égetett hal 1 pont ( ) 6 pont ( ) 1,25% -6"
+    "desc": "Burnt fish from low-tier furnaces. Has a poison risk and can spoil into rotten flesh if left too long.",
+    "desc_en": "Burnt fish from low-tier furnaces. Has a poison risk and can spoil into rotten flesh if left too long.",
+    "desc_hu": "Alacsonyabb szintű kemencében megégett hal. Mérgezésveszélyes, és hosszabb idő után rothadt hússá romolhat.",
+    "desc_ru": "Подгоревшая рыба из печей низкого уровня. Имеет риск отравления и при долгом хранении может испортиться в гнилую плоть."
   },
   "bad_cooked_meat": {
     "mcmod_id": 446436,
-    "desc": "在 黑曜石熔炉 以下等级（不包括黑曜石熔炉）的熔炉中烧 生猪排 或 生牛肉 有5%的几率获得，食用后有50%的概率获得10秒 中毒 I效果。 烧糊的肉在背包/箱子中放置超过3天，会变成腐肉。 饥饿值 饱和度 蛋白质 水分 烧糊的猪肉 1点（ ） 6点（ ） 1.25% -6",
-    "desc_en": "There is a 5% chance of obtaining raw pork chops or raw beef by burning it in a furnace with a level below Obsidian Furnace (excluding Obsidian Furnace), and there is a 50% chance of obtaining the Poison I effect for 10 seconds after consumption. Burnt meat will turn into rotten flesh if left in a backpack/chest for more than 3 days. Hunger value Saturation Protein Moisture Burnt pork 1 point ( ) 6 points ( ) 1.25% -6",
-    "desc_hu": "5% esély van nyers sertésszelethez vagy nyers marhahúshoz, ha azt Obszidián kemence alatti szintû kemencében égetik el (az Obszidián kemence kivételével), és 50% esély van arra, hogy a fogyasztást követõen 10 másodpercig elérjük a méreg I. hatást. Az odaégett hús rothadt hússá válik, ha több mint 3 napig a hátizsákban/ládában marad. Éhségérték Telítettség Fehérje Nedvesség Égetett sertéshús 1 pont ( ) 6 pont ( ) 1,25% -6"
+    "desc": "Burnt meat produced from pork or beef in low-tier furnaces. Unsafe to eat and may eventually rot into rotten flesh.",
+    "desc_en": "Burnt meat produced from pork or beef in low-tier furnaces. Unsafe to eat and may eventually rot into rotten flesh.",
+    "desc_hu": "Alacsonyabb szintű kemencében sertésből vagy marhából készült odaégett hús. Nem biztonságos étel, és idővel rothadt hússá romolhat.",
+    "desc_ru": "Подгоревшее мясо из свинины или говядины, получаемое в печах низкого уровня. Его небезопасно есть, и со временем оно может испортиться в гнилую плоть."
   },
   "banana": {
     "mcmod_id": 764747,
-    "desc": "破坏丛林树叶有0.25%的几率获得香蕉。 丛林地形也会刷新香蕉树，破坏后100%获得香蕉。 饥饿值 饱和度 糖分 植物营养 胰岛素反应 水分 香蕉 1点（ ） 2点（ ） 1000 5% 3.33% 2",
-    "desc_en": "Destroying jungle leaves has a 0.25% chance of obtaining bananas. The jungle terrain will also refresh banana trees, and you will get 100% bananas after destroying them. Hunger value Saturation Sugar Plant nutrition Insulin response Water Banana 1 point ( ) 2 points ( ) 1000 5% 3.33% 2",
-    "desc_hu": "A dzsungel leveleinek elpusztításával 0,25% az esély a banán megszerzésére. A dzsungel terep a banánfákat is felfrissíti, elpusztításuk után 100%-ban banánt kapsz. Éhségérték Telítettség Cukor Növényi táplálkozás Inzulinválasz Víz Banán 1 pont ( ) 2 pont ( ) 1000 5% 3,33% 2"
+    "desc": "Bananas can rarely drop from jungle leaves and reliably from banana trees in jungle terrain.",
+    "desc_en": "Bananas can rarely drop from jungle leaves and reliably from banana trees in jungle terrain.",
+    "desc_hu": "A banán ritkán dzsungellevelekből is kieshet, de a dzsungelben növő banánfákról megbízhatóan megszerezhető.",
+    "desc_ru": "Бананы редко выпадают из листвы джунглей, но надёжно добываются с банановых деревьев в джунглях."
   },
   "hot_water": {
     "mcmod_id": 771960,
-    "desc": "通过水碗或纯净水碗在熔炉内烧制获得，服用后可以解除中暑效果。放置3分钟后，会变成纯净水碗。 饥饿值 饱和度 水分 热水 0点 0点 8",
-    "desc_en": "Obtained by firing a water bowl or pure water bowl in a furnace. After consumption, the effects of heat stroke can be relieved. After leaving it for 3 minutes, it will turn into a pure water bowl. Hunger value saturation water hot water 0 points 0 points 8",
-    "desc_hu": "Egy vizestál vagy tisztavizes tál kemencében történő égetésével nyerik. Fogyasztás után a hőguta hatásai enyhülhetnek. 3 percig állni hagyva tiszta vizes tálká válik. Éhségérték telített víz melegvíz 0 pont 0 pont 8"
+    "desc": "Heated water bowl that helps relieve heatstroke. After a few minutes it cools back down into a bowl of clean water.",
+    "desc_en": "Heated water bowl that helps relieve heatstroke. After a few minutes it cools back down into a bowl of clean water.",
+    "desc_hu": "Felmelegített vízzel teli tál, ami segít a hőguta enyhítésében. Néhány perc után visszahűl egy tál tiszta vízzé.",
+    "desc_ru": "Миска с горячей водой, помогающая снять тепловой удар. Через несколько минут остывает обратно в миску чистой воды."
   },
   "sugar_soup": {
     "mcmod_id": 771961,
-    "desc": "服用后可解除中暑效果。 饥饿值 饱和度 糖分 植物营养 胰岛素反应 水分 糖水 2点（ ） 0点 1000 10% 3.33% 4",
-    "desc_en": "After taking it, the effects of heatstroke can be relieved. Hunger value Saturation Sugar Phytonutrient Insulin response Water Sugar water 2 points ( ) 0 points 1000 10% 3.33% 4",
-    "desc_hu": "Szedése után enyhülhetnek a hőguta hatásai. Éhségérték Telítettség Cukor Fitotápanyag Inzulin válasz Víz Cukor víz 2 pont ( ) 0 pont 1000 10% 3,33% 4"
+    "desc": "Sweet sugar water that helps relieve heatstroke while restoring a little hunger and hydration.",
+    "desc_en": "Sweet sugar water that helps relieve heatstroke while restoring a little hunger and hydration.",
+    "desc_hu": "Édes cukros víz, ami segít a hőguta enyhítésében, miközben egy kevés éhséget és vizet is visszaad.",
+    "desc_ru": "Сладкая сахарная вода, которая помогает снять тепловой удар и немного восстанавливает сытость и воду."
   },
   "seeds": {
     "mcmod_id": 772244,
-    "desc": "同原版 小麦种子 ，增加可直接食用的设定。概率回复1点饥饿值。 饥饿值 饱和度 蛋白质 植物营养素 胰岛素反应 小麦种子 0点 1点（ ） 0 0 0",
-    "desc_en": "Same as the original wheat seeds, with the added setting of being directly edible. Probability to restore 1 hunger point. Hunger value Saturation Protein Phytonutrients Insulin response Wheat seeds 0 points 1 points ( ) 0 0 0",
-    "desc_hu": "Ugyanaz, mint az eredeti búzamag, azzal a hozzáadott beállítással, hogy közvetlenül ehető. 1 éhségpont helyreállításának valószínűsége. Éhségérték Telítettség Fehérje Fitotápanyagok Inzulinválasz Búzamag 0 pont 1 pont ( ) 0 0 0"
+    "desc": "Wheat seeds that can also be eaten directly for a very small amount of food.",
+    "desc_en": "Wheat seeds that can also be eaten directly for a very small amount of food.",
+    "desc_hu": "Búzamag, amit közvetlenül is meg lehet enni egy nagyon kevés élelemért.",
+    "desc_ru": "Семена пшеницы, которые можно есть напрямую ради совсем небольшого количества пищи."
   },
   "bad_mutton_cooked": {
     "mcmod_id": 446435,
-    "desc": "在 黑曜石熔炉 以下等级（不包括黑曜石熔炉）的熔炉中烧生羊肉有5%的几率获得，食用后有50%的概率获得10秒 中毒 I效果。 烧糊的肉在背包/箱子中放置超过3天，会变成腐肉。 饥饿值 饱和度 蛋白质 水分 烧糊的羊肉 1点（ ） 6点（ ） 1.25% -6",
-    "desc_en": "There is a 5% chance of obtaining raw mutton when roasted in a furnace of a level below Obsidian Furnace (excluding Obsidian Furnace), and there is a 50% chance of obtaining the Poison I effect for 10 seconds after eating it. Burnt meat will turn into rotten flesh if left in a backpack/chest for more than 3 days. Hunger value, saturation, protein, moisture, burnt mutton 1 point ( ) 6 points ( ) 1.25% -6",
-    "desc_hu": "5% esély van nyers birkahús elérésére, ha az Obszidiánkemencénél alacsonyabb szintű kemencében sütik (kivéve az Obszidiánkemencét), és 50% az esélye annak, hogy elfogyasztása után 10 másodpercig eléri az I. méreghatást. Az odaégett hús rothadt hússá válik, ha több mint 3 napig a hátizsákban/ládában marad. Éhségérték, telítettség, fehérje, nedvesség, égetett birkahús 1 pont ( ) 6 pont ( ) 1,25% -6"
+    "desc": "Burnt mutton from low-tier furnaces. Risky to eat and can rot into rotten flesh if stored too long.",
+    "desc_en": "Burnt mutton from low-tier furnaces. Risky to eat and can rot into rotten flesh if stored too long.",
+    "desc_hu": "Alacsonyabb szintű kemencében megégett birkahús. Kockázatos megenni, és hosszabb tárolás után rothadt hússá válhat.",
+    "desc_ru": "Подгоревшая баранина из печей низкого уровня. Её рискованно есть, и при долгом хранении она может превратиться в гнилую плоть."
   },
   "cooked_mutton": {
     "mcmod_id": 772250,
-    "desc": "同原版 熟羊肉 ，增加可直接食用的设定。 饥饿值 饱和度 蛋白质 水分 熟羊肉 6点（ ） 6点（ ） 30% -1",
-    "desc_en": "Same as the original cooked mutton, with the added setting of being able to be eaten directly. Hunger value saturation protein moisture cooked mutton 6 points ( ) 6 points ( ) 30% -1",
-    "desc_hu": "Ugyanaz, mint az eredeti főtt birkahús, azzal a hozzáadott beállítással, hogy közvetlenül fogyasztható. Éhségérték telítettség fehérje nedvesség főtt birkahús 6 pont ( ) 6 pont ( ) 30% -1"
+    "desc": "Cooked mutton. Straightforward high-value meat food with strong hunger restoration.",
+    "desc_en": "Cooked mutton. Straightforward high-value meat food with strong hunger restoration.",
+    "desc_hu": "Főtt birkahús. Egyszerű, értékes húsétel jó éhségtöltéssel.",
+    "desc_ru": "Жареная баранина. Простая, но ценная мясная еда с хорошим восстановлением сытости."
   },
   "blue_berries": {
     "mcmod_id": 772960,
-    "desc": "玩家可以在丛林生物群系和森林生物群系中发现蓝莓丛，右击蓝莓丛可获得蓝莓。 饥饿值 饱和度 糖分 植物营养 胰岛素反应 水分 蓝莓 1点（ ） 1点（ ） 1000 5% 3.33% 2",
-    "desc_en": "Players can find blueberry bushes in jungle biomes and forest biomes. Blueberries can be obtained by right-clicking on a blueberry bush. Hunger value Saturation Sugar Phytonutrient Insulin response Moisture Blueberry 1 point ( ) 1 point ( ) 1000 5% 3.33% 2",
-    "desc_hu": "A játékosok áfonyabokrokat találhatnak a dzsungelben és az erdei biomokban. Az áfonyát úgy lehet beszerezni, ha jobb egérgombbal kattintunk egy áfonyabokorra. Éhségérték Telítettség Cukor Fitotápanyag Inzulin válasz Nedvesség Áfonya 1 pont ( ) 1 pont ( ) 1000 5% 3,33% 2"
+    "desc": "Blueberries harvested from blueberry bushes found in jungle and forest biomes.",
+    "desc_en": "Blueberries harvested from blueberry bushes found in jungle and forest biomes.",
+    "desc_hu": "Áfonyabokrokról szüretelhető áfonya, ami dzsungel- és erdei biomokban található.",
+    "desc_ru": "Черника, собираемая с черничных кустов, которые встречаются в джунглях и лесных биомах."
   },
   "porridge": {
     "mcmod_id": 772961,
-    "desc": "用蓝莓、小麦种子、糖和一碗水合成。 饥饿值 饱和度 糖分 植物营养 胰岛素反应 水分 上火 蓝莓粥 2点（ ） 4点（ ） 2000 10% 6.67% 6 -35%",
-    "desc_en": "Crafted with blueberries, wheat seeds, sugar, and a bowl of water. Hunger value, saturation, sugar, plant nutrition, insulin response, water, irritation, blueberry porridge 2 points ( ) 4 points ( ) 2000 10% 6.67% 6 -35%",
-    "desc_hu": "Áfonyával, búzamaggal, cukorral és egy tál vízzel elkészítve. Éhségérték, telítettség, cukor, növényi táplálkozás, inzulinválasz, víz, irritáció, áfonya kása 2 pont ( ) 4 pont ( ) 2000 10% 6,67% 6 -35%"
+    "desc": "Blueberry porridge made from blueberries, wheat seeds, sugar, and water. A cooling sweet food.",
+    "desc_en": "Blueberry porridge made from blueberries, wheat seeds, sugar, and water. A cooling sweet food.",
+    "desc_hu": "Áfonyából, búzamagból, cukorból és vízből készülő áfonyakása. Hűsítő, édes étel.",
+    "desc_ru": "Черничная каша из черники, семян пшеницы, сахара и воды. Сладкая еда с охлаждающим эффектом."
   },
   "cereal": {
     "mcmod_id": 772963,
-    "desc": "用糖、小麦和一碗牛奶合成。 饥饿值 饱和度 糖分 蛋白质 胰岛素反应 水分 麦片粥 2点（ ） 4点（ ） 1000 10% 3.33% 6",
-    "desc_en": "Crafted from sugar, wheat and a bowl of milk. Hunger value Saturation Sugar Protein Insulin response Water Oatmeal 2 points ( ) 4 points ( ) 1000 10% 3.33% 6",
-    "desc_hu": "Cukorból, búzából és egy tál tejből készült. Éhségérték Telítettség Cukor Fehérje Inzulin válasz Víz Zabpehely 2 pont ( ) 4 pont ( ) 1000 10% 3,33% 6"
+    "desc": "Milk cereal made from sugar, wheat, and a bowl of milk. A simple sweet grain meal.",
+    "desc_en": "Milk cereal made from sugar, wheat, and a bowl of milk. A simple sweet grain meal.",
+    "desc_hu": "Cukorból, búzából és egy tál tejből készülő gabonakása. Egyszerű, édes gabonaétel.",
+    "desc_ru": "Молочная каша из сахара, пшеницы и миски молока. Простое сладкое блюдо из злаков."
   },
   "beef_stew": {
     "mcmod_id": 772971,
-    "desc": "用马铃薯、棕色蘑菇、牛排和一碗水合成。 饥饿值 饱和度 蛋白质 植物营养 水分 牛肉汤 16点（ ） 16点（ ） 80% 80% 6",
-    "desc_en": "Crafted from potatoes, brown mushrooms, steak, and a bowl of water. Hunger value saturation protein plant nutrition moisture beef broth 16 points ( ) 16 points ( ) 80% 80% 6",
-    "desc_hu": "Burgonyából, barna gombából, steakből és egy tál vízből készült. Éhségérték telítettség fehérje növény táplálkozás nedvesség marhahúsleves 16 pont ( ) 16 pont ( ) 80% 80% 6"
+    "desc": "Hearty beef stew cooked from potato, brown mushroom, steak, and a bowl of water.",
+    "desc_en": "Hearty beef stew cooked from potato, brown mushroom, steak, and a bowl of water.",
+    "desc_hu": "Laktató marhahúsragu burgonyából, barna gombából, steakből és egy tál vízből.",
+    "desc_ru": "Сытное рагу из говядины, картофеля, коричневого гриба и миски воды."
   },
   "sorbet": {
     "mcmod_id": 772973,
-    "desc": "用雪球、橘子、糖、碗合成。 饥饿值 饱和度 糖分 植物营养 胰岛素反应 水分 上火 水果冰糕 2点（ ） 4点（ ） 2000 10% 6.67% 6 -40%",
-    "desc_en": "Synthesize it with snowballs, oranges, sugar, and bowls. Hunger value, saturation, sugar, plant nutrition, insulin response, water, irritation, fruit sorbet 2 points ( ) 4 points ( ) 2000 10% 6.67% 6 -40%",
-    "desc_hu": "Szintetizálja hógolyókkal, naranccsal, cukorral és tálakkal. Éhségérték, telítettség, cukor, növényi táplálkozás, inzulinválasz, víz, irritáció, gyümölcssorbet 2 pont ( ) 4 pont ( ) 2000 10% 6,67% 6 -40%"
+    "desc": "Fruit sorbet made from snowballs, oranges, sugar, and a bowl. A strong cooling dessert.",
+    "desc_en": "Fruit sorbet made from snowballs, oranges, sugar, and a bowl. A strong cooling dessert.",
+    "desc_hu": "Hógolyóból, narancsból, cukorból és egy tálból készülő gyümölcssorbet. Erősen hűsítő desszert.",
+    "desc_ru": "Фруктовый сорбет из снежков, апельсина, сахара и миски. Сильный охлаждающий десерт."
   },
   "worm_raw": {
     "mcmod_id": 772978,
-    "desc": "在挖掘除冰洞雪原地形外的草方块时有几率以物品形式出现（下雨时几率提高）。 放在箱子里会吃掉箱子里的任何食物。 虫子也可吃掉箱子里的树叶方块并将其转化成等量的粪便，还可以吃掉南瓜并生产两个粪便一个南瓜种子，这一点十分有用，尤其是前、中期附近无动物可提供粪便时。 已知漏洞：把虫子放到箱子里后扩成一个大型箱子，虫子也只会吃掉它所在的“那半边箱子”的食物。 放在快捷物品栏钓鱼时，鱼上钩速度加快 50%，钓上鱼后消耗一条虫子。消耗虫子的判定只在收竿时触发，因此在看到气泡后将虫子移出快捷物品栏再收竿，虫子不会被消耗，理论上一只虫子就能完全满足钓鱼需求。 饥饿值 饱和度 蛋白质 水分 虫子 1点（ ） 0点 5% -1",
-    "desc_en": "It has a chance to appear as an item when digging grass blocks in terrain other than ice caves and snowfields (the chance increases when it rains). Placing it in a crate will eat any food in the crate. Bugs can also eat leaf blocks in the chest and convert them into an equal amount of droppings. They can also eat pumpkins and produce two droppings and one pumpkin seed, which is very useful, especially in the early and middle stages when there are no animals nearby to provide droppings. Known vulnerability: If a bug is placed in a box and it expands into a large box, the bug will only eat the food in the \"half of the box\" it is in. When fishing in the quick inventory, the fish will be hooked 50% faster, and a worm will be consumed after catching the fish. The determination of consuming bugs is only triggered when the rod is retracted. Therefore, after seeing the bubbles, move the bugs out of the quick inventory and retract the pole. The bugs will not be consumed. In theory, one bug can fully meet the fishing needs. Hunger value Saturation Protein Moisture Bug 1 point ( ) 0 point 5% -1",
-    "desc_hu": "Lehetősége van elemként megjelenni, amikor fűtömböket ásnak jégbarlangokon és hómezőkön kívüli terepen (eső esetén az esély megnő). Ha ládába helyezi, a ládában lévő ételt megeszik. A poloskák a mellkasban lévő levéltömböket is megehetik, és azonos mennyiségű ürülékké alakíthatják át. Sütőtököt is megehetnek, és két ürüléket és egy tökmagot termelnek, ami nagyon hasznos, különösen a korai és középső stádiumban, amikor nincs a közelben ürüléket biztosító állat. Ismert sebezhetőség: Ha egy poloskát helyezünk egy dobozba és az nagy dobozba tágul, a poloska csak abban a \"doboz felében\" eszi meg az ételt, amiben van. A gyorsleltárban történő horgászat során a hal 50%-kal gyorsabban horogra akad, a hal kifogása után egy féreg is elfogy. A fogyasztó hibák meghatározása csak a rúd visszahúzásakor indul el. Ezért, miután látta a buborékokat, távolítsa el a hibákat a gyors leltárt, és húzza vissza a rudat. A hibákat nem fogyasztják el. Elméletileg egy hiba teljes mértékben kielégítheti a halászati ​​igényeket. Éhségérték Telítettség Protein Nedvesség Bug 1 pont ( ) 0 pont 5% -1"
+    "desc": "Worm found while digging grass blocks outside icy terrain. Useful as fishing bait and can also be eaten in an emergency.",
+    "desc_en": "Worm found while digging grass blocks outside icy terrain. Useful as fishing bait and can also be eaten in an emergency.",
+    "desc_hu": "Fűblokkok ásásakor található féreg a jeges területeken kívül. Horgászcsaliként hasznos, de végszükség esetén meg is ehető.",
+    "desc_ru": "Червь, который находится при копании травяных блоков вне ледяных зон. Полезен как наживка для рыбалки, а в крайнем случае его можно съесть."
   },
   "worm_cooked": {
     "mcmod_id": 772979,
-    "desc": "由虫子烤熟而成。 饥饿值 饱和度 蛋白质 水分 熟虫子 1点（ ） 1点（ ） 5% -2",
-    "desc_en": "Made from roasted bugs. Hunger value, saturation, protein, moisture, cooked worms 1 point ( ) 1 point ( ) 5% -2",
-    "desc_hu": "Pörkölt bogarakból készült. Éhségérték, telítettség, fehérje, nedvesség, főtt férgek 1 pont ( ) 1 pont ( ) 5% -2"
+    "desc": "Cooked worm. Slightly safer and better food value than the raw bait.",
+    "desc_en": "Cooked worm. Slightly safer and better food value than the raw bait.",
+    "desc_hu": "Sült féreg. Kicsit biztonságosabb és jobb élelem, mint a nyers csali.",
+    "desc_ru": "Приготовленный червь. Немного безопаснее и питательнее, чем сырая наживка."
   },
   "return_scroll": {
     "mcmod_id": 777367,
@@ -4714,238 +5206,362 @@
   },
   "water_bag_mercury": {
     "mcmod_id": 831587,
-    "desc": "0.9.0版本新增，需要获得对应的 知识书 解锁权限才能合成，装满水后可以饮用16次，对水方块右键可以装水，容量为16升。 装有脏水的水袋可在熔炉里烧制，获得装有净水的水袋，烧制时间为120秒。 合成方式：将1个大水袋和1个 远古金属锭 放入整锅的液化汞内（手持道具右击装满液化汞的炼药锅），经过30秒转化后消耗所有物品并生成1个元素水袋，注意此过程中，锅底部需要有岩浆热源。",
+    "desc": "Elemental Water Bag. Requires the matching Knowledge Book. Holds 16 liters, can be drunk 16 times, and dirty water can be cleaned in a furnace. Crafted by converting 1 large water bag plus 1 ancient metal ingot in a full cauldron of liquefied mercury with magma heat below.",
     "versions": [
-      "0.9.0版本新增，需要获得对应的"
+      "v0.9.0: Added. Requires the matching Knowledge Book to craft."
     ],
     "desc_en": "Elemental Water Bag. Requires the matching Knowledge Book. Holds 16 liters, can be drunk 16 times, and dirty water can be cleaned in a furnace. Crafted by converting 1 large water bag plus 1 ancient metal ingot in a full cauldron of liquefied mercury with magma heat below.",
     "desc_hu": "Elemental Water Bag. A craftolásához kell a megfelelő Tudáskönyv. 16 liter vizet tárol, 16 alkalommal iható, a piszkos víz pedig kemencében tisztítható. Úgy készül, hogy 1 nagy víztasakot és 1 ősi fém rudat teljes, folyékony higannyal töltött üstben alakítasz át magma hőforrás fölött.",
-    "desc_ru": "Elemental Water Bag. Для крафта нужна соответствующая Книга знаний. Вмещает 16 литров воды, даёт 16 глотков, а грязную воду можно очищать в печи. Создаётся из 1 большого мешка для воды и 1 слитка древнего металла в полном котле с жидкой ртутью при наличии источника тепла магмы снизу."
+    "desc_ru": "Elemental Water Bag. Для крафта нужна соответствующая Книга знаний. Вмещает 16 литров воды, даёт 16 глотков, а грязную воду можно очищать в печи. Создаётся из 1 большого мешка для воды и 1 слитка древнего металла в полном котле с жидкой ртутью при наличии источника тепла магмы снизу.",
+    "versions_en": [
+      "v0.9.0: Added. Requires the matching Knowledge Book to craft."
+    ],
+    "versions_hu": [
+      "v0.9.0: Új elem. Az elkészítéséhez a megfelelő Tudáskönyv kell."
+    ],
+    "versions_ru": [
+      "v0.9.0: Добавлен. Для крафта нужна соответствующая Книга знаний."
+    ]
   },
   "wood_cudgel": {
     "mcmod_id": 773487,
-    "desc": "伤害最低的武器，攻击伤害+1，无法格挡。 作为燃料，燃烧时间为200 ticks（即可以烧制一个物品），热度为1。 制作不同品质的小木棒所需的经验值： 普通 优秀 小木棒 0 42",
+    "desc": "Wood cudgel with 1 attack damage. Cannot block. Can also be used as low-grade fuel.",
     "desc_en": "Wood cudgel with 1 attack damage. Cannot block. Can also be used as low-grade fuel.",
     "desc_hu": "1 sebzésű fabunkó. Nem tud blokkolni. Gyenge tüzelőanyagként is használható.",
     "desc_ru": "Деревянная дубина с уроном 1. Не может блокировать. Может использоваться как слабое топливо."
   },
   "wood_club": {
     "mcmod_id": 773488,
-    "desc": "攻击伤害+2。 作为燃料，燃烧时间为200 ticks（即可以烧制一个物品），热度为1。 制作不同品质的木棒所需的经验值： 普通 优秀 木棒 0 74",
+    "desc": "Wood club with 2 attack damage. Can also be used as low-grade fuel.",
     "desc_en": "Wood club with 2 attack damage. Can also be used as low-grade fuel.",
     "desc_hu": "2 sebzésű fabot. Gyenge tüzelőanyagként is használható.",
     "desc_ru": "Деревянная дубинка с уроном 2. Может использоваться как слабое топливо."
   },
   "green_gelatinous_sphere": {
     "mcmod_id": 773794,
-    "desc": "击杀 史莱姆 掉落，可投掷。 远程伤害+1。",
+    "desc": "Dropped by slimes and can be thrown. Ranged damage +1.",
     "desc_en": "Dropped by killing slimes and can be thrown. Ranged damage +1.",
-    "desc_hu": "Leesett a nyálkaöléssel, és ki lehet dobni. Távolsági sebzés +1."
+    "desc_hu": "A slime-ok dobják. Eldobható lövedék, amely +1 távolsági sebzést okoz.",
+    "desc_ru": "Выпадает со слаймов. Можно метать; наносит +1 дальнего урона."
   },
   "ochre_gelatinous_sphere": {
     "mcmod_id": 773795,
-    "desc": "击杀小型 褐色史莱姆 掉落，可投掷。 远程伤害+2。",
+    "desc": "Dropped by small brown slimes and can be thrown. Ranged damage +2.",
     "desc_en": "Dropped by killing small brown slimes and can be thrown. Ranged damage +2.",
-    "desc_hu": "Kis barna iszapok elpusztításával leesett, és eldobható. Távolsági sebzés +2."
+    "desc_hu": "A kis barna slime-ok dobják. Eldobható lövedék, amely +2 távolsági sebzést okoz.",
+    "desc_ru": "Выпадает с маленьких коричневых слаймов. Можно метать; наносит +2 дальнего урона."
   },
   "crimson_gelatinous_sphere": {
     "mcmod_id": 773796,
-    "desc": "击杀小型 红色史莱姆 掉落，可投掷。 投掷伤害+3。 投掷后附带腐蚀效果，可腐蚀装备。",
-    "desc_en": "Dropped by killing small red slimes and can be thrown. Throwing damage +3. After being thrown, it has a corrosive effect and can corrode equipment.",
-    "desc_hu": "Kis vörös iszapok elpusztításával leesett, és eldobható. Dobási sérülés +3. Kidobás után maró hatású és korrodálhatja a berendezést."
+    "desc": "Dropped by small red slimes and can be thrown. Throw damage +3. Applies corrosion and can damage equipment.",
+    "desc_en": "Dropped by small red slimes and can be thrown. Throw damage +3. Applies corrosion and can damage equipment.",
+    "desc_hu": "A kis vörös slime-ok dobják. Eldobható lövedék, amely +3 dobási sebzést okoz. Maró hatást okoz és felszerelést is károsíthat.",
+    "desc_ru": "Выпадает с маленьких красных слаймов. Можно метать; наносит +3 урона броском. Накладывает коррозию и может повреждать снаряжение."
   },
   "gray_gelatinous_sphere": {
     "mcmod_id": 773797,
-    "desc": "击杀小型 灰色史莱姆 掉落，可投掷。将其投掷到会被灰色史莱姆立即腐蚀的方块上会腐蚀该方块，如使草方块变为土，使火把直接被摧毁等。 投掷伤害+3。 投掷后附带腐蚀效果，可腐蚀装备。",
-    "desc_en": "Dropped by killing small gray slimes and can be thrown. Throwing it onto a block that will be immediately corroded by gray slime will corrode the block, such as turning grass blocks into dirt, causing torches to be directly destroyed, etc. Throwing damage +3. After being thrown, it has a corrosive effect and can corrode equipment.",
-    "desc_hu": "Kis szürke nyálka elpusztításával leesett, és eldobható. Ha egy blokkra dobja, amelyet azonnal korrodál a szürke iszap, az korrodálja a tömböt, például a fűtömbök szennyeződéssé válnak, a fáklyák közvetlenül megsemmisülnek stb. Dobósérülés +3. Kidobás után maró hatású és korrodálhatja a berendezést."
+    "desc": "Dropped by small gray slimes and can be thrown. Throw damage +3. Corrodes some blocks and can also damage equipment.",
+    "desc_en": "Dropped by small gray slimes and can be thrown. Throw damage +3. Corrodes some blocks and can also damage equipment.",
+    "desc_hu": "A kis szürke slime-ok dobják. Eldobható lövedék, amely +3 dobási sebzést okoz. Egyes blokkokat is korrodál, és felszerelést is károsíthat.",
+    "desc_ru": "Выпадает с маленьких серых слаймов. Можно метать; наносит +3 урона броском. Разъедает некоторые блоки и может повреждать снаряжение."
   },
   "black_gelatinous_sphere": {
     "mcmod_id": 773798,
-    "desc": "击杀小型 黑色史莱姆 掉落，可投掷。将其投掷到会被黑色史莱姆腐蚀的方块上会腐蚀该方块，如使 草方块 变为 泥土 ，使 火把 直接被摧毁等。 投掷伤害+4。 投掷后附带腐蚀效果，可腐蚀装备。",
-    "desc_en": "Dropped by killing small black slimes and can be thrown. Throwing it onto a block that will be corroded by black slime will corrode the block, such as turning grass blocks into dirt, causing torches to be directly destroyed, etc. Throwing damage +4. After being thrown, it has a corrosive effect and can corrode equipment.",
-    "desc_hu": "Kis fekete iszapok elpusztításával leesett, és eldobható. Ha egy blokkra dobja, amelyet a fekete iszap korrodál, az korrodálja a tömböt, például a fűtömbök szennyeződéssé válnak, a fáklyák közvetlenül megsemmisülhetnek stb. Dobósérülés +4. Kidobás után maró hatású és korrodálhatja a berendezést."
+    "desc": "Dropped by small black slimes and can be thrown. Throw damage +4. Strongly corrodes some blocks and can also damage equipment.",
+    "desc_en": "Dropped by small black slimes and can be thrown. Throw damage +4. Strongly corrodes some blocks and can also damage equipment.",
+    "desc_hu": "A kis fekete slime-ok dobják. Eldobható lövedék, amely +4 dobási sebzést okoz. Erősen korrodál egyes blokkokat, és felszerelést is károsíthat.",
+    "desc_ru": "Выпадает с маленьких чёрных слаймов. Можно метать; наносит +4 урона броском. Сильно разъедает некоторые блоки и может повреждать снаряжение."
   },
   "flint_spear": {
     "mcmod_id": 785073,
-    "desc": "攻击伤害+4，最大品质可达到优秀。右键蓄力可投掷，每次投掷消耗1点耐久，投掷伤害最高为10，耐久值为8点。 0.6.0版本调整，耐久值改为10点。 制作不同品质的锋利石矛所需的经验值： 普通 优秀 锋利石矛 0 40",
+    "desc": "Sharp stone spear with 4 attack damage. Can be charged and thrown; each throw costs durability.",
     "versions": [
-      "0.6.0版本调整，耐久值改为10点"
+      "v0.6.0: Durability increased to 10."
     ],
     "desc_en": "Sharp stone spear with 4 attack damage. Can be charged and thrown; each throw costs durability.",
     "desc_hu": "4 sebzésű éles kőlándzsa. Feltölthető és eldobható; minden dobás tartósságot fogyaszt.",
-    "desc_ru": "Острое каменное копьё с уроном 4. Его можно зарядить и метнуть; каждый бросок тратит прочность."
+    "desc_ru": "Острое каменное копьё с уроном 4. Его можно зарядить и метнуть; каждый бросок тратит прочность.",
+    "versions_en": [
+      "v0.6.0: Durability increased to 10."
+    ],
+    "versions_hu": [
+      "v0.6.0: A tartóssága 10-re nőtt."
+    ],
+    "versions_ru": [
+      "v0.6.0: Прочность увеличена до 10."
+    ]
   },
   "bone_cudgel": {
     "mcmod_id": 811571,
-    "desc": "0.5.9版本新增，攻击伤害+1，无法格挡，耐久值为60点。 0.6.0版本调整，耐久值改为300点。 制作不同品质的简易骨棒所需的经验值： 普通 优秀 简易骨棒 0 70",
+    "desc": "Simple bone cudgel added in v0.5.9. It has 1 attack damage, cannot block, and was raised to 300 durability in v0.6.0.",
     "versions": [
-      "0.5.9版本新增，攻击伤害+1，无法格挡，耐久值为60点",
-      "0.6.0版本调整，耐久值改为300点"
+      "v0.5.9: Added with 60 durability.",
+      "v0.6.0: Durability increased to 300."
     ],
     "desc_en": "Simple bone cudgel added in v0.5.9. It has 1 attack damage, cannot block, and was raised to 300 durability in v0.6.0.",
     "desc_hu": "Az egyszerű csontbunkó a v0.5.9-ben került be. 1 sebzést okoz, nem tud blokkolni, és a v0.6.0-ban 300 tartósságra emelték.",
-    "desc_ru": "Простая костяная дубина добавлена в v0.5.9. Наносит 1 урон, не может блокировать, а в v0.6.0 её прочность повысили до 300."
+    "desc_ru": "Простая костяная дубина добавлена в v0.5.9. Наносит 1 урон, не может блокировать, а в v0.6.0 её прочность повысили до 300.",
+    "versions_en": [
+      "v0.5.9: Added with 60 durability.",
+      "v0.6.0: Durability increased to 300."
+    ],
+    "versions_hu": [
+      "v0.5.9: 60 tartóssággal került be.",
+      "v0.6.0: A tartóssága 300-ra nőtt."
+    ],
+    "versions_ru": [
+      "v0.5.9: Добавлена с прочностью 60.",
+      "v0.6.0: Прочность увеличена до 300."
+    ]
   },
   "rusted_iron_sword": {
     "mcmod_id": 773285,
-    "desc": "攻击伤害+6。 无法合成，手持锈铁剑的僵尸死亡后有几率掉落。",
-    "desc_en": "Attack damage +6. It cannot be synthesized. Zombies holding rusty iron swords have a chance to drop them after death.",
-    "desc_hu": "Támadási sebzés +6. Nem készíthető el. A rozsdás vaskardot tartó zombiknak esélyük van elejteni őket a haláluk után."
+    "desc": "Rusty iron sword with 6 attack damage. Cannot be crafted. Sometimes drops from zombies wielding one.",
+    "desc_en": "Rusty iron sword with 6 attack damage. Cannot be crafted. Sometimes drops from zombies wielding one.",
+    "desc_hu": "6 sebzésű rozsdás vaskard. Nem készíthető. Néha a vele felszerelt zombik dobják.",
+    "desc_ru": "Ржавый железный меч с уроном 6. Не крафтится. Иногда выпадает с зомби, вооружённых таким мечом."
   },
   "bronze_sword": {
     "mcmod_id": 777294,
-    "desc": "青铜剑是用铜剑在冶炼炉结合2个锡锭冶炼而成。可在各类金属砧使用铜粒修复。 青铜剑的品质取决于参与冶炼的铜剑品质。 攻击伤害+7。",
-    "desc_en": "A bronze sword is smelted by combining 2 tin ingots in a smelting furnace. Copper grains can be used for repair on all types of metal anvils. The quality of a bronze sword depends on the quality of the bronze sword involved in smelting. Attack damage +7.",
-    "desc_hu": "A bronz kardot 2 bádogruda egy olvasztókemencében történő összekeverésével olvasztják meg. A rézszemcsék minden típusú fém üllőn javíthatók. A bronzkard minősége az olvasztáshoz használt bronzkard minőségétől függ. Támadási sebzés +7."
+    "desc": "Bronze sword made in the blast furnace from a copper sword plus 2 tin ingots. Repairs with copper nuggets. Attack damage +7.",
+    "desc_en": "Bronze sword made in the blast furnace from a copper sword plus 2 tin ingots. Repairs with copper nuggets. Attack damage +7.",
+    "desc_hu": "Bronzkard, amely rézkardból és 2 ónrögből készül a kohóban. Rézrögökkel javítható. Támadási sebzés: +7.",
+    "desc_ru": "Бронзовый меч, который выплавляется в плавильной печи из медного меча и 2 оловянных слитков. Чинится медными крупицами. Урон: +7."
   },
   "silver_copper_sword": {
     "mcmod_id": 777295,
-    "desc": "银铜剑是用银剑在冶炼炉结合2个铜锭冶炼而成。可在各类金属砧使用铜粒或银粒修复。 银铜剑的品质取决于参与冶炼的银剑品质。 攻击伤害+7.5，对亡灵怪物有伤害加成，可以攻击白色食尸鬼。",
-    "desc_en": "A silver-bronze sword is smelted by combining a silver sword with two copper ingots in a smelting furnace. Can be repaired using copper or silver grains on various metal anvils. The quality of a silver-bronze sword depends on the quality of the silver sword involved in smelting. Attack damage +7.5, damage bonus to undead monsters, and can attack white ghouls.",
-    "desc_hu": "Az ezüst-réz kardot úgy olvasztják meg, hogy egy ezüstkardot két réztuskóval kombinálnak egy olvasztókemencében. Réz- vagy ezüstszemcsékkel javítható különféle fémüllőkön. Az ezüst-réz kard minősége az olvasztáshoz használt ezüstkard minőségétől függ. Támadási sebzés +7,5, sebzésbónusz élőhalott szörnyeknek, és támadhat fehér ghoulokat.",
-    "desc_ru": "Серебряно-медный меч выплавляется в плавильной печи из серебряного меча и двух медных слитков. Чинится медными или серебряными крупицами на разных металлических наковальнях. Качество зависит от качества использованного серебряного меча. Урон +7,5, имеет бонус против нежити и может бить белых гулей."
+    "desc": "Silver-copper sword made in the blast furnace from a silver sword plus 2 copper ingots. Repairs with copper or silver nuggets. Attack damage +7.5 and bonus damage to undead.",
+    "desc_en": "Silver-copper sword made in the blast furnace from a silver sword plus 2 copper ingots. Repairs with copper or silver nuggets. Attack damage +7.5 and bonus damage to undead.",
+    "desc_hu": "Ezüst-réz kard, amely ezüstkardból és 2 rézrögből készül a kohóban. Réz- vagy ezüströgökkel javítható. Támadási sebzés: +7,5, és bónusz sebzést ad élőholtak ellen.",
+    "desc_ru": "Серебряно-медный меч, который выплавляется в плавильной печи из серебряного меча и 2 медных слитков. Чинится медными или серебряными крупицами. Урон: +7,5 и даёт бонусный урон по нежити."
   },
   "high_carbon_steel_sword": {
     "mcmod_id": 777296,
-    "desc": "高碳钢剑是用铁剑在冶炼炉结合1个碳晶冶炼而成。可在各类金属砧使用铁粒修复。 高碳钢剑的品质取决于参与冶炼的铁剑品质。 攻击伤害+8。 0.5.9版本新增，攻击生物会使半径5格内的其他生物也受到4点伤害。",
+    "desc": "High-carbon steel sword made in the blast furnace from an iron sword plus 1 carbon crystal. Repairs with iron nuggets. Attack damage +8.",
     "versions": [
-      "0.5.9版本新增，攻击生物会使半径5格内的其他生物也受到4点伤害"
+      "v0.5.9: Added splash damage that hits nearby creatures for 4 damage."
     ],
-    "desc_en": "High carbon steel swords are smelted by combining an iron sword with a carbon crystal in a smelting furnace. Iron particles can be used to repair various metal anvils. The quality of a high carbon steel sword depends on the quality of the iron sword involved in the smelting. Attack damage +8. Newly added in version 0.5.9, attacking a creature will cause other creatures within a 5-block radius to suffer 4 points of damage.",
-    "desc_hu": "A magas széntartalmú acél kardokat úgy olvasztják meg, hogy egy vaskardot szénkristállyal kombinálnak olvasztókemencében. A vasrészecskék különféle fémüllők javítására használhatók. A magas széntartalmú acélkard minősége az olvasztáshoz használt vaskard minőségétől függ. Támadási sebzés +8. A 0.5.9-es verzióban újonnan hozzáadott lények megtámadása 5 blokk sugarú körzetében más lényeket 4 pont sebzést okoz."
+    "desc_en": "High-carbon steel sword made in the blast furnace from an iron sword plus 1 carbon crystal. Repairs with iron nuggets. Attack damage +8.",
+    "desc_hu": "Magas széntartalmú acél kard, amely vaskardból és 1 szénkristályból készül a kohóban. Vasrögökkel javítható. Támadási sebzés: +8.",
+    "desc_ru": "Меч из высокоуглеродистой стали, который выплавляется в плавильной печи из железного меча и 1 углеродного кристалла. Чинится железными крупицами. Урон: +8.",
+    "versions_en": [
+      "v0.5.9: Added splash damage that hits nearby creatures for 4 damage."
+    ],
+    "versions_hu": [
+      "v0.5.9: Kapott egy területi sebzést, amely a közeli lényekre 4 sebzést visz át."
+    ],
+    "versions_ru": [
+      "v0.5.9: Получил урон по области, который наносит ближайшим существам 4 урона."
+    ]
   },
   "bronze_battle_axe": {
     "mcmod_id": 777288,
-    "desc": "青铜战斧是用铜战斧在冶炼炉结合3个锡锭冶炼而成。可在各类金属砧使用铜粒修复。 青铜战斧的品质取决于参与冶炼的铜战斧品质。 攻击伤害+7。",
-    "desc_en": "The bronze battle axe is smelted by combining a copper battle axe with 3 tin ingots in a smelting furnace. Copper grains can be used for repair on all types of metal anvils. The quality of a bronze battle axe depends on the quality of the copper battle axe involved in smelting. Attack damage +7.",
-    "desc_hu": "A bronz csatabárdot úgy olvasztják meg, hogy egy réz csatabárdot 3 bádogrudaval kombinálnak egy olvasztókemencében. A rézszemcsék minden típusú fém üllőn javíthatók. A bronz harci fejsze minősége az olvasztáshoz használt réz harci fejsze minőségétől függ. Támadási sebzés +7."
+    "desc": "Bronze battle axe made in the blast furnace from a copper battle axe plus 3 tin ingots. Repairs with copper nuggets. Attack damage +7.",
+    "desc_en": "Bronze battle axe made in the blast furnace from a copper battle axe plus 3 tin ingots. Repairs with copper nuggets. Attack damage +7.",
+    "desc_hu": "Bronz csatabárd, amely réz csatabárdból és 3 ónrögből készül a kohóban. Rézrögökkel javítható. Támadási sebzés: +7.",
+    "desc_ru": "Бронзовый боевой топор, который выплавляется в плавильной печи из медного боевого топора и 3 оловянных слитков. Чинится медными крупицами. Урон: +7."
   },
   "silver_copper_battle_axe": {
     "mcmod_id": 777289,
-    "desc": "银铜战斧是用银战斧在冶炼炉结合3个铜锭冶炼而成。可在各类金属砧使用铜粒或银粒修复。 银铜战斧的品质取决于参与冶炼的银战斧品质。 攻击伤害+7.5，对亡灵怪物有伤害加成，可以攻击白色食尸鬼。",
-    "desc_en": "The Silver Copper battle axe is smelted by combining a silver battle axe with 3 copper ingots in a smelting furnace. Can be repaired using copper or silver grains on various metal anvils. The quality of the silver-bronze battle axe depends on the quality of the silver battle axe involved in smelting. Attack damage +7.5, damage bonus to undead monsters, and can attack white ghouls.",
-    "desc_hu": "Az ezüst-réz csatabárdot úgy olvasztják meg, hogy egy ezüst csatabárdot 3 réztuskóval kombinálnak egy olvasztókemencében. Réz- vagy ezüstszemcsékkel javítható különféle fémüllőkön. Az ezüst-réz csatabárd minősége az olvasztáshoz használt ezüst csatabárd minőségétől függ. Támadási sebzés +7,5, sebzésbónusz élőhalott szörnyeknek, és támadhat fehér ghoulokat.",
-    "desc_ru": "Серебряно-медный боевой топор выплавляется в плавильной печи из серебряного боевого топора и трёх медных слитков. Чинится медными или серебряными крупицами на разных металлических наковальнях. Качество зависит от качества использованного серебряного боевого топора. Урон +7,5, имеет бонус против нежити и может бить белых гулей."
+    "desc": "Silver-copper battle axe made in the blast furnace from a silver battle axe plus 3 copper ingots. Repairs with copper or silver nuggets. Attack damage +7.5 and bonus damage to undead.",
+    "desc_en": "Silver-copper battle axe made in the blast furnace from a silver battle axe plus 3 copper ingots. Repairs with copper or silver nuggets. Attack damage +7.5 and bonus damage to undead.",
+    "desc_hu": "Ezüst-réz csatabárd, amely ezüst csatabárdból és 3 rézrögből készül a kohóban. Réz- vagy ezüströgökkel javítható. Támadási sebzés: +7,5, és bónusz sebzést ad élőholtak ellen.",
+    "desc_ru": "Серебряно-медный боевой топор, который выплавляется в плавильной печи из серебряного боевого топора и 3 медных слитков. Чинится медными или серебряными крупицами. Урон: +7,5 и даёт бонусный урон по нежити."
   },
   "high_carbon_steel_battle_axe": {
     "mcmod_id": 777290,
-    "desc": "高碳钢战斧是用铁战斧在冶炼炉结合1个碳晶冶炼而成。可在各类金属砧使用铁粒修复。 高碳钢战斧的品质取决于参与冶炼的铁战斧品质。 攻击伤害+8。",
-    "desc_en": "High carbon steel tomahawks are smelted by combining an iron tomahawk with a carbon crystal in a smelting furnace. Iron particles can be used to repair various metal anvils. The quality of the high carbon steel tomahawk depends on the quality of the iron tomahawk involved in the smelting. Attack damage +8.",
-    "desc_hu": "A magas széntartalmú acél tomahawkokat úgy olvasztják meg, hogy egy vas tomahawkot egy szénkristállyal kombinálnak olvasztókemencében. A vasrészecskék különféle fémüllők javítására használhatók. A magas széntartalmú acél tomahawk minősége az olvasztásban részt vevő vas tomahawk minőségétől függ. Támadási sebzés +8."
+    "desc": "High-carbon steel battle axe made in the blast furnace from an iron battle axe plus 1 carbon crystal. Repairs with iron nuggets. Attack damage +8.",
+    "desc_en": "High-carbon steel battle axe made in the blast furnace from an iron battle axe plus 1 carbon crystal. Repairs with iron nuggets. Attack damage +8.",
+    "desc_hu": "Magas széntartalmú acél csatabárd, amely vas csatabárdból és 1 szénkristályból készül a kohóban. Vasrögökkel javítható. Támadási sebzés: +8.",
+    "desc_ru": "Боевой топор из высокоуглеродистой стали, который выплавляется в плавильной печи из железного боевого топора и 1 углеродного кристалла. Чинится железными крупицами. Урон: +8."
   },
   "silver_dagger": {
     "mcmod_id": 773302,
-    "desc": "攻击伤害+5，最大品质可达精良，对亡灵怪物有伤害加成。 可以攻击黑色食尸鬼、尸妖、暗影蝙蝠。 无法格挡。 0.6.0版本修改银短剑只能在 硬化粘土炉 或 大型熔炉 中合成。 制作不同品质的银短剑所需的经验值： 普通 优秀 精良 银短剑 0 170 340",
+    "desc": "Silver dagger with 5 attack damage. Cannot block. Strong against undead; can hit black ghouls, wights, and shadow bats. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "0.6.0版本修改银短剑只能在"
+      "v0.6.0: Crafting moved to the Hardened Clay Furnace or Large Furnace."
     ],
     "desc_en": "Silver dagger with 5 attack damage. Cannot block. Strong against undead; can hit black ghouls, wights, and shadow bats. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "5 sebzésű ezüst tőr. Nem tud blokkolni. Erős az élőholtak ellen; megsebezheti a fekete ghoulokat, a wighteket és az árnyékdenevéreket. Edzett agyagkemencében vagy nagy kemencében készül.",
-    "desc_ru": "Серебряный кинжал с уроном 5. Не может блокировать. Эффективен против нежити; может бить чёрных гулей, умертвий и теневых летучих мышей. Крафтится в печи из обожжённой глины или в большой печи."
+    "desc_ru": "Серебряный кинжал с уроном 5. Не может блокировать. Эффективен против нежити; может бить чёрных гулей, умертвий и теневых летучих мышей. Крафтится в печи из обожжённой глины или в большой печи.",
+    "versions_en": [
+      "v0.6.0: Crafting moved to the Hardened Clay Furnace or Large Furnace."
+    ],
+    "versions_hu": [
+      "v0.6.0: A craftolása az edzett agyagkemencébe vagy a nagy kemencébe került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Крафт перенесён в печь из обожжённой глины или в большую печь."
+    ]
   },
   "gold_dagger": {
     "mcmod_id": 773303,
-    "desc": "攻击伤害+4，最大品质可达史诗。 无法格挡。 0.6.0版本修改金短剑只能在 大型熔炉 中合成。 制作不同品质的金短剑所需的经验值： 普通 优秀 精良 史诗 金短剑 0 170 340 680",
+    "desc": "Gold dagger with 4 attack damage. Cannot block. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改金短剑只能在"
+      "v0.6.0: Crafting moved to the Large Furnace."
     ],
     "desc_en": "Gold dagger with 4 attack damage. Cannot block. Crafted in the Large Furnace.",
     "desc_hu": "4 sebzésű arany tőr. Nem tud blokkolni. Nagy kemencében készül.",
-    "desc_ru": "Золотой кинжал с уроном 4. Не может блокировать. Крафтится в большой печи."
+    "desc_ru": "Золотой кинжал с уроном 4. Не может блокировать. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Crafting moved to the Large Furnace."
+    ],
+    "versions_hu": [
+      "v0.6.0: A craftolása a nagy kemencébe került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Крафт перенесён в большую печь."
+    ]
   },
   "rusted_iron_dagger": {
     "mcmod_id": 773304,
-    "desc": "攻击伤害+4，无法合成，手持锈铁短剑的生物死亡后有几率掉落。 无法格挡。",
-    "desc_en": "Attack damage +4, cannot be synthesized, creatures holding rusty iron daggers have a chance to drop them after death. Unable to block.",
-    "desc_hu": "Támadási sebzés +4, nem készíthető el, a rozsdás vastőrt tartó lényeknek esélyük van elejteni a halál után. Nem lehet blokkolni."
+    "desc": "Rusty iron dagger with 4 attack damage. Cannot be crafted. Sometimes drops from creatures wielding one. Cannot block.",
+    "desc_en": "Rusty iron dagger with 4 attack damage. Cannot be crafted. Sometimes drops from creatures wielding one. Cannot block.",
+    "desc_hu": "4 sebzésű rozsdás vastőr. Nem készíthető. Néha a vele felszerelt lények dobják. Nem tud blokkolni.",
+    "desc_ru": "Ржавый железный кинжал с уроном 4. Не крафтится. Иногда выпадает с существ, вооружённых им. Не может блокировать."
   },
   "ancient_metal_dagger": {
     "mcmod_id": 773306,
-    "desc": "攻击伤害+7，最大品质可达传说。 远古金属武器不会被腐蚀。 无法格挡。 0.6.0版本修改远古金属短剑只能在 大型熔炉 中合成。 制作不同品质的远古金属短剑所需的经验值： 普通 优秀 精良 史诗 传说 远古金属短剑 0 650 1300 2600 5200",
+    "desc": "Ancient metal dagger with 7 attack damage. Cannot block and does not corrode. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改远古金属短剑只能在"
+      "v0.6.0: Crafting moved to the Large Furnace."
     ],
     "desc_en": "Ancient metal dagger with 7 attack damage. Cannot block and does not corrode. Crafted in the Large Furnace.",
     "desc_hu": "7 sebzésű ősi fém tőr. Nem tud blokkolni, és nem korrodálódik. Nagy kemencében készül.",
-    "desc_ru": "Кинжал из древнего металла с уроном 7. Не может блокировать и не подвержен коррозии. Крафтится в большой печи."
+    "desc_ru": "Кинжал из древнего металла с уроном 7. Не может блокировать и не подвержен коррозии. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Crafting moved to the Large Furnace."
+    ],
+    "versions_hu": [
+      "v0.6.0: A craftolása a nagy kemencébe került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Крафт перенесён в большую печь."
+    ]
   },
   "mithril_dagger": {
     "mcmod_id": 773307,
-    "desc": "攻击伤害+9，最大品质可达神器，无法格挡。 注：秘银系列工具没有“吸血”附魔。 0.6.0版本修改秘银短剑只能在 大型熔炉 中合成。 制作不同品质的秘银短剑所需的经验值： 普通 优秀 精良 史诗 传说 神器 秘银短剑 0 2570 5140 10280 20560 41120",
+    "desc": "Mithril dagger with 9 attack damage. Cannot block. Mithril tools do not roll the vampiric enchantment. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改秘银短剑只能在"
+      "v0.6.0: Crafting moved to the Large Furnace."
     ],
     "desc_en": "Mithril dagger with 9 attack damage. Cannot block. Mithril tools do not roll the vampiric enchantment. Crafted in the Large Furnace.",
     "desc_hu": "9 sebzésű mithril tőr. Nem tud blokkolni. A mithril eszközök nem kaphatják meg a vámpirikus bűvölést. Nagy kemencében készül.",
-    "desc_ru": "Мифриловый кинжал с уроном 9. Не может блокировать. Мифриловые инструменты не получают вампирическое зачарование. Крафтится в большой печи."
+    "desc_ru": "Мифриловый кинжал с уроном 9. Не может блокировать. Мифриловые инструменты не получают вампирическое зачарование. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Crafting moved to the Large Furnace."
+    ],
+    "versions_hu": [
+      "v0.6.0: A craftolása a nagy kemencébe került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Крафт перенесён в большую печь."
+    ]
   },
   "adamantium_dagger": {
     "mcmod_id": 773308,
-    "desc": "攻击伤害+8，最大品质可达神器。 无法格挡。 0.6.0版本修改艾德曼短剑只能在 大型熔炉 中合成。 制作不同品质的艾德曼短剑所需的经验值： 普通 优秀 精良 史诗 传说 神器 艾德曼短剑 0 10250 20500 41000 82000 164000",
+    "desc": "Adamantium dagger with 8 attack damage. Cannot block. Crafted in the Large Furnace.",
     "versions": [
-      "0.6.0版本修改艾德曼短剑只能在"
+      "v0.6.0: Crafting moved to the Large Furnace."
     ],
     "desc_en": "Adamantium dagger with 8 attack damage. Cannot block. Crafted in the Large Furnace.",
     "desc_hu": "8 sebzésű adamantium tőr. Nem tud blokkolni. Nagy kemencében készül.",
-    "desc_ru": "Адамантиевый кинжал с уроном 8. Не может блокировать. Крафтится в большой печи."
+    "desc_ru": "Адамантиевый кинжал с уроном 8. Не может блокировать. Крафтится в большой печи.",
+    "versions_en": [
+      "v0.6.0: Crafting moved to the Large Furnace."
+    ],
+    "versions_hu": [
+      "v0.6.0: A craftolása a nagy kemencébe került át."
+    ],
+    "versions_ru": [
+      "v0.6.0: Крафт перенесён в большую печь."
+    ]
   },
   "high_carbon_steel_dagger": {
     "mcmod_id": 777319,
-    "desc": "高碳钢短剑是用铁短剑在冶炼炉结合1个碳晶冶炼而成。可在各类金属砧使用铁粒修复。 攻击伤害+6。",
-    "desc_en": "The high carbon steel dagger is smelted by combining an iron dagger with a carbon crystal in a smelting furnace. Iron particles can be used to repair various metal anvils. Attack damage +6.",
-    "desc_hu": "A magas széntartalmú acéltőrt úgy olvasztják meg, hogy egy vastőrt szénkristállyal kombinálnak olvasztókemencében. A vasrészecskék különféle fémüllők javítására használhatók. Támadási sebzés +6."
+    "desc": "High-carbon steel dagger made in the blast furnace from an iron dagger plus 1 carbon crystal. Repairs with iron nuggets. Attack damage +6.",
+    "desc_en": "High-carbon steel dagger made in the blast furnace from an iron dagger plus 1 carbon crystal. Repairs with iron nuggets. Attack damage +6.",
+    "desc_hu": "Magas széntartalmú acél tőr, amely vastőrből és 1 szénkristályból készül a kohóban. Vasrögökkel javítható. Támadási sebzés: +6.",
+    "desc_ru": "Кинжал из высокоуглеродистой стали, который выплавляется в плавильной печи из железного кинжала и 1 углеродного кристалла. Чинится железными крупицами. Урон: +6."
   },
   "rusted_iron_arrow": {
     "mcmod_id": 773314,
-    "desc": "弹射物伤害+2。 射中生物后有50%的几率可回收。 无法直接合成，部分骷髅射手死亡后会掉落此物品。",
-    "desc_en": "Projectile damage +2. There is a 50% chance of being recovered after hitting a creature. It cannot be synthesized directly. Some skeleton shooters will drop this item after death.",
-    "desc_hu": "Lövedék sérülése +2. 50% esély van a felépülésre, miután eltalált egy lényt. Közvetlenül nem készíthető el. Egyes csontvázlövők haláluk után eldobják ezt a tárgyat."
+    "desc": "Rusty iron arrow with +2 projectile damage and a 50% recovery chance. Cannot be crafted directly; some skeleton archers can drop it.",
+    "desc_en": "Rusty iron arrow with +2 projectile damage and a 50% recovery chance. Cannot be crafted directly; some skeleton archers can drop it.",
+    "desc_hu": "Rozsdás vasnyíl +2 lövedéksebzéssel és 50% visszaszerzési eséllyel. Közvetlenül nem craftolható; egyes csontvázíjászok dobhatják.",
+    "desc_ru": "Ржавая железная стрела с уроном снаряда +2 и шансом 50% вернуться после попадания. Напрямую не крафтится; может выпадать с некоторых скелетов-лучников."
   },
   "miner_helmet": {
     "mcmod_id": 446441,
-    "desc": "移动光源，每30秒消耗1点耐久，可以使用 电池 在铁及以上金属砧上进行修复，每个电池可以修复75点耐久。矿工帽耐久消耗完后并不会消失，只是会失去效果。 注：矿工帽需要穿戴在饰品栏中。 0.5.7版本，困难模式下每15秒消耗1点耐久，且每个电池可修复50点耐久。 0.9.0版本，需要获得对应的 知识书 解锁权限才能合成。",
+    "desc": "Accessory-slot moving light source. Loses 1 durability every 30 seconds while active and can be repaired with batteries on iron-tier or better anvils. Requires the matching Knowledge Book to craft in v0.9.0.",
     "versions": [
-      "0.5.7版本，困难模式下每15秒消耗1点耐久，且每个电池可修复50点耐久",
-      "0.9.0版本，需要获得对应的"
+      "v0.5.7: In Hardcore, it loses durability every 15 seconds and each battery repairs 50 durability.",
+      "v0.9.0: Requires the matching Knowledge Book to craft."
     ],
-    "desc_en": "Moving the light source consumes 1 durability point every 30 seconds. You can use batteries to repair it on an iron or above metal anvil. Each battery can repair 75 durability points. The miner's hat will not disappear after its durability is exhausted, but will lose its effect. Note: The miner's hat needs to be worn in the accessories slot. In version 0.5.7, 1 durability point is consumed every 15 seconds in hard mode, and each battery can repair 50 durability points. For version 0.9.0, you need to obtain the corresponding knowledge book to unlock the permission to synthesize it.",
-    "desc_hu": "A fényforrás mozgatása 30 másodpercenként 1 tartóssági pontot fogyaszt. Akkumulátorokkal javíthatja vason vagy fémüllőn. Minden akkumulátor 75 tartóssági pontot képes javítani. A bányászsapka a tartósságának kimerülése után nem tűnik el, hanem elveszti hatását. Megjegyzés: A bányász sapkát a tartozékok nyílásában kell viselni. A 0.5.7-es verzióban kemény módban 15 másodpercenként 1 tartóssági pontot fogyasztanak, és minden akkumulátor 50 tartóssági pontot képes javítani. A 0.9.0-s verzió esetén be kell szereznie a megfelelő tudáskönyvet, hogy feloldja a szintézis engedélyét."
+    "desc_en": "Accessory-slot moving light source. Loses 1 durability every 30 seconds while active and can be repaired with batteries on iron-tier or better anvils. Requires the matching Knowledge Book to craft in v0.9.0.",
+    "desc_hu": "Kiegészítőhelyre tehető mozgó fényforrás. Aktív állapotban 30 másodpercenként 1 tartósságot veszít, és akkumulátorral javítható vas- vagy jobb üllőn. A v0.9.0-ban a craftolásához kell a megfelelő Tudáskönyv.",
+    "desc_ru": "Подвижный источник света для слота аксессуаров. Теряет 1 прочность каждые 30 секунд работы и чинится батареями на железной или более высокой наковальне. В v0.9.0 для крафта нужна соответствующая Книга знаний.",
+    "versions_en": [
+      "v0.5.7: In Hardcore, it loses durability every 15 seconds and each battery repairs 50 durability.",
+      "v0.9.0: Requires the matching Knowledge Book to craft."
+    ],
+    "versions_hu": [
+      "v0.5.7: Hardcore módban 15 másodpercenként veszít tartósságot, és egy akkumulátor 50 tartósságot javít.",
+      "v0.9.0: Az elkészítéséhez a megfelelő Tudáskönyv kell."
+    ],
+    "versions_ru": [
+      "v0.5.7: В Hardcore теряет прочность каждые 15 секунд, а одна батарея чинит 50 прочности.",
+      "v0.9.0: Для крафта нужна соответствующая Книга знаний."
+    ]
   },
   "bamboo_helmet": {
     "mcmod_id": 771977,
-    "desc": "穿着状态下，可以阻挡雨天带来的负面Buff，但同时也有耐久，可以放置在晾衣架上进行恢复耐久。暴露在雨中每30秒扣除1点耐久，当耐久降为0时，斗笠不会消失，只是无效果。斗笠可以挂在晾衣架上进行晒干，会以3秒恢复1耐久的速度进行修复。玩家穿戴斗笠后外观会相应变化。 注：斗笠需要穿戴在饰品栏中。",
-    "desc_en": "When worn, it can block the negative buff caused by rainy weather, but it is also durable and can be placed on a clothes drying rack to restore its durability. Exposure to rain will deduct 1 point of durability every 30 seconds. When the durability drops to 0, the hat will not disappear, but will have no effect. The hat can be hung on a drying rack to dry, and will be repaired at a rate of 1 durability in 3 seconds. After the player wears the hat, the appearance will change accordingly. Note: The hat needs to be worn in the accessories slot.",
-    "desc_hu": "Viselve blokkolhatja az esős időjárás okozta negatív buffot, de tartós is, és ruhaszárító állványra helyezve visszaállíthatja tartósságát. Az esőnek való kitettség 30 másodpercenként 1 pontot csökkent a tartósságból. Ha a tartósság 0-ra csökken, a kalap nem tűnik el, de nincs hatása. A sapka szárítóállványra akasztható, és 3 másodperc alatt 1 tartóssági sebességgel javítható. Miután a játékos viseli a kalapot, a megjelenés ennek megfelelően megváltozik. Megjegyzés: A kalapot a tartozékok nyílásában kell viselni."
+    "desc": "Accessory-slot rain hat. Blocks rain-related debuffs while worn, loses durability in rain, and can be dried on a rack to recover durability.",
+    "desc_en": "Accessory-slot rain hat. Blocks rain-related debuffs while worn, loses durability in rain, and can be dried on a rack to recover durability.",
+    "desc_hu": "Kiegészítőhelyre tehető esőkalap. Viselve megvéd az esőhöz kötött negatív hatásoktól, esőben veszít a tartósságából, és szárítón helyreállítható.",
+    "desc_ru": "Шляпа от дождя для слота аксессуаров. Пока надета, защищает от дождевых дебаффов, теряет прочность под дождём и может сушиться на стойке для восстановления прочности."
   },
   "shield": {
     "mcmod_id": 447469,
-    "desc": "同 盾牌 ，但玩家需双手持盾。 0.5.6版本移除。",
+    "desc": "Legacy two-handed shield item. Worked like a shield, but required both hands. Removed in v0.5.6.",
     "removed_v": "0.5.6",
     "removed": true,
     "versions": [
-      "0.5.6版本移除"
+      "v0.5.6: Removed."
     ],
     "desc_en": "Same as Shield, but players need to hold the shield with both hands. Removed in version 0.5.6.",
-    "desc_hu": "Ugyanaz, mint a Shield, de a játékosoknak két kézzel kell tartaniuk a pajzsot. Eltávolítva a 0.5.6-os verzióban."
+    "desc_hu": "Legacy kétkezes pajzs. Ugyanúgy működött, mint a pajzs, de két kéz kellett hozzá. A v0.5.6-ban eltávolították.",
+    "desc_ru": "Устаревший двуручный щит. Работал как обычный щит, но требовал обе руки. Удалён в v0.5.6.",
+    "versions_en": [
+      "v0.5.6: Removed."
+    ],
+    "versions_hu": [
+      "v0.5.6: Eltávolítva."
+    ],
+    "versions_ru": [
+      "v0.5.6: Удалён."
+    ]
   },
   "nether_quartz_shard": {
     "mcmod_id": 772907,
-    "desc": "直接破坏 地狱砂砾 有12%几率（使用 木筛 为80%）获得金属粒之一。 9个石英碎片可以合成一个石英。",
-    "desc_en": "Directly destroying Hell Grit has a 12% chance (80% using a Wooden Sieve) to obtain one of the metal particles. 9 quartz fragments can be used to craft one quartz.",
-    "desc_hu": "A Hell Grit közvetlen megsemmisítésének 12% az esélye (80% Faszita használatával), hogy megszerezze valamelyik fémrészecskét. 9 kvarctöredékből egy kvarc készíthető."
+    "desc": "Nether quartz shard. Often obtained from nether gravel, especially through sieving. Nine shards craft into one nether quartz.",
+    "desc_en": "Nether quartz shard. Often obtained from nether gravel, especially through sieving. Nine shards craft into one nether quartz.",
+    "desc_hu": "Netherkvarc-töredék. Gyakran nether kavicsból szerezhető, főleg szitálással. Kilenc darab 1 netherkvarccá alakítható.",
+    "desc_ru": "Осколок адского кварца. Часто добывается из адского гравия, особенно через просеивание. Девять осколков собираются в 1 адский кварц."
   },
   "bowl_cream_of_mushroom_soup": {
     "mcmod_id": 772966,
-    "desc": "用两个棕色蘑菇和一碗牛奶合成。 饥饿值 饱和度 蛋白质 水分 奶油蘑菇汤 5点（ ） 3点（ ） 25% 6",
+    "desc": "Cream of Mushroom Soup made from 2 brown mushrooms and 1 bowl of milk. Restores 5 hunger, 3 saturation, 25% protein, and 6 water.",
     "desc_en": "Crafted from 2 brown mushrooms and 1 bowl of milk. Restores 5 hunger and 3 saturation, with 25% protein and 6 water.",
-    "desc_hu": "2 barna gombából és 1 tál tejből készül. 5 éhséget és 3 telítettséget ad, 25% fehérjével és 6 vízzel."
+    "desc_hu": "Krémes gombaleves 2 barna gombából és 1 tál tejből. 5 éhséget, 3 telítettséget, 25% fehérjét és 6 vizet ad.",
+    "desc_ru": "Сливочный грибной суп из 2 коричневых грибов и 1 миски молока. Восстанавливает 5 голода, 3 насыщения, 25% белка и 6 воды."
   },
   "bowl_cream_of_vegetable_soup": {
     "mcmod_id": 772967,
-    "desc": "用洋葱、胡萝卜、马铃薯和一碗牛奶合成。 饥饿值 饱和度 蛋白质 植物营养 水分 奶油蔬菜汤 7点（ ） 7点（ ） 35% 35% 6",
+    "desc": "Cream of Vegetable Soup made from onion, carrot, potato, and 1 bowl of milk. Restores 7 hunger, 7 saturation, 35% protein, 35% plant nutrition, and 6 water.",
     "desc_en": "Crafted from onion, carrot, potato, and 1 bowl of milk. Restores 7 hunger and 7 saturation, with 35% protein, 35% plant nutrition, and 6 water.",
-    "desc_hu": "Hagymából, sárgarépából, burgonyából és 1 tál tejből készül. 7 éhséget és 7 telítettséget ad, 35% fehérjével, 35% növényi táplálkozással és 6 vízzel."
+    "desc_hu": "Krémes zöldségleves hagymából, sárgarépából, burgonyából és 1 tál tejből. 7 éhséget, 7 telítettséget, 35% fehérjét, 35% növényi tápanyagot és 6 vizet ad.",
+    "desc_ru": "Сливочный овощной суп из лука, моркови, картофеля и 1 миски молока. Восстанавливает 7 голода, 7 насыщения, 35% белка, 35% растительного питания и 6 воды."
   },
   "raincoat": {
     "mcmod_id": 446682,
