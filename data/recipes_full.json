@@ -1483,61 +1483,6 @@
     ]
   },
   {
-    "id": "oak_wood_stairs_61",
-    "item_num": 53,
-    "output": [
-      "oak_wood_stairs",
-      "spruce_wood_stairs",
-      "birch_wood_stairs",
-      "jungle_wood_stairs"
-    ],
-    "outputQty": 4,
-    "station": "flint_workbench",
-    "difficulty": 480,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      [
-        "planks_oak",
-        "planks_spruce",
-        "planks_birch",
-        "planks_jungle"
-      ],
-      [
-        "planks_oak",
-        "planks_spruce",
-        "planks_birch",
-        "planks_jungle"
-      ],
-      [
-        "planks_oak",
-        "planks_spruce",
-        "planks_birch",
-        "planks_jungle"
-      ],
-      [
-        "planks_oak",
-        "planks_spruce",
-        "planks_birch",
-        "planks_jungle"
-      ],
-      [
-        "planks_oak",
-        "planks_spruce",
-        "planks_birch",
-        "planks_jungle"
-      ],
-      [
-        "planks_oak",
-        "planks_spruce",
-        "planks_birch",
-        "planks_jungle"
-      ]
-    ],
-    "shaped": false
-  },
-  {
     "id": "chest_62",
     "item_num": 54,
     "output": "chest",
@@ -2106,7 +2051,24 @@
       "cobblestone",
       "cobblestone"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "cobblestone",
+        "_",
+        "_"
+      ],
+      [
+        "cobblestone",
+        "cobblestone",
+        "_"
+      ],
+      [
+        "cobblestone",
+        "cobblestone",
+        "cobblestone"
+      ]
+    ]
   },
   {
     "id": "lever_120",
@@ -2646,7 +2608,24 @@
       "bricks",
       "bricks"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "bricks",
+        "_",
+        "_"
+      ],
+      [
+        "bricks",
+        "bricks",
+        "_"
+      ],
+      [
+        "bricks",
+        "bricks",
+        "bricks"
+      ]
+    ]
   },
   {
     "id": "stone_brick_stairs_143",
@@ -2666,7 +2645,24 @@
       "stone_bricks",
       "stone_bricks"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "stone_bricks",
+        "_",
+        "_"
+      ],
+      [
+        "stone_bricks",
+        "stone_bricks",
+        "_"
+      ],
+      [
+        "stone_bricks",
+        "stone_bricks",
+        "stone_bricks"
+      ]
+    ]
   },
   {
     "id": "nether_brick_144",
@@ -2721,7 +2717,24 @@
       "nether_brick",
       "nether_brick"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "nether_brick",
+        "_",
+        "_"
+      ],
+      [
+        "nether_brick",
+        "nether_brick",
+        "_"
+      ],
+      [
+        "nether_brick",
+        "nether_brick",
+        "nether_brick"
+      ]
+    ]
   },
   {
     "id": "enchanting_table_diamond_147",
@@ -2837,7 +2850,24 @@
       "sandstone",
       "sandstone"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "sandstone",
+        "_",
+        "_"
+      ],
+      [
+        "sandstone",
+        "sandstone",
+        "_"
+      ],
+      [
+        "sandstone",
+        "sandstone",
+        "sandstone"
+      ]
+    ]
   },
   {
     "id": "ender_chest_154",
@@ -3245,7 +3275,24 @@
       "quartz",
       "quartz"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "quartz",
+        "_",
+        "_"
+      ],
+      [
+        "quartz",
+        "quartz",
+        "_"
+      ],
+      [
+        "quartz",
+        "quartz",
+        "quartz"
+      ]
+    ]
   },
   {
     "id": "activator_rail_175",
@@ -4661,7 +4708,24 @@
       "obsidian",
       "obsidian"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "obsidian",
+        "_",
+        "_"
+      ],
+      [
+        "obsidian",
+        "obsidian",
+        "_"
+      ],
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ]
+    ]
   },
   {
     "id": "copper_anvil_233",
@@ -29155,26 +29219,11 @@
           "planks_birch",
           "planks_jungle"
         ],
-        "wood_slab_single",
         [
-          "planks_oak",
-          "planks_spruce",
-          "planks_birch",
-          "planks_jungle"
-        ]
-      ],
-      [
-        [
-          "planks_oak",
-          "planks_spruce",
-          "planks_birch",
-          "planks_jungle"
-        ],
-        [
-          "planks_oak",
-          "planks_spruce",
-          "planks_birch",
-          "planks_jungle"
+          "oak_wood_slab_single",
+          "spruce_wood_slab_single",
+          "birch_wood_slab_single",
+          "jungle_wood_slab_single"
         ],
         [
           "planks_oak",
@@ -29190,7 +29239,32 @@
           "planks_birch",
           "planks_jungle"
         ],
-        "wood_slab_single",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ]
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "oak_wood_slab_single",
+          "spruce_wood_slab_single",
+          "birch_wood_slab_single",
+          "jungle_wood_slab_single"
+        ],
         [
           "planks_oak",
           "planks_spruce",
@@ -45573,5 +45647,153 @@
       ]
     ],
     "removed_version": "0.6.0"
+  },
+  {
+    "id": "oak_wood_stairs_shaped",
+    "item_num": 53,
+    "output": "oak_wood_stairs",
+    "outputQty": 4,
+    "station": "flint_workbench",
+    "difficulty": 480,
+    "skills": [
+      "carpentry"
+    ],
+    "ingredients": [
+      "planks_oak",
+      "planks_oak",
+      "planks_oak",
+      "planks_oak",
+      "planks_oak",
+      "planks_oak"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "planks_oak",
+        "_",
+        "_"
+      ],
+      [
+        "planks_oak",
+        "planks_oak",
+        "_"
+      ],
+      [
+        "planks_oak",
+        "planks_oak",
+        "planks_oak"
+      ]
+    ]
+  },
+  {
+    "id": "spruce_wood_stairs_shaped",
+    "item_num": 53,
+    "output": "spruce_wood_stairs",
+    "outputQty": 4,
+    "station": "flint_workbench",
+    "difficulty": 480,
+    "skills": [
+      "carpentry"
+    ],
+    "ingredients": [
+      "planks_spruce",
+      "planks_spruce",
+      "planks_spruce",
+      "planks_spruce",
+      "planks_spruce",
+      "planks_spruce"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "planks_spruce",
+        "_",
+        "_"
+      ],
+      [
+        "planks_spruce",
+        "planks_spruce",
+        "_"
+      ],
+      [
+        "planks_spruce",
+        "planks_spruce",
+        "planks_spruce"
+      ]
+    ]
+  },
+  {
+    "id": "birch_wood_stairs_shaped",
+    "item_num": 53,
+    "output": "birch_wood_stairs",
+    "outputQty": 4,
+    "station": "flint_workbench",
+    "difficulty": 480,
+    "skills": [
+      "carpentry"
+    ],
+    "ingredients": [
+      "planks_birch",
+      "planks_birch",
+      "planks_birch",
+      "planks_birch",
+      "planks_birch",
+      "planks_birch"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "planks_birch",
+        "_",
+        "_"
+      ],
+      [
+        "planks_birch",
+        "planks_birch",
+        "_"
+      ],
+      [
+        "planks_birch",
+        "planks_birch",
+        "planks_birch"
+      ]
+    ]
+  },
+  {
+    "id": "jungle_wood_stairs_shaped",
+    "item_num": 53,
+    "output": "jungle_wood_stairs",
+    "outputQty": 4,
+    "station": "flint_workbench",
+    "difficulty": 480,
+    "skills": [
+      "carpentry"
+    ],
+    "ingredients": [
+      "planks_jungle",
+      "planks_jungle",
+      "planks_jungle",
+      "planks_jungle",
+      "planks_jungle",
+      "planks_jungle"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "planks_jungle",
+        "_",
+        "_"
+      ],
+      [
+        "planks_jungle",
+        "planks_jungle",
+        "_"
+      ],
+      [
+        "planks_jungle",
+        "planks_jungle",
+        "planks_jungle"
+      ]
+    ]
   }
 ]
