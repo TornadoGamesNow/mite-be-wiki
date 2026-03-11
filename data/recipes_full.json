@@ -11173,7 +11173,7 @@
     ],
     "ingredients": [
       "redstone_torch_lit",
-      "torch",
+      "redstone_torch_lit",
       "redstone_torch_lit",
       "stone",
       "nether_quartz",
@@ -11188,7 +11188,7 @@
         "_"
       ],
       [
-        "torch",
+        "redstone_torch_lit",
         "nether_quartz",
         "redstone_torch_lit"
       ],
@@ -42142,17 +42142,41 @@
     "item_num": 841420,
     "output": "glass",
     "outputQty": 1,
-    "station": "stone_furnace",
-    "difficulty": 0,
+    "station": "flint_workbench",
+    "difficulty": 90,
     "skills": [
       "masonry"
     ],
     "ingredients": [
-      "sand",
-      "sand"
+      "glass_pane",
+      "glass_pane",
+      "glass_pane",
+      "glass_pane",
+      "glass_pane",
+      "glass_pane",
+      "glass_pane",
+      "glass_pane",
+      "glass_pane"
     ],
-    "shaped": false,
-    "added_version": "0.6.0"
+    "shaped": true,
+    "added_version": "0.6.0",
+    "pattern": [
+      [
+        "glass_pane",
+        "glass_pane",
+        "glass_pane"
+      ],
+      [
+        "glass_pane",
+        "glass_pane",
+        "glass_pane"
+      ],
+      [
+        "glass_pane",
+        "glass_pane",
+        "glass_pane"
+      ]
+    ]
   },
   {
     "id": "colling_liquid_841421",
