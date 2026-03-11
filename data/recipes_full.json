@@ -5553,41 +5553,6 @@
     "shaped": false
   },
   {
-    "id": "gold_sword_259_legacy",
-    "item_num": 283,
-    "output": "gold_sword",
-    "outputQty": 1,
-    "station": "gold_workbench",
-    "difficulty": 825,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "gold_ingot",
-      "gold_ingot",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "gold_ingot",
-        "_"
-      ],
-      [
-        "_",
-        "gold_ingot",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
     "id": "gold_sword_259",
     "item_num": 283,
     "output": "gold_sword",
@@ -5621,41 +5586,6 @@
       ]
     ],
     "added_version": "0.6.0"
-  },
-  {
-    "id": "gold_shovel_260_legacy",
-    "item_num": 284,
-    "output": "gold_shovel",
-    "outputQty": 1,
-    "station": "gold_workbench",
-    "difficulty": 450,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "gold_ingot",
-      "stick",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "gold_ingot",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
   },
   {
     "id": "gold_shovel_260",
@@ -5693,43 +5623,6 @@
     "added_version": "0.6.0"
   },
   {
-    "id": "gold_pickaxe_261_legacy",
-    "item_num": 285,
-    "output": "gold_pickaxe",
-    "outputQty": 1,
-    "station": "gold_workbench",
-    "difficulty": 1250,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "stick",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "gold_ingot",
-        "gold_ingot",
-        "gold_ingot"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
     "id": "gold_pickaxe_261",
     "item_num": 285,
     "output": "gold_pickaxe",
@@ -5765,43 +5658,6 @@
       ]
     ],
     "added_version": "0.6.0"
-  },
-  {
-    "id": "gold_axe_262_legacy",
-    "item_num": 286,
-    "output": "gold_axe",
-    "outputQty": 1,
-    "station": "gold_workbench",
-    "difficulty": 1250,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "stick",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "gold_ingot",
-        "gold_ingot",
-        "_"
-      ],
-      [
-        "gold_ingot",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
   },
   {
     "id": "gold_axe_262",
@@ -6154,42 +6010,6 @@
       ]
     ],
     "added_version": "0.6.0"
-  },
-  {
-    "id": "gold_hoe_273_legacy",
-    "item_num": 294,
-    "output": "gold_hoe",
-    "outputQty": 1,
-    "station": "gold_workbench",
-    "difficulty": 850,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "gold_ingot",
-      "gold_ingot",
-      "stick",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "gold_ingot",
-        "gold_ingot",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
   },
   {
     "id": "gold_hoe_273",
@@ -14008,42 +13828,6 @@
     "removed_version": "0.5.5"
   },
   {
-    "id": "copper_hoe_660_legacy",
-    "item_num": 985,
-    "output": "copper_hoe",
-    "outputQty": 1,
-    "station": "copper_workbench",
-    "difficulty": 850,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "copper_ingot",
-      "copper_ingot",
-      "stick",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "copper_ingot",
-        "copper_ingot",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
     "id": "copper_hoe_660",
     "item_num": 985,
     "output": "copper_hoe",
@@ -14078,42 +13862,6 @@
       ]
     ],
     "added_version": "0.6.0"
-  },
-  {
-    "id": "silver_hoe_661_legacy",
-    "item_num": 986,
-    "output": "silver_hoe",
-    "outputQty": 1,
-    "station": "silver_workbench",
-    "difficulty": 850,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "silver_ingot",
-      "silver_ingot",
-      "stick",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "silver_ingot",
-        "silver_ingot",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
   },
   {
     "id": "silver_hoe_661",
@@ -14458,44 +14206,6 @@
     "removed_version": "0.5.5"
   },
   {
-    "id": "copper_mattock_670_legacy",
-    "item_num": 997,
-    "output": "copper_mattock",
-    "outputQty": 1,
-    "station": "copper_workbench",
-    "difficulty": 1650,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "copper_ingot",
-      "copper_ingot",
-      "copper_ingot",
-      "stick",
-      "copper_ingot",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "copper_ingot",
-        "copper_ingot",
-        "copper_ingot"
-      ],
-      [
-        "_",
-        "stick",
-        "copper_ingot"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
     "id": "copper_mattock_670",
     "item_num": 997,
     "output": "copper_mattock",
@@ -14534,44 +14244,6 @@
     "added_version": "0.6.0"
   },
   {
-    "id": "silver_mattock_671_legacy",
-    "item_num": 998,
-    "output": "silver_mattock",
-    "outputQty": 1,
-    "station": "silver_workbench",
-    "difficulty": 1650,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "silver_ingot",
-      "silver_ingot",
-      "silver_ingot",
-      "stick",
-      "silver_ingot",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "silver_ingot",
-        "silver_ingot",
-        "silver_ingot"
-      ],
-      [
-        "_",
-        "stick",
-        "silver_ingot"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
     "id": "silver_mattock_671",
     "item_num": 998,
     "output": "silver_mattock",
@@ -14608,44 +14280,6 @@
       ]
     ],
     "added_version": "0.6.0"
-  },
-  {
-    "id": "gold_mattock_672_legacy",
-    "item_num": 999,
-    "output": "gold_mattock",
-    "outputQty": 1,
-    "station": "gold_workbench",
-    "difficulty": 1650,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "stick",
-      "gold_ingot",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "gold_ingot",
-        "gold_ingot",
-        "gold_ingot"
-      ],
-      [
-        "_",
-        "stick",
-        "gold_ingot"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
   },
   {
     "id": "gold_mattock_672",
@@ -14876,44 +14510,6 @@
     "added_version": "0.6.0"
   },
   {
-    "id": "gold_battle_axe_678_legacy",
-    "item_num": 1006,
-    "output": "gold_battle_axe",
-    "outputQty": 1,
-    "station": "gold_workbench",
-    "difficulty": 1650,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "stick",
-      "gold_ingot",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "gold_ingot",
-        "_",
-        "gold_ingot"
-      ],
-      [
-        "gold_ingot",
-        "stick",
-        "gold_ingot"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
     "id": "gold_battle_axe_678",
     "item_num": 1006,
     "output": "gold_battle_axe",
@@ -15066,43 +14662,6 @@
     "removed_version": "0.5.5"
   },
   {
-    "id": "copper_scythe_682_legacy",
-    "item_num": 1011,
-    "output": "copper_scythe",
-    "outputQty": 1,
-    "station": "copper_workbench",
-    "difficulty": 875,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "stick",
-      "copper_ingot",
-      "stick",
-      "copper_ingot",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "stick",
-        "copper_ingot",
-        "_"
-      ],
-      [
-        "stick",
-        "_",
-        "copper_ingot"
-      ],
-      [
-        "stick",
-        "_",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
     "id": "copper_scythe_682",
     "item_num": 1011,
     "output": "copper_scythe",
@@ -15140,43 +14699,6 @@
     "added_version": "0.6.0"
   },
   {
-    "id": "silver_scythe_683_legacy",
-    "item_num": 1012,
-    "output": "silver_scythe",
-    "outputQty": 1,
-    "station": "silver_workbench",
-    "difficulty": 875,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "stick",
-      "silver_ingot",
-      "stick",
-      "silver_ingot",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "stick",
-        "silver_ingot",
-        "_"
-      ],
-      [
-        "stick",
-        "_",
-        "silver_ingot"
-      ],
-      [
-        "stick",
-        "_",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
     "id": "silver_scythe_683",
     "item_num": 1012,
     "output": "silver_scythe",
@@ -15212,43 +14734,6 @@
       ]
     ],
     "added_version": "0.6.0"
-  },
-  {
-    "id": "gold_scythe_684_legacy",
-    "item_num": 1013,
-    "output": "gold_scythe",
-    "outputQty": 1,
-    "station": "gold_workbench",
-    "difficulty": 875,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "stick",
-      "gold_ingot",
-      "stick",
-      "gold_ingot",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "stick",
-        "gold_ingot",
-        "_"
-      ],
-      [
-        "stick",
-        "_",
-        "gold_ingot"
-      ],
-      [
-        "stick",
-        "_",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
   },
   {
     "id": "gold_scythe_684",
@@ -32656,40 +32141,6 @@
     "removed_version": "0.5.6"
   },
   {
-    "id": "copper_dagger_32061_legacy",
-    "item_num": 32061,
-    "output": "copper_dagger",
-    "outputQty": 1,
-    "station": "copper_workbench",
-    "difficulty": 700,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "copper_ingot",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "copper_ingot",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
     "id": "copper_dagger_32061",
     "item_num": 32061,
     "output": "copper_dagger",
@@ -32758,40 +32209,6 @@
     "added_version": "0.6.0"
   },
   {
-    "id": "gold_dagger_32063_legacy",
-    "item_num": 32063,
-    "output": "gold_dagger",
-    "outputQty": 1,
-    "station": "gold_workbench",
-    "difficulty": 700,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "gold_ingot",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "gold_ingot",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
     "id": "gold_dagger_32063",
     "item_num": 32063,
     "output": "gold_dagger",
@@ -32824,40 +32241,6 @@
       ]
     ],
     "added_version": "0.6.0"
-  },
-  {
-    "id": "silver_dagger_32064_legacy",
-    "item_num": 32064,
-    "output": "silver_dagger",
-    "outputQty": 1,
-    "station": "silver_workbench",
-    "difficulty": 700,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "silver_ingot",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "silver_ingot",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
   },
   {
     "id": "silver_dagger_32064",
@@ -32994,41 +32377,6 @@
       ]
     ],
     "removed_version": "0.5.5"
-  },
-  {
-    "id": "copper_hatchet_32073_legacy",
-    "item_num": 32073,
-    "output": "copper_hatchet",
-    "outputQty": 1,
-    "station": "copper_workbench",
-    "difficulty": 1050,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "copper_ingot",
-      "stick",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "copper_ingot",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
   },
   {
     "id": "copper_hatchet_32073",
@@ -35038,45 +34386,6 @@
     "removed_version": "0.9.0"
   },
   {
-    "id": "water_bag_copper_785082_legacy",
-    "item_num": 785082,
-    "output": "water_bag_copper",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 400,
-    "skills": [],
-    "ingredients": [
-      "copper_ingot",
-      "copper_ingot",
-      "copper_ingot",
-      "copper_ingot",
-      "copper_ingot",
-      "copper_ingot",
-      "copper_ingot",
-      "copper_ingot",
-      "water_bag"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "copper_ingot",
-        "copper_ingot",
-        "copper_ingot"
-      ],
-      [
-        "copper_ingot",
-        "water_bag",
-        "copper_ingot"
-      ],
-      [
-        "copper_ingot",
-        "copper_ingot",
-        "copper_ingot"
-      ]
-    ],
-    "removed_version": "0.5.6"
-  },
-  {
     "id": "water_bag_silver_785083",
     "item_num": 785083,
     "output": "water_bag_silver",
@@ -35111,45 +34420,6 @@
     ],
     "added_version": "0.5.6",
     "removed_version": "0.9.0"
-  },
-  {
-    "id": "water_bag_silver_785083_legacy",
-    "item_num": 785083,
-    "output": "water_bag_silver",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 400,
-    "skills": [],
-    "ingredients": [
-      "silver_ingot",
-      "silver_ingot",
-      "silver_ingot",
-      "silver_ingot",
-      "silver_ingot",
-      "silver_ingot",
-      "silver_ingot",
-      "silver_ingot",
-      "water_bag"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "silver_ingot",
-        "silver_ingot",
-        "silver_ingot"
-      ],
-      [
-        "silver_ingot",
-        "water_bag",
-        "silver_ingot"
-      ],
-      [
-        "silver_ingot",
-        "silver_ingot",
-        "silver_ingot"
-      ]
-    ],
-    "removed_version": "0.5.6"
   },
   {
     "id": "water_bag_iron_785085",
@@ -35188,45 +34458,6 @@
     "removed_version": "0.9.0"
   },
   {
-    "id": "water_bag_iron_785085_legacy",
-    "item_num": 785085,
-    "output": "water_bag_iron",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 400,
-    "skills": [],
-    "ingredients": [
-      "iron_ingot",
-      "iron_ingot",
-      "iron_ingot",
-      "iron_ingot",
-      "iron_ingot",
-      "iron_ingot",
-      "iron_ingot",
-      "iron_ingot",
-      "water_bag_copper"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "iron_ingot",
-        "iron_ingot",
-        "iron_ingot"
-      ],
-      [
-        "iron_ingot",
-        "water_bag_copper",
-        "iron_ingot"
-      ],
-      [
-        "iron_ingot",
-        "iron_ingot",
-        "iron_ingot"
-      ]
-    ],
-    "removed_version": "0.5.6"
-  },
-  {
     "id": "water_bag_gold_785084",
     "item_num": 785084,
     "output": "water_bag_gold",
@@ -35261,45 +34492,6 @@
     ],
     "added_version": "0.5.6",
     "removed_version": "0.9.0"
-  },
-  {
-    "id": "water_bag_gold_785084_legacy",
-    "item_num": 785084,
-    "output": "water_bag_gold",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 400,
-    "skills": [],
-    "ingredients": [
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "gold_ingot",
-      "water_bag_iron"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "gold_ingot",
-        "gold_ingot",
-        "gold_ingot"
-      ],
-      [
-        "gold_ingot",
-        "water_bag_iron",
-        "gold_ingot"
-      ],
-      [
-        "gold_ingot",
-        "gold_ingot",
-        "gold_ingot"
-      ]
-    ],
-    "removed_version": "0.5.6"
   },
   {
     "id": "water_bag_hard_785086",
@@ -35338,45 +34530,6 @@
     "removed_version": "0.9.0"
   },
   {
-    "id": "water_bag_hard_785086_legacy",
-    "item_num": 785086,
-    "output": "water_bag_hard",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 400,
-    "skills": [],
-    "ingredients": [
-      "hardstone_ingot",
-      "hardstone_ingot",
-      "hardstone_ingot",
-      "hardstone_ingot",
-      "hardstone_ingot",
-      "hardstone_ingot",
-      "hardstone_ingot",
-      "hardstone_ingot",
-      "water_bag_gold"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "hardstone_ingot",
-        "hardstone_ingot",
-        "hardstone_ingot"
-      ],
-      [
-        "hardstone_ingot",
-        "water_bag_gold",
-        "hardstone_ingot"
-      ],
-      [
-        "hardstone_ingot",
-        "hardstone_ingot",
-        "hardstone_ingot"
-      ]
-    ],
-    "removed_version": "0.5.6"
-  },
-  {
     "id": "water_bag_ancient_metal_785087",
     "item_num": 785087,
     "output": "water_bag_ancient_metal",
@@ -35411,45 +34564,6 @@
     ],
     "added_version": "0.5.6",
     "removed_version": "0.9.0"
-  },
-  {
-    "id": "water_bag_ancient_metal_785087_legacy",
-    "item_num": 785087,
-    "output": "water_bag_ancient_metal",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 400,
-    "skills": [],
-    "ingredients": [
-      "ancient_metal_ingot",
-      "ancient_metal_ingot",
-      "ancient_metal_ingot",
-      "ancient_metal_ingot",
-      "ancient_metal_ingot",
-      "ancient_metal_ingot",
-      "ancient_metal_ingot",
-      "ancient_metal_ingot",
-      "water_bag_hard"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "ancient_metal_ingot",
-        "ancient_metal_ingot",
-        "ancient_metal_ingot"
-      ],
-      [
-        "ancient_metal_ingot",
-        "water_bag_hard",
-        "ancient_metal_ingot"
-      ],
-      [
-        "ancient_metal_ingot",
-        "ancient_metal_ingot",
-        "ancient_metal_ingot"
-      ]
-    ],
-    "removed_version": "0.5.6"
   },
   {
     "id": "water_bag_mithril_785088",
@@ -35488,45 +34602,6 @@
     "removed_version": "0.9.0"
   },
   {
-    "id": "water_bag_mithril_785088_legacy",
-    "item_num": 785088,
-    "output": "water_bag_mithril",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 400,
-    "skills": [],
-    "ingredients": [
-      "mithril_bar",
-      "mithril_bar",
-      "mithril_bar",
-      "mithril_bar",
-      "mithril_bar",
-      "mithril_bar",
-      "mithril_bar",
-      "mithril_bar",
-      "water_bag_ancient_metal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "mithril_bar",
-        "mithril_bar",
-        "mithril_bar"
-      ],
-      [
-        "mithril_bar",
-        "water_bag_ancient_metal",
-        "mithril_bar"
-      ],
-      [
-        "mithril_bar",
-        "mithril_bar",
-        "mithril_bar"
-      ]
-    ],
-    "removed_version": "0.5.6"
-  },
-  {
     "id": "water_bag_adamantium_785089",
     "item_num": 785089,
     "output": "water_bag_adamantium",
@@ -35561,45 +34636,6 @@
     ],
     "added_version": "0.5.6",
     "removed_version": "0.9.0"
-  },
-  {
-    "id": "water_bag_adamantium_785089_legacy",
-    "item_num": 785089,
-    "output": "water_bag_adamantium",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 400,
-    "skills": [],
-    "ingredients": [
-      "adamantium_bar",
-      "adamantium_bar",
-      "adamantium_bar",
-      "adamantium_bar",
-      "adamantium_bar",
-      "adamantium_bar",
-      "adamantium_bar",
-      "adamantium_bar",
-      "water_bag_mithril"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "adamantium_bar",
-        "adamantium_bar",
-        "adamantium_bar"
-      ],
-      [
-        "adamantium_bar",
-        "water_bag_mithril",
-        "adamantium_bar"
-      ],
-      [
-        "adamantium_bar",
-        "adamantium_bar",
-        "adamantium_bar"
-      ]
-    ],
-    "removed_version": "0.5.6"
   },
   {
     "id": "copper_ingot_ore_smelt",
@@ -41443,45 +40479,6 @@
     "removed_version": "0.9.0"
   },
   {
-    "id": "water_bag_iron_841416_legacy",
-    "item_num": 841416,
-    "output": "water_bag_iron",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "iron_ingot",
-      "iron_ingot",
-      "iron_ingot",
-      "iron_ingot",
-      "iron_ingot",
-      "iron_ingot",
-      "iron_ingot",
-      "iron_ingot",
-      "water_bag_silver"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "iron_ingot",
-        "iron_ingot",
-        "iron_ingot"
-      ],
-      [
-        "iron_ingot",
-        "water_bag_silver",
-        "iron_ingot"
-      ],
-      [
-        "iron_ingot",
-        "iron_ingot",
-        "iron_ingot"
-      ]
-    ],
-    "removed_version": "0.5.6"
-  },
-  {
     "id": "quiver_841417",
     "item_num": 841417,
     "output": "quiver",
@@ -43134,47 +42131,6 @@
     "added_version": "0.5.6"
   },
   {
-    "id": "barrel_copper_upgrade_doc_legacy",
-    "item_num": 990010,
-    "output": "barrel_copper_upgrade",
-    "outputQty": 1,
-    "station": "copper_workbench",
-    "difficulty": 640,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "copper_nugget",
-      "copper_ingot",
-      "copper_nugget",
-      "copper_ingot",
-      "barrel",
-      "copper_ingot",
-      "copper_nugget",
-      "copper_ingot",
-      "copper_nugget"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "copper_nugget",
-        "copper_ingot",
-        "copper_nugget"
-      ],
-      [
-        "copper_ingot",
-        "barrel",
-        "copper_ingot"
-      ],
-      [
-        "copper_nugget",
-        "copper_ingot",
-        "copper_nugget"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
     "id": "barrel_copper_upgrade_doc_modern",
     "item_num": 991010,
     "output": "barrel_copper_upgrade",
@@ -43211,47 +42167,6 @@
     ],
     "added_version": "0.6.0",
     "removed_version": "0.9.0"
-  },
-  {
-    "id": "barrel_silver_upgrade_doc_legacy",
-    "item_num": 990012,
-    "output": "barrel_silver_upgrade",
-    "outputQty": 1,
-    "station": "silver_workbench",
-    "difficulty": 960,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "silver_nugget",
-      "silver_ingot",
-      "silver_nugget",
-      "silver_ingot",
-      "barrel",
-      "silver_ingot",
-      "silver_nugget",
-      "silver_ingot",
-      "silver_nugget"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "silver_nugget",
-        "silver_ingot",
-        "silver_nugget"
-      ],
-      [
-        "silver_ingot",
-        "barrel",
-        "silver_ingot"
-      ],
-      [
-        "silver_nugget",
-        "silver_ingot",
-        "silver_nugget"
-      ]
-    ],
-    "removed_version": "0.6.0"
   },
   {
     "id": "barrel_silver_upgrade_doc_modern",
@@ -43292,47 +42207,6 @@
     "removed_version": "0.9.0"
   },
   {
-    "id": "barrel_iron_upgrade_doc_legacy",
-    "item_num": 990014,
-    "output": "barrel_iron_upgrade",
-    "outputQty": 1,
-    "station": "iron_workbench",
-    "difficulty": 1600,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "iron_nugget",
-      "iron_ingot",
-      "iron_nugget",
-      "iron_ingot",
-      "barrel",
-      "iron_ingot",
-      "iron_nugget",
-      "iron_ingot",
-      "iron_nugget"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "iron_nugget",
-        "iron_ingot",
-        "iron_nugget"
-      ],
-      [
-        "iron_ingot",
-        "barrel",
-        "iron_ingot"
-      ],
-      [
-        "iron_nugget",
-        "iron_ingot",
-        "iron_nugget"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
     "id": "barrel_iron_upgrade_doc_modern",
     "item_num": 991014,
     "output": "barrel_iron_upgrade",
@@ -43369,47 +42243,6 @@
     ],
     "added_version": "0.6.0",
     "removed_version": "0.9.0"
-  },
-  {
-    "id": "barrel_gold_upgrade_doc_legacy",
-    "item_num": 990016,
-    "output": "barrel_gold_upgrade",
-    "outputQty": 1,
-    "station": "gold_workbench",
-    "difficulty": 2000,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "gold_nugget",
-      "gold_ingot",
-      "gold_nugget",
-      "gold_ingot",
-      "barrel",
-      "gold_ingot",
-      "gold_nugget",
-      "gold_ingot",
-      "gold_nugget"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "gold_nugget",
-        "gold_ingot",
-        "gold_nugget"
-      ],
-      [
-        "gold_ingot",
-        "barrel",
-        "gold_ingot"
-      ],
-      [
-        "gold_nugget",
-        "gold_ingot",
-        "gold_nugget"
-      ]
-    ],
-    "removed_version": "0.6.0"
   },
   {
     "id": "barrel_gold_upgrade_doc_modern",
@@ -43450,47 +42283,6 @@
     "removed_version": "0.9.0"
   },
   {
-    "id": "barrel_hard_upgrade_doc_legacy",
-    "item_num": 990018,
-    "output": "barrel_hard_upgrade",
-    "outputQty": 1,
-    "station": "hardstone_workbench",
-    "difficulty": 1280,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "hardstone_nugget",
-      "hardstone_ingot",
-      "hardstone_nugget",
-      "hardstone_ingot",
-      "barrel",
-      "hardstone_ingot",
-      "hardstone_nugget",
-      "hardstone_ingot",
-      "hardstone_nugget"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "hardstone_nugget",
-        "hardstone_ingot",
-        "hardstone_nugget"
-      ],
-      [
-        "hardstone_ingot",
-        "barrel",
-        "hardstone_ingot"
-      ],
-      [
-        "hardstone_nugget",
-        "hardstone_ingot",
-        "hardstone_nugget"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
     "id": "barrel_hard_upgrade_doc_modern",
     "item_num": 991018,
     "output": "barrel_hard_upgrade",
@@ -43527,47 +42319,6 @@
     ],
     "added_version": "0.6.0",
     "removed_version": "0.9.0"
-  },
-  {
-    "id": "barrel_mithril_upgrade_doc_legacy",
-    "item_num": 990020,
-    "output": "barrel_mithril_upgrade",
-    "outputQty": 1,
-    "station": "mithril_workbench",
-    "difficulty": 2400,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "mithril_nugget",
-      "mithril_bar",
-      "mithril_nugget",
-      "mithril_bar",
-      "barrel",
-      "mithril_bar",
-      "mithril_nugget",
-      "mithril_bar",
-      "mithril_nugget"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "mithril_nugget",
-        "mithril_bar",
-        "mithril_nugget"
-      ],
-      [
-        "mithril_bar",
-        "barrel",
-        "mithril_bar"
-      ],
-      [
-        "mithril_nugget",
-        "mithril_bar",
-        "mithril_nugget"
-      ]
-    ],
-    "removed_version": "0.6.0"
   },
   {
     "id": "barrel_mithril_upgrade_doc_modern",
@@ -43608,47 +42359,6 @@
     "removed_version": "0.9.0"
   },
   {
-    "id": "barrel_adamantium_upgrade_doc_legacy",
-    "item_num": 990022,
-    "output": "barrel_adamantium_upgrade",
-    "outputQty": 1,
-    "station": "adamantium_workbench",
-    "difficulty": 3200,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "adamantium_nugget",
-      "adamantium_bar",
-      "adamantium_nugget",
-      "adamantium_bar",
-      "barrel",
-      "adamantium_bar",
-      "adamantium_nugget",
-      "adamantium_bar",
-      "adamantium_nugget"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "adamantium_nugget",
-        "adamantium_bar",
-        "adamantium_nugget"
-      ],
-      [
-        "adamantium_bar",
-        "barrel",
-        "adamantium_bar"
-      ],
-      [
-        "adamantium_nugget",
-        "adamantium_bar",
-        "adamantium_nugget"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
     "id": "barrel_adamantium_upgrade_doc_modern",
     "item_num": 991022,
     "output": "barrel_adamantium_upgrade",
@@ -43685,293 +42395,6 @@
     ],
     "added_version": "0.6.0",
     "removed_version": "0.9.0"
-  },
-  {
-    "id": "copper_chest_upgrade_doc_legacy",
-    "item_num": 992100,
-    "output": "copper_chest_upgrade",
-    "outputQty": 1,
-    "station": "copper_workbench",
-    "difficulty": 640,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "copper_nugget",
-      "copper_ingot",
-      "copper_nugget",
-      "copper_ingot",
-      "chest",
-      "copper_ingot",
-      "copper_nugget",
-      "copper_ingot",
-      "copper_nugget"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "copper_nugget",
-        "copper_ingot",
-        "copper_nugget"
-      ],
-      [
-        "copper_ingot",
-        "chest",
-        "copper_ingot"
-      ],
-      [
-        "copper_nugget",
-        "copper_ingot",
-        "copper_nugget"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
-    "id": "silver_chest_upgrade_doc_legacy",
-    "item_num": 992101,
-    "output": "silver_chest_upgrade",
-    "outputQty": 1,
-    "station": "silver_workbench",
-    "difficulty": 960,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "silver_nugget",
-      "silver_ingot",
-      "silver_nugget",
-      "silver_ingot",
-      "chest",
-      "silver_ingot",
-      "silver_nugget",
-      "silver_ingot",
-      "silver_nugget"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "silver_nugget",
-        "silver_ingot",
-        "silver_nugget"
-      ],
-      [
-        "silver_ingot",
-        "chest",
-        "silver_ingot"
-      ],
-      [
-        "silver_nugget",
-        "silver_ingot",
-        "silver_nugget"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
-    "id": "hard_chest_upgrade_doc_legacy",
-    "item_num": 992102,
-    "output": "hard_chest_upgrade",
-    "outputQty": 1,
-    "station": "hardstone_workbench",
-    "difficulty": 1280,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "hardstone_nugget",
-      "hardstone_ingot",
-      "hardstone_nugget",
-      "hardstone_ingot",
-      "chest",
-      "hardstone_ingot",
-      "hardstone_nugget",
-      "hardstone_ingot",
-      "hardstone_nugget"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "hardstone_nugget",
-        "hardstone_ingot",
-        "hardstone_nugget"
-      ],
-      [
-        "hardstone_ingot",
-        "chest",
-        "hardstone_ingot"
-      ],
-      [
-        "hardstone_nugget",
-        "hardstone_ingot",
-        "hardstone_nugget"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
-    "id": "iron_chest_upgrade_doc_legacy",
-    "item_num": 992103,
-    "output": "iron_chest_upgrade",
-    "outputQty": 1,
-    "station": "iron_workbench",
-    "difficulty": 1600,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "iron_nugget",
-      "iron_ingot",
-      "iron_nugget",
-      "iron_ingot",
-      "chest",
-      "iron_ingot",
-      "iron_nugget",
-      "iron_ingot",
-      "iron_nugget"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "iron_nugget",
-        "iron_ingot",
-        "iron_nugget"
-      ],
-      [
-        "iron_ingot",
-        "chest",
-        "iron_ingot"
-      ],
-      [
-        "iron_nugget",
-        "iron_ingot",
-        "iron_nugget"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
-    "id": "gold_chest_upgrade_doc_legacy",
-    "item_num": 992104,
-    "output": "gold_chest_upgrade",
-    "outputQty": 1,
-    "station": "gold_workbench",
-    "difficulty": 2000,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "gold_nugget",
-      "gold_ingot",
-      "gold_nugget",
-      "gold_ingot",
-      "chest",
-      "gold_ingot",
-      "gold_nugget",
-      "gold_ingot",
-      "gold_nugget"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "gold_nugget",
-        "gold_ingot",
-        "gold_nugget"
-      ],
-      [
-        "gold_ingot",
-        "chest",
-        "gold_ingot"
-      ],
-      [
-        "gold_nugget",
-        "gold_ingot",
-        "gold_nugget"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
-    "id": "mithril_chest_upgrade_doc_legacy",
-    "item_num": 992105,
-    "output": "mithril_chest_upgrade",
-    "outputQty": 1,
-    "station": "mithril_workbench",
-    "difficulty": 2400,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "mithril_nugget",
-      "mithril_bar",
-      "mithril_nugget",
-      "mithril_bar",
-      "chest",
-      "mithril_bar",
-      "mithril_nugget",
-      "mithril_bar",
-      "mithril_nugget"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "mithril_nugget",
-        "mithril_bar",
-        "mithril_nugget"
-      ],
-      [
-        "mithril_bar",
-        "chest",
-        "mithril_bar"
-      ],
-      [
-        "mithril_nugget",
-        "mithril_bar",
-        "mithril_nugget"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
-    "id": "adamantium_chest_upgrade_doc_legacy",
-    "item_num": 992106,
-    "output": "adamantium_chest_upgrade",
-    "outputQty": 1,
-    "station": "adamantium_workbench",
-    "difficulty": 3200,
-    "skills": [
-      "blacksmithing"
-    ],
-    "ingredients": [
-      "adamantium_nugget",
-      "adamantium_bar",
-      "adamantium_nugget",
-      "adamantium_bar",
-      "chest",
-      "adamantium_bar",
-      "adamantium_nugget",
-      "adamantium_bar",
-      "adamantium_nugget"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "adamantium_nugget",
-        "adamantium_bar",
-        "adamantium_nugget"
-      ],
-      [
-        "adamantium_bar",
-        "chest",
-        "adamantium_bar"
-      ],
-      [
-        "adamantium_nugget",
-        "adamantium_bar",
-        "adamantium_nugget"
-      ]
-    ],
-    "removed_version": "0.6.0"
   },
   {
     "id": "oak_wood_stairs_shaped",
