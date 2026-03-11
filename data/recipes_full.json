@@ -31958,7 +31958,7 @@
     "output": "sharp_flint_spear",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "sharp_chip",
@@ -31975,7 +31975,7 @@
     "output": "water_bag",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 120,
     "skills": [],
     "ingredients": [
       "sinew",
@@ -33954,7 +33954,7 @@
     "output": "skin_cream_bottle",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 120,
     "skills": [],
     "ingredients": [
       "bone_meal",
@@ -40073,7 +40073,7 @@
     "output": "hard_stick",
     "outputQty": 4,
     "station": "hardstone_workbench",
-    "difficulty": 0,
+    "difficulty": 160,
     "skills": [],
     "ingredients": [
       "hardstone_ingot",
@@ -40179,7 +40179,7 @@
     "output": "template_lantern",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 25,
     "skills": [],
     "ingredients": [
       "iron_nugget",
@@ -40247,7 +40247,7 @@
     "output": "water_bag",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 120,
     "skills": [],
     "ingredients": [
       "string",
@@ -40349,7 +40349,7 @@
     "output": "bedrock_pulverizer",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
+    "difficulty": 48000,
     "skills": [],
     "ingredients": [
       "beacon",
@@ -40630,7 +40630,7 @@
     "output": "big_water_bag",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 160,
     "skills": [],
     "ingredients": [
       "string",
@@ -42766,7 +42766,7 @@
     "output": "wooden_water_filter",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 600,
     "skills": [],
     "ingredients": [
       [
