@@ -23,7 +23,7 @@ function pageToCategory(currentPage: string): Category {
   if (['install', 'introduction', 'quick-start', 'game-modes', 'faq'].includes(currentPage)) return 'start-here';
   if (currentPage === 'progression' || currentPage.startsWith('progression/')) return 'progression';
   if (currentPage === 'systems' || currentPage.startsWith('systems/')) return 'systems';
-  if (['recipes', 'items', 'mobs', 'biomes', 'brewing', 'enchanting', 'reference'].includes(currentPage)) return 'reference';
+  if (['recipes', 'items', 'mobs', 'biomes', 'brewing', 'enchanting', 'reference', 'reference/tables'].includes(currentPage)) return 'reference';
   if (currentPage === 'changelog') return 'updates';
   return 'none';
 }
@@ -86,7 +86,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
           { href: `${base}/biomes/`, label: 'Biome-ok' },
           { href: `${base}/brewing/`, label: 'Főzés' },
           { href: `${base}/enchanting/`, label: 'Bűvölés' },
-          { href: `${base}/reference/`, label: 'Referencia táblák' },
+          { href: `${base}/reference/tables/`, label: 'Referencia táblák' },
         ],
       },
       {
@@ -144,7 +144,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
           { href: `${base}/biomes/`, label: 'Biomes' },
           { href: `${base}/brewing/`, label: 'Brewing' },
           { href: `${base}/enchanting/`, label: 'Enchanting' },
-          { href: `${base}/reference/`, label: 'Reference tables' },
+          { href: `${base}/reference/tables/`, label: 'Reference tables' },
         ],
       },
       {
@@ -202,7 +202,7 @@ export function getSidebarGroups(currentPage: string): SidebarGroups {
           { href: `${base}/biomes/`, label: 'Биомы' },
           { href: `${base}/brewing/`, label: 'Зельеварение' },
           { href: `${base}/enchanting/`, label: 'Зачарование' },
-          { href: `${base}/reference/`, label: 'Справочные таблицы' },
+          { href: `${base}/reference/tables/`, label: 'Справочные таблицы' },
         ],
       },
       {

@@ -14,6 +14,7 @@ mite-be-english/
 mite-be-english.zip
 lang-work/
 reference/
+!src/pages/reference/
 
 # All scripts (internal tooling — not public)
 scripts/

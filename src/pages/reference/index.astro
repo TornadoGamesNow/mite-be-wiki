@@ -1,0 +1,213 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import TopNav from '../../components/TopNav.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import '../../styles/global.css';
+import { getSidebarGroups } from '../../data/sidebar-config.ts';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const sidebarGroups = getSidebarGroups('reference');
+---
+<BaseLayout title="Reference | MITE:BE Wiki" description="MITE:BE reference section: item catalogue, recipes, bestiary, biomes, brewing and reference tables.">
+  <Header />
+  <TopNav currentPage="reference" />
+  <div class="container">
+    <Sidebar groups={sidebarGroups} />
+    <main class="content">
+
+<div data-lang="hu">
+<h2>📚 Referencia</h2>
+<p>Itemkatalógus, crafting receptek, szörnyek, biome-ok, főzőrendszer és referencia táblák.</p>
+
+<div class="hub-grid">
+  <a href={`${base}/items/`} class="hub-card" style="--card-accent: var(--copper)">
+    <div class="hub-card-icon">🎒</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Itemek</div>
+      <div class="hub-card-desc">Teljes itemkatalógus keresővel, kategória- és tier-szűrővel, item leírásokkal.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/recipes/`} class="hub-card" style="--card-accent: var(--accent)">
+    <div class="hub-card-icon">🔧</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Receptek</div>
+      <div class="hub-card-desc">Crafting receptek böngészője — szűrés állomás, skill és nehézség szerint.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/mobs/`} class="hub-card" style="--card-accent: var(--accent)">
+    <div class="hub-card-icon">👾</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Bestiary</div>
+      <div class="hub-card-desc">Szörny enciklopédia — HP, sebzés, XP, dropok, spawnzónák 120+ mob esetén.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/biomes/`} class="hub-card" style="--card-accent: var(--green)">
+    <div class="hub-card-icon">🌍</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Biome-ok</div>
+      <div class="hub-card-desc">Biome jellemzők, erőforrások és veszélyek régiónként.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/brewing/`} class="hub-card" style="--card-accent: #7c3aed">
+    <div class="hub-card-icon">🧪</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Főzőrendszer</div>
+      <div class="hub-card-desc">Főzetek, ingrediensek és a bővített brewing stand receptjei.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/enchanting/`} class="hub-card" style="--card-accent: var(--gold)">
+    <div class="hub-card-icon">✨</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Varázslás</div>
+      <div class="hub-card-desc">Varázslatrendszer, enchantability és a MITE:BE-specifikus varázslatok listája.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/reference/tables/`} class="hub-card" style="--card-accent: #0ea5e9">
+    <div class="hub-card-icon">📊</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Referencia táblák</div>
+      <div class="hub-card-desc">Anyagok enchantability és tartóssági értékei, szita drop ráták, mob statisztikák.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+</div>
+</div>
+
+<div data-lang="en">
+<h2>📚 Reference</h2>
+<p>Item catalogue, crafting recipes, bestiary, biomes, brewing system and reference tables.</p>
+
+<div class="hub-grid">
+  <a href={`${base}/items/`} class="hub-card" style="--card-accent: var(--copper)">
+    <div class="hub-card-icon">🎒</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Items</div>
+      <div class="hub-card-desc">Full item catalogue with search, category and tier filters, and item descriptions.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/recipes/`} class="hub-card" style="--card-accent: var(--accent)">
+    <div class="hub-card-icon">🔧</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Recipes</div>
+      <div class="hub-card-desc">Crafting recipe browser — filter by station, skill and difficulty.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/mobs/`} class="hub-card" style="--card-accent: var(--accent)">
+    <div class="hub-card-icon">👾</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Bestiary</div>
+      <div class="hub-card-desc">Monster encyclopedia — HP, damage, XP, drops, spawn zones for 120+ mobs.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/biomes/`} class="hub-card" style="--card-accent: var(--green)">
+    <div class="hub-card-icon">🌍</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Biomes</div>
+      <div class="hub-card-desc">Biome characteristics, resources and hazards by region.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/brewing/`} class="hub-card" style="--card-accent: #7c3aed">
+    <div class="hub-card-icon">🧪</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Brewing</div>
+      <div class="hub-card-desc">Potions, ingredients and the expanded brewing stand recipes.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/enchanting/`} class="hub-card" style="--card-accent: var(--gold)">
+    <div class="hub-card-icon">✨</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Enchanting</div>
+      <div class="hub-card-desc">Enchanting system, enchantability values and MITE:BE-specific enchantments.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/reference/tables/`} class="hub-card" style="--card-accent: #0ea5e9">
+    <div class="hub-card-icon">📊</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Reference tables</div>
+      <div class="hub-card-desc">Material enchantability and durability values, sieve drop rates, mob statistics.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+</div>
+</div>
+
+<div data-lang="ru">
+<h2>📚 Справочник</h2>
+<p>Каталог предметов, рецепты крафта, бестиарий, биомы, система зельеварения и справочные таблицы.</p>
+
+<div class="hub-grid">
+  <a href={`${base}/items/`} class="hub-card" style="--card-accent: var(--copper)">
+    <div class="hub-card-icon">🎒</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Предметы</div>
+      <div class="hub-card-desc">Полный каталог предметов с поиском, фильтрами по категории и уровню.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/recipes/`} class="hub-card" style="--card-accent: var(--accent)">
+    <div class="hub-card-icon">🔧</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Рецепты</div>
+      <div class="hub-card-desc">Браузер рецептов крафта — фильтрация по станции, навыку и сложности.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/mobs/`} class="hub-card" style="--card-accent: var(--accent)">
+    <div class="hub-card-icon">👾</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Бестиарий</div>
+      <div class="hub-card-desc">Энциклопедия монстров — HP, урон, XP, дропы, зоны спавна для 120+ мобов.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/biomes/`} class="hub-card" style="--card-accent: var(--green)">
+    <div class="hub-card-icon">🌍</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Биомы</div>
+      <div class="hub-card-desc">Характеристики биомов, ресурсы и опасности по регионам.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/brewing/`} class="hub-card" style="--card-accent: #7c3aed">
+    <div class="hub-card-icon">🧪</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Зельеварение</div>
+      <div class="hub-card-desc">Зелья, ингредиенты и расширенные рецепты стойки для зелий.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/enchanting/`} class="hub-card" style="--card-accent: var(--gold)">
+    <div class="hub-card-icon">✨</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Зачарование</div>
+      <div class="hub-card-desc">Система зачарований, значения enchantability и специфичные для MITE:BE зачарования.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+  <a href={`${base}/reference/tables/`} class="hub-card" style="--card-accent: #0ea5e9">
+    <div class="hub-card-icon">📊</div>
+    <div class="hub-card-body">
+      <div class="hub-card-title">Справочные таблицы</div>
+      <div class="hub-card-desc">Значения enchantability и прочности материалов, шансы выпадения из сита, статистики мобов.</div>
+    </div>
+    <div class="hub-card-arrow">→</div>
+  </a>
+</div>
+</div>
+
+    </main>
+  </div>
+</BaseLayout>
