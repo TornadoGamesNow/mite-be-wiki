@@ -11600,5 +11600,135 @@
     "tier": "obsidian",
     "category": "tool",
     "max_durability": 800
+  },
+  "copper_bars": {
+    "name": {
+      "hu": "Réz Rács",
+      "en": "Copper Bars",
+      "ru": "Медные прутья"
+    },
+    "img": "img/blocks/copper_bars.png",
+    "tier": "copper",
+    "category": "block"
+  },
+  "silver_bars": {
+    "name": {
+      "hu": "Ezüst Rács",
+      "en": "Silver Bars",
+      "ru": "Серебряные прутья"
+    },
+    "img": "img/blocks/silver_bars.png",
+    "tier": "silver",
+    "category": "block"
+  },
+  "gold_bars": {
+    "name": {
+      "hu": "Arany Rács",
+      "en": "Golden Bars",
+      "ru": "Золотые прутья"
+    },
+    "img": "img/blocks/gold_bars.png",
+    "tier": "gold",
+    "category": "block"
+  },
+  "mithril_bars": {
+    "name": {
+      "hu": "Mithril Rács",
+      "en": "Mithril Bars",
+      "ru": "Митриловые прутья"
+    },
+    "img": "img/blocks/mithril_bars.png",
+    "tier": "mithril",
+    "category": "block"
+  },
+  "adamantium_bars": {
+    "name": {
+      "hu": "Adamantium Rács",
+      "en": "Adamantium Bars",
+      "ru": "Адамантиевые прутья"
+    },
+    "img": "img/blocks/adamantium_bars.png",
+    "tier": "adamantium",
+    "category": "block"
+  },
+  "ancient_metal_bars": {
+    "name": {
+      "hu": "Ősfém Rács",
+      "en": "Ancient Metal Bars",
+      "ru": "Древнеметаллические прутья"
+    },
+    "img": "img/blocks/ancient_metal_bars.png",
+    "tier": "ancient_metal",
+    "category": "block"
+  },
+  "copper_strongbox": {
+    "name": {
+      "hu": "Réz Páncélszekrény",
+      "en": "Copper Strongbox",
+      "ru": "Медный сейф"
+    },
+    "img": "img/items/copper_strongbox.png",
+    "tier": "copper",
+    "category": "station"
+  },
+  "silver_strongbox": {
+    "name": {
+      "hu": "Ezüst Páncélszekrény",
+      "en": "Silver Strongbox",
+      "ru": "Серебряный сейф"
+    },
+    "img": "img/items/silver_strongbox.png",
+    "tier": "silver",
+    "category": "station"
+  },
+  "gold_strongbox": {
+    "name": {
+      "hu": "Arany Páncélszekrény",
+      "en": "Golden Strongbox",
+      "ru": "Золотой сейф"
+    },
+    "img": "img/items/gold_strongbox.png",
+    "tier": "gold",
+    "category": "station"
+  },
+  "iron_strongbox": {
+    "name": {
+      "hu": "Vas Páncélszekrény",
+      "en": "Iron Strongbox",
+      "ru": "Железный сейф"
+    },
+    "img": "img/items/iron_strongbox.png",
+    "tier": "iron",
+    "category": "station"
+  },
+  "mithril_strongbox": {
+    "name": {
+      "hu": "Mithril Páncélszekrény",
+      "en": "Mithril Strongbox",
+      "ru": "Митриловый сейф"
+    },
+    "img": "img/items/mithril_strongbox.png",
+    "tier": "mithril",
+    "category": "station"
+  },
+  "adamantium_strongbox": {
+    "name": {
+      "hu": "Adamantium Páncélszekrény",
+      "en": "Adamantium Strongbox",
+      "ru": "Адамантиевый сейф"
+    },
+    "img": "img/items/adamantium_strongbox.png",
+    "tier": "adamantium",
+    "category": "station"
+  },
+  "ancient_metal_strongbox": {
+    "name": {
+      "hu": "Ősfém Páncélszekrény",
+      "en": "Ancient Metal Strongbox",
+      "ru": "Древнеметаллический сейф"
+    },
+    "img": "img/items/ancient_metal_strongbox.png",
+    "tier": "ancient_metal",
+    "category": "station"
   }
 }
