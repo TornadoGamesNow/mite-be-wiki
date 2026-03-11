@@ -2739,10 +2739,9 @@
       "masonry"
     ],
     "ingredients": [
-      "netherrack",
-      "coal"
+      "netherrack"
     ],
-    "shaped": true
+    "shaped": false
   },
   {
     "id": "nether_brick_fence_145",
@@ -4184,35 +4183,15 @@
     "item_num": 172,
     "output": "hardened_clay",
     "outputQty": 1,
-    "station": "flint_workbench",
+    "station": "stone_furnace",
     "difficulty": 400,
     "skills": [
       "masonry"
     ],
     "ingredients": [
-      "brick",
-      "brick",
-      "brick",
-      "brick"
+      "clay_block"
     ],
-    "shaped": true,
-    "pattern": [
-      [
-        "brick",
-        "brick",
-        "_"
-      ],
-      [
-        "brick",
-        "brick",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
+    "shaped": false
   },
   {
     "id": "coal_block_213",
@@ -7328,10 +7307,9 @@
       "masonry"
     ],
     "ingredients": [
-      "clay_ball",
-      "coal"
+      "clay_ball"
     ],
-    "shaped": true
+    "shaped": false
   },
   {
     "id": "paper_309",
@@ -10282,7 +10260,25 @@
       "gold_ingot",
       "gold_war_hammer"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "gold_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "gold_war_hammer",
+        "_"
+      ]
+    ],
+    "added_version": "0.6.0"
   },
   {
     "id": "gold_nugget_459",
@@ -11932,7 +11928,25 @@
       "silver_ingot",
       "silver_war_hammer"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "silver_ingot",
+        "_"
+      ],
+      [
+        "_",
+        "silver_war_hammer",
+        "_"
+      ]
+    ],
+    "added_version": "0.6.0"
   },
   {
     "id": "silver_nugget_553",
@@ -12678,7 +12692,25 @@
       "mithril_ore",
       "mithril_war_hammer"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "mithril_ore",
+        "_"
+      ],
+      [
+        "_",
+        "mithril_war_hammer",
+        "_"
+      ]
+    ],
+    "added_version": "0.6.0"
   },
   {
     "id": "mithril_nugget_601",
@@ -12705,7 +12737,24 @@
     "ingredients": [
       "mithril_chain"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "mithril_chain",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "mithril_nugget_603",
@@ -12718,7 +12767,24 @@
     "ingredients": [
       "mithril_arrow"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "mithril_arrow",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "mithril_nugget_604",
@@ -12731,7 +12797,24 @@
     "ingredients": [
       "mithril_coin"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "mithril_coin",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "mithril_nugget_605",
@@ -12933,7 +13016,25 @@
       "adamantium_ore",
       "adamantium_war_hammer"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "adamantium_ore",
+        "_"
+      ],
+      [
+        "_",
+        "adamantium_war_hammer",
+        "_"
+      ]
+    ],
+    "added_version": "0.6.0"
   },
   {
     "id": "adamantium_nugget_615",
@@ -12946,7 +13047,24 @@
     "ingredients": [
       "adamantium_chain"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "adamantium_chain",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "adamantium_nugget_616",
@@ -12959,7 +13077,24 @@
     "ingredients": [
       "adamantium_arrow"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "adamantium_arrow",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "adamantium_nugget_617",
@@ -12972,7 +13107,24 @@
     "ingredients": [
       "adamantium_coin"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "adamantium_coin",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "adamantium_nugget_618",
@@ -22023,7 +22175,24 @@
       "wheat",
       "wheat"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "wheat",
+        "wheat",
+        "wheat"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "dough_958",
@@ -22317,7 +22486,24 @@
       "iron_bucket_filled_with_water",
       "flour"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "flour",
+        "_"
+      ],
+      [
+        "_",
+        "iron_bucket_filled_with_water",
+        "_"
+      ]
+    ]
   },
   {
     "id": "dough_976",
@@ -23038,24 +23224,6 @@
         "_"
       ]
     ]
-  },
-  {
-    "id": "ice_cream_1014",
-    "item_num": 1206,
-    "output": "ice_cream",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 100,
-    "skills": [
-      "foodPreparation"
-    ],
-    "ingredients": [
-      "cocoa_beans",
-      "sugar",
-      "bowl_milk",
-      "snowball"
-    ],
-    "shaped": false
   },
   {
     "id": "fishing_rod_flint_1015",
@@ -24507,7 +24675,24 @@
       "rotten_flesh",
       "rotten_flesh"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "rotten_flesh",
+        "rotten_flesh",
+        "_"
+      ],
+      [
+        "rotten_flesh",
+        "rotten_flesh",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "ice_cream_cone_1064",
@@ -24595,7 +24780,24 @@
       "sugar",
       "sugar"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "sugar",
+        "sugar",
+        "_"
+      ],
+      [
+        "sugar",
+        "sugar",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "lotus_seed_soup_1067",
@@ -24647,7 +24849,24 @@
       "raw_fish",
       "raw_fish"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "raw_fish",
+        "raw_fish",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "fish_ball_1069",
@@ -26471,7 +26690,25 @@
       "string",
       "stick"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "sharp_chip"
+      ],
+      [
+        "_",
+        "stick",
+        "string"
+      ],
+      [
+        "stick",
+        "_",
+        "_"
+      ]
+    ],
+    "added_version": "0.5.6"
   },
   {
     "id": "quiver_1141",
@@ -34728,14 +34965,14 @@
     "shaped": true,
     "pattern": [
       [
-        "mushroom_brown",
-        "_",
-        "mushroom_brown"
-      ],
-      [
         "_",
         "_",
         "_"
+      ],
+      [
+        "mushroom_brown",
+        "_",
+        "mushroom_brown"
       ],
       [
         "_",
@@ -34867,7 +35104,24 @@
       "string",
       "stick"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "flint",
+        "string"
+      ],
+      [
+        "_",
+        "stick",
+        "_"
+      ]
+    ]
   },
   {
     "id": "big_water_bag_831586",
@@ -36138,39 +36392,6 @@
     "shaped": false
   },
   {
-    "id": "latiao_841177",
-    "item_num": 841177,
-    "output": "latiao",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "rotten_flesh",
-      "rotten_flesh",
-      "rotten_flesh",
-      "rotten_flesh"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "rotten_flesh",
-        "rotten_flesh",
-        "_"
-      ],
-      [
-        "rotten_flesh",
-        "rotten_flesh",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
     "id": "wheat_soup_841179",
     "item_num": 841179,
     "output": "wheat_soup",
@@ -36205,39 +36426,6 @@
     "added_version": "0.5.6"
   },
   {
-    "id": "sugar_block_841180",
-    "item_num": 841180,
-    "output": "sugar_block",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "sugar",
-      "sugar",
-      "sugar",
-      "sugar"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "sugar",
-        "sugar",
-        "_"
-      ],
-      [
-        "sugar",
-        "sugar",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
     "id": "lotus_seed_soup_841181",
     "item_num": 841181,
     "output": "lotus_seed_soup",
@@ -36270,37 +36458,6 @@
       ]
     ],
     "added_version": "0.5.6"
-  },
-  {
-    "id": "fish_ball_841182",
-    "item_num": 841182,
-    "output": "fish_ball",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "raw_fish",
-      "raw_fish"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "raw_fish",
-        "raw_fish",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
   },
   {
     "id": "hardstone_nugget_841195",
@@ -36467,20 +36624,6 @@
     ]
   },
   {
-    "id": "hot_water_841202",
-    "item_num": 841202,
-    "output": "hot_water",
-    "outputQty": 1,
-    "station": "stone_furnace",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "water_bowl",
-      "coal"
-    ],
-    "shaped": false
-  },
-  {
     "id": "sugar_soup_841203",
     "item_num": 841203,
     "output": "sugar_soup",
@@ -36549,31 +36692,15 @@
     "item_num": 841206,
     "output": "mercury_ingot",
     "outputQty": 1,
-    "station": "mithril_workbench",
+    "station": "stone_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "mining"
+    ],
     "ingredients": [
-      "mercury_ore",
-      "coal"
+      "mercury_ore"
     ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "mercury_ore"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "coal"
-      ]
-    ],
+    "shaped": false,
     "added_version": "0.6.0"
   },
   {
@@ -37144,38 +37271,6 @@
     ]
   },
   {
-    "id": "flint_knife_841245",
-    "item_num": 841245,
-    "output": "flint_knife",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "flint",
-      "string",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "flint",
-        "string"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ]
-  },
-  {
     "id": "flint_knife_841246",
     "item_num": 841246,
     "output": "flint_knife",
@@ -37484,38 +37579,6 @@
     "added_version": "0.6.0"
   },
   {
-    "id": "silver_nugget_841256",
-    "item_num": 841256,
-    "output": "silver_nugget",
-    "outputQty": 9,
-    "station": "silver_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "silver_ingot",
-      "silver_war_hammer"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "silver_ingot",
-        "_"
-      ],
-      [
-        "_",
-        "silver_war_hammer",
-        "_"
-      ]
-    ],
-    "added_version": "0.6.0"
-  },
-  {
     "id": "gold_nugget_841257",
     "item_num": 841257,
     "output": "gold_nugget",
@@ -37544,38 +37607,6 @@
         "_"
       ]
     ]
-  },
-  {
-    "id": "gold_nugget_841258",
-    "item_num": 841258,
-    "output": "gold_nugget",
-    "outputQty": 9,
-    "station": "gold_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "gold_ingot",
-      "gold_war_hammer"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "gold_ingot",
-        "_"
-      ],
-      [
-        "_",
-        "gold_war_hammer",
-        "_"
-      ]
-    ],
-    "added_version": "0.6.0"
   },
   {
     "id": "gold_nugget_841259",
@@ -37730,38 +37761,6 @@
     ]
   },
   {
-    "id": "mithril_nugget_841265",
-    "item_num": 841265,
-    "output": "mithril_nugget",
-    "outputQty": 12,
-    "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "mithril_ore",
-      "mithril_war_hammer"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "mithril_ore",
-        "_"
-      ],
-      [
-        "_",
-        "mithril_war_hammer",
-        "_"
-      ]
-    ],
-    "added_version": "0.6.0"
-  },
-  {
     "id": "mithril_nugget_841266",
     "item_num": 841266,
     "output": "mithril_nugget",
@@ -37788,218 +37787,6 @@
       [
         "_",
         "mithril_war_hammer",
-        "_"
-      ]
-    ],
-    "added_version": "0.6.0"
-  },
-  {
-    "id": "mithril_nugget_841267",
-    "item_num": 841267,
-    "output": "mithril_nugget",
-    "outputQty": 4,
-    "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "mithril_chain"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "mithril_chain",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "mithril_nugget_841268",
-    "item_num": 841268,
-    "output": "mithril_nugget",
-    "outputQty": 1,
-    "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "mithril_arrow"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "mithril_arrow",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "mithril_nugget_841269",
-    "item_num": 841269,
-    "output": "mithril_nugget",
-    "outputQty": 1,
-    "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "mithril_coin"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "mithril_coin",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "adamantium_nugget_841270",
-    "item_num": 841270,
-    "output": "adamantium_nugget",
-    "outputQty": 4,
-    "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "adamantium_chain"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "adamantium_chain",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "adamantium_nugget_841271",
-    "item_num": 841271,
-    "output": "adamantium_nugget",
-    "outputQty": 1,
-    "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "adamantium_arrow"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "adamantium_arrow",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "adamantium_nugget_841272",
-    "item_num": 841272,
-    "output": "adamantium_nugget",
-    "outputQty": 1,
-    "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "adamantium_coin"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "adamantium_coin",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "adamantium_nugget_841273",
-    "item_num": 841273,
-    "output": "adamantium_nugget",
-    "outputQty": 12,
-    "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "adamantium_ore",
-      "adamantium_war_hammer"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "adamantium_ore",
-        "_"
-      ],
-      [
-        "_",
-        "adamantium_war_hammer",
         "_"
       ]
     ],
@@ -40824,38 +40611,6 @@
     ]
   },
   {
-    "id": "flour_841361",
-    "item_num": 841361,
-    "output": "flour",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "wheat",
-      "wheat",
-      "wheat"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "wheat",
-        "wheat",
-        "wheat"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
     "id": "tin_plate_841366",
     "item_num": 841366,
     "output": "tin_plate",
@@ -41885,37 +41640,6 @@
     ]
   },
   {
-    "id": "brick_841401",
-    "item_num": 841401,
-    "output": "brick",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "clay_ball",
-      "coal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "clay_ball",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
-  },
-  {
     "id": "flint_841403",
     "item_num": 841403,
     "output": "flint",
@@ -42436,31 +42160,16 @@
     "item_num": 841420,
     "output": "glass",
     "outputQty": 1,
-    "station": "flint_workbench",
+    "station": "stone_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
-      "sand_stone",
-      "coal"
+      "sand",
+      "sand"
     ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "sand_stone",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ],
+    "shaped": false,
     "added_version": "0.6.0"
   },
   {
@@ -42503,33 +42212,20 @@
   {
     "id": "sand_stone_841422",
     "item_num": 841422,
-    "output": "sand_stone",
+    "output": "sandstone",
     "outputQty": 1,
-    "station": "flint_workbench",
+    "station": "stone_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "sand",
-      "coal"
+      "sand",
+      "sand",
+      "sand"
     ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "sand",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ],
+    "shaped": false,
     "added_version": "0.6.0"
   },
   {
@@ -42802,69 +42498,6 @@
     "added_version": "0.6.0"
   },
   {
-    "id": "chocolate_841444",
-    "item_num": 841444,
-    "output": "chocolate",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "sugar",
-      "cocoa_beans"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "sugar",
-        "_"
-      ],
-      [
-        "_",
-        "cocoa_beans",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "bowl_cream_of_mushroom_soup_841445",
-    "item_num": 841445,
-    "output": "bowl_cream_of_mushroom_soup",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "mushroom_brown",
-      "mushroom_brown",
-      "bowl_milk"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "mushroom_brown",
-        "_",
-        "mushroom_brown"
-      ],
-      [
-        "_",
-        "bowl_milk",
-        "_"
-      ]
-    ]
-  },
-  {
     "id": "mashed_potato_841447",
     "item_num": 841447,
     "output": "mashed_potato",
@@ -42892,37 +42525,6 @@
       [
         "_",
         "bowl_milk",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "dough_841449",
-    "item_num": 841449,
-    "output": "dough",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "flour",
-      "iron_bucket_filled_with_water"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "flour",
-        "_"
-      ],
-      [
-        "_",
-        "iron_bucket_filled_with_water",
         "_"
       ]
     ]
@@ -43029,40 +42631,6 @@
         "_",
         "stick",
         "sinew"
-      ],
-      [
-        "stick",
-        "_",
-        "_"
-      ]
-    ],
-    "added_version": "0.5.6"
-  },
-  {
-    "id": "flint_spear_841453",
-    "item_num": 841453,
-    "output": "sharp_flint_spear",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "sharp_chip",
-      "stick",
-      "string",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "_",
-        "sharp_chip"
-      ],
-      [
-        "_",
-        "stick",
-        "string"
       ],
       [
         "stick",
@@ -45670,5 +45238,20 @@
       ]
     ],
     "added_version": "0.5.6"
+  },
+  {
+    "id": "tin_ingot_841500",
+    "item_num": 0,
+    "output": "tin_ingot",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 0,
+    "skills": [
+      "mining"
+    ],
+    "ingredients": [
+      "ore_tin"
+    ],
+    "shaped": false
   }
 ]
