@@ -54,7 +54,7 @@ const sidebarGroups = getSidebarGroups('brewing');
     <div class="craft-grid g3x3">
       <div class="craft-slot empty"></div>
       <div class="craft-slot">
-        <div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#e94560">Blaze-rúd (Blaze Rod)</div><div class="tt-name" data-lang="en" style="color:#e94560">Blaze Rod</div><div class="tt-desc" data-lang="hu">Blaze dobja (Alvilág)</div><div class="tt-desc" data-lang="en">Dropped by Blaze (Nether)</div></div>
+        <div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#e94560">Blaze Pálca</div><div class="tt-name" data-lang="en" style="color:#e94560">Blaze Rod</div><div class="tt-desc" data-lang="hu">Blaze dobja (Alvilág)</div><div class="tt-desc" data-lang="en">Dropped by Blaze (Nether)</div></div>
         <img src={`${base}/img/items/blaze_rod.png`} alt="" onerror="this.style.opacity=.3">
       </div>
       <div class="craft-slot empty"></div>
@@ -88,7 +88,7 @@ const sidebarGroups = getSidebarGroups('brewing');
 <p>A bájitalfőzés folyamata:</p>
 <ol>
   <li><strong>Vizespalack</strong> → Akármelyik vízforrásból (üvegpalack + víz)</li>
-  <li>Vizespalack a főzőállványba + <strong>alvilági szemölcs (Nether Wart)</strong> → Zavaros bájital (Awkward Potion)</li>
+  <li>Vizespalack a főzőállványba + <strong>alvilági szemölcs</strong> → Zavaros bájital (Awkward Potion)</li>
   <li>Zavaros bájital + hatóanyag → kész bájital</li>
   <li>Opcionális: + <strong>lőpor</strong> → Fröccsenő (Splash) változat</li>
 </ol>
@@ -550,21 +550,21 @@ Splash duration ≈ base × 75%. II and extended splash variants also exist.</p>
 <h2 id="brewing-stand">Стойка для зелий</h2>
 <p>Для создания стойки для зелий нужен <strong>Кремнёвый верстак</strong> или верстак более высокого тира:</p>
 <ul>
-  <li><strong>Ингредиенты:</strong> 1× Стержень Блейза + 3× Булыжник</li>
+  <li><strong>Ингредиенты:</strong> 1× Стержень Бласта + 3× Булыжник</li>
   <li><strong>Станция:</strong> Кремнёвый верстак или выше</li>
 </ul>
 
 <p>Процесс зельеварения:</p>
 <ol>
   <li><strong>Бутылка с водой</strong> → наберите воду в стеклянную бутылку из любого источника</li>
-  <li>Поместите бутылку с водой в стойку и добавьте <strong>Адский гриб (Nether Wart)</strong> → получится Неловкое зелье</li>
+  <li>Поместите бутылку с водой в стойку и добавьте <strong>адский нарост</strong> → получится Неловкое зелье</li>
   <li>Неловкое зелье + ингредиент → готовое зелье</li>
   <li>По желанию: добавьте <strong>Порох</strong> → получится взрывной вариант</li>
 </ol>
 
 <h4>Шаг 1 — Основа: Неловкое зелье</h4>
 <BrewingGrid
-  ingredient="Адский гриб"
+  ingredient="Адский нарост"
   ingredientImg="img/items/nether_wart.png"
   inputLabel="Бутылка с водой × 3"
   inputImg="img/items/glass_bottle.png"

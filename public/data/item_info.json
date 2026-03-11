@@ -105,7 +105,7 @@
   },
   "diamond": {
     "mcmod_id": 772245,
-    "desc": "Diamond with an added right-click XP use: consuming one grants 500 XP. Diamond ore can also be processed through the Large Furnace route in local 0.6.0+ data.",
+    "desc": "Diamond with an added right-click XP use: consuming one grants 500 XP. In v0.6.0+, diamond ore can also be processed through the Large Furnace route.",
     "versions": [
       "v0.6.0: Diamond ore can also yield diamonds through Large Furnace processing."
     ],
@@ -124,7 +124,7 @@
   },
   "emerald": {
     "mcmod_id": 772247,
-    "desc": "Emerald with an added right-click XP use: consuming one grants 250 XP. Emerald ore can also be processed through the Large Furnace route in local 0.6.0+ data.",
+    "desc": "Emerald with an added right-click XP use: consuming one grants 250 XP. In v0.6.0+, emerald ore can also be processed through the Large Furnace route.",
     "versions": [
       "v0.6.0: Emerald ore can also yield emeralds through Large Furnace processing."
     ],
@@ -162,26 +162,26 @@
   },
   "hardstone_ingot": {
     "mcmod_id": 446432,
-    "desc": "Hardstone ingot produced from hardstone ore or nuggets through the Large Furnace and Obsidian Template route.",
+    "desc": "Hardstone ingot produced from hardstone ore or nuggets through the Large Furnace and Obsidian Ingot Mould route.",
     "versions": [
       "v0.6.0: The direct 9 nuggets to 1 hardstone ingot recipe was removed."
     ],
     "desc_en": "Hardstone ingot produced from hardstone ore or nuggets through the Large Furnace and Obsidian Ingot Mould route.",
     "desc_hu": "Keménykőrúd, amely keménykőércből vagy szemcséből készül a Nagy Kemence + Obszidián Öntőforma útvonalon.",
-    "desc_ru": "Слиток твердокамня, получаемый из руды или самородков hardstone через Большую печь и обсидиановую форму.",
+    "desc_ru": "Слиток твердокамня, получаемый из руды или самородков твердокамня через Большую печь и обсидиановую форму.",
     "versions_en": [
       "v0.6.0: The direct 9 nuggets to 1 hardstone ingot recipe was removed."
     ],
     "versions_hu": [
-      "v0.6.0: Kikerült a közvetlen 9 szemcse -> 1 kőmagrúd recept."
+      "v0.6.0: Kikerült a közvetlen 9 szemcse -> 1 keménykőrúd recept."
     ],
     "versions_ru": [
-      "v0.6.0: Прямой рецепт 9 самородков -> 1 слиток hardstone был удалён."
+      "v0.6.0: Прямой рецепт 9 самородков -> 1 слиток твердокамня был удалён."
     ]
   },
   "copper_nugget": {
     "mcmod_id": 772897,
-    "desc": "Copper nugget mainly obtained from gravel processing. In local 0.6.0+ data it feeds the Large Furnace plus Obsidian Template route for copper ingots.",
+    "desc": "Copper nugget mainly obtained from gravel processing. In v0.6.0+, it feeds the Large Furnace plus Obsidian Ingot Mould route for copper ingots.",
     "versions": [
       "v0.6.0: The direct 9 nuggets to 1 copper ingot recipe was removed."
     ],
@@ -200,7 +200,7 @@
   },
   "silver_nugget": {
     "mcmod_id": 772898,
-    "desc": "Silver nugget mainly obtained from gravel processing. In local 0.6.0+ data it feeds the Large Furnace plus Obsidian Template route for silver ingots.",
+    "desc": "Silver nugget mainly obtained from gravel processing. In v0.6.0+, it feeds the Large Furnace plus Obsidian Ingot Mould route for silver ingots.",
     "versions": [
       "v0.6.0: The direct 9 nuggets to 1 silver ingot recipe was removed."
     ],
@@ -219,7 +219,7 @@
   },
   "iron_nugget": {
     "mcmod_id": 772900,
-    "desc": "Iron nugget used in the Large Furnace plus Obsidian Template route for iron ingots in local 0.6.0+ data.",
+    "desc": "Iron nugget used in the Large Furnace plus Obsidian Ingot Mould route for iron ingots in v0.6.0+.",
     "versions": [
       "v0.6.0: The direct 9 nuggets to 1 iron ingot recipe was removed."
     ],
@@ -238,7 +238,7 @@
   },
   "gold_nugget": {
     "mcmod_id": 772899,
-    "desc": "Gold nugget used in the Large Furnace plus Obsidian Template route for gold ingots in local 0.6.0+ data.",
+    "desc": "Gold nugget used in the Large Furnace plus Obsidian Ingot Mould route for gold ingots in v0.6.0+.",
     "versions": [
       "v0.6.0: The direct 9 nuggets to 1 gold ingot recipe was removed."
     ],
@@ -257,7 +257,7 @@
   },
   "mithril_nugget": {
     "mcmod_id": 772902,
-    "desc": "Mithril nugget used in the Large Furnace plus Obsidian Template route for mithril ingots in local 0.6.0+ data.",
+    "desc": "Mithril nugget used in the Large Furnace plus Obsidian Ingot Mould route for mithril ingots in v0.6.0+.",
     "versions": [
       "v0.6.0: The direct 9 nuggets to 1 mithril ingot recipe was removed."
     ],
@@ -276,7 +276,7 @@
   },
   "adamantium_nugget": {
     "mcmod_id": 772903,
-    "desc": "Adamantium nugget used in the Large Furnace plus Obsidian Template route for adamantium ingots in local 0.6.0+ data.",
+    "desc": "Adamantium nugget used in the Large Furnace plus Obsidian Ingot Mould route for adamantium ingots in v0.6.0+.",
     "versions": [
       "v0.6.0: The direct 9 nuggets to 1 adamantium ingot recipe was removed."
     ],
@@ -2280,24 +2280,24 @@
   },
   "adamantium_ore": {
     "mcmod_id": 772950,
-    "desc": "Deep Underground adamantium ore. Local 0.6.0+ data routes adamantium ingots through the Large Furnace and Obsidian Template process.",
+    "desc": "Deep Underground adamantium ore. In v0.6.0+, adamantium ingots go through the Large Furnace and Obsidian Ingot Mould process.",
     "versions": [
       "v0.5.7: Hard Mode reduced the per-vein spawn count.",
-      "v0.6.0: Adamantium ingots switched to the Large Furnace plus Obsidian Template route."
+      "v0.6.0: Adamantium ingots switched to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "desc_en": "Deep Underground adamantium ore. In v0.6.0+, adamantium ingots are produced through the Large Furnace and Obsidian Ingot Mould process.",
     "desc_hu": "Mély földalatti adamantiumérc. A helyi 0.6.0+ adatokban az adamantiumrúd a Nagy Kemence + Obszidián Öntőforma útvonalon készül.",
     "desc_ru": "Глубинная адамантиевая руда Подземного мира. По локальным данным 0.6.0+ адамантиевые слитки получают через Большую печь и обсидиановую форму.",
     "versions_en": [
       "v0.5.7: Hard Mode reduced the per-vein spawn count.",
-      "v0.6.0: Adamantium ingots switched to the Large Furnace plus Obsidian Template route."
+      "v0.6.0: Adamantium ingots switched to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "versions_hu": [
-      "v0.5.7: Hard Mode-ban csökkent az egy ereben megjelenő darabszám.",
+      "v0.5.7: Hardcore módban csökkent az egy érben megjelenő darabszám.",
       "v0.6.0: Az adamantiumrúd a Nagy Kemence + Obszidián Öntőforma útvonalra váltott."
     ],
     "versions_ru": [
-      "v0.5.7: В Hard Mode уменьшили количество руды в одной жиле.",
+      "v0.5.7: В Hardcore-режиме уменьшили количество руды в одной жиле.",
       "v0.6.0: Адамантиевые слитки перевели на схему Большая печь + обсидиановая форма."
     ]
   },
@@ -2381,7 +2381,7 @@
   },
   "ancient_metal_nugget": {
     "mcmod_id": 772901,
-    "desc": "Ancient Metal nugget used for coins, chains, arrows, and Large Furnace metal processing. Local data still shows it as a recyclable sub-material rather than a simple direct-ingot step.",
+    "desc": "Ancient Metal nugget used for coins, chains, arrows, and Large Furnace metal processing. Current data still treats it as a recyclable sub-material rather than a simple direct-ingot step.",
     "versions": [
       "v0.6.0: The direct 9 nuggets to 1 ingot recipe was removed."
     ],
@@ -2656,15 +2656,15 @@
   },
   "copper_ore": {
     "mcmod_id": 772947,
-    "desc": "Base copper ore. In local 0.6.0+ data, copper is obtained by Large Furnace smelting and Obsidian Template cooling rather than direct early-furnace progression.",
+    "desc": "Base copper ore. In v0.6.0+, copper is obtained by Large Furnace smelting and Obsidian Ingot Mould cooling rather than direct early-furnace progression.",
     "versions": [
-      "v0.6.0: Copper ingots switched to the Large Furnace plus Obsidian Template route."
+      "v0.6.0: Copper ingots switched to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "desc_en": "Base copper ore. In v0.6.0+, copper is obtained through Large Furnace smelting and Obsidian Ingot Mould cooling rather than the old early-furnace route.",
     "desc_hu": "Alap rézérc. A helyi 0.6.0+ adatokban a réz a Nagy Kemence + Obszidián Öntőforma útvonalon készül, nem a korai közvetlen kemencés rendszerben.",
     "desc_ru": "Базовая медная руда. По локальным данным 0.6.0+ медь получают через Большую печь и охлаждение в обсидиановой форме, а не по старой прямой печной схеме.",
     "versions_en": [
-      "v0.6.0: Copper ingots switched to the Large Furnace plus Obsidian Template route."
+      "v0.6.0: Copper ingots switched to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "versions_hu": [
       "v0.6.0: A rézrúd a Nagy Kemence + Obszidián Öntőforma útvonalra váltott."
@@ -2965,7 +2965,7 @@
     "mcmod_id": 772000,
     "desc": "Crafted from nine Hardstone Ingots. Can be used to craft Hardstone Anvils. Can be used as a beacon base.",
     "desc_en": "Crafted from nine Hardstone Ingots. Can be used to craft Hardstone Anvils. Can be used as a beacon base.",
-    "desc_hu": "Kilenc Keménykő tuskóból készült. Keménykő üllők készítésére használható. Használható jeladó alapként.",
+    "desc_hu": "Kilenc Keménykőrúdból készült. Keménykő üllők készítésére használható. Használható jeladó alapként.",
     "desc_ru": "Создаётся из девяти твердокаменных слитков. Используется для крафта твердокаменной наковальни и подходит как основание для маяка."
   },
   "hardstone_coin": {
@@ -2983,7 +2983,7 @@
     ],
     "desc_en": "Hardstone nugget obtained from gravel processing and hardstone recycling routes. It also feeds the hardstone coin and Large Furnace processing chain.",
     "desc_hu": "Keménykőrög, amely kavicsfeldolgozásból és keménykő-újrahasznosításból származhat. A keménykő érme és a Nagy Kemence feldolgozási láncának is alapanyaga.",
-    "desc_ru": "Твердокаменная крупица из обработки гравия и путей переработки hardstone. Также используется для монеты из твердокамня и линии обработки через Большую печь.",
+    "desc_ru": "Твердокаменная крупица из обработки гравия и путей переработки твердокамня. Также используется для монеты из твердокамня и линии обработки через Большую печь.",
     "versions_en": [
       "v0.6.0: The direct 9 nuggets to 1 ingot recipe was removed."
     ],
@@ -2996,21 +2996,21 @@
   },
   "hardstone_ore": {
     "mcmod_id": 771999,
-    "desc": "Hardstone ore found in the Underground and deep overworld layers. In local 0.6.0+ data, hardstone is routed through nugget processing and the Large Furnace plus Obsidian Template path.",
+    "desc": "Hardstone ore found in the Underground and deep overworld layers. In v0.6.0+, hardstone goes through nugget processing and the Large Furnace plus Obsidian Ingot Mould path.",
     "versions": [
-      "v0.6.0: Hardstone ingots switched to the Large Furnace plus Obsidian Template route."
+      "v0.6.0: Hardstone ingots switched to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "desc_en": "Hardstone ore found in the Underground and deep overworld layers. In v0.6.0+, hardstone goes through nugget processing and the Large Furnace plus Obsidian Ingot Mould path.",
     "desc_hu": "Keménykőérc, amely a Földalattiban és a mélyebb felszíni rétegekben található. A helyi 0.6.0+ adatokban keménykőrög-feldolgozáson és a Nagy Kemence + Obszidián Öntőforma útvonalon megy át.",
-    "desc_ru": "Твердокаменная руда из Подземного мира и глубоких слоёв верхнего мира. По локальным данным 0.6.0+ hardstone проходит через переработку в крупицы и схему Большая печь + обсидиановая форма.",
+    "desc_ru": "Твердокаменная руда из Подземного мира и глубоких слоёв верхнего мира. По локальным данным 0.6.0+ твердокамень проходит через переработку в крупицы и схему Большая печь + обсидиановая форма.",
     "versions_en": [
-      "v0.6.0: Hardstone ingots switched to the Large Furnace plus Obsidian Template route."
+      "v0.6.0: Hardstone ingots switched to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "versions_hu": [
-      "v0.6.0: A hardstone rúd a Nagy Kemence + Obszidián Öntőforma útvonalra váltott."
+      "v0.6.0: A keménykőrúd a Nagy Kemence + Obszidián Öntőforma útvonalra váltott."
     ],
     "versions_ru": [
-      "v0.6.0: Слитки hardstone перевели на схему Большая печь + обсидиановая форма."
+      "v0.6.0: Слитки твердокамня перевели на схему Большая печь + обсидиановая форма."
     ]
   },
   "high_carbon_steel_war_hammer": {
@@ -3131,7 +3131,7 @@
   },
   "mercury_ingot": {
     "mcmod_id": 771975,
-    "desc": "Mercury ingot used for mercury-coating weapons and later mercury-based crafting. In local 0.6.0+ data it comes from mercury ore processing rather than the old direct route.",
+    "desc": "Mercury ingot used for mercury-coating weapons and later mercury-based crafting. In v0.6.0+, it comes from mercury ore processing rather than the old direct route.",
     "versions": [
       "v0.6.0: Mercury ingots were moved to the newer mercury-ore processing route."
     ],
@@ -3236,9 +3236,9 @@
   },
   "mithril_ore": {
     "mcmod_id": 772949,
-    "desc": "Bluish mithril ore found in the Underground world. Local 0.6.0+ data routes it through the Large Furnace and Obsidian Template process for mithril ingots.",
+    "desc": "Bluish mithril ore found in the Underground world. In v0.6.0+, it goes through the Large Furnace and Obsidian Ingot Mould process for mithril ingots.",
     "versions": [
-      "v0.6.0: Mithril ingots switched to the Large Furnace plus Obsidian Template route."
+      "v0.6.0: Mithril ingots switched to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "desc_en": "Bluish ore found in the Underground world. Smelt it in the Large Furnace, then cool it in an Obsidian Ingot Mould to obtain mithril. Melting point: 4630.",
     "desc_hu": "Kékes árnyalatú érc a Földalatti világban. Mithril előállításához Nagy kemencében kell megolvasztani, majd Obszidián Öntőformában lehűteni. Olvadáspont: 4630.",
@@ -3291,14 +3291,14 @@
     "desc": "Nether quartz with an added utility effect: right-clicking consumes one and grants XP. In newer versions it can also come from nether quartz ore through the Large Furnace route.",
     "versions": [
       "v0.5.7: In Hardcore, one nether quartz grants 65 XP instead of 50.",
-      "v0.6.0: Nether quartz ore can also be processed through the Large Furnace route without an Obsidian Template."
+      "v0.6.0: Nether quartz ore can also be processed through the Large Furnace route without an Obsidian Ingot Mould."
     ],
     "desc_en": "Nether quartz with an added utility effect: right-clicking consumes one and grants XP. In newer versions it can also come from nether quartz ore through the Large Furnace route.",
     "desc_hu": "Netherkvarc extra utility hatással: jobb kattintással elfogyaszt egyet és XP-t ad. Újabb verziókban netherkvarcércből a Nagy Kemence útvonalán is szerezhető.",
     "desc_ru": "Адский кварц с дополнительной утилитарной функцией: при правом клике расходуется и даёт XP. В новых версиях его также можно получать из кварцевой руды через Большую печь.",
     "versions_en": [
       "v0.5.7: In Hardcore, one nether quartz grants 65 XP instead of 50.",
-      "v0.6.0: Nether quartz ore can also be processed through the Large Furnace route without an Obsidian Template."
+      "v0.6.0: Nether quartz ore can also be processed through the Large Furnace route without an Obsidian Ingot Mould."
     ],
     "versions_hu": [
       "v0.5.7: Hardcore módban egy netherkvarc 50 helyett 65 XP-t ad.",
@@ -3406,10 +3406,10 @@
       "v0.5.7: Hard Mode adjusted its water value."
     ],
     "versions_hu": [
-      "v0.5.7: Hard Mode-ban módosult a vízértéke."
+      "v0.5.7: Hardcore módban módosult a vízértéke."
     ],
     "versions_ru": [
-      "v0.5.7: В Hard Mode было изменено значение воды."
+      "v0.5.7: В Hardcore-режиме было изменено значение воды."
     ]
   },
   "sandstone_furnace_idle": {
@@ -3454,24 +3454,24 @@
   },
   "silver_ore": {
     "mcmod_id": 772948,
-    "desc": "Base silver ore. In local 0.6.0+ data, silver is obtained by Large Furnace smelting and Obsidian Template cooling.",
+    "desc": "Base silver ore. In v0.6.0+, silver is obtained by Large Furnace smelting and Obsidian Ingot Mould cooling.",
     "versions": [
       "v0.5.7: Hard Mode spawn placement was adjusted.",
-      "v0.6.0: Silver ingots switched to the Large Furnace plus Obsidian Template route."
+      "v0.6.0: Silver ingots switched to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "desc_en": "Base silver ore. In v0.6.0+, silver is obtained through Large Furnace smelting and Obsidian Ingot Mould cooling.",
     "desc_hu": "Alap ezüstérc. A helyi 0.6.0+ adatokban az ezüst a Nagy Kemence + Obszidián Öntőforma útvonalon készül.",
     "desc_ru": "Базовая серебряная руда. По локальным данным 0.6.0+ серебро получают через Большую печь и охлаждение в обсидиановой форме.",
     "versions_en": [
       "v0.5.7: Hard Mode spawn placement was adjusted.",
-      "v0.6.0: Silver ingots switched to the Large Furnace plus Obsidian Template route."
+      "v0.6.0: Silver ingots switched to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "versions_hu": [
-      "v0.5.7: Hard Mode-ban változott a spawnelhelyezés.",
+      "v0.5.7: Hardcore módban változott a spawnelhelyezés.",
       "v0.6.0: Az ezüstrúd a Nagy Kemence + Obszidián Öntőforma útvonalra váltott."
     ],
     "versions_ru": [
-      "v0.5.7: В Hard Mode была скорректирована зона спавна.",
+      "v0.5.7: В Hardcore-режиме была скорректирована зона спавна.",
       "v0.6.0: Серебряные слитки перевели на схему Большая печь + обсидиановая форма."
     ]
   },
@@ -3630,13 +3630,13 @@
     "mcmod_id": 772259,
     "desc": "Redstone ore with modified harvesting rules: it must be activated before breaking and no longer drops XP directly. In newer versions it can also be processed through the Large Furnace route.",
     "versions": [
-      "v0.6.0: Redstone ore gained the Large Furnace processing route without an Obsidian Template."
+      "v0.6.0: Redstone ore gained the Large Furnace processing route without an Obsidian Ingot Mould."
     ],
     "desc_en": "Redstone ore with modified harvesting rules: it must be activated before breaking and no longer drops XP directly. In newer versions it can also be processed through the Large Furnace route.",
     "desc_hu": "Vöröskőérc módosított kitermelési szabályokkal: törés előtt aktiválni kell, és már nem dob közvetlenül XP-t. Újabb verziókban a Nagy Kemence útvonalán is feldolgozható.",
     "desc_ru": "Редстоуновая руда с изменёнными правилами добычи: перед разрушением её нужно активировать, и она больше не даёт XP напрямую. В новых версиях её также можно обрабатывать через Большую печь.",
     "versions_en": [
-      "v0.6.0: Redstone ore gained the Large Furnace processing route without an Obsidian Template."
+      "v0.6.0: Redstone ore gained the Large Furnace processing route without an Obsidian Ingot Mould."
     ],
     "versions_hu": [
       "v0.6.0: A vöröskőérc megkapta a Nagy Kemence útvonalát Obszidián Öntőforma nélkül."
@@ -3647,10 +3647,10 @@
   },
   "ore_tin": {
     "mcmod_id": 777285,
-    "desc": "Bright tin ore that resembles silver ore. In current data, tin is obtained through the Large Furnace plus Obsidian Template route and remains part of the bronze progression line.",
+    "desc": "Bright tin ore that resembles silver ore. In current data, tin is obtained through the Large Furnace plus Obsidian Ingot Mould route and remains part of the bronze progression line.",
     "versions": [
       "v0.5.7: In Hardcore, tin ore spawn shifted to roughly Y30-128.",
-      "v0.6.0: Tin ingots moved to the Large Furnace plus Obsidian Template route."
+      "v0.6.0: Tin ingots moved to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "desc_en": "Bright tin ore that resembles silver ore. In the current data, tin is produced through the Large Furnace plus Obsidian Ingot Mould route and remains part of the bronze progression line.",
     "desc_hu": "Világos ónérc, amely az ezüstérchez hasonlít. A jelenlegi adatokban az ón a Nagy Kemence + Obszidián Öntőforma útvonalon készül, és továbbra is a bronzprogresszió része.",
@@ -3698,9 +3698,9 @@
   },
   "tin_ingot": {
     "mcmod_id": 777286,
-    "desc": "Tin ingot used mainly for bronze equipment and related metal progression. In modern data it is produced by smelting tin ore in the Large Furnace and cooling it in an Obsidian Template.",
+    "desc": "Tin ingot used mainly for bronze equipment and related metal progression. In modern data it is produced by smelting tin ore in the Large Furnace and cooling it in an Obsidian Ingot Mould.",
     "versions": [
-      "v0.6.0: Tin ingots moved fully to the Large Furnace plus Obsidian Template route."
+      "v0.6.0: Tin ingots moved fully to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "desc_en": "Tin ingot used mainly for bronze equipment and related metal progression. In current data, it is produced by smelting tin ore in the Large Furnace and cooling it in an Obsidian Ingot Mould.",
     "desc_hu": "Ónrúd, amely főleg bronzfelszereléshez és a kapcsolódó fémprogresszióhoz kell. A modern adatokban ónércből készül Nagy Kemencében olvasztva és Obszidián Formában lehűtve.",
@@ -3741,14 +3741,14 @@
     "desc": "Redstone dust with an added utility effect: right-clicking consumes one and grants XP. In newer versions it can also come from redstone ore through the Large Furnace route.",
     "versions": [
       "v0.5.7: In Hardcore, one redstone grants 20 XP instead of 30.",
-      "v0.6.0: Redstone ore can also be processed through the Large Furnace route without an Obsidian Template."
+      "v0.6.0: Redstone ore can also be processed through the Large Furnace route without an Obsidian Ingot Mould."
     ],
     "desc_en": "Redstone dust with an added utility effect: right-clicking consumes one and grants XP. In newer versions it can also come from redstone ore through the Large Furnace route.",
     "desc_hu": "Vöröskőpor extra utility hatással: jobb kattintással elfogyaszt egyet és XP-t ad. Újabb verziókban vöröskőércből a Nagy Kemence útvonalán is szerezhető.",
     "desc_ru": "Редстоуновая пыль с дополнительной утилитарной функцией: при правом клике расходуется и даёт XP. В новых версиях её также можно получать из редстоуновой руды через Большую печь.",
     "versions_en": [
       "v0.5.7: In Hardcore, one redstone grants 20 XP instead of 30.",
-      "v0.6.0: Redstone ore can also be processed through the Large Furnace route without an Obsidian Template."
+      "v0.6.0: Redstone ore can also be processed through the Large Furnace route without an Obsidian Ingot Mould."
     ],
     "versions_hu": [
       "v0.5.7: Hardcore módban egy vöröskő 30 helyett 20 XP-t ad.",
@@ -3900,13 +3900,13 @@
       "v0.6.0: Gravel and hell grit drop tables were rebalanced again."
     ],
     "versions_hu": [
-      "v0.5.5: A fa sziták innentől külön szitahálót igényelnek, és a hardstone drop rate is lejjebb került.",
-      "v0.5.7: Hard Mode-ban tovább csökkentek a szitás drop rate-ek.",
-      "v0.6.0: A kavics és pokolkavics drop táblái újra át lettek hangolva."
+      "v0.5.5: A fa sziták innentől külön szitahálót igényelnek, és a keménykőrög esési aránya is csökkent.",
+      "v0.5.7: Hardcore módban tovább csökkentek a szitás esési arányok.",
+      "v0.6.0: A kavics és alvilági kavics zsákmánytáblái újra át lettek hangolva."
     ],
     "versions_ru": [
-      "v0.5.5: Деревянным ситам стала нужна отдельная сетка, а шанс на hardstone самородки снизили.",
-      "v0.5.7: В Hard Mode шансы сита дополнительно понизили.",
+      "v0.5.5: Деревянным ситам стала нужна отдельная сетка, а шанс на твердокаменные самородки снизили.",
+      "v0.5.7: В Hardcore-режиме шансы сита дополнительно понизили.",
       "v0.6.0: Таблицы дропа для гравия и адского гравия снова перебалансировали."
     ]
   },
@@ -5672,12 +5672,12 @@
       "v0.6.0: Shield durability enchantments became available in the advanced enchanting setup."
     ],
     "versions_hu": [
-      "v0.5.7: Hard Mode-ban minden pajzs blokkolási esélye 3%-kal csökkent.",
+      "v0.5.7: Hardcore módban minden pajzs blokkolási esélye 3%-kal csökkent.",
       "v0.5.8: A pajzsok 1 tartósságnál már nem blokkolnak.",
       "v0.6.0: A pajzsokra az advanced enchanting vonalon tartósság-bűvölés is elérhető lett."
     ],
     "versions_ru": [
-      "v0.5.7: В Hard Mode шанс блока у всех щитов снижен на 3%.",
+      "v0.5.7: В Hardcore-режиме шанс блока у всех щитов снижен на 3%.",
       "v0.5.8: Щиты перестают блокировать, когда прочность падает до 1.",
       "v0.6.0: Для щитов стало доступно зачарование на прочность через продвинутую систему чар."
     ]
@@ -5768,15 +5768,15 @@
   },
   "kbook": {
     "mcmod_id": 831647,
-    "desc": "Shared entry for Knowledge Books. These books drop in treasure chests found in underground dungeons, unlock specific recipes on right-click, and spare copies can be recycled into books for XP.",
+    "desc": "Shared entry for Knowledge Books. These books can appear in treasure chests found in underground dungeons and surface Pillager Fortresses, unlock specific recipes on right-click, and spare copies can be recycled into books for XP.",
     "versions": [
-      "v0.9.0: Knowledge Books were added as recipe unlocks from treasure chests in underground dungeons."
+      "v0.9.0: Knowledge Books were added as recipe unlocks from dungeon and Pillager Fortress treasure chests."
     ],
-    "desc_en": "Version 0.9.0 adds Knowledge Books that can appear in treasure chests found in underground dungeons. Right-clicking a book consumes it and unlocks the linked recipe. If a knowledge is not unlocked, the related item stays hidden in the built-in crafting table and workbench. Spare Knowledge Books can be crafted back into regular books for XP. Different books unlock recipes such as the Elemental Water Bag, Ancient Metal container upgrades, Ancient Metal Filter Paper, Teleportation Stone, Miner Helmet, Bell, Battery, Coolant, Giant TNT, Custom Enchantment Table, Core Destroyer, Enhanced Eye of Ender, and World Marker. Older teleport-scroll references still exist in the data, but their current recipes are marked as removed.",
+    "desc_en": "Version 0.9.0 adds Knowledge Books that can appear in treasure chests found in underground dungeons and surface Pillager Fortresses. Right-clicking a book consumes it and unlocks the linked recipe. If a knowledge is not unlocked, the related item stays hidden in the built-in crafting table and workbench. Spare Knowledge Books can be crafted back into regular books for XP. Different books unlock recipes such as the Elemental Water Bag, Ancient Metal container upgrades, Ancient Metal Filter Paper, Teleportation Stone, Miner Helmet, Bell, Battery, Coolant, Giant TNT, Custom Enchantment Table, Core Destroyer, Enhanced Eye of Ender, and World Marker. Older teleport-scroll references still exist in the data, but their current recipes are marked as removed.",
     "desc_hu": "A 0.9.0-s verzió Tudáskönyveket ad hozzá, amelyek föld alatti dungeonök kincsesládáiban jelenhetnek meg. A könyvre jobb gombbal kattintva elhasználódik, és feloldja a hozzá tartozó receptet. Ha egy tudás nincs feloldva, a kapcsolódó item rejtve marad a beépített készítőfelületen és a munkaasztalban. A fölösleges Tudáskönyvek sima könyvvé alakíthatók XP-ért. A különböző könyvek többek között az Elemi Víztasakot, az Ősi Fém konténerfejlesztéseket, az Ősi Fém Szűrőpapírt, az Útkövet, a Bányászsisakot, a Harangot, az Akkumulátort, a Hűtőfolyadékot, az Óriás TNT-t, az Egyéni Bűvölőasztalt, a Magpusztítót, a Fejlesztett Ender-szemet és a Világjelölőt oldják fel. Régebbi teleport-tekercses hivatkozások az adatfájlokban még léteznek, de a helyi receptjeik eltávolítottnak vannak jelölve.",
     "desc_ru": "Сводная запись для Книг знаний. Они выпадают из сундуков сокровищ в подземных данжах, по щелчку ПКМ разблокируют конкретные рецепты, а лишние копии можно переработать обратно в обычные книги за XP.",
     "versions_en": [
-      "v0.9.0: Knowledge Books were added as recipe unlocks from treasure chests in underground dungeons."
+      "v0.9.0: Knowledge Books were added as recipe unlocks from dungeon and Pillager Fortress treasure chests."
     ],
     "versions_hu": [
       "v0.9.0: Bekerültek a Tudáskönyvek mint föld alatti dungeon kincsesládákból megszerezhető receptfeloldó itemek."

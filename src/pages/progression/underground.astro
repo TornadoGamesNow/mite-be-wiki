@@ -15,7 +15,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const sidebarGroups = getSidebarGroups('progression/underground');
 ---
-<BaseLayout title="Underground World | MITE:BE Wiki" description="MITE:BE underground world: caves, Underground dimension, hardstone, Ancient Metal. Enter with full iron gear minimum.">
+<BaseLayout title="Underground World | MITE:BE Wiki" description="MITE:BE Underground World: caves, hardstone, Ancient Metal, and deep progression. Enter with at least full iron gear.">
   <Header />
   <TopNav currentPage="progression" />
   <div class="container">
@@ -92,11 +92,11 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 <p>Gyorsan gazdag tapasztalatra akarsz szert tenni? Ezek a lények adják a legtöbb XP-t:</p>
 <table class="compare-table">
   <tr><th>Lény</th><th>XP</th><th>Helyszín</th></tr>
-  <tr><td>Mutáns Csontváz Úr</td><td style="color:#a0f"><strong>1000</strong></td><td>Mélybarlang/Alvilág — Boss</td></tr>
-  <tr><td>Obszidián Gólem</td><td style="color:#f44"><strong>150</strong></td><td>Alvilág</td></tr>
+  <tr><td>Mutáns Csontváz Úr</td><td style="color:#a0f"><strong>1000</strong></td><td>Mélybarlang/Földalatti világ — Boss</td></tr>
+  <tr><td>Obszidián Gólem</td><td style="color:#f44"><strong>150</strong></td><td>Földalatti világ</td></tr>
   <tr><td>Ender Sárkány</td><td style="color:#f44"><strong>100</strong></td><td>The End</td></tr>
-  <tr><td>Zombihívó</td><td style="color:#ff0"><strong>80</strong></td><td>Temetők/Alvilág</td></tr>
-  <tr><td>Wither (Hervadó)</td><td style="color:#ff0"><strong>50</strong></td><td>Alvilág (Nether) Boss</td></tr>
+  <tr><td>Zombihívó</td><td style="color:#ff0"><strong>80</strong></td><td>Temetők/Földalatti világ</td></tr>
+  <tr><td>Wither (Hervadó)</td><td style="color:#ff0"><strong>50</strong></td><td>Alvilági boss</td></tr>
   <tr><td>Barlang Pók</td><td style="color:#5f5"><strong>10</strong></td><td>Barlangrendszerek</td></tr>
   <tr><td>Csontváz/Creeper/Pók/Zombi</td><td style="color:#aaa"><strong>5</strong></td><td>Mindenütt éjjel</td></tr>
   <tr><td>Elefánt 🐘</td><td style="color:#aaa"><strong>25</strong></td><td>Szavanna</td></tr>
@@ -108,8 +108,8 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 
 <!-- ===== UNDERGROUND ===== -->
 
-<h2 id="underground">Földalatti világ (Alvilág)</h2>
-<p>A MITE:BE-ben az Underground egy <strong>külön dimenzió</strong> a fővilág alatt. Belépéshez építs egy <strong>Obszidián portált az alapkő-rétegre</strong> a fővilágban, és gyújtsd meg Tűzgyújtóvel.</p>
+<h2 id="underground">Földalatti világ</h2>
+<p>A MITE:BE-ben a Földalatti világ egy <strong>külön dimenzió</strong> a fővilág alatt. Belépéshez építs egy <strong>Obszidián portált az alapkőrétegre</strong> a fővilágban, és gyújtsd meg Tűzgyújtóval.</p>
 
 <div class="warning-box">⚠️ A föld alatti világ gazdag ércekben, de tele van mutáns szörnyekkel! Minimum <strong>teljes Vas felszerelés</strong> ajánlott belépés előtt. Készíts menekülési útvonalat!</div>
 
@@ -127,7 +127,7 @@ const sidebarGroups = getSidebarGroups('progression/underground');
   <tr><td>Felső rétegek (Y 40+)</td><td>Keménykő érc, gyengébb mobok</td><td>Vas páncél + fegyver</td></tr>
   <tr><td>Középső rétegek (Y 20–40)</td><td>Ősi Fém érc, Smaragd érc, erősebb mobok</td><td>Keménykő/Ősi Fém páncél</td></tr>
   <tr><td>Mély rétegek (Y 0–20)</td><td>Mithrilérc, boss szörnyek, dupla spawner</td><td>Ősi Fém+ páncél, bájitalok</td></tr>
-  <tr><td>Alapkő réteg</td><td><strong>Köpeny</strong> (Alvilág (Nether) átjárat)</td><td>Mithril páncél ajánlott</td></tr>
+  <tr><td>Alapkő réteg</td><td><strong>Köpeny</strong> (átjárat az Alvilágba)</td><td>Mithril páncél ajánlott</td></tr>
 </table>
 
 <h3>Underground Szörnyek</h3>
@@ -176,20 +176,20 @@ const sidebarGroups = getSidebarGroups('progression/underground');
   <li>Jutalmak csökkentve: a <strong>Szénkristály eltávolítva</strong> a lootból, helyette kevésbé értékes ásványok</li>
 </ul>
 <strong>Ne menj be felkészületlenül</strong> — bűvített arany alma és minimum Keménykő/Ősi Fém felszerelés szükséges!</div>
-<div class="tip-card">🏰 <strong>Pillager-erőd romportál (fővilágból):</strong> A fővilágban ásd le magad az alapkőrétegig, majd építs ott <strong>Obszidián portált</strong> és gyújtsd meg Tűzgyújtóval. A v0.9.0 kínai leírás szerint ez a portál egy <strong>elhagyott Pillager-erőd romjaihoz</strong> vezet, nem egy outpost torony tetejére.</div>
-<div class="tip-card">⚙️ <strong>Pillager tábor föld alatti mechanizmus:</strong> Az underground Pillager táborban <strong>üllőket kell lerakni a tábor körül + egy kart (lever) aktiválni a közepén</strong> → ez megnyit egy földalatti kamrát, amely <strong>Adamantium, Mithril és Vöröskő (Redstone) blokkokat</strong> tartalmaz. Ez az egyik legfőbb mithril forrás a játékban!</div>
+<div class="tip-card">🏰 <strong>Pillager-erőd romportál (fővilágból):</strong> A fővilágban ásd le magad az alapkőrétegig, majd építs ott <strong>Obszidián portált</strong> és gyújtsd meg Tűzgyújtóval. A v0.9.0 kínai leírás szerint ez a portál egy <strong>elhagyott Pillager-erőd romjaihoz</strong> vezet, nem egy őrtorony tetejére.</div>
+<div class="tip-card">⚙️ <strong>Pillager tábor föld alatti mechanizmus:</strong> Az underground Pillager táborban <strong>üllőket kell lerakni a tábor körül, majd a közepén egy kart aktiválni</strong> → ez megnyit egy földalatti kamrát, amely <strong>Adamantium-, Mithril- és Vöröskőblokkokat</strong> tartalmaz. Ez az egyik legfőbb mithrilforrás a játékban.</div>
 
-<h3>Underground → Alvilág (Nether) Átjárat</h3>
-<p>Az Underground legmélyebb szintjén, az <strong>alapkő-rétegben</strong> megtalálható a <strong>Köpeny (Mantle)</strong> — ez az Alvilág (Nether) dimenzió felé vezető átjárat. Építs portált a magma-rétegen az Alvilág (Nether) eléréséhez.</p>
+<h3>Földalatti világ → Alvilág átjárat</h3>
+<p>A Földalatti világ legmélyebb szintjén, az <strong>alapkőrétegben</strong> megtalálható a <strong>Köpeny</strong> — ez vezet az Alvilág dimenziója felé. Építs portált a magma-rétegen az Alvilág eléréséhez.</p>
 <div class="info-box">🔥 <strong>Nehéz módban 3 alapkő-réteg van!</strong> A Köpeny megtalálása tovább tarthat.</div>
 
 
 <!-- ===== KEMÉNYKŐ ===== -->
 
 <h2 id="hardstone">Keménykő</h2>
-<p>A <span class="wiki-item" data-id="hardstone_pickaxe">keménykő</span> egy rejtélyes anyag az Földalatti világból. Talán ősi erő lakozik benne.</p>
-<p>Teljes készlet készíthető belőle: csákány, fejsze, kard, tőr, háborús kalapács, kasza, kapa, lapát, sisak, mellvért, lábvért, csizma, vödör, olló, munkaasztal, üllő.</p>
-<p><em>Megjegyzés: Kovács (Blacksmith) foglalkozás kellene az átlagos minőségű elkészítéshez — de ez jelenleg inaktív v0.9.0-ban.</em></p>
+<p>A <span class="wiki-item" data-id="hardstone_pickaxe">keménykő</span> egy rejtélyes anyag a Földalatti világból. Talán ősi erő lakozik benne.</p>
+<p>Teljes készlet készíthető belőle: csákány, fejsze, kard, tőr, háborús kalapács, kasza, kapa, lapát, sisak, mellvért, lábvért, csizma, vödör, olló, munkaasztal és üllő.</p>
+<p><em>Megjegyzés: Kovács foglalkozás kellene az átlagos minőségű elkészítéshez, de ez jelenleg inaktív a v0.9.0-ban.</em></p>
 
 <div class="craft-section">
   <CraftingGrid recipeOutput="hard_stone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword"}}/>
@@ -204,16 +204,16 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 
 <h3>Szett hatás (4/4 darab)</h3>
 <ul>
-  <li><strong>Megerősítés I:</strong> -30% Sérülés az Alvilágból</li>
-  <li><strong>Megerősítés II:</strong> Az Alvilágbeli Denevérek nem támadnak meg</li>
+  <li><strong>Megerősítés I:</strong> -30% Sérülés a Földalatti világból</li>
+  <li><strong>Megerősítés II:</strong> A Földalatti világ denevérei nem támadnak meg</li>
   <li>Az elhasznált páncél rugalmas a korróziót megelőzően</li>
   <li>Képes Fázis Pókokat elütni (kard)</li>
 </ul>
 
 <div class="craft-section">
-  <CraftingGrid recipeOutput="mithril_short_sword" label={{hu: "Mithril Rövidkard", en: "Mithril Short Sword"}}/>
-  <CraftingGrid recipeOutput="mithril_hand_axe" label={{hu: "Mithril Kézbalta", en: "Mithril Hand Axe"}}/>
-  <CraftingGrid recipeOutput="mithril_war_hammer" label={{hu: "Mithril Háborús Kalapács", en: "Mithril War Hammer"}}/>
+  <CraftingGrid recipeOutput="ancient_metal_short_sword" label={{hu: "Ősi Fém Rövidkard", en: "Ancient Metal Short Sword"}}/>
+  <CraftingGrid recipeOutput="ancient_metal_hand_axe" label={{hu: "Ősi Fém Kézbalta", en: "Ancient Metal Hand Axe"}}/>
+  <CraftingGrid recipeOutput="ancient_metal_war_hammer" label={{hu: "Ősi Fém Háborús Kalapács", en: "Ancient Metal War Hammer"}}/>
 </div>
 
 </div>
@@ -284,8 +284,8 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 
 <!-- ===== UNDERGROUND ===== -->
 
-<h2 id="underground">Underground Dimension</h2>
-<p>In MITE:BE, the Underground is a <strong>separate Dimension</strong> beneath the overworld. To enter, build an <strong>Obsidian portal on the bedrock layer</strong> in the overworld and light it with Flint and Steel.</p>
+<h2 id="underground">Underground World</h2>
+<p>In MITE:BE, the Underground is a <strong>separate world</strong> beneath the overworld. To enter, build an <strong>Obsidian portal on the bedrock layer</strong> in the overworld and light it with Flint and Steel.</p>
 
 <div class="warning-box">⚠️ The Underground is rich in ores but full of mutant monsters! Minimum <strong>full iron gear</strong> is recommended before entering. Prepare an escape route!</div>
 
@@ -343,7 +343,7 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 <div class="tip-card">⚙️ <strong>Pillager camp underground mechanism:</strong> In the underground Pillager camp, <strong>place anvils around the camp + activate a lever in the center</strong> → this opens an underground chamber containing <strong>Adamantium, Mithril, and Redstone blocks</strong>. This is one of the main mithril sources in the game!</div>
 
 <h3>Underground → Nether Gateway</h3>
-<p>In the deepest level of the Underground, at the <strong>bedrock layer</strong>, you'll find the <strong>Mantle</strong> — the gateway to the Nether dimension. Build a portal on the magma layer to reach the Nether.</p>
+<p>In the deepest level of the Underground, at the <strong>bedrock layer</strong>, you'll find the <strong>Mantle</strong> — the gateway to the Nether. Build a portal on the magma layer to reach it.</p>
 <div class="info-box">🔥 <strong>On Hard Difficulty, there are 3 bedrock layers!</strong> Finding the Mantle may take longer.</div>
 
 
@@ -366,16 +366,16 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 
 <h3>Set Bonus (4/4 pieces)</h3>
 <ul>
-  <li><strong>Enhancement I:</strong> -30% Damage from the Nether</li>
-  <li><strong>Enhancement II:</strong> Nether Bats won't attack you</li>
+  <li><strong>Enhancement I:</strong> -30% Damage from the Underground</li>
+  <li><strong>Enhancement II:</strong> Underground Bats won't attack you</li>
   <li>Worn armor resists corrosion</li>
   <li>Able to hit Phase Spiders (sword)</li>
 </ul>
 
 <div class="craft-section">
-  <CraftingGrid recipeOutput="mithril_short_sword" label={{hu: "Mithril Rövidkard", en: "Mithril Short Sword"}}/>
-  <CraftingGrid recipeOutput="mithril_hand_axe" label={{hu: "Mithril Kézbalta", en: "Mithril Hand Axe"}}/>
-  <CraftingGrid recipeOutput="mithril_war_hammer" label={{hu: "Mithril Háborús Kalapács", en: "Mithril War Hammer"}}/>
+  <CraftingGrid recipeOutput="ancient_metal_short_sword" label={{hu: "Ősi Fém Rövidkard", en: "Ancient Metal Short Sword"}}/>
+  <CraftingGrid recipeOutput="ancient_metal_hand_axe" label={{hu: "Ősi Fém Kézbalta", en: "Ancient Metal Hand Axe"}}/>
+  <CraftingGrid recipeOutput="ancient_metal_war_hammer" label={{hu: "Ősi Fém Háborús Kalapács", en: "Ancient Metal War Hammer"}}/>
 </div>
 
 </div>
@@ -419,7 +419,7 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 <!-- ===== UNDERGROUND ===== -->
 
 <h2 id="underground">Подземный мир</h2>
-<p>В MITE:BE Подземный мир — <strong>отдельное измерение</strong> под обычным миром. Чтобы войти, построй <strong>Обсидиановый портал на уровне бедрока</strong> и подожги его кремнём и сталью.</p>
+<p>В MITE:BE Подземный мир — <strong>отдельный мир</strong> под обычным миром. Чтобы войти, построй <strong>Обсидиановый портал на уровне бедрока</strong> и подожги его кремнём и сталью.</p>
 
 <div class="warning-box">⚠️ Подземный мир богат рудами, но полон мутировавших монстров! Минимум <strong>полная железная экипировка</strong> перед входом. Подготовь маршрут отступления!</div>
 
@@ -477,7 +477,7 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 <div class="tip-card">⚙️ <strong>Подземный механизм Лагеря Грабителей:</strong> В подземном лагере <strong>разложи наковальни вокруг + активируй рычаг в центре</strong> → откроется подземная камера с <strong>Адамантовыми, Мифриловыми и Красностонными блоками</strong>. Один из главных источников мифрила в игре!</div>
 
 <h3>Подземный мир → Незер</h3>
-<p>На самом глубоком уровне Подземного мира, в <strong>слое бедрока</strong>, найдёшь <strong>Мантию</strong> — переход в измерение Незер. Построй портал на магмовом слое для доступа в Незер.</p>
+<p>На самом глубоком уровне Подземного мира, в <strong>слое бедрока</strong>, найдёшь <strong>Мантию</strong> — переход в Незер. Построй портал на магмовом слое для доступа туда.</p>
 <div class="info-box">🔥 <strong>В сложном режиме 3 слоя бедрока!</strong> Поиск Мантии займёт больше времени.</div>
 
 
@@ -487,24 +487,24 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 <p>Таинственный материал из Подземного мира. Возможно, в нём живёт древняя сила.</p>
 <p>Полный набор: кирка, топор, меч, кинжал, молот войны, коса, мотыга, лопата, шлем, нагрудник, поножи, ботинки, ведро, ножницы, верстак, наковальня.</p>
 <div class="craft-section">
-  <CraftingGrid recipeOutput="hard_stone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword"}}/>
-  <CraftingGrid recipeOutput="hard_stone_pickaxe" label={{hu: "Keménykő Csákány", en: "Hardstone Pickaxe"}}/>
-  <CraftingGrid recipeOutput="hard_stone_war_hammer" label={{hu: "Keménykő Háborús Kalapács", en: "Hardstone War Hammer"}}/>
+  <CraftingGrid recipeOutput="hard_stone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword", ru: "Твердокаменный меч"}}/>
+  <CraftingGrid recipeOutput="hard_stone_pickaxe" label={{hu: "Keménykő Csákány", en: "Hardstone Pickaxe", ru: "Твердокаменная кирка"}}/>
+  <CraftingGrid recipeOutput="hard_stone_war_hammer" label={{hu: "Keménykő Háborús Kalapács", en: "Hardstone War Hammer", ru: "Твердокаменный боевой молот"}}/>
 </div>
 
 <h2 id="ancient-metal">Древний металл</h2>
 <p>Злая и грозная древняя сила живёт в нём. Древний металл — самый загадочный материал Подземного мира.</p>
 <h3>Бонус комплекта (4/4 предмета)</h3>
 <ul>
-  <li><strong>Усиление I:</strong> -30% урон из Незера</li>
-  <li><strong>Усиление II:</strong> Летучие мыши Незера не атакуют</li>
+  <li><strong>Усиление I:</strong> -30% урона из Подземного мира</li>
+  <li><strong>Усиление II:</strong> Летучие мыши Подземного мира не атакуют</li>
   <li>Изношенная броня устойчива к коррозии</li>
   <li>Меч наносит урон Фазовым Паукам</li>
 </ul>
 <div class="craft-section">
-  <CraftingGrid recipeOutput="mithril_short_sword" label={{hu: "Mithril Rövidkard", en: "Mithril Short Sword"}}/>
-  <CraftingGrid recipeOutput="mithril_hand_axe" label={{hu: "Mithril Kézbalta", en: "Mithril Hand Axe"}}/>
-  <CraftingGrid recipeOutput="mithril_war_hammer" label={{hu: "Mithril Háborús Kalapács", en: "Mithril War Hammer"}}/>
+  <CraftingGrid recipeOutput="ancient_metal_short_sword" label={{hu: "Ősi Fém Rövidkard", en: "Ancient Metal Short Sword", ru: "Короткий меч из древнего металла"}}/>
+  <CraftingGrid recipeOutput="ancient_metal_hand_axe" label={{hu: "Ősi Fém Kézbalta", en: "Ancient Metal Hand Axe", ru: "Ручной топор из древнего металла"}}/>
+  <CraftingGrid recipeOutput="ancient_metal_war_hammer" label={{hu: "Ősi Fém Háborús Kalapács", en: "Ancient Metal War Hammer", ru: "Боевой молот из древнего металла"}}/>
 </div>
 
 </div>

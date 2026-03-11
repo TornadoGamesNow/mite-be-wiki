@@ -45,7 +45,7 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <tr><th>Hátizsák</th><th>Slotok</th><th>v0.9.0 státusz</th></tr>
   <tr><td>Bőr Hátizsák</td><td>10</td><td>Normál recepttel elkészíthető alap hátizsák</td></tr>
   <tr><td>Nagy Hátizsák</td><td>21</td><td><span class="wiki-item" data-id="big_backpack_upgrade">Nagy Hátizsák Fejlesztés</span> tárggyal fejleszthető</td></tr>
-  <tr style="background:rgba(180,120,255,0.12)"><td><strong>Ősi Fém Hátizsák</strong></td><td><strong>78</strong></td><td><span class="wiki-item" data-id="ancient_metal_backpack_upgrade">Ősi Fém Hátizsák Fejlesztés</span> + higanyüst + Knowledge Book</td></tr>
+  <tr style="background:rgba(180,120,255,0.12)"><td><strong>Ősi Fém Hátizsák</strong></td><td><strong>78</strong></td><td><span class="wiki-item" data-id="ancient_metal_backpack_upgrade">Ősi Fém Hátizsák Fejlesztés</span> + higanyüst + Tudáskönyv</td></tr>
   <tr><td>Réz / Ezüst / Vas / Arany / Keménykő</td><td>21 / 21 / 36 / 44 / 55</td><td>Régi hátizsák-típusok a játékfájlokban; a jelenlegi v0.9.0-ban nincs helyi receptlista hozzájuk</td></tr>
   <tr><td>Mithril / Adamantium</td><td>90 / 102</td><td>A játékfájlok név szerint tartalmazzák, de a v0.9.0-hoz nem találtam hozzájuk receptet vagy fejlesztő tárgyat</td></tr>
 </table>
@@ -79,9 +79,9 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 </table>
 <div class="warning-box">📦 <strong>Fontos:</strong> A csökkentett kötegméretek miatt szükséged van <strong>több tároló ládára</strong>, és az anyaggyűjtés is hamarabb tölti meg a leltárat. Tervezz előre!</div>
 
-<h2 id="knowledge-books">Tudáskönyvek (Knowledge Books)</h2>
-<p>A Tudáskönyv (Knowledge Book) egy speciális tárgy, amely haladó receptek feloldására szolgál. Amíg nem rendelkezel a megfelelő Tudáskönyvvel, az adott recept <strong>nem készíthető el</strong>!</p>
-<div class="warning-box">🔒 <strong>Kemény zárolás (Hard Gate)!</strong> Ha egy recept Tudáskönyvhöz kötött, akkor <strong>még akkor sem tudod elkészíteni, ha minden alapanyagod megvan!</strong> A v0.9.0 kínai itemleírások alapján a könyvek elsődleges, biztos forrása a <strong>föld alatti dungeonök kincsesládája</strong>.</div>
+<h2 id="knowledge-books">Tudáskönyvek</h2>
+<p>A Tudáskönyv egy speciális tárgy, amely haladó receptek feloldására szolgál. Amíg nem rendelkezel a megfelelő Tudáskönyvvel, az adott recept <strong>nem készíthető el</strong>!</p>
+<div class="warning-box">🔒 <strong>Kemény zárolás!</strong> Ha egy recept Tudáskönyvhöz kötött, akkor <strong>még akkor sem tudod elkészíteni, ha minden alapanyagod megvan!</strong> A v0.9.0 tapasztalatok és itemleírások alapján a könyvek biztos forrásai közé tartoznak a <strong>földalatti dungeonök kincsesládái</strong> és a <strong>felszíni Pillager-erődök ládái</strong>.</div>
 
 <div class="craft-section">
   <CraftingGrid recipeOutput="miner_helmet" label={{hu: "Bányászsisak (Vas Munkaasztal)", en: "Miner Helmet (Iron Workbench)"}}/>
@@ -91,7 +91,7 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 
 <h3>Tudáskönyvek listája</h3>
 <table>
-  <tr><th>Knowledge Book</th><th>Feloldott recept</th><th>Megjegyzés</th></tr>
+  <tr><th>Tudáskönyv</th><th>Feloldott recept</th><th>Megjegyzés</th></tr>
   <tr><td>Bányászsisak tudáskönyv</td><td>Bányászsisak</td><td>Vas Munkaasztalon készíthető, tartósság: 150</td></tr>
   <tr><td>Akkumulátor tudáskönyv</td><td>Akkumulátor</td><td>Bányászsisak újratöltéséhez (75 tartósság/db)</td></tr>
   <tr><td>Elemi víztasak tudáskönyv</td><td>Elemi Víztasak</td><td>Fejlett víztároló bőrből és selyemből</td></tr>
@@ -151,7 +151,7 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 
 <h2 id="knowledge-books-en">Knowledge Books</h2>
 <p>A Knowledge Book is a special item that unlocks advanced recipes. If a recipe is gated behind a Knowledge Book, you <strong>cannot craft it</strong> even if you have all the materials!</p>
-<div class="warning-box">🔒 <strong>Hard Gate!</strong> Based on the v0.9.0 Chinese item pages, the primary reliable source for Knowledge Books is <strong>treasure chests in underground dungeons</strong>.</div>
+<div class="warning-box">🔒 <strong>Hard requirement:</strong> Based on current v0.9.0 observations and item pages, reliably confirmed Knowledge Book sources include <strong>treasure chests in underground dungeons</strong> and <strong>surface Pillager Fortress chests</strong>.</div>
 
 <h3>Knowledge Books List</h3>
 <table>
@@ -171,7 +171,7 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <tr><td>World Marker Knowledge Book</td><td>World Marker</td><td>Sets the world's respawn point; current recipe data uses obsidian + Blue Compass</td></tr>
   <tr><td>Ancient Metal Container Knowledge Book</td><td>Ancient Metal Container</td><td>Advanced storage item from Ancient Metal</td></tr>
 </table>
-<div class="tip-card">💡 Extra Knowledge Books can be converted into regular books at the workbench for XP.</div>
+<div class="tip-card">💡 Spare Knowledge Books can be converted into regular Books at the workbench for XP.</div>
 </div>
 
 <div data-lang="ru">
@@ -214,25 +214,25 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 
 <h2 id="knowledge-books-ru">📚 Книги знаний</h2>
 <p>Книга знаний — особый предмет, открывающий продвинутые рецепты. Если рецепт заблокирован Книгой знаний, скрафтить его <strong>не получится</strong>, даже если все материалы есть!</p>
-<div class="warning-box">🔒 <strong>Жёсткое ограничение!</strong> По китайским описаниям предметов для v0.9.0 основной надёжный источник Книг знаний — <strong>сундуки подземных данжей</strong>.</div>
+<div class="warning-box">🔒 <strong>Жёсткое ограничение!</strong> По наблюдениям в v0.9.0 и описаниям предметов надёжно подтверждённые источники Книг знаний включают <strong>сундуки подземных данжей</strong> и <strong>сундуки наземных Крепостей Разорителей</strong>.</div>
 
 <h3>Список книг знаний</h3>
 <table>
   <tr><th>Книга знаний</th><th>Открывает</th><th>Примечание</th></tr>
   <tr><td>Книга знаний: Шахтёрский шлем</td><td>Шахтёрский шлем</td><td>Крафт на Железном верстаке, прочность: 150</td></tr>
   <tr><td>Книга знаний: Батарея</td><td>Батарея</td><td>Подзарядка шлема (75 прочности за шт.)</td></tr>
-  <tr><td>Книга знаний: Мешок для воды</td><td>Элементный мешок для воды</td><td>Продвинутое водохранилище из кожи и шёлка</td></tr>
+  <tr><td>Книга знаний: Мешок для воды</td><td>Элементный мешок для воды</td><td>Продвинутый мешок для воды из кожи и шёлка</td></tr>
   <tr><td>Книга знаний: Фильтровальная бумага</td><td>Фильтровальная бумага из Древнего металла</td><td>Продвинутая фильтрация воды с самородками</td></tr>
   <tr><td>Книга знаний: Измельчитель коренной породы</td><td>Измельчитель коренной породы</td><td>Маяк + блок красного камня + обсидиан</td></tr>
   <tr><td>Книга знаний: Улучшенное око Эндера</td><td>Улучшенное око Эндера</td><td>9× Глаз Края → Улучшенное око Эндера</td></tr>
   <tr><td>Книга знаний: Особый стол зачарования</td><td>Особый стол зачарования</td><td>Для более сильных зачарований</td></tr>
   <tr><td>Книга знаний: Камень перемещения</td><td>Камень перемещения</td><td>Точка телепортации; твердокаменный верстак: жемчуг края + блок красного камня + каменные кирпичи</td></tr>
-  <tr><td>Книга знаний: Телепорт-свиток</td><td>Телепорт-свиток</td><td>В текущих локальных рецептах выглядит как старая удалённая ссылка на телепорт-свиток</td></tr>
+  <tr><td>Книга знаний: Телепорт-свиток</td><td>Телепорт-свиток</td><td>В текущих данных рецептов выглядит как устаревшая удалённая ссылка на телепорт-свиток</td></tr>
   <tr><td>Книга знаний: Часы</td><td>Часы</td><td>8× золотой самородок + красный камень; показывает время суток</td></tr>
   <tr><td>Книга знаний: Охлаждающая жидкость</td><td>Охлаждающая жидкость</td><td>Оловянные пластины + лёд; снижает температуру тела</td></tr>
-  <tr><td>Книга знаний: ТНТ</td><td>Гигантский ТНТ</td><td>Радиус взрыва больше обычного ТНТ</td></tr>
+  <tr><td>Книга знаний: Гигантский ТНТ</td><td>Гигантский ТНТ</td><td>Радиус взрыва больше, чем у обычного ТНТ</td></tr>
   <tr><td>Книга знаний: Маркер мира</td><td>Маркер мира</td><td>Задаёт мировую точку возрождения; локальный рецепт использует обсидиан и синий компас</td></tr>
-  <tr><td>Книга знаний: Контейнер</td><td>Контейнер из Древнего металла</td><td>Продвинутый предмет для хранения</td></tr>
+  <tr><td>Книга знаний: Контейнер из Древнего металла</td><td>Контейнер из Древнего металла</td><td>Продвинутый предмет для хранения</td></tr>
 </table>
 <div class="tip-card">💡 Лишние Книги знаний можно превратить в обычные книги на верстаке — в обмен ты получишь очки опыта!</div>
 
