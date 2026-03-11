@@ -211,7 +211,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr style="background:rgba(200,200,255,0.12)"><td><strong>👻 Fantom Hold</strong></td><td>128n−8. nap (120., 248…)</td><td>Halvány fehér glória a hold körül</td></tr>
   <tr style="background:rgba(100,150,255,0.12)"><td><strong>🔵 Kék Hold</strong></td><td>Minden 50. nap</td><td>Ellenséges mob limit 30/játékos · állatok növekedése +200% · mindig tiszta időjárás</td></tr>
   <tr style="background:rgba(255,255,255,0.06)"><td><strong>⚪ Telihold</strong></td><td>Minden 8. nap</td><td>Mob spawn ráta +50%</td></tr>
-  <tr style="background:rgba(50,50,100,0.14)"><td><strong>🌑 Újhold</strong></td><td>Standard holdciklus</td><td>Mob spawn −50% · spawnolt mobok sebessége csökkentett (0.21)</td></tr>
+  <tr style="background:rgba(50,50,100,0.14)"><td><strong>🌑 Újhold</strong></td><td>Standard holdciklus</td><td>Mobmegjelenés −50% · a megjelenő mobok sebessége csökkentett (0.21)</td></tr>
   <tr style="background:rgba(255,100,50,0.12)"><td><strong>⚡ Elszámolás Napja</strong></td><td>96–97. nap</td><td>Vérholdas mobok + villám azonnal megöli a nyílt terepen lévő mobokat (nincs XP/drop)</td></tr>
 </table>
 <div class="info-box">🎁 <strong>Vérhold utáni véletlenszerű bónusz</strong> (egy a négyből): mining speed +10% · Sebzés +1 · Vízfogyasztás −10% · Éhség/Telítettség fogyasztás −10%<br><strong>Evolúció:</strong> Minden vérholdnál (32., 64., 128…) a zombik erősebbek lesznek — növekvő sebzés, Életerő (HP) és blokktörő képesség!</div>
@@ -227,10 +227,10 @@ const sidebarGroups = getSidebarGroups('game-modes');
 </table>
 <div class="tip-card">🌱 <strong>Trágya:</strong> Termőföldhöz adva növeli a termésmennyiséget. Ha 3+ napig nem üríted (és 50+ a mutató), az időtartam megduplázódik.</div>
 
-<h3 id="world-marker">Világjelölő &amp; Partner NPC-k</h3>
+<h3 id="world-marker">Világjelölő &amp; szövetséges falusiak</h3>
 <p>A <strong>Világjelölő</strong> a helyi item-adatok alapján a világ újraéledési pontjának beállítására szolgál. A jelenlegi adatokban külön tételként szerepel a <strong>Respawn Anchor</strong> is, ezért itt nem kezelem őket ugyanannak a blokknek. <strong>Hardcore módban az újraéledéses funkciók nem használhatók.</strong></p>
 <table class="compare-table">
-  <tr><th>Partner Típus</th><th>Belső Azonosító</th><th>Leírás</th></tr>
+  <tr><th>Szövetséges típusa</th><th>Belső azonosító</th><th>Leírás</th></tr>
   <tr><td><strong>Harcos Falusember</strong></td><td>partner_sparta</td><td>Harci képességekkel rendelkező NPC szövetséges</td></tr>
   <tr><td><strong>Utazó falusi</strong></td><td>partner_traveller</td><td>Felfedezésben és szállítmányozásban segítő NPC</td></tr>
   <tr><td><strong>Bányász Falusember</strong></td><td>partner_miner</td><td>Bányászatban specializált NPC szövetséges</td></tr>
@@ -433,7 +433,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
 </table>
 <div class="tip-card">🌱 <strong>Manure:</strong> Applied to farmland, it increases crop yields. If you haven't defecated in 3+ days (and meter is 50+), the duration doubles.</div>
 
-<h3 id="world-marker-en">World Marker &amp; Partner NPCs</h3>
+<h3 id="world-marker-en">World Marker &amp; Allied Villagers</h3>
 <p>Based on the current item data, the <strong>World Marker</strong> is used to set the world's respawn point. The current data set also contains a separate <strong>Respawn Anchor</strong> item, so I am not treating them as the same block here. <strong>Respawn-related systems do not help in Hardcore mode.</strong></p>
 <table class="compare-table">
   <tr><th>Partner Type</th><th>Internal ID</th><th>Description</th></tr>

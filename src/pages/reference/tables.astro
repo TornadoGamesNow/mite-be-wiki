@@ -62,7 +62,7 @@ const sidebarGroups = getSidebarGroups('reference');
   <tr><td>Erő</td><td>Több ütés sebzés</td><td>I–IV</td></tr>
   <tr><td>Regeneráció</td><td>Folyamatos gyógyulás</td><td>I–IV</td></tr>
   <tr><td>Tűzállóság</td><td>Tűz és láva nem sebez</td><td>I</td></tr>
-  <tr><td>Láva Ellenállás</td><td>Speciális MITE effekt — láva Sebzéscsökkentés</td><td>I</td></tr>
+  <tr><td>Láva Ellenállás</td><td>Speciális MITE effekt — lávasebzés csökkentése</td><td>I</td></tr>
   <tr><td>Éjszakai Látás</td><td>Látás sötétben</td><td>I</td></tr>
   <tr><td>Víz alatti légzés</td><td>Víz alatti lélegzés</td><td>I</td></tr>
   <tr><td>Láthatatlanság</td><td>Szörnyek nem látnak</td><td>I</td></tr>
@@ -361,8 +361,8 @@ const sidebarGroups = getSidebarGroups('reference');
 <h3>Special Mobs</h3>
 <p>Variant Zombie, Variant Creeper, Variant Spider, Variant Skeleton — stronger versions of common mobs.</p>
 <p>Baby Creeper, Confused Creeper, Split Creeper, Frozen Creeper, End Lightning Creeper — creeper variants.</p>
-<p>Zombie Caller, Bomber Man, Obsidian Golem, Desert Guard, Evil Snowman — special creatures.</p>
-<p><strong>Partners:</strong> Warrior Villager, Traveller, Miner Villager — your allies!</p>
+<p>Zombie Caller, Bomber Man, Obsidian Golem, Desert Guardian, and Evil Snowman are special creatures.</p>
+<p><strong>Allied villagers:</strong> Warrior Villager, Traveller, and Miner Villager.</p>
 
 </div></div></div>
 </div>
@@ -593,10 +593,10 @@ const sidebarGroups = getSidebarGroups('reference');
 <div class="ach"><span class="ach-name">Magic Punch</span> <span class="ach-cond">(Emerald Enchanting Table)</span><div class="ach-desc">Enchant your gear!</div></div>
 
 <h3>Endgame (36-43)</h3>
-<div class="ach"><span class="ach-name">Scorching Hell Gate</span> <span class="ach-cond">(Find the Mantle)</span><div class="ach-desc">In the Underground's bedrock layer</div></div>
+<div class="ach"><span class="ach-name">Scorching Hell Gate</span> <span class="ach-cond">(Find the Mantle)</span><div class="ach-desc">In the Underground World's bedrock layer</div></div>
 <div class="ach"><span class="ach-name">Immortal Legend</span> <span class="ach-cond">(Nether Star)</span><div class="ach-desc">Needed for the Bedrock Crusher!</div></div>
 <div class="ach"><span class="ach-name">The Earth Trembles?!</span> <span class="ach-cond">(Bedrock Crusher)</span><div class="ach-desc">Place on bedrock core, activate with Reinforced Eye of Ender</div></div>
-<div class="ach"><span class="ach-name">The Realm of the End</span> <span class="ach-cond">(Enter the End)</span><div class="ach-desc">Opens when the bedrock core is destroyed</div></div>
+<div class="ach"><span class="ach-name">The Realm of the End</span> <span class="ach-cond">(Enter the End)</span><div class="ach-desc">Unlocks after the bedrock core is destroyed</div></div>
 <div class="ach"><span class="ach-name">The Final Battle</span> <span class="ach-cond">(Ender Dragon)</span><div class="ach-desc">Break crystals with adamantium arrows or adamantium tools, then defeat the dragon!</div></div>
 <div class="ach"><span class="ach-name">Is It All Over?</span> <span class="ach-cond">(Return from the End)</span><div class="ach-desc">Is it really over?</div></div>
 
@@ -652,10 +652,10 @@ const sidebarGroups = getSidebarGroups('reference');
 <!-- ═══════════════════════ STRUKTÚRÁK / ÉpítményS ═══════════════════════ -->
 <div data-lang="hu" id="structures">
 <h2>🏛️ Struktúrák & Helyszínek</h2>
-<p>A MITE:BE világa számos egyedi struktúrát tartalmaz — mindegyik sajátos mob spawnerekkel, jutalomládákkal és kihívásokkal. Az alábbi táblázat összefoglalja a főbb helyszíneket és lootjukat.</p>
+<p>A MITE:BE világa számos egyedi struktúrát tartalmaz — mindegyik sajátos mob spawnerekkel, jutalomládákkal és kihívásokkal. Az alábbi táblázat összefoglalja a főbb helyszíneket és zsákmányukat.</p>
 
 <table>
-  <tr><th>Struktúra</th><th>Világ</th><th>Legfontosabb loot</th><th>Mob spawnerek</th><th>Megjegyzés</th></tr>
+  <tr><th>Struktúra</th><th>Világ</th><th>Legfontosabb zsákmány</th><th>Mob spawnerek</th><th>Megjegyzés</th></tr>
   <tr>
     <td><strong style="color:var(--gold)">Pillager-erőd</strong></td>
     <td>Fővilág</td>
@@ -675,17 +675,17 @@ const sidebarGroups = getSidebarGroups('reference');
     <td>Fővilág</td>
     <td>Étel, alapanyagok, kereskedelem</td>
     <td>Harcos / Utazó falusi / Bányász falusi</td>
-    <td>Falvak ritkán spawnolnak — kerülj Plains biome-ba!</td>
+    <td>Falvak ritkák — a Plains biomokban érdemes keresni őket</td>
   </tr>
   <tr>
-    <td><strong>Sivatagi őr Torony</strong></td>
+    <td><strong>Sivatagi Őrtorony</strong></td>
     <td>Fővilág (Sivatag)</td>
-    <td>Ritka tárgyak, sivatagi kincslőcs</td>
+    <td>Ritka tárgyak, sivatagi kincsek</td>
     <td>Sivatagi őr</td>
     <td>Csak sivatag biome-ban generálódik</td>
   </tr>
   <tr>
-    <td><strong>Nether Erőd</strong></td>
+    <td><strong>Alvilágerőd</strong></td>
     <td>Alvilág</td>
     <td>Hervadt Rózsa (Wither idézéshez), Alvilági szemölcs, Blaze Pálca</td>
     <td>Blaze, Wither Csontváz, Lángoszlop</td>
@@ -703,7 +703,7 @@ const sidebarGroups = getSidebarGroups('reference');
     <td>Fővilág (Gombasziget)</td>
     <td>Jutalomládák, fejlett anyagok</td>
     <td>Erős szörnyek, egyedi őrök</td>
-    <td>Gombasziget biomban generálódik — ritka struktúra</td>
+    <td>A Gombasziget biomban generálódik — ritka struktúra</td>
   </tr>
   <tr>
     <td><strong>End-szigetek</strong></td>
@@ -720,8 +720,8 @@ const sidebarGroups = getSidebarGroups('reference');
 <ul>
   <li>A Pillager-erőd a játék egyik leggazdagabb jutalom-helyszíne</li>
   <li><strong>Tudáskönyv:</strong> Biztosan beszerezhető földalatti dungeonök és felszíni Pillager-erődök ládáiból — új recepteket nyit meg, majd Könyvvé alakítható XP-ért</li>
-  <li><strong>Zombihívó:</strong> Erős mini-boss, zombi rajt idéz</li>
-  <li><strong>Pillager Kapitány:</strong> Speciális vezér, különleges dropok</li>
+  <li><strong>Zombihívó:</strong> Erős minifőellenség, zombihordát idéz</li>
+  <li><strong>Pillager Kapitány:</strong> Speciális vezér, különleges zsákmánnyal</li>
   <li>Ajánlott: Mithril vagy jobb felszerelés a teljes erőd átkutatásához</li>
 </ul>
 
@@ -769,8 +769,8 @@ const sidebarGroups = getSidebarGroups('reference');
     <td><strong>Village</strong></td>
     <td>Overworld</td>
     <td>Food, basic materials, trading</td>
-    <td>Warrior / Traveler / Miner Villager (Partner NPCs)</td>
-    <td>Villages spawn rarely — look in Plains biomes!</td>
+    <td>Warrior / Traveller / Miner Villager (allied villagers)</td>
+    <td>Villages are rare — the best place to look is in Plains biomes</td>
   </tr>
   <tr>
     <td><strong>Desert Guardian Tower</strong></td>
@@ -784,7 +784,7 @@ const sidebarGroups = getSidebarGroups('reference');
     <td>Nether</td>
     <td>Wither Rose (required for Wither summon), Nether Wart, Blaze Rod</td>
     <td>Blaze, Wither Skeleton, Red Blaze</td>
-    <td>Wither Rose from loot chests here — required for Wither boss</td>
+    <td>Reward chests here can contain Wither Roses, which are required to summon the Wither</td>
   </tr>
   <tr>
     <td><strong>Underground World</strong></td>
@@ -798,14 +798,14 @@ const sidebarGroups = getSidebarGroups('reference');
     <td>Overworld (Mushroom Island)</td>
     <td>Loot chests, advanced materials</td>
     <td>Strong monsters, unique guards</td>
-    <td>Generates in Mushroom biomes — rare structure</td>
+    <td>Generates on Mushroom Islands — rare structure</td>
   </tr>
   <tr>
     <td><strong>End Islands</strong></td>
     <td>The End</td>
     <td>Elytra (if present), chorus fruit, End stone</td>
     <td>Enderman, Dragon Egg</td>
-    <td>Access requires: Bedrock Crusher → Enhanced Ender Eye process</td>
+    <td>Access requires the Bedrock Crusher and an Enhanced Eye of Ender</td>
   </tr>
 </table>
 
@@ -814,9 +814,9 @@ const sidebarGroups = getSidebarGroups('reference');
 
 <ul>
   <li>The Pillager Fortress is one of the richest loot locations in the game</li>
-  <li><strong>Knowledge Books:</strong> Reliably confirmed sources include treasure chests in underground dungeons and surface Pillager Fortresses — they unlock new recipes, then can be turned into regular Books for XP</li>
+  <li><strong>Knowledge Books:</strong> Reliably confirmed sources include treasure chests in underground dungeons and surface Pillager Fortresses. They unlock new recipes and can later be turned into regular Books for XP.</li>
   <li><strong>Zombie Caller:</strong> Strong mini-boss that summons zombie hordes</li>
-  <li><strong>Pillager Captain:</strong> Special leader with unique drops</li>
+  <li><strong>Pillager Captain:</strong> Special leader with unique loot</li>
   <li>Recommended: Mithril or better gear to clear the entire fortress</li>
 </ul>
 
@@ -832,7 +832,7 @@ const sidebarGroups = getSidebarGroups('reference');
 <h3>Loot Priority Guide</h3>
 <div class="tip"><strong>What's worth hunting?</strong>
 <ul style="margin-top:8px">
-  <li><strong>Early game:</strong> Village → Partner NPCs → material trading</li>
+  <li><strong>Early game:</strong> Village → allied villagers → material trading</li>
   <li><strong>Mid game:</strong> underground dungeons and Pillager Fortresses → Knowledge Books + rare loot</li>
   <li><strong>Nether:</strong> Nether Fortress → Wither Rose (required for Wither summon)</li>
   <li><strong>Late game:</strong> Underground → Skeleton Lord drops + Adamantium ore</li>
@@ -1103,7 +1103,7 @@ const sidebarGroups = getSidebarGroups('reference');
 <div class="ach"><span class="ach-name">Раскалённые врата в ад</span> <span class="ach-cond">(Найти Мантию)</span><div class="ach-desc">В слое коренной породы Подземного мира</div></div>
 <div class="ach"><span class="ach-name">Бессмертная легенда</span> <span class="ach-cond">(Звезда Незера)</span><div class="ach-desc">Нужна для Дробилки коренной породы!</div></div>
 <div class="ach"><span class="ach-name">Земля содрогается?!</span> <span class="ach-cond">(Дробилка коренной породы)</span><div class="ach-desc">Поместить на ядро коренной породы, активировать Усиленным Оком Края</div></div>
-<div class="ach"><span class="ach-name">Царство Края</span> <span class="ach-cond">(Войти в Край)</span><div class="ach-desc">Открывается при уничтожении ядра коренной породы</div></div>
+<div class="ach"><span class="ach-name">Царство Края</span> <span class="ach-cond">(Войти в Край)</span><div class="ach-desc">Открывается после уничтожения ядра коренной породы</div></div>
 <div class="ach"><span class="ach-name">Финальная битва</span> <span class="ach-cond">(Дракон Края)</span><div class="ach-desc">Ломайте кристаллы адамантовыми стрелами или адамантовыми инструментами, затем победите дракона!</div></div>
 <div class="ach"><span class="ach-name">Всё ли закончилось?</span> <span class="ach-cond">(Возвращение из Края)</span><div class="ach-desc">Действительно ли всё кончено?</div></div>
 
@@ -1181,7 +1181,7 @@ const sidebarGroups = getSidebarGroups('reference');
     <td><strong>Деревня</strong></td>
     <td>Верхний мир</td>
     <td>Еда, базовые материалы, торговля</td>
-    <td>Воин / Путешественник / Шахтёр-житель (союзные персонажи)</td>
+    <td>Воин / Путешественник / Шахтёр-житель (союзные жители)</td>
     <td>Деревни появляются редко — ищите их в биоме Равнины!</td>
   </tr>
   <tr>
@@ -1226,7 +1226,7 @@ const sidebarGroups = getSidebarGroups('reference');
 
 <ul>
   <li>Крепость Разорителей — одна из самых богатых на добычу локаций в игре</li>
-  <li><strong>Книги знаний:</strong> надёжно подтверждены в сундуках подземных данжей и наземных Крепостей Разорителей; они открывают новые рецепты, а затем превращаются в обычные книги, из которых можно получить опыт</li>
+  <li><strong>Книги знаний:</strong> надёжно подтверждены в сундуках подземелий Подземного мира и наземных Крепостей Разорителей. Они открывают новые рецепты, а затем превращаются в обычные книги, из которых можно получить опыт.</li>
   <li><strong>Призыватель Зомби:</strong> Сильный мини-босс, призывающий орды зомби</li>
   <li><strong>Капитан Разорителей:</strong> Особый командир с уникальными трофеями</li>
   <li>Рекомендуется: Мифриловое снаряжение или лучше для полной зачистки крепости</li>
@@ -1244,7 +1244,7 @@ const sidebarGroups = getSidebarGroups('reference');
 <h3>Что лутать в первую очередь</h3>
 <div class="tip"><strong>За чем охотиться?</strong>
 <ul style="margin-top:8px">
-  <li><strong>Ранний этап:</strong> Деревня → союзные персонажи → торговля материалами</li>
+  <li><strong>Ранний этап:</strong> Деревня → союзные жители → торговля материалами</li>
   <li><strong>Средний этап:</strong> Подземные данжи и Крепости Разорителей → Книги знаний + редкая добыча</li>
   <li><strong>Незер:</strong> Крепость Незера → Роза Иссушителя (обязательна для призыва Иссушителя)</li>
   <li><strong>Поздний этап:</strong> Подземный мир → трофеи Повелителя скелетов + адамантовая руда</li>

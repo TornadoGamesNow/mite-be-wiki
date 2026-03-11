@@ -2282,14 +2282,14 @@
     "mcmod_id": 772950,
     "desc": "Deep Underground adamantium ore. In v0.6.0+, adamantium ingots go through the Large Furnace and Obsidian Ingot Mould process.",
     "versions": [
-      "v0.5.7: Hard Mode reduced the per-vein spawn count.",
+      "v0.5.7: Hardcore mode reduced the ore count per vein.",
       "v0.6.0: Adamantium ingots switched to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "desc_en": "Deep Underground adamantium ore. In v0.6.0+, adamantium ingots are produced through the Large Furnace and Obsidian Ingot Mould process.",
     "desc_hu": "Mély földalatti adamantiumérc. A helyi 0.6.0+ adatokban az adamantiumrúd a Nagy Kemence + Obszidián Öntőforma útvonalon készül.",
     "desc_ru": "Глубинная адамантиевая руда Подземного мира. По локальным данным 0.6.0+ адамантиевые слитки получают через Большую печь и обсидиановую форму.",
     "versions_en": [
-      "v0.5.7: Hard Mode reduced the per-vein spawn count.",
+      "v0.5.7: Hardcore mode reduced the ore count per vein.",
       "v0.6.0: Adamantium ingots switched to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "versions_hu": [
@@ -3397,13 +3397,13 @@
     "mcmod_id": 772959,
     "desc": "Very simple early salad made from dandelions and a wooden bowl. Mostly a stopgap plant-food option.",
     "versions": [
-      "v0.5.7: Hard Mode adjusted its water value."
+      "v0.5.7: Hardcore mode adjusted its water value."
     ],
     "desc_en": "Very simple early salad made from dandelions and a wooden bowl. Mostly a stopgap plant-food option.",
     "desc_hu": "Nagyon egyszerű korai saláta pitypangból és fatálból. Inkább átmeneti növényi ételmegoldás.",
     "desc_ru": "Очень простой ранний салат из одуванчиков и деревянной миски. Скорее временный растительный вариант еды.",
     "versions_en": [
-      "v0.5.7: Hard Mode adjusted its water value."
+      "v0.5.7: Hardcore mode adjusted its water value."
     ],
     "versions_hu": [
       "v0.5.7: Hardcore módban módosult a vízértéke."
@@ -3456,14 +3456,14 @@
     "mcmod_id": 772948,
     "desc": "Base silver ore. In v0.6.0+, silver is obtained by Large Furnace smelting and Obsidian Ingot Mould cooling.",
     "versions": [
-      "v0.5.7: Hard Mode spawn placement was adjusted.",
+      "v0.5.7: Hardcore mode adjusted its ore placement.",
       "v0.6.0: Silver ingots switched to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "desc_en": "Base silver ore. In v0.6.0+, silver is obtained through Large Furnace smelting and Obsidian Ingot Mould cooling.",
     "desc_hu": "Alap ezüstérc. A helyi 0.6.0+ adatokban az ezüst a Nagy Kemence + Obszidián Öntőforma útvonalon készül.",
     "desc_ru": "Базовая серебряная руда. По локальным данным 0.6.0+ серебро получают через Большую печь и охлаждение в обсидиановой форме.",
     "versions_en": [
-      "v0.5.7: Hard Mode spawn placement was adjusted.",
+      "v0.5.7: Hardcore mode adjusted its ore placement.",
       "v0.6.0: Silver ingots switched to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "versions_hu": [
@@ -3875,7 +3875,7 @@
       "v0.6.0: Cobblestone crafting changed from 4 stones on any bench to 2 stones on a copper-or-better bench."
     ],
     "versions_hu": [
-      "v0.5.9: Megjelentek a földön spawnoló, eldobható apró kövek.",
+      "v0.5.9: Megjelentek a földön megjelenő, eldobható apró kövek.",
       "v0.6.0: A macskakő craft 4 kőről bármely asztalon 2 kőre változott réz vagy jobb asztalon."
     ],
     "versions_ru": [
@@ -3888,7 +3888,7 @@
     "desc": "Wooden sieve used to process gravel or hell grit. Install a sieve mesh, place the material, and keep clicking to roll for fragments or metal nuggets.",
     "versions": [
       "v0.5.5: Wooden sieves started requiring a separate mesh; hardstone nugget rates were also reduced.",
-      "v0.5.7: Hard Mode sieve rates were lowered.",
+      "v0.5.7: Hardcore mode lowered sieve rates.",
       "v0.6.0: Gravel and hell grit drop tables were rebalanced again."
     ],
     "desc_en": "Wooden sieve used to process gravel or hell grit. Install a sieve mesh, place the material, and keep clicking to roll for fragments or metal nuggets.",
@@ -3896,7 +3896,7 @@
     "desc_ru": "Деревянное сито для обработки гравия или адского гравия. Сначала в него вставляется сетка, затем материал просеивается кликами на осколки и металлические самородки.",
     "versions_en": [
       "v0.5.5: Wooden sieves started requiring a separate mesh; hardstone nugget rates were also reduced.",
-      "v0.5.7: Hard Mode sieve rates were lowered.",
+      "v0.5.7: Hardcore mode lowered sieve rates.",
       "v0.6.0: Gravel and hell grit drop tables were rebalanced again."
     ],
     "versions_hu": [
@@ -5659,7 +5659,7 @@
     "mcmod_id": 785090,
     "desc": "Accessory-slot shield family. Different material tiers trade block chance, durability, and station tier.",
     "versions": [
-      "v0.5.7: Hard Mode reduces all shield block chances by 3%.",
+      "v0.5.7: Hardcore mode reduces all shield block chances by 3%.",
       "v0.5.8: Shields stop blocking once durability falls to 1.",
       "v0.6.0: Shield durability enchantments became available in the advanced enchanting setup."
     ],
@@ -5667,7 +5667,7 @@
     "desc_hu": "Kiegészítőhelyre szerelhető pajzscsalád. Az egyes anyagszintek a blokkolási esély, a tartósság és a szükséges munkaállomás között cserélnek.",
     "desc_ru": "Семейство щитов для слота аксессуаров. Разные материалы дают разный шанс блока, прочность и требуемый уровень станции.",
     "versions_en": [
-      "v0.5.7: Hard Mode reduces all shield block chances by 3%.",
+      "v0.5.7: Hardcore mode reduces all shield block chances by 3%.",
       "v0.5.8: Shields stop blocking once durability falls to 1.",
       "v0.6.0: Shield durability enchantments became available in the advanced enchanting setup."
     ],
@@ -5773,16 +5773,16 @@
       "v0.9.0: Knowledge Books were added as recipe unlocks from dungeon and Pillager Fortress treasure chests."
     ],
     "desc_en": "Version 0.9.0 adds Knowledge Books that can appear in treasure chests found in underground dungeons and surface Pillager Fortresses. Right-clicking a book consumes it and unlocks the linked recipe. If a knowledge is not unlocked, the related item stays hidden in the built-in crafting table and workbench. Spare Knowledge Books can be crafted back into regular books for XP. Different books unlock recipes such as the Elemental Water Bag, Ancient Metal container upgrades, Ancient Metal Filter Paper, Teleportation Stone, Miner Helmet, Bell, Battery, Coolant, Giant TNT, Custom Enchantment Table, Core Destroyer, Enhanced Eye of Ender, and World Marker. Older teleport-scroll references still exist in the data, but their current recipes are marked as removed.",
-    "desc_hu": "A 0.9.0-s verzió Tudáskönyveket ad hozzá, amelyek föld alatti dungeonök kincsesládáiban jelenhetnek meg. A könyvre jobb gombbal kattintva elhasználódik, és feloldja a hozzá tartozó receptet. Ha egy tudás nincs feloldva, a kapcsolódó item rejtve marad a beépített készítőfelületen és a munkaasztalban. A fölösleges Tudáskönyvek sima könyvvé alakíthatók XP-ért. A különböző könyvek többek között az Elemi Víztasakot, az Ősi Fém konténerfejlesztéseket, az Ősi Fém Szűrőpapírt, az Útkövet, a Bányászsisakot, a Harangot, az Akkumulátort, a Hűtőfolyadékot, az Óriás TNT-t, az Egyéni Bűvölőasztalt, a Magpusztítót, a Fejlesztett Ender-szemet és a Világjelölőt oldják fel. Régebbi teleport-tekercses hivatkozások az adatfájlokban még léteznek, de a helyi receptjeik eltávolítottnak vannak jelölve.",
-    "desc_ru": "Сводная запись для Книг знаний. Они выпадают из сундуков сокровищ в подземных данжах, по щелчку ПКМ разблокируют конкретные рецепты, а лишние копии можно переработать обратно в обычные книги за XP.",
+    "desc_hu": "A 0.9.0-s verzió Tudáskönyveket ad hozzá, amelyek föld alatti dungeonök és felszíni Pillager-erődök kincsesládáiban jelenhetnek meg. A könyvre jobb gombbal kattintva elhasználódik, és feloldja a hozzá tartozó receptet. Ha egy tudás nincs feloldva, a kapcsolódó item rejtve marad a beépített készítőfelületen és a munkaasztalban. A fölösleges Tudáskönyvek sima könyvvé alakíthatók XP-ért. A különböző könyvek többek között az Elemi Víztasakot, az Ősi Fém konténerfejlesztéseket, az Ősi Fém Szűrőpapírt, az Útkövet, a Bányászsisakot, a Harangot, az Akkumulátort, a Hűtőfolyadékot, az Óriás TNT-t, az Egyéni Bűvölőasztalt, a Magpusztítót, a Fejlesztett Ender-szemet és a Világjelölőt oldják fel. Régebbi teleport-tekercses hivatkozások az adatfájlokban még léteznek, de a helyi receptjeik eltávolítottnak vannak jelölve.",
+    "desc_ru": "Сводная запись для Книг знаний. Они встречаются в сундуках подземных данжей и наземных Крепостей Разорителей, по щелчку ПКМ разблокируют конкретные рецепты, а лишние копии можно переработать обратно в обычные книги за XP.",
     "versions_en": [
       "v0.9.0: Knowledge Books were added as recipe unlocks from dungeon and Pillager Fortress treasure chests."
     ],
     "versions_hu": [
-      "v0.9.0: Bekerültek a Tudáskönyvek mint föld alatti dungeon kincsesládákból megszerezhető receptfeloldó itemek."
+      "v0.9.0: Bekerültek a Tudáskönyvek mint föld alatti dungeonök és felszíni Pillager-erődök kincsesládáiból megszerezhető receptfeloldó itemek."
     ],
     "versions_ru": [
-      "v0.9.0: Добавили Книги знаний как предметы для разблокировки рецептов из сундуков сокровищ в подземных данжах."
+      "v0.9.0: Добавили Книги знаний как предметы для разблокировки рецептов из сундуков сокровищ в подземных данжах и наземных Крепостях Разорителей."
     ]
   },
   "copper_bucket_filled_with_water": {
