@@ -72,3 +72,62 @@ export function isItemRemoved<T extends RecipeLike>(
   if (!item?.removed_in) return false;
   return !hasActiveRecipe(itemId, recipesByOutput);
 }
+
+export interface MobDropSource {
+  mobId: string;
+  mobName: { hu: string; en: string; ru?: string };
+  qty: string;
+  chance: string;
+}
+
+export function buildMobDropIndex(
+  mobs: { id: string; name: { hu: string; en: string; ru?: string }; drops?: { itemId?: string; qty: string; chance: string }[] }[]
+): Record<string, MobDropSource[]> {
+  const idx: Record<string, MobDropSource[]> = {};
+  for (const mob of mobs) {
+    for (const drop of mob.drops ?? []) {
+      if (!drop.itemId) continue;
+      const cid = getCanonicalItemId(drop.itemId);
+      if (!idx[cid]) idx[cid] = [];
+      idx[cid].push({ mobId: mob.id, mobName: mob.name, qty: drop.qty, chance: drop.chance });
+    }
+  }
+  return idx;
+}
+
+export interface SieveSource {
+  source: 'gravel' | 'nether';
+  chance: number;
+}
+
+export function buildSieveIndex(
+  sieveData: Record<string, { itemId: string; chance: number }[]>
+): Record<string, SieveSource[]> {
+  const idx: Record<string, SieveSource[]> = {};
+  for (const [source, drops] of Object.entries(sieveData)) {
+    for (const drop of drops) {
+      const cid = getCanonicalItemId(drop.itemId);
+      if (!idx[cid]) idx[cid] = [];
+      idx[cid].push({ source: source as 'gravel' | 'nether', chance: drop.chance });
+    }
+  }
+  return idx;
+}
+
+export function buildUsedInIndex<T extends RecipeLike & { ingredients: (string | string[])[] }>(
+  recipes: T[]
+): Record<string, T[]> {
+  const idx: Record<string, T[]> = {};
+  for (const recipe of recipes) {
+    const seen = new Set<string>();
+    for (const ing of recipe.ingredients) {
+      const ids = Array.isArray(ing) ? ing : [ing];
+      for (const id of ids) seen.add(getCanonicalItemId(id));
+    }
+    for (const cid of seen) {
+      if (!idx[cid]) idx[cid] = [];
+      idx[cid].push(recipe);
+    }
+  }
+  return idx;
+}

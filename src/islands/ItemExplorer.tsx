@@ -1,7 +1,9 @@
 import { useState, useEffect, useMemo } from 'react';
 import itemsRaw from '../../data/items.json';
 import recipesRaw from '../../data/recipes_full.json';
-import { buildRecipesByOutput, getCanonicalItemId, getItemAliasIds, isItemRemoved } from '../data/item-status';
+import mobsRaw from '../../data/mobs.json';
+import sieveData from '../../data/sieve.json';
+import { buildRecipesByOutput, getCanonicalItemId, getItemAliasIds, isItemRemoved, buildMobDropIndex, buildSieveIndex, buildUsedInIndex, getRecipeOutputId } from '../data/item-status';
 
 interface ItemInfo {
   mcmod_id?: number;
@@ -38,6 +40,15 @@ const allItems: ItemData[] = Object.entries(itemsRaw as Record<string, Omit<Item
 const recipesByOutput = buildRecipesByOutput(recipesRaw as any[]);
 const itemsWithRecipe = new Set(Object.keys(recipesByOutput));
 const visibleItems = allItems.filter(item => getCanonicalItemId(item.id) === item.id);
+const visibleItemSet = new Set(visibleItems.map(i => i.id));
+const mobDropIndex = buildMobDropIndex(mobsRaw as any[]);
+const sieveIndex = buildSieveIndex(sieveData as any);
+const usedInIndex = buildUsedInIndex(recipesRaw as any[]);
+
+const FURNACE_STATIONS = new Set([
+  'stone_furnace', 'obsidian_furnace', 'netherrack_furnace',
+  'blast_furnace', 'clay_furnace', 'sandstone_furnace',
+]);
 
 const STATION_LABELS: Record<string, { hu: string; en: string; ru: string }> = {
   flint_workbench:          { hu: 'Kovakő Munkaasztal',     en: 'Flint Workbench',          ru: 'Кремнёвый верстак' },
@@ -193,6 +204,20 @@ export default function ItemExplorer() {
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [selected]);
+
+  function applyUrlState() {
+    const p = new URLSearchParams(location.search).get('item');
+    if (p) {
+      const canonical = getCanonicalItemId(p);
+      const found = visibleItems.find(i => i.id === canonical);
+      if (found) setSelected(found);
+    }
+  }
+  useEffect(() => { applyUrlState(); }, []);
+  useEffect(() => {
+    window.addEventListener('popstate', applyUrlState);
+    return () => window.removeEventListener('popstate', applyUrlState);
+  }, []);
 
   function getInfo(itemId: string): ItemInfo | undefined {
     for (const id of getItemAliasIds(itemId)) {
@@ -645,70 +670,255 @@ export default function ItemExplorer() {
                 );
               })()}
 
-              {/* Inline recipes */}
+              {/* Acquisition panel */}
               {(() => {
-                const recs = recipesByOutput[selected.id];
-                if (!recs || recs.length === 0) return null;
+                const allRecs = recipesByOutput[selected.id] ?? [];
+                const craftingRecs = allRecs.filter((r: any) => !FURNACE_STATIONS.has(r.station));
+                const smeltingRecs = allRecs.filter((r: any) => FURNACE_STATIONS.has(r.station));
+                const mobDrops = mobDropIndex[selected.id] ?? [];
+                const sieveSources = sieveIndex[selected.id] ?? [];
+                const hasAny = craftingRecs.length > 0 || smeltingRecs.length > 0 || mobDrops.length > 0 || sieveSources.length > 0;
+                if (!hasAny) return null;
+
+                function renderRecipeCard(r: any, i: number) {
+                  const ings: string[] = (r.ingredients as (string | string[])[]).map((x: string | string[]) =>
+                    Array.isArray(x) ? x[0] : x
+                  );
+                  const ingCounts: Record<string, number> = {};
+                  for (const id of ings) { ingCounts[id] = (ingCounts[id] || 0) + 1; }
+                  const station = STATION_LABELS[r.station]?.[lang as 'hu' | 'en' | 'ru'] ?? r.station;
+                  const isRecipeRemoved = !!r.removed_version;
+                  return (
+                    <div key={i} style={{ background: 'var(--surface)', border: `1px solid ${isRecipeRemoved ? 'rgba(233,69,96,.3)' : 'var(--surface2)'}`,
+                      borderRadius: 6, padding: '8px 12px', fontSize: '.82em', opacity: isRecipeRemoved ? 0.7 : 1 }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 6, flexWrap: 'wrap' }}>
+                        <span style={{ fontWeight: 600, color: 'var(--text)' }}>
+                          {r.outputQty > 1 ? `×${r.outputQty} — ` : ''}{station}
+                        </span>
+                        {isRecipeRemoved && (
+                          <span style={{ fontSize: '.8em', color: '#ff6b6b', fontWeight: 600 }}>
+                            ⚠️ v{r.removed_version}
+                          </span>
+                        )}
+                        {r.skills?.length > 0 && (
+                          <span style={{ fontSize: '.85em', color: 'var(--gold)', opacity: 0.8 }}>
+                            🎓 {r.skills.join(', ')}
+                          </span>
+                        )}
+                      </div>
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
+                        {Object.entries(ingCounts).map(([ingId, cnt]) => {
+                          const ingData = (itemsRaw as any)[ingId];
+                          const ingName = ingData?.name?.[lang as 'hu' | 'en' | 'ru'] ?? ingId;
+                          const ingImg = ingData?.img;
+                          return (
+                            <div key={ingId} title={ingName}
+                              style={{ display: 'flex', alignItems: 'center', gap: 3,
+                                background: 'var(--bg)', border: '1px solid var(--surface2)',
+                                borderRadius: 4, padding: '2px 6px 2px 3px', fontSize: '.85em' }}>
+                              {ingImg ? (
+                                <img src={`${BASE}/${ingImg}`} width={16} height={16}
+                                  style={{ imageRendering: 'pixelated' }} alt={ingId} />
+                              ) : <span style={{ width: 16, textAlign: 'center' }}>📦</span>}
+                              {cnt > 1 && <span style={{ color: 'var(--gold)', fontWeight: 700 }}>×{cnt}</span>}
+                              <span style={{ color: 'var(--text2)' }}>{ingName}</span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  );
+                }
+
+                const CHANCE_COLORS: Record<string, { color: string; bg: string }> = {
+                  always:   { color: '#4ecca3', bg: 'rgba(78,204,163,.15)' },
+                  common:   { color: '#5b9cf6', bg: 'rgba(91,156,246,.15)' },
+                  uncommon: { color: '#f0c040', bg: 'rgba(240,192,64,.15)' },
+                  rare:     { color: '#e94560', bg: 'rgba(233,69,96,.15)' },
+                  looting:  { color: '#b388ff', bg: 'rgba(179,136,255,.15)' },
+                };
+
+                return (
+                  <div style={{ marginBottom: 20 }}>
+                    <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
+                      color: 'var(--text2)', marginBottom: 10 }}>
+                      {lang === 'hu' ? 'Hol szerzem be?' : lang === 'ru' ? 'Как получить' : 'How to obtain'}
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+
+                      {craftingRecs.length > 0 && (
+                        <div>
+                          <div style={{ fontSize: '.7em', color: 'var(--text2)', marginBottom: 5,
+                            display: 'flex', alignItems: 'center', gap: 5 }}>
+                            <span>⚒</span>
+                            <span style={{ fontWeight: 600 }}>
+                              {lang === 'hu' ? 'Kézműves' : lang === 'ru' ? 'Крафт' : 'Crafting'} ({craftingRecs.length})
+                            </span>
+                          </div>
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                            {craftingRecs.slice(0, 3).map((r: any, i: number) => renderRecipeCard(r, i))}
+                            {craftingRecs.length > 3 && (
+                              <div style={{ fontSize: '.75em', color: 'var(--text2)', textAlign: 'center' }}>
+                                {lang === 'hu' ? `+ ${craftingRecs.length - 3} további` : lang === 'ru' ? `+ ещё ${craftingRecs.length - 3}` : `+ ${craftingRecs.length - 3} more`}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      )}
+
+                      {smeltingRecs.length > 0 && (
+                        <div>
+                          <div style={{ fontSize: '.7em', color: 'var(--text2)', marginBottom: 5,
+                            display: 'flex', alignItems: 'center', gap: 5 }}>
+                            <span>🔥</span>
+                            <span style={{ fontWeight: 600 }}>
+                              {lang === 'hu' ? 'Olvasztás' : lang === 'ru' ? 'Плавка' : 'Smelting'} ({smeltingRecs.length})
+                            </span>
+                          </div>
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                            {smeltingRecs.slice(0, 2).map((r: any, i: number) => renderRecipeCard(r, i))}
+                            {smeltingRecs.length > 2 && (
+                              <div style={{ fontSize: '.75em', color: 'var(--text2)', textAlign: 'center' }}>
+                                {lang === 'hu' ? `+ ${smeltingRecs.length - 2} további` : lang === 'ru' ? `+ ещё ${smeltingRecs.length - 2}` : `+ ${smeltingRecs.length - 2} more`}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      )}
+
+                      {mobDrops.length > 0 && (
+                        <div>
+                          <div style={{ fontSize: '.7em', color: 'var(--text2)', marginBottom: 5,
+                            display: 'flex', alignItems: 'center', gap: 5 }}>
+                            <span>🐾</span>
+                            <span style={{ fontWeight: 600 }}>
+                              {lang === 'hu' ? 'Mob drop' : lang === 'ru' ? 'Дроп мобов' : 'Mob drop'} ({mobDrops.length})
+                            </span>
+                          </div>
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                            {mobDrops.map((drop, i) => {
+                              const chanceStyle = CHANCE_COLORS[drop.chance] ?? { color: 'var(--text2)', bg: 'var(--surface2)' };
+                              return (
+                                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 6,
+                                  background: 'var(--surface)', border: '1px solid var(--surface2)',
+                                  borderRadius: 6, padding: '5px 10px', fontSize: '.82em' }}>
+                                  <span style={{ flex: 1, fontWeight: 500, color: 'var(--text)' }}>
+                                    {drop.mobName[lang as 'hu' | 'en' | 'ru'] ?? drop.mobName.en}
+                                  </span>
+                                  <span style={{ color: 'var(--text2)', fontSize: '.9em' }}>{drop.qty}</span>
+                                  <span style={{ padding: '1px 6px', borderRadius: 8, fontSize: '.8em', fontWeight: 600,
+                                    color: chanceStyle.color, background: chanceStyle.bg,
+                                    border: `1px solid ${chanceStyle.color}55` }}>
+                                    {drop.chance}
+                                  </span>
+                                  <a href={`${BASE}/mobs/?mob=${drop.mobId}`}
+                                    style={{ color: 'var(--text2)', fontSize: '.9em', lineHeight: 1,
+                                      textDecoration: 'none', opacity: 0.7 }}>→</a>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      )}
+
+                      {sieveSources.length > 0 && (
+                        <div>
+                          <div style={{ fontSize: '.7em', color: 'var(--text2)', marginBottom: 5,
+                            display: 'flex', alignItems: 'center', gap: 5 }}>
+                            <span>🔎</span>
+                            <span style={{ fontWeight: 600 }}>
+                              {lang === 'hu' ? 'Szita' : lang === 'ru' ? 'Сито' : 'Sieve'} ({sieveSources.length})
+                            </span>
+                          </div>
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                            {sieveSources.map((s, i) => {
+                              const label = s.source === 'gravel'
+                                ? (lang === 'hu' ? 'Kavics szita' : lang === 'ru' ? 'Гравийное сито' : 'Gravel Sieve')
+                                : (lang === 'hu' ? 'Nether szita' : lang === 'ru' ? 'Адское сито' : 'Nether Sieve');
+                              return (
+                                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 6,
+                                  background: 'var(--surface)', border: '1px solid var(--surface2)',
+                                  borderRadius: 6, padding: '5px 10px', fontSize: '.82em' }}>
+                                  <span style={{ flex: 1, color: 'var(--text)' }}>{label}</span>
+                                  <span style={{ fontWeight: 700, color: 'var(--gold)' }}>{s.chance}%</span>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      )}
+
+                    </div>
+                  </div>
+                );
+              })()}
+
+              {/* Used In panel */}
+              {(() => {
+                const usedIn: any[] = usedInIndex[getCanonicalItemId(selected.id)] ?? [];
+                if (usedIn.length === 0) return null;
+                const active = usedIn.filter((r: any) => !r.removed_version);
+                const removed = usedIn.filter((r: any) => r.removed_version);
+                const sorted = [...active, ...removed];
+                const LIMIT = 5;
+                const visible = sorted.slice(0, LIMIT);
+                const extra = sorted.length - LIMIT;
                 return (
                   <div style={{ marginBottom: 20 }}>
                     <div style={{ fontSize: '.72em', textTransform: 'uppercase', letterSpacing: '.6px',
                       color: 'var(--text2)', marginBottom: 8 }}>
-                      {lang === 'hu' ? 'Receptek' : lang === 'ru' ? 'Рецепты' : 'Recipes'} ({recs.length})
+                      🧩 {lang === 'hu' ? `Mire használják? (${usedIn.length})` : lang === 'ru' ? `Используется в (${usedIn.length})` : `Used in (${usedIn.length})`}
                     </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-                      {recs.slice(0, 3).map((r: any, i: number) => {
-                        const ings: string[] = (r.ingredients as (string | string[])[]).map((x: string | string[]) =>
-                          Array.isArray(x) ? x[0] : x
-                        );
-                        const ingCounts: Record<string, number> = {};
-                        for (const id of ings) { ingCounts[id] = (ingCounts[id] || 0) + 1; }
-                        const station = STATION_LABELS[r.station]?.[lang as 'hu' | 'en' | 'ru'] ?? r.station;
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                      {visible.map((r: any, i: number) => {
+                        const outputId = getRecipeOutputId(r.output);
+                        const outputItem = (itemsRaw as any)[outputId];
+                        const outputName = outputItem?.name?.[lang as 'hu' | 'en' | 'ru'] ?? outputId;
+                        const outputImg = outputItem?.img;
                         const isRecipeRemoved = !!r.removed_version;
+                        const isClickable = visibleItemSet.has(outputId);
+                        const station = STATION_LABELS[r.station]?.[lang as 'hu' | 'en' | 'ru'] ?? r.station;
                         return (
-                          <div key={i} style={{ background: 'var(--surface)', border: `1px solid ${isRecipeRemoved ? 'rgba(233,69,96,.3)' : 'var(--surface2)'}`,
-                            borderRadius: 6, padding: '8px 12px', fontSize: '.82em', opacity: isRecipeRemoved ? 0.7 : 1 }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 6, flexWrap: 'wrap' }}>
-                              <span style={{ fontWeight: 600, color: 'var(--text)' }}>
-                                {r.outputQty > 1 ? `×${r.outputQty} — ` : ''}{station}
+                          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 6,
+                            background: 'var(--surface)', border: `1px solid ${isRecipeRemoved ? 'rgba(233,69,96,.3)' : 'var(--surface2)'}`,
+                            borderRadius: 6, padding: '5px 10px', fontSize: '.82em',
+                            opacity: isRecipeRemoved ? 0.5 : 1 }}>
+                            <div
+                              onClick={isClickable ? () => setSelected(visibleItems.find(x => x.id === outputId)!) : undefined}
+                              style={{ display: 'flex', alignItems: 'center', gap: 5, flex: 1, minWidth: 0,
+                                cursor: isClickable ? 'pointer' : 'default',
+                                textDecoration: isClickable ? 'underline' : 'none',
+                                textDecorationColor: 'rgba(255,255,255,.2)',
+                                color: 'var(--text)' }}>
+                              {outputImg
+                                ? <img src={`${BASE}/${outputImg}`} width={16} height={16}
+                                    style={{ imageRendering: 'pixelated', flexShrink: 0 }} alt={outputId} />
+                                : <span style={{ width: 16, textAlign: 'center', flexShrink: 0 }}>📦</span>}
+                              <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                                {outputName}
                               </span>
-                              {isRecipeRemoved && (
-                                <span style={{ fontSize: '.8em', color: '#ff6b6b', fontWeight: 600 }}>
-                                  ⚠️ v{r.removed_version}
-                                </span>
-                              )}
-                              {r.skills?.length > 0 && (
-                                <span style={{ fontSize: '.85em', color: 'var(--gold)', opacity: 0.8 }}>
-                                  🎓 {r.skills.join(', ')}
-                                </span>
-                              )}
                             </div>
-                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
-                              {Object.entries(ingCounts).map(([ingId, cnt]) => {
-                                const ingData = (itemsRaw as any)[ingId];
-                                const ingName = ingData?.name?.[lang as 'hu' | 'en' | 'ru'] ?? ingId;
-                                const ingImg = ingData?.img;
-                                return (
-                                  <div key={ingId} title={ingName}
-                                    style={{ display: 'flex', alignItems: 'center', gap: 3,
-                                      background: 'var(--bg)', border: '1px solid var(--surface2)',
-                                      borderRadius: 4, padding: '2px 6px 2px 3px', fontSize: '.85em' }}>
-                                    {ingImg ? (
-                                      <img src={`${BASE}/${ingImg}`} width={16} height={16}
-                                        style={{ imageRendering: 'pixelated' }} alt={ingId} />
-                                    ) : <span style={{ width: 16, textAlign: 'center' }}>📦</span>}
-                                    {cnt > 1 && <span style={{ color: 'var(--gold)', fontWeight: 700 }}>×{cnt}</span>}
-                                    <span style={{ color: 'var(--text2)' }}>{ingName}</span>
-                                  </div>
-                                );
-                              })}
-                            </div>
+                            {r.outputQty > 1 && (
+                              <span style={{ color: 'var(--gold)', fontWeight: 700, flexShrink: 0 }}>×{r.outputQty}</span>
+                            )}
+                            {isRecipeRemoved && (
+                              <span style={{ fontSize: '.8em', color: '#ff6b6b', flexShrink: 0 }}>⚠️</span>
+                            )}
+                            <span style={{ fontSize: '.8em', color: 'var(--text2)', flexShrink: 0 }}>{station}</span>
                           </div>
                         );
                       })}
-                      {recs.length > 3 && (
-                        <div style={{ fontSize: '.78em', color: 'var(--text2)', textAlign: 'center' }}>
-                          {lang === 'hu' ? `+ ${recs.length - 3} további recept a Receptek oldalon` : lang === 'ru' ? `+ ещё ${recs.length - 3} рецептов на странице рецептов` : `+ ${recs.length - 3} more recipes on the Recipes page`}
-                        </div>
+                      {extra > 0 && (
+                        <a
+                          href={`${BASE}/recipes/?ingredient=${encodeURIComponent(getCanonicalItemId(selected.id))}`}
+                          style={{ fontSize: '.78em', color: 'var(--gold)', textAlign: 'center',
+                            padding: '4px 0', textDecoration: 'none', opacity: 0.85 }}>
+                          {lang === 'hu'
+                            ? `+ ${extra} további a Receptek oldalon →`
+                            : lang === 'ru'
+                            ? `+ ещё ${extra} на странице рецептов →`
+                            : `+ ${extra} more on the Recipes page →`}
+                        </a>
                       )}
                     </div>
                   </div>
