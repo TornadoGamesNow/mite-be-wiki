@@ -4250,7 +4250,7 @@
   {
     "id": "campfire_idle_215",
     "item_num": 194,
-    "output": "campfire",
+    "output": "campfire_idle",
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 330,
@@ -45471,38 +45471,6 @@
         "obsidian"
       ]
     ]
-  },
-  {
-    "id": "campfire_idle_841502",
-    "item_num": 194,
-    "output": "campfire_idle",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 330,
-    "skills": [],
-    "ingredients": [
-      "stick",
-      "stick",
-      [
-        "planks_oak",
-        "planks_spruce",
-        "planks_birch",
-        "planks_jungle"
-      ],
-      [
-        "log_oak",
-        "log_spruce",
-        "log_birch",
-        "log_jungle"
-      ],
-      [
-        "planks_oak",
-        "planks_spruce",
-        "planks_birch",
-        "planks_jungle"
-      ]
-    ],
-    "shaped": false
   },
   {
     "id": "glow_stone_torch_841503",
