@@ -4194,7 +4194,7 @@
     "output": "hardened_clay",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 400,
+    "difficulty": 25,
     "skills": [
       "masonry"
     ],
@@ -32142,7 +32142,7 @@
     "output": "mithril_dagger",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 11200,
+    "difficulty": 6425,
     "skills": [
       "blacksmithing"
     ],
@@ -32176,7 +32176,7 @@
     "output": "adamantium_dagger",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 44800,
+    "difficulty": 25625,
     "skills": [
       "blacksmithing"
     ],
@@ -32521,7 +32521,7 @@
     "output": "charcoal",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 50,
+    "difficulty": 25,
     "skills": [],
     "ingredients": [
       [
@@ -33664,10 +33664,10 @@
       "masonry"
     ],
     "ingredients": [
-      "bricks",
-      "bricks",
-      "bricks",
-      "bricks"
+      "brick",
+      "brick",
+      "brick",
+      "brick"
     ],
     "shaped": true,
     "pattern": [
@@ -35364,7 +35364,7 @@
     "output": "sinew",
     "outputQty": 4,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 50,
     "skills": [],
     "ingredients": [
       "copper_dagger",
@@ -43169,6 +43169,232 @@
     ],
     "ingredients": [
       "clay_ball"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "copper_ingot_from_nuggets",
+    "item_num": 1,
+    "output": "copper_ingot",
+    "outputQty": 1,
+    "station": "copper_workbench",
+    "difficulty": 400,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "copper_nugget",
+      "copper_nugget",
+      "copper_nugget",
+      "copper_nugget",
+      "copper_nugget",
+      "copper_nugget",
+      "copper_nugget",
+      "copper_nugget",
+      "copper_nugget"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "silver_ingot_from_nuggets",
+    "item_num": 1,
+    "output": "silver_ingot",
+    "outputQty": 1,
+    "station": "silver_workbench",
+    "difficulty": 400,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "silver_nugget",
+      "silver_nugget",
+      "silver_nugget",
+      "silver_nugget",
+      "silver_nugget",
+      "silver_nugget",
+      "silver_nugget",
+      "silver_nugget",
+      "silver_nugget"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "gold_ingot_from_nuggets",
+    "item_num": 1,
+    "output": "gold_ingot",
+    "outputQty": 1,
+    "station": "gold_workbench",
+    "difficulty": 400,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "gold_nugget",
+      "gold_nugget",
+      "gold_nugget",
+      "gold_nugget",
+      "gold_nugget",
+      "gold_nugget",
+      "gold_nugget",
+      "gold_nugget",
+      "gold_nugget"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "iron_ingot_from_nuggets",
+    "item_num": 1,
+    "output": "iron_ingot",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 800,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "iron_nugget",
+      "iron_nugget",
+      "iron_nugget",
+      "iron_nugget",
+      "iron_nugget",
+      "iron_nugget",
+      "iron_nugget",
+      "iron_nugget",
+      "iron_nugget"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "mithril_bar_from_nuggets",
+    "item_num": 1,
+    "output": "mithril_bar",
+    "outputQty": 1,
+    "station": "mithril_workbench",
+    "difficulty": 6400,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "mithril_nugget",
+      "mithril_nugget",
+      "mithril_nugget",
+      "mithril_nugget",
+      "mithril_nugget",
+      "mithril_nugget",
+      "mithril_nugget",
+      "mithril_nugget",
+      "mithril_nugget"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "adamantium_bar_from_nuggets",
+    "item_num": 1,
+    "output": "adamantium_bar",
+    "outputQty": 1,
+    "station": "adamantium_workbench",
+    "difficulty": 25600,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "adamantium_nugget",
+      "adamantium_nugget",
+      "adamantium_nugget",
+      "adamantium_nugget",
+      "adamantium_nugget",
+      "adamantium_nugget",
+      "adamantium_nugget",
+      "adamantium_nugget",
+      "adamantium_nugget"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "ancient_metal_ingot_from_nuggets",
+    "item_num": 1,
+    "output": "ancient_metal_ingot",
+    "outputQty": 1,
+    "station": "ancient_metal_workbench",
+    "difficulty": 1600,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "ancient_metal_nugget",
+      "ancient_metal_nugget",
+      "ancient_metal_nugget",
+      "ancient_metal_nugget",
+      "ancient_metal_nugget",
+      "ancient_metal_nugget",
+      "ancient_metal_nugget",
+      "ancient_metal_nugget",
+      "ancient_metal_nugget"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "cactus_green_furnace",
+    "item_num": 1,
+    "output": "cactus_green",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 25,
+    "skills": [],
+    "ingredients": [
+      "cactus",
+      "coal"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "obsidian_knife_1010",
+    "item_num": 1,
+    "output": "obsidian_knife",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 290,
+    "skills": [
+      "masonry"
+    ],
+    "ingredients": [
+      "obsidian",
+      "sinew",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "obsidian_knife_841335",
+    "item_num": 1,
+    "output": "obsidian_knife",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 290,
+    "skills": [
+      "masonry"
+    ],
+    "ingredients": [
+      "obsidian",
+      "leather_rope",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "obsidian_knife_841336",
+    "item_num": 1,
+    "output": "obsidian_knife",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 290,
+    "skills": [
+      "masonry"
+    ],
+    "ingredients": [
+      "obsidian",
+      "string",
+      "stick"
     ],
     "shaped": false
   }

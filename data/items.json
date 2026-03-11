@@ -11589,5 +11589,16 @@
     "img": "img/items/ancient_metal_knife.png",
     "tier": "ancient_metal",
     "category": "tool"
+  },
+  "obsidian_knife": {
+    "name": {
+      "hu": "Obszidián Kés",
+      "en": "Obsidian Knife",
+      "ru": "Обсидиановый нож"
+    },
+    "img": "img/items/obsidian_knife.png",
+    "tier": "obsidian",
+    "category": "tool",
+    "max_durability": 800
   }
 }
