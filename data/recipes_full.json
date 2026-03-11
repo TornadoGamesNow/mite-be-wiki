@@ -36962,10 +36962,11 @@
     "outputQty": 4,
     "station": "stone_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "mining"
+    ],
     "ingredients": [
-      "redstone_ore",
-      "coal"
+      "redstone_ore"
     ],
     "shaped": false
   },
@@ -45483,6 +45484,19 @@
     "ingredients": [
       "glowstone_dust",
       "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "redstone_841505",
+    "item_num": 331,
+    "output": "redstone",
+    "outputQty": 9,
+    "station": "flint_workbench",
+    "difficulty": 0,
+    "skills": [],
+    "ingredients": [
+      "redstone_block"
     ],
     "shaped": false
   }
