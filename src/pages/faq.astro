@@ -23,7 +23,7 @@ const sidebarGroups = getSidebarGroups('faq');
 <div class="faq-list">
 <div class="faq-item">
 <h4>❓ Miért nem tudom letörni a fát puszta kézzel?</h4>
-<p>MITE:BE-ben <strong>semmit nem tudsz puszta kézzel eltörni</strong>. Fához <strong>Kova Balta</strong> kell (Kova + Bőrkötél + Fabot) — a kés csak bőrvágásra és fű vágásra jó, nem favágásra! Lásd a Kova korszak szekciót.</p>
+<p>MITE:BE-ben <strong>semmit nem tudsz puszta kézzel eltörni</strong>. Fához <strong>Kova Balta</strong> kell (Kova + Bőrkötél + 2 Fabot) — a kés csak bőrvágásra és fű vágásra jó, nem favágásra! Lásd a Kova korszak szekciót.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Hogyan szerzek kovát az elején?</h4>
@@ -54,7 +54,7 @@ const sidebarGroups = getSidebarGroups('faq');
 <h4>❓ Kialszanak a fáklyák?</h4>
 <p><strong>Hardcore módban:</strong> Igen! Az elhelyezett fáklyák <strong>3 játékbeli nap</strong> után kialszanak. Emellett az <strong>eső is eloltja</strong> a szabadban lévő fáklyákat.</p>
 <p><strong>Simple módban:</strong> A fáklyák <strong>NEM alszanak ki</strong> idővel — de az <strong>eső itt is eloltja</strong> őket! Fedett helyre tedd a fáklyáidat.</p>
-<p>Mindkét módban: ha a menedéked sötétbe kerül, mobok jelenhetnek meg benne. Mindig legyen nálad <strong>Tűzütő</strong> (legkorábbi: Réz Tűzütő = Réz Cseppkő + Kova). <strong>Kivétel:</strong> Síkság biome-ban a fáklyák soha nem alszanak ki!</p>
+<p>Mindkét módban: ha a menedéked sötétbe kerül, mobok jelenhetnek meg benne. Mindig legyen nálad <strong>Tűzütő</strong> (legkorábbi: Réz Tűzütő = Réz Ércdarab + Kova). <strong>Kivétel:</strong> Síkság biome-ban a fáklyák soha nem alszanak ki!</p>
 </div>
 <div class="faq-item">
 <h4>❓ Miért bányássza ki a zombi a falamat?</h4>
@@ -94,7 +94,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ Mi az a Szita (Sieve) és mire jó?</h4>
-<p>A Szita (Sieve) az egyik legfontosabb forrása az érceknek az korai játékban. Kavicsot tegyél a szitára, és kattints rá ismételten — különböző anyagok esnek ki: <strong>Kova, Ón, Csont</strong> töredékek és egyéb ritka tárgyak. A jobb anyagból készített szita (Réz, Vas) jobb drop rátával dolgozik. A szita recepthez <strong>Barkácsolás</strong> képesség szükséges. Részletek a <a href={`${base}/recipes/?skill=tinkering`}>Barkácsolás recepteknél</a>.</p>
+<p>A Szita (Sieve) az egyik legfontosabb forrása az érceknek az korai játékban. Kavicsot tegyél a szitára, és kattints rá ismételten — különböző anyagok esnek ki: <strong>Kova, Ón, Csont</strong> töredékek és egyéb ritka tárgyak. A jobb anyagból készített szita (Réz, Vas) jobb drop rátával dolgozik. Az alap szita recepthez nem kell képesség, de a fa szitavariánsok (Tölgy, Lucfenyő stb.) <strong>Ácsmesterség</strong> képességet igényelnek. Részletek a <a href={`${base}/recipes/?skill=carpentry`}>Ácsmesterség recepteknél</a>.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Hogyan szerzek Tudáskönyveket?</h4>
@@ -106,7 +106,7 @@ const sidebarGroups = getSidebarGroups('faq');
 <ul style="margin:4px 0">
   <li><strong>Fáklyák:</strong> Hardcore-ban 3 nap után kialszanak; Simple-ben nem alszanak ki (de eső eloltja mindkettőben)</li>
   <li><strong>Mobok:</strong> Hardcore-ban agresszívabbak, gyorsabbak és többen vannak</li>
-  <li><strong>Halál:</strong> Hardcore-ban nem jelensz meg újra automatikusan (szükséges az Ágy)</li>
+  <li><strong>Halál:</strong> Hardcore-ban permadeath — a világ törlődik halálkor</li>
   <li><strong>Hőmérséklet:</strong> Hardcore-ban gyorsabban változik</li>
 </ul>
 <p>Kezdőknek <strong>Simple mód ajánlott</strong>. Átváltani csak new game-mel lehet.</p>
@@ -126,7 +126,7 @@ const sidebarGroups = getSidebarGroups('faq');
 <div class="faq-list">
 <div class="faq-item">
 <h4>❓ Why can't I break wood with my bare hands?</h4>
-<p>In MITE:BE <strong>you can't break anything bare-handed</strong>. Breaking wood requires a <strong>Flint Hatchet</strong> (Flint + Leather Rope + Stick) — the knife is only for cutting leather and grass, not wood! See the Flint Age section.</p>
+<p>In MITE:BE <strong>you can't break anything bare-handed</strong>. Breaking wood requires a <strong>Flint Hatchet</strong> (Flint + Leather Rope + 2 Sticks) — the knife is only for cutting leather and grass, not wood! See the Flint Age section.</p>
 </div>
 <div class="faq-item">
 <h4>❓ How do I get flint at the start?</h4>
@@ -197,7 +197,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ What is the Sieve and what is it for?</h4>
-<p>The Sieve is one of the most important early-game ore sources. Place gravel on the sieve and click repeatedly — various materials drop out: <strong>Flint, Tin, Bone</strong> fragments, and other rare items. Better material sieves (Copper, Iron) have better drop rates. Crafting a sieve requires the <strong>Tinkering</strong> skill. See <a href={`${base}/recipes/?skill=tinkering`}>Tinkering recipes</a> for details.</p>
+<p>The Sieve is one of the most important early-game ore sources. Place gravel on the sieve and click repeatedly — various materials drop out: <strong>Flint, Tin, Bone</strong> fragments, and other rare items. Better material sieves (Copper, Iron) have better drop rates. The basic sieve recipe requires no skill, but wood sieve variants (Oak, Spruce, etc.) require the <strong>Carpentry</strong> skill. See <a href={`${base}/recipes/?skill=carpentry`}>Carpentry recipes</a> for details.</p>
 </div>
 <div class="faq-item">
 <h4>❓ How do I get Knowledge Books?</h4>
@@ -209,7 +209,7 @@ const sidebarGroups = getSidebarGroups('faq');
 <ul style="margin:4px 0">
   <li><strong>Torches:</strong> In Hardcore they burn out after 3 days; in Simple they don't (but rain extinguishes both)</li>
   <li><strong>Mob spawning:</strong> More aggressive, faster, more mobs in Hardcore</li>
-  <li><strong>Death:</strong> In Hardcore you don't auto-respawn (a Bed is required)</li>
+  <li><strong>Death:</strong> Hardcore has permadeath — the world is deleted on death</li>
   <li><strong>Temperature:</strong> Changes faster in Hardcore</li>
 </ul>
 <p><strong>Simple mode is recommended for beginners.</strong> Switching modes requires a new game.</p>
@@ -511,7 +511,7 @@ const sidebarGroups = getSidebarGroups('faq');
 <div class="faq-list">
 <div class="faq-item">
 <h4>❓ Почему я не могу сломать дерево голыми руками?</h4>
-<p>В MITE:BE <strong>ничего нельзя сломать голыми руками</strong>. Для рубки дерева нужен <strong>Кремнёвый топорик</strong> (Кремень + Кожаная верёвка + Палка) — нож годится только для резки кожи и травы, но не для дерева! Смотрите раздел Кремнёвый век.</p>
+<p>В MITE:BE <strong>ничего нельзя сломать голыми руками</strong>. Для рубки дерева нужен <strong>Кремнёвый топорик</strong> (Кремень + Кожаная верёвка + 2 Палки) — нож годится только для резки кожи и травы, но не для дерева! Смотрите раздел Кремнёвый век.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Как получить кремень в начале игры?</h4>
@@ -594,7 +594,7 @@ const sidebarGroups = getSidebarGroups('faq');
 <ul style="margin:4px 0">
   <li><strong>Факелы:</strong> В Хардкоре гаснут через 3 дня; в Простом — нет (но дождь гасит оба)</li>
 <li><strong>Появление мобов:</strong> В Хардкоре мобы агрессивнее, быстрее и их больше</li>
-  <li><strong>Смерть:</strong> В Хардкоре нет авто-возрождения (нужна Кровать)</li>
+  <li><strong>Смерть:</strong> В Хардкоре перманентная смерть — мир удаляется при гибели</li>
   <li><strong>Температура:</strong> В Хардкоре меняется быстрее</li>
 </ul>
 <p>Новичкам рекомендуется <strong>Простой режим</strong>. Смена режима требует новой игры.</p>
