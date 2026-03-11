@@ -26459,7 +26459,8 @@
       "leather_rope",
       "stick"
     ],
-    "shaped": false
+    "shaped": false,
+    "removed_version": "pre-0.5.6"
   },
   {
     "id": "sharp_flint_spear_1140",
@@ -29950,7 +29951,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Fűkötél",
+      "hu": "FĹ±kĂ¶tĂ©l",
       "en": "Straw Rope"
     },
     "pattern": [
@@ -29984,7 +29985,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Egyszerű Kovakő Kés",
+      "hu": "EgyszerĹ± KovakĹ‘ KĂ©s",
       "en": "Simple Flint Knife"
     },
     "pattern": [
@@ -30020,7 +30021,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Kova (Kőzet)",
+      "hu": "Kova (KĹ‘zet)",
       "en": "Flint"
     },
     "pattern": [
@@ -30053,7 +30054,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Kovakő Kés",
+      "hu": "KovakĹ‘ KĂ©s",
       "en": "Flint Knife"
     },
     "pattern": [
@@ -30090,7 +30091,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Kőzet Rövid Fejsze",
+      "hu": "KĹ‘zet RĂ¶vid Fejsze",
       "en": "Stone Short Hatchet"
     },
     "pattern": [
@@ -30108,7 +30109,8 @@
       "flint-age",
       "tool",
       "hatchet"
-    ]
+    ],
+    "removed_version": "pre-0.5.5"
   },
   {
     "id": "flint_workbench",
@@ -30186,7 +30188,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Réz Munkaasztal",
+      "hu": "RĂ©z Munkaasztal",
       "en": "Copper Toolbench"
     },
     "pattern": [
@@ -30233,7 +30235,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Ezüst Munkaasztal",
+      "hu": "EzĂĽst Munkaasztal",
       "en": "Silver Toolbench"
     },
     "pattern": [
@@ -30374,7 +30376,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Keménykő Munkaasztal",
+      "hu": "KemĂ©nykĹ‘ Munkaasztal",
       "en": "Hardstone Toolbench"
     },
     "pattern": [
@@ -30510,7 +30512,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Keményített Agyag Kemence",
+      "hu": "KemĂ©nyĂ­tett Agyag Kemence",
       "en": "Hardened Clay Furnace"
     },
     "pattern": [
@@ -30560,7 +30562,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Obszidián",
+      "hu": "ObszidiĂˇn",
       "en": "Obsidian"
     },
     "pattern": [
@@ -30599,7 +30601,7 @@
     ],
     "shaped": true,
     "label": {
-      "hu": "Obszidián Öntőforma",
+      "hu": "ObszidiĂˇn Ă–ntĹ‘forma",
       "en": "Obsidian Ingot Mold"
     },
     "pattern": [
@@ -31506,8 +31508,10 @@
     "output": "wood_club",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 75,
-    "skills": [],
+    "difficulty": 185,
+    "skills": [
+      "carpentry"
+    ],
     "ingredients": [
       "planks_oak",
       "planks_oak",
@@ -31606,7 +31610,7 @@
     "output": "chip_flint",
     "outputQty": 4,
     "station": "hand",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "flint"
@@ -32327,46 +32331,15 @@
     "added_version": "0.6.0"
   },
   {
-    "id": "hardstone_hatchet_32041_legacy",
-    "item_num": 32041,
-    "output": "hardstone_hatchet",
-    "outputQty": 1,
-    "station": "hardstone_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "hardstone_ingot",
-      "stick",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "hardstone_ingot",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
     "id": "hardstone_hatchet_32041",
     "item_num": 32041,
     "output": "hardstone_hatchet",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 1650,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "hardstone_ingot",
       "stick",
@@ -32398,145 +32371,15 @@
     "output": "hardstone_chain",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 711.11,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "hardstone_ingot",
       "hardstone_ingot"
     ],
     "shaped": false
-  },
-  {
-    "id": "adamantium_hatchet_32043",
-    "item_num": 32043,
-    "output": "adamantium_hatchet",
-    "outputQty": 1,
-    "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "adamantium_bar",
-      "stick",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "adamantium_bar",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ],
-    "removed_version": "0.5.5"
-  },
-  {
-    "id": "ancient_metal_hatchet_32044",
-    "item_num": 32044,
-    "output": "ancient_metal_hatchet",
-    "outputQty": 1,
-    "station": "ancient_metal_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "ancient_metal_ingot",
-      "stick",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "ancient_metal_ingot",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ],
-    "removed_version": "0.5.5"
-  },
-  {
-    "id": "mithril_hatchet_32045",
-    "item_num": 32045,
-    "output": "mithril_hatchet",
-    "outputQty": 1,
-    "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "mithril_bar",
-      "stick",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "mithril_bar",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ],
-    "removed_version": "0.5.5"
-  },
-  {
-    "id": "silver_hatchet_32046_legacy",
-    "item_num": 32046,
-    "output": "silver_hatchet",
-    "outputQty": 1,
-    "station": "silver_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "silver_ingot",
-      "stick",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "silver_ingot",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
   },
   {
     "id": "silver_hatchet_32046",
@@ -32574,39 +32417,6 @@
     "added_version": "0.6.0"
   },
   {
-    "id": "gold_hatchet_32047_legacy",
-    "item_num": 32047,
-    "output": "gold_hatchet",
-    "outputQty": 1,
-    "station": "gold_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "gold_ingot",
-      "stick",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "gold_ingot",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ],
-    "removed_version": "0.6.0"
-  },
-  {
     "id": "gold_hatchet_32047",
     "item_num": 32047,
     "output": "gold_hatchet",
@@ -32640,43 +32450,6 @@
       ]
     ],
     "added_version": "0.6.0"
-  },
-  {
-    "id": "bedrock_pulverizer_32048",
-    "item_num": 32048,
-    "output": "bedrock_pulverizer",
-    "outputQty": 1,
-    "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "beacon",
-      "redstone_block",
-      "obsidian",
-      "redstone_block",
-      "obsidian",
-      "obsidian",
-      "obsidian"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "beacon",
-        "_"
-      ],
-      [
-        "redstone_block",
-        "obsidian",
-        "redstone_block"
-      ],
-      [
-        "obsidian",
-        "obsidian",
-        "obsidian"
-      ]
-    ],
-    "removed_version": "pre-0.5.5"
   },
   {
     "id": "enchanting_table_emerald_32051",
@@ -33912,7 +33685,7 @@
     "item_num": 32143,
     "output": "carbon_crystal_shard",
     "outputQty": 1,
-    "station": "blast_furnace",
+    "station": "workbench",
     "difficulty": 0,
     "skills": [],
     "ingredients": [
@@ -33944,13 +33717,30 @@
     "item_num": 32143,
     "output": "carbon_crystal_shard",
     "outputQty": 4,
-    "station": "flint_workbench",
+    "station": "workbench",
     "difficulty": 0,
     "skills": [],
     "ingredients": [
       "carbon_crystal"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "carbon_crystal",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "nether_quartz_shard_32144",
@@ -34842,8 +34632,10 @@
     "output": "beef_stew",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 75,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "potato",
       "cooked_beef",
@@ -34875,8 +34667,10 @@
     "output": "cereal",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 75,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "wheat",
       "sugar",
@@ -34908,8 +34702,10 @@
     "output": "sorbet",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 100,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "sugar",
       "snowball",
@@ -35019,8 +34815,10 @@
     "output": "porridge",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 100,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "blue_berries",
       "sugar",
@@ -35131,70 +34929,6 @@
       "coal"
     ],
     "shaped": false,
-    "removed_version": "pre-0.5.5"
-  },
-  {
-    "id": "sinew_0",
-    "item_num": 1,
-    "output": "sinew",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "chip_flint_knife",
-      "leather"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "chip_flint_knife",
-        "leather",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ],
-    "removed_version": "pre-0.5.5"
-  },
-  {
-    "id": "sinew_1",
-    "item_num": 1,
-    "output": "sinew",
-    "outputQty": 4,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "flint_knife",
-      "leather"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "flint_knife",
-        "leather",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ],
     "removed_version": "pre-0.5.5"
   },
   {
@@ -36226,37 +35960,6 @@
     ]
   },
   {
-    "id": "sugar_soup_841203",
-    "item_num": 841203,
-    "output": "sugar_soup",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "sugar",
-      "water_bowl"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "sugar",
-        "water_bowl",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
     "id": "straw_rope_841205",
     "item_num": 841205,
     "output": "straw_rope",
@@ -36554,21 +36257,6 @@
     ]
   },
   {
-    "id": "redstone_841224",
-    "item_num": 841224,
-    "output": "redstone",
-    "outputQty": 4,
-    "station": "stone_furnace",
-    "difficulty": 0,
-    "skills": [
-      "mining"
-    ],
-    "ingredients": [
-      "redstone_ore"
-    ],
-    "shaped": false
-  },
-  {
     "id": "flint_hatchet_841225",
     "item_num": 841225,
     "output": "flint_hatchet",
@@ -36812,7 +36500,7 @@
     "output": "chip_flint",
     "outputQty": 4,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "flint"
@@ -36842,7 +36530,7 @@
     "output": "chip_flint",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 40,
     "skills": [],
     "ingredients": [
       "flint_arrow"
@@ -38024,7 +37712,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 177.78,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "gold_nugget",
       "gold_nugget",
@@ -39004,38 +38694,6 @@
         "_"
       ]
     ]
-  },
-  {
-    "id": "wood_club_841322",
-    "item_num": 841322,
-    "output": "wood_club",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "planks_oak",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "planks_oak",
-        "_"
-      ],
-      [
-        "_",
-        "planks_oak",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ]
-    ],
-    "removed_version": "pre-0.5.5"
   },
   {
     "id": "mithril_bow_841323",
@@ -41242,36 +40900,6 @@
     ]
   },
   {
-    "id": "carbon_crystal_shard_841391",
-    "item_num": 841391,
-    "output": "carbon_crystal_shard",
-    "outputQty": 4,
-    "station": "blast_furnace",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "carbon_crystal"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "carbon_crystal",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
     "id": "battery_841393",
     "item_num": 841393,
     "output": "battery",
@@ -41558,38 +41186,6 @@
         "book",
         "compass",
         "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
-    "id": "stone_slab_single_841407",
-    "item_num": 841407,
-    "output": "stone_slab_single",
-    "outputQty": 6,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "stone",
-      "stone",
-      "stone"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "stone",
-        "stone",
-        "stone"
       ],
       [
         "_",
@@ -45070,25 +44666,12 @@
     "output": "tin_ingot",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
+    "difficulty": 3600,
     "skills": [
       "mining"
     ],
     "ingredients": [
       "ore_tin"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "redstone_841505",
-    "item_num": 331,
-    "output": "redstone",
-    "outputQty": 9,
-    "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
-    "ingredients": [
-      "redstone_block"
     ],
     "shaped": false
   },
