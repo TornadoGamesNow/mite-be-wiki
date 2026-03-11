@@ -50,9 +50,10 @@ const sidebarGroups = getSidebarGroups('introduction');
 <span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/crafting_table_front.png" alt="">Munkaasztal</span>
 <span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/sieve.png" alt="">Szita</span>
 <span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/items/clay_furnace_idle.png" alt="">Agyagkemence</span>
-<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/items/stone_furnace_idle.png" alt="">Kőkemence</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/furnace_hardened_clay.png" alt="">Kem. Agyagkemence</span>
 <span class="prog-arrow">→</span><span class="prog-node n-copper"><img src="/mite-be-wiki/img/ingots/copper.png" alt="">Réz</span>
 <span class="prog-arrow">→</span><span class="prog-node n-silver"><img src="/mite-be-wiki/img/ingots/silver.png" alt="">Ezüst</span>
+<span class="prog-arrow">→</span><span class="prog-node n-iron"><img src="/mite-be-wiki/img/items/blast_furnace.png" alt="">Nagy Kemence</span>
 <span class="prog-arrow">→</span><span class="prog-node n-iron"><img src="/mite-be-wiki/img/items/iron_ingot.png" alt="">Vas</span>
 <span class="prog-arrow">→</span><span class="prog-node n-hard"><img src="/mite-be-wiki/img/ingots/hardstone.png" alt="">Keménykő</span>
 <span class="prog-arrow">→</span><span class="prog-node n-underground">🕳️ Földalatti világ</span>
@@ -67,7 +68,7 @@ const sidebarGroups = getSidebarGroups('introduction');
 <ul>
   <li><strong>Az első éjszaka:</strong> Valószínűleg nem lesz fáklyád. Ez normális. Mássz fel egy fára.</li>
   <li><strong>Az első napok:</strong> Semmi fém. Csak kovakő, szalmakötél és növényszál.</li>
-  <li><strong>Az első kemence:</strong> Agyagból kell megépíteni — kő kemence csak ezután jöhet.</li>
+  <li><strong>Az első kemence:</strong> Agyagból kell megépíteni — a keményített agyagkemence az első, ami fémet tud olvasztani.</li>
   <li><strong>Az első fém:</strong> A szita a legmegbízhatóbb korai út, bár közvetlen kavicstörésből is eshetnek szemcsék.</li>
   <li><strong>A progresszió lépcsőzetes:</strong> Például Vascsákány nélkül nem tudsz Keménykőt bányászni, ezért több fontos mérföldkő egymásra épül.</li>
 </ul>
@@ -110,9 +111,10 @@ const sidebarGroups = getSidebarGroups('introduction');
 <span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/crafting_table_front.png" alt="">Workbench</span>
 <span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/sieve.png" alt="">Sieve</span>
 <span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/items/clay_furnace_idle.png" alt="">Clay Furnace</span>
-<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/items/stone_furnace_idle.png" alt="">Stone Furnace</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/furnace_hardened_clay.png" alt="">Hardened Clay Furnace</span>
 <span class="prog-arrow">→</span><span class="prog-node n-copper"><img src="/mite-be-wiki/img/ingots/copper.png" alt="">Copper</span>
 <span class="prog-arrow">→</span><span class="prog-node n-silver"><img src="/mite-be-wiki/img/ingots/silver.png" alt="">Silver</span>
+<span class="prog-arrow">→</span><span class="prog-node n-iron"><img src="/mite-be-wiki/img/items/blast_furnace.png" alt="">Blast Furnace</span>
 <span class="prog-arrow">→</span><span class="prog-node n-iron"><img src="/mite-be-wiki/img/items/iron_ingot.png" alt="">Iron</span>
 <span class="prog-arrow">→</span><span class="prog-node n-hard"><img src="/mite-be-wiki/img/ingots/hardstone.png" alt="">Hardstone</span>
 <span class="prog-arrow">→</span><span class="prog-node n-underground">🕳️ Underground</span>
@@ -127,7 +129,7 @@ const sidebarGroups = getSidebarGroups('introduction');
 <ul>
   <li><strong>First night:</strong> You probably won't have a torch. This is normal. Climb a tree.</li>
   <li><strong>First days:</strong> No metal. Only flint, straw rope and plant fiber.</li>
-  <li><strong>First furnace:</strong> Built from clay — stone furnace comes after.</li>
+  <li><strong>First furnace:</strong> Built from clay — the hardened clay furnace is the first one that can smelt metals.</li>
   <li><strong>First metal:</strong> Sieving is the most reliable early route, though direct gravel breaking can also drop particles.</li>
   <li><strong>Progression is staged:</strong> For example, you cannot mine Hardstone without an Iron Pickaxe, so several milestones do genuinely gate later steps.</li>
 </ul>
@@ -168,9 +170,10 @@ const sidebarGroups = getSidebarGroups('introduction');
 <span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/crafting_table_front.png" alt="">Верстак</span>
 <span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/sieve.png" alt="">Сито</span>
 <span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/items/clay_furnace_idle.png" alt="">Глиняная печь</span>
-<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/items/stone_furnace_idle.png" alt="">Каменная печь</span>
+<span class="prog-arrow">→</span><span class="prog-node n-flint"><img src="/mite-be-wiki/img/blocks/furnace_hardened_clay.png" alt="">Обожж. глин. печь</span>
 <span class="prog-arrow">→</span><span class="prog-node n-copper"><img src="/mite-be-wiki/img/ingots/copper.png" alt="">Медь</span>
 <span class="prog-arrow">→</span><span class="prog-node n-silver"><img src="/mite-be-wiki/img/ingots/silver.png" alt="">Серебро</span>
+<span class="prog-arrow">→</span><span class="prog-node n-iron"><img src="/mite-be-wiki/img/items/blast_furnace.png" alt="">Доменная печь</span>
 <span class="prog-arrow">→</span><span class="prog-node n-iron"><img src="/mite-be-wiki/img/items/iron_ingot.png" alt="">Железо</span>
 <span class="prog-arrow">→</span><span class="prog-node n-hard"><img src="/mite-be-wiki/img/ingots/hardstone.png" alt="">Твердокамень</span>
 <span class="prog-arrow">→</span><span class="prog-node n-underground">🕳️ Подземный мир</span>
@@ -185,7 +188,7 @@ const sidebarGroups = getSidebarGroups('introduction');
 <ul>
   <li><strong>Первая ночь:</strong> У вас, скорее всего, не будет факела. Это нормально. Залезайте на дерево.</li>
   <li><strong>Первые дни:</strong> Никакого металла — только кремень, соломенная верёвка и растительное волокно.</li>
-  <li><strong>Первая печь:</strong> Строится из глины — каменная печь приходит только после этого.</li>
+  <li><strong>Первая печь:</strong> Строится из глины — обожжённая глиняная печь первая, которая может плавить металлы.</li>
   <li><strong>Первый металл:</strong> Сито остаётся самым надёжным ранним способом, хотя частицы могут выпадать и при прямом разрушении гравия.</li>
   <li><strong>Прогресс ступенчатый:</strong> Например, без железной кирки нельзя добыть твердокамень, так что ряд рубежей действительно открывает следующие этапы.</li>
 </ul>
