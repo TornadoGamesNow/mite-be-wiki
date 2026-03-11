@@ -12512,7 +12512,7 @@
     "output": "mithril_nugget",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "mithril_coin"
@@ -12542,7 +12542,7 @@
     "output": "mithril_nugget",
     "outputQty": 2,
     "station": "mithril_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "mithril_coin",
@@ -12556,7 +12556,7 @@
     "output": "mithril_nugget",
     "outputQty": 3,
     "station": "mithril_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "mithril_coin",
@@ -12571,7 +12571,7 @@
     "output": "mithril_nugget",
     "outputQty": 4,
     "station": "mithril_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "mithril_coin",
@@ -12587,7 +12587,7 @@
     "output": "mithril_nugget",
     "outputQty": 5,
     "station": "mithril_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "mithril_coin",
@@ -12604,7 +12604,7 @@
     "output": "mithril_nugget",
     "outputQty": 6,
     "station": "mithril_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "mithril_coin",
@@ -12622,7 +12622,7 @@
     "output": "mithril_nugget",
     "outputQty": 7,
     "station": "mithril_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "mithril_coin",
@@ -12641,7 +12641,7 @@
     "output": "mithril_nugget",
     "outputQty": 8,
     "station": "mithril_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "mithril_coin",
@@ -12661,7 +12661,7 @@
     "output": "mithril_nugget",
     "outputQty": 9,
     "station": "mithril_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "mithril_coin",
@@ -12822,7 +12822,7 @@
     "output": "adamantium_nugget",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 25,
+    "difficulty": 150,
     "skills": [],
     "ingredients": [
       "adamantium_coin"
@@ -12852,7 +12852,7 @@
     "output": "adamantium_nugget",
     "outputQty": 2,
     "station": "adamantium_workbench",
-    "difficulty": 25,
+    "difficulty": 150,
     "skills": [],
     "ingredients": [
       "adamantium_coin",
@@ -12866,7 +12866,7 @@
     "output": "adamantium_nugget",
     "outputQty": 3,
     "station": "adamantium_workbench",
-    "difficulty": 25,
+    "difficulty": 150,
     "skills": [],
     "ingredients": [
       "adamantium_coin",
@@ -12881,7 +12881,7 @@
     "output": "adamantium_nugget",
     "outputQty": 4,
     "station": "adamantium_workbench",
-    "difficulty": 25,
+    "difficulty": 150,
     "skills": [],
     "ingredients": [
       "adamantium_coin",
@@ -12897,7 +12897,7 @@
     "output": "adamantium_nugget",
     "outputQty": 5,
     "station": "adamantium_workbench",
-    "difficulty": 25,
+    "difficulty": 150,
     "skills": [],
     "ingredients": [
       "adamantium_coin",
@@ -12914,7 +12914,7 @@
     "output": "adamantium_nugget",
     "outputQty": 6,
     "station": "adamantium_workbench",
-    "difficulty": 25,
+    "difficulty": 150,
     "skills": [],
     "ingredients": [
       "adamantium_coin",
@@ -12932,7 +12932,7 @@
     "output": "adamantium_nugget",
     "outputQty": 7,
     "station": "adamantium_workbench",
-    "difficulty": 25,
+    "difficulty": 150,
     "skills": [],
     "ingredients": [
       "adamantium_coin",
@@ -12951,7 +12951,7 @@
     "output": "adamantium_nugget",
     "outputQty": 8,
     "station": "adamantium_workbench",
-    "difficulty": 25,
+    "difficulty": 150,
     "skills": [],
     "ingredients": [
       "adamantium_coin",
@@ -12971,7 +12971,7 @@
     "output": "adamantium_nugget",
     "outputQty": 9,
     "station": "adamantium_workbench",
-    "difficulty": 25,
+    "difficulty": 150,
     "skills": [],
     "ingredients": [
       "adamantium_coin",
@@ -13069,7 +13069,7 @@
     "output": "ancient_metal_nugget",
     "outputQty": 1,
     "station": "ancient_metal_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "ancient_metal_coin"
@@ -13099,7 +13099,7 @@
     "output": "ancient_metal_nugget",
     "outputQty": 2,
     "station": "ancient_metal_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "ancient_metal_coin",
@@ -13113,7 +13113,7 @@
     "output": "ancient_metal_nugget",
     "outputQty": 3,
     "station": "ancient_metal_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "ancient_metal_coin",
@@ -13128,7 +13128,7 @@
     "output": "ancient_metal_nugget",
     "outputQty": 4,
     "station": "ancient_metal_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "ancient_metal_coin",
@@ -13144,7 +13144,7 @@
     "output": "ancient_metal_nugget",
     "outputQty": 5,
     "station": "ancient_metal_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "ancient_metal_coin",
@@ -13161,7 +13161,7 @@
     "output": "ancient_metal_nugget",
     "outputQty": 6,
     "station": "ancient_metal_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "ancient_metal_coin",
@@ -13179,7 +13179,7 @@
     "output": "ancient_metal_nugget",
     "outputQty": 7,
     "station": "ancient_metal_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "ancient_metal_coin",
@@ -13198,7 +13198,7 @@
     "output": "ancient_metal_nugget",
     "outputQty": 8,
     "station": "ancient_metal_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "ancient_metal_coin",
@@ -13218,7 +13218,7 @@
     "output": "ancient_metal_nugget",
     "outputQty": 9,
     "station": "ancient_metal_workbench",
-    "difficulty": 25,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "ancient_metal_coin",
@@ -18060,7 +18060,7 @@
     "output": "mithril_bucket_filled_with_water",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 25,
+    "difficulty": 150,
     "skills": [
       "blacksmithing"
     ],
@@ -18096,7 +18096,7 @@
     "output": "adamantium_bucket_filled_with_water",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 25,
+    "difficulty": 300,
     "skills": [
       "blacksmithing"
     ],
@@ -18132,7 +18132,7 @@
     "output": "ancient_metal_bucket_filled_with_water",
     "outputQty": 1,
     "station": "ancient_metal_workbench",
-    "difficulty": 25,
+    "difficulty": 200,
     "skills": [
       "blacksmithing"
     ],
@@ -18270,7 +18270,7 @@
     "output": "mithril_bucket_filled_with_milk",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 25,
+    "difficulty": 150,
     "skills": [
       "blacksmithing"
     ],
@@ -18306,7 +18306,7 @@
     "output": "adamantium_bucket_filled_with_milk",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 25,
+    "difficulty": 300,
     "skills": [
       "blacksmithing"
     ],
@@ -18342,7 +18342,7 @@
     "output": "ancient_metal_bucket_filled_with_milk",
     "outputQty": 1,
     "station": "ancient_metal_workbench",
-    "difficulty": 25,
+    "difficulty": 200,
     "skills": [
       "blacksmithing"
     ],
