@@ -79,6 +79,35 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 </table>
 <div class="warning-box">📦 <strong>Fontos:</strong> A csökkentett kötegméretek miatt szükséged van <strong>több tároló ládára</strong>, és az anyaggyűjtés is hamarabb tölti meg a leltárat. Tervezz előre!</div>
 
+<h2 id="fishing">Horgászat</h2>
+<p>A MITE:BE-ben a horgászat komolyan átalakult: 10 különböző horgászbot létezik, mindegyik más horoganyaggal és tartóssággal. A horgászat eredményességét az <strong>időpont</strong>, az <strong>időjárás</strong> és a <strong>vízmélység</strong> is befolyásolja.</p>
+
+<table class="compare-table">
+  <tr><th>Horgászbot</th><th>Horog anyag</th><th>Tartósság</th></tr>
+  <tr><td>Kovakő horgászbot</td><td>Kovakő szilánk</td><td>3</td></tr>
+  <tr><td>Obszidián horgászbot</td><td>Obszidián szilánk</td><td>4</td></tr>
+  <tr><td>Réz horgászbot</td><td>Réz rög</td><td>8</td></tr>
+  <tr><td>Ezüst horgászbot</td><td>Ezüst rög</td><td>8</td></tr>
+  <tr><td>Arany horgászbot</td><td>Arany rög</td><td>8</td></tr>
+  <tr><td>Vas horgászbot</td><td>Vas rög</td><td>16</td></tr>
+  <tr style="background:rgba(180,120,255,0.12)"><td><strong>Keménykő horgászbot</strong></td><td>Keménykő rög</td><td><strong>80</strong></td></tr>
+  <tr style="background:rgba(180,120,255,0.12)"><td><strong>Ősi fém horgászbot</strong></td><td>Ősi fém rög</td><td><strong>156</strong></td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>Mithril horgászbot</strong></td><td>Mithril rög</td><td><strong>400</strong></td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>Adamantium horgászbot</strong></td><td>Adamantium rög</td><td><strong>512</strong></td></tr>
+</table>
+
+<h3>Mechanika</h3>
+<table class="compare-table">
+  <tr><th>Tényező</th><th>Hatás</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Hajnal / Alkony / Eső</td><td>Magasabb fogási esély</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Mélyebb víz</td><td>Magasabb fogási esély</td></tr>
+  <tr style="background:rgba(100,180,255,0.12)"><td>Giliszta csali</td><td>A hal <strong>50%-kal gyorsabban</strong> kapja be a horgot — minden fogásnál 1 giliszta fogy</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td>Búvárkodás</td><td>NEM lehet horgászni víz alatt</td></tr>
+</table>
+
+<div class="tip-card">🎣 <strong>Harci trükk:</strong> A horgászbot eltalál egy mobot → 1 sebzés (a karaktered támadóereje nem számít). Ha ezután <strong>hotbart váltasz</strong>, a bot nem veszít tartósságot. Korai játékban hasznos gyenge mobokra!</div>
+<div class="tip-card">🥕 <strong>Répa-horgászbot:</strong> Bármely horgászbotból craftolható répa-horgászbot. Miután a répa-horgászbot elhasználódik, <strong>teljes tartósságú horgászbotot</strong> kapsz vissza!</div>
+
 <h2 id="knowledge-books">Tudáskönyvek</h2>
 <p>A Tudáskönyv egy speciális tárgy, amely haladó receptek feloldására szolgál. Amíg nem rendelkezel a megfelelő Tudáskönyvvel, az adott recept <strong>nem készíthető el</strong>!</p>
 <div class="warning-box">🔒 <strong>Kemény zárolás!</strong> Ha egy recept Tudáskönyvhöz kötött, akkor <strong>még akkor sem tudod elkészíteni, ha minden alapanyagod megvan!</strong> A v0.9.0 tapasztalatok és itemleírások alapján a könyvek biztos forrásai közé tartoznak a <strong>földalatti dungeonök kincsesládái</strong> és a <strong>felszíni Pillager-erődök ládái</strong>.</div>
@@ -150,6 +179,35 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <tr style="background:rgba(100,200,100,0.10)"><td>Torch</td><td>Torch, Redstone Torch</td><td>32</td><td>64</td></tr>
 </table>
 
+<h2 id="fishing-en">Fishing</h2>
+<p>Fishing in MITE:BE has been significantly reworked: there are 10 different fishing rods, each with a different hook material and durability. Fishing success is affected by <strong>time of day</strong>, <strong>weather</strong>, and <strong>water depth</strong>.</p>
+
+<table class="compare-table">
+  <tr><th>Fishing Rod</th><th>Hook Material</th><th>Durability</th></tr>
+  <tr><td>Flint Fishing Rod</td><td>Flint Shard</td><td>3</td></tr>
+  <tr><td>Obsidian Fishing Rod</td><td>Obsidian Shard</td><td>4</td></tr>
+  <tr><td>Copper Fishing Rod</td><td>Copper Nugget</td><td>8</td></tr>
+  <tr><td>Silver Fishing Rod</td><td>Silver Nugget</td><td>8</td></tr>
+  <tr><td>Gold Fishing Rod</td><td>Gold Nugget</td><td>8</td></tr>
+  <tr><td>Iron Fishing Rod</td><td>Iron Nugget</td><td>16</td></tr>
+  <tr style="background:rgba(180,120,255,0.12)"><td><strong>Hardstone Fishing Rod</strong></td><td>Hardstone Nugget</td><td><strong>80</strong></td></tr>
+  <tr style="background:rgba(180,120,255,0.12)"><td><strong>Ancient Metal Fishing Rod</strong></td><td>Ancient Metal Nugget</td><td><strong>156</strong></td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>Mithril Fishing Rod</strong></td><td>Mithril Nugget</td><td><strong>400</strong></td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>Adamantium Fishing Rod</strong></td><td>Adamantium Nugget</td><td><strong>512</strong></td></tr>
+</table>
+
+<h3>Mechanics</h3>
+<table class="compare-table">
+  <tr><th>Factor</th><th>Effect</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Dawn / Dusk / Rain</td><td>Higher catch rate</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Deeper water</td><td>Higher catch rate</td></tr>
+  <tr style="background:rgba(100,180,255,0.12)"><td>Worm bait</td><td>Fish bite <strong>50% faster</strong> — 1 worm is consumed per catch</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td>Diving</td><td>You CANNOT fish while underwater</td></tr>
+</table>
+
+<div class="tip-card">🎣 <strong>Combat trick:</strong> Hitting a mob with a fishing rod deals 1 damage (ignoring your attack power). If you <strong>switch hotbar slots</strong> right after, the rod loses no durability. Useful in early game against weak mobs!</div>
+<div class="tip-card">🥕 <strong>Carrot on a Stick:</strong> Any fishing rod can be crafted into a Carrot on a Stick. Once the carrot rod is used up, you get back a <strong>full-durability fishing rod</strong>!</div>
+
 <h2 id="knowledge-books-en">Knowledge Books</h2>
 <p>A Knowledge Book is a special item that unlocks advanced recipes. If a recipe is gated behind a Knowledge Book, you <strong>cannot craft it</strong> even if you have all the materials!</p>
 <div class="warning-box">🔒 <strong>Hard requirement:</strong> Based on current v0.9.0 observations and item pages, reliably confirmed Knowledge Book sources include <strong>treasure chests in underground dungeons</strong> and <strong>surface Pillager Fortress chests</strong>.</div>
@@ -212,6 +270,35 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <tr style="background:rgba(100,200,100,0.10)"><td>Факелы</td><td>Факел, Факел из красного камня</td><td>32</td><td>64</td></tr>
 </table>
 <div class="warning-box">📦 <strong>Важно:</strong> Из-за уменьшенных стеков вам потребуется <strong>больше сундуков</strong>, а инвентарь при сборе ресурсов заполняется намного быстрее. Планируйте заранее!</div>
+
+<h2 id="fishing-ru">🎣 Рыбалка</h2>
+<p>В MITE:BE рыбалка серьёзно переработана: существует 10 различных удочек, каждая с разным материалом крючка и прочностью. На успех рыбалки влияют <strong>время суток</strong>, <strong>погода</strong> и <strong>глубина воды</strong>.</p>
+
+<table class="compare-table">
+  <tr><th>Удочка</th><th>Материал крючка</th><th>Прочность</th></tr>
+  <tr><td>Кремнёвая удочка</td><td>Осколок кремня</td><td>3</td></tr>
+  <tr><td>Обсидиановая удочка</td><td>Осколок обсидиана</td><td>4</td></tr>
+  <tr><td>Медная удочка</td><td>Кусочек меди</td><td>8</td></tr>
+  <tr><td>Серебряная удочка</td><td>Кусочек серебра</td><td>8</td></tr>
+  <tr><td>Золотая удочка</td><td>Кусочек золота</td><td>8</td></tr>
+  <tr><td>Железная удочка</td><td>Кусочек железа</td><td>16</td></tr>
+  <tr style="background:rgba(180,120,255,0.12)"><td><strong>Твердокаменная удочка</strong></td><td>Кусочек твёрдого камня</td><td><strong>80</strong></td></tr>
+  <tr style="background:rgba(180,120,255,0.12)"><td><strong>Удочка из Древнего металла</strong></td><td>Кусочек Древнего металла</td><td><strong>156</strong></td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>Мифриловая удочка</strong></td><td>Кусочек мифрила</td><td><strong>400</strong></td></tr>
+  <tr style="background:rgba(255,200,0,0.10)"><td><strong>Адамантиевая удочка</strong></td><td>Кусочек адамантия</td><td><strong>512</strong></td></tr>
+</table>
+
+<h3>Механика</h3>
+<table class="compare-table">
+  <tr><th>Фактор</th><th>Эффект</th></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Рассвет / Закат / Дождь</td><td>Повышенный шанс улова</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Глубокая вода</td><td>Повышенный шанс улова</td></tr>
+  <tr style="background:rgba(100,180,255,0.12)"><td>Наживка (червь)</td><td>Рыба клюёт на <strong>50% быстрее</strong> — 1 червь расходуется за каждый улов</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td>Ныряние</td><td>НЕЛЬЗЯ рыбачить под водой</td></tr>
+</table>
+
+<div class="tip-card">🎣 <strong>Боевой трюк:</strong> Попадание удочкой по мобу наносит 1 урон (независимо от силы атаки). Если сразу <strong>переключить слот хотбара</strong>, удочка не теряет прочность. Полезно в начале игры против слабых мобов!</div>
+<div class="tip-card">🥕 <strong>Морковка на палке:</strong> Из любой удочки можно скрафтить морковку на палке. Когда морковка израсходуется, вернётся удочка с <strong>полной прочностью</strong>!</div>
 
 <h2 id="knowledge-books-ru">📚 Книги знаний</h2>
 <p>Книга знаний — особый предмет, открывающий продвинутые рецепты. Если рецепт заблокирован Книгой знаний, скрафтить его <strong>не получится</strong>, даже если все материалы есть!</p>
