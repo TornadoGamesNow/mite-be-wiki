@@ -30,7 +30,7 @@
       { quality: { hu: "Jó", en: "Good", ru: "Хорошее" },
         materials: { hu: "Bőr, Fa, Kova, Obszidián, Kvarc, Csont", en: "Leather, Wood, Flint, Obsidian, Quartz, Bone", ru: "Кожа, Дерево, Кремень, Обсидиан, Кварц, Кость" }, bg: null },
       { quality: { hu: "Átlagos", en: "Average", ru: "Среднее" },
-        materials: { hu: "Pokolfenyő, Üveg", en: "Netherbrick, Glass", ru: "Адский кирпич, Стекло" }, bg: null, muted: true },
+        materials: { hu: "Alvilágkő, Üveg", en: "Netherrack, Glass", ru: "Адский камень, Стекло" }, bg: null, muted: true },
       { quality: { hu: "Rossz", en: "Poor", ru: "Плохое" },
         materials: { hu: "Rozsdás Vas", en: "Rusted Iron", ru: "Ржавое Железо" }, bg: null, bad: true }
     ],

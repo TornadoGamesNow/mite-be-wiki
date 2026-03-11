@@ -1245,7 +1245,7 @@
   "ingot_mold": {
     "name": {
       "hu": "Öntőforma",
-      "en": "Ingot Mold",
+      "en": "Ingot Mould",
       "ru": "Форма для слитков"
     },
     "img": "img/items/empty_ingot_mould.png",
@@ -1255,7 +1255,7 @@
   "obsidian_ingot_mold": {
     "name": {
       "hu": "Obszidián Öntőforma",
-      "en": "Obsidian Ingot Mold",
+      "en": "Obsidian Ingot Mould",
       "ru": "Обсидиановая форма для слитков"
     },
     "img": "img/items/obsidian_ingot_mould.png",
@@ -5172,7 +5172,7 @@
   },
   "hard_stone_mattock": {
     "name": {
-      "hu": "Keménykő Kapacs",
+      "hu": "Keménykő Ácskapa",
       "en": "Hardstone Mattock",
       "ru": "Твердокаменная мотыга-кирка"
     },
@@ -5760,8 +5760,8 @@
   },
   "leather_pants": {
     "name": {
-      "hu": "Bőr Nadrág",
-      "en": "Leather Pants",
+      "hu": "Bőr Lábvért",
+      "en": "Leather Leggings",
       "ru": "Кожаные штаны"
     },
     "img": "img/items/leather_pants.png",
@@ -6181,7 +6181,7 @@
   },
   "miner_s_helmet_knowledge_book": {
     "name": {
-      "hu": "Bányász Sisak Tudáskönyv",
+      "hu": "Bányászsisak Tudáskönyv",
       "en": "Miner's Helmet Knowledge Book",
       "ru": "Книга знаний: шахтёрский шлем"
     },
@@ -6679,7 +6679,7 @@
   "obsidian_ingot_mold_cooling": {
     "name": {
       "hu": "Obszidián Öntőforma (Hűlő)",
-      "en": "Obsidian Ingot Mold (Cooling)",
+      "en": "Obsidian Ingot Mould (Cooling)",
       "ru": "Обсидиановая форма для слитков (охлаждение)"
     },
     "img": "img/items/obsidian_ingot_mold_cooling.png",
@@ -8741,7 +8741,7 @@
   },
   "world_marker": {
     "name": {
-      "hu": "Világ Jelölő",
+      "hu": "Világjelölő",
       "en": "World Marker",
       "ru": "Маркер мира"
     },
@@ -8751,7 +8751,7 @@
   },
   "world_marker_knowledge_book": {
     "name": {
-      "hu": "Világ Jelölő Tudáskönyv",
+      "hu": "Világjelölő Tudáskönyv",
       "en": "World Marker Knowledge Book",
       "ru": "Книга знаний: маркер мира"
     },
@@ -9606,7 +9606,7 @@
   },
   "hard_chest_upgrade": {
     "name": {
-      "hu": "Kőmag Ládafejlesztés",
+      "hu": "Keménykő Ládafejlesztés",
       "en": "Hardstone Chest Upgrade",
       "ru": "Улучшение сундука (твердокаменный)"
     },
@@ -9727,7 +9727,7 @@
   },
   "barrel_hard_upgrade": {
     "name": {
-      "hu": "Kőmag Hordófejlesztés",
+      "hu": "Keménykő Hordófejlesztés",
       "en": "Hardstone Barrel Upgrade",
       "ru": "Улучшение бочки (твердокаменный)"
     },
@@ -9778,7 +9778,7 @@
   },
   "gravel_nether": {
     "name": {
-      "hu": "Netheri Kavics",
+      "hu": "Alvilági Kavics",
       "en": "Nether Gravel",
       "ru": "Адский гравий"
     },
@@ -9878,9 +9878,9 @@
   },
   "template_lantern": {
     "name": {
-      "hu": "Lámpa Sablon",
-      "en": "Template Lantern",
-      "ru": "Шаблонный фонарь"
+      "hu": "Díszlámpás",
+      "en": "Decorative Lantern",
+      "ru": "Декоративный фонарь"
     },
     "img": "img/items/template_lantern.png",
     "tier": null,
@@ -10599,7 +10599,7 @@
   },
   "rusted_iron_mattock": {
     "name": {
-      "hu": "Rozsdás Vas Kapacs",
+      "hu": "Rozsdás Vas Ácskapa",
       "en": "Rusted Iron Mattock",
       "ru": "Ржавая железная мотыга-кирка"
     },
@@ -10610,7 +10610,7 @@
   },
   "high_carbon_steel_mattock": {
     "name": {
-      "hu": "Magas Szén-tartalmú Acél Kapacs",
+      "hu": "Magas Széntartalmú Acél Ácskapa",
       "en": "High Carbon Steel Mattock",
       "ru": "Мотыга-кирка из высокоуглеродистой стали"
     },
@@ -10935,7 +10935,7 @@
   },
   "miner_helmet": {
     "name": {
-      "hu": "Bányász Sisak",
+      "hu": "Bányászsisak",
       "en": "Miner Helmet",
       "ru": "Шахтёрский шлем"
     },
@@ -11348,7 +11348,7 @@
   },
   "water_bag_hard": {
     "name": {
-      "hu": "Kőmag Víztasak",
+      "hu": "Keménykő Víztasak",
       "en": "Hardstone Water Bag",
       "ru": "Твердокаменный мешок для воды"
     },

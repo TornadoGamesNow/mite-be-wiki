@@ -16,7 +16,7 @@
       { item: { hu: "Keménykő Ércdarab", en: "Hardstone Particle", ru: "Частица Твёрдого Камня" }, chance: "0,25%", tier: "t-hard",
         use: { hu: "Ritka, mély barlangoknál jobb", en: "Rare, deep caves are better", ru: "Редко, в глубоких пещерах проще" } },
       { item: { hu: "Obszidián Szilánk", en: "Obsidian Shard", ru: "Осколок Обсидиана" }, chance: "0,25%",
-        use: { hu: "Öntőformához kell!", en: "Needed for cast molds!", ru: "Нужен для литейных форм!" } },
+        use: { hu: "Öntőformához kell!", en: "Needed for ingot moulds!", ru: "Нужен для литейных форм!" } },
       { item: { hu: "Smaragd Szilánk", en: "Emerald Shard", ru: "Осколок Изумруда" }, chance: "0,25%",
         use: { hu: "—", en: "—", ru: "—" } },
       { item: { hu: "Gyémánt Szilánk", en: "Diamond Shard", ru: "Осколок Алмаза" }, chance: "0,13%",

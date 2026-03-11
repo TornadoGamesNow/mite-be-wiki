@@ -50,18 +50,18 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 <p>Az első igazi fémek! Réz és ezüst szerszámokat, fegyvereket és páncélt készíthetsz.</p>
 
 <h3>Réz készlet</h3>
-<p>Csákány, fejsze, ásó, kés, tőr, kard, harci kalapács, sarló, kapa, sisak, mellvért, Nadrág, csizmák, lánc változatok, vödör, pajzs...</p>
+<p>Csákány, fejsze, ásó, kés, tőr, kard, háborús kalapács, sarló, kapa, sisak, mellvért, lábvért, csizma, lánc változatok, vödör, pajzs...</p>
 
 <h3>Ezüst készlet</h3>
 <p>Azonos készlet az ezüsthöz. Az ezüst fegyverek <strong>extra sebzést okoznak élőholtak ellen</strong>!</p>
 
-<div class="tip">Réz vödör Required láva és víz szállításához. Arany vödör nem létezik az elején!</div>
+<div class="tip">Réz vödör szükséges a láva és a víz szállításához. Arany vödör nem létezik az elején!</div>
 
 <div class="craft-section">
   <CraftingGrid recipeOutput="copper_pickaxe" label={{hu: "Rézcsákány", en: "Copper Pickaxe"}}/>
   <CraftingGrid recipeOutput="copper_axe" label={{hu: "Réz Fejsze", en: "Copper Axe"}}/>
   <CraftingGrid recipeOutput="copper_sword" label={{hu: "Rézkard", en: "Copper Sword"}}/>
-  <CraftingGrid recipeOutput="copper_war_hammer" label={{hu: "Réz harci kalapács", en: "Copper War Hammer"}}/>
+  <CraftingGrid recipeOutput="copper_war_hammer" label={{hu: "Réz Háborús Kalapács", en: "Copper War Hammer"}}/>
   <CraftingGrid recipeOutput="silver_sword" label={{hu: "Ezüstkard", en: "Silver Sword"}}/>
 </div>
 
@@ -137,14 +137,14 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 <div class="info">A Szénacél csákány képes a <strong>lánc bányászatra</strong>: tartsd a gombot és egyszerre több blokkot törsz! Bányászási sebessége meghaladja a mithrilét — a felszíni és underground kitermeléshez ez a legjobb választás.</div>
 <div class="tip-card">⚒️ <strong>Ötvözés a kemencében:</strong> Tedd a <strong>vas tárgyat</strong> (kard, csákány stb.) az üzemanyag slot FELETTI slotba, a <strong>Szénkristályt</strong> a bal oldali slotba. Így alakítja át acéllá.</div>
 <div class="tip-card">💡 <strong>XP-vel craftolj nagyobb tartósságért:</strong> Barkácsolás közben az XP-d belekerül a tárgyba — minél több XP van rajtad, annál tartósabb lesz az elkészült eszköz. Érdemes XP-vel telve craftolni a Szénacél tárgyakat!</div>
-<div class="tip-card">⚔️ <strong>Szénacél harci kalapács Underground-ban:</strong> A <strong>Szénacél harci kalapács + Élőholt Ölő V</strong> bűvölettel a föld alatti világ legjobb fegyvere — olcsó, tartós, és egy csapással legyőzi a csontvázakat és más élőholtakat. Max szintű smaragd bűvölőasztalon bűvölhető Level 5-re.</div>
+<div class="tip-card">⚔️ <strong>Szénacél háborús kalapács Underground-ban:</strong> A <strong>Szénacél háborús kalapács + Élőholt Ölő V</strong> bűvölettel a föld alatti világ legjobb fegyvere — olcsó, tartós, és egy csapással legyőzi a csontvázakat és más élőholtakat. Max szintű smaragd bűvölőasztalon 5. szintre bűvölhető.</div>
 
 
 <div class="craft-section">
   <CraftingGrid recipeOutput="iron_sword" label={{hu: "Vaskard", en: "Iron Sword"}}/>
   <CraftingGrid recipeOutput="iron_pickaxe" label={{hu: "Vascsákány", en: "Iron Pickaxe"}}/>
   <CraftingGrid recipeOutput="iron_axe" label={{hu: "Vas Fejsze", en: "Iron Axe"}}/>
-  <CraftingGrid recipeOutput="iron_war_hammer" label={{hu: "Vas harci kalapács", en: "Iron War Hammer"}}/>
+  <CraftingGrid recipeOutput="iron_war_hammer" label={{hu: "Vas Háborús Kalapács", en: "Iron War Hammer"}}/>
 </div>
 
 <!-- ===== Fémhierarchia ===== -->
@@ -159,8 +159,8 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
   <tr><td><span class="tier t-iron">4</span></td><td>Vas</td><td>Mély bányászat</td><td>Réz/Ezüstcsákány</td></tr>
   <tr><td><span class="tier t-hard">5</span></td><td>Keménykő</td><td>Földalatti világ</td><td>Vascsákány</td></tr>
   <tr><td><span class="tier t-ancient">6</span></td><td>Ősi Fém</td><td>Földalatti világ</td><td>Vascsákány</td></tr>
-  <tr><td><span class="tier t-mithril">7</span></td><td>Mithril</td><td>Földalatti világ</td><td>Vascsákány / harci kalapács</td></tr>
-  <tr><td><span class="tier t-adamantium">8</span></td><td>Adamantium</td><td>Földalatti világ legmélye</td><td>Mithrilcsákány / harci kalapács</td></tr>
+  <tr><td><span class="tier t-mithril">7</span></td><td>Mithril</td><td>Földalatti világ</td><td>Vascsákány / háborús kalapács</td></tr>
+  <tr><td><span class="tier t-adamantium">8</span></td><td>Adamantium</td><td>Földalatti világ legmélye</td><td>Mithrilcsákány / háborús kalapács</td></tr>
 </table>
 
 <h3>Érc Mélység Térkép</h3>
@@ -194,7 +194,7 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 
 <h3>Ötvöző Kemence Elkészítése</h3>
 <table class="compare-table">
-  <tr><th>Recept</th><th>Alapanyagok</th><th>Required Munkaasztal</th></tr>
+  <tr><th>Recept</th><th>Alapanyagok</th><th>Szükséges munkaasztal</th></tr>
   <tr><td><strong>Réz (legolcsóbb)</strong></td><td>4× Rézrúd + 1× Kőkemence</td><td>Réz Munkaasztal</td></tr>
   <tr><td>Ezüst</td><td>4× Ezüstrúd + 1× Kőkemence</td><td>Réz Munkaasztal</td></tr>
   <tr><td>Vas</td><td>6× Kő + 2× Vasrúd + 1× Kőkemence</td><td>Vas Munkaasztal</td></tr>
@@ -209,9 +209,9 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
   <tr style="background:rgba(180,180,180,0.12)"><td><strong>Szénacél</strong></td><td>Teljes tartósságú Vas eszköz/páncél</td><td>Szénkristály-szilánkok</td><td>Szénacél eszköz/páncél</td><td>Sebzés −5%/darab · Saválló · Lánc-bányászás képesség</td></tr>
 </table>
 
-<h3>Required alapanyag mennyiségek (teljes szett)</h3>
+<h3>Szükséges alapanyag-mennyiségek (teljes szett)</h3>
 <table class="compare-table">
-  <tr><th>Ötvözet</th><th>Sisak</th><th>Mellvért</th><th>Nadrág</th><th>Csizma</th><th>Összesen</th></tr>
+  <tr><th>Ötvözet</th><th>Sisak</th><th>Mellvért</th><th>Lábvért</th><th>Csizma</th><th>Összesen</th></tr>
   <tr><td>Bronz (Ón)</td><td>3</td><td>6</td><td>5</td><td>2</td><td><strong>16 Ón Rúd</strong></td></tr>
   <tr><td>Ezüst-Réz (Réz)</td><td>5</td><td>7</td><td>6</td><td>3</td><td><strong>21 Rézrúd</strong></td></tr>
   <tr><td>Szénacél (Szén Kristály)</td><td>2</td><td>4</td><td>3</td><td>1</td><td><strong>10 Szén Kristály</strong></td></tr>
@@ -245,7 +245,7 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
   <CraftingGrid recipeOutput="copper_pickaxe" label={{hu: "Rézcsákány", en: "Copper Pickaxe"}}/>
   <CraftingGrid recipeOutput="copper_axe" label={{hu: "Réz Fejsze", en: "Copper Axe"}}/>
   <CraftingGrid recipeOutput="copper_sword" label={{hu: "Rézkard", en: "Copper Sword"}}/>
-  <CraftingGrid recipeOutput="copper_war_hammer" label={{hu: "Réz harci kalapács", en: "Copper War Hammer"}}/>
+  <CraftingGrid recipeOutput="copper_war_hammer" label={{hu: "Réz Háborús Kalapács", en: "Copper War Hammer"}}/>
   <CraftingGrid recipeOutput="silver_sword" label={{hu: "Ezüstkard", en: "Silver Sword"}}/>
 </div>
 
@@ -325,14 +325,14 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
   <CraftingGrid recipeOutput="iron_sword" label={{hu: "Vaskard", en: "Iron Sword"}}/>
   <CraftingGrid recipeOutput="iron_pickaxe" label={{hu: "Vascsákány", en: "Iron Pickaxe"}}/>
   <CraftingGrid recipeOutput="iron_axe" label={{hu: "Vas Fejsze", en: "Iron Axe"}}/>
-  <CraftingGrid recipeOutput="iron_war_hammer" label={{hu: "Vas harci kalapács", en: "Iron War Hammer"}}/>
+  <CraftingGrid recipeOutput="iron_war_hammer" label={{hu: "Vas Háborús Kalapács", en: "Iron War Hammer"}}/>
 </div>
 
 <!-- ===== METAL HIERARCHY ===== -->
 
 <h2 id="metal-hierarchy">Metal Hierarchy</h2>
 <table>
-  <tr><th>Tier</th><th>Material</th><th>Source</th><th>Required Pickaxe</th></tr>
+  <tr><th>Tier</th><th>Material</th><th>Source</th><th>Minimum Pickaxe</th></tr>
   <tr><td><span class="tier t-flint">1</span></td><td>Flint</td><td>From gravel</td><td>Bare hands</td></tr>
   <tr><td><span class="tier t-copper">2</span></td><td>Copper</td><td>Sieving / Mining</td><td>Flint pickaxe</td></tr>
   <tr><td><span class="tier t-silver">2</span></td><td>Silver</td><td>Sieving / Mining</td><td>Flint pickaxe</td></tr>
@@ -375,7 +375,7 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
   <CraftingGrid recipeOutput="copper_pickaxe" label={{hu: "Rézcsákány", en: "Copper Pickaxe"}}/>
   <CraftingGrid recipeOutput="copper_axe" label={{hu: "Réz Fejsze", en: "Copper Axe"}}/>
   <CraftingGrid recipeOutput="copper_sword" label={{hu: "Rézkard", en: "Copper Sword"}}/>
-  <CraftingGrid recipeOutput="copper_war_hammer" label={{hu: "Réz harci kalapács", en: "Copper War Hammer"}}/>
+  <CraftingGrid recipeOutput="copper_war_hammer" label={{hu: "Réz Háborús Kalapács", en: "Copper War Hammer"}}/>
   <CraftingGrid recipeOutput="silver_sword" label={{hu: "Ezüstkard", en: "Silver Sword"}}/>
 </div>
 
@@ -452,7 +452,7 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
   <CraftingGrid recipeOutput="iron_sword" label={{hu: "Vaskard", en: "Iron Sword"}}/>
   <CraftingGrid recipeOutput="iron_pickaxe" label={{hu: "Vascsákány", en: "Iron Pickaxe"}}/>
   <CraftingGrid recipeOutput="iron_axe" label={{hu: "Vas Fejsze", en: "Iron Axe"}}/>
-  <CraftingGrid recipeOutput="iron_war_hammer" label={{hu: "Vas harci kalapács", en: "Iron War Hammer"}}/>
+  <CraftingGrid recipeOutput="iron_war_hammer" label={{hu: "Vas Háborús Kalapács", en: "Iron War Hammer"}}/>
 </div>
 
 <!-- ===== ИЕРАРХИЯ МЕТАЛЛОВ ===== -->

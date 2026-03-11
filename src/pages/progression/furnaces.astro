@@ -15,7 +15,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const sidebarGroups = getSidebarGroups('progression/furnaces');
 ---
-<BaseLayout title="Furnaces & Smelting | MITE:BE Wiki" description="MITE:BE furnaces and smelting: clay furnace, campfire, hardened clay furnace, ingot mold, first metal ingot.">
+<BaseLayout title="Furnaces & Smelting | MITE:BE Wiki" description="MITE:BE furnaces and smelting: clay furnace, campfire, hardened clay furnace, ingot mould, first metal ingot.">
   <Header />
   <TopNav currentPage="progression" />
   <div class="container">
@@ -33,7 +33,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
   en: [
     'Clay furnace = first heat source, not hot enough for metals',
     'Campfire is mandatory — without it meat burns and poisons you',
-    'Obsidian mold + hardened clay furnace = your first metal ingot',
+    'Obsidian mould + hardened clay furnace = your first metal ingot',
   ],
   ru: [
     'Глиняная печь = первый источник тепла, но не плавит металлы',
@@ -70,7 +70,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
     <div class="furnace-full-section-title">⬇ Olvasztás</div>
     <div class="furnace-full-2x2">
       <div><div class="furnace-slot-lbl">ércdarab ×9</div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#cd7f32">Réz Ércdarab</div><div class="tt-name" data-lang="en" style="color:#cd7f32">Copper Ore Fragment</div></div><img src="/mite-be-wiki/img/nuggets/copper.png" alt="ércdarab"></div></div>
-      <div><div class="furnace-slot-lbl">öntőforma</div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián Öntőforma</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian Ingot Mold</div></div><img src="/mite-be-wiki/img/items/obsidian_ingot_mould.png" alt="öntőforma"></div></div>
+      <div><div class="furnace-slot-lbl">öntőforma</div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#b388ff">Obszidián Öntőforma</div><div class="tt-name" data-lang="en" style="color:#b388ff">Obsidian Ingot Mould</div></div><img src="/mite-be-wiki/img/items/obsidian_ingot_mould.png" alt="öntőforma"></div></div>
       <div><div class="furnace-slot-lbl">tüzelő</div><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#aaa">Szén</div><div class="tt-name" data-lang="en" style="color:#aaa">Coal</div></div><img src="/mite-be-wiki/img/items/coal.png" alt="szén"></div></div>
       <div><div class="furnace-slot-lbl">rúd kimenet</div><div class="craft-output"><div class="craft-slot"><div class="mc-tooltip"><div class="tt-name" data-lang="hu" style="color:#cd7f32">Rézrúd</div><div class="tt-name" data-lang="en" style="color:#cd7f32">Copper Ingot</div></div><img src="/mite-be-wiki/img/ingots/copper.png" alt="rúd"></div></div></div>
     </div>
@@ -139,7 +139,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 <div class="warning-box">⚠️ <strong>Bányász foglalkozás v0.9.0-ban inaktív</strong> — ez a funkció jelenleg nem érhető el. Helyette a kalapácsos zúzás ajánlott (lásd lent).</div>
 <p><em>Ha a foglalkozások engedélyezve lennének:</em> <strong>Bányász foglalkozással</strong> az érc blokkokat közvetlenül berakhatnád a kemencébe — 9× hatékonyabb az ércdaraboknál! <strong>1 érc blokk → 1 rúd.</strong></p>
 <table>
-  <tr><th>Érc blokk</th><th>Required hőfok</th><th>Eredmény</th></tr>
+  <tr><th>Érc blokk</th><th>Szükséges hőfok</th><th>Eredmény</th></tr>
   <tr><td>Réz / Ezüst / Vas / Arany / Keménykő érc</td><td>2 — Keményített agyagkemence vagy Kőkemence</td><td>1 Rúd</td></tr>
   <tr><td>Mithril / Higany érc</td><td>3 — Obszidián kemence</td><td>1 Rúd</td></tr>
   <tr><td>Adamantiumérc</td><td>4 — AlvilágKőkemence</td><td>1 Adamantiumrúd</td></tr>
@@ -147,12 +147,12 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 <div class="warning-box">⚠️ <strong>Bányász foglalkozás kötelező</strong> — de jelenleg inaktív v0.9.0-ban. Érc blokk olvasztás helyett kalapácsos zúzást használj!</div>
 
 <h3>Érc Zúzás — Háborús Kalapáccsal</h3>
-<p>Nincs Bányász foglalkozásod? Akkor sem kell elvesztegetned az érc blokkot! <strong>Tedd a munkaasztalra az érc blokkot és egy harci kalapácsot</strong> — és 12 ércdarabot kapsz, ami több, mint a 9 darab, amit egy rúd visszabontásával kapnál!</p>
+<p>Nincs Bányász foglalkozásod? Akkor sem kell elvesztegetned az ércblokkot! <strong>Tedd a munkaasztalra az ércblokkot és egy háborús kalapácsot</strong> — és 12 ércdarabot kapsz, ami több, mint a 9 darab, amit egy rúd visszabontásával kapnál!</p>
 <table>
-  <tr><th>Input</th><th>Required Kalapács</th><th>Output</th></tr>
-  <tr><td>Réz / Ezüst / Arany érc blokk</td><td>Bronz, Ezüst-Réz, vagy Szénacél harci kalapács</td><td>12 ércdarab</td></tr>
-  <tr><td>Vas érc blokk</td><td>Csak Szénacél harci kalapács</td><td>12 ércdarab</td></tr>
-  <tr><td>Bármely Fémrúd</td><td>Bármely (Bronz / Ezüst-Réz / Szénacél) harci kalapács</td><td>9 ércdarab</td></tr>
+  <tr><th>Input</th><th>Needed Hammer</th><th>Output</th></tr>
+  <tr><td>Réz / Ezüst / Arany ércblokk</td><td>Bronz, Ezüst-Réz vagy Szénacél háborús kalapács</td><td>12 ércdarab</td></tr>
+  <tr><td>Vas ércblokk</td><td>Csak Szénacél háborús kalapács</td><td>12 ércdarab</td></tr>
+  <tr><td>Bármely fémrúd</td><td>Bármely (Bronz / Ezüst-Réz / Szénacél) háborús kalapács</td><td>9 ércdarab</td></tr>
 </table>
 <div class="info"><strong>Összehasonlítás:</strong> 1 érc blokk = 12 ércdarab kalapáccsal → 1⅓ rúd (vsz szita útján). Bányász foglalkozással az érc blokk közvetlenül 1 rudat ad, de a kalapácsos zúzás 33%-kal többet hoz ki belőle ha utána olvasztod!</div>
 
@@ -161,7 +161,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
   <tr><th>Módszer</th><th>Hogyan?</th><th>Eredmény</th><th>Követelmény</th></tr>
   <tr><td>🧺 Szitálás</td><td>Kavicsot szitálsz → 9 ércdarab → kemence + öntőforma</td><td>1 Rúd</td><td>Keményített agyag kemence + öntőforma</td></tr>
   <tr><td>⛏️ Érc blokk olvasztás</td><td>1 érc blokkot rakod a kemencébe</td><td>1 Rúd</td><td><strong>Bányász foglalkozás</strong> <em>(⚠️ inaktív v0.9.0)</em></td></tr>
-  <tr><td>🔨 Kalapács zúzás</td><td>Érc blokk + megfelelő harci kalapács → munkaasztal</td><td>12 Ércdarab → 1⅓ Rúd</td><td>Bronz vagy erősebb harci kalapács</td></tr>
+  <tr><td>🔨 Kalapácsos zúzás</td><td>Ércblokk + megfelelő háborús kalapács → munkaasztal</td><td>12 ércdarab → 1⅓ rúd</td><td>Bronz vagy erősebb háborús kalapács</td></tr>
 </table>
 
 </div>
@@ -189,7 +189,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 
 <p>Stronger than the basic clay furnace. Mine coal with the Flint Pickaxe for fuel!</p>
 
-<h2 id="ingot-mold">Obsidian Ingot Mold</h2>
+<h2 id="ingot-mold">Obsidian Ingot Mould</h2>
 <p>This is the key to metal smelting!</p>
 <div class="flow">
   <span class="flow-item">Sieve gravel</span>
@@ -198,16 +198,16 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
   <span class="flow-arrow">→</span>
   <span class="flow-item">Craft Obsidian</span>
   <span class="flow-arrow">→</span>
-  <span class="flow-item">Flint Knife + Obsidian = Mold</span>
+  <span class="flow-item">Flint Knife + Obsidian = Ingot Mould</span>
 </div>
 <div class="craft-section">
   <CraftingGrid recipeOutput="obsidian_ingot_mould" label={{hu: "Obsidian Öntőforma", en: "Obsidian Ingot Mould"}}/>
   <CraftingGrid recipeOutput="obsidian" label={{hu: "Obsidian Blokk", en: "Obsidian Block"}}/>
 </div>
-<p>The Obsidian ingot mold can cool <strong>20 ingots</strong> before breaking.</p>
+<p>The Obsidian ingot mould can cool <strong>20 ingots</strong> before breaking.</p>
 
-<h3>Hammer + Obsidian = 2 Molds</h3>
-<p>Placing Obsidian + Hammer on any Workbench directly produces 2 molds — more efficient method!</p>
+<h3>Hammer + Obsidian = 2 Moulds</h3>
+<p>Placing Obsidian + Hammer on any Workbench directly produces 2 moulds — more efficient method!</p>
   <CraftingGrid recipeFullId="obsidian_ingot_mould_copper_war_hammer" label={{hu: "2× Öntőforma", en: "2× Ingot Mould"}}/>
 
 <!-- ===== FIRST METAL ===== -->
@@ -219,7 +219,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
   <span class="flow-arrow">→</span>
   <span class="flow-item">Hardened Clay Furnace</span>
   <span class="flow-arrow">→</span>
-  <span class="flow-item">+ Obsidian Ingot Mold</span>
+  <span class="flow-item">+ Obsidian Ingot Mould</span>
   <span class="flow-arrow">→</span>
   <span class="flow-item">Metal Ingot!</span>
 </div>
@@ -235,17 +235,17 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 <div class="warning-box">⚠️ <strong>Mining profession is inactive in v0.9.0</strong> — this feature is currently unavailable. Use war hammer crushing instead (see below).</div>
 <p><em>If professions were enabled:</em> With the <strong>Mining profession</strong>, you could smelt ore blocks directly — 9× more efficient than ore particles! <strong>1 ore block → 1 ingot.</strong></p>
 <table>
-  <tr><th>Ore Block</th><th>Required Heat</th><th>Result</th></tr>
+  <tr><th>Ore Block</th><th>Needed Heat</th><th>Result</th></tr>
   <tr><td>Copper / Silver / Iron / Gold / Hardstone Ore</td><td>2 — Hardened Clay or Stone Furnace</td><td>1 Ingot</td></tr>
   <tr><td>Mithril / Mercury Ore</td><td>3 — Obsidian Furnace</td><td>1 Ingot</td></tr>
   <tr><td>Adamantium Ore</td><td>4 — Netherrack Furnace</td><td>1 Adamantium Ingot</td></tr>
 </table>
-<div class="warning-box">⚠️ <strong>Mining profession Required</strong> — but currently inactive in v0.9.0. Use war hammer crushing for ore blocks instead!</div>
+<div class="warning-box">⚠️ <strong>Mining profession required</strong> — but currently inactive in v0.9.0. Use war hammer crushing for ore blocks instead!</div>
 
 <h3>Ore Crushing — With War Hammers</h3>
 <p>No Mining profession? You can still make good use of ore blocks! <strong>Place an ore block and a War Hammer on a Workbench</strong> — and get 12 ore particles, which is more than the 9 you'd get from breaking down an ingot!</p>
 <table>
-  <tr><th>Input</th><th>Required Hammer</th><th>Output</th></tr>
+  <tr><th>Input</th><th>Needed Hammer</th><th>Output</th></tr>
   <tr><td>Copper / Silver / Gold ore block</td><td>Bronze, Silver Copper, or High-Carbon Steel War Hammer</td><td>12 ore particles</td></tr>
   <tr><td>Iron ore block</td><td>High-Carbon Steel War Hammer only</td><td>12 ore particles</td></tr>
   <tr><td>Any metal ingot</td><td>Any (Bronze / Silver Copper / High-Carbon Steel) War Hammer</td><td>9 ore particles</td></tr>
@@ -255,7 +255,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 <h3>Ore Processing — Method Comparison</h3>
 <table>
   <tr><th>Method</th><th>How?</th><th>Result</th><th>Requirement</th></tr>
-  <tr><td>🧺 Sieving</td><td>Sieve gravel → 9 ore particles → furnace + mold</td><td>1 Ingot</td><td>Hardened Clay Furnace + ingot mold</td></tr>
+  <tr><td>🧺 Sieving</td><td>Sieve gravel → 9 ore particles → furnace + mould</td><td>1 Ingot</td><td>Hardened Clay Furnace + ingot mould</td></tr>
   <tr><td>⛏️ Direct ore block smelting</td><td>Put 1 ore block in furnace</td><td>1 Ingot</td><td><strong>Mining profession!</strong></td></tr>
   <tr><td>🔨 War Hammer crushing</td><td>Ore block + appropriate War Hammer → Workbench</td><td>12 particles → 1⅓ Ingots</td><td>Bronze or better War Hammer</td></tr>
 </table>

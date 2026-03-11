@@ -1229,6 +1229,59 @@ const allGroups = mergeAliasGroups(groupByOutput(recipes));
 const allStations = [...new Set(recipes.map(r => r.station))].sort();
 const allSkills = [...new Set(recipes.flatMap(r => r.skills))].sort();
 
+// ── Difficulty tier számítások ─────────────────────────────────────────────
+function _bsearchLower(arr: number[], val: number): number {
+  let lo = 0, hi = arr.length;
+  while (lo < hi) { const mid = (lo + hi) >> 1; if (arr[mid] < val) lo = mid + 1; else hi = mid; }
+  return lo;
+}
+
+const _activeDifficulties = allGroups
+  .filter(g => !isOutputRemoved(g.outputId) && g.primaryRecipe.difficulty > 0)
+  .map(g => g.primaryRecipe.difficulty)
+  .sort((a, b) => a - b);
+
+function _pct(p: number): number {
+  return _activeDifficulties[Math.min(Math.floor(_activeDifficulties.length * p), _activeDifficulties.length - 1)];
+}
+
+const DIFF_CUTOFFS = [_pct(0.20), _pct(0.40), _pct(0.60), _pct(0.80), _pct(0.95)];
+
+type DiffTier = 'easy' | 'moderate' | 'challenging' | 'hard' | 'vhard' | 'extreme';
+
+const DIFF_TIER_LABELS: Record<DiffTier, { hu: string; en: string; ru: string }> = {
+  easy:        { hu: 'Könnyű',       en: 'Easy',        ru: 'Легко'        },
+  moderate:    { hu: 'Közepes',      en: 'Moderate',    ru: 'Умеренно'     },
+  challenging: { hu: 'Haladó',       en: 'Challenging', ru: 'Сложновато'   },
+  hard:        { hu: 'Nehéz',        en: 'Hard',        ru: 'Сложно'       },
+  vhard:       { hu: 'Nagyon nehéz', en: 'Very Hard',   ru: 'Очень сложно' },
+  extreme:     { hu: 'Extrém',       en: 'Extreme',     ru: 'Экстремально' },
+};
+
+const DIFF_TIER_COLORS: Record<DiffTier, string> = {
+  easy:        '#16a34a',
+  moderate:    '#ca8a04',
+  challenging: '#d97706',
+  hard:        '#ea580c',
+  vhard:       '#dc2626',
+  extreme:     '#7c3aed',
+};
+
+function getDifficultyTier(diff: number): DiffTier | null {
+  if (diff <= 0) return null;
+  if (diff <= DIFF_CUTOFFS[0]) return 'easy';
+  if (diff <= DIFF_CUTOFFS[1]) return 'moderate';
+  if (diff <= DIFF_CUTOFFS[2]) return 'challenging';
+  if (diff <= DIFF_CUTOFFS[3]) return 'hard';
+  if (diff <= DIFF_CUTOFFS[4]) return 'vhard';
+  return 'extreme';
+}
+
+function getDifficultyTopPercent(diff: number): number {
+  const pos = _bsearchLower(_activeDifficulties, diff);
+  return Math.round(((_activeDifficulties.length - pos) / _activeDifficulties.length) * 100);
+}
+
 const STATION_LABELS: Record<string, { hu: string; en: string; ru: string }> = {
   hand:                    { hu: 'Kézzel',                    en: 'By hand',                  ru: 'Руками' },
   workbench:               { hu: 'Munkaasztal',               en: 'Workbench',                ru: 'Верстак' },
@@ -1649,19 +1702,24 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                         </div>
                       )}
                       <div>🏭 {r.station}</div>
-                      <div>
-                        ⚙️ {lang === 'hu' ? 'Nehézség' : lang === 'ru' ? 'Сложность' : 'Difficulty'}:{' '}
-                        <span
-                          style={{ color: 'var(--text)', cursor: 'help', borderBottom: '1px dotted var(--text2)' }}
-                          title={lang === 'hu'
-                            ? `Crafting nehézségi pontszám: ${Math.round(r.difficulty)}\nMinél magasabb az érték, annál több idő és tapasztalat szükséges a tárgy minőségi craftolásához (Fine → Legendary). Az XP-követelmény ezzel az értékkel arányos.`
-                            : lang === 'ru'
-                            ? `Сложность крафта: ${Math.round(r.difficulty)}\nЧем выше значение, тем больше времени и опыта нужно, чтобы создать предмет более высокого качества (Fine → Legendary). Требуемый опыт растёт пропорционально этому значению.`
-                            : `Crafting difficulty score: ${Math.round(r.difficulty)}\nHigher values require more time and experience to craft the item at higher quality (Fine → Legendary). XP requirements scale proportionally with this value.`}
-                        >
-                          {Math.round(r.difficulty).toLocaleString()}
-                        </span>
-                      </div>
+                      {r.difficulty > 0 && (
+                        <div>
+                          <span style={{ color: '#9ca3af' }}>
+                            ⚙️ {lang === 'hu' ? 'Nehézség' : lang === 'en' ? 'Difficulty' : 'Сложность'}:
+                          </span>{' '}
+                          <DiffBadge difficulty={r.difficulty} outputQty={r.outputQty} size="normal" lang={lang} />
+                          <div style={{ fontSize: '11px', color: '#6b7280', marginTop: '3px' }}>
+                            {(() => {
+                              const top = getDifficultyTopPercent(r.difficulty);
+                              return lang === 'hu'
+                                ? `A receptek legnehezebb ${top}%-ába tartozik`
+                                : lang === 'en'
+                                ? `Among the top ${top}% hardest recipes`
+                                : `Входит в ${top}% самых сложных рецептов`;
+                            })()}
+                          </div>
+                        </div>
+                      )}
                       {r.skills.length > 0 && <div>🎓 {r.skills.join(', ')}</div>}
                       {r.outputQty > 1 && <div>📦 ×{r.outputQty}</div>}
                     </div>
@@ -2216,6 +2274,37 @@ function SandboxPanel({ lang, sandboxGrid, setSandboxCell, clearSandbox, sandbox
   );
 }
 
+// ── DiffBadge komponens ───────────────────────────────────────────────────
+function DiffBadge({ difficulty, outputQty = 1, size = 'normal', lang }: {
+  difficulty: number; outputQty?: number; size?: 'small' | 'normal'; lang: 'hu' | 'en' | 'ru';
+}) {
+  const tier = getDifficultyTier(difficulty);
+  if (!tier) return null;
+  const color = DIFF_TIER_COLORS[tier];
+  const label = DIFF_TIER_LABELS[tier][lang];
+  const pill = (
+    <span style={{ background: color, color: '#fff', borderRadius: '999px',
+      fontSize: size === 'small' ? '10px' : '12px',
+      padding: size === 'small' ? '1px 6px' : '2px 8px',
+      fontWeight: 600, lineHeight: 1.4 }}>
+      {label}
+    </span>
+  );
+  if (size === 'small') return pill;
+  const perUnit = outputQty > 1 ? Math.round(difficulty / outputQty) : null;
+  return (
+    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', flexWrap: 'wrap' }}>
+      {pill}
+      <span style={{ fontSize: '12px', color: '#9ca3af' }}>{Math.round(difficulty).toLocaleString()}</span>
+      {perUnit && (
+        <span style={{ fontSize: '11px', color: '#6b7280' }}>
+          ({perUnit.toLocaleString()}{lang === 'hu' ? '/egység' : lang === 'en' ? '/unit' : '/ед.'})
+        </span>
+      )}
+    </span>
+  );
+}
+
 export default function RecipesHub() {
   const [mode, setMode] = useState<'browse' | 'sandbox' | 'tree'>('browse');
   const [transitioning, setTransitioning] = useState(false);
@@ -2228,6 +2317,7 @@ export default function RecipesHub() {
   const [selectedOutputId, setSelectedOutputId] = useState<string | null>(null);
   const [usedInModalItem, setUsedInModalItem] = useState<string | null>(null);
   const [fromSandbox, setFromSandbox] = useState(false);
+  const [diffSort, setDiffSort] = useState<'none' | 'asc' | 'desc'>('none');
   const searchRef = useRef<HTMLInputElement>(null);
 
   function navigateFromSandbox(id: string) {
@@ -2275,7 +2365,7 @@ export default function RecipesHub() {
   const [pickerSlot, setPickerSlot] = useState<{ row: number; col: number } | null>(null);
   const [pickerQuery, setPickerQuery] = useState('');
 
-  const hasFilters = keyword !== '' || stationFilter !== '' || skillFilter !== '' || ingredientFilter !== '' || typeFilter !== 'current';
+  const hasFilters = keyword !== '' || stationFilter !== '' || skillFilter !== '' || ingredientFilter !== '' || typeFilter !== 'current' || diffSort !== 'none';
 
   function clearFilters() {
     setKeyword('');
@@ -2283,10 +2373,11 @@ export default function RecipesHub() {
     setSkillFilter('');
     setIngredientFilter('');
     setTypeFilter('current');
+    setDiffSort('none');
   }
 
   const filteredGroups = useMemo(() => {
-    return allGroups.filter(g => {
+    let result = allGroups.filter(g => {
       if (keyword) {
         const kw = keyword.toLowerCase();
         const matches = g.allOutputIds.some(id =>
@@ -2311,7 +2402,15 @@ export default function RecipesHub() {
       if (typeFilter === 'current' && isOutputRemoved(g.outputId)) return false;
       return true;
     });
-  }, [keyword, stationFilter, skillFilter, ingredientFilter, typeFilter, lang]);
+    if (diffSort !== 'none') {
+      result = [...result].sort((a, b) => {
+        const da = a.primaryRecipe.difficulty;
+        const db = b.primaryRecipe.difficulty;
+        return diffSort === 'asc' ? da - db : db - da;
+      });
+    }
+    return result;
+  }, [keyword, stationFilter, skillFilter, ingredientFilter, typeFilter, lang, diffSort]);
 
   const totalRecipeCount = filteredGroups.reduce((s, g) => s + getDisplayRecipeCount(g), 0);
   const selectedGroup = selectedOutputId ? allGroups.find(x => x.allOutputIds.includes(getCanonicalItemId(selectedOutputId))) ?? null : null;
@@ -2434,6 +2533,22 @@ export default function RecipesHub() {
               <option value="removed">{lang === 'hu' ? '⚠️ Eltávolított' : lang === 'ru' ? '⚠️ Удалённые' : '⚠️ Removed'}</option>
             </select>
 
+            <button
+              onClick={() => setDiffSort(s => s === 'none' ? 'asc' : s === 'asc' ? 'desc' : 'none')}
+              style={{
+                padding: '4px 10px', borderRadius: '6px', fontSize: '12px', cursor: 'pointer',
+                background: diffSort !== 'none' ? '#ea580c' : '#374151',
+                color: '#fff', border: 'none', fontWeight: 500, fontFamily: 'inherit',
+              }}
+              title={lang === 'hu' ? 'Rendezés nehézség szerint' : lang === 'en' ? 'Sort by difficulty' : 'Сортировать по сложности'}
+            >
+              {diffSort === 'none'
+                ? (lang === 'hu' ? '⚡ Nehézség' : lang === 'en' ? '⚡ Difficulty' : '⚡ Сложность')
+                : diffSort === 'asc'
+                ? (lang === 'hu' ? '⚡ Könnyebb elöl' : lang === 'en' ? '⚡ Easy → Hard' : '⚡ Лёгкие → Тяжёлые')
+                : (lang === 'hu' ? '⚡ Nehezebb elöl' : lang === 'en' ? '⚡ Hard → Easy' : '⚡ Тяжёлые → Лёгкие')}
+            </button>
+
             {hasFilters && (
               <button onClick={clearFilters}
                 style={{ padding: '5px 10px', borderRadius: 6, border: '1px solid var(--surface2)',
@@ -2504,6 +2619,11 @@ export default function RecipesHub() {
                       )}
                     </div>
                   </div>
+                  {g.primaryRecipe.difficulty > 0 && (
+                    <div style={{ marginTop: '2px' }}>
+                      <DiffBadge difficulty={g.primaryRecipe.difficulty} size="small" lang={lang} />
+                    </div>
+                  )}
                 </div>
               );
             })}

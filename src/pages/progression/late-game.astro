@@ -47,7 +47,7 @@ const sidebarGroups = getSidebarGroups('progression/late-game');
 <!-- ===== MITHRIL ===== -->
 
 <h2 id="mithril">Mithril — A Mitikus Kor</h2>
-<p>Borzasztó mágia lakozik benne. <span class="wiki-item" data-id="mithril_bar">Mithril</span>-ércet <strong>vas csákánnyal/háborús kalapáccsal</strong> bányászhatsz. Az olvasztáshoz <strong>Obszidián többblokkos kemence</strong> kell.</p>
+<p>Borzasztó mágia lakozik benne. <span class="wiki-item" data-id="mithril_bar">Mithril</span>-ércet <strong>vas csákánnyal vagy háborús kalapáccsal</strong> bányászhatsz. Az olvasztáshoz <strong>Obszidián többblokkos kemence</strong> kell.</p>
 <div class="warning-box">🌋 <strong>Olvasztás:</strong> Mithrilérc olvasztásához <strong>Lávavödör</strong> (heat level 3) szükséges tüzelőanyagként. Szén (heat 2) nem elég. A helyi v0.9.0 adatok alapján itt nem kezelem kötelezőnek a külön profession-választást.</div>
 
 <h3>Mithril szett hatás</h3>
@@ -56,7 +56,7 @@ const sidebarGroups = getSidebarGroups('progression/late-game');
   <li><strong>Megerősítés II (4/4):</strong> -30% Sérülés Csökkentés</li>
 </ul>
 
-<p>Teljes készlet: csákány, fejsze, ásó, kés, tőr, kard, harci kalapács, csatafejsze, kasza, kapa, <strong>íj</strong> (egyedülálló!), sisak, mellvért, Nadrág, csizmák, lánc változatok, vödör, olló.</p>
+<p>Teljes készlet: csákány, fejsze, ásó, kés, tőr, kard, háborús kalapács, csatafejsze, kasza, kapa, <strong>íj</strong> (egyedülálló!), sisak, mellvért, lábvért, csizma, lánc változatok, vödör, olló.</p>
 
 <h3>Mithril vs Adamantium</h3>
 <table class="compare-table">
@@ -69,7 +69,7 @@ const sidebarGroups = getSidebarGroups('progression/late-game');
 
 <div class="craft-section">
   <CraftingGrid recipeOutput="ancient_metal_short_sword" label={{hu: "Ősi Fém Rövidkard", en: "Ancient Metal Short Sword"}}/>
-  <CraftingGrid recipeOutput="ancient_metal_war_hammer" label={{hu: "Ősi Fém harci kalapács", en: "Ancient Metal War Hammer"}}/>
+  <CraftingGrid recipeOutput="ancient_metal_war_hammer" label={{hu: "Ősi Fém Háborús Kalapács", en: "Ancient Metal War Hammer"}}/>
 </div>
 
 
@@ -95,8 +95,8 @@ const sidebarGroups = getSidebarGroups('progression/late-game');
 </ul>
 
 <h3>Elementális Obszidián (Higanyos módszer)</h3>
-<p>A <strong>Higany</strong> (~Y24, Mocsár Biom-ban) vödörbe töltve és a Kétszájú Üstbe öntve <strong>Elementális Obszidiánt</strong> hoz létre víz+lávával kombinálva. Ez speciális blokk, amely egyes receptekhez Required. Higany az Alvilágban is megtalálható.</p>
-<div class="warning-box">⚠️ <strong>~4 stack Obszidián Required</strong> a további fejlődéshez (portálok, kemencék). A Kétszájú Üst felállítása elengedhetetlen — ne hagyd ki!</div>
+<p>A <strong>Higany</strong> (~Y24, Mocsár biomban) vödörbe töltve és a Kétszájú Üstbe öntve <strong>Elementális Obszidiánt</strong> hoz létre víz+lávával kombinálva. Ez speciális blokk, amely egyes receptekhez szükséges. Higany az Alvilágban is megtalálható.</p>
+<div class="warning-box">⚠️ <strong>Kb. 4 stack obszidián szükséges</strong> a további fejlődéshez (portálok, kemencék). A Kétszájú Üst felállítása elengedhetetlen — ne hagyd ki!</div>
 
 </div>
 
@@ -127,14 +127,14 @@ const sidebarGroups = getSidebarGroups('progression/late-game');
 
 <div class="craft-section">
   <CraftingGrid recipeOutput="ancient_metal_short_sword" label={{hu: "Ősi Fém Rövidkard", en: "Ancient Metal Short Sword"}}/>
-  <CraftingGrid recipeOutput="ancient_metal_war_hammer" label={{hu: "Ősi Fém harci kalapács", en: "Ancient Metal War Hammer"}}/>
+  <CraftingGrid recipeOutput="ancient_metal_war_hammer" label={{hu: "Ősi Fém Háborús Kalapács", en: "Ancient Metal War Hammer"}}/>
 </div>
 
 
 <!-- ===== TWO-MOUTHED CAULDRON ===== -->
 
 <h2 id="two-cauldron">Two-Mouthed Cauldron &amp; Elemental Obsidian</h2>
-<p>The <strong>Two-Mouthed Cauldron</strong> is a MITE:BE-specific multiblock Structure that mass-produces Obsidian — essential for progression (roughly 4 stacks Required).</p>
+<p>The <strong>Two-Mouthed Cauldron</strong> is a MITE:BE-specific multiblock structure that mass-produces Obsidian — essential for progression (roughly 4 stacks needed).</p>
 
 <h3>How to Create It</h3>
 <div class="flow">
@@ -153,8 +153,8 @@ const sidebarGroups = getSidebarGroups('progression/late-game');
 </ul>
 
 <h3>Elemental Obsidian (Mercury method)</h3>
-<p><strong>Mercury</strong> (~Y24, found in Swamp Biomes) can be collected in a bucket and poured into the Two-Mouthed Cauldron combined with water+lava to create <strong>Elemental Obsidian</strong> — a special block Required for certain recipes. Mercury is also found in the Underground.</p>
-<div class="warning-box">⚠️ <strong>~4 stacks of Obsidian Required</strong> for further progression (portals, furnaces). Setting up the Two-Mouthed Cauldron is essential — don't skip it!</div>
+<p><strong>Mercury</strong> (~Y24, found in Swamp Biomes) can be collected in a bucket and poured into the Two-Mouthed Cauldron combined with water+lava to create <strong>Elemental Obsidian</strong> — a special block needed for certain recipes. Mercury is also found in the Underground.</p>
+<div class="warning-box">⚠️ <strong>About 4 stacks of Obsidian are needed</strong> for further progression (portals, furnaces). Setting up the Two-Mouthed Cauldron is essential — don't skip it!</div>
 
 </div>
 
