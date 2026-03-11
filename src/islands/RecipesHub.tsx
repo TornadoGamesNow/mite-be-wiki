@@ -1711,11 +1711,19 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                           <div style={{ fontSize: '11px', color: '#6b7280', marginTop: '3px' }}>
                             {(() => {
                               const top = getDifficultyTopPercent(r.difficulty);
+                              if (top === 0) {
+                                return lang === 'hu'
+                                  ? 'A legnehezebb receptek egyike'
+                                  : lang === 'en'
+                                  ? 'Among the hardest recipes'
+                                  : 'Один из самых сложных рецептов';
+                              }
+                              const display = Math.max(1, top);
                               return lang === 'hu'
-                                ? `A receptek legnehezebb ${top}%-ába tartozik`
+                                ? `A receptek legnehezebb ${display}%-ába tartozik`
                                 : lang === 'en'
-                                ? `Among the top ${top}% hardest recipes`
-                                : `Входит в ${top}% самых сложных рецептов`;
+                                ? `Among the top ${display}% hardest recipes`
+                                : `Входит в ${display}% самых сложных рецептов`;
                             })()}
                           </div>
                         </div>
