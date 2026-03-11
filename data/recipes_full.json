@@ -2741,14 +2741,15 @@
     "id": "nether_brick_144",
     "item_num": 112,
     "output": "nether_brick",
-    "outputQty": 2,
+    "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 850,
+    "difficulty": 25,
     "skills": [
       "masonry"
     ],
     "ingredients": [
-      "netherrack"
+      "netherrack",
+      "coal"
     ],
     "shaped": false
   },
@@ -29558,44 +29559,6 @@
       "tool",
       "knife"
     ]
-  },
-  {
-    "id": "flint_hatchet",
-    "item_num": 1311,
-    "output": "flint_hatchet",
-    "outputQty": 1,
-    "station": "hand",
-    "difficulty": 175,
-    "skills": [
-      "masonry"
-    ],
-    "ingredients": [
-      "flint",
-      "leather_rope",
-      "stick"
-    ],
-    "shaped": true,
-    "label": {
-      "hu": "KĹ‘zet RĂ¶vid Fejsze",
-      "en": "Stone Short Hatchet"
-    },
-    "pattern": [
-      [
-        "flint",
-        "leather_rope"
-      ],
-      [
-        "stick",
-        "_"
-      ]
-    ],
-    "gridSize": "2x2",
-    "tags": [
-      "flint-age",
-      "tool",
-      "hatchet"
-    ],
-    "removed_version": "pre-0.5.5"
   },
   {
     "id": "flint_workbench",
