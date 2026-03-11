@@ -73,15 +73,15 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Deszka</strong></td><td>Minden deszka típus</td><td><strong>8</strong></td><td>64</td></tr>
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Ércek</strong></td><td>Vas, Réz, Arany, Gyémánt, Mithril, Adamantium</td><td><strong>5</strong></td><td>64</td></tr>
   <tr><td>Homok / Homokkő</td><td>Homok, Sötét Homok</td><td>8</td><td>64</td></tr>
-  <tr><td>Kavics</td><td>Kavics, Pokol Kavics</td><td>8</td><td>64</td></tr>
+  <tr><td>Kavics</td><td>Kavics, Alvilági Kavics</td><td>8</td><td>64</td></tr>
   <tr><td>Üveg</td><td>Üveg blokk, Üveg Panel</td><td>4 / 16</td><td>64</td></tr>
   <tr style="background:rgba(100,200,100,0.10)"><td>Fáklya</td><td>Fáklya, Vöröskő Fáklya</td><td>32</td><td>64</td></tr>
 </table>
 <div class="warning-box">📦 <strong>Fontos:</strong> A csökkentett kötegméretek miatt szükséged van <strong>több tároló ládára</strong>, és az anyaggyűjtés is hamarabb tölti meg a leltárat. Tervezz előre!</div>
 
 <h2 id="knowledge-books">Tudáskönyvek (Knowledge Books)</h2>
-<p>A Knowledge Book (Knowledge Book) egy speciális tárgy, amely haladó receptek feloldására szolgál. Amíg nem rendelkezel a megfelelő Knowledge Bookvel, az adott recept <strong>nem craftolható</strong>!</p>
-<div class="warning-box">🔒 <strong>Kemény zárolás (Hard Gate)!</strong> Ha egy recept Knowledge Bookhöz kötött, akkor <strong>még akkor sem tudod megcraftolni, ha minden alapanyagod megvan!</strong> A v0.9.0 kínai item-leírások alapján a könyvek elsődleges, biztos forrása a <strong>föld alatti dungeon treasure chest</strong> loot.</div>
+<p>A Tudáskönyv (Knowledge Book) egy speciális tárgy, amely haladó receptek feloldására szolgál. Amíg nem rendelkezel a megfelelő Tudáskönyvvel, az adott recept <strong>nem készíthető el</strong>!</p>
+<div class="warning-box">🔒 <strong>Kemény zárolás (Hard Gate)!</strong> Ha egy recept Tudáskönyvhöz kötött, akkor <strong>még akkor sem tudod elkészíteni, ha minden alapanyagod megvan!</strong> A v0.9.0 kínai itemleírások alapján a könyvek elsődleges, biztos forrása a <strong>föld alatti dungeonök kincsesládája</strong>.</div>
 
 <div class="craft-section">
   <CraftingGrid recipeOutput="miner_helmet" label={{hu: "Bányászsisak (Vas Munkaasztal)", en: "Miner Helmet (Iron Workbench)"}}/>
@@ -89,28 +89,28 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <CraftingGrid recipeOutput="bedrock_pulverizer" label={{hu: "Alapkőzet-zúzó", en: "Bedrock Pulverizer"}}/>
 </div>
 
-<h3>Knowledge Bookek listája</h3>
+<h3>Tudáskönyvek listája</h3>
 <table>
   <tr><th>Knowledge Book</th><th>Feloldott recept</th><th>Megjegyzés</th></tr>
-  <tr><td>Bányászsisak tudáskönyv</td><td>Bányászsisak</td><td>Vas Munkaasztalon craftolható, tartósság: 150</td></tr>
+  <tr><td>Bányászsisak tudáskönyv</td><td>Bányászsisak</td><td>Vas Munkaasztalon készíthető, tartósság: 150</td></tr>
   <tr><td>Akkumulátor tudáskönyv</td><td>Akkumulátor</td><td>Bányászsisak újratöltéséhez (75 tartósság/db)</td></tr>
-  <tr><td>Elemi víztáska tudáskönyv</td><td>Elemi Víztáska</td><td>Fejlett víztároló bőrből és selyemből</td></tr>
-  <tr><td>Ősi fém szűrő papír tudáskönyv</td><td>Ősi Fém Szűrőpapír</td><td>Haladó vízszűrés ősi fém nuggettel</td></tr>
+  <tr><td>Elemi víztasak tudáskönyv</td><td>Elemi Víztasak</td><td>Fejlett víztároló bőrből és selyemből</td></tr>
+  <tr><td>Ősi fém szűrőpapír tudáskönyv</td><td>Ősi Fém Szűrőpapír</td><td>Haladó vízszűrés ősi fém szemcsével</td></tr>
   <tr><td>Szikla porítógép tudáskönyv</td><td>Szikla Porítógép</td><td>Alapkő elpusztítása: beacon + vöröskő blokk + obszidián</td></tr>
   <tr><td>Továbbfejlesztett vég szem tudáskönyv</td><td>Erősített Ender Szem</td><td>9× Ender Szem → Erősített Ender Szem</td></tr>
-  <tr><td>Fejlett varázslóasztal tudáskönyv</td><td>Fejlett Varázslóasztal</td><td>Erősebb bűvölések eléréséhez</td></tr>
-  <tr><td>Teleport kő tudáskönyv</td><td>Teleport Kő</td><td>Teleportálási célpont; Kemény kő munkaasztalon: Ender gyöngy + vöröskő + kőtégla</td></tr>
-  <tr><td>Teleport tekercs tudáskönyv</td><td>Teleport Tekercs</td><td>A helyi receptadatokban legacy/eltávolított teleport-scroll hivatkozásként látszik</td></tr>
+  <tr><td>Egyéni bűvölőasztal tudáskönyv</td><td>Egyéni Bűvölőasztal</td><td>Erősebb bűvölések eléréséhez</td></tr>
+  <tr><td>Útkő tudáskönyv</td><td>Útkő</td><td>Teleportálási célpont; Keménykő Munkaasztalon: Ender gyöngy + vöröskő + kőtégla</td></tr>
+  <tr><td>Teleport-tekercs tudáskönyv</td><td>Teleport-tekercs</td><td>A helyi receptadatokban régi, eltávolított teleport-tekercs-hivatkozásként látszik</td></tr>
   <tr><td>Óra tudáskönyv</td><td>Óra</td><td>8× arany nugget + vöröskő; napszak jelzés</td></tr>
-  <tr><td>Hűtő folyadék tudáskönyv</td><td>Hűtő Folyadék</td><td>Ónlemez + jég; hőmérséklet csökkentésére</td></tr>
+  <tr><td>Hűtőfolyadék tudáskönyv</td><td>Hűtőfolyadék</td><td>Ónlemez + jég; hőmérséklet csökkentésére</td></tr>
   <tr><td>Óriás TNT tudáskönyv</td><td>Óriás TNT</td><td>Nagyobb hatósugarú robbanás</td></tr>
   <tr><td>Világjelölő tudáskönyv</td><td>Világjelölő</td><td>Világ újraéledési pontjának beállítása; helyi receptadat: obszidián + kék iránytű</td></tr>
   <tr><td>Ősi fém tároló tudáskönyv</td><td>Ősi Fém Tároló</td><td>Fejlett tároló eszköz ősi fémből</td></tr>
 </table>
 
 <h3>Bányászsisak</h3>
-<p>A Bányászsisak mobil fényforrás, ami 30 másodpercenként 1 tartósságot fogyaszt. <strong>Vas Munkaasztalon</strong> készíthető a Knowledge Book feloldása után. Akkumulátorral újratölthető.</p>
-<div class="tip-card">💡 Extra Knowledge Bookeket könyvvé alakíthatsz a munkaasztalon, és experience pointsot kapsz érte!</div>
+<p>A Bányászsisak mobil fényforrás, ami 30 másodpercenként 1 tartósságot fogyaszt. <strong>Vas Munkaasztalon</strong> készíthető el a megfelelő Tudáskönyv feloldása után. Akkumulátorral újratölthető.</p>
+<div class="tip-card">💡 A fölösleges Tudáskönyveket könyvvé alakíthatod a munkaasztalon, és XP-t kapsz értük.</div>
 </div>
 
 <div data-lang="en">
@@ -151,7 +151,7 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 
 <h2 id="knowledge-books-en">Knowledge Books</h2>
 <p>A Knowledge Book is a special item that unlocks advanced recipes. If a recipe is gated behind a Knowledge Book, you <strong>cannot craft it</strong> even if you have all the materials!</p>
-<div class="warning-box">🔒 <strong>Hard Gate!</strong> Based on the v0.9.0 Chinese item pages, the primary reliable source for Knowledge Books is <strong>underground dungeon treasure chests</strong>.</div>
+<div class="warning-box">🔒 <strong>Hard Gate!</strong> Based on the v0.9.0 Chinese item pages, the primary reliable source for Knowledge Books is <strong>treasure chests in underground dungeons</strong>.</div>
 
 <h3>Knowledge Books List</h3>
 <table>
@@ -162,16 +162,16 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <tr><td>Ancient Metal Filter Paper Knowledge Book</td><td>Ancient Metal Filter Paper</td><td>Advanced water filtration with ancient metal nuggets</td></tr>
   <tr><td>Bedrock Pulverizer Knowledge Book</td><td>Bedrock Pulverizer</td><td>Destroys bedrock core; beacon + Redstone Block + Obsidian</td></tr>
   <tr><td>Enhanced Ender Eye Knowledge Book</td><td>Enhanced Ender Eye</td><td>9× Ender Eyes → Enhanced Ender Eye</td></tr>
-  <tr><td>Advanced Enchanting Table Knowledge Book</td><td>Advanced Enchanting Table</td><td>Stronger enchantments</td></tr>
-  <tr><td>Teleport Stone Knowledge Book</td><td>Teleport Stone</td><td>Teleportation destination; Hardstone Workbench: Ender Pearl + Redstone Block + Stone Bricks</td></tr>
-  <tr><td>Teleport Scroll Knowledge Book</td><td>Teleport Scroll</td><td>Appears as a legacy/removed teleport-scroll reference in the local recipe data</td></tr>
+  <tr><td>Custom Enchantment Table Knowledge Book</td><td>Custom Enchantment Table</td><td>Stronger enchantments</td></tr>
+  <tr><td>Teleportation Stone Knowledge Book</td><td>Teleportation Stone</td><td>Teleportation destination; Hardstone Workbench: Ender Pearl + Redstone Block + Stone Bricks</td></tr>
+  <tr><td>Teleport Scroll Knowledge Book</td><td>Teleport Scroll</td><td>Appears as a legacy/removed teleport-scroll reference in the current recipe data</td></tr>
   <tr><td>Clock Knowledge Book</td><td>Clock</td><td>8× Gold Nuggets + Redstone Dust; shows time of day</td></tr>
   <tr><td>Cooling Liquid Knowledge Book</td><td>Cooling Liquid</td><td>Tin plates + Ice; reduces body temperature</td></tr>
   <tr><td>Giant TNT Knowledge Book</td><td>Giant TNT</td><td>Larger explosion radius than regular TNT</td></tr>
-  <tr><td>World Marker Knowledge Book</td><td>World Marker</td><td>Sets the world's respawn point; local recipe data uses obsidian + Blue Compass</td></tr>
+  <tr><td>World Marker Knowledge Book</td><td>World Marker</td><td>Sets the world's respawn point; current recipe data uses obsidian + Blue Compass</td></tr>
   <tr><td>Ancient Metal Container Knowledge Book</td><td>Ancient Metal Container</td><td>Advanced storage item from Ancient Metal</td></tr>
 </table>
-<div class="tip-card">💡 Extra Knowledge Books can be converted to regular books at the workbench, giving you experience points!</div>
+<div class="tip-card">💡 Extra Knowledge Books can be converted into regular books at the workbench for XP.</div>
 </div>
 
 <div data-lang="ru">
@@ -180,12 +180,12 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 <table class="compare-table">
   <tr><th>Рюкзак</th><th>Ячейки</th><th>Статус в v0.9.0</th></tr>
   <tr><td>Кожаный</td><td>10</td><td>Базовый рюкзак с обычным рецептом</td></tr>
-  <tr><td>Большой рюкзак</td><td>21</td><td>Улучшается предметом <span class="wiki-item" data-id="big_backpack_upgrade">Big Backpack Upgrade</span></td></tr>
-  <tr style="background:rgba(180,120,255,0.12)"><td><strong>Из Древнего металла</strong></td><td><strong>78</strong></td><td><span class="wiki-item" data-id="ancient_metal_backpack_upgrade">Ancient Metal Backpack Upgrade</span> + котёл с ртутью + книга знаний</td></tr>
+  <tr><td>Большой рюкзак</td><td>21</td><td>Улучшается предметом <span class="wiki-item" data-id="big_backpack_upgrade">Улучшение большого рюкзака</span></td></tr>
+  <tr style="background:rgba(180,120,255,0.12)"><td><strong>Рюкзак из Древнего металла</strong></td><td><strong>78</strong></td><td><span class="wiki-item" data-id="ancient_metal_backpack_upgrade">Улучшение рюкзака из древнего металла</span> + котёл с ртутью + книга знаний</td></tr>
   <tr><td>Медный / Серебряный / Железный / Золотой / Твердокаменный</td><td>21 / 21 / 36 / 44 / 55</td><td>Старые типы рюкзаков всё ещё названы в файлах, но локального списка рецептов v0.9.0 для них не найдено</td></tr>
   <tr><td>Мифриловый / Адамантиевый</td><td>90 / 102</td><td>Есть в файлах по названиям, но рецепт или предмет улучшения для v0.9.0 не найден</td></tr>
 </table>
-<div class="tip-card">🎒 <strong>Надёжный путь в v0.9.0:</strong> Кожаный рюкзак → Big Backpack Upgrade → Ancient Metal Backpack Upgrade. Последний этап требует предмета Big Backpack Upgrade, 4× слитка Древнего металла и полного котла с ртутью с источником магмы/лавы снизу примерно на 30 секунд.</div>
+<div class="tip-card">🎒 <strong>Надёжный путь в v0.9.0:</strong> Кожаный рюкзак → Улучшение большого рюкзака → Улучшение рюкзака из древнего металла. Последний этап требует предмета Улучшение большого рюкзака, 4× слитка Древнего металла и полного котла с ртутью с источником магмы/лавы снизу примерно на 30 секунд.</div>
 
 <h2 id="temperature-ru">🌡️ Температура тела</h2>
 <p>Оптимальная температура — 36–37°C. Огонь, лава и Незер повышают её; вода, дождь и лёд снижают.</p>
@@ -224,10 +224,10 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <tr><td>Книга знаний: Мешок для воды</td><td>Элементный мешок для воды</td><td>Продвинутое водохранилище из кожи и шёлка</td></tr>
   <tr><td>Книга знаний: Фильтровальная бумага</td><td>Фильтровальная бумага из Древнего металла</td><td>Продвинутая фильтрация воды с самородками</td></tr>
   <tr><td>Книга знаний: Измельчитель коренной породы</td><td>Измельчитель коренной породы</td><td>Маяк + блок красного камня + обсидиан</td></tr>
-  <tr><td>Книга знаний: Улучшенное око Эндера</td><td>Улучшенное око Эндера</td><td>9× Глаз Края → Улучшенное Oko Эндера</td></tr>
-  <tr><td>Книга знаний: Высокое зачарование</td><td>Продвинутый стол зачарований</td><td>Для более сильных зачарований</td></tr>
-  <tr><td>Книга знаний: Телепорт-камень</td><td>Телепорт-камень</td><td>Точка телепортации; верстак из твёрдого камня: жемчуг края + блок красного камня + каменный кирпич</td></tr>
-  <tr><td>Книга знаний: Свиток</td><td>Телепорт-свиток</td><td>В локальных рецептах выглядит как legacy/удалённая ссылка на телепорт-свиток</td></tr>
+  <tr><td>Книга знаний: Улучшенное око Эндера</td><td>Улучшенное око Эндера</td><td>9× Глаз Края → Улучшенное око Эндера</td></tr>
+  <tr><td>Книга знаний: Особый стол зачарования</td><td>Особый стол зачарования</td><td>Для более сильных зачарований</td></tr>
+  <tr><td>Книга знаний: Камень перемещения</td><td>Камень перемещения</td><td>Точка телепортации; твердокаменный верстак: жемчуг края + блок красного камня + каменные кирпичи</td></tr>
+  <tr><td>Книга знаний: Телепорт-свиток</td><td>Телепорт-свиток</td><td>В текущих локальных рецептах выглядит как старая удалённая ссылка на телепорт-свиток</td></tr>
   <tr><td>Книга знаний: Часы</td><td>Часы</td><td>8× золотой самородок + красный камень; показывает время суток</td></tr>
   <tr><td>Книга знаний: Охлаждающая жидкость</td><td>Охлаждающая жидкость</td><td>Оловянные пластины + лёд; снижает температуру тела</td></tr>
   <tr><td>Книга знаний: ТНТ</td><td>Гигантский ТНТ</td><td>Радиус взрыва больше обычного ТНТ</td></tr>
@@ -236,9 +236,9 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 </table>
 <div class="tip-card">💡 Лишние Книги знаний можно превратить в обычные книги на верстаке — в обмен ты получишь очки опыта!</div>
 
-<h3>Горный шлем (Miner Helmet)</h3>
-<p>Горный шлем — мобильный источник света, потребляющий 1 единицу прочности каждые 30 секунд. Крафтится на <strong>Железном верстаке</strong> после получения Книги знаний. Перезаряжается Аккумулятором (75 прочности за штуку).</p>
-<div class="tip-card">💡 Горный шлем освобождает руки от факела — очень удобен в пещерах и шахтах!</div>
+<h3>Шахтёрский шлем</h3>
+<p>Шахтёрский шлем — мобильный источник света, потребляющий 1 единицу прочности каждые 30 секунд. Крафтится на <strong>Железном верстаке</strong> после получения Книги знаний. Перезаряжается Аккумулятором (75 прочности за штуку).</p>
+<div class="tip-card">💡 Шахтёрский шлем освобождает руки от факела — очень удобен в пещерах и шахтах!</div>
 </div>
 
 <ProgressComplete pageId="survival" />

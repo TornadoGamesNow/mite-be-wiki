@@ -46,7 +46,7 @@ const STATION_LABELS: Record<string, { hu: string; en: string; ru: string }> = {
   gold_workbench:           { hu: 'Arany Munkaasztal',      en: 'Gold Workbench',           ru: 'Золотой верстак' },
   iron_workbench:           { hu: 'Vas Munkaasztal',        en: 'Iron Workbench',           ru: 'Железный верстак' },
   hardstone_workbench:      { hu: 'Kőmag Munkaasztal',      en: 'Hardstone Workbench',      ru: 'Твердокаменный верстак' },
-  ancient_metal_workbench:  { hu: 'Ős Fém Munkaasztal',     en: 'Ancient Metal Workbench',  ru: 'Верстак из древнего металла' },
+  ancient_metal_workbench:  { hu: 'Ősi Fém Munkaasztal',    en: 'Ancient Metal Workbench',  ru: 'Верстак из древнего металла' },
   mithril_workbench:        { hu: 'Mithril Munkaasztal',    en: 'Mithril Workbench',        ru: 'Мифриловый верстак' },
   adamantium_workbench:     { hu: 'Adamantium Munkaasztal', en: 'Adamantium Workbench',     ru: 'Адамантиевый верстак' },
   blast_furnace:            { hu: 'Nagy Kemence',           en: 'Blast Furnace',            ru: 'Доменная печь' },

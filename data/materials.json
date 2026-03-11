@@ -14,7 +14,7 @@
     { "quality": { "hu": "Kitűnő", "en": "Excellent" }, "materials": { "hu": "Arany, Gyémánt", "en": "Gold, Diamond" } },
     { "quality": { "hu": "Pompás", "en": "Superb" }, "materials": { "hu": "Réz, Keménykő, Ezüst, Smaragd, Bronz, Ezüst-réz", "en": "Copper, Keménykő, Silver, Emerald, Bronze, Silver Copper" } },
     { "quality": { "hu": "Jó", "en": "Good" }, "materials": { "hu": "Bőr, Fa, Kova, Obszidián, Kvarc, Csont", "en": "Leather, Wood, Flint, Obszidián, Quartz, Bone" } },
-    { "quality": { "hu": "Átlagos", "en": "Average" }, "materials": { "hu": "Alvilágkő, Üveg", "en": "Netherbrick, Glass" }, "muted": true },
+    { "quality": { "hu": "Átlagos", "en": "Average" }, "materials": { "hu": "Alvilágtégla, Üveg", "en": "Nether Brick, Glass" }, "muted": true },
     { "quality": { "hu": "Rossz", "en": "Poor" }, "materials": { "hu": "Rozsdás vas", "en": "Rusted Iron" }, "bad": true }
   ],
   "durabilityMult": [

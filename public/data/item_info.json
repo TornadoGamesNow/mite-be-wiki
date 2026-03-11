@@ -22,14 +22,14 @@
     "mcmod_id": 771974,
     "desc": "Simple rope made from plant fiber. Used in early primitive crafting.",
     "desc_en": "Simple rope made from plant fiber. Used in early primitive crafting.",
-    "desc_hu": "Egyszerű kötél növényi rostból. Korai primitív craftokhoz használható.",
+    "desc_hu": "Egyszerű kötél növényi rostból. Korai primitív receptekhez használható.",
     "desc_ru": "Простая верёвка из растительного волокна. Используется в раннем примитивном крафте."
   },
   "flint": {
     "mcmod_id": 779578,
     "desc": "Flint obtained mainly from gravel. Local data also uses it in more early-game crafting than vanilla.",
     "desc_en": "Flint obtained mainly from gravel. Local data also uses it in more early-game crafting than vanilla.",
-    "desc_hu": "Főleg kavicsból szerezhető kovakő. A helyi adatbázis a vanillánál több korai craftban is használja.",
+    "desc_hu": "Főleg kavicsból szerezhető kovakő. A helyi adatbázis a vanillánál több korai receptben is használja.",
     "desc_ru": "Кремень, который в основном добывается из гравия. По локальным данным используется в большем числе ранних рецептов, чем в ваниле."
   },
   "flint_knife": {
@@ -53,8 +53,8 @@
   },
   "sinew": {
     "mcmod_id": 772803,
-    "desc": "Sinew-style leather cord used in older and early-game recipes. This entry mostly represents the modded replacement for MITE leather thread.",
-    "desc_en": "Sinew-style leather cord used in older and early-game recipes. This entry mostly represents the modded replacement for MITE leather thread.",
+    "desc": "Leather sinew used in older and early-game recipes. It mostly serves as MiTE:BE's replacement for MITE leather thread.",
+    "desc_en": "Leather sinew used in older and early-game recipes. It mostly serves as MiTE:BE's replacement for MITE leather thread.",
     "desc_hu": "Ín jellegű bőrszál régi és korai receptekhez. Ez a bejegyzés lényegében a MITE bőrszálának módosított megfelelője.",
     "desc_ru": "Кожаная жила для старых и ранних рецептов. По сути это модифицированная замена кожаной нити из MITE."
   },
@@ -109,7 +109,7 @@
     "versions": [
       "v0.6.0: Diamond ore can also yield diamonds through Large Furnace processing."
     ],
-    "desc_en": "Diamond with an added right-click XP use: consuming one grants 500 XP. Diamond ore can also be processed through the Large Furnace route in local 0.6.0+ data.",
+    "desc_en": "Diamond that can also be consumed with right-click for 500 XP. In v0.6.0+, diamond ore can also be processed through the Large Furnace route.",
     "desc_hu": "Gyémánt, amely jobb klikkre 500 XP-vé is alakítható. A helyi 0.6.0+ adatok szerint a gyémántérc Nagy Kemencében is feldolgozható.",
     "desc_ru": "Алмаз, который можно потратить правым кликом на получение 500 XP. По локальным данным 0.6.0+ алмазную руду также можно обрабатывать через Большую печь.",
     "versions_en": [
@@ -128,7 +128,7 @@
     "versions": [
       "v0.6.0: Emerald ore can also yield emeralds through Large Furnace processing."
     ],
-    "desc_en": "Emerald with an added right-click XP use: consuming one grants 250 XP. Emerald ore can also be processed through the Large Furnace route in local 0.6.0+ data.",
+    "desc_en": "Emerald that can also be consumed with right-click for 250 XP. In v0.6.0+, emerald ore can also be processed through the Large Furnace route.",
     "desc_hu": "Smaragd, amely jobb klikkre 250 XP-vé is alakítható. A helyi 0.6.0+ adatok szerint a smaragdérc Nagy Kemencében is feldolgozható.",
     "desc_ru": "Изумруд, который можно потратить правым кликом на получение 250 XP. По локальным данным 0.6.0+ изумрудную руду также можно обрабатывать через Большую печь.",
     "versions_en": [
@@ -166,7 +166,7 @@
     "versions": [
       "v0.6.0: The direct 9 nuggets to 1 hardstone ingot recipe was removed."
     ],
-    "desc_en": "Hardstone ingot produced from hardstone ore or nuggets through the Large Furnace and Obsidian Template route.",
+    "desc_en": "Hardstone ingot produced from hardstone ore or nuggets through the Large Furnace and Obsidian Ingot Mould route.",
     "desc_hu": "Keménykőrúd, amely keménykőércből vagy szemcséből készül a Nagy Kemence + Obszidián Öntőforma útvonalon.",
     "desc_ru": "Слиток твердокамня, получаемый из руды или самородков hardstone через Большую печь и обсидиановую форму.",
     "versions_en": [
@@ -185,7 +185,7 @@
     "versions": [
       "v0.6.0: The direct 9 nuggets to 1 copper ingot recipe was removed."
     ],
-    "desc_en": "Copper nugget mainly obtained from gravel processing. In local 0.6.0+ data it feeds the Large Furnace plus Obsidian Template route for copper ingots.",
+    "desc_en": "Copper nugget mainly obtained from gravel processing. In v0.6.0+, it is part of the Large Furnace and Obsidian Ingot Mould route for copper ingots.",
     "desc_hu": "Rézszemcse, amely főleg kavicsfeldolgozásból szerezhető. A helyi 0.6.0+ adatokban a Nagy Kemence + Obszidián Öntőforma útvonal része a rézrudakhoz.",
     "desc_ru": "Медная крупица, которую в основном получают из обработки гравия. По локальным данным 0.6.0+ она входит в цепочку Большая печь + обсидиановая форма для медных слитков.",
     "versions_en": [
@@ -204,7 +204,7 @@
     "versions": [
       "v0.6.0: The direct 9 nuggets to 1 silver ingot recipe was removed."
     ],
-    "desc_en": "Silver nugget mainly obtained from gravel processing. In local 0.6.0+ data it feeds the Large Furnace plus Obsidian Template route for silver ingots.",
+    "desc_en": "Silver nugget mainly obtained from gravel processing. In v0.6.0+, it is part of the Large Furnace and Obsidian Ingot Mould route for silver ingots.",
     "desc_hu": "Ezüstszemcse, amely főleg kavicsfeldolgozásból szerezhető. A helyi 0.6.0+ adatokban a Nagy Kemence + Obszidián Öntőforma útvonal része az ezüstrudakhoz.",
     "desc_ru": "Серебряная крупица, которую в основном получают из обработки гравия. По локальным данным 0.6.0+ она входит в цепочку Большая печь + обсидиановая форма для серебряных слитков.",
     "versions_en": [
@@ -223,7 +223,7 @@
     "versions": [
       "v0.6.0: The direct 9 nuggets to 1 iron ingot recipe was removed."
     ],
-    "desc_en": "Iron nugget used in the Large Furnace plus Obsidian Template route for iron ingots in local 0.6.0+ data.",
+    "desc_en": "Iron nugget used in the Large Furnace and Obsidian Ingot Mould route for iron ingots in v0.6.0+.",
     "desc_hu": "Vasszemcse, amely a helyi 0.6.0+ adatokban a Nagy Kemence + Obszidián Öntőforma útvonal része a vasrudakhoz.",
     "desc_ru": "Железная крупица, которая по локальным данным 0.6.0+ входит в цепочку Большая печь + обсидиановая форма для железных слитков.",
     "versions_en": [
@@ -242,7 +242,7 @@
     "versions": [
       "v0.6.0: The direct 9 nuggets to 1 gold ingot recipe was removed."
     ],
-    "desc_en": "Gold nugget used in the Large Furnace plus Obsidian Template route for gold ingots in local 0.6.0+ data.",
+    "desc_en": "Gold nugget used in the Large Furnace and Obsidian Ingot Mould route for gold ingots in v0.6.0+.",
     "desc_hu": "Aranyszemcse, amely a helyi 0.6.0+ adatokban a Nagy Kemence + Obszidián Öntőforma útvonal része az aranyrudakhoz.",
     "desc_ru": "Золотая крупица, которая по локальным данным 0.6.0+ входит в цепочку Большая печь + обсидиановая форма для золотых слитков.",
     "versions_en": [
@@ -261,7 +261,7 @@
     "versions": [
       "v0.6.0: The direct 9 nuggets to 1 mithril ingot recipe was removed."
     ],
-    "desc_en": "Mithril nugget used in the Large Furnace plus Obsidian Template route for mithril ingots in local 0.6.0+ data.",
+    "desc_en": "Mithril nugget used in the Large Furnace and Obsidian Ingot Mould route for mithril ingots in v0.6.0+.",
     "desc_hu": "Mithrilszemcse, amely a helyi 0.6.0+ adatokban a Nagy Kemence + Obszidián Öntőforma útvonal része a mithrilrudakhoz.",
     "desc_ru": "Мифриловая крупица, которая по локальным данным 0.6.0+ входит в цепочку Большая печь + обсидиановая форма для мифриловых слитков.",
     "versions_en": [
@@ -280,7 +280,7 @@
     "versions": [
       "v0.6.0: The direct 9 nuggets to 1 adamantium ingot recipe was removed."
     ],
-    "desc_en": "Adamantium nugget used in the Large Furnace plus Obsidian Template route for adamantium ingots in local 0.6.0+ data.",
+    "desc_en": "Adamantium nugget used in the Large Furnace and Obsidian Ingot Mould route for adamantium ingots in v0.6.0+.",
     "desc_hu": "Adamantiumszemcse, amely a helyi 0.6.0+ adatokban a Nagy Kemence + Obszidián Öntőforma útvonal része az adamantiumrudakhoz.",
     "desc_ru": "Адамантиевая крупица, которая по локальным данным 0.6.0+ входит в цепочку Большая печь + обсидиановая форма для адамантиевых слитков.",
     "versions_en": [
@@ -306,7 +306,7 @@
       "v0.6.0: Copper swords were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A rézkard kemencés craftolásra került át."
+      "v0.6.0: A rézkard készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Медные мечи были переведены на печное создание."
@@ -328,7 +328,7 @@
     ],
     "versions_hu": [
       "v0.5.9: A rézcsákány Selyemérintés nélkül is tud jeget bányászni.",
-      "v0.6.0: A rézcsákány kemencés craftolásra került át."
+      "v0.6.0: A rézcsákány készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.5.9: Медные кирки получили прямую добычу льда без Шёлкового касания.",
@@ -348,7 +348,7 @@
       "v0.6.0: Copper axes were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A rézbalta kemencés craftolásra került át."
+      "v0.6.0: A rézbalta készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Медные топоры были переведены на печное создание."
@@ -356,18 +356,18 @@
   },
   "copper_war_hammer": {
     "mcmod_id": 773295,
-    "desc": "Copper warhammer with 5 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Hardened Clay Furnace or Large Furnace.",
+    "desc": "Copper war hammer with 5 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "v0.6.0: Copper warhammers were moved to furnace crafting."
+      "v0.6.0: Copper war hammers were moved to furnace crafting."
     ],
-    "desc_en": "Copper warhammer with 5 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Hardened Clay Furnace or Large Furnace.",
+    "desc_en": "Copper war hammer with 5 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "5 sebzésű réz háborús kalapács. Harcra, bányászatra, illetve ércek vagy ingotok szemcsékre bontására használható. Edzett agyagkemencében vagy nagy kemencében készül.",
     "desc_ru": "Медный боевой молот с уроном 5. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Крафтится в печи из обожжённой глины или в большой печи.",
     "versions_en": [
-      "v0.6.0: Copper warhammers were moved to furnace crafting."
+      "v0.6.0: Copper war hammers were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A réz háborús kalapács kemencés craftolásra került át."
+      "v0.6.0: A réz háborús kalapács készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Медные боевые молоты были переведены на печное создание."
@@ -386,7 +386,7 @@
       "v0.6.0: Copper hoes were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A rézkapa kemencés craftolásra került át."
+      "v0.6.0: A rézkapa készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Медные мотыги были переведены на печное создание."
@@ -405,7 +405,7 @@
       "v0.6.0: Copper shovels were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A rézlapát kemencés craftolásra került át."
+      "v0.6.0: A rézlapát készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Медные лопаты были переведены на печное создание."
@@ -424,7 +424,7 @@
       "v0.6.0: Copper daggers were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A réztőr kemencés craftolásra került át."
+      "v0.6.0: A réztőr készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Медные кинжалы были переведены на печное создание."
@@ -443,7 +443,7 @@
       "v0.6.0: Copper battle axes were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A réz csatabárd kemencés craftolásra került át."
+      "v0.6.0: A réz csatabárd készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Медные боевые топоры были переведены на печное создание."
@@ -462,7 +462,7 @@
       "v0.6.0: Copper mattocks were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A réz ácskapa kemencés craftolásra került át."
+      "v0.6.0: A réz ácskapa készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Медные мотыги-кирки были переведены на печное создание."
@@ -481,7 +481,7 @@
       "v0.6.0: Copper scythes were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A rézkasza kemencés craftolásra került át."
+      "v0.6.0: A rézkasza készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Медные косы были переведены на печное создание."
@@ -500,7 +500,7 @@
       "v0.6.0: Copper shears were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A rézolló kemencés craftolásra került át."
+      "v0.6.0: A rézolló készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Медные ножницы были переведены на печное создание."
@@ -519,7 +519,7 @@
       "v0.6.0: Silver swords were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: Az ezüst kard kemencés craftolásra került át."
+      "v0.6.0: Az ezüst kard készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Серебряные мечи были переведены на печное создание."
@@ -541,7 +541,7 @@
     ],
     "versions_hu": [
       "v0.5.9: Az ezüst csákány Selyemérintés nélkül is tud jeget bányászni.",
-      "v0.6.0: Az ezüst csákány kemencés craftolásra került át."
+      "v0.6.0: Az ezüst csákány készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.5.9: Серебряные кирки получили прямую добычу льда без Шёлкового касания.",
@@ -561,7 +561,7 @@
       "v0.6.0: Silver axes were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: Az ezüst fejsze kemencés craftolásra került át."
+      "v0.6.0: Az ezüst fejsze készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Серебряные топоры были переведены на печное создание."
@@ -569,18 +569,18 @@
   },
   "silver_war_hammer": {
     "mcmod_id": 773296,
-    "desc": "Silver warhammer with 5 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Strong against undead; can hit black ghouls, wights, and shadow bats. Crafted in the Hardened Clay Furnace or Large Furnace.",
+    "desc": "Silver war hammer with 5 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Strong against undead; can hit black ghouls, wights, and shadow bats. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "versions": [
-      "v0.6.0: Silver warhammers were moved to furnace crafting."
+      "v0.6.0: Silver war hammers were moved to furnace crafting."
     ],
-    "desc_en": "Silver warhammer with 5 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Strong against undead; can hit black ghouls, wights, and shadow bats. Crafted in the Hardened Clay Furnace or Large Furnace.",
+    "desc_en": "Silver war hammer with 5 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Strong against undead; can hit black ghouls, wights, and shadow bats. Crafted in the Hardened Clay Furnace or Large Furnace.",
     "desc_hu": "5 sebzésű ezüst háborús kalapács. Harcra, bányászatra, illetve ércek és rudak szemcsékre bontására használható. Erős az élőholtak ellen; megsebezheti a fekete ghoulokat, a wighteket és az árnyékdenevéreket. Edzett agyagkemencében vagy nagy kemencében készül.",
     "desc_ru": "Серебряный боевой молот с уроном 5. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Эффективен против нежити; может бить чёрных гулей, умертвий и теневых летучих мышей. Крафтится в печи из обожжённой глины или в большой печи.",
     "versions_en": [
-      "v0.6.0: Silver warhammers were moved to furnace crafting."
+      "v0.6.0: Silver war hammers were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: Az ezüst háborús kalapács kemencés craftolásra került át."
+      "v0.6.0: Az ezüst háborús kalapács készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Серебряные боевые молоты были переведены на печное создание."
@@ -599,7 +599,7 @@
       "v0.6.0: Gold swords were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: Az arany kard kemencés craftolásra került át."
+      "v0.6.0: Az arany kard készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Золотые мечи были переведены на печное создание."
@@ -621,7 +621,7 @@
     ],
     "versions_hu": [
       "v0.5.9: Az arany csákány Selyemérintés nélkül is tud jeget bányászni.",
-      "v0.6.0: Az arany csákány kemencés craftolásra került át."
+      "v0.6.0: Az arany csákány készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.5.9: Золотые кирки получили прямую добычу льда без Шёлкового касания.",
@@ -641,7 +641,7 @@
       "v0.6.0: Gold axes were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: Az arany fejsze kemencés craftolásra került át."
+      "v0.6.0: Az arany fejsze készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Золотые топоры были переведены на печное создание."
@@ -649,18 +649,18 @@
   },
   "gold_war_hammer": {
     "mcmod_id": 773817,
-    "desc": "Gold-tier warhammer. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
+    "desc": "Gold-tier war hammer. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
     "versions": [
-      "v0.6.0: Gold warhammers were moved to furnace crafting."
+      "v0.6.0: Gold war hammers were moved to furnace crafting."
     ],
-    "desc_en": "Gold-tier warhammer. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
+    "desc_en": "Gold-tier war hammer. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
     "desc_hu": "Arany szintű háborús kalapács. Harcra, bányászatra, illetve ércek és rudak szemcsékre bontására használható. Nagy kemencében készül.",
     "desc_ru": "Боевой молот золотого тира. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Крафтится в большой печи.",
     "versions_en": [
-      "v0.6.0: Gold warhammers were moved to furnace crafting."
+      "v0.6.0: Gold war hammers were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: Az arany háborús kalapács kemencés craftolásra került át."
+      "v0.6.0: Az arany háborús kalapács készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Золотые боевые молоты были переведены на печное создание."
@@ -679,7 +679,7 @@
       "v0.6.0: Iron swords were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A vaskard kemencés craftolásra került át."
+      "v0.6.0: A vaskard készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Железные мечи были переведены на печное создание."
@@ -701,7 +701,7 @@
     ],
     "versions_hu": [
       "v0.5.9: A vascsákány Selyemérintés nélkül is tud jeget bányászni.",
-      "v0.6.0: A vascsákány kemencés craftolásra került át."
+      "v0.6.0: A vascsákány készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.5.9: Железные кирки получили прямую добычу льда без Шёлкового касания.",
@@ -721,7 +721,7 @@
       "v0.6.0: Iron axes were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A vasbalta kemencés craftolásra került át."
+      "v0.6.0: A vasbalta készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Железные топоры были переведены на печное создание."
@@ -729,18 +729,18 @@
   },
   "iron_war_hammer": {
     "mcmod_id": 773818,
-    "desc": "Iron warhammer with 6 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
+    "desc": "Iron war hammer with 6 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
     "versions": [
-      "v0.6.0: Iron warhammers were moved to furnace crafting."
+      "v0.6.0: Iron war hammers were moved to furnace crafting."
     ],
-    "desc_en": "Iron warhammer with 6 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
+    "desc_en": "Iron war hammer with 6 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
     "desc_hu": "6 sebzésű vas háborús kalapács. Harcra, bányászatra, illetve ércek vagy ingotok szemcsékre bontására használható. Nagy kemencében készül.",
     "desc_ru": "Железный боевой молот с уроном 6. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Крафтится в большой печи.",
     "versions_en": [
-      "v0.6.0: Iron warhammers were moved to furnace crafting."
+      "v0.6.0: Iron war hammers were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A vas háborús kalapács kemencés craftolásra került át."
+      "v0.6.0: A vas háborús kalapács készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Железные боевые молоты были переведены на печное создание."
@@ -759,7 +759,7 @@
       "v0.6.0: Iron hoes were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A vaskapa kemencés craftolásra került át."
+      "v0.6.0: A vaskapa készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Железные мотыги были переведены на печное создание."
@@ -778,7 +778,7 @@
       "v0.6.0: Iron shovels were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A vaslapát kemencés craftolásra került át."
+      "v0.6.0: A vaslapát készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Железные лопаты были переведены на печное создание."
@@ -797,7 +797,7 @@
       "v0.6.0: Iron hand axes were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A vas kézifejsze kemencés craftolásra került át."
+      "v0.6.0: A vas kézifejsze készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Железные топорики были переведены на печное создание."
@@ -816,7 +816,7 @@
       "v0.6.0: Iron daggers were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A vastőr kemencés craftolásra került át."
+      "v0.6.0: A vastőr készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Железные кинжалы были переведены на печное создание."
@@ -835,7 +835,7 @@
       "v0.6.0: Iron battle axes were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A vas csatabárd kemencés craftolásra került át."
+      "v0.6.0: A vas csatabárd készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Железные боевые топоры были переведены на печное создание."
@@ -854,7 +854,7 @@
       "v0.6.0: Iron mattocks were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A vas ácskapa kemencés craftolásra került át."
+      "v0.6.0: A vas ácskapa készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Железные мотыги-кирки были переведены на печное создание."
@@ -873,7 +873,7 @@
       "v0.6.0: Iron scythes were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A vaskasza kemencés craftolásra került át."
+      "v0.6.0: A vaskasza készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Железные косы были переведены на печное создание."
@@ -892,7 +892,7 @@
       "v0.6.0: Hardstone swords were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A keménykő kard kemencés craftolásra került át."
+      "v0.6.0: A keménykő kard készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Твердокаменные мечи были переведены на печное создание."
@@ -914,7 +914,7 @@
     ],
     "versions_hu": [
       "v0.5.9: A keménykő csákány Selyemérintés nélkül is tud jeget bányászni.",
-      "v0.6.0: A keménykő csákány kemencés craftolásra került át."
+      "v0.6.0: A keménykő csákány készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.5.9: Твердокаменные кирки получили прямую добычу льда без Шёлкового касания.",
@@ -923,18 +923,18 @@
   },
   "hard_stone_war_hammer": {
     "mcmod_id": 773816,
-    "desc": "Hardstone warhammer with 6 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
+    "desc": "Hardstone war hammer with 6 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
     "versions": [
-      "v0.6.0: Hardstone warhammers were moved to furnace crafting."
+      "v0.6.0: Hardstone war hammers were moved to furnace crafting."
     ],
-    "desc_en": "Hardstone warhammer with 6 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
+    "desc_en": "Hardstone war hammer with 6 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Resists corrosion and loses 20% less durability. Crafted in the Large Furnace.",
     "desc_hu": "6 sebzésű keménykő háborús kalapács. Harcra, bányászatra, illetve ércek vagy ingotok szemcsékre bontására használható. Ellenáll a korróziónak, és 20%-kal lassabban kopik. Nagy kemencében készül.",
     "desc_ru": "Твердокаменный боевой молот с уроном 6. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Не ржавеет и теряет на 20% меньше прочности. Крафтится в большой печи.",
     "versions_en": [
-      "v0.6.0: Hardstone warhammers were moved to furnace crafting."
+      "v0.6.0: Hardstone war hammers were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A keménykő háborús kalapács kemencés craftolásra került át."
+      "v0.6.0: A keménykő háborús kalapács készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Твердокаменные боевые молоты были переведены на печное создание."
@@ -953,7 +953,7 @@
       "v0.6.0: Hardstone hoes were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A keménykő kapa kemencés craftolásra került át."
+      "v0.6.0: A keménykő kapa készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Твердокаменные мотыги были переведены на печное создание."
@@ -972,7 +972,7 @@
       "v0.6.0: Ancient metal swords were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: Az ősi fém kard kemencés craftolásra került át."
+      "v0.6.0: Az ősi fém kard készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Мечи из древнего металла были переведены на печное создание."
@@ -994,7 +994,7 @@
     ],
     "versions_hu": [
       "v0.5.9: Az ősi fém csákány Selyemérintés nélkül is tud jeget bányászni.",
-      "v0.6.0: Az ősi fém csákány kemencés craftolásra került át."
+      "v0.6.0: Az ősi fém csákány készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.5.9: Кирки из древнего металла получили прямую добычу льда без Шёлкового касания.",
@@ -1014,7 +1014,7 @@
       "v0.6.0: Ancient metal axes were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: Az ősi fém fejsze kemencés craftolásra került át."
+      "v0.6.0: Az ősi fém fejsze készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Топоры из древнего металла были переведены на печное создание."
@@ -1022,18 +1022,18 @@
   },
   "ancient_metal_war_hammer": {
     "mcmod_id": 773298,
-    "desc": "Ancient metal warhammer with 7 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Does not corrode. Crafted in the Large Furnace.",
+    "desc": "Ancient metal war hammer with 7 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Does not corrode. Crafted in the Large Furnace.",
     "versions": [
-      "v0.6.0: Ancient metal warhammers were moved to furnace crafting."
+      "v0.6.0: Ancient metal war hammers were moved to furnace crafting."
     ],
-    "desc_en": "Ancient metal warhammer with 7 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Does not corrode. Crafted in the Large Furnace.",
+    "desc_en": "Ancient metal war hammer with 7 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Does not corrode. Crafted in the Large Furnace.",
     "desc_hu": "7 sebzésű ősi fém háborús kalapács. Harcra, bányászatra, illetve ércek és rudak szemcsékre bontására használható. Nem korrodálódik. Nagy kemencében készül.",
     "desc_ru": "Боевой молот из древнего металла с уроном 7. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Не ржавеет. Крафтится в большой печи.",
     "versions_en": [
-      "v0.6.0: Ancient metal warhammers were moved to furnace crafting."
+      "v0.6.0: Ancient metal war hammers were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: Az ősi fém háborús kalapács kemencés craftolásra került át."
+      "v0.6.0: Az ősi fém háborús kalapács készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Боевые молоты из древнего металла были переведены на печное создание."
@@ -1052,7 +1052,7 @@
       "v0.6.0: Mithril swords were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A mithril kard kemencés craftolásra került át."
+      "v0.6.0: A mithril kard készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Мифриловые мечи были переведены на печное создание."
@@ -1074,7 +1074,7 @@
     ],
     "versions_hu": [
       "v0.5.9: A mithril csákány Selyemérintés nélkül is tud jeget bányászni.",
-      "v0.6.0: A mithril csákány kemencés craftolásra került át."
+      "v0.6.0: A mithril csákány készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.5.9: Мифриловые кирки получили прямую добычу льда без Шёлкового касания.",
@@ -1094,7 +1094,7 @@
       "v0.6.0: Mithril axes were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A mithril fejsze kemencés craftolásra került át."
+      "v0.6.0: A mithril fejsze készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Мифриловые топоры были переведены на печное создание."
@@ -1102,18 +1102,18 @@
   },
   "mithril_war_hammer": {
     "mcmod_id": 773299,
-    "desc": "Mithril warhammer with 9 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
+    "desc": "Mithril war hammer with 9 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
     "versions": [
-      "v0.6.0: Mithril warhammers were moved to furnace crafting."
+      "v0.6.0: Mithril war hammers were moved to furnace crafting."
     ],
-    "desc_en": "Mithril warhammer with 9 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
+    "desc_en": "Mithril war hammer with 9 attack damage. Used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
     "desc_hu": "9 sebzésű mithril háborús kalapács. Harcra, bányászatra, illetve ércek és rudak szemcsékre bontására használható. Nagy kemencében készül.",
     "desc_ru": "Мифриловый боевой молот с уроном 9. Используется в бою, для добычи блоков и дробления руд или слитков на самородки. Крафтится в большой печи.",
     "versions_en": [
-      "v0.6.0: Mithril warhammers were moved to furnace crafting."
+      "v0.6.0: Mithril war hammers were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: A mithril háborús kalapács kemencés craftolásra került át."
+      "v0.6.0: A mithril háborús kalapács készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Мифриловые боевые молоты были переведены на печное создание."
@@ -1132,7 +1132,7 @@
       "v0.6.0: Adamantium swords were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: Az adamantium kard kemencés craftolásra került át."
+      "v0.6.0: Az adamantium kard készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Адамантиевые мечи были переведены на печное создание."
@@ -1154,7 +1154,7 @@
     ],
     "versions_hu": [
       "v0.5.9: Az adamantium csákány Selyemérintés nélkül is tud jeget bányászni.",
-      "v0.6.0: Az adamantium csákány kemencés craftolásra került át."
+      "v0.6.0: Az adamantium csákány készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.5.9: Адамантиевые кирки получили прямую добычу льда без Шёлкового касания.",
@@ -1174,7 +1174,7 @@
       "v0.6.0: Adamantium axes were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: Az adamantium fejsze kemencés craftolásra került át."
+      "v0.6.0: Az adamantium fejsze készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Адамантиевые топоры были переведены на печное создание."
@@ -1182,18 +1182,18 @@
   },
   "adamantium_war_hammer": {
     "mcmod_id": 773300,
-    "desc": "Adamantium warhammer with 8 attack damage. Can destroy End Crystals, and is used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
+    "desc": "Adamantium war hammer with 8 attack damage. Can destroy End Crystals, and is used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
     "versions": [
-      "v0.6.0: Adamantium warhammers were moved to furnace crafting."
+      "v0.6.0: Adamantium war hammers were moved to furnace crafting."
     ],
-    "desc_en": "Adamantium warhammer with 8 attack damage. Can destroy End Crystals, and is used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
+    "desc_en": "Adamantium war hammer with 8 attack damage. Can destroy End Crystals, and is used for combat, mining, and breaking ores or ingots into nuggets. Crafted in the Large Furnace.",
     "desc_hu": "8 sebzésű adamantium háborús kalapács. Elpusztíthatja az End Crystalokat, és harcra, bányászatra, illetve ércek és rudak szemcsékre bontására használható. Nagy kemencében készül.",
     "desc_ru": "Адамантиевый боевой молот с уроном 8. Может разрушать кристаллы Края, используется в бою, для добычи блоков и дробления руд или слитков на самородки. Крафтится в большой печи.",
     "versions_en": [
-      "v0.6.0: Adamantium warhammers were moved to furnace crafting."
+      "v0.6.0: Adamantium war hammers were moved to furnace crafting."
     ],
     "versions_hu": [
-      "v0.6.0: Az adamantium háborús kalapács kemencés craftolásra került át."
+      "v0.6.0: Az adamantium háborús kalapács készítése kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Адамантиевые боевые молоты были переведены на печное создание."
@@ -1221,7 +1221,7 @@
   "clay_furnace_idle": {
     "mcmod_id": 772857,
     "desc": "Basic furnace crafted from 4 clay blocks. It is mainly for food and bricks, uses weak fuels, and does not smelt regular ores.",
-    "desc_en": "Basic furnace crafted from 4 clay blocks. It is mainly for food and bricks, uses weak fuels, and does not smelt regular ores.",
+    "desc_en": "Basic furnace made from 4 clay blocks. Mainly used for food and bricks, it runs on weak fuels and cannot smelt normal ores.",
     "desc_hu": "Alap kemence 4 agyagtömbből. Főleg ételhez és téglához való, gyenge tüzelőt használ, és a normál érceket nem olvasztja.",
     "desc_ru": "Базовая печь из 4 глиняных блоков. Используется в основном для еды и кирпича, работает на слабом топливе и не плавит обычные руды."
   },
@@ -1231,14 +1231,14 @@
     "versions": [
       "v0.6.0: Internal structure reworked, adding the obsidian ingot mould slot and built-in crafting functionality."
     ],
-    "desc_en": "Improved furnace crafted from 4 hardened clay blocks. It expands basic smelting and supports the obsidian ingot mould workflow for ingot production.",
+    "desc_en": "Improved furnace made from 4 hardened clay blocks. It expands basic smelting and supports the obsidian ingot mould workflow for ingot production.",
     "desc_hu": "Fejlesztett kemence 4 keményített agyagblokkból. Bővíti az alap olvasztást, és támogatja az obszidián öntőformás rúdgyártási folyamatot.",
     "desc_ru": "Улучшенная печь из 4 блоков обожжённой глины. Расширяет базовую плавку и поддерживает работу с обсидиановой формой для слитков.",
     "versions_en": [
       "v0.6.0: Internal structure reworked, adding the obsidian ingot mould slot and built-in crafting functionality."
     ],
     "versions_hu": [
-      "v0.6.0: Átdolgozott belső felépítés, obszidián öntőforma-hely és beépített craft funkció került bele."
+      "v0.6.0: Átdolgozott belső felépítés, obszidián öntőforma-hely és beépített készítőfunkció került bele."
     ],
     "versions_ru": [
       "v0.6.0: Внутренняя структура переработана, добавлены слот под обсидиановую форму для слитков и встроенная функция крафта."
@@ -1250,17 +1250,17 @@
     "versions": [
       "v0.6.0: The Stone Furnace lost its real furnace function and became a legacy block."
     ],
-    "desc_en": "Stone furnace crafted from 8 cobblestone. It was the mid-tier furnace before the multi-block furnace core system replaced its practical role.",
-    "desc_hu": "8 macskakőből készülő kőkemence. A többblokkos kemencemagos rendszer előtt ez volt a középső szintű kemence, később legacy blokkká vált.",
-    "desc_ru": "Каменная печь из 8 булыжников. Раньше была печью среднего уровня, но после появления многоблочной системы с ядром печи стала legacy-блоком.",
+    "desc_en": "Stone furnace made from 8 cobblestone. It used to be the mid-tier furnace before the multi-block furnace core system replaced it.",
+    "desc_hu": "8 macskakőből készülő kőkemence. A többblokkos kemencemagos rendszer előtt ez volt a középső szintű kemence, később elavult blokkká vált.",
+    "desc_ru": "Каменная печь из 8 булыжников. Раньше была печью среднего уровня, но после появления многоблочной системы с ядром печи стала устаревшим блоком.",
     "versions_en": [
       "v0.6.0: The Stone Furnace lost its real furnace function and became a legacy block."
     ],
     "versions_hu": [
-      "v0.6.0: A kőkemence elvesztette a tényleges kemencefunkcióját, és legacy blokkká vált."
+      "v0.6.0: A kőkemence elvesztette a tényleges kemencefunkcióját, és elavult blokkká vált."
     ],
     "versions_ru": [
-      "v0.6.0: Каменная печь лишилась своей реальной функции печи и стала legacy-блоком."
+      "v0.6.0: Каменная печь лишилась своей реальной функции печи и стала устаревшим блоком."
     ]
   },
   "netherrack_furnace_idle": {
@@ -1269,17 +1269,17 @@
     "versions": [
       "v0.6.0: The Netherrack Furnace lost its real furnace function and became a legacy block."
     ],
-    "desc_en": "Netherrack furnace crafted from 8 netherrack blocks. It was the top legacy furnace tier before large furnace cores took over that role.",
-    "desc_hu": "8 netherrack blokkból készülő netherrack kemence. A nagy kemencemagok korszaka előtt ez volt a felső legacy kemenceszint.",
-    "desc_ru": "Адская печь из 8 блоков адского камня. До появления больших ядер печи это был верхний legacy-уровень печей.",
+    "desc_en": "Netherrack furnace made from 8 netherrack blocks. It used to be the top legacy furnace tier before large furnace cores took over that role.",
+    "desc_hu": "8 alvilágkő blokkból készülő Alvilágkőkemence. A nagy kemencemagok korszaka előtt ez volt a legfelső régi kemenceszint.",
+    "desc_ru": "Адская печь из 8 блоков адского камня. До появления больших ядер печи это был верхний устаревший уровень печей.",
     "versions_en": [
       "v0.6.0: The Netherrack Furnace lost its real furnace function and became a legacy block."
     ],
     "versions_hu": [
-      "v0.6.0: A netherrack kemence elvesztette a tényleges kemencefunkcióját, és legacy blokkká vált."
+      "v0.6.0: Az Alvilágkőkemence elvesztette a tényleges kemencefunkcióját, és elavult blokkká vált."
     ],
     "versions_ru": [
-      "v0.6.0: Адская печь лишилась своей реальной функции печи и стала legacy-блоком."
+      "v0.6.0: Адская печь лишилась своей реальной функции печи и стала устаревшим блоком."
     ]
   },
   "water_bag": {
@@ -1350,7 +1350,7 @@
     ],
     "versions_hu": [
       "v0.5.7: Hardcore módban egy akkumulátor 75 helyett 50 tartósságot állít vissza.",
-      "v0.9.0: A craftoláshoz a kapcsolódó tudáskönyv kell."
+      "v0.9.0: Az elkészítéséhez a kapcsolódó tudáskönyv kell."
     ],
     "versions_ru": [
       "v0.5.7: В Hardcore одна батарея восстанавливает 50 прочности вместо 75.",
@@ -1373,7 +1373,7 @@
     ],
     "versions_hu": [
       "v0.5.8: Ekkor került a modba.",
-      "v0.9.0: A craftoláshoz a kapcsolódó tudáskönyv kell."
+      "v0.9.0: Az elkészítéséhez a kapcsolódó tudáskönyv kell."
     ],
     "versions_ru": [
       "v0.5.8: Добавлен в мод.",
@@ -2218,64 +2218,64 @@
   "copper_chain": {
     "mcmod_id": 773275,
     "desc": "Chain component crafted from four copper nuggets. Used for copper chain armor recipes.",
-    "desc_en": "Chain component crafted from four copper nuggets. Used for copper chain armor recipes.",
-    "desc_hu": "Négy rézrögből craftolható láncelem. A réz láncpáncél receptjeihez kell.",
+    "desc_en": "Chain component made from four copper nuggets. Used in copper chain armor recipes.",
+    "desc_hu": "Négy rézrögből készíthető láncelem. A réz láncpáncél receptjeihez kell.",
     "desc_ru": "Кольчужный элемент из четырёх медных самородков. Нужен для рецептов медной кольчужной брони."
   },
   "silver_chain": {
     "mcmod_id": 773276,
     "desc": "Chain component crafted from four silver nuggets. Used for silver chain armor recipes.",
-    "desc_en": "Chain component crafted from four silver nuggets. Used for silver chain armor recipes.",
-    "desc_hu": "Négy ezüströgből craftolható láncelem. Az ezüst láncpáncél receptjeihez kell.",
+    "desc_en": "Chain component made from four silver nuggets. Used in silver chain armor recipes.",
+    "desc_hu": "Négy ezüströgből készíthető láncelem. Az ezüst láncpáncél receptjeihez kell.",
     "desc_ru": "Кольчужный элемент из четырёх серебряных самородков. Нужен для рецептов серебряной кольчужной брони."
   },
   "gold_chain": {
     "mcmod_id": 773277,
     "desc": "Chain component crafted from four gold nuggets. Used for gold chain armor recipes.",
-    "desc_en": "Chain component crafted from four gold nuggets. Used for gold chain armor recipes.",
-    "desc_hu": "Négy aranyrögből craftolható láncelem. Az arany láncpáncél receptjeihez kell.",
+    "desc_en": "Chain component made from four gold nuggets. Used in gold chain armor recipes.",
+    "desc_hu": "Négy aranyrögből készíthető láncelem. Az arany láncpáncél receptjeihez kell.",
     "desc_ru": "Кольчужный элемент из четырёх золотых самородков. Нужен для рецептов золотой кольчужной брони."
   },
   "iron_chain": {
     "mcmod_id": 773279,
     "desc": "Chain component crafted from four iron nuggets. Used for iron chain armor recipes.",
-    "desc_en": "Chain component crafted from four iron nuggets. Used for iron chain armor recipes.",
-    "desc_hu": "Négy vasrögből craftolható láncelem. A vas láncpáncél receptjeihez kell.",
+    "desc_en": "Chain component made from four iron nuggets. Used in iron chain armor recipes.",
+    "desc_hu": "Négy vasrögből készíthető láncelem. A vas láncpáncél receptjeihez kell.",
     "desc_ru": "Кольчужный элемент из четырёх железных самородков. Нужен для рецептов железной кольчужной брони."
   },
   "mithril_chain": {
     "mcmod_id": 773281,
     "desc": "Chain component crafted from four mithril nuggets. Used for mithril chain armor recipes.",
-    "desc_en": "Chain component crafted from four mithril nuggets. Used for mithril chain armor recipes.",
-    "desc_hu": "Négy mithrilrögből craftolható láncelem. A mithril láncpáncél receptjeihez kell.",
+    "desc_en": "Chain component made from four mithril nuggets. Used in mithril chain armor recipes.",
+    "desc_hu": "Négy mithrilrögből készíthető láncelem. A mithril láncpáncél receptjeihez kell.",
     "desc_ru": "Кольчужный элемент из четырёх мифриловых крупиц. Нужен для рецептов мифриловой кольчужной брони."
   },
   "adamantium_chain": {
     "mcmod_id": 773282,
     "desc": "Chain component crafted from four adamantium nuggets. Used for adamantium chain armor recipes.",
-    "desc_en": "Chain component crafted from four adamantium nuggets. Used for adamantium chain armor recipes.",
-    "desc_hu": "Négy adamantiumrögből craftolható láncelem. Az adamantium láncpáncél receptjeihez kell.",
+    "desc_en": "Chain component made from four adamantium nuggets. Used in adamantium chain armor recipes.",
+    "desc_hu": "Négy adamantiumrögből készíthető láncelem. Az adamantium láncpáncél receptjeihez kell.",
     "desc_ru": "Кольчужный элемент из четырёх адамантиевых крупиц. Нужен для рецептов адамантиевой кольчужной брони."
   },
   "ancient_metal_chain": {
     "mcmod_id": 773280,
     "desc": "Chain component crafted from four ancient metal nuggets. Used for Ancient Metal chain armor recipes.",
-    "desc_en": "Chain component crafted from four ancient metal nuggets. Used for Ancient Metal chain armor recipes.",
-    "desc_hu": "Négy ősi fémrögből craftolható láncelem. Az Ősi Fém láncpáncél receptjeihez kell.",
-    "desc_ru": "Кольчужный элемент из четырёх крупиц древнего металла. Нужен для рецептов кольчужной брони из Ancient Metal."
+    "desc_en": "Chain component made from four ancient metal nuggets. Used in ancient metal chain armor recipes.",
+    "desc_hu": "Négy ősi fémrögből készíthető láncelem. Az Ősi Fém láncpáncél receptjeihez kell.",
+    "desc_ru": "Кольчужный элемент из четырёх крупиц древнего металла. Нужен для рецептов кольчужной брони из древнего металла."
   },
   "adamantium_block": {
     "mcmod_id": 773012,
     "desc": "Crafted from nine Adamantium Ingots. The Adamantium Block has very high blast resistance, so it can function like a craftable near-bedrock-grade block. It is used for Adamantium Anvils, can serve as a beacon base, and can be pushed by pistons. It survives some Wither-related explosions, but not the Wither's forced-destruction behavior.",
-    "desc_en": "Crafted from nine Adamantium Ingots. The Adamantium Block has very high blast resistance, so it can function like a craftable near-bedrock-grade block. It is used for Adamantium Anvils, can serve as a beacon base, and can be pushed by pistons. It survives some Wither-related explosions, but not the Wither's forced-destruction behavior.",
-    "desc_hu": "Kilenc Adamantium rúdból craftolható. Az Adamantium Blokk nagyon magas robbanásállóságú, ezért egy craftolható, alapkőzet-közeli ellenállású blokkként használható. Adamantium üllőhöz is kell, beacon-alapként is működik, és dugattyúval is tolható. Egyes Wither-robbanásokat túlél, de a Wither kényszerített blokkrombolását nem.",
+    "desc_en": "Block made from nine Adamantium Ingots. It has very high blast resistance, works as a beacon base, can be used for Adamantium Anvils, and can be pushed by pistons. It survives some Wither explosions, but not the Wither's forced block-breaking.",
+    "desc_hu": "Kilenc adamantiumrúdból készíthető. Az Adamantium Blokk nagyon magas robbanásállóságú, ezért egy alapkőzetközeli ellenállású, mégis elkészíthető blokkként használható. Adamantium üllőhöz is kell, jeladóalapként is működik, és dugattyúval is tolható. Egyes Wither-robbanásokat túlél, de a Wither kényszerített blokkrombolását nem.",
     "desc_ru": "Крафтится из девяти адамантиевых слитков. Обладает очень высокой взрывостойкостью, поэтому служит почти как создаваемый блок уровня коренной породы. Нужен для адамантиевой наковальни, подходит как основание для маяка и может толкаться поршнем. Некоторые взрывы Визера выдерживает, но не его принудительное разрушение блоков."
   },
   "adamantium_coin": {
     "mcmod_id": 772946,
     "desc": "Adamantium coin crafted from one adamantium nugget. The current recipe uses the Adamantium Workbench.",
-    "desc_en": "Adamantium coin crafted from one adamantium nugget. The current recipe uses the Adamantium Workbench.",
-    "desc_hu": "Egy adamantiumrögből craftolható adamantium érme. A jelenlegi recept Adamantium munkaasztalt használ.",
+    "desc_en": "Adamantium coin made from one adamantium nugget. It is currently crafted at the Adamantium Workbench.",
+    "desc_hu": "Egy adamantiumrögből készíthető adamantium érme. A jelenlegi recept Adamantium Munkaasztalt használ.",
     "desc_ru": "Адамантиевая монета из одной адамантиевой крупицы. Текущий рецепт использует адамантиевый верстак."
   },
   "adamantium_ore": {
@@ -2285,7 +2285,7 @@
       "v0.5.7: Hard Mode reduced the per-vein spawn count.",
       "v0.6.0: Adamantium ingots switched to the Large Furnace plus Obsidian Template route."
     ],
-    "desc_en": "Deep Underground adamantium ore. Local 0.6.0+ data routes adamantium ingots through the Large Furnace and Obsidian Template process.",
+    "desc_en": "Deep Underground adamantium ore. In v0.6.0+, adamantium ingots are produced through the Large Furnace and Obsidian Ingot Mould process.",
     "desc_hu": "Mély földalatti adamantiumérc. A helyi 0.6.0+ adatokban az adamantiumrúd a Nagy Kemence + Obszidián Öntőforma útvonalon készül.",
     "desc_ru": "Глубинная адамантиевая руда Подземного мира. По локальным данным 0.6.0+ адамантиевые слитки получают через Большую печь и обсидиановую форму.",
     "versions_en": [
@@ -2326,8 +2326,8 @@
     "versions": [
       "In v0.9.0, barrel upgrades were simplified to the dedicated upgrade item route."
     ],
-    "desc_en": "Upgrade item for turning a placed barrel into an Ancient Metal Barrel. In v0.9.0 the upgrade path was simplified to the dedicated upgrade item, and crafting it requires the matching Knowledge Book.",
-    "desc_hu": "Fejlesztő item, amellyel egy lerakott hordó Ősi Fém Hordóvá alakítható. A 0.9.0-s verzióban a fejlesztési út a dedikált upgrade itemre egyszerűsödött, és a craftolásához a megfelelő Tudáskönyv kell.",
+    "desc_en": "Upgrade item used to turn a placed barrel into an Ancient Metal Barrel. In v0.9.0, this path was simplified to the dedicated upgrade item, and crafting it requires the matching Knowledge Book.",
+    "desc_hu": "Fejlesztő item, amellyel egy lerakott hordó Ősi Fém Hordóvá alakítható. A 0.9.0-s verzióban a fejlesztési út a dedikált fejlesztő itemre egyszerűsödött, és az elkészítéséhez a megfelelő Tudáskönyv kell.",
     "desc_ru": "Предмет улучшения, который превращает установленную бочку в бочку из древнего металла. В версии 0.9.0 путь улучшения упростили до отдельного предмета улучшения, а для крафта нужна соответствующая Книга знаний.",
     "versions_en": [
       "In v0.9.0, barrel upgrades were simplified to the dedicated upgrade item route."
@@ -2359,8 +2359,8 @@
     "versions": [
       "In v0.9.0, chest upgrades were simplified to the dedicated upgrade item route."
     ],
-    "desc_en": "Upgrade item for turning a placed chest or crate into an Ancient Metal Chest. In v0.9.0 the chest upgrade path was simplified to the dedicated upgrade item, and crafting it requires the matching Knowledge Book.",
-    "desc_hu": "Fejlesztő item, amellyel egy lerakott láda vagy rekesz Ősi Fém Ládává alakítható. A 0.9.0-s verzióban a ládafejlesztési út a dedikált upgrade itemre egyszerűsödött, és a craftolásához a megfelelő Tudáskönyv kell.",
+    "desc_en": "Upgrade item used to turn a placed chest or crate into an Ancient Metal Chest. In v0.9.0, this path was simplified to the dedicated upgrade item, and crafting it requires the matching Knowledge Book.",
+    "desc_hu": "Fejlesztő item, amellyel egy lerakott láda vagy rekesz Ősi Fém Ládává alakítható. A 0.9.0-s verzióban a ládafejlesztési út a dedikált fejlesztő itemre egyszerűsödött, és az elkészítéséhez a megfelelő Tudáskönyv kell.",
     "desc_ru": "Предмет улучшения, который превращает установленный сундук или ящик в сундук из древнего металла. В версии 0.9.0 путь улучшения сундуков упростили до отдельного предмета улучшения, а для крафта нужна соответствующая Книга знаний.",
     "versions_en": [
       "In v0.9.0, chest upgrades were simplified to the dedicated upgrade item route."
@@ -2375,9 +2375,9 @@
   "ancient_metal_coin": {
     "mcmod_id": 772944,
     "desc": "Ancient Metal coin crafted from one ancient metal nugget. The current recipe uses the Ancient Metal Workbench.",
-    "desc_en": "Ancient Metal coin crafted from one ancient metal nugget. The current recipe uses the Ancient Metal Workbench.",
-    "desc_hu": "Egy ősi fémrögből craftolható Ősi Fém érme. A jelenlegi recept Ősi Fém Munkaasztalt használ.",
-    "desc_ru": "Монета Ancient Metal из одной крупицы древнего металла. Текущий рецепт использует верстак Ancient Metal."
+    "desc_en": "Ancient Metal coin made from one ancient metal nugget. It is currently crafted at the Ancient Metal Workbench.",
+    "desc_hu": "Egy ősi fémrögből készíthető Ősi Fém érme. A jelenlegi recept Ősi Fém Munkaasztalt használ.",
+    "desc_ru": "Монета из древнего металла, создаваемая из одной крупицы древнего металла. Текущий рецепт использует верстак из древнего металла."
   },
   "ancient_metal_nugget": {
     "mcmod_id": 772901,
@@ -2385,9 +2385,9 @@
     "versions": [
       "v0.6.0: The direct 9 nuggets to 1 ingot recipe was removed."
     ],
-    "desc_en": "Ancient Metal nugget used for coins, chains, arrows, and Large Furnace metal processing. Local data still shows it as a recyclable sub-material rather than a simple direct-ingot step.",
+    "desc_en": "Ancient Metal nugget used for coins, chains, arrows, and Large Furnace metal processing. In the current data, it behaves as a recyclable sub-material rather than a simple direct-ingot step.",
     "desc_hu": "Ősi fémrög, amely érmékhez, láncokhoz, nyilakhoz és a Nagy Kemence fémfeldolgozási útvonalához kell. A helyi adatok szerint inkább újrahasznosítható köztes anyag, nem egyszerű közvetlen ingot-lépcső.",
-    "desc_ru": "Крупица Ancient Metal для монет, цепей, стрел и линии переработки металлов через Большую печь. По локальным данным это скорее промежуточный перерабатываемый материал, а не простой прямой шаг к слитку.",
+    "desc_ru": "Крупица древнего металла для монет, цепей, стрел и линии переработки металлов через Большую печь. По локальным данным это скорее промежуточный перерабатываемый материал, а не простой прямой шаг к слитку.",
     "versions_en": [
       "v0.6.0: The direct 9 nuggets to 1 ingot recipe was removed."
     ],
@@ -2440,9 +2440,9 @@
   },
   "barrel": {
     "mcmod_id": 784541,
-    "desc": "Base barrel item used in the storage-upgrade line. Higher-tier barrels are obtained through barrel upgrade items rather than treating this wrapper entry as a full progression chart.",
-    "desc_en": "Base barrel item used in the storage-upgrade line. Higher-tier barrels are obtained through barrel upgrade items rather than treating this wrapper entry as a full progression chart.",
-    "desc_hu": "Alap hordóitem, amely a tárolófejlesztési vonal kiindulópontja. A magasabb szintű hordók hordó-upgrade itemekkel készülnek, ezt a gyűjtősort nem érdemes teljes progressziós táblának venni.",
+    "desc": "Base barrel item in the storage-upgrade line. Higher-tier barrels come from barrel upgrade items, so this entry is only a shared base item.",
+    "desc_en": "Base barrel item in the storage-upgrade line. Higher-tier barrels come from barrel upgrade items, so this entry is only a shared base item.",
+    "desc_hu": "Alap hordóitem, amely a tárolófejlesztési vonal kiindulópontja. A magasabb szintű hordók hordófejlesztő itemekkel készülnek, ezt a gyűjtősort nem érdemes teljes progressziós táblának venni.",
     "desc_ru": "Базовый предмет-бочка для линии улучшений хранилищ. Бочки более высоких уровней получаются через предметы улучшения бочки, поэтому эту запись не стоит воспринимать как полную таблицу прогрессии."
   },
   "belt": {
@@ -2526,7 +2526,7 @@
   "bottle_of_disenchanting": {
     "mcmod_id": 773788,
     "desc": "Disenchanting bottle crafted from a water bottle, nether wart, and coal. It can remove enchantments on an anvil or clear potion effects when drunk.",
-    "desc_en": "Disenchanting bottle crafted from a water bottle, nether wart, and coal. It can remove enchantments on an anvil or clear potion effects when drunk.",
+    "desc_en": "Disenchanting bottle made from a water bottle, nether wart, and coal. It can remove enchantments on an anvil or clear potion effects when drunk.",
     "desc_hu": "Leszedő üveg vízpalackból, nether wartból és szénből. Üllőn varázsok eltávolítására használható, megiva pedig letisztítja a bájitalhatásokat.",
     "desc_ru": "Флакон снятия чар из пузырька воды, адского нароста и угля. На наковальне снимает зачарования, а при выпивании очищает эффекты зелий."
   },
@@ -2559,7 +2559,7 @@
       "v0.9.0: A full liquefied mercury cauldron is used for Ancient Metal backpack upgrades."
     ],
     "desc_en": "Extended cauldron used for liquefied gold, liquefied mercury, and later mercury-based upgrade reactions.",
-    "desc_hu": "Kibővített üst, amely folyékony aranyhoz, folyékony higanyhoz és a későbbi higanyalapú upgrade-folyamatokhoz kell.",
+    "desc_hu": "Kibővített üst, amely folyékony aranyhoz, folyékony higanyhoz és a későbbi higanyalapú fejlesztési folyamatokhoz kell.",
     "desc_ru": "Расширенный котёл для жидкого золота, жидкой ртути и более поздних улучшений на основе ртути.",
     "versions_en": [
       "v0.8.0: Mercury ore can be processed in a magma-heated cauldron into liquefied mercury.",
@@ -2567,11 +2567,11 @@
     ],
     "versions_hu": [
       "v0.8.0: Higanyércből magma fölé tett üstben folyékony higany készíthető.",
-      "v0.9.0: A teljesen folyékony higannyal töltött üst kell az Ancient Metal hátizsák-upgrade-hez."
+      "v0.9.0: A teljesen folyékony higannyal töltött üst kell az Ősi Fém hátizsákfejlesztéshez."
     ],
     "versions_ru": [
       "v0.8.0: Ртутную руду можно переработать в жидкую ртуть в котле над источником магмы.",
-      "v0.9.0: Полный котёл жидкой ртути нужен для улучшения рюкзака до Ancient Metal."
+      "v0.9.0: Полный котёл жидкой ртути нужен для улучшения рюкзака из древнего металла."
     ]
   },
   "cheese": {
@@ -2588,13 +2588,13 @@
       "v0.5.6: Direct ingot-crafted chest progression was replaced by upgrade items."
     ],
     "desc_en": "Lockable chest with more storage than a vanilla chest. The chest family later shifts from direct ingot crafting to upgrade-item progression.",
-    "desc_hu": "A vanilla ládánál nagyobb, zárható láda. A ládafejlesztési vonal a későbbi verziókban a közvetlen rudas craftok helyett upgrade itemekre vált.",
+    "desc_hu": "A vanilla ládánál nagyobb, zárható láda. A ládafejlesztési vonal a későbbi verziókban a közvetlen rudas receptek helyett fejlesztő itemekre vált.",
     "desc_ru": "Запираемый сундук с большей вместимостью, чем у ванильного сундука. В поздних версиях линия сундуков переходит с прямого крафта из слитков на улучшения через специальные предметы.",
     "versions_en": [
       "v0.5.6: Direct ingot-crafted chest progression was replaced by upgrade items."
     ],
     "versions_hu": [
-      "v0.5.6: A közvetlenül rudakból craftolt ládalépcsőt upgrade itemek váltották le."
+      "v0.5.6: A közvetlenül rudakból készített ládalépcsőt fejlesztő itemek váltották le."
     ],
     "versions_ru": [
       "v0.5.6: Прямая прогрессия сундуков из слитков была заменена предметами улучшения."
@@ -2610,7 +2610,7 @@
   "chocolate": {
     "mcmod_id": 772964,
     "desc": "Simple sweet food crafted from sugar and cocoa beans. Easy to obtain early, but mainly a sugar-heavy snack.",
-    "desc_en": "Simple sweet food crafted from sugar and cocoa beans. Easy to obtain early, but mainly a sugar-heavy snack.",
+    "desc_en": "Simple sweet food made from sugar and cocoa beans. Easy to get early, but mostly just a sugar-heavy snack.",
     "desc_hu": "Egyszerű édes étel cukorból és kakaóbabból. Korán könnyen megszerezhető, de főleg cukros nasi.",
     "desc_ru": "Простая сладкая еда из сахара и какао-бобов. Легко добывается в начале игры, но это в основном сахарный перекус."
   },
@@ -2650,8 +2650,8 @@
   "copper_coin": {
     "mcmod_id": 772941,
     "desc": "Copper coin crafted from one copper nugget. The current recipe uses the Flint Workbench.",
-    "desc_en": "Copper coin crafted from one copper nugget. The current recipe uses the Flint Workbench.",
-    "desc_hu": "Egy rézrögből craftolható rézérme. A jelenlegi recept Kovakő munkaasztalt használ.",
+    "desc_en": "Copper coin made from one copper nugget. It is currently crafted at the Flint Workbench.",
+    "desc_hu": "Egy rézrögből készíthető rézérme. A jelenlegi recept Kovakő Munkaasztalt használ.",
     "desc_ru": "Медная монета из одного медного самородка. Текущий рецепт использует кремнёвый верстак."
   },
   "copper_ore": {
@@ -2660,7 +2660,7 @@
     "versions": [
       "v0.6.0: Copper ingots switched to the Large Furnace plus Obsidian Template route."
     ],
-    "desc_en": "Base copper ore. In local 0.6.0+ data, copper is obtained by Large Furnace smelting and Obsidian Template cooling rather than direct early-furnace progression.",
+    "desc_en": "Base copper ore. In v0.6.0+, copper is obtained through Large Furnace smelting and Obsidian Ingot Mould cooling rather than the old early-furnace route.",
     "desc_hu": "Alap rézérc. A helyi 0.6.0+ adatokban a réz a Nagy Kemence + Obszidián Öntőforma útvonalon készül, nem a korai közvetlen kemencés rendszerben.",
     "desc_ru": "Базовая медная руда. По локальным данным 0.6.0+ медь получают через Большую печь и охлаждение в обсидиановой форме, а не по старой прямой печной схеме.",
     "versions_en": [
@@ -2738,15 +2738,15 @@
   },
   "fence": {
     "mcmod_id": 772185,
-    "desc": "Generic fence wrapper entry. Different wood types produce their matching fence variants.",
-    "desc_en": "Generic fence wrapper entry. Different wood types produce their matching fence variants.",
+    "desc": "Shared fence entry. Different wood types produce their matching fence variants.",
+    "desc_en": "Shared fence entry. Different wood types produce their matching fence variants.",
     "desc_hu": "Általános kerítés-gyűjtőbejegyzés. A különböző faanyagok a nekik megfelelő kerítésváltozatot adják.",
     "desc_ru": "Общая запись для заборов. Разные виды древесины создают соответствующие варианты забора."
   },
   "fence_gate": {
     "mcmod_id": 772190,
-    "desc": "Generic fence gate wrapper entry. Different wood types produce their matching fence gate variants.",
-    "desc_en": "Generic fence gate wrapper entry. Different wood types produce their matching fence gate variants.",
+    "desc": "Shared fence gate entry. Different wood types produce their matching fence gate variants.",
+    "desc_en": "Shared fence gate entry. Different wood types produce their matching fence gate variants.",
     "desc_hu": "Általános kerítéskapu-gyűjtőbejegyzés. A különböző faanyagok a nekik megfelelő kerítéskapu-változatot adják.",
     "desc_ru": "Общая запись для калиток. Разные виды древесины создают соответствующие варианты калитки."
   },
@@ -2759,7 +2759,7 @@
   },
   "flint_and_steel": {
     "mcmod_id": 802093,
-    "desc": "Flint and steel wrapper entry. MiTE:BE adds multiple material variants with different durability values and stronger station requirements at higher tiers.",
+    "desc": "Shared flint-and-steel entry. MiTE:BE adds multiple material variants with different durability values and stronger station requirements at higher tiers.",
     "versions": [
       "v0.5.8: Additional flint-and-steel material variants were added beyond the basic iron version."
     ],
@@ -2860,15 +2860,15 @@
   "gold_block": {
     "mcmod_id": 773008,
     "desc": "Gold block crafted from nine gold ingots. It works as a beacon base and in gold-block recipes.",
-    "desc_en": "Gold block crafted from nine gold ingots. It works as a beacon base and in gold-block recipes.",
-    "desc_hu": "Kilenc aranyrúdból craftolható aranyblokk. Jeladóalapként és aranyblokkos receptekben használható.",
+    "desc_en": "Gold block made from nine gold ingots. It works as a beacon base and in gold-block recipes.",
+    "desc_hu": "Kilenc aranyrúdból készíthető aranyblokk. Jeladóalapként és aranyblokkos receptekben használható.",
     "desc_ru": "Блок из золота. По сути соответствует обычному золотому блоку."
   },
   "gold_coin": {
     "mcmod_id": 772943,
     "desc": "Gold coin crafted from one gold nugget. The current recipe uses the Flint Workbench.",
-    "desc_en": "Gold coin crafted from one gold nugget. The current recipe uses the Flint Workbench.",
-    "desc_hu": "Egy aranyrögből craftolható aranyérme. A jelenlegi recept Kovakő munkaasztalt használ.",
+    "desc_en": "Gold coin made from one gold nugget. It is currently crafted at the Flint Workbench.",
+    "desc_hu": "Egy aranyrögből készíthető aranyérme. A jelenlegi recept Kovakő Munkaasztalt használ.",
     "desc_ru": "Золотая монета из одного золотого самородка. Текущий рецепт использует кремнёвый верстак."
   },
   "gold_shovel": {
@@ -2971,8 +2971,8 @@
   "hardstone_coin": {
     "mcmod_id": 771981,
     "desc": "Hardstone coin crafted from one hardstone nugget. The current recipe uses the Flint Workbench.",
-    "desc_en": "Hardstone coin crafted from one hardstone nugget. The current recipe uses the Flint Workbench.",
-    "desc_hu": "Egy keménykőrögből craftolható keménykő érme. A jelenlegi recept Kovakő munkaasztalt használ.",
+    "desc_en": "Hardstone coin made from one hardstone nugget. It is currently crafted at the Flint Workbench.",
+    "desc_hu": "Egy keménykőrögből készíthető keménykő érme. A jelenlegi recept Kovakő Munkaasztalt használ.",
     "desc_ru": "Монета из твердокамня из одной твердокаменной крупицы. Текущий рецепт использует кремнёвый верстак."
   },
   "hardstone_nugget": {
@@ -3000,7 +3000,7 @@
     "versions": [
       "v0.6.0: Hardstone ingots switched to the Large Furnace plus Obsidian Template route."
     ],
-    "desc_en": "Hardstone ore found in the Underground and deep overworld layers. In local 0.6.0+ data, hardstone is routed through nugget processing and the Large Furnace plus Obsidian Template path.",
+    "desc_en": "Hardstone ore found in the Underground and deep overworld layers. In v0.6.0+, hardstone goes through nugget processing and the Large Furnace plus Obsidian Ingot Mould path.",
     "desc_hu": "Keménykőérc, amely a Földalattiban és a mélyebb felszíni rétegekben található. A helyi 0.6.0+ adatokban keménykőrög-feldolgozáson és a Nagy Kemence + Obszidián Öntőforma útvonalon megy át.",
     "desc_ru": "Твердокаменная руда из Подземного мира и глубоких слоёв верхнего мира. По локальным данным 0.6.0+ hardstone проходит через переработку в крупицы и схему Большая печь + обсидиановая форма.",
     "versions_en": [
@@ -3023,7 +3023,7 @@
   "ice_cream": {
     "mcmod_id": 772976,
     "desc": "Dessert crafted from snowballs, cocoa beans, sugar, and a bowl of milk. A richer sweet food than plain chocolate.",
-    "desc_en": "Dessert crafted from snowballs, cocoa beans, sugar, and a bowl of milk. A richer sweet food than plain chocolate.",
+    "desc_en": "Dessert made from snowballs, cocoa beans, sugar, and a bowl of milk. A richer sweet food than plain chocolate.",
     "desc_hu": "Hógolyóból, kakaóbabból, cukorból és egy tál tejből készült desszert. Tartalmasabb édesség, mint a sima csokoládé.",
     "desc_ru": "Десерт из снежков, какао-бобов, сахара и миски молока. Более сытная сладость, чем обычный шоколад."
   },
@@ -3031,7 +3031,7 @@
     "mcmod_id": 773009,
     "desc": "Iron block crafted from nine iron ingots. Used in beacon bases and iron-block recipes.",
     "desc_en": "Same as the original iron block.",
-    "desc_hu": "Kilenc vasrúdból craftolható vastömb. Jeladóalapként és vastömbös receptekben használható.",
+    "desc_hu": "Kilenc vasrúdból készíthető vastömb. Jeladóalapként és vastömbös receptekben használható.",
     "desc_ru": "Железный блок из девяти железных слитков. Используется как основание для маяка и в рецептах с железным блоком."
   },
   "iron_boat": {
@@ -3135,8 +3135,8 @@
     "versions": [
       "v0.6.0: Mercury ingots were moved to the newer mercury-ore processing route."
     ],
-    "desc_en": "Mercury ingot used for mercury-coating weapons and later mercury-based crafting. In local 0.6.0+ data it comes from mercury ore processing rather than the old direct route.",
-    "desc_hu": "Higanyrúd, amely fegyverek higanybevonásához és a későbbi higanyalapú craftokhoz kell. A helyi 0.6.0+ adatokban már a higanyérc feldolgozási útvonalából jön, nem a régi közvetlen rendszerből.",
+    "desc_en": "Mercury ingot used for mercury-coating weapons and later mercury-based recipes. In v0.6.0+, it comes from mercury ore processing rather than the old direct route.",
+    "desc_hu": "Higanyrúd, amely fegyverek higanybevonásához és a későbbi higanyalapú receptekhez kell. A helyi 0.6.0+ adatokban már a higanyérc feldolgozási útvonalából jön, nem a régi közvetlen rendszerből.",
     "desc_ru": "Ртутный слиток для ртутного покрытия оружия и более поздних рецептов на основе ртути. По локальным данным 0.6.0+ он получается через переработку ртутной руды, а не по старой прямой схеме.",
     "versions_en": [
       "v0.6.0: Mercury ingots were moved to the newer mercury-ore processing route."
@@ -3169,13 +3169,13 @@
   },
   "mercury_ore": {
     "mcmod_id": 772184,
-    "desc": "Rare greenish mercury ore used for mercury ingots, nuggets, and later liquid-mercury processing. In the current local data, its reliable spawn note is swamp biomes below about Y25.",
+    "desc": "Rare greenish mercury ore used for mercury ingots, nuggets, and later liquid-mercury processing. In v0.9.0, its reliable spawn rule is swamps below about Y25.",
     "versions": [
       "v0.6.0: Mercury ingots switched to the newer mercury-ore processing route.",
       "v0.8.0: Mercury ore gained a liquid-mercury cauldron use.",
       "v0.9.0: Mercury ore spawn was restricted to swamps below level 25."
     ],
-    "desc_en": "Rare greenish mercury ore used for mercury ingots, nuggets, and later liquid-mercury processing. In the current local data, its reliable spawn note is swamp biomes below about Y25.",
+    "desc_en": "Rare greenish mercury ore used for mercury ingots, nuggets, and later liquid-mercury processing. In v0.9.0, its reliable spawn rule is swamps below about Y25.",
     "desc_hu": "Ritka, zöldes higanyérc, amely higanyrúdhoz, higanyröghöz és a későbbi folyékony higanyos feldolgozáshoz kell. A jelenlegi helyi adatokban a biztos spawn-megjegyzés: mocsárbiomokban, nagyjából Y25 alatt.",
     "desc_ru": "Редкая зеленоватая ртутная руда для ртутных слитков, крупиц и более поздней переработки в жидкую ртуть. По текущим локальным данным надёжное правило спавна: болота ниже примерно Y25.",
     "versions_en": [
@@ -3217,7 +3217,7 @@
     "mcmod_id": 773011,
     "desc": "Crafted from nine Mithril Bars, it can only be destroyed with an Adamantium Pickaxe or Warhammer. Can be used to craft Mithril anvils. Can be used as a beacon base.",
     "desc_en": "Crafted from nine Mithril Bars, it can only be destroyed with an Adamantium Pickaxe or Warhammer. Can be used to craft Mithril anvils. Can be used as a beacon base.",
-    "desc_hu": "Kilenc Mithril rúdból készül, és csak Adamantium csákánnyal vagy harci kalapáccsal lehet megsemmisíteni. Mithril üllők készítésére használható. Jeladó alapjaként is működik.",
+    "desc_hu": "Kilenc mithrilrúdból készül, és csak Adamantium csákánnyal vagy háborús kalapáccsal lehet megsemmisíteni. Mithril üllők készítésére használható. Jeladóalapként is működik.",
     "desc_ru": "Создаётся из девяти мифриловых слитков и разрушается только адамантиевой киркой или боевым молотом. Используется для крафта мифриловой наковальни и подходит как основание для маяка."
   },
   "mithril_bow": {
@@ -3230,8 +3230,8 @@
   "mithril_coin": {
     "mcmod_id": 772945,
     "desc": "Mithril coin crafted from one mithril nugget. The current recipe uses the Mithril Workbench.",
-    "desc_en": "Mithril coin crafted from one mithril nugget. The current recipe uses the Mithril Workbench.",
-    "desc_hu": "Egy mithrilrögből craftolható mithril érme. A jelenlegi recept Mithril munkaasztalt használ.",
+    "desc_en": "Mithril coin made from one mithril nugget. It is currently crafted at the Mithril Workbench.",
+    "desc_hu": "Egy mithrilrögből készíthető mithril érme. A jelenlegi recept Mithril Munkaasztalt használ.",
     "desc_ru": "Мифриловая монета из одной мифриловой крупицы. Текущий рецепт использует мифриловый верстак."
   },
   "mithril_ore": {
@@ -3240,11 +3240,11 @@
     "versions": [
       "v0.6.0: Mithril ingots switched to the Large Furnace plus Obsidian Template route."
     ],
-    "desc_en": "Bluish ore found in the Underground world. Smelt it in the Large Furnace, then cool it in an Obsidian Template to obtain mithril. Melting point: 4630.",
-    "desc_hu": "Kékes árnyalatú érc a Földalatti világban. Mithril előállításához Nagy kemencében kell megolvasztani, majd Obszidián sablonban lehűteni. Olvadáspont: 4630.",
+    "desc_en": "Bluish ore found in the Underground world. Smelt it in the Large Furnace, then cool it in an Obsidian Ingot Mould to obtain mithril. Melting point: 4630.",
+    "desc_hu": "Kékes árnyalatú érc a Földalatti világban. Mithril előállításához Nagy kemencében kell megolvasztani, majd Obszidián Öntőformában lehűteni. Olvadáspont: 4630.",
     "desc_ru": "Синеватая руда из Подземного мира. Для получения мифрила её нужно переплавить в большой печи, а затем охладить в обсидиановой форме. Температура плавления: 4630.",
     "versions_en": [
-      "v0.6.0: Mithril ingots switched to the Large Furnace plus Obsidian Template route."
+      "v0.6.0: Mithril ingots switched to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "versions_hu": [
       "v0.6.0: A mithrilrúd a Nagy Kemence + Obszidián Öntőforma útvonalra váltott."
@@ -3334,7 +3334,7 @@
     "mcmod_id": 772968,
     "desc": "Crop ingredient that needs direct sunlight to grow; torch or lava light is not enough. It can also appear from zombie villager or witch drops and some loot chests.",
     "desc_en": "Crop ingredient that needs direct sunlight to grow; torch or lava light is not enough. It can also appear from zombie villager or witch drops and some loot chests.",
-    "desc_hu": "Növényi alapanyag, amelynek közvetlen napfény kell a növekedéshez; a fáklya- vagy lávafény nem elég. Zombi falusi és boszorkány dropból, illetve egyes lootládákból is származhat.",
+    "desc_hu": "Növényi alapanyag, amelynek közvetlen napfény kell a növekedéshez; a fáklya- vagy lávafény nem elég. Zombi falusiaktól és boszorkányoktól is eshet, illetve egyes kincsesládákban is megtalálható.",
     "desc_ru": "Овощная культура, которой для роста нужен прямой солнечный свет; света факелов или лавы недостаточно. Также может выпадать с зомби-жителей, ведьм и попадаться в некоторых сундуках с лутом."
   },
   "onion_allium": {
@@ -3383,14 +3383,14 @@
     "mcmod_id": 773278,
     "desc": "Uncraftable rusty chain material found in abandoned mineshaft loot. Used for the weakest rusty iron chain gear line.",
     "desc_en": "Uncraftable rusty chain material found in abandoned mineshaft loot. Used for the weakest rusty iron chain gear line.",
-    "desc_hu": "Nem craftolható rozsdás láncalapanyag, amely elhagyott tárnák lootjában található. A leggyengébb rozsdás vas láncfelszerelés-vonalhoz kell.",
+    "desc_hu": "Nem készíthető rozsdás láncalapanyag, amely elhagyott tárnák zsákmányában található. A leggyengébb rozsdás vas láncfelszerelés-vonalhoz kell.",
     "desc_ru": "Некрафтящийся ржавый цепной материал из лута заброшенных шахт. Используется для самой слабой линии ржавой железной кольчужной экипировки."
   },
   "rusted_iron_war_hammer": {
     "mcmod_id": 773297,
     "desc": "Uncraftable rusty iron war hammer dropped by some hammer-carrying zombies. Attack damage: 4.",
     "desc_en": "Uncraftable rusty iron war hammer dropped by some hammer-carrying zombies. Attack damage: 4.",
-    "desc_hu": "Nem craftolható rozsdás vasháborús kalapács, amelyet egyes kalapácsos zombik dobhatnak. Sebzés: 4.",
+    "desc_hu": "Nem készíthető rozsdás vas háborús kalapács, amelyet egyes kalapácsos zombik dobhatnak. Sebzés: 4.",
     "desc_ru": "Некрафтящийся ржавый железный боевой молот, который может выпадать с некоторых зомби с молотом. Урон: 4."
   },
   "salad": {
@@ -3448,8 +3448,8 @@
   "silver_coin": {
     "mcmod_id": 772942,
     "desc": "Silver coin crafted from one silver nugget. The current recipe uses the Flint Workbench.",
-    "desc_en": "Silver coin crafted from one silver nugget. The current recipe uses the Flint Workbench.",
-    "desc_hu": "Egy ezüströgből craftolható ezüstérme. A jelenlegi recept Kovakő munkaasztalt használ.",
+    "desc_en": "Silver coin made from one silver nugget. It is currently crafted at the Flint Workbench.",
+    "desc_hu": "Egy ezüströgből készíthető ezüstérme. A jelenlegi recept Kovakő Munkaasztalt használ.",
     "desc_ru": "Серебряная монета из одной серебряной крупицы. Текущий рецепт использует кремнёвый верстак."
   },
   "silver_ore": {
@@ -3459,7 +3459,7 @@
       "v0.5.7: Hard Mode spawn placement was adjusted.",
       "v0.6.0: Silver ingots switched to the Large Furnace plus Obsidian Template route."
     ],
-    "desc_en": "Base silver ore. In local 0.6.0+ data, silver is obtained by Large Furnace smelting and Obsidian Template cooling.",
+    "desc_en": "Base silver ore. In v0.6.0+, silver is obtained through Large Furnace smelting and Obsidian Ingot Mould cooling.",
     "desc_hu": "Alap ezüstérc. A helyi 0.6.0+ adatokban az ezüst a Nagy Kemence + Obszidián Öntőforma útvonalon készül.",
     "desc_ru": "Базовая серебряная руда. По локальным данным 0.6.0+ серебро получают через Большую печь и охлаждение в обсидиановой форме.",
     "versions_en": [
@@ -3546,7 +3546,7 @@
     "mcmod_id": 779556,
     "desc": "Basic stone block for building and crafting. Unlike vanilla, the mod routes part of its progression through adjusted crafting paths instead of relying only on furnace smelting.",
     "desc_en": "Basic stone block for building and crafting. Unlike vanilla, the mod routes part of its progression through adjusted crafting paths instead of relying only on furnace smelting.",
-    "desc_hu": "Alap kőblokk építéshez és craftoláshoz. A modban a megszerzés egy része módosított craftútvonalakon megy, nem csak sima kemencés olvasztáson.",
+    "desc_hu": "Alap kőblokk építéshez és készítéshez. A modban a megszerzés egy része módosított készítési útvonalakon megy, nem csak sima kemencés olvasztáson.",
     "desc_ru": "Базовый каменный блок для строительства и крафта. В моде часть получения переведена на изменённые рецепты, а не только на обычную переплавку в печи."
   },
   "stone_slab_single": {
@@ -3558,9 +3558,9 @@
   },
   "sugar_block": {
     "mcmod_id": 444011,
-    "desc": "Food block crafted from four sugar. A concentrated sugar source with a small moisture penalty.",
-    "desc_en": "Food block crafted from four sugar. A concentrated sugar source with a small moisture penalty.",
-    "desc_hu": "Négy cukorból craftolható élelmiszerblokk. Tömény cukorforrás, kisebb nedvességvesztéssel.",
+    "desc": "Edible block made from four sugar. A concentrated sugar source with a small moisture penalty.",
+    "desc_en": "Edible block made from four sugar. A concentrated sugar source with a small moisture penalty.",
+    "desc_hu": "Négy cukorból készíthető élelmiszerblokk. Tömény cukorforrás, kisebb nedvességvesztéssel.",
     "desc_ru": "Съедобный блок из четырёх сахара. Концентрированный источник сахара с небольшим штрафом к влажности."
   },
   "tulip": {
@@ -3609,7 +3609,7 @@
     "mcmod_id": 813965,
     "desc": "Uncraftable ranged weapon that can drop from pillager captains. It reloads slower than a bow, but hits harder and shoots more accurately.",
     "desc_en": "Uncraftable ranged weapon that can drop from pillager captains. It reloads slower than a bow, but hits harder and shoots more accurately.",
-    "desc_hu": "Nem craftolható távolsági fegyver, amely pillager kapitányoktól eshet. Lassabban tölt, mint egy íj, de nagyobbat üt és pontosabban lő.",
+    "desc_hu": "Nem készíthető távolsági fegyver, amely pillager kapitányoktól eshet. Lassabban tölt, mint egy íj, de nagyobbat üt és pontosabban lő.",
     "desc_ru": "Некрафтящийся арбалет, который может выпадать с капитанов разбойников. Перезаряжается медленнее лука, но бьёт сильнее и стреляет точнее."
   },
   "mutton_raw": {
@@ -3652,12 +3652,12 @@
       "v0.5.7: In Hardcore, tin ore spawn shifted to roughly Y30-128.",
       "v0.6.0: Tin ingots moved to the Large Furnace plus Obsidian Template route."
     ],
-    "desc_en": "Bright tin ore that resembles silver ore. In current data, tin is obtained through the Large Furnace plus Obsidian Template route and remains part of the bronze progression line.",
+    "desc_en": "Bright tin ore that resembles silver ore. In the current data, tin is produced through the Large Furnace plus Obsidian Ingot Mould route and remains part of the bronze progression line.",
     "desc_hu": "Világos ónérc, amely az ezüstérchez hasonlít. A jelenlegi adatokban az ón a Nagy Kemence + Obszidián Öntőforma útvonalon készül, és továbbra is a bronzprogresszió része.",
     "desc_ru": "Светлая оловянная руда, похожая на серебряную. По текущим данным олово получают через Большую печь и обсидиановую форму, и оно остаётся частью бронзовой прогрессии.",
     "versions_en": [
       "v0.5.7: In Hardcore, tin ore spawn shifted to roughly Y30-128.",
-      "v0.6.0: Tin ingots moved to the Large Furnace plus Obsidian Template route."
+      "v0.6.0: Tin ingots moved to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "versions_hu": [
       "v0.5.7: Hardcore módban az ónérc spawnja nagyjából Y30-128 közé tolódott.",
@@ -3702,11 +3702,11 @@
     "versions": [
       "v0.6.0: Tin ingots moved fully to the Large Furnace plus Obsidian Template route."
     ],
-    "desc_en": "Tin ingot used mainly for bronze equipment and related metal progression. In modern data it is produced by smelting tin ore in the Large Furnace and cooling it in an Obsidian Template.",
+    "desc_en": "Tin ingot used mainly for bronze equipment and related metal progression. In current data, it is produced by smelting tin ore in the Large Furnace and cooling it in an Obsidian Ingot Mould.",
     "desc_hu": "Ónrúd, amely főleg bronzfelszereléshez és a kapcsolódó fémprogresszióhoz kell. A modern adatokban ónércből készül Nagy Kemencében olvasztva és Obszidián Formában lehűtve.",
     "desc_ru": "Оловянный слиток, нужный в основном для бронзового снаряжения и связанной металлопрогрессии. В современных данных получается плавкой оловянной руды в Большой печи с охлаждением в обсидиановой форме.",
     "versions_en": [
-      "v0.6.0: Tin ingots moved fully to the Large Furnace plus Obsidian Template route."
+      "v0.6.0: Tin ingots moved fully to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "versions_hu": [
       "v0.6.0: Az ónrúd teljesen a Nagy Kemence + Obszidián Öntőforma útvonalra váltott."
@@ -3719,14 +3719,14 @@
     "mcmod_id": 771971,
     "desc": "Rare PCB loot from Underground ancient skeleton spawner ruins. Right-clicking a workbench with it upgrades that station into an automatic crafting table.",
     "desc_en": "Rare PCB loot from Underground ancient skeleton spawner ruins. Right-clicking a workbench with it upgrades that station into an automatic crafting table.",
-    "desc_hu": "Ritka PCB-loot a földalatti ősi csontváz-spawner romokból. Ha munkaasztalra jobb kattintasz vele, az állomás automata craftasztallá fejlődik.",
+    "desc_hu": "Ritka PCB-zsákmány a földalatti ősi csontváz-spawner romokból. Ha munkaasztalra jobb kattintasz vele, az állomás automata barkácsasztallá fejlődik.",
     "desc_ru": "Редкий PCB-лут из подземных руин древнего спавнера скелетов. ПКМ по верстаку с этой платой улучшает его до автоматического верстака."
   },
   "attribute_coin": {
     "mcmod_id": 771972,
     "desc": "Consumable loot coin that grants one permanent bonus attribute. The possible bonuses include crafting speed, mining speed, or a small attack increase.",
     "desc_en": "Consumable loot coin that grants one permanent bonus attribute. The possible bonuses include crafting speed, mining speed, or a small attack increase.",
-    "desc_hu": "Elfogyasztható lootérme, amely egy állandó bónusztattribútumot ad. A lehetséges jutalmak között craftsebesség, bányászási sebesség vagy kisebb támadáserő-növekedés szerepel.",
+    "desc_hu": "Elfogyasztható zsákmányérme, amely egy állandó bónusztattribútumot ad. A lehetséges jutalmak között barkácsolási sebesség, bányászási sebesség vagy kisebb támadáserő-növekedés szerepel.",
     "desc_ru": "Расходуемая лут-монета, дающая один постоянный бонусный атрибут. Возможные бонусы включают скорость крафта, скорость добычи или небольшую прибавку к урону."
   },
   "manure": {
@@ -3820,24 +3820,24 @@
   },
   "ex_eye_of_ender": {
     "mcmod_id": 802102,
-    "desc": "Enhanced Eye of Ender used to activate the Earth Core Destroyer. In newer versions, crafting it also requires the matching knowledge-book unlock.",
+    "desc": "Enhanced Eye of Ender used to activate the Core Destroyer. In newer versions, crafting it also requires the matching Knowledge Book unlock.",
     "versions": [
-      "v0.5.8: Added as the activation item for the Earth Core Destroyer.",
+      "v0.5.8: Added as the activation item for the Core Destroyer.",
       "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
     ],
-    "desc_en": "Enhanced Eye of Ender used to activate the Earth Core Destroyer. In newer versions, crafting it also requires the matching knowledge-book unlock.",
+    "desc_en": "Enhanced Eye of Ender used to activate the Core Destroyer. In newer versions, crafting it also requires the matching Knowledge Book unlock.",
     "desc_hu": "Fejlesztett Ender-szem, amely a Magpusztító aktiválásához kell. Az újabb verziókban az elkészítéséhez a megfelelő tudáskönyv-feloldás is szükséges.",
-    "desc_ru": "Усиленный глаз Эндера, нужный для активации Earth Core Destroyer. В новых версиях для его крафта также требуется разблокировка соответствующей книги знаний.",
+    "desc_ru": "Усиленный глаз Эндера, нужный для активации Разрушителя ядра. В новых версиях для его крафта также требуется разблокировка соответствующей книги знаний.",
     "versions_en": [
-      "v0.5.8: Added as the activation item for the Earth Core Destroyer.",
+      "v0.5.8: Added as the activation item for the Core Destroyer.",
       "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
     ],
     "versions_hu": [
-      "v0.5.8: Megjelent a Magpusztító aktiváló itemjeként.",
-      "v0.9.0: A craftolásához a megfelelő tudáskönyv-feloldás kell."
+      "v0.5.8: Megjelent a Magpusztító aktiváló tárgyaként.",
+      "v0.9.0: Az elkészítéséhez a megfelelő tudáskönyv-feloldás kell."
     ],
     "versions_ru": [
-      "v0.5.8: Добавлен как предмет активации Earth Core Destroyer.",
+      "v0.5.8: Добавлен как предмет активации Разрушителя ядра.",
       "v0.9.0: Для крафта требуется разблокировка соответствующей книги знаний."
     ]
   },
@@ -3914,7 +3914,7 @@
     "mcmod_id": 773477,
     "desc": "Crafted from one Obsidian and four Mithril or Adamantium grains. There are sixteen patterns, and different rune patterns do not stack. Replacing the four portal corners of an obsidian frame with runestones creates a rune gate when ignited with flint and steel. Adamantium rune gates travel farther than Mithril ones. Treat rune gates as one-way long-distance travel unless you have another return method ready.",
     "desc_en": "Crafted from one Obsidian and four Mithril or Adamantium grains. There are sixteen patterns, and different rune patterns do not stack. Replacing the four portal corners of an obsidian frame with runestones creates a rune gate when ignited with flint and steel. Adamantium rune gates travel farther than Mithril ones. Treat rune gates as one-way long-distance travel unless you have another return method ready.",
-    "desc_hu": "Egy Obszidiánból és négy Mithril- vagy Adamantium-szemcséből craftolható. Tizenhat minta létezik, és a különböző rúnaminták nem rakhatók egymásra. Ha egy obszidián portálkeret négy sarkát rúnakövekre cseréled, majd tűzkővel meggyújtod, rúnakaput kapsz. Az Adamantium rúnakapuk messzebbre visznek, mint a Mithril változatok. A rúnakapukat érdemes egyirányú, nagy távolságú utazásként kezelni, hacsak nincs külön visszaút előkészítve.",
+    "desc_hu": "Egy Obszidiánból és négy Mithril- vagy Adamantium-szemcséből készíthető. Tizenhat minta létezik, és a különböző rúnaminták nem rakhatók egymásra. Ha egy obszidián portálkeret négy sarkát rúnakövekre cseréled, majd tűzkővel meggyújtod, rúnakaput kapsz. Az Adamantium rúnakapuk messzebbre visznek, mint a Mithril változatok. A rúnakapukat érdemes egyirányú, nagy távolságú utazásként kezelni, hacsak nincs külön visszaút előkészítve.",
     "desc_ru": "Создаётся из одного обсидиана и четырёх мифриловых или адамантиевых крупиц. Есть шестнадцать вариантов рисунка, и разные руны не складываются в один стак. Если заменить четыре угла обсидиановой рамки портала руническими камнями и поджечь её огнивом, получится рунические врата. Адамантиевые врата переносят дальше, чем мифриловые. Используй их как односторонний дальний переход, если не подготовлен путь назад."
   },
   "blast_furnace": {
@@ -3966,7 +3966,7 @@
     ],
     "versions_hu": [
       "v0.5.9: Megjelentek a fővilági világjelölőként működő respawn anchorök.",
-      "v0.9.0: A craftoláshoz a megfelelő tudáskönyv-feloldás kell."
+      "v0.9.0: Az elkészítéséhez a megfelelő tudáskönyv-feloldás kell."
     ],
     "versions_ru": [
       "v0.5.9: Были добавлены respawn anchor как мировые маркеры обычного мира.",
@@ -3981,7 +3981,7 @@
       "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
     ],
     "desc_en": "Custom enchanting table for targeted enchantment choices without surrounding bookshelves. It consumes lapis, a book, and XP per enchant, and later versions gate crafting behind a knowledge-book unlock.",
-    "desc_hu": "Egyéni bűvölőasztal célzott enchantválasztásokhoz, környező könyvespolcok nélkül. Minden enchant lapist, egy könyvet és XP-t fogyaszt, a későbbi verziókban pedig a craftolása tudáskönyv-feloldáshoz kötött.",
+    "desc_hu": "Egyéni bűvölőasztal célzott bűvölésválasztásokhoz, környező könyvespolcok nélkül. Minden bűvölés lapist, egy könyvet és XP-t fogyaszt, a későbbi verziókban pedig az elkészítése tudáskönyv-feloldáshoz kötött.",
     "desc_ru": "Особый стол зачарования для выбора конкретных чар без окружающих книжных полок. Каждое зачарование тратит лазурит, книгу и XP, а в поздних версиях крафт дополнительно закрыт за книгой знаний.",
     "versions_en": [
       "v0.6.0: Custom enchanting tables were added.",
@@ -3989,7 +3989,7 @@
     ],
     "versions_hu": [
       "v0.6.0: Megjelentek az egyéni bűvölőasztalok.",
-      "v0.9.0: A craftoláshoz a megfelelő tudáskönyv-feloldás kell."
+      "v0.9.0: Az elkészítéséhez a megfelelő tudáskönyv-feloldás kell."
     ],
     "versions_ru": [
       "v0.6.0: Были добавлены особые столы зачарования.",
@@ -4002,9 +4002,9 @@
     "versions": [
       "In v0.9.0, backpack progression was simplified to the leather backpack plus dedicated upgrade item path."
     ],
-    "desc_en": "Ancient metal backpack upgrade item. In v0.9.0 it became the main way to turn the big-backpack upgrade path into the Ancient Metal Backpack. Crafting requires the matching Knowledge Book, and the item upgrades the equipped leather backpack in the accessory slot.",
-    "desc_hu": "Ősi fém hátizsák-fejlesztő item. A 0.9.0-s verzióban ez lett a fő út a nagy hátizsák-fejlesztésből az Ősi Fém Hátizsákig. A craftoláshoz a megfelelő Tudáskönyv kell, és az item a kiegészítőhelyen viselt bőrhátizsákot fejleszti tovább.",
-    "desc_ru": "Предмет улучшения рюкзака из древнего металла. В версии 0.9.0 он стал основным способом перевести ветку большого рюкзака в рюкзак из древнего металла. Для крафта нужна соответствующая Книга знаний, а сам предмет улучшает кожаный рюкзак в слоте аксессуара.",
+    "desc_en": "Ancient Metal backpack upgrade item. In v0.9.0, it became the main way to advance from the big backpack upgrade path into the Ancient Metal Backpack. Crafting requires the matching Knowledge Book, and the item upgrades the equipped leather backpack in the accessory slot.",
+    "desc_hu": "Ősi fém hátizsákfejlesztő item. A 0.9.0-s verzióban ez lett a fő út a nagy hátizsák-fejlesztésből az Ősi Fém Hátizsákig. Az elkészítéséhez a megfelelő Tudáskönyv kell, és ez fejleszti tovább a kiegészítőhelyen viselt bőrhátizsákot.",
+    "desc_ru": "Предмет улучшения рюкзака из древнего металла. В версии 0.9.0 он стал основным способом перейти от большого рюкзака к рюкзаку из древнего металла. Для крафта нужна соответствующая Книга знаний, а сам предмет улучшает кожаный рюкзак в слоте аксессуара.",
     "versions_en": [
       "In v0.9.0, backpack progression was simplified to the leather backpack plus dedicated upgrade item path."
     ],
@@ -4350,11 +4350,11 @@
       "In v0.5.8, the dangerous heat radius around the core was increased."
     ],
     "versions_hu": [
-      "A 0.5.8-as verzióban bekerült a Core Destroyer, amellyel a mag már szétbontható.",
+      "A 0.5.8-as verzióban bekerült a Magpusztító, amellyel a mag már szétbontható.",
       "A 0.5.8-as verzióban a mag veszélyes hősugara is nagyobb lett."
     ],
     "versions_ru": [
-      "В версии 0.5.8 добавили Core Destroyer, чтобы ядро можно было разрушить.",
+      "В версии 0.5.8 добавили Разрушитель ядра, чтобы ядро можно было разрушить.",
       "В версии 0.5.8 увеличили опасный радиус жара вокруг ядра."
     ]
   },
@@ -4808,13 +4808,13 @@
     "mcmod_id": 777367,
     "desc": "Legacy return scroll that auto-binds to the nearest activated teleportation stele and returns you there. It is single-use and does not work across worlds.",
     "versions": [
-      "Legacy note: In the local recipe set, Return Scroll recipes are marked as removed in v0.5.8."
+      "Legacy note: Return Scroll recipes are marked as removed in v0.5.8."
     ],
-    "desc_en": "A one-time return scroll that automatically binds to the nearest activated teleportation stele and returns you there on use. It does not work across worlds. In the local recipe set, Return Scroll recipes are marked as removed in version 0.5.8, so treat this as legacy teleport-scroll data.",
+    "desc_en": "One-time return scroll that automatically binds to the nearest activated teleportation stele and returns you there on use. It does not work across worlds. Its recipes are marked as removed in v0.5.8, so it should be treated as legacy teleport-scroll data.",
     "desc_hu": "Egyszer használatos, legacy visszatérési tekercs, amely automatikusan a legközelebbi aktivált teleportációs sztéléhez kötődik, és oda visz vissza. Világok között nem működik.",
     "desc_ru": "Одноразовый legacy-свиток возврата, который автоматически привязывается к ближайшей активированной телепортационной стеле и возвращает к ней. Между мирами не работает.",
     "versions_en": [
-      "Legacy note: In the local recipe set, Return Scroll recipes are marked as removed in v0.5.8."
+      "Legacy note: Return Scroll recipes are marked as removed in v0.5.8."
     ],
     "versions_hu": [
       "Legacy megjegyzés: a helyi receptkészletben a Return Scroll receptek v0.5.8-ban eltávolítottnak vannak jelölve."
@@ -4826,15 +4826,15 @@
   "bound_scroll": {
     "mcmod_id": 777368,
     "desc": "Legacy bound scroll that can be linked to a chosen teleportation stele and rebound multiple times.",
-    "desc_en": "Like the Return Scroll, this scroll can be bound to a chosen teleportation stele and used to return to it; unlike Return Scroll, it can be rebound multiple times. In the local recipe set, Bound Scroll recipes are marked as removed in version 0.5.8, so treat this as legacy teleport-scroll data.",
+    "desc_en": "Like the Return Scroll, this one can be bound to a chosen teleportation stele and used to return to it. Unlike the Return Scroll, it can be rebound multiple times. Its recipes are marked as removed in v0.5.8, so it should be treated as legacy teleport-scroll data.",
     "desc_hu": "Legacy kötött tekercs, amely egy választott teleportációs sztéléhez kapcsolható, és többször újraköthető.",
     "desc_ru": "Legacy-свиток привязки, который можно связать с выбранной телепортационной стелой и перепривязывать многократно."
   },
   "warp_scroll": {
     "mcmod_id": 777369,
     "desc": "Legacy warp scroll that targets lit teleportation steles. It is single-use and does not work across worlds.",
-    "desc_en": "Legacy teleport scroll that targets lit teleportation steles. It is single-use and does not work across worlds. In the local recipe set, Warp Scroll is marked as removed in version 0.5.8.",
-    "desc_hu": "Legacy teleport-tekercs, amely az aktivált teleportációs sztélékhez kapcsolódik. Egyszer használatos, és nem működik világok között.",
+    "desc_en": "Legacy teleport scroll that targets lit teleportation steles. It is single-use and does not work across worlds. Its recipe is marked as removed in v0.5.8.",
+    "desc_hu": "Régi teleport-tekercs, amely az aktivált teleportációs sztélékhez kapcsolódik. Egyszer használatos, és nem működik világok között.",
     "desc_ru": "Legacy-свиток телепортации, который работает с активированными телепортационными стелами. Одноразовый и не работает между мирами."
   },
   "antique_atlas": {
@@ -4851,7 +4851,7 @@
       "v0.5.8: Teleporting by stele costs experience beyond short distances.",
       "v0.9.0: Crafting requires the related knowledge book."
     ],
-    "desc_en": "The teleportation stele is a long-distance travel destination that can be activated and linked into the teleport system. Older scroll-type teleport items reference it as a target. The local data confirms an active Waystone recipe and a Knowledge Book requirement in v0.9.0, but I am not treating older fixed spawn-location claims as reliable here.",
+    "desc_en": "The teleportation stele is a long-distance travel destination that can be activated and linked into the teleport system. Older scroll-type teleport items reference it as a target. Current data confirms an active Waystone recipe and a Knowledge Book requirement in v0.9.0, but I am not treating older fixed spawn-location claims as reliable here.",
     "desc_hu": "A teleportációs sztélé egy nagy távolságú utazási horgony, amely aktiválható és beköthető a teleport-hálózatba. A régebbi teleporttekercsek is erre hivatkoznak célpontként.",
     "desc_ru": "Телепортационная стела служит якорем для дальних перемещений. Её можно активировать и включить в сеть телепортации, а старые свитки телепортации используют её как цель.",
     "versions_en": [
@@ -4860,7 +4860,7 @@
     ],
     "versions_hu": [
       "v0.5.8: Rövid távon túl a sztélével való teleportálás XP-be kerül.",
-      "v0.9.0: A craftoláshoz a kapcsolódó tudáskönyv kell."
+      "v0.9.0: Az elkészítéséhez a kapcsolódó tudáskönyv kell."
     ],
     "versions_ru": [
       "v0.5.8: Телепортация через стелу начинает требовать опыт на более дальних дистанциях.",
@@ -4870,9 +4870,9 @@
   "hard_stick": {
     "mcmod_id": 782758,
     "desc": "Handle material crafted from 2 Hardstone Ingots. Used for many Ancient Metal, Mithril, and Adamantium tools and weapons.",
-    "desc_en": "Handle material crafted from 2 Hardstone Ingots. Used for many Ancient Metal, Mithril, and Adamantium tools and weapons.",
+    "desc_en": "Handle material made from 2 Hardstone Ingots. Used for many Ancient Metal, Mithril, and Adamantium tools and weapons.",
     "desc_hu": "2 keménykőrúdból készülő nyélanyag. Sok Ősi Fém, Mithril és Adamantium eszköz és fegyver alapanyaga.",
-    "desc_ru": "Материал для рукоятей, создаваемый из 2 hardstone-слитков. Используется во многих инструментах и оружии из Ancient Metal, Mithril и Adamantium."
+    "desc_ru": "Материал для рукоятей, создаваемый из 2 твердокаменных слитков. Используется во многих инструментах и оружии из древнего металла, мифрила и адамантия."
   },
   "colling_liquid": {
     "mcmod_id": 803142,
@@ -4890,7 +4890,7 @@
     ],
     "versions_hu": [
       "v0.5.8: Ekkor került be; 30 másodperccel csökkenti a kétcsatornás tégely hűlését 5 játéknapig.",
-      "v0.9.0: A craftoláshoz a kapcsolódó tudáskönyv kell."
+      "v0.9.0: Az elkészítéséhez a kapcsolódó tudáskönyv kell."
     ],
     "versions_ru": [
       "v0.5.8: Добавлена и ускоряет охлаждение двухканального тигля на 30 секунд в течение 5 игровых дней.",
@@ -4903,7 +4903,7 @@
     "versions": [
       "v0.6.0: Obsidian ingot moulds were added."
     ],
-    "desc_en": "Obsidian ingot mould required for turning molten ore into ingots through the furnace route. Each successful use consumes durability.",
+    "desc_en": "Obsidian ingot mould used to turn molten ore into ingots through the furnace route. Each successful use consumes durability.",
     "desc_hu": "Obszidián rúdforma, amely az olvasztási útvonalon kötelező a megolvadt érc rudakká alakításához. Minden sikeres használat csökkenti a tartósságát.",
     "desc_ru": "Обсидиановая форма для слитков, необходимая для превращения расплавленной руды в слитки через печной путь. Каждое успешное использование тратит прочность.",
     "versions_en": [
@@ -4922,7 +4922,7 @@
     "versions": [
       "v0.6.0: Cooled obsidian ingot moulds were added."
     ],
-    "desc_en": "Cooled variant of the obsidian ingot mould, crafted from coolant and the base mould. It is used in the same ore-to-ingot processing line and also loses durability on use.",
+    "desc_en": "Cooled variant of the obsidian ingot mould, made from coolant and the base mould. It is used in the same ore-to-ingot processing line and also loses durability on use.",
     "desc_hu": "Az obszidián rúdforma hűtött változata, amely hűtőfolyadékból és az alap formából készül. Ugyanabban az ércből-rúdba feldolgozási láncban használható, és használatkor ez is veszít a tartósságából.",
     "desc_ru": "Охлаждённый вариант обсидиановой формы для слитков, создаваемый из охлаждающей жидкости и базовой формы. Используется в той же цепочке переработки руды в слитки и тоже теряет прочность при использовании.",
     "versions_en": [
@@ -4996,7 +4996,7 @@
     "mcmod_id": 773562,
     "desc": "Uncraftable rusty iron hatchet dropped by some zombies. Attack damage +4, with only rough quality.",
     "desc_en": "Uncraftable rusty iron hatchet dropped by some zombies. Attack damage +4, with only rough quality.",
-    "desc_hu": "Nem craftolható rozsdás vas kézbalta, amelyet egyes zombik dobhatnak. Támadási sebzés: +4, a minősége legfeljebb durva.",
+    "desc_hu": "Nem készíthető rozsdás vas kézbalta, amelyet egyes zombik dobhatnak. Támadási sebzés: +4, a minősége legfeljebb durva.",
     "desc_ru": "Некрафтящийся ржавый железный ручной топорик, который могут выбросить некоторые зомби. Урон: +4, максимальное качество только грубое."
   },
   "high_carbon_steel_hatchet": {
@@ -5010,7 +5010,7 @@
     "mcmod_id": 773582,
     "desc": "Uncraftable rusty iron axe dropped by some zombies. Attack damage +5, with only rough quality.",
     "desc_en": "Uncraftable rusty iron axe dropped by some zombies. Attack damage +5, with only rough quality.",
-    "desc_hu": "Nem craftolható rozsdás vas fejsze, amelyet egyes zombik dobhatnak. Támadási sebzés: +5, a minősége legfeljebb durva.",
+    "desc_hu": "Nem készíthető rozsdás vas fejsze, amelyet egyes zombik dobhatnak. Támadási sebzés: +5, a minősége legfeljebb durva.",
     "desc_ru": "Некрафтящийся ржавый железный топор, который могут выбросить некоторые зомби. Урон: +5, максимальное качество только грубое."
   },
   "bronze_axe": {
@@ -5053,7 +5053,7 @@
       "v0.5.9: Can mine ice without Silk Touch."
     ],
     "desc_en": "Uncraftable rusty iron pickaxe dropped by some zombies. Its mining tier matches copper, not iron. Attack damage +4.",
-    "desc_hu": "Nem craftolható rozsdás vascsákány, amelyet egyes zombik dobhatnak. A bányászati szintje a rézével egyezik, nem a vaséval. Támadási sebzés: +4.",
+    "desc_hu": "Nem készíthető rozsdás vascsákány, amelyet egyes zombik dobhatnak. A bányászati szintje a rézével egyezik, nem a vaséval. Támadási sebzés: +4.",
     "desc_ru": "Некрафтящаяся ржавая железная кирка, которую могут выбросить некоторые зомби. По уровню добычи соответствует меди, а не железу. Урон: +4.",
     "versions_en": [
       "v0.5.9: Can mine ice without Silk Touch."
@@ -5126,7 +5126,7 @@
     "mcmod_id": 773552,
     "desc": "Uncraftable rusty iron shovel dropped by some zombies. Attack damage +3, with only rough quality.",
     "desc_en": "Uncraftable rusty iron shovel dropped by some zombies. Attack damage +3, with only rough quality.",
-    "desc_hu": "Nem craftolható rozsdás vas lapát, amelyet egyes zombik dobhatnak. Támadási sebzés: +3, a minősége legfeljebb durva.",
+    "desc_hu": "Nem készíthető rozsdás vas lapát, amelyet egyes zombik dobhatnak. Támadási sebzés: +3, a minősége legfeljebb durva.",
     "desc_ru": "Некрафтящаяся ржавая железная лопата, которую могут выбросить некоторые зомби. Урон: +3, максимальное качество только грубое."
   },
   "bronze_shovel": {
@@ -5166,7 +5166,7 @@
     "mcmod_id": 773637,
     "desc": "Uncraftable rusty iron hoe dropped by some zombies. Attack damage +3, with only rough quality.",
     "desc_en": "Uncraftable rusty iron hoe dropped by some zombies. Attack damage +3, with only rough quality.",
-    "desc_hu": "Nem craftolható rozsdás vas kapa, amelyet egyes zombik dobhatnak. Támadási sebzés: +3, a minősége legfeljebb durva.",
+    "desc_hu": "Nem készíthető rozsdás vas kapa, amelyet egyes zombik dobhatnak. Támadási sebzés: +3, a minősége legfeljebb durva.",
     "desc_ru": "Некрафтящаяся ржавая железная мотыга, которую могут выбросить некоторые зомби. Урон: +3, максимальное качество только грубое."
   },
   "high_carbon_steel_hoe": {
@@ -5187,7 +5187,7 @@
     "mcmod_id": 773590,
     "desc": "Uncraftable rusty iron scythe dropped by some zombies. Good for fast grass and wheat harvesting. Attack damage +3.",
     "desc_en": "Uncraftable rusty iron scythe dropped by some zombies. Good for fast grass and wheat harvesting. Attack damage +3.",
-    "desc_hu": "Nem craftolható rozsdás vas kasza, amelyet egyes zombik dobhatnak. Fű és búza gyors betakarítására jó. Támadási sebzés: +3.",
+    "desc_hu": "Nem készíthető rozsdás vas kasza, amelyet egyes zombik dobhatnak. Fű és búza gyors betakarítására jó. Támadási sebzés: +3.",
     "desc_ru": "Некрафтящаяся ржавая железная коса, которую могут выбросить некоторые зомби. Подходит для быстрого сбора травы и пшеницы. Урон: +3."
   },
   "high_carbon_steel_scythe": {
@@ -5388,7 +5388,7 @@
       "v0.6.0: Crafting moved to the Hardened Clay Furnace or Large Furnace."
     ],
     "versions_hu": [
-      "v0.6.0: A craftolása az edzett agyagkemencébe vagy a nagy kemencébe került át."
+      "v0.6.0: Az elkészítése az edzett agyagkemencébe vagy a nagy kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Крафт перенесён в печь из обожжённой глины или в большую печь."
@@ -5407,7 +5407,7 @@
       "v0.6.0: Crafting moved to the Large Furnace."
     ],
     "versions_hu": [
-      "v0.6.0: A craftolása a nagy kemencébe került át."
+      "v0.6.0: Az elkészítése a nagy kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Крафт перенесён в большую печь."
@@ -5433,7 +5433,7 @@
       "v0.6.0: Crafting moved to the Large Furnace."
     ],
     "versions_hu": [
-      "v0.6.0: A craftolása a nagy kemencébe került át."
+      "v0.6.0: Az elkészítése a nagy kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Крафт перенесён в большую печь."
@@ -5452,7 +5452,7 @@
       "v0.6.0: Crafting moved to the Large Furnace."
     ],
     "versions_hu": [
-      "v0.6.0: A craftolása a nagy kemencébe került át."
+      "v0.6.0: Az elkészítése a nagy kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Крафт перенесён в большую печь."
@@ -5471,7 +5471,7 @@
       "v0.6.0: Crafting moved to the Large Furnace."
     ],
     "versions_hu": [
-      "v0.6.0: A craftolása a nagy kemencébe került át."
+      "v0.6.0: Az elkészítése a nagy kemencébe került át."
     ],
     "versions_ru": [
       "v0.6.0: Крафт перенесён в большую печь."
@@ -5488,7 +5488,7 @@
     "mcmod_id": 773314,
     "desc": "Rusty iron arrow with +2 projectile damage and a 50% recovery chance. Cannot be crafted directly; some skeleton archers can drop it.",
     "desc_en": "Rusty iron arrow with +2 projectile damage and a 50% recovery chance. Cannot be crafted directly; some skeleton archers can drop it.",
-    "desc_hu": "Rozsdás vasnyíl +2 lövedéksebzéssel és 50% visszaszerzési eséllyel. Közvetlenül nem craftolható; egyes csontvázíjászok dobhatják.",
+    "desc_hu": "Rozsdás vasnyíl +2 lövedéksebzéssel és 50% visszaszerzési eséllyel. Közvetlenül nem készíthető; egyes csontvázíjászok dobhatják.",
     "desc_ru": "Ржавая железная стрела с уроном снаряда +2 и шансом 50% вернуться после попадания. Напрямую не крафтится; может выпадать с некоторых скелетов-лучников."
   },
   "miner_helmet": {
@@ -5499,7 +5499,7 @@
       "v0.9.0: Requires the matching Knowledge Book to craft."
     ],
     "desc_en": "Accessory-slot moving light source. Loses 1 durability every 30 seconds while active and can be repaired with batteries on iron-tier or better anvils. Requires the matching Knowledge Book to craft in v0.9.0.",
-    "desc_hu": "Kiegészítőhelyre tehető mozgó fényforrás. Aktív állapotban 30 másodpercenként 1 tartósságot veszít, és akkumulátorral javítható vas- vagy jobb üllőn. A v0.9.0-ban a craftolásához kell a megfelelő Tudáskönyv.",
+    "desc_hu": "Kiegészítőhelyre tehető mozgó fényforrás. Aktív állapotban 30 másodpercenként 1 tartósságot veszít, és akkumulátorral javítható vas- vagy jobb üllőn. A v0.9.0-ban az elkészítéséhez kell a megfelelő Tudáskönyv.",
     "desc_ru": "Подвижный источник света для слота аксессуаров. Теряет 1 прочность каждые 30 секунд работы и чинится батареями на железной или более высокой наковальне. В v0.9.0 для крафта нужна соответствующая Книга знаний.",
     "versions_en": [
       "v0.5.7: In Hardcore, it loses durability every 15 seconds and each battery repairs 50 durability.",
@@ -5582,7 +5582,7 @@
     ],
     "versions_hu": [
       "v0.3: Bekerült az esőkabát.",
-      "v0.5: Az esőkabát kikerült, és többé nem craftolható."
+      "v0.5: Az esőkabát kikerült, és többé nem készíthető."
     ],
     "versions_ru": [
       "v0.3: Дождевик был добавлен.",
@@ -5689,8 +5689,8 @@
       "v0.5.8: More advanced filter paper tiers were added.",
       "v0.9.0: Most advanced filter paper recipes were removed; only the remaining supported variants stay craftable with the matching Knowledge Book."
     ],
-    "desc_en": "Wrapper entry for higher-tier filter papers. In v0.9.0 most advanced filter paper recipes are removed; only the still-supported variants should be treated as craftable, and they require the matching Knowledge Book.",
-    "desc_hu": "Gyűjtőbejegyzés a fejlettebb szűrőpapírokhoz. A v0.9.0-ban a legtöbb fejlett szűrőpapír receptje kikerült; csak a ténylegesen megmaradt változatokat érdemes craftolhatónak tekinteni, és ezekhez is kell a megfelelő Tudáskönyv.",
+    "desc_en": "Shared entry for higher-tier filter papers. In v0.9.0, most advanced filter paper recipes were removed; only the remaining supported variants stay craftable, and they require the matching Knowledge Book.",
+    "desc_hu": "Gyűjtőbejegyzés a fejlettebb szűrőpapírokhoz. A v0.9.0-ban a legtöbb fejlett szűrőpapír receptje kikerült; csak a ténylegesen megmaradt változatokat érdemes elkészíthetőnek tekinteni, és ezekhez is kell a megfelelő Tudáskönyv.",
     "desc_ru": "Сводная запись для улучшенных фильтровальных бумаг. В v0.9.0 большая часть их рецептов была удалена; крафтить стоит только реально оставшиеся варианты и только с нужной Книгой знаний.",
     "versions_en": [
       "v0.5.8: More advanced filter paper tiers were added.",
@@ -5698,7 +5698,7 @@
     ],
     "versions_hu": [
       "v0.5.8: Több fejlett szűrőpapír-szint került be.",
-      "v0.9.0: A legtöbb fejlett szűrőpapír receptje kikerült; csak a ténylegesen megmaradt változatok maradtak craftolhatók a megfelelő Tudáskönyvvel."
+      "v0.9.0: A legtöbb fejlett szűrőpapír receptje kikerült; csak a ténylegesen megmaradt változatok készíthetők el a megfelelő Tudáskönyvvel."
     ],
     "versions_ru": [
       "v0.5.8: Добавили больше тиров улучшенной фильтровальной бумаги.",
@@ -5725,7 +5725,7 @@
     ],
     "versions_ru": [
       "v0.8.0: Положи ртутную руду в котёл над лавой для получения жидкой ртути.",
-      "v0.9.0: Положи 1 Кожаный рюкзак и 4 слитка Древнего металла в котёл с жидкой ртутью (правый клик по котлу с предметом в руке); через 30 секунд все предметы расходуются и создаётся Улучшение рюкзака из Древнего металла. Во время превращения под котлом должен оставаться источник лавы."
+      "v0.9.0: Положи 1 Улучшение большого рюкзака и 4 слитка Древнего металла в котёл с жидкой ртутью (правый клик по котлу с предметом в руке); через 30 секунд все предметы расходуются и создаётся Улучшение рюкзака из Древнего металла. Во время превращения под котлом должен оставаться источник лавы."
     ]
   },
   "conveying_stone": {
@@ -5734,7 +5734,7 @@
     "versions": [
       "v0.8.0: Teleportation stones and their portal travel system were added."
     ],
-    "desc_en": "Version 0.8.0 adds teleportation stones that work with a 4×6 portal frame in the overworld, lit with flint and steel. Different stones send you to general biome destinations such as desert, swamp, plains, plateau, forest, ocean, snow, or jungle. In v0.9.0, these portals should be treated as biome travel rather than guaranteed structure or ruin teleports.",
+    "desc_en": "Teleportation stone family used with a 4×6 overworld portal frame lit by flint and steel. Different stones bias travel toward broad biome destinations such as desert, swamp, plains, plateau, forest, ocean, snow, or jungle. In v0.9.0, these portals should be treated as biome travel rather than guaranteed structure or ruin teleports.",
     "desc_hu": "A 0.8.0-s verzió teleportációs köveket ad hozzá, amelyek egy 4×6-os overworld portálkerettel és tűzkővel való begyújtással működnek. A különböző kövek általános biom-célokra visznek, például sivatagba, mocsárba, síkságra, fennsíkra, erdőbe, óceánhoz, havas területre vagy dzsungelbe. A v0.9.0-ban ezeket inkább biom-utazásként érdemes kezelni, nem garantált rom- vagy struktúrateleportként.",
     "desc_ru": "Семейство телепортационных камней для портала 4x6 в верхнем мире. Разные камни смещают точку прибытия к общим типам биомов, а не гарантируют конкретные руины или структуры.",
     "versions_en": [
@@ -5768,15 +5768,15 @@
   },
   "kbook": {
     "mcmod_id": 831647,
-    "desc": "Knowledge Book wrapper entry. These books drop in underground dungeon treasure chests, unlock specific crafting permissions on right-click, and spare copies can be recycled into books for XP.",
+    "desc": "Shared entry for Knowledge Books. These books drop in treasure chests found in underground dungeons, unlock specific recipes on right-click, and spare copies can be recycled into books for XP.",
     "versions": [
-      "v0.9.0: Knowledge Books were added as recipe-unlock items from underground dungeon treasure chests."
+      "v0.9.0: Knowledge Books were added as recipe unlocks from treasure chests in underground dungeons."
     ],
-    "desc_en": "Version 0.9.0 adds Knowledge Books that can appear in underground dungeon treasure chests. Right-clicking a book consumes it and unlocks the linked crafting permission. If a knowledge is not unlocked, the related item stays hidden in the built-in crafting table and workbench. Spare Knowledge Books can be crafted back into regular books for XP. Different books unlock recipes such as the Elemental Water Bag, Ancient Metal container upgrades, Ancient Metal Filter Paper, Teleportation Stele, Miner Helmet, Bell, Battery, Coolant, Giant TNT, Custom Enchantment Table, Core Destroyer, Enhanced Eye of Ender, and World Marker. Older teleport-scroll references also exist in the data, but their local recipes are marked removed.",
-    "desc_hu": "A 0.9.0-s verzió Tudáskönyveket ad hozzá, amelyek föld alatti dungeon kincsesládákban jelenhetnek meg. A könyvre jobb gombbal kattintva elhasználódik, és feloldja a hozzá tartozó craftolási engedélyt. Ha egy tudás nincs feloldva, a kapcsolódó item rejtve marad a beépített craftolófelületen és a munkaasztalban. A fölösleges Tudáskönyvek sima könyvvé craftolhatók vissza XP-ért. A különböző könyvek többek között az Elemi Víztasakot, az Ősi Fém konténerfejlesztéseket, az Ősi Fém Szűrőpapírt, a Teleportáló Követ, a Bányászsisakot, a Harangot, az Akkumulátort, a Hűtőfolyadékot, az Óriás TNT-t, az Egyéni Bűvölőasztalt, a Magpusztítót, a Fejlesztett Ender-szemet és a Világjelölőt oldják fel. Régebbi teleport-tekercses hivatkozások a data fájlokban még léteznek, de a helyi receptjeik eltávolítottnak vannak jelölve.",
-    "desc_ru": "Сводная запись для Книг знаний. Они выпадают из сундуков сокровищ в подземных данжах, при ПКМ открывают конкретные права на крафт, а лишние копии можно переработать обратно в книги за XP.",
+    "desc_en": "Version 0.9.0 adds Knowledge Books that can appear in treasure chests found in underground dungeons. Right-clicking a book consumes it and unlocks the linked recipe. If a knowledge is not unlocked, the related item stays hidden in the built-in crafting table and workbench. Spare Knowledge Books can be crafted back into regular books for XP. Different books unlock recipes such as the Elemental Water Bag, Ancient Metal container upgrades, Ancient Metal Filter Paper, Teleportation Stone, Miner Helmet, Bell, Battery, Coolant, Giant TNT, Custom Enchantment Table, Core Destroyer, Enhanced Eye of Ender, and World Marker. Older teleport-scroll references still exist in the data, but their current recipes are marked as removed.",
+    "desc_hu": "A 0.9.0-s verzió Tudáskönyveket ad hozzá, amelyek föld alatti dungeonök kincsesládáiban jelenhetnek meg. A könyvre jobb gombbal kattintva elhasználódik, és feloldja a hozzá tartozó receptet. Ha egy tudás nincs feloldva, a kapcsolódó item rejtve marad a beépített készítőfelületen és a munkaasztalban. A fölösleges Tudáskönyvek sima könyvvé alakíthatók XP-ért. A különböző könyvek többek között az Elemi Víztasakot, az Ősi Fém konténerfejlesztéseket, az Ősi Fém Szűrőpapírt, az Útkövet, a Bányászsisakot, a Harangot, az Akkumulátort, a Hűtőfolyadékot, az Óriás TNT-t, az Egyéni Bűvölőasztalt, a Magpusztítót, a Fejlesztett Ender-szemet és a Világjelölőt oldják fel. Régebbi teleport-tekercses hivatkozások az adatfájlokban még léteznek, de a helyi receptjeik eltávolítottnak vannak jelölve.",
+    "desc_ru": "Сводная запись для Книг знаний. Они выпадают из сундуков сокровищ в подземных данжах, по щелчку ПКМ разблокируют конкретные рецепты, а лишние копии можно переработать обратно в обычные книги за XP.",
     "versions_en": [
-      "v0.9.0: Knowledge Books were added as recipe-unlock items from underground dungeon treasure chests."
+      "v0.9.0: Knowledge Books were added as recipe unlocks from treasure chests in underground dungeons."
     ],
     "versions_hu": [
       "v0.9.0: Bekerültek a Tudáskönyvek mint föld alatti dungeon kincsesládákból megszerezhető receptfeloldó itemek."

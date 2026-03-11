@@ -907,7 +907,7 @@
     "mobType": "undead",
     "armor": 5,
     "description": {
-      "hu": "A Wight (Longdead) erősített változata, vörös szemekkel. Réz páncélkészletet visel és fegyvert hord (íj, ős fém kard vagy ős fém kés). A felszerelés és a fegyverek lehetnek varázsoltak.",
+      "hu": "A Wight (Longdead) erősített változata, vörös szemekkel. Réz páncélkészletet visel és fegyvert hord (íj, ősi fém kard vagy ősi fém kés). A felszerelés és a fegyverek lehetnek varázsoltak.",
       "en": "A reinforced variant of the Longdead (Wight) with red eyes. Wears a copper armor set and carries a weapon (bow, ancient metal sword, or ancient metal knife). Equipment and weapons may be enchanted.",
       "ru": "Усиленный вариант нежити (Вайта) с красными глазами. Носит медный доспех и оружие (лук, меч из древнего металла или нож из древнего металла). Снаряжение и оружие могут быть зачарованы."
     },
@@ -1174,7 +1174,7 @@
     "name": {
       "hu": "Vörös Blaze",
       "en": "Red Blaze",
-      "ru": "Красный бластер"
+      "ru": "Красный бласт"
     },
     "hp": 40,
     "dmgMin": 10,
@@ -2080,7 +2080,7 @@
       "requires_silver"
     ],
     "special": {
-      "hu": "Váltás ős fém íj (távolsági) és ős fém kard (közelharcos) között. Minden fegyvernek van Élesség I / Erő I.",
+      "hu": "Váltás ősi fém íj (távolsági) és ősi fém kard (közelharcos) között. Minden fegyvernek van Élesség I / Erő I.",
       "en": "Switches between ancient metal bow (ranged) and ancient metal sword (melee). All weapons have Sharpness I / Power I.",
       "ru": "Переключение между древним металлическим луком (дальний) и мечом (ближний). Все оружия имеют Остроту I / Мощь I."
     },
@@ -2110,7 +2110,7 @@
     "mobType": "undead",
     "armor": 3,
     "description": {
-      "hu": "Az Underground Worldben megjelenő csontváz változat. Ős fém lánc páncélt visel és ős fém íjat + ős fém nyilakat hord. Egyesek ős fém kardot visznek. Általában nagy csoportokban jelenik meg. Az Underground World Longdead-dungeon-jaiban töltött ládák bőséges ős fém felszerelést tartalmaznak.",
+      "hu": "Az Underground Worldben megjelenő csontváz változat. Ősi Fém lánc páncélt visel és ősi fém íjat + ősi fém nyilakat hord. Egyesek ősi fém kardot visznek. Általában nagy csoportokban jelenik meg. Az Underground World Longdead-dungeon-jaiban töltött ládák bőséges ősi fém felszerelést tartalmaznak.",
       "en": "A skeleton variant spawning in the Underground World. Wears ancient metal chainmail and carries ancient metal bow + arrows. Some carry an ancient metal sword. Generally spawns in large groups. Longdead dungeons in the Underground World contain chests with abundant ancient metal gear.",
       "ru": "Вариант скелета, появляющийся в Подземном мире. Носит кольчугу из древнего металла и лук + стрелы из древнего металла. Некоторые несут меч из древнего металла. Обычно появляется большими группами. Подземные данжи нежити содержат сундуки с обилием снаряжения из древнего металла."
     },
@@ -2710,7 +2710,7 @@
     "mobType": "undead",
     "armor": 4,
     "description": {
-      "hu": "Ős fém páncélban és fegyverrel járó, erősebb Csontváz Úr változat. Az Underground Worldben jelenik meg. Halálkor a páncélja tovább harcol 10 mp-ig.",
+      "hu": "Ősi Fém páncélban és fegyverrel járó, erősebb Csontváz Úr változat. Az Underground Worldben jelenik meg. Halálkor a páncélja tovább harcol 10 mp-ig.",
       "en": "A stronger Skeleton Lord variant in ancient metal armor and weapons. Spawns in the Underground World. On death, the armor continues fighting for 10 seconds.",
       "ru": "Более сильный вариант Скелета-лорда в броне и оружии из древнего металла. Появляется в Подземном мире. При смерти броня продолжает сражаться 10 секунд."
     },
@@ -4706,7 +4706,7 @@
     "drops": [
       {
         "item": {
-          "hu": "Láng rúd",
+          "hu": "Blaze Pálca",
           "en": "Blaze Rod",
           "ru": "Стержень бластера"
         },
@@ -4719,9 +4719,9 @@
     "mobType": "nether",
     "armor": 0,
     "description": {
-      "hu": "Lebegő netheri tűzszörny, amely tüzes lövedékeket lő sorozatban. Tűzgolyókat ejt, amelyek tűzbonyolítókhoz szükségesek. Vízzel, hógolyóval és varázslott fegyverrel sebzíhető.",
+      "hu": "Lebegő alvilági tűzszörny, amely sorozatban lő tüzes lövedékeket. Blaze Pálcát ejt, amely bájitalkészítéshez kell. Vízzel, hógolyóval és varázsolt fegyverrel sebezhető.",
       "en": "A floating Nether fire monster that shoots fire charges in bursts. Drops blaze rods needed for brewing. Vulnerable to water, snowballs, and enchanted weapons.",
-      "ru": "Парящий огненный монстр Незера, стреляющий сериями огненных зарядов. Выпадают стержни бластера, необходимые для варения зелий. Уязвим к воде, снежкам и зачарованному оружию."
+      "ru": "Парящий огненный монстр Незера, стреляющий сериями огненных зарядов. Выпадают стержни бластера, необходимые для варки зелий. Уязвим к воде, снежкам и зачарованному оружию."
     },
     "spawnInfo": {
       "hu": "Nether Erőd.",
@@ -4919,7 +4919,7 @@
     "mobType": "monster",
     "armor": 0,
     "description": {
-      "hu": "Apró, gyors bogárszerű szörny. Kőzet blokkokban rejtőzik és más halacskákat hívhat segítségül. MITE-ben több veszélyes változata létezik (robbanó, réz mérgező, ős fém).",
+      "hu": "Apró, gyors bogárszerű szörny. Kőzet blokkokban rejtőzik és más halacskákat hívhat segítségül. MITE-ben több veszélyes változata létezik (robbanó, réz mérgező, ősi fém).",
       "en": "A tiny, fast insect-like monster. Hides in stone blocks and can call other silverfish for help. In MITE, several dangerous variants exist (explosive, copper poison, ancient).",
       "ru": "Крохотный быстрый насекомоподобный монстр. Прячется в каменных блоках и может звать других чешуйниц на помощь. В MITE существует несколько опасных вариантов (взрывной, медный ядовитый, древний)."
     },

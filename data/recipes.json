@@ -869,7 +869,7 @@
       ]
     ],
     "label": {
-      "hu": "Réz harci kalapács",
+      "hu": "Réz Háborús Kalapács",
       "en": "Copper War Hammer"
     },
     "tags": [
@@ -1090,7 +1090,7 @@
       ]
     ],
     "label": {
-      "hu": "Vas harci kalapács",
+      "hu": "Vas Háborús Kalapács",
       "en": "Iron War Hammer"
     },
     "tags": [
@@ -1127,7 +1127,7 @@
       ]
     ],
     "label": {
-      "hu": "Vizestasak",
+      "hu": "Víztasak",
       "en": "Water Bag"
     },
     "tags": [
@@ -1171,7 +1171,7 @@
       ]
     ],
     "label": {
-      "hu": "Nagy Vizestasak",
+      "hu": "Nagy Víztasak",
       "en": "Big Water Bag"
     },
     "tags": [
@@ -1810,7 +1810,7 @@
       ]
     ],
     "label": {
-      "hu": "Keménykő harci kalapács",
+      "hu": "Keménykő Háborús Kalapács",
       "en": "Hardstone War Hammer"
     },
     "tags": [
@@ -2062,7 +2062,7 @@
       ]
     ],
     "label": {
-      "hu": "Mithril harci kalapács",
+      "hu": "Mithril Háborús Kalapács",
       "en": "Mithril War Hammer"
     },
     "tags": [
@@ -2210,7 +2210,7 @@
       ]
     ],
     "label": {
-      "hu": "Adamantium harci kalapács",
+      "hu": "Adamantium Háborús Kalapács",
       "en": "Adamantium War Hammer"
     },
     "tags": [

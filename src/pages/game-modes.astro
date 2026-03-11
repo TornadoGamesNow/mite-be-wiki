@@ -91,7 +91,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr><td>5</td><td>Nem Tud Zöldséget Enni</td><td>Növényi alapú ételek nem fogyaszthatók</td></tr>
   <tr><td>6</td><td>Nem Tud Levest Inni</td><td>Levesek és raguk nem fogyaszthatók</td></tr>
   <tr><td>7</td><td>Enderek Ellensége</td><td>Minden Enderman provokálatlanul támad</td></tr>
-  <tr><td>8</td><td>Csökkent Intelligencia</td><td>−20 effektív szintpenalty (~25% craftolási minőségpenalty)</td></tr>
+  <tr><td>8</td><td>Csökkent Intelligencia</td><td>−20 effektív szintbüntetés (~25% készítési minőségbüntetés)</td></tr>
   <tr><td>9</td><td>Növény Fóbia</td><td>60% sebességcsökkentés növény blokkokon; 80% indákon</td></tr>
   <tr><td>10</td><td>Páncél Elutasítása</td><td>Nem viselhet páncélt; felszerelt tárgyak kiesnek</td></tr>
   <tr><td>11</td><td>Láda Fóbia</td><td>Nem nyithat ládákat</td></tr>
@@ -139,7 +139,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Föld / Fű</strong></td><td>Föld, Füves Blokk, Podzol</td><td><strong>4</strong></td><td>64</td></tr>
   <tr style="background:rgba(255,150,100,0.10)"><td><strong>Ércek</strong></td><td>Vas, Réz, Arany, Gyémánt, Mithril stb.</td><td><strong>5</strong></td><td>64</td></tr>
   <tr><td>Homok / Homokkő</td><td>Homok, Sötét Homok, Homokkő fajták</td><td>8</td><td>64</td></tr>
-  <tr><td>Kavics</td><td>Kavics, Pokol Kavics</td><td>8</td><td>64</td></tr>
+  <tr><td>Kavics</td><td>Kavics, Alvilági Kavics</td><td>8</td><td>64</td></tr>
   <tr><td>Üveg</td><td>Üveg blokk, Üveg Panel</td><td>4 / 16</td><td>64</td></tr>
   <tr><td>Gyapjú</td><td>Minden gyapjú szín</td><td>8</td><td>64</td></tr>
   <tr><td>Jég / Hó</td><td>Jég, Hó blokk</td><td>4</td><td>64</td></tr>
@@ -434,7 +434,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
 <div class="tip-card">🌱 <strong>Manure:</strong> Applied to farmland, it increases crop yields. If you haven't defecated in 3+ days (and meter is 50+), the duration doubles.</div>
 
 <h3 id="world-marker-en">World Marker &amp; Partner NPCs</h3>
-<p>Based on the local item data, the <strong>World Marker</strong> is used to set the world's respawn point. The current data set also contains a separate <strong>Respawn Anchor</strong> item, so I am not treating them as the same block here. <strong>Respawn-related systems do not help in Hardcore mode.</strong></p>
+<p>Based on the current item data, the <strong>World Marker</strong> is used to set the world's respawn point. The current data set also contains a separate <strong>Respawn Anchor</strong> item, so I am not treating them as the same block here. <strong>Respawn-related systems do not help in Hardcore mode.</strong></p>
 <table class="compare-table">
   <tr><th>Partner Type</th><th>Internal ID</th><th>Description</th></tr>
   <tr><td><strong>Warrior Villager</strong></td><td>partner_sparta</td><td>A combat-capable NPC ally</td></tr>

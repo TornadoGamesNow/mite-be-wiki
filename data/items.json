@@ -4017,8 +4017,8 @@
   },
   "core_breaker": {
     "name": {
-      "hu": "Kemencemag Törő",
-      "en": "Core Breaker",
+      "hu": "Magpusztító",
+      "en": "Core Destroyer",
       "ru": "Разрушитель ядра"
     },
     "img": "img/items/core_breaker.png",
@@ -4027,8 +4027,8 @@
   },
   "core_breaker_knowledge_book": {
     "name": {
-      "hu": "Kemencemag Törő Tudáskönyv",
-      "en": "Core Breaker Knowledge Book",
+      "hu": "Magpusztító Tudáskönyv",
+      "en": "Core Destroyer Knowledge Book",
       "ru": "Книга знаний: разрушитель ядра"
     },
     "img": "img/items/core_breaker_knowledge_book.png",
@@ -4277,8 +4277,8 @@
   },
   "elemental_water_skin_knowledge_book": {
     "name": {
-      "hu": "Elemi Víztömlő Tudáskönyv",
-      "en": "Elemental Water Skin Knowledge Book",
+      "hu": "Elemi Víztasak Tudáskönyv",
+      "en": "Elemental Water Bag Knowledge Book",
       "ru": "Книга знаний: элементальный бурдюк с водой"
     },
     "img": "img/items/elemental_water_skin_knowledge_book.png",
@@ -6483,7 +6483,7 @@
   },
   "nether_brick": {
     "name": {
-      "hu": "Pokoltégla",
+      "hu": "Alvilágtégla",
       "en": "Nether Brick",
       "ru": "Адский кирпич"
     },
@@ -6493,7 +6493,7 @@
   },
   "nether_brick_fence": {
     "name": {
-      "hu": "Nether Tégla Kerítés",
+      "hu": "Alvilágtégla Kerítés",
       "en": "Nether Brick Fence",
       "ru": "Забор из адского кирпича"
     },
@@ -6503,7 +6503,7 @@
   },
   "nether_brick_slab_single": {
     "name": {
-      "hu": "Nether Tégla Félblokk",
+      "hu": "Alvilágtégla Félblokk",
       "en": "Nether Brick Slab",
       "ru": "Плита из адского кирпича"
     },
@@ -6513,7 +6513,7 @@
   },
   "nether_brick_stairs": {
     "name": {
-      "hu": "Nether Tégla Lépcső",
+      "hu": "Alvilágtégla Lépcső",
       "en": "Nether Brick Stairs",
       "ru": "Ступеньки из адского кирпича"
     },
@@ -6534,7 +6534,7 @@
   },
   "nether_quartz": {
     "name": {
-      "hu": "Nether Kvarc",
+      "hu": "Netherkvarc",
       "en": "Nether Quartz",
       "ru": "Кварц Нижнего мира"
     },
@@ -8425,7 +8425,7 @@
   },
   "waystone": {
     "name": {
-      "hu": "Útjelzőkő",
+      "hu": "Útkő",
       "en": "Waystone",
       "ru": "Путевой камень"
     },
@@ -8435,8 +8435,8 @@
   },
   "waystone_knowledge_book": {
     "name": {
-      "hu": "Útjelzőkő Tudáskönyv",
-      "en": "Waystone Knowledge Book",
+      "hu": "Teleportáló Kő Tudáskönyv",
+      "en": "Teleportation Stone Knowledge Book",
       "ru": "Книга знаний: путевой камень"
     },
     "img": "img/items/waystone_knowledge_book.png",
@@ -10946,7 +10946,7 @@
   },
   "bamboo_helmet": {
     "name": {
-      "hu": "Bamboo Sisak",
+      "hu": "Bambusz Sisak",
       "en": "Bamboo Helmet",
       "ru": "Бамбуковый шлем"
     },
@@ -10969,7 +10969,7 @@
   },
   "nether_quartz_shard": {
     "name": {
-      "hu": "Nether Kvarc Szilánk",
+      "hu": "Netherkvarc Szilánk",
       "en": "Nether Quartz Shard",
       "ru": "Осколок незеритового кварца"
     },
@@ -11530,7 +11530,7 @@
   },
   "mithril_filter_paper": {
     "name": {
-      "hu": "Mitril Szűrőpapír",
+      "hu": "Mithril Szűrőpapír",
       "en": "Mithril Filter Paper",
       "ru": "Митриловая фильтровальная бумага"
     },
@@ -11582,7 +11582,7 @@
   },
   "adamantium_knife": {
     "name": {
-      "hu": "Ádámantium Kés",
+      "hu": "Adamantium Kés",
       "en": "Adamantium Knife",
       "ru": "Адамантиевый нож"
     },
@@ -11592,7 +11592,7 @@
   },
   "ancient_metal_knife": {
     "name": {
-      "hu": "Ősfémet Kés",
+      "hu": "Ősi Fém Kés",
       "en": "Ancient Metal Knife",
       "ru": "Нож из древнего металла"
     },
@@ -11663,7 +11663,7 @@
   },
   "ancient_metal_bars": {
     "name": {
-      "hu": "Ősfém Rács",
+      "hu": "Ősi Fém Rács",
       "en": "Ancient Metal Bars",
       "ru": "Древнеметаллические прутья"
     },
@@ -11733,7 +11733,7 @@
   },
   "ancient_metal_strongbox": {
     "name": {
-      "hu": "Ősfém Páncélszekrény",
+      "hu": "Ősi Fém Páncélszekrény",
       "en": "Ancient Metal Strongbox",
       "ru": "Древнеметаллический сейф"
     },

@@ -42,15 +42,15 @@ const items = itemsData as unknown as Record<string, ItemEntry>;
 const BASE = (import.meta as any).env?.BASE_URL?.replace(/\/$/, '') ?? '';
 
 const STATION_LABELS: Record<string, { hu: string; en: string; ru: string }> = {
-  flint_workbench:         { hu: 'Kovakő asztal',         en: 'Flint Workbench',         ru: 'Кремнёвый верстак' },
-  copper_workbench:        { hu: 'Réz asztal',             en: 'Copper Workbench',        ru: 'Медный верстак' },
-  silver_workbench:        { hu: 'Ezüst asztal',           en: 'Silver Workbench',        ru: 'Серебряный верстак' },
-  gold_workbench:          { hu: 'Arany asztal',           en: 'Gold Workbench',          ru: 'Золотой верстак' },
-  iron_workbench:          { hu: 'Vas asztal',             en: 'Iron Workbench',          ru: 'Железный верстак' },
-  hardstone_workbench:     { hu: 'Kőmag asztal',           en: 'Hardstone Workbench',     ru: 'Твердокаменный верстак' },
-  ancient_metal_workbench: { hu: 'Ős fém asztal',          en: 'Ancient Metal Workbench', ru: 'Верстак древнего металла' },
-  mithril_workbench:       { hu: 'Mithril asztal',         en: 'Mithril Workbench',       ru: 'Мифриловый верстак' },
-  adamantium_workbench:    { hu: 'Adamantium asztal',      en: 'Adamantium Workbench',    ru: 'Адамантиевый верстак' },
+  flint_workbench:         { hu: 'Kova Munkaasztal',       en: 'Flint Workbench',         ru: 'Кремнёвый верстак' },
+  copper_workbench:        { hu: 'Réz Munkaasztal',        en: 'Copper Workbench',        ru: 'Медный верстак' },
+  silver_workbench:        { hu: 'Ezüst Munkaasztal',      en: 'Silver Workbench',        ru: 'Серебряный верстак' },
+  gold_workbench:          { hu: 'Arany Munkaasztal',      en: 'Gold Workbench',          ru: 'Золотой верстак' },
+  iron_workbench:          { hu: 'Vas Munkaasztal',        en: 'Iron Workbench',          ru: 'Железный верстак' },
+  hardstone_workbench:     { hu: 'Keménykő Munkaasztal',   en: 'Hardstone Workbench',     ru: 'Твердокаменный верстак' },
+  ancient_metal_workbench: { hu: 'Ősi Fém Munkaasztal',    en: 'Ancient Metal Workbench', ru: 'Верстак древнего металла' },
+  mithril_workbench:       { hu: 'Mithril Munkaasztal',    en: 'Mithril Workbench',       ru: 'Мифриловый верстак' },
+  adamantium_workbench:    { hu: 'Adamantium Munkaasztal', en: 'Adamantium Workbench',    ru: 'Адамантиевый верстак' },
   blast_furnace:           { hu: 'Nagy kemence',           en: 'Blast Furnace',           ru: 'Доменная печь' },
   stone_furnace:           { hu: 'Kő kemence',             en: 'Stone Furnace',           ru: 'Каменная печь' },
   clay_furnace:            { hu: 'Agyag kemence',          en: 'Clay Furnace',            ru: 'Глиняная печь' },
@@ -450,10 +450,10 @@ export default function CraftingTree() {
 
   const placeholder =
     lang === 'hu'
-      ? 'Keress craftolható itemet…'
+      ? 'Keress elkészíthető itemet…'
       : lang === 'ru'
       ? 'Поиск крафтируемого предмета…'
-      : 'Search craftable item…';
+      : 'Search for a craftable item…';
 
   const multiRecipeCount = selectedId ? (recipesByOutput[selectedId]?.length ?? 0) : 0;
 
