@@ -1,4 +1,14 @@
 {
+  "cactus": {
+    "name": {
+      "hu": "Kaktusz",
+      "en": "Cactus",
+      "ru": "Кактус"
+    },
+    "img": "img/blocks/cactus.png",
+    "tier": null,
+    "category": "block"
+  },
   "plant_fiber": {
     "name": {
       "hu": "Növényszál",
@@ -326,7 +336,7 @@
   },
   "netherrack": {
     "name": {
-      "hu": "Pokolfenyő",
+      "hu": "Alvilágkő",
       "en": "Netherrack",
       "ru": "Адский камень"
     },
@@ -1385,7 +1395,7 @@
   },
   "water_bag": {
     "name": {
-      "hu": "Vizestasak",
+      "hu": "Víztasak",
       "en": "Water Bag",
       "ru": "Мешок для воды"
     },
@@ -1396,7 +1406,7 @@
   },
   "big_water_bag": {
     "name": {
-      "hu": "Nagy Vizestasak",
+      "hu": "Nagy Víztasak",
       "en": "Big Water Bag",
       "ru": "Большой мешок для воды"
     },
@@ -1448,23 +1458,23 @@
   },
   "enchanting_table_emerald": {
     "name": {
-      "hu": "Bűvölőasztal (Smaragd)",
-      "en": "Enchanting Table (Emerald)",
-      "ru": "Стол зачарования (изумруд)"
+      "hu": "Smaragd Bűvölőasztal",
+      "en": "Emerald Enchantment Table",
+      "ru": "Изумрудный стол зачарования"
     },
     "img": "img/items/enchantment_table_emerald.png",
     "tier": null,
-    "category": "station"
+    "category": "block"
   },
   "enchanting_table_diamond": {
     "name": {
-      "hu": "Bűvölőasztal (Gyémánt)",
-      "en": "Enchanting Table (Diamond)",
-      "ru": "Стол зачарования (алмаз)"
+      "hu": "Gyémánt Bűvölőasztal",
+      "en": "Diamond Enchantment Table",
+      "ru": "Алмазный стол зачарования"
     },
     "img": "img/items/enchantment_table.png",
     "tier": null,
-    "category": "station"
+    "category": "block"
   },
   "mining_helmet": {
     "name": {
@@ -2652,7 +2662,7 @@
   },
   "ancient_metal_barrel_upgrade": {
     "name": {
-      "hu": "Ősi Fém Hordó Fejlesztés",
+      "hu": "Ősi Fém Hordófejlesztés",
       "en": "Ancient Metal Barrel Upgrade",
       "ru": "Улучшение бочки из древнего металла"
     },
@@ -2763,7 +2773,7 @@
   },
   "ancient_metal_chest_upgrade": {
     "name": {
-      "hu": "Ősi Fém Láda Fejlesztés",
+      "hu": "Ősi Fém Ládafejlesztés",
       "en": "Ancient Metal Chest Upgrade",
       "ru": "Улучшение сундука из древнего металла"
     },
@@ -9574,7 +9584,7 @@
   },
   "copper_chest_upgrade": {
     "name": {
-      "hu": "Réz Láda Fejlesztés",
+      "hu": "Réz Ládafejlesztés",
       "en": "Copper Chest Upgrade",
       "ru": "Улучшение сундука (медь)"
     },
@@ -9585,7 +9595,7 @@
   },
   "silver_chest_upgrade": {
     "name": {
-      "hu": "Ezüst Láda Fejlesztés",
+      "hu": "Ezüst Ládafejlesztés",
       "en": "Silver Chest Upgrade",
       "ru": "Улучшение сундука (серебро)"
     },
@@ -9596,8 +9606,8 @@
   },
   "hard_chest_upgrade": {
     "name": {
-      "hu": "Kemény Láda Fejlesztés",
-      "en": "Hard Chest Upgrade",
+      "hu": "Kőmag Ládafejlesztés",
+      "en": "Hardstone Chest Upgrade",
       "ru": "Улучшение сундука (твердокаменный)"
     },
     "img": "img/items/hard_chest_upgrade.png",
@@ -9607,7 +9617,7 @@
   },
   "iron_chest_upgrade": {
     "name": {
-      "hu": "Vas Láda Fejlesztés",
+      "hu": "Vas Ládafejlesztés",
       "en": "Iron Chest Upgrade",
       "ru": "Улучшение сундука (железо)"
     },
@@ -9618,7 +9628,7 @@
   },
   "gold_chest_upgrade": {
     "name": {
-      "hu": "Arany Láda Fejlesztés",
+      "hu": "Arany Ládafejlesztés",
       "en": "Gold Chest Upgrade",
       "ru": "Улучшение сундука (золото)"
     },
@@ -9629,7 +9639,7 @@
   },
   "mithril_chest_upgrade": {
     "name": {
-      "hu": "Mithril Láda Fejlesztés",
+      "hu": "Mithril Ládafejlesztés",
       "en": "Mithril Chest Upgrade",
       "ru": "Улучшение сундука (мифрил)"
     },
@@ -9640,7 +9650,7 @@
   },
   "adamantium_chest_upgrade": {
     "name": {
-      "hu": "Adamantium Láda Fejlesztés",
+      "hu": "Adamantium Ládafejlesztés",
       "en": "Adamantium Chest Upgrade",
       "ru": "Улучшение сундука (адамантий)"
     },
@@ -9651,8 +9661,8 @@
   },
   "barrel_copper_upgrade": {
     "name": {
-      "hu": "Hordó Réz Fejlesztés",
-      "en": "Barrel Copper Upgrade",
+      "hu": "Réz Hordófejlesztés",
+      "en": "Copper Barrel Upgrade",
       "ru": "Улучшение бочки (медь)"
     },
     "img": "img/items/barrel_copper_upgrade.png",
@@ -9662,8 +9672,8 @@
   },
   "barrel_silver_upgrade": {
     "name": {
-      "hu": "Hordó Ezüst Fejlesztés",
-      "en": "Barrel Silver Upgrade",
+      "hu": "Ezüst Hordófejlesztés",
+      "en": "Silver Barrel Upgrade",
       "ru": "Улучшение бочки (серебро)"
     },
     "img": "img/items/barrel_silver_upgrade.png",
@@ -9673,8 +9683,8 @@
   },
   "barrel_iron_upgrade": {
     "name": {
-      "hu": "Hordó Vas Fejlesztés",
-      "en": "Barrel Iron Upgrade",
+      "hu": "Vas Hordófejlesztés",
+      "en": "Iron Barrel Upgrade",
       "ru": "Улучшение бочки (железо)"
     },
     "img": "img/items/barrel_iron_upgrade.png",
@@ -9684,8 +9694,8 @@
   },
   "barrel_gold_upgrade": {
     "name": {
-      "hu": "Hordó Arany Fejlesztés",
-      "en": "Barrel Gold Upgrade",
+      "hu": "Arany Hordófejlesztés",
+      "en": "Gold Barrel Upgrade",
       "ru": "Улучшение бочки (золото)"
     },
     "img": "img/items/barrel_gold_upgrade.png",
@@ -9695,8 +9705,8 @@
   },
   "barrel_mithril_upgrade": {
     "name": {
-      "hu": "Hordó Mithril Fejlesztés",
-      "en": "Barrel Mithril Upgrade",
+      "hu": "Mithril Hordófejlesztés",
+      "en": "Mithril Barrel Upgrade",
       "ru": "Улучшение бочки (мифрил)"
     },
     "img": "img/items/barrel_mithril_upgrade.png",
@@ -9706,8 +9716,8 @@
   },
   "barrel_adamantium_upgrade": {
     "name": {
-      "hu": "Hordó Adamantium Fejlesztés",
-      "en": "Barrel Adamantium Upgrade",
+      "hu": "Adamantium Hordófejlesztés",
+      "en": "Adamantium Barrel Upgrade",
       "ru": "Улучшение бочки (адамантий)"
     },
     "img": "img/items/barrel_adamantium_upgrade.png",
@@ -9717,8 +9727,8 @@
   },
   "barrel_hard_upgrade": {
     "name": {
-      "hu": "Hordó Kemény Fejlesztés",
-      "en": "Barrel Hard Upgrade",
+      "hu": "Kőmag Hordófejlesztés",
+      "en": "Hardstone Barrel Upgrade",
       "ru": "Улучшение бочки (твердокаменный)"
     },
     "img": "img/items/barrel_hard_upgrade.png",
@@ -9728,8 +9738,8 @@
   },
   "log_pitaya": {
     "name": {
-      "hu": "Pitahaya Törzsfa",
-      "en": "Log Pitaya",
+      "hu": "Pitahaya Fatörzs",
+      "en": "Pitaya Log",
       "ru": "Бревно питайи"
     },
     "img": "img/items/log_pitaya.png",
@@ -9739,7 +9749,7 @@
   "log_banana": {
     "name": {
       "hu": "Banánfa Törzs",
-      "en": "Log Banana",
+      "en": "Banana Log",
       "ru": "Бревно банана"
     },
     "img": "img/items/log_banana.png",
@@ -9749,7 +9759,7 @@
   "log_coconut": {
     "name": {
       "hu": "Kókuszpálma Törzs",
-      "en": "Log Coconut",
+      "en": "Coconut Log",
       "ru": "Бревно кокоса"
     },
     "img": "img/items/log_coconut.png",
@@ -11119,8 +11129,8 @@
   },
   "barrel_ancient_metal_upgrade": {
     "name": {
-      "hu": "Hordó Ősfémes Fejlesztés",
-      "en": "Barrel Ancient Metal Upgrade",
+      "hu": "Ősi Fém Hordófejlesztés",
+      "en": "Ancient Metal Barrel Upgrade",
       "ru": "Улучшение бочки из древнего металла"
     },
     "img": "img/items/barrel_ancient_metal_upgrade.png",
@@ -11160,7 +11170,7 @@
   "towerrack": {
     "name": {
       "hu": "Kőoszlop",
-      "en": "Tower Rack 1/2",
+      "en": "Stone Pillar 1/2",
       "ru": "Стойка башни"
     },
     "img": "img/items/towerrack.png",
@@ -11169,7 +11179,7 @@
   },
   "bucket_stone": {
     "name": {
-      "hu": "Kővel Teli Vödör",
+      "hu": "Kővel Töltött Vödör",
       "en": "Bucket of Stone",
       "ru": "Ведро камня"
     },
@@ -11189,7 +11199,7 @@
   },
   "fluid_tank": {
     "name": {
-      "hu": "Víztartály",
+      "hu": "Folyadéktartály",
       "en": "Fluid Tank",
       "ru": "Бак для жидкости"
     },
@@ -11240,7 +11250,7 @@
   "conveying_stone": {
     "name": {
       "hu": "Teleportáló Kő",
-      "en": "Conveying Stone",
+      "en": "Teleportation Stone",
       "ru": "Камень перемещения"
     },
     "img": "img/items/conveying_stone.png",
@@ -11290,7 +11300,7 @@
   },
   "water_bag_copper": {
     "name": {
-      "hu": "Réz Vizestasak",
+      "hu": "Réz Víztasak",
       "en": "Copper Water Bag",
       "ru": "Медный мешок для воды"
     },
@@ -11302,7 +11312,7 @@
   },
   "water_bag_silver": {
     "name": {
-      "hu": "Ezüst Vizestasak",
+      "hu": "Ezüst Víztasak",
       "en": "Silver Water Bag",
       "ru": "Серебряный мешок для воды"
     },
@@ -11314,7 +11324,7 @@
   },
   "water_bag_gold": {
     "name": {
-      "hu": "Arany Vizestasak",
+      "hu": "Arany Víztasak",
       "en": "Gold Water Bag",
       "ru": "Золотой мешок для воды"
     },
@@ -11326,7 +11336,7 @@
   },
   "water_bag_iron": {
     "name": {
-      "hu": "Vas Vizestasak",
+      "hu": "Vas Víztasak",
       "en": "Iron Water Bag",
       "ru": "Железный мешок для воды"
     },
@@ -11338,7 +11348,7 @@
   },
   "water_bag_hard": {
     "name": {
-      "hu": "Keménykő Vizestasak",
+      "hu": "Kőmag Víztasak",
       "en": "Hardstone Water Bag",
       "ru": "Твердокаменный мешок для воды"
     },
@@ -11350,7 +11360,7 @@
   },
   "water_bag_ancient_metal": {
     "name": {
-      "hu": "Ős Fém Vizestasak",
+      "hu": "Ősi Fém Víztasak",
       "en": "Ancient Metal Water Bag",
       "ru": "Мешок для воды из древнего металла"
     },
@@ -11362,7 +11372,7 @@
   },
   "water_bag_mithril": {
     "name": {
-      "hu": "Mithril Vizestasak",
+      "hu": "Mithril Víztasak",
       "en": "Mithril Water Bag",
       "ru": "Мифриловый мешок для воды"
     },
@@ -11374,7 +11384,7 @@
   },
   "water_bag_adamantium": {
     "name": {
-      "hu": "Adamantium Vizestasak",
+      "hu": "Adamantium Víztasak",
       "en": "Adamantium Water Bag",
       "ru": "Адамантиевый мешок для воды"
     },
@@ -11509,8 +11519,8 @@
   },
   "hardstone_filter_paper": {
     "name": {
-      "hu": "Kemény Kő Szűrőpapír",
-      "en": "Hard Stone Filter Paper",
+      "hu": "Keménykő Szűrőpapír",
+      "en": "Hardstone Filter Paper",
       "ru": "Твёрдокаменная фильтровальная бумага"
     },
     "img": "img/items/advanced_filter_paper.png",
