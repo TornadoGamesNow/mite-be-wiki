@@ -34159,7 +34159,7 @@
     "output": "runestore",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 1000,
+    "difficulty": 2000,
     "skills": [],
     "ingredients": [
       "mithril_nugget",
@@ -34194,7 +34194,7 @@
     "output": "runestore",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 1600,
+    "difficulty": 6400,
     "skills": [],
     "ingredients": [
       "adamantium_nugget",
@@ -37496,7 +37496,7 @@
     "output": "runestore",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 1200,
+    "difficulty": 3124.44,
     "skills": [],
     "ingredients": [
       "mithril_nugget",
@@ -40767,7 +40767,7 @@
     "output": "runestore",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 2000,
+    "difficulty": 11657.78,
     "skills": [],
     "ingredients": [
       "adamantium_nugget",
