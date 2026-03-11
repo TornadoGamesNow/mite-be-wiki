@@ -9524,7 +9524,7 @@
   },
   "enchantment_table": {
     "name": {
-      "hu": "Bűvölőasztal (Gyémánt)",
+      "hu": "Gyémánt Bűvölőasztal",
       "en": "Diamond Enchantment Table",
       "ru": "Алмазный стол зачарования"
     },
@@ -9778,8 +9778,8 @@
   },
   "gravel_nether": {
     "name": {
-      "hu": "Pokolfenyő Kavics",
-      "en": "Gravel Nether",
+      "hu": "Netheri Kavics",
+      "en": "Nether Gravel",
       "ru": "Адский гравий"
     },
     "img": "img/items/gravel_nether.png",

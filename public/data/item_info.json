@@ -5604,7 +5604,7 @@
       "v0.5.5: Torch guns were removed; bows took over torch-firing."
     ],
     "versions_hu": [
-      "v0.5.5: A torch gun kikerült; innentől az íjak lőnek ki fáklyát."
+      "v0.5.5: A Fáklya Puska kikerült; innentől az íjak lőnek ki fáklyát."
     ],
     "versions_ru": [
       "v0.5.5: Факельные ружья удалили; после этого факелы начали выпускаться из луков."
@@ -5710,7 +5710,7 @@
     "desc": "Bucket of liquefied mercury. Obtained by right-clicking a cauldron filled with liquefied mercury (place mercury ore in a cauldron above lava in v0.8.0+). Right-clicking the cauldron again pours the buckets back in. Cannot be placed as a solid block (Ctrl+place causes it to vanish immediately). If placed, it disappears quickly; players in contact take 1 damage/second and torches are extinguished. Has no effect on water or lava. Right-clicking a double-mouthed crucible with it imbues elemental power (particle effect), lasting 7 in-game days — obsidian produced by an empowered crucible becomes Elemental Obsidian. Coolant effects also apply to empowered crucibles.",
     "versions": [
       "v0.8.0: Place mercury ore in a cauldron above lava to produce liquefied mercury.",
-      "v0.9.0: Place 1 Leather Backpack + 4 Ancient Metal Ingots into a cauldron of liquefied mercury (right-click while holding each item); after 30 seconds all items are consumed and an Ancient Metal Backpack Upgrade is produced. Lava heat source must remain under the cauldron during conversion."
+      "v0.9.0: Place 1 Big Backpack Upgrade + 4 Ancient Metal Ingots into a cauldron of liquefied mercury (right-click while holding each item); after 30 seconds all items are consumed and an Ancient Metal Backpack Upgrade is produced. Lava heat source must remain under the cauldron during conversion."
     ],
     "desc_en": "Bucket of liquefied mercury. Obtained by right-clicking a cauldron filled with liquefied mercury (place mercury ore in a cauldron above lava in v0.8.0+). Right-clicking the cauldron again pours the buckets back in. Cannot be placed as a solid block (Ctrl+place causes it to vanish immediately). If placed, it disappears quickly; players in contact take 1 damage/second and torches are extinguished. Has no effect on water or lava. Right-clicking a double-mouthed crucible with it imbues elemental power (particle effect), lasting 7 in-game days — obsidian produced by an empowered crucible becomes Elemental Obsidian. Coolant effects also apply to empowered crucibles.",
     "desc_hu": "Folyékony higannyal töltött vödör. Folyékony higannyal teli üstből szerezhető be (jobb klikk vödörrel az üstre). Higanyércet tegyél láva fölé helyezett üstbe a folyadék előállításához. Az üstre jobb klikkelve a vödröket vissza is öntheted. Nem helyezhető le szilárd blokkként (Ctrl+lerakás hatástalan, azonnal eltűnik). Ha mégis lerakod, gyorsan eltűnik; az érintkező játékos 1 sebzést kap másodpercenként, és kioltja a fáklyákat. Vízre és lávára nincs hatással. A kétcsőrű tégely jobb klikkelésével elemi erővel tölthető fel (részecske-effekttel jelezve), ami 7 játéknapig tart — az erősített tégely által termelt obszidián Elemental Obsidianná változik. A hűtőanyag-hatások az erősített tégelyre is érvényesek.",
@@ -5721,7 +5721,7 @@
     ],
     "versions_hu": [
       "v0.8.0: Higanyércet tegyél láva fölé helyezett üstbe a folyékony higany előállításához.",
-      "v0.9.0: Tegyél 1 Bőr Hátizsákot és 4 Ősifém Rudat folyékony higannyal teli üstbe (jobb klikk az üstre az adott tárggyal a kézben); 30 másodperc után az összes tárgy elhasználódik és létrejön az Ősifém Hátizsák Fejlesztő. Az átalakítás alatt lávaforrásnak kell lennie az üst alatt."
+      "v0.9.0: Tegyél 1 Nagy Hátizsák Fejlesztést és 4 Ősi Fém Rudat folyékony higannyal teli üstbe (jobb klikk az üstre az adott tárggyal a kézben); 30 másodperc után az összes tárgy elhasználódik és létrejön az Ősi Fém Hátizsák Fejlesztés. Az átalakítás alatt lávaforrásnak kell lennie az üst alatt."
     ],
     "versions_ru": [
       "v0.8.0: Положи ртутную руду в котёл над лавой для получения жидкой ртути.",
