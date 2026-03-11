@@ -30922,40 +30922,6 @@
     "removed_version": "pre-0.5.5"
   },
   {
-    "id": "tin_ingot_32008",
-    "item_num": 32008,
-    "output": "tin_ingot",
-    "outputQty": 1,
-    "station": "stone_furnace",
-    "difficulty": 0,
-    "skills": [
-      "smelting"
-    ],
-    "ingredients": [
-      "ore_tin",
-      "coal"
-    ],
-    "shaped": true,
-    "removed_version": "0.6.0",
-    "pattern": [
-      [
-        "_",
-        "ore_tin",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
-  },
-  {
     "id": "wood_cudgel_32009",
     "item_num": 32009,
     "output": "wood_cudgel",
@@ -33939,8 +33905,10 @@
     "output": "worm_cooked",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 25,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "worm_raw",
       "coal"
@@ -33953,8 +33921,10 @@
     "output": "duck_cooked",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 25,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "duck_meat",
       "coal"
@@ -33967,8 +33937,10 @@
     "output": "duck_head_cooked",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 25,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "duck_head",
       "coal"
@@ -34121,8 +34093,10 @@
     "output": "cooked_beef",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 25,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "beef",
       "coal"
@@ -34134,8 +34108,10 @@
     "output": "cooked_mutton",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 25,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "mutton_raw",
       "coal"
@@ -34148,8 +34124,10 @@
     "output": "cooked_squid_meat",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 25,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "squid_meat",
       "coal"
@@ -34741,8 +34719,10 @@
     "output": "cooked_chicken",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 25,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "chicken",
       "coal"
@@ -34755,8 +34735,10 @@
     "output": "baked_potato",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 25,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "potato",
       "coal"
@@ -35027,22 +35009,6 @@
         "_"
       ]
     ]
-  },
-  {
-    "id": "mercury_ingot_841206",
-    "item_num": 841206,
-    "output": "mercury_ingot",
-    "outputQty": 1,
-    "station": "stone_furnace",
-    "difficulty": 0,
-    "skills": [
-      "mining"
-    ],
-    "ingredients": [
-      "mercury_ore"
-    ],
-    "shaped": false,
-    "added_version": "0.6.0"
   },
   {
     "id": "bamboo_helmet_841207",
@@ -40624,25 +40590,6 @@
     "removed_version": "pre-0.5.5"
   },
   {
-    "id": "sand_stone_841422",
-    "item_num": 841422,
-    "output": "sandstone",
-    "outputQty": 1,
-    "station": "stone_furnace",
-    "difficulty": 0,
-    "skills": [
-      "masonry"
-    ],
-    "ingredients": [
-      "sand",
-      "sand",
-      "sand",
-      "sand"
-    ],
-    "shaped": false,
-    "added_version": "0.6.0"
-  },
-  {
     "id": "bone_club_841423",
     "item_num": 841423,
     "output": "bone_club",
@@ -41966,7 +41913,7 @@
     "output": "bad_duck_meat",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
+    "difficulty": 25,
     "skills": [],
     "ingredients": [
       "duck_meat",
@@ -41980,7 +41927,7 @@
     "output": "bad_duck_head_cooked",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
+    "difficulty": 25,
     "skills": [],
     "ingredients": [
       "duck_head",
@@ -41994,7 +41941,7 @@
     "output": "bad_mutton_cooked",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
+    "difficulty": 25,
     "skills": [],
     "ingredients": [
       "mutton_raw",
@@ -42008,7 +41955,7 @@
     "output": "bad_cooked_squid_meat",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
+    "difficulty": 25,
     "skills": [],
     "ingredients": [
       "squid_meat",
@@ -42022,7 +41969,7 @@
     "output": "bad_fish_cooked",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
+    "difficulty": 25,
     "skills": [],
     "ingredients": [
       "raw_fish",
@@ -42036,7 +41983,7 @@
     "output": "bad_cooked_meat",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
+    "difficulty": 25,
     "skills": [],
     "ingredients": [
       "porkchop",
@@ -42050,7 +41997,7 @@
     "output": "bad_cooked_meat",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
+    "difficulty": 25,
     "skills": [],
     "ingredients": [
       "beef",
