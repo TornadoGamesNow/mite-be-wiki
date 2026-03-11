@@ -25342,9 +25342,9 @@
       "shapeless": true
     },
     {
-      "id": "item31785_advanced_enchantment_table",
+      "id": "item31785_enchantment_table_custom",
       "item_id_num": 31785,
-      "output": "?advanced_enchantment_table",
+      "output": "?enchantment_table_custom",
       "qty": 1,
       "station": "workbench",
       "difficulty": 6400.0,

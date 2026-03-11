@@ -40,7 +40,7 @@
       ]
     ],
     "label": {
-      "hu": "Kovakés",
+      "hu": "Egyszerű Kovakés",
       "en": "Simple Flint Knife"
     },
     "tags": [
@@ -52,14 +52,21 @@
   {
     "id": "leather_rope",
     "output": "leather_rope",
-    "station": "hand",
-    "gridSize": "2x2",
+    "station": "flint_workbench",
+    "gridSize": "3x3",
     "pattern": [
       [
+        "simple_flint_knife",
         "leather",
-        "flint_knife"
+        "_"
       ],
       [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
         "_",
         "_"
       ]
@@ -97,31 +104,6 @@
       "material"
     ],
     "difficulty": 100
-  },
-  {
-    "id": "flint_knife_v2",
-    "output": "flint_knife",
-    "station": "hand",
-    "gridSize": "2x2",
-    "pattern": [
-      [
-        "flint",
-        "leather_rope"
-      ],
-      [
-        "_",
-        "_"
-      ]
-    ],
-    "label": {
-      "hu": "Kovakés",
-      "en": "Flint Knife"
-    },
-    "tags": [
-      "flint-age",
-      "tool",
-      "knife"
-    ]
   },
   {
     "id": "flint_hatchet",
@@ -165,11 +147,14 @@
       ],
       [
         "flint",
-        "leather_rope",
+        "stick",
         "_"
       ],
       [
-        "_",
+        [
+          "sinew",
+          "string"
+        ],
         "stick",
         "_"
       ]
@@ -195,14 +180,20 @@
     "gridSize": "3x3",
     "pattern": [
       [
-        "flint_shard",
+        "chip_flint",
         "flint",
-        "flint_shard"
+        "chip_flint"
       ],
       [
-        "sinew",
+        [
+          "sinew",
+          "string"
+        ],
         "stick",
-        "sinew"
+        [
+          "sinew",
+          "string"
+        ]
       ],
       [
         "_",
@@ -226,7 +217,7 @@
   },
   {
     "id": "stone_spear",
-    "output": "stone_spear",
+    "output": "sharp_flint_spear",
     "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
@@ -238,7 +229,10 @@
       [
         "_",
         "stick",
-        "sinew"
+        [
+          "sinew",
+          "string"
+        ]
       ],
       [
         "stick",
@@ -247,8 +241,8 @@
       ]
     ],
     "label": {
-      "hu": "Hegyes kőlándzsa",
-      "en": "Sharp Stone Spear"
+      "hu": "Hegyes Kovalándzsa",
+      "en": "Sharp Flint Spear"
     },
     "tags": [
       "flint-age",
@@ -580,17 +574,24 @@
   },
   {
     "id": "clay_furnace",
-    "output": "clay_furnace",
-    "station": "hand",
-    "gridSize": "2x2",
+    "output": "clay_furnace_idle",
+    "station": "flint_workbench",
+    "gridSize": "3x3",
     "pattern": [
       [
         "clay_block",
-        "clay_block"
+        "clay_block",
+        "_"
       ],
       [
         "clay_block",
-        "clay_block"
+        "clay_block",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
       ]
     ],
     "label": {
@@ -610,6 +611,11 @@
     "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
+      [
+        "_",
+        "_",
+        "_"
+      ],
       [
         "stick",
         "_",
@@ -634,11 +640,6 @@
           "planks_birch",
           "planks_jungle"
         ]
-      ],
-      [
-        "_",
-        "_",
-        "_"
       ]
     ],
     "label": {
@@ -655,15 +656,22 @@
     "id": "hardened_clay_furnace",
     "output": "hardened_clay_furnace",
     "station": "hand",
-    "gridSize": "2x2",
+    "gridSize": "3x3",
     "pattern": [
       [
         "hardened_clay",
-        "hardened_clay"
+        "hardened_clay",
+        "_"
       ],
       [
         "hardened_clay",
-        "hardened_clay"
+        "hardened_clay",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
       ]
     ],
     "label": {
@@ -728,31 +736,6 @@
     "difficulty": 185
   },
   {
-    "id": "ingot_mold_x2",
-    "output": "obsidian_ingot_mould",
-    "outputCount": 2,
-    "station": "copper_workbench",
-    "gridSize": "2x2",
-    "pattern": [
-      [
-        "obsidian",
-        "copper_war_hammer"
-      ],
-      [
-        "_",
-        "_"
-      ]
-    ],
-    "label": {
-      "hu": "2× Öntőforma",
-      "en": "2× Ingot Mold"
-    },
-    "tags": [
-      "copper-age",
-      "tool"
-    ]
-  },
-  {
     "id": "copper_pickaxe",
     "output": "copper_pickaxe",
     "station": "copper_workbench",
@@ -764,14 +747,14 @@
         "copper_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "label": {
@@ -798,17 +781,17 @@
       [
         "copper_ingot",
         "copper_ingot",
-        "_"
+        "clay_ball"
       ],
       [
         "copper_ingot",
         "stick",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "label": {
@@ -833,19 +816,19 @@
     "gridSize": "3x3",
     "pattern": [
       [
-        "_",
+        "clay_ball",
         "copper_ingot",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "copper_ingot",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "label": {
@@ -880,9 +863,9 @@
         "copper_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "label": {
@@ -909,17 +892,17 @@
       [
         "copper_ingot",
         "copper_ingot",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "label": {
@@ -940,19 +923,19 @@
     "gridSize": "3x3",
     "pattern": [
       [
-        "_",
+        "clay_ball",
         "silver_ingot",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "silver_ingot",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "label": {
@@ -982,14 +965,14 @@
         "iron_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "label": {
@@ -1015,19 +998,19 @@
     "gridSize": "3x3",
     "pattern": [
       [
-        "_",
+        "clay_ball",
         "iron_ingot",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "iron_ingot",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "label": {
@@ -1055,17 +1038,17 @@
       [
         "iron_ingot",
         "iron_ingot",
-        "_"
+        "clay_ball"
       ],
       [
         "iron_ingot",
         "stick",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "label": {
@@ -1101,9 +1084,9 @@
         "iron_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "label": {
@@ -1130,7 +1113,7 @@
       [
         "_",
         "_",
-        "silk"
+        "string"
       ],
       [
         "_",
@@ -1156,23 +1139,35 @@
   {
     "id": "big_water_bag",
     "output": "big_water_bag",
-    "station": "copper_workbench",
+    "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
-        "silk",
-        "silk",
-        "silk"
+        [
+          "sinew",
+          "string"
+        ],
+        "leather",
+        [
+          "sinew",
+          "string"
+        ]
       ],
       [
         "leather",
-        "_",
+        "water_bag",
         "leather"
       ],
       [
-        "_",
+        [
+          "sinew",
+          "string"
+        ],
         "leather",
-        "_"
+        [
+          "sinew",
+          "string"
+        ]
       ]
     ],
     "label": {
@@ -1193,40 +1188,17 @@
     "pattern": [
       [
         [
-          "planks_oak",
-          "planks_spruce",
-          "planks_birch",
-          "planks_jungle"
+          "log_oak",
+          "log_spruce",
+          "log_birch",
+          "log_jungle"
         ],
+        "glass",
         [
-          "planks_oak",
-          "planks_spruce",
-          "planks_birch",
-          "planks_jungle"
-        ],
-        [
-          "planks_oak",
-          "planks_spruce",
-          "planks_birch",
-          "planks_jungle"
-        ]
-      ],
-      [
-        [
-          "planks_oak",
-          "planks_spruce",
-          "planks_birch",
-          "planks_jungle"
-        ],
-        [
-          "coal",
-          "charcoal"
-        ],
-        [
-          "planks_oak",
-          "planks_spruce",
-          "planks_birch",
-          "planks_jungle"
+          "log_oak",
+          "log_spruce",
+          "log_birch",
+          "log_jungle"
         ]
       ],
       [
@@ -1247,6 +1219,21 @@
           "planks_spruce",
           "planks_birch",
           "planks_jungle"
+        ]
+      ],
+      [
+        [
+          "log_oak",
+          "log_spruce",
+          "log_birch",
+          "log_jungle"
+        ],
+        "glass",
+        [
+          "log_oak",
+          "log_spruce",
+          "log_birch",
+          "log_jungle"
         ]
       ]
     ],
@@ -1408,19 +1395,19 @@
     "gridSize": "3x3",
     "pattern": [
       [
+        "copper_ingot",
+        "_",
+        "copper_ingot"
+      ],
+      [
+        "copper_ingot",
+        "_",
+        "copper_ingot"
+      ],
+      [
         "_",
         "_",
         "_"
-      ],
-      [
-        "copper_ingot",
-        "_",
-        "copper_ingot"
-      ],
-      [
-        "copper_ingot",
-        "_",
-        "copper_ingot"
       ]
     ],
     "label": {
@@ -1471,7 +1458,7 @@
   {
     "id": "enchanting_table_diamond",
     "output": "enchanting_table_diamond",
-    "station": "iron_workbench",
+    "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -1509,21 +1496,18 @@
     "gridSize": "3x3",
     "pattern": [
       [
-        "paper",
         "_",
+        "paper",
         "_"
       ],
       [
-        [
-          "coal",
-          "charcoal"
-        ],
         "_",
+        "charcoal",
         "_"
       ],
       [
-        "paper",
         "_",
+        "paper",
         "_"
       ]
     ],
@@ -1539,13 +1523,13 @@
   {
     "id": "ancient_metal_filter_paper",
     "output": "ancient_metal_filter_paper",
-    "station": "iron_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
-        "ancient_metal_ingot",
-        "ancient_metal_ingot",
-        "ancient_metal_ingot"
+        "ancient_metal_nugget",
+        "ancient_metal_nugget",
+        "ancient_metal_nugget"
       ],
       [
         "_",
@@ -1553,9 +1537,9 @@
         "_"
       ],
       [
-        "ancient_metal_ingot",
-        "ancient_metal_ingot",
-        "ancient_metal_ingot"
+        "ancient_metal_nugget",
+        "ancient_metal_nugget",
+        "ancient_metal_nugget"
       ]
     ],
     "label": {
@@ -1569,7 +1553,7 @@
   },
   {
     "id": "mining_helmet",
-    "output": "mining_helmet",
+    "output": "miner_helmet",
     "station": "iron_workbench",
     "gridSize": "3x3",
     "pattern": [
@@ -1584,14 +1568,14 @@
         "leather"
       ],
       [
-        "tin_plate",
         "iron_ingot",
-        "tin_plate"
+        "_",
+        "iron_ingot"
       ]
     ],
     "label": {
       "hu": "Bányászsisak",
-      "en": "Mining Helmet"
+      "en": "Miner Helmet"
     },
     "tags": [
       "mid-game",
@@ -1602,12 +1586,12 @@
   {
     "id": "battery",
     "output": "battery",
-    "station": "iron_workbench",
+    "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
         "_",
-        "iron_ingot",
+        "tin_plate",
         "_"
       ],
       [
@@ -1617,7 +1601,7 @@
       ],
       [
         "tin_plate",
-        "redstone_dust",
+        "coal",
         "tin_plate"
       ]
     ],
@@ -1634,7 +1618,7 @@
   {
     "id": "cooling_liquid",
     "output": "cooling_liquid",
-    "station": "iron_workbench",
+    "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -1730,23 +1714,23 @@
   {
     "id": "hardstone_sword",
     "output": "hardstone_sword",
-    "station": "iron_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
-        "_",
+        "clay_ball",
         "hardstone_ingot",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "hardstone_ingot",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "label": {
@@ -1768,7 +1752,7 @@
   {
     "id": "hardstone_pickaxe",
     "output": "hardstone_pickaxe",
-    "station": "iron_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -1777,14 +1761,14 @@
         "hardstone_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "label": {
@@ -1806,7 +1790,7 @@
   {
     "id": "hardstone_war_hammer",
     "output": "hardstone_war_hammer",
-    "station": "iron_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -1820,9 +1804,9 @@
         "hardstone_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "label": {
@@ -1844,7 +1828,7 @@
   {
     "id": "hardstone_helmet",
     "output": "hardstone_helmet",
-    "station": "iron_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -1877,7 +1861,7 @@
   {
     "id": "hardstone_chestplate",
     "output": "hardstone_chestplate",
-    "station": "iron_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -1910,7 +1894,7 @@
   {
     "id": "ancient_metal_sword",
     "output": "ancient_metal_sword",
-    "station": "iron_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -1925,7 +1909,7 @@
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -1962,7 +1946,7 @@
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -1994,12 +1978,12 @@
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -2031,12 +2015,12 @@
       ],
       [
         "mithril_bar",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -2068,12 +2052,12 @@
       ],
       [
         "mithril_bar",
-        "hardstone_handle",
+        "hard_stick",
         "mithril_bar"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -2110,7 +2094,7 @@
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -2142,12 +2126,12 @@
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -2179,12 +2163,12 @@
       ],
       [
         "adamantium_bar",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -2216,12 +2200,12 @@
       ],
       [
         "adamantium_bar",
-        "hardstone_handle",
+        "hard_stick",
         "adamantium_bar"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -2346,19 +2330,19 @@
     "gridSize": "3x3",
     "pattern": [
       [
+        "silver_ingot",
+        "_",
+        "silver_ingot"
+      ],
+      [
+        "silver_ingot",
+        "_",
+        "silver_ingot"
+      ],
+      [
         "_",
         "_",
         "_"
-      ],
-      [
-        "silver_ingot",
-        "_",
-        "silver_ingot"
-      ],
-      [
-        "silver_ingot",
-        "_",
-        "silver_ingot"
       ]
     ],
     "label": {
@@ -2478,19 +2462,19 @@
     "gridSize": "3x3",
     "pattern": [
       [
+        "gold_ingot",
+        "_",
+        "gold_ingot"
+      ],
+      [
+        "gold_ingot",
+        "_",
+        "gold_ingot"
+      ],
+      [
         "_",
         "_",
         "_"
-      ],
-      [
-        "gold_ingot",
-        "_",
-        "gold_ingot"
-      ],
-      [
-        "gold_ingot",
-        "_",
-        "gold_ingot"
       ]
     ],
     "label": {
@@ -2610,19 +2594,19 @@
     "gridSize": "3x3",
     "pattern": [
       [
+        "iron_ingot",
+        "_",
+        "iron_ingot"
+      ],
+      [
+        "iron_ingot",
+        "_",
+        "iron_ingot"
+      ],
+      [
         "_",
         "_",
         "_"
-      ],
-      [
-        "iron_ingot",
-        "_",
-        "iron_ingot"
-      ],
-      [
-        "iron_ingot",
-        "_",
-        "iron_ingot"
       ]
     ],
     "label": {
@@ -2639,7 +2623,7 @@
   {
     "id": "hardstone_leggings",
     "output": "hardstone_leggings",
-    "station": "iron_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -2672,23 +2656,23 @@
   {
     "id": "hardstone_boots",
     "output": "hardstone_boots",
-    "station": "iron_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
+      [
+        "hardstone_ingot",
+        "_",
+        "hardstone_ingot"
+      ],
+      [
+        "hardstone_ingot",
+        "_",
+        "hardstone_ingot"
+      ],
       [
         "_",
         "_",
         "_"
-      ],
-      [
-        "hardstone_ingot",
-        "_",
-        "hardstone_ingot"
-      ],
-      [
-        "hardstone_ingot",
-        "_",
-        "hardstone_ingot"
       ]
     ],
     "label": {
@@ -2705,7 +2689,7 @@
   {
     "id": "ancient_metal_helmet",
     "output": "ancient_metal_helmet",
-    "station": "iron_workbench",
+    "station": "ancient_metal_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -2738,7 +2722,7 @@
   {
     "id": "ancient_metal_chestplate",
     "output": "ancient_metal_chestplate",
-    "station": "iron_workbench",
+    "station": "ancient_metal_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -2771,7 +2755,7 @@
   {
     "id": "ancient_metal_leggings",
     "output": "ancient_metal_leggings",
-    "station": "iron_workbench",
+    "station": "ancient_metal_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -2804,23 +2788,23 @@
   {
     "id": "ancient_metal_boots",
     "output": "ancient_metal_boots",
-    "station": "iron_workbench",
+    "station": "ancient_metal_workbench",
     "gridSize": "3x3",
     "pattern": [
+      [
+        "ancient_metal_ingot",
+        "_",
+        "ancient_metal_ingot"
+      ],
+      [
+        "ancient_metal_ingot",
+        "_",
+        "ancient_metal_ingot"
+      ],
       [
         "_",
         "_",
         "_"
-      ],
-      [
-        "ancient_metal_ingot",
-        "_",
-        "ancient_metal_ingot"
-      ],
-      [
-        "ancient_metal_ingot",
-        "_",
-        "ancient_metal_ingot"
       ]
     ],
     "label": {
@@ -2940,19 +2924,19 @@
     "gridSize": "3x3",
     "pattern": [
       [
+        "mithril_bar",
+        "_",
+        "mithril_bar"
+      ],
+      [
+        "mithril_bar",
+        "_",
+        "mithril_bar"
+      ],
+      [
         "_",
         "_",
         "_"
-      ],
-      [
-        "mithril_bar",
-        "_",
-        "mithril_bar"
-      ],
-      [
-        "mithril_bar",
-        "_",
-        "mithril_bar"
       ]
     ],
     "label": {
@@ -3072,19 +3056,19 @@
     "gridSize": "3x3",
     "pattern": [
       [
+        "adamantium_bar",
+        "_",
+        "adamantium_bar"
+      ],
+      [
+        "adamantium_bar",
+        "_",
+        "adamantium_bar"
+      ],
+      [
         "_",
         "_",
         "_"
-      ],
-      [
-        "adamantium_bar",
-        "_",
-        "adamantium_bar"
-      ],
-      [
-        "adamantium_bar",
-        "_",
-        "adamantium_bar"
       ]
     ],
     "label": {
@@ -3101,7 +3085,7 @@
   {
     "id": "furnace_core_stone",
     "output": "furnace_core_stone",
-    "station": "copper_workbench",
+    "station": "workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -3136,7 +3120,7 @@
   {
     "id": "furnace_core_obsidian",
     "output": "furnace_core_obsidian",
-    "station": "gold_workbench",
+    "station": "workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -3171,7 +3155,7 @@
   {
     "id": "furnace_core_netherrack",
     "output": "furnace_core_netherrack",
-    "station": "mithril_workbench",
+    "station": "workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -3194,8 +3178,8 @@
       ]
     ],
     "label": {
-      "hu": "AlvilágKőkemencemag",
-      "en": "Netherrackkemence-mag"
+      "hu": "Netherrack Kemencemag",
+      "en": "Netherrack Furnace Core"
     },
     "tags": [
       "furnace",
@@ -3206,7 +3190,7 @@
   {
     "id": "ancient_metal_workbench",
     "output": "ancient_metal_workbench",
-    "station": "iron_workbench",
+    "station": "hand",
     "gridSize": "2x2",
     "pattern": [
       [
@@ -3241,18 +3225,18 @@
     "pattern": [
       [
         "copper_ingot",
-        "copper_ingot",
+        "clay_ball",
         "copper_ingot"
       ],
       [
         "copper_ingot",
         "stick",
-        "_"
+        "copper_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "output": "copper_battle_axe",
@@ -3272,18 +3256,18 @@
     "pattern": [
       [
         "silver_ingot",
-        "silver_ingot",
+        "clay_ball",
         "silver_ingot"
       ],
       [
         "silver_ingot",
         "stick",
-        "_"
+        "silver_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "output": "silver_battle_axe",
@@ -3303,18 +3287,18 @@
     "pattern": [
       [
         "gold_ingot",
-        "gold_ingot",
+        "clay_ball",
         "gold_ingot"
       ],
       [
         "gold_ingot",
         "stick",
-        "_"
+        "gold_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "output": "gold_battle_axe",
@@ -3334,18 +3318,18 @@
     "pattern": [
       [
         "iron_ingot",
-        "iron_ingot",
+        "clay_ball",
         "iron_ingot"
       ],
       [
         "iron_ingot",
         "stick",
-        "_"
+        "iron_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "output": "iron_battle_axe",
@@ -3360,22 +3344,22 @@
   },
   {
     "id": "ancient_metal_battle_axe",
-    "station": "ancient_metal_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
         "ancient_metal_ingot",
-        "ancient_metal_ingot",
+        "_",
         "ancient_metal_ingot"
       ],
       [
         "ancient_metal_ingot",
-        "hardstone_handle",
-        "_"
+        "hard_stick",
+        "ancient_metal_ingot"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -3396,17 +3380,17 @@
     "pattern": [
       [
         "mithril_bar",
-        "mithril_bar",
+        "_",
         "mithril_bar"
       ],
       [
         "mithril_bar",
-        "hardstone_handle",
-        "_"
+        "hard_stick",
+        "mithril_bar"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -3427,17 +3411,17 @@
     "pattern": [
       [
         "adamantium_bar",
-        "adamantium_bar",
+        "_",
         "adamantium_bar"
       ],
       [
         "adamantium_bar",
-        "hardstone_handle",
-        "_"
+        "hard_stick",
+        "adamantium_bar"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -3453,23 +3437,23 @@
   },
   {
     "id": "hardstone_battle_axe",
-    "station": "Keménykő_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
         "hardstone_ingot",
-        "hardstone_ingot",
+        "clay_ball",
         "hardstone_ingot"
       ],
       [
         "hardstone_ingot",
         "stick",
-        "_"
+        "hardstone_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "output": "hardstone_battle_axe",
@@ -3493,14 +3477,14 @@
         "copper_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
         "copper_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "output": "copper_mattock",
@@ -3523,14 +3507,14 @@
         "silver_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
         "silver_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "output": "silver_mattock",
@@ -3553,14 +3537,14 @@
         "gold_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
         "gold_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "output": "gold_mattock",
@@ -3583,14 +3567,14 @@
         "iron_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
         "iron_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "output": "iron_mattock",
@@ -3604,7 +3588,7 @@
   },
   {
     "id": "ancient_metal_mattock",
-    "station": "ancient_metal_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -3614,12 +3598,12 @@
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "ancient_metal_ingot"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -3644,12 +3628,12 @@
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "mithril_bar"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -3674,12 +3658,12 @@
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "adamantium_bar"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -3694,7 +3678,7 @@
   },
   {
     "id": "hardstone_mattock",
-    "station": "Keménykő_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -3703,14 +3687,14 @@
         "hardstone_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
         "hardstone_ingot"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "output": "hardstone_mattock",
@@ -3730,17 +3714,17 @@
       [
         "stick",
         "copper_ingot",
-        "_"
+        "clay_ball"
       ],
       [
         "stick",
-        "copper_ingot",
-        "_"
+        "clay_ball",
+        "copper_ingot"
       ],
       [
         "stick",
-        "_",
-        "_"
+        "clay_ball",
+        "clay_ball"
       ]
     ],
     "output": "copper_scythe",
@@ -3761,17 +3745,17 @@
       [
         "stick",
         "silver_ingot",
-        "_"
+        "clay_ball"
       ],
       [
         "stick",
-        "silver_ingot",
-        "_"
+        "clay_ball",
+        "silver_ingot"
       ],
       [
         "stick",
-        "_",
-        "_"
+        "clay_ball",
+        "clay_ball"
       ]
     ],
     "output": "silver_scythe",
@@ -3792,17 +3776,17 @@
       [
         "stick",
         "gold_ingot",
-        "_"
+        "clay_ball"
       ],
       [
         "stick",
-        "gold_ingot",
-        "_"
+        "clay_ball",
+        "gold_ingot"
       ],
       [
         "stick",
-        "_",
-        "_"
+        "clay_ball",
+        "clay_ball"
       ]
     ],
     "output": "gold_scythe",
@@ -3823,17 +3807,17 @@
       [
         "stick",
         "iron_ingot",
-        "_"
+        "clay_ball"
       ],
       [
         "stick",
-        "iron_ingot",
-        "_"
+        "clay_ball",
+        "iron_ingot"
       ],
       [
         "stick",
-        "_",
-        "_"
+        "clay_ball",
+        "clay_ball"
       ]
     ],
     "output": "iron_scythe",
@@ -3848,21 +3832,21 @@
   },
   {
     "id": "ancient_metal_scythe",
-    "station": "ancient_metal_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
-        "hardstone_handle",
+        "hard_stick",
         "ancient_metal_ingot",
         "_"
       ],
       [
-        "hardstone_handle",
-        "ancient_metal_ingot",
-        "_"
+        "hard_stick",
+        "_",
+        "ancient_metal_ingot"
       ],
       [
-        "hardstone_handle",
+        "hard_stick",
         "_",
         "_"
       ]
@@ -3883,17 +3867,17 @@
     "gridSize": "3x3",
     "pattern": [
       [
-        "hardstone_handle",
+        "hard_stick",
         "mithril_bar",
         "_"
       ],
       [
-        "hardstone_handle",
-        "mithril_bar",
-        "_"
+        "hard_stick",
+        "_",
+        "mithril_bar"
       ],
       [
-        "hardstone_handle",
+        "hard_stick",
         "_",
         "_"
       ]
@@ -3914,17 +3898,17 @@
     "gridSize": "3x3",
     "pattern": [
       [
-        "hardstone_handle",
+        "hard_stick",
         "adamantium_bar",
         "_"
       ],
       [
-        "hardstone_handle",
-        "adamantium_bar",
-        "_"
+        "hard_stick",
+        "_",
+        "adamantium_bar"
       ],
       [
-        "hardstone_handle",
+        "hard_stick",
         "_",
         "_"
       ]
@@ -3941,23 +3925,23 @@
   },
   {
     "id": "hardstone_scythe",
-    "station": "Keménykő_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
         "stick",
         "hardstone_ingot",
-        "_"
+        "clay_ball"
       ],
       [
         "stick",
-        "hardstone_ingot",
-        "_"
+        "clay_ball",
+        "hardstone_ingot"
       ],
       [
         "stick",
-        "_",
-        "_"
+        "clay_ball",
+        "clay_ball"
       ]
     ],
     "output": "hardstone_scythe",
@@ -3968,36 +3952,6 @@
     "tags": [
       "tool",
       "weapon"
-    ]
-  },
-  {
-    "id": "copper_shears",
-    "station": "copper_workbench",
-    "gridSize": "3x3",
-    "pattern": [
-      [
-        "_",
-        "copper_ingot",
-        "_"
-      ],
-      [
-        "copper_ingot",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ],
-    "output": "copper_shears",
-    "label": {
-      "hu": "Réz Olló",
-      "en": "Copper Shears"
-    },
-    "tags": [
-      "tool"
     ]
   },
   {
@@ -4182,7 +4136,7 @@
   },
   {
     "id": "hardstone_shears",
-    "station": "Keménykő_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -4216,19 +4170,19 @@
     "gridSize": "3x3",
     "pattern": [
       [
-        "_",
         "silver_ingot",
-        "_"
+        "stick",
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
-        "stick",
-        "_"
+        "clay_ball",
+        "clay_ball",
+        "clay_ball"
       ]
     ],
     "output": "silver_hatchet",
@@ -4247,19 +4201,19 @@
     "gridSize": "3x3",
     "pattern": [
       [
-        "_",
         "gold_ingot",
-        "_"
+        "stick",
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
-        "stick",
-        "_"
+        "clay_ball",
+        "clay_ball",
+        "clay_ball"
       ]
     ],
     "output": "gold_hatchet",
@@ -4278,18 +4232,18 @@
     "gridSize": "3x3",
     "pattern": [
       [
-        "_",
         "ancient_metal_ingot",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "hardstone_handle",
+        "_",
         "_"
       ]
     ],
@@ -4309,18 +4263,18 @@
     "gridSize": "3x3",
     "pattern": [
       [
-        "_",
         "mithril_bar",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "hardstone_handle",
+        "_",
         "_"
       ]
     ],
@@ -4340,18 +4294,18 @@
     "gridSize": "3x3",
     "pattern": [
       [
-        "_",
         "adamantium_bar",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "hardstone_handle",
+        "_",
         "_"
       ]
     ],
@@ -4367,23 +4321,23 @@
   },
   {
     "id": "hardstone_hatchet",
-    "station": "Keménykő_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
-        "_",
         "hardstone_ingot",
-        "_"
+        "stick",
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
-        "stick",
-        "_"
+        "clay_ball",
+        "clay_ball",
+        "clay_ball"
       ]
     ],
     "output": "hardstone_hatchet",
@@ -4404,17 +4358,17 @@
       [
         "silver_ingot",
         "silver_ingot",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "output": "silver_hoe",
@@ -4434,17 +4388,17 @@
       [
         "gold_ingot",
         "gold_ingot",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ],
       [
-        "_",
+        "clay_ball",
         "stick",
-        "_"
+        "clay_ball"
       ]
     ],
     "output": "gold_hoe",
@@ -4458,7 +4412,7 @@
   },
   {
     "id": "ancient_metal_hoe",
-    "station": "ancient_metal_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -4468,12 +4422,12 @@
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -4498,12 +4452,12 @@
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -4528,12 +4482,12 @@
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ],
       [
         "_",
-        "hardstone_handle",
+        "hard_stick",
         "_"
       ]
     ],
@@ -4549,14 +4503,24 @@
   {
     "id": "torch",
     "station": "flint_workbench",
-    "gridSize": "2x2",
+    "gridSize": "3x3",
     "pattern": [
       [
-        "coal",
+        "_",
+        [
+          "coal",
+          "charcoal"
+        ],
         "_"
       ],
       [
+        "_",
         "stick",
+        "_"
+      ],
+      [
+        "_",
+        "_",
         "_"
       ]
     ],
@@ -4579,17 +4543,26 @@
       [
         "_",
         "stick",
-        "string"
+        [
+          "string",
+          "leather_rope"
+        ]
       ],
       [
         "stick",
         "_",
-        "string"
+        [
+          "string",
+          "leather_rope"
+        ]
       ],
       [
         "_",
         "stick",
-        "string"
+        [
+          "string",
+          "leather_rope"
+        ]
       ]
     ],
     "output": "bow",
@@ -4609,7 +4582,7 @@
     "pattern": [
       [
         "_",
-        "flint_shard",
+        "chip_flint",
         "_"
       ],
       [
@@ -4631,12 +4604,11 @@
     "tags": [
       "ammo",
       "crafting"
-    ],
-    "outputCount": 4
+    ]
   },
   {
     "id": "copper_arrow",
-    "station": "copper_workbench",
+    "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -4663,12 +4635,11 @@
     "tags": [
       "ammo",
       "crafting"
-    ],
-    "outputCount": 4
+    ]
   },
   {
     "id": "silver_arrow",
-    "station": "silver_workbench",
+    "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -4695,12 +4666,11 @@
     "tags": [
       "ammo",
       "crafting"
-    ],
-    "outputCount": 4
+    ]
   },
   {
     "id": "gold_arrow",
-    "station": "gold_workbench",
+    "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -4727,12 +4697,11 @@
     "tags": [
       "ammo",
       "crafting"
-    ],
-    "outputCount": 4
+    ]
   },
   {
     "id": "iron_arrow",
-    "station": "iron_workbench",
+    "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
@@ -4759,8 +4728,7 @@
     "tags": [
       "ammo",
       "crafting"
-    ],
-    "outputCount": 4
+    ]
   },
   {
     "id": "obsidian_arrow",
@@ -4791,8 +4759,7 @@
     "tags": [
       "ammo",
       "crafting"
-    ],
-    "outputCount": 4
+    ]
   },
   {
     "id": "ancient_metal_arrow",
@@ -4823,8 +4790,7 @@
     "tags": [
       "ammo",
       "crafting"
-    ],
-    "outputCount": 4
+    ]
   },
   {
     "id": "mithril_arrow",
@@ -4855,8 +4821,7 @@
     "tags": [
       "ammo",
       "crafting"
-    ],
-    "outputCount": 4
+    ]
   },
   {
     "id": "adamantium_arrow",
@@ -4887,27 +4852,26 @@
     "tags": [
       "ammo",
       "crafting"
-    ],
-    "outputCount": 4
+    ]
   },
   {
     "id": "copper_chain",
-    "station": "copper_workbench",
+    "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
         "_",
-        "copper_ingot",
+        "copper_nugget",
         "_"
       ],
       [
-        "copper_ingot",
+        "copper_nugget",
         "_",
-        "_"
+        "copper_nugget"
       ],
       [
         "_",
-        "_",
+        "copper_nugget",
         "_"
       ]
     ],
@@ -4919,27 +4883,26 @@
     "tags": [
       "armor",
       "crafting"
-    ],
-    "outputCount": 4
+    ]
   },
   {
     "id": "silver_chain",
-    "station": "silver_workbench",
+    "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
         "_",
-        "silver_ingot",
+        "silver_nugget",
         "_"
       ],
       [
-        "silver_ingot",
+        "silver_nugget",
         "_",
-        "_"
+        "silver_nugget"
       ],
       [
         "_",
-        "_",
+        "silver_nugget",
         "_"
       ]
     ],
@@ -4951,27 +4914,26 @@
     "tags": [
       "armor",
       "crafting"
-    ],
-    "outputCount": 4
+    ]
   },
   {
     "id": "gold_chain",
-    "station": "gold_workbench",
+    "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
         "_",
-        "gold_ingot",
+        "gold_nugget",
         "_"
       ],
       [
-        "gold_ingot",
+        "gold_nugget",
         "_",
-        "_"
+        "gold_nugget"
       ],
       [
         "_",
-        "_",
+        "gold_nugget",
         "_"
       ]
     ],
@@ -4983,27 +4945,26 @@
     "tags": [
       "armor",
       "crafting"
-    ],
-    "outputCount": 4
+    ]
   },
   {
     "id": "iron_chain",
-    "station": "iron_workbench",
+    "station": "flint_workbench",
     "gridSize": "3x3",
     "pattern": [
       [
         "_",
-        "iron_ingot",
+        "iron_nugget",
         "_"
       ],
       [
-        "iron_ingot",
+        "iron_nugget",
         "_",
-        "_"
+        "iron_nugget"
       ],
       [
         "_",
-        "_",
+        "iron_nugget",
         "_"
       ]
     ],
@@ -5015,8 +4976,7 @@
     "tags": [
       "armor",
       "crafting"
-    ],
-    "outputCount": 4
+    ]
   },
   {
     "id": "mithril_chain",
@@ -5025,17 +4985,17 @@
     "pattern": [
       [
         "_",
-        "mithril_bar",
+        "mithril_nugget",
         "_"
       ],
       [
-        "mithril_bar",
+        "mithril_nugget",
         "_",
-        "_"
+        "mithril_nugget"
       ],
       [
         "_",
-        "_",
+        "mithril_nugget",
         "_"
       ]
     ],
@@ -5047,8 +5007,7 @@
     "tags": [
       "armor",
       "crafting"
-    ],
-    "outputCount": 4
+    ]
   },
   {
     "id": "adamantium_chain",
@@ -5057,17 +5016,17 @@
     "pattern": [
       [
         "_",
-        "adamantium_bar",
+        "adamantium_nugget",
         "_"
       ],
       [
-        "adamantium_bar",
+        "adamantium_nugget",
         "_",
-        "_"
+        "adamantium_nugget"
       ],
       [
         "_",
-        "_",
+        "adamantium_nugget",
         "_"
       ]
     ],
@@ -5079,8 +5038,7 @@
     "tags": [
       "armor",
       "crafting"
-    ],
-    "outputCount": 4
+    ]
   },
   {
     "id": "ancient_metal_chain",
@@ -5089,17 +5047,17 @@
     "pattern": [
       [
         "_",
-        "ancient_metal_ingot",
+        "ancient_metal_nugget",
         "_"
       ],
       [
-        "ancient_metal_ingot",
+        "ancient_metal_nugget",
         "_",
-        "_"
+        "ancient_metal_nugget"
       ],
       [
         "_",
-        "_",
+        "ancient_metal_nugget",
         "_"
       ]
     ],
@@ -5111,8 +5069,7 @@
     "tags": [
       "armor",
       "crafting"
-    ],
-    "outputCount": 4
+    ]
   },
   {
     "id": "hardstone_chain",
@@ -5149,16 +5106,26 @@
   {
     "id": "flint_shovel",
     "output": "flint_shovel",
-    "station": "hand",
-    "gridSize": "2x2",
+    "station": "flint_workbench",
+    "gridSize": "3x3",
     "pattern": [
       [
+        "_",
         "flint",
+        [
+          "sinew",
+          "string"
+        ]
+      ],
+      [
+        "_",
+        "stick",
         "_"
       ],
       [
-        "leather_rope",
-        "stick"
+        "_",
+        "stick",
+        "_"
       ]
     ],
     "label": {

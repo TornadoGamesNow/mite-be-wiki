@@ -10698,8 +10698,10 @@
     "output": "emerald",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 7200,
-    "skills": [],
+    "difficulty": 800,
+    "skills": [
+      "fineArts"
+    ],
     "ingredients": [
       "emerald_shard",
       "emerald_shard",
@@ -43637,6 +43639,19 @@
       "ancient_metal_ingot",
       "ancient_metal_ingot",
       "ancient_metal_ingot"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "emerald_from_block_388",
+    "item_num": 388,
+    "output": "emerald",
+    "outputQty": 9,
+    "station": "flint_workbench",
+    "difficulty": 7200,
+    "skills": [],
+    "ingredients": [
+      "emerald_block"
     ],
     "shaped": false
   }

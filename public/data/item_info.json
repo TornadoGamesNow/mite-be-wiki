@@ -2731,10 +2731,10 @@
   },
   "enchantment_table_emerald": {
     "mcmod_id": 772039,
-    "desc": "Alternate visual variant of the Emerald Enchanting Table with the same gameplay function.",
-    "desc_en": "Alternate visual variant of the Emerald Enchanting Table with the same gameplay function.",
-    "desc_hu": "Az Emerald Enchanting Table alternatív kinézetű változata, azonos játékmeneti funkcióval.",
-    "desc_ru": "Визуальный вариант Emerald Enchanting Table с той же игровой функцией."
+    "desc": "Upgraded emerald enchanting table with the same core mechanics as the diamond version, but stronger enchantment options.",
+    "desc_en": "Upgraded emerald enchanting table with the same core mechanics as the diamond version, but stronger enchantment options.",
+    "desc_hu": "A gyémánt bűvölőasztal smaragd fejlesztése. Ugyanazt az alapmechanikát használja, de erősebb bűvölési opciókat ad.",
+    "desc_ru": "Изумрудное улучшение алмазного стола зачарования. Использует ту же базовую механику, но даёт более сильные варианты чар."
   },
   "fence": {
     "mcmod_id": 772185,
@@ -3926,10 +3926,10 @@
   },
   "enchantment_table": {
     "mcmod_id": 777403,
-    "desc": "Standard enchanting table behavior, but each enchant costs 3 lapis lazuli. The table stores the lapis instead of dropping it when the interface closes.",
-    "desc_en": "Standard enchanting table behavior, but each enchant costs 3 lapis lazuli. The table stores the lapis instead of dropping it when the interface closes.",
-    "desc_hu": "Normál varázsasztal-viselkedés, de minden varázslat 3 lapis lazulit kér. A lapist az asztal tárolja, nem dobja ki a felület bezárásakor.",
-    "desc_ru": "Обычный стол зачарования, но каждое зачарование требует 3 лазурита. Лазурит хранится в столе и не выпадает при закрытии интерфейса."
+    "desc": "Diamond enchanting table. It keeps the usual enchanting mechanics, but every enchant costs 3 lapis lazuli, which the table stores internally.",
+    "desc_en": "Diamond enchanting table. It keeps the usual enchanting mechanics, but every enchant costs 3 lapis lazuli, which the table stores internally.",
+    "desc_hu": "Gyémánt bűvölőasztal. A szokásos bűvölési mechanikát használja, de minden bűvölés 3 lapis lazulit kér, amit az asztal belül tárol.",
+    "desc_ru": "Алмазный стол зачарования. Использует обычную механику чар, но каждое зачарование требует 3 лазурита, который хранится внутри стола."
   },
   "two_port_cauldron": {
     "mcmod_id": 802106,
@@ -3975,24 +3975,24 @@
   },
   "enchantment_table_custom": {
     "mcmod_id": 826854,
-    "desc": "Advanced enchanting table for targeted enchantment choices without surrounding bookshelves. It consumes lapis, a book, and XP per enchant, and later versions gate crafting behind a knowledge-book unlock.",
+    "desc": "Custom enchanting table for targeted enchantment choices without surrounding bookshelves. It consumes lapis, a book, and XP per enchant, and later versions gate crafting behind a knowledge-book unlock.",
     "versions": [
-      "v0.6.0: Advanced enchanting tables were added.",
+      "v0.6.0: Custom enchanting tables were added.",
       "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
     ],
-    "desc_en": "Advanced enchanting table for targeted enchantment choices without surrounding bookshelves. It consumes lapis, a book, and XP per enchant, and later versions gate crafting behind a knowledge-book unlock.",
-    "desc_hu": "Fejlett varázslóasztal célzott enchantválasztásokhoz, környező könyvespolcok nélkül. Minden enchant lapist, egy könyvet és XP-t fogyaszt, a későbbi verziókban pedig a craftolása tudáskönyv-feloldáshoz kötött.",
-    "desc_ru": "Продвинутый стол зачарования для выбора конкретных чар без окружающих книжных полок. Каждое зачарование тратит лазурит, книгу и XP, а в поздних версиях крафт дополнительно закрыт за книгой знаний.",
+    "desc_en": "Custom enchanting table for targeted enchantment choices without surrounding bookshelves. It consumes lapis, a book, and XP per enchant, and later versions gate crafting behind a knowledge-book unlock.",
+    "desc_hu": "Egyéni bűvölőasztal célzott enchantválasztásokhoz, környező könyvespolcok nélkül. Minden enchant lapist, egy könyvet és XP-t fogyaszt, a későbbi verziókban pedig a craftolása tudáskönyv-feloldáshoz kötött.",
+    "desc_ru": "Особый стол зачарования для выбора конкретных чар без окружающих книжных полок. Каждое зачарование тратит лазурит, книгу и XP, а в поздних версиях крафт дополнительно закрыт за книгой знаний.",
     "versions_en": [
-      "v0.6.0: Advanced enchanting tables were added.",
+      "v0.6.0: Custom enchanting tables were added.",
       "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
     ],
     "versions_hu": [
-      "v0.6.0: Megjelentek a fejlett varázslóasztalok.",
+      "v0.6.0: Megjelentek az egyéni bűvölőasztalok.",
       "v0.9.0: A craftoláshoz a megfelelő tudáskönyv-feloldás kell."
     ],
     "versions_ru": [
-      "v0.6.0: Были добавлены продвинутые столы зачарования.",
+      "v0.6.0: Были добавлены особые столы зачарования.",
       "v0.9.0: Для крафта требуется разблокировка соответствующей книги знаний."
     ]
   },

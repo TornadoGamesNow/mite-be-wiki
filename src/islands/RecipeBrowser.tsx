@@ -311,16 +311,21 @@ export default function RecipeBrowser() {
       <div className="craft-section" style={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
         {filtered.map((recipe) => {
           const outputIds = recipe.outputs;
+          const distinctOutputIds = [...new Set(outputIds)];
           const outputIdx = outputIds.length > 1 ? tick % outputIds.length : 0;
           const outputItem = getItem(outputIds[outputIdx]);
 
           return (
             <div key={recipe.id} className="craft-table">
-              {recipe.variantCount > 1 && (
+              {distinctOutputIds.length > 1 && (
                 <div className="craft-variant-badge" title={
-                  lang === 'hu' ? `${recipe.variantCount} változat` : lang === 'ru' ? `${recipe.variantCount} вариантов` : `${recipe.variantCount} variants`
+                  lang === 'hu'
+                    ? `${distinctOutputIds.length} változat`
+                    : lang === 'ru'
+                      ? `${distinctOutputIds.length} вариантов`
+                      : `${distinctOutputIds.length} variants`
                 }>
-                  ×{recipe.variantCount}
+                  ×{distinctOutputIds.length}
                 </div>
               )}
               <div className={`craft-grid ${recipe.gridSize === '2x2' ? 'g2x2' : 'g3x3'}`}>

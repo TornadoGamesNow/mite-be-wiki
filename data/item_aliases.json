@@ -6,5 +6,9 @@
   "stone_furnace_core": "furnace_core_stone",
   "obsidian_furnace_core": "furnace_core_obsidian",
   "nether_furnace_core": "furnace_core_netherrack",
-  "netherrack_furnace_idle": "netherrack_furnace"
+  "netherrack_furnace_idle": "netherrack_furnace",
+  "chip_flint_knife": "simple_flint_knife",
+  "advanced_enchantment_table": "enchantment_table_custom",
+  "enchanting_table_diamond": "enchantment_table",
+  "enchanting_table_emerald": "enchantment_table_emerald"
 }

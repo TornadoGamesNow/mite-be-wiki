@@ -2561,7 +2561,7 @@
   },
   "adamantium_fluid_tank": {
     "name": {
-      "hu": "Adamantium Folyadék Tank",
+      "hu": "Adamantium Folyadéktartály",
       "en": "Adamantium Fluid Tank",
       "ru": "Адамантиевый бак для жидкости"
     },
@@ -2834,7 +2834,7 @@
   },
   "ancient_metal_fluid_tank": {
     "name": {
-      "hu": "Ősi Fém Folyadék Tank",
+      "hu": "Ősi Fém Folyadéktartály",
       "en": "Ancient Metal Fluid Tank",
       "ru": "Бак для жидкости из древнего металла"
     },
@@ -3957,7 +3957,7 @@
   },
   "copper_fluid_tank": {
     "name": {
-      "hu": "Réz Folyadék Tank",
+      "hu": "Réz Folyadéktartály",
       "en": "Copper Fluid Tank",
       "ru": "Медный бак для жидкости"
     },
@@ -4797,7 +4797,7 @@
   },
   "gold_fluid_tank": {
     "name": {
-      "hu": "Arany Folyadék Tank",
+      "hu": "Arany Folyadéktartály",
       "en": "Gold Fluid Tank",
       "ru": "Золотой бак для жидкости"
     },
@@ -5111,7 +5111,7 @@
   },
   "hard_stone_fluid_tank": {
     "name": {
-      "hu": "Keménykő Folyadék Tank",
+      "hu": "Keménykő Folyadéktartály",
       "en": "Hardstone Fluid Tank",
       "ru": "Твердокаменный бак для жидкости"
     },
@@ -5490,7 +5490,7 @@
   },
   "iron_fluid_tank": {
     "name": {
-      "hu": "Vas Folyadék Tank",
+      "hu": "Vas Folyadéktartály",
       "en": "Iron Fluid Tank",
       "ru": "Железный бак для жидкости"
     },
@@ -6352,7 +6352,7 @@
   },
   "mithril_fluid_tank": {
     "name": {
-      "hu": "Mithril Folyadék Tank",
+      "hu": "Mithril Folyadéktartály",
       "en": "Mithril Fluid Tank",
       "ru": "Мифриловый бак для жидкости"
     },
@@ -7672,7 +7672,7 @@
   },
   "silver_fluid_tank": {
     "name": {
-      "hu": "Ezüst Folyadék Tank",
+      "hu": "Ezüst Folyadéktartály",
       "en": "Silver Fluid Tank",
       "ru": "Серебряный бак для жидкости"
     },
@@ -9432,7 +9432,7 @@
   "mesh_string": {
     "name": {
       "hu": "Zsineg Szitaháló",
-      "en": "Mesh String",
+      "en": "String Sieve Mesh",
       "ru": "Нитяная сетка"
     },
     "img": "img/items/mesh_string.png",
@@ -9443,7 +9443,7 @@
   "mesh_leather": {
     "name": {
       "hu": "Bőr Szitaháló",
-      "en": "Mesh Leather",
+      "en": "Leather Sieve Mesh",
       "ru": "Кожаная сетка"
     },
     "img": "img/items/mesh_leather.png",
@@ -9494,7 +9494,7 @@
   "runestore": {
     "name": {
       "hu": "Runakő",
-      "en": "Runestore",
+      "en": "Rune Stone",
       "ru": "Хранилище рун"
     },
     "img": "img/items/runestore.png",
@@ -9564,9 +9564,9 @@
   },
   "big_backpack_upgrade": {
     "name": {
-      "hu": "Big Hátizsák Fejlesztés",
+      "hu": "Nagy Hátizsák Fejlesztés",
       "en": "Big Backpack Upgrade",
-      "ru": "Большое улучшение рюкзака"
+      "ru": "Улучшение большого рюкзака"
     },
     "img": "img/items/big_backpack_upgrade.png",
     "tier": null,
@@ -9839,16 +9839,16 @@
   "torch_off": {
     "name": {
       "hu": "Kialudt Fáklya",
-      "en": "Torch Off",
+      "en": "Extinguished Torch",
       "ru": "Потухший факел"
     },
     "img": "img/items/torch_off.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "glow_stone_torch": {
     "name": {
-      "hu": "Glow Ko Torch",
+      "hu": "Izzókő Fáklya",
       "en": "Glowstone Torch",
       "ru": "Светящийся факел"
     },
@@ -9889,17 +9889,17 @@
   "torch_holy": {
     "name": {
       "hu": "Tisztító Fáklya",
-      "en": "Holy Torch",
-      "ru": "Священный факел"
+      "en": "Purifying Torch",
+      "ru": "Очищающий факел"
     },
     "img": "img/items/torch_holy.png",
     "tier": null,
-    "category": "material"
+    "category": "block"
   },
   "sapling_pitaya": {
     "name": {
       "hu": "Pitahaya Csemete",
-      "en": "Sapling Pitaya",
+      "en": "Pitaya Sapling",
       "ru": "Саженец питайи"
     },
     "img": "img/items/sapling_pitaya.png",
@@ -9909,7 +9909,7 @@
   "sapling_coconut": {
     "name": {
       "hu": "Kókuszpálma Csemete",
-      "en": "Sapling Coconut",
+      "en": "Coconut Sapling",
       "ru": "Саженец кокоса"
     },
     "img": "img/items/sapling_coconut.png",
@@ -9919,7 +9919,7 @@
   "sapling_banana": {
     "name": {
       "hu": "Banánfa Csemete",
-      "en": "Sapling Banana",
+      "en": "Banana Sapling",
       "ru": "Саженец банана"
     },
     "img": "img/items/sapling_banana.png",

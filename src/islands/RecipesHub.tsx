@@ -15,7 +15,10 @@ type FullRecipe = {
   skills: string[];
   ingredients: (string | string[])[];
   shaped: boolean;
-  pattern?: (string | null)[][] | null;
+  pattern?: (string | string[] | null)[][] | null;
+  added_version?: string;
+  removed_version?: string;
+  _mergedFromId?: string;
 };
 
 type OutputGroup = {
@@ -470,6 +473,667 @@ function sortGroupRecipes(group: OutputGroup): OutputGroup {
   };
 }
 
+function sameStringList(a: string[] = [], b: string[] = []): boolean {
+  return a.length === b.length && a.every((value, index) => value === b[index]);
+}
+
+const STATION_RANK: Record<string, number> = {
+  hand: 0,
+  workbench: 1,
+  flint_workbench: 2,
+  copper_workbench: 3,
+  silver_workbench: 4,
+  gold_workbench: 5,
+  iron_workbench: 6,
+  hardstone_workbench: 7,
+  ancient_metal_workbench: 8,
+  mithril_workbench: 9,
+  adamantium_workbench: 10,
+  stone_furnace: 20,
+  blast_furnace: 21,
+  obsidian_furnace: 22,
+  netherrack_furnace: 23,
+  cauldron: 24,
+  brewing_stand: 25,
+};
+
+function mergeAltIds(values: (string | string[])[]): string[] {
+  return [...new Set(values.flatMap(value => Array.isArray(value) ? value : [value]).map(id => getCanonicalItemId(id)))];
+}
+
+function clonePattern(pattern?: (string | string[] | null)[][] | null): (string | string[] | null)[][] | null {
+  if (!pattern) return null;
+  return pattern.map(row => row.map(cell => Array.isArray(cell) ? [...cell] : cell));
+}
+
+function mergeDisplayRecipes(base: FullRecipe, updates: Partial<FullRecipe>): FullRecipe {
+  return {
+    ...base,
+    ...updates,
+    skills: updates.skills ?? [...(base.skills ?? [])],
+    ingredients: updates.ingredients ?? [...(base.ingredients ?? [])],
+    pattern: updates.pattern !== undefined ? updates.pattern : clonePattern(base.pattern),
+  };
+}
+
+function pickLowestStationRecipe(recipes: FullRecipe[]): FullRecipe {
+  return [...recipes].sort((a, b) => (STATION_RANK[a.station] ?? 999) - (STATION_RANK[b.station] ?? 999) || compareRecipes(getRecipeOutputId(a.output), a, b))[0];
+}
+
+function getDisplayCacheKey(group: OutputGroup): string {
+  return [
+    group.outputId,
+    ...group.recipes.map(recipe => [
+      recipe.id,
+      recipe.station,
+      recipe.outputQty,
+      recipe.shaped ? '1' : '0',
+      recipe.added_version ?? '',
+      recipe.removed_version ?? '',
+    ].join('|')),
+  ].join('::');
+}
+
+const displayRecipeCache = new Map<string, FullRecipe[]>();
+
+function tryMergeSimpleAltPair(group: OutputGroup, recipes: FullRecipe[]): FullRecipe[] | null {
+  if (recipes.length < 2) return null;
+  const [a, ...rest] = recipes;
+  if (
+    !rest.every(b =>
+      a.station === b.station &&
+      a.outputQty === b.outputQty &&
+      a.shaped === b.shaped &&
+      a.ingredients.length === b.ingredients.length &&
+      sameStringList(a.skills, b.skills) &&
+      (a.added_version ?? null) === (b.added_version ?? null) &&
+      (a.removed_version ?? null) === (b.removed_version ?? null)
+    )
+  ) {
+    return null;
+  }
+
+  const differingIndexes: number[] = [];
+  for (let i = 0; i < a.ingredients.length; i++) {
+    const variants = new Set(recipes.map(r => JSON.stringify(r.ingredients[i])));
+    if (variants.size > 1) differingIndexes.push(i);
+  }
+  if (differingIndexes.length !== 1) return null;
+
+  const diffIndex = differingIndexes[0];
+  const mergedAlt = mergeAltIds(recipes.map(r => r.ingredients[diffIndex]));
+  const mergedIngredients = [...a.ingredients];
+  mergedIngredients[diffIndex] = mergedAlt;
+
+  let pattern = clonePattern(a.pattern);
+  if (pattern && a.shaped) {
+    const oldValues = mergeAltIds(recipes.map(r => r.ingredients[diffIndex]));
+    pattern = pattern.map(row => row.map(cell => {
+      if (!cell) return cell;
+      const cellIds = mergeAltIds([cell]);
+      return cellIds.length === 1 && oldValues.includes(cellIds[0]) ? mergedAlt : cell;
+    }));
+  }
+
+  return [
+    mergeDisplayRecipes(a, {
+      ingredients: mergedIngredients,
+      pattern,
+    }),
+  ].sort((x, y) => compareRecipes(group.outputId, x, y));
+}
+
+function collapseEquivalentAcrossStations(group: OutputGroup, recipes: FullRecipe[]): FullRecipe[] {
+  const buckets = new Map<string, FullRecipe[]>();
+  for (const recipe of recipes) {
+    const key = JSON.stringify({
+      outputQty: recipe.outputQty,
+      shaped: recipe.shaped,
+      ingredients: recipe.ingredients,
+      pattern: recipe.pattern ?? null,
+      added: recipe.added_version ?? null,
+      removed: recipe.removed_version ?? null,
+      skills: recipe.skills ?? [],
+    });
+    if (!buckets.has(key)) buckets.set(key, []);
+    buckets.get(key)!.push(recipe);
+  }
+
+  return [...buckets.values()]
+    .map(bucket => pickLowestStationRecipe(bucket))
+    .sort((a, b) => compareRecipes(group.outputId, a, b));
+}
+
+function getDisplayRecipes(group: OutputGroup): FullRecipe[] {
+  const cacheKey = getDisplayCacheKey(group);
+  const cached = displayRecipeCache.get(cacheKey);
+  if (cached) return cached;
+
+  const recipes = collapseEquivalentAcrossStations(group, [...group.recipes]);
+  const currentRecipes = recipes.filter(r => !(r as any).removed_version);
+
+  if (group.outputId === 'flint_workbench') {
+    const hand = recipes.filter(r => r.station === 'hand');
+    const knifeLogs = recipes.filter(r =>
+      !r.shaped &&
+      r.station === 'flint_workbench' &&
+      r.ingredients.length === 2 &&
+      flattenIngredient(r.ingredients[0]) === 'flint_knife' &&
+      /^log_/.test(flattenIngredient(r.ingredients[1]))
+    );
+    const stringLogs = recipes.filter(r =>
+      !r.shaped &&
+      r.station === 'flint_workbench' &&
+      r.ingredients.length === 4 &&
+      flattenIngredient(r.ingredients[0]) === 'flint' &&
+      flattenIngredient(r.ingredients[1]) === 'string' &&
+      flattenIngredient(r.ingredients[2]) === 'stick' &&
+      /^log_/.test(flattenIngredient(r.ingredients[3]))
+    );
+    const leatherLogs = recipes.filter(r =>
+      !r.shaped &&
+      r.station === 'flint_workbench' &&
+      r.ingredients.length === 4 &&
+      flattenIngredient(r.ingredients[0]) === 'flint' &&
+      flattenIngredient(r.ingredients[1]) === 'leather_rope' &&
+      flattenIngredient(r.ingredients[2]) === 'stick' &&
+      /^log_/.test(flattenIngredient(r.ingredients[3]))
+    );
+    const consumed = new Set([
+      ...hand.map(r => r.id),
+      ...knifeLogs.map(r => r.id),
+      ...stringLogs.map(r => r.id),
+      ...leatherLogs.map(r => r.id),
+    ]);
+    const merged: FullRecipe[] = [];
+    if (knifeLogs.length > 0) {
+      merged.push(mergeDisplayRecipes(knifeLogs[0], {
+        ingredients: ['flint_knife', mergeAltIds(knifeLogs.map(r => r.ingredients[1]))],
+      }));
+    }
+    if (stringLogs.length > 0) {
+      merged.push(mergeDisplayRecipes(stringLogs[0], {
+        ingredients: ['flint', 'string', 'stick', mergeAltIds(stringLogs.map(r => r.ingredients[3]))],
+      }));
+    }
+    if (leatherLogs.length > 0) {
+      merged.push(mergeDisplayRecipes(leatherLogs[0], {
+        ingredients: ['flint', 'leather_rope', 'stick', mergeAltIds(leatherLogs.map(r => r.ingredients[3]))],
+      }));
+    }
+    const remainder = recipes.filter(r => !consumed.has(r.id));
+    const result = [...hand, ...merged, ...remainder].sort((a, b) => compareRecipes(group.outputId, a, b));
+    displayRecipeCache.set(cacheKey, result);
+    return result;
+  }
+
+  if (group.outputId === 'obsidian_ingot_mould') {
+    const hand = recipes.filter(r => r.station === 'hand');
+    const flintKnife = recipes.filter(r =>
+      r.station === 'copper_workbench' &&
+      r.outputQty === 1 &&
+      flattenIngredients(r.ingredients).includes('flint_knife')
+    );
+    const warHammerVariants = recipes.filter(r =>
+      r.station === 'copper_workbench' &&
+      r.outputQty === 2 &&
+      flattenIngredients(r.ingredients).some(id => /_war_hammer$/.test(id))
+    );
+    const consumed = new Set([
+      ...hand.map(r => r.id),
+      ...flintKnife.map(r => r.id),
+      ...warHammerVariants.map(r => r.id),
+    ]);
+    const merged: FullRecipe[] = [];
+    if (flintKnife.length > 0) merged.push(flintKnife[0]);
+    if (warHammerVariants.length > 0) {
+      const base = warHammerVariants[0];
+      const altTools = mergeAltIds(warHammerVariants.map(r => r.ingredients[0]));
+      const pattern = clonePattern(base.pattern);
+      if (pattern?.[1]) pattern[1][1] = altTools;
+      merged.push(mergeDisplayRecipes(base, {
+        ingredients: [altTools, 'obsidian'],
+        pattern,
+      }));
+    }
+    const remainder = recipes.filter(r => !consumed.has(r.id));
+    const result = [...hand, ...merged, ...remainder].sort((a, b) => compareRecipes(group.outputId, a, b));
+    displayRecipeCache.set(cacheKey, result);
+    return result;
+  }
+
+  const simpleAltPair = tryMergeSimpleAltPair(group, currentRecipes);
+  if (simpleAltPair) {
+    const currentIds = new Set(currentRecipes.map(r => r.id));
+    const legacyRemainder = recipes.filter(r => !currentIds.has(r.id));
+    const result = [...simpleAltPair, ...legacyRemainder].sort((a, b) => compareRecipes(group.outputId, a, b));
+    displayRecipeCache.set(cacheKey, result);
+    return result;
+  }
+
+  if (group.outputId === 'flint_hatchet') {
+    const variants = recipes.filter(r =>
+      r.shaped &&
+      r.station === 'flint_workbench' &&
+      r.outputQty === 1 &&
+      flattenIngredient(r.ingredients[0]) === 'flint' &&
+      flattenIngredient(r.ingredients[1]) === 'stick' &&
+      flattenIngredient(r.ingredients[3]) === 'stick'
+    );
+    if (variants.length > 0) {
+      const base = pickLowestStationRecipe(variants);
+      const pattern = clonePattern(base.pattern);
+      if (pattern?.[1]) pattern[1][0] = mergeAltIds(variants.map(r => r.ingredients[2]));
+      const result = [
+        mergeDisplayRecipes(base, {
+          ingredients: ['flint', 'stick', mergeAltIds(variants.map(r => r.ingredients[2])), 'stick'],
+          pattern,
+        }),
+      ];
+      displayRecipeCache.set(cacheKey, result);
+      return result;
+    }
+  }
+
+  if (group.outputId === 'sharp_flint_spear') {
+    const variants = recipes.filter(r =>
+      r.shaped &&
+      r.station === 'flint_workbench' &&
+      r.outputQty === 1 &&
+      flattenIngredient(r.ingredients[0]) === 'sharp_chip' &&
+      flattenIngredient(r.ingredients[1]) === 'stick' &&
+      flattenIngredient(r.ingredients[3]) === 'stick'
+    );
+    if (variants.length > 0) {
+      const base = pickLowestStationRecipe(variants);
+      const pattern = clonePattern(base.pattern);
+      if (pattern?.[1]) pattern[1][2] = mergeAltIds(variants.map(r => r.ingredients[2]));
+      const result = [
+        mergeDisplayRecipes(base, {
+          ingredients: ['sharp_chip', 'stick', mergeAltIds(variants.map(r => r.ingredients[2])), 'stick'],
+          pattern,
+        }),
+      ];
+      displayRecipeCache.set(cacheKey, result);
+      return result;
+    }
+  }
+
+  if (group.outputId === 'string' || group.outputId === 'leather_rope') {
+    const byStationAndQty = new Map<string, FullRecipe[]>();
+    for (const recipe of recipes) {
+      const key = `${recipe.station}|${recipe.outputQty}`;
+      if (!byStationAndQty.has(key)) byStationAndQty.set(key, []);
+      byStationAndQty.get(key)!.push(recipe);
+    }
+    const merged: FullRecipe[] = [];
+    for (const bucket of byStationAndQty.values()) {
+      if (bucket.length === 1) {
+        merged.push(bucket[0]);
+        continue;
+      }
+      const [base, ...rest] = bucket;
+      if (
+        bucket.every(r =>
+          r.shaped === base.shaped &&
+          r.outputQty === base.outputQty &&
+          r.station === base.station &&
+          sameStringList(r.skills, base.skills) &&
+          (r.added_version ?? null) === ((base as any).added_version ?? null) &&
+          (r.removed_version ?? null) === ((base as any).removed_version ?? null) &&
+          JSON.stringify(clonePattern(r.pattern)) === JSON.stringify(clonePattern(base.pattern))
+        )
+      ) {
+        const toolAlt = mergeAltIds(bucket.map(r => r.ingredients[1] ?? r.ingredients[0]));
+        if (group.outputId === 'string') {
+          merged.push(mergeDisplayRecipes(base, {
+            ingredients: [base.ingredients[0], toolAlt],
+          }));
+        } else {
+          const pattern = clonePattern(base.pattern);
+          if (pattern?.[0]) pattern[0][0] = toolAlt;
+          merged.push(mergeDisplayRecipes(base, {
+            ingredients: [toolAlt, 'leather'],
+            pattern,
+          }));
+        }
+        continue;
+      }
+      merged.push(base, ...rest);
+    }
+    const result = merged.sort((a, b) => compareRecipes(group.outputId, a, b));
+    displayRecipeCache.set(cacheKey, result);
+    return result;
+  }
+
+  if (group.outputId === 'bowl_milk' || group.outputId === 'water_bowl') {
+    const suffix = group.outputId === 'bowl_milk' ? /bucket.*milk|_of_milk$/ : /bucket.*water|_of_water$/;
+    const merged: FullRecipe[] = [];
+    const byQty = new Map<number, FullRecipe[]>();
+    for (const recipe of recipes) {
+      if (
+        !recipe.shaped &&
+        recipe.ingredients.length >= 2 &&
+        suffix.test(flattenIngredient(recipe.ingredients[0])) &&
+        recipe.ingredients.slice(1).every(ing => flattenIngredient(ing) === 'bowl')
+      ) {
+        if (!byQty.has(recipe.outputQty)) byQty.set(recipe.outputQty, []);
+        byQty.get(recipe.outputQty)!.push(recipe);
+      } else {
+        merged.push(recipe);
+      }
+    }
+    for (const bucket of byQty.values()) {
+      const base = pickLowestStationRecipe(bucket);
+      const altBuckets = mergeAltIds(bucket.map(r => r.ingredients[0]));
+      const bowls = Array.from({ length: base.outputQty }, () => 'bowl');
+      merged.push(mergeDisplayRecipes(base, { ingredients: [altBuckets, ...bowls] }));
+    }
+    const result = merged.sort((a, b) => compareRecipes(group.outputId, a, b));
+    displayRecipeCache.set(cacheKey, result);
+    return result;
+  }
+
+  if (group.outputId === 'dough') {
+    const merged: FullRecipe[] = [];
+    const byQty = new Map<number, FullRecipe[]>();
+    for (const recipe of recipes) {
+      if (
+        !recipe.shaped &&
+        recipe.ingredients.length >= 2 &&
+        /bucket.*water|_of_water$/.test(flattenIngredient(recipe.ingredients[0])) &&
+        recipe.ingredients.slice(1).every(ing => flattenIngredient(ing) === 'flour')
+      ) {
+        if (!byQty.has(recipe.outputQty)) byQty.set(recipe.outputQty, []);
+        byQty.get(recipe.outputQty)!.push(recipe);
+      } else {
+        merged.push(recipe);
+      }
+    }
+    for (const bucket of byQty.values()) {
+      const base = pickLowestStationRecipe(bucket);
+      const altBuckets = mergeAltIds(bucket.map(r => r.ingredients[0]));
+      const flour = Array.from({ length: base.outputQty }, () => 'flour');
+      merged.push(mergeDisplayRecipes(base, { ingredients: [altBuckets, ...flour] }));
+    }
+    const result = merged.sort((a, b) => compareRecipes(group.outputId, a, b));
+    displayRecipeCache.set(cacheKey, result);
+    return result;
+  }
+
+  if (group.outputId === 'cheese') {
+    const merged: FullRecipe[] = [];
+    const byQty = new Map<number, FullRecipe[]>();
+    for (const recipe of recipes) {
+      if (
+        recipe.ingredients.length >= 1 &&
+        recipe.ingredients.every(ing => /bucket.*milk|_of_milk$/.test(flattenIngredient(ing)))
+      ) {
+        if (!byQty.has(recipe.outputQty)) byQty.set(recipe.outputQty, []);
+        byQty.get(recipe.outputQty)!.push(recipe);
+      } else {
+        merged.push(recipe);
+      }
+    }
+    for (const bucket of byQty.values()) {
+      const base = pickLowestStationRecipe(bucket);
+      const altBuckets = mergeAltIds(bucket.map(r => r.ingredients[0]));
+      const repeated = Array.from({ length: base.ingredients.length }, () => altBuckets);
+      const pattern = clonePattern(base.pattern);
+      if (pattern) {
+        for (let ri = 0; ri < pattern.length; ri++) {
+          for (let ci = 0; ci < pattern[ri].length; ci++) {
+            if (pattern[ri][ci]) pattern[ri][ci] = altBuckets;
+          }
+        }
+      }
+      merged.push(mergeDisplayRecipes(base, { ingredients: repeated, pattern }));
+    }
+    return merged.sort((a, b) => compareRecipes(group.outputId, a, b));
+  }
+
+  if (group.outputId === 'cake') {
+    const merged: FullRecipe[] = [];
+    const milkRecipes = recipes.filter(r =>
+      !r.shaped &&
+      r.ingredients.length === 4 &&
+      flattenIngredient(r.ingredients[0]) === 'flour' &&
+      flattenIngredient(r.ingredients[1]) === 'sugar' &&
+      flattenIngredient(r.ingredients[2]) === 'egg' &&
+      /milk/.test(flattenIngredient(r.ingredients[3]))
+    );
+    if (milkRecipes.length > 0) {
+      const consumed = new Set(milkRecipes.map(r => r.id));
+      const base = pickLowestStationRecipe(milkRecipes);
+      merged.push(mergeDisplayRecipes(base, {
+        ingredients: ['flour', 'sugar', 'egg', mergeAltIds(milkRecipes.map(r => r.ingredients[3]))],
+      }));
+      merged.push(...recipes.filter(r => !consumed.has(r.id)));
+      const result = merged.sort((a, b) => compareRecipes(group.outputId, a, b));
+      displayRecipeCache.set(cacheKey, result);
+      return result;
+    }
+  }
+
+  if (group.outputId === 'cookie') {
+    const merged: FullRecipe[] = [];
+    const consumed = new Set<string>();
+    const simpleDough = recipes.filter(r =>
+      !r.shaped &&
+      sameStringList(flattenIngredients(r.ingredients), ['dough', 'cocoa_beans', 'sugar'])
+    );
+    const simpleChocolate = recipes.filter(r =>
+      !r.shaped &&
+      sameStringList(flattenIngredients(r.ingredients), ['dough', 'chocolate'])
+    );
+    const bowlCocoa = recipes.filter(r =>
+      !r.shaped &&
+      sameStringList(flattenIngredients(r.ingredients), ['flour', 'water_bowl', 'cocoa_beans', 'sugar'])
+    );
+    const bowlChocolate = recipes.filter(r =>
+      !r.shaped &&
+      sameStringList(flattenIngredients(r.ingredients), ['flour', 'water_bowl', 'chocolate'])
+    );
+    const batchChocolate = new Map<number, FullRecipe[]>();
+    const batchCocoa = new Map<number, FullRecipe[]>();
+    for (const recipe of recipes) {
+      const flat = flattenIngredients(recipe.ingredients);
+      const first = flat[0];
+      if (!recipe.shaped && /bucket.*water|_of_water$/.test(first)) {
+        const flourCount = flat.filter(id => id === 'flour').length;
+        const chocolateCount = flat.filter(id => id === 'chocolate').length;
+        const cocoaCount = flat.filter(id => id === 'cocoa_beans').length;
+        const sugarCount = flat.filter(id => id === 'sugar').length;
+        if (flourCount === recipe.outputQty && chocolateCount === recipe.outputQty && flourCount > 0 && flat.length === 1 + flourCount + chocolateCount) {
+          if (!batchChocolate.has(recipe.outputQty)) batchChocolate.set(recipe.outputQty, []);
+          batchChocolate.get(recipe.outputQty)!.push(recipe);
+        } else if (flourCount === recipe.outputQty && cocoaCount === recipe.outputQty && sugarCount === recipe.outputQty && flourCount > 0 && flat.length === 1 + flourCount + cocoaCount + sugarCount) {
+          if (!batchCocoa.has(recipe.outputQty)) batchCocoa.set(recipe.outputQty, []);
+          batchCocoa.get(recipe.outputQty)!.push(recipe);
+        }
+      }
+    }
+    for (const bucket of [simpleDough, simpleChocolate, bowlCocoa, bowlChocolate]) {
+      bucket.forEach(r => consumed.add(r.id));
+      if (bucket.length > 0) merged.push(bucket[0]);
+    }
+    for (const [qty, bucket] of batchChocolate.entries()) {
+      bucket.forEach(r => consumed.add(r.id));
+      const base = pickLowestStationRecipe(bucket);
+      merged.push(mergeDisplayRecipes(base, {
+        ingredients: [mergeAltIds(bucket.map(r => r.ingredients[0])), ...Array.from({ length: qty }, () => 'flour'), ...Array.from({ length: qty }, () => 'chocolate')],
+      }));
+    }
+    for (const [qty, bucket] of batchCocoa.entries()) {
+      bucket.forEach(r => consumed.add(r.id));
+      const base = pickLowestStationRecipe(bucket);
+      merged.push(mergeDisplayRecipes(base, {
+        ingredients: [mergeAltIds(bucket.map(r => r.ingredients[0])), ...Array.from({ length: qty }, () => 'flour'), ...Array.from({ length: qty }, () => 'cocoa_beans'), ...Array.from({ length: qty }, () => 'sugar')],
+      }));
+    }
+    merged.push(...recipes.filter(r => !consumed.has(r.id)));
+    const result = merged.sort((a, b) => compareRecipes(group.outputId, a, b));
+    displayRecipeCache.set(cacheKey, result);
+    return result;
+  }
+
+  if (group.outputId === 'obsidian_tool_bench') {
+    const stringLogs = recipes.filter(r =>
+      !r.shaped &&
+      r.station === 'flint_workbench' &&
+      sameStringList(flattenIngredients(r.ingredients).slice(0, 3), ['obsidian', 'string', 'stick']) &&
+      /^log_/.test(flattenIngredient(r.ingredients[3]))
+    );
+    const leatherLogs = recipes.filter(r =>
+      !r.shaped &&
+      r.station === 'flint_workbench' &&
+      sameStringList(flattenIngredients(r.ingredients).slice(0, 3), ['obsidian', 'leather_rope', 'stick']) &&
+      /^log_/.test(flattenIngredient(r.ingredients[3]))
+    );
+    const consumed = new Set([...stringLogs, ...leatherLogs].map(r => r.id));
+    const merged: FullRecipe[] = [];
+    if (stringLogs.length > 0) {
+      merged.push(mergeDisplayRecipes(stringLogs[0], {
+        ingredients: ['obsidian', 'string', 'stick', mergeAltIds(stringLogs.map(r => r.ingredients[3]))],
+      }));
+    }
+    if (leatherLogs.length > 0) {
+      merged.push(mergeDisplayRecipes(leatherLogs[0], {
+        ingredients: ['obsidian', 'leather_rope', 'stick', mergeAltIds(leatherLogs.map(r => r.ingredients[3]))],
+      }));
+    }
+    merged.push(...recipes.filter(r => !consumed.has(r.id)));
+    return merged.sort((a, b) => compareRecipes(group.outputId, a, b));
+  }
+
+  if (group.outputId === 'leaf_portal_stone' || group.outputId === 'log_portal_stone') {
+    const altRecipes = recipes.filter(r => !r.shaped && r.ingredients.length === 2 && flattenIngredient(r.ingredients[1]) === 'obsidian');
+    if (altRecipes.length > 0) {
+      const base = altRecipes[0];
+      const result = [
+        mergeDisplayRecipes(base, {
+          ingredients: [mergeAltIds(altRecipes.map(r => r.ingredients[0])), 'obsidian'],
+        }),
+      ];
+      displayRecipeCache.set(cacheKey, result);
+      return result;
+    }
+  }
+
+  if (group.outputId === 'skin_care_bottle') {
+    const altRecipes = recipes.filter(r =>
+      !r.shaped &&
+      sameStringList(flattenIngredients(r.ingredients).slice(0, 3), ['bone_meal', 'egg', 'glass_bottle']) &&
+      flattenIngredient(r.ingredients[4]) === 'clay_ball'
+    );
+    if (altRecipes.length > 0) {
+      const base = altRecipes[0];
+      const result = [
+        mergeDisplayRecipes(base, {
+          ingredients: ['bone_meal', 'egg', 'glass_bottle', mergeAltIds(altRecipes.map(r => r.ingredients[3])), 'clay_ball'],
+        }),
+      ];
+      displayRecipeCache.set(cacheKey, result);
+      return result;
+    }
+  }
+
+  if (group.outputId === 'book') {
+    const knowledgeBooks = recipes.filter(r =>
+      !r.shaped &&
+      r.outputQty === 1 &&
+      r.ingredients.length === 1 &&
+      /_knowledge_book$/.test(flattenIngredient(r.ingredients[0]))
+    );
+    const standardBook = recipes.filter(r =>
+      !r.shaped &&
+      r.outputQty === 1 &&
+      sameStringList(flattenIngredients(r.ingredients), ['paper', 'paper', 'paper', 'leather'])
+    );
+    if (knowledgeBooks.length > 0) {
+      const consumed = new Set([...knowledgeBooks, ...standardBook].map(r => r.id));
+      const merged: FullRecipe[] = [];
+      const base = pickLowestStationRecipe(knowledgeBooks);
+      merged.push(mergeDisplayRecipes(base, {
+        ingredients: [mergeAltIds(knowledgeBooks.map(r => r.ingredients[0]))],
+      }));
+      merged.push(...standardBook);
+      merged.push(...recipes.filter(r => !consumed.has(r.id)));
+      const result = merged.sort((a, b) => compareRecipes(group.outputId, a, b));
+      displayRecipeCache.set(cacheKey, result);
+      return result;
+    }
+  }
+
+  if (/_nugget$/.test(group.outputId)) {
+    const merged: FullRecipe[] = [];
+    const consumed = new Set<string>();
+    const warHammerBuckets = new Map<string, FullRecipe[]>();
+    const singleSourceBuckets = new Map<string, FullRecipe[]>();
+    for (const recipe of recipes) {
+      if (recipe.ingredients.length === 2) {
+        const first = flattenIngredient(recipe.ingredients[0]);
+        const second = flattenIngredient(recipe.ingredients[1]);
+        if (/_war_hammer$/.test(second)) {
+          const key = `${first}|${recipe.outputQty}`;
+          if (!warHammerBuckets.has(key)) warHammerBuckets.set(key, []);
+          warHammerBuckets.get(key)!.push(recipe);
+          continue;
+        }
+      }
+      if (recipe.ingredients.every(ing => flattenIngredient(ing) === flattenIngredient(recipe.ingredients[0]))) {
+        const source = flattenIngredient(recipe.ingredients[0]);
+        if (/_coin$/.test(source) || /_chain$/.test(source) || /_arrow$/.test(source)) {
+          const key = `${source}|${recipe.outputQty}`;
+          if (!singleSourceBuckets.has(key)) singleSourceBuckets.set(key, []);
+          singleSourceBuckets.get(key)!.push(recipe);
+          continue;
+        }
+      }
+    }
+    for (const bucket of warHammerBuckets.values()) {
+      bucket.forEach(r => consumed.add(r.id));
+      const base = pickLowestStationRecipe(bucket);
+      const pattern = clonePattern(base.pattern);
+      if (pattern) {
+        for (let ri = 0; ri < pattern.length; ri++) {
+          for (let ci = 0; ci < pattern[ri].length; ci++) {
+            if (pattern[ri][ci] && /_war_hammer$/.test(Array.isArray(pattern[ri][ci]) ? String((pattern[ri][ci] as string[])[0]) : String(pattern[ri][ci]))) {
+              pattern[ri][ci] = mergeAltIds(bucket.map(r => r.ingredients[1]));
+            }
+          }
+        }
+      }
+      merged.push(mergeDisplayRecipes(base, {
+        ingredients: [base.ingredients[0], mergeAltIds(bucket.map(r => r.ingredients[1]))],
+        pattern,
+      }));
+    }
+    for (const bucket of singleSourceBuckets.values()) {
+      bucket.forEach(r => consumed.add(r.id));
+      const base = pickLowestStationRecipe(bucket);
+      const source = flattenIngredient(base.ingredients[0]);
+      const repeated = Array.from({ length: base.ingredients.length }, () => source);
+      const pattern = clonePattern(base.pattern);
+      merged.push(mergeDisplayRecipes(base, {
+        ingredients: repeated,
+        pattern,
+      }));
+    }
+    merged.push(...recipes.filter(r => !consumed.has(r.id)));
+    const result = merged.sort((a, b) => compareRecipes(group.outputId, a, b));
+    displayRecipeCache.set(cacheKey, result);
+    return result;
+  }
+
+  displayRecipeCache.set(cacheKey, recipes);
+  return recipes;
+}
+
+function getDisplayRecipeCount(group: OutputGroup): number {
+  return getDisplayRecipes(group).length;
+}
+
 function groupByOutput(recs: FullRecipe[]): OutputGroup[] {
   const map = new Map<string, FullRecipe[]>();
   for (const r of recs) {
@@ -666,6 +1330,7 @@ function RecipeListItem({ group, lang, onSelect }: {
   group: OutputGroup; lang: 'hu' | 'en' | 'ru'; onSelect: (id: string) => void;
 }) {
   const [hov, setHov] = useState(false);
+  const displayRecipeCount = getDisplayRecipeCount(group);
   return (
     <div
       onClick={() => onSelect(group.outputId)}
@@ -691,8 +1356,8 @@ function RecipeListItem({ group, lang, onSelect }: {
         </div>
         <div style={{ fontSize: '.72em', color: 'var(--text2)' }}>{group.primaryRecipe.station}</div>
       </div>
-      {group.recipes.length > 1 && (
-        <span style={{ fontSize: '.7em', color: 'var(--gold)', flexShrink: 0 }}>×{group.recipes.length}</span>
+      {displayRecipeCount > 1 && (
+        <span style={{ fontSize: '.7em', color: 'var(--gold)', flexShrink: 0 }}>×{displayRecipeCount}</span>
       )}
     </div>
   );
@@ -706,6 +1371,7 @@ function ItemDetailPanel({ itemId, lang, onClose, onSelectGroup }: {
 }) {
   const usedIn = useMemo(() => getUsedInGroups(itemId), [itemId]);
   const craftingGroup = useMemo(() => getCraftingGroups(itemId)[0] ?? null, [itemId]);
+  const displayCraftingCount = useMemo(() => craftingGroup ? getDisplayRecipeCount(craftingGroup) : 0, [craftingGroup]);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
@@ -739,8 +1405,8 @@ function ItemDetailPanel({ itemId, lang, onClose, onSelectGroup }: {
           <div style={{ marginBottom: 20 }}>
             <div style={{ fontSize: '.8em', fontWeight: 600, color: 'var(--text2)', marginBottom: 8, textTransform: 'uppercase', letterSpacing: '.06em' }}>
               {lang === 'hu' ? 'Craftolás' : lang === 'ru' ? 'Крафт' : 'Crafting'}
-              {craftingGroup.recipes.length > 1 && (
-                <span style={{ marginLeft: 6, fontWeight: 400, color: 'var(--gold)', textTransform: 'none' }}>({craftingGroup.recipes.length} variáns)</span>
+              {displayCraftingCount > 1 && (
+                <span style={{ marginLeft: 6, fontWeight: 400, color: 'var(--gold)', textTransform: 'none' }}>({displayCraftingCount} variáns)</span>
               )}
             </div>
             <div style={{
@@ -827,6 +1493,7 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
   onBackToSandbox?: () => void;
 }) {
   const [itemDetailId, setItemDetailId] = useState<string | null>(null);
+  const displayRecipes = useMemo(() => getDisplayRecipes(group), [group]);
 
   useEffect(() => { setItemDetailId(null); }, [group.outputId]);
 
@@ -896,7 +1563,7 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
 
             {/* Recipe variants */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-              {group.recipes.map((r, i) => {
+              {displayRecipes.map((r, i) => {
                 const grid = r.shaped && r.pattern ? r.pattern : shapelessToGrid(r.ingredients);
                 const flat = flattenIngredients(r.ingredients);
                 const extra = flat.length > 9 ? flat.length - 9 : 0;
@@ -915,7 +1582,7 @@ function DetailDrawer({ group, lang, onClose, onSelectGroup, onBackToSandbox }: 
                     {/* Badges */}
                     <div style={{ marginBottom: 12, display: 'flex', gap: 6, flexWrap: 'wrap' }}>
                       {!r.shaped && <span className="badge-shapeless">🔀 {lang === 'hu' ? 'Szabad' : lang === 'ru' ? 'Без раскладки' : 'Shapeless'}</span>}
-                      {group.recipes.length > 1 && (
+                      {displayRecipes.length > 1 && (
                         <span style={{ fontSize: '.72em', padding: '2px 7px', borderRadius: 4, background: 'rgba(255,200,0,.12)', color: 'var(--gold)', border: '1px solid rgba(255,200,0,.25)' }}>
                           {lang === 'hu' ? `${i + 1}. variáns` : lang === 'ru' ? `Вариант ${i + 1}` : `Variant ${i + 1}`}
                         </span>
@@ -1646,7 +2313,7 @@ export default function RecipesHub() {
     });
   }, [keyword, stationFilter, skillFilter, ingredientFilter, typeFilter, lang]);
 
-  const totalRecipeCount = filteredGroups.reduce((s, g) => s + g.recipes.length, 0);
+  const totalRecipeCount = filteredGroups.reduce((s, g) => s + getDisplayRecipeCount(g), 0);
   const selectedGroup = selectedOutputId ? allGroups.find(x => x.allOutputIds.includes(getCanonicalItemId(selectedOutputId))) ?? null : null;
 
   // Scroll to highlighted card after sandbox→browse navigation
@@ -1789,6 +2456,7 @@ export default function RecipesHub() {
             {filteredGroups.map(g => {
               const isSelected = selectedOutputId === g.outputId;
               const displayName = getItemName(g.outputId, lang);
+              const displayRecipeCount = getDisplayRecipeCount(g);
               return (
                 <div
                   key={g.outputId}
@@ -1829,9 +2497,9 @@ export default function RecipesHub() {
                     </span>
                     <div style={{ display: 'flex', gap: 3, flexShrink: 0 }}>
                       {g.hasShapelessVariant && <span className="badge-shapeless">🔀</span>}
-                      {g.recipes.length > 1 && (
+                      {displayRecipeCount > 1 && (
                         <span style={{ fontSize: '.68em', padding: '1px 5px', borderRadius: 3, background: 'rgba(255,200,0,.15)', color: '#f0c040', border: '1px solid rgba(255,200,0,.3)', fontWeight: 700 }}>
-                          ×{g.recipes.length}
+                          ×{displayRecipeCount}
                         </span>
                       )}
                     </div>

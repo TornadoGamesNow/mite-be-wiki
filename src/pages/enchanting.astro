@@ -30,8 +30,8 @@ const sidebarGroups = getSidebarGroups('enchanting');
     '20 MITE-specific enchantments — with descriptions and XP table',
   ],
   ru: [
-    '3 уровня столов зачарования: Алмаз → Изумруд → Кастомный (Продвинутый)',
-    'Кастомный стол: не нужны полки, выбирай конкретные чары за опыт',
+    '3 уровня столов зачарования: Алмаз → Изумруд → Особый',
+    'Особый стол: не нужны полки, выбирай конкретные чары за опыт',
     '20 MITE-специфичных чар — с описаниями и таблицей опыта',
   ],
 }} />
@@ -45,7 +45,7 @@ const sidebarGroups = getSidebarGroups('enchanting');
 <table class="compare-table">
   <tr><th>Asztal</th><th>Könyvespolc?</th><th>Bűvölés módja</th><th>Munkaasztal</th></tr>
   <tr>
-    <td><img src={`${base}/img/items/enchantment_table.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Bűvölőasztal</strong></td>
+    <td><img src={`${base}/img/items/enchantment_table.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Gyémánt Bűvölőasztal</strong></td>
     <td>Igen (max 15)</td><td>Véletlenszerű (3 opció)</td><td>Vas Munkaasztal</td>
   </tr>
   <tr>
@@ -58,10 +58,10 @@ const sidebarGroups = getSidebarGroups('enchanting');
   </tr>
 </table>
 
-<h3 id="base-table">Bűvölőasztal</h3>
-<p>Az alap bűvölőasztal. Minden bűvöléshez <strong>3 Lapis Lazuli</strong> szükséges, és a lapis megmarad az asztalban bezárás után is.</p>
+<h3 id="base-table">Gyémánt Bűvölőasztal</h3>
+<p>Az alap gyémánt bűvölőasztal. Minden bűvöléshez <strong>3 Lapis Lazuli</strong> szükséges, és a lapis megmarad az asztalban bezárás után is.</p>
 <div class="craft-section">
-  <CraftingGrid recipeFullId="enchantment_table_841396" label={{ hu: "Bűvölőasztal", en: "Enchantment Table" }} />
+  <CraftingGrid recipeFullId="enchantment_table_841396" label={{ hu: "Gyémánt Bűvölőasztal", en: "Diamond Enchantment Table" }} />
 </div>
 
 <h3 id="emerald-table">Smaragd Bűvölőasztal</h3>
@@ -74,7 +74,7 @@ const sidebarGroups = getSidebarGroups('enchanting');
 <p>A legfejlettebb bűvölőasztal (v0.6.0+). <strong>Nem kell könyvespolc</strong> — te választod ki pontosan melyik bűvölést akarod, és fizetsz érte XP-ben + <strong>3 Lapis Lazuli + 1 Könyv</strong>.</p>
 <div class="warning-box">⚠️ <strong>v0.9.0:</strong> Craftoláshoz az <strong>Egyéni Bűvölőasztal Tudáskönyve</strong> szükséges. Csak <strong>Mithril vagy Adamantium Munkaasztalon</strong> készíthető, és csak Mithril/Adamantium csákány vagy harci kalapács töri szét.</div>
 <div class="craft-section">
-  <CraftingGrid recipeFullId="enchantment_table_custom_32141" label={{ hu: "Egyéni Bűvölőasztal", en: "Enchantment Table Custom" }} />
+  <CraftingGrid recipeFullId="enchantment_table_custom_32141" label={{ hu: "Egyéni Bűvölőasztal", en: "Custom Enchantment Table" }} />
 </div>
 <div class="tip">Arany almát az Egyéni Asztalnál bűvölni <strong>csak 100 XP-be kerül</strong>, extra anyag nem szükséges. Bűvölések csak erősebbé tehetők — eltávolítani vagy gyengíteni NEM lehet.</div>
 
@@ -229,7 +229,7 @@ const sidebarGroups = getSidebarGroups('enchanting');
 <table class="compare-table">
   <tr><th>Table</th><th>Bookshelves?</th><th>Enchanting Method</th><th>Workbench</th></tr>
   <tr>
-    <td><img src={`${base}/img/items/enchantment_table.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Enchantment Table</strong></td>
+    <td><img src={`${base}/img/items/enchantment_table.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Diamond Enchantment Table</strong></td>
     <td>Yes (max 15)</td><td>Random (3 options)</td><td>Iron Workbench</td>
   </tr>
   <tr>
@@ -237,15 +237,15 @@ const sidebarGroups = getSidebarGroups('enchanting');
     <td>Yes (max 15)</td><td>Random (stronger)</td><td>—</td>
   </tr>
   <tr style="background:rgba(200,150,255,0.08)">
-    <td><img src={`${base}/img/items/enchantment_table_custom.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Enchantment Table Custom</strong></td>
+    <td><img src={`${base}/img/items/enchantment_table_custom.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Custom Enchantment Table</strong></td>
     <td><strong>No!</strong></td><td>Choose specific enchantments for XP</td><td>Mithril / Adamantium</td>
   </tr>
 </table>
 
-<h3 id="base-table">Enchantment Table</h3>
-<p>The base enchanting table. Each enchantment requires <strong>3 Lapis Lazuli</strong>, which is saved inside the table when you close it.</p>
+<h3 id="base-table">Diamond Enchantment Table</h3>
+<p>The base diamond enchanting table. Each enchantment requires <strong>3 Lapis Lazuli</strong>, which is saved inside the table when you close it.</p>
 <div class="craft-section">
-  <CraftingGrid recipeFullId="enchantment_table_841396" label={{ hu: "Bűvölőasztal", en: "Enchantment Table" }} />
+  <CraftingGrid recipeFullId="enchantment_table_841396" label={{ hu: "Gyémánt Bűvölőasztal", en: "Diamond Enchantment Table" }} />
 </div>
 
 <h3 id="emerald-table">Emerald Enchantment Table</h3>
@@ -254,11 +254,11 @@ const sidebarGroups = getSidebarGroups('enchanting');
   <CraftingGrid recipe={{ gridSize: '3x3', pattern: [['_','book','_'],['emerald','obsidian','emerald'],['obsidian','obsidian','obsidian']], output: 'enchantment_table_emerald', label: { hu: 'Smaragd Bűvölőasztal', en: 'Emerald Enchantment Table' } }} />
 </div>
 
-<h3 id="custom-table">Enchantment Table Custom</h3>
+<h3 id="custom-table">Custom Enchantment Table</h3>
 <p>The most advanced table (v0.6.0+). <strong>No bookshelves required</strong> — you choose exactly which enchantment you want and pay XP + <strong>3 Lapis Lazuli + 1 Book</strong>.</p>
-<div class="warning-box">⚠️ <strong>v0.9.0:</strong> Requires the <strong>Enchantment Table Custom Knowledge Book</strong> to craft. Can only be crafted at a <strong>Mithril or Adamantium Workbench</strong>, and can only be broken by Mithril/Adamantium warhammers or pickaxes.</div>
+<div class="warning-box">⚠️ <strong>v0.9.0:</strong> Requires the <strong>Custom Enchantment Table Knowledge Book</strong> to craft. Can only be crafted at a <strong>Mithril or Adamantium Workbench</strong>, and can only be broken by Mithril/Adamantium warhammers or pickaxes.</div>
 <div class="craft-section">
-  <CraftingGrid recipeFullId="enchantment_table_custom_32141" label={{ hu: "Egyéni Bűvölőasztal", en: "Enchantment Table Custom" }} />
+  <CraftingGrid recipeFullId="enchantment_table_custom_32141" label={{ hu: "Egyéni Bűvölőasztal", en: "Custom Enchantment Table" }} />
 </div>
 <div class="tip">Enchanting a golden apple at the Custom table only costs <strong>100 XP</strong>, no extra materials. Enchantments can only be added or strengthened — they cannot be removed or weakened here.</div>
 
@@ -411,7 +411,7 @@ const sidebarGroups = getSidebarGroups('enchanting');
 <table class="compare-table">
   <tr><th>Стол</th><th>Полки?</th><th>Метод</th><th>Верстак</th></tr>
   <tr>
-    <td><img src={`${base}/img/items/enchantment_table.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Стол зачарования</strong></td>
+    <td><img src={`${base}/img/items/enchantment_table.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Алмазный стол зачарования</strong></td>
     <td>Да (макс 15)</td><td>Случайный (3 варианта)</td><td>Железный верстак</td>
   </tr>
   <tr>
@@ -419,15 +419,15 @@ const sidebarGroups = getSidebarGroups('enchanting');
     <td>Да (макс 15)</td><td>Случайный (мощнее)</td><td>—</td>
   </tr>
   <tr style="background:rgba(200,150,255,0.08)">
-    <td><img src={`${base}/img/items/enchantment_table_custom.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Кастомный стол</strong></td>
+    <td><img src={`${base}/img/items/enchantment_table_custom.png`} alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> <strong>Особый стол зачарования</strong></td>
     <td><strong>Нет!</strong></td><td>Выбор чар за опыт</td><td>Мифрил / Адамант</td>
   </tr>
 </table>
 
-<h3 id="base-table">Стол зачарования</h3>
-<p>Базовый стол. Каждое зачарование требует <strong>3 лазурита</strong>, который сохраняется при закрытии.</p>
+<h3 id="base-table">Алмазный стол зачарования</h3>
+<p>Базовый алмазный стол. Каждое зачарование требует <strong>3 лазурита</strong>, который сохраняется при закрытии.</p>
 <div class="craft-section">
-  <CraftingGrid recipeFullId="enchantment_table_841396" label={{ hu: "Bűvölőasztal", en: "Enchantment Table" }} />
+  <CraftingGrid recipeFullId="enchantment_table_841396" label={{ hu: "Gyémánt Bűvölőasztal", en: "Diamond Enchantment Table" }} />
 </div>
 
 <h3 id="emerald-table">Изумрудный стол зачарования</h3>
@@ -436,13 +436,13 @@ const sidebarGroups = getSidebarGroups('enchanting');
   <CraftingGrid recipe={{ gridSize: '3x3', pattern: [['_','book','_'],['emerald','obsidian','emerald'],['obsidian','obsidian','obsidian']], output: 'enchantment_table_emerald', label: { hu: 'Smaragd Bűvölőasztal', en: 'Emerald Enchantment Table' } }} />
 </div>
 
-<h3 id="custom-table">Кастомный стол зачарования</h3>
+<h3 id="custom-table">Особый стол зачарования</h3>
 <p>Самый мощный стол (с v0.6.0). <strong>Полки не нужны</strong> — ты выбираешь нужное зачарование и платишь опытом + <strong>3 лазурита + 1 книга</strong>.</p>
-<div class="warning-box">⚠️ <strong>v0.9.0:</strong> Для крафта нужна <strong>Книга знаний кастомного стола</strong>. Крафтится только на <strong>Мифриловом или Адамантовом верстаке</strong>, ломается только Мифриловым/Адамантовым молотом или киркой.</div>
+<div class="warning-box">⚠️ <strong>v0.9.0:</strong> Для крафта нужна <strong>Книга знаний особого стола зачарования</strong>. Крафтится только на <strong>Мифриловом или Адамантовом верстаке</strong>, ломается только Мифриловым/Адамантовым молотом или киркой.</div>
 <div class="craft-section">
-  <CraftingGrid recipeFullId="enchantment_table_custom_32141" label={{ hu: "Egyéni Bűvölőasztal", en: "Enchantment Table Custom" }} />
+  <CraftingGrid recipeFullId="enchantment_table_custom_32141" label={{ hu: "Egyéni Bűvölőasztal", en: "Custom Enchantment Table" }} />
 </div>
-<div class="tip">Зачарование золотого яблока на кастомном столе стоит всего <strong>100 опыта</strong>. Чары можно только усиливать — убрать или ослабить здесь нельзя.</div>
+<div class="tip">Зачарование золотого яблока на особом столе стоит всего <strong>100 опыта</strong>. Чары можно только усиливать — убрать или ослабить здесь нельзя.</div>
 
 <!-- ─── MITE-специфичные чары ─── -->
 <div class="enchant-search-bar" style="margin:1.5rem 0 0.5rem">
@@ -498,7 +498,7 @@ const sidebarGroups = getSidebarGroups('enchanting');
 </table>
 
 <!-- ─── XP Table ─── -->
-<h2 id="xp-table">Таблица опыта — Кастомный стол</h2>
+<h2 id="xp-table">Таблица опыта — Особый стол зачарования</h2>
 <p>Стоимость опыта для каждого чара и уровня (+ 3 лазурита + 1 книга):</p>
 
 <table class="compare-table" style="font-size:0.82em">
