@@ -6642,40 +6642,6 @@
     ]
   },
   {
-    "id": "flint_292",
-    "item_num": 318,
-    "output": "flint",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 100,
-    "skills": [],
-    "ingredients": [
-      "flint_shard",
-      "flint_shard",
-      "flint_shard",
-      "flint_shard"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "flint_shard",
-        "flint_shard",
-        "_"
-      ],
-      [
-        "flint_shard",
-        "flint_shard",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ],
-    "removed_version": "pre-0.5.5"
-  },
-  {
     "id": "painting_293",
     "item_num": 321,
     "output": "painting",
@@ -29489,41 +29455,6 @@
       "early-game",
       "tool",
       "knife"
-    ]
-  },
-  {
-    "id": "flint",
-    "item_num": 1309,
-    "output": "flint",
-    "outputQty": 1,
-    "station": "hand",
-    "difficulty": 100,
-    "skills": [],
-    "ingredients": [
-      "flint_shard",
-      "flint_shard",
-      "flint_shard",
-      "flint_shard"
-    ],
-    "shaped": true,
-    "label": {
-      "hu": "Kova (KĹ‘zet)",
-      "en": "Flint"
-    },
-    "pattern": [
-      [
-        "flint_shard",
-        "flint_shard"
-      ],
-      [
-        "flint_shard",
-        "flint_shard"
-      ]
-    ],
-    "gridSize": "2x2",
-    "tags": [
-      "early-game",
-      "material"
     ]
   },
   {
