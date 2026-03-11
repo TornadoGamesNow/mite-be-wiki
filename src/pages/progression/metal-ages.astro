@@ -28,17 +28,17 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
   hu: [
     'Réz és ezüst: szitából vagy bányászatból — az első igazi fémek',
     'Ötvözetek (bronz, ezüst-réz, HCS) ötvöző kemencében készülnek',
-    'Vas olvasztáshoz 26 blokkos többblokkos kőkemence szükséges',
+    'Vas olvasztáshoz 26 blokkos Nagy Kemence (Blast Furnace) szükséges',
   ],
   en: [
     'Copper & silver from sieve or mining — your first real metals',
     'Alloys (bronze, silver-copper, HCS) are made in the Alloying Furnace',
-    'Iron smelting needs a 26-block multiblock stone furnace',
+    'Iron smelting needs a 26-block Blast Furnace with Furnace Core',
   ],
   ru: [
     'Медь и серебро из сита или шахты — первые настоящие металлы',
     'Сплавы (бронза, серебро-медь, HCS) — в плавильной печи',
-    'Железо плавится в 26-блочной многоблочной каменной печи',
+    'Железо плавится в 26-блочной Доменной печи с Ядром',
   ],
 }} />
 
@@ -84,11 +84,11 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 
 <!-- ===== TÖBBBLOKKOS KEMENCE ===== -->
 
-<h2 id="multiblock">Többblokkos Kemence</h2>
-<p>A magasabb olvadáspontú fémekhez (vas, mithril, adamantium) többblokkos kemence kell.</p>
+<h2 id="multiblock">Nagy Kemence (Blast Furnace)</h2>
+<p>A magasabb olvadáspontú fémekhez (vas, mithril, adamantium) Nagy Kemence (Blast Furnace) kell.</p>
 
 <h3>Építés</h3>
-<div class="recipe">Kőkemencemag készítése → 3×3×3-as üreges kocka szerkezet (26 blokk) → Kemence-mag elhelyezése bármelyik oldalra (felső/alsó kivételével)</div>
+<div class="recipe">Kemence Mag készítése → 3×3×3-as üreges kocka szerkezet (26 blokk) → Kemence Mag elhelyezése bármelyik oldalra (felső/alsó kivételével)</div>
 <div class="craft-section">
   <CraftingGrid recipeOutput="furnace_core_stone" label={{hu: "Kő Kemence Mag", en: "Stone Furnace Core"}}/>
   <CraftingGrid recipeOutput="furnace_core_obsidian" label={{hu: "Obszidiánkemencemag", en: "Obsidian Furnace Core"}}/>
@@ -98,10 +98,10 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 
 <h3>Típusok</h3>
 <table>
-  <tr><th>Kemence típus</th><th>Anyag</th><th>Mire jó</th></tr>
-  <tr><td>Kőkemence</td><td>Kő blokkok + Kőkemencemag</td><td>Vas, arany olvasztás</td></tr>
-  <tr><td>Obszidián kemence</td><td>Obszidián blokkok + Obszidiánkemencemag</td><td>Mithril olvasztás</td></tr>
-  <tr><td>AlvilágKőkemence</td><td>Alvilágkő blokkok + AlvilágKőkemencemag</td><td>Adamantium olvasztás</td></tr>
+  <tr><th>Nagy Kemence típus</th><th>Anyag</th><th>Mire jó</th></tr>
+  <tr><td>Nagy Kemence + Kő Kemence Mag</td><td>Kő blokkok + Kő Kemence Mag</td><td>Vas, arany olvasztás</td></tr>
+  <tr><td>Nagy Kemence + Obszidián Kemence Mag</td><td>Obszidián blokkok + Obszidián Kemence Mag</td><td>Mithril olvasztás</td></tr>
+  <tr><td>Nagy Kemence + Alvilágkő Kemence Mag</td><td>Alvilágkő blokkok + Alvilágkő Kemence Mag</td><td>Adamantium olvasztás</td></tr>
 </table>
 
 <h3>Hőkezelés</h3>
@@ -267,8 +267,8 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 
 <!-- ===== MULTIBLOCK FURNACE ===== -->
 
-<h2 id="multiblock">Multiblock Furnace</h2>
-<p>Higher-melting-point metals (iron, mithril, adamantium) require a multiblock furnace.</p>
+<h2 id="multiblock">Blast Furnace</h2>
+<p>Higher-melting-point metals (iron, mithril, adamantium) require a Blast Furnace (3x3 multiblock).</p>
 
 <h3>Construction</h3>
 <div class="recipe">Craft a Furnace Core → Build a 3×3×3 hollow cube (26 blocks) → Place the core on any side (except top/bottom)</div>
@@ -281,10 +281,10 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 
 <h3>Types</h3>
 <table>
-  <tr><th>Furnace Type</th><th>Material</th><th>Used For</th></tr>
-  <tr><td>Stone Furnace</td><td>Stone Blocks + Stone Furnace Core</td><td>Iron, gold smelting</td></tr>
-  <tr><td>Obsidian Furnace</td><td>Obsidian Blocks + Obsidian Furnace Core</td><td>Mithril smelting</td></tr>
-  <tr><td>Netherrack Furnace</td><td>Netherrack Blocks + Netherrack Furnace Core</td><td>Adamantium smelting</td></tr>
+  <tr><th>Blast Furnace Type</th><th>Material</th><th>Used For</th></tr>
+  <tr><td>Blast Furnace + Stone Furnace Core</td><td>Stone Blocks + Stone Furnace Core</td><td>Iron, gold smelting</td></tr>
+  <tr><td>Blast Furnace + Obsidian Furnace Core</td><td>Obsidian Blocks + Obsidian Furnace Core</td><td>Mithril smelting</td></tr>
+  <tr><td>Blast Furnace + Netherrack Furnace Core</td><td>Netherrack Blocks + Netherrack Furnace Core</td><td>Adamantium smelting</td></tr>
 </table>
 
 <h3>Heat Management</h3>
@@ -397,8 +397,8 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 
 <!-- ===== МНОГОБЛОЧНАЯ ПЕЧЬ ===== -->
 
-<h2 id="multiblock">Многоблочная печь</h2>
-<p>Для металлов с высокой температурой плавки (железо, мифрил, адамант) нужна многоблочная печь.</p>
+<h2 id="multiblock">Доменная печь (Blast Furnace)</h2>
+<p>Для металлов с высокой температурой плавки (железо, мифрил, адамант) нужна Доменная печь (многоблочная 3x3).</p>
 
 <h3>Конструкция</h3>
 <div class="recipe">Скрафти Ядро печи → Построй полый куб 3×3×3 (26 блоков) → Помести ядро на любую боковую стену (не сверху/снизу)</div>
@@ -410,10 +410,10 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 
 <h3>Типы печей</h3>
 <table>
-  <tr><th>Тип печи</th><th>Материал</th><th>Для чего</th></tr>
-  <tr><td>Каменная печь</td><td>Каменные блоки + Ядро каменной печи</td><td>Плавка железа, золота</td></tr>
-  <tr><td>Обсидиановая печь</td><td>Обсидиановые блоки + Ядро обсидиановой печи</td><td>Плавка мифрила</td></tr>
-  <tr><td>Печь из адского камня</td><td>Блоки адского камня + Ядро печи из адского камня</td><td>Плавка адаманта</td></tr>
+  <tr><th>Тип Доменной печи</th><th>Материал</th><th>Для чего</th></tr>
+  <tr><td>Доменная печь + Ядро каменной печи</td><td>Каменные блоки + Ядро каменной печи</td><td>Плавка железа, золота</td></tr>
+  <tr><td>Доменная печь + Ядро обсидиановой печи</td><td>Обсидиановые блоки + Ядро обсидиановой печи</td><td>Плавка мифрила</td></tr>
+  <tr><td>Доменная печь + Ядро из адского камня</td><td>Блоки адского камня + Ядро печи из адского камня</td><td>Плавка адаманта</td></tr>
 </table>
 
 <div class="tip"><strong>Бесконечный нагрев:</strong> Помести бесконечный источник лавы на дно многоблочной печи — бесконечное тепло! Несколько источников лавы суммируются.</div>
