@@ -41982,7 +41982,9 @@
     "outputQty": 1,
     "station": "hand",
     "difficulty": 1805,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_ingot",
       "leather",
