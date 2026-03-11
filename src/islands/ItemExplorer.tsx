@@ -158,6 +158,22 @@ function ItemIcon({ item, size }: { item: ItemData; size: number }) {
   );
 }
 
+function HighlightText({ text, query }: { text: string; query: string }) {
+  if (!query) return <>{text}</>;
+  const idx = text.toLowerCase().indexOf(query.toLowerCase());
+  if (idx === -1) return <>{text}</>;
+  return (
+    <>
+      {text.slice(0, idx)}
+      <mark style={{ background: 'rgba(240,192,64,.35)', color: 'inherit',
+        borderRadius: 2, padding: '0 1px' }}>
+        {text.slice(idx, idx + query.length)}
+      </mark>
+      {text.slice(idx + query.length)}
+    </>
+  );
+}
+
 function TierPill({ tier, lang }: { tier: string; lang: string }) {
   const meta = TIER_META[tier];
   if (!meta) return <span style={{ fontSize: '.7em', color: 'var(--text2)' }}>{tier}</span>;
@@ -456,7 +472,7 @@ export default function ItemExplorer() {
               <span style={{ fontSize: '.75em', fontWeight: 500, textAlign: 'center', lineHeight: 1.25,
                 color: isSelected ? 'var(--gold)' : 'var(--text)', wordBreak: 'break-word', maxWidth: '100%',
                 flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                {item.name[lang as 'hu' | 'en' | 'ru']}
+                <HighlightText text={item.name[lang as 'hu' | 'en' | 'ru']} query={search} />
               </span>
               {tierMeta && (
                 <span style={{
