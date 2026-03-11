@@ -4581,7 +4581,7 @@
       "en": "Glass",
       "ru": "Стекло"
     },
-    "img": "img/shards/glass.png",
+    "img": "img/blocks/glass.png",
     "tier": null,
     "category": "block"
   },
@@ -9838,7 +9838,7 @@
   },
   "sand_stone": {
     "name": {
-      "hu": "Sand Ko",
+      "hu": "Homokkő",
       "en": "Sandstone",
       "ru": "Песчаник"
     },

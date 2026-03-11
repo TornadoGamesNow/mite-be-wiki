@@ -261,29 +261,11 @@
       "masonry"
     ],
     "ingredients": [
-      "sand",
-      "coal"
+      "sand"
     ],
-    "shaped": true,
+    "shaped": false,
     "removed_version": "0.6.0",
-    "added_version": "0.5.8",
-    "pattern": [
-      [
-        "_",
-        "sand",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "coal",
-        "_"
-      ]
-    ]
+    "added_version": "0.5.8"
   },
   {
     "id": "lapis_block_17",
