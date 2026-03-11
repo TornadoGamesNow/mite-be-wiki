@@ -17572,7 +17572,7 @@
     "id": "obsidian_shard_771",
     "item_num": 1122,
     "output": "obsidian_shard",
-    "outputQty": 4,
+    "outputQty": 9,
     "station": "flint_workbench",
     "difficulty": 240,
     "skills": [],
@@ -36148,36 +36148,6 @@
       ]
     ],
     "added_version": "0.6.0"
-  },
-  {
-    "id": "obsidian_shard_841275",
-    "item_num": 841275,
-    "output": "obsidian_shard",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 240,
-    "skills": [],
-    "ingredients": [
-      "obsidian_arrow"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "obsidian_arrow",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
   },
   {
     "id": "copper_coin_841276",
