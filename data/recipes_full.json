@@ -40386,11 +40386,14 @@
     "output": "glass",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 60,
+    "difficulty": 90,
     "skills": [
       "masonry"
     ],
     "ingredients": [
+      "glass_pane",
+      "glass_pane",
+      "glass_pane",
       "glass_pane",
       "glass_pane",
       "glass_pane",
@@ -40412,9 +40415,9 @@
         "glass_pane"
       ],
       [
-        "_",
-        "_",
-        "_"
+        "glass_pane",
+        "glass_pane",
+        "glass_pane"
       ]
     ]
   },
@@ -40559,7 +40562,7 @@
     "output": "element_obsidian",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 3084.44,
     "skills": [],
     "ingredients": [
       "mercury_nugget",
