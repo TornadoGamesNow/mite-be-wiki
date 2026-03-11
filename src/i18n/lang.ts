@@ -4,10 +4,13 @@ const LANG_KEY = 'mite-wiki-lang';
 const LANG_EVENT = 'mite-lang-change';
 
 export function getCurrentLang(): Lang {
-  if (typeof window === 'undefined') return 'hu';
-  return (localStorage.getItem(LANG_KEY) as Lang) ||
-    (document.documentElement.getAttribute('data-lang-init') as Lang) ||
-    'hu';
+  if (typeof window === 'undefined') return 'en';
+  const stored = localStorage.getItem(LANG_KEY) as Lang;
+  if (stored === 'hu' || stored === 'en' || stored === 'ru') return stored;
+  const nav = (navigator.language || '').toLowerCase();
+  const detected: Lang = nav.startsWith('hu') ? 'hu' : nav.startsWith('ru') ? 'ru' : 'en';
+  localStorage.setItem(LANG_KEY, detected);
+  return detected;
 }
 
 export function setCurrentLang(lang: Lang): void {

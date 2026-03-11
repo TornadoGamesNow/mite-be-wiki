@@ -35,7 +35,12 @@ const ogImageURL = new URL(`${base}/img/og-banner.png`, Astro.site).href;
   <script is:inline>
     (function(){
       var l = localStorage.getItem('mite-wiki-lang');
-      if (l === 'hu' || l === 'en' || l === 'ru') document.documentElement.setAttribute('data-lang-init', l);
+      if (!(l === 'hu' || l === 'en' || l === 'ru')) {
+        var nav = (navigator.language || '').toLowerCase();
+        l = nav.startsWith('hu') ? 'hu' : nav.startsWith('ru') ? 'ru' : 'en';
+        localStorage.setItem('mite-wiki-lang', l);
+      }
+      document.documentElement.setAttribute('data-lang-init', l);
     })();
   </script>
 </head>
