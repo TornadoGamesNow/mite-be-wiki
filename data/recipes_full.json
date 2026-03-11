@@ -1343,7 +1343,7 @@
     "output": "bookshelf",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 555,
+    "difficulty": 1005,
     "skills": [
       "carpentry"
     ],
@@ -1410,9 +1410,16 @@
     "output": "obsidian",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 88.89,
-    "skills": [],
+    "difficulty": 200,
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
+      "obsidian_shard",
+      "obsidian_shard",
+      "obsidian_shard",
+      "obsidian_shard",
+      "obsidian_shard",
       "obsidian_shard",
       "obsidian_shard",
       "obsidian_shard",
@@ -1489,7 +1496,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 640,
-    "skills": [],
+    "skills": [
+      "carpentry"
+    ],
     "ingredients": [
       [
         "planks_oak",
@@ -2345,21 +2354,38 @@
     "id": "fence_133",
     "item_num": 85,
     "output": "fence",
-    "outputQty": 6,
+    "outputQty": 2,
     "station": "flint_workbench",
-    "difficulty": 370,
+    "difficulty": 150,
     "skills": [
       "carpentry"
     ],
     "ingredients": [
-      "planks_oak",
       "stick",
-      "planks_oak",
-      "planks_oak",
       "stick",
-      "planks_oak"
+      "stick",
+      "stick",
+      "stick",
+      "stick"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "stick",
+        "stick",
+        "_"
+      ],
+      [
+        "stick",
+        "stick",
+        "_"
+      ],
+      [
+        "stick",
+        "stick",
+        "_"
+      ]
+    ]
   },
   {
     "id": "glowstone_134",
@@ -5112,13 +5138,7 @@
     "ingredients": [
       "iron_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -5155,11 +5175,7 @@
       "iron_ingot",
       "iron_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -5196,11 +5212,7 @@
       "iron_ingot",
       "iron_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -5400,13 +5412,7 @@
     "ingredients": [
       "iron_ingot",
       "iron_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -5541,10 +5547,8 @@
     ],
     "ingredients": [
       "mushroom_brown",
-      "small",
       "mushroom_red",
-      "small",
-      "bowl_water"
+      "water_bowl"
     ],
     "shaped": false
   },
@@ -5596,13 +5600,7 @@
     "ingredients": [
       "gold_ingot",
       "gold_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -5672,13 +5670,7 @@
     "ingredients": [
       "gold_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -5752,11 +5744,7 @@
       "gold_ingot",
       "gold_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -5830,11 +5818,7 @@
       "gold_ingot",
       "gold_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -6149,12 +6133,7 @@
       "iron_ingot",
       "iron_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -6226,12 +6205,7 @@
       "gold_ingot",
       "gold_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -6960,39 +6934,6 @@
     "shaped": false
   },
   {
-    "id": "sign_296",
-    "item_num": 323,
-    "output": "sign",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 65,
-    "skills": [
-      "carpentry"
-    ],
-    "ingredients": [
-      "wood_slab_single",
-      "stick"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "wood_slab_single",
-        "_"
-      ],
-      [
-        "_",
-        "stick",
-        "_"
-      ],
-      [
-        "_",
-        "_",
-        "_"
-      ]
-    ]
-  },
-  {
     "id": "iron_bucket_298",
     "item_num": 325,
     "output": "iron_bucket",
@@ -7284,15 +7225,32 @@
     "item_num": 336,
     "output": "brick",
     "outputQty": 4,
-    "station": "stone_furnace",
+    "station": "flint_workbench",
     "difficulty": 180,
     "skills": [
       "masonry"
     ],
     "ingredients": [
-      "clay_ball"
+      "hardened_clay"
     ],
-    "shaped": false
+    "shaped": true,
+    "pattern": [
+      [
+        "hardened_clay",
+        "_",
+        "_"
+      ],
+      [
+        "hardened_clay",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
   },
   {
     "id": "paper_309",
@@ -7317,8 +7275,10 @@
     "output": "book",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 800,
-    "skills": [],
+    "difficulty": 175,
+    "skills": [
+      "fineArts"
+    ],
     "ingredients": [
       "elemental_water_skin_knowledge_book"
     ],
@@ -7330,8 +7290,10 @@
     "output": "book",
     "outputQty": 1,
     "station": "ancient_metal_workbench",
-    "difficulty": 800,
-    "skills": [],
+    "difficulty": 175,
+    "skills": [
+      "fineArts"
+    ],
     "ingredients": [
       "ancient_metal_container_knowledge_book"
     ],
@@ -7343,8 +7305,10 @@
     "output": "book",
     "outputQty": 1,
     "station": "ancient_metal_workbench",
-    "difficulty": 800,
-    "skills": [],
+    "difficulty": 175,
+    "skills": [
+      "fineArts"
+    ],
     "ingredients": [
       "ancient_metal_filter_paper_knowledge_book"
     ],
@@ -7356,8 +7320,10 @@
     "output": "book",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 800,
-    "skills": [],
+    "difficulty": 175,
+    "skills": [
+      "fineArts"
+    ],
     "ingredients": [
       "waystone_knowledge_book"
     ],
@@ -7369,8 +7335,10 @@
     "output": "book",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 800,
-    "skills": [],
+    "difficulty": 175,
+    "skills": [
+      "fineArts"
+    ],
     "ingredients": [
       "teleport_scroll_knowledge_book"
     ],
@@ -7382,8 +7350,10 @@
     "output": "book",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 800,
-    "skills": [],
+    "difficulty": 175,
+    "skills": [
+      "fineArts"
+    ],
     "ingredients": [
       "miner_s_helmet_knowledge_book"
     ],
@@ -7395,8 +7365,10 @@
     "output": "book",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 800,
-    "skills": [],
+    "difficulty": 175,
+    "skills": [
+      "fineArts"
+    ],
     "ingredients": [
       "clock_knowledge_book"
     ],
@@ -7408,8 +7380,10 @@
     "output": "book",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 800,
-    "skills": [],
+    "difficulty": 175,
+    "skills": [
+      "fineArts"
+    ],
     "ingredients": [
       "battery_knowledge_book"
     ],
@@ -7421,8 +7395,10 @@
     "output": "book",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 800,
-    "skills": [],
+    "difficulty": 175,
+    "skills": [
+      "fineArts"
+    ],
     "ingredients": [
       "coolant_knowledge_book"
     ],
@@ -7434,8 +7410,10 @@
     "output": "book",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 800,
-    "skills": [],
+    "difficulty": 175,
+    "skills": [
+      "fineArts"
+    ],
     "ingredients": [
       "giant_tnt_knowledge_book"
     ],
@@ -7447,8 +7425,10 @@
     "output": "book",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 800,
-    "skills": [],
+    "difficulty": 175,
+    "skills": [
+      "fineArts"
+    ],
     "ingredients": [
       "advanced_enchantment_table_knowledge_book"
     ],
@@ -7460,8 +7440,10 @@
     "output": "book",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 800,
-    "skills": [],
+    "difficulty": 175,
+    "skills": [
+      "fineArts"
+    ],
     "ingredients": [
       "core_breaker_knowledge_book"
     ],
@@ -7473,8 +7455,10 @@
     "output": "book",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 800,
-    "skills": [],
+    "difficulty": 175,
+    "skills": [
+      "fineArts"
+    ],
     "ingredients": [
       "reinforced_eye_of_ender_knowledge_book"
     ],
@@ -7486,8 +7470,10 @@
     "output": "book",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 800,
-    "skills": [],
+    "difficulty": 175,
+    "skills": [
+      "fineArts"
+    ],
     "ingredients": [
       "world_marker_knowledge_book"
     ],
@@ -10755,7 +10741,6 @@
     "ingredients": [
       "spider_eye",
       "mushroom_brown",
-      "small",
       "sugar"
     ],
     "shaped": false
@@ -10909,7 +10894,7 @@
     "output": "book_and_quill",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 75,
+    "difficulty": 225,
     "skills": [
       "fineArts"
     ],
@@ -11030,43 +11015,6 @@
       ]
     ],
     "removed_version": "pre-0.5.5"
-  },
-  {
-    "id": "empty_map_505",
-    "item_num": 395,
-    "output": "empty_map",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 50,
-    "skills": [],
-    "ingredients": [
-      "book_and_quill",
-      "compass"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "empty_map_506",
-    "item_num": 395,
-    "output": "empty_map",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 300,
-    "skills": [
-      "fineArts"
-    ],
-    "ingredients": [
-      "paper",
-      "paper",
-      "paper",
-      "paper",
-      "map",
-      "paper",
-      "paper",
-      "paper",
-      "paper"
-    ],
-    "shaped": false
   },
   {
     "id": "golden_carrot_507",
@@ -13528,11 +13476,7 @@
       "copper_ingot",
       "copper_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -13569,11 +13513,7 @@
       "silver_ingot",
       "silver_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -13718,13 +13658,7 @@
     "ingredients": [
       "copper_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -13759,13 +13693,7 @@
     "ingredients": [
       "silver_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -13946,11 +13874,7 @@
       "copper_ingot",
       "copper_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -13987,11 +13911,7 @@
       "silver_ingot",
       "silver_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -14137,12 +14057,7 @@
       "copper_ingot",
       "copper_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -14214,12 +14129,7 @@
       "silver_ingot",
       "silver_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -14330,9 +14240,7 @@
       "copper_ingot",
       "stick",
       "copper_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -14371,9 +14279,7 @@
       "silver_ingot",
       "stick",
       "silver_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -14412,9 +14318,7 @@
       "gold_ingot",
       "stick",
       "gold_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -14453,9 +14357,7 @@
       "iron_ingot",
       "stick",
       "iron_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -14609,10 +14511,7 @@
       "copper_ingot",
       "stick",
       "copper_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -14688,10 +14587,7 @@
       "silver_ingot",
       "stick",
       "silver_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -14767,10 +14663,7 @@
       "gold_ingot",
       "stick",
       "gold_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -14808,10 +14701,7 @@
       "iron_ingot",
       "stick",
       "iron_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -14925,10 +14815,7 @@
       "copper_ingot",
       "stick",
       "copper_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -14966,10 +14853,7 @@
       "silver_ingot",
       "stick",
       "silver_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -15045,10 +14929,7 @@
       "gold_ingot",
       "stick",
       "gold_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -15086,10 +14967,7 @@
       "iron_ingot",
       "stick",
       "iron_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -15239,11 +15117,7 @@
       "copper_ingot",
       "stick",
       "copper_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -15317,11 +15191,7 @@
       "silver_ingot",
       "stick",
       "silver_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -15395,11 +15265,7 @@
       "gold_ingot",
       "stick",
       "gold_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -15436,11 +15302,7 @@
       "iron_ingot",
       "stick",
       "iron_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -15802,13 +15664,7 @@
     "ingredients": [
       "copper_ingot",
       "copper_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -15843,13 +15699,7 @@
     "ingredients": [
       "silver_ingot",
       "silver_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -22786,9 +22636,8 @@
     "ingredients": [
       "cooked_beef",
       "mushroom_brown",
-      "small",
       "potato",
-      "bowl_water"
+      "water_bowl"
     ],
     "shaped": false
   },
@@ -22842,7 +22691,7 @@
       "potato",
       "carrot",
       "onion",
-      "bowl_water"
+      "water_bowl"
     ],
     "shaped": false
   },
@@ -22972,9 +22821,7 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 40,
-    "skills": [
-      "blacksmithing"
-    ],
+    "skills": [],
     "ingredients": [
       "carrot_on_a_stick_mithril"
     ],
@@ -23007,9 +22854,7 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 40,
-    "skills": [
-      "blacksmithing"
-    ],
+    "skills": [],
     "ingredients": [
       "carrot_on_a_stick_adamantium"
     ],
@@ -23409,9 +23254,7 @@
     ],
     "ingredients": [
       "mushroom_brown",
-      "small",
       "mushroom_brown",
-      "small",
       "bowl_milk"
     ],
     "shaped": false
@@ -23628,7 +23471,7 @@
       "wheat_seeds",
       "blueberries",
       "sugar",
-      "bowl_water"
+      "water_bowl"
     ],
     "shaped": false
   },
@@ -24555,9 +24398,7 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 40,
-    "skills": [
-      "blacksmithing"
-    ],
+    "skills": [],
     "ingredients": [
       "carrot_on_a_stick_ancient_metal"
     ],
@@ -24880,38 +24721,6 @@
         "_"
       ]
     ]
-  },
-  {
-    "id": "fish_ball_1069",
-    "item_num": 2285,
-    "output": "fish_ball",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 50,
-    "skills": [
-      "foodPreparation"
-    ],
-    "ingredients": [
-      "raw_fish_large",
-      "raw_fish_large"
-    ],
-    "shaped": false
-  },
-  {
-    "id": "fish_ball_1070",
-    "item_num": 2285,
-    "output": "fish_ball",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 50,
-    "skills": [
-      "foodPreparation"
-    ],
-    "ingredients": [
-      "raw_fish",
-      "raw_fish_large"
-    ],
-    "shaped": false
   },
   {
     "id": "belt_1071",
@@ -25362,12 +25171,6 @@
       "blacksmithing"
     ],
     "ingredients": [
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
       "hardstone_ingot",
       "stick",
       "stick"
@@ -25481,11 +25284,7 @@
       "hardstone_ingot",
       "hardstone_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -26035,7 +25834,7 @@
     "skills": [],
     "ingredients": [
       "sugar",
-      "bowl_water"
+      "water_bowl"
     ],
     "shaped": false
   },
@@ -26200,13 +25999,6 @@
       "blacksmithing"
     ],
     "ingredients": [
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
       "hardstone_ingot",
       "stick"
     ],
@@ -26340,26 +26132,6 @@
       ]
     ],
     "removed_version": "0.6.0"
-  },
-  {
-    "id": "fishing_rod_hard_1125",
-    "item_num": 2366,
-    "output": "fishing_rod_hard",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 302.78,
-    "skills": [
-      "fishing"
-    ],
-    "ingredients": [
-      "stick",
-      "stick",
-      "string",
-      "stick",
-      "hardstone_nugget",
-      "string"
-    ],
-    "shaped": false
   },
   {
     "id": "hard_stone_war_hammer_1126",
@@ -27986,24 +27758,6 @@
     "removed_version": "pre-0.5.5"
   },
   {
-    "id": "bone_club_1192",
-    "item_num": 2528,
-    "output": "bone_club",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 325,
-    "skills": [
-      "archery"
-    ],
-    "ingredients": [
-      "bone",
-      "leather_rope",
-      "bone",
-      "bone"
-    ],
-    "shaped": false
-  },
-  {
     "id": "simple_bone_club_1193",
     "item_num": 2529,
     "output": "simple_bone_club",
@@ -29556,23 +29310,6 @@
     "shaped": false
   },
   {
-    "id": "lantern_1287",
-    "item_num": 31932,
-    "output": "lantern",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 25,
-    "skills": [],
-    "ingredients": [
-      "iron_nugget",
-      "iron_nugget",
-      "torch",
-      "iron_nugget",
-      "iron_nugget"
-    ],
-    "shaped": false
-  },
-  {
     "id": "smelting_furnace_idle_1288",
     "item_num": 31943,
     "output": "smelting_furnace_idle",
@@ -30343,7 +30080,9 @@
     "outputQty": 1,
     "station": "hand",
     "difficulty": 175,
-    "skills": [],
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "flint",
       "leather_rope",
@@ -30759,7 +30498,7 @@
     "output": "hardened_clay_furnace",
     "outputQty": 1,
     "station": "hand",
-    "difficulty": 720,
+    "difficulty": 1440,
     "skills": [
       "masonry"
     ],
@@ -30804,9 +30543,16 @@
     "output": "obsidian",
     "outputQty": 1,
     "station": "hand",
-    "difficulty": 89,
-    "skills": [],
+    "difficulty": 200,
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
+      "obsidian_shard",
+      "obsidian_shard",
+      "obsidian_shard",
+      "obsidian_shard",
+      "obsidian_shard",
       "obsidian_shard",
       "obsidian_shard",
       "obsidian_shard",
@@ -30820,9 +30566,16 @@
     "pattern": [
       [
         "obsidian_shard",
+        "obsidian_shard",
         "obsidian_shard"
       ],
       [
+        "obsidian_shard",
+        "obsidian_shard",
+        "obsidian_shard"
+      ],
+      [
+        "obsidian_shard",
         "obsidian_shard",
         "obsidian_shard"
       ]
@@ -32176,13 +31929,7 @@
     "ingredients": [
       "hardstone_ingot",
       "hardstone_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -32219,11 +31966,7 @@
       "hardstone_ingot",
       "hardstone_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -32262,9 +32005,7 @@
       "hardstone_ingot",
       "stick",
       "hardstone_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -32454,10 +32195,7 @@
       "hardstone_ingot",
       "hardstone_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -32495,10 +32233,7 @@
       "hardstone_ingot",
       "stick",
       "hardstone_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -32535,11 +32270,7 @@
       "hardstone_ingot",
       "stick",
       "hardstone_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -32639,13 +32370,7 @@
     "ingredients": [
       "hardstone_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -32819,18 +32544,14 @@
     "output": "silver_hatchet",
     "outputQty": 1,
     "station": "silver_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 450,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
+      "stick",
       "silver_ingot",
-      "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -32891,18 +32612,14 @@
     "output": "gold_hatchet",
     "outputQty": 1,
     "station": "gold_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 450,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
+      "stick",
       "gold_ingot",
-      "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -33016,45 +32733,6 @@
       "diamond"
     ],
     "shaped": false
-  },
-  {
-    "id": "furnace_core_netherrack_32053",
-    "item_num": 32053,
-    "output": "furnace_core_netherrack",
-    "outputQty": 1,
-    "station": "workbench",
-    "difficulty": 1440,
-    "skills": [],
-    "ingredients": [
-      "netherrack",
-      "netherrack",
-      "netherrack",
-      "netherrack",
-      "mithril_workbench",
-      "netherrack",
-      "netherrack",
-      "netherrack",
-      "netherrack"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "netherrack",
-        "netherrack",
-        "netherrack"
-      ],
-      [
-        "netherrack",
-        "mithril_workbench",
-        "netherrack"
-      ],
-      [
-        "netherrack",
-        "netherrack",
-        "netherrack"
-      ]
-    ],
-    "added_version": "0.6.0"
   },
   {
     "id": "furnace_core_obsidian_32054",
@@ -33244,20 +32922,13 @@
     "output": "copper_dagger",
     "outputQty": 1,
     "station": "copper_workbench",
-    "difficulty": 700,
+    "difficulty": 425,
     "skills": [
       "blacksmithing"
     ],
     "ingredients": [
       "copper_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -33285,20 +32956,13 @@
     "output": "iron_dagger",
     "outputQty": 1,
     "station": "iron_workbench",
-    "difficulty": 1400,
+    "difficulty": 825,
     "skills": [
       "blacksmithing"
     ],
     "ingredients": [
       "iron_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -33360,20 +33024,13 @@
     "output": "gold_dagger",
     "outputQty": 1,
     "station": "gold_workbench",
-    "difficulty": 700,
+    "difficulty": 425,
     "skills": [
       "blacksmithing"
     ],
     "ingredients": [
       "gold_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -33435,20 +33092,13 @@
     "output": "silver_dagger",
     "outputQty": 1,
     "station": "silver_workbench",
-    "difficulty": 700,
+    "difficulty": 425,
     "skills": [
       "blacksmithing"
     ],
     "ingredients": [
       "silver_ingot",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -33613,20 +33263,14 @@
     "output": "copper_hatchet",
     "outputQty": 1,
     "station": "copper_workbench",
-    "difficulty": 1050,
+    "difficulty": 450,
     "skills": [
       "blacksmithing"
     ],
     "ingredients": [
+      "stick",
       "copper_ingot",
-      "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -33654,20 +33298,14 @@
     "output": "iron_hatchet",
     "outputQty": 1,
     "station": "iron_workbench",
-    "difficulty": 2100,
+    "difficulty": 850,
     "skills": [
       "blacksmithing"
     ],
     "ingredients": [
+      "stick",
       "iron_ingot",
-      "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -33695,7 +33333,7 @@
     "output": "copper_knife",
     "outputQty": 1,
     "station": "copper_workbench",
-    "difficulty": 700,
+    "difficulty": 425,
     "skills": [
       "blacksmithing"
     ],
@@ -33711,7 +33349,7 @@
     "output": "iron_knife",
     "outputQty": 1,
     "station": "iron_workbench",
-    "difficulty": 1400,
+    "difficulty": 825,
     "skills": [
       "blacksmithing"
     ],
@@ -33735,12 +33373,7 @@
       "hardstone_ingot",
       "hardstone_ingot",
       "stick",
-      "stick",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball",
-      "clay_ball"
+      "stick"
     ],
     "shaped": true,
     "pattern": [
@@ -34323,9 +33956,9 @@
     "id": "nether_quartz_shard_32144",
     "item_num": 32144,
     "output": "nether_quartz_shard",
-    "outputQty": 2,
+    "outputQty": 9,
     "station": "flint_workbench",
-    "difficulty": 50,
+    "difficulty": 900,
     "skills": [],
     "ingredients": [
       "quartz"
@@ -36870,31 +36503,53 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 260,
-    "skills": [],
+    "skills": [
+      "carpentry"
+    ],
     "ingredients": [
       "stick",
-      "planks_oak",
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
       "stick",
       "stick",
-      "planks_oak",
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
       "stick"
     ],
     "shaped": true,
     "pattern": [
       [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "stick"
+      ],
+      [
+        "stick",
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "stick"
+      ],
+      [
         "_",
         "_",
         "_"
-      ],
-      [
-        "stick",
-        "planks_oak",
-        "stick"
-      ],
-      [
-        "stick",
-        "planks_oak",
-        "stick"
       ]
     ]
   },
@@ -36920,7 +36575,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 175,
-    "skills": [],
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "flint",
       "stick",
@@ -36953,7 +36610,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 175,
-    "skills": [],
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "flint",
       "stick",
@@ -36986,7 +36645,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 375,
-    "skills": [],
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "flint",
       "flint",
@@ -37021,7 +36682,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 375,
-    "skills": [],
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "flint",
       "flint",
@@ -37053,9 +36716,9 @@
     "id": "sinew_841229",
     "item_num": 841229,
     "output": "sinew",
-    "outputQty": 1,
+    "outputQty": 4,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 50,
     "skills": [],
     "ingredients": [
       "chip_flint_knife",
@@ -37086,7 +36749,7 @@
     "output": "sinew",
     "outputQty": 4,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 50,
     "skills": [],
     "ingredients": [
       "flint_knife",
@@ -38013,7 +37676,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 25,
-    "skills": [],
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "dandelion",
       "dandelion",
@@ -38045,8 +37710,10 @@
     "output": "porridge",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 100,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "blue_berries",
       "sugar",
@@ -38080,7 +37747,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 85,
-    "skills": [],
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "pumpkin",
       "water_bowl"
@@ -38111,8 +37780,10 @@
     "output": "bowl_cream_of_vegetable_soup",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 100,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "potato",
       "onion",
@@ -38144,8 +37815,10 @@
     "output": "bowl_vegetable_soup",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 100,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "potato",
       "carrot",
@@ -38179,7 +37852,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 100,
-    "skills": [],
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "carrot",
       "cooked_chicken",
@@ -38212,8 +37887,10 @@
     "output": "sorbet",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 100,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "sugar",
       "snowball",
@@ -38277,7 +37954,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 177.78,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "copper_nugget",
       "copper_nugget",
@@ -38310,7 +37989,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 177.78,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "silver_nugget",
       "silver_nugget",
@@ -38376,7 +38057,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 355.56,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "iron_nugget",
       "iron_nugget",
@@ -38849,7 +38532,7 @@
     "output": "ancient_metal_dagger",
     "outputQty": 1,
     "station": "ancient_metal_workbench",
-    "difficulty": 0,
+    "difficulty": 1625,
     "skills": [
       "blacksmithing"
     ],
@@ -38883,7 +38566,7 @@
     "output": "mithril_dagger",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
+    "difficulty": 6425,
     "skills": [
       "blacksmithing"
     ],
@@ -38917,7 +38600,7 @@
     "output": "adamantium_dagger",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 0,
+    "difficulty": 25625,
     "skills": [
       "blacksmithing"
     ],
@@ -38952,7 +38635,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 94.44,
-    "skills": [],
+    "skills": [
+      "archery"
+    ],
     "ingredients": [
       "copper_nugget",
       "stick",
@@ -38984,7 +38669,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 75,
-    "skills": [],
+    "skills": [
+      "archery"
+    ],
     "ingredients": [
       "chip_flint",
       "stick",
@@ -39016,7 +38703,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 72.22,
-    "skills": [],
+    "skills": [
+      "archery"
+    ],
     "ingredients": [
       "obsidian_shard",
       "stick",
@@ -39048,7 +38737,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 94.44,
-    "skills": [],
+    "skills": [
+      "archery"
+    ],
     "ingredients": [
       "silver_nugget",
       "stick",
@@ -39112,7 +38803,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 138.89,
-    "skills": [],
+    "skills": [
+      "archery"
+    ],
     "ingredients": [
       "iron_nugget",
       "stick",
@@ -39145,7 +38838,7 @@
     "station": "ancient_metal_workbench",
     "difficulty": 227.78,
     "skills": [
-      "blacksmithing"
+      "archery"
     ],
     "ingredients": [
       "ancient_metal_nugget",
@@ -39179,7 +38872,7 @@
     "station": "mithril_workbench",
     "difficulty": 761.11,
     "skills": [
-      "blacksmithing"
+      "archery"
     ],
     "ingredients": [
       "mithril_nugget",
@@ -39213,7 +38906,7 @@
     "station": "adamantium_workbench",
     "difficulty": 2894.44,
     "skills": [
-      "blacksmithing"
+      "archery"
     ],
     "ingredients": [
       "adamantium_nugget",
@@ -39280,10 +38973,17 @@
     "output": "wood_cudgel",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 105,
+    "skills": [
+      "carpentry"
+    ],
     "ingredients": [
-      "planks_oak",
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
       "stick"
     ],
     "shaped": true,
@@ -39345,6 +39045,7 @@
     "station": "mithril_workbench",
     "difficulty": 6550,
     "skills": [
+      "archery",
       "blacksmithing"
     ],
     "ingredients": [
@@ -39383,6 +39084,7 @@
     "station": "ancient_metal_workbench",
     "difficulty": 1750,
     "skills": [
+      "archery",
       "blacksmithing"
     ],
     "ingredients": [
@@ -39420,7 +39122,9 @@
     "outputQty": 1,
     "station": "silver_workbench",
     "difficulty": 800,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "silver_ingot",
       "silver_ingot"
@@ -39451,7 +39155,9 @@
     "outputQty": 1,
     "station": "gold_workbench",
     "difficulty": 800,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "gold_ingot",
       "gold_ingot"
@@ -39482,7 +39188,9 @@
     "outputQty": 1,
     "station": "iron_workbench",
     "difficulty": 1600,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "iron_ingot",
       "iron_ingot"
@@ -39612,7 +39320,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 175,
-    "skills": [],
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "flint",
       "sinew",
@@ -39645,7 +39355,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 175,
-    "skills": [],
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "flint",
       "string",
@@ -39678,7 +39390,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 315,
-    "skills": [],
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "obsidian",
       "sinew",
@@ -39711,7 +39425,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 315,
-    "skills": [],
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "obsidian",
       "string",
@@ -39849,7 +39565,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 315,
-    "skills": [],
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "obsidian",
       "stick",
@@ -39882,7 +39600,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 315,
-    "skills": [],
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "obsidian",
       "stick",
@@ -39914,7 +39634,7 @@
     "output": "ancient_metal_hatchet",
     "outputQty": 1,
     "station": "ancient_metal_workbench",
-    "difficulty": 0,
+    "difficulty": 1650,
     "skills": [
       "blacksmithing"
     ],
@@ -39949,7 +39669,7 @@
     "output": "mithril_hatchet",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
+    "difficulty": 6450,
     "skills": [
       "blacksmithing"
     ],
@@ -39984,7 +39704,7 @@
     "output": "adamantium_hatchet",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 0,
+    "difficulty": 25650,
     "skills": [
       "blacksmithing"
     ],
@@ -40131,7 +39851,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 795,
-    "skills": [],
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "obsidian",
       "obsidian",
@@ -40166,7 +39888,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 795,
-    "skills": [],
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "obsidian",
       "obsidian",
@@ -40707,8 +40431,10 @@
     "output": "bronze_battle_axe",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "copper_battle_axe",
       "tin_ingot",
@@ -40739,7 +40465,7 @@
     "output": "silver_copper_battle_axe",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 1000,
     "skills": [
       "blacksmithing"
     ],
@@ -40773,7 +40499,7 @@
     "output": "high_carbon_steel_battle_axe",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 2000,
     "skills": [
       "blacksmithing"
     ],
@@ -40807,8 +40533,10 @@
     "output": "bronze_war_hammer",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "copper_war_hammer",
       "tin_ingot",
@@ -40839,7 +40567,7 @@
     "output": "silver_copper_war_hammer",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 1000,
     "skills": [
       "blacksmithing"
     ],
@@ -40873,7 +40601,7 @@
     "output": "high_carbon_steel_war_hammer",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 2000,
     "skills": [
       "blacksmithing"
     ],
@@ -40907,8 +40635,10 @@
     "output": "bronze_sword",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "copper_sword",
       "tin_ingot",
@@ -40939,7 +40669,7 @@
     "output": "silver_copper_sword",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 1000,
     "skills": [
       "blacksmithing"
     ],
@@ -40973,7 +40703,7 @@
     "output": "high_carbon_steel_sword",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 2000,
     "skills": [
       "blacksmithing"
     ],
@@ -41007,8 +40737,10 @@
     "output": "bronze_pickaxe",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "copper_pickaxe",
       "tin_ingot",
@@ -41039,7 +40771,7 @@
     "output": "silver_copper_pickaxe",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 1000,
     "skills": [
       "blacksmithing"
     ],
@@ -41073,7 +40805,7 @@
     "output": "high_carbon_steel_pickaxe",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 2000,
     "skills": [
       "blacksmithing"
     ],
@@ -41107,8 +40839,10 @@
     "output": "bronze_axe",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "copper_axe",
       "tin_ingot",
@@ -41139,7 +40873,7 @@
     "output": "silver_copper_axe",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 1000,
     "skills": [
       "blacksmithing"
     ],
@@ -41173,7 +40907,7 @@
     "output": "high_carbon_steel_axe",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 2000,
     "skills": [
       "blacksmithing"
     ],
@@ -41207,8 +40941,10 @@
     "output": "bronze_shovel",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 1000,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "copper_shovel",
       "tin_ingot",
@@ -41239,7 +40975,7 @@
     "output": "silver_copper_shovel",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 1000,
     "skills": [
       "blacksmithing"
     ],
@@ -41273,7 +41009,7 @@
     "output": "high_carbon_steel_shovel",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 2000,
     "skills": [
       "blacksmithing"
     ],
@@ -41307,7 +41043,7 @@
     "output": "high_carbon_steel_shears",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 2000,
     "skills": [
       "blacksmithing"
     ],
@@ -41341,7 +41077,7 @@
     "output": "high_carbon_steel_dagger",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 2000,
     "skills": [
       "blacksmithing"
     ],
@@ -41375,7 +41111,7 @@
     "output": "high_carbon_steel_mattock",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 2000,
     "skills": [
       "blacksmithing"
     ],
@@ -41409,7 +41145,7 @@
     "output": "high_carbon_steel_scythe",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 2000,
     "skills": [
       "blacksmithing"
     ],
@@ -41443,7 +41179,7 @@
     "output": "high_carbon_steel_hatchet",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 2000,
     "skills": [
       "blacksmithing"
     ],
@@ -41477,7 +41213,7 @@
     "output": "high_carbon_steel_hoe",
     "outputQty": 1,
     "station": "blast_furnace",
-    "difficulty": 0,
+    "difficulty": 2000,
     "skills": [
       "blacksmithing"
     ],
@@ -41642,7 +41378,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 65,
-    "skills": [],
+    "skills": [
+      "carpentry"
+    ],
     "ingredients": [
       "oak_wood_slab_single",
       "stick"
@@ -41673,7 +41411,9 @@
     "outputQty": 2,
     "station": "flint_workbench",
     "difficulty": 800,
-    "skills": [],
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "cobblestone",
       "cobblestone",
@@ -42221,14 +41961,11 @@
     "output": "glass",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 90,
+    "difficulty": 60,
     "skills": [
       "masonry"
     ],
     "ingredients": [
-      "glass_pane",
-      "glass_pane",
-      "glass_pane",
       "glass_pane",
       "glass_pane",
       "glass_pane",
@@ -42250,9 +41987,9 @@
         "glass_pane"
       ],
       [
-        "glass_pane",
-        "glass_pane",
-        "glass_pane"
+        "_",
+        "_",
+        "_"
       ]
     ]
   },
@@ -42588,7 +42325,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 75,
-    "skills": [],
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "baked_potato",
       "cheese",
@@ -43768,8 +43507,10 @@
     "output": "beef_stew",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 75,
+    "skills": [
+      "foodPreparation"
+    ],
     "ingredients": [
       "potato",
       "cooked_beef",
@@ -45339,59 +45080,6 @@
     "shaped": false
   },
   {
-    "id": "enchantment_table_emerald_841501",
-    "item_num": 245,
-    "output": "enchanting_table_emerald",
-    "outputQty": 1,
-    "station": "iron_workbench",
-    "difficulty": 2585,
-    "skills": [
-      "masonry",
-      "fineArts"
-    ],
-    "ingredients": [
-      "book",
-      "emerald",
-      "obsidian",
-      "emerald",
-      "obsidian",
-      "obsidian",
-      "obsidian"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "book",
-        "_"
-      ],
-      [
-        "emerald",
-        "obsidian",
-        "emerald"
-      ],
-      [
-        "obsidian",
-        "obsidian",
-        "obsidian"
-      ]
-    ]
-  },
-  {
-    "id": "glow_stone_torch_841503",
-    "item_num": 31974,
-    "output": "glow_stone_torch",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 50,
-    "skills": [],
-    "ingredients": [
-      "glowstone_dust",
-      "stick"
-    ],
-    "shaped": false
-  },
-  {
     "id": "redstone_841505",
     "item_num": 331,
     "output": "redstone",
@@ -45517,6 +45205,151 @@
     ],
     "ingredients": [
       "sandstone"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "cereal_841605",
+    "output": "cereal",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 75,
+    "skills": [
+      "foodPreparation"
+    ],
+    "ingredients": [
+      "wheat",
+      "sugar",
+      "bowl_milk"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "hardened_clay_workbench_841606",
+    "item_num": 172,
+    "output": "hardened_clay",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 400,
+    "skills": [
+      "masonry"
+    ],
+    "ingredients": [
+      "brick",
+      "brick",
+      "brick",
+      "brick"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "brick",
+        "brick",
+        "_"
+      ],
+      [
+        "brick",
+        "brick",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ]
+  },
+  {
+    "id": "silver_knife_1051",
+    "item_num": 1051,
+    "output": "silver_knife",
+    "outputQty": 1,
+    "station": "silver_workbench",
+    "difficulty": 425,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "silver_ingot",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "gold_knife_1052",
+    "item_num": 1052,
+    "output": "gold_knife",
+    "outputQty": 1,
+    "station": "gold_workbench",
+    "difficulty": 425,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "gold_ingot",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "mithril_knife_1054",
+    "item_num": 1054,
+    "output": "mithril_knife",
+    "outputQty": 1,
+    "station": "mithril_workbench",
+    "difficulty": 6425,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "mithril_bar",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "adamantium_knife_1055",
+    "item_num": 1055,
+    "output": "adamantium_knife",
+    "outputQty": 1,
+    "station": "adamantium_workbench",
+    "difficulty": 25625,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "adamantium_bar",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "ancient_metal_knife_1057",
+    "item_num": 1057,
+    "output": "ancient_metal_knife",
+    "outputQty": 1,
+    "station": "ancient_metal_workbench",
+    "difficulty": 1625,
+    "skills": [
+      "blacksmithing"
+    ],
+    "ingredients": [
+      "ancient_metal_ingot",
+      "stick"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "brick_furnace_841607",
+    "output": "brick",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 90,
+    "skills": [
+      "masonry"
+    ],
+    "ingredients": [
+      "clay_ball"
     ],
     "shaped": false
   }

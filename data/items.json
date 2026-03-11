@@ -2622,9 +2622,9 @@
   },
   "advanced_enchantment_table": {
     "name": {
-      "hu": "Haladó Bűvölőasztal",
+      "hu": "Egyéni Bűvölőasztal",
       "en": "Custom Enchantment Table",
-      "ru": "Продвинутый стол зачарования"
+      "ru": "Особый стол зачарования"
     },
     "img": "img/items/enchantment_table_custom.png",
     "tier": null,
@@ -2632,9 +2632,9 @@
   },
   "advanced_enchantment_table_knowledge_book": {
     "name": {
-      "hu": "Haladó Bűvölőasztal Tudáskönyv",
+      "hu": "Egyéni Bűvölőasztal Tudáskönyve",
       "en": "Custom Enchantment Table Knowledge Book",
-      "ru": "Книга знаний: продвинутый стол зачарования"
+      "ru": "Книга знаний: особый стол зачарования"
     },
     "img": "img/items/advanced_enchantment_table_knowledge_book.png",
     "tier": null,
@@ -4473,16 +4473,6 @@
     },
     "img": "img/items/fishing_rod_gold.png",
     "tier": "gold",
-    "category": "tool"
-  },
-  "fishing_rod_hard": {
-    "name": {
-      "hu": "Keménykő Horgászbot",
-      "en": "Hardstone Fishing Rod",
-      "ru": "Твердокаменная удочка"
-    },
-    "img": "img/items/fishing_rod_hard.png",
-    "tier": "hard",
     "category": "tool"
   },
   "fishing_rod_iron": {
@@ -9524,9 +9514,9 @@
   },
   "enchantment_table": {
     "name": {
-      "hu": "Bűvölőasztal",
-      "en": "Enchantment Table",
-      "ru": "Стол зачарования"
+      "hu": "Bűvölőasztal (Gyémánt)",
+      "en": "Diamond Enchantment Table",
+      "ru": "Алмазный стол зачарования"
     },
     "img": "img/items/enchantment_table.png",
     "tier": null,
@@ -11549,5 +11539,55 @@
     "tier": null,
     "category": "misc",
     "removed_in": "0.9.0"
+  },
+  "silver_knife": {
+    "name": {
+      "hu": "Ezüst Kés",
+      "en": "Silver Knife",
+      "ru": "Серебряный нож"
+    },
+    "img": "img/items/silver_knife.png",
+    "tier": "silver",
+    "category": "tool"
+  },
+  "gold_knife": {
+    "name": {
+      "hu": "Arany Kés",
+      "en": "Gold Knife",
+      "ru": "Золотой нож"
+    },
+    "img": "img/items/gold_knife.png",
+    "tier": "gold",
+    "category": "tool"
+  },
+  "mithril_knife": {
+    "name": {
+      "hu": "Mithril Kés",
+      "en": "Mithril Knife",
+      "ru": "Мифриловый нож"
+    },
+    "img": "img/items/mithril_knife.png",
+    "tier": "mithril",
+    "category": "tool"
+  },
+  "adamantium_knife": {
+    "name": {
+      "hu": "Ádámantium Kés",
+      "en": "Adamantium Knife",
+      "ru": "Адамантиевый нож"
+    },
+    "img": "img/items/adamantium_knife.png",
+    "tier": "adamantium",
+    "category": "tool"
+  },
+  "ancient_metal_knife": {
+    "name": {
+      "hu": "Ősfémet Kés",
+      "en": "Ancient Metal Knife",
+      "ru": "Нож из древнего металла"
+    },
+    "img": "img/items/ancient_metal_knife.png",
+    "tier": "ancient_metal",
+    "category": "tool"
   }
 }
