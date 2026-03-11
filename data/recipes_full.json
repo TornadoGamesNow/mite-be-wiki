@@ -7099,7 +7099,7 @@
     "id": "iron_door_303",
     "item_num": 330,
     "output": "iron_door",
-    "outputQty": 3,
+    "outputQty": 1,
     "station": "iron_workbench",
     "difficulty": 4800,
     "skills": [
@@ -17942,7 +17942,7 @@
     "id": "copper_door_759",
     "item_num": 1111,
     "output": "copper_door",
-    "outputQty": 3,
+    "outputQty": 1,
     "station": "copper_workbench",
     "difficulty": 2400,
     "skills": [
@@ -17979,7 +17979,7 @@
     "id": "silver_door_760",
     "item_num": 1112,
     "output": "silver_door",
-    "outputQty": 3,
+    "outputQty": 1,
     "station": "silver_workbench",
     "difficulty": 2400,
     "skills": [
@@ -18016,7 +18016,7 @@
     "id": "gold_door_761",
     "item_num": 1113,
     "output": "gold_door",
-    "outputQty": 3,
+    "outputQty": 1,
     "station": "gold_workbench",
     "difficulty": 2400,
     "skills": [
@@ -18053,7 +18053,7 @@
     "id": "mithril_door_762",
     "item_num": 1114,
     "output": "mithril_door",
-    "outputQty": 3,
+    "outputQty": 1,
     "station": "mithril_workbench",
     "difficulty": 38400,
     "skills": [
@@ -18090,7 +18090,7 @@
     "id": "adamantium_door_763",
     "item_num": 1115,
     "output": "adamantium_door",
-    "outputQty": 3,
+    "outputQty": 1,
     "station": "adamantium_workbench",
     "difficulty": 153600,
     "skills": [
@@ -24422,7 +24422,7 @@
     "id": "ancient_metal_door_1054",
     "item_num": 1260,
     "output": "ancient_metal_door",
-    "outputQty": 3,
+    "outputQty": 1,
     "station": "ancient_metal_workbench",
     "difficulty": 9600,
     "skills": [
@@ -34224,7 +34224,7 @@
   {
     "id": "enchantment_table_32140",
     "item_num": 32140,
-    "output": "enchantment_table",
+    "output": "enchanting_table_diamond",
     "outputQty": 1,
     "station": "iron_workbench",
     "difficulty": 3000,
@@ -41630,7 +41630,7 @@
   {
     "id": "enchantment_table_841396",
     "item_num": 841396,
-    "output": "enchantment_table",
+    "output": "enchanting_table_diamond",
     "outputQty": 1,
     "station": "iron_workbench",
     "difficulty": 4185,
@@ -45436,7 +45436,7 @@
   {
     "id": "enchantment_table_emerald_841501",
     "item_num": 245,
-    "output": "enchantment_table",
+    "output": "enchanting_table_emerald",
     "outputQty": 1,
     "station": "iron_workbench",
     "difficulty": 2585,
