@@ -470,8 +470,8 @@ export default function ItemExplorer() {
               )}
               <ItemIcon item={item} size={32} />
               <span style={{ fontSize: '.75em', fontWeight: 500, textAlign: 'center', lineHeight: 1.25,
-                color: isSelected ? 'var(--gold)' : 'var(--text)', wordBreak: 'break-word', maxWidth: '100%',
-                flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                color: isSelected ? 'var(--gold)' : 'var(--text)', overflowWrap: 'break-word', maxWidth: '100%',
+                flex: 1, display: 'block' }}>
                 <HighlightText text={item.name[lang as 'hu' | 'en' | 'ru']} query={search} />
               </span>
               {tierMeta && (

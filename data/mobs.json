@@ -2124,6 +2124,32 @@
     "preview": "revenant_preview.jpg"
   },
   {
+    "id": "spectre",
+    "name": {
+      "hu": "Kísértet",
+      "en": "Spectre",
+      "ru": "Призрак"
+    },
+    "hp": null,
+    "dmgMin": null,
+    "dmgMax": null,
+    "dmgType": "melee",
+    "xp": null,
+    "spawnZones": [
+      "underground"
+    ],
+    "difficulty": "mid",
+    "tags": [],
+    "special": {
+      "hu": "A Revenant variánsa. Pontos statisztikák ismeretlenek.",
+      "en": "A Revenant variant. Exact stats unknown.",
+      "ru": "Вариант Ревенанта. Точные характеристики неизвестны."
+    },
+    "drops": [],
+    "image": "revenant.png",
+    "mobType": "undead"
+  },
+  {
     "id": "brown_slime",
     "name": {
       "hu": "Barna Slime",
@@ -4682,7 +4708,7 @@
     "name": {
       "hu": "Blaze",
       "en": "Blaze",
-      "ru": "Бластер"
+      "ru": "Ифрит"
     },
     "hp": 60,
     "dmgMin": 6,
@@ -4787,7 +4813,7 @@
   {
     "id": "wither",
     "name": {
-      "hu": "Hervadó",
+      "hu": "Wither",
       "en": "Wither",
       "ru": "Иссушитель"
     },
@@ -5284,7 +5310,7 @@
   {
     "id": "pig",
     "name": {
-      "hu": "Disznó",
+      "hu": "Malac",
       "en": "Pig",
       "ru": "Свинья"
     },
@@ -5882,7 +5908,7 @@
       "en": "Desert biomes.",
       "ru": "Пустынные биомы."
     },
-    "speed": 1.0,
+    "speed": 1,
     "mcmod_id": 808648,
     "preview": "scorpion_preview.jpg"
   },
@@ -7635,7 +7661,7 @@
       "en": "Underground caves.",
       "ru": "Подземные пещеры."
     },
-    "speed": 4.0
+    "speed": 4
   },
   {
     "id": "giant_zombie",
