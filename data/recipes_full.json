@@ -7684,7 +7684,7 @@
     "output": "light_blue_dye",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 50,
     "skills": [
       "fineArts"
     ],
@@ -7699,7 +7699,7 @@
     "output": "magenta_dye",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [
       "fineArts"
     ],
@@ -7714,7 +7714,7 @@
     "output": "orange_dye",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 50,
     "skills": [
       "fineArts"
     ],
@@ -7729,7 +7729,7 @@
     "output": "pink_dye",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 50,
     "skills": [
       "fineArts"
     ],
@@ -7744,7 +7744,7 @@
     "output": "light_gray_dye",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 75,
     "skills": [
       "fineArts"
     ],
@@ -7968,7 +7968,7 @@
     "output": "orange_dye",
     "outputQty": 2,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 50,
     "skills": [
       "fineArts"
     ],
@@ -18575,7 +18575,9 @@
     "outputQty": 1,
     "station": "mithril_workbench",
     "difficulty": 100,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_bucket_filled_with_stone"
     ],
@@ -18605,7 +18607,9 @@
     "outputQty": 1,
     "station": "adamantium_workbench",
     "difficulty": 100,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_bucket_filled_with_stone"
     ],
@@ -18635,7 +18639,9 @@
     "outputQty": 1,
     "station": "ancient_metal_workbench",
     "difficulty": 100,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_bucket_filled_with_stone"
     ],
@@ -18750,7 +18756,9 @@
     "outputQty": 1,
     "station": "mithril_workbench",
     "difficulty": 25,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_bucket",
       "water_bowl",
@@ -18784,7 +18792,9 @@
     "outputQty": 1,
     "station": "adamantium_workbench",
     "difficulty": 25,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_bucket",
       "water_bowl",
@@ -18818,7 +18828,9 @@
     "outputQty": 1,
     "station": "ancient_metal_workbench",
     "difficulty": 25,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_bucket",
       "water_bowl",
@@ -18954,7 +18966,9 @@
     "outputQty": 1,
     "station": "mithril_workbench",
     "difficulty": 25,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_bucket",
       "bowl_milk",
@@ -18988,7 +19002,9 @@
     "outputQty": 1,
     "station": "adamantium_workbench",
     "difficulty": 25,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_bucket",
       "bowl_milk",
@@ -19022,7 +19038,9 @@
     "outputQty": 1,
     "station": "ancient_metal_workbench",
     "difficulty": 25,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_bucket",
       "bowl_milk",
@@ -22953,7 +22971,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 40,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "carrot_on_a_stick_mithril"
     ],
@@ -22986,7 +23006,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 40,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "carrot_on_a_stick_adamantium"
     ],
@@ -23041,7 +23063,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 40,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "fishing_rod_mithril",
       "carrot"
@@ -23055,7 +23079,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 40,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "fishing_rod_adamantium",
       "carrot"
@@ -24528,7 +24554,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 40,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "carrot_on_a_stick_ancient_metal"
     ],
@@ -24541,7 +24569,9 @@
     "outputQty": 1,
     "station": "flint_workbench",
     "difficulty": 40,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "fishing_rod_ancient_metal",
       "carrot"
@@ -27731,7 +27761,9 @@
     "outputQty": 1,
     "station": "ancient_metal_workbench",
     "difficulty": 277.78,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_nugget",
       "flint"
@@ -27745,7 +27777,9 @@
     "outputQty": 1,
     "station": "mithril_workbench",
     "difficulty": 811.11,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_nugget",
       "flint"
@@ -27759,7 +27793,9 @@
     "outputQty": 1,
     "station": "adamantium_workbench",
     "difficulty": 2944.44,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_nugget",
       "flint"
@@ -30222,7 +30258,7 @@
     "output": "flint_knife",
     "outputQty": 1,
     "station": "hand",
-    "difficulty": 0,
+    "difficulty": 150,
     "skills": [],
     "ingredients": [
       "straw_rope",
@@ -30292,7 +30328,7 @@
     "output": "flint_knife",
     "outputQty": 1,
     "station": "hand",
-    "difficulty": 0,
+    "difficulty": 150,
     "skills": [],
     "ingredients": [
       "flint",
@@ -30326,7 +30362,7 @@
     "output": "flint_hatchet",
     "outputQty": 1,
     "station": "hand",
-    "difficulty": 0,
+    "difficulty": 175,
     "skills": [],
     "ingredients": [
       "flint",
@@ -32276,7 +32312,7 @@
     "output": "hardstone_helmet",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
+    "difficulty": 8000,
     "skills": [
       "blacksmithing"
     ],
@@ -32313,7 +32349,7 @@
     "output": "hardstone_chestplate",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
+    "difficulty": 12800,
     "skills": [
       "blacksmithing"
     ],
@@ -32353,7 +32389,7 @@
     "output": "hardstone_leggings",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
+    "difficulty": 11200,
     "skills": [
       "blacksmithing"
     ],
@@ -32392,7 +32428,7 @@
     "output": "hardstone_boots",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
+    "difficulty": 6400,
     "skills": [
       "blacksmithing"
     ],
@@ -32428,8 +32464,10 @@
     "output": "hardstone_battle_axe",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 6450,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "hardstone_ingot",
       "hardstone_ingot",
@@ -32467,8 +32505,10 @@
     "output": "hardstone_mattock",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 6450,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "hardstone_ingot",
       "hardstone_ingot",
@@ -32506,8 +32546,10 @@
     "output": "hardstone_scythe",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 3275,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "stick",
       "hardstone_ingot",
@@ -32545,8 +32587,10 @@
     "output": "hardstone_shears",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 3200,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "hardstone_ingot",
       "hardstone_ingot"
@@ -33703,9 +33747,9 @@
     "output": "hardstone_hoe",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 6400,
+    "difficulty": 3250,
     "skills": [
-      "farming"
+      "blacksmithing"
     ],
     "ingredients": [
       "hardstone_ingot",
@@ -36253,7 +36297,7 @@
     "output": "copper_ingot",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
+    "difficulty": 3600,
     "skills": [],
     "ingredients": [
       "copper_ore",
@@ -36267,7 +36311,7 @@
     "output": "silver_ingot",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
+    "difficulty": 3600,
     "skills": [],
     "ingredients": [
       "silver_ore",
@@ -36281,7 +36325,7 @@
     "output": "gold_ingot",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
+    "difficulty": 3600,
     "skills": [],
     "ingredients": [
       "gold_ore",
@@ -36295,7 +36339,7 @@
     "output": "iron_ingot",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
+    "difficulty": 7200,
     "skills": [],
     "ingredients": [
       "iron_ore",
@@ -36309,7 +36353,7 @@
     "output": "hardstone_ingot",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
+    "difficulty": 14400,
     "skills": [],
     "ingredients": [
       "hardstone_ore",
@@ -36323,7 +36367,7 @@
     "output": "mithril_bar",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
+    "difficulty": 57600,
     "skills": [],
     "ingredients": [
       "mithril_ore",
@@ -36337,7 +36381,7 @@
     "output": "adamantium_bar",
     "outputQty": 1,
     "station": "stone_furnace",
-    "difficulty": 0,
+    "difficulty": 230400,
     "skills": [],
     "ingredients": [
       "adamantium_ore",
@@ -36379,7 +36423,7 @@
     "output": "wheat_soup",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "seeds",
@@ -36413,7 +36457,7 @@
     "output": "lotus_seed_soup",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 54,
     "skills": [],
     "ingredients": [
       "lily_pad",
@@ -36447,7 +36491,7 @@
     "output": "hardstone_nugget",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
+    "difficulty": 1600,
     "skills": [],
     "ingredients": [
       "hardstone_coin"
@@ -36477,7 +36521,7 @@
     "output": "hardstone_nugget",
     "outputQty": 12,
     "station": "mithril_workbench",
-    "difficulty": 0,
+    "difficulty": 1600,
     "skills": [],
     "ingredients": [
       "hardstone_ore",
@@ -36509,7 +36553,7 @@
     "output": "hardstone_nugget",
     "outputQty": 9,
     "station": "mithril_workbench",
-    "difficulty": 0,
+    "difficulty": 1600,
     "skills": [],
     "ingredients": [
       "hardstone_ingot",
@@ -36541,7 +36585,7 @@
     "output": "armor_stand",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 270,
     "skills": [],
     "ingredients": [
       "stick",
@@ -36577,7 +36621,7 @@
     "output": "iron_boat",
     "outputQty": 1,
     "station": "iron_workbench",
-    "difficulty": 0,
+    "difficulty": 4000,
     "skills": [],
     "ingredients": [
       "iron_ingot",
@@ -36724,7 +36768,7 @@
     "output": "hardstone_coin",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "hardstone_nugget"
@@ -36791,7 +36835,7 @@
     ],
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 2300,
     "skills": [],
     "ingredients": [
       [
@@ -36882,7 +36926,7 @@
     "output": "fence_gate",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 260,
     "skills": [],
     "ingredients": [
       "stick",
@@ -36931,7 +36975,7 @@
     "output": "flint_hatchet",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 175,
     "skills": [],
     "ingredients": [
       "flint",
@@ -36964,7 +37008,7 @@
     "output": "flint_hatchet",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 175,
     "skills": [],
     "ingredients": [
       "flint",
@@ -36997,7 +37041,7 @@
     "output": "flint_axe",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 375,
     "skills": [],
     "ingredients": [
       "flint",
@@ -37032,7 +37076,7 @@
     "output": "flint_axe",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 375,
     "skills": [],
     "ingredients": [
       "flint",
@@ -37221,8 +37265,10 @@
     "output": "sandstone_furnace_idle",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 640,
+    "skills": [
+      "masonry"
+    ],
     "ingredients": [
       "sandstone",
       "sandstone",
@@ -37258,7 +37304,7 @@
     "output": "flint_knife",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 150,
     "skills": [],
     "ingredients": [
       "flint",
@@ -37290,7 +37336,7 @@
     "output": "copper_nugget",
     "outputQty": 1,
     "station": "copper_workbench",
-    "difficulty": 0,
+    "difficulty": 500,
     "skills": [],
     "ingredients": [
       "copper_coin"
@@ -37320,7 +37366,7 @@
     "output": "copper_nugget",
     "outputQty": 12,
     "station": "copper_workbench",
-    "difficulty": 0,
+    "difficulty": 500,
     "skills": [],
     "ingredients": [
       "copper_ore",
@@ -37352,7 +37398,7 @@
     "output": "copper_nugget",
     "outputQty": 9,
     "station": "copper_workbench",
-    "difficulty": 0,
+    "difficulty": 500,
     "skills": [],
     "ingredients": [
       "copper_ingot",
@@ -37384,7 +37430,7 @@
     "output": "copper_nugget",
     "outputQty": 4,
     "station": "copper_workbench",
-    "difficulty": 0,
+    "difficulty": 500,
     "skills": [],
     "ingredients": [
       "copper_chain"
@@ -37414,7 +37460,7 @@
     "output": "copper_nugget",
     "outputQty": 1,
     "station": "copper_workbench",
-    "difficulty": 0,
+    "difficulty": 500,
     "skills": [],
     "ingredients": [
       "copper_arrow"
@@ -37444,7 +37490,7 @@
     "output": "silver_nugget",
     "outputQty": 4,
     "station": "silver_workbench",
-    "difficulty": 0,
+    "difficulty": 500,
     "skills": [],
     "ingredients": [
       "silver_chain"
@@ -37474,7 +37520,7 @@
     "output": "silver_nugget",
     "outputQty": 1,
     "station": "silver_workbench",
-    "difficulty": 0,
+    "difficulty": 500,
     "skills": [],
     "ingredients": [
       "silver_arrow"
@@ -37504,7 +37550,7 @@
     "output": "silver_nugget",
     "outputQty": 1,
     "station": "silver_workbench",
-    "difficulty": 0,
+    "difficulty": 500,
     "skills": [],
     "ingredients": [
       "silver_coin"
@@ -37534,7 +37580,7 @@
     "output": "silver_nugget",
     "outputQty": 12,
     "station": "silver_workbench",
-    "difficulty": 0,
+    "difficulty": 500,
     "skills": [],
     "ingredients": [
       "silver_ore",
@@ -37566,7 +37612,7 @@
     "output": "gold_nugget",
     "outputQty": 1,
     "station": "gold_workbench",
-    "difficulty": 0,
+    "difficulty": 400,
     "skills": [],
     "ingredients": [
       "gold_coin"
@@ -37596,7 +37642,7 @@
     "output": "gold_nugget",
     "outputQty": 4,
     "station": "gold_workbench",
-    "difficulty": 0,
+    "difficulty": 400,
     "skills": [],
     "ingredients": [
       "gold_chain"
@@ -37626,7 +37672,7 @@
     "output": "gold_nugget",
     "outputQty": 1,
     "station": "gold_workbench",
-    "difficulty": 0,
+    "difficulty": 400,
     "skills": [],
     "ingredients": [
       "gold_arrow"
@@ -37656,7 +37702,7 @@
     "output": "iron_nugget",
     "outputQty": 9,
     "station": "iron_workbench",
-    "difficulty": 0,
+    "difficulty": 800,
     "skills": [],
     "ingredients": [
       "iron_ingot",
@@ -37688,7 +37734,7 @@
     "output": "iron_nugget",
     "outputQty": 4,
     "station": "iron_workbench",
-    "difficulty": 0,
+    "difficulty": 800,
     "skills": [],
     "ingredients": [
       "iron_chain"
@@ -37718,7 +37764,7 @@
     "output": "iron_nugget",
     "outputQty": 1,
     "station": "iron_workbench",
-    "difficulty": 0,
+    "difficulty": 800,
     "skills": [],
     "ingredients": [
       "iron_arrow"
@@ -37748,7 +37794,7 @@
     "output": "mithril_nugget",
     "outputQty": 9,
     "station": "mithril_workbench",
-    "difficulty": 0,
+    "difficulty": 6400,
     "skills": [],
     "ingredients": [
       "mithril_bar",
@@ -37780,7 +37826,7 @@
     "output": "adamantium_nugget",
     "outputQty": 9,
     "station": "adamantium_workbench",
-    "difficulty": 0,
+    "difficulty": 25600,
     "skills": [],
     "ingredients": [
       "adamantium_bar",
@@ -37812,7 +37858,7 @@
     "output": "obsidian_shard",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 240,
     "skills": [],
     "ingredients": [
       "obsidian_arrow"
@@ -37842,7 +37888,7 @@
     "output": "copper_coin",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "copper_nugget"
@@ -37872,7 +37918,7 @@
     "output": "silver_coin",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "silver_nugget"
@@ -37902,7 +37948,7 @@
     "output": "gold_coin",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "gold_nugget"
@@ -37932,7 +37978,7 @@
     "output": "ancient_metal_coin",
     "outputQty": 1,
     "station": "ancient_metal_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "ancient_metal_nugget"
@@ -37962,7 +38008,7 @@
     "output": "mithril_coin",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "mithril_nugget"
@@ -37992,7 +38038,7 @@
     "output": "adamantium_coin",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "adamantium_nugget"
@@ -38022,7 +38068,7 @@
     "output": "salad",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 25,
     "skills": [],
     "ingredients": [
       "dandelion",
@@ -38089,7 +38135,7 @@
     "output": "pumpkin_soup",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 85,
     "skills": [],
     "ingredients": [
       "pumpkin",
@@ -38188,7 +38234,7 @@
     "output": "chicken_soup",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "carrot",
@@ -38255,7 +38301,7 @@
     "output": "dough",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 125,
     "skills": [],
     "ingredients": [
       "flour",
@@ -38286,7 +38332,7 @@
     "output": "copper_chain",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 177.78,
     "skills": [],
     "ingredients": [
       "copper_nugget",
@@ -38319,7 +38365,7 @@
     "output": "silver_chain",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 177.78,
     "skills": [],
     "ingredients": [
       "silver_nugget",
@@ -38352,7 +38398,7 @@
     "output": "gold_chain",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 177.78,
     "skills": [],
     "ingredients": [
       "gold_nugget",
@@ -38385,7 +38431,7 @@
     "output": "iron_chain",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 355.56,
     "skills": [],
     "ingredients": [
       "iron_nugget",
@@ -38418,8 +38464,10 @@
     "output": "ancient_metal_chain",
     "outputQty": 1,
     "station": "ancient_metal_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 711.11,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_nugget",
       "ancient_metal_nugget",
@@ -38451,8 +38499,10 @@
     "output": "mithril_chain",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 2844.44,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_nugget",
       "mithril_nugget",
@@ -38484,8 +38534,10 @@
     "output": "adamantium_chain",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 11377.78,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_nugget",
       "adamantium_nugget",
@@ -38517,8 +38569,10 @@
     "output": "ancient_metal_sword",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 3225,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_ingot",
       "ancient_metal_ingot",
@@ -38550,8 +38604,10 @@
     "output": "mithril_sword",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 12825,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_bar",
       "mithril_bar",
@@ -38583,8 +38639,10 @@
     "output": "adamantium_sword",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 51225,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_bar",
       "adamantium_bar",
@@ -38616,8 +38674,10 @@
     "output": "ancient_metal_battle_axe",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 6450,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_ingot",
       "ancient_metal_ingot",
@@ -38652,8 +38712,10 @@
     "output": "mithril_battle_axe",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 25650,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_bar",
       "mithril_bar",
@@ -38688,8 +38750,10 @@
     "output": "adamantium_battle_axe",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 102450,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_bar",
       "adamantium_bar",
@@ -38724,8 +38788,10 @@
     "output": "ancient_metal_war_hammer",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 8050,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_ingot",
       "ancient_metal_ingot",
@@ -38761,8 +38827,10 @@
     "output": "mithril_war_hammer",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 32050,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_bar",
       "mithril_bar",
@@ -38798,8 +38866,10 @@
     "output": "adamantium_war_hammer",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 128050,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_bar",
       "adamantium_bar",
@@ -38836,7 +38906,9 @@
     "outputQty": 1,
     "station": "ancient_metal_workbench",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_ingot",
       "hard_stick"
@@ -38868,7 +38940,9 @@
     "outputQty": 1,
     "station": "mithril_workbench",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_bar",
       "hard_stick"
@@ -38900,7 +38974,9 @@
     "outputQty": 1,
     "station": "adamantium_workbench",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_bar",
       "hard_stick"
@@ -38931,7 +39007,7 @@
     "output": "copper_arrow",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 94.44,
     "skills": [],
     "ingredients": [
       "copper_nugget",
@@ -38963,7 +39039,7 @@
     "output": "flint_arrow",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 75,
     "skills": [],
     "ingredients": [
       "chip_flint",
@@ -38995,7 +39071,7 @@
     "output": "obsidian_arrow",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 72.22,
     "skills": [],
     "ingredients": [
       "obsidian_shard",
@@ -39027,7 +39103,7 @@
     "output": "silver_arrow",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 94.44,
     "skills": [],
     "ingredients": [
       "silver_nugget",
@@ -39059,7 +39135,7 @@
     "output": "gold_arrow",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 94.44,
     "skills": [],
     "ingredients": [
       "gold_nugget",
@@ -39091,7 +39167,7 @@
     "output": "iron_arrow",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 138.89,
     "skills": [],
     "ingredients": [
       "iron_nugget",
@@ -39123,8 +39199,10 @@
     "output": "ancient_metal_arrow",
     "outputQty": 1,
     "station": "ancient_metal_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 227.78,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_nugget",
       "stick",
@@ -39155,8 +39233,10 @@
     "output": "mithril_arrow",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 761.11,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_nugget",
       "stick",
@@ -39187,8 +39267,10 @@
     "output": "adamantium_arrow",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 2894.44,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_nugget",
       "stick",
@@ -39317,8 +39399,10 @@
     "output": "mithril_bow",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 6550,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "stick",
       "string",
@@ -39353,8 +39437,10 @@
     "output": "ancient_metal_bow",
     "outputQty": 1,
     "station": "ancient_metal_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 1750,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "stick",
       "string",
@@ -39389,7 +39475,7 @@
     "output": "silver_shears",
     "outputQty": 1,
     "station": "silver_workbench",
-    "difficulty": 0,
+    "difficulty": 800,
     "skills": [],
     "ingredients": [
       "silver_ingot",
@@ -39420,7 +39506,7 @@
     "output": "gold_shears",
     "outputQty": 1,
     "station": "gold_workbench",
-    "difficulty": 0,
+    "difficulty": 800,
     "skills": [],
     "ingredients": [
       "gold_ingot",
@@ -39451,7 +39537,7 @@
     "output": "iron_shears",
     "outputQty": 1,
     "station": "iron_workbench",
-    "difficulty": 0,
+    "difficulty": 1600,
     "skills": [],
     "ingredients": [
       "iron_ingot",
@@ -39482,8 +39568,10 @@
     "output": "ancient_metal_shears",
     "outputQty": 1,
     "station": "ancient_metal_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 3200,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_ingot",
       "ancient_metal_ingot"
@@ -39513,8 +39601,10 @@
     "output": "mithril_shears",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 12800,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_bar",
       "mithril_bar"
@@ -39544,8 +39634,10 @@
     "output": "adamantium_shears",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 51200,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_bar",
       "adamantium_bar"
@@ -39575,7 +39667,7 @@
     "output": "flint_shovel",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 175,
     "skills": [],
     "ingredients": [
       "flint",
@@ -39608,7 +39700,7 @@
     "output": "flint_shovel",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 175,
     "skills": [],
     "ingredients": [
       "flint",
@@ -39641,7 +39733,7 @@
     "output": "obsidian_shovel",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 315,
     "skills": [],
     "ingredients": [
       "obsidian",
@@ -39674,7 +39766,7 @@
     "output": "obsidian_shovel",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 315,
     "skills": [],
     "ingredients": [
       "obsidian",
@@ -39707,8 +39799,10 @@
     "output": "ancient_metal_shovel",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 1650,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_ingot",
       "hard_stick",
@@ -39740,8 +39834,10 @@
     "output": "mithril_shovel",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 6450,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_bar",
       "hard_stick",
@@ -39773,8 +39869,10 @@
     "output": "adamantium_shovel",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 25650,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_bar",
       "hard_stick",
@@ -39806,7 +39904,7 @@
     "output": "obsidian_hatchet",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 315,
     "skills": [],
     "ingredients": [
       "obsidian",
@@ -39839,7 +39937,7 @@
     "output": "obsidian_hatchet",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 315,
     "skills": [],
     "ingredients": [
       "obsidian",
@@ -39873,7 +39971,9 @@
     "outputQty": 1,
     "station": "ancient_metal_workbench",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_ingot",
       "hard_stick",
@@ -39906,7 +40006,9 @@
     "outputQty": 1,
     "station": "mithril_workbench",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_bar",
       "hard_stick",
@@ -39939,7 +40041,9 @@
     "outputQty": 1,
     "station": "adamantium_workbench",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_bar",
       "hard_stick",
@@ -39971,8 +40075,10 @@
     "output": "ancient_metal_pickaxe",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 4850,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_ingot",
       "ancient_metal_ingot",
@@ -40006,8 +40112,10 @@
     "output": "mithril_pickaxe",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 19250,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_bar",
       "mithril_bar",
@@ -40041,8 +40149,10 @@
     "output": "adamantium_pickaxe",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 76850,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_bar",
       "adamantium_bar",
@@ -40076,7 +40186,7 @@
     "output": "obsidian_axe",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 795,
     "skills": [],
     "ingredients": [
       "obsidian",
@@ -40111,7 +40221,7 @@
     "output": "obsidian_axe",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 795,
     "skills": [],
     "ingredients": [
       "obsidian",
@@ -40146,8 +40256,10 @@
     "output": "ancient_metal_axe",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 4850,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_ingot",
       "ancient_metal_ingot",
@@ -40181,8 +40293,10 @@
     "output": "mithril_axe",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 19250,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_bar",
       "mithril_bar",
@@ -40216,8 +40330,10 @@
     "output": "ancient_metal_scythe",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 3275,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "hard_stick",
       "ancient_metal_ingot",
@@ -40251,8 +40367,10 @@
     "output": "mithril_scythe",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 12875,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "hard_stick",
       "mithril_bar",
@@ -40286,8 +40404,10 @@
     "output": "adamantium_scythe",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 51275,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "hard_stick",
       "adamantium_bar",
@@ -40321,8 +40441,10 @@
     "output": "adamantium_axe",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 76850,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_bar",
       "adamantium_bar",
@@ -40356,8 +40478,10 @@
     "output": "ancient_metal_hoe",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 3250,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_ingot",
       "ancient_metal_ingot",
@@ -40390,8 +40514,10 @@
     "output": "mithril_hoe",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 12850,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_bar",
       "mithril_bar",
@@ -40424,8 +40550,10 @@
     "output": "adamantium_hoe",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 51250,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_bar",
       "adamantium_bar",
@@ -40458,8 +40586,10 @@
     "output": "ancient_metal_mattock",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 6450,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "ancient_metal_ingot",
       "ancient_metal_ingot",
@@ -40494,8 +40624,10 @@
     "output": "mithril_mattock",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 25650,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "mithril_bar",
       "mithril_bar",
@@ -40530,8 +40662,10 @@
     "output": "adamantium_mattock",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 102450,
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "adamantium_bar",
       "adamantium_bar",
@@ -40566,7 +40700,7 @@
     "output": "bottle_of_disenchanting",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 150,
     "skills": [],
     "ingredients": [
       "water_bottle",
@@ -40662,7 +40796,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "silver_battle_axe",
       "copper_ingot",
@@ -40694,7 +40830,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "iron_battle_axe",
       "carbon_crystal_shard",
@@ -40758,7 +40896,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "silver_war_hammer",
       "copper_ingot",
@@ -40790,7 +40930,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "iron_war_hammer",
       "carbon_crystal_shard",
@@ -40854,7 +40996,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "silver_sword",
       "copper_ingot",
@@ -40886,7 +41030,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "iron_sword",
       "carbon_crystal_shard",
@@ -40950,7 +41096,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "silver_pickaxe",
       "copper_ingot",
@@ -40982,7 +41130,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "iron_pickaxe",
       "carbon_crystal_shard",
@@ -41046,7 +41196,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "silver_axe",
       "copper_ingot",
@@ -41078,7 +41230,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "iron_axe",
       "carbon_crystal_shard",
@@ -41142,7 +41296,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "silver_shovel",
       "copper_ingot",
@@ -41174,7 +41330,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "iron_shovel",
       "carbon_crystal_shard",
@@ -41206,7 +41364,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "iron_shears",
       "carbon_crystal_shard",
@@ -41238,7 +41398,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "iron_dagger",
       "carbon_crystal_shard",
@@ -41270,7 +41432,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "iron_mattock",
       "carbon_crystal_shard",
@@ -41302,7 +41466,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "iron_scythe",
       "carbon_crystal_shard",
@@ -41334,7 +41500,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "iron_hatchet",
       "carbon_crystal_shard",
@@ -41366,7 +41534,9 @@
     "outputQty": 1,
     "station": "blast_furnace",
     "difficulty": 0,
-    "skills": [],
+    "skills": [
+      "blacksmithing"
+    ],
     "ingredients": [
       "iron_hoe",
       "carbon_crystal_shard",
@@ -41427,7 +41597,7 @@
     "output": "battery",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 2050,
     "skills": [],
     "ingredients": [
       "tin_plate",
@@ -41463,8 +41633,11 @@
     "output": "enchantment_table",
     "outputQty": 1,
     "station": "iron_workbench",
-    "difficulty": 0,
-    "skills": [],
+    "difficulty": 4185,
+    "skills": [
+      "masonry",
+      "fineArts"
+    ],
     "ingredients": [
       "book",
       "diamond",
@@ -41563,7 +41736,7 @@
     "output": "sign",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 65,
     "skills": [],
     "ingredients": [
       "oak_wood_slab_single",
@@ -41594,7 +41767,7 @@
     "output": "stone",
     "outputQty": 2,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 800,
     "skills": [],
     "ingredients": [
       "cobblestone",
@@ -41627,7 +41800,7 @@
     "output": "flint",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "chip_flint",
@@ -41660,7 +41833,7 @@
     "output": "empty_antique_atlas",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 50,
     "skills": [],
     "ingredients": [
       "book",
@@ -41691,7 +41864,7 @@
     "output": "way_stone",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
+    "difficulty": 750,
     "skills": [],
     "ingredients": [
       "ender_pearl",
@@ -41728,7 +41901,7 @@
     "output": "empty_map",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 300,
     "skills": [],
     "ingredients": [
       "book",
@@ -41823,7 +41996,7 @@
     "output": "flint_pickaxe",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 300,
     "skills": [],
     "ingredients": [
       "chip_flint",
@@ -41860,7 +42033,7 @@
     "output": "flint_pickaxe",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 300,
     "skills": [],
     "ingredients": [
       "chip_flint",
@@ -41932,7 +42105,7 @@
     "output": "filter_paper",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 175,
     "skills": [],
     "ingredients": [
       "paper",
@@ -42073,7 +42246,7 @@
     "output": "quiver",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 150,
     "skills": [],
     "ingredients": [
       "feather",
@@ -42240,7 +42413,7 @@
     "output": "bone_club",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 325,
     "skills": [],
     "ingredients": [
       "bone",
@@ -42273,7 +42446,7 @@
     "output": "bone_club",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 325,
     "skills": [],
     "ingredients": [
       "bone",
@@ -42445,7 +42618,7 @@
     "output": "gold_nugget",
     "outputQty": 12,
     "station": "gold_workbench",
-    "difficulty": 0,
+    "difficulty": 400,
     "skills": [],
     "ingredients": [
       "gold_ore",
@@ -42477,7 +42650,7 @@
     "output": "iron_nugget",
     "outputQty": 12,
     "station": "iron_workbench",
-    "difficulty": 0,
+    "difficulty": 800,
     "skills": [],
     "ingredients": [
       "iron_ore",
@@ -42509,7 +42682,7 @@
     "output": "mashed_potato",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 75,
     "skills": [],
     "ingredients": [
       "baked_potato",
@@ -42618,7 +42791,7 @@
     "output": "sharp_flint_spear",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "sharp_chip",
@@ -45257,6 +45430,91 @@
     ],
     "ingredients": [
       "ore_tin"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "enchantment_table_emerald_841501",
+    "item_num": 245,
+    "output": "enchantment_table",
+    "outputQty": 1,
+    "station": "iron_workbench",
+    "difficulty": 2585,
+    "skills": [
+      "masonry",
+      "fineArts"
+    ],
+    "ingredients": [
+      "book",
+      "emerald",
+      "obsidian",
+      "emerald",
+      "obsidian",
+      "obsidian",
+      "obsidian"
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        "_",
+        "book",
+        "_"
+      ],
+      [
+        "emerald",
+        "obsidian",
+        "emerald"
+      ],
+      [
+        "obsidian",
+        "obsidian",
+        "obsidian"
+      ]
+    ]
+  },
+  {
+    "id": "campfire_idle_841502",
+    "item_num": 194,
+    "output": "campfire_idle",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 330,
+    "skills": [],
+    "ingredients": [
+      "stick",
+      "stick",
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "log_oak",
+        "log_spruce",
+        "log_birch",
+        "log_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ]
+    ],
+    "shaped": false
+  },
+  {
+    "id": "glow_stone_torch_841503",
+    "item_num": 31974,
+    "output": "glow_stone_torch",
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 50,
+    "skills": [],
+    "ingredients": [
+      "glowstone_dust",
+      "stick"
     ],
     "shaped": false
   }
