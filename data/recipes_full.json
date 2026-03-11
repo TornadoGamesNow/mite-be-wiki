@@ -261,11 +261,12 @@
       "masonry"
     ],
     "ingredients": [
+      "sand",
+      "sand",
+      "sand",
       "sand"
     ],
-    "shaped": false,
-    "removed_version": "0.6.0",
-    "added_version": "0.5.8"
+    "shaped": false
   },
   {
     "id": "lapis_block_17",
@@ -29269,27 +29270,6 @@
     "shaped": false
   },
   {
-    "id": "advanced_enchantment_table_1270",
-    "item_num": 31785,
-    "output": "advanced_enchantment_table",
-    "outputQty": 1,
-    "station": "flint_workbench",
-    "difficulty": 6400,
-    "skills": [],
-    "ingredients": [
-      "gold_block",
-      "emerald_block",
-      "gold_block",
-      "redstone_block",
-      "enchanting_table_diamond",
-      "redstone_block",
-      "gold_block",
-      "emerald_block",
-      "gold_block"
-    ],
-    "shaped": false
-  },
-  {
     "id": "nether_furnace_core_1271",
     "item_num": 31831,
     "output": "nether_furnace_core",
@@ -34220,43 +34200,6 @@
       "copper_ingot"
     ],
     "shaped": false
-  },
-  {
-    "id": "enchantment_table_32140",
-    "item_num": 32140,
-    "output": "enchanting_table_diamond",
-    "outputQty": 1,
-    "station": "iron_workbench",
-    "difficulty": 3000,
-    "skills": [],
-    "ingredients": [
-      "book",
-      "diamond",
-      "obsidian",
-      "diamond",
-      "obsidian",
-      "obsidian",
-      "obsidian"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "book",
-        "_"
-      ],
-      [
-        "diamond",
-        "obsidian",
-        "diamond"
-      ],
-      [
-        "obsidian",
-        "obsidian",
-        "obsidian"
-      ]
-    ],
-    "removed_version": "pre-0.5.5"
   },
   {
     "id": "enchantment_table_custom_32141",
@@ -41629,45 +41572,6 @@
     ]
   },
   {
-    "id": "enchantment_table_841396",
-    "item_num": 841396,
-    "output": "enchanting_table_diamond",
-    "outputQty": 1,
-    "station": "iron_workbench",
-    "difficulty": 4185,
-    "skills": [
-      "masonry",
-      "fineArts"
-    ],
-    "ingredients": [
-      "book",
-      "diamond",
-      "obsidian",
-      "diamond",
-      "obsidian",
-      "obsidian",
-      "obsidian"
-    ],
-    "shaped": true,
-    "pattern": [
-      [
-        "_",
-        "book",
-        "_"
-      ],
-      [
-        "diamond",
-        "obsidian",
-        "diamond"
-      ],
-      [
-        "obsidian",
-        "obsidian",
-        "obsidian"
-      ]
-    ]
-  },
-  {
     "id": "mesh_string_841397",
     "item_num": 841397,
     "output": "mesh_string",
@@ -45497,6 +45401,122 @@
     "skills": [],
     "ingredients": [
       "redstone_block"
+    ],
+    "shaped": false
+  },
+  {
+    "id": "wooden_door_841600",
+    "item_num": 324,
+    "output": [
+      "wooden_door",
+      "birch_door",
+      "spruce_door",
+      "jungle_door"
+    ],
+    "outputQty": 1,
+    "station": "flint_workbench",
+    "difficulty": 480,
+    "skills": [
+      "carpentry"
+    ],
+    "ingredients": [
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ],
+      [
+        "planks_oak",
+        "planks_spruce",
+        "planks_birch",
+        "planks_jungle"
+      ]
+    ],
+    "shaped": true,
+    "pattern": [
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "_"
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "_"
+      ],
+      [
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        [
+          "planks_oak",
+          "planks_spruce",
+          "planks_birch",
+          "planks_jungle"
+        ],
+        "_"
+      ]
+    ]
+  },
+  {
+    "id": "glass_from_sandstone_841604",
+    "output": "glass",
+    "outputQty": 1,
+    "station": "stone_furnace",
+    "difficulty": 90,
+    "skills": [
+      "masonry"
+    ],
+    "ingredients": [
+      "sandstone"
     ],
     "shaped": false
   }

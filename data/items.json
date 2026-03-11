@@ -1452,7 +1452,7 @@
       "en": "Enchanting Table (Emerald)",
       "ru": "Стол зачарования (изумруд)"
     },
-    "img": "img/blocks/emerald_enchanting_table_top.png",
+    "img": "img/items/enchantment_table_emerald.png",
     "tier": null,
     "category": "station"
   },
@@ -1462,7 +1462,7 @@
       "en": "Enchanting Table (Diamond)",
       "ru": "Стол зачарования (алмаз)"
     },
-    "img": "img/blocks/enchanting_table_top.png",
+    "img": "img/items/enchantment_table.png",
     "tier": null,
     "category": "station"
   },
@@ -2623,17 +2623,17 @@
   "advanced_enchantment_table": {
     "name": {
       "hu": "Haladó Bűvölőasztal",
-      "en": "Advanced Enchantment Table",
+      "en": "Custom Enchantment Table",
       "ru": "Продвинутый стол зачарования"
     },
-    "img": "img/items/advanced_enchantment_table.png",
+    "img": "img/items/enchantment_table_custom.png",
     "tier": null,
     "category": "block"
   },
   "advanced_enchantment_table_knowledge_book": {
     "name": {
       "hu": "Haladó Bűvölőasztal Tudáskönyv",
-      "en": "Advanced Enchantment Table Knowledge Book",
+      "en": "Custom Enchantment Table Knowledge Book",
       "ru": "Книга знаний: продвинутый стол зачарования"
     },
     "img": "img/items/advanced_enchantment_table_knowledge_book.png",
@@ -9555,7 +9555,7 @@
   "enchantment_table_custom": {
     "name": {
       "hu": "Egyéni Bűvölőasztal",
-      "en": "Enchantment Table Custom",
+      "en": "Custom Enchantment Table",
       "ru": "Особый стол зачарования"
     },
     "img": "img/items/enchantment_table_custom.png",
