@@ -286,21 +286,21 @@ Fröccsenő időtartam ≈ alap × 75%. II. szintű és hosszított splash vált
 <h2 id="cheese">Sajtkészítés</h2>
 <p>A helyi v0.9.0 adatok alapján a sajt jelenleg <strong>aktív szakmakövetelmény nélkül</strong> készíthető. Bármilyen anyagú tejesvödör használható — keménykő, réz, ezüst, arany, vas, ősifém, mithril, adamantium. A vödör szintje határozza meg, melyik munkaasztalon készíthető el a sajt.</p>
 
-<div class="info">ℹ️ A tehenek fejéséhez az adott anyagú vödör kell (pl. keménykő vödör a keménykő tehénhez). A receptek <strong>6400 nehézség/db</strong> értékkel dolgoznak, függetlenül a vödör anyagától.</div>
+<div class="info">ℹ️ A tehenek fejéséhez az adott anyagú vödör kell (pl. keménykő vödör a keménykő tehénhez). Minden sajtrecept nehézsége fix <strong>400</strong>, függetlenül a vödör anyagától vagy számától — több vödör = több sajt ugyanazért a 400 nehézségért.</div>
 
 <table>
-  <tr><th>Vödörszám</th><th>Eredmény</th><th>Nehézség/db</th><th>Hatékonyság</th></tr>
-  <tr><td>1× vödör</td><td>1× sajt</td><td style="color:var(--accent)">6 400</td><td>Alap (1×)</td></tr>
-  <tr><td>2× vödör</td><td>2× sajt</td><td style="color:var(--gold)">3 200/db</td><td>2× hatékonyabb</td></tr>
-  <tr><td>3× vödör</td><td>3× sajt</td><td style="color:var(--gold)">2 133/db</td><td>3× hatékonyabb</td></tr>
-  <tr><td>4× vödör</td><td>4× sajt</td><td style="color:var(--green)">1 600/db</td><td>4× hatékonyabb</td></tr>
-  <tr><td>5× vödör</td><td>5× sajt</td><td style="color:var(--green)">1 280/db</td><td>5× hatékonyabb</td></tr>
-  <tr><td>9× vödör</td><td>9× sajt</td><td style="color:var(--green)">711/db</td><td style="color:var(--green)">9× hatékonyabb (MAX)</td></tr>
+  <tr><th>Vödörszám</th><th>Eredmény</th><th>Nehézség (fix)</th><th>Nehézség/db</th></tr>
+  <tr><td>1× vödör</td><td>1× sajt</td><td>400</td><td style="color:var(--accent)">400</td></tr>
+  <tr><td>2× vödör</td><td>2× sajt</td><td>400</td><td style="color:var(--gold)">200</td></tr>
+  <tr><td>3× vödör</td><td>3× sajt</td><td>400</td><td style="color:var(--gold)">133</td></tr>
+  <tr><td>4× vödör</td><td>4× sajt</td><td>400</td><td style="color:var(--green)">100</td></tr>
+  <tr><td>5× vödör</td><td>5× sajt</td><td>400</td><td style="color:var(--green)">80</td></tr>
+  <tr><td>9× vödör</td><td>9× sajt</td><td>400</td><td style="color:var(--green)">44</td></tr>
 </table>
 
 <p><strong>A sajt tápértéke:</strong> Az egyik legjobb étel a MITE-ben — magas jóllakottságot és telítettséget ad. Különösen hasznos hosszú expedíciókon.</p>
 
-<div class="tip"><strong>Pro tipp:</strong> Mindig tegyél be annyi vödröt, amennyit csak tudsz — a receptek 9 vödörig skálázódnak, és minden extra vödör jelentősen csökkenti a darabonkénti nehézséget!</div>
+<div class="tip"><strong>Pro tipp:</strong> Mindig tegyél be annyi vödröt, amennyit csak tudsz — a receptek 9 vödörig skálázódnak, és a nehézség ugyanaz a fix 400 marad, így több vödör = sokkal jobb hatékonyság darabonként!</div>
 
 </div><!-- end hu -->
 
@@ -522,19 +522,19 @@ Splash duration ≈ base × 75%. II and extended splash variants also exist.</p>
 <h2 id="cheese">Cheese Crafting</h2>
 <p>Based on the current v0.9.0 data, cheese is currently craftable <strong>without an active Brewer requirement</strong>. Any milk bucket material works — Hardstone, Copper, Silver, Gold, Iron, Ancient Metal, Mithril, or Adamantium. The bucket tier determines which workbench is needed.</p>
 
-<div class="info">ℹ️ Each cow type requires a matching bucket material to milk. All recipes share the same <strong>6,400 difficulty/unit</strong> regardless of bucket material.</div>
+<div class="info">ℹ️ Each cow type requires a matching bucket material to milk. All cheese recipes have a flat <strong>400 difficulty</strong> regardless of bucket material or count — more buckets = more cheese for the same 400 difficulty.</div>
 
 <table>
-  <tr><th>Buckets</th><th>Output</th><th>Difficulty/unit</th><th>Efficiency</th></tr>
-  <tr><td>1× bucket</td><td>1× Cheese</td><td style="color:var(--accent)">6,400</td><td>Base (1×)</td></tr>
-  <tr><td>2× buckets</td><td>2× Cheese</td><td style="color:var(--gold)">3,200/unit</td><td>2× efficient</td></tr>
-  <tr><td>3× buckets</td><td>3× Cheese</td><td style="color:var(--gold)">2,133/unit</td><td>3× efficient</td></tr>
-  <tr><td>4× buckets</td><td>4× Cheese</td><td style="color:var(--green)">1,600/unit</td><td>4× efficient</td></tr>
-  <tr><td>5× buckets</td><td>5× Cheese</td><td style="color:var(--green)">1,280/unit</td><td>5× efficient</td></tr>
-  <tr><td>9× buckets</td><td>9× Cheese</td><td style="color:var(--green)">711/unit</td><td style="color:var(--green)">9× efficient (MAX)</td></tr>
+  <tr><th>Buckets</th><th>Output</th><th>Difficulty (flat)</th><th>Difficulty/unit</th></tr>
+  <tr><td>1× bucket</td><td>1× Cheese</td><td>400</td><td style="color:var(--accent)">400</td></tr>
+  <tr><td>2× buckets</td><td>2× Cheese</td><td>400</td><td style="color:var(--gold)">200</td></tr>
+  <tr><td>3× buckets</td><td>3× Cheese</td><td>400</td><td style="color:var(--gold)">133</td></tr>
+  <tr><td>4× buckets</td><td>4× Cheese</td><td>400</td><td style="color:var(--green)">100</td></tr>
+  <tr><td>5× buckets</td><td>5× Cheese</td><td>400</td><td style="color:var(--green)">80</td></tr>
+  <tr><td>9× buckets</td><td>9× Cheese</td><td>400</td><td style="color:var(--green)">44</td></tr>
 </table>
 
-<div class="tip"><strong>Pro tip:</strong> Always use as many buckets as possible — recipes scale up to 9 buckets, and each additional bucket reduces the difficulty-per-unit ratio significantly!</div>
+<div class="tip"><strong>Pro tip:</strong> Always use as many buckets as possible — recipes scale up to 9 buckets, and the difficulty stays the same flat 400, so more buckets = much better efficiency per unit!</div>
 
 </div><!-- end en -->
 
@@ -728,17 +728,19 @@ Splash duration ≈ base × 75%. II and extended splash variants also exist.</p>
 <h2 id="cheese">Крафт сыра</h2>
 <p>По локальным данным v0.9.0 сыр сейчас крафтится <strong>без активного требования профессии «Зельевар»</strong>. Подойдёт любое металлическое ведро с молоком: твердокаменное, медное, серебряное, золотое, железное, из Древнего металла, мифриловое или адамантиевое. Материал ведра определяет, на каком верстаке крафтится сыр.</p>
 
+<div class="info">ℹ️ Для доения каждого типа коровы нужно ведро из соответствующего материала. У всех рецептов сыра фиксированная сложность <strong>400</strong>, независимо от материала или количества вёдер — больше вёдер = больше сыра за ту же сложность 400.</div>
+
 <table>
-  <tr><th>Вёдра</th><th>Результат</th><th>Сложность/шт</th><th>Эффективность</th></tr>
-  <tr><td>1× ведро</td><td>1× Сыр</td><td style="color:var(--accent)">6 400</td><td>База (1×)</td></tr>
-  <tr><td>2× ведра</td><td>2× Сыра</td><td style="color:var(--gold)">3 200/шт</td><td>В 2× эффективнее</td></tr>
-  <tr><td>3× ведра</td><td>3× Сыра</td><td style="color:var(--gold)">2 133/шт</td><td>В 3× эффективнее</td></tr>
-  <tr><td>4× ведра</td><td>4× Сыра</td><td style="color:var(--green)">1 600/шт</td><td>В 4× эффективнее</td></tr>
-  <tr><td>5× вёдер</td><td>5× Сыра</td><td style="color:var(--green)">1 280/шт</td><td>В 5× эффективнее</td></tr>
-  <tr><td>9× вёдер</td><td>9× Сыра</td><td style="color:var(--green)">711/шт</td><td style="color:var(--green)">В 9 раз эффективнее (максимум)</td></tr>
+  <tr><th>Вёдра</th><th>Результат</th><th>Сложность (фикс.)</th><th>Сложность/шт</th></tr>
+  <tr><td>1× ведро</td><td>1× Сыр</td><td>400</td><td style="color:var(--accent)">400</td></tr>
+  <tr><td>2× ведра</td><td>2× Сыра</td><td>400</td><td style="color:var(--gold)">200</td></tr>
+  <tr><td>3× ведра</td><td>3× Сыра</td><td>400</td><td style="color:var(--gold)">133</td></tr>
+  <tr><td>4× ведра</td><td>4× Сыра</td><td>400</td><td style="color:var(--green)">100</td></tr>
+  <tr><td>5× вёдер</td><td>5× Сыра</td><td>400</td><td style="color:var(--green)">80</td></tr>
+  <tr><td>9× вёдер</td><td>9× Сыра</td><td>400</td><td style="color:var(--green)">44</td></tr>
 </table>
 
-<div class="tip"><strong>Совет:</strong> Старайтесь использовать как можно больше вёдер: рецепты масштабируются до 9 вёдер, и каждое дополнительное ведро заметно снижает сложность в расчёте на единицу результата.</div>
+<div class="tip"><strong>Совет:</strong> Старайтесь использовать как можно больше вёдер: рецепты масштабируются до 9 вёдер, а сложность остаётся фиксированной (400) — чем больше вёдер, тем лучше эффективность на единицу!</div>
 
 </div><!-- end ru -->
 
