@@ -50,15 +50,15 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr><td><strong>Pajzs blokkolás</strong></td><td>Normál esély, 50% sebzéscsökkentés</td><td>−3% blokkolási esély, csak 20% sebzéscsökkentés</td></tr>
   <tr><td><strong>Érc csomók</strong></td><td>✅ Generálódnak</td><td>❌ Nem generálódnak érc csomók</td></tr>
   <tr><td><strong>Érc Y40 felett</strong></td><td>Normál eloszlás</td><td>Csak Adamantiumérc található Y40 felett</td></tr>
-  <tr><td><strong>Zombi spawn esőben</strong></td><td>❌ Nem spawningolnak</td><td>✅ Esőben is spawningolnak</td></tr>
-  <tr><td><strong>Mob spawn Y0-10 fénynél</strong></td><td>❌ Fényben nem spawningolnak</td><td>✅ Fénynél is spawningolnak</td></tr>
-  <tr><td><strong>Vérhold mutáns zombik</strong></td><td>Normál spawn sebesség</td><td>Dupla spawn sebesség</td></tr>
+  <tr><td><strong>Zombik esőben</strong></td><td>❌ Nem jelennek meg</td><td>✅ Esőben is megjelennek</td></tr>
+  <tr><td><strong>Mobok Y0-10 fénynél</strong></td><td>❌ Fényben nem jelennek meg</td><td>✅ Fényben is megjelennek</td></tr>
+  <tr><td><strong>Vérhold mutáns zombik</strong></td><td>Normál megjelenési sebesség</td><td>Dupla megjelenési sebesség</td></tr>
   <tr><td><strong>Ender-sárkány Életerő (HP)</strong></td><td colspan="2">A helyi <code>mobs.json</code> 200 HP-t jelez; a 100/1000 HP mód-bontás itt nincs megerősítve</td></tr>
   <tr><td><strong>Enderman és víz</strong></td><td>Fél a víztől (vanilla)</td><td>NEM fél a víztől!</td></tr>
   <tr><td><strong>Halál</strong></td><td>Újraéledés lehetséges</td><td>Permadeath — világ törlődik</td></tr>
   <tr><td><strong>Halál utáni debuff</strong></td><td colspan="2">Mindkét módban: <strong>Súlyos sérülés</strong> státuszhatás a meghalás után <abbr class="src-cl" title="Forrás: mod changelog — személyesen nem ellenőrzött">📜 changelog</abbr></td></tr>
   <tr><td><strong>Zombi újjáéledés</strong></td><td>❌ Nem</td><td>✅ Megölt zombik visszatérhetnek <abbr class="src-cl" title="Forrás: mod changelog — személyesen nem ellenőrzött">📜 changelog</abbr></td></tr>
-  <tr><td><strong>Boszorkány spawn</strong></td><td>✅ Normál</td><td>❌ Boszorkányok nem spawningolnak <abbr class="src-cl" title="Forrás: mod changelog — személyesen nem ellenőrzött">📜 changelog</abbr></td></tr>
+  <tr><td><strong>Boszorkányok</strong></td><td>✅ Normál</td><td>❌ Boszorkányok nem jelennek meg <abbr class="src-cl" title="Forrás: mod changelog — személyesen nem ellenőrzött">📜 changelog</abbr></td></tr>
   <tr><td><strong>Nehézség</strong></td><td>Tanulásra ideális</td><td>Végleges, kompromisszum nélküli kihívás</td></tr>
 </table>
 <div class="tip-card">💡 <strong>Tanács:</strong> Ha most kezded a MITE:BE-t, <strong>Simple módban</strong> tanulj meg mindent. A Hardcore mód a tapasztalt játékosoknak szól — a mechanikai különbségek jelentősek, és egy hiba végleges!</div>
@@ -81,7 +81,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
 
 <h3 id="curses">Átkok &amp; Betegségek</h3>
 <p>Boszorkányok 16 különböző átkot alkalmazhatnak. Az adott boszorkányt kell megölni a feloldáshoz, vagy a hatás ellen való itallal. Minden átkot egyszerre csak egy kap a játékos:</p>
-<div class="info-box">🎮 <strong>Hardcore mód:</strong> Boszorkányok Hardcore módban <strong>nem spawningolnak</strong> — ez a mechanikarendszer ott nem aktív.</div>
+<div class="info-box">🎮 <strong>Hardcore mód:</strong> Boszorkányok Hardcore módban <strong>nem jelennek meg</strong> — ez a mechanikarendszer ott nem aktív.</div>
 <table class="compare-table">
   <tr><th>#</th><th>Átok típusa</th><th>Hatás</th></tr>
   <tr><td>1</td><td>Bőrkorrózió</td><td>Összes felszerelés tartóssági fogyasztása 2×</td></tr>
@@ -210,9 +210,9 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr style="background:rgba(255,255,100,0.10)"><td><strong>🟡 Sárga Hold</strong></td><td>32n−8. nap (24., 56., 120…)</td><td>Terménynövekedés +200% · aratási hozam +1 érett terménynként</td></tr>
   <tr style="background:rgba(200,200,255,0.12)"><td><strong>👻 Fantom Hold</strong></td><td>128n−8. nap (120., 248…)</td><td>Halvány fehér glória a hold körül</td></tr>
   <tr style="background:rgba(100,150,255,0.12)"><td><strong>🔵 Kék Hold</strong></td><td>Minden 50. nap</td><td>Ellenséges mob limit 30/játékos · állatok növekedése +200% · mindig tiszta időjárás</td></tr>
-  <tr style="background:rgba(255,255,255,0.06)"><td><strong>⚪ Telihold</strong></td><td>Minden 8. nap</td><td>Mob spawn ráta +50%</td></tr>
+  <tr style="background:rgba(255,255,255,0.06)"><td><strong>⚪ Telihold</strong></td><td>Minden 8. nap</td><td>Mobmegjelenési ráta +50%</td></tr>
   <tr style="background:rgba(50,50,100,0.14)"><td><strong>🌑 Újhold</strong></td><td>Standard holdciklus</td><td>Mobmegjelenés −50% · a megjelenő mobok sebessége csökkentett (0.21)</td></tr>
-  <tr style="background:rgba(255,100,50,0.12)"><td><strong>⚡ Elszámolás Napja</strong></td><td>96–97. nap</td><td>Vérholdas mobok + villám azonnal megöli a nyílt terepen lévő mobokat (nincs XP/drop)</td></tr>
+  <tr style="background:rgba(255,100,50,0.12)"><td><strong>⚡ Elszámolás Napja</strong></td><td>96–97. nap</td><td>Vérholdas mobok + villám azonnal megöli a nyílt terepen lévő mobokat (nincs XP vagy zsákmány)</td></tr>
 </table>
 <div class="info-box">🎁 <strong>Vérhold utáni véletlenszerű bónusz</strong> (egy a négyből): mining speed +10% · Sebzés +1 · Vízfogyasztás −10% · Éhség/Telítettség fogyasztás −10%<br><strong>Evolúció:</strong> Minden vérholdnál (32., 64., 128…) a zombik erősebbek lesznek — növekvő sebzés, Életerő (HP) és blokktörő képesség!</div>
 
@@ -231,11 +231,11 @@ const sidebarGroups = getSidebarGroups('game-modes');
 <p>A <strong>Világjelölő</strong> a helyi item-adatok alapján a világ újraéledési pontjának beállítására szolgál. A jelenlegi adatokban külön tételként szerepel a <strong>Respawn Anchor</strong> is, ezért itt nem kezelem őket ugyanannak a blokknek. <strong>Hardcore módban az újraéledéses funkciók nem használhatók.</strong></p>
 <table class="compare-table">
   <tr><th>Szövetséges típusa</th><th>Belső azonosító</th><th>Leírás</th></tr>
-  <tr><td><strong>Harcos Falusember</strong></td><td>partner_sparta</td><td>Harci képességekkel rendelkező NPC szövetséges</td></tr>
+  <tr><td><strong>Harcos falusi</strong></td><td>partner_sparta</td><td>Harci képességekkel rendelkező NPC szövetséges</td></tr>
   <tr><td><strong>Utazó falusi</strong></td><td>partner_traveller</td><td>Felfedezésben és szállítmányozásban segítő NPC</td></tr>
-  <tr><td><strong>Bányász Falusember</strong></td><td>partner_miner</td><td>Bányászatban specializált NPC szövetséges</td></tr>
+  <tr><td><strong>Bányász falusi</strong></td><td>partner_miner</td><td>Bányászatban specializált NPC szövetséges</td></tr>
 </table>
-<div class="tip-card">🤝 <strong>Hordozás:</strong> Shift + Jobb klikk entitáson → elkezded hordozni azt az entitást. Hasznos állatok áthelyezéséhez, NPC partnerek hordozásához és kis élőlények elmozdításához.</div>
+<div class="tip-card">🤝 <strong>Hordozás:</strong> Shift + jobb klikk egy entitáson → elkezded hordozni. Hasznos állatok áthelyezéséhez, szövetséges falusiak mozgatásához és kis élőlények elpakolásához.</div>
 
 <h3 id="debug-keys">Debug Billentyűk</h3>
 <div class="tip-card">🔧 <strong>F3+H</strong> — Részletes Tooltip mód: tárgyak tartóssági százaléka látható, bűvölés ID számok megjelennek, belső item adatok láthatók.</div>

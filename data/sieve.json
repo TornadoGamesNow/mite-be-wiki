@@ -1,0 +1,21 @@
+{
+  "gravel": [
+    { "itemId": "flint_shard", "chance": 53.4 },
+    { "itemId": "copper_nugget", "chance": 25.1 },
+    { "itemId": "flint", "chance": 4.4 },
+    { "itemId": "silver_nugget", "chance": 3.1 },
+    { "itemId": "gold_nugget", "chance": 0.63 },
+    { "itemId": "hardstone_nugget", "chance": 0.25 },
+    { "itemId": "obsidian_shard", "chance": 0.25 },
+    { "itemId": "emerald_shard", "chance": 0.25 },
+    { "itemId": "diamond_shard", "chance": 0.13 },
+    { "itemId": "mithril_nugget", "chance": 0.06 },
+    { "itemId": "adamantium_nugget", "chance": 0.01 }
+  ],
+  "nether": [
+    { "itemId": "flint_shard", "chance": 57.1 },
+    { "itemId": "gold_nugget", "chance": 38.1 },
+    { "itemId": "flint", "chance": 4.2 },
+    { "itemId": "quartz", "chance": 0.6 }
+  ]
+}

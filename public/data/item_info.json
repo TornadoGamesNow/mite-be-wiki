@@ -1,11 +1,11 @@
 {
   "plant_fiber": {
     "mcmod_id": 771973,
-    "desc": "Plant fiber used mainly for straw rope. It can drop from grass and also works as a weak fuel source.",
+    "desc": "Plant fiber used mainly for straw rope. It can fall from grass and also works as a weak fuel source.",
     "versions": [
       "v0.6.0: Plant fiber became valid fuel in the Large Furnace."
     ],
-    "desc_en": "Plant fiber used mainly for straw rope. It can drop from grass and also works as a weak fuel source.",
+    "desc_en": "Plant fiber used mainly for straw rope. It can fall from grass and also works as a weak fuel source.",
     "desc_hu": "Növényi rost, amely főleg szalmakötélhez kell. Fűből eshet, és gyenge tüzelőanyagként is használható.",
     "desc_ru": "Растительное волокно, которое в основном нужно для соломенной верёвки. Может выпадать из травы и служит слабым топливом.",
     "versions_en": [
@@ -2210,8 +2210,8 @@
   },
   "ancient_metal_arrow": {
     "mcmod_id": 773316,
-    "desc": "Arrow with +5 projectile damage and an 80% recovery chance. It can also drop from bow-using ancient undead.",
-    "desc_en": "Arrow with +5 projectile damage and an 80% recovery chance. It can also drop from bow-using ancient undead.",
+    "desc": "Arrow with +5 projectile damage and an 80% recovery chance. It can also be found on bow-using ancient undead.",
+    "desc_en": "Arrow with +5 projectile damage and an 80% recovery chance. It can also be found on bow-using ancient undead.",
     "desc_hu": "+5 lövedéksebzésű nyíl, amely találat után 80% eséllyel visszaszerezhető. Íjat használó ősi élőhalottakból is eshet.",
     "desc_ru": "Стрела с уроном снаряда +5 и шансом 80% вернуться после попадания. Может выпадать с древней нежити, использующей лук."
   },
@@ -2471,7 +2471,7 @@
     "desc": "Birch wooden sieve for processing gravel and nether gravel. Requires a sieve mesh before use.",
     "versions": [
       "In v0.5.5, wooden sieves began requiring a mesh.",
-      "In v0.5.7, hard mode sieve yields were reduced.",
+      "In v0.5.7, Hardcore mode reduced sieve yields.",
       "In v0.6.0, sieve output chances were adjusted again."
     ],
     "desc_en": "A wooden sieve variant. It can sift gravel or hell gravel with an 80% chance to yield mineral fragments or metal particles, and repeated clicks speed up the process. Wooden sieves cannot be broken by hand and require an axe-type tool. Local reference data also notes post-0.5.5 mesh requirements and later balance changes to screening probabilities.",
@@ -2479,13 +2479,13 @@
     "desc_ru": "Берёзовое деревянное сито для обработки гравия и адского гравия. Перед использованием требует установленную сетку.",
     "versions_en": [
       "In v0.5.5, wooden sieves began requiring a mesh.",
-      "In v0.5.7, hard mode sieve yields were reduced.",
+      "In v0.5.7, Hardcore mode reduced sieve yields.",
       "In v0.6.0, sieve output chances were adjusted again."
     ],
     "versions_hu": [
       "A 0.5.5-ös verziótól a fa szitákhoz már szitaháló kell.",
       "A 0.5.7-es verzióban a nehéz módú szitálás hozama csökkent.",
-      "A 0.6.0-s verzióban a szita drop-esélyeit újrahangolták."
+      "A 0.6.0-s verzióban a szita zsákmányesélyeit újrahangolták."
     ],
     "versions_ru": [
       "В версии 0.5.5 деревянные сита начали требовать сетку.",
@@ -2618,13 +2618,13 @@
     "mcmod_id": 785124,
     "desc": "Accessory clock that shows the current time and day while equipped. In 0.9.0 its recipe is tied to the related knowledge book unlock.",
     "versions": [
-      "v0.9.0: Crafting the clock requires its knowledge-book unlock."
+      "v0.9.0: Crafting the clock requires its Knowledge Book unlock."
     ],
     "desc_en": "Accessory clock that shows the current time and day while equipped. In 0.9.0 its recipe is tied to the related knowledge book unlock.",
     "desc_hu": "Kiegészítő óra, amely felszerelve mutatja az aktuális időt és napot. A 0.9.0-ban a receptje a kapcsolódó tudáskönyv-feloldáshoz kötött.",
     "desc_ru": "Аксессуар-часы, показывающие текущее время и день, пока надеты. В 0.9.0 их рецепт привязан к разблокировке через книгу знаний.",
     "versions_en": [
-      "v0.9.0: Crafting the clock requires its knowledge-book unlock."
+      "v0.9.0: Crafting the clock requires its Knowledge Book unlock."
     ],
     "versions_hu": [
       "v0.9.0: Az óra craftjához kell a hozzá tartozó tudáskönyv-feloldás."
@@ -2717,8 +2717,8 @@
   },
   "empty_antique_atlas": {
     "mcmod_id": 779580,
-    "desc": "Empty antique atlas that becomes a usable antique map when right-clicked. It appears as rare loot in some Underground structures.",
-    "desc_en": "Empty antique atlas that becomes a usable antique map when right-clicked. It appears as rare loot in some Underground structures.",
+    "desc": "Empty antique atlas that becomes a usable antique map when right-clicked. It appears as rare treasure in some Underground structures.",
+    "desc_en": "Empty antique atlas that becomes a usable antique map when right-clicked. It appears as rare treasure in some Underground structures.",
     "desc_hu": "Üres antik atlasz, amely jobb kattintásra használható antik térképpé válik. Ritka zsákmányként jelenik meg egyes földalatti struktúrákban.",
     "desc_ru": "Пустой старинный атлас, который по ПКМ превращается в рабочую старинную карту. Редко встречается как лут в некоторых подземных структурах."
   },
@@ -2794,14 +2794,14 @@
     "mcmod_id": 783945,
     "desc": "Flint pickaxe with 3 attack damage. Breaks basic stone, can mine coal, and can be repaired with flint shards.",
     "versions": [
-      "In v0.5.6, flint pickaxes were changed to drop sharp flint more often.",
+      "In v0.5.6, flint pickaxes were changed to yield sharp flint more often.",
       "In v0.6.0, flint pickaxes gained the ability to mine coal ore."
     ],
     "desc_en": "Flint pickaxe with 3 attack damage. Breaks basic stone, can mine coal, and can be repaired with flint shards.",
     "desc_hu": "3 sebzésű kovakő csákány. Alap kőfajtákat tör, szenet is bányászhat, és kovakőszilánkokkal javítható.",
     "desc_ru": "Кремниевая кирка с уроном 3. Ломает базовый камень, может добывать уголь и чинится кремниевыми осколками.",
     "versions_en": [
-      "In v0.5.6, flint pickaxes were changed to drop sharp flint more often.",
+      "In v0.5.6, flint pickaxes were changed to yield sharp flint more often.",
       "In v0.6.0, flint pickaxes gained the ability to mine coal ore."
     ],
     "versions_hu": [
@@ -2822,8 +2822,8 @@
   },
   "flour": {
     "mcmod_id": 773789,
-    "desc": "Flour made from wheat. Used for bread, cookies, pumpkin pie, cake, and similar foods. If dropped into water, it disappears after a few seconds.",
-    "desc_en": "Flour made from wheat. Used for bread, cookies, pumpkin pie, cake, and similar foods. If dropped into water, it disappears after a few seconds.",
+    "desc": "Flour made from wheat. Used for bread, cookies, pumpkin pie, cake, and similar foods. If it falls into water, it dissolves after a few seconds.",
+    "desc_en": "Flour made from wheat. Used for bread, cookies, pumpkin pie, cake, and similar foods. If it falls into water, it dissolves after a few seconds.",
     "desc_hu": "Búzából készült liszt. Kenyérhez, sütikhez, sütőtökös pitéhez, tortához és hasonló ételekhez kell. Ha vízbe dobod, pár másodperc után eltűnik.",
     "desc_ru": "Мука из пшеницы. Нужна для хлеба, печенья, тыквенного пирога, торта и похожей еды. Если бросить её в воду, она исчезнет через несколько секунд."
   },
@@ -2852,8 +2852,8 @@
   },
   "glass_shard": {
     "mcmod_id": 772908,
-    "desc": "Glass shard dropped from broken glass and glass panes. Used in pane-related crafting and other glass recipes.",
-    "desc_en": "Glass shard dropped from broken glass and glass panes. Used in pane-related crafting and other glass recipes.",
+    "desc": "Glass shard obtained from broken glass and glass panes. Used in pane-related recipes and other glass crafts.",
+    "desc_en": "Glass shard obtained from broken glass and glass panes. Used in pane-related recipes and other glass crafts.",
     "desc_hu": "Üvegszilánk, amely törött üvegből és üvegtáblából esik. Üvegtáblás és más üveges receptekhez használható.",
     "desc_ru": "Стеклянный осколок, выпадающий из разбитого стекла и стеклянных панелей. Используется в рецептах панелей и других стеклянных крафтах."
   },
@@ -2892,8 +2892,8 @@
   },
   "gravel": {
     "mcmod_id": 772197,
-    "desc": "Gravel can drop mineral fragments or metal particles when broken directly, and Luck increases that chance. It can also be processed with a wooden sieve for a much higher yield chance. Local item docs explicitly show gravel as an early source of metal grains, so I do not treat sieving as the only way to obtain them.",
-    "desc_en": "Gravel can drop mineral fragments or metal particles when broken directly, and Luck increases that chance. It can also be processed with a wooden sieve for a much higher yield chance. Local item docs explicitly show gravel as an early source of metal grains, so I do not treat sieving as the only way to obtain them.",
+    "desc": "Gravel can yield mineral fragments or metal particles when broken directly, and Luck increases that chance. It can also be processed with a wooden sieve for a much higher yield chance. Local item docs explicitly show gravel as an early source of metal grains, so I do not treat sieving as the only way to obtain them.",
+    "desc_en": "Gravel can yield mineral fragments or metal particles when broken directly, and Luck increases that chance. It can also be processed with a wooden sieve for a much higher yield chance. Local item docs explicitly show gravel as an early source of metal grains, so I do not treat sieving as the only way to obtain them.",
     "desc_hu": "A kavics közvetlen töréskor is dobhat ásványtöredékeket vagy fémszemcséket, és a Szerencse ezt az esélyt tovább növeli. Faszitával is feldolgozható, ott jóval magasabb a siker esélye. A helyi item-doksik kifejezetten jelzik, hogy a kavics már korán is adhat fémszemcséket, ezért a szitálást nem kezelem egyetlen forrásként.",
     "desc_ru": "Гравий может прямо при разрушении давать минеральные осколки и металлические крупицы, а Удача повышает этот шанс. Его также можно просеивать через деревянное сито для значительно лучшего выхода. Локальные описания предметов прямо показывают гравий как ранний источник металлических крупиц, поэтому сито здесь не единственный путь."
   },
@@ -3060,7 +3060,7 @@
     "desc": "Jungle wooden sieve for processing gravel and nether gravel. Requires a sieve mesh before use.",
     "versions": [
       "In v0.5.5, wooden sieves began requiring a mesh.",
-      "In v0.5.7, hard mode sieve yields were reduced.",
+      "In v0.5.7, Hardcore mode reduced sieve yields.",
       "In v0.6.0, sieve output chances were adjusted again."
     ],
     "desc_en": "A wooden sieve variant. It can sift gravel or hell gravel with an 80% chance to yield mineral fragments or metal particles, and repeated clicks speed up the process. Wooden sieves cannot be broken by hand and require an axe-type tool. Local reference data also notes post-0.5.5 mesh requirements and later balance changes to screening probabilities.",
@@ -3068,13 +3068,13 @@
     "desc_ru": "Деревянное сито из древесины джунглей для обработки гравия и адского гравия. Перед использованием требует установленную сетку.",
     "versions_en": [
       "In v0.5.5, wooden sieves began requiring a mesh.",
-      "In v0.5.7, hard mode sieve yields were reduced.",
+      "In v0.5.7, Hardcore mode reduced sieve yields.",
       "In v0.6.0, sieve output chances were adjusted again."
     ],
     "versions_hu": [
       "A 0.5.5-ös verziótól a fa szitákhoz már szitaháló kell.",
       "A 0.5.7-es verzióban a nehéz módú szitálás hozama csökkent.",
-      "A 0.6.0-s verzióban a szita drop-esélyeit újrahangolták."
+      "A 0.6.0-s verzióban a szita zsákmányesélyeit újrahangolták."
     ],
     "versions_ru": [
       "В версии 0.5.5 деревянные сита начали требовать сетку.",
@@ -3169,24 +3169,24 @@
   },
   "mercury_ore": {
     "mcmod_id": 772184,
-    "desc": "Rare greenish mercury ore used for mercury ingots, nuggets, and later liquid-mercury processing. In v0.9.0, its reliable spawn rule is swamps below about Y25.",
+    "desc": "Rare greenish mercury ore used for mercury ingots, nuggets, and later liquid-mercury processing. In v0.9.0, its reliable generation rule is swamps below about Y25.",
     "versions": [
       "v0.6.0: Mercury ingots switched to the newer mercury-ore processing route.",
       "v0.8.0: Mercury ore gained a liquid-mercury cauldron use.",
-      "v0.9.0: Mercury ore spawn was restricted to swamps below level 25."
+      "v0.9.0: Mercury ore generation was restricted to swamps below level 25."
     ],
-    "desc_en": "Rare greenish mercury ore used for mercury ingots, nuggets, and later liquid-mercury processing. In v0.9.0, its reliable spawn rule is swamps below about Y25.",
-    "desc_hu": "Ritka, zöldes higanyérc, amely higanyrúdhoz, higanyröghöz és a későbbi folyékony higanyos feldolgozáshoz kell. A jelenlegi helyi adatokban a biztos spawn-megjegyzés: mocsárbiomokban, nagyjából Y25 alatt.",
+    "desc_en": "Rare greenish mercury ore used for mercury ingots, nuggets, and later liquid-mercury processing. In v0.9.0, its reliable generation rule is swamps below about Y25.",
+    "desc_hu": "Ritka, zöldes higanyérc, amely higanyrúdhoz, higanyröghöz és a későbbi folyékony higanyos feldolgozáshoz kell. A jelenlegi helyi adatokban a biztos megjelenési szabály: mocsárbiomokban, nagyjából Y25 alatt.",
     "desc_ru": "Редкая зеленоватая ртутная руда для ртутных слитков, крупиц и более поздней переработки в жидкую ртуть. По текущим локальным данным надёжное правило спавна: болота ниже примерно Y25.",
     "versions_en": [
       "v0.6.0: Mercury ingots switched to the newer mercury-ore processing route.",
       "v0.8.0: Mercury ore gained a liquid-mercury cauldron use.",
-      "v0.9.0: Mercury ore spawn was restricted to swamps below level 25."
+      "v0.9.0: Mercury ore generation was restricted to swamps below level 25."
     ],
     "versions_hu": [
       "v0.6.0: A higanyrúd az újabb higanyérc-feldolgozási útvonalra váltott.",
       "v0.8.0: A higanyérc folyékony higanyos üsthasználatot kapott.",
-      "v0.9.0: A higanyérc spawnja mocsarakban, 25-ös szint alattira szűkült."
+      "v0.9.0: A higanyérc megjelenése mocsarakban, a 25-ös szint alá szűkült."
     ],
     "versions_ru": [
       "v0.6.0: Ртутные слитки перевели на новую схему переработки ртутной руды.",
@@ -3332,23 +3332,23 @@
   },
   "onion": {
     "mcmod_id": 772968,
-    "desc": "Crop ingredient that needs direct sunlight to grow; torch or lava light is not enough. It can also appear from zombie villager or witch drops and some loot chests.",
-    "desc_en": "Crop ingredient that needs direct sunlight to grow; torch or lava light is not enough. It can also appear from zombie villager or witch drops and some loot chests.",
+    "desc": "Crop ingredient that needs direct sunlight to grow; torch or lava light is not enough. It can also be found on zombie villagers, witches, and in some loot chests.",
+    "desc_en": "Crop ingredient that needs direct sunlight to grow; torch or lava light is not enough. It can also be found on zombie villagers, witches, and in some loot chests.",
     "desc_hu": "Növényi alapanyag, amelynek közvetlen napfény kell a növekedéshez; a fáklya- vagy lávafény nem elég. Zombi falusiaktól és boszorkányoktól is eshet, illetve egyes kincsesládákban is megtalálható.",
     "desc_ru": "Овощная культура, которой для роста нужен прямой солнечный свет; света факелов или лавы недостаточно. Также может выпадать с зомби-жителей, ведьм и попадаться в некоторых сундуках с лутом."
   },
   "onion_allium": {
     "mcmod_id": 773801,
-    "desc": "Allium-style wild onion plant. Unlike vanilla allium, it can generate in many biomes and can also come from swamp hut chests, witch drops, or bonemealed grass.",
-    "desc_en": "Allium-style wild onion plant. Unlike vanilla allium, it can generate in many biomes and can also come from swamp hut chests, witch drops, or bonemealed grass.",
-    "desc_hu": "Vad hagymaféle, amely alliumként néz ki. A vanilla alliumtól eltérően sok biomon megjelenhet, és mocsárkunyhó-ládákból, boszorkány dropból vagy csontlisztezett fűből is származhat.",
+    "desc": "Allium-style wild onion plant. Unlike vanilla allium, it can generate in many biomes and can also be found in swamp hut chests, on witches, or from bonemealed grass.",
+    "desc_en": "Allium-style wild onion plant. Unlike vanilla allium, it can generate in many biomes and can also be found in swamp hut chests, on witches, or from bonemealed grass.",
+    "desc_hu": "Vad hagymaféle, amely alliumként néz ki. A vanilla alliumtól eltérően sok biomon megjelenhet, és mocsárkunyhó-ládákból, boszorkányzsákmányból vagy csontlisztezett fűből is származhat.",
     "desc_ru": "Дикий лук в стиле аллиума. В отличие от ванильного аллиума, может генерироваться во многих биомах, а также встречаться в сундуках ведьминых хижин, выпадать с ведьм или появляться из травы после костной муки."
   },
   "orange": {
     "mcmod_id": 772972,
     "desc": "Fruit obtained from orange trees and some jungle oak leaf drops. Used as a simple early food and ingredient.",
     "desc_en": "Fruit obtained from orange trees and some jungle oak leaf drops. Used as a simple early food and ingredient.",
-    "desc_hu": "Narancsfa termése, amely egyes dzsungelbeli tölgyfalomb-dropokból is jöhet. Egyszerű korai ételként és alapanyagként használható.",
+    "desc_hu": "Narancsfa termése, amely egyes dzsungelbeli tölgyfalomb-zsákmányból is jöhet. Egyszerű korai ételként és alapanyagként használható.",
     "desc_ru": "Фрукт с апельсиновых деревьев; также может выпадать с некоторых дубовых листьев в джунглях. Используется как простая ранняя еда и ингредиент."
   },
   "orchid": {
@@ -3381,15 +3381,15 @@
   },
   "rusted_iron_chain": {
     "mcmod_id": 773278,
-    "desc": "Uncraftable rusty chain material found in abandoned mineshaft loot. Used for the weakest rusty iron chain gear line.",
-    "desc_en": "Uncraftable rusty chain material found in abandoned mineshaft loot. Used for the weakest rusty iron chain gear line.",
+    "desc": "Uncraftable rusty chain material found in abandoned mineshaft chests. Used for the weakest rusty iron chain gear line.",
+    "desc_en": "Uncraftable rusty chain material found in abandoned mineshaft chests. Used for the weakest rusty iron chain gear line.",
     "desc_hu": "Nem készíthető rozsdás láncalapanyag, amely elhagyott tárnák zsákmányában található. A leggyengébb rozsdás vas láncfelszerelés-vonalhoz kell.",
     "desc_ru": "Некрафтящийся ржавый цепной материал из лута заброшенных шахт. Используется для самой слабой линии ржавой железной кольчужной экипировки."
   },
   "rusted_iron_war_hammer": {
     "mcmod_id": 773297,
-    "desc": "Uncraftable rusty iron war hammer dropped by some hammer-carrying zombies. Attack damage: 4.",
-    "desc_en": "Uncraftable rusty iron war hammer dropped by some hammer-carrying zombies. Attack damage: 4.",
+    "desc": "Uncraftable rusty iron war hammer that can be found on some hammer-wielding zombies. Attack damage: 4.",
+    "desc_en": "Uncraftable rusty iron war hammer that can be found on some hammer-wielding zombies. Attack damage: 4.",
     "desc_hu": "Nem készíthető rozsdás vas háborús kalapács, amelyet egyes kalapácsos zombik dobhatnak. Sebzés: 4.",
     "desc_ru": "Некрафтящийся ржавый железный боевой молот, который может выпадать с некоторых зомби с молотом. Урон: 4."
   },
@@ -3520,7 +3520,7 @@
     "desc": "Spruce wooden sieve for processing gravel and nether gravel. Requires a sieve mesh before use.",
     "versions": [
       "In v0.5.5, wooden sieves began requiring a mesh.",
-      "In v0.5.7, hard mode sieve yields were reduced.",
+      "In v0.5.7, Hardcore mode reduced sieve yields.",
       "In v0.6.0, sieve output chances were adjusted again."
     ],
     "desc_en": "A wooden sieve variant. It can sift gravel or hell gravel with an 80% chance to yield mineral fragments or metal particles, and repeated clicks speed up the process. Wooden sieves cannot be broken by hand and require an axe-type tool. Local reference data also notes post-0.5.5 mesh requirements and later balance changes to screening probabilities.",
@@ -3528,13 +3528,13 @@
     "desc_ru": "Еловое деревянное сито для обработки гравия и адского гравия. Перед использованием требует установленную сетку.",
     "versions_en": [
       "In v0.5.5, wooden sieves began requiring a mesh.",
-      "In v0.5.7, hard mode sieve yields were reduced.",
+      "In v0.5.7, Hardcore mode reduced sieve yields.",
       "In v0.6.0, sieve output chances were adjusted again."
     ],
     "versions_hu": [
       "A 0.5.5-ös verziótól a fa szitákhoz már szitaháló kell.",
       "A 0.5.7-es verzióban a nehéz módú szitálás hozama csökkent.",
-      "A 0.6.0-s verzióban a szita drop-esélyeit újrahangolták."
+      "A 0.6.0-s verzióban a szita zsákmányesélyeit újrahangolták."
     ],
     "versions_ru": [
       "В версии 0.5.5 деревянные сита начали требовать сетку.",
@@ -3586,15 +3586,15 @@
   },
   "crab_leg": {
     "mcmod_id": 444017,
-    "desc": "Raw crab leg dropped by crabs. Basic seafood ingredient and emergency food.",
-    "desc_en": "Raw crab leg dropped by crabs. Basic seafood ingredient and emergency food.",
+    "desc": "Raw crab leg obtained from crabs. Basic seafood ingredient and emergency food.",
+    "desc_en": "Raw crab leg obtained from crabs. Basic seafood ingredient and emergency food.",
     "desc_hu": "Nyers rákláb, amely rákokból esik. Alap tengeri alapanyag és vészkaja.",
     "desc_ru": "Сырая крабовая нога, выпадающая с крабов. Базовый морской ингредиент и еда на крайний случай."
   },
   "crab_meat": {
     "mcmod_id": 444016,
-    "desc": "Raw crab meat dropped by crabs. Used as a seafood ingredient or eaten in emergencies.",
-    "desc_en": "Raw crab meat dropped by crabs. Used as a seafood ingredient or eaten in emergencies.",
+    "desc": "Raw crab meat obtained from crabs. Used as a seafood ingredient or eaten in emergencies.",
+    "desc_en": "Raw crab meat obtained from crabs. Used as a seafood ingredient or eaten in emergencies.",
     "desc_hu": "Nyers rákhús, amely rákokból esik. Tengeri alapanyagként használható, vagy vészhelyzetben megehető.",
     "desc_ru": "Сырое крабовое мясо, выпадающее с крабов. Используется как морской ингредиент или съедается в крайнем случае."
   },
@@ -3607,8 +3607,8 @@
   },
   "crossbow": {
     "mcmod_id": 813965,
-    "desc": "Uncraftable ranged weapon that can drop from pillager captains. It reloads slower than a bow, but hits harder and shoots more accurately.",
-    "desc_en": "Uncraftable ranged weapon that can drop from pillager captains. It reloads slower than a bow, but hits harder and shoots more accurately.",
+    "desc": "Uncraftable ranged weapon that can be found on pillager captains. It reloads slower than a bow, but hits harder and shoots more accurately.",
+    "desc_en": "Uncraftable ranged weapon that can be found on pillager captains. It reloads slower than a bow, but hits harder and shoots more accurately.",
     "desc_hu": "Nem készíthető távolsági fegyver, amely pillager kapitányoktól eshet. Lassabban tölt, mint egy íj, de nagyobbat üt és pontosabban lő.",
     "desc_ru": "Некрафтящийся арбалет, который может выпадать с капитанов разбойников. Перезаряжается медленнее лука, но бьёт сильнее и стреляет точнее."
   },
@@ -3628,11 +3628,11 @@
   },
   "redstone_ore": {
     "mcmod_id": 772259,
-    "desc": "Redstone ore with modified harvesting rules: it must be activated before breaking and no longer drops XP directly. In newer versions it can also be processed through the Large Furnace route.",
+    "desc": "Redstone ore with modified harvesting rules: it must be activated before breaking and no longer grants XP directly. In newer versions it can also be processed through the Large Furnace route.",
     "versions": [
       "v0.6.0: Redstone ore gained the Large Furnace processing route without an Obsidian Ingot Mould."
     ],
-    "desc_en": "Redstone ore with modified harvesting rules: it must be activated before breaking and no longer drops XP directly. In newer versions it can also be processed through the Large Furnace route.",
+    "desc_en": "Redstone ore with modified harvesting rules: it must be activated before breaking and no longer grants XP directly. In newer versions it can also be processed through the Large Furnace route.",
     "desc_hu": "Vöröskőérc módosított kitermelési szabályokkal: törés előtt aktiválni kell, és már nem dob közvetlenül XP-t. Újabb verziókban a Nagy Kemence útvonalán is feldolgozható.",
     "desc_ru": "Редстоуновая руда с изменёнными правилами добычи: перед разрушением её нужно активировать, и она больше не даёт XP напрямую. В новых версиях её также можно обрабатывать через Большую печь.",
     "versions_en": [
@@ -3649,14 +3649,14 @@
     "mcmod_id": 777285,
     "desc": "Bright tin ore that resembles silver ore. In current data, tin is obtained through the Large Furnace plus Obsidian Ingot Mould route and remains part of the bronze progression line.",
     "versions": [
-      "v0.5.7: In Hardcore, tin ore spawn shifted to roughly Y30-128.",
+      "v0.5.7: In Hardcore mode, tin ore generation shifted to roughly Y30-128.",
       "v0.6.0: Tin ingots moved to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "desc_en": "Bright tin ore that resembles silver ore. In the current data, tin is produced through the Large Furnace plus Obsidian Ingot Mould route and remains part of the bronze progression line.",
     "desc_hu": "Világos ónérc, amely az ezüstérchez hasonlít. A jelenlegi adatokban az ón a Nagy Kemence + Obszidián Öntőforma útvonalon készül, és továbbra is a bronzprogresszió része.",
     "desc_ru": "Светлая оловянная руда, похожая на серебряную. По текущим данным олово получают через Большую печь и обсидиановую форму, и оно остаётся частью бронзовой прогрессии.",
     "versions_en": [
-      "v0.5.7: In Hardcore, tin ore spawn shifted to roughly Y30-128.",
+      "v0.5.7: In Hardcore mode, tin ore generation shifted to roughly Y30-128.",
       "v0.6.0: Tin ingots moved to the Large Furnace plus Obsidian Ingot Mould route."
     ],
     "versions_hu": [
@@ -3670,29 +3670,29 @@
   },
   "rubace_cluster": {
     "mcmod_id": 777334,
-    "desc": "Fully grown rubace crystal cluster from Underground red crystal caves. Only the mature cluster drops red crystal shards when broken.",
-    "desc_en": "Fully grown rubace crystal cluster from Underground red crystal caves. Only the mature cluster drops red crystal shards when broken.",
+    "desc": "Fully grown rubace crystal cluster from Underground red crystal caves. Only the mature cluster yields red crystal shards when broken.",
+    "desc_en": "Fully grown rubace crystal cluster from Underground red crystal caves. Only the mature cluster yields red crystal shards when broken.",
     "desc_hu": "Teljesen kifejlett rubace-kristályhalmaz a földalatti vörös kristálybarlangokból. Töréskor csak az érett halmaz ad vörös kristályszilánkot.",
     "desc_ru": "Полностью выросшее скопление кристалла rubace из подземных красных кристальных пещер. При разрушении только зрелое скопление даёт красные кристальные осколки."
   },
   "rubace_small_bud": {
     "mcmod_id": 777335,
-    "desc": "Small immature rubace bud from red crystal caves. It grows into the medium bud stage after about 2 in-game days and drops nothing if broken early.",
-    "desc_en": "Small immature rubace bud from red crystal caves. It grows into the medium bud stage after about 2 in-game days and drops nothing if broken early.",
+    "desc": "Small immature rubace bud from red crystal caves. It grows into the medium bud stage after about 2 in-game days and yields nothing if broken early.",
+    "desc_en": "Small immature rubace bud from red crystal caves. It grows into the medium bud stage after about 2 in-game days and yields nothing if broken early.",
     "desc_hu": "Kis, éretlen rubace-rügy a vörös kristálybarlangokból. Nagyjából 2 játéknap után közepes rüggyé nő, és korán kitörve nem dob semmit.",
     "desc_ru": "Маленькая незрелая почка rubace из красных кристальных пещер. Примерно через 2 игровых дня вырастает в среднюю стадию и при раннем разрушении ничего не даёт."
   },
   "rubace_medium_bud": {
     "mcmod_id": 777336,
-    "desc": "Medium rubace bud from red crystal caves. It advances to the large bud stage after about 3 in-game days and gives no drops if broken too soon.",
-    "desc_en": "Medium rubace bud from red crystal caves. It advances to the large bud stage after about 3 in-game days and gives no drops if broken too soon.",
-    "desc_hu": "Közepes rubace-rügy a vörös kristálybarlangokból. Nagyjából 3 játéknap után nagy rüggyé fejlődik, és túl korán kitörve nem ad droppot.",
+    "desc": "Medium rubace bud from red crystal caves. It advances to the large bud stage after about 3 in-game days and yields nothing if broken too soon.",
+    "desc_en": "Medium rubace bud from red crystal caves. It advances to the large bud stage after about 3 in-game days and yields nothing if broken too soon.",
+    "desc_hu": "Közepes rubace-rügy a vörös kristálybarlangokból. Nagyjából 3 játéknap után nagy rüggyé fejlődik, és túl korán kitörve nem ad zsákmányt.",
     "desc_ru": "Средняя почка rubace из красных кристальных пещер. Примерно через 3 игровых дня переходит в большую стадию и при слишком раннем разрушении ничего не даёт."
   },
   "rubace_large_bud": {
     "mcmod_id": 777337,
-    "desc": "Large rubace bud from red crystal caves. After about 1 more in-game day it matures into the full crystal cluster, but still gives no drops if broken early.",
-    "desc_en": "Large rubace bud from red crystal caves. After about 1 more in-game day it matures into the full crystal cluster, but still gives no drops if broken early.",
+    "desc": "Large rubace bud from red crystal caves. After about 1 more in-game day it matures into the full crystal cluster, but still yields nothing if broken early.",
+    "desc_en": "Large rubace bud from red crystal caves. After about 1 more in-game day it matures into the full crystal cluster, but still yields nothing if broken early.",
     "desc_hu": "Nagy rubace-rügy a vörös kristálybarlangokból. Még nagyjából 1 játéknap után teljes kristályhalmazzá érik, de korán kitörve továbbra sem ad semmit.",
     "desc_ru": "Большая почка rubace из красных кристальных пещер. Примерно через ещё 1 игровой день созревает в полное скопление, но при раннем разрушении всё ещё ничего не даёт."
   },
@@ -3717,8 +3717,8 @@
   },
   "pcb": {
     "mcmod_id": 771971,
-    "desc": "Rare PCB loot from Underground ancient skeleton spawner ruins. Right-clicking a workbench with it upgrades that station into an automatic crafting table.",
-    "desc_en": "Rare PCB loot from Underground ancient skeleton spawner ruins. Right-clicking a workbench with it upgrades that station into an automatic crafting table.",
+    "desc": "Rare PCB found in Underground ancient skeleton spawner ruins. Right-clicking a workbench with it upgrades that station into an automatic crafting table.",
+    "desc_en": "Rare PCB found in Underground ancient skeleton spawner ruins. Right-clicking a workbench with it upgrades that station into an automatic crafting table.",
     "desc_hu": "Ritka PCB-zsákmány a földalatti ősi csontváz-spawner romokból. Ha munkaasztalra jobb kattintasz vele, az állomás automata barkácsasztallá fejlődik.",
     "desc_ru": "Редкий PCB-лут из подземных руин древнего спавнера скелетов. ПКМ по верстаку с этой платой улучшает его до автоматического верстака."
   },
@@ -3823,14 +3823,14 @@
     "desc": "Enhanced Eye of Ender used to activate the Core Destroyer. In newer versions, crafting it also requires the matching Knowledge Book unlock.",
     "versions": [
       "v0.5.8: Added as the activation item for the Core Destroyer.",
-      "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
+      "v0.9.0: Crafting requires the corresponding Knowledge Book unlock."
     ],
     "desc_en": "Enhanced Eye of Ender used to activate the Core Destroyer. In newer versions, crafting it also requires the matching Knowledge Book unlock.",
     "desc_hu": "Fejlesztett Ender-szem, amely a Magpusztító aktiválásához kell. Az újabb verziókban az elkészítéséhez a megfelelő tudáskönyv-feloldás is szükséges.",
     "desc_ru": "Усиленный глаз Эндера, нужный для активации Разрушителя ядра. В новых версиях для его крафта также требуется разблокировка соответствующей книги знаний.",
     "versions_en": [
       "v0.5.8: Added as the activation item for the Core Destroyer.",
-      "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
+      "v0.9.0: Crafting requires the corresponding Knowledge Book unlock."
     ],
     "versions_hu": [
       "v0.5.8: Megjelent a Magpusztító aktiváló tárgyaként.",
@@ -3843,11 +3843,11 @@
   },
   "skull_shard": {
     "mcmod_id": 802103,
-    "desc": "Wither skeleton skull fragment obtained from Nether wither skeletons, with Looting affecting the drop chance. Nine fragments combine into one full wither skeleton skull.",
+    "desc": "Wither skeleton skull fragment obtained from Nether wither skeletons, with Looting affecting the chance to get one. Nine fragments combine into one full wither skeleton skull.",
     "versions": [
       "v0.5.8: Skull fragments were added."
     ],
-    "desc_en": "Wither skeleton skull fragment obtained from Nether wither skeletons, with Looting affecting the drop chance. Nine fragments combine into one full wither skeleton skull.",
+    "desc_en": "Wither skeleton skull fragment obtained from Nether wither skeletons, with Looting affecting the chance to get one. Nine fragments combine into one full wither skeleton skull.",
     "desc_hu": "Wither skeleton koponyatöredék, amely netherbeli wither skeletonokból eshet, és a Looting befolyásolja az esélyét. Kilenc darab egy teljes wither skeleton koponyává áll össze.",
     "desc_ru": "Осколок черепа визер-скелета, выпадающий с визер-скелетов в Нижнем мире, причём Шалкер/Добыча влияет на шанс. Девять осколков собираются в полноценный череп визер-скелета.",
     "versions_en": [
@@ -3864,18 +3864,18 @@
     "mcmod_id": 811608,
     "desc": "Small loose stone found on the ground. It can be thrown for 1 damage, and in newer versions 2 pieces can be crafted into 1 cobblestone on a copper-or-better workbench.",
     "versions": [
-      "v0.5.9: Tiny stones were added as ground spawns and throwable pebbles.",
+      "v0.5.9: Tiny stones were added as loose ground pebbles that can also be thrown.",
       "v0.6.0: Cobblestone crafting changed from 4 stones on any bench to 2 stones on a copper-or-better bench."
     ],
     "desc_en": "Small loose stone found on the ground. It can be thrown for 1 damage, and in newer versions 2 pieces can be crafted into 1 cobblestone on a copper-or-better workbench.",
     "desc_hu": "Apró, földön található kavicskő. Eldobva 1 sebzést okoz, az újabb verziókban pedig 2 darabból 1 macskakő készül réz vagy jobb munkaasztalon.",
     "desc_ru": "Мелкий камешек, лежащий на земле. При броске наносит 1 урон, а в новых версиях из 2 штук можно сделать 1 булыжник на медном верстаке или лучше.",
     "versions_en": [
-      "v0.5.9: Tiny stones were added as ground spawns and throwable pebbles.",
+      "v0.5.9: Tiny stones were added as loose ground pebbles that can also be thrown.",
       "v0.6.0: Cobblestone crafting changed from 4 stones on any bench to 2 stones on a copper-or-better bench."
     ],
     "versions_hu": [
-      "v0.5.9: Megjelentek a földön megjelenő, eldobható apró kövek.",
+      "v0.5.9: Megjelentek a földön található, eldobható apró kövek.",
       "v0.6.0: A macskakő craft 4 kőről bármely asztalon 2 kőre változott réz vagy jobb asztalon."
     ],
     "versions_ru": [
@@ -3952,17 +3952,17 @@
   },
   "respawn_anchor": {
     "mcmod_id": 811918,
-    "desc": "World marker that sets the overworld respawn point after activation with a redstone block. In later versions, crafting it also requires the matching knowledge-book unlock.",
+    "desc": "World marker that sets the overworld respawn point after activation with a redstone block. In later versions, crafting it also requires the matching Knowledge Book unlock.",
     "versions": [
       "v0.5.9: Respawn anchors were added as overworld world markers.",
-      "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
+      "v0.9.0: Crafting requires the corresponding Knowledge Book unlock."
     ],
-    "desc_en": "World marker that sets the overworld respawn point after activation with a redstone block. In later versions, crafting it also requires the matching knowledge-book unlock.",
+    "desc_en": "World marker that sets the overworld respawn point after activation with a redstone block. In later versions, crafting it also requires the matching Knowledge Book unlock.",
     "desc_hu": "Világjelölő, amely vöröskőtömbbel aktiválva beállítja a fővilági újraéledési pontot. A későbbi verziókban az elkészítéséhez a megfelelő tudáskönyv-feloldás is kell.",
     "desc_ru": "Мировой маркер, который после активации блоком редстоуна задаёт точку возрождения в обычном мире. В более поздних версиях для крафта также нужна разблокировка соответствующей книги знаний.",
     "versions_en": [
       "v0.5.9: Respawn anchors were added as overworld world markers.",
-      "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
+      "v0.9.0: Crafting requires the corresponding Knowledge Book unlock."
     ],
     "versions_hu": [
       "v0.5.9: Megjelentek a fővilági világjelölőként működő respawn anchorök.",
@@ -3975,17 +3975,17 @@
   },
   "enchantment_table_custom": {
     "mcmod_id": 826854,
-    "desc": "Custom enchanting table for targeted enchantment choices without surrounding bookshelves. It consumes lapis, a book, and XP per enchant, and later versions gate crafting behind a knowledge-book unlock.",
+    "desc": "Custom enchanting table for targeted enchantment choices without surrounding bookshelves. It consumes lapis, a book, and XP per enchant, and later versions gate crafting behind a Knowledge Book unlock.",
     "versions": [
       "v0.6.0: Custom enchanting tables were added.",
-      "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
+      "v0.9.0: Crafting requires the corresponding Knowledge Book unlock."
     ],
-    "desc_en": "Custom enchanting table for targeted enchantment choices without surrounding bookshelves. It consumes lapis, a book, and XP per enchant, and later versions gate crafting behind a knowledge-book unlock.",
+    "desc_en": "Custom enchanting table for targeted enchantment choices without surrounding bookshelves. It consumes lapis, a book, and XP per enchant, and later versions gate crafting behind a Knowledge Book unlock.",
     "desc_hu": "Egyéni bűvölőasztal célzott bűvölésválasztásokhoz, környező könyvespolcok nélkül. Minden bűvölés lapist, egy könyvet és XP-t fogyaszt, a későbbi verziókban pedig az elkészítése tudáskönyv-feloldáshoz kötött.",
     "desc_ru": "Особый стол зачарования для выбора конкретных чар без окружающих книжных полок. Каждое зачарование тратит лазурит, книгу и XP, а в поздних версиях крафт дополнительно закрыт за книгой знаний.",
     "versions_en": [
       "v0.6.0: Custom enchanting tables were added.",
-      "v0.9.0: Crafting requires the corresponding knowledge-book unlock."
+      "v0.9.0: Crafting requires the corresponding Knowledge Book unlock."
     ],
     "versions_hu": [
       "v0.6.0: Megjelentek az egyéni bűvölőasztalok.",
@@ -4433,9 +4433,9 @@
   },
   "pillager_flag": {
     "mcmod_id": 777342,
-    "desc": "Has a chance to drop from Pillagers. While held, villager trade output is doubled within a 20-block radius.",
-    "desc_en": "Has a chance to drop from Pillagers. While held, villager trade output is doubled within a 20-block radius.",
-    "desc_hu": "Pillagerektől eshet. Kézben tartva 20 blokkon belül megduplázza a falusi trade-ek kimenetét.",
+    "desc": "Can be found on Pillagers. While held, villager trade output is doubled within a 20-block radius.",
+    "desc_en": "Can be found on Pillagers. While held, villager trade output is doubled within a 20-block radius.",
+    "desc_hu": "Pillagerektől eshet. Kézben tartva 20 blokkon belül megduplázza a falusi kereskedések hozamát.",
     "desc_ru": "Может выпадать с разбойников. Пока флаг в руке, объём обмена жителей в радиусе 20 блоков удваивается."
   },
   "template_lantern": {
@@ -4478,12 +4478,12 @@
   },
   "torch_holy": {
     "mcmod_id": 831585,
-    "desc": "Purifying Torch added in v0.9.0. It protects nearby crops from Blood Moon withering, is not extinguished by rain, and suppresses nearby zombie spawns in hard-mode rain.",
+    "desc": "Purifying Torch added in v0.9.0. It protects nearby crops from Blood Moon withering, is not extinguished by rain, and suppresses nearby zombie activity during rain in hard mode.",
     "versions": [
       "In v0.9.0, the Purifying Torch was added."
     ],
-    "desc_en": "Purifying Torch added in v0.9.0. It protects nearby crops from Blood Moon withering, is not extinguished by rain, and suppresses nearby zombie spawns in hard-mode rain.",
-    "desc_hu": "A 0.9.0-s verzióban bekerült Tisztító Fáklya. Megvédi a közeli terményeket a Vérhold alatti hervadástól, az eső nem oltja ki, és hard módban esőben visszafogja a közeli zombispawnokat.",
+    "desc_en": "Purifying Torch added in v0.9.0. It protects nearby crops from Blood Moon withering, is not extinguished by rain, and suppresses nearby zombie activity during rain in hard mode.",
+    "desc_hu": "A 0.9.0-s verzióban bekerült Tisztító Fáklya. Megvédi a közeli terményeket a Vérhold alatti hervadástól, az eső nem oltja ki, és nehéz módban esőben visszafogja a közeli zombik megjelenését.",
     "desc_ru": "Очищающий факел, добавленный в версии 0.9.0. Защищает ближайшие культуры от увядания во время Кровавой луны, не гаснет под дождём и подавляет спавн зомби рядом в дождливом хард-режиме.",
     "versions_en": [
       "In v0.9.0, the Purifying Torch was added."
@@ -4553,18 +4553,18 @@
   },
   "wither_rose": {
     "mcmod_id": 811576,
-    "desc": "Added in v0.5.9. Found in Nether Fortress reward chests. When planted on Soul Sand, it can attract 1-2 nearby Wither Skeletons that tend to destroy the flower first.",
+    "desc": "Added in v0.5.9. Found in Nether Fortress reward chests. When planted on Soul Sand, it can attract 1-2 nearby Wither Skeletons, which usually attack the flower first.",
     "versions": [
-      "In v0.5.9, Wither Roses were added as Nether Fortress reward-chest loot."
+      "In v0.5.9, Wither Roses were added to Nether Fortress reward chests."
     ],
-    "desc_en": "Added in v0.5.9. Found in Nether Fortress reward chests. When planted on Soul Sand, it can attract 1-2 nearby Wither Skeletons that tend to destroy the flower first.",
+    "desc_en": "Added in v0.5.9. Found in Nether Fortress reward chests. When planted on Soul Sand, it can attract 1-2 nearby Wither Skeletons, which usually attack the flower first.",
     "desc_hu": "A 0.5.9-es verzióban került be. A Nether Fortress jutalomládáiban jelenhet meg, és lélekhomokra ültetve 1-2 Wither csontvázat képes vonzani a közelébe. Ezek a Wither Skeletonok először magát a rózsát próbálják elpusztítani.",
     "desc_ru": "Добавлена в версии 0.5.9. Встречается в наградных сундуках адской крепости. Если посадить её на песок душ, она может притягивать 1-2 ближайших скелета-иссушителя, которые обычно сначала ломают сам цветок.",
     "versions_en": [
-      "In v0.5.9, Wither Roses were added as Nether Fortress reward-chest loot."
+      "In v0.5.9, Wither Roses were added to Nether Fortress reward chests."
     ],
     "versions_hu": [
-      "A 0.5.9-es verzióban a Wither Rózsa a Nether Fortress jutalomládáinak lootjába került."
+      "A 0.5.9-es verzióban a Wither Rózsa a Nether Fortress jutalomládáinak zsákmányába került."
     ],
     "versions_ru": [
       "В версии 0.5.9 розы иссушения добавили в лут наградных сундуков адской крепости."
@@ -4591,8 +4591,8 @@
   },
   "coconut": {
     "mcmod_id": 444004,
-    "desc": "Fruit found on coconut trees in jungle areas. Breaking a coconut block drops one coconut.",
-    "desc_en": "Fruit found on coconut trees in jungle areas. Breaking a coconut block drops one coconut.",
+    "desc": "Fruit found on coconut trees in jungle areas. Breaking a coconut block yields one coconut.",
+    "desc_en": "Fruit found on coconut trees in jungle areas. Breaking a coconut block yields one coconut.",
     "desc_hu": "Dzsungelbeli kókuszfák gyümölcse. Egy kókuszblokk eltörése egy darab kókuszt dob.",
     "desc_ru": "Плод кокосовых деревьев в джунглях. При разрушении кокосового блока выпадает один кокос."
   },
@@ -4659,8 +4659,8 @@
   },
   "duck_head": {
     "mcmod_id": 446427,
-    "desc": "Raw duck head dropped by mallards. Technically edible, but very likely to poison you.",
-    "desc_en": "Raw duck head dropped by mallards. Technically edible, but very likely to poison you.",
+    "desc": "Raw duck head obtained from mallards. Technically edible, but very likely to poison you.",
+    "desc_en": "Raw duck head obtained from mallards. Technically edible, but very likely to poison you.",
     "desc_hu": "Tőkés récéről eső nyers kacsafej. Meg lehet enni, de nagyon könnyen megmérgez.",
     "desc_ru": "Сырая утиная голова, выпадающая с крякв. Формально съедобна, но очень легко отравляет."
   },
@@ -4680,15 +4680,15 @@
   },
   "squid_meat": {
     "mcmod_id": 446429,
-    "desc": "Raw squid meat dropped by squid. Light food on its own, but mainly worth cooking first.",
-    "desc_en": "Raw squid meat dropped by squid. Light food on its own, but mainly worth cooking first.",
+    "desc": "Raw squid meat obtained from squid. Light food on its own, but mainly worth cooking first.",
+    "desc_en": "Raw squid meat obtained from squid. Light food on its own, but mainly worth cooking first.",
     "desc_hu": "Tintahalból eső nyers tintahús. Önmagában is ehető, de inkább érdemes előbb megsütni.",
     "desc_ru": "Сырое мясо кальмара, выпадающее с кальмаров. Его можно есть и так, но обычно лучше сначала приготовить."
   },
   "cooked_squid_meat": {
     "mcmod_id": 446430,
-    "desc": "Cooked squid meat from a furnace. Better hunger value and protein than the raw drop.",
-    "desc_en": "Cooked squid meat from a furnace. Better hunger value and protein than the raw drop.",
+    "desc": "Cooked squid meat from a furnace. Better hunger value and protein than the raw version.",
+    "desc_en": "Cooked squid meat from a furnace. Better hunger value and protein than the raw version.",
     "desc_hu": "Kemencében sült tintahús. Többet ér éhségben és fehérjében, mint a nyers változat.",
     "desc_ru": "Приготовленное в печи мясо кальмара. Даёт больше сытости и белка, чем сырая версия."
   },
@@ -4715,8 +4715,8 @@
   },
   "banana": {
     "mcmod_id": 764747,
-    "desc": "Bananas can rarely drop from jungle leaves and reliably from banana trees in jungle terrain.",
-    "desc_en": "Bananas can rarely drop from jungle leaves and reliably from banana trees in jungle terrain.",
+    "desc": "Bananas can rarely come from jungle leaves and are reliably obtained from banana trees in jungle terrain.",
+    "desc_en": "Bananas can rarely come from jungle leaves and are reliably obtained from banana trees in jungle terrain.",
     "desc_hu": "A banán ritkán dzsungellevelekből is kieshet, de a dzsungelben növő banánfákról megbízhatóan megszerezhető.",
     "desc_ru": "Бананы редко выпадают из листвы джунглей, но надёжно добываются с банановых деревьев в джунглях."
   },
@@ -4994,8 +4994,8 @@
   },
   "rusted_iron_hatchet": {
     "mcmod_id": 773562,
-    "desc": "Uncraftable rusty iron hatchet dropped by some zombies. Attack damage +4, with only rough quality.",
-    "desc_en": "Uncraftable rusty iron hatchet dropped by some zombies. Attack damage +4, with only rough quality.",
+    "desc": "Uncraftable rusty iron hatchet that can be found on certain zombies. Attack damage +4, with only rough quality.",
+    "desc_en": "Uncraftable rusty iron hatchet that can be found on certain zombies. Attack damage +4, with only rough quality.",
     "desc_hu": "Nem készíthető rozsdás vas kézbalta, amelyet egyes zombik dobhatnak. Támadási sebzés: +4, a minősége legfeljebb durva.",
     "desc_ru": "Некрафтящийся ржавый железный ручной топорик, который могут выбросить некоторые зомби. Урон: +4, максимальное качество только грубое."
   },
@@ -5008,8 +5008,8 @@
   },
   "rusted_iron_axe": {
     "mcmod_id": 773582,
-    "desc": "Uncraftable rusty iron axe dropped by some zombies. Attack damage +5, with only rough quality.",
-    "desc_en": "Uncraftable rusty iron axe dropped by some zombies. Attack damage +5, with only rough quality.",
+    "desc": "Uncraftable rusty iron axe that can be found on certain zombies. Attack damage +5, with only rough quality.",
+    "desc_en": "Uncraftable rusty iron axe that can be found on certain zombies. Attack damage +5, with only rough quality.",
     "desc_hu": "Nem készíthető rozsdás vas fejsze, amelyet egyes zombik dobhatnak. Támadási sebzés: +5, a minősége legfeljebb durva.",
     "desc_ru": "Некрафтящийся ржавый железный топор, который могут выбросить некоторые зомби. Урон: +5, максимальное качество только грубое."
   },
@@ -5048,11 +5048,11 @@
   },
   "rusted_iron_pickaxe": {
     "mcmod_id": 773570,
-    "desc": "Uncraftable rusty iron pickaxe dropped by some zombies. Its mining tier matches copper, not iron. Attack damage +4.",
+    "desc": "Uncraftable rusty iron pickaxe that can be found on certain zombies. Its mining tier matches copper, not iron. Attack damage +4.",
     "versions": [
       "v0.5.9: Can mine ice without Silk Touch."
     ],
-    "desc_en": "Uncraftable rusty iron pickaxe dropped by some zombies. Its mining tier matches copper, not iron. Attack damage +4.",
+    "desc_en": "Uncraftable rusty iron pickaxe that can be found on certain zombies. Its mining tier matches copper, not iron. Attack damage +4.",
     "desc_hu": "Nem készíthető rozsdás vascsákány, amelyet egyes zombik dobhatnak. A bányászati szintje a rézével egyezik, nem a vaséval. Támadási sebzés: +4.",
     "desc_ru": "Некрафтящаяся ржавая железная кирка, которую могут выбросить некоторые зомби. По уровню добычи соответствует меди, а не железу. Урон: +4.",
     "versions_en": [
@@ -5124,8 +5124,8 @@
   },
   "rusted_iron_shovel": {
     "mcmod_id": 773552,
-    "desc": "Uncraftable rusty iron shovel dropped by some zombies. Attack damage +3, with only rough quality.",
-    "desc_en": "Uncraftable rusty iron shovel dropped by some zombies. Attack damage +3, with only rough quality.",
+    "desc": "Uncraftable rusty iron shovel that can be found on certain zombies. Attack damage +3, with only rough quality.",
+    "desc_en": "Uncraftable rusty iron shovel that can be found on certain zombies. Attack damage +3, with only rough quality.",
     "desc_hu": "Nem készíthető rozsdás vas lapát, amelyet egyes zombik dobhatnak. Támadási sebzés: +3, a minősége legfeljebb durva.",
     "desc_ru": "Некрафтящаяся ржавая железная лопата, которую могут выбросить некоторые зомби. Урон: +3, максимальное качество только грубое."
   },
@@ -5164,8 +5164,8 @@
   },
   "rusted_iron_hoe": {
     "mcmod_id": 773637,
-    "desc": "Uncraftable rusty iron hoe dropped by some zombies. Attack damage +3, with only rough quality.",
-    "desc_en": "Uncraftable rusty iron hoe dropped by some zombies. Attack damage +3, with only rough quality.",
+    "desc": "Uncraftable rusty iron hoe that can be found on certain zombies. Attack damage +3, with only rough quality.",
+    "desc_en": "Uncraftable rusty iron hoe that can be found on certain zombies. Attack damage +3, with only rough quality.",
     "desc_hu": "Nem készíthető rozsdás vas kapa, amelyet egyes zombik dobhatnak. Támadási sebzés: +3, a minősége legfeljebb durva.",
     "desc_ru": "Некрафтящаяся ржавая железная мотыга, которую могут выбросить некоторые зомби. Урон: +3, максимальное качество только грубое."
   },
@@ -5185,8 +5185,8 @@
   },
   "rusted_iron_scythe": {
     "mcmod_id": 773590,
-    "desc": "Uncraftable rusty iron scythe dropped by some zombies. Good for fast grass and wheat harvesting. Attack damage +3.",
-    "desc_en": "Uncraftable rusty iron scythe dropped by some zombies. Good for fast grass and wheat harvesting. Attack damage +3.",
+    "desc": "Uncraftable rusty iron scythe that can be found on certain zombies. Good for fast grass and wheat harvesting. Attack damage +3.",
+    "desc_en": "Uncraftable rusty iron scythe that can be found on certain zombies. Good for fast grass and wheat harvesting. Attack damage +3.",
     "desc_hu": "Nem készíthető rozsdás vas kasza, amelyet egyes zombik dobhatnak. Fű és búza gyors betakarítására jó. Támadási sebzés: +3.",
     "desc_ru": "Некрафтящаяся ржавая железная коса, которую могут выбросить некоторые зомби. Подходит для быстрого сбора травы и пшеницы. Урон: +3."
   },
@@ -5316,8 +5316,8 @@
   },
   "rusted_iron_sword": {
     "mcmod_id": 773285,
-    "desc": "Rusty iron sword with 6 attack damage. Cannot be crafted. Sometimes drops from zombies wielding one.",
-    "desc_en": "Rusty iron sword with 6 attack damage. Cannot be crafted. Sometimes drops from zombies wielding one.",
+    "desc": "Rusty iron sword with 6 attack damage. Cannot be crafted. Sometimes found on zombies wielding one.",
+    "desc_en": "Rusty iron sword with 6 attack damage. Cannot be crafted. Sometimes found on zombies wielding one.",
     "desc_hu": "6 sebzésű rozsdás vaskard. Nem készíthető. Néha a vele felszerelt zombik dobják.",
     "desc_ru": "Ржавый железный меч с уроном 6. Не крафтится. Иногда выпадает с зомби, вооружённых таким мечом."
   },
@@ -5415,8 +5415,8 @@
   },
   "rusted_iron_dagger": {
     "mcmod_id": 773304,
-    "desc": "Rusty iron dagger with 4 attack damage. Cannot be crafted. Sometimes drops from creatures wielding one. Cannot block.",
-    "desc_en": "Rusty iron dagger with 4 attack damage. Cannot be crafted. Sometimes drops from creatures wielding one. Cannot block.",
+    "desc": "Rusty iron dagger with 4 attack damage. Cannot be crafted. Sometimes found on creatures wielding one. Cannot block.",
+    "desc_en": "Rusty iron dagger with 4 attack damage. Cannot be crafted. Sometimes found on creatures wielding one. Cannot block.",
     "desc_hu": "4 sebzésű rozsdás vastőr. Nem készíthető. Néha a vele felszerelt lények dobják. Nem tud blokkolni.",
     "desc_ru": "Ржавый железный кинжал с уроном 4. Не крафтится. Иногда выпадает с существ, вооружённых им. Не может блокировать."
   },
@@ -5486,8 +5486,8 @@
   },
   "rusted_iron_arrow": {
     "mcmod_id": 773314,
-    "desc": "Rusty iron arrow with +2 projectile damage and a 50% recovery chance. Cannot be crafted directly; some skeleton archers can drop it.",
-    "desc_en": "Rusty iron arrow with +2 projectile damage and a 50% recovery chance. Cannot be crafted directly; some skeleton archers can drop it.",
+    "desc": "Rusty iron arrow with +2 projectile damage and a 50% recovery chance. Cannot be crafted directly; some skeleton archers can carry or drop it.",
+    "desc_en": "Rusty iron arrow with +2 projectile damage and a 50% recovery chance. Cannot be crafted directly; some skeleton archers can carry or drop it.",
     "desc_hu": "Rozsdás vasnyíl +2 lövedéksebzéssel és 50% visszaszerzési eséllyel. Közvetlenül nem készíthető; egyes csontvázíjászok dobhatják.",
     "desc_ru": "Ржавая железная стрела с уроном снаряда +2 и шансом 50% вернуться после попадания. Напрямую не крафтится; может выпадать с некоторых скелетов-лучников."
   },

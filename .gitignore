@@ -53,3 +53,7 @@ TRANSLATION_ISSUES.md
 
 # Extracted class files
 net/
+tmp_factcheck/
+
+# Dev server logs
+.astro-dev*.log
