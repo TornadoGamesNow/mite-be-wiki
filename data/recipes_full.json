@@ -25788,7 +25788,7 @@
     "output": "hardstone_handle",
     "outputQty": 4,
     "station": "hardstone_workbench",
-    "difficulty": 160,
+    "difficulty": 1600,
     "skills": [],
     "ingredients": [
       "hardstone_ingot",
@@ -34373,7 +34373,7 @@
     "output": "water_bag_hard",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 400,
+    "difficulty": 800,
     "skills": [],
     "ingredients": [
       "hardstone_ingot",
@@ -34409,7 +34409,7 @@
     "output": "water_bag_ancient_metal",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 400,
+    "difficulty": 1600,
     "skills": [],
     "ingredients": [
       "ancient_metal_ingot",
@@ -34445,7 +34445,7 @@
     "output": "water_bag_mithril",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 400,
+    "difficulty": 3200,
     "skills": [],
     "ingredients": [
       "mithril_bar",
@@ -34481,7 +34481,7 @@
     "output": "water_bag_adamantium",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 400,
+    "difficulty": 6400,
     "skills": [],
     "ingredients": [
       "adamantium_bar",
