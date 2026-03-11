@@ -6867,7 +6867,7 @@
     "output": "redstone_dust",
     "outputQty": 9,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "redstone_block"
@@ -7428,7 +7428,7 @@
     "output": "dandelion_yellow",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 50,
     "skills": [
       "fineArts"
     ],
@@ -7443,7 +7443,7 @@
     "output": "rose_red",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 50,
     "skills": [
       "fineArts"
     ],
@@ -31843,7 +31843,7 @@
     "output": "enhanced_ender_eye",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
+    "difficulty": 6400,
     "skills": [],
     "ingredients": [
       "nether_star",
@@ -31938,7 +31938,7 @@
     "output": "mining_helmet",
     "outputQty": 1,
     "station": "iron_workbench",
-    "difficulty": 0,
+    "difficulty": 1000,
     "skills": [],
     "ingredients": [
       "gold_ingot",
@@ -32580,7 +32580,7 @@
     "output": "torch_off",
     "outputQty": 1,
     "station": "hand",
-    "difficulty": 0,
+    "difficulty": 20,
     "skills": [],
     "ingredients": [
       "torch"
@@ -32896,7 +32896,7 @@
     "output": "carbon_crystal_shard",
     "outputQty": 1,
     "station": "workbench",
-    "difficulty": 0,
+    "difficulty": 160,
     "skills": [],
     "ingredients": [
       "coal_block",
@@ -32928,7 +32928,7 @@
     "output": "carbon_crystal_shard",
     "outputQty": 4,
     "station": "workbench",
-    "difficulty": 0,
+    "difficulty": 50,
     "skills": [],
     "ingredients": [
       "carbon_crystal"
@@ -33770,7 +33770,7 @@
     "output": "torch_holy",
     "outputQty": 3,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 80,
     "skills": [],
     "ingredients": [
       "blaze_powder",
@@ -34073,7 +34073,7 @@
     "output": "sugar_soup",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 50,
     "skills": [],
     "ingredients": [
       "sugar",
@@ -34105,7 +34105,7 @@
     "output": "ex_eye_of_ender",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 600,
     "skills": [],
     "ingredients": [
       "ender_eye",
@@ -34144,7 +34144,7 @@
     "output": "redstone",
     "outputQty": 4,
     "station": "stone_furnace",
-    "difficulty": 0,
+    "difficulty": 150,
     "skills": [],
     "ingredients": [
       "redstone_ore",
@@ -34159,7 +34159,7 @@
     "output": "runestore",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 1000,
     "skills": [],
     "ingredients": [
       "mithril_nugget",
@@ -34194,7 +34194,7 @@
     "output": "runestore",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 1600,
     "skills": [],
     "ingredients": [
       "adamantium_nugget",
@@ -34879,7 +34879,7 @@
     "output": "straw_rope",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 80,
     "skills": [],
     "ingredients": [
       "plant_fiber",
@@ -34912,7 +34912,7 @@
     "output": "bamboo_helmet",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 50,
     "skills": [],
     "ingredients": [
       "bamboo",
@@ -34975,7 +34975,7 @@
     "output": "chip_flint_knife",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 50,
     "skills": [],
     "ingredients": [
       "chip_flint",
@@ -37496,7 +37496,7 @@
     "output": "runestore",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 1200,
     "skills": [],
     "ingredients": [
       "mithril_nugget",
@@ -38926,7 +38926,7 @@
     "output": "tin_plate",
     "outputQty": 2,
     "station": "iron_workbench",
-    "difficulty": 0,
+    "difficulty": 600,
     "skills": [],
     "ingredients": [
       "tin_ingot",
@@ -39809,7 +39809,7 @@
     "output": "mesh_string",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 50,
     "skills": [],
     "ingredients": [
       "string",
@@ -39841,7 +39841,7 @@
     "output": "mesh_leather",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "sinew",
@@ -40280,7 +40280,7 @@
     "output": "water_bag_iron",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 400,
     "skills": [],
     "ingredients": [
       "iron_ingot",
@@ -40427,7 +40427,7 @@
     "output": "colling_liquid",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 200,
     "skills": [],
     "ingredients": [
       "tin_plate",
@@ -40530,7 +40530,7 @@
     "output": "bone_cudgel",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 100,
     "skills": [],
     "ingredients": [
       "bone",
@@ -40597,7 +40597,7 @@
     "output": "sleep_bag",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 240,
     "skills": [],
     "ingredients": [
       "white_wool",
@@ -40767,7 +40767,7 @@
     "output": "runestore",
     "outputQty": 1,
     "station": "flint_workbench",
-    "difficulty": 0,
+    "difficulty": 2000,
     "skills": [],
     "ingredients": [
       "adamantium_nugget",
@@ -40994,7 +40994,7 @@
     "output": "obsidian_ingot_cool_mould",
     "outputQty": 1,
     "station": "copper_workbench",
-    "difficulty": 0,
+    "difficulty": 400,
     "skills": [],
     "ingredients": [
       "obsidian_ingot_mould",
@@ -42574,7 +42574,7 @@
     "output": "copper_filter_paper",
     "outputQty": 1,
     "station": "copper_workbench",
-    "difficulty": 0,
+    "difficulty": 150,
     "skills": [],
     "ingredients": [
       "copper_nugget",
@@ -42606,7 +42606,7 @@
     "output": "silver_filter_paper",
     "outputQty": 1,
     "station": "copper_workbench",
-    "difficulty": 0,
+    "difficulty": 185,
     "skills": [],
     "ingredients": [
       "silver_nugget",
@@ -42638,7 +42638,7 @@
     "output": "iron_filter_paper",
     "outputQty": 1,
     "station": "iron_workbench",
-    "difficulty": 0,
+    "difficulty": 230,
     "skills": [],
     "ingredients": [
       "iron_nugget",
@@ -42670,7 +42670,7 @@
     "output": "hardstone_filter_paper",
     "outputQty": 1,
     "station": "hardstone_workbench",
-    "difficulty": 0,
+    "difficulty": 320,
     "skills": [],
     "ingredients": [
       "hardstone_nugget",
@@ -42702,7 +42702,7 @@
     "output": "mithril_filter_paper",
     "outputQty": 1,
     "station": "mithril_workbench",
-    "difficulty": 0,
+    "difficulty": 1500,
     "skills": [],
     "ingredients": [
       "mithril_nugget",
@@ -42734,7 +42734,7 @@
     "output": "adamantium_filter_paper",
     "outputQty": 1,
     "station": "adamantium_workbench",
-    "difficulty": 0,
+    "difficulty": 2500,
     "skills": [],
     "ingredients": [
       "adamantium_nugget",
