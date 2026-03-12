@@ -98,91 +98,98 @@ const sidebarGroups = getSidebarGroups('progression/early-game');
 <h2 id="flint-age">Kova Korszak</h2>
 <p>A kovaszilánkokból és a nagyobb kovadarabokból készíted az első igazi szerszámaidat.</p>
 
-<h3>Alap Kovakés (Kovakés)</h3>
+<h3>Egyszerű Kovakés</h3>
 <div class="recipe">Szalmakötél + Kovaszilánk + Fabot → Kovakés</div>
   <CraftingGrid recipeFullId="simple_stone_knife" label={{hu: "Kovakés", en: "Simple Flint Knife"}}/>
 
-<p>Az első vágóeszközöd. Ezzel tudsz bőrt vágni, ami bőrkötelet ad.</p>
-
-<h3>Bőrkötél szerzés</h3>
-<div class="recipe">Bőr + Egyszerű kovakés → Bőrkötél</div>
-  <CraftingGrid recipeId="leather_rope" label={{hu: "Bőrkötél", en: "Leather Rope", ru: "Кожаная верёвка"}}/>
-
-<p>A bőrkötél a továbbfejlesztett szerszámokhoz kell. Állatokat kell ölnöd bőrért!</p>
+<p>Az első vágóeszközöd. A következő nagy lépés a kova és a Kova Munkaasztal.</p>
 
 <h3>Kova készítés</h3>
 <div class="recipe">4× Kovaszilánk → 1× Kova</div>
   <CraftingGrid recipeOutput="flint" label={{hu: "Kova", en: "Flint", ru: "Кремень"}}/>
 
-<p>A nagyobb kovadarabból jobb szerszámok készülnek.</p>
-
-<h3>Kovakés</h3>
-<div class="recipe">Kova + Bőrkötél → Kovakés</div>
-  <CraftingGrid recipeFullId="stone_knife" label={{hu: "Kovakés", en: "Flint Knife"}}/>
+<p>A nagyobb kovadarab kell a munkaasztalhoz és a komolyabb eszközökhöz.</p>
 
 
-<h3>Kova Balta</h3>
-<div class="recipe">Kova + Ín + 2× Fabot → Kova Balta</div>
-  <CraftingGrid recipeOutput="flint_hatchet" label={{hu: "Kova Balta", en: "Flint Hatchet", ru: "Кремниевый топорик"}}/>
+<div class="tip-card">🌿 <strong>Következő cél: Kova Munkaasztal.</strong> Ehhez kova, fabot, deszka és valamilyen kötőanyag kell. Az első darabhoz általában madzagot vagy selyemszálat használsz; a bőrkötél már a munkaasztalon készül.</div>
 
-<p>Végre tudsz fát vágni! Ez a mérföldkő, ami mindent megváltoztat.</p>
-
-<h3>Kova Fejsze</h3>
-<div class="recipe">3× Kova + Ín + 2× Fabot → Kova Fejsze</div>
-  <CraftingGrid recipeOutput="flint_axe" label={{hu: "Kova Fejsze", en: "Flint Axe", ru: "Кремниевый топор"}}/>
-
-
-<h3>Kovacsákány</h3>
-<div class="recipe">Kova + 2× Kovaszilánk + 2× Zsineg + 2× Fabot → Kovacsákány</div>
-  <CraftingGrid recipeOutput="flint_pickaxe" label={{hu: "Kovacsákány", en: "Flint Pickaxe", ru: "Кремниевая кирка"}}/>
-
-<p>A kő törésénél <em>Éles Kova Szilánk</em> hullhat — ez a lándzsák alapanyaga.</p>
-<div class="info">A Kovacsákány képes szénérc törésre is (1,5× tartósság költség).</div>
-
-<h3>Éles Kova Lándzsa</h3>
-<div class="recipe">Éles Kova Szilánkok + Bot → Éles Kova Lándzsa</div>
-  <CraftingGrid recipeOutput="flint_spear" label={{hu: "Éles Kova Lándzsa", en: "Sharp Flint Spear", ru: "Острое кремниевое копьё"}}/>
-
-<p>Hatékonyabb harceszköz, mint a bot — az első igazi fegyver!</p>
-
-
-<div class="tip-card">🌿 <strong>Növényszál és Szalmakötél:</strong> A legbiztonságosabb út a munkaasztalhoz: üsd ki a magas füvet kézzel, amíg <strong>Növényszálat (Plant Fiber)</strong> nem kapsz. 4 növényszálból barkácsolhatsz <strong>Szalmakötelet (Straw Rope)</strong>, ami helyettesíti a madzagot a kezdeti receptekben.</div>
-
-<div class="warning-box">🕷️ <strong>Vigyázat:</strong> A pókok vadászata fegyverzet nélkül öngyilkosság! Használd a füvet a kötélhez, amíg nincs rendes felszerelésed.</div>
+<div class="warning-box">🕷️ <strong>Vigyázat:</strong> Ha madzagra hajtasz, a pókok korai vadászata még mindig veszélyes. Keress biztonságos forrást, vagy válts bőrkötélre, amint megvan a munkaasztal.</div>
 
 <!-- ===== MUNKAASZTAL ===== -->
 
-<h2 id="Munkaasztal">Munkaasztal</h2>
-<div class="recipe">Kova + Szalmakötél/Madzag + Fabot + Fa rönk → Kova Munkaasztal</div>
+<h2 id="Munkaasztal">Kova Munkaasztal</h2>
+<div class="recipe">Kova + Selyemszál/Madzag/Bőrkötél + Fabot + Deszka → Kova Munkaasztal</div>
   <CraftingGrid recipeOutput="flint_workbench" label={{hu: "Kova Munkaasztal", en: "Flint Workbench"}}/>
 
-<p>A munkaasztal megnyitja a 3×3-as Barkácsolás rendszert. Innentől sokkal több recept elérhető!</p>
+<p>Itt nyílik meg a 3×3-as barkácsolás. Innentől jön a bőrkötél, a fakitermelés és az első rendes bányászeszközök.</p>
 
-<h3>Kovacsákány</h3>
-<div class="recipe">3× Kova + 2× Szalmakötél/Madzag + 2× Fabot → Kovacsákány (Kova Munkaasztalon)</div>
-  <CraftingGrid recipeOutput="flint_pickaxe" label={{hu: "Kovacsákány", en: "Flint Pickaxe"}}/>
-<p>Az első bányászeszközöd. Ezzel már tudsz szenet és rezet bányászni (darabokban).</p>
+<h3>Bőrkötél</h3>
+<div class="recipe">Egyszerű kovakés + Bőr → Bőrkötél</div>
+  <CraftingGrid recipeId="leather_rope" label={{hu: "Bőrkötél", en: "Leather Rope", ru: "Кожаная верёвка"}}/>
+
+<p>A bőrkötél kell a Kova Baltához, és ettől a ponttól sokkal simább lesz a korai progresszió.</p>
+
+<h3>Kova Balta</h3>
+<div class="recipe">Kova + Bőrkötél + Fabot → Kova Balta</div>
+  <CraftingGrid recipeOutput="flint_hatchet" label={{hu: "Kova Balta", en: "Flint Hatchet", ru: "Кремниевый топорик"}}/>
+
+<p>Végre tudsz fát vágni. Ez az igazi fordulópont a korai játékban.</p>
+
 <div class="recipe">1× Deszka + 2× Fabot → Fa Lapát (Kova Munkaasztalon)</div>
   <CraftingGrid recipeOutput="wooden_shovel" label={{hu: "Fa Lapát", en: "Wooden Shovel"}}/>
 
 <p>Gyorsabb kavicsbányászat = több kovaszilánk!</p>
+
+<h3>Kova Fejsze</h3>
+<div class="recipe">3× Kova + Ín/Madzag + 2× Fabot → Kova Fejsze</div>
+  <CraftingGrid recipeOutput="flint_axe" label={{hu: "Kova Fejsze", en: "Flint Axe", ru: "Кремниевый топор"}}/>
+
+<h3>Kovacsákány</h3>
+<div class="recipe">Kova + 2× Kovaszilánk + 2× Ín/Madzag + 2× Fabot → Kovacsákány</div>
+  <CraftingGrid recipeOutput="flint_pickaxe" label={{hu: "Kovacsákány", en: "Flint Pickaxe", ru: "Кремниевая кирка"}}/>
+<p>Az első rendes bányászeszközöd. Ezzel már tudsz szenet és rezet bányászni töredékekben.</p>
+<div class="info">A kő törésénél Éles Kova Szilánk is hullhat, a szénércet pedig 1,5× tartósságköltséggel bányássza.</div>
+
+<h3>Éles Kova Lándzsa</h3>
+<div class="recipe">Éles Kova Szilánk + Ín/Madzag + 2× Fabot → Éles Kova Lándzsa</div>
+  <CraftingGrid recipeOutput="sharp_flint_spear" label={{hu: "Éles Kova Lándzsa", en: "Sharp Flint Spear", ru: "Острое кремниевое копьё"}}/>
+
+<p>Hatékonyabb harceszköz, mint a bot, és már valóban használható önvédelemre.</p>
 
 
 <!-- ===== SZITA & ÉRCEK ===== -->
 
 <h2 id="sieve">Szita & Ércdarabok</h2>
 <div class="recipe">Rönkök + Deszka + Botok → Fa Szita</div>
+  <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:12px;">
+    <CraftingGrid recipeId="wooden_sieve" label={{hu: "Fa Szita", en: "Wooden Sieve", ru: "Деревянное сито"}}/>
+    <div style="font-size:1.4em;font-weight:700;color:#d4a94f;">--&gt;</div>
+    <CraftingGrid recipeOutput="mesh_leather" label={{hu: "Bőr Szitaháló", en: "Leather Sieve Mesh", ru: "Кожаная сетка для сита"}}/>
+  </div>
 
-<p>A szita a MITE:BE egyik legfontosabb eszköze! Helyezd le, tegyél bele <strong>kavicsot</strong> — és <strong>ércdarabok</strong> szűrődnek ki belőle (réz, ezüst, arany stb.).</p>
+<p>A szita a MITE:BE egyik legfontosabb eszköze! A fa szita önmagában még nem működik: előbb tegyél bele egy <strong>szitahálót</strong>, utána mehet bele a <strong>kavics</strong> — ebből <strong>ércdarabok</strong> szűrődnek ki (réz, ezüst, arany stb.). A <strong>zsinórháló tovább bírja</strong>, a <strong>bőrháló</strong> pedig akkor kényelmes, ha már van <strong>bőrkötél</strong>.</p>
 
 <div class="tip">A szitáláskor <strong>Obszidián szilánk</strong> is eshet — ez később az öntőformához kell!</div>
 <div class="info-box">🪨 <strong>Közvetlen kavicstörés is számít:</strong> a helyi item-info szerint a <strong>kavics kézi vagy sima törése</strong> is dobhat <strong>fémszemcséket vagy ásványtöredékeket</strong>, és a Szerencse ezt javítja. A <strong>szita továbbra is a megbízhatóbb, jobb hozamú út</strong>, de nem ez az egyetlen forrás.</div>
 
 <div class="warning">A szitát nem szabad elhanyagolni — ez az elsődleges módja a fémhez jutásnak a korai játékban!</div>
 
-<div class="info-box">🐑 <strong>Zsinórhálós Szita — korai tier skip!</strong><br>
-<strong>Fehér gyapjú (birka) → Zsinór → Zsinórháló → Szita + Zsinórháló</strong><br>
-Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sokkal korábban tudsz szitálni mint a normál progresszión keresztül. Keress birkát elsők között!</div>
+<div class="info-box">🐑 <strong>Birkás gyorsítóút a zsinórhálóhoz</strong><br>
+<strong>Gyapjú + Egyszerű kovakés → 4 fonal → Zsinórháló</strong><br>
+Ha korán találsz birkát, a <strong>Kova Munkaasztal</strong> után gyorsan át tudsz állni a tartósabb <strong>zsinórhálóra</strong>. Ez nem előzi meg a munkaasztalt, de jó gyorsítás utána.
+  <div style="margin-top:12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+    <CraftingGrid recipe={{
+      gridSize: '2x2',
+      pattern: [['white_wool', 'flint_knife'], ['_', '_']],
+      output: 'string',
+      outputCount: 4,
+      label: { hu: 'Fonal', en: 'String', ru: 'Нить' }
+    }}/>
+    <div style="font-size:1.25em;font-weight:700;color:#d4a94f;">--&gt;</div>
+    <CraftingGrid recipeOutput="mesh_string" label={{hu: "Zsinórháló", en: "String Mesh", ru: "Сетчатая вставка из нитей"}}/>
+  </div>
+  <div style="margin-top:10px;font-size:.95em;opacity:.92;">A zsinórhálót jobb klikkel kell a szitába helyezni.</div>
+</div>
 
 <h3>Kavics szitálás esési arányok</h3>
 <p>80% eséllyel kapsz valamit kavics szitálásakor. A ritka anyagok esélye alacsony, de sok szitálással felhalmozható!</p>
@@ -247,70 +254,42 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <h2 id="flint-age">Flint Age</h2>
 <p>From flint shards and flint chunks you craft your first real tools.</p>
 
-<h3>Basic Flint Knife</h3>
+<h3>Simple Flint Knife</h3>
 <div class="recipe">Straw Rope + Flint Shard + Stick → Flint Knife</div>
   <CraftingGrid recipeFullId="simple_stone_knife" label={{hu: "Kovakés", en: "Simple Flint Knife"}}/>
 
-<p>Your first cutting tool. Use it to cut leather, which yields leather rope.</p>
-
-<h3>Getting Leather Rope</h3>
-<div class="recipe">Leather + Simple Flint Knife → Leather Rope</div>
-  <CraftingGrid recipeId="leather_rope" label={{hu: "Bőrkötél", en: "Leather Rope", ru: "Кожаная верёвка"}}/>
-
-<p>Leather rope is needed for better tools. You must kill animals for leather!</p>
+<p>Your first cutting tool. After this, your next real target is flint and the flint workbench.</p>
 
 <h3>Crafting Flint</h3>
 <div class="recipe">4× Flint Shard → 1× Flint</div>
   <CraftingGrid recipeOutput="flint" label={{hu: "Kova", en: "Flint", ru: "Кремень"}}/>
 
-<p>The larger flint chunk is used to make better tools.</p>
-
-<h3>Flint Knife (advanced)</h3>
-<div class="recipe">Flint + Leather Rope → Flint Knife</div>
-  <CraftingGrid recipeFullId="stone_knife" label={{hu: "Kovakés", en: "Flint Knife"}}/>
+<p>The larger flint chunk is what unlocks the workbench and your real early tools.</p>
 
 
-<h3>Flint Hatchet</h3>
-<div class="recipe">Flint + Sinew + 2× Stick → Flint Hatchet</div>
-  <CraftingGrid recipeOutput="flint_hatchet" label={{hu: "Kova Balta", en: "Flint Hatchet", ru: "Кремниевый топорик"}}/>
+<div class="tip-card">🌿 <strong>Next goal: Flint Workbench.</strong> You need flint, a stick, a plank, and some binding material. For the first one that usually means string or silk; leather rope is crafted after the workbench is already up.</div>
 
-<p>Finally you can chop wood! This is the milestone that changes everything.</p>
-
-<h3>Flint Axe (large)</h3>
-<div class="recipe">3× Flint + Sinew + 2× Stick → Flint Axe</div>
-  <CraftingGrid recipeOutput="flint_axe" label={{hu: "Kova Fejsze", en: "Flint Axe", ru: "Кремниевый топор"}}/>
-
-
-<h3>Flint Pickaxe</h3>
-<div class="recipe">Flint + 2× Flint Shard + 2× Twine + 2× Stick → Flint Pickaxe</div>
-  <CraftingGrid recipeOutput="flint_pickaxe" label={{hu: "Kovacsákány", en: "Flint Pickaxe", ru: "Кремниевая кирка"}}/>
-
-<p>Breaking stone may drop <em>Sharp Flint Shards</em> — used to make spears.</p>
-<div class="info">The Flint Pickaxe can mine coal ore (1.5× durability cost).</div>
-
-<h3>Sharp Flint Spear</h3>
-<div class="recipe">Sharp Flint Shards + Stick → Sharp Flint Spear</div>
-  <CraftingGrid recipeOutput="flint_spear" label={{hu: "Éles Kova Lándzsa", en: "Sharp Flint Spear", ru: "Острое кремниевое копьё"}}/>
-
-<p>More effective than a stick — your first real weapon!</p>
-
-
-<div class="tip-card">🌿 <strong>Plant Fiber & Straw Rope:</strong> The safest path to a workbench: harvest tall grass by hand until you get <strong>Plant Fiber</strong>. Craft 4 fibers into <strong>Straw Rope</strong>, which replaces string in initial recipes.</div>
-
-<div class="warning-box">🕷️ <strong>Warning:</strong> Hunting spiders without gear is suicide! Use grass for rope until you have proper equipment.</div>
+<div class="warning-box">🕷️ <strong>Warning:</strong> If you are forcing a string route, early spider hunting is still dangerous. Take it safely, or pivot to leather rope once your workbench is online.</div>
 
 <!-- ===== WORKBENCH ===== -->
 
-<h2 id="Munkaasztal">Workbench</h2>
-<div class="recipe">Flint + Straw Rope/String + Stick + Log → Flint Workbench</div>
+<h2 id="Munkaasztal">Flint Workbench</h2>
+<div class="recipe">Flint + Silk/String/Leather Rope + Stick + Plank → Flint Workbench</div>
   <CraftingGrid recipeOutput="flint_workbench" label={{hu: "Kova Munkaasztal", en: "Flint Workbench"}}/>
 
-<p>The workbench unlocks the 3×3 crafting grid. Many more recipes become available!</p>
+<p>This is where the real 3×3 progression starts: leather rope, wood chopping, and your first proper mining tools.</p>
 
-<h3>Flint Pickaxe</h3>
-<div class="recipe">3× Flint + 2× Straw Rope/String + 2× Stick → Flint Pickaxe (at Flint Workbench)</div>
-  <CraftingGrid recipeOutput="flint_pickaxe" label={{hu: "Kovacsákány", en: "Flint Pickaxe"}}/>
-<p>Your first mining tool. You can now mine coal and copper (in fragments).</p>
+<h3>Leather Rope</h3>
+<div class="recipe">Simple Flint Knife + Leather → Leather Rope</div>
+  <CraftingGrid recipeId="leather_rope" label={{hu: "Bőrkötél", en: "Leather Rope", ru: "Кожаная верёвка"}}/>
+
+<p>Leather rope is the key unlock for your flint hatchet and a much smoother early route.</p>
+
+<h3>Flint Hatchet</h3>
+<div class="recipe">Flint + Leather Rope + Stick → Flint Hatchet</div>
+  <CraftingGrid recipeOutput="flint_hatchet" label={{hu: "Kova Balta", en: "Flint Hatchet", ru: "Кремниевый топорик"}}/>
+
+<p>Now you can actually chop wood. This is the milestone that changes everything.</p>
 
 <h3>Wooden Shovel</h3>
 <div class="recipe">1× Plank + 2× Stick → Wooden Shovel (at Flint Workbench)</div>
@@ -318,22 +297,56 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 
 <p>Faster gravel mining = more flint shards!</p>
 
+<h3>Flint Axe</h3>
+<div class="recipe">3× Flint + Sinew/String + 2× Stick → Flint Axe</div>
+  <CraftingGrid recipeOutput="flint_axe" label={{hu: "Kova Fejsze", en: "Flint Axe", ru: "Кремниевый топор"}}/>
+
+<h3>Flint Pickaxe</h3>
+<div class="recipe">Flint + 2× Flint Shard + 2× Sinew/String + 2× Stick → Flint Pickaxe</div>
+  <CraftingGrid recipeOutput="flint_pickaxe" label={{hu: "Kovacsákány", en: "Flint Pickaxe", ru: "Кремниевая кирка"}}/>
+<p>Your first real mining tool. You can now mine coal and copper in fragments.</p>
+<div class="info">Breaking stone may also drop Sharp Flint Shards, and coal ore costs 1.5× durability.</div>
+
+<h3>Sharp Flint Spear</h3>
+<div class="recipe">Sharp Flint Shard + Sinew/String + 2× Stick → Sharp Flint Spear</div>
+  <CraftingGrid recipeOutput="sharp_flint_spear" label={{hu: "Éles Kova Lándzsa", en: "Sharp Flint Spear", ru: "Острое кремниевое копьё"}}/>
+
+<p>Far more practical than a stick, and finally a real early weapon.</p>
+
 
 <!-- ===== SIEVE & ORES ===== -->
 
 <h2 id="sieve">Sieve & Ore Fragments</h2>
 <div class="recipe">Logs + Sticks → Wooden Sieve</div>
+  <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:12px;">
+    <CraftingGrid recipeId="wooden_sieve" label={{hu: "Fa Szita", en: "Wooden Sieve", ru: "Деревянное сито"}}/>
+    <div style="font-size:1.4em;font-weight:700;color:#d4a94f;">--&gt;</div>
+    <CraftingGrid recipeOutput="mesh_leather" label={{hu: "Bőr Szitaháló", en: "Leather Sieve Mesh", ru: "Кожаная сетка для сита"}}/>
+  </div>
 
-<p>The sieve is one of MITE:BE's most important tools! Place it down, add <strong>gravel</strong> — and <strong>ore fragments</strong> filter out (copper, silver, gold, etc.).</p>
+<p>The sieve is one of MITE:BE's most important tools! The wooden sieve does not work on its own: first install a <strong>sieve mesh</strong>, then add <strong>gravel</strong> — that is what produces <strong>ore fragments</strong> (copper, silver, gold, etc.). <strong>String mesh lasts longer</strong>, while <strong>leather mesh</strong> is a convenient fallback if you already have <strong>leather rope</strong>.</p>
 
 <div class="tip">Sieving gravel may also yield <strong>Obsidian shards</strong> — needed later for the ingot mould!</div>
 <div class="info-box">🪨 <strong>Direct gravel breaking also matters:</strong> the local item-info says that <strong>breaking gravel normally</strong> can already drop <strong>metal particles or mineral fragments</strong>, and Luck improves that chance. The <strong>sieve is still the more reliable, higher-yield route</strong>, but it is not the only source.</div>
 
 <div class="warning">Never neglect the sieve — it's the primary way to get metals in early game!</div>
 
-<div class="info-box">🐑 <strong>Twine Mesh Sieve — Early Tier Skip!</strong><br>
-<strong>White wool (sheep) → Twine → Twine Mesh → Sieve + Twine Mesh</strong><br>
-If you find a sheep before the first night and get some wool, you can sieve much earlier than through normal progression. Find sheep first!</div>
+<div class="info-box">🐑 <strong>Sheep shortcut into string mesh</strong><br>
+<strong>Wool + Simple Flint Knife → 4 string → String Mesh</strong><br>
+If you find sheep early, you can swap into the more durable <strong>string mesh</strong> soon after your <strong>Flint Workbench</strong> is online. It does not skip the workbench, but it is a strong follow-up.
+  <div style="margin-top:12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+    <CraftingGrid recipe={{
+      gridSize: '2x2',
+      pattern: [['white_wool', 'flint_knife'], ['_', '_']],
+      output: 'string',
+      outputCount: 4,
+      label: { hu: 'Fonal', en: 'String', ru: 'Нить' }
+    }}/>
+    <div style="font-size:1.25em;font-weight:700;color:#d4a94f;">--&gt;</div>
+    <CraftingGrid recipeOutput="mesh_string" label={{hu: "Zsinórháló", en: "String Mesh", ru: "Сетчатая вставка из нитей"}}/>
+  </div>
+  <div style="margin-top:10px;font-size:.95em;opacity:.92;">Install the mesh into the sieve with right-click.</div>
+</div>
 
 <h3>Gravel Sieve Drop Rates</h3>
 <p>80% chance to get something when sieving gravel. Rare materials have low odds, but are farmable with enough sieving!</p>
@@ -395,54 +408,39 @@ If you find a sheep before the first night and get some wool, you can sieve much
 <h2 id="flint-age">Кремниевая эпоха</h2>
 <p>Из кремниевых осколков и кусков кремня делаешь первые настоящие инструменты.</p>
 
-<h3>Базовый кремниевый нож</h3>
+<h3>Простой кремниевый нож</h3>
 <div class="recipe">Соломенная верёвка + Кремниевый осколок + Палка → Кремниевый нож</div>
   <CraftingGrid recipeFullId="simple_stone_knife" label={{hu: "Kovakés", en: "Simple Flint Knife"}}/>
 
-<p>Первый режущий инструмент. Им можно резать кожу для кожаной верёвки.</p>
+<p>Первый режущий инструмент. Следующая большая цель после него — кремень и кремниевый верстак.</p>
 
-<h3>Получение кожаной верёвки</h3>
-<div class="recipe">Кожа + простой кремниевый нож → Кожаная верёвка</div>
-  <CraftingGrid recipeId="leather_rope" label={{hu: "Bőrkötél", en: "Leather Rope", ru: "Кожаная верёвка"}}/>
+<h3>Создание кремня</h3>
+<div class="recipe">4× Кремниевый осколок → 1× Кремень</div>
+  <CraftingGrid recipeOutput="flint" label={{hu: "Kova", en: "Flint", ru: "Кремень"}}/>
 
-<p>Кожаная верёвка нужна для улучшенных инструментов, поэтому без охоты на животных дальше не пройти.</p>
+<p>Полный кусок кремня нужен для верстака и для нормальных ранних инструментов.</p>
 
-<h3>Кремниевый топорик</h3>
-<div class="recipe">Кремень + Жила + 2× Палка → Кремниевый топорик</div>
-  <CraftingGrid recipeOutput="flint_hatchet" label={{hu: "Kova Balta", en: "Flint Hatchet", ru: "Кремниевый топорик"}}/>
+<div class="tip-card">🌿 <strong>Следующая цель: кремниевый верстак.</strong> Для него нужен кремень, палка, доска и связующий материал. Первый верстак обычно делается через нить или шёлк; кожаная верёвка уже крафтится после него.</div>
 
-<p>Наконец можно рубить дерево! Это ключевой этап ранней игры.</p>
-
-<h3>Большой кремниевый топор</h3>
-<div class="recipe">3× Кремень + Жила + 2× Палка → Большой кремниевый топор</div>
-  <CraftingGrid recipeOutput="flint_axe" label={{hu: "Kova Fejsze", en: "Flint Axe", ru: "Кремниевый топор"}}/>
-
-<h3>Кремниевая кирка</h3>
-<div class="recipe">Кремень + 2× Кремниевый осколок + 2× Бечёвка + 2× Палка → Кремниевая кирка</div>
-  <CraftingGrid recipeOutput="flint_pickaxe" label={{hu: "Kovacsákány", en: "Flint Pickaxe", ru: "Кремниевая кирка"}}/>
-<p>При добыче камня может выпасть <em>Острый кремниевый осколок</em> — основа для копий.</p>
-<div class="info">Кремниевая кирка может добывать угольную руду (1,5× расход прочности).</div>
-
-<h3>Острое кремниевое копьё</h3>
-<div class="recipe">Острые кремниевые осколки + Палка → Острое кремниевое копьё</div>
-  <CraftingGrid recipeOutput="flint_spear" label={{hu: "Éles Kova Lándzsa", en: "Sharp Flint Spear", ru: "Острое кремниевое копьё"}}/>
-
-<p>Эффективнее дубины — первое настоящее оружие!</p>
-
-<div class="tip-card">🌿 <strong>Растительное волокно и Соломенная веревка:</strong> Самый безопасный путь к верстаку: косите траву руками, пока не получите <strong>Растительное волокно (Plant Fiber)</strong>. Из 4 волокон можно скрафтить <strong>Соломенную веревку (Straw Rope)</strong>, которая заменяет нить в начальных рецептах.</div>
-
-<div class="warning-box">🕷️ <strong>Осторожно:</strong> Охота на пауков без снаряжения — самоубийство! Используйте траву для веревки, пока не раздобудете нормальное снаряжение.</div>
+<div class="warning-box">🕷️ <strong>Осторожно:</strong> Если идёшь через нить, ранняя охота на пауков всё ещё опасна. Ищи безопасный источник или переходи на кожаную верёвку уже после верстака.</div>
 
 <h3>Кремниевый Верстак</h3>
-<div class="recipe">Кремень + Соломенная веревка/Нить + Палка + Бревно → Кремниевый Верстак</div>
+<div class="recipe">Кремень + Шёлк/Нить/Кожаная верёвка + Палка + Доска → Кремниевый Верстак</div>
   <CraftingGrid recipeOutput="flint_workbench" label={{hu: "Kova Munkaasztal", en: "Flint Workbench"}}/>
 
-<p>Верстак открывает сетку крафта 3×3. Доступно гораздо больше рецептов!</p>
+<p>С него по-настоящему начинается 3×3 крафт: кожаная верёвка, рубка дерева и первые нормальные шахтёрские инструменты.</p>
 
-<h3>Кремниевая кирка</h3>
-<div class="recipe">3× Кремень + 2× Соломенная веревка/Нить + 2× Палка → Кремниевая кирка (на верстаке)</div>
-  <CraftingGrid recipeOutput="flint_pickaxe" label={{hu: "Kovacsákány", en: "Flint Pickaxe"}}/>
-<p>Ваш первый инструмент для добычи. Теперь вы можете добывать уголь и медь (фрагментами).</p>
+<h3>Кожаная верёвка</h3>
+<div class="recipe">Простой кремниевый нож + Кожа → Кожаная верёвка</div>
+  <CraftingGrid recipeId="leather_rope" label={{hu: "Bőrkötél", en: "Leather Rope", ru: "Кожаная верёвка"}}/>
+
+<p>Кожаная верёвка открывает кремниевый топорик и делает ранний прогресс намного ровнее.</p>
+
+<h3>Кремниевый топорик</h3>
+<div class="recipe">Кремень + Кожаная верёвка + Палка → Кремниевый топорик</div>
+  <CraftingGrid recipeOutput="flint_hatchet" label={{hu: "Kova Balta", en: "Flint Hatchet", ru: "Кремниевый топорик"}}/>
+
+<p>Наконец можно рубить дерево. Это и есть настоящий перелом ранней игры.</p>
 
 <h3>Деревянная лопата</h3>
 <div class="recipe">1× Доска + 2× Палка → Деревянная лопата (на кремниевом верстаке)</div>
@@ -450,17 +448,52 @@ If you find a sheep before the first night and get some wool, you can sieve much
 
 <p>Более быстрая добыча гравия = больше кремниевых осколков!</p>
 
+<h3>Большой кремниевый топор</h3>
+<div class="recipe">3× Кремень + Жила/Нить + 2× Палка → Большой кремниевый топор</div>
+  <CraftingGrid recipeOutput="flint_axe" label={{hu: "Kova Fejsze", en: "Flint Axe", ru: "Кремниевый топор"}}/>
+
+<h3>Кремниевая кирка</h3>
+<div class="recipe">Кремень + 2× Кремниевый осколок + 2× Жила/Нить + 2× Палка → Кремниевая кирка</div>
+  <CraftingGrid recipeOutput="flint_pickaxe" label={{hu: "Kovacsákány", en: "Flint Pickaxe", ru: "Кремниевая кирка"}}/>
+<p>Ваш первый нормальный инструмент для добычи. Теперь можно добывать уголь и медь фрагментами.</p>
+<div class="info">При добыче камня может выпасть острый кремниевый осколок, а угольная руда тратит 1,5× прочности.</div>
+
+<h3>Острое кремниевое копьё</h3>
+<div class="recipe">Острый кремниевый осколок + Жила/Нить + 2× Палка → Острое кремниевое копьё</div>
+  <CraftingGrid recipeOutput="sharp_flint_spear" label={{hu: "Éles Kova Lándzsa", en: "Sharp Flint Spear", ru: "Острое кремниевое копьё"}}/>
+
+<p>Намного практичнее дубины и уже действительно подходит для самообороны.</p>
+
 <h2 id="sieve">Сито и фрагменты руды</h2>
-<p>Сито — один из важнейших инструментов MITE:BE! Положи <strong>гравий</strong> в сито — и из него отфильтруются <strong>фрагменты руды</strong> (медь, серебро, золото и т.д.).</p>
+<div class="recipe">Брёвна + Доски + Палки → Деревянное сито</div>
+  <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:12px;">
+    <CraftingGrid recipeId="wooden_sieve" label={{hu: "Fa Szita", en: "Wooden Sieve", ru: "Деревянное сито"}}/>
+    <div style="font-size:1.4em;font-weight:700;color:#d4a94f;">--&gt;</div>
+    <CraftingGrid recipeOutput="mesh_leather" label={{hu: "Bőr Szitaháló", en: "Leather Sieve Mesh", ru: "Кожаная сетка для сита"}}/>
+  </div>
+<p>Сито — один из важнейших инструментов MITE:BE! Деревянное сито само по себе не работает: сначала установи в него <strong>сетку</strong>, потом засыпь <strong>гравий</strong> — и из него начнут отсеиваться <strong>фрагменты руды</strong> (медь, серебро, золото и т.д.). <strong>Сетка из нитей служит дольше</strong>, а <strong>кожаная сетка</strong> удобна как запасной вариант, если у тебя уже есть <strong>кожаная верёвка</strong>.</p>
 
 <div class="tip">При просеивании гравия также может выпасть <strong>осколок обсидиана</strong> — позже понадобится для формы для слитков!</div>
 <div class="info-box">🪨 <strong>Обычная добыча гравия тоже полезна:</strong> по локальному item-info <strong>простое разрушение гравия</strong> уже может давать <strong>металлические крупицы и минеральные осколки</strong>, а Удача повышает этот шанс. <strong>Сито всё равно остаётся более надёжным и выгодным путём</strong>, но это не единственный источник.</div>
 
 <div class="warning">Не пренебрегай ситом — это основной способ получить металлы в ранней игре!</div>
 
-<div class="info-box">🐑 <strong>Шпагатное сито — ранний пропуск этапов!</strong><br>
-<strong>Белая шерсть (овца) → Шпагат → Шпагатная сетка → Сито + Шпагатная сетка</strong><br>
-Если до первой ночи найти овцу и получить немного шерсти, просеивать можно гораздо раньше, чем по обычному прогрессу. Ищи овцу в первую очередь!</div>
+<div class="info-box">🐑 <strong>Овцы как быстрый путь к сетке из нитей</strong><br>
+<strong>Шерсть + простой кремниевый нож → 4 нити → Сетка из нитей</strong><br>
+Если рано найти овец, то вскоре после <strong>кремниевого верстака</strong> можно быстро перейти на более долговечную <strong>сетку из нитей</strong>. Это не пропускает сам верстак, но хорошо ускоряет следующий шаг.
+  <div style="margin-top:12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+    <CraftingGrid recipe={{
+      gridSize: '2x2',
+      pattern: [['white_wool', 'flint_knife'], ['_', '_']],
+      output: 'string',
+      outputCount: 4,
+      label: { hu: 'Fonal', en: 'String', ru: 'Нить' }
+    }}/>
+    <div style="font-size:1.25em;font-weight:700;color:#d4a94f;">--&gt;</div>
+    <CraftingGrid recipeOutput="mesh_string" label={{hu: "Zsinórháló", en: "String Mesh", ru: "Сетчатая вставка из нитей"}}/>
+  </div>
+  <div style="margin-top:10px;font-size:.95em;opacity:.92;">Сетку нужно установить в сито правым кликом.</div>
+</div>
 
 <h3>Шансы выпадения при просеивании гравия</h3>
 <p>80% шанс получить что-нибудь при просеивании гравия. Редкие материалы редки, но накапливаются при большом объёме просеивания!</p>
