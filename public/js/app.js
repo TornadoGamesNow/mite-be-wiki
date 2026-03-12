@@ -583,7 +583,7 @@ function initSectionAnchors() {
 // ── Item tooltips ──────────────────────────────────────────────
 (function() {
   var tip = null;
-  var BASE = document.documentElement.dataset.base || '';
+  var BASE = document.documentElement.dataset.base || document.body.dataset.base || '';
 
   function createTip() {
     var el = document.createElement('div');

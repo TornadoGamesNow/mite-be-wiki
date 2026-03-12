@@ -47,7 +47,7 @@ const sidebarGroups = getSidebarGroups('progression/early-game');
 <!-- ===== KORAI JÁTÉK ===== -->
 
 <h2 id="first-minutes">Első Percek — Túlélés Csupasz Kézzel</h2>
-<p>A MITE:BE-ben nincs „puncheld a fát" mechanika. Nem tudsz puszta kézzel fát törni! Az első lépéseid a következők:</p>
+<p>Az elején még nem tudsz puszta kézzel fát törni, ezért előbb füvet, kavicsot és földre esett botokat kell gyűjtened. Az első lépések a következők:</p>
 <div style="background:rgba(78,204,163,0.08);border:1px solid rgba(78,204,163,0.35);border-radius:8px;padding:10px 16px;margin-bottom:14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">
   <span style="font-size:1.3em">🗺️</span>
   <span style="flex:1;font-size:.9em;color:#ccc">Nem tudod, hol kezdj? Megvizsgáltunk egy kiváló kezdő seed-et — lebegő sziget, kanyon vas+ezüst bányával, alma-erdő közel.</span>
@@ -57,7 +57,7 @@ const sidebarGroups = getSidebarGroups('progression/early-game');
 <div class="timeline">
   <div class="timeline-item">
     <h4>1. Fű gyűjtés</h4>
-    <p>Törd el a <strong>magas füvet</strong> – <em>Búzamag</em> vagy <em>Növényszál</em> hullhat belőle. A búzamag megehető (kevés telítettséget ad), a növényszál a kötélhez kell.</p>
+    <p>Üsd ki a <strong>magas füvet</strong> – <em>Búzamag</em> vagy <em>Növényszál</em> hullhat belőle. A búzamag legfeljebb vészételnek jó, a <em>Növényszál</em> viszont kulcsfontosságú a kötélhez.</p>
   </div>
   <div class="timeline-item">
     <h4>2. Szalmakötél készítés</h4>
@@ -66,16 +66,16 @@ const sidebarGroups = getSidebarGroups('progression/early-game');
 
   </div>
   <div class="timeline-item">
-    <h4>3. Fabot szerzés</h4>
-    <p>Törj el <strong>leveleket</strong> – Fabot hullhat belőlük. Tölgyfa alatt a földön természetesen is megjelenhet fabot.</p>
+    <h4>3. Bot szerzés</h4>
+    <p>Törd a <strong>leveleket</strong> – <em>bot</em> eshet belőlük. Tölgyfák alatt a földön is megjelenhetnek lehullott botok.</p>
   </div>
   <div class="timeline-item">
     <h4>4. Kovaszilánk szerzés</h4>
-    <p>Áss <strong>kavicsot</strong> (Zuzalék) kézzel – <em><span class="wiki-item" data-id="flint_shard">Kovaszilánk</span> (Kova Csipke)</em> eshet ki belőle. Ez az első „szerszám-anyag".</p>
+    <p>Áss <strong>kavicsot</strong> (Zuzalék) kézzel – <em>Kovaszilánk (Kova Csipke)</em> eshet ki belőle. Ez az első „szerszám-anyag".</p>
   </div>
 </div>
 
-<div class="tip">A tölgyfa alatt található botok megspórolhatják a levéltördelést. A búzamag azonnal ehető!</div>
+<div class="tip">A tölgyfák alatti lehullott botokkal megspórolhatod a levéltördelést. A búzamag csak ritka esetben ad érdemi telítettséget.</div>
 
 
 <!-- ===== KOVA KORSZAK ===== --><h3>Gyakori Hibák & Tippek</h3>
@@ -96,50 +96,52 @@ const sidebarGroups = getSidebarGroups('progression/early-game');
 
 
 <h2 id="flint-age">Kova Korszak</h2>
-<p>A kovaszilánkokból (Kova Csipke) és kovadarabokból (Kőzet / Pedzerit) készíted az első igazi szerszámaidat.</p>
+<p>A kovaszilánkokból és a nagyobb kovadarabokból készíted az első igazi szerszámaidat.</p>
 
-<h3>Alap Kovakés (<span class="wiki-item" data-id="flint_knife">Kovakés</span>)</h3>
-<div class="recipe"><span class="wiki-item" data-id="straw_rope">Szalmakötél</span> + <span class="wiki-item" data-id="flint_shard">Kovaszilánk</span> + Fabot → <span class="wiki-item" data-id="flint_knife">Kovakés</span></div>
+<h3>Alap Kovakés (Kovakés)</h3>
+<div class="recipe">Szalmakötél + Kovaszilánk + Fabot → Kovakés</div>
   <CraftingGrid recipeFullId="simple_stone_knife" label={{hu: "Kovakés", en: "Simple Flint Knife"}}/>
 
 <p>Az első vágóeszközöd. Ezzel tudsz bőrt vágni, ami bőrkötelet ad.</p>
 
 <h3>Bőrkötél szerzés</h3>
-<div class="recipe">Bőr + Kovakés (használat) → Bőrkötél ×4</div>
+<div class="recipe">Bőr + Egyszerű kovakés → Bőrkötél</div>
+  <CraftingGrid recipeId="leather_rope" label={{hu: "Bőrkötél", en: "Leather Rope", ru: "Кожаная верёвка"}}/>
 
 <p>A bőrkötél a továbbfejlesztett szerszámokhoz kell. Állatokat kell ölnöd bőrért!</p>
 
-<h3>Kova (Kőzet) készítés</h3>
-<div class="recipe">4× Kova Forgács (Chip Kova) → 1× Kova (Kőzet)</div>
-  <CraftingGrid recipeOutput="flint" label={{hu: "Kova (Kőzet)", en: "Flint"}}/>
+<h3>Kova készítés</h3>
+<div class="recipe">4× Kovaszilánk → 1× Kova</div>
+  <CraftingGrid recipeOutput="flint" label={{hu: "Kova", en: "Flint", ru: "Кремень"}}/>
 
 <p>A nagyobb kovadarabból jobb szerszámok készülnek.</p>
 
-<h3>Kovakés (fejlettebb)</h3>
+<h3>Kovakés</h3>
 <div class="recipe">Kova + Bőrkötél → Kovakés</div>
   <CraftingGrid recipeFullId="stone_knife" label={{hu: "Kovakés", en: "Flint Knife"}}/>
 
 
-<h3>Kis Fejsze (<span class="wiki-item" data-id="flint_hatchet">Kova Kézbalta</span>)</h3>
-<div class="recipe">Kova + Ín + 2× Fabot → <span class="wiki-item" data-id="flint_hatchet">Kova Kézbalta</span></div>
-  <CraftingGrid recipeOutput="flint_hatchet" label={{hu: "Kova Kézbalta", en: "Flint Short Hatchet"}}/>
+<h3>Kova Balta</h3>
+<div class="recipe">Kova + Ín + 2× Fabot → Kova Balta</div>
+  <CraftingGrid recipeOutput="flint_hatchet" label={{hu: "Kova Balta", en: "Flint Hatchet", ru: "Кремниевый топорик"}}/>
 
 <p>Végre tudsz fát vágni! Ez a mérföldkő, ami mindent megváltoztat.</p>
 
-<h3>Kovaféjsze (nagy)</h3>
-<div class="recipe">3× Kova + Ín + 2× Fabot → Kovaféjsze</div>
-  <CraftingGrid recipeOutput="flint_axe" label={{hu: "Kovaféjsze", en: "Flint Axe"}}/>
+<h3>Kova Fejsze</h3>
+<div class="recipe">3× Kova + Ín + 2× Fabot → Kova Fejsze</div>
+  <CraftingGrid recipeOutput="flint_axe" label={{hu: "Kova Fejsze", en: "Flint Axe", ru: "Кремниевый топор"}}/>
 
 
 <h3>Kovacsákány</h3>
-<div class="recipe">Kova + 2× Chip Kova + 2× Zsineg + 2× Fabot → Kovacsákány</div>
+<div class="recipe">Kova + 2× Kovaszilánk + 2× Zsineg + 2× Fabot → Kovacsákány</div>
+  <CraftingGrid recipeOutput="flint_pickaxe" label={{hu: "Kovacsákány", en: "Flint Pickaxe", ru: "Кремниевая кирка"}}/>
 
 <p>A kő törésénél <em>Éles Kova Szilánk</em> hullhat — ez a lándzsák alapanyaga.</p>
 <div class="info">A Kovacsákány képes szénérc törésre is (1,5× tartósság költség).</div>
 
 <h3>Éles Kova Lándzsa</h3>
 <div class="recipe">Éles Kova Szilánkok + Bot → Éles Kova Lándzsa</div>
-  <CraftingGrid recipeOutput="flint_spear" label={{hu: "Éles Kova Lándzsa", en: "Sharp Flint Spear"}}/>
+  <CraftingGrid recipeOutput="flint_spear" label={{hu: "Éles Kova Lándzsa", en: "Sharp Flint Spear", ru: "Острое кремниевое копьё"}}/>
 
 <p>Hatékonyabb harceszköz, mint a bot — az első igazi fegyver!</p>
 
@@ -196,7 +198,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <!-- ===== EARLY GAME ===== -->
 
 <h2 id="first-minutes">First Minutes — Survival with Bare Hands</h2>
-<p>In MITE:BE there's no "punch the tree" mechanic. You cannot break wood with bare hands! Your first steps:</p>
+<p>At the start, you cannot break wood with bare hands, so your opening route is grass, gravel, and sticks from the ground. Your first steps:</p>
 <div style="background:rgba(78,204,163,0.08);border:1px solid rgba(78,204,163,0.35);border-radius:8px;padding:10px 16px;margin-bottom:14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">
   <span style="font-size:1.3em">🗺️</span>
   <span style="flex:1;font-size:.9em;color:#ccc">Not sure where to start? We analyzed an excellent starter seed — floating island, canyon with iron+silver mine, apple forest nearby.</span>
@@ -206,7 +208,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <div class="timeline">
   <div class="timeline-item">
     <h4>1. Collect Grass</h4>
-    <p>Break <strong>tall grass</strong> – <em>Wheat Seeds</em> or <em>Plant Fiber</em> may drop. Seeds are edible (low satiation), fiber is needed for rope.</p>
+    <p>Break <strong>tall grass</strong> – <em>Wheat Seeds</em> or <em>Plant Fiber</em> may drop. Seeds are at best emergency food, while <em>Plant Fiber</em> is the important part for rope.</p>
   </div>
   <div class="timeline-item">
     <h4>2. Craft Straw Rope</h4>
@@ -215,7 +217,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
   </div>
   <div class="timeline-item">
     <h4>3. Get a Stick</h4>
-    <p>Break <strong>leaves</strong> – Sticks may drop from them. Sticks can also naturally appear on the ground under oak trees.</p>
+    <p>Break <strong>leaves</strong> – <em>sticks</em> may drop from them. Fallen sticks can also appear on the ground under oak trees.</p>
   </div>
   <div class="timeline-item">
     <h4>4. Get Flint Shards</h4>
@@ -223,7 +225,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
   </div>
 </div>
 
-<div class="tip">Sticks found under oak trees save you from breaking leaves. Wheat seeds are immediately edible!</div>
+<div class="tip">Fallen sticks under oak trees can save you from breaking leaves. Wheat seeds only rarely provide any meaningful saturation.</div>
 
 <h3>Common Mistakes & Tips</h3>
 <div class="tips-grid">
@@ -252,13 +254,14 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <p>Your first cutting tool. Use it to cut leather, which yields leather rope.</p>
 
 <h3>Getting Leather Rope</h3>
-<div class="recipe">Leather + Flint Knife (use) → Leather Rope ×4</div>
+<div class="recipe">Leather + Simple Flint Knife → Leather Rope</div>
+  <CraftingGrid recipeId="leather_rope" label={{hu: "Bőrkötél", en: "Leather Rope", ru: "Кожаная верёвка"}}/>
 
 <p>Leather rope is needed for better tools. You must kill animals for leather!</p>
 
-<h3>Crafting Flint (Rock)</h3>
-<div class="recipe">4× Chip Flint → 1× Flint (Rock)</div>
-  <CraftingGrid recipeOutput="flint" label={{hu: "Kova (Kőzet)", en: "Flint"}}/>
+<h3>Crafting Flint</h3>
+<div class="recipe">4× Flint Shard → 1× Flint</div>
+  <CraftingGrid recipeOutput="flint" label={{hu: "Kova", en: "Flint", ru: "Кремень"}}/>
 
 <p>The larger flint chunk is used to make better tools.</p>
 
@@ -267,26 +270,27 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
   <CraftingGrid recipeFullId="stone_knife" label={{hu: "Kovakés", en: "Flint Knife"}}/>
 
 
-<h3>Flint Short Hatchet</h3>
-<div class="recipe">Flint + Sinew + 2× Stick → Flint Short Hatchet</div>
-  <CraftingGrid recipeOutput="flint_hatchet" label={{hu: "Kova Kézbalta", en: "Flint Short Hatchet"}}/>
+<h3>Flint Hatchet</h3>
+<div class="recipe">Flint + Sinew + 2× Stick → Flint Hatchet</div>
+  <CraftingGrid recipeOutput="flint_hatchet" label={{hu: "Kova Balta", en: "Flint Hatchet", ru: "Кремниевый топорик"}}/>
 
 <p>Finally you can chop wood! This is the milestone that changes everything.</p>
 
 <h3>Flint Axe (large)</h3>
 <div class="recipe">3× Flint + Sinew + 2× Stick → Flint Axe</div>
-  <CraftingGrid recipeOutput="flint_axe" label={{hu: "Kovaféjsze", en: "Flint Axe"}}/>
+  <CraftingGrid recipeOutput="flint_axe" label={{hu: "Kova Fejsze", en: "Flint Axe", ru: "Кремниевый топор"}}/>
 
 
 <h3>Flint Pickaxe</h3>
-<div class="recipe">Flint + 2× Chip Flint + 2× Twine + 2× Stick → Flint Pickaxe</div>
+<div class="recipe">Flint + 2× Flint Shard + 2× Twine + 2× Stick → Flint Pickaxe</div>
+  <CraftingGrid recipeOutput="flint_pickaxe" label={{hu: "Kovacsákány", en: "Flint Pickaxe", ru: "Кремниевая кирка"}}/>
 
 <p>Breaking stone may drop <em>Sharp Flint Shards</em> — used to make spears.</p>
 <div class="info">The Flint Pickaxe can mine coal ore (1.5× durability cost).</div>
 
 <h3>Sharp Flint Spear</h3>
 <div class="recipe">Sharp Flint Shards + Stick → Sharp Flint Spear</div>
-  <CraftingGrid recipeOutput="flint_spear" label={{hu: "Éles Kova Lándzsa", en: "Sharp Flint Spear"}}/>
+  <CraftingGrid recipeOutput="flint_spear" label={{hu: "Éles Kova Lándzsa", en: "Sharp Flint Spear", ru: "Острое кремниевое копьё"}}/>
 
 <p>More effective than a stick — your first real weapon!</p>
 
@@ -343,7 +347,7 @@ If you find a sheep before the first night and get some wool, you can sieve much
 <div data-lang="ru">
 
 <h2 id="first-minutes">Первые минуты — Выживание голыми руками</h2>
-<p>В MITE:BE нет механики «ударь по дереву». Голыми руками дерево не сломать! Первые шаги:</p>
+<p>В самом начале дерево голыми руками не добыть, поэтому старт идёт через траву, гравий и палки с земли. Первые шаги:</p>
 
 <div style="background:rgba(78,204,163,0.08);border:1px solid rgba(78,204,163,0.35);border-radius:8px;padding:10px 16px;margin-bottom:14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">
   <span style="font-size:1.3em">🗺️</span>
@@ -354,7 +358,7 @@ If you find a sheep before the first night and get some wool, you can sieve much
 <div class="timeline">
   <div class="timeline-item">
     <h4>1. Сбор травы</h4>
-    <p>Сломай <strong>высокую траву</strong> — может выпасть <em>Пшеничное зерно</em> или <em>Растительное волокно</em>. Зерно сразу съедобно, волокно нужно для верёвки.</p>
+    <p>Ломай <strong>высокую траву</strong> — может выпасть <em>Пшеничное зерно</em> или <em>Растительное волокно</em>. Зерно здесь годится разве что как аварийная еда, а <em>растительное волокно</em> нужно для верёвки.</p>
   </div>
   <div class="timeline-item">
     <h4>2. Крафт соломенной верёвки</h4>
@@ -363,7 +367,7 @@ If you find a sheep before the first night and get some wool, you can sieve much
   </div>
   <div class="timeline-item">
     <h4>3. Получить палку</h4>
-    <p>Сломай <strong>листья</strong> — из них может выпасть палка. Также палки иногда лежат под дубами.</p>
+    <p>Ломай <strong>листья</strong> — из них может выпасть <em>палка</em>. Под дубами на земле тоже могут лежать упавшие палки.</p>
   </div>
   <div class="timeline-item">
     <h4>4. Получить кремниевые осколки</h4>
@@ -371,7 +375,7 @@ If you find a sheep before the first night and get some wool, you can sieve much
   </div>
 </div>
 
-<div class="tip">Палки под дубами экономят время на ломание листьев. Пшеничные зёрна сразу съедобны!</div>
+<div class="tip">Упавшие палки под дубами экономят время на ломание листьев. Пшеничное зерно лишь изредка даёт заметную сытость.</div>
 
 <h3>Частые ошибки и советы</h3>
 <div class="tips-grid">
@@ -397,23 +401,31 @@ If you find a sheep before the first night and get some wool, you can sieve much
 
 <p>Первый режущий инструмент. Им можно резать кожу для кожаной верёвки.</p>
 
+<h3>Получение кожаной верёвки</h3>
+<div class="recipe">Кожа + простой кремниевый нож → Кожаная верёвка</div>
+  <CraftingGrid recipeId="leather_rope" label={{hu: "Bőrkötél", en: "Leather Rope", ru: "Кожаная верёвка"}}/>
+
+<p>Кожаная верёвка нужна для улучшенных инструментов, поэтому без охоты на животных дальше не пройти.</p>
+
 <h3>Кремниевый топорик</h3>
 <div class="recipe">Кремень + Жила + 2× Палка → Кремниевый топорик</div>
-  <CraftingGrid recipeOutput="flint_hatchet" label={{hu: "Kova Kézbalta", en: "Flint Short Hatchet"}}/>
+  <CraftingGrid recipeOutput="flint_hatchet" label={{hu: "Kova Balta", en: "Flint Hatchet", ru: "Кремниевый топорик"}}/>
 
 <p>Наконец можно рубить дерево! Это ключевой этап ранней игры.</p>
 
 <h3>Большой кремниевый топор</h3>
 <div class="recipe">3× Кремень + Жила + 2× Палка → Большой кремниевый топор</div>
-  <CraftingGrid recipeOutput="flint_axe" label={{hu: "Kovaféjsze", en: "Flint Axe"}}/>
+  <CraftingGrid recipeOutput="flint_axe" label={{hu: "Kova Fejsze", en: "Flint Axe", ru: "Кремниевый топор"}}/>
 
 <h3>Кремниевая кирка</h3>
+<div class="recipe">Кремень + 2× Кремниевый осколок + 2× Бечёвка + 2× Палка → Кремниевая кирка</div>
+  <CraftingGrid recipeOutput="flint_pickaxe" label={{hu: "Kovacsákány", en: "Flint Pickaxe", ru: "Кремниевая кирка"}}/>
 <p>При добыче камня может выпасть <em>Острый кремниевый осколок</em> — основа для копий.</p>
 <div class="info">Кремниевая кирка может добывать угольную руду (1,5× расход прочности).</div>
 
 <h3>Острое кремниевое копьё</h3>
 <div class="recipe">Острые кремниевые осколки + Палка → Острое кремниевое копьё</div>
-  <CraftingGrid recipeOutput="flint_spear" label={{hu: "Éles Kova Lándzsa", en: "Sharp Flint Spear"}}/>
+  <CraftingGrid recipeOutput="flint_spear" label={{hu: "Éles Kova Lándzsa", en: "Sharp Flint Spear", ru: "Острое кремниевое копьё"}}/>
 
 <p>Эффективнее дубины — первое настоящее оружие!</p>
 
@@ -468,5 +480,5 @@ If you find a sheep before the first night and get some wool, you can sieve much
     </main>
   </div>
   <script is:inline src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/sieve.js`}></script>
-  <script is:inline src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/js/app.js`}></script>
 </BaseLayout>
+

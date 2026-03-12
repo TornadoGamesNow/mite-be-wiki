@@ -9,7 +9,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const ogImageURL = new URL(`${base}/img/og-banner.png`, Astro.site).href;
 ---
 <!DOCTYPE html>
-<html lang="hu" data-lang-init="hu">
+<html lang="hu" data-lang-init="hu" data-base={base}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -66,6 +66,7 @@ const ogImageURL = new URL(`${base}/img/og-banner.png`, Astro.site).href;
   </footer>
   <button class="back-to-top" id="back-to-top" aria-label="Back to top">&uarr;</button>
   <script is:inline src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/items_slim.js`}></script>
+  <script is:inline src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/js/app.js`}></script>
   <script is:inline>
     // Collapsible sections
     document.querySelectorAll('.collapsible-toggle').forEach(function(btn) {
