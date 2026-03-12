@@ -133,7 +133,7 @@ const qualityXpRows = [
   <tr><td><strong>Zombik esőben</strong></td><td>❌ Nem jelennek meg</td><td>✅ Esőben is megjelennek</td></tr>
   <tr><td><strong>Mobok Y0-10 fénynél</strong></td><td>❌ Fényben nem jelennek meg</td><td>✅ Fényben is megjelennek</td></tr>
   <tr><td><strong>Vérhold mutáns zombik</strong></td><td>Normál megjelenési sebesség</td><td>Dupla megjelenési sebesség</td></tr>
-  <tr><td><strong>Ender-sárkány Életerő (HP)</strong></td><td colspan="2">A helyi <code>mobs.json</code> 200 HP-t jelez; a 100/1000 HP mód-bontás itt nincs megerősítve</td></tr>
+  <tr><td><strong>Ender-sárkány Életerő (HP)</strong></td><td colspan="2">200 HP</td></tr>
   <tr><td><strong>Enderman és víz</strong></td><td>Fél a víztől (vanilla)</td><td>NEM fél a víztől!</td></tr>
   <tr><td><strong>Halál</strong></td><td>Újraéledés lehetséges</td><td>Permadeath — világ törlődik</td></tr>
   <tr><td><strong>Halál utáni debuff</strong></td><td colspan="2">Mindkét módban: <strong>Súlyos sérülés</strong> státuszhatás a meghalás után <abbr class="src-cl" title="Forrás: mod changelog — személyesen nem ellenőrzött">📜 changelog</abbr></td></tr>
@@ -208,7 +208,7 @@ const qualityXpRows = [
   <tr><td style="color:var(--adamantium)">Legendás</td><td>Maximális tartósság</td></tr>
 </table>
 <div class="tip-card">💡 <strong>Normál minőség craftelése ingyenes (0 XP).</strong> Csak a magasabb minőség kerül XP-be, és ez elsősorban a <strong>tartósságot</strong> javítja. Tervezd meg az XP-d beosztását!</div>
-<p>A ZIP <code>item_xp_reqs.txt</code> fájlja itemenként is megadja a quality craft és javítás XP-költségeit. Az alábbiak jó minták arra, mennyire eltérő lehet ugyanaz a minőségi ugrás különböző tárgyaknál:</p>
+<p>A quality craft és javítás XP-költsége itemenként erősen eltérhet. Az alábbi minták jól mutatják, mennyire más lehet ugyanaz a minőségi ugrás különböző tárgyaknál:</p>
 <table class="compare-table">
   <tr><th>Tárgy</th><th>Jó</th><th>Kiváló</th><th>Kitűnő</th><th>Mestermű</th><th>Legendás</th><th>Megjegyzés</th></tr>
   {qualityXpRows.map((row) => (
@@ -223,10 +223,10 @@ const qualityXpRows = [
     </tr>
   ))}
 </table>
-<div class="info-box">📈 <strong>Gyakorlati következtetés:</strong> a quality rendszer nem fix szorzóval számol minden tárgynál. Fegyverek és íjak még kezelhetőek, de a <strong>Mithril / Adamantium szerszámok és páncélok</strong> már extrém XP-büdzsét igényelnek. A ZIP minta alapján a <strong>Legendás</strong> minőség jellemzően csak <strong>Mithril / Adamantium</strong> kategóriában jelenik meg.</div>
+<div class="info-box">📈 <strong>Gyakorlati következtetés:</strong> a quality költsége tárgytípusonként nagyon eltérő. Fegyverek és íjak még viszonylag vállalhatók, de a <strong>Mithril / Adamantium szerszámok és páncélok</strong> már hatalmas XP-befektetést igényelnek. A <strong>Legendás</strong> minőség jellemzően csak <strong>Mithril / Adamantium</strong> felszerelésnél jelenik meg.</div>
 
 <h3 id="stack-sizes">Korlátozott Kötegméret</h3>
-<p>A MITE:BE drastikusan csökkenti a legtöbb blokk kötegméretét. Ez komoly <strong>leltár- és tárolástervezést</strong> igényel!</p>
+<p>A MITE:BE-ben sok blokk és tárgy jóval kisebb kötegben rakható. Emiatt sokkal hamarabb megtelik a leltárad, és a tárolást is előre kell tervezni.</p>
 <table class="compare-table">
   <tr><th>Kategória</th><th>Példák</th><th>MITE köteg</th><th>Vanilla köteg</th></tr>
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Kő / Kőtömb</strong></td><td>Kő, Gránit, Diorit, Andezit</td><td><strong>8</strong></td><td>64</td></tr>
@@ -246,8 +246,8 @@ const qualityXpRows = [
 </table>
 <div class="warning-box">📦 <strong>Fontos:</strong> A csökkentett kötegméretek miatt szükséged van <strong>több tároló ládára</strong>, és az anyaggyűjtés is hamarabb tölti meg a leltárat. Tervezz előre — különösen építési projekteknél!</div>
 
-<h3 id="gelatinous-cube">Zselé (Gelatinous Cube) Blokk-Feloldás</h3>
-<p>A kis Zselé lények kétféle savas anyaggal tudnak blokkokat feloldani: <strong>Pepzin</strong> és <strong>Sav</strong>. 400 tick ≈ 20 másodperc. Az alap építőanyagok biztonsága fontos bázistervezésnél!</p>
+<h3 id="gelatinous-cube">Slime-ok és blokkfeloldás</h3>
+<p>A kisebb slime-ok kétféle anyaggal tudnak blokkokat feloldani: <strong>Pepzin</strong> és <strong>Sav</strong>. 400 tick ≈ 20 másodperc. Bázisépítésnél fontos, hogy melyik építőanyag mennyire biztonságos ellenük.</p>
 <table class="compare-table">
   <tr><th>Anyag</th><th>Pepzin</th><th>Sav</th><th>Megjegyzés</th></tr>
   <tr style="background:rgba(100,200,100,0.10)"><td><strong>Kő, Kőtömb, Obszidián</strong></td><td>✅ Biztonságos</td><td>✅ Biztonságos</td><td>Legjobb építőanyag</td></tr>
@@ -260,7 +260,7 @@ const qualityXpRows = [
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Pókháló</strong></td><td>❌ Azonnal</td><td>❌ Azonnal</td><td>Leggyorsabban oldódik</td></tr>
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Ágy</strong></td><td>⚠️ 400 tick</td><td>⚠️ 400 tick</td><td>Ne hagyj ágyat szabadon!</td></tr>
 </table>
-<div class="info-box">🏠 <strong>Bázisépítési tanács:</strong> Kő, kőtömb, Obszidián és üveg blokkokból épített bázis teljes mértékben védett a Zselé lények ellen. Meglepő módon az <strong>Arany Blokk</strong> is immunis — viszont a Réz és Ezüst blokkok savra érzékenyek.</div>
+<div class="info-box">🏠 <strong>Bázisépítési tanács:</strong> Kőből, kőtömbből, obszidiánból és üvegből épített bázis teljesen biztonságos a slime-ok ellen. Meglepő módon az <strong>Arany Blokk</strong> is immunis, viszont a Réz és Ezüst blokkok savra érzékenyek.</div>
 
 <h3 id="sleepiness">Álmosság</h3>
 <p>Az álmossági mutató óránként 1 ponttal növekszik. Alvás csökkenti. <strong>Az Alvilágban</strong> feleakkora az ütem. Ha 0–7 között van, <strong>+10% mozgássebesség bónuszt</strong> adsz!</p>
@@ -272,7 +272,7 @@ const qualityXpRows = [
   <tr style="background:rgba(255,80,30,0.14)"><td><strong>100+</strong></td><td>Gyengeség I + Lassítás I + Bányász Fáradtság + 1 Életerő (HP)/óra</td></tr>
 </table>
 <div class="warning-box">😴 <strong>Korai játék figyelmeztetés:</strong> A mutató óránként 1-et emelkedik — ez azt jelenti, hogy <strong>kb. 2,5 játéknaponként</strong> kötelező az alvás. A Gyengeség I debuff nemcsak harcban hátrányos: <strong>az állatokat sem tudod megölni</strong> hatékonyan alatta!</div>
-<div class="warning-box">🌙 <strong>Az ágy NEM ugrik éjszakát!</strong> A MITE:BE-ben sem az ágyban alvás, sem a földre alvás nem ugorja át az éjszakát — csak az álmosságot csökkenti. Az éjszakát át kell vészelni!</div>
+<div class="warning-box">🌙 <strong>Az alvás főleg az álmosságot kezeli.</strong> Ágyban vagy a földön aludni csökkenti az álmosságot, de nem mindig visz át egyből reggelig: előfordulhat, hogy az éjszaka közepén ébredsz fel. Készülj úgy, hogy az éjszaka egy részét így is át kell vészelned.</div>
 <div class="tip-card">🛏️ <strong>Egyszerű Alvó Zsák</strong> (v0.8+): 3× azonos színű gyapjú → Egyszerű Alvó Zsák (16 szín). Bárhová lerakható, jobb klikkel le lehet feküdni. <strong>Nem állít újraindulási pontot.</strong> Fő előnye: elkerülhetők a földre alvás debuffjai.</div>
 
 <h3 id="foggy-weather">Ködös Időjárás (v0.9.0)</h3>
@@ -359,7 +359,7 @@ const qualityXpRows = [
   <tr><td><strong>Zombie rain spawning</strong></td><td>❌ Don't spawn in rain</td><td>✅ Spawn in rain</td></tr>
   <tr><td><strong>Mob spawn Y0-10 in light</strong></td><td>❌ Don't spawn in light</td><td>✅ Spawn even in light</td></tr>
   <tr><td><strong>Blood Moon mutant zombies</strong></td><td>Normal spawn rate</td><td>Double spawn rate</td></tr>
-  <tr><td><strong>Ender Dragon HP</strong></td><td colspan="2">The local <code>mobs.json</code> lists 200 HP; the 100/1000 mode split is not confirmed here</td></tr>
+  <tr><td><strong>Ender Dragon HP</strong></td><td colspan="2">200 HP</td></tr>
   <tr><td><strong>Enderman and water</strong></td><td>Afraid of water (vanilla)</td><td>NOT afraid of water!</td></tr>
   <tr><td><strong>Death</strong></td><td>Respawn possible</td><td>Permadeath — world is deleted</td></tr>
   <tr><td><strong>Post-death debuff</strong></td><td colspan="2">Both modes: <strong>Severe Injury</strong> status effect applied on respawn <abbr class="src-cl" title="Source: mod changelog — not personally verified">📜 changelog</abbr></td></tr>
@@ -434,7 +434,7 @@ const qualityXpRows = [
   <tr><td style="color:var(--adamantium)">Legendary</td><td>+250% durability (Mithril/Adamantium only)</td></tr>
 </table>
 <div class="tip-card">💡 <strong>Normal quality crafting is free (0 XP).</strong> Only higher quality tiers cost XP, and the benefit is primarily increased <strong>durability</strong>. Plan your XP budget wisely!</div>
-<p>The ZIP's <code>item_xp_reqs.txt</code> also gives item-by-item XP costs for quality crafting and repairing. These examples show how different the same quality jump can be depending on the item:</p>
+<p>Quality crafting and repairing can have very different XP costs depending on the item. These examples show how different the same quality jump can be from one item to another:</p>
 <table class="compare-table">
   <tr><th>Item</th><th>Fine</th><th>Excellent</th><th>Superb</th><th>Masterwork</th><th>Legendary</th><th>Notes</th></tr>
   {qualityXpRows.map((row) => (
@@ -449,7 +449,7 @@ const qualityXpRows = [
     </tr>
   ))}
 </table>
-<div class="info-box">📈 <strong>Practical takeaway:</strong> quality costs are not a flat multiplier across all items. Weapons and bows stay manageable, but <strong>Mithril / Adamantium tools and armor</strong> become extreme XP investments. In the ZIP sample, <strong>Legendary</strong> quality only appears on <strong>Mithril / Adamantium</strong>-grade gear.</div>
+<div class="info-box">📈 <strong>Practical takeaway:</strong> quality costs vary a lot by item type. Weapons and bows stay relatively manageable, but <strong>Mithril / Adamantium tools and armor</strong> already demand massive XP investment. <strong>Legendary</strong> quality generally only appears on <strong>Mithril / Adamantium</strong>-grade gear.</div>
 
 <h3 id="stack-sizes-en">Reduced Stack Sizes</h3>
 <p>MITE:BE drastically reduces the stack size of most blocks. This demands careful <strong>inventory and storage planning</strong>!</p>
@@ -472,8 +472,8 @@ const qualityXpRows = [
 </table>
 <div class="warning-box">📦 <strong>Important:</strong> Reduced stack sizes mean you'll need <strong>more chests</strong>, and your inventory fills much faster while gathering materials. Plan ahead — especially for large building projects!</div>
 
-<h3 id="gelatinous-cube-en">Gelatinous Cube Block Dissolution</h3>
-<p>Small Gelatinous Cube (Jelly) creatures can dissolve blocks with two types of substances: <strong>Pepsin</strong> and <strong>Acid</strong>. 400 ticks ≈ 20 seconds. Knowing which materials are safe is critical for base building!</p>
+<h3 id="gelatinous-cube-en">Slimes and Block Dissolution</h3>
+<p>Small slimes can dissolve blocks with two types of substances: <strong>Pepsin</strong> and <strong>Acid</strong>. 400 ticks ≈ 20 seconds. Knowing which materials are safe is critical for base building!</p>
 <table class="compare-table">
   <tr><th>Material</th><th>Pepsin</th><th>Acid</th><th>Notes</th></tr>
   <tr style="background:rgba(100,200,100,0.10)"><td><strong>Stone, Cobblestone, Obsidian</strong></td><td>✅ Safe</td><td>✅ Safe</td><td>Best building materials</td></tr>
@@ -486,7 +486,7 @@ const qualityXpRows = [
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Cobweb</strong></td><td>❌ Instant</td><td>❌ Instant</td><td>Dissolves fastest</td></tr>
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Bed</strong></td><td>⚠️ 400 ticks</td><td>⚠️ 400 ticks</td><td>Don't leave beds exposed!</td></tr>
 </table>
-<div class="info-box">🏠 <strong>Base building tip:</strong> Bases built from stone, cobblestone, Obsidian, and glass blocks are fully protected against Gelatinous Cubes. Surprisingly, <strong>Blocks of Gold</strong> are also immune — but Copper and Silver blocks are acid-vulnerable.</div>
+<div class="info-box">🏠 <strong>Base building tip:</strong> Bases built from stone, cobblestone, Obsidian, and glass blocks are fully protected against slimes. Surprisingly, <strong>Blocks of Gold</strong> are also immune — but Copper and Silver blocks are acid-vulnerable.</div>
 
 <h3 id="sleepiness-en">Drowsiness</h3>
 <p>The Drowsiness meter increases by 1 per in-game hour. Sleep reduces it. <strong>In the Nether</strong>, the accumulation rate is halved. At 0–7, you gain a <strong>+10% movement speed bonus</strong>!</p>
@@ -498,7 +498,7 @@ const qualityXpRows = [
   <tr style="background:rgba(255,80,30,0.14)"><td><strong>100+</strong></td><td>Weakness I + Slowness I + Mining Fatigue + 1 HP/hour</td></tr>
 </table>
 <div class="warning-box">😴 <strong>Early game warning:</strong> The meter rises by 1 per hour — meaning you <strong>must sleep roughly every 2.5 in-game days</strong>. Weakness I isn't just bad for combat: <strong>you can't effectively kill animals either!</strong></div>
-<div class="warning-box">🌙 <strong>Beds do NOT skip the night!</strong> In MITE:BE, neither sleeping in a bed nor sleeping on the ground skips the night — it only reduces Drowsiness. You must survive through the night!</div>
+<div class="warning-box">🌙 <strong>Sleep mainly manages Drowsiness.</strong> Sleeping in a bed or on the ground lowers Drowsiness, but it does not reliably skip straight to morning: sometimes you wake up during the night. Plan as if you may still need to survive part of the night.</div>
 <div class="tip-card">🛏️ <strong>Simple Sleep Bag</strong> (v0.8+): 3× matching-color wool → Simple Sleep Bag (16 colors). Place anywhere, right-click to lie down. <strong>Does not set your respawn point.</strong> Main benefit: avoids the ground-sleep debuffs.</div>
 
 <h3 id="foggy-weather-en">Foggy Weather (v0.9.0)</h3>
@@ -585,7 +585,7 @@ const qualityXpRows = [
   <tr><td><strong>Спавн зомби в дождь</strong></td><td>❌ Не спавнятся</td><td>✅ Спавнятся в дождь</td></tr>
   <tr><td><strong>Спавн мобов Y0-10 при свете</strong></td><td>❌ Не спавнятся при свете</td><td>✅ Спавнятся даже при свете</td></tr>
   <tr><td><strong>Мутантные зомби Кровавой луны</strong></td><td>Обычная скорость спавна</td><td>Двойная скорость спавна</td></tr>
-  <tr><td><strong>Здоровье Дракона Края</strong></td><td colspan="2">Локальный <code>mobs.json</code> показывает 200 HP; разделение 100/1000 по режимам здесь не подтверждено</td></tr>
+  <tr><td><strong>Здоровье Дракона Края</strong></td><td colspan="2">200 HP</td></tr>
   <tr><td><strong>Эндермен и вода</strong></td><td>Боится воды (ваниль)</td><td>НЕ боится воды!</td></tr>
   <tr><td><strong>Смерть</strong></td><td>Возможно возрождение</td><td>Permadeath — мир удаляется</td></tr>
   <tr><td><strong>Дебафф после смерти</strong></td><td colspan="2">В обоих режимах: эффект <strong>Тяжёлое ранение</strong> после возрождения <abbr class="src-cl" title="Источник: changelog мода — лично не проверено">📜 changelog</abbr></td></tr>
@@ -659,7 +659,7 @@ const qualityXpRows = [
   <tr><td style="color:var(--adamantium)">Легендарное</td><td>+250% прочности (только Мифрил/Адамант)</td></tr>
 </table>
 <div class="tip-card">💡 <strong>Крафт обычного качества бесплатен (0 опыта).</strong> Только более высокие уровни требуют опыта, и основной бонус — увеличенная <strong>прочность</strong>. Планируйте расход опыта заранее!</div>
-<p>В ZIP-файле <code>item_xp_reqs.txt</code> есть и предметные значения стоимости качества и ремонта. По ним хорошо видно, насколько разной может быть одна и та же ступень качества у разных вещей:</p>
+<p>Стоимость quality-craft и ремонта может сильно отличаться от предмета к предмету. Эти примеры хорошо показывают, насколько разной бывает одна и та же ступень качества у разных вещей:</p>
 <table class="compare-table">
   <tr><th>Предмет</th><th>Хорошее</th><th>Отличное</th><th>Превосходное</th><th>Шедевр</th><th>Легендарное</th><th>Примечание</th></tr>
   {qualityXpRows.map((row) => (
@@ -674,7 +674,7 @@ const qualityXpRows = [
     </tr>
   ))}
 </table>
-<div class="info-box">📈 <strong>Практический вывод:</strong> система качества не использует один и тот же множитель для всех предметов. Оружие и луки ещё относительно подъёмны, а вот <strong>мифриловые / адамантовые инструменты и броня</strong> требуют уже огромного запаса опыта. По данным ZIP <strong>легендарное</strong> качество обычно встречается только у <strong>мифриловых / адамантовых</strong> предметов.</div>
+<div class="info-box">📈 <strong>Практический вывод:</strong> стоимость качества сильно зависит от типа предмета. Оружие и луки ещё относительно подъёмны, а вот <strong>мифриловые / адамантовые инструменты и броня</strong> уже требуют огромного вложения опыта. <strong>Легендарное</strong> качество обычно встречается только у <strong>мифрилового / адамантового</strong> снаряжения.</div>
 
 <h3 id="stack-sizes-ru">Уменьшенные размеры стеков</h3>
 <p>MITE:BE резко уменьшает размеры стеков большинства блоков. Это требует тщательного <strong>планирования инвентаря и хранения</strong>!</p>
@@ -697,8 +697,8 @@ const qualityXpRows = [
 </table>
 <div class="warning-box">📦 <strong>Важно:</strong> Из-за уменьшенных стеков вам потребуется <strong>больше сундуков</strong>, а инвентарь при сборе ресурсов заполняется намного быстрее. Планируйте заранее — особенно при крупном строительстве!</div>
 
-<h3 id="gelatinous-cube-ru">Растворение блоков Желейным Кубом</h3>
-<p>Маленькие Желейные Кубы могут растворять блоки двумя кислотными веществами: <strong>Пепсин</strong> и <strong>Кислота</strong>. 400 тиков ≈ 20 секунд. Безопасность строительных материалов важна при проектировании базы!</p>
+<h3 id="gelatinous-cube-ru">Слизни и растворение блоков</h3>
+<p>Маленькие слизни могут растворять блоки двумя веществами: <strong>Пепсин</strong> и <strong>Кислота</strong>. 400 тиков ≈ 20 секунд. При строительстве базы важно понимать, какие материалы действительно безопасны.</p>
 <table class="compare-table">
   <tr><th>Материал</th><th>Пепсин</th><th>Кислота</th><th>Примечание</th></tr>
   <tr style="background:rgba(100,200,100,0.10)"><td><strong>Камень, Булыжник, Обсидиан</strong></td><td>✅ Безопасно</td><td>✅ Безопасно</td><td>Лучший стройматериал</td></tr>
@@ -711,7 +711,7 @@ const qualityXpRows = [
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Паутина</strong></td><td>❌ Мгновенно</td><td>❌ Мгновенно</td><td>Растворяется быстрее всего</td></tr>
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Кровать</strong></td><td>⚠️ 400 тиков</td><td>⚠️ 400 тиков</td><td>Не оставляйте кровать на виду!</td></tr>
 </table>
-<div class="info-box">🏠 <strong>Совет по строительству базы:</strong> База из камня, булыжника, обсидиана и стекла полностью защищена от Желейных Кубов. Неожиданно, но <strong>золотой блок</strong> тоже иммунен — зато блоки меди и серебра уязвимы к кислоте.</div>
+<div class="info-box">🏠 <strong>Совет по строительству базы:</strong> База из камня, булыжника, обсидиана и стекла полностью защищена от слизней. Неожиданно, но <strong>золотой блок</strong> тоже иммунен — зато блоки меди и серебра уязвимы к кислоте.</div>
 
 <h3 id="sleepiness-ru">Сонливость</h3>
 <p>Показатель сонливости растёт на 1 в час. Сон снижает его. <strong>В Незере</strong> скорость роста вдвое меньше. При показателе 0–7 получаешь <strong>бонус +10% к скорости движения!</strong></p>
@@ -723,7 +723,7 @@ const qualityXpRows = [
   <tr style="background:rgba(255,80,30,0.14)"><td><strong>100+</strong></td><td>Слабость I + Замедление I + Усталость шахтёра + 1 HP/ч</td></tr>
 </table>
 <div class="warning-box">😴 <strong>Предупреждение для начала игры:</strong> Показатель растёт на 1 в час — это означает, что спать необходимо примерно <strong>каждые 2,5 игровых дня</strong>. Дебафф Слабость I мешает не только в бою: <strong>убивать животных</strong> тоже станет затруднительно!</div>
-<div class="warning-box">🌙 <strong>Кровать НЕ пропускает ночь!</strong> В MITE:BE сон в кровати не перематывает время — он только снижает сонливость. Ночь нужно пережить!</div>
+<div class="warning-box">🌙 <strong>Сон в первую очередь снижает сонливость.</strong> Сон в кровати или на земле уменьшает сонливость, но не всегда сразу переносит тебя к утру: иногда персонаж просыпается посреди ночи. Планируй так, будто часть ночи всё равно придётся переждать.</div>
 <div class="tip-card">🛏️ <strong>Простой Спальный Мешок</strong> (v0.8+): 3× шерсть одного цвета → Простой Спальный Мешок (16 цветов). Можно положить где угодно, лечь правым кликом. <strong>Не устанавливает точку возрождения.</strong> Главное преимущество: избежать дебаффов от сна на земле.</div>
 
 <h3 id="foggy-weather-ru">Туманная погода (v0.9.0)</h3>

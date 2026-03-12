@@ -28,17 +28,17 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
   hu: [
     'Réz és ezüst: szitából vagy bányászatból — az első igazi fémek',
     'Ötvözetek (bronz, ezüst-réz, HCS) ötvöző kemencében készülnek',
-    'Vas olvasztáshoz 26 blokkos Nagy Kemence (Blast Furnace) szükséges',
+    'Vas olvasztáshoz 3×3 alapterületű, 3 blokk magas Nagy Kemence kell',
   ],
   en: [
     'Copper & silver from sieve or mining — your first real metals',
     'Alloys (bronze, silver-copper, HCS) are made in the Alloying Furnace',
-    'Iron smelting needs a 26-block Blast Furnace with Furnace Core',
+    'Iron smelting needs a Blast Furnace with a 3×3 footprint and 3-block height',
   ],
   ru: [
     'Медь и серебро из сита или шахты — первые настоящие металлы',
     'Сплавы (бронза, серебро-медь, HCS) — в плавильной печи',
-    'Железо плавится в 26-блочной Доменной печи с Ядром',
+    'Для железа нужна доменная печь 3×3 по основанию и 3 блока в высоту',
   ],
 }} />
 
@@ -88,7 +88,7 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 <p>A magasabb olvadáspontú fémekhez (vas, mithril, adamantium) Nagy Kemence (Blast Furnace) kell.</p>
 
 <h3>Építés</h3>
-<div class="recipe">Kemence Mag készítése → 3×3×3-as üreges kocka szerkezet (26 blokk) → Kemence Mag elhelyezése bármelyik oldalra (felső/alsó kivételével)</div>
+<div class="recipe">1. Készíts egy Kemence Magot → 2. Építs külön egy 3×3 alapterületű, 3 blokk magas üreges kemencét → 3. Az egyik oldalsó középső blokk helyére tedd be a Kemence Magot</div>
 <div class="craft-section">
   <CraftingGrid recipeOutput="furnace_core_stone" label={{hu: "Kő Kemence Mag", en: "Stone Furnace Core"}}/>
   <CraftingGrid recipeOutput="furnace_core_obsidian" label={{hu: "Obszidiánkemencemag", en: "Obsidian Furnace Core"}}/>
@@ -274,7 +274,7 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 <p>Higher-melting-point metals (iron, mithril, adamantium) require a Blast Furnace (3x3 multiblock).</p>
 
 <h3>Construction</h3>
-<div class="recipe">Craft a Furnace Core → Build a 3×3×3 hollow cube (26 blocks) → Place the core on any side (except top/bottom)</div>
+<div class="recipe">1. Craft a Furnace Core → 2. Separately build a hollow furnace with a 3×3 footprint and 3-block height → 3. Put the core into the middle block of any side wall</div>
 <div class="craft-section">
   <CraftingGrid recipeOutput="furnace_core_stone" label={{hu: "Kő Kemence Mag", en: "Stone Furnace Core"}}/>
   <CraftingGrid recipeOutput="furnace_core_obsidian" label={{hu: "Obsidian Kemence Mag", en: "Obsidian Furnace Core"}}/>
@@ -405,7 +405,7 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 <p>Для металлов с высокой температурой плавки (железо, мифрил, адамант) нужна Доменная печь (многоблочная 3x3).</p>
 
 <h3>Конструкция</h3>
-<div class="recipe">Скрафти Ядро печи → Построй полый куб 3×3×3 (26 блоков) → Помести ядро на любую боковую стену (не сверху/снизу)</div>
+<div class="recipe">1. Скрафти Ядро печи → 2. Отдельно построй полую печь 3×3 по основанию и 3 блока в высоту → 3. Поставь ядро в центральный блок любой боковой стены</div>
 <div class="craft-section">
   <CraftingGrid recipeOutput="furnace_core_stone" label={{hu: "Kő Kemence Mag", en: "Stone Furnace Core"}}/>
   <CraftingGrid recipeOutput="furnace_core_obsidian" label={{hu: "Obszidiánkemencemag", en: "Obsidian Furnace Core"}}/>
