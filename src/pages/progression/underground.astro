@@ -156,7 +156,7 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 </ul>
 
 <h3>Stratégiai Tippek</h3>
-<div class="tip-card">💡 <strong>Felkészülés az Underground-ra:</strong>
+<div class="tip-card">💡 <strong>Felkészülés a Földalatti világra:</strong>
 <ul style="margin:4px 0 0 0">
   <li>Minimum <strong>teljes Vas páncél és fegyver</strong> — Keménykő/Ősi Fém ajánlott a mélyebb szintekhez</li>
   <li>Vigyél legalább <strong>64 fáklyát</strong> és <strong>Tűzgyújtót</strong></li>
@@ -165,8 +165,8 @@ const sidebarGroups = getSidebarGroups('progression/underground');
   <li><strong><span class="wiki-item" data-id="ancient_metal_sword">Ősi Fém kard</span></strong> elengedhetetlen a Fázis Pókok ellen — más fegyver nem hat rájuk!</li>
   <li>Vigyél bájitalokat (Regeneráció, Éjszakai Látás) ha elérhetőek</li>
 </ul></div>
-<div class="tip-card">⚔️ <strong>Legjobb fegyver az Underground-ra:</strong> A <strong>Szénacél háborús kalapács + Élőholt Ölő V</strong> bűvölet egy csapással megöli a csontvázakat és más élőholtakat. Olcsó anyagból készül, tartós, és a Föld Elementálisokat (Kő Golemeket) is eléri.</div>
-<div class="tip-card">💎 <strong>Mithril szerzés:</strong> A biztosabban alátámasztott források közé tartozik a <strong>Pillager tábor föld alatti mechanizmusa</strong> és maga a mithrilérc. Spawner-szobás mithril lootra vannak közösségi beszámolók, de ezt itt nem kezelem biztos tényként.</div>
+<div class="tip-card">⚔️ <strong>Ajánlott fegyver a Földalatti világba:</strong> A <strong>Szénacél háborús kalapács + Élőholt Ölő V</strong> nagyon erős választás: a csontvázakat és más élőholtakat gyakran egy csapással elintézi, közben olcsóbb és tartósabb, mint a későbbi csúcsfegyverek. A Föld Elementálisok (Kő Golemek) ellen is jól használható.</div>
+<div class="tip-card">💎 <strong>Mithril szerzés:</strong> A biztos forrás maga a <strong>mithrilérc</strong>. Más lootforrásokról vannak közösségi beszámolók, de ezeket itt nem kezelem biztos tényként.</div>
 
 <h3>Pillager Tábor — Rejtett Kincs</h3>
 <div class="warning-box">⚔️ <strong>v0.9.0 Pillager tábor nehézség figyelmeztetés!</strong> A v0.9.0-ban a tábor belseje <strong>drasztikusan megnehezedett</strong>:
@@ -178,7 +178,7 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 </ul>
 <strong>Ne menj be felkészületlenül</strong> — Arany alma (az azonnali gyógyuláshoz és extra telítettséghez) és minimum Keménykő/Ősi Fém felszerelés szükséges!</div>
 <div class="tip-card">🏰 <strong>Pillager-erőd romportál (fővilágból):</strong> A fővilágban ásd le magad az alapkőrétegig, majd építs ott <strong>Obszidián portált</strong> és gyújtsd meg Tűzgyújtóval. A v0.9.0 kínai leírás szerint ez a portál egy <strong>elhagyott Pillager-erőd romjaihoz</strong> vezet, nem egy őrtorony tetejére.</div>
-<div class="tip-card">⚙️ <strong>Pillager tábor föld alatti mechanizmus:</strong> Az underground Pillager táborban <strong>üllőket kell lerakni a tábor körül, majd a közepén egy kart aktiválni</strong> → ez megnyit egy földalatti kamrát, amely <strong>Adamantium-, Mithril- és Vöröskőblokkokat</strong> tartalmaz. Ez az egyik legfőbb mithrilforrás a játékban.</div>
+<div class="tip-card">⚙️ <strong>Pillager tábor extra loot:</strong> Vannak közösségi beszámolók egy rejtett föld alatti kamráról a pillager tábor környékén, de a pontos aktiválási lépéseket itt nem kezelem biztos tényként.</div>
 
 <h3>Földalatti világ → Alvilág átjárat</h3>
 <p>A Földalatti világ legmélyebb szintjén, az <strong>alapkőrétegben</strong> megtalálható a <strong>Köpeny</strong> — ez vezet az Alvilág dimenziója felé. Építs portált a magma-rétegen az Alvilág eléréséhez.</p>
@@ -198,9 +198,9 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 <p><em>Megjegyzés: A foglalkozás rendszer jelenleg nincs bevezetve — nincs korlátozás a készítéshez.</em></p>
 
 <div class="craft-section">
-  <CraftingGrid recipeOutput="hard_stone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword"}}/>
-  <CraftingGrid recipeOutput="hard_stone_pickaxe" label={{hu: "Keménykő Csákány", en: "Hardstone Pickaxe"}}/>
-  <CraftingGrid recipeOutput="hard_stone_war_hammer" label={{hu: "Keménykő Háborús Kalapács", en: "Hardstone War Hammer"}}/>
+  <CraftingGrid recipeOutput="hardstone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword"}}/>
+  <CraftingGrid recipeOutput="hardstone_pickaxe" label={{hu: "Keménykő Csákány", en: "Hardstone Pickaxe"}}/>
+  <CraftingGrid recipeOutput="hardstone_war_hammer" label={{hu: "Keménykő Háborús Kalapács", en: "Hardstone War Hammer"}}/>
 </div>
 
 <!-- ===== ŐSI FÉM ===== -->
@@ -276,7 +276,7 @@ const sidebarGroups = getSidebarGroups('progression/underground');
   <tr><th>Mob</th><th>XP</th><th>Location</th></tr>
   <tr><td>Variant Skeleton Lord</td><td style="color:#a0f"><strong>1000</strong></td><td>Deep Caves/Underground — Boss</td></tr>
   <tr><td>Obsidian Golem</td><td style="color:#f44"><strong>150</strong></td><td>Underground</td></tr>
-  <tr><td>Ender Dragon</td><td style="color:#f44"><strong>200</strong></td><td>The End</td></tr>
+  <tr><td>Ender Dragon</td><td style="color:#f44"><strong>200 base HP</strong></td><td>The End</td></tr>
   <tr><td>Zombie Caller</td><td style="color:#ff0"><strong>80</strong></td><td>Graveyards/Underground</td></tr>
   <tr><td>Wither</td><td style="color:#ff0"><strong>50</strong></td><td>Nether Boss</td></tr>
   <tr><td>Cave Spider</td><td style="color:#5f5"><strong>10</strong></td><td>Cave systems</td></tr>
@@ -336,8 +336,8 @@ const sidebarGroups = getSidebarGroups('progression/underground');
   <li><strong>Ancient Metal sword</strong> is essential for Phase Spiders — no other weapon works!</li>
   <li>Bring potions (Regeneration, Night Vision) if available</li>
 </ul></div>
-<div class="tip-card">⚔️ <strong>Best Underground weapon:</strong> <strong>High-Carbon Steel War Hammer + Undead Slayer V</strong> one-shots skeletons and undead. Cheap, durable, also hits Earth Elementals (Stone Golems).</div>
-<div class="tip-card">💎 <strong>Mithril sources:</strong> The more solidly supported sources here are <strong>mithril ore itself</strong> and the <strong>underground Pillager camp mechanism</strong>. There are community reports about mithril in spawner-room loot, but I am not treating that as confirmed fact here.</div>
+<div class="tip-card">⚔️ <strong>Recommended weapon for the Underground:</strong> <strong>High-Carbon Steel War Hammer + Undead Slayer V</strong> is a very strong option. It often one-shots skeletons and other undead, stays cheaper and more durable than later endgame weapons, and also works well against Earth Elementals.</div>
+<div class="tip-card">💎 <strong>Mithril sources:</strong> The only fully safe source to state here is <strong>mithril ore itself</strong>. There are community reports about mithril from other loot sources, but I am not treating those as confirmed fact here.</div>
 
 <h3>Pillager Camp — Hidden Treasure</h3>
 <div class="warning-box">⚔️ <strong>v0.9.0 Pillager camp difficulty warning!</strong> The camp interior is <strong>drastically harder</strong> in v0.9.0:
@@ -348,7 +348,7 @@ const sidebarGroups = getSidebarGroups('progression/underground');
   <li>Rewards reduced: <strong>Carbon Crystal removed</strong> from loot, replaced with less valuable minerals</li>
 </ul>
 <strong>Do not enter unprepared</strong> — Golden Apple (for instant healing and extra saturation) and at least Hardstone/Ancient Metal gear is required!</div>
-<div class="tip-card">⚙️ <strong>Pillager camp underground mechanism:</strong> In the underground Pillager camp, <strong>place anvils around the camp + activate a lever in the center</strong> → this opens an underground chamber containing <strong>Adamantium, Mithril, and Redstone blocks</strong>. This is one of the main mithril sources in the game!</div>
+<div class="tip-card">⚙️ <strong>Pillager camp extra loot:</strong> There are community reports about a hidden underground chamber near the Pillager camp, but I am not treating the exact trigger steps as confirmed fact here.</div>
 
 <h3>Underground → Nether Gateway</h3>
 <p>In the deepest level of the Underground, at the <strong>bedrock layer</strong>, you'll find the <strong>Mantle</strong> — the gateway to the Nether. Build a portal on the magma layer to reach it.</p>
@@ -367,9 +367,9 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 </ul>
 
 <div class="craft-section">
-  <CraftingGrid recipeOutput="hard_stone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword"}}/>
-  <CraftingGrid recipeOutput="hard_stone_pickaxe" label={{hu: "Keménykő Csákány", en: "Hardstone Pickaxe"}}/>
-  <CraftingGrid recipeOutput="hard_stone_war_hammer" label={{hu: "Keménykő Háborús Kalapács", en: "Hardstone War Hammer"}}/>
+  <CraftingGrid recipeOutput="hardstone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword"}}/>
+  <CraftingGrid recipeOutput="hardstone_pickaxe" label={{hu: "Keménykő Csákány", en: "Hardstone Pickaxe"}}/>
+  <CraftingGrid recipeOutput="hardstone_war_hammer" label={{hu: "Keménykő Háborús Kalapács", en: "Hardstone War Hammer"}}/>
 </div>
 
 <!-- ===== ANCIENT METAL ===== -->
@@ -477,8 +477,8 @@ const sidebarGroups = getSidebarGroups('progression/underground');
   <li><strong>Меч Древнего металла</strong> обязателен для Фазовых Пауков — другое оружие не работает!</li>
   <li>Возьми зелья (Регенерация, Ночное Зрение) если они доступны</li>
 </ul></div>
-<div class="tip-card">⚔️ <strong>Лучшее оружие для Подземного мира:</strong> <strong>Молот войны из Высокоуглеродистой стали + Убийца Нежити V</strong> — одним ударом уничтожает скелетов и нежить. Дёшево, прочно, и поражает Земляных Элементалей.</div>
-<div class="tip-card">💎 <strong>Источники мифрила:</strong> Надёжнее всего здесь подтверждены <strong>сама мифриловая руда</strong> и <strong>подземный механизм лагеря грабителей</strong>. О мифриле в луте комнат со спавнерами есть сообщения сообщества, но здесь я не считаю это подтверждённым фактом.</div>
+<div class="tip-card">⚔️ <strong>Рекомендуемое оружие для Подземного мира:</strong> <strong>Молот войны из высокоуглеродистой стали + Убийца Нежити V</strong> — очень сильный вариант. Он часто убивает скелетов и другую нежить одним ударом, при этом дешевле и долговечнее поздних топовых пушек, а против Земляных Элементалей тоже работает хорошо.</div>
+<div class="tip-card">💎 <strong>Источники мифрила:</strong> Полностью безопасно утверждать здесь можно только одно: надёжный источник — это <strong>сама мифриловая руда</strong>. О мифриле из других лут-источников есть сообщения сообщества, но здесь я не считаю их подтверждённым фактом.</div>
 
 <h3>Лагерь Грабителей — Скрытое сокровище</h3>
 <div class="warning-box">⚔️ <strong>Предупреждение о сложности аванпоста в v0.9.0!</strong> Внутри аванпоста стало <strong>значительно сложнее</strong>:
@@ -489,7 +489,7 @@ const sidebarGroups = getSidebarGroups('progression/underground');
   <li>Награды уменьшены: <strong>Угольный кристалл убран</strong> из добычи</li>
 </ul>
 <strong>Не заходи неподготовленным</strong> — зачарованное золотое яблоко и минимум Твердокаменная/Древний металл экипировка!</div>
-<div class="tip-card">⚙️ <strong>Подземный механизм Лагеря Грабителей:</strong> В подземном лагере <strong>разложи наковальни вокруг + активируй рычаг в центре</strong> → откроется подземная камера с <strong>Адамантовыми, Мифриловыми и Красностонными блоками</strong>. Один из главных источников мифрила в игре!</div>
+<div class="tip-card">⚙️ <strong>Дополнительный лут лагеря грабителей:</strong> Есть сообщения сообщества о скрытой подземной камере рядом с лагерем грабителей, но точные шаги активации я здесь не считаю подтверждённым фактом.</div>
 
 <h3>Подземный мир → Незер</h3>
 <p>На самом глубоком уровне Подземного мира, в <strong>слое бедрока</strong>, найдёшь <strong>Мантию</strong> — переход в Незер. Построй портал на магмовом слое для доступа туда.</p>
@@ -507,9 +507,9 @@ const sidebarGroups = getSidebarGroups('progression/underground');
   <li><strong>Твердокаменная кирка</strong> бьёт земляных элементалей и может <strong>добывать лёд без Шёлкового касания</strong>.</li>
 </ul>
 <div class="craft-section">
-  <CraftingGrid recipeOutput="hard_stone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword", ru: "Твердокаменный меч"}}/>
-  <CraftingGrid recipeOutput="hard_stone_pickaxe" label={{hu: "Keménykő Csákány", en: "Hardstone Pickaxe", ru: "Твердокаменная кирка"}}/>
-  <CraftingGrid recipeOutput="hard_stone_war_hammer" label={{hu: "Keménykő Háborús Kalapács", en: "Hardstone War Hammer", ru: "Твердокаменный боевой молот"}}/>
+  <CraftingGrid recipeOutput="hardstone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword", ru: "Твердокаменный меч"}}/>
+  <CraftingGrid recipeOutput="hardstone_pickaxe" label={{hu: "Keménykő Csákány", en: "Hardstone Pickaxe", ru: "Твердокаменная кирка"}}/>
+  <CraftingGrid recipeOutput="hardstone_war_hammer" label={{hu: "Keménykő Háborús Kalapács", en: "Hardstone War Hammer", ru: "Твердокаменный боевой молот"}}/>
 </div>
 
 <h2 id="ancient-metal">Древний металл</h2>

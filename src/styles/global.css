@@ -267,6 +267,75 @@ html[data-lang-init="ru"] .mc-tooltip [data-lang="ru"] { display: block; }
 .tip-card:hover { transform: translateY(-2px); }
 .tip-card strong { color: var(--gold); }
 
+/* ===== Section jump nav ===== */
+.section-jump-nav { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 18px 0 24px; }
+.section-jump-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(240,192,64,.18);
+  background: linear-gradient(145deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
+  box-shadow: var(--shadow);
+  color: var(--text) !important;
+  text-decoration: none;
+  transition: transform .15s, border-color .15s, box-shadow .15s;
+}
+.section-jump-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(240,192,64,.42);
+  box-shadow: 0 10px 26px rgba(0,0,0,.28);
+}
+.section-jump-card strong { color: var(--gold); font-size: .98em; }
+.section-jump-card span:last-child { color: var(--text2); font-size: .85em; line-height: 1.45; }
+.section-jump-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(240,192,64,.14);
+  border: 1px solid rgba(240,192,64,.28);
+  color: var(--gold);
+  font-size: .8em;
+  font-weight: 700;
+}
+
+/* ===== Guide details ===== */
+.guide-details {
+  margin: 14px 0 18px;
+  background: rgba(255,255,255,.025);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.guide-details summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 12px 16px;
+  font-weight: 600;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.guide-details summary::-webkit-details-marker { display: none; }
+.guide-details summary::after {
+  content: '+';
+  color: var(--gold);
+  font-size: 1.2em;
+  line-height: 1;
+  opacity: .8;
+}
+.guide-details[open] summary::after { content: '−'; }
+.guide-details > :not(summary) { padding: 0 16px 14px; }
+.guide-details p,
+.guide-details ul,
+.guide-details ol { margin-top: 0; margin-bottom: 0; }
+
 /* ===== Achievements ===== */
 .ach { padding: 8px 12px; margin: 5px 0; background: var(--surface); border-radius: 8px; border-left: 3px solid var(--gold); box-shadow: var(--shadow); }
 .ach-name { color: var(--gold); font-weight: 700; font-size: .95em; }
@@ -396,6 +465,7 @@ h2:hover .anchor-link, h3:hover .anchor-link { opacity: 1; }
   .prog-tree .prog-arrow { display: none; }
   .prog-tree .prog-node { font-size: .78em; padding: 5px 8px; counter-increment: prog-step; position: relative; }
   .prog-tree .prog-node::before { content: counter(prog-step); position: absolute; top: 3px; right: 5px; font-size: .65em; opacity: .35; font-weight: 700; line-height: 1; }
+  .section-jump-nav { grid-template-columns: 1fr 1fr; gap: 10px; }
   h2 { margin: 36px 0 12px; }
 
   /* Tables overflow */
@@ -596,9 +666,11 @@ h2:hover .anchor-link, h3:hover .anchor-link { opacity: 1; }
 .page-summary ul { margin: 0; padding-left: 20px; }
 .page-summary li { font-size: .92em; color: var(--text); margin: 4px 0; line-height: 1.6; }
 .page-summary-ru-notice {
-  font-size: .82em; color: #c8a84b; background: rgba(200,168,75,.08);
-  border: 1px solid rgba(200,168,75,.25); border-radius: 5px;
-  padding: 6px 12px; margin-bottom: 10px;
+  font-size: .74em;
+  color: var(--text2);
+  font-style: italic;
+  opacity: .8;
+  margin: 0 0 8px;
 }
 .ru-notice {
   background: rgba(255, 200, 0, 0.08);
