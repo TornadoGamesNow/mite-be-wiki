@@ -1,135 +1,102 @@
-# MITE: Break Everything — Wiki
+# MITE: Break Everything Wiki
 
-The first public trilingual wiki for **MITE: Break Everything** — a hardcore total-conversion Minecraft 1.6.4 mod.
+Source repository for the public trilingual wiki of **MITE: Break Everything**.
 
-🌐 **Live site:** [tornadogamesnow.github.io/mite-be-wiki](https://tornadogamesnow.github.io/mite-be-wiki)
+Live site:
+[tornadogamesnow.github.io/mite-be-wiki](https://tornadogamesnow.github.io/mite-be-wiki)
 
-> ⚠️ This wiki is a work in progress — some data may be inaccurate or incomplete. Found an error? [Open an Issue!](https://github.com/TornadoGamesNow/mite-be-wiki/issues)
+The project is built with Astro and React and publishes a static site to GitHub Pages. The wiki covers progression, mechanics, recipes, mobs, reference tables, and installation help for the current public mod versions.
 
----
+## Languages
 
-## Download & Install
+- Hungarian
+- English
+- Russian
 
-| | Link | Size |
-|---|---|---|
-| 🇭🇺 **Hungarian version** | [MiTE-BE_v0.9.0_hungarian.zip](https://archive.org/download/mite-be-v0.9.0-hungarian/MiTE-BE_v0.9.0_hungarian.zip) | ~266 MB |
-| 🇬🇧 **English version** | [MiTE-BE_v0.9.0_english.zip](https://archive.org/download/mite-be-v0.9.0-english/MiTE-BE_v0.9.0_english.zip) | ~266 MB |
-| 🇷🇺 **Russian version** | [MiTE-BE_v0.9.0_russian.zip](https://archive.org/download/mi-te-be-v-0.9.0-russian/MiTE-BE_v0.9.0_russian.zip) | ~266 MB |
+## Main pages
 
-**Requirements:** Java 8 + [PrismLauncher](https://prismlauncher.org)
-**Installation guide:** [tornadogamesnow.github.io/mite-be-wiki/install](https://tornadogamesnow.github.io/mite-be-wiki/install)
+- `/` — main wiki and progression hub
+- `/recipes` — recipe browser
+- `/mobs` — mob encyclopedia
+- `/brewing` — potions, cauldrons, and related systems
+- `/reference` — materials, tables, and quick-reference data
+- `/faq` — common questions and troubleshooting
+- `/install` — setup and install guide
+- `/changelog` — wiki-side patch notes
 
----
+## Local development
 
-## What's in the wiki?
+Requirements:
 
-| Page | Content |
-|------|---------|
-| [/](https://tornadogamesnow.github.io/mite-be-wiki/) | Main wiki — progression, mechanics, crafting grids, mob stats |
-| [/recipes](https://tornadogamesnow.github.io/mite-be-wiki/recipes) | Full recipe browser — search, filter, tier comparison |
-| [/mobs](https://tornadogamesnow.github.io/mite-be-wiki/mobs) | Mob encyclopedia — stats, drops, spawn zones |
-| [/brewing](https://tornadogamesnow.github.io/mite-be-wiki/brewing) | Brewing & potions |
-| [/reference](https://tornadogamesnow.github.io/mite-be-wiki/reference) | Reference tables — materials, sieve drop rates, furnace heat levels |
-| [/install](https://tornadogamesnow.github.io/mite-be-wiki/install) | Installation guide |
-| [/changelog](https://tornadogamesnow.github.io/mite-be-wiki/changelog) | Patch notes |
-| [/faq](https://tornadogamesnow.github.io/mite-be-wiki/faq) | FAQ |
+- Node.js
+- npm
 
-### Main page topics
-
-- 🇭🇺 / 🇬🇧 / 🇷🇺 Trilingual — Magyar, English & Русский
-- Full progression guide: Flint Age → Copper/Silver → Iron/Steel → Hardstone → Ancient Metal → Mithril → Adamantium
-- Biome guide, 5 portal types, ore distribution
-- Visual crafting grids with tooltips and tier badges
-- Weapon, armor, and enchanting reference tables
-- Ore processing: sieving, smelting, alloys, workbench tiers, multiblock furnaces
-- 13 professions, XP requirements, item quality tiers
-- Mob stats, squad system, bow & arrow system
-- Food values, thirst, drowsiness, moon cycle, defecation mechanic
-- World Marker, Partner NPCs, Portage, debug keys
-- Underground dimension, Nether, Wither boss, End dimension, Ender Dragon
-
----
-
-## Tech stack
-
-**Astro + React + Tailwind** — static site generator, deployed to GitHub Pages.
-
-```
-src/pages/        — Astro pages (SSG)
-  index.astro       — Main wiki (HU+EN+RU trilingual, ~4400+ lines)
-  recipes.astro     — Recipe browser page
-  mobs.astro        — Mob encyclopedia page
-  brewing.astro     — Brewing page
-  reference.astro   — Reference tables
-  install.astro     — Installation guide
-  changelog.astro   — Patch notes
-  faq.astro         — FAQ
-
-src/components/   — Astro components (server-side rendered)
-  CraftingGrid.astro    — Crafting recipe display (recipeId or recipe prop)
-  FurnaceGrid.astro     — Furnace recipe display
-  McTooltip.astro       — Minecraft-style tooltip
-  TierBadge.astro       — Material tier badge
-  InfoBox.astro         — Info/warning box
-  CompareTable.astro    — Comparison table
-  Header.astro          — Hero header (lang switch + dev notice)
-  TopNav.astro          — Top navigation
-  Sidebar.astro         — Sidebar (table of contents)
-
-src/islands/      — React "islands" (client-side interactive)
-  MobExplorer.tsx       — Mob search/filter (on main page & mobs page)
-  RecipeBrowser.tsx     — Recipe browser (recipes.json, tier-merge, cycling slots)
-  RecipesHub.tsx        — Full recipe browser (recipes_full.json)
-  SearchBox.tsx         — In-page search
-  LanguageSwitcher.tsx  — Language switcher
-  VersionToggle.tsx     — Version toggle
-
-data/             — JSON data files (SSOT — authoritative source of truth)
-  items.json            — Item catalog (~1126 items): id → {name:{hu,en,ru}, img, tier, category}
-  mobs.json             — Mob stats: hp, dmg, xp, drops, spawnZones, tags
-  recipes.json          — Shaped crafting recipes (CraftingGrid + RecipeBrowser)
-  recipes_full.json     — Full recipe database (~1487 recipes, used by RecipesHub)
-  materials.json        — Material properties: enchantability, maxQuality, durabilityMult, sieve
-  mechanics.json        — Game mechanics: furnace heat levels, armor protection, weapon damage
-
-public/
-  img/                  — 32×32 PNG textures (armor/, blocks/, items/, mobs/, ingots/, etc.)
-  data/
-    mobs.js             — Mob table for reference.astro (manually maintained)
-    materials.js        — Material tables for reference.astro (manually maintained)
-    sieve.js            — Sieve drop rates for reference.astro (manually maintained)
-
-scripts/          — Internal generator scripts (not run at build time, mostly gitignored)
-```
-
-### Local development
+Install and run:
 
 ```bash
 npm install
-npm run dev      # dev server → localhost:4321
-npm run build    # static build → dist/
-npm run preview  # preview the build
+npm run dev
 ```
 
-There is no automated test command. A clean `npm run build` means everything is OK.
+Useful commands:
 
----
+```bash
+npm run build
+npm run preview
+```
 
-## Community
+There is no dedicated automated test suite in this repo. A clean `npm run build` is the main verification step.
 
-- **Discord:** [discord.gg/7myyGAXJ6v](https://discord.gg/7myyGAXJ6v)
-- **Reddit:** [r/MITE](https://reddit.com/r/MITE)
+## Project structure
 
----
+```text
+src/
+  components/   Astro components
+  islands/      React islands for interactive UI
+  layouts/      shared page layouts
+  pages/        Astro routes
+  data/         page-local structured content
+  i18n/         language helpers
+  styles/       global styling
+
+data/
+  JSON source data used by recipe, mob, material, and mechanics views
+
+public/
+  img/          static textures and icons
+  data/         generated or manually maintained browser-facing data files
+
+scripts/
+  local helper scripts and extracted item-doc inputs used during research
+```
+
+## Content sources
+
+The wiki is maintained from a mix of:
+
+- hand-written gameplay guides
+- structured repo data in `data/`
+- local extracted mod documentation under `scripts/`
+- in-repo fact-checking against current mod assets and reference files
+
+Because the game changes and some upstream docs are inconsistent, issues and corrections are still valuable.
 
 ## Contributing
 
-Found an error or missing info? [Open an Issue](https://github.com/TornadoGamesNow/mite-be-wiki/issues) or read [CONTRIBUTING.md](CONTRIBUTING.md).
+If you find an error, open an issue or submit a PR:
 
----
+- [Issues](https://github.com/TornadoGamesNow/mite-be-wiki/issues)
+- [Contributing guide](CONTRIBUTING.md)
+
+When changing gameplay facts, prefer updating the relevant page text and the supporting data source together.
+
+## Community
+
+- Discord: [discord.gg/7myyGAXJ6v](https://discord.gg/7myyGAXJ6v)
+- Reddit: [r/MITE](https://reddit.com/r/MITE)
 
 ## License
 
 Wiki content © 2026 TornadoGamesNow — licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
-> **Disclaimer:** This is an unofficial, community-driven wiki. MITE:BE and all related game assets, textures, and trademarks belong to their respective original creators.
+This is an unofficial, community-driven wiki. MITE:BE and related game assets, textures, and trademarks belong to their respective original creators.
