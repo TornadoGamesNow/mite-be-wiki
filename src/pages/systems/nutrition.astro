@@ -43,6 +43,7 @@ const sidebarGroups = getSidebarGroups('systems/nutrition');
 <p>A MITE:BE-ben az étrend sokszínűsége kritikus! Egyoldalú táplálkozás Alultápláltságot okoz. Nyomj <strong>P</strong>-t a táplálkozási mutató megnyitásához!</p>
 
 <div class="info-box">🤕 <strong>Fejfájás tünet?</strong> Ha a karaktered rendszeresen szenved fejfájástól (folyamatos sebzés), az szinte biztosan <strong>kiegyensúlyozatlan étrend</strong> jele. Egyél salátát: <strong>Tál + 3× Pitypang</strong> (vagy más zöldség). Nyomj P-t az étrend részleteiért!</div>
+<div class="tip-card">🌿 <strong>Menta v0.9.0-tól:</strong> a helyi item-info szerint a <span class="wiki-item" data-id="mint">menta</span> a <strong>síkság / plains</strong> biomban nő, töréskor <strong>1-3 <span class="wiki-item" data-id="mint_leaf">mentalevelet</span></strong> ad, és ezekből a Flint Workbench-en készíthető <span class="wiki-item" data-id="mint_salad">mentasaláta</span> egy új korai növényi ételút.</div>
 
 <h3>Korai ételek</h3>
 <table>
@@ -52,8 +53,10 @@ const sidebarGroups = getSidebarGroups('systems/nutrition');
   <tr><td>Tojás</td><td>Csirkék</td><td>Ehető nyersen</td></tr>
   <tr><td>Sült hús</td><td>Tábortűz/kemence</td><td>Fehérje — fontos!</td></tr>
   <tr><td>Kenyér</td><td>Liszt + Víz + Sütés</td><td>Alapvető szénhidrát</td></tr>
-  <tr><td><span class="wiki-item" data-id="salad">Saláta</span></td><td>Tál + Zöldség (pl. 3× <span class="wiki-item" data-id="dandelion">Pitypang</span>)</td><td>Növényi tápanyag — fejfájás ellen!</td></tr>
+<tr><td><span class="wiki-item" data-id="salad">Saláta</span></td><td>Tál + Zöldség (pl. 3× <span class="wiki-item" data-id="dandelion">Pitypang</span>)</td><td>Növényi tápanyag — fejfájás ellen!</td></tr>
 </table>
+<div class="tip-card">🍏 <strong>Vadgyümölcs:</strong> a helyi item-info szerint a tölgyfalevelekből eső <strong>vadgyümölcs</strong> hányingert okozhat, de <strong>disznószaporításra</strong> használható, és kb. <strong>3 játéknap</strong> alatt sima <strong>almává érik</strong>. Ha nem kell azonnal, érdemes inkább félretenni.</div>
+<div class="tip-card">🍄 <strong>Vészhelyzeti food safety:</strong> a helyi item-info szerint a <strong>nyers vörös gomba</strong> végszükségben ehető, de <strong>mérgezést és hányingert</strong> okoz, ezért inkább pörköltbe való. Az <strong>odaégett hús</strong> nemcsak veszélyes, hanem idővel <strong>rothadt hússá is romolhat</strong>. A <strong>sült féreg</strong> pedig továbbra is csak vészétel, de a nyers csalinál valamivel biztonságosabb.</div>
 
 <h3>Tápértékek</h3>
 <p>A MITE:BE 4 tápanyagot követ. <strong>Telítettség</strong> (éhség csökkentés), <strong>Táplálkozás</strong> (tényleges tápérték), <strong>Fehérje</strong> és <strong>Növényi tápanyag</strong>. Az <strong>IR</strong> (Inzulinválasz) magas cukortartalmú ételeknél jelenik meg — az egyoldalúan cukros étrend rontja az energiaszintet!</p>
@@ -63,6 +66,7 @@ const sidebarGroups = getSidebarGroups('systems/nutrition');
   <tr><td>Alma</td><td>2</td><td>1</td><td>—</td><td>1.0</td><td>✓</td><td>Tölgyfa levelekből</td></tr>
   <tr><td>Kenyér</td><td>8</td><td>2</td><td>—</td><td>—</td><td>—</td><td>Alap szénhidrát</td></tr>
   <tr><td>Tojás</td><td>1</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>Csirkétől, nyersen is ehető</td></tr>
+  <tr style="background:rgba(255,215,0,0.12)"><td><strong>Arany Alma</strong> 🍎</td><td><strong>2</strong></td><td><strong>1</strong></td><td>—</td><td>—</td><td>✓</td><td><strong>8000 hidratáció!</strong> Extra HP</td></tr>
   <tr><td>Sajt 🧀</td><td>3</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>Főzőmester foglalkozás</td></tr>
   <tr><td>Sárgarépa</td><td>1</td><td>2</td><td>—</td><td>2.0</td><td>—</td><td>Növényi tápanyag forrás</td></tr>
   <tr><td>Sült burgonya</td><td>6</td><td>2</td><td>—</td><td>—</td><td>—</td><td>Közepes</td></tr>
@@ -141,7 +145,15 @@ const sidebarGroups = getSidebarGroups('systems/nutrition');
   <tr><td><span class="tier t-adamantium">Adamantium</span></td><td>16 L</td></tr>
   <tr><td>Elemi víztömlő</td><td>16 L</td></tr>
 </table>
-<p><strong>Elemi víztömlő</strong> (higannyal): egy fejlett, Tudáskönyvhöz kötött 16 literes víztároló. A helyi adatok alapján az adamantium víztasak is eléri a 16 litert, ezért ezt itt nem kezelem egyértelműen minden más fölötti végső tierként.</p>
+<div class="tip-card">💧 <strong>Nagy Víztömlő:</strong> a helyi item-doc szerint ez egy <strong>8 használatos / 8 literes</strong> víztömlő. <strong>Jobb klikk a vízblokkra</strong> = feltöltés; ha koszos víz van benne, kemencében kb. <strong>30 másodperc</strong> alatt tisztítható.</div>
+<p><strong>Elemi víztömlő</strong> (higannyal): egy Tudáskönyvhöz kötött, 16 literes higanyos konverzió a Nagy Víztömlőből. Ugyanekkora kapacitást ér el az <strong>Adamantium víztasak</strong> is, ezért ez inkább külön fejlett receptút, nem nagyobb űrtartalmú végső tier.</p>
+<div class="tip-card">☿ <strong>Elemi víztömlő higannyal:</strong> a helyi item-doc szerint <strong>1 Nagy Víztömlő + 1 Ősi Fém rúd</strong> kell egy <strong>teljes, folyékony higannyal töltött üstbe</strong>. Az átalakulás kb. <strong>30 másodperc</strong>, alul magma/láva hőforrással, és a koszos vizet ezután is kemencében lehet tisztítani, kb. <strong>120 másodperc</strong> alatt.</div>
+<div class="info-box">💧 <strong>Vízforrás-trükk:</strong> a helyi item-docok alapján a vödrös vízkezelés nem csak sima kiöntésből áll. <strong>Ctrl + jobb klikk</strong> mellett <strong>100 XP</strong>-ért <strong>állandó vízforrást</strong> is le tudsz rakni; a normál kiöntés továbbra is csak eltűnő folyó vizet hoz létre.</div>
+<div class="tip-card">🥣 <strong>Tiszta víz tál / Forró víz:</strong> a helyi item-doc szerint <strong>Tál + jobb klikk édesvízi tóra</strong> → <strong>Tiszta víz tál</strong>, ami <strong>8 szomjúságot</strong> tölt vissza. Ezt kemencében <strong>Forró vízzé</strong> lehet melegíteni, ami enyhíti a <strong>hőguta</strong> hatását, majd kb. <strong>3 perc</strong> után újra tiszta víz tál lesz belőle.</div>
+<div class="tip-card">🧪 <strong>Fa vízszűrő:</strong> <strong>szűrőpapír kell bele</strong>, és egyszerre legfeljebb <strong>9 liter</strong> vizet tisztít. A koszos vizet a <strong>felső</strong> részre teszed, a tiszta víz az <strong>alsó</strong> részbe kerül. Üres edénnyel <strong>Shift+jobb klikk</strong> a felső/alsó részre = koszos/tiszta víz kivétele. Ha fölötte korlátlan vízforrás van, automatikusan tölti magát.</div>
+<div class="info-box">🛢️ <strong>Folyadéktartály:</strong> víz, tiszta víz, tej, magma és folyékony arany is mehet bele. A vízszűrő alá rakva automatikusan gyűjtheti a kész tiszta vizet. Szétveréskor a benne lévő folyadék <strong>elvész</strong>. A helyi doc szerinti kapacitások: <strong>Réz/Ezüst 20 L</strong>, <strong>Arany 30 L</strong>, <strong>Vas 40 L</strong>, <strong>Keménykő 50 L</strong>, <strong>Ősi Fém 60 L</strong>, <strong>Mithril 70 L</strong>, <strong>Adamantium 80 L</strong>.</div>
+<div class="tip-card">🧻 <strong>Szűrőpapír:</strong> nem lopakodva <strong>jobb klikk</strong> a szűrőpapírral = bekerül a vízszűrőbe. A helyi item-doc szerint <strong>36 tartóssága</strong> van, és <strong>1 tartósság = 1 liter</strong> tisztított víz. A fa vízszűrőt viszont <strong>nem lehet Shift+jobb klikkel felvenni</strong>, és csak <strong>fejszével</strong> törhető ki rendesen.</div>
+<div class="info-box">🧻 <strong>Fejlettebb szűrőpapírok v0.9.0-ban:</strong> a helyi advanced-filter doc és a generált receptkészlet alapján a teljes régi filter-paper létrából most a <strong>sima</strong>, a <strong>Gold Filter Paper (50 tartósság)</strong> és az <strong>Ancient Metal Filter Paper (62 tartósság)</strong> tekinthető biztosan aktív, craftolható vonalnak.</div>
 
 <h3>Szomjúság-fogyasztási Sebesség</h3>
 <p>A szomjúság fogyása az aktuális <strong>maximum HP-tól</strong> függ. Minél több életerőd van, annál gyorsabban szomjazol!</p>
@@ -161,6 +173,7 @@ const sidebarGroups = getSidebarGroups('systems/nutrition');
 <p>Diet variety is critical in MITE:BE! One-sided eating causes Malnourishment. Press <strong>P</strong> to open the nutrition screen!</p>
 
 <div class="info-box">🤕 <strong>Getting headache damage?</strong> If your character is taking periodic damage from a headache debuff, it's almost certainly an <strong>unbalanced diet</strong>. Eat a salad: <strong>Bowl + 3× Dandelion</strong> (or any other vegetable). Press P to check your nutrition breakdown!</div>
+<div class="tip-card">🌿 <strong>Mint in v0.9.0:</strong> the local item-info says <span class="wiki-item" data-id="mint">mint</span> grows in <strong>Plains</strong> terrain, drops <strong>1-3 <span class="wiki-item" data-id="mint_leaf">mint leaves</span></strong> when broken, and those leaves unlock a new early plant-food route via <span class="wiki-item" data-id="mint_salad">Mint Salad</span> at the Flint Workbench.</div>
 
 <h3>Early Game Foods</h3>
 <table>
@@ -170,8 +183,10 @@ const sidebarGroups = getSidebarGroups('systems/nutrition');
   <tr><td>Egg</td><td>Chickens</td><td>Edible raw</td></tr>
   <tr><td>Cooked meat</td><td>Campfire/Furnace</td><td>Protein — important!</td></tr>
   <tr><td>Bread</td><td>Flour + Water + Baking</td><td>Basic carbohydrate</td></tr>
-  <tr><td>Salad</td><td>Bowl + Vegetables (e.g. 3× Dandelion)</td><td>Phytonutrients — cures headache!</td></tr>
+<tr><td>Salad</td><td>Bowl + Vegetables (e.g. 3× Dandelion)</td><td>Phytonutrients — cures headache!</td></tr>
 </table>
+<div class="tip-card">🍏 <strong>Wild Fruit:</strong> the local item-info says the <strong>wild fruit</strong> dropped from oak leaves can cause nausea, but it also works for <strong>breeding pigs</strong> and ripens into a normal <strong>apple</strong> after about <strong>3 in-game days</strong>. If you do not need it immediately, it is often better stored than eaten.</div>
+<div class="tip-card">🍄 <strong>Emergency food safety:</strong> the local item-info says <strong>raw red mushrooms</strong> are technically edible in a crisis, but they cause <strong>poison and nausea</strong>, so they are much better used in stew. <strong>Burnt meat</strong> is not just unsafe; it can also <strong>rot into rotten flesh over time</strong>. <strong>Cooked worms</strong> remain desperation food, but are slightly safer than the raw bait version.</div>
 
 <h3>Food Nutrition Values</h3>
 <p>MITE:BE tracks 4 nutrients: <strong>Satiation</strong> (hunger fill), <strong>Nutrition</strong> (actual nourishment), <strong>Protein</strong>, and <strong>Phytonutrients</strong>. <strong>IR</strong> (Insulin Response) appears on sugary foods — an overly sweet diet degrades energy levels!</p>
@@ -181,6 +196,7 @@ const sidebarGroups = getSidebarGroups('systems/nutrition');
   <tr><td>Apple</td><td>2</td><td>1</td><td>—</td><td>1.0</td><td>✓</td><td>From oak leaves</td></tr>
   <tr><td>Bread</td><td>8</td><td>2</td><td>—</td><td>—</td><td>—</td><td>Basic carbohydrate</td></tr>
   <tr><td>Egg</td><td>1</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>From chickens, edible raw</td></tr>
+  <tr style="background:rgba(255,215,0,0.12)"><td><strong>Golden Apple</strong> 🍎</td><td><strong>2</strong></td><td><strong>1</strong></td><td>—</td><td>—</td><td>✓</td><td><strong>8000 hydration!</strong> Extra HP</td></tr>
   <tr><td>Cheese 🧀</td><td>3</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>Craftable from metal milk buckets in v0.9.0</td></tr>
   <tr><td>Carrot</td><td>1</td><td>2</td><td>—</td><td>2.0</td><td>—</td><td>Phytonutrient source</td></tr>
   <tr><td>Baked Potato</td><td>6</td><td>2</td><td>—</td><td>—</td><td>—</td><td>Moderate</td></tr>
@@ -243,7 +259,15 @@ const sidebarGroups = getSidebarGroups('systems/nutrition');
   <tr><td><span class="tier t-adamantium">Adamantium</span></td><td>16 L</td></tr>
   <tr><td>Elemental Water Bag</td><td>16 L</td></tr>
 </table>
-<p><strong>Elemental Water Bag</strong> (via mercury) is an advanced 16-liter water container gated by a Knowledge Book. Local data also shows the Adamantium Water Bag reaching 16 liters, so I am not treating the elemental bag here as an unambiguous final tier above every other variant.</p>
+<div class="tip-card">💧 <strong>Big Water Bag:</strong> the local item doc describes it as an <strong>8-use / 8-liter</strong> bag. <strong>Right-click a water block</strong> to fill it; if it contains dirty water, a furnace cleans it in about <strong>30 seconds</strong>.</div>
+<p><strong>Elemental Water Bag</strong> (via mercury) is a Knowledge-Book-gated 16-liter mercury conversion of the Big Water Bag. The <strong>Adamantium Water Bag</strong> also reaches 16 liters, so this is better treated as a separate advanced recipe path rather than a higher-capacity final tier.</p>
+<div class="tip-card">☿ <strong>Elemental Water Bag via mercury:</strong> the local item doc says it is made by putting <strong>1 Big Water Bag + 1 Ancient Metal Ingot</strong> into a <strong>full cauldron of liquefied mercury</strong>. The conversion takes about <strong>30 seconds</strong> with magma/lava heat below, and dirty water is still purified in a furnace in about <strong>120 seconds</strong>.</div>
+<div class="info-box">💧 <strong>Water-source trick:</strong> the local item docs show that bucket water handling goes beyond simple pouring. With <strong>Ctrl + right-click</strong>, you can spend <strong>100 XP</strong> to place a <strong>permanent water source</strong>; normal pouring still creates only temporary flowing water.</div>
+<div class="tip-card">🥣 <strong>Pure Water Bowl / Hot Water:</strong> the local item docs say <strong>Bowl + right-click on a freshwater lake</strong> gives a <strong>Pure Water Bowl</strong>, restoring <strong>8 thirst</strong>. You can heat that into <strong>Hot Water</strong> in a furnace to help relieve <strong>heat stroke</strong>, and after about <strong>3 minutes</strong> it cools back into a Pure Water Bowl.</div>
+<div class="tip-card">🧪 <strong>Wooden Water Filter:</strong> it <strong>needs Filter Paper</strong> and can purify up to <strong>9 liters</strong> at once. Dirty water goes into the <strong>top</strong> section, clean water collects in the <strong>bottom</strong>, and <strong>Shift-right-click</strong> with an empty container on the upper/lower half pulls out dirty/clean water. If you place an infinite water source above it, it auto-feeds itself.</div>
+<div class="info-box">🛢️ <strong>Fluid Tank:</strong> it can store water, purified water, milk, magma, and liquefied gold. Placed under a water filter, it can automatically collect the finished clean water. If the tank is broken, the stored liquid is <strong>lost</strong>. Local doc capacities: <strong>Copper/Silver 20 L</strong>, <strong>Gold 30 L</strong>, <strong>Iron 40 L</strong>, <strong>Hardstone 50 L</strong>, <strong>Ancient Metal 60 L</strong>, <strong>Mithril 70 L</strong>, <strong>Adamantium 80 L</strong>.</div>
+<div class="tip-card">🧻 <strong>Filter Paper:</strong> right-click with it while <strong>not sneaking</strong> to insert it into the filter. The local item doc gives it <strong>36 durability</strong>, and <strong>1 durability filters 1 liter</strong> of clean water. The wooden filter itself <strong>cannot be picked up with Shift-right-click</strong>, and is only properly broken by an <strong>axe</strong>.</div>
+<div class="info-box">🧻 <strong>Advanced filter papers in v0.9.0:</strong> based on the local advanced-filter doc plus the generated recipe set, the old full upgrade ladder is no longer the practical current route. The reliably active craftable line is <strong>standard</strong>, <strong>Gold Filter Paper (50 durability)</strong>, and <strong>Ancient Metal Filter Paper (62 durability)</strong>.</div>
 
 <h3>Thirst Consumption Rate</h3>
 <p>Thirst drains based on your current <strong>maximum HP</strong>. The more hearts you have, the faster you get thirsty!</p>
@@ -274,9 +298,12 @@ const sidebarGroups = getSidebarGroups('systems/nutrition');
   <tr><td>Хлеб</td><td>Мука + Вода + Выпечка</td><td>Базовый углевод</td></tr>
   <tr><td>Салат</td><td>Чаша + Овощи (напр. 3× Одуванчик)</td><td>Фитонутриенты — лечит головную боль!</td></tr>
 </table>
+<div class="tip-card">🍄 <strong>Аварийная пищевая безопасность:</strong> по локальному item-info <strong>сырой красный гриб</strong> формально можно съесть в крайнем случае, но он даёт <strong>отравление и тошноту</strong>, так что лучше пускать его в рагу. <strong>Подгоревшее мясо</strong> не только опасно, но и со временем может <strong>испортиться в гнилую плоть</strong>. <strong>Приготовленный червь</strong> всё ещё остаётся едой отчаяния, но всё же немного безопаснее сырой наживки.</div>
 
 <h3>Питательная ценность продуктов</h3>
 <p>MITE:BE отслеживает 4 питательных вещества: <strong>Насыщение</strong>, <strong>Питание</strong>, <strong>Белок</strong> и <strong>Фитонутриенты</strong>. <strong>ИР</strong> (Инсулиновый ответ) появляется у сладких продуктов — избыток сладкого снижает уровень энергии!</p>
+<div class="tip-card">🌿 <strong>Мята с v0.9.0:</strong> по локальному item-info <span class="wiki-item" data-id="mint">мята</span> растёт в биоме <strong>Равнины</strong>, при разрушении даёт <strong>1-3 <span class="wiki-item" data-id="mint_leaf">листа мяты</span></strong>, а из них на кремнёвом верстаке можно сделать <span class="wiki-item" data-id="mint_salad">мятный салат</span> как ещё один ранний растительный путь еды.</div>
+<div class="tip-card">🍏 <strong>Дикий плод:</strong> по локальному item-info редкий <strong>дикий плод</strong> из дубовой листвы может вызывать тошноту, зато подходит для <strong>разведения свиней</strong> и примерно за <strong>3 игровых дня</strong> дозревает в обычное <strong>яблоко</strong>. Если не нужен срочно, его выгоднее отложить, а не съедать сразу.</div>
 <table class="compare-table">
   <tr><th>Еда</th><th>Нас.</th><th>Питат.</th><th>Белок</th><th>Фито.</th><th>ИР</th><th>Примечание</th></tr>
   <tr><td>Семена пшеницы</td><td>1</td><td>0</td><td>—</td><td>—</td><td>—</td><td>Аварийная еда</td></tr>
@@ -284,6 +311,7 @@ const sidebarGroups = getSidebarGroups('systems/nutrition');
   <tr><td>Хлеб</td><td>8</td><td>2</td><td>—</td><td>—</td><td>—</td><td>Базовый углевод</td></tr>
   <tr><td>Морковь</td><td>1</td><td>2</td><td>—</td><td>2.0</td><td>—</td><td>Источник фитонутриентов</td></tr>
   <tr><td>Яйцо</td><td>1</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>Можно есть сырым</td></tr>
+  <tr style="background:rgba(255,215,0,0.12)"><td><strong>Золотое яблоко</strong> 🍎</td><td><strong>2</strong></td><td><strong>1</strong></td><td>—</td><td>—</td><td>✓</td><td><strong>8000 увлажнения!</strong> Доп. HP</td></tr>
   <tr><td>Сыр 🧀</td><td>3</td><td>3</td><td>3.0</td><td>—</td><td>—</td><td>Навык Пивовара</td></tr>
   <tr><td>Запечённый картофель</td><td>6</td><td>2</td><td>—</td><td>—</td><td>—</td><td>Средний</td></tr>
   <tr><td>Сырая свинина</td><td>4</td><td>4</td><td>4.0</td><td>—</td><td>—</td><td>Можно есть сырой</td></tr>
@@ -353,7 +381,15 @@ const sidebarGroups = getSidebarGroups('systems/nutrition');
   <tr><td><span class="tier t-adamantium">Адамантиевая</span></td><td>16 Л</td></tr>
   <tr><td>Элементная фляга</td><td>16 Л</td></tr>
 </table>
-<p><strong>Элементная фляга</strong> (через ртуть) — продвинутый 16-литровый вариант, открываемый Книгой знаний. По локальным данным адамантиевая сумка для воды тоже достигает 16 литров, поэтому здесь я не считаю элементную флягу однозначно финальным tier выше всех остальных.</p>
+<div class="tip-card">💧 <strong>Большая фляга:</strong> по локальному item-doc это фляга на <strong>8 использований / 8 литров</strong>. <strong>ПКМ по блоку воды</strong> наполняет её; если внутри грязная вода, печь очищает её примерно за <strong>30 секунд</strong>.</div>
+<p><strong>Элементная фляга</strong> (через ртуть) — 16-литровое ртутное улучшение Большой фляги, открываемое Книгой знаний. Такой же объём имеет и <strong>адамантиевая фляга</strong>, поэтому это лучше считать отдельной продвинутой веткой рецепта, а не более вместительным финальным tier.</p>
+<div class="tip-card">☿ <strong>Элементная фляга через ртуть:</strong> по локальному item-doc для неё нужны <strong>1 Большая фляга + 1 слиток Древнего металла</strong> в <strong>полном котле с жидкой ртутью</strong>. Превращение занимает около <strong>30 секунд</strong> при источнике магмы/лавы снизу, а грязная вода после этого всё так же очищается в печи примерно за <strong>120 секунд</strong>.</div>
+<div class="info-box">💧 <strong>Трюк с источником воды:</strong> по локальным item-doc механика ведра с водой не ограничивается обычным выливанием. При <strong>Ctrl + правом клике</strong> можно потратить <strong>100 XP</strong> и поставить <strong>постоянный источник воды</strong>; обычное выливание по-прежнему создаёт только временный текущий поток.</div>
+<div class="tip-card">🥣 <strong>Чаша чистой воды / Горячая вода:</strong> по локальным item-doc комбинация <strong>чаша + ПКМ по озеру с пресной водой</strong> даёт <strong>Чашу чистой воды</strong>, которая восстанавливает <strong>8 жажды</strong>. Её можно нагреть в печи до <strong>Горячей воды</strong>, чтобы ослабить эффект <strong>теплового удара</strong>; примерно через <strong>3 минуты</strong> она снова остывает до чаши чистой воды.</div>
+<div class="tip-card">🧪 <strong>Деревянный фильтр для воды:</strong> ему <strong>нужна фильтровальная бумага</strong>, и за раз он очищает до <strong>9 литров</strong>. Грязная вода помещается в <strong>верхнюю</strong> часть, чистая собирается в <strong>нижней</strong>, а <strong>Shift+ПКМ</strong> пустой ёмкостью по верхней/нижней половине позволяет забирать грязную/чистую воду. Если над ним есть бесконечный источник воды, фильтр заполняется автоматически.</div>
+<div class="info-box">🛢️ <strong>Резервуар для жидкости:</strong> хранит воду, очищенную воду, молоко, магму и жидкое золото. Если поставить его под водяной фильтр, он может автоматически собирать готовую чистую воду. При разрушении резервуара жидкость внутри <strong>теряется</strong>. Вместимости по локальному doc: <strong>Медь/Серебро 20 л</strong>, <strong>Золото 30 л</strong>, <strong>Железо 40 л</strong>, <strong>Твердокамень 50 л</strong>, <strong>Древний металл 60 л</strong>, <strong>Мифрил 70 л</strong>, <strong>Адамант 80 л</strong>.</div>
+<div class="tip-card">🧻 <strong>Фильтровальная бумага:</strong> клик <strong>ПКМ без шифта</strong> по бумаге вставляет её в фильтр. По локальному item-doc у неё <strong>36 прочности</strong>, и <strong>1 прочность = 1 литр</strong> очищенной воды. Сам деревянный фильтр <strong>нельзя поднять через Shift+ПКМ</strong>, и нормально ломается только <strong>топором</strong>.</div>
+<div class="info-box">🧻 <strong>Продвинутая фильтровальная бумага в v0.9.0:</strong> по локальному advanced-filter doc и текущему набору generated recipes полная старая лестница фильтров больше не выглядит актуальной. Надёжно активной крафтовой линией сейчас стоит считать <strong>обычную</strong>, <strong>золотую (50 прочности)</strong> и <strong>из Древнего металла (62 прочности)</strong> версии.</div>
 
 <h3>Скорость убывания жажды</h3>
 <p>Жажда убывает в зависимости от текущего <strong>максимального HP</strong>. Чем больше сердец, тем быстрее хочется пить!</p>

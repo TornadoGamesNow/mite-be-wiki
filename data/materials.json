@@ -11,10 +11,10 @@
   "maxQuality": [
     { "quality": { "hu": "Legendás", "en": "Legendary" }, "materials": { "hu": "Mithril és Adamantium", "en": "Mithril and Adamantium" }, "highlight": true },
     { "quality": { "hu": "Mestermű", "en": "Masterwork" }, "materials": { "hu": "Vas, Ősi Fém, Szénacél", "en": "Iron, Ancient Metal, High Carbon Steel" } },
-    { "quality": { "hu": "Kitűnő", "en": "Excellent" }, "materials": { "hu": "Arany, Gyémánt", "en": "Gold, Diamond" } },
-    { "quality": { "hu": "Pompás", "en": "Superb" }, "materials": { "hu": "Réz, Keménykő, Ezüst, Smaragd, Bronz, Ezüst-réz", "en": "Copper, Keménykő, Silver, Emerald, Bronze, Silver Copper" } },
-    { "quality": { "hu": "Jó", "en": "Good" }, "materials": { "hu": "Bőr, Fa, Kova, Obszidián, Kvarc, Csont", "en": "Leather, Wood, Flint, Obszidián, Quartz, Bone" } },
-    { "quality": { "hu": "Átlagos", "en": "Average" }, "materials": { "hu": "Alvilágtégla, Üveg", "en": "Nether Brick, Glass" }, "muted": true },
+    { "quality": { "hu": "Kitűnő", "en": "Superb" }, "materials": { "hu": "Arany, Gyémánt", "en": "Gold, Diamond" } },
+    { "quality": { "hu": "Kiváló", "en": "Excellent" }, "materials": { "hu": "Réz, Keménykő, Ón, Ezüst, Smaragd, Bronz, Ezüst-réz", "en": "Copper, Hardstone, Tin, Silver, Emerald, Bronze, Silver Copper" } },
+    { "quality": { "hu": "Jó", "en": "Fine" }, "materials": { "hu": "Bőr, Fa, Kova, Obszidián, Kvarc, Csont", "en": "Leather, Wood, Flint, Obsidian, Quartz, Bone" } },
+    { "quality": { "hu": "Átlagos", "en": "Average" }, "materials": { "hu": "Alvilágkő, Üveg", "en": "Netherrack, Glass" }, "muted": true },
     { "quality": { "hu": "Rossz", "en": "Poor" }, "materials": { "hu": "Rozsdás vas", "en": "Rusted Iron" }, "bad": true }
   ],
   "durabilityMult": [

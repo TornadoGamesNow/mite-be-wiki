@@ -8,6 +8,331 @@ import { getSidebarGroups } from '../../data/sidebar-config.ts';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const sidebarGroups = getSidebarGroups('reference');
+const playerCommands = [
+  { cmd: '/chunks', desc: { hu: 'Megmutatja, hány chunk van jelenleg betöltve.', en: 'Shows how many chunks are currently loaded.', ru: 'Показывает, сколько чанков сейчас загружено.' } },
+  { cmd: '/commands', desc: { hu: 'Listázza a MITE-ben elérhető parancsokat.', en: 'Lists the MITE commands that are available.', ru: 'Показывает список доступных команд MITE.' } },
+  { cmd: '/day', desc: { hu: 'Kiírja a világ korát napokban.', en: 'Shows the age of the world in days.', ru: 'Показывает возраст мира в игровых днях.' } },
+  { cmd: '/ground', desc: { hu: 'Kimenti a játékost a padló és plafon közti pattogás bugból.', en: 'Rescues the player from the floor-ceiling bouncing bug.', ru: 'Спасает игрока из бага с отскоком между полом и потолком.' } },
+  { cmd: '/load', desc: { hu: 'Megmutatja a szerver aktuális terhelését.', en: 'Shows the server\'s current processing load.', ru: 'Показывает текущую нагрузку сервера.' } },
+  { cmd: '/mem', desc: { hu: 'Kiírja a használt és lefoglalt JVM-memóriát.', en: 'Shows the used and allocated JVM memory.', ru: 'Показывает используемую и выделенную JVM-память.' } },
+  { cmd: '/rendering', desc: { hu: 'Megmutatja az aktuális renderelési sémát.', en: 'Shows the current rendering scheme.', ru: 'Показывает текущую схему рендеринга.' } },
+  { cmd: '/skills', desc: { hu: 'Felsorolja az elérhető skilleket, ha a profession rendszer aktív.', en: 'Lists available skills if professions are enabled.', ru: 'Показывает навыки, если включена система профессий.' } },
+  { cmd: '/stats', desc: { hu: 'Sima szövegfájlba írja ki a karakter statjait.', en: 'Writes character stats to a plain-text file.', ru: 'Записывает характеристики персонажа в текстовый файл.' } },
+  { cmd: '/syncpos', desc: { hu: 'Pontosan szinkronizálja a kliens pozícióját a szerverével.', en: 'Exactly syncs the client position with the server position.', ru: 'Точно синхронизирует позицию клиента с серверной.' } },
+  { cmd: '/tournament', desc: { hu: 'Megmutatja az aktuális tournament célt, ha van ilyen.', en: 'Shows the current tournament objective, if applicable.', ru: 'Показывает цель турнира, если она есть.' } },
+  { cmd: '/version', desc: { hu: 'Kiírja a futó MITE-verziót.', en: 'Shows the MITE release you are playing.', ru: 'Показывает версию MITE, в которую ты играешь.' } },
+  { cmd: '/versions', desc: { hu: 'Megmutatja, mely verziókon futott már az adott világ.', en: 'Shows which releases the current world has been played with.', ru: 'Показывает, в каких версиях уже запускался текущий мир.' } },
+  { cmd: '/villages', desc: { hu: 'Kiírja a falvak feloldási feltételeit.', en: 'Shows the prerequisites for unlocking villages.', ru: 'Показывает условия разблокировки деревень.' } },
+  { cmd: '/xp', desc: { hu: 'Megmutatja a jelenlegi XP-pontjaid számát.', en: 'Shows your current experience points.', ru: 'Показывает текущее количество очков опыта.' } },
+];
+const xpConsumableRows = [
+  {
+    item: { hu: 'Lazúrkő', en: 'Lapis Lazuli', ru: 'Лазурит' },
+    xp: '25',
+    hardcore: '25',
+    note: {
+      hu: 'Jobb klikkre elfogyasztható XP-ért; újabb verziókban lapisércből Large Furnace útvonalon is jöhet.',
+      en: 'Right-click consumable for XP; newer versions also allow a Large Furnace route from lapis ore.',
+      ru: 'Расходуется по правому клику за опыт; в новых версиях также приходит через Большую печь из лазуритовой руды.',
+    },
+  },
+  {
+    item: { hu: 'Redstone por', en: 'Redstone Dust', ru: 'Красная пыль' },
+    xp: '30',
+    hardcore: '20',
+    note: {
+      hu: 'A por adja az XP-t, nem maga a redstoneérc; az érc külön aktiválást kér.',
+      en: 'The dust grants the XP, not the ore itself; the ore has its own activation rule.',
+      ru: 'Опыт даёт именно пыль, а не сама руда; у руды своя механика активации.',
+    },
+  },
+  {
+    item: { hu: 'Netherkvarc', en: 'Nether Quartz', ru: 'Незер-кварц' },
+    xp: '50',
+    hardcore: '65',
+    note: {
+      hu: 'A most ellenőrzött quartz XP-route alapja; itemként fogyasztható el.',
+      en: 'The quartz XP route we just verified; consumed directly as an item.',
+      ru: 'Основа только что проверенного кварцевого XP-маршрута; расходуется как предмет.',
+    },
+  },
+  {
+    item: { hu: 'Smaragd', en: 'Emerald', ru: 'Изумруд' },
+    xp: '250',
+    hardcore: '250',
+    note: {
+      hu: 'Nyers XP-tárolásra is alkalmas, de gazdaságilag nagyon értékes alapanyag.',
+      en: 'Can function as raw XP storage, but it is an economically valuable crafting/trading material.',
+      ru: 'Может служить хранилищем опыта, но это очень ценный материал сам по себе.',
+    },
+  },
+  {
+    item: { hu: 'Gyémánt', en: 'Diamond', ru: 'Алмаз' },
+    xp: '500',
+    hardcore: '500',
+    note: {
+      hu: 'A legerősebb normál gem-XP konverziók egyike.',
+      en: 'One of the strongest normal gem-to-XP conversions in the mod.',
+      ru: 'Одна из самых сильных обычных конверсий драгоценного камня в опыт.',
+    },
+  },
+  {
+    item: { hu: 'Rubace-szilánk', en: 'Rubace Shard', ru: 'Осколок rubace' },
+    xp: '500',
+    hardcore: '500',
+    note: {
+      hu: 'A teljesen kifejlett rubace kristályhalmazból szerezhető.',
+      en: 'Obtained from fully grown rubace crystal clusters.',
+      ru: 'Добывается с полностью созревших кристаллических скоплений rubace.',
+    },
+  },
+];
+const expandedFuelFamilies = [
+  {
+    item: { hu: 'Facsemeték / száraz bokor / egyes falap', en: 'Saplings / dead bush / single wood slab', ru: 'Саженцы / сухой куст / одинарная деревянная плита' },
+    burn: '200 ticks',
+    heat: '1',
+    note: { hu: 'Gyújtós kategória; csak átmeneti fűtésre jó.', en: 'Kindling-tier fuel; useful only as emergency firestarter fuel.', ru: 'Топливо уровня растопки; годится только как аварийный вариант.' },
+  },
+  {
+    item: { hu: 'Deszkák, lépcsők, ajtók, kerítések, ládák, könyvespolcok', en: 'Planks, stairs, doors, fences, chests, bookshelves', ru: 'Доски, ступени, двери, заборы, сундуки, книжные полки' },
+    burn: '400 ticks',
+    heat: '1',
+    note: { hu: 'A nyers ZIP-fájl nagy része ebbe a fa-blokk családba esik.', en: 'A large share of the raw ZIP list falls into this wood-block family.', ru: 'Значительная часть сырого списка из ZIP относится именно к этому семейству деревянных блоков.' },
+  },
+  {
+    item: { hu: 'Fáklya / vöröskő fáklya', en: 'Torch / redstone torch', ru: 'Факел / факел из красного камня' },
+    burn: '800 ticks',
+    heat: '1',
+    note: { hu: 'Kétszer tovább ég, mint egy sima deszka.', en: 'Burns twice as long as a plank-tier fuel.', ru: 'Горит вдвое дольше, чем топливо уровня досок.' },
+  },
+  {
+    item: { hu: 'Rönkök', en: 'Logs', ru: 'Брёвна' },
+    burn: '1,600 ticks',
+    heat: '1',
+    note: { hu: 'A legjobb stabil korai-game fa tüzelőanyag.', en: 'The most reliable early-game wood fuel.', ru: 'Самое надёжное древесное топливо раннего этапа.' },
+  },
+  {
+    item: { hu: 'Szén', en: 'Coal', ru: 'Уголь' },
+    burn: '3,200 ticks',
+    heat: '2',
+    note: { hu: 'Ugyanannyi ideig ég, mint a faszén, de magasabb hőfokú.', en: 'Burns as long as charcoal, but at a higher heat tier.', ru: 'Горит столько же, сколько древесный уголь, но даёт более высокий нагрев.' },
+  },
+  {
+    item: { hu: 'Faszén', en: 'Charcoal', ru: 'Древесный уголь' },
+    burn: '3,200 ticks',
+    heat: '1',
+    note: { hu: 'Hosszú égés, de vasolvasztásra már kevés.', en: 'Long burn time, but not hot enough for iron smelting.', ru: 'Горит долго, но уже недостаточно горяч для плавки железа.' },
+  },
+  {
+    item: { hu: 'Lávavödör', en: 'Lava Bucket', ru: 'Ведро лавы' },
+    burn: '3,200 ticks',
+    heat: '3',
+    note: { hu: 'Nem a leghosszabb, hanem a magas hőfoka miatt fontos.', en: 'Important for its heat tier, not for record burn duration.', ru: 'Ценно не рекордной длительностью, а высоким уровнем нагрева.' },
+  },
+  {
+    item: { hu: 'Blaze Pálca', en: 'Blaze Rod', ru: 'Стержень Блейза' },
+    burn: '2,400 ticks',
+    heat: '4',
+    note: { hu: 'Rövidebb ideig ég, mint a szén, de ez az egyetlen 4-es heat fuel.', en: 'Burns shorter than coal, but it is the only heat-level-4 fuel.', ru: 'Горит меньше, чем уголь, но это единственное топливо с нагревом 4.' },
+  },
+  {
+    item: { hu: 'Szénblokk', en: 'Block of Coal', ru: 'Угольный блок' },
+    burn: '16,000 ticks',
+    heat: '2',
+    note: { hu: 'A leghosszabb égésű ismert fuel a ZIP referencia szerint.', en: 'The longest-burning listed fuel in the ZIP reference.', ru: 'Самое долго горящее топливо в ZIP-справочнике.' },
+  },
+];
+const toolReferenceRows = [
+  {
+    tool: { hu: 'Fejsze', en: 'Axe', ru: 'Топор' },
+    targets: { hu: 'Fa blokkok, ládák, munkapadok, könyvespolcok', en: 'Wood blocks, chests, workbenches, bookshelves', ru: 'Деревянные блоки, сундуки, верстаки, книжные полки' },
+    speed: { hu: '4.0', en: '4.0', ru: '4.0' },
+    entityDecay: 'x1',
+    blockDecay: 'x1',
+    examples: { hu: 'Láda 20, deszka 80, rönk 120', en: 'Chest 20, planks 80, log 120', ru: 'Сундук 20, доски 80, бревно 120' },
+  },
+  {
+    tool: { hu: 'Csákány', en: 'Pickaxe', ru: 'Кирка' },
+    targets: { hu: 'Kő, macskakő, ércek, fémblokkok', en: 'Stone, cobble, ores, metal blocks', ru: 'Камень, булыжник, руды, металлические блоки' },
+    speed: { hu: '4.0', en: '4.0', ru: '4.0' },
+    entityDecay: 'x1',
+    blockDecay: 'x1',
+    examples: { hu: 'Kő 240, szénérc 120, vasérc 300, vasblokk 960', en: 'Stone 240, coal ore 120, iron ore 300, iron block 960', ru: 'Камень 240, угольная руда 120, железная руда 300, железный блок 960' },
+  },
+  {
+    tool: { hu: 'Háborús kalapács', en: 'War Hammer', ru: 'Боевой молот' },
+    targets: { hu: 'Ugyanaz a kő/érc család, mint a csákánynál', en: 'The same stone/ore family as the pickaxe', ru: 'То же семейство камня и руд, что и у кирки' },
+    speed: { hu: '3.0', en: '3.0', ru: '3.0' },
+    entityDecay: 'x0.67',
+    blockDecay: 'x0.67',
+    examples: { hu: 'Kő 160, szénérc 80, vasérc 200, vasblokk 640', en: 'Stone 160, coal ore 80, iron ore 200, iron block 640', ru: 'Камень 160, угольная руда 80, железная руда 200, железный блок 640' },
+  },
+  {
+    tool: { hu: 'Ásó', en: 'Shovel', ru: 'Лопата' },
+    targets: { hu: 'Föld, homok, kavics, agyag, hó, lélekhomok', en: 'Dirt, sand, gravel, clay, snow, soul sand', ru: 'Земля, песок, гравий, глина, снег, песок душ' },
+    speed: { hu: '4.0', en: '4.0', ru: '4.0' },
+    entityDecay: 'x1',
+    blockDecay: 'x0.5',
+    examples: { hu: 'Föld 25, homok 20, kavics 30, vékony hó 2', en: 'Dirt 25, sand 20, gravel 30, thin snow 2', ru: 'Земля 25, песок 20, гравий 30, тонкий снег 2' },
+  },
+  {
+    tool: { hu: 'Kard', en: 'Sword', ru: 'Меч' },
+    targets: { hu: 'Pókháló, levelek, gyapjú, növényzet', en: 'Cobwebs, leaves, wool, plant clutter', ru: 'Паутина, листва, шерсть, растительность' },
+    speed: { hu: 'speciális utility', en: 'special utility', ru: 'спец. utility' },
+    entityDecay: 'x0.5',
+    blockDecay: 'x2',
+    examples: { hu: 'Pókháló 20, levelek 40, gyapjú 160', en: 'Cobweb 20, leaves 40, wool 160', ru: 'Паутина 20, листва 40, шерсть 160' },
+  },
+];
+const silkHarvestExceptions = [
+  {
+    block: { hu: 'Alapkőzet / Köpeny / Mag', en: 'Bedrock / Mantle / Core', ru: 'Бедрок / Мантия / Ядро' },
+    silk: { hu: 'Nem', en: 'No', ru: 'Нет' },
+    note: {
+      hu: 'A legmélyebb progression-blokkok kivételt képeznek.',
+      en: 'The deepest progression blocks are explicit exceptions.',
+      ru: 'Ключевые блоки глубинного прогресса явно исключены.',
+    },
+  },
+  {
+    block: { hu: 'Mozgó / álló víz és láva', en: 'Moving / still water and lava', ru: 'Текущая / стоячая вода и лава' },
+    silk: { hu: 'Nem', en: 'No', ru: 'Нет' },
+    note: {
+      hu: 'A folyadékblokkok nem gyűjthetők Silk Touch-csal.',
+      en: 'Fluid blocks cannot be picked up with Silk Touch.',
+      ru: 'Жидкости нельзя забрать Silk Touch.',
+    },
+  },
+  {
+    block: { hu: 'Szent homokkő', en: 'Sacred Sandstone', ru: 'Священный песчаник' },
+    silk: { hu: 'Nem', en: 'No', ru: 'Нет' },
+    note: {
+      hu: 'Speciális építőblokk, külön tiltással.',
+      en: 'A special building block with its own explicit restriction.',
+      ru: 'Особый строительный блок с отдельным запретом.',
+    },
+  },
+  {
+    block: { hu: 'Spawner', en: 'Mob Spawner', ru: 'Спаунер' },
+    silk: { hu: 'Nem', en: 'No', ru: 'Нет' },
+    note: {
+      hu: 'Spawner farmot nem lehet így áthelyezni.',
+      en: 'Spawner farms cannot be relocated this way.',
+      ru: 'Перенести спаунер таким способом не получится.',
+    },
+  },
+  {
+    block: { hu: 'Brewing Stand / Üst', en: 'Brewing Stand / Cauldron', ru: 'Варочная стойка / Котёл' },
+    silk: { hu: 'Nem', en: 'No', ru: 'Нет' },
+    note: {
+      hu: 'A bájitalos utility blokkok külön tiltottak.',
+      en: 'Potion utility blocks are explicitly disallowed.',
+      ru: 'Служебные зельеварочные блоки явно запрещены.',
+    },
+  },
+  {
+    block: { hu: 'End Portal / End Portal Frame', en: 'End Portal / End Portal Frame', ru: 'Портал Края / рамка портала Края' },
+    silk: { hu: 'Nem', en: 'No', ru: 'Нет' },
+    note: {
+      hu: 'A portálprogression sem kerülhető meg vele.',
+      en: 'Portal progression cannot be bypassed with it.',
+      ru: 'Прогресс с порталами таким образом не обойти.',
+    },
+  },
+];
+const harvestLevelRows = [
+  {
+    type: { hu: 'Eszköz', en: 'Tool', ru: 'Инструмент' },
+    name: { hu: 'Arany / réz / ezüst csákány', en: 'Gold / copper / silver pickaxe', ru: 'Золотая / медная / серебряная кирка' },
+    level: '2',
+    note: {
+      hu: 'Kő, szén, vas és sok alapérc szintje.',
+      en: 'The baseline tier for stone, coal, iron and many basic ores.',
+      ru: 'Базовый уровень для камня, угля, железа и многих обычных руд.',
+    },
+  },
+  {
+    type: { hu: 'Eszköz', en: 'Tool', ru: 'Инструмент' },
+    name: { hu: 'Vascsákány', en: 'Iron Pickaxe', ru: 'Железная кирка' },
+    level: '3',
+    note: {
+      hu: 'Itt nyílik meg a középjáték bányászata.',
+      en: 'This opens true midgame mining.',
+      ru: 'С этого уровня начинается полноценный мидгейм добычи.',
+    },
+  },
+  {
+    type: { hu: 'Eszköz', en: 'Tool', ru: 'Инструмент' },
+    name: { hu: 'Mithril csákány', en: 'Mithril Pickaxe', ru: 'Мифриловая кирка' },
+    level: '4',
+    note: {
+      hu: 'Adamantium ércig és több magas szintű blokkig kell.',
+      en: 'Needed for Adamantium ore and several high-tier blocks.',
+      ru: 'Нужна для адамантовой руды и ряда высокоуровневых блоков.',
+    },
+  },
+  {
+    type: { hu: 'Eszköz', en: 'Tool', ru: 'Инструмент' },
+    name: { hu: 'Adamantium csákány', en: 'Adamantium Pickaxe', ru: 'Адамантовая кирка' },
+    level: '5',
+    note: {
+      hu: 'Mithril blokk és több végjáték blokk innen indul.',
+      en: 'Mithril blocks and several endgame blocks start here.',
+      ru: 'С этого уровня начинаются мифриловые блоки и ряд эндгейм-целей.',
+    },
+  },
+  {
+    type: { hu: 'Blokk', en: 'Block', ru: 'Блок' },
+    name: { hu: 'Hardstone érc / Mithril érc', en: 'Hardstone ore / Mithril ore', ru: 'Руда твердокамня / мифриловая руда' },
+    level: '3',
+    note: {
+      hu: 'Vas szint fölött jelenik meg a következő ugrás.',
+      en: 'This is the first major jump above iron-tier mining.',
+      ru: 'Это первый серьёзный скачок выше железного этапа.',
+    },
+  },
+  {
+    type: { hu: 'Blokk', en: 'Block', ru: 'Блок' },
+    name: { hu: 'Adamantium érc / Hardstone blokk', en: 'Adamantium ore / Hardstone block', ru: 'Адамантовая руда / блок твердокамня' },
+    level: '4',
+    note: {
+      hu: 'Mithril szerszám kell hozzájuk.',
+      en: 'These already require Mithril-grade mining.',
+      ru: 'Для них уже нужен мифриловый уровень добычи.',
+    },
+  },
+  {
+    type: { hu: 'Blokk', en: 'Block', ru: 'Блок' },
+    name: { hu: 'Mithril blokk', en: 'Mithril Block', ru: 'Мифриловый блок' },
+    level: '5',
+    note: {
+      hu: 'A sima Mithril ércnél magasabb küszöb.',
+      en: 'Noticeably higher than simple Mithril ore.',
+      ru: 'Заметно выше по порогу, чем обычная мифриловая руда.',
+    },
+  },
+  {
+    type: { hu: 'Blokk', en: 'Block', ru: 'Блок' },
+    name: { hu: 'Adamantium blokk', en: 'Adamantium Block', ru: 'Адамантовый блок' },
+    level: '6',
+    note: {
+      hu: 'A nyers lista egyik legmagasabb normál blokkszintje.',
+      en: 'One of the highest normal block requirements in the raw list.',
+      ru: 'Один из самых высоких обычных порогов в сыром списке.',
+    },
+  },
+  {
+    type: { hu: 'Blokk', en: 'Block', ru: 'Блок' },
+    name: { hu: 'Alapkőzet / Köpeny / Mag', en: 'Bedrock / Mantle / Core', ru: 'Бедрок / Мантия / Ядро' },
+    level: '100',
+    note: {
+      hu: 'Nem normál bányászati célpontok; progression-határblokkok.',
+      en: 'Not normal mining targets; they are progression boundary blocks.',
+      ru: 'Это не обычные цели добычи, а пограничные блоки прогресса.',
+    },
+  },
+];
 ---
 
 <BaseLayout title="Reference — MITE: Break Everything Wiki" description="MITE:BE reference tables: material enchantability, durability, sieve drop rates, mob statistics.">
@@ -85,7 +410,7 @@ const sidebarGroups = getSidebarGroups('reference');
 <p>Az Üst nem csak vizet tárol — speciális receptekhez is használható:</p>
 <table class="compare-table">
   <tr><th>Recept</th><th>Folyamat</th><th>Eredmény</th></tr>
-  <tr><td><strong>Folyékony Arany</strong></td><td>Üst lávaforrás alá + Arany érc beledobás → 10 mp várakozás</td><td>Folyékony arany — 4 Aranyalma készíthető belőle (4 alma/üst)</td></tr>
+  <tr><td><strong>Aranyalma üsttöltet</strong></td><td>Üst lávaforrás alá + 1 aranyérc → kb. 30 mp, majd almákat kell ráhasználni</td><td>1 töltés legfeljebb 4 almát alakít Aranyalmává</td></tr>
   <tr><td><strong>Folyékony Higany</strong></td><td>Higany érc + Láva az üstben → olvasztás</td><td>Folyékony higany (vödörrel szedhető)</td></tr>
   <tr><td><strong>Ősi Fém Hátizsák Fejlesztő</strong></td><td>Nagy hátizsák-fejlesztő + 4 Ősi fémrúd higanyba → ~30 mp várakozás</td><td>Ősi Fém hátizsák-fejlesztő tárgy, amely a hátizsákot fejleszti tovább</td></tr>
 </table>
@@ -160,9 +485,10 @@ const sidebarGroups = getSidebarGroups('reference');
 </ul></div>
 
 <p>Minden munkaasztalnak létezik <strong>Automata</strong> változata is (PCB-vel fejleszthető)!</p>
+<div class="tip-card">🔌 <strong>PCB / elektronikai panel:</strong> kézben tartva <strong>jobb klikkelj a munkaasztalra</strong>, és abból automata változat lesz. A helyi mod-doc szerint a PCB <strong>50%</strong> eséllyel jön az <strong>underground ancient skeleton spawner</strong> romok trófea-ládáiból.</div>
 
 <h3>Maximális Tárgy Minőség Anyagonként</h3>
-<p>Minden anyag csak egy bizonyos minőségi szintig képes tárgyat készíteni — a ritka anyagok legendás minőségű tárgyakat adhatnak:</p>
+<p>Minden anyag csak egy bizonyos minőségi szintig képes tárgyat készíteni. A ritkább anyagok fokozatosan nyitják meg a magasabb quality tier-eket, egészen a legendás szintig.</p>
 <div id="material-max-quality"></div>
 
 <h3>Kemence Tüzelőanyag Referencia</h3>
@@ -190,6 +516,94 @@ const sidebarGroups = getSidebarGroups('reference');
   <tr style="background:rgba(255,30,0,0.22)"><td><strong>⚠️ Adamantiumérc</strong></td><td><strong>4 ‼️</strong></td><td><strong>Blaze Pálca</strong></td><td>Adamantiumrúd</td></tr>
 </table>
 <div class="warning-box">🔥 <strong>Kritikus!</strong> Az Adamantium olvasztásához kizárólag <strong>Blaze Pálca (heat 4)</strong> és <strong>Nagy Kemence + Alvilágkő Kemence Mag</strong> szükséges — az Adamantium olvadáspontja (6 210°C) meghaladja az Obszidián Kemence Mag maximumát (5 000°C). Lávavödörrel nem olvad el!</div>
+
+<h3>Játékos parancsok</h3>
+<p>A ZIP-ben lévő <code>commands.txt</code> alapján ezek a parancsok minden játékos számára elérhetők:</p>
+<table class="compare-table">
+  <tr><th>Parancs</th><th>Leírás</th></tr>
+  {playerCommands.map((row) => (
+    <tr>
+      <td><code>{row.cmd}</code></td>
+      <td>{row.desc.hu}</td>
+    </tr>
+  ))}
+</table>
+<div class="info-box">📜 <strong>Megjegyzés:</strong> A <code>/skills</code> csak akkor releváns, ha a profession rendszer tényleg aktív. A <code>/stats</code> nem chatüzenetet ír, hanem külön szövegfájlt generál.</div>
+
+<h3>Elfogyasztható XP-nyersanyagok</h3>
+<p>A dekompilált <code>ItemRock</code> logika és a helyi item-docok alapján több nyersanyag is közvetlenül XP-vé alakítható jobb kattintással.</p>
+<table class="compare-table">
+  <tr><th>Tárgy</th><th>XP / darab</th><th>Hardcore</th><th>Megjegyzés</th></tr>
+  {xpConsumableRows.map((row) => (
+    <tr>
+      <td>{row.item.hu}</td>
+      <td><strong>{row.xp}</strong></td>
+      <td>{row.hardcore}</td>
+      <td>{row.note.hu}</td>
+    </tr>
+  ))}
+</table>
+<div class="info-box">💎 <strong>Gyakorlati használat:</strong> ezeket nem úgy érdemes kezelni, mint “random lootot”, hanem mint opcionális <strong>XP-tároló / XP-konverziós</strong> nyersanyagokat. A quartz, lapis és redstone reálisabban elégethető XP-re; a gyémánt és a smaragd már sokkal nagyobb opportunity cost.</div>
+
+<h3>Bővített tüzelőanyag-családok</h3>
+<p>A nyers <code>item_burn_time.txt</code> rengeteg fa-variánst és állomásblokkot listáz külön sorokban. Az alábbi táblázat ezek játékosbarát összefoglalója.</p>
+<table class="compare-table">
+  <tr><th>Tüzelőanyag-család</th><th>Égési idő</th><th>Hőfok</th><th>Megjegyzés</th></tr>
+  {expandedFuelFamilies.map((row) => (
+    <tr>
+      <td>{row.item.hu}</td>
+      <td>{row.burn}</td>
+      <td>{row.heat}</td>
+      <td>{row.note.hu}</td>
+    </tr>
+  ))}
+</table>
+
+<h3>Szerszám-hatékonyság és kopás</h3>
+<p>A ZIP külön referenciafájlt tart fenn minden fő szerszámosztályhoz. A lenti összehasonlítás a legfontosabb, játék közben is hasznos mintázatokat emeli ki.</p>
+<table class="compare-table">
+  <tr><th>Szerszám</th><th>Fő célblokkok</th><th>Harvest speed</th><th>Entity decay</th><th>Block decay</th><th>Példaértékek</th></tr>
+  {toolReferenceRows.map((row) => (
+    <tr>
+      <td>{row.tool.hu}</td>
+      <td>{row.targets.hu}</td>
+      <td>{row.speed.hu}</td>
+      <td>{row.entityDecay}</td>
+      <td>{row.blockDecay}</td>
+      <td>{row.examples.hu}</td>
+    </tr>
+  ))}
+</table>
+<div class="tip-card">⚒️ <strong>Gyakorlati következtetés:</strong> kő és ércek esetén a <strong>csákány</strong> a leggyorsabb alapválasztás, a <strong>háborús kalapács</strong> viszont ugyanarra a blokkcsaládra működik kisebb kopási faktorral. Ha tartósságot akarsz spórolni és belefér a lassabb törés, ez valódi alternatíva.</div>
+
+<h3>Silk Touch kivételek</h3>
+<p>A ZIP <code>silk_harvest.txt</code> alapján a legtöbb szokásos szilárd blokk Silk Touch-csal begyűjthető. Kő, ércek, üveg, rönkök és levelek jellemzően <strong>igen</strong>; az alábbiak kifejezetten <strong>nem</strong>.</p>
+<table class="compare-table">
+  <tr><th>Blokk / csoport</th><th>Silk Touch</th><th>Megjegyzés</th></tr>
+  {silkHarvestExceptions.map((row) => (
+    <tr>
+      <td>{row.block.hu}</td>
+      <td><strong>{row.silk.hu}</strong></td>
+      <td>{row.note.hu}</td>
+    </tr>
+  ))}
+</table>
+<div class="info-box">🧵 <strong>Röviden:</strong> a Silk Touch itt főleg normál építő- és nyersanyagblokkokra jó. Progression-blokkokat, folyadékokat és több utility blokkot a mod direkt kizár belőle.</div>
+
+<h3>Harvest level sarokpontok</h3>
+<p>A <code>harvest_level.txt</code> csak az 1-nél nagyobb szinteket listázza, ezért a legfontosabb töréspontokat itt emelem ki. Ez segít megérteni, mikor lépsz át ténylegesen új bányászati szintre.</p>
+<table class="compare-table">
+  <tr><th>Típus</th><th>Eszköz / blokk</th><th>Harvest level</th><th>Megjegyzés</th></tr>
+  {harvestLevelRows.map((row) => (
+    <tr>
+      <td>{row.type.hu}</td>
+      <td>{row.name.hu}</td>
+      <td><strong>{row.level}</strong></td>
+      <td>{row.note.hu}</td>
+    </tr>
+  ))}
+</table>
+<div class="warning-box">⛏️ <strong>Fontos:</strong> az, hogy egy blokk harvest levelje magasabb, nem mindig jelenti azt, hogy ugyanaz a blokk hőfok vagy progression szempontból is a következő lépcső. A nyers modadatban például a <strong>Mithril blokk (5)</strong> és az <strong>Adamantium blokk (6)</strong> jóval a saját ércük fölött vannak.</div>
 
 
 </div>
@@ -401,7 +815,7 @@ const sidebarGroups = getSidebarGroups('reference');
 <p>The Cauldron isn't just for water storage — it enables special recipes:</p>
 <table class="compare-table">
   <tr><th>Recipe</th><th>Process</th><th>Result</th></tr>
-  <tr><td><strong>Liquid Gold</strong></td><td>Cauldron under a lava source + drop in Gold ore → wait 10 sec</td><td>Liquid gold — enough for 4 Golden Apples (4 apples per cauldron)</td></tr>
+  <tr><td><strong>Golden Apple cauldron charge</strong></td><td>Cauldron under a lava source + 1 Gold Ore → wait about 30s, then use Apples on it</td><td>One charge converts up to 4 Apples into Golden Apples</td></tr>
   <tr><td><strong>Liquid Mercury</strong></td><td>Mercury ore + Lava in cauldron → smelting</td><td>Liquid mercury (collect with bucket)</td></tr>
   <tr><td><strong>Ancient Metal Backpack Upgrade</strong></td><td>Big Backpack Upgrade + 4 Ancient Metal Ingots in mercury → wait ~30 sec</td><td>Upgrade item for the Ancient Metal Backpack step</td></tr>
 </table>
@@ -476,9 +890,10 @@ const sidebarGroups = getSidebarGroups('reference');
 </ul></div>
 
 <p>Every workbench also has an <strong>Auto</strong> variant (upgradeable with PCB)!</p>
+<div class="tip-card">🔌 <strong>PCB:</strong> hold it in hand and <strong>right-click a workbench</strong> to turn it into its auto variant. According to the local mod-doc, PCBs have a <strong>50%</strong> chest chance in the trophy chests of <strong>underground ancient skeleton spawner</strong> ruins.</div>
 
 <h3>Maximum Item Quality by Material</h3>
-<p>Each material can only craft items up to a certain quality tier — rarer materials enable legendary quality items:</p>
+<p>Each material can only craft items up to a certain quality tier. Rarer materials gradually unlock higher quality tiers, up to legendary quality.</p>
 <div id="material-max-quality"></div>
 
 <h3>Furnace Fuel Reference</h3>
@@ -506,6 +921,94 @@ const sidebarGroups = getSidebarGroups('reference');
   <tr style="background:rgba(255,30,0,0.22)"><td><strong>⚠️ Adamantium ore</strong></td><td><strong>4 ‼️</strong></td><td><strong>Blaze Rod</strong></td><td>Adamantium ingot</td></tr>
 </table>
 <div class="warning-box">🔥 <strong>Critical!</strong> Only a <strong>Blaze Rod</strong> (heat 4) in a <strong>Blast Furnace with Netherrack Furnace Core</strong> can smelt Adamantium — its melting point (6,210°C) exceeds the Obsidian Furnace Core max (5,000°C). Lava buckets are not hot enough!</div>
+
+<h3>Player Commands</h3>
+<p>According to the ZIP's <code>commands.txt</code>, all players have access to the following commands:</p>
+<table class="compare-table">
+  <tr><th>Command</th><th>Description</th></tr>
+  {playerCommands.map((row) => (
+    <tr>
+      <td><code>{row.cmd}</code></td>
+      <td>{row.desc.en}</td>
+    </tr>
+  ))}
+</table>
+<div class="info-box">📜 <strong>Note:</strong> <code>/skills</code> matters only if professions are enabled in that world. <code>/stats</code> writes a plain-text report instead of just printing a short chat message.</div>
+
+<h3>Consumable XP Materials</h3>
+<p>Based on the decompiled <code>ItemRock</code> logic plus the local item docs, several raw materials can be converted directly into XP by right-click consumption.</p>
+<table class="compare-table">
+  <tr><th>Item</th><th>XP / use</th><th>Hardcore</th><th>Notes</th></tr>
+  {xpConsumableRows.map((row) => (
+    <tr>
+      <td>{row.item.en}</td>
+      <td><strong>{row.xp}</strong></td>
+      <td>{row.hardcore}</td>
+      <td>{row.note.en}</td>
+    </tr>
+  ))}
+</table>
+<div class="info-box">💎 <strong>Practical use:</strong> these are better understood as optional <strong>XP storage / XP conversion</strong> materials, not just random loot. Quartz, lapis and redstone are the most realistic to burn for experience; diamonds and emeralds carry a much heavier opportunity cost.</div>
+
+<h3>Expanded Fuel Families</h3>
+<p>The raw <code>item_burn_time.txt</code> lists many wood variants and utility blocks line by line. This table condenses those entries into player-facing fuel families.</p>
+<table class="compare-table">
+  <tr><th>Fuel family</th><th>Burn time</th><th>Heat</th><th>Notes</th></tr>
+  {expandedFuelFamilies.map((row) => (
+    <tr>
+      <td>{row.item.en}</td>
+      <td>{row.burn}</td>
+      <td>{row.heat}</td>
+      <td>{row.note.en}</td>
+    </tr>
+  ))}
+</table>
+
+<h3>Tool Efficiency and Wear</h3>
+<p>The ZIP keeps separate reference files for each major tool class. The table below surfaces the patterns that matter most in actual play.</p>
+<table class="compare-table">
+  <tr><th>Tool</th><th>Main target blocks</th><th>Harvest speed</th><th>Entity decay</th><th>Block decay</th><th>Example values</th></tr>
+  {toolReferenceRows.map((row) => (
+    <tr>
+      <td>{row.tool.en}</td>
+      <td>{row.targets.en}</td>
+      <td>{row.speed.en}</td>
+      <td>{row.entityDecay}</td>
+      <td>{row.blockDecay}</td>
+      <td>{row.examples.en}</td>
+    </tr>
+  ))}
+</table>
+<div class="tip-card">⚒️ <strong>Practical takeaway:</strong> the <strong>pickaxe</strong> is still the fastest default tool for stone and ores, but the <strong>war hammer</strong> works on the same block family with lower wear factors. If you can accept the slower harvest speed, it is a real durability-saving alternative.</div>
+
+<h3>Silk Touch Exceptions</h3>
+<p>According to the ZIP's <code>silk_harvest.txt</code>, most ordinary solid blocks can still be harvested with Silk Touch. Stone, ores, glass, logs and leaves are usually <strong>yes</strong>; the blocks below are explicit <strong>no</strong> cases.</p>
+<table class="compare-table">
+  <tr><th>Block / group</th><th>Silk Touch</th><th>Notes</th></tr>
+  {silkHarvestExceptions.map((row) => (
+    <tr>
+      <td>{row.block.en}</td>
+      <td><strong>{row.silk.en}</strong></td>
+      <td>{row.note.en}</td>
+    </tr>
+  ))}
+</table>
+<div class="info-box">🧵 <strong>Short version:</strong> Silk Touch is mostly for normal building and resource blocks here. Progression blocks, fluids and several utility blocks are deliberately excluded by the mod.</div>
+
+<h3>Harvest Level Breakpoints</h3>
+<p>The raw <code>harvest_level.txt</code> only lists levels above 0, so this table surfaces the breakpoints that matter most in practice. It is the clearest way to see when mining progression actually changes.</p>
+<table class="compare-table">
+  <tr><th>Type</th><th>Tool / block</th><th>Harvest level</th><th>Notes</th></tr>
+  {harvestLevelRows.map((row) => (
+    <tr>
+      <td>{row.type.en}</td>
+      <td>{row.name.en}</td>
+      <td><strong>{row.level}</strong></td>
+      <td>{row.note.en}</td>
+    </tr>
+  ))}
+</table>
+<div class="warning-box">⛏️ <strong>Important:</strong> a higher harvest level does not automatically mean the same thing as the next smelting tier or the next progression milestone. In the raw data, for example, a <strong>Mithril Block (5)</strong> and an <strong>Adamantium Block (6)</strong> sit well above their own ore tiers.</div>
 
 
 </div>
@@ -909,7 +1412,7 @@ const sidebarGroups = getSidebarGroups('reference');
 <p>Котёл нужен не только для воды — в нём можно готовить особые рецепты:</p>
 <table class="compare-table">
   <tr><th>Рецепт</th><th>Процесс</th><th>Результат</th></tr>
-  <tr><td><strong>Жидкое золото</strong></td><td>Поставьте котёл под источник лавы, бросьте золотую руду и подождите 10 секунд.</td><td>Жидкое золото, из которого можно сделать 4 золотых яблока</td></tr>
+  <tr><td><strong>Заряд котла для золотых яблок</strong></td><td>Поставьте котёл под источник лавы, добавьте 1 золотую руду, подождите около 30 секунд, затем используйте яблоки</td><td>Один заряд превращает до 4 яблок в золотые яблоки</td></tr>
   <tr><td><strong>Жидкая ртуть</strong></td><td>Руда ртути + лава в котле → дождитесь переплавки</td><td>Жидкая ртуть (можно набрать ведром)</td></tr>
   <tr><td><strong>Улучшение рюкзака из Древнего металла</strong></td><td>Погрузите большое улучшение рюкзака и 4 слитка Древнего металла в ртуть и подождите около 30 секунд.</td><td>Предмет улучшения для дальнейшего апгрейда рюкзака</td></tr>
 </table>
@@ -984,9 +1487,10 @@ const sidebarGroups = getSidebarGroups('reference');
 </ul></div>
 
 <p>У каждого верстака также есть вариант <strong>Авто</strong> (улучшается с помощью платы)!</p>
+<div class="tip-card">🔌 <strong>Плата / PCB:</strong> возьми её в руку и <strong>кликни ПКМ по верстаку</strong>, чтобы превратить его в автоматическую версию. По локальному mod-doc плата с шансом <strong>50%</strong> встречается в трофейных сундуках руин <strong>древнего скелетного спавнера</strong> в подземном мире.</div>
 
 <h3>Максимальное качество предметов по материалу</h3>
-<p>Каждый материал позволяет крафтить предметы только до определённого уровня качества — более редкие материалы открывают легендарное качество:</p>
+<p>Каждый материал позволяет крафтить предметы только до определённого уровня качества. Более редкие материалы постепенно открывают всё более высокие тиры качества, вплоть до легендарного.</p>
 <div id="material-max-quality"></div>
 
 <h3>Справочник топлива для печи</h3>
@@ -1014,6 +1518,94 @@ const sidebarGroups = getSidebarGroups('reference');
   <tr style="background:rgba(255,30,0,0.22)"><td><strong>⚠️ Адамантиевая руда</strong></td><td><strong>4 ‼️</strong></td><td><strong>Стержень Бласта</strong></td><td>Адамантиевый слиток</td></tr>
 </table>
 <div class="warning-box">🔥 <strong>Критически важно!</strong> Только <strong>Стержень Бласта</strong> (нагрев 4) в <strong>Доменной печи с Ядром из адского камня</strong> может расплавить адамант — его температура плавления (6 210°C) превышает максимум Ядра из обсидиана (5 000°C). Ведро лавы недостаточно горячее!</div>
+
+<h3>Команды игрока</h3>
+<p>Согласно <code>commands.txt</code> из ZIP, каждому игроку доступны следующие команды:</p>
+<table class="compare-table">
+  <tr><th>Команда</th><th>Описание</th></tr>
+  {playerCommands.map((row) => (
+    <tr>
+      <td><code>{row.cmd}</code></td>
+      <td>{row.desc.ru}</td>
+    </tr>
+  ))}
+</table>
+<div class="info-box">📜 <strong>Примечание:</strong> <code>/skills</code> имеет смысл только в мирах с активной системой профессий. <code>/stats</code> создаёт текстовый отчёт, а не просто короткое сообщение в чате.</div>
+
+<h3>Расходуемые XP-материалы</h3>
+<p>По данным декомпилированной логики <code>ItemRock</code> и локальных item-doc, несколько сырьевых материалов можно напрямую превращать в опыт по правому клику.</p>
+<table class="compare-table">
+  <tr><th>Предмет</th><th>XP / штука</th><th>Hardcore</th><th>Примечание</th></tr>
+  {xpConsumableRows.map((row) => (
+    <tr>
+      <td>{row.item.ru}</td>
+      <td><strong>{row.xp}</strong></td>
+      <td>{row.hardcore}</td>
+      <td>{row.note.ru}</td>
+    </tr>
+  ))}
+</table>
+<div class="info-box">💎 <strong>Практический смысл:</strong> такие предметы лучше воспринимать как дополнительное <strong>хранилище / конверсию опыта</strong>, а не просто как случайный лут. Кварц, лазурит и редстоун реалистичнее тратить на опыт; алмазы и изумруды стоят куда дороже с точки зрения прогресса.</div>
+
+<h3>Расширенные семейства топлива</h3>
+<p>Сырой <code>item_burn_time.txt</code> перечисляет множество древесных вариантов и служебных блоков отдельными строками. Здесь они сведены в удобные для игрока семейства топлива.</p>
+<table class="compare-table">
+  <tr><th>Семейство топлива</th><th>Время горения</th><th>Нагрев</th><th>Примечание</th></tr>
+  {expandedFuelFamilies.map((row) => (
+    <tr>
+      <td>{row.item.ru}</td>
+      <td>{row.burn}</td>
+      <td>{row.heat}</td>
+      <td>{row.note.ru}</td>
+    </tr>
+  ))}
+</table>
+
+<h3>Эффективность и износ инструментов</h3>
+<p>В ZIP есть отдельный справочный файл почти для каждого класса инструментов. В таблице ниже собраны самые полезные для реальной игры закономерности.</p>
+<table class="compare-table">
+  <tr><th>Инструмент</th><th>Основные целевые блоки</th><th>Скорость добычи</th><th>Износ по сущностям</th><th>Износ по блокам</th><th>Примеры значений</th></tr>
+  {toolReferenceRows.map((row) => (
+    <tr>
+      <td>{row.tool.ru}</td>
+      <td>{row.targets.ru}</td>
+      <td>{row.speed.ru}</td>
+      <td>{row.entityDecay}</td>
+      <td>{row.blockDecay}</td>
+      <td>{row.examples.ru}</td>
+    </tr>
+  ))}
+</table>
+<div class="tip-card">⚒️ <strong>Практический вывод:</strong> для камня и руд <strong>кирка</strong> остаётся самым быстрым базовым выбором, но <strong>боевой молот</strong> работает по тому же семейству блоков с меньшими коэффициентами износа. Если тебя устраивает более медленная добыча, это реальный способ экономить прочность.</div>
+
+<h3>Исключения Silk Touch</h3>
+<p>По данным ZIP-файла <code>silk_harvest.txt</code> большинство обычных твёрдых блоков всё ещё собираются с Silk Touch. Камень, руды, стекло, брёвна и листья в целом идут как <strong>да</strong>; ниже собраны важные случаи с явным <strong>нет</strong>.</p>
+<table class="compare-table">
+  <tr><th>Блок / группа</th><th>Silk Touch</th><th>Примечание</th></tr>
+  {silkHarvestExceptions.map((row) => (
+    <tr>
+      <td>{row.block.ru}</td>
+      <td><strong>{row.silk.ru}</strong></td>
+      <td>{row.note.ru}</td>
+    </tr>
+  ))}
+</table>
+<div class="info-box">🧵 <strong>Кратко:</strong> Silk Touch здесь в основном нужен для обычных строительных и ресурсных блоков. Прогресс-цели, жидкости и ряд служебных блоков мод специально исключает.</div>
+
+<h3>Ключевые пороги harvest level</h3>
+<p>В файле <code>harvest_level.txt</code> перечислены только значения выше 0, поэтому здесь вынесены самые полезные пороги. По ним легче понять, когда добыча реально переходит на новый этап.</p>
+<table class="compare-table">
+  <tr><th>Тип</th><th>Инструмент / блок</th><th>Harvest level</th><th>Примечание</th></tr>
+  {harvestLevelRows.map((row) => (
+    <tr>
+      <td>{row.type.ru}</td>
+      <td>{row.name.ru}</td>
+      <td><strong>{row.level}</strong></td>
+      <td>{row.note.ru}</td>
+    </tr>
+  ))}
+</table>
+<div class="warning-box">⛏️ <strong>Важно:</strong> более высокий harvest level не всегда означает тот же самый следующий этап плавки или прогресса. В сырых данных, например, <strong>мифриловый блок (5)</strong> и <strong>адамантовый блок (6)</strong> заметно выше порога собственных руд.</div>
 
 </div>
 <div data-lang="ru" id="blood-moon-ru">

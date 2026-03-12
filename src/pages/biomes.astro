@@ -69,11 +69,13 @@ const sidebarGroups = getSidebarGroups('biomes');
   <tr><td>Hőmérséklet</td><td>Mérsékelt — nincs fagyásveszély</td></tr>
   <tr><td>Fáklya különlegesség</td><td><strong>Fáklyák soha nem alszanak ki a Síkságon!</strong> Egyetlen biom, ahol ez igaz</td></tr>
   <tr><td>Szörny-megjelenés</td><td>Átlagos — éjszakai védekezés szükséges</td></tr>
-  <tr><td>Erőforrások</td><td>Búza, ló, tehén, birka — jó élelmiszerforrás</td></tr>
+  <tr><td>Erőforrások</td><td>Búza, ló, tehén, birka, eperbokrok — jó élelmiszerforrás és korai gyümölcs</td></tr>
   <tr><td>Falvak</td><td>Legtöbbször síkságon jelennek meg!</td></tr>
 </table>
 
 <div class="info-box">💡 <strong>Kezdő tipp:</strong> Ha a világ kezdőpontja a Síkságon van, maradj ott az első napokban — a fáklyák nem alszanak ki, ami sokat segít a védekezésben!</div>
+
+<div class="info-box">🍓 <strong>Eperbokrok:</strong> Az eper jobb klikkel szüretelhető a síksági bokrokról. A bokor letörve is dob gyümölcsöt, ollóval pedig egészben kivehető és csak síksági biomban ültethető vissza.</div>
 
 </div></div></div>
 </div>
@@ -87,12 +89,14 @@ const sidebarGroups = getSidebarGroups('biomes');
 <table class="compare-table">
   <tr><th>Tulajdonság</th><th>Részletek</th></tr>
   <tr><td>Hőmérséklet</td><td>Mérsékelt</td></tr>
-  <tr><td>Erőforrások</td><td>Tölgy, nyírfa, lucfenyő — rengeteg fa; gomba; alma</td></tr>
+  <tr><td>Erőforrások</td><td>Tölgy, nyírfa, lucfenyő, narancsfa, áfonyabokor — rengeteg fa és korai gyümölcs</td></tr>
   <tr><td>Veszélyek</td><td>Csökkentett látótávolság → a szörnyek közel kerülhetnek</td></tr>
   <tr><td>Fáklyák</td><td>Kialszanak 3 nap után (Hardcore módban)</td></tr>
 </table>
 
 <div class="warning-box">⚠️ <strong>Erdőben légy óvatos éjjel!</strong> A fák között a zombik és pókok közvetlen közelről támadnak. Kerítéssel és jól megvilágított bázissal védekezz.</div>
+
+<div class="info-box">🍊 <strong>Erdei gyümölcsroute:</strong> A narancs biztosan szerezhető az erdei narancsfákról, jobb klikkkel szedhető, ollóval pedig maga a növény is mozgatható. Az áfonyabokor erdőben is nő, és ez az a biom, ahová vissza is ültethető.</div>
 
 </div></div></div>
 </div>
@@ -112,6 +116,8 @@ const sidebarGroups = getSidebarGroups('biomes');
 </table>
 
 <div class="warning-box">🌡️ <strong>Testhőmérséklet:</strong> Tajgán éjjel + esőben gyorsan csökken. Ha nullára esik, megfagysz! Mindig legyen nálad pörkölt vagy meleg leves, és tartózkodj tűz közelében éjszaka.</div>
+
+<div class="info-box">❄️ <strong>Hógolyó utility:</strong> A tajgai hó nem csak dekoráció: a hógolyó eltalált szörnyre kb. <code>15%</code> eséllyel <code>Slowness I</code>-t rak <code>20 másodpercre</code>. Korai meneküléshez és kitinghoz hasznos.</div>
 
 </div></div></div>
 </div>
@@ -133,6 +139,8 @@ const sidebarGroups = getSidebarGroups('biomes');
 
 <div class="warning-box">🏜 <strong>Szitkozódó sivatagi őr:</strong> Ne becsüld alá! Gyors és erős. Mithril+ felszerelés ajánlott a torony megtámadásához.</div>
 
+<div class="info-box">♨️ <strong>Hőguta elleni gyorsmentés:</strong> A <code>Hot Water</code> sima vagy tiszta vízzel töltött tál kiégetéséből készül, és ivás után enyhíti a hőgutát. A sivataghoz ez praktikusabb biztosíték, mint csak a nyers vízkészlet.</div>
+
 </div></div></div>
 </div>
 
@@ -146,11 +154,15 @@ const sidebarGroups = getSidebarGroups('biomes');
   <tr><th>Tulajdonság</th><th>Részletek</th></tr>
   <tr><td>Hőmérséklet</td><td>Mérsékelt de nedves — a vízben tartózkodás lehűt</td></tr>
   <tr><td>Egyedi veszély</td><td><strong>Boszorkányok</strong> — méregbájitalokat dobnak; elvadult tündérek</td></tr>
-  <tr><td>Erőforrások</td><td>Iszap (clay), liliomlevél, mocsári fa</td></tr>
+  <tr><td>Erőforrások</td><td>Iszap (clay), liliomlevél, mocsári fa, higanyérc mélyen a mocsár alatt</td></tr>
   <tr><td>Barlangok</td><td>Iszapbarlangok — vízzel teli, nehéz navigálni</td></tr>
 </table>
 
 <div class="warning-box">🧪 <strong>Boszorkány:</strong> Ha méregbájitalt dob rád, azonnal fogyassz tejet (antidote) vagy menekülj! A mérgezés gyorsan öl alacsony életerőnél (HP).</div>
+
+<div class="info-box">☿ <strong>Mocsári higanyroute:</strong> A v0.9.0-s szabály szerint a higanyérc megbízhatóan mocsár alatt, kb. <code>Y25</code> alatt jelenik meg. Ez a teljes higanyvonal és a későbbi liquefied mercury mechanika alapja.</div>
+
+<div class="info-box">🪷 <strong>Mocsári utility:</strong> A liliomlevélből vízzel és cukorral könnyű korai leves készülhet. A mocsári romokban és a mocsári underground rétegekben elemi obszidián is előfordulhat, ami már a portál- és runestone-vonalhoz fontos.</div>
 
 </div></div></div>
 </div>
@@ -184,11 +196,15 @@ const sidebarGroups = getSidebarGroups('biomes');
   <tr><th>Tulajdonság</th><th>Részletek</th></tr>
   <tr><td>Hőmérséklet</td><td>Meleg és nedves</td></tr>
   <tr><td>Egyedi veszély</td><td>Mérgező pókok, dzsungel creeper variánsok</td></tr>
-  <tr><td>Erőforrások</td><td><strong>Bambusz</strong>, banán, kakaóbab, kókuszfa — egyedi ételek</td></tr>
+  <tr><td>Erőforrások</td><td><strong>Bambusz</strong>, banánfák, kakaóbab, kókuszpálmák, pitaya, szőlőbokrok — egyedi ételek és ültethető dzsungelnövények</td></tr>
   <tr><td>Navigáció</td><td>Nagyon sűrű — könnyen elveszhetsz</td></tr>
 </table>
 
 <div class="info-box">🍌 <strong>Dzsungel ételek:</strong> A banán, kókusz és kakaóbab csak a dzsungelben található. Ha ételkészítési képességed van (vagy v0.9.0+ foglalkozások), különleges receptekhez szükséges!</div>
+
+<div class="info-box">🌱 <strong>Dzsungelültetés:</strong> A banán-, kókusz- és pitayacsemeték csak jungle terrainön ültethetők vissza. A banán ritkán falevelekből is eshet, de a stabil forrás a dzsungelben újratermelődő banánfa.</div>
+
+<div class="info-box">🫐 <strong>Bokros szüret:</strong> A szőlő jobb klikkel szedhető a dzsungelbeli bokrokról. Az áfonyabokor dzsungelben is spawnolhat, jobb klikkel szüretelhető, ollóval pedig egész bokorként is kivehető.</div>
 
 </div></div></div>
 </div>
@@ -315,11 +331,13 @@ const sidebarGroups = getSidebarGroups('biomes');
   <tr><td>Temperature</td><td>Moderate — no freezing risk</td></tr>
   <tr><td>Torch special</td><td><strong>Torches NEVER burn out on Plains!</strong> The only biome where this is true</td></tr>
   <tr><td>Mob spawning</td><td>Normal — nighttime defense required</td></tr>
-  <tr><td>Resources</td><td>Wheat, horse, cow, sheep — good food source</td></tr>
+  <tr><td>Resources</td><td>Wheat, horse, cow, sheep, strawberry bushes — good food source and easy early fruit</td></tr>
   <tr><td>Villages</td><td>Most commonly spawn on Plains!</td></tr>
 </table>
 
 <div class="info-box">💡 <strong>Starter tip:</strong> If your world spawn is on Plains, stay there for the first few days — torches won't burn out, which greatly helps with defense!</div>
+
+<div class="info-box">🍓 <strong>Strawberry bushes:</strong> Strawberries are harvested by right-clicking plains bushes. Breaking the bush also drops fruit, and shears let you move the whole bush, but it can only be replanted in Plains biomes.</div>
 
 </div></div></div>
 </div>
@@ -332,12 +350,14 @@ const sidebarGroups = getSidebarGroups('biomes');
 <table class="compare-table">
   <tr><th>Property</th><th>Details</th></tr>
   <tr><td>Temperature</td><td>Moderate</td></tr>
-  <tr><td>Resources</td><td>Oak, birch, spruce — plenty of wood; mushrooms; apples</td></tr>
+  <tr><td>Resources</td><td>Oak, birch, spruce, orange trees, blueberry bushes — plenty of wood and easy fruit</td></tr>
   <tr><td>Dangers</td><td>Reduced visibility → mobs can get very close</td></tr>
   <tr><td>Torches</td><td>Burn out after 3 days (in Hardcore mode)</td></tr>
 </table>
 
 <div class="warning-box">⚠️ <strong>Be careful at night in the Forest!</strong> Zombies and spiders attack from very close range between the trees. Defend with fences and a well-lit base.</div>
+
+<div class="info-box">🍊 <strong>Forest fruit route:</strong> Orange trees are a reliable renewable fruit source here: right-click to harvest, or use shears to move the plant itself. Blueberry bushes also grow in forests, and this is the biome where they can be replanted.</div>
 
 </div></div></div>
 </div>
@@ -356,6 +376,8 @@ const sidebarGroups = getSidebarGroups('biomes');
 </table>
 
 <div class="warning-box">🌡️ <strong>Body temperature:</strong> Drops fast in Taiga at night + rain. If it hits zero, you die of cold! Always carry stew or warm soup, and stay near fire at night.</div>
+
+<div class="info-box">❄️ <strong>Snowball utility:</strong> Taiga snow is not just scenery: snowballs have about a <code>15%</code> chance to inflict <code>Slowness I</code> for <code>20 seconds</code> on hit. Useful for early kiting and disengaging.</div>
 
 </div></div></div>
 </div>
@@ -376,6 +398,8 @@ const sidebarGroups = getSidebarGroups('biomes');
 
 <div class="warning-box">🏜 <strong>Desert Guardian:</strong> Don't underestimate it! Fast and strong. Mithril+ gear recommended for attacking the Tower.</div>
 
+<div class="info-box">♨️ <strong>Heat-stroke backup:</strong> <code>Hot Water</code> is made by firing a normal or pure water bowl in a furnace, and drinking it relieves heat stroke. In desert runs this is a more practical safety tool than just carrying raw water.</div>
+
 </div></div></div>
 </div>
 
@@ -388,11 +412,15 @@ const sidebarGroups = getSidebarGroups('biomes');
   <tr><th>Property</th><th>Details</th></tr>
   <tr><td>Temperature</td><td>Moderate but wet — standing in water cools you down</td></tr>
   <tr><td>Unique danger</td><td><strong>Witches</strong> — throw poison potions; hostile fairies</td></tr>
-  <tr><td>Resources</td><td>Clay, lily pads, swamp wood</td></tr>
+  <tr><td>Resources</td><td>Clay, lily pads, swamp wood, mercury ore deep under the swamp</td></tr>
   <tr><td>Caves</td><td>Mud caves — water-filled, hard to navigate</td></tr>
 </table>
 
 <div class="warning-box">🧪 <strong>Witch:</strong> If it throws a poison potion at you, immediately drink milk (antidote) or flee! Poison kills quickly at low HP.</div>
+
+<div class="info-box">☿ <strong>Swamp mercury route:</strong> In v0.9.0, mercury ore reliably generates below about <code>Y25</code> under swamps. This is the backbone of the whole mercury material line and later liquefied-mercury mechanics.</div>
+
+<div class="info-box">🪷 <strong>Swamp utility:</strong> Lily pads feed into a light early soup route with water and sugar. Swamp ruins and deeper swamp layers can also contain Elemental Obsidian, which matters later for portals and runestones.</div>
 
 </div></div></div>
 </div>
@@ -424,11 +452,15 @@ const sidebarGroups = getSidebarGroups('biomes');
   <tr><th>Property</th><th>Details</th></tr>
   <tr><td>Temperature</td><td>Warm and humid</td></tr>
   <tr><td>Unique danger</td><td>Poisonous spiders, jungle creeper variants</td></tr>
-  <tr><td>Resources</td><td><strong>Bamboo</strong>, banana, cocoa beans, coconut palm — unique foods</td></tr>
+  <tr><td>Resources</td><td><strong>Bamboo</strong>, banana trees, cocoa beans, coconut palms, pitaya, grape bushes — unique foods and jungle-only crops</td></tr>
   <tr><td>Navigation</td><td>Very dense — easy to get lost</td></tr>
 </table>
 
 <div class="info-box">🍌 <strong>Jungle foods:</strong> Bananas, coconuts, and cocoa beans are only found in the jungle. They are used in special recipes if food preparation is enabled.</div>
+
+<div class="info-box">🌱 <strong>Jungle planting:</strong> Banana, coconut, and pitaya saplings can only be replanted on jungle terrain. Bananas can rarely drop from jungle leaves, but banana trees are the reliable renewable source.</div>
+
+<div class="info-box">🫐 <strong>Bush harvesting:</strong> Grapes are harvested by right-clicking jungle grape bushes. Blueberry bushes can also spawn here, can be picked with right-click, and can be cut up with shears to move the bush itself.</div>
 
 </div></div></div>
 </div>
@@ -551,11 +583,13 @@ const sidebarGroups = getSidebarGroups('biomes');
   <tr><td>Температура</td><td>Умеренная — нет риска замерзания</td></tr>
   <tr><td>Особенность факелов</td><td><strong>Факелы НИКОГДА не гаснут на Равнинах!</strong> Единственный биом, где это так</td></tr>
   <tr><td>Появление мобов</td><td>Обычное — требуется защита на ночь</td></tr>
-  <tr><td>Ресурсы</td><td>Пшеница, лошади, коровы и овцы — хороший источник пищи</td></tr>
+  <tr><td>Ресурсы</td><td>Пшеница, лошади, коровы, овцы, клубничные кусты — хороший источник еды и ранних фруктов</td></tr>
   <tr><td>Деревни</td><td>Чаще всего появляются на Равнинах!</td></tr>
 </table>
 
 <div class="info-box">💡 <strong>Совет новичку:</strong> Если точка спавна вашего мира находится на Равнинах, оставайтесь там в первые несколько дней — факелы не погаснут, что очень помогает с защитой!</div>
+
+<div class="info-box">🍓 <strong>Клубничные кусты:</strong> Клубника собирается правым кликом с кустов на равнинах. При сломе куст тоже может дать плод, а ножницы позволяют перенести весь куст, но высадить обратно его можно только на равнинах.</div>
 
 </div></div></div>
 </div>
@@ -568,12 +602,14 @@ const sidebarGroups = getSidebarGroups('biomes');
 <table class="compare-table">
   <tr><th>Свойство</th><th>Подробности</th></tr>
   <tr><td>Температура</td><td>Умеренная</td></tr>
-  <tr><td>Ресурсы</td><td>Дуб, берёза, ель — много древесины; грибы; яблоки</td></tr>
+  <tr><td>Ресурсы</td><td>Дуб, берёза, ель, апельсиновые деревья, кусты черники — много древесины и ранние фрукты</td></tr>
   <tr><td>Опасности</td><td>Сниженная видимость → мобы могут подойти очень близко</td></tr>
   <tr><td>Факелы</td><td>Гаснут через 3 дня (в режиме Hardcore)</td></tr>
 </table>
 
 <div class="warning-box">⚠️ <strong>Будьте осторожны ночью в Лесу!</strong> Зомби и пауки атакуют с близкого расстояния между деревьями. Защищайтесь заборами и хорошо освещённой базой.</div>
+
+<div class="info-box">🍊 <strong>Лесной фруктовый маршрут:</strong> Апельсиновые деревья дают стабильный возобновляемый источник фруктов: урожай собирается правым кликом, а ножницами можно перенести само растение. Кусты черники тоже растут в лесу, и именно здесь их можно высаживать обратно.</div>
 
 </div></div></div>
 </div>
@@ -592,6 +628,8 @@ const sidebarGroups = getSidebarGroups('biomes');
 </table>
 
 <div class="warning-box">🌡️ <strong>Температура тела:</strong> Быстро падает в Тайге ночью и в дождь. Если упадёт до нуля — вы замёрзнете насмерть! Всегда носите с собой похлёбку или тёплый суп и оставайтесь у огня ночью.</div>
+
+<div class="info-box">❄️ <strong>Польза снежков:</strong> Снег в тайге нужен не только для декора: снежок при попадании примерно с <code>15%</code> шансом накладывает <code>Slowness I</code> на <code>20 секунд</code>. Это полезно для раннего кайта и отхода.</div>
 
 </div></div></div>
 </div>
@@ -612,6 +650,8 @@ const sidebarGroups = getSidebarGroups('biomes');
 
 <div class="warning-box">🏜 <strong>Страж Пустыни:</strong> Не недооценивайте его! Быстрый и сильный. Для штурма Башни рекомендуется снаряжение из мифрила и выше.</div>
 
+<div class="info-box">♨️ <strong>Защита от теплового удара:</strong> <code>Hot Water</code> получается обжигом обычной или чистой миски с водой в печи, а после выпивания снимает heat stroke. Для походов в пустыню это надёжнее, чем просто носить сырую воду.</div>
+
 </div></div></div>
 </div>
 
@@ -624,11 +664,15 @@ const sidebarGroups = getSidebarGroups('biomes');
   <tr><th>Свойство</th><th>Подробности</th></tr>
   <tr><td>Температура</td><td>Умеренная, но влажная — нахождение в воде охлаждает</td></tr>
   <tr><td>Уникальная опасность</td><td><strong>Ведьмы</strong> — бросают зелья яда; враждебные феи</td></tr>
-  <tr><td>Ресурсы</td><td>Глина, листья кувшинки, болотная древесина</td></tr>
+  <tr><td>Ресурсы</td><td>Глина, листья кувшинки, болотная древесина, ртутная руда глубоко под болотом</td></tr>
   <tr><td>Пещеры</td><td>Грязевые пещеры — заполнены водой, трудно ориентироваться</td></tr>
 </table>
 
 <div class="warning-box">🧪 <strong>Ведьма:</strong> Если она попадёт в вас зельем яда, сразу выпейте молоко или отступайте. При низком запасе здоровья яд убивает очень быстро.</div>
+
+<div class="info-box">☿ <strong>Болотный маршрут ртути:</strong> По правилу v0.9.0 ртутная руда надёжно генерируется под болотами примерно ниже <code>Y25</code>. Это база всей ртутной линии и поздней механики liquefied mercury.</div>
+
+<div class="info-box">🪷 <strong>Полезности болота:</strong> Из листьев кувшинки с водой и сахаром готовится лёгкая ранняя похлёбка. В болотных руинах и глубоких слоях болот также может встречаться Elemental Obsidian, важный позже для порталов и runestones.</div>
 
 </div></div></div>
 </div>
@@ -660,11 +704,15 @@ const sidebarGroups = getSidebarGroups('biomes');
   <tr><th>Свойство</th><th>Подробности</th></tr>
   <tr><td>Температура</td><td>Тёплая и влажная</td></tr>
   <tr><td>Уникальная опасность</td><td>Ядовитые пауки и разновидности криперов джунглей</td></tr>
-  <tr><td>Ресурсы</td><td><strong>Бамбук</strong>, банан, какао-бобы, кокосовая пальма — уникальная еда</td></tr>
+  <tr><td>Ресурсы</td><td><strong>Бамбук</strong>, банановые деревья, какао-бобы, кокосовые пальмы, питахайя, виноградные кусты — уникальная еда и джунглевые культуры</td></tr>
   <tr><td>Навигация</td><td>Очень густые — легко заблудиться</td></tr>
 </table>
 
 <div class="info-box">🍌 <strong>Еда джунглей:</strong> Бананы, кокосы и какао-бобы встречаются только в джунглях. Они нужны для особых рецептов при наличии навыка приготовления пищи (или профессий, начиная с v0.9.0)!</div>
+
+<div class="info-box">🌱 <strong>Посадка в джунглях:</strong> Саженцы банана, кокоса и питахайи можно высаживать обратно только на jungle terrain. Бананы редко падают и с листвы, но надёжный возобновляемый источник — сами банановые деревья.</div>
+
+<div class="info-box">🫐 <strong>Сбор с кустов:</strong> Виноград собирается правым кликом с кустов в джунглях. Кусты черники тоже могут генерироваться здесь: их можно собирать правым кликом, а ножницами срезать и перенести целиком.</div>
 
 </div></div></div>
 </div>

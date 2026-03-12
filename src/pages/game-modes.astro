@@ -10,6 +10,86 @@ import '../styles/global.css';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const sidebarGroups = getSidebarGroups('game-modes');
+const qualityXpRows = [
+  {
+    item: { hu: 'Vascsákány', en: 'Iron Pickaxe', ru: 'Железная кирка' },
+    fine: '980',
+    excellent: '1,960',
+    superb: '3,920',
+    masterwork: '7,840',
+    legendary: '—',
+    note: {
+      hu: 'Jó korai referencia a normál XP-gazdálkodáshoz.',
+      en: 'A realistic early benchmark for XP planning.',
+      ru: 'Реалистичный ранний ориентир для планирования опыта.',
+    },
+  },
+  {
+    item: { hu: 'Vaskard', en: 'Iron Sword', ru: 'Железный меч' },
+    fine: '650',
+    excellent: '1,300',
+    superb: '2,600',
+    masterwork: '5,200',
+    legendary: '—',
+    note: {
+      hu: 'Olcsóbb, mint a csákány, ezért hamarabb megéri felhúzni.',
+      en: 'Cheaper than a pickaxe, so it becomes worth upgrading sooner.',
+      ru: 'Дешевле кирки, поэтому качественный крафт окупается раньше.',
+    },
+  },
+  {
+    item: { hu: 'Mithril csákány', en: 'Mithril Pickaxe', ru: 'Мифриловая кирка' },
+    fine: '7,700',
+    excellent: '15,400',
+    superb: '30,800',
+    masterwork: '61,600',
+    legendary: '123,200',
+    note: {
+      hu: 'Itt ugranak meg igazán a quality-költségek.',
+      en: 'This is where quality costs begin to spike hard.',
+      ru: 'Именно здесь стоимость качества начинает резко расти.',
+    },
+  },
+  {
+    item: { hu: 'Adamantium csákány', en: 'Adamantium Pickaxe', ru: 'Адамантовая кирка' },
+    fine: '30,740',
+    excellent: '61,480',
+    superb: '122,960',
+    masterwork: '245,920',
+    legendary: '491,840',
+    note: {
+      hu: 'Késői játékban is brutális XP-nyelő.',
+      en: 'A massive XP sink even in late game.',
+      ru: 'Огромная трата опыта даже в поздней игре.',
+    },
+  },
+  {
+    item: { hu: 'Mithril íj', en: 'Mithril Bow', ru: 'Мифриловый лук' },
+    fine: '2,620',
+    excellent: '5,240',
+    superb: '10,480',
+    masterwork: '20,960',
+    legendary: '41,920',
+    note: {
+      hu: 'A ranged build sokkal olcsóbban húzható fel, mint a páncél.',
+      en: 'Ranged gear scales much cheaper than heavy armor.',
+      ru: 'Дальний бой по качеству обходится заметно дешевле, чем тяжёлая броня.',
+    },
+  },
+  {
+    item: { hu: 'Adamantium mellvért', en: 'Adamantium Chestplate', ru: 'Адамантовый нагрудник' },
+    fine: '81,920',
+    excellent: '163,840',
+    superb: '327,680',
+    masterwork: '655,360',
+    legendary: '1,310,720',
+    note: {
+      hu: 'A legdrágább gyakorlati quality-upgrade-ek egyike.',
+      en: 'One of the most expensive practical quality upgrades in the mod.',
+      ru: 'Один из самых дорогих практически полезных апгрейдов качества в моде.',
+    },
+  },
+];
 ---
 <BaseLayout title="Game Modes — MITE:BE Wiki" description="Simple vs Hardcore mode comparison in MITE:BE: temperature, curses, moon cycle, torch burnout and other unique mechanics.">
   <Header />
@@ -46,7 +126,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr><th>Mechanika</th><th>Simple (Survivor)</th><th>Hardcore</th></tr>
   <tr><td><strong>Fáklya kialvás</strong></td><td>Idővel NEM alszanak ki, de eső eloltja!</td><td>✅ 3 nap után kialszanak + eső is eloltja</td></tr>
   <tr><td><strong>Falevél átjárhatóság</strong></td><td>❌ Tömör — rá lehet állni</td><td>✅ Átjárható — átesik rajta a játékos (fára mászáshoz extra blokkok kellenek)</td></tr>
-  <tr><td><strong>Kavics generálás</strong></td><td>75% esély</td><td>55% esély</td></tr>
+  <tr><td><strong>Aprókő generálás a földön</strong></td><td>75% esély, 2-4 kő / blokk</td><td>55% esély, 1-3 kő / blokk</td></tr>
   <tr><td><strong>Pajzs blokkolás</strong></td><td>Normál esély, 50% sebzéscsökkentés</td><td>−3% blokkolási esély, csak 20% sebzéscsökkentés</td></tr>
   <tr><td><strong>Érc csomók</strong></td><td>✅ Generálódnak</td><td>❌ Nem generálódnak érc csomók</td></tr>
   <tr><td><strong>Érc Y40 felett</strong></td><td>Normál eloszlás</td><td>Csak Adamantiumérc található Y40 felett</td></tr>
@@ -128,6 +208,22 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr><td style="color:var(--adamantium)">Legendás</td><td>Maximális tartósság</td></tr>
 </table>
 <div class="tip-card">💡 <strong>Normál minőség craftelése ingyenes (0 XP).</strong> Csak a magasabb minőség kerül XP-be, és ez elsősorban a <strong>tartósságot</strong> javítja. Tervezd meg az XP-d beosztását!</div>
+<p>A ZIP <code>item_xp_reqs.txt</code> fájlja itemenként is megadja a quality craft és javítás XP-költségeit. Az alábbiak jó minták arra, mennyire eltérő lehet ugyanaz a minőségi ugrás különböző tárgyaknál:</p>
+<table class="compare-table">
+  <tr><th>Tárgy</th><th>Jó</th><th>Kiváló</th><th>Kitűnő</th><th>Mestermű</th><th>Legendás</th><th>Megjegyzés</th></tr>
+  {qualityXpRows.map((row) => (
+    <tr>
+      <td>{row.item.hu}</td>
+      <td>{row.fine}</td>
+      <td>{row.excellent}</td>
+      <td>{row.superb}</td>
+      <td>{row.masterwork}</td>
+      <td>{row.legendary}</td>
+      <td>{row.note.hu}</td>
+    </tr>
+  ))}
+</table>
+<div class="info-box">📈 <strong>Gyakorlati következtetés:</strong> a quality rendszer nem fix szorzóval számol minden tárgynál. Fegyverek és íjak még kezelhetőek, de a <strong>Mithril / Adamantium szerszámok és páncélok</strong> már extrém XP-büdzsét igényelnek. A ZIP minta alapján a <strong>Legendás</strong> minőség jellemzően csak <strong>Mithril / Adamantium</strong> kategóriában jelenik meg.</div>
 
 <h3 id="stack-sizes">Korlátozott Kötegméret</h3>
 <p>A MITE:BE drastikusan csökkenti a legtöbb blokk kötegméretét. Ez komoly <strong>leltár- és tárolástervezést</strong> igényel!</p>
@@ -201,6 +297,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
   </tr>
 </table>
 <div class="info-box">💊 <strong>Gyógyítás:</strong> Savasság: vízbe merülés (−2/10mp) vagy Bőrápoló-üveg (10 percig dupla védelem). Oxigénhiány: Y45 feletti réteg (+1/2mp) vagy Oxigénpalack (−4 pont/db).</div>
+<div class="tip-card">🧴 <strong>Használat:</strong> a <strong>Bőrápoló-üveget</strong> és az <strong>Oxigénpalackot</strong> a hátizsákból a saját karaktered fejére jobb klikkelve használod. Az oxigénpalackhoz az üvegpalackot <strong>dzsungel terepen az égre kattintva</strong> lehet megtölteni.</div>
 
 <h3 id="moon-cycle">Hold Ciklus</h3>
 <p>A hold 7 különböző fázist vesz fel — mindegyik más hatást hoz! A legsúlyosabb a <strong>Vérhold</strong>, amely 6-szor evolválódik, egyre erősebb zombikat hozva.</p>
@@ -215,6 +312,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr style="background:rgba(255,100,50,0.12)"><td><strong>⚡ Elszámolás Napja</strong></td><td>96–97. nap</td><td>Vérholdas mobok + villám azonnal megöli a nyílt terepen lévő mobokat (nincs XP vagy zsákmány)</td></tr>
 </table>
 <div class="info-box">🎁 <strong>Vérhold utáni véletlenszerű bónusz</strong> (egy a négyből): mining speed +10% · Sebzés +1 · Vízfogyasztás −10% · Éhség/Telítettség fogyasztás −10%<br><strong>Evolúció:</strong> Minden vérholdnál (32., 64., 128…) a zombik erősebbek lesznek — növekvő sebzés, Életerő (HP) és blokktörő képesség!</div>
+<div class="tip-card">🔥 <strong><span class="wiki-item" data-id="torch_holy">Tisztító Fáklya</span>:</strong> v0.9.0-tól <strong>10 blokkos körben</strong> megvédi a terményeket a Vérhold miatti hervadástól, <strong>eső nem oltja ki</strong>, és Hardcore esős időben <strong>nem enged zombit spawnolni</strong> 10 blokkon belül. Recept: 1 Blaze Powder + 1 Fáklya a <strong>Kova Munkapadnál</strong>.</div>
 
 <h3 id="defecation">Ürítés Rendszer (J gomb)</h3>
 <p>Az ürítési mutató étkezéssel töltődik (főtt hús: +5, rothadt hús: +8, görögdinnye: +2, kenyér: +2). Ha eléri a 80-at, akaratlanul bekövetkezik (Hányinger 5 perc + Lassítás I 1 perc). Nyomj <strong>J</strong>-t a kézi ürítéshez!</p>
@@ -228,13 +326,15 @@ const sidebarGroups = getSidebarGroups('game-modes');
 <div class="tip-card">🌱 <strong>Trágya:</strong> Termőföldhöz adva növeli a termésmennyiséget. Ha 3+ napig nem üríted (és 50+ a mutató), az időtartam megduplázódik.</div>
 
 <h3 id="world-marker">Világjelölő &amp; szövetséges falusiak</h3>
-<p>A <strong>Világjelölő</strong> a helyi item-adatok alapján a világ újraéledési pontjának beállítására szolgál. A jelenlegi adatokban külön tételként szerepel a <strong>Respawn Anchor</strong> is, ezért itt nem kezelem őket ugyanannak a blokknek. <strong>Hardcore módban az újraéledéses funkciók nem használhatók.</strong></p>
+<p>A jelenlegi helyi leírások a <strong>Világjelölő</strong> és <strong>Respawn Anchor</strong> neveket keverve használják ugyanarra az újraéledési pontra ható blokkra. A biztos gameplay-funkció itt az, hogy a <strong>fővilágbeli újraéledési pontot</strong> állítja be. <strong>Hardcore módban az újraéledéses funkciók nem használhatók.</strong></p>
 <table class="compare-table">
   <tr><th>Szövetséges típusa</th><th>Belső azonosító</th><th>Leírás</th></tr>
   <tr><td><strong>Harcos falusi</strong></td><td>partner_sparta</td><td>Harci képességekkel rendelkező NPC szövetséges</td></tr>
   <tr><td><strong>Utazó falusi</strong></td><td>partner_traveller</td><td>Felfedezésben és szállítmányozásban segítő NPC</td></tr>
   <tr><td><strong>Bányász falusi</strong></td><td>partner_miner</td><td>Bányászatban specializált NPC szövetséges</td></tr>
 </table>
+<div class="tip-card">🧭 <strong>Kék iránytű:</strong> a <strong>Világjelölő</strong> receptjének része, de önmagában is használható helymegjelölésre. <strong>Shift+jobb klikk</strong> a kijelölni kívánt ponton, és utána arra mutat. A földalatti világban és a Netherben viszont megbízhatatlanná válik.</div>
+<div class="tip-card">📍 <strong>Világjelölő aktiválás:</strong> a helyi item-doc szerint <strong>vöröskő blokkal</strong> kell aktiválni, ekkor <strong>lila hullámokat</strong> bocsát ki, és csak a <strong>fővilágban</strong> működik. Kitermelni legalább <strong>vas csákánnyal</strong> lehet.</div>
 <div class="tip-card">🤝 <strong>Hordozás:</strong> Shift + jobb klikk egy entitáson → elkezded hordozni. Hasznos állatok áthelyezéséhez, szövetséges falusiak mozgatásához és kis élőlények elpakolásához.</div>
 
 <h3 id="debug-keys">Debug Billentyűk</h3>
@@ -252,7 +352,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr><th>Mechanic</th><th>Simple (Survivor)</th><th>Hardcore</th></tr>
   <tr><td><strong>Torch burnout</strong></td><td>No time-based burnout, but rain extinguishes!</td><td>✅ Burn out after 3 days + rain extinguishes</td></tr>
   <tr><td><strong>Leaf passability</strong></td><td>❌ Solid — can stand on them</td><td>✅ Passable — player falls through (extra blocks required for tree climbing)</td></tr>
-  <tr><td><strong>Gravel generation</strong></td><td>75% chance</td><td>55% chance</td></tr>
+  <tr><td><strong>Ground small-stone generation</strong></td><td>75% chance, 2-4 stones per block</td><td>55% chance, 1-3 stones per block</td></tr>
   <tr><td><strong>Shield blocking</strong></td><td>Normal chance, 50% damage reduction</td><td>−3% block chance, only 20% damage reduction</td></tr>
   <tr><td><strong>Ore clusters</strong></td><td>✅ Generate normally</td><td>❌ No ore clusters generate</td></tr>
   <tr><td><strong>Ore above Y40</strong></td><td>Normal distribution</td><td>Only Adamantium ore found above Y40</td></tr>
@@ -334,6 +434,22 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr><td style="color:var(--adamantium)">Legendary</td><td>+250% durability (Mithril/Adamantium only)</td></tr>
 </table>
 <div class="tip-card">💡 <strong>Normal quality crafting is free (0 XP).</strong> Only higher quality tiers cost XP, and the benefit is primarily increased <strong>durability</strong>. Plan your XP budget wisely!</div>
+<p>The ZIP's <code>item_xp_reqs.txt</code> also gives item-by-item XP costs for quality crafting and repairing. These examples show how different the same quality jump can be depending on the item:</p>
+<table class="compare-table">
+  <tr><th>Item</th><th>Fine</th><th>Excellent</th><th>Superb</th><th>Masterwork</th><th>Legendary</th><th>Notes</th></tr>
+  {qualityXpRows.map((row) => (
+    <tr>
+      <td>{row.item.en}</td>
+      <td>{row.fine}</td>
+      <td>{row.excellent}</td>
+      <td>{row.superb}</td>
+      <td>{row.masterwork}</td>
+      <td>{row.legendary}</td>
+      <td>{row.note.en}</td>
+    </tr>
+  ))}
+</table>
+<div class="info-box">📈 <strong>Practical takeaway:</strong> quality costs are not a flat multiplier across all items. Weapons and bows stay manageable, but <strong>Mithril / Adamantium tools and armor</strong> become extreme XP investments. In the ZIP sample, <strong>Legendary</strong> quality only appears on <strong>Mithril / Adamantium</strong>-grade gear.</div>
 
 <h3 id="stack-sizes-en">Reduced Stack Sizes</h3>
 <p>MITE:BE drastically reduces the stack size of most blocks. This demands careful <strong>inventory and storage planning</strong>!</p>
@@ -407,6 +523,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
   </tr>
 </table>
 <div class="info-box">💊 <strong>Cures:</strong> Acidity: submerge in water (−2/10s) or Skin Care Bottle (double protection for 10 min). Oxygen Deficiency: move above Y45 (+1/2s recovery) or Oxygen Bottle (−4 pts each).</div>
+<div class="tip-card">🧴 <strong>Usage:</strong> both the <strong>Skin Care Bottle</strong> and the <strong>Oxygen Bottle</strong> are used by right-clicking your character's head from the inventory. To make an oxygen bottle, hold a <strong>glass bottle in jungle terrain and right-click the sky</strong>.</div>
 
 <h3 id="moon-cycle-en">Moon Cycle</h3>
 <p>The moon has 7 different phases — each with unique effects! The most severe is the <strong>Blood Moon</strong>, which evolves 6 times, spawning increasingly powerful zombies.</p>
@@ -421,6 +538,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr style="background:rgba(255,100,50,0.12)"><td><strong>⚡ Day of Reckoning</strong></td><td>Days 96–97</td><td>Blood Moon mobs + lightning instantly kills exposed mobs (no XP/drops)</td></tr>
 </table>
 <div class="info-box">🎁 <strong>Post-Blood Moon random bonus</strong> (one of four): Mining speed +10% · Damage +1 · Water consumption −10% · Hunger/Saturation consumption −10%<br><strong>Evolution:</strong> Each Blood Moon (days 32, 64, 128…) makes zombies stronger — increasing damage, HP, and block-breaking ability!</div>
+<div class="tip-card">🔥 <strong><span class="wiki-item" data-id="torch_holy">Purifying Torch</span>:</strong> since v0.9.0 it protects crops from Blood Moon withering in a <strong>10-block radius</strong>, <strong>won't be extinguished by rain</strong>, and during Hardcore rainy weather it <strong>prevents zombie spawns</strong> within 10 blocks. Recipe: 1 Blaze Powder + 1 Torch at the <strong>Flint Workbench</strong>.</div>
 
 <h3 id="defecation-en">Defecation System (J key)</h3>
 <p>The defecation meter fills from eating (cooked meat: +5, rotten flesh: +8, watermelon: +2, bread: +2). At 80, it triggers involuntarily (Nausea for 5 min + Slowness I for 1 min). Press <strong>J</strong> to defecate manually!</p>
@@ -434,13 +552,15 @@ const sidebarGroups = getSidebarGroups('game-modes');
 <div class="tip-card">🌱 <strong>Manure:</strong> Applied to farmland, it increases crop yields. If you haven't defecated in 3+ days (and meter is 50+), the duration doubles.</div>
 
 <h3 id="world-marker-en">World Marker &amp; Allied Villagers</h3>
-<p>Based on the current item data, the <strong>World Marker</strong> is used to set the world's respawn point. The current data set also contains a separate <strong>Respawn Anchor</strong> item, so I am not treating them as the same block here. <strong>Respawn-related systems do not help in Hardcore mode.</strong></p>
+<p>The current local docs mix the names <strong>World Marker</strong> and <strong>Respawn Anchor</strong> for the same respawn-setting block line. The reliable gameplay function here is that it sets the <strong>overworld respawn point</strong>. <strong>Respawn-related systems do not help in Hardcore mode.</strong></p>
 <table class="compare-table">
   <tr><th>Partner Type</th><th>Internal ID</th><th>Description</th></tr>
   <tr><td><strong>Warrior Villager</strong></td><td>partner_sparta</td><td>A combat-capable NPC ally</td></tr>
   <tr><td><strong>Traveller</strong></td><td>partner_traveller</td><td>An NPC assistant for exploration and transport</td></tr>
   <tr><td><strong>Miner Villager</strong></td><td>partner_miner</td><td>A mining-specialized NPC ally</td></tr>
 </table>
+<div class="tip-card">🧭 <strong>Blue Compass:</strong> it is part of the <strong>World Marker</strong> recipe, but it also works as a personal marker tool. Use <strong>Shift-right-click</strong> at the spot you want to mark, and the needle will keep pointing there. In the Underground World and the Nether, it becomes unreliable.</div>
+<div class="tip-card">📍 <strong>World Marker activation:</strong> the local item-doc says it is activated with a <strong>Block of Redstone</strong>, after which it emits <strong>purple ripples</strong> and works only in the <strong>Overworld</strong>. It also requires at least an <strong>iron pickaxe</strong> to remove.</div>
 <div class="tip-card">🤝 <strong>Carrying:</strong> Shift + Right Click on an entity → you start carrying that entity. Useful for moving animals between farms, carrying NPC partners, and relocating small creatures.</div>
 
 <h3 id="debug-keys-en">Debug Keys</h3>
@@ -458,7 +578,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr><th>Механика</th><th>Simple (Survivor)</th><th>Hardcore</th></tr>
   <tr><td><strong>Угасание факелов</strong></td><td>Со временем НЕ гаснут, но дождь тушит!</td><td>✅ Гаснут через 3 дня + дождь тоже тушит</td></tr>
   <tr><td><strong>Проходимость листьев</strong></td><td>❌ Твёрдые — можно стоять</td><td>✅ Проходимые — игрок проваливается сквозь</td></tr>
-  <tr><td><strong>Генерация гравия</strong></td><td>75% шанс</td><td>55% шанс</td></tr>
+  <tr><td><strong>Генерация мелких камней на земле</strong></td><td>75% шанс, 2-4 камня</td><td>55% шанс, 1-3 камня</td></tr>
   <tr><td><strong>Блокировка щитом</strong></td><td>Обычный шанс, −50% урона</td><td>−3% шанс блока, только −20% урона</td></tr>
   <tr><td><strong>Жилы руды</strong></td><td>✅ Генерируются</td><td>❌ Жилы руды не генерируются</td></tr>
   <tr><td><strong>Руда выше Y40</strong></td><td>Обычное распределение</td><td>Только адамантиевая руда выше Y40</td></tr>
@@ -539,6 +659,22 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr><td style="color:var(--adamantium)">Легендарное</td><td>+250% прочности (только Мифрил/Адамант)</td></tr>
 </table>
 <div class="tip-card">💡 <strong>Крафт обычного качества бесплатен (0 опыта).</strong> Только более высокие уровни требуют опыта, и основной бонус — увеличенная <strong>прочность</strong>. Планируйте расход опыта заранее!</div>
+<p>В ZIP-файле <code>item_xp_reqs.txt</code> есть и предметные значения стоимости качества и ремонта. По ним хорошо видно, насколько разной может быть одна и та же ступень качества у разных вещей:</p>
+<table class="compare-table">
+  <tr><th>Предмет</th><th>Хорошее</th><th>Отличное</th><th>Превосходное</th><th>Шедевр</th><th>Легендарное</th><th>Примечание</th></tr>
+  {qualityXpRows.map((row) => (
+    <tr>
+      <td>{row.item.ru}</td>
+      <td>{row.fine}</td>
+      <td>{row.excellent}</td>
+      <td>{row.superb}</td>
+      <td>{row.masterwork}</td>
+      <td>{row.legendary}</td>
+      <td>{row.note.ru}</td>
+    </tr>
+  ))}
+</table>
+<div class="info-box">📈 <strong>Практический вывод:</strong> система качества не использует один и тот же множитель для всех предметов. Оружие и луки ещё относительно подъёмны, а вот <strong>мифриловые / адамантовые инструменты и броня</strong> требуют уже огромного запаса опыта. По данным ZIP <strong>легендарное</strong> качество обычно встречается только у <strong>мифриловых / адамантовых</strong> предметов.</div>
 
 <h3 id="stack-sizes-ru">Уменьшенные размеры стеков</h3>
 <p>MITE:BE резко уменьшает размеры стеков большинства блоков. Это требует тщательного <strong>планирования инвентаря и хранения</strong>!</p>
@@ -612,6 +748,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
   </tr>
 </table>
 <div class="info-box">💊 <strong>Лечение:</strong> Кислотность: погружение в воду (−2/10с) или Флакон ухода за кожей (двойная защита 10 мин). Нехватка кислорода: слой выше Y45 (+1/2с) или Баллон с кислородом (−4 очка/шт.).</div>
+<div class="tip-card">🧴 <strong>Использование:</strong> <strong>Флакон ухода за кожей</strong> и <strong>Баллон с кислородом</strong> применяются ПКМ по голове персонажа из инвентаря. Чтобы получить баллон с кислородом, нужно держать <strong>стеклянную бутылку в джунглях и кликнуть по небу</strong>.</div>
 
 <h3 id="moon-cycle-ru">Цикл луны</h3>
 <p>Луна имеет 7 различных фаз — каждая со своими эффектами! Наиболее опасная — <strong>Кровавая луна</strong>, которая эволюционирует 6 раз, порождая всё более сильных зомби.</p>
@@ -626,6 +763,7 @@ const sidebarGroups = getSidebarGroups('game-modes');
   <tr style="background:rgba(255,100,50,0.12)"><td><strong>⚡ День расплаты</strong></td><td>Дни 96–97</td><td>Мобы Кровавой луны + молнии мгновенно убивают открытых мобов (без опыта/дропа)</td></tr>
 </table>
 <div class="info-box">🎁 <strong>Случайный бонус после Кровавой луны</strong> (один из четырёх): скорость добычи +10% · Урон +1 · Потребление воды −10% · Потребление голода/сытости −10%</div>
+<div class="tip-card">🔥 <strong><span class="wiki-item" data-id="torch_holy">Очищающий факел</span>:</strong> с v0.9.0 защищает урожай от увядания во время Кровавой луны в <strong>радиусе 10 блоков</strong>, <strong>не гаснет под дождём</strong>, а в Hardcore при дожде <strong>не даёт зомби спавниться</strong> в пределах 10 блоков. Рецепт: 1 Blaze Powder + 1 Факел на <strong>Кремнёвом верстаке</strong>.</div>
 
 <h3 id="defecation-ru">Система дефекации (клавиша J)</h3>
 <p>Показатель заполняется при еде (жареное мясо: +5, гнилое мясо: +8, арбуз: +2, хлеб: +2). При достижении 80 — непроизвольное опорожнение (Тошнота 5 мин + Замедление I 1 мин). Нажми <strong>J</strong> для ручного опорожнения!</p>
@@ -639,13 +777,15 @@ const sidebarGroups = getSidebarGroups('game-modes');
 <div class="tip-card">🌱 <strong>Навоз:</strong> Улучшает урожайность при внесении в почву. Если не опорожняться 3+ дней (при показателе 50+), длительность удваивается.</div>
 
 <h3 id="world-marker-ru">Мировой маркер &amp; NPC-напарники</h3>
-<p>По локальным данным предметов <strong>Маркер мира</strong> служит для задания мировой точки возрождения. При этом в данных отдельно присутствует и <strong>Якорь возрождения</strong>, поэтому здесь я не считаю их одним и тем же блоком. <strong>В Hardcore механики возрождения не помогают.</strong></p>
+<p>Текущие локальные описания смешивают названия <strong>Маркер мира</strong> и <strong>Якорь возрождения</strong> для одной и той же линии блока, связанного с возрождением. Надёжно подтверждённая игровая функция здесь одна: он задаёт <strong>точку возрождения в Верхнем мире</strong>. <strong>В Hardcore механики возрождения не помогают.</strong></p>
 <table class="compare-table">
   <tr><th>Тип напарника</th><th>Внутренний ID</th><th>Описание</th></tr>
   <tr><td><strong>Воин-деревенщик</strong></td><td>partner_sparta</td><td>NPC-союзник с боевыми навыками</td></tr>
   <tr><td><strong>Странник</strong></td><td>partner_traveller</td><td>NPC-помощник для исследования и транспортировки</td></tr>
   <tr><td><strong>Шахтёр-деревенщик</strong></td><td>partner_miner</td><td>NPC-союзник, специализированный на добыче</td></tr>
 </table>
+<div class="tip-card">🧭 <strong>Синий компас:</strong> он нужен для рецепта <strong>Маркера мира</strong>, но сам по себе тоже служит меткой точки. Сделай <strong>Shift+ПКМ</strong> в нужном месте, и стрелка будет указывать туда. В Подземном мире и в Незере он работает ненадёжно.</div>
+<div class="tip-card">📍 <strong>Активация Маркера мира:</strong> по локальному item-doc он активируется <strong>блоком красного камня</strong>, после чего испускает <strong>фиолетовые волны</strong> и работает только в <strong>Верхнем мире</strong>. Снимать его нужно как минимум <strong>железной киркой</strong>.</div>
 <div class="tip-card">🤝 <strong>Перенос:</strong> Shift + ПКМ по сущности → начинаешь нести её. Удобно для перемещения животных, переноски NPC-напарников и небольших существ.</div>
 
 <h3 id="debug-keys-ru">Отладочные клавиши</h3>

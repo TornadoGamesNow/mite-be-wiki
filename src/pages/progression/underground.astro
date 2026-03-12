@@ -63,17 +63,17 @@ const sidebarGroups = getSidebarGroups('progression/underground');
   <tr>
     <td><strong>2 — Réz/Ezüst szint</strong></td>
     <td>Réz, Ezüst, Arany, Bronz, Ezüst-Réz, Obszidián, Rozsdás Vasalt csákány</td>
-    <td><strong>Kő</strong>, Szén/Vas/Arany/Réz/Ezüst/Lápiszuli/Vöröskő (Redstone) érc, Rézblokk, Ezüstblokk, Arany blokk (2)</td>
+    <td><strong>Kő</strong>, Szén/Vas/Arany/Réz/Ezüst/Lápiszuli/Vöröskő (Redstone) érc</td>
   </tr>
   <tr>
     <td><strong>3 — Vas szint</strong></td>
     <td>Vas, Ősi Fém, Keménykő, Szénacél csákány</td>
-    <td><strong>Obszidián</strong>, Smaragd érc, <strong>Mithrilérc</strong>, <strong>Keménykő érc</strong>, Vasblokk (4!), Aranyblokk (3)</td>
+    <td><strong>Obszidián</strong>, Smaragd érc, <strong>Mithrilérc</strong>, <strong>Keménykő érc</strong>, Aranyblokk (3), Réz/Ezüst blokk (3)</td>
   </tr>
   <tr>
     <td><strong>4 — Mithril szint</strong></td>
     <td>Mithrilcsákány</td>
-    <td><strong>Gyémánt érc</strong>, <strong>Adamantiumérc</strong>, Vasblokk, Keménykőblokk (4)</td>
+    <td><strong>Gyémánt érc</strong>, <strong>Adamantiumérc</strong>, <strong>Vasblokk (4)</strong>, Keménykőblokk (4)</td>
   </tr>
   <tr>
     <td><strong>5 — Adamantium szint</strong></td>
@@ -86,7 +86,7 @@ const sidebarGroups = getSidebarGroups('progression/underground');
     <td>Bedrock (Alapkő)</td>
   </tr>
 </table>
-<div class="warning-box"><strong>⚠️ Fontos:</strong> Gyémántércet <em>NEM tudsz</em> vascsákánnyal bányászni! Mithrilcsákány kell hozzá. Adamantiumérchez is legalább mithrilcsákány szükséges. Ez az oka, hogy a Mithril korszak áttörés a játékban.</div>
+<div class="warning-box"><strong>⚠️ Fontos:</strong> Gyémántércet <em>NEM tudsz</em> vascsákánnyal bányászni! Mithrilcsákány kell hozzá. A fémblokkok (pl. Vasblokk) visszaszerzéséhez is eggyel magasabb szintű csákány kell, mint az alapanyaguk!</div>
 
 <h3>Mob Tapasztalat (XP) Táblázat</h3>
 <p>Gyorsan gazdag tapasztalatra akarsz szert tenni? Ezek a lények adják a legtöbb XP-t:</p>
@@ -94,11 +94,11 @@ const sidebarGroups = getSidebarGroups('progression/underground');
   <tr><th>Lény</th><th>XP</th><th>Helyszín</th></tr>
   <tr><td>Mutáns Csontváz Úr</td><td style="color:#a0f"><strong>1000</strong></td><td>Mélybarlang/Földalatti világ — Boss</td></tr>
   <tr><td>Obszidián Gólem</td><td style="color:#f44"><strong>150</strong></td><td>Földalatti világ</td></tr>
-  <tr><td>Ender Sárkány</td><td style="color:#f44"><strong>100</strong></td><td>The End</td></tr>
+  <tr><td>Ender Sárkány</td><td style="color:#f44"><strong>200</strong></td><td>The End</td></tr>
   <tr><td>Zombihívó</td><td style="color:#ff0"><strong>80</strong></td><td>Temetők/Földalatti világ</td></tr>
   <tr><td>Wither (Hervadó)</td><td style="color:#ff0"><strong>50</strong></td><td>Alvilági boss</td></tr>
   <tr><td>Barlang Pók</td><td style="color:#5f5"><strong>10</strong></td><td>Barlangrendszerek</td></tr>
-  <tr><td>Zombi</td><td style="color:#5f5"><strong>15</strong></td><td>Mindenütt éjjel</td></tr>
+  <tr><td>Zombi</td><td style="color:#5f5"><strong>5</strong></td><td>Mindenütt éjjel</td></tr>
   <tr><td>Csontváz/Creeper/Pók</td><td style="color:#aaa"><strong>5</strong></td><td>Mindenütt éjjel</td></tr>
   <tr><td>Elefánt 🐘</td><td style="color:#aaa"><strong>5</strong></td><td>Szavanna</td></tr>
 </table>
@@ -176,7 +176,7 @@ const sidebarGroups = getSidebarGroups('progression/underground');
   <li>Gyorsabb spawn ráta mint korábban</li>
   <li>Jutalmak csökkentve: a <strong>Szénkristály eltávolítva</strong> a lootból, helyette kevésbé értékes ásványok</li>
 </ul>
-<strong>Ne menj be felkészületlenül</strong> — bűvített arany alma és minimum Keménykő/Ősi Fém felszerelés szükséges!</div>
+<strong>Ne menj be felkészületlenül</strong> — Arany alma (az azonnali gyógyuláshoz és extra telítettséghez) és minimum Keménykő/Ősi Fém felszerelés szükséges!</div>
 <div class="tip-card">🏰 <strong>Pillager-erőd romportál (fővilágból):</strong> A fővilágban ásd le magad az alapkőrétegig, majd építs ott <strong>Obszidián portált</strong> és gyújtsd meg Tűzgyújtóval. A v0.9.0 kínai leírás szerint ez a portál egy <strong>elhagyott Pillager-erőd romjaihoz</strong> vezet, nem egy őrtorony tetejére.</div>
 <div class="tip-card">⚙️ <strong>Pillager tábor föld alatti mechanizmus:</strong> Az underground Pillager táborban <strong>üllőket kell lerakni a tábor körül, majd a közepén egy kart aktiválni</strong> → ez megnyit egy földalatti kamrát, amely <strong>Adamantium-, Mithril- és Vöröskőblokkokat</strong> tartalmaz. Ez az egyik legfőbb mithrilforrás a játékban.</div>
 
@@ -190,6 +190,11 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 <h2 id="hardstone">Keménykő</h2>
 <p>A <span class="wiki-item" data-id="hardstone_pickaxe">keménykő</span> egy rejtélyes anyag a Földalatti világból. Talán ősi erő lakozik benne.</p>
 <p>Teljes készlet készíthető belőle: csákány, fejsze, kard, tőr, háborús kalapács, kasza, kapa, lapát, sisak, mellvért, lábvért, csizma, vödör, olló, munkaasztal és üllő.</p>
+<ul>
+  <li>A keménykő felszerelések ellenállnak a korróziónak.</li>
+  <li>A helyi itemadat szerint nagyjából <strong>20%-kal lassabban kopnak</strong>, mint a normál megfelelőik.</li>
+  <li>A <strong>keménykő csákány</strong> sebzi a föld elementálokat, és <strong>Selyemérintés nélkül is tud jeget bányászni</strong>.</li>
+</ul>
 <p><em>Megjegyzés: A foglalkozás rendszer jelenleg nincs bevezetve — nincs korlátozás a készítéshez.</em></p>
 
 <div class="craft-section">
@@ -271,11 +276,11 @@ const sidebarGroups = getSidebarGroups('progression/underground');
   <tr><th>Mob</th><th>XP</th><th>Location</th></tr>
   <tr><td>Variant Skeleton Lord</td><td style="color:#a0f"><strong>1000</strong></td><td>Deep Caves/Underground — Boss</td></tr>
   <tr><td>Obsidian Golem</td><td style="color:#f44"><strong>150</strong></td><td>Underground</td></tr>
-  <tr><td>Ender Dragon</td><td style="color:#f44"><strong>100</strong></td><td>The End</td></tr>
+  <tr><td>Ender Dragon</td><td style="color:#f44"><strong>200</strong></td><td>The End</td></tr>
   <tr><td>Zombie Caller</td><td style="color:#ff0"><strong>80</strong></td><td>Graveyards/Underground</td></tr>
   <tr><td>Wither</td><td style="color:#ff0"><strong>50</strong></td><td>Nether Boss</td></tr>
   <tr><td>Cave Spider</td><td style="color:#5f5"><strong>10</strong></td><td>Cave systems</td></tr>
-  <tr><td>Zombie</td><td style="color:#5f5"><strong>15</strong></td><td>Night-time everywhere</td></tr>
+  <tr><td>Zombie</td><td style="color:#5f5"><strong>5</strong></td><td>Night-time everywhere</td></tr>
   <tr><td>Skeleton/Creeper/Spider</td><td style="color:#aaa"><strong>5</strong></td><td>Night-time everywhere</td></tr>
   <tr><td>Elephant 🐘</td><td style="color:#aaa"><strong>5</strong></td><td>Savanna</td></tr>
 </table>
@@ -342,7 +347,7 @@ const sidebarGroups = getSidebarGroups('progression/underground');
   <li>Faster spawn rate than before</li>
   <li>Rewards reduced: <strong>Carbon Crystal removed</strong> from loot, replaced with less valuable minerals</li>
 </ul>
-<strong>Do not enter unprepared</strong> — enchanted golden apple and at least Hardstone/Ancient Metal gear is required!</div>
+<strong>Do not enter unprepared</strong> — Golden Apple (for instant healing and extra saturation) and at least Hardstone/Ancient Metal gear is required!</div>
 <div class="tip-card">⚙️ <strong>Pillager camp underground mechanism:</strong> In the underground Pillager camp, <strong>place anvils around the camp + activate a lever in the center</strong> → this opens an underground chamber containing <strong>Adamantium, Mithril, and Redstone blocks</strong>. This is one of the main mithril sources in the game!</div>
 
 <h3>Underground → Nether Gateway</h3>
@@ -355,6 +360,11 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 <h2 id="hardstone">Hardstone</h2>
 <p>Hardstone is a mysterious material from the Underground. Perhaps ancient power resides within it.</p>
 <p>A full set can be crafted: pickaxe, axe, sword, dagger, war hammer, scythe, hoe, shovel, helmet, chestplate, leggings, boots, bucket, shears, workbench, anvil.</p>
+<ul>
+  <li>Hardstone gear resists corrosion.</li>
+  <li>Local item data gives it roughly <strong>20% less durability loss</strong> than its normal counterparts.</li>
+  <li>The <strong>Hardstone Pickaxe</strong> damages earth elementals and can <strong>mine ice without Silk Touch</strong>.</li>
+</ul>
 
 <div class="craft-section">
   <CraftingGrid recipeOutput="hard_stone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword"}}/>
@@ -408,11 +418,11 @@ const sidebarGroups = getSidebarGroups('progression/underground');
   <tr><th>Существо</th><th>XP</th><th>Место</th></tr>
   <tr><td>Властелин Скелетов-Мутантов</td><td style="color:#a0f"><strong>1000</strong></td><td>Глубокие пещеры/Подземный мир — Босс</td></tr>
   <tr><td>Обсидиановый Голем</td><td style="color:#f44"><strong>150</strong></td><td>Подземный мир</td></tr>
-  <tr><td>Дракон Эндера</td><td style="color:#f44"><strong>100</strong></td><td>Энд</td></tr>
+  <tr><td>Дракон Эндера</td><td style="color:#f44"><strong>200</strong></td><td>Энд</td></tr>
   <tr><td>Призыватель Зомби</td><td style="color:#ff0"><strong>80</strong></td><td>Кладбища/Подземный мир</td></tr>
   <tr><td>Иссушитель (Wither)</td><td style="color:#ff0"><strong>50</strong></td><td>Незер — Босс</td></tr>
   <tr><td>Пещерный паук</td><td style="color:#5f5"><strong>10</strong></td><td>Пещерные системы</td></tr>
-  <tr><td>Зомби</td><td style="color:#5f5"><strong>15</strong></td><td>Везде ночью</td></tr>
+  <tr><td>Зомби</td><td style="color:#5f5"><strong>5</strong></td><td>Везде ночью</td></tr>
   <tr><td>Скелет/Крипер/Паук</td><td style="color:#aaa"><strong>5</strong></td><td>Везде ночью</td></tr>
 </table>
 
@@ -491,6 +501,11 @@ const sidebarGroups = getSidebarGroups('progression/underground');
 <h2 id="hardstone">Твердокамень</h2>
 <p>Таинственный материал из Подземного мира. Возможно, в нём живёт древняя сила.</p>
 <p>Полный набор: кирка, топор, меч, кинжал, молот войны, коса, мотыга, лопата, шлем, нагрудник, поножи, ботинки, ведро, ножницы, верстак, наковальня.</p>
+<ul>
+  <li>Снаряжение из твердокамня устойчиво к коррозии.</li>
+  <li>По локальным item-data оно теряет примерно <strong>на 20% меньше прочности</strong>, чем обычные аналоги.</li>
+  <li><strong>Твердокаменная кирка</strong> бьёт земляных элементалей и может <strong>добывать лёд без Шёлкового касания</strong>.</li>
+</ul>
 <div class="craft-section">
   <CraftingGrid recipeOutput="hard_stone_sword" label={{hu: "Keménykő Kard", en: "Hardstone Sword", ru: "Твердокаменный меч"}}/>
   <CraftingGrid recipeOutput="hard_stone_pickaxe" label={{hu: "Keménykő Csákány", en: "Hardstone Pickaxe", ru: "Твердокаменная кирка"}}/>

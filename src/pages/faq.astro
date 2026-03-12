@@ -23,7 +23,7 @@ const sidebarGroups = getSidebarGroups('faq');
 <div class="faq-list">
 <div class="faq-item">
 <h4>❓ Miért nem tudom letörni a fát puszta kézzel?</h4>
-<p>MITE:BE-ben <strong>semmit nem tudsz puszta kézzel eltörni</strong>. Fához <strong>Kova Balta</strong> kell (Kova + Bőrkötél + 2 Fabot) — a kés csak bőrvágásra és fű vágásra jó, nem favágásra! Lásd a Kova korszak szekciót.</p>
+<p>MITE:BE-ben <strong>fát puszta kézzel nem tudsz kitermelni</strong>, és a legtöbb szilárd blokkhoz is megfelelő szerszám kell. Korai kivétel a magas fű és a kavics. Fához <strong>Kova Balta</strong> kell — a kés nem favágásra való. Lásd a Kova korszak szekciót.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Hogyan szerzek kovát az elején?</h4>
@@ -55,6 +55,7 @@ const sidebarGroups = getSidebarGroups('faq');
 <p><strong>Hardcore módban:</strong> Igen! Az elhelyezett fáklyák <strong>3 játékbeli nap</strong> után kialszanak. Emellett az <strong>eső is eloltja</strong> a szabadban lévő fáklyákat.</p>
 <p><strong>Simple módban:</strong> A fáklyák <strong>NEM alszanak ki</strong> idővel — de az <strong>eső itt is eloltja</strong> őket! Fedett helyre tedd a fáklyáidat.</p>
 <p>Mindkét módban: ha a menedéked sötétbe kerül, mobok jelenhetnek meg benne. Mindig legyen nálad <strong>Tűzütő</strong> (legkorábbi: Réz Tűzütő = Réz Ércdarab + Kova). <strong>Kivétel:</strong> Síkság biome-ban a fáklyák soha nem alszanak ki!</p>
+<p><strong>Extra utility:</strong> bármely <strong>íj ki tud lőni fáklyát</strong>, ami ott helyeződik le, ahol földet ér. A <strong>kialudt fáklya</strong> pedig <strong>Tűzütővel vagy egy égő fáklyával</strong> újragyújtható.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Miért bányássza ki a zombi a falamat?</h4>
@@ -66,7 +67,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ Hogyan jutok vissza biome portálból?</h4>
-<p>Építs egy <strong>normál obszidián keretet bárhol a fővilágban</strong> (NEM alapkőrétegen!) és gyújtsd meg — ez visszavisz a <strong>világ spawnpontjára</strong>. Biome portál visszafelé nem kell. Ha a spawn nem ideális, a <strong>Világjelölő</strong> Tudáskönyv feloldásával átállíthatod a világ újraéledési pontját.</p>
+<p>Építs egy <strong>normál obszidián keretet bárhol a fővilágban</strong> (NEM alapkőrétegen!) és gyújtsd meg — ez visszavisz a <strong>világ aktuális újraéledési pontjára</strong>. Biome portál visszafelé nem kell. Ha aktiváltál <strong>Világjelölőt</strong>, akkor ez lesz a visszaérkezési pont.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Nem jelennek meg falvak vagy pillagerek a világomban!</h4>
@@ -86,7 +87,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ Hogyan működik az Üst (Cauldron)?</h4>
-<p>Az Üst nem csak vizet tárol! <strong>Lávaforrás alá</strong> téve speciális receptekhez használható: Arany érc beledobása = <strong>Folyékony Arany</strong> (4 Aranyalma készíthető). Higany érc + Láva = <strong>Folyékony Higany</strong>. A v0.9.0-ban a biztosan igazolt hátizsákos higanyrecept: <strong>Nagy Hátizsák Fejlesztő + 4 Ősi Fém rúd</strong> → <strong>Ősi Fém Hátizsák Fejlesztő</strong> (kb. 30 mp, alul magma/láva hőforrás). Lásd a Referencia oldalon a Bájitalok szekciót.</p>
+<p>Az Üst nem csak vizet tárol! <strong>Lávaforrás alá</strong> téve speciális receptekhez használható: a helyi cauldron-leírás szerint <strong>1 aranyérc</strong> kb. 30 mp alatt feltölti az üstöt, utána arra <strong>almákat kell használni</strong>, és egy feltöltéssel <strong>legfeljebb 4 Aranyalma</strong> készíthető. Higany érc + Láva = <strong>Folyékony Higany</strong>. A jelenlegi helyi item-info és upgrade-item adatok alapján a v0.9.0-ban a biztos hátizsákos higanyrecept: <strong>Nagy Hátizsák Fejlesztő + 4 Ősi Fém rúd</strong> → <strong>Ősi Fém Hátizsák Fejlesztő</strong> (kb. 30 mp, alul magma/láva hőforrás).</p>
 </div>
 <div class="faq-item">
 <h4>❓ Mi történik Vérhold alatt?</h4>
@@ -98,7 +99,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ Hogyan szerzek Tudáskönyveket?</h4>
-<p>A v0.9.0-ben biztos forrásnak számítanak a <strong>földalatti dungeonök kincsesládái</strong> és a <strong>felszíni Pillager-erődök ládái</strong>. A fölösleges Tudáskönyveket sima Könyvvé alakíthatod, ami XP-t ad.</p>
+<p>A jelenlegi wikihez használt helyi adatok és játéktapasztalat alapján a Tudáskönyvek <strong>földalatti dungeonök kincsesládáiból</strong> és <strong>pillager village / pillager erőd ládákból</strong> is szerezhetők. A fölösleges Tudáskönyveket sima Könyvvé alakíthatod, ami XP-t ad.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Mi a különbség Simple és Hardcore mód között?</h4>
@@ -126,7 +127,7 @@ const sidebarGroups = getSidebarGroups('faq');
 <div class="faq-list">
 <div class="faq-item">
 <h4>❓ Why can't I break wood with my bare hands?</h4>
-<p>In MITE:BE <strong>you can't break anything bare-handed</strong>. Breaking wood requires a <strong>Flint Hatchet</strong> (Flint + Leather Rope + 2 Sticks) — the knife is only for cutting leather and grass, not wood! See the Flint Age section.</p>
+<p>In MITE:BE <strong>you cannot harvest wood bare-handed</strong>, and most solid blocks also need the proper tool. Early exceptions include tall grass and gravel. Breaking wood requires a <strong>Flint Hatchet</strong> — the knife is not for chopping wood. See the Flint Age section.</p>
 </div>
 <div class="faq-item">
 <h4>❓ How do I get flint at the start?</h4>
@@ -158,6 +159,7 @@ const sidebarGroups = getSidebarGroups('faq');
 <p><strong>Hardcore mode:</strong> Yes! Placed torches burn out after <strong>3 in-game days</strong>. Additionally, <strong>rain extinguishes</strong> outdoor torches.</p>
 <p><strong>Simple mode:</strong> Torches do <strong>NOT burn out</strong> over time — but <strong>rain still extinguishes</strong> them! Place torches under cover.</p>
 <p>In both modes: if your shelter goes dark, mobs can spawn inside. Always carry <strong>Flint and Steel</strong> (earliest: Copper Flint and Steel = Copper Nugget + Flint). <strong>Exception:</strong> Torches in Plains biomes never burn out!</p>
+<p><strong>Extra utility:</strong> any <strong>bow can fire torches</strong>, and the torch block will be placed where it lands. An <strong>extinguished torch</strong> can be relit with <strong>Flint and Steel or a burning torch</strong>.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Why is a zombie digging through my wall?</h4>
@@ -169,7 +171,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ How do I return home from a biome portal?</h4>
-<p>Build a <strong>standard obsidian frame anywhere in the overworld</strong> (NOT on the bedrock layer!) and light it — this returns you to your <strong>world spawn point</strong>. No special portal needed to go back. If your spawn is not ideal, unlocking the <strong>World Marker</strong> Knowledge Book lets you change the world's respawn point.</p>
+<p>Build a <strong>standard obsidian frame anywhere in the overworld</strong> (NOT on the bedrock layer!) and light it — this returns you to your <strong>current overworld respawn point</strong>. No special return portal is needed. If you have activated a <strong>World Marker</strong>, that becomes the return point.</p>
 </div>
 <div class="faq-item">
 <h4>❓ No villages or pillagers are spawning in my world!</h4>
@@ -189,7 +191,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ How does the Cauldron work?</h4>
-<p>The Cauldron isn't just for water! Placed <strong>under a lava source</strong>, it enables special recipes: drop Gold ore in = <strong>Liquid Gold</strong> (make 4 Golden Apples). Mercury ore + Lava = <strong>Liquid Mercury</strong>. In v0.9.0, the backpack-related mercury recipe I could verify is <strong>Big Backpack Upgrade + 4 Ancient Metal Ingots</strong> in a full mercury cauldron; after about 30 seconds with magma/lava heat below, it produces the <strong>Ancient Metal Backpack Upgrade</strong>.</p>
+<p>The Cauldron isn't just for water! Placed <strong>under a lava source</strong>, it enables special recipes: according to the local cauldron description, <strong>1 Gold Ore</strong> charges the cauldron after about 30 seconds, then you <strong>use Apples on it</strong>, and one charge can convert <strong>up to 4 Apples into Golden Apples</strong>. Mercury ore + Lava = <strong>Liquid Mercury</strong>. Based on the current local item-info and upgrade-item data, the reliable v0.9.0 backpack-related mercury recipe is <strong>Big Backpack Upgrade + 4 Ancient Metal Ingots</strong>; after about 30 seconds with magma/lava heat below, it produces the <strong>Ancient Metal Backpack Upgrade</strong>.</p>
 </div>
 <div class="faq-item">
 <h4>❓ What happens during a Blood Moon?</h4>
@@ -201,7 +203,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ How do I get Knowledge Books?</h4>
-<p>Reliably confirmed v0.9.0 sources include <strong>treasure chests in underground dungeons</strong> and <strong>surface Pillager Fortress chests</strong>. Spare Knowledge Books can be crafted into regular Books for XP.</p>
+<p>Based on the current local data set plus confirmed gameplay use, Knowledge Books can be obtained from <strong>treasure chests in underground dungeons</strong> and <strong>pillager village / pillager fortress chests</strong>. Spare Knowledge Books can be crafted into regular Books for XP.</p>
 </div>
 <div class="faq-item">
 <h4>❓ What's the difference between Simple and Hardcore mode?</h4>
@@ -543,6 +545,7 @@ const sidebarGroups = getSidebarGroups('faq');
 <p><strong>Режим Хардкор:</strong> Да! Установленные факелы гаснут через <strong>3 игровых дня</strong>. Кроме того, <strong>дождь гасит</strong> факелы на улице.</p>
 <p><strong>Простой режим:</strong> Факелы <strong>НЕ гаснут</strong> со временем — но <strong>дождь всё равно их гасит</strong>! Размещайте факелы под укрытием.</p>
 <p>В обоих режимах: если убежище погружается в темноту, внутри могут появиться мобы. Всегда носите <strong>Огниво</strong>. <strong>Исключение:</strong> На равнинах факелы никогда не гаснут!</p>
+<p><strong>Дополнительная польза:</strong> любой <strong>лук может стрелять факелами</strong>, и факел устанавливается там, где приземляется. <strong>Погасший факел</strong> можно снова зажечь <strong>огнивом или горящим факелом</strong>.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Почему зомби копает мою стену?</h4>
@@ -554,7 +557,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ Как вернуться домой из биомного портала?</h4>
-<p>Постройте <strong>обычную обсидиановую рамку в любом месте Верхнего мира</strong> (НЕ на слое коренной породы!) и зажгите её — это вернёт вас к <strong>точке спавна мира</strong>.</p>
+<p>Постройте <strong>обычную обсидиановую рамку в любом месте Верхнего мира</strong> (НЕ на слое коренной породы!) и зажгите её — это вернёт вас к <strong>текущей точке возрождения в Верхнем мире</strong>. Отдельный обратный портал не нужен. Если у вас активирован <strong>Маркер мира</strong>, именно он станет точкой возврата.</p>
 </div>
 <div class="faq-item">
 <h4>❓ В моём мире не появляются деревни или разбойники (pillagers)!</h4>
@@ -574,7 +577,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ Как работает Котёл (Cauldron)?</h4>
-<p>Котёл нужен не только для воды. Если поставить его <strong>под источником лавы</strong>, в нём можно готовить особые рецепты: золотая руда в котле даёт <strong>Жидкое золото</strong> (на 4 золотых яблока), ртутная руда с лавой даёт <strong>Жидкую ртуть</strong>, а кожаный рюкзак с 4 слитками Древнего металла в ртути через 30 секунд превращается в <strong>Рюкзак из Древнего металла</strong>.</p>
+<p>Котёл нужен не только для воды. Если поставить его <strong>под источником лавы</strong>, то по локальному описанию котла <strong>1 золотая руда</strong> примерно за 30 секунд заряжает котёл, после чего в него нужно <strong>использовать яблоки</strong>; один такой заряд может превратить <strong>до 4 яблок в золотые яблоки</strong>. Ртутная руда с лавой даёт <strong>Жидкую ртуть</strong>, а по текущим локальным item-info и данным предмета улучшения надёжный рецепт v0.9.0 для рюкзака выглядит так: <strong>Улучшение большого рюкзака + 4 слитка Древнего металла</strong> в ртути через 30 секунд дают <strong>Улучшение рюкзака из Древнего металла</strong>.</p>
 </div>
 <div class="faq-item">
 <h4>❓ Что происходит во время Кровавой луны?</h4>
@@ -586,7 +589,7 @@ const sidebarGroups = getSidebarGroups('faq');
 </div>
 <div class="faq-item">
 <h4>❓ Как получить Книги знаний?</h4>
-<p>Книги знаний можно получить: в <strong>Пещерных руинах</strong> (сундуки с добычей), в <strong>Деревнях</strong> (у торговцев или в сундуках), от <strong>Особых врагов</strong> (Король скелетов, Кровавая луна) и в <strong>наградных сундуках после Кровавой луны</strong>.</p>
+<p>По текущим локальным данным и подтверждённому игровому опыту Книги знаний можно получать из <strong>сундуков в подземных данжах</strong> и из <strong>сундуков в pillager village / pillager fortress</strong>. Лишние Книги знаний можно перекрафтить в обычные книги и получить опыт.</p>
 </div>
 <div class="faq-item">
 <h4>❓ В чём разница между Простым и Хардкор режимами?</h4>

@@ -3,8 +3,14 @@
   window.WikiData = window.WikiData || {};
   window.WikiData.mobs = {
     surface: [
-      { name: { hu: "Zombi", en: "Zombie" }, hp: 20, dmg: { hu: "3", en: "3" }, xp: 5,
+      { name: { hu: "Zombi", en: "Zombie" }, hp: 30, dmg: { hu: "5–7", en: "5–7" }, xp: 5,
         special: { hu: "Falon átérzékelés, csákányos változat bármit kibányászik", en: "Wall detection, pickaxe variant mines any block" } },
+      { name: { hu: "Ősi Zombi", en: "Ancient Zombie" }, hp: 30, dmg: { hu: "5–7", en: "5–7" }, xp: 15,
+        special: { hu: "Erősebb zombi változat", en: "Stronger zombie variant" } },
+      { name: { hu: "Óriás Zombi", en: "Giant Zombie" }, hp: 100, dmg: { hu: "50", en: "50" }, xp: 5,
+        special: { hu: "Óriási méret, óriási sebzés", en: "Enormous size, massive damage" } },
+      { name: { hu: "Enderman", en: "Enderman" }, hp: 40, dmg: { hu: "10", en: "10" }, xp: 5,
+        special: { hu: "Teleportálás, szemkontaktusra agresszív", en: "Teleportation, aggressive on eye contact" } },
       { name: { hu: "Csontváz", en: "Skeleton" }, hp: 20, dmg: { hu: "3 (nyíl)", en: "3 (arrow)" }, xp: 5,
         special: { hu: "Távolsági támadó", en: "Ranged attacker" } },
       { name: { hu: "Creeper", en: "Creeper" }, hp: 20, dmg: { hu: "— (robbanás)", en: "— (explosion)" }, xp: 5,
@@ -53,21 +59,25 @@
         special: { hu: "Életlopás + nagy sebzés", en: "Life steal + high damage" } }
     ],
     nether: [
+      { name: { hu: "Ghast", en: "Ghast" }, hp: 10, dmg: { hu: "9", en: "9" }, xp: 10,
+        special: { hu: "Tűzgolyó lövés", en: "Fireball attack" } },
       { name: { hu: "Démon Pók", en: "Demon Spider" }, hp: 20, dmg: { hu: "5", en: "5" }, xp: 10,
         special: { hu: "Tűzálló, mérgező", en: "Fire resistant, poisonous" } },
       { name: { hu: "Pokol Kutya", en: "Hell Hound" }, hp: 16, dmg: { hu: "4", en: "4" }, xp: 8,
         special: { hu: "Tűzálló, gyors, falkában", en: "Fire resistant, fast, in packs" } },
       { name: { hu: "Pokoli Creeper", en: "Nether Creeper" }, hp: 20, dmg: { hu: "— (robbanás)", en: "— (explosion)" }, xp: 10,
         special: { hu: "Tűzálló, nagyobb robbanás", en: "Fire resistant, bigger explosion" } },
-      { name: { hu: "Vörös Lángoszlop (Red Blaze)", en: "Red Blaze" }, hp: 40, dmg: { hu: "6", en: "6" }, xp: 20,
+      { name: { hu: "Blaze", en: "Blaze" }, hp: 60, dmg: { hu: "6", en: "6" }, xp: 20,
+        special: { hu: "Tüzes lövedékeket lő", en: "Shoots fire charges" } },
+      { name: { hu: "Vörös Lángoszlop (Red Blaze)", en: "Red Blaze" }, hp: 40, dmg: { hu: "10", en: "10" }, xp: 20,
         special: { hu: "<strong>6 tűzgolyó egyszerre!</strong>", en: "<strong>6 fireballs at once!</strong>" } },
-      { name: { hu: "Tűz Elementális", en: "Fire Elemental" }, hp: 50, dmg: { hu: "8", en: "8" }, xp: 25,
+      { name: { hu: "Tűz Elementális", en: "Fire Elemental" }, hp: 40, dmg: { hu: "6", en: "6" }, xp: 25,
         special: { hu: "<strong>3% instant kill égő játékoson!</strong> Víz/hógolyó/sebzés bájital hat rá", en: "<strong>3% instant kill if you're on fire!</strong> Effective: water/snowballs/Harming potion" } },
-      { name: { hu: "Nagy Ghast", en: "Greater Ghast" }, hp: 40, dmg: { hu: "6 (tűzgolyó)", en: "6 (fireball)" }, xp: 20,
+      { name: { hu: "Nagy Ghast", en: "Greater Ghast" }, hp: 100, dmg: { hu: "9 (tűzgolyó)", en: "9 (fireball)" }, xp: 20,
         special: { hu: "Óriási, repülő, tűzokádó", en: "Enormous, flying, fire-breathing" } },
-      { name: { hu: "Zombi Disznóember", en: "Zombie Pigman" }, hp: 20, dmg: { hu: "5", en: "5" }, xp: 8,
+      { name: { hu: "Zombi Disznóember", en: "Zombie Pigman" }, hp: 60, dmg: { hu: "8", en: "8" }, xp: 15,
         special: { hu: "Arany nélkül agresszív", en: "Aggressive without gold" } },
-      { name: { hu: "Lélek Szellem", en: "Soul Spirit" }, hp: 16, dmg: { hu: "4", en: "4" }, xp: 8,
+      { name: { hu: "Lélek Szellem", en: "Soul Spirit" }, hp: 20, dmg: { hu: "—", en: "—" }, xp: 5,
         special: { hu: "Nether szellemi lény", en: "Nether spirit creature" } }
     ]
   };

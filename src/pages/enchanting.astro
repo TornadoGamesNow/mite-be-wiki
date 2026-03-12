@@ -196,13 +196,15 @@ const sidebarGroups = getSidebarGroups('enchanting');
 <p>Minél magasabb egy anyag enchantability értéke, annál jobb bűvölési opciókat kapsz a véletlenszerű asztaloknál. Az Egyéni asztalnál ez nem számít.</p>
 <table class="compare-table">
   <tr><th>Érték</th><th>Anyagok</th><th>Minősítés</th></tr>
-  <tr style="background:rgba(200,150,255,0.15)"><td><strong>100</strong></td><td>Mithril / Higany</td><td>⭐ Legjobb</td></tr>
+  <tr style="background:rgba(200,150,255,0.15)"><td><strong>100</strong></td><td>Mithril / Higany / Gyémánt</td><td>⭐ Legjobb</td></tr>
+  <tr style="background:rgba(120,220,180,0.12)"><td><strong>70</strong></td><td>Smaragd</td><td>Nagyon jó</td></tr>
   <tr style="background:rgba(255,220,0,0.10)"><td><strong>50</strong></td><td>Arany</td><td>Jó</td></tr>
   <tr><td><strong>40</strong></td><td>Adamantium / Ősi Fém / Kvarc</td><td>Közepes</td></tr>
   <tr><td><strong>35</strong></td><td>Keménykő</td><td>—</td></tr>
-  <tr><td><strong>30</strong></td><td>Réz / Vas / Ezüst / Bronz / HC Acél</td><td>Standard</td></tr>
+  <tr><td><strong>30</strong></td><td>Réz / Vas / Ezüst / Bronz / Ón / HC Acél</td><td>Standard</td></tr>
   <tr style="opacity:0.65"><td><strong>10</strong></td><td>Bőr / Fa / Csont</td><td>Gyenge</td></tr>
 </table>
+<div class="info-box">📘 <strong>ZIP fact-check:</strong> a <code>material_enchantability.txt</code> alapján a <strong>Gyémánt</strong> is <strong>100</strong>-as, a <strong>Smaragd</strong> pedig <strong>70</strong>-es enchantability értéket kap. A tábla ehhez lett igazítva.</div>
 
 <!-- ─── Disenchanting ─── -->
 <h2 id="disenchanting">Varázstalanítás</h2>
@@ -379,13 +381,15 @@ const sidebarGroups = getSidebarGroups('enchanting');
 <p>Higher enchantability = better random enchantment options at the base and Emerald tables. Not relevant for the Custom table.</p>
 <table class="compare-table">
   <tr><th>Value</th><th>Materials</th><th>Rating</th></tr>
-  <tr style="background:rgba(200,150,255,0.15)"><td><strong>100</strong></td><td>Mithril / Mercury</td><td>⭐ Best</td></tr>
+  <tr style="background:rgba(200,150,255,0.15)"><td><strong>100</strong></td><td>Mithril / Mercury / Diamond</td><td>⭐ Best</td></tr>
+  <tr style="background:rgba(120,220,180,0.12)"><td><strong>70</strong></td><td>Emerald</td><td>Very good</td></tr>
   <tr style="background:rgba(255,220,0,0.10)"><td><strong>50</strong></td><td>Gold</td><td>Good</td></tr>
   <tr><td><strong>40</strong></td><td>Adamantium / Ancient Metal / Quartz</td><td>Moderate</td></tr>
   <tr><td><strong>35</strong></td><td>Hardstone</td><td>—</td></tr>
-  <tr><td><strong>30</strong></td><td>Copper / Iron / Silver / Bronze / HC Steel</td><td>Standard</td></tr>
+  <tr><td><strong>30</strong></td><td>Copper / Iron / Silver / Bronze / Tin / HC Steel</td><td>Standard</td></tr>
   <tr style="opacity:0.65"><td><strong>10</strong></td><td>Leather / Wood / Bone</td><td>Weak</td></tr>
 </table>
+<div class="info-box">📘 <strong>ZIP fact-check:</strong> according to <code>material_enchantability.txt</code>, <strong>Diamond</strong> also sits at <strong>100</strong> enchantability, while <strong>Emerald</strong> sits at <strong>70</strong>. The wiki table has been aligned to those raw values.</div>
 
 <h2 id="disenchanting">Disenchanting</h2>
 <p>Got a bad enchantment? The <strong>Bottle of Disenchanting</strong> removes it — and returns your invested XP!</p>
@@ -561,13 +565,15 @@ const sidebarGroups = getSidebarGroups('enchanting');
 <p>Чем выше зачаровываемость, тем лучше варианты чар на базовом и изумрудном столах. Для особого стола она не важна.</p>
 <table class="compare-table">
   <tr><th>Значение</th><th>Материалы</th><th>Оценка</th></tr>
-  <tr style="background:rgba(200,150,255,0.15)"><td><strong>100</strong></td><td>Мифрил / Ртуть</td><td>⭐ Лучший</td></tr>
+  <tr style="background:rgba(200,150,255,0.15)"><td><strong>100</strong></td><td>Мифрил / Ртуть / Алмаз</td><td>⭐ Лучший</td></tr>
+  <tr style="background:rgba(120,220,180,0.12)"><td><strong>70</strong></td><td>Изумруд</td><td>Очень хорошо</td></tr>
   <tr style="background:rgba(255,220,0,0.10)"><td><strong>50</strong></td><td>Золото</td><td>Хорошо</td></tr>
   <tr><td><strong>40</strong></td><td>Адамант / Древний металл / Кварц</td><td>Среднее</td></tr>
   <tr><td><strong>35</strong></td><td>Твердокамень</td><td>—</td></tr>
-  <tr><td><strong>30</strong></td><td>Медь / Железо / Серебро / Бронза / ВУС</td><td>Стандарт</td></tr>
+  <tr><td><strong>30</strong></td><td>Медь / Железо / Серебро / Бронза / Олово / ВУС</td><td>Стандарт</td></tr>
   <tr style="opacity:0.65"><td><strong>10</strong></td><td>Кожа / Дерево / Кость</td><td>Слабое</td></tr>
 </table>
+<div class="info-box">📘 <strong>Проверка по ZIP:</strong> файл <code>material_enchantability.txt</code> показывает, что у <strong>алмаза</strong> тоже <strong>100</strong> зачаровываемости, а у <strong>изумруда</strong> — <strong>70</strong>. Таблица в вики теперь приведена к этим сырым значениям.</div>
 
 <h2 id="disenchanting">Расколдовывание</h2>
 <p>Получили плохое зачарование? <strong>Бутылка расколдовывания</strong> снимет его — и вернёт вложенный опыт!</p>

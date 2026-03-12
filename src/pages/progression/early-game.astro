@@ -91,6 +91,7 @@ const sidebarGroups = getSidebarGroups('progression/early-game');
 <div class="tip-card"><strong>🐑 Birka = top prioritás!</strong> Szürke birka gyapjúja → Zsinór → Zsinórhálós Szita — ez a leggyorsabb út a szitáláshoz, megelőzheti a kovakorszakot!</div>
 <div class="tip-card"><strong>Kavics dobható!</strong> Kézben tartott kavics dobható mobokra. Veszélyes helyzetben hasznos, ha nincs fegyvered.</div>
 <div class="tip-card"><strong>Kavics → Kőzet!</strong> Kavicsdarabok <strong>Ezüst Munkaasztalon</strong> összegyúrhatók kőzetté — jó alternatíva ha nem akarod a Rézcsákány tartósságát kövekre vesztegetni.</div>
+<div class="tip-card"><strong>A csontfegyverek valódi early-game opciók!</strong> A helyi item-docok szerint a <strong>Bone Cudgel</strong> olcsó vészfegyver <strong>2 csont + szalmakötél</strong> recepttel, a <strong>Bone Club</strong> pedig az erősebb folytatás <strong>3 csont + madzag/ín</strong> alapon. A mostani balanszban <strong>4 sebzést</strong>, <strong>550 tartósságot</strong> kap, és még blokkolni is tud.</div>
 </div>
 
 
@@ -143,15 +144,22 @@ const sidebarGroups = getSidebarGroups('progression/early-game');
 <p>Hatékonyabb harceszköz, mint a bot — az első igazi fegyver!</p>
 
 
+<div class="tip-card">🌿 <strong>Növényszál és Szalmakötél:</strong> A legbiztonságosabb út a munkaasztalhoz: üsd ki a magas füvet kézzel, amíg <strong>Növényszálat (Plant Fiber)</strong> nem kapsz. 4 növényszálból barkácsolhatsz <strong>Szalmakötelet (Straw Rope)</strong>, ami helyettesíti a madzagot a kezdeti receptekben.</div>
+
+<div class="warning-box">🕷️ <strong>Vigyázat:</strong> A pókok vadászata fegyverzet nélkül öngyilkosság! Használd a füvet a kötélhez, amíg nincs rendes felszerelésed.</div>
+
 <!-- ===== MUNKAASZTAL ===== -->
 
 <h2 id="Munkaasztal">Munkaasztal</h2>
-<div class="recipe">Kova + Kötél/Zsineg + Fabot + Fa deszkák → Kova Munkaasztal</div>
-  <CraftingGrid recipeOutput="flint_workbench" label={{hu: "Kova Munkaasztal (Selyem)", en: "Flint Workbench (Silk)"}}/>
+<div class="recipe">Kova + Szalmakötél/Madzag + Fabot + Fa rönk → Kova Munkaasztal</div>
+  <CraftingGrid recipeOutput="flint_workbench" label={{hu: "Kova Munkaasztal", en: "Flint Workbench"}}/>
 
 <p>A munkaasztal megnyitja a 3×3-as Barkácsolás rendszert. Innentől sokkal több recept elérhető!</p>
 
-<h3>Falapát</h3>
+<h3>Kovacsákány</h3>
+<div class="recipe">3× Kova + 2× Szalmakötél/Madzag + 2× Fabot → Kovacsákány (Kova Munkaasztalon)</div>
+  <CraftingGrid recipeOutput="flint_pickaxe" label={{hu: "Kovacsákány", en: "Flint Pickaxe"}}/>
+<p>Az első bányászeszközöd. Ezzel már tudsz szenet és rezet bányászni (darabokban).</p>
 <div class="recipe">1× Deszka + 2× Fabot → Fa Lapát (Kova Munkaasztalon)</div>
   <CraftingGrid recipeOutput="wooden_shovel" label={{hu: "Fa Lapát", en: "Wooden Shovel"}}/>
 
@@ -166,6 +174,7 @@ const sidebarGroups = getSidebarGroups('progression/early-game');
 <p>A szita a MITE:BE egyik legfontosabb eszköze! Helyezd le, tegyél bele <strong>kavicsot</strong> — és <strong>ércdarabok</strong> szűrődnek ki belőle (réz, ezüst, arany stb.).</p>
 
 <div class="tip">A szitáláskor <strong>Obszidián szilánk</strong> is eshet — ez később az öntőformához kell!</div>
+<div class="info-box">🪨 <strong>Közvetlen kavicstörés is számít:</strong> a helyi item-info szerint a <strong>kavics kézi vagy sima törése</strong> is dobhat <strong>fémszemcséket vagy ásványtöredékeket</strong>, és a Szerencse ezt javítja. A <strong>szita továbbra is a megbízhatóbb, jobb hozamú út</strong>, de nem ez az egyetlen forrás.</div>
 
 <div class="warning">A szitát nem szabad elhanyagolni — ez az elsődleges módja a fémhez jutásnak a korai játékban!</div>
 
@@ -229,6 +238,7 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <div class="tip-card"><strong>🐑 Sheep = top priority!</strong> Gray sheep wool → Twine → Twine Mesh Sieve — the fastest way to sieve, can skip the flint age!</div>
 <div class="tip-card"><strong>Gravel is throwable!</strong> Held gravel can be thrown at mobs. Useful in dangerous situations without a weapon.</div>
 <div class="tip-card"><strong>Gravel → Rock!</strong> Gravel chunks can be combined into rock at a <strong>Silver Workbench</strong> — good alternative to wasting copper pickaxe durability on stones.</div>
+<div class="tip-card"><strong>Bone weapons are real early options!</strong> Local item docs show the <strong>Bone Cudgel</strong> is a very cheap emergency weapon from <strong>2 bones + straw rope</strong>, while the <strong>Bone Club</strong> is the stronger upgrade from <strong>3 bones + string/sinew</strong> and in current balance has <strong>4 damage</strong>, <strong>550 durability</strong>, and can still block.</div>
 </div>
 
 
@@ -281,13 +291,22 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <p>More effective than a stick — your first real weapon!</p>
 
 
+<div class="tip-card">🌿 <strong>Plant Fiber & Straw Rope:</strong> The safest path to a workbench: harvest tall grass by hand until you get <strong>Plant Fiber</strong>. Craft 4 fibers into <strong>Straw Rope</strong>, which replaces string in initial recipes.</div>
+
+<div class="warning-box">🕷️ <strong>Warning:</strong> Hunting spiders without gear is suicide! Use grass for rope until you have proper equipment.</div>
+
 <!-- ===== WORKBENCH ===== -->
 
 <h2 id="Munkaasztal">Workbench</h2>
-<div class="recipe">Flint + Rope/Twine + Stick + Wood Planks → Flint Workbench</div>
-  <CraftingGrid recipeOutput="flint_workbench" label={{hu: "Kova Munkaasztal (Selyem)", en: "Flint Workbench (Silk)"}}/>
+<div class="recipe">Flint + Straw Rope/String + Stick + Log → Flint Workbench</div>
+  <CraftingGrid recipeOutput="flint_workbench" label={{hu: "Kova Munkaasztal", en: "Flint Workbench"}}/>
 
 <p>The workbench unlocks the 3×3 crafting grid. Many more recipes become available!</p>
+
+<h3>Flint Pickaxe</h3>
+<div class="recipe">3× Flint + 2× Straw Rope/String + 2× Stick → Flint Pickaxe (at Flint Workbench)</div>
+  <CraftingGrid recipeOutput="flint_pickaxe" label={{hu: "Kovacsákány", en: "Flint Pickaxe"}}/>
+<p>Your first mining tool. You can now mine coal and copper (in fragments).</p>
 
 <h3>Wooden Shovel</h3>
 <div class="recipe">1× Plank + 2× Stick → Wooden Shovel (at Flint Workbench)</div>
@@ -299,11 +318,12 @@ Ha a legelső éjszaka előtt találsz birkát és megszerzel pár gyapjút, sok
 <!-- ===== SIEVE & ORES ===== -->
 
 <h2 id="sieve">Sieve & Ore Fragments</h2>
-<div class="recipe">Logs + Planks + Sticks → Wooden Sieve</div>
+<div class="recipe">Logs + Sticks → Wooden Sieve</div>
 
 <p>The sieve is one of MITE:BE's most important tools! Place it down, add <strong>gravel</strong> — and <strong>ore fragments</strong> filter out (copper, silver, gold, etc.).</p>
 
 <div class="tip">Sieving gravel may also yield <strong>Obsidian shards</strong> — needed later for the ingot mould!</div>
+<div class="info-box">🪨 <strong>Direct gravel breaking also matters:</strong> the local item-info says that <strong>breaking gravel normally</strong> can already drop <strong>metal particles or mineral fragments</strong>, and Luck improves that chance. The <strong>sieve is still the more reliable, higher-yield route</strong>, but it is not the only source.</div>
 
 <div class="warning">Never neglect the sieve — it's the primary way to get metals in early game!</div>
 
@@ -365,6 +385,7 @@ If you find a sheep before the first night and get some wool, you can sieve much
 <div class="tip-card"><strong>Уровень верстака!</strong> Рецепты высокого уровня требуют верстак более высокого уровня (медный, железный и т.д.)</div>
 <div class="tip-card"><strong>🐑 Овца = главный приоритет!</strong> Шерсть серой овцы → Шпагат → Шпагатная сетчатая шахта — самый быстрый путь к просеиванию, можно пропустить кремниевую эпоху!</div>
 <div class="tip-card"><strong>Гравий можно бросать!</strong> Гравий в руке можно бросить в моба. Полезно в опасных ситуациях без оружия.</div>
+<div class="tip-card"><strong>Костяное оружие тоже рабочее!</strong> По локальным item-docs <strong>Bone Cudgel</strong> — очень дешёвое аварийное оружие из <strong>2 костей + соломенной верёвки</strong>, а <strong>Bone Club</strong> — более сильное продолжение из <strong>3 костей + нити/жилы</strong>; в текущем балансе у него <strong>4 урона</strong>, <strong>550 прочности</strong>, и он всё ещё умеет блокировать.</div>
 </div>
 
 <h2 id="flint-age">Кремниевая эпоха</h2>
@@ -396,11 +417,20 @@ If you find a sheep before the first night and get some wool, you can sieve much
 
 <p>Эффективнее дубины — первое настоящее оружие!</p>
 
+<div class="tip-card">🌿 <strong>Растительное волокно и Соломенная веревка:</strong> Самый безопасный путь к верстаку: косите траву руками, пока не получите <strong>Растительное волокно (Plant Fiber)</strong>. Из 4 волокон можно скрафтить <strong>Соломенную веревку (Straw Rope)</strong>, которая заменяет нить в начальных рецептах.</div>
+
+<div class="warning-box">🕷️ <strong>Осторожно:</strong> Охота на пауков без снаряжения — самоубийство! Используйте траву для веревки, пока не раздобудете нормальное снаряжение.</div>
+
 <h3>Кремниевый Верстак</h3>
-<div class="recipe">Кремень + Верёвка + Палка + Доски → Кремниевый Верстак</div>
-  <CraftingGrid recipeOutput="flint_workbench" label={{hu: "Kova Munkaasztal (Selyem)", en: "Flint Workbench (Silk)"}}/>
+<div class="recipe">Кремень + Соломенная веревка/Нить + Палка + Бревно → Кремниевый Верстак</div>
+  <CraftingGrid recipeOutput="flint_workbench" label={{hu: "Kova Munkaasztal", en: "Flint Workbench"}}/>
 
 <p>Верстак открывает сетку крафта 3×3. Доступно гораздо больше рецептов!</p>
+
+<h3>Кремниевая кирка</h3>
+<div class="recipe">3× Кремень + 2× Соломенная веревка/Нить + 2× Палка → Кремниевая кирка (на верстаке)</div>
+  <CraftingGrid recipeOutput="flint_pickaxe" label={{hu: "Kovacsákány", en: "Flint Pickaxe"}}/>
+<p>Ваш первый инструмент для добычи. Теперь вы можете добывать уголь и медь (фрагментами).</p>
 
 <h3>Деревянная лопата</h3>
 <div class="recipe">1× Доска + 2× Палка → Деревянная лопата (на кремниевом верстаке)</div>
@@ -412,6 +442,7 @@ If you find a sheep before the first night and get some wool, you can sieve much
 <p>Сито — один из важнейших инструментов MITE:BE! Положи <strong>гравий</strong> в сито — и из него отфильтруются <strong>фрагменты руды</strong> (медь, серебро, золото и т.д.).</p>
 
 <div class="tip">При просеивании гравия также может выпасть <strong>осколок обсидиана</strong> — позже понадобится для формы для слитков!</div>
+<div class="info-box">🪨 <strong>Обычная добыча гравия тоже полезна:</strong> по локальному item-info <strong>простое разрушение гравия</strong> уже может давать <strong>металлические крупицы и минеральные осколки</strong>, а Удача повышает этот шанс. <strong>Сито всё равно остаётся более надёжным и выгодным путём</strong>, но это не единственный источник.</div>
 
 <div class="warning">Не пренебрегай ситом — это основной способ получить металлы в ранней игре!</div>
 

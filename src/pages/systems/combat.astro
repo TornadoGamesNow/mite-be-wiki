@@ -55,6 +55,7 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr><td><span class="tier t-adamantium">Adamantium (4/4)</span></td><td>Szürke/fekete nyálkák korróziója nem hat rá; tűzkár nem csökkenti a tartósságot</td></tr>
   <tr><td>Higany Elem (4/4)</td><td>Testhőmérséklet marad 36,5°C örökké</td></tr>
 </table>
+<div class="tip-card">☿ <strong>Higany Elem megszerzése:</strong> a helyi item-doc szerint a <strong>teljes tartósságú</strong> Ősi Fém páncéldarabokat folyékony higannyal lehet átalakítani. Az átalakulás kb. <strong>30 másodperc</strong>, és a teljes 4/4 szett viselése után a testhőmérséklet fixen <strong>36,5°C</strong>-on marad.</div>
 
 <h3>Páncél Védelmi Értékek</h3>
 <p>A teljes védelemhez 20 pont kell. A páncél 50% tartósság alatt elveszíti védelmi értékét! <em>(Lemezpáncél adatok)</em></p>
@@ -72,6 +73,12 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr><td><span class="tier t-mithril">Mithril</span></td><td>2.00</td><td>3.00</td><td>2.70</td><td>1.60</td><td>9.30</td></tr>
   <tr><td><span class="tier t-adamantium">Adamantium</span></td><td>2.08</td><td>3.33</td><td>2.92</td><td>1.67</td><td>10.00</td></tr>
 </table>
+<div class="tip-card">⛓️ <strong>Láncvért vs. Lemezpáncél:</strong>
+<ul style="margin:4px 0 0 0">
+  <li><strong>Réz/Vas/Arany:</strong> A láncvért kb. 30%-kal kevesebbet véd, de könnyebb.</li>
+  <li><strong>Ősi Fém / Mithril:</strong> A láncvért <strong>pontosan ugyanannyit véd</strong>, mint a lemez, de lassabban fogyasztja az éhséget!</li>
+  <li><strong>Költség:</strong> A láncvért olcsóbb, mert láncszemekből (nuggetekből) készül, nem rudakból.</li>
+</ul></div>
 <div class="info-box">A maximális 20 pont eléréséhez 2× Adamantium szett kellene — ez a játékban elérhetetlen. A cél a minél magasabb védelmi szint elérése bűvölésekkel kiegészítve!</div>
 
 <div class="craft-section">
@@ -93,6 +100,7 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr><td>Íj / Számszeríj</td><td>Távharc</td></tr>
   <tr><td>Pajzs</td><td>Fém pajzsok (réz → adamantium) — blokkolás jobb klikkel</td></tr>
 </table>
+<div class="tip-card">☿ <strong>Higanyanyag-vonal:</strong> a helyi item-doc szerint a <strong>higanyrúd</strong> fegyverek higanybevonására szolgál, ami <strong>rétegenként +0.1 sebzést</strong> ad. Ha recepthez <strong>higanyrög</strong> kell, azt <strong>vas háborús kalapáccsal</strong> lehet bontani: 1 higanyrúdból vagy 1 higanyércből <strong>9 higanyrög</strong>.</div>
 
 <h3>Kard Sebzés Összehasonlítás</h3>
 <table class="compare-table">
@@ -178,16 +186,20 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr><td>Obszidián Nyíl</td><td>+2</td><td>40%</td><td>—</td></tr>
   <tr><td>Réz Nyíl</td><td>+3</td><td>60%</td><td>—</td></tr>
   <tr style="background:rgba(192,192,128,0.10)"><td><strong>Ezüst Nyíl</strong></td><td>+3</td><td>60%</td><td>Extra sebzés élőholtak ellen + White Ghoul sebzésére képes</td></tr>
+  <tr><td>Arany Nyíl</td><td>+2</td><td>50%</td><td>Olcsóbb köztes opció, ha nincs vas</td></tr>
   <tr><td>Vas Nyíl</td><td>+4</td><td>70%</td><td>—</td></tr>
+  <tr><td>Ősi Fém Nyíl</td><td>+5</td><td>80%</td><td>Íjat használó ősi élőhalottakból is eshet</td></tr>
   <tr style="background:rgba(126,200,227,0.12)"><td><strong>Mithril-nyíl</strong></td><td>+7</td><td>80%</td><td>Legjobb sebzés!</td></tr>
   <tr style="background:rgba(179,136,255,0.14)"><td><strong><span class="wiki-item" data-id="adamantium_arrow">Adamantium-nyíl</span></strong></td><td>+6</td><td>90%</td><td>Az egyetlen nyíl, amely End Kristályt tör; adamantium eszköz is jó rá</td></tr>
 </table>
 <table class="compare-table">
   <tr><th>Íj</th><th>Tartósság</th><th>Sebesség Bónusz</th><th>Megjegyzés</th></tr>
   <tr><td>Vanilla Íj</td><td>385</td><td>—</td><td>Standard</td></tr>
+  <tr><td>Ősi Fém Íj</td><td>64 használat</td><td>+10% húzás és röpülési sebesség</td><td>Ősi hulláknál gyakori; nem korrodálódik</td></tr>
   <tr style="background:rgba(126,200,227,0.12)"><td><strong>Mithril Íj</strong></td><td>128 használat</td><td>+25% húzás és röpülési sebesség</td><td>Legjobbra fejleszthető (Legendary → Artifact)</td></tr>
 </table>
-<div class="info-box">🏹 <strong>Tegez / Nyíltegez (Quiver):</strong> 6 slot × 16 nyíl = <strong>96 nyíl</strong>. Kiegészítő slotba kerül. Receptje: 1 Toll + 2 Bőr.<br><strong>Legjobb kombó:</strong> Mithril Íj + Adamantium-nyíl — a legjobb távoli megoldás az End Kristályok ellen.</div>
+<div class="info-box">🏹 <strong>Tegez / Nyíltegez (Quiver):</strong> 6 slot × 16 nyíl = <strong>96 nyíl</strong>. Kézben tartva <strong>Shift+jobb klikkel</strong> nyílik meg, kiegészítő slotban működik, és a nyilakat <strong>balról jobbra</strong> fogyasztja. Receptje: 1 Toll + 2 Bőr.<br><strong>Legjobb kombó:</strong> Mithril Íj + Adamantium-nyíl — a legjobb távoli megoldás az End Kristályok ellen.</div>
+<div class="tip-card">🎯 <strong><span class="wiki-item" data-id="crossbow">Íjász Puska</span>:</strong> nem craftolható, <strong>Raider Captain</strong> dobhatja. Nem enchantolható enchanting table-ön. Az íjnál <strong>lassabban tölt</strong>, de <strong>nagyobbat sebez</strong> és pontosabb / messzebbre lő a kisebb szórás miatt. <strong>Teljesen fel kell húzni</strong>, részlegesen nem lőhető el.</div>
 </div>
 
 <div data-lang="en">
@@ -207,6 +219,7 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr><td><span class="tier t-adamantium">Adamantium (4/4)</span></td><td>Immune to corrosion from gray/black slimes; fire damage does not reduce Durability</td></tr>
   <tr><td>Mercury Element (4/4)</td><td>Body temperature stays at 36.5°C permanently</td></tr>
 </table>
+<div class="tip-card">☿ <strong>How to get Mercury Element:</strong> the local item docs say <strong>full-durability</strong> Ancient Metal armor pieces can be transformed in liquefied mercury. The conversion takes about <strong>30 seconds</strong>, and once you wear the full 4/4 set, body temperature stays fixed at <strong>36.5°C</strong>.</div>
 
 <h3>Armor Protection Values</h3>
 <p>A total of 20 points = complete Protection. Armor loses its value below 50% Durability! <em>(Plate armor values)</em></p>
@@ -234,6 +247,7 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr><td>Bow / Crossbow</td><td>Ranged combat</td></tr>
   <tr><td>Shield</td><td>Metal shields (copper → adamantium) — block with right-click</td></tr>
 </table>
+<div class="tip-card">☿ <strong>Mercury material line:</strong> the local item docs say a <strong>Mercury Ingot</strong> can coat weapons for <strong>+0.1 damage per layer</strong>. If you need <strong>Mercury Nuggets</strong> for later recipes, an <strong>Iron War Hammer</strong> can break down either 1 Mercury Ingot or 1 Mercury Ore into <strong>9 nuggets</strong>.</div>
 
 <h3>Shield Block Chances</h3>
 <table class="compare-table">
@@ -247,6 +261,7 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr><td><span class="tier t-adamantium">Adamantium</span></td><td>18%</td></tr>
 </table>
 <div class="info-box">🎮 <strong>Mode difference:</strong> In Hardcore mode, shield block chance is <strong>3% lower</strong>, and successful blocks only provide <strong>20% damage reduction</strong> (Simple mode: 50%).</div>
+<div class="tip-card">🛡️ <strong>Durability threshold:</strong> the local item-info says shields <strong>stop blocking once durability drops to 1</strong>. In the advanced enchanting setup, shield durability enchants also become available.</div>
 
 <h3 id="reach-en">Reach Distance</h3>
 <p>In MITE:BE, reach is <strong>significantly shorter</strong> than vanilla Minecraft!</p>
@@ -288,13 +303,23 @@ const sidebarGroups = getSidebarGroups('systems/combat');
 <table class="compare-table">
   <tr><th>Arrow</th><th>Damage</th><th>Recover chance</th><th>Special</th></tr>
   <tr><td>Flint Arrow</td><td>+1</td><td>30%</td><td>Starter arrow</td></tr>
+  <tr><td>Obsidian Arrow</td><td>+2</td><td>40%</td><td>—</td></tr>
   <tr><td>Copper Arrow</td><td>+3</td><td>60%</td><td>—</td></tr>
   <tr style="background:rgba(192,192,128,0.10)"><td><strong>Silver Arrow</strong></td><td>+3</td><td>60%</td><td>Bonus vs undead + can hit White Ghouls</td></tr>
+  <tr><td>Gold Arrow</td><td>+2</td><td>50%</td><td>Cheap mid-step if iron is scarce</td></tr>
   <tr><td>Iron Arrow</td><td>+4</td><td>70%</td><td>—</td></tr>
+  <tr><td>Ancient Metal Arrow</td><td>+5</td><td>80%</td><td>Can also drop from bow-using ancient undead</td></tr>
   <tr style="background:rgba(126,200,227,0.12)"><td><strong>Mithril Arrow</strong></td><td>+7</td><td>80%</td><td>Best damage!</td></tr>
   <tr style="background:rgba(179,136,255,0.14)"><td><strong>Adamantium Arrow</strong></td><td>+6</td><td>90%</td><td>The only arrow that breaks End Crystals; adamantium tools work too</td></tr>
 </table>
-<div class="info-box">🏹 <strong>Quiver:</strong> 6 slots × 16 arrows = <strong>96 arrows</strong>. Recipe: 1 Feather + 2 Leather.<br><strong>Best combo:</strong> Mithril Bow + Adamantium Arrows — the best ranged answer to End Crystals.</div>
+<table class="compare-table">
+  <tr><th>Bow</th><th>Durability</th><th>Speed Bonus</th><th>Notes</th></tr>
+  <tr><td>Vanilla Bow</td><td>385</td><td>—</td><td>Standard</td></tr>
+  <tr><td>Ancient Metal Bow</td><td>64 uses</td><td>+10% draw and arrow speed</td><td>Often found on ancient corpses; does not corrode</td></tr>
+  <tr style="background:rgba(126,200,227,0.12)"><td><strong>Mithril Bow</strong></td><td>128 uses</td><td>+25% draw and arrow speed</td><td>Best upgrade path (Legendary → Artifact)</td></tr>
+</table>
+<div class="info-box">🏹 <strong>Quiver:</strong> 6 slots × 16 arrows = <strong>96 arrows</strong>. Hold it in hand and <strong>Shift-right-click</strong> to open it; it works from the accessory slot, and arrows are consumed <strong>from left to right</strong>. Recipe: 1 Feather + 2 Leather.<br><strong>Best combo:</strong> Mithril Bow + Adamantium Arrows — the best ranged answer to End Crystals.</div>
+<div class="tip-card">🎯 <strong><span class="wiki-item" data-id="crossbow">Crossbow</span>:</strong> it cannot be crafted and can drop from a <strong>Raider Captain</strong>. It also <strong>cannot be enchanted</strong> on an enchantment table. Compared to a bow it <strong>reloads slower</strong>, but hits harder and shoots more accurately / farther thanks to lower firing error. It <strong>must be fully drawn</strong> before it can fire.</div>
 </div>
 
 <div data-lang="ru">
@@ -314,6 +339,7 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr><td><span class="tier t-adamantium">Адамант (4/4)</span></td><td>Иммунитет к коррозии от серых/чёрных слизней; огонь не снижает прочность</td></tr>
   <tr><td>Ртутный элемент (4/4)</td><td>Температура тела навсегда остаётся 36,5°C</td></tr>
 </table>
+<div class="tip-card">☿ <strong>Как получить Ртутный элемент:</strong> по локальным item-doc части брони из <strong>Древнего металла с полной прочностью</strong> можно преобразовать в жидкой ртути. Превращение занимает около <strong>30 секунд</strong>, а полный комплект 4/4 фиксирует температуру тела на <strong>36,5°C</strong>.</div>
 
 <h3>Значения защиты брони</h3>
 <p>Всего 20 очков = полная защита. Броня теряет ценность ниже 50% прочности! <em>(Данные для пластинчатой брони)</em></p>
@@ -344,6 +370,7 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr><td>Лук / Арбалет</td><td>Дальний бой</td></tr>
   <tr><td>Щит</td><td>Металлические щиты (медь → адамант) — блокировка правой кнопкой мыши</td></tr>
 </table>
+<div class="tip-card">☿ <strong>Ртутная ветка материалов:</strong> по локальным item-doc <strong>ртутный слиток</strong> используется для ртутного покрытия оружия, дающего <strong>+0.1 урона за слой</strong>. Если для рецептов нужны <strong>ртутные крупицы</strong>, <strong>железный боевой молот</strong> может разбить 1 ртутный слиток или 1 ртутную руду на <strong>9 крупиц</strong>.</div>
 
 <h3>Шанс блокирования щита</h3>
 <table class="compare-table">
@@ -357,6 +384,7 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr><td><span class="tier t-adamantium">Адамант</span></td><td>18%</td></tr>
 </table>
 <div class="info-box">🎮 <strong>Разница режимов:</strong> В режиме Hardcore шанс блока <strong>на 3% ниже</strong>, а успешный блок даёт лишь <strong>20% снижения урона</strong> (в Simple — 50%).</div>
+<div class="tip-card">🛡️ <strong>Порог прочности:</strong> по локальному item-info щиты <strong>перестают блокировать при 1 прочности</strong>. В продвинутой системе зачарования также становятся доступны зачарования на повышение щитовой прочности.</div>
 
 <h3>Сравнение урона мечей</h3>
 <table class="compare-table">
@@ -434,16 +462,20 @@ const sidebarGroups = getSidebarGroups('systems/combat');
   <tr><td>Обсидиановая</td><td>+2</td><td>40%</td><td>—</td></tr>
   <tr><td>Медная</td><td>+3</td><td>60%</td><td>—</td></tr>
   <tr style="background:rgba(192,192,128,0.10)"><td><strong>Серебряная</strong></td><td>+3</td><td>60%</td><td>Бонус против нежити + бьёт Белых Упырей</td></tr>
+  <tr><td>Золотая</td><td>+2</td><td>50%</td><td>Дешёвый промежуточный вариант, если железа мало</td></tr>
   <tr><td>Железная</td><td>+4</td><td>70%</td><td>—</td></tr>
+  <tr><td>Древнеметаллическая</td><td>+5</td><td>80%</td><td>Может выпадать с древней нежити с луками</td></tr>
   <tr style="background:rgba(126,200,227,0.12)"><td><strong>Мифриловая</strong></td><td>+7</td><td>80%</td><td>Лучший урон!</td></tr>
   <tr style="background:rgba(179,136,255,0.14)"><td><strong>Адамантиевая</strong></td><td>+6</td><td>90%</td><td>Единственная стрела для Кристаллов Края; адамантовые инструменты тоже подходят</td></tr>
 </table>
 <table class="compare-table">
   <tr><th>Лук</th><th>Прочность</th><th>Бонус скорости</th><th>Примечание</th></tr>
   <tr><td>Обычный лук</td><td>385</td><td>—</td><td>Стандартный</td></tr>
+  <tr><td>Лук из древнего металла</td><td>64 исп.</td><td>+10% к натяжению и полёту стрелы</td><td>Часто встречается у древних трупов; не ржавеет</td></tr>
   <tr style="background:rgba(126,200,227,0.12)"><td><strong>Мифриловый лук</strong></td><td>128 исп.</td><td>+25% скорость натяжения и полёта</td><td>Лучший (Legendary → Artifact)</td></tr>
 </table>
-<div class="info-box">🏹 <strong>Колчан:</strong> 6 ячеек × 16 стрел = <strong>96 стрел</strong>. Рецепт: 1 Перо + 2 Кожи.<br><strong>Лучший комбо:</strong> Мифриловый лук + Адамантиевые стрелы — лучший дальний вариант против Кристаллов Края.</div>
+<div class="info-box">🏹 <strong>Колчан:</strong> 6 ячеек × 16 стрел = <strong>96 стрел</strong>. Открывается в руке через <strong>Shift+ПКМ</strong>, работает из слота аксессуара, а стрелы расходуются <strong>слева направо</strong>. Рецепт: 1 Перо + 2 Кожи.<br><strong>Лучший комбо:</strong> Мифриловый лук + Адамантиевые стрелы — лучший дальний вариант против Кристаллов Края.</div>
+<div class="tip-card">🎯 <strong><span class="wiki-item" data-id="crossbow">Арбалет</span>:</strong> не крафтится, может выпасть с <strong>капитана рейдеров</strong>. Его также <strong>нельзя зачаровать</strong> на столе зачарования. По сравнению с луком он <strong>дольше перезаряжается</strong>, но бьёт сильнее и стреляет точнее / дальше из-за меньшего разброса. <strong>Стрелять можно только после полного натяжения</strong>.</div>
 </div>
 
 <ProgressComplete pageId="combat" />

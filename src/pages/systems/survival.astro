@@ -12,6 +12,26 @@ import '../../styles/global.css';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const sidebarGroups = getSidebarGroups('systems/survival');
+const wormCompostingRows = [
+  { item: { hu: 'Lomb / levelek', en: 'Leaves', ru: 'Листва' }, value: '1.0', note: { hu: 'Minden levéltípus erős alapanyag.', en: 'All leaf variants are strong basic feedstock.', ru: 'Все виды листвы дают хороший базовый материал.' } },
+  { item: { hu: 'Magas fű / páfrány', en: 'Tall grass / fern', ru: 'Высокая трава / папоротник' }, value: '0.5', note: { hu: 'Korai játékban könnyen farmolható.', en: 'Easy to mass-collect in early game.', ru: 'Легко собирать массово в начале игры.' } },
+  { item: { hu: 'Virágok', en: 'Flowers', ru: 'Цветы' }, value: '0.3', note: { hu: 'Alacsony, de biztos komposztérték.', en: 'Low but reliable compost value.', ru: 'Невысокая, но стабильная ценность.' } },
+  { item: { hu: 'Barna / piros gomba', en: 'Brown / red mushroom', ru: 'Коричневый / красный гриб' }, value: '0.5', note: { hu: 'Közepes értékű, könnyű kiegészítő alapanyag.', en: 'Mid-value filler material.', ru: 'Средняя ценность, удобный наполнитель.' } },
+  { item: { hu: 'Tök', en: 'Pumpkin', ru: 'Тыква' }, value: '2.0', note: { hu: 'A referencia plusz tökmagot is jelez.', en: 'The reference also indicates pumpkin seeds as extra return.', ru: 'Справочник также указывает возврат тыквенных семечек.' } },
+  { item: { hu: 'Dinnye blokk', en: 'Melon block', ru: 'Блок арбуза' }, value: '2.0', note: { hu: 'A referencia plusz dinnyemagot is jelez.', en: 'The reference also indicates melon seeds as extra return.', ru: 'Справочник также указывает возврат арбузных семечек.' } },
+  { item: { hu: 'Szénabála', en: 'Hay Bale', ru: 'Тюк сена' }, value: '4.5', note: { hu: 'A legerősebb egytételes komposztforrás a nyers listában.', en: 'The strongest single-item compost source in the raw list.', ru: 'Самый сильный одиночный источник компоста в сыром списке.' } },
+  { item: { hu: 'Alma', en: 'Apple', ru: 'Яблоко' }, value: '0.3', note: { hu: 'Étellel is lehet komposztálni, de nem túl hatékony.', en: 'Food can be composted too, but this is not very efficient.', ru: 'Еду тоже можно компостировать, но это не слишком эффективно.' } },
+  { item: { hu: 'Búza', en: 'Wheat', ru: 'Пшеница' }, value: '0.5', note: { hu: 'Jobb, mint a legtöbb virág vagy alma.', en: 'Better than most flowers or apples.', ru: 'Лучше, чем большинство цветов или яблок.' } },
+  { item: { hu: 'Kenyér', en: 'Bread', ru: 'Хлеб' }, value: '1.0', note: { hu: 'Meglepően jó komposztérték kész ételhez képest.', en: 'Surprisingly solid value for processed food.', ru: 'Неожиданно неплохая ценность для готовой еды.' } },
+  { item: { hu: 'Gombaleves', en: 'Mushroom Stew', ru: 'Грибной суп' }, value: '0.6', note: { hu: 'A referencia a tál visszajárását is jelzi.', en: 'The reference also notes the bowl as an extra return.', ru: 'В справочнике также указан возврат миски.' } },
+  { item: { hu: 'Papír / cukor / Nether Wart', en: 'Paper / sugar / Nether Wart', ru: 'Бумага / сахар / адский нарост' }, value: '0.1', note: { hu: 'Leggyengébb még elfogadott kategória.', en: 'The weakest still-valid compost tier.', ru: 'Самая слабая, но всё ещё допустимая категория.' } },
+  { item: { hu: 'Hal / nyers vagy sült csirke', en: 'Fish / raw or cooked chicken', ru: 'Рыба / сырая или жареная курица' }, value: '0.6', note: { hu: 'Közepes húsalapú érték.', en: 'Mid-tier meat-based value.', ru: 'Средняя мясная ценность.' } },
+  { item: { hu: 'Sertéshús', en: 'Pork', ru: 'Свинина' }, value: '0.8', note: { hu: 'Kicsit jobb, mint a hal vagy csirke.', en: 'Slightly better than fish or chicken.', ru: 'Немного лучше, чем рыба или курица.' } },
+  { item: { hu: 'Marhahús', en: 'Beef', ru: 'Говядина' }, value: '1.0', note: { hu: 'Az egyik legerősebb hús-alapú tétel.', en: 'One of the strongest meat entries in the list.', ru: 'Один из самых сильных мясных вариантов в списке.' } },
+  { item: { hu: 'Répa', en: 'Carrot', ru: 'Морковь' }, value: '0.3', note: { hu: 'Alap zöldségszint.', en: 'Basic vegetable-tier value.', ru: 'Базовая овощная ценность.' } },
+  { item: { hu: 'Burgonya / sült burgonya / mérgező burgonya', en: 'Potato / baked potato / poisonous potato', ru: 'Картофель / печёный картофель / ядовитый картофель' }, value: '0.4 / 0.8 / 0.2', note: { hu: 'A sütés javít rajta, a mérgező változat gyenge.', en: 'Cooking improves it; the poisonous version is weak.', ru: 'После готовки ценность выше; ядовитая версия слабая.' } },
+  { item: { hu: 'Tökpite', en: 'Pumpkin Pie', ru: 'Тыквенный пирог' }, value: '1.6', note: { hu: 'Kiemelkedően jó feldolgozott étel-komposzt.', en: 'An unusually strong processed-food compost option.', ru: 'Необычно сильный вариант компоста из готовой еды.' } },
+];
 ---
 <BaseLayout title="Survival — MITE:BE Wiki" description="MITE:BE survival: backpack (B key), body temperature 36-37°C, reduced stack sizes, storage planning.">
   <Header />
@@ -50,6 +70,18 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <tr><td>Mithril / Adamantium</td><td>90 / 102</td><td>A játékfájlok név szerint tartalmazzák, de a v0.9.0-hoz nem találtam hozzájuk receptet vagy fejlesztő tárgyat</td></tr>
 </table>
 <div class="tip-card">🎒 <strong>Biztos v0.9.0 útvonal:</strong> Bőr Hátizsák → Nagy Hátizsák Fejlesztő → Ősi Fém Hátizsák Fejlesztő. Az utolsó lépéshez a nagy hátizsák-fejlesztőt és 4× ősi fémrudat kell teljes higanyüstbe tenni, alul magma/láva hőforrással, majd kb. 30 másodpercet várni.</div>
+<div class="tip-card">🖱️ <strong>Hogyan kell felhasználni a fejlesztő itemeket:</strong> a helyi item-docok szerint mindkét hátizsák-fejlesztő <strong>ráhúzás + kattintás</strong> módon működik a <strong>kiegészítő slotban viselt</strong> hátizsákon. Előbb a Big Backpack Upgrade megy a Leather Backpackre, utána ugyanígy az Ancient Metal Backpack Upgrade. Ugyanez a helyi leírás azt is sugallja, hogy a jelenlegi útvonalon a bőr és ősi fém hátizsák <strong>nem levételre tervezett</strong> accessory-állapot.</div>
+
+<h3>Fejlett tárolók</h3>
+<p>A helyi item-info alapján a v0.9.0-ban a láda- és hordófejlesztések a <strong>dedikált upgrade item</strong> útvonalra egyszerűsödtek. Ezekhez <strong>Ősi Fém Tároló Tudáskönyv</strong> kell, használatuk pedig lerakott tárolón történik.</p>
+<table class="compare-table">
+  <tr><th>Tároló</th><th>Kapacitás</th><th>Biztosan igazolt működés</th></tr>
+  <tr><td><strong>Ősi Fém Láda / Hordó</strong></td><td><strong>15×7 = 105</strong></td><td>Dedikált upgrade item kell; <strong>Shift + jobb klikk</strong> a lerakott ládán / rekeszen / hordón</td></tr>
+  <tr><td>Mithril Láda / Hordó</td><td>17×7 = 119</td><td>Csak az elvárt alsó tierre megy rá, szintet nem ugrik át</td></tr>
+  <tr><td>Adamantium Láda / Hordó</td><td>19×7 = 133</td><td>Szintén csak a közvetlen előző tárolót fejleszti tovább</td></tr>
+</table>
+<div class="info-box">📦 <strong>Röviden:</strong> a biztos v0.9.0 logika itt az, hogy a storage-upgrade itemek <strong>nem ugranak át szinteket</strong>, és az Ősi Fém Tároló Tudáskönyv az ősi fémes upgrade-item vonalat oldja fel: hátizsák, láda és hordó.</div>
+<div class="tip-card">📦 <strong><span class="wiki-item" data-id="crate">Rekesz / Crate</span>:</strong> v0.9.0-ban bekerült a <strong>mozgatható</strong> faláda-család. A tölgy, nyír, dzsungel és luc változatok mind <strong>9×6-os</strong>, nagy láda méretű tárolót adnak, és a chest upgrade route is tud rájuk épülni.</div>
 
 <h2 id="temperature">Testhőmérséklet</h2>
 <p>A testhőmérséklet 36–37°C-ban optimális. Tűz, láva, Alvilág emeli — víz, eső, jég csökkenti.</p>
@@ -63,6 +95,7 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 </table>
 <div class="warning-box">🔥 <strong>Kemence közelség = túlmelegedés!</strong> Ha 2–3 blokkon belül állsz egy égő kemencéhez, a testhőmérsékleted átléphet 37.2°C-ot → <strong>Gyengeség I</strong>. Megoldás: állj távolabb, vagy kezeld hűtéssel.</div>
 <div class="tip-card">🌡️ <strong>Melegítő módosítók:</strong> Láva (2 blokk közel): +0.1°C/35mp · Tűz (3 blokk): +0.1°C/50mp · Fáklya tartása: +0.1°C/60mp · Alvilág: állandó +0.4°C<br>🌡️ <strong>Hűtő módosítók:</strong> Vízbe merülés: −0.1°C/5mp · Jég tartása: −0.1°C/25mp · Fagylalt evése: −0.1°C</div>
+<div class="tip-card">🎋 <strong><span class="wiki-item" data-id="bamboo_helmet">Bambuszkalap</span>:</strong> a <strong>kiegészítő slotban</strong> viselve kivédi az esős idő negatív hatását. Esőben <strong>30 másodpercenként 1 tartósságot</strong> veszít, <strong>0 tartósságnál nem tűnik el</strong>, csak hatástalan lesz. A helyi item-doc ezt a javítóblokkot belsőleg <strong>Armor Stand</strong>-ként írja le, de funkció szerint <strong>szárító / kalaptartó</strong>: itt kb. <strong>1 tartósság / 3 másodperc</strong> tempóval javul.</div>
 
 <h3>Korlátozott Kötegméret (Stack Limit)</h3>
 <p>A MITE:BE drastikusan csökkenti a legtöbb blokk kötegméretét — komoly <strong>leltár- és tárolástervezést</strong> igényel!</p>
@@ -72,10 +105,13 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Rönk</strong></td><td>Tölgy, Lucfenyő, Nyár, Jungle Rönk</td><td><strong>4</strong></td><td>64</td></tr>
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Deszka</strong></td><td>Minden deszka típus</td><td><strong>8</strong></td><td>64</td></tr>
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Ércek</strong></td><td>Vas, Réz, Arany, Gyémánt, Mithril, Adamantium</td><td><strong>5</strong></td><td>64</td></tr>
-  <tr><td>Homok / Homokkő</td><td>Homok, Sötét Homok</td><td>8</td><td>64</td></tr>
-  <tr><td>Kavics</td><td>Kavics, Alvilági Kavics</td><td>8</td><td>64</td></tr>
-  <tr><td>Üveg</td><td>Üveg blokk, Üveg Panel</td><td>4 / 16</td><td>64</td></tr>
-  <tr style="background:rgba(100,200,100,0.10)"><td>Fáklya</td><td>Fáklya, Vöröskő Fáklya</td><td>32</td><td>64</td></tr>
+  <tr><td>Homok / Kavics / Föld</td><td>Homok, Kavics, Föld, Alapkő (4)</td><td>8 / 4</td><td>64</td></tr>
+  <tr><td>Üveg / Gyapjú</td><td>Üveg blokk, Panel (16), Gyapjú</td><td>4</td><td>64</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Fáklya</td><td>Fáklya, Vöröskő Fáklya</td><td><strong>32</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,150,0,0.10)"><td><strong>Élelem</strong></td><td>Sült húsok, Kenyér, Alma</td><td><strong>16</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,150,0,0.10)"><td>Tojás / Csali</td><td>Tojás, Giliszta</td><td>16</td><td>16</td></tr>
+  <tr style="background:rgba(100,180,255,0.10)"><td><strong>Vödrök</strong></td><td>Üres, Vizes, Lávás, Higanyos</td><td><strong>1</strong></td><td>16</td></tr>
+  <tr><td>Nyilak</td><td>Kova, Réz, Vas, Mithril, Adamantium</td><td>32</td><td>64</td></tr>
 </table>
 <div class="warning-box">📦 <strong>Fontos:</strong> A csökkentett kötegméretek miatt szükséged van <strong>több tároló ládára</strong>, és az anyaggyűjtés is hamarabb tölti meg a leltárat. Tervezz előre!</div>
 
@@ -108,6 +144,20 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 <div class="tip-card">🎣 <strong>Harci trükk:</strong> A horgászbot eltalál egy mobot → 1 sebzés (a karaktered támadóereje nem számít). Ha ezután <strong>hotbart váltasz</strong>, a bot nem veszít tartósságot. Korai játékban hasznos gyenge mobokra!</div>
 <div class="tip-card">🥕 <strong>Répa-horgászbot:</strong> Bármely horgászbotból craftolható répa-horgászbot. Miután a répa-horgászbot elhasználódik, <strong>teljes tartósságú horgászbotot</strong> kapsz vissza!</div>
 
+<h3>Gilisztás komposztálás</h3>
+<p>A ZIP <code>item_composting.txt</code> fájlja külön listázza, milyen itemet milyen értékkel tudnak a giliszták komposztálni. Az alábbiak a legfontosabb, biztosan azonosítható tételek.</p>
+<table class="compare-table">
+  <tr><th>Item</th><th>Komposztérték</th><th>Megjegyzés</th></tr>
+  {wormCompostingRows.map((row) => (
+    <tr>
+      <td>{row.item.hu}</td>
+      <td>{row.value}</td>
+      <td>{row.note.hu}</td>
+    </tr>
+  ))}
+</table>
+<div class="info-box">🪱 <strong>Ökölszabály:</strong> a <strong>szénabála</strong> messze a legjobb tömegkomposzt, a <strong>tök</strong> és a <strong>dinnye</strong> jó középkategóriás forrás, a levelek pedig olcsó, korlátlan alapanyagot adnak.</div>
+
 <h2 id="knowledge-books">Tudáskönyvek</h2>
 <p>A Tudáskönyv egy speciális tárgy, amely haladó receptek feloldására szolgál. Amíg nem rendelkezel a megfelelő Tudáskönyvvel, az adott recept <strong>nem készíthető el</strong>!</p>
 <div class="warning-box">🔒 <strong>Kemény zárolás!</strong> Ha egy recept Tudáskönyvhöz kötött, akkor <strong>még akkor sem tudod elkészíteni, ha minden alapanyagod megvan!</strong> A v0.9.0 tapasztalatok és itemleírások alapján a könyvek biztos forrásai közé tartoznak a <strong>földalatti dungeonök kincsesládái</strong> és a <strong>felszíni Pillager-erődök ládái</strong>.</div>
@@ -122,24 +172,33 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 <table>
   <tr><th>Tudáskönyv</th><th>Feloldott recept</th><th>Megjegyzés</th></tr>
   <tr><td>Bányászsisak tudáskönyv</td><td>Bányászsisak</td><td>Vas Munkaasztalon készíthető, tartósság: 150</td></tr>
-  <tr><td>Akkumulátor tudáskönyv</td><td>Akkumulátor</td><td>Bányászsisak újratöltéséhez (75 tartósság/db)</td></tr>
-  <tr><td>Elemi víztasak tudáskönyv</td><td>Elemi Víztasak</td><td>Fejlett víztároló bőrből és selyemből</td></tr>
-  <tr><td>Ősi fém szűrőpapír tudáskönyv</td><td>Ősi Fém Szűrőpapír</td><td>Haladó vízszűrés ősi fém szemcsével</td></tr>
+  <tr><td>Akkumulátor tudáskönyv</td><td>Akkumulátor</td><td>Bányászsisak újratöltéséhez (75 tartósság/db, Hardcore-ban 50)</td></tr>
+  <tr><td>Elemi víztasak tudáskönyv</td><td>Elemi Víztasak</td><td>Nagy víztasak + ősi fémrúd higanyos konverziójához kell</td></tr>
+  <tr><td>Ősi fém szűrőpapír tudáskönyv</td><td>Ősi Fém Szűrőpapír</td><td>v0.9.0-ban a megmaradt haladó szűrőpapírok egyike; ősi fém szemcsével készül</td></tr>
   <tr><td>Szikla porítógép tudáskönyv</td><td>Szikla Porítógép</td><td>Alapkő elpusztítása: beacon + vöröskő blokk + obszidián</td></tr>
   <tr><td>Továbbfejlesztett vég szem tudáskönyv</td><td>Erősített Ender Szem</td><td>9× Ender Szem → Erősített Ender Szem</td></tr>
   <tr><td>Egyéni bűvölőasztal tudáskönyv</td><td>Egyéni Bűvölőasztal</td><td>Erősebb bűvölések eléréséhez</td></tr>
-  <tr><td>Útkő tudáskönyv</td><td>Útkő</td><td>Teleportálási célpont; Keménykő Munkaasztalon: Ender gyöngy + vöröskő + kőtégla</td></tr>
-  <tr><td>Teleport-tekercs tudáskönyv</td><td>Teleport-tekercs</td><td>A helyi receptadatokban régi, eltávolított teleport-tekercs-hivatkozásként látszik</td></tr>
-  <tr><td>Óra tudáskönyv</td><td>Óra</td><td>8× arany nugget + vöröskő; napszak jelzés</td></tr>
-  <tr><td>Hűtőfolyadék tudáskönyv</td><td>Hűtőfolyadék</td><td>Ónlemez + jég; hőmérséklet csökkentésére</td></tr>
+  <tr><td>Útkő tudáskönyv</td><td>Útkő</td><td>Az aktív v0.9.0-s Útkő / teleportációs sztélé receptet oldja fel; a régi teleport-tekercses vonal külön, legacy adatként kezelendő</td></tr>
+  <tr><td>Teleport-tekercs tudáskönyv</td><td>Teleport-tekercs</td><td>Legacy adat: a régi tekercsek teleportációs sztélékhez kötődtek, de receptjeik v0.5.8-ban el lettek távolítva</td></tr>
+  <tr><td>Óra tudáskönyv</td><td>Óra</td><td>Kiegészítő tárgy; a bal felső sarokban mutatja a napot és az időt</td></tr>
+  <tr><td>Hűtőfolyadék tudáskönyv</td><td>Hűtőfolyadék</td><td>Kétszájú Üst gyorsításához; Shift+jobb klikkel 5 napos hűtési bónuszt ad</td></tr>
   <tr><td>Óriás TNT tudáskönyv</td><td>Óriás TNT</td><td>Nagyobb hatósugarú robbanás</td></tr>
-  <tr><td>Világjelölő tudáskönyv</td><td>Világjelölő</td><td>Világ újraéledési pontjának beállítása; helyi receptadat: obszidián + kék iránytű</td></tr>
-  <tr><td>Ősi fém tároló tudáskönyv</td><td>Ősi Fém Tároló</td><td>Fejlett tároló eszköz ősi fémből</td></tr>
+  <tr><td>Világjelölő tudáskönyv</td><td>Világjelölő</td><td>Overworld respawnpont beállítása vöröskőblokkal aktiválva; receptje 8 obszidián + 1 kék iránytű</td></tr>
+  <tr><td>Ősi fém tároló tudáskönyv</td><td>Ősi Fém Tároló</td><td>Ősi fém hátizsák-, láda- és hordófejlesztő itemekhez kell</td></tr>
 </table>
 
 <h3>Bányászsisak</h3>
-<p>A Bányászsisak mobil fényforrás, ami 30 másodpercenként 1 tartósságot fogyaszt. <strong>Vas Munkaasztalon</strong> készíthető el a megfelelő Tudáskönyv feloldása után. Akkumulátorral újratölthető.</p>
+<p>A Bányászsisak mobil fényforrás, ami normál szabályok mellett <strong>30 másodpercenként</strong>, Hardcore-ban pedig <strong>15 másodpercenként</strong> fogyaszt 1 tartósságot. <strong>Vas Munkaasztalon</strong> készíthető el a megfelelő Tudáskönyv feloldása után, és a <strong>kiegészítő slotban</strong> kell viselni. Akkumulátorral újratölthető: normál szabályok mellett <strong>75</strong>, Hardcore-ban <strong>50</strong> tartósságot tölt vissza.</p>
+<div class="tip-card">⛏️ <strong>Javítás:</strong> az Akkumulátort <strong>vas vagy jobb üllőn</strong> lehet ráhasználni. Ha a sisak tartóssága <strong>0-ra esik</strong>, nem tűnik el, csak elveszíti a fényhatását.</div>
 <div class="tip-card">💡 A fölösleges Tudáskönyveket könyvvé alakíthatod a munkaasztalon, és XP-t kapsz értük.</div>
+<div class="tip-card">🪙 <strong><span class="wiki-item" data-id="hardstone_coin">Keménykő érme</span>:</strong> 1 Keménykő rögből készül, és <strong>300 XP-be kerül</strong>, viszont visszabontáskor ezt az XP-t visszaadja. Gyakorlatban ez egy egyszerű <strong>XP-tároló item</strong>, ha átmenetileg tárgyba akarod parkolni a tapasztalatot.</div>
+<div class="tip-card">🗿 <strong><span class="wiki-item" data-id="way_stone">Útkő / Waystone</span>:</strong> a helyi item-doc szerint aktivált teleportrögzítő pontként működik. A biztosan említett világforrása a <strong>földalatti Mushroom Forest Battle Tower teteje</strong>. A helyi item-info továbbra is azt jelzi, hogy a teleport <strong>500 blokkig ingyenes</strong>, utána pedig <strong>minden további 300 blokk 100 XP</strong>. A régi <strong>Return / Bound / Warp Scroll</strong> hivatkozások még látszanak a fájlokban, de a jelenlegi receptkészlet ezeket <strong>legacy / removed</strong> állapotban hagyja.</div>
+<div class="tip-card">🌀 <strong><span class="wiki-item" data-id="conveying_stone">Teleportáló Kő</span>:</strong> ez <strong>nem ugyanaz</strong>, mint az Útkő. A helyi item-info szerint egy <strong>4×6-os overworld portálkerettel</strong> és <strong>Tűzütővel</strong> működő biom-utazós rendszer része. A különböző kövek <strong>általános biomcélokat</strong> súlyoznak, például sivatagot, mocsarat, síkságot, fennsíkot, óceánt, havas területet vagy dzsungelt, de <strong>nem garantálnak</strong> konkrét romot.</div>
+<div class="tip-card">🔥 <strong><span class="wiki-item" data-id="flint_and_steel">Tűzgyújtó</span> anyaglépcső:</strong> a helyi <code>802093_flint_and_steel</code> doc szerint nem csak a vas változat létezik. A mai aktív sor: <strong>Réz 8</strong>, <strong>Ezüst 10</strong>, <strong>Vas 16</strong>, <strong>Arany 24</strong>, <strong>Keménykő 32</strong>, <strong>Ősi Fém 48</strong>, <strong>Mithril 80</strong>, <strong>Adamantium 144</strong> tartósság. Ugyanúgy működnek, csak a magasabb tierekhez erősebb munkaasztal kell, és jóval tovább bírják portálokhoz, fáklyákhoz és újragyújtáshoz.</div>
+<div class="tip-card">🏮 <strong><span class="wiki-item" data-id="lantern">Lámpás</span> &amp; <span class="wiki-item" data-id="template_lantern">Dekoratív Lámpás</span>:</strong> mindkettő <strong>15-ös fényszintű</strong> díszblokk. A sima lámpás <strong>zsinór + fáklya + vörös gyapjú</strong>, a dekoratív lámpás pedig <strong>4 vasrög + fáklya</strong> recepttel készül. A <strong><span class="wiki-item" data-id="glow_stone_torch">Izzókő Fáklya</span></strong> szintén 15-ös fényt ad, receptje <strong>izzókőpor + bot</strong>.</div>
+<div class="tip-card">🧭 <strong><span class="wiki-item" data-id="empty_map">Üres Térkép</span> &amp; <span class="wiki-item" data-id="map">Térkép</span>:</strong> az üres térkép a helyi receptek szerint <strong>könyv + iránytű</strong> kombinációból készül, és <strong>jobb klikkre</strong> nyílik meg teljes térképpé. Egy meglévő térkép <strong>1 üres térképpel</strong> a munkaasztalon lemásolható.</div>
+<div class="tip-card">🗺️ <strong><span class="wiki-item" data-id="empty_antique_atlas">Üres Antik Atlasz</span> &amp; <span class="wiki-item" data-id="antique_atlas">Antik Atlasz</span>:</strong> az üres változat <strong>jobb klikkre</strong> teljes atlaszt csinál. A kész atlasz saját felületet, <strong>biomszínezést</strong>, jelölőpontokat és mentési lehetőséget ad. A helyi item-doc szerint az üres atlasz <strong>10%</strong> eséllyel megjelenhet a földalatti <strong>ancient skeleton spawner</strong> zsákmányában.</div>
+<div class="tip-card">🚩 <strong><span class="wiki-item" data-id="pillager_flag">Pillager Zászló</span>:</strong> pillagerektől eshet, és <strong>kézben tartva</strong> a közeli, <strong>20 blokkon belüli</strong> falusi kereskedések hozamát <strong>megduplázza</strong>.</div>
 </div>
 
 <div data-lang="en">
@@ -154,6 +213,18 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <tr><td>Mithril / Adamantium</td><td>90 / 102</td><td>Named in the files, but I found no v0.9.0 recipe or upgrade item for actually obtaining them</td></tr>
 </table>
 <div class="tip-card">🎒 <strong>Reliable v0.9.0 route:</strong> Leather Backpack → Big Backpack Upgrade → Ancient Metal Backpack Upgrade. The last step uses the big backpack upgrade plus 4× Ancient Metal Ingots in a full mercury cauldron with magma/lava heat below for about 30 seconds.</div>
+<div class="tip-card">🖱️ <strong>How the upgrade items are applied:</strong> the local item docs describe both backpack upgrades as <strong>drag-and-click</strong> upgrades on the backpack worn in the <strong>accessory slot</strong>. First apply the Big Backpack Upgrade to the Leather Backpack there, then apply the Ancient Metal Backpack Upgrade the same way. The same local backpack doc also suggests that the leather and ancient-metal states in this route are <strong>not intended to be removed</strong> from that slot.</div>
+
+<h3>Advanced Storage</h3>
+<p>Based on the local item-info, v0.9.0 simplifies chest and barrel progression into the <strong>dedicated upgrade-item</strong> route. These upgrades require the <strong>Ancient Metal Container Knowledge Book</strong> and are used on already placed storage blocks.</p>
+<table class="compare-table">
+  <tr><th>Storage</th><th>Capacity</th><th>Reliably confirmed behavior</th></tr>
+  <tr><td><strong>Ancient Metal Chest / Barrel</strong></td><td><strong>15×7 = 105</strong></td><td>Needs the dedicated upgrade item; use <strong>Shift + right-click</strong> on a placed chest / crate / barrel</td></tr>
+  <tr><td>Mithril Chest / Barrel</td><td>17×7 = 119</td><td>Only upgrades the expected lower tier; it does not skip tiers</td></tr>
+  <tr><td>Adamantium Chest / Barrel</td><td>19×7 = 133</td><td>Also upgrades only the direct previous storage tier</td></tr>
+</table>
+<div class="info-box">📦 <strong>Short version:</strong> the reliable v0.9.0 logic here is that storage upgrade items <strong>do not skip tiers</strong>, and the Ancient Metal Container Knowledge Book unlocks the ancient-metal storage upgrade line: backpack, chest, and barrel.</div>
+<div class="tip-card">📦 <strong><span class="wiki-item" data-id="crate">Crate</span>:</strong> v0.9.0 also adds a <strong>movable</strong> wooden crate family. Oak, birch, jungle, and spruce variants all provide <strong>9×6</strong> large-chest-sized storage, and the chest-upgrade path can also target placed crates.</div>
 
 <h2 id="temperature-en">Body Temperature</h2>
 <p>Body temperature is optimal at 36–37°C. Fire, lava, and the Nether raise it — water, rain, and ice lower it.</p>
@@ -167,6 +238,7 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 </table>
 <div class="warning-box">🔥 <strong>Furnace proximity = overheating!</strong> Standing within 2–3 blocks of a burning furnace can push your body temperature above 37.2°C → <strong>Weakness I</strong>. Solution: stand further away or manage heat with cooling (work near water, hold ice).</div>
 <div class="tip-card">🌡️ <strong>Heating modifiers:</strong> Lava (2 blocks near): +0.1°C/35s · Fire (3 blocks): +0.1°C/50s · Holding a torch: +0.1°C/60s · Nether: constant +0.4°C<br>🌡️ <strong>Cooling modifiers:</strong> Submerged in water: −0.1°C/5s · Holding ice: −0.1°C/25s · Eating ice cream: −0.1°C</div>
+<div class="tip-card">🎋 <strong><span class="wiki-item" data-id="bamboo_helmet">Bamboo Hat</span>:</strong> when worn in the <strong>accessory slot</strong>, it blocks the negative effect from rainy weather. It loses <strong>1 durability every 30 seconds</strong> in rain, and at <strong>0 durability it does not disappear</strong> - it simply stops working. The local item-doc internally names the repair block <strong>Armor Stand</strong>, but functionally it acts as a <strong>drying / hat stand</strong>, restoring about <strong>1 durability every 3 seconds</strong>.</div>
 
 <h3>Reduced Stack Sizes</h3>
 <p>MITE:BE drastically reduces stack sizes for most blocks — requiring serious <strong>inventory and storage planning</strong>!</p>
@@ -176,7 +248,12 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Log</strong></td><td>Oak, Spruce, Birch, Jungle Log</td><td><strong>4</strong></td><td>64</td></tr>
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Planks</strong></td><td>All plank types</td><td><strong>8</strong></td><td>64</td></tr>
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Ores</strong></td><td>Iron, Copper, Gold, Diamond, Mithril, Adamantium</td><td><strong>5</strong></td><td>64</td></tr>
-  <tr style="background:rgba(100,200,100,0.10)"><td>Torch</td><td>Torch, Redstone Torch</td><td>32</td><td>64</td></tr>
+  <tr><td>Sand / Gravel / Dirt</td><td>Sand, Gravel, Dirt, Bedrock (4)</td><td>8 / 4</td><td>64</td></tr>
+  <tr><td>Glass / Wool</td><td>Glass block, Panes (16), Wool</td><td>4</td><td>64</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Torch</td><td>Torch, Redstone Torch</td><td><strong>32</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,150,0,0.10)"><td><strong>Food</strong></td><td>Cooked meats, Bread, Apple</td><td><strong>16</strong></td><td>64</td></tr>
+  <tr style="background:rgba(100,180,255,0.10)"><td><strong>Buckets</strong></td><td>Empty, Water, Lava, Mercury</td><td><strong>1</strong></td><td>16</td></tr>
+  <tr><td>Arrows</td><td>Flint, Copper, Iron, Mithril, Adamantium</td><td>32</td><td>64</td></tr>
 </table>
 
 <h2 id="fishing-en">Fishing</h2>
@@ -208,6 +285,20 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 <div class="tip-card">🎣 <strong>Combat trick:</strong> Hitting a mob with a fishing rod deals 1 damage (ignoring your attack power). If you <strong>switch hotbar slots</strong> right after, the rod loses no durability. Useful in early game against weak mobs!</div>
 <div class="tip-card">🥕 <strong>Carrot on a Stick:</strong> Any fishing rod can be crafted into a Carrot on a Stick. Once the carrot rod is used up, you get back a <strong>full-durability fishing rod</strong>!</div>
 
+<h3>Worm Composting</h3>
+<p>The ZIP's <code>item_composting.txt</code> keeps a dedicated list of items that worms can compost and how much value each one gives. These are the most useful clearly identifiable entries.</p>
+<table class="compare-table">
+  <tr><th>Item</th><th>Compost value</th><th>Notes</th></tr>
+  {wormCompostingRows.map((row) => (
+    <tr>
+      <td>{row.item.en}</td>
+      <td>{row.value}</td>
+      <td>{row.note.en}</td>
+    </tr>
+  ))}
+</table>
+<div class="info-box">🪱 <strong>Rule of thumb:</strong> <strong>Hay Bales</strong> are by far the best bulk compost item, <strong>pumpkins</strong> and <strong>melons</strong> are strong mid-tier options, and leaves are the cheapest renewable baseline.</div>
+
 <h2 id="knowledge-books-en">Knowledge Books</h2>
 <p>A Knowledge Book is a special item that unlocks advanced recipes. If a recipe is gated behind a Knowledge Book, you <strong>cannot craft it</strong> even if you have all the materials!</p>
 <div class="warning-box">🔒 <strong>Hard requirement:</strong> Based on current v0.9.0 observations and item pages, reliably confirmed Knowledge Book sources include <strong>treasure chests in underground dungeons</strong> and <strong>surface Pillager Fortress chests</strong>.</div>
@@ -216,21 +307,32 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 <table>
   <tr><th>Knowledge Book</th><th>Unlocks</th><th>Notes</th></tr>
   <tr><td>Miner's Helmet Knowledge Book</td><td>Miner's Helmet</td><td>Craftable at Iron Workbench, durability: 150</td></tr>
-  <tr><td>Battery Knowledge Book</td><td>Battery</td><td>Recharges Miner's Helmet (75 durability each)</td></tr>
-  <tr><td>Elemental Water Bag Knowledge Book</td><td>Elemental Water Bag</td><td>Advanced water storage from leather and silk</td></tr>
-  <tr><td>Ancient Metal Filter Paper Knowledge Book</td><td>Ancient Metal Filter Paper</td><td>Advanced water filtration with ancient metal nuggets</td></tr>
+  <tr><td>Battery Knowledge Book</td><td>Battery</td><td>Recharges Miner's Helmet (75 durability each, 50 in Hardcore)</td></tr>
+  <tr><td>Elemental Water Bag Knowledge Book</td><td>Elemental Water Bag</td><td>Needed for the mercury conversion from Big Water Bag + Ancient Metal Ingot</td></tr>
+  <tr><td>Ancient Metal Filter Paper Knowledge Book</td><td>Ancient Metal Filter Paper</td><td>One of the advanced filter papers still craftable in v0.9.0; made with ancient metal nuggets</td></tr>
   <tr><td>Bedrock Pulverizer Knowledge Book</td><td>Bedrock Pulverizer</td><td>Destroys bedrock core; beacon + Redstone Block + Obsidian</td></tr>
   <tr><td>Enhanced Ender Eye Knowledge Book</td><td>Enhanced Ender Eye</td><td>9× Ender Eyes → Enhanced Ender Eye</td></tr>
   <tr><td>Custom Enchantment Table Knowledge Book</td><td>Custom Enchantment Table</td><td>Stronger enchantments</td></tr>
-  <tr><td>Teleportation Stone Knowledge Book</td><td>Teleportation Stone</td><td>Teleportation destination; Hardstone Workbench: Ender Pearl + Redstone Block + Stone Bricks</td></tr>
-  <tr><td>Teleport Scroll Knowledge Book</td><td>Teleport Scroll</td><td>Appears as a legacy/removed teleport-scroll reference in the current recipe data</td></tr>
-  <tr><td>Clock Knowledge Book</td><td>Clock</td><td>8× Gold Nuggets + Redstone Dust; shows time of day</td></tr>
-  <tr><td>Cooling Liquid Knowledge Book</td><td>Cooling Liquid</td><td>Tin plates + Ice; reduces body temperature</td></tr>
+  <tr><td>Teleportation Stone Knowledge Book</td><td>Teleportation Stone</td><td>Unlocks the active v0.9.0 Waystone / teleportation stele recipe; the older teleport-scroll line should be treated separately as legacy data</td></tr>
+  <tr><td>Teleport Scroll Knowledge Book</td><td>Teleport Scroll</td><td>Legacy data only: the old scrolls bound to teleportation steles, but their recipes were removed in v0.5.8</td></tr>
+  <tr><td>Clock Knowledge Book</td><td>Clock</td><td>Accessory item; shows both the current day and time in the top-left corner</td></tr>
+  <tr><td>Cooling Liquid Knowledge Book</td><td>Cooling Liquid</td><td>Used to accelerate the Two-Mouthed Cauldron; Shift-right-click applies a 5-day cooling-speed boost</td></tr>
   <tr><td>Giant TNT Knowledge Book</td><td>Giant TNT</td><td>Larger explosion radius than regular TNT</td></tr>
-  <tr><td>World Marker Knowledge Book</td><td>World Marker</td><td>Sets the world's respawn point; current recipe data uses obsidian + Blue Compass</td></tr>
-  <tr><td>Ancient Metal Container Knowledge Book</td><td>Ancient Metal Container</td><td>Advanced storage item from Ancient Metal</td></tr>
+  <tr><td>World Marker Knowledge Book</td><td>World Marker</td><td>Sets the overworld respawn point when activated with a Redstone Block; recipe: 8 Obsidian + 1 Blue Compass</td></tr>
+  <tr><td>Ancient Metal Container Knowledge Book</td><td>Ancient Metal Container</td><td>Needed for ancient-metal backpack, chest, and barrel upgrade items</td></tr>
 </table>
+<h3>Miner's Helmet</h3>
+<p>The Miner's Helmet is a mobile light source that consumes 1 durability every <strong>30 seconds</strong> under normal rules and every <strong>15 seconds</strong> in Hardcore. It is crafted at an <strong>Iron Workbench</strong> after unlocking the related Knowledge Book, and it must be worn in the <strong>accessory slot</strong>. A Battery restores <strong>75</strong> durability normally or <strong>50</strong> in Hardcore.</p>
+<div class="tip-card">⛏️ <strong>Repairing:</strong> apply Batteries on an <strong>iron or better anvil</strong>. At <strong>0 durability</strong> the helmet does not disappear; it simply stops providing light until repaired.</div>
 <div class="tip-card">💡 Spare Knowledge Books can be converted into regular Books at the workbench for XP.</div>
+<div class="tip-card">🪙 <strong><span class="wiki-item" data-id="hardstone_coin">Hardstone Coin</span>:</strong> crafted from 1 Hardstone Nugget, it costs <strong>300 XP</strong> to make, but that XP is returned when you convert it back into nuggets. In practice this makes it a simple <strong>XP storage item</strong> when you want to park experience in an object temporarily.</div>
+<div class="tip-card">🗿 <strong><span class="wiki-item" data-id="way_stone">Waystone</span>:</strong> the local item-doc treats it as an activated long-distance travel anchor. Its explicitly documented world source is the <strong>top floor of the Underground World's Mushroom Forest Battle Tower</strong>. The local item-info still notes <strong>free travel within 500 blocks</strong>, then <strong>100 XP for each additional 300 blocks</strong>. Older <strong>Return / Bound / Warp Scroll</strong> references still appear in the files, but the current recipe set leaves them in a <strong>legacy / removed</strong> state.</div>
+<div class="tip-card">🌀 <strong><span class="wiki-item" data-id="conveying_stone">Teleportation Stone</span>:</strong> this is <strong>not the same</strong> as the Waystone. The local item-info describes it as part of a <strong>4×6 overworld portal-frame</strong> travel system lit with <strong>Flint and Steel</strong>. Different stones bias travel toward <strong>broad biome destinations</strong> such as desert, swamp, plains, plateau, ocean, snowy terrain, or jungle, but they do <strong>not guarantee</strong> a specific ruin.</div>
+<div class="tip-card">🔥 <strong><span class="wiki-item" data-id="flint_and_steel">Flint and Steel</span> material ladder:</strong> the local <code>802093_flint_and_steel</code> doc confirms that MiTE:BE has more than the usual iron version. The current line is <strong>Copper 8</strong>, <strong>Silver 10</strong>, <strong>Iron 16</strong>, <strong>Gold 24</strong>, <strong>Hardstone 32</strong>, <strong>Ancient Metal 48</strong>, <strong>Mithril 80</strong>, <strong>Adamantium 144</strong> durability. They all work the same way; higher tiers just need stronger workbenches and last much longer for portals, torches, and relighting jobs.</div>
+<div class="tip-card">🏮 <strong><span class="wiki-item" data-id="lantern">Lantern</span> &amp; <span class="wiki-item" data-id="template_lantern">Decorative Lantern</span>:</strong> both are <strong>light level 15</strong> decorative blocks. The normal lantern uses <strong>String + Torch + Red Wool</strong>, while the decorative lantern uses <strong>4 Iron Nuggets + Torch</strong>. The <strong><span class="wiki-item" data-id="glow_stone_torch">Glowstone Torch</span></strong> is another light-15 option, crafted from <strong>Glowstone Dust + Stick</strong>.</div>
+<div class="tip-card">🧭 <strong><span class="wiki-item" data-id="empty_map">Empty Map</span> &amp; <span class="wiki-item" data-id="map">Map</span>:</strong> local recipes show the blank map is made from <strong>Book + Compass</strong>, then <strong>right-clicked</strong> to become a normal map. An existing map can be cloned on the workbench with <strong>1 Empty Map</strong>.</div>
+<div class="tip-card">🗺️ <strong><span class="wiki-item" data-id="empty_antique_atlas">Empty Antique Atlas</span> &amp; <span class="wiki-item" data-id="antique_atlas">Antique Atlas</span>:</strong> right-clicking the empty version turns it into the full atlas. The finished atlas has its own interface, <strong>biome coloring</strong>, landmark markers, and backup support. The local item-doc says the empty atlas can appear with about a <strong>10%</strong> chance in underground <strong>ancient skeleton spawner</strong> loot.</div>
+<div class="tip-card">🚩 <strong><span class="wiki-item" data-id="pillager_flag">Pillager Flag</span>:</strong> can drop from pillagers, and while <strong>held in hand</strong> it <strong>doubles villager trade output</strong> within a <strong>20-block radius</strong>.</div>
 </div>
 
 <div data-lang="ru">
@@ -245,6 +347,18 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <tr><td>Мифриловый / Адамантиевый</td><td>90 / 102</td><td>Есть в файлах по названиям, но рецепт или предмет улучшения для v0.9.0 не найден</td></tr>
 </table>
 <div class="tip-card">🎒 <strong>Надёжный путь в v0.9.0:</strong> Кожаный рюкзак → Улучшение большого рюкзака → Улучшение рюкзака из древнего металла. Последний этап требует предмета Улучшение большого рюкзака, 4× слитка Древнего металла и полного котла с ртутью с источником магмы/лавы снизу примерно на 30 секунд.</div>
+<div class="tip-card">🖱️ <strong>Как применяются предметы улучшения:</strong> по локальным item-doc оба апгрейда рюкзака работают через <strong>перетаскивание и клик</strong> по рюкзаку, надетому в <strong>слот аксессуара</strong>. Сначала предмет большого рюкзака применяется к кожаному, затем таким же образом накладывается апгрейд из древнего металла. Тот же локальный backpack-doc также намекает, что кожаный и древнеметаллический рюкзак в этом маршруте <strong>не предполагаются к снятию</strong> из слота аксессуара.</div>
+
+<h3>Продвинутые хранилища</h3>
+<p>По локальному item-info в v0.9.0 улучшения сундуков и бочек упрощены до пути через <strong>отдельные upgrade-предметы</strong>. Для них нужна <strong>Книга знаний: Контейнер из Древнего металла</strong>, а применяются они к уже установленным хранилищам.</p>
+<table class="compare-table">
+  <tr><th>Хранилище</th><th>Вместимость</th><th>Надёжно подтверждённая логика</th></tr>
+  <tr><td><strong>Сундук / бочка из Древнего металла</strong></td><td><strong>15×7 = 105</strong></td><td>Нужен отдельный upgrade-предмет; используется через <strong>Shift + ПКМ</strong> по установленному сундуку / ящику / бочке</td></tr>
+  <tr><td>Мифриловый сундук / бочка</td><td>17×7 = 119</td><td>Работает только на ожидаемом нижнем tier и не позволяет пропускать ступени</td></tr>
+  <tr><td>Адамантиевый сундук / бочка</td><td>19×7 = 133</td><td>Тоже улучшает только непосредственный предыдущий tier</td></tr>
+</table>
+<div class="info-box">📦 <strong>Коротко:</strong> надёжная логика v0.9.0 здесь такая: storage-upgrade предметы <strong>не перескакивают через tier</strong>, а Книга знаний: Контейнер из Древнего металла открывает древнеметаллическую линию апгрейдов для рюкзака, сундука и бочки.</div>
+<div class="tip-card">📦 <strong><span class="wiki-item" data-id="crate">Ящик / Crate</span>:</strong> в v0.9.0 добавили <strong>переносимые</strong> деревянные ящики. Дубовый, берёзовый, джунглевый и еловый варианты дают хранилище размером <strong>9×6</strong>, как большой сундук, и путь апгрейда сундуков тоже может применяться к установленным ящикам.</div>
 
 <h2 id="temperature-ru">🌡️ Температура тела</h2>
 <p>Оптимальная температура — 36–37°C. Огонь, лава и Незер повышают её; вода, дождь и лёд снижают.</p>
@@ -258,6 +372,7 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 </table>
 <div class="warning-box">🔥 <strong>Близость к печи = перегрев!</strong> 2–3 блока от горящей печи могут поднять температуру выше 37.2°C → <strong>Слабость I</strong>. Решение: отойди подальше или управляй температурой (работай рядом с водой).</div>
 <div class="tip-card">🌡️ <strong>Модификаторы нагрева:</strong> Лава (2 блока): +0.1°C/35с · Огонь (3 блока): +0.1°C/50с · Держать факел: +0.1°C/60с · Незер: постоянный +0.4°C<br>🌡️ <strong>Модификаторы охлаждения:</strong> Погружение в воду: −0.1°C/5с · Держать лёд: −0.1°C/25с · Съесть мороженое: −0.1°C</div>
+<div class="tip-card">🎋 <strong><span class="wiki-item" data-id="bamboo_helmet">Бамбуковая шляпа</span>:</strong> при ношении в <strong>слоте аксессуара</strong> защищает от негативного эффекта дождливой погоды. Под дождём теряет <strong>1 прочность каждые 30 секунд</strong>, а при <strong>0 прочности не исчезает</strong> - просто перестаёт работать. В локальном item-doc блок для починки внутренне назван <strong>Armor Stand</strong>, но по функции это <strong>сушилка / стойка для шляпы</strong>, где шляпа восстанавливает примерно <strong>1 прочность за 3 секунды</strong>.</div>
 
 <h3>Уменьшенные размеры стеков</h3>
 <p>MITE:BE резко уменьшает размеры стеков большинства блоков — требует серьёзного <strong>планирования инвентаря и хранения</strong>!</p>
@@ -266,8 +381,13 @@ const sidebarGroups = getSidebarGroups('systems/survival');
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Камень / Булыжник</strong></td><td>Камень, Гранит, Диорит, Андезит</td><td><strong>8</strong></td><td>64</td></tr>
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Брёвна</strong></td><td>Дуб, Ель, Берёза, Джунглевое бревно</td><td><strong>4</strong></td><td>64</td></tr>
   <tr style="background:rgba(255,100,100,0.10)"><td><strong>Доски</strong></td><td>Все виды досок</td><td><strong>8</strong></td><td>64</td></tr>
-  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Руды</strong></td><td>Железо, Медь, Золото, Алмаз, Мифрил</td><td><strong>5</strong></td><td>64</td></tr>
-  <tr style="background:rgba(100,200,100,0.10)"><td>Факелы</td><td>Факел, Факел из красного камня</td><td>32</td><td>64</td></tr>
+  <tr style="background:rgba(255,100,100,0.10)"><td><strong>Руды</strong></td><td>Железо, Медь, Золото, Алмаз, Мифрил, Адамант</td><td><strong>5</strong></td><td>64</td></tr>
+  <tr><td>Песок / Гравий / Земля</td><td>Песок, Гравий, Земля, Бедрок (4)</td><td>8 / 4</td><td>64</td></tr>
+  <tr><td>Стекло / Шерсть</td><td>Стеклянный блок, Панель (16), Шерсть</td><td>4</td><td>64</td></tr>
+  <tr style="background:rgba(100,200,100,0.10)"><td>Факелы</td><td>Факел, Факел из красного камня</td><td><strong>32</strong></td><td>64</td></tr>
+  <tr style="background:rgba(255,150,0,0.10)"><td><strong>Еда</strong></td><td>Жареное мясо, Хлеб, Яблоко</td><td><strong>16</strong></td><td>64</td></tr>
+  <tr style="background:rgba(100,180,255,0.10)"><td><strong>Вёдра</strong></td><td>Пустое, Вода, Лава, Ртуть</td><td><strong>1</strong></td><td>16</td></tr>
+  <tr><td>Стрелы</td><td>Кремень, Медь, Железо, Мифрил</td><td>32</td><td>64</td></tr>
 </table>
 <div class="warning-box">📦 <strong>Важно:</strong> Из-за уменьшенных стеков вам потребуется <strong>больше сундуков</strong>, а инвентарь при сборе ресурсов заполняется намного быстрее. Планируйте заранее!</div>
 
@@ -300,6 +420,20 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 <div class="tip-card">🎣 <strong>Боевой трюк:</strong> Попадание удочкой по мобу наносит 1 урон (независимо от силы атаки). Если сразу <strong>переключить слот хотбара</strong>, удочка не теряет прочность. Полезно в начале игры против слабых мобов!</div>
 <div class="tip-card">🥕 <strong>Морковка на палке:</strong> Из любой удочки можно скрафтить морковку на палке. Когда морковка израсходуется, вернётся удочка с <strong>полной прочностью</strong>!</div>
 
+<h3>Компостирование червями</h3>
+<p>В ZIP-файле <code>item_composting.txt</code> отдельно перечислены предметы, которые черви могут перерабатывать в компост, и их ценность. Ниже собраны самые полезные и точно распознанные позиции.</p>
+<table class="compare-table">
+  <tr><th>Предмет</th><th>Ценность компоста</th><th>Примечание</th></tr>
+  {wormCompostingRows.map((row) => (
+    <tr>
+      <td>{row.item.ru}</td>
+      <td>{row.value}</td>
+      <td>{row.note.ru}</td>
+    </tr>
+  ))}
+</table>
+<div class="info-box">🪱 <strong>Простое правило:</strong> <strong>тюк сена</strong> — лучший массовый источник компоста, <strong>тыквы</strong> и <strong>арбузы</strong> хороши как средний tier, а листва остаётся самым дешёвым бесконечным материалом.</div>
+
 <h2 id="knowledge-books-ru">📚 Книги знаний</h2>
 <p>Книга знаний — особый предмет, открывающий продвинутые рецепты. Если рецепт заблокирован Книгой знаний, скрафтить его <strong>не получится</strong>, даже если все материалы есть!</p>
 <div class="warning-box">🔒 <strong>Жёсткое ограничение!</strong> По наблюдениям в v0.9.0 и описаниям предметов надёжно подтверждённые источники Книг знаний включают <strong>сундуки подземелий Подземного мира</strong> и <strong>сундуки наземных Крепостей Разорителей</strong>.</div>
@@ -308,24 +442,33 @@ const sidebarGroups = getSidebarGroups('systems/survival');
 <table>
   <tr><th>Книга знаний</th><th>Открывает</th><th>Примечание</th></tr>
   <tr><td>Книга знаний: Шахтёрский шлем</td><td>Шахтёрский шлем</td><td>Крафт на Железном верстаке, прочность: 150</td></tr>
-  <tr><td>Книга знаний: Батарея</td><td>Батарея</td><td>Подзарядка шлема (75 прочности за шт.)</td></tr>
-  <tr><td>Книга знаний: Мешок для воды</td><td>Элементный мешок для воды</td><td>Продвинутый мешок для воды из кожи и шёлка</td></tr>
-  <tr><td>Книга знаний: Фильтровальная бумага</td><td>Фильтровальная бумага из Древнего металла</td><td>Продвинутая фильтрация воды с самородками</td></tr>
+  <tr><td>Книга знаний: Батарея</td><td>Батарея</td><td>Подзарядка шлема (75 прочности за шт., 50 в Hardcore)</td></tr>
+  <tr><td>Книга знаний: Мешок для воды</td><td>Элементный мешок для воды</td><td>Нужна для ртутного преобразования из Большой фляги + слитка Древнего металла</td></tr>
+  <tr><td>Книга знаний: Фильтровальная бумага</td><td>Фильтровальная бумага из Древнего металла</td><td>Один из продвинутых фильтров, оставшихся крафтовыми в v0.9.0; делается из крупинок древнего металла</td></tr>
   <tr><td>Книга знаний: Измельчитель коренной породы</td><td>Измельчитель коренной породы</td><td>Маяк + блок красного камня + обсидиан</td></tr>
   <tr><td>Книга знаний: Улучшенное око Эндера</td><td>Улучшенное око Эндера</td><td>9× Глаз Края → Улучшенное око Эндера</td></tr>
   <tr><td>Книга знаний: Особый стол зачарования</td><td>Особый стол зачарования</td><td>Для более сильных зачарований</td></tr>
-  <tr><td>Книга знаний: Камень перемещения</td><td>Камень перемещения</td><td>Точка телепортации; твердокаменный верстак: жемчуг края + блок красного камня + каменные кирпичи</td></tr>
-  <tr><td>Книга знаний: Телепорт-свиток</td><td>Телепорт-свиток</td><td>В текущих данных рецептов выглядит как устаревшая удалённая ссылка на телепорт-свиток</td></tr>
-  <tr><td>Книга знаний: Часы</td><td>Часы</td><td>8× золотой самородок + красный камень; показывает время суток</td></tr>
-  <tr><td>Книга знаний: Охлаждающая жидкость</td><td>Охлаждающая жидкость</td><td>Оловянные пластины + лёд; снижает температуру тела</td></tr>
+  <tr><td>Книга знаний: Камень перемещения</td><td>Камень перемещения</td><td>Открывает активный рецепт v0.9.0 для Waystone / телепортационной стелы; старую линию со свитками телепортации нужно считать legacy-данными</td></tr>
+  <tr><td>Книга знаний: Телепорт-свиток</td><td>Телепорт-свиток</td><td>Только legacy-данные: старые свитки привязывались к телепортационным стелам, но их рецепты удалены в v0.5.8</td></tr>
+  <tr><td>Книга знаний: Часы</td><td>Часы</td><td>Аксессуар; показывает текущий день и время в левом верхнем углу</td></tr>
+  <tr><td>Книга знаний: Охлаждающая жидкость</td><td>Охлаждающая жидкость</td><td>Для ускорения двуротого котла; Shift+ПКМ даёт 5-дневный бонус к охлаждению</td></tr>
   <tr><td>Книга знаний: Гигантский ТНТ</td><td>Гигантский ТНТ</td><td>Радиус взрыва больше, чем у обычного ТНТ</td></tr>
-  <tr><td>Книга знаний: Маркер мира</td><td>Маркер мира</td><td>Задаёт мировую точку возрождения; локальный рецепт использует обсидиан и синий компас</td></tr>
-  <tr><td>Книга знаний: Контейнер из Древнего металла</td><td>Контейнер из Древнего металла</td><td>Продвинутый предмет для хранения</td></tr>
+  <tr><td>Книга знаний: Маркер мира</td><td>Маркер мира</td><td>Задаёт точку возрождения в обычном мире после активации блоком красного камня; рецепт: 8 обсидиана + 1 синий компас</td></tr>
+  <tr><td>Книга знаний: Контейнер из Древнего металла</td><td>Контейнер из Древнего металла</td><td>Нужна для предметов улучшения древнеметаллического рюкзака, сундука и бочки</td></tr>
 </table>
 <div class="tip-card">💡 Лишние Книги знаний можно превратить в обычные книги на верстаке — в обмен ты получишь очки опыта!</div>
+<div class="tip-card">🪙 <strong><span class="wiki-item" data-id="hardstone_coin">Монета из твердокамня</span>:</strong> создаётся из 1 твердокаменного самородка и стоит <strong>300 XP</strong>, но при обратном разборе этот опыт возвращается. На практике это простой <strong>предмет для хранения XP</strong>, если нужно временно переложить опыт в вещь.</div>
+<div class="tip-card">🗿 <strong><span class="wiki-item" data-id="way_stone">Камень телепортации / Waystone</span>:</strong> локальный item-doc описывает его как активируемую точку дальних перемещений. Явно указанное мировое место спавна — <strong>верхний этаж Mushroom Forest Battle Tower</strong> в подземном мире. Локальный item-info также сохраняет правило: <strong>до 500 блоков бесплатно</strong>, затем <strong>100 XP за каждые дополнительные 300 блоков</strong>. Старые ссылки на <strong>Return / Bound / Warp Scroll</strong> всё ещё видны в файлах, но текущий набор рецептов оставляет их в состоянии <strong>legacy / removed</strong>.</div>
+<div class="tip-card">🌀 <strong><span class="wiki-item" data-id="conveying_stone">Камень перемещения</span>:</strong> это <strong>не то же самое</strong>, что Waystone. По локальному item-info он относится к системе биомных перемещений через <strong>портал 4×6 в Верхнем мире</strong>, который зажигается <strong>огнивом</strong>. Разные камни смещают прибытие к <strong>общим типам биомов</strong> вроде пустыни, болота, равнины, плато, океана, снежной зоны или джунглей, но <strong>не гарантируют</strong> конкретные руины.</div>
+<div class="tip-card">🔥 <strong><span class="wiki-item" data-id="flint_and_steel">Огниво</span> по материалам:</strong> локальный doc <code>802093_flint_and_steel</code> подтверждает, что в MiTE:BE есть не только железная версия. Актуальная лестница такая: <strong>Медь 8</strong>, <strong>Серебро 10</strong>, <strong>Железо 16</strong>, <strong>Золото 24</strong>, <strong>Твердокамень 32</strong>, <strong>Древний металл 48</strong>, <strong>Мифрил 80</strong>, <strong>Адамант 144</strong> прочности. Работают они одинаково; высокие тиры просто требуют более сильных верстаков и заметно дольше живут для порталов, факелов и повторного поджигания.</div>
+<div class="tip-card">🏮 <strong><span class="wiki-item" data-id="lantern">Фонарь</span> &amp; <span class="wiki-item" data-id="template_lantern">Декоративный фонарь</span>:</strong> оба дают <strong>уровень света 15</strong> и служат декоративными источниками света. Обычный фонарь крафтится из <strong>нити + факела + красной шерсти</strong>, декоративный — из <strong>4 железных самородков + факела</strong>. <strong><span class="wiki-item" data-id="glow_stone_torch">Светокаменный факел</span></strong> тоже даёт свет 15 и делается из <strong>светокаменной пыли + палки</strong>.</div>
+<div class="tip-card">🧭 <strong><span class="wiki-item" data-id="empty_map">Пустая карта</span> &amp; <span class="wiki-item" data-id="map">Карта</span>:</strong> по локальным рецептам пустая карта делается из <strong>книги + компаса</strong>, а затем по <strong>ПКМ</strong> открывается как обычная карта. Уже готовую карту можно копировать на верстаке с <strong>1 пустой картой</strong>.</div>
+<div class="tip-card">🗺️ <strong><span class="wiki-item" data-id="empty_antique_atlas">Пустой старинный атлас</span> &amp; <span class="wiki-item" data-id="antique_atlas">Старинный атлас</span>:</strong> по <strong>ПКМ</strong> пустая версия превращается в полноценный атлас. Готовый атлас даёт свой интерфейс, <strong>раскраску биомов</strong>, метки ориентиров и поддержку резервных копий. По локальному item-doc пустой атлас может появляться с шансом около <strong>10%</strong> в луте подземного <strong>ancient skeleton spawner</strong>.</div>
+<div class="tip-card">🚩 <strong><span class="wiki-item" data-id="pillager_flag">Флаг разбойников</span>:</strong> может выпадать с pillager'ов, и пока ты <strong>держишь его в руке</strong>, объём торговли жителей в радиусе <strong>20 блоков</strong> <strong>удваивается</strong>.</div>
 
 <h3>Шахтёрский шлем</h3>
-<p>Шахтёрский шлем — мобильный источник света, потребляющий 1 единицу прочности каждые 30 секунд. Крафтится на <strong>Железном верстаке</strong> после получения Книги знаний. Перезаряжается Аккумулятором (75 прочности за штуку).</p>
+<p>Шахтёрский шлем — мобильный источник света, который расходует 1 единицу прочности каждые <strong>30 секунд</strong> в обычном режиме и каждые <strong>15 секунд</strong> в Hardcore. Крафтится на <strong>Железном верстаке</strong> после получения Книги знаний и носится в <strong>слоте аксессуара</strong>. Перезаряжается Аккумулятором: <strong>75</strong> прочности в обычном режиме и <strong>50</strong> в Hardcore.</p>
+<div class="tip-card">⛏️ <strong>Ремонт:</strong> Аккумулятор применяется к шлему на <strong>железной или более высокой наковальне</strong>. При <strong>0 прочности</strong> шлем не исчезает, а только перестаёт светить до ремонта.</div>
 <div class="tip-card">💡 Шахтёрский шлем освобождает руки от факела — очень удобен в пещерах и шахтах!</div>
 </div>
 

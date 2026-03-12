@@ -3,8 +3,14 @@
   window.WikiData = window.WikiData || {};
   window.WikiData.mobs = {
     surface: [
-      { name: { hu: "Zombi", en: "Zombie", ru: "Зомби" }, hp: 30, dmg: { hu: "5–7", en: "5–7", ru: "5–7" }, xp: 15,
+      { name: { hu: "Zombi", en: "Zombie", ru: "Зомби" }, hp: 30, dmg: { hu: "5–7", en: "5–7", ru: "5–7" }, xp: 5,
         special: { hu: "Falon átérzékelés, csákányos változat bármit kibányászik", en: "Wall detection, pickaxe variant mines any block", ru: "Чувствует сквозь стены, вариант с киркой ломает любой блок" } },
+      { name: { hu: "Ősi Zombi", en: "Ancient Zombie", ru: "Древний зомби" }, hp: 30, dmg: { hu: "5–7", en: "5–7", ru: "5–7" }, xp: 15,
+        special: { hu: "Erősebb zombi változat", en: "Stronger zombie variant", ru: "Более сильный вариант зомби" } },
+      { name: { hu: "Óriás Zombi", en: "Giant Zombie", ru: "Гигантский зомби" }, hp: 100, dmg: { hu: "50", en: "50", ru: "50" }, xp: 5,
+        special: { hu: "Óriási méret, óriási sebzés", en: "Enormous size, massive damage", ru: "Огромный размер, колоссальный урон" } },
+      { name: { hu: "Enderman", en: "Enderman", ru: "Эндермен" }, hp: 40, dmg: { hu: "10", en: "10", ru: "10" }, xp: 5,
+        special: { hu: "Teleportálás, szemkontaktusra agresszív", en: "Teleportation, aggressive on eye contact", ru: "Телепортация, агрессивен при зрительном контакте" } },
       { name: { hu: "Csontváz", en: "Skeleton", ru: "Скелет" }, hp: 12, dmg: { hu: "4 (nyíl)", en: "4 (arrow)", ru: "4 (стрела)" }, xp: 5,
         special: { hu: "Távolsági támadó", en: "Ranged attacker", ru: "Дальний атакующий" } },
       { name: { hu: "Creeper", en: "Creeper", ru: "Крипер" }, hp: 25, dmg: { hu: "5–10 (robbanás)", en: "5–10 (explosion)", ru: "5–10 (взрыв)" }, xp: 5,
@@ -53,12 +59,16 @@
         special: { hu: "Életlopás + nagy sebzés", en: "Life steal + high damage", ru: "Похищение жизни + высокий урон" } }
     ],
     nether: [
+      { name: { hu: "Ghast", en: "Ghast", ru: "Гаст" }, hp: 10, dmg: { hu: "9 (tűzgolyó)", en: "9 (fireball)", ru: "9 (огненный шар)" }, xp: 10,
+        special: { hu: "Tűzgolyó lövés", en: "Fireball attack", ru: "Стреляет огненными шарами" } },
       { name: { hu: "Démon Pók", en: "Demon Spider", ru: "Паук-Демон" }, hp: 14, dmg: { hu: "4", en: "4", ru: "4" }, xp: 30,
         special: { hu: "Tűzálló, mérgező", en: "Fire resistant, poisonous", ru: "Огнеупорный, ядовитый" } },
       { name: { hu: "Pokol Kutya", en: "Hell Hound", ru: "Адский Пёс" }, hp: 20, dmg: { hu: "4–8", en: "4–8", ru: "4–8" }, xp: 6,
         special: { hu: "Tűzálló, gyors, falkában", en: "Fire resistant, fast, in packs", ru: "Огнеупорный, быстрый, стаями" } },
       { name: { hu: "Pokoli Creeper", en: "Nether Creeper", ru: "Адский Крипер" }, hp: 40, dmg: { hu: "2–40 (robbanás)", en: "2–40 (explosion)", ru: "2–40 (взрыв)" }, xp: 15,
         special: { hu: "Tűzálló, páncél 2, nagyobb robbanás", en: "Fire resistant, armor 2, bigger explosion", ru: "Огнеупорный, броня 2, мощный взрыв" } },
+      { name: { hu: "Blaze", en: "Blaze", ru: "Ифрит" }, hp: 60, dmg: { hu: "6", en: "6", ru: "6" }, xp: 20,
+        special: { hu: "Tüzes lövedékeket lő", en: "Shoots fire charges", ru: "Стреляет огненными шарами" } },
       { name: { hu: "Vörös Lángoszlop (Red Blaze)", en: "Red Blaze", ru: "Красный Бластер" }, hp: 40, dmg: { hu: "10", en: "10", ru: "10" }, xp: 20,
         special: { hu: "<strong>6 tűzgolyó egyszerre!</strong>", en: "<strong>6 fireballs at once!</strong>", ru: "<strong>6 огненных шаров одновременно!</strong>" } },
       { name: { hu: "Tűz Elementális", en: "Fire Elemental", ru: "Огненный Элементаль" }, hp: 40, dmg: { hu: "6", en: "6", ru: "6" }, xp: 25,

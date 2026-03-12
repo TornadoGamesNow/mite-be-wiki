@@ -10,7 +10,7 @@
     "dmgMin": 5,
     "dmgMax": 7,
     "dmgType": "melee",
-    "xp": 15,
+    "xp": 5,
     "spawnZones": [
       "surface",
       "underground"
@@ -63,6 +63,59 @@
     "speed": 0.23,
     "mcmod_id": 773874,
     "preview": "zombie_preview.jpg"
+  },
+  {
+    "id": "ancient_zombie",
+    "name": {
+      "hu": "Ősi Zombi",
+      "en": "Ancient Zombie",
+      "ru": "Древний зомби"
+    },
+    "hp": 30,
+    "dmgMin": 5,
+    "dmgMax": 7,
+    "dmgType": "melee",
+    "xp": 15,
+    "spawnZones": [
+      "surface",
+      "underground"
+    ],
+    "difficulty": "early",
+    "tags": [
+      "pack",
+      "wall_detection"
+    ],
+    "special": {
+      "hu": "Erősebb zombi változat ősi időkben.",
+      "en": "Stronger zombie variant from ancient times.",
+      "ru": "Более сильный вариант зомби из древних времён."
+    },
+    "drops": [
+      {
+        "item": {
+          "hu": "Rothadó hús",
+          "en": "Rotten Flesh",
+          "ru": "Гнилая плоть"
+        },
+        "qty": "0-2",
+        "chance": "common",
+        "itemId": "rotten_flesh"
+      }
+    ],
+    "image": "zombie.png",
+    "mobType": "undead",
+    "armor": 2,
+    "description": {
+      "hu": "Egy erősebb zombi, amely több tapasztalatot ad.",
+      "en": "A stronger zombie that gives more experience.",
+      "ru": "Более сильный зомби, дающий больше опыта."
+    },
+    "spawnInfo": {
+      "hu": "Felszín és föld alatt.",
+      "en": "Surface and underground.",
+      "ru": "Поверхность и под землёй."
+    },
+    "speed": 0.23
   },
   {
     "id": "skeleton",
@@ -7674,7 +7727,7 @@
     "dmgMin": 50,
     "dmgMax": 50,
     "dmgType": "melee",
-    "xp": 50,
+    "xp": 5,
     "spawnZones": [
       "surface",
       "underground"

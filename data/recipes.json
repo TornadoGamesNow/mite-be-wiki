@@ -267,10 +267,10 @@
       [
         "stick",
         [
-          "planks_oak",
-          "planks_spruce",
-          "planks_birch",
-          "planks_jungle"
+          "log_oak",
+          "log_spruce",
+          "log_birch",
+          "log_jungle"
         ]
       ]
     ],
@@ -547,19 +547,19 @@
     "gridSize": "3x3",
     "pattern": [
       [
+        "log_oak",
         "stick",
-        "stick",
-        "stick"
+        "log_oak"
       ],
       [
         "stick",
-        "straw_rope",
+        "_",
         "stick"
       ],
       [
+        "log_oak",
         "stick",
-        "stick",
-        "stick"
+        "log_oak"
       ]
     ],
     "label": {
@@ -5073,7 +5073,7 @@
   },
   {
     "id": "hardstone_chain",
-    "station": "Keménykő_workbench",
+    "station": "hardstone_workbench",
     "gridSize": "3x3",
     "pattern": [
       [

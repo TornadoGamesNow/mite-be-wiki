@@ -108,6 +108,9 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 <p>A kemencében a hőmérséklet-kijelző az aktuális hőmérsékletet mutatja. Különböző érceknek más az olvadáspontja. A kemence hőmérséklete idővel csökken.</p>
 
 <div class="tip"><strong>Végtelen fűtés:</strong> Végtelen lávaforrást a többblokkos kemence aljára téve végtelen fűtést kapsz! Több láva hatása összeadódik.</div>
+<div class="info-box">🌋 <strong>Lávakezelés pontosan:</strong> a helyi bucket-docok alapján a sima lávakiöntés csak <strong>folyó lávát</strong> hoz létre, ami egy idő után eltűnik, és vízzel érintkezve <strong>nem</strong> csinál obszidiánt. Valódi <strong>lávaforrást</strong> csak <strong>Ctrl + jobb klikkel</strong>, XP elköltésével tudsz lerakni. Emiatt a modban a láva tényleg <strong>farmolható / visszameríthető</strong>, nem egyszer használatos erőforrás.</div>
+<div class="tip-card">🪨 <strong>Bucket of Stone:</strong> ha lávás vödörrel vízbe esel, a helyi itemadat szerint a vödör <strong>kővel telt vödörré</strong> alakul. Ezt vissza lehet craftolni üres vödörré, de <strong>nem</strong> ad ingyen követ vagy kavicsot.</div>
+<div class="tip-card">🚤 <strong>Vascsónak:</strong> a helyi item-doc szerint <strong>láván is tud közlekedni</strong>, és ha összetörik, <strong>visszakerül a leltárba</strong> normál fa csónakos szétesés helyett. Az aktuális receptkészletben <strong>Vas Munkaasztalon</strong>, <strong>5 vasrúdból</strong> készül.</div>
 
 <h3>Láva Vödör Olvadási Esély</h3>
 <p>Lávás fűtésnél az olvasztott fémtárgyaknak <strong>anyagfüggő esélye</strong> van véletlenszerűen megolvadni és elveszni. Magasabb szintű fémek nagyobb hőállékonysággal bírnak.</p>
@@ -151,15 +154,13 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 
 <h2 id="metal-hierarchy">Fémhierarchia</h2>
 <table>
-  <tr><th>Szint</th><th>Anyag</th><th>Honnan?</th><th>Mire kell bányászni?</th></tr>
+  <tr><th>Szint</th><th>Anyag</th><th>Honnan?</th><th>Mire kell bányászni? (Érc / Blokk)</th></tr>
   <tr><td><span class="tier t-flint">1</span></td><td>Kova (Kőzet)</td><td>Kavicsból</td><td>Kézi bányászat</td></tr>
-  <tr><td><span class="tier t-copper">2</span></td><td>Réz</td><td>Szitálás / Bányászat</td><td>Kovacsákány</td></tr>
-  <tr><td><span class="tier t-silver">2</span></td><td>Ezüst</td><td>Szitálás / Bányászat</td><td>Kovacsákány</td></tr>
-  <tr><td><span class="tier t-gold">3</span></td><td>Arany</td><td>Mély bányászat</td><td>Réz/Ezüstcsákány</td></tr>
-  <tr><td><span class="tier t-iron">4</span></td><td>Vas</td><td>Mély bányászat</td><td>Réz/Ezüstcsákány</td></tr>
+  <tr><td><span class="tier t-copper">2</span></td><td>Réz / Ezüst</td><td>Szitálás / Bányászat</td><td>Kovacsákány</td></tr>
+  <tr><td><span class="tier t-gold">3</span></td><td>Arany / Vas</td><td>Mély bányászat</td><td>Réz/Ezüstcsákány (érc) · Vascsákány (blokk)</td></tr>
   <tr><td><span class="tier t-hard">5</span></td><td>Keménykő</td><td>Földalatti világ</td><td>Vascsákány</td></tr>
   <tr><td><span class="tier t-ancient">6</span></td><td>Ősi Fém</td><td>Földalatti világ</td><td>Vascsákány</td></tr>
-  <tr><td><span class="tier t-mithril">7</span></td><td>Mithril</td><td>Földalatti világ</td><td>Vascsákány / háborús kalapács</td></tr>
+  <tr><td><span class="tier t-mithril">7</span></td><td>Mithril</td><td>Földalatti világ</td><td>Vascsákány / háborús kalapács (érc) · Mithrilcsákány (blokk)</td></tr>
   <tr><td><span class="tier t-adamantium">8</span></td><td>Adamantium</td><td>Földalatti világ legmélye</td><td>Mithrilcsákány / háborús kalapács</td></tr>
 </table>
 
@@ -220,9 +221,10 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 <h3>Szén Kristály megszerzése</h3>
 <p>A helyi v0.9.0 itemadat szerint a <strong>Szén Kristály</strong> a fővilágban, magma közelében, nagyjából Y30 alatt jelenik meg. Biztosan igazolt források:</p>
 <ul>
-  <li>Természetes lelőhely bányászata a magma közeli fővilági rétegekben.</li>
+  <li>Természetes lelőhely bányászata a magma közeli fővilági rétegekben; a lelőhely közvetlenül <code>carbon_crystal</code>-t ad.</li>
   <li><code>Blast Furnace</code>-ben 1 <code>coal_block</code> + 1 <code>coal</code> receptből 1 <code>carbon_crystal_shard</code> készíthető.</li>
 </ul>
+<div class="tip-card">🧪 <strong>Gyakorlati shard route:</strong> 1 teljes <code>carbon_crystal</code> 4 <code>carbon_crystal_shard</code>-dá bontható, ezért ha valódi kristályt találsz, azt gyakran érdemes inkább szilánkokra bontani a szénacél fejlesztésekhez.</div>
 <div class="tip-card">💡 <strong>Higany Üst fejlesztés (Ősi Fém páncélhoz):</strong> Ha teljes tartósságú Ősi Fém páncéldarabot kattintasz egy láva fölé helyezett Higany Üstra (Higany Érc + Üst a mocsárból), a teljes szett viselésénél a testhőmérséklet stabilan marad! Ez a fejlesztés független az Ötvöző Kemencétől.</div>
 <div class="info-box">📝 <strong>Más ötvözetek:</strong> A játék referencia adatai szerint <em>csak</em> a fenti 3 ötvözet létezik az Ötvöző Kemencében. Keménykő, Mithril és Adamantium felszerelések NEM ötvözhetők — standard nagy kemencéből kerülnek ki.</div>
 
@@ -261,8 +263,9 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 </table>
 
 <div class="info"><strong>Carbon Crystal</strong> is placed by the local v0.9.0 item data near magma in the overworld, roughly below Y30.<br>
-① Mine natural Carbon Crystal deposits near magma<br>
+① Mine natural Carbon Crystal deposits near magma; the deposit drops <strong>carbon_crystal</strong> directly<br>
 ② In a <strong>Blast Furnace</strong>, <code>coal_block</code> + <code>coal</code> crafts 1 <strong>carbon_crystal_shard</strong></div>
+<div class="tip-card">🧪 <strong>Practical shard route:</strong> 1 full <code>carbon_crystal</code> can be broken down into 4 <code>carbon_crystal_shard</code>, so real crystal finds are often better spent as shard stock for high-carbon steel upgrades.</div>
 
 
 <!-- ===== MULTIBLOCK FURNACE ===== -->
@@ -291,6 +294,9 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 <p>The furnace displays its current temperature. Different ores have different melting points. Temperature drops over time.</p>
 
 <div class="tip"><strong>Infinite heating:</strong> Place an infinite lava source at the bottom of the multiblock furnace for infinite heat! Multiple lava sources stack!</div>
+<div class="info-box">🌋 <strong>Lava handling, precisely:</strong> according to the local bucket docs, normal lava pouring only creates <strong>flowing lava</strong>, which disappears after a while and does <strong>not</strong> form obsidian on contact with water. A true <strong>lava source block</strong> requires <strong>Ctrl + right-click</strong> and an XP cost. Because of that, lava in this mod is genuinely <strong>loopable / refillable</strong>, not just a one-use fuel source.</div>
+<div class="tip-card">🪨 <strong>Bucket of Stone:</strong> if you fall into water while carrying a lava bucket, the local item data says it turns into a <strong>bucket of stone</strong>. You can craft it back into an empty bucket, but it does <strong>not</strong> give free stone or cobblestone.</div>
+<div class="tip-card">🚤 <strong>Iron Boat:</strong> the local item-doc says it can <strong>travel on lava</strong>, and when it breaks it goes <strong>back into your inventory</strong> instead of scattering like a normal wooden boat. In the active recipe set it is crafted at the <strong>Iron Workbench</strong> from <strong>5 Iron Ingots</strong>.</div>
 
 <h3>Lava Bucket Melt Chance</h3>
 <p>When using lava-heated furnaces, metal items have a <strong>material-dependent chance</strong> of accidentally melting and being lost.</p>
@@ -332,15 +338,13 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 
 <h2 id="metal-hierarchy">Metal Hierarchy</h2>
 <table>
-  <tr><th>Tier</th><th>Material</th><th>Source</th><th>Minimum Pickaxe</th></tr>
+  <tr><th>Tier</th><th>Material</th><th>Source</th><th>Minimum Pickaxe (Ore / Block)</th></tr>
   <tr><td><span class="tier t-flint">1</span></td><td>Flint</td><td>From gravel</td><td>Bare hands</td></tr>
-  <tr><td><span class="tier t-copper">2</span></td><td>Copper</td><td>Sieving / Mining</td><td>Flint pickaxe</td></tr>
-  <tr><td><span class="tier t-silver">2</span></td><td>Silver</td><td>Sieving / Mining</td><td>Flint pickaxe</td></tr>
-  <tr><td><span class="tier t-gold">3</span></td><td>Gold</td><td>Deep Mining</td><td>Copper/Silver pickaxe</td></tr>
-  <tr><td><span class="tier t-iron">4</span></td><td>Iron</td><td>Deep Mining</td><td>Copper/Silver pickaxe</td></tr>
+  <tr><td><span class="tier t-copper">2</span></td><td>Copper / Silver</td><td>Sieving / Mining</td><td>Flint pickaxe</td></tr>
+  <tr><td><span class="tier t-gold">3</span></td><td>Gold / Iron</td><td>Deep Mining</td><td>Copper/Silver pickaxe (ore) · Iron pickaxe (block)</td></tr>
   <tr><td><span class="tier t-hard">5</span></td><td>Hardstone</td><td>Underground</td><td>Iron pickaxe</td></tr>
   <tr><td><span class="tier t-ancient">6</span></td><td>Ancient Metal</td><td>Underground</td><td>Iron pickaxe</td></tr>
-  <tr><td><span class="tier t-mithril">7</span></td><td>Mithril</td><td>Underground world</td><td>Iron pickaxe / war hammer</td></tr>
+  <tr><td><span class="tier t-mithril">7</span></td><td>Mithril</td><td>Underground world</td><td>Iron pickaxe / war hammer (ore) · Mithril pickaxe (block)</td></tr>
   <tr><td><span class="tier t-adamantium">8</span></td><td>Adamantium</td><td>Deepest Underground</td><td>Mithril pickaxe / war hammer</td></tr>
 </table>
 
@@ -431,6 +435,9 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
   <tr style="background:rgba(100,200,100,0.12)"><td><span class="tier t-adamantium">Адамант</span></td><td>0% ✅</td></tr>
 </table>
 <div class="tip-card">🔥 <strong>Предупреждение о золоте:</strong> Золотые предметы имеют наибольший шанс расплавления (20%)! Следи за ними при использовании лавовой печи.</div>
+<div class="info-box">🌋 <strong>Как именно работает лава:</strong> по локальным bucket-doc обычное выливание создаёт только <strong>текущую лаву</strong>, которая быстро исчезает и <strong>не</strong> образует обсидиан при контакте с водой. Настоящий <strong>блок-источник лавы</strong> ставится только через <strong>Ctrl + ПКМ</strong> с тратой XP. Поэтому в моде лаву действительно можно <strong>зацикливать и перезачерпывать</strong>, а не считать одноразовым топливом.</div>
+<div class="tip-card">🪨 <strong>Bucket of Stone:</strong> если упасть в воду с ведром лавы, по локальным item-data оно превращается в <strong>ведро с камнем</strong>. Его можно вернуть в пустое ведро, но бесплатный камень или булыжник из этого не получить.</div>
+<div class="tip-card">🚤 <strong>Железная лодка:</strong> по локальному item-doc она может <strong>плавать по лаве</strong>, а при разрушении <strong>возвращается в инвентарь</strong>, а не рассыпается как обычная деревянная лодка. В текущем наборе рецептов она крафтится на <strong>Железном верстаке</strong> из <strong>5 железных слитков</strong>.</div>
 
 
 <!-- ===== ЖЕЛЕЗО ===== -->
@@ -444,6 +451,8 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 <h3>Высокоуглеродистая сталь</h3>
 <p>Железо + Угольный кристалл = Высокоуглеродистая сталь. Последний сплав. Достаточно мощная для прохождения тёмного Подземного мира.</p>
 <div class="info">Кирка из высокоуглеродистой стали умеет <strong>цепную добычу</strong>: удержи кнопку и ломай несколько блоков одновременно! Её скорость превышает мифриловую — лучший выбор для добычи.</div>
+<div class="info-box">🧱 <strong>Где брать углеродный кристалл:</strong> по локальным данным v0.9.0 он появляется <strong>рядом с магмой в обычном мире</strong>, обычно <strong>ниже примерно Y30</strong>. Жила при добыче даёт <code>carbon_crystal</code> напрямую, а в доменной печи рецепт <code>coal_block</code> + <code>coal</code> даёт 1 <code>carbon_crystal_shard</code>.</div>
+<div class="tip-card">🧪 <strong>Практичный путь через осколки:</strong> 1 полный <code>carbon_crystal</code> разбирается в 4 <code>carbon_crystal_shard</code>, поэтому найденные цельные кристаллы часто выгоднее пускать именно на запас осколков для высокоуглеродистой стали.</div>
 <div class="tip-card">⚒️ <strong>Сплавление в печи:</strong> Положи <strong>железный инструмент</strong> (меч, кирка и т.д.) в слот НАД слотом топлива, а <strong>Угольный кристалл</strong> в левый слот. Так он превратится в сталь.</div>
 <div class="tip-card">💡 <strong>Крафт с XP для лучшей прочности:</strong> XP расходуется при крафте — чем больше XP, тем прочнее инструмент. Всегда крафти предметы из углеродистой стали с полным XP!</div>
 <div class="tip-card">⚔️ <strong>Молот войны из углеродистой стали в Подземном мире:</strong> <strong>Молот войны + Убийца Нежити V</strong> — лучшее оружие в Подземном мире, убивает скелетов и нежить одним ударом.</div>
@@ -459,15 +468,13 @@ const sidebarGroups = getSidebarGroups('progression/metal-ages');
 
 <h2 id="metal-hierarchy">Иерархия металлов</h2>
 <table>
-  <tr><th>Уровень</th><th>Материал</th><th>Источник</th><th>Нужная кирка</th></tr>
+  <tr><th>Уровень</th><th>Материал</th><th>Источник</th><th>Нужная кирка (Руда / Блок)</th></tr>
   <tr><td><span class="tier t-flint">1</span></td><td>Кремень</td><td>Из гравия</td><td>Голые руки</td></tr>
-  <tr><td><span class="tier t-copper">2</span></td><td>Медь</td><td>Сито / Шахта</td><td>Кремниевая кирка</td></tr>
-  <tr><td><span class="tier t-silver">2</span></td><td>Серебро</td><td>Сито / Шахта</td><td>Кремниевая кирка</td></tr>
-  <tr><td><span class="tier t-gold">3</span></td><td>Золото</td><td>Глубокие шахты</td><td>Медная/серебряная кирка</td></tr>
-  <tr><td><span class="tier t-iron">4</span></td><td>Железо</td><td>Глубокие шахты</td><td>Медная/серебряная кирка</td></tr>
+  <tr><td><span class="tier t-copper">2</span></td><td>Медь / Серебро</td><td>Сито / Шахта</td><td>Кремниевая кирка</td></tr>
+  <tr><td><span class="tier t-gold">3</span></td><td>Золото / Железо</td><td>Глубокие шахты</td><td>Медная/серебряная кирка (руда) · Железная кирка (блок)</td></tr>
   <tr><td><span class="tier t-hard">5</span></td><td>Твердокамень</td><td>Подземный мир</td><td>Железная кирка</td></tr>
   <tr><td><span class="tier t-ancient">6</span></td><td>Древний металл</td><td>Подземный мир</td><td>Железная кирка</td></tr>
-  <tr><td><span class="tier t-mithril">7</span></td><td>Мифрил</td><td>Подземный мир</td><td>Железная кирка / молот войны</td></tr>
+  <tr><td><span class="tier t-mithril">7</span></td><td>Мифрил</td><td>Подземный мир</td><td>Железная кирка / молот войны (руда) · Мифриловая кирка (блок)</td></tr>
   <tr><td><span class="tier t-adamantium">8</span></td><td>Адамант</td><td>Самые глубокие слои Подземного мира</td><td>Мифриловая кирка / молот войны</td></tr>
 </table>
 

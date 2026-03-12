@@ -47,6 +47,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 
 <h2 id="overview">Kemence Rendszer Áttekintés</h2>
 <p>A MITE:BE-ben a kemence típusa meghatározza a <strong>maximális hőfokot</strong>, amit elérhet — de a <strong>tüzelőanyag is fontos</strong>, mert annak is van saját hőfok szintje. Az olvasztáshoz mindkettőnek el kell érnie a szükséges szintet.</p>
+<div class="warning-box">🔥 <strong>v0.9.0 gyakorlati logika:</strong> a helyi recipe-adatok szerint a fejlettebb fémolvasztás a <strong>3×3-as Nagy Kemencére</strong> és a hozzá tartozó <strong>Kemence Magra</strong> épül. A mag receptjében a megfelelő <strong>munkaasztal a középső slotba kerül és el is fogy</strong>: Kő Mag = réz vagy ezüst munkaasztal, Obszidián Mag = arany vagy vas munkaasztal, Alvilágkő Mag = mithril vagy adamantium munkaasztal.</div>
 
 <table class="compare-table">
   <tr><th>Kemence</th><th>Max. hőfok</th><th>Mire jó?</th><th>Készítés</th></tr>
@@ -54,7 +55,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
   <tr><td><img src="/mite-be-wiki/img/blocks/furnace_hardened_clay.png" alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> Keményített Agyagkemence</td><td>2</td><td>Réz, Ezüst, Vas, Arany, Keménykő</td><td>Agyag + Kő</td></tr>
   <tr><td><img src="/mite-be-wiki/img/blocks/furnace_stone_front.png" alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> Kő Kemence</td><td>2</td><td>Üveg, tégla, festékek, fémek</td><td>8× Macskakő</td></tr>
   <tr><td><img src="/mite-be-wiki/img/blocks/furnace_obsidian_front.png" alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> Obszidián Kemence</td><td>3</td><td>Mithril olvasztás</td><td>8× Obszidián</td></tr>
-  <tr style="background:rgba(255,60,0,0.10)"><td><img src="/mite-be-wiki/img/blocks/netherrack_furnace_front.png" alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> Alvilágkő Kemence</td><td>4</td><td>Adamantium olvasztás</td><td>8× Alvilágkő</td></tr>
+  <tr style="background:rgba(255,60,0,0.10)"><td><img src="/mite-be-wiki/img/blocks/netherrack_furnace_front.png" alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> Alvilágkő Kemence</td><td>4</td><td>Adamantium olvasztás, <strong>25% gyorsabb</strong></td><td>8× Alvilágkő</td></tr>
 </table>
 
 <h3>Tüzelőanyag &amp; Hőfok</h3>
@@ -106,7 +107,8 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
   <CraftingGrid recipeOutput="obsidian_ingot_mould" label={{hu: "Obszidián Öntőforma", en: "Obsidian Ingot Mould"}}/>
   <CraftingGrid recipeOutput="obsidian" label={{hu: "Obszidián Blokk", en: "Obsidian Block"}}/>
 </div>
-<p>Az öntőforma <strong>20 ércrudat</strong> tud lehűteni, mielőtt elhasználódik.</p>
+<p>Az Obszidián Öntőforma a jelenlegi helyi item-adatok szerint <strong>10 tartóssággal</strong> rendelkezik, vagyis legfeljebb <strong>10 sikeres olvasztást</strong> bír ki, mielőtt elhasználódik.</p>
+<div class="tip-card">🧊 <strong>Hűtött Öntőforma:</strong> a <strong>Hűtőfolyadék + Obszidián Öntőforma</strong> receptből készülő hűtött változat ugyanebben az ércből-rúdba folyamatban használható, és a helyi item-info alapján ez is tartósságot veszít használatkor.</div>
 
 <h3>Kalapács + Obszidián = 2 Öntőforma</h3>
 <p>Hatékonyabb módszer: Obszidián + Háborús Kalapács bármelyik munkaasztalon → közvetlenül 2 öntőforma.</p>
@@ -142,7 +144,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 <p>8× Obszidián. Max hőfok: <strong>3</strong>. Ez az első kemence amiben <strong>Mithril ércet</strong> is olvaszthatsz (lávavödörrel tüzelve).</p>
 
 <h3 id="netherrack-furnace" style="display:flex;align-items:center;gap:8px"><img src="/mite-be-wiki/img/blocks/netherrack_furnace_front.png" alt="" style="width:20px;image-rendering:pixelated;flex-shrink:0"> Alvilágkő Kemence</h3>
-<p>8× Alvilágkő. Max hőfok: <strong>4</strong>. Az egyetlen kemence amiben <strong>Adamantium ércet</strong> olvaszthatsz — kizárólag Blaze Pálca tüzelővel!</p>
+<p>8× Alvilágkő. Max hőfok: <strong>4</strong>. Az egyetlen kemence amiben <strong>Adamantium ércet</strong> olvaszthatsz — kizárólag Blaze Pálca tüzelővel! Emellett <strong>25%-kal gyorsabban</strong> olvaszt, mint a kőkemence.</p>
 <div class="warning-box">🔥 <strong>Kritikus:</strong> Az Adamantium olvadáspontja (6 210°C) meghaladja az Obszidián Kemence maximumát (5 000°C). Adamantiumhoz <strong>Alvilágkő Kemence + Blaze Pálca</strong> az egyetlen út!</div>
 
 <!-- ===== ÉRC FELDOLGOZÁS ===== -->
@@ -175,6 +177,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 </div>
 <p>A tábortűz lehetővé teszi, hogy a húst <strong>megsüsd</strong> — ne megégesd! A megégett hús mérgezést okoz. Egyszerre <strong>8 darab húst</strong> süthet.</p>
 <div class="warning">Megégett hús evése mérgezést okoz! Használj tábortüzet!</div>
+<div class="info-box">🍖 <strong>v0.9.0 gyakorlati használat:</strong> egyetlen <strong>Fáklya</strong> összesen <strong>32 darab húst</strong> tud kisütni a tábortűzön. A kezelőfelületet viszont <strong>elzárja, ha blokk van előtte</strong>, ezért hagyj előtte szabad helyet.</div>
 <div class="tip-card">🔥 <strong>Tűzgyújtós grillezés (tábortűz nélkül):</strong> Dobd le a nyers húst éghető blokkra (pl. fadeszka), majd gyújtsd meg Tűzgyújtóvel. A tűz kialvása után gyújtsd meg újra — kb. <strong>4 gyújtás</strong> kell a teljes átsütéshez.</div>
 
 </div>
@@ -184,6 +187,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 
 <h2 id="overview-en">Furnace System Overview</h2>
 <p>In MITE:BE, the furnace type determines the <strong>maximum heat level</strong> it can reach — but the <strong>fuel also matters</strong>, as it has its own heat level. Both must meet the required level for smelting to succeed.</p>
+<div class="warning-box">🔥 <strong>Practical v0.9.0 logic:</strong> the local recipe data shows that higher-tier smelting is built around the <strong>3×3 Blast Furnace</strong> plus the matching <strong>Furnace Core</strong>. In the core recipe, the correct <strong>workbench goes in the center slot and is consumed</strong>: Stone Core = copper or silver workbench, Obsidian Core = gold or iron workbench, Netherrack Core = mithril or adamantium workbench.</div>
 
 <table class="compare-table">
   <tr><th>Furnace</th><th>Max Heat</th><th>Used For</th><th>Crafting</th></tr>
@@ -191,7 +195,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
   <tr><td><img src="/mite-be-wiki/img/blocks/furnace_hardened_clay.png" alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> Hardened Clay Furnace</td><td>2</td><td>Copper, Silver, Iron, Gold, Hardstone</td><td>Clay + Stone</td></tr>
   <tr><td><img src="/mite-be-wiki/img/blocks/furnace_stone_front.png" alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> Stone Furnace</td><td>2</td><td>Glass, bricks, dyes, metals</td><td>8× Cobblestone</td></tr>
   <tr><td><img src="/mite-be-wiki/img/blocks/furnace_obsidian_front.png" alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> Obsidian Furnace</td><td>3</td><td>Mithril smelting</td><td>8× Obsidian</td></tr>
-  <tr style="background:rgba(255,60,0,0.10)"><td><img src="/mite-be-wiki/img/blocks/netherrack_furnace_front.png" alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> Netherrack Furnace</td><td>4</td><td>Adamantium smelting</td><td>8× Netherrack</td></tr>
+  <tr style="background:rgba(255,60,0,0.10)"><td><img src="/mite-be-wiki/img/blocks/netherrack_furnace_front.png" alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> Netherrack Furnace</td><td>4</td><td>Adamantium smelting, <strong>25% faster</strong></td><td>8× Netherrack</td></tr>
 </table>
 
 <h3>Fuel &amp; Heat Levels</h3>
@@ -243,7 +247,8 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
   <CraftingGrid recipeOutput="obsidian_ingot_mould" label={{hu: "Obszidián Öntőforma", en: "Obsidian Ingot Mould"}}/>
   <CraftingGrid recipeOutput="obsidian" label={{hu: "Obszidián Blokk", en: "Obsidian Block"}}/>
 </div>
-<p>The mould can cool <strong>20 ingots</strong> before breaking.</p>
+<p>According to the current local item data, the Obsidian Ingot Mould has <strong>10 durability</strong>, meaning it can handle at most <strong>10 successful smelts</strong> before breaking.</p>
+<div class="tip-card">🧊 <strong>Cooled Mould:</strong> the <strong>Coolant + Obsidian Ingot Mould</strong> upgrade creates a cooled variant used in the same ore-to-ingot workflow. The local item-info still treats it as a durability-based tool.</div>
 
 <h3>Hammer + Obsidian = 2 Moulds</h3>
 <p>More efficient: Obsidian + War Hammer on any workbench → 2 moulds directly.</p>
@@ -312,6 +317,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 </div>
 <p>The campfire lets you cook meat <strong>properly</strong> — not burn it! Burned meat causes poisoning. Can cook <strong>8 pieces of meat</strong> at once.</p>
 <div class="warning">Eating burned meat causes poisoning! Use a campfire!</div>
+<div class="info-box">🍖 <strong>Practical v0.9.0 use:</strong> a single <strong>Torch</strong> can cook a total of <strong>32 pieces of meat</strong> on a campfire. The interface also <strong>cannot be opened if a block is directly in front of it</strong>, so leave that side clear.</div>
 <div class="tip-card">🔥 <strong>Improvised grilling (without campfire):</strong> Drop raw meat on a flammable block (e.g., wood planks), then ignite with Flint and Steel. After the fire dies, light it again — about <strong>4 ignitions</strong> for full cooking.</div>
 
 </div>
@@ -321,6 +327,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 
 <h2 id="overview-ru">Обзор системы печей</h2>
 <p>В MITE:BE тип печи определяет <strong>максимальный уровень нагрева</strong> — но <strong>топливо тоже важно</strong>, так как у него свой уровень нагрева. Для плавки оба должны соответствовать требуемому уровню.</p>
+<div class="warning-box">🔥 <strong>Практическая логика v0.9.0:</strong> локальные recipe-данные показывают, что плавка более высоких металлов строится вокруг <strong>Нижней печи 3×3</strong> и подходящего <strong>Ядра печи</strong>. В рецепте ядра нужный <strong>верстак ставится в центральный слот и расходуется</strong>: каменное ядро = медный или серебряный верстак, обсидиановое = золотой или железный, ядро из адского камня = мифриловый или адамантиевый.</div>
 
 <table class="compare-table">
   <tr><th>Печь</th><th>Макс. нагрев</th><th>Для чего?</th><th>Создание</th></tr>
@@ -328,7 +335,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
   <tr><td><img src="/mite-be-wiki/img/blocks/furnace_hardened_clay.png" alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> Обожжённая глиняная печь</td><td>2</td><td>Медь, Серебро, Железо, Золото, Твердокамень</td><td>Глина + Камень</td></tr>
   <tr><td><img src="/mite-be-wiki/img/blocks/furnace_stone_front.png" alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> Каменная печь</td><td>2</td><td>Стекло, кирпичи, красители, металлы</td><td>8× Булыжник</td></tr>
   <tr><td><img src="/mite-be-wiki/img/blocks/furnace_obsidian_front.png" alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> Обсидиановая печь</td><td>3</td><td>Плавка мифрила</td><td>8× Обсидиан</td></tr>
-  <tr style="background:rgba(255,60,0,0.10)"><td><img src="/mite-be-wiki/img/blocks/netherrack_furnace_front.png" alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> Печь из адского камня</td><td>4</td><td>Плавка адаманта</td><td>8× Адский камень</td></tr>
+  <tr style="background:rgba(255,60,0,0.10)"><td><img src="/mite-be-wiki/img/blocks/netherrack_furnace_front.png" alt="" style="width:20px;vertical-align:middle;image-rendering:pixelated"> Печь из адского камня</td><td>4</td><td>Плавка адаманта, <strong>на 25% быстрее</strong></td><td>8× Адский камень</td></tr>
 </table>
 
 <h3>Топливо и уровни нагрева</h3>
@@ -380,7 +387,8 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
   <CraftingGrid recipeOutput="obsidian_ingot_mould" label={{hu: "Obsidian Öntőforma", en: "Obsidian Ingot Mould"}}/>
   <CraftingGrid recipeOutput="obsidian" label={{hu: "Obsidian Blokk", en: "Obsidian Block"}}/>
 </div>
-<p>Форма выдерживает <strong>20 слитков</strong> прежде чем сломается.</p>
+<p>По текущим локальным данным предметов Обсидиановая форма имеет <strong>10 прочности</strong>, то есть выдерживает максимум <strong>10 успешных плавок</strong> перед поломкой.</p>
+<div class="tip-card">🧊 <strong>Охлаждённая форма:</strong> версия из рецепта <strong>Охлаждающая жидкость + Обсидиановая форма</strong> используется в той же цепочке плавки руды в слитки. По локальному item-info это тоже инструмент с расходом прочности.</div>
 
 <h3>Молот + Обсидиан = 2 Формы</h3>
 <p>Более эффективно: Обсидиан + Молот войны на любом верстаке → сразу 2 формы.</p>
@@ -416,7 +424,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 <p>8× Обсидиан. Макс. нагрев: <strong>3</strong>. Первая печь, в которой можно плавить <strong>руду Мифрила</strong> (с ведром лавы в качестве топлива).</p>
 
 <h3 id="netherrack-furnace-ru" style="display:flex;align-items:center;gap:8px"><img src="/mite-be-wiki/img/blocks/netherrack_furnace_front.png" alt="" style="width:20px;image-rendering:pixelated;flex-shrink:0"> Печь из адского камня</h3>
-<p>8× Адский камень. Макс. нагрев: <strong>4</strong>. Единственная печь, в которой можно плавить <strong>руду Адаманта</strong> — исключительно со Стержнем ифрита!</p>
+<p>8× Адский камень. Макс. нагрев: <strong>4</strong>. Единственная печь, в которой можно плавить <strong>руду Адаманта</strong> — исключительно со Стержнем ифрита! Кроме того, она плавит на <strong>25% быстрее</strong> обычной каменной печи.</p>
 <div class="warning-box">🔥 <strong>Критично:</strong> Температура плавления Адаманта (6 210°C) превышает максимум Обсидиановой печи (5 000°C). <strong>Печь из адского камня + Стержень ифрита</strong> — единственный путь!</div>
 
 <!-- ===== ОБРАБОТКА РУДЫ ===== -->
@@ -449,6 +457,7 @@ const sidebarGroups = getSidebarGroups('progression/furnaces');
 </div>
 <p>Костёр позволяет готовить мясо <strong>правильно</strong> — не сжигая. Сгоревшее мясо вызывает отравление. Может готовить <strong>8 кусков мяса</strong> одновременно.</p>
 <div class="warning">Поедание сгоревшего мяса вызывает отравление! Используй костёр!</div>
+<div class="info-box">🍖 <strong>Практика v0.9.0:</strong> один <strong>Факел</strong> позволяет приготовить на костре в сумме <strong>32 куска мяса</strong>. Интерфейс также <strong>не открывается, если прямо перед костром стоит блок</strong>, так что оставляй эту сторону свободной.</div>
 <div class="tip-card">🔥 <strong>Импровизированный гриль (без костра):</strong> Брось сырое мясо на горючий блок (деревянные доски), подожги Кремнём и сталью. После того как огонь погаснет, подожги снова — нужно примерно <strong>4 поджигания</strong> для полного приготовления.</div>
 
 </div>

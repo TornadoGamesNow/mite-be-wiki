@@ -12,7 +12,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const sidebarGroups = getSidebarGroups('brewing');
 ---
-<BaseLayout title="Brewing — MITE: Break Everything Wiki" description="MITE:BE brewing: brewing stand, potion effects, cauldron recipes (Liquid Gold, Mercury), cheese making.">
+<BaseLayout title="Brewing — MITE: Break Everything Wiki" description="MITE:BE brewing: brewing stand, potion effects, cauldron recipes, cheese making.">
   <Header />
   <TopNav currentPage="brewing" />
   <div class="container">
@@ -22,17 +22,17 @@ const sidebarGroups = getSidebarGroups('brewing');
   hu: [
     'Főzőállvány: 3 összetevő-slot + 1 üzemanyag (Lőpor vagy Salétromkő) + 3 üveg',
     'Vízlégzés, Tűzállóság, Éjjellátás — ezek a leghasznosabb MITE italok',
-    'Üst: Folyékony Arany (erősítés), Higany (speciális), Diszenchantálás',
+    'Üst: aranyalma-készítés, higany, hátizsák-fejlesztő recept',
   ],
   en: [
     'Brewing Stand: 3 ingredient slots + 1 fuel (Gunpowder or Niter) + 3 bottles',
     'Water Breathing, Fire Resistance, Night Vision — most useful MITE potions',
-    'Cauldron: Liquid Gold (buff), Mercury (special), Disenchanting Bottle',
+    'Cauldron: golden-apple conversion, mercury, backpack-upgrade recipe',
   ],
   ru: [
     'Стойка зелий: 3 слота ингредиентов + топливо (Порох/Селитра) + 3 бутылки',
     'Дыхание под водой, Огнестойкость, Ночное зрение — полезнейшие зелья',
-    'Котёл: Жидкое золото (усиление), Ртуть (спецэффект), Бутылка расчарования',
+    'Котёл: золотые яблоки, ртуть, рецепт улучшения рюкзака',
   ],
 }} />
 
@@ -43,7 +43,7 @@ const sidebarGroups = getSidebarGroups('brewing');
 
 <div class="warning-box">⚠️ <strong>A bájitalkészítő szakma jelenleg nincs aktiválva a v0.9.0-ban.</strong> A bájitalfőzés és a sajtkészítés <strong>szakma nélkül is elérhető</strong> az aktuális verzióban — a bájitalkészítő rendszer csak érdekességképpen van dokumentálva.</div>
 
-<div class="info">⚗️ <strong>Gyors áttekintés:</strong> Főzőállvány → bájitalok (szakma nélkül is). Üst (Cauldron) → speciális receptek (Folyékony arany, Higany, Ősi fém hátizsák-fejlesztő). Sajt = bármilyen fémtejesvödör.</div>
+<div class="info">⚗️ <strong>Gyors áttekintés:</strong> Főzőállvány → bájitalok (szakma nélkül is). Üst (Cauldron) → speciális receptek (1 aranyérc töltet + legfeljebb 4 alma, higany, Ősi fém hátizsák-fejlesztő). Sajt = bármilyen fémtejesvödör.</div>
 
 <!-- ─── Brewing Stand ─── -->
 <h2 id="brewing-stand">Főzőállvány (Brewing Stand)</h2>
@@ -187,10 +187,10 @@ const sidebarGroups = getSidebarGroups('brewing');
 <table>
   <tr><th>Recept neve</th><th>Folyamat</th><th>Eredmény</th><th>Felhasználás</th></tr>
   <tr>
-    <td><strong style="color:var(--gold)">Folyékony arany</strong></td>
-    <td>Üst lávaforrás alá helyezve + aranyérc beledobása → 10 mp várakozás</td>
-    <td>Folyékony arany az üstben</td>
-    <td>4× aranyalma (Golden Apple) készíthető belőle</td>
+    <td><strong style="color:var(--gold)">Aranyalma recept</strong></td>
+    <td>Üst lávaforrás alá helyezve + 1 aranyérc beledobása → 30 mp várakozás, majd almák használata</td>
+    <td>Legfeljebb 4× aranyalma / töltet</td>
+    <td>1 aranyérc feltölti az üstöt; azzal max. 4 alma alakítható át</td>
   </tr>
   <tr>
     <td><strong style="color:var(--silver)">Folyékony higany</strong></td>
@@ -200,13 +200,19 @@ const sidebarGroups = getSidebarGroups('brewing');
   </tr>
   <tr>
     <td><strong style="color:var(--ancient)">Ősifém hátizsák-fejlesztő</strong></td>
-    <td>Nagy hátizsák-fejlesztő + 4× ősifém-rúd a higanyba → 30 mp várakozás</td>
+    <td>Nagy Hátizsák Fejlesztő + 4× ősi fém rúd a higanyba → 30 mp várakozás</td>
     <td>Ősifém hátizsák-fejlesztő</td>
     <td>Fejlesztő tárgy, amellyel a hátizsák továbbfejleszthető</td>
   </tr>
+  <tr>
+    <td><strong style="color:var(--ancient)">Elemi víztömlő</strong></td>
+    <td>Nagy Víztömlő + 1× ősi fém rúd teljes higanyüstben → 30 mp várakozás</td>
+    <td>16 literes Elemi víztömlő</td>
+    <td>Tudáskönyvhöz kötött higanyos konverzió; a koszos vizet kemencében kb. 120 mp alatt tisztítja meg</td>
+  </tr>
 </table>
 
-<div class="tip"><strong>Higanyforrás:</strong> A mocsár biomban található higanyérc (Y 0–40). Olvasztásához hőfok 3 szükséges — Nagy Kemence (Blast Furnace) + Obszidián Kemence Mag!</div>
+<div class="tip"><strong>Higanyforrás:</strong> a jelenlegi helyi item-info alapján a biztos szabály: <strong>mocsárbiomban, nagyjából Y25 alatt</strong> jelenik meg. Feldolgozásához továbbra is magasabb hőfokú higanyvonal kell.</div>
 
 <!-- ─── Potion Effects ─── -->
 <h2 id="potions">Főzhető bájitalok</h2>
@@ -287,6 +293,7 @@ Fröccsenő időtartam ≈ alap × 75%. II. szintű és hosszított splash vált
 <p>A helyi v0.9.0 adatok alapján a sajt jelenleg <strong>aktív szakmakövetelmény nélkül</strong> készíthető. Bármilyen anyagú tejesvödör használható — keménykő, réz, ezüst, arany, vas, ősifém, mithril, adamantium. A vödör szintje határozza meg, melyik munkaasztalon készíthető el a sajt.</p>
 
 <div class="info">ℹ️ A tehenek fejéséhez az adott anyagú vödör kell (pl. keménykő vödör a keménykő tehénhez). Minden sajtrecept nehézsége fix <strong>400</strong>, függetlenül a vödör anyagától vagy számától — több vödör = több sajt ugyanazért a 400 nehézségért.</div>
+<div class="tip-card">🥛 <strong>Fejési limit:</strong> a helyi milk-bucket doc szerint <strong>ugyanaz a tehén naponta csak 1 vödör</strong> vagy <strong>4 tál</strong> tejet ad. Státuszhatások lemosására ezért gazdaságosabb a <strong>tejes tál</strong> route, a fém vödröket pedig érdemes inkább sajtra tartogatni.</div>
 
 <table>
   <tr><th>Vödörszám</th><th>Eredmény</th><th>Nehézség (fix)</th><th>Nehézség/db</th></tr>
@@ -311,7 +318,7 @@ Fröccsenő időtartam ≈ alap × 75%. II. szintű és hosszított splash vált
 
 <div class="warning-box">⚠️ <strong>The Brewer profession is not active in v0.9.0.</strong> Brewing and cheese-making are <strong>available without a profession</strong> in the current version. The Brewer profession system is documented here only as historical context.</div>
 
-<div class="info">⚗️ <strong>Quick overview:</strong> Brewing Stand → potions (no profession needed). Cauldron → special recipes (Liquid Gold, Mercury, Ancient Metal Backpack Upgrade). Cheese = any metal milk bucket.</div>
+<div class="info">⚗️ <strong>Quick overview:</strong> Brewing Stand → potions (no profession needed). Cauldron → special recipes (1 Gold Ore charge + up to 4 Apples, Mercury, Ancient Metal Backpack Upgrade). Cheese = any metal milk bucket.</div>
 
 <!-- ─── Brewing Stand EN ─── -->
 <h2 id="brewing-stand">Brewing Stand</h2>
@@ -423,10 +430,10 @@ Fröccsenő időtartam ≈ alap × 75%. II. szintű és hosszított splash vált
 <table>
   <tr><th>Recipe</th><th>Process</th><th>Result</th><th>Use</th></tr>
   <tr>
-    <td><strong style="color:var(--gold)">Liquid Gold</strong></td>
-    <td>Place Cauldron under lava source + throw Gold Ore in → wait 10 seconds</td>
-    <td>Liquid gold in cauldron</td>
-    <td>Craft 4× Golden Apples from it</td>
+    <td><strong style="color:var(--gold)">Golden Apple Recipe</strong></td>
+    <td>Place Cauldron under lava source + throw in 1 Gold Ore → wait 30 seconds, then use Apples on it</td>
+    <td>Up to 4× Golden Apples per charge</td>
+    <td>1 Gold Ore charges the cauldron; that charge converts up to 4 Apples</td>
   </tr>
   <tr>
     <td><strong style="color:var(--silver)">Liquid Mercury</strong></td>
@@ -440,9 +447,15 @@ Fröccsenő időtartam ≈ alap × 75%. II. szintű és hosszított splash vált
     <td>Backpack upgrade item</td>
     <td>Upgrade item used to further improve the backpack</td>
   </tr>
+  <tr>
+    <td><strong style="color:var(--ancient)">Elemental Water Bag</strong></td>
+    <td>Big Water Bag + 1× Ancient Metal Ingot in a full mercury cauldron → wait 30 seconds</td>
+    <td>16-liter Elemental Water Bag</td>
+    <td>Knowledge-Book-gated mercury conversion; dirty water can be purified in a furnace in about 120 seconds</td>
+  </tr>
 </table>
 
-<div class="tip"><strong>Mercury source:</strong> Mercury ore found in Swamp biome (Y 0–40). Requires heat level 3 — Blast Furnace with Obsidian Furnace Core!</div>
+<div class="tip"><strong>Mercury source:</strong> based on the current local item-info, the reliable rule is <strong>swamp biome, roughly below Y25</strong>. It still belongs to the hotter mercury-processing line rather than the early furnace route.</div>
 
 <!-- ─── Potion Effects EN ─── -->
 <h2 id="potions">Brewable Potions</h2>
@@ -523,6 +536,7 @@ Splash duration ≈ base × 75%. II and extended splash variants also exist.</p>
 <p>Based on the current v0.9.0 data, cheese is currently craftable <strong>without an active Brewer requirement</strong>. Any milk bucket material works — Hardstone, Copper, Silver, Gold, Iron, Ancient Metal, Mithril, or Adamantium. The bucket tier determines which workbench is needed.</p>
 
 <div class="info">ℹ️ Each cow type requires a matching bucket material to milk. All cheese recipes have a flat <strong>400 difficulty</strong> regardless of bucket material or count — more buckets = more cheese for the same 400 difficulty.</div>
+<div class="tip-card">🥛 <strong>Milking limit:</strong> the local milk-bucket doc says the <strong>same cow gives only 1 bucket</strong> or <strong>4 bowls</strong> of milk per day. That makes the <strong>milk-bowl</strong> route more efficient for clearing status effects, while metal milk buckets are usually better saved for cheese batches.</div>
 
 <table>
   <tr><th>Buckets</th><th>Output</th><th>Difficulty (flat)</th><th>Difficulty/unit</th></tr>
@@ -545,7 +559,7 @@ Splash duration ≈ base × 75%. II and extended splash variants also exist.</p>
 
 <div class="warning-box">⚠️ <strong>Профессия «Зельевар» в v0.9.0 не активирована.</strong> Зельеварение и приготовление сыра <strong>доступны без профессии</strong> в текущей версии — блок про профессии оставлен здесь только для справки.</div>
 
-<div class="info">⚗️ <strong>Краткий обзор:</strong> Стойка для зелий → обычные зелья. Котёл → особые рецепты (жидкое золото, ртуть, улучшение рюкзака из Древнего металла). Сыр готовится из любого металлического ведра с молоком.</div>
+<div class="info">⚗️ <strong>Краткий обзор:</strong> Стойка для зелий → обычные зелья. Котёл → особые рецепты (1 золотая руда как заряд + до 4 яблок, ртуть, улучшение рюкзака из Древнего металла). Сыр готовится из любого металлического ведра с молоком.</div>
 
 <h2 id="brewing-stand">Стойка для зелий</h2>
 <p>Для создания стойки для зелий нужен <strong>Кремнёвый верстак</strong> или верстак более высокого тира:</p>
@@ -648,10 +662,10 @@ Splash duration ≈ base × 75%. II and extended splash variants also exist.</p>
 <table>
   <tr><th>Рецепт</th><th>Процесс</th><th>Результат</th><th>Применение</th></tr>
   <tr>
-    <td><strong style="color:var(--gold)">Жидкое золото</strong></td>
-    <td>Поставьте котёл под источник лавы, бросьте золотую руду и подождите 10 секунд</td>
-    <td>Жидкое золото в котле</td>
-    <td>Используется для создания 4× золотых яблок</td>
+    <td><strong style="color:var(--gold)">Рецепт золотых яблок</strong></td>
+    <td>Поставьте котёл под источник лавы, бросьте 1 золотую руду, подождите 30 секунд, затем используйте яблоки</td>
+    <td>До 4× золотых яблок за заряд</td>
+    <td>1 золотая руда заряжает котёл; этот заряд превращает до 4 яблок</td>
   </tr>
   <tr>
     <td><strong style="color:var(--silver)">Жидкая ртуть</strong></td>
@@ -661,11 +675,19 @@ Splash duration ≈ base × 75%. II and extended splash variants also exist.</p>
   </tr>
   <tr>
     <td><strong style="color:var(--ancient)">Улучшение рюкзака из Древнего металла</strong></td>
-    <td>Погрузите большое улучшение рюкзака и 4 слитка Древнего металла в ртуть и подождите 30 секунд.</td>
+    <td>Погрузите Улучшение большого рюкзака и 4 слитка Древнего металла в ртуть и подождите 30 секунд.</td>
     <td>Улучшение рюкзака из Древнего металла</td>
     <td>Предмет улучшения для дальнейшего апгрейда рюкзака</td>
   </tr>
+  <tr>
+    <td><strong style="color:var(--ancient)">Элементная фляга</strong></td>
+    <td>Большая фляга + 1 слиток Древнего металла в полном котле с ртутью → подождите 30 секунд</td>
+    <td>Элементная фляга на 16 литров</td>
+    <td>Ртутное преобразование с Книгой знаний; грязная вода очищается в печи примерно за 120 секунд</td>
+  </tr>
 </table>
+
+<div class="tip"><strong>Источник ртути:</strong> по текущему локальному item-info надёжное правило такое: <strong>болото, примерно ниже Y25</strong>. Это всё ещё часть более горячей линии переработки ртути, а не ранняя печная руда.</div>
 
 <h2 id="potions">Варимые зелья</h2>
 <p>В MITE:BE есть <strong>11 варимых эффектов зелий</strong>, всего <strong>52 варианта</strong> (базовый · усиленный II · длительный · взрывной). Каждый рецепт начинается с Адского гриба → Неловкое зелье.</p>
@@ -729,6 +751,7 @@ Splash duration ≈ base × 75%. II and extended splash variants also exist.</p>
 <p>По локальным данным v0.9.0 сыр сейчас крафтится <strong>без активного требования профессии «Зельевар»</strong>. Подойдёт любое металлическое ведро с молоком: твердокаменное, медное, серебряное, золотое, железное, из Древнего металла, мифриловое или адамантиевое. Материал ведра определяет, на каком верстаке крафтится сыр.</p>
 
 <div class="info">ℹ️ Для доения каждого типа коровы нужно ведро из соответствующего материала. У всех рецептов сыра фиксированная сложность <strong>400</strong>, независимо от материала или количества вёдер — больше вёдер = больше сыра за ту же сложность 400.</div>
+<div class="tip-card">🥛 <strong>Лимит доения:</strong> по локальному doc для milk bucket <strong>одна и та же корова в день даёт только 1 ведро</strong> или <strong>4 миски</strong> молока. Поэтому для снятия эффектов выгоднее использовать путь через <strong>миску молока</strong>, а металлические вёдра чаще имеет смысл беречь под сыр.</div>
 
 <table>
   <tr><th>Вёдра</th><th>Результат</th><th>Сложность (фикс.)</th><th>Сложность/шт</th></tr>
